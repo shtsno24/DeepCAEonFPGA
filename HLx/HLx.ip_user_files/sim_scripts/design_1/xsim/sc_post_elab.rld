@@ -1,5 +1,4 @@
 /timing/S00_Entry/MMU_REGSLICE/value=1;range=0,1;strength=0
-/functional/S00_Entry/SUPPORTS_DECERR/value=1;range=0,1;strength=0
 /functional/S00_Entry/SUPPORTS_WRAP/value=1;range=0,1;strength=0
 /timing/S00_Entry/TR_REGSLICE/value=1;range=0,1;strength=0
 /timing/S00_Buffer/AR_SLR_PIPE/value=0;range=0..8;strength=0
@@ -11,7 +10,6 @@
 /config/S00_Entry/PROTOCOL/value=AXI4;annotatable=1
 /config/S00_Entry/ADDR_WIDTH/value=32;annotatable=1
 /timing/S01_Entry/MMU_REGSLICE/value=1;range=0,1;strength=0
-/functional/S01_Entry/SUPPORTS_DECERR/value=1;range=0,1;strength=0
 /functional/S01_Entry/SUPPORTS_WRAP/value=1;range=0,1;strength=0
 /timing/S01_Entry/TR_REGSLICE/value=1;range=0,1;strength=0
 /timing/S01_Buffer/AW_SLR_PIPE/value=0;range=0..8;strength=0
@@ -36,7 +34,7 @@
 /timing/M00_Buffer/W_SLR_PIPE/value=0;range=0..8;strength=0
 /timing/M00_Exit/REGSLICE/value=1;range=0,1;strength=0
 /config/M00_Exit/DATA_WIDTH/value=64
-/config/M00_Exit/ID_WIDTH/value=6
+/config/M00_Exit/ID_WIDTH/value=3
 /config/M00_Exit/PROTOCOL/value=AXI3
 /config/M00_Exit/ADDR_WIDTH/value=32
 /timing/SW0/AR_M_PIPE/value=1;range=0..8;strength=0
