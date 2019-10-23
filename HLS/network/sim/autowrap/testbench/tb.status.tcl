@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName mnist_AXI_Stream.cpp_pre.cpp.tb.cpp
