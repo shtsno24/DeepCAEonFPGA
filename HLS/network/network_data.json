@@ -42,12 +42,12 @@
   },
   "Files": {
     "CSource": [
-      "..\/..\/layers_c\/conv2d.cpp",
-      "..\/..\/layers_c\/depthwise_conv2d.cpp",
-      "..\/..\/layers_c\/max_pooling2d.cpp",
-      "..\/..\/mnist_AXI_Stream.cpp",
+      "..\/..\/layers_c\/up_sampling2d.cpp",
       "..\/..\/layers_c\/padding2d.cpp",
-      "..\/..\/layers_c\/up_sampling2d.cpp"
+      "..\/..\/mnist_AXI_Stream.cpp",
+      "..\/..\/layers_c\/max_pooling2d.cpp",
+      "..\/..\/layers_c\/depthwise_conv2d.cpp",
+      "..\/..\/layers_c\/conv2d.cpp"
     ],
     "Vhdl": [
       "impl\/vhdl\/conv2d_fix16.vhd",
@@ -1710,7 +1710,7 @@
   },
   "GenData": {
     "DataVersion": "0.1",
-    "Time": "2019-10-23 14:52:57 JST",
+    "Time": "2019-10-23 18:09:38 JST",
     "ToolName": "vivado_hls",
     "ToolVersion": "2018.3"
   }

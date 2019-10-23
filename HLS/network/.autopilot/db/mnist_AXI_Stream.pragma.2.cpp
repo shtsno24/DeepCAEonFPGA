@@ -23626,16 +23626,17 @@ _ssdm_op_SpecInterface(&output_data, "axis", 1, 1, "both", 0, 0, "", "", "", 0, 
 
     out[depth][height][width].data = Conv2D_4_array[depth][height][width];
 
-
-
-
     if(depth == 0 && height == 0 && width == 0){
      out[depth][height][width].user = 1;
     } else {
      out[depth][height][width].user = 0;
     }
 
-    if(depth == Conv2D_4_depth -1 && height == Conv2D_4_height -1 && width == Conv2D_4_width-1){
+
+    if((depth == Conv2D_4_depth-1) &&
+     (height == Conv2D_4_height-1) &&
+     (width == Conv2D_4_width-1)){
+
      out[depth][height][width].last = 1;
     } else {
      out[depth][height][width].last = 0;

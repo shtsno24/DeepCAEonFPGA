@@ -1,5 +1,5 @@
 // ==============================================================
-// File generated on Wed Oct 23 14:54:36 JST 2019
+// File generated on Wed Oct 23 18:10:45 JST 2019
 // Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
 // SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 // IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
@@ -77185,16 +77185,17 @@ void network(axis &input_data, axis &output_data){
 
     out[depth][height][width].data = Conv2D_4_array[depth][height][width];
 
-
-
-
     if(depth == 0 && height == 0 && width == 0){
      out[depth][height][width].user = 1;
     } else {
      out[depth][height][width].user = 0;
     }
 
-    if(depth == Conv2D_4_depth -1 && height == Conv2D_4_height -1 && width == Conv2D_4_width-1){
+
+    if((depth == Conv2D_4_depth-1) &&
+     (height == Conv2D_4_height-1) &&
+     (width == Conv2D_4_width-1)){
+
      out[depth][height][width].last = 1;
     } else {
      out[depth][height][width].last = 0;

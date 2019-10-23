@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'network'" level="0">
-<item name = "Date">Wed Oct 23 14:52:53 2019
+<item name = "Date">Wed Oct 23 18:09:36 2019
 </item>
 <item name = "Version">2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)</item>
 <item name = "Project">HLS</item>
@@ -503,9 +503,9 @@
 <item name = "Max Delay">6.32</item>
 <item name = "Critical Path Table"><table name="Critical Path Table" hasTotal="0">
 <keys size="15">Name, Operator, Delay, Accumulated Delay, Store Source, Resource, Core, Interface, Type, Port, Array, Scope, Pointer, Callee, Phi Node</keys>
-<column name="'tmp_67', mnist_AXI_Stream.cpp:129">add, 2.08, 2.08, -, -, -, -, -, -, -, -, -, -, -</column>
-<column name="'tmp_74_cast', mnist_AXI_Stream.cpp:129">sext, 0.00, 2.08, -, -, -, -, -, -, -, -, -, -, -</column>
-<column name="'tmp_68', mnist_AXI_Stream.cpp:129">icmp, 2.47, 4.55, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'tmp_67', mnist_AXI_Stream.cpp:127">add, 2.08, 2.08, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'tmp_74_cast', mnist_AXI_Stream.cpp:127">sext, 0.00, 2.08, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'tmp_68', mnist_AXI_Stream.cpp:127">icmp, 2.47, 4.55, -, -, -, -, -, -, -, -, -, -, -</column>
 <column name="'tmp.last.V'">phi, 1.77, 6.32, -, -, -, -, -, -, -, -, -, -, </column>
 </table>
 </item>

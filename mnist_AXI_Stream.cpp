@@ -116,23 +116,24 @@ void network(axis &input_data, axis &output_data){
 			for(int width = 0; width < Conv2D_4_width; width++){
 
 				out[depth][height][width].data = Conv2D_4_array[depth][height][width];
-				// out.keep = tmp.keep;
-				// out.strb = tmp.strb;
-				// out.id = tmp.id;
-				// out.dest = tmp.dest;
+
 				if(depth == 0 && height == 0 && width == 0){
 					out[depth][height][width].user = 1;
 				} else {
 					out[depth][height][width].user = 0;
 				}
 
-				if(depth == Conv2D_4_depth -1 && height == Conv2D_4_height -1 && width == Conv2D_4_width-1){
+
+				if((depth == Conv2D_4_depth-1) &&
+					(height == Conv2D_4_height-1) &&
+					(width == Conv2D_4_width-1)){
+
 					out[depth][height][width].last = 1;
 				} else {
 					out[depth][height][width].last = 0;
 				}
 				output_data.write(out[depth][height][width]);
-				// output << out;
+				// output_data << out[depth][height][width];
 
 			}
 		}

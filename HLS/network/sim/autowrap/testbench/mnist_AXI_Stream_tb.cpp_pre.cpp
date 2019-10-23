@@ -77433,8 +77433,11 @@ int main(void){
   output_buffer >> tmp;
   output_img_buff[i] = (int16_t)tmp.data;
   i += 1;
+
  } while(tmp.last != 1);
 
+ cout << "\r\n";
+ cout << "\r\n";
 
  for(int height = 0; height < 28; height++){
   for(int width = 0; width < 28; width++){
