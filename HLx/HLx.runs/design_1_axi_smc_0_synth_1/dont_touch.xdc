@@ -88,6 +88,10 @@
 # IP: /home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_26/bd_afc3_m00e_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
+# XDC: /home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/ooc.xdc
+# XDC: The top module name and the constraint reference have the same name: 'design_1_axi_smc_0'. Do not add the DONT_TOUCH constraint.
+set_property DONT_TOUCH TRUE [get_cells inst -quiet] -quiet
+
 # XDC: /home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_1/bd_afc3_psr_aclk_0_board.xdc
 # DONT_TOUCH constraint suppressed by parent sub-design file.
 
@@ -129,10 +133,6 @@
 # XDC: /home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_24/bd_afc3_m00wn_0_ooc.xdc
 
 # XDC: /home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_25/bd_afc3_m00bn_0_ooc.xdc
-
-# XDC: /home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/ooc.xdc
-# XDC: The top module name and the constraint reference have the same name: 'design_1_axi_smc_0'. Do not add the DONT_TOUCH constraint.
-set_property DONT_TOUCH TRUE [get_cells inst -quiet] -quiet
 
 # IP: /home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/design_1_axi_smc_0.xci
 # IP: The module: 'design_1_axi_smc_0' is the root of the design. Do not add the DONT_TOUCH constraint.
@@ -221,6 +221,10 @@ set_property DONT_TOUCH TRUE [get_cells inst -quiet] -quiet
 # IP: /home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_26/bd_afc3_m00e_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
+# XDC: /home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/ooc.xdc
+# XDC: The top module name and the constraint reference have the same name: 'design_1_axi_smc_0'. Do not add the DONT_TOUCH constraint.
+#dup# set_property DONT_TOUCH TRUE [get_cells inst -quiet] -quiet
+
 # XDC: /home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_1/bd_afc3_psr_aclk_0_board.xdc
 # DONT_TOUCH constraint suppressed by parent sub-design file.
 
@@ -262,7 +266,3 @@ set_property DONT_TOUCH TRUE [get_cells inst -quiet] -quiet
 # XDC: /home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_24/bd_afc3_m00wn_0_ooc.xdc
 
 # XDC: /home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_25/bd_afc3_m00bn_0_ooc.xdc
-
-# XDC: /home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/ooc.xdc
-# XDC: The top module name and the constraint reference have the same name: 'design_1_axi_smc_0'. Do not add the DONT_TOUCH constraint.
-#dup# set_property DONT_TOUCH TRUE [get_cells inst -quiet] -quiet
