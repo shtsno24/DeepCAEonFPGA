@@ -77432,8 +77432,8 @@ int main(void){
  do {
   output_buffer >> tmp;
   output_img_buff[i] = (int16_t)tmp.data;
+  cout << "count " << i << ", last " << tmp.last << "\r\n";
   i += 1;
-
  } while(tmp.last != 1);
 
  cout << "\r\n";

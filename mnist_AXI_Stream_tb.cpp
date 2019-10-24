@@ -41,12 +41,12 @@ int main(void){
 	cout << "\r\n";
 	cout << "\r\n";
 
-    // for(int i = 0; i < 5; i++){
-    // 	//dummy
-	// 	tmp.data = i;
-	// 	tmp.user = 0;
-	// 	input_buffer << tmp;
-    // }
+//     for(int i = 0; i < 5; i++){
+//     	//dummy
+//	 	tmp.data = i;
+//	 	tmp.user = 0;
+//	 	input_buffer << tmp;
+//     }
 
 	for(int depth = 0; depth < 1; depth++){
 		for(int height = 0; height < 28; height++){
@@ -76,8 +76,8 @@ int main(void){
 	do {
 		output_buffer >> tmp;
 		output_img_buff[i] = (int16_t)tmp.data;
+		cout << "count " << i << ", last " << tmp.last << "\r\n";
 		i += 1;
-		// cout << "count " << i << ", last " << tmp.last << "\r\n";
 	} while(tmp.last != 1);
 
 	cout << "\r\n";

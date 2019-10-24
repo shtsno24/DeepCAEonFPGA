@@ -1,10 +1,10 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
--- Date        : Thu Oct 24 11:43:25 2019
+-- Date        : Thu Oct 24 11:43:24 2019
 -- Host        : masudalab-ubuntu running 64-bit Ubuntu 18.04.3 LTS
--- Command     : write_vhdl -force -mode funcsim
---               /home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_xbar_2/design_1_xbar_2_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top design_1_xbar_2 -prefix
+--               design_1_xbar_2_ design_1_xbar_2_sim_netlist.vhdl
 -- Design      : design_1_xbar_2
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -68,8 +68,6 @@ entity design_1_xbar_2_axi_crossbar_v2_1_19_addr_arbiter_sasd is
     mi_bvalid : in STD_LOGIC_VECTOR ( 0 to 0 );
     mi_wready : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_xbar_2_axi_crossbar_v2_1_19_addr_arbiter_sasd : entity is "axi_crossbar_v2_1_19_addr_arbiter_sasd";
 end design_1_xbar_2_axi_crossbar_v2_1_19_addr_arbiter_sasd;
 
 architecture STRUCTURE of design_1_xbar_2_axi_crossbar_v2_1_19_addr_arbiter_sasd is
@@ -1502,8 +1500,6 @@ entity design_1_xbar_2_axi_crossbar_v2_1_19_decerr_slave is
     \gen_axilite.s_axi_bvalid_i_reg_1\ : in STD_LOGIC;
     aa_rready : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_xbar_2_axi_crossbar_v2_1_19_decerr_slave : entity is "axi_crossbar_v2_1_19_decerr_slave";
 end design_1_xbar_2_axi_crossbar_v2_1_19_decerr_slave;
 
 architecture STRUCTURE of design_1_xbar_2_axi_crossbar_v2_1_19_decerr_slave is
@@ -1696,8 +1692,6 @@ entity design_1_xbar_2_axi_crossbar_v2_1_19_splitter is
     aresetn_d : in STD_LOGIC;
     aclk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_xbar_2_axi_crossbar_v2_1_19_splitter : entity is "axi_crossbar_v2_1_19_splitter";
 end design_1_xbar_2_axi_crossbar_v2_1_19_splitter;
 
 architecture STRUCTURE of design_1_xbar_2_axi_crossbar_v2_1_19_splitter is
@@ -1907,8 +1901,6 @@ entity design_1_xbar_2_axi_register_slice_v2_1_18_axic_register_slice is
     SR : in STD_LOGIC_VECTOR ( 0 to 0 );
     E : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_xbar_2_axi_register_slice_v2_1_18_axic_register_slice : entity is "axi_register_slice_v2_1_18_axic_register_slice";
 end design_1_xbar_2_axi_register_slice_v2_1_18_axic_register_slice;
 
 architecture STRUCTURE of design_1_xbar_2_axi_register_slice_v2_1_18_axic_register_slice is
@@ -3489,8 +3481,6 @@ entity design_1_xbar_2_axi_crossbar_v2_1_19_crossbar_sasd is
     s_axi_araddr : in STD_LOGIC_VECTOR ( 31 downto 0 );
     s_axi_awaddr : in STD_LOGIC_VECTOR ( 31 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_xbar_2_axi_crossbar_v2_1_19_crossbar_sasd : entity is "axi_crossbar_v2_1_19_crossbar_sasd";
 end design_1_xbar_2_axi_crossbar_v2_1_19_crossbar_sasd;
 
 architecture STRUCTURE of design_1_xbar_2_axi_crossbar_v2_1_19_crossbar_sasd is
@@ -3924,8 +3914,6 @@ entity design_1_xbar_2_axi_crossbar_v2_1_19_axi_crossbar is
   attribute C_S_AXI_WRITE_ACCEPTANCE of design_1_xbar_2_axi_crossbar_v2_1_19_axi_crossbar : entity is 1;
   attribute DowngradeIPIdentifiedWarnings : string;
   attribute DowngradeIPIdentifiedWarnings of design_1_xbar_2_axi_crossbar_v2_1_19_axi_crossbar : entity is "yes";
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_xbar_2_axi_crossbar_v2_1_19_axi_crossbar : entity is "axi_crossbar_v2_1_19_axi_crossbar";
   attribute P_ADDR_DECODE : integer;
   attribute P_ADDR_DECODE of design_1_xbar_2_axi_crossbar_v2_1_19_axi_crossbar : entity is 1;
   attribute P_AXI3 : integer;

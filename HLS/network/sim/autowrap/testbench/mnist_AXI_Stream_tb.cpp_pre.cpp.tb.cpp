@@ -1,5 +1,5 @@
 // ==============================================================
-// File generated on Wed Oct 23 18:10:20 JST 2019
+// File generated on Thu Oct 24 18:14:16 JST 2019
 // Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
 // SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 // IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
@@ -77466,8 +77466,8 @@ network
  do {
   output_buffer >> tmp;
   output_img_buff[i] = (int16_t)tmp.data;
+  cout << "count " << i << ", last " << tmp.last << "\r\n";
   i += 1;
-
  } while(tmp.last != 1);
 
  cout << "\r\n";

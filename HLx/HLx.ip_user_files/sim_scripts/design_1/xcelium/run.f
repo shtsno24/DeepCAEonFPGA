@@ -28,46 +28,46 @@
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   "../../../bd/design_1/ip/design_1_processing_system7_0_0/sim/design_1_processing_system7_0_0.v" \
-  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/31e1/hdl/verilog/conv2d_fix16.v" \
-  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/31e1/hdl/verilog/conv2d_fix16_1.v" \
-  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/31e1/hdl/verilog/conv2d_fix16_1_Conv2D_0_b.v" \
-  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/31e1/hdl/verilog/conv2d_fix16_1_Conv2D_0_w_0.v" \
-  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/31e1/hdl/verilog/conv2d_fix16_2.v" \
-  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/31e1/hdl/verilog/conv2d_fix16_2_Conv2D_1_b.v" \
-  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/31e1/hdl/verilog/conv2d_fix16_2_Conv2D_1_w.v" \
-  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/31e1/hdl/verilog/conv2d_fix16_3.v" \
-  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/31e1/hdl/verilog/conv2d_fix16_3_Conv2D_2_b.v" \
-  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/31e1/hdl/verilog/conv2d_fix16_3_Conv2D_2_w.v" \
-  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/31e1/hdl/verilog/conv2d_fix16_228.v" \
-  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/31e1/hdl/verilog/conv2d_fix16_228_Conv2D_3_b.v" \
-  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/31e1/hdl/verilog/conv2d_fix16_228_Conv2D_3_w.v" \
-  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/31e1/hdl/verilog/conv2d_fix16_Conv2D_4_w_0.v" \
-  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/31e1/hdl/verilog/max_pooling2d_fix16.v" \
-  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/31e1/hdl/verilog/max_pooling2d_fix16_1.v" \
-  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/31e1/hdl/verilog/network_AXILiteS_s_axi.v" \
-  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/31e1/hdl/verilog/network_Conv2D_0_array.v" \
-  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/31e1/hdl/verilog/network_Conv2D_1_array.v" \
-  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/31e1/hdl/verilog/network_Conv2D_4_array.v" \
-  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/31e1/hdl/verilog/network_input_0_array_0.v" \
-  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/31e1/hdl/verilog/network_MaxPooling2D_0_array.v" \
-  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/31e1/hdl/verilog/network_MaxPooling2D_1_array.v" \
-  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/31e1/hdl/verilog/network_mul_mul_14s_16s_30_1_1.v" \
-  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/31e1/hdl/verilog/network_mul_mul_16s_13s_29_1_1.v" \
-  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/31e1/hdl/verilog/network_out_0_id_V.v" \
-  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/31e1/hdl/verilog/network_out_0_keep_V.v" \
-  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/31e1/hdl/verilog/network_Padding2D_0_array.v" \
-  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/31e1/hdl/verilog/network_Padding2D_1_array.v" \
-  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/31e1/hdl/verilog/network_Padding2D_2_array.v" \
-  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/31e1/hdl/verilog/network_Padding2D_3_array.v" \
-  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/31e1/hdl/verilog/network_Padding2D_4_array.v" \
-  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/31e1/hdl/verilog/padding2d_fix16.v" \
-  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/31e1/hdl/verilog/padding2d_fix16_1.v" \
-  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/31e1/hdl/verilog/padding2d_fix16_2.v" \
-  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/31e1/hdl/verilog/padding2d_fix16_3.v" \
-  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/31e1/hdl/verilog/padding2d_fix16_4.v" \
-  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/31e1/hdl/verilog/up_sampling2d_fix16.v" \
-  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/31e1/hdl/verilog/up_sampling2d_fix16_1.v" \
-  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/31e1/hdl/verilog/network.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/eba0/hdl/verilog/conv2d_fix16.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/eba0/hdl/verilog/conv2d_fix16_1.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/eba0/hdl/verilog/conv2d_fix16_1_Conv2D_0_b.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/eba0/hdl/verilog/conv2d_fix16_1_Conv2D_0_w_0.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/eba0/hdl/verilog/conv2d_fix16_2.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/eba0/hdl/verilog/conv2d_fix16_2_Conv2D_1_b.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/eba0/hdl/verilog/conv2d_fix16_2_Conv2D_1_w.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/eba0/hdl/verilog/conv2d_fix16_3.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/eba0/hdl/verilog/conv2d_fix16_3_Conv2D_2_b.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/eba0/hdl/verilog/conv2d_fix16_3_Conv2D_2_w.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/eba0/hdl/verilog/conv2d_fix16_228.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/eba0/hdl/verilog/conv2d_fix16_228_Conv2D_3_b.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/eba0/hdl/verilog/conv2d_fix16_228_Conv2D_3_w.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/eba0/hdl/verilog/conv2d_fix16_Conv2D_4_w_0.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/eba0/hdl/verilog/max_pooling2d_fix16.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/eba0/hdl/verilog/max_pooling2d_fix16_1.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/eba0/hdl/verilog/network_AXILiteS_s_axi.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/eba0/hdl/verilog/network_Conv2D_0_array.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/eba0/hdl/verilog/network_Conv2D_1_array.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/eba0/hdl/verilog/network_Conv2D_4_array.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/eba0/hdl/verilog/network_input_0_array_0.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/eba0/hdl/verilog/network_MaxPooling2D_0_array.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/eba0/hdl/verilog/network_MaxPooling2D_1_array.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/eba0/hdl/verilog/network_mul_mul_14s_16s_30_1_1.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/eba0/hdl/verilog/network_mul_mul_16s_13s_29_1_1.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/eba0/hdl/verilog/network_out_0_id_V.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/eba0/hdl/verilog/network_out_0_keep_V.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/eba0/hdl/verilog/network_Padding2D_0_array.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/eba0/hdl/verilog/network_Padding2D_1_array.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/eba0/hdl/verilog/network_Padding2D_2_array.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/eba0/hdl/verilog/network_Padding2D_3_array.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/eba0/hdl/verilog/network_Padding2D_4_array.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/eba0/hdl/verilog/padding2d_fix16.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/eba0/hdl/verilog/padding2d_fix16_1.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/eba0/hdl/verilog/padding2d_fix16_2.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/eba0/hdl/verilog/padding2d_fix16_3.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/eba0/hdl/verilog/padding2d_fix16_4.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/eba0/hdl/verilog/up_sampling2d_fix16.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/eba0/hdl/verilog/up_sampling2d_fix16_1.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/eba0/hdl/verilog/network.v" \
   "../../../bd/design_1/ip/design_1_network_0_0/sim/design_1_network_0_0.v" \
 -endlib
 -makelib xcelium_lib/lib_pkg_v1_0_2 \
@@ -123,7 +123,6 @@
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   "../../../bd/design_1/ip/design_1_xbar_2/sim/design_1_xbar_2.v" \
-  "../../../bd/design_1/ip/design_1_axi_smc_0/bd_0/sim/bd_afc3.v" \
 -endlib
 -makelib xcelium_lib/xlconstant_v1_1_5 \
   "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/4649/hdl/xlconstant_v1_1_vl_rfs.v" \
@@ -201,14 +200,18 @@
   "../../../bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_26/sim/bd_afc3_m00e_0.sv" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/design_1/ip/design_1_axi_smc_0/bd_0/sim/bd_afc3.v" \
   "../../../bd/design_1/ip/design_1_axi_smc_0/sim/design_1_axi_smc_0.v" \
-  "../../../bd/design_1/sim/design_1.v" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/design_1/ip/design_1_axi_dma_0_0/sim/design_1_axi_dma_0_0.vhd" \
 -endlib
 -makelib xcelium_lib/axi_protocol_converter_v2_1_18 \
   "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/7a04/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   "../../../bd/design_1/ip/design_1_auto_pc_0/sim/design_1_auto_pc_0.v" \
+  "../../../bd/design_1/sim/design_1.v" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   glbl.v

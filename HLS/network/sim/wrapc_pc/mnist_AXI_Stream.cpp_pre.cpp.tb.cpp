@@ -1,5 +1,5 @@
 // ==============================================================
-// File generated on Wed Oct 23 18:10:45 JST 2019
+// File generated on Thu Oct 24 18:14:36 JST 2019
 // Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
 // SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 // IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
@@ -77100,14 +77100,9 @@ void network(axis &input_data, axis &output_data){
  ap_axis<32, 1, 1, 1> tmp;
  ap_axis<32, 1, 1, 1> out[1][28][28];
 
-
-
-
-
  for(int depth = 0; depth < input_0_depth; depth++){
   for(int height = 0; height < input_0_height; height++){
    for(int width = 0; width < input_0_width; width++){
-
     tmp = input_data.read();
     input_0_array[depth][height][width] = (int16_t)tmp.data;
     out[depth][height][width].dest = tmp.dest;
@@ -77190,7 +77185,6 @@ void network(axis &input_data, axis &output_data){
     } else {
      out[depth][height][width].user = 0;
     }
-
 
     if((depth == Conv2D_4_depth-1) &&
      (height == Conv2D_4_height-1) &&

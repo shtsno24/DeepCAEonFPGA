@@ -654,7 +654,7 @@
 						<name></name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>40</lineNumber>
+						<lineNumber>36</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -669,7 +669,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>40</second>
+										<second>36</second>
 									</item>
 								</second>
 							</item>
@@ -702,7 +702,7 @@
 						<name>height</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>40</lineNumber>
+						<lineNumber>36</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -717,7 +717,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>40</second>
+										<second>36</second>
 									</item>
 								</second>
 							</item>
@@ -753,7 +753,7 @@
 						<name>exitcond2</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>40</lineNumber>
+						<lineNumber>36</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -768,7 +768,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>40</second>
+										<second>36</second>
 									</item>
 								</second>
 							</item>
@@ -802,7 +802,7 @@
 						<name>height_2</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>40</lineNumber>
+						<lineNumber>36</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -817,7 +817,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>40</second>
+										<second>36</second>
 									</item>
 								</second>
 							</item>
@@ -851,7 +851,7 @@
 						<name></name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>40</lineNumber>
+						<lineNumber>36</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -866,7 +866,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>40</second>
+										<second>36</second>
 									</item>
 								</second>
 							</item>
@@ -901,7 +901,7 @@
 						<name>tmp_1</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>40</lineNumber>
+						<lineNumber>36</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -916,7 +916,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>40</second>
+										<second>36</second>
 									</item>
 								</second>
 							</item>
@@ -951,7 +951,7 @@
 						<name>p_shl_cast</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>40</lineNumber>
+						<lineNumber>36</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -966,7 +966,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>40</second>
+										<second>36</second>
 									</item>
 								</second>
 							</item>
@@ -999,7 +999,7 @@
 						<name>tmp_2</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>40</lineNumber>
+						<lineNumber>36</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1014,7 +1014,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>40</second>
+										<second>36</second>
 									</item>
 								</second>
 							</item>
@@ -1049,7 +1049,7 @@
 						<name>p_shl1_cast</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>44</lineNumber>
+						<lineNumber>39</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1064,7 +1064,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>44</second>
+										<second>39</second>
 									</item>
 								</second>
 							</item>
@@ -1097,7 +1097,7 @@
 						<name>tmp_3</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>44</lineNumber>
+						<lineNumber>39</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1112,7 +1112,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>44</second>
+										<second>39</second>
 									</item>
 								</second>
 							</item>
@@ -1146,7 +1146,7 @@
 						<name></name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>41</lineNumber>
+						<lineNumber>37</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1161,7 +1161,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>41</second>
+										<second>37</second>
 									</item>
 								</second>
 							</item>
@@ -1194,7 +1194,7 @@
 						<name>width</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>41</lineNumber>
+						<lineNumber>37</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1209,7 +1209,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>41</second>
+										<second>37</second>
 									</item>
 								</second>
 							</item>
@@ -1245,7 +1245,7 @@
 						<name>exitcond</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>41</lineNumber>
+						<lineNumber>37</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1260,7 +1260,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>41</second>
+										<second>37</second>
 									</item>
 								</second>
 							</item>
@@ -1294,7 +1294,7 @@
 						<name>width_4</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>41</lineNumber>
+						<lineNumber>37</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1309,7 +1309,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>41</second>
+										<second>37</second>
 									</item>
 								</second>
 							</item>
@@ -1343,7 +1343,7 @@
 						<name></name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>41</lineNumber>
+						<lineNumber>37</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1358,7 +1358,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>41</second>
+										<second>37</second>
 									</item>
 								</second>
 							</item>
@@ -1393,7 +1393,7 @@
 						<name>empty_27</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>43</lineNumber>
+						<lineNumber>38</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1408,7 +1408,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>43</second>
+										<second>38</second>
 									</item>
 								</second>
 							</item>
@@ -1448,7 +1448,7 @@
 						<name>tmp_data_V</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>43</lineNumber>
+						<lineNumber>38</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1463,7 +1463,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>43</second>
+										<second>38</second>
 									</item>
 								</second>
 							</item>
@@ -1496,7 +1496,7 @@
 						<name>tmp_keep_V</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>43</lineNumber>
+						<lineNumber>38</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1511,7 +1511,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>43</second>
+										<second>38</second>
 									</item>
 								</second>
 							</item>
@@ -1544,7 +1544,7 @@
 						<name>tmp_strb_V</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>43</lineNumber>
+						<lineNumber>38</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1559,7 +1559,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>43</second>
+										<second>38</second>
 									</item>
 								</second>
 							</item>
@@ -1592,7 +1592,7 @@
 						<name>tmp_id_V</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>43</lineNumber>
+						<lineNumber>38</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1607,7 +1607,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>43</second>
+										<second>38</second>
 									</item>
 								</second>
 							</item>
@@ -1640,7 +1640,7 @@
 						<name>tmp_dest_V</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>43</lineNumber>
+						<lineNumber>38</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1655,7 +1655,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>43</second>
+										<second>38</second>
 									</item>
 								</second>
 							</item>
@@ -1688,7 +1688,7 @@
 						<name>tmp_9</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>44</lineNumber>
+						<lineNumber>39</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1703,7 +1703,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>44</second>
+										<second>39</second>
 									</item>
 								</second>
 							</item>
@@ -1736,7 +1736,7 @@
 						<name>tmp_62_cast</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>44</lineNumber>
+						<lineNumber>39</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1751,7 +1751,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>44</second>
+										<second>39</second>
 									</item>
 								</second>
 							</item>
@@ -1784,7 +1784,7 @@
 						<name>tmp_7</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>44</lineNumber>
+						<lineNumber>39</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1799,7 +1799,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>44</second>
+										<second>39</second>
 									</item>
 								</second>
 							</item>
@@ -1833,7 +1833,7 @@
 						<name>tmp_7_cast</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>44</lineNumber>
+						<lineNumber>39</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1848,7 +1848,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>44</second>
+										<second>39</second>
 									</item>
 								</second>
 							</item>
@@ -1881,7 +1881,7 @@
 						<name>input_0_array_0_add</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>44</lineNumber>
+						<lineNumber>39</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1896,7 +1896,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>44</second>
+										<second>39</second>
 									</item>
 								</second>
 							</item>
@@ -1931,7 +1931,7 @@
 						<name>out_0_keep_V_addr</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>47</lineNumber>
+						<lineNumber>42</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1946,7 +1946,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>47</second>
+										<second>42</second>
 									</item>
 								</second>
 							</item>
@@ -1981,7 +1981,7 @@
 						<name>out_0_strb_V_addr</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>48</lineNumber>
+						<lineNumber>43</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1996,7 +1996,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>48</second>
+										<second>43</second>
 									</item>
 								</second>
 							</item>
@@ -2031,7 +2031,7 @@
 						<name>out_0_id_V_addr</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>46</lineNumber>
+						<lineNumber>41</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2046,7 +2046,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>46</second>
+										<second>41</second>
 									</item>
 								</second>
 							</item>
@@ -2081,7 +2081,7 @@
 						<name>out_0_dest_V_addr</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>45</lineNumber>
+						<lineNumber>40</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2096,7 +2096,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>45</second>
+										<second>40</second>
 									</item>
 								</second>
 							</item>
@@ -2131,7 +2131,7 @@
 						<name></name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>44</lineNumber>
+						<lineNumber>39</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2146,7 +2146,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>44</second>
+										<second>39</second>
 									</item>
 								</second>
 							</item>
@@ -2180,7 +2180,7 @@
 						<name></name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>45</lineNumber>
+						<lineNumber>40</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2195,7 +2195,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>45</second>
+										<second>40</second>
 									</item>
 								</second>
 							</item>
@@ -2229,7 +2229,7 @@
 						<name></name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>46</lineNumber>
+						<lineNumber>41</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2244,7 +2244,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>46</second>
+										<second>41</second>
 									</item>
 								</second>
 							</item>
@@ -2278,7 +2278,7 @@
 						<name></name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>47</lineNumber>
+						<lineNumber>42</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2293,7 +2293,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>47</second>
+										<second>42</second>
 									</item>
 								</second>
 							</item>
@@ -2327,7 +2327,7 @@
 						<name></name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>48</lineNumber>
+						<lineNumber>43</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2342,7 +2342,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>48</second>
+										<second>43</second>
 									</item>
 								</second>
 							</item>
@@ -2376,7 +2376,7 @@
 						<name></name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>41</lineNumber>
+						<lineNumber>37</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2391,7 +2391,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>41</second>
+										<second>37</second>
 									</item>
 								</second>
 							</item>
@@ -2458,7 +2458,7 @@
 						<name>Padding2D_0_width_lo</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>53</lineNumber>
+						<lineNumber>48</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2473,7 +2473,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>53</second>
+										<second>48</second>
 									</item>
 								</second>
 							</item>
@@ -2506,7 +2506,7 @@
 						<name></name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>53</lineNumber>
+						<lineNumber>48</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2521,7 +2521,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>53</second>
+										<second>48</second>
 									</item>
 								</second>
 							</item>
@@ -2557,7 +2557,7 @@
 						<name>Padding2D_0_depth_lo</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>57</lineNumber>
+						<lineNumber>52</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2572,7 +2572,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>57</second>
+										<second>52</second>
 									</item>
 								</second>
 							</item>
@@ -2605,7 +2605,7 @@
 						<name>Padding2D_0_height_l</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>57</lineNumber>
+						<lineNumber>52</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2620,7 +2620,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>57</second>
+										<second>52</second>
 									</item>
 								</second>
 							</item>
@@ -2653,7 +2653,7 @@
 						<name>Padding2D_0_width_lo_1</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>57</lineNumber>
+						<lineNumber>52</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2668,7 +2668,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>57</second>
+										<second>52</second>
 									</item>
 								</second>
 							</item>
@@ -2701,7 +2701,7 @@
 						<name>Conv2D_0_depth_load</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>57</lineNumber>
+						<lineNumber>52</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2716,7 +2716,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>57</second>
+										<second>52</second>
 									</item>
 								</second>
 							</item>
@@ -2749,7 +2749,7 @@
 						<name>Conv2D_0_height_load</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>57</lineNumber>
+						<lineNumber>52</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2764,7 +2764,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>57</second>
+										<second>52</second>
 									</item>
 								</second>
 							</item>
@@ -2797,7 +2797,7 @@
 						<name>Conv2D_0_width_load</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>57</lineNumber>
+						<lineNumber>52</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2812,7 +2812,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>57</second>
+										<second>52</second>
 									</item>
 								</second>
 							</item>
@@ -2845,7 +2845,7 @@
 						<name></name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>57</lineNumber>
+						<lineNumber>52</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2860,7 +2860,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>57</second>
+										<second>52</second>
 									</item>
 								</second>
 							</item>
@@ -2905,7 +2905,7 @@
 						<name>Conv2D_0_height_load_1</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>62</lineNumber>
+						<lineNumber>57</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2920,7 +2920,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>62</second>
+										<second>57</second>
 									</item>
 								</second>
 							</item>
@@ -2953,7 +2953,7 @@
 						<name>Conv2D_0_width_load_1</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>62</lineNumber>
+						<lineNumber>57</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2968,7 +2968,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>62</second>
+										<second>57</second>
 									</item>
 								</second>
 							</item>
@@ -3001,7 +3001,7 @@
 						<name>MaxPooling2D_0_depth_1</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>62</lineNumber>
+						<lineNumber>57</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3016,7 +3016,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>62</second>
+										<second>57</second>
 									</item>
 								</second>
 							</item>
@@ -3049,7 +3049,7 @@
 						<name>MaxPooling2D_0_heigh_1</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>62</lineNumber>
+						<lineNumber>57</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3064,7 +3064,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>62</second>
+										<second>57</second>
 									</item>
 								</second>
 							</item>
@@ -3097,7 +3097,7 @@
 						<name>MaxPooling2D_0_width_1</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>62</lineNumber>
+						<lineNumber>57</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3112,7 +3112,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>62</second>
+										<second>57</second>
 									</item>
 								</second>
 							</item>
@@ -3145,7 +3145,7 @@
 						<name></name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>62</lineNumber>
+						<lineNumber>57</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3160,7 +3160,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>62</second>
+										<second>57</second>
 									</item>
 								</second>
 							</item>
@@ -3202,7 +3202,7 @@
 						<name>MaxPooling2D_0_depth_2</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>66</lineNumber>
+						<lineNumber>61</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3217,7 +3217,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>66</second>
+										<second>61</second>
 									</item>
 								</second>
 							</item>
@@ -3250,7 +3250,7 @@
 						<name>MaxPooling2D_0_heigh_2</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>66</lineNumber>
+						<lineNumber>61</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3265,7 +3265,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>66</second>
+										<second>61</second>
 									</item>
 								</second>
 							</item>
@@ -3298,7 +3298,7 @@
 						<name>MaxPooling2D_0_width_2</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>66</lineNumber>
+						<lineNumber>61</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3313,7 +3313,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>66</second>
+										<second>61</second>
 									</item>
 								</second>
 							</item>
@@ -3346,7 +3346,7 @@
 						<name>Padding2D_1_height_l</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>66</lineNumber>
+						<lineNumber>61</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3361,7 +3361,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>66</second>
+										<second>61</second>
 									</item>
 								</second>
 							</item>
@@ -3394,7 +3394,7 @@
 						<name>Padding2D_1_width_lo</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>66</lineNumber>
+						<lineNumber>61</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3409,7 +3409,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>66</second>
+										<second>61</second>
 									</item>
 								</second>
 							</item>
@@ -3442,7 +3442,7 @@
 						<name></name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>66</lineNumber>
+						<lineNumber>61</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3457,7 +3457,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>66</second>
+										<second>61</second>
 									</item>
 								</second>
 							</item>
@@ -3499,7 +3499,7 @@
 						<name>Padding2D_1_depth_lo</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>70</lineNumber>
+						<lineNumber>65</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3514,7 +3514,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>70</second>
+										<second>65</second>
 									</item>
 								</second>
 							</item>
@@ -3547,7 +3547,7 @@
 						<name>Padding2D_1_height_l_1</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>70</lineNumber>
+						<lineNumber>65</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3562,7 +3562,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>70</second>
+										<second>65</second>
 									</item>
 								</second>
 							</item>
@@ -3595,7 +3595,7 @@
 						<name>Padding2D_1_width_lo_1</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>70</lineNumber>
+						<lineNumber>65</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3610,7 +3610,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>70</second>
+										<second>65</second>
 									</item>
 								</second>
 							</item>
@@ -3643,7 +3643,7 @@
 						<name>Conv2D_1_depth_load</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>70</lineNumber>
+						<lineNumber>65</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3658,7 +3658,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>70</second>
+										<second>65</second>
 									</item>
 								</second>
 							</item>
@@ -3691,7 +3691,7 @@
 						<name>Conv2D_1_height_load</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>70</lineNumber>
+						<lineNumber>65</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3706,7 +3706,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>70</second>
+										<second>65</second>
 									</item>
 								</second>
 							</item>
@@ -3739,7 +3739,7 @@
 						<name>Conv2D_1_width_load</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>70</lineNumber>
+						<lineNumber>65</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3754,7 +3754,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>70</second>
+										<second>65</second>
 									</item>
 								</second>
 							</item>
@@ -3787,7 +3787,7 @@
 						<name></name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>70</lineNumber>
+						<lineNumber>65</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3802,7 +3802,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>70</second>
+										<second>65</second>
 									</item>
 								</second>
 							</item>
@@ -3847,7 +3847,7 @@
 						<name>Conv2D_1_height_load_1</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>75</lineNumber>
+						<lineNumber>70</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3862,7 +3862,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>75</second>
+										<second>70</second>
 									</item>
 								</second>
 							</item>
@@ -3895,7 +3895,7 @@
 						<name>Conv2D_1_width_load_1</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>75</lineNumber>
+						<lineNumber>70</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3910,7 +3910,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>75</second>
+										<second>70</second>
 									</item>
 								</second>
 							</item>
@@ -3943,7 +3943,7 @@
 						<name>MaxPooling2D_1_depth_1</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>75</lineNumber>
+						<lineNumber>70</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3958,7 +3958,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>75</second>
+										<second>70</second>
 									</item>
 								</second>
 							</item>
@@ -3991,7 +3991,7 @@
 						<name>MaxPooling2D_1_heigh_1</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>75</lineNumber>
+						<lineNumber>70</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4006,7 +4006,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>75</second>
+										<second>70</second>
 									</item>
 								</second>
 							</item>
@@ -4039,7 +4039,7 @@
 						<name>MaxPooling2D_1_width_1</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>75</lineNumber>
+						<lineNumber>70</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4054,7 +4054,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>75</second>
+										<second>70</second>
 									</item>
 								</second>
 							</item>
@@ -4087,7 +4087,7 @@
 						<name></name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>75</lineNumber>
+						<lineNumber>70</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4102,7 +4102,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>75</second>
+										<second>70</second>
 									</item>
 								</second>
 							</item>
@@ -4144,7 +4144,7 @@
 						<name>MaxPooling2D_1_depth_2</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>79</lineNumber>
+						<lineNumber>74</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4159,7 +4159,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>79</second>
+										<second>74</second>
 									</item>
 								</second>
 							</item>
@@ -4192,7 +4192,7 @@
 						<name>MaxPooling2D_1_heigh_2</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>79</lineNumber>
+						<lineNumber>74</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4207,7 +4207,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>79</second>
+										<second>74</second>
 									</item>
 								</second>
 							</item>
@@ -4240,7 +4240,7 @@
 						<name>MaxPooling2D_1_width_2</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>79</lineNumber>
+						<lineNumber>74</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4255,7 +4255,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>79</second>
+										<second>74</second>
 									</item>
 								</second>
 							</item>
@@ -4288,7 +4288,7 @@
 						<name>Padding2D_2_height_l</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>79</lineNumber>
+						<lineNumber>74</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4303,7 +4303,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>79</second>
+										<second>74</second>
 									</item>
 								</second>
 							</item>
@@ -4336,7 +4336,7 @@
 						<name>Padding2D_2_width_lo</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>79</lineNumber>
+						<lineNumber>74</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4351,7 +4351,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>79</second>
+										<second>74</second>
 									</item>
 								</second>
 							</item>
@@ -4384,7 +4384,7 @@
 						<name></name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>79</lineNumber>
+						<lineNumber>74</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4399,7 +4399,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>79</second>
+										<second>74</second>
 									</item>
 								</second>
 							</item>
@@ -4441,7 +4441,7 @@
 						<name>Padding2D_2_depth_lo</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>83</lineNumber>
+						<lineNumber>78</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4456,7 +4456,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>83</second>
+										<second>78</second>
 									</item>
 								</second>
 							</item>
@@ -4489,7 +4489,7 @@
 						<name>Padding2D_2_height_l_1</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>83</lineNumber>
+						<lineNumber>78</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4504,7 +4504,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>83</second>
+										<second>78</second>
 									</item>
 								</second>
 							</item>
@@ -4537,7 +4537,7 @@
 						<name>Padding2D_2_width_lo_1</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>83</lineNumber>
+						<lineNumber>78</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4552,7 +4552,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>83</second>
+										<second>78</second>
 									</item>
 								</second>
 							</item>
@@ -4585,7 +4585,7 @@
 						<name>Conv2D_2_depth_load</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>83</lineNumber>
+						<lineNumber>78</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4600,7 +4600,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>83</second>
+										<second>78</second>
 									</item>
 								</second>
 							</item>
@@ -4633,7 +4633,7 @@
 						<name>Conv2D_2_height_load</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>83</lineNumber>
+						<lineNumber>78</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4648,7 +4648,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>83</second>
+										<second>78</second>
 									</item>
 								</second>
 							</item>
@@ -4681,7 +4681,7 @@
 						<name>Conv2D_2_width_load</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>83</lineNumber>
+						<lineNumber>78</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4696,7 +4696,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>83</second>
+										<second>78</second>
 									</item>
 								</second>
 							</item>
@@ -4729,7 +4729,7 @@
 						<name></name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>83</lineNumber>
+						<lineNumber>78</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4744,7 +4744,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>83</second>
+										<second>78</second>
 									</item>
 								</second>
 							</item>
@@ -4789,7 +4789,7 @@
 						<name>Conv2D_2_height_load_1</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>88</lineNumber>
+						<lineNumber>83</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4804,7 +4804,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>88</second>
+										<second>83</second>
 									</item>
 								</second>
 							</item>
@@ -4837,7 +4837,7 @@
 						<name>Conv2D_2_width_load_1</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>88</lineNumber>
+						<lineNumber>83</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4852,7 +4852,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>88</second>
+										<second>83</second>
 									</item>
 								</second>
 							</item>
@@ -4885,7 +4885,7 @@
 						<name>UpSampling2D_0_depth_1</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>88</lineNumber>
+						<lineNumber>83</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4900,7 +4900,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>88</second>
+										<second>83</second>
 									</item>
 								</second>
 							</item>
@@ -4933,7 +4933,7 @@
 						<name>UpSampling2D_0_heigh_1</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>88</lineNumber>
+						<lineNumber>83</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4948,7 +4948,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>88</second>
+										<second>83</second>
 									</item>
 								</second>
 							</item>
@@ -4981,7 +4981,7 @@
 						<name>UpSampling2D_0_width_1</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>88</lineNumber>
+						<lineNumber>83</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4996,7 +4996,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>88</second>
+										<second>83</second>
 									</item>
 								</second>
 							</item>
@@ -5029,7 +5029,7 @@
 						<name></name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>88</lineNumber>
+						<lineNumber>83</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5044,7 +5044,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>88</second>
+										<second>83</second>
 									</item>
 								</second>
 							</item>
@@ -5086,7 +5086,7 @@
 						<name>UpSampling2D_0_depth_2</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>92</lineNumber>
+						<lineNumber>87</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5101,7 +5101,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>92</second>
+										<second>87</second>
 									</item>
 								</second>
 							</item>
@@ -5134,7 +5134,7 @@
 						<name>UpSampling2D_0_heigh_2</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>92</lineNumber>
+						<lineNumber>87</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5149,7 +5149,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>92</second>
+										<second>87</second>
 									</item>
 								</second>
 							</item>
@@ -5182,7 +5182,7 @@
 						<name>UpSampling2D_0_width_2</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>92</lineNumber>
+						<lineNumber>87</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5197,7 +5197,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>92</second>
+										<second>87</second>
 									</item>
 								</second>
 							</item>
@@ -5230,7 +5230,7 @@
 						<name>Padding2D_3_height_l</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>92</lineNumber>
+						<lineNumber>87</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5245,7 +5245,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>92</second>
+										<second>87</second>
 									</item>
 								</second>
 							</item>
@@ -5278,7 +5278,7 @@
 						<name>Padding2D_3_width_lo</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>92</lineNumber>
+						<lineNumber>87</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5293,7 +5293,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>92</second>
+										<second>87</second>
 									</item>
 								</second>
 							</item>
@@ -5326,7 +5326,7 @@
 						<name></name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>92</lineNumber>
+						<lineNumber>87</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5341,7 +5341,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>92</second>
+										<second>87</second>
 									</item>
 								</second>
 							</item>
@@ -5383,7 +5383,7 @@
 						<name>Padding2D_3_depth_lo</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>96</lineNumber>
+						<lineNumber>91</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5398,7 +5398,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>96</second>
+										<second>91</second>
 									</item>
 								</second>
 							</item>
@@ -5431,7 +5431,7 @@
 						<name>Padding2D_3_height_l_1</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>96</lineNumber>
+						<lineNumber>91</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5446,7 +5446,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>96</second>
+										<second>91</second>
 									</item>
 								</second>
 							</item>
@@ -5479,7 +5479,7 @@
 						<name>Padding2D_3_width_lo_1</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>96</lineNumber>
+						<lineNumber>91</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5494,7 +5494,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>96</second>
+										<second>91</second>
 									</item>
 								</second>
 							</item>
@@ -5527,7 +5527,7 @@
 						<name>Conv2D_3_depth_load</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>96</lineNumber>
+						<lineNumber>91</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5542,7 +5542,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>96</second>
+										<second>91</second>
 									</item>
 								</second>
 							</item>
@@ -5575,7 +5575,7 @@
 						<name>Conv2D_3_height_load</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>96</lineNumber>
+						<lineNumber>91</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5590,7 +5590,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>96</second>
+										<second>91</second>
 									</item>
 								</second>
 							</item>
@@ -5623,7 +5623,7 @@
 						<name>Conv2D_3_width_load</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>96</lineNumber>
+						<lineNumber>91</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5638,7 +5638,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>96</second>
+										<second>91</second>
 									</item>
 								</second>
 							</item>
@@ -5671,7 +5671,7 @@
 						<name></name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>96</lineNumber>
+						<lineNumber>91</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5686,7 +5686,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>96</second>
+										<second>91</second>
 									</item>
 								</second>
 							</item>
@@ -5731,7 +5731,7 @@
 						<name>Conv2D_3_height_load_1</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>101</lineNumber>
+						<lineNumber>96</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5746,7 +5746,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>101</second>
+										<second>96</second>
 									</item>
 								</second>
 							</item>
@@ -5779,7 +5779,7 @@
 						<name>Conv2D_3_width_load_1</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>101</lineNumber>
+						<lineNumber>96</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5794,7 +5794,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>101</second>
+										<second>96</second>
 									</item>
 								</second>
 							</item>
@@ -5827,7 +5827,7 @@
 						<name>UpSampling2D_1_depth_1</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>101</lineNumber>
+						<lineNumber>96</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5842,7 +5842,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>101</second>
+										<second>96</second>
 									</item>
 								</second>
 							</item>
@@ -5875,7 +5875,7 @@
 						<name>UpSampling2D_1_heigh_1</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>101</lineNumber>
+						<lineNumber>96</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5890,7 +5890,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>101</second>
+										<second>96</second>
 									</item>
 								</second>
 							</item>
@@ -5923,7 +5923,7 @@
 						<name>UpSampling2D_1_width_1</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>101</lineNumber>
+						<lineNumber>96</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5938,7 +5938,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>101</second>
+										<second>96</second>
 									</item>
 								</second>
 							</item>
@@ -5971,7 +5971,7 @@
 						<name></name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>101</lineNumber>
+						<lineNumber>96</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5986,7 +5986,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>101</second>
+										<second>96</second>
 									</item>
 								</second>
 							</item>
@@ -6028,7 +6028,7 @@
 						<name>UpSampling2D_1_depth_2</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>105</lineNumber>
+						<lineNumber>100</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6043,7 +6043,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>105</second>
+										<second>100</second>
 									</item>
 								</second>
 							</item>
@@ -6076,7 +6076,7 @@
 						<name>UpSampling2D_1_heigh_2</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>105</lineNumber>
+						<lineNumber>100</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6091,7 +6091,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>105</second>
+										<second>100</second>
 									</item>
 								</second>
 							</item>
@@ -6124,7 +6124,7 @@
 						<name>UpSampling2D_1_width_2</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>105</lineNumber>
+						<lineNumber>100</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6139,7 +6139,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>105</second>
+										<second>100</second>
 									</item>
 								</second>
 							</item>
@@ -6172,7 +6172,7 @@
 						<name>Padding2D_4_height_l</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>105</lineNumber>
+						<lineNumber>100</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6187,7 +6187,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>105</second>
+										<second>100</second>
 									</item>
 								</second>
 							</item>
@@ -6220,7 +6220,7 @@
 						<name>Padding2D_4_width_lo</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>105</lineNumber>
+						<lineNumber>100</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6235,7 +6235,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>105</second>
+										<second>100</second>
 									</item>
 								</second>
 							</item>
@@ -6268,7 +6268,7 @@
 						<name></name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>105</lineNumber>
+						<lineNumber>100</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6283,7 +6283,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>105</second>
+										<second>100</second>
 									</item>
 								</second>
 							</item>
@@ -6325,7 +6325,7 @@
 						<name>Padding2D_4_depth_lo</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>109</lineNumber>
+						<lineNumber>104</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6340,7 +6340,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>109</second>
+										<second>104</second>
 									</item>
 								</second>
 							</item>
@@ -6373,7 +6373,7 @@
 						<name>Padding2D_4_height_l_1</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>109</lineNumber>
+						<lineNumber>104</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6388,7 +6388,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>109</second>
+										<second>104</second>
 									</item>
 								</second>
 							</item>
@@ -6421,7 +6421,7 @@
 						<name>Padding2D_4_width_lo_1</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>109</lineNumber>
+						<lineNumber>104</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6436,7 +6436,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>109</second>
+										<second>104</second>
 									</item>
 								</second>
 							</item>
@@ -6469,7 +6469,7 @@
 						<name>Conv2D_4_depth_load</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>109</lineNumber>
+						<lineNumber>104</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6484,7 +6484,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>109</second>
+										<second>104</second>
 									</item>
 								</second>
 							</item>
@@ -6517,7 +6517,7 @@
 						<name>Conv2D_4_height_load</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>109</lineNumber>
+						<lineNumber>104</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6532,7 +6532,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>109</second>
+										<second>104</second>
 									</item>
 								</second>
 							</item>
@@ -6565,7 +6565,7 @@
 						<name>Conv2D_4_width_load</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>109</lineNumber>
+						<lineNumber>104</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6580,7 +6580,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>109</second>
+										<second>104</second>
 									</item>
 								</second>
 							</item>
@@ -6613,7 +6613,7 @@
 						<name></name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>109</lineNumber>
+						<lineNumber>104</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6628,7 +6628,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>109</second>
+										<second>104</second>
 									</item>
 								</second>
 							</item>
@@ -6672,7 +6672,7 @@
 						<name></name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>114</lineNumber>
+						<lineNumber>109</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6687,7 +6687,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>114</second>
+										<second>109</second>
 									</item>
 								</second>
 							</item>
@@ -6757,7 +6757,7 @@
 						<name>Conv2D_4_depth_load_1</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>114</lineNumber>
+						<lineNumber>109</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6772,7 +6772,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>114</second>
+										<second>109</second>
 									</item>
 								</second>
 							</item>
@@ -6805,7 +6805,7 @@
 						<name>tmp_s</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>114</lineNumber>
+						<lineNumber>109</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6820,7 +6820,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>114</second>
+										<second>109</second>
 									</item>
 								</second>
 							</item>
@@ -6853,7 +6853,7 @@
 						<name>tmp_55</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>114</lineNumber>
+						<lineNumber>109</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6868,7 +6868,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>114</second>
+										<second>109</second>
 									</item>
 								</second>
 							</item>
@@ -6902,7 +6902,7 @@
 						<name>depth</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>114</lineNumber>
+						<lineNumber>109</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6917,7 +6917,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>114</second>
+										<second>109</second>
 									</item>
 								</second>
 							</item>
@@ -6951,7 +6951,7 @@
 						<name></name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>114</lineNumber>
+						<lineNumber>109</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6966,7 +6966,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>114</second>
+										<second>109</second>
 									</item>
 								</second>
 							</item>
@@ -7001,7 +7001,7 @@
 						<name>tmp_4</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>114</lineNumber>
+						<lineNumber>109</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -7016,7 +7016,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>114</second>
+										<second>109</second>
 									</item>
 								</second>
 							</item>
@@ -7051,7 +7051,7 @@
 						<name>p_shl2_cast</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>114</lineNumber>
+						<lineNumber>109</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -7066,7 +7066,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>114</second>
+										<second>109</second>
 									</item>
 								</second>
 							</item>
@@ -7099,7 +7099,7 @@
 						<name>tmp_5</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>114</lineNumber>
+						<lineNumber>109</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -7114,7 +7114,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>114</second>
+										<second>109</second>
 									</item>
 								</second>
 							</item>
@@ -7149,7 +7149,7 @@
 						<name>p_shl3_cast</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>118</lineNumber>
+						<lineNumber>113</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -7164,7 +7164,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>118</second>
+										<second>113</second>
 									</item>
 								</second>
 							</item>
@@ -7197,7 +7197,7 @@
 						<name>tmp_6</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>118</lineNumber>
+						<lineNumber>113</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -7212,7 +7212,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>118</second>
+										<second>113</second>
 									</item>
 								</second>
 							</item>
@@ -7246,7 +7246,7 @@
 						<name></name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>115</lineNumber>
+						<lineNumber>110</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -7261,7 +7261,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>115</second>
+										<second>110</second>
 									</item>
 								</second>
 							</item>
@@ -7331,7 +7331,7 @@
 						<name>Conv2D_4_height_load_1</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>115</lineNumber>
+						<lineNumber>110</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -7346,7 +7346,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>115</second>
+										<second>110</second>
 									</item>
 								</second>
 							</item>
@@ -7379,7 +7379,7 @@
 						<name>tmp_58</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>115</lineNumber>
+						<lineNumber>110</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -7394,7 +7394,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>115</second>
+										<second>110</second>
 									</item>
 								</second>
 							</item>
@@ -7427,7 +7427,7 @@
 						<name>tmp_59</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>115</lineNumber>
+						<lineNumber>110</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -7442,7 +7442,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>115</second>
+										<second>110</second>
 									</item>
 								</second>
 							</item>
@@ -7476,7 +7476,7 @@
 						<name>height_3</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>115</lineNumber>
+						<lineNumber>110</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -7491,7 +7491,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>115</second>
+										<second>110</second>
 									</item>
 								</second>
 							</item>
@@ -7525,7 +7525,7 @@
 						<name></name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>115</lineNumber>
+						<lineNumber>110</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -7540,7 +7540,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>115</second>
+										<second>110</second>
 									</item>
 								</second>
 							</item>
@@ -7575,7 +7575,7 @@
 						<name>tmp_60_cast</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>118</lineNumber>
+						<lineNumber>113</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -7590,7 +7590,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>118</second>
+										<second>113</second>
 									</item>
 								</second>
 							</item>
@@ -7623,7 +7623,7 @@
 						<name>tmp_8</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>118</lineNumber>
+						<lineNumber>113</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -7638,7 +7638,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>118</second>
+										<second>113</second>
 									</item>
 								</second>
 							</item>
@@ -7672,7 +7672,7 @@
 						<name>tmp_10</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>118</lineNumber>
+						<lineNumber>113</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -7687,7 +7687,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>118</second>
+										<second>113</second>
 									</item>
 								</second>
 							</item>
@@ -7720,7 +7720,7 @@
 						<name>p_shl6_cast</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>118</lineNumber>
+						<lineNumber>113</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -7735,7 +7735,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>118</second>
+										<second>113</second>
 									</item>
 								</second>
 							</item>
@@ -7770,7 +7770,7 @@
 						<name>tmp_12</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>118</lineNumber>
+						<lineNumber>113</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -7785,7 +7785,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>118</second>
+										<second>113</second>
 									</item>
 								</second>
 							</item>
@@ -7818,7 +7818,7 @@
 						<name>p_shl7_cast</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>118</lineNumber>
+						<lineNumber>113</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -7833,7 +7833,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>118</second>
+										<second>113</second>
 									</item>
 								</second>
 							</item>
@@ -7868,7 +7868,7 @@
 						<name>tmp_11</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>118</lineNumber>
+						<lineNumber>113</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -7883,7 +7883,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>118</second>
+										<second>113</second>
 									</item>
 								</second>
 							</item>
@@ -7917,7 +7917,7 @@
 						<name>tmp_13</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>115</lineNumber>
+						<lineNumber>110</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -7932,7 +7932,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>115</second>
+										<second>110</second>
 									</item>
 								</second>
 							</item>
@@ -7965,7 +7965,7 @@
 						<name>p_shl4_cast</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>115</lineNumber>
+						<lineNumber>110</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -7980,7 +7980,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>115</second>
+										<second>110</second>
 									</item>
 								</second>
 							</item>
@@ -8015,7 +8015,7 @@
 						<name>tmp_17</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>115</lineNumber>
+						<lineNumber>110</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -8030,7 +8030,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>115</second>
+										<second>110</second>
 									</item>
 								</second>
 							</item>
@@ -8063,7 +8063,7 @@
 						<name>p_shl5_cast</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>135</lineNumber>
+						<lineNumber>129</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -8078,7 +8078,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>135</second>
+										<second>129</second>
 									</item>
 								</second>
 							</item>
@@ -8113,7 +8113,7 @@
 						<name>tmp_14</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>135</lineNumber>
+						<lineNumber>129</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -8128,7 +8128,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>135</second>
+										<second>129</second>
 									</item>
 								</second>
 							</item>
@@ -8162,7 +8162,7 @@
 						<name></name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>116</lineNumber>
+						<lineNumber>111</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -8177,7 +8177,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>116</second>
+										<second>111</second>
 									</item>
 								</second>
 							</item>
@@ -8247,7 +8247,7 @@
 						<name>Conv2D_4_width_load_1</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>116</lineNumber>
+						<lineNumber>111</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -8262,7 +8262,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>116</second>
+										<second>111</second>
 									</item>
 								</second>
 							</item>
@@ -8295,7 +8295,7 @@
 						<name>tmp_60</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>116</lineNumber>
+						<lineNumber>111</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -8310,7 +8310,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>116</second>
+										<second>111</second>
 									</item>
 								</second>
 							</item>
@@ -8343,7 +8343,7 @@
 						<name>tmp_63_cast</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>116</lineNumber>
+						<lineNumber>111</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -8358,7 +8358,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>116</second>
+										<second>111</second>
 									</item>
 								</second>
 							</item>
@@ -8391,7 +8391,7 @@
 						<name>tmp_61</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>116</lineNumber>
+						<lineNumber>111</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -8406,7 +8406,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>116</second>
+										<second>111</second>
 									</item>
 								</second>
 							</item>
@@ -8440,7 +8440,7 @@
 						<name>width_5</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>116</lineNumber>
+						<lineNumber>111</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -8455,7 +8455,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>116</second>
+										<second>111</second>
 									</item>
 								</second>
 							</item>
@@ -8489,7 +8489,7 @@
 						<name></name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>116</lineNumber>
+						<lineNumber>111</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -8504,7 +8504,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>116</second>
+										<second>111</second>
 									</item>
 								</second>
 							</item>
@@ -8539,7 +8539,7 @@
 						<name>tmp_18</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>118</lineNumber>
+						<lineNumber>113</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -8554,7 +8554,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>118</second>
+										<second>113</second>
 									</item>
 								</second>
 							</item>
@@ -8587,7 +8587,7 @@
 						<name>tmp_15</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>118</lineNumber>
+						<lineNumber>113</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -8602,7 +8602,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>118</second>
+										<second>113</second>
 									</item>
 								</second>
 							</item>
@@ -8636,7 +8636,7 @@
 						<name>tmp_15_cast</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>118</lineNumber>
+						<lineNumber>113</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -8651,7 +8651,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>118</second>
+										<second>113</second>
 									</item>
 								</second>
 							</item>
@@ -8684,7 +8684,7 @@
 						<name>Conv2D_4_array_addr</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>118</lineNumber>
+						<lineNumber>113</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -8699,7 +8699,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>118</second>
+										<second>113</second>
 									</item>
 								</second>
 							</item>
@@ -8734,7 +8734,7 @@
 						<name>tmp_16</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>135</lineNumber>
+						<lineNumber>129</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -8749,7 +8749,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>135</second>
+										<second>129</second>
 									</item>
 								</second>
 							</item>
@@ -8783,7 +8783,7 @@
 						<name>tmp_16_cast</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>135</lineNumber>
+						<lineNumber>129</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -8798,7 +8798,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>135</second>
+										<second>129</second>
 									</item>
 								</second>
 							</item>
@@ -8831,7 +8831,7 @@
 						<name>out_0_keep_V_addr_1</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>135</lineNumber>
+						<lineNumber>129</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -8846,7 +8846,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>135</second>
+										<second>129</second>
 									</item>
 								</second>
 							</item>
@@ -8881,7 +8881,7 @@
 						<name>out_0_strb_V_addr_1</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>135</lineNumber>
+						<lineNumber>129</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -8896,7 +8896,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>135</second>
+										<second>129</second>
 									</item>
 								</second>
 							</item>
@@ -8931,7 +8931,7 @@
 						<name>out_0_id_V_addr_1</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>135</lineNumber>
+						<lineNumber>129</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -8946,7 +8946,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>135</second>
+										<second>129</second>
 									</item>
 								</second>
 							</item>
@@ -8981,7 +8981,7 @@
 						<name>out_0_dest_V_addr_1</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>135</lineNumber>
+						<lineNumber>129</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -8996,7 +8996,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>135</second>
+										<second>129</second>
 									</item>
 								</second>
 							</item>
@@ -9031,7 +9031,7 @@
 						<name>Conv2D_4_array_load</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>118</lineNumber>
+						<lineNumber>113</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -9046,7 +9046,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>118</second>
+										<second>113</second>
 									</item>
 								</second>
 							</item>
@@ -9079,7 +9079,7 @@
 						<name>tmp_data_V_1</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>118</lineNumber>
+						<lineNumber>113</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -9094,7 +9094,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>118</second>
+										<second>113</second>
 									</item>
 								</second>
 							</item>
@@ -9127,7 +9127,7 @@
 						<name>tmp</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>120</lineNumber>
+						<lineNumber>115</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -9142,7 +9142,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>120</second>
+										<second>115</second>
 									</item>
 								</second>
 							</item>
@@ -9176,7 +9176,7 @@
 						<name>tmp_62</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>120</lineNumber>
+						<lineNumber>115</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -9191,7 +9191,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>120</second>
+										<second>115</second>
 									</item>
 								</second>
 							</item>
@@ -9225,7 +9225,7 @@
 						<name>tmp_user_V</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>120</lineNumber>
+						<lineNumber>115</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -9240,7 +9240,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>120</second>
+										<second>115</second>
 									</item>
 								</second>
 							</item>
@@ -9274,7 +9274,7 @@
 						<name>Conv2D_4_depth_load_2</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>127</lineNumber>
+						<lineNumber>121</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -9289,7 +9289,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>127</second>
+										<second>121</second>
 									</item>
 								</second>
 							</item>
@@ -9322,7 +9322,7 @@
 						<name>tmp_68_cast</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>127</lineNumber>
+						<lineNumber>121</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -9337,7 +9337,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>127</second>
+										<second>121</second>
 									</item>
 								</second>
 							</item>
@@ -9370,7 +9370,7 @@
 						<name>tmp_63</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>127</lineNumber>
+						<lineNumber>121</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -9385,7 +9385,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>127</second>
+										<second>121</second>
 									</item>
 								</second>
 							</item>
@@ -9419,7 +9419,7 @@
 						<name>tmp_69_cast</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>127</lineNumber>
+						<lineNumber>121</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -9434,7 +9434,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>127</second>
+										<second>121</second>
 									</item>
 								</second>
 							</item>
@@ -9467,7 +9467,7 @@
 						<name>tmp_64</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>127</lineNumber>
+						<lineNumber>121</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -9482,7 +9482,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>127</second>
+										<second>121</second>
 									</item>
 								</second>
 							</item>
@@ -9516,7 +9516,7 @@
 						<name></name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>127</lineNumber>
+						<lineNumber>121</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -9531,7 +9531,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>127</second>
+										<second>121</second>
 									</item>
 								</second>
 							</item>
@@ -9566,7 +9566,7 @@
 						<name>Conv2D_4_height_load_2</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>127</lineNumber>
+						<lineNumber>121</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -9581,7 +9581,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>127</second>
+										<second>121</second>
 									</item>
 								</second>
 							</item>
@@ -9614,7 +9614,7 @@
 						<name>tmp_71_cast</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>127</lineNumber>
+						<lineNumber>121</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -9629,7 +9629,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>127</second>
+										<second>121</second>
 									</item>
 								</second>
 							</item>
@@ -9662,7 +9662,7 @@
 						<name>tmp_65</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>127</lineNumber>
+						<lineNumber>121</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -9677,7 +9677,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>127</second>
+										<second>121</second>
 									</item>
 								</second>
 							</item>
@@ -9711,7 +9711,7 @@
 						<name>tmp_72_cast</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>127</lineNumber>
+						<lineNumber>121</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -9726,7 +9726,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>127</second>
+										<second>121</second>
 									</item>
 								</second>
 							</item>
@@ -9759,7 +9759,7 @@
 						<name>tmp_66</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>127</lineNumber>
+						<lineNumber>121</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -9774,7 +9774,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>127</second>
+										<second>121</second>
 									</item>
 								</second>
 							</item>
@@ -9808,7 +9808,7 @@
 						<name></name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>127</lineNumber>
+						<lineNumber>121</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -9823,7 +9823,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>127</second>
+										<second>121</second>
 									</item>
 								</second>
 							</item>
@@ -9858,7 +9858,7 @@
 						<name>tmp_67</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>127</lineNumber>
+						<lineNumber>121</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -9873,7 +9873,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>127</second>
+										<second>121</second>
 									</item>
 								</second>
 							</item>
@@ -9907,7 +9907,7 @@
 						<name>tmp_74_cast</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>127</lineNumber>
+						<lineNumber>121</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -9922,7 +9922,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>127</second>
+										<second>121</second>
 									</item>
 								</second>
 							</item>
@@ -9955,7 +9955,7 @@
 						<name>tmp_68</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>127</lineNumber>
+						<lineNumber>121</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -9970,7 +9970,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>127</second>
+										<second>121</second>
 									</item>
 								</second>
 							</item>
@@ -10004,7 +10004,7 @@
 						<name></name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>127</lineNumber>
+						<lineNumber>121</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -10019,7 +10019,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>127</second>
+										<second>121</second>
 									</item>
 								</second>
 							</item>
@@ -10125,7 +10125,7 @@
 						<name>tmp_keep_V_1</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>135</lineNumber>
+						<lineNumber>129</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -10140,7 +10140,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>135</second>
+										<second>129</second>
 									</item>
 								</second>
 							</item>
@@ -10173,7 +10173,7 @@
 						<name>tmp_strb_V_1</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>135</lineNumber>
+						<lineNumber>129</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -10188,7 +10188,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>135</second>
+										<second>129</second>
 									</item>
 								</second>
 							</item>
@@ -10221,7 +10221,7 @@
 						<name>tmp_id_V_1</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>135</lineNumber>
+						<lineNumber>129</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -10236,7 +10236,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>135</second>
+										<second>129</second>
 									</item>
 								</second>
 							</item>
@@ -10269,7 +10269,7 @@
 						<name>tmp_dest_V_1</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>135</lineNumber>
+						<lineNumber>129</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -10284,7 +10284,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>135</second>
+										<second>129</second>
 									</item>
 								</second>
 							</item>
@@ -10317,7 +10317,7 @@
 						<name></name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>135</lineNumber>
+						<lineNumber>129</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -10332,7 +10332,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>135</second>
+										<second>129</second>
 									</item>
 								</second>
 							</item>
@@ -10379,7 +10379,7 @@
 						<name></name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>116</lineNumber>
+						<lineNumber>111</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -10394,7 +10394,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>116</second>
+										<second>111</second>
 									</item>
 								</second>
 							</item>
@@ -10495,7 +10495,7 @@
 						<name></name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>142</lineNumber>
+						<lineNumber>136</lineNumber>
 						<contextFuncName>network</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -10510,7 +10510,7 @@
 											<first>mnist_AXI_Stream.cpp</first>
 											<second>network</second>
 										</first>
-										<second>142</second>
+										<second>136</second>
 									</item>
 								</second>
 							</item>
