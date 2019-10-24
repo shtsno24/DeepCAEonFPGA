@@ -22,13 +22,13 @@ using namespace std;
 
 int main(void){
 
-    hls::stream< ap_axis<32, 1, 1, 1> > input_buffer;
-    hls::stream< ap_axis<32, 1, 1, 1> > output_buffer;
+    hls::stream< ap_axis<16, 1, 1, 1> > input_buffer;
+    hls::stream< ap_axis<16, 1, 1, 1> > output_buffer;
     int16_t output_img_buff[1 * 28 * 28];
 	vector< vector< int16_t> > output_img(28, vector< int16_t>(28, 0));
 	vector< vector< int16_t> > input_img(28, vector< int16_t>(28, 0));
 
-    ap_axis<32, 1, 1, 1> tmp;
+    ap_axis<16, 1, 1, 1> tmp;
 
 	for(int height = 0; height < 28; height++){
 		for(int width = 0; width < 28; width++){

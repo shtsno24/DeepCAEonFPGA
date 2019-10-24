@@ -1,5 +1,5 @@
 -- ==============================================================
--- File generated on Thu Oct 24 18:11:00 JST 2019
+-- File generated on Thu Oct 24 19:59:26 JST 2019
 -- Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
 -- SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 -- IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
@@ -13,7 +13,7 @@ use ieee.std_logic_unsigned.all;
 entity network_out_0_keep_V_ram is 
     generic(
             MEM_TYPE    : string := "block"; 
-            DWIDTH     : integer := 4; 
+            DWIDTH     : integer := 2; 
             AWIDTH     : integer := 10; 
             MEM_SIZE    : integer := 784
     ); 
@@ -74,7 +74,7 @@ use IEEE.std_logic_1164.all;
 
 entity network_out_0_keep_V is
     generic (
-        DataWidth : INTEGER := 4;
+        DataWidth : INTEGER := 2;
         AddressRange : INTEGER := 784;
         AddressWidth : INTEGER := 10);
     port (

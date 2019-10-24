@@ -23,14 +23,14 @@ using namespace std;
 
 void network(axis &input_data, axis &output_data){
 	#pragma HLS INTERFACE s_axilite register port=return
-	#pragma HLS INTERFACE axis register port=input_data
-	#pragma HLS INTERFACE axis register port=output_data
+	#pragma HLS INTERFACE axis register both port=input_data
+	#pragma HLS INTERFACE axis register both port=output_data
 
 	uint16_t input_0_depth = 1, input_0_height = 28, input_0_width = 28;
 	int16_t input_0_array[1][28][28];
 
-	ap_axis<32, 1, 1, 1> tmp;
-	ap_axis<32, 1, 1, 1> out[1][28][28];
+	ap_axis<16, 1, 1, 1> tmp;
+	ap_axis<16, 1, 1, 1> out[1][28][28];
 
 	for(int depth = 0; depth < input_0_depth; depth++){
 		for(int height = 0; height < input_0_height; height++){

@@ -546,10 +546,10 @@
 
 <Node id="37" bw="32" op_0_bw="17">
 <![CDATA[
-.preheader6.preheader:2  %tmp_83_cast = zext i17 %tmp_73 to i32
+.preheader6.preheader:2  %tmp_82_cast = zext i17 %tmp_73 to i32
 
 ]]></Node>
-<StgValue><ssdm name="tmp_83_cast"/></StgValue>
+<StgValue><ssdm name="tmp_82_cast"/></StgValue>
 </operation>
 
 <operation id="40" st_id="4" stage="1" lat="1">
@@ -687,10 +687,10 @@
 
 <Node id="49" bw="32" op_0_bw="17">
 <![CDATA[
-.preheader5.preheader:2  %tmp_86_cast = zext i17 %tmp_75 to i32
+.preheader5.preheader:2  %tmp_85_cast = zext i17 %tmp_75 to i32
 
 ]]></Node>
-<StgValue><ssdm name="tmp_86_cast"/></StgValue>
+<StgValue><ssdm name="tmp_85_cast"/></StgValue>
 </operation>
 
 <operation id="49" st_id="5" stage="1" lat="1">
@@ -800,10 +800,10 @@
 
 <Node id="56" bw="1" op_0_bw="2">
 <![CDATA[
-.preheader5:1  %tmp_19 = trunc i2 %in_h to i1
+.preheader5:1  %tmp_18 = trunc i2 %in_h to i1
 
 ]]></Node>
-<StgValue><ssdm name="tmp_19"/></StgValue>
+<StgValue><ssdm name="tmp_18"/></StgValue>
 </operation>
 
 <operation id="56" st_id="6" stage="1" lat="1">
@@ -908,7 +908,7 @@
 
 <Node id="64" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-.preheader.preheader:2  %tmp2 = add i32 %tmp4, %tmp_83_cast
+.preheader.preheader:2  %tmp2 = add i32 %tmp4, %tmp_82_cast
 
 ]]></Node>
 <StgValue><ssdm name="tmp2"/></StgValue>
@@ -960,7 +960,7 @@
 
 <Node id="66" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-.preheader.preheader:4  %tmp_79 = add i32 %tmp3, %tmp_86_cast
+.preheader.preheader:4  %tmp_79 = add i32 %tmp3, %tmp_85_cast
 
 ]]></Node>
 <StgValue><ssdm name="tmp_79"/></StgValue>
@@ -1008,10 +1008,10 @@
 
 <Node id="70" bw="1" op_0_bw="2">
 <![CDATA[
-.preheader:1  %tmp_20 = trunc i2 %in_w to i1
+.preheader:1  %tmp_19 = trunc i2 %in_w to i1
 
 ]]></Node>
-<StgValue><ssdm name="tmp_20"/></StgValue>
+<StgValue><ssdm name="tmp_19"/></StgValue>
 </operation>
 
 <operation id="69" st_id="9" stage="1" lat="1">
@@ -1084,7 +1084,7 @@
 
 <Node id="76" bw="1" op_0_bw="1" op_1_bw="1">
 <![CDATA[
-:0  %tmp_80 = or i1 %tmp_20, %tmp_19
+:0  %tmp_80 = or i1 %tmp_19, %tmp_18
 
 ]]></Node>
 <StgValue><ssdm name="tmp_80"/></StgValue>
@@ -1657,7 +1657,7 @@
 </dataflow>
 <dataflow id="178" from="StgValue_177" to="tmp_73" fromId="177" toId="38">
 </dataflow>
-<dataflow id="179" from="tmp_73" to="tmp_83_cast" fromId="38" toId="39">
+<dataflow id="179" from="tmp_73" to="tmp_82_cast" fromId="38" toId="39">
 </dataflow>
 <dataflow id="180" from="tmp_71" to="tmp1" fromId="19" toId="40">
 </dataflow>
@@ -1698,7 +1698,7 @@
 </dataflow>
 <dataflow id="194" from="StgValue_177" to="tmp_75" fromId="177" toId="47">
 </dataflow>
-<dataflow id="195" from="tmp_75" to="tmp_86_cast" fromId="47" toId="48">
+<dataflow id="195" from="tmp_75" to="tmp_85_cast" fromId="47" toId="48">
 </dataflow>
 <dataflow id="196" from="tmp_74" to="tmp_76" fromId="46" toId="49">
 </dataflow>
@@ -1730,7 +1730,7 @@
 <dataflow id="207" from="StgValue_86" to="in_h" fromId="86" toId="54">
 <BackEdge/>
 </dataflow>
-<dataflow id="208" from="in_h" to="tmp_19" fromId="54" toId="55">
+<dataflow id="208" from="in_h" to="tmp_18" fromId="54" toId="55">
 </dataflow>
 <dataflow id="209" from="in_h" to="exitcond1" fromId="54" toId="56">
 </dataflow>
@@ -1758,7 +1758,7 @@
 </dataflow>
 <dataflow id="225" from="tmp4" to="tmp2" fromId="61" toId="62">
 </dataflow>
-<dataflow id="226" from="tmp_83_cast" to="tmp2" fromId="39" toId="62">
+<dataflow id="226" from="tmp_82_cast" to="tmp2" fromId="39" toId="62">
 </dataflow>
 <dataflow id="227" from="tmp2" to="tmp3" fromId="62" toId="64">
 </dataflow>
@@ -1766,7 +1766,7 @@
 </dataflow>
 <dataflow id="229" from="tmp3" to="tmp_79" fromId="64" toId="65">
 </dataflow>
-<dataflow id="230" from="tmp_86_cast" to="tmp_79" fromId="48" toId="65">
+<dataflow id="230" from="tmp_85_cast" to="tmp_79" fromId="48" toId="65">
 </dataflow>
 <dataflow id="231" from="in_w_1" to="in_w" fromId="71" toId="67">
 <BackEdge/>
@@ -1784,7 +1784,7 @@
 </dataflow>
 <dataflow id="234" from="StgValue_66" to="in_w" fromId="66" toId="67">
 </dataflow>
-<dataflow id="235" from="in_w" to="tmp_20" fromId="67" toId="68">
+<dataflow id="235" from="in_w" to="tmp_19" fromId="67" toId="68">
 </dataflow>
 <dataflow id="236" from="in_w" to="exitcond" fromId="67" toId="69">
 </dataflow>
@@ -1804,9 +1804,9 @@
 </dataflow>
 <dataflow id="244" from="exitcond" to="StgValue_72" fromId="69" toId="72">
 </dataflow>
-<dataflow id="245" from="tmp_20" to="tmp_80" fromId="68" toId="73">
+<dataflow id="245" from="tmp_19" to="tmp_80" fromId="68" toId="73">
 </dataflow>
-<dataflow id="246" from="tmp_19" to="tmp_80" fromId="55" toId="73">
+<dataflow id="246" from="tmp_18" to="tmp_80" fromId="55" toId="73">
 </dataflow>
 <dataflow id="247" from="tmp_80" to="StgValue_74" fromId="73" toId="74">
 </dataflow>

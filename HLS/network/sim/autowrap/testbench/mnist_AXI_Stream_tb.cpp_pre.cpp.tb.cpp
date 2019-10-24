@@ -1,5 +1,5 @@
 // ==============================================================
-// File generated on Thu Oct 24 18:14:16 JST 2019
+// File generated on Thu Oct 24 20:00:18 JST 2019
 // Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
 // SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 // IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
@@ -77381,7 +77381,7 @@ vector< vector< int16_t> >& input, char delimiter, ofstream& fp, uint16_t fracta
 
 using namespace std;
 
-typedef hls::stream< ap_axis<32, 1, 1, 1> > axis;
+typedef hls::stream< ap_axis<16, 1, 1, 1> > axis;
 
 void network(axis &input_data, axis &output_data);
 #18 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream_tb.cpp" 2
@@ -77401,13 +77401,13 @@ using namespace std;
 #23 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream_tb.cpp"
 int main(void){
 
-    hls::stream< ap_axis<32, 1, 1, 1> > input_buffer;
-    hls::stream< ap_axis<32, 1, 1, 1> > output_buffer;
+    hls::stream< ap_axis<16, 1, 1, 1> > input_buffer;
+    hls::stream< ap_axis<16, 1, 1, 1> > output_buffer;
     int16_t output_img_buff[1 * 28 * 28];
  vector< vector< int16_t> > output_img(28, vector< int16_t>(28, 0));
  vector< vector< int16_t> > input_img(28, vector< int16_t>(28, 0));
 
-    ap_axis<32, 1, 1, 1> tmp;
+    ap_axis<16, 1, 1, 1> tmp;
 
  for(int height = 0; height < 28; height++){
   for(int width = 0; width < 28; width++){
