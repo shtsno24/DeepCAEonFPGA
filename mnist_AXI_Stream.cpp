@@ -41,6 +41,7 @@ void network(axis &input_data, axis &output_data){
 				out[depth][height][width].id = tmp.id;
 				out[depth][height][width].keep = tmp.keep;
 				out[depth][height][width].strb = tmp.strb;
+//				out[depth][height][width].last = tmp.last;
 			}
 		}
 	}

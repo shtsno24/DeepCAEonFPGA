@@ -1,5 +1,5 @@
 // ==============================================================
-// File generated on Thu Oct 24 20:00:43 JST 2019
+// File generated on Fri Oct 25 16:10:21 JST 2019
 // Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
 // SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 // IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
@@ -77109,6 +77109,7 @@ void network(axis &input_data, axis &output_data){
     out[depth][height][width].id = tmp.id;
     out[depth][height][width].keep = tmp.keep;
     out[depth][height][width].strb = tmp.strb;
+
    }
   }
  }

@@ -165,12 +165,12 @@ proc create_root_design { parentCell } {
   set axi_dma_in [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_dma:7.1 axi_dma_in ]
   set_property -dict [ list \
    CONFIG.c_addr_width {32} \
-   CONFIG.c_include_mm2s_dre {1} \
+   CONFIG.c_include_mm2s_dre {0} \
    CONFIG.c_include_s2mm {0} \
    CONFIG.c_include_s2mm_dre {0} \
    CONFIG.c_include_sg {0} \
    CONFIG.c_m_axis_mm2s_tdata_width {16} \
-   CONFIG.c_mm2s_burst_size {16} \
+   CONFIG.c_mm2s_burst_size {256} \
    CONFIG.c_s2mm_burst_size {16} \
    CONFIG.c_sg_include_stscntrl_strm {0} \
    CONFIG.c_sg_length_width {26} \
@@ -186,7 +186,7 @@ proc create_root_design { parentCell } {
    CONFIG.c_include_s2mm_dre {0} \
    CONFIG.c_include_sg {0} \
    CONFIG.c_mm2s_burst_size {16} \
-   CONFIG.c_s2mm_burst_size {16} \
+   CONFIG.c_s2mm_burst_size {256} \
    CONFIG.c_sg_include_stscntrl_strm {0} \
    CONFIG.c_sg_length_width {26} \
  ] $axi_dma_out

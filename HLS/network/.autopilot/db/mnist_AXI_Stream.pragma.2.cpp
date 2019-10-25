@@ -23550,6 +23550,7 @@ _ssdm_op_SpecInterface(&output_data, "axis", 1, 1, "both", 0, 0, "", "", "", 0, 
     out[depth][height][width].id = tmp.id;
     out[depth][height][width].keep = tmp.keep;
     out[depth][height][width].strb = tmp.strb;
+
    }
   }
  }
