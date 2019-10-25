@@ -1,7 +1,7 @@
 //Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-//Date        : Thu Oct 24 18:33:22 2019
+//Date        : Fri Oct 25 13:49:22 2019
 //Host        : masudalab-ubuntu running 64-bit Ubuntu 18.04.3 LTS
 //Command     : generate_target design_1.bd
 //Design      : design_1
@@ -54,12 +54,12 @@ module design_1
   (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_PORB" *) inout FIXED_IO_ps_porb;
   (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_SRSTB" *) inout FIXED_IO_ps_srstb;
 
-  wire [31:0]axi_dma_0_M_AXIS_MM2S_TDATA;
-  wire [3:0]axi_dma_0_M_AXIS_MM2S_TKEEP;
+  wire [15:0]axi_dma_0_M_AXIS_MM2S_TDATA;
+  wire [1:0]axi_dma_0_M_AXIS_MM2S_TKEEP;
   wire axi_dma_0_M_AXIS_MM2S_TLAST;
   wire axi_dma_0_M_AXIS_MM2S_TREADY;
   wire axi_dma_0_M_AXIS_MM2S_TVALID;
-  wire [63:0]axi_dma_0_M_AXI_MM2S_ARADDR;
+  wire [31:0]axi_dma_0_M_AXI_MM2S_ARADDR;
   wire [1:0]axi_dma_0_M_AXI_MM2S_ARBURST;
   wire [3:0]axi_dma_0_M_AXI_MM2S_ARCACHE;
   wire [7:0]axi_dma_0_M_AXI_MM2S_ARLEN;
@@ -72,7 +72,7 @@ module design_1
   wire axi_dma_0_M_AXI_MM2S_RREADY;
   wire [1:0]axi_dma_0_M_AXI_MM2S_RRESP;
   wire axi_dma_0_M_AXI_MM2S_RVALID;
-  wire [63:0]axi_dma_1_M_AXI_S2MM_AWADDR;
+  wire [31:0]axi_dma_1_M_AXI_S2MM_AWADDR;
   wire [1:0]axi_dma_1_M_AXI_S2MM_AWBURST;
   wire [3:0]axi_dma_1_M_AXI_S2MM_AWCACHE;
   wire [7:0]axi_dma_1_M_AXI_S2MM_AWLEN;
@@ -121,8 +121,8 @@ module design_1
   wire axi_smc_M00_AXI_WREADY;
   wire [3:0]axi_smc_M00_AXI_WSTRB;
   wire axi_smc_M00_AXI_WVALID;
-  wire [31:0]network_0_output_data_TDATA;
-  wire [3:0]network_0_output_data_TKEEP;
+  wire [15:0]network_0_output_data_TDATA;
+  wire [1:0]network_0_output_data_TKEEP;
   wire [0:0]network_0_output_data_TLAST;
   wire network_0_output_data_TREADY;
   wire network_0_output_data_TVALID;
@@ -395,7 +395,7 @@ module design_1
         .input_data_TKEEP(axi_dma_0_M_AXIS_MM2S_TKEEP),
         .input_data_TLAST(axi_dma_0_M_AXIS_MM2S_TLAST),
         .input_data_TREADY(axi_dma_0_M_AXIS_MM2S_TREADY),
-        .input_data_TSTRB({1'b1,1'b1,1'b1,1'b1}),
+        .input_data_TSTRB({1'b1,1'b1}),
         .input_data_TUSER(1'b0),
         .input_data_TVALID(axi_dma_0_M_AXIS_MM2S_TVALID),
         .output_data_TDATA(network_0_output_data_TDATA),

@@ -1,6 +1,48 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Fri Oct 25 13:47:23 2019
+| Host         : masudalab-ubuntu running 64-bit Ubuntu 18.04.3 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_network_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_network_0_0 (xilinx.com:hls:network:1.0) from (Rev. 1910241820) to (Rev. 1910242013)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_network_0_0'. These changes may impact your design.
+
+
+-Upgraded port 'input_data_TDATA' width 16 differs from original width 32
+
+-Upgraded port 'input_data_TKEEP' width 2 differs from original width 4
+
+-Upgraded port 'input_data_TSTRB' width 2 differs from original width 4
+
+-Upgraded port 'output_data_TDATA' width 16 differs from original width 32
+
+-Upgraded port 'output_data_TKEEP' width 2 differs from original width 4
+
+-Upgraded port 'output_data_TSTRB' width 2 differs from original width 4
+
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
 | Date         : Thu Oct 24 18:31:35 2019
 | Host         : masudalab-ubuntu running 64-bit Ubuntu 18.04.3 LTS
 | Command      : upgrade_ip
