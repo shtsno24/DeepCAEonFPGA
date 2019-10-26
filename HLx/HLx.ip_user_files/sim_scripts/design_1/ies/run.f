@@ -209,12 +209,6 @@
 -makelib ies_lib/xil_defaultlib \
   "../../../bd/design_1/sim/design_1.v" \
 -endlib
--makelib ies_lib/axi_protocol_converter_v2_1_18 \
-  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/7a04/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
--endlib
--makelib ies_lib/xil_defaultlib \
-  "../../../bd/design_1/ip/design_1_auto_pc_0/sim/design_1_auto_pc_0.v" \
--endlib
 -makelib ies_lib/axis_infrastructure_v1_1_0 \
   "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/8713/hdl/axis_infrastructure_v1_1_vl_rfs.v" \
 -endlib
@@ -224,6 +218,12 @@
 -makelib ies_lib/xil_defaultlib \
   "../../../bd/design_1/ip/design_1_axis_data_fifo_0_0/sim/design_1_axis_data_fifo_0_0.v" \
   "../../../bd/design_1/ip/design_1_axis_data_fifo_in_0/sim/design_1_axis_data_fifo_in_0.v" \
+-endlib
+-makelib ies_lib/axi_protocol_converter_v2_1_18 \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/7a04/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
+-endlib
+-makelib ies_lib/xil_defaultlib \
+  "../../../bd/design_1/ip/design_1_auto_pc_0/sim/design_1_auto_pc_0.v" \
 -endlib
 -makelib ies_lib/xil_defaultlib \
   glbl.v
