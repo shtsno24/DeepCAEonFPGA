@@ -1,7 +1,7 @@
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-// Date        : Sat Oct 26 16:11:22 2019
+// Date        : Sat Oct 26 16:51:53 2019
 // Host        : masudalab-ubuntu running 64-bit Ubuntu 18.04.3 LTS
 // Command     : write_verilog -force -mode synth_stub
 //               /home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_axis_data_fifo_in_0/design_1_axis_data_fifo_in_0_stub.v
@@ -16,9 +16,9 @@
 (* X_CORE_INFO = "axis_data_fifo_v2_0_0_top,Vivado 2018.3" *)
 module design_1_axis_data_fifo_in_0(s_axis_aresetn, s_axis_aclk, s_axis_tvalid, 
   s_axis_tready, s_axis_tdata, s_axis_tstrb, s_axis_tkeep, s_axis_tlast, s_axis_tid, 
-  s_axis_tdest, m_axis_tvalid, m_axis_tready, m_axis_tdata, m_axis_tstrb, m_axis_tkeep, 
-  m_axis_tlast, m_axis_tid, m_axis_tdest)
-/* synthesis syn_black_box black_box_pad_pin="s_axis_aresetn,s_axis_aclk,s_axis_tvalid,s_axis_tready,s_axis_tdata[31:0],s_axis_tstrb[3:0],s_axis_tkeep[3:0],s_axis_tlast,s_axis_tid[0:0],s_axis_tdest[0:0],m_axis_tvalid,m_axis_tready,m_axis_tdata[31:0],m_axis_tstrb[3:0],m_axis_tkeep[3:0],m_axis_tlast,m_axis_tid[0:0],m_axis_tdest[0:0]" */;
+  s_axis_tdest, s_axis_tuser, m_axis_tvalid, m_axis_tready, m_axis_tdata, m_axis_tstrb, 
+  m_axis_tkeep, m_axis_tlast, m_axis_tid, m_axis_tdest, m_axis_tuser)
+/* synthesis syn_black_box black_box_pad_pin="s_axis_aresetn,s_axis_aclk,s_axis_tvalid,s_axis_tready,s_axis_tdata[31:0],s_axis_tstrb[3:0],s_axis_tkeep[3:0],s_axis_tlast,s_axis_tid[0:0],s_axis_tdest[0:0],s_axis_tuser[0:0],m_axis_tvalid,m_axis_tready,m_axis_tdata[31:0],m_axis_tstrb[3:0],m_axis_tkeep[3:0],m_axis_tlast,m_axis_tid[0:0],m_axis_tdest[0:0],m_axis_tuser[0:0]" */;
   input s_axis_aresetn;
   input s_axis_aclk;
   input s_axis_tvalid;
@@ -29,6 +29,7 @@ module design_1_axis_data_fifo_in_0(s_axis_aresetn, s_axis_aclk, s_axis_tvalid,
   input s_axis_tlast;
   input [0:0]s_axis_tid;
   input [0:0]s_axis_tdest;
+  input [0:0]s_axis_tuser;
   output m_axis_tvalid;
   input m_axis_tready;
   output [31:0]m_axis_tdata;
@@ -37,4 +38,5 @@ module design_1_axis_data_fifo_in_0(s_axis_aresetn, s_axis_aclk, s_axis_tvalid,
   output m_axis_tlast;
   output [0:0]m_axis_tid;
   output [0:0]m_axis_tdest;
+  output [0:0]m_axis_tuser;
 endmodule

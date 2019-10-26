@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-| Date         : Sat Oct 26 16:16:44 2019
+| Date         : Sat Oct 26 16:55:09 2019
 | Host         : masudalab-ubuntu running 64-bit Ubuntu 18.04.3 LTS
 | Command      : report_drc -file design_1_wrapper_drc_routed.rpt -pb design_1_wrapper_drc_routed.pb -rpx design_1_wrapper_drc_routed.rpx
 | Design       : design_1_wrapper
@@ -37,27 +37,27 @@ Table of Contents
 -----------------
 DPOP-1#1 Warning
 PREG Output pipelining  
-DSP design_1_i/network_0/inst/grp_conv2d_fix16_1_fu_504/tmp_110_fu_351_p2 output design_1_i/network_0/inst/grp_conv2d_fix16_1_fu_504/tmp_110_fu_351_p2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+DSP design_1_i/network_0/inst/grp_conv2d_fix16_1_fu_504/tmp_111_fu_351_p2 output design_1_i/network_0/inst/grp_conv2d_fix16_1_fu_504/tmp_111_fu_351_p2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 Related violations: <none>
 
 DPOP-1#2 Warning
 PREG Output pipelining  
-DSP design_1_i/network_0/inst/grp_conv2d_fix16_228_fu_486/tmp_110_fu_351_p2 output design_1_i/network_0/inst/grp_conv2d_fix16_228_fu_486/tmp_110_fu_351_p2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+DSP design_1_i/network_0/inst/grp_conv2d_fix16_228_fu_486/tmp_111_fu_351_p2 output design_1_i/network_0/inst/grp_conv2d_fix16_228_fu_486/tmp_111_fu_351_p2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 Related violations: <none>
 
 DPOP-1#3 Warning
 PREG Output pipelining  
-DSP design_1_i/network_0/inst/grp_conv2d_fix16_2_fu_522/tmp_110_fu_351_p2 output design_1_i/network_0/inst/grp_conv2d_fix16_2_fu_522/tmp_110_fu_351_p2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+DSP design_1_i/network_0/inst/grp_conv2d_fix16_2_fu_522/tmp_111_fu_351_p2 output design_1_i/network_0/inst/grp_conv2d_fix16_2_fu_522/tmp_111_fu_351_p2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 Related violations: <none>
 
 DPOP-1#4 Warning
 PREG Output pipelining  
-DSP design_1_i/network_0/inst/grp_conv2d_fix16_3_fu_540/tmp_105_fu_351_p2 output design_1_i/network_0/inst/grp_conv2d_fix16_3_fu_540/tmp_105_fu_351_p2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+DSP design_1_i/network_0/inst/grp_conv2d_fix16_3_fu_540/tmp_106_fu_351_p2 output design_1_i/network_0/inst/grp_conv2d_fix16_3_fu_540/tmp_106_fu_351_p2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 Related violations: <none>
 
 DPOP-1#5 Warning
 PREG Output pipelining  
-DSP design_1_i/network_0/inst/grp_conv2d_fix16_fu_558/tmp_110_fu_327_p2 output design_1_i/network_0/inst/grp_conv2d_fix16_fu_558/tmp_110_fu_327_p2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+DSP design_1_i/network_0/inst/grp_conv2d_fix16_fu_558/tmp_111_fu_327_p2 output design_1_i/network_0/inst/grp_conv2d_fix16_fu_558/tmp_111_fu_327_p2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 Related violations: <none>
 
 DPOP-1#6 Warning
