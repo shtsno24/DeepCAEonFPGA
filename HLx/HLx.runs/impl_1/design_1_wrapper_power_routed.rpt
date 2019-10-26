@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-| Date             : Sat Oct 26 17:53:43 2019
+| Date             : Sat Oct 26 18:05:44 2019
 | Host             : masudalab-ubuntu running 64-bit Ubuntu 18.04.3 LTS
 | Command          : report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
 | Design           : design_1_wrapper
@@ -53,14 +53,14 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.020 |        3 |       --- |             --- |
-| Slice Logic              |     0.006 |    11335 |       --- |             --- |
-|   LUT as Logic           |     0.005 |     3511 |     53200 |            6.60 |
+| Slice Logic              |     0.007 |    11168 |       --- |             --- |
+|   LUT as Logic           |     0.006 |     3452 |     53200 |            6.49 |
 |   LUT as Distributed RAM |    <0.001 |      342 |     17400 |            1.97 |
-|   Register               |    <0.001 |     5394 |    106400 |            5.07 |
+|   Register               |    <0.001 |     5305 |    106400 |            4.99 |
 |   CARRY4                 |    <0.001 |      102 |     13300 |            0.77 |
 |   LUT as Shift Register  |    <0.001 |      182 |     17400 |            1.05 |
-|   Others                 |     0.000 |      566 |       --- |             --- |
-| Signals                  |     0.007 |     7557 |       --- |             --- |
+|   Others                 |     0.000 |      557 |       --- |             --- |
+| Signals                  |     0.008 |     7441 |       --- |             --- |
 | Block RAM                |    <0.001 |        2 |       140 |            1.43 |
 | PS7                      |     1.256 |        1 |       --- |             --- |
 | Static Power             |     0.135 |          |           |                 |
@@ -152,16 +152,14 @@ Table of Contents
 +--------------------------+-----------+
 | design_1_wrapper         |     1.290 |
 |   design_1_i             |     1.290 |
-|     axi_dma_in           |     0.003 |
-|       U0                 |     0.003 |
-|     axi_dma_out          |     0.006 |
-|       U0                 |     0.006 |
+|     axi_dma_in           |     0.009 |
+|       U0                 |     0.009 |
 |     axi_smc              |     0.020 |
 |       inst               |     0.020 |
 |     processing_system7_0 |     1.257 |
 |       inst               |     1.257 |
 |     ps7_0_axi_periph     |     0.004 |
-|       s00_couplers       |     0.003 |
+|       s00_couplers       |     0.004 |
 +--------------------------+-----------+
 
 
