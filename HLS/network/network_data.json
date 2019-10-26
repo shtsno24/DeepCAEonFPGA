@@ -42,12 +42,12 @@
   },
   "Files": {
     "CSource": [
-      "..\/..\/layers_c\/up_sampling2d.cpp",
-      "..\/..\/layers_c\/padding2d.cpp",
-      "..\/..\/mnist_AXI_Stream.cpp",
-      "..\/..\/layers_c\/max_pooling2d.cpp",
+      "..\/..\/layers_c\/conv2d.cpp",
       "..\/..\/layers_c\/depthwise_conv2d.cpp",
-      "..\/..\/layers_c\/conv2d.cpp"
+      "..\/..\/layers_c\/max_pooling2d.cpp",
+      "..\/..\/mnist_AXI_Stream.cpp",
+      "..\/..\/layers_c\/padding2d.cpp",
+      "..\/..\/layers_c\/up_sampling2d.cpp"
     ],
     "Vhdl": [
       "impl\/vhdl\/conv2d_fix16.vhd",
@@ -190,7 +190,7 @@
       "ctype": {
         "TDATA": {
           "Type": "integer signed",
-          "Width": "16"
+          "Width": "32"
         },
         "TVALID": {"Type": "bool"},
         "TREADY": {"Type": "bool"},
@@ -200,11 +200,11 @@
         },
         "TKEEP": {
           "Type": "integer unsigned",
-          "Width": "2"
+          "Width": "4"
         },
         "TSTRB": {
           "Type": "integer unsigned",
-          "Width": "2"
+          "Width": "4"
         },
         "TUSER": {
           "Type": "integer unsigned",
@@ -220,12 +220,12 @@
         }
       },
       "port_width": {
-        "TDATA": "16",
+        "TDATA": "32",
         "TDEST": "1",
         "TID": "1",
-        "TKEEP": "2",
+        "TKEEP": "4",
         "TLAST": "1",
-        "TSTRB": "2",
+        "TSTRB": "4",
         "TUSER": "1"
       }
     },
@@ -241,7 +241,7 @@
       "ctype": {
         "TDATA": {
           "Type": "integer signed",
-          "Width": "16"
+          "Width": "32"
         },
         "TREADY": {"Type": "bool"},
         "TVALID": {"Type": "bool"},
@@ -251,11 +251,11 @@
         },
         "TKEEP": {
           "Type": "integer unsigned",
-          "Width": "2"
+          "Width": "4"
         },
         "TSTRB": {
           "Type": "integer unsigned",
-          "Width": "2"
+          "Width": "4"
         },
         "TUSER": {
           "Type": "integer unsigned",
@@ -271,12 +271,12 @@
         }
       },
       "port_width": {
-        "TDATA": "16",
+        "TDATA": "32",
         "TDEST": "1",
         "TID": "1",
-        "TKEEP": "2",
+        "TKEEP": "4",
         "TLAST": "1",
-        "TSTRB": "2",
+        "TSTRB": "4",
         "TUSER": "1"
       }
     },
@@ -580,7 +580,7 @@
     },
     "input_data_TDATA": {
       "dir": "in",
-      "width": "16"
+      "width": "32"
     },
     "input_data_TVALID": {
       "dir": "in",
@@ -597,11 +597,11 @@
     },
     "input_data_TKEEP": {
       "dir": "in",
-      "width": "2"
+      "width": "4"
     },
     "input_data_TSTRB": {
       "dir": "in",
-      "width": "2"
+      "width": "4"
     },
     "input_data_TUSER": {
       "dir": "in",
@@ -620,7 +620,7 @@
     },
     "output_data_TDATA": {
       "dir": "out",
-      "width": "16"
+      "width": "32"
     },
     "output_data_TREADY": {
       "dir": "in",
@@ -637,11 +637,11 @@
     },
     "output_data_TKEEP": {
       "dir": "out",
-      "width": "2"
+      "width": "4"
     },
     "output_data_TSTRB": {
       "dir": "out",
-      "width": "2"
+      "width": "4"
     },
     "output_data_TUSER": {
       "dir": "out",
@@ -1694,7 +1694,7 @@
         "Area": {
           "BRAM_18K": "81",
           "DSP48E": "65",
-          "FF": "8891",
+          "FF": "8987",
           "LUT": "13402"
         }
       }
@@ -1710,7 +1710,7 @@
   },
   "GenData": {
     "DataVersion": "0.1",
-    "Time": "2019-10-25 16:03:30 JST",
+    "Time": "2019-10-26 16:37:27 JST",
     "ToolName": "vivado_hls",
     "ToolVersion": "2018.3"
   }

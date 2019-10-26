@@ -508,54 +508,6 @@
             <Obj>
               <type>0</type>
               <id>14</id>
-              <name>tmp_76</name>
-              <fileName>layers_c/max_pooling2d.cpp</fileName>
-              <fileDirectory>..</fileDirectory>
-              <lineNumber>21</lineNumber>
-              <contextFuncName>max_pooling2d_fix16</contextFuncName>
-              <inlineStackInfo>
-                <count>1</count>
-                <item_version>0</item_version>
-                <item>
-                  <first>/home/masudalab/DeepCAEonFPGA</first>
-                  <second>
-                    <count>1</count>
-                    <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>layers_c/max_pooling2d.cpp</first>
-                        <second>max_pooling2d_fix16</second>
-                      </first>
-                      <second>21</second>
-                    </item>
-                  </second>
-                </item>
-              </inlineStackInfo>
-              <originalName/>
-              <rtlName>tmp_76_fu_186_p1</rtlName>
-              <coreName/>
-            </Obj>
-            <bitwidth>32</bitwidth>
-          </Value>
-          <oprand_edges>
-            <count>1</count>
-            <item_version>0</item_version>
-            <item>125</item>
-          </oprand_edges>
-          <opcode>zext</opcode>
-          <m_Display>0</m_Display>
-          <m_isOnCriticalPath>0</m_isOnCriticalPath>
-          <m_isLCDNode>0</m_isLCDNode>
-          <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>0.00</m_delay>
-          <m_topoIndex>7</m_topoIndex>
-          <m_clusterGroupNumber>-1</m_clusterGroupNumber>
-        </item>
-        <item class_id_reference="9" object_id="_15">
-          <Value>
-            <Obj>
-              <type>0</type>
-              <id>15</id>
               <name>tmp_77</name>
               <fileName>layers_c/max_pooling2d.cpp</fileName>
               <fileDirectory>..</fileDirectory>
@@ -580,7 +532,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_77_fu_190_p1</rtlName>
+              <rtlName>tmp_77_fu_186_p1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -588,7 +540,7 @@
           <oprand_edges>
             <count>1</count>
             <item_version>0</item_version>
-            <item>126</item>
+            <item>125</item>
           </oprand_edges>
           <opcode>zext</opcode>
           <m_Display>0</m_Display>
@@ -596,14 +548,14 @@
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
           <m_delay>0.00</m_delay>
-          <m_topoIndex>8</m_topoIndex>
+          <m_topoIndex>7</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_16">
+        <item class_id_reference="9" object_id="_15">
           <Value>
             <Obj>
               <type>0</type>
-              <id>16</id>
+              <id>15</id>
               <name>tmp_78</name>
               <fileName>layers_c/max_pooling2d.cpp</fileName>
               <fileDirectory>..</fileDirectory>
@@ -628,7 +580,55 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_78_fu_194_p1</rtlName>
+              <rtlName>tmp_78_fu_190_p1</rtlName>
+              <coreName/>
+            </Obj>
+            <bitwidth>32</bitwidth>
+          </Value>
+          <oprand_edges>
+            <count>1</count>
+            <item_version>0</item_version>
+            <item>126</item>
+          </oprand_edges>
+          <opcode>zext</opcode>
+          <m_Display>0</m_Display>
+          <m_isOnCriticalPath>0</m_isOnCriticalPath>
+          <m_isLCDNode>0</m_isLCDNode>
+          <m_isStartOfPath>0</m_isStartOfPath>
+          <m_delay>0.00</m_delay>
+          <m_topoIndex>8</m_topoIndex>
+          <m_clusterGroupNumber>-1</m_clusterGroupNumber>
+        </item>
+        <item class_id_reference="9" object_id="_16">
+          <Value>
+            <Obj>
+              <type>0</type>
+              <id>16</id>
+              <name>tmp_79</name>
+              <fileName>layers_c/max_pooling2d.cpp</fileName>
+              <fileDirectory>..</fileDirectory>
+              <lineNumber>21</lineNumber>
+              <contextFuncName>max_pooling2d_fix16</contextFuncName>
+              <inlineStackInfo>
+                <count>1</count>
+                <item_version>0</item_version>
+                <item>
+                  <first>/home/masudalab/DeepCAEonFPGA</first>
+                  <second>
+                    <count>1</count>
+                    <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>layers_c/max_pooling2d.cpp</first>
+                        <second>max_pooling2d_fix16</second>
+                      </first>
+                      <second>21</second>
+                    </item>
+                  </second>
+                </item>
+              </inlineStackInfo>
+              <originalName/>
+              <rtlName>tmp_79_fu_194_p1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -1318,54 +1318,6 @@
             <Obj>
               <type>0</type>
               <id>35</id>
-              <name>tmp_82</name>
-              <fileName>layers_c/max_pooling2d.cpp</fileName>
-              <fileDirectory>..</fileDirectory>
-              <lineNumber>21</lineNumber>
-              <contextFuncName>max_pooling2d_fix16</contextFuncName>
-              <inlineStackInfo>
-                <count>1</count>
-                <item_version>0</item_version>
-                <item>
-                  <first>/home/masudalab/DeepCAEonFPGA</first>
-                  <second>
-                    <count>1</count>
-                    <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>layers_c/max_pooling2d.cpp</first>
-                        <second>max_pooling2d_fix16</second>
-                      </first>
-                      <second>21</second>
-                    </item>
-                  </second>
-                </item>
-              </inlineStackInfo>
-              <originalName/>
-              <rtlName>tmp_82_fu_230_p1</rtlName>
-              <coreName/>
-            </Obj>
-            <bitwidth>32</bitwidth>
-          </Value>
-          <oprand_edges>
-            <count>1</count>
-            <item_version>0</item_version>
-            <item>169</item>
-          </oprand_edges>
-          <opcode>zext</opcode>
-          <m_Display>0</m_Display>
-          <m_isOnCriticalPath>0</m_isOnCriticalPath>
-          <m_isLCDNode>0</m_isLCDNode>
-          <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>0.00</m_delay>
-          <m_topoIndex>25</m_topoIndex>
-          <m_clusterGroupNumber>-1</m_clusterGroupNumber>
-        </item>
-        <item class_id_reference="9" object_id="_32">
-          <Value>
-            <Obj>
-              <type>0</type>
-              <id>36</id>
               <name>tmp_83</name>
               <fileName>layers_c/max_pooling2d.cpp</fileName>
               <fileDirectory>..</fileDirectory>
@@ -1390,7 +1342,55 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_83_fu_240_p3</rtlName>
+              <rtlName>tmp_83_fu_230_p1</rtlName>
+              <coreName/>
+            </Obj>
+            <bitwidth>32</bitwidth>
+          </Value>
+          <oprand_edges>
+            <count>1</count>
+            <item_version>0</item_version>
+            <item>169</item>
+          </oprand_edges>
+          <opcode>zext</opcode>
+          <m_Display>0</m_Display>
+          <m_isOnCriticalPath>0</m_isOnCriticalPath>
+          <m_isLCDNode>0</m_isLCDNode>
+          <m_isStartOfPath>0</m_isStartOfPath>
+          <m_delay>0.00</m_delay>
+          <m_topoIndex>25</m_topoIndex>
+          <m_clusterGroupNumber>-1</m_clusterGroupNumber>
+        </item>
+        <item class_id_reference="9" object_id="_32">
+          <Value>
+            <Obj>
+              <type>0</type>
+              <id>36</id>
+              <name>tmp_84</name>
+              <fileName>layers_c/max_pooling2d.cpp</fileName>
+              <fileDirectory>..</fileDirectory>
+              <lineNumber>21</lineNumber>
+              <contextFuncName>max_pooling2d_fix16</contextFuncName>
+              <inlineStackInfo>
+                <count>1</count>
+                <item_version>0</item_version>
+                <item>
+                  <first>/home/masudalab/DeepCAEonFPGA</first>
+                  <second>
+                    <count>1</count>
+                    <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>layers_c/max_pooling2d.cpp</first>
+                        <second>max_pooling2d_fix16</second>
+                      </first>
+                      <second>21</second>
+                    </item>
+                  </second>
+                </item>
+              </inlineStackInfo>
+              <originalName/>
+              <rtlName>tmp_84_fu_240_p3</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>17</bitwidth>
@@ -1416,7 +1416,7 @@
             <Obj>
               <type>0</type>
               <id>37</id>
-              <name>tmp_83_cast</name>
+              <name>tmp_84_cast</name>
               <fileName>layers_c/max_pooling2d.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>21</lineNumber>
@@ -1440,7 +1440,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_83_cast_fu_248_p1</rtlName>
+              <rtlName>tmp_84_cast_fu_248_p1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -1795,54 +1795,6 @@
             <Obj>
               <type>0</type>
               <id>47</id>
-              <name>tmp_84</name>
-              <fileName>layers_c/max_pooling2d.cpp</fileName>
-              <fileDirectory>..</fileDirectory>
-              <lineNumber>21</lineNumber>
-              <contextFuncName>max_pooling2d_fix16</contextFuncName>
-              <inlineStackInfo>
-                <count>1</count>
-                <item_version>0</item_version>
-                <item>
-                  <first>/home/masudalab/DeepCAEonFPGA</first>
-                  <second>
-                    <count>1</count>
-                    <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>layers_c/max_pooling2d.cpp</first>
-                        <second>max_pooling2d_fix16</second>
-                      </first>
-                      <second>21</second>
-                    </item>
-                  </second>
-                </item>
-              </inlineStackInfo>
-              <originalName/>
-              <rtlName>tmp_84_fu_267_p1</rtlName>
-              <coreName/>
-            </Obj>
-            <bitwidth>32</bitwidth>
-          </Value>
-          <oprand_edges>
-            <count>1</count>
-            <item_version>0</item_version>
-            <item>193</item>
-          </oprand_edges>
-          <opcode>zext</opcode>
-          <m_Display>0</m_Display>
-          <m_isOnCriticalPath>0</m_isOnCriticalPath>
-          <m_isLCDNode>0</m_isLCDNode>
-          <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>0.00</m_delay>
-          <m_topoIndex>36</m_topoIndex>
-          <m_clusterGroupNumber>-1</m_clusterGroupNumber>
-        </item>
-        <item class_id_reference="9" object_id="_42">
-          <Value>
-            <Obj>
-              <type>0</type>
-              <id>48</id>
               <name>tmp_85</name>
               <fileName>layers_c/max_pooling2d.cpp</fileName>
               <fileDirectory>..</fileDirectory>
@@ -1867,7 +1819,55 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_85_fu_271_p3</rtlName>
+              <rtlName>tmp_85_fu_267_p1</rtlName>
+              <coreName/>
+            </Obj>
+            <bitwidth>32</bitwidth>
+          </Value>
+          <oprand_edges>
+            <count>1</count>
+            <item_version>0</item_version>
+            <item>193</item>
+          </oprand_edges>
+          <opcode>zext</opcode>
+          <m_Display>0</m_Display>
+          <m_isOnCriticalPath>0</m_isOnCriticalPath>
+          <m_isLCDNode>0</m_isLCDNode>
+          <m_isStartOfPath>0</m_isStartOfPath>
+          <m_delay>0.00</m_delay>
+          <m_topoIndex>36</m_topoIndex>
+          <m_clusterGroupNumber>-1</m_clusterGroupNumber>
+        </item>
+        <item class_id_reference="9" object_id="_42">
+          <Value>
+            <Obj>
+              <type>0</type>
+              <id>48</id>
+              <name>tmp_86</name>
+              <fileName>layers_c/max_pooling2d.cpp</fileName>
+              <fileDirectory>..</fileDirectory>
+              <lineNumber>21</lineNumber>
+              <contextFuncName>max_pooling2d_fix16</contextFuncName>
+              <inlineStackInfo>
+                <count>1</count>
+                <item_version>0</item_version>
+                <item>
+                  <first>/home/masudalab/DeepCAEonFPGA</first>
+                  <second>
+                    <count>1</count>
+                    <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>layers_c/max_pooling2d.cpp</first>
+                        <second>max_pooling2d_fix16</second>
+                      </first>
+                      <second>21</second>
+                    </item>
+                  </second>
+                </item>
+              </inlineStackInfo>
+              <originalName/>
+              <rtlName>tmp_86_fu_271_p3</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>17</bitwidth>
@@ -1893,7 +1893,7 @@
             <Obj>
               <type>0</type>
               <id>49</id>
-              <name>tmp_85_cast</name>
+              <name>tmp_86_cast</name>
               <fileName>layers_c/max_pooling2d.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>21</lineNumber>
@@ -1917,7 +1917,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_85_cast_fu_279_p1</rtlName>
+              <rtlName>tmp_86_cast_fu_279_p1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -1941,55 +1941,6 @@
             <Obj>
               <type>0</type>
               <id>50</id>
-              <name>tmp_86</name>
-              <fileName>layers_c/max_pooling2d.cpp</fileName>
-              <fileDirectory>..</fileDirectory>
-              <lineNumber>21</lineNumber>
-              <contextFuncName>max_pooling2d_fix16</contextFuncName>
-              <inlineStackInfo>
-                <count>1</count>
-                <item_version>0</item_version>
-                <item>
-                  <first>/home/masudalab/DeepCAEonFPGA</first>
-                  <second>
-                    <count>1</count>
-                    <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>layers_c/max_pooling2d.cpp</first>
-                        <second>max_pooling2d_fix16</second>
-                      </first>
-                      <second>21</second>
-                    </item>
-                  </second>
-                </item>
-              </inlineStackInfo>
-              <originalName/>
-              <rtlName>tmp_86_fu_283_p2</rtlName>
-              <coreName/>
-            </Obj>
-            <bitwidth>32</bitwidth>
-          </Value>
-          <oprand_edges>
-            <count>2</count>
-            <item_version>0</item_version>
-            <item>198</item>
-            <item>199</item>
-          </oprand_edges>
-          <opcode>add</opcode>
-          <m_Display>0</m_Display>
-          <m_isOnCriticalPath>0</m_isOnCriticalPath>
-          <m_isLCDNode>0</m_isLCDNode>
-          <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>2.55</m_delay>
-          <m_topoIndex>39</m_topoIndex>
-          <m_clusterGroupNumber>-1</m_clusterGroupNumber>
-        </item>
-        <item class_id_reference="9" object_id="_45">
-          <Value>
-            <Obj>
-              <type>0</type>
-              <id>51</id>
               <name>tmp_87</name>
               <fileName>layers_c/max_pooling2d.cpp</fileName>
               <fileDirectory>..</fileDirectory>
@@ -2014,7 +1965,56 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_87_fu_288_p1</rtlName>
+              <rtlName>tmp_87_fu_283_p2</rtlName>
+              <coreName/>
+            </Obj>
+            <bitwidth>32</bitwidth>
+          </Value>
+          <oprand_edges>
+            <count>2</count>
+            <item_version>0</item_version>
+            <item>198</item>
+            <item>199</item>
+          </oprand_edges>
+          <opcode>add</opcode>
+          <m_Display>0</m_Display>
+          <m_isOnCriticalPath>0</m_isOnCriticalPath>
+          <m_isLCDNode>0</m_isLCDNode>
+          <m_isStartOfPath>0</m_isStartOfPath>
+          <m_delay>2.55</m_delay>
+          <m_topoIndex>39</m_topoIndex>
+          <m_clusterGroupNumber>-1</m_clusterGroupNumber>
+        </item>
+        <item class_id_reference="9" object_id="_45">
+          <Value>
+            <Obj>
+              <type>0</type>
+              <id>51</id>
+              <name>tmp_88</name>
+              <fileName>layers_c/max_pooling2d.cpp</fileName>
+              <fileDirectory>..</fileDirectory>
+              <lineNumber>21</lineNumber>
+              <contextFuncName>max_pooling2d_fix16</contextFuncName>
+              <inlineStackInfo>
+                <count>1</count>
+                <item_version>0</item_version>
+                <item>
+                  <first>/home/masudalab/DeepCAEonFPGA</first>
+                  <second>
+                    <count>1</count>
+                    <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>layers_c/max_pooling2d.cpp</first>
+                        <second>max_pooling2d_fix16</second>
+                      </first>
+                      <second>21</second>
+                    </item>
+                  </second>
+                </item>
+              </inlineStackInfo>
+              <originalName/>
+              <rtlName>tmp_88_fu_288_p1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>64</bitwidth>
@@ -2173,7 +2173,7 @@
             <Obj>
               <type>0</type>
               <id>56</id>
-              <name>tmp_20</name>
+              <name>tmp_21</name>
               <fileName>layers_c/max_pooling2d.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>17</lineNumber>
@@ -2197,7 +2197,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_20_fu_293_p1</rtlName>
+              <rtlName>tmp_21_fu_293_p1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -2369,7 +2369,7 @@
             <Obj>
               <type>0</type>
               <id>62</id>
-              <name>tmp_88</name>
+              <name>tmp_89</name>
               <fileName>layers_c/max_pooling2d.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>21</lineNumber>
@@ -2393,7 +2393,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_88_fu_309_p1</rtlName>
+              <rtlName>tmp_89_fu_309_p1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -2564,7 +2564,7 @@
             <Obj>
               <type>0</type>
               <id>66</id>
-              <name>tmp_89</name>
+              <name>tmp_90</name>
               <fileName>layers_c/max_pooling2d.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>21</lineNumber>
@@ -2588,7 +2588,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_89_fu_328_p2</rtlName>
+              <rtlName>tmp_90_fu_328_p2</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -2698,7 +2698,7 @@
             <Obj>
               <type>0</type>
               <id>70</id>
-              <name>tmp_21</name>
+              <name>tmp_22</name>
               <fileName>layers_c/max_pooling2d.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>18</lineNumber>
@@ -2722,7 +2722,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_21_fu_332_p1</rtlName>
+              <rtlName>tmp_22_fu_332_p1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -2894,7 +2894,7 @@
             <Obj>
               <type>0</type>
               <id>76</id>
-              <name>tmp_90</name>
+              <name>tmp_91</name>
               <fileName>layers_c/max_pooling2d.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>19</lineNumber>
@@ -2918,7 +2918,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_90_fu_348_p2</rtlName>
+              <rtlName>tmp_91_fu_348_p2</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -2993,54 +2993,6 @@
             <Obj>
               <type>0</type>
               <id>79</id>
-              <name>tmp_93</name>
-              <fileName>layers_c/max_pooling2d.cpp</fileName>
-              <fileDirectory>..</fileDirectory>
-              <lineNumber>21</lineNumber>
-              <contextFuncName>max_pooling2d_fix16</contextFuncName>
-              <inlineStackInfo>
-                <count>1</count>
-                <item_version>0</item_version>
-                <item>
-                  <first>/home/masudalab/DeepCAEonFPGA</first>
-                  <second>
-                    <count>1</count>
-                    <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>layers_c/max_pooling2d.cpp</first>
-                        <second>max_pooling2d_fix16</second>
-                      </first>
-                      <second>21</second>
-                    </item>
-                  </second>
-                </item>
-              </inlineStackInfo>
-              <originalName/>
-              <rtlName>tmp_93_fu_353_p1</rtlName>
-              <coreName/>
-            </Obj>
-            <bitwidth>32</bitwidth>
-          </Value>
-          <oprand_edges>
-            <count>1</count>
-            <item_version>0</item_version>
-            <item>249</item>
-          </oprand_edges>
-          <opcode>zext</opcode>
-          <m_Display>0</m_Display>
-          <m_isOnCriticalPath>0</m_isOnCriticalPath>
-          <m_isLCDNode>0</m_isLCDNode>
-          <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>0.00</m_delay>
-          <m_topoIndex>63</m_topoIndex>
-          <m_clusterGroupNumber>-1</m_clusterGroupNumber>
-        </item>
-        <item class_id_reference="9" object_id="_67">
-          <Value>
-            <Obj>
-              <type>0</type>
-              <id>80</id>
               <name>tmp_94</name>
               <fileName>layers_c/max_pooling2d.cpp</fileName>
               <fileDirectory>..</fileDirectory>
@@ -3065,31 +3017,30 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_94_fu_357_p2</rtlName>
+              <rtlName>tmp_94_fu_353_p1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
           <oprand_edges>
-            <count>2</count>
+            <count>1</count>
             <item_version>0</item_version>
-            <item>250</item>
-            <item>251</item>
+            <item>249</item>
           </oprand_edges>
-          <opcode>add</opcode>
+          <opcode>zext</opcode>
           <m_Display>0</m_Display>
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>2.55</m_delay>
-          <m_topoIndex>64</m_topoIndex>
+          <m_delay>0.00</m_delay>
+          <m_topoIndex>63</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_68">
+        <item class_id_reference="9" object_id="_67">
           <Value>
             <Obj>
               <type>0</type>
-              <id>81</id>
+              <id>80</id>
               <name>tmp_95</name>
               <fileName>layers_c/max_pooling2d.cpp</fileName>
               <fileDirectory>..</fileDirectory>
@@ -3114,7 +3065,56 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_95_fu_362_p1</rtlName>
+              <rtlName>tmp_95_fu_357_p2</rtlName>
+              <coreName/>
+            </Obj>
+            <bitwidth>32</bitwidth>
+          </Value>
+          <oprand_edges>
+            <count>2</count>
+            <item_version>0</item_version>
+            <item>250</item>
+            <item>251</item>
+          </oprand_edges>
+          <opcode>add</opcode>
+          <m_Display>0</m_Display>
+          <m_isOnCriticalPath>0</m_isOnCriticalPath>
+          <m_isLCDNode>0</m_isLCDNode>
+          <m_isStartOfPath>0</m_isStartOfPath>
+          <m_delay>2.55</m_delay>
+          <m_topoIndex>64</m_topoIndex>
+          <m_clusterGroupNumber>-1</m_clusterGroupNumber>
+        </item>
+        <item class_id_reference="9" object_id="_68">
+          <Value>
+            <Obj>
+              <type>0</type>
+              <id>81</id>
+              <name>tmp_96</name>
+              <fileName>layers_c/max_pooling2d.cpp</fileName>
+              <fileDirectory>..</fileDirectory>
+              <lineNumber>21</lineNumber>
+              <contextFuncName>max_pooling2d_fix16</contextFuncName>
+              <inlineStackInfo>
+                <count>1</count>
+                <item_version>0</item_version>
+                <item>
+                  <first>/home/masudalab/DeepCAEonFPGA</first>
+                  <second>
+                    <count>1</count>
+                    <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>layers_c/max_pooling2d.cpp</first>
+                        <second>max_pooling2d_fix16</second>
+                      </first>
+                      <second>21</second>
+                    </item>
+                  </second>
+                </item>
+              </inlineStackInfo>
+              <originalName/>
+              <rtlName>tmp_96_fu_362_p1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>64</bitwidth>
@@ -3381,54 +3381,6 @@
             <Obj>
               <type>0</type>
               <id>88</id>
-              <name>tmp_91</name>
-              <fileName>layers_c/max_pooling2d.cpp</fileName>
-              <fileDirectory>..</fileDirectory>
-              <lineNumber>24</lineNumber>
-              <contextFuncName>max_pooling2d_fix16</contextFuncName>
-              <inlineStackInfo>
-                <count>1</count>
-                <item_version>0</item_version>
-                <item>
-                  <first>/home/masudalab/DeepCAEonFPGA</first>
-                  <second>
-                    <count>1</count>
-                    <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>layers_c/max_pooling2d.cpp</first>
-                        <second>max_pooling2d_fix16</second>
-                      </first>
-                      <second>24</second>
-                    </item>
-                  </second>
-                </item>
-              </inlineStackInfo>
-              <originalName/>
-              <rtlName>tmp_91_fu_367_p1</rtlName>
-              <coreName/>
-            </Obj>
-            <bitwidth>32</bitwidth>
-          </Value>
-          <oprand_edges>
-            <count>1</count>
-            <item_version>0</item_version>
-            <item>261</item>
-          </oprand_edges>
-          <opcode>zext</opcode>
-          <m_Display>0</m_Display>
-          <m_isOnCriticalPath>0</m_isOnCriticalPath>
-          <m_isLCDNode>0</m_isLCDNode>
-          <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>0.00</m_delay>
-          <m_topoIndex>69</m_topoIndex>
-          <m_clusterGroupNumber>-1</m_clusterGroupNumber>
-        </item>
-        <item class_id_reference="9" object_id="_75">
-          <Value>
-            <Obj>
-              <type>0</type>
-              <id>89</id>
               <name>tmp_92</name>
               <fileName>layers_c/max_pooling2d.cpp</fileName>
               <fileDirectory>..</fileDirectory>
@@ -3453,7 +3405,55 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_92_fu_371_p2</rtlName>
+              <rtlName>tmp_92_fu_367_p1</rtlName>
+              <coreName/>
+            </Obj>
+            <bitwidth>32</bitwidth>
+          </Value>
+          <oprand_edges>
+            <count>1</count>
+            <item_version>0</item_version>
+            <item>261</item>
+          </oprand_edges>
+          <opcode>zext</opcode>
+          <m_Display>0</m_Display>
+          <m_isOnCriticalPath>0</m_isOnCriticalPath>
+          <m_isLCDNode>0</m_isLCDNode>
+          <m_isStartOfPath>0</m_isStartOfPath>
+          <m_delay>0.00</m_delay>
+          <m_topoIndex>69</m_topoIndex>
+          <m_clusterGroupNumber>-1</m_clusterGroupNumber>
+        </item>
+        <item class_id_reference="9" object_id="_75">
+          <Value>
+            <Obj>
+              <type>0</type>
+              <id>89</id>
+              <name>tmp_93</name>
+              <fileName>layers_c/max_pooling2d.cpp</fileName>
+              <fileDirectory>..</fileDirectory>
+              <lineNumber>24</lineNumber>
+              <contextFuncName>max_pooling2d_fix16</contextFuncName>
+              <inlineStackInfo>
+                <count>1</count>
+                <item_version>0</item_version>
+                <item>
+                  <first>/home/masudalab/DeepCAEonFPGA</first>
+                  <second>
+                    <count>1</count>
+                    <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>layers_c/max_pooling2d.cpp</first>
+                        <second>max_pooling2d_fix16</second>
+                      </first>
+                      <second>24</second>
+                    </item>
+                  </second>
+                </item>
+              </inlineStackInfo>
+              <originalName/>
+              <rtlName>tmp_93_fu_371_p2</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -3478,7 +3478,7 @@
             <Obj>
               <type>0</type>
               <id>90</id>
-              <name>tmp_96</name>
+              <name>tmp_97</name>
               <fileName>layers_c/max_pooling2d.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>24</lineNumber>
@@ -3502,7 +3502,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_96_fu_376_p1</rtlName>
+              <rtlName>tmp_97_fu_376_p1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>64</bitwidth>
@@ -3624,7 +3624,7 @@
             <Obj>
               <type>0</type>
               <id>93</id>
-              <name>tmp_97</name>
+              <name>tmp_98</name>
               <fileName>layers_c/max_pooling2d.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>24</lineNumber>
@@ -3648,7 +3648,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_97_fu_381_p2</rtlName>
+              <rtlName>tmp_98_fu_381_p2</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -7597,7 +7597,7 @@
           </second>
         </item>
         <item>
-          <first>tmp_86_fu_283_p2 ( + ) </first>
+          <first>tmp_87_fu_283_p2 ( + ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -7620,7 +7620,7 @@
           </second>
         </item>
         <item>
-          <first>tmp_89_fu_328_p2 ( + ) </first>
+          <first>tmp_90_fu_328_p2 ( + ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -7643,7 +7643,7 @@
           </second>
         </item>
         <item>
-          <first>tmp_90_fu_348_p2 ( or ) </first>
+          <first>tmp_91_fu_348_p2 ( or ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -7666,7 +7666,7 @@
           </second>
         </item>
         <item>
-          <first>tmp_92_fu_371_p2 ( + ) </first>
+          <first>tmp_93_fu_371_p2 ( + ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -7689,7 +7689,7 @@
           </second>
         </item>
         <item>
-          <first>tmp_94_fu_357_p2 ( + ) </first>
+          <first>tmp_95_fu_357_p2 ( + ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -7712,7 +7712,7 @@
           </second>
         </item>
         <item>
-          <first>tmp_97_fu_381_p2 ( icmp ) </first>
+          <first>tmp_98_fu_381_p2 ( icmp ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -8342,7 +8342,7 @@
           </second>
         </item>
         <item>
-          <first>tmp_20_reg_481</first>
+          <first>tmp_21_reg_481</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -8361,7 +8361,7 @@
           </second>
         </item>
         <item>
-          <first>tmp_76_reg_407</first>
+          <first>tmp_77_reg_407</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -8380,7 +8380,7 @@
           </second>
         </item>
         <item>
-          <first>tmp_77_reg_412</first>
+          <first>tmp_78_reg_412</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -8399,7 +8399,7 @@
           </second>
         </item>
         <item>
-          <first>tmp_78_reg_417</first>
+          <first>tmp_79_reg_417</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -8418,7 +8418,7 @@
           </second>
         </item>
         <item>
-          <first>tmp_83_cast_reg_453</first>
+          <first>tmp_84_cast_reg_453</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -8437,7 +8437,7 @@
           </second>
         </item>
         <item>
-          <first>tmp_85_cast_reg_471</first>
+          <first>tmp_86_cast_reg_471</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -8456,7 +8456,7 @@
           </second>
         </item>
         <item>
-          <first>tmp_89_reg_504</first>
+          <first>tmp_90_reg_504</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -8475,7 +8475,7 @@
           </second>
         </item>
         <item>
-          <first>tmp_90_reg_518</first>
+          <first>tmp_91_reg_518</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -8672,7 +8672,7 @@
           </second>
         </item>
         <item>
-          <first>tmp_86_fu_283_p2 ( + ) </first>
+          <first>tmp_87_fu_283_p2 ( + ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -8680,7 +8680,7 @@
           </second>
         </item>
         <item>
-          <first>tmp_89_fu_328_p2 ( + ) </first>
+          <first>tmp_90_fu_328_p2 ( + ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -8688,7 +8688,7 @@
           </second>
         </item>
         <item>
-          <first>tmp_90_fu_348_p2 ( or ) </first>
+          <first>tmp_91_fu_348_p2 ( or ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -8696,7 +8696,7 @@
           </second>
         </item>
         <item>
-          <first>tmp_92_fu_371_p2 ( + ) </first>
+          <first>tmp_93_fu_371_p2 ( + ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -8704,7 +8704,7 @@
           </second>
         </item>
         <item>
-          <first>tmp_94_fu_357_p2 ( + ) </first>
+          <first>tmp_95_fu_357_p2 ( + ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -8712,7 +8712,7 @@
           </second>
         </item>
         <item>
-          <first>tmp_97_fu_381_p2 ( icmp ) </first>
+          <first>tmp_98_fu_381_p2 ( icmp ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -10156,7 +10156,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_20_fu_293</first>
+        <first>tmp_21_fu_293</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10164,7 +10164,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_21_fu_332</first>
+        <first>tmp_22_fu_332</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10172,7 +10172,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_76_fu_186</first>
+        <first>tmp_77_fu_186</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10180,7 +10180,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_77_fu_190</first>
+        <first>tmp_78_fu_190</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10188,7 +10188,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_78_fu_194</first>
+        <first>tmp_79_fu_194</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10196,7 +10196,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_82_fu_230</first>
+        <first>tmp_83_fu_230</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10204,7 +10204,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_83_cast_fu_248</first>
+        <first>tmp_84_cast_fu_248</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10212,7 +10212,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_83_fu_240</first>
+        <first>tmp_84_fu_240</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10220,7 +10220,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_84_fu_267</first>
+        <first>tmp_85_fu_267</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10228,7 +10228,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_85_cast_fu_279</first>
+        <first>tmp_86_cast_fu_279</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10236,7 +10236,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_85_fu_271</first>
+        <first>tmp_86_fu_271</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10244,7 +10244,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_86_fu_283</first>
+        <first>tmp_87_fu_283</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10252,7 +10252,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_87_fu_288</first>
+        <first>tmp_88_fu_288</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10260,7 +10260,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_88_fu_309</first>
+        <first>tmp_89_fu_309</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10268,7 +10268,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_89_fu_328</first>
+        <first>tmp_90_fu_328</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10276,7 +10276,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_90_fu_348</first>
+        <first>tmp_91_fu_348</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10284,7 +10284,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_91_fu_367</first>
+        <first>tmp_92_fu_367</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10292,7 +10292,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_92_fu_371</first>
+        <first>tmp_93_fu_371</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10300,7 +10300,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_93_fu_353</first>
+        <first>tmp_94_fu_353</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10308,7 +10308,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_94_fu_357</first>
+        <first>tmp_95_fu_357</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10316,7 +10316,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_95_fu_362</first>
+        <first>tmp_96_fu_362</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10324,7 +10324,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_96_fu_376</first>
+        <first>tmp_97_fu_376</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10332,7 +10332,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_97_fu_381</first>
+        <first>tmp_98_fu_381</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10896,7 +10896,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_20_reg_481</first>
+        <first>tmp_21_reg_481</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10904,7 +10904,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_76_reg_407</first>
+        <first>tmp_77_reg_407</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10912,7 +10912,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_77_reg_412</first>
+        <first>tmp_78_reg_412</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10920,7 +10920,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_78_reg_417</first>
+        <first>tmp_79_reg_417</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10928,7 +10928,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_83_cast_reg_453</first>
+        <first>tmp_84_cast_reg_453</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10936,7 +10936,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_85_cast_reg_471</first>
+        <first>tmp_86_cast_reg_471</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10944,7 +10944,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_89_reg_504</first>
+        <first>tmp_90_reg_504</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10952,7 +10952,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_90_reg_518</first>
+        <first>tmp_91_reg_518</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

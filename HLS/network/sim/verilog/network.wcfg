@@ -47,13 +47,13 @@
                <obj_property name="Radix">HEXRADIX</obj_property>
             </wvobject>
             <wvobject type="array" fp_name="/apatb_network_top/AESL_inst_network/output_data_TSTRB">
-               <obj_property name="ElementShortName">output_data_TSTRB[1:0]</obj_property>
-               <obj_property name="ObjectShortName">output_data_TSTRB[1:0]</obj_property>
+               <obj_property name="ElementShortName">output_data_TSTRB[3:0]</obj_property>
+               <obj_property name="ObjectShortName">output_data_TSTRB[3:0]</obj_property>
                <obj_property name="Radix">HEXRADIX</obj_property>
             </wvobject>
             <wvobject type="array" fp_name="/apatb_network_top/AESL_inst_network/output_data_TKEEP">
-               <obj_property name="ElementShortName">output_data_TKEEP[1:0]</obj_property>
-               <obj_property name="ObjectShortName">output_data_TKEEP[1:0]</obj_property>
+               <obj_property name="ElementShortName">output_data_TKEEP[3:0]</obj_property>
+               <obj_property name="ObjectShortName">output_data_TKEEP[3:0]</obj_property>
                <obj_property name="Radix">HEXRADIX</obj_property>
             </wvobject>
             <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/output_data_TREADY">
@@ -69,8 +69,8 @@
                <obj_property name="UseCustomSignalColor">true</obj_property>
             </wvobject>
             <wvobject type="array" fp_name="/apatb_network_top/AESL_inst_network/output_data_TDATA">
-               <obj_property name="ElementShortName">output_data_TDATA[15:0]</obj_property>
-               <obj_property name="ObjectShortName">output_data_TDATA[15:0]</obj_property>
+               <obj_property name="ElementShortName">output_data_TDATA[31:0]</obj_property>
+               <obj_property name="ObjectShortName">output_data_TDATA[31:0]</obj_property>
                <obj_property name="Radix">HEXRADIX</obj_property>
             </wvobject>
          </wvobject>
@@ -209,13 +209,13 @@
                <obj_property name="Radix">HEXRADIX</obj_property>
             </wvobject>
             <wvobject type="array" fp_name="/apatb_network_top/AESL_inst_network/input_data_TSTRB">
-               <obj_property name="ElementShortName">input_data_TSTRB[1:0]</obj_property>
-               <obj_property name="ObjectShortName">input_data_TSTRB[1:0]</obj_property>
+               <obj_property name="ElementShortName">input_data_TSTRB[3:0]</obj_property>
+               <obj_property name="ObjectShortName">input_data_TSTRB[3:0]</obj_property>
                <obj_property name="Radix">HEXRADIX</obj_property>
             </wvobject>
             <wvobject type="array" fp_name="/apatb_network_top/AESL_inst_network/input_data_TKEEP">
-               <obj_property name="ElementShortName">input_data_TKEEP[1:0]</obj_property>
-               <obj_property name="ObjectShortName">input_data_TKEEP[1:0]</obj_property>
+               <obj_property name="ElementShortName">input_data_TKEEP[3:0]</obj_property>
+               <obj_property name="ObjectShortName">input_data_TKEEP[3:0]</obj_property>
                <obj_property name="Radix">HEXRADIX</obj_property>
             </wvobject>
             <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/input_data_TREADY">
@@ -231,8 +231,8 @@
                <obj_property name="UseCustomSignalColor">true</obj_property>
             </wvobject>
             <wvobject type="array" fp_name="/apatb_network_top/AESL_inst_network/input_data_TDATA">
-               <obj_property name="ElementShortName">input_data_TDATA[15:0]</obj_property>
-               <obj_property name="ObjectShortName">input_data_TDATA[15:0]</obj_property>
+               <obj_property name="ElementShortName">input_data_TDATA[31:0]</obj_property>
+               <obj_property name="ObjectShortName">input_data_TDATA[31:0]</obj_property>
                <obj_property name="Radix">HEXRADIX</obj_property>
             </wvobject>
          </wvobject>
@@ -403,13 +403,13 @@
                <obj_property name="Radix">HEXRADIX</obj_property>
             </wvobject>
             <wvobject type="array" fp_name="/apatb_network_top/output_data_TSTRB">
-               <obj_property name="ElementShortName">output_data_TSTRB[1:0]</obj_property>
-               <obj_property name="ObjectShortName">output_data_TSTRB[1:0]</obj_property>
+               <obj_property name="ElementShortName">output_data_TSTRB[3:0]</obj_property>
+               <obj_property name="ObjectShortName">output_data_TSTRB[3:0]</obj_property>
                <obj_property name="Radix">HEXRADIX</obj_property>
             </wvobject>
             <wvobject type="array" fp_name="/apatb_network_top/output_data_TKEEP">
-               <obj_property name="ElementShortName">output_data_TKEEP[1:0]</obj_property>
-               <obj_property name="ObjectShortName">output_data_TKEEP[1:0]</obj_property>
+               <obj_property name="ElementShortName">output_data_TKEEP[3:0]</obj_property>
+               <obj_property name="ObjectShortName">output_data_TKEEP[3:0]</obj_property>
                <obj_property name="Radix">HEXRADIX</obj_property>
             </wvobject>
             <wvobject type="logic" fp_name="/apatb_network_top/output_data_TREADY">
@@ -425,8 +425,8 @@
                <obj_property name="UseCustomSignalColor">true</obj_property>
             </wvobject>
             <wvobject type="array" fp_name="/apatb_network_top/output_data_TDATA">
-               <obj_property name="ElementShortName">output_data_TDATA[15:0]</obj_property>
-               <obj_property name="ObjectShortName">output_data_TDATA[15:0]</obj_property>
+               <obj_property name="ElementShortName">output_data_TDATA[31:0]</obj_property>
+               <obj_property name="ObjectShortName">output_data_TDATA[31:0]</obj_property>
                <obj_property name="Radix">HEXRADIX</obj_property>
             </wvobject>
          </wvobject>
@@ -565,13 +565,13 @@
                <obj_property name="Radix">HEXRADIX</obj_property>
             </wvobject>
             <wvobject type="array" fp_name="/apatb_network_top/input_data_TSTRB">
-               <obj_property name="ElementShortName">input_data_TSTRB[1:0]</obj_property>
-               <obj_property name="ObjectShortName">input_data_TSTRB[1:0]</obj_property>
+               <obj_property name="ElementShortName">input_data_TSTRB[3:0]</obj_property>
+               <obj_property name="ObjectShortName">input_data_TSTRB[3:0]</obj_property>
                <obj_property name="Radix">HEXRADIX</obj_property>
             </wvobject>
             <wvobject type="array" fp_name="/apatb_network_top/input_data_TKEEP">
-               <obj_property name="ElementShortName">input_data_TKEEP[1:0]</obj_property>
-               <obj_property name="ObjectShortName">input_data_TKEEP[1:0]</obj_property>
+               <obj_property name="ElementShortName">input_data_TKEEP[3:0]</obj_property>
+               <obj_property name="ObjectShortName">input_data_TKEEP[3:0]</obj_property>
                <obj_property name="Radix">HEXRADIX</obj_property>
             </wvobject>
             <wvobject type="logic" fp_name="/apatb_network_top/input_data_TREADY">
@@ -587,8 +587,8 @@
                <obj_property name="UseCustomSignalColor">true</obj_property>
             </wvobject>
             <wvobject type="array" fp_name="/apatb_network_top/input_data_TDATA">
-               <obj_property name="ElementShortName">input_data_TDATA[15:0]</obj_property>
-               <obj_property name="ObjectShortName">input_data_TDATA[15:0]</obj_property>
+               <obj_property name="ElementShortName">input_data_TDATA[31:0]</obj_property>
+               <obj_property name="ObjectShortName">input_data_TDATA[31:0]</obj_property>
                <obj_property name="Radix">HEXRADIX</obj_property>
             </wvobject>
          </wvobject>

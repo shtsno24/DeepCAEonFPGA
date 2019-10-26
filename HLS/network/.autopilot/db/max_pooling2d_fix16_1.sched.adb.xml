@@ -546,10 +546,10 @@
 
 <Node id="37" bw="32" op_0_bw="17">
 <![CDATA[
-.preheader6.preheader:2  %tmp_82_cast = zext i17 %tmp_73 to i32
+.preheader6.preheader:2  %tmp_83_cast = zext i17 %tmp_73 to i32
 
 ]]></Node>
-<StgValue><ssdm name="tmp_82_cast"/></StgValue>
+<StgValue><ssdm name="tmp_83_cast"/></StgValue>
 </operation>
 
 <operation id="40" st_id="4" stage="1" lat="1">
@@ -687,10 +687,10 @@
 
 <Node id="49" bw="32" op_0_bw="17">
 <![CDATA[
-.preheader5.preheader:2  %tmp_85_cast = zext i17 %tmp_75 to i32
+.preheader5.preheader:2  %tmp_86_cast = zext i17 %tmp_75 to i32
 
 ]]></Node>
-<StgValue><ssdm name="tmp_85_cast"/></StgValue>
+<StgValue><ssdm name="tmp_86_cast"/></StgValue>
 </operation>
 
 <operation id="49" st_id="5" stage="1" lat="1">
@@ -800,10 +800,10 @@
 
 <Node id="56" bw="1" op_0_bw="2">
 <![CDATA[
-.preheader5:1  %tmp_18 = trunc i2 %in_h to i1
+.preheader5:1  %tmp_19 = trunc i2 %in_h to i1
 
 ]]></Node>
-<StgValue><ssdm name="tmp_18"/></StgValue>
+<StgValue><ssdm name="tmp_19"/></StgValue>
 </operation>
 
 <operation id="56" st_id="6" stage="1" lat="1">
@@ -908,7 +908,7 @@
 
 <Node id="64" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-.preheader.preheader:2  %tmp2 = add i32 %tmp4, %tmp_82_cast
+.preheader.preheader:2  %tmp2 = add i32 %tmp4, %tmp_83_cast
 
 ]]></Node>
 <StgValue><ssdm name="tmp2"/></StgValue>
@@ -960,7 +960,7 @@
 
 <Node id="66" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-.preheader.preheader:4  %tmp_79 = add i32 %tmp3, %tmp_85_cast
+.preheader.preheader:4  %tmp_79 = add i32 %tmp3, %tmp_86_cast
 
 ]]></Node>
 <StgValue><ssdm name="tmp_79"/></StgValue>
@@ -1008,10 +1008,10 @@
 
 <Node id="70" bw="1" op_0_bw="2">
 <![CDATA[
-.preheader:1  %tmp_19 = trunc i2 %in_w to i1
+.preheader:1  %tmp_20 = trunc i2 %in_w to i1
 
 ]]></Node>
-<StgValue><ssdm name="tmp_19"/></StgValue>
+<StgValue><ssdm name="tmp_20"/></StgValue>
 </operation>
 
 <operation id="69" st_id="9" stage="1" lat="1">
@@ -1084,7 +1084,7 @@
 
 <Node id="76" bw="1" op_0_bw="1" op_1_bw="1">
 <![CDATA[
-:0  %tmp_80 = or i1 %tmp_19, %tmp_18
+:0  %tmp_80 = or i1 %tmp_20, %tmp_19
 
 ]]></Node>
 <StgValue><ssdm name="tmp_80"/></StgValue>

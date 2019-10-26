@@ -77374,7 +77374,7 @@ vector< vector< int16_t> >& input, char delimiter, ofstream& fp, uint16_t fracta
 #pragma empty_line
 using namespace std;
 #pragma empty_line
-typedef hls::stream< ap_axis<16, 1, 1, 1> > axis;
+typedef hls::stream< ap_axis<32, 1, 1, 1> > axis;
 #pragma empty_line
 void network(axis &input_data, axis &output_data);
 #pragma line 18 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream_tb.cpp" 2
@@ -77385,13 +77385,13 @@ using namespace std;
 #pragma empty_line
 int main(void){
 #pragma empty_line
-    hls::stream< ap_axis<16, 1, 1, 1> > input_buffer;
-    hls::stream< ap_axis<16, 1, 1, 1> > output_buffer;
+    hls::stream< ap_axis<32, 1, 1, 1> > input_buffer;
+    hls::stream< ap_axis<32, 1, 1, 1> > output_buffer;
     int16_t output_img_buff[1 * 28 * 28];
  vector< vector< int16_t> > output_img(28, vector< int16_t>(28, 0));
  vector< vector< int16_t> > input_img(28, vector< int16_t>(28, 0));
 #pragma empty_line
-    ap_axis<16, 1, 1, 1> tmp;
+    ap_axis<32, 1, 1, 1> tmp;
 #pragma empty_line
  for(int height = 0; height < 28; height++){
   for(int width = 0; width < 28; width++){
@@ -77407,7 +77407,7 @@ int main(void){
  for(int depth = 0; depth < 1; depth++){
   for(int height = 0; height < 28; height++){
    for(int width = 0; width < 28; width++){
-    tmp.data = test_input_fix16[depth][height][width];
+    tmp.data = (int32_t)test_input_fix16[depth][height][width];
 #pragma empty_line
     if(depth == 0 && height == 0 && width == 0){
      tmp.user = 1;

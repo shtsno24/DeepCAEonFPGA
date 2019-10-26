@@ -75469,7 +75469,7 @@ template<int D>
 #pragma empty_line
 using namespace std;
 #pragma empty_line
-typedef hls::stream< ap_axis<16, 1, 1, 1> > axis;
+typedef hls::stream< ap_axis<32, 1, 1, 1> > axis;
 #pragma empty_line
 void network(axis &input_data, axis &output_data);
 #pragma line 11 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp" 2
@@ -77090,8 +77090,8 @@ void network(axis &input_data, axis &output_data){
  uint16_t input_0_depth = 1, input_0_height = 28, input_0_width = 28;
  int16_t input_0_array[1][28][28];
 #pragma empty_line
- ap_axis<16, 1, 1, 1> tmp;
- ap_axis<16, 1, 1, 1> out[1][28][28];
+ ap_axis<32, 1, 1, 1> tmp;
+ ap_axis<32, 1, 1, 1> out[1][28][28];
 #pragma empty_line
  for(int depth = 0; depth < input_0_depth; depth++){
   for(int height = 0; height < input_0_height; height++){
@@ -77172,7 +77172,7 @@ void network(axis &input_data, axis &output_data){
   for(int height = 0; height < Conv2D_4_height; height++){
    for(int width = 0; width < Conv2D_4_width; width++){
 #pragma empty_line
-    out[depth][height][width].data = Conv2D_4_array[depth][height][width];
+    out[depth][height][width].data = (int32_t)Conv2D_4_array[depth][height][width];
 #pragma empty_line
     if(depth == 0 && height == 0 && width == 0){
      out[depth][height][width].user = 1;
