@@ -170,7 +170,7 @@ proc create_root_design { parentCell } {
    CONFIG.c_include_s2mm_dre {0} \
    CONFIG.c_include_sg {0} \
    CONFIG.c_m_axis_mm2s_tdata_width {16} \
-   CONFIG.c_mm2s_burst_size {256} \
+   CONFIG.c_mm2s_burst_size {8} \
    CONFIG.c_s2mm_burst_size {16} \
    CONFIG.c_sg_include_stscntrl_strm {0} \
    CONFIG.c_sg_length_width {26} \
@@ -186,7 +186,7 @@ proc create_root_design { parentCell } {
    CONFIG.c_include_s2mm_dre {0} \
    CONFIG.c_include_sg {0} \
    CONFIG.c_mm2s_burst_size {16} \
-   CONFIG.c_s2mm_burst_size {256} \
+   CONFIG.c_s2mm_burst_size {8} \
    CONFIG.c_sg_include_stscntrl_strm {0} \
    CONFIG.c_sg_length_width {26} \
  ] $axi_dma_out
@@ -213,7 +213,7 @@ proc create_root_design { parentCell } {
   # Create instance: axis_data_fifo_out, and set properties
   set axis_data_fifo_out [ create_bd_cell -type ip -vlnv xilinx.com:ip:axis_data_fifo:2.0 axis_data_fifo_out ]
   set_property -dict [ list \
-   CONFIG.FIFO_DEPTH {1024} \
+   CONFIG.FIFO_DEPTH {2048} \
    CONFIG.HAS_WR_DATA_COUNT {0} \
  ] $axis_data_fifo_out
 
