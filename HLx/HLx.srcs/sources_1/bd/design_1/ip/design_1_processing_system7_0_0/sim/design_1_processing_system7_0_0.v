@@ -219,7 +219,7 @@ output [1 : 0] S_AXI_HP0_BRESP;
 output [1 : 0] S_AXI_HP0_RRESP;
 output [5 : 0] S_AXI_HP0_BID;
 output [5 : 0] S_AXI_HP0_RID;
-output [31 : 0] S_AXI_HP0_RDATA;
+output [63 : 0] S_AXI_HP0_RDATA;
 output [7 : 0] S_AXI_HP0_RCOUNT;
 output [7 : 0] S_AXI_HP0_WCOUNT;
 output [2 : 0] S_AXI_HP0_RACOUNT;
@@ -252,8 +252,8 @@ input [3 : 0] S_AXI_HP0_AWQOS;
 input [5 : 0] S_AXI_HP0_ARID;
 input [5 : 0] S_AXI_HP0_AWID;
 input [5 : 0] S_AXI_HP0_WID;
-input [31 : 0] S_AXI_HP0_WDATA;
-input [3 : 0] S_AXI_HP0_WSTRB;
+input [63 : 0] S_AXI_HP0_WDATA;
+input [7 : 0] S_AXI_HP0_WSTRB;
 output FCLK_CLK0;
 output FCLK_RESET0_N;
 input [53 : 0] MIO;
@@ -288,7 +288,7 @@ input PS_PORB;
     .C_USE_S_AXI_HP1(0),
     .C_USE_S_AXI_HP2(0),
     .C_USE_S_AXI_HP3(0),
-    .C_S_AXI_HP0_DATA_WIDTH(32),
+    .C_S_AXI_HP0_DATA_WIDTH(64),
     .C_S_AXI_HP1_DATA_WIDTH(64),
     .C_S_AXI_HP2_DATA_WIDTH(64),
     .C_S_AXI_HP3_DATA_WIDTH(64),
