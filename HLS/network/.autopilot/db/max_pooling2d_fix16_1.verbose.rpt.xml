@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'max_pooling2d_fix16_1'" level="0">
-<item name = "Date">Sat Oct 26 16:37:19 2019
+<item name = "Date">Sun Oct 27 13:23:29 2019
 </item>
 <item name = "Version">2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)</item>
 <item name = "Project">HLS</item>
@@ -141,14 +141,14 @@
 <column name="tmp1_reg_458">32, 0, 32, 0</column>
 <column name="tmp2_reg_494">32, 0, 32, 0</column>
 <column name="tmp3_reg_499">32, 0, 32, 0</column>
-<column name="tmp_19_reg_481">1, 0, 1, 0</column>
+<column name="tmp_18_reg_481">1, 0, 1, 0</column>
 <column name="tmp_69_reg_407">16, 0, 32, 16</column>
 <column name="tmp_70_reg_412">16, 0, 32, 16</column>
 <column name="tmp_71_reg_417">16, 0, 32, 16</column>
 <column name="tmp_79_reg_504">32, 0, 32, 0</column>
 <column name="tmp_80_reg_518">1, 0, 1, 0</column>
-<column name="tmp_83_cast_reg_453">16, 0, 32, 16</column>
-<column name="tmp_86_cast_reg_471">16, 0, 32, 16</column>
+<column name="tmp_82_cast_reg_453">16, 0, 32, 16</column>
+<column name="tmp_85_cast_reg_471">16, 0, 32, 16</column>
 <column name="tmp_reg_448">32, 0, 32, 0</column>
 <column name="tmp_s_reg_402">16, 0, 32, 16</column>
 </table>

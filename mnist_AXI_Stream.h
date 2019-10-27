@@ -11,6 +11,6 @@
 
 using namespace std;
 
-typedef hls::stream< ap_axis<32, 1, 1, 1> > axis;
+typedef hls::stream< ap_axis<16, 1, 1, 1> > axis;
 
 void network(axis &input_data, axis &output_data);

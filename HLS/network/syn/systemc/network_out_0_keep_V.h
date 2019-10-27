@@ -1,5 +1,5 @@
 // ==============================================================
-// File generated on Sat Oct 26 16:37:27 JST 2019
+// File generated on Sun Oct 27 13:23:36 JST 2019
 // Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
 // SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 // IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
@@ -21,7 +21,7 @@ using namespace sc_dt;
 
 struct network_out_0_keep_V_ram : public sc_core::sc_module {
 
-  static const unsigned DataWidth = 4;
+  static const unsigned DataWidth = 2;
   static const unsigned AddressRange = 784;
   static const unsigned AddressWidth = 10;
 
@@ -78,7 +78,7 @@ void prc_write_0()
 SC_MODULE(network_out_0_keep_V) {
 
 
-static const unsigned DataWidth = 4;
+static const unsigned DataWidth = 2;
 static const unsigned AddressRange = 784;
 static const unsigned AddressWidth = 10;
 

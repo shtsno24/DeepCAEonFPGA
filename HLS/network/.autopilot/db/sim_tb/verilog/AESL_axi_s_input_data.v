@@ -1,5 +1,5 @@
 // ==============================================================
-// File generated on Sat Oct 26 16:38:34 JST 2019
+// File generated on Sun Oct 27 13:25:00 JST 2019
 // Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
 // SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 // IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
@@ -28,9 +28,9 @@
 module AESL_axi_s_input_data (
     input clk,
     input reset,
-    output [32 - 1:0] TRAN_input_data_TDATA,
-    output [4 - 1:0] TRAN_input_data_TKEEP,
-    output [4 - 1:0] TRAN_input_data_TSTRB,
+    output [16 - 1:0] TRAN_input_data_TDATA,
+    output [2 - 1:0] TRAN_input_data_TKEEP,
+    output [2 - 1:0] TRAN_input_data_TSTRB,
     output TRAN_input_data_TUSER,
     output TRAN_input_data_TLAST,
     output TRAN_input_data_TID,
@@ -45,11 +45,11 @@ module AESL_axi_s_input_data (
     wire input_data_TDATA_full;
     wire input_data_TDATA_empty;
     reg input_data_TDATA_write_en;
-    reg [32 - 1:0] input_data_TDATA_write_data;
+    reg [16 - 1:0] input_data_TDATA_write_data;
     reg input_data_TDATA_read_en;
-    wire [32 - 1:0] input_data_TDATA_read_data;
+    wire [16 - 1:0] input_data_TDATA_read_data;
     
-    fifo #(784, 32) fifo_input_data_TDATA (
+    fifo #(784, 16) fifo_input_data_TDATA (
         .reset(1'b0),
         .write_clock(clk),
         .write_en(input_data_TDATA_write_en),
@@ -69,11 +69,11 @@ module AESL_axi_s_input_data (
     wire input_data_TKEEP_full;
     wire input_data_TKEEP_empty;
     reg input_data_TKEEP_write_en;
-    reg [4 - 1:0] input_data_TKEEP_write_data;
+    reg [2 - 1:0] input_data_TKEEP_write_data;
     reg input_data_TKEEP_read_en;
-    wire [4 - 1:0] input_data_TKEEP_read_data;
+    wire [2 - 1:0] input_data_TKEEP_read_data;
     
-    fifo #(784, 4) fifo_input_data_TKEEP (
+    fifo #(784, 2) fifo_input_data_TKEEP (
         .reset(1'b0),
         .write_clock(clk),
         .write_en(input_data_TKEEP_write_en),
@@ -93,11 +93,11 @@ module AESL_axi_s_input_data (
     wire input_data_TSTRB_full;
     wire input_data_TSTRB_empty;
     reg input_data_TSTRB_write_en;
-    reg [4 - 1:0] input_data_TSTRB_write_data;
+    reg [2 - 1:0] input_data_TSTRB_write_data;
     reg input_data_TSTRB_read_en;
-    wire [4 - 1:0] input_data_TSTRB_read_data;
+    wire [2 - 1:0] input_data_TSTRB_read_data;
     
-    fifo #(784, 4) fifo_input_data_TSTRB (
+    fifo #(784, 2) fifo_input_data_TSTRB (
         .reset(1'b0),
         .write_clock(clk),
         .write_en(input_data_TSTRB_write_en),
@@ -260,7 +260,7 @@ module AESL_axi_s_input_data (
     initial begin : AXI_stream_driver_input_data_TDATA
         integer fp;
         reg [199:0] token;
-        reg [32 - 1:0] data;
+        reg [16 - 1:0] data;
         reg [199:0] data_integer;
         integer fp_ingress_status;
         reg [199:0] token_ingress_status;
@@ -341,7 +341,7 @@ module AESL_axi_s_input_data (
     initial begin : AXI_stream_driver_input_data_TKEEP
         integer fp;
         reg [199:0] token;
-        reg [4 - 1:0] data;
+        reg [2 - 1:0] data;
         reg [199:0] data_integer;
         integer fp_ingress_status;
         reg [199:0] token_ingress_status;
@@ -422,7 +422,7 @@ module AESL_axi_s_input_data (
     initial begin : AXI_stream_driver_input_data_TSTRB
         integer fp;
         reg [199:0] token;
-        reg [4 - 1:0] data;
+        reg [2 - 1:0] data;
         reg [199:0] data_integer;
         integer fp_ingress_status;
         reg [199:0] token_ingress_status;
