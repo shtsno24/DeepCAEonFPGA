@@ -1,5 +1,5 @@
 INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/vivado_hls'
-INFO: [HLS 200-10] For user 'masudalab' on host 'masudalab-ubuntu' (Linux_x86_64 version 5.0.0-32-generic) on Sun Oct 27 13:35:47 JST 2019
+INFO: [HLS 200-10] For user 'masudalab' on host 'masudalab-ubuntu' (Linux_x86_64 version 5.0.0-32-generic) on Sun Oct 27 20:26:29 JST 2019
 INFO: [HLS 200-10] On os Ubuntu 18.04.3 LTS
 INFO: [HLS 200-10] In directory '/home/masudalab/DeepCAEonFPGA'
 INFO: [HLS 200-10] Opening project '/home/masudalab/DeepCAEonFPGA/HLS'.
@@ -10,15 +10,2084 @@ INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signed
 INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
 INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
 INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
-INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+   Build using "/tools/Xilinx/Vivado/2018.3/tps/lnx64/gcc-6.2.0/bin/g++"
+   Compiling array_printf_fix16.cpp_pre.cpp.tb.cpp
+   Compiling depthwise_conv2d.cpp_pre.cpp.tb.cpp
+   Compiling up_sampling2d.cpp_pre.cpp.tb.cpp
+   Compiling mnist_AXI_Stream_tb.cpp_pre.cpp.tb.cpp
+   Compiling max_pooling2d.cpp_pre.cpp.tb.cpp
+   Compiling padding2d.cpp_pre.cpp.tb.cpp
+   Compiling apatb_network.cpp
+   Compiling array_printf_float32.cpp_pre.cpp.tb.cpp
+   Compiling conv2d.cpp_pre.cpp.tb.cpp
+   Compiling mnist_AXI_Stream.cpp_pre.cpp.tb.cpp
+   Generating cosim.tv.exe
+INFO: [COSIM 212-302] Starting C TB testing ... 
+[[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.16468 0.36271 0.31175 0.29606 0.11762 0.07056 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.43525 0.49800 0.49800 0.49800 0.49800 0.47252 0.38820 0.38820 0.38820 0.38820 0.38820 0.38820 0.38820 0.38820 0.33332 0.10193 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.13135 0.22352 0.14115 0.22352 0.31959 0.44508 0.49800 0.44115 0.49800 0.49800 0.49800 0.49016 0.44899 0.49800 0.49800 0.27448 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.03333 0.12940 0.02744 0.13135 0.13135 0.13135 0.11567 0.04117 0.46272 0.49800 0.20783 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.16272 0.49605 0.40977 0.03528 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.04312 0.45683 0.49998 0.16272 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.25291 0.49800 0.46663 0.08625 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.11567 0.48820 0.49800 0.12156 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.26075 0.49800 0.36665 0.00980 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.01764 0.40193 0.48625 0.11371 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.24705 0.49800 0.35682 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.14704 0.49214 0.47056 0.11176 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.03723 0.43330 0.49800 0.32548 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00586 0.39802 0.49800 0.42940 0.06861 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.07450 0.49800 0.49800 0.15098 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.06076 0.43919 0.49800 0.22547 0.00195 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.26075 0.49800 0.49800 0.10193 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.11960 0.47447 0.49800 0.49800 0.10193 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.23722 0.49800 0.49800 0.42940 0.07840 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.23722 0.49800 0.40587 0.03528 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]]
 
-****** Vivado v2018.3 (64-bit)
+count 0, last 0
+count 1, last 0
+count 2, last 0
+count 3, last 0
+count 4, last 0
+count 5, last 0
+count 6, last 0
+count 7, last 0
+count 8, last 0
+count 9, last 0
+count 10, last 0
+count 11, last 0
+count 12, last 0
+count 13, last 0
+count 14, last 0
+count 15, last 0
+count 16, last 0
+count 17, last 0
+count 18, last 0
+count 19, last 0
+count 20, last 0
+count 21, last 0
+count 22, last 0
+count 23, last 0
+count 24, last 0
+count 25, last 0
+count 26, last 0
+count 27, last 0
+count 28, last 0
+count 29, last 0
+count 30, last 0
+count 31, last 0
+count 32, last 0
+count 33, last 0
+count 34, last 0
+count 35, last 0
+count 36, last 0
+count 37, last 0
+count 38, last 0
+count 39, last 0
+count 40, last 0
+count 41, last 0
+count 42, last 0
+count 43, last 0
+count 44, last 0
+count 45, last 0
+count 46, last 0
+count 47, last 0
+count 48, last 0
+count 49, last 0
+count 50, last 0
+count 51, last 0
+count 52, last 0
+count 53, last 0
+count 54, last 0
+count 55, last 0
+count 56, last 0
+count 57, last 0
+count 58, last 0
+count 59, last 0
+count 60, last 0
+count 61, last 0
+count 62, last 0
+count 63, last 0
+count 64, last 0
+count 65, last 0
+count 66, last 0
+count 67, last 0
+count 68, last 0
+count 69, last 0
+count 70, last 0
+count 71, last 0
+count 72, last 0
+count 73, last 0
+count 74, last 0
+count 75, last 0
+count 76, last 0
+count 77, last 0
+count 78, last 0
+count 79, last 0
+count 80, last 0
+count 81, last 0
+count 82, last 0
+count 83, last 0
+count 84, last 0
+count 85, last 0
+count 86, last 0
+count 87, last 0
+count 88, last 0
+count 89, last 0
+count 90, last 0
+count 91, last 0
+count 92, last 0
+count 93, last 0
+count 94, last 0
+count 95, last 0
+count 96, last 0
+count 97, last 0
+count 98, last 0
+count 99, last 0
+count 100, last 0
+count 101, last 0
+count 102, last 0
+count 103, last 0
+count 104, last 0
+count 105, last 0
+count 106, last 0
+count 107, last 0
+count 108, last 0
+count 109, last 0
+count 110, last 0
+count 111, last 0
+count 112, last 0
+count 113, last 0
+count 114, last 0
+count 115, last 0
+count 116, last 0
+count 117, last 0
+count 118, last 0
+count 119, last 0
+count 120, last 0
+count 121, last 0
+count 122, last 0
+count 123, last 0
+count 124, last 0
+count 125, last 0
+count 126, last 0
+count 127, last 0
+count 128, last 0
+count 129, last 0
+count 130, last 0
+count 131, last 0
+count 132, last 0
+count 133, last 0
+count 134, last 0
+count 135, last 0
+count 136, last 0
+count 137, last 0
+count 138, last 0
+count 139, last 0
+count 140, last 0
+count 141, last 0
+count 142, last 0
+count 143, last 0
+count 144, last 0
+count 145, last 0
+count 146, last 0
+count 147, last 0
+count 148, last 0
+count 149, last 0
+count 150, last 0
+count 151, last 0
+count 152, last 0
+count 153, last 0
+count 154, last 0
+count 155, last 0
+count 156, last 0
+count 157, last 0
+count 158, last 0
+count 159, last 0
+count 160, last 0
+count 161, last 0
+count 162, last 0
+count 163, last 0
+count 164, last 0
+count 165, last 0
+count 166, last 0
+count 167, last 0
+count 168, last 0
+count 169, last 0
+count 170, last 0
+count 171, last 0
+count 172, last 0
+count 173, last 0
+count 174, last 0
+count 175, last 0
+count 176, last 0
+count 177, last 0
+count 178, last 0
+count 179, last 0
+count 180, last 0
+count 181, last 0
+count 182, last 0
+count 183, last 0
+count 184, last 0
+count 185, last 0
+count 186, last 0
+count 187, last 0
+count 188, last 0
+count 189, last 0
+count 190, last 0
+count 191, last 0
+count 192, last 0
+count 193, last 0
+count 194, last 0
+count 195, last 0
+count 196, last 0
+count 197, last 0
+count 198, last 0
+count 199, last 0
+count 200, last 0
+count 201, last 0
+count 202, last 0
+count 203, last 0
+count 204, last 0
+count 205, last 0
+count 206, last 0
+count 207, last 0
+count 208, last 0
+count 209, last 0
+count 210, last 0
+count 211, last 0
+count 212, last 0
+count 213, last 0
+count 214, last 0
+count 215, last 0
+count 216, last 0
+count 217, last 0
+count 218, last 0
+count 219, last 0
+count 220, last 0
+count 221, last 0
+count 222, last 0
+count 223, last 0
+count 224, last 0
+count 225, last 0
+count 226, last 0
+count 227, last 0
+count 228, last 0
+count 229, last 0
+count 230, last 0
+count 231, last 0
+count 232, last 0
+count 233, last 0
+count 234, last 0
+count 235, last 0
+count 236, last 0
+count 237, last 0
+count 238, last 0
+count 239, last 0
+count 240, last 0
+count 241, last 0
+count 242, last 0
+count 243, last 0
+count 244, last 0
+count 245, last 0
+count 246, last 0
+count 247, last 0
+count 248, last 0
+count 249, last 0
+count 250, last 0
+count 251, last 0
+count 252, last 0
+count 253, last 0
+count 254, last 0
+count 255, last 0
+count 256, last 0
+count 257, last 0
+count 258, last 0
+count 259, last 0
+count 260, last 0
+count 261, last 0
+count 262, last 0
+count 263, last 0
+count 264, last 0
+count 265, last 0
+count 266, last 0
+count 267, last 0
+count 268, last 0
+count 269, last 0
+count 270, last 0
+count 271, last 0
+count 272, last 0
+count 273, last 0
+count 274, last 0
+count 275, last 0
+count 276, last 0
+count 277, last 0
+count 278, last 0
+count 279, last 0
+count 280, last 0
+count 281, last 0
+count 282, last 0
+count 283, last 0
+count 284, last 0
+count 285, last 0
+count 286, last 0
+count 287, last 0
+count 288, last 0
+count 289, last 0
+count 290, last 0
+count 291, last 0
+count 292, last 0
+count 293, last 0
+count 294, last 0
+count 295, last 0
+count 296, last 0
+count 297, last 0
+count 298, last 0
+count 299, last 0
+count 300, last 0
+count 301, last 0
+count 302, last 0
+count 303, last 0
+count 304, last 0
+count 305, last 0
+count 306, last 0
+count 307, last 0
+count 308, last 0
+count 309, last 0
+count 310, last 0
+count 311, last 0
+count 312, last 0
+count 313, last 0
+count 314, last 0
+count 315, last 0
+count 316, last 0
+count 317, last 0
+count 318, last 0
+count 319, last 0
+count 320, last 0
+count 321, last 0
+count 322, last 0
+count 323, last 0
+count 324, last 0
+count 325, last 0
+count 326, last 0
+count 327, last 0
+count 328, last 0
+count 329, last 0
+count 330, last 0
+count 331, last 0
+count 332, last 0
+count 333, last 0
+count 334, last 0
+count 335, last 0
+count 336, last 0
+count 337, last 0
+count 338, last 0
+count 339, last 0
+count 340, last 0
+count 341, last 0
+count 342, last 0
+count 343, last 0
+count 344, last 0
+count 345, last 0
+count 346, last 0
+count 347, last 0
+count 348, last 0
+count 349, last 0
+count 350, last 0
+count 351, last 0
+count 352, last 0
+count 353, last 0
+count 354, last 0
+count 355, last 0
+count 356, last 0
+count 357, last 0
+count 358, last 0
+count 359, last 0
+count 360, last 0
+count 361, last 0
+count 362, last 0
+count 363, last 0
+count 364, last 0
+count 365, last 0
+count 366, last 0
+count 367, last 0
+count 368, last 0
+count 369, last 0
+count 370, last 0
+count 371, last 0
+count 372, last 0
+count 373, last 0
+count 374, last 0
+count 375, last 0
+count 376, last 0
+count 377, last 0
+count 378, last 0
+count 379, last 0
+count 380, last 0
+count 381, last 0
+count 382, last 0
+count 383, last 0
+count 384, last 0
+count 385, last 0
+count 386, last 0
+count 387, last 0
+count 388, last 0
+count 389, last 0
+count 390, last 0
+count 391, last 0
+count 392, last 0
+count 393, last 0
+count 394, last 0
+count 395, last 0
+count 396, last 0
+count 397, last 0
+count 398, last 0
+count 399, last 0
+count 400, last 0
+count 401, last 0
+count 402, last 0
+count 403, last 0
+count 404, last 0
+count 405, last 0
+count 406, last 0
+count 407, last 0
+count 408, last 0
+count 409, last 0
+count 410, last 0
+count 411, last 0
+count 412, last 0
+count 413, last 0
+count 414, last 0
+count 415, last 0
+count 416, last 0
+count 417, last 0
+count 418, last 0
+count 419, last 0
+count 420, last 0
+count 421, last 0
+count 422, last 0
+count 423, last 0
+count 424, last 0
+count 425, last 0
+count 426, last 0
+count 427, last 0
+count 428, last 0
+count 429, last 0
+count 430, last 0
+count 431, last 0
+count 432, last 0
+count 433, last 0
+count 434, last 0
+count 435, last 0
+count 436, last 0
+count 437, last 0
+count 438, last 0
+count 439, last 0
+count 440, last 0
+count 441, last 0
+count 442, last 0
+count 443, last 0
+count 444, last 0
+count 445, last 0
+count 446, last 0
+count 447, last 0
+count 448, last 0
+count 449, last 0
+count 450, last 0
+count 451, last 0
+count 452, last 0
+count 453, last 0
+count 454, last 0
+count 455, last 0
+count 456, last 0
+count 457, last 0
+count 458, last 0
+count 459, last 0
+count 460, last 0
+count 461, last 0
+count 462, last 0
+count 463, last 0
+count 464, last 0
+count 465, last 0
+count 466, last 0
+count 467, last 0
+count 468, last 0
+count 469, last 0
+count 470, last 0
+count 471, last 0
+count 472, last 0
+count 473, last 0
+count 474, last 0
+count 475, last 0
+count 476, last 0
+count 477, last 0
+count 478, last 0
+count 479, last 0
+count 480, last 0
+count 481, last 0
+count 482, last 0
+count 483, last 0
+count 484, last 0
+count 485, last 0
+count 486, last 0
+count 487, last 0
+count 488, last 0
+count 489, last 0
+count 490, last 0
+count 491, last 0
+count 492, last 0
+count 493, last 0
+count 494, last 0
+count 495, last 0
+count 496, last 0
+count 497, last 0
+count 498, last 0
+count 499, last 0
+count 500, last 0
+count 501, last 0
+count 502, last 0
+count 503, last 0
+count 504, last 0
+count 505, last 0
+count 506, last 0
+count 507, last 0
+count 508, last 0
+count 509, last 0
+count 510, last 0
+count 511, last 0
+count 512, last 0
+count 513, last 0
+count 514, last 0
+count 515, last 0
+count 516, last 0
+count 517, last 0
+count 518, last 0
+count 519, last 0
+count 520, last 0
+count 521, last 0
+count 522, last 0
+count 523, last 0
+count 524, last 0
+count 525, last 0
+count 526, last 0
+count 527, last 0
+count 528, last 0
+count 529, last 0
+count 530, last 0
+count 531, last 0
+count 532, last 0
+count 533, last 0
+count 534, last 0
+count 535, last 0
+count 536, last 0
+count 537, last 0
+count 538, last 0
+count 539, last 0
+count 540, last 0
+count 541, last 0
+count 542, last 0
+count 543, last 0
+count 544, last 0
+count 545, last 0
+count 546, last 0
+count 547, last 0
+count 548, last 0
+count 549, last 0
+count 550, last 0
+count 551, last 0
+count 552, last 0
+count 553, last 0
+count 554, last 0
+count 555, last 0
+count 556, last 0
+count 557, last 0
+count 558, last 0
+count 559, last 0
+count 560, last 0
+count 561, last 0
+count 562, last 0
+count 563, last 0
+count 564, last 0
+count 565, last 0
+count 566, last 0
+count 567, last 0
+count 568, last 0
+count 569, last 0
+count 570, last 0
+count 571, last 0
+count 572, last 0
+count 573, last 0
+count 574, last 0
+count 575, last 0
+count 576, last 0
+count 577, last 0
+count 578, last 0
+count 579, last 0
+count 580, last 0
+count 581, last 0
+count 582, last 0
+count 583, last 0
+count 584, last 0
+count 585, last 0
+count 586, last 0
+count 587, last 0
+count 588, last 0
+count 589, last 0
+count 590, last 0
+count 591, last 0
+count 592, last 0
+count 593, last 0
+count 594, last 0
+count 595, last 0
+count 596, last 0
+count 597, last 0
+count 598, last 0
+count 599, last 0
+count 600, last 0
+count 601, last 0
+count 602, last 0
+count 603, last 0
+count 604, last 0
+count 605, last 0
+count 606, last 0
+count 607, last 0
+count 608, last 0
+count 609, last 0
+count 610, last 0
+count 611, last 0
+count 612, last 0
+count 613, last 0
+count 614, last 0
+count 615, last 0
+count 616, last 0
+count 617, last 0
+count 618, last 0
+count 619, last 0
+count 620, last 0
+count 621, last 0
+count 622, last 0
+count 623, last 0
+count 624, last 0
+count 625, last 0
+count 626, last 0
+count 627, last 0
+count 628, last 0
+count 629, last 0
+count 630, last 0
+count 631, last 0
+count 632, last 0
+count 633, last 0
+count 634, last 0
+count 635, last 0
+count 636, last 0
+count 637, last 0
+count 638, last 0
+count 639, last 0
+count 640, last 0
+count 641, last 0
+count 642, last 0
+count 643, last 0
+count 644, last 0
+count 645, last 0
+count 646, last 0
+count 647, last 0
+count 648, last 0
+count 649, last 0
+count 650, last 0
+count 651, last 0
+count 652, last 0
+count 653, last 0
+count 654, last 0
+count 655, last 0
+count 656, last 0
+count 657, last 0
+count 658, last 0
+count 659, last 0
+count 660, last 0
+count 661, last 0
+count 662, last 0
+count 663, last 0
+count 664, last 0
+count 665, last 0
+count 666, last 0
+count 667, last 0
+count 668, last 0
+count 669, last 0
+count 670, last 0
+count 671, last 0
+count 672, last 0
+count 673, last 0
+count 674, last 0
+count 675, last 0
+count 676, last 0
+count 677, last 0
+count 678, last 0
+count 679, last 0
+count 680, last 0
+count 681, last 0
+count 682, last 0
+count 683, last 0
+count 684, last 0
+count 685, last 0
+count 686, last 0
+count 687, last 0
+count 688, last 0
+count 689, last 0
+count 690, last 0
+count 691, last 0
+count 692, last 0
+count 693, last 0
+count 694, last 0
+count 695, last 0
+count 696, last 0
+count 697, last 0
+count 698, last 0
+count 699, last 0
+count 700, last 0
+count 701, last 0
+count 702, last 0
+count 703, last 0
+count 704, last 0
+count 705, last 0
+count 706, last 0
+count 707, last 0
+count 708, last 0
+count 709, last 0
+count 710, last 0
+count 711, last 0
+count 712, last 0
+count 713, last 0
+count 714, last 0
+count 715, last 0
+count 716, last 0
+count 717, last 0
+count 718, last 0
+count 719, last 0
+count 720, last 0
+count 721, last 0
+count 722, last 0
+count 723, last 0
+count 724, last 0
+count 725, last 0
+count 726, last 0
+count 727, last 0
+count 728, last 0
+count 729, last 0
+count 730, last 0
+count 731, last 0
+count 732, last 0
+count 733, last 0
+count 734, last 0
+count 735, last 0
+count 736, last 0
+count 737, last 0
+count 738, last 0
+count 739, last 0
+count 740, last 0
+count 741, last 0
+count 742, last 0
+count 743, last 0
+count 744, last 0
+count 745, last 0
+count 746, last 0
+count 747, last 0
+count 748, last 0
+count 749, last 0
+count 750, last 0
+count 751, last 0
+count 752, last 0
+count 753, last 0
+count 754, last 0
+count 755, last 0
+count 756, last 0
+count 757, last 0
+count 758, last 0
+count 759, last 0
+count 760, last 0
+count 761, last 0
+count 762, last 0
+count 763, last 0
+count 764, last 0
+count 765, last 0
+count 766, last 0
+count 767, last 0
+count 768, last 0
+count 769, last 0
+count 770, last 0
+count 771, last 0
+count 772, last 0
+count 773, last 0
+count 774, last 0
+count 775, last 0
+count 776, last 0
+count 777, last 0
+count 778, last 0
+count 779, last 0
+count 780, last 0
+count 781, last 0
+count 782, last 0
+count 783, last 1
+
+
+[[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.03568 0.08396 0.06586 0.04260 0.01325 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.03385 0.18897 0.27540 0.25816 0.28300 0.27000 0.23197 0.22373 0.15833 0.14292 0.10779 0.08307 0.05881 0.04184 0.06049 0.09467 0.00418 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.06214 0.21332 0.30808 0.29997 0.34165 0.34758 0.33879 0.33030 0.27372 0.27198 0.23173 0.19611 0.19349 0.20264 0.22462 0.24592 0.12516 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.06363 0.17975 0.32456 0.31645 0.35105 0.37669 0.41682 0.37638 0.34684 0.35066 0.32084 0.32075 0.36924 0.41572 0.41951 0.41609 0.21387 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.04883 0.15967 0.12748 0.14887 0.17911 0.17328 0.12281 0.08783 0.12885 0.19813 0.23811 0.30958 0.38755 0.42830 0.40745 0.13343 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.03558 0.12543 0.21616 0.30805 0.37013 0.32282 0.04279 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.06873 0.16694 0.26572 0.34178 0.28343 0.00281 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.02130 0.15775 0.27833 0.28050 0.14542 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.02860 0.24989 0.37748 0.24735 0.08893 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.03824 0.23762 0.35685 0.34535 0.22275 0.02429 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.12818 0.32185 0.35774 0.31983 0.13910 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.29533 0.41334 0.29176 0.11209 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.02109 0.16608 0.40367 0.46687 0.21540 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.20594 0.31291 0.40965 0.28159 0.04212 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.08356 0.30873 0.39219 0.36717 0.19541 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.04501 0.22880 0.44423 0.41820 0.18461 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.16999 0.36436 0.55651 0.46422 0.10569 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.08188 0.33357 0.47609 0.60234 0.37956 0.04309 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.14725 0.39042 0.48137 0.55058 0.35340 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.09821 0.21494 0.38670 0.35356 0.37815 0.19263 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.09076 0.15824 0.18787 0.11243 0.09867 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]]
+
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "/tools/Xilinx/Vivado/2018.3/data/xsim/ip/xsim_ip.ini".
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_network_top glbl -prj network.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm --initfile /tools/Xilinx/Vivado/2018.3/data/xsim/ip/xsim_ip.ini --lib ieee_proposed=./ieee_proposed -s network -debug wave 
+Multi-threading is on. Using 2 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    LIBRARY_PATH
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/network_Padding2D_0_array.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module network_Padding2D_0_array_ram
+INFO: [VRFC 10-311] analyzing module network_Padding2D_0_array
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/AESL_axi_s_input_data.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_input_data
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/network_Padding2D_3_array.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module network_Padding2D_3_array_ram
+INFO: [VRFC 10-311] analyzing module network_Padding2D_3_array
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/conv2d_fix16_1_Conv2D_0_w_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv2d_fix16_1_Conv2D_0_w_0_rom
+INFO: [VRFC 10-311] analyzing module conv2d_fix16_1_Conv2D_0_w_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/network_mul_mul_5ns_16ns_21_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module network_mul_mul_5ns_16ns_21_1_1_DSP48_0
+INFO: [VRFC 10-311] analyzing module network_mul_mul_5ns_16ns_21_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/network_MaxPooling2D_1_array.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module network_MaxPooling2D_1_array_ram
+INFO: [VRFC 10-311] analyzing module network_MaxPooling2D_1_array
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/up_sampling2d_fix16_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module up_sampling2d_fix16_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/network.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module network
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/network_mul_mul_16s_14s_30_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module network_mul_mul_16s_14s_30_1_1_DSP48_1
+INFO: [VRFC 10-311] analyzing module network_mul_mul_16s_14s_30_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/padding2d_fix16_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module padding2d_fix16_4
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/conv2d_fix16_2_Conv2D_1_b.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv2d_fix16_2_Conv2D_1_b_rom
+INFO: [VRFC 10-311] analyzing module conv2d_fix16_2_Conv2D_1_b
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/conv2d_fix16_228_Conv2D_3_b.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv2d_fix16_228_Conv2D_3_b_rom
+INFO: [VRFC 10-311] analyzing module conv2d_fix16_228_Conv2D_3_b
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/conv2d_fix16_Conv2D_4_w_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv2d_fix16_Conv2D_4_w_0_rom
+INFO: [VRFC 10-311] analyzing module conv2d_fix16_Conv2D_4_w_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/padding2d_fix16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module padding2d_fix16
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/padding2d_fix16_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module padding2d_fix16_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/max_pooling2d_fix16_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module max_pooling2d_fix16_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/network_Padding2D_2_array.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module network_Padding2D_2_array_ram
+INFO: [VRFC 10-311] analyzing module network_Padding2D_2_array
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/conv2d_fix16_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv2d_fix16_3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/network_Padding2D_1_array.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module network_Padding2D_1_array_ram
+INFO: [VRFC 10-311] analyzing module network_Padding2D_1_array
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/conv2d_fix16_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv2d_fix16_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/conv2d_fix16_1_Conv2D_0_b.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv2d_fix16_1_Conv2D_0_b_rom
+INFO: [VRFC 10-311] analyzing module conv2d_fix16_1_Conv2D_0_b
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/network_Conv2D_1_array.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module network_Conv2D_1_array_ram
+INFO: [VRFC 10-311] analyzing module network_Conv2D_1_array
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/network_out_0_keep_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module network_out_0_keep_V_ram
+INFO: [VRFC 10-311] analyzing module network_out_0_keep_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/network_mul_mul_13s_16s_29_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module network_mul_mul_13s_16s_29_1_1_DSP48_3
+INFO: [VRFC 10-311] analyzing module network_mul_mul_13s_16s_29_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/network_mul_mul_16ns_16ns_32_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module network_mul_mul_16ns_16ns_32_1_1_DSP48_2
+INFO: [VRFC 10-311] analyzing module network_mul_mul_16ns_16ns_32_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/AESL_axi_slave_AXILiteS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_slave_AXILiteS
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/network_MaxPooling2D_0_array.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module network_MaxPooling2D_0_array_ram
+INFO: [VRFC 10-311] analyzing module network_MaxPooling2D_0_array
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/conv2d_fix16_228.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv2d_fix16_228
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/padding2d_fix16_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module padding2d_fix16_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/network_input_0_array_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module network_input_0_array_0_ram
+INFO: [VRFC 10-311] analyzing module network_input_0_array_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/padding2d_fix16_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module padding2d_fix16_3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/conv2d_fix16_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv2d_fix16_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/network_Conv2D_0_array.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module network_Conv2D_0_array_ram
+INFO: [VRFC 10-311] analyzing module network_Conv2D_0_array
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/network_Padding2D_4_array.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module network_Padding2D_4_array_ram
+INFO: [VRFC 10-311] analyzing module network_Padding2D_4_array
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/max_pooling2d_fix16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module max_pooling2d_fix16
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/network_AXILiteS_s_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module network_AXILiteS_s_axi
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/AESL_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/conv2d_fix16_3_Conv2D_2_w.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv2d_fix16_3_Conv2D_2_w_rom
+INFO: [VRFC 10-311] analyzing module conv2d_fix16_3_Conv2D_2_w
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/conv2d_fix16_2_Conv2D_1_w.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv2d_fix16_2_Conv2D_1_w_rom
+INFO: [VRFC 10-311] analyzing module conv2d_fix16_2_Conv2D_1_w
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/conv2d_fix16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv2d_fix16
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/conv2d_fix16_228_Conv2D_3_w.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv2d_fix16_228_Conv2D_3_w_rom
+INFO: [VRFC 10-311] analyzing module conv2d_fix16_228_Conv2D_3_w
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/AESL_axi_s_output_data.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_output_data
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/network_UpSampling2D_0_array.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module network_UpSampling2D_0_array_ram
+INFO: [VRFC 10-311] analyzing module network_UpSampling2D_0_array
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/network_out_0_id_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module network_out_0_id_V_ram
+INFO: [VRFC 10-311] analyzing module network_out_0_id_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/up_sampling2d_fix16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module up_sampling2d_fix16
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/network_UpSampling2D_1_array.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module network_UpSampling2D_1_array_ram
+INFO: [VRFC 10-311] analyzing module network_UpSampling2D_1_array
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/network_Conv2D_4_array.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module network_Conv2D_4_array_ram
+INFO: [VRFC 10-311] analyzing module network_Conv2D_4_array
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/network.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_network_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/conv2d_fix16_3_Conv2D_2_b.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv2d_fix16_3_Conv2D_2_b_rom
+INFO: [VRFC 10-311] analyzing module conv2d_fix16_3_Conv2D_2_b
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.network_Padding2D_0_array_ram
+Compiling module xil_defaultlib.network_Padding2D_0_array(DataWi...
+Compiling module xil_defaultlib.network_Conv2D_0_array_ram
+Compiling module xil_defaultlib.network_Conv2D_0_array(DataWidth...
+Compiling module xil_defaultlib.network_MaxPooling2D_0_array_ram
+Compiling module xil_defaultlib.network_MaxPooling2D_0_array(Dat...
+Compiling module xil_defaultlib.network_Padding2D_1_array_ram
+Compiling module xil_defaultlib.network_Padding2D_1_array(DataWi...
+Compiling module xil_defaultlib.network_Conv2D_1_array_ram
+Compiling module xil_defaultlib.network_Conv2D_1_array(DataWidth...
+Compiling module xil_defaultlib.network_MaxPooling2D_1_array_ram
+Compiling module xil_defaultlib.network_MaxPooling2D_1_array(Dat...
+Compiling module xil_defaultlib.network_Padding2D_2_array_ram
+Compiling module xil_defaultlib.network_Padding2D_2_array(DataWi...
+Compiling module xil_defaultlib.network_UpSampling2D_0_array_ram
+Compiling module xil_defaultlib.network_UpSampling2D_0_array(Dat...
+Compiling module xil_defaultlib.network_Padding2D_3_array_ram
+Compiling module xil_defaultlib.network_Padding2D_3_array(DataWi...
+Compiling module xil_defaultlib.network_UpSampling2D_1_array_ram
+Compiling module xil_defaultlib.network_UpSampling2D_1_array(Dat...
+Compiling module xil_defaultlib.network_Padding2D_4_array_ram
+Compiling module xil_defaultlib.network_Padding2D_4_array(DataWi...
+Compiling module xil_defaultlib.network_Conv2D_4_array_ram
+Compiling module xil_defaultlib.network_Conv2D_4_array(DataWidth...
+Compiling module xil_defaultlib.network_AXILiteS_s_axi
+Compiling module xil_defaultlib.network_input_0_array_0_ram
+Compiling module xil_defaultlib.network_input_0_array_0(DataWidt...
+Compiling module xil_defaultlib.network_out_0_keep_V_ram
+Compiling module xil_defaultlib.network_out_0_keep_V(DataWidth=2...
+Compiling module xil_defaultlib.network_out_0_id_V_ram
+Compiling module xil_defaultlib.network_out_0_id_V(DataWidth=1,A...
+Compiling module xil_defaultlib.network_mul_mul_16ns_16ns_32_1_1...
+Compiling module xil_defaultlib.network_mul_mul_16ns_16ns_32_1_1...
+Compiling module xil_defaultlib.padding2d_fix16
+Compiling module xil_defaultlib.padding2d_fix16_3
+Compiling module xil_defaultlib.padding2d_fix16_1
+Compiling module xil_defaultlib.padding2d_fix16_2
+Compiling module xil_defaultlib.conv2d_fix16_3_Conv2D_2_b_rom
+Compiling module xil_defaultlib.conv2d_fix16_3_Conv2D_2_b(DataWi...
+Compiling module xil_defaultlib.conv2d_fix16_3_Conv2D_2_w_rom
+Compiling module xil_defaultlib.conv2d_fix16_3_Conv2D_2_w(DataWi...
+Compiling module xil_defaultlib.network_mul_mul_16s_14s_30_1_1_D...
+Compiling module xil_defaultlib.network_mul_mul_16s_14s_30_1_1(I...
+Compiling module xil_defaultlib.conv2d_fix16_3
+Compiling module xil_defaultlib.conv2d_fix16_1_Conv2D_0_b_rom
+Compiling module xil_defaultlib.conv2d_fix16_1_Conv2D_0_b(DataWi...
+Compiling module xil_defaultlib.conv2d_fix16_1_Conv2D_0_w_0_rom
+Compiling module xil_defaultlib.conv2d_fix16_1_Conv2D_0_w_0(Data...
+Compiling module xil_defaultlib.conv2d_fix16_1
+Compiling module xil_defaultlib.conv2d_fix16_2_Conv2D_1_b_rom
+Compiling module xil_defaultlib.conv2d_fix16_2_Conv2D_1_b(DataWi...
+Compiling module xil_defaultlib.conv2d_fix16_2_Conv2D_1_w_rom
+Compiling module xil_defaultlib.conv2d_fix16_2_Conv2D_1_w(DataWi...
+Compiling module xil_defaultlib.network_mul_mul_13s_16s_29_1_1_D...
+Compiling module xil_defaultlib.network_mul_mul_13s_16s_29_1_1(I...
+Compiling module xil_defaultlib.conv2d_fix16_2
+Compiling module xil_defaultlib.conv2d_fix16_228_Conv2D_3_b_rom
+Compiling module xil_defaultlib.conv2d_fix16_228_Conv2D_3_b(Data...
+Compiling module xil_defaultlib.conv2d_fix16_228_Conv2D_3_w_rom
+Compiling module xil_defaultlib.conv2d_fix16_228_Conv2D_3_w(Data...
+Compiling module xil_defaultlib.conv2d_fix16_228
+Compiling module xil_defaultlib.conv2d_fix16_Conv2D_4_w_0_rom
+Compiling module xil_defaultlib.conv2d_fix16_Conv2D_4_w_0(DataWi...
+Compiling module xil_defaultlib.conv2d_fix16
+Compiling module xil_defaultlib.network_mul_mul_5ns_16ns_21_1_1_...
+Compiling module xil_defaultlib.network_mul_mul_5ns_16ns_21_1_1(...
+Compiling module xil_defaultlib.padding2d_fix16_4
+Compiling module xil_defaultlib.up_sampling2d_fix16
+Compiling module xil_defaultlib.up_sampling2d_fix16_1
+Compiling module xil_defaultlib.max_pooling2d_fix16_1
+Compiling module xil_defaultlib.max_pooling2d_fix16
+Compiling module xil_defaultlib.network
+Compiling module xil_defaultlib.fifo(DEPTH=784,WIDTH=16)
+Compiling module xil_defaultlib.fifo(DEPTH=784,WIDTH=2)
+Compiling module xil_defaultlib.fifo(DEPTH=784,WIDTH=1)
+Compiling module xil_defaultlib.AESL_axi_s_input_data
+Compiling module xil_defaultlib.AESL_axi_s_output_data
+Compiling module xil_defaultlib.AESL_axi_slave_AXILiteS
+Compiling module xil_defaultlib.apatb_network_top
+Compiling module work.glbl
+Built simulation snapshot network
+
+****** Webtalk v2018.3 (64-bit)
   **** SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
   **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 
-source run_ippack.tcl -notrace
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2018.3/data/ip'.
-INFO: [Common 17-206] Exiting Vivado at Sun Oct 27 13:35:58 2019...
+source /home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/xsim.dir/network/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] '/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/xsim.dir/network/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Sun Oct 27 20:27:27 2019. For additional details about this file, please refer to the WebTalk help file at /tools/Xilinx/Vivado/2018.3/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Sun Oct 27 20:27:27 2019...
+
+****** xsim v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/network/xsim_script.tcl
+# xsim {network} -autoloadwcfg -tclbatch {network.tcl}
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source network.tcl
+## log_wave -r /
+WARNING: [Simtcl 6-197] One or more HDL objects could not be logged because of object type or size limitations.  To see details please rerun the command with -verbose (-v).
+## set designtopgroup [add_wave_group "Design Top Signals"]
+## set coutputgroup [add_wave_group "C Outputs" -into $designtopgroup]
+## set output_data_group [add_wave_group output_data(axis) -into $coutputgroup]
+## add_wave /apatb_network_top/AESL_inst_network/output_data_TDEST -into $output_data_group -radix hex
+## add_wave /apatb_network_top/AESL_inst_network/output_data_TID -into $output_data_group -radix hex
+## add_wave /apatb_network_top/AESL_inst_network/output_data_TLAST -into $output_data_group -color #ffff00 -radix hex
+## add_wave /apatb_network_top/AESL_inst_network/output_data_TUSER -into $output_data_group -radix hex
+## add_wave /apatb_network_top/AESL_inst_network/output_data_TSTRB -into $output_data_group -radix hex
+## add_wave /apatb_network_top/AESL_inst_network/output_data_TKEEP -into $output_data_group -radix hex
+## add_wave /apatb_network_top/AESL_inst_network/output_data_TREADY -into $output_data_group -color #ffff00 -radix hex
+## add_wave /apatb_network_top/AESL_inst_network/output_data_TVALID -into $output_data_group -color #ffff00 -radix hex
+## add_wave /apatb_network_top/AESL_inst_network/output_data_TDATA -into $output_data_group -radix hex
+## set return_group [add_wave_group return(axi_slave) -into $coutputgroup]
+## add_wave /apatb_network_top/AESL_inst_network/interrupt -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_network_top/AESL_inst_network/s_axi_AXILiteS_BRESP -into $return_group -radix hex
+## add_wave /apatb_network_top/AESL_inst_network/s_axi_AXILiteS_BREADY -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_network_top/AESL_inst_network/s_axi_AXILiteS_BVALID -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_network_top/AESL_inst_network/s_axi_AXILiteS_RRESP -into $return_group -radix hex
+## add_wave /apatb_network_top/AESL_inst_network/s_axi_AXILiteS_RDATA -into $return_group -radix hex
+## add_wave /apatb_network_top/AESL_inst_network/s_axi_AXILiteS_RREADY -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_network_top/AESL_inst_network/s_axi_AXILiteS_RVALID -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_network_top/AESL_inst_network/s_axi_AXILiteS_ARREADY -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_network_top/AESL_inst_network/s_axi_AXILiteS_ARVALID -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_network_top/AESL_inst_network/s_axi_AXILiteS_ARADDR -into $return_group -radix hex
+## add_wave /apatb_network_top/AESL_inst_network/s_axi_AXILiteS_WSTRB -into $return_group -radix hex
+## add_wave /apatb_network_top/AESL_inst_network/s_axi_AXILiteS_WDATA -into $return_group -radix hex
+## add_wave /apatb_network_top/AESL_inst_network/s_axi_AXILiteS_WREADY -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_network_top/AESL_inst_network/s_axi_AXILiteS_WVALID -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_network_top/AESL_inst_network/s_axi_AXILiteS_AWREADY -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_network_top/AESL_inst_network/s_axi_AXILiteS_AWVALID -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_network_top/AESL_inst_network/s_axi_AXILiteS_AWADDR -into $return_group -radix hex
+## set cinputgroup [add_wave_group "C Inputs" -into $designtopgroup]
+## set input_data_group [add_wave_group input_data(axis) -into $cinputgroup]
+## add_wave /apatb_network_top/AESL_inst_network/input_data_TDEST -into $input_data_group -radix hex
+## add_wave /apatb_network_top/AESL_inst_network/input_data_TID -into $input_data_group -radix hex
+## add_wave /apatb_network_top/AESL_inst_network/input_data_TLAST -into $input_data_group -color #ffff00 -radix hex
+## add_wave /apatb_network_top/AESL_inst_network/input_data_TUSER -into $input_data_group -radix hex
+## add_wave /apatb_network_top/AESL_inst_network/input_data_TSTRB -into $input_data_group -radix hex
+## add_wave /apatb_network_top/AESL_inst_network/input_data_TKEEP -into $input_data_group -radix hex
+## add_wave /apatb_network_top/AESL_inst_network/input_data_TREADY -into $input_data_group -color #ffff00 -radix hex
+## add_wave /apatb_network_top/AESL_inst_network/input_data_TVALID -into $input_data_group -color #ffff00 -radix hex
+## add_wave /apatb_network_top/AESL_inst_network/input_data_TDATA -into $input_data_group -radix hex
+## set blocksiggroup [add_wave_group "Block-level IO Handshake(internal)" -into $designtopgroup]
+## add_wave /apatb_network_top/AESL_inst_network/ap_done -into $blocksiggroup
+## add_wave /apatb_network_top/AESL_inst_network/ap_idle -into $blocksiggroup
+## add_wave /apatb_network_top/AESL_inst_network/ap_ready -into $blocksiggroup
+## add_wave /apatb_network_top/AESL_inst_network/ap_start -into $blocksiggroup
+## set resetgroup [add_wave_group "Reset" -into $designtopgroup]
+## add_wave /apatb_network_top/AESL_inst_network/ap_rst_n -into $resetgroup
+## set clockgroup [add_wave_group "Clock" -into $designtopgroup]
+## add_wave /apatb_network_top/AESL_inst_network/ap_clk -into $clockgroup
+## set testbenchgroup [add_wave_group "Test Bench Signals"]
+## set tbinternalsiggroup [add_wave_group "Internal Signals" -into $testbenchgroup]
+## set tb_simstatus_group [add_wave_group "Simulation Status" -into $tbinternalsiggroup]
+## set tb_portdepth_group [add_wave_group "Port Depth" -into $tbinternalsiggroup]
+## add_wave /apatb_network_top/AUTOTB_TRANSACTION_NUM -into $tb_simstatus_group -radix hex
+## add_wave /apatb_network_top/ready_cnt -into $tb_simstatus_group -radix hex
+## add_wave /apatb_network_top/done_cnt -into $tb_simstatus_group -radix hex
+## add_wave /apatb_network_top/LENGTH_input_data_V_data_V -into $tb_portdepth_group -radix hex
+## add_wave /apatb_network_top/LENGTH_input_data_V_keep_V -into $tb_portdepth_group -radix hex
+## add_wave /apatb_network_top/LENGTH_input_data_V_strb_V -into $tb_portdepth_group -radix hex
+## add_wave /apatb_network_top/LENGTH_input_data_V_user_V -into $tb_portdepth_group -radix hex
+## add_wave /apatb_network_top/LENGTH_input_data_V_last_V -into $tb_portdepth_group -radix hex
+## add_wave /apatb_network_top/LENGTH_input_data_V_id_V -into $tb_portdepth_group -radix hex
+## add_wave /apatb_network_top/LENGTH_input_data_V_dest_V -into $tb_portdepth_group -radix hex
+## add_wave /apatb_network_top/LENGTH_output_data_V_data_V -into $tb_portdepth_group -radix hex
+## add_wave /apatb_network_top/LENGTH_output_data_V_keep_V -into $tb_portdepth_group -radix hex
+## add_wave /apatb_network_top/LENGTH_output_data_V_strb_V -into $tb_portdepth_group -radix hex
+## add_wave /apatb_network_top/LENGTH_output_data_V_user_V -into $tb_portdepth_group -radix hex
+## add_wave /apatb_network_top/LENGTH_output_data_V_last_V -into $tb_portdepth_group -radix hex
+## add_wave /apatb_network_top/LENGTH_output_data_V_id_V -into $tb_portdepth_group -radix hex
+## add_wave /apatb_network_top/LENGTH_output_data_V_dest_V -into $tb_portdepth_group -radix hex
+## set tbcoutputgroup [add_wave_group "C Outputs" -into $testbenchgroup]
+## set tb_output_data_group [add_wave_group output_data(axis) -into $tbcoutputgroup]
+## add_wave /apatb_network_top/output_data_TDEST -into $tb_output_data_group -radix hex
+## add_wave /apatb_network_top/output_data_TID -into $tb_output_data_group -radix hex
+## add_wave /apatb_network_top/output_data_TLAST -into $tb_output_data_group -color #ffff00 -radix hex
+## add_wave /apatb_network_top/output_data_TUSER -into $tb_output_data_group -radix hex
+## add_wave /apatb_network_top/output_data_TSTRB -into $tb_output_data_group -radix hex
+## add_wave /apatb_network_top/output_data_TKEEP -into $tb_output_data_group -radix hex
+## add_wave /apatb_network_top/output_data_TREADY -into $tb_output_data_group -color #ffff00 -radix hex
+## add_wave /apatb_network_top/output_data_TVALID -into $tb_output_data_group -color #ffff00 -radix hex
+## add_wave /apatb_network_top/output_data_TDATA -into $tb_output_data_group -radix hex
+## set tb_return_group [add_wave_group return(axi_slave) -into $tbcoutputgroup]
+## add_wave /apatb_network_top/AXILiteS_INTERRUPT -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_network_top/AXILiteS_BRESP -into $tb_return_group -radix hex
+## add_wave /apatb_network_top/AXILiteS_BREADY -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_network_top/AXILiteS_BVALID -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_network_top/AXILiteS_RRESP -into $tb_return_group -radix hex
+## add_wave /apatb_network_top/AXILiteS_RDATA -into $tb_return_group -radix hex
+## add_wave /apatb_network_top/AXILiteS_RREADY -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_network_top/AXILiteS_RVALID -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_network_top/AXILiteS_ARREADY -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_network_top/AXILiteS_ARVALID -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_network_top/AXILiteS_ARADDR -into $tb_return_group -radix hex
+## add_wave /apatb_network_top/AXILiteS_WSTRB -into $tb_return_group -radix hex
+## add_wave /apatb_network_top/AXILiteS_WDATA -into $tb_return_group -radix hex
+## add_wave /apatb_network_top/AXILiteS_WREADY -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_network_top/AXILiteS_WVALID -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_network_top/AXILiteS_AWREADY -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_network_top/AXILiteS_AWVALID -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_network_top/AXILiteS_AWADDR -into $tb_return_group -radix hex
+## set tbcinputgroup [add_wave_group "C Inputs" -into $testbenchgroup]
+## set tb_input_data_group [add_wave_group input_data(axis) -into $tbcinputgroup]
+## add_wave /apatb_network_top/input_data_TDEST -into $tb_input_data_group -radix hex
+## add_wave /apatb_network_top/input_data_TID -into $tb_input_data_group -radix hex
+## add_wave /apatb_network_top/input_data_TLAST -into $tb_input_data_group -color #ffff00 -radix hex
+## add_wave /apatb_network_top/input_data_TUSER -into $tb_input_data_group -radix hex
+## add_wave /apatb_network_top/input_data_TSTRB -into $tb_input_data_group -radix hex
+## add_wave /apatb_network_top/input_data_TKEEP -into $tb_input_data_group -radix hex
+## add_wave /apatb_network_top/input_data_TREADY -into $tb_input_data_group -color #ffff00 -radix hex
+## add_wave /apatb_network_top/input_data_TVALID -into $tb_input_data_group -color #ffff00 -radix hex
+## add_wave /apatb_network_top/input_data_TDATA -into $tb_input_data_group -radix hex
+## save_wave_config network.wcfg
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 1 [n/a] @ "125000"
+// RTL Simulation : 1 / 1 [n/a] @ "10197425000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 10197465 ns : File "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/network.autotb.v" Line 463
+run: Time (s): cpu = 00:00:24 ; elapsed = 00:01:41 . Memory (MB): peak = 1416.066 ; gain = 8.004 ; free physical = 1406 ; free virtual = 6153
+## quit
+INFO: [Common 17-206] Exiting xsim at Sun Oct 27 20:29:17 2019...
+INFO: [COSIM 212-316] Starting C post checking ...
+[[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.16468 0.36271 0.31175 0.29606 0.11762 0.07056 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.43525 0.49800 0.49800 0.49800 0.49800 0.47252 0.38820 0.38820 0.38820 0.38820 0.38820 0.38820 0.38820 0.38820 0.33332 0.10193 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.13135 0.22352 0.14115 0.22352 0.31959 0.44508 0.49800 0.44115 0.49800 0.49800 0.49800 0.49016 0.44899 0.49800 0.49800 0.27448 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.03333 0.12940 0.02744 0.13135 0.13135 0.13135 0.11567 0.04117 0.46272 0.49800 0.20783 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.16272 0.49605 0.40977 0.03528 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.04312 0.45683 0.49998 0.16272 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.25291 0.49800 0.46663 0.08625 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.11567 0.48820 0.49800 0.12156 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.26075 0.49800 0.36665 0.00980 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.01764 0.40193 0.48625 0.11371 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.24705 0.49800 0.35682 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.14704 0.49214 0.47056 0.11176 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.03723 0.43330 0.49800 0.32548 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00586 0.39802 0.49800 0.42940 0.06861 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.07450 0.49800 0.49800 0.15098 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.06076 0.43919 0.49800 0.22547 0.00195 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.26075 0.49800 0.49800 0.10193 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.11960 0.47447 0.49800 0.49800 0.10193 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.23722 0.49800 0.49800 0.42940 0.07840 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.23722 0.49800 0.40587 0.03528 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]]
+
+count 0, last 0
+count 1, last 0
+count 2, last 0
+count 3, last 0
+count 4, last 0
+count 5, last 0
+count 6, last 0
+count 7, last 0
+count 8, last 0
+count 9, last 0
+count 10, last 0
+count 11, last 0
+count 12, last 0
+count 13, last 0
+count 14, last 0
+count 15, last 0
+count 16, last 0
+count 17, last 0
+count 18, last 0
+count 19, last 0
+count 20, last 0
+count 21, last 0
+count 22, last 0
+count 23, last 0
+count 24, last 0
+count 25, last 0
+count 26, last 0
+count 27, last 0
+count 28, last 0
+count 29, last 0
+count 30, last 0
+count 31, last 0
+count 32, last 0
+count 33, last 0
+count 34, last 0
+count 35, last 0
+count 36, last 0
+count 37, last 0
+count 38, last 0
+count 39, last 0
+count 40, last 0
+count 41, last 0
+count 42, last 0
+count 43, last 0
+count 44, last 0
+count 45, last 0
+count 46, last 0
+count 47, last 0
+count 48, last 0
+count 49, last 0
+count 50, last 0
+count 51, last 0
+count 52, last 0
+count 53, last 0
+count 54, last 0
+count 55, last 0
+count 56, last 0
+count 57, last 0
+count 58, last 0
+count 59, last 0
+count 60, last 0
+count 61, last 0
+count 62, last 0
+count 63, last 0
+count 64, last 0
+count 65, last 0
+count 66, last 0
+count 67, last 0
+count 68, last 0
+count 69, last 0
+count 70, last 0
+count 71, last 0
+count 72, last 0
+count 73, last 0
+count 74, last 0
+count 75, last 0
+count 76, last 0
+count 77, last 0
+count 78, last 0
+count 79, last 0
+count 80, last 0
+count 81, last 0
+count 82, last 0
+count 83, last 0
+count 84, last 0
+count 85, last 0
+count 86, last 0
+count 87, last 0
+count 88, last 0
+count 89, last 0
+count 90, last 0
+count 91, last 0
+count 92, last 0
+count 93, last 0
+count 94, last 0
+count 95, last 0
+count 96, last 0
+count 97, last 0
+count 98, last 0
+count 99, last 0
+count 100, last 0
+count 101, last 0
+count 102, last 0
+count 103, last 0
+count 104, last 0
+count 105, last 0
+count 106, last 0
+count 107, last 0
+count 108, last 0
+count 109, last 0
+count 110, last 0
+count 111, last 0
+count 112, last 0
+count 113, last 0
+count 114, last 0
+count 115, last 0
+count 116, last 0
+count 117, last 0
+count 118, last 0
+count 119, last 0
+count 120, last 0
+count 121, last 0
+count 122, last 0
+count 123, last 0
+count 124, last 0
+count 125, last 0
+count 126, last 0
+count 127, last 0
+count 128, last 0
+count 129, last 0
+count 130, last 0
+count 131, last 0
+count 132, last 0
+count 133, last 0
+count 134, last 0
+count 135, last 0
+count 136, last 0
+count 137, last 0
+count 138, last 0
+count 139, last 0
+count 140, last 0
+count 141, last 0
+count 142, last 0
+count 143, last 0
+count 144, last 0
+count 145, last 0
+count 146, last 0
+count 147, last 0
+count 148, last 0
+count 149, last 0
+count 150, last 0
+count 151, last 0
+count 152, last 0
+count 153, last 0
+count 154, last 0
+count 155, last 0
+count 156, last 0
+count 157, last 0
+count 158, last 0
+count 159, last 0
+count 160, last 0
+count 161, last 0
+count 162, last 0
+count 163, last 0
+count 164, last 0
+count 165, last 0
+count 166, last 0
+count 167, last 0
+count 168, last 0
+count 169, last 0
+count 170, last 0
+count 171, last 0
+count 172, last 0
+count 173, last 0
+count 174, last 0
+count 175, last 0
+count 176, last 0
+count 177, last 0
+count 178, last 0
+count 179, last 0
+count 180, last 0
+count 181, last 0
+count 182, last 0
+count 183, last 0
+count 184, last 0
+count 185, last 0
+count 186, last 0
+count 187, last 0
+count 188, last 0
+count 189, last 0
+count 190, last 0
+count 191, last 0
+count 192, last 0
+count 193, last 0
+count 194, last 0
+count 195, last 0
+count 196, last 0
+count 197, last 0
+count 198, last 0
+count 199, last 0
+count 200, last 0
+count 201, last 0
+count 202, last 0
+count 203, last 0
+count 204, last 0
+count 205, last 0
+count 206, last 0
+count 207, last 0
+count 208, last 0
+count 209, last 0
+count 210, last 0
+count 211, last 0
+count 212, last 0
+count 213, last 0
+count 214, last 0
+count 215, last 0
+count 216, last 0
+count 217, last 0
+count 218, last 0
+count 219, last 0
+count 220, last 0
+count 221, last 0
+count 222, last 0
+count 223, last 0
+count 224, last 0
+count 225, last 0
+count 226, last 0
+count 227, last 0
+count 228, last 0
+count 229, last 0
+count 230, last 0
+count 231, last 0
+count 232, last 0
+count 233, last 0
+count 234, last 0
+count 235, last 0
+count 236, last 0
+count 237, last 0
+count 238, last 0
+count 239, last 0
+count 240, last 0
+count 241, last 0
+count 242, last 0
+count 243, last 0
+count 244, last 0
+count 245, last 0
+count 246, last 0
+count 247, last 0
+count 248, last 0
+count 249, last 0
+count 250, last 0
+count 251, last 0
+count 252, last 0
+count 253, last 0
+count 254, last 0
+count 255, last 0
+count 256, last 0
+count 257, last 0
+count 258, last 0
+count 259, last 0
+count 260, last 0
+count 261, last 0
+count 262, last 0
+count 263, last 0
+count 264, last 0
+count 265, last 0
+count 266, last 0
+count 267, last 0
+count 268, last 0
+count 269, last 0
+count 270, last 0
+count 271, last 0
+count 272, last 0
+count 273, last 0
+count 274, last 0
+count 275, last 0
+count 276, last 0
+count 277, last 0
+count 278, last 0
+count 279, last 0
+count 280, last 0
+count 281, last 0
+count 282, last 0
+count 283, last 0
+count 284, last 0
+count 285, last 0
+count 286, last 0
+count 287, last 0
+count 288, last 0
+count 289, last 0
+count 290, last 0
+count 291, last 0
+count 292, last 0
+count 293, last 0
+count 294, last 0
+count 295, last 0
+count 296, last 0
+count 297, last 0
+count 298, last 0
+count 299, last 0
+count 300, last 0
+count 301, last 0
+count 302, last 0
+count 303, last 0
+count 304, last 0
+count 305, last 0
+count 306, last 0
+count 307, last 0
+count 308, last 0
+count 309, last 0
+count 310, last 0
+count 311, last 0
+count 312, last 0
+count 313, last 0
+count 314, last 0
+count 315, last 0
+count 316, last 0
+count 317, last 0
+count 318, last 0
+count 319, last 0
+count 320, last 0
+count 321, last 0
+count 322, last 0
+count 323, last 0
+count 324, last 0
+count 325, last 0
+count 326, last 0
+count 327, last 0
+count 328, last 0
+count 329, last 0
+count 330, last 0
+count 331, last 0
+count 332, last 0
+count 333, last 0
+count 334, last 0
+count 335, last 0
+count 336, last 0
+count 337, last 0
+count 338, last 0
+count 339, last 0
+count 340, last 0
+count 341, last 0
+count 342, last 0
+count 343, last 0
+count 344, last 0
+count 345, last 0
+count 346, last 0
+count 347, last 0
+count 348, last 0
+count 349, last 0
+count 350, last 0
+count 351, last 0
+count 352, last 0
+count 353, last 0
+count 354, last 0
+count 355, last 0
+count 356, last 0
+count 357, last 0
+count 358, last 0
+count 359, last 0
+count 360, last 0
+count 361, last 0
+count 362, last 0
+count 363, last 0
+count 364, last 0
+count 365, last 0
+count 366, last 0
+count 367, last 0
+count 368, last 0
+count 369, last 0
+count 370, last 0
+count 371, last 0
+count 372, last 0
+count 373, last 0
+count 374, last 0
+count 375, last 0
+count 376, last 0
+count 377, last 0
+count 378, last 0
+count 379, last 0
+count 380, last 0
+count 381, last 0
+count 382, last 0
+count 383, last 0
+count 384, last 0
+count 385, last 0
+count 386, last 0
+count 387, last 0
+count 388, last 0
+count 389, last 0
+count 390, last 0
+count 391, last 0
+count 392, last 0
+count 393, last 0
+count 394, last 0
+count 395, last 0
+count 396, last 0
+count 397, last 0
+count 398, last 0
+count 399, last 0
+count 400, last 0
+count 401, last 0
+count 402, last 0
+count 403, last 0
+count 404, last 0
+count 405, last 0
+count 406, last 0
+count 407, last 0
+count 408, last 0
+count 409, last 0
+count 410, last 0
+count 411, last 0
+count 412, last 0
+count 413, last 0
+count 414, last 0
+count 415, last 0
+count 416, last 0
+count 417, last 0
+count 418, last 0
+count 419, last 0
+count 420, last 0
+count 421, last 0
+count 422, last 0
+count 423, last 0
+count 424, last 0
+count 425, last 0
+count 426, last 0
+count 427, last 0
+count 428, last 0
+count 429, last 0
+count 430, last 0
+count 431, last 0
+count 432, last 0
+count 433, last 0
+count 434, last 0
+count 435, last 0
+count 436, last 0
+count 437, last 0
+count 438, last 0
+count 439, last 0
+count 440, last 0
+count 441, last 0
+count 442, last 0
+count 443, last 0
+count 444, last 0
+count 445, last 0
+count 446, last 0
+count 447, last 0
+count 448, last 0
+count 449, last 0
+count 450, last 0
+count 451, last 0
+count 452, last 0
+count 453, last 0
+count 454, last 0
+count 455, last 0
+count 456, last 0
+count 457, last 0
+count 458, last 0
+count 459, last 0
+count 460, last 0
+count 461, last 0
+count 462, last 0
+count 463, last 0
+count 464, last 0
+count 465, last 0
+count 466, last 0
+count 467, last 0
+count 468, last 0
+count 469, last 0
+count 470, last 0
+count 471, last 0
+count 472, last 0
+count 473, last 0
+count 474, last 0
+count 475, last 0
+count 476, last 0
+count 477, last 0
+count 478, last 0
+count 479, last 0
+count 480, last 0
+count 481, last 0
+count 482, last 0
+count 483, last 0
+count 484, last 0
+count 485, last 0
+count 486, last 0
+count 487, last 0
+count 488, last 0
+count 489, last 0
+count 490, last 0
+count 491, last 0
+count 492, last 0
+count 493, last 0
+count 494, last 0
+count 495, last 0
+count 496, last 0
+count 497, last 0
+count 498, last 0
+count 499, last 0
+count 500, last 0
+count 501, last 0
+count 502, last 0
+count 503, last 0
+count 504, last 0
+count 505, last 0
+count 506, last 0
+count 507, last 0
+count 508, last 0
+count 509, last 0
+count 510, last 0
+count 511, last 0
+count 512, last 0
+count 513, last 0
+count 514, last 0
+count 515, last 0
+count 516, last 0
+count 517, last 0
+count 518, last 0
+count 519, last 0
+count 520, last 0
+count 521, last 0
+count 522, last 0
+count 523, last 0
+count 524, last 0
+count 525, last 0
+count 526, last 0
+count 527, last 0
+count 528, last 0
+count 529, last 0
+count 530, last 0
+count 531, last 0
+count 532, last 0
+count 533, last 0
+count 534, last 0
+count 535, last 0
+count 536, last 0
+count 537, last 0
+count 538, last 0
+count 539, last 0
+count 540, last 0
+count 541, last 0
+count 542, last 0
+count 543, last 0
+count 544, last 0
+count 545, last 0
+count 546, last 0
+count 547, last 0
+count 548, last 0
+count 549, last 0
+count 550, last 0
+count 551, last 0
+count 552, last 0
+count 553, last 0
+count 554, last 0
+count 555, last 0
+count 556, last 0
+count 557, last 0
+count 558, last 0
+count 559, last 0
+count 560, last 0
+count 561, last 0
+count 562, last 0
+count 563, last 0
+count 564, last 0
+count 565, last 0
+count 566, last 0
+count 567, last 0
+count 568, last 0
+count 569, last 0
+count 570, last 0
+count 571, last 0
+count 572, last 0
+count 573, last 0
+count 574, last 0
+count 575, last 0
+count 576, last 0
+count 577, last 0
+count 578, last 0
+count 579, last 0
+count 580, last 0
+count 581, last 0
+count 582, last 0
+count 583, last 0
+count 584, last 0
+count 585, last 0
+count 586, last 0
+count 587, last 0
+count 588, last 0
+count 589, last 0
+count 590, last 0
+count 591, last 0
+count 592, last 0
+count 593, last 0
+count 594, last 0
+count 595, last 0
+count 596, last 0
+count 597, last 0
+count 598, last 0
+count 599, last 0
+count 600, last 0
+count 601, last 0
+count 602, last 0
+count 603, last 0
+count 604, last 0
+count 605, last 0
+count 606, last 0
+count 607, last 0
+count 608, last 0
+count 609, last 0
+count 610, last 0
+count 611, last 0
+count 612, last 0
+count 613, last 0
+count 614, last 0
+count 615, last 0
+count 616, last 0
+count 617, last 0
+count 618, last 0
+count 619, last 0
+count 620, last 0
+count 621, last 0
+count 622, last 0
+count 623, last 0
+count 624, last 0
+count 625, last 0
+count 626, last 0
+count 627, last 0
+count 628, last 0
+count 629, last 0
+count 630, last 0
+count 631, last 0
+count 632, last 0
+count 633, last 0
+count 634, last 0
+count 635, last 0
+count 636, last 0
+count 637, last 0
+count 638, last 0
+count 639, last 0
+count 640, last 0
+count 641, last 0
+count 642, last 0
+count 643, last 0
+count 644, last 0
+count 645, last 0
+count 646, last 0
+count 647, last 0
+count 648, last 0
+count 649, last 0
+count 650, last 0
+count 651, last 0
+count 652, last 0
+count 653, last 0
+count 654, last 0
+count 655, last 0
+count 656, last 0
+count 657, last 0
+count 658, last 0
+count 659, last 0
+count 660, last 0
+count 661, last 0
+count 662, last 0
+count 663, last 0
+count 664, last 0
+count 665, last 0
+count 666, last 0
+count 667, last 0
+count 668, last 0
+count 669, last 0
+count 670, last 0
+count 671, last 0
+count 672, last 0
+count 673, last 0
+count 674, last 0
+count 675, last 0
+count 676, last 0
+count 677, last 0
+count 678, last 0
+count 679, last 0
+count 680, last 0
+count 681, last 0
+count 682, last 0
+count 683, last 0
+count 684, last 0
+count 685, last 0
+count 686, last 0
+count 687, last 0
+count 688, last 0
+count 689, last 0
+count 690, last 0
+count 691, last 0
+count 692, last 0
+count 693, last 0
+count 694, last 0
+count 695, last 0
+count 696, last 0
+count 697, last 0
+count 698, last 0
+count 699, last 0
+count 700, last 0
+count 701, last 0
+count 702, last 0
+count 703, last 0
+count 704, last 0
+count 705, last 0
+count 706, last 0
+count 707, last 0
+count 708, last 0
+count 709, last 0
+count 710, last 0
+count 711, last 0
+count 712, last 0
+count 713, last 0
+count 714, last 0
+count 715, last 0
+count 716, last 0
+count 717, last 0
+count 718, last 0
+count 719, last 0
+count 720, last 0
+count 721, last 0
+count 722, last 0
+count 723, last 0
+count 724, last 0
+count 725, last 0
+count 726, last 0
+count 727, last 0
+count 728, last 0
+count 729, last 0
+count 730, last 0
+count 731, last 0
+count 732, last 0
+count 733, last 0
+count 734, last 0
+count 735, last 0
+count 736, last 0
+count 737, last 0
+count 738, last 0
+count 739, last 0
+count 740, last 0
+count 741, last 0
+count 742, last 0
+count 743, last 0
+count 744, last 0
+count 745, last 0
+count 746, last 0
+count 747, last 0
+count 748, last 0
+count 749, last 0
+count 750, last 0
+count 751, last 0
+count 752, last 0
+count 753, last 0
+count 754, last 0
+count 755, last 0
+count 756, last 0
+count 757, last 0
+count 758, last 0
+count 759, last 0
+count 760, last 0
+count 761, last 0
+count 762, last 0
+count 763, last 0
+count 764, last 0
+count 765, last 0
+count 766, last 0
+count 767, last 0
+count 768, last 0
+count 769, last 0
+count 770, last 0
+count 771, last 0
+count 772, last 0
+count 773, last 0
+count 774, last 0
+count 775, last 0
+count 776, last 0
+count 777, last 0
+count 778, last 0
+count 779, last 0
+count 780, last 0
+count 781, last 0
+count 782, last 0
+count 783, last 1
+
+
+[[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.03568 0.08396 0.06586 0.04260 0.01325 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.03385 0.18897 0.27540 0.25816 0.28300 0.27000 0.23197 0.22373 0.15833 0.14292 0.10779 0.08307 0.05881 0.04184 0.06049 0.09467 0.00418 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.06214 0.21332 0.30808 0.29997 0.34165 0.34758 0.33879 0.33030 0.27372 0.27198 0.23173 0.19611 0.19349 0.20264 0.22462 0.24592 0.12516 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.06363 0.17975 0.32456 0.31645 0.35105 0.37669 0.41682 0.37638 0.34684 0.35066 0.32084 0.32075 0.36924 0.41572 0.41951 0.41609 0.21387 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.04883 0.15967 0.12748 0.14887 0.17911 0.17328 0.12281 0.08783 0.12885 0.19813 0.23811 0.30958 0.38755 0.42830 0.40745 0.13343 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.03558 0.12543 0.21616 0.30805 0.37013 0.32282 0.04279 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.06873 0.16694 0.26572 0.34178 0.28343 0.00281 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.02130 0.15775 0.27833 0.28050 0.14542 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.02860 0.24989 0.37748 0.24735 0.08893 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.03824 0.23762 0.35685 0.34535 0.22275 0.02429 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.12818 0.32185 0.35774 0.31983 0.13910 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.29533 0.41334 0.29176 0.11209 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.02109 0.16608 0.40367 0.46687 0.21540 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.20594 0.31291 0.40965 0.28159 0.04212 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.08356 0.30873 0.39219 0.36717 0.19541 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.04501 0.22880 0.44423 0.41820 0.18461 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.16999 0.36436 0.55651 0.46422 0.10569 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.08188 0.33357 0.47609 0.60234 0.37956 0.04309 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.14725 0.39042 0.48137 0.55058 0.35340 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.09821 0.21494 0.38670 0.35356 0.37815 0.19263 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.09076 0.15824 0.18787 0.11243 0.09867 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]]
+
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [COSIM 212-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.

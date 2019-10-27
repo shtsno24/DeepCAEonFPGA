@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'conv2d_fix16_228'" level="0">
-<item name = "Date">Sun Oct 27 13:23:24 2019
+<item name = "Date">Sun Oct 27 20:25:44 2019
 </item>
 <item name = "Version">2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)</item>
 <item name = "Project">HLS</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00, 8.585, 1.25</column>
+<column name="ap_clk">10.00, 8.510, 1.25</column>
 </table>
 </item>
 </section>
@@ -38,9 +38,7 @@
 <column name="- Loop 1">?, ?, ?, -, -, ?, no</column>
 <column name=" + Loop 1.1">?, ?, ?, -, -, ?, no</column>
 <column name="  ++ Loop 1.1.1">?, ?, ?, -, -, ?, no</column>
-<column name="   +++ Loop 1.1.1.1">?, ?, 47, -, -, ?, no</column>
-<column name="    ++++ Loop 1.1.1.1.1">45, 45, 15, -, -, 3, no</column>
-<column name="     +++++ Loop 1.1.1.1.1.1">12, 12, 4, -, -, 3, no</column>
+<column name="   +++ Loop 1.1.1.1">?, ?, 11, -, -, ?, no</column>
 </table>
 </item>
 </section>

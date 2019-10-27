@@ -101,7 +101,7 @@ set ArgLastReadFirstWriteLatency {
 		output_depth {Type I LastRead 0 FirstWrite -1}
 		output_height {Type I LastRead 0 FirstWrite -1}
 		output_width {Type I LastRead 0 FirstWrite -1}
-		Conv2D_2_array {Type I LastRead 4 FirstWrite -1}
+		Conv2D_2_array {Type I LastRead 7 FirstWrite -1}
 		UpSampling2D_0_array {Type O LastRead -1 FirstWrite 5}}}
 
 set hasDtUnsupportedChannel 0

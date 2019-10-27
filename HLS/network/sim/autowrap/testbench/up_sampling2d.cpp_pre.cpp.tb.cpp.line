@@ -230,10 +230,11 @@ uint16_t input_depth, uint16_t input_height, uint16_t input_width, int16_t* inpu
 uint16_t output_depth, uint16_t output_height, uint16_t output_width, int16_t* output){
 #pragma empty_line
 #pragma empty_line
-#pragma empty_line
     for(uint16_t out_d = 0; out_d < output_depth; out_d++){
         for(uint16_t out_h = 0; out_h < output_height; out_h++){
-            for(uint16_t out_w = 0; out_w < output_width; out_w++){
+#pragma HLS UNROLL factor = 2
+         for(uint16_t out_w = 0; out_w < output_width; out_w++){
+#pragma HLS UNROLL factor = 2
                 output[out_d * output_height * output_width + out_h * output_width + out_w] =
                 input[out_d * input_height * input_width + (out_h/kernel_size) * input_width + (out_w/kernel_size)];
             }

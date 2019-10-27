@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'network'
 ================================================================
-* Date:           Sun Oct 27 13:23:35 2019
+* Date:           Sun Oct 27 20:26:04 2019
 
 * Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
 * Project:        HLS
@@ -20,7 +20,7 @@
     +--------+-------+----------+------------+
     |  Clock | Target| Estimated| Uncertainty|
     +--------+-------+----------+------------+
-    |ap_clk  |  10.00|     8.585|        1.25|
+    |ap_clk  |  10.00|     8.510|        1.25|
     +--------+-------+----------+------------+
 
 + Latency (clock cycles): 
@@ -34,25 +34,25 @@
 
     + Detail: 
         * Instance: 
-        +----------------------------------+-----------------------+-----+------+-----+------+---------+
-        |                                  |                       |   Latency  |  Interval  | Pipeline|
-        |             Instance             |         Module        | min |  max | min |  max |   Type  |
-        +----------------------------------+-----------------------+-----+------+-----+------+---------+
-        |grp_conv2d_fix16_228_fu_486       |conv2d_fix16_228       |    ?|     ?|    ?|     ?|   none  |
-        |grp_conv2d_fix16_1_fu_504         |conv2d_fix16_1         |    ?|     ?|    ?|     ?|   none  |
-        |grp_conv2d_fix16_2_fu_522         |conv2d_fix16_2         |    ?|     ?|    ?|     ?|   none  |
-        |grp_conv2d_fix16_3_fu_540         |conv2d_fix16_3         |    ?|     ?|    ?|     ?|   none  |
-        |grp_conv2d_fix16_fu_558           |conv2d_fix16           |    ?|     ?|    ?|     ?|   none  |
-        |grp_padding2d_fix16_fu_574        |padding2d_fix16        |    ?|     ?|    ?|     ?|   none  |
-        |grp_padding2d_fix16_3_fu_587      |padding2d_fix16_3      |    ?|     ?|    ?|     ?|   none  |
-        |grp_padding2d_fix16_1_fu_600      |padding2d_fix16_1      |    ?|     ?|    ?|     ?|   none  |
-        |grp_padding2d_fix16_2_fu_613      |padding2d_fix16_2      |    ?|     ?|    ?|     ?|   none  |
-        |grp_max_pooling2d_fix16_1_fu_626  |max_pooling2d_fix16_1  |    ?|     ?|    ?|     ?|   none  |
-        |grp_max_pooling2d_fix16_fu_639    |max_pooling2d_fix16    |    ?|     ?|    ?|     ?|   none  |
-        |grp_up_sampling2d_fix16_fu_652    |up_sampling2d_fix16    |    ?|     ?|    ?|     ?|   none  |
-        |grp_up_sampling2d_fix16_1_fu_665  |up_sampling2d_fix16_1  |    ?|     ?|    ?|     ?|   none  |
-        |grp_padding2d_fix16_4_fu_678      |padding2d_fix16_4      |  961|  1861|  961|  1861|   none  |
-        +----------------------------------+-----------------------+-----+------+-----+------+---------+
+        +----------------------------------+-----------------------+-----+------------+-----+------------+---------+
+        |                                  |                       |      Latency     |     Interval     | Pipeline|
+        |             Instance             |         Module        | min |     max    | min |     max    |   Type  |
+        +----------------------------------+-----------------------+-----+------------+-----+------------+---------+
+        |grp_padding2d_fix16_fu_486        |padding2d_fix16        |    ?|           ?|    ?|           ?|   none  |
+        |grp_padding2d_fix16_3_fu_499      |padding2d_fix16_3      |    ?|           ?|    ?|           ?|   none  |
+        |grp_padding2d_fix16_1_fu_512      |padding2d_fix16_1      |    ?|           ?|    ?|           ?|   none  |
+        |grp_padding2d_fix16_2_fu_525      |padding2d_fix16_2      |    ?|           ?|    ?|           ?|   none  |
+        |grp_conv2d_fix16_3_fu_538         |conv2d_fix16_3         |    ?|           ?|    ?|           ?|   none  |
+        |grp_conv2d_fix16_1_fu_556         |conv2d_fix16_1         |    ?|           ?|    ?|           ?|   none  |
+        |grp_conv2d_fix16_2_fu_574         |conv2d_fix16_2         |    ?|           ?|    ?|           ?|   none  |
+        |grp_conv2d_fix16_228_fu_592       |conv2d_fix16_228       |    ?|           ?|    ?|           ?|   none  |
+        |grp_conv2d_fix16_fu_610           |conv2d_fix16           |    ?|           ?|    ?|           ?|   none  |
+        |grp_padding2d_fix16_4_fu_626      |padding2d_fix16_4      |   65|  4832657484|   65|  4832657484|   none  |
+        |grp_up_sampling2d_fix16_fu_634    |up_sampling2d_fix16    |    ?|           ?|    ?|           ?|   none  |
+        |grp_up_sampling2d_fix16_1_fu_647  |up_sampling2d_fix16_1  |    ?|           ?|    ?|           ?|   none  |
+        |grp_max_pooling2d_fix16_1_fu_660  |max_pooling2d_fix16_1  |    ?|           ?|    ?|           ?|   none  |
+        |grp_max_pooling2d_fix16_fu_673    |max_pooling2d_fix16    |    ?|           ?|    ?|           ?|   none  |
+        +----------------------------------+-----------------------+-----+------------+-----+------------+---------+
 
         * Loop: 
         +-----------------+-----+-----+----------+-----------+-----------+------+----------+
@@ -78,41 +78,41 @@
 |DSP              |        -|      -|       -|      -|
 |Expression       |        -|      -|       0|    719|
 |FIFO             |        -|      -|       -|      -|
-|Instance         |        7|     65|    8396|  11501|
+|Instance         |       14|    156|   14317|  29171|
 |Memory           |       74|      -|       4|     26|
-|Multiplexer      |        -|      -|       -|   1156|
+|Multiplexer      |        -|      -|       -|   1219|
 |Register         |        -|      -|     491|      -|
 +-----------------+---------+-------+--------+-------+
-|Total            |       81|     65|    8891|  13402|
+|Total            |       88|    156|   14812|  31135|
 +-----------------+---------+-------+--------+-------+
 |Available        |      280|    220|  106400|  53200|
 +-----------------+---------+-------+--------+-------+
-|Utilization (%)  |       28|     29|       8|     25|
+|Utilization (%)  |       31|     70|      13|     58|
 +-----------------+---------+-------+--------+-------+
 
 + Detail: 
     * Instance: 
-    +----------------------------------+------------------------+---------+-------+-----+------+
-    |             Instance             |         Module         | BRAM_18K| DSP48E|  FF |  LUT |
-    +----------------------------------+------------------------+---------+-------+-----+------+
-    |grp_conv2d_fix16_fu_558           |conv2d_fix16            |        1|      5|  688|   949|
-    |grp_conv2d_fix16_1_fu_504         |conv2d_fix16_1          |        1|      5|  737|   955|
-    |grp_conv2d_fix16_2_fu_522         |conv2d_fix16_2          |        2|      5|  733|   954|
-    |grp_conv2d_fix16_228_fu_486       |conv2d_fix16_228        |        2|      5|  734|   955|
-    |grp_conv2d_fix16_3_fu_540         |conv2d_fix16_3          |        1|      5|  732|   954|
-    |grp_max_pooling2d_fix16_fu_639    |max_pooling2d_fix16     |        0|      4|  509|   666|
-    |grp_max_pooling2d_fix16_1_fu_626  |max_pooling2d_fix16_1   |        0|      4|  512|   666|
-    |network_AXILiteS_s_axi_U          |network_AXILiteS_s_axi  |        0|      0|   36|    40|
-    |grp_padding2d_fix16_fu_574        |padding2d_fix16         |        0|      6|  670|  1006|
-    |grp_padding2d_fix16_1_fu_600      |padding2d_fix16_1       |        0|      6|  667|  1006|
-    |grp_padding2d_fix16_2_fu_613      |padding2d_fix16_2       |        0|      6|  666|  1006|
-    |grp_padding2d_fix16_3_fu_587      |padding2d_fix16_3       |        0|      6|  668|  1006|
-    |grp_padding2d_fix16_4_fu_678      |padding2d_fix16_4       |        0|      0|  136|   408|
-    |grp_up_sampling2d_fix16_fu_652    |up_sampling2d_fix16     |        0|      4|  454|   465|
-    |grp_up_sampling2d_fix16_1_fu_665  |up_sampling2d_fix16_1   |        0|      4|  454|   465|
-    +----------------------------------+------------------------+---------+-------+-----+------+
-    |Total                             |                        |        7|     65| 8396| 11501|
-    +----------------------------------+------------------------+---------+-------+-----+------+
+    +----------------------------------+------------------------+---------+-------+------+------+
+    |             Instance             |         Module         | BRAM_18K| DSP48E|  FF  |  LUT |
+    +----------------------------------+------------------------+---------+-------+------+------+
+    |grp_conv2d_fix16_fu_610           |conv2d_fix16            |        2|     17|  1179|  1841|
+    |grp_conv2d_fix16_1_fu_556         |conv2d_fix16_1          |        2|     17|  1270|  1871|
+    |grp_conv2d_fix16_2_fu_574         |conv2d_fix16_2          |        4|     17|  1224|  1847|
+    |grp_conv2d_fix16_228_fu_592       |conv2d_fix16_228        |        4|     17|  1225|  1848|
+    |grp_conv2d_fix16_3_fu_538         |conv2d_fix16_3          |        2|     17|  1265|  1870|
+    |grp_max_pooling2d_fix16_fu_673    |max_pooling2d_fix16     |        0|      6|   565|   740|
+    |grp_max_pooling2d_fix16_1_fu_660  |max_pooling2d_fix16_1   |        0|      6|   568|   740|
+    |network_AXILiteS_s_axi_U          |network_AXILiteS_s_axi  |        0|      0|    36|    40|
+    |grp_padding2d_fix16_fu_486        |padding2d_fix16         |        0|     11|  1361|  3678|
+    |grp_padding2d_fix16_1_fu_512      |padding2d_fix16_1       |        0|     11|  1361|  3678|
+    |grp_padding2d_fix16_2_fu_525      |padding2d_fix16_2       |        0|     11|  1361|  3678|
+    |grp_padding2d_fix16_3_fu_499      |padding2d_fix16_3       |        0|     11|  1361|  3678|
+    |grp_padding2d_fix16_4_fu_626      |padding2d_fix16_4       |        0|      3|   361|  1894|
+    |grp_up_sampling2d_fix16_fu_634    |up_sampling2d_fix16     |        0|      6|   590|   884|
+    |grp_up_sampling2d_fix16_1_fu_647  |up_sampling2d_fix16_1   |        0|      6|   590|   884|
+    +----------------------------------+------------------------+---------+-------+------+------+
+    |Total                             |                        |       14|    156| 14317| 29171|
+    +----------------------------------+------------------------+---------+-------+------+------+
 
     * DSP48: 
     N/A
@@ -122,9 +122,7 @@
     |         Memory         |            Module            | BRAM_18K| FF| LUT| Words | Bits| Banks| W*Bits*Banks|
     +------------------------+------------------------------+---------+---+----+-------+-----+------+-------------+
     |Conv2D_0_array_U        |network_Conv2D_0_array        |       16|  0|   0|  12544|   16|     1|       200704|
-    |UpSampling2D_1_array_U  |network_Conv2D_0_array        |       16|  0|   0|  12544|   16|     1|       200704|
     |Conv2D_1_array_U        |network_Conv2D_1_array        |        2|  0|   0|   1568|   16|     1|        25088|
-    |UpSampling2D_0_array_U  |network_Conv2D_1_array        |        2|  0|   0|   1568|   16|     1|        25088|
     |Conv2D_4_array_U        |network_Conv2D_4_array        |        1|  0|   0|    784|   16|     1|        12544|
     |MaxPooling2D_0_array_U  |network_MaxPooling2D_0_array  |        4|  0|   0|   3136|   16|     1|        50176|
     |Conv2D_3_array_U        |network_MaxPooling2D_0_array  |        4|  0|   0|   3136|   16|     1|        50176|
@@ -135,6 +133,8 @@
     |Padding2D_2_array_U     |network_Padding2D_2_array     |        1|  0|   0|    648|   16|     1|        10368|
     |Padding2D_3_array_U     |network_Padding2D_3_array     |        2|  0|   0|   2048|   16|     1|        32768|
     |Padding2D_4_array_U     |network_Padding2D_4_array     |       16|  0|   0|  14400|   16|     1|       230400|
+    |UpSampling2D_0_array_U  |network_UpSampling2D_0_array  |        2|  0|   0|   1568|   16|     1|        25088|
+    |UpSampling2D_1_array_U  |network_UpSampling2D_1_array  |       16|  0|   0|  12544|   16|     1|       200704|
     |input_0_array_0_U       |network_input_0_array_0       |        1|  0|   0|    784|   16|     1|        12544|
     |out_0_id_V_U            |network_out_0_id_V            |        0|  2|  13|    784|    1|     1|          784|
     |out_0_dest_V_U          |network_out_0_id_V            |        0|  2|  13|    784|    1|     1|          784|
@@ -152,23 +152,23 @@
     |             Variable Name             | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
     +---------------------------------------+----------+-------+---+----+------------+------------+
     |depth_fu_1206_p2                       |     +    |      0|  0|  39|          32|           1|
-    |height_2_fu_1055_p2                    |     +    |      0|  0|  15|           5|           1|
-    |height_3_fu_1252_p2                    |     +    |      0|  0|  39|          32|           1|
-    |tmp_15_fu_1351_p2                      |     +    |      0|  0|  13|          11|          11|
-    |tmp_16_fu_1361_p2                      |     +    |      0|  0|  13|          11|          11|
-    |tmp_63_fu_1388_p2                      |     +    |      0|  0|  10|           2|           1|
-    |tmp_65_fu_1415_p2                      |     +    |      0|  0|  15|           5|           2|
-    |tmp_67_fu_1431_p2                      |     +    |      0|  0|  15|           5|           2|
-    |tmp_7_fu_1132_p2                       |     +    |      0|  0|  13|          11|          11|
-    |tmp_8_fu_1262_p2                       |     +    |      0|  0|  45|          38|          38|
-    |width_4_fu_1097_p2                     |     +    |      0|  0|  15|           5|           1|
+    |height_1_fu_1252_p2                    |     +    |      0|  0|  39|          32|           1|
+    |height_4_fu_1055_p2                    |     +    |      0|  0|  15|           5|           1|
+    |tmp_28_fu_1132_p2                      |     +    |      0|  0|  13|          11|          11|
+    |tmp_29_fu_1262_p2                      |     +    |      0|  0|  45|          38|          38|
+    |tmp_36_fu_1351_p2                      |     +    |      0|  0|  13|          11|          11|
+    |tmp_37_fu_1361_p2                      |     +    |      0|  0|  13|          11|          11|
+    |tmp_67_fu_1388_p2                      |     +    |      0|  0|  10|           2|           1|
+    |tmp_69_fu_1415_p2                      |     +    |      0|  0|  15|           5|           2|
+    |tmp_71_fu_1431_p2                      |     +    |      0|  0|  15|           5|           2|
     |width_5_fu_1341_p2                     |     +    |      0|  0|  39|          32|           1|
-    |tmp_11_fu_1291_p2                      |     -    |      0|  0|  13|          11|          11|
-    |tmp_14_fu_1321_p2                      |     -    |      0|  0|  13|          11|          11|
-    |tmp_3_fu_1085_p2                       |     -    |      0|  0|  13|          11|          11|
-    |tmp_6_fu_1236_p2                       |     -    |      0|  0|  45|          38|          38|
+    |width_6_fu_1097_p2                     |     +    |      0|  0|  15|           5|           1|
+    |tmp_24_fu_1085_p2                      |     -    |      0|  0|  13|          11|          11|
+    |tmp_27_fu_1236_p2                      |     -    |      0|  0|  45|          38|          38|
+    |tmp_32_fu_1291_p2                      |     -    |      0|  0|  13|          11|          11|
+    |tmp_35_fu_1321_p2                      |     -    |      0|  0|  13|          11|          11|
     |ap_block_state3                        |    and   |      0|  0|   2|           1|           1|
-    |ap_condition_1712                      |    and   |      0|  0|   2|           1|           1|
+    |ap_condition_1756                      |    and   |      0|  0|   2|           1|           1|
     |input_data_V_data_V_0_load_A           |    and   |      0|  0|   2|           1|           1|
     |input_data_V_data_V_0_load_B           |    and   |      0|  0|   2|           1|           1|
     |input_data_V_dest_V_0_load_A           |    and   |      0|  0|   2|           1|           1|
@@ -207,16 +207,16 @@
     |output_data_V_last_V_1_state_cmp_full  |   icmp   |      0|  0|   8|           2|           1|
     |output_data_V_strb_V_1_state_cmp_full  |   icmp   |      0|  0|   8|           2|           1|
     |output_data_V_user_V_1_state_cmp_full  |   icmp   |      0|  0|   8|           2|           1|
-    |tmp_55_fu_1200_p2                      |   icmp   |      0|  0|  18|          32|           1|
-    |tmp_59_fu_1246_p2                      |   icmp   |      0|  0|  18|          32|           5|
-    |tmp_61_fu_1335_p2                      |   icmp   |      0|  0|  18|          32|           5|
-    |tmp_64_fu_1398_p2                      |   icmp   |      0|  0|  18|          32|           1|
-    |tmp_66_fu_1425_p2                      |   icmp   |      0|  0|  18|          32|           5|
-    |tmp_68_fu_1440_p2                      |   icmp   |      0|  0|  18|          32|           5|
+    |tmp_54_fu_1200_p2                      |   icmp   |      0|  0|  18|          32|           1|
+    |tmp_57_fu_1246_p2                      |   icmp   |      0|  0|  18|          32|           5|
+    |tmp_60_fu_1335_p2                      |   icmp   |      0|  0|  18|          32|           5|
+    |tmp_68_fu_1398_p2                      |   icmp   |      0|  0|  18|          32|           1|
+    |tmp_70_fu_1425_p2                      |   icmp   |      0|  0|  18|          32|           5|
+    |tmp_72_fu_1440_p2                      |   icmp   |      0|  0|  18|          32|           5|
     |tmp_user_V_fu_1378_p2                  |   icmp   |      0|  0|  18|          32|           1|
     |ap_block_state37                       |    or    |      0|  0|   2|           1|           1|
-    |ap_condition_1706                      |    or    |      0|  0|   2|           1|           1|
-    |tmp_62_fu_1372_p2                      |    or    |      0|  0|  32|          32|          32|
+    |ap_condition_1750                      |    or    |      0|  0|   2|           1|           1|
+    |tmp_64_fu_1372_p2                      |    or    |      0|  0|  32|          32|          32|
     |tmp_fu_1366_p2                         |    or    |      0|  0|  32|          32|          32|
     +---------------------------------------+----------+-------+---+----+------------+------------+
     |Total                                  |          |      0|  0| 719|         610|         287|
@@ -228,9 +228,11 @@
     +---------------------------------+-----+-----------+-----+-----------+
     |Conv2D_0_array_address0          |   15|          3|   14|         42|
     |Conv2D_0_array_ce0               |   15|          3|    1|          3|
+    |Conv2D_0_array_ce1               |    9|          2|    1|          2|
     |Conv2D_0_array_we0               |    9|          2|    1|          2|
     |Conv2D_1_array_address0          |   15|          3|   11|         33|
     |Conv2D_1_array_ce0               |   15|          3|    1|          3|
+    |Conv2D_1_array_ce1               |    9|          2|    1|          2|
     |Conv2D_1_array_we0               |    9|          2|    1|          2|
     |Conv2D_2_array_address0          |   15|          3|    9|         27|
     |Conv2D_2_array_ce0               |   15|          3|    1|          3|
@@ -249,18 +251,23 @@
     |MaxPooling2D_1_array_we0         |    9|          2|    1|          2|
     |Padding2D_0_array_address0       |   15|          3|   10|         30|
     |Padding2D_0_array_ce0            |   15|          3|    1|          3|
+    |Padding2D_0_array_ce1            |    9|          2|    1|          2|
     |Padding2D_0_array_we0            |    9|          2|    1|          2|
     |Padding2D_1_array_address0       |   15|          3|   12|         36|
     |Padding2D_1_array_ce0            |   15|          3|    1|          3|
+    |Padding2D_1_array_ce1            |    9|          2|    1|          2|
     |Padding2D_1_array_we0            |    9|          2|    1|          2|
     |Padding2D_2_array_address0       |   15|          3|   10|         30|
     |Padding2D_2_array_ce0            |   15|          3|    1|          3|
+    |Padding2D_2_array_ce1            |    9|          2|    1|          2|
     |Padding2D_2_array_we0            |    9|          2|    1|          2|
     |Padding2D_3_array_address0       |   15|          3|   11|         33|
     |Padding2D_3_array_ce0            |   15|          3|    1|          3|
+    |Padding2D_3_array_ce1            |    9|          2|    1|          2|
     |Padding2D_3_array_we0            |    9|          2|    1|          2|
     |Padding2D_4_array_address0       |   15|          3|   14|         42|
     |Padding2D_4_array_ce0            |   15|          3|    1|          3|
+    |Padding2D_4_array_ce1            |    9|          2|    1|          2|
     |Padding2D_4_array_we0            |    9|          2|    1|          2|
     |UpSampling2D_0_array_address0    |   15|          3|   11|         33|
     |UpSampling2D_0_array_ce0         |   15|          3|    1|          3|
@@ -307,7 +314,7 @@
     |width9_reg_458                   |    9|          2|   32|         64|
     |width_reg_423                    |    9|          2|    5|         10|
     +---------------------------------+-----+-----------+-----+-----------+
-    |Total                            | 1156|        242|  417|       1118|
+    |Total                            | 1219|        256|  424|       1132|
     +---------------------------------+-----+-----------+-----+-----------+
 
     * Register: 
@@ -359,23 +366,23 @@
     |ap_CS_fsm                                      |  37|   0|   37|          0|
     |depth7_reg_434                                 |  32|   0|   32|          0|
     |depth_reg_1535                                 |  32|   0|   32|          0|
-    |grp_conv2d_fix16_1_fu_504_ap_start_reg         |   1|   0|    1|          0|
-    |grp_conv2d_fix16_228_fu_486_ap_start_reg       |   1|   0|    1|          0|
-    |grp_conv2d_fix16_2_fu_522_ap_start_reg         |   1|   0|    1|          0|
-    |grp_conv2d_fix16_3_fu_540_ap_start_reg         |   1|   0|    1|          0|
-    |grp_conv2d_fix16_fu_558_ap_start_reg           |   1|   0|    1|          0|
-    |grp_max_pooling2d_fix16_1_fu_626_ap_start_reg  |   1|   0|    1|          0|
-    |grp_max_pooling2d_fix16_fu_639_ap_start_reg    |   1|   0|    1|          0|
-    |grp_padding2d_fix16_1_fu_600_ap_start_reg      |   1|   0|    1|          0|
-    |grp_padding2d_fix16_2_fu_613_ap_start_reg      |   1|   0|    1|          0|
-    |grp_padding2d_fix16_3_fu_587_ap_start_reg      |   1|   0|    1|          0|
-    |grp_padding2d_fix16_4_fu_678_ap_start_reg      |   1|   0|    1|          0|
-    |grp_padding2d_fix16_fu_574_ap_start_reg        |   1|   0|    1|          0|
-    |grp_up_sampling2d_fix16_1_fu_665_ap_start_reg  |   1|   0|    1|          0|
-    |grp_up_sampling2d_fix16_fu_652_ap_start_reg    |   1|   0|    1|          0|
+    |grp_conv2d_fix16_1_fu_556_ap_start_reg         |   1|   0|    1|          0|
+    |grp_conv2d_fix16_228_fu_592_ap_start_reg       |   1|   0|    1|          0|
+    |grp_conv2d_fix16_2_fu_574_ap_start_reg         |   1|   0|    1|          0|
+    |grp_conv2d_fix16_3_fu_538_ap_start_reg         |   1|   0|    1|          0|
+    |grp_conv2d_fix16_fu_610_ap_start_reg           |   1|   0|    1|          0|
+    |grp_max_pooling2d_fix16_1_fu_660_ap_start_reg  |   1|   0|    1|          0|
+    |grp_max_pooling2d_fix16_fu_673_ap_start_reg    |   1|   0|    1|          0|
+    |grp_padding2d_fix16_1_fu_512_ap_start_reg      |   1|   0|    1|          0|
+    |grp_padding2d_fix16_2_fu_525_ap_start_reg      |   1|   0|    1|          0|
+    |grp_padding2d_fix16_3_fu_499_ap_start_reg      |   1|   0|    1|          0|
+    |grp_padding2d_fix16_4_fu_626_ap_start_reg      |   1|   0|    1|          0|
+    |grp_padding2d_fix16_fu_486_ap_start_reg        |   1|   0|    1|          0|
+    |grp_up_sampling2d_fix16_1_fu_647_ap_start_reg  |   1|   0|    1|          0|
+    |grp_up_sampling2d_fix16_fu_634_ap_start_reg    |   1|   0|    1|          0|
     |height8_reg_446                                |  32|   0|   32|          0|
-    |height_2_reg_1449                              |   5|   0|    5|          0|
-    |height_3_reg_1548                              |  32|   0|   32|          0|
+    |height_1_reg_1548                              |  32|   0|   32|          0|
+    |height_4_reg_1449                              |   5|   0|    5|          0|
     |height_reg_412                                 |   5|   0|    5|          0|
     |input_data_V_data_V_0_payload_A                |  16|   0|   16|          0|
     |input_data_V_data_V_0_payload_B                |  16|   0|   16|          0|
@@ -466,13 +473,13 @@
     |reg_983                                        |   0|   0|   16|         16|
     |reg_989                                        |   0|   0|   16|         16|
     |reg_995                                        |   0|   0|   16|         16|
-    |tmp_11_reg_1553                                |   9|   0|   11|          2|
-    |tmp_14_reg_1558                                |   9|   0|   11|          2|
-    |tmp_16_reg_1581                                |  11|   0|   11|          0|
-    |tmp_3_reg_1454                                 |   9|   0|   11|          2|
-    |tmp_62_cast_reg_1563                           |   0|   0|   17|         17|
-    |tmp_64_reg_1591                                |   1|   0|    1|          0|
-    |tmp_6_reg_1540                                 |  36|   0|   38|          2|
+    |tmp_24_reg_1454                                |   9|   0|   11|          2|
+    |tmp_27_reg_1540                                |  36|   0|   38|          2|
+    |tmp_32_reg_1553                                |   9|   0|   11|          2|
+    |tmp_35_reg_1558                                |   9|   0|   11|          2|
+    |tmp_37_reg_1581                                |  11|   0|   11|          0|
+    |tmp_59_cast_reg_1563                           |   0|   0|   17|         17|
+    |tmp_68_reg_1591                                |   1|   0|    1|          0|
     |tmp_data_V_1_reg_1615                          |  16|   0|   16|          0|
     |tmp_last_V_reg_470                             |   1|   0|    1|          0|
     |tmp_user_V_reg_1586                            |   1|   0|    1|          0|

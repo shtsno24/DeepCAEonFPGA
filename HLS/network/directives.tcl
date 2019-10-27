@@ -3,3 +3,4 @@
 ## Please DO NOT edit it.
 ## Copyright (C) 1986-2018 Xilinx, Inc. All Rights Reserved.
 ############################################################
+set_directive_unroll "conv2d_fix16/conv2d_fix16_label3"

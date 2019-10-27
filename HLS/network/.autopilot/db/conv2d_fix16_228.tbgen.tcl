@@ -19,7 +19,7 @@ set C_modelArgList {
 	{ output_height uint 16 regular  }
 	{ output_width uint 16 regular  }
 	{ output_r int 16 regular {array 3136 { 2 3 } 1 1 }  }
-	{ Padding2D_3_array int 16 regular {array 2048 { 1 3 } 1 1 } {global 0}  }
+	{ Padding2D_3_array int 16 regular {array 2048 { 1 1 } 1 1 } {global 0}  }
 }
 set C_modelArgMapList {[ 
 	{ "Name" : "input_depth", "interface" : "wire", "bitwidth" : 16, "direction" : "READONLY"} , 
@@ -31,7 +31,7 @@ set C_modelArgMapList {[
  	{ "Name" : "output_r", "interface" : "memory", "bitwidth" : 16, "direction" : "READWRITE"} , 
  	{ "Name" : "Padding2D_3_array", "interface" : "memory", "bitwidth" : 16, "direction" : "READONLY", "bitSlice":[{"low":0,"up":15,"cElement": [{"cName": "Padding2D_3_array","cData": "short","bit_use": { "low": 0,"up": 15},"cArray": [{"low" : 0,"up" : 7,"step" : 1},{"low" : 0,"up" : 15,"step" : 1},{"low" : 0,"up" : 15,"step" : 1}]}]}], "extern" : 0} ]}
 # RTL Port declarations: 
-set portNum 20
+set portNum 23
 set portList { 
 	{ ap_clk sc_in sc_logic 1 clock -1 } 
 	{ ap_rst sc_in sc_logic 1 reset -1 active_high_sync } 
@@ -53,6 +53,9 @@ set portList {
 	{ Padding2D_3_array_address0 sc_out sc_lv 11 signal 7 } 
 	{ Padding2D_3_array_ce0 sc_out sc_logic 1 signal 7 } 
 	{ Padding2D_3_array_q0 sc_in sc_lv 16 signal 7 } 
+	{ Padding2D_3_array_address1 sc_out sc_lv 11 signal 7 } 
+	{ Padding2D_3_array_ce1 sc_out sc_logic 1 signal 7 } 
+	{ Padding2D_3_array_q1 sc_in sc_lv 16 signal 7 } 
 }
 set NewPortList {[ 
 	{ "name": "ap_clk", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "clock", "bundle":{"name": "ap_clk", "role": "default" }} , 
@@ -74,10 +77,13 @@ set NewPortList {[
  	{ "name": "output_r_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "output_r", "role": "q0" }} , 
  	{ "name": "Padding2D_3_array_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":11, "type": "signal", "bundle":{"name": "Padding2D_3_array", "role": "address0" }} , 
  	{ "name": "Padding2D_3_array_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "Padding2D_3_array", "role": "ce0" }} , 
- 	{ "name": "Padding2D_3_array_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "Padding2D_3_array", "role": "q0" }}  ]}
+ 	{ "name": "Padding2D_3_array_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "Padding2D_3_array", "role": "q0" }} , 
+ 	{ "name": "Padding2D_3_array_address1", "direction": "out", "datatype": "sc_lv", "bitwidth":11, "type": "signal", "bundle":{"name": "Padding2D_3_array", "role": "address1" }} , 
+ 	{ "name": "Padding2D_3_array_ce1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "Padding2D_3_array", "role": "ce1" }} , 
+ 	{ "name": "Padding2D_3_array_q1", "direction": "in", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "Padding2D_3_array", "role": "q1" }}  ]}
 
 set RtlHierarchyInfo {[
-	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "3"],
+	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11"],
 		"CDFG" : "conv2d_fix16_228",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
@@ -103,7 +109,15 @@ set RtlHierarchyInfo {[
 			{"Name" : "Conv2D_3_w", "Type" : "Memory", "Direction" : "I"}]},
 	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.Conv2D_3_b_U", "Parent" : "0"},
 	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.Conv2D_3_w_U", "Parent" : "0"},
-	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mul_mul_16s_13s_29_1_1_U81", "Parent" : "0"}]}
+	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mul_mul_13s_16s_29_1_1_U113", "Parent" : "0"},
+	{"ID" : "4", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mul_mul_13s_16s_29_1_1_U114", "Parent" : "0"},
+	{"ID" : "5", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mul_mul_13s_16s_29_1_1_U115", "Parent" : "0"},
+	{"ID" : "6", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mul_mul_13s_16s_29_1_1_U116", "Parent" : "0"},
+	{"ID" : "7", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mul_mul_13s_16s_29_1_1_U117", "Parent" : "0"},
+	{"ID" : "8", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mul_mul_13s_16s_29_1_1_U118", "Parent" : "0"},
+	{"ID" : "9", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mul_mul_13s_16s_29_1_1_U119", "Parent" : "0"},
+	{"ID" : "10", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mul_mul_13s_16s_29_1_1_U120", "Parent" : "0"},
+	{"ID" : "11", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mul_mul_13s_16s_29_1_1_U121", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {
@@ -114,9 +128,9 @@ set ArgLastReadFirstWriteLatency {
 		output_depth {Type I LastRead 0 FirstWrite -1}
 		output_height {Type I LastRead 0 FirstWrite -1}
 		output_width {Type I LastRead 0 FirstWrite -1}
-		output_r {Type IO LastRead 11 FirstWrite 5}
+		output_r {Type IO LastRead 14 FirstWrite 5}
 		Conv2D_3_b {Type I LastRead -1 FirstWrite -1}
-		Padding2D_3_array {Type I LastRead 9 FirstWrite -1}
+		Padding2D_3_array {Type I LastRead 13 FirstWrite -1}
 		Conv2D_3_w {Type I LastRead -1 FirstWrite -1}}}
 
 set hasDtUnsupportedChannel 0
@@ -137,5 +151,5 @@ set Spec2ImplPortList {
 	output_height { ap_none {  { output_height in_data 0 16 } } }
 	output_width { ap_none {  { output_width in_data 0 16 } } }
 	output_r { ap_memory {  { output_r_address0 mem_address 1 12 }  { output_r_ce0 mem_ce 1 1 }  { output_r_we0 mem_we 1 1 }  { output_r_d0 mem_din 1 16 }  { output_r_q0 mem_dout 0 16 } } }
-	Padding2D_3_array { ap_memory {  { Padding2D_3_array_address0 mem_address 1 11 }  { Padding2D_3_array_ce0 mem_ce 1 1 }  { Padding2D_3_array_q0 mem_dout 0 16 } } }
+	Padding2D_3_array { ap_memory {  { Padding2D_3_array_address0 mem_address 1 11 }  { Padding2D_3_array_ce0 mem_ce 1 1 }  { Padding2D_3_array_q0 mem_dout 0 16 }  { Padding2D_3_array_address1 MemPortADDR2 1 11 }  { Padding2D_3_array_ce1 MemPortCE2 1 1 }  { Padding2D_3_array_q1 MemPortDOUT2 0 16 } } }
 }

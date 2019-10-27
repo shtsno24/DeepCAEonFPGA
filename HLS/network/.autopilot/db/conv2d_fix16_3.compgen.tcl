@@ -1,7 +1,7 @@
 # This script segment is generated automatically by AutoPilot
 
 # Memory (RAM/ROM)  definition:
-set ID 57
+set ID 88
 set hasByteEnable 0
 set MemName conv2d_fix16_3_Conv2D_2_b
 set CoreName ap_simcore_mem
@@ -84,11 +84,11 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_ROM] == "::AESL_LIB_VIRTEX::xil_gen_RO
 
 
 # Memory (RAM/ROM)  definition:
-set ID 58
+set ID 89
 set hasByteEnable 0
 set MemName conv2d_fix16_3_Conv2D_2_w
 set CoreName ap_simcore_mem
-set PortList { 1 }
+set PortList { 1 1 1 }
 set DataWd 14
 set AddrRange 576
 set AddrWd 10
@@ -114,7 +114,7 @@ if {[info proc ap_gen_simcore_mem] == "ap_gen_simcore_mem"} {
     sync_rst true \
     stage_num ${NumOfStage}  \
     registered_input ${RegisteredInput} \
-    port_num 1 \
+    port_num 3 \
     port_list \{${PortList}\} \
     data_wd ${DataWd} \
     addr_wd ${AddrWd} \
@@ -149,7 +149,7 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_ROM] == "::AESL_LIB_VIRTEX::xil_gen_RO
     sync_rst true \
     stage_num ${NumOfStage}  \
     registered_input ${RegisteredInput} \
-    port_num 1 \
+    port_num 3 \
     port_list \{${PortList}\} \
     data_wd ${DataWd} \
     addr_wd ${AddrWd} \
@@ -177,7 +177,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 65 \
+    id 96 \
     name output_r \
     reset_level 1 \
     sync_rst true \
@@ -196,14 +196,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 66 \
+    id 97 \
     name Padding2D_2_array \
     reset_level 1 \
     sync_rst true \
     dir I \
     corename Padding2D_2_array \
     op interface \
-    ports { Padding2D_2_array_address0 { O 10 vector } Padding2D_2_array_ce0 { O 1 bit } Padding2D_2_array_q0 { I 16 vector } } \
+    ports { Padding2D_2_array_address0 { O 10 vector } Padding2D_2_array_ce0 { O 1 bit } Padding2D_2_array_q0 { I 16 vector } Padding2D_2_array_address1 { O 10 vector } Padding2D_2_array_ce1 { O 1 bit } Padding2D_2_array_q1 { I 16 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'Padding2D_2_array'"
@@ -214,7 +214,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 59 \
+    id 90 \
     name input_depth \
     type other \
     dir I \
@@ -229,7 +229,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 60 \
+    id 91 \
     name input_height \
     type other \
     dir I \
@@ -244,7 +244,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 61 \
+    id 92 \
     name input_width \
     type other \
     dir I \
@@ -259,7 +259,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 62 \
+    id 93 \
     name output_depth \
     type other \
     dir I \
@@ -274,7 +274,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 63 \
+    id 94 \
     name output_height \
     type other \
     dir I \
@@ -289,7 +289,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 64 \
+    id 95 \
     name output_width \
     type other \
     dir I \
