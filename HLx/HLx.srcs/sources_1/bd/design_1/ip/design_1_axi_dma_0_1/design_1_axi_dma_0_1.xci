@@ -66,7 +66,7 @@
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.M_AXIS_MM2S.INSERT_VIP">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.M_AXIS_MM2S.LAYERED_METADATA">undef</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.M_AXIS_MM2S.PHASE">0.000</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.M_AXIS_MM2S.TDATA_NUM_BYTES">4</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.M_AXIS_MM2S.TDATA_NUM_BYTES">2</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.M_AXIS_MM2S.TDEST_WIDTH">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.M_AXIS_MM2S.TID_WIDTH">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.M_AXIS_MM2S.TUSER_WIDTH">0</spirit:configurableElementValue>
@@ -246,7 +246,7 @@
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_MICRO_DMA">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_MM2S_BURST_SIZE">8</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_M_AXIS_MM2S_CNTRL_TDATA_WIDTH">32</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_M_AXIS_MM2S_TDATA_WIDTH">32</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_M_AXIS_MM2S_TDATA_WIDTH">16</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_M_AXI_MM2S_ADDR_WIDTH">64</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_M_AXI_MM2S_DATA_WIDTH">64</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_M_AXI_S2MM_ADDR_WIDTH">64</spirit:configurableElementValue>
@@ -275,7 +275,7 @@
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.c_increase_throughput">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.c_m_axi_mm2s_data_width">64</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.c_m_axi_s2mm_data_width">32</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.c_m_axis_mm2s_tdata_width">32</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.c_m_axis_mm2s_tdata_width">16</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.c_micro_dma">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.c_mm2s_burst_size">8</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.c_num_mm2s_channels">1</spirit:configurableElementValue>
