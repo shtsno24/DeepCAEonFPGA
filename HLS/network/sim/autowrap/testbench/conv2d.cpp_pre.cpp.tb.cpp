@@ -1,5 +1,5 @@
 // ==============================================================
-// File generated on Sun Oct 27 13:24:53 JST 2019
+// File generated on Mon Oct 28 14:13:19 JST 2019
 // Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
 // SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 // IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
@@ -251,10 +251,12 @@ uint8_t relu, uint8_t fractal_width){
     for(uint16_t out_d = 0; out_d < output_depth; out_d++){
         for(uint16_t out_h = 0; out_h < output_height; out_h++){
             for(uint16_t out_w = 0; out_w < output_width; out_w++){
-                output[out_d * output_height * output_width + out_h * output_width + out_w] = 0;
+             output[out_d * output_height * output_width + out_h * output_width + out_w] = 0;
                 for(uint16_t in_d = 0; in_d < input_depth; in_d++){
-                    for(uint16_t k_h = 0; k_h < kernel_height; k_h++){
-                        for(uint16_t k_w = 0; k_w < kernel_width; k_w++){
+                 for(uint16_t k_h = 0; k_h < kernel_height; k_h++){
+#pragma HLS UNROLL
+                     for(uint16_t k_w = 0; k_w < kernel_width; k_w++){
+#pragma HLS UNROLL
                             output[out_d * output_height * output_width + out_h * output_width + out_w] +=
                                 (int16_t)(((int32_t)(input[in_d * input_height * input_width + (out_h + k_h) * input_width + (out_w + k_w)]) *
                                             (int32_t)(kernel[(out_d * input_depth * kernel_height * kernel_width) + (in_d * kernel_height * kernel_width) + (k_h * kernel_width) + k_w]))>> fractal_width);
@@ -279,7 +281,7 @@ uint16_t output_depth, uint16_t output_height, uint16_t output_width, float* out
 const float* bias,
 uint16_t kernel_height, uint16_t kernel_width, const float* kernel,
 uint8_t relu){
-#62 "/home/masudalab/DeepCAEonFPGA/layers_c/conv2d.cpp"
+#64 "/home/masudalab/DeepCAEonFPGA/layers_c/conv2d.cpp"
     for(uint16_t out_d = 0; out_d < output_depth; out_d++){
         for(uint16_t out_h = 0; out_h < output_height; out_h++){
             for(uint16_t out_w = 0; out_w < output_width; out_w++){

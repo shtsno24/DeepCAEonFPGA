@@ -799,7 +799,7 @@
 					<Obj>
 						<type>0</type>
 						<id>108</id>
-						<name>height_2</name>
+						<name>height_4</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
 						<lineNumber>36</lineNumber>
@@ -1291,7 +1291,7 @@
 					<Obj>
 						<type>0</type>
 						<id>121</id>
-						<name>width_4</name>
+						<name>width_6</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
 						<lineNumber>37</lineNumber>
@@ -1390,7 +1390,7 @@
 					<Obj>
 						<type>0</type>
 						<id>124</id>
-						<name>empty_27</name>
+						<name>empty_29</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
 						<lineNumber>38</lineNumber>
@@ -1685,7 +1685,7 @@
 					<Obj>
 						<type>0</type>
 						<id>130</id>
-						<name>tmp_61_cast</name>
+						<name>tmp_62_cast</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
 						<lineNumber>39</lineNumber>
@@ -6802,7 +6802,7 @@
 					<Obj>
 						<type>0</type>
 						<id>237</id>
-						<name>tmp_55</name>
+						<name>tmp_60</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
 						<lineNumber>110</lineNumber>
@@ -7328,7 +7328,7 @@
 					<Obj>
 						<type>0</type>
 						<id>250</id>
-						<name>tmp_58</name>
+						<name>tmp_62</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
 						<lineNumber>111</lineNumber>
@@ -7376,7 +7376,7 @@
 					<Obj>
 						<type>0</type>
 						<id>251</id>
-						<name>tmp_59</name>
+						<name>tmp_63</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
 						<lineNumber>111</lineNumber>
@@ -7524,7 +7524,7 @@
 					<Obj>
 						<type>0</type>
 						<id>255</id>
-						<name>tmp_60_cast</name>
+						<name>tmp_65_cast</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
 						<lineNumber>114</lineNumber>
@@ -8244,7 +8244,7 @@
 					<Obj>
 						<type>0</type>
 						<id>271</id>
-						<name>tmp_60</name>
+						<name>tmp_64</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
 						<lineNumber>112</lineNumber>
@@ -8292,7 +8292,7 @@
 					<Obj>
 						<type>0</type>
 						<id>272</id>
-						<name>tmp_62_cast</name>
+						<name>tmp_67_cast</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
 						<lineNumber>112</lineNumber>
@@ -8340,7 +8340,7 @@
 					<Obj>
 						<type>0</type>
 						<id>273</id>
-						<name>tmp_61</name>
+						<name>tmp_65</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
 						<lineNumber>112</lineNumber>
@@ -8389,7 +8389,7 @@
 					<Obj>
 						<type>0</type>
 						<id>274</id>
-						<name>width_5</name>
+						<name>width_7</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
 						<lineNumber>112</lineNumber>
@@ -9077,7 +9077,7 @@
 					<Obj>
 						<type>0</type>
 						<id>289</id>
-						<name>tmp_62</name>
+						<name>tmp_66</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
 						<lineNumber>116</lineNumber>
@@ -9223,7 +9223,7 @@
 					<Obj>
 						<type>0</type>
 						<id>292</id>
-						<name>tmp_67_cast</name>
+						<name>tmp_72_cast</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
 						<lineNumber>122</lineNumber>
@@ -9271,7 +9271,7 @@
 					<Obj>
 						<type>0</type>
 						<id>293</id>
-						<name>tmp_63</name>
+						<name>tmp_67</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
 						<lineNumber>122</lineNumber>
@@ -9320,7 +9320,7 @@
 					<Obj>
 						<type>0</type>
 						<id>294</id>
-						<name>tmp_68_cast</name>
+						<name>tmp_73_cast</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
 						<lineNumber>122</lineNumber>
@@ -9368,7 +9368,7 @@
 					<Obj>
 						<type>0</type>
 						<id>295</id>
-						<name>tmp_64</name>
+						<name>tmp_68</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
 						<lineNumber>122</lineNumber>
@@ -9515,7 +9515,7 @@
 					<Obj>
 						<type>0</type>
 						<id>299</id>
-						<name>tmp_70_cast</name>
+						<name>tmp_75_cast</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
 						<lineNumber>122</lineNumber>
@@ -9563,7 +9563,7 @@
 					<Obj>
 						<type>0</type>
 						<id>300</id>
-						<name>tmp_65</name>
+						<name>tmp_69</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
 						<lineNumber>122</lineNumber>
@@ -9612,7 +9612,7 @@
 					<Obj>
 						<type>0</type>
 						<id>301</id>
-						<name>tmp_71_cast</name>
+						<name>tmp_76_cast</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
 						<lineNumber>122</lineNumber>
@@ -9660,7 +9660,7 @@
 					<Obj>
 						<type>0</type>
 						<id>302</id>
-						<name>tmp_66</name>
+						<name>tmp_70</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
 						<lineNumber>122</lineNumber>
@@ -9759,7 +9759,7 @@
 					<Obj>
 						<type>0</type>
 						<id>305</id>
-						<name>tmp_67</name>
+						<name>tmp_71</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
 						<lineNumber>122</lineNumber>
@@ -9808,7 +9808,7 @@
 					<Obj>
 						<type>0</type>
 						<id>306</id>
-						<name>tmp_73_cast</name>
+						<name>tmp_78_cast</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
 						<lineNumber>122</lineNumber>
@@ -9856,7 +9856,7 @@
 					<Obj>
 						<type>0</type>
 						<id>307</id>
-						<name>tmp_68</name>
+						<name>tmp_72</name>
 						<fileName>mnist_AXI_Stream.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
 						<lineNumber>122</lineNumber>

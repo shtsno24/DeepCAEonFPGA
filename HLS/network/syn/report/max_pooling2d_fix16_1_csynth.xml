@@ -60,7 +60,7 @@
 <Resources>
 <DSP48E>4</DSP48E>
 <FF>512</FF>
-<LUT>666</LUT>
+<LUT>634</LUT>
 <BRAM_18K>0</BRAM_18K>
 </Resources>
 <AvailableResources>

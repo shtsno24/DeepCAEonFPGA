@@ -851,9 +851,6 @@ WARNING: [XSIM 43-3431] One or more environment variables have been detected whi
     LIBRARY_PATH
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/glbl.v" into library work
 INFO: [VRFC 10-311] analyzing module glbl
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/network_mul_mul_14s_16s_30_1_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module network_mul_mul_14s_16s_30_1_1_DSP48_0
-INFO: [VRFC 10-311] analyzing module network_mul_mul_14s_16s_30_1_1
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/network_Padding2D_0_array.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module network_Padding2D_0_array_ram
 INFO: [VRFC 10-311] analyzing module network_Padding2D_0_array
@@ -865,6 +862,9 @@ INFO: [VRFC 10-311] analyzing module network_Padding2D_3_array
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/conv2d_fix16_1_Conv2D_0_w_0.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module conv2d_fix16_1_Conv2D_0_w_0_rom
 INFO: [VRFC 10-311] analyzing module conv2d_fix16_1_Conv2D_0_w_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/network_mul_mul_5ns_16ns_21_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module network_mul_mul_5ns_16ns_21_1_1_DSP48_0
+INFO: [VRFC 10-311] analyzing module network_mul_mul_5ns_16ns_21_1_1
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/network_MaxPooling2D_1_array.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module network_MaxPooling2D_1_array_ram
 INFO: [VRFC 10-311] analyzing module network_MaxPooling2D_1_array
@@ -872,6 +872,9 @@ INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA
 INFO: [VRFC 10-311] analyzing module up_sampling2d_fix16_1
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/network.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module network
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/network_mul_mul_16s_14s_30_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module network_mul_mul_16s_14s_30_1_1_DSP48_1
+INFO: [VRFC 10-311] analyzing module network_mul_mul_16s_14s_30_1_1
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/padding2d_fix16_4.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module padding2d_fix16_4
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/conv2d_fix16_2_Conv2D_1_b.v" into library xil_defaultlib
@@ -908,6 +911,12 @@ INFO: [VRFC 10-311] analyzing module network_Conv2D_1_array
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/network_out_0_keep_V.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module network_out_0_keep_V_ram
 INFO: [VRFC 10-311] analyzing module network_out_0_keep_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/network_mul_mul_13s_16s_29_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module network_mul_mul_13s_16s_29_1_1_DSP48_3
+INFO: [VRFC 10-311] analyzing module network_mul_mul_13s_16s_29_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/network_mul_mul_16ns_16ns_32_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module network_mul_mul_16ns_16ns_32_1_1_DSP48_2
+INFO: [VRFC 10-311] analyzing module network_mul_mul_16ns_16ns_32_1_1
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/AESL_axi_slave_AXILiteS.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module AESL_axi_slave_AXILiteS
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/network_MaxPooling2D_0_array.v" into library xil_defaultlib
@@ -954,9 +963,6 @@ INFO: [VRFC 10-311] analyzing module network_out_0_id_V_ram
 INFO: [VRFC 10-311] analyzing module network_out_0_id_V
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/up_sampling2d_fix16.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module up_sampling2d_fix16
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/network_mul_mul_16s_13s_29_1_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module network_mul_mul_16s_13s_29_1_1_DSP48_1
-INFO: [VRFC 10-311] analyzing module network_mul_mul_16s_13s_29_1_1
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/network_Conv2D_4_array.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module network_Conv2D_4_array_ram
 INFO: [VRFC 10-311] analyzing module network_Conv2D_4_array
@@ -997,33 +1003,35 @@ Compiling module xil_defaultlib.network_out_0_keep_V_ram
 Compiling module xil_defaultlib.network_out_0_keep_V(DataWidth=2...
 Compiling module xil_defaultlib.network_out_0_id_V_ram
 Compiling module xil_defaultlib.network_out_0_id_V(DataWidth=1,A...
-Compiling module xil_defaultlib.conv2d_fix16_228_Conv2D_3_b_rom
-Compiling module xil_defaultlib.conv2d_fix16_228_Conv2D_3_b(Data...
-Compiling module xil_defaultlib.conv2d_fix16_228_Conv2D_3_w_rom
-Compiling module xil_defaultlib.conv2d_fix16_228_Conv2D_3_w(Data...
-Compiling module xil_defaultlib.network_mul_mul_16s_13s_29_1_1_D...
-Compiling module xil_defaultlib.network_mul_mul_16s_13s_29_1_1(I...
-Compiling module xil_defaultlib.conv2d_fix16_228
+Compiling module xil_defaultlib.conv2d_fix16_3_Conv2D_2_b_rom
+Compiling module xil_defaultlib.conv2d_fix16_3_Conv2D_2_b(DataWi...
+Compiling module xil_defaultlib.conv2d_fix16_3_Conv2D_2_w_rom
+Compiling module xil_defaultlib.conv2d_fix16_3_Conv2D_2_w(DataWi...
+Compiling module xil_defaultlib.network_mul_mul_16s_14s_30_1_1_D...
+Compiling module xil_defaultlib.network_mul_mul_16s_14s_30_1_1(I...
+Compiling module xil_defaultlib.conv2d_fix16_3
 Compiling module xil_defaultlib.conv2d_fix16_1_Conv2D_0_b_rom
 Compiling module xil_defaultlib.conv2d_fix16_1_Conv2D_0_b(DataWi...
 Compiling module xil_defaultlib.conv2d_fix16_1_Conv2D_0_w_0_rom
 Compiling module xil_defaultlib.conv2d_fix16_1_Conv2D_0_w_0(Data...
-Compiling module xil_defaultlib.network_mul_mul_14s_16s_30_1_1_D...
-Compiling module xil_defaultlib.network_mul_mul_14s_16s_30_1_1(I...
 Compiling module xil_defaultlib.conv2d_fix16_1
 Compiling module xil_defaultlib.conv2d_fix16_2_Conv2D_1_b_rom
 Compiling module xil_defaultlib.conv2d_fix16_2_Conv2D_1_b(DataWi...
 Compiling module xil_defaultlib.conv2d_fix16_2_Conv2D_1_w_rom
 Compiling module xil_defaultlib.conv2d_fix16_2_Conv2D_1_w(DataWi...
+Compiling module xil_defaultlib.network_mul_mul_13s_16s_29_1_1_D...
+Compiling module xil_defaultlib.network_mul_mul_13s_16s_29_1_1(I...
 Compiling module xil_defaultlib.conv2d_fix16_2
-Compiling module xil_defaultlib.conv2d_fix16_3_Conv2D_2_b_rom
-Compiling module xil_defaultlib.conv2d_fix16_3_Conv2D_2_b(DataWi...
-Compiling module xil_defaultlib.conv2d_fix16_3_Conv2D_2_w_rom
-Compiling module xil_defaultlib.conv2d_fix16_3_Conv2D_2_w(DataWi...
-Compiling module xil_defaultlib.conv2d_fix16_3
+Compiling module xil_defaultlib.conv2d_fix16_228_Conv2D_3_b_rom
+Compiling module xil_defaultlib.conv2d_fix16_228_Conv2D_3_b(Data...
+Compiling module xil_defaultlib.conv2d_fix16_228_Conv2D_3_w_rom
+Compiling module xil_defaultlib.conv2d_fix16_228_Conv2D_3_w(Data...
+Compiling module xil_defaultlib.conv2d_fix16_228
 Compiling module xil_defaultlib.conv2d_fix16_Conv2D_4_w_0_rom
 Compiling module xil_defaultlib.conv2d_fix16_Conv2D_4_w_0(DataWi...
 Compiling module xil_defaultlib.conv2d_fix16
+Compiling module xil_defaultlib.network_mul_mul_16ns_16ns_32_1_1...
+Compiling module xil_defaultlib.network_mul_mul_16ns_16ns_32_1_1...
 Compiling module xil_defaultlib.padding2d_fix16
 Compiling module xil_defaultlib.padding2d_fix16_3
 Compiling module xil_defaultlib.padding2d_fix16_1
@@ -1032,6 +1040,8 @@ Compiling module xil_defaultlib.max_pooling2d_fix16_1
 Compiling module xil_defaultlib.max_pooling2d_fix16
 Compiling module xil_defaultlib.up_sampling2d_fix16
 Compiling module xil_defaultlib.up_sampling2d_fix16_1
+Compiling module xil_defaultlib.network_mul_mul_5ns_16ns_21_1_1_...
+Compiling module xil_defaultlib.network_mul_mul_5ns_16ns_21_1_1(...
 Compiling module xil_defaultlib.padding2d_fix16_4
 Compiling module xil_defaultlib.network
 Compiling module xil_defaultlib.fifo(DEPTH=784,WIDTH=16)
@@ -1050,8 +1060,8 @@ Built simulation snapshot network
     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 
 source /home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/xsim.dir/network/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-186] '/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/xsim.dir/network/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Sun Oct 27 13:25:11 2019. For additional details about this file, please refer to the WebTalk help file at /tools/Xilinx/Vivado/2018.3/doc/webtalk_introduction.html.
-INFO: [Common 17-206] Exiting Webtalk at Sun Oct 27 13:25:11 2019...
+INFO: [Common 17-186] '/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/xsim.dir/network/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Mon Oct 28 14:13:53 2019. For additional details about this file, please refer to the WebTalk help file at /tools/Xilinx/Vivado/2018.3/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Mon Oct 28 14:13:53 2019...
 
 ****** xsim v2018.3 (64-bit)
   **** SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
@@ -1187,12 +1197,12 @@ WARNING: [Simtcl 6-197] One or more HDL objects could not be logged because of o
 // RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
 ////////////////////////////////////////////////////////////////////////////////////
 // RTL Simulation : 0 / 1 [n/a] @ "125000"
-// RTL Simulation : 1 / 1 [n/a] @ "39049145000"
+// RTL Simulation : 1 / 1 [n/a] @ "10815485000"
 ////////////////////////////////////////////////////////////////////////////////////
-$finish called at time : 39049185 ns : File "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/network.autotb.v" Line 463
-run: Time (s): cpu = 00:01:20 ; elapsed = 00:04:25 . Memory (MB): peak = 1416.070 ; gain = 8.004 ; free physical = 906 ; free virtual = 7061
+$finish called at time : 10815525 ns : File "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/network.autotb.v" Line 463
+run: Time (s): cpu = 00:00:25 ; elapsed = 00:01:19 . Memory (MB): peak = 1416.070 ; gain = 8.004 ; free physical = 970 ; free virtual = 6236
 ## quit
-INFO: [Common 17-206] Exiting xsim at Sun Oct 27 13:29:46 2019...
+INFO: [Common 17-206] Exiting xsim at Mon Oct 28 14:15:22 2019...
 [[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
 [0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
 [0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
