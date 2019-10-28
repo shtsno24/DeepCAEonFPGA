@@ -18,9 +18,7 @@ network_Padding2D_1_array
 network_Conv2D_1_array
 network_MaxPooling2D_1_array
 network_Padding2D_2_array
-network_UpSampling2D_0_array
 network_Padding2D_3_array
-network_UpSampling2D_1_array
 network_Padding2D_4_array
 network_Conv2D_4_array
 network_input_0_array_0

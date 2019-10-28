@@ -113,17 +113,11 @@ INFO: [VRFC 10-311] analyzing module conv2d_fix16_228_Conv2D_3_w_rom
 INFO: [VRFC 10-311] analyzing module conv2d_fix16_228_Conv2D_3_w
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/AESL_axi_s_output_data.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module AESL_axi_s_output_data
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/network_UpSampling2D_0_array.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module network_UpSampling2D_0_array_ram
-INFO: [VRFC 10-311] analyzing module network_UpSampling2D_0_array
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/network_out_0_id_V.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module network_out_0_id_V_ram
 INFO: [VRFC 10-311] analyzing module network_out_0_id_V
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/up_sampling2d_fix16.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module up_sampling2d_fix16
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/network_UpSampling2D_1_array.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module network_UpSampling2D_1_array_ram
-INFO: [VRFC 10-311] analyzing module network_UpSampling2D_1_array
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/network_Conv2D_4_array.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module network_Conv2D_4_array_ram
 INFO: [VRFC 10-311] analyzing module network_Conv2D_4_array
@@ -151,12 +145,8 @@ Compiling module xil_defaultlib.network_MaxPooling2D_1_array_ram
 Compiling module xil_defaultlib.network_MaxPooling2D_1_array(Dat...
 Compiling module xil_defaultlib.network_Padding2D_2_array_ram
 Compiling module xil_defaultlib.network_Padding2D_2_array(DataWi...
-Compiling module xil_defaultlib.network_UpSampling2D_0_array_ram
-Compiling module xil_defaultlib.network_UpSampling2D_0_array(Dat...
 Compiling module xil_defaultlib.network_Padding2D_3_array_ram
 Compiling module xil_defaultlib.network_Padding2D_3_array(DataWi...
-Compiling module xil_defaultlib.network_UpSampling2D_1_array_ram
-Compiling module xil_defaultlib.network_UpSampling2D_1_array(Dat...
 Compiling module xil_defaultlib.network_Padding2D_4_array_ram
 Compiling module xil_defaultlib.network_Padding2D_4_array(DataWi...
 Compiling module xil_defaultlib.network_Conv2D_4_array_ram
@@ -168,12 +158,6 @@ Compiling module xil_defaultlib.network_out_0_keep_V_ram
 Compiling module xil_defaultlib.network_out_0_keep_V(DataWidth=2...
 Compiling module xil_defaultlib.network_out_0_id_V_ram
 Compiling module xil_defaultlib.network_out_0_id_V(DataWidth=1,A...
-Compiling module xil_defaultlib.network_mul_mul_16ns_16ns_32_1_1...
-Compiling module xil_defaultlib.network_mul_mul_16ns_16ns_32_1_1...
-Compiling module xil_defaultlib.padding2d_fix16
-Compiling module xil_defaultlib.padding2d_fix16_3
-Compiling module xil_defaultlib.padding2d_fix16_1
-Compiling module xil_defaultlib.padding2d_fix16_2
 Compiling module xil_defaultlib.conv2d_fix16_3_Conv2D_2_b_rom
 Compiling module xil_defaultlib.conv2d_fix16_3_Conv2D_2_b(DataWi...
 Compiling module xil_defaultlib.conv2d_fix16_3_Conv2D_2_w_rom
@@ -201,13 +185,19 @@ Compiling module xil_defaultlib.conv2d_fix16_228
 Compiling module xil_defaultlib.conv2d_fix16_Conv2D_4_w_0_rom
 Compiling module xil_defaultlib.conv2d_fix16_Conv2D_4_w_0(DataWi...
 Compiling module xil_defaultlib.conv2d_fix16
+Compiling module xil_defaultlib.network_mul_mul_16ns_16ns_32_1_1...
+Compiling module xil_defaultlib.network_mul_mul_16ns_16ns_32_1_1...
+Compiling module xil_defaultlib.padding2d_fix16
+Compiling module xil_defaultlib.padding2d_fix16_3
+Compiling module xil_defaultlib.padding2d_fix16_1
+Compiling module xil_defaultlib.padding2d_fix16_2
+Compiling module xil_defaultlib.max_pooling2d_fix16_1
+Compiling module xil_defaultlib.max_pooling2d_fix16
+Compiling module xil_defaultlib.up_sampling2d_fix16
+Compiling module xil_defaultlib.up_sampling2d_fix16_1
 Compiling module xil_defaultlib.network_mul_mul_5ns_16ns_21_1_1_...
 Compiling module xil_defaultlib.network_mul_mul_5ns_16ns_21_1_1(...
 Compiling module xil_defaultlib.padding2d_fix16_4
-Compiling module xil_defaultlib.up_sampling2d_fix16
-Compiling module xil_defaultlib.up_sampling2d_fix16_1
-Compiling module xil_defaultlib.max_pooling2d_fix16_1
-Compiling module xil_defaultlib.max_pooling2d_fix16
 Compiling module xil_defaultlib.network
 Compiling module xil_defaultlib.fifo(DEPTH=784,WIDTH=16)
 Compiling module xil_defaultlib.fifo(DEPTH=784,WIDTH=2)

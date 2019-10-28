@@ -558,10 +558,10 @@
 
 <Node id="37" bw="15" op_0_bw="11">
 <![CDATA[
-.preheader7.preheader:4  %tmp_39 = sext i11 %Conv2D_0_b_load to i15
+.preheader7.preheader:4  %tmp_16 = sext i11 %Conv2D_0_b_load to i15
 
 ]]></Node>
-<StgValue><ssdm name="tmp_39"/></StgValue>
+<StgValue><ssdm name="tmp_16"/></StgValue>
 </operation>
 
 <operation id="47" st_id="3" stage="1" lat="1">
@@ -1196,10 +1196,10 @@
 
 <Node id="76" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-.preheader.preheader:3  %tmp_68 = shl i32 %tmp_121, 3
+.preheader.preheader:3  %tmp_51 = shl i32 %tmp_121, 3
 
 ]]></Node>
-<StgValue><ssdm name="tmp_68"/></StgValue>
+<StgValue><ssdm name="tmp_51"/></StgValue>
 </operation>
 
 <operation id="87" st_id="9" stage="1" lat="1">
@@ -1211,7 +1211,7 @@
 
 <Node id="77" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-.preheader.preheader:4  %tmp_122 = add i32 %tmp_121, %tmp_68
+.preheader.preheader:4  %tmp_122 = add i32 %tmp_121, %tmp_51
 
 ]]></Node>
 <StgValue><ssdm name="tmp_122"/></StgValue>
@@ -1286,10 +1286,10 @@
 
 <Node id="85" bw="64" op_0_bw="32">
 <![CDATA[
-.preheader.preheader:12  %tmp_130 = sext i32 %tmp_122 to i64
+.preheader.preheader:12  %tmp_133 = sext i32 %tmp_122 to i64
 
 ]]></Node>
-<StgValue><ssdm name="tmp_130"/></StgValue>
+<StgValue><ssdm name="tmp_133"/></StgValue>
 </operation>
 
 <operation id="93" st_id="9" stage="1" lat="1">
@@ -1301,7 +1301,7 @@
 
 <Node id="86" bw="8" op_0_bw="14" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-.preheader.preheader:13  %Conv2D_0_w_0_addr = getelementptr [144 x i14]* @Conv2D_0_w_0, i64 0, i64 %tmp_130
+.preheader.preheader:13  %Conv2D_0_w_0_addr = getelementptr [144 x i14]* @Conv2D_0_w_0, i64 0, i64 %tmp_133
 
 ]]></Node>
 <StgValue><ssdm name="Conv2D_0_w_0_addr"/></StgValue>
@@ -1802,10 +1802,10 @@
 
 <Node id="89" bw="30" op_0_bw="30" op_1_bw="30">
 <![CDATA[
-.preheader.preheader:16  %tmp_131 = mul i30 %tmp_130_cast, %tmp_134_cast
+.preheader.preheader:16  %tmp_134 = mul i30 %tmp_130_cast, %tmp_134_cast
 
 ]]></Node>
-<StgValue><ssdm name="tmp_131"/></StgValue>
+<StgValue><ssdm name="tmp_134"/></StgValue>
 </operation>
 
 <operation id="127" st_id="11" stage="1" lat="1">
@@ -1817,10 +1817,10 @@
 
 <Node id="90" bw="16" op_0_bw="16" op_1_bw="30" op_2_bw="32" op_3_bw="32">
 <![CDATA[
-.preheader.preheader:17  %tmp_132 = call i16 @_ssdm_op_PartSelect.i16.i30.i32.i32(i30 %tmp_131, i32 14, i32 29)
+.preheader.preheader:17  %tmp_135 = call i16 @_ssdm_op_PartSelect.i16.i30.i32.i32(i30 %tmp_134, i32 14, i32 29)
 
 ]]></Node>
-<StgValue><ssdm name="tmp_132"/></StgValue>
+<StgValue><ssdm name="tmp_135"/></StgValue>
 </operation>
 
 <operation id="128" st_id="11" stage="2" lat="2">
@@ -2735,7 +2735,7 @@
 
 <Node id="192" bw="16" op_0_bw="16" op_1_bw="16">
 <![CDATA[
-.preheader.preheader:119  %tmp2 = add i16 %tmp_132, %output_load_3
+.preheader.preheader:119  %tmp2 = add i16 %tmp_135, %output_load_3
 
 ]]></Node>
 <StgValue><ssdm name="tmp2"/></StgValue>
@@ -3368,10 +3368,10 @@
 
 <Node id="205" bw="15" op_0_bw="16">
 <![CDATA[
-._crit_edge:1  %tmp_66 = trunc i16 %output_load to i15
+._crit_edge:1  %tmp_49 = trunc i16 %output_load to i15
 
 ]]></Node>
-<StgValue><ssdm name="tmp_66"/></StgValue>
+<StgValue><ssdm name="tmp_49"/></StgValue>
 </operation>
 
 <operation id="230" st_id="18" stage="1" lat="1">
@@ -3398,7 +3398,7 @@
 
 <Node id="207" bw="15" op_0_bw="15" op_1_bw="15">
 <![CDATA[
-._crit_edge:3  %tmp_117_cast = add i15 %tmp_66, %tmp_39
+._crit_edge:3  %tmp_117_cast = add i15 %tmp_49, %tmp_16
 
 ]]></Node>
 <StgValue><ssdm name="tmp_117_cast"/></StgValue>
@@ -3413,10 +3413,10 @@
 
 <Node id="208" bw="1" op_0_bw="1" op_1_bw="16" op_2_bw="32">
 <![CDATA[
-._crit_edge:4  %tmp_67 = call i1 @_ssdm_op_BitSelect.i1.i16.i32(i16 %tmp_117, i32 15)
+._crit_edge:4  %tmp_50 = call i1 @_ssdm_op_BitSelect.i1.i16.i32(i16 %tmp_117, i32 15)
 
 ]]></Node>
-<StgValue><ssdm name="tmp_67"/></StgValue>
+<StgValue><ssdm name="tmp_50"/></StgValue>
 </operation>
 
 <operation id="233" st_id="18" stage="1" lat="1">
@@ -3428,7 +3428,7 @@
 
 <Node id="209" bw="15" op_0_bw="1" op_1_bw="15" op_2_bw="15">
 <![CDATA[
-._crit_edge:5  %p_tmp_s = select i1 %tmp_67, i15 0, i15 %tmp_117_cast
+._crit_edge:5  %p_tmp_s = select i1 %tmp_50, i15 0, i15 %tmp_117_cast
 
 ]]></Node>
 <StgValue><ssdm name="p_tmp_s"/></StgValue>

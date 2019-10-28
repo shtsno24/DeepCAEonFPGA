@@ -14,7 +14,7 @@ set C_modelType { void 0 }
 set C_modelArgList {
 	{ input_height uint 16 regular  }
 	{ input_width uint 16 regular  }
-	{ input_r int 16 regular {array 1568 { 1 1 } 1 1 }  }
+	{ input_r int 16 regular {array 1568 { 1 3 } 1 1 }  }
 	{ output_depth uint 16 regular  }
 	{ output_height uint 16 regular  }
 	{ output_width uint 16 regular  }
@@ -29,7 +29,7 @@ set C_modelArgMapList {[
  	{ "Name" : "output_width", "interface" : "wire", "bitwidth" : 16, "direction" : "READONLY"} , 
  	{ "Name" : "MaxPooling2D_1_array", "interface" : "memory", "bitwidth" : 16, "direction" : "READWRITE", "bitSlice":[{"low":0,"up":15,"cElement": [{"cName": "MaxPooling2D_1_array","cData": "short","bit_use": { "low": 0,"up": 15},"cArray": [{"low" : 0,"up" : 7,"step" : 1},{"low" : 0,"up" : 6,"step" : 1},{"low" : 0,"up" : 6,"step" : 1}]}]}], "extern" : 0} ]}
 # RTL Port declarations: 
-set portNum 22
+set portNum 19
 set portList { 
 	{ ap_clk sc_in sc_logic 1 clock -1 } 
 	{ ap_rst sc_in sc_logic 1 reset -1 active_high_sync } 
@@ -42,9 +42,6 @@ set portList {
 	{ input_r_address0 sc_out sc_lv 11 signal 2 } 
 	{ input_r_ce0 sc_out sc_logic 1 signal 2 } 
 	{ input_r_q0 sc_in sc_lv 16 signal 2 } 
-	{ input_r_address1 sc_out sc_lv 11 signal 2 } 
-	{ input_r_ce1 sc_out sc_logic 1 signal 2 } 
-	{ input_r_q1 sc_in sc_lv 16 signal 2 } 
 	{ output_depth sc_in sc_lv 16 signal 3 } 
 	{ output_height sc_in sc_lv 16 signal 4 } 
 	{ output_width sc_in sc_lv 16 signal 5 } 
@@ -66,9 +63,6 @@ set NewPortList {[
  	{ "name": "input_r_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":11, "type": "signal", "bundle":{"name": "input_r", "role": "address0" }} , 
  	{ "name": "input_r_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "input_r", "role": "ce0" }} , 
  	{ "name": "input_r_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "input_r", "role": "q0" }} , 
- 	{ "name": "input_r_address1", "direction": "out", "datatype": "sc_lv", "bitwidth":11, "type": "signal", "bundle":{"name": "input_r", "role": "address1" }} , 
- 	{ "name": "input_r_ce1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "input_r", "role": "ce1" }} , 
- 	{ "name": "input_r_q1", "direction": "in", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "input_r", "role": "q1" }} , 
  	{ "name": "output_depth", "direction": "in", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "output_depth", "role": "default" }} , 
  	{ "name": "output_height", "direction": "in", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "output_height", "role": "default" }} , 
  	{ "name": "output_width", "direction": "in", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "output_width", "role": "default" }} , 
@@ -106,11 +100,11 @@ set ArgLastReadFirstWriteLatency {
 	max_pooling2d_fix16 {
 		input_height {Type I LastRead 0 FirstWrite -1}
 		input_width {Type I LastRead 0 FirstWrite -1}
-		input_r {Type I LastRead 8 FirstWrite -1}
+		input_r {Type I LastRead 9 FirstWrite -1}
 		output_depth {Type I LastRead 0 FirstWrite -1}
 		output_height {Type I LastRead 0 FirstWrite -1}
 		output_width {Type I LastRead 0 FirstWrite -1}
-		MaxPooling2D_1_array {Type IO LastRead 9 FirstWrite 5}}}
+		MaxPooling2D_1_array {Type IO LastRead 8 FirstWrite 9}}}
 
 set hasDtUnsupportedChannel 0
 
@@ -125,7 +119,7 @@ set PipelineEnableSignalInfo {[
 set Spec2ImplPortList { 
 	input_height { ap_none {  { input_height in_data 0 16 } } }
 	input_width { ap_none {  { input_width in_data 0 16 } } }
-	input_r { ap_memory {  { input_r_address0 mem_address 1 11 }  { input_r_ce0 mem_ce 1 1 }  { input_r_q0 mem_dout 0 16 }  { input_r_address1 MemPortADDR2 1 11 }  { input_r_ce1 MemPortCE2 1 1 }  { input_r_q1 MemPortDOUT2 0 16 } } }
+	input_r { ap_memory {  { input_r_address0 mem_address 1 11 }  { input_r_ce0 mem_ce 1 1 }  { input_r_q0 mem_dout 0 16 } } }
 	output_depth { ap_none {  { output_depth in_data 0 16 } } }
 	output_height { ap_none {  { output_height in_data 0 16 } } }
 	output_width { ap_none {  { output_width in_data 0 16 } } }

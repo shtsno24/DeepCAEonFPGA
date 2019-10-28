@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'conv2d_fix16_1'" level="0">
-<item name = "Date">Sun Oct 27 20:25:53 2019
+<item name = "Date">Mon Oct 28 11:34:53 2019
 </item>
 <item name = "Version">2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)</item>
 <item name = "Project">HLS</item>
@@ -69,6 +69,7 @@
 </item>
 <item name = "DSP48"><table name="" hasTotal="0">
 <keys size="3">Instance, Module, Expression</keys>
+<column name="network_mul_mul_16s_14s_30_1_1_U7">network_mul_mul_16s_14s_30_1_1, i0 * i1</column>
 <column name="network_mul_mul_16s_14s_30_1_1_U8">network_mul_mul_16s_14s_30_1_1, i0 * i1</column>
 <column name="network_mul_mul_16s_14s_30_1_1_U9">network_mul_mul_16s_14s_30_1_1, i0 * i1</column>
 <column name="network_mul_mul_16s_14s_30_1_1_U10">network_mul_mul_16s_14s_30_1_1, i0 * i1</column>
@@ -77,7 +78,6 @@
 <column name="network_mul_mul_16s_14s_30_1_1_U13">network_mul_mul_16s_14s_30_1_1, i0 * i1</column>
 <column name="network_mul_mul_16s_14s_30_1_1_U14">network_mul_mul_16s_14s_30_1_1, i0 * i1</column>
 <column name="network_mul_mul_16s_14s_30_1_1_U15">network_mul_mul_16s_14s_30_1_1, i0 * i1</column>
-<column name="network_mul_mul_16s_14s_30_1_1_U16">network_mul_mul_16s_14s_30_1_1, i0 * i1</column>
 </table>
 </item>
 <item name = "Memory"><table name="" hasTotal="1">
@@ -215,7 +215,7 @@
 <column name="tmp_128_2_1_reg_1316">32, 0, 32, 0</column>
 <column name="tmp_128_2_2_reg_1321">32, 0, 32, 0</column>
 <column name="tmp_128_2_reg_1311">32, 0, 32, 0</column>
-<column name="tmp_132_reg_1281">16, 0, 16, 0</column>
+<column name="tmp_135_reg_1281">16, 0, 16, 0</column>
 <column name="tmp_137_0_1_reg_1326">16, 0, 16, 0</column>
 <column name="tmp_137_0_2_reg_1331">16, 0, 16, 0</column>
 <column name="tmp_137_1_1_reg_1371">16, 0, 16, 0</column>
@@ -225,7 +225,7 @@
 <column name="tmp_137_2_2_reg_1406">16, 0, 16, 0</column>
 <column name="tmp_137_2_reg_1391">16, 0, 16, 0</column>
 <column name="tmp_138_2_2_reg_1411">16, 0, 16, 0</column>
-<column name="tmp_39_reg_1110">15, 0, 15, 0</column>
+<column name="tmp_16_reg_1110">15, 0, 15, 0</column>
 <column name="tmp_reg_1128">32, 0, 32, 0</column>
 <column name="tmp_s_reg_1055">16, 0, 32, 16</column>
 </table>

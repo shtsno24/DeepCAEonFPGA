@@ -54,6 +54,7 @@ struct conv2d_fix16_1 : public sc_module {
 
     conv2d_fix16_1_Conv2D_0_b* Conv2D_0_b_U;
     conv2d_fix16_1_Conv2D_0_w_0* Conv2D_0_w_0_U;
+    network_mul_mul_16s_14s_30_1_1<1,1,16,14,30>* network_mul_mul_16s_14s_30_1_1_U7;
     network_mul_mul_16s_14s_30_1_1<1,1,16,14,30>* network_mul_mul_16s_14s_30_1_1_U8;
     network_mul_mul_16s_14s_30_1_1<1,1,16,14,30>* network_mul_mul_16s_14s_30_1_1_U9;
     network_mul_mul_16s_14s_30_1_1<1,1,16,14,30>* network_mul_mul_16s_14s_30_1_1_U10;
@@ -62,7 +63,6 @@ struct conv2d_fix16_1 : public sc_module {
     network_mul_mul_16s_14s_30_1_1<1,1,16,14,30>* network_mul_mul_16s_14s_30_1_1_U13;
     network_mul_mul_16s_14s_30_1_1<1,1,16,14,30>* network_mul_mul_16s_14s_30_1_1_U14;
     network_mul_mul_16s_14s_30_1_1<1,1,16,14,30>* network_mul_mul_16s_14s_30_1_1_U15;
-    network_mul_mul_16s_14s_30_1_1<1,1,16,14,30>* network_mul_mul_16s_14s_30_1_1_U16;
     sc_signal< sc_lv<19> > ap_CS_fsm;
     sc_signal< sc_logic > ap_CS_fsm_state1;
     sc_signal< sc_lv<4> > Conv2D_0_b_address0;
@@ -108,8 +108,8 @@ struct conv2d_fix16_1 : public sc_module {
     sc_signal< sc_lv<16> > Conv2D_0_b_load_cast_fu_436_p1;
     sc_signal< sc_lv<16> > Conv2D_0_b_load_cast_reg_1105;
     sc_signal< sc_logic > ap_CS_fsm_state3;
-    sc_signal< sc_lv<15> > tmp_39_fu_440_p1;
-    sc_signal< sc_lv<15> > tmp_39_reg_1110;
+    sc_signal< sc_lv<15> > tmp_16_fu_440_p1;
+    sc_signal< sc_lv<15> > tmp_16_reg_1110;
     sc_signal< sc_lv<16> > out_h_3_fu_449_p2;
     sc_signal< sc_lv<16> > out_h_3_reg_1118;
     sc_signal< sc_logic > ap_CS_fsm_state4;
@@ -156,7 +156,7 @@ struct conv2d_fix16_1 : public sc_module {
     sc_signal< sc_lv<32> > tmp5_1_reg_1242;
     sc_signal< sc_lv<32> > tmp5_2_fu_600_p2;
     sc_signal< sc_lv<32> > tmp5_2_reg_1249;
-    sc_signal< sc_lv<16> > tmp_132_reg_1281;
+    sc_signal< sc_lv<16> > tmp_135_reg_1281;
     sc_signal< sc_lv<16> > Padding2D_0_array_lo_3_reg_1286;
     sc_signal< sc_lv<32> > tmp_128_2_fu_707_p2;
     sc_signal< sc_lv<32> > tmp_128_2_reg_1311;
@@ -197,7 +197,7 @@ struct conv2d_fix16_1 : public sc_module {
     sc_signal< sc_lv<64> > tmp_112_fu_431_p1;
     sc_signal< sc_lv<64> > tmp_116_fu_493_p1;
     sc_signal< sc_lv<64> > tmp_129_fu_577_p1;
-    sc_signal< sc_lv<64> > tmp_130_fu_582_p1;
+    sc_signal< sc_lv<64> > tmp_133_fu_582_p1;
     sc_signal< sc_lv<64> > tmp_129_0_1_fu_591_p1;
     sc_signal< sc_lv<64> > tmp_133_0_1_fu_609_p1;
     sc_signal< sc_lv<64> > tmp_129_0_2_fu_618_p1;
@@ -216,7 +216,7 @@ struct conv2d_fix16_1 : public sc_module {
     sc_signal< sc_lv<64> > tmp_129_2_2_fu_846_p1;
     sc_signal< sc_lv<16> > p_tmp_cast_fu_968_p1;
     sc_signal< sc_lv<11> > Conv2D_0_b_load_cast_fu_436_p0;
-    sc_signal< sc_lv<11> > tmp_39_fu_440_p0;
+    sc_signal< sc_lv<11> > tmp_16_fu_440_p0;
     sc_signal< sc_lv<16> > tmp3_fu_465_p1;
     sc_signal< sc_lv<32> > tmp_115_fu_488_p2;
     sc_signal< sc_lv<17> > tmp_114_cast_fu_484_p1;
@@ -224,7 +224,7 @@ struct conv2d_fix16_1 : public sc_module {
     sc_signal< sc_lv<17> > tmp_127_0_2_fu_508_p2;
     sc_signal< sc_lv<32> > tmp_119_fu_529_p1;
     sc_signal< sc_lv<16> > tmp5_fu_549_p0;
-    sc_signal< sc_lv<32> > tmp_68_fu_563_p2;
+    sc_signal< sc_lv<32> > tmp_51_fu_563_p2;
     sc_signal< sc_lv<32> > tmp_128_fu_573_p2;
     sc_signal< sc_lv<32> > tmp_128_0_1_fu_587_p2;
     sc_signal< sc_lv<16> > tmp5_1_fu_596_p0;
@@ -234,7 +234,7 @@ struct conv2d_fix16_1 : public sc_module {
     sc_signal< sc_lv<32> > tmp_132_0_2_fu_623_p2;
     sc_signal< sc_lv<32> > tmp_128_1_fu_633_p2;
     sc_signal< sc_lv<32> > tmp_132_1_fu_642_p2;
-    sc_signal< sc_lv<30> > tmp_131_fu_972_p2;
+    sc_signal< sc_lv<30> > tmp_134_fu_972_p2;
     sc_signal< sc_lv<32> > tmp_128_1_1_fu_669_p2;
     sc_signal< sc_lv<32> > tmp_132_1_1_fu_678_p2;
     sc_signal< sc_lv<32> > tmp_128_1_2_fu_688_p2;
@@ -255,9 +255,9 @@ struct conv2d_fix16_1 : public sc_module {
     sc_signal< sc_lv<16> > tmp11_fu_919_p2;
     sc_signal< sc_lv<16> > tmp10_fu_923_p2;
     sc_signal< sc_lv<16> > tmp8_fu_928_p2;
-    sc_signal< sc_lv<15> > tmp_66_fu_938_p1;
+    sc_signal< sc_lv<15> > tmp_49_fu_938_p1;
     sc_signal< sc_lv<16> > tmp_117_fu_942_p2;
-    sc_signal< sc_lv<1> > tmp_67_fu_952_p3;
+    sc_signal< sc_lv<1> > tmp_50_fu_952_p3;
     sc_signal< sc_lv<15> > tmp_117_cast_fu_947_p2;
     sc_signal< sc_lv<19> > ap_NS_fsm;
     static const sc_logic ap_const_logic_1;
@@ -420,7 +420,6 @@ struct conv2d_fix16_1 : public sc_module {
     void thread_tmp_129_2_2_fu_846_p1();
     void thread_tmp_129_2_fu_769_p1();
     void thread_tmp_129_fu_577_p1();
-    void thread_tmp_130_fu_582_p1();
     void thread_tmp_132_0_1_fu_604_p2();
     void thread_tmp_132_0_2_fu_623_p2();
     void thread_tmp_132_1_1_fu_678_p2();
@@ -437,12 +436,13 @@ struct conv2d_fix16_1 : public sc_module {
     void thread_tmp_133_2_1_fu_792_p1();
     void thread_tmp_133_2_2_fu_802_p1();
     void thread_tmp_133_2_fu_778_p1();
+    void thread_tmp_133_fu_582_p1();
     void thread_tmp_138_2_2_fu_933_p2();
-    void thread_tmp_39_fu_440_p0();
-    void thread_tmp_39_fu_440_p1();
-    void thread_tmp_66_fu_938_p1();
-    void thread_tmp_67_fu_952_p3();
-    void thread_tmp_68_fu_563_p2();
+    void thread_tmp_16_fu_440_p0();
+    void thread_tmp_16_fu_440_p1();
+    void thread_tmp_49_fu_938_p1();
+    void thread_tmp_50_fu_952_p3();
+    void thread_tmp_51_fu_563_p2();
     void thread_tmp_fu_459_p2();
     void thread_tmp_s_fu_390_p1();
     void thread_ap_NS_fsm();

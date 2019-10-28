@@ -382,10 +382,10 @@ uint16_t output_depth, uint16_t output_height, uint16_t output_width, int16_t* o
         for(uint16_t out_h = 0; out_h < output_height; out_h++){
             for(uint16_t out_w = 0; out_w < output_width; out_w++){
                 for(uint16_t in_h = 0; in_h < kernel_size; in_h++){
-_ssdm_Unroll(1, 0, 2, "");
- for(uint16_t in_w = 0; in_w < kernel_size; in_w++){
-_ssdm_Unroll(1, 0, 2, "");
- if(in_h == 0 && in_w == 0){
+
+                    for(uint16_t in_w = 0; in_w < kernel_size; in_w++){
+
+                     if(in_h == 0 && in_w == 0){
 
                             output[out_d * output_height * output_width + out_h * output_width + out_w] =
                             input[out_d * input_height * input_width + (kernel_size * out_h + in_h) * input_width + (kernel_size * out_w + in_w)];

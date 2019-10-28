@@ -382,15 +382,15 @@ uint8_t padding2d_fix16(uint16_t padding_height, uint16_t padding_width,
 
   for (uint16_t height = padding_height;
     height < padding_height + input_height; height++) {
-#pragma HLS unroll factor = 2
- for (uint16_t width = 0; width < padding_width; width++) {
+
+   for (uint16_t width = 0; width < padding_width; width++) {
     output[depth * output_height * output_width
       + height * output_width + width] = 0;
    }
    for (uint16_t width = padding_width;
      width < padding_width + input_width; width++) {
-#pragma HLS unroll factor = 8
- output[depth * output_height * output_width
+
+    output[depth * output_height * output_width
       + height * output_width + width] = input[depth
       * input_height * input_width
       + (height - padding_height) * input_width

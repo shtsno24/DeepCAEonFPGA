@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'conv2d_fix16'
 ================================================================
-* Date:           Sun Oct 27 20:25:46 2019
+* Date:           Mon Oct 28 11:34:49 2019
 
 * Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
 * Project:        HLS
@@ -195,8 +195,8 @@ ST_7 : Operation 77 [1/1] (2.55ns)   --->   "%tmp4_1 = add i32 1, %tmp4" [layers
 ST_7 : Operation 78 [1/1] (2.55ns)   --->   "%tmp4_2 = add i32 2, %tmp4" [layers_c/conv2d.cpp:26]   --->   Operation 78 'add' 'tmp4_2' <Predicate = true> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.94> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 
 State 8 <SV = 7> <Delay = 8.51>
-ST_8 : Operation 79 [1/1] (0.00ns) (grouped into LUT with out node tmp_122)   --->   "%tmp_71 = shl i32 %tmp_121, 3" [layers_c/conv2d.cpp:26]   --->   Operation 79 'shl' 'tmp_71' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 80 [1/1] (2.55ns) (out node of the LUT)   --->   "%tmp_122 = add i32 %tmp_71, %tmp_121" [layers_c/conv2d.cpp:26]   --->   Operation 80 'add' 'tmp_122' <Predicate = true> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.94> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 79 [1/1] (0.00ns) (grouped into LUT with out node tmp_122)   --->   "%tmp_54 = shl i32 %tmp_121, 3" [layers_c/conv2d.cpp:26]   --->   Operation 79 'shl' 'tmp_54' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 80 [1/1] (2.55ns) (out node of the LUT)   --->   "%tmp_122 = add i32 %tmp_54, %tmp_121" [layers_c/conv2d.cpp:26]   --->   Operation 80 'add' 'tmp_122' <Predicate = true> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.94> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_8 : Operation 81 [1/1] (2.55ns)   --->   "%tmp_128 = add i32 %tmp5, %tmp_114" [layers_c/conv2d.cpp:26]   --->   Operation 81 'add' 'tmp_128' <Predicate = true> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.94> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_8 : Operation 82 [1/1] (0.00ns)   --->   "%tmp_129 = sext i32 %tmp_128 to i64" [layers_c/conv2d.cpp:26]   --->   Operation 82 'sext' 'tmp_129' <Predicate = true> <Delay = 0.00>
 ST_8 : Operation 83 [1/1] (0.00ns)   --->   "%Padding2D_4_array_ad = getelementptr [14400 x i16]* @Padding2D_4_array, i64 0, i64 %tmp_129" [layers_c/conv2d.cpp:26]   --->   Operation 83 'getelementptr' 'Padding2D_4_array_ad' <Predicate = true> <Delay = 0.00>
@@ -240,12 +240,12 @@ ST_9 : Operation 117 [2/2] (3.25ns)   --->   "%Conv2D_4_w_0_load_3 = load i13* %
 State 10 <SV = 9> <Delay = 6.38>
 ST_10 : Operation 118 [1/1] (0.00ns)   --->   "%tmp_130_cast_cast = sext i16 %Padding2D_4_array_lo to i29" [layers_c/conv2d.cpp:26]   --->   Operation 118 'sext' 'tmp_130_cast_cast' <Predicate = true> <Delay = 0.00>
 ST_10 : Operation 119 [1/1] (0.00ns)   --->   "%tmp_134_cast_cast = sext i13 %Conv2D_4_w_0_load to i29" [layers_c/conv2d.cpp:26]   --->   Operation 119 'sext' 'tmp_134_cast_cast' <Predicate = true> <Delay = 0.00>
-ST_10 : Operation 120 [1/1] (6.38ns) (root node of the DSP)   --->   "%tmp_134 = mul i29 %tmp_134_cast_cast, %tmp_130_cast_cast" [layers_c/conv2d.cpp:26]   --->   Operation 120 'mul' 'tmp_134' <Predicate = true> <Delay = 6.38> <Core = "DSP48">   --->   Core 65 'DSP48' <Latency = 0> <II = 1> <Delay = 6.38> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
-ST_10 : Operation 121 [1/1] (0.00ns)   --->   "%tmp_72 = call i15 @_ssdm_op_PartSelect.i15.i29.i32.i32(i29 %tmp_134, i32 14, i32 28)" [layers_c/conv2d.cpp:26]   --->   Operation 121 'partselect' 'tmp_72' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 120 [1/1] (6.38ns) (root node of the DSP)   --->   "%tmp_135 = mul i29 %tmp_134_cast_cast, %tmp_130_cast_cast" [layers_c/conv2d.cpp:26]   --->   Operation 120 'mul' 'tmp_135' <Predicate = true> <Delay = 6.38> <Core = "DSP48">   --->   Core 65 'DSP48' <Latency = 0> <II = 1> <Delay = 6.38> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_10 : Operation 121 [1/1] (0.00ns)   --->   "%tmp_55 = call i15 @_ssdm_op_PartSelect.i15.i29.i32.i32(i29 %tmp_135, i32 14, i32 28)" [layers_c/conv2d.cpp:26]   --->   Operation 121 'partselect' 'tmp_55' <Predicate = true> <Delay = 0.00>
 ST_10 : Operation 122 [1/1] (0.00ns)   --->   "%tmp_130_0_1_cast_cas = sext i16 %Padding2D_4_array_lo_1 to i29" [layers_c/conv2d.cpp:26]   --->   Operation 122 'sext' 'tmp_130_0_1_cast_cas' <Predicate = true> <Delay = 0.00>
 ST_10 : Operation 123 [1/1] (0.00ns)   --->   "%tmp_134_0_1_cast_cas = sext i13 %Conv2D_4_w_0_load_1 to i29" [layers_c/conv2d.cpp:26]   --->   Operation 123 'sext' 'tmp_134_0_1_cast_cas' <Predicate = true> <Delay = 0.00>
 ST_10 : Operation 124 [1/1] (6.38ns) (root node of the DSP)   --->   "%tmp_135_0_1 = mul i29 %tmp_134_0_1_cast_cas, %tmp_130_0_1_cast_cas" [layers_c/conv2d.cpp:26]   --->   Operation 124 'mul' 'tmp_135_0_1' <Predicate = true> <Delay = 6.38> <Core = "DSP48">   --->   Core 65 'DSP48' <Latency = 0> <II = 1> <Delay = 6.38> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
-ST_10 : Operation 125 [1/1] (0.00ns)   --->   "%tmp_73 = call i15 @_ssdm_op_PartSelect.i15.i29.i32.i32(i29 %tmp_135_0_1, i32 14, i32 28)" [layers_c/conv2d.cpp:26]   --->   Operation 125 'partselect' 'tmp_73' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 125 [1/1] (0.00ns)   --->   "%tmp_56 = call i15 @_ssdm_op_PartSelect.i15.i29.i32.i32(i29 %tmp_135_0_1, i32 14, i32 28)" [layers_c/conv2d.cpp:26]   --->   Operation 125 'partselect' 'tmp_56' <Predicate = true> <Delay = 0.00>
 ST_10 : Operation 126 [1/2] (3.25ns)   --->   "%Padding2D_4_array_lo_2 = load i16* %Padding2D_4_array_ad_2, align 2" [layers_c/conv2d.cpp:26]   --->   Operation 126 'load' 'Padding2D_4_array_lo_2' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 784> <RAM>
 ST_10 : Operation 127 [1/2] (3.25ns)   --->   "%Conv2D_4_w_0_load_2 = load i13* %Conv2D_4_w_0_addr_2, align 2" [layers_c/conv2d.cpp:26]   --->   Operation 127 'load' 'Conv2D_4_w_0_load_2' <Predicate = true> <Delay = 3.25> <Core = "ROM_nP">   --->   Core 52 'ROM_nP' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 13> <Depth = 144> <ROM>
 ST_10 : Operation 128 [1/2] (3.25ns)   --->   "%Padding2D_4_array_lo_3 = load i16* %Padding2D_4_array_ad_3, align 2" [layers_c/conv2d.cpp:26]   --->   Operation 128 'load' 'Padding2D_4_array_lo_3' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 784> <RAM>
@@ -274,11 +274,11 @@ State 11 <SV = 10> <Delay = 6.38>
 ST_11 : Operation 149 [1/1] (0.00ns)   --->   "%tmp_130_0_2_cast_cas = sext i16 %Padding2D_4_array_lo_2 to i29" [layers_c/conv2d.cpp:26]   --->   Operation 149 'sext' 'tmp_130_0_2_cast_cas' <Predicate = true> <Delay = 0.00>
 ST_11 : Operation 150 [1/1] (0.00ns)   --->   "%tmp_134_0_2_cast_cas = sext i13 %Conv2D_4_w_0_load_2 to i29" [layers_c/conv2d.cpp:26]   --->   Operation 150 'sext' 'tmp_134_0_2_cast_cas' <Predicate = true> <Delay = 0.00>
 ST_11 : Operation 151 [1/1] (6.38ns) (root node of the DSP)   --->   "%tmp_135_0_2 = mul i29 %tmp_134_0_2_cast_cas, %tmp_130_0_2_cast_cas" [layers_c/conv2d.cpp:26]   --->   Operation 151 'mul' 'tmp_135_0_2' <Predicate = true> <Delay = 6.38> <Core = "DSP48">   --->   Core 65 'DSP48' <Latency = 0> <II = 1> <Delay = 6.38> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
-ST_11 : Operation 152 [1/1] (0.00ns)   --->   "%tmp_74 = call i15 @_ssdm_op_PartSelect.i15.i29.i32.i32(i29 %tmp_135_0_2, i32 14, i32 28)" [layers_c/conv2d.cpp:26]   --->   Operation 152 'partselect' 'tmp_74' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 152 [1/1] (0.00ns)   --->   "%tmp_57 = call i15 @_ssdm_op_PartSelect.i15.i29.i32.i32(i29 %tmp_135_0_2, i32 14, i32 28)" [layers_c/conv2d.cpp:26]   --->   Operation 152 'partselect' 'tmp_57' <Predicate = true> <Delay = 0.00>
 ST_11 : Operation 153 [1/1] (0.00ns)   --->   "%tmp_130_1_cast_cast = sext i16 %Padding2D_4_array_lo_3 to i29" [layers_c/conv2d.cpp:26]   --->   Operation 153 'sext' 'tmp_130_1_cast_cast' <Predicate = true> <Delay = 0.00>
 ST_11 : Operation 154 [1/1] (0.00ns)   --->   "%tmp_134_1_cast_cast = sext i13 %Conv2D_4_w_0_load_3 to i29" [layers_c/conv2d.cpp:26]   --->   Operation 154 'sext' 'tmp_134_1_cast_cast' <Predicate = true> <Delay = 0.00>
 ST_11 : Operation 155 [1/1] (6.38ns) (root node of the DSP)   --->   "%tmp_135_1 = mul i29 %tmp_134_1_cast_cast, %tmp_130_1_cast_cast" [layers_c/conv2d.cpp:26]   --->   Operation 155 'mul' 'tmp_135_1' <Predicate = true> <Delay = 6.38> <Core = "DSP48">   --->   Core 65 'DSP48' <Latency = 0> <II = 1> <Delay = 6.38> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
-ST_11 : Operation 156 [1/1] (0.00ns)   --->   "%tmp_75 = call i15 @_ssdm_op_PartSelect.i15.i29.i32.i32(i29 %tmp_135_1, i32 14, i32 28)" [layers_c/conv2d.cpp:26]   --->   Operation 156 'partselect' 'tmp_75' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 156 [1/1] (0.00ns)   --->   "%tmp_58 = call i15 @_ssdm_op_PartSelect.i15.i29.i32.i32(i29 %tmp_135_1, i32 14, i32 28)" [layers_c/conv2d.cpp:26]   --->   Operation 156 'partselect' 'tmp_58' <Predicate = true> <Delay = 0.00>
 ST_11 : Operation 157 [1/2] (3.25ns)   --->   "%Padding2D_4_array_lo_4 = load i16* %Padding2D_4_array_ad_4, align 2" [layers_c/conv2d.cpp:26]   --->   Operation 157 'load' 'Padding2D_4_array_lo_4' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 784> <RAM>
 ST_11 : Operation 158 [1/2] (3.25ns)   --->   "%Conv2D_4_w_0_load_4 = load i13* %Conv2D_4_w_0_addr_4, align 2" [layers_c/conv2d.cpp:26]   --->   Operation 158 'load' 'Conv2D_4_w_0_load_4' <Predicate = true> <Delay = 3.25> <Core = "ROM_nP">   --->   Core 52 'ROM_nP' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 13> <Depth = 144> <ROM>
 ST_11 : Operation 159 [1/2] (3.25ns)   --->   "%Padding2D_4_array_lo_5 = load i16* %Padding2D_4_array_ad_5, align 2" [layers_c/conv2d.cpp:26]   --->   Operation 159 'load' 'Padding2D_4_array_lo_5' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 784> <RAM>
@@ -303,17 +303,17 @@ ST_11 : Operation 177 [1/1] (0.00ns)   --->   "%Conv2D_4_w_0_addr_8 = getelement
 ST_11 : Operation 178 [2/2] (3.25ns)   --->   "%Conv2D_4_w_0_load_8 = load i13* %Conv2D_4_w_0_addr_8, align 2" [layers_c/conv2d.cpp:26]   --->   Operation 178 'load' 'Conv2D_4_w_0_load_8' <Predicate = true> <Delay = 3.25> <Core = "ROM_nP">   --->   Core 52 'ROM_nP' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 13> <Depth = 144> <ROM>
 
 State 12 <SV = 11> <Delay = 6.38>
-ST_12 : Operation 179 [1/1] (0.00ns)   --->   "%tmp_137_0_1 = sext i15 %tmp_73 to i16" [layers_c/conv2d.cpp:26]   --->   Operation 179 'sext' 'tmp_137_0_1' <Predicate = true> <Delay = 0.00>
-ST_12 : Operation 180 [1/1] (0.00ns)   --->   "%tmp_137_0_2 = sext i15 %tmp_74 to i16" [layers_c/conv2d.cpp:26]   --->   Operation 180 'sext' 'tmp_137_0_2' <Predicate = true> <Delay = 0.00>
-ST_12 : Operation 181 [1/1] (0.00ns)   --->   "%tmp_137_1 = sext i15 %tmp_75 to i16" [layers_c/conv2d.cpp:26]   --->   Operation 181 'sext' 'tmp_137_1' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 179 [1/1] (0.00ns)   --->   "%tmp_137_0_1 = sext i15 %tmp_56 to i16" [layers_c/conv2d.cpp:26]   --->   Operation 179 'sext' 'tmp_137_0_1' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 180 [1/1] (0.00ns)   --->   "%tmp_137_0_2 = sext i15 %tmp_57 to i16" [layers_c/conv2d.cpp:26]   --->   Operation 180 'sext' 'tmp_137_0_2' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 181 [1/1] (0.00ns)   --->   "%tmp_137_1 = sext i15 %tmp_58 to i16" [layers_c/conv2d.cpp:26]   --->   Operation 181 'sext' 'tmp_137_1' <Predicate = true> <Delay = 0.00>
 ST_12 : Operation 182 [1/1] (0.00ns)   --->   "%tmp_130_1_1_cast_cas = sext i16 %Padding2D_4_array_lo_4 to i29" [layers_c/conv2d.cpp:26]   --->   Operation 182 'sext' 'tmp_130_1_1_cast_cas' <Predicate = true> <Delay = 0.00>
 ST_12 : Operation 183 [1/1] (0.00ns)   --->   "%tmp_134_1_1_cast_cas = sext i13 %Conv2D_4_w_0_load_4 to i29" [layers_c/conv2d.cpp:26]   --->   Operation 183 'sext' 'tmp_134_1_1_cast_cas' <Predicate = true> <Delay = 0.00>
 ST_12 : Operation 184 [1/1] (6.38ns) (root node of the DSP)   --->   "%tmp_135_1_1 = mul i29 %tmp_134_1_1_cast_cas, %tmp_130_1_1_cast_cas" [layers_c/conv2d.cpp:26]   --->   Operation 184 'mul' 'tmp_135_1_1' <Predicate = true> <Delay = 6.38> <Core = "DSP48">   --->   Core 65 'DSP48' <Latency = 0> <II = 1> <Delay = 6.38> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
-ST_12 : Operation 185 [1/1] (0.00ns)   --->   "%tmp_76 = call i15 @_ssdm_op_PartSelect.i15.i29.i32.i32(i29 %tmp_135_1_1, i32 14, i32 28)" [layers_c/conv2d.cpp:26]   --->   Operation 185 'partselect' 'tmp_76' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 185 [1/1] (0.00ns)   --->   "%tmp_59 = call i15 @_ssdm_op_PartSelect.i15.i29.i32.i32(i29 %tmp_135_1_1, i32 14, i32 28)" [layers_c/conv2d.cpp:26]   --->   Operation 185 'partselect' 'tmp_59' <Predicate = true> <Delay = 0.00>
 ST_12 : Operation 186 [1/1] (0.00ns)   --->   "%tmp_130_1_2_cast_cas = sext i16 %Padding2D_4_array_lo_5 to i29" [layers_c/conv2d.cpp:26]   --->   Operation 186 'sext' 'tmp_130_1_2_cast_cas' <Predicate = true> <Delay = 0.00>
 ST_12 : Operation 187 [1/1] (0.00ns)   --->   "%tmp_134_1_2_cast_cas = sext i13 %Conv2D_4_w_0_load_5 to i29" [layers_c/conv2d.cpp:26]   --->   Operation 187 'sext' 'tmp_134_1_2_cast_cas' <Predicate = true> <Delay = 0.00>
 ST_12 : Operation 188 [1/1] (6.38ns) (root node of the DSP)   --->   "%tmp_135_1_2 = mul i29 %tmp_134_1_2_cast_cas, %tmp_130_1_2_cast_cas" [layers_c/conv2d.cpp:26]   --->   Operation 188 'mul' 'tmp_135_1_2' <Predicate = true> <Delay = 6.38> <Core = "DSP48">   --->   Core 65 'DSP48' <Latency = 0> <II = 1> <Delay = 6.38> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
-ST_12 : Operation 189 [1/1] (0.00ns)   --->   "%tmp_77 = call i15 @_ssdm_op_PartSelect.i15.i29.i32.i32(i29 %tmp_135_1_2, i32 14, i32 28)" [layers_c/conv2d.cpp:26]   --->   Operation 189 'partselect' 'tmp_77' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 189 [1/1] (0.00ns)   --->   "%tmp_60 = call i15 @_ssdm_op_PartSelect.i15.i29.i32.i32(i29 %tmp_135_1_2, i32 14, i32 28)" [layers_c/conv2d.cpp:26]   --->   Operation 189 'partselect' 'tmp_60' <Predicate = true> <Delay = 0.00>
 ST_12 : Operation 190 [1/2] (3.25ns)   --->   "%Padding2D_4_array_lo_6 = load i16* %Padding2D_4_array_ad_6, align 2" [layers_c/conv2d.cpp:26]   --->   Operation 190 'load' 'Padding2D_4_array_lo_6' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 784> <RAM>
 ST_12 : Operation 191 [1/2] (3.25ns)   --->   "%Conv2D_4_w_0_load_6 = load i13* %Conv2D_4_w_0_addr_6, align 2" [layers_c/conv2d.cpp:26]   --->   Operation 191 'load' 'Conv2D_4_w_0_load_6' <Predicate = true> <Delay = 3.25> <Core = "ROM_nP">   --->   Core 52 'ROM_nP' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 13> <Depth = 144> <ROM>
 ST_12 : Operation 192 [1/2] (3.25ns)   --->   "%Padding2D_4_array_lo_7 = load i16* %Padding2D_4_array_ad_7, align 2" [layers_c/conv2d.cpp:26]   --->   Operation 192 'load' 'Padding2D_4_array_lo_7' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 784> <RAM>
@@ -329,11 +329,11 @@ State 13 <SV = 12> <Delay = 6.38>
 ST_13 : Operation 200 [1/1] (0.00ns)   --->   "%tmp_130_2_cast_cast = sext i16 %Padding2D_4_array_lo_6 to i29" [layers_c/conv2d.cpp:26]   --->   Operation 200 'sext' 'tmp_130_2_cast_cast' <Predicate = true> <Delay = 0.00>
 ST_13 : Operation 201 [1/1] (0.00ns)   --->   "%tmp_134_2_cast_cast = sext i13 %Conv2D_4_w_0_load_6 to i29" [layers_c/conv2d.cpp:26]   --->   Operation 201 'sext' 'tmp_134_2_cast_cast' <Predicate = true> <Delay = 0.00>
 ST_13 : Operation 202 [1/1] (6.38ns) (root node of the DSP)   --->   "%tmp_135_2 = mul i29 %tmp_134_2_cast_cast, %tmp_130_2_cast_cast" [layers_c/conv2d.cpp:26]   --->   Operation 202 'mul' 'tmp_135_2' <Predicate = true> <Delay = 6.38> <Core = "DSP48">   --->   Core 65 'DSP48' <Latency = 0> <II = 1> <Delay = 6.38> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
-ST_13 : Operation 203 [1/1] (0.00ns)   --->   "%tmp_78 = call i15 @_ssdm_op_PartSelect.i15.i29.i32.i32(i29 %tmp_135_2, i32 14, i32 28)" [layers_c/conv2d.cpp:26]   --->   Operation 203 'partselect' 'tmp_78' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 203 [1/1] (0.00ns)   --->   "%tmp_61 = call i15 @_ssdm_op_PartSelect.i15.i29.i32.i32(i29 %tmp_135_2, i32 14, i32 28)" [layers_c/conv2d.cpp:26]   --->   Operation 203 'partselect' 'tmp_61' <Predicate = true> <Delay = 0.00>
 ST_13 : Operation 204 [1/1] (0.00ns)   --->   "%tmp_130_2_1_cast_cas = sext i16 %Padding2D_4_array_lo_7 to i29" [layers_c/conv2d.cpp:26]   --->   Operation 204 'sext' 'tmp_130_2_1_cast_cas' <Predicate = true> <Delay = 0.00>
 ST_13 : Operation 205 [1/1] (0.00ns)   --->   "%tmp_134_2_1_cast_cas = sext i13 %Conv2D_4_w_0_load_7 to i29" [layers_c/conv2d.cpp:26]   --->   Operation 205 'sext' 'tmp_134_2_1_cast_cas' <Predicate = true> <Delay = 0.00>
 ST_13 : Operation 206 [1/1] (6.38ns) (root node of the DSP)   --->   "%tmp_135_2_1 = mul i29 %tmp_134_2_1_cast_cas, %tmp_130_2_1_cast_cas" [layers_c/conv2d.cpp:26]   --->   Operation 206 'mul' 'tmp_135_2_1' <Predicate = true> <Delay = 6.38> <Core = "DSP48">   --->   Core 65 'DSP48' <Latency = 0> <II = 1> <Delay = 6.38> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
-ST_13 : Operation 207 [1/1] (0.00ns)   --->   "%tmp_79 = call i15 @_ssdm_op_PartSelect.i15.i29.i32.i32(i29 %tmp_135_2_1, i32 14, i32 28)" [layers_c/conv2d.cpp:26]   --->   Operation 207 'partselect' 'tmp_79' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 207 [1/1] (0.00ns)   --->   "%tmp_62 = call i15 @_ssdm_op_PartSelect.i15.i29.i32.i32(i29 %tmp_135_2_1, i32 14, i32 28)" [layers_c/conv2d.cpp:26]   --->   Operation 207 'partselect' 'tmp_62' <Predicate = true> <Delay = 0.00>
 ST_13 : Operation 208 [1/2] (3.25ns)   --->   "%Padding2D_4_array_lo_8 = load i16* %Padding2D_4_array_ad_8, align 2" [layers_c/conv2d.cpp:26]   --->   Operation 208 'load' 'Padding2D_4_array_lo_8' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 784> <RAM>
 
 State 14 <SV = 13> <Delay = 6.38>
@@ -341,17 +341,17 @@ ST_14 : Operation 209 [2/2] (3.25ns)   --->   "%output_load_4 = load i16* %outpu
 ST_14 : Operation 210 [1/1] (0.00ns)   --->   "%tmp_130_2_2_cast_cas = sext i16 %Padding2D_4_array_lo_8 to i29" [layers_c/conv2d.cpp:26]   --->   Operation 210 'sext' 'tmp_130_2_2_cast_cas' <Predicate = true> <Delay = 0.00>
 ST_14 : Operation 211 [1/1] (0.00ns)   --->   "%tmp_134_2_2_cast_cas = sext i13 %Conv2D_4_w_0_load_8 to i29" [layers_c/conv2d.cpp:26]   --->   Operation 211 'sext' 'tmp_134_2_2_cast_cas' <Predicate = true> <Delay = 0.00>
 ST_14 : Operation 212 [1/1] (6.38ns) (root node of the DSP)   --->   "%tmp_135_2_2 = mul i29 %tmp_134_2_2_cast_cas, %tmp_130_2_2_cast_cas" [layers_c/conv2d.cpp:26]   --->   Operation 212 'mul' 'tmp_135_2_2' <Predicate = true> <Delay = 6.38> <Core = "DSP48">   --->   Core 65 'DSP48' <Latency = 0> <II = 1> <Delay = 6.38> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
-ST_14 : Operation 213 [1/1] (0.00ns)   --->   "%tmp_80 = call i15 @_ssdm_op_PartSelect.i15.i29.i32.i32(i29 %tmp_135_2_2, i32 14, i32 28)" [layers_c/conv2d.cpp:26]   --->   Operation 213 'partselect' 'tmp_80' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 213 [1/1] (0.00ns)   --->   "%tmp_63 = call i15 @_ssdm_op_PartSelect.i15.i29.i32.i32(i29 %tmp_135_2_2, i32 14, i32 28)" [layers_c/conv2d.cpp:26]   --->   Operation 213 'partselect' 'tmp_63' <Predicate = true> <Delay = 0.00>
 
 State 15 <SV = 14> <Delay = 7.80>
-ST_15 : Operation 214 [1/1] (0.00ns)   --->   "%tmp_135 = sext i15 %tmp_72 to i16" [layers_c/conv2d.cpp:26]   --->   Operation 214 'sext' 'tmp_135' <Predicate = true> <Delay = 0.00>
+ST_15 : Operation 214 [1/1] (0.00ns)   --->   "%tmp_136 = sext i15 %tmp_55 to i16" [layers_c/conv2d.cpp:26]   --->   Operation 214 'sext' 'tmp_136' <Predicate = true> <Delay = 0.00>
 ST_15 : Operation 215 [1/2] (3.25ns)   --->   "%output_load_4 = load i16* %output_addr11, align 2" [layers_c/conv2d.cpp:26]   --->   Operation 215 'load' 'output_load_4' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 784> <RAM>
-ST_15 : Operation 216 [1/1] (0.00ns)   --->   "%tmp_137_1_1 = sext i15 %tmp_76 to i16" [layers_c/conv2d.cpp:26]   --->   Operation 216 'sext' 'tmp_137_1_1' <Predicate = true> <Delay = 0.00>
-ST_15 : Operation 217 [1/1] (0.00ns)   --->   "%tmp_137_1_2 = sext i15 %tmp_77 to i16" [layers_c/conv2d.cpp:26]   --->   Operation 217 'sext' 'tmp_137_1_2' <Predicate = true> <Delay = 0.00>
-ST_15 : Operation 218 [1/1] (0.00ns)   --->   "%tmp_137_2 = sext i15 %tmp_78 to i16" [layers_c/conv2d.cpp:26]   --->   Operation 218 'sext' 'tmp_137_2' <Predicate = true> <Delay = 0.00>
-ST_15 : Operation 219 [1/1] (0.00ns)   --->   "%tmp_137_2_1 = sext i15 %tmp_79 to i16" [layers_c/conv2d.cpp:26]   --->   Operation 219 'sext' 'tmp_137_2_1' <Predicate = true> <Delay = 0.00>
-ST_15 : Operation 220 [1/1] (0.00ns)   --->   "%tmp_137_2_2 = sext i15 %tmp_80 to i16" [layers_c/conv2d.cpp:26]   --->   Operation 220 'sext' 'tmp_137_2_2' <Predicate = true> <Delay = 0.00>
-ST_15 : Operation 221 [1/1] (2.07ns)   --->   "%tmp2 = add i16 %output_load_4, %tmp_135" [layers_c/conv2d.cpp:26]   --->   Operation 221 'add' 'tmp2' <Predicate = true> <Delay = 2.07> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.94> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_15 : Operation 216 [1/1] (0.00ns)   --->   "%tmp_137_1_1 = sext i15 %tmp_59 to i16" [layers_c/conv2d.cpp:26]   --->   Operation 216 'sext' 'tmp_137_1_1' <Predicate = true> <Delay = 0.00>
+ST_15 : Operation 217 [1/1] (0.00ns)   --->   "%tmp_137_1_2 = sext i15 %tmp_60 to i16" [layers_c/conv2d.cpp:26]   --->   Operation 217 'sext' 'tmp_137_1_2' <Predicate = true> <Delay = 0.00>
+ST_15 : Operation 218 [1/1] (0.00ns)   --->   "%tmp_137_2 = sext i15 %tmp_61 to i16" [layers_c/conv2d.cpp:26]   --->   Operation 218 'sext' 'tmp_137_2' <Predicate = true> <Delay = 0.00>
+ST_15 : Operation 219 [1/1] (0.00ns)   --->   "%tmp_137_2_1 = sext i15 %tmp_62 to i16" [layers_c/conv2d.cpp:26]   --->   Operation 219 'sext' 'tmp_137_2_1' <Predicate = true> <Delay = 0.00>
+ST_15 : Operation 220 [1/1] (0.00ns)   --->   "%tmp_137_2_2 = sext i15 %tmp_63 to i16" [layers_c/conv2d.cpp:26]   --->   Operation 220 'sext' 'tmp_137_2_2' <Predicate = true> <Delay = 0.00>
+ST_15 : Operation 221 [1/1] (2.07ns)   --->   "%tmp2 = add i16 %output_load_4, %tmp_136" [layers_c/conv2d.cpp:26]   --->   Operation 221 'add' 'tmp2' <Predicate = true> <Delay = 2.07> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.94> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_15 : Operation 222 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%tmp9 = add i16 %tmp_137_1_1, %tmp_137_1_2" [layers_c/conv2d.cpp:26]   --->   Operation 222 'add' 'tmp9' <Predicate = true> <Delay = 0.00> <Core = "TAddSub">   --->   Core 84 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.95> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
 ST_15 : Operation 223 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%tmp11 = add i16 %tmp_137_2_1, %tmp_137_2_2" [layers_c/conv2d.cpp:26]   --->   Operation 223 'add' 'tmp11' <Predicate = true> <Delay = 0.00> <Core = "TAddSub">   --->   Core 84 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.95> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
 ST_15 : Operation 224 [1/1] (3.90ns) (root node of TernaryAdder)   --->   "%tmp10 = add i16 %tmp11, %tmp_137_2" [layers_c/conv2d.cpp:26]   --->   Operation 224 'add' 'tmp10' <Predicate = true> <Delay = 3.90> <Core = "TAddSub">   --->   Core 84 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.95> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
@@ -365,11 +365,11 @@ ST_16 : Operation 229 [1/1] (0.00ns)   --->   "br label %2" [layers_c/conv2d.cpp
 
 State 17 <SV = 6> <Delay = 6.08>
 ST_17 : Operation 230 [1/2] (3.25ns)   --->   "%output_load = load i16* %output_addr11, align 2" [layers_c/conv2d.cpp:32]   --->   Operation 230 'load' 'output_load' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 784> <RAM>
-ST_17 : Operation 231 [1/1] (0.00ns)   --->   "%tmp_69 = trunc i16 %output_load to i15" [layers_c/conv2d.cpp:32]   --->   Operation 231 'trunc' 'tmp_69' <Predicate = true> <Delay = 0.00>
+ST_17 : Operation 231 [1/1] (0.00ns)   --->   "%tmp_52 = trunc i16 %output_load to i15" [layers_c/conv2d.cpp:32]   --->   Operation 231 'trunc' 'tmp_52' <Predicate = true> <Delay = 0.00>
 ST_17 : Operation 232 [1/1] (2.07ns)   --->   "%tmp_117 = add i16 -1269, %output_load" [layers_c/conv2d.cpp:32]   --->   Operation 232 'add' 'tmp_117' <Predicate = true> <Delay = 2.07> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.94> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_17 : Operation 233 [1/1] (1.94ns)   --->   "%tmp_117_cast = add i15 -1269, %tmp_69" [layers_c/conv2d.cpp:35]   --->   Operation 233 'add' 'tmp_117_cast' <Predicate = true> <Delay = 1.94> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.94> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_17 : Operation 234 [1/1] (0.00ns)   --->   "%tmp_70 = call i1 @_ssdm_op_BitSelect.i1.i16.i32(i16 %tmp_117, i32 15)" [layers_c/conv2d.cpp:35]   --->   Operation 234 'bitselect' 'tmp_70' <Predicate = true> <Delay = 0.00>
-ST_17 : Operation 235 [1/1] (0.75ns)   --->   "%p_tmp_s = select i1 %tmp_70, i15 0, i15 %tmp_117_cast" [layers_c/conv2d.cpp:35]   --->   Operation 235 'select' 'p_tmp_s' <Predicate = true> <Delay = 0.75> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.75> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_17 : Operation 233 [1/1] (1.94ns)   --->   "%tmp_117_cast = add i15 -1269, %tmp_52" [layers_c/conv2d.cpp:35]   --->   Operation 233 'add' 'tmp_117_cast' <Predicate = true> <Delay = 1.94> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.94> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_17 : Operation 234 [1/1] (0.00ns)   --->   "%tmp_53 = call i1 @_ssdm_op_BitSelect.i1.i16.i32(i16 %tmp_117, i32 15)" [layers_c/conv2d.cpp:35]   --->   Operation 234 'bitselect' 'tmp_53' <Predicate = true> <Delay = 0.00>
+ST_17 : Operation 235 [1/1] (0.75ns)   --->   "%p_tmp_s = select i1 %tmp_53, i15 0, i15 %tmp_117_cast" [layers_c/conv2d.cpp:35]   --->   Operation 235 'select' 'p_tmp_s' <Predicate = true> <Delay = 0.75> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.75> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
 
 State 18 <SV = 7> <Delay = 3.25>
 ST_18 : Operation 236 [1/1] (0.00ns)   --->   "%p_tmp_cast = zext i15 %p_tmp_s to i16" [layers_c/conv2d.cpp:35]   --->   Operation 236 'zext' 'p_tmp_cast' <Predicate = true> <Delay = 0.00>
@@ -462,7 +462,7 @@ tmp4                   (add          ) [ 0000000100000000000]
 tmp5                   (mul          ) [ 0000000011000000000]
 tmp4_1                 (add          ) [ 0000000010000000000]
 tmp4_2                 (add          ) [ 0000000010000000000]
-tmp_71                 (shl          ) [ 0000000000000000000]
+tmp_54                 (shl          ) [ 0000000000000000000]
 tmp_122                (add          ) [ 0000000001110000000]
 tmp_128                (add          ) [ 0000000000000000000]
 tmp_129                (sext         ) [ 0000000000000000000]
@@ -495,12 +495,12 @@ tmp_133_1              (sext         ) [ 0000000000000000000]
 Conv2D_4_w_0_addr_3    (getelementptr) [ 0000000000100000000]
 tmp_130_cast_cast      (sext         ) [ 0000000000000000000]
 tmp_134_cast_cast      (sext         ) [ 0000000000000000000]
-tmp_134                (mul          ) [ 0000000000000000000]
-tmp_72                 (partselect   ) [ 0000000000011111000]
+tmp_135                (mul          ) [ 0000000000000000000]
+tmp_55                 (partselect   ) [ 0000000000011111000]
 tmp_130_0_1_cast_cas   (sext         ) [ 0000000000000000000]
 tmp_134_0_1_cast_cas   (sext         ) [ 0000000000000000000]
 tmp_135_0_1            (mul          ) [ 0000000000000000000]
-tmp_73                 (partselect   ) [ 0000000000011000000]
+tmp_56                 (partselect   ) [ 0000000000011000000]
 Padding2D_4_array_lo_2 (load         ) [ 0000000000010000000]
 Conv2D_4_w_0_load_2    (load         ) [ 0000000000010000000]
 Padding2D_4_array_lo_3 (load         ) [ 0000000000010000000]
@@ -523,11 +523,11 @@ tmp_128_2_2            (add          ) [ 0000000000011000000]
 tmp_130_0_2_cast_cas   (sext         ) [ 0000000000000000000]
 tmp_134_0_2_cast_cas   (sext         ) [ 0000000000000000000]
 tmp_135_0_2            (mul          ) [ 0000000000000000000]
-tmp_74                 (partselect   ) [ 0000000000001000000]
+tmp_57                 (partselect   ) [ 0000000000001000000]
 tmp_130_1_cast_cast    (sext         ) [ 0000000000000000000]
 tmp_134_1_cast_cast    (sext         ) [ 0000000000000000000]
 tmp_135_1              (mul          ) [ 0000000000000000000]
-tmp_75                 (partselect   ) [ 0000000000001000000]
+tmp_58                 (partselect   ) [ 0000000000001000000]
 Padding2D_4_array_lo_4 (load         ) [ 0000000000001000000]
 Conv2D_4_w_0_load_4    (load         ) [ 0000000000001000000]
 Padding2D_4_array_lo_5 (load         ) [ 0000000000001000000]
@@ -551,11 +551,11 @@ tmp_137_1              (sext         ) [ 0000000000000000000]
 tmp_130_1_1_cast_cas   (sext         ) [ 0000000000000000000]
 tmp_134_1_1_cast_cas   (sext         ) [ 0000000000000000000]
 tmp_135_1_1            (mul          ) [ 0000000000000000000]
-tmp_76                 (partselect   ) [ 0000000000000111000]
+tmp_59                 (partselect   ) [ 0000000000000111000]
 tmp_130_1_2_cast_cas   (sext         ) [ 0000000000000000000]
 tmp_134_1_2_cast_cas   (sext         ) [ 0000000000000000000]
 tmp_135_1_2            (mul          ) [ 0000000000000000000]
-tmp_77                 (partselect   ) [ 0000000000000111000]
+tmp_60                 (partselect   ) [ 0000000000000111000]
 Padding2D_4_array_lo_6 (load         ) [ 0000000000000100000]
 Conv2D_4_w_0_load_6    (load         ) [ 0000000000000100000]
 Padding2D_4_array_lo_7 (load         ) [ 0000000000000100000]
@@ -568,17 +568,17 @@ tmp6                   (add          ) [ 0000000000000111100]
 tmp_130_2_cast_cast    (sext         ) [ 0000000000000000000]
 tmp_134_2_cast_cast    (sext         ) [ 0000000000000000000]
 tmp_135_2              (mul          ) [ 0000000000000000000]
-tmp_78                 (partselect   ) [ 0000000000000011000]
+tmp_61                 (partselect   ) [ 0000000000000011000]
 tmp_130_2_1_cast_cas   (sext         ) [ 0000000000000000000]
 tmp_134_2_1_cast_cas   (sext         ) [ 0000000000000000000]
 tmp_135_2_1            (mul          ) [ 0000000000000000000]
-tmp_79                 (partselect   ) [ 0000000000000011000]
+tmp_62                 (partselect   ) [ 0000000000000011000]
 Padding2D_4_array_lo_8 (load         ) [ 0000000000000010000]
 tmp_130_2_2_cast_cas   (sext         ) [ 0000000000000000000]
 tmp_134_2_2_cast_cas   (sext         ) [ 0000000000000000000]
 tmp_135_2_2            (mul          ) [ 0000000000000000000]
-tmp_80                 (partselect   ) [ 0000000000000001000]
-tmp_135                (sext         ) [ 0000000000000000000]
+tmp_63                 (partselect   ) [ 0000000000000001000]
+tmp_136                (sext         ) [ 0000000000000000000]
 output_load_4          (load         ) [ 0000000000000000000]
 tmp_137_1_1            (sext         ) [ 0000000000000000000]
 tmp_137_1_2            (sext         ) [ 0000000000000000000]
@@ -595,10 +595,10 @@ tmp_138_2_2            (add          ) [ 0000000000000000000]
 StgValue_228           (store        ) [ 0000000000000000000]
 StgValue_229           (br           ) [ 0011111111111111111]
 output_load            (load         ) [ 0000000000000000000]
-tmp_69                 (trunc        ) [ 0000000000000000000]
+tmp_52                 (trunc        ) [ 0000000000000000000]
 tmp_117                (add          ) [ 0000000000000000000]
 tmp_117_cast           (add          ) [ 0000000000000000000]
-tmp_70                 (bitselect    ) [ 0000000000000000000]
+tmp_53                 (bitselect    ) [ 0000000000000000000]
 p_tmp_s                (select       ) [ 0000000000000000001]
 p_tmp_cast             (zext         ) [ 0000000000000000000]
 StgValue_237           (store        ) [ 0000000000000000000]
@@ -1861,7 +1861,7 @@ StgValue_238           (br           ) [ 0011111111111111111]
 </bind>
 </comp>
 
-<comp id="535" class="1004" name="tmp_71_fu_535">
+<comp id="535" class="1004" name="tmp_54_fu_535">
 <pin_list>
 <pin id="536" dir="0" index="0" bw="32" slack="2"/>
 <pin id="537" dir="0" index="1" bw="3" slack="0"/>
@@ -1869,7 +1869,7 @@ StgValue_238           (br           ) [ 0011111111111111111]
 </pin_list>
 <bind>
 <opcode="shl(20) " fcode="shl"/>
-<opset="tmp_71/8 "/>
+<opset="tmp_54/8 "/>
 </bind>
 </comp>
 
@@ -2103,7 +2103,7 @@ StgValue_238           (br           ) [ 0011111111111111111]
 </bind>
 </comp>
 
-<comp id="633" class="1004" name="tmp_72_fu_633">
+<comp id="633" class="1004" name="tmp_55_fu_633">
 <pin_list>
 <pin id="634" dir="0" index="0" bw="15" slack="0"/>
 <pin id="635" dir="0" index="1" bw="29" slack="0"/>
@@ -2113,7 +2113,7 @@ StgValue_238           (br           ) [ 0011111111111111111]
 </pin_list>
 <bind>
 <opcode="partselect(1002) " fcode="partselect"/>
-<opset="tmp_72/10 "/>
+<opset="tmp_55/10 "/>
 </bind>
 </comp>
 
@@ -2139,7 +2139,7 @@ StgValue_238           (br           ) [ 0011111111111111111]
 </bind>
 </comp>
 
-<comp id="650" class="1004" name="tmp_73_fu_650">
+<comp id="650" class="1004" name="tmp_56_fu_650">
 <pin_list>
 <pin id="651" dir="0" index="0" bw="15" slack="0"/>
 <pin id="652" dir="0" index="1" bw="29" slack="0"/>
@@ -2149,7 +2149,7 @@ StgValue_238           (br           ) [ 0011111111111111111]
 </pin_list>
 <bind>
 <opcode="partselect(1002) " fcode="partselect"/>
-<opset="tmp_73/10 "/>
+<opset="tmp_56/10 "/>
 </bind>
 </comp>
 
@@ -2303,7 +2303,7 @@ StgValue_238           (br           ) [ 0011111111111111111]
 </bind>
 </comp>
 
-<comp id="717" class="1004" name="tmp_74_fu_717">
+<comp id="717" class="1004" name="tmp_57_fu_717">
 <pin_list>
 <pin id="718" dir="0" index="0" bw="15" slack="0"/>
 <pin id="719" dir="0" index="1" bw="29" slack="0"/>
@@ -2313,7 +2313,7 @@ StgValue_238           (br           ) [ 0011111111111111111]
 </pin_list>
 <bind>
 <opcode="partselect(1002) " fcode="partselect"/>
-<opset="tmp_74/11 "/>
+<opset="tmp_57/11 "/>
 </bind>
 </comp>
 
@@ -2339,7 +2339,7 @@ StgValue_238           (br           ) [ 0011111111111111111]
 </bind>
 </comp>
 
-<comp id="734" class="1004" name="tmp_75_fu_734">
+<comp id="734" class="1004" name="tmp_58_fu_734">
 <pin_list>
 <pin id="735" dir="0" index="0" bw="15" slack="0"/>
 <pin id="736" dir="0" index="1" bw="29" slack="0"/>
@@ -2349,7 +2349,7 @@ StgValue_238           (br           ) [ 0011111111111111111]
 </pin_list>
 <bind>
 <opcode="partselect(1002) " fcode="partselect"/>
-<opset="tmp_75/11 "/>
+<opset="tmp_58/11 "/>
 </bind>
 </comp>
 
@@ -2499,7 +2499,7 @@ StgValue_238           (br           ) [ 0011111111111111111]
 </bind>
 </comp>
 
-<comp id="798" class="1004" name="tmp_76_fu_798">
+<comp id="798" class="1004" name="tmp_59_fu_798">
 <pin_list>
 <pin id="799" dir="0" index="0" bw="15" slack="0"/>
 <pin id="800" dir="0" index="1" bw="29" slack="0"/>
@@ -2509,7 +2509,7 @@ StgValue_238           (br           ) [ 0011111111111111111]
 </pin_list>
 <bind>
 <opcode="partselect(1002) " fcode="partselect"/>
-<opset="tmp_76/12 "/>
+<opset="tmp_59/12 "/>
 </bind>
 </comp>
 
@@ -2535,7 +2535,7 @@ StgValue_238           (br           ) [ 0011111111111111111]
 </bind>
 </comp>
 
-<comp id="815" class="1004" name="tmp_77_fu_815">
+<comp id="815" class="1004" name="tmp_60_fu_815">
 <pin_list>
 <pin id="816" dir="0" index="0" bw="15" slack="0"/>
 <pin id="817" dir="0" index="1" bw="29" slack="0"/>
@@ -2545,7 +2545,7 @@ StgValue_238           (br           ) [ 0011111111111111111]
 </pin_list>
 <bind>
 <opcode="partselect(1002) " fcode="partselect"/>
-<opset="tmp_77/12 "/>
+<opset="tmp_60/12 "/>
 </bind>
 </comp>
 
@@ -2606,7 +2606,7 @@ StgValue_238           (br           ) [ 0011111111111111111]
 </bind>
 </comp>
 
-<comp id="848" class="1004" name="tmp_78_fu_848">
+<comp id="848" class="1004" name="tmp_61_fu_848">
 <pin_list>
 <pin id="849" dir="0" index="0" bw="15" slack="0"/>
 <pin id="850" dir="0" index="1" bw="29" slack="0"/>
@@ -2616,7 +2616,7 @@ StgValue_238           (br           ) [ 0011111111111111111]
 </pin_list>
 <bind>
 <opcode="partselect(1002) " fcode="partselect"/>
-<opset="tmp_78/13 "/>
+<opset="tmp_61/13 "/>
 </bind>
 </comp>
 
@@ -2642,7 +2642,7 @@ StgValue_238           (br           ) [ 0011111111111111111]
 </bind>
 </comp>
 
-<comp id="865" class="1004" name="tmp_79_fu_865">
+<comp id="865" class="1004" name="tmp_62_fu_865">
 <pin_list>
 <pin id="866" dir="0" index="0" bw="15" slack="0"/>
 <pin id="867" dir="0" index="1" bw="29" slack="0"/>
@@ -2652,7 +2652,7 @@ StgValue_238           (br           ) [ 0011111111111111111]
 </pin_list>
 <bind>
 <opcode="partselect(1002) " fcode="partselect"/>
-<opset="tmp_79/13 "/>
+<opset="tmp_62/13 "/>
 </bind>
 </comp>
 
@@ -2678,7 +2678,7 @@ StgValue_238           (br           ) [ 0011111111111111111]
 </bind>
 </comp>
 
-<comp id="881" class="1004" name="tmp_80_fu_881">
+<comp id="881" class="1004" name="tmp_63_fu_881">
 <pin_list>
 <pin id="882" dir="0" index="0" bw="15" slack="0"/>
 <pin id="883" dir="0" index="1" bw="29" slack="0"/>
@@ -2688,18 +2688,18 @@ StgValue_238           (br           ) [ 0011111111111111111]
 </pin_list>
 <bind>
 <opcode="partselect(1002) " fcode="partselect"/>
-<opset="tmp_80/14 "/>
+<opset="tmp_63/14 "/>
 </bind>
 </comp>
 
-<comp id="890" class="1004" name="tmp_135_fu_890">
+<comp id="890" class="1004" name="tmp_136_fu_890">
 <pin_list>
 <pin id="891" dir="0" index="0" bw="15" slack="5"/>
 <pin id="892" dir="1" index="1" bw="16" slack="0"/>
 </pin_list>
 <bind>
 <opcode="sext(35) " fcode="sext"/>
-<opset="tmp_135/15 "/>
+<opset="tmp_136/15 "/>
 </bind>
 </comp>
 
@@ -2842,14 +2842,14 @@ StgValue_238           (br           ) [ 0011111111111111111]
 </bind>
 </comp>
 
-<comp id="948" class="1004" name="tmp_69_fu_948">
+<comp id="948" class="1004" name="tmp_52_fu_948">
 <pin_list>
 <pin id="949" dir="0" index="0" bw="16" slack="0"/>
 <pin id="950" dir="1" index="1" bw="15" slack="0"/>
 </pin_list>
 <bind>
 <opcode="trunc(33) " fcode="trunc"/>
-<opset="tmp_69/17 "/>
+<opset="tmp_52/17 "/>
 </bind>
 </comp>
 
@@ -2877,7 +2877,7 @@ StgValue_238           (br           ) [ 0011111111111111111]
 </bind>
 </comp>
 
-<comp id="964" class="1004" name="tmp_70_fu_964">
+<comp id="964" class="1004" name="tmp_53_fu_964">
 <pin_list>
 <pin id="965" dir="0" index="0" bw="1" slack="0"/>
 <pin id="966" dir="0" index="1" bw="16" slack="0"/>
@@ -2886,7 +2886,7 @@ StgValue_238           (br           ) [ 0011111111111111111]
 </pin_list>
 <bind>
 <opcode="bitselect(1000) " fcode="bitselect"/>
-<opset="tmp_70/17 "/>
+<opset="tmp_53/17 "/>
 </bind>
 </comp>
 
@@ -2914,7 +2914,7 @@ StgValue_238           (br           ) [ 0011111111111111111]
 </bind>
 </comp>
 
-<comp id="984" class="1007" name="tmp_134_fu_984">
+<comp id="984" class="1007" name="tmp_135_fu_984">
 <pin_list>
 <pin id="985" dir="0" index="0" bw="13" slack="0"/>
 <pin id="986" dir="0" index="1" bw="16" slack="0"/>
@@ -2922,7 +2922,7 @@ StgValue_238           (br           ) [ 0011111111111111111]
 </pin_list>
 <bind>
 <opcode="mul(12) " fcode="mul"/>
-<opset="tmp_134/10 "/>
+<opset="tmp_135/10 "/>
 </bind>
 </comp>
 
@@ -3412,23 +3412,23 @@ StgValue_238           (br           ) [ 0011111111111111111]
 </bind>
 </comp>
 
-<comp id="1277" class="1005" name="tmp_72_reg_1277">
+<comp id="1277" class="1005" name="tmp_55_reg_1277">
 <pin_list>
 <pin id="1278" dir="0" index="0" bw="15" slack="5"/>
 <pin id="1279" dir="1" index="1" bw="15" slack="5"/>
 </pin_list>
 <bind>
-<opset="tmp_72 "/>
+<opset="tmp_55 "/>
 </bind>
 </comp>
 
-<comp id="1282" class="1005" name="tmp_73_reg_1282">
+<comp id="1282" class="1005" name="tmp_56_reg_1282">
 <pin_list>
 <pin id="1283" dir="0" index="0" bw="15" slack="2"/>
 <pin id="1284" dir="1" index="1" bw="15" slack="2"/>
 </pin_list>
 <bind>
-<opset="tmp_73 "/>
+<opset="tmp_56 "/>
 </bind>
 </comp>
 
@@ -3502,23 +3502,23 @@ StgValue_238           (br           ) [ 0011111111111111111]
 </bind>
 </comp>
 
-<comp id="1322" class="1005" name="tmp_74_reg_1322">
+<comp id="1322" class="1005" name="tmp_57_reg_1322">
 <pin_list>
 <pin id="1323" dir="0" index="0" bw="15" slack="1"/>
 <pin id="1324" dir="1" index="1" bw="15" slack="1"/>
 </pin_list>
 <bind>
-<opset="tmp_74 "/>
+<opset="tmp_57 "/>
 </bind>
 </comp>
 
-<comp id="1327" class="1005" name="tmp_75_reg_1327">
+<comp id="1327" class="1005" name="tmp_58_reg_1327">
 <pin_list>
 <pin id="1328" dir="0" index="0" bw="15" slack="1"/>
 <pin id="1329" dir="1" index="1" bw="15" slack="1"/>
 </pin_list>
 <bind>
-<opset="tmp_75 "/>
+<opset="tmp_58 "/>
 </bind>
 </comp>
 
@@ -3572,23 +3572,23 @@ StgValue_238           (br           ) [ 0011111111111111111]
 </bind>
 </comp>
 
-<comp id="1357" class="1005" name="tmp_76_reg_1357">
+<comp id="1357" class="1005" name="tmp_59_reg_1357">
 <pin_list>
 <pin id="1358" dir="0" index="0" bw="15" slack="3"/>
 <pin id="1359" dir="1" index="1" bw="15" slack="3"/>
 </pin_list>
 <bind>
-<opset="tmp_76 "/>
+<opset="tmp_59 "/>
 </bind>
 </comp>
 
-<comp id="1362" class="1005" name="tmp_77_reg_1362">
+<comp id="1362" class="1005" name="tmp_60_reg_1362">
 <pin_list>
 <pin id="1363" dir="0" index="0" bw="15" slack="3"/>
 <pin id="1364" dir="1" index="1" bw="15" slack="3"/>
 </pin_list>
 <bind>
-<opset="tmp_77 "/>
+<opset="tmp_60 "/>
 </bind>
 </comp>
 
@@ -3622,33 +3622,33 @@ StgValue_238           (br           ) [ 0011111111111111111]
 </bind>
 </comp>
 
-<comp id="1382" class="1005" name="tmp_78_reg_1382">
+<comp id="1382" class="1005" name="tmp_61_reg_1382">
 <pin_list>
 <pin id="1383" dir="0" index="0" bw="15" slack="2"/>
 <pin id="1384" dir="1" index="1" bw="15" slack="2"/>
 </pin_list>
 <bind>
-<opset="tmp_78 "/>
+<opset="tmp_61 "/>
 </bind>
 </comp>
 
-<comp id="1387" class="1005" name="tmp_79_reg_1387">
+<comp id="1387" class="1005" name="tmp_62_reg_1387">
 <pin_list>
 <pin id="1388" dir="0" index="0" bw="15" slack="2"/>
 <pin id="1389" dir="1" index="1" bw="15" slack="2"/>
 </pin_list>
 <bind>
-<opset="tmp_79 "/>
+<opset="tmp_62 "/>
 </bind>
 </comp>
 
-<comp id="1392" class="1005" name="tmp_80_reg_1392">
+<comp id="1392" class="1005" name="tmp_63_reg_1392">
 <pin_list>
 <pin id="1393" dir="0" index="0" bw="15" slack="1"/>
 <pin id="1394" dir="1" index="1" bw="15" slack="1"/>
 </pin_list>
 <bind>
-<opset="tmp_80 "/>
+<opset="tmp_63 "/>
 </bind>
 </comp>
 
@@ -4625,10 +4625,10 @@ StgValue_238           (br           ) [ 0011111111111111111]
 		Conv2D_4_w_0_addr_3 : 2
 		Conv2D_4_w_0_load_3 : 3
 	State 10
-		tmp_134 : 1
-		tmp_72 : 2
+		tmp_135 : 1
+		tmp_55 : 2
 		tmp_135_0_1 : 1
-		tmp_73 : 2
+		tmp_56 : 2
 		tmp_129_1_1 : 1
 		Padding2D_4_array_ad_4 : 2
 		Padding2D_4_array_lo_4 : 3
@@ -4643,9 +4643,9 @@ StgValue_238           (br           ) [ 0011111111111111111]
 		Conv2D_4_w_0_load_5 : 3
 	State 11
 		tmp_135_0_2 : 1
-		tmp_74 : 2
+		tmp_57 : 2
 		tmp_135_1 : 1
-		tmp_75 : 2
+		tmp_58 : 2
 		Padding2D_4_array_ad_6 : 1
 		Padding2D_4_array_lo_6 : 2
 		tmp_133_2 : 1
@@ -4661,21 +4661,21 @@ StgValue_238           (br           ) [ 0011111111111111111]
 		Conv2D_4_w_0_load_8 : 3
 	State 12
 		tmp_135_1_1 : 1
-		tmp_76 : 2
+		tmp_59 : 2
 		tmp_135_1_2 : 1
-		tmp_77 : 2
+		tmp_60 : 2
 		Padding2D_4_array_ad_8 : 1
 		Padding2D_4_array_lo_8 : 2
 		tmp7 : 1
 		tmp6 : 2
 	State 13
 		tmp_135_2 : 1
-		tmp_78 : 2
+		tmp_61 : 2
 		tmp_135_2_1 : 1
-		tmp_79 : 2
+		tmp_62 : 2
 	State 14
 		tmp_135_2_2 : 1
-		tmp_80 : 2
+		tmp_63 : 2
 	State 15
 		tmp2 : 1
 		tmp9 : 1
@@ -4686,10 +4686,10 @@ StgValue_238           (br           ) [ 0011111111111111111]
 		tmp_138_2_2 : 1
 		StgValue_228 : 2
 	State 17
-		tmp_69 : 1
+		tmp_52 : 1
 		tmp_117 : 1
 		tmp_117_cast : 2
-		tmp_70 : 2
+		tmp_53 : 2
 		p_tmp_s : 3
 	State 18
 		StgValue_237 : 1
@@ -4752,7 +4752,7 @@ StgValue_238           (br           ) [ 0011111111111111111]
 |          |          tmp5_fu_521          |    2    |    0    |    20   |
 |          |         tmp5_1_fu_579         |    2    |    0    |    20   |
 |          |         tmp5_2_fu_583         |    2    |    0    |    20   |
-|          |         tmp_134_fu_984        |    1    |    0    |    0    |
+|          |         tmp_135_fu_984        |    1    |    0    |    0    |
 |          |       tmp_135_0_1_fu_991      |    1    |    0    |    0    |
 |    mul   |       tmp_135_0_2_fu_998      |    1    |    0    |    0    |
 |          |       tmp_135_1_fu_1005       |    1    |    0    |    0    |
@@ -4829,28 +4829,28 @@ StgValue_238           (br           ) [ 0011111111111111111]
 |          |  tmp_134_2_1_cast_cas_fu_861  |    0    |    0    |    0    |
 |          |  tmp_130_2_2_cast_cas_fu_874  |    0    |    0    |    0    |
 |          |  tmp_134_2_2_cast_cas_fu_878  |    0    |    0    |    0    |
-|          |         tmp_135_fu_890        |    0    |    0    |    0    |
+|          |         tmp_136_fu_890        |    0    |    0    |    0    |
 |          |       tmp_137_1_1_fu_893      |    0    |    0    |    0    |
 |          |       tmp_137_1_2_fu_896      |    0    |    0    |    0    |
 |          |        tmp_137_2_fu_899       |    0    |    0    |    0    |
 |          |       tmp_137_2_1_fu_902      |    0    |    0    |    0    |
 |          |       tmp_137_2_2_fu_905      |    0    |    0    |    0    |
 |----------|-------------------------------|---------|---------|---------|
-|    shl   |         tmp_71_fu_535         |    0    |    0    |    0    |
+|    shl   |         tmp_54_fu_535         |    0    |    0    |    0    |
 |----------|-------------------------------|---------|---------|---------|
-|          |         tmp_72_fu_633         |    0    |    0    |    0    |
-|          |         tmp_73_fu_650         |    0    |    0    |    0    |
-|          |         tmp_74_fu_717         |    0    |    0    |    0    |
-|          |         tmp_75_fu_734         |    0    |    0    |    0    |
-|partselect|         tmp_76_fu_798         |    0    |    0    |    0    |
-|          |         tmp_77_fu_815         |    0    |    0    |    0    |
-|          |         tmp_78_fu_848         |    0    |    0    |    0    |
-|          |         tmp_79_fu_865         |    0    |    0    |    0    |
-|          |         tmp_80_fu_881         |    0    |    0    |    0    |
+|          |         tmp_55_fu_633         |    0    |    0    |    0    |
+|          |         tmp_56_fu_650         |    0    |    0    |    0    |
+|          |         tmp_57_fu_717         |    0    |    0    |    0    |
+|          |         tmp_58_fu_734         |    0    |    0    |    0    |
+|partselect|         tmp_59_fu_798         |    0    |    0    |    0    |
+|          |         tmp_60_fu_815         |    0    |    0    |    0    |
+|          |         tmp_61_fu_848         |    0    |    0    |    0    |
+|          |         tmp_62_fu_865         |    0    |    0    |    0    |
+|          |         tmp_63_fu_881         |    0    |    0    |    0    |
 |----------|-------------------------------|---------|---------|---------|
-|   trunc  |         tmp_69_fu_948         |    0    |    0    |    0    |
+|   trunc  |         tmp_52_fu_948         |    0    |    0    |    0    |
 |----------|-------------------------------|---------|---------|---------|
-| bitselect|         tmp_70_fu_964         |    0    |    0    |    0    |
+| bitselect|         tmp_53_fu_964         |    0    |    0    |    0    |
 |----------|-------------------------------|---------|---------|---------|
 |   Total  |                               |    17   |    0    |   1533  |
 |----------|-------------------------------|---------|---------|---------|
@@ -4928,15 +4928,15 @@ N/A
 |      tmp_128_2_1_reg_1312     |   32   |
 |      tmp_128_2_2_reg_1317     |   32   |
 |       tmp_128_2_reg_1307      |   32   |
-|        tmp_72_reg_1277        |   15   |
-|        tmp_73_reg_1282        |   15   |
-|        tmp_74_reg_1322        |   15   |
-|        tmp_75_reg_1327        |   15   |
-|        tmp_76_reg_1357        |   15   |
-|        tmp_77_reg_1362        |   15   |
-|        tmp_78_reg_1382        |   15   |
-|        tmp_79_reg_1387        |   15   |
-|        tmp_80_reg_1392        |   15   |
+|        tmp_55_reg_1277        |   15   |
+|        tmp_56_reg_1282        |   15   |
+|        tmp_57_reg_1322        |   15   |
+|        tmp_58_reg_1327        |   15   |
+|        tmp_59_reg_1357        |   15   |
+|        tmp_60_reg_1362        |   15   |
+|        tmp_61_reg_1382        |   15   |
+|        tmp_62_reg_1387        |   15   |
+|        tmp_63_reg_1392        |   15   |
 |          tmp_reg_1125         |   32   |
 |         tmp_s_reg_1067        |   32   |
 +-------------------------------+--------+

@@ -92,7 +92,7 @@ set RtlHierarchyInfo {[
 			{"Name" : "output_height", "Type" : "None", "Direction" : "I"},
 			{"Name" : "output_width", "Type" : "None", "Direction" : "I"},
 			{"Name" : "output_r", "Type" : "Memory", "Direction" : "O"}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mul_mul_16ns_16ns_32_1_1_U35", "Parent" : "0"}]}
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mul_mul_16ns_16ns_32_1_1_U34", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {
@@ -100,7 +100,7 @@ set ArgLastReadFirstWriteLatency {
 		input_depth {Type I LastRead 0 FirstWrite -1}
 		input_height {Type I LastRead 0 FirstWrite -1}
 		input_width {Type I LastRead 0 FirstWrite -1}
-		input_r {Type I LastRead 24 FirstWrite -1}
+		input_r {Type I LastRead 6 FirstWrite -1}
 		output_height {Type I LastRead 0 FirstWrite -1}
 		output_width {Type I LastRead 0 FirstWrite -1}
 		output_r {Type O LastRead -1 FirstWrite 2}}}

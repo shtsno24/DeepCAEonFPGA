@@ -17,7 +17,7 @@ set C_modelArgList {
 	{ output_depth uint 16 regular  }
 	{ output_height uint 16 regular  }
 	{ output_width uint 16 regular  }
-	{ Conv2D_0_array int 16 regular {array 12544 { 1 1 } 1 1 } {global 0}  }
+	{ Conv2D_0_array int 16 regular {array 12544 { 1 3 } 1 1 } {global 0}  }
 	{ MaxPooling2D_0_array int 16 regular {array 3136 { 2 3 } 1 1 } {global 2}  }
 }
 set C_modelArgMapList {[ 
@@ -29,7 +29,7 @@ set C_modelArgMapList {[
  	{ "Name" : "Conv2D_0_array", "interface" : "memory", "bitwidth" : 16, "direction" : "READONLY", "bitSlice":[{"low":0,"up":15,"cElement": [{"cName": "Conv2D_0_array","cData": "short","bit_use": { "low": 0,"up": 15},"cArray": [{"low" : 0,"up" : 15,"step" : 1},{"low" : 0,"up" : 27,"step" : 1},{"low" : 0,"up" : 27,"step" : 1}]}]}], "extern" : 0} , 
  	{ "Name" : "MaxPooling2D_0_array", "interface" : "memory", "bitwidth" : 16, "direction" : "READWRITE", "bitSlice":[{"low":0,"up":15,"cElement": [{"cName": "MaxPooling2D_0_array","cData": "short","bit_use": { "low": 0,"up": 15},"cArray": [{"low" : 0,"up" : 15,"step" : 1},{"low" : 0,"up" : 13,"step" : 1},{"low" : 0,"up" : 13,"step" : 1}]}]}], "extern" : 0} ]}
 # RTL Port declarations: 
-set portNum 22
+set portNum 19
 set portList { 
 	{ ap_clk sc_in sc_logic 1 clock -1 } 
 	{ ap_rst sc_in sc_logic 1 reset -1 active_high_sync } 
@@ -45,9 +45,6 @@ set portList {
 	{ Conv2D_0_array_address0 sc_out sc_lv 14 signal 5 } 
 	{ Conv2D_0_array_ce0 sc_out sc_logic 1 signal 5 } 
 	{ Conv2D_0_array_q0 sc_in sc_lv 16 signal 5 } 
-	{ Conv2D_0_array_address1 sc_out sc_lv 14 signal 5 } 
-	{ Conv2D_0_array_ce1 sc_out sc_logic 1 signal 5 } 
-	{ Conv2D_0_array_q1 sc_in sc_lv 16 signal 5 } 
 	{ MaxPooling2D_0_array_address0 sc_out sc_lv 12 signal 6 } 
 	{ MaxPooling2D_0_array_ce0 sc_out sc_logic 1 signal 6 } 
 	{ MaxPooling2D_0_array_we0 sc_out sc_logic 1 signal 6 } 
@@ -69,9 +66,6 @@ set NewPortList {[
  	{ "name": "Conv2D_0_array_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":14, "type": "signal", "bundle":{"name": "Conv2D_0_array", "role": "address0" }} , 
  	{ "name": "Conv2D_0_array_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "Conv2D_0_array", "role": "ce0" }} , 
  	{ "name": "Conv2D_0_array_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "Conv2D_0_array", "role": "q0" }} , 
- 	{ "name": "Conv2D_0_array_address1", "direction": "out", "datatype": "sc_lv", "bitwidth":14, "type": "signal", "bundle":{"name": "Conv2D_0_array", "role": "address1" }} , 
- 	{ "name": "Conv2D_0_array_ce1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "Conv2D_0_array", "role": "ce1" }} , 
- 	{ "name": "Conv2D_0_array_q1", "direction": "in", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "Conv2D_0_array", "role": "q1" }} , 
  	{ "name": "MaxPooling2D_0_array_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":12, "type": "signal", "bundle":{"name": "MaxPooling2D_0_array", "role": "address0" }} , 
  	{ "name": "MaxPooling2D_0_array_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "MaxPooling2D_0_array", "role": "ce0" }} , 
  	{ "name": "MaxPooling2D_0_array_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "MaxPooling2D_0_array", "role": "we0" }} , 
@@ -109,8 +103,8 @@ set ArgLastReadFirstWriteLatency {
 		output_depth {Type I LastRead 0 FirstWrite -1}
 		output_height {Type I LastRead 0 FirstWrite -1}
 		output_width {Type I LastRead 0 FirstWrite -1}
-		Conv2D_0_array {Type I LastRead 8 FirstWrite -1}
-		MaxPooling2D_0_array {Type IO LastRead 9 FirstWrite 5}}}
+		Conv2D_0_array {Type I LastRead 9 FirstWrite -1}
+		MaxPooling2D_0_array {Type IO LastRead 8 FirstWrite 9}}}
 
 set hasDtUnsupportedChannel 0
 
@@ -128,6 +122,6 @@ set Spec2ImplPortList {
 	output_depth { ap_none {  { output_depth in_data 0 16 } } }
 	output_height { ap_none {  { output_height in_data 0 16 } } }
 	output_width { ap_none {  { output_width in_data 0 16 } } }
-	Conv2D_0_array { ap_memory {  { Conv2D_0_array_address0 mem_address 1 14 }  { Conv2D_0_array_ce0 mem_ce 1 1 }  { Conv2D_0_array_q0 mem_dout 0 16 }  { Conv2D_0_array_address1 MemPortADDR2 1 14 }  { Conv2D_0_array_ce1 MemPortCE2 1 1 }  { Conv2D_0_array_q1 MemPortDOUT2 0 16 } } }
+	Conv2D_0_array { ap_memory {  { Conv2D_0_array_address0 mem_address 1 14 }  { Conv2D_0_array_ce0 mem_ce 1 1 }  { Conv2D_0_array_q0 mem_dout 0 16 } } }
 	MaxPooling2D_0_array { ap_memory {  { MaxPooling2D_0_array_address0 mem_address 1 12 }  { MaxPooling2D_0_array_ce0 mem_ce 1 1 }  { MaxPooling2D_0_array_we0 mem_we 1 1 }  { MaxPooling2D_0_array_d0 mem_din 1 16 }  { MaxPooling2D_0_array_q0 mem_dout 0 16 } } }
 }

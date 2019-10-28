@@ -1,5 +1,5 @@
 // ==============================================================
-// File generated on Sun Oct 27 20:27:12 JST 2019
+// File generated on Mon Oct 28 11:35:41 JST 2019
 // Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
 // SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 // IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
@@ -249,14 +249,14 @@ uint8_t padding2d_fix16(uint16_t padding_height, uint16_t padding_width,
 
   for (uint16_t height = padding_height;
     height < padding_height + input_height; height++) {
-#pragma HLS unroll factor = 2
+
    for (uint16_t width = 0; width < padding_width; width++) {
     output[depth * output_height * output_width
       + height * output_width + width] = 0;
    }
    for (uint16_t width = padding_width;
      width < padding_width + input_width; width++) {
-#pragma HLS unroll factor = 8
+
     output[depth * output_height * output_width
       + height * output_width + width] = input[depth
       * input_height * input_width
