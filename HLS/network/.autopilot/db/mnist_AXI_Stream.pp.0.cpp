@@ -22036,13 +22036,13 @@ uint8_t relu);
 
 
 uint8_t separable_conv2d_fix16(uint16_t input_depth, uint16_t input_height, uint16_t input_width, int16_t* input,
-uint16_t output_depth, uint16_t output_height, uint16_t output_width, int16_t* output,
+uint16_t output_depth, uint16_t output_height, uint16_t output_width, int16_t* output, int16_t* middle_array,
 const int16_t* bias_d, const int16_t* bias_p,
 uint16_t kernel_d_height, uint16_t kernel_d_width, const int16_t* kernel_d, const int16_t* kernel_p,
 uint8_t relu, uint8_t fractal_width);
 
 uint8_t separable_conv2d_float32(uint16_t input_depth, uint16_t input_height, uint16_t input_width, float* input,
-uint16_t output_depth, uint16_t output_height, uint16_t output_width, float* output,
+uint16_t output_depth, uint16_t output_height, uint16_t output_width, float* output, float* middle_array,
 const float* bias_d, const float* bias_p,
 uint16_t kernel_d_height, uint16_t kernel_d_width, const float* kernel_d, const float* kernel_p,
 uint8_t relu);
@@ -22060,6 +22060,9 @@ uint8_t relu);
 uint16_t Padding2D_0_depth = 1, Padding2D_0_height = 30, Padding2D_0_width = 30;
 int16_t Padding2D_0_array[1][30][30];
 
+uint16_t SeparableConv2D_0_m_depth = 1, SeparableConv2D_0_m_height = 28, SeparableConv2D_0_m_width = 28;
+int16_t SeparableConv2D_0_m_array[1][28][28];
+
 uint16_t SeparableConv2D_0_depth = 16, SeparableConv2D_0_height = 28, SeparableConv2D_0_width = 28;
 int16_t SeparableConv2D_0_array[16][28][28];
 
@@ -22068,6 +22071,9 @@ int16_t MaxPooling2D_0_array[16][14][14];
 
 uint16_t Padding2D_1_depth = 16, Padding2D_1_height = 16, Padding2D_1_width = 16;
 int16_t Padding2D_1_array[16][16][16];
+
+uint16_t SeparableConv2D_1_m_depth = 16, SeparableConv2D_1_m_height = 14, SeparableConv2D_1_m_width = 14;
+int16_t SeparableConv2D_1_m_array[16][14][14];
 
 uint16_t SeparableConv2D_1_depth = 8, SeparableConv2D_1_height = 14, SeparableConv2D_1_width = 14;
 int16_t SeparableConv2D_1_array[8][14][14];
@@ -22078,6 +22084,9 @@ int16_t MaxPooling2D_1_array[8][7][7];
 uint16_t Padding2D_2_depth = 8, Padding2D_2_height = 9, Padding2D_2_width = 9;
 int16_t Padding2D_2_array[8][9][9];
 
+uint16_t SeparableConv2D_2_m_depth = 8, SeparableConv2D_2_m_height = 7, SeparableConv2D_2_m_width = 7;
+int16_t SeparableConv2D_2_m_array[8][7][7];
+
 uint16_t SeparableConv2D_2_depth = 8, SeparableConv2D_2_height = 7, SeparableConv2D_2_width = 7;
 int16_t SeparableConv2D_2_array[8][7][7];
 
@@ -22087,6 +22096,9 @@ int16_t UpSampling2D_0_array[8][14][14];
 uint16_t Padding2D_3_depth = 8, Padding2D_3_height = 16, Padding2D_3_width = 16;
 int16_t Padding2D_3_array[8][16][16];
 
+uint16_t SeparableConv2D_3_m_depth = 8, SeparableConv2D_3_m_height = 14, SeparableConv2D_3_m_width = 14;
+int16_t SeparableConv2D_3_m_array[8][14][14];
+
 uint16_t SeparableConv2D_3_depth = 16, SeparableConv2D_3_height = 14, SeparableConv2D_3_width = 14;
 int16_t SeparableConv2D_3_array[16][14][14];
 
@@ -22095,6 +22107,9 @@ int16_t UpSampling2D_1_array[16][28][28];
 
 uint16_t Padding2D_4_depth = 16, Padding2D_4_height = 30, Padding2D_4_width = 30;
 int16_t Padding2D_4_array[16][30][30];
+
+uint16_t SeparableConv2D_4_m_depth = 16, SeparableConv2D_4_m_height = 28, SeparableConv2D_4_m_width = 28;
+int16_t SeparableConv2D_4_m_array[16][28][28];
 
 uint16_t SeparableConv2D_4_depth = 1, SeparableConv2D_4_height = 28, SeparableConv2D_4_width = 28;
 int16_t SeparableConv2D_4_array[1][28][28];
@@ -23067,11 +23082,9 @@ const int16_t SeparableConv2D_4_b_p[1] = {-7189};
 # 18 "mnist_AXI_Stream.cpp" 2
 
 
-
 using namespace std;
 
-
-void network(axis &input_data, axis &output_data){
+void network(axis &input_data, axis &output_data) {
 #pragma HLS INTERFACE s_axilite register port=return
 #pragma HLS INTERFACE axis register both port=&input_data
 #pragma HLS INTERFACE axis register both port=&output_data
@@ -23082,11 +23095,11 @@ void network(axis &input_data, axis &output_data){
  ap_axis<16, 1, 1, 1> tmp;
  ap_axis<16, 1, 1, 1> out[1][28][28];
 
- for(int depth = 0; depth < input_0_depth; depth++){
-  for(int height = 0; height < input_0_height; height++){
-   for(int width = 0; width < input_0_width; width++){
+ for (int depth = 0; depth < input_0_depth; depth++) {
+  for (int height = 0; height < input_0_height; height++) {
+   for (int width = 0; width < input_0_width; width++) {
     tmp = input_data.read();
-    input_0_array[depth][height][width] = (int16_t)tmp.data;
+    input_0_array[depth][height][width] = (int16_t) tmp.data;
     out[depth][height][width].dest = tmp.dest;
     out[depth][height][width].id = tmp.id;
     out[depth][height][width].keep = tmp.keep;
@@ -23096,83 +23109,116 @@ void network(axis &input_data, axis &output_data){
   }
  }
 
- padding2d_fix16(1, 1,
- input_0_depth, input_0_height, input_0_width, (int16_t*) input_0_array,
- Padding2D_0_height, Padding2D_0_width, (int16_t*) Padding2D_0_array);
+ padding2d_fix16(1, 1, input_0_depth, input_0_height, input_0_width,
+   (int16_t*) input_0_array, Padding2D_0_height, Padding2D_0_width,
+   (int16_t*) Padding2D_0_array);
 
- separable_conv2d_fix16(Padding2D_0_depth, Padding2D_0_height, Padding2D_0_width, (int16_t*) Padding2D_0_array,
- SeparableConv2D_0_depth, SeparableConv2D_0_height, SeparableConv2D_0_width, (int16_t*) SeparableConv2D_0_array,
- (int16_t*) SeparableConv2D_0_b_d, (int16_t*) SeparableConv2D_0_b_p,
- 3, 3, (int16_t*) SeparableConv2D_0_w_d, (int16_t*) SeparableConv2D_0_w_p, 1, 14);
+ separable_conv2d_fix16(Padding2D_0_depth, Padding2D_0_height,
+   Padding2D_0_width, (int16_t*) Padding2D_0_array,
+   SeparableConv2D_0_depth, SeparableConv2D_0_height,
+   SeparableConv2D_0_width, (int16_t*) SeparableConv2D_0_array,
+   (int16_t*) SeparableConv2D_0_m_array,
+   (int16_t*) SeparableConv2D_0_b_d, (int16_t*) SeparableConv2D_0_b_p,
+   3, 3, (int16_t*) SeparableConv2D_0_w_d,
+   (int16_t*) SeparableConv2D_0_w_p, 1,
+   14);
 
- max_pooling2d_fix16(2,
- SeparableConv2D_0_depth, SeparableConv2D_0_height, SeparableConv2D_0_width, (int16_t*) SeparableConv2D_0_array,
- MaxPooling2D_0_depth, MaxPooling2D_0_height, MaxPooling2D_0_width, (int16_t*) MaxPooling2D_0_array);
+ max_pooling2d_fix16(2, SeparableConv2D_0_depth, SeparableConv2D_0_height,
+   SeparableConv2D_0_width, (int16_t*) SeparableConv2D_0_array,
+   MaxPooling2D_0_depth, MaxPooling2D_0_height, MaxPooling2D_0_width,
+   (int16_t*) MaxPooling2D_0_array);
 
- padding2d_fix16(1, 1,
- MaxPooling2D_0_depth, MaxPooling2D_0_height, MaxPooling2D_0_width, (int16_t*) MaxPooling2D_0_array,
- Padding2D_1_height, Padding2D_1_width, (int16_t*) Padding2D_1_array);
+ padding2d_fix16(1, 1, MaxPooling2D_0_depth, MaxPooling2D_0_height,
+   MaxPooling2D_0_width, (int16_t*) MaxPooling2D_0_array,
+   Padding2D_1_height, Padding2D_1_width,
+   (int16_t*) Padding2D_1_array);
 
- separable_conv2d_fix16(Padding2D_1_depth, Padding2D_1_height, Padding2D_1_width, (int16_t*) Padding2D_1_array,
- SeparableConv2D_1_depth, SeparableConv2D_1_height, SeparableConv2D_1_width, (int16_t*) SeparableConv2D_1_array,
- (int16_t*) SeparableConv2D_1_b_d, (int16_t*) SeparableConv2D_1_b_p,
- 3, 3, (int16_t*) SeparableConv2D_1_w_d, (int16_t*) SeparableConv2D_1_w_p, 1, 14);
+ separable_conv2d_fix16(Padding2D_1_depth, Padding2D_1_height,
+   Padding2D_1_width, (int16_t*) Padding2D_1_array,
+   SeparableConv2D_1_depth, SeparableConv2D_1_height,
+   SeparableConv2D_1_width, (int16_t*) SeparableConv2D_1_array,
+   (int16_t*) SeparableConv2D_1_m_array,
+   (int16_t*) SeparableConv2D_1_b_d, (int16_t*) SeparableConv2D_1_b_p,
+   3, 3, (int16_t*) SeparableConv2D_1_w_d,
+   (int16_t*) SeparableConv2D_1_w_p, 1,
+   14);
 
- max_pooling2d_fix16(2,
- SeparableConv2D_1_depth, SeparableConv2D_1_height, SeparableConv2D_1_width, (int16_t*) SeparableConv2D_1_array,
- MaxPooling2D_1_depth, MaxPooling2D_1_height, MaxPooling2D_1_width, (int16_t*) MaxPooling2D_1_array);
+ max_pooling2d_fix16(2, SeparableConv2D_1_depth, SeparableConv2D_1_height,
+   SeparableConv2D_1_width, (int16_t*) SeparableConv2D_1_array,
+   MaxPooling2D_1_depth, MaxPooling2D_1_height, MaxPooling2D_1_width,
+   (int16_t*) MaxPooling2D_1_array);
 
- padding2d_fix16(1, 1,
- MaxPooling2D_1_depth, MaxPooling2D_1_height, MaxPooling2D_1_width, (int16_t*) MaxPooling2D_1_array,
- Padding2D_2_height, Padding2D_2_width, (int16_t*) Padding2D_2_array);
+ padding2d_fix16(1, 1, MaxPooling2D_1_depth, MaxPooling2D_1_height,
+   MaxPooling2D_1_width, (int16_t*) MaxPooling2D_1_array,
+   Padding2D_2_height, Padding2D_2_width,
+   (int16_t*) Padding2D_2_array);
 
- separable_conv2d_fix16(Padding2D_2_depth, Padding2D_2_height, Padding2D_2_width, (int16_t*) Padding2D_2_array,
- SeparableConv2D_2_depth, SeparableConv2D_2_height, SeparableConv2D_2_width, (int16_t*) SeparableConv2D_2_array,
- (int16_t*) SeparableConv2D_2_b_d, (int16_t*) SeparableConv2D_2_b_p,
- 3, 3, (int16_t*) SeparableConv2D_2_w_d, (int16_t*) SeparableConv2D_2_w_p, 1, 14);
+ separable_conv2d_fix16(Padding2D_2_depth, Padding2D_2_height,
+   Padding2D_2_width, (int16_t*) Padding2D_2_array,
+   SeparableConv2D_2_depth, SeparableConv2D_2_height,
+   SeparableConv2D_2_width, (int16_t*) SeparableConv2D_2_array,
+   (int16_t*) SeparableConv2D_2_m_array,
+   (int16_t*) SeparableConv2D_2_b_d, (int16_t*) SeparableConv2D_2_b_p,
+   3, 3, (int16_t*) SeparableConv2D_2_w_d,
+   (int16_t*) SeparableConv2D_2_w_p, 1,
+   14);
 
- up_sampling2d_fix16(2,
- SeparableConv2D_2_depth, SeparableConv2D_2_height, SeparableConv2D_2_width, (int16_t*) SeparableConv2D_2_array,
- UpSampling2D_0_depth, UpSampling2D_0_height, UpSampling2D_0_width, (int16_t*) UpSampling2D_0_array);
+ up_sampling2d_fix16(2, SeparableConv2D_2_depth, SeparableConv2D_2_height,
+   SeparableConv2D_2_width, (int16_t*) SeparableConv2D_2_array,
+   UpSampling2D_0_depth, UpSampling2D_0_height, UpSampling2D_0_width,
+   (int16_t*) UpSampling2D_0_array);
 
- padding2d_fix16(1, 1,
- UpSampling2D_0_depth, UpSampling2D_0_height, UpSampling2D_0_width, (int16_t*) UpSampling2D_0_array,
- Padding2D_3_height, Padding2D_3_width, (int16_t*) Padding2D_3_array);
+ padding2d_fix16(1, 1, UpSampling2D_0_depth, UpSampling2D_0_height,
+   UpSampling2D_0_width, (int16_t*) UpSampling2D_0_array,
+   Padding2D_3_height, Padding2D_3_width,
+   (int16_t*) Padding2D_3_array);
 
- separable_conv2d_fix16(Padding2D_3_depth, Padding2D_3_height, Padding2D_3_width, (int16_t*) Padding2D_3_array,
- SeparableConv2D_3_depth, SeparableConv2D_3_height, SeparableConv2D_3_width, (int16_t*) SeparableConv2D_3_array,
- (int16_t*) SeparableConv2D_3_b_d, (int16_t*) SeparableConv2D_3_b_p,
- 3, 3, (int16_t*) SeparableConv2D_3_w_d, (int16_t*) SeparableConv2D_3_w_p, 1, 14);
+ separable_conv2d_fix16(Padding2D_3_depth, Padding2D_3_height,
+   Padding2D_3_width, (int16_t*) Padding2D_3_array,
+   SeparableConv2D_3_depth, SeparableConv2D_3_height,
+   SeparableConv2D_3_width, (int16_t*) SeparableConv2D_3_array,
+   (int16_t*) SeparableConv2D_3_m_array,
+   (int16_t*) SeparableConv2D_3_b_d, (int16_t*) SeparableConv2D_3_b_p,
+   3, 3, (int16_t*) SeparableConv2D_3_w_d,
+   (int16_t*) SeparableConv2D_3_w_p, 1,
+   14);
 
- up_sampling2d_fix16(2,
- SeparableConv2D_3_depth, SeparableConv2D_3_height, SeparableConv2D_3_width, (int16_t*) SeparableConv2D_3_array,
- UpSampling2D_1_depth, UpSampling2D_1_height, UpSampling2D_1_width, (int16_t*) UpSampling2D_1_array);
+ up_sampling2d_fix16(2, SeparableConv2D_3_depth, SeparableConv2D_3_height,
+   SeparableConv2D_3_width, (int16_t*) SeparableConv2D_3_array,
+   UpSampling2D_1_depth, UpSampling2D_1_height, UpSampling2D_1_width,
+   (int16_t*) UpSampling2D_1_array);
 
- padding2d_fix16(1, 1,
- UpSampling2D_1_depth, UpSampling2D_1_height, UpSampling2D_1_width, (int16_t*) UpSampling2D_1_array,
- Padding2D_4_height, Padding2D_4_width, (int16_t*) Padding2D_4_array);
+ padding2d_fix16(1, 1, UpSampling2D_1_depth, UpSampling2D_1_height,
+   UpSampling2D_1_width, (int16_t*) UpSampling2D_1_array,
+   Padding2D_4_height, Padding2D_4_width,
+   (int16_t*) Padding2D_4_array);
 
- separable_conv2d_fix16(Padding2D_4_depth, Padding2D_4_height, Padding2D_4_width, (int16_t*) Padding2D_4_array,
- SeparableConv2D_4_depth, SeparableConv2D_4_height, SeparableConv2D_4_width, (int16_t*) SeparableConv2D_4_array,
- (int16_t*) SeparableConv2D_4_b_d, (int16_t*) SeparableConv2D_4_b_p,
- 3, 3, (int16_t*) SeparableConv2D_4_w_d, (int16_t*) SeparableConv2D_4_w_p, 1, 14);
+ separable_conv2d_fix16(Padding2D_4_depth, Padding2D_4_height,
+   Padding2D_4_width, (int16_t*) Padding2D_4_array,
+   SeparableConv2D_4_depth, SeparableConv2D_4_height,
+   SeparableConv2D_4_width, (int16_t*) SeparableConv2D_4_array,
+   (int16_t*) SeparableConv2D_4_m_array,
+   (int16_t*) SeparableConv2D_4_b_d, (int16_t*) SeparableConv2D_4_b_p,
+   3, 3, (int16_t*) SeparableConv2D_4_w_d,
+   (int16_t*) SeparableConv2D_4_w_p, 1,
+   14);
 
+ for (int depth = 0; depth < SeparableConv2D_4_depth; depth++) {
+  for (int height = 0; height < SeparableConv2D_4_height; height++) {
+   for (int width = 0; width < SeparableConv2D_4_width; width++) {
 
- for(int depth = 0; depth < SeparableConv2D_4_depth; depth++){
-  for(int height = 0; height < SeparableConv2D_4_height; height++){
-   for(int width = 0; width < SeparableConv2D_4_width; width++){
+    out[depth][height][width].data =
+      (int16_t) SeparableConv2D_4_array[depth][height][width];
 
-    out[depth][height][width].data = (int16_t)SeparableConv2D_4_array[depth][height][width];
-
-    if(depth == 0 && height == 0 && width == 0){
+    if (depth == 0 && height == 0 && width == 0) {
      out[depth][height][width].user = 1;
     } else {
      out[depth][height][width].user = 0;
     }
 
-    if((depth == SeparableConv2D_4_depth-1) &&
-     (height == SeparableConv2D_4_height-1) &&
-     (width == SeparableConv2D_4_width-1)){
+    if ((depth == SeparableConv2D_4_depth - 1)
+      && (height == SeparableConv2D_4_height - 1)
+      && (width == SeparableConv2D_4_width - 1)) {
 
      out[depth][height][width].last = 1;
     } else {

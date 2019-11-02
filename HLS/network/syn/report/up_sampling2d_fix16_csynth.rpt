@@ -1,0 +1,178 @@
+
+
+================================================================
+== Vivado HLS Report for 'up_sampling2d_fix16'
+================================================================
+* Date:           Sat Nov  2 18:43:14 2019
+
+* Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
+* Project:        HLS
+* Solution:       network
+* Product family: zynq
+* Target device:  xc7z020clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     8.510|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    ?|    ?|    ?|    ?|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-----------------+-----+-----+----------+-----------+-----------+------+----------+
+        |                 |  Latency  | Iteration|  Initiation Interval  | Trip |          |
+        |    Loop Name    | min | max |  Latency |  achieved |   target  | Count| Pipelined|
+        +-----------------+-----+-----+----------+-----------+-----------+------+----------+
+        |- Loop 1         |    ?|    ?|         ?|          -|          -|     ?|    no    |
+        | + Loop 1.1      |    ?|    ?|         ?|          -|          -|     ?|    no    |
+        |  ++ Loop 1.1.1  |    ?|    ?|         2|          -|          -|     ?|    no    |
+        +-----------------+-----+-----+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  |
++-----------------+---------+-------+--------+-------+
+|DSP              |        -|      -|       -|      -|
+|Expression       |        -|      4|       0|    382|
+|FIFO             |        -|      -|       -|      -|
+|Instance         |        -|      -|       -|      -|
+|Memory           |        -|      -|       -|      -|
+|Multiplexer      |        -|      -|       -|     83|
+|Register         |        -|      -|     454|      -|
++-----------------+---------+-------+--------+-------+
+|Total            |        0|      4|     454|    465|
++-----------------+---------+-------+--------+-------+
+|Available        |      280|    220|  106400|  53200|
++-----------------+---------+-------+--------+-------+
+|Utilization (%)  |        0|      1|   ~0   |   ~0  |
++-----------------+---------+-------+--------+-------+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +---------------------+----------+-------+---+----+------------+------------+
+    |    Variable Name    | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +---------------------+----------+-------+---+----+------------+------------+
+    |tmp1_fu_222_p2       |     *    |      2|  0|  20|          16|          32|
+    |tmp3_fu_226_p2       |     *    |      2|  0|  20|          16|          32|
+    |next_mul3_fu_160_p2  |     +    |      0|  0|  39|          32|          32|
+    |next_mul_fu_165_p2   |     +    |      0|  0|  39|          32|          32|
+    |out_d_1_fu_175_p2    |     +    |      0|  0|  23|          16|           1|
+    |out_h_1_fu_186_p2    |     +    |      0|  0|  23|          16|           1|
+    |out_w_1_fu_235_p2    |     +    |      0|  0|  23|          16|           1|
+    |tmp2_fu_216_p2       |     +    |      0|  0|  39|          32|          32|
+    |tmp_10_fu_255_p2     |     +    |      0|  0|  39|          32|          32|
+    |tmp_13_fu_269_p2     |     +    |      0|  0|  39|          32|          32|
+    |tmp_fu_210_p2        |     +    |      0|  0|  39|          32|          32|
+    |exitcond2_fu_181_p2  |   icmp   |      0|  0|  13|          16|          16|
+    |exitcond3_fu_170_p2  |   icmp   |      0|  0|  13|          16|          16|
+    |exitcond_fu_230_p2   |   icmp   |      0|  0|  13|          16|          16|
+    +---------------------+----------+-------+---+----+------------+------------+
+    |Total                |          |      4|  0| 382|         320|         307|
+    +---------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +------------------+----+-----------+-----+-----------+
+    |       Name       | LUT| Input Size| Bits| Total Bits|
+    +------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm         |  38|          7|    1|          7|
+    |out_d_reg_87      |   9|          2|   16|         32|
+    |out_h_reg_122     |   9|          2|   16|         32|
+    |out_w_reg_133     |   9|          2|   16|         32|
+    |phi_mul2_reg_110  |   9|          2|   32|         64|
+    |phi_mul_reg_98    |   9|          2|   32|         64|
+    +------------------+----+-----------+-----+-----------+
+    |Total             |  83|         17|  113|        231|
+    +------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------+----+----+-----+-----------+
+    |        Name       | FF | LUT| Bits| Const Bits|
+    +-------------------+----+----+-----+-----------+
+    |ap_CS_fsm          |   6|   0|    6|          0|
+    |next_mul3_reg_313  |  32|   0|   32|          0|
+    |next_mul_reg_318   |  32|   0|   32|          0|
+    |out_d_1_reg_326    |  16|   0|   16|          0|
+    |out_d_reg_87       |  16|   0|   16|          0|
+    |out_h_1_reg_334    |  16|   0|   16|          0|
+    |out_h_reg_122      |  16|   0|   16|          0|
+    |out_w_1_reg_362    |  16|   0|   16|          0|
+    |out_w_reg_133      |  16|   0|   16|          0|
+    |phi_mul2_reg_110   |  32|   0|   32|          0|
+    |phi_mul_reg_98     |  32|   0|   32|          0|
+    |tmp1_reg_349       |  32|   0|   32|          0|
+    |tmp2_reg_344       |  32|   0|   32|          0|
+    |tmp3_reg_354       |  32|   0|   32|          0|
+    |tmp_13_reg_372     |  32|   0|   32|          0|
+    |tmp_1_reg_293      |  16|   0|   32|         16|
+    |tmp_2_reg_298      |  16|   0|   32|         16|
+    |tmp_3_reg_303      |  16|   0|   32|         16|
+    |tmp_4_reg_308      |  16|   0|   32|         16|
+    |tmp_reg_339        |  32|   0|   32|          0|
+    +-------------------+----+----+-----+-----------+
+    |Total              | 454|   0|  518|         64|
+    +-------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------------------------+-----+-----+------------+----------------------+--------------+
+|           RTL Ports           | Dir | Bits|  Protocol  |     Source Object    |    C Type    |
++-------------------------------+-----+-----+------------+----------------------+--------------+
+|ap_clk                         |  in |    1| ap_ctrl_hs |  up_sampling2d_fix16 | return value |
+|ap_rst                         |  in |    1| ap_ctrl_hs |  up_sampling2d_fix16 | return value |
+|ap_start                       |  in |    1| ap_ctrl_hs |  up_sampling2d_fix16 | return value |
+|ap_done                        | out |    1| ap_ctrl_hs |  up_sampling2d_fix16 | return value |
+|ap_idle                        | out |    1| ap_ctrl_hs |  up_sampling2d_fix16 | return value |
+|ap_ready                       | out |    1| ap_ctrl_hs |  up_sampling2d_fix16 | return value |
+|input_height                   |  in |   16|   ap_none  |     input_height     |    scalar    |
+|input_width                    |  in |   16|   ap_none  |      input_width     |    scalar    |
+|output_depth                   |  in |   16|   ap_none  |     output_depth     |    scalar    |
+|output_height                  |  in |   16|   ap_none  |     output_height    |    scalar    |
+|output_width                   |  in |   16|   ap_none  |     output_width     |    scalar    |
+|SeparableConv2D_3_ar_address0  | out |   12|  ap_memory | SeparableConv2D_3_ar |     array    |
+|SeparableConv2D_3_ar_ce0       | out |    1|  ap_memory | SeparableConv2D_3_ar |     array    |
+|SeparableConv2D_3_ar_q0        |  in |   16|  ap_memory | SeparableConv2D_3_ar |     array    |
+|UpSampling2D_1_array_address0  | out |   14|  ap_memory | UpSampling2D_1_array |     array    |
+|UpSampling2D_1_array_ce0       | out |    1|  ap_memory | UpSampling2D_1_array |     array    |
+|UpSampling2D_1_array_we0       | out |    1|  ap_memory | UpSampling2D_1_array |     array    |
+|UpSampling2D_1_array_d0        | out |   16|  ap_memory | UpSampling2D_1_array |     array    |
++-------------------------------+-----+-----+------------+----------------------+--------------+
+

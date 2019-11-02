@@ -19,9 +19,9 @@ module up_sampling2d_fix16 (
         output_depth,
         output_height,
         output_width,
-        Conv2D_3_array_address0,
-        Conv2D_3_array_ce0,
-        Conv2D_3_array_q0,
+        SeparableConv2D_3_ar_address0,
+        SeparableConv2D_3_ar_ce0,
+        SeparableConv2D_3_ar_q0,
         UpSampling2D_1_array_address0,
         UpSampling2D_1_array_ce0,
         UpSampling2D_1_array_we0,
@@ -46,9 +46,9 @@ input  [15:0] input_width;
 input  [15:0] output_depth;
 input  [15:0] output_height;
 input  [15:0] output_width;
-output  [11:0] Conv2D_3_array_address0;
-output   Conv2D_3_array_ce0;
-input  [15:0] Conv2D_3_array_q0;
+output  [11:0] SeparableConv2D_3_ar_address0;
+output   SeparableConv2D_3_ar_ce0;
+input  [15:0] SeparableConv2D_3_ar_q0;
 output  [13:0] UpSampling2D_1_array_address0;
 output   UpSampling2D_1_array_ce0;
 output   UpSampling2D_1_array_we0;
@@ -57,7 +57,7 @@ output  [15:0] UpSampling2D_1_array_d0;
 reg ap_done;
 reg ap_idle;
 reg ap_ready;
-reg Conv2D_3_array_ce0;
+reg SeparableConv2D_3_ar_ce0;
 reg UpSampling2D_1_array_ce0;
 reg UpSampling2D_1_array_we0;
 
@@ -221,9 +221,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state5)) begin
-        Conv2D_3_array_ce0 = 1'b1;
+        SeparableConv2D_3_ar_ce0 = 1'b1;
     end else begin
-        Conv2D_3_array_ce0 = 1'b0;
+        SeparableConv2D_3_ar_ce0 = 1'b0;
     end
 end
 
@@ -309,11 +309,11 @@ always @ (*) begin
     endcase
 end
 
-assign Conv2D_3_array_address0 = tmp_11_fu_260_p1;
+assign SeparableConv2D_3_ar_address0 = tmp_11_fu_260_p1;
 
 assign UpSampling2D_1_array_address0 = tmp_14_fu_274_p1;
 
-assign UpSampling2D_1_array_d0 = Conv2D_3_array_q0;
+assign UpSampling2D_1_array_d0 = SeparableConv2D_3_ar_q0;
 
 assign ap_CS_fsm_state1 = ap_CS_fsm[32'd0];
 

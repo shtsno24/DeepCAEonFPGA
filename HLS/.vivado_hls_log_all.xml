@@ -2,27 +2,15 @@
 <vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
   <errorLogs>
     <logs>
-      <synLog>
-        <logs message="ERROR: [HLS 200-70] Synthesizability check failed.&#xA;command 'ap_source' returned error code&#xA;    while executing&#xA;&quot;source /home/masudalab/DeepCAEonFPGA/HLS/network/csynth.tcl&quot;&#xA;    invoked from within&#xA;&quot;hls::main /home/masudalab/DeepCAEonFPGA/HLS/network/csynth.tcl&quot;&#xA;    (&quot;uplevel&quot; body line 1)&#xA;    invoked from within&#xA;&quot;uplevel 1 hls::main {*}$args&quot;&#xA;    (procedure &quot;hls_proc&quot; line 5)&#xA;    invoked from within&#xA;&quot;hls_proc $argv&quot;&#xA;" projectName="HLS" solutionName="network" date="2019-11-02T15:30:01.604+0900"/>
-        <logs message="ERROR: [SYNCHK 200-31] layers_c/separable_conv2d.cpp:12: dynamic memory allocation/deallocation is not supported: variable 'middle_array'." projectName="HLS" solutionName="network" date="2019-11-02T15:30:01.579+0900"/>
-        <logs message="ERROR: [SYNCHK 200-21] mnist_AXI_Stream.cpp:35: The GCC/LLVM intrinsic function 'stacksave' is not supported, only a subset of intrinsics is supported, please check the coding style guide for more information." projectName="HLS" solutionName="network" date="2019-11-02T15:30:01.576+0900"/>
-        <logs message="ERROR: [SYNCHK 200-61] layers_c/pointwise_conv2d.cpp:22: unsupported memory access on variable 'input' which is (or contains) an array with unknown size at compile time." projectName="HLS" solutionName="network" date="2019-11-02T15:30:01.573+0900"/>
-      </synLog>
-      <simLog/>
-      <mgLog/>
-      <packageLog/>
-      <csimLog/>
+      <synLog/>
     </logs>
   </errorLogs>
   <warningLogs>
     <logs>
       <synLog>
-        <logs message="WARNING: [HLS 200-40] In file included from mnist_AXI_Stream.cpp:1:&#xA;In file included from mnist_AXI_Stream.cpp:6:&#xA;/tools/Xilinx/Vivado/2018.3/include/gmp.h:2226:345: warning: equality comparison with extraneous parentheses [-Wparentheses-equality]&#xA;  do { mp_size_t __gmp_i; mp_limb_t __gmp_x; __gmp_i = (__gmp_ysize); if (__gmp_i != 0) { if (__gmpn_add_n (__gmp_wp, __gmp_xp, __gmp_yp, __gmp_i)) { do { if (__gmp_i >= (__gmp_xsize)) { (__gmp_c) = 1; goto __gmp_done; } __gmp_x = (__gmp_xp)[__gmp_i]; } while ((((__gmp_wp)[__gmp_i++] = (__gmp_x + 1) &amp; ((~ (static_cast&lt;mp_limb_t> (0))) >> 0)) == 0)); } } if ((__gmp_wp) != (__gmp_xp)) do { mp_size_t __gmp_j; for (__gmp_j = (__gmp_i); __gmp_j &lt; (__gmp_xsize); __gmp_j++) (__gmp_wp)[__gmp_j] = (__gmp_xp)[__gmp_j]; } while (0); (__gmp_c) = 0; __gmp_done: ; } while (0);&#xA;                                                                                                                                                                                                                                                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~&#xA;/tools/Xilinx/Vivado/2018.3/include/gmp.h:2226:345: note: remove extraneous parentheses around the comparison to silence this warning&#xA;  do { mp_size_t __gmp_i; mp_limb_t __gmp_x; __gmp_i = (__gmp_ysize); if (__gmp_i != 0) { if (__gmpn_add_n (__gmp_wp, __gmp_xp, __gmp_yp, __gmp_i)) { do { if (__gmp_i >= (__gmp_xsize)) { (__gmp_c) = 1; goto __gmp_done; } __gmp_x = (__gmp_xp)[__gmp_i]; } while ((((__gmp_wp)[__gmp_i++] = (__gmp_x + 1) &amp; ((~ (static_cast&lt;mp_limb_t> (0))) >> 0)) == 0)); } } if ((__gmp_wp) != (__gmp_xp)) do { mp_size_t __gmp_j; for (__gmp_j = (__gmp_i); __gmp_j &lt; (__gmp_xsize); __gmp_j++) (__gmp_wp)[__gmp_j] = (__gmp_xp)[__gmp_j]; } while (0); (__gmp_c) = 0; __gmp_done: ; } while (0);&#xA;                                                                                                                                                                                                                                                                     ~                                                                                  ^   ~&#xA;/tools/Xilinx/Vivado/2018.3/include/gmp.h:2226:345: note: use '=' to turn this equality comparison into an assignment&#xA;  do { mp_size_t __gmp_i; mp_limb_t __gmp_x; __gmp_i = (__gmp_ysize); if (__gmp_i != 0) { if (__gmpn_add_n (__gmp_wp, __gmp_xp, __gmp_yp, __gmp_i)) { do { if (__gmp_i >= (__gmp_xsize)) { (__gmp_c) = 1; goto __gmp_done; } __gmp_x = (__gmp_xp)[__gmp_i]; } while ((((__gmp_wp)[__gmp_i++] = (__gmp_x + 1) &amp; ((~ (static_cast&lt;mp_limb_t> (0))) >> 0)) == 0)); } } if ((__gmp_wp) != (__gmp_xp)) do { mp_size_t __gmp_j; for (__gmp_j = (__gmp_i); __gmp_j &lt; (__gmp_xsize); __gmp_j++) (__gmp_wp)[__gmp_j] = (__gmp_xp)[__gmp_j]; } while (0); (__gmp_c) = 0; __gmp_done: ; } while (0);&#xA;                                                                                                                                                                                                                                                                                                                                                        ^~&#xA;                                                                                                                                                                                                                                                                                                                                                        =&#xA;1 warning generated." projectName="HLS" solutionName="network" date="2019-11-02T15:29:47.470+0900" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Global array 'SeparableConv2D_4_ar' will not be exposed as RTL port." projectName="HLS" solutionName="network" date="2019-11-02T18:43:16.610+0900" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Global array 'SeparableConv2D_4_m_s' will not be exposed as RTL port." projectName="HLS" solutionName="network" date="2019-11-02T18:43:16.602+0900" type="Warning"/>
       </synLog>
-      <simLog/>
-      <mgLog/>
-      <packageLog/>
-      <csimLog/>
     </logs>
   </warningLogs>
 </vivadoHLSLog:LogRoot>

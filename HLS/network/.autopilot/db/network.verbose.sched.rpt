@@ -1,0 +1,771 @@
+
+
+================================================================
+== Vivado HLS Report for 'network'
+================================================================
+* Date:           Sat Nov  2 18:43:07 2019
+
+* Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
+* Project:        HLS
+* Solution:       network
+* Product family: zynq
+* Target device:  xc7z020clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     8.585|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    ?|    ?|    ?|    ?|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-----------------+-----+-----+----------+-----------+-----------+------+----------+
+        |                 |  Latency  | Iteration|  Initiation Interval  | Trip |          |
+        |    Loop Name    | min | max |  Latency |  achieved |   target  | Count| Pipelined|
+        +-----------------+-----+-----+----------+-----------+-----------+------+----------+
+        |- Loop 1         |  840|  840|        30|          -|          -|    28|    no    |
+        | + Loop 1.1      |   28|   28|         1|          -|          -|    28|    no    |
+        |- Loop 2         |    ?|    ?|         ?|          -|          -|     ?|    no    |
+        | + Loop 2.1      |    ?|    ?|         ?|          -|          -|     ?|    no    |
+        |  ++ Loop 2.1.1  |    ?|    ?|         4|          -|          -|     ?|    no    |
+        +-----------------+-----+-----+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 2
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 47
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	4  / (exitcond2)
+	3  / (!exitcond2)
+3 --> 
+	3  / (!exitcond)
+	2  / (exitcond)
+4 --> 
+	5  / true
+5 --> 
+	6  / true
+6 --> 
+	7  / true
+7 --> 
+	8  / true
+8 --> 
+	9  / true
+9 --> 
+	10  / true
+10 --> 
+	11  / true
+11 --> 
+	12  / true
+12 --> 
+	13  / true
+13 --> 
+	14  / true
+14 --> 
+	15  / true
+15 --> 
+	16  / true
+16 --> 
+	17  / true
+17 --> 
+	18  / true
+18 --> 
+	19  / true
+19 --> 
+	20  / true
+20 --> 
+	21  / true
+21 --> 
+	22  / true
+22 --> 
+	23  / true
+23 --> 
+	24  / true
+24 --> 
+	25  / true
+25 --> 
+	26  / true
+26 --> 
+	27  / true
+27 --> 
+	28  / true
+28 --> 
+	29  / true
+29 --> 
+	30  / true
+30 --> 
+	31  / true
+31 --> 
+	32  / true
+32 --> 
+	33  / true
+33 --> 
+	34  / true
+34 --> 
+	35  / true
+35 --> 
+	36  / true
+36 --> 
+	37  / true
+37 --> 
+	38  / true
+38 --> 
+	39  / true
+39 --> 
+	40  / true
+40 --> 
+	41  / true
+41 --> 
+	47  / (!tmp_86)
+	42  / (tmp_86)
+42 --> 
+	43  / (tmp_89)
+	41  / (!tmp_89)
+43 --> 
+	44  / (tmp_91)
+	42  / (!tmp_91)
+44 --> 
+	45  / true
+45 --> 
+	46  / true
+46 --> 
+	43  / true
+47 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.76>
+ST_1 : Operation 48 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i16* %input_data_V_data_V), !map !489"   --->   Operation 48 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 49 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i2* %input_data_V_keep_V), !map !493"   --->   Operation 49 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 50 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i2* %input_data_V_strb_V), !map !497"   --->   Operation 50 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 51 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %input_data_V_user_V), !map !501"   --->   Operation 51 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 52 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %input_data_V_last_V), !map !505"   --->   Operation 52 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 53 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %input_data_V_id_V), !map !509"   --->   Operation 53 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 54 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %input_data_V_dest_V), !map !513"   --->   Operation 54 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 55 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i16* %output_data_V_data_V), !map !517"   --->   Operation 55 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 56 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i2* %output_data_V_keep_V), !map !521"   --->   Operation 56 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 57 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i2* %output_data_V_strb_V), !map !525"   --->   Operation 57 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 58 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %output_data_V_user_V), !map !529"   --->   Operation 58 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 59 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %output_data_V_last_V), !map !533"   --->   Operation 59 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 60 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %output_data_V_id_V), !map !537"   --->   Operation 60 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 61 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %output_data_V_dest_V), !map !541"   --->   Operation 61 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 62 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([8 x i8]* @network_str) nounwind"   --->   Operation 62 'spectopmodule' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 63 [1/1] (0.00ns)   --->   "%input_0_array_0 = alloca [784 x i16], align 2" [mnist_AXI_Stream.cpp:28]   --->   Operation 63 'alloca' 'input_0_array_0' <Predicate = true> <Delay = 0.00> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.56> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 1> <Depth = 784> <RAM>
+ST_1 : Operation 64 [1/1] (0.00ns)   --->   "%out_0_keep_V = alloca [784 x i2], align 1" [mnist_AXI_Stream.cpp:31]   --->   Operation 64 'alloca' 'out_0_keep_V' <Predicate = true> <Delay = 0.00> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.56> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 1> <Depth = 784> <RAM>
+ST_1 : Operation 65 [1/1] (0.00ns)   --->   "%out_0_strb_V = alloca [784 x i2], align 1" [mnist_AXI_Stream.cpp:31]   --->   Operation 65 'alloca' 'out_0_strb_V' <Predicate = true> <Delay = 0.00> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.56> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 1> <Depth = 784> <RAM>
+ST_1 : Operation 66 [1/1] (0.00ns)   --->   "%out_0_id_V = alloca [784 x i1], align 1" [mnist_AXI_Stream.cpp:31]   --->   Operation 66 'alloca' 'out_0_id_V' <Predicate = true> <Delay = 0.00> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.56> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 1> <Depth = 784> <RAM>
+ST_1 : Operation 67 [1/1] (0.00ns)   --->   "%out_0_dest_V = alloca [784 x i1], align 1" [mnist_AXI_Stream.cpp:31]   --->   Operation 67 'alloca' 'out_0_dest_V' <Predicate = true> <Delay = 0.00> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.56> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 1> <Depth = 784> <RAM>
+ST_1 : Operation 68 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 0, [10 x i8]* @p_str, i32 1, i32 1, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [mnist_AXI_Stream.cpp:23]   --->   Operation 68 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 69 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %input_data_V_data_V, i2* %input_data_V_keep_V, i2* %input_data_V_strb_V, i1* %input_data_V_user_V, i1* %input_data_V_last_V, i1* %input_data_V_id_V, i1* %input_data_V_dest_V, [5 x i8]* @p_str2, i32 1, i32 1, [5 x i8]* @p_str3, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [mnist_AXI_Stream.cpp:24]   --->   Operation 69 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 70 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %output_data_V_data_V, i2* %output_data_V_keep_V, i2* %output_data_V_strb_V, i1* %output_data_V_user_V, i1* %output_data_V_last_V, i1* %output_data_V_id_V, i1* %output_data_V_dest_V, [5 x i8]* @p_str2, i32 1, i32 1, [5 x i8]* @p_str3, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [mnist_AXI_Stream.cpp:25]   --->   Operation 70 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 71 [1/1] (1.76ns)   --->   "br label %.preheader60.0" [mnist_AXI_Stream.cpp:34]   --->   Operation 71 'br' <Predicate = true> <Delay = 1.76>
+
+State 2 <SV = 1> <Delay = 1.78>
+ST_2 : Operation 72 [1/1] (0.00ns)   --->   "%height = phi i5 [ 0, %.preheader61.preheader ], [ %height_4, %.preheader60.0.loopexit ]" [mnist_AXI_Stream.cpp:34]   --->   Operation 72 'phi' 'height' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 73 [1/1] (1.36ns)   --->   "%exitcond2 = icmp eq i5 %height, -4" [mnist_AXI_Stream.cpp:34]   --->   Operation 73 'icmp' 'exitcond2' <Predicate = true> <Delay = 1.36> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 74 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 28, i64 28, i64 28)"   --->   Operation 74 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 75 [1/1] (1.78ns)   --->   "%height_4 = add i5 %height, 1" [mnist_AXI_Stream.cpp:34]   --->   Operation 75 'add' 'height_4' <Predicate = true> <Delay = 1.78> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 76 [1/1] (0.00ns)   --->   "br i1 %exitcond2, label %.preheader61.1, label %.preheader59.preheader.0" [mnist_AXI_Stream.cpp:34]   --->   Operation 76 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 77 [1/1] (0.00ns)   --->   "%tmp_1 = call i10 @_ssdm_op_BitConcatenate.i10.i5.i5(i5 %height, i5 0)" [mnist_AXI_Stream.cpp:34]   --->   Operation 77 'bitconcatenate' 'tmp_1' <Predicate = (!exitcond2)> <Delay = 0.00>
+ST_2 : Operation 78 [1/1] (0.00ns)   --->   "%p_shl_cast = zext i10 %tmp_1 to i11" [mnist_AXI_Stream.cpp:34]   --->   Operation 78 'zext' 'p_shl_cast' <Predicate = (!exitcond2)> <Delay = 0.00>
+ST_2 : Operation 79 [1/1] (0.00ns)   --->   "%tmp_2 = call i7 @_ssdm_op_BitConcatenate.i7.i5.i2(i5 %height, i2 0)" [mnist_AXI_Stream.cpp:34]   --->   Operation 79 'bitconcatenate' 'tmp_2' <Predicate = (!exitcond2)> <Delay = 0.00>
+ST_2 : Operation 80 [1/1] (0.00ns)   --->   "%p_shl1_cast = zext i7 %tmp_2 to i11" [mnist_AXI_Stream.cpp:37]   --->   Operation 80 'zext' 'p_shl1_cast' <Predicate = (!exitcond2)> <Delay = 0.00>
+ST_2 : Operation 81 [1/1] (1.73ns)   --->   "%tmp_3 = sub i11 %p_shl_cast, %p_shl1_cast" [mnist_AXI_Stream.cpp:37]   --->   Operation 81 'sub' 'tmp_3' <Predicate = (!exitcond2)> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 82 [1/1] (1.76ns)   --->   "br label %.preheader59.0" [mnist_AXI_Stream.cpp:35]   --->   Operation 82 'br' <Predicate = (!exitcond2)> <Delay = 1.76>
+ST_2 : Operation 83 [1/1] (0.00ns)   --->   "%Padding2D_0_width_lo = load i16* @Padding2D_0_width, align 2" [mnist_AXI_Stream.cpp:47]   --->   Operation 83 'load' 'Padding2D_0_width_lo' <Predicate = (exitcond2)> <Delay = 0.00>
+ST_2 : Operation 84 [2/2] (0.00ns)   --->   "call fastcc void @padding2d_fix16.4([784 x i16]* %input_0_array_0, i16 %Padding2D_0_width_lo, [900 x i16]* @Padding2D_0_array)" [mnist_AXI_Stream.cpp:47]   --->   Operation 84 'call' <Predicate = (exitcond2)> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 3 <SV = 2> <Delay = 4.89>
+ST_3 : Operation 85 [1/1] (0.00ns)   --->   "%width = phi i5 [ %width_6, %0 ], [ 0, %.preheader59.preheader.0 ]" [mnist_AXI_Stream.cpp:35]   --->   Operation 85 'phi' 'width' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 86 [1/1] (1.36ns)   --->   "%exitcond = icmp eq i5 %width, -4" [mnist_AXI_Stream.cpp:35]   --->   Operation 86 'icmp' 'exitcond' <Predicate = true> <Delay = 1.36> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 87 [1/1] (0.00ns)   --->   "%empty_28 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 28, i64 28, i64 28)"   --->   Operation 87 'speclooptripcount' 'empty_28' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 88 [1/1] (1.78ns)   --->   "%width_6 = add i5 %width, 1" [mnist_AXI_Stream.cpp:35]   --->   Operation 88 'add' 'width_6' <Predicate = true> <Delay = 1.78> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 89 [1/1] (0.00ns)   --->   "br i1 %exitcond, label %.preheader60.0.loopexit, label %0" [mnist_AXI_Stream.cpp:35]   --->   Operation 89 'br' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 90 [1/1] (0.00ns)   --->   "%empty_29 = call { i16, i2, i2, i1, i1, i1, i1 } @_ssdm_op_Read.axis.volatile.i16P.i2P.i2P.i1P.i1P.i1P.i1P(i16* %input_data_V_data_V, i2* %input_data_V_keep_V, i2* %input_data_V_strb_V, i1* %input_data_V_user_V, i1* %input_data_V_last_V, i1* %input_data_V_id_V, i1* %input_data_V_dest_V)" [mnist_AXI_Stream.cpp:36]   --->   Operation 90 'read' 'empty_29' <Predicate = (!exitcond)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_3 : Operation 91 [1/1] (0.00ns)   --->   "%tmp_data_V = extractvalue { i16, i2, i2, i1, i1, i1, i1 } %empty_29, 0" [mnist_AXI_Stream.cpp:36]   --->   Operation 91 'extractvalue' 'tmp_data_V' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_3 : Operation 92 [1/1] (0.00ns)   --->   "%tmp_keep_V = extractvalue { i16, i2, i2, i1, i1, i1, i1 } %empty_29, 1" [mnist_AXI_Stream.cpp:36]   --->   Operation 92 'extractvalue' 'tmp_keep_V' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_3 : Operation 93 [1/1] (0.00ns)   --->   "%tmp_strb_V = extractvalue { i16, i2, i2, i1, i1, i1, i1 } %empty_29, 2" [mnist_AXI_Stream.cpp:36]   --->   Operation 93 'extractvalue' 'tmp_strb_V' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_3 : Operation 94 [1/1] (0.00ns)   --->   "%tmp_id_V = extractvalue { i16, i2, i2, i1, i1, i1, i1 } %empty_29, 5" [mnist_AXI_Stream.cpp:36]   --->   Operation 94 'extractvalue' 'tmp_id_V' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_3 : Operation 95 [1/1] (0.00ns)   --->   "%tmp_dest_V = extractvalue { i16, i2, i2, i1, i1, i1, i1 } %empty_29, 6" [mnist_AXI_Stream.cpp:36]   --->   Operation 95 'extractvalue' 'tmp_dest_V' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_3 : Operation 96 [1/1] (0.00ns)   --->   "%tmp_88_cast = zext i5 %width to i11" [mnist_AXI_Stream.cpp:37]   --->   Operation 96 'zext' 'tmp_88_cast' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_3 : Operation 97 [1/1] (1.63ns)   --->   "%tmp_7 = add i11 %tmp_3, %tmp_88_cast" [mnist_AXI_Stream.cpp:37]   --->   Operation 97 'add' 'tmp_7' <Predicate = (!exitcond)> <Delay = 1.63> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 98 [1/1] (0.00ns)   --->   "%tmp_7_cast = sext i11 %tmp_7 to i64" [mnist_AXI_Stream.cpp:37]   --->   Operation 98 'sext' 'tmp_7_cast' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_3 : Operation 99 [1/1] (0.00ns)   --->   "%input_0_array_0_add = getelementptr [784 x i16]* %input_0_array_0, i64 0, i64 %tmp_7_cast" [mnist_AXI_Stream.cpp:37]   --->   Operation 99 'getelementptr' 'input_0_array_0_add' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_3 : Operation 100 [1/1] (0.00ns)   --->   "%out_0_keep_V_addr = getelementptr [784 x i2]* %out_0_keep_V, i64 0, i64 %tmp_7_cast" [mnist_AXI_Stream.cpp:40]   --->   Operation 100 'getelementptr' 'out_0_keep_V_addr' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_3 : Operation 101 [1/1] (0.00ns)   --->   "%out_0_strb_V_addr = getelementptr [784 x i2]* %out_0_strb_V, i64 0, i64 %tmp_7_cast" [mnist_AXI_Stream.cpp:41]   --->   Operation 101 'getelementptr' 'out_0_strb_V_addr' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_3 : Operation 102 [1/1] (0.00ns)   --->   "%out_0_id_V_addr = getelementptr [784 x i1]* %out_0_id_V, i64 0, i64 %tmp_7_cast" [mnist_AXI_Stream.cpp:39]   --->   Operation 102 'getelementptr' 'out_0_id_V_addr' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_3 : Operation 103 [1/1] (0.00ns)   --->   "%out_0_dest_V_addr = getelementptr [784 x i1]* %out_0_dest_V, i64 0, i64 %tmp_7_cast" [mnist_AXI_Stream.cpp:38]   --->   Operation 103 'getelementptr' 'out_0_dest_V_addr' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_3 : Operation 104 [1/1] (3.25ns)   --->   "store i16 %tmp_data_V, i16* %input_0_array_0_add, align 2" [mnist_AXI_Stream.cpp:37]   --->   Operation 104 'store' <Predicate = (!exitcond)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.56> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 1> <Depth = 784> <RAM>
+ST_3 : Operation 105 [1/1] (2.56ns)   --->   "store i1 %tmp_dest_V, i1* %out_0_dest_V_addr, align 1" [mnist_AXI_Stream.cpp:38]   --->   Operation 105 'store' <Predicate = (!exitcond)> <Delay = 2.56> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.56> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 1> <Depth = 784> <RAM>
+ST_3 : Operation 106 [1/1] (2.56ns)   --->   "store i1 %tmp_id_V, i1* %out_0_id_V_addr, align 2" [mnist_AXI_Stream.cpp:39]   --->   Operation 106 'store' <Predicate = (!exitcond)> <Delay = 2.56> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.56> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 1> <Depth = 784> <RAM>
+ST_3 : Operation 107 [1/1] (3.25ns)   --->   "store i2 %tmp_keep_V, i2* %out_0_keep_V_addr, align 2" [mnist_AXI_Stream.cpp:40]   --->   Operation 107 'store' <Predicate = (!exitcond)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.56> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 1> <Depth = 784> <RAM>
+ST_3 : Operation 108 [1/1] (3.25ns)   --->   "store i2 %tmp_strb_V, i2* %out_0_strb_V_addr, align 1" [mnist_AXI_Stream.cpp:41]   --->   Operation 108 'store' <Predicate = (!exitcond)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.56> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 1> <Depth = 784> <RAM>
+ST_3 : Operation 109 [1/1] (0.00ns)   --->   "br label %.preheader59.0" [mnist_AXI_Stream.cpp:35]   --->   Operation 109 'br' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_3 : Operation 110 [1/1] (0.00ns)   --->   "br label %.preheader60.0"   --->   Operation 110 'br' <Predicate = (exitcond)> <Delay = 0.00>
+
+State 4 <SV = 2> <Delay = 0.00>
+ST_4 : Operation 111 [1/2] (0.00ns)   --->   "call fastcc void @padding2d_fix16.4([784 x i16]* %input_0_array_0, i16 %Padding2D_0_width_lo, [900 x i16]* @Padding2D_0_array)" [mnist_AXI_Stream.cpp:47]   --->   Operation 111 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 5 <SV = 3> <Delay = 0.00>
+ST_5 : Operation 112 [1/1] (0.00ns)   --->   "%Padding2D_0_depth_lo = load i16* @Padding2D_0_depth, align 2" [mnist_AXI_Stream.cpp:51]   --->   Operation 112 'load' 'Padding2D_0_depth_lo' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 113 [1/1] (0.00ns)   --->   "%Padding2D_0_height_l = load i16* @Padding2D_0_height, align 2" [mnist_AXI_Stream.cpp:51]   --->   Operation 113 'load' 'Padding2D_0_height_l' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 114 [1/1] (0.00ns)   --->   "%Padding2D_0_width_lo_1 = load i16* @Padding2D_0_width, align 2" [mnist_AXI_Stream.cpp:51]   --->   Operation 114 'load' 'Padding2D_0_width_lo_1' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 115 [1/1] (0.00ns)   --->   "%SeparableConv2D_0_he_1 = load i16* @SeparableConv2D_0_he, align 2" [mnist_AXI_Stream.cpp:51]   --->   Operation 115 'load' 'SeparableConv2D_0_he_1' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 116 [1/1] (0.00ns)   --->   "%SeparableConv2D_0_wi_1 = load i16* @SeparableConv2D_0_wi, align 2" [mnist_AXI_Stream.cpp:51]   --->   Operation 116 'load' 'SeparableConv2D_0_wi_1' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 117 [2/2] (0.00ns)   --->   "call fastcc void @depthwise_conv2d_fix(i16 %Padding2D_0_height_l, i16 %Padding2D_0_width_lo_1, i16 %Padding2D_0_depth_lo, i16 %SeparableConv2D_0_he_1, i16 %SeparableConv2D_0_wi_1, [784 x i16]* @SeparableConv2D_0_m_s)" [layers_c/separable_conv2d.cpp:12->mnist_AXI_Stream.cpp:51]   --->   Operation 117 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 6 <SV = 4> <Delay = 0.00>
+ST_6 : Operation 118 [1/2] (0.00ns)   --->   "call fastcc void @depthwise_conv2d_fix(i16 %Padding2D_0_height_l, i16 %Padding2D_0_width_lo_1, i16 %Padding2D_0_depth_lo, i16 %SeparableConv2D_0_he_1, i16 %SeparableConv2D_0_wi_1, [784 x i16]* @SeparableConv2D_0_m_s)" [layers_c/separable_conv2d.cpp:12->mnist_AXI_Stream.cpp:51]   --->   Operation 118 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 7 <SV = 5> <Delay = 0.00>
+ST_7 : Operation 119 [1/1] (0.00ns)   --->   "%SeparableConv2D_0_de_1 = load i16* @SeparableConv2D_0_de, align 2" [mnist_AXI_Stream.cpp:51]   --->   Operation 119 'load' 'SeparableConv2D_0_de_1' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 120 [2/2] (0.00ns)   --->   "call fastcc void @pointwise_conv2d_fix(i16 %Padding2D_0_depth_lo, i16 %SeparableConv2D_0_he_1, i16 %SeparableConv2D_0_wi_1, i16 %SeparableConv2D_0_de_1, [12544 x i16]* @SeparableConv2D_0_ar)" [layers_c/separable_conv2d.cpp:17->mnist_AXI_Stream.cpp:51]   --->   Operation 120 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 8 <SV = 6> <Delay = 0.00>
+ST_8 : Operation 121 [1/2] (0.00ns)   --->   "call fastcc void @pointwise_conv2d_fix(i16 %Padding2D_0_depth_lo, i16 %SeparableConv2D_0_he_1, i16 %SeparableConv2D_0_wi_1, i16 %SeparableConv2D_0_de_1, [12544 x i16]* @SeparableConv2D_0_ar)" [layers_c/separable_conv2d.cpp:17->mnist_AXI_Stream.cpp:51]   --->   Operation 121 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 9 <SV = 7> <Delay = 0.00>
+ST_9 : Operation 122 [1/1] (0.00ns)   --->   "%SeparableConv2D_0_he_2 = load i16* @SeparableConv2D_0_he, align 2" [mnist_AXI_Stream.cpp:61]   --->   Operation 122 'load' 'SeparableConv2D_0_he_2' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 123 [1/1] (0.00ns)   --->   "%SeparableConv2D_0_wi_2 = load i16* @SeparableConv2D_0_wi, align 2" [mnist_AXI_Stream.cpp:61]   --->   Operation 123 'load' 'SeparableConv2D_0_wi_2' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 124 [1/1] (0.00ns)   --->   "%MaxPooling2D_0_depth_1 = load i16* @MaxPooling2D_0_depth, align 2" [mnist_AXI_Stream.cpp:61]   --->   Operation 124 'load' 'MaxPooling2D_0_depth_1' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 125 [1/1] (0.00ns)   --->   "%MaxPooling2D_0_heigh_1 = load i16* @MaxPooling2D_0_heigh, align 2" [mnist_AXI_Stream.cpp:61]   --->   Operation 125 'load' 'MaxPooling2D_0_heigh_1' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 126 [1/1] (0.00ns)   --->   "%MaxPooling2D_0_width_1 = load i16* @MaxPooling2D_0_width, align 2" [mnist_AXI_Stream.cpp:61]   --->   Operation 126 'load' 'MaxPooling2D_0_width_1' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 127 [2/2] (0.00ns)   --->   "call fastcc void @max_pooling2d_fix16.1(i16 zeroext %SeparableConv2D_0_he_2, i16 zeroext %SeparableConv2D_0_wi_2, i16 zeroext %MaxPooling2D_0_depth_1, i16 zeroext %MaxPooling2D_0_heigh_1, i16 zeroext %MaxPooling2D_0_width_1)" [mnist_AXI_Stream.cpp:61]   --->   Operation 127 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 10 <SV = 8> <Delay = 0.00>
+ST_10 : Operation 128 [1/2] (0.00ns)   --->   "call fastcc void @max_pooling2d_fix16.1(i16 zeroext %SeparableConv2D_0_he_2, i16 zeroext %SeparableConv2D_0_wi_2, i16 zeroext %MaxPooling2D_0_depth_1, i16 zeroext %MaxPooling2D_0_heigh_1, i16 zeroext %MaxPooling2D_0_width_1)" [mnist_AXI_Stream.cpp:61]   --->   Operation 128 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 11 <SV = 9> <Delay = 2.07>
+ST_11 : Operation 129 [1/1] (0.00ns)   --->   "%MaxPooling2D_0_depth_2 = load i16* @MaxPooling2D_0_depth, align 2" [mnist_AXI_Stream.cpp:66]   --->   Operation 129 'load' 'MaxPooling2D_0_depth_2' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 130 [1/1] (0.00ns)   --->   "%MaxPooling2D_0_heigh_2 = load i16* @MaxPooling2D_0_heigh, align 2" [mnist_AXI_Stream.cpp:66]   --->   Operation 130 'load' 'MaxPooling2D_0_heigh_2' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 131 [1/1] (0.00ns)   --->   "%MaxPooling2D_0_width_2 = load i16* @MaxPooling2D_0_width, align 2" [mnist_AXI_Stream.cpp:66]   --->   Operation 131 'load' 'MaxPooling2D_0_width_2' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 132 [1/1] (0.00ns)   --->   "%Padding2D_1_height_l = load i16* @Padding2D_1_height, align 2" [mnist_AXI_Stream.cpp:66]   --->   Operation 132 'load' 'Padding2D_1_height_l' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 133 [1/1] (0.00ns)   --->   "%Padding2D_1_width_lo = load i16* @Padding2D_1_width, align 2" [mnist_AXI_Stream.cpp:66]   --->   Operation 133 'load' 'Padding2D_1_width_lo' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 134 [2/2] (2.07ns)   --->   "call fastcc void @padding2d_fix16.3(i16 %MaxPooling2D_0_depth_2, i16 %MaxPooling2D_0_heigh_2, i16 %MaxPooling2D_0_width_2, [3136 x i16]* @MaxPooling2D_0_array, i16 %Padding2D_1_height_l, i16 %Padding2D_1_width_lo, [4096 x i16]* @Padding2D_1_array)" [mnist_AXI_Stream.cpp:66]   --->   Operation 134 'call' <Predicate = true> <Delay = 2.07> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 12 <SV = 10> <Delay = 0.00>
+ST_12 : Operation 135 [1/2] (0.00ns)   --->   "call fastcc void @padding2d_fix16.3(i16 %MaxPooling2D_0_depth_2, i16 %MaxPooling2D_0_heigh_2, i16 %MaxPooling2D_0_width_2, [3136 x i16]* @MaxPooling2D_0_array, i16 %Padding2D_1_height_l, i16 %Padding2D_1_width_lo, [4096 x i16]* @Padding2D_1_array)" [mnist_AXI_Stream.cpp:66]   --->   Operation 135 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 13 <SV = 11> <Delay = 0.00>
+ST_13 : Operation 136 [1/1] (0.00ns)   --->   "%Padding2D_1_depth_lo = load i16* @Padding2D_1_depth, align 2" [mnist_AXI_Stream.cpp:71]   --->   Operation 136 'load' 'Padding2D_1_depth_lo' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 137 [1/1] (0.00ns)   --->   "%Padding2D_1_height_l_1 = load i16* @Padding2D_1_height, align 2" [mnist_AXI_Stream.cpp:71]   --->   Operation 137 'load' 'Padding2D_1_height_l_1' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 138 [1/1] (0.00ns)   --->   "%Padding2D_1_width_lo_1 = load i16* @Padding2D_1_width, align 2" [mnist_AXI_Stream.cpp:71]   --->   Operation 138 'load' 'Padding2D_1_width_lo_1' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 139 [1/1] (0.00ns)   --->   "%SeparableConv2D_1_he_1 = load i16* @SeparableConv2D_1_he, align 2" [mnist_AXI_Stream.cpp:71]   --->   Operation 139 'load' 'SeparableConv2D_1_he_1' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 140 [1/1] (0.00ns)   --->   "%SeparableConv2D_1_wi_1 = load i16* @SeparableConv2D_1_wi, align 2" [mnist_AXI_Stream.cpp:71]   --->   Operation 140 'load' 'SeparableConv2D_1_wi_1' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 141 [2/2] (0.00ns)   --->   "call fastcc void @depthwise_conv2d_fix.2(i16 %Padding2D_1_height_l_1, i16 %Padding2D_1_width_lo_1, i16 %Padding2D_1_depth_lo, i16 %SeparableConv2D_1_he_1, i16 %SeparableConv2D_1_wi_1, [3136 x i16]* @SeparableConv2D_1_m_s)" [layers_c/separable_conv2d.cpp:12->mnist_AXI_Stream.cpp:71]   --->   Operation 141 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 14 <SV = 12> <Delay = 0.00>
+ST_14 : Operation 142 [1/2] (0.00ns)   --->   "call fastcc void @depthwise_conv2d_fix.2(i16 %Padding2D_1_height_l_1, i16 %Padding2D_1_width_lo_1, i16 %Padding2D_1_depth_lo, i16 %SeparableConv2D_1_he_1, i16 %SeparableConv2D_1_wi_1, [3136 x i16]* @SeparableConv2D_1_m_s)" [layers_c/separable_conv2d.cpp:12->mnist_AXI_Stream.cpp:71]   --->   Operation 142 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 15 <SV = 13> <Delay = 0.00>
+ST_15 : Operation 143 [1/1] (0.00ns)   --->   "%SeparableConv2D_1_de_1 = load i16* @SeparableConv2D_1_de, align 2" [mnist_AXI_Stream.cpp:71]   --->   Operation 143 'load' 'SeparableConv2D_1_de_1' <Predicate = true> <Delay = 0.00>
+ST_15 : Operation 144 [2/2] (0.00ns)   --->   "call fastcc void @pointwise_conv2d_fix.2(i16 zeroext %Padding2D_1_depth_lo, i16 zeroext %SeparableConv2D_1_he_1, i16 zeroext %SeparableConv2D_1_wi_1, i16 zeroext %SeparableConv2D_1_de_1)" [layers_c/separable_conv2d.cpp:17->mnist_AXI_Stream.cpp:71]   --->   Operation 144 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 16 <SV = 14> <Delay = 0.00>
+ST_16 : Operation 145 [1/2] (0.00ns)   --->   "call fastcc void @pointwise_conv2d_fix.2(i16 zeroext %Padding2D_1_depth_lo, i16 zeroext %SeparableConv2D_1_he_1, i16 zeroext %SeparableConv2D_1_wi_1, i16 zeroext %SeparableConv2D_1_de_1)" [layers_c/separable_conv2d.cpp:17->mnist_AXI_Stream.cpp:71]   --->   Operation 145 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 17 <SV = 15> <Delay = 0.00>
+ST_17 : Operation 146 [1/1] (0.00ns)   --->   "%SeparableConv2D_1_he_2 = load i16* @SeparableConv2D_1_he, align 2" [mnist_AXI_Stream.cpp:81]   --->   Operation 146 'load' 'SeparableConv2D_1_he_2' <Predicate = true> <Delay = 0.00>
+ST_17 : Operation 147 [1/1] (0.00ns)   --->   "%SeparableConv2D_1_wi_2 = load i16* @SeparableConv2D_1_wi, align 2" [mnist_AXI_Stream.cpp:81]   --->   Operation 147 'load' 'SeparableConv2D_1_wi_2' <Predicate = true> <Delay = 0.00>
+ST_17 : Operation 148 [1/1] (0.00ns)   --->   "%MaxPooling2D_1_depth_1 = load i16* @MaxPooling2D_1_depth, align 2" [mnist_AXI_Stream.cpp:81]   --->   Operation 148 'load' 'MaxPooling2D_1_depth_1' <Predicate = true> <Delay = 0.00>
+ST_17 : Operation 149 [1/1] (0.00ns)   --->   "%MaxPooling2D_1_heigh_1 = load i16* @MaxPooling2D_1_heigh, align 2" [mnist_AXI_Stream.cpp:81]   --->   Operation 149 'load' 'MaxPooling2D_1_heigh_1' <Predicate = true> <Delay = 0.00>
+ST_17 : Operation 150 [1/1] (0.00ns)   --->   "%MaxPooling2D_1_width_1 = load i16* @MaxPooling2D_1_width, align 2" [mnist_AXI_Stream.cpp:81]   --->   Operation 150 'load' 'MaxPooling2D_1_width_1' <Predicate = true> <Delay = 0.00>
+ST_17 : Operation 151 [2/2] (0.00ns)   --->   "call fastcc void @max_pooling2d_fix16(i16 %SeparableConv2D_1_he_2, i16 %SeparableConv2D_1_wi_2, [1568 x i16]* @SeparableConv2D_1_ar, i16 %MaxPooling2D_1_depth_1, i16 %MaxPooling2D_1_heigh_1, i16 %MaxPooling2D_1_width_1)" [mnist_AXI_Stream.cpp:81]   --->   Operation 151 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 18 <SV = 16> <Delay = 0.00>
+ST_18 : Operation 152 [1/2] (0.00ns)   --->   "call fastcc void @max_pooling2d_fix16(i16 %SeparableConv2D_1_he_2, i16 %SeparableConv2D_1_wi_2, [1568 x i16]* @SeparableConv2D_1_ar, i16 %MaxPooling2D_1_depth_1, i16 %MaxPooling2D_1_heigh_1, i16 %MaxPooling2D_1_width_1)" [mnist_AXI_Stream.cpp:81]   --->   Operation 152 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 19 <SV = 17> <Delay = 2.07>
+ST_19 : Operation 153 [1/1] (0.00ns)   --->   "%MaxPooling2D_1_depth_2 = load i16* @MaxPooling2D_1_depth, align 2" [mnist_AXI_Stream.cpp:86]   --->   Operation 153 'load' 'MaxPooling2D_1_depth_2' <Predicate = true> <Delay = 0.00>
+ST_19 : Operation 154 [1/1] (0.00ns)   --->   "%MaxPooling2D_1_heigh_2 = load i16* @MaxPooling2D_1_heigh, align 2" [mnist_AXI_Stream.cpp:86]   --->   Operation 154 'load' 'MaxPooling2D_1_heigh_2' <Predicate = true> <Delay = 0.00>
+ST_19 : Operation 155 [1/1] (0.00ns)   --->   "%MaxPooling2D_1_width_2 = load i16* @MaxPooling2D_1_width, align 2" [mnist_AXI_Stream.cpp:86]   --->   Operation 155 'load' 'MaxPooling2D_1_width_2' <Predicate = true> <Delay = 0.00>
+ST_19 : Operation 156 [1/1] (0.00ns)   --->   "%Padding2D_2_height_l = load i16* @Padding2D_2_height, align 2" [mnist_AXI_Stream.cpp:86]   --->   Operation 156 'load' 'Padding2D_2_height_l' <Predicate = true> <Delay = 0.00>
+ST_19 : Operation 157 [1/1] (0.00ns)   --->   "%Padding2D_2_width_lo = load i16* @Padding2D_2_width, align 2" [mnist_AXI_Stream.cpp:86]   --->   Operation 157 'load' 'Padding2D_2_width_lo' <Predicate = true> <Delay = 0.00>
+ST_19 : Operation 158 [2/2] (2.07ns)   --->   "call fastcc void @padding2d_fix16.2(i16 %MaxPooling2D_1_depth_2, i16 %MaxPooling2D_1_heigh_2, i16 %MaxPooling2D_1_width_2, [392 x i16]* @MaxPooling2D_1_array, i16 %Padding2D_2_height_l, i16 %Padding2D_2_width_lo, [648 x i16]* @Padding2D_2_array)" [mnist_AXI_Stream.cpp:86]   --->   Operation 158 'call' <Predicate = true> <Delay = 2.07> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 20 <SV = 18> <Delay = 0.00>
+ST_20 : Operation 159 [1/2] (0.00ns)   --->   "call fastcc void @padding2d_fix16.2(i16 %MaxPooling2D_1_depth_2, i16 %MaxPooling2D_1_heigh_2, i16 %MaxPooling2D_1_width_2, [392 x i16]* @MaxPooling2D_1_array, i16 %Padding2D_2_height_l, i16 %Padding2D_2_width_lo, [648 x i16]* @Padding2D_2_array)" [mnist_AXI_Stream.cpp:86]   --->   Operation 159 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 21 <SV = 19> <Delay = 0.00>
+ST_21 : Operation 160 [1/1] (0.00ns)   --->   "%Padding2D_2_depth_lo = load i16* @Padding2D_2_depth, align 2" [mnist_AXI_Stream.cpp:91]   --->   Operation 160 'load' 'Padding2D_2_depth_lo' <Predicate = true> <Delay = 0.00>
+ST_21 : Operation 161 [1/1] (0.00ns)   --->   "%Padding2D_2_height_l_1 = load i16* @Padding2D_2_height, align 2" [mnist_AXI_Stream.cpp:91]   --->   Operation 161 'load' 'Padding2D_2_height_l_1' <Predicate = true> <Delay = 0.00>
+ST_21 : Operation 162 [1/1] (0.00ns)   --->   "%Padding2D_2_width_lo_1 = load i16* @Padding2D_2_width, align 2" [mnist_AXI_Stream.cpp:91]   --->   Operation 162 'load' 'Padding2D_2_width_lo_1' <Predicate = true> <Delay = 0.00>
+ST_21 : Operation 163 [1/1] (0.00ns)   --->   "%SeparableConv2D_2_he_1 = load i16* @SeparableConv2D_2_he, align 2" [mnist_AXI_Stream.cpp:91]   --->   Operation 163 'load' 'SeparableConv2D_2_he_1' <Predicate = true> <Delay = 0.00>
+ST_21 : Operation 164 [1/1] (0.00ns)   --->   "%SeparableConv2D_2_wi_1 = load i16* @SeparableConv2D_2_wi, align 2" [mnist_AXI_Stream.cpp:91]   --->   Operation 164 'load' 'SeparableConv2D_2_wi_1' <Predicate = true> <Delay = 0.00>
+ST_21 : Operation 165 [2/2] (0.00ns)   --->   "call fastcc void @depthwise_conv2d_fix.4(i16 %Padding2D_2_height_l_1, i16 %Padding2D_2_width_lo_1, i16 %Padding2D_2_depth_lo, i16 %SeparableConv2D_2_he_1, i16 %SeparableConv2D_2_wi_1, [392 x i16]* @SeparableConv2D_2_m_s)" [layers_c/separable_conv2d.cpp:12->mnist_AXI_Stream.cpp:91]   --->   Operation 165 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 22 <SV = 20> <Delay = 0.00>
+ST_22 : Operation 166 [1/2] (0.00ns)   --->   "call fastcc void @depthwise_conv2d_fix.4(i16 %Padding2D_2_height_l_1, i16 %Padding2D_2_width_lo_1, i16 %Padding2D_2_depth_lo, i16 %SeparableConv2D_2_he_1, i16 %SeparableConv2D_2_wi_1, [392 x i16]* @SeparableConv2D_2_m_s)" [layers_c/separable_conv2d.cpp:12->mnist_AXI_Stream.cpp:91]   --->   Operation 166 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 23 <SV = 21> <Delay = 0.00>
+ST_23 : Operation 167 [1/1] (0.00ns)   --->   "%SeparableConv2D_2_de_1 = load i16* @SeparableConv2D_2_de, align 2" [mnist_AXI_Stream.cpp:91]   --->   Operation 167 'load' 'SeparableConv2D_2_de_1' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 168 [2/2] (0.00ns)   --->   "call fastcc void @pointwise_conv2d_fix.4(i16 %Padding2D_2_depth_lo, i16 %SeparableConv2D_2_he_1, i16 %SeparableConv2D_2_wi_1, i16 %SeparableConv2D_2_de_1, [392 x i16]* @SeparableConv2D_2_ar)" [layers_c/separable_conv2d.cpp:17->mnist_AXI_Stream.cpp:91]   --->   Operation 168 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 24 <SV = 22> <Delay = 0.00>
+ST_24 : Operation 169 [1/2] (0.00ns)   --->   "call fastcc void @pointwise_conv2d_fix.4(i16 %Padding2D_2_depth_lo, i16 %SeparableConv2D_2_he_1, i16 %SeparableConv2D_2_wi_1, i16 %SeparableConv2D_2_de_1, [392 x i16]* @SeparableConv2D_2_ar)" [layers_c/separable_conv2d.cpp:17->mnist_AXI_Stream.cpp:91]   --->   Operation 169 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 25 <SV = 23> <Delay = 0.00>
+ST_25 : Operation 170 [1/1] (0.00ns)   --->   "%SeparableConv2D_2_he_2 = load i16* @SeparableConv2D_2_he, align 2" [mnist_AXI_Stream.cpp:101]   --->   Operation 170 'load' 'SeparableConv2D_2_he_2' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 171 [1/1] (0.00ns)   --->   "%SeparableConv2D_2_wi_2 = load i16* @SeparableConv2D_2_wi, align 2" [mnist_AXI_Stream.cpp:101]   --->   Operation 171 'load' 'SeparableConv2D_2_wi_2' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 172 [1/1] (0.00ns)   --->   "%UpSampling2D_0_depth_1 = load i16* @UpSampling2D_0_depth, align 2" [mnist_AXI_Stream.cpp:101]   --->   Operation 172 'load' 'UpSampling2D_0_depth_1' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 173 [1/1] (0.00ns)   --->   "%UpSampling2D_0_heigh_1 = load i16* @UpSampling2D_0_heigh, align 2" [mnist_AXI_Stream.cpp:101]   --->   Operation 173 'load' 'UpSampling2D_0_heigh_1' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 174 [1/1] (0.00ns)   --->   "%UpSampling2D_0_width_1 = load i16* @UpSampling2D_0_width, align 2" [mnist_AXI_Stream.cpp:101]   --->   Operation 174 'load' 'UpSampling2D_0_width_1' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 175 [2/2] (0.00ns)   --->   "call fastcc void @up_sampling2d_fix16.1(i16 zeroext %SeparableConv2D_2_he_2, i16 zeroext %SeparableConv2D_2_wi_2, i16 zeroext %UpSampling2D_0_depth_1, i16 zeroext %UpSampling2D_0_heigh_1, i16 zeroext %UpSampling2D_0_width_1)" [mnist_AXI_Stream.cpp:101]   --->   Operation 175 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 26 <SV = 24> <Delay = 0.00>
+ST_26 : Operation 176 [1/2] (0.00ns)   --->   "call fastcc void @up_sampling2d_fix16.1(i16 zeroext %SeparableConv2D_2_he_2, i16 zeroext %SeparableConv2D_2_wi_2, i16 zeroext %UpSampling2D_0_depth_1, i16 zeroext %UpSampling2D_0_heigh_1, i16 zeroext %UpSampling2D_0_width_1)" [mnist_AXI_Stream.cpp:101]   --->   Operation 176 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 27 <SV = 25> <Delay = 2.07>
+ST_27 : Operation 177 [1/1] (0.00ns)   --->   "%UpSampling2D_0_depth_2 = load i16* @UpSampling2D_0_depth, align 2" [mnist_AXI_Stream.cpp:106]   --->   Operation 177 'load' 'UpSampling2D_0_depth_2' <Predicate = true> <Delay = 0.00>
+ST_27 : Operation 178 [1/1] (0.00ns)   --->   "%UpSampling2D_0_heigh_2 = load i16* @UpSampling2D_0_heigh, align 2" [mnist_AXI_Stream.cpp:106]   --->   Operation 178 'load' 'UpSampling2D_0_heigh_2' <Predicate = true> <Delay = 0.00>
+ST_27 : Operation 179 [1/1] (0.00ns)   --->   "%UpSampling2D_0_width_2 = load i16* @UpSampling2D_0_width, align 2" [mnist_AXI_Stream.cpp:106]   --->   Operation 179 'load' 'UpSampling2D_0_width_2' <Predicate = true> <Delay = 0.00>
+ST_27 : Operation 180 [1/1] (0.00ns)   --->   "%Padding2D_3_height_l = load i16* @Padding2D_3_height, align 2" [mnist_AXI_Stream.cpp:106]   --->   Operation 180 'load' 'Padding2D_3_height_l' <Predicate = true> <Delay = 0.00>
+ST_27 : Operation 181 [1/1] (0.00ns)   --->   "%Padding2D_3_width_lo = load i16* @Padding2D_3_width, align 2" [mnist_AXI_Stream.cpp:106]   --->   Operation 181 'load' 'Padding2D_3_width_lo' <Predicate = true> <Delay = 0.00>
+ST_27 : Operation 182 [2/2] (2.07ns)   --->   "call fastcc void @padding2d_fix16.1(i16 %UpSampling2D_0_depth_2, i16 %UpSampling2D_0_heigh_2, i16 %UpSampling2D_0_width_2, [1568 x i16]* @UpSampling2D_0_array, i16 %Padding2D_3_height_l, i16 %Padding2D_3_width_lo, [2048 x i16]* @Padding2D_3_array)" [mnist_AXI_Stream.cpp:106]   --->   Operation 182 'call' <Predicate = true> <Delay = 2.07> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 28 <SV = 26> <Delay = 0.00>
+ST_28 : Operation 183 [1/2] (0.00ns)   --->   "call fastcc void @padding2d_fix16.1(i16 %UpSampling2D_0_depth_2, i16 %UpSampling2D_0_heigh_2, i16 %UpSampling2D_0_width_2, [1568 x i16]* @UpSampling2D_0_array, i16 %Padding2D_3_height_l, i16 %Padding2D_3_width_lo, [2048 x i16]* @Padding2D_3_array)" [mnist_AXI_Stream.cpp:106]   --->   Operation 183 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 29 <SV = 27> <Delay = 0.00>
+ST_29 : Operation 184 [1/1] (0.00ns)   --->   "%Padding2D_3_depth_lo = load i16* @Padding2D_3_depth, align 2" [mnist_AXI_Stream.cpp:111]   --->   Operation 184 'load' 'Padding2D_3_depth_lo' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 185 [1/1] (0.00ns)   --->   "%Padding2D_3_height_l_1 = load i16* @Padding2D_3_height, align 2" [mnist_AXI_Stream.cpp:111]   --->   Operation 185 'load' 'Padding2D_3_height_l_1' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 186 [1/1] (0.00ns)   --->   "%Padding2D_3_width_lo_1 = load i16* @Padding2D_3_width, align 2" [mnist_AXI_Stream.cpp:111]   --->   Operation 186 'load' 'Padding2D_3_width_lo_1' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 187 [1/1] (0.00ns)   --->   "%SeparableConv2D_3_he_1 = load i16* @SeparableConv2D_3_he, align 2" [mnist_AXI_Stream.cpp:111]   --->   Operation 187 'load' 'SeparableConv2D_3_he_1' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 188 [1/1] (0.00ns)   --->   "%SeparableConv2D_3_wi_1 = load i16* @SeparableConv2D_3_wi, align 2" [mnist_AXI_Stream.cpp:111]   --->   Operation 188 'load' 'SeparableConv2D_3_wi_1' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 189 [2/2] (0.00ns)   --->   "call fastcc void @depthwise_conv2d_fix.3(i16 %Padding2D_3_height_l_1, i16 %Padding2D_3_width_lo_1, i16 %Padding2D_3_depth_lo, i16 %SeparableConv2D_3_he_1, i16 %SeparableConv2D_3_wi_1, [1568 x i16]* @SeparableConv2D_3_m_s)" [layers_c/separable_conv2d.cpp:12->mnist_AXI_Stream.cpp:111]   --->   Operation 189 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 30 <SV = 28> <Delay = 0.00>
+ST_30 : Operation 190 [1/2] (0.00ns)   --->   "call fastcc void @depthwise_conv2d_fix.3(i16 %Padding2D_3_height_l_1, i16 %Padding2D_3_width_lo_1, i16 %Padding2D_3_depth_lo, i16 %SeparableConv2D_3_he_1, i16 %SeparableConv2D_3_wi_1, [1568 x i16]* @SeparableConv2D_3_m_s)" [layers_c/separable_conv2d.cpp:12->mnist_AXI_Stream.cpp:111]   --->   Operation 190 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 31 <SV = 29> <Delay = 0.00>
+ST_31 : Operation 191 [1/1] (0.00ns)   --->   "%SeparableConv2D_3_de_1 = load i16* @SeparableConv2D_3_de, align 2" [mnist_AXI_Stream.cpp:111]   --->   Operation 191 'load' 'SeparableConv2D_3_de_1' <Predicate = true> <Delay = 0.00>
+ST_31 : Operation 192 [2/2] (0.00ns)   --->   "call fastcc void @pointwise_conv2d_fix.3(i16 %Padding2D_3_depth_lo, i16 %SeparableConv2D_3_he_1, i16 %SeparableConv2D_3_wi_1, i16 %SeparableConv2D_3_de_1, [3136 x i16]* @SeparableConv2D_3_ar)" [layers_c/separable_conv2d.cpp:17->mnist_AXI_Stream.cpp:111]   --->   Operation 192 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 32 <SV = 30> <Delay = 0.00>
+ST_32 : Operation 193 [1/2] (0.00ns)   --->   "call fastcc void @pointwise_conv2d_fix.3(i16 %Padding2D_3_depth_lo, i16 %SeparableConv2D_3_he_1, i16 %SeparableConv2D_3_wi_1, i16 %SeparableConv2D_3_de_1, [3136 x i16]* @SeparableConv2D_3_ar)" [layers_c/separable_conv2d.cpp:17->mnist_AXI_Stream.cpp:111]   --->   Operation 193 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 33 <SV = 31> <Delay = 0.00>
+ST_33 : Operation 194 [1/1] (0.00ns)   --->   "%SeparableConv2D_3_he_2 = load i16* @SeparableConv2D_3_he, align 2" [mnist_AXI_Stream.cpp:121]   --->   Operation 194 'load' 'SeparableConv2D_3_he_2' <Predicate = true> <Delay = 0.00>
+ST_33 : Operation 195 [1/1] (0.00ns)   --->   "%SeparableConv2D_3_wi_2 = load i16* @SeparableConv2D_3_wi, align 2" [mnist_AXI_Stream.cpp:121]   --->   Operation 195 'load' 'SeparableConv2D_3_wi_2' <Predicate = true> <Delay = 0.00>
+ST_33 : Operation 196 [1/1] (0.00ns)   --->   "%UpSampling2D_1_depth_1 = load i16* @UpSampling2D_1_depth, align 2" [mnist_AXI_Stream.cpp:121]   --->   Operation 196 'load' 'UpSampling2D_1_depth_1' <Predicate = true> <Delay = 0.00>
+ST_33 : Operation 197 [1/1] (0.00ns)   --->   "%UpSampling2D_1_heigh_1 = load i16* @UpSampling2D_1_heigh, align 2" [mnist_AXI_Stream.cpp:121]   --->   Operation 197 'load' 'UpSampling2D_1_heigh_1' <Predicate = true> <Delay = 0.00>
+ST_33 : Operation 198 [1/1] (0.00ns)   --->   "%UpSampling2D_1_width_1 = load i16* @UpSampling2D_1_width, align 2" [mnist_AXI_Stream.cpp:121]   --->   Operation 198 'load' 'UpSampling2D_1_width_1' <Predicate = true> <Delay = 0.00>
+ST_33 : Operation 199 [2/2] (0.00ns)   --->   "call fastcc void @up_sampling2d_fix16(i16 zeroext %SeparableConv2D_3_he_2, i16 zeroext %SeparableConv2D_3_wi_2, i16 zeroext %UpSampling2D_1_depth_1, i16 zeroext %UpSampling2D_1_heigh_1, i16 zeroext %UpSampling2D_1_width_1)" [mnist_AXI_Stream.cpp:121]   --->   Operation 199 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 34 <SV = 32> <Delay = 0.00>
+ST_34 : Operation 200 [1/2] (0.00ns)   --->   "call fastcc void @up_sampling2d_fix16(i16 zeroext %SeparableConv2D_3_he_2, i16 zeroext %SeparableConv2D_3_wi_2, i16 zeroext %UpSampling2D_1_depth_1, i16 zeroext %UpSampling2D_1_heigh_1, i16 zeroext %UpSampling2D_1_width_1)" [mnist_AXI_Stream.cpp:121]   --->   Operation 200 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 35 <SV = 33> <Delay = 2.07>
+ST_35 : Operation 201 [1/1] (0.00ns)   --->   "%UpSampling2D_1_depth_2 = load i16* @UpSampling2D_1_depth, align 2" [mnist_AXI_Stream.cpp:126]   --->   Operation 201 'load' 'UpSampling2D_1_depth_2' <Predicate = true> <Delay = 0.00>
+ST_35 : Operation 202 [1/1] (0.00ns)   --->   "%UpSampling2D_1_heigh_2 = load i16* @UpSampling2D_1_heigh, align 2" [mnist_AXI_Stream.cpp:126]   --->   Operation 202 'load' 'UpSampling2D_1_heigh_2' <Predicate = true> <Delay = 0.00>
+ST_35 : Operation 203 [1/1] (0.00ns)   --->   "%UpSampling2D_1_width_2 = load i16* @UpSampling2D_1_width, align 2" [mnist_AXI_Stream.cpp:126]   --->   Operation 203 'load' 'UpSampling2D_1_width_2' <Predicate = true> <Delay = 0.00>
+ST_35 : Operation 204 [1/1] (0.00ns)   --->   "%Padding2D_4_height_l = load i16* @Padding2D_4_height, align 2" [mnist_AXI_Stream.cpp:126]   --->   Operation 204 'load' 'Padding2D_4_height_l' <Predicate = true> <Delay = 0.00>
+ST_35 : Operation 205 [1/1] (0.00ns)   --->   "%Padding2D_4_width_lo = load i16* @Padding2D_4_width, align 2" [mnist_AXI_Stream.cpp:126]   --->   Operation 205 'load' 'Padding2D_4_width_lo' <Predicate = true> <Delay = 0.00>
+ST_35 : Operation 206 [2/2] (2.07ns)   --->   "call fastcc void @padding2d_fix16(i16 %UpSampling2D_1_depth_2, i16 %UpSampling2D_1_heigh_2, i16 %UpSampling2D_1_width_2, [12544 x i16]* @UpSampling2D_1_array, i16 %Padding2D_4_height_l, i16 %Padding2D_4_width_lo, [14400 x i16]* @Padding2D_4_array)" [mnist_AXI_Stream.cpp:126]   --->   Operation 206 'call' <Predicate = true> <Delay = 2.07> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 36 <SV = 34> <Delay = 0.00>
+ST_36 : Operation 207 [1/2] (0.00ns)   --->   "call fastcc void @padding2d_fix16(i16 %UpSampling2D_1_depth_2, i16 %UpSampling2D_1_heigh_2, i16 %UpSampling2D_1_width_2, [12544 x i16]* @UpSampling2D_1_array, i16 %Padding2D_4_height_l, i16 %Padding2D_4_width_lo, [14400 x i16]* @Padding2D_4_array)" [mnist_AXI_Stream.cpp:126]   --->   Operation 207 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 37 <SV = 35> <Delay = 0.00>
+ST_37 : Operation 208 [1/1] (0.00ns)   --->   "%Padding2D_4_depth_lo = load i16* @Padding2D_4_depth, align 2" [mnist_AXI_Stream.cpp:131]   --->   Operation 208 'load' 'Padding2D_4_depth_lo' <Predicate = true> <Delay = 0.00>
+ST_37 : Operation 209 [1/1] (0.00ns)   --->   "%Padding2D_4_height_l_1 = load i16* @Padding2D_4_height, align 2" [mnist_AXI_Stream.cpp:131]   --->   Operation 209 'load' 'Padding2D_4_height_l_1' <Predicate = true> <Delay = 0.00>
+ST_37 : Operation 210 [1/1] (0.00ns)   --->   "%Padding2D_4_width_lo_1 = load i16* @Padding2D_4_width, align 2" [mnist_AXI_Stream.cpp:131]   --->   Operation 210 'load' 'Padding2D_4_width_lo_1' <Predicate = true> <Delay = 0.00>
+ST_37 : Operation 211 [1/1] (0.00ns)   --->   "%SeparableConv2D_4_he_1 = load i16* @SeparableConv2D_4_he, align 2" [mnist_AXI_Stream.cpp:131]   --->   Operation 211 'load' 'SeparableConv2D_4_he_1' <Predicate = true> <Delay = 0.00>
+ST_37 : Operation 212 [1/1] (0.00ns)   --->   "%SeparableConv2D_4_wi_1 = load i16* @SeparableConv2D_4_wi, align 2" [mnist_AXI_Stream.cpp:131]   --->   Operation 212 'load' 'SeparableConv2D_4_wi_1' <Predicate = true> <Delay = 0.00>
+ST_37 : Operation 213 [2/2] (0.00ns)   --->   "call fastcc void @depthwise_conv2d_fix.1(i16 %Padding2D_4_height_l_1, i16 %Padding2D_4_width_lo_1, i16 %Padding2D_4_depth_lo, i16 %SeparableConv2D_4_he_1, i16 %SeparableConv2D_4_wi_1, [12544 x i16]* @SeparableConv2D_4_m_s)" [layers_c/separable_conv2d.cpp:12->mnist_AXI_Stream.cpp:131]   --->   Operation 213 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 38 <SV = 36> <Delay = 0.00>
+ST_38 : Operation 214 [1/2] (0.00ns)   --->   "call fastcc void @depthwise_conv2d_fix.1(i16 %Padding2D_4_height_l_1, i16 %Padding2D_4_width_lo_1, i16 %Padding2D_4_depth_lo, i16 %SeparableConv2D_4_he_1, i16 %SeparableConv2D_4_wi_1, [12544 x i16]* @SeparableConv2D_4_m_s)" [layers_c/separable_conv2d.cpp:12->mnist_AXI_Stream.cpp:131]   --->   Operation 214 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 39 <SV = 37> <Delay = 0.00>
+ST_39 : Operation 215 [1/1] (0.00ns)   --->   "%SeparableConv2D_4_de_1 = load i16* @SeparableConv2D_4_de, align 2" [mnist_AXI_Stream.cpp:131]   --->   Operation 215 'load' 'SeparableConv2D_4_de_1' <Predicate = true> <Delay = 0.00>
+ST_39 : Operation 216 [2/2] (0.00ns)   --->   "call fastcc void @pointwise_conv2d_fix.1(i16 %Padding2D_4_depth_lo, i16 %SeparableConv2D_4_he_1, i16 %SeparableConv2D_4_wi_1, i16 %SeparableConv2D_4_de_1, [784 x i16]* @SeparableConv2D_4_ar)" [layers_c/separable_conv2d.cpp:17->mnist_AXI_Stream.cpp:131]   --->   Operation 216 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 40 <SV = 38> <Delay = 1.76>
+ST_40 : Operation 217 [1/2] (0.00ns)   --->   "call fastcc void @pointwise_conv2d_fix.1(i16 %Padding2D_4_depth_lo, i16 %SeparableConv2D_4_he_1, i16 %SeparableConv2D_4_wi_1, i16 %SeparableConv2D_4_de_1, [784 x i16]* @SeparableConv2D_4_ar)" [layers_c/separable_conv2d.cpp:17->mnist_AXI_Stream.cpp:131]   --->   Operation 217 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_40 : Operation 218 [1/1] (1.76ns)   --->   "br label %.loopexit" [mnist_AXI_Stream.cpp:141]   --->   Operation 218 'br' <Predicate = true> <Delay = 1.76>
+
+State 41 <SV = 39> <Delay = 2.75>
+ST_41 : Operation 219 [1/1] (0.00ns)   --->   "%depth7 = phi i32 [ 0, %.preheader61.1 ], [ %depth, %.loopexit.loopexit ]"   --->   Operation 219 'phi' 'depth7' <Predicate = true> <Delay = 0.00>
+ST_41 : Operation 220 [1/1] (0.00ns)   --->   "%SeparableConv2D_4_de_2 = load i16* @SeparableConv2D_4_de, align 2" [mnist_AXI_Stream.cpp:141]   --->   Operation 220 'load' 'SeparableConv2D_4_de_2' <Predicate = true> <Delay = 0.00>
+ST_41 : Operation 221 [1/1] (0.00ns)   --->   "%tmp_s = zext i16 %SeparableConv2D_4_de_2 to i32" [mnist_AXI_Stream.cpp:141]   --->   Operation 221 'zext' 'tmp_s' <Predicate = true> <Delay = 0.00>
+ST_41 : Operation 222 [1/1] (2.47ns)   --->   "%tmp_86 = icmp slt i32 %depth7, %tmp_s" [mnist_AXI_Stream.cpp:141]   --->   Operation 222 'icmp' 'tmp_86' <Predicate = true> <Delay = 2.47> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_41 : Operation 223 [1/1] (2.55ns)   --->   "%depth = add nsw i32 %depth7, 1" [mnist_AXI_Stream.cpp:141]   --->   Operation 223 'add' 'depth' <Predicate = true> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_41 : Operation 224 [1/1] (0.00ns)   --->   "br i1 %tmp_86, label %.preheader58.preheader, label %5" [mnist_AXI_Stream.cpp:141]   --->   Operation 224 'br' <Predicate = true> <Delay = 0.00>
+ST_41 : Operation 225 [1/1] (0.00ns)   --->   "%tmp_4 = call i37 @_ssdm_op_BitConcatenate.i37.i32.i5(i32 %depth7, i5 0)" [mnist_AXI_Stream.cpp:141]   --->   Operation 225 'bitconcatenate' 'tmp_4' <Predicate = (tmp_86)> <Delay = 0.00>
+ST_41 : Operation 226 [1/1] (0.00ns)   --->   "%p_shl2_cast = sext i37 %tmp_4 to i38" [mnist_AXI_Stream.cpp:141]   --->   Operation 226 'sext' 'p_shl2_cast' <Predicate = (tmp_86)> <Delay = 0.00>
+ST_41 : Operation 227 [1/1] (0.00ns)   --->   "%tmp_5 = call i34 @_ssdm_op_BitConcatenate.i34.i32.i2(i32 %depth7, i2 0)" [mnist_AXI_Stream.cpp:141]   --->   Operation 227 'bitconcatenate' 'tmp_5' <Predicate = (tmp_86)> <Delay = 0.00>
+ST_41 : Operation 228 [1/1] (0.00ns)   --->   "%p_shl3_cast = sext i34 %tmp_5 to i38" [mnist_AXI_Stream.cpp:145]   --->   Operation 228 'sext' 'p_shl3_cast' <Predicate = (tmp_86)> <Delay = 0.00>
+ST_41 : Operation 229 [1/1] (2.75ns)   --->   "%tmp_6 = sub i38 %p_shl2_cast, %p_shl3_cast" [mnist_AXI_Stream.cpp:145]   --->   Operation 229 'sub' 'tmp_6' <Predicate = (tmp_86)> <Delay = 2.75> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_41 : Operation 230 [1/1] (1.76ns)   --->   "br label %.preheader58" [mnist_AXI_Stream.cpp:142]   --->   Operation 230 'br' <Predicate = (tmp_86)> <Delay = 1.76>
+ST_41 : Operation 231 [2/2] (0.00ns)   --->   "ret void" [mnist_AXI_Stream.cpp:169]   --->   Operation 231 'ret' <Predicate = (!tmp_86)> <Delay = 0.00>
+
+State 42 <SV = 40> <Delay = 4.43>
+ST_42 : Operation 232 [1/1] (0.00ns)   --->   "%height8 = phi i32 [ 0, %.preheader58.preheader ], [ %height_3, %.preheader58.loopexit ]"   --->   Operation 232 'phi' 'height8' <Predicate = true> <Delay = 0.00>
+ST_42 : Operation 233 [1/1] (0.00ns)   --->   "%SeparableConv2D_4_he_2 = load i16* @SeparableConv2D_4_he, align 2" [mnist_AXI_Stream.cpp:142]   --->   Operation 233 'load' 'SeparableConv2D_4_he_2' <Predicate = true> <Delay = 0.00>
+ST_42 : Operation 234 [1/1] (0.00ns)   --->   "%tmp_88 = zext i16 %SeparableConv2D_4_he_2 to i32" [mnist_AXI_Stream.cpp:142]   --->   Operation 234 'zext' 'tmp_88' <Predicate = true> <Delay = 0.00>
+ST_42 : Operation 235 [1/1] (2.47ns)   --->   "%tmp_89 = icmp slt i32 %height8, %tmp_88" [mnist_AXI_Stream.cpp:142]   --->   Operation 235 'icmp' 'tmp_89' <Predicate = true> <Delay = 2.47> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_42 : Operation 236 [1/1] (2.55ns)   --->   "%height_3 = add nsw i32 %height8, 1" [mnist_AXI_Stream.cpp:142]   --->   Operation 236 'add' 'height_3' <Predicate = true> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_42 : Operation 237 [1/1] (0.00ns)   --->   "br i1 %tmp_89, label %.preheader.preheader, label %.loopexit.loopexit" [mnist_AXI_Stream.cpp:142]   --->   Operation 237 'br' <Predicate = true> <Delay = 0.00>
+ST_42 : Operation 238 [1/1] (0.00ns)   --->   "%tmp_91_cast = sext i32 %height8 to i38" [mnist_AXI_Stream.cpp:145]   --->   Operation 238 'sext' 'tmp_91_cast' <Predicate = (tmp_89)> <Delay = 0.00>
+ST_42 : Operation 239 [1/1] (2.79ns)   --->   "%tmp_8 = add i38 %tmp_91_cast, %tmp_6" [mnist_AXI_Stream.cpp:145]   --->   Operation 239 'add' 'tmp_8' <Predicate = (tmp_89)> <Delay = 2.79> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_42 : Operation 240 [1/1] (0.00ns)   --->   "%tmp_12 = trunc i38 %tmp_8 to i6" [mnist_AXI_Stream.cpp:145]   --->   Operation 240 'trunc' 'tmp_12' <Predicate = (tmp_89)> <Delay = 0.00>
+ST_42 : Operation 241 [1/1] (0.00ns)   --->   "%p_shl6_cast = call i11 @_ssdm_op_BitConcatenate.i11.i6.i5(i6 %tmp_12, i5 0)" [mnist_AXI_Stream.cpp:145]   --->   Operation 241 'bitconcatenate' 'p_shl6_cast' <Predicate = (tmp_89)> <Delay = 0.00>
+ST_42 : Operation 242 [1/1] (0.00ns)   --->   "%tmp_13 = trunc i38 %tmp_8 to i9" [mnist_AXI_Stream.cpp:145]   --->   Operation 242 'trunc' 'tmp_13' <Predicate = (tmp_89)> <Delay = 0.00>
+ST_42 : Operation 243 [1/1] (0.00ns)   --->   "%p_shl7_cast = call i11 @_ssdm_op_BitConcatenate.i11.i9.i2(i9 %tmp_13, i2 0)" [mnist_AXI_Stream.cpp:145]   --->   Operation 243 'bitconcatenate' 'p_shl7_cast' <Predicate = (tmp_89)> <Delay = 0.00>
+ST_42 : Operation 244 [1/1] (1.63ns)   --->   "%tmp_11 = sub i11 %p_shl6_cast, %p_shl7_cast" [mnist_AXI_Stream.cpp:145]   --->   Operation 244 'sub' 'tmp_11' <Predicate = (tmp_89)> <Delay = 1.63> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_42 : Operation 245 [1/1] (0.00ns)   --->   "%tmp_17 = trunc i32 %height8 to i6" [mnist_AXI_Stream.cpp:142]   --->   Operation 245 'trunc' 'tmp_17' <Predicate = (tmp_89)> <Delay = 0.00>
+ST_42 : Operation 246 [1/1] (0.00ns)   --->   "%p_shl4_cast = call i11 @_ssdm_op_BitConcatenate.i11.i6.i5(i6 %tmp_17, i5 0)" [mnist_AXI_Stream.cpp:142]   --->   Operation 246 'bitconcatenate' 'p_shl4_cast' <Predicate = (tmp_89)> <Delay = 0.00>
+ST_42 : Operation 247 [1/1] (0.00ns)   --->   "%tmp_18 = trunc i32 %height8 to i9" [mnist_AXI_Stream.cpp:142]   --->   Operation 247 'trunc' 'tmp_18' <Predicate = (tmp_89)> <Delay = 0.00>
+ST_42 : Operation 248 [1/1] (0.00ns)   --->   "%p_shl5_cast = call i11 @_ssdm_op_BitConcatenate.i11.i9.i2(i9 %tmp_18, i2 0)" [mnist_AXI_Stream.cpp:162]   --->   Operation 248 'bitconcatenate' 'p_shl5_cast' <Predicate = (tmp_89)> <Delay = 0.00>
+ST_42 : Operation 249 [1/1] (1.63ns)   --->   "%tmp_14 = sub i11 %p_shl4_cast, %p_shl5_cast" [mnist_AXI_Stream.cpp:162]   --->   Operation 249 'sub' 'tmp_14' <Predicate = (tmp_89)> <Delay = 1.63> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_42 : Operation 250 [1/1] (1.76ns)   --->   "br label %.preheader" [mnist_AXI_Stream.cpp:143]   --->   Operation 250 'br' <Predicate = (tmp_89)> <Delay = 1.76>
+ST_42 : Operation 251 [1/1] (0.00ns)   --->   "br label %.loopexit"   --->   Operation 251 'br' <Predicate = (!tmp_89)> <Delay = 0.00>
+
+State 43 <SV = 41> <Delay = 4.89>
+ST_43 : Operation 252 [1/1] (0.00ns)   --->   "%width9 = phi i32 [ %width_7, %4 ], [ 0, %.preheader.preheader ]"   --->   Operation 252 'phi' 'width9' <Predicate = true> <Delay = 0.00>
+ST_43 : Operation 253 [1/1] (0.00ns)   --->   "%SeparableConv2D_4_wi_2 = load i16* @SeparableConv2D_4_wi, align 2" [mnist_AXI_Stream.cpp:143]   --->   Operation 253 'load' 'SeparableConv2D_4_wi_2' <Predicate = true> <Delay = 0.00>
+ST_43 : Operation 254 [1/1] (0.00ns)   --->   "%tmp_90 = zext i16 %SeparableConv2D_4_wi_2 to i32" [mnist_AXI_Stream.cpp:143]   --->   Operation 254 'zext' 'tmp_90' <Predicate = true> <Delay = 0.00>
+ST_43 : Operation 255 [1/1] (0.00ns)   --->   "%tmp_93_cast = zext i16 %SeparableConv2D_4_wi_2 to i17" [mnist_AXI_Stream.cpp:143]   --->   Operation 255 'zext' 'tmp_93_cast' <Predicate = true> <Delay = 0.00>
+ST_43 : Operation 256 [1/1] (2.47ns)   --->   "%tmp_91 = icmp slt i32 %width9, %tmp_90" [mnist_AXI_Stream.cpp:143]   --->   Operation 256 'icmp' 'tmp_91' <Predicate = true> <Delay = 2.47> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_43 : Operation 257 [1/1] (2.55ns)   --->   "%width_7 = add nsw i32 %width9, 1" [mnist_AXI_Stream.cpp:143]   --->   Operation 257 'add' 'width_7' <Predicate = true> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_43 : Operation 258 [1/1] (0.00ns)   --->   "br i1 %tmp_91, label %1, label %.preheader58.loopexit" [mnist_AXI_Stream.cpp:143]   --->   Operation 258 'br' <Predicate = true> <Delay = 0.00>
+ST_43 : Operation 259 [1/1] (0.00ns)   --->   "%tmp_19 = trunc i32 %width9 to i11" [mnist_AXI_Stream.cpp:145]   --->   Operation 259 'trunc' 'tmp_19' <Predicate = (tmp_91)> <Delay = 0.00>
+ST_43 : Operation 260 [1/1] (1.63ns)   --->   "%tmp_15 = add i11 %tmp_11, %tmp_19" [mnist_AXI_Stream.cpp:145]   --->   Operation 260 'add' 'tmp_15' <Predicate = (tmp_91)> <Delay = 1.63> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_43 : Operation 261 [1/1] (0.00ns)   --->   "%tmp_15_cast = zext i11 %tmp_15 to i64" [mnist_AXI_Stream.cpp:145]   --->   Operation 261 'zext' 'tmp_15_cast' <Predicate = (tmp_91)> <Delay = 0.00>
+ST_43 : Operation 262 [1/1] (0.00ns)   --->   "%SeparableConv2D_4_ar_1 = getelementptr [784 x i16]* @SeparableConv2D_4_ar, i64 0, i64 %tmp_15_cast" [mnist_AXI_Stream.cpp:145]   --->   Operation 262 'getelementptr' 'SeparableConv2D_4_ar_1' <Predicate = (tmp_91)> <Delay = 0.00>
+ST_43 : Operation 263 [1/1] (1.63ns)   --->   "%tmp_16 = add i11 %tmp_14, %tmp_19" [mnist_AXI_Stream.cpp:162]   --->   Operation 263 'add' 'tmp_16' <Predicate = (tmp_91)> <Delay = 1.63> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_43 : Operation 264 [2/2] (3.25ns)   --->   "%tmp_data_V_1 = load i16* %SeparableConv2D_4_ar_1, align 2" [mnist_AXI_Stream.cpp:145]   --->   Operation 264 'load' 'tmp_data_V_1' <Predicate = (tmp_91)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.56> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 1> <Depth = 784> <RAM>
+ST_43 : Operation 265 [1/1] (0.00ns) (grouped into LUT with out node tmp_user_V)   --->   "%tmp = or i32 %depth7, %width9" [mnist_AXI_Stream.cpp:148]   --->   Operation 265 'or' 'tmp' <Predicate = (tmp_91)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_43 : Operation 266 [1/1] (0.00ns) (grouped into LUT with out node tmp_user_V)   --->   "%tmp_92 = or i32 %tmp, %height8" [mnist_AXI_Stream.cpp:148]   --->   Operation 266 'or' 'tmp_92' <Predicate = (tmp_91)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_43 : Operation 267 [1/1] (2.47ns) (out node of the LUT)   --->   "%tmp_user_V = icmp eq i32 %tmp_92, 0" [mnist_AXI_Stream.cpp:148]   --->   Operation 267 'icmp' 'tmp_user_V' <Predicate = (tmp_91)> <Delay = 2.47> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_43 : Operation 268 [1/1] (0.00ns)   --->   "%SeparableConv2D_4_de_3 = load i16* @SeparableConv2D_4_de, align 2" [mnist_AXI_Stream.cpp:154]   --->   Operation 268 'load' 'SeparableConv2D_4_de_3' <Predicate = (tmp_91)> <Delay = 0.00>
+ST_43 : Operation 269 [1/1] (0.00ns)   --->   "%tmp_98_cast = zext i16 %SeparableConv2D_4_de_3 to i17" [mnist_AXI_Stream.cpp:154]   --->   Operation 269 'zext' 'tmp_98_cast' <Predicate = (tmp_91)> <Delay = 0.00>
+ST_43 : Operation 270 [1/1] (2.07ns)   --->   "%tmp_93 = add i17 -1, %tmp_98_cast" [mnist_AXI_Stream.cpp:154]   --->   Operation 270 'add' 'tmp_93' <Predicate = (tmp_91)> <Delay = 2.07> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_43 : Operation 271 [1/1] (0.00ns)   --->   "%tmp_99_cast = sext i17 %tmp_93 to i32" [mnist_AXI_Stream.cpp:154]   --->   Operation 271 'sext' 'tmp_99_cast' <Predicate = (tmp_91)> <Delay = 0.00>
+ST_43 : Operation 272 [1/1] (2.47ns)   --->   "%tmp_94 = icmp eq i32 %depth7, %tmp_99_cast" [mnist_AXI_Stream.cpp:154]   --->   Operation 272 'icmp' 'tmp_94' <Predicate = (tmp_91)> <Delay = 2.47> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_43 : Operation 273 [1/1] (0.00ns)   --->   "br label %.preheader58"   --->   Operation 273 'br' <Predicate = (!tmp_91)> <Delay = 0.00>
+
+State 44 <SV = 42> <Delay = 6.31>
+ST_44 : Operation 274 [1/1] (0.00ns)   --->   "%tmp_16_cast = sext i11 %tmp_16 to i64" [mnist_AXI_Stream.cpp:162]   --->   Operation 274 'sext' 'tmp_16_cast' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 275 [1/1] (0.00ns)   --->   "%out_0_keep_V_addr_1 = getelementptr [784 x i2]* %out_0_keep_V, i64 0, i64 %tmp_16_cast" [mnist_AXI_Stream.cpp:162]   --->   Operation 275 'getelementptr' 'out_0_keep_V_addr_1' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 276 [1/1] (0.00ns)   --->   "%out_0_strb_V_addr_1 = getelementptr [784 x i2]* %out_0_strb_V, i64 0, i64 %tmp_16_cast" [mnist_AXI_Stream.cpp:162]   --->   Operation 276 'getelementptr' 'out_0_strb_V_addr_1' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 277 [1/1] (0.00ns)   --->   "%out_0_id_V_addr_1 = getelementptr [784 x i1]* %out_0_id_V, i64 0, i64 %tmp_16_cast" [mnist_AXI_Stream.cpp:162]   --->   Operation 277 'getelementptr' 'out_0_id_V_addr_1' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 278 [1/1] (0.00ns)   --->   "%out_0_dest_V_addr_1 = getelementptr [784 x i1]* %out_0_dest_V, i64 0, i64 %tmp_16_cast" [mnist_AXI_Stream.cpp:162]   --->   Operation 278 'getelementptr' 'out_0_dest_V_addr_1' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 279 [1/2] (3.25ns)   --->   "%tmp_data_V_1 = load i16* %SeparableConv2D_4_ar_1, align 2" [mnist_AXI_Stream.cpp:145]   --->   Operation 279 'load' 'tmp_data_V_1' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.56> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 1> <Depth = 784> <RAM>
+ST_44 : Operation 280 [1/1] (0.00ns)   --->   "br i1 %tmp_94, label %2, label %._crit_edge" [mnist_AXI_Stream.cpp:154]   --->   Operation 280 'br' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 281 [1/1] (0.00ns)   --->   "%SeparableConv2D_4_he_3 = load i16* @SeparableConv2D_4_he, align 2" [mnist_AXI_Stream.cpp:154]   --->   Operation 281 'load' 'SeparableConv2D_4_he_3' <Predicate = (tmp_94)> <Delay = 0.00>
+ST_44 : Operation 282 [1/1] (0.00ns)   --->   "%tmp_101_cast = zext i16 %SeparableConv2D_4_he_3 to i17" [mnist_AXI_Stream.cpp:154]   --->   Operation 282 'zext' 'tmp_101_cast' <Predicate = (tmp_94)> <Delay = 0.00>
+ST_44 : Operation 283 [1/1] (2.07ns)   --->   "%tmp_95 = add i17 %tmp_101_cast, -1" [mnist_AXI_Stream.cpp:154]   --->   Operation 283 'add' 'tmp_95' <Predicate = (tmp_94)> <Delay = 2.07> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_44 : Operation 284 [1/1] (0.00ns)   --->   "%tmp_102_cast = sext i17 %tmp_95 to i32" [mnist_AXI_Stream.cpp:154]   --->   Operation 284 'sext' 'tmp_102_cast' <Predicate = (tmp_94)> <Delay = 0.00>
+ST_44 : Operation 285 [1/1] (2.47ns)   --->   "%tmp_96 = icmp eq i32 %height8, %tmp_102_cast" [mnist_AXI_Stream.cpp:154]   --->   Operation 285 'icmp' 'tmp_96' <Predicate = (tmp_94)> <Delay = 2.47> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_44 : Operation 286 [1/1] (0.00ns)   --->   "br i1 %tmp_96, label %3, label %._crit_edge" [mnist_AXI_Stream.cpp:154]   --->   Operation 286 'br' <Predicate = (tmp_94)> <Delay = 0.00>
+ST_44 : Operation 287 [1/1] (2.07ns)   --->   "%tmp_97 = add i17 %tmp_93_cast, -1" [mnist_AXI_Stream.cpp:154]   --->   Operation 287 'add' 'tmp_97' <Predicate = (tmp_94 & tmp_96)> <Delay = 2.07> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_44 : Operation 288 [1/1] (0.00ns)   --->   "%tmp_104_cast = sext i17 %tmp_97 to i32" [mnist_AXI_Stream.cpp:154]   --->   Operation 288 'sext' 'tmp_104_cast' <Predicate = (tmp_94 & tmp_96)> <Delay = 0.00>
+ST_44 : Operation 289 [1/1] (2.47ns)   --->   "%tmp_98 = icmp eq i32 %width9, %tmp_104_cast" [mnist_AXI_Stream.cpp:154]   --->   Operation 289 'icmp' 'tmp_98' <Predicate = (tmp_94 & tmp_96)> <Delay = 2.47> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_44 : Operation 290 [1/1] (1.76ns)   --->   "br i1 %tmp_98, label %4, label %._crit_edge" [mnist_AXI_Stream.cpp:154]   --->   Operation 290 'br' <Predicate = (tmp_94 & tmp_96)> <Delay = 1.76>
+ST_44 : Operation 291 [1/1] (1.76ns)   --->   "br label %4"   --->   Operation 291 'br' <Predicate = (!tmp_98) | (!tmp_96) | (!tmp_94)> <Delay = 1.76>
+ST_44 : Operation 292 [2/2] (3.25ns)   --->   "%tmp_keep_V_1 = load i2* %out_0_keep_V_addr_1, align 2" [mnist_AXI_Stream.cpp:162]   --->   Operation 292 'load' 'tmp_keep_V_1' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.56> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 1> <Depth = 784> <RAM>
+ST_44 : Operation 293 [2/2] (3.25ns)   --->   "%tmp_strb_V_1 = load i2* %out_0_strb_V_addr_1, align 1" [mnist_AXI_Stream.cpp:162]   --->   Operation 293 'load' 'tmp_strb_V_1' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.56> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 1> <Depth = 784> <RAM>
+ST_44 : Operation 294 [2/2] (2.56ns)   --->   "%tmp_id_V_1 = load i1* %out_0_id_V_addr_1, align 2" [mnist_AXI_Stream.cpp:162]   --->   Operation 294 'load' 'tmp_id_V_1' <Predicate = true> <Delay = 2.56> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.56> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 1> <Depth = 784> <RAM>
+ST_44 : Operation 295 [2/2] (2.56ns)   --->   "%tmp_dest_V_1 = load i1* %out_0_dest_V_addr_1, align 1" [mnist_AXI_Stream.cpp:162]   --->   Operation 295 'load' 'tmp_dest_V_1' <Predicate = true> <Delay = 2.56> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.56> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 1> <Depth = 784> <RAM>
+
+State 45 <SV = 43> <Delay = 3.25>
+ST_45 : Operation 296 [1/1] (0.00ns)   --->   "%tmp_last_V = phi i1 [ false, %._crit_edge ], [ true, %3 ]"   --->   Operation 296 'phi' 'tmp_last_V' <Predicate = true> <Delay = 0.00>
+ST_45 : Operation 297 [1/2] (3.25ns)   --->   "%tmp_keep_V_1 = load i2* %out_0_keep_V_addr_1, align 2" [mnist_AXI_Stream.cpp:162]   --->   Operation 297 'load' 'tmp_keep_V_1' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.56> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 1> <Depth = 784> <RAM>
+ST_45 : Operation 298 [1/2] (3.25ns)   --->   "%tmp_strb_V_1 = load i2* %out_0_strb_V_addr_1, align 1" [mnist_AXI_Stream.cpp:162]   --->   Operation 298 'load' 'tmp_strb_V_1' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.56> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 1> <Depth = 784> <RAM>
+ST_45 : Operation 299 [1/2] (2.56ns)   --->   "%tmp_id_V_1 = load i1* %out_0_id_V_addr_1, align 2" [mnist_AXI_Stream.cpp:162]   --->   Operation 299 'load' 'tmp_id_V_1' <Predicate = true> <Delay = 2.56> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.56> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 1> <Depth = 784> <RAM>
+ST_45 : Operation 300 [1/2] (2.56ns)   --->   "%tmp_dest_V_1 = load i1* %out_0_dest_V_addr_1, align 1" [mnist_AXI_Stream.cpp:162]   --->   Operation 300 'load' 'tmp_dest_V_1' <Predicate = true> <Delay = 2.56> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.56> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 1> <Depth = 784> <RAM>
+ST_45 : Operation 301 [2/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i16P.i2P.i2P.i1P.i1P.i1P.i1P(i16* %output_data_V_data_V, i2* %output_data_V_keep_V, i2* %output_data_V_strb_V, i1* %output_data_V_user_V, i1* %output_data_V_last_V, i1* %output_data_V_id_V, i1* %output_data_V_dest_V, i16 %tmp_data_V_1, i2 %tmp_keep_V_1, i2 %tmp_strb_V_1, i1 %tmp_user_V, i1 %tmp_last_V, i1 %tmp_id_V_1, i1 %tmp_dest_V_1)" [mnist_AXI_Stream.cpp:162]   --->   Operation 301 'write' <Predicate = true> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+
+State 46 <SV = 44> <Delay = 0.00>
+ST_46 : Operation 302 [1/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i16P.i2P.i2P.i1P.i1P.i1P.i1P(i16* %output_data_V_data_V, i2* %output_data_V_keep_V, i2* %output_data_V_strb_V, i1* %output_data_V_user_V, i1* %output_data_V_last_V, i1* %output_data_V_id_V, i1* %output_data_V_dest_V, i16 %tmp_data_V_1, i2 %tmp_keep_V_1, i2 %tmp_strb_V_1, i1 %tmp_user_V, i1 %tmp_last_V, i1 %tmp_id_V_1, i1 %tmp_dest_V_1)" [mnist_AXI_Stream.cpp:162]   --->   Operation 302 'write' <Predicate = true> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_46 : Operation 303 [1/1] (0.00ns)   --->   "br label %.preheader" [mnist_AXI_Stream.cpp:143]   --->   Operation 303 'br' <Predicate = true> <Delay = 0.00>
+
+State 47 <SV = 40> <Delay = 0.00>
+ST_47 : Operation 304 [1/2] (0.00ns)   --->   "ret void" [mnist_AXI_Stream.cpp:169]   --->   Operation 304 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 1.77ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('height', mnist_AXI_Stream.cpp:34) with incoming values : ('height_4', mnist_AXI_Stream.cpp:34) [110]  (1.77 ns)
+
+ <State 2>: 1.78ns
+The critical path consists of the following:
+	'phi' operation ('height', mnist_AXI_Stream.cpp:34) with incoming values : ('height_4', mnist_AXI_Stream.cpp:34) [110]  (0 ns)
+	'add' operation ('height_4', mnist_AXI_Stream.cpp:34) [113]  (1.78 ns)
+
+ <State 3>: 4.89ns
+The critical path consists of the following:
+	'phi' operation ('width', mnist_AXI_Stream.cpp:35) with incoming values : ('width_6', mnist_AXI_Stream.cpp:35) [123]  (0 ns)
+	'add' operation ('tmp_7', mnist_AXI_Stream.cpp:37) [136]  (1.64 ns)
+	'getelementptr' operation ('input_0_array_0_add', mnist_AXI_Stream.cpp:37) [138]  (0 ns)
+	'store' operation (mnist_AXI_Stream.cpp:37) of variable 'tmp.data.V', mnist_AXI_Stream.cpp:36 on array 'input_0_array[0]', mnist_AXI_Stream.cpp:28 [143]  (3.25 ns)
+
+ <State 4>: 0ns
+The critical path consists of the following:
+
+ <State 5>: 0ns
+The critical path consists of the following:
+
+ <State 6>: 0ns
+The critical path consists of the following:
+
+ <State 7>: 0ns
+The critical path consists of the following:
+
+ <State 8>: 0ns
+The critical path consists of the following:
+
+ <State 9>: 0ns
+The critical path consists of the following:
+
+ <State 10>: 0ns
+The critical path consists of the following:
+
+ <State 11>: 2.08ns
+The critical path consists of the following:
+	'load' operation ('MaxPooling2D_0_depth_2', mnist_AXI_Stream.cpp:66) on global variable 'MaxPooling2D_0_depth' [168]  (0 ns)
+	'call' operation (mnist_AXI_Stream.cpp:66) to 'padding2d_fix16.3' [173]  (2.08 ns)
+
+ <State 12>: 0ns
+The critical path consists of the following:
+
+ <State 13>: 0ns
+The critical path consists of the following:
+
+ <State 14>: 0ns
+The critical path consists of the following:
+
+ <State 15>: 0ns
+The critical path consists of the following:
+
+ <State 16>: 0ns
+The critical path consists of the following:
+
+ <State 17>: 0ns
+The critical path consists of the following:
+
+ <State 18>: 0ns
+The critical path consists of the following:
+
+ <State 19>: 2.08ns
+The critical path consists of the following:
+	'load' operation ('MaxPooling2D_1_depth_2', mnist_AXI_Stream.cpp:86) on global variable 'MaxPooling2D_1_depth' [188]  (0 ns)
+	'call' operation (mnist_AXI_Stream.cpp:86) to 'padding2d_fix16.2' [193]  (2.08 ns)
+
+ <State 20>: 0ns
+The critical path consists of the following:
+
+ <State 21>: 0ns
+The critical path consists of the following:
+
+ <State 22>: 0ns
+The critical path consists of the following:
+
+ <State 23>: 0ns
+The critical path consists of the following:
+
+ <State 24>: 0ns
+The critical path consists of the following:
+
+ <State 25>: 0ns
+The critical path consists of the following:
+
+ <State 26>: 0ns
+The critical path consists of the following:
+
+ <State 27>: 2.08ns
+The critical path consists of the following:
+	'load' operation ('UpSampling2D_0_depth_2', mnist_AXI_Stream.cpp:106) on global variable 'UpSampling2D_0_depth' [208]  (0 ns)
+	'call' operation (mnist_AXI_Stream.cpp:106) to 'padding2d_fix16.1' [213]  (2.08 ns)
+
+ <State 28>: 0ns
+The critical path consists of the following:
+
+ <State 29>: 0ns
+The critical path consists of the following:
+
+ <State 30>: 0ns
+The critical path consists of the following:
+
+ <State 31>: 0ns
+The critical path consists of the following:
+
+ <State 32>: 0ns
+The critical path consists of the following:
+
+ <State 33>: 0ns
+The critical path consists of the following:
+
+ <State 34>: 0ns
+The critical path consists of the following:
+
+ <State 35>: 2.08ns
+The critical path consists of the following:
+	'load' operation ('UpSampling2D_1_depth_2', mnist_AXI_Stream.cpp:126) on global variable 'UpSampling2D_1_depth' [228]  (0 ns)
+	'call' operation (mnist_AXI_Stream.cpp:126) to 'padding2d_fix16' [233]  (2.08 ns)
+
+ <State 36>: 0ns
+The critical path consists of the following:
+
+ <State 37>: 0ns
+The critical path consists of the following:
+
+ <State 38>: 0ns
+The critical path consists of the following:
+
+ <State 39>: 0ns
+The critical path consists of the following:
+
+ <State 40>: 1.77ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('depth') with incoming values : ('depth', mnist_AXI_Stream.cpp:141) [244]  (1.77 ns)
+
+ <State 41>: 2.76ns
+The critical path consists of the following:
+	'phi' operation ('depth') with incoming values : ('depth', mnist_AXI_Stream.cpp:141) [244]  (0 ns)
+	'sub' operation ('tmp_6', mnist_AXI_Stream.cpp:145) [255]  (2.76 ns)
+
+ <State 42>: 4.43ns
+The critical path consists of the following:
+	'phi' operation ('height') with incoming values : ('height', mnist_AXI_Stream.cpp:142) [258]  (0 ns)
+	'add' operation ('tmp_8', mnist_AXI_Stream.cpp:145) [266]  (2.8 ns)
+	'sub' operation ('tmp_11', mnist_AXI_Stream.cpp:145) [271]  (1.64 ns)
+
+ <State 43>: 4.89ns
+The critical path consists of the following:
+	'phi' operation ('width') with incoming values : ('width', mnist_AXI_Stream.cpp:143) [279]  (0 ns)
+	'add' operation ('tmp_15', mnist_AXI_Stream.cpp:145) [288]  (1.64 ns)
+	'getelementptr' operation ('SeparableConv2D_4_ar_1', mnist_AXI_Stream.cpp:145) [290]  (0 ns)
+	'load' operation ('val', mnist_AXI_Stream.cpp:145) on array 'SeparableConv2D_4_ar' [297]  (3.25 ns)
+
+ <State 44>: 6.32ns
+The critical path consists of the following:
+	'add' operation ('tmp_97', mnist_AXI_Stream.cpp:154) [315]  (2.08 ns)
+	'icmp' operation ('tmp_98', mnist_AXI_Stream.cpp:154) [317]  (2.47 ns)
+	multiplexor before 'phi' operation ('tmp.last.V') [322]  (1.77 ns)
+
+ <State 45>: 3.25ns
+The critical path consists of the following:
+	'load' operation ('tmp.keep.V', mnist_AXI_Stream.cpp:162) on array 'out[0].keep.V', mnist_AXI_Stream.cpp:31 [323]  (3.25 ns)
+
+ <State 46>: 0ns
+The critical path consists of the following:
+
+ <State 47>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+	State 20
+	State 21
+	State 22
+	State 23
+	State 24
+	State 25
+	State 26
+	State 27
+	State 28
+	State 29
+	State 30
+	State 31
+	State 32
+	State 33
+	State 34
+	State 35
+	State 36
+	State 37
+	State 38
+	State 39
+	State 40
+	State 41
+	State 42
+	State 43
+	State 44
+	State 45
+	State 46
+	State 47
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

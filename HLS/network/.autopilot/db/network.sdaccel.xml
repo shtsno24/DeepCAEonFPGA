@@ -1,0 +1,548 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'network'" level="0">
+<item name = "Date">Sat Nov  2 18:43:17 2019
+</item>
+<item name = "Version">2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)</item>
+<item name = "Project">HLS</item>
+<item name = "Solution">network</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020clg400-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Target clock period (ns)">10.00</item>
+<item name = "Clock uncertainty (ns)">1.25</item>
+<item name = "Estimated clock period (ns)">8.585</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">?, ?, ?, ?, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+<column name="grp_padding2d_fix16_fu_506">padding2d_fix16, ?, ?, ?, ?, none</column>
+<column name="grp_padding2d_fix16_3_fu_519">padding2d_fix16_3, ?, ?, ?, ?, none</column>
+<column name="grp_padding2d_fix16_1_fu_532">padding2d_fix16_1, ?, ?, ?, ?, none</column>
+<column name="grp_padding2d_fix16_2_fu_545">padding2d_fix16_2, ?, ?, ?, ?, none</column>
+<column name="grp_depthwise_conv2d_fix_1_fu_558">depthwise_conv2d_fix_1, ?, ?, ?, ?, none</column>
+<column name="grp_depthwise_conv2d_fix_2_fu_573">depthwise_conv2d_fix_2, ?, ?, ?, ?, none</column>
+<column name="grp_depthwise_conv2d_fix_3_fu_588">depthwise_conv2d_fix_3, ?, ?, ?, ?, none</column>
+<column name="grp_depthwise_conv2d_fix_4_fu_603">depthwise_conv2d_fix_4, ?, ?, ?, ?, none</column>
+<column name="grp_depthwise_conv2d_fix_fu_618">depthwise_conv2d_fix, ?, ?, ?, ?, none</column>
+<column name="grp_max_pooling2d_fix16_1_fu_633">max_pooling2d_fix16_1, ?, ?, ?, ?, none</column>
+<column name="grp_pointwise_conv2d_fix_3_fu_646">pointwise_conv2d_fix_3, ?, ?, ?, ?, none</column>
+<column name="grp_pointwise_conv2d_fix_2_fu_660">pointwise_conv2d_fix_2, ?, ?, ?, ?, none</column>
+<column name="grp_pointwise_conv2d_fix_fu_674">pointwise_conv2d_fix, ?, ?, ?, ?, none</column>
+<column name="grp_pointwise_conv2d_fix_4_fu_688">pointwise_conv2d_fix_4, ?, ?, ?, ?, none</column>
+<column name="grp_max_pooling2d_fix16_fu_702">max_pooling2d_fix16, ?, ?, ?, ?, none</column>
+<column name="grp_pointwise_conv2d_fix_1_fu_715">pointwise_conv2d_fix_1, ?, ?, ?, ?, none</column>
+<column name="grp_up_sampling2d_fix16_fu_727">up_sampling2d_fix16, ?, ?, ?, ?, none</column>
+<column name="grp_up_sampling2d_fix16_1_fu_740">up_sampling2d_fix16_1, ?, ?, ?, ?, none</column>
+<column name="grp_padding2d_fix16_4_fu_753">padding2d_fix16_4, 1773, 1773, 1773, 1773, none</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- Loop 1">840, 840, 30, -, -, 28, no</column>
+<column name=" + Loop 1.1">28, 28, 1, -, -, 28, no</column>
+<column name="- Loop 2">?, ?, ?, -, -, ?, no</column>
+<column name=" + Loop 2.1">?, ?, ?, -, -, ?, no</column>
+<column name="  ++ Loop 2.1.1">?, ?, 4, -, -, ?, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="5">Name, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="DSP">-, -, -, -</column>
+<column name="Expression">-, -, 0, 719</column>
+<column name="FIFO">-, -, -, -</column>
+<column name="Instance">3, 96, 10382, 13775</column>
+<column name="Memory">98, -, 4, 26</column>
+<column name="Multiplexer">-, -, -, 1391</column>
+<column name="Register">-, -, 506, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200</specialColumn>
+<specialColumn name="Utilization (%)">36, 43, 10, 29</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="6">Instance, Module, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="grp_depthwise_conv2d_fix_fu_618">depthwise_conv2d_fix, 0, 5, 592, 733</column>
+<column name="grp_depthwise_conv2d_fix_1_fu_558">depthwise_conv2d_fix_1, 1, 5, 580, 730</column>
+<column name="grp_depthwise_conv2d_fix_2_fu_573">depthwise_conv2d_fix_2, 1, 5, 578, 730</column>
+<column name="grp_depthwise_conv2d_fix_3_fu_588">depthwise_conv2d_fix_3, 1, 5, 578, 730</column>
+<column name="grp_depthwise_conv2d_fix_4_fu_603">depthwise_conv2d_fix_4, 0, 5, 589, 746</column>
+<column name="grp_max_pooling2d_fix16_fu_702">max_pooling2d_fix16, 0, 4, 509, 666</column>
+<column name="grp_max_pooling2d_fix16_1_fu_633">max_pooling2d_fix16_1, 0, 4, 512, 666</column>
+<column name="network_AXILiteS_s_axi_U">network_AXILiteS_s_axi, 0, 0, 36, 40</column>
+<column name="grp_padding2d_fix16_fu_506">padding2d_fix16, 0, 7, 639, 1044</column>
+<column name="grp_padding2d_fix16_1_fu_532">padding2d_fix16_1, 0, 7, 639, 1044</column>
+<column name="grp_padding2d_fix16_2_fu_545">padding2d_fix16_2, 0, 7, 639, 1044</column>
+<column name="grp_padding2d_fix16_3_fu_519">padding2d_fix16_3, 0, 7, 639, 1044</column>
+<column name="grp_padding2d_fix16_4_fu_753">padding2d_fix16_4, 0, 2, 112, 435</column>
+<column name="grp_pointwise_conv2d_fix_fu_674">pointwise_conv2d_fix, 0, 5, 578, 640</column>
+<column name="grp_pointwise_conv2d_fix_1_fu_715">pointwise_conv2d_fix_1, 0, 5, 518, 634</column>
+<column name="grp_pointwise_conv2d_fix_2_fu_660">pointwise_conv2d_fix_2, 0, 5, 578, 639</column>
+<column name="grp_pointwise_conv2d_fix_3_fu_646">pointwise_conv2d_fix_3, 0, 5, 581, 641</column>
+<column name="grp_pointwise_conv2d_fix_4_fu_688">pointwise_conv2d_fix_4, 0, 5, 577, 639</column>
+<column name="grp_up_sampling2d_fix16_fu_727">up_sampling2d_fix16, 0, 4, 454, 465</column>
+<column name="grp_up_sampling2d_fix16_1_fu_740">up_sampling2d_fix16_1, 0, 4, 454, 465</column>
+</table>
+</item>
+<item name = "DSP48"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="9">Memory, Module, BRAM_18K, FF, LUT, Words, Bits, Banks, W*Bits*Banks</keys>
+<column name="MaxPooling2D_0_array_U">network_MaxPooling2D_0_array, 4, 0, 0, 3136, 16, 1, 50176</column>
+<column name="SeparableConv2D_1_m_s_U">network_MaxPooling2D_0_array, 4, 0, 0, 3136, 16, 1, 50176</column>
+<column name="SeparableConv2D_3_ar_U">network_MaxPooling2D_0_array, 4, 0, 0, 3136, 16, 1, 50176</column>
+<column name="MaxPooling2D_1_array_U">network_MaxPooling2D_1_array, 1, 0, 0, 392, 16, 1, 6272</column>
+<column name="SeparableConv2D_2_m_s_U">network_MaxPooling2D_1_array, 1, 0, 0, 392, 16, 1, 6272</column>
+<column name="SeparableConv2D_2_ar_U">network_MaxPooling2D_1_array, 1, 0, 0, 392, 16, 1, 6272</column>
+<column name="Padding2D_0_array_U">network_Padding2D_0_array, 1, 0, 0, 900, 16, 1, 14400</column>
+<column name="Padding2D_1_array_U">network_Padding2D_1_array, 4, 0, 0, 4096, 16, 1, 65536</column>
+<column name="Padding2D_2_array_U">network_Padding2D_2_array, 1, 0, 0, 648, 16, 1, 10368</column>
+<column name="Padding2D_3_array_U">network_Padding2D_3_array, 2, 0, 0, 2048, 16, 1, 32768</column>
+<column name="Padding2D_4_array_U">network_Padding2D_4_array, 16, 0, 0, 14400, 16, 1, 230400</column>
+<column name="SeparableConv2D_0_ar_U">network_SeparableConv2D_0_ar, 16, 0, 0, 12544, 16, 1, 200704</column>
+<column name="UpSampling2D_1_array_U">network_SeparableConv2D_0_ar, 16, 0, 0, 12544, 16, 1, 200704</column>
+<column name="SeparableConv2D_4_m_s_U">network_SeparableConv2D_0_ar, 16, 0, 0, 12544, 16, 1, 200704</column>
+<column name="SeparableConv2D_0_m_s_U">network_SeparableConv2D_0_m_s, 1, 0, 0, 784, 16, 1, 12544</column>
+<column name="SeparableConv2D_4_ar_U">network_SeparableConv2D_0_m_s, 1, 0, 0, 784, 16, 1, 12544</column>
+<column name="SeparableConv2D_1_ar_U">network_SeparableConv2D_1_ar, 2, 0, 0, 1568, 16, 1, 25088</column>
+<column name="UpSampling2D_0_array_U">network_SeparableConv2D_1_ar, 2, 0, 0, 1568, 16, 1, 25088</column>
+<column name="SeparableConv2D_3_m_s_U">network_SeparableConv2D_1_ar, 2, 0, 0, 1568, 16, 1, 25088</column>
+<column name="input_0_array_0_U">network_input_0_array_0, 1, 0, 0, 784, 16, 1, 12544</column>
+<column name="out_0_id_V_U">network_out_0_id_V, 0, 2, 13, 784, 1, 1, 784</column>
+<column name="out_0_dest_V_U">network_out_0_id_V, 0, 2, 13, 784, 1, 1, 784</column>
+<column name="out_0_keep_V_U">network_out_0_keep_V, 1, 0, 0, 784, 2, 1, 1568</column>
+<column name="out_0_strb_V_U">network_out_0_keep_V, 1, 0, 0, 784, 2, 1, 1568</column>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="7">Name, BRAM_18K, FF, LUT, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="depth_fu_1289_p2">+, 0, 0, 39, 32, 1</column>
+<column name="height_3_fu_1335_p2">+, 0, 0, 39, 32, 1</column>
+<column name="height_4_fu_1138_p2">+, 0, 0, 15, 5, 1</column>
+<column name="tmp_15_fu_1434_p2">+, 0, 0, 13, 11, 11</column>
+<column name="tmp_16_fu_1444_p2">+, 0, 0, 13, 11, 11</column>
+<column name="tmp_7_fu_1215_p2">+, 0, 0, 13, 11, 11</column>
+<column name="tmp_8_fu_1345_p2">+, 0, 0, 45, 38, 38</column>
+<column name="tmp_93_fu_1471_p2">+, 0, 0, 10, 2, 1</column>
+<column name="tmp_95_fu_1498_p2">+, 0, 0, 15, 5, 2</column>
+<column name="tmp_97_fu_1514_p2">+, 0, 0, 15, 5, 2</column>
+<column name="width_6_fu_1180_p2">+, 0, 0, 15, 5, 1</column>
+<column name="width_7_fu_1424_p2">+, 0, 0, 39, 32, 1</column>
+<column name="tmp_11_fu_1374_p2">-, 0, 0, 13, 11, 11</column>
+<column name="tmp_14_fu_1404_p2">-, 0, 0, 13, 11, 11</column>
+<column name="tmp_3_fu_1168_p2">-, 0, 0, 13, 11, 11</column>
+<column name="tmp_6_fu_1319_p2">-, 0, 0, 45, 38, 38</column>
+<column name="ap_block_state3">and, 0, 0, 2, 1, 1</column>
+<column name="ap_condition_1872">and, 0, 0, 2, 1, 1</column>
+<column name="input_data_V_data_V_0_load_A">and, 0, 0, 2, 1, 1</column>
+<column name="input_data_V_data_V_0_load_B">and, 0, 0, 2, 1, 1</column>
+<column name="input_data_V_dest_V_0_load_A">and, 0, 0, 2, 1, 1</column>
+<column name="input_data_V_dest_V_0_load_B">and, 0, 0, 2, 1, 1</column>
+<column name="input_data_V_id_V_0_load_A">and, 0, 0, 2, 1, 1</column>
+<column name="input_data_V_id_V_0_load_B">and, 0, 0, 2, 1, 1</column>
+<column name="input_data_V_keep_V_0_load_A">and, 0, 0, 2, 1, 1</column>
+<column name="input_data_V_keep_V_0_load_B">and, 0, 0, 2, 1, 1</column>
+<column name="input_data_V_strb_V_0_load_A">and, 0, 0, 2, 1, 1</column>
+<column name="input_data_V_strb_V_0_load_B">and, 0, 0, 2, 1, 1</column>
+<column name="output_data_V_data_V_1_load_A">and, 0, 0, 2, 1, 1</column>
+<column name="output_data_V_data_V_1_load_B">and, 0, 0, 2, 1, 1</column>
+<column name="output_data_V_dest_V_1_load_A">and, 0, 0, 2, 1, 1</column>
+<column name="output_data_V_dest_V_1_load_B">and, 0, 0, 2, 1, 1</column>
+<column name="output_data_V_id_V_1_load_A">and, 0, 0, 2, 1, 1</column>
+<column name="output_data_V_id_V_1_load_B">and, 0, 0, 2, 1, 1</column>
+<column name="output_data_V_keep_V_1_load_A">and, 0, 0, 2, 1, 1</column>
+<column name="output_data_V_keep_V_1_load_B">and, 0, 0, 2, 1, 1</column>
+<column name="output_data_V_last_V_1_load_A">and, 0, 0, 2, 1, 1</column>
+<column name="output_data_V_last_V_1_load_B">and, 0, 0, 2, 1, 1</column>
+<column name="output_data_V_strb_V_1_load_A">and, 0, 0, 2, 1, 1</column>
+<column name="output_data_V_strb_V_1_load_B">and, 0, 0, 2, 1, 1</column>
+<column name="output_data_V_user_V_1_load_A">and, 0, 0, 2, 1, 1</column>
+<column name="output_data_V_user_V_1_load_B">and, 0, 0, 2, 1, 1</column>
+<column name="exitcond2_fu_1132_p2">icmp, 0, 0, 11, 5, 4</column>
+<column name="exitcond_fu_1174_p2">icmp, 0, 0, 11, 5, 4</column>
+<column name="input_data_V_data_V_0_state_cmp_full">icmp, 0, 0, 8, 2, 1</column>
+<column name="input_data_V_dest_V_0_state_cmp_full">icmp, 0, 0, 8, 2, 1</column>
+<column name="input_data_V_id_V_0_state_cmp_full">icmp, 0, 0, 8, 2, 1</column>
+<column name="input_data_V_keep_V_0_state_cmp_full">icmp, 0, 0, 8, 2, 1</column>
+<column name="input_data_V_strb_V_0_state_cmp_full">icmp, 0, 0, 8, 2, 1</column>
+<column name="output_data_V_data_V_1_state_cmp_full">icmp, 0, 0, 8, 2, 1</column>
+<column name="output_data_V_dest_V_1_state_cmp_full">icmp, 0, 0, 8, 2, 1</column>
+<column name="output_data_V_id_V_1_state_cmp_full">icmp, 0, 0, 8, 2, 1</column>
+<column name="output_data_V_keep_V_1_state_cmp_full">icmp, 0, 0, 8, 2, 1</column>
+<column name="output_data_V_last_V_1_state_cmp_full">icmp, 0, 0, 8, 2, 1</column>
+<column name="output_data_V_strb_V_1_state_cmp_full">icmp, 0, 0, 8, 2, 1</column>
+<column name="output_data_V_user_V_1_state_cmp_full">icmp, 0, 0, 8, 2, 1</column>
+<column name="tmp_86_fu_1283_p2">icmp, 0, 0, 18, 32, 1</column>
+<column name="tmp_89_fu_1329_p2">icmp, 0, 0, 18, 32, 5</column>
+<column name="tmp_91_fu_1418_p2">icmp, 0, 0, 18, 32, 5</column>
+<column name="tmp_94_fu_1481_p2">icmp, 0, 0, 18, 32, 1</column>
+<column name="tmp_96_fu_1508_p2">icmp, 0, 0, 18, 32, 5</column>
+<column name="tmp_98_fu_1523_p2">icmp, 0, 0, 18, 32, 5</column>
+<column name="tmp_user_V_fu_1461_p2">icmp, 0, 0, 18, 32, 1</column>
+<column name="ap_block_state47">or, 0, 0, 2, 1, 1</column>
+<column name="ap_condition_1866">or, 0, 0, 2, 1, 1</column>
+<column name="tmp_92_fu_1455_p2">or, 0, 0, 32, 32, 32</column>
+<column name="tmp_fu_1449_p2">or, 0, 0, 32, 32, 32</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="MaxPooling2D_0_array_address0">15, 3, 12, 36</column>
+<column name="MaxPooling2D_0_array_ce0">15, 3, 1, 3</column>
+<column name="MaxPooling2D_0_array_we0">9, 2, 1, 2</column>
+<column name="MaxPooling2D_1_array_address0">15, 3, 9, 27</column>
+<column name="MaxPooling2D_1_array_ce0">15, 3, 1, 3</column>
+<column name="MaxPooling2D_1_array_we0">9, 2, 1, 2</column>
+<column name="Padding2D_0_array_address0">15, 3, 10, 30</column>
+<column name="Padding2D_0_array_ce0">15, 3, 1, 3</column>
+<column name="Padding2D_0_array_we0">9, 2, 1, 2</column>
+<column name="Padding2D_1_array_address0">15, 3, 12, 36</column>
+<column name="Padding2D_1_array_ce0">15, 3, 1, 3</column>
+<column name="Padding2D_1_array_we0">9, 2, 1, 2</column>
+<column name="Padding2D_2_array_address0">15, 3, 10, 30</column>
+<column name="Padding2D_2_array_ce0">15, 3, 1, 3</column>
+<column name="Padding2D_2_array_we0">9, 2, 1, 2</column>
+<column name="Padding2D_3_array_address0">15, 3, 11, 33</column>
+<column name="Padding2D_3_array_ce0">15, 3, 1, 3</column>
+<column name="Padding2D_3_array_we0">9, 2, 1, 2</column>
+<column name="Padding2D_4_array_address0">15, 3, 14, 42</column>
+<column name="Padding2D_4_array_ce0">15, 3, 1, 3</column>
+<column name="Padding2D_4_array_we0">9, 2, 1, 2</column>
+<column name="SeparableConv2D_0_ar_address0">15, 3, 14, 42</column>
+<column name="SeparableConv2D_0_ar_ce0">15, 3, 1, 3</column>
+<column name="SeparableConv2D_0_ar_we0">9, 2, 1, 2</column>
+<column name="SeparableConv2D_0_m_s_address0">15, 3, 10, 30</column>
+<column name="SeparableConv2D_0_m_s_ce0">15, 3, 1, 3</column>
+<column name="SeparableConv2D_0_m_s_we0">9, 2, 1, 2</column>
+<column name="SeparableConv2D_1_ar_address0">15, 3, 11, 33</column>
+<column name="SeparableConv2D_1_ar_ce0">15, 3, 1, 3</column>
+<column name="SeparableConv2D_1_ar_we0">9, 2, 1, 2</column>
+<column name="SeparableConv2D_1_m_s_address0">15, 3, 12, 36</column>
+<column name="SeparableConv2D_1_m_s_ce0">15, 3, 1, 3</column>
+<column name="SeparableConv2D_1_m_s_we0">9, 2, 1, 2</column>
+<column name="SeparableConv2D_2_ar_address0">15, 3, 9, 27</column>
+<column name="SeparableConv2D_2_ar_ce0">15, 3, 1, 3</column>
+<column name="SeparableConv2D_2_ar_we0">9, 2, 1, 2</column>
+<column name="SeparableConv2D_2_m_s_address0">15, 3, 9, 27</column>
+<column name="SeparableConv2D_2_m_s_ce0">15, 3, 1, 3</column>
+<column name="SeparableConv2D_2_m_s_we0">9, 2, 1, 2</column>
+<column name="SeparableConv2D_3_ar_address0">15, 3, 12, 36</column>
+<column name="SeparableConv2D_3_ar_ce0">15, 3, 1, 3</column>
+<column name="SeparableConv2D_3_ar_we0">9, 2, 1, 2</column>
+<column name="SeparableConv2D_3_m_s_address0">15, 3, 11, 33</column>
+<column name="SeparableConv2D_3_m_s_ce0">15, 3, 1, 3</column>
+<column name="SeparableConv2D_3_m_s_we0">9, 2, 1, 2</column>
+<column name="SeparableConv2D_4_ar_address0">15, 3, 10, 30</column>
+<column name="SeparableConv2D_4_ar_ce0">15, 3, 1, 3</column>
+<column name="SeparableConv2D_4_ar_we0">9, 2, 1, 2</column>
+<column name="SeparableConv2D_4_m_s_address0">15, 3, 14, 42</column>
+<column name="SeparableConv2D_4_m_s_ce0">15, 3, 1, 3</column>
+<column name="SeparableConv2D_4_m_s_we0">9, 2, 1, 2</column>
+<column name="UpSampling2D_0_array_address0">15, 3, 11, 33</column>
+<column name="UpSampling2D_0_array_ce0">15, 3, 1, 3</column>
+<column name="UpSampling2D_0_array_we0">9, 2, 1, 2</column>
+<column name="UpSampling2D_1_array_address0">15, 3, 14, 42</column>
+<column name="UpSampling2D_1_array_ce0">15, 3, 1, 3</column>
+<column name="UpSampling2D_1_array_we0">9, 2, 1, 2</column>
+<column name="ap_NS_fsm">209, 48, 1, 48</column>
+<column name="depth7_reg_454">9, 2, 32, 64</column>
+<column name="height8_reg_466">9, 2, 32, 64</column>
+<column name="height_reg_432">9, 2, 5, 10</column>
+<column name="input_0_array_0_address0">15, 3, 10, 30</column>
+<column name="input_0_array_0_ce0">15, 3, 1, 3</column>
+<column name="input_data_TDATA_blk_n">9, 2, 1, 2</column>
+<column name="input_data_V_data_V_0_data_out">9, 2, 16, 32</column>
+<column name="input_data_V_data_V_0_state">15, 3, 2, 6</column>
+<column name="input_data_V_dest_V_0_data_out">9, 2, 1, 2</column>
+<column name="input_data_V_dest_V_0_state">15, 3, 2, 6</column>
+<column name="input_data_V_id_V_0_data_out">9, 2, 1, 2</column>
+<column name="input_data_V_id_V_0_state">15, 3, 2, 6</column>
+<column name="input_data_V_keep_V_0_data_out">9, 2, 2, 4</column>
+<column name="input_data_V_keep_V_0_state">15, 3, 2, 6</column>
+<column name="input_data_V_strb_V_0_data_out">9, 2, 2, 4</column>
+<column name="input_data_V_strb_V_0_state">15, 3, 2, 6</column>
+<column name="out_0_dest_V_address0">15, 3, 10, 30</column>
+<column name="out_0_id_V_address0">15, 3, 10, 30</column>
+<column name="out_0_keep_V_address0">15, 3, 10, 30</column>
+<column name="out_0_strb_V_address0">15, 3, 10, 30</column>
+<column name="output_data_TDATA_blk_n">9, 2, 1, 2</column>
+<column name="output_data_V_data_V_1_data_out">9, 2, 16, 32</column>
+<column name="output_data_V_data_V_1_state">15, 3, 2, 6</column>
+<column name="output_data_V_dest_V_1_data_out">9, 2, 1, 2</column>
+<column name="output_data_V_dest_V_1_state">15, 3, 2, 6</column>
+<column name="output_data_V_id_V_1_data_out">9, 2, 1, 2</column>
+<column name="output_data_V_id_V_1_state">15, 3, 2, 6</column>
+<column name="output_data_V_keep_V_1_data_out">9, 2, 2, 4</column>
+<column name="output_data_V_keep_V_1_state">15, 3, 2, 6</column>
+<column name="output_data_V_last_V_1_data_out">9, 2, 1, 2</column>
+<column name="output_data_V_last_V_1_state">15, 3, 2, 6</column>
+<column name="output_data_V_strb_V_1_data_out">9, 2, 2, 4</column>
+<column name="output_data_V_strb_V_1_state">15, 3, 2, 6</column>
+<column name="output_data_V_user_V_1_data_out">9, 2, 1, 2</column>
+<column name="output_data_V_user_V_1_state">15, 3, 2, 6</column>
+<column name="width9_reg_478">9, 2, 32, 64</column>
+<column name="width_reg_443">9, 2, 5, 10</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="MaxPooling2D_0_depth">0, 0, 16, 16</column>
+<column name="MaxPooling2D_0_heigh">0, 0, 16, 16</column>
+<column name="MaxPooling2D_0_width">0, 0, 16, 16</column>
+<column name="MaxPooling2D_1_depth">0, 0, 16, 16</column>
+<column name="MaxPooling2D_1_heigh">0, 0, 16, 16</column>
+<column name="MaxPooling2D_1_width">0, 0, 16, 16</column>
+<column name="Padding2D_0_depth">0, 0, 16, 16</column>
+<column name="Padding2D_0_height">0, 0, 16, 16</column>
+<column name="Padding2D_0_width">0, 0, 16, 16</column>
+<column name="Padding2D_1_depth">0, 0, 16, 16</column>
+<column name="Padding2D_1_height">0, 0, 16, 16</column>
+<column name="Padding2D_1_width">0, 0, 16, 16</column>
+<column name="Padding2D_2_depth">0, 0, 16, 16</column>
+<column name="Padding2D_2_height">0, 0, 16, 16</column>
+<column name="Padding2D_2_width">0, 0, 16, 16</column>
+<column name="Padding2D_3_depth">0, 0, 16, 16</column>
+<column name="Padding2D_3_height">0, 0, 16, 16</column>
+<column name="Padding2D_3_width">0, 0, 16, 16</column>
+<column name="Padding2D_4_depth">0, 0, 16, 16</column>
+<column name="Padding2D_4_height">0, 0, 16, 16</column>
+<column name="Padding2D_4_width">0, 0, 16, 16</column>
+<column name="SeparableConv2D_0_de">0, 0, 16, 16</column>
+<column name="SeparableConv2D_0_he">0, 0, 16, 16</column>
+<column name="SeparableConv2D_0_wi">0, 0, 16, 16</column>
+<column name="SeparableConv2D_1_de">0, 0, 16, 16</column>
+<column name="SeparableConv2D_1_he">0, 0, 16, 16</column>
+<column name="SeparableConv2D_1_wi">0, 0, 16, 16</column>
+<column name="SeparableConv2D_2_de">0, 0, 16, 16</column>
+<column name="SeparableConv2D_2_he">0, 0, 16, 16</column>
+<column name="SeparableConv2D_2_wi">0, 0, 16, 16</column>
+<column name="SeparableConv2D_3_de">0, 0, 16, 16</column>
+<column name="SeparableConv2D_3_he">0, 0, 16, 16</column>
+<column name="SeparableConv2D_3_wi">0, 0, 16, 16</column>
+<column name="SeparableConv2D_4_de">0, 0, 16, 16</column>
+<column name="SeparableConv2D_4_he">0, 0, 16, 16</column>
+<column name="SeparableConv2D_4_wi">0, 0, 16, 16</column>
+<column name="UpSampling2D_0_depth">0, 0, 16, 16</column>
+<column name="UpSampling2D_0_heigh">0, 0, 16, 16</column>
+<column name="UpSampling2D_0_width">0, 0, 16, 16</column>
+<column name="UpSampling2D_1_depth">0, 0, 16, 16</column>
+<column name="UpSampling2D_1_heigh">0, 0, 16, 16</column>
+<column name="UpSampling2D_1_width">0, 0, 16, 16</column>
+<column name="ap_CS_fsm">47, 0, 47, 0</column>
+<column name="depth7_reg_454">32, 0, 32, 0</column>
+<column name="depth_reg_1625">32, 0, 32, 0</column>
+<column name="grp_depthwise_conv2d_fix_1_fu_558_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_depthwise_conv2d_fix_2_fu_573_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_depthwise_conv2d_fix_3_fu_588_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_depthwise_conv2d_fix_4_fu_603_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_depthwise_conv2d_fix_fu_618_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_max_pooling2d_fix16_1_fu_633_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_max_pooling2d_fix16_fu_702_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_padding2d_fix16_1_fu_532_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_padding2d_fix16_2_fu_545_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_padding2d_fix16_3_fu_519_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_padding2d_fix16_4_fu_753_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_padding2d_fix16_fu_506_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_pointwise_conv2d_fix_1_fu_715_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_pointwise_conv2d_fix_2_fu_660_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_pointwise_conv2d_fix_3_fu_646_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_pointwise_conv2d_fix_4_fu_688_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_pointwise_conv2d_fix_fu_674_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_up_sampling2d_fix16_1_fu_740_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_up_sampling2d_fix16_fu_727_ap_start_reg">1, 0, 1, 0</column>
+<column name="height8_reg_466">32, 0, 32, 0</column>
+<column name="height_3_reg_1638">32, 0, 32, 0</column>
+<column name="height_4_reg_1532">5, 0, 5, 0</column>
+<column name="height_reg_432">5, 0, 5, 0</column>
+<column name="input_data_V_data_V_0_payload_A">16, 0, 16, 0</column>
+<column name="input_data_V_data_V_0_payload_B">16, 0, 16, 0</column>
+<column name="input_data_V_data_V_0_sel_rd">1, 0, 1, 0</column>
+<column name="input_data_V_data_V_0_sel_wr">1, 0, 1, 0</column>
+<column name="input_data_V_data_V_0_state">2, 0, 2, 0</column>
+<column name="input_data_V_dest_V_0_payload_A">1, 0, 1, 0</column>
+<column name="input_data_V_dest_V_0_payload_B">1, 0, 1, 0</column>
+<column name="input_data_V_dest_V_0_sel_rd">1, 0, 1, 0</column>
+<column name="input_data_V_dest_V_0_sel_wr">1, 0, 1, 0</column>
+<column name="input_data_V_dest_V_0_state">2, 0, 2, 0</column>
+<column name="input_data_V_id_V_0_payload_A">1, 0, 1, 0</column>
+<column name="input_data_V_id_V_0_payload_B">1, 0, 1, 0</column>
+<column name="input_data_V_id_V_0_sel_rd">1, 0, 1, 0</column>
+<column name="input_data_V_id_V_0_sel_wr">1, 0, 1, 0</column>
+<column name="input_data_V_id_V_0_state">2, 0, 2, 0</column>
+<column name="input_data_V_keep_V_0_payload_A">2, 0, 2, 0</column>
+<column name="input_data_V_keep_V_0_payload_B">2, 0, 2, 0</column>
+<column name="input_data_V_keep_V_0_sel_rd">1, 0, 1, 0</column>
+<column name="input_data_V_keep_V_0_sel_wr">1, 0, 1, 0</column>
+<column name="input_data_V_keep_V_0_state">2, 0, 2, 0</column>
+<column name="input_data_V_strb_V_0_payload_A">2, 0, 2, 0</column>
+<column name="input_data_V_strb_V_0_payload_B">2, 0, 2, 0</column>
+<column name="input_data_V_strb_V_0_sel_rd">1, 0, 1, 0</column>
+<column name="input_data_V_strb_V_0_sel_wr">1, 0, 1, 0</column>
+<column name="input_data_V_strb_V_0_state">2, 0, 2, 0</column>
+<column name="output_data_V_data_V_1_payload_A">16, 0, 16, 0</column>
+<column name="output_data_V_data_V_1_payload_B">16, 0, 16, 0</column>
+<column name="output_data_V_data_V_1_sel_rd">1, 0, 1, 0</column>
+<column name="output_data_V_data_V_1_sel_wr">1, 0, 1, 0</column>
+<column name="output_data_V_data_V_1_state">2, 0, 2, 0</column>
+<column name="output_data_V_dest_V_1_payload_A">1, 0, 1, 0</column>
+<column name="output_data_V_dest_V_1_payload_B">1, 0, 1, 0</column>
+<column name="output_data_V_dest_V_1_sel_rd">1, 0, 1, 0</column>
+<column name="output_data_V_dest_V_1_sel_wr">1, 0, 1, 0</column>
+<column name="output_data_V_dest_V_1_state">2, 0, 2, 0</column>
+<column name="output_data_V_id_V_1_payload_A">1, 0, 1, 0</column>
+<column name="output_data_V_id_V_1_payload_B">1, 0, 1, 0</column>
+<column name="output_data_V_id_V_1_sel_rd">1, 0, 1, 0</column>
+<column name="output_data_V_id_V_1_sel_wr">1, 0, 1, 0</column>
+<column name="output_data_V_id_V_1_state">2, 0, 2, 0</column>
+<column name="output_data_V_keep_V_1_payload_A">2, 0, 2, 0</column>
+<column name="output_data_V_keep_V_1_payload_B">2, 0, 2, 0</column>
+<column name="output_data_V_keep_V_1_sel_rd">1, 0, 1, 0</column>
+<column name="output_data_V_keep_V_1_sel_wr">1, 0, 1, 0</column>
+<column name="output_data_V_keep_V_1_state">2, 0, 2, 0</column>
+<column name="output_data_V_last_V_1_payload_A">1, 0, 1, 0</column>
+<column name="output_data_V_last_V_1_payload_B">1, 0, 1, 0</column>
+<column name="output_data_V_last_V_1_sel_rd">1, 0, 1, 0</column>
+<column name="output_data_V_last_V_1_sel_wr">1, 0, 1, 0</column>
+<column name="output_data_V_last_V_1_state">2, 0, 2, 0</column>
+<column name="output_data_V_strb_V_1_payload_A">2, 0, 2, 0</column>
+<column name="output_data_V_strb_V_1_payload_B">2, 0, 2, 0</column>
+<column name="output_data_V_strb_V_1_sel_rd">1, 0, 1, 0</column>
+<column name="output_data_V_strb_V_1_sel_wr">1, 0, 1, 0</column>
+<column name="output_data_V_strb_V_1_state">2, 0, 2, 0</column>
+<column name="output_data_V_user_V_1_payload_A">1, 0, 1, 0</column>
+<column name="output_data_V_user_V_1_payload_B">1, 0, 1, 0</column>
+<column name="output_data_V_user_V_1_sel_rd">1, 0, 1, 0</column>
+<column name="output_data_V_user_V_1_sel_wr">1, 0, 1, 0</column>
+<column name="output_data_V_user_V_1_state">2, 0, 2, 0</column>
+<column name="reg_1000">0, 0, 16, 16</column>
+<column name="reg_1007">0, 0, 16, 16</column>
+<column name="reg_1014">0, 0, 16, 16</column>
+<column name="reg_1020">0, 0, 16, 16</column>
+<column name="reg_1026">0, 0, 16, 16</column>
+<column name="reg_1032">0, 0, 16, 16</column>
+<column name="reg_1038">0, 0, 16, 16</column>
+<column name="reg_1044">0, 0, 16, 16</column>
+<column name="reg_1051">0, 0, 16, 16</column>
+<column name="reg_1058">0, 0, 16, 16</column>
+<column name="reg_1064">0, 0, 16, 16</column>
+<column name="reg_1070">0, 0, 16, 16</column>
+<column name="reg_1076">0, 0, 16, 16</column>
+<column name="reg_1082">0, 0, 16, 16</column>
+<column name="reg_1088">0, 0, 16, 16</column>
+<column name="reg_1095">0, 0, 16, 16</column>
+<column name="reg_1102">0, 0, 16, 16</column>
+<column name="reg_1108">0, 0, 16, 16</column>
+<column name="reg_1114">0, 0, 16, 16</column>
+<column name="reg_1120">0, 0, 16, 16</column>
+<column name="reg_1126">0, 0, 16, 16</column>
+<column name="reg_950">0, 0, 16, 16</column>
+<column name="reg_956">0, 0, 16, 16</column>
+<column name="reg_963">0, 0, 16, 16</column>
+<column name="reg_970">0, 0, 16, 16</column>
+<column name="reg_976">0, 0, 16, 16</column>
+<column name="reg_982">0, 0, 16, 16</column>
+<column name="reg_988">0, 0, 16, 16</column>
+<column name="reg_994">0, 0, 16, 16</column>
+<column name="tmp_11_reg_1643">9, 0, 11, 2</column>
+<column name="tmp_14_reg_1648">9, 0, 11, 2</column>
+<column name="tmp_16_reg_1671">11, 0, 11, 0</column>
+<column name="tmp_3_reg_1537">9, 0, 11, 2</column>
+<column name="tmp_6_reg_1630">36, 0, 38, 2</column>
+<column name="tmp_93_cast_reg_1653">0, 0, 17, 17</column>
+<column name="tmp_94_reg_1681">1, 0, 1, 0</column>
+<column name="tmp_data_V_1_reg_1705">16, 0, 16, 0</column>
+<column name="tmp_last_V_reg_490">1, 0, 1, 0</column>
+<column name="tmp_user_V_reg_1676">1, 0, 1, 0</column>
+<column name="width9_reg_478">32, 0, 32, 0</column>
+<column name="width_7_reg_1661">32, 0, 32, 0</column>
+<column name="width_reg_443">5, 0, 5, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="s_axi_AXILiteS_AWVALID">in, 1, s_axi, AXILiteS, return void</column>
+<column name="s_axi_AXILiteS_AWREADY">out, 1, s_axi, AXILiteS, return void</column>
+<column name="s_axi_AXILiteS_AWADDR">in, 4, s_axi, AXILiteS, return void</column>
+<column name="s_axi_AXILiteS_WVALID">in, 1, s_axi, AXILiteS, return void</column>
+<column name="s_axi_AXILiteS_WREADY">out, 1, s_axi, AXILiteS, return void</column>
+<column name="s_axi_AXILiteS_WDATA">in, 32, s_axi, AXILiteS, return void</column>
+<column name="s_axi_AXILiteS_WSTRB">in, 4, s_axi, AXILiteS, return void</column>
+<column name="s_axi_AXILiteS_ARVALID">in, 1, s_axi, AXILiteS, return void</column>
+<column name="s_axi_AXILiteS_ARREADY">out, 1, s_axi, AXILiteS, return void</column>
+<column name="s_axi_AXILiteS_ARADDR">in, 4, s_axi, AXILiteS, return void</column>
+<column name="s_axi_AXILiteS_RVALID">out, 1, s_axi, AXILiteS, return void</column>
+<column name="s_axi_AXILiteS_RREADY">in, 1, s_axi, AXILiteS, return void</column>
+<column name="s_axi_AXILiteS_RDATA">out, 32, s_axi, AXILiteS, return void</column>
+<column name="s_axi_AXILiteS_RRESP">out, 2, s_axi, AXILiteS, return void</column>
+<column name="s_axi_AXILiteS_BVALID">out, 1, s_axi, AXILiteS, return void</column>
+<column name="s_axi_AXILiteS_BREADY">in, 1, s_axi, AXILiteS, return void</column>
+<column name="s_axi_AXILiteS_BRESP">out, 2, s_axi, AXILiteS, return void</column>
+<column name="ap_clk">in, 1, ap_ctrl_hs, network, return value</column>
+<column name="ap_rst_n">in, 1, ap_ctrl_hs, network, return value</column>
+<column name="interrupt">out, 1, ap_ctrl_hs, network, return value</column>
+<column name="input_data_TDATA">in, 16, axis, input_data_V_data_V, pointer</column>
+<column name="input_data_TVALID">in, 1, axis, input_data_V_dest_V, pointer</column>
+<column name="input_data_TREADY">out, 1, axis, input_data_V_dest_V, pointer</column>
+<column name="input_data_TDEST">in, 1, axis, input_data_V_dest_V, pointer</column>
+<column name="input_data_TKEEP">in, 2, axis, input_data_V_keep_V, pointer</column>
+<column name="input_data_TSTRB">in, 2, axis, input_data_V_strb_V, pointer</column>
+<column name="input_data_TUSER">in, 1, axis, input_data_V_user_V, pointer</column>
+<column name="input_data_TLAST">in, 1, axis, input_data_V_last_V, pointer</column>
+<column name="input_data_TID">in, 1, axis, input_data_V_id_V, pointer</column>
+<column name="output_data_TDATA">out, 16, axis, output_data_V_data_V, pointer</column>
+<column name="output_data_TREADY">in, 1, axis, output_data_V_data_V, pointer</column>
+<column name="output_data_TVALID">out, 1, axis, output_data_V_dest_V, pointer</column>
+<column name="output_data_TDEST">out, 1, axis, output_data_V_dest_V, pointer</column>
+<column name="output_data_TKEEP">out, 2, axis, output_data_V_keep_V, pointer</column>
+<column name="output_data_TSTRB">out, 2, axis, output_data_V_strb_V, pointer</column>
+<column name="output_data_TUSER">out, 1, axis, output_data_V_user_V, pointer</column>
+<column name="output_data_TLAST">out, 1, axis, output_data_V_last_V, pointer</column>
+<column name="output_data_TID">out, 1, axis, output_data_V_id_V, pointer</column>
+</table>
+</item>
+</section>
+
+<section name = "Critical Path" level="0">
+<item name = "Max Delay">6.32</item>
+<item name = "Critical Path Table"><table name="Critical Path Table" hasTotal="0">
+<keys size="15">Name, Operator, Delay, Accumulated Delay, Store Source, Resource, Core, Interface, Type, Port, Array, Scope, Pointer, Callee, Phi Node</keys>
+<column name="'tmp_97', mnist_AXI_Stream.cpp:154">add, 2.08, 2.08, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'tmp_104_cast', mnist_AXI_Stream.cpp:154">sext, 0.00, 2.08, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'tmp_98', mnist_AXI_Stream.cpp:154">icmp, 2.47, 4.55, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'tmp.last.V'">phi, 1.77, 6.32, -, -, -, -, -, -, -, -, -, -, </column>
+</table>
+</item>
+</section>
+</profile>

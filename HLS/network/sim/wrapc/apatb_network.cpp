@@ -1,5 +1,5 @@
 // ==============================================================
-// File generated on Mon Oct 28 14:13:39 JST 2019
+// File generated on Sat Nov 02 18:33:08 JST 2019
 // Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
 // SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 // IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
@@ -56,6 +56,56 @@ extern unsigned short UpSampling2D_0_depth;
 
 extern short UpSampling2D_0_array[8][14][14];
 
+extern unsigned short SeparableConv2D_4_width;
+
+extern short SeparableConv2D_4_m_array[16][28][28];
+
+extern unsigned short SeparableConv2D_4_height;
+
+extern unsigned short SeparableConv2D_4_depth;
+
+extern short SeparableConv2D_4_array[1][28][28];
+
+extern unsigned short SeparableConv2D_3_width;
+
+extern short SeparableConv2D_3_m_array[8][14][14];
+
+extern unsigned short SeparableConv2D_3_height;
+
+extern unsigned short SeparableConv2D_3_depth;
+
+extern short SeparableConv2D_3_array[16][14][14];
+
+extern unsigned short SeparableConv2D_2_width;
+
+extern short SeparableConv2D_2_m_array[8][7][7];
+
+extern unsigned short SeparableConv2D_2_height;
+
+extern unsigned short SeparableConv2D_2_depth;
+
+extern short SeparableConv2D_2_array[8][7][7];
+
+extern unsigned short SeparableConv2D_1_width;
+
+extern short SeparableConv2D_1_m_array[16][14][14];
+
+extern unsigned short SeparableConv2D_1_height;
+
+extern unsigned short SeparableConv2D_1_depth;
+
+extern short SeparableConv2D_1_array[8][14][14];
+
+extern unsigned short SeparableConv2D_0_width;
+
+extern short SeparableConv2D_0_m_array[1][28][28];
+
+extern unsigned short SeparableConv2D_0_height;
+
+extern unsigned short SeparableConv2D_0_depth;
+
+extern short SeparableConv2D_0_array[16][28][28];
+
 extern unsigned short Padding2D_4_width;
 
 extern unsigned short Padding2D_4_height;
@@ -111,46 +161,6 @@ extern unsigned short MaxPooling2D_0_height;
 extern unsigned short MaxPooling2D_0_depth;
 
 extern short MaxPooling2D_0_array[16][14][14];
-
-extern unsigned short Conv2D_4_width;
-
-extern unsigned short Conv2D_4_height;
-
-extern unsigned short Conv2D_4_depth;
-
-extern short Conv2D_4_array[1][28][28];
-
-extern unsigned short Conv2D_3_width;
-
-extern unsigned short Conv2D_3_height;
-
-extern unsigned short Conv2D_3_depth;
-
-extern short Conv2D_3_array[16][14][14];
-
-extern unsigned short Conv2D_2_width;
-
-extern unsigned short Conv2D_2_height;
-
-extern unsigned short Conv2D_2_depth;
-
-extern short Conv2D_2_array[8][7][7];
-
-extern unsigned short Conv2D_1_width;
-
-extern unsigned short Conv2D_1_height;
-
-extern unsigned short Conv2D_1_depth;
-
-extern short Conv2D_1_array[8][14][14];
-
-extern unsigned short Conv2D_0_width;
-
-extern unsigned short Conv2D_0_height;
-
-extern unsigned short Conv2D_0_depth;
-
-extern short Conv2D_0_array[16][28][28];
 
 
 
