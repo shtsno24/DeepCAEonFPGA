@@ -25,10 +25,12 @@ obj/mnist_AXI_Stream.o: ../../../../mnist_AXI_Stream.cpp \
  ../../../.././layers_c/up_sampling2d.h \
  ../../../.././layers_c/max_pooling2d.h ../../../.././layers_c/conv2d.h \
  ../../../.././layers_c/depthwise_conv2d.h \
+ ../../../.././layers_c/pointwise_conv2d.h \
+ ../../../.././layers_c/separable_conv2d.h \
  ../../../.././arrays_c/arrays_fix16.h \
  ../../../.././weights_c/weights_fix16.h \
- ../../../.././weights_c/Conv2D_0_fix16.h \
- ../../../.././weights_c/Conv2D_1_fix16.h \
- ../../../.././weights_c/Conv2D_2_fix16.h \
- ../../../.././weights_c/Conv2D_3_fix16.h \
- ../../../.././weights_c/Conv2D_4_fix16.h
+ ../../../.././weights_c/SeparableConv2D_0_fix16.h \
+ ../../../.././weights_c/SeparableConv2D_1_fix16.h \
+ ../../../.././weights_c/SeparableConv2D_2_fix16.h \
+ ../../../.././weights_c/SeparableConv2D_3_fix16.h \
+ ../../../.././weights_c/SeparableConv2D_4_fix16.h

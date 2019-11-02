@@ -157,6 +157,26 @@
 			<location>/home/masudalab/DeepCAEonFPGA/layers_c/padding2d.h</location>
 		</link>
 		<link>
+			<name>source/pointwise_conv2d.cpp</name>
+			<type>1</type>
+			<location>/home/masudalab/DeepCAEonFPGA/layers_c/pointwise_conv2d.cpp</location>
+		</link>
+		<link>
+			<name>source/pointwise_conv2d.h</name>
+			<type>1</type>
+			<location>/home/masudalab/DeepCAEonFPGA/layers_c/pointwise_conv2d.h</location>
+		</link>
+		<link>
+			<name>source/separable_conv2d.cpp</name>
+			<type>1</type>
+			<location>/home/masudalab/DeepCAEonFPGA/layers_c/separable_conv2d.cpp</location>
+		</link>
+		<link>
+			<name>source/separable_conv2d.h</name>
+			<type>1</type>
+			<location>/home/masudalab/DeepCAEonFPGA/layers_c/separable_conv2d.h</location>
+		</link>
+		<link>
 			<name>source/test_data.h</name>
 			<type>1</type>
 			<location>/home/masudalab/DeepCAEonFPGA/test_data/test_data.h</location>

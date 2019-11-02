@@ -1,40 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
   <source>
-    <originFiles name="weights_float32.h" path="/home/masudalab/DeepCAEonFPGA/weights_c/weights_float32.h"/>
-    <originFiles name="weights_fix16.h" path="/home/masudalab/DeepCAEonFPGA/weights_c/weights_fix16.h"/>
-    <originFiles name="up_sampling2d.h" path="/home/masudalab/DeepCAEonFPGA/layers_c/up_sampling2d.h"/>
-    <originFiles name="up_sampling2d.cpp" path="/home/masudalab/DeepCAEonFPGA/layers_c/up_sampling2d.cpp"/>
-    <originFiles name="test_data.h" path="/home/masudalab/DeepCAEonFPGA/test_data/test_data.h"/>
-    <originFiles name="padding2d.h" path="/home/masudalab/DeepCAEonFPGA/layers_c/padding2d.h"/>
-    <originFiles name="padding2d.cpp" path="/home/masudalab/DeepCAEonFPGA/layers_c/padding2d.cpp"/>
-    <originFiles name="mnist_AXI_Stream.h" path="/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.h"/>
-    <originFiles name="mnist_AXI_Stream.cpp" path="/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"/>
-    <originFiles name="max_pooling2d.h" path="/home/masudalab/DeepCAEonFPGA/layers_c/max_pooling2d.h"/>
-    <originFiles name="max_pooling2d.cpp" path="/home/masudalab/DeepCAEonFPGA/layers_c/max_pooling2d.cpp"/>
-    <originFiles name="layers.h" path="/home/masudalab/DeepCAEonFPGA/layers_c/layers.h"/>
-    <originFiles name="depthwise_conv2d.h" path="/home/masudalab/DeepCAEonFPGA/layers_c/depthwise_conv2d.h"/>
-    <originFiles name="depthwise_conv2d.cpp" path="/home/masudalab/DeepCAEonFPGA/layers_c/depthwise_conv2d.cpp"/>
-    <originFiles name="conv2d.h" path="/home/masudalab/DeepCAEonFPGA/layers_c/conv2d.h"/>
-    <originFiles name="conv2d.cpp" path="/home/masudalab/DeepCAEonFPGA/layers_c/conv2d.cpp"/>
-    <originFiles name="arrays_float32.h" path="/home/masudalab/DeepCAEonFPGA/arrays_c/arrays_float32.h"/>
-    <originFiles name="arrays_fix16.h" path="/home/masudalab/DeepCAEonFPGA/arrays_c/arrays_fix16.h"/>
-    <originFiles name="Conv2D_4_float32.h" path="/home/masudalab/DeepCAEonFPGA/weights_c/Conv2D_4_float32.h"/>
-    <originFiles name="Conv2D_4_fix16.h" path="/home/masudalab/DeepCAEonFPGA/weights_c/Conv2D_4_fix16.h"/>
-    <originFiles name="Conv2D_3_float32.h" path="/home/masudalab/DeepCAEonFPGA/weights_c/Conv2D_3_float32.h"/>
-    <originFiles name="Conv2D_3_fix16.h" path="/home/masudalab/DeepCAEonFPGA/weights_c/Conv2D_3_fix16.h"/>
-    <originFiles name="Conv2D_2_float32.h" path="/home/masudalab/DeepCAEonFPGA/weights_c/Conv2D_2_float32.h"/>
-    <originFiles name="Conv2D_2_fix16.h" path="/home/masudalab/DeepCAEonFPGA/weights_c/Conv2D_2_fix16.h"/>
-    <originFiles name="Conv2D_1_float32.h" path="/home/masudalab/DeepCAEonFPGA/weights_c/Conv2D_1_float32.h"/>
-    <originFiles name="Conv2D_1_fix16.h" path="/home/masudalab/DeepCAEonFPGA/weights_c/Conv2D_1_fix16.h"/>
-    <originFiles name="Conv2D_0_float32.h" path="/home/masudalab/DeepCAEonFPGA/weights_c/Conv2D_0_float32.h"/>
     <originFiles name="Conv2D_0_fix16.h" path="/home/masudalab/DeepCAEonFPGA/weights_c/Conv2D_0_fix16.h"/>
+    <originFiles name="Conv2D_0_float32.h" path="/home/masudalab/DeepCAEonFPGA/weights_c/Conv2D_0_float32.h"/>
+    <originFiles name="Conv2D_1_fix16.h" path="/home/masudalab/DeepCAEonFPGA/weights_c/Conv2D_1_fix16.h"/>
+    <originFiles name="Conv2D_1_float32.h" path="/home/masudalab/DeepCAEonFPGA/weights_c/Conv2D_1_float32.h"/>
+    <originFiles name="Conv2D_2_fix16.h" path="/home/masudalab/DeepCAEonFPGA/weights_c/Conv2D_2_fix16.h"/>
+    <originFiles name="Conv2D_2_float32.h" path="/home/masudalab/DeepCAEonFPGA/weights_c/Conv2D_2_float32.h"/>
+    <originFiles name="Conv2D_3_fix16.h" path="/home/masudalab/DeepCAEonFPGA/weights_c/Conv2D_3_fix16.h"/>
+    <originFiles name="Conv2D_3_float32.h" path="/home/masudalab/DeepCAEonFPGA/weights_c/Conv2D_3_float32.h"/>
+    <originFiles name="Conv2D_4_fix16.h" path="/home/masudalab/DeepCAEonFPGA/weights_c/Conv2D_4_fix16.h"/>
+    <originFiles name="Conv2D_4_float32.h" path="/home/masudalab/DeepCAEonFPGA/weights_c/Conv2D_4_float32.h"/>
+    <originFiles name="arrays_fix16.h" path="/home/masudalab/DeepCAEonFPGA/arrays_c/arrays_fix16.h"/>
+    <originFiles name="arrays_float32.h" path="/home/masudalab/DeepCAEonFPGA/arrays_c/arrays_float32.h"/>
+    <originFiles name="conv2d.cpp" path="/home/masudalab/DeepCAEonFPGA/layers_c/conv2d.cpp"/>
+    <originFiles name="conv2d.h" path="/home/masudalab/DeepCAEonFPGA/layers_c/conv2d.h"/>
+    <originFiles name="depthwise_conv2d.h" path="/home/masudalab/DeepCAEonFPGA/layers_c/depthwise_conv2d.h"/>
+    <originFiles name="layers.h" path="/home/masudalab/DeepCAEonFPGA/layers_c/layers.h"/>
+    <originFiles name="max_pooling2d.cpp" path="/home/masudalab/DeepCAEonFPGA/layers_c/max_pooling2d.cpp"/>
+    <originFiles name="max_pooling2d.h" path="/home/masudalab/DeepCAEonFPGA/layers_c/max_pooling2d.h"/>
+    <originFiles name="mnist_AXI_Stream.cpp" path="/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"/>
+    <originFiles name="mnist_AXI_Stream.h" path="/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.h"/>
+    <originFiles name="padding2d.cpp" path="/home/masudalab/DeepCAEonFPGA/layers_c/padding2d.cpp"/>
+    <originFiles name="padding2d.h" path="/home/masudalab/DeepCAEonFPGA/layers_c/padding2d.h"/>
+    <originFiles name="test_data.h" path="/home/masudalab/DeepCAEonFPGA/test_data/test_data.h"/>
+    <originFiles name="up_sampling2d.cpp" path="/home/masudalab/DeepCAEonFPGA/layers_c/up_sampling2d.cpp"/>
+    <originFiles name="up_sampling2d.h" path="/home/masudalab/DeepCAEonFPGA/layers_c/up_sampling2d.h"/>
+    <originFiles name="weights_fix16.h" path="/home/masudalab/DeepCAEonFPGA/weights_c/weights_fix16.h"/>
+    <originFiles name="weights_float32.h" path="/home/masudalab/DeepCAEonFPGA/weights_c/weights_float32.h"/>
+    <originFiles name="depthwise_conv2d.cpp" path="/home/masudalab/DeepCAEonFPGA/layers_c/depthwise_conv2d.cpp"/>
+    <originFiles name="pointwise_conv2d.cpp" path="/home/masudalab/DeepCAEonFPGA/layers_c/pointwise_conv2d.cpp"/>
+    <originFiles name="pointwise_conv2d.h" path="/home/masudalab/DeepCAEonFPGA/layers_c/pointwise_conv2d.h"/>
+    <originFiles name="separable_conv2d.cpp" path="/home/masudalab/DeepCAEonFPGA/layers_c/separable_conv2d.cpp"/>
+    <originFiles name="separable_conv2d.h" path="/home/masudalab/DeepCAEonFPGA/layers_c/separable_conv2d.h"/>
   </source>
   <testbench>
-    <originFiles name="mnist_AXI_Stream_tb.cpp" path="/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream_tb.cpp"/>
-    <originFiles name="array_printf_float32.h" path="/home/masudalab/DeepCAEonFPGA/layers_cpp/array_printf_float32.h"/>
-    <originFiles name="array_printf_float32.cpp" path="/home/masudalab/DeepCAEonFPGA/layers_cpp/array_printf_float32.cpp"/>
-    <originFiles name="array_printf_fix16.h" path="/home/masudalab/DeepCAEonFPGA/layers_cpp/array_printf_fix16.h"/>
     <originFiles name="array_printf_fix16.cpp" path="/home/masudalab/DeepCAEonFPGA/layers_cpp/array_printf_fix16.cpp"/>
+    <originFiles name="array_printf_fix16.h" path="/home/masudalab/DeepCAEonFPGA/layers_cpp/array_printf_fix16.h"/>
+    <originFiles name="array_printf_float32.cpp" path="/home/masudalab/DeepCAEonFPGA/layers_cpp/array_printf_float32.cpp"/>
+    <originFiles name="array_printf_float32.h" path="/home/masudalab/DeepCAEonFPGA/layers_cpp/array_printf_float32.h"/>
+    <originFiles name="mnist_AXI_Stream_tb.cpp" path="/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream_tb.cpp"/>
   </testbench>
 </autopilotfilemapping:AutoPilotFileMapping>

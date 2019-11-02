@@ -50,68 +50,69 @@ void network(axis &input_data, axis &output_data){
 	input_0_depth, input_0_height, input_0_width, (int16_t*) input_0_array,
 	Padding2D_0_height, Padding2D_0_width, (int16_t*) Padding2D_0_array);
 
-	conv2d_fix16(Padding2D_0_depth, Padding2D_0_height, Padding2D_0_width, (int16_t*) Padding2D_0_array,
-	Conv2D_0_depth, Conv2D_0_height, Conv2D_0_width, (int16_t*) Conv2D_0_array,
-	(int16_t*) Conv2D_0_b,
-	3, 3, (int16_t*) Conv2D_0_w, 1, fractal_width_Conv2D_0);
+	separable_conv2d_fix16(Padding2D_0_depth, Padding2D_0_height, Padding2D_0_width, (int16_t*) Padding2D_0_array,
+	SeparableConv2D_0_depth, SeparableConv2D_0_height, SeparableConv2D_0_width, (int16_t*) SeparableConv2D_0_array,
+	(int16_t*) SeparableConv2D_0_b_d, (int16_t*) SeparableConv2D_0_b_p,
+	3, 3, (int16_t*) SeparableConv2D_0_w_d, (int16_t*) SeparableConv2D_0_w_p, 1, fractal_width_SeparableConv2D_0);
 
 	max_pooling2d_fix16(2,
-	Conv2D_0_depth, Conv2D_0_height, Conv2D_0_width, (int16_t*) Conv2D_0_array,
+	SeparableConv2D_0_depth, SeparableConv2D_0_height, SeparableConv2D_0_width, (int16_t*) SeparableConv2D_0_array,
 	MaxPooling2D_0_depth, MaxPooling2D_0_height, MaxPooling2D_0_width, (int16_t*) MaxPooling2D_0_array);
 
 	padding2d_fix16(1, 1,
 	MaxPooling2D_0_depth, MaxPooling2D_0_height, MaxPooling2D_0_width, (int16_t*) MaxPooling2D_0_array,
 	Padding2D_1_height, Padding2D_1_width, (int16_t*) Padding2D_1_array);
 
-	conv2d_fix16(Padding2D_1_depth, Padding2D_1_height, Padding2D_1_width, (int16_t*) Padding2D_1_array,
-	Conv2D_1_depth, Conv2D_1_height, Conv2D_1_width, (int16_t*) Conv2D_1_array,
-	(int16_t*) Conv2D_1_b,
-	3, 3, (int16_t*) Conv2D_1_w, 1, fractal_width_Conv2D_1);
+	separable_conv2d_fix16(Padding2D_1_depth, Padding2D_1_height, Padding2D_1_width, (int16_t*) Padding2D_1_array,
+	SeparableConv2D_1_depth, SeparableConv2D_1_height, SeparableConv2D_1_width, (int16_t*) SeparableConv2D_1_array,
+	(int16_t*) SeparableConv2D_1_b_d, (int16_t*) SeparableConv2D_1_b_p,
+	3, 3, (int16_t*) SeparableConv2D_1_w_d, (int16_t*) SeparableConv2D_1_w_p, 1, fractal_width_SeparableConv2D_1);
 
 	max_pooling2d_fix16(2,
-	Conv2D_1_depth, Conv2D_1_height, Conv2D_1_width, (int16_t*) Conv2D_1_array,
+	SeparableConv2D_1_depth, SeparableConv2D_1_height, SeparableConv2D_1_width, (int16_t*) SeparableConv2D_1_array,
 	MaxPooling2D_1_depth, MaxPooling2D_1_height, MaxPooling2D_1_width, (int16_t*) MaxPooling2D_1_array);
 
 	padding2d_fix16(1, 1,
 	MaxPooling2D_1_depth, MaxPooling2D_1_height, MaxPooling2D_1_width, (int16_t*) MaxPooling2D_1_array,
 	Padding2D_2_height, Padding2D_2_width, (int16_t*) Padding2D_2_array);
 
-	conv2d_fix16(Padding2D_2_depth, Padding2D_2_height, Padding2D_2_width, (int16_t*) Padding2D_2_array,
-	Conv2D_2_depth, Conv2D_2_height, Conv2D_2_width, (int16_t*) Conv2D_2_array,
-	(int16_t*) Conv2D_2_b,
-	3, 3, (int16_t*) Conv2D_2_w, 1, fractal_width_Conv2D_2);
+	separable_conv2d_fix16(Padding2D_2_depth, Padding2D_2_height, Padding2D_2_width, (int16_t*) Padding2D_2_array,
+	SeparableConv2D_2_depth, SeparableConv2D_2_height, SeparableConv2D_2_width, (int16_t*) SeparableConv2D_2_array,
+	(int16_t*) SeparableConv2D_2_b_d, (int16_t*) SeparableConv2D_2_b_p,
+	3, 3, (int16_t*) SeparableConv2D_2_w_d, (int16_t*) SeparableConv2D_2_w_p, 1, fractal_width_SeparableConv2D_2);
 
 	up_sampling2d_fix16(2,
-	Conv2D_2_depth, Conv2D_2_height, Conv2D_2_width, (int16_t*) Conv2D_2_array,
+	SeparableConv2D_2_depth, SeparableConv2D_2_height, SeparableConv2D_2_width, (int16_t*) SeparableConv2D_2_array,
 	UpSampling2D_0_depth, UpSampling2D_0_height, UpSampling2D_0_width, (int16_t*) UpSampling2D_0_array);
 
 	padding2d_fix16(1, 1,
 	UpSampling2D_0_depth, UpSampling2D_0_height, UpSampling2D_0_width, (int16_t*) UpSampling2D_0_array,
 	Padding2D_3_height, Padding2D_3_width, (int16_t*) Padding2D_3_array);
 
-	conv2d_fix16(Padding2D_3_depth, Padding2D_3_height, Padding2D_3_width, (int16_t*) Padding2D_3_array,
-	Conv2D_3_depth, Conv2D_3_height, Conv2D_3_width, (int16_t*) Conv2D_3_array,
-	(int16_t*) Conv2D_3_b,
-	3, 3, (int16_t*) Conv2D_3_w, 1, fractal_width_Conv2D_3);
+	separable_conv2d_fix16(Padding2D_3_depth, Padding2D_3_height, Padding2D_3_width, (int16_t*) Padding2D_3_array,
+	SeparableConv2D_3_depth, SeparableConv2D_3_height, SeparableConv2D_3_width, (int16_t*) SeparableConv2D_3_array,
+	(int16_t*) SeparableConv2D_3_b_d, (int16_t*) SeparableConv2D_3_b_p,
+	3, 3, (int16_t*) SeparableConv2D_3_w_d, (int16_t*) SeparableConv2D_3_w_p, 1, fractal_width_SeparableConv2D_3);
 
 	up_sampling2d_fix16(2,
-	Conv2D_3_depth, Conv2D_3_height, Conv2D_3_width, (int16_t*) Conv2D_3_array,
+	SeparableConv2D_3_depth, SeparableConv2D_3_height, SeparableConv2D_3_width, (int16_t*) SeparableConv2D_3_array,
 	UpSampling2D_1_depth, UpSampling2D_1_height, UpSampling2D_1_width, (int16_t*) UpSampling2D_1_array);
 
 	padding2d_fix16(1, 1,
 	UpSampling2D_1_depth, UpSampling2D_1_height, UpSampling2D_1_width, (int16_t*) UpSampling2D_1_array,
 	Padding2D_4_height, Padding2D_4_width, (int16_t*) Padding2D_4_array);
 
-	conv2d_fix16(Padding2D_4_depth, Padding2D_4_height, Padding2D_4_width, (int16_t*) Padding2D_4_array,
-	Conv2D_4_depth, Conv2D_4_height, Conv2D_4_width, (int16_t*) Conv2D_4_array,
-	(int16_t*) Conv2D_4_b,
-	3, 3, (int16_t*) Conv2D_4_w, 1, fractal_width_Conv2D_4);
+	separable_conv2d_fix16(Padding2D_4_depth, Padding2D_4_height, Padding2D_4_width, (int16_t*) Padding2D_4_array,
+	SeparableConv2D_4_depth, SeparableConv2D_4_height, SeparableConv2D_4_width, (int16_t*) SeparableConv2D_4_array,
+	(int16_t*) SeparableConv2D_4_b_d, (int16_t*) SeparableConv2D_4_b_p,
+	3, 3, (int16_t*) SeparableConv2D_4_w_d, (int16_t*) SeparableConv2D_4_w_p, 1, fractal_width_SeparableConv2D_4);
 
-	for(int depth = 0; depth < Conv2D_4_depth; depth++){
-		for(int height = 0; height < Conv2D_4_height; height++){
-			for(int width = 0; width < Conv2D_4_width; width++){
 
-				out[depth][height][width].data = (int16_t)Conv2D_4_array[depth][height][width];
+	for(int depth = 0; depth < SeparableConv2D_4_depth; depth++){
+		for(int height = 0; height < SeparableConv2D_4_height; height++){
+			for(int width = 0; width < SeparableConv2D_4_width; width++){
+
+				out[depth][height][width].data = (int16_t)SeparableConv2D_4_array[depth][height][width];
 
 				if(depth == 0 && height == 0 && width == 0){
 					out[depth][height][width].user = 1;
@@ -119,9 +120,9 @@ void network(axis &input_data, axis &output_data){
 					out[depth][height][width].user = 0;
 				}
 
-				if((depth == Conv2D_4_depth-1) &&
-					(height == Conv2D_4_height-1) &&
-					(width == Conv2D_4_width-1)){
+				if((depth == SeparableConv2D_4_depth-1) &&
+					(height == SeparableConv2D_4_height-1) &&
+					(width == SeparableConv2D_4_width-1)){
 
 					out[depth][height][width].last = 1;
 				} else {

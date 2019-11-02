@@ -1,5 +1,5 @@
 # ==============================================================
-# File generated on Mon Oct 28 11:31:06 JST 2019
+# File generated on Sat Nov 02 15:29:01 JST 2019
 # Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
@@ -21,7 +21,7 @@ __SIM_DDS__ = 1
 
 ObjDir = obj
 
-HLS_SOURCES = ../../../../layers_cpp/array_printf_fix16.cpp ../../../../layers_cpp/array_printf_float32.cpp ../../../../mnist_AXI_Stream_tb.cpp ../../../../layers_c/conv2d.cpp ../../../../layers_c/depthwise_conv2d.cpp ../../../../layers_c/max_pooling2d.cpp ../../../../mnist_AXI_Stream.cpp ../../../../layers_c/padding2d.cpp ../../../../layers_c/up_sampling2d.cpp
+HLS_SOURCES = ../../../../layers_cpp/array_printf_fix16.cpp ../../../../layers_cpp/array_printf_float32.cpp ../../../../mnist_AXI_Stream_tb.cpp ../../../../layers_c/conv2d.cpp ../../../../layers_c/depthwise_conv2d.cpp ../../../../layers_c/max_pooling2d.cpp ../../../../mnist_AXI_Stream.cpp ../../../../layers_c/padding2d.cpp ../../../../layers_c/pointwise_conv2d.cpp ../../../../layers_c/separable_conv2d.cpp ../../../../layers_c/up_sampling2d.cpp
 
 TARGET := csim.exe
 
@@ -121,6 +121,18 @@ $(ObjDir)/padding2d.o: ../../../../layers_c/padding2d.cpp $(ObjDir)/.dir
 	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
 -include $(ObjDir)/padding2d.d
+
+$(ObjDir)/pointwise_conv2d.o: ../../../../layers_c/pointwise_conv2d.cpp $(ObjDir)/.dir
+	$(Echo) "   Compiling ../../../../layers_c/pointwise_conv2d.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
+	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
+
+-include $(ObjDir)/pointwise_conv2d.d
+
+$(ObjDir)/separable_conv2d.o: ../../../../layers_c/separable_conv2d.cpp $(ObjDir)/.dir
+	$(Echo) "   Compiling ../../../../layers_c/separable_conv2d.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
+	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
+
+-include $(ObjDir)/separable_conv2d.d
 
 $(ObjDir)/up_sampling2d.o: ../../../../layers_c/up_sampling2d.cpp $(ObjDir)/.dir
 	$(Echo) "   Compiling ../../../../layers_c/up_sampling2d.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
