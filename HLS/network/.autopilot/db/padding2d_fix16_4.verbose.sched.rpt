@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'padding2d_fix16_4'
 ================================================================
-* Date:           Sat Nov  2 18:43:03 2019
+* Date:           Thu Nov  7 15:54:40 2019
 
 * Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
 * Project:        HLS
@@ -20,7 +20,7 @@
     +--------+-------+----------+------------+
     |  Clock | Target| Estimated| Uncertainty|
     +--------+-------+----------+------------+
-    |ap_clk  |  10.00|     6.673|        1.25|
+    |ap_clk  |  10.00|     6.508|        1.25|
     +--------+-------+----------+------------+
 
 + Latency (clock cycles): 
@@ -37,17 +37,17 @@
         N/A
 
         * Loop: 
-        +-------------+------+------+----------+-----------+-----------+------+----------+
-        |             |   Latency   | Iteration|  Initiation Interval  | Trip |          |
-        |  Loop Name  |  min |  max |  Latency |  achieved |   target  | Count| Pipelined|
-        +-------------+------+------+----------+-----------+-----------+------+----------+
-        |- Loop 1     |    30|    30|         1|          -|          -|    30|    no    |
-        |- Loop 2     |  1708|  1708|        61|          -|          -|    28|    no    |
-        | + Loop 2.1  |    56|    56|         2|          -|          -|    28|    no    |
-        | + Loop 2.2  |     1|     1|         1|          -|          -|     1|    no    |
-        |- Loop 3     |    32|    32|        32|          -|          -|     1|    no    |
-        | + Loop 3.1  |    30|    30|         1|          -|          -|    30|    no    |
-        +-------------+------+------+----------+-----------+-----------+------+----------+
+        +-----------------+------+------+----------+-----------+-----------+------+----------+
+        |                 |   Latency   | Iteration|  Initiation Interval  | Trip |          |
+        |    Loop Name    |  min |  max |  Latency |  achieved |   target  | Count| Pipelined|
+        +-----------------+------+------+----------+-----------+-----------+------+----------+
+        |- Loop 1         |  1772|  1772|      1772|          -|          -|     1|    no    |
+        | + Loop 1.1      |    29|    29|         1|          -|          -|    29|    no    |
+        | + Loop 1.2      |  1708|  1708|        61|          -|          -|    28|    no    |
+        |  ++ Loop 1.2.1  |     2|     2|         1|          -|          -|     2|    no    |
+        |  ++ Loop 1.2.2  |    56|    56|         2|          -|          -|    28|    no    |
+        | + Loop 1.3      |    31|    31|         1|          -|          -|    31|    no    |
+        +-----------------+------+------+----------+-----------+-----------+------+----------+
 
 ============================================================
 + Verbose Summary: Synthesis Manager
@@ -75,7 +75,7 @@ IsGatedGlobalClock: 0
 ============================================================
 + Verbose Summary: Schedule
 ============================================================
-* Number of FSM states : 9
+* Number of FSM states : 8
 * Pipeline : 0
 * Dataflow Pipeline: 0
 
@@ -83,134 +83,131 @@ IsGatedGlobalClock: 0
 1 --> 
 	2  / true
 2 --> 
-	2  / (!exitcond1)
-	3  / (exitcond1)
+	3  / (!depth)
 3 --> 
-	4  / (!exitcond9)
-	8  / (exitcond9)
+	3  / (!exitcond8)
+	4  / (exitcond8)
 4 --> 
-	5  / true
+	5  / (!exitcond2)
+	8  / (exitcond2)
 5 --> 
-	6  / (!exitcond8)
-	7  / (exitcond8)
+	5  / (!exitcond3)
+	6  / (exitcond3)
 6 --> 
-	5  / true
+	7  / (!exitcond)
+	4  / (exitcond)
 7 --> 
-	7  / (!exitcond7)
-	3  / (exitcond7)
+	6  / true
 8 --> 
-	9  / (!exitcond6)
-9 --> 
-	9  / (!exitcond)
-	8  / (exitcond)
+	8  / (!exitcond5)
+	2  / (exitcond5)
 
 * FSM state operations: 
 
 State 1 <SV = 0> <Delay = 1.76>
-ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%output_width_read = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %output_width)" [layers_c/padding2d.cpp:6]   --->   Operation 10 'read' 'output_width_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%tmp_41_cast = zext i16 %output_width_read to i21" [layers_c/padding2d.cpp:40]   --->   Operation 11 'zext' 'tmp_41_cast' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 1, i64 1, i64 1)"   --->   Operation 12 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 13 [1/1] (1.76ns)   --->   "br label %.preheader6.0" [layers_c/padding2d.cpp:42]   --->   Operation 13 'br' <Predicate = true> <Delay = 1.76>
+ST_1 : Operation 9 [1/1] (1.76ns)   --->   "br label %1" [layers_c/padding2d.cpp:12]   --->   Operation 9 'br' <Predicate = true> <Delay = 1.76>
 
-State 2 <SV = 1> <Delay = 3.25>
-ST_2 : Operation 14 [1/1] (0.00ns)   --->   "%width = phi i5 [ %width_1, %0 ], [ 0, %.preheader7.preheader.critedge ]" [layers_c/padding2d.cpp:43]   --->   Operation 14 'phi' 'width' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 15 [1/1] (0.00ns)   --->   "%empty_9 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 30, i64 30, i64 30)"   --->   Operation 15 'speclooptripcount' 'empty_9' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 16 [1/1] (1.36ns)   --->   "%exitcond1 = icmp eq i5 %width, -2" [layers_c/padding2d.cpp:42]   --->   Operation 16 'icmp' 'exitcond1' <Predicate = true> <Delay = 1.36> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.36> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 17 [1/1] (1.78ns)   --->   "%width_1 = add i5 %width, 1" [layers_c/padding2d.cpp:43]   --->   Operation 17 'add' 'width_1' <Predicate = true> <Delay = 1.78> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.65> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 18 [1/1] (0.00ns)   --->   "br i1 %exitcond1, label %.preheader5.preheader, label %0" [layers_c/padding2d.cpp:42]   --->   Operation 18 'br' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%tmp_s = zext i5 %width to i64" [layers_c/padding2d.cpp:45]   --->   Operation 19 'zext' 'tmp_s' <Predicate = (!exitcond1)> <Delay = 0.00>
-ST_2 : Operation 20 [1/1] (0.00ns)   --->   "%output_addr = getelementptr [900 x i16]* %output_r, i64 0, i64 %tmp_s" [layers_c/padding2d.cpp:45]   --->   Operation 20 'getelementptr' 'output_addr' <Predicate = (!exitcond1)> <Delay = 0.00>
-ST_2 : Operation 21 [1/1] (3.25ns)   --->   "store i16 0, i16* %output_addr, align 2" [layers_c/padding2d.cpp:45]   --->   Operation 21 'store' <Predicate = (!exitcond1)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 900> <RAM>
-ST_2 : Operation 22 [1/1] (0.00ns)   --->   "br label %.preheader6.0" [layers_c/padding2d.cpp:43]   --->   Operation 22 'br' <Predicate = (!exitcond1)> <Delay = 0.00>
-ST_2 : Operation 23 [1/1] (1.76ns)   --->   "br label %.preheader5"   --->   Operation 23 'br' <Predicate = (exitcond1)> <Delay = 1.76>
+State 2 <SV = 1> <Delay = 1.76>
+ST_2 : Operation 10 [1/1] (0.00ns)   --->   "%indvars_iv6 = phi i8 [ %indvars_iv_next7, %13 ], [ 29, %0 ]" [layers_c/padding2d.cpp:12]   --->   Operation 10 'phi' 'indvars_iv6' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 11 [1/1] (0.00ns)   --->   "%indvars_iv3 = phi i11 [ %indvars_iv_next4, %13 ], [ 900, %0 ]" [layers_c/padding2d.cpp:12]   --->   Operation 11 'phi' 'indvars_iv3' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 12 [1/1] (0.00ns)   --->   "%indvars_iv = phi i8 [ %indvars_iv_next, %13 ], [ 31, %0 ]" [layers_c/padding2d.cpp:12]   --->   Operation 12 'phi' 'indvars_iv' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 13 [1/1] (0.00ns)   --->   "%o_count = phi i8 [ %tmp_40, %13 ], [ 0, %0 ]" [layers_c/padding2d.cpp:15]   --->   Operation 13 'phi' 'o_count' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 14 [1/1] (0.00ns)   --->   "%i_count = phi i9 [ %i_count_3, %13 ], [ 0, %0 ]"   --->   Operation 14 'phi' 'i_count' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 15 [1/1] (0.00ns)   --->   "%depth = phi i1 [ true, %13 ], [ false, %0 ]"   --->   Operation 15 'phi' 'depth' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 16 [1/1] (0.00ns)   --->   "%indvars_iv6_cast7 = sext i8 %indvars_iv6 to i10" [layers_c/padding2d.cpp:12]   --->   Operation 16 'sext' 'indvars_iv6_cast7' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 17 [1/1] (0.00ns)   --->   "%indvars_iv_cast = sext i8 %indvars_iv to i10" [layers_c/padding2d.cpp:12]   --->   Operation 17 'sext' 'indvars_iv_cast' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%o_count_cast6 = sext i8 %o_count to i9" [layers_c/padding2d.cpp:12]   --->   Operation 18 'sext' 'o_count_cast6' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%i_count_cast = sext i9 %i_count to i10" [layers_c/padding2d.cpp:12]   --->   Operation 19 'sext' 'i_count_cast' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 20 [1/1] (0.00ns)   --->   "%indvars_iv6_cast = zext i10 %indvars_iv6_cast7 to i11" [layers_c/padding2d.cpp:12]   --->   Operation 20 'zext' 'indvars_iv6_cast' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 21 [1/1] (0.00ns)   --->   "%tmp = trunc i8 %o_count to i5" [layers_c/padding2d.cpp:12]   --->   Operation 21 'trunc' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 22 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 1, i64 1, i64 1)"   --->   Operation 22 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 23 [1/1] (0.00ns)   --->   "br i1 %depth, label %14, label %.preheader17.preheader" [layers_c/padding2d.cpp:12]   --->   Operation 23 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 24 [1/1] (1.76ns)   --->   "br label %.preheader17"   --->   Operation 24 'br' <Predicate = (!depth)> <Delay = 1.76>
+ST_2 : Operation 25 [1/1] (0.00ns)   --->   "ret void"   --->   Operation 25 'ret' <Predicate = (depth)> <Delay = 0.00>
 
-State 3 <SV = 2> <Delay = 6.38>
-ST_3 : Operation 24 [1/1] (0.00ns)   --->   "%height1 = phi i5 [ %height_1, %3 ], [ 1, %.preheader5.preheader ]"   --->   Operation 24 'phi' 'height1' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 25 [1/1] (0.00ns)   --->   "%empty_10 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 28, i64 28, i64 28)"   --->   Operation 25 'speclooptripcount' 'empty_10' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 26 [1/1] (1.36ns)   --->   "%exitcond9 = icmp eq i5 %height1, -3" [layers_c/padding2d.cpp:50]   --->   Operation 26 'icmp' 'exitcond9' <Predicate = true> <Delay = 1.36> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.36> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 27 [1/1] (0.00ns)   --->   "br i1 %exitcond9, label %.loopexit.preheader, label %.preheader4.preheader" [layers_c/padding2d.cpp:50]   --->   Operation 27 'br' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 28 [1/1] (0.00ns)   --->   "%tmp_446_cast_cast = zext i5 %height1 to i21" [layers_c/padding2d.cpp:54]   --->   Operation 28 'zext' 'tmp_446_cast_cast' <Predicate = (!exitcond9)> <Delay = 0.00>
-ST_3 : Operation 29 [1/1] (6.38ns) (root node of the DSP)   --->   "%tmp_37 = mul i21 %tmp_446_cast_cast, %tmp_41_cast" [layers_c/padding2d.cpp:54]   --->   Operation 29 'mul' 'tmp_37' <Predicate = (!exitcond9)> <Delay = 6.38> <Core = "DSP48">   --->   Core 65 'DSP48' <Latency = 0> <II = 1> <Delay = 6.38> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
-ST_3 : Operation 30 [1/1] (1.76ns)   --->   "br label %.loopexit" [layers_c/padding2d.cpp:73]   --->   Operation 30 'br' <Predicate = (exitcond9)> <Delay = 1.76>
+State 3 <SV = 2> <Delay = 3.25>
+ST_3 : Operation 26 [1/1] (0.00ns)   --->   "%o_count_1 = phi i5 [ %tmp_39, %2 ], [ %tmp, %.preheader17.preheader ]" [layers_c/padding2d.cpp:15]   --->   Operation 26 'phi' 'o_count_1' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 27 [1/1] (0.00ns)   --->   "%o_count_1_cast = zext i5 %o_count_1 to i11" [layers_c/padding2d.cpp:15]   --->   Operation 27 'zext' 'o_count_1_cast' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 28 [1/1] (0.00ns)   --->   "%empty_9 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 29, i64 29, i64 29)"   --->   Operation 28 'speclooptripcount' 'empty_9' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 29 [1/1] (1.77ns)   --->   "%exitcond8 = icmp eq i11 %o_count_1_cast, %indvars_iv6_cast" [layers_c/padding2d.cpp:13]   --->   Operation 29 'icmp' 'exitcond8' <Predicate = true> <Delay = 1.77> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.88> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 30 [1/1] (0.00ns)   --->   "br i1 %exitcond8, label %3, label %2" [layers_c/padding2d.cpp:13]   --->   Operation 30 'br' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 31 [1/1] (0.00ns)   --->   "%tmp_38 = zext i5 %o_count_1 to i64" [layers_c/padding2d.cpp:14]   --->   Operation 31 'zext' 'tmp_38' <Predicate = (!exitcond8)> <Delay = 0.00>
+ST_3 : Operation 32 [1/1] (0.00ns)   --->   "%output_addr = getelementptr [900 x i16]* %output_r, i64 0, i64 %tmp_38" [layers_c/padding2d.cpp:14]   --->   Operation 32 'getelementptr' 'output_addr' <Predicate = (!exitcond8)> <Delay = 0.00>
+ST_3 : Operation 33 [1/1] (3.25ns)   --->   "store i16 0, i16* %output_addr, align 2" [layers_c/padding2d.cpp:14]   --->   Operation 33 'store' <Predicate = (!exitcond8)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 900> <RAM>
+ST_3 : Operation 34 [1/1] (1.78ns)   --->   "%tmp_39 = add i5 %o_count_1, 1" [layers_c/padding2d.cpp:15]   --->   Operation 34 'add' 'tmp_39' <Predicate = (!exitcond8)> <Delay = 1.78> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 35 [1/1] (0.00ns)   --->   "br label %.preheader17" [layers_c/padding2d.cpp:13]   --->   Operation 35 'br' <Predicate = (!exitcond8)> <Delay = 0.00>
+ST_3 : Operation 36 [1/1] (1.91ns)   --->   "%tmp_s = add i8 %o_count, 59" [layers_c/padding2d.cpp:18]   --->   Operation 36 'add' 'tmp_s' <Predicate = (exitcond8)> <Delay = 1.91> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 37 [1/1] (0.00ns)   --->   "%tmp_cast = zext i8 %tmp_s to i10" [layers_c/padding2d.cpp:18]   --->   Operation 37 'zext' 'tmp_cast' <Predicate = (exitcond8)> <Delay = 0.00>
+ST_3 : Operation 38 [1/1] (1.82ns)   --->   "%i_count_3 = add i9 %i_count, -240" [layers_c/padding2d.cpp:27]   --->   Operation 38 'add' 'i_count_3' <Predicate = (exitcond8)> <Delay = 1.82> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 39 [1/1] (1.82ns)   --->   "%tmp_37 = add i9 %o_count_cast6, -155" [layers_c/padding2d.cpp:18]   --->   Operation 39 'add' 'tmp_37' <Predicate = (exitcond8)> <Delay = 1.82> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 40 [1/1] (0.00ns)   --->   "%tmp_43_cast = sext i9 %tmp_37 to i10" [layers_c/padding2d.cpp:18]   --->   Operation 40 'sext' 'tmp_43_cast' <Predicate = (exitcond8)> <Delay = 0.00>
+ST_3 : Operation 41 [1/1] (1.76ns)   --->   "br label %4" [layers_c/padding2d.cpp:18]   --->   Operation 41 'br' <Predicate = (exitcond8)> <Delay = 1.76>
 
-State 4 <SV = 3> <Delay = 3.51>
-ST_4 : Operation 31 [1/1] (0.00ns)   --->   "%tmp_38 = zext i21 %tmp_37 to i64" [layers_c/padding2d.cpp:54]   --->   Operation 31 'zext' 'tmp_38' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 32 [1/1] (0.00ns)   --->   "%output_addr_1 = getelementptr [900 x i16]* %output_r, i64 0, i64 %tmp_38" [layers_c/padding2d.cpp:54]   --->   Operation 32 'getelementptr' 'output_addr_1' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 33 [1/1] (3.25ns)   --->   "store i16 0, i16* %output_addr_1, align 2" [layers_c/padding2d.cpp:54]   --->   Operation 33 'store' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 900> <RAM>
-ST_4 : Operation 34 [1/1] (1.78ns)   --->   "%tmp2 = add i5 %height1, -1" [layers_c/padding2d.cpp:51]   --->   Operation 34 'add' 'tmp2' <Predicate = true> <Delay = 1.78> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.65> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_4 : Operation 35 [1/1] (0.00ns)   --->   "%p_shl3 = call i10 @_ssdm_op_BitConcatenate.i10.i5.i5(i5 %tmp2, i5 0)" [layers_c/padding2d.cpp:51]   --->   Operation 35 'bitconcatenate' 'p_shl3' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 36 [1/1] (0.00ns)   --->   "%p_shl3_cast = zext i10 %p_shl3 to i11" [layers_c/padding2d.cpp:51]   --->   Operation 36 'zext' 'p_shl3_cast' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 37 [1/1] (0.00ns)   --->   "%p_shl4 = call i7 @_ssdm_op_BitConcatenate.i7.i5.i2(i5 %tmp2, i2 0)" [layers_c/padding2d.cpp:51]   --->   Operation 37 'bitconcatenate' 'p_shl4' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 38 [1/1] (0.00ns)   --->   "%p_shl4_cast = zext i7 %p_shl4 to i11" [layers_c/padding2d.cpp:51]   --->   Operation 38 'zext' 'p_shl4_cast' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 39 [1/1] (1.73ns)   --->   "%tmp3 = sub i11 %p_shl3_cast, %p_shl4_cast" [layers_c/padding2d.cpp:51]   --->   Operation 39 'sub' 'tmp3' <Predicate = true> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.65> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_4 : Operation 40 [1/1] (1.76ns)   --->   "br label %.preheader3" [layers_c/padding2d.cpp:57]   --->   Operation 40 'br' <Predicate = true> <Delay = 1.76>
+State 4 <SV = 3> <Delay = 1.91>
+ST_4 : Operation 42 [1/1] (0.00ns)   --->   "%o_count_6 = phi i10 [ %indvars_iv_next2, %9 ], [ %indvars_iv_cast, %3 ]" [layers_c/padding2d.cpp:18]   --->   Operation 42 'phi' 'o_count_6' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 43 [1/1] (0.00ns)   --->   "%indvars_iv8 = phi i10 [ %indvars_iv_next9, %9 ], [ %tmp_cast, %3 ]" [layers_c/padding2d.cpp:18]   --->   Operation 43 'phi' 'indvars_iv8' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 44 [1/1] (0.00ns)   --->   "%o_count_2 = phi i10 [ %tmp_43, %9 ], [ %indvars_iv6_cast7, %3 ]" [layers_c/padding2d.cpp:15]   --->   Operation 44 'phi' 'o_count_2' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 45 [1/1] (0.00ns)   --->   "%i_count_1 = phi i10 [ %tmp_42, %9 ], [ %i_count_cast, %3 ]" [layers_c/padding2d.cpp:27]   --->   Operation 45 'phi' 'i_count_1' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 46 [1/1] (0.00ns)   --->   "%height = phi i5 [ %height_1, %9 ], [ 0, %3 ]"   --->   Operation 46 'phi' 'height' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 47 [1/1] (1.36ns)   --->   "%exitcond2 = icmp eq i5 %height, -4" [layers_c/padding2d.cpp:18]   --->   Operation 47 'icmp' 'exitcond2' <Predicate = true> <Delay = 1.36> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.88> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 48 [1/1] (0.00ns)   --->   "%empty_10 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 28, i64 28, i64 28)"   --->   Operation 48 'speclooptripcount' 'empty_10' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 49 [1/1] (1.78ns)   --->   "%height_1 = add i5 %height, 1" [layers_c/padding2d.cpp:18]   --->   Operation 49 'add' 'height_1' <Predicate = true> <Delay = 1.78> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 50 [1/1] (0.00ns)   --->   "br i1 %exitcond2, label %10, label %.preheader.preheader" [layers_c/padding2d.cpp:18]   --->   Operation 50 'br' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 51 [1/1] (1.76ns)   --->   "br label %.preheader" [layers_c/padding2d.cpp:20]   --->   Operation 51 'br' <Predicate = (!exitcond2)> <Delay = 1.76>
+ST_4 : Operation 52 [1/1] (1.91ns)   --->   "%tmp_40 = add i8 %o_count, -124" [layers_c/padding2d.cpp:15]   --->   Operation 52 'add' 'tmp_40' <Predicate = (exitcond2)> <Delay = 1.91> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 53 [1/1] (1.76ns)   --->   "br label %11" [layers_c/padding2d.cpp:32]   --->   Operation 53 'br' <Predicate = (exitcond2)> <Delay = 1.76>
 
-State 5 <SV = 4> <Delay = 6.67>
-ST_5 : Operation 41 [1/1] (0.00ns)   --->   "%width3 = phi i5 [ %width_2, %1 ], [ 1, %.preheader4.preheader ]"   --->   Operation 41 'phi' 'width3' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 42 [1/1] (0.00ns)   --->   "%tmp_52_cast = zext i5 %width3 to i21" [layers_c/padding2d.cpp:58]   --->   Operation 42 'zext' 'tmp_52_cast' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 43 [1/1] (0.00ns)   --->   "%empty_11 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 28, i64 28, i64 28)"   --->   Operation 43 'speclooptripcount' 'empty_11' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 44 [1/1] (1.36ns)   --->   "%exitcond8 = icmp eq i5 %width3, -3" [layers_c/padding2d.cpp:57]   --->   Operation 44 'icmp' 'exitcond8' <Predicate = true> <Delay = 1.36> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.36> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_5 : Operation 45 [1/1] (0.00ns)   --->   "br i1 %exitcond8, label %.preheader2.preheader, label %1" [layers_c/padding2d.cpp:57]   --->   Operation 45 'br' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 46 [1/1] (1.78ns)   --->   "%tmp4 = add i5 %width3, -1" [layers_c/padding2d.cpp:60]   --->   Operation 46 'add' 'tmp4' <Predicate = (!exitcond8)> <Delay = 1.78> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.65> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_5 : Operation 47 [1/1] (0.00ns)   --->   "%tmp4_cast = zext i5 %tmp4 to i11" [layers_c/padding2d.cpp:60]   --->   Operation 47 'zext' 'tmp4_cast' <Predicate = (!exitcond8)> <Delay = 0.00>
-ST_5 : Operation 48 [1/1] (1.63ns)   --->   "%tmp_40 = add i11 %tmp4_cast, %tmp3" [layers_c/padding2d.cpp:60]   --->   Operation 48 'add' 'tmp_40' <Predicate = (!exitcond8)> <Delay = 1.63> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.65> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_5 : Operation 49 [1/1] (0.00ns)   --->   "%tmp_59_cast = sext i11 %tmp_40 to i32" [layers_c/padding2d.cpp:60]   --->   Operation 49 'sext' 'tmp_59_cast' <Predicate = (!exitcond8)> <Delay = 0.00>
-ST_5 : Operation 50 [1/1] (0.00ns)   --->   "%tmp_41 = zext i32 %tmp_59_cast to i64" [layers_c/padding2d.cpp:60]   --->   Operation 50 'zext' 'tmp_41' <Predicate = (!exitcond8)> <Delay = 0.00>
-ST_5 : Operation 51 [1/1] (0.00ns)   --->   "%input_0_addr = getelementptr [784 x i16]* %input_0, i64 0, i64 %tmp_41" [layers_c/padding2d.cpp:60]   --->   Operation 51 'getelementptr' 'input_0_addr' <Predicate = (!exitcond8)> <Delay = 0.00>
-ST_5 : Operation 52 [2/2] (3.25ns)   --->   "%input_0_load = load i16* %input_0_addr, align 2" [layers_c/padding2d.cpp:60]   --->   Operation 52 'load' 'input_0_load' <Predicate = (!exitcond8)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 900> <RAM>
-ST_5 : Operation 53 [1/1] (1.78ns)   --->   "%width_2 = add i5 %width3, 1" [layers_c/padding2d.cpp:58]   --->   Operation 53 'add' 'width_2' <Predicate = (!exitcond8)> <Delay = 1.78> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.65> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_5 : Operation 54 [1/1] (1.76ns)   --->   "br label %.preheader2" [layers_c/padding2d.cpp:66]   --->   Operation 54 'br' <Predicate = (exitcond8)> <Delay = 1.76>
+State 5 <SV = 4> <Delay = 3.25>
+ST_5 : Operation 54 [1/1] (0.00ns)   --->   "%o_count_3 = phi i10 [ %o_count_8, %5 ], [ %o_count_2, %.preheader.preheader ]"   --->   Operation 54 'phi' 'o_count_3' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 55 [1/1] (1.77ns)   --->   "%exitcond3 = icmp eq i10 %o_count_3, %o_count_6" [layers_c/padding2d.cpp:20]   --->   Operation 55 'icmp' 'exitcond3' <Predicate = true> <Delay = 1.77> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.88> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 56 [1/1] (0.00ns)   --->   "%empty_11 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 2, i64 2, i64 2)"   --->   Operation 56 'speclooptripcount' 'empty_11' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 57 [1/1] (0.00ns)   --->   "br i1 %exitcond3, label %6, label %5" [layers_c/padding2d.cpp:20]   --->   Operation 57 'br' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 58 [1/1] (0.00ns)   --->   "%tmp_44 = zext i10 %o_count_3 to i64" [layers_c/padding2d.cpp:21]   --->   Operation 58 'zext' 'tmp_44' <Predicate = (!exitcond3)> <Delay = 0.00>
+ST_5 : Operation 59 [1/1] (0.00ns)   --->   "%output_addr_1 = getelementptr [900 x i16]* %output_r, i64 0, i64 %tmp_44" [layers_c/padding2d.cpp:21]   --->   Operation 59 'getelementptr' 'output_addr_1' <Predicate = (!exitcond3)> <Delay = 0.00>
+ST_5 : Operation 60 [1/1] (3.25ns)   --->   "store i16 0, i16* %output_addr_1, align 2" [layers_c/padding2d.cpp:21]   --->   Operation 60 'store' <Predicate = (!exitcond3)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 900> <RAM>
+ST_5 : Operation 61 [1/1] (1.73ns)   --->   "%o_count_8 = add i10 %o_count_3, 1" [layers_c/padding2d.cpp:22]   --->   Operation 61 'add' 'o_count_8' <Predicate = (!exitcond3)> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 62 [1/1] (0.00ns)   --->   "br label %.preheader" [layers_c/padding2d.cpp:20]   --->   Operation 62 'br' <Predicate = (!exitcond3)> <Delay = 0.00>
+ST_5 : Operation 63 [1/1] (1.73ns)   --->   "%tmp_42 = add i10 %i_count_1, 28" [layers_c/padding2d.cpp:27]   --->   Operation 63 'add' 'tmp_42' <Predicate = (exitcond3)> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 64 [1/1] (1.73ns)   --->   "%tmp_43 = add i10 %o_count_2, 30" [layers_c/padding2d.cpp:15]   --->   Operation 64 'add' 'tmp_43' <Predicate = (exitcond3)> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 65 [1/1] (1.76ns)   --->   "br label %7" [layers_c/padding2d.cpp:25]   --->   Operation 65 'br' <Predicate = (exitcond3)> <Delay = 1.76>
 
-State 6 <SV = 5> <Delay = 6.50>
-ST_6 : Operation 55 [1/2] (3.25ns)   --->   "%input_0_load = load i16* %input_0_addr, align 2" [layers_c/padding2d.cpp:60]   --->   Operation 55 'load' 'input_0_load' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 900> <RAM>
-ST_6 : Operation 56 [1/1] (2.22ns)   --->   "%tmp_42 = add i21 %tmp_37, %tmp_52_cast" [layers_c/padding2d.cpp:60]   --->   Operation 56 'add' 'tmp_42' <Predicate = true> <Delay = 2.22> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.65> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_6 : Operation 57 [1/1] (0.00ns)   --->   "%tmp_43 = zext i21 %tmp_42 to i64" [layers_c/padding2d.cpp:60]   --->   Operation 57 'zext' 'tmp_43' <Predicate = true> <Delay = 0.00>
-ST_6 : Operation 58 [1/1] (0.00ns)   --->   "%output_addr_2 = getelementptr [900 x i16]* %output_r, i64 0, i64 %tmp_43" [layers_c/padding2d.cpp:60]   --->   Operation 58 'getelementptr' 'output_addr_2' <Predicate = true> <Delay = 0.00>
-ST_6 : Operation 59 [1/1] (3.25ns)   --->   "store i16 %input_0_load, i16* %output_addr_2, align 2" [layers_c/padding2d.cpp:60]   --->   Operation 59 'store' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 900> <RAM>
-ST_6 : Operation 60 [1/1] (0.00ns)   --->   "br label %.preheader3" [layers_c/padding2d.cpp:58]   --->   Operation 60 'br' <Predicate = true> <Delay = 0.00>
+State 6 <SV = 5> <Delay = 3.25>
+ST_6 : Operation 66 [1/1] (0.00ns)   --->   "%o_count_4 = phi i10 [ %o_count_6, %6 ], [ %o_count_9, %8 ]"   --->   Operation 66 'phi' 'o_count_4' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 67 [1/1] (0.00ns)   --->   "%i_count_2 = phi i10 [ %i_count_1, %6 ], [ %tmp_47, %8 ]" [layers_c/padding2d.cpp:27]   --->   Operation 67 'phi' 'i_count_2' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 68 [1/1] (1.77ns)   --->   "%exitcond = icmp eq i10 %o_count_4, %indvars_iv8" [layers_c/padding2d.cpp:25]   --->   Operation 68 'icmp' 'exitcond' <Predicate = true> <Delay = 1.77> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.88> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 69 [1/1] (0.00ns)   --->   "%empty_12 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 28, i64 28, i64 28)"   --->   Operation 69 'speclooptripcount' 'empty_12' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 70 [1/1] (0.00ns)   --->   "br i1 %exitcond, label %9, label %8" [layers_c/padding2d.cpp:25]   --->   Operation 70 'br' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 71 [1/1] (0.00ns)   --->   "%tmp_45 = zext i10 %i_count_2 to i64" [layers_c/padding2d.cpp:26]   --->   Operation 71 'zext' 'tmp_45' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_6 : Operation 72 [1/1] (0.00ns)   --->   "%input_0_addr = getelementptr [784 x i16]* %input_0, i64 0, i64 %tmp_45" [layers_c/padding2d.cpp:26]   --->   Operation 72 'getelementptr' 'input_0_addr' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_6 : Operation 73 [2/2] (3.25ns)   --->   "%input_0_load = load i16* %input_0_addr, align 2" [layers_c/padding2d.cpp:26]   --->   Operation 73 'load' 'input_0_load' <Predicate = (!exitcond)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 900> <RAM>
+ST_6 : Operation 74 [1/1] (1.73ns)   --->   "%tmp_47 = add i10 %i_count_2, 1" [layers_c/padding2d.cpp:27]   --->   Operation 74 'add' 'tmp_47' <Predicate = (!exitcond)> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 75 [1/1] (1.73ns)   --->   "%indvars_iv_next2 = add i10 %o_count_6, 30" [layers_c/padding2d.cpp:18]   --->   Operation 75 'add' 'indvars_iv_next2' <Predicate = (exitcond)> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 76 [1/1] (1.73ns)   --->   "%indvars_iv_next9 = add i10 %indvars_iv8, 30" [layers_c/padding2d.cpp:18]   --->   Operation 76 'add' 'indvars_iv_next9' <Predicate = (exitcond)> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 77 [1/1] (0.00ns)   --->   "br label %4" [layers_c/padding2d.cpp:18]   --->   Operation 77 'br' <Predicate = (exitcond)> <Delay = 0.00>
 
-State 7 <SV = 5> <Delay = 5.47>
-ST_7 : Operation 61 [1/1] (0.00ns)   --->   "%width_3 = phi i3 [ %phitmp, %2 ], [ -3, %.preheader2.preheader ]" [layers_c/padding2d.cpp:67]   --->   Operation 61 'phi' 'width_3' <Predicate = true> <Delay = 0.00>
-ST_7 : Operation 62 [1/1] (0.00ns)   --->   "%width_3_cast = sext i3 %width_3 to i5" [layers_c/padding2d.cpp:66]   --->   Operation 62 'sext' 'width_3_cast' <Predicate = true> <Delay = 0.00>
-ST_7 : Operation 63 [1/1] (0.00ns)   --->   "%tmp_64_cast = zext i5 %width_3_cast to i21" [layers_c/padding2d.cpp:66]   --->   Operation 63 'zext' 'tmp_64_cast' <Predicate = true> <Delay = 0.00>
-ST_7 : Operation 64 [1/1] (0.00ns)   --->   "%empty_12 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 1, i64 1, i64 1)"   --->   Operation 64 'speclooptripcount' 'empty_12' <Predicate = true> <Delay = 0.00>
-ST_7 : Operation 65 [1/1] (1.13ns)   --->   "%exitcond7 = icmp eq i3 %width_3, -2" [layers_c/padding2d.cpp:66]   --->   Operation 65 'icmp' 'exitcond7' <Predicate = true> <Delay = 1.13> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.36> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_7 : Operation 66 [1/1] (0.00ns)   --->   "br i1 %exitcond7, label %3, label %2" [layers_c/padding2d.cpp:66]   --->   Operation 66 'br' <Predicate = true> <Delay = 0.00>
-ST_7 : Operation 67 [1/1] (2.22ns)   --->   "%tmp_45 = add i21 %tmp_37, %tmp_64_cast" [layers_c/padding2d.cpp:68]   --->   Operation 67 'add' 'tmp_45' <Predicate = (!exitcond7)> <Delay = 2.22> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.65> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_7 : Operation 68 [1/1] (0.00ns)   --->   "%tmp_46 = zext i21 %tmp_45 to i64" [layers_c/padding2d.cpp:68]   --->   Operation 68 'zext' 'tmp_46' <Predicate = (!exitcond7)> <Delay = 0.00>
-ST_7 : Operation 69 [1/1] (0.00ns)   --->   "%output_addr_3 = getelementptr [900 x i16]* %output_r, i64 0, i64 %tmp_46" [layers_c/padding2d.cpp:68]   --->   Operation 69 'getelementptr' 'output_addr_3' <Predicate = (!exitcond7)> <Delay = 0.00>
-ST_7 : Operation 70 [1/1] (3.25ns)   --->   "store i16 0, i16* %output_addr_3, align 2" [layers_c/padding2d.cpp:68]   --->   Operation 70 'store' <Predicate = (!exitcond7)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 900> <RAM>
-ST_7 : Operation 71 [1/1] (1.65ns)   --->   "%phitmp = add i3 %width_3, 1" [layers_c/padding2d.cpp:67]   --->   Operation 71 'add' 'phitmp' <Predicate = (!exitcond7)> <Delay = 1.65> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.65> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_7 : Operation 72 [1/1] (0.00ns)   --->   "br label %.preheader2" [layers_c/padding2d.cpp:67]   --->   Operation 72 'br' <Predicate = (!exitcond7)> <Delay = 0.00>
-ST_7 : Operation 73 [1/1] (1.78ns)   --->   "%height_1 = add i5 %height1, 1" [layers_c/padding2d.cpp:51]   --->   Operation 73 'add' 'height_1' <Predicate = (exitcond7)> <Delay = 1.78> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.65> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_7 : Operation 74 [1/1] (0.00ns)   --->   "br label %.preheader5" [layers_c/padding2d.cpp:51]   --->   Operation 74 'br' <Predicate = (exitcond7)> <Delay = 0.00>
+State 7 <SV = 6> <Delay = 6.50>
+ST_7 : Operation 78 [1/2] (3.25ns)   --->   "%input_0_load = load i16* %input_0_addr, align 2" [layers_c/padding2d.cpp:26]   --->   Operation 78 'load' 'input_0_load' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 900> <RAM>
+ST_7 : Operation 79 [1/1] (0.00ns)   --->   "%tmp_46 = zext i10 %o_count_4 to i64" [layers_c/padding2d.cpp:26]   --->   Operation 79 'zext' 'tmp_46' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 80 [1/1] (0.00ns)   --->   "%output_addr_3 = getelementptr [900 x i16]* %output_r, i64 0, i64 %tmp_46" [layers_c/padding2d.cpp:26]   --->   Operation 80 'getelementptr' 'output_addr_3' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 81 [1/1] (3.25ns)   --->   "store i16 %input_0_load, i16* %output_addr_3, align 2" [layers_c/padding2d.cpp:26]   --->   Operation 81 'store' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 900> <RAM>
+ST_7 : Operation 82 [1/1] (1.73ns)   --->   "%o_count_9 = add i10 %o_count_4, 1" [layers_c/padding2d.cpp:28]   --->   Operation 82 'add' 'o_count_9' <Predicate = true> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 83 [1/1] (0.00ns)   --->   "br label %7" [layers_c/padding2d.cpp:25]   --->   Operation 83 'br' <Predicate = true> <Delay = 0.00>
 
-State 8 <SV = 3> <Delay = 6.38>
-ST_8 : Operation 75 [1/1] (0.00ns)   --->   "%height = phi i3 [ %phitmp5, %.loopexit.loopexit ], [ -3, %.loopexit.preheader ]"   --->   Operation 75 'phi' 'height' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 76 [1/1] (0.00ns)   --->   "%height_cast = sext i3 %height to i5" [layers_c/padding2d.cpp:73]   --->   Operation 76 'sext' 'height_cast' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 77 [1/1] (0.00ns)   --->   "%tmp_50_cast = zext i5 %height_cast to i21" [layers_c/padding2d.cpp:73]   --->   Operation 77 'zext' 'tmp_50_cast' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 78 [1/1] (0.00ns)   --->   "%empty_13 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 1, i64 1, i64 1)"   --->   Operation 78 'speclooptripcount' 'empty_13' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 79 [1/1] (1.13ns)   --->   "%exitcond6 = icmp eq i3 %height, -2" [layers_c/padding2d.cpp:73]   --->   Operation 79 'icmp' 'exitcond6' <Predicate = true> <Delay = 1.13> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.36> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_8 : Operation 80 [1/1] (0.00ns)   --->   "br i1 %exitcond6, label %5, label %.preheader.preheader" [layers_c/padding2d.cpp:73]   --->   Operation 80 'br' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 81 [1/1] (6.38ns) (root node of the DSP)   --->   "%tmp_39 = mul i21 %tmp_50_cast, %tmp_41_cast" [layers_c/padding2d.cpp:78]   --->   Operation 81 'mul' 'tmp_39' <Predicate = (!exitcond6)> <Delay = 6.38> <Core = "DSP48">   --->   Core 65 'DSP48' <Latency = 0> <II = 1> <Delay = 6.38> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
-ST_8 : Operation 82 [1/1] (1.76ns)   --->   "br label %.preheader" [layers_c/padding2d.cpp:75]   --->   Operation 82 'br' <Predicate = (!exitcond6)> <Delay = 1.76>
-ST_8 : Operation 83 [1/1] (0.00ns)   --->   "%empty_15 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 1, i64 1, i64 1)"   --->   Operation 83 'speclooptripcount' 'empty_15' <Predicate = (exitcond6)> <Delay = 0.00>
-ST_8 : Operation 84 [1/1] (0.00ns)   --->   "ret void"   --->   Operation 84 'ret' <Predicate = (exitcond6)> <Delay = 0.00>
-
-State 9 <SV = 4> <Delay = 5.47>
-ST_9 : Operation 85 [1/1] (0.00ns)   --->   "%width6 = phi i5 [ %width_4, %4 ], [ 0, %.preheader.preheader ]"   --->   Operation 85 'phi' 'width6' <Predicate = true> <Delay = 0.00>
-ST_9 : Operation 86 [1/1] (0.00ns)   --->   "%tmp_63_cast = zext i5 %width6 to i21" [layers_c/padding2d.cpp:76]   --->   Operation 86 'zext' 'tmp_63_cast' <Predicate = true> <Delay = 0.00>
-ST_9 : Operation 87 [1/1] (0.00ns)   --->   "%empty_14 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 30, i64 30, i64 30)"   --->   Operation 87 'speclooptripcount' 'empty_14' <Predicate = true> <Delay = 0.00>
-ST_9 : Operation 88 [1/1] (1.36ns)   --->   "%exitcond = icmp eq i5 %width6, -2" [layers_c/padding2d.cpp:75]   --->   Operation 88 'icmp' 'exitcond' <Predicate = true> <Delay = 1.36> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.36> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_9 : Operation 89 [1/1] (1.78ns)   --->   "%width_4 = add i5 %width6, 1" [layers_c/padding2d.cpp:76]   --->   Operation 89 'add' 'width_4' <Predicate = true> <Delay = 1.78> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.65> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_9 : Operation 90 [1/1] (0.00ns)   --->   "br i1 %exitcond, label %.loopexit.loopexit, label %4" [layers_c/padding2d.cpp:75]   --->   Operation 90 'br' <Predicate = true> <Delay = 0.00>
-ST_9 : Operation 91 [1/1] (2.22ns)   --->   "%tmp5 = add i21 %tmp_39, %tmp_63_cast" [layers_c/padding2d.cpp:78]   --->   Operation 91 'add' 'tmp5' <Predicate = (!exitcond)> <Delay = 2.22> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.65> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_9 : Operation 92 [1/1] (0.00ns)   --->   "%tmp_44 = zext i21 %tmp5 to i64" [layers_c/padding2d.cpp:78]   --->   Operation 92 'zext' 'tmp_44' <Predicate = (!exitcond)> <Delay = 0.00>
-ST_9 : Operation 93 [1/1] (0.00ns)   --->   "%output_addr_4 = getelementptr [900 x i16]* %output_r, i64 0, i64 %tmp_44" [layers_c/padding2d.cpp:78]   --->   Operation 93 'getelementptr' 'output_addr_4' <Predicate = (!exitcond)> <Delay = 0.00>
-ST_9 : Operation 94 [1/1] (3.25ns)   --->   "store i16 0, i16* %output_addr_4, align 2" [layers_c/padding2d.cpp:78]   --->   Operation 94 'store' <Predicate = (!exitcond)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 900> <RAM>
-ST_9 : Operation 95 [1/1] (0.00ns)   --->   "br label %.preheader" [layers_c/padding2d.cpp:76]   --->   Operation 95 'br' <Predicate = (!exitcond)> <Delay = 0.00>
-ST_9 : Operation 96 [1/1] (1.65ns)   --->   "%phitmp5 = add i3 %height, 1"   --->   Operation 96 'add' 'phitmp5' <Predicate = (exitcond)> <Delay = 1.65> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.65> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_9 : Operation 97 [1/1] (0.00ns)   --->   "br label %.loopexit"   --->   Operation 97 'br' <Predicate = (exitcond)> <Delay = 0.00>
+State 8 <SV = 4> <Delay = 3.25>
+ST_8 : Operation 84 [1/1] (0.00ns)   --->   "%o_count_5 = phi i10 [ %tmp_43_cast, %10 ], [ %o_count_7, %12 ]"   --->   Operation 84 'phi' 'o_count_5' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 85 [1/1] (0.00ns)   --->   "%o_count_5_cast_cast = zext i10 %o_count_5 to i11" [layers_c/padding2d.cpp:18]   --->   Operation 85 'zext' 'o_count_5_cast_cast' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 86 [1/1] (0.00ns)   --->   "%empty_13 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 31, i64 31, i64 31)"   --->   Operation 86 'speclooptripcount' 'empty_13' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 87 [1/1] (1.88ns)   --->   "%exitcond5 = icmp eq i11 %o_count_5_cast_cast, %indvars_iv3" [layers_c/padding2d.cpp:32]   --->   Operation 87 'icmp' 'exitcond5' <Predicate = true> <Delay = 1.88> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.88> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 88 [1/1] (0.00ns)   --->   "br i1 %exitcond5, label %13, label %12" [layers_c/padding2d.cpp:32]   --->   Operation 88 'br' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 89 [1/1] (0.00ns)   --->   "%tmp_41 = zext i10 %o_count_5 to i64" [layers_c/padding2d.cpp:33]   --->   Operation 89 'zext' 'tmp_41' <Predicate = (!exitcond5)> <Delay = 0.00>
+ST_8 : Operation 90 [1/1] (0.00ns)   --->   "%output_addr_2 = getelementptr [900 x i16]* %output_r, i64 0, i64 %tmp_41" [layers_c/padding2d.cpp:33]   --->   Operation 90 'getelementptr' 'output_addr_2' <Predicate = (!exitcond5)> <Delay = 0.00>
+ST_8 : Operation 91 [1/1] (3.25ns)   --->   "store i16 0, i16* %output_addr_2, align 2" [layers_c/padding2d.cpp:33]   --->   Operation 91 'store' <Predicate = (!exitcond5)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 900> <RAM>
+ST_8 : Operation 92 [1/1] (1.73ns)   --->   "%o_count_7 = add i10 %o_count_5, 1" [layers_c/padding2d.cpp:34]   --->   Operation 92 'add' 'o_count_7' <Predicate = (!exitcond5)> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 93 [1/1] (0.00ns)   --->   "br label %11" [layers_c/padding2d.cpp:32]   --->   Operation 93 'br' <Predicate = (!exitcond5)> <Delay = 0.00>
+ST_8 : Operation 94 [1/1] (1.91ns)   --->   "%indvars_iv_next7 = add i8 %indvars_iv6, -124" [layers_c/padding2d.cpp:12]   --->   Operation 94 'add' 'indvars_iv_next7' <Predicate = (exitcond5)> <Delay = 1.91> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 95 [1/1] (1.91ns)   --->   "%indvars_iv_next = add i8 %indvars_iv, -124" [layers_c/padding2d.cpp:12]   --->   Operation 95 'add' 'indvars_iv_next' <Predicate = (exitcond5)> <Delay = 1.91> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 96 [1/1] (1.63ns)   --->   "%indvars_iv_next4 = add i11 %indvars_iv3, 900" [layers_c/padding2d.cpp:12]   --->   Operation 96 'add' 'indvars_iv_next4' <Predicate = (exitcond5)> <Delay = 1.63> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 97 [1/1] (0.00ns)   --->   "br label %1" [layers_c/padding2d.cpp:12]   --->   Operation 97 'br' <Predicate = (exitcond5)> <Delay = 0.00>
 
 
 ============================================================
@@ -220,55 +217,44 @@ Target clock period: 10ns, clock uncertainty: 1.25ns.
 
  <State 1>: 1.77ns
 The critical path consists of the following:
-	multiplexor before 'phi' operation ('width', layers_c/padding2d.cpp:43) with incoming values : ('width_1', layers_c/padding2d.cpp:43) [9]  (1.77 ns)
+	multiplexor before 'phi' operation ('indvars_iv6', layers_c/padding2d.cpp:12) with incoming values : ('indvars_iv_next7', layers_c/padding2d.cpp:12) [5]  (1.77 ns)
 
- <State 2>: 3.25ns
+ <State 2>: 1.77ns
 The critical path consists of the following:
-	'phi' operation ('width', layers_c/padding2d.cpp:43) with incoming values : ('width_1', layers_c/padding2d.cpp:43) [9]  (0 ns)
-	'getelementptr' operation ('output_addr', layers_c/padding2d.cpp:45) [16]  (0 ns)
-	'store' operation (layers_c/padding2d.cpp:45) of constant 0 on array 'output_r' [17]  (3.25 ns)
+	multiplexor before 'phi' operation ('o_count_1', layers_c/padding2d.cpp:15) with incoming values : ('tmp', layers_c/padding2d.cpp:12) ('tmp_39', layers_c/padding2d.cpp:15) [22]  (1.77 ns)
 
- <State 3>: 6.38ns
+ <State 3>: 3.25ns
 The critical path consists of the following:
-	'phi' operation ('height') with incoming values : ('height', layers_c/padding2d.cpp:51) [22]  (0 ns)
-	'mul' operation of DSP[28] ('tmp_37', layers_c/padding2d.cpp:54) [28]  (6.38 ns)
+	'phi' operation ('o_count_1', layers_c/padding2d.cpp:15) with incoming values : ('tmp', layers_c/padding2d.cpp:12) ('tmp_39', layers_c/padding2d.cpp:15) [22]  (0 ns)
+	'getelementptr' operation ('output_addr', layers_c/padding2d.cpp:14) [29]  (0 ns)
+	'store' operation (layers_c/padding2d.cpp:14) of constant 0 on array 'output_r' [30]  (3.25 ns)
 
- <State 4>: 3.51ns
+ <State 4>: 1.92ns
 The critical path consists of the following:
-	'add' operation ('tmp2', layers_c/padding2d.cpp:51) [32]  (1.78 ns)
-	'sub' operation ('tmp3', layers_c/padding2d.cpp:51) [37]  (1.73 ns)
+	'add' operation ('tmp_40', layers_c/padding2d.cpp:15) [88]  (1.92 ns)
 
- <State 5>: 6.67ns
+ <State 5>: 3.25ns
 The critical path consists of the following:
-	'phi' operation ('width') with incoming values : ('width', layers_c/padding2d.cpp:58) [40]  (0 ns)
-	'add' operation ('tmp4', layers_c/padding2d.cpp:60) [46]  (1.78 ns)
-	'add' operation ('tmp_40', layers_c/padding2d.cpp:60) [48]  (1.64 ns)
-	'getelementptr' operation ('input_0_addr', layers_c/padding2d.cpp:60) [51]  (0 ns)
-	'load' operation ('input_0_load', layers_c/padding2d.cpp:60) on array 'input_0' [52]  (3.25 ns)
+	'phi' operation ('o_count') with incoming values : ('indvars_iv6_cast7', layers_c/padding2d.cpp:12) ('o_count', layers_c/padding2d.cpp:22) ('tmp_43', layers_c/padding2d.cpp:15) [53]  (0 ns)
+	'getelementptr' operation ('output_addr_1', layers_c/padding2d.cpp:21) [59]  (0 ns)
+	'store' operation (layers_c/padding2d.cpp:21) of constant 0 on array 'output_r' [60]  (3.25 ns)
 
- <State 6>: 6.51ns
+ <State 6>: 3.25ns
 The critical path consists of the following:
-	'load' operation ('input_0_load', layers_c/padding2d.cpp:60) on array 'input_0' [52]  (3.25 ns)
-	'store' operation (layers_c/padding2d.cpp:60) of variable 'input_0_load', layers_c/padding2d.cpp:60 on array 'output_r' [56]  (3.25 ns)
+	'phi' operation ('i_count_2', layers_c/padding2d.cpp:27) with incoming values : ('i_count_cast', layers_c/padding2d.cpp:12) ('tmp_42', layers_c/padding2d.cpp:27) ('tmp_47', layers_c/padding2d.cpp:27) [69]  (0 ns)
+	'getelementptr' operation ('input_0_addr', layers_c/padding2d.cpp:26) [75]  (0 ns)
+	'load' operation ('input_0_load', layers_c/padding2d.cpp:26) on array 'input_0' [76]  (3.25 ns)
 
- <State 7>: 5.48ns
+ <State 7>: 6.51ns
 The critical path consists of the following:
-	'phi' operation ('width', layers_c/padding2d.cpp:67) with incoming values : ('phitmp', layers_c/padding2d.cpp:67) [62]  (0 ns)
-	'add' operation ('tmp_45', layers_c/padding2d.cpp:68) [69]  (2.23 ns)
-	'getelementptr' operation ('output_addr_3', layers_c/padding2d.cpp:68) [71]  (0 ns)
-	'store' operation (layers_c/padding2d.cpp:68) of constant 0 on array 'output_r' [72]  (3.25 ns)
+	'load' operation ('input_0_load', layers_c/padding2d.cpp:26) on array 'input_0' [76]  (3.25 ns)
+	'store' operation (layers_c/padding2d.cpp:26) of variable 'input_0_load', layers_c/padding2d.cpp:26 on array 'output_r' [79]  (3.25 ns)
 
- <State 8>: 6.38ns
+ <State 8>: 3.25ns
 The critical path consists of the following:
-	'phi' operation ('height') with incoming values : ('phitmp5') [81]  (0 ns)
-	'mul' operation of DSP[88] ('tmp_39', layers_c/padding2d.cpp:78) [88]  (6.38 ns)
-
- <State 9>: 5.48ns
-The critical path consists of the following:
-	'phi' operation ('width') with incoming values : ('width', layers_c/padding2d.cpp:76) [91]  (0 ns)
-	'add' operation ('tmp5', layers_c/padding2d.cpp:78) [98]  (2.23 ns)
-	'getelementptr' operation ('output_addr_4', layers_c/padding2d.cpp:78) [100]  (0 ns)
-	'store' operation (layers_c/padding2d.cpp:78) of constant 0 on array 'output_r' [101]  (3.25 ns)
+	'phi' operation ('o_count') with incoming values : ('tmp_43_cast', layers_c/padding2d.cpp:18) ('o_count', layers_c/padding2d.cpp:34) [91]  (0 ns)
+	'getelementptr' operation ('output_addr_2', layers_c/padding2d.cpp:33) [98]  (0 ns)
+	'store' operation (layers_c/padding2d.cpp:33) of constant 0 on array 'output_r' [99]  (3.25 ns)
 
 
 ============================================================
@@ -287,7 +273,6 @@ N/A
 	State 6
 	State 7
 	State 8
-	State 9
 
 
 ============================================================

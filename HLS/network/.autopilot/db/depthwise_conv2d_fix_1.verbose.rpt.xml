@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'depthwise_conv2d_fix_1'" level="0">
-<item name = "Date">Sat Nov  2 18:43:15 2019
+<item name = "Date">Thu Nov  7 15:54:52 2019
 </item>
 <item name = "Version">2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)</item>
 <item name = "Project">HLS</item>
@@ -70,7 +70,7 @@
 </item>
 <item name = "DSP48"><table name="" hasTotal="0">
 <keys size="3">Instance, Module, Expression</keys>
-<column name="network_mul_mul_16s_14s_30_1_1_U140">network_mul_mul_16s_14s_30_1_1, i0 * i1</column>
+<column name="network_mul_mul_16s_14s_30_1_1_U132">network_mul_mul_16s_14s_30_1_1, i0 * i1</column>
 </table>
 </item>
 <item name = "Memory"><table name="" hasTotal="1">
@@ -98,12 +98,12 @@
 <column name="tmp5_fu_391_p2">+, 0, 0, 24, 17, 17</column>
 <column name="tmp6_fu_366_p2">+, 0, 0, 28, 21, 21</column>
 <column name="tmp7_fu_410_p2">+, 0, 0, 24, 17, 17</column>
-<column name="tmp_141_fu_299_p2">+, 0, 0, 39, 32, 32</column>
-<column name="tmp_149_fu_400_p2">+, 0, 0, 39, 32, 32</column>
-<column name="tmp_151_fu_419_p2">+, 0, 0, 28, 21, 21</column>
-<column name="tmp_156_fu_448_p2">+, 0, 0, 23, 16, 16</column>
+<column name="tmp_125_fu_299_p2">+, 0, 0, 39, 32, 32</column>
+<column name="tmp_133_fu_400_p2">+, 0, 0, 39, 32, 32</column>
+<column name="tmp_135_fu_419_p2">+, 0, 0, 28, 21, 21</column>
+<column name="tmp_140_fu_448_p2">+, 0, 0, 23, 16, 16</column>
 <column name="tmp_fu_266_p2">+, 0, 0, 39, 32, 32</column>
-<column name="tmp_145_fu_341_p2">-, 0, 0, 15, 5, 5</column>
+<column name="tmp_129_fu_341_p2">-, 0, 0, 15, 5, 5</column>
 <column name="exitcond1_fu_309_p2">icmp, 0, 0, 8, 2, 2</column>
 <column name="exitcond2_fu_280_p2">icmp, 0, 0, 13, 16, 16</column>
 <column name="exitcond3_fu_251_p2">icmp, 0, 0, 13, 16, 16</column>
@@ -150,13 +150,13 @@
 <column name="tmp2_reg_573">32, 0, 32, 0</column>
 <column name="tmp3_reg_583">32, 0, 32, 0</column>
 <column name="tmp6_reg_578">21, 0, 21, 0</column>
-<column name="tmp_131_reg_481">16, 0, 32, 16</column>
-<column name="tmp_132_reg_486">16, 0, 32, 16</column>
-<column name="tmp_133_reg_491">16, 0, 32, 16</column>
-<column name="tmp_134_cast2_reg_514">16, 0, 17, 1</column>
-<column name="tmp_139_cast_reg_537">16, 0, 17, 1</column>
-<column name="tmp_140_cast_reg_555">16, 0, 17, 1</column>
-<column name="tmp_155_reg_616">16, 0, 16, 0</column>
+<column name="tmp_115_reg_481">16, 0, 32, 16</column>
+<column name="tmp_116_reg_486">16, 0, 32, 16</column>
+<column name="tmp_117_reg_491">16, 0, 32, 16</column>
+<column name="tmp_118_cast2_reg_514">16, 0, 17, 1</column>
+<column name="tmp_123_cast_reg_537">16, 0, 17, 1</column>
+<column name="tmp_124_cast_reg_555">16, 0, 17, 1</column>
+<column name="tmp_139_reg_616">16, 0, 16, 0</column>
 <column name="tmp_reg_532">32, 0, 32, 0</column>
 <column name="tmp_s_reg_476">16, 0, 32, 16</column>
 </table>

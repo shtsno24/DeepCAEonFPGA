@@ -175,7 +175,7 @@ network_mul_mul_16s_11ns_27_1_1 #(
     .din0_WIDTH( 16 ),
     .din1_WIDTH( 11 ),
     .dout_WIDTH( 27 ))
-network_mul_mul_16s_11ns_27_1_1_U17(
+network_mul_mul_16s_11ns_27_1_1_U13(
     .din0(SeparableConv2D_0_m_2_reg_497),
     .din1(tmp_29_fu_356_p1),
     .dout(tmp_29_fu_356_p2)

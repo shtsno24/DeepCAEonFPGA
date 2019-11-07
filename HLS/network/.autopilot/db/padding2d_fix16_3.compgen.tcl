@@ -1,19 +1,19 @@
 # This script segment is generated automatically by AutoPilot
 
-set id 33
-set name network_mul_mul_16ns_16ns_32_1_1
+set id 29
+set name network_mul_mul_16s_16s_16_1_1
 set corename simcore_mul
 set op mul
 set stage_num 1
 set max_latency -1
 set registered_input 1
 set in0_width 16
-set in0_signed 0
+set in0_signed 1
 set in1_width 16
-set in1_signed 0
-set out_width 32
+set in1_signed 1
+set out_width 16
 set exp i0*i1
-set arg_lists {i0 {16 0 +} i1 {16 0 +} p {32 0 +} acc {0} }
+set arg_lists {i0 {16 1 +} i1 {16 1 +} p {16 1 +} acc {0} }
 set TrueReset 0
 if {${::AESL::PGuard_simmodel_gen}} {
 if {[info proc ap_gen_simcore_mul] == "ap_gen_simcore_mul"} {
@@ -87,7 +87,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 38 \
+    id 35 \
     name input_r \
     reset_level 1 \
     sync_rst true \
@@ -106,7 +106,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 41 \
+    id 36 \
     name output_r \
     reset_level 1 \
     sync_rst true \
@@ -124,7 +124,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 35 \
+    id 32 \
     name input_depth \
     type other \
     dir I \
@@ -139,7 +139,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 36 \
+    id 33 \
     name input_height \
     type other \
     dir I \
@@ -154,7 +154,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 37 \
+    id 34 \
     name input_width \
     type other \
     dir I \
@@ -163,36 +163,6 @@ eval "cg_default_interface_gen_dc { \
     corename dc_input_width \
     op interface \
     ports { input_width { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 39 \
-    name output_height \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_output_height \
-    op interface \
-    ports { output_height { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 40 \
-    name output_width \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_output_width \
-    op interface \
-    ports { output_width { I 16 vector } } \
 } "
 }
 

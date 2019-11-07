@@ -87,7 +87,7 @@ set RtlHierarchyInfo {[
 			{"Name" : "output_depth", "Type" : "None", "Direction" : "I"},
 			{"Name" : "output_r", "Type" : "Memory", "Direction" : "O"},
 			{"Name" : "SeparableConv2D_4_m_s", "Type" : "Memory", "Direction" : "I"}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mul_mul_16s_14s_30_1_1_U149", "Parent" : "0"}]}
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mul_mul_16s_14s_30_1_1_U141", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {

@@ -2659,7 +2659,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>network_mul_mul_16s_11ns_27_1_1_U17</rtlName>
+              <rtlName>network_mul_mul_16s_11ns_27_1_1_U13</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>27</bitwidth>
@@ -7269,7 +7269,7 @@
         <count>1</count>
         <item_version>0</item_version>
         <item>
-          <first>network_mul_mul_16s_11ns_27_1_1_U17</first>
+          <first>network_mul_mul_16s_11ns_27_1_1_U13</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>

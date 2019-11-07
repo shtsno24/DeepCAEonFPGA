@@ -173,7 +173,7 @@ architecture behav of pointwise_conv2d_fix_1 is
 
 
 begin
-    network_mul_mul_16s_14s_30_1_1_U149 : component network_mul_mul_16s_14s_30_1_1
+    network_mul_mul_16s_14s_30_1_1_U141 : component network_mul_mul_16s_14s_30_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,

@@ -149,7 +149,7 @@ network_mul_mul_16s_14s_30_1_1 #(
     .din0_WIDTH( 16 ),
     .din1_WIDTH( 14 ),
     .dout_WIDTH( 30 ))
-network_mul_mul_16s_14s_30_1_1_U149(
+network_mul_mul_16s_14s_30_1_1_U141(
     .din0(SeparableConv2D_4_m_2_reg_452),
     .din1(tmp_33_fu_331_p1),
     .dout(tmp_33_fu_331_p2)

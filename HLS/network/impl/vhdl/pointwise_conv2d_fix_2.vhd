@@ -212,7 +212,7 @@ begin
         ce0 => SeparableConv2D_1_b_s_ce0,
         q0 => SeparableConv2D_1_b_s_q0);
 
-    network_mul_mul_16s_14ns_30_1_1_U52 : component network_mul_mul_16s_14ns_30_1_1
+    network_mul_mul_16s_14ns_30_1_1_U47 : component network_mul_mul_16s_14ns_30_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,

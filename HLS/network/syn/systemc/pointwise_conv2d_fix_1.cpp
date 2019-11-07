@@ -52,10 +52,10 @@ const sc_lv<30> pointwise_conv2d_fix_1::ap_const_lv30_3FFFE7C7 = "11111111111111
 const bool pointwise_conv2d_fix_1::ap_const_boolean_1 = true;
 
 pointwise_conv2d_fix_1::pointwise_conv2d_fix_1(sc_module_name name) : sc_module(name), mVcdFile(0) {
-    network_mul_mul_16s_14s_30_1_1_U149 = new network_mul_mul_16s_14s_30_1_1<1,1,16,14,30>("network_mul_mul_16s_14s_30_1_1_U149");
-    network_mul_mul_16s_14s_30_1_1_U149->din0(SeparableConv2D_4_m_2_reg_452);
-    network_mul_mul_16s_14s_30_1_1_U149->din1(tmp_33_fu_331_p1);
-    network_mul_mul_16s_14s_30_1_1_U149->dout(tmp_33_fu_331_p2);
+    network_mul_mul_16s_14s_30_1_1_U141 = new network_mul_mul_16s_14s_30_1_1<1,1,16,14,30>("network_mul_mul_16s_14s_30_1_1_U141");
+    network_mul_mul_16s_14s_30_1_1_U141->din0(SeparableConv2D_4_m_2_reg_452);
+    network_mul_mul_16s_14s_30_1_1_U141->din1(tmp_33_fu_331_p1);
+    network_mul_mul_16s_14s_30_1_1_U141->dout(tmp_33_fu_331_p2);
 
     SC_METHOD(thread_ap_clk_no_reset_);
     dont_initialize();
@@ -374,7 +374,7 @@ pointwise_conv2d_fix_1::~pointwise_conv2d_fix_1() {
     if (mVcdFile) 
         sc_close_vcd_trace_file(mVcdFile);
 
-    delete network_mul_mul_16s_14s_30_1_1_U149;
+    delete network_mul_mul_16s_14s_30_1_1_U141;
 }
 
 void pointwise_conv2d_fix_1::thread_ap_clk_no_reset_() {

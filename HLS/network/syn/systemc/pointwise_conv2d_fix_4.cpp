@@ -58,10 +58,10 @@ pointwise_conv2d_fix_4::pointwise_conv2d_fix_4(sc_module_name name) : sc_module(
     SeparableConv2D_2_b_s_U->address0(SeparableConv2D_2_b_s_address0);
     SeparableConv2D_2_b_s_U->ce0(SeparableConv2D_2_b_s_ce0);
     SeparableConv2D_2_b_s_U->q0(SeparableConv2D_2_b_s_q0);
-    network_mul_mul_16s_15s_30_1_1_U85 = new network_mul_mul_16s_15s_30_1_1<1,1,16,15,30>("network_mul_mul_16s_15s_30_1_1_U85");
-    network_mul_mul_16s_15s_30_1_1_U85->din0(SeparableConv2D_2_m_2_reg_493);
-    network_mul_mul_16s_15s_30_1_1_U85->din1(tmp_24_fu_352_p1);
-    network_mul_mul_16s_15s_30_1_1_U85->dout(tmp_24_fu_352_p2);
+    network_mul_mul_16s_15s_30_1_1_U79 = new network_mul_mul_16s_15s_30_1_1<1,1,16,15,30>("network_mul_mul_16s_15s_30_1_1_U79");
+    network_mul_mul_16s_15s_30_1_1_U79->din0(SeparableConv2D_2_m_2_reg_493);
+    network_mul_mul_16s_15s_30_1_1_U79->din1(tmp_24_fu_352_p1);
+    network_mul_mul_16s_15s_30_1_1_U79->dout(tmp_24_fu_352_p2);
 
     SC_METHOD(thread_ap_clk_no_reset_);
     dont_initialize();
@@ -422,7 +422,7 @@ pointwise_conv2d_fix_4::~pointwise_conv2d_fix_4() {
         sc_close_vcd_trace_file(mVcdFile);
 
     delete SeparableConv2D_2_b_s_U;
-    delete network_mul_mul_16s_15s_30_1_1_U85;
+    delete network_mul_mul_16s_15s_30_1_1_U79;
 }
 
 void pointwise_conv2d_fix_4::thread_ap_clk_no_reset_() {

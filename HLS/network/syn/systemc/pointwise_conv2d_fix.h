@@ -46,7 +46,7 @@ struct pointwise_conv2d_fix : public sc_module {
     sc_trace_file* mVcdFile;
 
     pointwise_conv2d_fix_SeparableConv2D_0_b_s* SeparableConv2D_0_b_s_U;
-    network_mul_mul_16s_11ns_27_1_1<1,1,16,11,27>* network_mul_mul_16s_11ns_27_1_1_U17;
+    network_mul_mul_16s_11ns_27_1_1<1,1,16,11,27>* network_mul_mul_16s_11ns_27_1_1_U13;
     sc_signal< sc_lv<13> > ap_CS_fsm;
     sc_signal< sc_logic > ap_CS_fsm_state1;
     sc_signal< sc_lv<4> > SeparableConv2D_0_b_s_address0;

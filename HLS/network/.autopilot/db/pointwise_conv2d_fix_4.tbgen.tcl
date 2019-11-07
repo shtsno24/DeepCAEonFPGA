@@ -89,7 +89,7 @@ set RtlHierarchyInfo {[
 			{"Name" : "SeparableConv2D_2_b_s", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "SeparableConv2D_2_m_s", "Type" : "Memory", "Direction" : "I"}]},
 	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.SeparableConv2D_2_b_s_U", "Parent" : "0"},
-	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mul_mul_16s_15s_30_1_1_U85", "Parent" : "0"}]}
+	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mul_mul_16s_15s_30_1_1_U79", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {
