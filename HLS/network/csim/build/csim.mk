@@ -1,5 +1,5 @@
 # ==============================================================
-# File generated on Thu Nov 07 16:37:26 JST 2019
+# File generated on Fri Nov 08 14:40:11 JST 2019
 # Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
@@ -60,7 +60,7 @@ IFLAG += -D__SIM_FIR__
 IFLAG += -D__SIM_DDS__
 
 IFLAG += -D__DSP48E1__
-IFLAG += -std=c++14 -Wno-unknown-pragmas 
+IFLAG += -std=c++14 -Wno-unknown-pragmas -O3 
 IFLAG += -g
 DFLAG += -D__xilinx_ip_top= -DAESL_TB
 CCFLAG += 
@@ -88,7 +88,7 @@ $(ObjDir)/array_printf_float32.o: ../../../../layers_cpp/array_printf_float32.cp
 
 $(ObjDir)/mnist_AXI_Stream_tb.o: ../../../../mnist_AXI_Stream_tb.cpp $(ObjDir)/.dir
 	$(Echo) "   Compiling ../../../../mnist_AXI_Stream_tb.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CC) ${CCFLAG} -c -MMD -std=c++14 -Wno-unknown-pragmas  $(IFLAG) $(DFLAG) $< -o $@ ; \
+	$(Verb)  $(CC) ${CCFLAG} -c -MMD -std=c++14 -Wno-unknown-pragmas -O3  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
 -include $(ObjDir)/mnist_AXI_Stream_tb.d
 

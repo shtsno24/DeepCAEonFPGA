@@ -2,8 +2,8 @@
 # xsim v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Thu Nov  7 16:27:46 2019
-# Process ID: 950
+# Start of session at: Fri Nov  8 14:43:45 2019
+# Process ID: 9343
 # Current directory: /home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog
 # Command line: xsim -mode tcl -source {xsim.dir/network/xsim_script.tcl}
 # Log file: /home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/xsim.log
@@ -141,6 +141,6 @@ WARNING: [Simtcl 6-197] One or more HDL objects could not be logged because of o
 // RTL Simulation : 1 / 1 [n/a] @ "15388385000"
 ////////////////////////////////////////////////////////////////////////////////////
 $finish called at time : 15388425 ns : File "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/network.autotb.v" Line 463
-run: Time (s): cpu = 00:00:31 ; elapsed = 00:02:02 . Memory (MB): peak = 1416.070 ; gain = 8.004 ; free physical = 147 ; free virtual = 6100
+run: Time (s): cpu = 00:00:31 ; elapsed = 00:02:01 . Memory (MB): peak = 1416.070 ; gain = 8.004 ; free physical = 298 ; free virtual = 5627
 ## quit
-INFO: [Common 17-206] Exiting xsim at Thu Nov  7 16:29:57 2019...
+INFO: [Common 17-206] Exiting xsim at Fri Nov  8 14:45:56 2019...

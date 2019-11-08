@@ -51,7 +51,7 @@ add_files -tb layers_cpp/array_printf_fix16.cpp -cflags "-std=c++14 -Wno-unknown
 add_files -tb layers_cpp/array_printf_fix16.h -cflags "-std=c++14 -Wno-unknown-pragmas"
 add_files -tb layers_cpp/array_printf_float32.cpp -cflags "-std=c++14 -Wno-unknown-pragmas"
 add_files -tb layers_cpp/array_printf_float32.h -cflags "-std=c++14 -Wno-unknown-pragmas"
-add_files -tb mnist_AXI_Stream_tb.cpp -cflags "-std=c++14 -Wno-unknown-pragmas"
+add_files -tb mnist_AXI_Stream_tb.cpp -cflags "-std=c++14 -Wno-unknown-pragmas -O3"
 open_solution "network"
 set_part {xc7z020clg400-1} -tool vivado
 create_clock -period 10 -name default

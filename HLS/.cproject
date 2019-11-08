@@ -239,7 +239,7 @@
                                 							
                             </option>
                             							
-                            <option id="gnu.cpp.compiler.option.other.other.2061818772" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" value="-std=c++14 -Wno-unknown-pragmas -c -fmessage-length=0" valueType="string"/>
+                            <option id="gnu.cpp.compiler.option.other.other.2061818772" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" value="-std=c++14 -Wno-unknown-pragmas -O3 -c -fmessage-length=0" valueType="string"/>
                             							
                             <inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1138807345" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
                             						
@@ -481,7 +481,7 @@
                                 							
                             </option>
                             							
-                            <option id="gnu.cpp.compiler.option.other.other.528232422" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" value="-std=c++14 -Wno-unknown-pragmas -c -fmessage-length=0" valueType="string"/>
+                            <option id="gnu.cpp.compiler.option.other.other.528232422" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" value="-std=c++14 -Wno-unknown-pragmas -O3 -c -fmessage-length=0" valueType="string"/>
                             							
                             <inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1568988199" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
                             						

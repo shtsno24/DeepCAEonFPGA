@@ -490,7 +490,34 @@ extern size_t __mbrlen (const char *__restrict __s, size_t __n,
    mbstate_t *__restrict __ps) throw ();
 extern size_t mbrlen (const char *__restrict __s, size_t __n,
         mbstate_t *__restrict __ps) throw ();
-#pragma line 337 "/usr/include/wchar.h" 3 4
+#pragma empty_line
+#pragma empty_line
+#pragma empty_line
+#pragma empty_line
+#pragma empty_line
+#pragma empty_line
+#pragma empty_line
+extern wint_t __btowc_alias (int __c) __asm ("btowc");
+extern __inline __attribute__ ((__gnu_inline__)) wint_t
+__attribute__ ((__leaf__)) btowc (int __c) throw ()
+{ return (__builtin_constant_p (__c) && __c >= '\0' && __c <= '\x7f'
+   ? (wint_t) __c : __btowc_alias (__c)); }
+#pragma empty_line
+extern int __wctob_alias (wint_t __c) __asm ("wctob");
+extern __inline __attribute__ ((__gnu_inline__)) int
+__attribute__ ((__leaf__)) wctob (wint_t __wc) throw ()
+{ return (__builtin_constant_p (__wc) && __wc >= L'\0' && __wc <= L'\x7f'
+   ? (int) __wc : __wctob_alias (__wc)); }
+#pragma empty_line
+extern __inline __attribute__ ((__gnu_inline__)) size_t
+__attribute__ ((__leaf__)) mbrlen (const char *__restrict __s, size_t __n, mbstate_t *__restrict __ps) throw ()
+#pragma empty_line
+{ return (__ps != __null
+   ? mbrtowc (__null, __s, __n, __ps) : __mbrlen (__s, __n, __null)); }
+#pragma empty_line
+#pragma empty_line
+#pragma empty_line
+#pragma empty_line
 extern size_t mbsrtowcs (wchar_t *__restrict __dst,
     const char **__restrict __src, size_t __len,
     mbstate_t *__restrict __ps) throw ();
@@ -2125,6 +2152,111 @@ extern int ftrylockfile (FILE *__stream) throw () ;
 #pragma empty_line
 #pragma empty_line
 extern void funlockfile (FILE *__stream) throw ();
+#pragma line 859 "/usr/include/stdio.h" 3 4
+#pragma line 1 "/usr/include/x86_64-linux-gnu/bits/stdio.h" 1 3 4
+#pragma line 35 "/usr/include/x86_64-linux-gnu/bits/stdio.h" 3 4
+extern __inline __attribute__ ((__gnu_inline__)) int
+vprintf (const char *__restrict __fmt, __gnuc_va_list __arg)
+{
+  return vfprintf (stdout, __fmt, __arg);
+}
+#pragma empty_line
+#pragma empty_line
+#pragma empty_line
+extern __inline __attribute__ ((__gnu_inline__)) int
+getchar (void)
+{
+  return _IO_getc (stdin);
+}
+#pragma empty_line
+#pragma empty_line
+#pragma empty_line
+#pragma empty_line
+extern __inline __attribute__ ((__gnu_inline__)) int
+fgetc_unlocked (FILE *__fp)
+{
+  return (__builtin_expect (((__fp)->_IO_read_ptr >= (__fp)->_IO_read_end), 0) ? __uflow (__fp) : *(unsigned char *) (__fp)->_IO_read_ptr++);
+}
+#pragma empty_line
+#pragma empty_line
+#pragma empty_line
+#pragma empty_line
+#pragma empty_line
+extern __inline __attribute__ ((__gnu_inline__)) int
+getc_unlocked (FILE *__fp)
+{
+  return (__builtin_expect (((__fp)->_IO_read_ptr >= (__fp)->_IO_read_end), 0) ? __uflow (__fp) : *(unsigned char *) (__fp)->_IO_read_ptr++);
+}
+#pragma empty_line
+#pragma empty_line
+extern __inline __attribute__ ((__gnu_inline__)) int
+getchar_unlocked (void)
+{
+  return (__builtin_expect (((stdin)->_IO_read_ptr >= (stdin)->_IO_read_end), 0) ? __uflow (stdin) : *(unsigned char *) (stdin)->_IO_read_ptr++);
+}
+#pragma empty_line
+#pragma empty_line
+#pragma empty_line
+#pragma empty_line
+extern __inline __attribute__ ((__gnu_inline__)) int
+putchar (int __c)
+{
+  return _IO_putc (__c, stdout);
+}
+#pragma empty_line
+#pragma empty_line
+#pragma empty_line
+#pragma empty_line
+extern __inline __attribute__ ((__gnu_inline__)) int
+fputc_unlocked (int __c, FILE *__stream)
+{
+  return (__builtin_expect (((__stream)->_IO_write_ptr >= (__stream)->_IO_write_end), 0) ? __overflow (__stream, (unsigned char) (__c)) : (unsigned char) (*(__stream)->_IO_write_ptr++ = (__c)));
+}
+#pragma empty_line
+#pragma empty_line
+#pragma empty_line
+#pragma empty_line
+#pragma empty_line
+extern __inline __attribute__ ((__gnu_inline__)) int
+putc_unlocked (int __c, FILE *__stream)
+{
+  return (__builtin_expect (((__stream)->_IO_write_ptr >= (__stream)->_IO_write_end), 0) ? __overflow (__stream, (unsigned char) (__c)) : (unsigned char) (*(__stream)->_IO_write_ptr++ = (__c)));
+}
+#pragma empty_line
+#pragma empty_line
+extern __inline __attribute__ ((__gnu_inline__)) int
+putchar_unlocked (int __c)
+{
+  return (__builtin_expect (((stdout)->_IO_write_ptr >= (stdout)->_IO_write_end), 0) ? __overflow (stdout, (unsigned char) (__c)) : (unsigned char) (*(stdout)->_IO_write_ptr++ = (__c)));
+}
+#pragma empty_line
+#pragma empty_line
+#pragma empty_line
+#pragma empty_line
+#pragma empty_line
+extern __inline __attribute__ ((__gnu_inline__)) __ssize_t
+getline (char **__lineptr, size_t *__n, FILE *__stream)
+{
+  return __getdelim (__lineptr, __n, '\n', __stream);
+}
+#pragma empty_line
+#pragma empty_line
+#pragma empty_line
+#pragma empty_line
+#pragma empty_line
+extern __inline __attribute__ ((__gnu_inline__)) int
+__attribute__ ((__leaf__)) feof_unlocked (FILE *__stream) throw ()
+{
+  return (((__stream)->_flags & 0x10) != 0);
+}
+#pragma empty_line
+#pragma empty_line
+extern __inline __attribute__ ((__gnu_inline__)) int
+__attribute__ ((__leaf__)) ferror_unlocked (FILE *__stream) throw ()
+{
+  return (((__stream)->_flags & 0x20) != 0);
+}
+#pragma line 860 "/usr/include/stdio.h" 2 3 4
 #pragma line 868 "/usr/include/stdio.h" 3 4
 }
 #pragma line 43 "/tools/Xilinx/Vivado/2018.3/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cstdio" 2 3
@@ -18048,7 +18180,17 @@ extern int pthread_getcpuclockid (pthread_t __thread_id,
 extern int pthread_atfork (void (*__prepare) (void),
       void (*__parent) (void),
       void (*__child) (void)) throw ();
-#pragma line 1160 "/usr/include/pthread.h" 3 4
+#pragma empty_line
+#pragma empty_line
+#pragma empty_line
+#pragma empty_line
+extern __inline __attribute__ ((__gnu_inline__)) int
+__attribute__ ((__leaf__)) pthread_equal (pthread_t __thread1, pthread_t __thread2) throw ()
+{
+  return __thread1 == __thread2;
+}
+#pragma empty_line
+#pragma empty_line
 }
 #pragma line 36 "/tools/Xilinx/Vivado/2018.3/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/x86_64-pc-linux-gnu/bits/gthr-default.h" 2 3
 #pragma line 47 "/tools/Xilinx/Vivado/2018.3/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/x86_64-pc-linux-gnu/bits/gthr-default.h" 3
@@ -21594,6 +21736,24 @@ extern _Float64x strtof64x_l (const char *__restrict __nptr,
          char **__restrict __endptr,
          locale_t __loc)
      throw () __attribute__ ((__nonnull__ (1, 3)));
+#pragma line 360 "/usr/include/stdlib.h" 3 4
+extern __inline __attribute__ ((__gnu_inline__)) int
+__attribute__ ((__leaf__)) atoi (const char *__nptr) throw ()
+{
+  return (int) strtol (__nptr, (char **) __null, 10);
+}
+extern __inline __attribute__ ((__gnu_inline__)) long int
+__attribute__ ((__leaf__)) atol (const char *__nptr) throw ()
+{
+  return strtol (__nptr, (char **) __null, 10);
+}
+#pragma empty_line
+#pragma empty_line
+__extension__ extern __inline __attribute__ ((__gnu_inline__)) long long int
+__attribute__ ((__leaf__)) atoll (const char *__nptr) throw ()
+{
+  return strtoll (__nptr, (char **) __null, 10);
+}
 #pragma line 385 "/usr/include/stdlib.h" 3 4
 extern char *l64a (long int __n) throw () ;
 #pragma empty_line
@@ -21780,7 +21940,15 @@ extern "C" {
 extern unsigned int gnu_dev_major (__dev_t __dev) throw () __attribute__ ((__const__));
 extern unsigned int gnu_dev_minor (__dev_t __dev) throw () __attribute__ ((__const__));
 extern __dev_t gnu_dev_makedev (unsigned int __major, unsigned int __minor) throw () __attribute__ ((__const__));
-#pragma line 85 "/usr/include/x86_64-linux-gnu/sys/sysmacros.h" 3 4
+#pragma empty_line
+#pragma empty_line
+#pragma empty_line
+__extension__ extern __inline __attribute__ ((__gnu_inline__)) __attribute__ ((__const__)) unsigned int __attribute__ ((__leaf__)) gnu_dev_major (__dev_t __dev) throw () { unsigned int __major; __major = ((__dev & (__dev_t) 0x00000000000fff00u) >> 8); __major |= ((__dev & (__dev_t) 0xfffff00000000000u) >> 32); return __major; }
+__extension__ extern __inline __attribute__ ((__gnu_inline__)) __attribute__ ((__const__)) unsigned int __attribute__ ((__leaf__)) gnu_dev_minor (__dev_t __dev) throw () { unsigned int __minor; __minor = ((__dev & (__dev_t) 0x00000000000000ffu) >> 0); __minor |= ((__dev & (__dev_t) 0x00000ffffff00000u) >> 12); return __minor; }
+__extension__ extern __inline __attribute__ ((__gnu_inline__)) __attribute__ ((__const__)) __dev_t __attribute__ ((__leaf__)) gnu_dev_makedev (unsigned int __major, unsigned int __minor) throw () { __dev_t __dev; __dev = (((__dev_t) (__major & 0x00000fffu)) << 8); __dev |= (((__dev_t) (__major & 0xfffff000u)) << 32); __dev |= (((__dev_t) (__minor & 0x000000ffu)) << 0); __dev |= (((__dev_t) (__minor & 0xffffff00u)) << 12); return __dev; }
+#pragma empty_line
+#pragma empty_line
+#pragma empty_line
 }
 #pragma line 206 "/usr/include/x86_64-linux-gnu/sys/types.h" 2 3 4
 #pragma empty_line
@@ -22148,7 +22316,34 @@ extern void *bsearch (const void *__key, const void *__base,
      __attribute__ ((__nonnull__ (1, 2, 5))) ;
 #pragma empty_line
 #pragma empty_line
+#pragma line 1 "/usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h" 1 3 4
+#pragma line 19 "/usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h" 3 4
+extern __inline __attribute__ ((__gnu_inline__)) void *
+bsearch (const void *__key, const void *__base, size_t __nmemb, size_t __size,
+  __compar_fn_t __compar)
+{
+  size_t __l, __u, __idx;
+  const void *__p;
+  int __comparison;
 #pragma empty_line
+  __l = 0;
+  __u = __nmemb;
+  while (__l < __u)
+    {
+      __idx = (__l + __u) / 2;
+      __p = (void *) (((const char *) __base) + (__idx * __size));
+      __comparison = (*__compar) (__key, __p);
+      if (__comparison < 0)
+ __u = __idx;
+      else if (__comparison > 0)
+ __l = __idx + 1;
+      else
+ return (void *) __p;
+    }
+#pragma empty_line
+  return __null;
+}
+#pragma line 823 "/usr/include/stdlib.h" 2 3 4
 #pragma empty_line
 #pragma empty_line
 #pragma empty_line
@@ -22317,6 +22512,12 @@ extern int getloadavg (double __loadavg[], int __nelem)
      throw () __attribute__ ((__nonnull__ (1)));
 #pragma line 1016 "/usr/include/stdlib.h" 3 4
 #pragma line 1 "/usr/include/x86_64-linux-gnu/bits/stdlib-float.h" 1 3 4
+#pragma line 24 "/usr/include/x86_64-linux-gnu/bits/stdlib-float.h" 3 4
+extern __inline __attribute__ ((__gnu_inline__)) double
+__attribute__ ((__leaf__)) atof (const char *__nptr) throw ()
+{
+  return strtod (__nptr, (char **) __null);
+}
 #pragma line 1017 "/usr/include/stdlib.h" 2 3 4
 #pragma line 1026 "/usr/include/stdlib.h" 3 4
 }
@@ -40581,6 +40782,9 @@ iszero (__T __val)
 }
 #pragma empty_line
 }
+#pragma line 952 "/usr/include/math.h" 3 4
+#pragma line 1 "/usr/include/x86_64-linux-gnu/bits/mathinline.h" 1 3 4
+#pragma line 953 "/usr/include/math.h" 2 3 4
 #pragma line 1205 "/usr/include/math.h" 3 4
 extern "C++" {
 template<typename> struct __iseqsig_type;
@@ -50343,7 +50547,20 @@ extern void *memchr (void *__s, int __c, size_t __n)
       throw () __asm ("memchr") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
 extern const void *memchr (const void *__s, int __c, size_t __n)
       throw () __asm ("memchr") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
-#pragma line 88 "/usr/include/string.h" 3 4
+#pragma empty_line
+#pragma empty_line
+extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__gnu_inline__)) void *
+memchr (void *__s, int __c, size_t __n) throw ()
+{
+  return __builtin_memchr (__s, __c, __n);
+}
+#pragma empty_line
+extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__gnu_inline__)) const void *
+memchr (const void *__s, int __c, size_t __n) throw ()
+{
+  return __builtin_memchr (__s, __c, __n);
+}
+#pragma empty_line
 }
 #pragma line 98 "/usr/include/string.h" 3 4
 extern "C++" void *rawmemchr (void *__s, int __c)
@@ -50424,7 +50641,20 @@ extern char *strchr (char *__s, int __c)
      throw () __asm ("strchr") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
 extern const char *strchr (const char *__s, int __c)
      throw () __asm ("strchr") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
-#pragma line 223 "/usr/include/string.h" 3 4
+#pragma empty_line
+#pragma empty_line
+extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__gnu_inline__)) char *
+strchr (char *__s, int __c) throw ()
+{
+  return __builtin_strchr (__s, __c);
+}
+#pragma empty_line
+extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__gnu_inline__)) const char *
+strchr (const char *__s, int __c) throw ()
+{
+  return __builtin_strchr (__s, __c);
+}
+#pragma empty_line
 }
 #pragma empty_line
 #pragma empty_line
@@ -50438,7 +50668,20 @@ extern char *strrchr (char *__s, int __c)
      throw () __asm ("strrchr") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
 extern const char *strrchr (const char *__s, int __c)
      throw () __asm ("strrchr") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
-#pragma line 250 "/usr/include/string.h" 3 4
+#pragma empty_line
+#pragma empty_line
+extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__gnu_inline__)) char *
+strrchr (char *__s, int __c) throw ()
+{
+  return __builtin_strrchr (__s, __c);
+}
+#pragma empty_line
+extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__gnu_inline__)) const char *
+strrchr (const char *__s, int __c) throw ()
+{
+  return __builtin_strrchr (__s, __c);
+}
+#pragma empty_line
 }
 #pragma line 260 "/usr/include/string.h" 3 4
 extern "C++" char *strchrnul (char *__s, int __c)
@@ -50460,7 +50703,20 @@ extern char *strpbrk (char *__s, const char *__accept)
      throw () __asm ("strpbrk") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
 extern const char *strpbrk (const char *__s, const char *__accept)
      throw () __asm ("strpbrk") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
-#pragma line 300 "/usr/include/string.h" 3 4
+#pragma empty_line
+#pragma empty_line
+extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__gnu_inline__)) char *
+strpbrk (char *__s, const char *__accept) throw ()
+{
+  return __builtin_strpbrk (__s, __accept);
+}
+#pragma empty_line
+extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__gnu_inline__)) const char *
+strpbrk (const char *__s, const char *__accept) throw ()
+{
+  return __builtin_strpbrk (__s, __accept);
+}
+#pragma empty_line
 }
 #pragma empty_line
 #pragma empty_line
@@ -50474,7 +50730,20 @@ extern char *strstr (char *__haystack, const char *__needle)
      throw () __asm ("strstr") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
 extern const char *strstr (const char *__haystack, const char *__needle)
      throw () __asm ("strstr") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
-#pragma line 327 "/usr/include/string.h" 3 4
+#pragma empty_line
+#pragma empty_line
+extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__gnu_inline__)) char *
+strstr (char *__haystack, const char *__needle) throw ()
+{
+  return __builtin_strstr (__haystack, __needle);
+}
+#pragma empty_line
+extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__gnu_inline__)) const char *
+strstr (const char *__haystack, const char *__needle) throw ()
+{
+  return __builtin_strstr (__haystack, __needle);
+}
+#pragma empty_line
 }
 #pragma empty_line
 #pragma empty_line
@@ -50580,7 +50849,20 @@ extern char *index (char *__s, int __c)
      throw () __asm ("index") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
 extern const char *index (const char *__s, int __c)
      throw () __asm ("index") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
-#pragma line 66 "/usr/include/strings.h" 3 4
+#pragma empty_line
+#pragma empty_line
+extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__gnu_inline__)) char *
+index (char *__s, int __c) throw ()
+{
+  return __builtin_index (__s, __c);
+}
+#pragma empty_line
+extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__gnu_inline__)) const char *
+index (const char *__s, int __c) throw ()
+{
+  return __builtin_index (__s, __c);
+}
+#pragma empty_line
 }
 #pragma empty_line
 #pragma empty_line
@@ -50595,7 +50877,20 @@ extern char *rindex (char *__s, int __c)
      throw () __asm ("rindex") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
 extern const char *rindex (const char *__s, int __c)
      throw () __asm ("rindex") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
-#pragma line 94 "/usr/include/strings.h" 3 4
+#pragma empty_line
+#pragma empty_line
+extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__gnu_inline__)) char *
+rindex (char *__s, int __c) throw ()
+{
+  return __builtin_rindex (__s, __c);
+}
+#pragma empty_line
+extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__gnu_inline__)) const char *
+rindex (const char *__s, int __c) throw ()
+{
+  return __builtin_rindex (__s, __c);
+}
+#pragma empty_line
 }
 #pragma line 104 "/usr/include/strings.h" 3 4
 extern int ffs (int __i) throw () __attribute__ ((__const__));
@@ -72102,6 +72397,63 @@ typedef struct
     unsigned int __mxcsr;
   }
 femode_t;
+#pragma empty_line
+#pragma empty_line
+#pragma empty_line
+#pragma empty_line
+#pragma empty_line
+#pragma empty_line
+#pragma empty_line
+extern "C" {
+#pragma empty_line
+#pragma empty_line
+#pragma empty_line
+extern int __feraiseexcept_renamed (int) throw () __asm__ ("" "feraiseexcept");
+#pragma empty_line
+extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__gnu_inline__)) void
+__attribute__ ((__leaf__)) __feraiseexcept_invalid_divbyzero (int __excepts) throw ()
+{
+  if ((0x01 & __excepts) != 0)
+    {
+#pragma empty_line
+      float __f = 0.0;
+#pragma empty_line
+#pragma empty_line
+      __asm__ __volatile__ ("divss %0, %0 " : : "x" (__f));
+#pragma empty_line
+#pragma empty_line
+#pragma empty_line
+#pragma empty_line
+      (void) &__f;
+    }
+  if ((0x04 & __excepts) != 0)
+    {
+      float __f = 1.0;
+      float __g = 0.0;
+#pragma empty_line
+#pragma empty_line
+      __asm__ __volatile__ ("divss %1, %0" : : "x" (__f), "x" (__g));
+#pragma empty_line
+#pragma empty_line
+#pragma empty_line
+#pragma empty_line
+      (void) &__f;
+    }
+}
+extern __inline __attribute__ ((__gnu_inline__)) int
+__attribute__ ((__leaf__)) feraiseexcept (int __excepts) throw ()
+{
+  if (__builtin_constant_p (__excepts)
+      && (__excepts & ~(0x01 | 0x04)) == 0)
+    {
+      __feraiseexcept_invalid_divbyzero (__excepts);
+      return 0;
+    }
+#pragma empty_line
+  return __feraiseexcept_renamed (__excepts);
+}
+#pragma empty_line
+}
 #pragma line 65 "/usr/include/fenv.h" 2 3 4
 #pragma empty_line
 extern "C" {
@@ -72179,6 +72531,12 @@ extern int fegetmode (femode_t *__modep) throw ();
 #pragma empty_line
 #pragma empty_line
 extern int fesetmode (const femode_t *__modep) throw ();
+#pragma empty_line
+#pragma empty_line
+#pragma empty_line
+#pragma empty_line
+#pragma line 1 "/usr/include/x86_64-linux-gnu/bits/fenvinline.h" 1 3 4
+#pragma line 146 "/usr/include/fenv.h" 2 3 4
 #pragma line 161 "/usr/include/fenv.h" 3 4
 extern int feenableexcept (int __excepts) throw ();
 #pragma empty_line

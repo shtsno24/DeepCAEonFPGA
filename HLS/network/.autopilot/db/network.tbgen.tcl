@@ -199,8 +199,8 @@ set RtlHierarchyInfo {[
 					{"ID" : "59", "SubInstance" : "grp_pointwise_conv2d_fix_fu_653", "Port" : "SeparableConv2D_0_b_s"}]},
 			{"Name" : "SeparableConv2D_0_ar", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "59", "SubInstance" : "grp_pointwise_conv2d_fix_fu_653", "Port" : "output_r"},
-					{"ID" : "65", "SubInstance" : "grp_max_pooling2d_fix16_1_fu_681", "Port" : "SeparableConv2D_0_ar"}]},
+					{"ID" : "65", "SubInstance" : "grp_max_pooling2d_fix16_1_fu_681", "Port" : "SeparableConv2D_0_ar"},
+					{"ID" : "59", "SubInstance" : "grp_pointwise_conv2d_fix_fu_653", "Port" : "output_r"}]},
 			{"Name" : "MaxPooling2D_0_depth", "Type" : "None", "Direction" : "I"},
 			{"Name" : "MaxPooling2D_0_heigh", "Type" : "None", "Direction" : "I"},
 			{"Name" : "MaxPooling2D_0_width", "Type" : "None", "Direction" : "I"},
@@ -210,8 +210,8 @@ set RtlHierarchyInfo {[
 					{"ID" : "65", "SubInstance" : "grp_max_pooling2d_fix16_1_fu_681", "Port" : "MaxPooling2D_0_array"}]},
 			{"Name" : "Padding2D_1_array", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "41", "SubInstance" : "grp_depthwise_conv2d_fix_2_fu_565", "Port" : "Padding2D_1_array"},
-					{"ID" : "29", "SubInstance" : "grp_padding2d_fix16_3_fu_517", "Port" : "output_r"}]},
+					{"ID" : "29", "SubInstance" : "grp_padding2d_fix16_3_fu_517", "Port" : "output_r"},
+					{"ID" : "41", "SubInstance" : "grp_depthwise_conv2d_fix_2_fu_565", "Port" : "Padding2D_1_array"}]},
 			{"Name" : "Padding2D_1_depth", "Type" : "None", "Direction" : "I"},
 			{"Name" : "Padding2D_1_height", "Type" : "None", "Direction" : "I"},
 			{"Name" : "Padding2D_1_width", "Type" : "None", "Direction" : "I"},
@@ -261,8 +261,8 @@ set RtlHierarchyInfo {[
 					{"ID" : "62", "SubInstance" : "grp_pointwise_conv2d_fix_4_fu_667", "Port" : "SeparableConv2D_2_b_s"}]},
 			{"Name" : "SeparableConv2D_2_ar", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "70", "SubInstance" : "grp_up_sampling2d_fix16_1_fu_732", "Port" : "SeparableConv2D_2_ar"},
-					{"ID" : "62", "SubInstance" : "grp_pointwise_conv2d_fix_4_fu_667", "Port" : "output_r"}]},
+					{"ID" : "62", "SubInstance" : "grp_pointwise_conv2d_fix_4_fu_667", "Port" : "output_r"},
+					{"ID" : "70", "SubInstance" : "grp_up_sampling2d_fix16_1_fu_732", "Port" : "SeparableConv2D_2_ar"}]},
 			{"Name" : "UpSampling2D_0_depth", "Type" : "None", "Direction" : "I"},
 			{"Name" : "UpSampling2D_0_heigh", "Type" : "None", "Direction" : "I"},
 			{"Name" : "UpSampling2D_0_width", "Type" : "None", "Direction" : "I"},
@@ -292,8 +292,8 @@ set RtlHierarchyInfo {[
 					{"ID" : "53", "SubInstance" : "grp_pointwise_conv2d_fix_3_fu_625", "Port" : "SeparableConv2D_3_b_s"}]},
 			{"Name" : "SeparableConv2D_3_ar", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "69", "SubInstance" : "grp_up_sampling2d_fix16_fu_719", "Port" : "SeparableConv2D_3_ar"},
-					{"ID" : "53", "SubInstance" : "grp_pointwise_conv2d_fix_3_fu_625", "Port" : "output_r"}]},
+					{"ID" : "53", "SubInstance" : "grp_pointwise_conv2d_fix_3_fu_625", "Port" : "output_r"},
+					{"ID" : "69", "SubInstance" : "grp_up_sampling2d_fix16_fu_719", "Port" : "SeparableConv2D_3_ar"}]},
 			{"Name" : "UpSampling2D_1_depth", "Type" : "None", "Direction" : "I"},
 			{"Name" : "UpSampling2D_1_heigh", "Type" : "None", "Direction" : "I"},
 			{"Name" : "UpSampling2D_1_width", "Type" : "None", "Direction" : "I"},
