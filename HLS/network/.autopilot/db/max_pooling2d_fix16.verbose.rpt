@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'max_pooling2d_fix16'
 ================================================================
-* Date:           Fri Nov  8 14:42:01 2019
+* Date:           Wed Nov 13 17:14:43 2019
 
 * Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
 * Project:        HLS
@@ -334,7 +334,7 @@ State 9 <SV = 8> <Delay = 5.80>
 ST_9 : Operation 67 [1/1] (0.00ns)   --->   "%in_w = phi i2 [ %in_w_1, %5 ], [ 0, %.preheader.preheader ]"   --->   Operation 67 'phi' 'in_w' <Predicate = true> <Delay = 0.00>
 ST_9 : Operation 68 [1/1] (0.00ns)   --->   "%tmp_27 = trunc i2 %in_w to i1" [layers_c/max_pooling2d.cpp:18]   --->   Operation 68 'trunc' 'tmp_27' <Predicate = true> <Delay = 0.00>
 ST_9 : Operation 69 [1/1] (0.95ns)   --->   "%exitcond = icmp eq i2 %in_w, -2" [layers_c/max_pooling2d.cpp:18]   --->   Operation 69 'icmp' 'exitcond' <Predicate = true> <Delay = 0.95> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.42> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_9 : Operation 70 [1/1] (0.00ns)   --->   "%empty_25 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 2, i64 2, i64 2)"   --->   Operation 70 'speclooptripcount' 'empty_25' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 70 [1/1] (0.00ns)   --->   "%empty_27 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 2, i64 2, i64 2)"   --->   Operation 70 'speclooptripcount' 'empty_27' <Predicate = true> <Delay = 0.00>
 ST_9 : Operation 71 [1/1] (1.56ns)   --->   "%in_w_1 = add i2 1, %in_w" [layers_c/max_pooling2d.cpp:18]   --->   Operation 71 'add' 'in_w_1' <Predicate = true> <Delay = 1.56> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_9 : Operation 72 [1/1] (0.00ns)   --->   "br i1 %exitcond, label %.preheader5.loopexit, label %1" [layers_c/max_pooling2d.cpp:18]   --->   Operation 72 'br' <Predicate = true> <Delay = 0.00>
 ST_9 : Operation 73 [1/1] (0.97ns)   --->   "%tmp_105 = or i1 %tmp_27, %tmp_26" [layers_c/max_pooling2d.cpp:20]   --->   Operation 73 'or' 'tmp_105' <Predicate = (!exitcond)> <Delay = 0.97> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
@@ -449,7 +449,7 @@ StgValue_66            (br               ) [ 00111111111]
 in_w                   (phi              ) [ 00000000010]
 tmp_27                 (trunc            ) [ 00000000000]
 exitcond               (icmp             ) [ 00111111111]
-empty_25               (speclooptripcount) [ 00000000000]
+empty_27               (speclooptripcount) [ 00000000000]
 in_w_1                 (add              ) [ 00111111111]
 StgValue_72            (br               ) [ 00000000000]
 tmp_105                (or               ) [ 00111111111]

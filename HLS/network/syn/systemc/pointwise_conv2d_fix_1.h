@@ -148,11 +148,11 @@ struct pointwise_conv2d_fix_1 : public sc_module {
     static const sc_lv<16> ap_const_lv16_1;
     static const sc_lv<32> ap_const_lv32_E;
     static const sc_lv<32> ap_const_lv32_1D;
-    static const sc_lv<16> ap_const_lv16_E3EB;
-    static const sc_lv<15> ap_const_lv15_63EB;
+    static const sc_lv<16> ap_const_lv16_D60D;
+    static const sc_lv<15> ap_const_lv15_560D;
     static const sc_lv<32> ap_const_lv32_F;
     static const sc_lv<15> ap_const_lv15_0;
-    static const sc_lv<30> ap_const_lv30_3FFFE7C7;
+    static const sc_lv<30> ap_const_lv30_3FFFE69A;
     static const bool ap_const_boolean_1;
     // Thread declarations
     void thread_ap_clk_no_reset_();

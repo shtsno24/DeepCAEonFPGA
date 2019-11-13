@@ -559,7 +559,7 @@
               <name>tmp_116</name>
               <fileName>layers_c/depthwise_conv2d.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>25</lineNumber>
+              <lineNumber>23</lineNumber>
               <contextFuncName>depthwise_conv2d_fix16</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -574,7 +574,7 @@
                         <first>layers_c/depthwise_conv2d.cpp</first>
                         <second>depthwise_conv2d_fix16</second>
                       </first>
-                      <second>25</second>
+                      <second>23</second>
                     </item>
                   </second>
                 </item>
@@ -607,7 +607,7 @@
               <name>tmp_117</name>
               <fileName>layers_c/depthwise_conv2d.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>25</lineNumber>
+              <lineNumber>23</lineNumber>
               <contextFuncName>depthwise_conv2d_fix16</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -622,7 +622,7 @@
                         <first>layers_c/depthwise_conv2d.cpp</first>
                         <second>depthwise_conv2d_fix16</second>
                       </first>
-                      <second>25</second>
+                      <second>23</second>
                     </item>
                   </second>
                 </item>
@@ -791,7 +791,7 @@
               <name>phi_mul2</name>
               <fileName>layers_c/depthwise_conv2d.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>25</lineNumber>
+              <lineNumber>23</lineNumber>
               <contextFuncName>depthwise_conv2d_fix16</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -806,7 +806,7 @@
                         <first>layers_c/depthwise_conv2d.cpp</first>
                         <second>depthwise_conv2d_fix16</second>
                       </first>
-                      <second>25</second>
+                      <second>23</second>
                     </item>
                   </second>
                 </item>
@@ -842,7 +842,7 @@
               <name>next_mul3</name>
               <fileName>layers_c/depthwise_conv2d.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>25</lineNumber>
+              <lineNumber>23</lineNumber>
               <contextFuncName>depthwise_conv2d_fix16</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -857,7 +857,7 @@
                         <first>layers_c/depthwise_conv2d.cpp</first>
                         <second>depthwise_conv2d_fix16</second>
                       </first>
-                      <second>25</second>
+                      <second>23</second>
                     </item>
                   </second>
                 </item>
@@ -1136,7 +1136,7 @@
               <name>p_shl</name>
               <fileName>layers_c/depthwise_conv2d.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>25</lineNumber>
+              <lineNumber>23</lineNumber>
               <contextFuncName>depthwise_conv2d_fix16</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -1151,7 +1151,7 @@
                         <first>layers_c/depthwise_conv2d.cpp</first>
                         <second>depthwise_conv2d_fix16</second>
                       </first>
-                      <second>25</second>
+                      <second>23</second>
                     </item>
                   </second>
                 </item>
@@ -1186,7 +1186,7 @@
               <name>p_shl_cast</name>
               <fileName>layers_c/depthwise_conv2d.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>25</lineNumber>
+              <lineNumber>23</lineNumber>
               <contextFuncName>depthwise_conv2d_fix16</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -1201,7 +1201,7 @@
                         <first>layers_c/depthwise_conv2d.cpp</first>
                         <second>depthwise_conv2d_fix16</second>
                       </first>
-                      <second>25</second>
+                      <second>23</second>
                     </item>
                   </second>
                 </item>
@@ -2419,7 +2419,7 @@
               <name>tmp_128_cast1</name>
               <fileName>layers_c/depthwise_conv2d.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>25</lineNumber>
+              <lineNumber>23</lineNumber>
               <contextFuncName>depthwise_conv2d_fix16</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -2434,7 +2434,7 @@
                         <first>layers_c/depthwise_conv2d.cpp</first>
                         <second>depthwise_conv2d_fix16</second>
                       </first>
-                      <second>25</second>
+                      <second>23</second>
                     </item>
                   </second>
                 </item>
@@ -2467,7 +2467,7 @@
               <name>tmp_128_cast9</name>
               <fileName>layers_c/depthwise_conv2d.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>25</lineNumber>
+              <lineNumber>23</lineNumber>
               <contextFuncName>depthwise_conv2d_fix16</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -2482,7 +2482,7 @@
                         <first>layers_c/depthwise_conv2d.cpp</first>
                         <second>depthwise_conv2d_fix16</second>
                       </first>
-                      <second>25</second>
+                      <second>23</second>
                     </item>
                   </second>
                 </item>
@@ -2515,7 +2515,7 @@
               <name>p_shl2</name>
               <fileName>layers_c/depthwise_conv2d.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>25</lineNumber>
+              <lineNumber>23</lineNumber>
               <contextFuncName>depthwise_conv2d_fix16</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -2530,7 +2530,7 @@
                         <first>layers_c/depthwise_conv2d.cpp</first>
                         <second>depthwise_conv2d_fix16</second>
                       </first>
-                      <second>25</second>
+                      <second>23</second>
                     </item>
                   </second>
                 </item>
@@ -2565,7 +2565,7 @@
               <name>p_shl2_cast</name>
               <fileName>layers_c/depthwise_conv2d.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>25</lineNumber>
+              <lineNumber>23</lineNumber>
               <contextFuncName>depthwise_conv2d_fix16</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -2580,7 +2580,7 @@
                         <first>layers_c/depthwise_conv2d.cpp</first>
                         <second>depthwise_conv2d_fix16</second>
                       </first>
-                      <second>25</second>
+                      <second>23</second>
                     </item>
                   </second>
                 </item>
@@ -2613,7 +2613,7 @@
               <name>tmp_129</name>
               <fileName>layers_c/depthwise_conv2d.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>25</lineNumber>
+              <lineNumber>23</lineNumber>
               <contextFuncName>depthwise_conv2d_fix16</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -2628,7 +2628,7 @@
                         <first>layers_c/depthwise_conv2d.cpp</first>
                         <second>depthwise_conv2d_fix16</second>
                       </first>
-                      <second>25</second>
+                      <second>23</second>
                     </item>
                   </second>
                 </item>
@@ -2662,7 +2662,7 @@
               <name>tmp_129_cast</name>
               <fileName>layers_c/depthwise_conv2d.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>25</lineNumber>
+              <lineNumber>23</lineNumber>
               <contextFuncName>depthwise_conv2d_fix16</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -2677,7 +2677,7 @@
                         <first>layers_c/depthwise_conv2d.cpp</first>
                         <second>depthwise_conv2d_fix16</second>
                       </first>
-                      <second>25</second>
+                      <second>23</second>
                     </item>
                   </second>
                 </item>
@@ -2710,7 +2710,7 @@
               <name>tmp4</name>
               <fileName>layers_c/depthwise_conv2d.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>25</lineNumber>
+              <lineNumber>23</lineNumber>
               <contextFuncName>depthwise_conv2d_fix16</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -2725,7 +2725,7 @@
                         <first>layers_c/depthwise_conv2d.cpp</first>
                         <second>depthwise_conv2d_fix16</second>
                       </first>
-                      <second>25</second>
+                      <second>23</second>
                     </item>
                   </second>
                 </item>
@@ -2759,7 +2759,7 @@
               <name>tmp4_cast</name>
               <fileName>layers_c/depthwise_conv2d.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>25</lineNumber>
+              <lineNumber>23</lineNumber>
               <contextFuncName>depthwise_conv2d_fix16</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -2774,7 +2774,7 @@
                         <first>layers_c/depthwise_conv2d.cpp</first>
                         <second>depthwise_conv2d_fix16</second>
                       </first>
-                      <second>25</second>
+                      <second>23</second>
                     </item>
                   </second>
                 </item>
@@ -2807,7 +2807,7 @@
               <name>tmp2</name>
               <fileName>layers_c/depthwise_conv2d.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>25</lineNumber>
+              <lineNumber>23</lineNumber>
               <contextFuncName>depthwise_conv2d_fix16</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -2822,7 +2822,7 @@
                         <first>layers_c/depthwise_conv2d.cpp</first>
                         <second>depthwise_conv2d_fix16</second>
                       </first>
-                      <second>25</second>
+                      <second>23</second>
                     </item>
                   </second>
                 </item>
@@ -2856,7 +2856,7 @@
               <name>tmp3</name>
               <fileName>layers_c/depthwise_conv2d.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>25</lineNumber>
+              <lineNumber>23</lineNumber>
               <contextFuncName>depthwise_conv2d_fix16</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -2871,7 +2871,7 @@
                         <first>layers_c/depthwise_conv2d.cpp</first>
                         <second>depthwise_conv2d_fix16</second>
                       </first>
-                      <second>25</second>
+                      <second>23</second>
                     </item>
                   </second>
                 </item>
@@ -2905,7 +2905,7 @@
               <name>tmp6</name>
               <fileName>layers_c/depthwise_conv2d.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>25</lineNumber>
+              <lineNumber>23</lineNumber>
               <contextFuncName>depthwise_conv2d_fix16</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -2920,7 +2920,7 @@
                         <first>layers_c/depthwise_conv2d.cpp</first>
                         <second>depthwise_conv2d_fix16</second>
                       </first>
-                      <second>25</second>
+                      <second>23</second>
                     </item>
                   </second>
                 </item>
@@ -2954,7 +2954,7 @@
               <name/>
               <fileName>layers_c/depthwise_conv2d.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>23</lineNumber>
+              <lineNumber>22</lineNumber>
               <contextFuncName>depthwise_conv2d_fix16</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -2969,7 +2969,7 @@
                         <first>layers_c/depthwise_conv2d.cpp</first>
                         <second>depthwise_conv2d_fix16</second>
                       </first>
-                      <second>23</second>
+                      <second>22</second>
                     </item>
                   </second>
                 </item>
@@ -3039,7 +3039,7 @@
               <name>exitcond</name>
               <fileName>layers_c/depthwise_conv2d.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>23</lineNumber>
+              <lineNumber>22</lineNumber>
               <contextFuncName>depthwise_conv2d_fix16</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -3054,7 +3054,7 @@
                         <first>layers_c/depthwise_conv2d.cpp</first>
                         <second>depthwise_conv2d_fix16</second>
                       </first>
-                      <second>23</second>
+                      <second>22</second>
                     </item>
                   </second>
                 </item>
@@ -3088,7 +3088,7 @@
               <name>k_w_1</name>
               <fileName>layers_c/depthwise_conv2d.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>23</lineNumber>
+              <lineNumber>22</lineNumber>
               <contextFuncName>depthwise_conv2d_fix16</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -3103,7 +3103,7 @@
                         <first>layers_c/depthwise_conv2d.cpp</first>
                         <second>depthwise_conv2d_fix16</second>
                       </first>
-                      <second>23</second>
+                      <second>22</second>
                     </item>
                   </second>
                 </item>
@@ -3137,7 +3137,7 @@
               <name/>
               <fileName>layers_c/depthwise_conv2d.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>23</lineNumber>
+              <lineNumber>22</lineNumber>
               <contextFuncName>depthwise_conv2d_fix16</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -3152,7 +3152,7 @@
                         <first>layers_c/depthwise_conv2d.cpp</first>
                         <second>depthwise_conv2d_fix16</second>
                       </first>
-                      <second>23</second>
+                      <second>22</second>
                     </item>
                   </second>
                 </item>
@@ -3187,7 +3187,7 @@
               <name>tmp_130_cast</name>
               <fileName>layers_c/depthwise_conv2d.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>25</lineNumber>
+              <lineNumber>23</lineNumber>
               <contextFuncName>depthwise_conv2d_fix16</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -3202,7 +3202,7 @@
                         <first>layers_c/depthwise_conv2d.cpp</first>
                         <second>depthwise_conv2d_fix16</second>
                       </first>
-                      <second>25</second>
+                      <second>23</second>
                     </item>
                   </second>
                 </item>
@@ -3235,7 +3235,7 @@
               <name>tmp5</name>
               <fileName>layers_c/depthwise_conv2d.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>25</lineNumber>
+              <lineNumber>23</lineNumber>
               <contextFuncName>depthwise_conv2d_fix16</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -3250,7 +3250,7 @@
                         <first>layers_c/depthwise_conv2d.cpp</first>
                         <second>depthwise_conv2d_fix16</second>
                       </first>
-                      <second>25</second>
+                      <second>23</second>
                     </item>
                   </second>
                 </item>
@@ -3284,7 +3284,7 @@
               <name>tmp5_cast</name>
               <fileName>layers_c/depthwise_conv2d.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>25</lineNumber>
+              <lineNumber>23</lineNumber>
               <contextFuncName>depthwise_conv2d_fix16</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -3299,7 +3299,7 @@
                         <first>layers_c/depthwise_conv2d.cpp</first>
                         <second>depthwise_conv2d_fix16</second>
                       </first>
-                      <second>25</second>
+                      <second>23</second>
                     </item>
                   </second>
                 </item>
@@ -3332,7 +3332,7 @@
               <name>tmp_133</name>
               <fileName>layers_c/depthwise_conv2d.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>25</lineNumber>
+              <lineNumber>23</lineNumber>
               <contextFuncName>depthwise_conv2d_fix16</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -3347,7 +3347,7 @@
                         <first>layers_c/depthwise_conv2d.cpp</first>
                         <second>depthwise_conv2d_fix16</second>
                       </first>
-                      <second>25</second>
+                      <second>23</second>
                     </item>
                   </second>
                 </item>
@@ -3381,7 +3381,7 @@
               <name>tmp_134</name>
               <fileName>layers_c/depthwise_conv2d.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>25</lineNumber>
+              <lineNumber>23</lineNumber>
               <contextFuncName>depthwise_conv2d_fix16</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -3396,7 +3396,7 @@
                         <first>layers_c/depthwise_conv2d.cpp</first>
                         <second>depthwise_conv2d_fix16</second>
                       </first>
-                      <second>25</second>
+                      <second>23</second>
                     </item>
                   </second>
                 </item>
@@ -3429,7 +3429,7 @@
               <name>Padding2D_4_array_ad</name>
               <fileName>layers_c/depthwise_conv2d.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>25</lineNumber>
+              <lineNumber>23</lineNumber>
               <contextFuncName>depthwise_conv2d_fix16</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -3444,7 +3444,7 @@
                         <first>layers_c/depthwise_conv2d.cpp</first>
                         <second>depthwise_conv2d_fix16</second>
                       </first>
-                      <second>25</second>
+                      <second>23</second>
                     </item>
                   </second>
                 </item>
@@ -3479,7 +3479,7 @@
               <name>Padding2D_4_array_lo</name>
               <fileName>layers_c/depthwise_conv2d.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>25</lineNumber>
+              <lineNumber>23</lineNumber>
               <contextFuncName>depthwise_conv2d_fix16</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -3494,7 +3494,7 @@
                         <first>layers_c/depthwise_conv2d.cpp</first>
                         <second>depthwise_conv2d_fix16</second>
                       </first>
-                      <second>25</second>
+                      <second>23</second>
                     </item>
                   </second>
                 </item>
@@ -3527,7 +3527,7 @@
               <name>tmp_135_cast</name>
               <fileName>layers_c/depthwise_conv2d.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>25</lineNumber>
+              <lineNumber>23</lineNumber>
               <contextFuncName>depthwise_conv2d_fix16</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -3542,7 +3542,7 @@
                         <first>layers_c/depthwise_conv2d.cpp</first>
                         <second>depthwise_conv2d_fix16</second>
                       </first>
-                      <second>25</second>
+                      <second>23</second>
                     </item>
                   </second>
                 </item>
@@ -3575,7 +3575,7 @@
               <name>tmp7</name>
               <fileName>layers_c/depthwise_conv2d.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>25</lineNumber>
+              <lineNumber>23</lineNumber>
               <contextFuncName>depthwise_conv2d_fix16</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -3590,7 +3590,7 @@
                         <first>layers_c/depthwise_conv2d.cpp</first>
                         <second>depthwise_conv2d_fix16</second>
                       </first>
-                      <second>25</second>
+                      <second>23</second>
                     </item>
                   </second>
                 </item>
@@ -3624,7 +3624,7 @@
               <name>tmp7_cast</name>
               <fileName>layers_c/depthwise_conv2d.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>25</lineNumber>
+              <lineNumber>23</lineNumber>
               <contextFuncName>depthwise_conv2d_fix16</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -3639,7 +3639,7 @@
                         <first>layers_c/depthwise_conv2d.cpp</first>
                         <second>depthwise_conv2d_fix16</second>
                       </first>
-                      <second>25</second>
+                      <second>23</second>
                     </item>
                   </second>
                 </item>
@@ -3672,7 +3672,7 @@
               <name>tmp_135</name>
               <fileName>layers_c/depthwise_conv2d.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>25</lineNumber>
+              <lineNumber>23</lineNumber>
               <contextFuncName>depthwise_conv2d_fix16</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -3687,7 +3687,7 @@
                         <first>layers_c/depthwise_conv2d.cpp</first>
                         <second>depthwise_conv2d_fix16</second>
                       </first>
-                      <second>25</second>
+                      <second>23</second>
                     </item>
                   </second>
                 </item>
@@ -3721,7 +3721,7 @@
               <name>tmp_137_cast</name>
               <fileName>layers_c/depthwise_conv2d.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>25</lineNumber>
+              <lineNumber>23</lineNumber>
               <contextFuncName>depthwise_conv2d_fix16</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -3736,7 +3736,7 @@
                         <first>layers_c/depthwise_conv2d.cpp</first>
                         <second>depthwise_conv2d_fix16</second>
                       </first>
-                      <second>25</second>
+                      <second>23</second>
                     </item>
                   </second>
                 </item>
@@ -3769,7 +3769,7 @@
               <name>tmp_136</name>
               <fileName>layers_c/depthwise_conv2d.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>25</lineNumber>
+              <lineNumber>23</lineNumber>
               <contextFuncName>depthwise_conv2d_fix16</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -3784,7 +3784,7 @@
                         <first>layers_c/depthwise_conv2d.cpp</first>
                         <second>depthwise_conv2d_fix16</second>
                       </first>
-                      <second>25</second>
+                      <second>23</second>
                     </item>
                   </second>
                 </item>
@@ -3817,7 +3817,7 @@
               <name>SeparableConv2D_4_w_1</name>
               <fileName>layers_c/depthwise_conv2d.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>25</lineNumber>
+              <lineNumber>23</lineNumber>
               <contextFuncName>depthwise_conv2d_fix16</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -3832,7 +3832,7 @@
                         <first>layers_c/depthwise_conv2d.cpp</first>
                         <second>depthwise_conv2d_fix16</second>
                       </first>
-                      <second>25</second>
+                      <second>23</second>
                     </item>
                   </second>
                 </item>
@@ -3867,7 +3867,7 @@
               <name>SeparableConv2D_4_w_2</name>
               <fileName>layers_c/depthwise_conv2d.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>25</lineNumber>
+              <lineNumber>23</lineNumber>
               <contextFuncName>depthwise_conv2d_fix16</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -3882,7 +3882,7 @@
                         <first>layers_c/depthwise_conv2d.cpp</first>
                         <second>depthwise_conv2d_fix16</second>
                       </first>
-                      <second>25</second>
+                      <second>23</second>
                     </item>
                   </second>
                 </item>
@@ -3891,7 +3891,7 @@
               <rtlName/>
               <coreName/>
             </Obj>
-            <bitwidth>14</bitwidth>
+            <bitwidth>15</bitwidth>
           </Value>
           <oprand_edges>
             <count>1</count>
@@ -3915,7 +3915,7 @@
               <name>tmp_139_cast</name>
               <fileName>layers_c/depthwise_conv2d.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>25</lineNumber>
+              <lineNumber>23</lineNumber>
               <contextFuncName>depthwise_conv2d_fix16</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -3930,7 +3930,7 @@
                         <first>layers_c/depthwise_conv2d.cpp</first>
                         <second>depthwise_conv2d_fix16</second>
                       </first>
-                      <second>25</second>
+                      <second>23</second>
                     </item>
                   </second>
                 </item>
@@ -3963,7 +3963,7 @@
               <name>tmp_137</name>
               <fileName>layers_c/depthwise_conv2d.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>25</lineNumber>
+              <lineNumber>23</lineNumber>
               <contextFuncName>depthwise_conv2d_fix16</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -3978,13 +3978,13 @@
                         <first>layers_c/depthwise_conv2d.cpp</first>
                         <second>depthwise_conv2d_fix16</second>
                       </first>
-                      <second>25</second>
+                      <second>23</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>network_mul_mul_16s_14s_30_1_1_U132</rtlName>
+              <rtlName>network_mul_mul_16s_15s_30_1_1_U132</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>30</bitwidth>
@@ -4012,7 +4012,7 @@
               <name>tmp_139</name>
               <fileName>layers_c/depthwise_conv2d.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>25</lineNumber>
+              <lineNumber>23</lineNumber>
               <contextFuncName>depthwise_conv2d_fix16</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -4027,7 +4027,7 @@
                         <first>layers_c/depthwise_conv2d.cpp</first>
                         <second>depthwise_conv2d_fix16</second>
                       </first>
-                      <second>25</second>
+                      <second>23</second>
                     </item>
                   </second>
                 </item>
@@ -4063,7 +4063,7 @@
               <name>output_load</name>
               <fileName>layers_c/depthwise_conv2d.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>25</lineNumber>
+              <lineNumber>23</lineNumber>
               <contextFuncName>depthwise_conv2d_fix16</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -4078,7 +4078,7 @@
                         <first>layers_c/depthwise_conv2d.cpp</first>
                         <second>depthwise_conv2d_fix16</second>
                       </first>
-                      <second>25</second>
+                      <second>23</second>
                     </item>
                   </second>
                 </item>
@@ -4111,7 +4111,7 @@
               <name>tmp_140</name>
               <fileName>layers_c/depthwise_conv2d.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>25</lineNumber>
+              <lineNumber>23</lineNumber>
               <contextFuncName>depthwise_conv2d_fix16</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -4126,7 +4126,7 @@
                         <first>layers_c/depthwise_conv2d.cpp</first>
                         <second>depthwise_conv2d_fix16</second>
                       </first>
-                      <second>25</second>
+                      <second>23</second>
                     </item>
                   </second>
                 </item>
@@ -4160,7 +4160,7 @@
               <name/>
               <fileName>layers_c/depthwise_conv2d.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>25</lineNumber>
+              <lineNumber>23</lineNumber>
               <contextFuncName>depthwise_conv2d_fix16</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -4175,7 +4175,7 @@
                         <first>layers_c/depthwise_conv2d.cpp</first>
                         <second>depthwise_conv2d_fix16</second>
                       </first>
-                      <second>25</second>
+                      <second>23</second>
                     </item>
                   </second>
                 </item>
@@ -4210,7 +4210,7 @@
               <name/>
               <fileName>layers_c/depthwise_conv2d.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>23</lineNumber>
+              <lineNumber>22</lineNumber>
               <contextFuncName>depthwise_conv2d_fix16</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -4225,7 +4225,7 @@
                         <first>layers_c/depthwise_conv2d.cpp</first>
                         <second>depthwise_conv2d_fix16</second>
                       </first>
-                      <second>23</second>
+                      <second>22</second>
                     </item>
                   </second>
                 </item>
@@ -8176,7 +8176,7 @@
             </item>
             <item>
               <first>(1Bits)</first>
-              <second>14</second>
+              <second>15</second>
             </item>
             <item>
               <first>(2Banks)</first>
@@ -8184,7 +8184,7 @@
             </item>
             <item>
               <first>(3W*Bits*Banks)</first>
-              <second>2016</second>
+              <second>2160</second>
             </item>
             <item>
               <first>BRAM</first>
@@ -8464,7 +8464,7 @@
             <item_version>0</item_version>
             <item>
               <first>(Bits)</first>
-              <second>14</second>
+              <second>15</second>
             </item>
             <item>
               <first>(Consts)</first>
@@ -8472,7 +8472,7 @@
             </item>
             <item>
               <first>FF</first>
-              <second>14</second>
+              <second>15</second>
             </item>
           </second>
         </item>
@@ -9051,7 +9051,7 @@
         <count>1</count>
         <item_version>0</item_version>
         <item>
-          <first>network_mul_mul_16s_14s_30_1_1_U132</first>
+          <first>network_mul_mul_16s_15s_30_1_1_U132</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>

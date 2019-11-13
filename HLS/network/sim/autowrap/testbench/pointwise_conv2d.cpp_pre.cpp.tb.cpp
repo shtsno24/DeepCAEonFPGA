@@ -1,5 +1,5 @@
 // ==============================================================
-// File generated on Fri Nov 08 14:43:07 JST 2019
+// File generated on Wed Nov 13 17:15:57 JST 2019
 // Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
 // SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 // IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
@@ -247,16 +247,15 @@ uint8_t relu, uint8_t fractal_width){
 
 
 
-
     for(uint16_t out_d = 0; out_d < output_depth; out_d++){
         for(uint16_t out_h = 0; out_h < output_height; out_h++){
             for(uint16_t out_w = 0; out_w < output_width; out_w++){
                 output[out_d * output_height * output_width + out_h * output_width + out_w] = 0;
                 for(uint16_t in_d = 0; in_d < input_depth; in_d++){
+
                     output[out_d * output_height * output_width + out_h * output_width + out_w] +=
                         (int16_t)(((int32_t)(input[in_d * input_height * input_width + out_h * input_width + out_w]) *
-                                    (int32_t)(kernel[(out_d * input_depth) + (in_d)])) >> fractal_width);
-
+                                    (int32_t)(kernel[out_d * input_depth + in_d])) >> fractal_width);
                 }
 
                 output[out_d * output_height * output_width + out_h * output_width + out_w] += bias[out_d];
@@ -290,7 +289,7 @@ uint8_t relu){
                 for(uint16_t in_d = 0; in_d < input_depth; in_d++){
                     output[out_d * output_height * output_width + out_h * output_width + out_w] +=
                         input[in_d * input_height * input_width + out_h * input_width + out_w] *
-                            kernel[(out_d * input_depth) + (in_d)];
+                            kernel[out_d * input_depth + in_d];
                 }
 
                 output[out_d * output_height * output_width + out_h * output_width + out_w] += bias[out_d];

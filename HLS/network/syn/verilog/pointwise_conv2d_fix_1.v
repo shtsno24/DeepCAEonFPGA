@@ -490,15 +490,15 @@ assign tmp_25_fu_233_p2 = (tmp1_reg_401 + tmp_24_fu_229_p1);
 
 assign tmp_26_fu_238_p1 = $signed(tmp_25_fu_233_p2);
 
-assign tmp_27_cast_fu_304_p2 = ($signed(15'd25579) + $signed(tmp_7_fu_294_p1));
+assign tmp_27_cast_fu_304_p2 = ($signed(15'd22029) + $signed(tmp_7_fu_294_p1));
 
-assign tmp_27_fu_298_p2 = ($signed(16'd58347) + $signed(output_load_1_reg_134));
+assign tmp_27_fu_298_p2 = ($signed(16'd54797) + $signed(output_load_1_reg_134));
 
 assign tmp_31_fu_268_p2 = (tmp3_reg_442 + tmp_24_reg_414);
 
 assign tmp_32_fu_272_p1 = $signed(tmp_31_fu_268_p2);
 
-assign tmp_33_fu_331_p1 = 30'd1073735623;
+assign tmp_33_fu_331_p1 = 30'd1073735322;
 
 assign tmp_36_fu_289_p2 = (output_load_1_reg_134 + tmp_35_reg_457);
 

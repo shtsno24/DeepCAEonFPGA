@@ -64,11 +64,11 @@ architecture behav of pointwise_conv2d_fix_1 is
     constant ap_const_lv16_1 : STD_LOGIC_VECTOR (15 downto 0) := "0000000000000001";
     constant ap_const_lv32_E : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000001110";
     constant ap_const_lv32_1D : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000011101";
-    constant ap_const_lv16_E3EB : STD_LOGIC_VECTOR (15 downto 0) := "1110001111101011";
-    constant ap_const_lv15_63EB : STD_LOGIC_VECTOR (14 downto 0) := "110001111101011";
+    constant ap_const_lv16_D60D : STD_LOGIC_VECTOR (15 downto 0) := "1101011000001101";
+    constant ap_const_lv15_560D : STD_LOGIC_VECTOR (14 downto 0) := "101011000001101";
     constant ap_const_lv32_F : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000001111";
     constant ap_const_lv15_0 : STD_LOGIC_VECTOR (14 downto 0) := "000000000000000";
-    constant ap_const_lv30_3FFFE7C7 : STD_LOGIC_VECTOR (29 downto 0) := "111111111111111110011111000111";
+    constant ap_const_lv30_3FFFE69A : STD_LOGIC_VECTOR (29 downto 0) := "111111111111111110011010011010";
     constant ap_const_boolean_1 : BOOLEAN := true;
 
     signal ap_CS_fsm : STD_LOGIC_VECTOR (11 downto 0) := "000000000001";
@@ -545,12 +545,12 @@ begin
     tmp_25_fu_233_p2 <= std_logic_vector(unsigned(tmp1_reg_401) + unsigned(tmp_24_fu_229_p1));
         tmp_26_fu_238_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(tmp_25_fu_233_p2),64));
 
-    tmp_27_cast_fu_304_p2 <= std_logic_vector(signed(ap_const_lv15_63EB) + signed(tmp_7_fu_294_p1));
-    tmp_27_fu_298_p2 <= std_logic_vector(signed(ap_const_lv16_E3EB) + signed(output_load_1_reg_134));
+    tmp_27_cast_fu_304_p2 <= std_logic_vector(signed(ap_const_lv15_560D) + signed(tmp_7_fu_294_p1));
+    tmp_27_fu_298_p2 <= std_logic_vector(signed(ap_const_lv16_D60D) + signed(output_load_1_reg_134));
     tmp_31_fu_268_p2 <= std_logic_vector(unsigned(tmp3_reg_442) + unsigned(tmp_24_reg_414));
         tmp_32_fu_272_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(tmp_31_fu_268_p2),64));
 
-    tmp_33_fu_331_p1 <= ap_const_lv30_3FFFE7C7(14 - 1 downto 0);
+    tmp_33_fu_331_p1 <= ap_const_lv30_3FFFE69A(14 - 1 downto 0);
     tmp_36_fu_289_p2 <= std_logic_vector(unsigned(output_load_1_reg_134) + unsigned(tmp_35_reg_457));
     tmp_7_fu_294_p1 <= output_load_1_reg_134(15 - 1 downto 0);
     tmp_8_fu_310_p3 <= tmp_27_fu_298_p2(15 downto 15);

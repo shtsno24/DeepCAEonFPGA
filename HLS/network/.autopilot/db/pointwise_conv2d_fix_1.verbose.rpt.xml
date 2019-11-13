@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'pointwise_conv2d_fix_1'" level="0">
-<item name = "Date">Fri Nov  8 14:42:04 2019
+<item name = "Date">Wed Nov 13 17:14:46 2019
 </item>
 <item name = "Version">2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)</item>
 <item name = "Project">HLS</item>
@@ -92,8 +92,8 @@
 <column name="out_w_2_fu_223_p2">+, 0, 0, 23, 16, 1</column>
 <column name="tmp2_fu_259_p2">+, 0, 0, 39, 32, 32</column>
 <column name="tmp_25_fu_233_p2">+, 0, 0, 39, 32, 32</column>
-<column name="tmp_27_cast_fu_304_p2">+, 0, 0, 21, 14, 15</column>
-<column name="tmp_27_fu_298_p2">+, 0, 0, 23, 14, 16</column>
+<column name="tmp_27_cast_fu_304_p2">+, 0, 0, 21, 15, 15</column>
+<column name="tmp_27_fu_298_p2">+, 0, 0, 23, 15, 16</column>
 <column name="tmp_31_fu_268_p2">+, 0, 0, 39, 32, 32</column>
 <column name="tmp_36_fu_289_p2">+, 0, 0, 23, 16, 16</column>
 <column name="tmp_fu_208_p2">+, 0, 0, 39, 32, 32</column>

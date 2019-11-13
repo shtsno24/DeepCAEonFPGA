@@ -1,93 +1,17 @@
 # This script segment is generated automatically by AutoPilot
 
-set id 47
-set name network_mul_mul_16s_14ns_30_1_1
-set corename simcore_mul
-set op mul
-set stage_num 1
-set max_latency -1
-set registered_input 1
-set in0_width 16
-set in0_signed 1
-set in1_width 14
-set in1_signed 0
-set out_width 30
-set exp i0*i1
-set arg_lists {i0 {16 1 +} i1 {14 0 +} p {30 1 +} acc {0} }
-set TrueReset 0
-if {${::AESL::PGuard_simmodel_gen}} {
-if {[info proc ap_gen_simcore_mul] == "ap_gen_simcore_mul"} {
-eval "ap_gen_simcore_mul { \
-    id ${id} \
-    name ${name} \
-    corename ${corename} \
-    op ${op} \
-    reset_level 1 \
-    sync_rst true \
-    true_reset ${TrueReset} \
-    stage_num ${stage_num} \
-    max_latency ${max_latency} \
-    registered_input ${registered_input} \
-    in0_width ${in0_width} \
-    in0_signed ${in0_signed} \
-    in1_width ${in1_width} \
-    in1_signed ${in1_signed} \
-    out_width ${out_width} \
-    exp ${exp} \
-    arg_lists {${arg_lists}} \
-}"
-} else {
-puts "@W \[IMPL-100\] Cannot find ap_gen_simcore_mul, check your AutoPilot builtin lib"
-}
-}
-
-
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler ${name}
-}
-
-
-set op mul
-set corename DSP48
-if {${::AESL::PGuard_autocg_gen} && ${::AESL::PGuard_autocg_ipmgen}} {
-if {[info proc ::AESL_LIB_VIRTEX::xil_gen_dsp48] == "::AESL_LIB_VIRTEX::xil_gen_dsp48"} {
-eval "::AESL_LIB_VIRTEX::xil_gen_dsp48 { \
-    id ${id} \
-    name ${name} \
-    corename ${corename} \
-    op ${op} \
-    reset_level 1 \
-    sync_rst true \
-    true_reset ${TrueReset} \
-    stage_num ${stage_num} \
-    max_latency ${max_latency} \
-    registered_input ${registered_input} \
-    in0_width ${in0_width} \
-    in0_signed ${in0_signed} \
-    in1_width ${in1_width} \
-    in1_signed ${in1_signed} \
-    out_width ${out_width} \
-    exp ${exp} \
-    arg_lists {${arg_lists}} \
-}"
-} else {
-puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_dsp48, check your platform lib"
-}
-}
-
-
 # Memory (RAM/ROM)  definition:
-set ID 49
+set ID 111
 set hasByteEnable 0
-set MemName pointwise_conv2d_fix_2_SeparableConv2D_1_b_s
+set MemName pointwise_conv2d_fix_2_SeparableConv2D_3_b_s
 set CoreName ap_simcore_mem
 set PortList { 1 }
-set DataWd 12
-set AddrRange 8
-set AddrWd 3
+set DataWd 14
+set AddrRange 16
+set AddrWd 4
 set TrueReset 0
 set IsROM 1
-set ROMData { "001010011010" "001001010101" "010111110001" "110100011101" "010001110010" "000001010100" "001110000010" "111001100100" }
+set ROMData { "00000000001110" "11001100000011" "00000100000110" "00000000000001" "11111111001000" "00000000000000" "11111111111011" "00000110010010" "11111010111101" "11001011000111" "01000011110000" "00000000000000" "10110111010100" "00000000111011" "00000001001100" "11100001100010" }
 set HasInitializer 1
 set Initializer $ROMData
 set NumOfStage 2
@@ -170,17 +94,17 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 54 \
-    name SeparableConv2D_1_ar \
+    id 115 \
+    name input_r \
     reset_level 1 \
     sync_rst true \
-    dir O \
-    corename SeparableConv2D_1_ar \
+    dir I \
+    corename input_r \
     op interface \
-    ports { SeparableConv2D_1_ar_address0 { O 11 vector } SeparableConv2D_1_ar_ce0 { O 1 bit } SeparableConv2D_1_ar_we0 { O 1 bit } SeparableConv2D_1_ar_d0 { O 16 vector } } \
+    ports { input_r_address0 { O 11 vector } input_r_ce0 { O 1 bit } input_r_q0 { I 16 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'SeparableConv2D_1_ar'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'input_r'"
 }
 }
 
@@ -189,17 +113,17 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 55 \
-    name SeparableConv2D_1_m_s \
+    id 117 \
+    name output_r \
     reset_level 1 \
     sync_rst true \
-    dir I \
-    corename SeparableConv2D_1_m_s \
+    dir O \
+    corename output_r \
     op interface \
-    ports { SeparableConv2D_1_m_s_address0 { O 12 vector } SeparableConv2D_1_m_s_ce0 { O 1 bit } SeparableConv2D_1_m_s_q0 { I 16 vector } } \
+    ports { output_r_address0 { O 12 vector } output_r_ce0 { O 1 bit } output_r_we0 { O 1 bit } output_r_d0 { O 16 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'SeparableConv2D_1_m_s'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'output_r'"
 }
 }
 
@@ -207,7 +131,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 50 \
+    id 112 \
     name input_depth \
     type other \
     dir I \
@@ -222,7 +146,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 51 \
+    id 113 \
     name input_height \
     type other \
     dir I \
@@ -237,7 +161,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 52 \
+    id 114 \
     name input_width \
     type other \
     dir I \
@@ -252,7 +176,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 53 \
+    id 116 \
     name output_depth \
     type other \
     dir I \

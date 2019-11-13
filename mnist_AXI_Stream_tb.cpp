@@ -48,6 +48,7 @@ int main(void){
 //	 	input_buffer << tmp;
 //     }
 
+	int i = 0;
 	for(int depth = 0; depth < 1; depth++){
 		for(int height = 0; height < 28; height++){
 			for(int width = 0; width < 28; width++){
@@ -64,19 +65,20 @@ int main(void){
 				} else {
 					tmp.last = 0;
 				}
-
+				cout << "count " << i << ", last " << tmp.last << ", data " << tmp.data <<"\r\n";
 				input_buffer << tmp;
+				i += 1;
 			}
 		}
 	}
 
 	network(input_buffer, output_buffer);
 
-	int i = 0;
+	i = 0;
 	do {
 		output_buffer >> tmp;
 		output_img_buff[i] = (int16_t)tmp.data;
-		cout << "count " << i << ", last " << tmp.last << "\r\n";
+		cout << "count " << i << ", last " << tmp.last << ", data " << output_img_buff[i] <<"\r\n";
 		i += 1;
 	} while(tmp.last != 1);
 

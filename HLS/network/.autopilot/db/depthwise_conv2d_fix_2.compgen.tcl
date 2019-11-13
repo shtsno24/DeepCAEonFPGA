@@ -1,93 +1,17 @@
 # This script segment is generated automatically by AutoPilot
 
-set id 37
-set name network_mul_mul_16s_14s_30_1_1
-set corename simcore_mul
-set op mul
-set stage_num 1
-set max_latency -1
-set registered_input 1
-set in0_width 16
-set in0_signed 1
-set in1_width 14
-set in1_signed 1
-set out_width 30
-set exp i0*i1
-set arg_lists {i0 {16 1 +} i1 {14 1 +} p {30 1 +} acc {0} }
-set TrueReset 0
-if {${::AESL::PGuard_simmodel_gen}} {
-if {[info proc ap_gen_simcore_mul] == "ap_gen_simcore_mul"} {
-eval "ap_gen_simcore_mul { \
-    id ${id} \
-    name ${name} \
-    corename ${corename} \
-    op ${op} \
-    reset_level 1 \
-    sync_rst true \
-    true_reset ${TrueReset} \
-    stage_num ${stage_num} \
-    max_latency ${max_latency} \
-    registered_input ${registered_input} \
-    in0_width ${in0_width} \
-    in0_signed ${in0_signed} \
-    in1_width ${in1_width} \
-    in1_signed ${in1_signed} \
-    out_width ${out_width} \
-    exp ${exp} \
-    arg_lists {${arg_lists}} \
-}"
-} else {
-puts "@W \[IMPL-100\] Cannot find ap_gen_simcore_mul, check your AutoPilot builtin lib"
-}
-}
-
-
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler ${name}
-}
-
-
-set op mul
-set corename DSP48
-if {${::AESL::PGuard_autocg_gen} && ${::AESL::PGuard_autocg_ipmgen}} {
-if {[info proc ::AESL_LIB_VIRTEX::xil_gen_dsp48] == "::AESL_LIB_VIRTEX::xil_gen_dsp48"} {
-eval "::AESL_LIB_VIRTEX::xil_gen_dsp48 { \
-    id ${id} \
-    name ${name} \
-    corename ${corename} \
-    op ${op} \
-    reset_level 1 \
-    sync_rst true \
-    true_reset ${TrueReset} \
-    stage_num ${stage_num} \
-    max_latency ${max_latency} \
-    registered_input ${registered_input} \
-    in0_width ${in0_width} \
-    in0_signed ${in0_signed} \
-    in1_width ${in1_width} \
-    in1_signed ${in1_signed} \
-    out_width ${out_width} \
-    exp ${exp} \
-    arg_lists {${arg_lists}} \
-}"
-} else {
-puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_dsp48, check your platform lib"
-}
-}
-
-
 # Memory (RAM/ROM)  definition:
-set ID 39
+set ID 70
 set hasByteEnable 0
-set MemName depthwise_conv2d_fix_2_SeparableConv2D_1_w_s
+set MemName depthwise_conv2d_fix_2_SeparableConv2D_2_w_s
 set CoreName ap_simcore_mem
 set PortList { 1 }
-set DataWd 14
-set AddrRange 144
-set AddrWd 8
+set DataWd 15
+set AddrRange 72
+set AddrWd 7
 set TrueReset 0
 set IsROM 1
-set ROMData { "00101000010100" "11101110100110" "11100010110000" "11111100110011" "00001110110101" "00000110101111" "11101100000111" "00011111010011" "00110011100010" "11100111101100" "00101010011100" "00110010100111" "11011011010100" "11111111010000" "00110001100101" "11010110001001" "00001000101111" "00011001111100" "00111101100100" "01000100101010" "11010001001011" "00101000111101" "00010100011101" "00000110010001" "00010011101100" "00100100101010" "11111010111011" "11111010000010" "11010110110000" "00010111111011" "11011001101110" "00101010110110" "11111010001000" "11011101011011" "00001010001101" "00110010101001" "11100101100110" "11011000101001" "00010001110100" "00001000101101" "00100010001000" "11101101111101" "11100001101110" "11010110011001" "11100110101011" "11011000011011" "00011001101101" "11011100110000" "00100101010101" "11100111011100" "00010100000010" "11110000110100" "11110001100011" "11111101011001" "00100100000110" "11011001111000" "00110000101011" "11100000100100" "11101000001101" "00100110101111" "00100111101000" "11110110110101" "11110000001100" "00101011011100" "00011111011010" "11110100011000" "11110100111110" "00000010000111" "00101010110001" "00101000000111" "11111110001100" "11011001001000" "11110110100100" "00100101000011" "00100010100000" "11000101110111" "00110001111011" "11101011111101" "11100100001101" "11101110101010" "00000111100010" "11011010100111" "10110100011111" "10111100111111" "00000011011100" "11000110010010" "11110000100110" "00001100101110" "00111001001100" "00110010110100" "00100111000110" "11011111011010" "11001111100001" "00000011111110" "11110100000001" "00001000101011" "11111110011100" "11011000011111" "00101000001100" "11010001111110" "11111001110010" "00000001111000" "11010110001100" "00100000111110" "00110010001111" "11110010010111" "11110110111111" "11010100100010" "00110000000001" "11011100110001" "00011001100100" "00101001001010" "10011010101101" "00000010100101" "11100000111010" "11100010101101" "00000110111101" "11111110011011" "10110011100011" "11100111011100" "10111100011001" "11111010001001" "11000010000100" "00100001011010" "11110011101101" "00001101100010" "00110010101101" "00001111000010" "11010010111111" "00101010110001" "11100011011010" "00100001100110" "11101100111001" "00001010101000" "11110110101010" "00010100101010" "11011101110110" "00001100010110" "00000101100111" "01000001011000" "01110000110100" "11011001100001" "00001111011001" "01000100000010" }
+set ROMData { "000100111101000" "110010100111101" "000101011000100" "111101001110001" "000000000111111" "010010000100001" "111111110011011" "111001110000010" "110110000101100" "000001101001011" "000001101100000" "000111101101010" "000100110010110" "111111100010000" "001000111111101" "000001001111011" "001010101000111" "000001110101100" "000111010100000" "000111000000001" "110111111110101" "000000110001010" "111111011101101" "000111000110000" "001000011101100" "000001110010011" "111001001001110" "000000110011010" "111100010111100" "111001001110101" "111010001100110" "000011000011101" "110110000111011" "111010010100111" "111110110111100" "111001010101101" "110111111100101" "111011111101101" "000011001100111" "110111001010000" "111010100111101" "000100010001010" "111000000111010" "111101110011010" "000010010110110" "000000101011101" "111101101100101" "000100101111100" "111100010110101" "010010000001101" "000101010110100" "111100010000000" "000101101110111" "000001010011011" "111011110011001" "000011010101001" "111110101111011" "000111000110011" "000111000101110" "111011110101011" "000000111101111" "000000100011111" "000010000011100" "000000000100001" "000100011000111" "111110111100111" "000010010111100" "111011001101111" "000110100110001" "000001011011101" "000010100111110" "111101110100101" }
 set HasInitializer 1
 set Initializer $ROMData
 set NumOfStage 2
@@ -170,17 +94,17 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 45 \
-    name output_r \
+    id 76 \
+    name SeparableConv2D_2_m_s \
     reset_level 1 \
     sync_rst true \
     dir IO \
-    corename output_r \
+    corename SeparableConv2D_2_m_s \
     op interface \
-    ports { output_r_address0 { O 12 vector } output_r_ce0 { O 1 bit } output_r_we0 { O 1 bit } output_r_d0 { O 16 vector } output_r_q0 { I 16 vector } } \
+    ports { SeparableConv2D_2_m_s_address0 { O 9 vector } SeparableConv2D_2_m_s_ce0 { O 1 bit } SeparableConv2D_2_m_s_we0 { O 1 bit } SeparableConv2D_2_m_s_d0 { O 16 vector } SeparableConv2D_2_m_s_q0 { I 16 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'output_r'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'SeparableConv2D_2_m_s'"
 }
 }
 
@@ -189,17 +113,17 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 46 \
-    name Padding2D_1_array \
+    id 77 \
+    name Padding2D_2_array \
     reset_level 1 \
     sync_rst true \
     dir I \
-    corename Padding2D_1_array \
+    corename Padding2D_2_array \
     op interface \
-    ports { Padding2D_1_array_address0 { O 12 vector } Padding2D_1_array_ce0 { O 1 bit } Padding2D_1_array_q0 { I 16 vector } } \
+    ports { Padding2D_2_array_address0 { O 10 vector } Padding2D_2_array_ce0 { O 1 bit } Padding2D_2_array_q0 { I 16 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'Padding2D_1_array'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'Padding2D_2_array'"
 }
 }
 
@@ -207,7 +131,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 40 \
+    id 71 \
     name input_height \
     type other \
     dir I \
@@ -222,7 +146,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 41 \
+    id 72 \
     name input_width \
     type other \
     dir I \
@@ -237,7 +161,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 42 \
+    id 73 \
     name output_depth \
     type other \
     dir I \
@@ -252,7 +176,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 43 \
+    id 74 \
     name output_height \
     type other \
     dir I \
@@ -267,7 +191,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 44 \
+    id 75 \
     name output_width \
     type other \
     dir I \

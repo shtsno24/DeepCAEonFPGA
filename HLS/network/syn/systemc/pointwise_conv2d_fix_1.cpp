@@ -44,11 +44,11 @@ const sc_lv<32> pointwise_conv2d_fix_1::ap_const_lv32_B = "1011";
 const sc_lv<16> pointwise_conv2d_fix_1::ap_const_lv16_1 = "1";
 const sc_lv<32> pointwise_conv2d_fix_1::ap_const_lv32_E = "1110";
 const sc_lv<32> pointwise_conv2d_fix_1::ap_const_lv32_1D = "11101";
-const sc_lv<16> pointwise_conv2d_fix_1::ap_const_lv16_E3EB = "1110001111101011";
-const sc_lv<15> pointwise_conv2d_fix_1::ap_const_lv15_63EB = "110001111101011";
+const sc_lv<16> pointwise_conv2d_fix_1::ap_const_lv16_D60D = "1101011000001101";
+const sc_lv<15> pointwise_conv2d_fix_1::ap_const_lv15_560D = "101011000001101";
 const sc_lv<32> pointwise_conv2d_fix_1::ap_const_lv32_F = "1111";
 const sc_lv<15> pointwise_conv2d_fix_1::ap_const_lv15_0 = "000000000000000";
-const sc_lv<30> pointwise_conv2d_fix_1::ap_const_lv30_3FFFE7C7 = "111111111111111110011111000111";
+const sc_lv<30> pointwise_conv2d_fix_1::ap_const_lv30_3FFFE69A = "111111111111111110011010011010";
 const bool pointwise_conv2d_fix_1::ap_const_boolean_1 = true;
 
 pointwise_conv2d_fix_1::pointwise_conv2d_fix_1(sc_module_name name) : sc_module(name), mVcdFile(0) {
@@ -680,11 +680,11 @@ void pointwise_conv2d_fix_1::thread_tmp_26_fu_238_p1() {
 }
 
 void pointwise_conv2d_fix_1::thread_tmp_27_cast_fu_304_p2() {
-    tmp_27_cast_fu_304_p2 = (!ap_const_lv15_63EB.is_01() || !tmp_7_fu_294_p1.read().is_01())? sc_lv<15>(): (sc_bigint<15>(ap_const_lv15_63EB) + sc_biguint<15>(tmp_7_fu_294_p1.read()));
+    tmp_27_cast_fu_304_p2 = (!ap_const_lv15_560D.is_01() || !tmp_7_fu_294_p1.read().is_01())? sc_lv<15>(): (sc_bigint<15>(ap_const_lv15_560D) + sc_biguint<15>(tmp_7_fu_294_p1.read()));
 }
 
 void pointwise_conv2d_fix_1::thread_tmp_27_fu_298_p2() {
-    tmp_27_fu_298_p2 = (!ap_const_lv16_E3EB.is_01() || !output_load_1_reg_134.read().is_01())? sc_lv<16>(): (sc_bigint<16>(ap_const_lv16_E3EB) + sc_biguint<16>(output_load_1_reg_134.read()));
+    tmp_27_fu_298_p2 = (!ap_const_lv16_D60D.is_01() || !output_load_1_reg_134.read().is_01())? sc_lv<16>(): (sc_bigint<16>(ap_const_lv16_D60D) + sc_biguint<16>(output_load_1_reg_134.read()));
 }
 
 void pointwise_conv2d_fix_1::thread_tmp_31_fu_268_p2() {
@@ -696,7 +696,7 @@ void pointwise_conv2d_fix_1::thread_tmp_32_fu_272_p1() {
 }
 
 void pointwise_conv2d_fix_1::thread_tmp_33_fu_331_p1() {
-    tmp_33_fu_331_p1 =  (sc_lv<14>) (ap_const_lv30_3FFFE7C7);
+    tmp_33_fu_331_p1 =  (sc_lv<14>) (ap_const_lv30_3FFFE69A);
 }
 
 void pointwise_conv2d_fix_1::thread_tmp_36_fu_289_p2() {

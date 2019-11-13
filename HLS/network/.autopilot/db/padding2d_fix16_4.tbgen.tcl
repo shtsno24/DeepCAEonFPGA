@@ -71,7 +71,7 @@ set RtlHierarchyInfo {[
 
 set ArgLastReadFirstWriteLatency {
 	padding2d_fix16_4 {
-		input_0 {Type I LastRead 5 FirstWrite -1}
+		input_0 {Type I LastRead 4 FirstWrite -1}
 		output_r {Type O LastRead -1 FirstWrite 2}}}
 
 set hasDtUnsupportedChannel 0

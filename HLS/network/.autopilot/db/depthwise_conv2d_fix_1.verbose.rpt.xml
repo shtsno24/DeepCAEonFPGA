@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'depthwise_conv2d_fix_1'" level="0">
-<item name = "Date">Fri Nov  8 14:42:04 2019
+<item name = "Date">Wed Nov 13 17:14:46 2019
 </item>
 <item name = "Version">2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)</item>
 <item name = "Project">HLS</item>
@@ -57,7 +57,7 @@
 <column name="Instance">-, -, -, -</column>
 <column name="Memory">1, -, 0, 0</column>
 <column name="Multiplexer">-, -, -, 146</column>
-<column name="Register">-, -, 580, -</column>
+<column name="Register">-, -, 581, -</column>
 <specialColumn name="Available">280, 220, 106400, 53200</specialColumn>
 <specialColumn name="Utilization (%)">~0, 2, ~0, 1</specialColumn>
 </table>
@@ -70,12 +70,12 @@
 </item>
 <item name = "DSP48"><table name="" hasTotal="0">
 <keys size="3">Instance, Module, Expression</keys>
-<column name="network_mul_mul_16s_14s_30_1_1_U132">network_mul_mul_16s_14s_30_1_1, i0 * i1</column>
+<column name="network_mul_mul_16s_15s_30_1_1_U132">network_mul_mul_16s_15s_30_1_1, i0 * i1</column>
 </table>
 </item>
 <item name = "Memory"><table name="" hasTotal="1">
 <keys size="9">Memory, Module, BRAM_18K, FF, LUT, Words, Bits, Banks, W*Bits*Banks</keys>
-<column name="SeparableConv2D_4_w_s_U">depthwise_conv2d_fix_1_SeparableConv2D_4_w_s, 1, 0, 0, 144, 14, 1, 2016</column>
+<column name="SeparableConv2D_4_w_s_U">depthwise_conv2d_fix_1_SeparableConv2D_4_w_s, 1, 0, 0, 144, 15, 1, 2160</column>
 </table>
 </item>
 <item name = "FIFO"><table name="" hasTotal="1">
@@ -128,7 +128,7 @@
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
 <column name="Padding2D_4_array_lo_reg_606">16, 0, 16, 0</column>
-<column name="SeparableConv2D_4_w_2_reg_611">14, 0, 14, 0</column>
+<column name="SeparableConv2D_4_w_2_reg_611">15, 0, 15, 0</column>
 <column name="ap_CS_fsm">11, 0, 11, 0</column>
 <column name="k_h_1_reg_568">2, 0, 2, 0</column>
 <column name="k_h_reg_176">2, 0, 2, 0</column>

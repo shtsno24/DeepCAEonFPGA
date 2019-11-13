@@ -91,7 +91,7 @@ set ArgLastReadFirstWriteLatency {
 		input_depth {Type I LastRead 1 FirstWrite -1}
 		input_height {Type I LastRead 0 FirstWrite -1}
 		input_width {Type I LastRead 0 FirstWrite -1}
-		input_r {Type I LastRead 6 FirstWrite -1}
+		input_r {Type I LastRead 5 FirstWrite -1}
 		output_r {Type O LastRead -1 FirstWrite 3}}}
 
 set hasDtUnsupportedChannel 0

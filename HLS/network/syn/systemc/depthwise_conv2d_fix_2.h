@@ -11,8 +11,8 @@
 #include "systemc.h"
 #include "AESL_pkg.h"
 
-#include "network_mul_mul_16s_14s_30_1_1.h"
-#include "depthwise_conv2d_fix_2_SeparableConv2D_1_w_s.h"
+#include "network_mul_mul_16s_15s_30_1_1.h"
+#include "depthwise_conv2d_fix_2_SeparableConv2D_2_w_s.h"
 
 namespace ap_rtl {
 
@@ -29,14 +29,14 @@ struct depthwise_conv2d_fix_2 : public sc_module {
     sc_in< sc_lv<16> > output_depth;
     sc_in< sc_lv<16> > output_height;
     sc_in< sc_lv<16> > output_width;
-    sc_out< sc_lv<12> > output_r_address0;
-    sc_out< sc_logic > output_r_ce0;
-    sc_out< sc_logic > output_r_we0;
-    sc_out< sc_lv<16> > output_r_d0;
-    sc_in< sc_lv<16> > output_r_q0;
-    sc_out< sc_lv<12> > Padding2D_1_array_address0;
-    sc_out< sc_logic > Padding2D_1_array_ce0;
-    sc_in< sc_lv<16> > Padding2D_1_array_q0;
+    sc_out< sc_lv<9> > SeparableConv2D_2_m_s_address0;
+    sc_out< sc_logic > SeparableConv2D_2_m_s_ce0;
+    sc_out< sc_logic > SeparableConv2D_2_m_s_we0;
+    sc_out< sc_lv<16> > SeparableConv2D_2_m_s_d0;
+    sc_in< sc_lv<16> > SeparableConv2D_2_m_s_q0;
+    sc_out< sc_lv<10> > Padding2D_2_array_address0;
+    sc_out< sc_logic > Padding2D_2_array_ce0;
+    sc_in< sc_lv<16> > Padding2D_2_array_q0;
 
 
     // Module declarations
@@ -47,13 +47,13 @@ struct depthwise_conv2d_fix_2 : public sc_module {
 
     sc_trace_file* mVcdFile;
 
-    depthwise_conv2d_fix_2_SeparableConv2D_1_w_s* SeparableConv2D_1_w_s_U;
-    network_mul_mul_16s_14s_30_1_1<1,1,16,14,30>* network_mul_mul_16s_14s_30_1_1_U37;
+    depthwise_conv2d_fix_2_SeparableConv2D_2_w_s* SeparableConv2D_2_w_s_U;
+    network_mul_mul_16s_15s_30_1_1<1,1,16,15,30>* network_mul_mul_16s_15s_30_1_1_U69;
     sc_signal< sc_lv<11> > ap_CS_fsm;
     sc_signal< sc_logic > ap_CS_fsm_state1;
-    sc_signal< sc_lv<8> > SeparableConv2D_1_w_s_address0;
-    sc_signal< sc_logic > SeparableConv2D_1_w_s_ce0;
-    sc_signal< sc_lv<14> > SeparableConv2D_1_w_s_q0;
+    sc_signal< sc_lv<7> > SeparableConv2D_2_w_s_address0;
+    sc_signal< sc_logic > SeparableConv2D_2_w_s_ce0;
+    sc_signal< sc_lv<15> > SeparableConv2D_2_w_s_q0;
     sc_signal< sc_lv<32> > tmp_s_fu_198_p1;
     sc_signal< sc_lv<32> > tmp_s_reg_476;
     sc_signal< sc_lv<32> > tmp_115_fu_202_p1;
@@ -91,7 +91,7 @@ struct depthwise_conv2d_fix_2 : public sc_module {
     sc_signal< sc_lv<17> > tmp_124_cast_fu_295_p1;
     sc_signal< sc_lv<17> > tmp_124_cast_reg_555;
     sc_signal< sc_lv<1> > exitcond2_fu_280_p2;
-    sc_signal< sc_lv<12> > output_addr11_reg_560;
+    sc_signal< sc_lv<9> > SeparableConv2D_2_m_1_reg_560;
     sc_signal< sc_lv<2> > k_h_1_fu_315_p2;
     sc_signal< sc_lv<2> > k_h_1_reg_568;
     sc_signal< sc_logic > ap_CS_fsm_state6;
@@ -107,9 +107,9 @@ struct depthwise_conv2d_fix_2 : public sc_module {
     sc_signal< sc_lv<2> > k_w_1_reg_591;
     sc_signal< sc_logic > ap_CS_fsm_state8;
     sc_signal< sc_lv<1> > exitcond_fu_375_p2;
-    sc_signal< sc_lv<16> > Padding2D_1_array_lo_reg_606;
+    sc_signal< sc_lv<16> > Padding2D_2_array_lo_reg_606;
     sc_signal< sc_logic > ap_CS_fsm_state9;
-    sc_signal< sc_lv<14> > SeparableConv2D_1_w_2_reg_611;
+    sc_signal< sc_lv<15> > SeparableConv2D_2_w_2_reg_611;
     sc_signal< sc_lv<16> > tmp_139_reg_616;
     sc_signal< sc_logic > ap_CS_fsm_state10;
     sc_signal< sc_lv<16> > out_d_reg_118;
@@ -185,10 +185,14 @@ struct depthwise_conv2d_fix_2 : public sc_module {
     static const bool ap_const_boolean_1;
     // Thread declarations
     void thread_ap_clk_no_reset_();
-    void thread_Padding2D_1_array_address0();
-    void thread_Padding2D_1_array_ce0();
-    void thread_SeparableConv2D_1_w_s_address0();
-    void thread_SeparableConv2D_1_w_s_ce0();
+    void thread_Padding2D_2_array_address0();
+    void thread_Padding2D_2_array_ce0();
+    void thread_SeparableConv2D_2_m_s_address0();
+    void thread_SeparableConv2D_2_m_s_ce0();
+    void thread_SeparableConv2D_2_m_s_d0();
+    void thread_SeparableConv2D_2_m_s_we0();
+    void thread_SeparableConv2D_2_w_s_address0();
+    void thread_SeparableConv2D_2_w_s_ce0();
     void thread_ap_CS_fsm_state1();
     void thread_ap_CS_fsm_state10();
     void thread_ap_CS_fsm_state11();
@@ -215,10 +219,6 @@ struct depthwise_conv2d_fix_2 : public sc_module {
     void thread_out_d_4_fu_229_p2();
     void thread_out_h_4_fu_256_p2();
     void thread_out_w_4_fu_285_p2();
-    void thread_output_r_address0();
-    void thread_output_r_ce0();
-    void thread_output_r_d0();
-    void thread_output_r_we0();
     void thread_p_shl3_cast_fu_337_p1();
     void thread_p_shl3_fu_329_p3();
     void thread_p_shl_cast_fu_247_p1();

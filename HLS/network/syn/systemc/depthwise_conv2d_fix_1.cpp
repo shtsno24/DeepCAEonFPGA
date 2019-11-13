@@ -55,10 +55,10 @@ depthwise_conv2d_fix_1::depthwise_conv2d_fix_1(sc_module_name name) : sc_module(
     SeparableConv2D_4_w_s_U->address0(SeparableConv2D_4_w_s_address0);
     SeparableConv2D_4_w_s_U->ce0(SeparableConv2D_4_w_s_ce0);
     SeparableConv2D_4_w_s_U->q0(SeparableConv2D_4_w_s_q0);
-    network_mul_mul_16s_14s_30_1_1_U132 = new network_mul_mul_16s_14s_30_1_1<1,1,16,14,30>("network_mul_mul_16s_14s_30_1_1_U132");
-    network_mul_mul_16s_14s_30_1_1_U132->din0(Padding2D_4_array_lo_reg_606);
-    network_mul_mul_16s_14s_30_1_1_U132->din1(SeparableConv2D_4_w_2_reg_611);
-    network_mul_mul_16s_14s_30_1_1_U132->dout(tmp_137_fu_454_p2);
+    network_mul_mul_16s_15s_30_1_1_U132 = new network_mul_mul_16s_15s_30_1_1<1,1,16,15,30>("network_mul_mul_16s_15s_30_1_1_U132");
+    network_mul_mul_16s_15s_30_1_1_U132->din0(Padding2D_4_array_lo_reg_606);
+    network_mul_mul_16s_15s_30_1_1_U132->din1(SeparableConv2D_4_w_2_reg_611);
+    network_mul_mul_16s_15s_30_1_1_U132->dout(tmp_137_fu_454_p2);
 
     SC_METHOD(thread_ap_clk_no_reset_);
     dont_initialize();
@@ -479,7 +479,7 @@ depthwise_conv2d_fix_1::~depthwise_conv2d_fix_1() {
         sc_close_vcd_trace_file(mVcdFile);
 
     delete SeparableConv2D_4_w_s_U;
-    delete network_mul_mul_16s_14s_30_1_1_U132;
+    delete network_mul_mul_16s_15s_30_1_1_U132;
 }
 
 void depthwise_conv2d_fix_1::thread_ap_clk_no_reset_() {

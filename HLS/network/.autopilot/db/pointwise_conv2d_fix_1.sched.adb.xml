@@ -906,7 +906,7 @@
 
 <Node id="61" bw="30" op_0_bw="30" op_1_bw="30">
 <![CDATA[
-:8  %tmp_33 = mul i30 %tmp_33_cast, -6201
+:8  %tmp_33 = mul i30 %tmp_33_cast, -6502
 
 ]]></Node>
 <StgValue><ssdm name="tmp_33"/></StgValue>
@@ -987,7 +987,7 @@
 
 <Node id="67" bw="16" op_0_bw="16" op_1_bw="16">
 <![CDATA[
-._crit_edge:1  %tmp_27 = add i16 -7189, %output_load_1
+._crit_edge:1  %tmp_27 = add i16 -10739, %output_load_1
 
 ]]></Node>
 <StgValue><ssdm name="tmp_27"/></StgValue>
@@ -1002,7 +1002,7 @@
 
 <Node id="68" bw="15" op_0_bw="15" op_1_bw="15">
 <![CDATA[
-._crit_edge:2  %tmp_27_cast = add i15 -7189, %tmp_7
+._crit_edge:2  %tmp_27_cast = add i15 -10739, %tmp_7
 
 ]]></Node>
 <StgValue><ssdm name="tmp_27_cast"/></StgValue>

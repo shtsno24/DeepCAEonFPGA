@@ -11,7 +11,7 @@
 #include "systemc.h"
 #include "AESL_pkg.h"
 
-#include "network_mul_mul_16s_14s_30_1_1.h"
+#include "network_mul_mul_16s_15s_30_1_1.h"
 #include "depthwise_conv2d_fix_1_SeparableConv2D_4_w_s.h"
 
 namespace ap_rtl {
@@ -48,12 +48,12 @@ struct depthwise_conv2d_fix_1 : public sc_module {
     sc_trace_file* mVcdFile;
 
     depthwise_conv2d_fix_1_SeparableConv2D_4_w_s* SeparableConv2D_4_w_s_U;
-    network_mul_mul_16s_14s_30_1_1<1,1,16,14,30>* network_mul_mul_16s_14s_30_1_1_U132;
+    network_mul_mul_16s_15s_30_1_1<1,1,16,15,30>* network_mul_mul_16s_15s_30_1_1_U132;
     sc_signal< sc_lv<11> > ap_CS_fsm;
     sc_signal< sc_logic > ap_CS_fsm_state1;
     sc_signal< sc_lv<8> > SeparableConv2D_4_w_s_address0;
     sc_signal< sc_logic > SeparableConv2D_4_w_s_ce0;
-    sc_signal< sc_lv<14> > SeparableConv2D_4_w_s_q0;
+    sc_signal< sc_lv<15> > SeparableConv2D_4_w_s_q0;
     sc_signal< sc_lv<32> > tmp_s_fu_198_p1;
     sc_signal< sc_lv<32> > tmp_s_reg_476;
     sc_signal< sc_lv<32> > tmp_115_fu_202_p1;
@@ -109,7 +109,7 @@ struct depthwise_conv2d_fix_1 : public sc_module {
     sc_signal< sc_lv<1> > exitcond_fu_375_p2;
     sc_signal< sc_lv<16> > Padding2D_4_array_lo_reg_606;
     sc_signal< sc_logic > ap_CS_fsm_state9;
-    sc_signal< sc_lv<14> > SeparableConv2D_4_w_2_reg_611;
+    sc_signal< sc_lv<15> > SeparableConv2D_4_w_2_reg_611;
     sc_signal< sc_lv<16> > tmp_139_reg_616;
     sc_signal< sc_logic > ap_CS_fsm_state10;
     sc_signal< sc_lv<16> > out_d_reg_118;

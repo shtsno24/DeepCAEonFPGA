@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'network'
 ================================================================
-* Date:           Fri Nov  8 14:42:07 2019
+* Date:           Wed Nov 13 17:14:48 2019
 
 * Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
 * Project:        HLS
@@ -43,14 +43,14 @@
         |grp_padding2d_fix16_1_fu_528       |padding2d_fix16_1       |     ?|     ?|     ?|     ?|   none  |
         |grp_padding2d_fix16_2_fu_539       |padding2d_fix16_2       |     ?|     ?|     ?|     ?|   none  |
         |grp_depthwise_conv2d_fix_1_fu_550  |depthwise_conv2d_fix_1  |     ?|     ?|     ?|     ?|   none  |
-        |grp_depthwise_conv2d_fix_2_fu_565  |depthwise_conv2d_fix_2  |     ?|     ?|     ?|     ?|   none  |
-        |grp_depthwise_conv2d_fix_3_fu_580  |depthwise_conv2d_fix_3  |     ?|     ?|     ?|     ?|   none  |
-        |grp_depthwise_conv2d_fix_4_fu_595  |depthwise_conv2d_fix_4  |     ?|     ?|     ?|     ?|   none  |
-        |grp_depthwise_conv2d_fix_fu_610    |depthwise_conv2d_fix    |     ?|     ?|     ?|     ?|   none  |
-        |grp_pointwise_conv2d_fix_3_fu_625  |pointwise_conv2d_fix_3  |     ?|     ?|     ?|     ?|   none  |
+        |grp_depthwise_conv2d_fix_3_fu_565  |depthwise_conv2d_fix_3  |     ?|     ?|     ?|     ?|   none  |
+        |grp_depthwise_conv2d_fix_fu_580    |depthwise_conv2d_fix    |     ?|     ?|     ?|     ?|   none  |
+        |grp_depthwise_conv2d_fix_2_fu_595  |depthwise_conv2d_fix_2  |     ?|     ?|     ?|     ?|   none  |
+        |grp_depthwise_conv2d_fix_4_fu_610  |depthwise_conv2d_fix_4  |     ?|     ?|     ?|     ?|   none  |
+        |grp_pointwise_conv2d_fix_4_fu_625  |pointwise_conv2d_fix_4  |     ?|     ?|     ?|     ?|   none  |
         |grp_pointwise_conv2d_fix_2_fu_639  |pointwise_conv2d_fix_2  |     ?|     ?|     ?|     ?|   none  |
-        |grp_pointwise_conv2d_fix_fu_653    |pointwise_conv2d_fix    |     ?|     ?|     ?|     ?|   none  |
-        |grp_pointwise_conv2d_fix_4_fu_667  |pointwise_conv2d_fix_4  |     ?|     ?|     ?|     ?|   none  |
+        |grp_pointwise_conv2d_fix_3_fu_653  |pointwise_conv2d_fix_3  |     ?|     ?|     ?|     ?|   none  |
+        |grp_pointwise_conv2d_fix_fu_667    |pointwise_conv2d_fix    |     ?|     ?|     ?|     ?|   none  |
         |grp_max_pooling2d_fix16_1_fu_681   |max_pooling2d_fix16_1   |     ?|     ?|     ?|     ?|   none  |
         |grp_max_pooling2d_fix16_fu_694     |max_pooling2d_fix16     |     ?|     ?|     ?|     ?|   none  |
         |grp_pointwise_conv2d_fix_1_fu_707  |pointwise_conv2d_fix_1  |     ?|     ?|     ?|     ?|   none  |
@@ -83,12 +83,12 @@
 |DSP              |        -|      -|       -|      -|
 |Expression       |        -|      -|       0|    719|
 |FIFO             |        -|      -|       -|      -|
-|Instance         |        3|     74|   10248|  13493|
+|Instance         |        4|     74|   10259|  13671|
 |Memory           |       98|      -|       4|     26|
 |Multiplexer      |        -|      -|       -|   1391|
 |Register         |        -|      -|     506|      -|
 +-----------------+---------+-------+--------+-------+
-|Total            |      101|     74|   10758|  15629|
+|Total            |      102|     74|   10769|  15807|
 +-----------------+---------+-------+--------+-------+
 |Available        |      280|    220|  106400|  53200|
 +-----------------+---------+-------+--------+-------+
@@ -97,32 +97,32 @@
 
 + Detail: 
     * Instance: 
-    +-----------------------------------+------------------------+---------+-------+-----+-----+
-    |              Instance             |         Module         | BRAM_18K| DSP48E|  FF | LUT |
-    +-----------------------------------+------------------------+---------+-------+-----+-----+
-    |grp_depthwise_conv2d_fix_fu_610    |depthwise_conv2d_fix    |        0|      5|  592|  733|
-    |grp_depthwise_conv2d_fix_1_fu_550  |depthwise_conv2d_fix_1  |        1|      5|  580|  730|
-    |grp_depthwise_conv2d_fix_2_fu_565  |depthwise_conv2d_fix_2  |        1|      5|  578|  730|
-    |grp_depthwise_conv2d_fix_3_fu_580  |depthwise_conv2d_fix_3  |        1|      5|  578|  730|
-    |grp_depthwise_conv2d_fix_4_fu_595  |depthwise_conv2d_fix_4  |        0|      5|  589|  746|
-    |grp_max_pooling2d_fix16_fu_694     |max_pooling2d_fix16     |        0|      4|  509|  634|
-    |grp_max_pooling2d_fix16_1_fu_681   |max_pooling2d_fix16_1   |        0|      4|  512|  634|
-    |network_AXILiteS_s_axi_U           |network_AXILiteS_s_axi  |        0|      0|   36|   40|
-    |grp_padding2d_fix16_fu_506         |padding2d_fix16         |        0|      2|  570|  966|
-    |grp_padding2d_fix16_1_fu_528       |padding2d_fix16_1       |        0|      2|  570|  966|
-    |grp_padding2d_fix16_2_fu_539       |padding2d_fix16_2       |        0|      2|  570|  966|
-    |grp_padding2d_fix16_3_fu_517       |padding2d_fix16_3       |        0|      2|  570|  966|
-    |grp_padding2d_fix16_4_fu_745       |padding2d_fix16_4       |        0|      0|  254|  529|
-    |grp_pointwise_conv2d_fix_fu_653    |pointwise_conv2d_fix    |        0|      5|  578|  640|
-    |grp_pointwise_conv2d_fix_1_fu_707  |pointwise_conv2d_fix_1  |        0|      5|  518|  634|
-    |grp_pointwise_conv2d_fix_2_fu_639  |pointwise_conv2d_fix_2  |        0|      5|  578|  639|
-    |grp_pointwise_conv2d_fix_3_fu_625  |pointwise_conv2d_fix_3  |        0|      5|  581|  641|
-    |grp_pointwise_conv2d_fix_4_fu_667  |pointwise_conv2d_fix_4  |        0|      5|  577|  639|
-    |grp_up_sampling2d_fix16_fu_719     |up_sampling2d_fix16     |        0|      4|  454|  465|
-    |grp_up_sampling2d_fix16_1_fu_732   |up_sampling2d_fix16_1   |        0|      4|  454|  465|
-    +-----------------------------------+------------------------+---------+-------+-----+-----+
-    |Total                              |                        |        3|     74|10248|13493|
-    +-----------------------------------+------------------------+---------+-------+-----+-----+
+    +-----------------------------------+------------------------+---------+-------+-----+------+
+    |              Instance             |         Module         | BRAM_18K| DSP48E|  FF |  LUT |
+    +-----------------------------------+------------------------+---------+-------+-----+------+
+    |grp_depthwise_conv2d_fix_fu_580    |depthwise_conv2d_fix    |        1|      5|  578|   730|
+    |grp_depthwise_conv2d_fix_1_fu_550  |depthwise_conv2d_fix_1  |        1|      5|  581|   730|
+    |grp_depthwise_conv2d_fix_2_fu_595  |depthwise_conv2d_fix_2  |        1|      5|  576|   730|
+    |grp_depthwise_conv2d_fix_3_fu_565  |depthwise_conv2d_fix_3  |        1|      5|  579|   730|
+    |grp_depthwise_conv2d_fix_4_fu_610  |depthwise_conv2d_fix_4  |        0|      5|  592|   733|
+    |grp_max_pooling2d_fix16_fu_694     |max_pooling2d_fix16     |        0|      4|  509|   634|
+    |grp_max_pooling2d_fix16_1_fu_681   |max_pooling2d_fix16_1   |        0|      4|  512|   634|
+    |network_AXILiteS_s_axi_U           |network_AXILiteS_s_axi  |        0|      0|   36|    40|
+    |grp_padding2d_fix16_fu_506         |padding2d_fix16         |        0|      2|  571|  1012|
+    |grp_padding2d_fix16_1_fu_528       |padding2d_fix16_1       |        0|      2|  571|  1012|
+    |grp_padding2d_fix16_2_fu_539       |padding2d_fix16_2       |        0|      2|  571|  1012|
+    |grp_padding2d_fix16_3_fu_517       |padding2d_fix16_3       |        0|      2|  571|  1012|
+    |grp_padding2d_fix16_4_fu_745       |padding2d_fix16_4       |        0|      0|  271|   538|
+    |grp_pointwise_conv2d_fix_fu_667    |pointwise_conv2d_fix    |        0|      5|  577|   639|
+    |grp_pointwise_conv2d_fix_1_fu_707  |pointwise_conv2d_fix_1  |        0|      5|  518|   634|
+    |grp_pointwise_conv2d_fix_2_fu_639  |pointwise_conv2d_fix_2  |        0|      5|  580|   641|
+    |grp_pointwise_conv2d_fix_3_fu_653  |pointwise_conv2d_fix_3  |        0|      5|  578|   639|
+    |grp_pointwise_conv2d_fix_4_fu_625  |pointwise_conv2d_fix_4  |        0|      5|  580|   641|
+    |grp_up_sampling2d_fix16_fu_719     |up_sampling2d_fix16     |        0|      4|  454|   465|
+    |grp_up_sampling2d_fix16_1_fu_732   |up_sampling2d_fix16_1   |        0|      4|  454|   465|
+    +-----------------------------------+------------------------+---------+-------+-----+------+
+    |Total                              |                        |        4|     74|10259| 13671|
+    +-----------------------------------+------------------------+---------+-------+-----+------+
 
     * DSP48: 
     N/A
@@ -173,9 +173,9 @@
     |tmp_12_fu_1273_p2                      |     +    |      0|  0|  45|          38|          38|
     |tmp_19_fu_1362_p2                      |     +    |      0|  0|  13|          11|          11|
     |tmp_20_fu_1372_p2                      |     +    |      0|  0|  13|          11|          11|
-    |tmp_75_fu_1399_p2                      |     +    |      0|  0|  10|           2|           1|
-    |tmp_77_fu_1426_p2                      |     +    |      0|  0|  15|           5|           2|
-    |tmp_79_fu_1442_p2                      |     +    |      0|  0|  15|           5|           2|
+    |tmp_76_fu_1399_p2                      |     +    |      0|  0|  10|           2|           1|
+    |tmp_78_fu_1426_p2                      |     +    |      0|  0|  15|           5|           2|
+    |tmp_80_fu_1442_p2                      |     +    |      0|  0|  15|           5|           2|
     |width_1_fu_1063_p2                     |     +    |      0|  0|  15|           5|           1|
     |width_2_fu_1352_p2                     |     +    |      0|  0|  39|          32|           1|
     |tmp_10_fu_1247_p2                      |     -    |      0|  0|  45|          38|          38|
@@ -208,7 +208,7 @@
     |output_data_V_strb_V_1_load_B          |    and   |      0|  0|   2|           1|           1|
     |output_data_V_user_V_1_load_A          |    and   |      0|  0|   2|           1|           1|
     |output_data_V_user_V_1_load_B          |    and   |      0|  0|   2|           1|           1|
-    |exitcond4_fu_1015_p2                   |   icmp   |      0|  0|  11|           5|           4|
+    |exitcond3_fu_1015_p2                   |   icmp   |      0|  0|  11|           5|           4|
     |exitcond_fu_1057_p2                    |   icmp   |      0|  0|  11|           5|           4|
     |input_data_V_data_V_0_state_cmp_full   |   icmp   |      0|  0|   8|           2|           1|
     |input_data_V_dest_V_0_state_cmp_full   |   icmp   |      0|  0|   8|           2|           1|
@@ -222,16 +222,16 @@
     |output_data_V_last_V_1_state_cmp_full  |   icmp   |      0|  0|   8|           2|           1|
     |output_data_V_strb_V_1_state_cmp_full  |   icmp   |      0|  0|   8|           2|           1|
     |output_data_V_user_V_1_state_cmp_full  |   icmp   |      0|  0|   8|           2|           1|
-    |tmp_69_fu_1211_p2                      |   icmp   |      0|  0|  18|          32|           1|
-    |tmp_71_fu_1257_p2                      |   icmp   |      0|  0|  18|          32|           5|
-    |tmp_73_fu_1346_p2                      |   icmp   |      0|  0|  18|          32|           5|
-    |tmp_76_fu_1409_p2                      |   icmp   |      0|  0|  18|          32|           1|
-    |tmp_78_fu_1436_p2                      |   icmp   |      0|  0|  18|          32|           5|
-    |tmp_80_fu_1451_p2                      |   icmp   |      0|  0|  18|          32|           5|
+    |tmp_70_fu_1211_p2                      |   icmp   |      0|  0|  18|          32|           1|
+    |tmp_72_fu_1257_p2                      |   icmp   |      0|  0|  18|          32|           5|
+    |tmp_74_fu_1346_p2                      |   icmp   |      0|  0|  18|          32|           5|
+    |tmp_77_fu_1409_p2                      |   icmp   |      0|  0|  18|          32|           1|
+    |tmp_79_fu_1436_p2                      |   icmp   |      0|  0|  18|          32|           5|
+    |tmp_81_fu_1451_p2                      |   icmp   |      0|  0|  18|          32|           5|
     |tmp_user_V_fu_1389_p2                  |   icmp   |      0|  0|  18|          32|           1|
     |ap_block_state47                       |    or    |      0|  0|   2|           1|           1|
     |ap_condition_1850                      |    or    |      0|  0|   2|           1|           1|
-    |tmp_74_fu_1383_p2                      |    or    |      0|  0|  32|          32|          32|
+    |tmp_75_fu_1383_p2                      |    or    |      0|  0|  32|          32|          32|
     |tmp_fu_1377_p2                         |    or    |      0|  0|  32|          32|          32|
     +---------------------------------------+----------+-------+---+----+------------+------------+
     |Total                                  |          |      0|  0| 719|         610|         287|
@@ -390,10 +390,10 @@
     |depth7_reg_454                                  |  32|   0|   32|          0|
     |depth_reg_1598                                  |  32|   0|   32|          0|
     |grp_depthwise_conv2d_fix_1_fu_550_ap_start_reg  |   1|   0|    1|          0|
-    |grp_depthwise_conv2d_fix_2_fu_565_ap_start_reg  |   1|   0|    1|          0|
-    |grp_depthwise_conv2d_fix_3_fu_580_ap_start_reg  |   1|   0|    1|          0|
-    |grp_depthwise_conv2d_fix_4_fu_595_ap_start_reg  |   1|   0|    1|          0|
-    |grp_depthwise_conv2d_fix_fu_610_ap_start_reg    |   1|   0|    1|          0|
+    |grp_depthwise_conv2d_fix_2_fu_595_ap_start_reg  |   1|   0|    1|          0|
+    |grp_depthwise_conv2d_fix_3_fu_565_ap_start_reg  |   1|   0|    1|          0|
+    |grp_depthwise_conv2d_fix_4_fu_610_ap_start_reg  |   1|   0|    1|          0|
+    |grp_depthwise_conv2d_fix_fu_580_ap_start_reg    |   1|   0|    1|          0|
     |grp_max_pooling2d_fix16_1_fu_681_ap_start_reg   |   1|   0|    1|          0|
     |grp_max_pooling2d_fix16_fu_694_ap_start_reg     |   1|   0|    1|          0|
     |grp_padding2d_fix16_1_fu_528_ap_start_reg       |   1|   0|    1|          0|
@@ -403,9 +403,9 @@
     |grp_padding2d_fix16_fu_506_ap_start_reg         |   1|   0|    1|          0|
     |grp_pointwise_conv2d_fix_1_fu_707_ap_start_reg  |   1|   0|    1|          0|
     |grp_pointwise_conv2d_fix_2_fu_639_ap_start_reg  |   1|   0|    1|          0|
-    |grp_pointwise_conv2d_fix_3_fu_625_ap_start_reg  |   1|   0|    1|          0|
-    |grp_pointwise_conv2d_fix_4_fu_667_ap_start_reg  |   1|   0|    1|          0|
-    |grp_pointwise_conv2d_fix_fu_653_ap_start_reg    |   1|   0|    1|          0|
+    |grp_pointwise_conv2d_fix_3_fu_653_ap_start_reg  |   1|   0|    1|          0|
+    |grp_pointwise_conv2d_fix_4_fu_625_ap_start_reg  |   1|   0|    1|          0|
+    |grp_pointwise_conv2d_fix_fu_667_ap_start_reg    |   1|   0|    1|          0|
     |grp_up_sampling2d_fix16_1_fu_732_ap_start_reg   |   1|   0|    1|          0|
     |grp_up_sampling2d_fix16_fu_719_ap_start_reg     |   1|   0|    1|          0|
     |height8_reg_466                                 |  32|   0|   32|          0|
@@ -496,8 +496,8 @@
     |tmp_15_reg_1616                                 |   9|   0|   11|          2|
     |tmp_18_reg_1621                                 |   9|   0|   11|          2|
     |tmp_20_reg_1644                                 |  11|   0|   11|          0|
-    |tmp_76_reg_1654                                 |   1|   0|    1|          0|
     |tmp_77_cast_reg_1626                            |   0|   0|   17|         17|
+    |tmp_77_reg_1654                                 |   1|   0|    1|          0|
     |tmp_7_reg_1465                                  |   9|   0|   11|          2|
     |tmp_data_V_1_reg_1678                           |  16|   0|   16|          0|
     |tmp_last_V_reg_490                              |   1|   0|    1|          0|

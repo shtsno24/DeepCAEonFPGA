@@ -77,7 +77,7 @@ architecture behav of depthwise_conv2d_fix_1 is
     attribute fsm_encoding of ap_CS_fsm_state1 : signal is "none";
     signal SeparableConv2D_4_w_s_address0 : STD_LOGIC_VECTOR (7 downto 0);
     signal SeparableConv2D_4_w_s_ce0 : STD_LOGIC;
-    signal SeparableConv2D_4_w_s_q0 : STD_LOGIC_VECTOR (13 downto 0);
+    signal SeparableConv2D_4_w_s_q0 : STD_LOGIC_VECTOR (14 downto 0);
     signal tmp_s_fu_198_p1 : STD_LOGIC_VECTOR (31 downto 0);
     signal tmp_s_reg_476 : STD_LOGIC_VECTOR (31 downto 0);
     signal tmp_115_fu_202_p1 : STD_LOGIC_VECTOR (31 downto 0);
@@ -141,7 +141,7 @@ architecture behav of depthwise_conv2d_fix_1 is
     signal Padding2D_4_array_lo_reg_606 : STD_LOGIC_VECTOR (15 downto 0);
     signal ap_CS_fsm_state9 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state9 : signal is "none";
-    signal SeparableConv2D_4_w_2_reg_611 : STD_LOGIC_VECTOR (13 downto 0);
+    signal SeparableConv2D_4_w_2_reg_611 : STD_LOGIC_VECTOR (14 downto 0);
     signal tmp_139_reg_616 : STD_LOGIC_VECTOR (15 downto 0);
     signal ap_CS_fsm_state10 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state10 : signal is "none";
@@ -183,7 +183,7 @@ architecture behav of depthwise_conv2d_fix_1 is
     signal tmp_137_fu_454_p2 : STD_LOGIC_VECTOR (29 downto 0);
     signal ap_NS_fsm : STD_LOGIC_VECTOR (10 downto 0);
 
-    component network_mul_mul_16s_14s_30_1_1 IS
+    component network_mul_mul_16s_15s_30_1_1 IS
     generic (
         ID : INTEGER;
         NUM_STAGE : INTEGER;
@@ -192,7 +192,7 @@ architecture behav of depthwise_conv2d_fix_1 is
         dout_WIDTH : INTEGER );
     port (
         din0 : IN STD_LOGIC_VECTOR (15 downto 0);
-        din1 : IN STD_LOGIC_VECTOR (13 downto 0);
+        din1 : IN STD_LOGIC_VECTOR (14 downto 0);
         dout : OUT STD_LOGIC_VECTOR (29 downto 0) );
     end component;
 
@@ -207,7 +207,7 @@ architecture behav of depthwise_conv2d_fix_1 is
         reset : IN STD_LOGIC;
         address0 : IN STD_LOGIC_VECTOR (7 downto 0);
         ce0 : IN STD_LOGIC;
-        q0 : OUT STD_LOGIC_VECTOR (13 downto 0) );
+        q0 : OUT STD_LOGIC_VECTOR (14 downto 0) );
     end component;
 
 
@@ -215,7 +215,7 @@ architecture behav of depthwise_conv2d_fix_1 is
 begin
     SeparableConv2D_4_w_s_U : component depthwise_conv2d_fix_1_SeparableConv2D_4_w_s
     generic map (
-        DataWidth => 14,
+        DataWidth => 15,
         AddressRange => 144,
         AddressWidth => 8)
     port map (
@@ -225,12 +225,12 @@ begin
         ce0 => SeparableConv2D_4_w_s_ce0,
         q0 => SeparableConv2D_4_w_s_q0);
 
-    network_mul_mul_16s_14s_30_1_1_U132 : component network_mul_mul_16s_14s_30_1_1
+    network_mul_mul_16s_15s_30_1_1_U132 : component network_mul_mul_16s_15s_30_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,
         din0_WIDTH => 16,
-        din1_WIDTH => 14,
+        din1_WIDTH => 15,
         dout_WIDTH => 30)
     port map (
         din0 => Padding2D_4_array_lo_reg_606,

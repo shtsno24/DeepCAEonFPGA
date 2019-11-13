@@ -1,5 +1,5 @@
 // ==============================================================
-// File generated on Fri Nov 08 14:43:01 JST 2019
+// File generated on Wed Nov 13 17:15:37 JST 2019
 // Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
 // SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 // IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
@@ -77778,6 +77778,7 @@ int main(void){
  cout << "\r\n";
  cout << "\r\n";
 #51 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream_tb.cpp"
+ int i = 0;
  for(int depth = 0; depth < 1; depth++){
   for(int height = 0; height < 28; height++){
    for(int width = 0; width < 28; width++){
@@ -77794,7 +77795,8 @@ int main(void){
     } else {
      tmp.last = 0;
     }
-
+    i += 1;
+    cout << "count " << i << ", last " << tmp.last << ", data " << tmp.data <<"\r\n";
     input_buffer << tmp;
    }
   }
@@ -77805,26 +77807,26 @@ int main(void){
 #define network AESL_WRAP_network
 #endif
 
-#73 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream_tb.cpp"
+#75 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream_tb.cpp"
 
 #ifndef HLS_FASTSIM
 #define network AESL_WRAP_network
 #endif
 
-#73 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream_tb.cpp"
+#75 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream_tb.cpp"
 network
 #undef network
-#73 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream_tb.cpp"
+#75 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream_tb.cpp"
 
 #undef network
-#73 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream_tb.cpp"
+#75 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream_tb.cpp"
 (input_buffer, output_buffer);
 
- int i = 0;
+ i = 0;
  do {
   output_buffer >> tmp;
   output_img_buff[i] = (int16_t)tmp.data;
-  cout << "count " << i << ", last " << tmp.last << "\r\n";
+  cout << "count " << i << ", last " << tmp.last << ", data " << output_img_buff[i] <<"\r\n";
   i += 1;
  } while(tmp.last != 1);
 
@@ -77845,4 +77847,4 @@ network
  return 0;
 }
 #endif
-#98 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream_tb.cpp"
+#100 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream_tb.cpp"

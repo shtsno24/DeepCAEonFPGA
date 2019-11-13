@@ -386,7 +386,7 @@
 						<name>tmp_s</name>
 						<fileName>layers_c/pointwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>20</lineNumber>
+						<lineNumber>19</lineNumber>
 						<contextFuncName>pointwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -401,7 +401,7 @@
 											<first>layers_c/pointwise_conv2d.cpp</first>
 											<second>pointwise_conv2d_fix16</second>
 										</first>
-										<second>20</second>
+										<second>19</second>
 									</item>
 								</second>
 							</item>
@@ -434,7 +434,7 @@
 						<name>tmp_15</name>
 						<fileName>layers_c/pointwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>20</lineNumber>
+						<lineNumber>19</lineNumber>
 						<contextFuncName>pointwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -449,7 +449,7 @@
 											<first>layers_c/pointwise_conv2d.cpp</first>
 											<second>pointwise_conv2d_fix16</second>
 										</first>
-										<second>20</second>
+										<second>19</second>
 									</item>
 								</second>
 							</item>
@@ -482,7 +482,7 @@
 						<name></name>
 						<fileName>layers_c/pointwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>17</lineNumber>
+						<lineNumber>16</lineNumber>
 						<contextFuncName>pointwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -497,7 +497,7 @@
 											<first>layers_c/pointwise_conv2d.cpp</first>
 											<second>pointwise_conv2d_fix16</second>
 										</first>
-										<second>17</second>
+										<second>16</second>
 									</item>
 								</second>
 							</item>
@@ -567,7 +567,7 @@
 						<name>phi_mul1</name>
 						<fileName>layers_c/pointwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>20</lineNumber>
+						<lineNumber>19</lineNumber>
 						<contextFuncName>pointwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -582,7 +582,7 @@
 											<first>layers_c/pointwise_conv2d.cpp</first>
 											<second>pointwise_conv2d_fix16</second>
 										</first>
-										<second>20</second>
+										<second>19</second>
 									</item>
 								</second>
 							</item>
@@ -618,7 +618,7 @@
 						<name>next_mul2</name>
 						<fileName>layers_c/pointwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>20</lineNumber>
+						<lineNumber>19</lineNumber>
 						<contextFuncName>pointwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -633,7 +633,7 @@
 											<first>layers_c/pointwise_conv2d.cpp</first>
 											<second>pointwise_conv2d_fix16</second>
 										</first>
-										<second>20</second>
+										<second>19</second>
 									</item>
 								</second>
 							</item>
@@ -667,7 +667,7 @@
 						<name>exitcond3</name>
 						<fileName>layers_c/pointwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>17</lineNumber>
+						<lineNumber>16</lineNumber>
 						<contextFuncName>pointwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -682,7 +682,7 @@
 											<first>layers_c/pointwise_conv2d.cpp</first>
 											<second>pointwise_conv2d_fix16</second>
 										</first>
-										<second>17</second>
+										<second>16</second>
 									</item>
 								</second>
 							</item>
@@ -716,7 +716,7 @@
 						<name>out_d_2</name>
 						<fileName>layers_c/pointwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>17</lineNumber>
+						<lineNumber>16</lineNumber>
 						<contextFuncName>pointwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -731,7 +731,7 @@
 											<first>layers_c/pointwise_conv2d.cpp</first>
 											<second>pointwise_conv2d_fix16</second>
 										</first>
-										<second>17</second>
+										<second>16</second>
 									</item>
 								</second>
 							</item>
@@ -765,7 +765,7 @@
 						<name></name>
 						<fileName>layers_c/pointwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>17</lineNumber>
+						<lineNumber>16</lineNumber>
 						<contextFuncName>pointwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -780,7 +780,7 @@
 											<first>layers_c/pointwise_conv2d.cpp</first>
 											<second>pointwise_conv2d_fix16</second>
 										</first>
-										<second>17</second>
+										<second>16</second>
 									</item>
 								</second>
 							</item>
@@ -815,7 +815,7 @@
 						<name></name>
 						<fileName>layers_c/pointwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>18</lineNumber>
+						<lineNumber>17</lineNumber>
 						<contextFuncName>pointwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -830,7 +830,7 @@
 											<first>layers_c/pointwise_conv2d.cpp</first>
 											<second>pointwise_conv2d_fix16</second>
 										</first>
-										<second>18</second>
+										<second>17</second>
 									</item>
 								</second>
 							</item>
@@ -900,7 +900,7 @@
 						<name>exitcond2</name>
 						<fileName>layers_c/pointwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>18</lineNumber>
+						<lineNumber>17</lineNumber>
 						<contextFuncName>pointwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -915,7 +915,7 @@
 											<first>layers_c/pointwise_conv2d.cpp</first>
 											<second>pointwise_conv2d_fix16</second>
 										</first>
-										<second>18</second>
+										<second>17</second>
 									</item>
 								</second>
 							</item>
@@ -949,7 +949,7 @@
 						<name>out_h_2</name>
 						<fileName>layers_c/pointwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>18</lineNumber>
+						<lineNumber>17</lineNumber>
 						<contextFuncName>pointwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -964,7 +964,7 @@
 											<first>layers_c/pointwise_conv2d.cpp</first>
 											<second>pointwise_conv2d_fix16</second>
 										</first>
-										<second>18</second>
+										<second>17</second>
 									</item>
 								</second>
 							</item>
@@ -998,7 +998,7 @@
 						<name></name>
 						<fileName>layers_c/pointwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>18</lineNumber>
+						<lineNumber>17</lineNumber>
 						<contextFuncName>pointwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1013,7 +1013,7 @@
 											<first>layers_c/pointwise_conv2d.cpp</first>
 											<second>pointwise_conv2d_fix16</second>
 										</first>
-										<second>18</second>
+										<second>17</second>
 									</item>
 								</second>
 							</item>
@@ -1048,7 +1048,7 @@
 						<name>tmp_23</name>
 						<fileName>layers_c/pointwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>20</lineNumber>
+						<lineNumber>19</lineNumber>
 						<contextFuncName>pointwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1063,7 +1063,7 @@
 											<first>layers_c/pointwise_conv2d.cpp</first>
 											<second>pointwise_conv2d_fix16</second>
 										</first>
-										<second>20</second>
+										<second>19</second>
 									</item>
 								</second>
 							</item>
@@ -1096,7 +1096,7 @@
 						<name>tmp</name>
 						<fileName>layers_c/pointwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>20</lineNumber>
+						<lineNumber>19</lineNumber>
 						<contextFuncName>pointwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1111,7 +1111,7 @@
 											<first>layers_c/pointwise_conv2d.cpp</first>
 											<second>pointwise_conv2d_fix16</second>
 										</first>
-										<second>20</second>
+										<second>19</second>
 									</item>
 								</second>
 							</item>
@@ -1145,7 +1145,7 @@
 						<name>tmp1</name>
 						<fileName>layers_c/pointwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>20</lineNumber>
+						<lineNumber>19</lineNumber>
 						<contextFuncName>pointwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1160,7 +1160,7 @@
 											<first>layers_c/pointwise_conv2d.cpp</first>
 											<second>pointwise_conv2d_fix16</second>
 										</first>
-										<second>20</second>
+										<second>19</second>
 									</item>
 								</second>
 							</item>
@@ -1194,7 +1194,7 @@
 						<name></name>
 						<fileName>layers_c/pointwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>19</lineNumber>
+						<lineNumber>18</lineNumber>
 						<contextFuncName>pointwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1209,7 +1209,7 @@
 											<first>layers_c/pointwise_conv2d.cpp</first>
 											<second>pointwise_conv2d_fix16</second>
 										</first>
-										<second>19</second>
+										<second>18</second>
 									</item>
 								</second>
 							</item>
@@ -1279,7 +1279,7 @@
 						<name>exitcond1</name>
 						<fileName>layers_c/pointwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>19</lineNumber>
+						<lineNumber>18</lineNumber>
 						<contextFuncName>pointwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1294,7 +1294,7 @@
 											<first>layers_c/pointwise_conv2d.cpp</first>
 											<second>pointwise_conv2d_fix16</second>
 										</first>
-										<second>19</second>
+										<second>18</second>
 									</item>
 								</second>
 							</item>
@@ -1328,7 +1328,7 @@
 						<name>out_w_2</name>
 						<fileName>layers_c/pointwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>19</lineNumber>
+						<lineNumber>18</lineNumber>
 						<contextFuncName>pointwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1343,7 +1343,7 @@
 											<first>layers_c/pointwise_conv2d.cpp</first>
 											<second>pointwise_conv2d_fix16</second>
 										</first>
-										<second>19</second>
+										<second>18</second>
 									</item>
 								</second>
 							</item>
@@ -1377,7 +1377,7 @@
 						<name></name>
 						<fileName>layers_c/pointwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>19</lineNumber>
+						<lineNumber>18</lineNumber>
 						<contextFuncName>pointwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1392,7 +1392,7 @@
 											<first>layers_c/pointwise_conv2d.cpp</first>
 											<second>pointwise_conv2d_fix16</second>
 										</first>
-										<second>19</second>
+										<second>18</second>
 									</item>
 								</second>
 							</item>
@@ -1427,7 +1427,7 @@
 						<name>tmp_24</name>
 						<fileName>layers_c/pointwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>20</lineNumber>
+						<lineNumber>19</lineNumber>
 						<contextFuncName>pointwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1442,7 +1442,7 @@
 											<first>layers_c/pointwise_conv2d.cpp</first>
 											<second>pointwise_conv2d_fix16</second>
 										</first>
-										<second>20</second>
+										<second>19</second>
 									</item>
 								</second>
 							</item>
@@ -1475,7 +1475,7 @@
 						<name>tmp_25</name>
 						<fileName>layers_c/pointwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>20</lineNumber>
+						<lineNumber>19</lineNumber>
 						<contextFuncName>pointwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1490,7 +1490,7 @@
 											<first>layers_c/pointwise_conv2d.cpp</first>
 											<second>pointwise_conv2d_fix16</second>
 										</first>
-										<second>20</second>
+										<second>19</second>
 									</item>
 								</second>
 							</item>
@@ -1524,7 +1524,7 @@
 						<name>tmp_26</name>
 						<fileName>layers_c/pointwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>20</lineNumber>
+						<lineNumber>19</lineNumber>
 						<contextFuncName>pointwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1539,7 +1539,7 @@
 											<first>layers_c/pointwise_conv2d.cpp</first>
 											<second>pointwise_conv2d_fix16</second>
 										</first>
-										<second>20</second>
+										<second>19</second>
 									</item>
 								</second>
 							</item>
@@ -1572,7 +1572,7 @@
 						<name>output_addr</name>
 						<fileName>layers_c/pointwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>20</lineNumber>
+						<lineNumber>19</lineNumber>
 						<contextFuncName>pointwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1587,7 +1587,7 @@
 											<first>layers_c/pointwise_conv2d.cpp</first>
 											<second>pointwise_conv2d_fix16</second>
 										</first>
-										<second>20</second>
+										<second>19</second>
 									</item>
 								</second>
 							</item>
@@ -1622,7 +1622,7 @@
 						<name></name>
 						<fileName>layers_c/pointwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>21</lineNumber>
+						<lineNumber>20</lineNumber>
 						<contextFuncName>pointwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1637,7 +1637,7 @@
 											<first>layers_c/pointwise_conv2d.cpp</first>
 											<second>pointwise_conv2d_fix16</second>
 										</first>
-										<second>21</second>
+										<second>20</second>
 									</item>
 								</second>
 							</item>
@@ -1758,7 +1758,7 @@
 						<name>phi_mul</name>
 						<fileName>layers_c/pointwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>20</lineNumber>
+						<lineNumber>19</lineNumber>
 						<contextFuncName>pointwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1773,7 +1773,7 @@
 											<first>layers_c/pointwise_conv2d.cpp</first>
 											<second>pointwise_conv2d_fix16</second>
 										</first>
-										<second>20</second>
+										<second>19</second>
 									</item>
 								</second>
 							</item>
@@ -1858,7 +1858,7 @@
 						<name>exitcond</name>
 						<fileName>layers_c/pointwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>21</lineNumber>
+						<lineNumber>20</lineNumber>
 						<contextFuncName>pointwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1873,7 +1873,7 @@
 											<first>layers_c/pointwise_conv2d.cpp</first>
 											<second>pointwise_conv2d_fix16</second>
 										</first>
-										<second>21</second>
+										<second>20</second>
 									</item>
 								</second>
 							</item>
@@ -1907,7 +1907,7 @@
 						<name>in_d_1</name>
 						<fileName>layers_c/pointwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>21</lineNumber>
+						<lineNumber>20</lineNumber>
 						<contextFuncName>pointwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1922,7 +1922,7 @@
 											<first>layers_c/pointwise_conv2d.cpp</first>
 											<second>pointwise_conv2d_fix16</second>
 										</first>
-										<second>21</second>
+										<second>20</second>
 									</item>
 								</second>
 							</item>
@@ -1956,7 +1956,7 @@
 						<name></name>
 						<fileName>layers_c/pointwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>21</lineNumber>
+						<lineNumber>20</lineNumber>
 						<contextFuncName>pointwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1971,7 +1971,7 @@
 											<first>layers_c/pointwise_conv2d.cpp</first>
 											<second>pointwise_conv2d_fix16</second>
 										</first>
-										<second>21</second>
+										<second>20</second>
 									</item>
 								</second>
 							</item>
@@ -2006,7 +2006,7 @@
 						<name>next_mul</name>
 						<fileName>layers_c/pointwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>20</lineNumber>
+						<lineNumber>19</lineNumber>
 						<contextFuncName>pointwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2021,7 +2021,7 @@
 											<first>layers_c/pointwise_conv2d.cpp</first>
 											<second>pointwise_conv2d_fix16</second>
 										</first>
-										<second>20</second>
+										<second>19</second>
 									</item>
 								</second>
 							</item>
@@ -2055,7 +2055,7 @@
 						<name>tmp2</name>
 						<fileName>layers_c/pointwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>20</lineNumber>
+						<lineNumber>19</lineNumber>
 						<contextFuncName>pointwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2070,7 +2070,7 @@
 											<first>layers_c/pointwise_conv2d.cpp</first>
 											<second>pointwise_conv2d_fix16</second>
 										</first>
-										<second>20</second>
+										<second>19</second>
 									</item>
 								</second>
 							</item>
@@ -2104,7 +2104,7 @@
 						<name>tmp3</name>
 						<fileName>layers_c/pointwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>20</lineNumber>
+						<lineNumber>19</lineNumber>
 						<contextFuncName>pointwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2119,7 +2119,7 @@
 											<first>layers_c/pointwise_conv2d.cpp</first>
 											<second>pointwise_conv2d_fix16</second>
 										</first>
-										<second>20</second>
+										<second>19</second>
 									</item>
 								</second>
 							</item>
@@ -2545,7 +2545,7 @@
 						<name></name>
 						<fileName>layers_c/pointwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>21</lineNumber>
+						<lineNumber>20</lineNumber>
 						<contextFuncName>pointwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2560,7 +2560,7 @@
 											<first>layers_c/pointwise_conv2d.cpp</first>
 											<second>pointwise_conv2d_fix16</second>
 										</first>
-										<second>21</second>
+										<second>20</second>
 									</item>
 								</second>
 							</item>
@@ -2641,7 +2641,7 @@
 						<name>tmp_27</name>
 						<fileName>layers_c/pointwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>pointwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2656,7 +2656,7 @@
 											<first>layers_c/pointwise_conv2d.cpp</first>
 											<second>pointwise_conv2d_fix16</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -2690,7 +2690,7 @@
 						<name>tmp_27_cast</name>
 						<fileName>layers_c/pointwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>31</lineNumber>
+						<lineNumber>30</lineNumber>
 						<contextFuncName>pointwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2705,7 +2705,7 @@
 											<first>layers_c/pointwise_conv2d.cpp</first>
 											<second>pointwise_conv2d_fix16</second>
 										</first>
-										<second>31</second>
+										<second>30</second>
 									</item>
 								</second>
 							</item>
@@ -2739,7 +2739,7 @@
 						<name>tmp_8</name>
 						<fileName>layers_c/pointwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>31</lineNumber>
+						<lineNumber>30</lineNumber>
 						<contextFuncName>pointwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2754,7 +2754,7 @@
 											<first>layers_c/pointwise_conv2d.cpp</first>
 											<second>pointwise_conv2d_fix16</second>
 										</first>
-										<second>31</second>
+										<second>30</second>
 									</item>
 								</second>
 							</item>
@@ -2789,7 +2789,7 @@
 						<name>p_tmp_s</name>
 						<fileName>layers_c/pointwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>31</lineNumber>
+						<lineNumber>30</lineNumber>
 						<contextFuncName>pointwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2804,7 +2804,7 @@
 											<first>layers_c/pointwise_conv2d.cpp</first>
 											<second>pointwise_conv2d_fix16</second>
 										</first>
-										<second>31</second>
+										<second>30</second>
 									</item>
 								</second>
 							</item>
@@ -2839,7 +2839,7 @@
 						<name>p_tmp_cast</name>
 						<fileName>layers_c/pointwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>31</lineNumber>
+						<lineNumber>30</lineNumber>
 						<contextFuncName>pointwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2854,7 +2854,7 @@
 											<first>layers_c/pointwise_conv2d.cpp</first>
 											<second>pointwise_conv2d_fix16</second>
 										</first>
-										<second>31</second>
+										<second>30</second>
 									</item>
 								</second>
 							</item>
@@ -2887,7 +2887,7 @@
 						<name></name>
 						<fileName>layers_c/pointwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>pointwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2902,7 +2902,7 @@
 											<first>layers_c/pointwise_conv2d.cpp</first>
 											<second>pointwise_conv2d_fix16</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -2937,7 +2937,7 @@
 						<name></name>
 						<fileName>layers_c/pointwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>19</lineNumber>
+						<lineNumber>18</lineNumber>
 						<contextFuncName>pointwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2952,7 +2952,7 @@
 											<first>layers_c/pointwise_conv2d.cpp</first>
 											<second>pointwise_conv2d_fix16</second>
 										</first>
-										<second>19</second>
+										<second>18</second>
 									</item>
 								</second>
 							</item>
@@ -3195,7 +3195,7 @@
 					<bitwidth>30</bitwidth>
 				</Value>
 				<const_type>0</const_type>
-				<content>1073735623</content>
+				<content>1073735322</content>
 			</item>
 			<item class_id_reference="16" object_id="_73">
 				<Value>
@@ -3264,7 +3264,7 @@
 					<bitwidth>16</bitwidth>
 				</Value>
 				<const_type>0</const_type>
-				<content>58347</content>
+				<content>54797</content>
 			</item>
 			<item class_id_reference="16" object_id="_76">
 				<Value>
@@ -3287,7 +3287,7 @@
 					<bitwidth>15</bitwidth>
 				</Value>
 				<const_type>0</const_type>
-				<content>25579</content>
+				<content>22029</content>
 			</item>
 			<item class_id_reference="16" object_id="_77">
 				<Value>

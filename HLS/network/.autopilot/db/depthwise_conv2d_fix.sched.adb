@@ -155,7 +155,7 @@
 					<Obj>
 						<type>1</type>
 						<id>6</id>
-						<name>output_r</name>
+						<name>SeparableConv2D_3_m_s</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -164,7 +164,7 @@
 							<count>0</count>
 							<item_version>0</item_version>
 						</inlineStackInfo>
-						<originalName>output</originalName>
+						<originalName></originalName>
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
@@ -172,7 +172,7 @@
 				</Value>
 				<direction>2</direction>
 				<if_type>1</if_type>
-				<array_size>784</array_size>
+				<array_size>1568</array_size>
 				<bit_vecs>
 					<count>0</count>
 					<item_version>0</item_version>
@@ -183,7 +183,7 @@
 					<Obj>
 						<type>1</type>
 						<id>7</id>
-						<name>Padding2D_0_array</name>
+						<name>Padding2D_3_array</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -200,7 +200,7 @@
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
-				<array_size>900</array_size>
+				<array_size>2048</array_size>
 				<bit_vecs>
 					<count>0</count>
 					<item_version>0</item_version>
@@ -559,7 +559,7 @@
 						<name>tmp_116</name>
 						<fileName>layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>25</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -574,7 +574,7 @@
 											<first>layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>25</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -607,7 +607,7 @@
 						<name>tmp_117</name>
 						<fileName>layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>25</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -622,7 +622,7 @@
 											<first>layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>25</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -791,7 +791,7 @@
 						<name>phi_mul2</name>
 						<fileName>layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>25</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -806,7 +806,7 @@
 											<first>layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>25</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -842,7 +842,7 @@
 						<name>next_mul3</name>
 						<fileName>layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>25</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -857,7 +857,7 @@
 											<first>layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>25</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -1136,7 +1136,7 @@
 						<name>p_shl</name>
 						<fileName>layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>25</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1151,7 +1151,7 @@
 											<first>layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>25</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -1186,7 +1186,7 @@
 						<name>p_shl_cast</name>
 						<fileName>layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>25</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1201,7 +1201,7 @@
 											<first>layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>25</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -2084,7 +2084,7 @@
 					<Obj>
 						<type>0</type>
 						<id>54</id>
-						<name>output_addr11</name>
+						<name>SeparableConv2D_3_m_1</name>
 						<fileName>layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
 						<lineNumber>20</lineNumber>
@@ -2111,7 +2111,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>10</bitwidth>
+					<bitwidth>11</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>3</count>
@@ -2419,7 +2419,7 @@
 						<name>tmp_126_cast1</name>
 						<fileName>layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>25</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2434,7 +2434,7 @@
 											<first>layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>25</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -2467,7 +2467,7 @@
 						<name>tmp_126_cast9</name>
 						<fileName>layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>25</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2482,7 +2482,7 @@
 											<first>layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>25</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -2515,7 +2515,7 @@
 						<name>p_shl1</name>
 						<fileName>layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>25</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2530,7 +2530,7 @@
 											<first>layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>25</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -2565,7 +2565,7 @@
 						<name>p_shl1_cast</name>
 						<fileName>layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>25</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2580,7 +2580,7 @@
 											<first>layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>25</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -2613,7 +2613,7 @@
 						<name>tmp_125</name>
 						<fileName>layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>25</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2628,7 +2628,7 @@
 											<first>layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>25</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -2662,7 +2662,7 @@
 						<name>tmp_127_cast</name>
 						<fileName>layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>25</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2677,7 +2677,7 @@
 											<first>layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>25</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -2710,7 +2710,7 @@
 						<name>tmp4</name>
 						<fileName>layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>25</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2725,7 +2725,7 @@
 											<first>layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>25</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -2759,7 +2759,7 @@
 						<name>tmp4_cast</name>
 						<fileName>layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>25</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2774,7 +2774,7 @@
 											<first>layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>25</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -2807,7 +2807,7 @@
 						<name>tmp2</name>
 						<fileName>layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>25</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2822,7 +2822,7 @@
 											<first>layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>25</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -2856,7 +2856,7 @@
 						<name>tmp3</name>
 						<fileName>layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>25</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2871,7 +2871,7 @@
 											<first>layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>25</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -2905,7 +2905,7 @@
 						<name>tmp6</name>
 						<fileName>layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>25</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2920,7 +2920,7 @@
 											<first>layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>25</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -2954,7 +2954,7 @@
 						<name></name>
 						<fileName>layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>23</lineNumber>
+						<lineNumber>22</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2969,7 +2969,7 @@
 											<first>layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>23</second>
+										<second>22</second>
 									</item>
 								</second>
 							</item>
@@ -3039,7 +3039,7 @@
 						<name>exitcond</name>
 						<fileName>layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>23</lineNumber>
+						<lineNumber>22</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3054,7 +3054,7 @@
 											<first>layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>23</second>
+										<second>22</second>
 									</item>
 								</second>
 							</item>
@@ -3088,7 +3088,7 @@
 						<name>k_w_1</name>
 						<fileName>layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>23</lineNumber>
+						<lineNumber>22</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3103,7 +3103,7 @@
 											<first>layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>23</second>
+										<second>22</second>
 									</item>
 								</second>
 							</item>
@@ -3137,7 +3137,7 @@
 						<name></name>
 						<fileName>layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>23</lineNumber>
+						<lineNumber>22</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3152,7 +3152,7 @@
 											<first>layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>23</second>
+										<second>22</second>
 									</item>
 								</second>
 							</item>
@@ -3187,7 +3187,7 @@
 						<name>tmp_128_cast</name>
 						<fileName>layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>25</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3202,7 +3202,7 @@
 											<first>layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>25</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -3235,7 +3235,7 @@
 						<name>tmp5</name>
 						<fileName>layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>25</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3250,7 +3250,7 @@
 											<first>layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>25</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -3284,7 +3284,7 @@
 						<name>tmp5_cast</name>
 						<fileName>layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>25</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3299,7 +3299,7 @@
 											<first>layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>25</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -3332,7 +3332,7 @@
 						<name>tmp_126</name>
 						<fileName>layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>25</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3347,7 +3347,7 @@
 											<first>layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>25</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -3381,7 +3381,7 @@
 						<name>tmp_127</name>
 						<fileName>layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>25</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3396,7 +3396,7 @@
 											<first>layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>25</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -3426,10 +3426,10 @@
 					<Obj>
 						<type>0</type>
 						<id>88</id>
-						<name>Padding2D_0_array_ad</name>
+						<name>Padding2D_3_array_ad</name>
 						<fileName>layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>25</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3444,7 +3444,7 @@
 											<first>layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>25</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -3453,7 +3453,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>10</bitwidth>
+					<bitwidth>11</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>3</count>
@@ -3476,10 +3476,10 @@
 					<Obj>
 						<type>0</type>
 						<id>89</id>
-						<name>Padding2D_0_array_lo</name>
+						<name>Padding2D_3_array_lo</name>
 						<fileName>layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>25</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3494,7 +3494,7 @@
 											<first>layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>25</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -3527,7 +3527,7 @@
 						<name>tmp_133_cast</name>
 						<fileName>layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>25</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3542,7 +3542,7 @@
 											<first>layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>25</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -3575,7 +3575,7 @@
 						<name>tmp7</name>
 						<fileName>layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>25</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3590,7 +3590,7 @@
 											<first>layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>25</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -3624,7 +3624,7 @@
 						<name>tmp7_cast</name>
 						<fileName>layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>25</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3639,7 +3639,7 @@
 											<first>layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>25</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -3672,7 +3672,7 @@
 						<name>tmp_128</name>
 						<fileName>layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>25</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3687,7 +3687,7 @@
 											<first>layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>25</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -3721,7 +3721,7 @@
 						<name>tmp_135_cast</name>
 						<fileName>layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>25</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3736,7 +3736,7 @@
 											<first>layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>25</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -3769,7 +3769,7 @@
 						<name>tmp_129</name>
 						<fileName>layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>25</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3784,7 +3784,7 @@
 											<first>layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>25</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -3814,10 +3814,10 @@
 					<Obj>
 						<type>0</type>
 						<id>96</id>
-						<name>SeparableConv2D_0_w_1</name>
+						<name>SeparableConv2D_3_w_1</name>
 						<fileName>layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>25</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3832,7 +3832,7 @@
 											<first>layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>25</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -3841,7 +3841,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>4</bitwidth>
+					<bitwidth>7</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>3</count>
@@ -3864,10 +3864,10 @@
 					<Obj>
 						<type>0</type>
 						<id>97</id>
-						<name>SeparableConv2D_0_w_2</name>
+						<name>SeparableConv2D_3_w_2</name>
 						<fileName>layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>25</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3882,7 +3882,7 @@
 											<first>layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>25</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -3915,7 +3915,7 @@
 						<name>tmp_137_cast</name>
 						<fileName>layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>25</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3930,7 +3930,7 @@
 											<first>layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>25</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -3963,7 +3963,7 @@
 						<name>tmp_130</name>
 						<fileName>layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>25</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3978,7 +3978,7 @@
 											<first>layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>25</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -4012,7 +4012,7 @@
 						<name>tmp_132</name>
 						<fileName>layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>25</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4027,7 +4027,7 @@
 											<first>layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>25</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -4060,10 +4060,10 @@
 					<Obj>
 						<type>0</type>
 						<id>101</id>
-						<name>output_load</name>
+						<name>SeparableConv2D_3_m_2</name>
 						<fileName>layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>25</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4078,7 +4078,7 @@
 											<first>layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>25</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -4111,7 +4111,7 @@
 						<name>tmp_133</name>
 						<fileName>layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>25</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4126,7 +4126,7 @@
 											<first>layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>25</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -4160,7 +4160,7 @@
 						<name></name>
 						<fileName>layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>25</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4175,7 +4175,7 @@
 											<first>layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>25</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -4210,7 +4210,7 @@
 						<name></name>
 						<fileName>layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
-						<lineNumber>23</lineNumber>
+						<lineNumber>22</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4225,7 +4225,7 @@
 											<first>layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>23</second>
+										<second>22</second>
 									</item>
 								</second>
 							</item>

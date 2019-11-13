@@ -756,12 +756,12 @@
 </and_exp></or_exp>
 </condition>
 
-<Node id="54" bw="12" op_0_bw="16" op_1_bw="64" op_2_bw="64">
+<Node id="54" bw="9" op_0_bw="16" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-:4  %output_addr11 = getelementptr [3136 x i16]* %output_r, i64 0, i64 %tmp_126
+:4  %SeparableConv2D_2_m_1 = getelementptr [392 x i16]* @SeparableConv2D_2_m_s, i64 0, i64 %tmp_126
 
 ]]></Node>
-<StgValue><ssdm name="output_addr11"/></StgValue>
+<StgValue><ssdm name="SeparableConv2D_2_m_1"/></StgValue>
 </operation>
 
 <operation id="54" st_id="5" stage="1" lat="1">
@@ -772,9 +772,9 @@
 </and_exp></or_exp>
 </condition>
 
-<Node id="55" bw="0" op_0_bw="16" op_1_bw="12">
+<Node id="55" bw="0" op_0_bw="16" op_1_bw="9">
 <![CDATA[
-:5  store i16 0, i16* %output_addr11, align 2
+:5  store i16 0, i16* %SeparableConv2D_2_m_1, align 2
 
 ]]></Node>
 <StgValue><ssdm name=""/></StgValue>
@@ -1141,10 +1141,10 @@
 
 <Node id="79" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-.preheader:2  %empty_28 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 3, i64 3, i64 3)
+.preheader:2  %empty_30 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 3, i64 3, i64 3)
 
 ]]></Node>
-<StgValue><ssdm name="empty_28"/></StgValue>
+<StgValue><ssdm name="empty_30"/></StgValue>
 </operation>
 
 <operation id="78" st_id="8" stage="1" lat="1">
@@ -1265,12 +1265,12 @@
 </and_exp></or_exp>
 </condition>
 
-<Node id="88" bw="12" op_0_bw="16" op_1_bw="64" op_2_bw="64">
+<Node id="88" bw="10" op_0_bw="16" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-:5  %Padding2D_1_array_ad = getelementptr [4096 x i16]* @Padding2D_1_array, i64 0, i64 %tmp_134
+:5  %Padding2D_2_array_ad = getelementptr [648 x i16]* @Padding2D_2_array, i64 0, i64 %tmp_134
 
 ]]></Node>
-<StgValue><ssdm name="Padding2D_1_array_ad"/></StgValue>
+<StgValue><ssdm name="Padding2D_2_array_ad"/></StgValue>
 </operation>
 
 <operation id="86" st_id="8" stage="2" lat="2">
@@ -1281,12 +1281,12 @@
 </and_exp></or_exp>
 </condition>
 
-<Node id="89" bw="16" op_0_bw="12">
+<Node id="89" bw="16" op_0_bw="10">
 <![CDATA[
-:6  %Padding2D_1_array_lo = load i16* %Padding2D_1_array_ad, align 2
+:6  %Padding2D_2_array_lo = load i16* %Padding2D_2_array_ad, align 2
 
 ]]></Node>
-<StgValue><ssdm name="Padding2D_1_array_lo"/></StgValue>
+<StgValue><ssdm name="Padding2D_2_array_lo"/></StgValue>
 </operation>
 
 <operation id="87" st_id="8" stage="1" lat="1">
@@ -1377,12 +1377,12 @@
 </and_exp></or_exp>
 </condition>
 
-<Node id="96" bw="8" op_0_bw="14" op_1_bw="64" op_2_bw="64">
+<Node id="96" bw="7" op_0_bw="15" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-:13  %SeparableConv2D_1_w_1 = getelementptr [144 x i14]* @SeparableConv2D_1_w_s, i64 0, i64 %tmp_137
+:13  %SeparableConv2D_2_w_1 = getelementptr [72 x i15]* @SeparableConv2D_2_w_s, i64 0, i64 %tmp_137
 
 ]]></Node>
-<StgValue><ssdm name="SeparableConv2D_1_w_1"/></StgValue>
+<StgValue><ssdm name="SeparableConv2D_2_w_1"/></StgValue>
 </operation>
 
 <operation id="93" st_id="8" stage="2" lat="2">
@@ -1393,12 +1393,12 @@
 </and_exp></or_exp>
 </condition>
 
-<Node id="97" bw="14" op_0_bw="8">
+<Node id="97" bw="15" op_0_bw="7">
 <![CDATA[
-:14  %SeparableConv2D_1_w_2 = load i14* %SeparableConv2D_1_w_1, align 2
+:14  %SeparableConv2D_2_w_2 = load i15* %SeparableConv2D_2_w_1, align 2
 
 ]]></Node>
-<StgValue><ssdm name="SeparableConv2D_1_w_2"/></StgValue>
+<StgValue><ssdm name="SeparableConv2D_2_w_2"/></StgValue>
 </operation>
 
 <operation id="94" st_id="8" stage="1" lat="1">
@@ -1427,12 +1427,12 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="89" bw="16" op_0_bw="12">
+<Node id="89" bw="16" op_0_bw="10">
 <![CDATA[
-:6  %Padding2D_1_array_lo = load i16* %Padding2D_1_array_ad, align 2
+:6  %Padding2D_2_array_lo = load i16* %Padding2D_2_array_ad, align 2
 
 ]]></Node>
-<StgValue><ssdm name="Padding2D_1_array_lo"/></StgValue>
+<StgValue><ssdm name="Padding2D_2_array_lo"/></StgValue>
 </operation>
 
 <operation id="96" st_id="9" stage="1" lat="2">
@@ -1442,12 +1442,12 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="97" bw="14" op_0_bw="8">
+<Node id="97" bw="15" op_0_bw="7">
 <![CDATA[
-:14  %SeparableConv2D_1_w_2 = load i14* %SeparableConv2D_1_w_1, align 2
+:14  %SeparableConv2D_2_w_2 = load i15* %SeparableConv2D_2_w_1, align 2
 
 ]]></Node>
-<StgValue><ssdm name="SeparableConv2D_1_w_2"/></StgValue>
+<StgValue><ssdm name="SeparableConv2D_2_w_2"/></StgValue>
 </operation>
 </state>
 
@@ -1462,7 +1462,7 @@
 
 <Node id="90" bw="30" op_0_bw="16">
 <![CDATA[
-:7  %tmp_135_cast = sext i16 %Padding2D_1_array_lo to i30
+:7  %tmp_135_cast = sext i16 %Padding2D_2_array_lo to i30
 
 ]]></Node>
 <StgValue><ssdm name="tmp_135_cast"/></StgValue>
@@ -1475,9 +1475,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="98" bw="30" op_0_bw="14">
+<Node id="98" bw="30" op_0_bw="15">
 <![CDATA[
-:15  %tmp_139_cast = sext i14 %SeparableConv2D_1_w_2 to i30
+:15  %tmp_139_cast = sext i15 %SeparableConv2D_2_w_2 to i30
 
 ]]></Node>
 <StgValue><ssdm name="tmp_139_cast"/></StgValue>
@@ -1520,12 +1520,12 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="101" bw="16" op_0_bw="12">
+<Node id="101" bw="16" op_0_bw="9">
 <![CDATA[
-:18  %output_load = load i16* %output_addr11, align 2
+:18  %SeparableConv2D_2_m_2 = load i16* %SeparableConv2D_2_m_1, align 2
 
 ]]></Node>
-<StgValue><ssdm name="output_load"/></StgValue>
+<StgValue><ssdm name="SeparableConv2D_2_m_2"/></StgValue>
 </operation>
 </state>
 
@@ -1538,12 +1538,12 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="101" bw="16" op_0_bw="12">
+<Node id="101" bw="16" op_0_bw="9">
 <![CDATA[
-:18  %output_load = load i16* %output_addr11, align 2
+:18  %SeparableConv2D_2_m_2 = load i16* %SeparableConv2D_2_m_1, align 2
 
 ]]></Node>
-<StgValue><ssdm name="output_load"/></StgValue>
+<StgValue><ssdm name="SeparableConv2D_2_m_2"/></StgValue>
 </operation>
 
 <operation id="103" st_id="11" stage="1" lat="1">
@@ -1555,7 +1555,7 @@
 
 <Node id="102" bw="16" op_0_bw="16" op_1_bw="16">
 <![CDATA[
-:19  %tmp_140 = add i16 %output_load, %tmp_139
+:19  %tmp_140 = add i16 %SeparableConv2D_2_m_2, %tmp_139
 
 ]]></Node>
 <StgValue><ssdm name="tmp_140"/></StgValue>
@@ -1568,9 +1568,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="103" bw="0" op_0_bw="16" op_1_bw="12">
+<Node id="103" bw="0" op_0_bw="16" op_1_bw="9">
 <![CDATA[
-:20  store i16 %tmp_140, i16* %output_addr11, align 2
+:20  store i16 %tmp_140, i16* %SeparableConv2D_2_m_1, align 2
 
 ]]></Node>
 <StgValue><ssdm name=""/></StgValue>
@@ -1610,16 +1610,16 @@
 <port id="128" name="output_width" dir="0" iftype="0">
 <core>NULL</core><StgValue><ssdm name="output_width"/></StgValue>
 </port>
-<port id="129" name="output_r" dir="2" iftype="1">
-<core>RAM</core><StgValue><ssdm name="output_r"/><MemPortTyVec>2 3 </MemPortTyVec>
+<port id="129" name="SeparableConv2D_2_m_s" dir="2" iftype="1">
+<core>RAM</core><StgValue><ssdm name="SeparableConv2D_2_m_s"/><MemPortTyVec>2 3 </MemPortTyVec>
 </StgValue>
 </port>
-<port id="130" name="Padding2D_1_array" dir="0" iftype="1">
-<core>RAM</core><StgValue><ssdm name="Padding2D_1_array"/><MemPortTyVec>1 3 </MemPortTyVec>
+<port id="130" name="Padding2D_2_array" dir="0" iftype="1">
+<core>RAM</core><StgValue><ssdm name="Padding2D_2_array"/><MemPortTyVec>1 3 </MemPortTyVec>
 </StgValue>
 </port>
-<port id="131" name="SeparableConv2D_1_w_s" dir="0" iftype="1">
-<core>ROM_nP</core><StgValue><ssdm name="SeparableConv2D_1_w_s"/><MemPortTyVec>1 </MemPortTyVec>
+<port id="131" name="SeparableConv2D_2_w_s" dir="0" iftype="1">
+<core>ROM_nP</core><StgValue><ssdm name="SeparableConv2D_2_w_s"/><MemPortTyVec>1 </MemPortTyVec>
 </StgValue>
 </port>
 </ports>
@@ -1810,15 +1810,15 @@
 </dataflow>
 <dataflow id="206" from="tmp_125" to="tmp_126" fromId="51" toId="52">
 </dataflow>
-<dataflow id="207" from="output_r" to="output_addr11" fromId="129" toId="53">
+<dataflow id="207" from="SeparableConv2D_2_m_s" to="SeparableConv2D_2_m_1" fromId="129" toId="53">
 </dataflow>
-<dataflow id="209" from="StgValue_208" to="output_addr11" fromId="208" toId="53">
+<dataflow id="209" from="StgValue_208" to="SeparableConv2D_2_m_1" fromId="208" toId="53">
 </dataflow>
-<dataflow id="210" from="tmp_126" to="output_addr11" fromId="52" toId="53">
+<dataflow id="210" from="tmp_126" to="SeparableConv2D_2_m_1" fromId="52" toId="53">
 </dataflow>
 <dataflow id="211" from="StgValue_147" to="StgValue_54" fromId="147" toId="54">
 </dataflow>
-<dataflow id="212" from="output_addr11" to="StgValue_54" fromId="53" toId="54">
+<dataflow id="212" from="SeparableConv2D_2_m_1" to="StgValue_54" fromId="53" toId="54">
 </dataflow>
 <dataflow id="214" from="StgValue_213" to="k_h" fromId="213" toId="57">
 <condition id="-1">
@@ -1912,13 +1912,13 @@
 </dataflow>
 <dataflow id="255" from="StgValue_219" to="exitcond" fromId="219" toId="76">
 </dataflow>
-<dataflow id="256" from="_ssdm_op_SpecLoopTripCount" to="empty_28" fromId="221" toId="77">
+<dataflow id="256" from="_ssdm_op_SpecLoopTripCount" to="empty_30" fromId="221" toId="77">
 </dataflow>
-<dataflow id="257" from="StgValue_223" to="empty_28" fromId="223" toId="77">
+<dataflow id="257" from="StgValue_223" to="empty_30" fromId="223" toId="77">
 </dataflow>
-<dataflow id="258" from="StgValue_223" to="empty_28" fromId="223" toId="77">
+<dataflow id="258" from="StgValue_223" to="empty_30" fromId="223" toId="77">
 </dataflow>
-<dataflow id="259" from="StgValue_223" to="empty_28" fromId="223" toId="77">
+<dataflow id="259" from="StgValue_223" to="empty_30" fromId="223" toId="77">
 </dataflow>
 <dataflow id="260" from="k_w" to="k_w_1" fromId="75" toId="78">
 </dataflow>
@@ -1940,13 +1940,13 @@
 </dataflow>
 <dataflow id="269" from="tmp_133" to="tmp_134" fromId="83" toId="84">
 </dataflow>
-<dataflow id="270" from="Padding2D_1_array" to="Padding2D_1_array_ad" fromId="130" toId="85">
+<dataflow id="270" from="Padding2D_2_array" to="Padding2D_2_array_ad" fromId="130" toId="85">
 </dataflow>
-<dataflow id="271" from="StgValue_208" to="Padding2D_1_array_ad" fromId="208" toId="85">
+<dataflow id="271" from="StgValue_208" to="Padding2D_2_array_ad" fromId="208" toId="85">
 </dataflow>
-<dataflow id="272" from="tmp_134" to="Padding2D_1_array_ad" fromId="84" toId="85">
+<dataflow id="272" from="tmp_134" to="Padding2D_2_array_ad" fromId="84" toId="85">
 </dataflow>
-<dataflow id="273" from="Padding2D_1_array_ad" to="Padding2D_1_array_lo" fromId="85" toId="86">
+<dataflow id="273" from="Padding2D_2_array_ad" to="Padding2D_2_array_lo" fromId="85" toId="86">
 </dataflow>
 <dataflow id="274" from="tmp_118_cast3" to="tmp7" fromId="30" toId="87">
 </dataflow>
@@ -1962,21 +1962,21 @@
 </dataflow>
 <dataflow id="280" from="tmp_137_cast" to="tmp_137" fromId="90" toId="91">
 </dataflow>
-<dataflow id="281" from="SeparableConv2D_1_w_s" to="SeparableConv2D_1_w_1" fromId="131" toId="92">
+<dataflow id="281" from="SeparableConv2D_2_w_s" to="SeparableConv2D_2_w_1" fromId="131" toId="92">
 </dataflow>
-<dataflow id="282" from="StgValue_208" to="SeparableConv2D_1_w_1" fromId="208" toId="92">
+<dataflow id="282" from="StgValue_208" to="SeparableConv2D_2_w_1" fromId="208" toId="92">
 </dataflow>
-<dataflow id="283" from="tmp_137" to="SeparableConv2D_1_w_1" fromId="91" toId="92">
+<dataflow id="283" from="tmp_137" to="SeparableConv2D_2_w_1" fromId="91" toId="92">
 </dataflow>
-<dataflow id="284" from="SeparableConv2D_1_w_1" to="SeparableConv2D_1_w_2" fromId="92" toId="93">
+<dataflow id="284" from="SeparableConv2D_2_w_1" to="SeparableConv2D_2_w_2" fromId="92" toId="93">
 </dataflow>
-<dataflow id="285" from="Padding2D_1_array_ad" to="Padding2D_1_array_lo" fromId="85" toId="95">
+<dataflow id="285" from="Padding2D_2_array_ad" to="Padding2D_2_array_lo" fromId="85" toId="95">
 </dataflow>
-<dataflow id="286" from="SeparableConv2D_1_w_1" to="SeparableConv2D_1_w_2" fromId="92" toId="96">
+<dataflow id="286" from="SeparableConv2D_2_w_1" to="SeparableConv2D_2_w_2" fromId="92" toId="96">
 </dataflow>
-<dataflow id="287" from="Padding2D_1_array_lo" to="tmp_135_cast" fromId="95" toId="97">
+<dataflow id="287" from="Padding2D_2_array_lo" to="tmp_135_cast" fromId="95" toId="97">
 </dataflow>
-<dataflow id="288" from="SeparableConv2D_1_w_2" to="tmp_139_cast" fromId="96" toId="98">
+<dataflow id="288" from="SeparableConv2D_2_w_2" to="tmp_139_cast" fromId="96" toId="98">
 </dataflow>
 <dataflow id="289" from="tmp_135_cast" to="tmp_138" fromId="97" toId="99">
 </dataflow>
@@ -1990,17 +1990,17 @@
 </dataflow>
 <dataflow id="297" from="StgValue_296" to="tmp_139" fromId="296" toId="100">
 </dataflow>
-<dataflow id="298" from="output_addr11" to="output_load" fromId="53" toId="101">
+<dataflow id="298" from="SeparableConv2D_2_m_1" to="SeparableConv2D_2_m_2" fromId="53" toId="101">
 </dataflow>
-<dataflow id="299" from="output_addr11" to="output_load" fromId="53" toId="102">
+<dataflow id="299" from="SeparableConv2D_2_m_1" to="SeparableConv2D_2_m_2" fromId="53" toId="102">
 </dataflow>
-<dataflow id="300" from="output_load" to="tmp_140" fromId="102" toId="103">
+<dataflow id="300" from="SeparableConv2D_2_m_2" to="tmp_140" fromId="102" toId="103">
 </dataflow>
 <dataflow id="301" from="tmp_139" to="tmp_140" fromId="100" toId="103">
 </dataflow>
 <dataflow id="302" from="tmp_140" to="StgValue_104" fromId="103" toId="104">
 </dataflow>
-<dataflow id="303" from="output_addr11" to="StgValue_104" fromId="53" toId="104">
+<dataflow id="303" from="SeparableConv2D_2_m_1" to="StgValue_104" fromId="53" toId="104">
 </dataflow>
 <dataflow id="304" from="exitcond4" to="StgValue_2" fromId="27" toId="2">
 </dataflow>

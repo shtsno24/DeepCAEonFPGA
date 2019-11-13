@@ -22,14 +22,14 @@ port (
     output_depth : IN STD_LOGIC_VECTOR (15 downto 0);
     output_height : IN STD_LOGIC_VECTOR (15 downto 0);
     output_width : IN STD_LOGIC_VECTOR (15 downto 0);
-    output_r_address0 : OUT STD_LOGIC_VECTOR (11 downto 0);
-    output_r_ce0 : OUT STD_LOGIC;
-    output_r_we0 : OUT STD_LOGIC;
-    output_r_d0 : OUT STD_LOGIC_VECTOR (15 downto 0);
-    output_r_q0 : IN STD_LOGIC_VECTOR (15 downto 0);
-    Padding2D_1_array_address0 : OUT STD_LOGIC_VECTOR (11 downto 0);
-    Padding2D_1_array_ce0 : OUT STD_LOGIC;
-    Padding2D_1_array_q0 : IN STD_LOGIC_VECTOR (15 downto 0) );
+    SeparableConv2D_2_m_s_address0 : OUT STD_LOGIC_VECTOR (8 downto 0);
+    SeparableConv2D_2_m_s_ce0 : OUT STD_LOGIC;
+    SeparableConv2D_2_m_s_we0 : OUT STD_LOGIC;
+    SeparableConv2D_2_m_s_d0 : OUT STD_LOGIC_VECTOR (15 downto 0);
+    SeparableConv2D_2_m_s_q0 : IN STD_LOGIC_VECTOR (15 downto 0);
+    Padding2D_2_array_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    Padding2D_2_array_ce0 : OUT STD_LOGIC;
+    Padding2D_2_array_q0 : IN STD_LOGIC_VECTOR (15 downto 0) );
 end;
 
 
@@ -75,9 +75,9 @@ architecture behav of depthwise_conv2d_fix_2 is
     attribute fsm_encoding of ap_CS_fsm : signal is "none";
     signal ap_CS_fsm_state1 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state1 : signal is "none";
-    signal SeparableConv2D_1_w_s_address0 : STD_LOGIC_VECTOR (7 downto 0);
-    signal SeparableConv2D_1_w_s_ce0 : STD_LOGIC;
-    signal SeparableConv2D_1_w_s_q0 : STD_LOGIC_VECTOR (13 downto 0);
+    signal SeparableConv2D_2_w_s_address0 : STD_LOGIC_VECTOR (6 downto 0);
+    signal SeparableConv2D_2_w_s_ce0 : STD_LOGIC;
+    signal SeparableConv2D_2_w_s_q0 : STD_LOGIC_VECTOR (14 downto 0);
     signal tmp_s_fu_198_p1 : STD_LOGIC_VECTOR (31 downto 0);
     signal tmp_s_reg_476 : STD_LOGIC_VECTOR (31 downto 0);
     signal tmp_115_fu_202_p1 : STD_LOGIC_VECTOR (31 downto 0);
@@ -119,7 +119,7 @@ architecture behav of depthwise_conv2d_fix_2 is
     signal tmp_124_cast_fu_295_p1 : STD_LOGIC_VECTOR (16 downto 0);
     signal tmp_124_cast_reg_555 : STD_LOGIC_VECTOR (16 downto 0);
     signal exitcond2_fu_280_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal output_addr11_reg_560 : STD_LOGIC_VECTOR (11 downto 0);
+    signal SeparableConv2D_2_m_1_reg_560 : STD_LOGIC_VECTOR (8 downto 0);
     signal k_h_1_fu_315_p2 : STD_LOGIC_VECTOR (1 downto 0);
     signal k_h_1_reg_568 : STD_LOGIC_VECTOR (1 downto 0);
     signal ap_CS_fsm_state6 : STD_LOGIC;
@@ -138,10 +138,10 @@ architecture behav of depthwise_conv2d_fix_2 is
     signal ap_CS_fsm_state8 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state8 : signal is "none";
     signal exitcond_fu_375_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal Padding2D_1_array_lo_reg_606 : STD_LOGIC_VECTOR (15 downto 0);
+    signal Padding2D_2_array_lo_reg_606 : STD_LOGIC_VECTOR (15 downto 0);
     signal ap_CS_fsm_state9 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state9 : signal is "none";
-    signal SeparableConv2D_1_w_2_reg_611 : STD_LOGIC_VECTOR (13 downto 0);
+    signal SeparableConv2D_2_w_2_reg_611 : STD_LOGIC_VECTOR (14 downto 0);
     signal tmp_139_reg_616 : STD_LOGIC_VECTOR (15 downto 0);
     signal ap_CS_fsm_state10 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state10 : signal is "none";
@@ -183,7 +183,7 @@ architecture behav of depthwise_conv2d_fix_2 is
     signal tmp_138_fu_454_p2 : STD_LOGIC_VECTOR (29 downto 0);
     signal ap_NS_fsm : STD_LOGIC_VECTOR (10 downto 0);
 
-    component network_mul_mul_16s_14s_30_1_1 IS
+    component network_mul_mul_16s_15s_30_1_1 IS
     generic (
         ID : INTEGER;
         NUM_STAGE : INTEGER;
@@ -192,12 +192,12 @@ architecture behav of depthwise_conv2d_fix_2 is
         dout_WIDTH : INTEGER );
     port (
         din0 : IN STD_LOGIC_VECTOR (15 downto 0);
-        din1 : IN STD_LOGIC_VECTOR (13 downto 0);
+        din1 : IN STD_LOGIC_VECTOR (14 downto 0);
         dout : OUT STD_LOGIC_VECTOR (29 downto 0) );
     end component;
 
 
-    component depthwise_conv2d_fix_2_SeparableConv2D_1_w_s IS
+    component depthwise_conv2d_fix_2_SeparableConv2D_2_w_s IS
     generic (
         DataWidth : INTEGER;
         AddressRange : INTEGER;
@@ -205,36 +205,36 @@ architecture behav of depthwise_conv2d_fix_2 is
     port (
         clk : IN STD_LOGIC;
         reset : IN STD_LOGIC;
-        address0 : IN STD_LOGIC_VECTOR (7 downto 0);
+        address0 : IN STD_LOGIC_VECTOR (6 downto 0);
         ce0 : IN STD_LOGIC;
-        q0 : OUT STD_LOGIC_VECTOR (13 downto 0) );
+        q0 : OUT STD_LOGIC_VECTOR (14 downto 0) );
     end component;
 
 
 
 begin
-    SeparableConv2D_1_w_s_U : component depthwise_conv2d_fix_2_SeparableConv2D_1_w_s
+    SeparableConv2D_2_w_s_U : component depthwise_conv2d_fix_2_SeparableConv2D_2_w_s
     generic map (
-        DataWidth => 14,
-        AddressRange => 144,
-        AddressWidth => 8)
+        DataWidth => 15,
+        AddressRange => 72,
+        AddressWidth => 7)
     port map (
         clk => ap_clk,
         reset => ap_rst,
-        address0 => SeparableConv2D_1_w_s_address0,
-        ce0 => SeparableConv2D_1_w_s_ce0,
-        q0 => SeparableConv2D_1_w_s_q0);
+        address0 => SeparableConv2D_2_w_s_address0,
+        ce0 => SeparableConv2D_2_w_s_ce0,
+        q0 => SeparableConv2D_2_w_s_q0);
 
-    network_mul_mul_16s_14s_30_1_1_U37 : component network_mul_mul_16s_14s_30_1_1
+    network_mul_mul_16s_15s_30_1_1_U69 : component network_mul_mul_16s_15s_30_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,
         din0_WIDTH => 16,
-        din1_WIDTH => 14,
+        din1_WIDTH => 15,
         dout_WIDTH => 30)
     port map (
-        din0 => Padding2D_1_array_lo_reg_606,
-        din1 => SeparableConv2D_1_w_2_reg_611,
+        din0 => Padding2D_2_array_lo_reg_606,
+        din1 => SeparableConv2D_2_w_2_reg_611,
         dout => tmp_138_fu_454_p2);
 
 
@@ -333,8 +333,17 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_logic_1 = ap_CS_fsm_state9)) then
-                Padding2D_1_array_lo_reg_606 <= Padding2D_1_array_q0;
-                SeparableConv2D_1_w_2_reg_611 <= SeparableConv2D_1_w_s_q0;
+                Padding2D_2_array_lo_reg_606 <= Padding2D_2_array_q0;
+                SeparableConv2D_2_w_2_reg_611 <= SeparableConv2D_2_w_s_q0;
+            end if;
+        end if;
+    end process;
+    process (ap_clk)
+    begin
+        if (ap_clk'event and ap_clk = '1') then
+            if (((exitcond2_fu_280_p2 = ap_const_lv1_0) and (ap_const_logic_1 = ap_CS_fsm_state5))) then
+                SeparableConv2D_2_m_1_reg_560 <= tmp_126_fu_304_p1(9 - 1 downto 0);
+                    tmp_124_cast_reg_555(15 downto 0) <= tmp_124_cast_fu_295_p1(15 downto 0);
             end if;
         end if;
     end process;
@@ -377,15 +386,6 @@ begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_logic_1 = ap_CS_fsm_state5)) then
                 out_w_4_reg_550 <= out_w_4_fu_285_p2;
-            end if;
-        end if;
-    end process;
-    process (ap_clk)
-    begin
-        if (ap_clk'event and ap_clk = '1') then
-            if (((exitcond2_fu_280_p2 = ap_const_lv1_0) and (ap_const_logic_1 = ap_CS_fsm_state5))) then
-                output_addr11_reg_560 <= tmp_126_fu_304_p1(12 - 1 downto 0);
-                    tmp_124_cast_reg_555(15 downto 0) <= tmp_124_cast_fu_295_p1(15 downto 0);
             end if;
         end if;
     end process;
@@ -514,25 +514,69 @@ begin
                 ap_NS_fsm <= "XXXXXXXXXXX";
         end case;
     end process;
-    Padding2D_1_array_address0 <= tmp_134_fu_405_p1(12 - 1 downto 0);
+    Padding2D_2_array_address0 <= tmp_134_fu_405_p1(10 - 1 downto 0);
 
-    Padding2D_1_array_ce0_assign_proc : process(ap_CS_fsm_state8)
+    Padding2D_2_array_ce0_assign_proc : process(ap_CS_fsm_state8)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state8)) then 
-            Padding2D_1_array_ce0 <= ap_const_logic_1;
+            Padding2D_2_array_ce0 <= ap_const_logic_1;
         else 
-            Padding2D_1_array_ce0 <= ap_const_logic_0;
+            Padding2D_2_array_ce0 <= ap_const_logic_0;
         end if; 
     end process;
 
-    SeparableConv2D_1_w_s_address0 <= tmp_137_fu_428_p1(8 - 1 downto 0);
 
-    SeparableConv2D_1_w_s_ce0_assign_proc : process(ap_CS_fsm_state8)
+    SeparableConv2D_2_m_s_address0_assign_proc : process(ap_CS_fsm_state5, SeparableConv2D_2_m_1_reg_560, ap_CS_fsm_state10, ap_CS_fsm_state11, tmp_126_fu_304_p1)
+    begin
+        if (((ap_const_logic_1 = ap_CS_fsm_state11) or (ap_const_logic_1 = ap_CS_fsm_state10))) then 
+            SeparableConv2D_2_m_s_address0 <= SeparableConv2D_2_m_1_reg_560;
+        elsif ((ap_const_logic_1 = ap_CS_fsm_state5)) then 
+            SeparableConv2D_2_m_s_address0 <= tmp_126_fu_304_p1(9 - 1 downto 0);
+        else 
+            SeparableConv2D_2_m_s_address0 <= "XXXXXXXXX";
+        end if; 
+    end process;
+
+
+    SeparableConv2D_2_m_s_ce0_assign_proc : process(ap_CS_fsm_state5, ap_CS_fsm_state10, ap_CS_fsm_state11)
+    begin
+        if (((ap_const_logic_1 = ap_CS_fsm_state11) or (ap_const_logic_1 = ap_CS_fsm_state10) or (ap_const_logic_1 = ap_CS_fsm_state5))) then 
+            SeparableConv2D_2_m_s_ce0 <= ap_const_logic_1;
+        else 
+            SeparableConv2D_2_m_s_ce0 <= ap_const_logic_0;
+        end if; 
+    end process;
+
+
+    SeparableConv2D_2_m_s_d0_assign_proc : process(ap_CS_fsm_state5, ap_CS_fsm_state11, tmp_140_fu_448_p2)
+    begin
+        if ((ap_const_logic_1 = ap_CS_fsm_state11)) then 
+            SeparableConv2D_2_m_s_d0 <= tmp_140_fu_448_p2;
+        elsif ((ap_const_logic_1 = ap_CS_fsm_state5)) then 
+            SeparableConv2D_2_m_s_d0 <= ap_const_lv16_0;
+        else 
+            SeparableConv2D_2_m_s_d0 <= "XXXXXXXXXXXXXXXX";
+        end if; 
+    end process;
+
+
+    SeparableConv2D_2_m_s_we0_assign_proc : process(ap_CS_fsm_state5, exitcond2_fu_280_p2, ap_CS_fsm_state11)
+    begin
+        if (((ap_const_logic_1 = ap_CS_fsm_state11) or ((exitcond2_fu_280_p2 = ap_const_lv1_0) and (ap_const_logic_1 = ap_CS_fsm_state5)))) then 
+            SeparableConv2D_2_m_s_we0 <= ap_const_logic_1;
+        else 
+            SeparableConv2D_2_m_s_we0 <= ap_const_logic_0;
+        end if; 
+    end process;
+
+    SeparableConv2D_2_w_s_address0 <= tmp_137_fu_428_p1(7 - 1 downto 0);
+
+    SeparableConv2D_2_w_s_ce0_assign_proc : process(ap_CS_fsm_state8)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state8)) then 
-            SeparableConv2D_1_w_s_ce0 <= ap_const_logic_1;
+            SeparableConv2D_2_w_s_ce0 <= ap_const_logic_1;
         else 
-            SeparableConv2D_1_w_s_ce0 <= ap_const_logic_0;
+            SeparableConv2D_2_w_s_ce0 <= ap_const_logic_0;
         end if; 
     end process;
 
@@ -589,50 +633,6 @@ begin
     out_d_4_fu_229_p2 <= std_logic_vector(unsigned(out_d_reg_118) + unsigned(ap_const_lv16_1));
     out_h_4_fu_256_p2 <= std_logic_vector(unsigned(out_h_reg_153) + unsigned(ap_const_lv16_1));
     out_w_4_fu_285_p2 <= std_logic_vector(unsigned(out_w_reg_165) + unsigned(ap_const_lv16_1));
-
-    output_r_address0_assign_proc : process(ap_CS_fsm_state5, output_addr11_reg_560, ap_CS_fsm_state10, ap_CS_fsm_state11, tmp_126_fu_304_p1)
-    begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state11) or (ap_const_logic_1 = ap_CS_fsm_state10))) then 
-            output_r_address0 <= output_addr11_reg_560;
-        elsif ((ap_const_logic_1 = ap_CS_fsm_state5)) then 
-            output_r_address0 <= tmp_126_fu_304_p1(12 - 1 downto 0);
-        else 
-            output_r_address0 <= "XXXXXXXXXXXX";
-        end if; 
-    end process;
-
-
-    output_r_ce0_assign_proc : process(ap_CS_fsm_state5, ap_CS_fsm_state10, ap_CS_fsm_state11)
-    begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state11) or (ap_const_logic_1 = ap_CS_fsm_state10) or (ap_const_logic_1 = ap_CS_fsm_state5))) then 
-            output_r_ce0 <= ap_const_logic_1;
-        else 
-            output_r_ce0 <= ap_const_logic_0;
-        end if; 
-    end process;
-
-
-    output_r_d0_assign_proc : process(ap_CS_fsm_state5, ap_CS_fsm_state11, tmp_140_fu_448_p2)
-    begin
-        if ((ap_const_logic_1 = ap_CS_fsm_state11)) then 
-            output_r_d0 <= tmp_140_fu_448_p2;
-        elsif ((ap_const_logic_1 = ap_CS_fsm_state5)) then 
-            output_r_d0 <= ap_const_lv16_0;
-        else 
-            output_r_d0 <= "XXXXXXXXXXXXXXXX";
-        end if; 
-    end process;
-
-
-    output_r_we0_assign_proc : process(ap_CS_fsm_state5, exitcond2_fu_280_p2, ap_CS_fsm_state11)
-    begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state11) or ((exitcond2_fu_280_p2 = ap_const_lv1_0) and (ap_const_logic_1 = ap_CS_fsm_state5)))) then 
-            output_r_we0 <= ap_const_logic_1;
-        else 
-            output_r_we0 <= ap_const_logic_0;
-        end if; 
-    end process;
-
     p_shl3_cast_fu_337_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(p_shl3_fu_329_p3),5));
     p_shl3_fu_329_p3 <= (k_h_reg_176 & ap_const_lv2_0);
     p_shl_cast_fu_247_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(p_shl_fu_239_p3),21));
@@ -673,7 +673,7 @@ begin
         tmp_137_cast_fu_424_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(tmp_136_fu_419_p2),32));
 
     tmp_137_fu_428_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(tmp_137_cast_fu_424_p1),64));
-    tmp_140_fu_448_p2 <= std_logic_vector(unsigned(output_r_q0) + unsigned(tmp_139_reg_616));
+    tmp_140_fu_448_p2 <= std_logic_vector(unsigned(SeparableConv2D_2_m_s_q0) + unsigned(tmp_139_reg_616));
     tmp_fu_266_p2 <= std_logic_vector(unsigned(phi_mul_reg_129) + unsigned(tmp_123_fu_262_p1));
     tmp_s_fu_198_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(output_height),32));
 end behav;

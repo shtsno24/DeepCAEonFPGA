@@ -74,7 +74,7 @@ reg Padding2D_4_array_ce0;
 wire    ap_CS_fsm_state1;
 wire   [7:0] SeparableConv2D_4_w_s_address0;
 reg    SeparableConv2D_4_w_s_ce0;
-wire   [13:0] SeparableConv2D_4_w_s_q0;
+wire   [14:0] SeparableConv2D_4_w_s_q0;
 wire   [31:0] tmp_s_fu_198_p1;
 reg   [31:0] tmp_s_reg_476;
 wire   [31:0] tmp_115_fu_202_p1;
@@ -130,7 +130,7 @@ wire    ap_CS_fsm_state8;
 wire   [0:0] exitcond_fu_375_p2;
 reg  signed [15:0] Padding2D_4_array_lo_reg_606;
 wire    ap_CS_fsm_state9;
-reg  signed [13:0] SeparableConv2D_4_w_2_reg_611;
+reg  signed [14:0] SeparableConv2D_4_w_2_reg_611;
 reg   [15:0] tmp_139_reg_616;
 wire    ap_CS_fsm_state10;
 reg   [15:0] out_d_reg_118;
@@ -176,7 +176,7 @@ initial begin
 end
 
 depthwise_conv2d_fix_1_SeparableConv2D_4_w_s #(
-    .DataWidth( 14 ),
+    .DataWidth( 15 ),
     .AddressRange( 144 ),
     .AddressWidth( 8 ))
 SeparableConv2D_4_w_s_U(
@@ -187,13 +187,13 @@ SeparableConv2D_4_w_s_U(
     .q0(SeparableConv2D_4_w_s_q0)
 );
 
-network_mul_mul_16s_14s_30_1_1 #(
+network_mul_mul_16s_15s_30_1_1 #(
     .ID( 1 ),
     .NUM_STAGE( 1 ),
     .din0_WIDTH( 16 ),
-    .din1_WIDTH( 14 ),
+    .din1_WIDTH( 15 ),
     .dout_WIDTH( 30 ))
-network_mul_mul_16s_14s_30_1_1_U132(
+network_mul_mul_16s_15s_30_1_1_U132(
     .din0(Padding2D_4_array_lo_reg_606),
     .din1(SeparableConv2D_4_w_2_reg_611),
     .dout(tmp_137_fu_454_p2)

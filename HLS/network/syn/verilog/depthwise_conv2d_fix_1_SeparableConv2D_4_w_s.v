@@ -1,5 +1,5 @@
 // ==============================================================
-// File generated on Fri Nov 08 14:42:09 JST 2019
+// File generated on Wed Nov 13 17:14:50 JST 2019
 // Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
 // SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 // IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
@@ -9,7 +9,7 @@
 module depthwise_conv2d_fix_1_SeparableConv2D_4_w_s_rom (
 addr0, ce0, q0, clk);
 
-parameter DWIDTH = 14;
+parameter DWIDTH = 15;
 parameter AWIDTH = 8;
 parameter MEM_SIZE = 144;
 
@@ -46,7 +46,7 @@ module depthwise_conv2d_fix_1_SeparableConv2D_4_w_s(
     ce0,
     q0);
 
-parameter DataWidth = 32'd14;
+parameter DataWidth = 32'd15;
 parameter AddressRange = 32'd144;
 parameter AddressWidth = 32'd8;
 input reset;

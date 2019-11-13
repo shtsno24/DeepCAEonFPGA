@@ -75652,48 +75652,48 @@ int16_t SeparableConv2D_4_array[1][28][28];
 #pragma empty_line
 const uint16_t shape_SeparableConv2D_0_w_d[] = {1, 1, 3, 3};
 const int16_t SeparableConv2D_0_w_d[1][1][3][3] =
-{{{{ 379, 72, -4482},
-{-11403, -8224, 4890},
-{-11787, -2274, -2607}}}};
+{{{{-12554, -12685, 1933},
+{-5322, -7602, -1037},
+{ -783, 3015, -3653}}}};
 #pragma empty_line
 const uint16_t shape_SeparableConv2D_0_w_p[] = {16, 1, 1, 1};
 const int16_t SeparableConv2D_0_w_p[16][1][1][1] =
-{{{{ 613}}},
+{{{{-1770}}},
 #pragma empty_line
-{{{ 7249}}},
+{{{ 6639}}},
 #pragma empty_line
-{{{-10573}}},
+{{{ 8093}}},
 #pragma empty_line
-{{{ 3930}}},
+{{{ -628}}},
 #pragma empty_line
-{{{ 3170}}},
+{{{ 4920}}},
 #pragma empty_line
-{{{ 5514}}},
+{{{ 9618}}},
 #pragma empty_line
-{{{ 6492}}},
+{{{-9253}}},
 #pragma empty_line
-{{{ 2905}}},
+{{{ 1545}}},
 #pragma empty_line
-{{{-2102}}},
+{{{-10856}}},
 #pragma empty_line
-{{{-9584}}},
+{{{ 2733}}},
 #pragma empty_line
-{{{ 4633}}},
+{{{ 1194}}},
 #pragma empty_line
-{{{-7040}}},
+{{{ 6035}}},
 #pragma empty_line
-{{{-8482}}},
+{{{ 3956}}},
 #pragma empty_line
-{{{-7867}}},
+{{{-6935}}},
 #pragma empty_line
-{{{ 1850}}},
+{{{ 5414}}},
 #pragma empty_line
-{{{-11810}}}};
+{{{ 6639}}}};
 #pragma empty_line
-const uint16_t shape_SeparableConv2D_0_b_d = 16;
-const int16_t SeparableConv2D_0_b_d[16] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+const uint16_t shape_SeparableConv2D_0_b_d = 1;
+const int16_t SeparableConv2D_0_b_d[1] = { 0};
 const uint16_t shape_SeparableConv2D_0_b_p = 16;
-const int16_t SeparableConv2D_0_b_p[16] = { 548, -32, 1108, 403, -76, 0, 1305, 0, 165, 329, 949, 330, 107, 1240, -9, 979};
+const int16_t SeparableConv2D_0_b_p[16] = { 1542, -1048, -333, 783, -788, -804, 758, -342, 1083, 2512, 441, 0, -963, 103, -697, -852};
 #pragma line 7 "/home/masudalab/DeepCAEonFPGA/./weights_c/weights_fix16.h" 2
 #pragma line 1 "/home/masudalab/DeepCAEonFPGA/./weights_c/SeparableConv2D_1_fix16.h" 1
 #pragma line 9 "/home/masudalab/DeepCAEonFPGA/./weights_c/SeparableConv2D_1_fix16.h"
@@ -75705,332 +75705,332 @@ const int16_t SeparableConv2D_0_b_p[16] = { 548, -32, 1108, 403, -76, 0, 1305, 0
 #pragma empty_line
 const uint16_t shape_SeparableConv2D_1_w_d[] = {1, 16, 3, 3};
 const int16_t SeparableConv2D_1_w_d[1][16][3][3] =
-{{{{ 2580, -1114, -1872},
-{ -205, 949, 431},
-{-1273, 2003, 3298}},
+{{{{-1326, 4193, 2316},
+{ -640, 2285, 1876},
+{-2006, 1782, 4475}},
 #pragma empty_line
-{{-1556, 2716, 3239},
-{-2348, -48, 3173},
-{-2679, 559, 1660}},
+{{ -693, -1013, 1460},
+{ 514, 1548, 166},
+{-3269, -3186, -2903}},
 #pragma empty_line
-{{ 3940, 4394, -2997},
-{ 2621, 1309, 401},
-{ 1260, 2346, -325}},
+{{ 1479, -1596, -1740},
+{-1071, 1268, -1670},
+{-1710, -746, -2313}},
 #pragma empty_line
-{{ -382, -2640, 1531},
-{-2450, 2742, -376},
-{-2213, 653, 3241}},
+{{ 2980, -2107, 1144},
+{ 1749, 1528, 346},
+{ 2913, -1808, -697}},
 #pragma empty_line
-{{-1690, -2519, 1140},
-{ 557, 2184, -1155},
-{-1938, -2663, -1621}},
+{{ 2331, 750, 2004},
+{ 1744, -600, 484},
+{ -127, -1467, -1077}},
 #pragma empty_line
-{{-2533, 1645, -2256},
-{ 2389, -1572, 1282},
-{ -972, -925, -167}},
+{{ 3394, 688, 1413},
+{ 785, 2223, -2045},
+{ 2398, -3309, 1586}},
 #pragma empty_line
-{{ 2310, -2440, 3115},
-{-2012, -1523, 2479},
-{ 2536, -587, -1012}},
+{{ 3123, -1135, 2724},
+{ 2000, -2553, 2463},
+{ 1463, -8837, -3310}},
 #pragma empty_line
-{{ 2780, 2010, -744},
-{ -706, 135, 2737},
-{ 2567, -116, -2488}},
+{{-2587, -1915, 2126},
+{-3000, -220, -677},
+{-3282, 2848, 522}},
 #pragma empty_line
-{{ -604, 2371, 2208},
-{-3721, 3195, -1283},
-{-1779, -1110, 482}},
+{{ -811, 690, -419},
+{-5465, -5871, -1118},
+{-5309, -2432, 1451}},
 #pragma empty_line
-{{-2393, -4833, -4289},
-{ 220, -3694, -986},
-{ 814, 3660, 3252}},
+{{ 2988, -1188, 718},
+{ 1650, -3075, -214},
+{-1264, -1368, 2449}},
 #pragma empty_line
-{{ 2502, -2086, -3103},
-{ 254, -767, 555},
-{ -100, -2529, 2572}},
+{{ 416, -29, 2284},
+{-2931, -2837, 639},
+{-1044, 813, -2825}},
 #pragma empty_line
-{{-2946, -398, 120},
-{-2676, 2110, 3215},
-{ -873, -577, -2782}},
+{{-1412, 794, -2119},
+{ 2931, -1018, -1071},
+{-2328, -2675, 960}},
 #pragma empty_line
-{{ 3073, -2255, 1636},
-{ 2634, -6483, 165},
-{-1990, -1875, 445}},
+{{-1196, -2657, -2350},
+{-1541, -2489, -2897},
+{ 208, 1589, 366}},
 #pragma empty_line
-{{ -101, -4893, -1572},
-{-4327, -375, -3964},
-{ 2138, -787, 866}},
+{{ 930, 584, 2005},
+{-5769, -1999, -1891},
+{-1433, 5862, -223}},
 #pragma empty_line
-{{ 3245, 962, -2881},
-{ 2737, -1830, 2150},
-{-1223, 680, -598}},
+{{-1975, 1037, 1327},
+{ 2855, 266, -3022},
+{ 2399, 2284, 829}},
 #pragma empty_line
-{{ 1322, -2186, 790},
-{ 359, 4184, 7220},
-{-2463, 985, 4354}}}};
+{{ -858, -2717, -849},
+{ -757, 1032, 1542},
+{ -196, -3134, -498}}}};
 #pragma empty_line
 const uint16_t shape_SeparableConv2D_1_w_p[] = {8, 16, 1, 1};
 const int16_t SeparableConv2D_1_w_p[8][16][1][1] =
-{{{{ 4434}},
+{{{{-2589}},
 #pragma empty_line
-{{-2029}},
+{{-6301}},
 #pragma empty_line
-{{-2842}},
+{{ 6298}},
 #pragma empty_line
-{{-2426}},
+{{ 4670}},
 #pragma empty_line
-{{ 2655}},
+{{ -438}},
 #pragma empty_line
-{{-2690}},
+{{-5150}},
 #pragma empty_line
-{{ 4409}},
+{{ 7446}},
 #pragma empty_line
-{{ 6279}},
+{{ 3324}},
 #pragma empty_line
-{{ 7813}},
+{{-9216}},
 #pragma empty_line
-{{-8279}},
+{{-7122}},
 #pragma empty_line
-{{ 5896}},
+{{-7424}},
 #pragma empty_line
-{{ -104}},
+{{ 6893}},
 #pragma empty_line
-{{-3238}},
+{{-4826}},
 #pragma empty_line
-{{-8366}},
+{{-8945}},
 #pragma empty_line
-{{ 7372}},
+{{-7666}},
 #pragma empty_line
-{{ 6220}}},
+{{ -423}}},
 #pragma empty_line
-{{{ 4527}},
+{{{-7183}},
 #pragma empty_line
-{{-1768}},
+{{ 7322}},
 #pragma empty_line
-{{-5063}},
+{{-5944}},
 #pragma empty_line
-{{ 5330}},
+{{ -323}},
 #pragma empty_line
-{{ 2264}},
+{{-2788}},
 #pragma empty_line
-{{ -716}},
+{{-2602}},
 #pragma empty_line
-{{-4820}},
+{{-6180}},
 #pragma empty_line
-{{ -381}},
+{{-6997}},
 #pragma empty_line
-{{ -636}},
+{{-5629}},
 #pragma empty_line
-{{-3671}},
+{{ 5275}},
 #pragma empty_line
-{{-1180}},
+{{-1784}},
 #pragma empty_line
-{{ 5129}},
+{{-2581}},
 #pragma empty_line
-{{-6147}},
+{{ 6718}},
 #pragma empty_line
-{{-8151}},
+{{ 3388}},
 #pragma empty_line
-{{ 7613}},
+{{ 3773}},
 #pragma empty_line
-{{ 7664}}},
+{{-8007}}},
 #pragma empty_line
-{{{-3528}},
+{{{-4851}},
 #pragma empty_line
-{{ 5560}},
+{{ 1400}},
 #pragma empty_line
-{{ 6423}},
+{{-7902}},
 #pragma empty_line
-{{-5123}},
+{{ 6190}},
 #pragma empty_line
-{{-3480}},
+{{ 1521}},
 #pragma empty_line
-{{ 957}},
+{{ 7966}},
 #pragma empty_line
-{{-6601}},
+{{ 6153}},
 #pragma empty_line
-{{-1109}},
+{{ 3500}},
 #pragma empty_line
-{{-7507}},
+{{ 901}},
 #pragma empty_line
-{{ 8306}},
+{{ 6014}},
 #pragma empty_line
-{{ 1579}},
+{{ 268}},
 #pragma empty_line
-{{-4822}},
+{{ -957}},
 #pragma empty_line
-{{-4873}},
+{{-2844}},
 #pragma empty_line
-{{ 6707}},
+{{-1732}},
 #pragma empty_line
-{{ 3817}},
+{{-7656}},
 #pragma empty_line
-{{-4060}}},
+{{ 4662}}},
 #pragma empty_line
-{{{-7295}},
+{{{ 1823}},
 #pragma empty_line
-{{ 2578}},
+{{ 154}},
 #pragma empty_line
-{{ 5091}},
+{{ 5429}},
 #pragma empty_line
-{{-2962}},
+{{-1477}},
 #pragma empty_line
-{{-4769}},
+{{-7781}},
 #pragma empty_line
-{{-5257}},
+{{-4747}},
 #pragma empty_line
-{{ 521}},
+{{-1877}},
 #pragma empty_line
-{{ 6791}},
+{{-3606}},
 #pragma empty_line
-{{ 7170}},
+{{ 5181}},
 #pragma empty_line
-{{ 5631}},
+{{ 6372}},
 #pragma empty_line
-{{ 5002}},
+{{ 6575}},
+#pragma empty_line
+{{-4528}},
+#pragma empty_line
+{{ 6695}},
+#pragma empty_line
+{{ -152}},
+#pragma empty_line
+{{-1514}},
+#pragma empty_line
+{{ 7019}}},
+#pragma empty_line
+{{{ 3484}},
+#pragma empty_line
+{{-2438}},
+#pragma empty_line
+{{-7328}},
+#pragma empty_line
+{{ 2123}},
+#pragma empty_line
+{{ 7666}},
+#pragma empty_line
+{{-8442}},
+#pragma empty_line
+{{-2497}},
+#pragma empty_line
+{{-3055}},
+#pragma empty_line
+{{-5786}},
+#pragma empty_line
+{{-2193}},
+#pragma empty_line
+{{-2912}},
+#pragma empty_line
+{{-4658}},
+#pragma empty_line
+{{ 1673}},
+#pragma empty_line
+{{ 8363}},
+#pragma empty_line
+{{-6904}},
+#pragma empty_line
+{{-3660}}},
+#pragma empty_line
+{{{ 1036}},
+#pragma empty_line
+{{-2833}},
+#pragma empty_line
+{{-1186}},
+#pragma empty_line
+{{ 6000}},
+#pragma empty_line
+{{ 4801}},
+#pragma empty_line
+{{ 6144}},
+#pragma empty_line
+{{-10138}},
+#pragma empty_line
+{{-4768}},
+#pragma empty_line
+{{-9399}},
+#pragma empty_line
+{{ 1749}},
+#pragma empty_line
+{{-2378}},
+#pragma empty_line
+{{ -487}},
+#pragma empty_line
+{{ 1326}},
+#pragma empty_line
+{{ 6412}},
+#pragma empty_line
+{{-3407}},
+#pragma empty_line
+{{-5152}}},
+#pragma empty_line
+{{{ 5377}},
+#pragma empty_line
+{{ 2585}},
+#pragma empty_line
+{{ 2156}},
+#pragma empty_line
+{{ -353}},
+#pragma empty_line
+{{ 6548}},
+#pragma empty_line
+{{ 6080}},
+#pragma empty_line
+{{ 4697}},
+#pragma empty_line
+{{ 311}},
+#pragma empty_line
+{{ 2680}},
+#pragma empty_line
+{{ 2484}},
+#pragma empty_line
+{{ 4684}},
+#pragma empty_line
+{{ 6150}},
 #pragma empty_line
 {{ 3607}},
 #pragma empty_line
-{{-8025}},
+{{ 2107}},
 #pragma empty_line
-{{ 5249}},
+{{ 5485}},
 #pragma empty_line
-{{ 7723}},
+{{ 96}}},
 #pragma empty_line
-{{ 8947}}},
+{{{-7271}},
 #pragma empty_line
-{{{-7275}},
+{{-7274}},
 #pragma empty_line
-{{ 5043}},
+{{-4776}},
 #pragma empty_line
-{{-2425}},
+{{-5098}},
 #pragma empty_line
-{{-4102}},
+{{ 4909}},
 #pragma empty_line
-{{ -679}},
+{{-7610}},
 #pragma empty_line
-{{ 5289}},
+{{ 23}},
 #pragma empty_line
-{{-7169}},
+{{ 1973}},
 #pragma empty_line
-{{-1724}},
+{{ 5696}},
 #pragma empty_line
-{{ 1628}},
+{{ 5529}},
 #pragma empty_line
-{{-7261}},
+{{-6456}},
 #pragma empty_line
-{{-5068}},
+{{-5351}},
 #pragma empty_line
-{{-2245}},
+{{-1616}},
 #pragma empty_line
-{{ 2429}},
+{{-1431}},
 #pragma empty_line
-{{-6137}},
+{{ 7230}},
 #pragma empty_line
-{{-1754}},
+{{-1016}}}};
 #pragma empty_line
-{{ 5441}}},
-#pragma empty_line
-{{{ 6556}},
-#pragma empty_line
-{{ 6460}},
-#pragma empty_line
-{{ 7325}},
-#pragma empty_line
-{{-3723}},
-#pragma empty_line
-{{-1598}},
-#pragma empty_line
-{{ 1643}},
-#pragma empty_line
-{{-4460}},
-#pragma empty_line
-{{ 624}},
-#pragma empty_line
-{{ 7315}},
-#pragma empty_line
-{{ 3936}},
-#pragma empty_line
-{{-7715}},
-#pragma empty_line
-{{-7234}},
-#pragma empty_line
-{{-7623}},
-#pragma empty_line
-{{ -147}},
-#pragma empty_line
-{{-7969}},
-#pragma empty_line
-{{-1314}}},
-#pragma empty_line
-{{{ 3543}},
-#pragma empty_line
-{{-5191}},
-#pragma empty_line
-{{ 9487}},
-#pragma empty_line
-{{-1216}},
-#pragma empty_line
-{{-3963}},
-#pragma empty_line
-{{ 413}},
-#pragma empty_line
-{{ 5329}},
-#pragma empty_line
-{{ 7533}},
-#pragma empty_line
-{{-2832}},
-#pragma empty_line
-{{-3635}},
-#pragma empty_line
-{{ -123}},
-#pragma empty_line
-{{-2094}},
-#pragma empty_line
-{{-2485}},
-#pragma empty_line
-{{-5164}},
-#pragma empty_line
-{{ 7866}},
-#pragma empty_line
-{{ 165}}},
-#pragma empty_line
-{{{ 1782}},
-#pragma empty_line
-{{ 772}},
-#pragma empty_line
-{{ 5490}},
-#pragma empty_line
-{{-4401}},
-#pragma empty_line
-{{ 6171}},
-#pragma empty_line
-{{ 3986}},
-#pragma empty_line
-{{-1837}},
-#pragma empty_line
-{{ 8027}},
-#pragma empty_line
-{{-2896}},
-#pragma empty_line
-{{ 3634}},
-#pragma empty_line
-{{-7326}},
-#pragma empty_line
-{{-3377}},
-#pragma empty_line
-{{ 8334}},
-#pragma empty_line
-{{-5625}},
-#pragma empty_line
-{{ 568}},
-#pragma empty_line
-{{ 2496}}}};
-#pragma empty_line
-const uint16_t shape_SeparableConv2D_1_b_d = 8;
-const int16_t SeparableConv2D_1_b_d[8] = { 0, 0, 0, 0, 0, 0, 0, 0};
+const uint16_t shape_SeparableConv2D_1_b_d = 16;
+const int16_t SeparableConv2D_1_b_d[16] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 const uint16_t shape_SeparableConv2D_1_b_p = 8;
-const int16_t SeparableConv2D_1_b_p[8] = { 666, 597, 1521, -739, 1138, 84, 898, -412};
+const int16_t SeparableConv2D_1_b_p[8] = { 572, -2396, -1717, 2581, 2268, 1069, -1339, -998};
 #pragma line 8 "/home/masudalab/DeepCAEonFPGA/./weights_c/weights_fix16.h" 2
 #pragma line 1 "/home/masudalab/DeepCAEonFPGA/./weights_c/SeparableConv2D_2_fix16.h" 1
 #pragma line 9 "/home/masudalab/DeepCAEonFPGA/./weights_c/SeparableConv2D_2_fix16.h"
@@ -76042,172 +76042,172 @@ const int16_t SeparableConv2D_1_b_p[8] = { 666, 597, 1521, -739, 1138, 84, 898, 
 #pragma empty_line
 const uint16_t shape_SeparableConv2D_2_w_d[] = {1, 8, 3, 3};
 const int16_t SeparableConv2D_2_w_d[1][8][3][3] =
-{{{{ 2018, 3244, 2122},
-{-2275, -5025, 3125},
-{ 5786, 1700, 2620}},
+{{{{ 2536, -6851, 2756},
+{-1423, 63, 9249},
+{ -101, -3198, -5076}},
 #pragma empty_line
-{{ -473, -2538, -764},
-{ 3331, -7618, 411},
-{ 2007, -57, 4408}},
+{{ 843, 864, 3946},
+{ 2454, -240, 4605},
+{ 635, 5447, 940}},
 #pragma empty_line
-{{ 1503, -290, -4620},
-{-4097, -1223, -684},
-{ 3590, 2494, 1151}},
+{{ 3744, 3585, -4107},
+{ 394, -275, 3632},
+{ 4332, 915, -3506}},
 #pragma empty_line
-{{ -989, 3169, 3040},
-{-2450, -7690, 3919},
-{ 640, 3208, -2762}},
+{{ 410, -1860, -3467},
+{-2970, 1565, -5061},
+{-2905, -580, -3411}},
 #pragma empty_line
-{{ 2134, -1694, 2163},
-{ 5712, 6136, -687},
-{ 3303, -1776, 1246}},
+{{-4123, -2067, 1639},
+{-4528, -2755, 2186},
+{-4038, -1126, 1206}},
 #pragma empty_line
-{{ -47, -4957, 1884},
-{ 791, -6112, -1184},
-{ -13, 2171, 1927}},
+{{ 349, -1179, 2428},
+{-1867, 9229, 2740},
+{-1920, 2935, 667}},
 #pragma empty_line
-{{ 412, -2084, -2377},
-{-3553, 5884, 4675},
-{-1470, 4785, 4749}},
+{{-2151, 1705, -645},
+{ 3635, 3630, -2133},
+{ 495, 287, 1052}},
 #pragma empty_line
-{{ 1240, -1422, 4902},
-{-5607, 1385, 1790},
-{ -714, 4130, -4911}}}};
+{{ 33, 2247, -537},
+{ 1212, -2449, 3377},
+{ 733, 1342, -1115}}}};
 #pragma empty_line
 const uint16_t shape_SeparableConv2D_2_w_p[] = {8, 8, 1, 1};
 const int16_t SeparableConv2D_2_w_p[8][8][1][1] =
-{{{{-9278}},
+{{{{10898}},
 #pragma empty_line
-{{ -408}},
+{{ 6361}},
 #pragma empty_line
-{{ 9573}},
+{{-3520}},
 #pragma empty_line
-{{ 1904}},
+{{ 3573}},
 #pragma empty_line
-{{ 9919}},
+{{-7765}},
 #pragma empty_line
-{{-1369}},
+{{ -153}},
 #pragma empty_line
-{{ 3664}},
+{{10043}},
 #pragma empty_line
-{{-5505}}},
+{{ 6976}}},
 #pragma empty_line
-{{{ 9880}},
+{{{ 573}},
 #pragma empty_line
-{{-6739}},
+{{-7188}},
 #pragma empty_line
-{{-7551}},
+{{ 6348}},
 #pragma empty_line
-{{-9671}},
+{{-9376}},
 #pragma empty_line
-{{-3180}},
+{{-9190}},
 #pragma empty_line
-{{ 5111}},
+{{-5413}},
 #pragma empty_line
-{{ 5055}},
+{{ -876}},
 #pragma empty_line
-{{-6030}}},
+{{ -40}}},
 #pragma empty_line
-{{{ 2010}},
+{{{-8324}},
 #pragma empty_line
-{{ 5287}},
+{{ 2097}},
 #pragma empty_line
-{{ 9238}},
+{{-9487}},
 #pragma empty_line
-{{ 7728}},
+{{-6635}},
 #pragma empty_line
-{{ 4099}},
+{{ 607}},
 #pragma empty_line
-{{-6092}},
+{{-8081}},
 #pragma empty_line
-{{ -814}},
+{{ 7867}},
 #pragma empty_line
-{{ 7976}}},
+{{-5466}}},
 #pragma empty_line
-{{{-5058}},
+{{{11547}},
 #pragma empty_line
-{{ 5084}},
+{{ 8413}},
 #pragma empty_line
-{{ 691}},
+{{-1735}},
 #pragma empty_line
-{{-4543}},
+{{ 8485}},
 #pragma empty_line
-{{-9625}},
+{{ 2665}},
 #pragma empty_line
-{{-3237}},
+{{ 3423}},
 #pragma empty_line
-{{ 1726}},
+{{ -914}},
 #pragma empty_line
-{{ 1397}}},
+{{ 4560}}},
 #pragma empty_line
-{{{ 7698}},
+{{{-6048}},
 #pragma empty_line
-{{ 3934}},
+{{ 7028}},
+#pragma empty_line
+{{-5818}},
+#pragma empty_line
+{{ 9405}},
+#pragma empty_line
+{{ 6586}},
+#pragma empty_line
+{{ 4944}},
+#pragma empty_line
+{{ 7540}},
+#pragma empty_line
+{{ 8629}}},
+#pragma empty_line
+{{{ 6564}},
+#pragma empty_line
+{{-10620}},
+#pragma empty_line
+{{-1783}},
+#pragma empty_line
+{{ 5899}},
+#pragma empty_line
+{{-8276}},
+#pragma empty_line
+{{12149}},
+#pragma empty_line
+{{ 2883}},
+#pragma empty_line
+{{-4728}}},
+#pragma empty_line
+{{{ 9628}},
+#pragma empty_line
+{{ 8093}},
+#pragma empty_line
+{{ 733}},
+#pragma empty_line
+{{ 9047}},
+#pragma empty_line
+{{-4274}},
+#pragma empty_line
+{{-1225}},
+#pragma empty_line
+{{-6631}},
+#pragma empty_line
+{{-3726}}},
+#pragma empty_line
+{{{ 1720}},
+#pragma empty_line
+{{ 2151}},
+#pragma empty_line
+{{-1930}},
+#pragma empty_line
+{{ 5081}},
+#pragma empty_line
+{{ -409}},
+#pragma empty_line
+{{-5892}},
 #pragma empty_line
 {{-4037}},
 #pragma empty_line
-{{ 7478}},
-#pragma empty_line
-{{-8921}},
-#pragma empty_line
-{{ 1243}},
-#pragma empty_line
-{{ -322}},
-#pragma empty_line
-{{ 3642}}},
-#pragma empty_line
-{{{ -362}},
-#pragma empty_line
-{{ 5867}},
-#pragma empty_line
-{{ 4630}},
-#pragma empty_line
-{{ 4344}},
-#pragma empty_line
-{{ 2913}},
-#pragma empty_line
-{{ 3435}},
-#pragma empty_line
-{{-8101}},
-#pragma empty_line
-{{ 7255}}},
-#pragma empty_line
-{{{-4233}},
-#pragma empty_line
-{{-1131}},
-#pragma empty_line
-{{ 9513}},
-#pragma empty_line
-{{-10356}},
-#pragma empty_line
-{{ 4560}},
-#pragma empty_line
-{{-6154}},
-#pragma empty_line
-{{ 8545}},
-#pragma empty_line
-{{ 9858}}},
-#pragma empty_line
-{{{-2552}},
-#pragma empty_line
-{{ -944}},
-#pragma empty_line
-{{-9351}},
-#pragma empty_line
-{{-5913}},
-#pragma empty_line
-{{-1446}},
-#pragma empty_line
-{{ 5901}},
-#pragma empty_line
-{{-7381}},
-#pragma empty_line
-{{ 1475}}}};
+{{ 1956}}}};
 #pragma empty_line
 const uint16_t shape_SeparableConv2D_2_b_d = 8;
 const int16_t SeparableConv2D_2_b_d[8] = { 0, 0, 0, 0, 0, 0, 0, 0};
 const uint16_t shape_SeparableConv2D_2_b_p = 8;
-const int16_t SeparableConv2D_2_b_p[8] = { 1099, 1997, 1397, -146, 769, 3191, -488, -350};
+const int16_t SeparableConv2D_2_b_p[8] = { 414, 4, 42, -3159, 11, 159, 2276, -1477};
 #pragma line 9 "/home/masudalab/DeepCAEonFPGA/./weights_c/weights_fix16.h" 2
 #pragma line 1 "/home/masudalab/DeepCAEonFPGA/./weights_c/SeparableConv2D_3_fix16.h" 1
 #pragma line 9 "/home/masudalab/DeepCAEonFPGA/./weights_c/SeparableConv2D_3_fix16.h"
@@ -76219,300 +76219,300 @@ const int16_t SeparableConv2D_2_b_p[8] = { 1099, 1997, 1397, -146, 769, 3191, -4
 #pragma empty_line
 const uint16_t shape_SeparableConv2D_3_w_d[] = {1, 8, 3, 3};
 const int16_t SeparableConv2D_3_w_d[1][8][3][3] =
-{{{{ 573, 3597, -3393},
-{ 1703, 973, 6775},
-{-2488, -1079, -622}},
+{{{{ 6483, 6800, 1793},
+{ 1754, -2268, 1790},
+{-5240, 1297, 4003}},
 #pragma empty_line
-{{ 2077, 3244, 4290},
-{ 4000, 3122, -4467},
-{ 1650, -2119, -4025}},
+{{ 4126, 478, -1728},
+{ -500, -3686, 206},
+{ 70, 1164, 3027}},
 #pragma empty_line
-{{ 4665, -6141, 3438},
-{ -422, -3484, 2604},
-{ -826, 3344, 4885}},
+{{-2759, -475, -3147},
+{-1026, 1453, 1979},
+{ -30, 699, 2001}},
 #pragma empty_line
-{{-1925, 179, -3621},
-{-3097, -3679, -2550},
-{ 2147, -2553, -3472}},
+{{ -931, -1964, 88},
+{ 3610, 3068, 2235},
+{ 2735, 5515, 2644}},
 #pragma empty_line
-{{-4424, -4520, 2530},
-{-2154, -1586, -3527},
-{ 835, -4668, 2575}},
+{{ 2054, -1082, -282},
+{-2935, -2559, -806},
+{ 5151, -202, 459}},
 #pragma empty_line
-{{-5366, -3424, -1925},
-{-2283, -8681, -5959},
-{-4023, -1380, -2743}},
+{{ 1691, 6153, 3979},
+{ 2879, 8324, 5482},
+{ 270, 1706, -1204}},
 #pragma empty_line
-{{-1873, 2164, 2442},
-{ 1321, 4570, 1891},
-{-6823, 3677, -1408}},
+{{ 587, -445, -1591},
+{ 5546, 2445, -3794},
+{ 5844, 305, 1431}},
 #pragma empty_line
-{{-3781, -4066, -4433},
-{ 3502, -2402, 2801},
-{ -776, -77, -2310}}}};
+{{ 4402, -2220, 1032},
+{-2557, -3565, 4049},
+{ 3118, 2826, -2191}}}};
 #pragma empty_line
 const uint16_t shape_SeparableConv2D_3_w_p[] = {16, 8, 1, 1};
 const int16_t SeparableConv2D_3_w_p[16][8][1][1] =
-{{{{ 4908}},
+{{{{-2651}},
 #pragma empty_line
-{{-5972}},
+{{ 2073}},
 #pragma empty_line
-{{ 4424}},
+{{ 1156}},
 #pragma empty_line
-{{-6114}},
+{{ 3349}},
 #pragma empty_line
-{{ -373}},
+{{ 604}},
 #pragma empty_line
-{{ 853}},
+{{-8156}},
 #pragma empty_line
-{{ 6028}},
+{{-5028}},
 #pragma empty_line
-{{ 7263}}},
+{{ 6387}}},
 #pragma empty_line
-{{{-2290}},
+{{{-10026}},
 #pragma empty_line
-{{ -207}},
+{{ 5920}},
 #pragma empty_line
-{{ 5828}},
+{{ 1322}},
 #pragma empty_line
-{{ 7651}},
+{{-7540}},
 #pragma empty_line
-{{ 2284}},
+{{ 3993}},
 #pragma empty_line
-{{ 7461}},
+{{ 8863}},
 #pragma empty_line
-{{ 4280}},
+{{10066}},
 #pragma empty_line
-{{-4095}}},
+{{ 6497}}},
 #pragma empty_line
-{{{-2685}},
+{{{-5839}},
 #pragma empty_line
-{{ 5806}},
+{{ 4141}},
 #pragma empty_line
-{{-2636}},
+{{-5493}},
 #pragma empty_line
-{{ 5582}},
+{{ 7347}},
 #pragma empty_line
-{{ 618}},
+{{-1488}},
 #pragma empty_line
-{{-2718}},
+{{-2148}},
 #pragma empty_line
-{{ 990}},
+{{-8023}},
 #pragma empty_line
-{{-3512}}},
+{{ 6361}}},
 #pragma empty_line
-{{{ 4951}},
+{{{ 2258}},
 #pragma empty_line
-{{ 3358}},
+{{ -967}},
 #pragma empty_line
-{{-4322}},
+{{ -946}},
 #pragma empty_line
-{{-2571}},
+{{-7367}},
 #pragma empty_line
-{{ 4286}},
+{{ 6947}},
 #pragma empty_line
-{{ 6037}},
+{{-7301}},
 #pragma empty_line
-{{-6251}},
+{{ 1582}},
 #pragma empty_line
-{{-7388}}},
+{{-5886}}},
 #pragma empty_line
-{{{ 4905}},
+{{{ 3762}},
 #pragma empty_line
-{{ 6320}},
+{{-5238}},
 #pragma empty_line
-{{-1807}},
+{{ 4505}},
 #pragma empty_line
-{{ 7884}},
+{{-7039}},
 #pragma empty_line
-{{ 3408}},
+{{-1746}},
 #pragma empty_line
-{{-1695}},
+{{ 953}},
 #pragma empty_line
-{{ -887}},
+{{ 5991}},
 #pragma empty_line
-{{ 2397}}},
+{{-7318}}},
 #pragma empty_line
-{{{ -334}},
+{{{-4192}},
 #pragma empty_line
-{{ -523}},
+{{ 7946}},
 #pragma empty_line
-{{-6297}},
+{{-6801}},
 #pragma empty_line
-{{-5256}},
+{{-6934}},
 #pragma empty_line
-{{ 7183}},
+{{ 6251}},
 #pragma empty_line
-{{ 3614}},
+{{-7325}},
 #pragma empty_line
-{{-4252}},
+{{-4293}},
 #pragma empty_line
-{{ 627}}},
+{{-7732}}},
 #pragma empty_line
-{{{ 7498}},
+{{{ 6991}},
 #pragma empty_line
-{{ 8966}},
+{{-2587}},
 #pragma empty_line
-{{ 2111}},
+{{ 1501}},
 #pragma empty_line
-{{ 5583}},
+{{-4347}},
 #pragma empty_line
-{{ 5805}},
+{{-6826}},
 #pragma empty_line
-{{ 5369}},
+{{ 535}},
 #pragma empty_line
-{{ 5056}},
+{{ 7485}},
 #pragma empty_line
-{{-3016}}},
+{{ -99}}},
 #pragma empty_line
-{{{-2829}},
+{{{-4407}},
 #pragma empty_line
-{{ 2653}},
+{{ 6362}},
 #pragma empty_line
-{{ 5213}},
+{{-4718}},
 #pragma empty_line
-{{ 3975}},
+{{-4734}},
 #pragma empty_line
-{{-3163}},
+{{ 2770}},
 #pragma empty_line
-{{-4455}},
+{{-1312}},
 #pragma empty_line
-{{-1462}},
+{{ 2669}},
 #pragma empty_line
-{{-6361}}},
+{{-2859}}},
 #pragma empty_line
-{{{-3540}},
+{{{-4441}},
 #pragma empty_line
-{{ 5626}},
+{{-5484}},
 #pragma empty_line
-{{ 6549}},
+{{ 6676}},
 #pragma empty_line
-{{ 5449}},
+{{-4288}},
 #pragma empty_line
-{{ 4162}},
+{{-7260}},
 #pragma empty_line
-{{ 809}},
+{{ 669}},
 #pragma empty_line
-{{ 4194}},
+{{-6517}},
 #pragma empty_line
-{{ 2794}}},
+{{-2572}}},
 #pragma empty_line
-{{{ 333}},
+{{{-6350}},
 #pragma empty_line
-{{-1614}},
+{{ 2136}},
 #pragma empty_line
-{{-1214}},
+{{ 4793}},
 #pragma empty_line
-{{ 3396}},
+{{ 7198}},
 #pragma empty_line
-{{ 6782}},
+{{-6744}},
 #pragma empty_line
-{{ 8066}},
+{{ 8508}},
 #pragma empty_line
-{{-6669}},
+{{-5838}},
 #pragma empty_line
-{{-1094}}},
+{{ 6660}}},
 #pragma empty_line
-{{{-4668}},
+{{{ 8779}},
 #pragma empty_line
-{{-1018}},
+{{ 7883}},
 #pragma empty_line
-{{ 3315}},
+{{-1167}},
 #pragma empty_line
-{{ 1688}},
+{{-1243}},
 #pragma empty_line
-{{ 652}},
+{{ 3744}},
 #pragma empty_line
-{{ -287}},
+{{ 2181}},
 #pragma empty_line
-{{ 3869}},
+{{ 4585}},
 #pragma empty_line
-{{-3256}}},
+{{-2179}}},
 #pragma empty_line
-{{{ 9476}},
+{{{ 738}},
 #pragma empty_line
-{{ 8341}},
+{{-7926}},
 #pragma empty_line
-{{ 6206}},
+{{ 4738}},
 #pragma empty_line
-{{-5625}},
+{{ 2494}},
 #pragma empty_line
-{{ 6972}},
+{{ 2931}},
 #pragma empty_line
-{{ 9480}},
+{{-7453}},
 #pragma empty_line
-{{ 5913}},
+{{ 7364}},
 #pragma empty_line
-{{ 612}}},
+{{ -767}}},
 #pragma empty_line
-{{{ 1850}},
+{{{-4640}},
 #pragma empty_line
-{{ 2369}},
+{{-6124}},
 #pragma empty_line
-{{ 5727}},
+{{-4374}},
 #pragma empty_line
-{{ -61}},
+{{-1684}},
 #pragma empty_line
-{{ 7095}},
+{{ 9249}},
 #pragma empty_line
-{{ 5412}},
+{{ 9727}},
 #pragma empty_line
-{{ -548}},
+{{ -67}},
 #pragma empty_line
-{{ 7500}}},
+{{ 1304}}},
 #pragma empty_line
-{{{ 5537}},
+{{{-6983}},
 #pragma empty_line
-{{ 7184}},
+{{ 788}},
 #pragma empty_line
-{{ 8929}},
+{{ 5068}},
 #pragma empty_line
-{{ 227}},
+{{-2722}},
 #pragma empty_line
-{{ 2476}},
+{{-5044}},
 #pragma empty_line
-{{ 7436}},
+{{-8187}},
 #pragma empty_line
-{{ 1468}},
+{{-1037}},
 #pragma empty_line
-{{-5969}}},
+{{ 7848}}},
 #pragma empty_line
-{{{-2130}},
+{{{-2065}},
 #pragma empty_line
-{{ 1426}},
+{{-7293}},
 #pragma empty_line
-{{-7914}},
+{{ 2987}},
 #pragma empty_line
-{{-6416}},
+{{-5070}},
 #pragma empty_line
-{{ -372}},
+{{ -260}},
 #pragma empty_line
-{{ -373}},
+{{-7630}},
 #pragma empty_line
-{{ 5012}},
+{{ -228}},
 #pragma empty_line
-{{-5927}}},
+{{-2840}}},
 #pragma empty_line
-{{{-6276}},
+{{{-2855}},
 #pragma empty_line
-{{-3930}},
+{{-8214}},
 #pragma empty_line
-{{-1806}},
+{{-2709}},
 #pragma empty_line
-{{ 2311}},
+{{-5582}},
 #pragma empty_line
-{{ -110}},
+{{-4899}},
 #pragma empty_line
-{{-4530}},
+{{ 4232}},
 #pragma empty_line
-{{-3233}},
+{{ 5145}},
 #pragma empty_line
-{{ 4867}}}};
+{{ 1740}}}};
 #pragma empty_line
-const uint16_t shape_SeparableConv2D_3_b_d = 16;
-const int16_t SeparableConv2D_3_b_d[16] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+const uint16_t shape_SeparableConv2D_3_b_d = 8;
+const int16_t SeparableConv2D_3_b_d[8] = { 0, 0, 0, 0, 0, 0, 0, 0};
 const uint16_t shape_SeparableConv2D_3_b_p = 16;
-const int16_t SeparableConv2D_3_b_p[16] = { -629, 663, -202, -236, -1922, 5535, -1464, 1521, -928, -11, -975, -528, 407, -856, 894, -446};
+const int16_t SeparableConv2D_3_b_p[16] = { 14, -3325, 262, 1, -56, 0, -5, 402, -323, -3385, 4336, 0, -4652, 59, 76, -1950};
 #pragma line 10 "/home/masudalab/DeepCAEonFPGA/./weights_c/weights_fix16.h" 2
 #pragma line 1 "/home/masudalab/DeepCAEonFPGA/./weights_c/SeparableConv2D_4_fix16.h" 1
 #pragma line 9 "/home/masudalab/DeepCAEonFPGA/./weights_c/SeparableConv2D_4_fix16.h"
@@ -76524,108 +76524,108 @@ const int16_t SeparableConv2D_3_b_p[16] = { -629, 663, -202, -236, -1922, 5535, 
 #pragma empty_line
 const uint16_t shape_SeparableConv2D_4_w_d[] = {1, 16, 3, 3};
 const int16_t SeparableConv2D_4_w_d[1][16][3][3] =
-{{{{ -847, -388, -808},
-{ 1964, -944, 2280},
-{-2252, -3514, -2681}},
+{{{{-2891, -143, 1437},
+{ -251, 2642, -1035},
+{ 1701, -707, -1813}},
 #pragma empty_line
-{{ 2294, 2417, 684},
-{ -883, -2524, -3055},
-{-2492, 855, -1689}},
+{{-2751, -7145, -4961},
+{-7946, -6172, -7868},
+{-3056, -8484, -3995}},
 #pragma empty_line
-{{-1380, -2057, -2668},
-{-1552, 3374, 1641},
-{ 1303, -996, 364}},
+{{ -16, -2830, 2589},
+{ 945, -2341, 1778},
+{ 870, 1158, 3220}},
 #pragma empty_line
-{{ -314, 1686, -2704},
-{-2840, 1323, -2731},
-{ -893, -1411, 588}},
+{{-1277, 639, -3052},
+{ -783, -2150, -61},
+{ -646, 1166, -2205}},
 #pragma empty_line
-{{-1030, -1288, -335},
-{ -987, -43, -526},
-{ 1874, 1696, 2904}},
+{{ 2431, 1221, -2499},
+{ 1224, 1266, 272},
+{-1531, -734, -962}},
 #pragma empty_line
-{{-3282, -771, -3525},
-{ 149, -1857, 1121},
-{-2868, -855, -537}},
+{{ -897, 705, 2902},
+{-2418, 2482, -2522},
+{ 540, -389, 834}},
 #pragma empty_line
-{{ 894, -3747, -3304},
-{-4064, -2716, -4200},
-{ 818, -5454, 1525}},
+{{-1541, -278, 600},
+{ -134, -1328, 1299},
+{ 2092, 1791, -1987}},
 #pragma empty_line
-{{-1538, 3422, -938},
-{ 673, 760, 1729},
-{ 3670, 3496, -1517}},
+{{ 1262, 716, -1917},
+{ 735, -117, 692},
+{ -960, 3041, 727}},
 #pragma empty_line
-{{-1171, -2995, -3180},
-{ -752, -3694, -3141},
-{ -746, 469, 2692}},
+{{ -940, -476, 3070},
+{ 2121, -840, 3162},
+{ 2238, 2669, 1484}},
 #pragma empty_line
-{{ 640, 69, -926},
-{ -392, 1177, 1845},
-{ 2326, -4, -1733}},
+{{ 1271, 4275, 940},
+{ 1853, 3985, 927},
+{-2113, -1241, 914}},
 #pragma empty_line
-{{ 2299, 2761, 654},
-{-2400, 2685, 1341},
-{-2420, -1687, -3111}},
+{{-5071, -571, -1607},
+{-1890, -2851, -3064},
+{ -229, 271, -3929}},
 #pragma empty_line
-{{ 4222, 2884, 3738},
-{ 3663, 7430, 4917},
-{ 5595, 5440, 3653}},
+{{-2135, -1161, 3099},
+{ 1957, 345, -2940},
+{-3160, 1073, 1304}},
 #pragma empty_line
-{{ 2182, -1375, -3424},
-{-2494, -1207, -1803},
-{ 2945, -2335, 2699}},
+{{-1754, -2114, -1281},
+{-3138, -7699, -7333},
+{-4665, -4586, -792}},
 #pragma empty_line
-{{-1531, 3192, 4517},
-{ 5226, 6181, 3788},
-{ 1794, 3252, -51}},
+{{ 313, 1368, -47},
+{ 2732, -941, 2017},
+{-2094, -1871, 1485}},
 #pragma empty_line
-{{-2511, -2385, 1391},
-{ 2101, 856, 536},
-{-1301, 2469, 2378}},
+{{ 278, -350, 1544},
+{-2946, -1574, 1941},
+{-1261, -427, 2410}},
 #pragma empty_line
-{{ 1552, -1701, -964},
-{-1735, 3240, -2605},
-{-2176, 1308, 1005}}}};
+{{-2591, -4657, -955},
+{ -387, -4563, -4536},
+{ 74, -3812, -2390}}}};
 #pragma empty_line
 const uint16_t shape_SeparableConv2D_4_w_p[] = {1, 16, 1, 1};
 const int16_t SeparableConv2D_4_w_p[1][16][1][1] =
-{{{{-6201}},
+{{{{-6502}},
 #pragma empty_line
-{{-1035}},
+{{-16381}},
 #pragma empty_line
-{{-6520}},
+{{ 7191}},
 #pragma empty_line
-{{-8248}},
+{{-1764}},
 #pragma empty_line
-{{ 6857}},
+{{ 3434}},
 #pragma empty_line
-{{ 5585}},
+{{-2964}},
 #pragma empty_line
-{{-12417}},
+{{ -36}},
 #pragma empty_line
-{{-9452}},
+{{ -478}},
 #pragma empty_line
-{{-6757}},
+{{ 748}},
 #pragma empty_line
-{{ 1487}},
+{{ 7038}},
 #pragma empty_line
-{{-1996}},
+{{ 7886}},
 #pragma empty_line
-{{12945}},
+{{ 3798}},
 #pragma empty_line
-{{-5325}},
+{{-11586}},
 #pragma empty_line
-{{12904}},
+{{ 5575}},
 #pragma empty_line
-{{-2771}},
+{{-7347}},
 #pragma empty_line
-{{-7370}}}};
+{{-9605}}}};
 #pragma empty_line
-const uint16_t shape_SeparableConv2D_4_b_d = 1;
-const int16_t SeparableConv2D_4_b_d[1] = { 0};
+const uint16_t shape_SeparableConv2D_4_b_d = 16;
+const int16_t SeparableConv2D_4_b_d[16] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 const uint16_t shape_SeparableConv2D_4_b_p = 1;
-const int16_t SeparableConv2D_4_b_p[1] = {-7189};
+const int16_t SeparableConv2D_4_b_p[1] = {-10739};
 #pragma line 11 "/home/masudalab/DeepCAEonFPGA/./weights_c/weights_fix16.h" 2
 #pragma line 15 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp" 2
 #pragma empty_line
@@ -76638,8 +76638,8 @@ using namespace std;
 #pragma empty_line
 void network(axis &input_data, axis &output_data) {
 #pragma HLS INTERFACE s_axilite register port=return
-#pragma HLS INTERFACE axis register both port=input_data
-#pragma HLS INTERFACE axis register both port=output_data
+#pragma HLS INTERFACE axis register port=input_data
+#pragma HLS INTERFACE axis register port=output_data
 #pragma empty_line
  uint16_t input_0_depth = 1, input_0_height = 28, input_0_width = 28;
  int16_t input_0_array[1][28][28];
