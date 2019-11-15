@@ -1,5 +1,5 @@
 INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/vivado_hls'
-INFO: [HLS 200-10] For user 'masudalab' on host 'masudalab-ubuntu' (Linux_x86_64 version 5.0.0-32-generic) on Fri Nov 15 15:22:21 JST 2019
+INFO: [HLS 200-10] For user 'masudalab' on host 'masudalab-ubuntu' (Linux_x86_64 version 5.0.0-32-generic) on Fri Nov 15 15:47:46 JST 2019
 INFO: [HLS 200-10] On os Ubuntu 18.04.3 LTS
 INFO: [HLS 200-10] In directory '/home/masudalab/DeepCAEonFPGA'
 INFO: [HLS 200-10] Opening project '/home/masudalab/DeepCAEonFPGA/HLS'.

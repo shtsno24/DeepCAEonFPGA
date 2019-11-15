@@ -22,6 +22,7 @@ obj/mnist_AXI_Stream.o: ../../../../mnist_AXI_Stream.cpp \
  /tools/Xilinx/Vivado/2018.3/include/ap_axi_sdata.h \
  /tools/Xilinx/Vivado/2018.3/include/ap_int.h \
  ../../../.././layers_c/layers.h ../../../.././layers_c/padding2d.h \
+ ../../../.././layers_c/padding2d_old.h \
  ../../../.././layers_c/up_sampling2d.h \
  ../../../.././layers_c/max_pooling2d.h ../../../.././layers_c/conv2d.h \
  ../../../.././layers_c/depthwise_conv2d.h \
