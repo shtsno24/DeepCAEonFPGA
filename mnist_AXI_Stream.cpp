@@ -39,7 +39,6 @@ void network(axis &input_data, axis &output_data) {
 				out[depth][height][width].id = tmp.id;
 				out[depth][height][width].keep = tmp.keep;
 				out[depth][height][width].strb = tmp.strb;
-//				out[depth][height][width].last = tmp.last;
 			}
 		}
 	}
@@ -76,12 +75,7 @@ void network(axis &input_data, axis &output_data) {
 			(int16_t*) SeparableConv2D_1_b_d, (int16_t*) SeparableConv2D_1_b_p,
 			3, 3, (int16_t*) SeparableConv2D_1_w_d,
 			(int16_t*) SeparableConv2D_1_w_p, 1,
-			fractal_width_SeparableConv2D_1);
-
-	max_pooling2d_fix16(2, SeparableConv2D_1_depth, SeparableConv2D_1_height,
-			SeparableConv2D_1_width, (int16_t*) SeparableConv2D_1_array,
-			MaxPooling2D_1_depth, MaxPooling2D_1_height, MaxPooling2D_1_width,
-			(int16_t*) MaxPooling2D_1_array);
+			fractal_width_SeparableConv2D_1);				
 
 	padding2d_fix16(1, 1, MaxPooling2D_1_depth, MaxPooling2D_1_height,
 			MaxPooling2D_1_width, (int16_t*) MaxPooling2D_1_array,
@@ -161,7 +155,6 @@ void network(axis &input_data, axis &output_data) {
 				}
 				output_data.write(out[depth][height][width]);
 //				output_data << out[depth][height][width];
-
 			}
 		}
 	}

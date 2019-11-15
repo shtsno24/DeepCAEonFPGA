@@ -55,6 +55,8 @@
                                     									
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/lnx64/tools/auto_cc/include"/>
                                     									
+                                    <listOptionValue builtIn="false" value="/home/masudalab/DeepCAEonFPGA"/>
+                                    									
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/include"/>
                                     									
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/include/ap_sysc"/>
@@ -88,6 +90,8 @@
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/lnx64/tools/systemc/include"/>
                                     									
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/lnx64/tools/auto_cc/include"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="/home/masudalab/DeepCAEonFPGA"/>
                                     									
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/include"/>
                                     									
@@ -239,7 +243,7 @@
                                 							
                             </option>
                             							
-                            <option id="gnu.cpp.compiler.option.other.other.2061818772" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" value="-std=c++14 -O3 -Wno-unknown-pragmas -c -fmessage-length=0" valueType="string"/>
+                            <option id="gnu.cpp.compiler.option.other.other.2061818772" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" value="-std=c++14 -Wno-unknown-pragmas -c -fmessage-length=0" valueType="string"/>
                             							
                             <inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1138807345" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
                             						
@@ -317,6 +321,8 @@
                                     									
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/lnx64/tools/auto_cc/include"/>
                                     									
+                                    <listOptionValue builtIn="false" value="/home/masudalab/DeepCAEonFPGA"/>
+                                    									
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/include"/>
                                     									
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/include/ap_sysc"/>
@@ -340,6 +346,8 @@
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/lnx64/tools/systemc/include"/>
                                     									
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/lnx64/tools/auto_cc/include"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="/home/masudalab/DeepCAEonFPGA"/>
                                     									
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/include"/>
                                     									
@@ -481,7 +489,7 @@
                                 							
                             </option>
                             							
-                            <option id="gnu.cpp.compiler.option.other.other.528232422" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" value="-std=c++14 -O3 -Wno-unknown-pragmas -c -fmessage-length=0" valueType="string"/>
+                            <option id="gnu.cpp.compiler.option.other.other.528232422" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" value="-std=c++14 -Wno-unknown-pragmas -c -fmessage-length=0" valueType="string"/>
                             							
                             <inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1568988199" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
                             						

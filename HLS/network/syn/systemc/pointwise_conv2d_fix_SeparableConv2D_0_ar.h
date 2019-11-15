@@ -1,0 +1,106 @@
+// ==============================================================
+// File generated on Fri Nov 15 14:34:41 JST 2019
+// Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+// SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+// IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+// Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+// ==============================================================
+#ifndef __pointwise_conv2d_fix_SeparableConv2D_0_ar_H__
+#define __pointwise_conv2d_fix_SeparableConv2D_0_ar_H__
+
+
+#include <systemc>
+using namespace sc_core;
+using namespace sc_dt;
+
+
+
+
+#include <iostream>
+#include <fstream>
+
+struct pointwise_conv2d_fix_SeparableConv2D_0_ar_ram : public sc_core::sc_module {
+
+  static const unsigned DataWidth = 16;
+  static const unsigned AddressRange = 12544;
+  static const unsigned AddressWidth = 14;
+
+//latency = 1
+//input_reg = 1
+//output_reg = 0
+sc_core::sc_in <sc_lv<AddressWidth> > address0;
+sc_core::sc_in <sc_logic> ce0;
+sc_core::sc_in<sc_logic> we0;
+sc_core::sc_in<sc_lv<DataWidth> > d0;
+sc_core::sc_in<sc_logic> reset;
+sc_core::sc_in<bool> clk;
+
+
+sc_lv<DataWidth> ram[AddressRange];
+
+
+   SC_CTOR(pointwise_conv2d_fix_SeparableConv2D_0_ar_ram) {
+        for (unsigned i = 0; i < 12544; i = i + 1) {
+            ram[i] = 0;
+        }
+
+
+SC_METHOD(prc_write_0);
+  sensitive<<clk.pos();
+   }
+
+
+void prc_write_0()
+{
+    if (ce0.read() == sc_dt::Log_1) 
+    {
+        if (we0.read() == sc_dt::Log_1) 
+        {
+           if(address0.read().is_01() && address0.read().to_uint()<AddressRange)
+           {
+              ram[address0.read().to_uint()] = d0.read(); 
+           }
+        }
+    }
+}
+
+
+}; //endmodule
+
+
+SC_MODULE(pointwise_conv2d_fix_SeparableConv2D_0_ar) {
+
+
+static const unsigned DataWidth = 16;
+static const unsigned AddressRange = 12544;
+static const unsigned AddressWidth = 14;
+
+sc_core::sc_in <sc_lv<AddressWidth> > address0;
+sc_core::sc_in<sc_logic> ce0;
+sc_core::sc_in<sc_logic> we0;
+sc_core::sc_in<sc_lv<DataWidth> > d0;
+sc_core::sc_in<sc_logic> reset;
+sc_core::sc_in<bool> clk;
+
+
+pointwise_conv2d_fix_SeparableConv2D_0_ar_ram* meminst;
+
+
+SC_CTOR(pointwise_conv2d_fix_SeparableConv2D_0_ar) {
+meminst = new pointwise_conv2d_fix_SeparableConv2D_0_ar_ram("pointwise_conv2d_fix_SeparableConv2D_0_ar_ram");
+meminst->address0(address0);
+meminst->ce0(ce0);
+meminst->we0(we0);
+meminst->d0(d0);
+
+
+meminst->reset(reset);
+meminst->clk(clk);
+}
+~pointwise_conv2d_fix_SeparableConv2D_0_ar() {
+    delete meminst;
+}
+
+
+};//endmodule
+#endif

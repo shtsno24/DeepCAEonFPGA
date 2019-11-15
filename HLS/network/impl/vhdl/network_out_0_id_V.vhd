@@ -1,5 +1,5 @@
 -- ==============================================================
--- File generated on Wed Nov 13 17:14:50 JST 2019
+-- File generated on Fri Nov 15 14:34:41 JST 2019
 -- Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
 -- SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 -- IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
@@ -15,7 +15,7 @@ entity network_out_0_id_V_ram is
             MEM_TYPE    : string := "distributed"; 
             DWIDTH     : integer := 1; 
             AWIDTH     : integer := 10; 
-            MEM_SIZE    : integer := 784
+            MEM_SIZE    : integer := 900
     ); 
     port (
           addr0     : in std_logic_vector(AWIDTH-1 downto 0); 
@@ -75,7 +75,7 @@ use IEEE.std_logic_1164.all;
 entity network_out_0_id_V is
     generic (
         DataWidth : INTEGER := 1;
-        AddressRange : INTEGER := 784;
+        AddressRange : INTEGER := 900;
         AddressWidth : INTEGER := 10);
     port (
         reset : IN STD_LOGIC;

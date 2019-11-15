@@ -1,16 +1,16 @@
 INFO: [SIM 2] *************** CSIM start ***************
 INFO: [SIM 4] CSIM will launch GCC as the compiler.
-   Compiling ../../../../mnist_AXI_Stream_tb.cpp in debug mode
-   Compiling ../../../../layers_cpp/array_printf_float32.cpp in debug mode
    Compiling ../../../../layers_cpp/array_printf_fix16.cpp in debug mode
-   Compiling ../../../../layers_c/up_sampling2d.cpp in debug mode
-   Compiling ../../../../layers_c/separable_conv2d.cpp in debug mode
-   Compiling ../../../../layers_c/pointwise_conv2d.cpp in debug mode
-   Compiling ../../../../layers_c/padding2d.cpp in debug mode
-   Compiling ../../../../mnist_AXI_Stream.cpp in debug mode
-   Compiling ../../../../layers_c/max_pooling2d.cpp in debug mode
-   Compiling ../../../../layers_c/depthwise_conv2d.cpp in debug mode
+   Compiling ../../../../layers_cpp/array_printf_float32.cpp in debug mode
+   Compiling ../../../../mnist_AXI_Stream_tb.cpp in debug mode
    Compiling ../../../../layers_c/conv2d.cpp in debug mode
+   Compiling ../../../../layers_c/depthwise_conv2d.cpp in debug mode
+   Compiling ../../../../layers_c/max_pooling2d.cpp in debug mode
+   Compiling ../../../../mnist_AXI_Stream.cpp in debug mode
+   Compiling ../../../../layers_c/padding2d.cpp in debug mode
+   Compiling ../../../../layers_c/pointwise_conv2d.cpp in debug mode
+   Compiling ../../../../layers_c/separable_conv2d.cpp in debug mode
+   Compiling ../../../../layers_c/up_sampling2d.cpp in debug mode
    Generating csim.exe
 [[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
 [0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
@@ -41,6 +41,7 @@ INFO: [SIM 4] CSIM will launch GCC as the compiler.
 [0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.23722 0.49800 0.40587 0.03528 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
 [0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]]
 
+count 0, last 0, data 0
 count 1, last 0, data 0
 count 2, last 0, data 0
 count 3, last 0, data 0
@@ -242,13 +243,13 @@ count 198, last 0, data 0
 count 199, last 0, data 0
 count 200, last 0, data 0
 count 201, last 0, data 0
-count 202, last 0, data 0
-count 203, last 0, data 5396
-count 204, last 0, data 11885
-count 205, last 0, data 10215
-count 206, last 0, data 9701
-count 207, last 0, data 3854
-count 208, last 0, data 2312
+count 202, last 0, data 5396
+count 203, last 0, data 11885
+count 204, last 0, data 10215
+count 205, last 0, data 9701
+count 206, last 0, data 3854
+count 207, last 0, data 2312
+count 208, last 0, data 0
 count 209, last 0, data 0
 count 210, last 0, data 0
 count 211, last 0, data 0
@@ -270,13 +271,13 @@ count 226, last 0, data 0
 count 227, last 0, data 0
 count 228, last 0, data 0
 count 229, last 0, data 0
-count 230, last 0, data 0
-count 231, last 0, data 14262
+count 230, last 0, data 14262
+count 231, last 0, data 16318
 count 232, last 0, data 16318
 count 233, last 0, data 16318
 count 234, last 0, data 16318
-count 235, last 0, data 16318
-count 236, last 0, data 15483
+count 235, last 0, data 15483
+count 236, last 0, data 12720
 count 237, last 0, data 12720
 count 238, last 0, data 12720
 count 239, last 0, data 12720
@@ -284,9 +285,9 @@ count 240, last 0, data 12720
 count 241, last 0, data 12720
 count 242, last 0, data 12720
 count 243, last 0, data 12720
-count 244, last 0, data 12720
-count 245, last 0, data 10922
-count 246, last 0, data 3340
+count 244, last 0, data 10922
+count 245, last 0, data 3340
+count 246, last 0, data 0
 count 247, last 0, data 0
 count 248, last 0, data 0
 count 249, last 0, data 0
@@ -298,23 +299,23 @@ count 254, last 0, data 0
 count 255, last 0, data 0
 count 256, last 0, data 0
 count 257, last 0, data 0
-count 258, last 0, data 0
-count 259, last 0, data 4304
-count 260, last 0, data 7324
-count 261, last 0, data 4625
-count 262, last 0, data 7324
-count 263, last 0, data 10472
-count 264, last 0, data 14584
-count 265, last 0, data 16318
-count 266, last 0, data 14455
+count 258, last 0, data 4304
+count 259, last 0, data 7324
+count 260, last 0, data 4625
+count 261, last 0, data 7324
+count 262, last 0, data 10472
+count 263, last 0, data 14584
+count 264, last 0, data 16318
+count 265, last 0, data 14455
+count 266, last 0, data 16318
 count 267, last 0, data 16318
 count 268, last 0, data 16318
-count 269, last 0, data 16318
-count 270, last 0, data 16061
-count 271, last 0, data 14712
+count 269, last 0, data 16061
+count 270, last 0, data 14712
+count 271, last 0, data 16318
 count 272, last 0, data 16318
-count 273, last 0, data 16318
-count 274, last 0, data 8994
+count 273, last 0, data 8994
+count 274, last 0, data 0
 count 275, last 0, data 0
 count 276, last 0, data 0
 count 277, last 0, data 0
@@ -331,18 +332,18 @@ count 287, last 0, data 0
 count 288, last 0, data 0
 count 289, last 0, data 0
 count 290, last 0, data 0
-count 291, last 0, data 0
-count 292, last 0, data 1092
-count 293, last 0, data 4240
-count 294, last 0, data 899
+count 291, last 0, data 1092
+count 292, last 0, data 4240
+count 293, last 0, data 899
+count 294, last 0, data 4304
 count 295, last 0, data 4304
 count 296, last 0, data 4304
-count 297, last 0, data 4304
-count 298, last 0, data 3790
-count 299, last 0, data 1349
-count 300, last 0, data 15162
-count 301, last 0, data 16318
-count 302, last 0, data 6810
+count 297, last 0, data 3790
+count 298, last 0, data 1349
+count 299, last 0, data 15162
+count 300, last 0, data 16318
+count 301, last 0, data 6810
+count 302, last 0, data 0
 count 303, last 0, data 0
 count 304, last 0, data 0
 count 305, last 0, data 0
@@ -366,11 +367,11 @@ count 322, last 0, data 0
 count 323, last 0, data 0
 count 324, last 0, data 0
 count 325, last 0, data 0
-count 326, last 0, data 0
-count 327, last 0, data 5332
-count 328, last 0, data 16254
-count 329, last 0, data 13427
-count 330, last 0, data 1156
+count 326, last 0, data 5332
+count 327, last 0, data 16254
+count 328, last 0, data 13427
+count 329, last 0, data 1156
+count 330, last 0, data 0
 count 331, last 0, data 0
 count 332, last 0, data 0
 count 333, last 0, data 0
@@ -393,11 +394,11 @@ count 349, last 0, data 0
 count 350, last 0, data 0
 count 351, last 0, data 0
 count 352, last 0, data 0
-count 353, last 0, data 0
-count 354, last 0, data 1413
-count 355, last 0, data 14969
-count 356, last 0, data 16383
-count 357, last 0, data 5332
+count 353, last 0, data 1413
+count 354, last 0, data 14969
+count 355, last 0, data 16383
+count 356, last 0, data 5332
+count 357, last 0, data 0
 count 358, last 0, data 0
 count 359, last 0, data 0
 count 360, last 0, data 0
@@ -421,11 +422,11 @@ count 377, last 0, data 0
 count 378, last 0, data 0
 count 379, last 0, data 0
 count 380, last 0, data 0
-count 381, last 0, data 0
-count 382, last 0, data 8287
-count 383, last 0, data 16318
-count 384, last 0, data 15290
-count 385, last 0, data 2826
+count 381, last 0, data 8287
+count 382, last 0, data 16318
+count 383, last 0, data 15290
+count 384, last 0, data 2826
+count 385, last 0, data 0
 count 386, last 0, data 0
 count 387, last 0, data 0
 count 388, last 0, data 0
@@ -448,11 +449,11 @@ count 404, last 0, data 0
 count 405, last 0, data 0
 count 406, last 0, data 0
 count 407, last 0, data 0
-count 408, last 0, data 0
-count 409, last 0, data 3790
-count 410, last 0, data 15997
-count 411, last 0, data 16318
-count 412, last 0, data 3983
+count 408, last 0, data 3790
+count 409, last 0, data 15997
+count 410, last 0, data 16318
+count 411, last 0, data 3983
+count 412, last 0, data 0
 count 413, last 0, data 0
 count 414, last 0, data 0
 count 415, last 0, data 0
@@ -476,11 +477,11 @@ count 432, last 0, data 0
 count 433, last 0, data 0
 count 434, last 0, data 0
 count 435, last 0, data 0
-count 436, last 0, data 0
-count 437, last 0, data 8544
-count 438, last 0, data 16318
-count 439, last 0, data 12014
-count 440, last 0, data 321
+count 436, last 0, data 8544
+count 437, last 0, data 16318
+count 438, last 0, data 12014
+count 439, last 0, data 321
+count 440, last 0, data 0
 count 441, last 0, data 0
 count 442, last 0, data 0
 count 443, last 0, data 0
@@ -503,11 +504,11 @@ count 459, last 0, data 0
 count 460, last 0, data 0
 count 461, last 0, data 0
 count 462, last 0, data 0
-count 463, last 0, data 0
-count 464, last 0, data 578
-count 465, last 0, data 13170
-count 466, last 0, data 15933
-count 467, last 0, data 3726
+count 463, last 0, data 578
+count 464, last 0, data 13170
+count 465, last 0, data 15933
+count 466, last 0, data 3726
+count 467, last 0, data 0
 count 468, last 0, data 0
 count 469, last 0, data 0
 count 470, last 0, data 0
@@ -531,10 +532,10 @@ count 487, last 0, data 0
 count 488, last 0, data 0
 count 489, last 0, data 0
 count 490, last 0, data 0
-count 491, last 0, data 0
-count 492, last 0, data 8095
-count 493, last 0, data 16318
-count 494, last 0, data 11692
+count 491, last 0, data 8095
+count 492, last 0, data 16318
+count 493, last 0, data 11692
+count 494, last 0, data 0
 count 495, last 0, data 0
 count 496, last 0, data 0
 count 497, last 0, data 0
@@ -558,11 +559,11 @@ count 514, last 0, data 0
 count 515, last 0, data 0
 count 516, last 0, data 0
 count 517, last 0, data 0
-count 518, last 0, data 0
-count 519, last 0, data 4818
-count 520, last 0, data 16126
-count 521, last 0, data 15419
-count 522, last 0, data 3662
+count 518, last 0, data 4818
+count 519, last 0, data 16126
+count 520, last 0, data 15419
+count 521, last 0, data 3662
+count 522, last 0, data 0
 count 523, last 0, data 0
 count 524, last 0, data 0
 count 525, last 0, data 0
@@ -585,11 +586,11 @@ count 541, last 0, data 0
 count 542, last 0, data 0
 count 543, last 0, data 0
 count 544, last 0, data 0
-count 545, last 0, data 0
-count 546, last 0, data 1220
-count 547, last 0, data 14198
-count 548, last 0, data 16318
-count 549, last 0, data 10665
+count 545, last 0, data 1220
+count 546, last 0, data 14198
+count 547, last 0, data 16318
+count 548, last 0, data 10665
+count 549, last 0, data 0
 count 550, last 0, data 0
 count 551, last 0, data 0
 count 552, last 0, data 0
@@ -612,12 +613,12 @@ count 568, last 0, data 0
 count 569, last 0, data 0
 count 570, last 0, data 0
 count 571, last 0, data 0
-count 572, last 0, data 0
-count 573, last 0, data 192
-count 574, last 0, data 13042
-count 575, last 0, data 16318
-count 576, last 0, data 14070
-count 577, last 0, data 2248
+count 572, last 0, data 192
+count 573, last 0, data 13042
+count 574, last 0, data 16318
+count 575, last 0, data 14070
+count 576, last 0, data 2248
+count 577, last 0, data 0
 count 578, last 0, data 0
 count 579, last 0, data 0
 count 580, last 0, data 0
@@ -640,11 +641,11 @@ count 596, last 0, data 0
 count 597, last 0, data 0
 count 598, last 0, data 0
 count 599, last 0, data 0
-count 600, last 0, data 0
-count 601, last 0, data 2441
+count 600, last 0, data 2441
+count 601, last 0, data 16318
 count 602, last 0, data 16318
-count 603, last 0, data 16318
-count 604, last 0, data 4947
+count 603, last 0, data 4947
+count 604, last 0, data 0
 count 605, last 0, data 0
 count 606, last 0, data 0
 count 607, last 0, data 0
@@ -667,12 +668,12 @@ count 623, last 0, data 0
 count 624, last 0, data 0
 count 625, last 0, data 0
 count 626, last 0, data 0
-count 627, last 0, data 0
-count 628, last 0, data 1991
-count 629, last 0, data 14391
-count 630, last 0, data 16318
-count 631, last 0, data 7388
-count 632, last 0, data 64
+count 627, last 0, data 1991
+count 628, last 0, data 14391
+count 629, last 0, data 16318
+count 630, last 0, data 7388
+count 631, last 0, data 64
+count 632, last 0, data 0
 count 633, last 0, data 0
 count 634, last 0, data 0
 count 635, last 0, data 0
@@ -695,11 +696,11 @@ count 651, last 0, data 0
 count 652, last 0, data 0
 count 653, last 0, data 0
 count 654, last 0, data 0
-count 655, last 0, data 0
-count 656, last 0, data 8544
+count 655, last 0, data 8544
+count 656, last 0, data 16318
 count 657, last 0, data 16318
-count 658, last 0, data 16318
-count 659, last 0, data 3340
+count 658, last 0, data 3340
+count 659, last 0, data 0
 count 660, last 0, data 0
 count 661, last 0, data 0
 count 662, last 0, data 0
@@ -722,12 +723,12 @@ count 678, last 0, data 0
 count 679, last 0, data 0
 count 680, last 0, data 0
 count 681, last 0, data 0
-count 682, last 0, data 0
-count 683, last 0, data 3919
-count 684, last 0, data 15547
+count 682, last 0, data 3919
+count 683, last 0, data 15547
+count 684, last 0, data 16318
 count 685, last 0, data 16318
-count 686, last 0, data 16318
-count 687, last 0, data 3340
+count 686, last 0, data 3340
+count 687, last 0, data 0
 count 688, last 0, data 0
 count 689, last 0, data 0
 count 690, last 0, data 0
@@ -750,12 +751,12 @@ count 706, last 0, data 0
 count 707, last 0, data 0
 count 708, last 0, data 0
 count 709, last 0, data 0
-count 710, last 0, data 0
-count 711, last 0, data 7773
+count 710, last 0, data 7773
+count 711, last 0, data 16318
 count 712, last 0, data 16318
-count 713, last 0, data 16318
-count 714, last 0, data 14070
-count 715, last 0, data 2569
+count 713, last 0, data 14070
+count 714, last 0, data 2569
+count 715, last 0, data 0
 count 716, last 0, data 0
 count 717, last 0, data 0
 count 718, last 0, data 0
@@ -778,11 +779,11 @@ count 734, last 0, data 0
 count 735, last 0, data 0
 count 736, last 0, data 0
 count 737, last 0, data 0
-count 738, last 0, data 0
-count 739, last 0, data 7773
-count 740, last 0, data 16318
-count 741, last 0, data 13299
-count 742, last 0, data 1156
+count 738, last 0, data 7773
+count 739, last 0, data 16318
+count 740, last 0, data 13299
+count 741, last 0, data 1156
+count 742, last 0, data 0
 count 743, last 0, data 0
 count 744, last 0, data 0
 count 745, last 0, data 0
@@ -823,8 +824,7 @@ count 779, last 0, data 0
 count 780, last 0, data 0
 count 781, last 0, data 0
 count 782, last 0, data 0
-count 783, last 0, data 0
-count 784, last 1, data 0
+count 783, last 1, data 0
 count 0, last 0, data 0
 count 1, last 0, data 0
 count 2, last 0, data 0
@@ -1028,21 +1028,21 @@ count 199, last 0, data 0
 count 200, last 0, data 0
 count 201, last 0, data 0
 count 202, last 0, data 0
-count 203, last 0, data 2477
-count 204, last 0, data 4867
-count 205, last 0, data 6318
-count 206, last 0, data 6803
-count 207, last 0, data 6312
-count 208, last 0, data 5533
-count 209, last 0, data 3890
-count 210, last 0, data 2450
-count 211, last 0, data 2132
-count 212, last 0, data 2999
-count 213, last 0, data 4718
-count 214, last 0, data 6623
-count 215, last 0, data 7294
-count 216, last 0, data 6538
-count 217, last 0, data 1565
+count 203, last 0, data 0
+count 204, last 0, data 0
+count 205, last 0, data 0
+count 206, last 0, data 0
+count 207, last 0, data 0
+count 208, last 0, data 0
+count 209, last 0, data 0
+count 210, last 0, data 0
+count 211, last 0, data 0
+count 212, last 0, data 0
+count 213, last 0, data 0
+count 214, last 0, data 0
+count 215, last 0, data 0
+count 216, last 0, data 0
+count 217, last 0, data 0
 count 218, last 0, data 0
 count 219, last 0, data 0
 count 220, last 0, data 0
@@ -1055,22 +1055,22 @@ count 226, last 0, data 0
 count 227, last 0, data 0
 count 228, last 0, data 0
 count 229, last 0, data 0
-count 230, last 0, data 362
-count 231, last 0, data 5421
-count 232, last 0, data 7948
-count 233, last 0, data 10397
-count 234, last 0, data 11691
-count 235, last 0, data 12505
-count 236, last 0, data 12392
-count 237, last 0, data 11172
-count 238, last 0, data 9819
-count 239, last 0, data 9394
-count 240, last 0, data 10220
-count 241, last 0, data 12185
-count 242, last 0, data 14249
-count 243, last 0, data 14414
-count 244, last 0, data 12893
-count 245, last 0, data 6275
+count 230, last 0, data 0
+count 231, last 0, data 0
+count 232, last 0, data 0
+count 233, last 0, data 0
+count 234, last 0, data 0
+count 235, last 0, data 0
+count 236, last 0, data 0
+count 237, last 0, data 0
+count 238, last 0, data 0
+count 239, last 0, data 0
+count 240, last 0, data 0
+count 241, last 0, data 0
+count 242, last 0, data 0
+count 243, last 0, data 0
+count 244, last 0, data 0
+count 245, last 0, data 0
 count 246, last 0, data 0
 count 247, last 0, data 0
 count 248, last 0, data 0
@@ -1084,21 +1084,21 @@ count 255, last 0, data 0
 count 256, last 0, data 0
 count 257, last 0, data 0
 count 258, last 0, data 0
-count 259, last 0, data 3295
-count 260, last 0, data 5707
-count 261, last 0, data 8103
-count 262, last 0, data 9655
-count 263, last 0, data 11168
-count 264, last 0, data 12193
-count 265, last 0, data 12014
-count 266, last 0, data 11844
-count 267, last 0, data 11954
-count 268, last 0, data 12966
-count 269, last 0, data 15584
-count 270, last 0, data 18529
-count 271, last 0, data 18769
-count 272, last 0, data 16564
-count 273, last 0, data 9170
+count 259, last 0, data 0
+count 260, last 0, data 0
+count 261, last 0, data 0
+count 262, last 0, data 0
+count 263, last 0, data 0
+count 264, last 0, data 0
+count 265, last 0, data 0
+count 266, last 0, data 0
+count 267, last 0, data 0
+count 268, last 0, data 0
+count 269, last 0, data 0
+count 270, last 0, data 0
+count 271, last 0, data 0
+count 272, last 0, data 0
+count 273, last 0, data 0
 count 274, last 0, data 0
 count 275, last 0, data 0
 count 276, last 0, data 0
@@ -1114,19 +1114,19 @@ count 285, last 0, data 0
 count 286, last 0, data 0
 count 287, last 0, data 0
 count 288, last 0, data 0
-count 289, last 0, data 1516
-count 290, last 0, data 2532
-count 291, last 0, data 4307
-count 292, last 0, data 6134
-count 293, last 0, data 7772
-count 294, last 0, data 8629
-count 295, last 0, data 9963
-count 296, last 0, data 11184
-count 297, last 0, data 14538
-count 298, last 0, data 18025
-count 299, last 0, data 18958
-count 300, last 0, data 16885
-count 301, last 0, data 9267
+count 289, last 0, data 0
+count 290, last 0, data 0
+count 291, last 0, data 0
+count 292, last 0, data 0
+count 293, last 0, data 0
+count 294, last 0, data 0
+count 295, last 0, data 0
+count 296, last 0, data 0
+count 297, last 0, data 0
+count 298, last 0, data 0
+count 299, last 0, data 0
+count 300, last 0, data 0
+count 301, last 0, data 0
 count 302, last 0, data 0
 count 303, last 0, data 0
 count 304, last 0, data 0
@@ -1147,14 +1147,14 @@ count 318, last 0, data 0
 count 319, last 0, data 0
 count 320, last 0, data 0
 count 321, last 0, data 0
-count 322, last 0, data 2279
-count 323, last 0, data 5239
-count 324, last 0, data 8424
-count 325, last 0, data 13037
-count 326, last 0, data 17218
-count 327, last 0, data 18271
-count 328, last 0, data 15159
-count 329, last 0, data 7079
+count 322, last 0, data 0
+count 323, last 0, data 0
+count 324, last 0, data 0
+count 325, last 0, data 0
+count 326, last 0, data 0
+count 327, last 0, data 0
+count 328, last 0, data 0
+count 329, last 0, data 0
 count 330, last 0, data 0
 count 331, last 0, data 0
 count 332, last 0, data 0
@@ -1176,13 +1176,13 @@ count 347, last 0, data 0
 count 348, last 0, data 0
 count 349, last 0, data 0
 count 350, last 0, data 0
-count 351, last 0, data 1179
-count 352, last 0, data 6395
-count 353, last 0, data 12656
-count 354, last 0, data 16884
-count 355, last 0, data 16733
-count 356, last 0, data 12418
-count 357, last 0, data 3393
+count 351, last 0, data 0
+count 352, last 0, data 0
+count 353, last 0, data 0
+count 354, last 0, data 0
+count 355, last 0, data 0
+count 356, last 0, data 0
+count 357, last 0, data 0
 count 358, last 0, data 0
 count 359, last 0, data 0
 count 360, last 0, data 0
@@ -1205,12 +1205,12 @@ count 376, last 0, data 0
 count 377, last 0, data 0
 count 378, last 0, data 0
 count 379, last 0, data 0
-count 380, last 0, data 6933
-count 381, last 0, data 14064
-count 382, last 0, data 17604
-count 383, last 0, data 16231
-count 384, last 0, data 10108
-count 385, last 0, data 351
+count 380, last 0, data 0
+count 381, last 0, data 0
+count 382, last 0, data 0
+count 383, last 0, data 0
+count 384, last 0, data 0
+count 385, last 0, data 0
 count 386, last 0, data 0
 count 387, last 0, data 0
 count 388, last 0, data 0
@@ -1232,12 +1232,12 @@ count 403, last 0, data 0
 count 404, last 0, data 0
 count 405, last 0, data 0
 count 406, last 0, data 0
-count 407, last 0, data 242
-count 408, last 0, data 8944
-count 409, last 0, data 16104
-count 410, last 0, data 19044
-count 411, last 0, data 16193
-count 412, last 0, data 9275
+count 407, last 0, data 0
+count 408, last 0, data 0
+count 409, last 0, data 0
+count 410, last 0, data 0
+count 411, last 0, data 0
+count 412, last 0, data 0
 count 413, last 0, data 0
 count 414, last 0, data 0
 count 415, last 0, data 0
@@ -1260,12 +1260,12 @@ count 431, last 0, data 0
 count 432, last 0, data 0
 count 433, last 0, data 0
 count 434, last 0, data 0
-count 435, last 0, data 3946
-count 436, last 0, data 11691
-count 437, last 0, data 17567
-count 438, last 0, data 18905
-count 439, last 0, data 14620
-count 440, last 0, data 5857
+count 435, last 0, data 0
+count 436, last 0, data 0
+count 437, last 0, data 0
+count 438, last 0, data 0
+count 439, last 0, data 0
+count 440, last 0, data 0
 count 441, last 0, data 0
 count 442, last 0, data 0
 count 443, last 0, data 0
@@ -1287,13 +1287,13 @@ count 458, last 0, data 0
 count 459, last 0, data 0
 count 460, last 0, data 0
 count 461, last 0, data 0
-count 462, last 0, data 1115
-count 463, last 0, data 8042
-count 464, last 0, data 13747
-count 465, last 0, data 16759
-count 466, last 0, data 16831
-count 467, last 0, data 10325
-count 468, last 0, data 487
+count 462, last 0, data 0
+count 463, last 0, data 0
+count 464, last 0, data 0
+count 465, last 0, data 0
+count 466, last 0, data 0
+count 467, last 0, data 0
+count 468, last 0, data 0
 count 469, last 0, data 0
 count 470, last 0, data 0
 count 471, last 0, data 0
@@ -1314,13 +1314,13 @@ count 485, last 0, data 0
 count 486, last 0, data 0
 count 487, last 0, data 0
 count 488, last 0, data 0
-count 489, last 0, data 1018
-count 490, last 0, data 7560
-count 491, last 0, data 13032
-count 492, last 0, data 15716
-count 493, last 0, data 15700
-count 494, last 0, data 12243
-count 495, last 0, data 4432
+count 489, last 0, data 0
+count 490, last 0, data 0
+count 491, last 0, data 0
+count 492, last 0, data 0
+count 493, last 0, data 0
+count 494, last 0, data 0
+count 495, last 0, data 0
 count 496, last 0, data 0
 count 497, last 0, data 0
 count 498, last 0, data 0
@@ -1342,12 +1342,12 @@ count 513, last 0, data 0
 count 514, last 0, data 0
 count 515, last 0, data 0
 count 516, last 0, data 0
-count 517, last 0, data 6586
-count 518, last 0, data 12726
-count 519, last 0, data 16456
-count 520, last 0, data 17641
-count 521, last 0, data 13896
-count 522, last 0, data 7949
+count 517, last 0, data 0
+count 518, last 0, data 0
+count 519, last 0, data 0
+count 520, last 0, data 0
+count 521, last 0, data 0
+count 522, last 0, data 0
 count 523, last 0, data 0
 count 524, last 0, data 0
 count 525, last 0, data 0
@@ -1369,13 +1369,13 @@ count 540, last 0, data 0
 count 541, last 0, data 0
 count 542, last 0, data 0
 count 543, last 0, data 0
-count 544, last 0, data 2447
-count 545, last 0, data 11007
-count 546, last 0, data 16751
-count 547, last 0, data 18867
-count 548, last 0, data 16512
-count 549, last 0, data 9828
-count 550, last 0, data 870
+count 544, last 0, data 0
+count 545, last 0, data 0
+count 546, last 0, data 0
+count 547, last 0, data 0
+count 548, last 0, data 0
+count 549, last 0, data 0
+count 550, last 0, data 0
 count 551, last 0, data 0
 count 552, last 0, data 0
 count 553, last 0, data 0
@@ -1397,12 +1397,12 @@ count 568, last 0, data 0
 count 569, last 0, data 0
 count 570, last 0, data 0
 count 571, last 0, data 0
-count 572, last 0, data 5174
-count 573, last 0, data 12832
-count 574, last 0, data 17871
-count 575, last 0, data 17103
-count 576, last 0, data 12348
-count 577, last 0, data 3219
+count 572, last 0, data 0
+count 573, last 0, data 0
+count 574, last 0, data 0
+count 575, last 0, data 0
+count 576, last 0, data 0
+count 577, last 0, data 0
 count 578, last 0, data 0
 count 579, last 0, data 0
 count 580, last 0, data 0
@@ -1424,12 +1424,12 @@ count 595, last 0, data 0
 count 596, last 0, data 0
 count 597, last 0, data 0
 count 598, last 0, data 0
-count 599, last 0, data 411
-count 600, last 0, data 8228
-count 601, last 0, data 14713
-count 602, last 0, data 17442
-count 603, last 0, data 14704
-count 604, last 0, data 7473
+count 599, last 0, data 0
+count 600, last 0, data 0
+count 601, last 0, data 0
+count 602, last 0, data 0
+count 603, last 0, data 0
+count 604, last 0, data 0
 count 605, last 0, data 0
 count 606, last 0, data 0
 count 607, last 0, data 0
@@ -1452,12 +1452,12 @@ count 623, last 0, data 0
 count 624, last 0, data 0
 count 625, last 0, data 0
 count 626, last 0, data 0
-count 627, last 0, data 3025
-count 628, last 0, data 10558
-count 629, last 0, data 15101
-count 630, last 0, data 16098
-count 631, last 0, data 11341
-count 632, last 0, data 3766
+count 627, last 0, data 0
+count 628, last 0, data 0
+count 629, last 0, data 0
+count 630, last 0, data 0
+count 631, last 0, data 0
+count 632, last 0, data 0
 count 633, last 0, data 0
 count 634, last 0, data 0
 count 635, last 0, data 0
@@ -1480,11 +1480,11 @@ count 651, last 0, data 0
 count 652, last 0, data 0
 count 653, last 0, data 0
 count 654, last 0, data 0
-count 655, last 0, data 7749
-count 656, last 0, data 13641
-count 657, last 0, data 16093
-count 658, last 0, data 14136
-count 659, last 0, data 7916
+count 655, last 0, data 0
+count 656, last 0, data 0
+count 657, last 0, data 0
+count 658, last 0, data 0
+count 659, last 0, data 0
 count 660, last 0, data 0
 count 661, last 0, data 0
 count 662, last 0, data 0
@@ -1507,12 +1507,12 @@ count 678, last 0, data 0
 count 679, last 0, data 0
 count 680, last 0, data 0
 count 681, last 0, data 0
-count 682, last 0, data 5186
-count 683, last 0, data 11822
-count 684, last 0, data 16035
-count 685, last 0, data 15890
-count 686, last 0, data 12871
-count 687, last 0, data 4933
+count 682, last 0, data 0
+count 683, last 0, data 0
+count 684, last 0, data 0
+count 685, last 0, data 0
+count 686, last 0, data 0
+count 687, last 0, data 0
 count 688, last 0, data 0
 count 689, last 0, data 0
 count 690, last 0, data 0
@@ -1534,13 +1534,13 @@ count 705, last 0, data 0
 count 706, last 0, data 0
 count 707, last 0, data 0
 count 708, last 0, data 0
-count 709, last 0, data 865
-count 710, last 0, data 6887
-count 711, last 0, data 12029
-count 712, last 0, data 14113
-count 713, last 0, data 12545
-count 714, last 0, data 8371
-count 715, last 0, data 423
+count 709, last 0, data 0
+count 710, last 0, data 0
+count 711, last 0, data 0
+count 712, last 0, data 0
+count 713, last 0, data 0
+count 714, last 0, data 0
+count 715, last 0, data 0
 count 716, last 0, data 0
 count 717, last 0, data 0
 count 718, last 0, data 0
@@ -1562,12 +1562,12 @@ count 733, last 0, data 0
 count 734, last 0, data 0
 count 735, last 0, data 0
 count 736, last 0, data 0
-count 737, last 0, data 896
-count 738, last 0, data 5102
-count 739, last 0, data 8034
-count 740, last 0, data 9692
-count 741, last 0, data 7567
-count 742, last 0, data 3111
+count 737, last 0, data 0
+count 738, last 0, data 0
+count 739, last 0, data 0
+count 740, last 0, data 0
+count 741, last 0, data 0
+count 742, last 0, data 0
 count 743, last 0, data 0
 count 744, last 0, data 0
 count 745, last 0, data 0
@@ -1592,8 +1592,8 @@ count 763, last 0, data 0
 count 764, last 0, data 0
 count 765, last 0, data 0
 count 766, last 0, data 0
-count 767, last 0, data 1015
-count 768, last 0, data 1854
+count 767, last 0, data 0
+count 768, last 0, data 0
 count 769, last 0, data 0
 count 770, last 0, data 0
 count 771, last 0, data 0
@@ -1618,27 +1618,27 @@ count 783, last 1, data 0
 [0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
 [0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
 [0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
-[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.07559 0.14853 0.19282 0.20762 0.19263 0.16886 0.11872 0.07477 0.06507 0.09153 0.14399 0.20212 0.22260 0.19953 0.04776 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
-[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.01105 0.16544 0.24256 0.31730 0.35679 0.38163 0.37819 0.34095 0.29966 0.28669 0.31190 0.37187 0.43486 0.43989 0.39348 0.19150 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
-[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.10056 0.17417 0.24729 0.29466 0.34083 0.37211 0.36665 0.36146 0.36482 0.39570 0.47560 0.56548 0.57280 0.50551 0.27985 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
-[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.04627 0.07727 0.13144 0.18720 0.23719 0.26334 0.30406 0.34132 0.44368 0.55010 0.57857 0.51531 0.28282 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
-[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.06955 0.15989 0.25709 0.39787 0.52547 0.55760 0.46263 0.21604 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
-[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.03598 0.19517 0.38624 0.51527 0.51067 0.37898 0.10355 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
-[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.21158 0.42921 0.53725 0.49535 0.30848 0.01071 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
-[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00739 0.27296 0.49147 0.58119 0.49419 0.28306 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
-[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.12043 0.35679 0.53612 0.57695 0.44618 0.17875 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
-[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.03403 0.24543 0.41954 0.51146 0.51366 0.31510 0.01486 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
-[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.03107 0.23072 0.39772 0.47963 0.47914 0.37364 0.13526 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
-[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.20099 0.38838 0.50221 0.53838 0.42409 0.24259 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
-[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.07468 0.33592 0.51122 0.57579 0.50392 0.29994 0.02655 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
-[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.15790 0.39161 0.54540 0.52196 0.37684 0.09824 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
-[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.01254 0.25111 0.44902 0.53230 0.44874 0.22806 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
-[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.09232 0.32221 0.46086 0.49129 0.34611 0.11493 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
-[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.23649 0.41630 0.49113 0.43141 0.24158 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
-[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.15827 0.36079 0.48936 0.48494 0.39280 0.15055 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
-[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.02640 0.21018 0.36711 0.43071 0.38285 0.25547 0.01291 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
-[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.02734 0.15571 0.24519 0.29579 0.23093 0.09494 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
-[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.03098 0.05658 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
+[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]]
 
 INFO: [SIM 1] CSim done with 0 errors.
 INFO: [SIM 3] *************** CSIM finish ***************

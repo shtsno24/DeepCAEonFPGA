@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'network'" level="0">
-<item name = "Date">Wed Nov 13 17:14:40 2019
+<item name = "Date">Fri Nov 15 14:34:38 2019
 </item>
 <item name = "Version">2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)</item>
 <item name = "Project">HLS</item>
@@ -31,25 +31,9 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="7">Instance, Module, min, max, min, max, Type</keys>
-<column name="grp_padding2d_fix16_fu_506">padding2d_fix16, ?, ?, ?, ?, none</column>
-<column name="grp_padding2d_fix16_3_fu_517">padding2d_fix16_3, ?, ?, ?, ?, none</column>
-<column name="grp_padding2d_fix16_1_fu_528">padding2d_fix16_1, ?, ?, ?, ?, none</column>
-<column name="grp_padding2d_fix16_2_fu_539">padding2d_fix16_2, ?, ?, ?, ?, none</column>
-<column name="grp_depthwise_conv2d_fix_1_fu_550">depthwise_conv2d_fix_1, ?, ?, ?, ?, none</column>
-<column name="grp_depthwise_conv2d_fix_3_fu_565">depthwise_conv2d_fix_3, ?, ?, ?, ?, none</column>
-<column name="grp_depthwise_conv2d_fix_fu_580">depthwise_conv2d_fix, ?, ?, ?, ?, none</column>
-<column name="grp_depthwise_conv2d_fix_2_fu_595">depthwise_conv2d_fix_2, ?, ?, ?, ?, none</column>
-<column name="grp_depthwise_conv2d_fix_4_fu_610">depthwise_conv2d_fix_4, ?, ?, ?, ?, none</column>
-<column name="grp_pointwise_conv2d_fix_4_fu_625">pointwise_conv2d_fix_4, ?, ?, ?, ?, none</column>
-<column name="grp_pointwise_conv2d_fix_2_fu_639">pointwise_conv2d_fix_2, ?, ?, ?, ?, none</column>
-<column name="grp_pointwise_conv2d_fix_3_fu_653">pointwise_conv2d_fix_3, ?, ?, ?, ?, none</column>
-<column name="grp_pointwise_conv2d_fix_fu_667">pointwise_conv2d_fix, ?, ?, ?, ?, none</column>
-<column name="grp_max_pooling2d_fix16_1_fu_681">max_pooling2d_fix16_1, ?, ?, ?, ?, none</column>
-<column name="grp_max_pooling2d_fix16_fu_694">max_pooling2d_fix16, ?, ?, ?, ?, none</column>
-<column name="grp_pointwise_conv2d_fix_1_fu_707">pointwise_conv2d_fix_1, ?, ?, ?, ?, none</column>
-<column name="grp_up_sampling2d_fix16_fu_719">up_sampling2d_fix16, ?, ?, ?, ?, none</column>
-<column name="grp_up_sampling2d_fix16_1_fu_732">up_sampling2d_fix16_1, ?, ?, ?, ?, none</column>
-<column name="grp_padding2d_fix16_4_fu_745">padding2d_fix16_4, 1773, 1773, 1773, 1773, none</column>
+<column name="grp_depthwise_conv2d_fix_fu_358">depthwise_conv2d_fix, ?, ?, ?, ?, none</column>
+<column name="grp_pointwise_conv2d_fix_fu_373">pointwise_conv2d_fix, ?, ?, ?, ?, none</column>
+<column name="grp_padding2d_fix16_fu_387">padding2d_fix16, 1771, 1771, 1771, 1771, none</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

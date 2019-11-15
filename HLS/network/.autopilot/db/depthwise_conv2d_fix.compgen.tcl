@@ -1,17 +1,93 @@
 # This script segment is generated automatically by AutoPilot
 
+set id 3
+set name network_mul_mul_16s_15s_30_1_1
+set corename simcore_mul
+set op mul
+set stage_num 1
+set max_latency -1
+set registered_input 1
+set in0_width 16
+set in0_signed 1
+set in1_width 15
+set in1_signed 1
+set out_width 30
+set exp i0*i1
+set arg_lists {i0 {16 1 +} i1 {15 1 +} p {30 1 +} acc {0} }
+set TrueReset 0
+if {${::AESL::PGuard_simmodel_gen}} {
+if {[info proc ap_gen_simcore_mul] == "ap_gen_simcore_mul"} {
+eval "ap_gen_simcore_mul { \
+    id ${id} \
+    name ${name} \
+    corename ${corename} \
+    op ${op} \
+    reset_level 1 \
+    sync_rst true \
+    true_reset ${TrueReset} \
+    stage_num ${stage_num} \
+    max_latency ${max_latency} \
+    registered_input ${registered_input} \
+    in0_width ${in0_width} \
+    in0_signed ${in0_signed} \
+    in1_width ${in1_width} \
+    in1_signed ${in1_signed} \
+    out_width ${out_width} \
+    exp ${exp} \
+    arg_lists {${arg_lists}} \
+}"
+} else {
+puts "@W \[IMPL-100\] Cannot find ap_gen_simcore_mul, check your AutoPilot builtin lib"
+}
+}
+
+
+if {${::AESL::PGuard_rtl_comp_handler}} {
+	::AP::rtl_comp_handler ${name}
+}
+
+
+set op mul
+set corename DSP48
+if {${::AESL::PGuard_autocg_gen} && ${::AESL::PGuard_autocg_ipmgen}} {
+if {[info proc ::AESL_LIB_VIRTEX::xil_gen_dsp48] == "::AESL_LIB_VIRTEX::xil_gen_dsp48"} {
+eval "::AESL_LIB_VIRTEX::xil_gen_dsp48 { \
+    id ${id} \
+    name ${name} \
+    corename ${corename} \
+    op ${op} \
+    reset_level 1 \
+    sync_rst true \
+    true_reset ${TrueReset} \
+    stage_num ${stage_num} \
+    max_latency ${max_latency} \
+    registered_input ${registered_input} \
+    in0_width ${in0_width} \
+    in0_signed ${in0_signed} \
+    in1_width ${in1_width} \
+    in1_signed ${in1_signed} \
+    out_width ${out_width} \
+    exp ${exp} \
+    arg_lists {${arg_lists}} \
+}"
+} else {
+puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_dsp48, check your platform lib"
+}
+}
+
+
 # Memory (RAM/ROM)  definition:
-set ID 102
+set ID 5
 set hasByteEnable 0
-set MemName depthwise_conv2d_fix_SeparableConv2D_3_w_s
+set MemName depthwise_conv2d_fix_SeparableConv2D_0_w_s
 set CoreName ap_simcore_mem
 set PortList { 1 }
 set DataWd 15
-set AddrRange 72
-set AddrWd 7
+set AddrRange 9
+set AddrWd 4
 set TrueReset 0
 set IsROM 1
-set ROMData { "001100101010011" "001101010010000" "000011100000001" "000011011011010" "111011100100100" "000011011111110" "110101110001000" "000010100010001" "000111110100011" "001000000011110" "000000111011110" "111100101000000" "111111000001100" "111000110011010" "000000011001110" "000000001000110" "000010010001100" "000101111010011" "111010100111001" "111111000100101" "111001110110101" "111101111111110" "000010110101101" "000011110111011" "111111111100010" "000001010111011" "000011111010001" "111110001011101" "111100001010100" "000000001011000" "000111000011010" "000101111111100" "000100010111011" "000101010101111" "001010110001011" "000101001010100" "000100000000110" "111101111000110" "111111011100110" "111010010001001" "111011000000001" "111110011011010" "001010000011111" "111111100110110" "000000111001011" "000011010011011" "001100000001001" "000111110001011" "000101100111111" "010000010000100" "001010101101010" "000000100001110" "000011010101010" "111101101001100" "000001001001011" "111111001000011" "111100111001001" "001010110101010" "000100110001101" "111000100101110" "001011011010100" "000000100110001" "000010110010111" "001000100110010" "111011101010100" "000010000001000" "111011000000011" "111001000010011" "000111111010001" "000110000101110" "000101100001010" "111011101110001" }
+set ROMData { "100111011110110" "100111001110011" "000011110001101" "110101100110110" "110001001001110" "111101111110011" "111110011110001" "000101111000111" "111000110111011" }
 set HasInitializer 1
 set Initializer $ROMData
 set NumOfStage 2
@@ -94,17 +170,17 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 108 \
-    name SeparableConv2D_3_m_s \
+    id 8 \
+    name input_r \
     reset_level 1 \
     sync_rst true \
-    dir IO \
-    corename SeparableConv2D_3_m_s \
+    dir I \
+    corename input_r \
     op interface \
-    ports { SeparableConv2D_3_m_s_address0 { O 11 vector } SeparableConv2D_3_m_s_ce0 { O 1 bit } SeparableConv2D_3_m_s_we0 { O 1 bit } SeparableConv2D_3_m_s_d0 { O 16 vector } SeparableConv2D_3_m_s_q0 { I 16 vector } } \
+    ports { input_r_address0 { O 10 vector } input_r_ce0 { O 1 bit } input_r_q0 { I 16 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'SeparableConv2D_3_m_s'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'input_r'"
 }
 }
 
@@ -113,17 +189,17 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 109 \
-    name Padding2D_3_array \
+    id 12 \
+    name output_r \
     reset_level 1 \
     sync_rst true \
-    dir I \
-    corename Padding2D_3_array \
+    dir IO \
+    corename output_r \
     op interface \
-    ports { Padding2D_3_array_address0 { O 11 vector } Padding2D_3_array_ce0 { O 1 bit } Padding2D_3_array_q0 { I 16 vector } } \
+    ports { output_r_address0 { O 10 vector } output_r_ce0 { O 1 bit } output_r_we0 { O 1 bit } output_r_d0 { O 16 vector } output_r_q0 { I 16 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'Padding2D_3_array'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'output_r'"
 }
 }
 
@@ -131,7 +207,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 103 \
+    id 6 \
     name input_height \
     type other \
     dir I \
@@ -146,7 +222,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 104 \
+    id 7 \
     name input_width \
     type other \
     dir I \
@@ -161,7 +237,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 105 \
+    id 9 \
     name output_depth \
     type other \
     dir I \
@@ -176,7 +252,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 106 \
+    id 10 \
     name output_height \
     type other \
     dir I \
@@ -191,7 +267,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 107 \
+    id 11 \
     name output_width \
     type other \
     dir I \

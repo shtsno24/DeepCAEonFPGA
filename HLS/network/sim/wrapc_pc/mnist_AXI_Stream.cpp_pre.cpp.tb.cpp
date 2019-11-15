@@ -1,5 +1,5 @@
 // ==============================================================
-// File generated on Wed Nov 13 17:15:56 JST 2019
+// File generated on Fri Nov 15 14:35:54 JST 2019
 // Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
 // SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 // IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
@@ -76652,7 +76652,7 @@ void network(axis &input_data, axis &output_data) {
  int16_t input_0_array[1][28][28];
 
  ap_axis<16, 1, 1, 1> tmp;
- ap_axis<16, 1, 1, 1> out[1][28][28];
+ ap_axis<16, 1, 1, 1> out[1][30][30];
 
  for (int depth = 0; depth < input_0_depth; depth++) {
   for (int height = 0; height < input_0_height; height++) {
@@ -76663,7 +76663,6 @@ void network(axis &input_data, axis &output_data) {
     out[depth][height][width].id = tmp.id;
     out[depth][height][width].keep = tmp.keep;
     out[depth][height][width].strb = tmp.strb;
-
    }
   }
  }
@@ -76681,93 +76680,18 @@ void network(axis &input_data, axis &output_data) {
    3, 3, (int16_t*) SeparableConv2D_0_w_d,
    (int16_t*) SeparableConv2D_0_w_p, 1,
    14);
+#163 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
+ for (int depth = 0; depth < Padding2D_0_depth; depth++) {
+  for (int height = 0; height < Padding2D_0_height; height++) {
+   for (int width = 0; width < Padding2D_0_width; width++) {
 
- max_pooling2d_fix16(2, SeparableConv2D_0_depth, SeparableConv2D_0_height,
-   SeparableConv2D_0_width, (int16_t*) SeparableConv2D_0_array,
-   MaxPooling2D_0_depth, MaxPooling2D_0_height, MaxPooling2D_0_width,
-   (int16_t*) MaxPooling2D_0_array);
 
- padding2d_fix16(1, 1, MaxPooling2D_0_depth, MaxPooling2D_0_height,
-   MaxPooling2D_0_width, (int16_t*) MaxPooling2D_0_array,
-   Padding2D_1_height, Padding2D_1_width,
-   (int16_t*) Padding2D_1_array);
 
- separable_conv2d_fix16(Padding2D_1_depth, Padding2D_1_height,
-   Padding2D_1_width, (int16_t*) Padding2D_1_array,
-   SeparableConv2D_1_depth, SeparableConv2D_1_height,
-   SeparableConv2D_1_width, (int16_t*) SeparableConv2D_1_array,
-   (int16_t*) SeparableConv2D_1_m_array,
-   (int16_t*) SeparableConv2D_1_b_d, (int16_t*) SeparableConv2D_1_b_p,
-   3, 3, (int16_t*) SeparableConv2D_1_w_d,
-   (int16_t*) SeparableConv2D_1_w_p, 1,
-   14);
 
- max_pooling2d_fix16(2, SeparableConv2D_1_depth, SeparableConv2D_1_height,
-   SeparableConv2D_1_width, (int16_t*) SeparableConv2D_1_array,
-   MaxPooling2D_1_depth, MaxPooling2D_1_height, MaxPooling2D_1_width,
-   (int16_t*) MaxPooling2D_1_array);
 
- padding2d_fix16(1, 1, MaxPooling2D_1_depth, MaxPooling2D_1_height,
-   MaxPooling2D_1_width, (int16_t*) MaxPooling2D_1_array,
-   Padding2D_2_height, Padding2D_2_width,
-   (int16_t*) Padding2D_2_array);
-
- separable_conv2d_fix16(Padding2D_2_depth, Padding2D_2_height,
-   Padding2D_2_width, (int16_t*) Padding2D_2_array,
-   SeparableConv2D_2_depth, SeparableConv2D_2_height,
-   SeparableConv2D_2_width, (int16_t*) SeparableConv2D_2_array,
-   (int16_t*) SeparableConv2D_2_m_array,
-   (int16_t*) SeparableConv2D_2_b_d, (int16_t*) SeparableConv2D_2_b_p,
-   3, 3, (int16_t*) SeparableConv2D_2_w_d,
-   (int16_t*) SeparableConv2D_2_w_p, 1,
-   14);
-
- up_sampling2d_fix16(2, SeparableConv2D_2_depth, SeparableConv2D_2_height,
-   SeparableConv2D_2_width, (int16_t*) SeparableConv2D_2_array,
-   UpSampling2D_0_depth, UpSampling2D_0_height, UpSampling2D_0_width,
-   (int16_t*) UpSampling2D_0_array);
-
- padding2d_fix16(1, 1, UpSampling2D_0_depth, UpSampling2D_0_height,
-   UpSampling2D_0_width, (int16_t*) UpSampling2D_0_array,
-   Padding2D_3_height, Padding2D_3_width,
-   (int16_t*) Padding2D_3_array);
-
- separable_conv2d_fix16(Padding2D_3_depth, Padding2D_3_height,
-   Padding2D_3_width, (int16_t*) Padding2D_3_array,
-   SeparableConv2D_3_depth, SeparableConv2D_3_height,
-   SeparableConv2D_3_width, (int16_t*) SeparableConv2D_3_array,
-   (int16_t*) SeparableConv2D_3_m_array,
-   (int16_t*) SeparableConv2D_3_b_d, (int16_t*) SeparableConv2D_3_b_p,
-   3, 3, (int16_t*) SeparableConv2D_3_w_d,
-   (int16_t*) SeparableConv2D_3_w_p, 1,
-   14);
-
- up_sampling2d_fix16(2, SeparableConv2D_3_depth, SeparableConv2D_3_height,
-   SeparableConv2D_3_width, (int16_t*) SeparableConv2D_3_array,
-   UpSampling2D_1_depth, UpSampling2D_1_height, UpSampling2D_1_width,
-   (int16_t*) UpSampling2D_1_array);
-
- padding2d_fix16(1, 1, UpSampling2D_1_depth, UpSampling2D_1_height,
-   UpSampling2D_1_width, (int16_t*) UpSampling2D_1_array,
-   Padding2D_4_height, Padding2D_4_width,
-   (int16_t*) Padding2D_4_array);
-
- separable_conv2d_fix16(Padding2D_4_depth, Padding2D_4_height,
-   Padding2D_4_width, (int16_t*) Padding2D_4_array,
-   SeparableConv2D_4_depth, SeparableConv2D_4_height,
-   SeparableConv2D_4_width, (int16_t*) SeparableConv2D_4_array,
-   (int16_t*) SeparableConv2D_4_m_array,
-   (int16_t*) SeparableConv2D_4_b_d, (int16_t*) SeparableConv2D_4_b_p,
-   3, 3, (int16_t*) SeparableConv2D_4_w_d,
-   (int16_t*) SeparableConv2D_4_w_p, 1,
-   14);
-
- for (int depth = 0; depth < SeparableConv2D_4_depth; depth++) {
-  for (int height = 0; height < SeparableConv2D_4_height; height++) {
-   for (int width = 0; width < SeparableConv2D_4_width; width++) {
 
     out[depth][height][width].data =
-      (int16_t) SeparableConv2D_4_array[depth][height][width];
+      (int16_t) Padding2D_0_array[depth][height][width];
 
     if (depth == 0 && height == 0 && width == 0) {
      out[depth][height][width].user = 1;
@@ -76775,17 +76699,16 @@ void network(axis &input_data, axis &output_data) {
      out[depth][height][width].user = 0;
     }
 
-    if ((depth == SeparableConv2D_4_depth - 1)
-      && (height == SeparableConv2D_4_height - 1)
-      && (width == SeparableConv2D_4_width - 1)) {
+    if ((depth == Padding2D_0_depth - 1)
+      && (height == Padding2D_0_height - 1)
+      && (width == Padding2D_0_width - 1)) {
 
      out[depth][height][width].last = 1;
     } else {
      out[depth][height][width].last = 0;
     }
+
     output_data.write(out[depth][height][width]);
-
-
    }
   }
  }

@@ -1,5 +1,5 @@
 // ==============================================================
-// File generated on Wed Nov 13 17:16:08 JST 2019
+// File generated on Fri Nov 15 14:36:10 JST 2019
 // Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
 // SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 // IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
@@ -49,7 +49,7 @@ module AESL_axi_s_output_data (
     reg output_data_TDATA_read_en;
     wire [16 - 1:0] output_data_TDATA_read_data;
     
-    fifo #(784, 16) fifo_output_data_TDATA (
+    fifo #(900, 16) fifo_output_data_TDATA (
         .reset(1'b0),
         .write_clock(clk),
         .write_en(output_data_TDATA_write_en),
@@ -72,7 +72,7 @@ module AESL_axi_s_output_data (
     reg output_data_TKEEP_read_en;
     wire [2 - 1:0] output_data_TKEEP_read_data;
     
-    fifo #(784, 2) fifo_output_data_TKEEP (
+    fifo #(900, 2) fifo_output_data_TKEEP (
         .reset(1'b0),
         .write_clock(clk),
         .write_en(output_data_TKEEP_write_en),
@@ -95,7 +95,7 @@ module AESL_axi_s_output_data (
     reg output_data_TSTRB_read_en;
     wire [2 - 1:0] output_data_TSTRB_read_data;
     
-    fifo #(784, 2) fifo_output_data_TSTRB (
+    fifo #(900, 2) fifo_output_data_TSTRB (
         .reset(1'b0),
         .write_clock(clk),
         .write_en(output_data_TSTRB_write_en),
@@ -118,7 +118,7 @@ module AESL_axi_s_output_data (
     reg output_data_TUSER_read_en;
     wire [1 - 1:0] output_data_TUSER_read_data;
     
-    fifo #(784, 1) fifo_output_data_TUSER (
+    fifo #(900, 1) fifo_output_data_TUSER (
         .reset(1'b0),
         .write_clock(clk),
         .write_en(output_data_TUSER_write_en),
@@ -141,7 +141,7 @@ module AESL_axi_s_output_data (
     reg output_data_TLAST_read_en;
     wire [1 - 1:0] output_data_TLAST_read_data;
     
-    fifo #(784, 1) fifo_output_data_TLAST (
+    fifo #(900, 1) fifo_output_data_TLAST (
         .reset(1'b0),
         .write_clock(clk),
         .write_en(output_data_TLAST_write_en),
@@ -164,7 +164,7 @@ module AESL_axi_s_output_data (
     reg output_data_TID_read_en;
     wire [1 - 1:0] output_data_TID_read_data;
     
-    fifo #(784, 1) fifo_output_data_TID (
+    fifo #(900, 1) fifo_output_data_TID (
         .reset(1'b0),
         .write_clock(clk),
         .write_en(output_data_TID_write_en),
@@ -187,7 +187,7 @@ module AESL_axi_s_output_data (
     reg output_data_TDEST_read_en;
     wire [1 - 1:0] output_data_TDEST_read_data;
     
-    fifo #(784, 1) fifo_output_data_TDEST (
+    fifo #(900, 1) fifo_output_data_TDEST (
         .reset(1'b0),
         .write_clock(clk),
         .write_en(output_data_TDEST_write_en),

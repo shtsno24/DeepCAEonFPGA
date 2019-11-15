@@ -1,5 +1,5 @@
 // ==============================================================
-// File generated on Wed Nov 13 17:14:50 JST 2019
+// File generated on Fri Nov 15 14:34:41 JST 2019
 // Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
 // SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 // IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
@@ -22,7 +22,7 @@ using namespace sc_dt;
 struct network_out_0_id_V_ram : public sc_core::sc_module {
 
   static const unsigned DataWidth = 1;
-  static const unsigned AddressRange = 784;
+  static const unsigned AddressRange = 900;
   static const unsigned AddressWidth = 10;
 
 //latency = 1
@@ -79,7 +79,7 @@ SC_MODULE(network_out_0_id_V) {
 
 
 static const unsigned DataWidth = 1;
-static const unsigned AddressRange = 784;
+static const unsigned AddressRange = 900;
 static const unsigned AddressWidth = 10;
 
 sc_core::sc_in <sc_lv<AddressWidth> > address0;

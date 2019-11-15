@@ -1,5 +1,5 @@
 // ==============================================================
-// File generated on Wed Nov 13 17:15:37 JST 2019
+// File generated on Fri Nov 15 14:35:29 JST 2019
 // Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
 // SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 // IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
@@ -77761,8 +77761,8 @@ int main(void){
 
     hls::stream< ap_axis<16, 1, 1, 1> > input_buffer;
     hls::stream< ap_axis<16, 1, 1, 1> > output_buffer;
-    int16_t output_img_buff[1 * 28 * 28];
- vector< vector< int16_t> > output_img(28, vector< int16_t>(28, 0));
+    int16_t output_img_buff[1 * 30 * 30];
+ vector< vector< int16_t> > output_img(30, vector< int16_t>(30, 0));
  vector< vector< int16_t> > input_img(28, vector< int16_t>(28, 0));
 
     ap_axis<16, 1, 1, 1> tmp;
@@ -77795,9 +77795,9 @@ int main(void){
     } else {
      tmp.last = 0;
     }
-    i += 1;
     cout << "count " << i << ", last " << tmp.last << ", data " << tmp.data <<"\r\n";
     input_buffer << tmp;
+    i += 1;
    }
   }
  }
@@ -77833,13 +77833,13 @@ network
  cout << "\r\n";
  cout << "\r\n";
 
- for(int height = 0; height < 28; height++){
-  for(int width = 0; width < 28; width++){
-   output_img[height][width] = output_img_buff[28 * height + width];
+ for(int height = 0; height < 30; height++){
+  for(int width = 0; width < 30; width++){
+   output_img[height][width] = output_img_buff[30 * height + width];
   }
  }
 
- array_printf_2D_fix16(28, 28, output_img, 14);
+ array_printf_2D_fix16(30, 30, output_img, 14);
 
  cout << "\r\n";
  cout << "\r\n";
