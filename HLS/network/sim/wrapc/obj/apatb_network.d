@@ -57,9 +57,7 @@ obj/apatb_network.o: apatb_network.cpp /usr/include/stdc-predef.h \
  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
- /usr/include/alloca.h \
- /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
- /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+ /usr/include/alloca.h /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
  /tools/Xilinx/Vivado/2018.3/lnx64/tools/systemc/include/sysc/packages/boost/config/posix_features.hpp \
  /usr/include/unistd.h /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
  /usr/include/x86_64-linux-gnu/bits/environments.h \
@@ -86,7 +84,6 @@ obj/apatb_network.o: apatb_network.cpp /usr/include/stdc-predef.h \
  /tools/Xilinx/Vivado/2018.3/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/include/stdarg.h \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
  /usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
- /usr/include/x86_64-linux-gnu/bits/stdio.h \
  /tools/Xilinx/Vivado/2018.3/lnx64/tools/systemc/include/sysc/kernel/sc_externs.h \
  /tools/Xilinx/Vivado/2018.3/lnx64/tools/systemc/include/sysc/kernel/sc_except.h \
  /tools/Xilinx/Vivado/2018.3/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/exception \
@@ -230,7 +227,6 @@ obj/apatb_network.o: apatb_network.cpp /usr/include/stdc-predef.h \
  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
- /usr/include/x86_64-linux-gnu/bits/mathinline.h \
  /tools/Xilinx/Vivado/2018.3/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/limits \
  /tools/Xilinx/Vivado/2018.3/lnx64/tools/systemc/include/sysc/datatypes/bit/sc_bit_ids.h \
  /tools/Xilinx/Vivado/2018.3/lnx64/tools/systemc/include/sysc/datatypes/int/sc_int_ids.h \
@@ -363,7 +359,6 @@ obj/apatb_network.o: apatb_network.cpp /usr/include/stdc-predef.h \
  /tools/Xilinx/Vivado/2018.3/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cfenv \
  /tools/Xilinx/Vivado/2018.3/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/fenv.h \
  /usr/include/fenv.h /usr/include/x86_64-linux-gnu/bits/fenv.h \
- /usr/include/x86_64-linux-gnu/bits/fenvinline.h \
  /tools/Xilinx/Vivado/2018.3/include/ap_fixed_ref.h \
  /tools/Xilinx/Vivado/2018.3/include/ap_fixed_special.h \
  /tools/Xilinx/Vivado/2018.3/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/complex \
@@ -521,8 +516,6 @@ obj/apatb_network.o: apatb_network.cpp /usr/include/stdc-predef.h \
 
 /usr/include/alloca.h:
 
-/usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h:
-
 /usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
 
 /tools/Xilinx/Vivado/2018.3/lnx64/tools/systemc/include/sysc/packages/boost/config/posix_features.hpp:
@@ -582,8 +575,6 @@ obj/apatb_network.o: apatb_network.cpp /usr/include/stdc-predef.h \
 /usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
 
 /usr/include/x86_64-linux-gnu/bits/sys_errlist.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdio.h:
 
 /tools/Xilinx/Vivado/2018.3/lnx64/tools/systemc/include/sysc/kernel/sc_externs.h:
 
@@ -893,8 +884,6 @@ obj/apatb_network.o: apatb_network.cpp /usr/include/stdc-predef.h \
 
 /usr/include/x86_64-linux-gnu/bits/iscanonical.h:
 
-/usr/include/x86_64-linux-gnu/bits/mathinline.h:
-
 /tools/Xilinx/Vivado/2018.3/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/limits:
 
 /tools/Xilinx/Vivado/2018.3/lnx64/tools/systemc/include/sysc/datatypes/bit/sc_bit_ids.h:
@@ -1160,8 +1149,6 @@ obj/apatb_network.o: apatb_network.cpp /usr/include/stdc-predef.h \
 /usr/include/fenv.h:
 
 /usr/include/x86_64-linux-gnu/bits/fenv.h:
-
-/usr/include/x86_64-linux-gnu/bits/fenvinline.h:
 
 /tools/Xilinx/Vivado/2018.3/include/ap_fixed_ref.h:
 

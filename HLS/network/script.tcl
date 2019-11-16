@@ -56,7 +56,7 @@ open_solution "network"
 set_part {xc7z020clg400-1} -tool vivado
 create_clock -period 10 -name default
 config_compile -no_signed_zeros=0 -unsafe_math_optimizations=0
-config_export -format ip_catalog -rtl verilog -vivado_phys_opt place -vivado_report_level 0
+config_export -format ip_catalog -rtl verilog -use_netlist none -vivado_impl_strategy default -vivado_phys_opt place -vivado_report_level 0 -vivado_synth_design_args {-directive sdx_optimization_effort_high} -vivado_synth_strategy default
 source "./HLS/network/directives.tcl"
 csim_design -clean
 csynth_design

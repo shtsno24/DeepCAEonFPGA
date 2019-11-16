@@ -37,7 +37,7 @@ testbench/array_printf_float32.o: /home/masudalab/DeepCAEonFPGA/layers_cpp/array
 testbench/mnist_AXI_Stream_tb.o: /home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream_tb.cpp
 	@echo 'Building file: $<'
 	@echo 'Invoking: GCC C++ Compiler'
-	g++ -I/tools/Xilinx/Vivado/2018.3/lnx64/tools/systemc/include -I/tools/Xilinx/Vivado/2018.3/lnx64/tools/auto_cc/include -I/home/masudalab/DeepCAEonFPGA -I/tools/Xilinx/Vivado/2018.3/include -I/tools/Xilinx/Vivado/2018.3/include/ap_sysc -I/tools/Xilinx/Vivado/2018.3/include/etc -O0 -g3 -Wall -std=c++14 -O3 -Wno-unknown-pragmas -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"testbench/mnist_AXI_Stream_tb.d" -o "$@" "$<"
+	g++ -I/tools/Xilinx/Vivado/2018.3/lnx64/tools/systemc/include -I/tools/Xilinx/Vivado/2018.3/lnx64/tools/auto_cc/include -I/home/masudalab/DeepCAEonFPGA -I/tools/Xilinx/Vivado/2018.3/include -I/tools/Xilinx/Vivado/2018.3/include/ap_sysc -I/tools/Xilinx/Vivado/2018.3/include/etc -O0 -g3 -Wall -std=c++14 -Wno-unknown-pragmas -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"testbench/mnist_AXI_Stream_tb.d" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 

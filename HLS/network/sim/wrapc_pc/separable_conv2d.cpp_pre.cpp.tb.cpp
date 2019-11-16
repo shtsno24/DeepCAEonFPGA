@@ -1,5 +1,5 @@
 // ==============================================================
-// File generated on Fri Nov 15 14:35:36 JST 2019
+// File generated on Sat Nov 16 20:54:45 JST 2019
 // Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
 // SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 // IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
@@ -264,6 +264,7 @@ const float* bias_d, const float* bias_p,
 uint16_t kernel_d_height, uint16_t kernel_d_width, const float* kernel_d, const float* kernel_p,
 uint8_t relu);
 #5 "/home/masudalab/DeepCAEonFPGA/layers_c/separable_conv2d.cpp" 2
+
 
 uint8_t separable_conv2d_fix16(uint16_t input_depth, uint16_t input_height, uint16_t input_width, int16_t* input,
 uint16_t output_depth, uint16_t output_height, uint16_t output_width, int16_t* output, int16_t* middle_array,

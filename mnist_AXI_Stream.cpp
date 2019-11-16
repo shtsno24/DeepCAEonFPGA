@@ -20,16 +20,17 @@
 using namespace std;
 
 void network(axis &input_data, axis &output_data) {
+#pragma HLS INTERFACE axis register both port=input_data
+#pragma HLS INTERFACE axis register both port=output_data
 #pragma HLS INTERFACE s_axilite register port=return
-#pragma HLS INTERFACE axis register port=input_data
-#pragma HLS INTERFACE axis register port=output_data
 
 	uint16_t input_0_depth = 1, input_0_height = 28, input_0_width = 28;
 	int16_t input_0_array[1][28][28];
 
 	ap_axis<16, 1, 1, 1> tmp;
 	ap_axis<16, 1, 1, 1> out;
-	// ap_axis<16, 1, 1, 1> out[1][28][28];
+//	ap_axis<16, 1, 1, 1> out[1][28][28];
+//	ap_axis<16, 1, 1, 1> out[1 * 28 * 28];
 
 	for (int depth = 0; depth < input_0_depth; depth++) {
 		for (int height = 0; height < input_0_height; height++) {
@@ -105,40 +106,59 @@ void network(axis &input_data, axis &output_data) {
 	(int16_t*) SeparableConv2D_4_b_d, (int16_t*) SeparableConv2D_4_b_p,
 	3, 3, (int16_t*) SeparableConv2D_4_w_d, (int16_t*) SeparableConv2D_4_w_p, 1, fractal_width_SeparableConv2D_4);
 
+//	for (int depth = 0; depth < SeparableConv2D_4_depth; depth++) {
+//		for (int height = 0; height < SeparableConv2D_4_height; height++) {
+//			for (int width = 0; width < SeparableConv2D_4_width; width++) {
+//
+//				// out.dest = 0;
+//				// out.id = 0;
+//				// out.keep = 0;
+//				// out.strb = 0;
+//
+//				out[depth][height][width].data =
+//				 		(int16_t) SeparableConv2D_4_array[depth][height][width];
+//				// out.data = (int16_t) SeparableConv2D_4_array[depth][height][width];
+//
+//				if (depth == 0 && height == 0 && width == 0) {
+//					out[depth][height][width].user = 1;
+//					// out.user = 1;
+//				} else {
+//					out[depth][height][width].user = 0;
+//					// out.user = 0;
+//				}
+//
+//				if ((depth == SeparableConv2D_4_depth - 1)
+//						&& (height == SeparableConv2D_4_height - 1)
+//						&& (width == SeparableConv2D_4_width - 1)) {
+//					out[depth][height][width].last = 1;
+//					// out.last = 1;
+//				} else {
+//					out[depth][height][width].last = 0;
+//					// out.last = 0;
+//				}
+//				// output_data.write(out[depth][height][width]);
+////				output_data.write(out);
+//				output_data << out[depth][height][width];
+////				output_data << out;
+//			}
+//		}
+//	}
+
+	int i = 0;
 	for (int depth = 0; depth < SeparableConv2D_4_depth; depth++) {
 		for (int height = 0; height < SeparableConv2D_4_height; height++) {
 			for (int width = 0; width < SeparableConv2D_4_width; width++) {
-
-				out.dest = 0;
-				out.id = 0;
-				out.keep = 0;
-				out.strb = 0;
-
-				// out[depth][height][width].data =
-				// 		(int16_t) SeparableConv2D_4_array[depth][height][width];
-				out.data =
-						(int16_t) SeparableConv2D_4_array[depth][height][width];
-
-				if (depth == 0 && height == 0 && width == 0) {
-					// out[depth][height][width].user = 1;
+				out.user = 0;
+				out.last = 0;
+				if(i == 0){
 					out.user = 1;
-				} else {
-					// out[depth][height][width].user = 0;
-					out.user = 0;
 				}
-
-				if ((depth == SeparableConv2D_4_depth - 1)
-						&& (height == SeparableConv2D_4_height - 1)
-						&& (width == SeparableConv2D_4_width - 1)) {
-					// out[depth][height][width].last = 1;
+				if(i == SeparableConv2D_4_depth * SeparableConv2D_4_height * SeparableConv2D_4_width - 1){
 					out.last = 1;
-				} else {
-					// out[depth][height][width].last = 0;
-					out.last = 0;
 				}
-				// output_data.write(out[depth][height][width]);
+				out.data = SeparableConv2D_4_array[depth][height][width];
 				output_data.write(out);
-				// output_data << out[depth][height][width];
+				i += 1;
 			}
 		}
 	}

@@ -14,20 +14,20 @@ set C_modelType { void 0 }
 set C_modelArgList {
 	{ input_height uint 16 regular  }
 	{ input_width uint 16 regular  }
-	{ input_r int 16 regular {array 900 { 1 3 } 1 1 }  }
 	{ output_depth uint 16 regular  }
 	{ output_height uint 16 regular  }
 	{ output_width uint 16 regular  }
-	{ output_r int 16 regular {array 784 { 2 3 } 1 1 }  }
+	{ SeparableConv2D_3_m_s int 16 regular {array 1568 { 2 3 } 1 1 } {global 2}  }
+	{ Padding2D_3_array int 16 regular {array 2048 { 1 3 } 1 1 } {global 0}  }
 }
 set C_modelArgMapList {[ 
 	{ "Name" : "input_height", "interface" : "wire", "bitwidth" : 16, "direction" : "READONLY"} , 
  	{ "Name" : "input_width", "interface" : "wire", "bitwidth" : 16, "direction" : "READONLY"} , 
- 	{ "Name" : "input_r", "interface" : "memory", "bitwidth" : 16, "direction" : "READONLY"} , 
  	{ "Name" : "output_depth", "interface" : "wire", "bitwidth" : 16, "direction" : "READONLY"} , 
  	{ "Name" : "output_height", "interface" : "wire", "bitwidth" : 16, "direction" : "READONLY"} , 
  	{ "Name" : "output_width", "interface" : "wire", "bitwidth" : 16, "direction" : "READONLY"} , 
- 	{ "Name" : "output_r", "interface" : "memory", "bitwidth" : 16, "direction" : "READWRITE"} ]}
+ 	{ "Name" : "SeparableConv2D_3_m_s", "interface" : "memory", "bitwidth" : 16, "direction" : "READWRITE", "bitSlice":[{"low":0,"up":15,"cElement": [{"cName": "SeparableConv2D_3_m_array","cData": "short","bit_use": { "low": 0,"up": 15},"cArray": [{"low" : 0,"up" : 7,"step" : 1},{"low" : 0,"up" : 13,"step" : 1},{"low" : 0,"up" : 13,"step" : 1}]}]}], "extern" : 0} , 
+ 	{ "Name" : "Padding2D_3_array", "interface" : "memory", "bitwidth" : 16, "direction" : "READONLY", "bitSlice":[{"low":0,"up":15,"cElement": [{"cName": "Padding2D_3_array","cData": "short","bit_use": { "low": 0,"up": 15},"cArray": [{"low" : 0,"up" : 7,"step" : 1},{"low" : 0,"up" : 15,"step" : 1},{"low" : 0,"up" : 15,"step" : 1}]}]}], "extern" : 0} ]}
 # RTL Port declarations: 
 set portNum 19
 set portList { 
@@ -39,17 +39,17 @@ set portList {
 	{ ap_ready sc_out sc_logic 1 ready -1 } 
 	{ input_height sc_in sc_lv 16 signal 0 } 
 	{ input_width sc_in sc_lv 16 signal 1 } 
-	{ input_r_address0 sc_out sc_lv 10 signal 2 } 
-	{ input_r_ce0 sc_out sc_logic 1 signal 2 } 
-	{ input_r_q0 sc_in sc_lv 16 signal 2 } 
-	{ output_depth sc_in sc_lv 16 signal 3 } 
-	{ output_height sc_in sc_lv 16 signal 4 } 
-	{ output_width sc_in sc_lv 16 signal 5 } 
-	{ output_r_address0 sc_out sc_lv 10 signal 6 } 
-	{ output_r_ce0 sc_out sc_logic 1 signal 6 } 
-	{ output_r_we0 sc_out sc_logic 1 signal 6 } 
-	{ output_r_d0 sc_out sc_lv 16 signal 6 } 
-	{ output_r_q0 sc_in sc_lv 16 signal 6 } 
+	{ output_depth sc_in sc_lv 16 signal 2 } 
+	{ output_height sc_in sc_lv 16 signal 3 } 
+	{ output_width sc_in sc_lv 16 signal 4 } 
+	{ SeparableConv2D_3_m_s_address0 sc_out sc_lv 11 signal 5 } 
+	{ SeparableConv2D_3_m_s_ce0 sc_out sc_logic 1 signal 5 } 
+	{ SeparableConv2D_3_m_s_we0 sc_out sc_logic 1 signal 5 } 
+	{ SeparableConv2D_3_m_s_d0 sc_out sc_lv 16 signal 5 } 
+	{ SeparableConv2D_3_m_s_q0 sc_in sc_lv 16 signal 5 } 
+	{ Padding2D_3_array_address0 sc_out sc_lv 11 signal 6 } 
+	{ Padding2D_3_array_ce0 sc_out sc_logic 1 signal 6 } 
+	{ Padding2D_3_array_q0 sc_in sc_lv 16 signal 6 } 
 }
 set NewPortList {[ 
 	{ "name": "ap_clk", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "clock", "bundle":{"name": "ap_clk", "role": "default" }} , 
@@ -60,17 +60,17 @@ set NewPortList {[
  	{ "name": "ap_ready", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "ready", "bundle":{"name": "ap_ready", "role": "default" }} , 
  	{ "name": "input_height", "direction": "in", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "input_height", "role": "default" }} , 
  	{ "name": "input_width", "direction": "in", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "input_width", "role": "default" }} , 
- 	{ "name": "input_r_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":10, "type": "signal", "bundle":{"name": "input_r", "role": "address0" }} , 
- 	{ "name": "input_r_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "input_r", "role": "ce0" }} , 
- 	{ "name": "input_r_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "input_r", "role": "q0" }} , 
  	{ "name": "output_depth", "direction": "in", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "output_depth", "role": "default" }} , 
  	{ "name": "output_height", "direction": "in", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "output_height", "role": "default" }} , 
  	{ "name": "output_width", "direction": "in", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "output_width", "role": "default" }} , 
- 	{ "name": "output_r_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":10, "type": "signal", "bundle":{"name": "output_r", "role": "address0" }} , 
- 	{ "name": "output_r_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "output_r", "role": "ce0" }} , 
- 	{ "name": "output_r_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "output_r", "role": "we0" }} , 
- 	{ "name": "output_r_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "output_r", "role": "d0" }} , 
- 	{ "name": "output_r_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "output_r", "role": "q0" }}  ]}
+ 	{ "name": "SeparableConv2D_3_m_s_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":11, "type": "signal", "bundle":{"name": "SeparableConv2D_3_m_s", "role": "address0" }} , 
+ 	{ "name": "SeparableConv2D_3_m_s_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "SeparableConv2D_3_m_s", "role": "ce0" }} , 
+ 	{ "name": "SeparableConv2D_3_m_s_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "SeparableConv2D_3_m_s", "role": "we0" }} , 
+ 	{ "name": "SeparableConv2D_3_m_s_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "SeparableConv2D_3_m_s", "role": "d0" }} , 
+ 	{ "name": "SeparableConv2D_3_m_s_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "SeparableConv2D_3_m_s", "role": "q0" }} , 
+ 	{ "name": "Padding2D_3_array_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":11, "type": "signal", "bundle":{"name": "Padding2D_3_array", "role": "address0" }} , 
+ 	{ "name": "Padding2D_3_array_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "Padding2D_3_array", "role": "ce0" }} , 
+ 	{ "name": "Padding2D_3_array_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "Padding2D_3_array", "role": "q0" }}  ]}
 
 set RtlHierarchyInfo {[
 	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2"],
@@ -89,26 +89,26 @@ set RtlHierarchyInfo {[
 		"Port" : [
 			{"Name" : "input_height", "Type" : "None", "Direction" : "I"},
 			{"Name" : "input_width", "Type" : "None", "Direction" : "I"},
-			{"Name" : "input_r", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "output_depth", "Type" : "None", "Direction" : "I"},
 			{"Name" : "output_height", "Type" : "None", "Direction" : "I"},
 			{"Name" : "output_width", "Type" : "None", "Direction" : "I"},
-			{"Name" : "output_r", "Type" : "Memory", "Direction" : "IO"},
-			{"Name" : "SeparableConv2D_0_w_s", "Type" : "Memory", "Direction" : "I"}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.SeparableConv2D_0_w_s_U", "Parent" : "0"},
-	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mul_mul_16s_15s_30_1_1_U3", "Parent" : "0"}]}
+			{"Name" : "SeparableConv2D_3_m_s", "Type" : "Memory", "Direction" : "IO"},
+			{"Name" : "Padding2D_3_array", "Type" : "Memory", "Direction" : "I"},
+			{"Name" : "SeparableConv2D_3_w_s", "Type" : "Memory", "Direction" : "I"}]},
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.SeparableConv2D_3_w_s_U", "Parent" : "0"},
+	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mul_mul_16s_15s_30_1_1_U101", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {
 	depthwise_conv2d_fix {
 		input_height {Type I LastRead 0 FirstWrite -1}
 		input_width {Type I LastRead 0 FirstWrite -1}
-		input_r {Type I LastRead 7 FirstWrite -1}
 		output_depth {Type I LastRead 0 FirstWrite -1}
 		output_height {Type I LastRead 0 FirstWrite -1}
 		output_width {Type I LastRead 0 FirstWrite -1}
-		output_r {Type IO LastRead 9 FirstWrite 4}
-		SeparableConv2D_0_w_s {Type I LastRead -1 FirstWrite -1}}}
+		SeparableConv2D_3_m_s {Type IO LastRead 9 FirstWrite 4}
+		Padding2D_3_array {Type I LastRead 7 FirstWrite -1}
+		SeparableConv2D_3_w_s {Type I LastRead -1 FirstWrite -1}}}
 
 set hasDtUnsupportedChannel 0
 
@@ -123,9 +123,9 @@ set PipelineEnableSignalInfo {[
 set Spec2ImplPortList { 
 	input_height { ap_none {  { input_height in_data 0 16 } } }
 	input_width { ap_none {  { input_width in_data 0 16 } } }
-	input_r { ap_memory {  { input_r_address0 mem_address 1 10 }  { input_r_ce0 mem_ce 1 1 }  { input_r_q0 mem_dout 0 16 } } }
 	output_depth { ap_none {  { output_depth in_data 0 16 } } }
 	output_height { ap_none {  { output_height in_data 0 16 } } }
 	output_width { ap_none {  { output_width in_data 0 16 } } }
-	output_r { ap_memory {  { output_r_address0 mem_address 1 10 }  { output_r_ce0 mem_ce 1 1 }  { output_r_we0 mem_we 1 1 }  { output_r_d0 mem_din 1 16 }  { output_r_q0 mem_dout 0 16 } } }
+	SeparableConv2D_3_m_s { ap_memory {  { SeparableConv2D_3_m_s_address0 mem_address 1 11 }  { SeparableConv2D_3_m_s_ce0 mem_ce 1 1 }  { SeparableConv2D_3_m_s_we0 mem_we 1 1 }  { SeparableConv2D_3_m_s_d0 mem_din 1 16 }  { SeparableConv2D_3_m_s_q0 mem_dout 0 16 } } }
+	Padding2D_3_array { ap_memory {  { Padding2D_3_array_address0 mem_address 1 11 }  { Padding2D_3_array_ce0 mem_ce 1 1 }  { Padding2D_3_array_q0 mem_dout 0 16 } } }
 }

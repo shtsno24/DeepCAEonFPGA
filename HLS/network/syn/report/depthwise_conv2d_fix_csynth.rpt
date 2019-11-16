@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'depthwise_conv2d_fix'
 ================================================================
-* Date:           Fri Nov 15 14:34:39 2019
+* Date:           Sat Nov 16 20:53:53 2019
 
 * Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
 * Project:        HLS
@@ -61,15 +61,15 @@
 |Expression       |        -|      4|       0|    584|
 |FIFO             |        -|      -|       -|      -|
 |Instance         |        -|      -|       -|      -|
-|Memory           |        0|      -|      15|      3|
+|Memory           |        1|      -|       0|      0|
 |Multiplexer      |        -|      -|       -|    146|
-|Register         |        -|      -|     577|      -|
+|Register         |        -|      -|     578|      -|
 +-----------------+---------+-------+--------+-------+
-|Total            |        0|      5|     592|    733|
+|Total            |        1|      5|     578|    730|
 +-----------------+---------+-------+--------+-------+
 |Available        |      280|    220|  106400|  53200|
 +-----------------+---------+-------+--------+-------+
-|Utilization (%)  |        0|      2|   ~0   |      1|
+|Utilization (%)  |    ~0   |      2|   ~0   |      1|
 +-----------------+---------+-------+--------+-------+
 
 + Detail: 
@@ -77,20 +77,20 @@
     N/A
 
     * DSP48: 
-    +-----------------------------------+--------------------------------+-----------+
-    |              Instance             |             Module             | Expression|
-    +-----------------------------------+--------------------------------+-----------+
-    |network_mul_mul_16s_15s_30_1_1_U3  |network_mul_mul_16s_15s_30_1_1  |  i0 * i1  |
-    +-----------------------------------+--------------------------------+-----------+
+    +-------------------------------------+--------------------------------+-----------+
+    |               Instance              |             Module             | Expression|
+    +-------------------------------------+--------------------------------+-----------+
+    |network_mul_mul_16s_15s_30_1_1_U101  |network_mul_mul_16s_15s_30_1_1  |  i0 * i1  |
+    +-------------------------------------+--------------------------------+-----------+
 
     * Memory: 
-    +-------------------------+--------------------------------------------+---------+----+----+------+-----+------+-------------+
-    |          Memory         |                   Module                   | BRAM_18K| FF | LUT| Words| Bits| Banks| W*Bits*Banks|
-    +-------------------------+--------------------------------------------+---------+----+----+------+-----+------+-------------+
-    |SeparableConv2D_0_w_s_U  |depthwise_conv2d_fix_SeparableConv2D_0_w_s  |        0|  15|   3|     9|   15|     1|          135|
-    +-------------------------+--------------------------------------------+---------+----+----+------+-----+------+-------------+
-    |Total                    |                                            |        0|  15|   3|     9|   15|     1|          135|
-    +-------------------------+--------------------------------------------+---------+----+----+------+-----+------+-------------+
+    +-------------------------+--------------------------------------------+---------+---+----+------+-----+------+-------------+
+    |          Memory         |                   Module                   | BRAM_18K| FF| LUT| Words| Bits| Banks| W*Bits*Banks|
+    +-------------------------+--------------------------------------------+---------+---+----+------+-----+------+-------------+
+    |SeparableConv2D_3_w_s_U  |depthwise_conv2d_fix_SeparableConv2D_3_w_s  |        1|  0|   0|    72|   15|     1|         1080|
+    +-------------------------+--------------------------------------------+---------+---+----+------+-----+------+-------------+
+    |Total                    |                                            |        1|  0|   0|    72|   15|     1|         1080|
+    +-------------------------+--------------------------------------------+---------+---+----+------+-----+------+-------------+
 
     * FIFO: 
     N/A
@@ -105,20 +105,20 @@
     |k_w_1_fu_381_p2      |     +    |      0|  0|  10|           2|           1|
     |next_mul3_fu_214_p2  |     +    |      0|  0|  39|          32|          32|
     |next_mul_fu_219_p2   |     +    |      0|  0|  39|          32|          32|
-    |out_d_2_fu_229_p2    |     +    |      0|  0|  23|          16|           1|
-    |out_h_2_fu_256_p2    |     +    |      0|  0|  23|          16|           1|
-    |out_w_2_fu_285_p2    |     +    |      0|  0|  23|          16|           1|
+    |out_d_4_fu_229_p2    |     +    |      0|  0|  23|          16|           1|
+    |out_h_4_fu_256_p2    |     +    |      0|  0|  23|          16|           1|
+    |out_w_4_fu_285_p2    |     +    |      0|  0|  23|          16|           1|
     |tmp2_fu_360_p2       |     +    |      0|  0|  39|          32|          32|
     |tmp4_fu_351_p2       |     +    |      0|  0|  24|          17|          17|
     |tmp5_fu_391_p2       |     +    |      0|  0|  24|          17|          17|
     |tmp6_fu_366_p2       |     +    |      0|  0|  28|          21|          21|
     |tmp7_fu_410_p2       |     +    |      0|  0|  24|          17|          17|
-    |tmp_39_fu_299_p2     |     +    |      0|  0|  39|          32|          32|
-    |tmp_42_fu_400_p2     |     +    |      0|  0|  39|          32|          32|
-    |tmp_44_fu_419_p2     |     +    |      0|  0|  28|          21|          21|
-    |tmp_48_fu_448_p2     |     +    |      0|  0|  23|          16|          16|
+    |tmp_119_fu_299_p2    |     +    |      0|  0|  39|          32|          32|
+    |tmp_122_fu_400_p2    |     +    |      0|  0|  39|          32|          32|
+    |tmp_124_fu_419_p2    |     +    |      0|  0|  28|          21|          21|
+    |tmp_129_fu_448_p2    |     +    |      0|  0|  23|          16|          16|
     |tmp_fu_266_p2        |     +    |      0|  0|  39|          32|          32|
-    |tmp_41_fu_341_p2     |     -    |      0|  0|  15|           5|           5|
+    |tmp_121_fu_341_p2    |     -    |      0|  0|  15|           5|           5|
     |exitcond1_fu_309_p2  |   icmp   |      0|  0|   8|           2|           2|
     |exitcond2_fu_280_p2  |   icmp   |      0|  0|  13|          16|          16|
     |exitcond3_fu_251_p2  |   icmp   |      0|  0|  13|          16|          16|
@@ -129,43 +129,43 @@
     +---------------------+----------+-------+---+----+------------+------------+
 
     * Multiplexer: 
-    +-------------------+----+-----------+-----+-----------+
-    |        Name       | LUT| Input Size| Bits| Total Bits|
-    +-------------------+----+-----------+-----+-----------+
-    |ap_NS_fsm          |  53|         12|    1|         12|
-    |k_h_reg_176        |   9|          2|    2|          4|
-    |k_w_reg_187        |   9|          2|    2|          4|
-    |out_d_reg_118      |   9|          2|   16|         32|
-    |out_h_reg_153      |   9|          2|   16|         32|
-    |out_w_reg_165      |   9|          2|   16|         32|
-    |output_r_address0  |  15|          3|   10|         30|
-    |output_r_d0        |  15|          3|   16|         48|
-    |phi_mul2_reg_141   |   9|          2|   32|         64|
-    |phi_mul_reg_129    |   9|          2|   32|         64|
-    +-------------------+----+-----------+-----+-----------+
-    |Total              | 146|         32|  143|        322|
-    +-------------------+----+-----------+-----+-----------+
+    +--------------------------------+----+-----------+-----+-----------+
+    |              Name              | LUT| Input Size| Bits| Total Bits|
+    +--------------------------------+----+-----------+-----+-----------+
+    |SeparableConv2D_3_m_s_address0  |  15|          3|   11|         33|
+    |SeparableConv2D_3_m_s_d0        |  15|          3|   16|         48|
+    |ap_NS_fsm                       |  53|         12|    1|         12|
+    |k_h_reg_176                     |   9|          2|    2|          4|
+    |k_w_reg_187                     |   9|          2|    2|          4|
+    |out_d_reg_118                   |   9|          2|   16|         32|
+    |out_h_reg_153                   |   9|          2|   16|         32|
+    |out_w_reg_165                   |   9|          2|   16|         32|
+    |phi_mul2_reg_141                |   9|          2|   32|         64|
+    |phi_mul_reg_129                 |   9|          2|   32|         64|
+    +--------------------------------+----+-----------+-----+-----------+
+    |Total                           | 146|         32|  144|        325|
+    +--------------------------------+----+-----------+-----+-----------+
 
     * Register: 
     +-------------------------------+----+----+-----+-----------+
     |              Name             | FF | LUT| Bits| Const Bits|
     +-------------------------------+----+----+-----+-----------+
-    |SeparableConv2D_0_w_2_reg_611  |  15|   0|   15|          0|
+    |Padding2D_3_array_lo_reg_606   |  16|   0|   16|          0|
+    |SeparableConv2D_3_m_1_reg_560  |  11|   0|   11|          0|
+    |SeparableConv2D_3_w_2_reg_611  |  15|   0|   15|          0|
     |ap_CS_fsm                      |  11|   0|   11|          0|
-    |input_load_reg_606             |  16|   0|   16|          0|
     |k_h_1_reg_568                  |   2|   0|    2|          0|
     |k_h_reg_176                    |   2|   0|    2|          0|
     |k_w_1_reg_591                  |   2|   0|    2|          0|
     |k_w_reg_187                    |   2|   0|    2|          0|
     |next_mul3_reg_496              |  32|   0|   32|          0|
     |next_mul_reg_501               |  32|   0|   32|          0|
-    |out_d_2_reg_509                |  16|   0|   16|          0|
+    |out_d_4_reg_509                |  16|   0|   16|          0|
     |out_d_reg_118                  |  16|   0|   16|          0|
-    |out_h_2_reg_527                |  16|   0|   16|          0|
+    |out_h_4_reg_527                |  16|   0|   16|          0|
     |out_h_reg_153                  |  16|   0|   16|          0|
-    |out_w_2_reg_550                |  16|   0|   16|          0|
+    |out_w_4_reg_550                |  16|   0|   16|          0|
     |out_w_reg_165                  |  16|   0|   16|          0|
-    |output_addr_reg_560            |  10|   0|   10|          0|
     |p_shl_cast_reg_519             |  16|   0|   21|          5|
     |phi_mul2_reg_141               |  32|   0|   32|          0|
     |phi_mul_reg_129                |  32|   0|   32|          0|
@@ -173,17 +173,17 @@
     |tmp2_reg_573                   |  32|   0|   32|          0|
     |tmp3_reg_583                   |  32|   0|   32|          0|
     |tmp6_reg_578                   |  21|   0|   21|          0|
-    |tmp_34_reg_481                 |  16|   0|   32|         16|
-    |tmp_35_reg_486                 |  16|   0|   32|         16|
-    |tmp_36_reg_491                 |  16|   0|   32|         16|
-    |tmp_43_cast1_reg_514           |  16|   0|   17|          1|
-    |tmp_47_cast_reg_537            |  16|   0|   17|          1|
-    |tmp_47_reg_616                 |  16|   0|   16|          0|
-    |tmp_48_cast_reg_555            |  16|   0|   17|          1|
+    |tmp_111_reg_481                |  16|   0|   32|         16|
+    |tmp_112_reg_486                |  16|   0|   32|         16|
+    |tmp_113_reg_491                |  16|   0|   32|         16|
+    |tmp_114_cast1_reg_514          |  16|   0|   17|          1|
+    |tmp_118_cast_reg_537           |  16|   0|   17|          1|
+    |tmp_119_cast_reg_555           |  16|   0|   17|          1|
+    |tmp_128_reg_616                |  16|   0|   16|          0|
     |tmp_reg_532                    |  32|   0|   32|          0|
     |tmp_s_reg_476                  |  16|   0|   32|         16|
     +-------------------------------+----+----+-----+-----------+
-    |Total                          | 577|   0|  649|         72|
+    |Total                          | 578|   0|  650|         72|
     +-------------------------------+----+----+-----+-----------+
 
 
@@ -192,27 +192,27 @@
 == Interface
 ================================================================
 * Summary: 
-+-------------------+-----+-----+------------+----------------------+--------------+
-|     RTL Ports     | Dir | Bits|  Protocol  |     Source Object    |    C Type    |
-+-------------------+-----+-----+------------+----------------------+--------------+
-|ap_clk             |  in |    1| ap_ctrl_hs | depthwise_conv2d_fix | return value |
-|ap_rst             |  in |    1| ap_ctrl_hs | depthwise_conv2d_fix | return value |
-|ap_start           |  in |    1| ap_ctrl_hs | depthwise_conv2d_fix | return value |
-|ap_done            | out |    1| ap_ctrl_hs | depthwise_conv2d_fix | return value |
-|ap_idle            | out |    1| ap_ctrl_hs | depthwise_conv2d_fix | return value |
-|ap_ready           | out |    1| ap_ctrl_hs | depthwise_conv2d_fix | return value |
-|input_height       |  in |   16|   ap_none  |     input_height     |    scalar    |
-|input_width        |  in |   16|   ap_none  |      input_width     |    scalar    |
-|input_r_address0   | out |   10|  ap_memory |        input_r       |     array    |
-|input_r_ce0        | out |    1|  ap_memory |        input_r       |     array    |
-|input_r_q0         |  in |   16|  ap_memory |        input_r       |     array    |
-|output_depth       |  in |   16|   ap_none  |     output_depth     |    scalar    |
-|output_height      |  in |   16|   ap_none  |     output_height    |    scalar    |
-|output_width       |  in |   16|   ap_none  |     output_width     |    scalar    |
-|output_r_address0  | out |   10|  ap_memory |       output_r       |     array    |
-|output_r_ce0       | out |    1|  ap_memory |       output_r       |     array    |
-|output_r_we0       | out |    1|  ap_memory |       output_r       |     array    |
-|output_r_d0        | out |   16|  ap_memory |       output_r       |     array    |
-|output_r_q0        |  in |   16|  ap_memory |       output_r       |     array    |
-+-------------------+-----+-----+------------+----------------------+--------------+
++--------------------------------+-----+-----+------------+-----------------------+--------------+
+|            RTL Ports           | Dir | Bits|  Protocol  |     Source Object     |    C Type    |
++--------------------------------+-----+-----+------------+-----------------------+--------------+
+|ap_clk                          |  in |    1| ap_ctrl_hs |  depthwise_conv2d_fix | return value |
+|ap_rst                          |  in |    1| ap_ctrl_hs |  depthwise_conv2d_fix | return value |
+|ap_start                        |  in |    1| ap_ctrl_hs |  depthwise_conv2d_fix | return value |
+|ap_done                         | out |    1| ap_ctrl_hs |  depthwise_conv2d_fix | return value |
+|ap_idle                         | out |    1| ap_ctrl_hs |  depthwise_conv2d_fix | return value |
+|ap_ready                        | out |    1| ap_ctrl_hs |  depthwise_conv2d_fix | return value |
+|input_height                    |  in |   16|   ap_none  |      input_height     |    scalar    |
+|input_width                     |  in |   16|   ap_none  |      input_width      |    scalar    |
+|output_depth                    |  in |   16|   ap_none  |      output_depth     |    scalar    |
+|output_height                   |  in |   16|   ap_none  |     output_height     |    scalar    |
+|output_width                    |  in |   16|   ap_none  |      output_width     |    scalar    |
+|SeparableConv2D_3_m_s_address0  | out |   11|  ap_memory | SeparableConv2D_3_m_s |     array    |
+|SeparableConv2D_3_m_s_ce0       | out |    1|  ap_memory | SeparableConv2D_3_m_s |     array    |
+|SeparableConv2D_3_m_s_we0       | out |    1|  ap_memory | SeparableConv2D_3_m_s |     array    |
+|SeparableConv2D_3_m_s_d0        | out |   16|  ap_memory | SeparableConv2D_3_m_s |     array    |
+|SeparableConv2D_3_m_s_q0        |  in |   16|  ap_memory | SeparableConv2D_3_m_s |     array    |
+|Padding2D_3_array_address0      | out |   11|  ap_memory |   Padding2D_3_array   |     array    |
+|Padding2D_3_array_ce0           | out |    1|  ap_memory |   Padding2D_3_array   |     array    |
+|Padding2D_3_array_q0            |  in |   16|  ap_memory |   Padding2D_3_array   |     array    |
++--------------------------------+-----+-----+------------+-----------------------+--------------+
 

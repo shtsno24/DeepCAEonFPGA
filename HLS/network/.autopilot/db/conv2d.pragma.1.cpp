@@ -384,13 +384,11 @@ uint8_t relu, uint8_t fractal_width){
     for(uint16_t out_d = 0; out_d < output_depth; out_d++){
         for(uint16_t out_h = 0; out_h < output_height; out_h++){
             for(uint16_t out_w = 0; out_w < output_width; out_w++){
-             output[out_d * output_height * output_width + out_h * output_width + out_w] = 0;
+                output[out_d * output_height * output_width + out_h * output_width + out_w] = 0;
                 for(uint16_t in_d = 0; in_d < input_depth; in_d++){
-                 for(uint16_t k_h = 0; k_h < kernel_height; k_h++){
-_ssdm_Unroll(0,0,0, "");
- for(uint16_t k_w = 0; k_w < kernel_width; k_w++){
-_ssdm_Unroll(0,0,0, "");
- output[out_d * output_height * output_width + out_h * output_width + out_w] +=
+                    for(uint16_t k_h = 0; k_h < kernel_height; k_h++){
+                        for(uint16_t k_w = 0; k_w < kernel_width; k_w++){
+                            output[out_d * output_height * output_width + out_h * output_width + out_w] +=
                                 (int16_t)(((int32_t)(input[in_d * input_height * input_width + (out_h + k_h) * input_width + (out_w + k_w)]) *
                                             (int32_t)(kernel[(out_d * input_depth * kernel_height * kernel_width) + (in_d * kernel_height * kernel_width) + (k_h * kernel_width) + k_w]))>> fractal_width);
                         }
@@ -414,7 +412,7 @@ uint16_t output_depth, uint16_t output_height, uint16_t output_width, float* out
 const float* bias,
 uint16_t kernel_height, uint16_t kernel_width, const float* kernel,
 uint8_t relu){
-# 64 "layers_c/conv2d.cpp"
+# 62 "layers_c/conv2d.cpp"
     for(uint16_t out_d = 0; out_d < output_depth; out_d++){
         for(uint16_t out_h = 0; out_h < output_height; out_h++){
             for(uint16_t out_w = 0; out_w < output_width; out_w++){

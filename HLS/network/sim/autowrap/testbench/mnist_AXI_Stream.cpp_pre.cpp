@@ -75486,6 +75486,17 @@ uint8_t padding2d_float32(uint16_t padding_height, uint16_t padding_width,
 uint16_t input_depth, uint16_t input_height, uint16_t input_width, float* input,
 uint16_t output_height, uint16_t output_width, float* output);
 # 2 "/home/masudalab/DeepCAEonFPGA/./layers_c/layers.h" 2
+# 1 "/home/masudalab/DeepCAEonFPGA/./layers_c/padding2d_old.h" 1
+
+
+uint8_t padding2d_fix16_old(uint16_t padding_height, uint16_t padding_width,
+uint16_t input_depth, uint16_t input_height, uint16_t input_width, int16_t* input,
+uint16_t output_height, uint16_t output_width, int16_t* output);
+
+uint8_t padding2d_float32_old(uint16_t padding_height, uint16_t padding_width,
+uint16_t input_depth, uint16_t input_height, uint16_t input_width, float* input,
+uint16_t output_height, uint16_t output_width, float* output);
+# 3 "/home/masudalab/DeepCAEonFPGA/./layers_c/layers.h" 2
 # 1 "/home/masudalab/DeepCAEonFPGA/./layers_c/up_sampling2d.h" 1
 
 uint8_t up_sampling2d_fix16(uint16_t kernel_size,
@@ -75495,7 +75506,7 @@ uint16_t output_depth, uint16_t output_height, uint16_t output_width, int16_t* o
 uint8_t up_sampling2d_float32(uint16_t kernel_size,
 uint16_t input_depth, uint16_t input_height, uint16_t input_width, float* input,
 uint16_t output_depth, uint16_t output_height, uint16_t output_width, float* output);
-# 3 "/home/masudalab/DeepCAEonFPGA/./layers_c/layers.h" 2
+# 4 "/home/masudalab/DeepCAEonFPGA/./layers_c/layers.h" 2
 # 1 "/home/masudalab/DeepCAEonFPGA/./layers_c/max_pooling2d.h" 1
 
 
@@ -75510,7 +75521,7 @@ uint16_t output_depth, uint16_t output_height, uint16_t output_width, int16_t* o
 uint8_t max_pooling2d_float32(uint16_t kernel_size,
 uint16_t input_depth, uint16_t input_height, uint16_t input_width, float* input,
 uint16_t output_depth, uint16_t output_height, uint16_t output_width, float* output);
-# 4 "/home/masudalab/DeepCAEonFPGA/./layers_c/layers.h" 2
+# 5 "/home/masudalab/DeepCAEonFPGA/./layers_c/layers.h" 2
 # 1 "/home/masudalab/DeepCAEonFPGA/./layers_c/conv2d.h" 1
 
 uint8_t conv2d_fix16(uint16_t input_depth, uint16_t input_height, uint16_t input_width, int16_t* input,
@@ -75524,7 +75535,7 @@ uint16_t output_depth, uint16_t output_height, uint16_t output_width, float* out
 const float* bias,
 uint16_t kernel_height, uint16_t kernel_width, const float* kernel,
 uint8_t relu);
-# 5 "/home/masudalab/DeepCAEonFPGA/./layers_c/layers.h" 2
+# 6 "/home/masudalab/DeepCAEonFPGA/./layers_c/layers.h" 2
 # 1 "/home/masudalab/DeepCAEonFPGA/./layers_c/depthwise_conv2d.h" 1
 
 
@@ -75539,7 +75550,7 @@ uint16_t output_depth, uint16_t output_height, uint16_t output_width, float* out
 const float* bias,
 uint16_t kernel_height, uint16_t kernel_width, const float* kernel,
 uint8_t relu);
-# 6 "/home/masudalab/DeepCAEonFPGA/./layers_c/layers.h" 2
+# 7 "/home/masudalab/DeepCAEonFPGA/./layers_c/layers.h" 2
 # 1 "/home/masudalab/DeepCAEonFPGA/./layers_c/pointwise_conv2d.h" 1
 
 uint8_t pointwise_conv2d_fix16(uint16_t input_depth, uint16_t input_height, uint16_t input_width, int16_t* input,
@@ -75553,7 +75564,7 @@ uint16_t output_depth, uint16_t output_height, uint16_t output_width, float* out
 const float* bias,
 uint16_t kernel_height, uint16_t kernel_width, const float* kernel,
 uint8_t relu);
-# 7 "/home/masudalab/DeepCAEonFPGA/./layers_c/layers.h" 2
+# 8 "/home/masudalab/DeepCAEonFPGA/./layers_c/layers.h" 2
 # 1 "/home/masudalab/DeepCAEonFPGA/./layers_c/separable_conv2d.h" 1
 
 
@@ -75568,7 +75579,7 @@ uint16_t output_depth, uint16_t output_height, uint16_t output_width, float* out
 const float* bias_d, const float* bias_p,
 uint16_t kernel_d_height, uint16_t kernel_d_width, const float* kernel_d, const float* kernel_p,
 uint8_t relu);
-# 7 "/home/masudalab/DeepCAEonFPGA/./layers_c/layers.h" 2
+# 8 "/home/masudalab/DeepCAEonFPGA/./layers_c/layers.h" 2
 # 13 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp" 2
 # 1 "/home/masudalab/DeepCAEonFPGA/./arrays_c/arrays_fix16.h" 1
 
@@ -76637,71 +76648,107 @@ const int16_t SeparableConv2D_4_b_p[1] = {-10739};
 using namespace std;
 
 void network(axis &input_data, axis &output_data) {
+#pragma HLS INTERFACE axis register both port=input_data
+#pragma HLS INTERFACE axis register both port=output_data
 #pragma HLS INTERFACE s_axilite register port=return
-#pragma HLS INTERFACE axis register port=input_data
-#pragma HLS INTERFACE axis register port=output_data
 
  uint16_t input_0_depth = 1, input_0_height = 28, input_0_width = 28;
  int16_t input_0_array[1][28][28];
 
  ap_axis<16, 1, 1, 1> tmp;
- ap_axis<16, 1, 1, 1> out[1][30][30];
+ ap_axis<16, 1, 1, 1> out;
+
+
 
  for (int depth = 0; depth < input_0_depth; depth++) {
   for (int height = 0; height < input_0_height; height++) {
    for (int width = 0; width < input_0_width; width++) {
     tmp = input_data.read();
     input_0_array[depth][height][width] = (int16_t) tmp.data;
-    out[depth][height][width].dest = tmp.dest;
-    out[depth][height][width].id = tmp.id;
-    out[depth][height][width].keep = tmp.keep;
-    out[depth][height][width].strb = tmp.strb;
+
+
+
+
    }
   }
  }
 
- padding2d_fix16(1, 1, input_0_depth, input_0_height, input_0_width,
-   (int16_t*) input_0_array, Padding2D_0_height, Padding2D_0_width,
-   (int16_t*) Padding2D_0_array);
+ padding2d_fix16(1, 1,
+ input_0_depth, input_0_height, input_0_width, (int16_t*) input_0_array,
+ Padding2D_0_height, Padding2D_0_width, (int16_t*) Padding2D_0_array);
 
- separable_conv2d_fix16(Padding2D_0_depth, Padding2D_0_height,
-   Padding2D_0_width, (int16_t*) Padding2D_0_array,
-   SeparableConv2D_0_depth, SeparableConv2D_0_height,
-   SeparableConv2D_0_width, (int16_t*) SeparableConv2D_0_array,
-   (int16_t*) SeparableConv2D_0_m_array,
-   (int16_t*) SeparableConv2D_0_b_d, (int16_t*) SeparableConv2D_0_b_p,
-   3, 3, (int16_t*) SeparableConv2D_0_w_d,
-   (int16_t*) SeparableConv2D_0_w_p, 1,
-   14);
-# 163 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
- for (int depth = 0; depth < Padding2D_0_depth; depth++) {
-  for (int height = 0; height < Padding2D_0_height; height++) {
-   for (int width = 0; width < Padding2D_0_width; width++) {
+ separable_conv2d_fix16(Padding2D_0_depth, Padding2D_0_height, Padding2D_0_width, (int16_t*) Padding2D_0_array,
+ SeparableConv2D_0_depth, SeparableConv2D_0_height, SeparableConv2D_0_width, (int16_t*) SeparableConv2D_0_array, (int16_t*) SeparableConv2D_0_m_array,
+ (int16_t*) SeparableConv2D_0_b_d, (int16_t*) SeparableConv2D_0_b_p,
+ 3, 3, (int16_t*) SeparableConv2D_0_w_d, (int16_t*) SeparableConv2D_0_w_p, 1, 14);
 
+ max_pooling2d_fix16(2,
+ SeparableConv2D_0_depth, SeparableConv2D_0_height, SeparableConv2D_0_width, (int16_t*) SeparableConv2D_0_array,
+ MaxPooling2D_0_depth, MaxPooling2D_0_height, MaxPooling2D_0_width, (int16_t*) MaxPooling2D_0_array);
 
+ padding2d_fix16(1, 1,
+ MaxPooling2D_0_depth, MaxPooling2D_0_height, MaxPooling2D_0_width, (int16_t*) MaxPooling2D_0_array,
+ Padding2D_1_height, Padding2D_1_width, (int16_t*) Padding2D_1_array);
 
+ separable_conv2d_fix16(Padding2D_1_depth, Padding2D_1_height, Padding2D_1_width, (int16_t*) Padding2D_1_array,
+ SeparableConv2D_1_depth, SeparableConv2D_1_height, SeparableConv2D_1_width, (int16_t*) SeparableConv2D_1_array, (int16_t*) SeparableConv2D_1_m_array,
+ (int16_t*) SeparableConv2D_1_b_d, (int16_t*) SeparableConv2D_1_b_p,
+ 3, 3, (int16_t*) SeparableConv2D_1_w_d, (int16_t*) SeparableConv2D_1_w_p, 1, 14);
 
+ max_pooling2d_fix16(2,
+ SeparableConv2D_1_depth, SeparableConv2D_1_height, SeparableConv2D_1_width, (int16_t*) SeparableConv2D_1_array,
+ MaxPooling2D_1_depth, MaxPooling2D_1_height, MaxPooling2D_1_width, (int16_t*) MaxPooling2D_1_array);
 
+ padding2d_fix16(1, 1,
+ MaxPooling2D_1_depth, MaxPooling2D_1_height, MaxPooling2D_1_width, (int16_t*) MaxPooling2D_1_array,
+ Padding2D_2_height, Padding2D_2_width, (int16_t*) Padding2D_2_array);
 
-    out[depth][height][width].data =
-      (int16_t) Padding2D_0_array[depth][height][width];
+ separable_conv2d_fix16(Padding2D_2_depth, Padding2D_2_height, Padding2D_2_width, (int16_t*) Padding2D_2_array,
+ SeparableConv2D_2_depth, SeparableConv2D_2_height, SeparableConv2D_2_width, (int16_t*) SeparableConv2D_2_array, (int16_t*) SeparableConv2D_2_m_array,
+ (int16_t*) SeparableConv2D_2_b_d, (int16_t*) SeparableConv2D_2_b_p,
+ 3, 3, (int16_t*) SeparableConv2D_2_w_d, (int16_t*) SeparableConv2D_2_w_p, 1, 14);
 
-    if (depth == 0 && height == 0 && width == 0) {
-     out[depth][height][width].user = 1;
-    } else {
-     out[depth][height][width].user = 0;
+ up_sampling2d_fix16(2,
+ SeparableConv2D_2_depth, SeparableConv2D_2_height, SeparableConv2D_2_width, (int16_t*) SeparableConv2D_2_array,
+ UpSampling2D_0_depth, UpSampling2D_0_height, UpSampling2D_0_width, (int16_t*) UpSampling2D_0_array);
+
+ padding2d_fix16(1, 1,
+ UpSampling2D_0_depth, UpSampling2D_0_height, UpSampling2D_0_width, (int16_t*) UpSampling2D_0_array,
+ Padding2D_3_height, Padding2D_3_width, (int16_t*) Padding2D_3_array);
+
+ separable_conv2d_fix16(Padding2D_3_depth, Padding2D_3_height, Padding2D_3_width, (int16_t*) Padding2D_3_array,
+ SeparableConv2D_3_depth, SeparableConv2D_3_height, SeparableConv2D_3_width, (int16_t*) SeparableConv2D_3_array, (int16_t*) SeparableConv2D_3_m_array,
+ (int16_t*) SeparableConv2D_3_b_d, (int16_t*) SeparableConv2D_3_b_p,
+ 3, 3, (int16_t*) SeparableConv2D_3_w_d, (int16_t*) SeparableConv2D_3_w_p, 1, 14);
+
+ up_sampling2d_fix16(2,
+ SeparableConv2D_3_depth, SeparableConv2D_3_height, SeparableConv2D_3_width, (int16_t*) SeparableConv2D_3_array,
+ UpSampling2D_1_depth, UpSampling2D_1_height, UpSampling2D_1_width, (int16_t*) UpSampling2D_1_array);
+
+ padding2d_fix16(1, 1,
+ UpSampling2D_1_depth, UpSampling2D_1_height, UpSampling2D_1_width, (int16_t*) UpSampling2D_1_array,
+ Padding2D_4_height, Padding2D_4_width, (int16_t*) Padding2D_4_array);
+
+ separable_conv2d_fix16(Padding2D_4_depth, Padding2D_4_height, Padding2D_4_width, (int16_t*) Padding2D_4_array,
+ SeparableConv2D_4_depth, SeparableConv2D_4_height, SeparableConv2D_4_width, (int16_t*) SeparableConv2D_4_array, (int16_t*) SeparableConv2D_4_m_array,
+ (int16_t*) SeparableConv2D_4_b_d, (int16_t*) SeparableConv2D_4_b_p,
+ 3, 3, (int16_t*) SeparableConv2D_4_w_d, (int16_t*) SeparableConv2D_4_w_p, 1, 14);
+# 147 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
+ int i = 0;
+ for (int depth = 0; depth < SeparableConv2D_4_depth; depth++) {
+  for (int height = 0; height < SeparableConv2D_4_height; height++) {
+   for (int width = 0; width < SeparableConv2D_4_width; width++) {
+    out.user = 0;
+    out.last = 0;
+    if(i == 0){
+     out.user = 1;
     }
-
-    if ((depth == Padding2D_0_depth - 1)
-      && (height == Padding2D_0_height - 1)
-      && (width == Padding2D_0_width - 1)) {
-
-     out[depth][height][width].last = 1;
-    } else {
-     out[depth][height][width].last = 0;
+    if(i == SeparableConv2D_4_depth * SeparableConv2D_4_height * SeparableConv2D_4_width - 1){
+     out.last = 1;
     }
-
-    output_data.write(out[depth][height][width]);
+    out.data = SeparableConv2D_4_array[depth][height][width];
+    output_data.write(out);
+    i += 1;
    }
   }
  }

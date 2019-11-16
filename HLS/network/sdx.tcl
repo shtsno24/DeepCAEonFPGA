@@ -1,11 +1,11 @@
 # ==============================================================
-# File generated on Fri Nov 15 14:34:41 JST 2019
+# File generated on Sat Nov 16 20:53:59 JST 2019
 # Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
 # Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 # ==============================================================
-add_files -tb ../../mnist_AXI_Stream_tb.cpp -cflags { -std=c++14 -O3 -Wno-unknown-pragmas}
+add_files -tb ../../mnist_AXI_Stream_tb.cpp -cflags { -std=c++14 -Wno-unknown-pragmas}
 add_files -tb ../../layers_cpp/array_printf_float32.h -cflags { -std=c++14 -Wno-unknown-pragmas}
 add_files -tb ../../layers_cpp/array_printf_float32.cpp -cflags { -std=c++14 -Wno-unknown-pragmas}
 add_files -tb ../../layers_cpp/array_printf_fix16.h -cflags { -std=c++14 -Wno-unknown-pragmas}
@@ -58,6 +58,10 @@ config_compile -no_signed_zeros=0
 config_compile -unsafe_math_optimizations=0
 config_export -format=ip_catalog
 config_export -rtl=verilog
+config_export -use_netlist=none
+config_export -vivado_impl_strategy=default
 config_export -vivado_phys_opt=place
 config_export -vivado_report_level=0
+config_export -vivado_synth_design_args {-directive sdx_optimization_effort_high}
+config_export -vivado_synth_strategy=default
 set_directive_unroll conv2d_fix16/conv2d_fix16_label3 

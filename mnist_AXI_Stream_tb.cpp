@@ -22,8 +22,8 @@ using namespace std;
 
 int main(void){
 
-    hls::stream< ap_axis<16, 1, 1, 1> > input_buffer;
-    hls::stream< ap_axis<16, 1, 1, 1> > output_buffer;
+	axis input_buffer;
+	axis output_buffer;
     int16_t output_img_buff[1 * 28 * 28];
 	vector< vector< int16_t> > output_img(28, vector< int16_t>(28, 0));
 	vector< vector< int16_t> > input_img(28, vector< int16_t>(28, 0));
@@ -65,7 +65,7 @@ int main(void){
 				} else {
 					tmp.last = 0;
 				}
-				cout << "count " << i << ", last " << tmp.last << ", data " << tmp.data <<"\r\n";
+//				cout << "count " << i << ", last " << tmp.last << ", data " << tmp.data <<"\r\n";
 				input_buffer << tmp;
 				i += 1;
 			}
