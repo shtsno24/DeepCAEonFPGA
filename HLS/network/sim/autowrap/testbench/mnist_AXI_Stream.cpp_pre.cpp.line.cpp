@@ -1,9 +1,9 @@
-#pragma line 1 "/home/shts/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
-#pragma line 1 "<組み込み>"
-#pragma line 1 "<コマンドライン>"
+#pragma line 1 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
+#pragma line 1 "<built-in>"
+#pragma line 1 "<command-line>"
 #pragma line 1 "/usr/include/stdc-predef.h" 1 3 4
-#pragma line 1 "<コマンドライン>" 2
-#pragma line 1 "/home/shts/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
+#pragma line 1 "<command-line>" 2
+#pragma line 1 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
 #pragma empty_line
 #pragma empty_line
 #pragma empty_line
@@ -3758,7 +3758,7 @@ enum
   GMP_ERROR_SQRT_OF_NEGATIVE = 4,
   GMP_ERROR_INVALID_ARGUMENT = 8
 };
-#pragma line 7 "/home/shts/DeepCAEonFPGA/mnist_AXI_Stream.cpp" 2
+#pragma line 7 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp" 2
 #pragma line 1 "/tools/Xilinx/Vivado/2018.3/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/iomanip" 1 3
 #pragma line 36 "/tools/Xilinx/Vivado/2018.3/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/iomanip" 3
 #pragma empty_line
@@ -36859,10 +36859,10 @@ namespace std __attribute__ ((__visibility__ ("default")))
 #pragma empty_line
 #pragma empty_line
 }
-#pragma line 8 "/home/shts/DeepCAEonFPGA/mnist_AXI_Stream.cpp" 2
+#pragma line 8 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp" 2
 #pragma empty_line
 #pragma empty_line
-#pragma line 1 "/home/shts/DeepCAEonFPGA/mnist_AXI_Stream.h" 1
+#pragma line 1 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.h" 1
 #pragma empty_line
 #pragma empty_line
 #pragma empty_line
@@ -44835,7 +44835,7 @@ class stream
 };
 #pragma empty_line
 }
-#pragma line 8 "/home/shts/DeepCAEonFPGA/mnist_AXI_Stream.h" 2
+#pragma line 8 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.h" 2
 #pragma line 1 "/tools/Xilinx/Vivado/2018.3/include/ap_int.h" 1
 #pragma line 54 "/tools/Xilinx/Vivado/2018.3/include/ap_int.h"
 #pragma line 1 "/tools/Xilinx/Vivado/2018.3/include/ap_common.h" 1
@@ -75395,7 +75395,7 @@ inline bool operator!=(
 }
 #pragma line 381 "/tools/Xilinx/Vivado/2018.3/include/ap_fixed.h" 2
 #pragma line 350 "/tools/Xilinx/Vivado/2018.3/include/ap_int.h" 2
-#pragma line 9 "/home/shts/DeepCAEonFPGA/mnist_AXI_Stream.h" 2
+#pragma line 9 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.h" 2
 #pragma line 1 "/tools/Xilinx/Vivado/2018.3/include/ap_axi_sdata.h" 1
 #pragma line 86 "/tools/Xilinx/Vivado/2018.3/include/ap_axi_sdata.h"
 #pragma line 1 "/tools/Xilinx/Vivado/2018.3/include/ap_int.h" 1
@@ -75464,7 +75464,7 @@ template<int D>
     qdma_axis(ap_uint<D> d = ap_uint<D>(), ap_uint<(D+7)/8> k = ap_uint<(D+7)/8>(), ap_uint<1> l = ap_uint<1>()) : data(d), keep(k), last(l) {}
     qdma_axis(const qdma_axis<D, 0, 0, 0> &d) : data(d.data), keep(d.keep), last(d.last) {}
   };
-#pragma line 10 "/home/shts/DeepCAEonFPGA/mnist_AXI_Stream.h" 2
+#pragma line 10 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.h" 2
 #pragma empty_line
 #pragma empty_line
 using namespace std;
@@ -75472,10 +75472,10 @@ using namespace std;
 typedef hls::stream< ap_axis<16, 1, 1, 1> > axis;
 #pragma empty_line
 void network(axis &input_data, axis &output_data);
-#pragma line 11 "/home/shts/DeepCAEonFPGA/mnist_AXI_Stream.cpp" 2
+#pragma line 11 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp" 2
 #pragma empty_line
-#pragma line 1 "/home/shts/DeepCAEonFPGA/./layers_c/layers.h" 1
-#pragma line 1 "/home/shts/DeepCAEonFPGA/./layers_c/padding2d.h" 1
+#pragma line 1 "/home/masudalab/DeepCAEonFPGA/./layers_c/layers.h" 1
+#pragma line 1 "/home/masudalab/DeepCAEonFPGA/./layers_c/padding2d.h" 1
 #pragma empty_line
 #pragma empty_line
 uint8_t padding2d_fix16(uint16_t padding_height, uint16_t padding_width,
@@ -75485,8 +75485,8 @@ uint16_t output_height, uint16_t output_width, int16_t* output);
 uint8_t padding2d_float32(uint16_t padding_height, uint16_t padding_width,
 uint16_t input_depth, uint16_t input_height, uint16_t input_width, float* input,
 uint16_t output_height, uint16_t output_width, float* output);
-#pragma line 2 "/home/shts/DeepCAEonFPGA/./layers_c/layers.h" 2
-#pragma line 1 "/home/shts/DeepCAEonFPGA/./layers_c/padding2d_old.h" 1
+#pragma line 2 "/home/masudalab/DeepCAEonFPGA/./layers_c/layers.h" 2
+#pragma line 1 "/home/masudalab/DeepCAEonFPGA/./layers_c/padding2d_old.h" 1
 #pragma empty_line
 #pragma empty_line
 uint8_t padding2d_fix16_old(uint16_t padding_height, uint16_t padding_width,
@@ -75496,8 +75496,8 @@ uint16_t output_height, uint16_t output_width, int16_t* output);
 uint8_t padding2d_float32_old(uint16_t padding_height, uint16_t padding_width,
 uint16_t input_depth, uint16_t input_height, uint16_t input_width, float* input,
 uint16_t output_height, uint16_t output_width, float* output);
-#pragma line 3 "/home/shts/DeepCAEonFPGA/./layers_c/layers.h" 2
-#pragma line 1 "/home/shts/DeepCAEonFPGA/./layers_c/up_sampling2d.h" 1
+#pragma line 3 "/home/masudalab/DeepCAEonFPGA/./layers_c/layers.h" 2
+#pragma line 1 "/home/masudalab/DeepCAEonFPGA/./layers_c/up_sampling2d.h" 1
 #pragma empty_line
 uint8_t up_sampling2d_fix16(uint16_t kernel_size,
 uint16_t input_depth, uint16_t input_height, uint16_t input_width, int16_t* input,
@@ -75506,8 +75506,8 @@ uint16_t output_depth, uint16_t output_height, uint16_t output_width, int16_t* o
 uint8_t up_sampling2d_float32(uint16_t kernel_size,
 uint16_t input_depth, uint16_t input_height, uint16_t input_width, float* input,
 uint16_t output_depth, uint16_t output_height, uint16_t output_width, float* output);
-#pragma line 4 "/home/shts/DeepCAEonFPGA/./layers_c/layers.h" 2
-#pragma line 1 "/home/shts/DeepCAEonFPGA/./layers_c/max_pooling2d.h" 1
+#pragma line 4 "/home/masudalab/DeepCAEonFPGA/./layers_c/layers.h" 2
+#pragma line 1 "/home/masudalab/DeepCAEonFPGA/./layers_c/max_pooling2d.h" 1
 #pragma empty_line
 #pragma empty_line
 #pragma empty_line
@@ -75521,8 +75521,8 @@ uint16_t output_depth, uint16_t output_height, uint16_t output_width, int16_t* o
 uint8_t max_pooling2d_float32(uint16_t kernel_size,
 uint16_t input_depth, uint16_t input_height, uint16_t input_width, float* input,
 uint16_t output_depth, uint16_t output_height, uint16_t output_width, float* output);
-#pragma line 5 "/home/shts/DeepCAEonFPGA/./layers_c/layers.h" 2
-#pragma line 1 "/home/shts/DeepCAEonFPGA/./layers_c/conv2d.h" 1
+#pragma line 5 "/home/masudalab/DeepCAEonFPGA/./layers_c/layers.h" 2
+#pragma line 1 "/home/masudalab/DeepCAEonFPGA/./layers_c/conv2d.h" 1
 #pragma empty_line
 uint8_t conv2d_fix16(uint16_t input_depth, uint16_t input_height, uint16_t input_width, int16_t* input,
 uint16_t output_depth, uint16_t output_height, uint16_t output_width, int16_t* output,
@@ -75535,8 +75535,8 @@ uint16_t output_depth, uint16_t output_height, uint16_t output_width, float* out
 const float* bias,
 uint16_t kernel_height, uint16_t kernel_width, const float* kernel,
 uint8_t relu);
-#pragma line 6 "/home/shts/DeepCAEonFPGA/./layers_c/layers.h" 2
-#pragma line 1 "/home/shts/DeepCAEonFPGA/./layers_c/depthwise_conv2d.h" 1
+#pragma line 6 "/home/masudalab/DeepCAEonFPGA/./layers_c/layers.h" 2
+#pragma line 1 "/home/masudalab/DeepCAEonFPGA/./layers_c/depthwise_conv2d.h" 1
 #pragma empty_line
 #pragma empty_line
 uint8_t depthwise_conv2d_fix16(uint16_t input_depth, uint16_t input_height, uint16_t input_width, int16_t* input,
@@ -75550,8 +75550,8 @@ uint16_t output_depth, uint16_t output_height, uint16_t output_width, float* out
 const float* bias,
 uint16_t kernel_height, uint16_t kernel_width, const float* kernel,
 uint8_t relu);
-#pragma line 7 "/home/shts/DeepCAEonFPGA/./layers_c/layers.h" 2
-#pragma line 1 "/home/shts/DeepCAEonFPGA/./layers_c/pointwise_conv2d.h" 1
+#pragma line 7 "/home/masudalab/DeepCAEonFPGA/./layers_c/layers.h" 2
+#pragma line 1 "/home/masudalab/DeepCAEonFPGA/./layers_c/pointwise_conv2d.h" 1
 #pragma empty_line
 uint8_t pointwise_conv2d_fix16(uint16_t input_depth, uint16_t input_height, uint16_t input_width, int16_t* input,
 uint16_t output_depth, uint16_t output_height, uint16_t output_width, int16_t* output,
@@ -75564,8 +75564,8 @@ uint16_t output_depth, uint16_t output_height, uint16_t output_width, float* out
 const float* bias,
 uint16_t kernel_height, uint16_t kernel_width, const float* kernel,
 uint8_t relu);
-#pragma line 8 "/home/shts/DeepCAEonFPGA/./layers_c/layers.h" 2
-#pragma line 1 "/home/shts/DeepCAEonFPGA/./layers_c/separable_conv2d.h" 1
+#pragma line 8 "/home/masudalab/DeepCAEonFPGA/./layers_c/layers.h" 2
+#pragma line 1 "/home/masudalab/DeepCAEonFPGA/./layers_c/separable_conv2d.h" 1
 #pragma empty_line
 #pragma empty_line
 uint8_t separable_conv2d_fix16(uint16_t input_depth, uint16_t input_height, uint16_t input_width, int16_t* input,
@@ -75579,9 +75579,9 @@ uint16_t output_depth, uint16_t output_height, uint16_t output_width, float* out
 const float* bias_d, const float* bias_p,
 uint16_t kernel_d_height, uint16_t kernel_d_width, const float* kernel_d, const float* kernel_p,
 uint8_t relu);
-#pragma line 8 "/home/shts/DeepCAEonFPGA/./layers_c/layers.h" 2
-#pragma line 13 "/home/shts/DeepCAEonFPGA/mnist_AXI_Stream.cpp" 2
-#pragma line 1 "/home/shts/DeepCAEonFPGA/./arrays_c/arrays_fix16.h" 1
+#pragma line 8 "/home/masudalab/DeepCAEonFPGA/./layers_c/layers.h" 2
+#pragma line 13 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp" 2
+#pragma line 1 "/home/masudalab/DeepCAEonFPGA/./arrays_c/arrays_fix16.h" 1
 #pragma empty_line
 #pragma empty_line
 #pragma empty_line
@@ -75646,15 +75646,15 @@ int16_t SeparableConv2D_4_m_array[16][28][28];
 #pragma empty_line
 uint16_t SeparableConv2D_4_depth = 1, SeparableConv2D_4_height = 28, SeparableConv2D_4_width = 28;
 int16_t SeparableConv2D_4_array[1][28][28];
-#pragma line 14 "/home/shts/DeepCAEonFPGA/mnist_AXI_Stream.cpp" 2
-#pragma line 1 "/home/shts/DeepCAEonFPGA/./weights_c/weights_fix16.h" 1
+#pragma line 14 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp" 2
+#pragma line 1 "/home/masudalab/DeepCAEonFPGA/./weights_c/weights_fix16.h" 1
 #pragma empty_line
 #pragma empty_line
 #pragma empty_line
 #pragma empty_line
 #pragma empty_line
-#pragma line 1 "/home/shts/DeepCAEonFPGA/./weights_c/SeparableConv2D_0_fix16.h" 1
-#pragma line 9 "/home/shts/DeepCAEonFPGA/./weights_c/SeparableConv2D_0_fix16.h"
+#pragma line 1 "/home/masudalab/DeepCAEonFPGA/./weights_c/SeparableConv2D_0_fix16.h" 1
+#pragma line 9 "/home/masudalab/DeepCAEonFPGA/./weights_c/SeparableConv2D_0_fix16.h"
 #pragma empty_line
 #pragma empty_line
 #pragma empty_line
@@ -75705,9 +75705,9 @@ const uint16_t shape_SeparableConv2D_0_b_d = 1;
 const int16_t SeparableConv2D_0_b_d[1] = { 0};
 const uint16_t shape_SeparableConv2D_0_b_p = 16;
 const int16_t SeparableConv2D_0_b_p[16] = { 1542, -1048, -333, 783, -788, -804, 758, -342, 1083, 2512, 441, 0, -963, 103, -697, -852};
-#pragma line 7 "/home/shts/DeepCAEonFPGA/./weights_c/weights_fix16.h" 2
-#pragma line 1 "/home/shts/DeepCAEonFPGA/./weights_c/SeparableConv2D_1_fix16.h" 1
-#pragma line 9 "/home/shts/DeepCAEonFPGA/./weights_c/SeparableConv2D_1_fix16.h"
+#pragma line 7 "/home/masudalab/DeepCAEonFPGA/./weights_c/weights_fix16.h" 2
+#pragma line 1 "/home/masudalab/DeepCAEonFPGA/./weights_c/SeparableConv2D_1_fix16.h" 1
+#pragma line 9 "/home/masudalab/DeepCAEonFPGA/./weights_c/SeparableConv2D_1_fix16.h"
 #pragma empty_line
 #pragma empty_line
 #pragma empty_line
@@ -76042,9 +76042,9 @@ const uint16_t shape_SeparableConv2D_1_b_d = 16;
 const int16_t SeparableConv2D_1_b_d[16] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 const uint16_t shape_SeparableConv2D_1_b_p = 8;
 const int16_t SeparableConv2D_1_b_p[8] = { 572, -2396, -1717, 2581, 2268, 1069, -1339, -998};
-#pragma line 8 "/home/shts/DeepCAEonFPGA/./weights_c/weights_fix16.h" 2
-#pragma line 1 "/home/shts/DeepCAEonFPGA/./weights_c/SeparableConv2D_2_fix16.h" 1
-#pragma line 9 "/home/shts/DeepCAEonFPGA/./weights_c/SeparableConv2D_2_fix16.h"
+#pragma line 8 "/home/masudalab/DeepCAEonFPGA/./weights_c/weights_fix16.h" 2
+#pragma line 1 "/home/masudalab/DeepCAEonFPGA/./weights_c/SeparableConv2D_2_fix16.h" 1
+#pragma line 9 "/home/masudalab/DeepCAEonFPGA/./weights_c/SeparableConv2D_2_fix16.h"
 #pragma empty_line
 #pragma empty_line
 #pragma empty_line
@@ -76219,9 +76219,9 @@ const uint16_t shape_SeparableConv2D_2_b_d = 8;
 const int16_t SeparableConv2D_2_b_d[8] = { 0, 0, 0, 0, 0, 0, 0, 0};
 const uint16_t shape_SeparableConv2D_2_b_p = 8;
 const int16_t SeparableConv2D_2_b_p[8] = { 414, 4, 42, -3159, 11, 159, 2276, -1477};
-#pragma line 9 "/home/shts/DeepCAEonFPGA/./weights_c/weights_fix16.h" 2
-#pragma line 1 "/home/shts/DeepCAEonFPGA/./weights_c/SeparableConv2D_3_fix16.h" 1
-#pragma line 9 "/home/shts/DeepCAEonFPGA/./weights_c/SeparableConv2D_3_fix16.h"
+#pragma line 9 "/home/masudalab/DeepCAEonFPGA/./weights_c/weights_fix16.h" 2
+#pragma line 1 "/home/masudalab/DeepCAEonFPGA/./weights_c/SeparableConv2D_3_fix16.h" 1
+#pragma line 9 "/home/masudalab/DeepCAEonFPGA/./weights_c/SeparableConv2D_3_fix16.h"
 #pragma empty_line
 #pragma empty_line
 #pragma empty_line
@@ -76524,9 +76524,9 @@ const uint16_t shape_SeparableConv2D_3_b_d = 8;
 const int16_t SeparableConv2D_3_b_d[8] = { 0, 0, 0, 0, 0, 0, 0, 0};
 const uint16_t shape_SeparableConv2D_3_b_p = 16;
 const int16_t SeparableConv2D_3_b_p[16] = { 14, -3325, 262, 1, -56, 0, -5, 402, -323, -3385, 4336, 0, -4652, 59, 76, -1950};
-#pragma line 10 "/home/shts/DeepCAEonFPGA/./weights_c/weights_fix16.h" 2
-#pragma line 1 "/home/shts/DeepCAEonFPGA/./weights_c/SeparableConv2D_4_fix16.h" 1
-#pragma line 9 "/home/shts/DeepCAEonFPGA/./weights_c/SeparableConv2D_4_fix16.h"
+#pragma line 10 "/home/masudalab/DeepCAEonFPGA/./weights_c/weights_fix16.h" 2
+#pragma line 1 "/home/masudalab/DeepCAEonFPGA/./weights_c/SeparableConv2D_4_fix16.h" 1
+#pragma line 9 "/home/masudalab/DeepCAEonFPGA/./weights_c/SeparableConv2D_4_fix16.h"
 #pragma empty_line
 #pragma empty_line
 #pragma empty_line
@@ -76637,12 +76637,12 @@ const uint16_t shape_SeparableConv2D_4_b_d = 16;
 const int16_t SeparableConv2D_4_b_d[16] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 const uint16_t shape_SeparableConv2D_4_b_p = 1;
 const int16_t SeparableConv2D_4_b_p[1] = {-10739};
-#pragma line 11 "/home/shts/DeepCAEonFPGA/./weights_c/weights_fix16.h" 2
-#pragma line 15 "/home/shts/DeepCAEonFPGA/mnist_AXI_Stream.cpp" 2
+#pragma line 11 "/home/masudalab/DeepCAEonFPGA/./weights_c/weights_fix16.h" 2
+#pragma line 15 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp" 2
 #pragma empty_line
 #pragma empty_line
 #pragma line 1 "/tools/Xilinx/Vivado/2018.3/include/ap_int.h" 1
-#pragma line 18 "/home/shts/DeepCAEonFPGA/mnist_AXI_Stream.cpp" 2
+#pragma line 18 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp" 2
 #pragma empty_line
 #pragma empty_line
 using namespace std;
@@ -76654,6 +76654,9 @@ void network(axis &input_data, axis &output_data) {
 #pragma empty_line
  uint16_t input_0_depth = 1, input_0_height = 28, input_0_width = 28;
  int16_t input_0_array[1 * 28 * 28];
+#pragma empty_line
+ int16_t* array_head = (int16_t*)Padding2D_0_array;
+ uint64_t array_length = (uint64_t)Padding2D_0_depth * (uint64_t)Padding2D_0_height * (uint64_t)Padding2D_0_width;
 #pragma empty_line
  ap_axis<16, 1, 1, 1> tmp;
  ap_axis<16, 1, 1, 1> out;
@@ -76667,26 +76670,28 @@ void network(axis &input_data, axis &output_data) {
  padding2d_fix16(1, 1,
  input_0_depth, input_0_height, input_0_width, (int16_t*) input_0_array,
  Padding2D_0_height, Padding2D_0_width, (int16_t*) Padding2D_0_array);
-#pragma line 124 "/home/shts/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
- int16_t* array_head = (int16_t*)Padding2D_0_array;
- for(int i = 0; i < Padding2D_0_depth * Padding2D_0_height * Padding2D_0_width; i++){
+#pragma empty_line
+ separable_conv2d_fix16(Padding2D_0_depth, Padding2D_0_height, Padding2D_0_width, (int16_t*) Padding2D_0_array,
+ SeparableConv2D_0_depth, SeparableConv2D_0_height, SeparableConv2D_0_width, (int16_t*) SeparableConv2D_0_array, (int16_t*) SeparableConv2D_0_m_array,
+ (int16_t*) SeparableConv2D_0_b_d, (int16_t*) SeparableConv2D_0_b_p,
+ 3, 3, (int16_t*) SeparableConv2D_0_w_d, (int16_t*) SeparableConv2D_0_w_p, 1, 14);
+#pragma line 127 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
+ for(uint64_t i = 0; i < array_length; i++){
 #pragma HLS PIPELINE
   out.user = 0;
   out.last = 0;
   out.dest = 0;
   out.id = 0;
-  out.keep = 2;
+  out.keep = 0;
   out.strb = 0;
   if(i == 0){
    out.user = 1;
   }
-  if(i == Padding2D_0_depth * Padding2D_0_height * Padding2D_0_width - 1){
+  if(i == array_length - 1){
    out.last = 1;
   }
   out.data = array_head[i];
   output_data.write(out);
  }
-#pragma empty_line
-#pragma empty_line
  return;
 }

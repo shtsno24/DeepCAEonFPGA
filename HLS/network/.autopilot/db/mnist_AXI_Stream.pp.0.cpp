@@ -23103,6 +23103,9 @@ void network(axis &input_data, axis &output_data) {
  uint16_t input_0_depth = 1, input_0_height = 28, input_0_width = 28;
  int16_t input_0_array[1 * 28 * 28];
 
+ int16_t* array_head = (int16_t*)Padding2D_0_array;
+ uint64_t array_length = (uint64_t)Padding2D_0_depth * (uint64_t)Padding2D_0_height * (uint64_t)Padding2D_0_width;
+
  ap_axis<16, 1, 1, 1> tmp;
  ap_axis<16, 1, 1, 1> out;
 
@@ -23115,26 +23118,28 @@ void network(axis &input_data, axis &output_data) {
  padding2d_fix16(1, 1,
  input_0_depth, input_0_height, input_0_width, (int16_t*) input_0_array,
  Padding2D_0_height, Padding2D_0_width, (int16_t*) Padding2D_0_array);
-# 124 "mnist_AXI_Stream.cpp"
- int16_t* array_head = (int16_t*)Padding2D_0_array;
- for(int i = 0; i < Padding2D_0_depth * Padding2D_0_height * Padding2D_0_width; i++){
+
+ separable_conv2d_fix16(Padding2D_0_depth, Padding2D_0_height, Padding2D_0_width, (int16_t*) Padding2D_0_array,
+ SeparableConv2D_0_depth, SeparableConv2D_0_height, SeparableConv2D_0_width, (int16_t*) SeparableConv2D_0_array, (int16_t*) SeparableConv2D_0_m_array,
+ (int16_t*) SeparableConv2D_0_b_d, (int16_t*) SeparableConv2D_0_b_p,
+ 3, 3, (int16_t*) SeparableConv2D_0_w_d, (int16_t*) SeparableConv2D_0_w_p, 1, 14);
+# 127 "mnist_AXI_Stream.cpp"
+ for(uint64_t i = 0; i < array_length; i++){
 #pragma HLS PIPELINE
  out.user = 0;
   out.last = 0;
   out.dest = 0;
   out.id = 0;
-  out.keep = 2;
+  out.keep = 0;
   out.strb = 0;
   if(i == 0){
    out.user = 1;
   }
-  if(i == Padding2D_0_depth * Padding2D_0_height * Padding2D_0_width - 1){
+  if(i == array_length - 1){
    out.last = 1;
   }
   out.data = array_head[i];
   output_data.write(out);
  }
-
-
  return;
 }

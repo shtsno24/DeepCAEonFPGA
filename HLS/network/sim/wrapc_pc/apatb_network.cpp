@@ -1,5 +1,5 @@
 // ==============================================================
-// File generated on Sun Nov 17 11:46:29 JST 2019
+// File generated on Mon Nov 18 17:38:42 JST 2019
 // Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
 // SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 // IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
@@ -39,6 +39,16 @@ using namespace sc_dt;
         ap_uint<1> id;
         ap_uint<1> dest;
        } ;
+
+extern unsigned short SeparableConv2D_0_width;
+
+extern short SeparableConv2D_0_m_array[1][28][28];
+
+extern unsigned short SeparableConv2D_0_height;
+
+extern unsigned short SeparableConv2D_0_depth;
+
+extern short SeparableConv2D_0_array[16][28][28];
 
 extern unsigned short Padding2D_0_width;
 

@@ -1,9 +1,9 @@
-#pragma line 1 "/home/shts/DeepCAEonFPGA/mnist_AXI_Stream_tb.cpp"
-#pragma line 1 "<組み込み>"
-#pragma line 1 "<コマンドライン>"
+#pragma line 1 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream_tb.cpp"
+#pragma line 1 "<built-in>"
+#pragma line 1 "<command-line>"
 #pragma line 1 "/usr/include/stdc-predef.h" 1 3 4
-#pragma line 1 "<コマンドライン>" 2
-#pragma line 1 "/home/shts/DeepCAEonFPGA/mnist_AXI_Stream_tb.cpp"
+#pragma line 1 "<command-line>" 2
+#pragma line 1 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream_tb.cpp"
 #pragma empty_line
 #pragma empty_line
 #pragma empty_line
@@ -3758,7 +3758,7 @@ enum
   GMP_ERROR_SQRT_OF_NEGATIVE = 4,
   GMP_ERROR_INVALID_ARGUMENT = 8
 };
-#pragma line 7 "/home/shts/DeepCAEonFPGA/mnist_AXI_Stream_tb.cpp" 2
+#pragma line 7 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream_tb.cpp" 2
 #pragma line 1 "/tools/Xilinx/Vivado/2018.3/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cstdint" 1 3
 #pragma line 32 "/tools/Xilinx/Vivado/2018.3/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cstdint" 3
 #pragma empty_line
@@ -3881,7 +3881,7 @@ namespace std
   using ::uintmax_t;
   using ::uintptr_t;
 }
-#pragma line 8 "/home/shts/DeepCAEonFPGA/mnist_AXI_Stream_tb.cpp" 2
+#pragma line 8 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream_tb.cpp" 2
 #pragma line 1 "/tools/Xilinx/Vivado/2018.3/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/vector" 1 3
 #pragma line 58 "/tools/Xilinx/Vivado/2018.3/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/vector" 3
 #pragma empty_line
@@ -15468,7 +15468,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 #pragma empty_line
 }
 #pragma line 70 "/tools/Xilinx/Vivado/2018.3/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/vector" 2 3
-#pragma line 9 "/home/shts/DeepCAEonFPGA/mnist_AXI_Stream_tb.cpp" 2
+#pragma line 9 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream_tb.cpp" 2
 #pragma line 1 "/tools/Xilinx/Vivado/2018.3/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/iostream" 1 3
 #pragma line 36 "/tools/Xilinx/Vivado/2018.3/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/iostream" 3
 #pragma empty_line
@@ -32443,7 +32443,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 #pragma empty_line
 #pragma empty_line
 }
-#pragma line 10 "/home/shts/DeepCAEonFPGA/mnist_AXI_Stream_tb.cpp" 2
+#pragma line 10 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream_tb.cpp" 2
 #pragma empty_line
 #pragma line 1 "/tools/Xilinx/Vivado/2018.3/include/hls_stream.h" 1
 #pragma line 79 "/tools/Xilinx/Vivado/2018.3/include/hls_stream.h"
@@ -37679,7 +37679,7 @@ class stream
 };
 #pragma empty_line
 }
-#pragma line 12 "/home/shts/DeepCAEonFPGA/mnist_AXI_Stream_tb.cpp" 2
+#pragma line 12 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream_tb.cpp" 2
 #pragma line 1 "/tools/Xilinx/Vivado/2018.3/include/ap_int.h" 1
 #pragma line 54 "/tools/Xilinx/Vivado/2018.3/include/ap_int.h"
 #pragma line 1 "/tools/Xilinx/Vivado/2018.3/include/ap_common.h" 1
@@ -75354,7 +75354,7 @@ inline bool operator!=(
 }
 #pragma line 381 "/tools/Xilinx/Vivado/2018.3/include/ap_fixed.h" 2
 #pragma line 350 "/tools/Xilinx/Vivado/2018.3/include/ap_int.h" 2
-#pragma line 13 "/home/shts/DeepCAEonFPGA/mnist_AXI_Stream_tb.cpp" 2
+#pragma line 13 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream_tb.cpp" 2
 #pragma line 1 "/tools/Xilinx/Vivado/2018.3/include/ap_axi_sdata.h" 1
 #pragma line 86 "/tools/Xilinx/Vivado/2018.3/include/ap_axi_sdata.h"
 #pragma line 1 "/tools/Xilinx/Vivado/2018.3/include/ap_int.h" 1
@@ -75423,9 +75423,9 @@ template<int D>
     qdma_axis(ap_uint<D> d = ap_uint<D>(), ap_uint<(D+7)/8> k = ap_uint<(D+7)/8>(), ap_uint<1> l = ap_uint<1>()) : data(d), keep(k), last(l) {}
     qdma_axis(const qdma_axis<D, 0, 0, 0> &d) : data(d.data), keep(d.keep), last(d.last) {}
   };
-#pragma line 14 "/home/shts/DeepCAEonFPGA/mnist_AXI_Stream_tb.cpp" 2
+#pragma line 14 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream_tb.cpp" 2
 #pragma empty_line
-#pragma line 1 "/home/shts/DeepCAEonFPGA/test_data/test_data.h" 1
+#pragma line 1 "/home/masudalab/DeepCAEonFPGA/test_data/test_data.h" 1
 #pragma empty_line
 #pragma empty_line
 int16_t test_input_fix16[1][28][28] = {{{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
@@ -75485,8 +75485,8 @@ float test_input_float32[1][28][28] = {{{0.00000000000000000000, 0.0000000000000
 {0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.47450980544090270996, 0.99607843160629272461, 0.99607843160629272461, 0.85882353782653808594, 0.15686275064945220947, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000},
 {0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.47450980544090270996, 0.99607843160629272461, 0.81176471710205078125, 0.07058823853731155396, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000},
 {0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000}}};
-#pragma line 16 "/home/shts/DeepCAEonFPGA/mnist_AXI_Stream_tb.cpp" 2
-#pragma line 1 "/home/shts/DeepCAEonFPGA/layers_cpp/array_printf_fix16.h" 1
+#pragma line 16 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream_tb.cpp" 2
+#pragma line 1 "/home/masudalab/DeepCAEonFPGA/layers_cpp/array_printf_fix16.h" 1
 #pragma empty_line
 #pragma empty_line
 #pragma empty_line
@@ -77332,10 +77332,10 @@ namespace std __attribute__ ((__visibility__ ("default")))
 #pragma empty_line
 }
 #pragma line 1082 "/tools/Xilinx/Vivado/2018.3/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/fstream" 2 3
-#pragma line 6 "/home/shts/DeepCAEonFPGA/layers_cpp/array_printf_fix16.h" 2
+#pragma line 6 "/home/masudalab/DeepCAEonFPGA/layers_cpp/array_printf_fix16.h" 2
 #pragma empty_line
 #pragma empty_line
-#pragma line 7 "/home/shts/DeepCAEonFPGA/layers_cpp/array_printf_fix16.h"
+#pragma line 7 "/home/masudalab/DeepCAEonFPGA/layers_cpp/array_printf_fix16.h"
 using namespace std;
 #pragma empty_line
 #pragma empty_line
@@ -77358,8 +77358,8 @@ vector< int16_t>& input, char delimiter, ofstream& fp, uint16_t fractal);
 #pragma empty_line
 void array_fprintf_2D_fix16(uint16_t input_height, uint16_t input_width,
 vector< vector< int16_t> >& input, char delimiter, ofstream& fp, uint16_t fractal);
-#pragma line 17 "/home/shts/DeepCAEonFPGA/mnist_AXI_Stream_tb.cpp" 2
-#pragma line 1 "/home/shts/DeepCAEonFPGA/mnist_AXI_Stream.h" 1
+#pragma line 17 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream_tb.cpp" 2
+#pragma line 1 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.h" 1
 #pragma empty_line
 #pragma empty_line
 #pragma empty_line
@@ -77368,7 +77368,7 @@ vector< vector< int16_t> >& input, char delimiter, ofstream& fp, uint16_t fracta
 #pragma empty_line
 #pragma empty_line
 #pragma line 1 "/tools/Xilinx/Vivado/2018.3/include/ap_int.h" 1
-#pragma line 9 "/home/shts/DeepCAEonFPGA/mnist_AXI_Stream.h" 2
+#pragma line 9 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.h" 2
 #pragma empty_line
 #pragma empty_line
 #pragma empty_line
@@ -77377,7 +77377,7 @@ using namespace std;
 typedef hls::stream< ap_axis<16, 1, 1, 1> > axis;
 #pragma empty_line
 void network(axis &input_data, axis &output_data);
-#pragma line 18 "/home/shts/DeepCAEonFPGA/mnist_AXI_Stream_tb.cpp" 2
+#pragma line 18 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream_tb.cpp" 2
 #pragma empty_line
 #pragma empty_line
 using namespace std;
@@ -77403,7 +77403,7 @@ int main(void){
 #pragma empty_line
  cout << "\r\n";
  cout << "\r\n";
-#pragma line 51 "/home/shts/DeepCAEonFPGA/mnist_AXI_Stream_tb.cpp"
+#pragma line 51 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream_tb.cpp"
  int i = 0;
  for(int depth = 0; depth < 1; depth++){
   for(int height = 0; height < 28; height++){
@@ -77444,11 +77444,11 @@ int main(void){
  for(int depth = 0; depth < 1; depth++){
   for(int height = 0; height < 30; height++){
    for(int width = 0; width < 30; width++){
-    output_img[depth][height][width] = output_img_buff[depth * 30* 30 + 30 * height + width];
+    output_img[depth][height][width] = output_img_buff[depth * 30 * 30 + 30 * height + width];
    }
   }
  }
- array_printf_3D_fix16(1, 30, 30, output_img, 14);
+ array_printf_3D_fix16(1, 28, 28, output_img, 14);
 #pragma empty_line
  cout << "\r\n";
  cout << "\r\n";

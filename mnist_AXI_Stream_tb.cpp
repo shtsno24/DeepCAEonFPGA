@@ -88,11 +88,11 @@ int main(void){
 	for(int depth = 0; depth < 1; depth++){
 		for(int height = 0; height < 30; height++){
 			for(int width = 0; width < 30; width++){
-				output_img[depth][height][width] = output_img_buff[depth * 30* 30 + 30 * height + width];
+				output_img[depth][height][width] = output_img_buff[depth * 30 * 30 + 30 * height + width];
 			}
 		}
 	}
-	array_printf_3D_fix16(1, 30, 30, output_img, 14);
+	array_printf_3D_fix16(1, 28, 28, output_img, 14);
 
 	cout << "\r\n";
 	cout << "\r\n";

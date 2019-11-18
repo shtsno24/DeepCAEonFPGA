@@ -11,11 +11,11 @@ uint16_t kernel_d_height, uint16_t kernel_d_width, const int16_t* kernel_d, cons
 uint8_t relu, uint8_t fractal_width){ 
 
     depthwise_conv2d_fix16(input_depth, input_height, input_width, input,
-                           input_depth, output_height, output_width, (int16_t*)middle_array,
+                           input_depth, output_height, output_width, middle_array,
                            bias_d,
                            kernel_d_height, kernel_d_width, kernel_d, 0, fractal_width);
 
-    pointwise_conv2d_fix16(input_depth, output_height, output_width, (int16_t*)middle_array,
+    pointwise_conv2d_fix16(input_depth, output_height, output_width, middle_array,
                 output_depth, output_height, output_width, output,
                 bias_p,
                 1, 1, kernel_p, relu, fractal_width);
@@ -30,11 +30,11 @@ uint16_t kernel_d_height, uint16_t kernel_d_width, const float* kernel_d, const 
 uint8_t relu){
 
     depthwise_conv2d_float32(input_depth, input_height, input_width, input,
-                           input_depth, output_height, output_width, (float*)middle_array,
+                           input_depth, output_height, output_width, middle_array,
                            bias_d,
                            kernel_d_height, kernel_d_width, kernel_d, 0);
 
-    pointwise_conv2d_float32(input_depth, output_height, output_width, (float*)middle_array,
+    pointwise_conv2d_float32(input_depth, output_height, output_width, middle_array,
                 output_depth, output_height, output_width, output,
                 bias_p,
                 1, 1, kernel_p, relu);
