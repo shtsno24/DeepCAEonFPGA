@@ -24,8 +24,8 @@ int main(void){
 
 	axis input_buffer;
 	axis output_buffer;
-    int16_t output_img_buff[1 * 28 * 28];
-	vector< vector< int16_t> > output_img(28, vector< int16_t>(28, 0));
+    int16_t output_img_buff[1 * 30 * 30];
+	vector< vector< vector< int16_t> > > output_img(1, vector< vector< int16_t> >(30, vector< int16_t>(30, 0)));
 	vector< vector< int16_t> > input_img(28, vector< int16_t>(28, 0));
 
     ap_axis<16, 1, 1, 1> tmp;
@@ -85,13 +85,14 @@ int main(void){
 	cout << "\r\n";
 	cout << "\r\n";
 
-	for(int height = 0; height < 28; height++){
-		for(int width = 0; width < 28; width++){
-			output_img[height][width] = output_img_buff[28 * height + width];
+	for(int depth = 0; depth < 1; depth++){
+		for(int height = 0; height < 30; height++){
+			for(int width = 0; width < 30; width++){
+				output_img[depth][height][width] = output_img_buff[depth * 30* 30 + 30 * height + width];
+			}
 		}
 	}
-
-	array_printf_2D_fix16(28, 28, output_img, 14);
+	array_printf_3D_fix16(1, 30, 30, output_img, 14);
 
 	cout << "\r\n";
 	cout << "\r\n";
