@@ -1,5 +1,5 @@
 // ==============================================================
-// File generated on Mon Nov 18 17:38:15 JST 2019
+// File generated on Tue Nov 19 17:11:52 JST 2019
 // Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
 // SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 // IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
@@ -77403,8 +77403,8 @@ int main(void){
 
  axis input_buffer;
  axis output_buffer;
-    int16_t output_img_buff[1 * 30 * 30];
- vector< vector< vector< int16_t> > > output_img(1, vector< vector< int16_t> >(30, vector< int16_t>(30, 0)));
+    int16_t output_img_buff[16 * 28 * 28];
+ vector< vector< vector< int16_t> > > output_img(1, vector< vector< int16_t> >(28, vector< int16_t>(28, 0)));
  vector< vector< int16_t> > input_img(28, vector< int16_t>(28, 0));
 
     ap_axis<16, 1, 1, 1> tmp;
@@ -77476,9 +77476,9 @@ network
  cout << "\r\n";
 
  for(int depth = 0; depth < 1; depth++){
-  for(int height = 0; height < 30; height++){
-   for(int width = 0; width < 30; width++){
-    output_img[depth][height][width] = output_img_buff[depth * 30 * 30 + 30 * height + width];
+  for(int height = 0; height < 28; height++){
+   for(int width = 0; width < 28; width++){
+    output_img[depth][height][width] = output_img_buff[depth * 28 * 28 + 28 * height + width];
    }
   }
  }

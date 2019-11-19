@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'depthwise_conv2d_fix'" level="0">
-<item name = "Date">Mon Nov 18 17:37:45 2019
+<item name = "Date">Tue Nov 19 17:10:24 2019
 </item>
 <item name = "Version">2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)</item>
 <item name = "Project">HLS</item>
@@ -55,11 +55,11 @@
 <column name="Expression">-, 4, 0, 584</column>
 <column name="FIFO">-, -, -, -</column>
 <column name="Instance">-, -, -, -</column>
-<column name="Memory">0, -, 15, 3</column>
+<column name="Memory">1, -, 0, 0</column>
 <column name="Multiplexer">-, -, -, 146</column>
-<column name="Register">-, -, 577, -</column>
+<column name="Register">-, -, 578, -</column>
 <specialColumn name="Available">280, 220, 106400, 53200</specialColumn>
-<specialColumn name="Utilization (%)">0, 2, ~0, 1</specialColumn>
+<specialColumn name="Utilization (%)">~0, 2, ~0, 1</specialColumn>
 </table>
 </item>
 <item name = "Detail">
@@ -70,12 +70,12 @@
 </item>
 <item name = "DSP48"><table name="" hasTotal="0">
 <keys size="3">Instance, Module, Expression</keys>
-<column name="network_mul_mul_16s_15s_30_1_1_U3">network_mul_mul_16s_15s_30_1_1, i0 * i1</column>
+<column name="network_mul_mul_16s_15s_30_1_1_U101">network_mul_mul_16s_15s_30_1_1, i0 * i1</column>
 </table>
 </item>
 <item name = "Memory"><table name="" hasTotal="1">
 <keys size="9">Memory, Module, BRAM_18K, FF, LUT, Words, Bits, Banks, W*Bits*Banks</keys>
-<column name="SeparableConv2D_0_w_s_U">depthwise_conv2d_fix_SeparableConv2D_0_w_s, 0, 15, 3, 9, 15, 1, 135</column>
+<column name="SeparableConv2D_3_w_s_U">depthwise_conv2d_fix_SeparableConv2D_3_w_s, 1, 0, 0, 72, 15, 1, 1080</column>
 </table>
 </item>
 <item name = "FIFO"><table name="" hasTotal="1">
@@ -90,20 +90,20 @@
 <column name="k_w_1_fu_381_p2">+, 0, 0, 10, 2, 1</column>
 <column name="next_mul3_fu_214_p2">+, 0, 0, 39, 32, 32</column>
 <column name="next_mul_fu_219_p2">+, 0, 0, 39, 32, 32</column>
-<column name="out_d_2_fu_229_p2">+, 0, 0, 23, 16, 1</column>
-<column name="out_h_2_fu_256_p2">+, 0, 0, 23, 16, 1</column>
-<column name="out_w_2_fu_285_p2">+, 0, 0, 23, 16, 1</column>
+<column name="out_d_4_fu_229_p2">+, 0, 0, 23, 16, 1</column>
+<column name="out_h_4_fu_256_p2">+, 0, 0, 23, 16, 1</column>
+<column name="out_w_4_fu_285_p2">+, 0, 0, 23, 16, 1</column>
 <column name="tmp2_fu_360_p2">+, 0, 0, 39, 32, 32</column>
 <column name="tmp4_fu_351_p2">+, 0, 0, 24, 17, 17</column>
 <column name="tmp5_fu_391_p2">+, 0, 0, 24, 17, 17</column>
 <column name="tmp6_fu_366_p2">+, 0, 0, 28, 21, 21</column>
 <column name="tmp7_fu_410_p2">+, 0, 0, 24, 17, 17</column>
-<column name="tmp_30_fu_299_p2">+, 0, 0, 39, 32, 32</column>
-<column name="tmp_33_fu_400_p2">+, 0, 0, 39, 32, 32</column>
-<column name="tmp_35_fu_419_p2">+, 0, 0, 28, 21, 21</column>
-<column name="tmp_39_fu_448_p2">+, 0, 0, 23, 16, 16</column>
+<column name="tmp_108_fu_299_p2">+, 0, 0, 39, 32, 32</column>
+<column name="tmp_111_fu_400_p2">+, 0, 0, 39, 32, 32</column>
+<column name="tmp_113_fu_419_p2">+, 0, 0, 28, 21, 21</column>
+<column name="tmp_118_fu_448_p2">+, 0, 0, 23, 16, 16</column>
 <column name="tmp_fu_266_p2">+, 0, 0, 39, 32, 32</column>
-<column name="tmp_32_fu_341_p2">-, 0, 0, 15, 5, 5</column>
+<column name="tmp_110_fu_341_p2">-, 0, 0, 15, 5, 5</column>
 <column name="exitcond1_fu_309_p2">icmp, 0, 0, 8, 2, 2</column>
 <column name="exitcond2_fu_280_p2">icmp, 0, 0, 13, 16, 16</column>
 <column name="exitcond3_fu_251_p2">icmp, 0, 0, 13, 16, 16</column>
@@ -113,36 +113,36 @@
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="SeparableConv2D_3_m_s_address0">15, 3, 11, 33</column>
+<column name="SeparableConv2D_3_m_s_d0">15, 3, 16, 48</column>
 <column name="ap_NS_fsm">53, 12, 1, 12</column>
 <column name="k_h_reg_176">9, 2, 2, 4</column>
 <column name="k_w_reg_187">9, 2, 2, 4</column>
 <column name="out_d_reg_118">9, 2, 16, 32</column>
 <column name="out_h_reg_153">9, 2, 16, 32</column>
 <column name="out_w_reg_165">9, 2, 16, 32</column>
-<column name="output_r_address0">15, 3, 10, 30</column>
-<column name="output_r_d0">15, 3, 16, 48</column>
 <column name="phi_mul2_reg_141">9, 2, 32, 64</column>
 <column name="phi_mul_reg_129">9, 2, 32, 64</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="SeparableConv2D_0_w_2_reg_611">15, 0, 15, 0</column>
+<column name="Padding2D_3_array_lo_reg_606">16, 0, 16, 0</column>
+<column name="SeparableConv2D_3_m_1_reg_560">11, 0, 11, 0</column>
+<column name="SeparableConv2D_3_w_2_reg_611">15, 0, 15, 0</column>
 <column name="ap_CS_fsm">11, 0, 11, 0</column>
-<column name="input_load_reg_606">16, 0, 16, 0</column>
 <column name="k_h_1_reg_568">2, 0, 2, 0</column>
 <column name="k_h_reg_176">2, 0, 2, 0</column>
 <column name="k_w_1_reg_591">2, 0, 2, 0</column>
 <column name="k_w_reg_187">2, 0, 2, 0</column>
 <column name="next_mul3_reg_496">32, 0, 32, 0</column>
 <column name="next_mul_reg_501">32, 0, 32, 0</column>
-<column name="out_d_2_reg_509">16, 0, 16, 0</column>
+<column name="out_d_4_reg_509">16, 0, 16, 0</column>
 <column name="out_d_reg_118">16, 0, 16, 0</column>
-<column name="out_h_2_reg_527">16, 0, 16, 0</column>
+<column name="out_h_4_reg_527">16, 0, 16, 0</column>
 <column name="out_h_reg_153">16, 0, 16, 0</column>
-<column name="out_w_2_reg_550">16, 0, 16, 0</column>
+<column name="out_w_4_reg_550">16, 0, 16, 0</column>
 <column name="out_w_reg_165">16, 0, 16, 0</column>
-<column name="output_addr_reg_560">10, 0, 10, 0</column>
 <column name="p_shl_cast_reg_519">16, 0, 21, 5</column>
 <column name="phi_mul2_reg_141">32, 0, 32, 0</column>
 <column name="phi_mul_reg_129">32, 0, 32, 0</column>
@@ -150,13 +150,13 @@
 <column name="tmp2_reg_573">32, 0, 32, 0</column>
 <column name="tmp3_reg_583">32, 0, 32, 0</column>
 <column name="tmp6_reg_578">21, 0, 21, 0</column>
-<column name="tmp_25_reg_481">16, 0, 32, 16</column>
-<column name="tmp_26_reg_486">16, 0, 32, 16</column>
-<column name="tmp_27_reg_491">16, 0, 32, 16</column>
-<column name="tmp_29_cast1_reg_514">16, 0, 17, 1</column>
-<column name="tmp_33_cast_reg_537">16, 0, 17, 1</column>
-<column name="tmp_34_cast_reg_555">16, 0, 17, 1</column>
-<column name="tmp_38_reg_616">16, 0, 16, 0</column>
+<column name="tmp_100_reg_481">16, 0, 32, 16</column>
+<column name="tmp_101_reg_486">16, 0, 32, 16</column>
+<column name="tmp_102_reg_491">16, 0, 32, 16</column>
+<column name="tmp_103_cast1_reg_514">16, 0, 17, 1</column>
+<column name="tmp_107_cast_reg_537">16, 0, 17, 1</column>
+<column name="tmp_108_cast_reg_555">16, 0, 17, 1</column>
+<column name="tmp_117_reg_616">16, 0, 16, 0</column>
 <column name="tmp_reg_532">32, 0, 32, 0</column>
 <column name="tmp_s_reg_476">16, 0, 32, 16</column>
 </table>
@@ -176,17 +176,17 @@
 <column name="ap_ready">out, 1, ap_ctrl_hs, depthwise_conv2d_fix, return value</column>
 <column name="input_height">in, 16, ap_none, input_height, scalar</column>
 <column name="input_width">in, 16, ap_none, input_width, scalar</column>
-<column name="input_r_address0">out, 10, ap_memory, input_r, array</column>
-<column name="input_r_ce0">out, 1, ap_memory, input_r, array</column>
-<column name="input_r_q0">in, 16, ap_memory, input_r, array</column>
 <column name="output_depth">in, 16, ap_none, output_depth, scalar</column>
 <column name="output_height">in, 16, ap_none, output_height, scalar</column>
 <column name="output_width">in, 16, ap_none, output_width, scalar</column>
-<column name="output_r_address0">out, 10, ap_memory, output_r, array</column>
-<column name="output_r_ce0">out, 1, ap_memory, output_r, array</column>
-<column name="output_r_we0">out, 1, ap_memory, output_r, array</column>
-<column name="output_r_d0">out, 16, ap_memory, output_r, array</column>
-<column name="output_r_q0">in, 16, ap_memory, output_r, array</column>
+<column name="SeparableConv2D_3_m_s_address0">out, 11, ap_memory, SeparableConv2D_3_m_s, array</column>
+<column name="SeparableConv2D_3_m_s_ce0">out, 1, ap_memory, SeparableConv2D_3_m_s, array</column>
+<column name="SeparableConv2D_3_m_s_we0">out, 1, ap_memory, SeparableConv2D_3_m_s, array</column>
+<column name="SeparableConv2D_3_m_s_d0">out, 16, ap_memory, SeparableConv2D_3_m_s, array</column>
+<column name="SeparableConv2D_3_m_s_q0">in, 16, ap_memory, SeparableConv2D_3_m_s, array</column>
+<column name="Padding2D_3_array_address0">out, 11, ap_memory, Padding2D_3_array, array</column>
+<column name="Padding2D_3_array_ce0">out, 1, ap_memory, Padding2D_3_array, array</column>
+<column name="Padding2D_3_array_q0">in, 16, ap_memory, Padding2D_3_array, array</column>
 </table>
 </item>
 </section>

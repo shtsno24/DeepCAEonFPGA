@@ -43,21 +43,21 @@
 <Latency>
 <range>
 <min>0</min>
-<max>281462092005376</max>
+<max>281462092005377</max>
 </range>
 </Latency>
 <PipelineII>1</PipelineII>
-<PipelineDepth>3</PipelineDepth>
+<PipelineDepth>4</PipelineDepth>
 </Loop2>
 </SummaryOfLoopLatency>
 </PerformanceEstimates>
 
 <AreaEstimates>
 <Resources>
-<BRAM_18K>19</BRAM_18K>
-<DSP48E>13</DSP48E>
-<FF>1690</FF>
-<LUT>2481</LUT>
+<BRAM_18K>100</BRAM_18K>
+<DSP48E>77</DSP48E>
+<FF>10792</FF>
+<LUT>15216</LUT>
 </Resources>
 <AvailableResources>
 <BRAM_18K>280</BRAM_18K>

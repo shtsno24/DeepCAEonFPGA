@@ -8,6 +8,7 @@
 	<Message severity="INFO" prefix="[COSIM 212-323]" key="COSIM_TCL_323_1195" tag="" content="Starting verilog simulation."/>
 	<Message severity="INFO" prefix="[COSIM 212-15]" key="COSIM_TCL_15_1085" tag="" content="Starting XSIM ..."/>
 	<Message severity="INFO" prefix="[COSIM 212-316]" key="COSIM_TCL_316_1188" tag="" content="Starting C post checking ..."/>
-	<Message severity="INFO" prefix="[COSIM 212-1000]" key="COSIM_TCL_1000_1070" tag="" content="*** C/RTL co-simulation finished: PASS ***"/>
+	<Message severity="ERROR" prefix="[COSIM 212-379]" key="COSIM_TCL_379_1250" tag="" content="Detected segmentation violation, please check C tb."/>
+	<Message severity="ERROR" prefix="[COSIM 212-362]" key="COSIM_TCL_362_1233" tag="" content="Aborting co-simulation: C TB post check failed."/>
 	<Message severity="INFO" prefix="[COSIM 212-211]" key="COSIM_TCL_211_1174" tag="" content="II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation."/>
 </Messages>
