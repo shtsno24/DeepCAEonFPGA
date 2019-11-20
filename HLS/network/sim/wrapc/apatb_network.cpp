@@ -1,5 +1,5 @@
 // ==============================================================
-// File generated on Tue Nov 19 17:12:19 JST 2019
+// File generated on Wed Nov 20 14:09:09 JST 2019
 // Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
 // SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 // IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
@@ -329,11 +329,13 @@ class INTER_TCL_FILE {
 
 extern void network (
 hls::stream<ap_axis<16, 1, 1, 1 > > (&input_data),
-hls::stream<ap_axis<16, 1, 1, 1 > > (&output_data));
+hls::stream<ap_axis<16, 1, 1, 1 > > (&output_data),
+ap_uint<32>* debug_status);
 
 void AESL_WRAP_network (
 hls::stream<ap_axis<16, 1, 1, 1 > > (&input_data),
-hls::stream<ap_axis<16, 1, 1, 1 > > (&output_data))
+hls::stream<ap_axis<16, 1, 1, 1 > > (&output_data),
+ap_uint<32>* debug_status)
 {
 	refine_signal_handler();
 	fstream wrapc_switch_file_token;
@@ -1655,7 +1657,7 @@ hls::stream<ap_axis<16, 1, 1, 1 > > (&output_data))
 // [call_c_dut] ---------->
 
 		CodeState = CALL_C_DUT;
-		network(input_data, output_data);
+		network(input_data, output_data, debug_status);
 
 		CodeState = DUMP_OUTPUTS;
 		// record input size to tv3: "input_data"

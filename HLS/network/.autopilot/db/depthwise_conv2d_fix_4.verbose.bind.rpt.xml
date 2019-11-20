@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'depthwise_conv2d_fix_4'" level="0">
-<item name = "Date">Tue Nov 19 17:10:14 2019
+<item name = "Date">Wed Nov 20 15:14:05 2019
 </item>
 <item name = "Version">2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)</item>
 <item name = "Project">HLS</item>

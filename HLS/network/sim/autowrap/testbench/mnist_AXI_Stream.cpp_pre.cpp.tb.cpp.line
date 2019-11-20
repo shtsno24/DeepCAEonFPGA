@@ -75471,7 +75471,7 @@ using namespace std;
 #pragma empty_line
 typedef hls::stream< ap_axis<16, 1, 1, 1> > axis;
 #pragma empty_line
-void network(axis &input_data, axis &output_data);
+void network(axis &input_data, axis &output_data, ap_uint<32> *debug_status);
 #pragma line 11 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp" 2
 #pragma empty_line
 #pragma line 1 "/home/masudalab/DeepCAEonFPGA/./layers_c/layers.h" 1
@@ -76647,7 +76647,7 @@ const int16_t SeparableConv2D_4_b_p[1] = {-10739};
 #pragma empty_line
 using namespace std;
 #pragma empty_line
-void network(axis &input_data, axis &output_data) {
+void network(axis &input_data, axis &output_data, ap_uint<32> *debug_status) {
 #pragma HLS INTERFACE axis register both port=input_data
 #pragma HLS INTERFACE axis register both port=output_data
 #pragma HLS INTERFACE s_axilite register port=return
@@ -76655,15 +76655,11 @@ void network(axis &input_data, axis &output_data) {
  uint16_t input_0_depth = 1, input_0_height = 28, input_0_width = 28;
  int16_t input_0_array[1 * 28 * 28];
 #pragma empty_line
-#pragma empty_line
  int16_t* array_head = (int16_t*)SeparableConv2D_4_array;
  uint64_t array_length = (uint64_t)SeparableConv2D_4_depth * (uint64_t)SeparableConv2D_4_height * (uint64_t)SeparableConv2D_4_width;
 #pragma empty_line
  ap_axis<16, 1, 1, 1> tmp;
  ap_axis<16, 1, 1, 1> out;
- ap_uint<1> out_enable = 0;
-#pragma empty_line
-#pragma HLS INTERFACE s_axilite register port=out_enable
 #pragma empty_line
  for(int i = 0; i < input_0_depth * input_0_height * input_0_width; i++){
   input_data >> tmp;
@@ -76730,8 +76726,6 @@ void network(axis &input_data, axis &output_data) {
  SeparableConv2D_4_depth, SeparableConv2D_4_height, SeparableConv2D_4_width, (int16_t*) SeparableConv2D_4_array, (int16_t*) SeparableConv2D_4_m_array,
  (int16_t*) SeparableConv2D_4_b_d, (int16_t*) SeparableConv2D_4_b_p,
  3, 3, (int16_t*) SeparableConv2D_4_w_d, (int16_t*) SeparableConv2D_4_w_p, 1, 14);
-#pragma empty_line
- out_enable = 1;
 #pragma line 130 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
  for(uint64_t i = 0; i < array_length; i++){
 #pragma HLS PIPELINE
@@ -76753,11 +76747,8 @@ void network(axis &input_data, axis &output_data) {
   if(i == array_length - 1){
    tmp.last = 1;
   }
-  tmp.data = 0;
-  if(out_enable == 1){
-   tmp.data = array_head[i];
-   output_data << tmp;
-  }
+  tmp.data = array_head[i];
+  output_data << tmp;
  }
  return;
 }

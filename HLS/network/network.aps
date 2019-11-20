@@ -2,20 +2,15 @@
     <checksum>
         <value string="false"/>
     </checksum>
-    <downStreamTool>
-        <DownStreamTool name="vivado"/>
-    </downStreamTool>
-    <clockList>
-        <clock default="false" name="default" period="10"/>
-    </clockList>
     <config>
         <schedule model="network"/>
         <config_compile blackbox="" no_signed_zeros="0" unsafe_math_optimizations="0"/>
         <config_export flow="" format="ip_catalog" rtl="verilog" use_netlist="none" vivado_impl_strategy="default" vivado_phys_opt="place" vivado_report_level="0" vivado_synth_design_args="-directive sdx_optimization_effort_high" vivado_synth_strategy="default"/>
     </config>
     <UIConfigurations>
-        <UIAutosynConf hideTrivialOp="true" isBasedOnBoard="false" isSolutionDirty="false" isStopAskAgain="false" showDetailDesignViewer="false">
+        <UIAutosynConf hideTrivialOp="true" isBasedOnBoard="false" isSolutionDirty="true" isStopAskAgain="false" showDetailDesignViewer="false">
             <Platform>xilinx/zynq/zynq</Platform>
+            <Platform>xilinx/zynq/zynq_fpv6</Platform>
             <customLibs/>
         </UIAutosynConf>
         <UIIPPackagerConf AskAgain="true" DescriptionButton="false" LibraryButton="false" RTLLanguage="verilog" UseNetList="none" VendorButton="false" VersionButton="false" evaluateRTL="false" setup="false">
@@ -51,8 +46,8 @@
         <Format formatName="syn_dcp"/>
         <Format formatName="pcore" use_netlist="none"/>
     </ExportDesign>
-    <Simulation argv="">
-        <SimFlow askAgain="true" clangSanitizer="false" compile="false" compileChoice="gcc" disableDeadlockDetect="false" dumpTrace="all" name="cosim" optimizeCompile="false" reduce_diskspace="false" setup="false" toolName="auto" waveDebug="false" ldflags="" mflags="" compiledLibrary="">
+    <Simulation>
+        <SimFlow askAgain="true" clangSanitizer="false" compile="false" compileChoice="gcc" disableDeadlockDetect="false" dumpTrace="all" name="cosim" optimizeCompile="false" reduce_diskspace="false" setup="false" toolName="Auto" waveDebug="false">
             <Rtl active="false" name="systemc"/>
             <Rtl active="true" name="verilog"/>
             <Rtl active="false" name="vhdl"/>
@@ -69,7 +64,13 @@
     </targetInfo>
     <libraryList>
         <library name="DefaultPlatform" value="xilinx/zynq/zynq"/>
-        <library value="xilinx/zynq/zynq_fpv6" name="DefaultPlatform"/>
+        <library name="DefaultPlatform" value="xilinx/zynq/zynq_fpv6"/>
     </libraryList>
+    <downStreamTool>
+        <DownStreamTool name="vivado"/>
+    </downStreamTool>
+    <clockList>
+        <clock name="default" default="false" period="10"/>
+    </clockList>
 </solution>
 

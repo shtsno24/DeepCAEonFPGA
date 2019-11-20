@@ -21949,7 +21949,7 @@ using namespace std;
 
 typedef hls::stream< ap_axis<16, 1, 1, 1> > axis;
 
-void network(axis &input_data, axis &output_data);
+void network(axis &input_data, axis &output_data, ap_uint<32> *debug_status);
 # 11 "mnist_AXI_Stream.cpp" 2
 
 # 1 "././layers_c/layers.h" 1
@@ -23095,7 +23095,7 @@ const int16_t SeparableConv2D_4_b_p[1] = {-10739};
 
 using namespace std;
 
-void network(axis &input_data, axis &output_data) {
+void network(axis &input_data, axis &output_data, ap_uint<32> *debug_status) {
 #pragma HLS INTERFACE axis register both port=&input_data
 #pragma HLS INTERFACE axis register both port=&output_data
 #pragma HLS INTERFACE s_axilite register port=return
@@ -23103,15 +23103,11 @@ void network(axis &input_data, axis &output_data) {
  uint16_t input_0_depth = 1, input_0_height = 28, input_0_width = 28;
  int16_t input_0_array[1 * 28 * 28];
 
-
  int16_t* array_head = (int16_t*)SeparableConv2D_4_array;
  uint64_t array_length = (uint64_t)SeparableConv2D_4_depth * (uint64_t)SeparableConv2D_4_height * (uint64_t)SeparableConv2D_4_width;
 
  ap_axis<16, 1, 1, 1> tmp;
  ap_axis<16, 1, 1, 1> out;
- ap_uint<1> out_enable = 0;
-
-#pragma HLS INTERFACE s_axilite register port=&out_enable
 
  for(int i = 0; i < input_0_depth * input_0_height * input_0_width; i++){
   input_data >> tmp;
@@ -23178,8 +23174,6 @@ void network(axis &input_data, axis &output_data) {
  SeparableConv2D_4_depth, SeparableConv2D_4_height, SeparableConv2D_4_width, (int16_t*) SeparableConv2D_4_array, (int16_t*) SeparableConv2D_4_m_array,
  (int16_t*) SeparableConv2D_4_b_d, (int16_t*) SeparableConv2D_4_b_p,
  3, 3, (int16_t*) SeparableConv2D_4_w_d, (int16_t*) SeparableConv2D_4_w_p, 1, 14);
-
- out_enable = 1;
 # 130 "mnist_AXI_Stream.cpp"
  for(uint64_t i = 0; i < array_length; i++){
 #pragma HLS PIPELINE
@@ -23201,11 +23195,8 @@ void network(axis &input_data, axis &output_data) {
   if(i == array_length - 1){
    tmp.last = 1;
   }
-  tmp.data = 0;
-  if(out_enable == 1){
-   tmp.data = array_head[i];
-   output_data << tmp;
-  }
+  tmp.data = array_head[i];
+  output_data << tmp;
  }
  return;
 }

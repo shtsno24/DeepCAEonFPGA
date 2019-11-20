@@ -77376,7 +77376,7 @@ using namespace std;
 #pragma empty_line
 typedef hls::stream< ap_axis<16, 1, 1, 1> > axis;
 #pragma empty_line
-void network(axis &input_data, axis &output_data);
+void network(axis &input_data, axis &output_data, ap_uint<32> *debug_status);
 #pragma line 18 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream_tb.cpp" 2
 #pragma empty_line
 #pragma empty_line
@@ -77387,11 +77387,14 @@ int main(void){
 #pragma empty_line
  axis input_buffer;
  axis output_buffer;
+#pragma HLS reset variable=output_buffer
+#pragma empty_line
     int16_t output_img_buff[16 * 28 * 28];
  vector< vector< vector< int16_t> > > output_img(1, vector< vector< int16_t> >(28, vector< int16_t>(28, 0)));
  vector< vector< int16_t> > input_img(28, vector< int16_t>(28, 0));
 #pragma empty_line
     ap_axis<16, 1, 1, 1> tmp;
+ ap_uint<32> debug_status = 0;
 #pragma empty_line
  for(int height = 0; height < 28; height++){
   for(int width = 0; width < 28; width++){
@@ -77403,7 +77406,7 @@ int main(void){
 #pragma empty_line
  cout << "\r\n";
  cout << "\r\n";
-#pragma line 51 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream_tb.cpp"
+#pragma line 54 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream_tb.cpp"
  int i = 0;
  for(int depth = 0; depth < 1; depth++){
   for(int height = 0; height < 28; height++){
@@ -77428,7 +77431,11 @@ int main(void){
   }
  }
 #pragma empty_line
- network(input_buffer, output_buffer);
+ network(input_buffer, output_buffer, &debug_status);
+#pragma empty_line
+ cout << "\r\n";
+ cout << "output_buffer_length : " << output_buffer.size() << endl;
+ cout << "\r\n";
 #pragma empty_line
  i = 0;
  do {

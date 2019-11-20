@@ -77376,7 +77376,7 @@ using namespace std;
 
 typedef hls::stream< ap_axis<16, 1, 1, 1> > axis;
 
-void network(axis &input_data, axis &output_data);
+void network(axis &input_data, axis &output_data, ap_uint<32> *debug_status);
 # 18 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream_tb.cpp" 2
 
 
@@ -77387,11 +77387,14 @@ int main(void){
 
  axis input_buffer;
  axis output_buffer;
+#pragma HLS reset variable=output_buffer
+
     int16_t output_img_buff[16 * 28 * 28];
  vector< vector< vector< int16_t> > > output_img(1, vector< vector< int16_t> >(28, vector< int16_t>(28, 0)));
  vector< vector< int16_t> > input_img(28, vector< int16_t>(28, 0));
 
     ap_axis<16, 1, 1, 1> tmp;
+ ap_uint<32> debug_status = 0;
 
  for(int height = 0; height < 28; height++){
   for(int width = 0; width < 28; width++){
@@ -77403,7 +77406,7 @@ int main(void){
 
  cout << "\r\n";
  cout << "\r\n";
-# 51 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream_tb.cpp"
+# 54 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream_tb.cpp"
  int i = 0;
  for(int depth = 0; depth < 1; depth++){
   for(int height = 0; height < 28; height++){
@@ -77428,7 +77431,11 @@ int main(void){
   }
  }
 
- network(input_buffer, output_buffer);
+ network(input_buffer, output_buffer, &debug_status);
+
+ cout << "\r\n";
+ cout << "output_buffer_length : " << output_buffer.size() << endl;
+ cout << "\r\n";
 
  i = 0;
  do {

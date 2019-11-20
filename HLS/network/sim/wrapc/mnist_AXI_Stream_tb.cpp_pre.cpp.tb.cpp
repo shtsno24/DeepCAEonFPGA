@@ -1,5 +1,5 @@
 // ==============================================================
-// File generated on Tue Nov 19 17:11:52 JST 2019
+// File generated on Wed Nov 20 14:08:47 JST 2019
 // Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
 // SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 // IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
@@ -77383,7 +77383,7 @@ using namespace std;
 
 typedef hls::stream< ap_axis<16, 1, 1, 1> > axis;
 
-void network(axis &input_data, axis &output_data);
+void network(axis &input_data, axis &output_data, ap_uint<32> *debug_status);
 #18 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream_tb.cpp" 2
 
 
@@ -77403,11 +77403,14 @@ int main(void){
 
  axis input_buffer;
  axis output_buffer;
+#pragma HLS reset variable=output_buffer
+
     int16_t output_img_buff[16 * 28 * 28];
  vector< vector< vector< int16_t> > > output_img(1, vector< vector< int16_t> >(28, vector< int16_t>(28, 0)));
  vector< vector< int16_t> > input_img(28, vector< int16_t>(28, 0));
 
     ap_axis<16, 1, 1, 1> tmp;
+ ap_uint<32> debug_status = 0;
 
  for(int height = 0; height < 28; height++){
   for(int width = 0; width < 28; width++){
@@ -77419,7 +77422,7 @@ int main(void){
 
  cout << "\r\n";
  cout << "\r\n";
-#51 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream_tb.cpp"
+#54 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream_tb.cpp"
  int i = 0;
  for(int depth = 0; depth < 1; depth++){
   for(int height = 0; height < 28; height++){
@@ -77449,20 +77452,24 @@ int main(void){
 #define network AESL_WRAP_network
 #endif
 
-#75 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream_tb.cpp"
+#78 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream_tb.cpp"
 
 #ifndef HLS_FASTSIM
 #define network AESL_WRAP_network
 #endif
 
-#75 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream_tb.cpp"
+#78 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream_tb.cpp"
 network
 #undef network
-#75 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream_tb.cpp"
+#78 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream_tb.cpp"
 
 #undef network
-#75 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream_tb.cpp"
-(input_buffer, output_buffer);
+#78 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream_tb.cpp"
+(input_buffer, output_buffer, &debug_status);
+
+ cout << "\r\n";
+ cout << "output_buffer_length : " << output_buffer.size() << endl;
+ cout << "\r\n";
 
  i = 0;
  do {
@@ -77490,4 +77497,4 @@ network
  return 0;
 }
 #endif
-#101 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream_tb.cpp"
+#108 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream_tb.cpp"

@@ -19,12 +19,11 @@
 
 using namespace std;
 
-void network(axis &input_data, axis &output_data, ap_uint<8> debug_status) {
+void network(axis &input_data, axis &output_data, ap_uint<32> *debug_status) {
 #pragma HLS INTERFACE axis register both port=input_data
 #pragma HLS INTERFACE axis register both port=output_data
 #pragma HLS INTERFACE s_axilite register port=return
 
-	debug_status = 255;
 	uint16_t input_0_depth = 1, input_0_height = 28, input_0_width = 28;
 	int16_t input_0_array[1 * 28 * 28];
 
@@ -39,96 +38,66 @@ void network(axis &input_data, axis &output_data, ap_uint<8> debug_status) {
 		input_0_array[i] = (int16_t) tmp.data;
 	}
 
-	debug_status = 1;
-
 	padding2d_fix16(1, 1,
 	input_0_depth, input_0_height, input_0_width, (int16_t*) input_0_array,
 	Padding2D_0_height, Padding2D_0_width, (int16_t*) Padding2D_0_array);
-
-	debug_status += 1;
 
 	separable_conv2d_fix16(Padding2D_0_depth, Padding2D_0_height, Padding2D_0_width, (int16_t*) Padding2D_0_array,
 	SeparableConv2D_0_depth, SeparableConv2D_0_height, SeparableConv2D_0_width, (int16_t*) SeparableConv2D_0_array, (int16_t*) SeparableConv2D_0_m_array,
 	(int16_t*) SeparableConv2D_0_b_d, (int16_t*) SeparableConv2D_0_b_p,
 	3, 3, (int16_t*) SeparableConv2D_0_w_d, (int16_t*) SeparableConv2D_0_w_p, 1, fractal_width_SeparableConv2D_0);
 
-	debug_status += 1;
-
 	max_pooling2d_fix16(2,
 	SeparableConv2D_0_depth, SeparableConv2D_0_height, SeparableConv2D_0_width, (int16_t*) SeparableConv2D_0_array,
 	MaxPooling2D_0_depth, MaxPooling2D_0_height, MaxPooling2D_0_width, (int16_t*) MaxPooling2D_0_array);
 
-	debug_status += 1;
-
 	padding2d_fix16(1, 1,
 	MaxPooling2D_0_depth, MaxPooling2D_0_height, MaxPooling2D_0_width, (int16_t*) MaxPooling2D_0_array,
 	Padding2D_1_height, Padding2D_1_width, (int16_t*) Padding2D_1_array);
-
-	debug_status += 1;
 
 	separable_conv2d_fix16(Padding2D_1_depth, Padding2D_1_height, Padding2D_1_width, (int16_t*) Padding2D_1_array,
 	SeparableConv2D_1_depth, SeparableConv2D_1_height, SeparableConv2D_1_width, (int16_t*) SeparableConv2D_1_array, (int16_t*) SeparableConv2D_1_m_array,
 	(int16_t*) SeparableConv2D_1_b_d, (int16_t*) SeparableConv2D_1_b_p,
 	3, 3, (int16_t*) SeparableConv2D_1_w_d, (int16_t*) SeparableConv2D_1_w_p, 1, fractal_width_SeparableConv2D_1);
 
-	debug_status += 1;
-
 	max_pooling2d_fix16(2,
 	SeparableConv2D_1_depth, SeparableConv2D_1_height, SeparableConv2D_1_width, (int16_t*) SeparableConv2D_1_array,
 	MaxPooling2D_1_depth, MaxPooling2D_1_height, MaxPooling2D_1_width, (int16_t*) MaxPooling2D_1_array);
 
-	debug_status += 1;
-
 	padding2d_fix16(1, 1,
 	MaxPooling2D_1_depth, MaxPooling2D_1_height, MaxPooling2D_1_width, (int16_t*) MaxPooling2D_1_array,
 	Padding2D_2_height, Padding2D_2_width, (int16_t*) Padding2D_2_array);
-
-	debug_status += 1;
 
 	separable_conv2d_fix16(Padding2D_2_depth, Padding2D_2_height, Padding2D_2_width, (int16_t*) Padding2D_2_array,
 	SeparableConv2D_2_depth, SeparableConv2D_2_height, SeparableConv2D_2_width, (int16_t*) SeparableConv2D_2_array, (int16_t*) SeparableConv2D_2_m_array,
 	(int16_t*) SeparableConv2D_2_b_d, (int16_t*) SeparableConv2D_2_b_p,
 	3, 3, (int16_t*) SeparableConv2D_2_w_d, (int16_t*) SeparableConv2D_2_w_p, 1, fractal_width_SeparableConv2D_2);
 
-	debug_status += 1;
-
 	up_sampling2d_fix16(2,
 	SeparableConv2D_2_depth, SeparableConv2D_2_height, SeparableConv2D_2_width, (int16_t*) SeparableConv2D_2_array,
 	UpSampling2D_0_depth, UpSampling2D_0_height, UpSampling2D_0_width, (int16_t*) UpSampling2D_0_array);
 
-	debug_status += 1;
-
 	padding2d_fix16(1, 1,
 	UpSampling2D_0_depth, UpSampling2D_0_height, UpSampling2D_0_width, (int16_t*) UpSampling2D_0_array,
 	Padding2D_3_height, Padding2D_3_width, (int16_t*) Padding2D_3_array);
-
-	debug_status += 1;
 
 	separable_conv2d_fix16(Padding2D_3_depth, Padding2D_3_height, Padding2D_3_width, (int16_t*) Padding2D_3_array,
 	SeparableConv2D_3_depth, SeparableConv2D_3_height, SeparableConv2D_3_width, (int16_t*) SeparableConv2D_3_array, (int16_t*) SeparableConv2D_3_m_array,
 	(int16_t*) SeparableConv2D_3_b_d, (int16_t*) SeparableConv2D_3_b_p,
 	3, 3, (int16_t*) SeparableConv2D_3_w_d, (int16_t*) SeparableConv2D_3_w_p, 1, fractal_width_SeparableConv2D_3);
 
-	debug_status += 1;
-
 	up_sampling2d_fix16(2,
 	SeparableConv2D_3_depth, SeparableConv2D_3_height, SeparableConv2D_3_width, (int16_t*) SeparableConv2D_3_array,
 	UpSampling2D_1_depth, UpSampling2D_1_height, UpSampling2D_1_width, (int16_t*) UpSampling2D_1_array);
-
-	debug_status += 1;
 
 	padding2d_fix16(1, 1,
 	UpSampling2D_1_depth, UpSampling2D_1_height, UpSampling2D_1_width, (int16_t*) UpSampling2D_1_array,
 	Padding2D_4_height, Padding2D_4_width, (int16_t*) Padding2D_4_array);
 
-	debug_status += 1;
-
 	separable_conv2d_fix16(Padding2D_4_depth, Padding2D_4_height, Padding2D_4_width, (int16_t*) Padding2D_4_array,
 	SeparableConv2D_4_depth, SeparableConv2D_4_height, SeparableConv2D_4_width, (int16_t*) SeparableConv2D_4_array, (int16_t*) SeparableConv2D_4_m_array,
 	(int16_t*) SeparableConv2D_4_b_d, (int16_t*) SeparableConv2D_4_b_p,
 	3, 3, (int16_t*) SeparableConv2D_4_w_d, (int16_t*) SeparableConv2D_4_w_p, 1, fractal_width_SeparableConv2D_4);
-
-	debug_status += 1;
 
 //	int i = 0;
 //	for (int depth = 0; depth < input_0_depth; depth++) {
@@ -152,6 +121,11 @@ void network(axis &input_data, axis &output_data, ap_uint<8> debug_status) {
 //			}
 //		}
 //	}
+//	if(output_data.empty()){
+//		*debug_status = 1;
+//	}else{
+//		*debug_status = 0;
+//	}
 
 	for(uint64_t i = 0; i < array_length; i++){
 #pragma HLS PIPELINE
@@ -173,12 +147,8 @@ void network(axis &input_data, axis &output_data, ap_uint<8> debug_status) {
 		if(i == array_length - 1){
 			tmp.last = 1;
 		}
-		// tmp.data = 0;
-		// if(out_enable == 1){
 		tmp.data = array_head[i];
 		output_data << tmp;
-		debug_status = 0;
-		// }
 	}
 	return;
 }

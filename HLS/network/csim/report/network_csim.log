@@ -1,16 +1,16 @@
 INFO: [SIM 2] *************** CSIM start ***************
 INFO: [SIM 4] CSIM will launch GCC as the compiler.
-   Compiling ../../../../layers_cpp/array_printf_fix16.cpp in debug mode
-   Compiling ../../../../layers_cpp/array_printf_float32.cpp in debug mode
    Compiling ../../../../mnist_AXI_Stream_tb.cpp in debug mode
-   Compiling ../../../../layers_c/conv2d.cpp in debug mode
-   Compiling ../../../../layers_c/depthwise_conv2d.cpp in debug mode
-   Compiling ../../../../layers_c/max_pooling2d.cpp in debug mode
-   Compiling ../../../../mnist_AXI_Stream.cpp in debug mode
-   Compiling ../../../../layers_c/padding2d.cpp in debug mode
-   Compiling ../../../../layers_c/pointwise_conv2d.cpp in debug mode
-   Compiling ../../../../layers_c/separable_conv2d.cpp in debug mode
+   Compiling ../../../../layers_cpp/array_printf_float32.cpp in debug mode
+   Compiling ../../../../layers_cpp/array_printf_fix16.cpp in debug mode
    Compiling ../../../../layers_c/up_sampling2d.cpp in debug mode
+   Compiling ../../../../layers_c/separable_conv2d.cpp in debug mode
+   Compiling ../../../../layers_c/pointwise_conv2d.cpp in debug mode
+   Compiling ../../../../layers_c/padding2d.cpp in debug mode
+   Compiling ../../../../mnist_AXI_Stream.cpp in debug mode
+   Compiling ../../../../layers_c/max_pooling2d.cpp in debug mode
+   Compiling ../../../../layers_c/depthwise_conv2d.cpp in debug mode
+   Compiling ../../../../layers_c/conv2d.cpp in debug mode
    Generating csim.exe
 [[0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
 [0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
@@ -40,6 +40,12 @@ INFO: [SIM 4] CSIM will launch GCC as the compiler.
 [0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.23722 0.49800 0.49800 0.42940 0.07840 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
 [0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.23722 0.49800 0.40587 0.03528 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]
 [0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000]]
+
+
+output_buffer_length : 0
+
+
+output_buffer_length : 784
 
 count 0, last 0, data 0
 count 1, last 0, data 0

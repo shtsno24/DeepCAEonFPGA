@@ -2,14 +2,53 @@
 <vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
   <errorLogs>
     <logs>
-      <simLog/>
+      <synLog/>
     </logs>
   </errorLogs>
   <warningLogs>
     <logs>
-      <simLog>
-        <logs message="WARNING: Hls::stream 'hls::stream&lt;ap_axis&lt;16, 1, 1, 1> >.2' is read while empty, which may result in RTL simulation hanging.&#xA;count 2214, last 0, data 0" projectName="HLS" solutionName="network" date="2019-11-19T17:14:45.495+0900" type="Warning"/>
-      </simLog>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Global array 'SeparableConv2D_4_ar' will not be exposed as RTL port." projectName="HLS" solutionName="network" date="2019-11-20T15:14:18.263+0900" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Global array 'SeparableConv2D_4_m_s' will not be exposed as RTL port." projectName="HLS" solutionName="network" date="2019-11-20T15:14:18.257+0900" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Global scalar 'Padding2D_4_width' will not be exposed as RTL port." projectName="HLS" solutionName="network" date="2019-11-20T15:14:18.252+0900" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'Padding2D_4_width' is power-on initialization." projectName="HLS" solutionName="network" date="2019-11-20T15:14:18.247+0900" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Global scalar 'Padding2D_4_height' will not be exposed as RTL port." projectName="HLS" solutionName="network" date="2019-11-20T15:14:18.245+0900" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'Padding2D_4_height' is power-on initialization." projectName="HLS" solutionName="network" date="2019-11-20T15:14:18.239+0900" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Global scalar 'Padding2D_4_depth' will not be exposed as RTL port." projectName="HLS" solutionName="network" date="2019-11-20T15:14:18.238+0900" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'Padding2D_4_depth' is power-on initialization." projectName="HLS" solutionName="network" date="2019-11-20T15:14:18.231+0900" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Global array 'Padding2D_4_array' will not be exposed as RTL port." projectName="HLS" solutionName="network" date="2019-11-20T15:14:18.227+0900" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Global array 'UpSampling2D_1_array' will not be exposed as RTL port." projectName="HLS" solutionName="network" date="2019-11-20T15:14:18.209+0900" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Global scalar 'UpSampling2D_1_width' will not be exposed as RTL port." projectName="HLS" solutionName="network" date="2019-11-20T15:14:18.202+0900" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'UpSampling2D_1_width' is power-on initialization." projectName="HLS" solutionName="network" date="2019-11-20T15:14:18.198+0900" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Global scalar 'UpSampling2D_1_heigh' will not be exposed as RTL port." projectName="HLS" solutionName="network" date="2019-11-20T15:14:18.194+0900" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'UpSampling2D_1_heigh' is power-on initialization." projectName="HLS" solutionName="network" date="2019-11-20T15:14:18.191+0900" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Global scalar 'UpSampling2D_1_depth' will not be exposed as RTL port." projectName="HLS" solutionName="network" date="2019-11-20T15:14:18.187+0900" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'UpSampling2D_1_depth' is power-on initialization." projectName="HLS" solutionName="network" date="2019-11-20T15:14:18.183+0900" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Global array 'SeparableConv2D_3_ar' will not be exposed as RTL port." projectName="HLS" solutionName="network" date="2019-11-20T15:14:18.180+0900" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Global array 'SeparableConv2D_3_m_s' will not be exposed as RTL port." projectName="HLS" solutionName="network" date="2019-11-20T15:14:18.172+0900" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Global scalar 'SeparableConv2D_3_wi' will not be exposed as RTL port." projectName="HLS" solutionName="network" date="2019-11-20T15:14:18.164+0900" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'SeparableConv2D_3_wi' is power-on initialization." projectName="HLS" solutionName="network" date="2019-11-20T15:14:18.160+0900" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Global scalar 'SeparableConv2D_3_he' will not be exposed as RTL port." projectName="HLS" solutionName="network" date="2019-11-20T15:14:18.156+0900" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'SeparableConv2D_3_he' is power-on initialization." projectName="HLS" solutionName="network" date="2019-11-20T15:14:18.153+0900" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Global scalar 'SeparableConv2D_3_de' will not be exposed as RTL port." projectName="HLS" solutionName="network" date="2019-11-20T15:14:18.149+0900" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'SeparableConv2D_3_de' is power-on initialization." projectName="HLS" solutionName="network" date="2019-11-20T15:14:18.147+0900" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Global scalar 'Padding2D_3_width' will not be exposed as RTL port." projectName="HLS" solutionName="network" date="2019-11-20T15:14:18.142+0900" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'Padding2D_3_width' is power-on initialization." projectName="HLS" solutionName="network" date="2019-11-20T15:14:18.138+0900" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Global scalar 'Padding2D_3_height' will not be exposed as RTL port." projectName="HLS" solutionName="network" date="2019-11-20T15:14:18.134+0900" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'Padding2D_3_height' is power-on initialization." projectName="HLS" solutionName="network" date="2019-11-20T15:14:18.131+0900" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Global scalar 'Padding2D_3_depth' will not be exposed as RTL port." projectName="HLS" solutionName="network" date="2019-11-20T15:14:18.127+0900" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'Padding2D_3_depth' is power-on initialization." projectName="HLS" solutionName="network" date="2019-11-20T15:14:18.124+0900" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Global array 'Padding2D_3_array' will not be exposed as RTL port." projectName="HLS" solutionName="network" date="2019-11-20T15:14:18.120+0900" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Global array 'UpSampling2D_0_array' will not be exposed as RTL port." projectName="HLS" solutionName="network" date="2019-11-20T15:14:18.103+0900" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Global scalar 'UpSampling2D_0_width' will not be exposed as RTL port." projectName="HLS" solutionName="network" date="2019-11-20T15:14:18.094+0900" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'UpSampling2D_0_width' is power-on initialization." projectName="HLS" solutionName="network" date="2019-11-20T15:14:18.090+0900" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Global scalar 'UpSampling2D_0_heigh' will not be exposed as RTL port." projectName="HLS" solutionName="network" date="2019-11-20T15:14:18.087+0900" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'UpSampling2D_0_heigh' is power-on initialization." projectName="HLS" solutionName="network" date="2019-11-20T15:14:18.082+0900" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Global scalar 'UpSampling2D_0_depth' will not be exposed as RTL port." projectName="HLS" solutionName="network" date="2019-11-20T15:14:18.078+0900" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'UpSampling2D_0_depth' is power-on initialization." projectName="HLS" solutionName="network" date="2019-11-20T15:14:18.075+0900" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Global array 'SeparableConv2D_2_ar' will not be exposed as RTL port." projectName="HLS" solutionName="network" date="2019-11-20T15:14:18.071+0900" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Global array 'SeparableConv2D_2_m_s' will not be exposed as RTL port." projectName="HLS" solutionName="network" date="2019-11-20T15:14:18.060+0900" type="Warning"/>
+      </synLog>
     </logs>
   </warningLogs>
 </vivadoHLSLog:LogRoot>

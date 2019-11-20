@@ -13,4 +13,4 @@ using namespace std;
 
 typedef hls::stream< ap_axis<16, 1, 1, 1> > axis;
 
-void network(axis &input_data, axis &output_data, ap_uint<8> debug_status);
+void network(axis &input_data, axis &output_data, ap_uint<32> *debug_status);
