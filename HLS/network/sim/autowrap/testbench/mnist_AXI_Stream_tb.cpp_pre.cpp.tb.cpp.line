@@ -77440,24 +77440,28 @@ int main(void){
   }
  }
 #pragma empty_line
+ cout << "\r\n";
+ cout << "output_buffer_length : " << output_buffer.size() << endl;
+ cout << "\r\n";
+#pragma empty_line
  
 #ifndef HLS_FASTSIM
 #define network AESL_WRAP_network
 #endif
 
-#pragma line 78 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream_tb.cpp"
+#pragma line 82 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream_tb.cpp"
 
 #ifndef HLS_FASTSIM
 #define network AESL_WRAP_network
 #endif
 
-#pragma line 78 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream_tb.cpp"
+#pragma line 82 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream_tb.cpp"
 network
 #undef network
-#pragma line 78 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream_tb.cpp"
+#pragma line 82 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream_tb.cpp"
 
 #undef network
-#pragma line 78 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream_tb.cpp"
+#pragma line 82 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream_tb.cpp"
 (input_buffer, output_buffer, &debug_status);
 #pragma empty_line
  cout << "\r\n";
@@ -77490,4 +77494,4 @@ network
  return 0;
 }
 #endif
-#pragma line 108 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream_tb.cpp"
+#pragma line 112 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream_tb.cpp"

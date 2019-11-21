@@ -1,9 +1,9 @@
 #-----------------------------------------------------------
-# Vivado v2018.3 (64-bit)
-# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
-# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Wed Nov 20 14:16:32 2019
-# Process ID: 21953
+# Vivado v2018.3.1 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Thu Nov 21 15:03:47 2019
+# Process ID: 31708
 # Current directory: /home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog
 # Command line: vivado -source open_wave.tcl
 # Log file: /home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/vivado.log

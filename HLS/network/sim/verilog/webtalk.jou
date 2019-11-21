@@ -1,9 +1,9 @@
 #-----------------------------------------------------------
-# Webtalk v2018.3 (64-bit)
-# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
-# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Wed Nov 20 14:11:27 2019
-# Process ID: 21833
+# Webtalk v2018.3.1 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Thu Nov 21 15:02:45 2019
+# Process ID: 31638
 # Current directory: /home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog
 # Command line: wbtcv -mode batch -source /home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/xsim.dir/network/webtalk/xsim_webtalk.tcl -notrace
 # Log file: /home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/webtalk.log

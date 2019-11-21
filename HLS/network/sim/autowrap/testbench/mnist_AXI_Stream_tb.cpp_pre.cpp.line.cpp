@@ -77431,6 +77431,10 @@ int main(void){
   }
  }
 #pragma empty_line
+ cout << "\r\n";
+ cout << "output_buffer_length : " << output_buffer.size() << endl;
+ cout << "\r\n";
+#pragma empty_line
  network(input_buffer, output_buffer, &debug_status);
 #pragma empty_line
  cout << "\r\n";

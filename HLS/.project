@@ -37,16 +37,6 @@
 			<location>/home/masudalab/DeepCAEonFPGA/HLS/.apc/.tb</location>
 		</link>
 		<link>
-			<name>.reference/hls_stream.h</name>
-			<type>1</type>
-			<location>/tools/Xilinx/Vivado/2018.3/include/hls_stream.h</location>
-		</link>
-		<link>
-			<name>.reference/stl_deque.h</name>
-			<type>1</type>
-			<location>/tools/Xilinx/Vivado/2018.3/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_deque.h</location>
-		</link>
-		<link>
 			<name>network/constraints</name>
 			<type>2</type>
 			<location>/home/masudalab/DeepCAEonFPGA/HLS/network/.tcls</location>

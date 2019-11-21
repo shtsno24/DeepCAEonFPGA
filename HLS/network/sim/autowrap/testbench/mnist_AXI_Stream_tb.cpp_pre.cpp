@@ -77431,6 +77431,10 @@ int main(void){
   }
  }
 
+ cout << "\r\n";
+ cout << "output_buffer_length : " << output_buffer.size() << endl;
+ cout << "\r\n";
+
  network(input_buffer, output_buffer, &debug_status);
 
  cout << "\r\n";

@@ -1,9 +1,9 @@
 // ==============================================================
-// File generated on Wed Nov 20 14:08:47 JST 2019
-// Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
-// SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
-// IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-// Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+// File generated on Thu Nov 21 14:59:57 JST 2019
+// Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3.1 (64-bit)
+// SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
+// IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+// Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // ==============================================================
 #1 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream_tb.cpp"
 #1 "<built-in>"
@@ -77447,24 +77447,28 @@ int main(void){
   }
  }
 
+ cout << "\r\n";
+ cout << "output_buffer_length : " << output_buffer.size() << endl;
+ cout << "\r\n";
+
  
 #ifndef HLS_FASTSIM
 #define network AESL_WRAP_network
 #endif
 
-#78 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream_tb.cpp"
+#82 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream_tb.cpp"
 
 #ifndef HLS_FASTSIM
 #define network AESL_WRAP_network
 #endif
 
-#78 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream_tb.cpp"
+#82 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream_tb.cpp"
 network
 #undef network
-#78 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream_tb.cpp"
+#82 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream_tb.cpp"
 
 #undef network
-#78 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream_tb.cpp"
+#82 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream_tb.cpp"
 (input_buffer, output_buffer, &debug_status);
 
  cout << "\r\n";
@@ -77497,4 +77501,4 @@ network
  return 0;
 }
 #endif
-#108 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream_tb.cpp"
+#112 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream_tb.cpp"
