@@ -23,8 +23,8 @@ preplace netloc ps7_0_axi_periph_M01_AXI 1 2 1 710
 preplace netloc processing_system7_0_FIXED_IO 1 7 1 NJ
 preplace netloc network_0_output_data 1 4 1 N
 preplace netloc processing_system7_0_FCLK_CLK0 1 0 8 20 390 390 90 730 190 1140 260 1520 70 1900 10 2190 220 2630
-preplace netloc ps7_0_axi_periph_M00_AXI 1 2 3 740 200 1100J 80 1500J
 preplace netloc axi_dma_out_M_AXI_S2MM 1 5 1 1890
+preplace netloc ps7_0_axi_periph_M00_AXI 1 2 3 740 200 1100J 80 1500J
 levelinfo -pg 1 0 210 560 920 1320 1700 2050 2410 2670 -top 0 -bot 670
 "
 }

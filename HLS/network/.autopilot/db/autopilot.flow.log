@@ -2641,3 +2641,367 @@ INFO: [COSIM 212-211] II is measurable only when transaction number is greater t
 Command   cosim_design done; 198.72 sec.
 Command ap_source done; 198.92 sec.
 Execute cleanup_all 
+INFO-FLOW: Workspace /home/masudalab/DeepCAEonFPGA/HLS/network opened at Thu Nov 21 16:42:20 JST 2019
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     config_clock -quiet -name default -uncertainty 1.25 -unit % 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq 
+Execute       source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.lib 
+Execute         source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.lib 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.lib 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.lib 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.lib 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.lib 
+Execute         source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.lib 
+Execute         source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.lib 
+Execute         source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.lib 
+Execute       source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_old.lib 
+Execute       source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_vivado.lib 
+Execute       source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute         source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute       source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       get_default_platform 
+Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute       config_chip_info -quiet -speed medium 
+Execute       source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute         source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute     source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute       source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute         source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Execute         source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv7.lib 
+Execute         source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_hp.lib 
+Execute       source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv.hlp 
+Execute         source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute             source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute       source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_hp.hlp 
+Execute     source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute     set_part xc7z020clg400-1 
+Execute       add_library xilinx/zynq/zynq:xc7z020:clg400:-1 
+Execute         get_default_platform 
+Execute         license_isbetapart xc7z020 
+Command         license_isbetapart done; error code: 1; 
+Execute         get_default_platform 
+Execute         config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute         config_chip_info -quiet -speed slow 
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+Execute       get_default_platform 
+Execute     get_default_platform 
+Execute     config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute     config_chip_info -quiet -speed slow 
+Execute     config_compile -no_signed_zeros=0 
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+Execute     config_compile -unsafe_math_optimizations=0 
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
+INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
+Execute     config_export -format=ip_catalog 
+Execute     config_export -rtl=verilog 
+Execute     config_export -use_netlist=none 
+Execute     config_export -vivado_impl_strategy=default 
+Execute     config_export -vivado_phys_opt=place 
+Execute     config_export -vivado_report_level=0 
+Execute     config_export -vivado_synth_design_args -directive sdx_optimization_effort_high 
+Execute     config_export -vivado_synth_strategy=default 
+Execute     config_sdx -optimization_level=none 
+Execute       get_config_export -vivado_synth_design_args 
+Execute       get_config_export -vivado_impl_strategy 
+Execute       get_config_export -vivado_synth_strategy 
+Execute       get_config_export -vivado_phys_opt 
+Execute       get_config_bind -effort 
+Execute       get_config_schedule -effort 
+Execute     config_sdx -target=none 
+Execute       send_msg_by_id INFO @200-435@%s%s 'config_sdx -target' config_sdx -optimization_level=none 
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_sdx -optimization_level=none
+Execute       config_sdx -optimization_level=none 
+Execute         get_config_export -vivado_synth_design_args 
+Execute         get_config_export -vivado_impl_strategy 
+Execute         get_config_export -vivado_synth_strategy 
+Execute         get_config_export -vivado_phys_opt 
+Execute         get_config_bind -effort 
+Execute         get_config_schedule -effort 
+Execute       get_config_compile -pipeline_loops 
+Execute       get_config_compile -name_max_length 
+Execute       get_config_schedule -relax_ii_for_timing 
+Execute       get_config_schedule -enable_dsp_full_reg 
+Execute       get_config_rtl -register_reset_num 
+Execute       get_config_rtl -auto_prefix 
+Execute       get_config_rtl -enable_maxiConservative 
+Execute       get_config_interface -m_axi_addr64 
+Execute       send_msg_by_id INFO @200-435@%s%s 'config_sdx -target' set_clock_uncertainty default 
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+Execute       set_clock_uncertainty default 
+Execute     config_schedule -effort=medium 
+Execute     config_schedule -relax_ii_for_timing=0 
+Execute     config_bind -effort=medium 
+Command   open_solution done; 0.2 sec.
+Execute   export_design -rtl verilog -format ip_catalog 
+Execute     get_config_export -acc 
+Execute     get_config_export -clock_margin 
+Execute     get_config_export -custom_script 
+Execute     get_config_export -description 
+Execute     get_config_export -display_name 
+Execute     get_config_export -driver_input_dir 
+Execute     get_config_export -ipname 
+Execute     get_config_export -kernel_drc 
+Execute     get_config_export -library 
+Execute     get_config_export -qor_test 
+Execute     get_config_export -sdaccel 
+Execute     get_config_export -sim 
+Execute     get_config_export -taxonomy 
+Execute     get_config_export -use_ip 
+Execute     get_config_export -use_netlist 
+Execute     get_config_export -vendor 
+Execute     get_config_export -version 
+Execute     get_config_export -xo 
+Execute     config_export -format=ip_catalog -rtl=verilog 
+INFO-FLOW: DBG:CMD: export_design_wrap: -format ip_catalog -rtl verilog -use_netlist none
+WARNING: [IMPL 213-205] Ignored option '-use_netlist' which is only valid for 'pcore'.
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/global.setting.tcl 
+Execute     get_config_export -vivado_clock 
+Execute     get_top 
+Execute     get_config_sdx -target 
+Execute     get_config_rtl -auto_prefix 
+Execute     get_config_sdx -target 
+INFO-FLOW: DBG:CMD:   auto_impl: pack: -export -tool vivado -rtl verilog -sdx-target none
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/global.setting.tcl
+Execute     source /tools/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/common.gen 
+Execute       source /tools/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /tools/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op.gen 
+Execute     source /tools/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /tools/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/interface.gen 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/global.setting.tcl 
+Execute     source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute       source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute         source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Execute         source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Execute     source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/global.setting.tcl 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: automg_wrap -export -pcore_version 1.00.a -rtl vlog -sdx-target none -tool Vivado -impltomg_flag
+INFO-FLOW: DBG:CMD:     auto_generate -export -pcore_version 1.00.a -rtl vlog -sdx-target none -tool Vivado -impltomg_flag
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/global.setting.tcl
+Execute     source /tools/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/common.gen 
+Execute       source /tools/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /tools/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op.gen 
+Execute     source /tools/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /tools/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/interface.gen 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/global.setting.tcl 
+Execute     source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute       source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute         source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Execute         source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Execute     source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+INFO-FLOW: DBG:CMD:       initCTypeInfo top_module=network xml_exists=1
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/network.rtl_wrap.cfg.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/network.rtl_wrap.cfg.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/network.rtl_wrap.cfg.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/network.tbgen.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/network.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       export_impl_rtl
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.verilog
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/global.setting.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/padding2d_fix16.compgen.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/depthwise_conv2d_fix_4.compgen.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/pointwise_conv2d_fix_4.compgen.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/max_pooling2d_fix16_1.compgen.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/padding2d_fix16_4.compgen.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/depthwise_conv2d_fix_3.compgen.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/pointwise_conv2d_fix_3.compgen.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/max_pooling2d_fix16.compgen.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/padding2d_fix16_3.compgen.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/depthwise_conv2d_fix_2.compgen.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/pointwise_conv2d_fix.compgen.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/up_sampling2d_fix16_1.compgen.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/padding2d_fix16_2.compgen.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/depthwise_conv2d_fix.compgen.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/pointwise_conv2d_fix_2.compgen.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/up_sampling2d_fix16.compgen.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/padding2d_fix16_1.compgen.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/depthwise_conv2d_fix_1.compgen.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/pointwise_conv2d_fix_1.compgen.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/network.compgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/global.setting.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/padding2d_fix16.compgen.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/depthwise_conv2d_fix_4.compgen.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/pointwise_conv2d_fix_4.compgen.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/max_pooling2d_fix16_1.compgen.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/padding2d_fix16_4.compgen.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/depthwise_conv2d_fix_3.compgen.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/pointwise_conv2d_fix_3.compgen.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/max_pooling2d_fix16.compgen.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/padding2d_fix16_3.compgen.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/depthwise_conv2d_fix_2.compgen.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/pointwise_conv2d_fix.compgen.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/up_sampling2d_fix16_1.compgen.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/padding2d_fix16_2.compgen.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/depthwise_conv2d_fix.compgen.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/pointwise_conv2d_fix_2.compgen.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/up_sampling2d_fix16.compgen.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/padding2d_fix16_1.compgen.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/depthwise_conv2d_fix_1.compgen.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/pointwise_conv2d_fix_1.compgen.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/network.compgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.pcores/verilog_sim
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/global.setting.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/padding2d_fix16.compgen.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/depthwise_conv2d_fix_4.compgen.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/pointwise_conv2d_fix_4.compgen.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/max_pooling2d_fix16_1.compgen.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/padding2d_fix16_4.compgen.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/depthwise_conv2d_fix_3.compgen.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/pointwise_conv2d_fix_3.compgen.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/max_pooling2d_fix16.compgen.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/padding2d_fix16_3.compgen.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/depthwise_conv2d_fix_2.compgen.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/pointwise_conv2d_fix.compgen.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/up_sampling2d_fix16_1.compgen.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/padding2d_fix16_2.compgen.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/depthwise_conv2d_fix.compgen.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/pointwise_conv2d_fix_2.compgen.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/up_sampling2d_fix16.compgen.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/padding2d_fix16_1.compgen.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/depthwise_conv2d_fix_1.compgen.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/pointwise_conv2d_fix_1.compgen.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/network.compgen.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/global.setting.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/network.constraint.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/network.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=28
+INFO-FLOW: DBG:CMD:       copy ip_driver_dir 1_0 /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/driver
+INFO-FLOW: DBG:CMD:       generate_ip_script #gSsdmPorts=28
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/network.tbgen.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/network.tbgen.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/network.tbgen.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/network.tbgen.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/network.tbgen.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/network.tbgen.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/network.tbgen.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/global.setting.tcl 
+Execute     get_config_sdx -target 
+INFO-FLOW: DBG:CMD:       generate_ip_auxiliary
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD:       prepArgInfo -> loadAnalyze_DB top_module=network
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/network.rtl_wrap.cfg.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/network.rtl_wrap.cfg.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/network.rtl_wrap.cfg.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/network.tbgen.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/network.tbgen.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/network.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_top_info
+INFO-FLOW: DBG:CMD:       prepArgInfo -> loadAnalyze_DB top_module=network
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/network.rtl_wrap.cfg.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/network.rtl_wrap.cfg.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/network.rtl_wrap.cfg.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/network.tbgen.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/network.tbgen.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD:       generate_ip_bd_script
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/network.tbgen.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/global.setting.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/network.constraint.tcl 
+INFO-FLOW: DBG:CMD:       generate_ipi_example_script
+INFO-FLOW: DBG:CMD:       generate_syn_sh
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/global.setting.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD:       generate_imp_constraints
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/network.constraint.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/network.tbgen.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/network.constraint.tcl 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/network.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       copy-tb-rtl-files
+INFO-FLOW: DBG:CMD:       copy-tb-data-files
+INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
+INFO-FLOW: DBG:CMD: read_platform_lib /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/global.setting.tcl
+Execute     source /tools/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/common.gen 
+Execute       source /tools/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /tools/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op.gen 
+Execute     source /tools/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /tools/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/interface.gen 
+Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/global.setting.tcl 
+Execute     source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute       source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute         source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Execute         source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Execute     source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+INFO-FLOW: DBG:CMD:     exec /home/masudalab/DeepCAEonFPGA/HLS/network/impl/ip/pack.sh
+Command   export_design done; 19.44 sec.
+Command ap_source done; 19.64 sec.
+Execute cleanup_all 

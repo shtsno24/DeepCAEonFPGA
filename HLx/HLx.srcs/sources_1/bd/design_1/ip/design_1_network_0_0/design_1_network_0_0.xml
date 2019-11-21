@@ -1181,11 +1181,11 @@ m {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format l
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Oct 28 02:42:21 UTC 2019</spirit:value>
+            <spirit:value>Thu Nov 21 07:49:33 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:dfb5001d</spirit:value>
+            <spirit:value>9:74ef5334</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1201,11 +1201,11 @@ m {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format l
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Oct 28 02:42:21 UTC 2019</spirit:value>
+            <spirit:value>Thu Nov 21 07:49:33 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:dfb5001d</spirit:value>
+            <spirit:value>9:74ef5334</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1221,11 +1221,11 @@ m {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format l
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Oct 28 02:42:21 UTC 2019</spirit:value>
+            <spirit:value>Thu Nov 21 07:49:33 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:c3fc9248</spirit:value>
+            <spirit:value>9:68a6c161</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1241,11 +1241,11 @@ m {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format l
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Oct 28 02:42:21 UTC 2019</spirit:value>
+            <spirit:value>Thu Nov 21 07:49:33 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:c3fc9248</spirit:value>
+            <spirit:value>9:68a6c161</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1259,11 +1259,11 @@ m {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format l
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Oct 28 02:44:09 UTC 2019</spirit:value>
+            <spirit:value>Thu Nov 21 07:51:25 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:dfb5001d</spirit:value>
+            <spirit:value>9:74ef5334</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1886,139 +1886,83 @@ m {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format l
         <spirit:userFileType>USED_IN_out_of_context</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fe20/hdl/verilog/conv2d_fix16.v</spirit:name>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/depthwise_conv2d_fix.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fe20/hdl/verilog/conv2d_fix16_1.v</spirit:name>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/depthwise_conv2d_fix_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fe20/hdl/verilog/conv2d_fix16_1_Conv2D_0_b.v</spirit:name>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/depthwise_conv2d_fix_1_SeparableConv2D_4_w_s.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/conv2d_fix16_1_Conv2D_0_b_rom.dat</spirit:name>
+        <spirit:name>hdl/verilog/depthwise_conv2d_fix_1_SeparableConv2D_4_w_s_rom.dat</spirit:name>
         <spirit:userFileType>mif</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fe20/hdl/verilog/conv2d_fix16_1_Conv2D_0_w_0.v</spirit:name>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/depthwise_conv2d_fix_2.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/conv2d_fix16_1_Conv2D_0_w_0_rom.dat</spirit:name>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/depthwise_conv2d_fix_2_SeparableConv2D_2_w_s.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/depthwise_conv2d_fix_2_SeparableConv2D_2_w_s_rom.dat</spirit:name>
         <spirit:userFileType>mif</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fe20/hdl/verilog/conv2d_fix16_2.v</spirit:name>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/depthwise_conv2d_fix_3.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fe20/hdl/verilog/conv2d_fix16_2_Conv2D_1_b.v</spirit:name>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/depthwise_conv2d_fix_3_SeparableConv2D_1_w_s.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/conv2d_fix16_2_Conv2D_1_b_rom.dat</spirit:name>
+        <spirit:name>hdl/verilog/depthwise_conv2d_fix_3_SeparableConv2D_1_w_s_rom.dat</spirit:name>
         <spirit:userFileType>mif</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fe20/hdl/verilog/conv2d_fix16_2_Conv2D_1_w.v</spirit:name>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/depthwise_conv2d_fix_4.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/conv2d_fix16_2_Conv2D_1_w_rom.dat</spirit:name>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/depthwise_conv2d_fix_4_SeparableConv2D_0_w_s.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/depthwise_conv2d_fix_4_SeparableConv2D_0_w_s_rom.dat</spirit:name>
         <spirit:userFileType>mif</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fe20/hdl/verilog/conv2d_fix16_3.v</spirit:name>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/depthwise_conv2d_fix_SeparableConv2D_3_w_s.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fe20/hdl/verilog/conv2d_fix16_3_Conv2D_2_b.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/verilog/conv2d_fix16_3_Conv2D_2_b_rom.dat</spirit:name>
+        <spirit:name>hdl/verilog/depthwise_conv2d_fix_SeparableConv2D_3_w_s_rom.dat</spirit:name>
         <spirit:userFileType>mif</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fe20/hdl/verilog/conv2d_fix16_3_Conv2D_2_w.v</spirit:name>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/max_pooling2d_fix16.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/conv2d_fix16_3_Conv2D_2_w_rom.dat</spirit:name>
-        <spirit:userFileType>mif</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>../../ipshared/fe20/hdl/verilog/conv2d_fix16_228.v</spirit:name>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/max_pooling2d_fix16_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fe20/hdl/verilog/conv2d_fix16_228_Conv2D_3_b.v</spirit:name>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/network_AXILiteS_s_axi.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/conv2d_fix16_228_Conv2D_3_b_rom.dat</spirit:name>
-        <spirit:userFileType>mif</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>../../ipshared/fe20/hdl/verilog/conv2d_fix16_228_Conv2D_3_w.v</spirit:name>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/network_input_0_array.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/conv2d_fix16_228_Conv2D_3_w_rom.dat</spirit:name>
-        <spirit:userFileType>mif</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>../../ipshared/fe20/hdl/verilog/conv2d_fix16_Conv2D_4_w_0.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/verilog/conv2d_fix16_Conv2D_4_w_0_rom.dat</spirit:name>
-        <spirit:userFileType>mif</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>../../ipshared/fe20/hdl/verilog/max_pooling2d_fix16.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>../../ipshared/fe20/hdl/verilog/max_pooling2d_fix16_1.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>../../ipshared/fe20/hdl/verilog/network_AXILiteS_s_axi.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>../../ipshared/fe20/hdl/verilog/network_Conv2D_0_array.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/verilog/network_Conv2D_0_array_ram.dat</spirit:name>
-        <spirit:userFileType>mif</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>../../ipshared/fe20/hdl/verilog/network_Conv2D_1_array.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/verilog/network_Conv2D_1_array_ram.dat</spirit:name>
-        <spirit:userFileType>mif</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>../../ipshared/fe20/hdl/verilog/network_Conv2D_4_array.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/verilog/network_Conv2D_4_array_ram.dat</spirit:name>
-        <spirit:userFileType>mif</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>../../ipshared/fe20/hdl/verilog/network_input_0_array_0.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>../../ipshared/fe20/hdl/verilog/network_MaxPooling2D_0_array.v</spirit:name>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/network_MaxPooling2D_0_array.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -2026,7 +1970,7 @@ m {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format l
         <spirit:userFileType>mif</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fe20/hdl/verilog/network_MaxPooling2D_1_array.v</spirit:name>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/network_MaxPooling2D_1_array.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -2034,31 +1978,35 @@ m {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format l
         <spirit:userFileType>mif</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fe20/hdl/verilog/network_mul_mul_5ns_16ns_21_1_1.v</spirit:name>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/network_mul_mul_16ns_16ns_32_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fe20/hdl/verilog/network_mul_mul_13s_16s_29_1_1.v</spirit:name>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/network_mul_mul_16s_12s_28_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fe20/hdl/verilog/network_mul_mul_16ns_16ns_32_1_1.v</spirit:name>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/network_mul_mul_16s_13s_29_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fe20/hdl/verilog/network_mul_mul_16s_14s_30_1_1.v</spirit:name>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/network_mul_mul_16s_14s_30_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fe20/hdl/verilog/network_out_0_id_V.v</spirit:name>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/network_mul_mul_16s_15ns_30_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fe20/hdl/verilog/network_out_0_keep_V.v</spirit:name>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/network_mul_mul_16s_15s_30_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fe20/hdl/verilog/network_Padding2D_0_array.v</spirit:name>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/network_mul_mul_16s_16s_16_1_1.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/network_Padding2D_0_array.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -2066,7 +2014,7 @@ m {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format l
         <spirit:userFileType>mif</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fe20/hdl/verilog/network_Padding2D_1_array.v</spirit:name>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/network_Padding2D_1_array.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -2074,7 +2022,7 @@ m {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format l
         <spirit:userFileType>mif</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fe20/hdl/verilog/network_Padding2D_2_array.v</spirit:name>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/network_Padding2D_2_array.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -2082,7 +2030,7 @@ m {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format l
         <spirit:userFileType>mif</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fe20/hdl/verilog/network_Padding2D_3_array.v</spirit:name>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/network_Padding2D_3_array.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -2090,7 +2038,7 @@ m {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format l
         <spirit:userFileType>mif</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fe20/hdl/verilog/network_Padding2D_4_array.v</spirit:name>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/network_Padding2D_4_array.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -2098,35 +2046,111 @@ m {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format l
         <spirit:userFileType>mif</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fe20/hdl/verilog/padding2d_fix16.v</spirit:name>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/network_SeparableConv2D_0_ar.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fe20/hdl/verilog/padding2d_fix16_1.v</spirit:name>
+        <spirit:name>hdl/verilog/network_SeparableConv2D_0_ar_ram.dat</spirit:name>
+        <spirit:userFileType>mif</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/network_SeparableConv2D_0_m_s.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fe20/hdl/verilog/padding2d_fix16_2.v</spirit:name>
+        <spirit:name>hdl/verilog/network_SeparableConv2D_0_m_s_ram.dat</spirit:name>
+        <spirit:userFileType>mif</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/network_SeparableConv2D_1_ar.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fe20/hdl/verilog/padding2d_fix16_3.v</spirit:name>
+        <spirit:name>hdl/verilog/network_SeparableConv2D_1_ar_ram.dat</spirit:name>
+        <spirit:userFileType>mif</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/padding2d_fix16.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fe20/hdl/verilog/padding2d_fix16_4.v</spirit:name>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/padding2d_fix16_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fe20/hdl/verilog/up_sampling2d_fix16.v</spirit:name>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/padding2d_fix16_2.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fe20/hdl/verilog/up_sampling2d_fix16_1.v</spirit:name>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/padding2d_fix16_3.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fe20/hdl/verilog/network.v</spirit:name>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/padding2d_fix16_4.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/pointwise_conv2d_fix.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/pointwise_conv2d_fix_1.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/pointwise_conv2d_fix_2.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/pointwise_conv2d_fix_2_SeparableConv2D_3_b_s.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/pointwise_conv2d_fix_2_SeparableConv2D_3_b_s_rom.dat</spirit:name>
+        <spirit:userFileType>mif</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/pointwise_conv2d_fix_3.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/pointwise_conv2d_fix_3_SeparableConv2D_1_b_s.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/pointwise_conv2d_fix_3_SeparableConv2D_1_b_s_rom.dat</spirit:name>
+        <spirit:userFileType>mif</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/pointwise_conv2d_fix_4.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/pointwise_conv2d_fix_4_SeparableConv2D_0_b_s.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/pointwise_conv2d_fix_4_SeparableConv2D_0_b_s_rom.dat</spirit:name>
+        <spirit:userFileType>mif</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/pointwise_conv2d_fix_SeparableConv2D_2_b_s.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/pointwise_conv2d_fix_SeparableConv2D_2_b_s_rom.dat</spirit:name>
+        <spirit:userFileType>mif</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/up_sampling2d_fix16.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/up_sampling2d_fix16_1.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/network.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
@@ -2141,160 +2165,97 @@ m {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format l
     <spirit:fileSet>
       <spirit:name>xilinx_verilogbehavioralsimulation_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/fe20/hdl/verilog/conv2d_fix16.v</spirit:name>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/depthwise_conv2d_fix.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fe20/hdl/verilog/conv2d_fix16_1.v</spirit:name>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/depthwise_conv2d_fix_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fe20/hdl/verilog/conv2d_fix16_1_Conv2D_0_b.v</spirit:name>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/depthwise_conv2d_fix_1_SeparableConv2D_4_w_s.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/conv2d_fix16_1_Conv2D_0_b_rom.dat</spirit:name>
+        <spirit:name>hdl/verilog/depthwise_conv2d_fix_1_SeparableConv2D_4_w_s_rom.dat</spirit:name>
         <spirit:userFileType>mif</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fe20/hdl/verilog/conv2d_fix16_1_Conv2D_0_w_0.v</spirit:name>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/depthwise_conv2d_fix_2.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/conv2d_fix16_1_Conv2D_0_w_0_rom.dat</spirit:name>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/depthwise_conv2d_fix_2_SeparableConv2D_2_w_s.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/depthwise_conv2d_fix_2_SeparableConv2D_2_w_s_rom.dat</spirit:name>
         <spirit:userFileType>mif</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fe20/hdl/verilog/conv2d_fix16_2.v</spirit:name>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/depthwise_conv2d_fix_3.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fe20/hdl/verilog/conv2d_fix16_2_Conv2D_1_b.v</spirit:name>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/depthwise_conv2d_fix_3_SeparableConv2D_1_w_s.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/conv2d_fix16_2_Conv2D_1_b_rom.dat</spirit:name>
+        <spirit:name>hdl/verilog/depthwise_conv2d_fix_3_SeparableConv2D_1_w_s_rom.dat</spirit:name>
         <spirit:userFileType>mif</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fe20/hdl/verilog/conv2d_fix16_2_Conv2D_1_w.v</spirit:name>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/depthwise_conv2d_fix_4.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/conv2d_fix16_2_Conv2D_1_w_rom.dat</spirit:name>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/depthwise_conv2d_fix_4_SeparableConv2D_0_w_s.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/depthwise_conv2d_fix_4_SeparableConv2D_0_w_s_rom.dat</spirit:name>
         <spirit:userFileType>mif</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fe20/hdl/verilog/conv2d_fix16_3.v</spirit:name>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/depthwise_conv2d_fix_SeparableConv2D_3_w_s.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fe20/hdl/verilog/conv2d_fix16_3_Conv2D_2_b.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/verilog/conv2d_fix16_3_Conv2D_2_b_rom.dat</spirit:name>
+        <spirit:name>hdl/verilog/depthwise_conv2d_fix_SeparableConv2D_3_w_s_rom.dat</spirit:name>
         <spirit:userFileType>mif</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fe20/hdl/verilog/conv2d_fix16_3_Conv2D_2_w.v</spirit:name>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/max_pooling2d_fix16.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/conv2d_fix16_3_Conv2D_2_w_rom.dat</spirit:name>
-        <spirit:userFileType>mif</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>../../ipshared/fe20/hdl/verilog/conv2d_fix16_228.v</spirit:name>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/max_pooling2d_fix16_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fe20/hdl/verilog/conv2d_fix16_228_Conv2D_3_b.v</spirit:name>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/network_AXILiteS_s_axi.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/conv2d_fix16_228_Conv2D_3_b_rom.dat</spirit:name>
-        <spirit:userFileType>mif</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>../../ipshared/fe20/hdl/verilog/conv2d_fix16_228_Conv2D_3_w.v</spirit:name>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/network_input_0_array.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/conv2d_fix16_228_Conv2D_3_w_rom.dat</spirit:name>
-        <spirit:userFileType>mif</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>../../ipshared/fe20/hdl/verilog/conv2d_fix16_Conv2D_4_w_0.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/verilog/conv2d_fix16_Conv2D_4_w_0_rom.dat</spirit:name>
-        <spirit:userFileType>mif</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>../../ipshared/fe20/hdl/verilog/max_pooling2d_fix16.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>../../ipshared/fe20/hdl/verilog/max_pooling2d_fix16_1.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>../../ipshared/fe20/hdl/verilog/network_AXILiteS_s_axi.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>../../ipshared/fe20/hdl/verilog/network_Conv2D_0_array.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/verilog/network_Conv2D_0_array_ram.dat</spirit:name>
-        <spirit:userFileType>mif</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>../../ipshared/fe20/hdl/verilog/network_Conv2D_1_array.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/verilog/network_Conv2D_1_array_ram.dat</spirit:name>
-        <spirit:userFileType>mif</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>../../ipshared/fe20/hdl/verilog/network_Conv2D_4_array.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/verilog/network_Conv2D_4_array_ram.dat</spirit:name>
-        <spirit:userFileType>mif</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>../../ipshared/fe20/hdl/verilog/network_input_0_array_0.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>../../ipshared/fe20/hdl/verilog/network_MaxPooling2D_0_array.v</spirit:name>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/network_MaxPooling2D_0_array.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -2303,7 +2264,7 @@ m {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format l
         <spirit:userFileType>mif</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fe20/hdl/verilog/network_MaxPooling2D_1_array.v</spirit:name>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/network_MaxPooling2D_1_array.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -2312,37 +2273,42 @@ m {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format l
         <spirit:userFileType>mif</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fe20/hdl/verilog/network_mul_mul_5ns_16ns_21_1_1.v</spirit:name>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/network_mul_mul_16ns_16ns_32_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fe20/hdl/verilog/network_mul_mul_13s_16s_29_1_1.v</spirit:name>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/network_mul_mul_16s_12s_28_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fe20/hdl/verilog/network_mul_mul_16ns_16ns_32_1_1.v</spirit:name>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/network_mul_mul_16s_13s_29_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fe20/hdl/verilog/network_mul_mul_16s_14s_30_1_1.v</spirit:name>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/network_mul_mul_16s_14s_30_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fe20/hdl/verilog/network_out_0_id_V.v</spirit:name>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/network_mul_mul_16s_15ns_30_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fe20/hdl/verilog/network_out_0_keep_V.v</spirit:name>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/network_mul_mul_16s_15s_30_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fe20/hdl/verilog/network_Padding2D_0_array.v</spirit:name>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/network_mul_mul_16s_16s_16_1_1.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/network_Padding2D_0_array.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -2351,7 +2317,7 @@ m {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format l
         <spirit:userFileType>mif</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fe20/hdl/verilog/network_Padding2D_1_array.v</spirit:name>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/network_Padding2D_1_array.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -2360,7 +2326,7 @@ m {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format l
         <spirit:userFileType>mif</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fe20/hdl/verilog/network_Padding2D_2_array.v</spirit:name>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/network_Padding2D_2_array.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -2369,7 +2335,7 @@ m {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format l
         <spirit:userFileType>mif</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fe20/hdl/verilog/network_Padding2D_3_array.v</spirit:name>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/network_Padding2D_3_array.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -2378,7 +2344,7 @@ m {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format l
         <spirit:userFileType>mif</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fe20/hdl/verilog/network_Padding2D_4_array.v</spirit:name>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/network_Padding2D_4_array.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -2387,42 +2353,130 @@ m {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format l
         <spirit:userFileType>mif</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fe20/hdl/verilog/padding2d_fix16.v</spirit:name>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/network_SeparableConv2D_0_ar.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fe20/hdl/verilog/padding2d_fix16_1.v</spirit:name>
+        <spirit:name>hdl/verilog/network_SeparableConv2D_0_ar_ram.dat</spirit:name>
+        <spirit:userFileType>mif</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/network_SeparableConv2D_0_m_s.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fe20/hdl/verilog/padding2d_fix16_2.v</spirit:name>
+        <spirit:name>hdl/verilog/network_SeparableConv2D_0_m_s_ram.dat</spirit:name>
+        <spirit:userFileType>mif</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/network_SeparableConv2D_1_ar.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fe20/hdl/verilog/padding2d_fix16_3.v</spirit:name>
+        <spirit:name>hdl/verilog/network_SeparableConv2D_1_ar_ram.dat</spirit:name>
+        <spirit:userFileType>mif</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/padding2d_fix16.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fe20/hdl/verilog/padding2d_fix16_4.v</spirit:name>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/padding2d_fix16_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fe20/hdl/verilog/up_sampling2d_fix16.v</spirit:name>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/padding2d_fix16_2.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fe20/hdl/verilog/up_sampling2d_fix16_1.v</spirit:name>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/padding2d_fix16_3.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/fe20/hdl/verilog/network.v</spirit:name>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/padding2d_fix16_4.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/pointwise_conv2d_fix.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/pointwise_conv2d_fix_1.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/pointwise_conv2d_fix_2.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/pointwise_conv2d_fix_2_SeparableConv2D_3_b_s.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/pointwise_conv2d_fix_2_SeparableConv2D_3_b_s_rom.dat</spirit:name>
+        <spirit:userFileType>mif</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/pointwise_conv2d_fix_3.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/pointwise_conv2d_fix_3_SeparableConv2D_1_b_s.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/pointwise_conv2d_fix_3_SeparableConv2D_1_b_s_rom.dat</spirit:name>
+        <spirit:userFileType>mif</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/pointwise_conv2d_fix_4.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/pointwise_conv2d_fix_4_SeparableConv2D_0_b_s.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/pointwise_conv2d_fix_4_SeparableConv2D_0_b_s_rom.dat</spirit:name>
+        <spirit:userFileType>mif</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/pointwise_conv2d_fix_SeparableConv2D_2_b_s.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/pointwise_conv2d_fix_SeparableConv2D_2_b_s_rom.dat</spirit:name>
+        <spirit:userFileType>mif</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/up_sampling2d_fix16.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/up_sampling2d_fix16_1.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/ca37/hdl/verilog/network.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -2538,7 +2592,7 @@ m {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format l
     <xilinx:coreExtensions>
       <xilinx:displayName>Network</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>1910281139</xilinx:coreRevision>
+      <xilinx:coreRevision>1911211642</xilinx:coreRevision>
       <xilinx:configElementInfos>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.AP_CLK.CLK_DOMAIN" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.AP_CLK.FREQ_HZ" xilinx:valueSource="user_prop" xilinx:valuePermission="bd"/>
@@ -2586,10 +2640,10 @@ m {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format l
       </xilinx:configElementInfos>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
-      <xilinx:xilinxVersion>2018.3</xilinx:xilinxVersion>
+      <xilinx:xilinxVersion>2018.3.1</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="8763b72d"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="0a17ad0c"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="05306fe4"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="41c0e095"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="d58e74bd"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="de28827b"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="ed226a7c"/>
