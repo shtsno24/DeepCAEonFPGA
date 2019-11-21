@@ -53,10 +53,12 @@ add_files -tb layers_cpp/array_printf_float32.cpp -cflags "-std=c++14 -Wno-unkno
 add_files -tb layers_cpp/array_printf_float32.h -cflags "-std=c++14 -Wno-unknown-pragmas"
 add_files -tb mnist_AXI_Stream_tb.cpp -cflags "-std=c++14 -Wno-unknown-pragmas"
 open_solution "network"
-set_part {xc7z020clg400-1} -tool vivado
+set_part {xc7z020clg400-1}
 create_clock -period 10 -name default
 config_compile -no_signed_zeros=0 -unsafe_math_optimizations=0
 config_export -format ip_catalog -rtl verilog -use_netlist none -vivado_impl_strategy default -vivado_phys_opt place -vivado_report_level 0 -vivado_synth_design_args {-directive sdx_optimization_effort_high} -vivado_synth_strategy default
+config_sdx -optimization_level none -target none
+config_schedule -effort medium -relax_ii_for_timing=0
 source "./HLS/network/directives.tcl"
 csim_design -clean
 csynth_design

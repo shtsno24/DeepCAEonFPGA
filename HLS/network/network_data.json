@@ -23,7 +23,12 @@
       "config_export -vivado_phys_opt=place",
       "config_export -vivado_report_level=0",
       "config_export -vivado_synth_design_args {-directive sdx_optimization_effort_high}",
-      "config_export -vivado_synth_strategy=default"
+      "config_export -vivado_synth_strategy=default",
+      "config_sdx -optimization_level=none",
+      "config_sdx -target=none",
+      "config_bind -effort=medium",
+      "config_schedule -effort=medium",
+      "config_schedule -relax_ii_for_timing=0"
     ],
     "DirectiveTcl": ["set_directive_unroll conv2d_fix16\/conv2d_fix16_label3 "],
     "DirectiveInfo": ["unroll conv2d_fix16\/conv2d_fix16_label3 {} {}"]
@@ -189,7 +194,8 @@
       "impl\/misc\/drivers\/network_v1_0\/src\/xnetwork_sinit.c"
     ],
     "Misc": ["impl\/misc\/logo.png"],
-    "DesignXml": "\/home\/masudalab\/DeepCAEonFPGA\/HLS\/network\/.autopilot\/db\/network.design.xml"
+    "DesignXml": "\/home\/masudalab\/DeepCAEonFPGA\/HLS\/network\/.autopilot\/db\/network.design.xml",
+    "DebugDir": "\/home\/masudalab\/DeepCAEonFPGA\/HLS\/network\/.debug"
   },
   "SubcoreInfo": {
     "HasXpmMemory": false,
@@ -1961,7 +1967,7 @@
   },
   "GenData": {
     "DataVersion": "0.1",
-    "Time": "2019-11-21 14:59:22 JST",
+    "Time": "2019-11-21 16:08:21 JST",
     "ToolName": "vivado_hls",
     "ToolVersion": "2018.3.1"
   }
