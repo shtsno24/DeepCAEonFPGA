@@ -150,6 +150,8 @@ extern "C" {
 
 
 
+
+
 # 1 "/tools/Xilinx/Vivado/2018.3/include/gmp.h" 1
 # 26 "/tools/Xilinx/Vivado/2018.3/include/gmp.h"
 # 1 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/iosfwd" 1 3
@@ -3784,7 +3786,7 @@ enum
   GMP_ERROR_SQRT_OF_NEGATIVE = 4,
   GMP_ERROR_INVALID_ARGUMENT = 8
 };
-# 7 "mnist_AXI_Stream.cpp" 2
+# 9 "mnist_AXI_Stream.cpp" 2
 # 1 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/iomanip" 1 3
 # 38 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/iomanip" 3
 # 38 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/iomanip" 3
@@ -15355,7 +15357,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
 }
-# 8 "mnist_AXI_Stream.cpp" 2
+# 10 "mnist_AXI_Stream.cpp" 2
 # 1 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 1 3
 # 33 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 3
 # 1 "/usr/include/stdint.h" 1 3 4
@@ -15425,14 +15427,7344 @@ typedef unsigned long int uintptr_t;
 typedef __intmax_t intmax_t;
 typedef __uintmax_t uintmax_t;
 # 34 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 2 3
-# 9 "mnist_AXI_Stream.cpp" 2
-
-# 1 "./mnist_AXI_Stream.h" 1
-
-
-
+# 11 "mnist_AXI_Stream.cpp" 2
+# 1 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/iostream" 1 3
+# 37 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/iostream" 3
+# 37 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/iostream" 3
 
 
+# 1 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream" 1 3
+# 38 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream" 3
+# 38 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream" 3
+
+# 1 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ios" 1 3
+# 37 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ios" 3
+# 37 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ios" 3
+
+
+
+
+
+
+# 1 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/streambuf" 1 3
+# 37 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/streambuf" 3
+# 37 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/streambuf" 3
+
+
+
+
+
+
+
+
+namespace std __attribute__ ((__visibility__ ("default")))
+{
+
+
+  template<typename _CharT, typename _Traits>
+    streamsize
+    __copy_streambufs_eof(basic_streambuf<_CharT, _Traits>*,
+     basic_streambuf<_CharT, _Traits>*, bool&);
+# 115 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/streambuf" 3
+  template<typename _CharT, typename _Traits>
+    class basic_streambuf
+    {
+    public:
+
+
+
+
+
+
+      typedef _CharT char_type;
+      typedef _Traits traits_type;
+      typedef typename traits_type::int_type int_type;
+      typedef typename traits_type::pos_type pos_type;
+      typedef typename traits_type::off_type off_type;
+
+
+
+
+      typedef basic_streambuf<char_type, traits_type> __streambuf_type;
+
+
+      friend class basic_ios<char_type, traits_type>;
+      friend class basic_istream<char_type, traits_type>;
+      friend class basic_ostream<char_type, traits_type>;
+      friend class istreambuf_iterator<char_type, traits_type>;
+      friend class ostreambuf_iterator<char_type, traits_type>;
+
+      friend streamsize
+      __copy_streambufs_eof<>(__streambuf_type*, __streambuf_type*, bool&);
+
+      template<bool _IsMove, typename _CharT2>
+        friend typename __gnu_cxx::__enable_if<__is_char<_CharT2>::__value,
+            _CharT2*>::__type
+        __copy_move_a2(istreambuf_iterator<_CharT2>,
+         istreambuf_iterator<_CharT2>, _CharT2*);
+
+      template<typename _CharT2>
+        friend typename __gnu_cxx::__enable_if<__is_char<_CharT2>::__value,
+      istreambuf_iterator<_CharT2> >::__type
+        find(istreambuf_iterator<_CharT2>, istreambuf_iterator<_CharT2>,
+      const _CharT2&);
+
+      template<typename _CharT2, typename _Traits2>
+        friend basic_istream<_CharT2, _Traits2>&
+        operator>>(basic_istream<_CharT2, _Traits2>&, _CharT2*);
+
+      template<typename _CharT2, typename _Traits2, typename _Alloc>
+        friend basic_istream<_CharT2, _Traits2>&
+        operator>>(basic_istream<_CharT2, _Traits2>&,
+     basic_string<_CharT2, _Traits2, _Alloc>&);
+
+      template<typename _CharT2, typename _Traits2, typename _Alloc>
+        friend basic_istream<_CharT2, _Traits2>&
+        getline(basic_istream<_CharT2, _Traits2>&,
+  basic_string<_CharT2, _Traits2, _Alloc>&, _CharT2);
+
+    protected:
+# 181 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/streambuf" 3
+      char_type* _M_in_beg;
+      char_type* _M_in_cur;
+      char_type* _M_in_end;
+      char_type* _M_out_beg;
+      char_type* _M_out_cur;
+      char_type* _M_out_end;
+
+
+      locale _M_buf_locale;
+
+  public:
+
+      virtual
+      ~basic_streambuf()
+      { }
+# 205 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/streambuf" 3
+      locale
+      pubimbue(const locale &__loc)
+      {
+ locale __tmp(this->getloc());
+ this->imbue(__loc);
+ _M_buf_locale = __loc;
+ return __tmp;
+      }
+# 222 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/streambuf" 3
+      locale
+      getloc() const
+      { return _M_buf_locale; }
+# 235 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/streambuf" 3
+      __streambuf_type*
+      pubsetbuf(char_type* __s, streamsize __n)
+      { return this->setbuf(__s, __n); }
+
+      pos_type
+      pubseekoff(off_type __off, ios_base::seekdir __way,
+   ios_base::openmode __mode = ios_base::in | ios_base::out)
+      { return this->seekoff(__off, __way, __mode); }
+
+      pos_type
+      pubseekpos(pos_type __sp,
+   ios_base::openmode __mode = ios_base::in | ios_base::out)
+      { return this->seekpos(__sp, __mode); }
+
+      int
+      pubsync() { return this->sync(); }
+# 262 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/streambuf" 3
+      streamsize
+      in_avail()
+      {
+ const streamsize __ret = this->egptr() - this->gptr();
+ return __ret ? __ret : this->showmanyc();
+      }
+# 276 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/streambuf" 3
+      int_type
+      snextc()
+      {
+ int_type __ret = traits_type::eof();
+ if (__builtin_expect(!traits_type::eq_int_type(this->sbumpc(),
+             __ret), true))
+   __ret = this->sgetc();
+ return __ret;
+      }
+# 294 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/streambuf" 3
+      int_type
+      sbumpc()
+      {
+ int_type __ret;
+ if (__builtin_expect(this->gptr() < this->egptr(), true))
+   {
+     __ret = traits_type::to_int_type(*this->gptr());
+     this->gbump(1);
+   }
+ else
+   __ret = this->uflow();
+ return __ret;
+      }
+# 316 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/streambuf" 3
+      int_type
+      sgetc()
+      {
+ int_type __ret;
+ if (__builtin_expect(this->gptr() < this->egptr(), true))
+   __ret = traits_type::to_int_type(*this->gptr());
+ else
+   __ret = this->underflow();
+ return __ret;
+      }
+# 335 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/streambuf" 3
+      streamsize
+      sgetn(char_type* __s, streamsize __n)
+      { return this->xsgetn(__s, __n); }
+# 350 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/streambuf" 3
+      int_type
+      sputbackc(char_type __c)
+      {
+ int_type __ret;
+ const bool __testpos = this->eback() < this->gptr();
+ if (__builtin_expect(!__testpos ||
+        !traits_type::eq(__c, this->gptr()[-1]), false))
+   __ret = this->pbackfail(traits_type::to_int_type(__c));
+ else
+   {
+     this->gbump(-1);
+     __ret = traits_type::to_int_type(*this->gptr());
+   }
+ return __ret;
+      }
+# 375 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/streambuf" 3
+      int_type
+      sungetc()
+      {
+ int_type __ret;
+ if (__builtin_expect(this->eback() < this->gptr(), true))
+   {
+     this->gbump(-1);
+     __ret = traits_type::to_int_type(*this->gptr());
+   }
+ else
+   __ret = this->pbackfail();
+ return __ret;
+      }
+# 402 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/streambuf" 3
+      int_type
+      sputc(char_type __c)
+      {
+ int_type __ret;
+ if (__builtin_expect(this->pptr() < this->epptr(), true))
+   {
+     *this->pptr() = __c;
+     this->pbump(1);
+     __ret = traits_type::to_int_type(__c);
+   }
+ else
+   __ret = this->overflow(traits_type::to_int_type(__c));
+ return __ret;
+      }
+# 428 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/streambuf" 3
+      streamsize
+      sputn(const char_type* __s, streamsize __n)
+      { return this->xsputn(__s, __n); }
+
+    protected:
+# 442 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/streambuf" 3
+      basic_streambuf()
+      : _M_in_beg(0), _M_in_cur(0), _M_in_end(0),
+      _M_out_beg(0), _M_out_cur(0), _M_out_end(0),
+      _M_buf_locale(locale())
+      { }
+# 460 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/streambuf" 3
+      char_type*
+      eback() const { return _M_in_beg; }
+
+      char_type*
+      gptr() const { return _M_in_cur; }
+
+      char_type*
+      egptr() const { return _M_in_end; }
+# 476 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/streambuf" 3
+      void
+      gbump(int __n) { _M_in_cur += __n; }
+# 487 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/streambuf" 3
+      void
+      setg(char_type* __gbeg, char_type* __gnext, char_type* __gend)
+      {
+ _M_in_beg = __gbeg;
+ _M_in_cur = __gnext;
+ _M_in_end = __gend;
+      }
+# 507 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/streambuf" 3
+      char_type*
+      pbase() const { return _M_out_beg; }
+
+      char_type*
+      pptr() const { return _M_out_cur; }
+
+      char_type*
+      epptr() const { return _M_out_end; }
+# 523 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/streambuf" 3
+      void
+      pbump(int __n) { _M_out_cur += __n; }
+# 533 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/streambuf" 3
+      void
+      setp(char_type* __pbeg, char_type* __pend)
+      {
+ _M_out_beg = _M_out_cur = __pbeg;
+ _M_out_end = __pend;
+      }
+# 554 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/streambuf" 3
+      virtual void
+      imbue(const locale&)
+      { }
+# 569 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/streambuf" 3
+      virtual basic_streambuf<char_type,_Traits>*
+      setbuf(char_type*, streamsize)
+      { return this; }
+# 580 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/streambuf" 3
+      virtual pos_type
+      seekoff(off_type, ios_base::seekdir,
+       ios_base::openmode = ios_base::in | ios_base::out)
+      { return pos_type(off_type(-1)); }
+# 592 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/streambuf" 3
+      virtual pos_type
+      seekpos(pos_type,
+       ios_base::openmode = ios_base::in | ios_base::out)
+      { return pos_type(off_type(-1)); }
+# 605 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/streambuf" 3
+      virtual int
+      sync() { return 0; }
+# 627 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/streambuf" 3
+      virtual streamsize
+      showmanyc() { return 0; }
+# 643 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/streambuf" 3
+      virtual streamsize
+      xsgetn(char_type* __s, streamsize __n);
+# 665 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/streambuf" 3
+      virtual int_type
+      underflow()
+      { return traits_type::eof(); }
+# 678 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/streambuf" 3
+      virtual int_type
+      uflow()
+      {
+ int_type __ret = traits_type::eof();
+ const bool __testeof = traits_type::eq_int_type(this->underflow(),
+       __ret);
+ if (!__testeof)
+   {
+     __ret = traits_type::to_int_type(*this->gptr());
+     this->gbump(1);
+   }
+ return __ret;
+      }
+# 702 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/streambuf" 3
+      virtual int_type
+      pbackfail(int_type = traits_type::eof())
+      { return traits_type::eof(); }
+# 720 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/streambuf" 3
+      virtual streamsize
+      xsputn(const char_type* __s, streamsize __n);
+# 746 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/streambuf" 3
+      virtual int_type
+      overflow(int_type = traits_type::eof())
+      { return traits_type::eof(); }
+
+
+
+    public:
+# 761 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/streambuf" 3
+      void
+      stossc()
+      {
+ if (this->gptr() < this->egptr())
+   this->gbump(1);
+ else
+   this->uflow();
+      }
+
+
+
+      void
+      __safe_gbump(streamsize __n) { _M_in_cur += __n; }
+
+      void
+      __safe_pbump(streamsize __n) { _M_out_cur += __n; }
+
+    private:
+
+
+      basic_streambuf(const __streambuf_type& __sb)
+      : _M_in_beg(__sb._M_in_beg), _M_in_cur(__sb._M_in_cur),
+      _M_in_end(__sb._M_in_end), _M_out_beg(__sb._M_out_beg),
+      _M_out_cur(__sb._M_out_cur), _M_out_end(__sb._M_out_cur),
+      _M_buf_locale(__sb._M_buf_locale)
+      { }
+
+      __streambuf_type&
+      operator=(const __streambuf_type&) { return *this; };
+    };
+
+
+  template<>
+    streamsize
+    __copy_streambufs_eof(basic_streambuf<char>* __sbin,
+     basic_streambuf<char>* __sbout, bool& __ineof);
+
+  template<>
+    streamsize
+    __copy_streambufs_eof(basic_streambuf<wchar_t>* __sbin,
+     basic_streambuf<wchar_t>* __sbout, bool& __ineof);
+
+
+
+}
+
+
+# 1 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/streambuf.tcc" 1 3
+# 38 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/streambuf.tcc" 3
+# 38 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/streambuf.tcc" 3
+
+namespace std __attribute__ ((__visibility__ ("default")))
+{
+
+
+  template<typename _CharT, typename _Traits>
+    streamsize
+    basic_streambuf<_CharT, _Traits>::
+    xsgetn(char_type* __s, streamsize __n)
+    {
+      streamsize __ret = 0;
+      while (__ret < __n)
+ {
+   const streamsize __buf_len = this->egptr() - this->gptr();
+   if (__buf_len)
+     {
+       const streamsize __remaining = __n - __ret;
+       const streamsize __len = std::min(__buf_len, __remaining);
+       traits_type::copy(__s, this->gptr(), __len);
+       __ret += __len;
+       __s += __len;
+       this->__safe_gbump(__len);
+     }
+
+   if (__ret < __n)
+     {
+       const int_type __c = this->uflow();
+       if (!traits_type::eq_int_type(__c, traits_type::eof()))
+  {
+    traits_type::assign(*__s++, traits_type::to_char_type(__c));
+    ++__ret;
+  }
+       else
+  break;
+     }
+ }
+      return __ret;
+    }
+
+  template<typename _CharT, typename _Traits>
+    streamsize
+    basic_streambuf<_CharT, _Traits>::
+    xsputn(const char_type* __s, streamsize __n)
+    {
+      streamsize __ret = 0;
+      while (__ret < __n)
+ {
+   const streamsize __buf_len = this->epptr() - this->pptr();
+   if (__buf_len)
+     {
+       const streamsize __remaining = __n - __ret;
+       const streamsize __len = std::min(__buf_len, __remaining);
+       traits_type::copy(this->pptr(), __s, __len);
+       __ret += __len;
+       __s += __len;
+       this->__safe_pbump(__len);
+     }
+
+   if (__ret < __n)
+     {
+       int_type __c = this->overflow(traits_type::to_int_type(*__s));
+       if (!traits_type::eq_int_type(__c, traits_type::eof()))
+  {
+    ++__ret;
+    ++__s;
+  }
+       else
+  break;
+     }
+ }
+      return __ret;
+    }
+
+
+
+
+  template<typename _CharT, typename _Traits>
+    streamsize
+    __copy_streambufs_eof(basic_streambuf<_CharT, _Traits>* __sbin,
+     basic_streambuf<_CharT, _Traits>* __sbout,
+     bool& __ineof)
+    {
+      streamsize __ret = 0;
+      __ineof = true;
+      typename _Traits::int_type __c = __sbin->sgetc();
+      while (!_Traits::eq_int_type(__c, _Traits::eof()))
+ {
+   __c = __sbout->sputc(_Traits::to_char_type(__c));
+   if (_Traits::eq_int_type(__c, _Traits::eof()))
+     {
+       __ineof = false;
+       break;
+     }
+   ++__ret;
+   __c = __sbin->snextc();
+ }
+      return __ret;
+    }
+
+  template<typename _CharT, typename _Traits>
+    inline streamsize
+    __copy_streambufs(basic_streambuf<_CharT, _Traits>* __sbin,
+        basic_streambuf<_CharT, _Traits>* __sbout)
+    {
+      bool __ineof;
+      return __copy_streambufs_eof(__sbin, __sbout, __ineof);
+    }
+
+
+
+
+  extern template class basic_streambuf<char>;
+  extern template
+    streamsize
+    __copy_streambufs(basic_streambuf<char>*,
+        basic_streambuf<char>*);
+  extern template
+    streamsize
+    __copy_streambufs_eof(basic_streambuf<char>*,
+     basic_streambuf<char>*, bool&);
+
+
+  extern template class basic_streambuf<wchar_t>;
+  extern template
+    streamsize
+    __copy_streambufs(basic_streambuf<wchar_t>*,
+        basic_streambuf<wchar_t>*);
+  extern template
+    streamsize
+    __copy_streambufs_eof(basic_streambuf<wchar_t>*,
+     basic_streambuf<wchar_t>*, bool&);
+
+
+
+
+}
+# 808 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/streambuf" 2 3
+# 44 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ios" 2 3
+# 1 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/basic_ios.h" 1 3
+# 35 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/basic_ios.h" 3
+# 35 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/basic_ios.h" 3
+
+
+
+# 1 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 1 3
+# 39 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+# 39 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+
+# 1 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/cwctype" 1 3
+# 41 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/cwctype" 3
+# 41 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/cwctype" 3
+# 51 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/cwctype" 3
+# 1 "/usr/include/wctype.h" 1 3 4
+# 38 "/usr/include/wctype.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/wctype-wchar.h" 1 3 4
+# 38 "/usr/include/x86_64-linux-gnu/bits/wctype-wchar.h" 3 4
+typedef unsigned long int wctype_t;
+# 56 "/usr/include/x86_64-linux-gnu/bits/wctype-wchar.h" 3 4
+enum
+{
+  __ISwupper = 0,
+  __ISwlower = 1,
+  __ISwalpha = 2,
+  __ISwdigit = 3,
+  __ISwxdigit = 4,
+  __ISwspace = 5,
+  __ISwprint = 6,
+  __ISwgraph = 7,
+  __ISwblank = 8,
+  __ISwcntrl = 9,
+  __ISwpunct = 10,
+  __ISwalnum = 11,
+
+  _ISwupper = ((__ISwupper) < 8 ? (int) ((1UL << (__ISwupper)) << 24) : ((__ISwupper) < 16 ? (int) ((1UL << (__ISwupper)) << 8) : ((__ISwupper) < 24 ? (int) ((1UL << (__ISwupper)) >> 8) : (int) ((1UL << (__ISwupper)) >> 24)))),
+  _ISwlower = ((__ISwlower) < 8 ? (int) ((1UL << (__ISwlower)) << 24) : ((__ISwlower) < 16 ? (int) ((1UL << (__ISwlower)) << 8) : ((__ISwlower) < 24 ? (int) ((1UL << (__ISwlower)) >> 8) : (int) ((1UL << (__ISwlower)) >> 24)))),
+  _ISwalpha = ((__ISwalpha) < 8 ? (int) ((1UL << (__ISwalpha)) << 24) : ((__ISwalpha) < 16 ? (int) ((1UL << (__ISwalpha)) << 8) : ((__ISwalpha) < 24 ? (int) ((1UL << (__ISwalpha)) >> 8) : (int) ((1UL << (__ISwalpha)) >> 24)))),
+  _ISwdigit = ((__ISwdigit) < 8 ? (int) ((1UL << (__ISwdigit)) << 24) : ((__ISwdigit) < 16 ? (int) ((1UL << (__ISwdigit)) << 8) : ((__ISwdigit) < 24 ? (int) ((1UL << (__ISwdigit)) >> 8) : (int) ((1UL << (__ISwdigit)) >> 24)))),
+  _ISwxdigit = ((__ISwxdigit) < 8 ? (int) ((1UL << (__ISwxdigit)) << 24) : ((__ISwxdigit) < 16 ? (int) ((1UL << (__ISwxdigit)) << 8) : ((__ISwxdigit) < 24 ? (int) ((1UL << (__ISwxdigit)) >> 8) : (int) ((1UL << (__ISwxdigit)) >> 24)))),
+  _ISwspace = ((__ISwspace) < 8 ? (int) ((1UL << (__ISwspace)) << 24) : ((__ISwspace) < 16 ? (int) ((1UL << (__ISwspace)) << 8) : ((__ISwspace) < 24 ? (int) ((1UL << (__ISwspace)) >> 8) : (int) ((1UL << (__ISwspace)) >> 24)))),
+  _ISwprint = ((__ISwprint) < 8 ? (int) ((1UL << (__ISwprint)) << 24) : ((__ISwprint) < 16 ? (int) ((1UL << (__ISwprint)) << 8) : ((__ISwprint) < 24 ? (int) ((1UL << (__ISwprint)) >> 8) : (int) ((1UL << (__ISwprint)) >> 24)))),
+  _ISwgraph = ((__ISwgraph) < 8 ? (int) ((1UL << (__ISwgraph)) << 24) : ((__ISwgraph) < 16 ? (int) ((1UL << (__ISwgraph)) << 8) : ((__ISwgraph) < 24 ? (int) ((1UL << (__ISwgraph)) >> 8) : (int) ((1UL << (__ISwgraph)) >> 24)))),
+  _ISwblank = ((__ISwblank) < 8 ? (int) ((1UL << (__ISwblank)) << 24) : ((__ISwblank) < 16 ? (int) ((1UL << (__ISwblank)) << 8) : ((__ISwblank) < 24 ? (int) ((1UL << (__ISwblank)) >> 8) : (int) ((1UL << (__ISwblank)) >> 24)))),
+  _ISwcntrl = ((__ISwcntrl) < 8 ? (int) ((1UL << (__ISwcntrl)) << 24) : ((__ISwcntrl) < 16 ? (int) ((1UL << (__ISwcntrl)) << 8) : ((__ISwcntrl) < 24 ? (int) ((1UL << (__ISwcntrl)) >> 8) : (int) ((1UL << (__ISwcntrl)) >> 24)))),
+  _ISwpunct = ((__ISwpunct) < 8 ? (int) ((1UL << (__ISwpunct)) << 24) : ((__ISwpunct) < 16 ? (int) ((1UL << (__ISwpunct)) << 8) : ((__ISwpunct) < 24 ? (int) ((1UL << (__ISwpunct)) >> 8) : (int) ((1UL << (__ISwpunct)) >> 24)))),
+  _ISwalnum = ((__ISwalnum) < 8 ? (int) ((1UL << (__ISwalnum)) << 24) : ((__ISwalnum) < 16 ? (int) ((1UL << (__ISwalnum)) << 8) : ((__ISwalnum) < 24 ? (int) ((1UL << (__ISwalnum)) >> 8) : (int) ((1UL << (__ISwalnum)) >> 24))))
+};
+
+
+
+extern "C" {
+
+
+
+
+
+
+
+extern int iswalnum (wint_t __wc) throw ();
+
+
+
+
+
+extern int iswalpha (wint_t __wc) throw ();
+
+
+extern int iswcntrl (wint_t __wc) throw ();
+
+
+
+extern int iswdigit (wint_t __wc) throw ();
+
+
+
+extern int iswgraph (wint_t __wc) throw ();
+
+
+
+
+extern int iswlower (wint_t __wc) throw ();
+
+
+extern int iswprint (wint_t __wc) throw ();
+
+
+
+
+extern int iswpunct (wint_t __wc) throw ();
+
+
+
+
+extern int iswspace (wint_t __wc) throw ();
+
+
+
+
+extern int iswupper (wint_t __wc) throw ();
+
+
+
+
+extern int iswxdigit (wint_t __wc) throw ();
+
+
+
+
+
+extern int iswblank (wint_t __wc) throw ();
+# 155 "/usr/include/x86_64-linux-gnu/bits/wctype-wchar.h" 3 4
+extern wctype_t wctype (const char *__property) throw ();
+
+
+
+extern int iswctype (wint_t __wc, wctype_t __desc) throw ();
+
+
+
+
+
+
+extern wint_t towlower (wint_t __wc) throw ();
+
+
+extern wint_t towupper (wint_t __wc) throw ();
+
+}
+# 39 "/usr/include/wctype.h" 2 3 4
+
+
+
+
+
+extern "C" {
+
+
+
+typedef const __int32_t *wctrans_t;
+
+
+
+extern wctrans_t wctrans (const char *__property) throw ();
+
+
+extern wint_t towctrans (wint_t __wc, wctrans_t __desc) throw ();
+
+
+
+
+
+
+
+extern int iswalnum_l (wint_t __wc, locale_t __locale) throw ();
+
+
+
+
+
+extern int iswalpha_l (wint_t __wc, locale_t __locale) throw ();
+
+
+extern int iswcntrl_l (wint_t __wc, locale_t __locale) throw ();
+
+
+
+extern int iswdigit_l (wint_t __wc, locale_t __locale) throw ();
+
+
+
+extern int iswgraph_l (wint_t __wc, locale_t __locale) throw ();
+
+
+
+
+extern int iswlower_l (wint_t __wc, locale_t __locale) throw ();
+
+
+extern int iswprint_l (wint_t __wc, locale_t __locale) throw ();
+
+
+
+
+extern int iswpunct_l (wint_t __wc, locale_t __locale) throw ();
+
+
+
+
+extern int iswspace_l (wint_t __wc, locale_t __locale) throw ();
+
+
+
+
+extern int iswupper_l (wint_t __wc, locale_t __locale) throw ();
+
+
+
+
+extern int iswxdigit_l (wint_t __wc, locale_t __locale) throw ();
+
+
+
+
+extern int iswblank_l (wint_t __wc, locale_t __locale) throw ();
+
+
+
+extern wctype_t wctype_l (const char *__property, locale_t __locale)
+     throw ();
+
+
+
+extern int iswctype_l (wint_t __wc, wctype_t __desc, locale_t __locale)
+     throw ();
+
+
+
+
+
+
+extern wint_t towlower_l (wint_t __wc, locale_t __locale) throw ();
+
+
+extern wint_t towupper_l (wint_t __wc, locale_t __locale) throw ();
+
+
+
+extern wctrans_t wctrans_l (const char *__property, locale_t __locale)
+     throw ();
+
+
+extern wint_t towctrans_l (wint_t __wc, wctrans_t __desc,
+      locale_t __locale) throw ();
+
+
+
+}
+# 52 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/cwctype" 2 3
+# 81 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/cwctype" 3
+namespace std
+{
+  using ::wctrans_t;
+  using ::wctype_t;
+  using ::wint_t;
+
+  using ::iswalnum;
+  using ::iswalpha;
+
+  using ::iswblank;
+
+  using ::iswcntrl;
+  using ::iswctype;
+  using ::iswdigit;
+  using ::iswgraph;
+  using ::iswlower;
+  using ::iswprint;
+  using ::iswpunct;
+  using ::iswspace;
+  using ::iswupper;
+  using ::iswxdigit;
+  using ::towctrans;
+  using ::towlower;
+  using ::towupper;
+  using ::wctrans;
+  using ::wctype;
+}
+# 41 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 2 3
+# 1 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/cctype" 1 3
+# 41 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/cctype" 3
+# 41 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/cctype" 3
+# 42 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 2 3
+# 1 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/x86_64-unknown-linux-gnu/bits/ctype_base.h" 1 3
+# 37 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/x86_64-unknown-linux-gnu/bits/ctype_base.h" 3
+namespace std __attribute__ ((__visibility__ ("default")))
+{
+
+
+
+  struct ctype_base
+  {
+
+    typedef const int* __to_type;
+
+
+
+    typedef unsigned short mask;
+    static const mask upper = _ISupper;
+    static const mask lower = _ISlower;
+    static const mask alpha = _ISalpha;
+    static const mask digit = _ISdigit;
+    static const mask xdigit = _ISxdigit;
+    static const mask space = _ISspace;
+    static const mask print = _ISprint;
+    static const mask graph = _ISalpha | _ISdigit | _ISpunct;
+    static const mask cntrl = _IScntrl;
+    static const mask punct = _ISpunct;
+    static const mask alnum = _ISalpha | _ISdigit;
+  };
+
+
+}
+# 43 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 2 3
+
+
+
+
+
+
+# 1 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/streambuf_iterator.h" 1 3
+# 35 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/streambuf_iterator.h" 3
+# 35 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/streambuf_iterator.h" 3
+
+
+
+
+namespace std __attribute__ ((__visibility__ ("default")))
+{
+# 50 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/streambuf_iterator.h" 3
+  template<typename _CharT, typename _Traits>
+    class istreambuf_iterator
+    : public iterator<input_iterator_tag, _CharT, typename _Traits::off_type,
+        _CharT*, _CharT&>
+    {
+    public:
+
+
+
+      typedef _CharT char_type;
+      typedef _Traits traits_type;
+      typedef typename _Traits::int_type int_type;
+      typedef basic_streambuf<_CharT, _Traits> streambuf_type;
+      typedef basic_istream<_CharT, _Traits> istream_type;
+
+
+      template<typename _CharT2>
+ friend typename __gnu_cxx::__enable_if<__is_char<_CharT2>::__value,
+                      ostreambuf_iterator<_CharT2> >::__type
+ copy(istreambuf_iterator<_CharT2>, istreambuf_iterator<_CharT2>,
+      ostreambuf_iterator<_CharT2>);
+
+      template<bool _IsMove, typename _CharT2>
+ friend typename __gnu_cxx::__enable_if<__is_char<_CharT2>::__value,
+            _CharT2*>::__type
+ __copy_move_a2(istreambuf_iterator<_CharT2>,
+         istreambuf_iterator<_CharT2>, _CharT2*);
+
+      template<typename _CharT2>
+ friend typename __gnu_cxx::__enable_if<__is_char<_CharT2>::__value,
+               istreambuf_iterator<_CharT2> >::__type
+ find(istreambuf_iterator<_CharT2>, istreambuf_iterator<_CharT2>,
+      const _CharT2&);
+
+    private:
+
+
+
+
+
+
+
+      mutable streambuf_type* _M_sbuf;
+      mutable int_type _M_c;
+
+    public:
+
+                         istreambuf_iterator() throw()
+      : _M_sbuf(0), _M_c(traits_type::eof()) { }
+
+
+      istreambuf_iterator(istream_type& __s) throw()
+      : _M_sbuf(__s.rdbuf()), _M_c(traits_type::eof()) { }
+
+
+      istreambuf_iterator(streambuf_type* __s) throw()
+      : _M_sbuf(__s), _M_c(traits_type::eof()) { }
+
+
+
+
+      char_type
+      operator*() const
+      {
+
+
+
+
+
+
+
+ return traits_type::to_char_type(_M_get());
+      }
+
+
+      istreambuf_iterator&
+      operator++()
+      {
+
+
+                        ;
+ if (_M_sbuf)
+   {
+     _M_sbuf->sbumpc();
+     _M_c = traits_type::eof();
+   }
+ return *this;
+      }
+
+
+      istreambuf_iterator
+      operator++(int)
+      {
+
+
+                        ;
+
+ istreambuf_iterator __old = *this;
+ if (_M_sbuf)
+   {
+     __old._M_c = _M_sbuf->sbumpc();
+     _M_c = traits_type::eof();
+   }
+ return __old;
+      }
+
+
+
+
+
+      bool
+      equal(const istreambuf_iterator& __b) const
+      { return _M_at_eof() == __b._M_at_eof(); }
+
+    private:
+      int_type
+      _M_get() const
+      {
+ const int_type __eof = traits_type::eof();
+ int_type __ret = __eof;
+ if (_M_sbuf)
+   {
+     if (!traits_type::eq_int_type(_M_c, __eof))
+       __ret = _M_c;
+     else if (!traits_type::eq_int_type((__ret = _M_sbuf->sgetc()),
+            __eof))
+       _M_c = __ret;
+     else
+       _M_sbuf = 0;
+   }
+ return __ret;
+      }
+
+      bool
+      _M_at_eof() const
+      {
+ const int_type __eof = traits_type::eof();
+ return traits_type::eq_int_type(_M_get(), __eof);
+      }
+    };
+
+  template<typename _CharT, typename _Traits>
+    inline bool
+    operator==(const istreambuf_iterator<_CharT, _Traits>& __a,
+        const istreambuf_iterator<_CharT, _Traits>& __b)
+    { return __a.equal(__b); }
+
+  template<typename _CharT, typename _Traits>
+    inline bool
+    operator!=(const istreambuf_iterator<_CharT, _Traits>& __a,
+        const istreambuf_iterator<_CharT, _Traits>& __b)
+    { return !__a.equal(__b); }
+
+
+  template<typename _CharT, typename _Traits>
+    class ostreambuf_iterator
+    : public iterator<output_iterator_tag, void, void, void, void>
+    {
+    public:
+
+
+
+      typedef _CharT char_type;
+      typedef _Traits traits_type;
+      typedef basic_streambuf<_CharT, _Traits> streambuf_type;
+      typedef basic_ostream<_CharT, _Traits> ostream_type;
+
+
+      template<typename _CharT2>
+ friend typename __gnu_cxx::__enable_if<__is_char<_CharT2>::__value,
+                      ostreambuf_iterator<_CharT2> >::__type
+ copy(istreambuf_iterator<_CharT2>, istreambuf_iterator<_CharT2>,
+      ostreambuf_iterator<_CharT2>);
+
+    private:
+      streambuf_type* _M_sbuf;
+      bool _M_failed;
+
+    public:
+
+      ostreambuf_iterator(ostream_type& __s) throw ()
+      : _M_sbuf(__s.rdbuf()), _M_failed(!_M_sbuf) { }
+
+
+      ostreambuf_iterator(streambuf_type* __s) throw ()
+      : _M_sbuf(__s), _M_failed(!_M_sbuf) { }
+
+
+      ostreambuf_iterator&
+      operator=(_CharT __c)
+      {
+ if (!_M_failed &&
+     _Traits::eq_int_type(_M_sbuf->sputc(__c), _Traits::eof()))
+   _M_failed = true;
+ return *this;
+      }
+
+
+      ostreambuf_iterator&
+      operator*()
+      { return *this; }
+
+
+      ostreambuf_iterator&
+      operator++(int)
+      { return *this; }
+
+
+      ostreambuf_iterator&
+      operator++()
+      { return *this; }
+
+
+      bool
+      failed() const throw()
+      { return _M_failed; }
+
+      ostreambuf_iterator&
+      _M_put(const _CharT* __ws, streamsize __len)
+      {
+ if (__builtin_expect(!_M_failed, true)
+     && __builtin_expect(this->_M_sbuf->sputn(__ws, __len) != __len,
+    false))
+   _M_failed = true;
+ return *this;
+      }
+    };
+
+
+  template<typename _CharT>
+    typename __gnu_cxx::__enable_if<__is_char<_CharT>::__value,
+                           ostreambuf_iterator<_CharT> >::__type
+    copy(istreambuf_iterator<_CharT> __first,
+  istreambuf_iterator<_CharT> __last,
+  ostreambuf_iterator<_CharT> __result)
+    {
+      if (__first._M_sbuf && !__last._M_sbuf && !__result._M_failed)
+ {
+   bool __ineof;
+   __copy_streambufs_eof(__first._M_sbuf, __result._M_sbuf, __ineof);
+   if (!__ineof)
+     __result._M_failed = true;
+ }
+      return __result;
+    }
+
+  template<bool _IsMove, typename _CharT>
+    typename __gnu_cxx::__enable_if<__is_char<_CharT>::__value,
+            ostreambuf_iterator<_CharT> >::__type
+    __copy_move_a2(_CharT* __first, _CharT* __last,
+     ostreambuf_iterator<_CharT> __result)
+    {
+      const streamsize __num = __last - __first;
+      if (__num > 0)
+ __result._M_put(__first, __num);
+      return __result;
+    }
+
+  template<bool _IsMove, typename _CharT>
+    typename __gnu_cxx::__enable_if<__is_char<_CharT>::__value,
+        ostreambuf_iterator<_CharT> >::__type
+    __copy_move_a2(const _CharT* __first, const _CharT* __last,
+     ostreambuf_iterator<_CharT> __result)
+    {
+      const streamsize __num = __last - __first;
+      if (__num > 0)
+ __result._M_put(__first, __num);
+      return __result;
+    }
+
+  template<bool _IsMove, typename _CharT>
+    typename __gnu_cxx::__enable_if<__is_char<_CharT>::__value,
+            _CharT*>::__type
+    __copy_move_a2(istreambuf_iterator<_CharT> __first,
+     istreambuf_iterator<_CharT> __last, _CharT* __result)
+    {
+      typedef istreambuf_iterator<_CharT> __is_iterator_type;
+      typedef typename __is_iterator_type::traits_type traits_type;
+      typedef typename __is_iterator_type::streambuf_type streambuf_type;
+      typedef typename traits_type::int_type int_type;
+
+      if (__first._M_sbuf && !__last._M_sbuf)
+ {
+   streambuf_type* __sb = __first._M_sbuf;
+   int_type __c = __sb->sgetc();
+   while (!traits_type::eq_int_type(__c, traits_type::eof()))
+     {
+       const streamsize __n = __sb->egptr() - __sb->gptr();
+       if (__n > 1)
+  {
+    traits_type::copy(__result, __sb->gptr(), __n);
+    __sb->__safe_gbump(__n);
+    __result += __n;
+    __c = __sb->underflow();
+  }
+       else
+  {
+    *__result++ = traits_type::to_char_type(__c);
+    __c = __sb->snextc();
+  }
+     }
+ }
+      return __result;
+    }
+
+  template<typename _CharT>
+    typename __gnu_cxx::__enable_if<__is_char<_CharT>::__value,
+          istreambuf_iterator<_CharT> >::__type
+    find(istreambuf_iterator<_CharT> __first,
+  istreambuf_iterator<_CharT> __last, const _CharT& __val)
+    {
+      typedef istreambuf_iterator<_CharT> __is_iterator_type;
+      typedef typename __is_iterator_type::traits_type traits_type;
+      typedef typename __is_iterator_type::streambuf_type streambuf_type;
+      typedef typename traits_type::int_type int_type;
+
+      if (__first._M_sbuf && !__last._M_sbuf)
+ {
+   const int_type __ival = traits_type::to_int_type(__val);
+   streambuf_type* __sb = __first._M_sbuf;
+   int_type __c = __sb->sgetc();
+   while (!traits_type::eq_int_type(__c, traits_type::eof())
+   && !traits_type::eq_int_type(__c, __ival))
+     {
+       streamsize __n = __sb->egptr() - __sb->gptr();
+       if (__n > 1)
+  {
+    const _CharT* __p = traits_type::find(__sb->gptr(),
+       __n, __val);
+    if (__p)
+      __n = __p - __sb->gptr();
+    __sb->__safe_gbump(__n);
+    __c = __sb->sgetc();
+  }
+       else
+  __c = __sb->snextc();
+     }
+
+   if (!traits_type::eq_int_type(__c, traits_type::eof()))
+     __first._M_c = __c;
+   else
+     __first._M_sbuf = 0;
+ }
+      return __first;
+    }
+
+
+
+
+}
+# 50 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 2 3
+
+namespace std __attribute__ ((__visibility__ ("default")))
+{
+# 65 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+  template<typename _Tp>
+    void
+    __convert_to_v(const char*, _Tp&, ios_base::iostate&,
+     const __c_locale&) throw();
+
+
+  template<>
+    void
+    __convert_to_v(const char*, float&, ios_base::iostate&,
+     const __c_locale&) throw();
+
+  template<>
+    void
+    __convert_to_v(const char*, double&, ios_base::iostate&,
+     const __c_locale&) throw();
+
+  template<>
+    void
+    __convert_to_v(const char*, long double&, ios_base::iostate&,
+     const __c_locale&) throw();
+
+
+
+  template<typename _CharT, typename _Traits>
+    struct __pad
+    {
+      static void
+      _S_pad(ios_base& __io, _CharT __fill, _CharT* __news,
+      const _CharT* __olds, streamsize __newlen, streamsize __oldlen);
+    };
+
+
+
+
+
+
+  template<typename _CharT>
+    _CharT*
+    __add_grouping(_CharT* __s, _CharT __sep,
+     const char* __gbeg, size_t __gsize,
+     const _CharT* __first, const _CharT* __last);
+
+
+
+
+  template<typename _CharT>
+    inline
+    ostreambuf_iterator<_CharT>
+    __write(ostreambuf_iterator<_CharT> __s, const _CharT* __ws, int __len)
+    {
+      __s._M_put(__ws, __len);
+      return __s;
+    }
+
+
+  template<typename _CharT, typename _OutIter>
+    inline
+    _OutIter
+    __write(_OutIter __s, const _CharT* __ws, int __len)
+    {
+      for (int __j = 0; __j < __len; __j++, ++__s)
+ *__s = __ws[__j];
+      return __s;
+    }
+# 143 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+  template<typename _CharT>
+    class __ctype_abstract_base : public locale::facet, public ctype_base
+    {
+    public:
+
+
+      typedef _CharT char_type;
+# 161 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+      bool
+      is(mask __m, char_type __c) const
+      { return this->do_is(__m, __c); }
+# 178 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+      const char_type*
+      is(const char_type *__lo, const char_type *__hi, mask *__vec) const
+      { return this->do_is(__lo, __hi, __vec); }
+# 194 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+      const char_type*
+      scan_is(mask __m, const char_type* __lo, const char_type* __hi) const
+      { return this->do_scan_is(__m, __lo, __hi); }
+# 210 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+      const char_type*
+      scan_not(mask __m, const char_type* __lo, const char_type* __hi) const
+      { return this->do_scan_not(__m, __lo, __hi); }
+# 224 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+      char_type
+      toupper(char_type __c) const
+      { return this->do_toupper(__c); }
+# 239 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+      const char_type*
+      toupper(char_type *__lo, const char_type* __hi) const
+      { return this->do_toupper(__lo, __hi); }
+# 253 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+      char_type
+      tolower(char_type __c) const
+      { return this->do_tolower(__c); }
+# 268 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+      const char_type*
+      tolower(char_type* __lo, const char_type* __hi) const
+      { return this->do_tolower(__lo, __hi); }
+# 285 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+      char_type
+      widen(char __c) const
+      { return this->do_widen(__c); }
+# 304 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+      const char*
+      widen(const char* __lo, const char* __hi, char_type* __to) const
+      { return this->do_widen(__lo, __hi, __to); }
+# 323 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+      char
+      narrow(char_type __c, char __dfault) const
+      { return this->do_narrow(__c, __dfault); }
+# 345 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+      const char_type*
+      narrow(const char_type* __lo, const char_type* __hi,
+       char __dfault, char *__to) const
+      { return this->do_narrow(__lo, __hi, __dfault, __to); }
+
+    protected:
+      explicit
+      __ctype_abstract_base(size_t __refs = 0): facet(__refs) { }
+
+      virtual
+      ~__ctype_abstract_base() { }
+# 370 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+      virtual bool
+      do_is(mask __m, char_type __c) const = 0;
+# 389 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+      virtual const char_type*
+      do_is(const char_type* __lo, const char_type* __hi,
+     mask* __vec) const = 0;
+# 408 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+      virtual const char_type*
+      do_scan_is(mask __m, const char_type* __lo,
+   const char_type* __hi) const = 0;
+# 427 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+      virtual const char_type*
+      do_scan_not(mask __m, const char_type* __lo,
+    const char_type* __hi) const = 0;
+# 445 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+      virtual char_type
+      do_toupper(char_type) const = 0;
+# 462 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+      virtual const char_type*
+      do_toupper(char_type* __lo, const char_type* __hi) const = 0;
+# 478 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+      virtual char_type
+      do_tolower(char_type) const = 0;
+# 495 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+      virtual const char_type*
+      do_tolower(char_type* __lo, const char_type* __hi) const = 0;
+# 514 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+      virtual char_type
+      do_widen(char) const = 0;
+# 535 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+      virtual const char*
+      do_widen(const char* __lo, const char* __hi,
+        char_type* __dest) const = 0;
+# 557 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+      virtual char
+      do_narrow(char_type, char __dfault) const = 0;
+# 581 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+      virtual const char_type*
+      do_narrow(const char_type* __lo, const char_type* __hi,
+  char __dfault, char* __dest) const = 0;
+    };
+# 604 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+  template<typename _CharT>
+    class ctype : public __ctype_abstract_base<_CharT>
+    {
+    public:
+
+      typedef _CharT char_type;
+      typedef typename __ctype_abstract_base<_CharT>::mask mask;
+
+
+      static locale::id id;
+
+      explicit
+      ctype(size_t __refs = 0) : __ctype_abstract_base<_CharT>(__refs) { }
+
+   protected:
+      virtual
+      ~ctype();
+
+      virtual bool
+      do_is(mask __m, char_type __c) const;
+
+      virtual const char_type*
+      do_is(const char_type* __lo, const char_type* __hi, mask* __vec) const;
+
+      virtual const char_type*
+      do_scan_is(mask __m, const char_type* __lo, const char_type* __hi) const;
+
+      virtual const char_type*
+      do_scan_not(mask __m, const char_type* __lo,
+    const char_type* __hi) const;
+
+      virtual char_type
+      do_toupper(char_type __c) const;
+
+      virtual const char_type*
+      do_toupper(char_type* __lo, const char_type* __hi) const;
+
+      virtual char_type
+      do_tolower(char_type __c) const;
+
+      virtual const char_type*
+      do_tolower(char_type* __lo, const char_type* __hi) const;
+
+      virtual char_type
+      do_widen(char __c) const;
+
+      virtual const char*
+      do_widen(const char* __lo, const char* __hi, char_type* __dest) const;
+
+      virtual char
+      do_narrow(char_type, char __dfault) const;
+
+      virtual const char_type*
+      do_narrow(const char_type* __lo, const char_type* __hi,
+  char __dfault, char* __dest) const;
+    };
+
+  template<typename _CharT>
+    locale::id ctype<_CharT>::id;
+# 673 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+  template<>
+    class ctype<char> : public locale::facet, public ctype_base
+    {
+    public:
+
+
+      typedef char char_type;
+
+    protected:
+
+      __c_locale _M_c_locale_ctype;
+      bool _M_del;
+      __to_type _M_toupper;
+      __to_type _M_tolower;
+      const mask* _M_table;
+      mutable char _M_widen_ok;
+      mutable char _M_widen[1 + static_cast<unsigned char>(-1)];
+      mutable char _M_narrow[1 + static_cast<unsigned char>(-1)];
+      mutable char _M_narrow_ok;
+
+
+    public:
+
+      static locale::id id;
+
+      static const size_t table_size = 1 + static_cast<unsigned char>(-1);
+# 710 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+      explicit
+      ctype(const mask* __table = 0, bool __del = false, size_t __refs = 0);
+# 723 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+      explicit
+      ctype(__c_locale __cloc, const mask* __table = 0, bool __del = false,
+     size_t __refs = 0);
+# 736 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+      inline bool
+      is(mask __m, char __c) const;
+# 751 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+      inline const char*
+      is(const char* __lo, const char* __hi, mask* __vec) const;
+# 765 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+      inline const char*
+      scan_is(mask __m, const char* __lo, const char* __hi) const;
+# 779 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+      inline const char*
+      scan_not(mask __m, const char* __lo, const char* __hi) const;
+# 794 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+      char_type
+      toupper(char_type __c) const
+      { return this->do_toupper(__c); }
+# 811 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+      const char_type*
+      toupper(char_type *__lo, const char_type* __hi) const
+      { return this->do_toupper(__lo, __hi); }
+# 827 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+      char_type
+      tolower(char_type __c) const
+      { return this->do_tolower(__c); }
+# 844 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+      const char_type*
+      tolower(char_type* __lo, const char_type* __hi) const
+      { return this->do_tolower(__lo, __hi); }
+# 864 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+      char_type
+      widen(char __c) const
+      {
+ if (_M_widen_ok)
+   return _M_widen[static_cast<unsigned char>(__c)];
+ this->_M_widen_init();
+ return this->do_widen(__c);
+      }
+# 891 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+      const char*
+      widen(const char* __lo, const char* __hi, char_type* __to) const
+      {
+ if (_M_widen_ok == 1)
+   {
+     __builtin_memcpy(__to, __lo, __hi - __lo);
+     return __hi;
+   }
+ if (!_M_widen_ok)
+   _M_widen_init();
+ return this->do_widen(__lo, __hi, __to);
+      }
+# 922 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+      char
+      narrow(char_type __c, char __dfault) const
+      {
+ if (_M_narrow[static_cast<unsigned char>(__c)])
+   return _M_narrow[static_cast<unsigned char>(__c)];
+ const char __t = do_narrow(__c, __dfault);
+ if (__t != __dfault)
+   _M_narrow[static_cast<unsigned char>(__c)] = __t;
+ return __t;
+      }
+# 955 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+      const char_type*
+      narrow(const char_type* __lo, const char_type* __hi,
+      char __dfault, char *__to) const
+      {
+ if (__builtin_expect(_M_narrow_ok == 1, true))
+   {
+     __builtin_memcpy(__to, __lo, __hi - __lo);
+     return __hi;
+   }
+ if (!_M_narrow_ok)
+   _M_narrow_init();
+ return this->do_narrow(__lo, __hi, __dfault, __to);
+      }
+
+
+
+
+
+      const mask*
+      table() const throw()
+      { return _M_table; }
+
+
+      static const mask*
+      classic_table() throw();
+    protected:
+
+
+
+
+
+
+
+      virtual
+      ~ctype();
+# 1004 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+      virtual char_type
+      do_toupper(char_type) const;
+# 1021 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+      virtual const char_type*
+      do_toupper(char_type* __lo, const char_type* __hi) const;
+# 1037 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+      virtual char_type
+      do_tolower(char_type) const;
+# 1054 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+      virtual const char_type*
+      do_tolower(char_type* __lo, const char_type* __hi) const;
+# 1074 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+      virtual char_type
+      do_widen(char __c) const
+      { return __c; }
+# 1097 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+      virtual const char*
+      do_widen(const char* __lo, const char* __hi, char_type* __dest) const
+      {
+ __builtin_memcpy(__dest, __lo, __hi - __lo);
+ return __hi;
+      }
+# 1123 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+      virtual char
+      do_narrow(char_type __c, char) const
+      { return __c; }
+# 1149 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+      virtual const char_type*
+      do_narrow(const char_type* __lo, const char_type* __hi,
+  char, char* __dest) const
+      {
+ __builtin_memcpy(__dest, __lo, __hi - __lo);
+ return __hi;
+      }
+
+    private:
+      void _M_narrow_init() const;
+      void _M_widen_init() const;
+    };
+# 1174 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+  template<>
+    class ctype<wchar_t> : public __ctype_abstract_base<wchar_t>
+    {
+    public:
+
+
+      typedef wchar_t char_type;
+      typedef wctype_t __wmask_type;
+
+    protected:
+      __c_locale _M_c_locale_ctype;
+
+
+      bool _M_narrow_ok;
+      char _M_narrow[128];
+      wint_t _M_widen[1 + static_cast<unsigned char>(-1)];
+
+
+      mask _M_bit[16];
+      __wmask_type _M_wmask[16];
+
+    public:
+
+
+      static locale::id id;
+# 1207 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+      explicit
+      ctype(size_t __refs = 0);
+# 1218 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+      explicit
+      ctype(__c_locale __cloc, size_t __refs = 0);
+
+    protected:
+      __wmask_type
+      _M_convert_to_wmask(const mask __m) const throw();
+
+
+      virtual
+      ~ctype();
+# 1242 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+      virtual bool
+      do_is(mask __m, char_type __c) const;
+# 1261 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+      virtual const char_type*
+      do_is(const char_type* __lo, const char_type* __hi, mask* __vec) const;
+# 1279 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+      virtual const char_type*
+      do_scan_is(mask __m, const char_type* __lo, const char_type* __hi) const;
+# 1297 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+      virtual const char_type*
+      do_scan_not(mask __m, const char_type* __lo,
+    const char_type* __hi) const;
+# 1314 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+      virtual char_type
+      do_toupper(char_type) const;
+# 1331 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+      virtual const char_type*
+      do_toupper(char_type* __lo, const char_type* __hi) const;
+# 1347 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+      virtual char_type
+      do_tolower(char_type) const;
+# 1364 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+      virtual const char_type*
+      do_tolower(char_type* __lo, const char_type* __hi) const;
+# 1384 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+      virtual char_type
+      do_widen(char) const;
+# 1406 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+      virtual const char*
+      do_widen(const char* __lo, const char* __hi, char_type* __dest) const;
+# 1429 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+      virtual char
+      do_narrow(char_type, char __dfault) const;
+# 1455 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+      virtual const char_type*
+      do_narrow(const char_type* __lo, const char_type* __hi,
+  char __dfault, char* __dest) const;
+
+
+      void
+      _M_initialize_ctype() throw();
+    };
+
+
+
+  template<typename _CharT>
+    class ctype_byname : public ctype<_CharT>
+    {
+    public:
+      typedef typename ctype<_CharT>::mask mask;
+
+      explicit
+      ctype_byname(const char* __s, size_t __refs = 0);
+
+    protected:
+      virtual
+      ~ctype_byname() { };
+    };
+
+
+  template<>
+    class ctype_byname<char> : public ctype<char>
+    {
+    public:
+      explicit
+      ctype_byname(const char* __s, size_t __refs = 0);
+
+    protected:
+      virtual
+      ~ctype_byname();
+    };
+
+
+  template<>
+    class ctype_byname<wchar_t> : public ctype<wchar_t>
+    {
+    public:
+      explicit
+      ctype_byname(const char* __s, size_t __refs = 0);
+
+    protected:
+      virtual
+      ~ctype_byname();
+    };
+
+
+
+}
+
+
+
+# 1 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/x86_64-unknown-linux-gnu/bits/ctype_inline.h" 1 3
+# 37 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/x86_64-unknown-linux-gnu/bits/ctype_inline.h" 3
+namespace std __attribute__ ((__visibility__ ("default")))
+{
+
+
+  bool
+  ctype<char>::
+  is(mask __m, char __c) const
+  { return _M_table[static_cast<unsigned char>(__c)] & __m; }
+
+  const char*
+  ctype<char>::
+  is(const char* __low, const char* __high, mask* __vec) const
+  {
+    while (__low < __high)
+      *__vec++ = _M_table[static_cast<unsigned char>(*__low++)];
+    return __high;
+  }
+
+  const char*
+  ctype<char>::
+  scan_is(mask __m, const char* __low, const char* __high) const
+  {
+    while (__low < __high
+    && !(_M_table[static_cast<unsigned char>(*__low)] & __m))
+      ++__low;
+    return __low;
+  }
+
+  const char*
+  ctype<char>::
+  scan_not(mask __m, const char* __low, const char* __high) const
+  {
+    while (__low < __high
+    && (_M_table[static_cast<unsigned char>(*__low)] & __m) != 0)
+      ++__low;
+    return __low;
+  }
+
+
+}
+# 1512 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 2 3
+
+namespace std __attribute__ ((__visibility__ ("default")))
+{
+
+
+
+  class __num_base
+  {
+  public:
+
+
+    enum
+      {
+        _S_ominus,
+        _S_oplus,
+        _S_ox,
+        _S_oX,
+        _S_odigits,
+        _S_odigits_end = _S_odigits + 16,
+        _S_oudigits = _S_odigits_end,
+        _S_oudigits_end = _S_oudigits + 16,
+        _S_oe = _S_odigits + 14,
+        _S_oE = _S_oudigits + 14,
+ _S_oend = _S_oudigits_end
+      };
+
+
+
+
+
+
+    static const char* _S_atoms_out;
+
+
+
+    static const char* _S_atoms_in;
+
+    enum
+    {
+      _S_iminus,
+      _S_iplus,
+      _S_ix,
+      _S_iX,
+      _S_izero,
+      _S_ie = _S_izero + 14,
+      _S_iE = _S_izero + 20,
+      _S_iend = 26
+    };
+
+
+
+    static void
+    _S_format_float(const ios_base& __io, char* __fptr, char __mod) throw();
+  };
+
+  template<typename _CharT>
+    struct __numpunct_cache : public locale::facet
+    {
+      const char* _M_grouping;
+      size_t _M_grouping_size;
+      bool _M_use_grouping;
+      const _CharT* _M_truename;
+      size_t _M_truename_size;
+      const _CharT* _M_falsename;
+      size_t _M_falsename_size;
+      _CharT _M_decimal_point;
+      _CharT _M_thousands_sep;
+
+
+
+
+
+      _CharT _M_atoms_out[__num_base::_S_oend];
+
+
+
+
+
+      _CharT _M_atoms_in[__num_base::_S_iend];
+
+      bool _M_allocated;
+
+      __numpunct_cache(size_t __refs = 0)
+      : facet(__refs), _M_grouping(0), _M_grouping_size(0),
+ _M_use_grouping(false),
+ _M_truename(0), _M_truename_size(0), _M_falsename(0),
+ _M_falsename_size(0), _M_decimal_point(_CharT()),
+ _M_thousands_sep(_CharT()), _M_allocated(false)
+        { }
+
+      ~__numpunct_cache();
+
+      void
+      _M_cache(const locale& __loc);
+
+    private:
+      __numpunct_cache&
+      operator=(const __numpunct_cache&);
+
+      explicit
+      __numpunct_cache(const __numpunct_cache&);
+    };
+
+  template<typename _CharT>
+    __numpunct_cache<_CharT>::~__numpunct_cache()
+    {
+      if (_M_allocated)
+ {
+   delete [] _M_grouping;
+   delete [] _M_truename;
+   delete [] _M_falsename;
+ }
+    }
+# 1640 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+  template<typename _CharT>
+    class numpunct : public locale::facet
+    {
+    public:
+
+
+
+      typedef _CharT char_type;
+      typedef basic_string<_CharT> string_type;
+
+      typedef __numpunct_cache<_CharT> __cache_type;
+
+    protected:
+      __cache_type* _M_data;
+
+    public:
+
+      static locale::id id;
+
+
+
+
+
+
+      explicit
+      numpunct(size_t __refs = 0)
+      : facet(__refs), _M_data(0)
+      { _M_initialize_numpunct(); }
+# 1678 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+      explicit
+      numpunct(__cache_type* __cache, size_t __refs = 0)
+      : facet(__refs), _M_data(__cache)
+      { _M_initialize_numpunct(); }
+# 1692 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+      explicit
+      numpunct(__c_locale __cloc, size_t __refs = 0)
+      : facet(__refs), _M_data(0)
+      { _M_initialize_numpunct(__cloc); }
+# 1706 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+      char_type
+      decimal_point() const
+      { return this->do_decimal_point(); }
+# 1719 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+      char_type
+      thousands_sep() const
+      { return this->do_thousands_sep(); }
+# 1750 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+      string
+      grouping() const
+      { return this->do_grouping(); }
+# 1763 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+      string_type
+      truename() const
+      { return this->do_truename(); }
+# 1776 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+      string_type
+      falsename() const
+      { return this->do_falsename(); }
+
+    protected:
+
+      virtual
+      ~numpunct();
+# 1793 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+      virtual char_type
+      do_decimal_point() const
+      { return _M_data->_M_decimal_point; }
+# 1805 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+      virtual char_type
+      do_thousands_sep() const
+      { return _M_data->_M_thousands_sep; }
+# 1818 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+      virtual string
+      do_grouping() const
+      { return _M_data->_M_grouping; }
+# 1831 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+      virtual string_type
+      do_truename() const
+      { return _M_data->_M_truename; }
+# 1844 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+      virtual string_type
+      do_falsename() const
+      { return _M_data->_M_falsename; }
+
+
+      void
+      _M_initialize_numpunct(__c_locale __cloc = 0);
+    };
+
+  template<typename _CharT>
+    locale::id numpunct<_CharT>::id;
+
+  template<>
+    numpunct<char>::~numpunct();
+
+  template<>
+    void
+    numpunct<char>::_M_initialize_numpunct(__c_locale __cloc);
+
+
+  template<>
+    numpunct<wchar_t>::~numpunct();
+
+  template<>
+    void
+    numpunct<wchar_t>::_M_initialize_numpunct(__c_locale __cloc);
+
+
+
+  template<typename _CharT>
+    class numpunct_byname : public numpunct<_CharT>
+    {
+    public:
+      typedef _CharT char_type;
+      typedef basic_string<_CharT> string_type;
+
+      explicit
+      numpunct_byname(const char* __s, size_t __refs = 0)
+      : numpunct<_CharT>(__refs)
+      {
+ if (__builtin_strcmp(__s, "C") != 0
+     && __builtin_strcmp(__s, "POSIX") != 0)
+   {
+     __c_locale __tmp;
+     this->_S_create_c_locale(__tmp, __s);
+     this->_M_initialize_numpunct(__tmp);
+     this->_S_destroy_c_locale(__tmp);
+   }
+      }
+
+    protected:
+      virtual
+      ~numpunct_byname() { }
+    };
+# 1914 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+  template<typename _CharT, typename _InIter>
+    class num_get : public locale::facet
+    {
+    public:
+
+
+
+      typedef _CharT char_type;
+      typedef _InIter iter_type;
+
+
+
+      static locale::id id;
+# 1935 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+      explicit
+      num_get(size_t __refs = 0) : facet(__refs) { }
+# 1961 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+      iter_type
+      get(iter_type __in, iter_type __end, ios_base& __io,
+   ios_base::iostate& __err, bool& __v) const
+      { return this->do_get(__in, __end, __io, __err, __v); }
+# 1997 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+      iter_type
+      get(iter_type __in, iter_type __end, ios_base& __io,
+   ios_base::iostate& __err, long& __v) const
+      { return this->do_get(__in, __end, __io, __err, __v); }
+
+      iter_type
+      get(iter_type __in, iter_type __end, ios_base& __io,
+   ios_base::iostate& __err, unsigned short& __v) const
+      { return this->do_get(__in, __end, __io, __err, __v); }
+
+      iter_type
+      get(iter_type __in, iter_type __end, ios_base& __io,
+   ios_base::iostate& __err, unsigned int& __v) const
+      { return this->do_get(__in, __end, __io, __err, __v); }
+
+      iter_type
+      get(iter_type __in, iter_type __end, ios_base& __io,
+   ios_base::iostate& __err, unsigned long& __v) const
+      { return this->do_get(__in, __end, __io, __err, __v); }
+
+
+      iter_type
+      get(iter_type __in, iter_type __end, ios_base& __io,
+   ios_base::iostate& __err, long long& __v) const
+      { return this->do_get(__in, __end, __io, __err, __v); }
+
+      iter_type
+      get(iter_type __in, iter_type __end, ios_base& __io,
+   ios_base::iostate& __err, unsigned long long& __v) const
+      { return this->do_get(__in, __end, __io, __err, __v); }
+# 2056 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+      iter_type
+      get(iter_type __in, iter_type __end, ios_base& __io,
+   ios_base::iostate& __err, float& __v) const
+      { return this->do_get(__in, __end, __io, __err, __v); }
+
+      iter_type
+      get(iter_type __in, iter_type __end, ios_base& __io,
+   ios_base::iostate& __err, double& __v) const
+      { return this->do_get(__in, __end, __io, __err, __v); }
+
+      iter_type
+      get(iter_type __in, iter_type __end, ios_base& __io,
+   ios_base::iostate& __err, long double& __v) const
+      { return this->do_get(__in, __end, __io, __err, __v); }
+# 2098 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+      iter_type
+      get(iter_type __in, iter_type __end, ios_base& __io,
+   ios_base::iostate& __err, void*& __v) const
+      { return this->do_get(__in, __end, __io, __err, __v); }
+
+    protected:
+
+      virtual ~num_get() { }
+
+      iter_type
+      _M_extract_float(iter_type, iter_type, ios_base&, ios_base::iostate&,
+         string&) const;
+
+      template<typename _ValueT>
+        iter_type
+        _M_extract_int(iter_type, iter_type, ios_base&, ios_base::iostate&,
+         _ValueT&) const;
+
+      template<typename _CharT2>
+      typename __gnu_cxx::__enable_if<__is_char<_CharT2>::__value, int>::__type
+        _M_find(const _CharT2*, size_t __len, _CharT2 __c) const
+        {
+   int __ret = -1;
+   if (__len <= 10)
+     {
+       if (__c >= _CharT2('0') && __c < _CharT2(_CharT2('0') + __len))
+  __ret = __c - _CharT2('0');
+     }
+   else
+     {
+       if (__c >= _CharT2('0') && __c <= _CharT2('9'))
+  __ret = __c - _CharT2('0');
+       else if (__c >= _CharT2('a') && __c <= _CharT2('f'))
+  __ret = 10 + (__c - _CharT2('a'));
+       else if (__c >= _CharT2('A') && __c <= _CharT2('F'))
+  __ret = 10 + (__c - _CharT2('A'));
+     }
+   return __ret;
+ }
+
+      template<typename _CharT2>
+      typename __gnu_cxx::__enable_if<!__is_char<_CharT2>::__value,
+          int>::__type
+        _M_find(const _CharT2* __zero, size_t __len, _CharT2 __c) const
+        {
+   int __ret = -1;
+   const char_type* __q = char_traits<_CharT2>::find(__zero, __len, __c);
+   if (__q)
+     {
+       __ret = __q - __zero;
+       if (__ret > 15)
+  __ret -= 6;
+     }
+   return __ret;
+ }
+# 2169 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+      virtual iter_type
+      do_get(iter_type, iter_type, ios_base&, ios_base::iostate&, bool&) const;
+
+      virtual iter_type
+      do_get(iter_type __beg, iter_type __end, ios_base& __io,
+      ios_base::iostate& __err, long& __v) const
+      { return _M_extract_int(__beg, __end, __io, __err, __v); }
+
+      virtual iter_type
+      do_get(iter_type __beg, iter_type __end, ios_base& __io,
+      ios_base::iostate& __err, unsigned short& __v) const
+      { return _M_extract_int(__beg, __end, __io, __err, __v); }
+
+      virtual iter_type
+      do_get(iter_type __beg, iter_type __end, ios_base& __io,
+      ios_base::iostate& __err, unsigned int& __v) const
+      { return _M_extract_int(__beg, __end, __io, __err, __v); }
+
+      virtual iter_type
+      do_get(iter_type __beg, iter_type __end, ios_base& __io,
+      ios_base::iostate& __err, unsigned long& __v) const
+      { return _M_extract_int(__beg, __end, __io, __err, __v); }
+
+
+      virtual iter_type
+      do_get(iter_type __beg, iter_type __end, ios_base& __io,
+      ios_base::iostate& __err, long long& __v) const
+      { return _M_extract_int(__beg, __end, __io, __err, __v); }
+
+      virtual iter_type
+      do_get(iter_type __beg, iter_type __end, ios_base& __io,
+      ios_base::iostate& __err, unsigned long long& __v) const
+      { return _M_extract_int(__beg, __end, __io, __err, __v); }
+
+
+      virtual iter_type
+      do_get(iter_type, iter_type, ios_base&, ios_base::iostate& __err,
+      float&) const;
+
+      virtual iter_type
+      do_get(iter_type, iter_type, ios_base&, ios_base::iostate& __err,
+      double&) const;
+
+
+
+
+
+
+
+      virtual iter_type
+      do_get(iter_type, iter_type, ios_base&, ios_base::iostate& __err,
+      long double&) const;
+
+
+      virtual iter_type
+      do_get(iter_type, iter_type, ios_base&, ios_base::iostate& __err,
+      void*&) const;
+# 2234 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+    };
+
+  template<typename _CharT, typename _InIter>
+    locale::id num_get<_CharT, _InIter>::id;
+# 2252 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+  template<typename _CharT, typename _OutIter>
+    class num_put : public locale::facet
+    {
+    public:
+
+
+
+      typedef _CharT char_type;
+      typedef _OutIter iter_type;
+
+
+
+      static locale::id id;
+# 2273 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+      explicit
+      num_put(size_t __refs = 0) : facet(__refs) { }
+# 2291 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+      iter_type
+      put(iter_type __s, ios_base& __f, char_type __fill, bool __v) const
+      { return this->do_put(__s, __f, __fill, __v); }
+# 2333 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+      iter_type
+      put(iter_type __s, ios_base& __f, char_type __fill, long __v) const
+      { return this->do_put(__s, __f, __fill, __v); }
+
+      iter_type
+      put(iter_type __s, ios_base& __f, char_type __fill,
+   unsigned long __v) const
+      { return this->do_put(__s, __f, __fill, __v); }
+
+
+      iter_type
+      put(iter_type __s, ios_base& __f, char_type __fill, long long __v) const
+      { return this->do_put(__s, __f, __fill, __v); }
+
+      iter_type
+      put(iter_type __s, ios_base& __f, char_type __fill,
+   unsigned long long __v) const
+      { return this->do_put(__s, __f, __fill, __v); }
+# 2396 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+      iter_type
+      put(iter_type __s, ios_base& __f, char_type __fill, double __v) const
+      { return this->do_put(__s, __f, __fill, __v); }
+
+      iter_type
+      put(iter_type __s, ios_base& __f, char_type __fill,
+   long double __v) const
+      { return this->do_put(__s, __f, __fill, __v); }
+# 2421 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+      iter_type
+      put(iter_type __s, ios_base& __f, char_type __fill,
+   const void* __v) const
+      { return this->do_put(__s, __f, __fill, __v); }
+
+    protected:
+      template<typename _ValueT>
+        iter_type
+        _M_insert_float(iter_type, ios_base& __io, char_type __fill,
+   char __mod, _ValueT __v) const;
+
+      void
+      _M_group_float(const char* __grouping, size_t __grouping_size,
+       char_type __sep, const char_type* __p, char_type* __new,
+       char_type* __cs, int& __len) const;
+
+      template<typename _ValueT>
+        iter_type
+        _M_insert_int(iter_type, ios_base& __io, char_type __fill,
+        _ValueT __v) const;
+
+      void
+      _M_group_int(const char* __grouping, size_t __grouping_size,
+     char_type __sep, ios_base& __io, char_type* __new,
+     char_type* __cs, int& __len) const;
+
+      void
+      _M_pad(char_type __fill, streamsize __w, ios_base& __io,
+      char_type* __new, const char_type* __cs, int& __len) const;
+
+
+      virtual
+      ~num_put() { };
+# 2469 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+      virtual iter_type
+      do_put(iter_type, ios_base&, char_type __fill, bool __v) const;
+
+      virtual iter_type
+      do_put(iter_type __s, ios_base& __io, char_type __fill, long __v) const
+      { return _M_insert_int(__s, __io, __fill, __v); }
+
+      virtual iter_type
+      do_put(iter_type __s, ios_base& __io, char_type __fill,
+      unsigned long __v) const
+      { return _M_insert_int(__s, __io, __fill, __v); }
+
+
+      virtual iter_type
+      do_put(iter_type __s, ios_base& __io, char_type __fill,
+      long long __v) const
+      { return _M_insert_int(__s, __io, __fill, __v); }
+
+      virtual iter_type
+      do_put(iter_type __s, ios_base& __io, char_type __fill,
+      unsigned long long __v) const
+      { return _M_insert_int(__s, __io, __fill, __v); }
+
+
+      virtual iter_type
+      do_put(iter_type, ios_base&, char_type __fill, double __v) const;
+
+
+
+
+
+
+      virtual iter_type
+      do_put(iter_type, ios_base&, char_type __fill, long double __v) const;
+
+
+      virtual iter_type
+      do_put(iter_type, ios_base&, char_type __fill, const void* __v) const;
+
+
+
+
+
+
+
+    };
+
+  template <typename _CharT, typename _OutIter>
+    locale::id num_put<_CharT, _OutIter>::id;
+# 2527 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 3
+  template<typename _CharT>
+    inline bool
+    isspace(_CharT __c, const locale& __loc)
+    { return use_facet<ctype<_CharT> >(__loc).is(ctype_base::space, __c); }
+
+
+  template<typename _CharT>
+    inline bool
+    isprint(_CharT __c, const locale& __loc)
+    { return use_facet<ctype<_CharT> >(__loc).is(ctype_base::print, __c); }
+
+
+  template<typename _CharT>
+    inline bool
+    iscntrl(_CharT __c, const locale& __loc)
+    { return use_facet<ctype<_CharT> >(__loc).is(ctype_base::cntrl, __c); }
+
+
+  template<typename _CharT>
+    inline bool
+    isupper(_CharT __c, const locale& __loc)
+    { return use_facet<ctype<_CharT> >(__loc).is(ctype_base::upper, __c); }
+
+
+  template<typename _CharT>
+    inline bool
+    islower(_CharT __c, const locale& __loc)
+    { return use_facet<ctype<_CharT> >(__loc).is(ctype_base::lower, __c); }
+
+
+  template<typename _CharT>
+    inline bool
+    isalpha(_CharT __c, const locale& __loc)
+    { return use_facet<ctype<_CharT> >(__loc).is(ctype_base::alpha, __c); }
+
+
+  template<typename _CharT>
+    inline bool
+    isdigit(_CharT __c, const locale& __loc)
+    { return use_facet<ctype<_CharT> >(__loc).is(ctype_base::digit, __c); }
+
+
+  template<typename _CharT>
+    inline bool
+    ispunct(_CharT __c, const locale& __loc)
+    { return use_facet<ctype<_CharT> >(__loc).is(ctype_base::punct, __c); }
+
+
+  template<typename _CharT>
+    inline bool
+    isxdigit(_CharT __c, const locale& __loc)
+    { return use_facet<ctype<_CharT> >(__loc).is(ctype_base::xdigit, __c); }
+
+
+  template<typename _CharT>
+    inline bool
+    isalnum(_CharT __c, const locale& __loc)
+    { return use_facet<ctype<_CharT> >(__loc).is(ctype_base::alnum, __c); }
+
+
+  template<typename _CharT>
+    inline bool
+    isgraph(_CharT __c, const locale& __loc)
+    { return use_facet<ctype<_CharT> >(__loc).is(ctype_base::graph, __c); }
+
+
+  template<typename _CharT>
+    inline _CharT
+    toupper(_CharT __c, const locale& __loc)
+    { return use_facet<ctype<_CharT> >(__loc).toupper(__c); }
+
+
+  template<typename _CharT>
+    inline _CharT
+    tolower(_CharT __c, const locale& __loc)
+    { return use_facet<ctype<_CharT> >(__loc).tolower(__c); }
+
+
+}
+
+
+# 1 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.tcc" 1 3
+# 35 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.tcc" 3
+# 35 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.tcc" 3
+
+namespace std __attribute__ ((__visibility__ ("default")))
+{
+
+
+
+
+  template<typename _Facet>
+    struct __use_cache
+    {
+      const _Facet*
+      operator() (const locale& __loc) const;
+    };
+
+
+  template<typename _CharT>
+    struct __use_cache<__numpunct_cache<_CharT> >
+    {
+      const __numpunct_cache<_CharT>*
+      operator() (const locale& __loc) const
+      {
+ const size_t __i = numpunct<_CharT>::id._M_id();
+ const locale::facet** __caches = __loc._M_impl->_M_caches;
+ if (!__caches[__i])
+   {
+     __numpunct_cache<_CharT>* __tmp = 0;
+     if (true)
+       {
+  __tmp = new __numpunct_cache<_CharT>;
+  __tmp->_M_cache(__loc);
+       }
+     if (false)
+       {
+  delete __tmp;
+                         ;
+       }
+     __loc._M_impl->_M_install_cache(__tmp, __i);
+   }
+ return static_cast<const __numpunct_cache<_CharT>*>(__caches[__i]);
+      }
+    };
+
+  template<typename _CharT>
+    void
+    __numpunct_cache<_CharT>::_M_cache(const locale& __loc)
+    {
+      _M_allocated = true;
+
+      const numpunct<_CharT>& __np = use_facet<numpunct<_CharT> >(__loc);
+
+      char* __grouping = 0;
+      _CharT* __truename = 0;
+      _CharT* __falsename = 0;
+      if (true)
+ {
+   _M_grouping_size = __np.grouping().size();
+   __grouping = new char[_M_grouping_size];
+   __np.grouping().copy(__grouping, _M_grouping_size);
+   _M_grouping = __grouping;
+   _M_use_grouping = (_M_grouping_size
+        && static_cast<signed char>(_M_grouping[0]) > 0
+        && (_M_grouping[0]
+     != __gnu_cxx::__numeric_traits<char>::__max));
+
+   _M_truename_size = __np.truename().size();
+   __truename = new _CharT[_M_truename_size];
+   __np.truename().copy(__truename, _M_truename_size);
+   _M_truename = __truename;
+
+   _M_falsename_size = __np.falsename().size();
+   __falsename = new _CharT[_M_falsename_size];
+   __np.falsename().copy(__falsename, _M_falsename_size);
+   _M_falsename = __falsename;
+
+   _M_decimal_point = __np.decimal_point();
+   _M_thousands_sep = __np.thousands_sep();
+
+   const ctype<_CharT>& __ct = use_facet<ctype<_CharT> >(__loc);
+   __ct.widen(__num_base::_S_atoms_out,
+       __num_base::_S_atoms_out
+       + __num_base::_S_oend, _M_atoms_out);
+   __ct.widen(__num_base::_S_atoms_in,
+       __num_base::_S_atoms_in
+       + __num_base::_S_iend, _M_atoms_in);
+ }
+      if (false)
+ {
+   delete [] __grouping;
+   delete [] __truename;
+   delete [] __falsename;
+                          ;
+ }
+    }
+# 137 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.tcc" 3
+  __attribute__ ((__pure__)) bool
+  __verify_grouping(const char* __grouping, size_t __grouping_size,
+      const string& __grouping_tmp) throw ();
+
+
+
+  template<typename _CharT, typename _InIter>
+    _InIter
+    num_get<_CharT, _InIter>::
+    _M_extract_float(_InIter __beg, _InIter __end, ios_base& __io,
+       ios_base::iostate& __err, string& __xtrc) const
+    {
+      typedef char_traits<_CharT> __traits_type;
+      typedef __numpunct_cache<_CharT> __cache_type;
+      __use_cache<__cache_type> __uc;
+      const locale& __loc = __io._M_getloc();
+      const __cache_type* __lc = __uc(__loc);
+      const _CharT* __lit = __lc->_M_atoms_in;
+      char_type __c = char_type();
+
+
+      bool __testeof = __beg == __end;
+
+
+      if (!__testeof)
+ {
+   __c = *__beg;
+   const bool __plus = __c == __lit[__num_base::_S_iplus];
+   if ((__plus || __c == __lit[__num_base::_S_iminus])
+       && !(__lc->_M_use_grouping && __c == __lc->_M_thousands_sep)
+       && !(__c == __lc->_M_decimal_point))
+     {
+       __xtrc += __plus ? '+' : '-';
+       if (++__beg != __end)
+  __c = *__beg;
+       else
+  __testeof = true;
+     }
+ }
+
+
+      bool __found_mantissa = false;
+      int __sep_pos = 0;
+      while (!__testeof)
+ {
+   if ((__lc->_M_use_grouping && __c == __lc->_M_thousands_sep)
+       || __c == __lc->_M_decimal_point)
+     break;
+   else if (__c == __lit[__num_base::_S_izero])
+     {
+       if (!__found_mantissa)
+  {
+    __xtrc += '0';
+    __found_mantissa = true;
+  }
+       ++__sep_pos;
+
+       if (++__beg != __end)
+  __c = *__beg;
+       else
+  __testeof = true;
+     }
+   else
+     break;
+ }
+
+
+      bool __found_dec = false;
+      bool __found_sci = false;
+      string __found_grouping;
+      if (__lc->_M_use_grouping)
+ __found_grouping.reserve(32);
+      const char_type* __lit_zero = __lit + __num_base::_S_izero;
+
+      if (!__lc->_M_allocated)
+
+ while (!__testeof)
+   {
+     const int __digit = _M_find(__lit_zero, 10, __c);
+     if (__digit != -1)
+       {
+  __xtrc += '0' + __digit;
+  __found_mantissa = true;
+       }
+     else if (__c == __lc->_M_decimal_point
+       && !__found_dec && !__found_sci)
+       {
+  __xtrc += '.';
+  __found_dec = true;
+       }
+     else if ((__c == __lit[__num_base::_S_ie]
+        || __c == __lit[__num_base::_S_iE])
+       && !__found_sci && __found_mantissa)
+       {
+
+  __xtrc += 'e';
+  __found_sci = true;
+
+
+  if (++__beg != __end)
+    {
+      __c = *__beg;
+      const bool __plus = __c == __lit[__num_base::_S_iplus];
+      if (__plus || __c == __lit[__num_base::_S_iminus])
+        __xtrc += __plus ? '+' : '-';
+      else
+        continue;
+    }
+  else
+    {
+      __testeof = true;
+      break;
+    }
+       }
+     else
+       break;
+
+     if (++__beg != __end)
+       __c = *__beg;
+     else
+       __testeof = true;
+   }
+      else
+ while (!__testeof)
+   {
+
+
+     if (__lc->_M_use_grouping && __c == __lc->_M_thousands_sep)
+       {
+  if (!__found_dec && !__found_sci)
+    {
+
+
+      if (__sep_pos)
+        {
+   __found_grouping += static_cast<char>(__sep_pos);
+   __sep_pos = 0;
+        }
+      else
+        {
+
+
+   __xtrc.clear();
+   break;
+        }
+    }
+  else
+    break;
+       }
+     else if (__c == __lc->_M_decimal_point)
+       {
+  if (!__found_dec && !__found_sci)
+    {
+
+
+
+      if (__found_grouping.size())
+        __found_grouping += static_cast<char>(__sep_pos);
+      __xtrc += '.';
+      __found_dec = true;
+    }
+  else
+    break;
+       }
+     else
+       {
+  const char_type* __q =
+    __traits_type::find(__lit_zero, 10, __c);
+  if (__q)
+    {
+      __xtrc += '0' + (__q - __lit_zero);
+      __found_mantissa = true;
+      ++__sep_pos;
+    }
+  else if ((__c == __lit[__num_base::_S_ie]
+     || __c == __lit[__num_base::_S_iE])
+    && !__found_sci && __found_mantissa)
+    {
+
+      if (__found_grouping.size() && !__found_dec)
+        __found_grouping += static_cast<char>(__sep_pos);
+      __xtrc += 'e';
+      __found_sci = true;
+
+
+      if (++__beg != __end)
+        {
+   __c = *__beg;
+   const bool __plus = __c == __lit[__num_base::_S_iplus];
+   if ((__plus || __c == __lit[__num_base::_S_iminus])
+       && !(__lc->_M_use_grouping
+     && __c == __lc->_M_thousands_sep)
+       && !(__c == __lc->_M_decimal_point))
+        __xtrc += __plus ? '+' : '-';
+   else
+     continue;
+        }
+      else
+        {
+   __testeof = true;
+   break;
+        }
+    }
+  else
+    break;
+       }
+
+     if (++__beg != __end)
+       __c = *__beg;
+     else
+       __testeof = true;
+   }
+
+
+
+      if (__found_grouping.size())
+        {
+
+   if (!__found_dec && !__found_sci)
+     __found_grouping += static_cast<char>(__sep_pos);
+
+          if (!std::__verify_grouping(__lc->_M_grouping,
+          __lc->_M_grouping_size,
+          __found_grouping))
+     __err = ios_base::failbit;
+        }
+
+      return __beg;
+    }
+
+  template<typename _CharT, typename _InIter>
+    template<typename _ValueT>
+      _InIter
+      num_get<_CharT, _InIter>::
+      _M_extract_int(_InIter __beg, _InIter __end, ios_base& __io,
+       ios_base::iostate& __err, _ValueT& __v) const
+      {
+        typedef char_traits<_CharT> __traits_type;
+ using __gnu_cxx::__add_unsigned;
+ typedef typename __add_unsigned<_ValueT>::__type __unsigned_type;
+ typedef __numpunct_cache<_CharT> __cache_type;
+ __use_cache<__cache_type> __uc;
+ const locale& __loc = __io._M_getloc();
+ const __cache_type* __lc = __uc(__loc);
+ const _CharT* __lit = __lc->_M_atoms_in;
+ char_type __c = char_type();
+
+
+ const ios_base::fmtflags __basefield = __io.flags()
+                                        & ios_base::basefield;
+ const bool __oct = __basefield == ios_base::oct;
+ int __base = __oct ? 8 : (__basefield == ios_base::hex ? 16 : 10);
+
+
+ bool __testeof = __beg == __end;
+
+
+ bool __negative = false;
+ if (!__testeof)
+   {
+     __c = *__beg;
+     __negative = __c == __lit[__num_base::_S_iminus];
+     if ((__negative || __c == __lit[__num_base::_S_iplus])
+  && !(__lc->_M_use_grouping && __c == __lc->_M_thousands_sep)
+  && !(__c == __lc->_M_decimal_point))
+       {
+  if (++__beg != __end)
+    __c = *__beg;
+  else
+    __testeof = true;
+       }
+   }
+
+
+
+ bool __found_zero = false;
+ int __sep_pos = 0;
+ while (!__testeof)
+   {
+     if ((__lc->_M_use_grouping && __c == __lc->_M_thousands_sep)
+  || __c == __lc->_M_decimal_point)
+       break;
+     else if (__c == __lit[__num_base::_S_izero]
+       && (!__found_zero || __base == 10))
+       {
+  __found_zero = true;
+  ++__sep_pos;
+  if (__basefield == 0)
+    __base = 8;
+  if (__base == 8)
+    __sep_pos = 0;
+       }
+     else if (__found_zero
+       && (__c == __lit[__num_base::_S_ix]
+    || __c == __lit[__num_base::_S_iX]))
+       {
+  if (__basefield == 0)
+    __base = 16;
+  if (__base == 16)
+    {
+      __found_zero = false;
+      __sep_pos = 0;
+    }
+  else
+    break;
+       }
+     else
+       break;
+
+     if (++__beg != __end)
+       {
+  __c = *__beg;
+  if (!__found_zero)
+    break;
+       }
+     else
+       __testeof = true;
+   }
+
+
+
+ const size_t __len = (__base == 16 ? __num_base::_S_iend
+         - __num_base::_S_izero : __base);
+
+
+ string __found_grouping;
+ if (__lc->_M_use_grouping)
+   __found_grouping.reserve(32);
+ bool __testfail = false;
+ bool __testoverflow = false;
+ const __unsigned_type __max =
+   (__negative && __gnu_cxx::__numeric_traits<_ValueT>::__is_signed)
+   ? -__gnu_cxx::__numeric_traits<_ValueT>::__min
+   : __gnu_cxx::__numeric_traits<_ValueT>::__max;
+ const __unsigned_type __smax = __max / __base;
+ __unsigned_type __result = 0;
+ int __digit = 0;
+ const char_type* __lit_zero = __lit + __num_base::_S_izero;
+
+ if (!__lc->_M_allocated)
+
+   while (!__testeof)
+     {
+       __digit = _M_find(__lit_zero, __len, __c);
+       if (__digit == -1)
+  break;
+
+       if (__result > __smax)
+  __testoverflow = true;
+       else
+  {
+    __result *= __base;
+    __testoverflow |= __result > __max - __digit;
+    __result += __digit;
+    ++__sep_pos;
+  }
+
+       if (++__beg != __end)
+  __c = *__beg;
+       else
+  __testeof = true;
+     }
+ else
+   while (!__testeof)
+     {
+
+
+       if (__lc->_M_use_grouping && __c == __lc->_M_thousands_sep)
+  {
+
+
+    if (__sep_pos)
+      {
+        __found_grouping += static_cast<char>(__sep_pos);
+        __sep_pos = 0;
+      }
+    else
+      {
+        __testfail = true;
+        break;
+      }
+  }
+       else if (__c == __lc->_M_decimal_point)
+  break;
+       else
+  {
+    const char_type* __q =
+      __traits_type::find(__lit_zero, __len, __c);
+    if (!__q)
+      break;
+
+    __digit = __q - __lit_zero;
+    if (__digit > 15)
+      __digit -= 6;
+    if (__result > __smax)
+      __testoverflow = true;
+    else
+      {
+        __result *= __base;
+        __testoverflow |= __result > __max - __digit;
+        __result += __digit;
+        ++__sep_pos;
+      }
+  }
+
+       if (++__beg != __end)
+  __c = *__beg;
+       else
+  __testeof = true;
+     }
+
+
+
+ if (__found_grouping.size())
+   {
+
+     __found_grouping += static_cast<char>(__sep_pos);
+
+     if (!std::__verify_grouping(__lc->_M_grouping,
+     __lc->_M_grouping_size,
+     __found_grouping))
+       __err = ios_base::failbit;
+   }
+
+
+
+ if ((!__sep_pos && !__found_zero && !__found_grouping.size())
+     || __testfail)
+   {
+     __v = 0;
+     __err = ios_base::failbit;
+   }
+ else if (__testoverflow)
+   {
+     if (__negative
+  && __gnu_cxx::__numeric_traits<_ValueT>::__is_signed)
+       __v = __gnu_cxx::__numeric_traits<_ValueT>::__min;
+     else
+       __v = __gnu_cxx::__numeric_traits<_ValueT>::__max;
+     __err = ios_base::failbit;
+   }
+ else
+   __v = __negative ? -__result : __result;
+
+ if (__testeof)
+   __err |= ios_base::eofbit;
+ return __beg;
+      }
+
+
+
+  template<typename _CharT, typename _InIter>
+    _InIter
+    num_get<_CharT, _InIter>::
+    do_get(iter_type __beg, iter_type __end, ios_base& __io,
+           ios_base::iostate& __err, bool& __v) const
+    {
+      if (!(__io.flags() & ios_base::boolalpha))
+        {
+
+
+
+   long __l = -1;
+          __beg = _M_extract_int(__beg, __end, __io, __err, __l);
+   if (__l == 0 || __l == 1)
+     __v = bool(__l);
+   else
+     {
+
+
+       __v = true;
+       __err = ios_base::failbit;
+       if (__beg == __end)
+  __err |= ios_base::eofbit;
+     }
+        }
+      else
+        {
+
+   typedef __numpunct_cache<_CharT> __cache_type;
+   __use_cache<__cache_type> __uc;
+   const locale& __loc = __io._M_getloc();
+   const __cache_type* __lc = __uc(__loc);
+
+   bool __testf = true;
+   bool __testt = true;
+   bool __donef = __lc->_M_falsename_size == 0;
+   bool __donet = __lc->_M_truename_size == 0;
+   bool __testeof = false;
+   size_t __n = 0;
+   while (!__donef || !__donet)
+     {
+       if (__beg == __end)
+  {
+    __testeof = true;
+    break;
+  }
+
+       const char_type __c = *__beg;
+
+       if (!__donef)
+  __testf = __c == __lc->_M_falsename[__n];
+
+       if (!__testf && __donet)
+  break;
+
+       if (!__donet)
+  __testt = __c == __lc->_M_truename[__n];
+
+       if (!__testt && __donef)
+  break;
+
+       if (!__testt && !__testf)
+  break;
+
+       ++__n;
+       ++__beg;
+
+       __donef = !__testf || __n >= __lc->_M_falsename_size;
+       __donet = !__testt || __n >= __lc->_M_truename_size;
+     }
+   if (__testf && __n == __lc->_M_falsename_size && __n)
+     {
+       __v = false;
+       if (__testt && __n == __lc->_M_truename_size)
+  __err = ios_base::failbit;
+       else
+  __err = __testeof ? ios_base::eofbit : ios_base::goodbit;
+     }
+   else if (__testt && __n == __lc->_M_truename_size && __n)
+     {
+       __v = true;
+       __err = __testeof ? ios_base::eofbit : ios_base::goodbit;
+     }
+   else
+     {
+
+
+       __v = false;
+       __err = ios_base::failbit;
+       if (__testeof)
+  __err |= ios_base::eofbit;
+     }
+ }
+      return __beg;
+    }
+
+  template<typename _CharT, typename _InIter>
+    _InIter
+    num_get<_CharT, _InIter>::
+    do_get(iter_type __beg, iter_type __end, ios_base& __io,
+    ios_base::iostate& __err, float& __v) const
+    {
+      string __xtrc;
+      __xtrc.reserve(32);
+      __beg = _M_extract_float(__beg, __end, __io, __err, __xtrc);
+      std::__convert_to_v(__xtrc.c_str(), __v, __err, _S_get_c_locale());
+      if (__beg == __end)
+ __err |= ios_base::eofbit;
+      return __beg;
+    }
+
+  template<typename _CharT, typename _InIter>
+    _InIter
+    num_get<_CharT, _InIter>::
+    do_get(iter_type __beg, iter_type __end, ios_base& __io,
+           ios_base::iostate& __err, double& __v) const
+    {
+      string __xtrc;
+      __xtrc.reserve(32);
+      __beg = _M_extract_float(__beg, __end, __io, __err, __xtrc);
+      std::__convert_to_v(__xtrc.c_str(), __v, __err, _S_get_c_locale());
+      if (__beg == __end)
+ __err |= ios_base::eofbit;
+      return __beg;
+    }
+# 731 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.tcc" 3
+  template<typename _CharT, typename _InIter>
+    _InIter
+    num_get<_CharT, _InIter>::
+    do_get(iter_type __beg, iter_type __end, ios_base& __io,
+           ios_base::iostate& __err, long double& __v) const
+    {
+      string __xtrc;
+      __xtrc.reserve(32);
+      __beg = _M_extract_float(__beg, __end, __io, __err, __xtrc);
+      std::__convert_to_v(__xtrc.c_str(), __v, __err, _S_get_c_locale());
+      if (__beg == __end)
+ __err |= ios_base::eofbit;
+      return __beg;
+    }
+
+  template<typename _CharT, typename _InIter>
+    _InIter
+    num_get<_CharT, _InIter>::
+    do_get(iter_type __beg, iter_type __end, ios_base& __io,
+           ios_base::iostate& __err, void*& __v) const
+    {
+
+      typedef ios_base::fmtflags fmtflags;
+      const fmtflags __fmt = __io.flags();
+      __io.flags((__fmt & ~ios_base::basefield) | ios_base::hex);
+
+      typedef __gnu_cxx::__conditional_type<(sizeof(void*)
+          <= sizeof(unsigned long)),
+ unsigned long, unsigned long long>::__type _UIntPtrType;
+
+      _UIntPtrType __ul;
+      __beg = _M_extract_int(__beg, __end, __io, __err, __ul);
+
+
+      __io.flags(__fmt);
+
+      __v = reinterpret_cast<void*>(__ul);
+      return __beg;
+    }
+
+
+
+  template<typename _CharT, typename _OutIter>
+    void
+    num_put<_CharT, _OutIter>::
+    _M_pad(_CharT __fill, streamsize __w, ios_base& __io,
+    _CharT* __new, const _CharT* __cs, int& __len) const
+    {
+
+
+      __pad<_CharT, char_traits<_CharT> >::_S_pad(__io, __fill, __new,
+        __cs, __w, __len);
+      __len = static_cast<int>(__w);
+    }
+
+
+
+  template<typename _CharT, typename _ValueT>
+    int
+    __int_to_char(_CharT* __bufend, _ValueT __v, const _CharT* __lit,
+    ios_base::fmtflags __flags, bool __dec)
+    {
+      _CharT* __buf = __bufend;
+      if (__builtin_expect(__dec, true))
+ {
+
+   do
+     {
+       *--__buf = __lit[(__v % 10) + __num_base::_S_odigits];
+       __v /= 10;
+     }
+   while (__v != 0);
+ }
+      else if ((__flags & ios_base::basefield) == ios_base::oct)
+ {
+
+   do
+     {
+       *--__buf = __lit[(__v & 0x7) + __num_base::_S_odigits];
+       __v >>= 3;
+     }
+   while (__v != 0);
+ }
+      else
+ {
+
+   const bool __uppercase = __flags & ios_base::uppercase;
+   const int __case_offset = __uppercase ? __num_base::_S_oudigits
+                                         : __num_base::_S_odigits;
+   do
+     {
+       *--__buf = __lit[(__v & 0xf) + __case_offset];
+       __v >>= 4;
+     }
+   while (__v != 0);
+ }
+      return __bufend - __buf;
+    }
+
+
+
+  template<typename _CharT, typename _OutIter>
+    void
+    num_put<_CharT, _OutIter>::
+    _M_group_int(const char* __grouping, size_t __grouping_size, _CharT __sep,
+   ios_base&, _CharT* __new, _CharT* __cs, int& __len) const
+    {
+      _CharT* __p = std::__add_grouping(__new, __sep, __grouping,
+     __grouping_size, __cs, __cs + __len);
+      __len = __p - __new;
+    }
+
+  template<typename _CharT, typename _OutIter>
+    template<typename _ValueT>
+      _OutIter
+      num_put<_CharT, _OutIter>::
+      _M_insert_int(_OutIter __s, ios_base& __io, _CharT __fill,
+      _ValueT __v) const
+      {
+ using __gnu_cxx::__add_unsigned;
+ typedef typename __add_unsigned<_ValueT>::__type __unsigned_type;
+ typedef __numpunct_cache<_CharT> __cache_type;
+ __use_cache<__cache_type> __uc;
+ const locale& __loc = __io._M_getloc();
+ const __cache_type* __lc = __uc(__loc);
+ const _CharT* __lit = __lc->_M_atoms_out;
+ const ios_base::fmtflags __flags = __io.flags();
+
+
+ const int __ilen = 5 * sizeof(_ValueT);
+ _CharT* __cs = static_cast<_CharT*>(__builtin_alloca(sizeof(_CharT)
+            * __ilen));
+
+
+
+ const ios_base::fmtflags __basefield = __flags & ios_base::basefield;
+ const bool __dec = (__basefield != ios_base::oct
+       && __basefield != ios_base::hex);
+ const __unsigned_type __u = ((__v > 0 || !__dec)
+         ? __unsigned_type(__v)
+         : -__unsigned_type(__v));
+  int __len = __int_to_char(__cs + __ilen, __u, __lit, __flags, __dec);
+ __cs += __ilen - __len;
+
+
+ if (__lc->_M_use_grouping)
+   {
+
+
+     _CharT* __cs2 = static_cast<_CharT*>(__builtin_alloca(sizeof(_CharT)
+          * (__len + 1)
+          * 2));
+     _M_group_int(__lc->_M_grouping, __lc->_M_grouping_size,
+    __lc->_M_thousands_sep, __io, __cs2 + 2, __cs, __len);
+     __cs = __cs2 + 2;
+   }
+
+
+ if (__builtin_expect(__dec, true))
+   {
+
+     if (__v >= 0)
+       {
+  if (bool(__flags & ios_base::showpos)
+      && __gnu_cxx::__numeric_traits<_ValueT>::__is_signed)
+    *--__cs = __lit[__num_base::_S_oplus], ++__len;
+       }
+     else
+       *--__cs = __lit[__num_base::_S_ominus], ++__len;
+   }
+ else if (bool(__flags & ios_base::showbase) && __v)
+   {
+     if (__basefield == ios_base::oct)
+       *--__cs = __lit[__num_base::_S_odigits], ++__len;
+     else
+       {
+
+  const bool __uppercase = __flags & ios_base::uppercase;
+  *--__cs = __lit[__num_base::_S_ox + __uppercase];
+
+  *--__cs = __lit[__num_base::_S_odigits];
+  __len += 2;
+       }
+   }
+
+
+ const streamsize __w = __io.width();
+ if (__w > static_cast<streamsize>(__len))
+   {
+     _CharT* __cs3 = static_cast<_CharT*>(__builtin_alloca(sizeof(_CharT)
+          * __w));
+     _M_pad(__fill, __w, __io, __cs3, __cs, __len);
+     __cs = __cs3;
+   }
+ __io.width(0);
+
+
+
+ return std::__write(__s, __cs, __len);
+      }
+
+  template<typename _CharT, typename _OutIter>
+    void
+    num_put<_CharT, _OutIter>::
+    _M_group_float(const char* __grouping, size_t __grouping_size,
+     _CharT __sep, const _CharT* __p, _CharT* __new,
+     _CharT* __cs, int& __len) const
+    {
+
+
+
+      const int __declen = __p ? __p - __cs : __len;
+      _CharT* __p2 = std::__add_grouping(__new, __sep, __grouping,
+      __grouping_size,
+      __cs, __cs + __declen);
+
+
+      int __newlen = __p2 - __new;
+      if (__p)
+ {
+   char_traits<_CharT>::copy(__p2, __p, __len - __declen);
+   __newlen += __len - __declen;
+ }
+      __len = __newlen;
+    }
+# 967 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.tcc" 3
+  template<typename _CharT, typename _OutIter>
+    template<typename _ValueT>
+      _OutIter
+      num_put<_CharT, _OutIter>::
+      _M_insert_float(_OutIter __s, ios_base& __io, _CharT __fill, char __mod,
+         _ValueT __v) const
+      {
+ typedef __numpunct_cache<_CharT> __cache_type;
+ __use_cache<__cache_type> __uc;
+ const locale& __loc = __io._M_getloc();
+ const __cache_type* __lc = __uc(__loc);
+
+
+ const streamsize __prec = __io.precision() < 0 ? 6 : __io.precision();
+
+ const int __max_digits =
+   __gnu_cxx::__numeric_traits<_ValueT>::__digits10;
+
+
+ int __len;
+
+ char __fbuf[16];
+ __num_base::_S_format_float(__io, __fbuf, __mod);
+
+
+
+
+ int __cs_size = __max_digits * 3;
+ char* __cs = static_cast<char*>(__builtin_alloca(__cs_size));
+ __len = std::__convert_from_v(_S_get_c_locale(), __cs, __cs_size,
+          __fbuf, __prec, __v);
+
+
+ if (__len >= __cs_size)
+   {
+     __cs_size = __len + 1;
+     __cs = static_cast<char*>(__builtin_alloca(__cs_size));
+     __len = std::__convert_from_v(_S_get_c_locale(), __cs, __cs_size,
+       __fbuf, __prec, __v);
+   }
+# 1028 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.tcc" 3
+ const ctype<_CharT>& __ctype = use_facet<ctype<_CharT> >(__loc);
+
+ _CharT* __ws = static_cast<_CharT*>(__builtin_alloca(sizeof(_CharT)
+            * __len));
+ __ctype.widen(__cs, __cs + __len, __ws);
+
+
+ _CharT* __wp = 0;
+ const char* __p = char_traits<char>::find(__cs, __len, '.');
+ if (__p)
+   {
+     __wp = __ws + (__p - __cs);
+     *__wp = __lc->_M_decimal_point;
+   }
+
+
+
+
+ if (__lc->_M_use_grouping
+     && (__wp || __len < 3 || (__cs[1] <= '9' && __cs[2] <= '9'
+          && __cs[1] >= '0' && __cs[2] >= '0')))
+   {
+
+
+     _CharT* __ws2 = static_cast<_CharT*>(__builtin_alloca(sizeof(_CharT)
+          * __len * 2));
+
+     streamsize __off = 0;
+     if (__cs[0] == '-' || __cs[0] == '+')
+       {
+  __off = 1;
+  __ws2[0] = __ws[0];
+  __len -= 1;
+       }
+
+     _M_group_float(__lc->_M_grouping, __lc->_M_grouping_size,
+      __lc->_M_thousands_sep, __wp, __ws2 + __off,
+      __ws + __off, __len);
+     __len += __off;
+
+     __ws = __ws2;
+   }
+
+
+ const streamsize __w = __io.width();
+ if (__w > static_cast<streamsize>(__len))
+   {
+     _CharT* __ws3 = static_cast<_CharT*>(__builtin_alloca(sizeof(_CharT)
+          * __w));
+     _M_pad(__fill, __w, __io, __ws3, __ws, __len);
+     __ws = __ws3;
+   }
+ __io.width(0);
+
+
+
+ return std::__write(__s, __ws, __len);
+      }
+
+  template<typename _CharT, typename _OutIter>
+    _OutIter
+    num_put<_CharT, _OutIter>::
+    do_put(iter_type __s, ios_base& __io, char_type __fill, bool __v) const
+    {
+      const ios_base::fmtflags __flags = __io.flags();
+      if ((__flags & ios_base::boolalpha) == 0)
+        {
+          const long __l = __v;
+          __s = _M_insert_int(__s, __io, __fill, __l);
+        }
+      else
+        {
+   typedef __numpunct_cache<_CharT> __cache_type;
+   __use_cache<__cache_type> __uc;
+   const locale& __loc = __io._M_getloc();
+   const __cache_type* __lc = __uc(__loc);
+
+   const _CharT* __name = __v ? __lc->_M_truename
+                              : __lc->_M_falsename;
+   int __len = __v ? __lc->_M_truename_size
+                   : __lc->_M_falsename_size;
+
+   const streamsize __w = __io.width();
+   if (__w > static_cast<streamsize>(__len))
+     {
+       const streamsize __plen = __w - __len;
+       _CharT* __ps
+  = static_cast<_CharT*>(__builtin_alloca(sizeof(_CharT)
+       * __plen));
+
+       char_traits<_CharT>::assign(__ps, __plen, __fill);
+       __io.width(0);
+
+       if ((__flags & ios_base::adjustfield) == ios_base::left)
+  {
+    __s = std::__write(__s, __name, __len);
+    __s = std::__write(__s, __ps, __plen);
+  }
+       else
+  {
+    __s = std::__write(__s, __ps, __plen);
+    __s = std::__write(__s, __name, __len);
+  }
+       return __s;
+     }
+   __io.width(0);
+   __s = std::__write(__s, __name, __len);
+ }
+      return __s;
+    }
+
+  template<typename _CharT, typename _OutIter>
+    _OutIter
+    num_put<_CharT, _OutIter>::
+    do_put(iter_type __s, ios_base& __io, char_type __fill, double __v) const
+    { return _M_insert_float(__s, __io, __fill, char(), __v); }
+# 1153 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.tcc" 3
+  template<typename _CharT, typename _OutIter>
+    _OutIter
+    num_put<_CharT, _OutIter>::
+    do_put(iter_type __s, ios_base& __io, char_type __fill,
+    long double __v) const
+    { return _M_insert_float(__s, __io, __fill, 'L', __v); }
+
+  template<typename _CharT, typename _OutIter>
+    _OutIter
+    num_put<_CharT, _OutIter>::
+    do_put(iter_type __s, ios_base& __io, char_type __fill,
+           const void* __v) const
+    {
+      const ios_base::fmtflags __flags = __io.flags();
+      const ios_base::fmtflags __fmt = ~(ios_base::basefield
+      | ios_base::uppercase);
+      __io.flags((__flags & __fmt) | (ios_base::hex | ios_base::showbase));
+
+      typedef __gnu_cxx::__conditional_type<(sizeof(const void*)
+          <= sizeof(unsigned long)),
+ unsigned long, unsigned long long>::__type _UIntPtrType;
+
+      __s = _M_insert_int(__s, __io, __fill,
+     reinterpret_cast<_UIntPtrType>(__v));
+      __io.flags(__flags);
+      return __s;
+    }
+# 1190 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.tcc" 3
+  template<typename _CharT, typename _Traits>
+    void
+    __pad<_CharT, _Traits>::_S_pad(ios_base& __io, _CharT __fill,
+       _CharT* __news, const _CharT* __olds,
+       streamsize __newlen, streamsize __oldlen)
+    {
+      const size_t __plen = static_cast<size_t>(__newlen - __oldlen);
+      const ios_base::fmtflags __adjust = __io.flags() & ios_base::adjustfield;
+
+
+      if (__adjust == ios_base::left)
+ {
+   _Traits::copy(__news, __olds, __oldlen);
+   _Traits::assign(__news + __oldlen, __plen, __fill);
+   return;
+ }
+
+      size_t __mod = 0;
+      if (__adjust == ios_base::internal)
+ {
+
+
+
+          const locale& __loc = __io._M_getloc();
+   const ctype<_CharT>& __ctype = use_facet<ctype<_CharT> >(__loc);
+
+   if (__ctype.widen('-') == __olds[0]
+       || __ctype.widen('+') == __olds[0])
+     {
+       __news[0] = __olds[0];
+       __mod = 1;
+       ++__news;
+     }
+   else if (__ctype.widen('0') == __olds[0]
+     && __oldlen > 1
+     && (__ctype.widen('x') == __olds[1]
+         || __ctype.widen('X') == __olds[1]))
+     {
+       __news[0] = __olds[0];
+       __news[1] = __olds[1];
+       __mod = 2;
+       __news += 2;
+     }
+
+ }
+      _Traits::assign(__news, __plen, __fill);
+      _Traits::copy(__news + __plen, __olds + __mod, __oldlen - __mod);
+    }
+
+  template<typename _CharT>
+    _CharT*
+    __add_grouping(_CharT* __s, _CharT __sep,
+     const char* __gbeg, size_t __gsize,
+     const _CharT* __first, const _CharT* __last)
+    {
+      size_t __idx = 0;
+      size_t __ctr = 0;
+
+      while (__last - __first > __gbeg[__idx]
+      && static_cast<signed char>(__gbeg[__idx]) > 0
+      && __gbeg[__idx] != __gnu_cxx::__numeric_traits<char>::__max)
+ {
+   __last -= __gbeg[__idx];
+   __idx < __gsize - 1 ? ++__idx : ++__ctr;
+ }
+
+      while (__first != __last)
+ *__s++ = *__first++;
+
+      while (__ctr--)
+ {
+   *__s++ = __sep;
+   for (char __i = __gbeg[__idx]; __i > 0; --__i)
+     *__s++ = *__first++;
+ }
+
+      while (__idx--)
+ {
+   *__s++ = __sep;
+   for (char __i = __gbeg[__idx]; __i > 0; --__i)
+     *__s++ = *__first++;
+ }
+
+      return __s;
+    }
+
+
+
+
+  extern template class numpunct<char>;
+  extern template class numpunct_byname<char>;
+  extern template class num_get<char>;
+  extern template class num_put<char>;
+  extern template class ctype_byname<char>;
+
+  extern template
+    const ctype<char>&
+    use_facet<ctype<char> >(const locale&);
+
+  extern template
+    const numpunct<char>&
+    use_facet<numpunct<char> >(const locale&);
+
+  extern template
+    const num_put<char>&
+    use_facet<num_put<char> >(const locale&);
+
+  extern template
+    const num_get<char>&
+    use_facet<num_get<char> >(const locale&);
+
+  extern template
+    bool
+    has_facet<ctype<char> >(const locale&);
+
+  extern template
+    bool
+    has_facet<numpunct<char> >(const locale&);
+
+  extern template
+    bool
+    has_facet<num_put<char> >(const locale&);
+
+  extern template
+    bool
+    has_facet<num_get<char> >(const locale&);
+
+
+  extern template class numpunct<wchar_t>;
+  extern template class numpunct_byname<wchar_t>;
+  extern template class num_get<wchar_t>;
+  extern template class num_put<wchar_t>;
+  extern template class ctype_byname<wchar_t>;
+
+  extern template
+    const ctype<wchar_t>&
+    use_facet<ctype<wchar_t> >(const locale&);
+
+  extern template
+    const numpunct<wchar_t>&
+    use_facet<numpunct<wchar_t> >(const locale&);
+
+  extern template
+    const num_put<wchar_t>&
+    use_facet<num_put<wchar_t> >(const locale&);
+
+  extern template
+    const num_get<wchar_t>&
+    use_facet<num_get<wchar_t> >(const locale&);
+
+ extern template
+    bool
+    has_facet<ctype<wchar_t> >(const locale&);
+
+  extern template
+    bool
+    has_facet<numpunct<wchar_t> >(const locale&);
+
+  extern template
+    bool
+    has_facet<num_put<wchar_t> >(const locale&);
+
+  extern template
+    bool
+    has_facet<num_get<wchar_t> >(const locale&);
+
+
+
+
+}
+# 2608 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_facets.h" 2 3
+# 39 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/basic_ios.h" 2 3
+
+
+namespace std __attribute__ ((__visibility__ ("default")))
+{
+
+
+  template<typename _Facet>
+    inline const _Facet&
+    __check_facet(const _Facet* __f)
+    {
+      if (!__f)
+ __throw_bad_cast();
+      return *__f;
+    }
+# 62 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/basic_ios.h" 3
+  template<typename _CharT, typename _Traits>
+    class basic_ios : public ios_base
+    {
+    public:
+
+
+
+
+
+
+      typedef _CharT char_type;
+      typedef typename _Traits::int_type int_type;
+      typedef typename _Traits::pos_type pos_type;
+      typedef typename _Traits::off_type off_type;
+      typedef _Traits traits_type;
+
+
+
+
+
+
+      typedef ctype<_CharT> __ctype_type;
+      typedef num_put<_CharT, ostreambuf_iterator<_CharT, _Traits> >
+           __num_put_type;
+      typedef num_get<_CharT, istreambuf_iterator<_CharT, _Traits> >
+           __num_get_type;
+
+
+
+    protected:
+      basic_ostream<_CharT, _Traits>* _M_tie;
+      mutable char_type _M_fill;
+      mutable bool _M_fill_init;
+      basic_streambuf<_CharT, _Traits>* _M_streambuf;
+
+
+      const __ctype_type* _M_ctype;
+
+      const __num_put_type* _M_num_put;
+
+      const __num_get_type* _M_num_get;
+
+    public:
+
+
+
+
+
+
+
+      operator void*() const
+      { return this->fail() ? 0 : const_cast<basic_ios*>(this); }
+
+      bool
+      operator!() const
+      { return this->fail(); }
+# 127 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/basic_ios.h" 3
+      iostate
+      rdstate() const
+      { return _M_streambuf_state; }
+# 138 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/basic_ios.h" 3
+      void
+      clear(iostate __state = goodbit);
+
+
+
+
+
+
+
+      void
+      setstate(iostate __state)
+      { this->clear(this->rdstate() | __state); }
+
+
+
+
+      void
+      _M_setstate(iostate __state)
+      {
+
+
+ _M_streambuf_state |= __state;
+ if (this->exceptions() & __state)
+                          ;
+      }
+
+
+
+
+
+
+
+      bool
+      good() const
+      { return this->rdstate() == 0; }
+
+
+
+
+
+
+
+      bool
+      eof() const
+      { return (this->rdstate() & eofbit) != 0; }
+# 191 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/basic_ios.h" 3
+      bool
+      fail() const
+      { return (this->rdstate() & (badbit | failbit)) != 0; }
+
+
+
+
+
+
+
+      bool
+      bad() const
+      { return (this->rdstate() & badbit) != 0; }
+# 212 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/basic_ios.h" 3
+      iostate
+      exceptions() const
+      { return _M_exception; }
+# 247 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/basic_ios.h" 3
+      void
+      exceptions(iostate __except)
+      {
+        _M_exception = __except;
+        this->clear(_M_streambuf_state);
+      }
+
+
+
+
+
+
+
+      explicit
+      basic_ios(basic_streambuf<_CharT, _Traits>* __sb)
+      : ios_base(), _M_tie(0), _M_fill(), _M_fill_init(false), _M_streambuf(0),
+ _M_ctype(0), _M_num_put(0), _M_num_get(0)
+      { this->init(__sb); }
+
+
+
+
+
+
+
+      virtual
+      ~basic_ios() { }
+# 285 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/basic_ios.h" 3
+      basic_ostream<_CharT, _Traits>*
+      tie() const
+      { return _M_tie; }
+# 297 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/basic_ios.h" 3
+      basic_ostream<_CharT, _Traits>*
+      tie(basic_ostream<_CharT, _Traits>* __tiestr)
+      {
+        basic_ostream<_CharT, _Traits>* __old = _M_tie;
+        _M_tie = __tiestr;
+        return __old;
+      }
+
+
+
+
+
+
+
+      basic_streambuf<_CharT, _Traits>*
+      rdbuf() const
+      { return _M_streambuf; }
+# 337 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/basic_ios.h" 3
+      basic_streambuf<_CharT, _Traits>*
+      rdbuf(basic_streambuf<_CharT, _Traits>* __sb);
+# 351 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/basic_ios.h" 3
+      basic_ios&
+      copyfmt(const basic_ios& __rhs);
+
+
+
+
+
+
+
+      char_type
+      fill() const
+      {
+ if (!_M_fill_init)
+   {
+     _M_fill = this->widen(' ');
+     _M_fill_init = true;
+   }
+ return _M_fill;
+      }
+# 380 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/basic_ios.h" 3
+      char_type
+      fill(char_type __ch)
+      {
+ char_type __old = this->fill();
+ _M_fill = __ch;
+ return __old;
+      }
+# 400 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/basic_ios.h" 3
+      locale
+      imbue(const locale& __loc);
+# 420 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/basic_ios.h" 3
+      char
+      narrow(char_type __c, char __dfault) const
+      { return __check_facet(_M_ctype).narrow(__c, __dfault); }
+# 439 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/basic_ios.h" 3
+      char_type
+      widen(char __c) const
+      { return __check_facet(_M_ctype).widen(__c); }
+
+    protected:
+
+
+
+
+
+
+
+      basic_ios()
+      : ios_base(), _M_tie(0), _M_fill(char_type()), _M_fill_init(false),
+ _M_streambuf(0), _M_ctype(0), _M_num_put(0), _M_num_get(0)
+      { }
+
+
+
+
+
+
+
+      void
+      init(basic_streambuf<_CharT, _Traits>* __sb);
+
+      void
+      _M_cache_locale(const locale& __loc);
+    };
+
+
+}
+
+
+# 1 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/basic_ios.tcc" 1 3
+# 34 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/basic_ios.tcc" 3
+# 34 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/basic_ios.tcc" 3
+
+namespace std __attribute__ ((__visibility__ ("default")))
+{
+
+
+  template<typename _CharT, typename _Traits>
+    void
+    basic_ios<_CharT, _Traits>::clear(iostate __state)
+    {
+      if (this->rdbuf())
+ _M_streambuf_state = __state;
+      else
+   _M_streambuf_state = __state | badbit;
+      if (this->exceptions() & this->rdstate())
+ __throw_ios_failure(("basic_ios::clear"));
+    }
+
+  template<typename _CharT, typename _Traits>
+    basic_streambuf<_CharT, _Traits>*
+    basic_ios<_CharT, _Traits>::rdbuf(basic_streambuf<_CharT, _Traits>* __sb)
+    {
+      basic_streambuf<_CharT, _Traits>* __old = _M_streambuf;
+      _M_streambuf = __sb;
+      this->clear();
+      return __old;
+    }
+
+  template<typename _CharT, typename _Traits>
+    basic_ios<_CharT, _Traits>&
+    basic_ios<_CharT, _Traits>::copyfmt(const basic_ios& __rhs)
+    {
+
+
+      if (this != &__rhs)
+ {
+
+
+
+
+   _Words* __words = (__rhs._M_word_size <= _S_local_word_size) ?
+                      _M_local_word : new _Words[__rhs._M_word_size];
+
+
+   _Callback_list* __cb = __rhs._M_callbacks;
+   if (__cb)
+     __cb->_M_add_reference();
+   _M_call_callbacks(erase_event);
+   if (_M_word != _M_local_word)
+     {
+       delete [] _M_word;
+       _M_word = 0;
+     }
+   _M_dispose_callbacks();
+
+
+   _M_callbacks = __cb;
+   for (int __i = 0; __i < __rhs._M_word_size; ++__i)
+     __words[__i] = __rhs._M_word[__i];
+   _M_word = __words;
+   _M_word_size = __rhs._M_word_size;
+
+   this->flags(__rhs.flags());
+   this->width(__rhs.width());
+   this->precision(__rhs.precision());
+   this->tie(__rhs.tie());
+   this->fill(__rhs.fill());
+   _M_ios_locale = __rhs.getloc();
+   _M_cache_locale(_M_ios_locale);
+
+   _M_call_callbacks(copyfmt_event);
+
+
+   this->exceptions(__rhs.exceptions());
+ }
+      return *this;
+    }
+
+
+  template<typename _CharT, typename _Traits>
+    locale
+    basic_ios<_CharT, _Traits>::imbue(const locale& __loc)
+    {
+      locale __old(this->getloc());
+      ios_base::imbue(__loc);
+      _M_cache_locale(__loc);
+      if (this->rdbuf() != 0)
+ this->rdbuf()->pubimbue(__loc);
+      return __old;
+    }
+
+  template<typename _CharT, typename _Traits>
+    void
+    basic_ios<_CharT, _Traits>::init(basic_streambuf<_CharT, _Traits>* __sb)
+    {
+
+      ios_base::_M_init();
+
+
+      _M_cache_locale(_M_ios_locale);
+# 146 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/basic_ios.tcc" 3
+      _M_fill = _CharT();
+      _M_fill_init = false;
+
+      _M_tie = 0;
+      _M_exception = goodbit;
+      _M_streambuf = __sb;
+      _M_streambuf_state = __sb ? goodbit : badbit;
+    }
+
+  template<typename _CharT, typename _Traits>
+    void
+    basic_ios<_CharT, _Traits>::_M_cache_locale(const locale& __loc)
+    {
+      if (__builtin_expect(has_facet<__ctype_type>(__loc), true))
+ _M_ctype = &use_facet<__ctype_type>(__loc);
+      else
+ _M_ctype = 0;
+
+      if (__builtin_expect(has_facet<__num_put_type>(__loc), true))
+ _M_num_put = &use_facet<__num_put_type>(__loc);
+      else
+ _M_num_put = 0;
+
+      if (__builtin_expect(has_facet<__num_get_type>(__loc), true))
+ _M_num_get = &use_facet<__num_get_type>(__loc);
+      else
+ _M_num_get = 0;
+    }
+
+
+
+
+  extern template class basic_ios<char>;
+
+
+  extern template class basic_ios<wchar_t>;
+
+
+
+
+}
+# 473 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/basic_ios.h" 2 3
+# 45 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ios" 2 3
+# 40 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream" 2 3
+
+
+namespace std __attribute__ ((__visibility__ ("default")))
+{
+# 55 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream" 3
+  template<typename _CharT, typename _Traits>
+    class basic_ostream : virtual public basic_ios<_CharT, _Traits>
+    {
+    public:
+
+      typedef _CharT char_type;
+      typedef typename _Traits::int_type int_type;
+      typedef typename _Traits::pos_type pos_type;
+      typedef typename _Traits::off_type off_type;
+      typedef _Traits traits_type;
+
+
+      typedef basic_streambuf<_CharT, _Traits> __streambuf_type;
+      typedef basic_ios<_CharT, _Traits> __ios_type;
+      typedef basic_ostream<_CharT, _Traits> __ostream_type;
+      typedef num_put<_CharT, ostreambuf_iterator<_CharT, _Traits> >
+             __num_put_type;
+      typedef ctype<_CharT> __ctype_type;
+# 82 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream" 3
+      explicit
+      basic_ostream(__streambuf_type* __sb)
+      { this->init(__sb); }
+
+
+
+
+
+
+      virtual
+      ~basic_ostream() { }
+
+
+      class sentry;
+      friend class sentry;
+# 108 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream" 3
+      __ostream_type&
+      operator<<(__ostream_type& (*__pf)(__ostream_type&))
+      {
+
+
+
+ return __pf(*this);
+      }
+
+      __ostream_type&
+      operator<<(__ios_type& (*__pf)(__ios_type&))
+      {
+
+
+
+ __pf(*this);
+ return *this;
+      }
+
+      __ostream_type&
+      operator<<(ios_base& (*__pf) (ios_base&))
+      {
+
+
+
+ __pf(*this);
+ return *this;
+      }
+# 165 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream" 3
+      __ostream_type&
+      operator<<(long __n)
+      { return _M_insert(__n); }
+
+      __ostream_type&
+      operator<<(unsigned long __n)
+      { return _M_insert(__n); }
+
+      __ostream_type&
+      operator<<(bool __n)
+      { return _M_insert(__n); }
+
+      __ostream_type&
+      operator<<(short __n);
+
+      __ostream_type&
+      operator<<(unsigned short __n)
+      {
+
+
+ return _M_insert(static_cast<unsigned long>(__n));
+      }
+
+      __ostream_type&
+      operator<<(int __n);
+
+      __ostream_type&
+      operator<<(unsigned int __n)
+      {
+
+
+ return _M_insert(static_cast<unsigned long>(__n));
+      }
+
+
+      __ostream_type&
+      operator<<(long long __n)
+      { return _M_insert(__n); }
+
+      __ostream_type&
+      operator<<(unsigned long long __n)
+      { return _M_insert(__n); }
+
+
+      __ostream_type&
+      operator<<(double __f)
+      { return _M_insert(__f); }
+
+      __ostream_type&
+      operator<<(float __f)
+      {
+
+
+ return _M_insert(static_cast<double>(__f));
+      }
+
+      __ostream_type&
+      operator<<(long double __f)
+      { return _M_insert(__f); }
+
+      __ostream_type&
+      operator<<(const void* __p)
+      { return _M_insert(__p); }
+# 250 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream" 3
+      __ostream_type&
+      operator<<(__streambuf_type* __sb);
+# 283 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream" 3
+      __ostream_type&
+      put(char_type __c);
+
+
+      void
+      _M_write(const char_type* __s, streamsize __n)
+      {
+ const streamsize __put = this->rdbuf()->sputn(__s, __n);
+ if (__put != __n)
+   this->setstate(ios_base::badbit);
+      }
+# 311 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream" 3
+      __ostream_type&
+      write(const char_type* __s, streamsize __n);
+# 324 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream" 3
+      __ostream_type&
+      flush();
+# 335 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream" 3
+      pos_type
+      tellp();
+# 346 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream" 3
+      __ostream_type&
+      seekp(pos_type);
+# 358 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream" 3
+       __ostream_type&
+      seekp(off_type, ios_base::seekdir);
+
+    protected:
+      basic_ostream()
+      { this->init(0); }
+
+      template<typename _ValueT>
+        __ostream_type&
+        _M_insert(_ValueT __v);
+    };
+# 377 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream" 3
+  template <typename _CharT, typename _Traits>
+    class basic_ostream<_CharT, _Traits>::sentry
+    {
+
+      bool _M_ok;
+      basic_ostream<_CharT, _Traits>& _M_os;
+
+    public:
+# 396 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream" 3
+      explicit
+      sentry(basic_ostream<_CharT, _Traits>& __os);
+# 406 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream" 3
+      ~sentry()
+      {
+
+ if (bool(_M_os.flags() & ios_base::unitbuf) && !uncaught_exception())
+   {
+
+     if (_M_os.rdbuf() && _M_os.rdbuf()->pubsync() == -1)
+       _M_os.setstate(ios_base::badbit);
+   }
+      }
+# 427 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream" 3
+      operator bool() const
+      { return _M_ok; }
+    };
+# 448 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream" 3
+  template<typename _CharT, typename _Traits>
+    inline basic_ostream<_CharT, _Traits>&
+    operator<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)
+    { return __ostream_insert(__out, &__c, 1); }
+
+  template<typename _CharT, typename _Traits>
+    inline basic_ostream<_CharT, _Traits>&
+    operator<<(basic_ostream<_CharT, _Traits>& __out, char __c)
+    { return (__out << __out.widen(__c)); }
+
+
+  template <class _Traits>
+    inline basic_ostream<char, _Traits>&
+    operator<<(basic_ostream<char, _Traits>& __out, char __c)
+    { return __ostream_insert(__out, &__c, 1); }
+
+
+  template<class _Traits>
+    inline basic_ostream<char, _Traits>&
+    operator<<(basic_ostream<char, _Traits>& __out, signed char __c)
+    { return (__out << static_cast<char>(__c)); }
+
+  template<class _Traits>
+    inline basic_ostream<char, _Traits>&
+    operator<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
+    { return (__out << static_cast<char>(__c)); }
+# 490 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream" 3
+  template<typename _CharT, typename _Traits>
+    inline basic_ostream<_CharT, _Traits>&
+    operator<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)
+    {
+      if (!__s)
+ __out.setstate(ios_base::badbit);
+      else
+ __ostream_insert(__out, __s,
+    static_cast<streamsize>(_Traits::length(__s)));
+      return __out;
+    }
+
+  template<typename _CharT, typename _Traits>
+    basic_ostream<_CharT, _Traits> &
+    operator<<(basic_ostream<_CharT, _Traits>& __out, const char* __s);
+
+
+  template<class _Traits>
+    inline basic_ostream<char, _Traits>&
+    operator<<(basic_ostream<char, _Traits>& __out, const char* __s)
+    {
+      if (!__s)
+ __out.setstate(ios_base::badbit);
+      else
+ __ostream_insert(__out, __s,
+    static_cast<streamsize>(_Traits::length(__s)));
+      return __out;
+    }
+
+
+  template<class _Traits>
+    inline basic_ostream<char, _Traits>&
+    operator<<(basic_ostream<char, _Traits>& __out, const signed char* __s)
+    { return (__out << reinterpret_cast<const char*>(__s)); }
+
+  template<class _Traits>
+    inline basic_ostream<char, _Traits> &
+    operator<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)
+    { return (__out << reinterpret_cast<const char*>(__s)); }
+# 540 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream" 3
+  template<typename _CharT, typename _Traits>
+    inline basic_ostream<_CharT, _Traits>&
+    endl(basic_ostream<_CharT, _Traits>& __os)
+    { return flush(__os.put(__os.widen('\n'))); }
+
+
+
+
+
+
+
+  template<typename _CharT, typename _Traits>
+    inline basic_ostream<_CharT, _Traits>&
+    ends(basic_ostream<_CharT, _Traits>& __os)
+    { return __os.put(_CharT()); }
+
+
+
+
+
+
+  template<typename _CharT, typename _Traits>
+    inline basic_ostream<_CharT, _Traits>&
+    flush(basic_ostream<_CharT, _Traits>& __os)
+    { return __os.flush(); }
+# 585 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream" 3
+}
+
+
+# 1 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/ostream.tcc" 1 3
+# 39 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/ostream.tcc" 3
+# 39 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/ostream.tcc" 3
+
+
+
+namespace std __attribute__ ((__visibility__ ("default")))
+{
+
+
+  template<typename _CharT, typename _Traits>
+    basic_ostream<_CharT, _Traits>::sentry::
+    sentry(basic_ostream<_CharT, _Traits>& __os)
+    : _M_ok(false), _M_os(__os)
+    {
+
+      if (__os.tie() && __os.good())
+ __os.tie()->flush();
+
+      if (__os.good())
+ _M_ok = true;
+      else
+ __os.setstate(ios_base::failbit);
+    }
+
+  template<typename _CharT, typename _Traits>
+    template<typename _ValueT>
+      basic_ostream<_CharT, _Traits>&
+      basic_ostream<_CharT, _Traits>::
+      _M_insert(_ValueT __v)
+      {
+ sentry __cerb(*this);
+ if (__cerb)
+   {
+     ios_base::iostate __err = ios_base::goodbit;
+     if (true)
+       {
+  const __num_put_type& __np = __check_facet(this->_M_num_put);
+  if (__np.put(*this, *this, this->fill(), __v).failed())
+    __err |= ios_base::badbit;
+       }
+     if (false)
+       {
+  this->_M_setstate(ios_base::badbit);
+                         ;
+       }
+     if (false)
+       { this->_M_setstate(ios_base::badbit); }
+     if (__err)
+       this->setstate(__err);
+   }
+ return *this;
+      }
+
+  template<typename _CharT, typename _Traits>
+    basic_ostream<_CharT, _Traits>&
+    basic_ostream<_CharT, _Traits>::
+    operator<<(short __n)
+    {
+
+
+      const ios_base::fmtflags __fmt = this->flags() & ios_base::basefield;
+      if (__fmt == ios_base::oct || __fmt == ios_base::hex)
+ return _M_insert(static_cast<long>(static_cast<unsigned short>(__n)));
+      else
+ return _M_insert(static_cast<long>(__n));
+    }
+
+  template<typename _CharT, typename _Traits>
+    basic_ostream<_CharT, _Traits>&
+    basic_ostream<_CharT, _Traits>::
+    operator<<(int __n)
+    {
+
+
+      const ios_base::fmtflags __fmt = this->flags() & ios_base::basefield;
+      if (__fmt == ios_base::oct || __fmt == ios_base::hex)
+ return _M_insert(static_cast<long>(static_cast<unsigned int>(__n)));
+      else
+ return _M_insert(static_cast<long>(__n));
+    }
+
+  template<typename _CharT, typename _Traits>
+    basic_ostream<_CharT, _Traits>&
+    basic_ostream<_CharT, _Traits>::
+    operator<<(__streambuf_type* __sbin)
+    {
+      ios_base::iostate __err = ios_base::goodbit;
+      sentry __cerb(*this);
+      if (__cerb && __sbin)
+ {
+   if (true)
+     {
+       if (!__copy_streambufs(__sbin, this->rdbuf()))
+  __err |= ios_base::failbit;
+     }
+   if (false)
+     {
+       this->_M_setstate(ios_base::badbit);
+                              ;
+     }
+   if (false)
+     { this->_M_setstate(ios_base::failbit); }
+ }
+      else if (!__sbin)
+ __err |= ios_base::badbit;
+      if (__err)
+ this->setstate(__err);
+      return *this;
+    }
+
+  template<typename _CharT, typename _Traits>
+    basic_ostream<_CharT, _Traits>&
+    basic_ostream<_CharT, _Traits>::
+    put(char_type __c)
+    {
+
+
+
+
+
+
+      sentry __cerb(*this);
+      if (__cerb)
+ {
+   ios_base::iostate __err = ios_base::goodbit;
+   if (true)
+     {
+       const int_type __put = this->rdbuf()->sputc(__c);
+       if (traits_type::eq_int_type(__put, traits_type::eof()))
+  __err |= ios_base::badbit;
+     }
+   if (false)
+     {
+       this->_M_setstate(ios_base::badbit);
+                              ;
+     }
+   if (false)
+     { this->_M_setstate(ios_base::badbit); }
+   if (__err)
+     this->setstate(__err);
+ }
+      return *this;
+    }
+
+  template<typename _CharT, typename _Traits>
+    basic_ostream<_CharT, _Traits>&
+    basic_ostream<_CharT, _Traits>::
+    write(const _CharT* __s, streamsize __n)
+    {
+
+
+
+
+
+
+
+      sentry __cerb(*this);
+      if (__cerb)
+ {
+   if (true)
+     { _M_write(__s, __n); }
+   if (false)
+     {
+       this->_M_setstate(ios_base::badbit);
+                              ;
+     }
+   if (false)
+     { this->_M_setstate(ios_base::badbit); }
+ }
+      return *this;
+    }
+
+  template<typename _CharT, typename _Traits>
+    basic_ostream<_CharT, _Traits>&
+    basic_ostream<_CharT, _Traits>::
+    flush()
+    {
+
+
+
+      ios_base::iostate __err = ios_base::goodbit;
+      if (true)
+ {
+   if (this->rdbuf() && this->rdbuf()->pubsync() == -1)
+     __err |= ios_base::badbit;
+ }
+      if (false)
+ {
+   this->_M_setstate(ios_base::badbit);
+                          ;
+ }
+      if (false)
+ { this->_M_setstate(ios_base::badbit); }
+      if (__err)
+ this->setstate(__err);
+      return *this;
+    }
+
+  template<typename _CharT, typename _Traits>
+    typename basic_ostream<_CharT, _Traits>::pos_type
+    basic_ostream<_CharT, _Traits>::
+    tellp()
+    {
+      pos_type __ret = pos_type(-1);
+      if (true)
+ {
+   if (!this->fail())
+     __ret = this->rdbuf()->pubseekoff(0, ios_base::cur, ios_base::out);
+ }
+      if (false)
+ {
+   this->_M_setstate(ios_base::badbit);
+                          ;
+ }
+      if (false)
+ { this->_M_setstate(ios_base::badbit); }
+      return __ret;
+    }
+
+  template<typename _CharT, typename _Traits>
+    basic_ostream<_CharT, _Traits>&
+    basic_ostream<_CharT, _Traits>::
+    seekp(pos_type __pos)
+    {
+      ios_base::iostate __err = ios_base::goodbit;
+      if (true)
+ {
+   if (!this->fail())
+     {
+
+
+       const pos_type __p = this->rdbuf()->pubseekpos(__pos,
+            ios_base::out);
+
+
+       if (__p == pos_type(off_type(-1)))
+  __err |= ios_base::failbit;
+     }
+ }
+      if (false)
+ {
+   this->_M_setstate(ios_base::badbit);
+                          ;
+ }
+      if (false)
+ { this->_M_setstate(ios_base::badbit); }
+      if (__err)
+ this->setstate(__err);
+      return *this;
+    }
+
+  template<typename _CharT, typename _Traits>
+    basic_ostream<_CharT, _Traits>&
+    basic_ostream<_CharT, _Traits>::
+    seekp(off_type __off, ios_base::seekdir __dir)
+    {
+      ios_base::iostate __err = ios_base::goodbit;
+      if (true)
+ {
+   if (!this->fail())
+     {
+
+
+       const pos_type __p = this->rdbuf()->pubseekoff(__off, __dir,
+            ios_base::out);
+
+
+       if (__p == pos_type(off_type(-1)))
+  __err |= ios_base::failbit;
+     }
+ }
+      if (false)
+ {
+   this->_M_setstate(ios_base::badbit);
+                          ;
+ }
+      if (false)
+ { this->_M_setstate(ios_base::badbit); }
+      if (__err)
+ this->setstate(__err);
+      return *this;
+    }
+
+  template<typename _CharT, typename _Traits>
+    basic_ostream<_CharT, _Traits>&
+    operator<<(basic_ostream<_CharT, _Traits>& __out, const char* __s)
+    {
+      if (!__s)
+ __out.setstate(ios_base::badbit);
+      else
+ {
+
+
+   const size_t __clen = char_traits<char>::length(__s);
+   if (true)
+     {
+       struct __ptr_guard
+       {
+  _CharT *__p;
+  __ptr_guard (_CharT *__ip): __p(__ip) { }
+  ~__ptr_guard() { delete[] __p; }
+  _CharT* __get() { return __p; }
+       } __pg (new _CharT[__clen]);
+
+       _CharT *__ws = __pg.__get();
+       for (size_t __i = 0; __i < __clen; ++__i)
+  __ws[__i] = __out.widen(__s[__i]);
+       __ostream_insert(__out, __ws, __clen);
+     }
+   if (false)
+     {
+       __out._M_setstate(ios_base::badbit);
+                              ;
+     }
+   if (false)
+     { __out._M_setstate(ios_base::badbit); }
+ }
+      return __out;
+    }
+
+
+
+
+  extern template class basic_ostream<char>;
+  extern template ostream& endl(ostream&);
+  extern template ostream& ends(ostream&);
+  extern template ostream& flush(ostream&);
+  extern template ostream& operator<<(ostream&, char);
+  extern template ostream& operator<<(ostream&, unsigned char);
+  extern template ostream& operator<<(ostream&, signed char);
+  extern template ostream& operator<<(ostream&, const char*);
+  extern template ostream& operator<<(ostream&, const unsigned char*);
+  extern template ostream& operator<<(ostream&, const signed char*);
+
+  extern template ostream& ostream::_M_insert(long);
+  extern template ostream& ostream::_M_insert(unsigned long);
+  extern template ostream& ostream::_M_insert(bool);
+
+  extern template ostream& ostream::_M_insert(long long);
+  extern template ostream& ostream::_M_insert(unsigned long long);
+
+  extern template ostream& ostream::_M_insert(double);
+  extern template ostream& ostream::_M_insert(long double);
+  extern template ostream& ostream::_M_insert(const void*);
+
+
+  extern template class basic_ostream<wchar_t>;
+  extern template wostream& endl(wostream&);
+  extern template wostream& ends(wostream&);
+  extern template wostream& flush(wostream&);
+  extern template wostream& operator<<(wostream&, wchar_t);
+  extern template wostream& operator<<(wostream&, char);
+  extern template wostream& operator<<(wostream&, const wchar_t*);
+  extern template wostream& operator<<(wostream&, const char*);
+
+  extern template wostream& wostream::_M_insert(long);
+  extern template wostream& wostream::_M_insert(unsigned long);
+  extern template wostream& wostream::_M_insert(bool);
+
+  extern template wostream& wostream::_M_insert(long long);
+  extern template wostream& wostream::_M_insert(unsigned long long);
+
+  extern template wostream& wostream::_M_insert(double);
+  extern template wostream& wostream::_M_insert(long double);
+  extern template wostream& wostream::_M_insert(const void*);
+
+
+
+
+}
+# 588 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream" 2 3
+# 40 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/iostream" 2 3
+# 1 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/istream" 1 3
+# 38 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/istream" 3
+# 38 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/istream" 3
+
+
+
+
+namespace std __attribute__ ((__visibility__ ("default")))
+{
+# 55 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/istream" 3
+  template<typename _CharT, typename _Traits>
+    class basic_istream : virtual public basic_ios<_CharT, _Traits>
+    {
+    public:
+
+      typedef _CharT char_type;
+      typedef typename _Traits::int_type int_type;
+      typedef typename _Traits::pos_type pos_type;
+      typedef typename _Traits::off_type off_type;
+      typedef _Traits traits_type;
+
+
+      typedef basic_streambuf<_CharT, _Traits> __streambuf_type;
+      typedef basic_ios<_CharT, _Traits> __ios_type;
+      typedef basic_istream<_CharT, _Traits> __istream_type;
+      typedef num_get<_CharT, istreambuf_iterator<_CharT, _Traits> >
+        __num_get_type;
+      typedef ctype<_CharT> __ctype_type;
+
+    protected:
+
+
+
+
+
+      streamsize _M_gcount;
+
+    public:
+# 91 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/istream" 3
+      explicit
+      basic_istream(__streambuf_type* __sb)
+      : _M_gcount(streamsize(0))
+      { this->init(__sb); }
+
+
+
+
+
+
+      virtual
+      ~basic_istream()
+      { _M_gcount = streamsize(0); }
+
+
+      class sentry;
+      friend class sentry;
+# 120 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/istream" 3
+      __istream_type&
+      operator>>(__istream_type& (*__pf)(__istream_type&))
+      { return __pf(*this); }
+
+      __istream_type&
+      operator>>(__ios_type& (*__pf)(__ios_type&))
+      {
+ __pf(*this);
+ return *this;
+      }
+
+      __istream_type&
+      operator>>(ios_base& (*__pf)(ios_base&))
+      {
+ __pf(*this);
+ return *this;
+      }
+# 167 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/istream" 3
+      __istream_type&
+      operator>>(bool& __n)
+      { return _M_extract(__n); }
+
+      __istream_type&
+      operator>>(short& __n);
+
+      __istream_type&
+      operator>>(unsigned short& __n)
+      { return _M_extract(__n); }
+
+      __istream_type&
+      operator>>(int& __n);
+
+      __istream_type&
+      operator>>(unsigned int& __n)
+      { return _M_extract(__n); }
+
+      __istream_type&
+      operator>>(long& __n)
+      { return _M_extract(__n); }
+
+      __istream_type&
+      operator>>(unsigned long& __n)
+      { return _M_extract(__n); }
+
+
+      __istream_type&
+      operator>>(long long& __n)
+      { return _M_extract(__n); }
+
+      __istream_type&
+      operator>>(unsigned long long& __n)
+      { return _M_extract(__n); }
+
+
+      __istream_type&
+      operator>>(float& __f)
+      { return _M_extract(__f); }
+
+      __istream_type&
+      operator>>(double& __f)
+      { return _M_extract(__f); }
+
+      __istream_type&
+      operator>>(long double& __f)
+      { return _M_extract(__f); }
+
+      __istream_type&
+      operator>>(void*& __p)
+      { return _M_extract(__p); }
+# 239 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/istream" 3
+      __istream_type&
+      operator>>(__streambuf_type* __sb);
+# 249 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/istream" 3
+      streamsize
+      gcount() const
+      { return _M_gcount; }
+# 281 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/istream" 3
+      int_type
+      get();
+# 295 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/istream" 3
+      __istream_type&
+      get(char_type& __c);
+# 322 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/istream" 3
+      __istream_type&
+      get(char_type* __s, streamsize __n, char_type __delim);
+# 333 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/istream" 3
+      __istream_type&
+      get(char_type* __s, streamsize __n)
+      { return this->get(__s, __n, this->widen('\n')); }
+# 356 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/istream" 3
+      __istream_type&
+      get(__streambuf_type& __sb, char_type __delim);
+# 366 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/istream" 3
+      __istream_type&
+      get(__streambuf_type& __sb)
+      { return this->get(__sb, this->widen('\n')); }
+# 395 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/istream" 3
+      __istream_type&
+      getline(char_type* __s, streamsize __n, char_type __delim);
+# 406 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/istream" 3
+      __istream_type&
+      getline(char_type* __s, streamsize __n)
+      { return this->getline(__s, __n, this->widen('\n')); }
+# 430 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/istream" 3
+      __istream_type&
+      ignore();
+
+      __istream_type&
+      ignore(streamsize __n);
+
+      __istream_type&
+      ignore(streamsize __n, int_type __delim);
+# 447 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/istream" 3
+      int_type
+      peek();
+# 465 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/istream" 3
+      __istream_type&
+      read(char_type* __s, streamsize __n);
+# 484 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/istream" 3
+      streamsize
+      readsome(char_type* __s, streamsize __n);
+# 501 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/istream" 3
+      __istream_type&
+      putback(char_type __c);
+# 517 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/istream" 3
+      __istream_type&
+      unget();
+# 535 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/istream" 3
+      int
+      sync();
+# 550 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/istream" 3
+      pos_type
+      tellg();
+# 565 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/istream" 3
+      __istream_type&
+      seekg(pos_type);
+# 581 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/istream" 3
+      __istream_type&
+      seekg(off_type, ios_base::seekdir);
+
+
+    protected:
+      basic_istream()
+      : _M_gcount(streamsize(0))
+      { this->init(0); }
+
+      template<typename _ValueT>
+        __istream_type&
+        _M_extract(_ValueT& __v);
+    };
+
+
+  template<>
+    basic_istream<char>&
+    basic_istream<char>::
+    getline(char_type* __s, streamsize __n, char_type __delim);
+
+  template<>
+    basic_istream<char>&
+    basic_istream<char>::
+    ignore(streamsize __n);
+
+  template<>
+    basic_istream<char>&
+    basic_istream<char>::
+    ignore(streamsize __n, int_type __delim);
+
+
+  template<>
+    basic_istream<wchar_t>&
+    basic_istream<wchar_t>::
+    getline(char_type* __s, streamsize __n, char_type __delim);
+
+  template<>
+    basic_istream<wchar_t>&
+    basic_istream<wchar_t>::
+    ignore(streamsize __n);
+
+  template<>
+    basic_istream<wchar_t>&
+    basic_istream<wchar_t>::
+    ignore(streamsize __n, int_type __delim);
+# 636 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/istream" 3
+  template<typename _CharT, typename _Traits>
+    class basic_istream<_CharT, _Traits>::sentry
+    {
+
+      bool _M_ok;
+
+    public:
+
+      typedef _Traits traits_type;
+      typedef basic_streambuf<_CharT, _Traits> __streambuf_type;
+      typedef basic_istream<_CharT, _Traits> __istream_type;
+      typedef typename __istream_type::__ctype_type __ctype_type;
+      typedef typename _Traits::int_type __int_type;
+# 672 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/istream" 3
+      explicit
+      sentry(basic_istream<_CharT, _Traits>& __is, bool __noskipws = false);
+# 685 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/istream" 3
+      operator bool() const
+      { return _M_ok; }
+    };
+# 702 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/istream" 3
+  template<typename _CharT, typename _Traits>
+    basic_istream<_CharT, _Traits>&
+    operator>>(basic_istream<_CharT, _Traits>& __in, _CharT& __c);
+
+  template<class _Traits>
+    inline basic_istream<char, _Traits>&
+    operator>>(basic_istream<char, _Traits>& __in, unsigned char& __c)
+    { return (__in >> reinterpret_cast<char&>(__c)); }
+
+  template<class _Traits>
+    inline basic_istream<char, _Traits>&
+    operator>>(basic_istream<char, _Traits>& __in, signed char& __c)
+    { return (__in >> reinterpret_cast<char&>(__c)); }
+# 744 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/istream" 3
+  template<typename _CharT, typename _Traits>
+    basic_istream<_CharT, _Traits>&
+    operator>>(basic_istream<_CharT, _Traits>& __in, _CharT* __s);
+
+
+  template<>
+    basic_istream<char>&
+    operator>>(basic_istream<char>& __in, char* __s);
+
+  template<class _Traits>
+    inline basic_istream<char, _Traits>&
+    operator>>(basic_istream<char, _Traits>& __in, unsigned char* __s)
+    { return (__in >> reinterpret_cast<char*>(__s)); }
+
+  template<class _Traits>
+    inline basic_istream<char, _Traits>&
+    operator>>(basic_istream<char, _Traits>& __in, signed char* __s)
+    { return (__in >> reinterpret_cast<char*>(__s)); }
+# 772 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/istream" 3
+  template<typename _CharT, typename _Traits>
+    class basic_iostream
+    : public basic_istream<_CharT, _Traits>,
+      public basic_ostream<_CharT, _Traits>
+    {
+    public:
+
+
+
+      typedef _CharT char_type;
+      typedef typename _Traits::int_type int_type;
+      typedef typename _Traits::pos_type pos_type;
+      typedef typename _Traits::off_type off_type;
+      typedef _Traits traits_type;
+
+
+      typedef basic_istream<_CharT, _Traits> __istream_type;
+      typedef basic_ostream<_CharT, _Traits> __ostream_type;
+
+
+
+
+
+
+
+      explicit
+      basic_iostream(basic_streambuf<_CharT, _Traits>* __sb)
+      : __istream_type(__sb), __ostream_type(__sb) { }
+
+
+
+
+      virtual
+      ~basic_iostream() { }
+
+    protected:
+      basic_iostream()
+      : __istream_type(), __ostream_type() { }
+    };
+# 833 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/istream" 3
+  template<typename _CharT, typename _Traits>
+    basic_istream<_CharT, _Traits>&
+    ws(basic_istream<_CharT, _Traits>& __is);
+# 856 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/istream" 3
+}
+
+
+# 1 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/istream.tcc" 1 3
+# 39 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/istream.tcc" 3
+# 39 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/istream.tcc" 3
+
+
+
+namespace std __attribute__ ((__visibility__ ("default")))
+{
+
+
+  template<typename _CharT, typename _Traits>
+    basic_istream<_CharT, _Traits>::sentry::
+    sentry(basic_istream<_CharT, _Traits>& __in, bool __noskip) : _M_ok(false)
+    {
+      ios_base::iostate __err = ios_base::goodbit;
+      if (__in.good())
+ {
+   if (__in.tie())
+     __in.tie()->flush();
+   if (!__noskip && bool(__in.flags() & ios_base::skipws))
+     {
+       const __int_type __eof = traits_type::eof();
+       __streambuf_type* __sb = __in.rdbuf();
+       __int_type __c = __sb->sgetc();
+
+       const __ctype_type& __ct = __check_facet(__in._M_ctype);
+       while (!traits_type::eq_int_type(__c, __eof)
+       && __ct.is(ctype_base::space,
+    traits_type::to_char_type(__c)))
+  __c = __sb->snextc();
+
+
+
+
+       if (traits_type::eq_int_type(__c, __eof))
+  __err |= ios_base::eofbit;
+     }
+ }
+
+      if (__in.good() && __err == ios_base::goodbit)
+ _M_ok = true;
+      else
+ {
+   __err |= ios_base::failbit;
+   __in.setstate(__err);
+ }
+    }
+
+  template<typename _CharT, typename _Traits>
+    template<typename _ValueT>
+      basic_istream<_CharT, _Traits>&
+      basic_istream<_CharT, _Traits>::
+      _M_extract(_ValueT& __v)
+      {
+ sentry __cerb(*this, false);
+ if (__cerb)
+   {
+     ios_base::iostate __err = ios_base::goodbit;
+     if (true)
+       {
+  const __num_get_type& __ng = __check_facet(this->_M_num_get);
+  __ng.get(*this, 0, *this, __err, __v);
+       }
+     if (false)
+       {
+  this->_M_setstate(ios_base::badbit);
+                         ;
+       }
+     if (false)
+       { this->_M_setstate(ios_base::badbit); }
+     if (__err)
+       this->setstate(__err);
+   }
+ return *this;
+      }
+
+  template<typename _CharT, typename _Traits>
+    basic_istream<_CharT, _Traits>&
+    basic_istream<_CharT, _Traits>::
+    operator>>(short& __n)
+    {
+
+
+      sentry __cerb(*this, false);
+      if (__cerb)
+ {
+   ios_base::iostate __err = ios_base::goodbit;
+   if (true)
+     {
+       long __l;
+       const __num_get_type& __ng = __check_facet(this->_M_num_get);
+       __ng.get(*this, 0, *this, __err, __l);
+
+
+
+       if (__l < __gnu_cxx::__numeric_traits<short>::__min)
+  {
+    __err |= ios_base::failbit;
+    __n = __gnu_cxx::__numeric_traits<short>::__min;
+  }
+       else if (__l > __gnu_cxx::__numeric_traits<short>::__max)
+  {
+    __err |= ios_base::failbit;
+    __n = __gnu_cxx::__numeric_traits<short>::__max;
+  }
+       else
+  __n = short(__l);
+     }
+   if (false)
+     {
+       this->_M_setstate(ios_base::badbit);
+                              ;
+     }
+   if (false)
+     { this->_M_setstate(ios_base::badbit); }
+   if (__err)
+     this->setstate(__err);
+ }
+      return *this;
+    }
+
+  template<typename _CharT, typename _Traits>
+    basic_istream<_CharT, _Traits>&
+    basic_istream<_CharT, _Traits>::
+    operator>>(int& __n)
+    {
+
+
+      sentry __cerb(*this, false);
+      if (__cerb)
+ {
+   ios_base::iostate __err = ios_base::goodbit;
+   if (true)
+     {
+       long __l;
+       const __num_get_type& __ng = __check_facet(this->_M_num_get);
+       __ng.get(*this, 0, *this, __err, __l);
+
+
+
+       if (__l < __gnu_cxx::__numeric_traits<int>::__min)
+  {
+    __err |= ios_base::failbit;
+    __n = __gnu_cxx::__numeric_traits<int>::__min;
+  }
+       else if (__l > __gnu_cxx::__numeric_traits<int>::__max)
+  {
+    __err |= ios_base::failbit;
+    __n = __gnu_cxx::__numeric_traits<int>::__max;
+  }
+       else
+  __n = int(__l);
+     }
+   if (false)
+     {
+       this->_M_setstate(ios_base::badbit);
+                              ;
+     }
+   if (false)
+     { this->_M_setstate(ios_base::badbit); }
+   if (__err)
+     this->setstate(__err);
+ }
+      return *this;
+    }
+
+  template<typename _CharT, typename _Traits>
+    basic_istream<_CharT, _Traits>&
+    basic_istream<_CharT, _Traits>::
+    operator>>(__streambuf_type* __sbout)
+    {
+      ios_base::iostate __err = ios_base::goodbit;
+      sentry __cerb(*this, false);
+      if (__cerb && __sbout)
+ {
+   if (true)
+     {
+       bool __ineof;
+       if (!__copy_streambufs_eof(this->rdbuf(), __sbout, __ineof))
+  __err |= ios_base::failbit;
+       if (__ineof)
+  __err |= ios_base::eofbit;
+     }
+   if (false)
+     {
+       this->_M_setstate(ios_base::failbit);
+                              ;
+     }
+   if (false)
+     { this->_M_setstate(ios_base::failbit); }
+ }
+      else if (!__sbout)
+ __err |= ios_base::failbit;
+      if (__err)
+ this->setstate(__err);
+      return *this;
+    }
+
+  template<typename _CharT, typename _Traits>
+    typename basic_istream<_CharT, _Traits>::int_type
+    basic_istream<_CharT, _Traits>::
+    get(void)
+    {
+      const int_type __eof = traits_type::eof();
+      int_type __c = __eof;
+      _M_gcount = 0;
+      ios_base::iostate __err = ios_base::goodbit;
+      sentry __cerb(*this, true);
+      if (__cerb)
+ {
+   if (true)
+     {
+       __c = this->rdbuf()->sbumpc();
+
+       if (!traits_type::eq_int_type(__c, __eof))
+  _M_gcount = 1;
+       else
+  __err |= ios_base::eofbit;
+     }
+   if (false)
+     {
+       this->_M_setstate(ios_base::badbit);
+                              ;
+     }
+   if (false)
+     { this->_M_setstate(ios_base::badbit); }
+ }
+      if (!_M_gcount)
+ __err |= ios_base::failbit;
+      if (__err)
+ this->setstate(__err);
+      return __c;
+    }
+
+  template<typename _CharT, typename _Traits>
+    basic_istream<_CharT, _Traits>&
+    basic_istream<_CharT, _Traits>::
+    get(char_type& __c)
+    {
+      _M_gcount = 0;
+      ios_base::iostate __err = ios_base::goodbit;
+      sentry __cerb(*this, true);
+      if (__cerb)
+ {
+   if (true)
+     {
+       const int_type __cb = this->rdbuf()->sbumpc();
+
+       if (!traits_type::eq_int_type(__cb, traits_type::eof()))
+  {
+    _M_gcount = 1;
+    __c = traits_type::to_char_type(__cb);
+  }
+       else
+  __err |= ios_base::eofbit;
+     }
+   if (false)
+     {
+       this->_M_setstate(ios_base::badbit);
+                              ;
+     }
+   if (false)
+     { this->_M_setstate(ios_base::badbit); }
+ }
+      if (!_M_gcount)
+ __err |= ios_base::failbit;
+      if (__err)
+ this->setstate(__err);
+      return *this;
+    }
+
+  template<typename _CharT, typename _Traits>
+    basic_istream<_CharT, _Traits>&
+    basic_istream<_CharT, _Traits>::
+    get(char_type* __s, streamsize __n, char_type __delim)
+    {
+      _M_gcount = 0;
+      ios_base::iostate __err = ios_base::goodbit;
+      sentry __cerb(*this, true);
+      if (__cerb)
+ {
+   if (true)
+     {
+       const int_type __idelim = traits_type::to_int_type(__delim);
+       const int_type __eof = traits_type::eof();
+       __streambuf_type* __sb = this->rdbuf();
+       int_type __c = __sb->sgetc();
+
+       while (_M_gcount + 1 < __n
+       && !traits_type::eq_int_type(__c, __eof)
+       && !traits_type::eq_int_type(__c, __idelim))
+  {
+    *__s++ = traits_type::to_char_type(__c);
+    ++_M_gcount;
+    __c = __sb->snextc();
+  }
+       if (traits_type::eq_int_type(__c, __eof))
+  __err |= ios_base::eofbit;
+     }
+   if (false)
+     {
+       this->_M_setstate(ios_base::badbit);
+                              ;
+     }
+   if (false)
+     { this->_M_setstate(ios_base::badbit); }
+ }
+
+
+      if (__n > 0)
+ *__s = char_type();
+      if (!_M_gcount)
+ __err |= ios_base::failbit;
+      if (__err)
+ this->setstate(__err);
+      return *this;
+    }
+
+  template<typename _CharT, typename _Traits>
+    basic_istream<_CharT, _Traits>&
+    basic_istream<_CharT, _Traits>::
+    get(__streambuf_type& __sb, char_type __delim)
+    {
+      _M_gcount = 0;
+      ios_base::iostate __err = ios_base::goodbit;
+      sentry __cerb(*this, true);
+      if (__cerb)
+ {
+   if (true)
+     {
+       const int_type __idelim = traits_type::to_int_type(__delim);
+       const int_type __eof = traits_type::eof();
+       __streambuf_type* __this_sb = this->rdbuf();
+       int_type __c = __this_sb->sgetc();
+       char_type __c2 = traits_type::to_char_type(__c);
+
+       while (!traits_type::eq_int_type(__c, __eof)
+       && !traits_type::eq_int_type(__c, __idelim)
+       && !traits_type::eq_int_type(__sb.sputc(__c2), __eof))
+  {
+    ++_M_gcount;
+    __c = __this_sb->snextc();
+    __c2 = traits_type::to_char_type(__c);
+  }
+       if (traits_type::eq_int_type(__c, __eof))
+  __err |= ios_base::eofbit;
+     }
+   if (false)
+     {
+       this->_M_setstate(ios_base::badbit);
+                              ;
+     }
+   if (false)
+     { this->_M_setstate(ios_base::badbit); }
+ }
+      if (!_M_gcount)
+ __err |= ios_base::failbit;
+      if (__err)
+ this->setstate(__err);
+      return *this;
+    }
+
+  template<typename _CharT, typename _Traits>
+    basic_istream<_CharT, _Traits>&
+    basic_istream<_CharT, _Traits>::
+    getline(char_type* __s, streamsize __n, char_type __delim)
+    {
+      _M_gcount = 0;
+      ios_base::iostate __err = ios_base::goodbit;
+      sentry __cerb(*this, true);
+      if (__cerb)
+        {
+          if (true)
+            {
+              const int_type __idelim = traits_type::to_int_type(__delim);
+              const int_type __eof = traits_type::eof();
+              __streambuf_type* __sb = this->rdbuf();
+              int_type __c = __sb->sgetc();
+
+              while (_M_gcount + 1 < __n
+                     && !traits_type::eq_int_type(__c, __eof)
+                     && !traits_type::eq_int_type(__c, __idelim))
+                {
+                  *__s++ = traits_type::to_char_type(__c);
+                  __c = __sb->snextc();
+                  ++_M_gcount;
+                }
+              if (traits_type::eq_int_type(__c, __eof))
+                __err |= ios_base::eofbit;
+              else
+                {
+                  if (traits_type::eq_int_type(__c, __idelim))
+                    {
+                      __sb->sbumpc();
+                      ++_M_gcount;
+                    }
+                  else
+                    __err |= ios_base::failbit;
+                }
+            }
+   if (false)
+     {
+       this->_M_setstate(ios_base::badbit);
+                              ;
+     }
+          if (false)
+            { this->_M_setstate(ios_base::badbit); }
+        }
+
+
+      if (__n > 0)
+ *__s = char_type();
+      if (!_M_gcount)
+        __err |= ios_base::failbit;
+      if (__err)
+        this->setstate(__err);
+      return *this;
+    }
+
+
+
+
+  template<typename _CharT, typename _Traits>
+    basic_istream<_CharT, _Traits>&
+    basic_istream<_CharT, _Traits>::
+    ignore(void)
+    {
+      _M_gcount = 0;
+      sentry __cerb(*this, true);
+      if (__cerb)
+ {
+   ios_base::iostate __err = ios_base::goodbit;
+   if (true)
+     {
+       const int_type __eof = traits_type::eof();
+       __streambuf_type* __sb = this->rdbuf();
+
+       if (traits_type::eq_int_type(__sb->sbumpc(), __eof))
+  __err |= ios_base::eofbit;
+       else
+  _M_gcount = 1;
+     }
+   if (false)
+     {
+       this->_M_setstate(ios_base::badbit);
+                              ;
+     }
+   if (false)
+     { this->_M_setstate(ios_base::badbit); }
+   if (__err)
+     this->setstate(__err);
+ }
+      return *this;
+    }
+
+  template<typename _CharT, typename _Traits>
+    basic_istream<_CharT, _Traits>&
+    basic_istream<_CharT, _Traits>::
+    ignore(streamsize __n)
+    {
+      _M_gcount = 0;
+      sentry __cerb(*this, true);
+      if (__cerb && __n > 0)
+        {
+          ios_base::iostate __err = ios_base::goodbit;
+          if (true)
+            {
+              const int_type __eof = traits_type::eof();
+              __streambuf_type* __sb = this->rdbuf();
+              int_type __c = __sb->sgetc();
+# 514 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/istream.tcc" 3
+       bool __large_ignore = false;
+       while (true)
+  {
+    while (_M_gcount < __n
+    && !traits_type::eq_int_type(__c, __eof))
+      {
+        ++_M_gcount;
+        __c = __sb->snextc();
+      }
+    if (__n == __gnu_cxx::__numeric_traits<streamsize>::__max
+        && !traits_type::eq_int_type(__c, __eof))
+      {
+        _M_gcount =
+   __gnu_cxx::__numeric_traits<streamsize>::__min;
+        __large_ignore = true;
+      }
+    else
+      break;
+  }
+
+       if (__large_ignore)
+  _M_gcount = __gnu_cxx::__numeric_traits<streamsize>::__max;
+
+       if (traits_type::eq_int_type(__c, __eof))
+                __err |= ios_base::eofbit;
+            }
+   if (false)
+     {
+       this->_M_setstate(ios_base::badbit);
+                              ;
+     }
+          if (false)
+            { this->_M_setstate(ios_base::badbit); }
+          if (__err)
+            this->setstate(__err);
+        }
+      return *this;
+    }
+
+  template<typename _CharT, typename _Traits>
+    basic_istream<_CharT, _Traits>&
+    basic_istream<_CharT, _Traits>::
+    ignore(streamsize __n, int_type __delim)
+    {
+      _M_gcount = 0;
+      sentry __cerb(*this, true);
+      if (__cerb && __n > 0)
+        {
+          ios_base::iostate __err = ios_base::goodbit;
+          if (true)
+            {
+              const int_type __eof = traits_type::eof();
+              __streambuf_type* __sb = this->rdbuf();
+              int_type __c = __sb->sgetc();
+
+
+       bool __large_ignore = false;
+       while (true)
+  {
+    while (_M_gcount < __n
+    && !traits_type::eq_int_type(__c, __eof)
+    && !traits_type::eq_int_type(__c, __delim))
+      {
+        ++_M_gcount;
+        __c = __sb->snextc();
+      }
+    if (__n == __gnu_cxx::__numeric_traits<streamsize>::__max
+        && !traits_type::eq_int_type(__c, __eof)
+        && !traits_type::eq_int_type(__c, __delim))
+      {
+        _M_gcount =
+   __gnu_cxx::__numeric_traits<streamsize>::__min;
+        __large_ignore = true;
+      }
+    else
+      break;
+  }
+
+       if (__large_ignore)
+  _M_gcount = __gnu_cxx::__numeric_traits<streamsize>::__max;
+
+              if (traits_type::eq_int_type(__c, __eof))
+                __err |= ios_base::eofbit;
+       else if (traits_type::eq_int_type(__c, __delim))
+  {
+    if (_M_gcount
+        < __gnu_cxx::__numeric_traits<streamsize>::__max)
+      ++_M_gcount;
+    __sb->sbumpc();
+  }
+            }
+   if (false)
+     {
+       this->_M_setstate(ios_base::badbit);
+                              ;
+     }
+          if (false)
+            { this->_M_setstate(ios_base::badbit); }
+          if (__err)
+            this->setstate(__err);
+        }
+      return *this;
+    }
+
+  template<typename _CharT, typename _Traits>
+    typename basic_istream<_CharT, _Traits>::int_type
+    basic_istream<_CharT, _Traits>::
+    peek(void)
+    {
+      int_type __c = traits_type::eof();
+      _M_gcount = 0;
+      sentry __cerb(*this, true);
+      if (__cerb)
+ {
+   ios_base::iostate __err = ios_base::goodbit;
+   if (true)
+     {
+       __c = this->rdbuf()->sgetc();
+       if (traits_type::eq_int_type(__c, traits_type::eof()))
+  __err |= ios_base::eofbit;
+     }
+   if (false)
+     {
+       this->_M_setstate(ios_base::badbit);
+                              ;
+     }
+   if (false)
+     { this->_M_setstate(ios_base::badbit); }
+   if (__err)
+     this->setstate(__err);
+ }
+      return __c;
+    }
+
+  template<typename _CharT, typename _Traits>
+    basic_istream<_CharT, _Traits>&
+    basic_istream<_CharT, _Traits>::
+    read(char_type* __s, streamsize __n)
+    {
+      _M_gcount = 0;
+      sentry __cerb(*this, true);
+      if (__cerb)
+ {
+   ios_base::iostate __err = ios_base::goodbit;
+   if (true)
+     {
+       _M_gcount = this->rdbuf()->sgetn(__s, __n);
+       if (_M_gcount != __n)
+  __err |= (ios_base::eofbit | ios_base::failbit);
+     }
+   if (false)
+     {
+       this->_M_setstate(ios_base::badbit);
+                              ;
+     }
+   if (false)
+     { this->_M_setstate(ios_base::badbit); }
+   if (__err)
+     this->setstate(__err);
+ }
+      return *this;
+    }
+
+  template<typename _CharT, typename _Traits>
+    streamsize
+    basic_istream<_CharT, _Traits>::
+    readsome(char_type* __s, streamsize __n)
+    {
+      _M_gcount = 0;
+      sentry __cerb(*this, true);
+      if (__cerb)
+ {
+   ios_base::iostate __err = ios_base::goodbit;
+   if (true)
+     {
+
+       const streamsize __num = this->rdbuf()->in_avail();
+       if (__num > 0)
+  _M_gcount = this->rdbuf()->sgetn(__s, std::min(__num, __n));
+       else if (__num == -1)
+  __err |= ios_base::eofbit;
+     }
+   if (false)
+     {
+       this->_M_setstate(ios_base::badbit);
+                              ;
+     }
+   if (false)
+     { this->_M_setstate(ios_base::badbit); }
+   if (__err)
+     this->setstate(__err);
+ }
+      return _M_gcount;
+    }
+
+  template<typename _CharT, typename _Traits>
+    basic_istream<_CharT, _Traits>&
+    basic_istream<_CharT, _Traits>::
+    putback(char_type __c)
+    {
+
+
+      _M_gcount = 0;
+
+      this->clear(this->rdstate() & ~ios_base::eofbit);
+      sentry __cerb(*this, true);
+      if (__cerb)
+ {
+   ios_base::iostate __err = ios_base::goodbit;
+   if (true)
+     {
+       const int_type __eof = traits_type::eof();
+       __streambuf_type* __sb = this->rdbuf();
+       if (!__sb
+    || traits_type::eq_int_type(__sb->sputbackc(__c), __eof))
+  __err |= ios_base::badbit;
+     }
+   if (false)
+     {
+       this->_M_setstate(ios_base::badbit);
+                              ;
+     }
+   if (false)
+     { this->_M_setstate(ios_base::badbit); }
+   if (__err)
+     this->setstate(__err);
+ }
+      return *this;
+    }
+
+  template<typename _CharT, typename _Traits>
+    basic_istream<_CharT, _Traits>&
+    basic_istream<_CharT, _Traits>::
+    unget(void)
+    {
+
+
+      _M_gcount = 0;
+
+      this->clear(this->rdstate() & ~ios_base::eofbit);
+      sentry __cerb(*this, true);
+      if (__cerb)
+ {
+   ios_base::iostate __err = ios_base::goodbit;
+   if (true)
+     {
+       const int_type __eof = traits_type::eof();
+       __streambuf_type* __sb = this->rdbuf();
+       if (!__sb
+    || traits_type::eq_int_type(__sb->sungetc(), __eof))
+  __err |= ios_base::badbit;
+     }
+   if (false)
+     {
+       this->_M_setstate(ios_base::badbit);
+                              ;
+     }
+   if (false)
+     { this->_M_setstate(ios_base::badbit); }
+   if (__err)
+     this->setstate(__err);
+ }
+      return *this;
+    }
+
+  template<typename _CharT, typename _Traits>
+    int
+    basic_istream<_CharT, _Traits>::
+    sync(void)
+    {
+
+
+      int __ret = -1;
+      sentry __cerb(*this, true);
+      if (__cerb)
+ {
+   ios_base::iostate __err = ios_base::goodbit;
+   if (true)
+     {
+       __streambuf_type* __sb = this->rdbuf();
+       if (__sb)
+  {
+    if (__sb->pubsync() == -1)
+      __err |= ios_base::badbit;
+    else
+      __ret = 0;
+  }
+     }
+   if (false)
+     {
+       this->_M_setstate(ios_base::badbit);
+                              ;
+     }
+   if (false)
+     { this->_M_setstate(ios_base::badbit); }
+   if (__err)
+     this->setstate(__err);
+ }
+      return __ret;
+    }
+
+  template<typename _CharT, typename _Traits>
+    typename basic_istream<_CharT, _Traits>::pos_type
+    basic_istream<_CharT, _Traits>::
+    tellg(void)
+    {
+
+
+      pos_type __ret = pos_type(-1);
+      sentry __cerb(*this, true);
+      if (__cerb)
+ {
+   if (true)
+     {
+       if (!this->fail())
+  __ret = this->rdbuf()->pubseekoff(0, ios_base::cur,
+        ios_base::in);
+     }
+   if (false)
+     {
+       this->_M_setstate(ios_base::badbit);
+                              ;
+     }
+   if (false)
+     { this->_M_setstate(ios_base::badbit); }
+ }
+      return __ret;
+    }
+
+  template<typename _CharT, typename _Traits>
+    basic_istream<_CharT, _Traits>&
+    basic_istream<_CharT, _Traits>::
+    seekg(pos_type __pos)
+    {
+
+
+
+      this->clear(this->rdstate() & ~ios_base::eofbit);
+      sentry __cerb(*this, true);
+      if (__cerb)
+ {
+   ios_base::iostate __err = ios_base::goodbit;
+   if (true)
+     {
+       if (!this->fail())
+  {
+
+    const pos_type __p = this->rdbuf()->pubseekpos(__pos,
+         ios_base::in);
+
+
+    if (__p == pos_type(off_type(-1)))
+      __err |= ios_base::failbit;
+  }
+     }
+   if (false)
+     {
+       this->_M_setstate(ios_base::badbit);
+                              ;
+     }
+   if (false)
+     { this->_M_setstate(ios_base::badbit); }
+   if (__err)
+     this->setstate(__err);
+ }
+      return *this;
+    }
+
+  template<typename _CharT, typename _Traits>
+    basic_istream<_CharT, _Traits>&
+    basic_istream<_CharT, _Traits>::
+    seekg(off_type __off, ios_base::seekdir __dir)
+    {
+
+
+
+      this->clear(this->rdstate() & ~ios_base::eofbit);
+      sentry __cerb(*this, true);
+      if (__cerb)
+ {
+   ios_base::iostate __err = ios_base::goodbit;
+   if (true)
+     {
+       if (!this->fail())
+  {
+
+    const pos_type __p = this->rdbuf()->pubseekoff(__off, __dir,
+         ios_base::in);
+
+
+    if (__p == pos_type(off_type(-1)))
+      __err |= ios_base::failbit;
+  }
+     }
+   if (false)
+     {
+       this->_M_setstate(ios_base::badbit);
+                              ;
+     }
+   if (false)
+     { this->_M_setstate(ios_base::badbit); }
+   if (__err)
+     this->setstate(__err);
+ }
+      return *this;
+    }
+
+
+  template<typename _CharT, typename _Traits>
+    basic_istream<_CharT, _Traits>&
+    operator>>(basic_istream<_CharT, _Traits>& __in, _CharT& __c)
+    {
+      typedef basic_istream<_CharT, _Traits> __istream_type;
+      typedef typename __istream_type::int_type __int_type;
+
+      typename __istream_type::sentry __cerb(__in, false);
+      if (__cerb)
+ {
+   ios_base::iostate __err = ios_base::goodbit;
+   if (true)
+     {
+       const __int_type __cb = __in.rdbuf()->sbumpc();
+       if (!_Traits::eq_int_type(__cb, _Traits::eof()))
+  __c = _Traits::to_char_type(__cb);
+       else
+  __err |= (ios_base::eofbit | ios_base::failbit);
+     }
+   if (false)
+     {
+       __in._M_setstate(ios_base::badbit);
+                              ;
+     }
+   if (false)
+     { __in._M_setstate(ios_base::badbit); }
+   if (__err)
+     __in.setstate(__err);
+ }
+      return __in;
+    }
+
+  template<typename _CharT, typename _Traits>
+    basic_istream<_CharT, _Traits>&
+    operator>>(basic_istream<_CharT, _Traits>& __in, _CharT* __s)
+    {
+      typedef basic_istream<_CharT, _Traits> __istream_type;
+      typedef basic_streambuf<_CharT, _Traits> __streambuf_type;
+      typedef typename _Traits::int_type int_type;
+      typedef _CharT char_type;
+      typedef ctype<_CharT> __ctype_type;
+
+      streamsize __extracted = 0;
+      ios_base::iostate __err = ios_base::goodbit;
+      typename __istream_type::sentry __cerb(__in, false);
+      if (__cerb)
+ {
+   if (true)
+     {
+
+       streamsize __num = __in.width();
+       if (__num <= 0)
+  __num = __gnu_cxx::__numeric_traits<streamsize>::__max;
+
+       const __ctype_type& __ct = use_facet<__ctype_type>(__in.getloc());
+
+       const int_type __eof = _Traits::eof();
+       __streambuf_type* __sb = __in.rdbuf();
+       int_type __c = __sb->sgetc();
+
+       while (__extracted < __num - 1
+       && !_Traits::eq_int_type(__c, __eof)
+       && !__ct.is(ctype_base::space,
+     _Traits::to_char_type(__c)))
+  {
+    *__s++ = _Traits::to_char_type(__c);
+    ++__extracted;
+    __c = __sb->snextc();
+  }
+       if (_Traits::eq_int_type(__c, __eof))
+  __err |= ios_base::eofbit;
+
+
+
+       *__s = char_type();
+       __in.width(0);
+     }
+   if (false)
+     {
+       __in._M_setstate(ios_base::badbit);
+                              ;
+     }
+   if (false)
+     { __in._M_setstate(ios_base::badbit); }
+ }
+      if (!__extracted)
+ __err |= ios_base::failbit;
+      if (__err)
+ __in.setstate(__err);
+      return __in;
+    }
+
+
+  template<typename _CharT, typename _Traits>
+    basic_istream<_CharT, _Traits>&
+    ws(basic_istream<_CharT, _Traits>& __in)
+    {
+      typedef basic_istream<_CharT, _Traits> __istream_type;
+      typedef basic_streambuf<_CharT, _Traits> __streambuf_type;
+      typedef typename __istream_type::int_type __int_type;
+      typedef ctype<_CharT> __ctype_type;
+
+      const __ctype_type& __ct = use_facet<__ctype_type>(__in.getloc());
+      const __int_type __eof = _Traits::eof();
+      __streambuf_type* __sb = __in.rdbuf();
+      __int_type __c = __sb->sgetc();
+
+      while (!_Traits::eq_int_type(__c, __eof)
+      && __ct.is(ctype_base::space, _Traits::to_char_type(__c)))
+ __c = __sb->snextc();
+
+       if (_Traits::eq_int_type(__c, __eof))
+  __in.setstate(ios_base::eofbit);
+      return __in;
+    }
+
+
+
+
+  extern template class basic_istream<char>;
+  extern template istream& ws(istream&);
+  extern template istream& operator>>(istream&, char&);
+  extern template istream& operator>>(istream&, char*);
+  extern template istream& operator>>(istream&, unsigned char&);
+  extern template istream& operator>>(istream&, signed char&);
+  extern template istream& operator>>(istream&, unsigned char*);
+  extern template istream& operator>>(istream&, signed char*);
+
+  extern template istream& istream::_M_extract(unsigned short&);
+  extern template istream& istream::_M_extract(unsigned int&);
+  extern template istream& istream::_M_extract(long&);
+  extern template istream& istream::_M_extract(unsigned long&);
+  extern template istream& istream::_M_extract(bool&);
+
+  extern template istream& istream::_M_extract(long long&);
+  extern template istream& istream::_M_extract(unsigned long long&);
+
+  extern template istream& istream::_M_extract(float&);
+  extern template istream& istream::_M_extract(double&);
+  extern template istream& istream::_M_extract(long double&);
+  extern template istream& istream::_M_extract(void*&);
+
+  extern template class basic_iostream<char>;
+
+
+  extern template class basic_istream<wchar_t>;
+  extern template wistream& ws(wistream&);
+  extern template wistream& operator>>(wistream&, wchar_t&);
+  extern template wistream& operator>>(wistream&, wchar_t*);
+
+  extern template wistream& wistream::_M_extract(unsigned short&);
+  extern template wistream& wistream::_M_extract(unsigned int&);
+  extern template wistream& wistream::_M_extract(long&);
+  extern template wistream& wistream::_M_extract(unsigned long&);
+  extern template wistream& wistream::_M_extract(bool&);
+
+  extern template wistream& wistream::_M_extract(long long&);
+  extern template wistream& wistream::_M_extract(unsigned long long&);
+
+  extern template wistream& wistream::_M_extract(float&);
+  extern template wistream& wistream::_M_extract(double&);
+  extern template wistream& wistream::_M_extract(long double&);
+  extern template wistream& wistream::_M_extract(void*&);
+
+  extern template class basic_iostream<wchar_t>;
+
+
+
+
+}
+# 859 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/istream" 2 3
+# 41 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/iostream" 2 3
+
+namespace std __attribute__ ((__visibility__ ("default")))
+{
+# 60 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/iostream" 3
+  extern istream cin;
+  extern ostream cout;
+  extern ostream cerr;
+  extern ostream clog;
+
+
+  extern wistream wcin;
+  extern wostream wcout;
+  extern wostream wcerr;
+  extern wostream wclog;
+
+
+
+
+  static ios_base::Init __ioinit;
+
+
+}
+# 12 "mnist_AXI_Stream.cpp" 2
+
+
+# 1 "./test_data/test_data.h" 1
+
+
+int16_t test_input_fix16[1][28][28] = {{{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+{ 0, 0, 0, 0, 0, 0, 5396, 11885, 10215, 9701, 3854, 2312, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+{ 0, 0, 0, 0, 0, 0, 14262, 16318, 16318, 16318, 16318, 15483, 12720, 12720, 12720, 12720, 12720, 12720, 12720, 12720, 10922, 3340, 0, 0, 0, 0, 0, 0},
+{ 0, 0, 0, 0, 0, 0, 4304, 7324, 4625, 7324, 10472, 14584, 16318, 14455, 16318, 16318, 16318, 16061, 14712, 16318, 16318, 8994, 0, 0, 0, 0, 0, 0},
+{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1092, 4240, 899, 4304, 4304, 4304, 3790, 1349, 15162, 16318, 6810, 0, 0, 0, 0, 0, 0},
+{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5332, 16254, 13427, 1156, 0, 0, 0, 0, 0, 0},
+{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1413, 14969, 16383, 5332, 0, 0, 0, 0, 0, 0, 0},
+{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8287, 16318, 15290, 2826, 0, 0, 0, 0, 0, 0, 0},
+{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3790, 15997, 16318, 3983, 0, 0, 0, 0, 0, 0, 0, 0},
+{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8544, 16318, 12014, 321, 0, 0, 0, 0, 0, 0, 0, 0},
+{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 578, 13170, 15933, 3726, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8095, 16318, 11692, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4818, 16126, 15419, 3662, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1220, 14198, 16318, 10665, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 192, 13042, 16318, 14070, 2248, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2441, 16318, 16318, 4947, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1991, 14391, 16318, 7388, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8544, 16318, 16318, 3340, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3919, 15547, 16318, 16318, 3340, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7773, 16318, 16318, 14070, 2569, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7773, 16318, 13299, 1156, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}}};
+
+float test_input_float32[1][28][28] = {{{0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000},
+{0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000},
+{0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000},
+{0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000},
+{0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000},
+{0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000},
+{0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000},
+{0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.32941177487373352051, 0.72549021244049072266, 0.62352943420410156250, 0.59215688705444335938, 0.23529411852359771729, 0.14117647707462310791, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000},
+{0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.87058824300765991211, 0.99607843160629272461, 0.99607843160629272461, 0.99607843160629272461, 0.99607843160629272461, 0.94509804248809814453, 0.77647060155868530273, 0.77647060155868530273, 0.77647060155868530273, 0.77647060155868530273, 0.77647060155868530273, 0.77647060155868530273, 0.77647060155868530273, 0.77647060155868530273, 0.66666668653488159180, 0.20392157137393951416, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000},
+{0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.26274511218070983887, 0.44705882668495178223, 0.28235295414924621582, 0.44705882668495178223, 0.63921570777893066406, 0.89019608497619628906, 0.99607843160629272461, 0.88235294818878173828, 0.99607843160629272461, 0.99607843160629272461, 0.99607843160629272461, 0.98039215803146362305, 0.89803922176361083984, 0.99607843160629272461, 0.99607843160629272461, 0.54901963472366333008, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000},
+{0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.06666667014360427856, 0.25882354378700256348, 0.05490196123719215393, 0.26274511218070983887, 0.26274511218070983887, 0.26274511218070983887, 0.23137255012989044189, 0.08235294371843338013, 0.92549020051956176758, 0.99607843160629272461, 0.41568627953529357910, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000},
+{0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.32549020648002624512, 0.99215686321258544922, 0.81960785388946533203, 0.07058823853731155396, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000},
+{0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.08627451211214065552, 0.91372549533843994141, 1.00000000000000000000, 0.32549020648002624512, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000},
+{0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.50588238239288330078, 0.99607843160629272461, 0.93333333730697631836, 0.17254902422428131104, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000},
+{0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.23137255012989044189, 0.97647058963775634766, 0.99607843160629272461, 0.24313725531101226807, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000},
+{0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.52156865596771240234, 0.99607843160629272461, 0.73333334922790527344, 0.01960784383118152618, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000},
+{0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.03529411926865577698, 0.80392158031463623047, 0.97254902124404907227, 0.22745098173618316650, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000},
+{0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.49411764740943908691, 0.99607843160629272461, 0.71372550725936889648, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000},
+{0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.29411765933036804199, 0.98431372642517089844, 0.94117647409439086914, 0.22352941334247589111, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000},
+{0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.07450980693101882935, 0.86666667461395263672, 0.99607843160629272461, 0.65098041296005249023, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000},
+{0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.01176470611244440079, 0.79607844352722167969, 0.99607843160629272461, 0.85882353782653808594, 0.13725490868091583252, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000},
+{0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.14901961386203765869, 0.99607843160629272461, 0.99607843160629272461, 0.30196079611778259277, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000},
+{0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.12156862765550613403, 0.87843137979507446289, 0.99607843160629272461, 0.45098039507865905762, 0.00392156885936856270, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000},
+{0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.52156865596771240234, 0.99607843160629272461, 0.99607843160629272461, 0.20392157137393951416, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000},
+{0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.23921568691730499268, 0.94901961088180541992, 0.99607843160629272461, 0.99607843160629272461, 0.20392157137393951416, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000},
+{0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.47450980544090270996, 0.99607843160629272461, 0.99607843160629272461, 0.85882353782653808594, 0.15686275064945220947, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000},
+{0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.47450980544090270996, 0.99607843160629272461, 0.81176471710205078125, 0.07058823853731155396, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000},
+{0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000}}};
+# 15 "mnist_AXI_Stream.cpp" 2
+
+# 1 "././layers_c/layers.h" 1
+# 1 "././layers_c/padding2d.h" 1
+
+
+uint8_t padding2d_fix16(uint16_t padding_height, uint16_t padding_width,
+uint16_t input_depth, uint16_t input_height, uint16_t input_width, int16_t* input,
+uint16_t output_height, uint16_t output_width, int16_t* output);
+
+uint8_t padding2d_float32(uint16_t padding_height, uint16_t padding_width,
+uint16_t input_depth, uint16_t input_height, uint16_t input_width, float* input,
+uint16_t output_height, uint16_t output_width, float* output);
+# 2 "././layers_c/layers.h" 2
+# 1 "././layers_c/up_sampling2d.h" 1
+
+uint8_t up_sampling2d_fix16(uint16_t kernel_size,
+uint16_t input_depth, uint16_t input_height, uint16_t input_width, int16_t* input,
+uint16_t output_depth, uint16_t output_height, uint16_t output_width, int16_t* output);
+
+uint8_t up_sampling2d_float32(uint16_t kernel_size,
+uint16_t input_depth, uint16_t input_height, uint16_t input_width, float* input,
+uint16_t output_depth, uint16_t output_height, uint16_t output_width, float* output);
+# 3 "././layers_c/layers.h" 2
+# 1 "././layers_c/max_pooling2d.h" 1
+
+
+
+
+
+
+uint8_t max_pooling2d_fix16(uint16_t kernel_size,
+uint16_t input_depth, uint16_t input_height, uint16_t input_width, int16_t* input,
+uint16_t output_depth, uint16_t output_height, uint16_t output_width, int16_t* output);
+
+uint8_t max_pooling2d_float32(uint16_t kernel_size,
+uint16_t input_depth, uint16_t input_height, uint16_t input_width, float* input,
+uint16_t output_depth, uint16_t output_height, uint16_t output_width, float* output);
+# 4 "././layers_c/layers.h" 2
+# 1 "././layers_c/conv2d.h" 1
+
+uint8_t conv2d_fix16(uint16_t input_depth, uint16_t input_height, uint16_t input_width, int16_t* input,
+uint16_t output_depth, uint16_t output_height, uint16_t output_width, int16_t* output,
+const int16_t* bias,
+uint16_t kernel_height, uint16_t kernel_width, const int16_t* kernel,
+uint8_t relu, uint8_t fractal_width);
+
+uint8_t conv2d_float32(uint16_t input_depth, uint16_t input_height, uint16_t input_width, float* input,
+uint16_t output_depth, uint16_t output_height, uint16_t output_width, float* output,
+const float* bias,
+uint16_t kernel_height, uint16_t kernel_width, const float* kernel,
+uint8_t relu);
+# 5 "././layers_c/layers.h" 2
+# 1 "././layers_c/depthwise_conv2d.h" 1
+
+
+uint8_t depthwise_conv2d_fix16(uint16_t input_depth, uint16_t input_height, uint16_t input_width, int16_t* input,
+uint16_t output_depth, uint16_t output_height, uint16_t output_width, int16_t* output,
+const int16_t* bias,
+uint16_t kernel_height, uint16_t kernel_width, const int16_t* kernel,
+uint8_t relu, uint8_t fractal_width);
+
+uint8_t depthwise_conv2d_float32(uint16_t input_depth, uint16_t input_height, uint16_t input_width, float* input,
+uint16_t output_depth, uint16_t output_height, uint16_t output_width, float* output,
+const float* bias,
+uint16_t kernel_height, uint16_t kernel_width, const float* kernel,
+uint8_t relu);
+# 6 "././layers_c/layers.h" 2
+# 1 "././layers_c/pointwise_conv2d.h" 1
+
+uint8_t pointwise_conv2d_fix16(uint16_t input_depth, uint16_t input_height, uint16_t input_width, int16_t* input,
+uint16_t output_depth, uint16_t output_height, uint16_t output_width, int16_t* output,
+const int16_t* bias,
+uint16_t kernel_height, uint16_t kernel_width, const int16_t* kernel,
+uint8_t relu, uint8_t fractal_width);
+
+uint8_t pointwise_conv2d_float32(uint16_t input_depth, uint16_t input_height, uint16_t input_width, float* input,
+uint16_t output_depth, uint16_t output_height, uint16_t output_width, float* output,
+const float* bias,
+uint16_t kernel_height, uint16_t kernel_width, const float* kernel,
+uint8_t relu);
+# 7 "././layers_c/layers.h" 2
+# 1 "././layers_c/separable_conv2d.h" 1
+
+
+uint8_t separable_conv2d_fix16(uint16_t input_depth, uint16_t input_height, uint16_t input_width, int16_t* input,
+uint16_t output_depth, uint16_t output_height, uint16_t output_width, int16_t* output, int16_t* middle_array,
+const int16_t* bias_d, const int16_t* bias_p,
+uint16_t kernel_d_height, uint16_t kernel_d_width, const int16_t* kernel_d, const int16_t* kernel_p,
+uint8_t relu, uint8_t fractal_width);
+
+uint8_t separable_conv2d_float32(uint16_t input_depth, uint16_t input_height, uint16_t input_width, float* input,
+uint16_t output_depth, uint16_t output_height, uint16_t output_width, float* output, float* middle_array,
+const float* bias_d, const float* bias_p,
+uint16_t kernel_d_height, uint16_t kernel_d_width, const float* kernel_d, const float* kernel_p,
+uint8_t relu);
+# 8 "././layers_c/layers.h" 2
+# 17 "mnist_AXI_Stream.cpp" 2
+# 1 "././arrays_c/arrays_fix16.h" 1
+# 10 "././arrays_c/arrays_fix16.h"
+uint16_t input_0_depth = 1, input_0_height = 28, input_0_width = 28;
+
+uint16_t Padding2D_0_depth = 1, Padding2D_0_height = 30, Padding2D_0_width = 30;
+
+uint16_t SeparableConv2D_0_depth = 16, SeparableConv2D_0_height = 28, SeparableConv2D_0_width = 28;
+
+uint16_t MaxPooling2D_0_depth = 16, MaxPooling2D_0_height = 14, MaxPooling2D_0_width = 14;
+
+uint16_t Padding2D_1_depth = 16, Padding2D_1_height = 16, Padding2D_1_width = 16;
+
+uint16_t SeparableConv2D_1_depth = 8, SeparableConv2D_1_height = 14, SeparableConv2D_1_width = 14;
+
+uint16_t MaxPooling2D_1_depth = 8, MaxPooling2D_1_height = 7, MaxPooling2D_1_width = 7;
+
+uint16_t Padding2D_2_depth = 8, Padding2D_2_height = 9, Padding2D_2_width = 9;
+
+uint16_t SeparableConv2D_2_depth = 8, SeparableConv2D_2_height = 7, SeparableConv2D_2_width = 7;
+
+uint16_t UpSampling2D_0_depth = 8, UpSampling2D_0_height = 14, UpSampling2D_0_width = 14;
+
+uint16_t Padding2D_3_depth = 8, Padding2D_3_height = 16, Padding2D_3_width = 16;
+
+uint16_t SeparableConv2D_3_depth = 16, SeparableConv2D_3_height = 14, SeparableConv2D_3_width = 14;
+
+uint16_t UpSampling2D_1_depth = 16, UpSampling2D_1_height = 28, UpSampling2D_1_width = 28;
+
+uint16_t Padding2D_4_depth = 16, Padding2D_4_height = 30, Padding2D_4_width = 30;
+
+uint16_t SeparableConv2D_4_depth = 1, SeparableConv2D_4_height = 28, SeparableConv2D_4_width = 28;
+# 18 "mnist_AXI_Stream.cpp" 2
+# 1 "././weights_c/weights_fix16.h" 1
+
+
+
+
+
+# 1 "././weights_c/SeparableConv2D_0_fix16.h" 1
+# 15 "././weights_c/SeparableConv2D_0_fix16.h"
+const uint16_t shape_SeparableConv2D_0_w_d[] = {1, 1, 3, 3};
+const int16_t SeparableConv2D_0_w_d[1][1][3][3] =
+{{{{-12554, -12685, 1933},
+{-5322, -7602, -1037},
+{ -783, 3015, -3653}}}};
+
+const uint16_t shape_SeparableConv2D_0_w_p[] = {16, 1, 1, 1};
+const int16_t SeparableConv2D_0_w_p[16][1][1][1] =
+{{{{-1770}}},
+
+{{{ 6639}}},
+
+{{{ 8093}}},
+
+{{{ -628}}},
+
+{{{ 4920}}},
+
+{{{ 9618}}},
+
+{{{-9253}}},
+
+{{{ 1545}}},
+
+{{{-10856}}},
+
+{{{ 2733}}},
+
+{{{ 1194}}},
+
+{{{ 6035}}},
+
+{{{ 3956}}},
+
+{{{-6935}}},
+
+{{{ 5414}}},
+
+{{{ 6639}}}};
+
+const uint16_t shape_SeparableConv2D_0_b_d = 1;
+const int16_t SeparableConv2D_0_b_d[1] = { 0};
+const uint16_t shape_SeparableConv2D_0_b_p = 16;
+const int16_t SeparableConv2D_0_b_p[16] = { 1542, -1048, -333, 783, -788, -804, 758, -342, 1083, 2512, 441, 0, -963, 103, -697, -852};
+# 7 "././weights_c/weights_fix16.h" 2
+# 1 "././weights_c/SeparableConv2D_1_fix16.h" 1
+# 15 "././weights_c/SeparableConv2D_1_fix16.h"
+const uint16_t shape_SeparableConv2D_1_w_d[] = {1, 16, 3, 3};
+const int16_t SeparableConv2D_1_w_d[1][16][3][3] =
+{{{{-1326, 4193, 2316},
+{ -640, 2285, 1876},
+{-2006, 1782, 4475}},
+
+{{ -693, -1013, 1460},
+{ 514, 1548, 166},
+{-3269, -3186, -2903}},
+
+{{ 1479, -1596, -1740},
+{-1071, 1268, -1670},
+{-1710, -746, -2313}},
+
+{{ 2980, -2107, 1144},
+{ 1749, 1528, 346},
+{ 2913, -1808, -697}},
+
+{{ 2331, 750, 2004},
+{ 1744, -600, 484},
+{ -127, -1467, -1077}},
+
+{{ 3394, 688, 1413},
+{ 785, 2223, -2045},
+{ 2398, -3309, 1586}},
+
+{{ 3123, -1135, 2724},
+{ 2000, -2553, 2463},
+{ 1463, -8837, -3310}},
+
+{{-2587, -1915, 2126},
+{-3000, -220, -677},
+{-3282, 2848, 522}},
+
+{{ -811, 690, -419},
+{-5465, -5871, -1118},
+{-5309, -2432, 1451}},
+
+{{ 2988, -1188, 718},
+{ 1650, -3075, -214},
+{-1264, -1368, 2449}},
+
+{{ 416, -29, 2284},
+{-2931, -2837, 639},
+{-1044, 813, -2825}},
+
+{{-1412, 794, -2119},
+{ 2931, -1018, -1071},
+{-2328, -2675, 960}},
+
+{{-1196, -2657, -2350},
+{-1541, -2489, -2897},
+{ 208, 1589, 366}},
+
+{{ 930, 584, 2005},
+{-5769, -1999, -1891},
+{-1433, 5862, -223}},
+
+{{-1975, 1037, 1327},
+{ 2855, 266, -3022},
+{ 2399, 2284, 829}},
+
+{{ -858, -2717, -849},
+{ -757, 1032, 1542},
+{ -196, -3134, -498}}}};
+
+const uint16_t shape_SeparableConv2D_1_w_p[] = {8, 16, 1, 1};
+const int16_t SeparableConv2D_1_w_p[8][16][1][1] =
+{{{{-2589}},
+
+{{-6301}},
+
+{{ 6298}},
+
+{{ 4670}},
+
+{{ -438}},
+
+{{-5150}},
+
+{{ 7446}},
+
+{{ 3324}},
+
+{{-9216}},
+
+{{-7122}},
+
+{{-7424}},
+
+{{ 6893}},
+
+{{-4826}},
+
+{{-8945}},
+
+{{-7666}},
+
+{{ -423}}},
+
+{{{-7183}},
+
+{{ 7322}},
+
+{{-5944}},
+
+{{ -323}},
+
+{{-2788}},
+
+{{-2602}},
+
+{{-6180}},
+
+{{-6997}},
+
+{{-5629}},
+
+{{ 5275}},
+
+{{-1784}},
+
+{{-2581}},
+
+{{ 6718}},
+
+{{ 3388}},
+
+{{ 3773}},
+
+{{-8007}}},
+
+{{{-4851}},
+
+{{ 1400}},
+
+{{-7902}},
+
+{{ 6190}},
+
+{{ 1521}},
+
+{{ 7966}},
+
+{{ 6153}},
+
+{{ 3500}},
+
+{{ 901}},
+
+{{ 6014}},
+
+{{ 268}},
+
+{{ -957}},
+
+{{-2844}},
+
+{{-1732}},
+
+{{-7656}},
+
+{{ 4662}}},
+
+{{{ 1823}},
+
+{{ 154}},
+
+{{ 5429}},
+
+{{-1477}},
+
+{{-7781}},
+
+{{-4747}},
+
+{{-1877}},
+
+{{-3606}},
+
+{{ 5181}},
+
+{{ 6372}},
+
+{{ 6575}},
+
+{{-4528}},
+
+{{ 6695}},
+
+{{ -152}},
+
+{{-1514}},
+
+{{ 7019}}},
+
+{{{ 3484}},
+
+{{-2438}},
+
+{{-7328}},
+
+{{ 2123}},
+
+{{ 7666}},
+
+{{-8442}},
+
+{{-2497}},
+
+{{-3055}},
+
+{{-5786}},
+
+{{-2193}},
+
+{{-2912}},
+
+{{-4658}},
+
+{{ 1673}},
+
+{{ 8363}},
+
+{{-6904}},
+
+{{-3660}}},
+
+{{{ 1036}},
+
+{{-2833}},
+
+{{-1186}},
+
+{{ 6000}},
+
+{{ 4801}},
+
+{{ 6144}},
+
+{{-10138}},
+
+{{-4768}},
+
+{{-9399}},
+
+{{ 1749}},
+
+{{-2378}},
+
+{{ -487}},
+
+{{ 1326}},
+
+{{ 6412}},
+
+{{-3407}},
+
+{{-5152}}},
+
+{{{ 5377}},
+
+{{ 2585}},
+
+{{ 2156}},
+
+{{ -353}},
+
+{{ 6548}},
+
+{{ 6080}},
+
+{{ 4697}},
+
+{{ 311}},
+
+{{ 2680}},
+
+{{ 2484}},
+
+{{ 4684}},
+
+{{ 6150}},
+
+{{ 3607}},
+
+{{ 2107}},
+
+{{ 5485}},
+
+{{ 96}}},
+
+{{{-7271}},
+
+{{-7274}},
+
+{{-4776}},
+
+{{-5098}},
+
+{{ 4909}},
+
+{{-7610}},
+
+{{ 23}},
+
+{{ 1973}},
+
+{{ 5696}},
+
+{{ 5529}},
+
+{{-6456}},
+
+{{-5351}},
+
+{{-1616}},
+
+{{-1431}},
+
+{{ 7230}},
+
+{{-1016}}}};
+
+const uint16_t shape_SeparableConv2D_1_b_d = 16;
+const int16_t SeparableConv2D_1_b_d[16] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+const uint16_t shape_SeparableConv2D_1_b_p = 8;
+const int16_t SeparableConv2D_1_b_p[8] = { 572, -2396, -1717, 2581, 2268, 1069, -1339, -998};
+# 8 "././weights_c/weights_fix16.h" 2
+# 1 "././weights_c/SeparableConv2D_2_fix16.h" 1
+# 15 "././weights_c/SeparableConv2D_2_fix16.h"
+const uint16_t shape_SeparableConv2D_2_w_d[] = {1, 8, 3, 3};
+const int16_t SeparableConv2D_2_w_d[1][8][3][3] =
+{{{{ 2536, -6851, 2756},
+{-1423, 63, 9249},
+{ -101, -3198, -5076}},
+
+{{ 843, 864, 3946},
+{ 2454, -240, 4605},
+{ 635, 5447, 940}},
+
+{{ 3744, 3585, -4107},
+{ 394, -275, 3632},
+{ 4332, 915, -3506}},
+
+{{ 410, -1860, -3467},
+{-2970, 1565, -5061},
+{-2905, -580, -3411}},
+
+{{-4123, -2067, 1639},
+{-4528, -2755, 2186},
+{-4038, -1126, 1206}},
+
+{{ 349, -1179, 2428},
+{-1867, 9229, 2740},
+{-1920, 2935, 667}},
+
+{{-2151, 1705, -645},
+{ 3635, 3630, -2133},
+{ 495, 287, 1052}},
+
+{{ 33, 2247, -537},
+{ 1212, -2449, 3377},
+{ 733, 1342, -1115}}}};
+
+const uint16_t shape_SeparableConv2D_2_w_p[] = {8, 8, 1, 1};
+const int16_t SeparableConv2D_2_w_p[8][8][1][1] =
+{{{{10898}},
+
+{{ 6361}},
+
+{{-3520}},
+
+{{ 3573}},
+
+{{-7765}},
+
+{{ -153}},
+
+{{10043}},
+
+{{ 6976}}},
+
+{{{ 573}},
+
+{{-7188}},
+
+{{ 6348}},
+
+{{-9376}},
+
+{{-9190}},
+
+{{-5413}},
+
+{{ -876}},
+
+{{ -40}}},
+
+{{{-8324}},
+
+{{ 2097}},
+
+{{-9487}},
+
+{{-6635}},
+
+{{ 607}},
+
+{{-8081}},
+
+{{ 7867}},
+
+{{-5466}}},
+
+{{{11547}},
+
+{{ 8413}},
+
+{{-1735}},
+
+{{ 8485}},
+
+{{ 2665}},
+
+{{ 3423}},
+
+{{ -914}},
+
+{{ 4560}}},
+
+{{{-6048}},
+
+{{ 7028}},
+
+{{-5818}},
+
+{{ 9405}},
+
+{{ 6586}},
+
+{{ 4944}},
+
+{{ 7540}},
+
+{{ 8629}}},
+
+{{{ 6564}},
+
+{{-10620}},
+
+{{-1783}},
+
+{{ 5899}},
+
+{{-8276}},
+
+{{12149}},
+
+{{ 2883}},
+
+{{-4728}}},
+
+{{{ 9628}},
+
+{{ 8093}},
+
+{{ 733}},
+
+{{ 9047}},
+
+{{-4274}},
+
+{{-1225}},
+
+{{-6631}},
+
+{{-3726}}},
+
+{{{ 1720}},
+
+{{ 2151}},
+
+{{-1930}},
+
+{{ 5081}},
+
+{{ -409}},
+
+{{-5892}},
+
+{{-4037}},
+
+{{ 1956}}}};
+
+const uint16_t shape_SeparableConv2D_2_b_d = 8;
+const int16_t SeparableConv2D_2_b_d[8] = { 0, 0, 0, 0, 0, 0, 0, 0};
+const uint16_t shape_SeparableConv2D_2_b_p = 8;
+const int16_t SeparableConv2D_2_b_p[8] = { 414, 4, 42, -3159, 11, 159, 2276, -1477};
+# 9 "././weights_c/weights_fix16.h" 2
+# 1 "././weights_c/SeparableConv2D_3_fix16.h" 1
+# 15 "././weights_c/SeparableConv2D_3_fix16.h"
+const uint16_t shape_SeparableConv2D_3_w_d[] = {1, 8, 3, 3};
+const int16_t SeparableConv2D_3_w_d[1][8][3][3] =
+{{{{ 6483, 6800, 1793},
+{ 1754, -2268, 1790},
+{-5240, 1297, 4003}},
+
+{{ 4126, 478, -1728},
+{ -500, -3686, 206},
+{ 70, 1164, 3027}},
+
+{{-2759, -475, -3147},
+{-1026, 1453, 1979},
+{ -30, 699, 2001}},
+
+{{ -931, -1964, 88},
+{ 3610, 3068, 2235},
+{ 2735, 5515, 2644}},
+
+{{ 2054, -1082, -282},
+{-2935, -2559, -806},
+{ 5151, -202, 459}},
+
+{{ 1691, 6153, 3979},
+{ 2879, 8324, 5482},
+{ 270, 1706, -1204}},
+
+{{ 587, -445, -1591},
+{ 5546, 2445, -3794},
+{ 5844, 305, 1431}},
+
+{{ 4402, -2220, 1032},
+{-2557, -3565, 4049},
+{ 3118, 2826, -2191}}}};
+
+const uint16_t shape_SeparableConv2D_3_w_p[] = {16, 8, 1, 1};
+const int16_t SeparableConv2D_3_w_p[16][8][1][1] =
+{{{{-2651}},
+
+{{ 2073}},
+
+{{ 1156}},
+
+{{ 3349}},
+
+{{ 604}},
+
+{{-8156}},
+
+{{-5028}},
+
+{{ 6387}}},
+
+{{{-10026}},
+
+{{ 5920}},
+
+{{ 1322}},
+
+{{-7540}},
+
+{{ 3993}},
+
+{{ 8863}},
+
+{{10066}},
+
+{{ 6497}}},
+
+{{{-5839}},
+
+{{ 4141}},
+
+{{-5493}},
+
+{{ 7347}},
+
+{{-1488}},
+
+{{-2148}},
+
+{{-8023}},
+
+{{ 6361}}},
+
+{{{ 2258}},
+
+{{ -967}},
+
+{{ -946}},
+
+{{-7367}},
+
+{{ 6947}},
+
+{{-7301}},
+
+{{ 1582}},
+
+{{-5886}}},
+
+{{{ 3762}},
+
+{{-5238}},
+
+{{ 4505}},
+
+{{-7039}},
+
+{{-1746}},
+
+{{ 953}},
+
+{{ 5991}},
+
+{{-7318}}},
+
+{{{-4192}},
+
+{{ 7946}},
+
+{{-6801}},
+
+{{-6934}},
+
+{{ 6251}},
+
+{{-7325}},
+
+{{-4293}},
+
+{{-7732}}},
+
+{{{ 6991}},
+
+{{-2587}},
+
+{{ 1501}},
+
+{{-4347}},
+
+{{-6826}},
+
+{{ 535}},
+
+{{ 7485}},
+
+{{ -99}}},
+
+{{{-4407}},
+
+{{ 6362}},
+
+{{-4718}},
+
+{{-4734}},
+
+{{ 2770}},
+
+{{-1312}},
+
+{{ 2669}},
+
+{{-2859}}},
+
+{{{-4441}},
+
+{{-5484}},
+
+{{ 6676}},
+
+{{-4288}},
+
+{{-7260}},
+
+{{ 669}},
+
+{{-6517}},
+
+{{-2572}}},
+
+{{{-6350}},
+
+{{ 2136}},
+
+{{ 4793}},
+
+{{ 7198}},
+
+{{-6744}},
+
+{{ 8508}},
+
+{{-5838}},
+
+{{ 6660}}},
+
+{{{ 8779}},
+
+{{ 7883}},
+
+{{-1167}},
+
+{{-1243}},
+
+{{ 3744}},
+
+{{ 2181}},
+
+{{ 4585}},
+
+{{-2179}}},
+
+{{{ 738}},
+
+{{-7926}},
+
+{{ 4738}},
+
+{{ 2494}},
+
+{{ 2931}},
+
+{{-7453}},
+
+{{ 7364}},
+
+{{ -767}}},
+
+{{{-4640}},
+
+{{-6124}},
+
+{{-4374}},
+
+{{-1684}},
+
+{{ 9249}},
+
+{{ 9727}},
+
+{{ -67}},
+
+{{ 1304}}},
+
+{{{-6983}},
+
+{{ 788}},
+
+{{ 5068}},
+
+{{-2722}},
+
+{{-5044}},
+
+{{-8187}},
+
+{{-1037}},
+
+{{ 7848}}},
+
+{{{-2065}},
+
+{{-7293}},
+
+{{ 2987}},
+
+{{-5070}},
+
+{{ -260}},
+
+{{-7630}},
+
+{{ -228}},
+
+{{-2840}}},
+
+{{{-2855}},
+
+{{-8214}},
+
+{{-2709}},
+
+{{-5582}},
+
+{{-4899}},
+
+{{ 4232}},
+
+{{ 5145}},
+
+{{ 1740}}}};
+
+const uint16_t shape_SeparableConv2D_3_b_d = 8;
+const int16_t SeparableConv2D_3_b_d[8] = { 0, 0, 0, 0, 0, 0, 0, 0};
+const uint16_t shape_SeparableConv2D_3_b_p = 16;
+const int16_t SeparableConv2D_3_b_p[16] = { 14, -3325, 262, 1, -56, 0, -5, 402, -323, -3385, 4336, 0, -4652, 59, 76, -1950};
+# 10 "././weights_c/weights_fix16.h" 2
+# 1 "././weights_c/SeparableConv2D_4_fix16.h" 1
+# 15 "././weights_c/SeparableConv2D_4_fix16.h"
+const uint16_t shape_SeparableConv2D_4_w_d[] = {1, 16, 3, 3};
+const int16_t SeparableConv2D_4_w_d[1][16][3][3] =
+{{{{-2891, -143, 1437},
+{ -251, 2642, -1035},
+{ 1701, -707, -1813}},
+
+{{-2751, -7145, -4961},
+{-7946, -6172, -7868},
+{-3056, -8484, -3995}},
+
+{{ -16, -2830, 2589},
+{ 945, -2341, 1778},
+{ 870, 1158, 3220}},
+
+{{-1277, 639, -3052},
+{ -783, -2150, -61},
+{ -646, 1166, -2205}},
+
+{{ 2431, 1221, -2499},
+{ 1224, 1266, 272},
+{-1531, -734, -962}},
+
+{{ -897, 705, 2902},
+{-2418, 2482, -2522},
+{ 540, -389, 834}},
+
+{{-1541, -278, 600},
+{ -134, -1328, 1299},
+{ 2092, 1791, -1987}},
+
+{{ 1262, 716, -1917},
+{ 735, -117, 692},
+{ -960, 3041, 727}},
+
+{{ -940, -476, 3070},
+{ 2121, -840, 3162},
+{ 2238, 2669, 1484}},
+
+{{ 1271, 4275, 940},
+{ 1853, 3985, 927},
+{-2113, -1241, 914}},
+
+{{-5071, -571, -1607},
+{-1890, -2851, -3064},
+{ -229, 271, -3929}},
+
+{{-2135, -1161, 3099},
+{ 1957, 345, -2940},
+{-3160, 1073, 1304}},
+
+{{-1754, -2114, -1281},
+{-3138, -7699, -7333},
+{-4665, -4586, -792}},
+
+{{ 313, 1368, -47},
+{ 2732, -941, 2017},
+{-2094, -1871, 1485}},
+
+{{ 278, -350, 1544},
+{-2946, -1574, 1941},
+{-1261, -427, 2410}},
+
+{{-2591, -4657, -955},
+{ -387, -4563, -4536},
+{ 74, -3812, -2390}}}};
+
+const uint16_t shape_SeparableConv2D_4_w_p[] = {1, 16, 1, 1};
+const int16_t SeparableConv2D_4_w_p[1][16][1][1] =
+{{{{-6502}},
+
+{{-16381}},
+
+{{ 7191}},
+
+{{-1764}},
+
+{{ 3434}},
+
+{{-2964}},
+
+{{ -36}},
+
+{{ -478}},
+
+{{ 748}},
+
+{{ 7038}},
+
+{{ 7886}},
+
+{{ 3798}},
+
+{{-11586}},
+
+{{ 5575}},
+
+{{-7347}},
+
+{{-9605}}}};
+
+const uint16_t shape_SeparableConv2D_4_b_d = 16;
+const int16_t SeparableConv2D_4_b_d[16] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+const uint16_t shape_SeparableConv2D_4_b_p = 1;
+const int16_t SeparableConv2D_4_b_p[1] = {-10739};
+# 11 "././weights_c/weights_fix16.h" 2
+# 19 "mnist_AXI_Stream.cpp" 2
 
 # 1 "/tools/Xilinx/Vivado/2018.3/common/technology/autopilot/hls_stream.h" 1
 # 66 "/tools/Xilinx/Vivado/2018.3/common/technology/autopilot/hls_stream.h"
@@ -15625,7 +22957,7 @@ class stream
 
 
 }
-# 8 "./mnist_AXI_Stream.h" 2
+# 21 "mnist_AXI_Stream.cpp" 2
 # 1 "/tools/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_int.h" 1
 # 54 "/tools/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_int.h"
 # 1 "/tools/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_common.h" 1
@@ -21873,7 +29205,7 @@ inline bool operator!=(
 }
 # 381 "/tools/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_fixed.h" 2
 # 350 "/tools/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_int.h" 2
-# 9 "./mnist_AXI_Stream.h" 2
+# 22 "mnist_AXI_Stream.cpp" 2
 # 1 "/tools/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_axi_sdata.h" 1
 # 86 "/tools/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_axi_sdata.h"
 # 1 "/tools/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_int.h" 1
@@ -21942,1261 +29274,132 @@ template<int D>
     qdma_axis(ap_uint<D> d = ap_uint<D>(), ap_uint<(D+7)/8> k = ap_uint<(D+7)/8>(), ap_uint<1> l = ap_uint<1>()) : data(d), keep(k), last(l) {}
     qdma_axis(const qdma_axis<D, 0, 0, 0> &d) : data(d.data), keep(d.keep), last(d.last) {}
   };
-# 10 "./mnist_AXI_Stream.h" 2
-
+# 23 "mnist_AXI_Stream.cpp" 2
 
 using namespace std;
 
 typedef hls::stream< ap_axis<16, 1, 1, 1> > axis;
 
-void network(axis &input_data, axis &output_data, ap_uint<32> *debug_status);
-# 11 "mnist_AXI_Stream.cpp" 2
-
-# 1 "././layers_c/layers.h" 1
-# 1 "././layers_c/padding2d.h" 1
-
-
-uint8_t padding2d_fix16(uint16_t padding_height, uint16_t padding_width,
-uint16_t input_depth, uint16_t input_height, uint16_t input_width, int16_t* input,
-uint16_t output_height, uint16_t output_width, int16_t* output);
-
-uint8_t padding2d_float32(uint16_t padding_height, uint16_t padding_width,
-uint16_t input_depth, uint16_t input_height, uint16_t input_width, float* input,
-uint16_t output_height, uint16_t output_width, float* output);
-# 2 "././layers_c/layers.h" 2
-# 1 "././layers_c/padding2d_old.h" 1
-
-
-uint8_t padding2d_fix16_old(uint16_t padding_height, uint16_t padding_width,
-uint16_t input_depth, uint16_t input_height, uint16_t input_width, int16_t* input,
-uint16_t output_height, uint16_t output_width, int16_t* output);
-
-uint8_t padding2d_float32_old(uint16_t padding_height, uint16_t padding_width,
-uint16_t input_depth, uint16_t input_height, uint16_t input_width, float* input,
-uint16_t output_height, uint16_t output_width, float* output);
-# 3 "././layers_c/layers.h" 2
-# 1 "././layers_c/up_sampling2d.h" 1
-
-uint8_t up_sampling2d_fix16(uint16_t kernel_size,
-uint16_t input_depth, uint16_t input_height, uint16_t input_width, int16_t* input,
-uint16_t output_depth, uint16_t output_height, uint16_t output_width, int16_t* output);
-
-uint8_t up_sampling2d_float32(uint16_t kernel_size,
-uint16_t input_depth, uint16_t input_height, uint16_t input_width, float* input,
-uint16_t output_depth, uint16_t output_height, uint16_t output_width, float* output);
-# 4 "././layers_c/layers.h" 2
-# 1 "././layers_c/max_pooling2d.h" 1
-
-
-
-
-
-
-uint8_t max_pooling2d_fix16(uint16_t kernel_size,
-uint16_t input_depth, uint16_t input_height, uint16_t input_width, int16_t* input,
-uint16_t output_depth, uint16_t output_height, uint16_t output_width, int16_t* output);
-
-uint8_t max_pooling2d_float32(uint16_t kernel_size,
-uint16_t input_depth, uint16_t input_height, uint16_t input_width, float* input,
-uint16_t output_depth, uint16_t output_height, uint16_t output_width, float* output);
-# 5 "././layers_c/layers.h" 2
-# 1 "././layers_c/conv2d.h" 1
-
-uint8_t conv2d_fix16(uint16_t input_depth, uint16_t input_height, uint16_t input_width, int16_t* input,
-uint16_t output_depth, uint16_t output_height, uint16_t output_width, int16_t* output,
-const int16_t* bias,
-uint16_t kernel_height, uint16_t kernel_width, const int16_t* kernel,
-uint8_t relu, uint8_t fractal_width);
-
-uint8_t conv2d_float32(uint16_t input_depth, uint16_t input_height, uint16_t input_width, float* input,
-uint16_t output_depth, uint16_t output_height, uint16_t output_width, float* output,
-const float* bias,
-uint16_t kernel_height, uint16_t kernel_width, const float* kernel,
-uint8_t relu);
-# 6 "././layers_c/layers.h" 2
-# 1 "././layers_c/depthwise_conv2d.h" 1
-
-
-uint8_t depthwise_conv2d_fix16(uint16_t input_depth, uint16_t input_height, uint16_t input_width, int16_t* input,
-uint16_t output_depth, uint16_t output_height, uint16_t output_width, int16_t* output,
-const int16_t* bias,
-uint16_t kernel_height, uint16_t kernel_width, const int16_t* kernel,
-uint8_t relu, uint8_t fractal_width);
-
-uint8_t depthwise_conv2d_float32(uint16_t input_depth, uint16_t input_height, uint16_t input_width, float* input,
-uint16_t output_depth, uint16_t output_height, uint16_t output_width, float* output,
-const float* bias,
-uint16_t kernel_height, uint16_t kernel_width, const float* kernel,
-uint8_t relu);
-# 7 "././layers_c/layers.h" 2
-# 1 "././layers_c/pointwise_conv2d.h" 1
-
-uint8_t pointwise_conv2d_fix16(uint16_t input_depth, uint16_t input_height, uint16_t input_width, int16_t* input,
-uint16_t output_depth, uint16_t output_height, uint16_t output_width, int16_t* output,
-const int16_t* bias,
-uint16_t kernel_height, uint16_t kernel_width, const int16_t* kernel,
-uint8_t relu, uint8_t fractal_width);
-
-uint8_t pointwise_conv2d_float32(uint16_t input_depth, uint16_t input_height, uint16_t input_width, float* input,
-uint16_t output_depth, uint16_t output_height, uint16_t output_width, float* output,
-const float* bias,
-uint16_t kernel_height, uint16_t kernel_width, const float* kernel,
-uint8_t relu);
-# 8 "././layers_c/layers.h" 2
-# 1 "././layers_c/separable_conv2d.h" 1
-
-
-uint8_t separable_conv2d_fix16(uint16_t input_depth, uint16_t input_height, uint16_t input_width, int16_t* input,
-uint16_t output_depth, uint16_t output_height, uint16_t output_width, int16_t* output, int16_t* middle_array,
-const int16_t* bias_d, const int16_t* bias_p,
-uint16_t kernel_d_height, uint16_t kernel_d_width, const int16_t* kernel_d, const int16_t* kernel_p,
-uint8_t relu, uint8_t fractal_width);
-
-uint8_t separable_conv2d_float32(uint16_t input_depth, uint16_t input_height, uint16_t input_width, float* input,
-uint16_t output_depth, uint16_t output_height, uint16_t output_width, float* output, float* middle_array,
-const float* bias_d, const float* bias_p,
-uint16_t kernel_d_height, uint16_t kernel_d_width, const float* kernel_d, const float* kernel_p,
-uint8_t relu);
-# 9 "././layers_c/layers.h" 2
-# 13 "mnist_AXI_Stream.cpp" 2
-# 1 "././arrays_c/arrays_fix16.h" 1
-
-
-
-
-
-
-
-
-uint16_t Padding2D_0_depth = 1, Padding2D_0_height = 30, Padding2D_0_width = 30;
-int16_t Padding2D_0_array[1][30][30];
-
-uint16_t SeparableConv2D_0_m_depth = 1, SeparableConv2D_0_m_height = 28, SeparableConv2D_0_m_width = 28;
-int16_t SeparableConv2D_0_m_array[1][28][28];
-
-uint16_t SeparableConv2D_0_depth = 16, SeparableConv2D_0_height = 28, SeparableConv2D_0_width = 28;
-int16_t SeparableConv2D_0_array[16][28][28];
-
-uint16_t MaxPooling2D_0_depth = 16, MaxPooling2D_0_height = 14, MaxPooling2D_0_width = 14;
-int16_t MaxPooling2D_0_array[16][14][14];
-
-uint16_t Padding2D_1_depth = 16, Padding2D_1_height = 16, Padding2D_1_width = 16;
-int16_t Padding2D_1_array[16][16][16];
-
-uint16_t SeparableConv2D_1_m_depth = 16, SeparableConv2D_1_m_height = 14, SeparableConv2D_1_m_width = 14;
-int16_t SeparableConv2D_1_m_array[16][14][14];
-
-uint16_t SeparableConv2D_1_depth = 8, SeparableConv2D_1_height = 14, SeparableConv2D_1_width = 14;
-int16_t SeparableConv2D_1_array[8][14][14];
-
-uint16_t MaxPooling2D_1_depth = 8, MaxPooling2D_1_height = 7, MaxPooling2D_1_width = 7;
-int16_t MaxPooling2D_1_array[8][7][7];
-
-uint16_t Padding2D_2_depth = 8, Padding2D_2_height = 9, Padding2D_2_width = 9;
-int16_t Padding2D_2_array[8][9][9];
-
-uint16_t SeparableConv2D_2_m_depth = 8, SeparableConv2D_2_m_height = 7, SeparableConv2D_2_m_width = 7;
-int16_t SeparableConv2D_2_m_array[8][7][7];
-
-uint16_t SeparableConv2D_2_depth = 8, SeparableConv2D_2_height = 7, SeparableConv2D_2_width = 7;
-int16_t SeparableConv2D_2_array[8][7][7];
-
-uint16_t UpSampling2D_0_depth = 8, UpSampling2D_0_height = 14, UpSampling2D_0_width = 14;
-int16_t UpSampling2D_0_array[8][14][14];
-
-uint16_t Padding2D_3_depth = 8, Padding2D_3_height = 16, Padding2D_3_width = 16;
-int16_t Padding2D_3_array[8][16][16];
-
-uint16_t SeparableConv2D_3_m_depth = 8, SeparableConv2D_3_m_height = 14, SeparableConv2D_3_m_width = 14;
-int16_t SeparableConv2D_3_m_array[8][14][14];
-
-uint16_t SeparableConv2D_3_depth = 16, SeparableConv2D_3_height = 14, SeparableConv2D_3_width = 14;
-int16_t SeparableConv2D_3_array[16][14][14];
-
-uint16_t UpSampling2D_1_depth = 16, UpSampling2D_1_height = 28, UpSampling2D_1_width = 28;
-int16_t UpSampling2D_1_array[16][28][28];
-
-uint16_t Padding2D_4_depth = 16, Padding2D_4_height = 30, Padding2D_4_width = 30;
-int16_t Padding2D_4_array[16][30][30];
-
-uint16_t SeparableConv2D_4_m_depth = 16, SeparableConv2D_4_m_height = 28, SeparableConv2D_4_m_width = 28;
-int16_t SeparableConv2D_4_m_array[16][28][28];
-
-uint16_t SeparableConv2D_4_depth = 1, SeparableConv2D_4_height = 28, SeparableConv2D_4_width = 28;
-int16_t SeparableConv2D_4_array[1][28][28];
-# 14 "mnist_AXI_Stream.cpp" 2
-# 1 "././weights_c/weights_fix16.h" 1
-
-
-
-
-
-# 1 "././weights_c/SeparableConv2D_0_fix16.h" 1
-# 15 "././weights_c/SeparableConv2D_0_fix16.h"
-const uint16_t shape_SeparableConv2D_0_w_d[] = {1, 1, 3, 3};
-const int16_t SeparableConv2D_0_w_d[1][1][3][3] =
-{{{{-12554, -12685, 1933},
-{-5322, -7602, -1037},
-{ -783, 3015, -3653}}}};
-
-const uint16_t shape_SeparableConv2D_0_w_p[] = {16, 1, 1, 1};
-const int16_t SeparableConv2D_0_w_p[16][1][1][1] =
-{{{{-1770}}},
-
-{{{ 6639}}},
-
-{{{ 8093}}},
-
-{{{ -628}}},
-
-{{{ 4920}}},
-
-{{{ 9618}}},
-
-{{{-9253}}},
-
-{{{ 1545}}},
-
-{{{-10856}}},
-
-{{{ 2733}}},
-
-{{{ 1194}}},
-
-{{{ 6035}}},
-
-{{{ 3956}}},
-
-{{{-6935}}},
-
-{{{ 5414}}},
-
-{{{ 6639}}}};
-
-const uint16_t shape_SeparableConv2D_0_b_d = 1;
-const int16_t SeparableConv2D_0_b_d[1] = { 0};
-const uint16_t shape_SeparableConv2D_0_b_p = 16;
-const int16_t SeparableConv2D_0_b_p[16] = { 1542, -1048, -333, 783, -788, -804, 758, -342, 1083, 2512, 441, 0, -963, 103, -697, -852};
-# 7 "././weights_c/weights_fix16.h" 2
-# 1 "././weights_c/SeparableConv2D_1_fix16.h" 1
-# 15 "././weights_c/SeparableConv2D_1_fix16.h"
-const uint16_t shape_SeparableConv2D_1_w_d[] = {1, 16, 3, 3};
-const int16_t SeparableConv2D_1_w_d[1][16][3][3] =
-{{{{-1326, 4193, 2316},
-{ -640, 2285, 1876},
-{-2006, 1782, 4475}},
-
-{{ -693, -1013, 1460},
-{ 514, 1548, 166},
-{-3269, -3186, -2903}},
-
-{{ 1479, -1596, -1740},
-{-1071, 1268, -1670},
-{-1710, -746, -2313}},
-
-{{ 2980, -2107, 1144},
-{ 1749, 1528, 346},
-{ 2913, -1808, -697}},
-
-{{ 2331, 750, 2004},
-{ 1744, -600, 484},
-{ -127, -1467, -1077}},
-
-{{ 3394, 688, 1413},
-{ 785, 2223, -2045},
-{ 2398, -3309, 1586}},
-
-{{ 3123, -1135, 2724},
-{ 2000, -2553, 2463},
-{ 1463, -8837, -3310}},
-
-{{-2587, -1915, 2126},
-{-3000, -220, -677},
-{-3282, 2848, 522}},
-
-{{ -811, 690, -419},
-{-5465, -5871, -1118},
-{-5309, -2432, 1451}},
-
-{{ 2988, -1188, 718},
-{ 1650, -3075, -214},
-{-1264, -1368, 2449}},
-
-{{ 416, -29, 2284},
-{-2931, -2837, 639},
-{-1044, 813, -2825}},
-
-{{-1412, 794, -2119},
-{ 2931, -1018, -1071},
-{-2328, -2675, 960}},
-
-{{-1196, -2657, -2350},
-{-1541, -2489, -2897},
-{ 208, 1589, 366}},
-
-{{ 930, 584, 2005},
-{-5769, -1999, -1891},
-{-1433, 5862, -223}},
-
-{{-1975, 1037, 1327},
-{ 2855, 266, -3022},
-{ 2399, 2284, 829}},
-
-{{ -858, -2717, -849},
-{ -757, 1032, 1542},
-{ -196, -3134, -498}}}};
-
-const uint16_t shape_SeparableConv2D_1_w_p[] = {8, 16, 1, 1};
-const int16_t SeparableConv2D_1_w_p[8][16][1][1] =
-{{{{-2589}},
-
-{{-6301}},
-
-{{ 6298}},
-
-{{ 4670}},
-
-{{ -438}},
-
-{{-5150}},
-
-{{ 7446}},
-
-{{ 3324}},
-
-{{-9216}},
-
-{{-7122}},
-
-{{-7424}},
-
-{{ 6893}},
-
-{{-4826}},
-
-{{-8945}},
-
-{{-7666}},
-
-{{ -423}}},
-
-{{{-7183}},
-
-{{ 7322}},
-
-{{-5944}},
-
-{{ -323}},
-
-{{-2788}},
-
-{{-2602}},
-
-{{-6180}},
-
-{{-6997}},
-
-{{-5629}},
-
-{{ 5275}},
-
-{{-1784}},
-
-{{-2581}},
-
-{{ 6718}},
-
-{{ 3388}},
-
-{{ 3773}},
-
-{{-8007}}},
-
-{{{-4851}},
-
-{{ 1400}},
-
-{{-7902}},
-
-{{ 6190}},
-
-{{ 1521}},
-
-{{ 7966}},
-
-{{ 6153}},
-
-{{ 3500}},
-
-{{ 901}},
-
-{{ 6014}},
-
-{{ 268}},
-
-{{ -957}},
-
-{{-2844}},
-
-{{-1732}},
-
-{{-7656}},
-
-{{ 4662}}},
-
-{{{ 1823}},
-
-{{ 154}},
-
-{{ 5429}},
-
-{{-1477}},
-
-{{-7781}},
-
-{{-4747}},
-
-{{-1877}},
-
-{{-3606}},
-
-{{ 5181}},
-
-{{ 6372}},
-
-{{ 6575}},
-
-{{-4528}},
-
-{{ 6695}},
-
-{{ -152}},
-
-{{-1514}},
-
-{{ 7019}}},
-
-{{{ 3484}},
-
-{{-2438}},
-
-{{-7328}},
-
-{{ 2123}},
-
-{{ 7666}},
-
-{{-8442}},
-
-{{-2497}},
-
-{{-3055}},
-
-{{-5786}},
-
-{{-2193}},
-
-{{-2912}},
-
-{{-4658}},
-
-{{ 1673}},
-
-{{ 8363}},
-
-{{-6904}},
-
-{{-3660}}},
-
-{{{ 1036}},
-
-{{-2833}},
-
-{{-1186}},
-
-{{ 6000}},
-
-{{ 4801}},
-
-{{ 6144}},
-
-{{-10138}},
-
-{{-4768}},
-
-{{-9399}},
-
-{{ 1749}},
-
-{{-2378}},
-
-{{ -487}},
-
-{{ 1326}},
-
-{{ 6412}},
-
-{{-3407}},
-
-{{-5152}}},
-
-{{{ 5377}},
-
-{{ 2585}},
-
-{{ 2156}},
-
-{{ -353}},
-
-{{ 6548}},
-
-{{ 6080}},
-
-{{ 4697}},
-
-{{ 311}},
-
-{{ 2680}},
-
-{{ 2484}},
-
-{{ 4684}},
-
-{{ 6150}},
-
-{{ 3607}},
-
-{{ 2107}},
-
-{{ 5485}},
-
-{{ 96}}},
-
-{{{-7271}},
-
-{{-7274}},
-
-{{-4776}},
-
-{{-5098}},
-
-{{ 4909}},
-
-{{-7610}},
-
-{{ 23}},
-
-{{ 1973}},
-
-{{ 5696}},
-
-{{ 5529}},
-
-{{-6456}},
-
-{{-5351}},
-
-{{-1616}},
-
-{{-1431}},
-
-{{ 7230}},
-
-{{-1016}}}};
-
-const uint16_t shape_SeparableConv2D_1_b_d = 16;
-const int16_t SeparableConv2D_1_b_d[16] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
-const uint16_t shape_SeparableConv2D_1_b_p = 8;
-const int16_t SeparableConv2D_1_b_p[8] = { 572, -2396, -1717, 2581, 2268, 1069, -1339, -998};
-# 8 "././weights_c/weights_fix16.h" 2
-# 1 "././weights_c/SeparableConv2D_2_fix16.h" 1
-# 15 "././weights_c/SeparableConv2D_2_fix16.h"
-const uint16_t shape_SeparableConv2D_2_w_d[] = {1, 8, 3, 3};
-const int16_t SeparableConv2D_2_w_d[1][8][3][3] =
-{{{{ 2536, -6851, 2756},
-{-1423, 63, 9249},
-{ -101, -3198, -5076}},
-
-{{ 843, 864, 3946},
-{ 2454, -240, 4605},
-{ 635, 5447, 940}},
-
-{{ 3744, 3585, -4107},
-{ 394, -275, 3632},
-{ 4332, 915, -3506}},
-
-{{ 410, -1860, -3467},
-{-2970, 1565, -5061},
-{-2905, -580, -3411}},
-
-{{-4123, -2067, 1639},
-{-4528, -2755, 2186},
-{-4038, -1126, 1206}},
-
-{{ 349, -1179, 2428},
-{-1867, 9229, 2740},
-{-1920, 2935, 667}},
-
-{{-2151, 1705, -645},
-{ 3635, 3630, -2133},
-{ 495, 287, 1052}},
-
-{{ 33, 2247, -537},
-{ 1212, -2449, 3377},
-{ 733, 1342, -1115}}}};
-
-const uint16_t shape_SeparableConv2D_2_w_p[] = {8, 8, 1, 1};
-const int16_t SeparableConv2D_2_w_p[8][8][1][1] =
-{{{{10898}},
-
-{{ 6361}},
-
-{{-3520}},
-
-{{ 3573}},
-
-{{-7765}},
-
-{{ -153}},
-
-{{10043}},
-
-{{ 6976}}},
-
-{{{ 573}},
-
-{{-7188}},
-
-{{ 6348}},
-
-{{-9376}},
-
-{{-9190}},
-
-{{-5413}},
-
-{{ -876}},
-
-{{ -40}}},
-
-{{{-8324}},
-
-{{ 2097}},
-
-{{-9487}},
-
-{{-6635}},
-
-{{ 607}},
-
-{{-8081}},
-
-{{ 7867}},
-
-{{-5466}}},
-
-{{{11547}},
-
-{{ 8413}},
-
-{{-1735}},
-
-{{ 8485}},
-
-{{ 2665}},
-
-{{ 3423}},
-
-{{ -914}},
-
-{{ 4560}}},
-
-{{{-6048}},
-
-{{ 7028}},
-
-{{-5818}},
-
-{{ 9405}},
-
-{{ 6586}},
-
-{{ 4944}},
-
-{{ 7540}},
-
-{{ 8629}}},
-
-{{{ 6564}},
-
-{{-10620}},
-
-{{-1783}},
-
-{{ 5899}},
-
-{{-8276}},
-
-{{12149}},
-
-{{ 2883}},
-
-{{-4728}}},
-
-{{{ 9628}},
-
-{{ 8093}},
-
-{{ 733}},
-
-{{ 9047}},
-
-{{-4274}},
-
-{{-1225}},
-
-{{-6631}},
-
-{{-3726}}},
-
-{{{ 1720}},
-
-{{ 2151}},
-
-{{-1930}},
-
-{{ 5081}},
-
-{{ -409}},
-
-{{-5892}},
-
-{{-4037}},
-
-{{ 1956}}}};
-
-const uint16_t shape_SeparableConv2D_2_b_d = 8;
-const int16_t SeparableConv2D_2_b_d[8] = { 0, 0, 0, 0, 0, 0, 0, 0};
-const uint16_t shape_SeparableConv2D_2_b_p = 8;
-const int16_t SeparableConv2D_2_b_p[8] = { 414, 4, 42, -3159, 11, 159, 2276, -1477};
-# 9 "././weights_c/weights_fix16.h" 2
-# 1 "././weights_c/SeparableConv2D_3_fix16.h" 1
-# 15 "././weights_c/SeparableConv2D_3_fix16.h"
-const uint16_t shape_SeparableConv2D_3_w_d[] = {1, 8, 3, 3};
-const int16_t SeparableConv2D_3_w_d[1][8][3][3] =
-{{{{ 6483, 6800, 1793},
-{ 1754, -2268, 1790},
-{-5240, 1297, 4003}},
-
-{{ 4126, 478, -1728},
-{ -500, -3686, 206},
-{ 70, 1164, 3027}},
-
-{{-2759, -475, -3147},
-{-1026, 1453, 1979},
-{ -30, 699, 2001}},
-
-{{ -931, -1964, 88},
-{ 3610, 3068, 2235},
-{ 2735, 5515, 2644}},
-
-{{ 2054, -1082, -282},
-{-2935, -2559, -806},
-{ 5151, -202, 459}},
-
-{{ 1691, 6153, 3979},
-{ 2879, 8324, 5482},
-{ 270, 1706, -1204}},
-
-{{ 587, -445, -1591},
-{ 5546, 2445, -3794},
-{ 5844, 305, 1431}},
-
-{{ 4402, -2220, 1032},
-{-2557, -3565, 4049},
-{ 3118, 2826, -2191}}}};
-
-const uint16_t shape_SeparableConv2D_3_w_p[] = {16, 8, 1, 1};
-const int16_t SeparableConv2D_3_w_p[16][8][1][1] =
-{{{{-2651}},
-
-{{ 2073}},
-
-{{ 1156}},
-
-{{ 3349}},
-
-{{ 604}},
-
-{{-8156}},
-
-{{-5028}},
-
-{{ 6387}}},
-
-{{{-10026}},
-
-{{ 5920}},
-
-{{ 1322}},
-
-{{-7540}},
-
-{{ 3993}},
-
-{{ 8863}},
-
-{{10066}},
-
-{{ 6497}}},
-
-{{{-5839}},
-
-{{ 4141}},
-
-{{-5493}},
-
-{{ 7347}},
-
-{{-1488}},
-
-{{-2148}},
-
-{{-8023}},
-
-{{ 6361}}},
-
-{{{ 2258}},
-
-{{ -967}},
-
-{{ -946}},
-
-{{-7367}},
-
-{{ 6947}},
-
-{{-7301}},
-
-{{ 1582}},
-
-{{-5886}}},
-
-{{{ 3762}},
-
-{{-5238}},
-
-{{ 4505}},
-
-{{-7039}},
-
-{{-1746}},
-
-{{ 953}},
-
-{{ 5991}},
-
-{{-7318}}},
-
-{{{-4192}},
-
-{{ 7946}},
-
-{{-6801}},
-
-{{-6934}},
-
-{{ 6251}},
-
-{{-7325}},
-
-{{-4293}},
-
-{{-7732}}},
-
-{{{ 6991}},
-
-{{-2587}},
-
-{{ 1501}},
-
-{{-4347}},
-
-{{-6826}},
-
-{{ 535}},
-
-{{ 7485}},
-
-{{ -99}}},
-
-{{{-4407}},
-
-{{ 6362}},
-
-{{-4718}},
-
-{{-4734}},
-
-{{ 2770}},
-
-{{-1312}},
-
-{{ 2669}},
-
-{{-2859}}},
-
-{{{-4441}},
-
-{{-5484}},
-
-{{ 6676}},
-
-{{-4288}},
-
-{{-7260}},
-
-{{ 669}},
-
-{{-6517}},
-
-{{-2572}}},
-
-{{{-6350}},
-
-{{ 2136}},
-
-{{ 4793}},
-
-{{ 7198}},
-
-{{-6744}},
-
-{{ 8508}},
-
-{{-5838}},
-
-{{ 6660}}},
-
-{{{ 8779}},
-
-{{ 7883}},
-
-{{-1167}},
-
-{{-1243}},
-
-{{ 3744}},
-
-{{ 2181}},
-
-{{ 4585}},
-
-{{-2179}}},
-
-{{{ 738}},
-
-{{-7926}},
-
-{{ 4738}},
-
-{{ 2494}},
-
-{{ 2931}},
-
-{{-7453}},
-
-{{ 7364}},
-
-{{ -767}}},
-
-{{{-4640}},
-
-{{-6124}},
-
-{{-4374}},
-
-{{-1684}},
-
-{{ 9249}},
-
-{{ 9727}},
-
-{{ -67}},
-
-{{ 1304}}},
-
-{{{-6983}},
-
-{{ 788}},
-
-{{ 5068}},
-
-{{-2722}},
-
-{{-5044}},
-
-{{-8187}},
-
-{{-1037}},
-
-{{ 7848}}},
-
-{{{-2065}},
-
-{{-7293}},
-
-{{ 2987}},
-
-{{-5070}},
-
-{{ -260}},
-
-{{-7630}},
-
-{{ -228}},
-
-{{-2840}}},
-
-{{{-2855}},
-
-{{-8214}},
-
-{{-2709}},
-
-{{-5582}},
-
-{{-4899}},
-
-{{ 4232}},
-
-{{ 5145}},
-
-{{ 1740}}}};
-
-const uint16_t shape_SeparableConv2D_3_b_d = 8;
-const int16_t SeparableConv2D_3_b_d[8] = { 0, 0, 0, 0, 0, 0, 0, 0};
-const uint16_t shape_SeparableConv2D_3_b_p = 16;
-const int16_t SeparableConv2D_3_b_p[16] = { 14, -3325, 262, 1, -56, 0, -5, 402, -323, -3385, 4336, 0, -4652, 59, 76, -1950};
-# 10 "././weights_c/weights_fix16.h" 2
-# 1 "././weights_c/SeparableConv2D_4_fix16.h" 1
-# 15 "././weights_c/SeparableConv2D_4_fix16.h"
-const uint16_t shape_SeparableConv2D_4_w_d[] = {1, 16, 3, 3};
-const int16_t SeparableConv2D_4_w_d[1][16][3][3] =
-{{{{-2891, -143, 1437},
-{ -251, 2642, -1035},
-{ 1701, -707, -1813}},
-
-{{-2751, -7145, -4961},
-{-7946, -6172, -7868},
-{-3056, -8484, -3995}},
-
-{{ -16, -2830, 2589},
-{ 945, -2341, 1778},
-{ 870, 1158, 3220}},
-
-{{-1277, 639, -3052},
-{ -783, -2150, -61},
-{ -646, 1166, -2205}},
-
-{{ 2431, 1221, -2499},
-{ 1224, 1266, 272},
-{-1531, -734, -962}},
-
-{{ -897, 705, 2902},
-{-2418, 2482, -2522},
-{ 540, -389, 834}},
-
-{{-1541, -278, 600},
-{ -134, -1328, 1299},
-{ 2092, 1791, -1987}},
-
-{{ 1262, 716, -1917},
-{ 735, -117, 692},
-{ -960, 3041, 727}},
-
-{{ -940, -476, 3070},
-{ 2121, -840, 3162},
-{ 2238, 2669, 1484}},
-
-{{ 1271, 4275, 940},
-{ 1853, 3985, 927},
-{-2113, -1241, 914}},
-
-{{-5071, -571, -1607},
-{-1890, -2851, -3064},
-{ -229, 271, -3929}},
-
-{{-2135, -1161, 3099},
-{ 1957, 345, -2940},
-{-3160, 1073, 1304}},
-
-{{-1754, -2114, -1281},
-{-3138, -7699, -7333},
-{-4665, -4586, -792}},
-
-{{ 313, 1368, -47},
-{ 2732, -941, 2017},
-{-2094, -1871, 1485}},
-
-{{ 278, -350, 1544},
-{-2946, -1574, 1941},
-{-1261, -427, 2410}},
-
-{{-2591, -4657, -955},
-{ -387, -4563, -4536},
-{ 74, -3812, -2390}}}};
-
-const uint16_t shape_SeparableConv2D_4_w_p[] = {1, 16, 1, 1};
-const int16_t SeparableConv2D_4_w_p[1][16][1][1] =
-{{{{-6502}},
-
-{{-16381}},
-
-{{ 7191}},
-
-{{-1764}},
-
-{{ 3434}},
-
-{{-2964}},
-
-{{ -36}},
-
-{{ -478}},
-
-{{ 748}},
-
-{{ 7038}},
-
-{{ 7886}},
-
-{{ 3798}},
-
-{{-11586}},
-
-{{ 5575}},
-
-{{-7347}},
-
-{{-9605}}}};
-
-const uint16_t shape_SeparableConv2D_4_b_d = 16;
-const int16_t SeparableConv2D_4_b_d[16] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
-const uint16_t shape_SeparableConv2D_4_b_p = 1;
-const int16_t SeparableConv2D_4_b_p[1] = {-10739};
-# 11 "././weights_c/weights_fix16.h" 2
-# 15 "mnist_AXI_Stream.cpp" 2
-
-
-# 1 "/tools/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_int.h" 1
-# 18 "mnist_AXI_Stream.cpp" 2
-
-
-using namespace std;
-
-void network(axis &input_data, axis &output_data, ap_uint<32> *debug_status) {
+int network(axis &input_data, axis &output_data) {
 _ssdm_op_SpecInterface(&input_data, "axis", 1, 1, "both", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
 _ssdm_op_SpecInterface(&output_data, "axis", 1, 1, "both", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
 _ssdm_op_SpecInterface(0, "s_axilite", 1, 1, "", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
 
- uint16_t input_0_depth = 1, input_0_height = 28, input_0_width = 28;
- int16_t input_0_array[1 * 28 * 28];
+ int16_t MemBank_A[14400], MemBank_B[14400], MemBank_Out[16 * 28 * 28];
+_ssdm_op_SpecReset( MemBank_A, 1,  "");
+_ssdm_op_SpecReset( MemBank_B, 1,  "");
+_ssdm_op_SpecReset( MemBank_Out, 1,  "");
 
- int16_t* array_head = (int16_t*)SeparableConv2D_4_array;
- uint64_t array_length = (uint64_t)SeparableConv2D_4_depth * (uint64_t)SeparableConv2D_4_height * (uint64_t)SeparableConv2D_4_width;
+ int16_t* array_head = (int16_t*)MemBank_Out;
+
+ uint64_t array_length = 16 * 28 * 28;
 
  ap_axis<16, 1, 1, 1> tmp;
  ap_axis<16, 1, 1, 1> out;
 
  for(int i = 0; i < input_0_depth * input_0_height * input_0_width; i++){
   input_data >> tmp;
-  input_0_array[i] = (int16_t) tmp.data;
+  MemBank_A[i] = (int16_t) tmp.data;
  }
 
  padding2d_fix16(1, 1,
- input_0_depth, input_0_height, input_0_width, (int16_t*) input_0_array,
- Padding2D_0_height, Padding2D_0_width, (int16_t*) Padding2D_0_array);
+ input_0_depth, input_0_height, input_0_width, (int16_t*)MemBank_A,
+ Padding2D_0_height, Padding2D_0_width, (int16_t*)MemBank_B);
 
- separable_conv2d_fix16(Padding2D_0_depth, Padding2D_0_height, Padding2D_0_width, (int16_t*) Padding2D_0_array,
- SeparableConv2D_0_depth, SeparableConv2D_0_height, SeparableConv2D_0_width, (int16_t*) SeparableConv2D_0_array, (int16_t*) SeparableConv2D_0_m_array,
- (int16_t*) SeparableConv2D_0_b_d, (int16_t*) SeparableConv2D_0_b_p,
- 3, 3, (int16_t*) SeparableConv2D_0_w_d, (int16_t*) SeparableConv2D_0_w_p, 1, 14);
+ depthwise_conv2d_fix16(Padding2D_0_depth, Padding2D_0_height, Padding2D_0_width, (int16_t*)MemBank_B,
+ Padding2D_0_depth, SeparableConv2D_0_height, SeparableConv2D_0_width, (int16_t*)MemBank_A,
+ (int16_t*) SeparableConv2D_0_b_d,
+ 3, 3, (int16_t*) SeparableConv2D_0_w_d, 0, 14);
 
- max_pooling2d_fix16(2,
- SeparableConv2D_0_depth, SeparableConv2D_0_height, SeparableConv2D_0_width, (int16_t*) SeparableConv2D_0_array,
- MaxPooling2D_0_depth, MaxPooling2D_0_height, MaxPooling2D_0_width, (int16_t*) MaxPooling2D_0_array);
+ pointwise_conv2d_fix16(Padding2D_0_depth, SeparableConv2D_0_height, SeparableConv2D_0_width, (int16_t*)MemBank_A,
+ SeparableConv2D_0_depth, SeparableConv2D_0_height, SeparableConv2D_0_width, (int16_t*)MemBank_B,
+ (int16_t*)SeparableConv2D_0_b_p,
+ 1, 1, (int16_t*)SeparableConv2D_0_w_p, 1, 14);
+# 136 "mnist_AXI_Stream.cpp"
+ for(int i = 0; i < array_length; i++){
 
- padding2d_fix16(1, 1,
- MaxPooling2D_0_depth, MaxPooling2D_0_height, MaxPooling2D_0_width, (int16_t*) MaxPooling2D_0_array,
- Padding2D_1_height, Padding2D_1_width, (int16_t*) Padding2D_1_array);
+  MemBank_Out[i] = MemBank_B[i];
+ }
 
- separable_conv2d_fix16(Padding2D_1_depth, Padding2D_1_height, Padding2D_1_width, (int16_t*) Padding2D_1_array,
- SeparableConv2D_1_depth, SeparableConv2D_1_height, SeparableConv2D_1_width, (int16_t*) SeparableConv2D_1_array, (int16_t*) SeparableConv2D_1_m_array,
- (int16_t*) SeparableConv2D_1_b_d, (int16_t*) SeparableConv2D_1_b_p,
- 3, 3, (int16_t*) SeparableConv2D_1_w_d, (int16_t*) SeparableConv2D_1_w_p, 1, 14);
-
- max_pooling2d_fix16(2,
- SeparableConv2D_1_depth, SeparableConv2D_1_height, SeparableConv2D_1_width, (int16_t*) SeparableConv2D_1_array,
- MaxPooling2D_1_depth, MaxPooling2D_1_height, MaxPooling2D_1_width, (int16_t*) MaxPooling2D_1_array);
-
- padding2d_fix16(1, 1,
- MaxPooling2D_1_depth, MaxPooling2D_1_height, MaxPooling2D_1_width, (int16_t*) MaxPooling2D_1_array,
- Padding2D_2_height, Padding2D_2_width, (int16_t*) Padding2D_2_array);
-
- separable_conv2d_fix16(Padding2D_2_depth, Padding2D_2_height, Padding2D_2_width, (int16_t*) Padding2D_2_array,
- SeparableConv2D_2_depth, SeparableConv2D_2_height, SeparableConv2D_2_width, (int16_t*) SeparableConv2D_2_array, (int16_t*) SeparableConv2D_2_m_array,
- (int16_t*) SeparableConv2D_2_b_d, (int16_t*) SeparableConv2D_2_b_p,
- 3, 3, (int16_t*) SeparableConv2D_2_w_d, (int16_t*) SeparableConv2D_2_w_p, 1, 14);
-
- up_sampling2d_fix16(2,
- SeparableConv2D_2_depth, SeparableConv2D_2_height, SeparableConv2D_2_width, (int16_t*) SeparableConv2D_2_array,
- UpSampling2D_0_depth, UpSampling2D_0_height, UpSampling2D_0_width, (int16_t*) UpSampling2D_0_array);
-
- padding2d_fix16(1, 1,
- UpSampling2D_0_depth, UpSampling2D_0_height, UpSampling2D_0_width, (int16_t*) UpSampling2D_0_array,
- Padding2D_3_height, Padding2D_3_width, (int16_t*) Padding2D_3_array);
-
- separable_conv2d_fix16(Padding2D_3_depth, Padding2D_3_height, Padding2D_3_width, (int16_t*) Padding2D_3_array,
- SeparableConv2D_3_depth, SeparableConv2D_3_height, SeparableConv2D_3_width, (int16_t*) SeparableConv2D_3_array, (int16_t*) SeparableConv2D_3_m_array,
- (int16_t*) SeparableConv2D_3_b_d, (int16_t*) SeparableConv2D_3_b_p,
- 3, 3, (int16_t*) SeparableConv2D_3_w_d, (int16_t*) SeparableConv2D_3_w_p, 1, 14);
-
- up_sampling2d_fix16(2,
- SeparableConv2D_3_depth, SeparableConv2D_3_height, SeparableConv2D_3_width, (int16_t*) SeparableConv2D_3_array,
- UpSampling2D_1_depth, UpSampling2D_1_height, UpSampling2D_1_width, (int16_t*) UpSampling2D_1_array);
-
- padding2d_fix16(1, 1,
- UpSampling2D_1_depth, UpSampling2D_1_height, UpSampling2D_1_width, (int16_t*) UpSampling2D_1_array,
- Padding2D_4_height, Padding2D_4_width, (int16_t*) Padding2D_4_array);
-
- separable_conv2d_fix16(Padding2D_4_depth, Padding2D_4_height, Padding2D_4_width, (int16_t*) Padding2D_4_array,
- SeparableConv2D_4_depth, SeparableConv2D_4_height, SeparableConv2D_4_width, (int16_t*) SeparableConv2D_4_array, (int16_t*) SeparableConv2D_4_m_array,
- (int16_t*) SeparableConv2D_4_b_d, (int16_t*) SeparableConv2D_4_b_p,
- 3, 3, (int16_t*) SeparableConv2D_4_w_d, (int16_t*) SeparableConv2D_4_w_p, 1, 14);
-# 130 "mnist_AXI_Stream.cpp"
  for(uint64_t i = 0; i < array_length; i++){
 _ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
-
-
-
-
-
-
- tmp.user = 0;
-  tmp.last = 0;
-  tmp.dest = 0;
-  tmp.id = 0;
-  tmp.keep = 0;
-  tmp.strb = 0;
+ out.user = 0;
+  out.last = 0;
+  out.dest = 0;
+  out.id = 0;
+  out.keep = 0;
+  out.strb = 0;
   if(i == 0){
-   tmp.user = 1;
+   out.user = 1;
   }
   if(i == array_length - 1){
-   tmp.last = 1;
+   out.last = 1;
   }
-  tmp.data = array_head[i];
-  output_data << tmp;
+  out.data = array_head[i];
+  output_data << out;
  }
- return;
+ return(0);
+}
+
+int main(void){
+ axis input_buffer;
+ axis output_buffer;
+_ssdm_op_SpecReset( &output_buffer, 1,  "");
+
+ int16_t output_img_buff[16 * 28 * 28];
+    ap_axis<16, 1, 1, 1> tmp;
+ ap_uint<32> debug_status = 0;
+
+ int i = 0;
+ for(int depth = 0; depth < 1; depth++){
+  for(int height = 0; height < 28; height++){
+   for(int width = 0; width < 28; width++){
+    tmp.data = (int16_t)test_input_fix16[depth][height][width];
+
+    if(depth == 0 && height == 0 && width == 0){
+     tmp.user = 1;
+    } else {
+     tmp.user = 0;
+    }
+
+    if(depth == 1 - 1 && height == 28 - 1 && width == 28 - 1){
+     tmp.last = 1;
+    } else {
+     tmp.last = 0;
+    }
+
+    input_buffer << tmp;
+    i += 1;
+   }
+  }
+ }
+
+ cout << "\r\n";
+ cout << "output_buffer_length : " << output_buffer.size() << endl;
+ cout << "\r\n";
+
+ network(input_buffer, output_buffer);
+
+ cout << "\r\n";
+ cout << "output_buffer_length : " << output_buffer.size() << endl;
+ cout << "\r\n";
+
+ i = 0;
+ do {
+  output_buffer >> tmp;
+  output_img_buff[i] = (int16_t)tmp.data;
+
+  cout<< setw(6) << right << output_img_buff[i] << " ";
+  if(i % 28 * 28 == 0){
+   cout << '\n' << endl;
+  }else if(i % 28 == 0){
+   cout << endl;
+  }
+  i += 1;
+ } while(tmp.last != 1);
+
+ cout << "\r\n";
+ cout << "\r\n";
+
+ return 0;
 }

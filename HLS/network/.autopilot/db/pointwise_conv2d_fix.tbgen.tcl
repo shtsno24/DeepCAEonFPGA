@@ -15,9 +15,9 @@ set C_modelArgList {
 	{ input_depth uint 16 regular  }
 	{ input_height uint 16 regular  }
 	{ input_width uint 16 regular  }
-	{ input_r int 16 regular {array 392 { 1 3 } 1 1 }  }
+	{ input_r int 16 regular {array 14400 { 1 3 } 1 1 }  }
 	{ output_depth uint 16 regular  }
-	{ output_r int 16 regular {array 392 { 0 3 } 0 1 }  }
+	{ output_r int 16 regular {array 14400 { 0 3 } 0 1 }  }
 }
 set C_modelArgMapList {[ 
 	{ "Name" : "input_depth", "interface" : "wire", "bitwidth" : 16, "direction" : "READONLY"} , 
@@ -38,11 +38,11 @@ set portList {
 	{ input_depth sc_in sc_lv 16 signal 0 } 
 	{ input_height sc_in sc_lv 16 signal 1 } 
 	{ input_width sc_in sc_lv 16 signal 2 } 
-	{ input_r_address0 sc_out sc_lv 9 signal 3 } 
+	{ input_r_address0 sc_out sc_lv 14 signal 3 } 
 	{ input_r_ce0 sc_out sc_logic 1 signal 3 } 
 	{ input_r_q0 sc_in sc_lv 16 signal 3 } 
 	{ output_depth sc_in sc_lv 16 signal 4 } 
-	{ output_r_address0 sc_out sc_lv 9 signal 5 } 
+	{ output_r_address0 sc_out sc_lv 14 signal 5 } 
 	{ output_r_ce0 sc_out sc_logic 1 signal 5 } 
 	{ output_r_we0 sc_out sc_logic 1 signal 5 } 
 	{ output_r_d0 sc_out sc_lv 16 signal 5 } 
@@ -57,11 +57,11 @@ set NewPortList {[
  	{ "name": "input_depth", "direction": "in", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "input_depth", "role": "default" }} , 
  	{ "name": "input_height", "direction": "in", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "input_height", "role": "default" }} , 
  	{ "name": "input_width", "direction": "in", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "input_width", "role": "default" }} , 
- 	{ "name": "input_r_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":9, "type": "signal", "bundle":{"name": "input_r", "role": "address0" }} , 
+ 	{ "name": "input_r_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":14, "type": "signal", "bundle":{"name": "input_r", "role": "address0" }} , 
  	{ "name": "input_r_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "input_r", "role": "ce0" }} , 
  	{ "name": "input_r_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "input_r", "role": "q0" }} , 
  	{ "name": "output_depth", "direction": "in", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "output_depth", "role": "default" }} , 
- 	{ "name": "output_r_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":9, "type": "signal", "bundle":{"name": "output_r", "role": "address0" }} , 
+ 	{ "name": "output_r_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":14, "type": "signal", "bundle":{"name": "output_r", "role": "address0" }} , 
  	{ "name": "output_r_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "output_r", "role": "ce0" }} , 
  	{ "name": "output_r_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "output_r", "role": "we0" }} , 
  	{ "name": "output_r_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "output_r", "role": "d0" }}  ]}
@@ -87,9 +87,9 @@ set RtlHierarchyInfo {[
 			{"Name" : "input_r", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "output_depth", "Type" : "None", "Direction" : "I"},
 			{"Name" : "output_r", "Type" : "Memory", "Direction" : "O"},
-			{"Name" : "SeparableConv2D_2_b_s", "Type" : "Memory", "Direction" : "I"}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.SeparableConv2D_2_b_s_U", "Parent" : "0"},
-	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mul_mul_16s_15ns_30_1_1_U78", "Parent" : "0"}]}
+			{"Name" : "SeparableConv2D_0_b_s", "Type" : "Memory", "Direction" : "I"}]},
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.SeparableConv2D_0_b_s_U", "Parent" : "0"},
+	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mul_mul_16s_12s_28_1_1_U19", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {
@@ -100,7 +100,7 @@ set ArgLastReadFirstWriteLatency {
 		input_r {Type I LastRead 8 FirstWrite -1}
 		output_depth {Type I LastRead 0 FirstWrite -1}
 		output_r {Type O LastRead -1 FirstWrite 6}
-		SeparableConv2D_2_b_s {Type I LastRead -1 FirstWrite -1}}}
+		SeparableConv2D_0_b_s {Type I LastRead -1 FirstWrite -1}}}
 
 set hasDtUnsupportedChannel 0
 
@@ -116,7 +116,7 @@ set Spec2ImplPortList {
 	input_depth { ap_none {  { input_depth in_data 0 16 } } }
 	input_height { ap_none {  { input_height in_data 0 16 } } }
 	input_width { ap_none {  { input_width in_data 0 16 } } }
-	input_r { ap_memory {  { input_r_address0 mem_address 1 9 }  { input_r_ce0 mem_ce 1 1 }  { input_r_q0 mem_dout 0 16 } } }
+	input_r { ap_memory {  { input_r_address0 mem_address 1 14 }  { input_r_ce0 mem_ce 1 1 }  { input_r_q0 mem_dout 0 16 } } }
 	output_depth { ap_none {  { output_depth in_data 0 16 } } }
-	output_r { ap_memory {  { output_r_address0 mem_address 1 9 }  { output_r_ce0 mem_ce 1 1 }  { output_r_we0 mem_we 1 1 }  { output_r_d0 mem_din 1 16 } } }
+	output_r { ap_memory {  { output_r_address0 mem_address 1 14 }  { output_r_ce0 mem_ce 1 1 }  { output_r_we0 mem_we 1 1 }  { output_r_d0 mem_din 1 16 } } }
 }

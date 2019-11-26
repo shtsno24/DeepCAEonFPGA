@@ -1,13 +1,17 @@
 /*
  * author : shtsno24
- * Date : 2019-10-18 23:26:40.302012
+ * Date : 2019-11-26 10:04:07.898723
+ * Language : c
+ * Precision : fix16
  *
  */
 #include </tools/Xilinx/Vivado/2018.3/include/gmp.h>
 #include <iomanip>
 #include <stdint.h>
+#include <iostream>
+#include <iomanip>
 
-#include "mnist_AXI_Stream.h"
+#include "test_data/test_data.h"
 
 #include "./layers_c/layers.h"
 #include "./arrays_c/arrays_fix16.h"
@@ -19,136 +23,197 @@
 
 using namespace std;
 
-void network(axis &input_data, axis &output_data, ap_uint<32> *debug_status) {
+typedef hls::stream< ap_axis<16, 1, 1, 1> > axis;
+
+int network(axis &input_data, axis &output_data) {
 #pragma HLS INTERFACE axis register both port=input_data
 #pragma HLS INTERFACE axis register both port=output_data
 #pragma HLS INTERFACE s_axilite register port=return
 
-	uint16_t input_0_depth = 1, input_0_height = 28, input_0_width = 28;
-	int16_t input_0_array[1 * 28 * 28];
+	int16_t MemBank_A[14400], MemBank_B[14400], MemBank_Out[16 * 28 * 28];
 
-	int16_t* array_head = (int16_t*)SeparableConv2D_4_array;
-	uint64_t array_length = (uint64_t)SeparableConv2D_4_depth * (uint64_t)SeparableConv2D_4_height * (uint64_t)SeparableConv2D_4_width;
+	int16_t* array_head = (int16_t*)MemBank_Out;
+//	uint64_t array_length = (uint64_t)SeparableConv2D_4_depth * SeparableConv2D_4_height * SeparableConv2D_4_width;
+	uint64_t array_length = 16 * 28 * 28;
 
 	ap_axis<16, 1, 1, 1> tmp;
 	ap_axis<16, 1, 1, 1> out;
 
 	for(int i = 0; i < input_0_depth * input_0_height * input_0_width; i++){
 		input_data >> tmp;
-		input_0_array[i] = (int16_t) tmp.data;
+		MemBank_A[i] = (int16_t) tmp.data;
 	}
 
 	padding2d_fix16(1, 1,
-	input_0_depth, input_0_height, input_0_width, (int16_t*) input_0_array,
-	Padding2D_0_height, Padding2D_0_width, (int16_t*) Padding2D_0_array);
+	input_0_depth, input_0_height, input_0_width, (int16_t*)MemBank_A,
+	Padding2D_0_height, Padding2D_0_width, (int16_t*)MemBank_B);
 
-	separable_conv2d_fix16(Padding2D_0_depth, Padding2D_0_height, Padding2D_0_width, (int16_t*) Padding2D_0_array,
-	SeparableConv2D_0_depth, SeparableConv2D_0_height, SeparableConv2D_0_width, (int16_t*) SeparableConv2D_0_array, (int16_t*) SeparableConv2D_0_m_array,
-	(int16_t*) SeparableConv2D_0_b_d, (int16_t*) SeparableConv2D_0_b_p,
-	3, 3, (int16_t*) SeparableConv2D_0_w_d, (int16_t*) SeparableConv2D_0_w_p, 1, fractal_width_SeparableConv2D_0);
+	depthwise_conv2d_fix16(Padding2D_0_depth, Padding2D_0_height, Padding2D_0_width, (int16_t*)MemBank_B,
+	Padding2D_0_depth, SeparableConv2D_0_height, SeparableConv2D_0_width, (int16_t*)MemBank_A,
+	(int16_t*) SeparableConv2D_0_b_d,
+	3, 3, (int16_t*) SeparableConv2D_0_w_d, 0, fractal_width_SeparableConv2D_0);
 
-	max_pooling2d_fix16(2,
-	SeparableConv2D_0_depth, SeparableConv2D_0_height, SeparableConv2D_0_width, (int16_t*) SeparableConv2D_0_array,
-	MaxPooling2D_0_depth, MaxPooling2D_0_height, MaxPooling2D_0_width, (int16_t*) MaxPooling2D_0_array);
+	pointwise_conv2d_fix16(Padding2D_0_depth, SeparableConv2D_0_height, SeparableConv2D_0_width, (int16_t*)MemBank_A,
+	SeparableConv2D_0_depth, SeparableConv2D_0_height, SeparableConv2D_0_width, (int16_t*)MemBank_B,
+	(int16_t*)SeparableConv2D_0_b_p,
+	1, 1, (int16_t*)SeparableConv2D_0_w_p, 1, fractal_width_SeparableConv2D_0);
+//
+//	max_pooling2d_fix16(2,
+//	SeparableConv2D_0_depth, SeparableConv2D_0_height, SeparableConv2D_0_width, (int16_t*)MemBank_B,
+//	MaxPooling2D_0_depth, MaxPooling2D_0_height, MaxPooling2D_0_width, (int16_t*)MemBank_A);
+//
+//	padding2d_fix16(1, 1,
+//	MaxPooling2D_0_depth, MaxPooling2D_0_height, MaxPooling2D_0_width, (int16_t*)MemBank_A,
+//	Padding2D_1_height, Padding2D_1_width, (int16_t*)MemBank_B);
+//
+//	depthwise_conv2d_fix16(Padding2D_1_depth, Padding2D_1_height, Padding2D_1_width, (int16_t*)MemBank_B,
+//	Padding2D_1_depth, SeparableConv2D_1_height, SeparableConv2D_1_width, (int16_t*)MemBank_A,
+//	(int16_t*) SeparableConv2D_1_b_d,
+//	3, 3, (int16_t*) SeparableConv2D_1_w_d, 0, fractal_width_SeparableConv2D_1);
+//
+//	pointwise_conv2d_fix16(Padding2D_1_depth, SeparableConv2D_1_height, SeparableConv2D_1_width, (int16_t*)MemBank_A,
+//	SeparableConv2D_1_depth, SeparableConv2D_1_height, SeparableConv2D_1_width, (int16_t*)MemBank_B,
+//	(int16_t*)SeparableConv2D_1_b_p,
+//	1, 1, (int16_t*)SeparableConv2D_1_w_p, 1, fractal_width_SeparableConv2D_1);
+//
+//	max_pooling2d_fix16(2,
+//	SeparableConv2D_1_depth, SeparableConv2D_1_height, SeparableConv2D_1_width, (int16_t*)MemBank_B,
+//	MaxPooling2D_1_depth, MaxPooling2D_1_height, MaxPooling2D_1_width, (int16_t*)MemBank_A);
+//
+//	padding2d_fix16(1, 1,
+//	MaxPooling2D_1_depth, MaxPooling2D_1_height, MaxPooling2D_1_width, (int16_t*)MemBank_A,
+//	Padding2D_2_height, Padding2D_2_width, (int16_t*)MemBank_B);
+//
+//	depthwise_conv2d_fix16(Padding2D_2_depth, Padding2D_2_height, Padding2D_2_width, (int16_t*)MemBank_B,
+//	Padding2D_2_depth, SeparableConv2D_2_height, SeparableConv2D_2_width, (int16_t*)MemBank_A,
+//	(int16_t*) SeparableConv2D_2_b_d,
+//	3, 3, (int16_t*) SeparableConv2D_2_w_d, 0, fractal_width_SeparableConv2D_2);
+//
+//	pointwise_conv2d_fix16(Padding2D_2_depth, SeparableConv2D_2_height, SeparableConv2D_2_width, (int16_t*)MemBank_A,
+//	SeparableConv2D_2_depth, SeparableConv2D_2_height, SeparableConv2D_2_width, (int16_t*)MemBank_B,
+//	(int16_t*)SeparableConv2D_2_b_p,
+//	1, 1, (int16_t*)SeparableConv2D_2_w_p, 1, fractal_width_SeparableConv2D_2);
+//
+//	up_sampling2d_fix16(2,
+//	SeparableConv2D_2_depth, SeparableConv2D_2_height, SeparableConv2D_2_width, (int16_t*)MemBank_B,
+//	UpSampling2D_0_depth, UpSampling2D_0_height, UpSampling2D_0_width, (int16_t*)MemBank_A);
+//
+//	padding2d_fix16(1, 1,
+//	UpSampling2D_0_depth, UpSampling2D_0_height, UpSampling2D_0_width, (int16_t*)MemBank_A,
+//	Padding2D_3_height, Padding2D_3_width, (int16_t*)MemBank_B);
+//
+//	depthwise_conv2d_fix16(Padding2D_3_depth, Padding2D_3_height, Padding2D_3_width, (int16_t*)MemBank_B,
+//	Padding2D_3_depth, SeparableConv2D_3_height, SeparableConv2D_3_width, (int16_t*)MemBank_A,
+//	(int16_t*) SeparableConv2D_3_b_d,
+//	3, 3, (int16_t*) SeparableConv2D_3_w_d, 0, fractal_width_SeparableConv2D_3);
+//
+//	pointwise_conv2d_fix16(Padding2D_3_depth, SeparableConv2D_3_height, SeparableConv2D_3_width, (int16_t*)MemBank_A,
+//	SeparableConv2D_3_depth, SeparableConv2D_3_height, SeparableConv2D_3_width, (int16_t*)MemBank_B,
+//	(int16_t*)SeparableConv2D_3_b_p,
+//	1, 1, (int16_t*)SeparableConv2D_3_w_p, 1, fractal_width_SeparableConv2D_3);
+//
+//	up_sampling2d_fix16(2,
+//	SeparableConv2D_3_depth, SeparableConv2D_3_height, SeparableConv2D_3_width, (int16_t*)MemBank_B,
+//	UpSampling2D_1_depth, UpSampling2D_1_height, UpSampling2D_1_width, (int16_t*)MemBank_A);
+//
+//	padding2d_fix16(1, 1,
+//	UpSampling2D_1_depth, UpSampling2D_1_height, UpSampling2D_1_width, (int16_t*)MemBank_A,
+//	Padding2D_4_height, Padding2D_4_width, (int16_t*)MemBank_B);
+//
+//	depthwise_conv2d_fix16(Padding2D_4_depth, Padding2D_4_height, Padding2D_4_width, (int16_t*)MemBank_B,
+//	Padding2D_4_depth, SeparableConv2D_4_height, SeparableConv2D_4_width, (int16_t*)MemBank_A,
+//	(int16_t*) SeparableConv2D_4_b_d,
+//	3, 3, (int16_t*) SeparableConv2D_4_w_d, 0, fractal_width_SeparableConv2D_4);
+//
+//	pointwise_conv2d_fix16(Padding2D_4_depth, SeparableConv2D_4_height, SeparableConv2D_4_width, (int16_t*)MemBank_A,
+//	SeparableConv2D_4_depth, SeparableConv2D_4_height, SeparableConv2D_4_width, (int16_t*)MemBank_B,
+//	(int16_t*)SeparableConv2D_4_b_p,
+//	1, 1, (int16_t*)SeparableConv2D_4_w_p, 1, fractal_width_SeparableConv2D_4);
 
-	padding2d_fix16(1, 1,
-	MaxPooling2D_0_depth, MaxPooling2D_0_height, MaxPooling2D_0_width, (int16_t*) MaxPooling2D_0_array,
-	Padding2D_1_height, Padding2D_1_width, (int16_t*) Padding2D_1_array);
-
-	separable_conv2d_fix16(Padding2D_1_depth, Padding2D_1_height, Padding2D_1_width, (int16_t*) Padding2D_1_array,
-	SeparableConv2D_1_depth, SeparableConv2D_1_height, SeparableConv2D_1_width, (int16_t*) SeparableConv2D_1_array, (int16_t*) SeparableConv2D_1_m_array,
-	(int16_t*) SeparableConv2D_1_b_d, (int16_t*) SeparableConv2D_1_b_p,
-	3, 3, (int16_t*) SeparableConv2D_1_w_d, (int16_t*) SeparableConv2D_1_w_p, 1, fractal_width_SeparableConv2D_1);
-
-	max_pooling2d_fix16(2,
-	SeparableConv2D_1_depth, SeparableConv2D_1_height, SeparableConv2D_1_width, (int16_t*) SeparableConv2D_1_array,
-	MaxPooling2D_1_depth, MaxPooling2D_1_height, MaxPooling2D_1_width, (int16_t*) MaxPooling2D_1_array);
-
-	padding2d_fix16(1, 1,
-	MaxPooling2D_1_depth, MaxPooling2D_1_height, MaxPooling2D_1_width, (int16_t*) MaxPooling2D_1_array,
-	Padding2D_2_height, Padding2D_2_width, (int16_t*) Padding2D_2_array);
-
-	separable_conv2d_fix16(Padding2D_2_depth, Padding2D_2_height, Padding2D_2_width, (int16_t*) Padding2D_2_array,
-	SeparableConv2D_2_depth, SeparableConv2D_2_height, SeparableConv2D_2_width, (int16_t*) SeparableConv2D_2_array, (int16_t*) SeparableConv2D_2_m_array,
-	(int16_t*) SeparableConv2D_2_b_d, (int16_t*) SeparableConv2D_2_b_p,
-	3, 3, (int16_t*) SeparableConv2D_2_w_d, (int16_t*) SeparableConv2D_2_w_p, 1, fractal_width_SeparableConv2D_2);
-
-	up_sampling2d_fix16(2,
-	SeparableConv2D_2_depth, SeparableConv2D_2_height, SeparableConv2D_2_width, (int16_t*) SeparableConv2D_2_array,
-	UpSampling2D_0_depth, UpSampling2D_0_height, UpSampling2D_0_width, (int16_t*) UpSampling2D_0_array);
-
-	padding2d_fix16(1, 1,
-	UpSampling2D_0_depth, UpSampling2D_0_height, UpSampling2D_0_width, (int16_t*) UpSampling2D_0_array,
-	Padding2D_3_height, Padding2D_3_width, (int16_t*) Padding2D_3_array);
-
-	separable_conv2d_fix16(Padding2D_3_depth, Padding2D_3_height, Padding2D_3_width, (int16_t*) Padding2D_3_array,
-	SeparableConv2D_3_depth, SeparableConv2D_3_height, SeparableConv2D_3_width, (int16_t*) SeparableConv2D_3_array, (int16_t*) SeparableConv2D_3_m_array,
-	(int16_t*) SeparableConv2D_3_b_d, (int16_t*) SeparableConv2D_3_b_p,
-	3, 3, (int16_t*) SeparableConv2D_3_w_d, (int16_t*) SeparableConv2D_3_w_p, 1, fractal_width_SeparableConv2D_3);
-
-	up_sampling2d_fix16(2,
-	SeparableConv2D_3_depth, SeparableConv2D_3_height, SeparableConv2D_3_width, (int16_t*) SeparableConv2D_3_array,
-	UpSampling2D_1_depth, UpSampling2D_1_height, UpSampling2D_1_width, (int16_t*) UpSampling2D_1_array);
-
-	padding2d_fix16(1, 1,
-	UpSampling2D_1_depth, UpSampling2D_1_height, UpSampling2D_1_width, (int16_t*) UpSampling2D_1_array,
-	Padding2D_4_height, Padding2D_4_width, (int16_t*) Padding2D_4_array);
-
-	separable_conv2d_fix16(Padding2D_4_depth, Padding2D_4_height, Padding2D_4_width, (int16_t*) Padding2D_4_array,
-	SeparableConv2D_4_depth, SeparableConv2D_4_height, SeparableConv2D_4_width, (int16_t*) SeparableConv2D_4_array, (int16_t*) SeparableConv2D_4_m_array,
-	(int16_t*) SeparableConv2D_4_b_d, (int16_t*) SeparableConv2D_4_b_p,
-	3, 3, (int16_t*) SeparableConv2D_4_w_d, (int16_t*) SeparableConv2D_4_w_p, 1, fractal_width_SeparableConv2D_4);
-
-//	int i = 0;
-//	for (int depth = 0; depth < input_0_depth; depth++) {
-//		for (int height = 0; height < input_0_height; height++) {
-//			for (int width = 0; width < input_0_width; width++) {
-//				out.user = 0;
-//				out.last = 0;
-//				out.dest = 0;
-//				out.id = 0;
-//				out.keep = 0;
-//				out.strb = 0;
-//				if(i == 0){
-//					out.user = 1;
-//				}
-//				if(i == input_0_depth * input_0_height * input_0_width - 1){
-//					out.last = 1;
-//				}
-//				out.data = input_0_array[depth][height][width];
-//				output_data.write(out);
-//				i += 1;
-//			}
-//		}
-//	}
-//	if(output_data.empty()){
-//		*debug_status = 1;
-//	}else{
-//		*debug_status = 0;
-//	}
+	for(int i = 0; i < array_length; i++){
+//#pragma HLS PIPELINE
+		MemBank_Out[i] = MemBank_B[i];
+	}
 
 	for(uint64_t i = 0; i < array_length; i++){
 #pragma HLS PIPELINE
-//		out.user = 0;
-//		out.last = 0;
-//		out.dest = 0;
-//		out.id = 0;
-//		out.keep = 0;
-//		out.strb = 0;
-		tmp.user = 0;
-		tmp.last = 0;
-		tmp.dest = 0;
-		tmp.id = 0;
-		tmp.keep = 0;
-		tmp.strb = 0;
+		out.user = 0;
+		out.last = 0;
+		out.dest = 0;
+		out.id = 0;
+		out.keep = 0;
+		out.strb = 0;
 		if(i == 0){
-			tmp.user = 1;
+			out.user = 1;
 		}
 		if(i == array_length - 1){
-			tmp.last = 1;
+			out.last = 1;
 		}
-		tmp.data = array_head[i];
-		output_data << tmp;
+		out.data = array_head[i];
+		output_data << out;
 	}
-	return;
+	return(0);
+}
+
+int main(void){
+	axis input_buffer;
+	axis output_buffer;
+#pragma HLS reset variable=output_buffer
+
+    int16_t output_img_buff[16 * 28 * 28];
+    ap_axis<16, 1, 1, 1> tmp;
+	ap_uint<32> debug_status = 0;
+
+	int i = 0;
+	for(int depth = 0; depth < 1; depth++){
+		for(int height = 0; height < 28; height++){
+			for(int width = 0; width < 28; width++){
+				tmp.data = (int16_t)test_input_fix16[depth][height][width];
+
+				if(depth == 0 && height == 0 && width == 0){
+					tmp.user = 1;
+				} else {
+					tmp.user = 0;
+				}
+
+				if(depth == 1 - 1 && height == 28 - 1 && width == 28 - 1){
+					tmp.last = 1;
+				} else {
+					tmp.last = 0;
+				}
+//				cout << "count " << i << ", last " << tmp.last << ", data " << tmp.data <<"\r\n";
+				input_buffer << tmp;
+				i += 1;
+			}
+		}
+	}
+
+	cout << "\r\n";
+	cout << "output_buffer_length : " << output_buffer.size() << endl;
+	cout << "\r\n";
+
+	network(input_buffer, output_buffer);
+
+	cout << "\r\n";
+	cout << "output_buffer_length : " << output_buffer.size() << endl;
+	cout << "\r\n";
+
+	i = 0;
+	do {
+		output_buffer >> tmp;
+		output_img_buff[i] = (int16_t)tmp.data;
+//		cout << "count " << i << ", last " << tmp.last << ", data " << output_img_buff[i];
+		cout<< setw(6) << right << output_img_buff[i] << " ";
+		if(i % 28 * 28 == 0){
+			cout << '\n' << endl;
+		}else if(i % 28 == 0){
+			cout << endl;
+		}
+		i += 1;
+	} while(tmp.last != 1);
+
+	cout << "\r\n";
+	cout << "\r\n";
+
+	return 0;
 }

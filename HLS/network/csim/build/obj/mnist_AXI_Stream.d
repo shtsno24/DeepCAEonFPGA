@@ -1,5 +1,19 @@
 obj/mnist_AXI_Stream.o: ../../../../mnist_AXI_Stream.cpp \
- /tools/Xilinx/Vivado/2018.3/include/gmp.h ../../../../mnist_AXI_Stream.h \
+ /tools/Xilinx/Vivado/2018.3/include/gmp.h \
+ ../../../../test_data/test_data.h ../../../.././layers_c/layers.h \
+ ../../../.././layers_c/padding2d.h \
+ ../../../.././layers_c/up_sampling2d.h \
+ ../../../.././layers_c/max_pooling2d.h ../../../.././layers_c/conv2d.h \
+ ../../../.././layers_c/depthwise_conv2d.h \
+ ../../../.././layers_c/pointwise_conv2d.h \
+ ../../../.././layers_c/separable_conv2d.h \
+ ../../../.././arrays_c/arrays_fix16.h \
+ ../../../.././weights_c/weights_fix16.h \
+ ../../../.././weights_c/SeparableConv2D_0_fix16.h \
+ ../../../.././weights_c/SeparableConv2D_1_fix16.h \
+ ../../../.././weights_c/SeparableConv2D_2_fix16.h \
+ ../../../.././weights_c/SeparableConv2D_3_fix16.h \
+ ../../../.././weights_c/SeparableConv2D_4_fix16.h \
  /tools/Xilinx/Vivado/2018.3/include/hls_stream.h \
  /tools/Xilinx/Vivado/2018.3/include/ap_int.h \
  /tools/Xilinx/Vivado/2018.3/include/ap_common.h \
@@ -20,18 +34,4 @@ obj/mnist_AXI_Stream.o: ../../../../mnist_AXI_Stream.cpp \
  /tools/Xilinx/Vivado/2018.3/include/ap_fixed_ref.h \
  /tools/Xilinx/Vivado/2018.3/include/ap_fixed_special.h \
  /tools/Xilinx/Vivado/2018.3/include/ap_axi_sdata.h \
- /tools/Xilinx/Vivado/2018.3/include/ap_int.h \
- ../../../.././layers_c/layers.h ../../../.././layers_c/padding2d.h \
- ../../../.././layers_c/padding2d_old.h \
- ../../../.././layers_c/up_sampling2d.h \
- ../../../.././layers_c/max_pooling2d.h ../../../.././layers_c/conv2d.h \
- ../../../.././layers_c/depthwise_conv2d.h \
- ../../../.././layers_c/pointwise_conv2d.h \
- ../../../.././layers_c/separable_conv2d.h \
- ../../../.././arrays_c/arrays_fix16.h \
- ../../../.././weights_c/weights_fix16.h \
- ../../../.././weights_c/SeparableConv2D_0_fix16.h \
- ../../../.././weights_c/SeparableConv2D_1_fix16.h \
- ../../../.././weights_c/SeparableConv2D_2_fix16.h \
- ../../../.././weights_c/SeparableConv2D_3_fix16.h \
- ../../../.././weights_c/SeparableConv2D_4_fix16.h
+ /tools/Xilinx/Vivado/2018.3/include/ap_int.h

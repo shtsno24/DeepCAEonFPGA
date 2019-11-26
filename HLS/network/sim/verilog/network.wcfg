@@ -75,7 +75,7 @@
             </wvobject>
          </wvobject>
          <wvobject type="group" fp_name="group13">
-            <obj_property name="label">return(axi_slave)</obj_property>
+            <obj_property name="label">return__return(axi_slave)</obj_property>
             <obj_property name="DisplayName">label</obj_property>
             <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/interrupt">
                <obj_property name="ElementShortName">interrupt</obj_property>
@@ -135,8 +135,8 @@
                <obj_property name="UseCustomSignalColor">true</obj_property>
             </wvobject>
             <wvobject type="array" fp_name="/apatb_network_top/AESL_inst_network/s_axi_AXILiteS_ARADDR">
-               <obj_property name="ElementShortName">s_axi_AXILiteS_ARADDR[3:0]</obj_property>
-               <obj_property name="ObjectShortName">s_axi_AXILiteS_ARADDR[3:0]</obj_property>
+               <obj_property name="ElementShortName">s_axi_AXILiteS_ARADDR[4:0]</obj_property>
+               <obj_property name="ObjectShortName">s_axi_AXILiteS_ARADDR[4:0]</obj_property>
                <obj_property name="Radix">HEXRADIX</obj_property>
             </wvobject>
             <wvobject type="array" fp_name="/apatb_network_top/AESL_inst_network/s_axi_AXILiteS_WSTRB">
@@ -174,8 +174,8 @@
                <obj_property name="UseCustomSignalColor">true</obj_property>
             </wvobject>
             <wvobject type="array" fp_name="/apatb_network_top/AESL_inst_network/s_axi_AXILiteS_AWADDR">
-               <obj_property name="ElementShortName">s_axi_AXILiteS_AWADDR[3:0]</obj_property>
-               <obj_property name="ObjectShortName">s_axi_AXILiteS_AWADDR[3:0]</obj_property>
+               <obj_property name="ElementShortName">s_axi_AXILiteS_AWADDR[4:0]</obj_property>
+               <obj_property name="ObjectShortName">s_axi_AXILiteS_AWADDR[4:0]</obj_property>
                <obj_property name="Radix">HEXRADIX</obj_property>
             </wvobject>
          </wvobject>
@@ -372,12 +372,17 @@
                <obj_property name="ObjectShortName">LENGTH_output_data_V_dest_V[31:0]</obj_property>
                <obj_property name="Radix">HEXRADIX</obj_property>
             </wvobject>
+            <wvobject type="array" fp_name="/apatb_network_top/LENGTH_ap_return">
+               <obj_property name="ElementShortName">LENGTH_ap_return[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_ap_return[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
          </wvobject>
       </wvobject>
-      <wvobject type="group" fp_name="group73">
+      <wvobject type="group" fp_name="group74">
          <obj_property name="label">C Outputs</obj_property>
          <obj_property name="DisplayName">label</obj_property>
-         <wvobject type="group" fp_name="group74">
+         <wvobject type="group" fp_name="group75">
             <obj_property name="label">output_data(axis)</obj_property>
             <obj_property name="DisplayName">label</obj_property>
             <wvobject type="array" fp_name="/apatb_network_top/output_data_TDEST">
@@ -430,8 +435,8 @@
                <obj_property name="Radix">HEXRADIX</obj_property>
             </wvobject>
          </wvobject>
-         <wvobject type="group" fp_name="group84">
-            <obj_property name="label">return(axi_slave)</obj_property>
+         <wvobject type="group" fp_name="group85">
+            <obj_property name="label">return__return(axi_slave)</obj_property>
             <obj_property name="DisplayName">label</obj_property>
             <wvobject type="logic" fp_name="/apatb_network_top/AXILiteS_INTERRUPT">
                <obj_property name="ElementShortName">AXILiteS_INTERRUPT</obj_property>
@@ -491,8 +496,8 @@
                <obj_property name="UseCustomSignalColor">true</obj_property>
             </wvobject>
             <wvobject type="array" fp_name="/apatb_network_top/AXILiteS_ARADDR">
-               <obj_property name="ElementShortName">AXILiteS_ARADDR[3:0]</obj_property>
-               <obj_property name="ObjectShortName">AXILiteS_ARADDR[3:0]</obj_property>
+               <obj_property name="ElementShortName">AXILiteS_ARADDR[4:0]</obj_property>
+               <obj_property name="ObjectShortName">AXILiteS_ARADDR[4:0]</obj_property>
                <obj_property name="Radix">HEXRADIX</obj_property>
             </wvobject>
             <wvobject type="array" fp_name="/apatb_network_top/AXILiteS_WSTRB">
@@ -530,16 +535,16 @@
                <obj_property name="UseCustomSignalColor">true</obj_property>
             </wvobject>
             <wvobject type="array" fp_name="/apatb_network_top/AXILiteS_AWADDR">
-               <obj_property name="ElementShortName">AXILiteS_AWADDR[3:0]</obj_property>
-               <obj_property name="ObjectShortName">AXILiteS_AWADDR[3:0]</obj_property>
+               <obj_property name="ElementShortName">AXILiteS_AWADDR[4:0]</obj_property>
+               <obj_property name="ObjectShortName">AXILiteS_AWADDR[4:0]</obj_property>
                <obj_property name="Radix">HEXRADIX</obj_property>
             </wvobject>
          </wvobject>
       </wvobject>
-      <wvobject type="group" fp_name="group103">
+      <wvobject type="group" fp_name="group104">
          <obj_property name="label">C Inputs</obj_property>
          <obj_property name="DisplayName">label</obj_property>
-         <wvobject type="group" fp_name="group104">
+         <wvobject type="group" fp_name="group105">
             <obj_property name="label">input_data(axis)</obj_property>
             <obj_property name="DisplayName">label</obj_property>
             <wvobject type="array" fp_name="/apatb_network_top/input_data_TDEST">

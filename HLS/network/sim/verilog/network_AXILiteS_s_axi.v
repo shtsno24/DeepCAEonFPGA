@@ -1,5 +1,5 @@
 // ==============================================================
-// File generated on Thu Nov 21 16:08:20 JST 2019
+// File generated on Tue Nov 26 20:17:05 JST 2019
 // Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3.1 (64-bit)
 // SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
 // IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
@@ -8,7 +8,7 @@
 `timescale 1ns/1ps
 module network_AXILiteS_s_axi
 #(parameter
-    C_S_AXI_ADDR_WIDTH = 4,
+    C_S_AXI_ADDR_WIDTH = 5,
     C_S_AXI_DATA_WIDTH = 32
 )(
     // axi4 lite slave signals
@@ -37,43 +37,47 @@ module network_AXILiteS_s_axi
     output wire                          ap_start,
     input  wire                          ap_done,
     input  wire                          ap_ready,
-    input  wire                          ap_idle
+    input  wire                          ap_idle,
+    input  wire [31:0]                   ap_return
 );
 //------------------------Address Info-------------------
-// 0x0 : Control signals
-//       bit 0  - ap_start (Read/Write/COH)
-//       bit 1  - ap_done (Read/COR)
-//       bit 2  - ap_idle (Read)
-//       bit 3  - ap_ready (Read)
-//       bit 7  - auto_restart (Read/Write)
-//       others - reserved
-// 0x4 : Global Interrupt Enable Register
-//       bit 0  - Global Interrupt Enable (Read/Write)
-//       others - reserved
-// 0x8 : IP Interrupt Enable Register (Read/Write)
-//       bit 0  - Channel 0 (ap_done)
-//       bit 1  - Channel 1 (ap_ready)
-//       others - reserved
-// 0xc : IP Interrupt Status Register (Read/TOW)
-//       bit 0  - Channel 0 (ap_done)
-//       bit 1  - Channel 1 (ap_ready)
-//       others - reserved
+// 0x00 : Control signals
+//        bit 0  - ap_start (Read/Write/COH)
+//        bit 1  - ap_done (Read/COR)
+//        bit 2  - ap_idle (Read)
+//        bit 3  - ap_ready (Read)
+//        bit 7  - auto_restart (Read/Write)
+//        others - reserved
+// 0x04 : Global Interrupt Enable Register
+//        bit 0  - Global Interrupt Enable (Read/Write)
+//        others - reserved
+// 0x08 : IP Interrupt Enable Register (Read/Write)
+//        bit 0  - Channel 0 (ap_done)
+//        bit 1  - Channel 1 (ap_ready)
+//        others - reserved
+// 0x0c : IP Interrupt Status Register (Read/TOW)
+//        bit 0  - Channel 0 (ap_done)
+//        bit 1  - Channel 1 (ap_ready)
+//        others - reserved
+// 0x10 : Data signal of ap_return
+//        bit 31~0 - ap_return[31:0] (Read)
 // (SC = Self Clear, COR = Clear on Read, TOW = Toggle on Write, COH = Clear on Handshake)
 
 //------------------------Parameter----------------------
 localparam
-    ADDR_AP_CTRL = 4'h0,
-    ADDR_GIE     = 4'h4,
-    ADDR_IER     = 4'h8,
-    ADDR_ISR     = 4'hc,
-    WRIDLE       = 2'd0,
-    WRDATA       = 2'd1,
-    WRRESP       = 2'd2,
-    WRRESET      = 2'd3,
-    RDIDLE       = 2'd0,
-    RDDATA       = 2'd1,
-    RDRESET      = 2'd2,
-    ADDR_BITS         = 4;
+    ADDR_AP_CTRL     = 5'h00,
+    ADDR_GIE         = 5'h04,
+    ADDR_IER         = 5'h08,
+    ADDR_ISR         = 5'h0c,
+    ADDR_AP_RETURN_0 = 5'h10,
+    WRIDLE           = 2'd0,
+    WRDATA           = 2'd1,
+    WRRESP           = 2'd2,
+    WRRESET          = 2'd3,
+    RDIDLE           = 2'd0,
+    RDDATA           = 2'd1,
+    RDRESET          = 2'd2,
+    ADDR_BITS         = 5;
 
 //------------------------Local signal-------------------
     reg  [1:0]                    wstate = WRRESET;
@@ -96,6 +100,7 @@ localparam
     reg                           int_gie = 1'b0;
     reg  [1:0]                    int_ier = 2'b0;
     reg  [1:0]                    int_isr = 2'b0;
+    reg  [31:0]                   int_ap_return;
 
 //------------------------Instantiation------------------
 
@@ -203,6 +208,9 @@ always @(posedge ACLK) begin
                 ADDR_ISR: begin
                     rdata <= int_isr;
                 end
+                ADDR_AP_RETURN_0: begin
+                    rdata <= int_ap_return[31:0];
+                end
             endcase
         end
     end
@@ -305,6 +313,16 @@ always @(posedge ACLK) begin
             int_isr[1] <= 1'b1;
         else if (w_hs && waddr == ADDR_ISR && WSTRB[0])
             int_isr[1] <= int_isr[1] ^ WDATA[1]; // toggle on write
+    end
+end
+
+// int_ap_return
+always @(posedge ACLK) begin
+    if (ARESET)
+        int_ap_return <= 0;
+    else if (ACLK_EN) begin
+        if (ap_done)
+            int_ap_return <= ap_return;
     end
 end
 

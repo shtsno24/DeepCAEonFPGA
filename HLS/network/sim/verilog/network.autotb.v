@@ -1,5 +1,5 @@
 // ==============================================================
-// File generated on Thu Nov 21 16:09:30 JST 2019
+// File generated on Tue Nov 26 20:17:55 JST 2019
 // Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3.1 (64-bit)
 // SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
 // IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
@@ -66,6 +66,7 @@
 `define AUTOTB_TVOUT_output_data_V_last_V  "../tv/cdatafile/c.network.autotvout_output_data_V_last_V.dat"
 `define AUTOTB_TVOUT_output_data_V_id_V  "../tv/cdatafile/c.network.autotvout_output_data_V_id_V.dat"
 `define AUTOTB_TVOUT_output_data_V_dest_V  "../tv/cdatafile/c.network.autotvout_output_data_V_dest_V.dat"
+`define AUTOTB_TVOUT_ap_return  "../tv/cdatafile/c.network.autotvout_ap_return.dat"
 `define AUTOTB_TVOUT_output_data_V_data_V_out_wrapc  "../tv/rtldatafile/rtl.network.autotvout_output_data_V_data_V.dat"
 `define AUTOTB_TVOUT_output_data_V_keep_V_out_wrapc  "../tv/rtldatafile/rtl.network.autotvout_output_data_V_keep_V.dat"
 `define AUTOTB_TVOUT_output_data_V_strb_V_out_wrapc  "../tv/rtldatafile/rtl.network.autotvout_output_data_V_strb_V.dat"
@@ -73,6 +74,7 @@
 `define AUTOTB_TVOUT_output_data_V_last_V_out_wrapc  "../tv/rtldatafile/rtl.network.autotvout_output_data_V_last_V.dat"
 `define AUTOTB_TVOUT_output_data_V_id_V_out_wrapc  "../tv/rtldatafile/rtl.network.autotvout_output_data_V_id_V.dat"
 `define AUTOTB_TVOUT_output_data_V_dest_V_out_wrapc  "../tv/rtldatafile/rtl.network.autotvout_output_data_V_dest_V.dat"
+`define AUTOTB_TVOUT_ap_return_out_wrapc  "../tv/rtldatafile/rtl.network.autotvout_ap_return.dat"
 module `AUTOTB_TOP;
 
 parameter AUTOTB_TRANSACTION_NUM = 1;
@@ -85,13 +87,14 @@ parameter LENGTH_input_data_V_user_V = 784;
 parameter LENGTH_input_data_V_last_V = 784;
 parameter LENGTH_input_data_V_id_V = 784;
 parameter LENGTH_input_data_V_dest_V = 784;
-parameter LENGTH_output_data_V_data_V = 784;
-parameter LENGTH_output_data_V_keep_V = 784;
-parameter LENGTH_output_data_V_strb_V = 784;
-parameter LENGTH_output_data_V_user_V = 784;
-parameter LENGTH_output_data_V_last_V = 784;
-parameter LENGTH_output_data_V_id_V = 784;
-parameter LENGTH_output_data_V_dest_V = 784;
+parameter LENGTH_output_data_V_data_V = 12544;
+parameter LENGTH_output_data_V_keep_V = 12544;
+parameter LENGTH_output_data_V_strb_V = 12544;
+parameter LENGTH_output_data_V_user_V = 12544;
+parameter LENGTH_output_data_V_last_V = 12544;
+parameter LENGTH_output_data_V_id_V = 12544;
+parameter LENGTH_output_data_V_dest_V = 12544;
+parameter LENGTH_ap_return = 1;
 
 task read_token;
     input integer fp;
@@ -121,14 +124,14 @@ reg AESL_done_delay2 = 0;
 reg AESL_ready_delay = 0;
 wire ready;
 wire ready_wire;
-wire [3 : 0] AXILiteS_AWADDR;
+wire [4 : 0] AXILiteS_AWADDR;
 wire  AXILiteS_AWVALID;
 wire  AXILiteS_AWREADY;
 wire  AXILiteS_WVALID;
 wire  AXILiteS_WREADY;
 wire [31 : 0] AXILiteS_WDATA;
 wire [3 : 0] AXILiteS_WSTRB;
-wire [3 : 0] AXILiteS_ARADDR;
+wire [4 : 0] AXILiteS_ARADDR;
 wire  AXILiteS_ARVALID;
 wire  AXILiteS_ARREADY;
 wire  AXILiteS_RVALID;
@@ -166,6 +169,7 @@ reg ready_last_n;
 reg ready_delay_last_n;
 reg done_delay_last_n;
 reg interface_done = 0;
+wire AXILiteS_read_data_finish;
 wire AESL_slave_start;
 reg AESL_slave_start_lock = 0;
 wire AESL_slave_write_start_in;
@@ -233,7 +237,7 @@ assign AESL_ce = ce;
 assign AESL_continue = tb_continue;
   assign AESL_slave_write_start_in = slave_start_status ;
   assign AESL_slave_start = AESL_slave_write_start_finish;
-  assign AESL_done = slave_done_status ;
+  assign AESL_done = slave_done_status  & AXILiteS_read_data_finish;
 
 always @(posedge AESL_clock)
 begin
@@ -397,6 +401,7 @@ AESL_axi_slave_AXILiteS AESL_AXI_SLAVE_AXILiteS(
     .TRAN_s_axi_AXILiteS_BREADY (AXILiteS_BREADY),
     .TRAN_s_axi_AXILiteS_BRESP (AXILiteS_BRESP),
     .TRAN_AXILiteS_interrupt (AXILiteS_INTERRUPT),
+    .TRAN_AXILiteS_read_data_finish(AXILiteS_read_data_finish),
     .TRAN_AXILiteS_ready_out (AESL_ready),
     .TRAN_AXILiteS_ready_in (AESL_slave_ready),
     .TRAN_AXILiteS_done_out (AESL_slave_output_done),
@@ -406,6 +411,36 @@ AESL_axi_slave_AXILiteS AESL_AXI_SLAVE_AXILiteS(
     .TRAN_AXILiteS_transaction_done_in (AESL_done_delay),
     .TRAN_AXILiteS_start_in  (AESL_slave_start)
 );
+
+
+reg dump_tvout_finish_ap_return;
+
+initial begin : dump_tvout_runtime_sign_ap_return
+    integer fp;
+    dump_tvout_finish_ap_return = 0;
+    fp = $fopen(`AUTOTB_TVOUT_ap_return_out_wrapc, "w");
+    if (fp == 0) begin
+        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_ap_return_out_wrapc);
+        $display("ERROR: Simulation using HLS TB failed.");
+        $finish;
+    end
+    $fdisplay(fp,"[[[runtime]]]");
+    $fclose(fp);
+    wait (done_cnt == AUTOTB_TRANSACTION_NUM);
+    // last transaction is saved at negedge right after last done
+    @ (posedge AESL_clock);
+    @ (posedge AESL_clock);
+    @ (posedge AESL_clock);
+    fp = $fopen(`AUTOTB_TVOUT_ap_return_out_wrapc, "a");
+    if (fp == 0) begin
+        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_ap_return_out_wrapc);
+        $display("ERROR: Simulation using HLS TB failed.");
+        $finish;
+    end
+    $fdisplay(fp,"[[[/runtime]]]");
+    $fclose(fp);
+    dump_tvout_finish_ap_return = 1;
+end
 
 initial begin : generate_AESL_ready_cnt_proc
     AESL_ready_cnt = 0;
@@ -511,6 +546,9 @@ reg [31:0] size_output_data_V_id_V_backup;
 reg end_output_data_V_dest_V;
 reg [31:0] size_output_data_V_dest_V;
 reg [31:0] size_output_data_V_dest_V_backup;
+reg end_ap_return;
+reg [31:0] size_ap_return;
+reg [31:0] size_ap_return_backup;
 
 initial begin : initial_process
     integer proc_rand;

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'network'" level="0">
-<item name = "Date">Thu Nov 21 16:08:08 2019
+<item name = "Date">Tue Nov 26 20:17:03 2019
 </item>
 <item name = "Version">2018.3.1 (Build 2489210 on Tue Mar 26 04:40:43 MDT 2019)</item>
 <item name = "Project">HLS</item>
@@ -35,8 +35,9 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- Loop 1">784, 784, 1, -, -, 784, no</column>
-<column name="- Loop 2">0, 281462092005376, 3, 1, 1, 0 ~ 281462092005375, yes</column>
+<column name="- Loop 1">?, ?, 3, -, -, ?, no</column>
+<column name="- Loop 2">25088, 25088, 2, -, -, 12544, no</column>
+<column name="- Loop 3">12545, 12545, 3, 1, 1, 12544, yes</column>
 </table>
 </item>
 </section>

@@ -29,35 +29,30 @@
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <Loop1>
-<TripCount>784</TripCount>
-<Latency>784</Latency>
-<IterationLatency>1</IterationLatency>
+<TripCount>undef</TripCount>
+<Latency>undef</Latency>
+<IterationLatency>3</IterationLatency>
 </Loop1>
 <Loop2>
-<TripCount>
-<range>
-<min>0</min>
-<max>281462092005375</max>
-</range>
-</TripCount>
-<Latency>
-<range>
-<min>0</min>
-<max>281462092005376</max>
-</range>
-</Latency>
+<TripCount>12544</TripCount>
+<Latency>25088</Latency>
+<IterationLatency>2</IterationLatency>
+</Loop2>
+<Loop3>
+<TripCount>12544</TripCount>
+<Latency>12545</Latency>
 <PipelineII>1</PipelineII>
 <PipelineDepth>3</PipelineDepth>
-</Loop2>
+</Loop3>
 </SummaryOfLoopLatency>
 </PerformanceEstimates>
 
 <AreaEstimates>
 <Resources>
-<BRAM_18K>100</BRAM_18K>
-<DSP48E>77</DSP48E>
-<FF>10655</FF>
-<LUT>15152</LUT>
+<BRAM_18K>48</BRAM_18K>
+<DSP48E>15</DSP48E>
+<FF>2087</FF>
+<LUT>3198</LUT>
 </Resources>
 <AvailableResources>
 <BRAM_18K>280</BRAM_18K>
@@ -71,7 +66,7 @@
 <RtlPorts>
 <name>s_axi_AXILiteS_AWVALID</name>
 <Object>AXILiteS</Object>
-<Type>return void</Type>
+<Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>s_axi</IOProtocol>
 <IOConfig>register</IOConfig>
@@ -84,7 +79,7 @@
 <RtlPorts>
 <name>s_axi_AXILiteS_AWREADY</name>
 <Object>AXILiteS</Object>
-<Type>return void</Type>
+<Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>s_axi</IOProtocol>
 <IOConfig>register</IOConfig>
@@ -97,12 +92,12 @@
 <RtlPorts>
 <name>s_axi_AXILiteS_AWADDR</name>
 <Object>AXILiteS</Object>
-<Type>return void</Type>
+<Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>s_axi</IOProtocol>
 <IOConfig>register</IOConfig>
 <Dir>in</Dir>
-<Bits>4</Bits>
+<Bits>5</Bits>
 <Attribute>unknown</Attribute>
 <CType>unknown</CType>
 <HasCtrl>1</HasCtrl>
@@ -110,7 +105,7 @@
 <RtlPorts>
 <name>s_axi_AXILiteS_WVALID</name>
 <Object>AXILiteS</Object>
-<Type>return void</Type>
+<Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>s_axi</IOProtocol>
 <IOConfig>register</IOConfig>
@@ -123,7 +118,7 @@
 <RtlPorts>
 <name>s_axi_AXILiteS_WREADY</name>
 <Object>AXILiteS</Object>
-<Type>return void</Type>
+<Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>s_axi</IOProtocol>
 <IOConfig>register</IOConfig>
@@ -136,7 +131,7 @@
 <RtlPorts>
 <name>s_axi_AXILiteS_WDATA</name>
 <Object>AXILiteS</Object>
-<Type>return void</Type>
+<Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>s_axi</IOProtocol>
 <IOConfig>register</IOConfig>
@@ -149,7 +144,7 @@
 <RtlPorts>
 <name>s_axi_AXILiteS_WSTRB</name>
 <Object>AXILiteS</Object>
-<Type>return void</Type>
+<Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>s_axi</IOProtocol>
 <IOConfig>register</IOConfig>
@@ -162,7 +157,7 @@
 <RtlPorts>
 <name>s_axi_AXILiteS_ARVALID</name>
 <Object>AXILiteS</Object>
-<Type>return void</Type>
+<Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>s_axi</IOProtocol>
 <IOConfig>register</IOConfig>
@@ -175,7 +170,7 @@
 <RtlPorts>
 <name>s_axi_AXILiteS_ARREADY</name>
 <Object>AXILiteS</Object>
-<Type>return void</Type>
+<Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>s_axi</IOProtocol>
 <IOConfig>register</IOConfig>
@@ -188,12 +183,12 @@
 <RtlPorts>
 <name>s_axi_AXILiteS_ARADDR</name>
 <Object>AXILiteS</Object>
-<Type>return void</Type>
+<Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>s_axi</IOProtocol>
 <IOConfig>register</IOConfig>
 <Dir>in</Dir>
-<Bits>4</Bits>
+<Bits>5</Bits>
 <Attribute>unknown</Attribute>
 <CType>unknown</CType>
 <HasCtrl>1</HasCtrl>
@@ -201,7 +196,7 @@
 <RtlPorts>
 <name>s_axi_AXILiteS_RVALID</name>
 <Object>AXILiteS</Object>
-<Type>return void</Type>
+<Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>s_axi</IOProtocol>
 <IOConfig>register</IOConfig>
@@ -214,7 +209,7 @@
 <RtlPorts>
 <name>s_axi_AXILiteS_RREADY</name>
 <Object>AXILiteS</Object>
-<Type>return void</Type>
+<Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>s_axi</IOProtocol>
 <IOConfig>register</IOConfig>
@@ -227,7 +222,7 @@
 <RtlPorts>
 <name>s_axi_AXILiteS_RDATA</name>
 <Object>AXILiteS</Object>
-<Type>return void</Type>
+<Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>s_axi</IOProtocol>
 <IOConfig>register</IOConfig>
@@ -240,7 +235,7 @@
 <RtlPorts>
 <name>s_axi_AXILiteS_RRESP</name>
 <Object>AXILiteS</Object>
-<Type>return void</Type>
+<Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>s_axi</IOProtocol>
 <IOConfig>register</IOConfig>
@@ -253,7 +248,7 @@
 <RtlPorts>
 <name>s_axi_AXILiteS_BVALID</name>
 <Object>AXILiteS</Object>
-<Type>return void</Type>
+<Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>s_axi</IOProtocol>
 <IOConfig>register</IOConfig>
@@ -266,7 +261,7 @@
 <RtlPorts>
 <name>s_axi_AXILiteS_BREADY</name>
 <Object>AXILiteS</Object>
-<Type>return void</Type>
+<Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>s_axi</IOProtocol>
 <IOConfig>register</IOConfig>
@@ -279,7 +274,7 @@
 <RtlPorts>
 <name>s_axi_AXILiteS_BRESP</name>
 <Object>AXILiteS</Object>
-<Type>return void</Type>
+<Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>s_axi</IOProtocol>
 <IOConfig>register</IOConfig>

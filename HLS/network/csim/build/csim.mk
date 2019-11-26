@@ -1,5 +1,5 @@
 # ==============================================================
-# File generated on Thu Nov 21 16:03:12 JST 2019
+# File generated on Tue Nov 26 19:37:21 JST 2019
 # Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3.1 (64-bit)
 # SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
 # IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
@@ -21,7 +21,7 @@ __SIM_DDS__ = 1
 
 ObjDir = obj
 
-HLS_SOURCES = ../../../../layers_cpp/array_printf_fix16.cpp ../../../../layers_cpp/array_printf_float32.cpp ../../../../mnist_AXI_Stream_tb.cpp ../../../../layers_c/conv2d.cpp ../../../../layers_c/depthwise_conv2d.cpp ../../../../layers_c/max_pooling2d.cpp ../../../../mnist_AXI_Stream.cpp ../../../../layers_c/padding2d.cpp ../../../../layers_c/pointwise_conv2d.cpp ../../../../layers_c/separable_conv2d.cpp ../../../../layers_c/up_sampling2d.cpp
+HLS_SOURCES = ../../../../layers_cpp/array_printf_fix16.cpp ../../../../layers_cpp/array_printf_float32.cpp ../../../../mnist_AXI_Stream.cpp ../../../../layers_c/conv2d.cpp ../../../../layers_c/depthwise_conv2d.cpp ../../../../layers_c/max_pooling2d.cpp ../../../../layers_c/padding2d.cpp ../../../../layers_c/pointwise_conv2d.cpp ../../../../layers_c/separable_conv2d.cpp ../../../../layers_c/up_sampling2d.cpp
 
 TARGET := csim.exe
 
@@ -86,11 +86,11 @@ $(ObjDir)/array_printf_float32.o: ../../../../layers_cpp/array_printf_float32.cp
 
 -include $(ObjDir)/array_printf_float32.d
 
-$(ObjDir)/mnist_AXI_Stream_tb.o: ../../../../mnist_AXI_Stream_tb.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling ../../../../mnist_AXI_Stream_tb.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
+$(ObjDir)/mnist_AXI_Stream.o: ../../../../mnist_AXI_Stream.cpp $(ObjDir)/.dir
+	$(Echo) "   Compiling ../../../../mnist_AXI_Stream.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
 	$(Verb)  $(CC) ${CCFLAG} -c -MMD -std=c++14 -Wno-unknown-pragmas  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
--include $(ObjDir)/mnist_AXI_Stream_tb.d
+-include $(ObjDir)/mnist_AXI_Stream.d
 
 $(ObjDir)/conv2d.o: ../../../../layers_c/conv2d.cpp $(ObjDir)/.dir
 	$(Echo) "   Compiling ../../../../layers_c/conv2d.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
@@ -109,12 +109,6 @@ $(ObjDir)/max_pooling2d.o: ../../../../layers_c/max_pooling2d.cpp $(ObjDir)/.dir
 	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
 -include $(ObjDir)/max_pooling2d.d
-
-$(ObjDir)/mnist_AXI_Stream.o: ../../../../mnist_AXI_Stream.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling ../../../../mnist_AXI_Stream.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
-
--include $(ObjDir)/mnist_AXI_Stream.d
 
 $(ObjDir)/padding2d.o: ../../../../layers_c/padding2d.cpp $(ObjDir)/.dir
 	$(Echo) "   Compiling ../../../../layers_c/padding2d.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)

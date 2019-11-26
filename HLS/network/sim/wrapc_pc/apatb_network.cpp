@@ -1,5 +1,5 @@
 // ==============================================================
-// File generated on Thu Nov 21 16:09:22 JST 2019
+// File generated on Tue Nov 26 20:17:49 JST 2019
 // Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3.1 (64-bit)
 // SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
 // IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
@@ -40,127 +40,23 @@ using namespace sc_dt;
         ap_uint<1> dest;
        } ;
 
-extern unsigned short UpSampling2D_1_width;
+extern unsigned short input_0_width;
 
-extern unsigned short UpSampling2D_1_height;
+extern unsigned short input_0_height;
 
-extern unsigned short UpSampling2D_1_depth;
-
-extern short UpSampling2D_1_array[16][28][28];
-
-extern unsigned short UpSampling2D_0_width;
-
-extern unsigned short UpSampling2D_0_height;
-
-extern unsigned short UpSampling2D_0_depth;
-
-extern short UpSampling2D_0_array[8][14][14];
-
-extern unsigned short SeparableConv2D_4_width;
-
-extern short SeparableConv2D_4_m_array[16][28][28];
-
-extern unsigned short SeparableConv2D_4_height;
-
-extern unsigned short SeparableConv2D_4_depth;
-
-extern short SeparableConv2D_4_array[1][28][28];
-
-extern unsigned short SeparableConv2D_3_width;
-
-extern short SeparableConv2D_3_m_array[8][14][14];
-
-extern unsigned short SeparableConv2D_3_height;
-
-extern unsigned short SeparableConv2D_3_depth;
-
-extern short SeparableConv2D_3_array[16][14][14];
-
-extern unsigned short SeparableConv2D_2_width;
-
-extern short SeparableConv2D_2_m_array[8][7][7];
-
-extern unsigned short SeparableConv2D_2_height;
-
-extern unsigned short SeparableConv2D_2_depth;
-
-extern short SeparableConv2D_2_array[8][7][7];
-
-extern unsigned short SeparableConv2D_1_width;
-
-extern short SeparableConv2D_1_m_array[16][14][14];
-
-extern unsigned short SeparableConv2D_1_height;
-
-extern unsigned short SeparableConv2D_1_depth;
-
-extern short SeparableConv2D_1_array[8][14][14];
+extern unsigned short input_0_depth;
 
 extern unsigned short SeparableConv2D_0_width;
-
-extern short SeparableConv2D_0_m_array[1][28][28];
 
 extern unsigned short SeparableConv2D_0_height;
 
 extern unsigned short SeparableConv2D_0_depth;
-
-extern short SeparableConv2D_0_array[16][28][28];
-
-extern unsigned short Padding2D_4_width;
-
-extern unsigned short Padding2D_4_height;
-
-extern unsigned short Padding2D_4_depth;
-
-extern short Padding2D_4_array[16][30][30];
-
-extern unsigned short Padding2D_3_width;
-
-extern unsigned short Padding2D_3_height;
-
-extern unsigned short Padding2D_3_depth;
-
-extern short Padding2D_3_array[8][16][16];
-
-extern unsigned short Padding2D_2_width;
-
-extern unsigned short Padding2D_2_height;
-
-extern unsigned short Padding2D_2_depth;
-
-extern short Padding2D_2_array[8][9][9];
-
-extern unsigned short Padding2D_1_width;
-
-extern unsigned short Padding2D_1_height;
-
-extern unsigned short Padding2D_1_depth;
-
-extern short Padding2D_1_array[16][16][16];
 
 extern unsigned short Padding2D_0_width;
 
 extern unsigned short Padding2D_0_height;
 
 extern unsigned short Padding2D_0_depth;
-
-extern short Padding2D_0_array[1][30][30];
-
-extern unsigned short MaxPooling2D_1_width;
-
-extern unsigned short MaxPooling2D_1_height;
-
-extern unsigned short MaxPooling2D_1_depth;
-
-extern short MaxPooling2D_1_array[8][7][7];
-
-extern unsigned short MaxPooling2D_0_width;
-
-extern unsigned short MaxPooling2D_0_height;
-
-extern unsigned short MaxPooling2D_0_depth;
-
-extern short MaxPooling2D_0_array[16][14][14];
 
 
 
@@ -230,6 +126,8 @@ extern short MaxPooling2D_0_array[16][14][14];
 #define AUTOTB_TVIN_output_data_V_dest_V  "../tv/cdatafile/c.network.autotvin_output_data_V_dest_V.dat"
 #define WRAPC_STREAM_SIZE_OUT_output_data_V_dest_V  "../tv/stream_size/stream_size_out_output_data_V_dest_V.dat"
 #define WRAPC_STREAM_EGRESS_STATUS_output_data_V_dest_V  "../tv/stream_size/stream_egress_status_output_data_V_dest_V.dat"
+// wrapc file define: "ap_return"
+#define AUTOTB_TVOUT_ap_return  "../tv/cdatafile/c.network.autotvout_ap_return.dat"
 
 #define INTER_TCL  "../tv/cdatafile/ref.tcl"
 
@@ -247,6 +145,8 @@ extern short MaxPooling2D_0_array[16][14][14];
 #define AUTOTB_TVOUT_PC_output_data_V_id_V  "../tv/rtldatafile/rtl.network.autotvout_output_data_V_id_V.dat"
 // tvout file define: "output_data_V_dest_V"
 #define AUTOTB_TVOUT_PC_output_data_V_dest_V  "../tv/rtldatafile/rtl.network.autotvout_output_data_V_dest_V.dat"
+// tvout file define: "ap_return"
+#define AUTOTB_TVOUT_PC_ap_return  "../tv/rtldatafile/rtl.network.autotvout_ap_return.dat"
 
 class INTER_TCL_FILE {
 	public:
@@ -266,6 +166,7 @@ class INTER_TCL_FILE {
 			output_data_V_last_V_depth = 0;
 			output_data_V_id_V_depth = 0;
 			output_data_V_dest_V_depth = 0;
+			ap_return_depth = 0;
 			trans_num =0;
 		}
 
@@ -299,6 +200,7 @@ class INTER_TCL_FILE {
 			total_list << "{output_data_V_last_V " << output_data_V_last_V_depth << "}\n";
 			total_list << "{output_data_V_id_V " << output_data_V_id_V_depth << "}\n";
 			total_list << "{output_data_V_dest_V " << output_data_V_dest_V_depth << "}\n";
+			total_list << "{ap_return " << ap_return_depth << "}\n";
 			return total_list.str();
 		}
 
@@ -320,6 +222,7 @@ class INTER_TCL_FILE {
 		int output_data_V_last_V_depth;
 		int output_data_V_id_V_depth;
 		int output_data_V_dest_V_depth;
+		int ap_return_depth;
 		int trans_num;
 
 	private:
@@ -327,15 +230,13 @@ class INTER_TCL_FILE {
 		const char* mName;
 };
 
-extern void network (
+extern int network (
 hls::stream<ap_axis<16, 1, 1, 1 > > (&input_data),
-hls::stream<ap_axis<16, 1, 1, 1 > > (&output_data),
-ap_uint<32>* debug_status);
+hls::stream<ap_axis<16, 1, 1, 1 > > (&output_data));
 
-void AESL_WRAP_network (
+int AESL_WRAP_network (
 hls::stream<ap_axis<16, 1, 1, 1 > > (&input_data),
-hls::stream<ap_axis<16, 1, 1, 1 > > (&output_data),
-ap_uint<32>* debug_status)
+hls::stream<ap_axis<16, 1, 1, 1 > > (&output_data))
 {
 	refine_signal_handler();
 	fstream wrapc_switch_file_token;
@@ -349,6 +250,7 @@ ap_uint<32>* debug_status)
 		string AESL_num;
 		static AESL_FILE_HANDLER aesl_fh;
 
+		int AESL_return;
 		// pop stream input: "input_data"
 		aesl_fh.read(WRAPC_STREAM_SIZE_IN_input_data_V_data_V, AESL_token); // [[transaction]]
 		aesl_fh.read(WRAPC_STREAM_SIZE_IN_input_data_V_data_V, AESL_num); // transaction number
@@ -1479,6 +1381,132 @@ ap_uint<32>* debug_status)
 			}
 		}
 
+		// output port post check: "ap_return"
+		aesl_fh.read(AUTOTB_TVOUT_PC_ap_return, AESL_token); // [[transaction]]
+		if (AESL_token != "[[transaction]]")
+		{
+			exit(1);
+		}
+		aesl_fh.read(AUTOTB_TVOUT_PC_ap_return, AESL_num); // transaction number
+
+		if (atoi(AESL_num.c_str()) == AESL_transaction_pc)
+		{
+			aesl_fh.read(AUTOTB_TVOUT_PC_ap_return, AESL_token); // data
+
+			sc_bv<32> ap_return_pc_buffer;
+			int i = 0;
+
+			while (AESL_token != "[[/transaction]]")
+			{
+				bool no_x = false;
+				bool err = false;
+
+				// search and replace 'X' with "0" from the 1st char of token
+				while (!no_x)
+				{
+					size_t x_found = AESL_token.find('X');
+					if (x_found != string::npos)
+					{
+						if (!err)
+						{
+							cerr << "WARNING: [SIM 212-201] RTL produces unknown value 'X' on port 'ap_return', possible cause: There are uninitialized variables in the C design." << endl;
+							err = true;
+						}
+						AESL_token.replace(x_found, 1, "0");
+					}
+					else
+					{
+						no_x = true;
+					}
+				}
+
+				no_x = false;
+
+				// search and replace 'x' with "0" from the 3rd char of token
+				while (!no_x)
+				{
+					size_t x_found = AESL_token.find('x', 2);
+
+					if (x_found != string::npos)
+					{
+						if (!err)
+						{
+							cerr << "WARNING: [SIM 212-201] RTL produces unknown value 'X' on port 'ap_return', possible cause: There are uninitialized variables in the C design." << endl;
+							err = true;
+						}
+						AESL_token.replace(x_found, 1, "0");
+					}
+					else
+					{
+						no_x = true;
+					}
+				}
+
+				// push token into output port buffer
+				if (AESL_token != "")
+				{
+					ap_return_pc_buffer = AESL_token.c_str();
+					i++;
+				}
+
+				aesl_fh.read(AUTOTB_TVOUT_PC_ap_return, AESL_token); // data or [[/transaction]]
+
+				if (AESL_token == "[[[/runtime]]]" || aesl_fh.eof(AUTOTB_TVOUT_PC_ap_return))
+				{
+					exit(1);
+				}
+			}
+
+			// ***********************************
+			if (i > 0)
+			{
+				// RTL Name: ap_return
+				{
+					// bitslice(31, 0)
+					// {
+						// celement: return(31, 0)
+						// {
+							sc_lv<32> return_lv0_0_1_0;
+						// }
+					// }
+
+					// bitslice(31, 0)
+					{
+						// celement: return(31, 0)
+						{
+							// carray: (0) => (1) @ (0)
+							{
+								if (&(AESL_return) != NULL) // check the null address if the c port is array or others
+								{
+									return_lv0_0_1_0.range(31, 0) = sc_bv<32>(ap_return_pc_buffer.range(31, 0));
+								}
+							}
+						}
+					}
+
+					// bitslice(31, 0)
+					{
+						// celement: return(31, 0)
+						{
+							// carray: (0) => (1) @ (0)
+							{
+								// sub                    : 
+								// ori_name               : AESL_return
+								// sub_1st_elem           : 
+								// ori_name_1st_elem      : AESL_return
+								// output_left_conversion : AESL_return
+								// output_type_conversion : (return_lv0_0_1_0).to_uint64()
+								if (&(AESL_return) != NULL) // check the null address if the c port is array or others
+								{
+									AESL_return = (return_lv0_0_1_0).to_uint64();
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
 		// push back output stream: "output_data"
 		for (int i = 0; i < aesl_tmp_4; i++)
 		{
@@ -1486,6 +1514,8 @@ ap_uint<32>* debug_status)
 		}
 
 		AESL_transaction_pc++;
+
+		return AESL_return;
 	}
 	else
 	{
@@ -1620,6 +1650,10 @@ ap_uint<32>* debug_status)
 		char* wrapc_stream_egress_status_output_data_V_dest_V = new char[50];
 		aesl_fh.touch(WRAPC_STREAM_EGRESS_STATUS_output_data_V_dest_V);
 
+		// "ap_return"
+		char* tvout_ap_return = new char[50];
+		aesl_fh.touch(AUTOTB_TVOUT_ap_return);
+
 		CodeState = DUMP_INPUTS;
 		static INTER_TCL_FILE tcl_file(INTER_TCL);
 		int leading_zero;
@@ -1657,7 +1691,7 @@ ap_uint<32>* debug_status)
 // [call_c_dut] ---------->
 
 		CodeState = CALL_C_DUT;
-		network(input_data, output_data, debug_status);
+		int AESL_return = network(input_data, output_data);
 
 		CodeState = DUMP_OUTPUTS;
 		// record input size to tv3: "input_data"
@@ -2667,6 +2701,48 @@ ap_uint<32>* debug_status)
 		sprintf(wrapc_stream_size_out_output_data_V_dest_V, "[[/transaction]] \n");
 		aesl_fh.write(WRAPC_STREAM_SIZE_OUT_output_data_V_dest_V, wrapc_stream_size_out_output_data_V_dest_V);
 
+		// [[transaction]]
+		sprintf(tvout_ap_return, "[[transaction]] %d\n", AESL_transaction);
+		aesl_fh.write(AUTOTB_TVOUT_ap_return, tvout_ap_return);
+
+		sc_bv<32> ap_return_tvout_wrapc_buffer;
+
+		// RTL Name: ap_return
+		{
+			// bitslice(31, 0)
+			{
+				// celement: return(31, 0)
+				{
+					// carray: (0) => (1) @ (0)
+					{
+						// sub                   : 
+						// ori_name              : AESL_return
+						// sub_1st_elem          : 
+						// ori_name_1st_elem     : AESL_return
+						// regulate_c_name       : return
+						// input_type_conversion : AESL_return
+						if (&(AESL_return) != NULL) // check the null address if the c port is array or others
+						{
+							sc_lv<32> return_tmp_mem;
+							return_tmp_mem = AESL_return;
+							ap_return_tvout_wrapc_buffer.range(31, 0) = return_tmp_mem.range(31, 0);
+						}
+					}
+				}
+			}
+		}
+
+		// dump tv to file
+		for (int i = 0; i < 1; i++)
+		{
+			sprintf(tvout_ap_return, "%s\n", (ap_return_tvout_wrapc_buffer).to_string(SC_HEX).c_str());
+			aesl_fh.write(AUTOTB_TVOUT_ap_return, tvout_ap_return);
+		}
+
+		tcl_file.set_num(1, &tcl_file.ap_return_depth);
+		sprintf(tvout_ap_return, "[[/transaction]] \n");
+		aesl_fh.write(AUTOTB_TVOUT_ap_return, tvout_ap_return);
+
 		// push back output stream: "output_data"
 		for (int i = 0; i < aesl_tmp_4; i++)
 		{
@@ -2723,10 +2799,14 @@ ap_uint<32>* debug_status)
 		delete [] tvout_output_data_V_dest_V;
 		delete [] tvin_output_data_V_dest_V;
 		delete [] wrapc_stream_size_out_output_data_V_dest_V;
+		// release memory allocation: "ap_return"
+		delete [] tvout_ap_return;
 
 		AESL_transaction++;
 
 		tcl_file.set_num(AESL_transaction , &tcl_file.trans_num);
+
+		return AESL_return;
 	}
 }
 

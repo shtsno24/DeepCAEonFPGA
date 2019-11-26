@@ -1,5 +1,5 @@
 # ==============================================================
-# File generated on Thu Nov 21 16:09:30 JST 2019
+# File generated on Tue Nov 26 20:17:55 JST 2019
 # Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3.1 (64-bit)
 # SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
 # IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
@@ -104,6 +104,7 @@ proc check_tvin_file {} {
          "c.network.autotvout_output_data_V_last_V.dat"
          "c.network.autotvout_output_data_V_id_V.dat"
          "c.network.autotvout_output_data_V_dest_V.dat"
+         "c.network.autotvout_ap_return.dat"
     }
     foreach rtlfile $rtlfilelist {
         if {[file isfile $rtlfile]} {
@@ -135,6 +136,7 @@ proc check_tvout_file {} {
          "rtl.network.autotvout_output_data_V_last_V.dat"
          "rtl.network.autotvout_output_data_V_id_V.dat"
          "rtl.network.autotvout_output_data_V_dest_V.dat"
+         "rtl.network.autotvout_ap_return.dat"
     }
     foreach rtlfile $rtlfilelist {
         if {[file isfile $rtlfile]} {

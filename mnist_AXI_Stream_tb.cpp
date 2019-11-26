@@ -14,11 +14,15 @@
 
 #include "test_data/test_data.h"
 #include "layers_cpp/array_printf_fix16.h"
-#include "mnist_AXI_Stream.h"
+//#include "mnist_AXI_Stream.h"
 
+#include "./layers_c/layers.h"
+#include "./arrays_c/arrays_fix16.h"
+#include "./weights_c/weights_fix16.h"
 
 using namespace std;
 
+typedef hls::stream< ap_axis<16, 1, 1, 1> > axis;
 
 int main(void){
 
@@ -26,7 +30,7 @@ int main(void){
 	axis output_buffer;
 #pragma HLS reset variable=output_buffer
 
-    int16_t output_img_buff[16 * 28 * 28];
+    int16_t output_img_buff[1 * 28 * 28];
 	vector< vector< vector< int16_t> > > output_img(1, vector< vector< int16_t> >(28, vector< int16_t>(28, 0)));
 	vector< vector< int16_t> > input_img(28, vector< int16_t>(28, 0));
 
@@ -79,7 +83,7 @@ int main(void){
 	cout << "output_buffer_length : " << output_buffer.size() << endl;
 	cout << "\r\n";
 
-	network(input_buffer, output_buffer, &debug_status);
+	network(input_buffer, output_buffer);
 
 	cout << "\r\n";
 	cout << "output_buffer_length : " << output_buffer.size() << endl;

@@ -1,5 +1,4 @@
 #include "padding2d.h"
-#include "padding2d_old.h"
 #include "up_sampling2d.h"
 #include "max_pooling2d.h"
 #include "conv2d.h"

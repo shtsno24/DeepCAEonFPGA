@@ -37,6 +37,11 @@
 			<location>/home/masudalab/DeepCAEonFPGA/HLS/.apc/.tb</location>
 		</link>
 		<link>
+			<name>.reference/iomanip</name>
+			<type>1</type>
+			<location>/tools/Xilinx/Vivado/2018.3/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/iomanip</location>
+		</link>
+		<link>
 			<name>network/constraints</name>
 			<type>2</type>
 			<location>/home/masudalab/DeepCAEonFPGA/HLS/network/.tcls</location>
@@ -147,11 +152,6 @@
 			<location>/home/masudalab/DeepCAEonFPGA/arrays_c/arrays_fix16.h</location>
 		</link>
 		<link>
-			<name>source/arrays_float32.h</name>
-			<type>1</type>
-			<location>/home/masudalab/DeepCAEonFPGA/arrays_c/arrays_float32.h</location>
-		</link>
-		<link>
 			<name>source/conv2d.cpp</name>
 			<type>1</type>
 			<location>/home/masudalab/DeepCAEonFPGA/layers_c/conv2d.cpp</location>
@@ -190,11 +190,6 @@
 			<name>source/mnist_AXI_Stream.cpp</name>
 			<type>1</type>
 			<location>/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp</location>
-		</link>
-		<link>
-			<name>source/mnist_AXI_Stream.h</name>
-			<type>1</type>
-			<location>/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.h</location>
 		</link>
 		<link>
 			<name>source/padding2d.cpp</name>
@@ -272,9 +267,9 @@
 			<location>/home/masudalab/DeepCAEonFPGA/layers_cpp/array_printf_float32.h</location>
 		</link>
 		<link>
-			<name>testbench/mnist_AXI_Stream_tb.cpp</name>
+			<name>testbench/mnist_AXI_Stream.cpp</name>
 			<type>1</type>
-			<location>/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream_tb.cpp</location>
+			<location>/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp</location>
 		</link>
 		<link>
 			<name>network/constraints/.xml.directive</name>

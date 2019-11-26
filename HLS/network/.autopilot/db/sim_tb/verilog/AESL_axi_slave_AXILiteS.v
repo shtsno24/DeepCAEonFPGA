@@ -1,5 +1,5 @@
 // ==============================================================
-// File generated on Thu Nov 21 16:09:30 JST 2019
+// File generated on Tue Nov 26 20:17:55 JST 2019
 // Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3.1 (64-bit)
 // SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
 // IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
@@ -28,6 +28,7 @@ module AESL_axi_slave_AXILiteS (
     TRAN_s_axi_AXILiteS_BVALID,
     TRAN_s_axi_AXILiteS_BREADY,
     TRAN_s_axi_AXILiteS_BRESP,
+    TRAN_AXILiteS_read_data_finish,
     TRAN_AXILiteS_start_in,
     TRAN_AXILiteS_idle_out,
     TRAN_AXILiteS_ready_out,
@@ -40,14 +41,16 @@ module AESL_axi_slave_AXILiteS (
     );
 
 //------------------------Parameter----------------------
-parameter ADDR_WIDTH = 4;
+`define TV_OUT_ap_return "./rtl.network.autotvout_ap_return.dat"
+parameter ADDR_WIDTH = 5;
 parameter DATA_WIDTH = 32;
-parameter AXILiteS_DEPTH = 1;
-reg [31 : 0] AXILiteS_OPERATE_DEPTH = 0;
-parameter AXILiteS_c_bitwidth = 1;
+parameter ap_return_DEPTH = 1;
+reg [31 : 0] ap_return_OPERATE_DEPTH = 0;
+parameter ap_return_c_bitwidth = 32;
 parameter START_ADDR = 0;
 parameter network_continue_addr = 0;
 parameter network_auto_start_addr = 0;
+parameter ap_return_data_out_addr = 16;
 parameter STATUS_ADDR = 0;
 
 output [ADDR_WIDTH - 1 : 0] TRAN_s_axi_AXILiteS_AWADDR;
@@ -67,6 +70,7 @@ input [2 - 1 : 0] TRAN_s_axi_AXILiteS_RRESP;
 input  TRAN_s_axi_AXILiteS_BVALID;
 output  TRAN_s_axi_AXILiteS_BREADY;
 input [2 - 1 : 0] TRAN_s_axi_AXILiteS_BRESP;
+output TRAN_AXILiteS_read_data_finish;
 input     clk;
 input     reset;
 input     TRAN_AXILiteS_start_in;
@@ -89,7 +93,8 @@ reg  ARVALID_reg = 0;
 reg  RREADY_reg = 0;
 reg [DATA_WIDTH - 1 : 0] RDATA_reg = 0;
 reg  BREADY_reg = 0;
-reg [DATA_WIDTH - 1 : 0] mem_AXILiteS [AXILiteS_DEPTH - 1 : 0];
+reg [DATA_WIDTH - 1 : 0] mem_ap_return [ap_return_DEPTH - 1 : 0];
+reg ap_return_read_data_finish;
 reg AESL_ready_out_index_reg = 0;
 reg AESL_write_start_finish = 0;
 reg AESL_ready_reg;
@@ -99,6 +104,11 @@ reg AESL_idle_index_reg = 0;
 reg AESL_auto_restart_index_reg;
 reg process_0_finish = 0;
 reg process_1_finish = 0;
+reg process_2_finish = 0;
+//read ap_return reg
+reg [31 : 0] read_ap_return_count = 0;
+reg read_ap_return_run_flag = 0;
+reg read_one_ap_return_data_done = 0;
 reg [31 : 0] write_start_count = 0;
 reg write_start_run_flag = 0;
 
@@ -121,12 +131,13 @@ assign TRAN_AXILiteS_write_start_finish = AESL_write_start_finish;
 assign TRAN_AXILiteS_done_out = AESL_done_index_reg;
 assign TRAN_AXILiteS_ready_out = AESL_ready_out_index_reg;
 assign TRAN_AXILiteS_idle_out = AESL_idle_index_reg;
+assign TRAN_AXILiteS_read_data_finish = 1 & ap_return_read_data_finish;
 always @(TRAN_AXILiteS_ready_in or ready_initial) 
 begin
     AESL_ready_reg <= TRAN_AXILiteS_ready_in | ready_initial;
 end
 
-always @(reset or process_0_finish or process_1_finish ) begin
+always @(reset or process_0_finish or process_1_finish or process_2_finish ) begin
     if (reset == 0) begin
         ongoing_process_number <= 0;
     end
@@ -134,6 +145,9 @@ always @(reset or process_0_finish or process_1_finish ) begin
             ongoing_process_number <= ongoing_process_number + 1;
     end
     else if (ongoing_process_number == 1 && process_1_finish == 1) begin
+            ongoing_process_number <= ongoing_process_number + 1;
+    end
+    else if (ongoing_process_number == 2 && process_2_finish == 1) begin
             ongoing_process_number <= 0;
     end
 end
@@ -347,6 +361,78 @@ initial begin : write_start
     end
 end
 
+always @(reset or posedge clk) begin
+    if (reset == 0) begin
+        ap_return_read_data_finish <= 0;
+        read_ap_return_run_flag <= 0; 
+        read_ap_return_count = 0;
+        count_operate_depth_by_bitwidth_and_depth (ap_return_c_bitwidth, ap_return_DEPTH, ap_return_OPERATE_DEPTH);
+    end
+    else begin
+        if (AESL_done_index_reg === 1) begin
+            read_ap_return_run_flag = 1; 
+        end
+        if (TRAN_AXILiteS_transaction_done_in === 1) begin
+            ap_return_read_data_finish <= 0;
+            read_ap_return_count = 0; 
+        end
+        if (read_one_ap_return_data_done === 1) begin
+            read_ap_return_count = read_ap_return_count + 1;
+            if (read_ap_return_count == ap_return_OPERATE_DEPTH) begin
+                read_ap_return_run_flag <= 0; 
+                ap_return_read_data_finish <= 1;
+            end
+        end
+    end
+end
+
+initial begin : read_ap_return
+    integer read_ap_return_resp;
+    integer process_num;
+    integer get_vld;
+    integer four_byte_num;
+    integer c_bitwidth;
+    integer i;
+    integer j;
+
+    wait(reset === 1);
+    @(posedge clk);
+    c_bitwidth = ap_return_c_bitwidth;
+    process_num = 2;
+    count_c_data_four_byte_num_by_bitwidth (c_bitwidth , four_byte_num) ;
+    while (1) begin
+        process_2_finish <= 0;
+        if (ongoing_process_number === process_num && process_busy === 0 ) begin
+            if (read_ap_return_run_flag === 1) begin
+                process_busy = 1;
+                get_vld = 1;
+                if (get_vld == 1) begin
+                    //read ap_return data 
+                    for (i = 0 ; i < four_byte_num ; i = i+1) begin
+                        read (ap_return_data_out_addr + read_ap_return_count * four_byte_num * 4 + i * 4, RDATA_reg, read_ap_return_resp);
+                        if (ap_return_c_bitwidth < 32) begin
+                            mem_ap_return[read_ap_return_count] <= RDATA_reg;
+                        end
+                        else begin
+                            for (j=0 ; j < 32 ; j = j + 1) begin
+                                if (i*32 + j < ap_return_c_bitwidth) begin
+                                    mem_ap_return[read_ap_return_count][i*32 + j] <= RDATA_reg[j];
+                                end
+                            end
+                        end
+                    end
+                    
+                    read_one_ap_return_data_done <= 1;
+                    @(posedge clk);
+                    read_one_ap_return_data_done <= 0;
+                end    
+                process_busy = 0;
+            end    
+            process_2_finish <= 1;
+        end
+        @(posedge clk);
+    end    
+end
 //------------------------Task and function-------------- 
 task read_token; 
     input integer fp; 
@@ -358,5 +444,84 @@ task read_token;
         ret = $fscanf(fp,"%s",token);
     end 
 endtask 
+ 
+//------------------------Write file----------------------- 
+ 
+// Write data to file 
+ 
+initial begin : write_ap_return_file_proc 
+  integer fp; 
+  integer factor; 
+  integer transaction_idx; 
+  reg [ap_return_c_bitwidth - 1 : 0] mem_tmp; 
+  reg [ 100*8 : 1] str;
+  integer i; 
+  transaction_idx = 0; 
+  count_seperate_factor_by_bitwidth (ap_return_c_bitwidth , factor);
+  while(1) begin 
+      @(posedge clk);
+      while (TRAN_AXILiteS_transaction_done_in !== 1) begin
+          @(posedge clk);
+      end
+      # 0.1;
+      fp = $fopen(`TV_OUT_ap_return, "a"); 
+      if(fp == 0) begin       // Failed to open file 
+          $display("Failed to open file \"%s\"!", `TV_OUT_ap_return); 
+          $finish; 
+      end 
+      $fdisplay(fp, "[[transaction]] %d", transaction_idx);
+      for (i = 0; i < (ap_return_DEPTH - ap_return_DEPTH % factor); i = i + 1) begin
+          if (factor == 4) begin
+              if (i%factor == 0) begin
+                  mem_tmp = mem_ap_return[i/factor][7:0];
+              end
+              if (i%factor == 1) begin
+                  mem_tmp = mem_ap_return[i/factor][15:8];
+              end
+              if (i%factor == 2) begin
+                  mem_tmp = mem_ap_return[i/factor][23:16];
+              end
+              if (i%factor == 3) begin
+                  mem_tmp = mem_ap_return[i/factor][31:24];
+              end
+              $fdisplay(fp,"0x%x",mem_tmp);
+          end
+          if (factor == 2) begin
+              if (i%factor == 0) begin
+                  mem_tmp = mem_ap_return[i/factor][15:0];
+              end
+              if (i%factor == 1) begin
+                  mem_tmp = mem_ap_return[i/factor][31:16];
+              end
+              $fdisplay(fp,"0x%x",mem_tmp);
+          end
+          if (factor == 1) begin
+              $fdisplay(fp,"0x%x",mem_ap_return[i]);
+          end
+      end 
+      if (factor == 4) begin
+          if ((ap_return_DEPTH - 1) % factor == 2) begin
+              $fdisplay(fp,"0x%x",mem_ap_return[ap_return_DEPTH / factor][7:0]);
+              $fdisplay(fp,"0x%x",mem_ap_return[ap_return_DEPTH / factor][15:8]);
+              $fdisplay(fp,"0x%x",mem_ap_return[ap_return_DEPTH / factor][23:16]);
+          end
+          if ((ap_return_DEPTH - 1) % factor == 1) begin
+              $fdisplay(fp,"0x%x",mem_ap_return[ap_return_DEPTH / factor][7:0]);
+              $fdisplay(fp,"0x%x",mem_ap_return[ap_return_DEPTH / factor][15:8]);
+          end
+          if ((ap_return_DEPTH - 1) % factor == 0) begin
+              $fdisplay(fp,"0x%x",mem_ap_return[ap_return_DEPTH / factor][7:0]);
+          end
+      end
+      if (factor == 2) begin
+          if ((ap_return_DEPTH - 1) % factor == 0) begin
+              $fdisplay(fp,"0x%x",mem_ap_return[ap_return_DEPTH / factor][15:0]);
+          end
+      end
+      $fdisplay(fp, "[[/transaction]]");
+      transaction_idx = transaction_idx + 1;
+      $fclose(fp); 
+  end 
+end 
  
 endmodule

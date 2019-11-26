@@ -1,5 +1,5 @@
 # ==============================================================
-# File generated on Thu Nov 21 16:09:30 JST 2019
+# File generated on Tue Nov 26 20:17:55 JST 2019
 # Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3.1 (64-bit)
 # SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
 # IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
@@ -59,8 +59,8 @@ include ./Makefile.rules
 
 all : $(TARGET)
 
-$(ObjDir)/mnist_AXI_Stream_tb.cpp_pre.cpp.tb.o : mnist_AXI_Stream_tb.cpp_pre.cpp.tb.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling mnist_AXI_Stream_tb.cpp_pre.cpp.tb.cpp" $(AVE_DIR_DLOG)
+$(ObjDir)/mnist_AXI_Stream.cpp_pre.cpp.tb.o : mnist_AXI_Stream.cpp_pre.cpp.tb.cpp $(ObjDir)/.dir
+	$(Echo) "   Compiling mnist_AXI_Stream.cpp_pre.cpp.tb.cpp" $(AVE_DIR_DLOG)
 	$(Verb) $(CC) ${CCFLAG} ${TOOLCHAIN}  -fno-builtin-isinf -fno-builtin-isnan -c $(IFLAG) $(DFLAG) $< -o $@; \
 
 $(ObjDir)/array_printf_float32.cpp_pre.cpp.tb.o : array_printf_float32.cpp_pre.cpp.tb.cpp $(ObjDir)/.dir
@@ -85,10 +85,6 @@ $(ObjDir)/pointwise_conv2d.cpp_pre.cpp.tb.o : pointwise_conv2d.cpp_pre.cpp.tb.cp
 
 $(ObjDir)/padding2d.cpp_pre.cpp.tb.o : padding2d.cpp_pre.cpp.tb.cpp $(ObjDir)/.dir
 	$(Echo) "   Compiling padding2d.cpp_pre.cpp.tb.cpp" $(AVE_DIR_DLOG)
-	$(Verb) $(CC) ${CCFLAG} ${TOOLCHAIN}  -fno-builtin-isinf -fno-builtin-isnan -c $(IFLAG) $(DFLAG) $< -o $@; \
-
-$(ObjDir)/mnist_AXI_Stream.cpp_pre.cpp.tb.o : mnist_AXI_Stream.cpp_pre.cpp.tb.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling mnist_AXI_Stream.cpp_pre.cpp.tb.cpp" $(AVE_DIR_DLOG)
 	$(Verb) $(CC) ${CCFLAG} ${TOOLCHAIN}  -fno-builtin-isinf -fno-builtin-isnan -c $(IFLAG) $(DFLAG) $< -o $@; \
 
 $(ObjDir)/max_pooling2d.cpp_pre.cpp.tb.o : max_pooling2d.cpp_pre.cpp.tb.cpp $(ObjDir)/.dir
