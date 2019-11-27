@@ -21612,7 +21612,6 @@ namespace std __attribute__ ((__visibility__ ("default")))
 }
 # 12 "mnist_AXI_Stream.cpp" 2
 
-
 # 1 "./test_data/test_data.h" 1
 
 
@@ -21673,7 +21672,7 @@ float test_input_float32[1][28][28] = {{{0.00000000000000000000, 0.0000000000000
 {0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.47450980544090270996, 0.99607843160629272461, 0.99607843160629272461, 0.85882353782653808594, 0.15686275064945220947, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000},
 {0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.47450980544090270996, 0.99607843160629272461, 0.81176471710205078125, 0.07058823853731155396, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000},
 {0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000, 0.00000000000000000000}}};
-# 15 "mnist_AXI_Stream.cpp" 2
+# 14 "mnist_AXI_Stream.cpp" 2
 
 # 1 "././layers_c/layers.h" 1
 # 1 "././layers_c/padding2d.h" 1
@@ -21770,39 +21769,39 @@ const float* bias_d, const float* bias_p,
 uint16_t kernel_d_height, uint16_t kernel_d_width, const float* kernel_d, const float* kernel_p,
 uint8_t relu);
 # 8 "././layers_c/layers.h" 2
-# 17 "mnist_AXI_Stream.cpp" 2
+# 16 "mnist_AXI_Stream.cpp" 2
 # 1 "././arrays_c/arrays_fix16.h" 1
 # 10 "././arrays_c/arrays_fix16.h"
-uint16_t input_0_depth = 1, input_0_height = 28, input_0_width = 28;
+const uint16_t input_0_depth = 1, input_0_height = 28, input_0_width = 28;
 
-uint16_t Padding2D_0_depth = 1, Padding2D_0_height = 30, Padding2D_0_width = 30;
+const uint16_t Padding2D_0_depth = 1, Padding2D_0_height = 30, Padding2D_0_width = 30;
 
-uint16_t SeparableConv2D_0_depth = 16, SeparableConv2D_0_height = 28, SeparableConv2D_0_width = 28;
+const uint16_t SeparableConv2D_0_depth = 16, SeparableConv2D_0_height = 28, SeparableConv2D_0_width = 28;
 
-uint16_t MaxPooling2D_0_depth = 16, MaxPooling2D_0_height = 14, MaxPooling2D_0_width = 14;
+const uint16_t MaxPooling2D_0_depth = 16, MaxPooling2D_0_height = 14, MaxPooling2D_0_width = 14;
 
-uint16_t Padding2D_1_depth = 16, Padding2D_1_height = 16, Padding2D_1_width = 16;
+const uint16_t Padding2D_1_depth = 16, Padding2D_1_height = 16, Padding2D_1_width = 16;
 
-uint16_t SeparableConv2D_1_depth = 8, SeparableConv2D_1_height = 14, SeparableConv2D_1_width = 14;
+const uint16_t SeparableConv2D_1_depth = 8, SeparableConv2D_1_height = 14, SeparableConv2D_1_width = 14;
 
-uint16_t MaxPooling2D_1_depth = 8, MaxPooling2D_1_height = 7, MaxPooling2D_1_width = 7;
+const uint16_t MaxPooling2D_1_depth = 8, MaxPooling2D_1_height = 7, MaxPooling2D_1_width = 7;
 
-uint16_t Padding2D_2_depth = 8, Padding2D_2_height = 9, Padding2D_2_width = 9;
+const uint16_t Padding2D_2_depth = 8, Padding2D_2_height = 9, Padding2D_2_width = 9;
 
-uint16_t SeparableConv2D_2_depth = 8, SeparableConv2D_2_height = 7, SeparableConv2D_2_width = 7;
+const uint16_t SeparableConv2D_2_depth = 8, SeparableConv2D_2_height = 7, SeparableConv2D_2_width = 7;
 
-uint16_t UpSampling2D_0_depth = 8, UpSampling2D_0_height = 14, UpSampling2D_0_width = 14;
+const uint16_t UpSampling2D_0_depth = 8, UpSampling2D_0_height = 14, UpSampling2D_0_width = 14;
 
-uint16_t Padding2D_3_depth = 8, Padding2D_3_height = 16, Padding2D_3_width = 16;
+const uint16_t Padding2D_3_depth = 8, Padding2D_3_height = 16, Padding2D_3_width = 16;
 
-uint16_t SeparableConv2D_3_depth = 16, SeparableConv2D_3_height = 14, SeparableConv2D_3_width = 14;
+const uint16_t SeparableConv2D_3_depth = 16, SeparableConv2D_3_height = 14, SeparableConv2D_3_width = 14;
 
-uint16_t UpSampling2D_1_depth = 16, UpSampling2D_1_height = 28, UpSampling2D_1_width = 28;
+const uint16_t UpSampling2D_1_depth = 16, UpSampling2D_1_height = 28, UpSampling2D_1_width = 28;
 
-uint16_t Padding2D_4_depth = 16, Padding2D_4_height = 30, Padding2D_4_width = 30;
+const uint16_t Padding2D_4_depth = 16, Padding2D_4_height = 30, Padding2D_4_width = 30;
 
-uint16_t SeparableConv2D_4_depth = 1, SeparableConv2D_4_height = 28, SeparableConv2D_4_width = 28;
-# 18 "mnist_AXI_Stream.cpp" 2
+const uint16_t SeparableConv2D_4_depth = 1, SeparableConv2D_4_height = 28, SeparableConv2D_4_width = 28;
+# 17 "mnist_AXI_Stream.cpp" 2
 # 1 "././weights_c/weights_fix16.h" 1
 
 
@@ -22764,7 +22763,7 @@ const int16_t SeparableConv2D_4_b_d[16] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
 const uint16_t shape_SeparableConv2D_4_b_p = 1;
 const int16_t SeparableConv2D_4_b_p[1] = {-10739};
 # 11 "././weights_c/weights_fix16.h" 2
-# 19 "mnist_AXI_Stream.cpp" 2
+# 18 "mnist_AXI_Stream.cpp" 2
 
 # 1 "/tools/Xilinx/Vivado/2018.3/common/technology/autopilot/hls_stream.h" 1
 # 66 "/tools/Xilinx/Vivado/2018.3/common/technology/autopilot/hls_stream.h"
@@ -22957,7 +22956,7 @@ class stream
 
 
 }
-# 21 "mnist_AXI_Stream.cpp" 2
+# 20 "mnist_AXI_Stream.cpp" 2
 # 1 "/tools/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_int.h" 1
 # 54 "/tools/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_int.h"
 # 1 "/tools/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_common.h" 1
@@ -29205,7 +29204,7 @@ inline bool operator!=(
 }
 # 381 "/tools/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_fixed.h" 2
 # 350 "/tools/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_int.h" 2
-# 22 "mnist_AXI_Stream.cpp" 2
+# 21 "mnist_AXI_Stream.cpp" 2
 # 1 "/tools/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_axi_sdata.h" 1
 # 86 "/tools/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_axi_sdata.h"
 # 1 "/tools/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_int.h" 1
@@ -29274,7 +29273,7 @@ template<int D>
     qdma_axis(ap_uint<D> d = ap_uint<D>(), ap_uint<(D+7)/8> k = ap_uint<(D+7)/8>(), ap_uint<1> l = ap_uint<1>()) : data(d), keep(k), last(l) {}
     qdma_axis(const qdma_axis<D, 0, 0, 0> &d) : data(d.data), keep(d.keep), last(d.last) {}
   };
-# 23 "mnist_AXI_Stream.cpp" 2
+# 22 "mnist_AXI_Stream.cpp" 2
 
 using namespace std;
 
@@ -29286,9 +29285,6 @@ int network(axis &input_data, axis &output_data) {
 #pragma HLS INTERFACE s_axilite register port=return
 
  int16_t MemBank_A[14400], MemBank_B[14400], MemBank_Out[16 * 28 * 28];
-#pragma HLS reset variable=&MemBank_A
-#pragma HLS reset variable=&MemBank_B
-#pragma HLS reset variable=&MemBank_Out
 
  int16_t* array_head = (int16_t*)MemBank_Out;
 
@@ -29315,7 +29311,7 @@ int network(axis &input_data, axis &output_data) {
  SeparableConv2D_0_depth, SeparableConv2D_0_height, SeparableConv2D_0_width, (int16_t*)MemBank_B,
  (int16_t*)SeparableConv2D_0_b_p,
  1, 1, (int16_t*)SeparableConv2D_0_w_p, 1, 14);
-# 136 "mnist_AXI_Stream.cpp"
+# 129 "mnist_AXI_Stream.cpp"
  for(int i = 0; i < array_length; i++){
 
   MemBank_Out[i] = MemBank_B[i];
@@ -29390,8 +29386,8 @@ int main(void){
   output_img_buff[i] = (int16_t)tmp.data;
 
   cout<< setw(6) << right << output_img_buff[i] << " ";
-  if(i % 28 * 28 == 0){
-   cout << '\n' << endl;
+  if(i % (28 * 28) == 0){
+   cout << "\n" << endl;
   }else if(i % 28 == 0){
    cout << endl;
   }

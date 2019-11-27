@@ -10,4 +10,3 @@ uint16_t output_depth, uint16_t output_height, uint16_t output_width, float* out
 const float* bias,
 uint16_t kernel_height, uint16_t kernel_width, const float* kernel,
 uint8_t relu);
-

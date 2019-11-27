@@ -1,5 +1,5 @@
 // ==============================================================
-// File generated on Tue Nov 26 20:17:47 JST 2019
+// File generated on Wed Nov 27 19:32:17 JST 2019
 // Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3.1 (64-bit)
 // SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
 // IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
@@ -235,6 +235,7 @@ uint16_t kernel_height, uint16_t kernel_width, const float* kernel,
 uint8_t relu);
 #3 "/home/masudalab/DeepCAEonFPGA/layers_c/pointwise_conv2d.cpp" 2
 
+using namespace std;
 
 uint8_t pointwise_conv2d_fix16(uint16_t input_depth, uint16_t input_height, uint16_t input_width, int16_t* input,
 uint16_t output_depth, uint16_t output_height, uint16_t output_width, int16_t* output,
@@ -253,12 +254,12 @@ uint8_t relu, uint8_t fractal_width){
                 output[out_d * output_height * output_width + out_h * output_width + out_w] = 0;
                 for(uint16_t in_d = 0; in_d < input_depth; in_d++){
 
-                    output[out_d * output_height * output_width + out_h * output_width + out_w] +=
-                        (int16_t)(((int32_t)(input[in_d * input_height * input_width + out_h * input_width + out_w]) *
-                                    (int32_t)(kernel[out_d * input_depth + in_d])) >> fractal_width);
+                 output[out_d * output_height * output_width + out_h * output_width + out_w] +=
+                           (int16_t)(((int32_t)(input[in_d * output_height * output_width + out_h * output_width + out_w]) *
+                           (int32_t)(kernel[out_d * input_depth + in_d])) >> fractal_width);
                 }
 
-                output[out_d * output_height * output_width + out_h * output_width + out_w] += bias[out_d];
+
 
                 if(relu == 1){
                     if(output[out_d * output_height * output_width + out_h * output_width + out_w] < 0){

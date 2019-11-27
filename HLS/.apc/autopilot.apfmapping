@@ -43,10 +43,10 @@
     <originFiles name="Conv2D_0_fix16.h" path="/home/masudalab/DeepCAEonFPGA/weights_c/Conv2D_0_fix16.h"/>
   </source>
   <testbench>
+    <originFiles name="mnist_AXI_Stream.cpp" path="/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"/>
     <originFiles name="array_printf_float32.h" path="/home/masudalab/DeepCAEonFPGA/layers_cpp/array_printf_float32.h"/>
     <originFiles name="array_printf_float32.cpp" path="/home/masudalab/DeepCAEonFPGA/layers_cpp/array_printf_float32.cpp"/>
     <originFiles name="array_printf_fix16.h" path="/home/masudalab/DeepCAEonFPGA/layers_cpp/array_printf_fix16.h"/>
     <originFiles name="array_printf_fix16.cpp" path="/home/masudalab/DeepCAEonFPGA/layers_cpp/array_printf_fix16.cpp"/>
-    <originFiles name="mnist_AXI_Stream.cpp" path="/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"/>
   </testbench>
 </autopilotfilemapping:AutoPilotFileMapping>

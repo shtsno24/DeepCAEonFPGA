@@ -1,0 +1,875 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1574850694000">
+  <ports id="1" name="input_data_V_data_V" type="PortType" originalName="input_data.V.data.V" bitwidth="16">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="2" name="input_data_V_keep_V" type="PortType" originalName="input_data.V.keep.V" bitwidth="2">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="3" name="input_data_V_strb_V" type="PortType" originalName="input_data.V.strb.V" bitwidth="2">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="4" name="input_data_V_user_V" type="PortType" originalName="input_data.V.user.V" bitwidth="1">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="5" name="input_data_V_last_V" type="PortType" originalName="input_data.V.last.V" bitwidth="1">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="6" name="input_data_V_id_V" type="PortType" originalName="input_data.V.id.V" bitwidth="1">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="7" name="input_data_V_dest_V" type="PortType" originalName="input_data.V.dest.V" bitwidth="1">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="8" name="output_data_V_data_V" type="PortType" originalName="output_data.V.data.V" bitwidth="16" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="9" name="output_data_V_keep_V" type="PortType" originalName="output_data.V.keep.V" bitwidth="2" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="10" name="output_data_V_strb_V" type="PortType" originalName="output_data.V.strb.V" bitwidth="2" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="11" name="output_data_V_user_V" type="PortType" originalName="output_data.V.user.V" bitwidth="1" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="12" name="output_data_V_last_V" type="PortType" originalName="output_data.V.last.V" bitwidth="1" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="13" name="output_data_V_id_V" type="PortType" originalName="output_data.V.id.V" bitwidth="1" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="14" name="output_data_V_dest_V" type="PortType" originalName="output_data.V.dest.V" bitwidth="1" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="24" name="ap_return" direction="DirOut">
+    <dataInputObjs>ret</dataInputObjs>
+  </ports>
+  <edges id="96" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="99" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="100" source_obj="//@blocks.1/@node_objs.2" sink_obj="//@blocks.1/@node_objs.0" is_back_edge="1"/>
+  <edges id="101" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.1/@node_objs.0" is_back_edge="1"/>
+  <edges id="102" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.1"/>
+  <edges id="105" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.2"/>
+  <edges id="108" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.1/@node_objs.3"/>
+  <edges id="109" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.1/@node_objs.3"/>
+  <edges id="110" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.1/@node_objs.3"/>
+  <edges id="113" source_obj="//@ports.0" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="114" source_obj="//@ports.1" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="115" source_obj="//@ports.2" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="116" source_obj="//@ports.3" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="117" source_obj="//@ports.4" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="118" source_obj="//@ports.5" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="119" source_obj="//@ports.6" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="128" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.2/@node_objs.2"/>
+  <edges id="131" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="132" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="135" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.3/@node_objs.1"/>
+  <edges id="136" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.3/@node_objs.1"/>
+  <edges id="139" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="140" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="141" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.3/@node_objs.3"/>
+  <edges id="144" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.4/@node_objs.0"/>
+  <edges id="145" source_obj="//@blocks.4/@node_objs.2" sink_obj="//@blocks.4/@node_objs.0" is_back_edge="1"/>
+  <edges id="146" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.4/@node_objs.0" is_back_edge="1"/>
+  <edges id="147" source_obj="//@blocks.4/@node_objs.0" sink_obj="//@blocks.4/@node_objs.1"/>
+  <edges id="150" source_obj="//@blocks.4/@node_objs.0" sink_obj="//@blocks.4/@node_objs.2"/>
+  <edges id="153" source_obj="//@blocks.4/@node_objs.1" sink_obj="//@blocks.4/@node_objs.3"/>
+  <edges id="154" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.4/@node_objs.3"/>
+  <edges id="155" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.4/@node_objs.3"/>
+  <edges id="156" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.6/@node_objs.0"/>
+  <edges id="165" source_obj="//@blocks.5/@node_objs.0" sink_obj="//@blocks.5/@node_objs.1"/>
+  <edges id="167" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.5/@node_objs.2"/>
+  <edges id="168" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="169" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="171" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="172" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="174" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="176" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="177" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="178" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="180" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="182" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="191" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@ports.7"/>
+  <edges id="192" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@ports.8"/>
+  <edges id="193" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@ports.9"/>
+  <edges id="194" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@ports.10"/>
+  <edges id="195" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@ports.11"/>
+  <edges id="196" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@ports.12"/>
+  <edges id="197" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@ports.13"/>
+  <edges id="198" source_obj="//@regions.0/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.3"/>
+  <edges id="202" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.3"/>
+  <edges id="203" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.3"/>
+  <edges id="207" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.4"/>
+  <edges id="210" sink_obj="//@blocks.3/@node_objs.1"/>
+  <edges id="346" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="347" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.3"/>
+  <edges id="348" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.2"/>
+  <edges id="349" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.1" is_back_edge="1"/>
+  <edges id="350" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.4"/>
+  <edges id="351" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.6"/>
+  <edges id="352" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.5"/>
+  <edges id="353" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.4" is_back_edge="1"/>
+  <edges id="354" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@regions.0/@basic_blocks.0"/>
+  <edges id="355" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.7"/>
+  <edges id="356" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1"/>
+  <edges id="357" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0" is_back_edge="1"/>
+  <edges source_obj="//@blocks.7/@node_objs.0" sink_obj="//@ports.14"/>
+  <edges id="-1" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.2/@node_objs.1"/>
+  <edges id="-1" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.2/@node_objs.1"/>
+  <edges id="-1" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.2/@node_objs.1"/>
+  <edges id="-1" source_obj="//@blocks.4/@node_objs.0" sink_obj="//@blocks.5/@node_objs.0"/>
+  <edges id="-1" source_obj="//@blocks.4/@node_objs.0" sink_obj="//@blocks.5/@node_objs.1"/>
+  <edges id="-1" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.5/@node_objs.0"/>
+  <edges id="-1" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.5/@node_objs.1"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
+  <edges id="-1" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
+  <blocks id="39" name="block_39" type="BlockType">
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>block_45</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="32" name="MemBank_A" lineNumber="32" originalName="MemBank_A" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." rtlName="MemBank_A_U" coreName="RAM" contextFuncName="network" bitwidth="16" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="32" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="network"/>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="33" name="MemBank_B" lineNumber="32" originalName="MemBank_B" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." rtlName="MemBank_B_U" coreName="RAM" contextFuncName="network" bitwidth="16" opcode="alloca" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="32" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="network"/>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="34" name="MemBank_Out" lineNumber="32" originalName="MemBank_Out" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." rtlName="MemBank_Out_U" coreName="RAM" contextFuncName="network" bitwidth="16" opcode="alloca" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="32" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="network"/>
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="38" name="node_38" lineNumber="41" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." contextFuncName="network" opcode="br" m_display="0" m_delay="1.76" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="41" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="network"/>
+      <controlInputObjs>block_45</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="mnist_AXI_Stream.cpp">
+      <validLinenumbers>32</validLinenumbers>
+      <validLinenumbers>41</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="45" name="block_45" type="BlockType">
+    <controlInputObjs>block_39</controlInputObjs>
+    <controlInputObjs>block_52</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>block_57</controlOutputObjs>
+    <controlOutputObjs>block_52</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="40" name="i" originalName="i" bitwidth="10" opcode="phi" nodeLabel="1.0" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <controlInputObjs>block_39</controlInputObjs>
+      <controlInputObjs>block_52</controlInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="41" name="exitcond" lineNumber="41" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." rtlName="exitcond_fu_255_p2" contextFuncName="network" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="1.77" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="41" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="network"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="43" name="i_1" lineNumber="41" originalName="i" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." rtlName="i_1_fu_261_p2" contextFuncName="network" bitwidth="10" opcode="add" nodeLabel="1.0" m_display="0" m_delay="1.73" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="41" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="network"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="44" name="node_44" lineNumber="41" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." contextFuncName="network" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="41" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="network"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>block_52</controlInputObjs>
+      <controlInputObjs>block_57</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="mnist_AXI_Stream.cpp">
+      <validLinenumbers>41</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="52" name="block_52" type="BlockType">
+    <controlInputObjs>block_45</controlInputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>block_45</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="46" name="empty_13" lineNumber="42" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." contextFuncName="network" bitwidth="24" opcode="read" nodeLabel="1.0" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="42" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="network"/>
+      <dataInputObjs>input_data_V_data_V</dataInputObjs>
+      <dataInputObjs>input_data_V_keep_V</dataInputObjs>
+      <dataInputObjs>input_data_V_strb_V</dataInputObjs>
+      <dataInputObjs>input_data_V_user_V</dataInputObjs>
+      <dataInputObjs>input_data_V_last_V</dataInputObjs>
+      <dataInputObjs>input_data_V_id_V</dataInputObjs>
+      <dataInputObjs>input_data_V_dest_V</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="50" name="node_50" lineNumber="43" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." contextFuncName="network" opcode="store" nodeLabel="1.0" m_display="0" m_delay="3.25" m_topoIndex="13" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="43" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="network"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="51" name="node_51" lineNumber="41" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." contextFuncName="network" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="41" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="network"/>
+      <controlInputObjs>block_45</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="mnist_AXI_Stream.cpp">
+      <validLinenumbers>42</validLinenumbers>
+      <validLinenumbers>43</validLinenumbers>
+      <validLinenumbers>41</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="57" name="block_57" type="BlockType">
+    <controlInputObjs>block_45</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>block_63</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="53" name="node_53" lineNumber="46" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." rtlName="grp_padding2d_fix16_fu_235" contextFuncName="network" opcode="call" nodeLabel="1.0" nodeLatency="1" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="46" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="network"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>padding2d_fix16</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="54" name="node_54" lineNumber="50" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." rtlName="grp_depthwise_conv2d_fix_fu_241" contextFuncName="network" opcode="call" nodeLabel="3.0" nodeLatency="1" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="50" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="network"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>depthwise_conv2d_fix</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="55" name="node_55" lineNumber="55" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." rtlName="grp_pointwise_conv2d_fix_fu_249" contextFuncName="network" opcode="call" nodeLabel="5.0" nodeLatency="1" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="55" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="network"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>pointwise_conv2d_fix</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="56" name="node_56" lineNumber="129" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." contextFuncName="network" opcode="br" nodeLabel="6.0" m_display="0" m_delay="1.76" m_topoIndex="18" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="129" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="network"/>
+      <controlInputObjs>block_63</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="mnist_AXI_Stream.cpp">
+      <validLinenumbers>46</validLinenumbers>
+      <validLinenumbers>50</validLinenumbers>
+      <validLinenumbers>55</validLinenumbers>
+      <validLinenumbers>129</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="63" name="block_63" type="BlockType">
+    <controlInputObjs>block_57</controlInputObjs>
+    <controlInputObjs>block_70</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>.preheader.preheader</controlOutputObjs>
+    <controlOutputObjs>block_70</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="58" name="i1" originalName="i" bitwidth="14" opcode="phi" nodeLabel="7.0" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <controlInputObjs>block_57</controlInputObjs>
+      <controlInputObjs>block_70</controlInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="59" name="tmp_1" lineNumber="129" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." rtlName="tmp_1_fu_277_p2" contextFuncName="network" bitwidth="1" opcode="icmp" nodeLabel="7.0" m_display="0" m_delay="2.2" m_topoIndex="20" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="129" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="network"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="61" name="i_2" lineNumber="129" originalName="i" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." rtlName="i_2_fu_283_p2" contextFuncName="network" bitwidth="14" opcode="add" nodeLabel="7.0" m_display="0" m_delay="1.81" m_topoIndex="21" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="129" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="network"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="62" name="node_62" lineNumber="129" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." contextFuncName="network" opcode="br" nodeLabel="7.0" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="129" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="network"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>block_70</controlInputObjs>
+      <controlInputObjs>.preheader.preheader</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="mnist_AXI_Stream.cpp">
+      <validLinenumbers>129</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="70" name="block_70" type="BlockType">
+    <controlInputObjs>block_63</controlInputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>block_63</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="66" name="MemBank_B_load" lineNumber="131" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." contextFuncName="network" bitwidth="16" opcode="load" nodeLabel="7.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="25" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="131" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="network"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="68" name="node_68" lineNumber="131" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." contextFuncName="network" opcode="store" nodeLabel="8.0" m_display="0" m_delay="3.25" m_topoIndex="28" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="131" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="network"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="69" name="node_69" lineNumber="129" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." contextFuncName="network" opcode="br" nodeLabel="8.0" m_display="0" m_topoIndex="29" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="129" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="network"/>
+      <controlInputObjs>block_63</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="mnist_AXI_Stream.cpp">
+      <validLinenumbers>131</validLinenumbers>
+      <validLinenumbers>129</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="72" name=".preheader.preheader" type="BlockType">
+    <controlInputObjs>block_63</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>.preheader</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="71" name="node_71" lineNumber="134" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." contextFuncName="network" opcode="br" nodeLabel="7.0" m_display="0" m_delay="1.76" m_topoIndex="26" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="134" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="network"/>
+      <controlInputObjs>.preheader</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="mnist_AXI_Stream.cpp">
+      <validLinenumbers>134</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="91" name="block_91" type="BlockType">
+    <controlInputObjs>.preheader</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="90" name="node_90" lineNumber="151" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." contextFuncName="network" opcode="ret" nodeLabel="12.0" nodeLatency="1" m_display="0" m_topoIndex="41" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="151" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="network"/>
+      <dataOutputObjs>ap_return</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <fileValidLineNumbers fileName="mnist_AXI_Stream.cpp">
+      <validLinenumbers>151</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" id="310" pipe_depth="3" RegionName="Loop 3">
+    <basic_blocks id="78" name=".preheader" type="BlockType">
+      <controlInputObjs>.preheader.preheader</controlInputObjs>
+      <controlInputObjs>block_89</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>block_91</controlOutputObjs>
+      <controlOutputObjs>block_89</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="73" name="i2" originalName="i" bitwidth="14" opcode="phi" nodeLabel="9.0" m_display="0" m_topoIndex="30" m_clusterGroupNumber="-1">
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <controlInputObjs>block_89</controlInputObjs>
+        <controlInputObjs>.preheader.preheader</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="74" name="tmp_2" lineNumber="134" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." rtlName="tmp_2_fu_294_p2" contextFuncName="network" bitwidth="1" opcode="icmp" nodeLabel="9.0" m_display="0" m_delay="2.2" m_topoIndex="31" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="134" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="network"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="76" name="i_3" lineNumber="134" originalName="i" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." rtlName="i_3_fu_300_p2" contextFuncName="network" bitwidth="14" opcode="add" nodeLabel="9.0" m_display="0" m_delay="1.81" m_topoIndex="32" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="134" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="network"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="77" name="node_77" lineNumber="134" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." contextFuncName="network" opcode="br" nodeLabel="9.0" m_display="0" m_topoIndex="33" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="134" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="network"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <controlInputObjs>block_89</controlInputObjs>
+        <controlInputObjs>block_91</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="mnist_AXI_Stream.cpp">
+        <validLinenumbers>134</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="89" name="block_89" type="BlockType">
+      <controlInputObjs>.preheader</controlInputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>.preheader</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="82" name="tmp_user_V" lineNumber="142" originalName="tmp.user.V" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." rtlName="tmp_user_V_fu_311_p2" contextFuncName="network" bitwidth="1" opcode="icmp" nodeLabel="9.0" m_display="0" m_delay="2.2" m_topoIndex="35" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="142" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="network"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="83" name="tmp_last_V" lineNumber="145" originalName="tmp.last.V" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." rtlName="tmp_last_V_fu_317_p2" contextFuncName="network" bitwidth="1" opcode="icmp" nodeLabel="9.0" m_display="0" m_delay="2.2" m_topoIndex="36" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="145" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="network"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="85" name="tmp_data_V_1" lineNumber="148" originalName="val" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." contextFuncName="network" bitwidth="16" opcode="load" nodeLabel="9.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="38" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="148" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="network"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="86" name="node_86" lineNumber="149" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." contextFuncName="network" opcode="write" nodeLabel="10.0" nodeLatency="1" m_display="0" m_topoIndex="39" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="149" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="network"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataOutputObjs>output_data_V_data_V</dataOutputObjs>
+        <dataOutputObjs>output_data_V_keep_V</dataOutputObjs>
+        <dataOutputObjs>output_data_V_strb_V</dataOutputObjs>
+        <dataOutputObjs>output_data_V_user_V</dataOutputObjs>
+        <dataOutputObjs>output_data_V_last_V</dataOutputObjs>
+        <dataOutputObjs>output_data_V_id_V</dataOutputObjs>
+        <dataOutputObjs>output_data_V_dest_V</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="88" name="node_88" lineNumber="134" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." contextFuncName="network" opcode="br" nodeLabel="11.0" m_display="0" m_topoIndex="40" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="134" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="network"/>
+        <controlInputObjs>.preheader</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="mnist_AXI_Stream.cpp">
+        <validLinenumbers>142</validLinenumbers>
+        <validLinenumbers>145</validLinenumbers>
+        <validLinenumbers>148</validLinenumbers>
+        <validLinenumbers>149</validLinenumbers>
+        <validLinenumbers>134</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <ScheduleInfo time="5"/>
+  <ScheduleInfo time="6"/>
+  <ScheduleInfo time="7"/>
+  <ScheduleInfo time="8"/>
+  <ScheduleInfo time="9"/>
+  <ScheduleInfo time="10"/>
+  <ScheduleInfo time="11"/>
+  <ScheduleInfo time="12"/>
+  <ScheduleInfo time="13"/>
+  <regnodes realName="tmp_data_V_1_reg_374">
+    <nodeIds>85</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_user_V_reg_359">
+    <nodeIds>82</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_1_reg_331">
+    <nodeIds>59</nodeIds>
+  </regnodes>
+  <regnodes realName="i_1_reg_326">
+    <nodeIds>43</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_last_V_reg_364">
+    <nodeIds>83</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_3_reg_340">
+    <nodeIds>64</nodeIds>
+  </regnodes>
+  <regnodes realName="MemBank_Out_addr_1_reg_369">
+    <nodeIds>84</nodeIds>
+  </regnodes>
+  <regnodes realName="i_reg_202">
+    <nodeIds>40</nodeIds>
+  </regnodes>
+  <regnodes realName="i1_reg_213">
+    <nodeIds>58</nodeIds>
+  </regnodes>
+  <regnodes realName="i2_reg_224">
+    <nodeIds>73</nodeIds>
+  </regnodes>
+  <regnodes realName="i_3_reg_354">
+    <nodeIds>76</nodeIds>
+  </regnodes>
+  <regnodes realName="MemBank_B_addr_reg_345">
+    <nodeIds>65</nodeIds>
+  </regnodes>
+  <regnodes realName="i_2_reg_335">
+    <nodeIds>61</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_2_reg_350">
+    <nodeIds>74</nodeIds>
+  </regnodes>
+  <expressionNodes realName="tmp_data_V_fu_267">
+    <nodeIds>47</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_1_fu_277">
+    <nodeIds>59</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="MemBank_A_addr_gep_fu_157">
+    <nodeIds>49</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="exitcond_fu_255">
+    <nodeIds>41</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_2_fu_294">
+    <nodeIds>74</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_3_fu_289">
+    <nodeIds>64</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i1_phi_fu_217">
+    <nodeIds>58</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_phi_fu_206">
+    <nodeIds>40</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_last_V_fu_317">
+    <nodeIds>83</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="MemBank_B_addr_gep_fu_169">
+    <nodeIds>65</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="MemBank_Out_alloca_fu_106">
+    <nodeIds>34</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i2_cast1_fu_306">
+    <nodeIds>79</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_s_fu_272">
+    <nodeIds>48</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_1_fu_261">
+    <nodeIds>43</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_2_fu_283">
+    <nodeIds>61</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="MemBank_A_alloca_fu_98">
+    <nodeIds>32</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_user_V_fu_311">
+    <nodeIds>82</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="MemBank_Out_addr_1_gep_fu_194">
+    <nodeIds>84</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_3_fu_300">
+    <nodeIds>76</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="MemBank_B_alloca_fu_102">
+    <nodeIds>33</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="MemBank_Out_addr_gep_fu_181">
+    <nodeIds>67</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i2_phi_fu_228">
+    <nodeIds>73</nodeIds>
+  </expressionNodes>
+  <moduleNodes realName="grp_padding2d_fix16_fu_235">
+    <nodeIds>53</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_depthwise_conv2d_fix_fu_241">
+    <nodeIds>54</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_pointwise_conv2d_fix_fu_249">
+    <nodeIds>55</nodeIds>
+  </moduleNodes>
+  <ioNodes realName="empty_13_read_fu_110">
+    <nodeIds>46</nodeIds>
+  </ioNodes>
+  <ioNodes realName="grp_write_fu_128">
+    <nodeIds>86</nodeIds>
+  </ioNodes>
+  <memoryPorts dataString="MemBank_A">
+    <nodeIds>50</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="MemBank_A" portID="100">
+    <nodeIds>53</nodeIds>
+    <nodeIds>54</nodeIds>
+    <nodeIds>55</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="MemBank_B">
+    <nodeIds>66</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="MemBank_B" portID="100">
+    <nodeIds>53</nodeIds>
+    <nodeIds>54</nodeIds>
+    <nodeIds>55</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="MemBank_Out">
+    <nodeIds>68</nodeIds>
+    <nodeIds>85</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="SeparableConv2D_0_w_s" portID="100">
+    <nodeIds>54</nodeIds>
+  </memoryPorts>
+  <ioPorts name="input_data_V_data_V">
+    <contents name="read">
+      <nodeIds>46</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="input_data_V_dest_V">
+    <contents name="read">
+      <nodeIds>46</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="input_data_V_id_V">
+    <contents name="read">
+      <nodeIds>46</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="input_data_V_keep_V">
+    <contents name="read">
+      <nodeIds>46</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="input_data_V_last_V">
+    <contents name="read">
+      <nodeIds>46</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="input_data_V_strb_V">
+    <contents name="read">
+      <nodeIds>46</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="input_data_V_user_V">
+    <contents name="read">
+      <nodeIds>46</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="output_data_V_data_V">
+    <contents name="write">
+      <nodeIds>86</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="output_data_V_dest_V">
+    <contents name="write">
+      <nodeIds>86</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="output_data_V_id_V">
+    <contents name="write">
+      <nodeIds>86</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="output_data_V_keep_V">
+    <contents name="write">
+      <nodeIds>86</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="output_data_V_last_V">
+    <contents name="write">
+      <nodeIds>86</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="output_data_V_strb_V">
+    <contents name="write">
+      <nodeIds>86</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="output_data_V_user_V">
+    <contents name="write">
+      <nodeIds>86</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="ap_return">
+    <contents name="ret">
+      <nodeIds>90</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="34" stage="1" latency="1"/>
+      <operations id="35" stage="1" latency="1"/>
+      <operations id="36" stage="1" latency="1"/>
+      <operations id="37" stage="1" latency="1"/>
+      <operations id="38" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="41" stage="1" latency="1"/>
+      <operations id="42" stage="1" latency="1"/>
+      <operations id="43" stage="1" latency="1"/>
+      <operations id="44" stage="1" latency="1"/>
+      <operations id="46" stage="1" latency="1"/>
+      <operations id="47" stage="1" latency="1"/>
+      <operations id="48" stage="1" latency="1"/>
+      <operations id="49" stage="1" latency="1"/>
+      <operations id="50" stage="1" latency="1"/>
+      <operations id="51" stage="1" latency="1"/>
+      <operations id="53" stage="2" latency="2"/>
+    </states>
+    <states id="3">
+      <operations id="53" stage="1" latency="2"/>
+    </states>
+    <states id="4">
+      <operations id="54" stage="2" latency="2"/>
+    </states>
+    <states id="5">
+      <operations id="54" stage="1" latency="2"/>
+    </states>
+    <states id="6">
+      <operations id="55" stage="2" latency="2"/>
+    </states>
+    <states id="7">
+      <operations id="55" stage="1" latency="2"/>
+      <operations id="56" stage="1" latency="1"/>
+    </states>
+    <states id="8">
+      <operations id="58" stage="1" latency="1"/>
+      <operations id="59" stage="1" latency="1"/>
+      <operations id="60" stage="1" latency="1"/>
+      <operations id="61" stage="1" latency="1"/>
+      <operations id="62" stage="1" latency="1"/>
+      <operations id="64" stage="1" latency="1"/>
+      <operations id="65" stage="1" latency="1"/>
+      <operations id="66" stage="2" latency="2"/>
+      <operations id="71" stage="1" latency="1"/>
+    </states>
+    <states id="9">
+      <operations id="66" stage="1" latency="2"/>
+      <operations id="67" stage="1" latency="1"/>
+      <operations id="68" stage="1" latency="1"/>
+      <operations id="69" stage="1" latency="1"/>
+    </states>
+    <states id="10">
+      <operations id="73" stage="1" latency="1"/>
+      <operations id="74" stage="1" latency="1"/>
+      <operations id="75" stage="1" latency="1"/>
+      <operations id="76" stage="1" latency="1"/>
+      <operations id="77" stage="1" latency="1"/>
+      <operations id="79" stage="1" latency="1"/>
+      <operations id="82" stage="1" latency="1"/>
+      <operations id="83" stage="1" latency="1"/>
+      <operations id="84" stage="1" latency="1"/>
+      <operations id="85" stage="2" latency="2"/>
+    </states>
+    <states id="11">
+      <operations id="85" stage="1" latency="2"/>
+      <operations id="86" stage="2" latency="2"/>
+    </states>
+    <states id="12">
+      <operations id="80" stage="1" latency="1"/>
+      <operations id="81" stage="1" latency="1"/>
+      <operations id="86" stage="1" latency="2"/>
+      <operations id="87" stage="1" latency="1"/>
+      <operations id="88" stage="1" latency="1"/>
+    </states>
+    <states id="13">
+      <operations id="90" stage="2" latency="2"/>
+    </states>
+    <states id="14">
+      <operations id="90" stage="1" latency="2"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="5">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="5" outState="6">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="6" outState="7">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="7" outState="8">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="8" outState="9">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="9" outState="8">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="8" outState="10">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="13" outState="14">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="11" outState="12">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="12" outState="10">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="10" outState="13">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="10" outState="11">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="network" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="125856" mMaxLatency="125856">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <subRegions>4</subRegions>
+      <subRegions>5</subRegions>
+      <subRegions>6</subRegions>
+      <subRegions>7</subRegions>
+      <subRegions>8</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>39</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="Loop 1" mII="-1" mDepth="-1" mMinTripCount="784" mMaxTripCount="784" mMinLatency="784" mMaxLatency="784" mType="1">
+      <basicBlocks>45</basicBlocks>
+      <basicBlocks>52</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="4" mTag="Region 1" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="87434" mMaxLatency="87434">
+      <basicBlocks>57</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="5" mTag="Loop 2" mII="-1" mDepth="-1" mMinTripCount="12544" mMaxTripCount="12544" mMinLatency="25088" mMaxLatency="25088" mType="1">
+      <basicBlocks>63</basicBlocks>
+      <basicBlocks>70</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="6" mTag="Region 2" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>72</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="7" mTag="Loop 3" mII="1" mDepth="3" mMinTripCount="12544" mMaxTripCount="12544" mMinLatency="12545" mMaxLatency="12545" mType="1">
+      <basicBlocks>78</basicBlocks>
+      <basicBlocks>89</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="8" mTag="Return" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="1" mMaxLatency="1">
+      <basicBlocks>91</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

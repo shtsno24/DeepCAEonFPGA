@@ -1,16 +1,16 @@
 
 `timescale 1 ns / 1 ps
 
-  module network_mul_mul_16ns_16ns_32_1_1_DSP48_3(a, b, p);
-input [16 - 1 : 0] a;
-input [16 - 1 : 0] b;
-output signed [32 - 1 : 0] p;
+  module network_mul_mul_12s_16s_28_1_1_DSP48_1(a, b, p);
+input signed [12 - 1 : 0] a;
+input signed [16 - 1 : 0] b;
+output signed [28 - 1 : 0] p;
 
 assign p = $signed (a) * $signed (b);
 
 endmodule
 `timescale 1 ns / 1 ps
-module network_mul_mul_16ns_16ns_32_1_1(
+module network_mul_mul_12s_16s_28_1_1(
     din0,
     din1,
     dout);
@@ -26,7 +26,7 @@ output[dout_WIDTH - 1:0] dout;
 
 
 
-network_mul_mul_16ns_16ns_32_1_1_DSP48_3 network_mul_mul_16ns_16ns_32_1_1_DSP48_3_U(
+network_mul_mul_12s_16s_28_1_1_DSP48_1 network_mul_mul_12s_16s_28_1_1_DSP48_1_U(
     .a( din0 ),
     .b( din1 ),
     .p( dout ));

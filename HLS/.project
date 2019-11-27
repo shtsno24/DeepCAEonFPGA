@@ -37,11 +37,6 @@
 			<location>/home/masudalab/DeepCAEonFPGA/HLS/.apc/.tb</location>
 		</link>
 		<link>
-			<name>.reference/iomanip</name>
-			<type>1</type>
-			<location>/tools/Xilinx/Vivado/2018.3/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/iomanip</location>
-		</link>
-		<link>
 			<name>network/constraints</name>
 			<type>2</type>
 			<location>/home/masudalab/DeepCAEonFPGA/HLS/network/.tcls</location>
