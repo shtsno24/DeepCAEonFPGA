@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'padding2d_fix16'" level="0">
-<item name = "Date">Wed Nov 27 19:31:33 2019
+<item name = "Date">Thu Nov 28 22:31:48 2019
 </item>
 <item name = "Version">2018.3.1 (Build 2489210 on Tue Mar 26 04:40:43 MDT 2019)</item>
 <item name = "Project">HLS</item>
@@ -88,10 +88,10 @@
 <column name="o_count_7_fu_323_p2">+, 0, 0, 15, 9, 1</column>
 <column name="o_count_8_fu_273_p2">+, 0, 0, 14, 10, 1</column>
 <column name="o_count_9_fu_290_p2">+, 0, 0, 14, 10, 1</column>
-<column name="tmp_1_fu_256_p2">+, 0, 0, 14, 10, 1</column>
-<column name="tmp_4_fu_216_p2">+, 0, 0, 15, 5, 1</column>
-<column name="tmp_5_fu_239_p2">+, 0, 0, 14, 10, 5</column>
-<column name="tmp_7_fu_262_p2">+, 0, 0, 14, 10, 5</column>
+<column name="tmp_2_fu_262_p2">+, 0, 0, 14, 10, 5</column>
+<column name="tmp_5_fu_256_p2">+, 0, 0, 14, 10, 1</column>
+<column name="tmp_8_fu_216_p2">+, 0, 0, 15, 5, 1</column>
+<column name="tmp_9_fu_239_p2">+, 0, 0, 14, 10, 5</column>
 <column name="exitcond2_fu_210_p2">icmp, 0, 0, 11, 5, 2</column>
 <column name="exitcond3_fu_312_p2">icmp, 0, 0, 13, 9, 8</column>
 <column name="exitcond7_fu_227_p2">icmp, 0, 0, 11, 5, 4</column>
@@ -130,9 +130,9 @@
 <column name="o_count_4_reg_189">10, 0, 10, 0</column>
 <column name="o_count_5_reg_199">9, 0, 9, 0</column>
 <column name="o_count_6_reg_121">10, 0, 10, 0</column>
-<column name="tmp_1_reg_358">10, 0, 10, 0</column>
-<column name="tmp_5_reg_345">10, 0, 10, 0</column>
-<column name="tmp_7_reg_363">10, 0, 10, 0</column>
+<column name="tmp_2_reg_363">10, 0, 10, 0</column>
+<column name="tmp_5_reg_358">10, 0, 10, 0</column>
+<column name="tmp_9_reg_345">10, 0, 10, 0</column>
 </table>
 </item>
 </section>

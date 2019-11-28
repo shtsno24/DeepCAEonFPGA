@@ -23,13 +23,14 @@ module pointwise_conv2d_fix (
         output_r_d0
 );
 
-parameter    ap_ST_fsm_state1 = 7'd1;
-parameter    ap_ST_fsm_state2 = 7'd2;
-parameter    ap_ST_fsm_state3 = 7'd4;
-parameter    ap_ST_fsm_state4 = 7'd8;
-parameter    ap_ST_fsm_state5 = 7'd16;
-parameter    ap_ST_fsm_state6 = 7'd32;
-parameter    ap_ST_fsm_state7 = 7'd64;
+parameter    ap_ST_fsm_state1 = 8'd1;
+parameter    ap_ST_fsm_state2 = 8'd2;
+parameter    ap_ST_fsm_state3 = 8'd4;
+parameter    ap_ST_fsm_state4 = 8'd8;
+parameter    ap_ST_fsm_state5 = 8'd16;
+parameter    ap_ST_fsm_state6 = 8'd32;
+parameter    ap_ST_fsm_state7 = 8'd64;
+parameter    ap_ST_fsm_state8 = 8'd128;
 
 input   ap_clk;
 input   ap_rst;
@@ -52,71 +53,90 @@ reg input_r_ce0;
 reg output_r_ce0;
 reg output_r_we0;
 
-(* fsm_encoding = "none" *) reg   [6:0] ap_CS_fsm;
+(* fsm_encoding = "none" *) reg   [7:0] ap_CS_fsm;
 wire    ap_CS_fsm_state1;
-wire   [14:0] phi_mul_cast_fu_110_p1;
-reg   [14:0] phi_mul_cast_reg_264;
+wire   [3:0] SeparableConv2D_0_b_s_address0;
+reg    SeparableConv2D_0_b_s_ce0;
+wire   [12:0] SeparableConv2D_0_b_s_q0;
+wire   [14:0] phi_mul_cast_fu_127_p1;
+reg   [14:0] phi_mul_cast_reg_295;
 wire    ap_CS_fsm_state2;
-wire   [13:0] next_mul_fu_114_p2;
-reg   [13:0] next_mul_reg_269;
-wire   [4:0] out_d_1_fu_126_p2;
-reg   [4:0] out_d_1_reg_277;
-wire   [4:0] out_h_1_fu_138_p2;
-reg   [4:0] out_h_1_reg_285;
+wire   [13:0] next_mul_fu_131_p2;
+reg   [13:0] next_mul_reg_300;
+wire   [4:0] out_d_1_fu_143_p2;
+reg   [4:0] out_d_1_reg_308;
+wire   [0:0] exitcond4_fu_137_p2;
+wire  signed [14:0] SeparableConv2D_0_b_3_fu_154_p1;
+reg  signed [14:0] SeparableConv2D_0_b_3_reg_318;
 wire    ap_CS_fsm_state3;
-wire   [10:0] tmp_4_fu_168_p2;
-reg   [10:0] tmp_4_reg_290;
-wire   [0:0] exitcond2_fu_132_p2;
-wire   [4:0] out_w_1_fu_180_p2;
-reg   [4:0] out_w_1_reg_298;
+wire   [4:0] out_h_1_fu_164_p2;
+reg   [4:0] out_h_1_reg_326;
 wire    ap_CS_fsm_state4;
-wire   [14:0] tmp_8_fu_199_p2;
-reg   [14:0] tmp_8_reg_303;
-wire   [0:0] exitcond1_fu_174_p2;
-reg  signed [15:0] input_load_reg_313;
+wire   [10:0] tmp_5_fu_194_p2;
+reg   [10:0] tmp_5_reg_331;
+wire   [0:0] exitcond3_fu_158_p2;
+wire   [4:0] out_w_1_fu_206_p2;
+reg   [4:0] out_w_1_reg_339;
 wire    ap_CS_fsm_state5;
-wire   [13:0] p_tmp_s_fu_232_p3;
-reg   [13:0] p_tmp_s_reg_318;
+wire   [14:0] tmp_9_fu_225_p2;
+reg   [14:0] tmp_9_reg_344;
+wire   [0:0] exitcond2_fu_200_p2;
+reg  signed [15:0] input_load_reg_354;
 wire    ap_CS_fsm_state6;
-reg   [4:0] out_d_reg_66;
-reg   [13:0] phi_mul_reg_77;
-reg   [4:0] out_h_reg_88;
-wire   [0:0] exitcond3_fu_120_p2;
-reg   [4:0] out_w_reg_99;
+reg   [13:0] tmp_8_reg_359;
 wire    ap_CS_fsm_state7;
-wire   [63:0] tmp_5_fu_208_p1;
-wire   [63:0] tmp_9_fu_243_p1;
-wire   [9:0] p_shl_fu_144_p3;
-wire   [6:0] p_shl5_fu_156_p3;
-wire   [10:0] p_shl_cast_fu_152_p1;
-wire   [10:0] p_shl5_cast_fu_164_p1;
-wire   [10:0] tmp_6_cast_fu_186_p1;
-wire  signed [10:0] tmp1_fu_190_p2;
-wire  signed [14:0] tmp1_cast_fu_195_p1;
-wire  signed [31:0] tmp_2_cast_fu_204_p1;
-wire  signed [27:0] tmp_3_fu_256_p2;
-wire   [0:0] tmp_fu_225_p3;
-wire   [13:0] tmp_6_fu_216_p4;
-wire  signed [31:0] tmp_8_cast_fu_240_p1;
-wire  signed [14:0] p_tmp_cast1_fu_248_p1;
-wire  signed [11:0] tmp_3_fu_256_p0;
-reg   [6:0] ap_NS_fsm;
+reg   [4:0] out_d_reg_83;
+reg   [13:0] phi_mul_reg_94;
+reg   [4:0] out_h_reg_105;
+reg   [4:0] out_w_reg_116;
+wire    ap_CS_fsm_state8;
+wire   [63:0] tmp_2_fu_149_p1;
+wire   [63:0] tmp_4_fu_234_p1;
+wire   [63:0] tmp_s_fu_254_p1;
+wire   [9:0] p_shl_fu_170_p3;
+wire   [6:0] p_shl5_fu_182_p3;
+wire   [10:0] p_shl_cast_fu_178_p1;
+wire   [10:0] p_shl5_cast_fu_190_p1;
+wire   [10:0] tmp_7_cast_fu_212_p1;
+wire  signed [10:0] tmp1_fu_216_p2;
+wire  signed [14:0] tmp1_cast_fu_221_p1;
+wire  signed [31:0] tmp_10_cast_fu_230_p1;
+wire  signed [27:0] tmp_7_fu_288_p2;
+wire  signed [31:0] tmp_9_cast_fu_251_p1;
+wire  signed [14:0] tmp_10_cast1_fu_259_p1;
+wire   [14:0] tmp_3_fu_262_p2;
+wire   [0:0] tmp_fu_267_p3;
+wire   [14:0] storemerge_fu_275_p3;
+wire  signed [11:0] tmp_7_fu_288_p1;
+reg   [7:0] ap_NS_fsm;
 
 // power-on initialization
 initial begin
-#0 ap_CS_fsm = 7'd1;
+#0 ap_CS_fsm = 8'd1;
 end
 
-network_mul_mul_12s_16s_28_1_1 #(
+pointwise_conv2d_fix_SeparableConv2D_0_b_s #(
+    .DataWidth( 13 ),
+    .AddressRange( 16 ),
+    .AddressWidth( 4 ))
+SeparableConv2D_0_b_s_U(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .address0(SeparableConv2D_0_b_s_address0),
+    .ce0(SeparableConv2D_0_b_s_ce0),
+    .q0(SeparableConv2D_0_b_s_q0)
+);
+
+network_mul_mul_16s_12s_28_1_1 #(
     .ID( 1 ),
     .NUM_STAGE( 1 ),
-    .din0_WIDTH( 12 ),
-    .din1_WIDTH( 16 ),
+    .din0_WIDTH( 16 ),
+    .din1_WIDTH( 12 ),
     .dout_WIDTH( 28 ))
-network_mul_mul_12s_16s_28_1_1_U8(
-    .din0(tmp_3_fu_256_p0),
-    .din1(input_load_reg_313),
-    .dout(tmp_3_fu_256_p2)
+network_mul_mul_16s_12s_28_1_1_U8(
+    .din0(input_load_reg_354),
+    .din1(tmp_7_fu_288_p1),
+    .dout(tmp_7_fu_288_p2)
 );
 
 always @ (posedge ap_clk) begin
@@ -128,83 +148,97 @@ always @ (posedge ap_clk) begin
 end
 
 always @ (posedge ap_clk) begin
-    if (((exitcond2_fu_132_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state3))) begin
-        out_d_reg_66 <= out_d_1_reg_277;
+    if (((exitcond3_fu_158_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state4))) begin
+        out_d_reg_83 <= out_d_1_reg_308;
     end else if (((1'b1 == ap_CS_fsm_state1) & (ap_start == 1'b1))) begin
-        out_d_reg_66 <= 5'd0;
+        out_d_reg_83 <= 5'd0;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((exitcond3_fu_120_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state2))) begin
-        out_h_reg_88 <= 5'd0;
-    end else if (((exitcond1_fu_174_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state4))) begin
-        out_h_reg_88 <= out_h_1_reg_285;
+    if (((exitcond2_fu_200_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state5))) begin
+        out_h_reg_105 <= out_h_1_reg_326;
+    end else if ((1'b1 == ap_CS_fsm_state3)) begin
+        out_h_reg_105 <= 5'd0;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((exitcond2_fu_132_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state3))) begin
-        out_w_reg_99 <= 5'd0;
-    end else if ((1'b1 == ap_CS_fsm_state7)) begin
-        out_w_reg_99 <= out_w_1_reg_298;
+    if (((exitcond3_fu_158_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state4))) begin
+        out_w_reg_116 <= 5'd0;
+    end else if ((1'b1 == ap_CS_fsm_state8)) begin
+        out_w_reg_116 <= out_w_1_reg_339;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((exitcond2_fu_132_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state3))) begin
-        phi_mul_reg_77 <= next_mul_reg_269;
+    if (((exitcond3_fu_158_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state4))) begin
+        phi_mul_reg_94 <= next_mul_reg_300;
     end else if (((1'b1 == ap_CS_fsm_state1) & (ap_start == 1'b1))) begin
-        phi_mul_reg_77 <= 14'd0;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state5)) begin
-        input_load_reg_313 <= input_r_q0;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state2)) begin
-        next_mul_reg_269 <= next_mul_fu_114_p2;
-        out_d_1_reg_277 <= out_d_1_fu_126_p2;
-        phi_mul_cast_reg_264[13 : 0] <= phi_mul_cast_fu_110_p1[13 : 0];
+        phi_mul_reg_94 <= 14'd0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state3)) begin
-        out_h_1_reg_285 <= out_h_1_fu_138_p2;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state4)) begin
-        out_w_1_reg_298 <= out_w_1_fu_180_p2;
+        SeparableConv2D_0_b_3_reg_318 <= SeparableConv2D_0_b_3_fu_154_p1;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state6)) begin
-        p_tmp_s_reg_318 <= p_tmp_s_fu_232_p3;
+        input_load_reg_354 <= input_r_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((exitcond2_fu_132_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state3))) begin
-        tmp_4_reg_290[10 : 2] <= tmp_4_fu_168_p2[10 : 2];
+    if ((1'b1 == ap_CS_fsm_state2)) begin
+        next_mul_reg_300 <= next_mul_fu_131_p2;
+        out_d_1_reg_308 <= out_d_1_fu_143_p2;
+        phi_mul_cast_reg_295[13 : 0] <= phi_mul_cast_fu_127_p1[13 : 0];
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((exitcond1_fu_174_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state4))) begin
-        tmp_8_reg_303 <= tmp_8_fu_199_p2;
+    if ((1'b1 == ap_CS_fsm_state4)) begin
+        out_h_1_reg_326 <= out_h_1_fu_164_p2;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state5)) begin
+        out_w_1_reg_339 <= out_w_1_fu_206_p2;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if (((exitcond3_fu_158_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state4))) begin
+        tmp_5_reg_331[10 : 2] <= tmp_5_fu_194_p2[10 : 2];
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state7)) begin
+        tmp_8_reg_359 <= {{tmp_7_fu_288_p2[27:14]}};
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if (((exitcond2_fu_200_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state5))) begin
+        tmp_9_reg_344 <= tmp_9_fu_225_p2;
     end
 end
 
 always @ (*) begin
-    if ((((exitcond3_fu_120_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state2)) | ((ap_start == 1'b0) & (1'b1 == ap_CS_fsm_state1)))) begin
+    if ((1'b1 == ap_CS_fsm_state2)) begin
+        SeparableConv2D_0_b_s_ce0 = 1'b1;
+    end else begin
+        SeparableConv2D_0_b_s_ce0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((((exitcond4_fu_137_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state2)) | ((ap_start == 1'b0) & (1'b1 == ap_CS_fsm_state1)))) begin
         ap_done = 1'b1;
     end else begin
         ap_done = 1'b0;
@@ -220,7 +254,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((exitcond3_fu_120_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state2))) begin
+    if (((exitcond4_fu_137_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state2))) begin
         ap_ready = 1'b1;
     end else begin
         ap_ready = 1'b0;
@@ -228,7 +262,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state4)) begin
+    if ((1'b1 == ap_CS_fsm_state5)) begin
         input_r_ce0 = 1'b1;
     end else begin
         input_r_ce0 = 1'b0;
@@ -236,7 +270,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state7)) begin
+    if ((1'b1 == ap_CS_fsm_state8)) begin
         output_r_ce0 = 1'b1;
     end else begin
         output_r_ce0 = 1'b0;
@@ -244,7 +278,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state7)) begin
+    if ((1'b1 == ap_CS_fsm_state8)) begin
         output_r_we0 = 1'b1;
     end else begin
         output_r_we0 = 1'b0;
@@ -261,40 +295,47 @@ always @ (*) begin
             end
         end
         ap_ST_fsm_state2 : begin
-            if (((exitcond3_fu_120_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state2))) begin
+            if (((exitcond4_fu_137_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state2))) begin
                 ap_NS_fsm = ap_ST_fsm_state1;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state3;
             end
         end
         ap_ST_fsm_state3 : begin
-            if (((exitcond2_fu_132_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state3))) begin
-                ap_NS_fsm = ap_ST_fsm_state2;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state4;
-            end
+            ap_NS_fsm = ap_ST_fsm_state4;
         end
         ap_ST_fsm_state4 : begin
-            if (((exitcond1_fu_174_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state4))) begin
-                ap_NS_fsm = ap_ST_fsm_state3;
+            if (((exitcond3_fu_158_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state4))) begin
+                ap_NS_fsm = ap_ST_fsm_state2;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state5;
             end
         end
         ap_ST_fsm_state5 : begin
-            ap_NS_fsm = ap_ST_fsm_state6;
+            if (((exitcond2_fu_200_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state5))) begin
+                ap_NS_fsm = ap_ST_fsm_state4;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state6;
+            end
         end
         ap_ST_fsm_state6 : begin
             ap_NS_fsm = ap_ST_fsm_state7;
         end
         ap_ST_fsm_state7 : begin
-            ap_NS_fsm = ap_ST_fsm_state4;
+            ap_NS_fsm = ap_ST_fsm_state8;
+        end
+        ap_ST_fsm_state8 : begin
+            ap_NS_fsm = ap_ST_fsm_state5;
         end
         default : begin
             ap_NS_fsm = 'bx;
         end
     endcase
 end
+
+assign SeparableConv2D_0_b_3_fu_154_p1 = $signed(SeparableConv2D_0_b_s_q0);
+
+assign SeparableConv2D_0_b_s_address0 = tmp_2_fu_149_p1;
 
 assign ap_CS_fsm_state1 = ap_CS_fsm[32'd0];
 
@@ -310,67 +351,71 @@ assign ap_CS_fsm_state6 = ap_CS_fsm[32'd5];
 
 assign ap_CS_fsm_state7 = ap_CS_fsm[32'd6];
 
-assign exitcond1_fu_174_p2 = ((out_w_reg_99 == 5'd28) ? 1'b1 : 1'b0);
+assign ap_CS_fsm_state8 = ap_CS_fsm[32'd7];
 
-assign exitcond2_fu_132_p2 = ((out_h_reg_88 == 5'd28) ? 1'b1 : 1'b0);
+assign exitcond2_fu_200_p2 = ((out_w_reg_116 == 5'd28) ? 1'b1 : 1'b0);
 
-assign exitcond3_fu_120_p2 = ((out_d_reg_66 == 5'd16) ? 1'b1 : 1'b0);
+assign exitcond3_fu_158_p2 = ((out_h_reg_105 == 5'd28) ? 1'b1 : 1'b0);
 
-assign input_r_address0 = tmp_5_fu_208_p1;
+assign exitcond4_fu_137_p2 = ((out_d_reg_83 == 5'd16) ? 1'b1 : 1'b0);
 
-assign next_mul_fu_114_p2 = (phi_mul_reg_77 + 14'd784);
+assign input_r_address0 = tmp_4_fu_234_p1;
 
-assign out_d_1_fu_126_p2 = (out_d_reg_66 + 5'd1);
+assign next_mul_fu_131_p2 = (phi_mul_reg_94 + 14'd784);
 
-assign out_h_1_fu_138_p2 = (out_h_reg_88 + 5'd1);
+assign out_d_1_fu_143_p2 = (out_d_reg_83 + 5'd1);
 
-assign out_w_1_fu_180_p2 = (out_w_reg_99 + 5'd1);
+assign out_h_1_fu_164_p2 = (out_h_reg_105 + 5'd1);
 
-assign output_r_address0 = tmp_9_fu_243_p1;
+assign out_w_1_fu_206_p2 = (out_w_reg_116 + 5'd1);
 
-assign output_r_d0 = $unsigned(p_tmp_cast1_fu_248_p1);
+assign output_r_address0 = tmp_s_fu_254_p1;
 
-assign p_shl5_cast_fu_164_p1 = p_shl5_fu_156_p3;
+assign output_r_d0 = storemerge_fu_275_p3;
 
-assign p_shl5_fu_156_p3 = {{out_h_reg_88}, {2'd0}};
+assign p_shl5_cast_fu_190_p1 = p_shl5_fu_182_p3;
 
-assign p_shl_cast_fu_152_p1 = p_shl_fu_144_p3;
+assign p_shl5_fu_182_p3 = {{out_h_reg_105}, {2'd0}};
 
-assign p_shl_fu_144_p3 = {{out_h_reg_88}, {5'd0}};
+assign p_shl_cast_fu_178_p1 = p_shl_fu_170_p3;
 
-assign p_tmp_cast1_fu_248_p1 = $signed(p_tmp_s_reg_318);
+assign p_shl_fu_170_p3 = {{out_h_reg_105}, {5'd0}};
 
-assign p_tmp_s_fu_232_p3 = ((tmp_fu_225_p3[0:0] === 1'b1) ? 14'd0 : tmp_6_fu_216_p4);
+assign phi_mul_cast_fu_127_p1 = phi_mul_reg_94;
 
-assign phi_mul_cast_fu_110_p1 = phi_mul_reg_77;
+assign storemerge_fu_275_p3 = ((tmp_fu_267_p3[0:0] === 1'b1) ? 15'd0 : tmp_3_fu_262_p2);
 
-assign tmp1_cast_fu_195_p1 = tmp1_fu_190_p2;
+assign tmp1_cast_fu_221_p1 = tmp1_fu_216_p2;
 
-assign tmp1_fu_190_p2 = (tmp_4_reg_290 + tmp_6_cast_fu_186_p1);
+assign tmp1_fu_216_p2 = (tmp_7_cast_fu_212_p1 + tmp_5_reg_331);
 
-assign tmp_2_cast_fu_204_p1 = tmp1_fu_190_p2;
+assign tmp_10_cast1_fu_259_p1 = $signed(tmp_8_reg_359);
 
-assign tmp_3_fu_256_p0 = 28'd268433686;
+assign tmp_10_cast_fu_230_p1 = tmp1_fu_216_p2;
 
-assign tmp_4_fu_168_p2 = (p_shl_cast_fu_152_p1 - p_shl5_cast_fu_164_p1);
+assign tmp_2_fu_149_p1 = out_d_reg_83;
 
-assign tmp_5_fu_208_p1 = $unsigned(tmp_2_cast_fu_204_p1);
+assign tmp_3_fu_262_p2 = ($signed(tmp_10_cast1_fu_259_p1) + $signed(SeparableConv2D_0_b_3_reg_318));
 
-assign tmp_6_cast_fu_186_p1 = out_w_reg_99;
+assign tmp_4_fu_234_p1 = $unsigned(tmp_10_cast_fu_230_p1);
 
-assign tmp_6_fu_216_p4 = {{tmp_3_fu_256_p2[27:14]}};
+assign tmp_5_fu_194_p2 = (p_shl_cast_fu_178_p1 - p_shl5_cast_fu_190_p1);
 
-assign tmp_8_cast_fu_240_p1 = $signed(tmp_8_reg_303);
+assign tmp_7_cast_fu_212_p1 = out_w_reg_116;
 
-assign tmp_8_fu_199_p2 = ($signed(tmp1_cast_fu_195_p1) + $signed(phi_mul_cast_reg_264));
+assign tmp_7_fu_288_p1 = 28'd268433686;
 
-assign tmp_9_fu_243_p1 = $unsigned(tmp_8_cast_fu_240_p1);
+assign tmp_9_cast_fu_251_p1 = $signed(tmp_9_reg_344);
 
-assign tmp_fu_225_p3 = tmp_3_fu_256_p2[32'd27];
+assign tmp_9_fu_225_p2 = ($signed(phi_mul_cast_reg_295) + $signed(tmp1_cast_fu_221_p1));
+
+assign tmp_fu_267_p3 = tmp_3_fu_262_p2[32'd14];
+
+assign tmp_s_fu_254_p1 = $unsigned(tmp_9_cast_fu_251_p1);
 
 always @ (posedge ap_clk) begin
-    phi_mul_cast_reg_264[14] <= 1'b0;
-    tmp_4_reg_290[1:0] <= 2'b00;
+    phi_mul_cast_reg_295[14] <= 1'b0;
+    tmp_5_reg_331[1:0] <= 2'b00;
 end
 
 endmodule //pointwise_conv2d_fix

@@ -38,7 +38,7 @@
     "ClockPeriod": "10",
     "IsCombLogic": "0",
     "II": "x",
-    "Latency": "125856",
+    "Latency": "125872",
     "Uncertainty": "1.25"
   },
   "Xdc": {"OocClocks": ["create_clock -name ap_clk -period 10.000 [get_ports ap_clk]"]},
@@ -55,14 +55,14 @@
   },
   "Files": {
     "CSource": [
-      "..\/..\/layers_c\/conv2d.cpp",
-      "..\/..\/layers_c\/depthwise_conv2d.cpp",
-      "..\/..\/layers_c\/max_pooling2d.cpp",
-      "..\/..\/mnist_AXI_Stream.cpp",
-      "..\/..\/layers_c\/padding2d.cpp",
-      "..\/..\/layers_c\/pointwise_conv2d.cpp",
+      "..\/..\/layers_c\/up_sampling2d.cpp",
       "..\/..\/layers_c\/separable_conv2d.cpp",
-      "..\/..\/layers_c\/up_sampling2d.cpp"
+      "..\/..\/layers_c\/pointwise_conv2d.cpp",
+      "..\/..\/layers_c\/padding2d.cpp",
+      "..\/..\/mnist_AXI_Stream.cpp",
+      "..\/..\/layers_c\/max_pooling2d.cpp",
+      "..\/..\/layers_c\/depthwise_conv2d.cpp",
+      "..\/..\/layers_c\/conv2d.cpp"
     ],
     "Vhdl": [
       "impl\/vhdl\/depthwise_conv2d_fix.vhd",
@@ -70,10 +70,11 @@
       "impl\/vhdl\/network_AXILiteS_s_axi.vhd",
       "impl\/vhdl\/network_MemBank_A.vhd",
       "impl\/vhdl\/network_MemBank_Out.vhd",
-      "impl\/vhdl\/network_mul_mul_12s_16s_28_1_1.vhd",
+      "impl\/vhdl\/network_mul_mul_16s_12s_28_1_1.vhd",
       "impl\/vhdl\/network_mul_mul_16s_15s_30_1_1.vhd",
       "impl\/vhdl\/padding2d_fix16.vhd",
       "impl\/vhdl\/pointwise_conv2d_fix.vhd",
+      "impl\/vhdl\/pointwise_conv2d_fix_SeparableConv2D_0_b_s.vhd",
       "impl\/vhdl\/network.vhd"
     ],
     "Verilog": [
@@ -83,10 +84,12 @@
       "impl\/verilog\/network_AXILiteS_s_axi.v",
       "impl\/verilog\/network_MemBank_A.v",
       "impl\/verilog\/network_MemBank_Out.v",
-      "impl\/verilog\/network_mul_mul_12s_16s_28_1_1.v",
+      "impl\/verilog\/network_mul_mul_16s_12s_28_1_1.v",
       "impl\/verilog\/network_mul_mul_16s_15s_30_1_1.v",
       "impl\/verilog\/padding2d_fix16.v",
       "impl\/verilog\/pointwise_conv2d_fix.v",
+      "impl\/verilog\/pointwise_conv2d_fix_SeparableConv2D_0_b_s.v",
+      "impl\/verilog\/pointwise_conv2d_fix_SeparableConv2D_0_b_s_rom.dat",
       "impl\/verilog\/network.v"
     ],
     "SwDriver": [
@@ -694,15 +697,15 @@
       "Instances": [
         {
           "ModuleName": "padding2d_fix16",
-          "InstanceName": "grp_padding2d_fix16_fu_235"
+          "InstanceName": "grp_padding2d_fix16_fu_237"
         },
         {
           "ModuleName": "depthwise_conv2d_fix",
-          "InstanceName": "grp_depthwise_conv2d_fix_fu_241"
+          "InstanceName": "grp_depthwise_conv2d_fix_fu_243"
         },
         {
           "ModuleName": "pointwise_conv2d_fix",
-          "InstanceName": "grp_pointwise_conv2d_fix_fu_249"
+          "InstanceName": "grp_pointwise_conv2d_fix_fu_251"
         }
       ]
     },
@@ -818,24 +821,24 @@
       },
       "pointwise_conv2d_fix": {
         "Latency": {
-          "LatencyBest": "51105",
-          "LatencyAvg": "51105",
-          "LatencyWorst": "51105",
-          "PipelineII": "51105",
+          "LatencyBest": "51121",
+          "LatencyAvg": "51121",
+          "LatencyWorst": "51121",
+          "PipelineII": "51121",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
         "Timing": {
           "Target": "10.00",
           "Uncertainty": "1.25",
-          "Estimate": "7.082"
+          "Estimate": "6.380"
         },
         "Loops": [{
             "Name": "Loop 1",
             "TripCount": "16",
-            "Latency": "51104",
+            "Latency": "51120",
             "PipelineII": "",
-            "PipelineDepth": "3194",
+            "PipelineDepth": "3195",
             "Loops": [{
                 "Name": "Loop 1.1",
                 "TripCount": "28",
@@ -852,18 +855,18 @@
               }]
           }],
         "Area": {
+          "BRAM_18K": "0",
           "DSP48E": "1",
-          "FF": "133",
-          "LUT": "235",
-          "BRAM_18K": "0"
+          "FF": "162",
+          "LUT": "264"
         }
       },
       "network": {
         "Latency": {
-          "LatencyBest": "125856",
-          "LatencyAvg": "125856",
-          "LatencyWorst": "125856",
-          "PipelineII": "125857",
+          "LatencyBest": "125872",
+          "LatencyAvg": "125872",
+          "LatencyWorst": "125872",
+          "PipelineII": "125873",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
@@ -898,8 +901,8 @@
         "Area": {
           "BRAM_18K": "48",
           "DSP48E": "2",
-          "FF": "654",
-          "LUT": "1704"
+          "FF": "683",
+          "LUT": "1733"
         }
       }
     }
@@ -914,7 +917,7 @@
   },
   "GenData": {
     "DataVersion": "0.1",
-    "Time": "2019-11-27 19:31:34 JST",
+    "Time": "2019-11-28 22:31:50 JST",
     "ToolName": "vivado_hls",
     "ToolVersion": "2018.3.1"
   }

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'network'" level="0">
-<item name = "Date">Wed Nov 27 19:31:32 2019
+<item name = "Date">Thu Nov 28 22:31:48 2019
 </item>
 <item name = "Version">2018.3.1 (Build 2489210 on Tue Mar 26 04:40:43 MDT 2019)</item>
 <item name = "Project">HLS</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">125856, 125856, 125856, 125856, none</column>
+<column name="">125872, 125872, 125872, 125872, none</column>
 </table>
 </item>
 <item name = "Detail">

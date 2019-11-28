@@ -36973,8 +36973,9 @@ uint8_t relu);
 # 6 "/home/masudalab/DeepCAEonFPGA/./layers_c/layers.h" 2
 # 1 "/home/masudalab/DeepCAEonFPGA/./layers_c/pointwise_conv2d.h" 1
 
-uint8_t pointwise_conv2d_fix16(uint16_t input_depth, uint16_t input_height, uint16_t input_width, int16_t* input,
-uint16_t output_depth, uint16_t output_height, uint16_t output_width, int16_t* output,
+
+uint8_t pointwise_conv2d_fix16(const uint16_t input_depth, uint16_t input_height, uint16_t input_width, int16_t* input,
+const uint16_t output_depth, uint16_t output_height, uint16_t output_width, int16_t* output,
 const int16_t* bias,
 uint16_t kernel_height, uint16_t kernel_width, const int16_t* kernel,
 uint8_t relu, uint8_t fractal_width);
@@ -76636,7 +76637,7 @@ int network(axis &input_data, axis &output_data) {
  SeparableConv2D_0_depth, SeparableConv2D_0_height, SeparableConv2D_0_width, (int16_t*)MemBank_B,
  (int16_t*)SeparableConv2D_0_b_p,
  1, 1, (int16_t*)SeparableConv2D_0_w_p, 1, 14);
-# 129 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
+# 132 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
  for(int i = 0; i < array_length; i++){
 
   MemBank_Out[i] = MemBank_B[i];

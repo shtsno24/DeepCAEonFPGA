@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'network'" level="0">
-<item name = "Date">Wed Nov 27 19:31:32 2019
+<item name = "Date">Thu Nov 28 22:31:48 2019
 </item>
 <item name = "Version">2018.3.1 (Build 2489210 on Tue Mar 26 04:40:43 MDT 2019)</item>
 <item name = "Project">HLS</item>
@@ -24,16 +24,16 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">125856, 125856, 125856, 125856, none</column>
+<column name="">125872, 125872, 125872, 125872, none</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="7">Instance, Module, min, max, min, max, Type</keys>
-<column name="grp_padding2d_fix16_fu_235">padding2d_fix16, 1771, 1771, 1771, 1771, none</column>
-<column name="grp_depthwise_conv2d_fix_fu_241">depthwise_conv2d_fix, 34553, 34553, 34553, 34553, none</column>
-<column name="grp_pointwise_conv2d_fix_fu_249">pointwise_conv2d_fix, 51105, 51105, 51105, 51105, none</column>
+<column name="grp_padding2d_fix16_fu_237">padding2d_fix16, 1771, 1771, 1771, 1771, none</column>
+<column name="grp_depthwise_conv2d_fix_fu_243">depthwise_conv2d_fix, 34553, 34553, 34553, 34553, none</column>
+<column name="grp_pointwise_conv2d_fix_fu_251">pointwise_conv2d_fix, 51121, 51121, 51121, 51121, none</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

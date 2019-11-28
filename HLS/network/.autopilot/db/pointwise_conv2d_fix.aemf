@@ -1,317 +1,334 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1574850693000">
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1574947908000">
   <ports id="1" name="input_r" type="PortType" originalName="input" coreName="RAM" bitwidth="16" iftype="IfTypeRegister" arraysize="14400">
     <dataOutputObjs>load</dataOutputObjs>
   </ports>
   <ports id="2" name="output_r" type="PortType" originalName="output" coreName="RAM" bitwidth="16" direction="DirOut" iftype="IfTypeRegister" arraysize="14400"/>
-  <edges id="62" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.0/@node_objs.0"/>
-  <edges id="63" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.8/@node_objs.0"/>
-  <edges id="66" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.1/@node_objs.0"/>
-  <edges id="67" source_obj="//@blocks.1/@node_objs.4" sink_obj="//@blocks.1/@node_objs.0" is_back_edge="1"/>
-  <edges id="68" edge_type="CtrlEdge" source_obj="//@blocks.8" sink_obj="//@blocks.1/@node_objs.0" is_back_edge="1"/>
-  <edges id="71" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.1/@node_objs.1"/>
-  <edges id="72" source_obj="//@blocks.1/@node_objs.2" sink_obj="//@blocks.1/@node_objs.1" is_back_edge="1"/>
-  <edges id="73" edge_type="CtrlEdge" source_obj="//@blocks.8" sink_obj="//@blocks.1/@node_objs.1" is_back_edge="1"/>
-  <edges id="75" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.1/@node_objs.2"/>
-  <edges id="78" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.3"/>
-  <edges id="81" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.4"/>
-  <edges id="84" source_obj="//@blocks.1/@node_objs.3" sink_obj="//@blocks.1/@node_objs.5"/>
-  <edges id="85" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.1/@node_objs.5"/>
-  <edges id="86" edge_type="CtrlEdge" source_obj="//@blocks.9" sink_obj="//@blocks.1/@node_objs.5"/>
-  <edges id="87" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.2/@node_objs.0"/>
-  <edges id="88" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.7/@node_objs.0"/>
-  <edges id="89" source_obj="//@blocks.3/@node_objs.2" sink_obj="//@blocks.3/@node_objs.0" is_back_edge="1"/>
-  <edges id="90" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.3/@node_objs.0" is_back_edge="1"/>
-  <edges id="92" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.3/@node_objs.0"/>
-  <edges id="93" source_obj="//@blocks.3/@node_objs.0" sink_obj="//@blocks.3/@node_objs.1"/>
-  <edges id="96" source_obj="//@blocks.3/@node_objs.0" sink_obj="//@blocks.3/@node_objs.2"/>
-  <edges id="98" source_obj="//@blocks.3/@node_objs.1" sink_obj="//@blocks.3/@node_objs.3"/>
-  <edges id="99" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.3/@node_objs.3"/>
-  <edges id="100" edge_type="CtrlEdge" source_obj="//@blocks.8" sink_obj="//@blocks.3/@node_objs.3"/>
-  <edges id="114" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.4/@node_objs.1"/>
-  <edges id="115" source_obj="//@blocks.5/@node_objs.2" sink_obj="//@blocks.5/@node_objs.0" is_back_edge="1"/>
-  <edges id="116" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.5/@node_objs.0" is_back_edge="1"/>
-  <edges id="118" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.5/@node_objs.0"/>
-  <edges id="119" source_obj="//@blocks.5/@node_objs.0" sink_obj="//@blocks.5/@node_objs.1"/>
-  <edges id="121" source_obj="//@blocks.5/@node_objs.0" sink_obj="//@blocks.5/@node_objs.2"/>
-  <edges id="123" source_obj="//@blocks.5/@node_objs.1" sink_obj="//@blocks.5/@node_objs.3"/>
-  <edges id="124" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.5/@node_objs.3"/>
-  <edges id="125" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.5/@node_objs.3"/>
-  <edges id="127" source_obj="//@blocks.4/@node_objs.0" sink_obj="//@blocks.6/@node_objs.0"/>
-  <edges id="166" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.6/@node_objs.6"/>
-  <edges id="182" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.1"/>
-  <edges id="183" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.9"/>
-  <edges id="184" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.2"/>
-  <edges id="185" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.3"/>
-  <edges id="186" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.8"/>
-  <edges id="187" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.4"/>
-  <edges id="188" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.5"/>
-  <edges id="189" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.7"/>
-  <edges id="190" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.6"/>
-  <edges id="191" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.5" is_back_edge="1"/>
-  <edges id="192" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.3" is_back_edge="1"/>
-  <edges id="193" edge_type="CtrlEdge" source_obj="//@blocks.8" sink_obj="//@blocks.1" is_back_edge="1"/>
+  <edges id="68" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="69" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.8/@node_objs.0"/>
+  <edges id="72" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="73" source_obj="//@blocks.1/@node_objs.4" sink_obj="//@blocks.1/@node_objs.0" is_back_edge="1"/>
+  <edges id="74" edge_type="CtrlEdge" source_obj="//@blocks.8" sink_obj="//@blocks.1/@node_objs.0" is_back_edge="1"/>
+  <edges id="77" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.1/@node_objs.1"/>
+  <edges id="78" source_obj="//@blocks.1/@node_objs.2" sink_obj="//@blocks.1/@node_objs.1" is_back_edge="1"/>
+  <edges id="79" edge_type="CtrlEdge" source_obj="//@blocks.8" sink_obj="//@blocks.1/@node_objs.1" is_back_edge="1"/>
+  <edges id="81" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.1/@node_objs.2"/>
+  <edges id="84" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.3"/>
+  <edges id="87" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.4"/>
+  <edges id="90" source_obj="//@blocks.1/@node_objs.3" sink_obj="//@blocks.1/@node_objs.5"/>
+  <edges id="91" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.1/@node_objs.5"/>
+  <edges id="92" edge_type="CtrlEdge" source_obj="//@blocks.9" sink_obj="//@blocks.1/@node_objs.5"/>
+  <edges id="100" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.2/@node_objs.1"/>
+  <edges id="101" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.7/@node_objs.0"/>
+  <edges id="103" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="104" source_obj="//@blocks.3/@node_objs.2" sink_obj="//@blocks.3/@node_objs.0" is_back_edge="1"/>
+  <edges id="105" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.3/@node_objs.0" is_back_edge="1"/>
+  <edges id="106" source_obj="//@blocks.3/@node_objs.0" sink_obj="//@blocks.3/@node_objs.1"/>
+  <edges id="109" source_obj="//@blocks.3/@node_objs.0" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="111" source_obj="//@blocks.3/@node_objs.1" sink_obj="//@blocks.3/@node_objs.3"/>
+  <edges id="112" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.3/@node_objs.3"/>
+  <edges id="113" edge_type="CtrlEdge" source_obj="//@blocks.8" sink_obj="//@blocks.3/@node_objs.3"/>
+  <edges id="127" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.4/@node_objs.1"/>
+  <edges id="128" source_obj="//@blocks.5/@node_objs.2" sink_obj="//@blocks.5/@node_objs.0" is_back_edge="1"/>
+  <edges id="129" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.5/@node_objs.0" is_back_edge="1"/>
+  <edges id="131" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.5/@node_objs.0"/>
+  <edges id="132" source_obj="//@blocks.5/@node_objs.0" sink_obj="//@blocks.5/@node_objs.1"/>
+  <edges id="134" source_obj="//@blocks.5/@node_objs.0" sink_obj="//@blocks.5/@node_objs.2"/>
+  <edges id="136" source_obj="//@blocks.5/@node_objs.1" sink_obj="//@blocks.5/@node_objs.3"/>
+  <edges id="137" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.5/@node_objs.3"/>
+  <edges id="138" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.5/@node_objs.3"/>
+  <edges id="141" source_obj="//@blocks.4/@node_objs.0" sink_obj="//@blocks.6/@node_objs.0"/>
+  <edges id="177" source_obj="//@blocks.6/@node_objs.4" sink_obj="//@blocks.6/@node_objs.5"/>
+  <edges id="181" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.6/@node_objs.7"/>
+  <edges id="197" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="198" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.9"/>
+  <edges id="199" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.2"/>
+  <edges id="200" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.3"/>
+  <edges id="201" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.8"/>
+  <edges id="202" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.4"/>
+  <edges id="203" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.5"/>
+  <edges id="204" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.7"/>
+  <edges id="205" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.6"/>
+  <edges id="206" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.5" is_back_edge="1"/>
+  <edges id="207" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.3" is_back_edge="1"/>
+  <edges id="208" edge_type="CtrlEdge" source_obj="//@blocks.8" sink_obj="//@blocks.1" is_back_edge="1"/>
   <edges id="-1" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.6/@node_objs.1"/>
+  <edges id="-1" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="-1" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.6/@node_objs.4"/>
   <edges id="-1" source_obj="//@blocks.3/@node_objs.0" sink_obj="//@blocks.4/@node_objs.0"/>
   <edges id="-1" source_obj="//@blocks.3/@node_objs.0" sink_obj="//@blocks.4/@node_objs.0"/>
   <edges id="-1" source_obj="//@blocks.5/@node_objs.0" sink_obj="//@blocks.6/@node_objs.0"/>
   <edges id="-1" source_obj="//@blocks.6/@node_objs.0" sink_obj="//@blocks.6/@node_objs.1"/>
-  <edges id="-1" source_obj="//@blocks.6/@node_objs.1" sink_obj="//@blocks.6/@node_objs.5"/>
+  <edges id="-1" source_obj="//@blocks.6/@node_objs.1" sink_obj="//@blocks.6/@node_objs.6"/>
   <edges id="-1" source_obj="//@blocks.6/@node_objs.0" sink_obj="//@blocks.6/@node_objs.2"/>
   <edges id="-1" source_obj="//@ports.0" sink_obj="//@blocks.6/@node_objs.2"/>
   <edges id="-1" source_obj="//@blocks.6/@node_objs.2" sink_obj="//@blocks.6/@node_objs.3"/>
   <edges id="-1" source_obj="//@blocks.6/@node_objs.3" sink_obj="//@blocks.6/@node_objs.4"/>
-  <edges id="-1" source_obj="//@blocks.6/@node_objs.3" sink_obj="//@blocks.6/@node_objs.4"/>
   <edges id="-1" source_obj="//@blocks.6/@node_objs.4" sink_obj="//@blocks.6/@node_objs.5"/>
-  <blocks id="4" name="block_4" type="BlockType">
+  <edges id="-1" source_obj="//@blocks.6/@node_objs.5" sink_obj="//@blocks.6/@node_objs.6"/>
+  <blocks id="5" name="block_5" type="BlockType">
     <controlOutputObjs>phi</controlOutputObjs>
     <controlOutputObjs>phi</controlOutputObjs>
     <controlOutputObjs>.loopexit</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="3" name="node_3" lineNumber="17" fileName="layers_c/pointwise_conv2d.cpp" fileDirectory=".." contextFuncName="pointwise_conv2d_fix16" opcode="br" m_display="0" m_delay="1.76" m_topoIndex="1" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="layers_c/pointwise_conv2d.cpp" linenumber="17" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="pointwise_conv2d_fix16"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="4" name="node_4" lineNumber="15" fileName="layers_c/pointwise_conv2d.cpp" fileDirectory=".." contextFuncName="pointwise_conv2d_fix16" opcode="br" m_display="0" m_delay="1.76" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="layers_c/pointwise_conv2d.cpp" linenumber="15" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="pointwise_conv2d_fix16"/>
       <controlInputObjs>.loopexit</controlInputObjs>
     </node_objs>
     <fileValidLineNumbers fileName="layers_c/pointwise_conv2d.cpp">
-      <validLinenumbers>17</validLinenumbers>
+      <validLinenumbers>15</validLinenumbers>
     </fileValidLineNumbers>
   </blocks>
-  <blocks id="13" name=".loopexit" type="BlockType">
-    <controlInputObjs>block_4</controlInputObjs>
+  <blocks id="14" name=".loopexit" type="BlockType">
+    <controlInputObjs>block_5</controlInputObjs>
     <controlInputObjs>.loopexit.loopexit</controlInputObjs>
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>br</controlOutputObjs>
-    <controlOutputObjs>block_61</controlOutputObjs>
-    <controlOutputObjs>.preheader4.preheader</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="5" name="out_d" originalName="out_d" bitwidth="5" opcode="phi" nodeLabel="1.0" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+    <controlOutputObjs>block_67</controlOutputObjs>
+    <controlOutputObjs>.preheader6.preheader</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="6" name="out_d" originalName="out_d" bitwidth="5" opcode="phi" nodeLabel="1.0" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
       <dataInputObjs>add</dataInputObjs>
       <dataOutputObjs>icmp</dataOutputObjs>
       <dataOutputObjs>add</dataOutputObjs>
-      <controlInputObjs>block_4</controlInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <controlInputObjs>block_5</controlInputObjs>
       <controlInputObjs>.loopexit.loopexit</controlInputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="6" name="phi_mul" bitwidth="14" opcode="phi" nodeLabel="1.0" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="7" name="phi_mul" bitwidth="14" opcode="phi" nodeLabel="1.0" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
       <dataInputObjs>add</dataInputObjs>
       <dataOutputObjs>add</dataOutputObjs>
       <dataOutputObjs>add</dataOutputObjs>
-      <controlInputObjs>block_4</controlInputObjs>
+      <controlInputObjs>block_5</controlInputObjs>
       <controlInputObjs>.loopexit.loopexit</controlInputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="8" name="next_mul" rtlName="next_mul_fu_114_p2" bitwidth="14" opcode="add" nodeLabel="1.0" m_display="0" m_delay="1.81" m_topoIndex="5" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="9" name="next_mul" rtlName="next_mul_fu_131_p2" bitwidth="14" opcode="add" nodeLabel="1.0" m_display="0" m_delay="1.81" m_topoIndex="5" m_clusterGroupNumber="-1">
       <dataInputObjs>phi</dataInputObjs>
       <dataOutputObjs>phi</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="9" name="exitcond3" lineNumber="17" fileName="layers_c/pointwise_conv2d.cpp" fileDirectory=".." rtlName="exitcond3_fu_120_p2" contextFuncName="pointwise_conv2d_fix16" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="1.36" m_topoIndex="6" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="10" name="exitcond4" lineNumber="15" fileName="layers_c/pointwise_conv2d.cpp" fileDirectory=".." rtlName="exitcond4_fu_137_p2" contextFuncName="pointwise_conv2d_fix16" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="1.36" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="layers_c/pointwise_conv2d.cpp" linenumber="15" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="pointwise_conv2d_fix16"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="12" name="out_d_1" lineNumber="15" originalName="out_d" fileName="layers_c/pointwise_conv2d.cpp" fileDirectory=".." rtlName="out_d_1_fu_143_p2" contextFuncName="pointwise_conv2d_fix16" bitwidth="5" opcode="add" nodeLabel="1.0" m_display="0" m_delay="1.78" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="layers_c/pointwise_conv2d.cpp" linenumber="15" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="pointwise_conv2d_fix16"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="13" name="node_13" lineNumber="15" fileName="layers_c/pointwise_conv2d.cpp" fileDirectory=".." contextFuncName="pointwise_conv2d_fix16" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="layers_c/pointwise_conv2d.cpp" linenumber="15" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="pointwise_conv2d_fix16"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>.preheader6.preheader</controlInputObjs>
+      <controlInputObjs>block_67</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="layers_c/pointwise_conv2d.cpp">
+      <validLinenumbers>15</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="20" name=".preheader6.preheader" type="BlockType">
+    <controlInputObjs>.loopexit</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>.preheader6</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="17" name="SeparableConv2D_0_b_2" lineNumber="28" fileName="layers_c/pointwise_conv2d.cpp" fileDirectory=".." contextFuncName="pointwise_conv2d_fix16" bitwidth="13" opcode="load" nodeLabel="1.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="11" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="layers_c/pointwise_conv2d.cpp" linenumber="28" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="pointwise_conv2d_fix16"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="19" name="node_19" lineNumber="16" fileName="layers_c/pointwise_conv2d.cpp" fileDirectory=".." contextFuncName="pointwise_conv2d_fix16" opcode="br" nodeLabel="2.0" m_display="0" m_delay="1.76" m_topoIndex="14" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="layers_c/pointwise_conv2d.cpp" linenumber="16" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="pointwise_conv2d_fix16"/>
+      <controlInputObjs>.preheader6</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="layers_c/pointwise_conv2d.cpp">
+      <validLinenumbers>28</validLinenumbers>
+      <validLinenumbers>16</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="26" name=".preheader6" type="BlockType">
+    <controlInputObjs>.preheader6.preheader</controlInputObjs>
+    <controlInputObjs>.preheader6.loopexit</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>.loopexit.loopexit</controlOutputObjs>
+    <controlOutputObjs>.preheader5.preheader</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="21" name="out_h" originalName="out_h" bitwidth="5" opcode="phi" nodeLabel="3.0" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+      <controlInputObjs>.preheader6.preheader</controlInputObjs>
+      <controlInputObjs>.preheader6.loopexit</controlInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="22" name="exitcond3" lineNumber="16" fileName="layers_c/pointwise_conv2d.cpp" fileDirectory=".." rtlName="exitcond3_fu_158_p2" contextFuncName="pointwise_conv2d_fix16" bitwidth="1" opcode="icmp" nodeLabel="3.0" m_display="0" m_delay="1.36" m_topoIndex="16" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="layers_c/pointwise_conv2d.cpp" linenumber="16" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="pointwise_conv2d_fix16"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="24" name="out_h_1" lineNumber="16" originalName="out_h" fileName="layers_c/pointwise_conv2d.cpp" fileDirectory=".." rtlName="out_h_1_fu_164_p2" contextFuncName="pointwise_conv2d_fix16" bitwidth="5" opcode="add" nodeLabel="3.0" m_display="0" m_delay="1.78" m_topoIndex="17" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="layers_c/pointwise_conv2d.cpp" linenumber="16" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="pointwise_conv2d_fix16"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="25" name="node_25" lineNumber="16" fileName="layers_c/pointwise_conv2d.cpp" fileDirectory=".." contextFuncName="pointwise_conv2d_fix16" opcode="br" nodeLabel="3.0" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="layers_c/pointwise_conv2d.cpp" linenumber="16" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="pointwise_conv2d_fix16"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>.preheader5.preheader</controlInputObjs>
+      <controlInputObjs>.loopexit.loopexit</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="layers_c/pointwise_conv2d.cpp">
+      <validLinenumbers>16</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="33" name=".preheader5.preheader" type="BlockType">
+    <controlInputObjs>.preheader6</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>.preheader5</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="31" name="tmp_5" lineNumber="18" fileName="layers_c/pointwise_conv2d.cpp" fileDirectory=".." rtlName="tmp_5_fu_194_p2" contextFuncName="pointwise_conv2d_fix16" bitwidth="11" opcode="sub" nodeLabel="3.0" m_display="0" m_delay="1.73" m_topoIndex="23" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="layers_c/pointwise_conv2d.cpp" linenumber="18" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="pointwise_conv2d_fix16"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="32" name="node_32" lineNumber="17" fileName="layers_c/pointwise_conv2d.cpp" fileDirectory=".." contextFuncName="pointwise_conv2d_fix16" opcode="br" nodeLabel="3.0" m_display="0" m_delay="1.76" m_topoIndex="24" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="layers_c/pointwise_conv2d.cpp" linenumber="17" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="pointwise_conv2d_fix16"/>
+      <controlInputObjs>.preheader5</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="layers_c/pointwise_conv2d.cpp">
+      <validLinenumbers>18</validLinenumbers>
+      <validLinenumbers>17</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="39" name=".preheader5" type="BlockType">
+    <controlInputObjs>.preheader5.preheader</controlInputObjs>
+    <controlInputObjs>.preheader.preheader.0</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>.preheader6.loopexit</controlOutputObjs>
+    <controlOutputObjs>.preheader.preheader.0</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="34" name="out_w" originalName="out_w" bitwidth="5" opcode="phi" nodeLabel="4.0" m_display="0" m_topoIndex="26" m_clusterGroupNumber="-1">
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <controlInputObjs>.preheader.preheader.0</controlInputObjs>
+      <controlInputObjs>.preheader5.preheader</controlInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="35" name="exitcond2" lineNumber="17" fileName="layers_c/pointwise_conv2d.cpp" fileDirectory=".." rtlName="exitcond2_fu_200_p2" contextFuncName="pointwise_conv2d_fix16" bitwidth="1" opcode="icmp" nodeLabel="4.0" m_display="0" m_delay="1.36" m_topoIndex="27" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="layers_c/pointwise_conv2d.cpp" linenumber="17" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="pointwise_conv2d_fix16"/>
       <dataInputObjs>phi</dataInputObjs>
       <dataOutputObjs>br</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="11" name="out_d_1" lineNumber="17" originalName="out_d" fileName="layers_c/pointwise_conv2d.cpp" fileDirectory=".." rtlName="out_d_1_fu_126_p2" contextFuncName="pointwise_conv2d_fix16" bitwidth="5" opcode="add" nodeLabel="1.0" m_display="0" m_delay="1.78" m_topoIndex="7" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="37" name="out_w_1" lineNumber="17" originalName="out_w" fileName="layers_c/pointwise_conv2d.cpp" fileDirectory=".." rtlName="out_w_1_fu_206_p2" contextFuncName="pointwise_conv2d_fix16" bitwidth="5" opcode="add" nodeLabel="4.0" m_display="0" m_delay="1.78" m_topoIndex="28" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="layers_c/pointwise_conv2d.cpp" linenumber="17" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="pointwise_conv2d_fix16"/>
       <dataInputObjs>phi</dataInputObjs>
       <dataOutputObjs>phi</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="12" name="node_12" lineNumber="17" fileName="layers_c/pointwise_conv2d.cpp" fileDirectory=".." contextFuncName="pointwise_conv2d_fix16" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="38" name="node_38" lineNumber="17" fileName="layers_c/pointwise_conv2d.cpp" fileDirectory=".." contextFuncName="pointwise_conv2d_fix16" opcode="br" nodeLabel="4.0" m_display="0" m_topoIndex="29" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="layers_c/pointwise_conv2d.cpp" linenumber="17" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="pointwise_conv2d_fix16"/>
       <dataInputObjs>icmp</dataInputObjs>
-      <controlInputObjs>.preheader4.preheader</controlInputObjs>
-      <controlInputObjs>block_61</controlInputObjs>
+      <controlInputObjs>.preheader.preheader.0</controlInputObjs>
+      <controlInputObjs>.preheader6.loopexit</controlInputObjs>
     </node_objs>
     <fileValidLineNumbers fileName="layers_c/pointwise_conv2d.cpp">
       <validLinenumbers>17</validLinenumbers>
     </fileValidLineNumbers>
   </blocks>
-  <blocks id="15" name=".preheader4.preheader" type="BlockType">
-    <controlInputObjs>.loopexit</controlInputObjs>
-    <controlOutputObjs>br</controlOutputObjs>
-    <controlOutputObjs>phi</controlOutputObjs>
-    <controlOutputObjs>.preheader4</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="14" name="node_14" lineNumber="18" fileName="layers_c/pointwise_conv2d.cpp" fileDirectory=".." contextFuncName="pointwise_conv2d_fix16" opcode="br" nodeLabel="1.0" m_display="0" m_delay="1.76" m_topoIndex="9" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="layers_c/pointwise_conv2d.cpp" linenumber="18" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="pointwise_conv2d_fix16"/>
-      <controlInputObjs>.preheader4</controlInputObjs>
-    </node_objs>
-    <fileValidLineNumbers fileName="layers_c/pointwise_conv2d.cpp">
-      <validLinenumbers>18</validLinenumbers>
-    </fileValidLineNumbers>
-  </blocks>
-  <blocks id="21" name=".preheader4" type="BlockType">
-    <controlInputObjs>.preheader4.preheader</controlInputObjs>
-    <controlInputObjs>.preheader4.loopexit</controlInputObjs>
-    <controlOutputObjs>br</controlOutputObjs>
-    <controlOutputObjs>br</controlOutputObjs>
-    <controlOutputObjs>.loopexit.loopexit</controlOutputObjs>
-    <controlOutputObjs>.preheader.preheader</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="16" name="out_h" originalName="out_h" bitwidth="5" opcode="phi" nodeLabel="2.0" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
-      <dataInputObjs>add</dataInputObjs>
-      <dataOutputObjs>icmp</dataOutputObjs>
-      <dataOutputObjs>add</dataOutputObjs>
-      <dataOutputObjs>sub</dataOutputObjs>
-      <dataOutputObjs>sub</dataOutputObjs>
-      <controlInputObjs>.preheader4.loopexit</controlInputObjs>
-      <controlInputObjs>.preheader4.preheader</controlInputObjs>
-      <constName>empty</constName>
-    </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="17" name="exitcond2" lineNumber="18" fileName="layers_c/pointwise_conv2d.cpp" fileDirectory=".." rtlName="exitcond2_fu_132_p2" contextFuncName="pointwise_conv2d_fix16" bitwidth="1" opcode="icmp" nodeLabel="2.0" m_display="0" m_delay="1.36" m_topoIndex="12" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="layers_c/pointwise_conv2d.cpp" linenumber="18" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="pointwise_conv2d_fix16"/>
-      <dataInputObjs>phi</dataInputObjs>
-      <dataOutputObjs>br</dataOutputObjs>
-      <constName>empty</constName>
-    </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="19" name="out_h_1" lineNumber="18" originalName="out_h" fileName="layers_c/pointwise_conv2d.cpp" fileDirectory=".." rtlName="out_h_1_fu_138_p2" contextFuncName="pointwise_conv2d_fix16" bitwidth="5" opcode="add" nodeLabel="2.0" m_display="0" m_delay="1.78" m_topoIndex="13" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="layers_c/pointwise_conv2d.cpp" linenumber="18" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="pointwise_conv2d_fix16"/>
-      <dataInputObjs>phi</dataInputObjs>
-      <dataOutputObjs>phi</dataOutputObjs>
-      <constName>empty</constName>
-    </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="20" name="node_20" lineNumber="18" fileName="layers_c/pointwise_conv2d.cpp" fileDirectory=".." contextFuncName="pointwise_conv2d_fix16" opcode="br" nodeLabel="2.0" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="layers_c/pointwise_conv2d.cpp" linenumber="18" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="pointwise_conv2d_fix16"/>
-      <dataInputObjs>icmp</dataInputObjs>
-      <controlInputObjs>.preheader.preheader</controlInputObjs>
-      <controlInputObjs>.loopexit.loopexit</controlInputObjs>
-    </node_objs>
-    <fileValidLineNumbers fileName="layers_c/pointwise_conv2d.cpp">
-      <validLinenumbers>18</validLinenumbers>
-    </fileValidLineNumbers>
-  </blocks>
-  <blocks id="28" name=".preheader.preheader" type="BlockType">
-    <controlInputObjs>.preheader4</controlInputObjs>
-    <controlOutputObjs>br</controlOutputObjs>
-    <controlOutputObjs>phi</controlOutputObjs>
-    <controlOutputObjs>.preheader</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="26" name="tmp_4" lineNumber="20" fileName="layers_c/pointwise_conv2d.cpp" fileDirectory=".." rtlName="tmp_4_fu_168_p2" contextFuncName="pointwise_conv2d_fix16" bitwidth="11" opcode="sub" nodeLabel="2.0" m_display="0" m_delay="1.73" m_topoIndex="19" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="layers_c/pointwise_conv2d.cpp" linenumber="20" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="pointwise_conv2d_fix16"/>
-      <dataInputObjs>phi</dataInputObjs>
-      <dataInputObjs>phi</dataInputObjs>
-      <dataOutputObjs>add</dataOutputObjs>
-    </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="27" name="node_27" lineNumber="19" fileName="layers_c/pointwise_conv2d.cpp" fileDirectory=".." contextFuncName="pointwise_conv2d_fix16" opcode="br" nodeLabel="2.0" m_display="0" m_delay="1.76" m_topoIndex="20" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="layers_c/pointwise_conv2d.cpp" linenumber="19" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="pointwise_conv2d_fix16"/>
-      <controlInputObjs>.preheader</controlInputObjs>
-    </node_objs>
-    <fileValidLineNumbers fileName="layers_c/pointwise_conv2d.cpp">
-      <validLinenumbers>20</validLinenumbers>
-      <validLinenumbers>19</validLinenumbers>
-    </fileValidLineNumbers>
-  </blocks>
-  <blocks id="34" name=".preheader" type="BlockType">
-    <controlInputObjs>.preheader.preheader</controlInputObjs>
-    <controlInputObjs>._crit_edge</controlInputObjs>
-    <controlOutputObjs>br</controlOutputObjs>
-    <controlOutputObjs>br</controlOutputObjs>
-    <controlOutputObjs>.preheader4.loopexit</controlOutputObjs>
-    <controlOutputObjs>._crit_edge</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="29" name="out_w" originalName="out_w" bitwidth="5" opcode="phi" nodeLabel="3.0" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
-      <dataInputObjs>add</dataInputObjs>
-      <dataOutputObjs>icmp</dataOutputObjs>
-      <dataOutputObjs>add</dataOutputObjs>
-      <dataOutputObjs>add</dataOutputObjs>
-      <controlInputObjs>._crit_edge</controlInputObjs>
-      <controlInputObjs>.preheader.preheader</controlInputObjs>
-      <constName>empty</constName>
-    </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="30" name="exitcond1" lineNumber="19" fileName="layers_c/pointwise_conv2d.cpp" fileDirectory=".." rtlName="exitcond1_fu_174_p2" contextFuncName="pointwise_conv2d_fix16" bitwidth="1" opcode="icmp" nodeLabel="3.0" m_display="0" m_delay="1.36" m_topoIndex="23" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="layers_c/pointwise_conv2d.cpp" linenumber="19" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="pointwise_conv2d_fix16"/>
-      <dataInputObjs>phi</dataInputObjs>
-      <dataOutputObjs>br</dataOutputObjs>
-      <constName>empty</constName>
-    </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="32" name="out_w_1" lineNumber="19" originalName="out_w" fileName="layers_c/pointwise_conv2d.cpp" fileDirectory=".." rtlName="out_w_1_fu_180_p2" contextFuncName="pointwise_conv2d_fix16" bitwidth="5" opcode="add" nodeLabel="3.0" m_display="0" m_delay="1.78" m_topoIndex="24" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="layers_c/pointwise_conv2d.cpp" linenumber="19" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="pointwise_conv2d_fix16"/>
-      <dataInputObjs>phi</dataInputObjs>
-      <dataOutputObjs>phi</dataOutputObjs>
-      <constName>empty</constName>
-    </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="33" name="node_33" lineNumber="19" fileName="layers_c/pointwise_conv2d.cpp" fileDirectory=".." contextFuncName="pointwise_conv2d_fix16" opcode="br" nodeLabel="3.0" m_display="0" m_topoIndex="25" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="layers_c/pointwise_conv2d.cpp" linenumber="19" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="pointwise_conv2d_fix16"/>
-      <dataInputObjs>icmp</dataInputObjs>
-      <controlInputObjs>._crit_edge</controlInputObjs>
-      <controlInputObjs>.preheader4.loopexit</controlInputObjs>
-    </node_objs>
-    <fileValidLineNumbers fileName="layers_c/pointwise_conv2d.cpp">
-      <validLinenumbers>19</validLinenumbers>
-    </fileValidLineNumbers>
-  </blocks>
-  <blocks id="55" name="._crit_edge" type="BlockType">
-    <controlInputObjs>.preheader</controlInputObjs>
+  <blocks id="61" name=".preheader.preheader.0" type="BlockType">
+    <controlInputObjs>.preheader5</controlInputObjs>
     <controlOutputObjs>phi</controlOutputObjs>
     <controlOutputObjs>br</controlOutputObjs>
-    <controlOutputObjs>.preheader</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="36" name="tmp1" lineNumber="20" fileName="layers_c/pointwise_conv2d.cpp" fileDirectory=".." rtlName="tmp1_fu_190_p2" contextFuncName="pointwise_conv2d_fix16" bitwidth="11" opcode="add" nodeLabel="3.0" m_display="0" m_delay="1.63" m_topoIndex="27" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="layers_c/pointwise_conv2d.cpp" linenumber="20" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="pointwise_conv2d_fix16"/>
+    <controlOutputObjs>.preheader5</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="41" name="tmp1" lineNumber="18" fileName="layers_c/pointwise_conv2d.cpp" fileDirectory=".." rtlName="tmp1_fu_216_p2" contextFuncName="pointwise_conv2d_fix16" bitwidth="11" opcode="add" nodeLabel="4.0" m_display="0" m_delay="1.63" m_topoIndex="31" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="layers_c/pointwise_conv2d.cpp" linenumber="18" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="pointwise_conv2d_fix16"/>
       <dataInputObjs>sub</dataInputObjs>
       <dataInputObjs>phi</dataInputObjs>
       <dataOutputObjs>add</dataOutputObjs>
       <dataOutputObjs>load</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="38" name="tmp_8" lineNumber="20" fileName="layers_c/pointwise_conv2d.cpp" fileDirectory=".." rtlName="tmp_8_fu_199_p2" contextFuncName="pointwise_conv2d_fix16" bitwidth="15" opcode="add" nodeLabel="3.0" m_display="0" m_delay="1.81" m_topoIndex="29" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="layers_c/pointwise_conv2d.cpp" linenumber="20" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="pointwise_conv2d_fix16"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="43" name="tmp_9" lineNumber="18" fileName="layers_c/pointwise_conv2d.cpp" fileDirectory=".." rtlName="tmp_9_fu_225_p2" contextFuncName="pointwise_conv2d_fix16" bitwidth="15" opcode="add" nodeLabel="4.0" m_display="0" m_delay="1.81" m_topoIndex="33" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="layers_c/pointwise_conv2d.cpp" linenumber="18" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="pointwise_conv2d_fix16"/>
       <dataInputObjs>phi</dataInputObjs>
       <dataInputObjs>add</dataInputObjs>
       <dataOutputObjs>store</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="45" name="input_load" lineNumber="23" fileName="layers_c/pointwise_conv2d.cpp" fileDirectory=".." contextFuncName="pointwise_conv2d_fix16" bitwidth="16" opcode="load" nodeLabel="3.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="33" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="layers_c/pointwise_conv2d.cpp" linenumber="23" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="pointwise_conv2d_fix16"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="50" name="input_load" lineNumber="22" fileName="layers_c/pointwise_conv2d.cpp" fileDirectory=".." contextFuncName="pointwise_conv2d_fix16" bitwidth="16" opcode="load" nodeLabel="4.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="37" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="layers_c/pointwise_conv2d.cpp" linenumber="22" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="pointwise_conv2d_fix16"/>
       <dataInputObjs>add</dataInputObjs>
       <dataInputObjs>input_r</dataInputObjs>
       <dataOutputObjs>mul</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="47" name="tmp_3" lineNumber="23" fileName="layers_c/pointwise_conv2d.cpp" fileDirectory=".." rtlName="network_mul_mul_12s_16s_28_1_1_U8" contextFuncName="pointwise_conv2d_fix16" bitwidth="28" opcode="mul" nodeLabel="5.0" m_display="0" m_delay="6.38" m_topoIndex="36" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="layers_c/pointwise_conv2d.cpp" linenumber="23" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="pointwise_conv2d_fix16"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="52" name="tmp_7" lineNumber="22" fileName="layers_c/pointwise_conv2d.cpp" fileDirectory=".." rtlName="network_mul_mul_16s_12s_28_1_1_U8" contextFuncName="pointwise_conv2d_fix16" bitwidth="28" opcode="mul" nodeLabel="6.0" m_display="0" m_delay="6.38" m_topoIndex="40" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="layers_c/pointwise_conv2d.cpp" linenumber="22" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="pointwise_conv2d_fix16"/>
       <dataInputObjs>load</dataInputObjs>
-      <dataOutputObjs>select</dataOutputObjs>
-      <dataOutputObjs>select</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="50" name="p_tmp_s" lineNumber="31" fileName="layers_c/pointwise_conv2d.cpp" fileDirectory=".." rtlName="p_tmp_s_fu_232_p3" contextFuncName="pointwise_conv2d_fix16" bitwidth="14" opcode="select" nodeLabel="5.0" m_display="0" m_delay="0.7" m_topoIndex="39" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="55" name="tmp_3" lineNumber="28" fileName="layers_c/pointwise_conv2d.cpp" fileDirectory=".." rtlName="tmp_3_fu_262_p2" contextFuncName="pointwise_conv2d_fix16" bitwidth="15" opcode="add" nodeLabel="7.0" m_display="0" m_delay="1.81" m_topoIndex="46" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="layers_c/pointwise_conv2d.cpp" linenumber="28" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="pointwise_conv2d_fix16"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>mul</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="57" name="storemerge" lineNumber="31" fileName="layers_c/pointwise_conv2d.cpp" fileDirectory=".." rtlName="storemerge_fu_275_p3" contextFuncName="pointwise_conv2d_fix16" bitwidth="15" opcode="select" nodeLabel="7.0" m_display="0" m_delay="0.75" m_topoIndex="48" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="layers_c/pointwise_conv2d.cpp" linenumber="31" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="pointwise_conv2d_fix16"/>
-      <dataInputObjs>mul</dataInputObjs>
-      <dataInputObjs>mul</dataInputObjs>
+      <dataInputObjs>add</dataInputObjs>
+      <dataInputObjs>add</dataInputObjs>
       <dataOutputObjs>store</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="53" name="node_53" lineNumber="23" fileName="layers_c/pointwise_conv2d.cpp" fileDirectory=".." contextFuncName="pointwise_conv2d_fix16" opcode="store" nodeLabel="6.0" m_display="0" m_delay="3.25" m_topoIndex="45" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="layers_c/pointwise_conv2d.cpp" linenumber="23" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="pointwise_conv2d_fix16"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="59" name="node_59" lineNumber="28" fileName="layers_c/pointwise_conv2d.cpp" fileDirectory=".." contextFuncName="pointwise_conv2d_fix16" opcode="store" nodeLabel="7.0" m_display="0" m_delay="3.25" m_topoIndex="50" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="layers_c/pointwise_conv2d.cpp" linenumber="28" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="pointwise_conv2d_fix16"/>
       <dataInputObjs>add</dataInputObjs>
       <dataInputObjs>select</dataInputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="54" name="node_54" lineNumber="19" fileName="layers_c/pointwise_conv2d.cpp" fileDirectory=".." contextFuncName="pointwise_conv2d_fix16" opcode="br" nodeLabel="6.0" m_display="0" m_topoIndex="46" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="layers_c/pointwise_conv2d.cpp" linenumber="19" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="pointwise_conv2d_fix16"/>
-      <controlInputObjs>.preheader</controlInputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="60" name="node_60" lineNumber="17" fileName="layers_c/pointwise_conv2d.cpp" fileDirectory=".." contextFuncName="pointwise_conv2d_fix16" opcode="br" nodeLabel="7.0" m_display="0" m_topoIndex="51" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="layers_c/pointwise_conv2d.cpp" linenumber="17" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="pointwise_conv2d_fix16"/>
+      <controlInputObjs>.preheader5</controlInputObjs>
     </node_objs>
     <fileValidLineNumbers fileName="layers_c/pointwise_conv2d.cpp">
-      <validLinenumbers>20</validLinenumbers>
-      <validLinenumbers>23</validLinenumbers>
+      <validLinenumbers>18</validLinenumbers>
+      <validLinenumbers>22</validLinenumbers>
+      <validLinenumbers>28</validLinenumbers>
       <validLinenumbers>31</validLinenumbers>
-      <validLinenumbers>19</validLinenumbers>
+      <validLinenumbers>17</validLinenumbers>
     </fileValidLineNumbers>
   </blocks>
-  <blocks id="57" name=".preheader4.loopexit" type="BlockType">
-    <controlInputObjs>.preheader</controlInputObjs>
+  <blocks id="63" name=".preheader6.loopexit" type="BlockType">
+    <controlInputObjs>.preheader5</controlInputObjs>
     <controlOutputObjs>phi</controlOutputObjs>
     <controlOutputObjs>br</controlOutputObjs>
-    <controlOutputObjs>.preheader4</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="56" name="node_56" opcode="br" nodeLabel="3.0" m_display="0" m_topoIndex="34" m_clusterGroupNumber="-1">
-      <controlInputObjs>.preheader4</controlInputObjs>
+    <controlOutputObjs>.preheader6</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="62" name="node_62" opcode="br" nodeLabel="4.0" m_display="0" m_topoIndex="38" m_clusterGroupNumber="-1">
+      <controlInputObjs>.preheader6</controlInputObjs>
     </node_objs>
   </blocks>
-  <blocks id="59" name=".loopexit.loopexit" type="BlockType">
-    <controlInputObjs>.preheader4</controlInputObjs>
+  <blocks id="65" name=".loopexit.loopexit" type="BlockType">
+    <controlInputObjs>.preheader6</controlInputObjs>
     <controlOutputObjs>phi</controlOutputObjs>
     <controlOutputObjs>phi</controlOutputObjs>
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>.loopexit</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="58" name="node_58" opcode="br" nodeLabel="2.0" m_display="0" m_topoIndex="21" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="64" name="node_64" opcode="br" nodeLabel="3.0" m_display="0" m_topoIndex="25" m_clusterGroupNumber="-1">
       <controlInputObjs>.loopexit</controlInputObjs>
     </node_objs>
   </blocks>
-  <blocks id="61" name="block_61" type="BlockType">
+  <blocks id="67" name="block_67" type="BlockType">
     <controlInputObjs>.loopexit</controlInputObjs>
     <controlOutputObjs>br</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="60" name="node_60" opcode="ret" nodeLabel="1.0" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="66" name="node_66" opcode="ret" nodeLabel="1.0" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1"/>
   </blocks>
   <ScheduleInfo time="0"/>
   <ScheduleInfo time="1"/>
@@ -320,172 +337,193 @@
   <ScheduleInfo time="4"/>
   <ScheduleInfo time="5"/>
   <ScheduleInfo time="6"/>
-  <regnodes realName="out_w_1_reg_298">
-    <nodeIds>32</nodeIds>
+  <ScheduleInfo time="7"/>
+  <regnodes realName="SeparableConv2D_0_b_3_reg_318">
+    <nodeIds>18</nodeIds>
   </regnodes>
-  <regnodes realName="tmp_8_reg_303">
-    <nodeIds>38</nodeIds>
+  <regnodes realName="out_h_1_reg_326">
+    <nodeIds>24</nodeIds>
   </regnodes>
-  <regnodes realName="p_tmp_s_reg_318">
-    <nodeIds>50</nodeIds>
+  <regnodes realName="out_w_reg_116">
+    <nodeIds>34</nodeIds>
   </regnodes>
-  <regnodes realName="out_d_1_reg_277">
-    <nodeIds>11</nodeIds>
+  <regnodes realName="tmp_8_reg_359">
+    <nodeIds>53</nodeIds>
   </regnodes>
-  <regnodes realName="out_d_reg_66">
-    <nodeIds>5</nodeIds>
-  </regnodes>
-  <regnodes realName="phi_mul_reg_77">
-    <nodeIds>6</nodeIds>
-  </regnodes>
-  <regnodes realName="next_mul_reg_269">
-    <nodeIds>8</nodeIds>
-  </regnodes>
-  <regnodes realName="tmp_4_reg_290">
-    <nodeIds>26</nodeIds>
-  </regnodes>
-  <regnodes realName="input_addr_reg_308">
-    <nodeIds>44</nodeIds>
-  </regnodes>
-  <regnodes realName="phi_mul_cast_reg_264">
+  <regnodes realName="phi_mul_reg_94">
     <nodeIds>7</nodeIds>
   </regnodes>
-  <regnodes realName="out_h_reg_88">
-    <nodeIds>16</nodeIds>
-  </regnodes>
-  <regnodes realName="out_w_reg_99">
-    <nodeIds>29</nodeIds>
-  </regnodes>
-  <regnodes realName="out_h_1_reg_285">
-    <nodeIds>19</nodeIds>
-  </regnodes>
-  <regnodes realName="input_load_reg_313">
-    <nodeIds>45</nodeIds>
-  </regnodes>
-  <expressionNodes realName="p_shl_fu_144">
-    <nodeIds>22</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="out_d_phi_fu_70">
-    <nodeIds>5</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="out_w_1_fu_180">
-    <nodeIds>32</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="p_shl5_cast_fu_164">
-    <nodeIds>25</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="p_tmp_s_fu_232">
-    <nodeIds>50</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="tmp_3_fu_256">
-    <nodeIds>47</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="tmp_9_fu_243">
-    <nodeIds>40</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="out_h_phi_fu_92">
-    <nodeIds>16</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="phi_mul_phi_fu_81">
-    <nodeIds>6</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="exitcond3_fu_120">
-    <nodeIds>9</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="tmp_8_cast_fu_240">
-    <nodeIds>39</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="p_tmp_cast_fu_251">
-    <nodeIds>52</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="input_addr_gep_fu_40">
-    <nodeIds>44</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="out_w_phi_fu_103">
-    <nodeIds>29</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="tmp_6_cast_fu_186">
-    <nodeIds>35</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="tmp_2_cast_fu_204">
-    <nodeIds>42</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="tmp_5_fu_208">
+  <regnodes realName="tmp_9_reg_344">
     <nodeIds>43</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="tmp_fu_225">
+  </regnodes>
+  <regnodes realName="input_addr_reg_349">
     <nodeIds>49</nodeIds>
+  </regnodes>
+  <regnodes realName="out_d_1_reg_308">
+    <nodeIds>12</nodeIds>
+  </regnodes>
+  <regnodes realName="out_d_reg_83">
+    <nodeIds>6</nodeIds>
+  </regnodes>
+  <regnodes realName="out_h_reg_105">
+    <nodeIds>21</nodeIds>
+  </regnodes>
+  <regnodes realName="phi_mul_cast_reg_295">
+    <nodeIds>8</nodeIds>
+  </regnodes>
+  <regnodes realName="next_mul_reg_300">
+    <nodeIds>9</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_5_reg_331">
+    <nodeIds>31</nodeIds>
+  </regnodes>
+  <regnodes realName="input_load_reg_354">
+    <nodeIds>50</nodeIds>
+  </regnodes>
+  <regnodes realName="out_w_1_reg_339">
+    <nodeIds>37</nodeIds>
+  </regnodes>
+  <regnodes realName="SeparableConv2D_0_b_1_reg_313">
+    <nodeIds>16</nodeIds>
+  </regnodes>
+  <expressionNodes realName="phi_mul_cast_fu_127">
+    <nodeIds>8</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="out_h_1_fu_138">
-    <nodeIds>19</nodeIds>
+  <expressionNodes realName="p_shl5_fu_182">
+    <nodeIds>29</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="output_addr_gep_fu_53">
+  <expressionNodes realName="tmp1_fu_216">
     <nodeIds>41</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="phi_mul_cast_fu_110">
-    <nodeIds>7</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="tmp1_cast_fu_195">
+  <expressionNodes realName="out_w_1_fu_206">
     <nodeIds>37</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="tmp_4_fu_168">
-    <nodeIds>26</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="out_d_1_fu_126">
-    <nodeIds>11</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="tmp_10_cast_fu_213">
-    <nodeIds>46</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="p_shl_cast_fu_152">
-    <nodeIds>23</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="p_tmp_cast1_fu_248">
-    <nodeIds>51</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="tmp_8_fu_199">
-    <nodeIds>38</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="exitcond2_fu_132">
-    <nodeIds>17</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="tmp1_fu_190">
-    <nodeIds>36</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="tmp_6_fu_216">
+  <expressionNodes realName="tmp_4_fu_234">
     <nodeIds>48</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="exitcond1_fu_174">
-    <nodeIds>30</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="next_mul_fu_114">
-    <nodeIds>8</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="p_shl5_fu_156">
+  <expressionNodes realName="out_h_1_fu_164">
     <nodeIds>24</nodeIds>
   </expressionNodes>
-  <memoryPorts dataString="input_r">
+  <expressionNodes realName="tmp_8_fu_242">
+    <nodeIds>53</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp1_cast_fu_221">
+    <nodeIds>42</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_5_fu_194">
+    <nodeIds>31</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_9_fu_225">
+    <nodeIds>43</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_7_fu_288">
+    <nodeIds>52</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="exitcond2_fu_200">
+    <nodeIds>35</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="out_w_phi_fu_120">
+    <nodeIds>34</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="SeparableConv2D_0_b_1_gep_fu_44">
+    <nodeIds>16</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_2_fu_149">
+    <nodeIds>15</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_fu_267">
+    <nodeIds>56</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_18_cast_fu_239">
+    <nodeIds>51</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="storemerge_cast_fu_283">
+    <nodeIds>58</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="storemerge_fu_275">
+    <nodeIds>57</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_10_cast_fu_230">
+    <nodeIds>47</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="SeparableConv2D_0_b_3_fu_154">
+    <nodeIds>18</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="phi_mul_phi_fu_98">
+    <nodeIds>7</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="out_d_1_fu_143">
+    <nodeIds>12</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="exitcond3_fu_158">
+    <nodeIds>22</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_shl_fu_170">
+    <nodeIds>27</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_7_cast_fu_212">
+    <nodeIds>40</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="exitcond4_fu_137">
+    <nodeIds>10</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_shl5_cast_fu_190">
+    <nodeIds>30</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_10_cast1_fu_259">
+    <nodeIds>54</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_3_fu_262">
+    <nodeIds>55</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_9_cast_fu_251">
+    <nodeIds>44</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="next_mul_fu_131">
+    <nodeIds>9</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_s_fu_254">
     <nodeIds>45</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="out_h_phi_fu_109">
+    <nodeIds>21</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="output_addr_gep_fu_70">
+    <nodeIds>46</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="input_addr_gep_fu_57">
+    <nodeIds>49</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_shl_cast_fu_178">
+    <nodeIds>28</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="out_d_phi_fu_87">
+    <nodeIds>6</nodeIds>
+  </expressionNodes>
+  <memoryPorts dataString="SeparableConv2D_0_b_s">
+    <nodeIds>17</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="input_r">
+    <nodeIds>50</nodeIds>
   </memoryPorts>
   <memoryPorts dataString="output_r">
-    <nodeIds>53</nodeIds>
+    <nodeIds>59</nodeIds>
   </memoryPorts>
   <ioPorts name="input_r(p0)">
     <contents name="load">
-      <nodeIds>45</nodeIds>
+      <nodeIds>50</nodeIds>
     </contents>
   </ioPorts>
   <ioPorts name="output_r(p0)">
     <contents name="store">
-      <nodeIds>53</nodeIds>
+      <nodeIds>59</nodeIds>
     </contents>
   </ioPorts>
   <fsm>
     <states id="1">
-      <operations id="3" stage="1" latency="1"/>
+      <operations id="4" stage="1" latency="1"/>
     </states>
     <states id="2">
-      <operations id="5" stage="1" latency="1"/>
       <operations id="6" stage="1" latency="1"/>
       <operations id="7" stage="1" latency="1"/>
       <operations id="8" stage="1" latency="1"/>
@@ -493,57 +531,66 @@
       <operations id="10" stage="1" latency="1"/>
       <operations id="11" stage="1" latency="1"/>
       <operations id="12" stage="1" latency="1"/>
-      <operations id="14" stage="1" latency="1"/>
-      <operations id="60" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="2" latency="2"/>
+      <operations id="66" stage="1" latency="1"/>
     </states>
     <states id="3">
-      <operations id="16" stage="1" latency="1"/>
-      <operations id="17" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="2"/>
       <operations id="18" stage="1" latency="1"/>
       <operations id="19" stage="1" latency="1"/>
-      <operations id="20" stage="1" latency="1"/>
+    </states>
+    <states id="4">
+      <operations id="21" stage="1" latency="1"/>
       <operations id="22" stage="1" latency="1"/>
       <operations id="23" stage="1" latency="1"/>
       <operations id="24" stage="1" latency="1"/>
       <operations id="25" stage="1" latency="1"/>
-      <operations id="26" stage="1" latency="1"/>
       <operations id="27" stage="1" latency="1"/>
-      <operations id="58" stage="1" latency="1"/>
-    </states>
-    <states id="4">
+      <operations id="28" stage="1" latency="1"/>
       <operations id="29" stage="1" latency="1"/>
       <operations id="30" stage="1" latency="1"/>
       <operations id="31" stage="1" latency="1"/>
       <operations id="32" stage="1" latency="1"/>
-      <operations id="33" stage="1" latency="1"/>
+      <operations id="64" stage="1" latency="1"/>
+    </states>
+    <states id="5">
+      <operations id="34" stage="1" latency="1"/>
       <operations id="35" stage="1" latency="1"/>
       <operations id="36" stage="1" latency="1"/>
       <operations id="37" stage="1" latency="1"/>
       <operations id="38" stage="1" latency="1"/>
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="41" stage="1" latency="1"/>
       <operations id="42" stage="1" latency="1"/>
       <operations id="43" stage="1" latency="1"/>
-      <operations id="44" stage="1" latency="1"/>
-      <operations id="45" stage="2" latency="2"/>
-      <operations id="56" stage="1" latency="1"/>
-    </states>
-    <states id="5">
-      <operations id="45" stage="1" latency="2"/>
-    </states>
-    <states id="6">
-      <operations id="46" stage="1" latency="1"/>
       <operations id="47" stage="1" latency="1"/>
       <operations id="48" stage="1" latency="1"/>
       <operations id="49" stage="1" latency="1"/>
-      <operations id="50" stage="1" latency="1"/>
+      <operations id="50" stage="2" latency="2"/>
+      <operations id="62" stage="1" latency="1"/>
+    </states>
+    <states id="6">
+      <operations id="50" stage="1" latency="2"/>
     </states>
     <states id="7">
-      <operations id="39" stage="1" latency="1"/>
-      <operations id="40" stage="1" latency="1"/>
-      <operations id="41" stage="1" latency="1"/>
       <operations id="51" stage="1" latency="1"/>
       <operations id="52" stage="1" latency="1"/>
       <operations id="53" stage="1" latency="1"/>
+    </states>
+    <states id="8">
+      <operations id="44" stage="1" latency="1"/>
+      <operations id="45" stage="1" latency="1"/>
+      <operations id="46" stage="1" latency="1"/>
       <operations id="54" stage="1" latency="1"/>
+      <operations id="55" stage="1" latency="1"/>
+      <operations id="56" stage="1" latency="1"/>
+      <operations id="57" stage="1" latency="1"/>
+      <operations id="58" stage="1" latency="1"/>
+      <operations id="59" stage="1" latency="1"/>
+      <operations id="60" stage="1" latency="1"/>
     </states>
     <transitions inState="1" outState="2">
       <condition id="-1"/>
@@ -563,36 +610,39 @@
     <transitions inState="6" outState="7">
       <condition id="-1"/>
     </transitions>
-    <transitions inState="7" outState="4">
+    <transitions inState="7" outState="8">
       <condition id="-1"/>
     </transitions>
-    <transitions inState="4" outState="3">
+    <transitions inState="8" outState="5">
       <condition id="-1"/>
     </transitions>
-    <transitions inState="3" outState="2">
+    <transitions inState="5" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="2">
       <condition id="-1"/>
     </transitions>
   </fsm>
   <CFGRegionsRoot>
-    <cfgRegions mId="1" mTag="pointwise_conv2d_fix" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="51105" mMaxLatency="51105">
+    <cfgRegions mId="1" mTag="pointwise_conv2d_fix" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="51121" mMaxLatency="51121">
       <subRegions>2</subRegions>
       <subRegions>3</subRegions>
       <subRegions>10</subRegions>
       <mDfPipe/>
     </cfgRegions>
     <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
-      <basicBlocks>4</basicBlocks>
+      <basicBlocks>5</basicBlocks>
       <mDfPipe/>
     </cfgRegions>
-    <cfgRegions mId="3" mTag="Loop 1" mII="-1" mDepth="-1" mMinTripCount="16" mMaxTripCount="16" mMinLatency="51104" mMaxLatency="51104" mType="1">
+    <cfgRegions mId="3" mTag="Loop 1" mII="-1" mDepth="-1" mMinTripCount="16" mMaxTripCount="16" mMinLatency="51120" mMaxLatency="51120" mType="1">
       <subRegions>4</subRegions>
       <subRegions>5</subRegions>
       <subRegions>9</subRegions>
       <mDfPipe/>
     </cfgRegions>
-    <cfgRegions mId="4" mTag="Region 1" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
-      <basicBlocks>13</basicBlocks>
-      <basicBlocks>15</basicBlocks>
+    <cfgRegions mId="4" mTag="Region 1" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMaxLatency="1">
+      <basicBlocks>14</basicBlocks>
+      <basicBlocks>20</basicBlocks>
       <mDfPipe/>
     </cfgRegions>
     <cfgRegions mId="5" mTag="Loop 1.1" mII="-1" mDepth="-1" mMinTripCount="28" mMaxTripCount="28" mMinLatency="3192" mMaxLatency="3192" mType="1">
@@ -602,25 +652,25 @@
       <mDfPipe/>
     </cfgRegions>
     <cfgRegions mId="6" mTag="Region 2" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
-      <basicBlocks>21</basicBlocks>
-      <basicBlocks>28</basicBlocks>
+      <basicBlocks>26</basicBlocks>
+      <basicBlocks>33</basicBlocks>
       <mDfPipe/>
     </cfgRegions>
     <cfgRegions mId="7" mTag="Loop 1.1.1" mII="-1" mDepth="-1" mMinTripCount="28" mMaxTripCount="28" mMinLatency="112" mMaxLatency="112" mType="1">
-      <basicBlocks>34</basicBlocks>
-      <basicBlocks>55</basicBlocks>
+      <basicBlocks>39</basicBlocks>
+      <basicBlocks>61</basicBlocks>
       <mDfPipe/>
     </cfgRegions>
     <cfgRegions mId="8" mTag="Region 3" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
-      <basicBlocks>57</basicBlocks>
+      <basicBlocks>63</basicBlocks>
       <mDfPipe/>
     </cfgRegions>
     <cfgRegions mId="9" mTag="Region 4" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
-      <basicBlocks>59</basicBlocks>
+      <basicBlocks>65</basicBlocks>
       <mDfPipe/>
     </cfgRegions>
     <cfgRegions mId="10" mTag="Return" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
-      <basicBlocks>61</basicBlocks>
+      <basicBlocks>67</basicBlocks>
       <mDfPipe/>
     </cfgRegions>
   </CFGRegionsRoot>
