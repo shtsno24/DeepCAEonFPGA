@@ -1,5 +1,5 @@
 // ==============================================================
-// File generated on Thu Nov 28 22:31:49 JST 2019
+// File generated on Fri Nov 29 20:35:09 JST 2019
 // Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3.1 (64-bit)
 // SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
 // IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
@@ -22,8 +22,8 @@ using namespace sc_dt;
 struct network_MemBank_Out_ram : public sc_core::sc_module {
 
   static const unsigned DataWidth = 16;
-  static const unsigned AddressRange = 12544;
-  static const unsigned AddressWidth = 14;
+  static const unsigned AddressRange = 784;
+  static const unsigned AddressWidth = 10;
 
 //latency = 1
 //input_reg = 1
@@ -79,8 +79,8 @@ SC_MODULE(network_MemBank_Out) {
 
 
 static const unsigned DataWidth = 16;
-static const unsigned AddressRange = 12544;
-static const unsigned AddressWidth = 14;
+static const unsigned AddressRange = 784;
+static const unsigned AddressWidth = 10;
 
 sc_core::sc_in <sc_lv<AddressWidth> > address0;
 sc_core::sc_in<sc_logic> ce0;

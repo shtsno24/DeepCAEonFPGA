@@ -6,25 +6,15 @@
 open_project HLS
 set_top network
 add_files weights_c/Conv2D_0_fix16.h
-add_files weights_c/Conv2D_0_float32.h
 add_files weights_c/Conv2D_1_fix16.h
-add_files weights_c/Conv2D_1_float32.h
 add_files weights_c/Conv2D_2_fix16.h
-add_files weights_c/Conv2D_2_float32.h
 add_files weights_c/Conv2D_3_fix16.h
-add_files weights_c/Conv2D_3_float32.h
 add_files weights_c/Conv2D_4_fix16.h
-add_files weights_c/Conv2D_4_float32.h
 add_files weights_c/SeparableConv2D_0_fix16.h
-add_files weights_c/SeparableConv2D_0_float32.h
 add_files weights_c/SeparableConv2D_1_fix16.h
-add_files weights_c/SeparableConv2D_1_float32.h
 add_files weights_c/SeparableConv2D_2_fix16.h
-add_files weights_c/SeparableConv2D_2_float32.h
 add_files weights_c/SeparableConv2D_3_fix16.h
-add_files weights_c/SeparableConv2D_3_float32.h
 add_files weights_c/SeparableConv2D_4_fix16.h
-add_files weights_c/SeparableConv2D_4_float32.h
 add_files arrays_c/arrays_fix16.h
 add_files layers_c/conv2d.cpp
 add_files layers_c/conv2d.h
@@ -44,11 +34,8 @@ add_files test_data/test_data.h
 add_files layers_c/up_sampling2d.cpp
 add_files layers_c/up_sampling2d.h
 add_files weights_c/weights_fix16.h
-add_files weights_c/weights_float32.h
 add_files -tb layers_cpp/array_printf_fix16.cpp -cflags "-std=c++14 -Wno-unknown-pragmas"
 add_files -tb layers_cpp/array_printf_fix16.h -cflags "-std=c++14 -Wno-unknown-pragmas"
-add_files -tb layers_cpp/array_printf_float32.cpp -cflags "-std=c++14 -Wno-unknown-pragmas"
-add_files -tb layers_cpp/array_printf_float32.h -cflags "-std=c++14 -Wno-unknown-pragmas"
 add_files -tb mnist_AXI_Stream.cpp -cflags "-std=c++14 -Wno-unknown-pragmas"
 open_solution "network"
 set_part {xc7z020clg400-1}

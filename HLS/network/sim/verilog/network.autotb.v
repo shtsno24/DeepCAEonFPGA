@@ -1,5 +1,5 @@
 // ==============================================================
-// File generated on Thu Nov 28 22:10:59 JST 2019
+// File generated on Fri Nov 29 20:36:22 JST 2019
 // Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3.1 (64-bit)
 // SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
 // IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
@@ -79,7 +79,7 @@ module `AUTOTB_TOP;
 
 parameter AUTOTB_TRANSACTION_NUM = 1;
 parameter PROGRESS_TIMEOUT = 10000000;
-parameter LATENCY_ESTIMATION = 125889;
+parameter LATENCY_ESTIMATION = 1925851;
 parameter LENGTH_input_data_V_data_V = 784;
 parameter LENGTH_input_data_V_keep_V = 784;
 parameter LENGTH_input_data_V_strb_V = 784;
@@ -87,13 +87,13 @@ parameter LENGTH_input_data_V_user_V = 784;
 parameter LENGTH_input_data_V_last_V = 784;
 parameter LENGTH_input_data_V_id_V = 784;
 parameter LENGTH_input_data_V_dest_V = 784;
-parameter LENGTH_output_data_V_data_V = 12544;
-parameter LENGTH_output_data_V_keep_V = 12544;
-parameter LENGTH_output_data_V_strb_V = 12544;
-parameter LENGTH_output_data_V_user_V = 12544;
-parameter LENGTH_output_data_V_last_V = 12544;
-parameter LENGTH_output_data_V_id_V = 12544;
-parameter LENGTH_output_data_V_dest_V = 12544;
+parameter LENGTH_output_data_V_data_V = 784;
+parameter LENGTH_output_data_V_keep_V = 784;
+parameter LENGTH_output_data_V_strb_V = 784;
+parameter LENGTH_output_data_V_user_V = 784;
+parameter LENGTH_output_data_V_last_V = 784;
+parameter LENGTH_output_data_V_id_V = 784;
+parameter LENGTH_output_data_V_dest_V = 784;
 parameter LENGTH_ap_return = 1;
 
 task read_token;

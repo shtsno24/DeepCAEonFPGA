@@ -11,7 +11,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 1 \
+    id 4 \
     name input_r \
     reset_level 1 \
     sync_rst true \
@@ -30,7 +30,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 2 \
+    id 5 \
     name output_r \
     reset_level 1 \
     sync_rst true \
@@ -44,6 +44,51 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 }
 }
 
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 1 \
+    name input_depth \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_input_depth \
+    op interface \
+    ports { input_depth { I 7 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 2 \
+    name input_height \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_input_height \
+    op interface \
+    ports { input_height { I 6 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 3 \
+    name input_width \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_input_width \
+    op interface \
+    ports { input_width { I 6 vector } } \
+} "
+}
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {

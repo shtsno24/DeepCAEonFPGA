@@ -7,7 +7,6 @@
    Compiling max_pooling2d.cpp_pre.cpp.tb.cpp
    Compiling padding2d.cpp_pre.cpp.tb.cpp
    Compiling apatb_network.cpp
-   Compiling array_printf_float32.cpp_pre.cpp.tb.cpp
    Compiling conv2d.cpp_pre.cpp.tb.cpp
    Compiling mnist_AXI_Stream.cpp_pre.cpp.tb.cpp
    Generating cosim.tv.exe

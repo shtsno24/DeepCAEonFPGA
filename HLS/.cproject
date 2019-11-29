@@ -157,36 +157,6 @@
                         					
                     </folderInfo>
                     					
-                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1473907277.738923986" name="array_printf_float32.cpp" rcbsApplicability="disable" resourcePath="testbench/array_printf_float32.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.483179458.1993724910">
-                        						
-                        <tool id="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.483179458.1993724910" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.483179458">
-                            							
-                            <option id="gnu.cpp.compiler.option.preprocessor.def.1913736812" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def"/>
-                            							
-                            <option id="gnu.cpp.compiler.option.include.paths.1960176283" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
-                                								
-                                <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/lnx64/tools/systemc/include"/>
-                                								
-                                <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/lnx64/tools/auto_cc/include"/>
-                                								
-                                <listOptionValue builtIn="false" value="/home/masudalab/DeepCAEonFPGA"/>
-                                								
-                                <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/include"/>
-                                								
-                                <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/include/ap_sysc"/>
-                                								
-                                <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/include/etc"/>
-                                							
-                            </option>
-                            							
-                            <option id="gnu.cpp.compiler.option.other.other.579197307" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" value="-std=c++14 -Wno-unknown-pragmas -c -fmessage-length=0" valueType="string"/>
-                            							
-                            <inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1369511604" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
-                            						
-                        </tool>
-                        					
-                    </fileInfo>
-                    					
                     <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1473907277.572788881" name="array_printf_fix16.cpp" rcbsApplicability="disable" resourcePath="testbench/array_printf_fix16.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.483179458.1975411963">
                         						
                         <tool id="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.483179458.1975411963" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.483179458">
@@ -248,8 +218,6 @@
                         </tool>
                         					
                     </fileInfo>
-                    					
-                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1473907277.1061367747" name="array_printf_float32.h" rcbsApplicability="disable" resourcePath="testbench/array_printf_float32.h" toolsToInvoke=""/>
                     					
                     <sourceEntries>
                         						
@@ -399,36 +367,6 @@
                         					
                     </folderInfo>
                     					
-                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.332240825.2122484578" name="array_printf_float32.cpp" rcbsApplicability="disable" resourcePath="testbench/array_printf_float32.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.98485646.2137671213">
-                        						
-                        <tool id="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.98485646.2137671213" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.98485646">
-                            							
-                            <option id="gnu.cpp.compiler.option.preprocessor.def.527444223" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def"/>
-                            							
-                            <option id="gnu.cpp.compiler.option.include.paths.2097021307" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
-                                								
-                                <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/lnx64/tools/systemc/include"/>
-                                								
-                                <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/lnx64/tools/auto_cc/include"/>
-                                								
-                                <listOptionValue builtIn="false" value="/home/masudalab/DeepCAEonFPGA"/>
-                                								
-                                <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/include"/>
-                                								
-                                <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/include/ap_sysc"/>
-                                								
-                                <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/include/etc"/>
-                                							
-                            </option>
-                            							
-                            <option id="gnu.cpp.compiler.option.other.other.648063365" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" value="-std=c++14 -Wno-unknown-pragmas -c -fmessage-length=0" valueType="string"/>
-                            							
-                            <inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.122863857" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
-                            						
-                        </tool>
-                        					
-                    </fileInfo>
-                    					
                     <fileInfo id="cdt.managedbuild.config.gnu.exe.release.332240825.1661291513" name="array_printf_fix16.cpp" rcbsApplicability="disable" resourcePath="testbench/array_printf_fix16.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.98485646.1489840420">
                         						
                         <tool id="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.98485646.1489840420" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.98485646">
@@ -490,8 +428,6 @@
                         </tool>
                         					
                     </fileInfo>
-                    					
-                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.332240825.833759054" name="array_printf_float32.h" rcbsApplicability="disable" resourcePath="testbench/array_printf_float32.h" toolsToInvoke=""/>
                     					
                     <sourceEntries>
                         						

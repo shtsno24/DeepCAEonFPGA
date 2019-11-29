@@ -69,16 +69,16 @@ set RtlHierarchyInfo {[
 		"Port" : [
 			{"Name" : "input_r", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "output_r", "Type" : "Memory", "Direction" : "IO"},
-			{"Name" : "SeparableConv2D_0_w_s", "Type" : "Memory", "Direction" : "I"}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.SeparableConv2D_0_w_s_U", "Parent" : "0"},
-	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mul_mul_16s_15s_30_1_1_U3", "Parent" : "0"}]}
+			{"Name" : "SeparableConv2D_0_w_1", "Type" : "Memory", "Direction" : "I"}]},
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.SeparableConv2D_0_w_1_U", "Parent" : "0"},
+	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mul_mul_15s_16s_30_1_1_U6", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {
 	depthwise_conv2d_fix {
 		input_r {Type I LastRead 4 FirstWrite -1}
 		output_r {Type IO LastRead 6 FirstWrite 2}
-		SeparableConv2D_0_w_s {Type I LastRead -1 FirstWrite -1}}}
+		SeparableConv2D_0_w_1 {Type I LastRead -1 FirstWrite -1}}}
 
 set hasDtUnsupportedChannel 0
 

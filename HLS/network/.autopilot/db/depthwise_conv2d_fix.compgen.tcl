@@ -1,19 +1,19 @@
 # This script segment is generated automatically by AutoPilot
 
-set id 3
-set name network_mul_mul_16s_15s_30_1_1
+set id 6
+set name network_mul_mul_15s_16s_30_1_1
 set corename simcore_mul
 set op mul
 set stage_num 1
 set max_latency -1
 set registered_input 1
-set in0_width 16
+set in0_width 15
 set in0_signed 1
-set in1_width 15
+set in1_width 16
 set in1_signed 1
 set out_width 30
 set exp i0*i1
-set arg_lists {i0 {16 1 +} i1 {15 1 +} p {30 1 +} acc {0} }
+set arg_lists {i0 {15 1 +} i1 {16 1 +} p {30 1 +} acc {0} }
 set TrueReset 0
 if {${::AESL::PGuard_simmodel_gen}} {
 if {[info proc ap_gen_simcore_mul] == "ap_gen_simcore_mul"} {
@@ -77,9 +77,9 @@ puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_dsp48, check your p
 
 
 # Memory (RAM/ROM)  definition:
-set ID 5
+set ID 8
 set hasByteEnable 0
-set MemName depthwise_conv2d_fix_SeparableConv2D_0_w_s
+set MemName depthwise_conv2d_fix_SeparableConv2D_0_w_1
 set CoreName ap_simcore_mem
 set PortList { 1 }
 set DataWd 15
@@ -170,7 +170,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 6 \
+    id 9 \
     name input_r \
     reset_level 1 \
     sync_rst true \
@@ -189,7 +189,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 7 \
+    id 10 \
     name output_r \
     reset_level 1 \
     sync_rst true \

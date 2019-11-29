@@ -1,5 +1,5 @@
 // ==============================================================
-// File generated on Thu Nov 28 22:10:50 JST 2019
+// File generated on Fri Nov 29 20:36:14 JST 2019
 // Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3.1 (64-bit)
 // SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
 // IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
@@ -223,8 +223,8 @@ typedef __uintmax_t uintmax_t;
 
 
 #3 "/home/masudalab/DeepCAEonFPGA/layers_c/pointwise_conv2d.h"
-uint8_t pointwise_conv2d_fix16(const uint16_t input_depth, uint16_t input_height, uint16_t input_width, int16_t* input,
-const uint16_t output_depth, uint16_t output_height, uint16_t output_width, int16_t* output,
+uint8_t pointwise_conv2d_fix16(uint16_t input_depth, uint16_t input_height, uint16_t input_width, int16_t* input,
+uint16_t output_depth, uint16_t output_height, uint16_t output_width, int16_t* output,
 const int16_t* bias,
 uint16_t kernel_height, uint16_t kernel_width, const int16_t* kernel,
 uint8_t relu, uint8_t fractal_width);

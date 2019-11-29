@@ -1,5 +1,5 @@
 // ==============================================================
-// File generated on Thu Nov 28 22:31:49 JST 2019
+// File generated on Fri Nov 29 20:35:09 JST 2019
 // Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3.1 (64-bit)
 // SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
 // IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
@@ -9,8 +9,8 @@
 module network_MemBank_Out_ram (addr0, ce0, d0, we0, q0,  clk);
 
 parameter DWIDTH = 16;
-parameter AWIDTH = 14;
-parameter MEM_SIZE = 12544;
+parameter AWIDTH = 10;
+parameter MEM_SIZE = 784;
 
 input[AWIDTH-1:0] addr0;
 input ce0;
@@ -50,8 +50,8 @@ module network_MemBank_Out(
     q0);
 
 parameter DataWidth = 32'd16;
-parameter AddressRange = 32'd12544;
-parameter AddressWidth = 32'd14;
+parameter AddressRange = 32'd784;
+parameter AddressWidth = 32'd10;
 input reset;
 input clk;
 input[AddressWidth - 1:0] address0;

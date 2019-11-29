@@ -386,11 +386,10 @@ uint8_t relu, uint8_t fractal_width){
                 output[out_d * output_height * output_width + out_h * output_width + out_w] = 0;
                 for(uint16_t in_d = 0; in_d < input_depth; in_d++){
 
-                 for(int i = 0; i < 1; i++){
-                  output[out_d * output_height * output_width + out_h * output_width + out_w] +=
-                    (int16_t)(((int32_t)(input[in_d * output_height * output_width + out_h * output_width + out_w]) *
-                      (int32_t)(kernel[out_d * input_depth + in_d])) >> fractal_width);
-                 }
+                 output[out_d * output_height * output_width + out_h * output_width + out_w] +=
+                   (int16_t)(((int32_t)(
+                     input[in_d * output_height * output_width + out_h * output_width + out_w]) *
+                     (int32_t)(kernel[out_d * input_depth + in_d])) >> fractal_width);
                 }
 
                 output[out_d * output_height * output_width + out_h * output_width + out_w] += bias[out_d];

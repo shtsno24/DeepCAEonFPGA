@@ -47,19 +47,9 @@
 			<location>/home/masudalab/DeepCAEonFPGA/weights_c/Conv2D_0_fix16.h</location>
 		</link>
 		<link>
-			<name>source/Conv2D_0_float32.h</name>
-			<type>1</type>
-			<location>/home/masudalab/DeepCAEonFPGA/weights_c/Conv2D_0_float32.h</location>
-		</link>
-		<link>
 			<name>source/Conv2D_1_fix16.h</name>
 			<type>1</type>
 			<location>/home/masudalab/DeepCAEonFPGA/weights_c/Conv2D_1_fix16.h</location>
-		</link>
-		<link>
-			<name>source/Conv2D_1_float32.h</name>
-			<type>1</type>
-			<location>/home/masudalab/DeepCAEonFPGA/weights_c/Conv2D_1_float32.h</location>
 		</link>
 		<link>
 			<name>source/Conv2D_2_fix16.h</name>
@@ -67,19 +57,9 @@
 			<location>/home/masudalab/DeepCAEonFPGA/weights_c/Conv2D_2_fix16.h</location>
 		</link>
 		<link>
-			<name>source/Conv2D_2_float32.h</name>
-			<type>1</type>
-			<location>/home/masudalab/DeepCAEonFPGA/weights_c/Conv2D_2_float32.h</location>
-		</link>
-		<link>
 			<name>source/Conv2D_3_fix16.h</name>
 			<type>1</type>
 			<location>/home/masudalab/DeepCAEonFPGA/weights_c/Conv2D_3_fix16.h</location>
-		</link>
-		<link>
-			<name>source/Conv2D_3_float32.h</name>
-			<type>1</type>
-			<location>/home/masudalab/DeepCAEonFPGA/weights_c/Conv2D_3_float32.h</location>
 		</link>
 		<link>
 			<name>source/Conv2D_4_fix16.h</name>
@@ -87,19 +67,9 @@
 			<location>/home/masudalab/DeepCAEonFPGA/weights_c/Conv2D_4_fix16.h</location>
 		</link>
 		<link>
-			<name>source/Conv2D_4_float32.h</name>
-			<type>1</type>
-			<location>/home/masudalab/DeepCAEonFPGA/weights_c/Conv2D_4_float32.h</location>
-		</link>
-		<link>
 			<name>source/SeparableConv2D_0_fix16.h</name>
 			<type>1</type>
 			<location>/home/masudalab/DeepCAEonFPGA/weights_c/SeparableConv2D_0_fix16.h</location>
-		</link>
-		<link>
-			<name>source/SeparableConv2D_0_float32.h</name>
-			<type>1</type>
-			<location>/home/masudalab/DeepCAEonFPGA/weights_c/SeparableConv2D_0_float32.h</location>
 		</link>
 		<link>
 			<name>source/SeparableConv2D_1_fix16.h</name>
@@ -107,19 +77,9 @@
 			<location>/home/masudalab/DeepCAEonFPGA/weights_c/SeparableConv2D_1_fix16.h</location>
 		</link>
 		<link>
-			<name>source/SeparableConv2D_1_float32.h</name>
-			<type>1</type>
-			<location>/home/masudalab/DeepCAEonFPGA/weights_c/SeparableConv2D_1_float32.h</location>
-		</link>
-		<link>
 			<name>source/SeparableConv2D_2_fix16.h</name>
 			<type>1</type>
 			<location>/home/masudalab/DeepCAEonFPGA/weights_c/SeparableConv2D_2_fix16.h</location>
-		</link>
-		<link>
-			<name>source/SeparableConv2D_2_float32.h</name>
-			<type>1</type>
-			<location>/home/masudalab/DeepCAEonFPGA/weights_c/SeparableConv2D_2_float32.h</location>
 		</link>
 		<link>
 			<name>source/SeparableConv2D_3_fix16.h</name>
@@ -127,19 +87,9 @@
 			<location>/home/masudalab/DeepCAEonFPGA/weights_c/SeparableConv2D_3_fix16.h</location>
 		</link>
 		<link>
-			<name>source/SeparableConv2D_3_float32.h</name>
-			<type>1</type>
-			<location>/home/masudalab/DeepCAEonFPGA/weights_c/SeparableConv2D_3_float32.h</location>
-		</link>
-		<link>
 			<name>source/SeparableConv2D_4_fix16.h</name>
 			<type>1</type>
 			<location>/home/masudalab/DeepCAEonFPGA/weights_c/SeparableConv2D_4_fix16.h</location>
-		</link>
-		<link>
-			<name>source/SeparableConv2D_4_float32.h</name>
-			<type>1</type>
-			<location>/home/masudalab/DeepCAEonFPGA/weights_c/SeparableConv2D_4_float32.h</location>
 		</link>
 		<link>
 			<name>source/arrays_fix16.h</name>
@@ -237,11 +187,6 @@
 			<location>/home/masudalab/DeepCAEonFPGA/weights_c/weights_fix16.h</location>
 		</link>
 		<link>
-			<name>source/weights_float32.h</name>
-			<type>1</type>
-			<location>/home/masudalab/DeepCAEonFPGA/weights_c/weights_float32.h</location>
-		</link>
-		<link>
 			<name>testbench/array_printf_fix16.cpp</name>
 			<type>1</type>
 			<location>/home/masudalab/DeepCAEonFPGA/layers_cpp/array_printf_fix16.cpp</location>
@@ -250,16 +195,6 @@
 			<name>testbench/array_printf_fix16.h</name>
 			<type>1</type>
 			<location>/home/masudalab/DeepCAEonFPGA/layers_cpp/array_printf_fix16.h</location>
-		</link>
-		<link>
-			<name>testbench/array_printf_float32.cpp</name>
-			<type>1</type>
-			<location>/home/masudalab/DeepCAEonFPGA/layers_cpp/array_printf_float32.cpp</location>
-		</link>
-		<link>
-			<name>testbench/array_printf_float32.h</name>
-			<type>1</type>
-			<location>/home/masudalab/DeepCAEonFPGA/layers_cpp/array_printf_float32.h</location>
 		</link>
 		<link>
 			<name>testbench/mnist_AXI_Stream.cpp</name>

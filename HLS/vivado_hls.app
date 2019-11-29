@@ -6,11 +6,8 @@
     </Simulation>
     <files xmlns="">
         <file name="../../mnist_AXI_Stream.cpp" sc="0" tb="1" cflags=" -std=c++14 -Wno-unknown-pragmas" blackbox="false"/>
-        <file name="../../layers_cpp/array_printf_float32.h" sc="0" tb="1" cflags=" -std=c++14 -Wno-unknown-pragmas" blackbox="false"/>
-        <file name="../../layers_cpp/array_printf_float32.cpp" sc="0" tb="1" cflags=" -std=c++14 -Wno-unknown-pragmas" blackbox="false"/>
         <file name="../../layers_cpp/array_printf_fix16.h" sc="0" tb="1" cflags=" -std=c++14 -Wno-unknown-pragmas" blackbox="false"/>
         <file name="../../layers_cpp/array_printf_fix16.cpp" sc="0" tb="1" cflags=" -std=c++14 -Wno-unknown-pragmas" blackbox="false"/>
-        <file name="weights_c/weights_float32.h" sc="0" tb="false" cflags="" blackbox="false"/>
         <file name="weights_c/weights_fix16.h" sc="0" tb="false" cflags="" blackbox="false"/>
         <file name="layers_c/up_sampling2d.h" sc="0" tb="false" cflags="" blackbox="false"/>
         <file name="layers_c/up_sampling2d.cpp" sc="0" tb="false" cflags="" blackbox="false"/>
@@ -30,25 +27,15 @@
         <file name="layers_c/conv2d.h" sc="0" tb="false" cflags="" blackbox="false"/>
         <file name="layers_c/conv2d.cpp" sc="0" tb="false" cflags="" blackbox="false"/>
         <file name="arrays_c/arrays_fix16.h" sc="0" tb="false" cflags="" blackbox="false"/>
-        <file name="weights_c/SeparableConv2D_4_float32.h" sc="0" tb="false" cflags="" blackbox="false"/>
         <file name="weights_c/SeparableConv2D_4_fix16.h" sc="0" tb="false" cflags="" blackbox="false"/>
-        <file name="weights_c/SeparableConv2D_3_float32.h" sc="0" tb="false" cflags="" blackbox="false"/>
         <file name="weights_c/SeparableConv2D_3_fix16.h" sc="0" tb="false" cflags="" blackbox="false"/>
-        <file name="weights_c/SeparableConv2D_2_float32.h" sc="0" tb="false" cflags="" blackbox="false"/>
         <file name="weights_c/SeparableConv2D_2_fix16.h" sc="0" tb="false" cflags="" blackbox="false"/>
-        <file name="weights_c/SeparableConv2D_1_float32.h" sc="0" tb="false" cflags="" blackbox="false"/>
         <file name="weights_c/SeparableConv2D_1_fix16.h" sc="0" tb="false" cflags="" blackbox="false"/>
-        <file name="weights_c/SeparableConv2D_0_float32.h" sc="0" tb="false" cflags="" blackbox="false"/>
         <file name="weights_c/SeparableConv2D_0_fix16.h" sc="0" tb="false" cflags="" blackbox="false"/>
-        <file name="weights_c/Conv2D_4_float32.h" sc="0" tb="false" cflags="" blackbox="false"/>
         <file name="weights_c/Conv2D_4_fix16.h" sc="0" tb="false" cflags="" blackbox="false"/>
-        <file name="weights_c/Conv2D_3_float32.h" sc="0" tb="false" cflags="" blackbox="false"/>
         <file name="weights_c/Conv2D_3_fix16.h" sc="0" tb="false" cflags="" blackbox="false"/>
-        <file name="weights_c/Conv2D_2_float32.h" sc="0" tb="false" cflags="" blackbox="false"/>
         <file name="weights_c/Conv2D_2_fix16.h" sc="0" tb="false" cflags="" blackbox="false"/>
-        <file name="weights_c/Conv2D_1_float32.h" sc="0" tb="false" cflags="" blackbox="false"/>
         <file name="weights_c/Conv2D_1_fix16.h" sc="0" tb="false" cflags="" blackbox="false"/>
-        <file name="weights_c/Conv2D_0_float32.h" sc="0" tb="false" cflags="" blackbox="false"/>
         <file name="weights_c/Conv2D_0_fix16.h" sc="0" tb="false" cflags="" blackbox="false"/>
     </files>
     <solutions xmlns="">

@@ -1,5 +1,5 @@
 # ==============================================================
-# File generated on Thu Nov 28 22:10:59 JST 2019
+# File generated on Fri Nov 29 20:36:22 JST 2019
 # Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3.1 (64-bit)
 # SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
 # IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
@@ -61,10 +61,6 @@ all : $(TARGET)
 
 $(ObjDir)/mnist_AXI_Stream.cpp_pre.cpp.tb.o : mnist_AXI_Stream.cpp_pre.cpp.tb.cpp $(ObjDir)/.dir
 	$(Echo) "   Compiling mnist_AXI_Stream.cpp_pre.cpp.tb.cpp" $(AVE_DIR_DLOG)
-	$(Verb) $(CC) ${CCFLAG} ${TOOLCHAIN}  -fno-builtin-isinf -fno-builtin-isnan -c $(IFLAG) $(DFLAG) $< -o $@; \
-
-$(ObjDir)/array_printf_float32.cpp_pre.cpp.tb.o : array_printf_float32.cpp_pre.cpp.tb.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling array_printf_float32.cpp_pre.cpp.tb.cpp" $(AVE_DIR_DLOG)
 	$(Verb) $(CC) ${CCFLAG} ${TOOLCHAIN}  -fno-builtin-isinf -fno-builtin-isnan -c $(IFLAG) $(DFLAG) $< -o $@; \
 
 $(ObjDir)/array_printf_fix16.cpp_pre.cpp.tb.o : array_printf_fix16.cpp_pre.cpp.tb.cpp $(ObjDir)/.dir

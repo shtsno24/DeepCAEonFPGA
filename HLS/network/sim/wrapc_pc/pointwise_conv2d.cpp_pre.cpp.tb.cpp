@@ -1,5 +1,5 @@
 // ==============================================================
-// File generated on Thu Nov 28 22:10:51 JST 2019
+// File generated on Fri Nov 29 20:36:14 JST 2019
 // Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3.1 (64-bit)
 // SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
 // IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
@@ -223,8 +223,8 @@ typedef __uintmax_t uintmax_t;
 
 
 #3 "/home/masudalab/DeepCAEonFPGA/layers_c/pointwise_conv2d.h"
-uint8_t pointwise_conv2d_fix16(const uint16_t input_depth, uint16_t input_height, uint16_t input_width, int16_t* input,
-const uint16_t output_depth, uint16_t output_height, uint16_t output_width, int16_t* output,
+uint8_t pointwise_conv2d_fix16(uint16_t input_depth, uint16_t input_height, uint16_t input_width, int16_t* input,
+uint16_t output_depth, uint16_t output_height, uint16_t output_width, int16_t* output,
 const int16_t* bias,
 uint16_t kernel_height, uint16_t kernel_width, const int16_t* kernel,
 uint8_t relu, uint8_t fractal_width);
@@ -236,8 +236,8 @@ uint16_t kernel_height, uint16_t kernel_width, const float* kernel,
 uint8_t relu);
 #3 "/home/masudalab/DeepCAEonFPGA/layers_c/pointwise_conv2d.cpp" 2
 
-uint8_t pointwise_conv2d_fix16(const uint16_t input_depth, uint16_t input_height, uint16_t input_width, int16_t* input,
-const uint16_t output_depth, uint16_t output_height, uint16_t output_width, int16_t* output,
+uint8_t pointwise_conv2d_fix16(uint16_t input_depth, uint16_t input_height, uint16_t input_width, int16_t* input,
+uint16_t output_depth, uint16_t output_height, uint16_t output_width, int16_t* output,
 const int16_t* bias,
 uint16_t kernel_height, uint16_t kernel_width, const int16_t* kernel,
 uint8_t relu, uint8_t fractal_width){
@@ -247,22 +247,16 @@ uint8_t relu, uint8_t fractal_width){
 
 
 
-    int16_t kernel_len = input_depth * output_depth;
-    int16_t kernel_buff[16 * 8];
-
-    for(uint16_t i = 0; i < kernel_len; i++){
-        kernel_buff[i] = kernel[i];
-    }
-
     for(uint16_t out_d = 0; out_d < output_depth; out_d++){
         for(uint16_t out_h = 0; out_h < output_height; out_h++){
             for(uint16_t out_w = 0; out_w < output_width; out_w++){
                 output[out_d * output_height * output_width + out_h * output_width + out_w] = 0;
                 for(uint16_t in_d = 0; in_d < input_depth; in_d++){
 
-                    output[out_d * output_height * output_width + out_h * output_width + out_w] +=
-                        (int16_t)(((int32_t)(input[in_d * output_height * output_width + out_h * output_width + out_w]) *
-                                    (int32_t)(kernel_buff[out_d * input_depth + in_d])) >> fractal_width);
+                 output[out_d * output_height * output_width + out_h * output_width + out_w] +=
+                   (int16_t)(((int32_t)(
+                     input[in_d * output_height * output_width + out_h * output_width + out_w]) *
+                     (int32_t)(kernel[out_d * input_depth + in_d])) >> fractal_width);
                 }
 
                 output[out_d * output_height * output_width + out_h * output_width + out_w] += bias[out_d];

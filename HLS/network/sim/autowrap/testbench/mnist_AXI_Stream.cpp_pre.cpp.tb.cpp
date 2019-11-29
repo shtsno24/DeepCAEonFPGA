@@ -1,5 +1,5 @@
 // ==============================================================
-// File generated on Thu Nov 28 22:10:43 JST 2019
+// File generated on Fri Nov 29 20:36:10 JST 2019
 // Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3.1 (64-bit)
 // SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
 // IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
@@ -36981,8 +36981,8 @@ uint8_t relu);
 #1 "/home/masudalab/DeepCAEonFPGA/./layers_c/pointwise_conv2d.h" 1
 
 
-uint8_t pointwise_conv2d_fix16(const uint16_t input_depth, uint16_t input_height, uint16_t input_width, int16_t* input,
-const uint16_t output_depth, uint16_t output_height, uint16_t output_width, int16_t* output,
+uint8_t pointwise_conv2d_fix16(uint16_t input_depth, uint16_t input_height, uint16_t input_width, int16_t* input,
+uint16_t output_depth, uint16_t output_height, uint16_t output_width, int16_t* output,
 const int16_t* bias,
 uint16_t kernel_height, uint16_t kernel_width, const int16_t* kernel,
 uint8_t relu, uint8_t fractal_width);
@@ -37070,38 +37070,39 @@ const int16_t SeparableConv2D_0_w_d[1][1][3][3] =
 { -783, 3015, -3653}}}};
 
 const uint16_t shape_SeparableConv2D_0_w_p[] = {16, 1, 1, 1};
-const int16_t SeparableConv2D_0_w_p[16][1][1][1] =
-{{{{-1770}}},
+#55 "/home/masudalab/DeepCAEonFPGA/./weights_c/SeparableConv2D_0_fix16.h"
+const int16_t SeparableConv2D_0_w_p[16] =
+{-1770,
 
-{{{ 6639}}},
+6639,
 
-{{{ 8093}}},
+8093,
 
-{{{ -628}}},
+-628,
 
-{{{ 4920}}},
+4920,
 
-{{{ 9618}}},
+9618,
 
-{{{-9253}}},
+-9253,
 
-{{{ 1545}}},
+1545,
 
-{{{-10856}}},
+-10856,
 
-{{{ 2733}}},
+2733,
 
-{{{ 1194}}},
+1194,
 
-{{{ 6035}}},
+6035,
 
-{{{ 3956}}},
+3956,
 
-{{{-6935}}},
+-6935,
 
-{{{ 5414}}},
+5414,
 
-{{{ 6639}}}};
+6639};
 
 const uint16_t shape_SeparableConv2D_0_b_d = 1;
 const int16_t SeparableConv2D_0_b_d[1] = { 0};
@@ -76617,11 +76618,11 @@ int network(axis &input_data, axis &output_data) {
 #pragma HLS INTERFACE axis register both port=output_data
 #pragma HLS INTERFACE s_axilite register port=return
 
- int16_t MemBank_A[14400], MemBank_B[14400], MemBank_Out[16 * 28 * 28];
+ int16_t MemBank_A[14400], MemBank_B[14400], MemBank_Out[1 * 28 * 28];
 
  int16_t* array_head = (int16_t*)MemBank_Out;
+ uint64_t array_length = (uint64_t)SeparableConv2D_4_depth * SeparableConv2D_4_height * SeparableConv2D_4_width;
 
- uint64_t array_length = 16 * 28 * 28;
 
  ap_axis<16, 1, 1, 1> tmp;
  ap_axis<16, 1, 1, 1> out;
@@ -76644,7 +76645,79 @@ int network(axis &input_data, axis &output_data) {
  SeparableConv2D_0_depth, SeparableConv2D_0_height, SeparableConv2D_0_width, (int16_t*)MemBank_B,
  (int16_t*)SeparableConv2D_0_b_p,
  1, 1, (int16_t*)SeparableConv2D_0_w_p, 1, 14);
-#132 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
+
+ max_pooling2d_fix16(2,
+ SeparableConv2D_0_depth, SeparableConv2D_0_height, SeparableConv2D_0_width, (int16_t*)MemBank_B,
+ MaxPooling2D_0_depth, MaxPooling2D_0_height, MaxPooling2D_0_width, (int16_t*)MemBank_A);
+
+ padding2d_fix16(1, 1,
+ MaxPooling2D_0_depth, MaxPooling2D_0_height, MaxPooling2D_0_width, (int16_t*)MemBank_A,
+ Padding2D_1_height, Padding2D_1_width, (int16_t*)MemBank_B);
+
+ depthwise_conv2d_fix16(Padding2D_1_depth, Padding2D_1_height, Padding2D_1_width, (int16_t*)MemBank_B,
+ Padding2D_1_depth, SeparableConv2D_1_height, SeparableConv2D_1_width, (int16_t*)MemBank_A,
+ (int16_t*) SeparableConv2D_1_b_d,
+ 3, 3, (int16_t*) SeparableConv2D_1_w_d, 0, 14);
+
+ pointwise_conv2d_fix16(Padding2D_1_depth, SeparableConv2D_1_height, SeparableConv2D_1_width, (int16_t*)MemBank_A,
+ SeparableConv2D_1_depth, SeparableConv2D_1_height, SeparableConv2D_1_width, (int16_t*)MemBank_B,
+ (int16_t*)SeparableConv2D_1_b_p,
+ 1, 1, (int16_t*)SeparableConv2D_1_w_p, 1, 14);
+
+ max_pooling2d_fix16(2,
+ SeparableConv2D_1_depth, SeparableConv2D_1_height, SeparableConv2D_1_width, (int16_t*)MemBank_B,
+ MaxPooling2D_1_depth, MaxPooling2D_1_height, MaxPooling2D_1_width, (int16_t*)MemBank_A);
+
+ padding2d_fix16(1, 1,
+ MaxPooling2D_1_depth, MaxPooling2D_1_height, MaxPooling2D_1_width, (int16_t*)MemBank_A,
+ Padding2D_2_height, Padding2D_2_width, (int16_t*)MemBank_B);
+
+ depthwise_conv2d_fix16(Padding2D_2_depth, Padding2D_2_height, Padding2D_2_width, (int16_t*)MemBank_B,
+ Padding2D_2_depth, SeparableConv2D_2_height, SeparableConv2D_2_width, (int16_t*)MemBank_A,
+ (int16_t*) SeparableConv2D_2_b_d,
+ 3, 3, (int16_t*) SeparableConv2D_2_w_d, 0, 14);
+
+ pointwise_conv2d_fix16(Padding2D_2_depth, SeparableConv2D_2_height, SeparableConv2D_2_width, (int16_t*)MemBank_A,
+ SeparableConv2D_2_depth, SeparableConv2D_2_height, SeparableConv2D_2_width, (int16_t*)MemBank_B,
+ (int16_t*)SeparableConv2D_2_b_p,
+ 1, 1, (int16_t*)SeparableConv2D_2_w_p, 1, 14);
+
+ up_sampling2d_fix16(2,
+ SeparableConv2D_2_depth, SeparableConv2D_2_height, SeparableConv2D_2_width, (int16_t*)MemBank_B,
+ UpSampling2D_0_depth, UpSampling2D_0_height, UpSampling2D_0_width, (int16_t*)MemBank_A);
+
+ padding2d_fix16(1, 1,
+ UpSampling2D_0_depth, UpSampling2D_0_height, UpSampling2D_0_width, (int16_t*)MemBank_A,
+ Padding2D_3_height, Padding2D_3_width, (int16_t*)MemBank_B);
+
+ depthwise_conv2d_fix16(Padding2D_3_depth, Padding2D_3_height, Padding2D_3_width, (int16_t*)MemBank_B,
+ Padding2D_3_depth, SeparableConv2D_3_height, SeparableConv2D_3_width, (int16_t*)MemBank_A,
+ (int16_t*) SeparableConv2D_3_b_d,
+ 3, 3, (int16_t*) SeparableConv2D_3_w_d, 0, 14);
+
+ pointwise_conv2d_fix16(Padding2D_3_depth, SeparableConv2D_3_height, SeparableConv2D_3_width, (int16_t*)MemBank_A,
+ SeparableConv2D_3_depth, SeparableConv2D_3_height, SeparableConv2D_3_width, (int16_t*)MemBank_B,
+ (int16_t*)SeparableConv2D_3_b_p,
+ 1, 1, (int16_t*)SeparableConv2D_3_w_p, 1, 14);
+
+ up_sampling2d_fix16(2,
+ SeparableConv2D_3_depth, SeparableConv2D_3_height, SeparableConv2D_3_width, (int16_t*)MemBank_B,
+ UpSampling2D_1_depth, UpSampling2D_1_height, UpSampling2D_1_width, (int16_t*)MemBank_A);
+
+ padding2d_fix16(1, 1,
+ UpSampling2D_1_depth, UpSampling2D_1_height, UpSampling2D_1_width, (int16_t*)MemBank_A,
+ Padding2D_4_height, Padding2D_4_width, (int16_t*)MemBank_B);
+
+ depthwise_conv2d_fix16(Padding2D_4_depth, Padding2D_4_height, Padding2D_4_width, (int16_t*)MemBank_B,
+ Padding2D_4_depth, SeparableConv2D_4_height, SeparableConv2D_4_width, (int16_t*)MemBank_A,
+ (int16_t*) SeparableConv2D_4_b_d,
+ 3, 3, (int16_t*) SeparableConv2D_4_w_d, 0, 14);
+
+ pointwise_conv2d_fix16(Padding2D_4_depth, SeparableConv2D_4_height, SeparableConv2D_4_width, (int16_t*)MemBank_A,
+ SeparableConv2D_4_depth, SeparableConv2D_4_height, SeparableConv2D_4_width, (int16_t*)MemBank_B,
+ (int16_t*)SeparableConv2D_4_b_p,
+ 1, 1, (int16_t*)SeparableConv2D_4_w_p, 1, 14);
+
  for(int i = 0; i < array_length; i++){
 
   MemBank_Out[i] = MemBank_B[i];
@@ -76684,9 +76757,8 @@ int main(void){
  axis output_buffer;
 #pragma HLS reset variable=output_buffer
 
-    int16_t output_img_buff[16 * 28 * 28];
+    int16_t output_img_buff[1 * 28 * 28];
     ap_axis<16, 1, 1, 1> tmp;
- ap_uint<32> debug_status = 0;
 
  int i = 0;
  for(int depth = 0; depth < 1; depth++){
@@ -76721,19 +76793,19 @@ int main(void){
 #define network AESL_WRAP_network
 #endif
 
-#194 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
+#193 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
 
 #ifndef HLS_FASTSIM
 #define network AESL_WRAP_network
 #endif
 
-#194 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
+#193 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
 network
 #undef network
-#194 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
+#193 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
 
 #undef network
-#194 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
+#193 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
 (input_buffer, output_buffer);
 
  cout << "\r\n";
@@ -76760,4 +76832,4 @@ network
  return 0;
 }
 #endif
-#218 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
+#217 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"

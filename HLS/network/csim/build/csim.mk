@@ -1,5 +1,5 @@
 # ==============================================================
-# File generated on Thu Nov 28 22:30:48 JST 2019
+# File generated on Fri Nov 29 20:33:53 JST 2019
 # Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3.1 (64-bit)
 # SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
 # IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
@@ -21,7 +21,7 @@ __SIM_DDS__ = 1
 
 ObjDir = obj
 
-HLS_SOURCES = ../../../../layers_cpp/array_printf_fix16.cpp ../../../../layers_cpp/array_printf_float32.cpp ../../../../mnist_AXI_Stream.cpp ../../../../layers_c/conv2d.cpp ../../../../layers_c/depthwise_conv2d.cpp ../../../../layers_c/max_pooling2d.cpp ../../../../layers_c/padding2d.cpp ../../../../layers_c/pointwise_conv2d.cpp ../../../../layers_c/separable_conv2d.cpp ../../../../layers_c/up_sampling2d.cpp
+HLS_SOURCES = ../../../../layers_cpp/array_printf_fix16.cpp ../../../../mnist_AXI_Stream.cpp ../../../../layers_c/conv2d.cpp ../../../../layers_c/depthwise_conv2d.cpp ../../../../layers_c/max_pooling2d.cpp ../../../../layers_c/padding2d.cpp ../../../../layers_c/pointwise_conv2d.cpp ../../../../layers_c/separable_conv2d.cpp ../../../../layers_c/up_sampling2d.cpp
 
 TARGET := csim.exe
 
@@ -79,12 +79,6 @@ $(ObjDir)/array_printf_fix16.o: ../../../../layers_cpp/array_printf_fix16.cpp $(
 	$(Verb)  $(CC) ${CCFLAG} -c -MMD -std=c++14 -Wno-unknown-pragmas  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
 -include $(ObjDir)/array_printf_fix16.d
-
-$(ObjDir)/array_printf_float32.o: ../../../../layers_cpp/array_printf_float32.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling ../../../../layers_cpp/array_printf_float32.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CC) ${CCFLAG} -c -MMD -std=c++14 -Wno-unknown-pragmas  $(IFLAG) $(DFLAG) $< -o $@ ; \
-
--include $(ObjDir)/array_printf_float32.d
 
 $(ObjDir)/mnist_AXI_Stream.o: ../../../../mnist_AXI_Stream.cpp $(ObjDir)/.dir
 	$(Echo) "   Compiling ../../../../mnist_AXI_Stream.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)

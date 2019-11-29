@@ -1,7 +1,7 @@
 # This script segment is generated automatically by AutoPilot
 
-set id 8
-set name network_mul_mul_16s_12s_28_1_1
+set id 50
+set name network_mul_mul_16s_15ns_30_1_1
 set corename simcore_mul
 set op mul
 set stage_num 1
@@ -9,11 +9,11 @@ set max_latency -1
 set registered_input 1
 set in0_width 16
 set in0_signed 1
-set in1_width 12
-set in1_signed 1
-set out_width 28
+set in1_width 15
+set in1_signed 0
+set out_width 30
 set exp i0*i1
-set arg_lists {i0 {16 1 +} i1 {12 1 +} p {28 1 +} acc {0} }
+set arg_lists {i0 {16 1 +} i1 {15 0 +} p {30 1 +} acc {0} }
 set TrueReset 0
 if {${::AESL::PGuard_simmodel_gen}} {
 if {[info proc ap_gen_simcore_mul] == "ap_gen_simcore_mul"} {
@@ -77,17 +77,17 @@ puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_dsp48, check your p
 
 
 # Memory (RAM/ROM)  definition:
-set ID 10
+set ID 52
 set hasByteEnable 0
-set MemName pointwise_conv2d_fix_SeparableConv2D_0_b_s
+set MemName pointwise_conv2d_fix_SeparableConv2D_2_b_s
 set CoreName ap_simcore_mem
 set PortList { 1 }
 set DataWd 13
-set AddrRange 16
-set AddrWd 4
+set AddrRange 8
+set AddrWd 3
 set TrueReset 0
 set IsROM 1
-set ROMData { "0011000000110" "1101111101000" "1111010110011" "0001100001111" "1110011101100" "1110011011100" "0001011110110" "1111010101010" "0010000111011" "0100111010000" "0000110111001" "0000000000000" "1110000111101" "0000001100111" "1110101000111" "1110010101100" }
+set ROMData { "0000110011110" "0000000000100" "0000000101010" "1001110101001" "0000000001011" "0000010011111" "0100011100100" "1101000111011" }
 set HasInitializer 1
 set Initializer $ROMData
 set NumOfStage 2
@@ -170,7 +170,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 11 \
+    id 53 \
     name input_r \
     reset_level 1 \
     sync_rst true \
@@ -189,7 +189,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 12 \
+    id 54 \
     name output_r \
     reset_level 1 \
     sync_rst true \

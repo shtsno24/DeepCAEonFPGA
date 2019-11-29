@@ -126,13 +126,13 @@ set NewPortList {[
  	{ "name": "output_data_TDEST", "direction": "out", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "output_data_V_dest_V", "role": "default" }}  ]}
 
 set RtlHierarchyInfo {[
-	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "3", "4", "5", "6", "9"],
+	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "16", "18", "21", "24", "26", "29", "30", "32", "36"],
 		"CDFG" : "network",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "125872", "EstimateLatencyMax" : "125872",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "708370", "EstimateLatencyMax" : "1925851",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -140,9 +140,25 @@ set RtlHierarchyInfo {[
 		"InDataflowNetwork" : "0",
 		"HasNonBlockingOperation" : "0",
 		"WaitState" : [
-			{"State" : "ap_ST_fsm_state3", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_padding2d_fix16_fu_237"},
-			{"State" : "ap_ST_fsm_state5", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_depthwise_conv2d_fix_fu_243"},
-			{"State" : "ap_ST_fsm_state7", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_pointwise_conv2d_fix_fu_251"}],
+			{"State" : "ap_ST_fsm_state3", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_padding2d_fix16_fu_299"},
+			{"State" : "ap_ST_fsm_state11", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_padding2d_fix16_fu_299"},
+			{"State" : "ap_ST_fsm_state19", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_padding2d_fix16_fu_299"},
+			{"State" : "ap_ST_fsm_state27", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_padding2d_fix16_fu_299"},
+			{"State" : "ap_ST_fsm_state35", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_padding2d_fix16_fu_299"},
+			{"State" : "ap_ST_fsm_state13", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_depthwise_conv2d_fix_2_fu_317"},
+			{"State" : "ap_ST_fsm_state37", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_depthwise_conv2d_fix_2_fu_317"},
+			{"State" : "ap_ST_fsm_state21", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_depthwise_conv2d_fix_1_fu_341"},
+			{"State" : "ap_ST_fsm_state29", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_depthwise_conv2d_fix_1_fu_341"},
+			{"State" : "ap_ST_fsm_state31", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_pointwise_conv2d_fix_3_fu_365"},
+			{"State" : "ap_ST_fsm_state15", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_pointwise_conv2d_fix_2_fu_373"},
+			{"State" : "ap_ST_fsm_state9", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_max_pooling2d_fix16_fu_381"},
+			{"State" : "ap_ST_fsm_state17", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_max_pooling2d_fix16_fu_381"},
+			{"State" : "ap_ST_fsm_state23", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_pointwise_conv2d_fix_fu_402"},
+			{"State" : "ap_ST_fsm_state25", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_up_sampling2d_fix16_fu_410"},
+			{"State" : "ap_ST_fsm_state33", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_up_sampling2d_fix16_fu_410"},
+			{"State" : "ap_ST_fsm_state39", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_pointwise_conv2d_fix_4_fu_431"},
+			{"State" : "ap_ST_fsm_state7", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_pointwise_conv2d_fix_1_fu_437"},
+			{"State" : "ap_ST_fsm_state5", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_depthwise_conv2d_fix_fu_447"}],
 		"Port" : [
 			{"Name" : "input_data_V_data_V", "Type" : "Axis", "Direction" : "I",
 				"BlockSignal" : [
@@ -162,23 +178,232 @@ set RtlHierarchyInfo {[
 			{"Name" : "output_data_V_last_V", "Type" : "Axis", "Direction" : "O"},
 			{"Name" : "output_data_V_id_V", "Type" : "Axis", "Direction" : "O"},
 			{"Name" : "output_data_V_dest_V", "Type" : "Axis", "Direction" : "O"},
-			{"Name" : "SeparableConv2D_0_w_s", "Type" : "Memory", "Direction" : "I",
+			{"Name" : "SeparableConv2D_0_w_1", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "6", "SubInstance" : "grp_depthwise_conv2d_fix_fu_243", "Port" : "SeparableConv2D_0_w_s"}]},
+					{"ID" : "36", "SubInstance" : "grp_depthwise_conv2d_fix_fu_447", "Port" : "SeparableConv2D_0_w_1"}]},
 			{"Name" : "SeparableConv2D_0_b_s", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "9", "SubInstance" : "grp_pointwise_conv2d_fix_fu_251", "Port" : "SeparableConv2D_0_b_s"}]}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_AXILiteS_s_axi_U", "Parent" : "0"},
-	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.MemBank_A_U", "Parent" : "0"},
-	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.MemBank_B_U", "Parent" : "0"},
-	{"ID" : "4", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.MemBank_Out_U", "Parent" : "0"},
-	{"ID" : "5", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_padding2d_fix16_fu_237", "Parent" : "0",
+					{"ID" : "32", "SubInstance" : "grp_pointwise_conv2d_fix_1_fu_437", "Port" : "SeparableConv2D_0_b_s"}]},
+			{"Name" : "SeparableConv2D_0_w_s", "Type" : "Memory", "Direction" : "I",
+				"SubConnect" : [
+					{"ID" : "32", "SubInstance" : "grp_pointwise_conv2d_fix_1_fu_437", "Port" : "SeparableConv2D_0_w_s"}]},
+			{"Name" : "SeparableConv2D_1_b_1", "Type" : "Memory", "Direction" : "I",
+				"SubConnect" : [
+					{"ID" : "14", "SubInstance" : "grp_depthwise_conv2d_fix_2_fu_317", "Port" : "bias"}]},
+			{"Name" : "SeparableConv2D_1_w_s", "Type" : "Memory", "Direction" : "I",
+				"SubConnect" : [
+					{"ID" : "14", "SubInstance" : "grp_depthwise_conv2d_fix_2_fu_317", "Port" : "kernel_0"}]},
+			{"Name" : "SeparableConv2D_1_b_s", "Type" : "Memory", "Direction" : "I",
+				"SubConnect" : [
+					{"ID" : "21", "SubInstance" : "grp_pointwise_conv2d_fix_2_fu_373", "Port" : "SeparableConv2D_1_b_s"}]},
+			{"Name" : "SeparableConv2D_2_b_1", "Type" : "Memory", "Direction" : "I",
+				"SubConnect" : [
+					{"ID" : "16", "SubInstance" : "grp_depthwise_conv2d_fix_1_fu_341", "Port" : "bias"}]},
+			{"Name" : "SeparableConv2D_2_w_s", "Type" : "Memory", "Direction" : "I",
+				"SubConnect" : [
+					{"ID" : "16", "SubInstance" : "grp_depthwise_conv2d_fix_1_fu_341", "Port" : "kernel_0"}]},
+			{"Name" : "SeparableConv2D_2_b_s", "Type" : "Memory", "Direction" : "I",
+				"SubConnect" : [
+					{"ID" : "26", "SubInstance" : "grp_pointwise_conv2d_fix_fu_402", "Port" : "SeparableConv2D_2_b_s"}]},
+			{"Name" : "SeparableConv2D_3_b_1", "Type" : "Memory", "Direction" : "I",
+				"SubConnect" : [
+					{"ID" : "16", "SubInstance" : "grp_depthwise_conv2d_fix_1_fu_341", "Port" : "bias"}]},
+			{"Name" : "SeparableConv2D_3_w_s", "Type" : "Memory", "Direction" : "I",
+				"SubConnect" : [
+					{"ID" : "16", "SubInstance" : "grp_depthwise_conv2d_fix_1_fu_341", "Port" : "kernel_0"}]},
+			{"Name" : "SeparableConv2D_3_b_s", "Type" : "Memory", "Direction" : "I",
+				"SubConnect" : [
+					{"ID" : "18", "SubInstance" : "grp_pointwise_conv2d_fix_3_fu_365", "Port" : "SeparableConv2D_3_b_s"}]},
+			{"Name" : "SeparableConv2D_4_b_s", "Type" : "Memory", "Direction" : "I",
+				"SubConnect" : [
+					{"ID" : "14", "SubInstance" : "grp_depthwise_conv2d_fix_2_fu_317", "Port" : "bias"}]},
+			{"Name" : "SeparableConv2D_4_w_s", "Type" : "Memory", "Direction" : "I",
+				"SubConnect" : [
+					{"ID" : "14", "SubInstance" : "grp_depthwise_conv2d_fix_2_fu_317", "Port" : "kernel_0"}]}]},
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.SeparableConv2D_1_b_1_U", "Parent" : "0"},
+	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.SeparableConv2D_1_w_s_U", "Parent" : "0"},
+	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.SeparableConv2D_2_b_1_U", "Parent" : "0"},
+	{"ID" : "4", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.SeparableConv2D_2_w_s_U", "Parent" : "0"},
+	{"ID" : "5", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.SeparableConv2D_3_b_1_U", "Parent" : "0"},
+	{"ID" : "6", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.SeparableConv2D_3_w_s_U", "Parent" : "0"},
+	{"ID" : "7", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.SeparableConv2D_4_b_s_U", "Parent" : "0"},
+	{"ID" : "8", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.SeparableConv2D_4_w_s_U", "Parent" : "0"},
+	{"ID" : "9", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_AXILiteS_s_axi_U", "Parent" : "0"},
+	{"ID" : "10", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.MemBank_A_U", "Parent" : "0"},
+	{"ID" : "11", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.MemBank_B_U", "Parent" : "0"},
+	{"ID" : "12", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.MemBank_Out_U", "Parent" : "0"},
+	{"ID" : "13", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_padding2d_fix16_fu_299", "Parent" : "0",
 		"CDFG" : "padding2d_fix16",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "1771", "EstimateLatencyMax" : "1771",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "157", "EstimateLatencyMax" : "28354",
+		"Combinational" : "0",
+		"Datapath" : "0",
+		"ClockEnable" : "0",
+		"HasSubDataflow" : "0",
+		"InDataflowNetwork" : "0",
+		"HasNonBlockingOperation" : "0",
+		"Port" : [
+			{"Name" : "input_depth", "Type" : "None", "Direction" : "I"},
+			{"Name" : "input_height", "Type" : "None", "Direction" : "I"},
+			{"Name" : "input_width", "Type" : "None", "Direction" : "I"},
+			{"Name" : "input_r", "Type" : "Memory", "Direction" : "I"},
+			{"Name" : "output_r", "Type" : "Memory", "Direction" : "O"}]},
+	{"ID" : "14", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_depthwise_conv2d_fix_2_fu_317", "Parent" : "0", "Child" : ["15"],
+		"CDFG" : "depthwise_conv2d_fix_2",
+		"Protocol" : "ap_ctrl_hs",
+		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
+		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
+		"II" : "0",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "141601", "EstimateLatencyMax" : "565409",
+		"Combinational" : "0",
+		"Datapath" : "0",
+		"ClockEnable" : "0",
+		"HasSubDataflow" : "0",
+		"InDataflowNetwork" : "0",
+		"HasNonBlockingOperation" : "0",
+		"Port" : [
+			{"Name" : "input_height", "Type" : "None", "Direction" : "I"},
+			{"Name" : "input_width", "Type" : "None", "Direction" : "I"},
+			{"Name" : "input_r", "Type" : "Memory", "Direction" : "I"},
+			{"Name" : "output_height", "Type" : "None", "Direction" : "I"},
+			{"Name" : "output_width", "Type" : "None", "Direction" : "I"},
+			{"Name" : "output_r", "Type" : "Memory", "Direction" : "IO"},
+			{"Name" : "bias", "Type" : "Memory", "Direction" : "I"},
+			{"Name" : "kernel_0", "Type" : "Memory", "Direction" : "I"}]},
+	{"ID" : "15", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_depthwise_conv2d_fix_2_fu_317.network_mul_mul_16s_16s_30_1_1_U26", "Parent" : "14"},
+	{"ID" : "16", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_depthwise_conv2d_fix_1_fu_341", "Parent" : "0", "Child" : ["17"],
+		"CDFG" : "depthwise_conv2d_fix_1",
+		"Protocol" : "ap_ctrl_hs",
+		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
+		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
+		"II" : "0",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "17769", "EstimateLatencyMax" : "70801",
+		"Combinational" : "0",
+		"Datapath" : "0",
+		"ClockEnable" : "0",
+		"HasSubDataflow" : "0",
+		"InDataflowNetwork" : "0",
+		"HasNonBlockingOperation" : "0",
+		"Port" : [
+			{"Name" : "input_height", "Type" : "None", "Direction" : "I"},
+			{"Name" : "input_width", "Type" : "None", "Direction" : "I"},
+			{"Name" : "input_r", "Type" : "Memory", "Direction" : "I"},
+			{"Name" : "output_height", "Type" : "None", "Direction" : "I"},
+			{"Name" : "output_width", "Type" : "None", "Direction" : "I"},
+			{"Name" : "output_r", "Type" : "Memory", "Direction" : "IO"},
+			{"Name" : "bias", "Type" : "Memory", "Direction" : "I"},
+			{"Name" : "kernel_0", "Type" : "Memory", "Direction" : "I"}]},
+	{"ID" : "17", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_depthwise_conv2d_fix_1_fu_341.network_mul_mul_16s_16s_30_1_1_U41", "Parent" : "16"},
+	{"ID" : "18", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_pointwise_conv2d_fix_3_fu_365", "Parent" : "0", "Child" : ["19", "20"],
+		"CDFG" : "pointwise_conv2d_fix_3",
+		"Protocol" : "ap_ctrl_hs",
+		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
+		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
+		"II" : "0",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "110257", "EstimateLatencyMax" : "110257",
+		"Combinational" : "0",
+		"Datapath" : "0",
+		"ClockEnable" : "0",
+		"HasSubDataflow" : "0",
+		"InDataflowNetwork" : "0",
+		"HasNonBlockingOperation" : "0",
+		"Port" : [
+			{"Name" : "input_r", "Type" : "Memory", "Direction" : "I"},
+			{"Name" : "output_r", "Type" : "Memory", "Direction" : "O"},
+			{"Name" : "SeparableConv2D_3_b_s", "Type" : "Memory", "Direction" : "I"}]},
+	{"ID" : "19", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_pointwise_conv2d_fix_3_fu_365.SeparableConv2D_3_b_s_U", "Parent" : "18"},
+	{"ID" : "20", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_pointwise_conv2d_fix_3_fu_365.network_mul_mul_16s_13s_29_1_1_U62", "Parent" : "18"},
+	{"ID" : "21", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_pointwise_conv2d_fix_2_fu_373", "Parent" : "0", "Child" : ["22", "23"],
+		"CDFG" : "pointwise_conv2d_fix_2",
+		"Protocol" : "ap_ctrl_hs",
+		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
+		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
+		"II" : "0",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "105305", "EstimateLatencyMax" : "105305",
+		"Combinational" : "0",
+		"Datapath" : "0",
+		"ClockEnable" : "0",
+		"HasSubDataflow" : "0",
+		"InDataflowNetwork" : "0",
+		"HasNonBlockingOperation" : "0",
+		"Port" : [
+			{"Name" : "input_r", "Type" : "Memory", "Direction" : "I"},
+			{"Name" : "output_r", "Type" : "Memory", "Direction" : "O"},
+			{"Name" : "SeparableConv2D_1_b_s", "Type" : "Memory", "Direction" : "I"}]},
+	{"ID" : "22", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_pointwise_conv2d_fix_2_fu_373.SeparableConv2D_1_b_s_U", "Parent" : "21"},
+	{"ID" : "23", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_pointwise_conv2d_fix_2_fu_373.network_mul_mul_16s_13s_29_1_1_U36", "Parent" : "21"},
+	{"ID" : "24", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_max_pooling2d_fix16_fu_381", "Parent" : "0", "Child" : ["25"],
+		"CDFG" : "max_pooling2d_fix16",
+		"Protocol" : "ap_ctrl_hs",
+		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
+		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
+		"II" : "0",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "5617", "EstimateLatencyMax" : "44385",
+		"Combinational" : "0",
+		"Datapath" : "0",
+		"ClockEnable" : "0",
+		"HasSubDataflow" : "0",
+		"InDataflowNetwork" : "0",
+		"HasNonBlockingOperation" : "0",
+		"Port" : [
+			{"Name" : "input_height", "Type" : "None", "Direction" : "I"},
+			{"Name" : "input_width", "Type" : "None", "Direction" : "I"},
+			{"Name" : "input_r", "Type" : "Memory", "Direction" : "I"},
+			{"Name" : "output_depth", "Type" : "None", "Direction" : "I"},
+			{"Name" : "output_height", "Type" : "None", "Direction" : "I"},
+			{"Name" : "output_width", "Type" : "None", "Direction" : "I"},
+			{"Name" : "output_r", "Type" : "Memory", "Direction" : "IO"}]},
+	{"ID" : "25", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_max_pooling2d_fix16_fu_381.network_ama_addmuladd_9ns_5ns_7ns_5ns_14_1_1_U17", "Parent" : "24"},
+	{"ID" : "26", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_pointwise_conv2d_fix_fu_402", "Parent" : "0", "Child" : ["27", "28"],
+		"CDFG" : "pointwise_conv2d_fix",
+		"Protocol" : "ap_ctrl_hs",
+		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
+		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
+		"II" : "0",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "13857", "EstimateLatencyMax" : "13857",
+		"Combinational" : "0",
+		"Datapath" : "0",
+		"ClockEnable" : "0",
+		"HasSubDataflow" : "0",
+		"InDataflowNetwork" : "0",
+		"HasNonBlockingOperation" : "0",
+		"Port" : [
+			{"Name" : "input_r", "Type" : "Memory", "Direction" : "I"},
+			{"Name" : "output_r", "Type" : "Memory", "Direction" : "O"},
+			{"Name" : "SeparableConv2D_2_b_s", "Type" : "Memory", "Direction" : "I"}]},
+	{"ID" : "27", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_pointwise_conv2d_fix_fu_402.SeparableConv2D_2_b_s_U", "Parent" : "26"},
+	{"ID" : "28", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_pointwise_conv2d_fix_fu_402.network_mul_mul_16s_15ns_30_1_1_U50", "Parent" : "26"},
+	{"ID" : "29", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_up_sampling2d_fix16_fu_410", "Parent" : "0",
+		"CDFG" : "up_sampling2d_fix16",
+		"Protocol" : "ap_ctrl_hs",
+		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
+		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
+		"II" : "0",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "3377", "EstimateLatencyMax" : "26017",
+		"Combinational" : "0",
+		"Datapath" : "0",
+		"ClockEnable" : "0",
+		"HasSubDataflow" : "0",
+		"InDataflowNetwork" : "0",
+		"HasNonBlockingOperation" : "0",
+		"Port" : [
+			{"Name" : "input_height", "Type" : "None", "Direction" : "I"},
+			{"Name" : "input_width", "Type" : "None", "Direction" : "I"},
+			{"Name" : "input_r", "Type" : "Memory", "Direction" : "I"},
+			{"Name" : "output_depth", "Type" : "None", "Direction" : "I"},
+			{"Name" : "output_height", "Type" : "None", "Direction" : "I"},
+			{"Name" : "output_width", "Type" : "None", "Direction" : "I"},
+			{"Name" : "output_r", "Type" : "Memory", "Direction" : "O"}]},
+	{"ID" : "30", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_pointwise_conv2d_fix_4_fu_431", "Parent" : "0", "Child" : ["31"],
+		"CDFG" : "pointwise_conv2d_fix_4",
+		"Protocol" : "ap_ctrl_hs",
+		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
+		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
+		"II" : "0",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "52585", "EstimateLatencyMax" : "52585",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -188,7 +413,29 @@ set RtlHierarchyInfo {[
 		"Port" : [
 			{"Name" : "input_r", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "output_r", "Type" : "Memory", "Direction" : "O"}]},
-	{"ID" : "6", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_depthwise_conv2d_fix_fu_243", "Parent" : "0", "Child" : ["7", "8"],
+	{"ID" : "31", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_pointwise_conv2d_fix_4_fu_431.network_mul_mul_16s_14s_30_1_1_U66", "Parent" : "30"},
+	{"ID" : "32", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_pointwise_conv2d_fix_1_fu_437", "Parent" : "0", "Child" : ["33", "34", "35"],
+		"CDFG" : "pointwise_conv2d_fix_1",
+		"Protocol" : "ap_ctrl_hs",
+		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
+		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
+		"II" : "0",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "51121", "EstimateLatencyMax" : "51121",
+		"Combinational" : "0",
+		"Datapath" : "0",
+		"ClockEnable" : "0",
+		"HasSubDataflow" : "0",
+		"InDataflowNetwork" : "0",
+		"HasNonBlockingOperation" : "0",
+		"Port" : [
+			{"Name" : "input_r", "Type" : "Memory", "Direction" : "I"},
+			{"Name" : "output_r", "Type" : "Memory", "Direction" : "O"},
+			{"Name" : "SeparableConv2D_0_b_s", "Type" : "Memory", "Direction" : "I"},
+			{"Name" : "SeparableConv2D_0_w_s", "Type" : "Memory", "Direction" : "I"}]},
+	{"ID" : "33", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_pointwise_conv2d_fix_1_fu_437.SeparableConv2D_0_b_s_U", "Parent" : "32"},
+	{"ID" : "34", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_pointwise_conv2d_fix_1_fu_437.SeparableConv2D_0_w_s_U", "Parent" : "32"},
+	{"ID" : "35", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_pointwise_conv2d_fix_1_fu_437.network_mul_mul_16s_15s_30_1_1_U11", "Parent" : "32"},
+	{"ID" : "36", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_depthwise_conv2d_fix_fu_447", "Parent" : "0", "Child" : ["37", "38"],
 		"CDFG" : "depthwise_conv2d_fix",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
@@ -204,28 +451,9 @@ set RtlHierarchyInfo {[
 		"Port" : [
 			{"Name" : "input_r", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "output_r", "Type" : "Memory", "Direction" : "IO"},
-			{"Name" : "SeparableConv2D_0_w_s", "Type" : "Memory", "Direction" : "I"}]},
-	{"ID" : "7", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_depthwise_conv2d_fix_fu_243.SeparableConv2D_0_w_s_U", "Parent" : "6"},
-	{"ID" : "8", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_depthwise_conv2d_fix_fu_243.network_mul_mul_16s_15s_30_1_1_U3", "Parent" : "6"},
-	{"ID" : "9", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_pointwise_conv2d_fix_fu_251", "Parent" : "0", "Child" : ["10", "11"],
-		"CDFG" : "pointwise_conv2d_fix",
-		"Protocol" : "ap_ctrl_hs",
-		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
-		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
-		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "51121", "EstimateLatencyMax" : "51121",
-		"Combinational" : "0",
-		"Datapath" : "0",
-		"ClockEnable" : "0",
-		"HasSubDataflow" : "0",
-		"InDataflowNetwork" : "0",
-		"HasNonBlockingOperation" : "0",
-		"Port" : [
-			{"Name" : "input_r", "Type" : "Memory", "Direction" : "I"},
-			{"Name" : "output_r", "Type" : "Memory", "Direction" : "O"},
-			{"Name" : "SeparableConv2D_0_b_s", "Type" : "Memory", "Direction" : "I"}]},
-	{"ID" : "10", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_pointwise_conv2d_fix_fu_251.SeparableConv2D_0_b_s_U", "Parent" : "9"},
-	{"ID" : "11", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_pointwise_conv2d_fix_fu_251.network_mul_mul_16s_12s_28_1_1_U8", "Parent" : "9"}]}
+			{"Name" : "SeparableConv2D_0_w_1", "Type" : "Memory", "Direction" : "I"}]},
+	{"ID" : "37", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_depthwise_conv2d_fix_fu_447.SeparableConv2D_0_w_1_U", "Parent" : "36"},
+	{"ID" : "38", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_depthwise_conv2d_fix_fu_447.network_mul_mul_15s_16s_30_1_1_U6", "Parent" : "36"}]}
 
 
 set ArgLastReadFirstWriteLatency {
@@ -237,32 +465,97 @@ set ArgLastReadFirstWriteLatency {
 		input_data_V_last_V {Type I LastRead 1 FirstWrite -1}
 		input_data_V_id_V {Type I LastRead 1 FirstWrite -1}
 		input_data_V_dest_V {Type I LastRead 1 FirstWrite -1}
-		output_data_V_data_V {Type O LastRead -1 FirstWrite 9}
-		output_data_V_keep_V {Type O LastRead -1 FirstWrite 9}
-		output_data_V_strb_V {Type O LastRead -1 FirstWrite 9}
-		output_data_V_user_V {Type O LastRead -1 FirstWrite 9}
-		output_data_V_last_V {Type O LastRead -1 FirstWrite 9}
-		output_data_V_id_V {Type O LastRead -1 FirstWrite 9}
-		output_data_V_dest_V {Type O LastRead -1 FirstWrite 9}
+		output_data_V_data_V {Type O LastRead -1 FirstWrite 41}
+		output_data_V_keep_V {Type O LastRead -1 FirstWrite 41}
+		output_data_V_strb_V {Type O LastRead -1 FirstWrite 41}
+		output_data_V_user_V {Type O LastRead -1 FirstWrite 41}
+		output_data_V_last_V {Type O LastRead -1 FirstWrite 41}
+		output_data_V_id_V {Type O LastRead -1 FirstWrite 41}
+		output_data_V_dest_V {Type O LastRead -1 FirstWrite 41}
+		SeparableConv2D_0_w_1 {Type I LastRead -1 FirstWrite -1}
+		SeparableConv2D_0_b_s {Type I LastRead -1 FirstWrite -1}
 		SeparableConv2D_0_w_s {Type I LastRead -1 FirstWrite -1}
-		SeparableConv2D_0_b_s {Type I LastRead -1 FirstWrite -1}}
+		SeparableConv2D_1_b_1 {Type I LastRead -1 FirstWrite -1}
+		SeparableConv2D_1_w_s {Type I LastRead -1 FirstWrite -1}
+		SeparableConv2D_1_b_s {Type I LastRead -1 FirstWrite -1}
+		SeparableConv2D_2_b_1 {Type I LastRead -1 FirstWrite -1}
+		SeparableConv2D_2_w_s {Type I LastRead -1 FirstWrite -1}
+		SeparableConv2D_2_b_s {Type I LastRead -1 FirstWrite -1}
+		SeparableConv2D_3_b_1 {Type I LastRead -1 FirstWrite -1}
+		SeparableConv2D_3_w_s {Type I LastRead -1 FirstWrite -1}
+		SeparableConv2D_3_b_s {Type I LastRead -1 FirstWrite -1}
+		SeparableConv2D_4_b_s {Type I LastRead -1 FirstWrite -1}
+		SeparableConv2D_4_w_s {Type I LastRead -1 FirstWrite -1}}
 	padding2d_fix16 {
+		input_depth {Type I LastRead 1 FirstWrite -1}
+		input_height {Type I LastRead 0 FirstWrite -1}
+		input_width {Type I LastRead 0 FirstWrite -1}
+		input_r {Type I LastRead 5 FirstWrite -1}
+		output_r {Type O LastRead -1 FirstWrite 3}}
+	depthwise_conv2d_fix_2 {
+		input_height {Type I LastRead 0 FirstWrite -1}
+		input_width {Type I LastRead 0 FirstWrite -1}
+		input_r {Type I LastRead 5 FirstWrite -1}
+		output_height {Type I LastRead 0 FirstWrite -1}
+		output_width {Type I LastRead 0 FirstWrite -1}
+		output_r {Type IO LastRead 7 FirstWrite 3}
+		bias {Type I LastRead 4 FirstWrite -1}
+		kernel_0 {Type I LastRead 5 FirstWrite -1}}
+	depthwise_conv2d_fix_1 {
+		input_height {Type I LastRead 0 FirstWrite -1}
+		input_width {Type I LastRead 0 FirstWrite -1}
+		input_r {Type I LastRead 5 FirstWrite -1}
+		output_height {Type I LastRead 0 FirstWrite -1}
+		output_width {Type I LastRead 0 FirstWrite -1}
+		output_r {Type IO LastRead 7 FirstWrite 3}
+		bias {Type I LastRead 4 FirstWrite -1}
+		kernel_0 {Type I LastRead 5 FirstWrite -1}}
+	pointwise_conv2d_fix_3 {
+		input_r {Type I LastRead 5 FirstWrite -1}
+		output_r {Type O LastRead -1 FirstWrite 5}
+		SeparableConv2D_3_b_s {Type I LastRead -1 FirstWrite -1}}
+	pointwise_conv2d_fix_2 {
+		input_r {Type I LastRead 5 FirstWrite -1}
+		output_r {Type O LastRead -1 FirstWrite 5}
+		SeparableConv2D_1_b_s {Type I LastRead -1 FirstWrite -1}}
+	max_pooling2d_fix16 {
+		input_height {Type I LastRead 0 FirstWrite -1}
+		input_width {Type I LastRead 0 FirstWrite -1}
+		input_r {Type I LastRead 6 FirstWrite -1}
+		output_depth {Type I LastRead 0 FirstWrite -1}
+		output_height {Type I LastRead 0 FirstWrite -1}
+		output_width {Type I LastRead 0 FirstWrite -1}
+		output_r {Type IO LastRead 5 FirstWrite 6}}
+	pointwise_conv2d_fix {
+		input_r {Type I LastRead 5 FirstWrite -1}
+		output_r {Type O LastRead -1 FirstWrite 5}
+		SeparableConv2D_2_b_s {Type I LastRead -1 FirstWrite -1}}
+	up_sampling2d_fix16 {
+		input_height {Type I LastRead 0 FirstWrite -1}
+		input_width {Type I LastRead 0 FirstWrite -1}
 		input_r {Type I LastRead 3 FirstWrite -1}
-		output_r {Type O LastRead -1 FirstWrite 1}}
+		output_depth {Type I LastRead 0 FirstWrite -1}
+		output_height {Type I LastRead 0 FirstWrite -1}
+		output_width {Type I LastRead 0 FirstWrite -1}
+		output_r {Type O LastRead -1 FirstWrite 4}}
+	pointwise_conv2d_fix_4 {
+		input_r {Type I LastRead 3 FirstWrite -1}
+		output_r {Type O LastRead -1 FirstWrite 3}}
+	pointwise_conv2d_fix_1 {
+		input_r {Type I LastRead 4 FirstWrite -1}
+		output_r {Type O LastRead -1 FirstWrite 7}
+		SeparableConv2D_0_b_s {Type I LastRead -1 FirstWrite -1}
+		SeparableConv2D_0_w_s {Type I LastRead -1 FirstWrite -1}}
 	depthwise_conv2d_fix {
 		input_r {Type I LastRead 4 FirstWrite -1}
 		output_r {Type IO LastRead 6 FirstWrite 2}
-		SeparableConv2D_0_w_s {Type I LastRead -1 FirstWrite -1}}
-	pointwise_conv2d_fix {
-		input_r {Type I LastRead 4 FirstWrite -1}
-		output_r {Type O LastRead -1 FirstWrite 7}
-		SeparableConv2D_0_b_s {Type I LastRead -1 FirstWrite -1}}}
+		SeparableConv2D_0_w_1 {Type I LastRead -1 FirstWrite -1}}}
 
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "125872", "Max" : "125872"}
-	, {"Name" : "Interval", "Min" : "125873", "Max" : "125873"}
+	{"Name" : "Latency", "Min" : "708370", "Max" : "1925851"}
+	, {"Name" : "Interval", "Min" : "708371", "Max" : "1925852"}
 ]}
 
 set PipelineEnableSignalInfo {[
