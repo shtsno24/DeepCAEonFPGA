@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'max_pooling2d_fix16'" level="0">
-<item name = "Date">Fri Nov 29 20:35:05 2019
+<item name = "Date">Sat Nov 30 13:37:42 2019
 </item>
 <item name = "Version">2018.3.1 (Build 2489210 on Tue Mar 26 04:40:43 MDT 2019)</item>
 <item name = "Project">HLS</item>
@@ -92,17 +92,17 @@
 <column name="out_d_3_fu_246_p2">+, 0, 0, 15, 5, 1</column>
 <column name="out_h_3_fu_261_p2">+, 0, 0, 13, 4, 1</column>
 <column name="out_w_3_fu_307_p2">+, 0, 0, 13, 4, 1</column>
-<column name="tmp_50_fu_329_p2">+, 0, 0, 12, 12, 12</column>
-<column name="tmp_54_fu_404_p2">+, 0, 0, 19, 14, 14</column>
-<column name="tmp_57_fu_390_p2">+, 0, 0, 19, 14, 14</column>
+<column name="tmp_55_fu_329_p2">+, 0, 0, 12, 12, 12</column>
+<column name="tmp_59_fu_404_p2">+, 0, 0, 19, 14, 14</column>
+<column name="tmp_62_fu_390_p2">+, 0, 0, 19, 14, 14</column>
 <column name="tmp_fu_283_p2">+, 0, 0, 15, 8, 8</column>
 <column name="exitcond1_fu_343_p2">icmp, 0, 0, 9, 2, 3</column>
 <column name="exitcond2_fu_302_p2">icmp, 0, 0, 11, 5, 5</column>
 <column name="exitcond3_fu_256_p2">icmp, 0, 0, 11, 5, 5</column>
 <column name="exitcond4_fu_241_p2">icmp, 0, 0, 11, 6, 6</column>
 <column name="exitcond_fu_369_p2">icmp, 0, 0, 9, 2, 3</column>
-<column name="tmp_56_fu_414_p2">icmp, 0, 0, 13, 16, 16</column>
-<column name="tmp_53_fu_381_p2">or, 0, 0, 2, 1, 1</column>
+<column name="tmp_61_fu_414_p2">icmp, 0, 0, 13, 16, 16</column>
+<column name="tmp_58_fu_381_p2">or, 0, 0, 2, 1, 1</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
@@ -137,9 +137,9 @@
 <column name="phi_mul2_reg_143">8, 0, 8, 0</column>
 <column name="phi_mul_reg_131">9, 0, 9, 0</column>
 <column name="tmp1_reg_493">12, 0, 12, 0</column>
-<column name="tmp_28_reg_516">1, 0, 1, 0</column>
-<column name="tmp_52_reg_529">14, 0, 14, 0</column>
-<column name="tmp_53_reg_543">1, 0, 1, 0</column>
+<column name="tmp_27_reg_516">1, 0, 1, 0</column>
+<column name="tmp_57_reg_529">14, 0, 14, 0</column>
+<column name="tmp_58_reg_543">1, 0, 1, 0</column>
 <column name="tmp_73_cast_reg_447">7, 0, 14, 7</column>
 <column name="tmp_74_cast_reg_452">6, 0, 8, 2</column>
 <column name="tmp_75_cast_reg_457">6, 0, 12, 6</column>

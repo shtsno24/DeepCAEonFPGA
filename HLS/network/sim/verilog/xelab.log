@@ -8,13 +8,28 @@ INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA
 INFO: [VRFC 10-311] analyzing module glbl
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/AESL_axi_s_input_data.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module AESL_axi_s_input_data
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/pointwise_conv2d_fix_1_SeparableConv2D_1_b_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pointwise_conv2d_fix_1_SeparableConv2D_1_b_s_rom
+INFO: [VRFC 10-311] analyzing module pointwise_conv2d_fix_1_SeparableConv2D_1_b_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/network_SeparableConv2D_4_w_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module network_SeparableConv2D_4_w_1_rom
+INFO: [VRFC 10-311] analyzing module network_SeparableConv2D_4_w_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/network_SeparableConv2D_1_w_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module network_SeparableConv2D_1_w_1_rom
+INFO: [VRFC 10-311] analyzing module network_SeparableConv2D_1_w_1
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/pointwise_conv2d_fix.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module pointwise_conv2d_fix
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/pointwise_conv2d_fix_1_SeparableConv2D_1_w_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pointwise_conv2d_fix_1_SeparableConv2D_1_w_s_rom
+INFO: [VRFC 10-311] analyzing module pointwise_conv2d_fix_1_SeparableConv2D_1_w_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/pointwise_conv2d_fix_2_SeparableConv2D_2_b_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pointwise_conv2d_fix_2_SeparableConv2D_2_b_s_rom
+INFO: [VRFC 10-311] analyzing module pointwise_conv2d_fix_2_SeparableConv2D_2_b_s
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/network.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module network
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/network_mul_mul_16s_14s_30_1_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module network_mul_mul_16s_14s_30_1_1_DSP48_6
-INFO: [VRFC 10-311] analyzing module network_mul_mul_16s_14s_30_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/network_SeparableConv2D_3_w_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module network_SeparableConv2D_3_w_1_rom
+INFO: [VRFC 10-311] analyzing module network_SeparableConv2D_3_w_1
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/padding2d_fix16.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module padding2d_fix16
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/pointwise_conv2d_fix_1.v" into library xil_defaultlib
@@ -22,6 +37,9 @@ INFO: [VRFC 10-311] analyzing module pointwise_conv2d_fix_1
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/network_SeparableConv2D_2_b_1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module network_SeparableConv2D_2_b_1_rom
 INFO: [VRFC 10-311] analyzing module network_SeparableConv2D_2_b_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/network_SeparableConv2D_2_w_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module network_SeparableConv2D_2_w_1_rom
+INFO: [VRFC 10-311] analyzing module network_SeparableConv2D_2_w_1
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/network_mul_mul_16s_16s_30_1_1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module network_mul_mul_16s_16s_30_1_1_DSP48_3
 INFO: [VRFC 10-311] analyzing module network_mul_mul_16s_16s_30_1_1
@@ -34,15 +52,6 @@ INFO: [VRFC 10-311] analyzing module AESL_axi_slave_AXILiteS
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/network_ama_addmuladd_9ns_5ns_7ns_5ns_14_1_1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module network_ama_addmuladd_9ns_5ns_7ns_5ns_14_1_1_DSP48_2
 INFO: [VRFC 10-311] analyzing module network_ama_addmuladd_9ns_5ns_7ns_5ns_14_1_1
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/network_SeparableConv2D_3_w_s.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module network_SeparableConv2D_3_w_s_rom
-INFO: [VRFC 10-311] analyzing module network_SeparableConv2D_3_w_s
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/network_SeparableConv2D_4_w_s.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module network_SeparableConv2D_4_w_s_rom
-INFO: [VRFC 10-311] analyzing module network_SeparableConv2D_4_w_s
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/network_SeparableConv2D_2_w_s.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module network_SeparableConv2D_2_w_s_rom
-INFO: [VRFC 10-311] analyzing module network_SeparableConv2D_2_w_s
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/network_SeparableConv2D_1_b_1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module network_SeparableConv2D_1_b_1_rom
 INFO: [VRFC 10-311] analyzing module network_SeparableConv2D_1_b_1
@@ -50,6 +59,9 @@ INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA
 INFO: [VRFC 10-311] analyzing module pointwise_conv2d_fix_3
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/depthwise_conv2d_fix.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module depthwise_conv2d_fix
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/pointwise_conv2d_fix_3_SeparableConv2D_3_w_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pointwise_conv2d_fix_3_SeparableConv2D_3_w_s_rom
+INFO: [VRFC 10-311] analyzing module pointwise_conv2d_fix_3_SeparableConv2D_3_w_s
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/network_mul_mul_16s_15s_30_1_1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module network_mul_mul_16s_15s_30_1_1_DSP48_1
 INFO: [VRFC 10-311] analyzing module network_mul_mul_16s_15s_30_1_1
@@ -60,6 +72,9 @@ INFO: [VRFC 10-311] analyzing module network_AXILiteS_s_axi
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/network_MemBank_A.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module network_MemBank_A_ram
 INFO: [VRFC 10-311] analyzing module network_MemBank_A
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/pointwise_conv2d_fix_SeparableConv2D_0_w_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pointwise_conv2d_fix_SeparableConv2D_0_w_s_rom
+INFO: [VRFC 10-311] analyzing module pointwise_conv2d_fix_SeparableConv2D_0_w_s
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/depthwise_conv2d_fix_2.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module depthwise_conv2d_fix_2
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/AESL_fifo.v" into library xil_defaultlib
@@ -67,15 +82,12 @@ INFO: [VRFC 10-311] analyzing module fifo
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/depthwise_conv2d_fix_SeparableConv2D_0_w_1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module depthwise_conv2d_fix_SeparableConv2D_0_w_1_rom
 INFO: [VRFC 10-311] analyzing module depthwise_conv2d_fix_SeparableConv2D_0_w_1
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/pointwise_conv2d_fix_2_SeparableConv2D_1_b_s.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module pointwise_conv2d_fix_2_SeparableConv2D_1_b_s_rom
-INFO: [VRFC 10-311] analyzing module pointwise_conv2d_fix_2_SeparableConv2D_1_b_s
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/network_mul_mul_16s_15ns_30_1_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module network_mul_mul_16s_15ns_30_1_1_DSP48_5
-INFO: [VRFC 10-311] analyzing module network_mul_mul_16s_15ns_30_1_1
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/network_SeparableConv2D_1_w_s.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module network_SeparableConv2D_1_w_s_rom
-INFO: [VRFC 10-311] analyzing module network_SeparableConv2D_1_w_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/pointwise_conv2d_fix_SeparableConv2D_0_b_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pointwise_conv2d_fix_SeparableConv2D_0_b_s_rom
+INFO: [VRFC 10-311] analyzing module pointwise_conv2d_fix_SeparableConv2D_0_b_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/pointwise_conv2d_fix_4_SeparableConv2D_4_w_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pointwise_conv2d_fix_4_SeparableConv2D_4_w_s_rom
+INFO: [VRFC 10-311] analyzing module pointwise_conv2d_fix_4_SeparableConv2D_4_w_s
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/depthwise_conv2d_fix_1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module depthwise_conv2d_fix_1
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/network_mul_mul_15s_16s_30_1_1.v" into library xil_defaultlib
@@ -83,23 +95,14 @@ INFO: [VRFC 10-311] analyzing module network_mul_mul_15s_16s_30_1_1_DSP48_0
 INFO: [VRFC 10-311] analyzing module network_mul_mul_15s_16s_30_1_1
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/AESL_axi_s_output_data.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module AESL_axi_s_output_data
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/pointwise_conv2d_fix_SeparableConv2D_2_b_s.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module pointwise_conv2d_fix_SeparableConv2D_2_b_s_rom
-INFO: [VRFC 10-311] analyzing module pointwise_conv2d_fix_SeparableConv2D_2_b_s
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/pointwise_conv2d_fix_1_SeparableConv2D_0_b_s.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module pointwise_conv2d_fix_1_SeparableConv2D_0_b_s_rom
-INFO: [VRFC 10-311] analyzing module pointwise_conv2d_fix_1_SeparableConv2D_0_b_s
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/up_sampling2d_fix16.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module up_sampling2d_fix16
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/network_MemBank_Out.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module network_MemBank_Out_ram
 INFO: [VRFC 10-311] analyzing module network_MemBank_Out
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/pointwise_conv2d_fix_1_SeparableConv2D_0_w_s.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module pointwise_conv2d_fix_1_SeparableConv2D_0_w_s_rom
-INFO: [VRFC 10-311] analyzing module pointwise_conv2d_fix_1_SeparableConv2D_0_w_s
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/network_mul_mul_16s_13s_29_1_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module network_mul_mul_16s_13s_29_1_1_DSP48_4
-INFO: [VRFC 10-311] analyzing module network_mul_mul_16s_13s_29_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/pointwise_conv2d_fix_2_SeparableConv2D_2_w_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pointwise_conv2d_fix_2_SeparableConv2D_2_w_s_rom
+INFO: [VRFC 10-311] analyzing module pointwise_conv2d_fix_2_SeparableConv2D_2_w_s
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/pointwise_conv2d_fix_3_SeparableConv2D_3_b_s.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module pointwise_conv2d_fix_3_SeparableConv2D_3_b_s_rom
 INFO: [VRFC 10-311] analyzing module pointwise_conv2d_fix_3_SeparableConv2D_3_b_s
@@ -112,16 +115,16 @@ Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
 Compiling module xil_defaultlib.network_SeparableConv2D_1_b_1_ro...
 Compiling module xil_defaultlib.network_SeparableConv2D_1_b_1(Da...
-Compiling module xil_defaultlib.network_SeparableConv2D_1_w_s_ro...
-Compiling module xil_defaultlib.network_SeparableConv2D_1_w_s(Da...
+Compiling module xil_defaultlib.network_SeparableConv2D_1_w_1_ro...
+Compiling module xil_defaultlib.network_SeparableConv2D_1_w_1(Da...
 Compiling module xil_defaultlib.network_SeparableConv2D_2_b_1_ro...
 Compiling module xil_defaultlib.network_SeparableConv2D_2_b_1(Da...
-Compiling module xil_defaultlib.network_SeparableConv2D_2_w_s_ro...
-Compiling module xil_defaultlib.network_SeparableConv2D_2_w_s(Da...
-Compiling module xil_defaultlib.network_SeparableConv2D_3_w_s_ro...
-Compiling module xil_defaultlib.network_SeparableConv2D_3_w_s(Da...
-Compiling module xil_defaultlib.network_SeparableConv2D_4_w_s_ro...
-Compiling module xil_defaultlib.network_SeparableConv2D_4_w_s(Da...
+Compiling module xil_defaultlib.network_SeparableConv2D_2_w_1_ro...
+Compiling module xil_defaultlib.network_SeparableConv2D_2_w_1(Da...
+Compiling module xil_defaultlib.network_SeparableConv2D_3_w_1_ro...
+Compiling module xil_defaultlib.network_SeparableConv2D_3_w_1(Da...
+Compiling module xil_defaultlib.network_SeparableConv2D_4_w_1_ro...
+Compiling module xil_defaultlib.network_SeparableConv2D_4_w_1(Da...
 Compiling module xil_defaultlib.network_AXILiteS_s_axi
 Compiling module xil_defaultlib.network_MemBank_A_ram
 Compiling module xil_defaultlib.network_MemBank_A(DataWidth=16,A...
@@ -134,35 +137,37 @@ Compiling module xil_defaultlib.depthwise_conv2d_fix_2
 Compiling module xil_defaultlib.depthwise_conv2d_fix_1
 Compiling module xil_defaultlib.pointwise_conv2d_fix_3_Separable...
 Compiling module xil_defaultlib.pointwise_conv2d_fix_3_Separable...
-Compiling module xil_defaultlib.network_mul_mul_16s_13s_29_1_1_D...
-Compiling module xil_defaultlib.network_mul_mul_16s_13s_29_1_1(I...
+Compiling module xil_defaultlib.pointwise_conv2d_fix_3_Separable...
+Compiling module xil_defaultlib.pointwise_conv2d_fix_3_Separable...
+Compiling module xil_defaultlib.network_mul_mul_16s_15s_30_1_1_D...
+Compiling module xil_defaultlib.network_mul_mul_16s_15s_30_1_1(I...
 Compiling module xil_defaultlib.pointwise_conv2d_fix_3
+Compiling module xil_defaultlib.pointwise_conv2d_fix_1_Separable...
+Compiling module xil_defaultlib.pointwise_conv2d_fix_1_Separable...
+Compiling module xil_defaultlib.pointwise_conv2d_fix_1_Separable...
+Compiling module xil_defaultlib.pointwise_conv2d_fix_1_Separable...
+Compiling module xil_defaultlib.pointwise_conv2d_fix_1
+Compiling module xil_defaultlib.pointwise_conv2d_fix_2_Separable...
+Compiling module xil_defaultlib.pointwise_conv2d_fix_2_Separable...
 Compiling module xil_defaultlib.pointwise_conv2d_fix_2_Separable...
 Compiling module xil_defaultlib.pointwise_conv2d_fix_2_Separable...
 Compiling module xil_defaultlib.pointwise_conv2d_fix_2
 Compiling module xil_defaultlib.network_ama_addmuladd_9ns_5ns_7n...
 Compiling module xil_defaultlib.network_ama_addmuladd_9ns_5ns_7n...
 Compiling module xil_defaultlib.max_pooling2d_fix16
-Compiling module xil_defaultlib.pointwise_conv2d_fix_SeparableCo...
-Compiling module xil_defaultlib.pointwise_conv2d_fix_SeparableCo...
-Compiling module xil_defaultlib.network_mul_mul_16s_15ns_30_1_1_...
-Compiling module xil_defaultlib.network_mul_mul_16s_15ns_30_1_1(...
-Compiling module xil_defaultlib.pointwise_conv2d_fix
-Compiling module xil_defaultlib.up_sampling2d_fix16
-Compiling module xil_defaultlib.network_mul_mul_16s_14s_30_1_1_D...
-Compiling module xil_defaultlib.network_mul_mul_16s_14s_30_1_1(I...
-Compiling module xil_defaultlib.pointwise_conv2d_fix_4
-Compiling module xil_defaultlib.pointwise_conv2d_fix_1_Separable...
-Compiling module xil_defaultlib.pointwise_conv2d_fix_1_Separable...
-Compiling module xil_defaultlib.pointwise_conv2d_fix_1_Separable...
-Compiling module xil_defaultlib.pointwise_conv2d_fix_1_Separable...
-Compiling module xil_defaultlib.network_mul_mul_16s_15s_30_1_1_D...
-Compiling module xil_defaultlib.network_mul_mul_16s_15s_30_1_1(I...
-Compiling module xil_defaultlib.pointwise_conv2d_fix_1
-Compiling module xil_defaultlib.depthwise_conv2d_fix_SeparableCo...
-Compiling module xil_defaultlib.depthwise_conv2d_fix_SeparableCo...
+Compiling module xil_defaultlib.pointwise_conv2d_fix_4_Separable...
+Compiling module xil_defaultlib.pointwise_conv2d_fix_4_Separable...
 Compiling module xil_defaultlib.network_mul_mul_15s_16s_30_1_1_D...
 Compiling module xil_defaultlib.network_mul_mul_15s_16s_30_1_1(I...
+Compiling module xil_defaultlib.pointwise_conv2d_fix_4
+Compiling module xil_defaultlib.up_sampling2d_fix16
+Compiling module xil_defaultlib.pointwise_conv2d_fix_SeparableCo...
+Compiling module xil_defaultlib.pointwise_conv2d_fix_SeparableCo...
+Compiling module xil_defaultlib.pointwise_conv2d_fix_SeparableCo...
+Compiling module xil_defaultlib.pointwise_conv2d_fix_SeparableCo...
+Compiling module xil_defaultlib.pointwise_conv2d_fix
+Compiling module xil_defaultlib.depthwise_conv2d_fix_SeparableCo...
+Compiling module xil_defaultlib.depthwise_conv2d_fix_SeparableCo...
 Compiling module xil_defaultlib.depthwise_conv2d_fix
 Compiling module xil_defaultlib.network
 Compiling module xil_defaultlib.fifo(DEPTH=784,WIDTH=16)

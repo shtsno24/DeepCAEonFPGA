@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'depthwise_conv2d_fix_2'" level="0">
-<item name = "Date">Fri Nov 29 20:35:05 2019
+<item name = "Date">Sat Nov 30 13:37:43 2019
 </item>
 <item name = "Version">2018.3.1 (Build 2489210 on Tue Mar 26 04:40:43 MDT 2019)</item>
 <item name = "Project">HLS</item>
@@ -97,13 +97,13 @@
 <column name="tmp5_fu_428_p2">+, 0, 0, 15, 5, 5</column>
 <column name="tmp6_fu_407_p2">+, 0, 0, 15, 9, 9</column>
 <column name="tmp7_fu_448_p2">+, 0, 0, 15, 5, 5</column>
-<column name="tmp_59_fu_334_p2">+, 0, 0, 19, 14, 14</column>
-<column name="tmp_61_fu_493_p2">+, 0, 0, 23, 16, 16</column>
-<column name="tmp_63_fu_438_p2">+, 0, 0, 19, 14, 14</column>
-<column name="tmp_65_fu_458_p2">+, 0, 0, 15, 9, 9</column>
-<column name="tmp_69_fu_487_p2">+, 0, 0, 23, 16, 16</column>
+<column name="tmp_64_fu_334_p2">+, 0, 0, 19, 14, 14</column>
+<column name="tmp_66_fu_493_p2">+, 0, 0, 23, 16, 16</column>
+<column name="tmp_68_fu_438_p2">+, 0, 0, 19, 14, 14</column>
+<column name="tmp_70_fu_458_p2">+, 0, 0, 15, 9, 9</column>
+<column name="tmp_74_fu_487_p2">+, 0, 0, 23, 16, 16</column>
 <column name="tmp_fu_300_p2">+, 0, 0, 15, 9, 9</column>
-<column name="tmp_62_fu_372_p2">-, 0, 0, 15, 5, 5</column>
+<column name="tmp_67_fu_372_p2">-, 0, 0, 15, 5, 5</column>
 <column name="exitcond1_fu_344_p2">icmp, 0, 0, 8, 2, 2</column>
 <column name="exitcond2_fu_319_p2">icmp, 0, 0, 11, 6, 6</column>
 <column name="exitcond3_fu_285_p2">icmp, 0, 0, 11, 6, 6</column>
@@ -153,7 +153,7 @@
 <column name="tmp_100_cast_reg_522">6, 0, 14, 8</column>
 <column name="tmp_101_cast_reg_527">7, 0, 9, 2</column>
 <column name="tmp_102_cast_reg_532">7, 0, 14, 7</column>
-<column name="tmp_68_reg_637">16, 0, 16, 0</column>
+<column name="tmp_73_reg_637">16, 0, 16, 0</column>
 <column name="tmp_cast_reg_517">6, 0, 9, 3</column>
 </table>
 </item>

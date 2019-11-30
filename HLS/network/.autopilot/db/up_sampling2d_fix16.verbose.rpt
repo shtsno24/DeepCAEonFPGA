@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'up_sampling2d_fix16'
 ================================================================
-* Date:           Fri Nov 29 20:35:06 2019
+* Date:           Sat Nov 30 13:37:44 2019
 
 * Version:        2018.3.1 (Build 2489210 on Tue Mar 26 04:40:43 MDT 2019)
 * Project:        HLS
@@ -250,7 +250,7 @@ State 3 <SV = 2> <Delay = 6.17>
 ST_3 : Operation 28 [1/1] (0.00ns)   --->   "%out_h = phi i5 [ %out_h_1, %.preheader4.loopexit ], [ 0, %.preheader4.preheader ]"   --->   Operation 28 'phi' 'out_h' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 29 [1/1] (0.00ns)   --->   "%out_h_cast = zext i5 %out_h to i6" [layers_c/up_sampling2d.cpp:12]   --->   Operation 29 'zext' 'out_h_cast' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 30 [1/1] (1.42ns)   --->   "%exitcond2 = icmp eq i6 %out_h_cast, %output_height_read" [layers_c/up_sampling2d.cpp:12]   --->   Operation 30 'icmp' 'exitcond2' <Predicate = true> <Delay = 1.42> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.42> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 31 [1/1] (0.00ns)   --->   "%empty_9 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 14, i64 28, i64 0)"   --->   Operation 31 'speclooptripcount' 'empty_9' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 31 [1/1] (0.00ns)   --->   "%empty_7 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 14, i64 28, i64 0)"   --->   Operation 31 'speclooptripcount' 'empty_7' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 32 [1/1] (1.78ns)   --->   "%out_h_1 = add i5 %out_h, 1" [layers_c/up_sampling2d.cpp:12]   --->   Operation 32 'add' 'out_h_1' <Predicate = true> <Delay = 1.78> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_3 : Operation 33 [1/1] (0.00ns)   --->   "br i1 %exitcond2, label %.loopexit.loopexit, label %.preheader.preheader" [layers_c/up_sampling2d.cpp:12]   --->   Operation 33 'br' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 34 [1/1] (0.00ns)   --->   "%div = call i4 @_ssdm_op_PartSelect.i4.i5.i32.i32(i5 %out_h, i32 1, i32 4)" [layers_c/up_sampling2d.cpp:14]   --->   Operation 34 'partselect' 'div' <Predicate = (!exitcond2)> <Delay = 0.00>
@@ -269,7 +269,7 @@ State 4 <SV = 3> <Delay = 4.80>
 ST_4 : Operation 45 [1/1] (0.00ns)   --->   "%out_w = phi i5 [ %out_w_1, %1 ], [ 0, %.preheader.preheader ]"   --->   Operation 45 'phi' 'out_w' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 46 [1/1] (0.00ns)   --->   "%out_w_cast = zext i5 %out_w to i6" [layers_c/up_sampling2d.cpp:13]   --->   Operation 46 'zext' 'out_w_cast' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 47 [1/1] (1.42ns)   --->   "%exitcond = icmp eq i6 %out_w_cast, %output_width_read" [layers_c/up_sampling2d.cpp:13]   --->   Operation 47 'icmp' 'exitcond' <Predicate = true> <Delay = 1.42> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.42> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_4 : Operation 48 [1/1] (0.00ns)   --->   "%empty_10 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 14, i64 28, i64 0)"   --->   Operation 48 'speclooptripcount' 'empty_10' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 48 [1/1] (0.00ns)   --->   "%empty_8 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 14, i64 28, i64 0)"   --->   Operation 48 'speclooptripcount' 'empty_8' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 49 [1/1] (1.78ns)   --->   "%out_w_1 = add i5 %out_w, 1" [layers_c/up_sampling2d.cpp:13]   --->   Operation 49 'add' 'out_w_1' <Predicate = true> <Delay = 1.78> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_4 : Operation 50 [1/1] (0.00ns)   --->   "br i1 %exitcond, label %.preheader4.loopexit, label %1" [layers_c/up_sampling2d.cpp:13]   --->   Operation 50 'br' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 51 [1/1] (0.00ns)   --->   "%div1 = call i4 @_ssdm_op_PartSelect.i4.i5.i32.i32(i5 %out_w, i32 1, i32 4)" [layers_c/up_sampling2d.cpp:14]   --->   Operation 51 'partselect' 'div1' <Predicate = (!exitcond)> <Delay = 0.00>
@@ -339,7 +339,7 @@ StgValue_27        (ret              ) [ 000000]
 out_h              (phi              ) [ 000100]
 out_h_cast         (zext             ) [ 000000]
 exitcond2          (icmp             ) [ 001111]
-empty_9            (speclooptripcount) [ 000000]
+empty_7            (speclooptripcount) [ 000000]
 out_h_1            (add              ) [ 001111]
 StgValue_33        (br               ) [ 000000]
 div                (partselect       ) [ 000000]
@@ -356,7 +356,7 @@ StgValue_44        (br               ) [ 011111]
 out_w              (phi              ) [ 000010]
 out_w_cast         (zext             ) [ 000000]
 exitcond           (icmp             ) [ 001111]
-empty_10           (speclooptripcount) [ 000000]
+empty_8            (speclooptripcount) [ 000000]
 out_w_1            (add              ) [ 001111]
 StgValue_50        (br               ) [ 000000]
 div1               (partselect       ) [ 000000]

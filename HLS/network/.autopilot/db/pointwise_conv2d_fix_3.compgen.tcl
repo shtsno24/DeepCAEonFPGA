@@ -83,6 +83,89 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_ROM] == "::AESL_LIB_VIRTEX::xil_gen_RO
 }
 
 
+# Memory (RAM/ROM)  definition:
+set ID 64
+set hasByteEnable 0
+set MemName pointwise_conv2d_fix_3_SeparableConv2D_3_w_s
+set CoreName ap_simcore_mem
+set PortList { 1 }
+set DataWd 15
+set AddrRange 128
+set AddrWd 7
+set TrueReset 0
+set IsROM 1
+set ROMData { "111010110100101" "000100000011001" "000010010000100" "000110100010101" "000001001011100" "110000000100100" "110110001011100" "001100011110011" "101100011010110" "001011100100000" "000010100101010" "110001010001100" "000111110011001" "010001010011111" "010011101010010" "001100101100001" "110100100110001" "001000000101101" "110101010001011" "001110010110011" "111101000110000" "111011110011100" "110000010101001" "001100011011001" "000100011010010" "111110000111001" "111110001001110" "110001100111001" "001101100100011" "110001101111011" "000011000101110" "110100100000010" "000111010110010" "110101110001010" "001000110011001" "110010010000001" "111100100101110" "000001110111001" "001011101100111" "110001101101010" "110111110100000" "001111100001010" "110010101101111" "110010011101010" "001100001101011" "110001101100011" "110111100111011" "110000111001100" "001101101001111" "111010111100101" "000010111011101" "110111100000101" "110010101010110" "000001000010111" "001110100111101" "111111110011101" "110111011001001" "001100011011010" "110110110010010" "110110110000010" "000101011010010" "111101011100000" "000101001101101" "111010011010101" "110111010100111" "110101010010100" "001101000010100" "110111101000000" "110001110100100" "000001010011101" "110011010001011" "111010111110100" "110011100110010" "000100001011000" "001001010111001" "001110000011110" "110010110101000" "010000100111100" "110100100110010" "001101000000100" "010001001001011" "001111011001011" "111101101110001" "111101100100101" "000111010100000" "000100010000101" "001000111101001" "111011101111101" "000001011100010" "110000100001010" "001001010000010" "000100110111110" "000101101110011" "110001011100011" "001110011000100" "111110100000001" "110110111100000" "110100000010100" "110111011101010" "111100101101100" "010010000100001" "010010111111111" "111111110111101" "000010100011000" "110010010111001" "000001100010100" "001001111001100" "111010101011110" "110110001001100" "110000000000101" "111101111110011" "001111010101000" "111011111101111" "110001110000011" "000101110101011" "110110000110010" "111111011111100" "110001000110010" "111111100011100" "111010011101000" "111010011011001" "101111111101010" "111010101101011" "110101000110010" "110110011011101" "001000010001000" "001010000011001" "000011011001100" }
+set HasInitializer 1
+set Initializer $ROMData
+set NumOfStage 2
+set MaxLatency -1
+set DelayBudget 3.254
+set ClkPeriod 10
+set RegisteredInput 0
+if {${::AESL::PGuard_simmodel_gen}} {
+if {[info proc ap_gen_simcore_mem] == "ap_gen_simcore_mem"} {
+    eval "ap_gen_simcore_mem { \
+    id ${ID} \
+    name ${MemName} \
+    corename ${CoreName}  \
+    op mem \
+    hasByteEnable ${hasByteEnable} \
+    reset_level 1 \
+    sync_rst true \
+    stage_num ${NumOfStage}  \
+    registered_input ${RegisteredInput} \
+    port_num 1 \
+    port_list \{${PortList}\} \
+    data_wd ${DataWd} \
+    addr_wd ${AddrWd} \
+    addr_range ${AddrRange} \
+    true_reset ${TrueReset} \
+    delay_budget ${DelayBudget} \
+    clk_period ${ClkPeriod} \
+    HasInitializer ${HasInitializer} \
+    rom_data \{${ROMData}\} \
+ } "
+} else {
+    puts "@W \[IMPL-102\] Cannot find ap_gen_simcore_mem, check your platform lib"
+}
+}
+
+
+if {${::AESL::PGuard_rtl_comp_handler}} {
+  ::AP::rtl_comp_handler $MemName
+}
+
+
+set CoreName ROM_nP
+if {${::AESL::PGuard_autocg_gen} && ${::AESL::PGuard_autocg_ipmgen}} {
+if {[info proc ::AESL_LIB_VIRTEX::xil_gen_ROM] == "::AESL_LIB_VIRTEX::xil_gen_ROM"} {
+    eval "::AESL_LIB_VIRTEX::xil_gen_ROM { \
+    id ${ID} \
+    name ${MemName} \
+    corename ${CoreName}  \
+    op mem \
+    hasByteEnable ${hasByteEnable} \
+    reset_level 1 \
+    sync_rst true \
+    stage_num ${NumOfStage}  \
+    registered_input ${RegisteredInput} \
+    port_num 1 \
+    port_list \{${PortList}\} \
+    data_wd ${DataWd} \
+    addr_wd ${AddrWd} \
+    addr_range ${AddrRange} \
+    true_reset ${TrueReset} \
+    delay_budget ${DelayBudget} \
+    clk_period ${ClkPeriod} \
+    HasInitializer ${HasInitializer} \
+    rom_data \{${ROMData}\} \
+ } "
+  } else {
+    puts "@W \[IMPL-104\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_ROM, check your platform lib"
+  }
+}
+
+
 # clear list
 if {${::AESL::PGuard_autoexp_gen}} {
     cg_default_interface_gen_dc_begin
@@ -94,7 +177,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 64 \
+    id 65 \
     name input_r \
     reset_level 1 \
     sync_rst true \
@@ -113,7 +196,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 65 \
+    id 66 \
     name output_r \
     reset_level 1 \
     sync_rst true \

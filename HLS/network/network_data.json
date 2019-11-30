@@ -75,28 +75,29 @@
       "impl\/vhdl\/network_MemBank_A.vhd",
       "impl\/vhdl\/network_MemBank_Out.vhd",
       "impl\/vhdl\/network_mul_mul_15s_16s_30_1_1.vhd",
-      "impl\/vhdl\/network_mul_mul_16s_13s_29_1_1.vhd",
-      "impl\/vhdl\/network_mul_mul_16s_14s_30_1_1.vhd",
-      "impl\/vhdl\/network_mul_mul_16s_15ns_30_1_1.vhd",
       "impl\/vhdl\/network_mul_mul_16s_15s_30_1_1.vhd",
       "impl\/vhdl\/network_mul_mul_16s_16s_30_1_1.vhd",
       "impl\/vhdl\/network_SeparableConv2D_1_b_1.vhd",
-      "impl\/vhdl\/network_SeparableConv2D_1_w_s.vhd",
+      "impl\/vhdl\/network_SeparableConv2D_1_w_1.vhd",
       "impl\/vhdl\/network_SeparableConv2D_2_b_1.vhd",
-      "impl\/vhdl\/network_SeparableConv2D_2_w_s.vhd",
-      "impl\/vhdl\/network_SeparableConv2D_3_w_s.vhd",
-      "impl\/vhdl\/network_SeparableConv2D_4_w_s.vhd",
+      "impl\/vhdl\/network_SeparableConv2D_2_w_1.vhd",
+      "impl\/vhdl\/network_SeparableConv2D_3_w_1.vhd",
+      "impl\/vhdl\/network_SeparableConv2D_4_w_1.vhd",
       "impl\/vhdl\/padding2d_fix16.vhd",
       "impl\/vhdl\/pointwise_conv2d_fix.vhd",
       "impl\/vhdl\/pointwise_conv2d_fix_1.vhd",
-      "impl\/vhdl\/pointwise_conv2d_fix_1_SeparableConv2D_0_b_s.vhd",
-      "impl\/vhdl\/pointwise_conv2d_fix_1_SeparableConv2D_0_w_s.vhd",
+      "impl\/vhdl\/pointwise_conv2d_fix_1_SeparableConv2D_1_b_s.vhd",
+      "impl\/vhdl\/pointwise_conv2d_fix_1_SeparableConv2D_1_w_s.vhd",
       "impl\/vhdl\/pointwise_conv2d_fix_2.vhd",
-      "impl\/vhdl\/pointwise_conv2d_fix_2_SeparableConv2D_1_b_s.vhd",
+      "impl\/vhdl\/pointwise_conv2d_fix_2_SeparableConv2D_2_b_s.vhd",
+      "impl\/vhdl\/pointwise_conv2d_fix_2_SeparableConv2D_2_w_s.vhd",
       "impl\/vhdl\/pointwise_conv2d_fix_3.vhd",
       "impl\/vhdl\/pointwise_conv2d_fix_3_SeparableConv2D_3_b_s.vhd",
+      "impl\/vhdl\/pointwise_conv2d_fix_3_SeparableConv2D_3_w_s.vhd",
       "impl\/vhdl\/pointwise_conv2d_fix_4.vhd",
-      "impl\/vhdl\/pointwise_conv2d_fix_SeparableConv2D_2_b_s.vhd",
+      "impl\/vhdl\/pointwise_conv2d_fix_4_SeparableConv2D_4_w_s.vhd",
+      "impl\/vhdl\/pointwise_conv2d_fix_SeparableConv2D_0_b_s.vhd",
+      "impl\/vhdl\/pointwise_conv2d_fix_SeparableConv2D_0_w_s.vhd",
       "impl\/vhdl\/up_sampling2d_fix16.vhd",
       "impl\/vhdl\/network.vhd"
     ],
@@ -112,39 +113,44 @@
       "impl\/verilog\/network_MemBank_A.v",
       "impl\/verilog\/network_MemBank_Out.v",
       "impl\/verilog\/network_mul_mul_15s_16s_30_1_1.v",
-      "impl\/verilog\/network_mul_mul_16s_13s_29_1_1.v",
-      "impl\/verilog\/network_mul_mul_16s_14s_30_1_1.v",
-      "impl\/verilog\/network_mul_mul_16s_15ns_30_1_1.v",
       "impl\/verilog\/network_mul_mul_16s_15s_30_1_1.v",
       "impl\/verilog\/network_mul_mul_16s_16s_30_1_1.v",
       "impl\/verilog\/network_SeparableConv2D_1_b_1.v",
       "impl\/verilog\/network_SeparableConv2D_1_b_1_rom.dat",
-      "impl\/verilog\/network_SeparableConv2D_1_w_s.v",
-      "impl\/verilog\/network_SeparableConv2D_1_w_s_rom.dat",
+      "impl\/verilog\/network_SeparableConv2D_1_w_1.v",
+      "impl\/verilog\/network_SeparableConv2D_1_w_1_rom.dat",
       "impl\/verilog\/network_SeparableConv2D_2_b_1.v",
       "impl\/verilog\/network_SeparableConv2D_2_b_1_rom.dat",
-      "impl\/verilog\/network_SeparableConv2D_2_w_s.v",
-      "impl\/verilog\/network_SeparableConv2D_2_w_s_rom.dat",
-      "impl\/verilog\/network_SeparableConv2D_3_w_s.v",
-      "impl\/verilog\/network_SeparableConv2D_3_w_s_rom.dat",
-      "impl\/verilog\/network_SeparableConv2D_4_w_s.v",
-      "impl\/verilog\/network_SeparableConv2D_4_w_s_rom.dat",
+      "impl\/verilog\/network_SeparableConv2D_2_w_1.v",
+      "impl\/verilog\/network_SeparableConv2D_2_w_1_rom.dat",
+      "impl\/verilog\/network_SeparableConv2D_3_w_1.v",
+      "impl\/verilog\/network_SeparableConv2D_3_w_1_rom.dat",
+      "impl\/verilog\/network_SeparableConv2D_4_w_1.v",
+      "impl\/verilog\/network_SeparableConv2D_4_w_1_rom.dat",
       "impl\/verilog\/padding2d_fix16.v",
       "impl\/verilog\/pointwise_conv2d_fix.v",
       "impl\/verilog\/pointwise_conv2d_fix_1.v",
-      "impl\/verilog\/pointwise_conv2d_fix_1_SeparableConv2D_0_b_s.v",
-      "impl\/verilog\/pointwise_conv2d_fix_1_SeparableConv2D_0_b_s_rom.dat",
-      "impl\/verilog\/pointwise_conv2d_fix_1_SeparableConv2D_0_w_s.v",
-      "impl\/verilog\/pointwise_conv2d_fix_1_SeparableConv2D_0_w_s_rom.dat",
+      "impl\/verilog\/pointwise_conv2d_fix_1_SeparableConv2D_1_b_s.v",
+      "impl\/verilog\/pointwise_conv2d_fix_1_SeparableConv2D_1_b_s_rom.dat",
+      "impl\/verilog\/pointwise_conv2d_fix_1_SeparableConv2D_1_w_s.v",
+      "impl\/verilog\/pointwise_conv2d_fix_1_SeparableConv2D_1_w_s_rom.dat",
       "impl\/verilog\/pointwise_conv2d_fix_2.v",
-      "impl\/verilog\/pointwise_conv2d_fix_2_SeparableConv2D_1_b_s.v",
-      "impl\/verilog\/pointwise_conv2d_fix_2_SeparableConv2D_1_b_s_rom.dat",
+      "impl\/verilog\/pointwise_conv2d_fix_2_SeparableConv2D_2_b_s.v",
+      "impl\/verilog\/pointwise_conv2d_fix_2_SeparableConv2D_2_b_s_rom.dat",
+      "impl\/verilog\/pointwise_conv2d_fix_2_SeparableConv2D_2_w_s.v",
+      "impl\/verilog\/pointwise_conv2d_fix_2_SeparableConv2D_2_w_s_rom.dat",
       "impl\/verilog\/pointwise_conv2d_fix_3.v",
       "impl\/verilog\/pointwise_conv2d_fix_3_SeparableConv2D_3_b_s.v",
       "impl\/verilog\/pointwise_conv2d_fix_3_SeparableConv2D_3_b_s_rom.dat",
+      "impl\/verilog\/pointwise_conv2d_fix_3_SeparableConv2D_3_w_s.v",
+      "impl\/verilog\/pointwise_conv2d_fix_3_SeparableConv2D_3_w_s_rom.dat",
       "impl\/verilog\/pointwise_conv2d_fix_4.v",
-      "impl\/verilog\/pointwise_conv2d_fix_SeparableConv2D_2_b_s.v",
-      "impl\/verilog\/pointwise_conv2d_fix_SeparableConv2D_2_b_s_rom.dat",
+      "impl\/verilog\/pointwise_conv2d_fix_4_SeparableConv2D_4_w_s.v",
+      "impl\/verilog\/pointwise_conv2d_fix_4_SeparableConv2D_4_w_s_rom.dat",
+      "impl\/verilog\/pointwise_conv2d_fix_SeparableConv2D_0_b_s.v",
+      "impl\/verilog\/pointwise_conv2d_fix_SeparableConv2D_0_b_s_rom.dat",
+      "impl\/verilog\/pointwise_conv2d_fix_SeparableConv2D_0_w_s.v",
+      "impl\/verilog\/pointwise_conv2d_fix_SeparableConv2D_0_w_s_rom.dat",
       "impl\/verilog\/up_sampling2d_fix16.v",
       "impl\/verilog\/network.v"
     ],
@@ -753,47 +759,47 @@
       "Instances": [
         {
           "ModuleName": "padding2d_fix16",
-          "InstanceName": "grp_padding2d_fix16_fu_299"
+          "InstanceName": "grp_padding2d_fix16_fu_307"
         },
         {
           "ModuleName": "depthwise_conv2d_fix_2",
-          "InstanceName": "grp_depthwise_conv2d_fix_2_fu_317"
+          "InstanceName": "grp_depthwise_conv2d_fix_2_fu_325"
         },
         {
           "ModuleName": "depthwise_conv2d_fix_1",
-          "InstanceName": "grp_depthwise_conv2d_fix_1_fu_341"
+          "InstanceName": "grp_depthwise_conv2d_fix_1_fu_349"
         },
         {
           "ModuleName": "pointwise_conv2d_fix_3",
-          "InstanceName": "grp_pointwise_conv2d_fix_3_fu_365"
-        },
-        {
-          "ModuleName": "pointwise_conv2d_fix_2",
-          "InstanceName": "grp_pointwise_conv2d_fix_2_fu_373"
-        },
-        {
-          "ModuleName": "max_pooling2d_fix16",
-          "InstanceName": "grp_max_pooling2d_fix16_fu_381"
-        },
-        {
-          "ModuleName": "pointwise_conv2d_fix",
-          "InstanceName": "grp_pointwise_conv2d_fix_fu_402"
-        },
-        {
-          "ModuleName": "up_sampling2d_fix16",
-          "InstanceName": "grp_up_sampling2d_fix16_fu_410"
-        },
-        {
-          "ModuleName": "pointwise_conv2d_fix_4",
-          "InstanceName": "grp_pointwise_conv2d_fix_4_fu_431"
+          "InstanceName": "grp_pointwise_conv2d_fix_3_fu_373"
         },
         {
           "ModuleName": "pointwise_conv2d_fix_1",
-          "InstanceName": "grp_pointwise_conv2d_fix_1_fu_437"
+          "InstanceName": "grp_pointwise_conv2d_fix_1_fu_383"
+        },
+        {
+          "ModuleName": "pointwise_conv2d_fix_2",
+          "InstanceName": "grp_pointwise_conv2d_fix_2_fu_393"
+        },
+        {
+          "ModuleName": "max_pooling2d_fix16",
+          "InstanceName": "grp_max_pooling2d_fix16_fu_403"
+        },
+        {
+          "ModuleName": "pointwise_conv2d_fix_4",
+          "InstanceName": "grp_pointwise_conv2d_fix_4_fu_424"
+        },
+        {
+          "ModuleName": "up_sampling2d_fix16",
+          "InstanceName": "grp_up_sampling2d_fix16_fu_432"
+        },
+        {
+          "ModuleName": "pointwise_conv2d_fix",
+          "InstanceName": "grp_pointwise_conv2d_fix_fu_453"
         },
         {
           "ModuleName": "depthwise_conv2d_fix",
-          "InstanceName": "grp_depthwise_conv2d_fix_fu_447"
+          "InstanceName": "grp_depthwise_conv2d_fix_fu_463"
         }
       ]
     },
@@ -930,7 +936,7 @@
           "LUT": "336"
         }
       },
-      "pointwise_conv2d_fix_1": {
+      "pointwise_conv2d_fix": {
         "Latency": {
           "LatencyBest": "51121",
           "LatencyAvg": "51121",
@@ -1108,7 +1114,7 @@
           "BRAM_18K": "0"
         }
       },
-      "pointwise_conv2d_fix_2": {
+      "pointwise_conv2d_fix_1": {
         "Latency": {
           "LatencyBest": "105305",
           "LatencyAvg": "105305",
@@ -1151,10 +1157,10 @@
               }]
           }],
         "Area": {
-          "BRAM_18K": "0",
+          "BRAM_18K": "1",
           "DSP48E": "1",
-          "FF": "245",
-          "LUT": "402"
+          "FF": "267",
+          "LUT": "417"
         }
       },
       "depthwise_conv2d_fix_1": {
@@ -1225,7 +1231,7 @@
           "BRAM_18K": "0"
         }
       },
-      "pointwise_conv2d_fix": {
+      "pointwise_conv2d_fix_2": {
         "Latency": {
           "LatencyBest": "13857",
           "LatencyAvg": "13857",
@@ -1270,8 +1276,8 @@
         "Area": {
           "BRAM_18K": "0",
           "DSP48E": "1",
-          "FF": "224",
-          "LUT": "405"
+          "FF": "260",
+          "LUT": "435"
         }
       },
       "up_sampling2d_fix16": {
@@ -1371,10 +1377,10 @@
               }]
           }],
         "Area": {
-          "BRAM_18K": "0",
+          "BRAM_18K": "1",
           "DSP48E": "1",
-          "FF": "246",
-          "LUT": "405"
+          "FF": "270",
+          "LUT": "420"
         }
       },
       "pointwise_conv2d_fix_4": {
@@ -1413,10 +1419,10 @@
               }]
           }],
         "Area": {
+          "BRAM_18K": "0",
           "DSP48E": "1",
-          "FF": "155",
-          "LUT": "349",
-          "BRAM_18K": "0"
+          "FF": "185",
+          "LUT": "353"
         }
       },
       "network": {
@@ -1459,10 +1465,10 @@
           }
         ],
         "Area": {
-          "BRAM_18K": "37",
+          "BRAM_18K": "39",
           "DSP48E": "9",
-          "FF": "2788",
-          "LUT": "6592"
+          "FF": "2900",
+          "LUT": "6656"
         }
       }
     }
@@ -1477,7 +1483,7 @@
   },
   "GenData": {
     "DataVersion": "0.1",
-    "Time": "2019-11-29 20:35:09 JST",
+    "Time": "2019-11-30 13:37:47 JST",
     "ToolName": "vivado_hls",
     "ToolVersion": "2018.3.1"
   }

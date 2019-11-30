@@ -247,14 +247,14 @@
 
 <trans id="193" from="40" to="41">
 <condition id="-1">
-<or_exp><and_exp><literal name="tmp_46" val="0"/>
+<or_exp><and_exp><literal name="tmp_51" val="0"/>
 </and_exp></or_exp>
 </condition>
 </trans>
 
 <trans id="196" from="40" to="42">
 <condition id="-1">
-<or_exp><and_exp><literal name="tmp_46" val="1"/>
+<or_exp><and_exp><literal name="tmp_51" val="1"/>
 </and_exp></or_exp>
 </condition>
 </trans>
@@ -267,14 +267,14 @@
 
 <trans id="206" from="42" to="45">
 <condition id="-1">
-<or_exp><and_exp><literal name="tmp_48" val="1"/>
+<or_exp><and_exp><literal name="tmp_53" val="1"/>
 </and_exp></or_exp>
 </condition>
 </trans>
 
 <trans id="207" from="42" to="43">
 <condition id="-1">
-<or_exp><and_exp><literal name="tmp_48" val="0"/>
+<or_exp><and_exp><literal name="tmp_53" val="0"/>
 </and_exp></or_exp>
 </condition>
 </trans>
@@ -311,7 +311,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="29" bw="0" op_0_bw="0" op_1_bw="16">
+<Node id="33" bw="0" op_0_bw="0" op_1_bw="16">
 <![CDATA[
 :0  call void (...)* @_ssdm_op_SpecBitsMap(i16* %input_data_V_data_V), !map !121
 
@@ -326,7 +326,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="30" bw="0" op_0_bw="0" op_1_bw="2">
+<Node id="34" bw="0" op_0_bw="0" op_1_bw="2">
 <![CDATA[
 :1  call void (...)* @_ssdm_op_SpecBitsMap(i2* %input_data_V_keep_V), !map !125
 
@@ -341,7 +341,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="31" bw="0" op_0_bw="0" op_1_bw="2">
+<Node id="35" bw="0" op_0_bw="0" op_1_bw="2">
 <![CDATA[
 :2  call void (...)* @_ssdm_op_SpecBitsMap(i2* %input_data_V_strb_V), !map !129
 
@@ -356,7 +356,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="32" bw="0" op_0_bw="0" op_1_bw="1">
+<Node id="36" bw="0" op_0_bw="0" op_1_bw="1">
 <![CDATA[
 :3  call void (...)* @_ssdm_op_SpecBitsMap(i1* %input_data_V_user_V), !map !133
 
@@ -371,7 +371,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="33" bw="0" op_0_bw="0" op_1_bw="1">
+<Node id="37" bw="0" op_0_bw="0" op_1_bw="1">
 <![CDATA[
 :4  call void (...)* @_ssdm_op_SpecBitsMap(i1* %input_data_V_last_V), !map !137
 
@@ -386,7 +386,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="34" bw="0" op_0_bw="0" op_1_bw="1">
+<Node id="38" bw="0" op_0_bw="0" op_1_bw="1">
 <![CDATA[
 :5  call void (...)* @_ssdm_op_SpecBitsMap(i1* %input_data_V_id_V), !map !141
 
@@ -401,7 +401,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="35" bw="0" op_0_bw="0" op_1_bw="1">
+<Node id="39" bw="0" op_0_bw="0" op_1_bw="1">
 <![CDATA[
 :6  call void (...)* @_ssdm_op_SpecBitsMap(i1* %input_data_V_dest_V), !map !145
 
@@ -416,7 +416,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="36" bw="0" op_0_bw="0" op_1_bw="16">
+<Node id="40" bw="0" op_0_bw="0" op_1_bw="16">
 <![CDATA[
 :7  call void (...)* @_ssdm_op_SpecBitsMap(i16* %output_data_V_data_V), !map !149
 
@@ -431,7 +431,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="37" bw="0" op_0_bw="0" op_1_bw="2">
+<Node id="41" bw="0" op_0_bw="0" op_1_bw="2">
 <![CDATA[
 :8  call void (...)* @_ssdm_op_SpecBitsMap(i2* %output_data_V_keep_V), !map !153
 
@@ -446,7 +446,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="38" bw="0" op_0_bw="0" op_1_bw="2">
+<Node id="42" bw="0" op_0_bw="0" op_1_bw="2">
 <![CDATA[
 :9  call void (...)* @_ssdm_op_SpecBitsMap(i2* %output_data_V_strb_V), !map !157
 
@@ -461,7 +461,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="39" bw="0" op_0_bw="0" op_1_bw="1">
+<Node id="43" bw="0" op_0_bw="0" op_1_bw="1">
 <![CDATA[
 :10  call void (...)* @_ssdm_op_SpecBitsMap(i1* %output_data_V_user_V), !map !161
 
@@ -476,7 +476,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="40" bw="0" op_0_bw="0" op_1_bw="1">
+<Node id="44" bw="0" op_0_bw="0" op_1_bw="1">
 <![CDATA[
 :11  call void (...)* @_ssdm_op_SpecBitsMap(i1* %output_data_V_last_V), !map !165
 
@@ -491,7 +491,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="41" bw="0" op_0_bw="0" op_1_bw="1">
+<Node id="45" bw="0" op_0_bw="0" op_1_bw="1">
 <![CDATA[
 :12  call void (...)* @_ssdm_op_SpecBitsMap(i1* %output_data_V_id_V), !map !169
 
@@ -506,7 +506,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="42" bw="0" op_0_bw="0" op_1_bw="1">
+<Node id="46" bw="0" op_0_bw="0" op_1_bw="1">
 <![CDATA[
 :13  call void (...)* @_ssdm_op_SpecBitsMap(i1* %output_data_V_dest_V), !map !173
 
@@ -521,7 +521,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="43" bw="0" op_0_bw="0" op_1_bw="32">
+<Node id="47" bw="0" op_0_bw="0" op_1_bw="32">
 <![CDATA[
 :14  call void (...)* @_ssdm_op_SpecBitsMap(i32 0) nounwind, !map !177
 
@@ -536,7 +536,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="44" bw="0" op_0_bw="0" op_1_bw="0">
+<Node id="48" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
 :15  call void (...)* @_ssdm_op_SpecTopModule([8 x i8]* @network_str) nounwind
 
@@ -551,7 +551,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="45" bw="16" op_0_bw="64">
+<Node id="49" bw="16" op_0_bw="64">
 <![CDATA[
 :16  %MemBank_A = alloca [14400 x i16], align 16
 
@@ -566,7 +566,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="46" bw="16" op_0_bw="64">
+<Node id="50" bw="16" op_0_bw="64">
 <![CDATA[
 :17  %MemBank_B = alloca [14400 x i16], align 16
 
@@ -581,7 +581,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="47" bw="16" op_0_bw="64">
+<Node id="51" bw="16" op_0_bw="64">
 <![CDATA[
 :18  %MemBank_Out = alloca [784 x i16], align 16
 
@@ -596,7 +596,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="48" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="2" op_3_bw="2" op_4_bw="1" op_5_bw="1" op_6_bw="1" op_7_bw="1" op_8_bw="0" op_9_bw="32" op_10_bw="32" op_11_bw="0" op_12_bw="32" op_13_bw="32" op_14_bw="0" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32" op_19_bw="32" op_20_bw="32" op_21_bw="0" op_22_bw="0">
+<Node id="52" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="2" op_3_bw="2" op_4_bw="1" op_5_bw="1" op_6_bw="1" op_7_bw="1" op_8_bw="0" op_9_bw="32" op_10_bw="32" op_11_bw="0" op_12_bw="32" op_13_bw="32" op_14_bw="0" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32" op_19_bw="32" op_20_bw="32" op_21_bw="0" op_22_bw="0">
 <![CDATA[
 :19  call void (...)* @_ssdm_op_SpecInterface(i16* %input_data_V_data_V, i2* %input_data_V_keep_V, i2* %input_data_V_strb_V, i1* %input_data_V_user_V, i1* %input_data_V_last_V, i1* %input_data_V_id_V, i1* %input_data_V_dest_V, [5 x i8]* @p_str, i32 1, i32 1, [5 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2) nounwind
 
@@ -611,7 +611,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="49" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="2" op_3_bw="2" op_4_bw="1" op_5_bw="1" op_6_bw="1" op_7_bw="1" op_8_bw="0" op_9_bw="32" op_10_bw="32" op_11_bw="0" op_12_bw="32" op_13_bw="32" op_14_bw="0" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32" op_19_bw="32" op_20_bw="32" op_21_bw="0" op_22_bw="0">
+<Node id="53" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="2" op_3_bw="2" op_4_bw="1" op_5_bw="1" op_6_bw="1" op_7_bw="1" op_8_bw="0" op_9_bw="32" op_10_bw="32" op_11_bw="0" op_12_bw="32" op_13_bw="32" op_14_bw="0" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32" op_19_bw="32" op_20_bw="32" op_21_bw="0" op_22_bw="0">
 <![CDATA[
 :20  call void (...)* @_ssdm_op_SpecInterface(i16* %output_data_V_data_V, i2* %output_data_V_keep_V, i2* %output_data_V_strb_V, i1* %output_data_V_user_V, i1* %output_data_V_last_V, i1* %output_data_V_id_V, i1* %output_data_V_dest_V, [5 x i8]* @p_str, i32 1, i32 1, [5 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2) nounwind
 
@@ -626,7 +626,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="50" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0">
+<Node id="54" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0">
 <![CDATA[
 :21  call void (...)* @_ssdm_op_SpecInterface(i32 0, [10 x i8]* @p_str3, i32 1, i32 1, [1 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2) nounwind
 
@@ -641,7 +641,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="51" bw="0" op_0_bw="0">
+<Node id="55" bw="0" op_0_bw="0">
 <![CDATA[
 :22  br label %1
 
@@ -659,7 +659,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="53" bw="10" op_0_bw="10" op_1_bw="0">
+<Node id="57" bw="10" op_0_bw="10" op_1_bw="0">
 <![CDATA[
 :0  %i = phi i10 [ 0, %0 ], [ %i_1, %2 ]
 
@@ -674,7 +674,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="54" bw="1" op_0_bw="10" op_1_bw="10">
+<Node id="58" bw="1" op_0_bw="10" op_1_bw="10">
 <![CDATA[
 :1  %exitcond = icmp eq i10 %i, -240
 
@@ -689,7 +689,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="55" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
+<Node id="59" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
 :2  %empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 784, i64 784, i64 784)
 
@@ -704,7 +704,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="56" bw="10" op_0_bw="10" op_1_bw="10">
+<Node id="60" bw="10" op_0_bw="10" op_1_bw="10">
 <![CDATA[
 :3  %i_1 = add i10 %i, 1
 
@@ -719,7 +719,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="57" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
+<Node id="61" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
 <![CDATA[
 :4  br i1 %exitcond, label %3, label %2
 
@@ -735,12 +735,12 @@
 </and_exp></or_exp>
 </condition>
 
-<Node id="59" bw="24" op_0_bw="24" op_1_bw="16" op_2_bw="2" op_3_bw="2" op_4_bw="1" op_5_bw="1" op_6_bw="1" op_7_bw="1">
+<Node id="63" bw="24" op_0_bw="24" op_1_bw="16" op_2_bw="2" op_3_bw="2" op_4_bw="1" op_5_bw="1" op_6_bw="1" op_7_bw="1">
 <![CDATA[
-:0  %empty_31 = call { i16, i2, i2, i1, i1, i1, i1 } @_ssdm_op_Read.axis.volatile.i16P.i2P.i2P.i1P.i1P.i1P.i1P(i16* %input_data_V_data_V, i2* %input_data_V_keep_V, i2* %input_data_V_strb_V, i1* %input_data_V_user_V, i1* %input_data_V_last_V, i1* %input_data_V_id_V, i1* %input_data_V_dest_V)
+:0  %empty_29 = call { i16, i2, i2, i1, i1, i1, i1 } @_ssdm_op_Read.axis.volatile.i16P.i2P.i2P.i1P.i1P.i1P.i1P(i16* %input_data_V_data_V, i2* %input_data_V_keep_V, i2* %input_data_V_strb_V, i1* %input_data_V_user_V, i1* %input_data_V_last_V, i1* %input_data_V_id_V, i1* %input_data_V_dest_V)
 
 ]]></Node>
-<StgValue><ssdm name="empty_31"/></StgValue>
+<StgValue><ssdm name="empty_29"/></StgValue>
 </operation>
 
 <operation id="76" st_id="2" stage="1" lat="1">
@@ -751,9 +751,9 @@
 </and_exp></or_exp>
 </condition>
 
-<Node id="60" bw="16" op_0_bw="24">
+<Node id="64" bw="16" op_0_bw="24">
 <![CDATA[
-:1  %tmp_data_V = extractvalue { i16, i2, i2, i1, i1, i1, i1 } %empty_31, 0
+:1  %tmp_data_V = extractvalue { i16, i2, i2, i1, i1, i1, i1 } %empty_29, 0
 
 ]]></Node>
 <StgValue><ssdm name="tmp_data_V"/></StgValue>
@@ -767,7 +767,7 @@
 </and_exp></or_exp>
 </condition>
 
-<Node id="61" bw="64" op_0_bw="10">
+<Node id="65" bw="64" op_0_bw="10">
 <![CDATA[
 :2  %tmp_s = zext i10 %i to i64
 
@@ -783,7 +783,7 @@
 </and_exp></or_exp>
 </condition>
 
-<Node id="62" bw="14" op_0_bw="16" op_1_bw="64" op_2_bw="64">
+<Node id="66" bw="14" op_0_bw="16" op_1_bw="64" op_2_bw="64">
 <![CDATA[
 :3  %MemBank_A_addr = getelementptr inbounds [14400 x i16]* %MemBank_A, i64 0, i64 %tmp_s
 
@@ -799,7 +799,7 @@
 </and_exp></or_exp>
 </condition>
 
-<Node id="63" bw="0" op_0_bw="16" op_1_bw="14">
+<Node id="67" bw="0" op_0_bw="16" op_1_bw="14">
 <![CDATA[
 :4  store i16 %tmp_data_V, i16* %MemBank_A_addr, align 2
 
@@ -815,7 +815,7 @@
 </and_exp></or_exp>
 </condition>
 
-<Node id="64" bw="0" op_0_bw="0">
+<Node id="68" bw="0" op_0_bw="0">
 <![CDATA[
 :5  br label %1
 
@@ -831,7 +831,7 @@
 </and_exp></or_exp>
 </condition>
 
-<Node id="66" bw="0" op_0_bw="0" op_1_bw="7" op_2_bw="6" op_3_bw="6" op_4_bw="16" op_5_bw="16">
+<Node id="70" bw="0" op_0_bw="0" op_1_bw="7" op_2_bw="6" op_3_bw="6" op_4_bw="16" op_5_bw="16">
 <![CDATA[
 :0  call fastcc void @padding2d_fix16(i7 zeroext 1, i6 zeroext 28, i6 zeroext 28, [14400 x i16]* %MemBank_A, [14400 x i16]* %MemBank_B)
 
@@ -849,7 +849,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="66" bw="0" op_0_bw="0" op_1_bw="7" op_2_bw="6" op_3_bw="6" op_4_bw="16" op_5_bw="16">
+<Node id="70" bw="0" op_0_bw="0" op_1_bw="7" op_2_bw="6" op_3_bw="6" op_4_bw="16" op_5_bw="16">
 <![CDATA[
 :0  call fastcc void @padding2d_fix16(i7 zeroext 1, i6 zeroext 28, i6 zeroext 28, [14400 x i16]* %MemBank_A, [14400 x i16]* %MemBank_B)
 
@@ -867,7 +867,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="67" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="16">
+<Node id="71" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="16">
 <![CDATA[
 :1  call fastcc void @depthwise_conv2d_fix([14400 x i16]* %MemBank_B, [14400 x i16]* %MemBank_A)
 
@@ -885,7 +885,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="67" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="16">
+<Node id="71" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="16">
 <![CDATA[
 :1  call fastcc void @depthwise_conv2d_fix([14400 x i16]* %MemBank_B, [14400 x i16]* %MemBank_A)
 
@@ -903,9 +903,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="68" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="16">
+<Node id="72" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="16">
 <![CDATA[
-:2  call fastcc void @pointwise_conv2d_fix.1([14400 x i16]* %MemBank_A, [14400 x i16]* %MemBank_B)
+:2  call fastcc void @pointwise_conv2d_fix([14400 x i16]* %MemBank_A, [14400 x i16]* %MemBank_B)
 
 ]]></Node>
 <StgValue><ssdm name=""/></StgValue>
@@ -921,9 +921,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="68" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="16">
+<Node id="72" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="16">
 <![CDATA[
-:2  call fastcc void @pointwise_conv2d_fix.1([14400 x i16]* %MemBank_A, [14400 x i16]* %MemBank_B)
+:2  call fastcc void @pointwise_conv2d_fix([14400 x i16]* %MemBank_A, [14400 x i16]* %MemBank_B)
 
 ]]></Node>
 <StgValue><ssdm name=""/></StgValue>
@@ -939,7 +939,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="69" bw="0" op_0_bw="0" op_1_bw="7" op_2_bw="6" op_3_bw="16" op_4_bw="6" op_5_bw="5" op_6_bw="5" op_7_bw="16">
+<Node id="73" bw="0" op_0_bw="0" op_1_bw="7" op_2_bw="6" op_3_bw="16" op_4_bw="6" op_5_bw="5" op_6_bw="5" op_7_bw="16">
 <![CDATA[
 :3  call fastcc void @max_pooling2d_fix16(i7 zeroext 28, i6 zeroext 28, [14400 x i16]* %MemBank_B, i6 zeroext 16, i5 zeroext 14, i5 zeroext 14, [14400 x i16]* %MemBank_A)
 
@@ -957,7 +957,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="69" bw="0" op_0_bw="0" op_1_bw="7" op_2_bw="6" op_3_bw="16" op_4_bw="6" op_5_bw="5" op_6_bw="5" op_7_bw="16">
+<Node id="73" bw="0" op_0_bw="0" op_1_bw="7" op_2_bw="6" op_3_bw="16" op_4_bw="6" op_5_bw="5" op_6_bw="5" op_7_bw="16">
 <![CDATA[
 :3  call fastcc void @max_pooling2d_fix16(i7 zeroext 28, i6 zeroext 28, [14400 x i16]* %MemBank_B, i6 zeroext 16, i5 zeroext 14, i5 zeroext 14, [14400 x i16]* %MemBank_A)
 
@@ -975,7 +975,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="70" bw="0" op_0_bw="0" op_1_bw="7" op_2_bw="6" op_3_bw="6" op_4_bw="16" op_5_bw="16">
+<Node id="74" bw="0" op_0_bw="0" op_1_bw="7" op_2_bw="6" op_3_bw="6" op_4_bw="16" op_5_bw="16">
 <![CDATA[
 :4  call fastcc void @padding2d_fix16(i7 zeroext 16, i6 zeroext 14, i6 zeroext 14, [14400 x i16]* %MemBank_A, [14400 x i16]* %MemBank_B)
 
@@ -993,7 +993,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="70" bw="0" op_0_bw="0" op_1_bw="7" op_2_bw="6" op_3_bw="6" op_4_bw="16" op_5_bw="16">
+<Node id="74" bw="0" op_0_bw="0" op_1_bw="7" op_2_bw="6" op_3_bw="6" op_4_bw="16" op_5_bw="16">
 <![CDATA[
 :4  call fastcc void @padding2d_fix16(i7 zeroext 16, i6 zeroext 14, i6 zeroext 14, [14400 x i16]* %MemBank_A, [14400 x i16]* %MemBank_B)
 
@@ -1011,9 +1011,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="71" bw="0" op_0_bw="0" op_1_bw="7" op_2_bw="6" op_3_bw="16" op_4_bw="6" op_5_bw="6" op_6_bw="16" op_7_bw="16" op_8_bw="16">
+<Node id="75" bw="0" op_0_bw="0" op_1_bw="7" op_2_bw="6" op_3_bw="16" op_4_bw="6" op_5_bw="6" op_6_bw="16" op_7_bw="16" op_8_bw="16">
 <![CDATA[
-:5  call fastcc void @depthwise_conv2d_fix.2(i7 16, i6 16, [14400 x i16]* %MemBank_B, i6 14, i6 14, [14400 x i16]* %MemBank_A, [16 x i16]* @SeparableConv2D_1_b_1, [144 x i16]* @SeparableConv2D_1_w_s)
+:5  call fastcc void @depthwise_conv2d_fix.2(i7 16, i6 16, [14400 x i16]* %MemBank_B, i6 14, i6 14, [14400 x i16]* %MemBank_A, [16 x i16]* @SeparableConv2D_1_b_1, [144 x i16]* @SeparableConv2D_1_w_1)
 
 ]]></Node>
 <StgValue><ssdm name=""/></StgValue>
@@ -1029,9 +1029,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="71" bw="0" op_0_bw="0" op_1_bw="7" op_2_bw="6" op_3_bw="16" op_4_bw="6" op_5_bw="6" op_6_bw="16" op_7_bw="16" op_8_bw="16">
+<Node id="75" bw="0" op_0_bw="0" op_1_bw="7" op_2_bw="6" op_3_bw="16" op_4_bw="6" op_5_bw="6" op_6_bw="16" op_7_bw="16" op_8_bw="16">
 <![CDATA[
-:5  call fastcc void @depthwise_conv2d_fix.2(i7 16, i6 16, [14400 x i16]* %MemBank_B, i6 14, i6 14, [14400 x i16]* %MemBank_A, [16 x i16]* @SeparableConv2D_1_b_1, [144 x i16]* @SeparableConv2D_1_w_s)
+:5  call fastcc void @depthwise_conv2d_fix.2(i7 16, i6 16, [14400 x i16]* %MemBank_B, i6 14, i6 14, [14400 x i16]* %MemBank_A, [16 x i16]* @SeparableConv2D_1_b_1, [144 x i16]* @SeparableConv2D_1_w_1)
 
 ]]></Node>
 <StgValue><ssdm name=""/></StgValue>
@@ -1047,9 +1047,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="72" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="16">
+<Node id="76" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="16">
 <![CDATA[
-:6  call fastcc void @pointwise_conv2d_fix.2([14400 x i16]* %MemBank_A, [14400 x i16]* %MemBank_B)
+:6  call fastcc void @pointwise_conv2d_fix.1([14400 x i16]* %MemBank_A, [14400 x i16]* %MemBank_B)
 
 ]]></Node>
 <StgValue><ssdm name=""/></StgValue>
@@ -1065,9 +1065,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="72" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="16">
+<Node id="76" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="16">
 <![CDATA[
-:6  call fastcc void @pointwise_conv2d_fix.2([14400 x i16]* %MemBank_A, [14400 x i16]* %MemBank_B)
+:6  call fastcc void @pointwise_conv2d_fix.1([14400 x i16]* %MemBank_A, [14400 x i16]* %MemBank_B)
 
 ]]></Node>
 <StgValue><ssdm name=""/></StgValue>
@@ -1083,7 +1083,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="73" bw="0" op_0_bw="0" op_1_bw="7" op_2_bw="6" op_3_bw="16" op_4_bw="6" op_5_bw="5" op_6_bw="5" op_7_bw="16">
+<Node id="77" bw="0" op_0_bw="0" op_1_bw="7" op_2_bw="6" op_3_bw="16" op_4_bw="6" op_5_bw="5" op_6_bw="5" op_7_bw="16">
 <![CDATA[
 :7  call fastcc void @max_pooling2d_fix16(i7 zeroext 14, i6 zeroext 14, [14400 x i16]* %MemBank_B, i6 zeroext 8, i5 zeroext 7, i5 zeroext 7, [14400 x i16]* %MemBank_A)
 
@@ -1101,7 +1101,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="73" bw="0" op_0_bw="0" op_1_bw="7" op_2_bw="6" op_3_bw="16" op_4_bw="6" op_5_bw="5" op_6_bw="5" op_7_bw="16">
+<Node id="77" bw="0" op_0_bw="0" op_1_bw="7" op_2_bw="6" op_3_bw="16" op_4_bw="6" op_5_bw="5" op_6_bw="5" op_7_bw="16">
 <![CDATA[
 :7  call fastcc void @max_pooling2d_fix16(i7 zeroext 14, i6 zeroext 14, [14400 x i16]* %MemBank_B, i6 zeroext 8, i5 zeroext 7, i5 zeroext 7, [14400 x i16]* %MemBank_A)
 
@@ -1119,7 +1119,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="74" bw="0" op_0_bw="0" op_1_bw="7" op_2_bw="6" op_3_bw="6" op_4_bw="16" op_5_bw="16">
+<Node id="78" bw="0" op_0_bw="0" op_1_bw="7" op_2_bw="6" op_3_bw="6" op_4_bw="16" op_5_bw="16">
 <![CDATA[
 :8  call fastcc void @padding2d_fix16(i7 zeroext 8, i6 zeroext 7, i6 zeroext 7, [14400 x i16]* %MemBank_A, [14400 x i16]* %MemBank_B)
 
@@ -1137,7 +1137,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="74" bw="0" op_0_bw="0" op_1_bw="7" op_2_bw="6" op_3_bw="6" op_4_bw="16" op_5_bw="16">
+<Node id="78" bw="0" op_0_bw="0" op_1_bw="7" op_2_bw="6" op_3_bw="6" op_4_bw="16" op_5_bw="16">
 <![CDATA[
 :8  call fastcc void @padding2d_fix16(i7 zeroext 8, i6 zeroext 7, i6 zeroext 7, [14400 x i16]* %MemBank_A, [14400 x i16]* %MemBank_B)
 
@@ -1155,9 +1155,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="75" bw="0" op_0_bw="0" op_1_bw="6" op_2_bw="6" op_3_bw="16" op_4_bw="5" op_5_bw="5" op_6_bw="16" op_7_bw="16" op_8_bw="16">
+<Node id="79" bw="0" op_0_bw="0" op_1_bw="6" op_2_bw="6" op_3_bw="16" op_4_bw="5" op_5_bw="5" op_6_bw="16" op_7_bw="16" op_8_bw="16">
 <![CDATA[
-:9  call fastcc void @depthwise_conv2d_fix.1(i6 9, i6 9, [14400 x i16]* %MemBank_B, i5 7, i5 7, [14400 x i16]* %MemBank_A, [8 x i16]* @SeparableConv2D_2_b_1, [72 x i16]* @SeparableConv2D_2_w_s)
+:9  call fastcc void @depthwise_conv2d_fix.1(i6 9, i6 9, [14400 x i16]* %MemBank_B, i5 7, i5 7, [14400 x i16]* %MemBank_A, [8 x i16]* @SeparableConv2D_2_b_1, [72 x i16]* @SeparableConv2D_2_w_1)
 
 ]]></Node>
 <StgValue><ssdm name=""/></StgValue>
@@ -1173,9 +1173,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="75" bw="0" op_0_bw="0" op_1_bw="6" op_2_bw="6" op_3_bw="16" op_4_bw="5" op_5_bw="5" op_6_bw="16" op_7_bw="16" op_8_bw="16">
+<Node id="79" bw="0" op_0_bw="0" op_1_bw="6" op_2_bw="6" op_3_bw="16" op_4_bw="5" op_5_bw="5" op_6_bw="16" op_7_bw="16" op_8_bw="16">
 <![CDATA[
-:9  call fastcc void @depthwise_conv2d_fix.1(i6 9, i6 9, [14400 x i16]* %MemBank_B, i5 7, i5 7, [14400 x i16]* %MemBank_A, [8 x i16]* @SeparableConv2D_2_b_1, [72 x i16]* @SeparableConv2D_2_w_s)
+:9  call fastcc void @depthwise_conv2d_fix.1(i6 9, i6 9, [14400 x i16]* %MemBank_B, i5 7, i5 7, [14400 x i16]* %MemBank_A, [8 x i16]* @SeparableConv2D_2_b_1, [72 x i16]* @SeparableConv2D_2_w_1)
 
 ]]></Node>
 <StgValue><ssdm name=""/></StgValue>
@@ -1191,9 +1191,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="76" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="16">
+<Node id="80" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="16">
 <![CDATA[
-:10  call fastcc void @pointwise_conv2d_fix([14400 x i16]* %MemBank_A, [14400 x i16]* %MemBank_B)
+:10  call fastcc void @pointwise_conv2d_fix.2([14400 x i16]* %MemBank_A, [14400 x i16]* %MemBank_B)
 
 ]]></Node>
 <StgValue><ssdm name=""/></StgValue>
@@ -1209,9 +1209,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="76" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="16">
+<Node id="80" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="16">
 <![CDATA[
-:10  call fastcc void @pointwise_conv2d_fix([14400 x i16]* %MemBank_A, [14400 x i16]* %MemBank_B)
+:10  call fastcc void @pointwise_conv2d_fix.2([14400 x i16]* %MemBank_A, [14400 x i16]* %MemBank_B)
 
 ]]></Node>
 <StgValue><ssdm name=""/></StgValue>
@@ -1227,7 +1227,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="77" bw="0" op_0_bw="0" op_1_bw="5" op_2_bw="5" op_3_bw="16" op_4_bw="6" op_5_bw="6" op_6_bw="6" op_7_bw="16">
+<Node id="81" bw="0" op_0_bw="0" op_1_bw="5" op_2_bw="5" op_3_bw="16" op_4_bw="6" op_5_bw="6" op_6_bw="6" op_7_bw="16">
 <![CDATA[
 :11  call fastcc void @up_sampling2d_fix16(i5 zeroext 7, i5 zeroext 7, [14400 x i16]* %MemBank_B, i6 zeroext 8, i6 zeroext 14, i6 zeroext 14, [14400 x i16]* %MemBank_A)
 
@@ -1245,7 +1245,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="77" bw="0" op_0_bw="0" op_1_bw="5" op_2_bw="5" op_3_bw="16" op_4_bw="6" op_5_bw="6" op_6_bw="6" op_7_bw="16">
+<Node id="81" bw="0" op_0_bw="0" op_1_bw="5" op_2_bw="5" op_3_bw="16" op_4_bw="6" op_5_bw="6" op_6_bw="6" op_7_bw="16">
 <![CDATA[
 :11  call fastcc void @up_sampling2d_fix16(i5 zeroext 7, i5 zeroext 7, [14400 x i16]* %MemBank_B, i6 zeroext 8, i6 zeroext 14, i6 zeroext 14, [14400 x i16]* %MemBank_A)
 
@@ -1263,7 +1263,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="78" bw="0" op_0_bw="0" op_1_bw="7" op_2_bw="6" op_3_bw="6" op_4_bw="16" op_5_bw="16">
+<Node id="82" bw="0" op_0_bw="0" op_1_bw="7" op_2_bw="6" op_3_bw="6" op_4_bw="16" op_5_bw="16">
 <![CDATA[
 :12  call fastcc void @padding2d_fix16(i7 zeroext 8, i6 zeroext 14, i6 zeroext 14, [14400 x i16]* %MemBank_A, [14400 x i16]* %MemBank_B)
 
@@ -1281,7 +1281,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="78" bw="0" op_0_bw="0" op_1_bw="7" op_2_bw="6" op_3_bw="6" op_4_bw="16" op_5_bw="16">
+<Node id="82" bw="0" op_0_bw="0" op_1_bw="7" op_2_bw="6" op_3_bw="6" op_4_bw="16" op_5_bw="16">
 <![CDATA[
 :12  call fastcc void @padding2d_fix16(i7 zeroext 8, i6 zeroext 14, i6 zeroext 14, [14400 x i16]* %MemBank_A, [14400 x i16]* %MemBank_B)
 
@@ -1299,9 +1299,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="79" bw="0" op_0_bw="0" op_1_bw="6" op_2_bw="6" op_3_bw="16" op_4_bw="5" op_5_bw="5" op_6_bw="16" op_7_bw="16" op_8_bw="16">
+<Node id="83" bw="0" op_0_bw="0" op_1_bw="6" op_2_bw="6" op_3_bw="16" op_4_bw="5" op_5_bw="5" op_6_bw="16" op_7_bw="16" op_8_bw="16">
 <![CDATA[
-:13  call fastcc void @depthwise_conv2d_fix.1(i6 16, i6 16, [14400 x i16]* %MemBank_B, i5 14, i5 14, [14400 x i16]* %MemBank_A, [8 x i16]* @SeparableConv2D_3_b_1, [72 x i16]* @SeparableConv2D_3_w_s)
+:13  call fastcc void @depthwise_conv2d_fix.1(i6 16, i6 16, [14400 x i16]* %MemBank_B, i5 14, i5 14, [14400 x i16]* %MemBank_A, [8 x i16]* @SeparableConv2D_3_b_1, [72 x i16]* @SeparableConv2D_3_w_1)
 
 ]]></Node>
 <StgValue><ssdm name=""/></StgValue>
@@ -1317,9 +1317,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="79" bw="0" op_0_bw="0" op_1_bw="6" op_2_bw="6" op_3_bw="16" op_4_bw="5" op_5_bw="5" op_6_bw="16" op_7_bw="16" op_8_bw="16">
+<Node id="83" bw="0" op_0_bw="0" op_1_bw="6" op_2_bw="6" op_3_bw="16" op_4_bw="5" op_5_bw="5" op_6_bw="16" op_7_bw="16" op_8_bw="16">
 <![CDATA[
-:13  call fastcc void @depthwise_conv2d_fix.1(i6 16, i6 16, [14400 x i16]* %MemBank_B, i5 14, i5 14, [14400 x i16]* %MemBank_A, [8 x i16]* @SeparableConv2D_3_b_1, [72 x i16]* @SeparableConv2D_3_w_s)
+:13  call fastcc void @depthwise_conv2d_fix.1(i6 16, i6 16, [14400 x i16]* %MemBank_B, i5 14, i5 14, [14400 x i16]* %MemBank_A, [8 x i16]* @SeparableConv2D_3_b_1, [72 x i16]* @SeparableConv2D_3_w_1)
 
 ]]></Node>
 <StgValue><ssdm name=""/></StgValue>
@@ -1335,7 +1335,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="80" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="16">
+<Node id="84" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="16">
 <![CDATA[
 :14  call fastcc void @pointwise_conv2d_fix.3([14400 x i16]* %MemBank_A, [14400 x i16]* %MemBank_B)
 
@@ -1353,7 +1353,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="80" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="16">
+<Node id="84" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="16">
 <![CDATA[
 :14  call fastcc void @pointwise_conv2d_fix.3([14400 x i16]* %MemBank_A, [14400 x i16]* %MemBank_B)
 
@@ -1371,7 +1371,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="81" bw="0" op_0_bw="0" op_1_bw="5" op_2_bw="5" op_3_bw="16" op_4_bw="6" op_5_bw="6" op_6_bw="6" op_7_bw="16">
+<Node id="85" bw="0" op_0_bw="0" op_1_bw="5" op_2_bw="5" op_3_bw="16" op_4_bw="6" op_5_bw="6" op_6_bw="6" op_7_bw="16">
 <![CDATA[
 :15  call fastcc void @up_sampling2d_fix16(i5 zeroext 14, i5 zeroext 14, [14400 x i16]* %MemBank_B, i6 zeroext 16, i6 zeroext 28, i6 zeroext 28, [14400 x i16]* %MemBank_A)
 
@@ -1389,7 +1389,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="81" bw="0" op_0_bw="0" op_1_bw="5" op_2_bw="5" op_3_bw="16" op_4_bw="6" op_5_bw="6" op_6_bw="6" op_7_bw="16">
+<Node id="85" bw="0" op_0_bw="0" op_1_bw="5" op_2_bw="5" op_3_bw="16" op_4_bw="6" op_5_bw="6" op_6_bw="6" op_7_bw="16">
 <![CDATA[
 :15  call fastcc void @up_sampling2d_fix16(i5 zeroext 14, i5 zeroext 14, [14400 x i16]* %MemBank_B, i6 zeroext 16, i6 zeroext 28, i6 zeroext 28, [14400 x i16]* %MemBank_A)
 
@@ -1407,7 +1407,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="82" bw="0" op_0_bw="0" op_1_bw="7" op_2_bw="6" op_3_bw="6" op_4_bw="16" op_5_bw="16">
+<Node id="86" bw="0" op_0_bw="0" op_1_bw="7" op_2_bw="6" op_3_bw="6" op_4_bw="16" op_5_bw="16">
 <![CDATA[
 :16  call fastcc void @padding2d_fix16(i7 zeroext 16, i6 zeroext 28, i6 zeroext 28, [14400 x i16]* %MemBank_A, [14400 x i16]* %MemBank_B)
 
@@ -1425,7 +1425,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="82" bw="0" op_0_bw="0" op_1_bw="7" op_2_bw="6" op_3_bw="6" op_4_bw="16" op_5_bw="16">
+<Node id="86" bw="0" op_0_bw="0" op_1_bw="7" op_2_bw="6" op_3_bw="6" op_4_bw="16" op_5_bw="16">
 <![CDATA[
 :16  call fastcc void @padding2d_fix16(i7 zeroext 16, i6 zeroext 28, i6 zeroext 28, [14400 x i16]* %MemBank_A, [14400 x i16]* %MemBank_B)
 
@@ -1443,9 +1443,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="83" bw="0" op_0_bw="0" op_1_bw="7" op_2_bw="6" op_3_bw="16" op_4_bw="6" op_5_bw="6" op_6_bw="16" op_7_bw="16" op_8_bw="16">
+<Node id="87" bw="0" op_0_bw="0" op_1_bw="7" op_2_bw="6" op_3_bw="16" op_4_bw="6" op_5_bw="6" op_6_bw="16" op_7_bw="16" op_8_bw="16">
 <![CDATA[
-:17  call fastcc void @depthwise_conv2d_fix.2(i7 30, i6 30, [14400 x i16]* %MemBank_B, i6 28, i6 28, [14400 x i16]* %MemBank_A, [16 x i16]* @SeparableConv2D_4_b_s, [144 x i16]* @SeparableConv2D_4_w_s)
+:17  call fastcc void @depthwise_conv2d_fix.2(i7 30, i6 30, [14400 x i16]* %MemBank_B, i6 28, i6 28, [14400 x i16]* %MemBank_A, [16 x i16]* @SeparableConv2D_4_b_s, [144 x i16]* @SeparableConv2D_4_w_1)
 
 ]]></Node>
 <StgValue><ssdm name=""/></StgValue>
@@ -1461,9 +1461,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="83" bw="0" op_0_bw="0" op_1_bw="7" op_2_bw="6" op_3_bw="16" op_4_bw="6" op_5_bw="6" op_6_bw="16" op_7_bw="16" op_8_bw="16">
+<Node id="87" bw="0" op_0_bw="0" op_1_bw="7" op_2_bw="6" op_3_bw="16" op_4_bw="6" op_5_bw="6" op_6_bw="16" op_7_bw="16" op_8_bw="16">
 <![CDATA[
-:17  call fastcc void @depthwise_conv2d_fix.2(i7 30, i6 30, [14400 x i16]* %MemBank_B, i6 28, i6 28, [14400 x i16]* %MemBank_A, [16 x i16]* @SeparableConv2D_4_b_s, [144 x i16]* @SeparableConv2D_4_w_s)
+:17  call fastcc void @depthwise_conv2d_fix.2(i7 30, i6 30, [14400 x i16]* %MemBank_B, i6 28, i6 28, [14400 x i16]* %MemBank_A, [16 x i16]* @SeparableConv2D_4_b_s, [144 x i16]* @SeparableConv2D_4_w_1)
 
 ]]></Node>
 <StgValue><ssdm name=""/></StgValue>
@@ -1479,7 +1479,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="84" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="16">
+<Node id="88" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="16">
 <![CDATA[
 :18  call fastcc void @pointwise_conv2d_fix.4([14400 x i16]* %MemBank_A, [14400 x i16]* %MemBank_B)
 
@@ -1497,7 +1497,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="84" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="16">
+<Node id="88" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="16">
 <![CDATA[
 :18  call fastcc void @pointwise_conv2d_fix.4([14400 x i16]* %MemBank_A, [14400 x i16]* %MemBank_B)
 
@@ -1512,7 +1512,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="85" bw="0" op_0_bw="0">
+<Node id="89" bw="0" op_0_bw="0">
 <![CDATA[
 :19  br label %4
 
@@ -1530,7 +1530,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="87" bw="10" op_0_bw="10" op_1_bw="0">
+<Node id="91" bw="10" op_0_bw="10" op_1_bw="0">
 <![CDATA[
 :0  %i1 = phi i10 [ 0, %3 ], [ %i_2, %5 ]
 
@@ -1545,12 +1545,12 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="88" bw="1" op_0_bw="10" op_1_bw="10">
+<Node id="92" bw="1" op_0_bw="10" op_1_bw="10">
 <![CDATA[
-:1  %tmp_46 = icmp eq i10 %i1, -240
+:1  %tmp_51 = icmp eq i10 %i1, -240
 
 ]]></Node>
-<StgValue><ssdm name="tmp_46"/></StgValue>
+<StgValue><ssdm name="tmp_51"/></StgValue>
 </operation>
 
 <operation id="122" st_id="40" stage="1" lat="1">
@@ -1560,12 +1560,12 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="89" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
+<Node id="93" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-:2  %empty_32 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 784, i64 784, i64 784)
+:2  %empty_30 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 784, i64 784, i64 784)
 
 ]]></Node>
-<StgValue><ssdm name="empty_32"/></StgValue>
+<StgValue><ssdm name="empty_30"/></StgValue>
 </operation>
 
 <operation id="123" st_id="40" stage="1" lat="1">
@@ -1575,7 +1575,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="90" bw="10" op_0_bw="10" op_1_bw="10">
+<Node id="94" bw="10" op_0_bw="10" op_1_bw="10">
 <![CDATA[
 :3  %i_2 = add i10 %i1, 1
 
@@ -1590,9 +1590,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="91" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
+<Node id="95" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
 <![CDATA[
-:4  br i1 %tmp_46, label %.preheader.preheader, label %5
+:4  br i1 %tmp_51, label %.preheader.preheader, label %5
 
 ]]></Node>
 <StgValue><ssdm name=""/></StgValue>
@@ -1602,29 +1602,29 @@
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="tmp_46" val="0"/>
+<or_exp><and_exp><literal name="tmp_51" val="0"/>
 </and_exp></or_exp>
 </condition>
 
-<Node id="93" bw="64" op_0_bw="10">
+<Node id="97" bw="64" op_0_bw="10">
 <![CDATA[
-:0  %tmp_47 = zext i10 %i1 to i64
+:0  %tmp_52 = zext i10 %i1 to i64
 
 ]]></Node>
-<StgValue><ssdm name="tmp_47"/></StgValue>
+<StgValue><ssdm name="tmp_52"/></StgValue>
 </operation>
 
 <operation id="126" st_id="40" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="tmp_46" val="0"/>
+<or_exp><and_exp><literal name="tmp_51" val="0"/>
 </and_exp></or_exp>
 </condition>
 
-<Node id="94" bw="14" op_0_bw="16" op_1_bw="64" op_2_bw="64">
+<Node id="98" bw="14" op_0_bw="16" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-:1  %MemBank_B_addr = getelementptr inbounds [14400 x i16]* %MemBank_B, i64 0, i64 %tmp_47
+:1  %MemBank_B_addr = getelementptr inbounds [14400 x i16]* %MemBank_B, i64 0, i64 %tmp_52
 
 ]]></Node>
 <StgValue><ssdm name="MemBank_B_addr"/></StgValue>
@@ -1634,11 +1634,11 @@
 <core>RAM</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="tmp_46" val="0"/>
+<or_exp><and_exp><literal name="tmp_51" val="0"/>
 </and_exp></or_exp>
 </condition>
 
-<Node id="95" bw="16" op_0_bw="14">
+<Node id="99" bw="16" op_0_bw="14">
 <![CDATA[
 :2  %MemBank_B_load = load i16* %MemBank_B_addr, align 2
 
@@ -1650,11 +1650,11 @@
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="tmp_46" val="1"/>
+<or_exp><and_exp><literal name="tmp_51" val="1"/>
 </and_exp></or_exp>
 </condition>
 
-<Node id="100" bw="0" op_0_bw="0">
+<Node id="104" bw="0" op_0_bw="0">
 <![CDATA[
 .preheader.preheader:0  br label %.preheader
 
@@ -1672,7 +1672,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="95" bw="16" op_0_bw="14">
+<Node id="99" bw="16" op_0_bw="14">
 <![CDATA[
 :2  %MemBank_B_load = load i16* %MemBank_B_addr, align 2
 
@@ -1687,9 +1687,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="96" bw="10" op_0_bw="16" op_1_bw="64" op_2_bw="64">
+<Node id="100" bw="10" op_0_bw="16" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-:3  %MemBank_Out_addr = getelementptr inbounds [784 x i16]* %MemBank_Out, i64 0, i64 %tmp_47
+:3  %MemBank_Out_addr = getelementptr inbounds [784 x i16]* %MemBank_Out, i64 0, i64 %tmp_52
 
 ]]></Node>
 <StgValue><ssdm name="MemBank_Out_addr"/></StgValue>
@@ -1702,7 +1702,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="97" bw="0" op_0_bw="16" op_1_bw="10">
+<Node id="101" bw="0" op_0_bw="16" op_1_bw="10">
 <![CDATA[
 :4  store i16 %MemBank_B_load, i16* %MemBank_Out_addr, align 2
 
@@ -1717,7 +1717,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="98" bw="0" op_0_bw="0">
+<Node id="102" bw="0" op_0_bw="0">
 <![CDATA[
 :5  br label %4
 
@@ -1735,7 +1735,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="102" bw="10" op_0_bw="10" op_1_bw="0">
+<Node id="106" bw="10" op_0_bw="10" op_1_bw="0">
 <![CDATA[
 .preheader:0  %i2 = phi i10 [ %i_3, %6 ], [ 0, %.preheader.preheader ]
 
@@ -1750,12 +1750,12 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="103" bw="1" op_0_bw="10" op_1_bw="10">
+<Node id="107" bw="1" op_0_bw="10" op_1_bw="10">
 <![CDATA[
-.preheader:1  %tmp_48 = icmp eq i10 %i2, -240
+.preheader:1  %tmp_53 = icmp eq i10 %i2, -240
 
 ]]></Node>
-<StgValue><ssdm name="tmp_48"/></StgValue>
+<StgValue><ssdm name="tmp_53"/></StgValue>
 </operation>
 
 <operation id="135" st_id="42" stage="1" lat="1">
@@ -1765,12 +1765,12 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="104" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
+<Node id="108" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-.preheader:2  %empty_33 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 784, i64 784, i64 784)
+.preheader:2  %empty_31 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 784, i64 784, i64 784)
 
 ]]></Node>
-<StgValue><ssdm name="empty_33"/></StgValue>
+<StgValue><ssdm name="empty_31"/></StgValue>
 </operation>
 
 <operation id="136" st_id="42" stage="1" lat="1">
@@ -1780,7 +1780,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="105" bw="10" op_0_bw="10" op_1_bw="10">
+<Node id="109" bw="10" op_0_bw="10" op_1_bw="10">
 <![CDATA[
 .preheader:3  %i_3 = add i10 %i2, 1
 
@@ -1795,9 +1795,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="106" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
+<Node id="110" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
 <![CDATA[
-.preheader:4  br i1 %tmp_48, label %7, label %6
+.preheader:4  br i1 %tmp_53, label %7, label %6
 
 ]]></Node>
 <StgValue><ssdm name=""/></StgValue>
@@ -1807,11 +1807,11 @@
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="tmp_48" val="0"/>
+<or_exp><and_exp><literal name="tmp_53" val="0"/>
 </and_exp></or_exp>
 </condition>
 
-<Node id="108" bw="64" op_0_bw="10">
+<Node id="112" bw="64" op_0_bw="10">
 <![CDATA[
 :0  %i2_cast1 = zext i10 %i2 to i64
 
@@ -1823,11 +1823,11 @@
 <core>Cmp</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="tmp_48" val="0"/>
+<or_exp><and_exp><literal name="tmp_53" val="0"/>
 </and_exp></or_exp>
 </condition>
 
-<Node id="111" bw="1" op_0_bw="10" op_1_bw="10">
+<Node id="115" bw="1" op_0_bw="10" op_1_bw="10">
 <![CDATA[
 :3  %tmp_user_V = icmp eq i10 %i2, 0
 
@@ -1839,11 +1839,11 @@
 <core>Cmp</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="tmp_48" val="0"/>
+<or_exp><and_exp><literal name="tmp_53" val="0"/>
 </and_exp></or_exp>
 </condition>
 
-<Node id="112" bw="1" op_0_bw="10" op_1_bw="10">
+<Node id="116" bw="1" op_0_bw="10" op_1_bw="10">
 <![CDATA[
 :4  %tmp_last_V = icmp eq i10 %i2, -241
 
@@ -1855,11 +1855,11 @@
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="tmp_48" val="0"/>
+<or_exp><and_exp><literal name="tmp_53" val="0"/>
 </and_exp></or_exp>
 </condition>
 
-<Node id="113" bw="10" op_0_bw="16" op_1_bw="64" op_2_bw="64">
+<Node id="117" bw="10" op_0_bw="16" op_1_bw="64" op_2_bw="64">
 <![CDATA[
 :5  %MemBank_Out_addr_1 = getelementptr inbounds [784 x i16]* %MemBank_Out, i64 0, i64 %i2_cast1
 
@@ -1871,11 +1871,11 @@
 <core>RAM</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="tmp_48" val="0"/>
+<or_exp><and_exp><literal name="tmp_53" val="0"/>
 </and_exp></or_exp>
 </condition>
 
-<Node id="114" bw="16" op_0_bw="10">
+<Node id="118" bw="16" op_0_bw="10">
 <![CDATA[
 :6  %tmp_data_V_1 = load i16* %MemBank_Out_addr_1, align 2
 
@@ -1890,11 +1890,11 @@
 <core>RAM</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="tmp_48" val="0"/>
+<or_exp><and_exp><literal name="tmp_53" val="0"/>
 </and_exp></or_exp>
 </condition>
 
-<Node id="114" bw="16" op_0_bw="10">
+<Node id="118" bw="16" op_0_bw="10">
 <![CDATA[
 :6  %tmp_data_V_1 = load i16* %MemBank_Out_addr_1, align 2
 
@@ -1906,11 +1906,11 @@
 <core>AXI4Stream</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="tmp_48" val="0"/>
+<or_exp><and_exp><literal name="tmp_53" val="0"/>
 </and_exp></or_exp>
 </condition>
 
-<Node id="115" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="2" op_3_bw="2" op_4_bw="1" op_5_bw="1" op_6_bw="1" op_7_bw="1" op_8_bw="16" op_9_bw="2" op_10_bw="2" op_11_bw="1" op_12_bw="1" op_13_bw="1" op_14_bw="1">
+<Node id="119" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="2" op_3_bw="2" op_4_bw="1" op_5_bw="1" op_6_bw="1" op_7_bw="1" op_8_bw="16" op_9_bw="2" op_10_bw="2" op_11_bw="1" op_12_bw="1" op_13_bw="1" op_14_bw="1">
 <![CDATA[
 :7  call void @_ssdm_op_Write.axis.volatile.i16P.i2P.i2P.i1P.i1P.i1P.i1P(i16* %output_data_V_data_V, i2* %output_data_V_keep_V, i2* %output_data_V_strb_V, i1* %output_data_V_user_V, i1* %output_data_V_last_V, i1* %output_data_V_id_V, i1* %output_data_V_dest_V, i16 %tmp_data_V_1, i2 0, i2 0, i1 %tmp_user_V, i1 %tmp_last_V, i1 false, i1 false)
 
@@ -1925,11 +1925,11 @@
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="tmp_48" val="0"/>
+<or_exp><and_exp><literal name="tmp_53" val="0"/>
 </and_exp></or_exp>
 </condition>
 
-<Node id="109" bw="32" op_0_bw="32" op_1_bw="0">
+<Node id="113" bw="32" op_0_bw="32" op_1_bw="0">
 <![CDATA[
 :1  %tmp = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str4)
 
@@ -1941,11 +1941,11 @@
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="tmp_48" val="0"/>
+<or_exp><and_exp><literal name="tmp_53" val="0"/>
 </and_exp></or_exp>
 </condition>
 
-<Node id="110" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
+<Node id="114" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
 :2  call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str2) nounwind
 
@@ -1957,11 +1957,11 @@
 <core>AXI4Stream</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="tmp_48" val="0"/>
+<or_exp><and_exp><literal name="tmp_53" val="0"/>
 </and_exp></or_exp>
 </condition>
 
-<Node id="115" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="2" op_3_bw="2" op_4_bw="1" op_5_bw="1" op_6_bw="1" op_7_bw="1" op_8_bw="16" op_9_bw="2" op_10_bw="2" op_11_bw="1" op_12_bw="1" op_13_bw="1" op_14_bw="1">
+<Node id="119" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="2" op_3_bw="2" op_4_bw="1" op_5_bw="1" op_6_bw="1" op_7_bw="1" op_8_bw="16" op_9_bw="2" op_10_bw="2" op_11_bw="1" op_12_bw="1" op_13_bw="1" op_14_bw="1">
 <![CDATA[
 :7  call void @_ssdm_op_Write.axis.volatile.i16P.i2P.i2P.i1P.i1P.i1P.i1P(i16* %output_data_V_data_V, i2* %output_data_V_keep_V, i2* %output_data_V_strb_V, i1* %output_data_V_user_V, i1* %output_data_V_last_V, i1* %output_data_V_id_V, i1* %output_data_V_dest_V, i16 %tmp_data_V_1, i2 0, i2 0, i1 %tmp_user_V, i1 %tmp_last_V, i1 false, i1 false)
 
@@ -1973,27 +1973,27 @@
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="tmp_48" val="0"/>
+<or_exp><and_exp><literal name="tmp_53" val="0"/>
 </and_exp></or_exp>
 </condition>
 
-<Node id="116" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32">
+<Node id="120" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32">
 <![CDATA[
-:8  %empty_34 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str4, i32 %tmp)
+:8  %empty_32 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str4, i32 %tmp)
 
 ]]></Node>
-<StgValue><ssdm name="empty_34"/></StgValue>
+<StgValue><ssdm name="empty_32"/></StgValue>
 </operation>
 
 <operation id="149" st_id="44" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="tmp_48" val="0"/>
+<or_exp><and_exp><literal name="tmp_53" val="0"/>
 </and_exp></or_exp>
 </condition>
 
-<Node id="117" bw="0" op_0_bw="0">
+<Node id="121" bw="0" op_0_bw="0">
 <![CDATA[
 :9  br label %.preheader
 
@@ -2011,7 +2011,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="119" bw="0" op_0_bw="32">
+<Node id="123" bw="0" op_0_bw="32">
 <![CDATA[
 :0  ret i32 0
 
@@ -2029,7 +2029,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="119" bw="0" op_0_bw="32">
+<Node id="123" bw="0" op_0_bw="32">
 <![CDATA[
 :0  ret i32 0
 

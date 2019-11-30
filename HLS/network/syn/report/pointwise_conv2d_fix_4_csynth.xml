@@ -48,10 +48,10 @@
 
 <AreaEstimates>
 <Resources>
-<DSP48E>1</DSP48E>
-<FF>155</FF>
-<LUT>349</LUT>
 <BRAM_18K>0</BRAM_18K>
+<DSP48E>1</DSP48E>
+<FF>185</FF>
+<LUT>353</LUT>
 </Resources>
 <AvailableResources>
 <BRAM_18K>280</BRAM_18K>
