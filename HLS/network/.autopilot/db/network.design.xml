@@ -10,34 +10,34 @@
 <ID>307</ID>
 </Instance>
 <Instance>
-<InstName>grp_depthwise_conv2d_fix_2_fu_325</InstName>
-<ModuleName>depthwise_conv2d_fix_2</ModuleName>
+<InstName>grp_max_pooling2d_fix16_fu_325</InstName>
+<ModuleName>max_pooling2d_fix16</ModuleName>
 <ID>325</ID>
 </Instance>
 <Instance>
-<InstName>grp_depthwise_conv2d_fix_1_fu_349</InstName>
+<InstName>grp_depthwise_conv2d_fix_2_fu_346</InstName>
+<ModuleName>depthwise_conv2d_fix_2</ModuleName>
+<ID>346</ID>
+</Instance>
+<Instance>
+<InstName>grp_depthwise_conv2d_fix_1_fu_370</InstName>
 <ModuleName>depthwise_conv2d_fix_1</ModuleName>
-<ID>349</ID>
+<ID>370</ID>
 </Instance>
 <Instance>
-<InstName>grp_pointwise_conv2d_fix_3_fu_373</InstName>
+<InstName>grp_pointwise_conv2d_fix_3_fu_394</InstName>
 <ModuleName>pointwise_conv2d_fix_3</ModuleName>
-<ID>373</ID>
+<ID>394</ID>
 </Instance>
 <Instance>
-<InstName>grp_pointwise_conv2d_fix_1_fu_383</InstName>
+<InstName>grp_pointwise_conv2d_fix_1_fu_404</InstName>
 <ModuleName>pointwise_conv2d_fix_1</ModuleName>
-<ID>383</ID>
+<ID>404</ID>
 </Instance>
 <Instance>
-<InstName>grp_pointwise_conv2d_fix_2_fu_393</InstName>
+<InstName>grp_pointwise_conv2d_fix_2_fu_414</InstName>
 <ModuleName>pointwise_conv2d_fix_2</ModuleName>
-<ID>393</ID>
-</Instance>
-<Instance>
-<InstName>grp_max_pooling2d_fix16_fu_403</InstName>
-<ModuleName>max_pooling2d_fix16</ModuleName>
-<ID>403</ID>
+<ID>414</ID>
 </Instance>
 <Instance>
 <InstName>grp_pointwise_conv2d_fix_4_fu_424</InstName>
@@ -756,13 +756,13 @@
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>10.00</TargetClockPeriod>
 <ClockUncertainty>1.25</ClockUncertainty>
-<EstimatedClockPeriod>8.203</EstimatedClockPeriod>
+<EstimatedClockPeriod>7.996</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>5617</Best-caseLatency>
+<Best-caseLatency>4441</Best-caseLatency>
 <Average-caseLatency>undef</Average-caseLatency>
-<Worst-caseLatency>44385</Worst-caseLatency>
-<PipelineInitiationInterval>5617 ~ 44385</PipelineInitiationInterval>
+<Worst-caseLatency>34977</Worst-caseLatency>
+<PipelineInitiationInterval>4441 ~ 34977</PipelineInitiationInterval>
 <PipelineType>none</PipelineType>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
@@ -774,14 +774,14 @@
 <max>16</max>
 </range>
 </TripCount>
-<Latency>5616 ~ 44384</Latency>
+<Latency>4440 ~ 34976</Latency>
 <IterationLatency>
 <range>
-<min>702</min>
-<max>2774</max>
+<min>555</min>
+<max>2186</max>
 </range>
 </IterationLatency>
-<PipelineDepth>702 ~ 2774</PipelineDepth>
+<PipelineDepth>555 ~ 2186</PipelineDepth>
 <Loop1.1>
 <Name>Loop 1.1</Name>
 <TripCount>
@@ -790,14 +790,14 @@
 <max>14</max>
 </range>
 </TripCount>
-<Latency>700 ~ 2772</Latency>
+<Latency>553 ~ 2184</Latency>
 <IterationLatency>
 <range>
-<min>100</min>
-<max>198</max>
+<min>79</min>
+<max>156</max>
 </range>
 </IterationLatency>
-<PipelineDepth>100 ~ 198</PipelineDepth>
+<PipelineDepth>79 ~ 156</PipelineDepth>
 <Loop1.1.1>
 <Name>Loop 1.1.1</Name>
 <TripCount>
@@ -806,23 +806,23 @@
 <max>14</max>
 </range>
 </TripCount>
-<Latency>98 ~ 196</Latency>
-<IterationLatency>14</IterationLatency>
-<PipelineDepth>14</PipelineDepth>
+<Latency>77 ~ 154</Latency>
+<IterationLatency>11</IterationLatency>
+<PipelineDepth>11</PipelineDepth>
 <Loop1.1.1.1>
 <Name>Loop 1.1.1.1</Name>
-<TripCount>2</TripCount>
-<Latency>12</Latency>
-<IterationLatency>6</IterationLatency>
-<PipelineDepth>6</PipelineDepth>
-<Loop1.1.1.1.1>
-<Name>Loop 1.1.1.1.1</Name>
 <TripCount>2</TripCount>
 <Latency>4</Latency>
 <IterationLatency>2</IterationLatency>
 <PipelineDepth>2</PipelineDepth>
-</Loop1.1.1.1.1>
 </Loop1.1.1.1>
+<Loop1.1.1.2>
+<Name>Loop 1.1.1.2</Name>
+<TripCount>2</TripCount>
+<Latency>4</Latency>
+<IterationLatency>2</IterationLatency>
+<PipelineDepth>2</PipelineDepth>
+</Loop1.1.1.2>
 </Loop1.1.1>
 </Loop1.1>
 </Loop1>
@@ -830,9 +830,9 @@
 </PerformanceEstimates>
 <AreaEstimates>
 <Resources>
-<DSP48E>1</DSP48E>
-<FF>149</FF>
-<LUT>397</LUT>
+<DSP48E>0</DSP48E>
+<FF>199</FF>
+<LUT>632</LUT>
 <BRAM_18K>0</BRAM_18K>
 </Resources>
 </AreaEstimates>
@@ -1032,17 +1032,6 @@
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>16</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>output_r_q0</name>
-<Object>output_r</Object>
-<Type>array</Type>
-<Scope></Scope>
-<IOProtocol>ap_memory</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
 <Bits>16</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>
@@ -2819,10 +2808,10 @@
 <EstimatedClockPeriod>8.585</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>708370</Best-caseLatency>
+<Best-caseLatency>706018</Best-caseLatency>
 <Average-caseLatency>undef</Average-caseLatency>
-<Worst-caseLatency>1925851</Worst-caseLatency>
-<PipelineInitiationInterval>708371 ~ 1925852</PipelineInitiationInterval>
+<Worst-caseLatency>1907035</Worst-caseLatency>
+<PipelineInitiationInterval>706019 ~ 1907036</PipelineInitiationInterval>
 <PipelineType>none</PipelineType>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
@@ -2852,9 +2841,9 @@
 <AreaEstimates>
 <Resources>
 <BRAM_18K>39</BRAM_18K>
-<DSP48E>9</DSP48E>
-<FF>2900</FF>
-<LUT>6656</LUT>
+<DSP48E>8</DSP48E>
+<FF>2950</FF>
+<LUT>6891</LUT>
 </Resources>
 </AreaEstimates>
 <InterfaceSummary>

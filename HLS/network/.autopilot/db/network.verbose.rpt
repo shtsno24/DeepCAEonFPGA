@@ -3,9 +3,9 @@
 ================================================================
 == Vivado HLS Report for 'network'
 ================================================================
-* Date:           Sat Nov 30 13:37:45 2019
+* Date:           Sun Dec  1 11:47:03 2019
 
-* Version:        2018.3.1 (Build 2489210 on Tue Mar 26 04:40:43 MDT 2019)
+* Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
 * Project:        HLS
 * Solution:       network
 * Product family: zynq
@@ -29,7 +29,7 @@
     |      Latency     |     Interval     | Pipeline|
     |   min  |   max   |   min  |   max   |   Type  |
     +--------+---------+--------+---------+---------+
-    |  708370|  1925851|  708370|  1925851|   none  |
+    |  706018|  1907035|  706018|  1907035|   none  |
     +--------+---------+--------+---------+---------+
 
     + Detail: 
@@ -39,12 +39,12 @@
         |              Instance             |         Module         |   min  |   max  |   min  |   max  |   Type  |
         +-----------------------------------+------------------------+--------+--------+--------+--------+---------+
         |grp_padding2d_fix16_fu_307         |padding2d_fix16         |     157|   28354|     157|   28354|   none  |
-        |grp_depthwise_conv2d_fix_2_fu_325  |depthwise_conv2d_fix_2  |  141601|  565409|  141601|  565409|   none  |
-        |grp_depthwise_conv2d_fix_1_fu_349  |depthwise_conv2d_fix_1  |   17769|   70801|   17769|   70801|   none  |
-        |grp_pointwise_conv2d_fix_3_fu_373  |pointwise_conv2d_fix_3  |  110257|  110257|  110257|  110257|   none  |
-        |grp_pointwise_conv2d_fix_1_fu_383  |pointwise_conv2d_fix_1  |  105305|  105305|  105305|  105305|   none  |
-        |grp_pointwise_conv2d_fix_2_fu_393  |pointwise_conv2d_fix_2  |   13857|   13857|   13857|   13857|   none  |
-        |grp_max_pooling2d_fix16_fu_403     |max_pooling2d_fix16     |    5617|   44385|    5617|   44385|   none  |
+        |grp_max_pooling2d_fix16_fu_325     |max_pooling2d_fix16     |    4441|   34977|    4441|   34977|   none  |
+        |grp_depthwise_conv2d_fix_2_fu_346  |depthwise_conv2d_fix_2  |  141601|  565409|  141601|  565409|   none  |
+        |grp_depthwise_conv2d_fix_1_fu_370  |depthwise_conv2d_fix_1  |   17769|   70801|   17769|   70801|   none  |
+        |grp_pointwise_conv2d_fix_3_fu_394  |pointwise_conv2d_fix_3  |  110257|  110257|  110257|  110257|   none  |
+        |grp_pointwise_conv2d_fix_1_fu_404  |pointwise_conv2d_fix_1  |  105305|  105305|  105305|  105305|   none  |
+        |grp_pointwise_conv2d_fix_2_fu_414  |pointwise_conv2d_fix_2  |   13857|   13857|   13857|   13857|   none  |
         |grp_pointwise_conv2d_fix_4_fu_424  |pointwise_conv2d_fix_4  |   52585|   52585|   52585|   52585|   none  |
         |grp_up_sampling2d_fix16_fu_432     |up_sampling2d_fix16     |    3377|   26017|    3377|   26017|   none  |
         |grp_pointwise_conv2d_fix_fu_453    |pointwise_conv2d_fix    |   51121|   51121|   51121|   51121|   none  |
@@ -73,16 +73,16 @@
 |DSP              |        -|      -|       -|      -|
 |Expression       |        -|      -|       0|    169|
 |FIFO             |        -|      -|       -|      -|
-|Instance         |        2|      9|    2562|   5188|
+|Instance         |        2|      8|    2612|   5423|
 |Memory           |       37|      -|     128|     12|
 |Multiplexer      |        -|      -|       -|   1287|
 |Register         |        -|      -|     210|      -|
 +-----------------+---------+-------+--------+-------+
-|Total            |       39|      9|    2900|   6656|
+|Total            |       39|      8|    2950|   6891|
 +-----------------+---------+-------+--------+-------+
 |Available        |      280|    220|  106400|  53200|
 +-----------------+---------+-------+--------+-------+
-|Utilization (%)  |       13|      4|       2|     12|
+|Utilization (%)  |       13|      3|       2|     12|
 +-----------------+---------+-------+--------+-------+
 
 + Detail: 
@@ -91,19 +91,19 @@
     |              Instance             |         Module         | BRAM_18K| DSP48E|  FF | LUT |
     +-----------------------------------+------------------------+---------+-------+-----+-----+
     |grp_depthwise_conv2d_fix_fu_463    |depthwise_conv2d_fix    |        0|      1|  136|  336|
-    |grp_depthwise_conv2d_fix_1_fu_349  |depthwise_conv2d_fix_1  |        0|      1|  187|  539|
-    |grp_depthwise_conv2d_fix_2_fu_325  |depthwise_conv2d_fix_2  |        0|      1|  217|  599|
-    |grp_max_pooling2d_fix16_fu_403     |max_pooling2d_fix16     |        0|      1|  149|  397|
+    |grp_depthwise_conv2d_fix_1_fu_370  |depthwise_conv2d_fix_1  |        0|      1|  187|  539|
+    |grp_depthwise_conv2d_fix_2_fu_346  |depthwise_conv2d_fix_2  |        0|      1|  217|  599|
+    |grp_max_pooling2d_fix16_fu_325     |max_pooling2d_fix16     |        0|      0|  199|  632|
     |network_AXILiteS_s_axi_U           |network_AXILiteS_s_axi  |        0|      0|   68|  104|
     |grp_padding2d_fix16_fu_307         |padding2d_fix16         |        0|      0|  452|  958|
     |grp_pointwise_conv2d_fix_fu_453    |pointwise_conv2d_fix    |        0|      1|  240|  291|
-    |grp_pointwise_conv2d_fix_1_fu_383  |pointwise_conv2d_fix_1  |        1|      1|  267|  417|
-    |grp_pointwise_conv2d_fix_2_fu_393  |pointwise_conv2d_fix_2  |        0|      1|  260|  435|
-    |grp_pointwise_conv2d_fix_3_fu_373  |pointwise_conv2d_fix_3  |        1|      1|  270|  420|
+    |grp_pointwise_conv2d_fix_1_fu_404  |pointwise_conv2d_fix_1  |        1|      1|  267|  417|
+    |grp_pointwise_conv2d_fix_2_fu_414  |pointwise_conv2d_fix_2  |        0|      1|  260|  435|
+    |grp_pointwise_conv2d_fix_3_fu_394  |pointwise_conv2d_fix_3  |        1|      1|  270|  420|
     |grp_pointwise_conv2d_fix_4_fu_424  |pointwise_conv2d_fix_4  |        0|      1|  185|  353|
     |grp_up_sampling2d_fix16_fu_432     |up_sampling2d_fix16     |        0|      0|  131|  339|
     +-----------------------------------+------------------------+---------+-------+-----+-----+
-    |Total                              |                        |        2|      9| 2562| 5188|
+    |Total                              |                        |        2|      8| 2612| 5423|
     +-----------------------------------+------------------------+---------+-------+-----+-----+
 
     * DSP48: 
@@ -190,23 +190,23 @@
     |ap_NS_fsm                                        |  197|         45|    1|         45|
     |ap_enable_reg_pp0_iter1                          |    9|          2|    1|          2|
     |ap_enable_reg_pp0_iter2                          |    9|          2|    1|          2|
-    |grp_depthwise_conv2d_fix_1_fu_349_bias_q0        |   15|          3|   16|         48|
-    |grp_depthwise_conv2d_fix_1_fu_349_input_height   |   15|          3|    6|         18|
-    |grp_depthwise_conv2d_fix_1_fu_349_input_width    |   15|          3|    6|         18|
-    |grp_depthwise_conv2d_fix_1_fu_349_kernel_0_q0    |   15|          3|   16|         48|
-    |grp_depthwise_conv2d_fix_1_fu_349_output_height  |   15|          3|    5|         15|
-    |grp_depthwise_conv2d_fix_1_fu_349_output_width   |   15|          3|    5|         15|
-    |grp_depthwise_conv2d_fix_2_fu_325_bias_q0        |   15|          3|   16|         48|
-    |grp_depthwise_conv2d_fix_2_fu_325_input_height   |   15|          3|    7|         21|
-    |grp_depthwise_conv2d_fix_2_fu_325_input_width    |   15|          3|    6|         18|
-    |grp_depthwise_conv2d_fix_2_fu_325_kernel_0_q0    |   15|          3|   16|         48|
-    |grp_depthwise_conv2d_fix_2_fu_325_output_height  |   15|          3|    6|         18|
-    |grp_depthwise_conv2d_fix_2_fu_325_output_width   |   15|          3|    6|         18|
-    |grp_max_pooling2d_fix16_fu_403_input_height      |   15|          3|    7|         21|
-    |grp_max_pooling2d_fix16_fu_403_input_width       |   15|          3|    6|         18|
-    |grp_max_pooling2d_fix16_fu_403_output_depth      |   15|          3|    6|         18|
-    |grp_max_pooling2d_fix16_fu_403_output_height     |   15|          3|    5|         15|
-    |grp_max_pooling2d_fix16_fu_403_output_width      |   15|          3|    5|         15|
+    |grp_depthwise_conv2d_fix_1_fu_370_bias_q0        |   15|          3|   16|         48|
+    |grp_depthwise_conv2d_fix_1_fu_370_input_height   |   15|          3|    6|         18|
+    |grp_depthwise_conv2d_fix_1_fu_370_input_width    |   15|          3|    6|         18|
+    |grp_depthwise_conv2d_fix_1_fu_370_kernel_0_q0    |   15|          3|   16|         48|
+    |grp_depthwise_conv2d_fix_1_fu_370_output_height  |   15|          3|    5|         15|
+    |grp_depthwise_conv2d_fix_1_fu_370_output_width   |   15|          3|    5|         15|
+    |grp_depthwise_conv2d_fix_2_fu_346_bias_q0        |   15|          3|   16|         48|
+    |grp_depthwise_conv2d_fix_2_fu_346_input_height   |   15|          3|    7|         21|
+    |grp_depthwise_conv2d_fix_2_fu_346_input_width    |   15|          3|    6|         18|
+    |grp_depthwise_conv2d_fix_2_fu_346_kernel_0_q0    |   15|          3|   16|         48|
+    |grp_depthwise_conv2d_fix_2_fu_346_output_height  |   15|          3|    6|         18|
+    |grp_depthwise_conv2d_fix_2_fu_346_output_width   |   15|          3|    6|         18|
+    |grp_max_pooling2d_fix16_fu_325_input_height      |   15|          3|    7|         21|
+    |grp_max_pooling2d_fix16_fu_325_input_width       |   15|          3|    6|         18|
+    |grp_max_pooling2d_fix16_fu_325_output_depth      |   15|          3|    6|         18|
+    |grp_max_pooling2d_fix16_fu_325_output_height     |   15|          3|    5|         15|
+    |grp_max_pooling2d_fix16_fu_325_output_width      |   15|          3|    5|         15|
     |grp_padding2d_fix16_fu_307_input_depth           |   21|          4|    7|         28|
     |grp_padding2d_fix16_fu_307_input_height          |   21|          4|    6|         24|
     |grp_padding2d_fix16_fu_307_input_width           |   21|          4|    6|         24|
@@ -245,14 +245,14 @@
     |ap_enable_reg_pp0_iter0                         |   1|   0|    1|          0|
     |ap_enable_reg_pp0_iter1                         |   1|   0|    1|          0|
     |ap_enable_reg_pp0_iter2                         |   1|   0|    1|          0|
-    |grp_depthwise_conv2d_fix_1_fu_349_ap_start_reg  |   1|   0|    1|          0|
-    |grp_depthwise_conv2d_fix_2_fu_325_ap_start_reg  |   1|   0|    1|          0|
+    |grp_depthwise_conv2d_fix_1_fu_370_ap_start_reg  |   1|   0|    1|          0|
+    |grp_depthwise_conv2d_fix_2_fu_346_ap_start_reg  |   1|   0|    1|          0|
     |grp_depthwise_conv2d_fix_fu_463_ap_start_reg    |   1|   0|    1|          0|
-    |grp_max_pooling2d_fix16_fu_403_ap_start_reg     |   1|   0|    1|          0|
+    |grp_max_pooling2d_fix16_fu_325_ap_start_reg     |   1|   0|    1|          0|
     |grp_padding2d_fix16_fu_307_ap_start_reg         |   1|   0|    1|          0|
-    |grp_pointwise_conv2d_fix_1_fu_383_ap_start_reg  |   1|   0|    1|          0|
-    |grp_pointwise_conv2d_fix_2_fu_393_ap_start_reg  |   1|   0|    1|          0|
-    |grp_pointwise_conv2d_fix_3_fu_373_ap_start_reg  |   1|   0|    1|          0|
+    |grp_pointwise_conv2d_fix_1_fu_404_ap_start_reg  |   1|   0|    1|          0|
+    |grp_pointwise_conv2d_fix_2_fu_414_ap_start_reg  |   1|   0|    1|          0|
+    |grp_pointwise_conv2d_fix_3_fu_394_ap_start_reg  |   1|   0|    1|          0|
     |grp_pointwise_conv2d_fix_4_fu_424_ap_start_reg  |   1|   0|    1|          0|
     |grp_pointwise_conv2d_fix_fu_453_ap_start_reg    |   1|   0|    1|          0|
     |grp_up_sampling2d_fix16_fu_432_ap_start_reg     |   1|   0|    1|          0|
@@ -499,9 +499,9 @@ ST_1 : Operation 62 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopM
 ST_1 : Operation 63 [1/1] (3.25ns)   --->   "%MemBank_A = alloca [14400 x i16], align 16" [mnist_AXI_Stream.cpp:32]   --->   Operation 63 'alloca' 'MemBank_A' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 784> <RAM>
 ST_1 : Operation 64 [1/1] (3.25ns)   --->   "%MemBank_B = alloca [14400 x i16], align 16" [mnist_AXI_Stream.cpp:32]   --->   Operation 64 'alloca' 'MemBank_B' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 784> <RAM>
 ST_1 : Operation 65 [1/1] (3.25ns)   --->   "%MemBank_Out = alloca [784 x i16], align 16" [mnist_AXI_Stream.cpp:32]   --->   Operation 65 'alloca' 'MemBank_Out' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 784> <RAM>
-ST_1 : Operation 66 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %input_data_V_data_V, i2* %input_data_V_keep_V, i2* %input_data_V_strb_V, i1* %input_data_V_user_V, i1* %input_data_V_last_V, i1* %input_data_V_id_V, i1* %input_data_V_dest_V, [5 x i8]* @p_str, i32 1, i32 1, [5 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2) nounwind" [mnist_AXI_Stream.cpp:28]   --->   Operation 66 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 67 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %output_data_V_data_V, i2* %output_data_V_keep_V, i2* %output_data_V_strb_V, i1* %output_data_V_user_V, i1* %output_data_V_last_V, i1* %output_data_V_id_V, i1* %output_data_V_dest_V, [5 x i8]* @p_str, i32 1, i32 1, [5 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2) nounwind" [mnist_AXI_Stream.cpp:29]   --->   Operation 67 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 68 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 0, [10 x i8]* @p_str3, i32 1, i32 1, [1 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2) nounwind" [mnist_AXI_Stream.cpp:30]   --->   Operation 68 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 66 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %input_data_V_data_V, i2* %input_data_V_keep_V, i2* %input_data_V_strb_V, i1* %input_data_V_user_V, i1* %input_data_V_last_V, i1* %input_data_V_id_V, i1* %input_data_V_dest_V, [5 x i8]* @p_str2, i32 1, i32 1, [5 x i8]* @p_str13, i32 0, i32 0, [1 x i8]* @p_str24, [1 x i8]* @p_str24, [1 x i8]* @p_str24, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str24, [1 x i8]* @p_str24) nounwind" [mnist_AXI_Stream.cpp:28]   --->   Operation 66 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 67 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %output_data_V_data_V, i2* %output_data_V_keep_V, i2* %output_data_V_strb_V, i1* %output_data_V_user_V, i1* %output_data_V_last_V, i1* %output_data_V_id_V, i1* %output_data_V_dest_V, [5 x i8]* @p_str2, i32 1, i32 1, [5 x i8]* @p_str13, i32 0, i32 0, [1 x i8]* @p_str24, [1 x i8]* @p_str24, [1 x i8]* @p_str24, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str24, [1 x i8]* @p_str24) nounwind" [mnist_AXI_Stream.cpp:29]   --->   Operation 67 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 68 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 0, [10 x i8]* @p_str3, i32 1, i32 1, [1 x i8]* @p_str24, i32 0, i32 0, [1 x i8]* @p_str24, [1 x i8]* @p_str24, [1 x i8]* @p_str24, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str24, [1 x i8]* @p_str24) nounwind" [mnist_AXI_Stream.cpp:30]   --->   Operation 68 'specinterface' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 69 [1/1] (1.76ns)   --->   "br label %1" [mnist_AXI_Stream.cpp:41]   --->   Operation 69 'br' <Predicate = true> <Delay = 1.76>
 
 State 2 <SV = 1> <Delay = 8.57>
@@ -665,7 +665,7 @@ ST_43 : Operation 144 [2/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.vo
 
 State 44 <SV = 42> <Delay = 0.00>
 ST_44 : Operation 145 [1/1] (0.00ns)   --->   "%tmp = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str4)" [mnist_AXI_Stream.cpp:137]   --->   Operation 145 'specregionbegin' 'tmp' <Predicate = (!tmp_53)> <Delay = 0.00>
-ST_44 : Operation 146 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str2) nounwind" [mnist_AXI_Stream.cpp:138]   --->   Operation 146 'specpipeline' <Predicate = (!tmp_53)> <Delay = 0.00>
+ST_44 : Operation 146 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str24) nounwind" [mnist_AXI_Stream.cpp:138]   --->   Operation 146 'specpipeline' <Predicate = (!tmp_53)> <Delay = 0.00>
 ST_44 : Operation 147 [1/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i16P.i2P.i2P.i1P.i1P.i1P.i1P(i16* %output_data_V_data_V, i2* %output_data_V_keep_V, i2* %output_data_V_strb_V, i1* %output_data_V_user_V, i1* %output_data_V_last_V, i1* %output_data_V_id_V, i1* %output_data_V_dest_V, i16 %tmp_data_V_1, i2 0, i2 0, i1 %tmp_user_V, i1 %tmp_last_V, i1 false, i1 false)" [mnist_AXI_Stream.cpp:152]   --->   Operation 147 'write' <Predicate = (!tmp_53)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
 ST_44 : Operation 148 [1/1] (0.00ns)   --->   "%empty_32 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str4, i32 %tmp)" [mnist_AXI_Stream.cpp:153]   --->   Operation 148 'specregionend' 'empty_32' <Predicate = (!tmp_53)> <Delay = 0.00>
 ST_44 : Operation 149 [1/1] (0.00ns)   --->   "br label %.preheader" [mnist_AXI_Stream.cpp:137]   --->   Operation 149 'br' <Predicate = (!tmp_53)> <Delay = 0.00>
@@ -1178,7 +1178,7 @@ StgValue_151       (ret              ) [ 000000000000000000000000000000000000000
 <pin id="77" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str"/></StgValue>
+<StgValue><ssdm name="p_str2"/></StgValue>
 </bind>
 </comp>
 
@@ -1196,7 +1196,7 @@ StgValue_151       (ret              ) [ 000000000000000000000000000000000000000
 <pin id="81" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str1"/></StgValue>
+<StgValue><ssdm name="p_str13"/></StgValue>
 </bind>
 </comp>
 
@@ -1205,7 +1205,7 @@ StgValue_151       (ret              ) [ 000000000000000000000000000000000000000
 <pin id="83" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str2"/></StgValue>
+<StgValue><ssdm name="p_str24"/></StgValue>
 </bind>
 </comp>
 
@@ -1851,18 +1851,36 @@ StgValue_151       (ret              ) [ 000000000000000000000000000000000000000
 </bind>
 </comp>
 
-<comp id="325" class="1004" name="grp_depthwise_conv2d_fix_2_fu_325">
+<comp id="325" class="1004" name="grp_max_pooling2d_fix16_fu_325">
 <pin_list>
 <pin id="326" dir="0" index="0" bw="0" slack="0"/>
 <pin id="327" dir="0" index="1" bw="6" slack="0"/>
 <pin id="328" dir="0" index="2" bw="6" slack="0"/>
 <pin id="329" dir="0" index="3" bw="16" slack="2147483647"/>
 <pin id="330" dir="0" index="4" bw="6" slack="0"/>
-<pin id="331" dir="0" index="5" bw="6" slack="0"/>
-<pin id="332" dir="0" index="6" bw="16" slack="2147483647"/>
-<pin id="333" dir="0" index="7" bw="16" slack="0"/>
-<pin id="334" dir="0" index="8" bw="16" slack="0"/>
-<pin id="335" dir="1" index="9" bw="0" slack="2147483647"/>
+<pin id="331" dir="0" index="5" bw="5" slack="0"/>
+<pin id="332" dir="0" index="6" bw="5" slack="0"/>
+<pin id="333" dir="0" index="7" bw="16" slack="2147483647"/>
+<pin id="334" dir="1" index="8" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="StgValue_87/8 StgValue_95/16 "/>
+</bind>
+</comp>
+
+<comp id="346" class="1004" name="grp_depthwise_conv2d_fix_2_fu_346">
+<pin_list>
+<pin id="347" dir="0" index="0" bw="0" slack="0"/>
+<pin id="348" dir="0" index="1" bw="6" slack="0"/>
+<pin id="349" dir="0" index="2" bw="6" slack="0"/>
+<pin id="350" dir="0" index="3" bw="16" slack="2147483647"/>
+<pin id="351" dir="0" index="4" bw="6" slack="0"/>
+<pin id="352" dir="0" index="5" bw="6" slack="0"/>
+<pin id="353" dir="0" index="6" bw="16" slack="2147483647"/>
+<pin id="354" dir="0" index="7" bw="16" slack="0"/>
+<pin id="355" dir="0" index="8" bw="16" slack="0"/>
+<pin id="356" dir="1" index="9" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
@@ -1870,18 +1888,18 @@ StgValue_151       (ret              ) [ 000000000000000000000000000000000000000
 </bind>
 </comp>
 
-<comp id="349" class="1004" name="grp_depthwise_conv2d_fix_1_fu_349">
+<comp id="370" class="1004" name="grp_depthwise_conv2d_fix_1_fu_370">
 <pin_list>
-<pin id="350" dir="0" index="0" bw="0" slack="0"/>
-<pin id="351" dir="0" index="1" bw="6" slack="0"/>
-<pin id="352" dir="0" index="2" bw="6" slack="0"/>
-<pin id="353" dir="0" index="3" bw="16" slack="2147483647"/>
-<pin id="354" dir="0" index="4" bw="5" slack="0"/>
-<pin id="355" dir="0" index="5" bw="5" slack="0"/>
-<pin id="356" dir="0" index="6" bw="16" slack="2147483647"/>
-<pin id="357" dir="0" index="7" bw="16" slack="0"/>
-<pin id="358" dir="0" index="8" bw="16" slack="0"/>
-<pin id="359" dir="1" index="9" bw="0" slack="2147483647"/>
+<pin id="371" dir="0" index="0" bw="0" slack="0"/>
+<pin id="372" dir="0" index="1" bw="6" slack="0"/>
+<pin id="373" dir="0" index="2" bw="6" slack="0"/>
+<pin id="374" dir="0" index="3" bw="16" slack="2147483647"/>
+<pin id="375" dir="0" index="4" bw="5" slack="0"/>
+<pin id="376" dir="0" index="5" bw="5" slack="0"/>
+<pin id="377" dir="0" index="6" bw="16" slack="2147483647"/>
+<pin id="378" dir="0" index="7" bw="16" slack="0"/>
+<pin id="379" dir="0" index="8" bw="16" slack="0"/>
+<pin id="380" dir="1" index="9" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
@@ -1889,14 +1907,14 @@ StgValue_151       (ret              ) [ 000000000000000000000000000000000000000
 </bind>
 </comp>
 
-<comp id="373" class="1004" name="grp_pointwise_conv2d_fix_3_fu_373">
+<comp id="394" class="1004" name="grp_pointwise_conv2d_fix_3_fu_394">
 <pin_list>
-<pin id="374" dir="0" index="0" bw="0" slack="0"/>
-<pin id="375" dir="0" index="1" bw="16" slack="2147483647"/>
-<pin id="376" dir="0" index="2" bw="16" slack="2147483647"/>
-<pin id="377" dir="0" index="3" bw="14" slack="0"/>
-<pin id="378" dir="0" index="4" bw="15" slack="0"/>
-<pin id="379" dir="1" index="5" bw="0" slack="2147483647"/>
+<pin id="395" dir="0" index="0" bw="0" slack="0"/>
+<pin id="396" dir="0" index="1" bw="16" slack="2147483647"/>
+<pin id="397" dir="0" index="2" bw="16" slack="2147483647"/>
+<pin id="398" dir="0" index="3" bw="14" slack="0"/>
+<pin id="399" dir="0" index="4" bw="15" slack="0"/>
+<pin id="400" dir="1" index="5" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
@@ -1904,14 +1922,14 @@ StgValue_151       (ret              ) [ 000000000000000000000000000000000000000
 </bind>
 </comp>
 
-<comp id="383" class="1004" name="grp_pointwise_conv2d_fix_1_fu_383">
+<comp id="404" class="1004" name="grp_pointwise_conv2d_fix_1_fu_404">
 <pin_list>
-<pin id="384" dir="0" index="0" bw="0" slack="0"/>
-<pin id="385" dir="0" index="1" bw="16" slack="2147483647"/>
-<pin id="386" dir="0" index="2" bw="16" slack="2147483647"/>
-<pin id="387" dir="0" index="3" bw="13" slack="0"/>
-<pin id="388" dir="0" index="4" bw="15" slack="0"/>
-<pin id="389" dir="1" index="5" bw="0" slack="2147483647"/>
+<pin id="405" dir="0" index="0" bw="0" slack="0"/>
+<pin id="406" dir="0" index="1" bw="16" slack="2147483647"/>
+<pin id="407" dir="0" index="2" bw="16" slack="2147483647"/>
+<pin id="408" dir="0" index="3" bw="13" slack="0"/>
+<pin id="409" dir="0" index="4" bw="15" slack="0"/>
+<pin id="410" dir="1" index="5" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
@@ -1919,36 +1937,18 @@ StgValue_151       (ret              ) [ 000000000000000000000000000000000000000
 </bind>
 </comp>
 
-<comp id="393" class="1004" name="grp_pointwise_conv2d_fix_2_fu_393">
+<comp id="414" class="1004" name="grp_pointwise_conv2d_fix_2_fu_414">
 <pin_list>
-<pin id="394" dir="0" index="0" bw="0" slack="0"/>
-<pin id="395" dir="0" index="1" bw="16" slack="2147483647"/>
-<pin id="396" dir="0" index="2" bw="16" slack="2147483647"/>
-<pin id="397" dir="0" index="3" bw="13" slack="0"/>
-<pin id="398" dir="0" index="4" bw="15" slack="0"/>
-<pin id="399" dir="1" index="5" bw="0" slack="2147483647"/>
+<pin id="415" dir="0" index="0" bw="0" slack="0"/>
+<pin id="416" dir="0" index="1" bw="16" slack="2147483647"/>
+<pin id="417" dir="0" index="2" bw="16" slack="2147483647"/>
+<pin id="418" dir="0" index="3" bw="13" slack="0"/>
+<pin id="419" dir="0" index="4" bw="15" slack="0"/>
+<pin id="420" dir="1" index="5" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
 <opset="StgValue_101/22 "/>
-</bind>
-</comp>
-
-<comp id="403" class="1004" name="grp_max_pooling2d_fix16_fu_403">
-<pin_list>
-<pin id="404" dir="0" index="0" bw="0" slack="0"/>
-<pin id="405" dir="0" index="1" bw="6" slack="0"/>
-<pin id="406" dir="0" index="2" bw="6" slack="0"/>
-<pin id="407" dir="0" index="3" bw="16" slack="2147483647"/>
-<pin id="408" dir="0" index="4" bw="6" slack="0"/>
-<pin id="409" dir="0" index="5" bw="5" slack="0"/>
-<pin id="410" dir="0" index="6" bw="5" slack="0"/>
-<pin id="411" dir="0" index="7" bw="16" slack="2147483647"/>
-<pin id="412" dir="1" index="8" bw="0" slack="2147483647"/>
-</pin_list>
-<bind>
-<opcode="call(48) " fcode="call"/>
-<opset="StgValue_87/8 StgValue_95/16 "/>
 </bind>
 </comp>
 
@@ -2364,97 +2364,97 @@ StgValue_151       (ret              ) [ 000000000000000000000000000000000000000
 
 <net id="324"><net_src comp="134" pin="0"/><net_sink comp="307" pin=3"/></net>
 
-<net id="336"><net_src comp="122" pin="0"/><net_sink comp="325" pin=0"/></net>
+<net id="335"><net_src comp="110" pin="0"/><net_sink comp="325" pin=0"/></net>
 
-<net id="337"><net_src comp="118" pin="0"/><net_sink comp="325" pin=1"/></net>
+<net id="336"><net_src comp="112" pin="0"/><net_sink comp="325" pin=1"/></net>
 
-<net id="338"><net_src comp="114" pin="0"/><net_sink comp="325" pin=2"/></net>
+<net id="337"><net_src comp="104" pin="0"/><net_sink comp="325" pin=2"/></net>
 
-<net id="339"><net_src comp="120" pin="0"/><net_sink comp="325" pin=4"/></net>
+<net id="338"><net_src comp="114" pin="0"/><net_sink comp="325" pin=4"/></net>
 
-<net id="340"><net_src comp="120" pin="0"/><net_sink comp="325" pin=5"/></net>
+<net id="339"><net_src comp="116" pin="0"/><net_sink comp="325" pin=5"/></net>
 
-<net id="341"><net_src comp="34" pin="0"/><net_sink comp="325" pin=7"/></net>
+<net id="340"><net_src comp="116" pin="0"/><net_sink comp="325" pin=6"/></net>
 
-<net id="342"><net_src comp="36" pin="0"/><net_sink comp="325" pin=8"/></net>
+<net id="341"><net_src comp="126" pin="0"/><net_sink comp="325" pin=1"/></net>
 
-<net id="343"><net_src comp="146" pin="0"/><net_sink comp="325" pin=1"/></net>
+<net id="342"><net_src comp="120" pin="0"/><net_sink comp="325" pin=2"/></net>
 
-<net id="344"><net_src comp="148" pin="0"/><net_sink comp="325" pin=2"/></net>
+<net id="343"><net_src comp="128" pin="0"/><net_sink comp="325" pin=4"/></net>
 
-<net id="345"><net_src comp="104" pin="0"/><net_sink comp="325" pin=4"/></net>
+<net id="344"><net_src comp="130" pin="0"/><net_sink comp="325" pin=5"/></net>
 
-<net id="346"><net_src comp="104" pin="0"/><net_sink comp="325" pin=5"/></net>
+<net id="345"><net_src comp="130" pin="0"/><net_sink comp="325" pin=6"/></net>
 
-<net id="347"><net_src comp="58" pin="0"/><net_sink comp="325" pin=7"/></net>
+<net id="357"><net_src comp="122" pin="0"/><net_sink comp="346" pin=0"/></net>
 
-<net id="348"><net_src comp="60" pin="0"/><net_sink comp="325" pin=8"/></net>
+<net id="358"><net_src comp="118" pin="0"/><net_sink comp="346" pin=1"/></net>
 
-<net id="360"><net_src comp="136" pin="0"/><net_sink comp="349" pin=0"/></net>
+<net id="359"><net_src comp="114" pin="0"/><net_sink comp="346" pin=2"/></net>
 
-<net id="361"><net_src comp="138" pin="0"/><net_sink comp="349" pin=1"/></net>
+<net id="360"><net_src comp="120" pin="0"/><net_sink comp="346" pin=4"/></net>
 
-<net id="362"><net_src comp="138" pin="0"/><net_sink comp="349" pin=2"/></net>
+<net id="361"><net_src comp="120" pin="0"/><net_sink comp="346" pin=5"/></net>
 
-<net id="363"><net_src comp="130" pin="0"/><net_sink comp="349" pin=4"/></net>
+<net id="362"><net_src comp="34" pin="0"/><net_sink comp="346" pin=7"/></net>
 
-<net id="364"><net_src comp="130" pin="0"/><net_sink comp="349" pin=5"/></net>
+<net id="363"><net_src comp="36" pin="0"/><net_sink comp="346" pin=8"/></net>
 
-<net id="365"><net_src comp="42" pin="0"/><net_sink comp="349" pin=7"/></net>
+<net id="364"><net_src comp="146" pin="0"/><net_sink comp="346" pin=1"/></net>
 
-<net id="366"><net_src comp="44" pin="0"/><net_sink comp="349" pin=8"/></net>
+<net id="365"><net_src comp="148" pin="0"/><net_sink comp="346" pin=2"/></net>
 
-<net id="367"><net_src comp="114" pin="0"/><net_sink comp="349" pin=1"/></net>
+<net id="366"><net_src comp="104" pin="0"/><net_sink comp="346" pin=4"/></net>
 
-<net id="368"><net_src comp="114" pin="0"/><net_sink comp="349" pin=2"/></net>
+<net id="367"><net_src comp="104" pin="0"/><net_sink comp="346" pin=5"/></net>
 
-<net id="369"><net_src comp="116" pin="0"/><net_sink comp="349" pin=4"/></net>
+<net id="368"><net_src comp="58" pin="0"/><net_sink comp="346" pin=7"/></net>
 
-<net id="370"><net_src comp="116" pin="0"/><net_sink comp="349" pin=5"/></net>
+<net id="369"><net_src comp="60" pin="0"/><net_sink comp="346" pin=8"/></net>
 
-<net id="371"><net_src comp="50" pin="0"/><net_sink comp="349" pin=7"/></net>
+<net id="381"><net_src comp="136" pin="0"/><net_sink comp="370" pin=0"/></net>
 
-<net id="372"><net_src comp="52" pin="0"/><net_sink comp="349" pin=8"/></net>
+<net id="382"><net_src comp="138" pin="0"/><net_sink comp="370" pin=1"/></net>
 
-<net id="380"><net_src comp="144" pin="0"/><net_sink comp="373" pin=0"/></net>
+<net id="383"><net_src comp="138" pin="0"/><net_sink comp="370" pin=2"/></net>
 
-<net id="381"><net_src comp="54" pin="0"/><net_sink comp="373" pin=3"/></net>
+<net id="384"><net_src comp="130" pin="0"/><net_sink comp="370" pin=4"/></net>
 
-<net id="382"><net_src comp="56" pin="0"/><net_sink comp="373" pin=4"/></net>
+<net id="385"><net_src comp="130" pin="0"/><net_sink comp="370" pin=5"/></net>
 
-<net id="390"><net_src comp="124" pin="0"/><net_sink comp="383" pin=0"/></net>
+<net id="386"><net_src comp="42" pin="0"/><net_sink comp="370" pin=7"/></net>
 
-<net id="391"><net_src comp="38" pin="0"/><net_sink comp="383" pin=3"/></net>
+<net id="387"><net_src comp="44" pin="0"/><net_sink comp="370" pin=8"/></net>
 
-<net id="392"><net_src comp="40" pin="0"/><net_sink comp="383" pin=4"/></net>
+<net id="388"><net_src comp="114" pin="0"/><net_sink comp="370" pin=1"/></net>
 
-<net id="400"><net_src comp="140" pin="0"/><net_sink comp="393" pin=0"/></net>
+<net id="389"><net_src comp="114" pin="0"/><net_sink comp="370" pin=2"/></net>
 
-<net id="401"><net_src comp="46" pin="0"/><net_sink comp="393" pin=3"/></net>
+<net id="390"><net_src comp="116" pin="0"/><net_sink comp="370" pin=4"/></net>
 
-<net id="402"><net_src comp="48" pin="0"/><net_sink comp="393" pin=4"/></net>
+<net id="391"><net_src comp="116" pin="0"/><net_sink comp="370" pin=5"/></net>
 
-<net id="413"><net_src comp="110" pin="0"/><net_sink comp="403" pin=0"/></net>
+<net id="392"><net_src comp="50" pin="0"/><net_sink comp="370" pin=7"/></net>
 
-<net id="414"><net_src comp="112" pin="0"/><net_sink comp="403" pin=1"/></net>
+<net id="393"><net_src comp="52" pin="0"/><net_sink comp="370" pin=8"/></net>
 
-<net id="415"><net_src comp="104" pin="0"/><net_sink comp="403" pin=2"/></net>
+<net id="401"><net_src comp="144" pin="0"/><net_sink comp="394" pin=0"/></net>
 
-<net id="416"><net_src comp="114" pin="0"/><net_sink comp="403" pin=4"/></net>
+<net id="402"><net_src comp="54" pin="0"/><net_sink comp="394" pin=3"/></net>
 
-<net id="417"><net_src comp="116" pin="0"/><net_sink comp="403" pin=5"/></net>
+<net id="403"><net_src comp="56" pin="0"/><net_sink comp="394" pin=4"/></net>
 
-<net id="418"><net_src comp="116" pin="0"/><net_sink comp="403" pin=6"/></net>
+<net id="411"><net_src comp="124" pin="0"/><net_sink comp="404" pin=0"/></net>
 
-<net id="419"><net_src comp="126" pin="0"/><net_sink comp="403" pin=1"/></net>
+<net id="412"><net_src comp="38" pin="0"/><net_sink comp="404" pin=3"/></net>
 
-<net id="420"><net_src comp="120" pin="0"/><net_sink comp="403" pin=2"/></net>
+<net id="413"><net_src comp="40" pin="0"/><net_sink comp="404" pin=4"/></net>
 
-<net id="421"><net_src comp="128" pin="0"/><net_sink comp="403" pin=4"/></net>
+<net id="421"><net_src comp="140" pin="0"/><net_sink comp="414" pin=0"/></net>
 
-<net id="422"><net_src comp="130" pin="0"/><net_sink comp="403" pin=5"/></net>
+<net id="422"><net_src comp="46" pin="0"/><net_sink comp="414" pin=3"/></net>
 
-<net id="423"><net_src comp="130" pin="0"/><net_sink comp="403" pin=6"/></net>
+<net id="423"><net_src comp="48" pin="0"/><net_sink comp="414" pin=4"/></net>
 
 <net id="430"><net_src comp="150" pin="0"/><net_sink comp="424" pin=0"/></net>
 
@@ -2701,12 +2701,12 @@ StgValue_151       (ret              ) [ 000000000000000000000000000000000000000
 | Operation|          Functional Unit          |  DSP48E |  Delay  |    FF   |   LUT   |
 |----------|-----------------------------------|---------|---------|---------|---------|
 |          |     grp_padding2d_fix16_fu_307    |    0    |  8.9365 |   711   |   764   |
-|          | grp_depthwise_conv2d_fix_2_fu_325 |    1    | 15.9667 |   266   |   535   |
-|          | grp_depthwise_conv2d_fix_1_fu_349 |    1    | 15.9667 |   230   |   473   |
-|          | grp_pointwise_conv2d_fix_3_fu_373 |    1    |  8.845  |   300   |   327   |
-|          | grp_pointwise_conv2d_fix_1_fu_383 |    1    |  8.845  |   299   |   326   |
-|   call   | grp_pointwise_conv2d_fix_2_fu_393 |    1    |  8.845  |   271   |   333   |
-|          |   grp_max_pooling2d_fix16_fu_403  |    1    | 7.21325 |   220   |   330   |
+|          |   grp_max_pooling2d_fix16_fu_325  |    0    |  5.3985 |   309   |   529   |
+|          | grp_depthwise_conv2d_fix_2_fu_346 |    1    | 15.9667 |   266   |   535   |
+|          | grp_depthwise_conv2d_fix_1_fu_370 |    1    | 15.9667 |   230   |   473   |
+|          | grp_pointwise_conv2d_fix_3_fu_394 |    1    |  8.845  |   300   |   327   |
+|   call   | grp_pointwise_conv2d_fix_1_fu_404 |    1    |  8.845  |   299   |   326   |
+|          | grp_pointwise_conv2d_fix_2_fu_414 |    1    |  8.845  |   271   |   333   |
 |          | grp_pointwise_conv2d_fix_4_fu_424 |    1    |  7.076  |   209   |   280   |
 |          |   grp_up_sampling2d_fix16_fu_432  |    0    |  5.307  |   179   |   288   |
 |          |  grp_pointwise_conv2d_fix_fu_453  |    1    |  5.307  |   229   |   229   |
@@ -2732,7 +2732,7 @@ StgValue_151       (ret              ) [ 000000000000000000000000000000000000000
 |   zext   |           tmp_52_fu_505           |    0    |    0    |    0    |    0    |
 |          |          i2_cast1_fu_522          |    0    |    0    |    0    |    0    |
 |----------|-----------------------------------|---------|---------|---------|---------|
-|   Total  |                                   |    9    | 102.922 |   3048  |   4269  |
+|   Total  |                                   |    8    | 101.107 |   3137  |   4468  |
 |----------|-----------------------------------|---------|---------|---------|---------|
 
 Memories:
@@ -2796,23 +2796,23 @@ Memories:
 |     grp_padding2d_fix16_fu_307    |  p1  |   3  |   6  |   18   |
 |     grp_padding2d_fix16_fu_307    |  p2  |   3  |   6  |   18   |
 |     grp_padding2d_fix16_fu_307    |  p3  |   3  |   6  |   18   |
-| grp_depthwise_conv2d_fix_2_fu_325 |  p1  |   2  |   6  |   12   |
-| grp_depthwise_conv2d_fix_2_fu_325 |  p2  |   2  |   6  |   12   |
-| grp_depthwise_conv2d_fix_2_fu_325 |  p4  |   2  |   6  |   12   |
-| grp_depthwise_conv2d_fix_2_fu_325 |  p5  |   2  |   6  |   12   |
-| grp_depthwise_conv2d_fix_2_fu_325 |  p7  |   2  |  16  |   32   ||    9    |
-| grp_depthwise_conv2d_fix_2_fu_325 |  p8  |   2  |  16  |   32   ||    9    |
-| grp_depthwise_conv2d_fix_1_fu_349 |  p1  |   2  |   6  |   12   |
-| grp_depthwise_conv2d_fix_1_fu_349 |  p2  |   2  |   6  |   12   |
-| grp_depthwise_conv2d_fix_1_fu_349 |  p4  |   2  |   5  |   10   |
-| grp_depthwise_conv2d_fix_1_fu_349 |  p5  |   2  |   5  |   10   |
-| grp_depthwise_conv2d_fix_1_fu_349 |  p7  |   2  |  16  |   32   ||    9    |
-| grp_depthwise_conv2d_fix_1_fu_349 |  p8  |   2  |  16  |   32   ||    9    |
-|   grp_max_pooling2d_fix16_fu_403  |  p1  |   2  |   6  |   12   |
-|   grp_max_pooling2d_fix16_fu_403  |  p2  |   2  |   6  |   12   |
-|   grp_max_pooling2d_fix16_fu_403  |  p4  |   2  |   6  |   12   |
-|   grp_max_pooling2d_fix16_fu_403  |  p5  |   2  |   5  |   10   |
-|   grp_max_pooling2d_fix16_fu_403  |  p6  |   2  |   5  |   10   |
+|   grp_max_pooling2d_fix16_fu_325  |  p1  |   2  |   6  |   12   |
+|   grp_max_pooling2d_fix16_fu_325  |  p2  |   2  |   6  |   12   |
+|   grp_max_pooling2d_fix16_fu_325  |  p4  |   2  |   6  |   12   |
+|   grp_max_pooling2d_fix16_fu_325  |  p5  |   2  |   5  |   10   |
+|   grp_max_pooling2d_fix16_fu_325  |  p6  |   2  |   5  |   10   |
+| grp_depthwise_conv2d_fix_2_fu_346 |  p1  |   2  |   6  |   12   |
+| grp_depthwise_conv2d_fix_2_fu_346 |  p2  |   2  |   6  |   12   |
+| grp_depthwise_conv2d_fix_2_fu_346 |  p4  |   2  |   6  |   12   |
+| grp_depthwise_conv2d_fix_2_fu_346 |  p5  |   2  |   6  |   12   |
+| grp_depthwise_conv2d_fix_2_fu_346 |  p7  |   2  |  16  |   32   ||    9    |
+| grp_depthwise_conv2d_fix_2_fu_346 |  p8  |   2  |  16  |   32   ||    9    |
+| grp_depthwise_conv2d_fix_1_fu_370 |  p1  |   2  |   6  |   12   |
+| grp_depthwise_conv2d_fix_1_fu_370 |  p2  |   2  |   6  |   12   |
+| grp_depthwise_conv2d_fix_1_fu_370 |  p4  |   2  |   5  |   10   |
+| grp_depthwise_conv2d_fix_1_fu_370 |  p5  |   2  |   5  |   10   |
+| grp_depthwise_conv2d_fix_1_fu_370 |  p7  |   2  |  16  |   32   ||    9    |
+| grp_depthwise_conv2d_fix_1_fu_370 |  p8  |   2  |  16  |   32   ||    9    |
 |   grp_up_sampling2d_fix16_fu_432  |  p1  |   2  |   5  |   10   |
 |   grp_up_sampling2d_fix16_fu_432  |  p2  |   2  |   5  |   10   |
 |   grp_up_sampling2d_fix16_fu_432  |  p4  |   2  |   6  |   12   |
@@ -2828,10 +2828,10 @@ Memories:
 +-----------+--------+--------+--------+--------+--------+
 |           |  BRAM  | DSP48E |  Delay |   FF   |   LUT  |
 +-----------+--------+--------+--------+--------+--------+
-|  Function |    -   |    9   |   102  |  3048  |  4269  |
+|  Function |    -   |    8   |   101  |  3137  |  4468  |
 |   Memory  |   39   |    -   |    -   |   241  |   50   |
 |Multiplexer|    -   |    -   |   49   |    -   |   69   |
 |  Register |    -   |    -   |    -   |   168  |    -   |
 +-----------+--------+--------+--------+--------+--------+
-|   Total   |   39   |    9   |   152  |  3457  |  4388  |
+|   Total   |   39   |    8   |   150  |  3546  |  4587  |
 +-----------+--------+--------+--------+--------+--------+

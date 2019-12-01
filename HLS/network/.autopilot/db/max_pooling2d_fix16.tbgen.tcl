@@ -18,7 +18,7 @@ set C_modelArgList {
 	{ output_depth int 6 regular  }
 	{ output_height int 5 regular  }
 	{ output_width int 5 regular  }
-	{ output_r int 16 regular {array 14400 { 2 3 } 1 1 }  }
+	{ output_r int 16 regular {array 14400 { 0 3 } 0 1 }  }
 }
 set C_modelArgMapList {[ 
 	{ "Name" : "input_height", "interface" : "wire", "bitwidth" : 7, "direction" : "READONLY"} , 
@@ -27,9 +27,9 @@ set C_modelArgMapList {[
  	{ "Name" : "output_depth", "interface" : "wire", "bitwidth" : 6, "direction" : "READONLY"} , 
  	{ "Name" : "output_height", "interface" : "wire", "bitwidth" : 5, "direction" : "READONLY"} , 
  	{ "Name" : "output_width", "interface" : "wire", "bitwidth" : 5, "direction" : "READONLY"} , 
- 	{ "Name" : "output_r", "interface" : "memory", "bitwidth" : 16, "direction" : "READWRITE"} ]}
+ 	{ "Name" : "output_r", "interface" : "memory", "bitwidth" : 16, "direction" : "WRITEONLY"} ]}
 # RTL Port declarations: 
-set portNum 19
+set portNum 18
 set portList { 
 	{ ap_clk sc_in sc_logic 1 clock -1 } 
 	{ ap_rst sc_in sc_logic 1 reset -1 active_high_sync } 
@@ -49,7 +49,6 @@ set portList {
 	{ output_r_ce0 sc_out sc_logic 1 signal 6 } 
 	{ output_r_we0 sc_out sc_logic 1 signal 6 } 
 	{ output_r_d0 sc_out sc_lv 16 signal 6 } 
-	{ output_r_q0 sc_in sc_lv 16 signal 6 } 
 }
 set NewPortList {[ 
 	{ "name": "ap_clk", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "clock", "bundle":{"name": "ap_clk", "role": "default" }} , 
@@ -69,17 +68,16 @@ set NewPortList {[
  	{ "name": "output_r_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":14, "type": "signal", "bundle":{"name": "output_r", "role": "address0" }} , 
  	{ "name": "output_r_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "output_r", "role": "ce0" }} , 
  	{ "name": "output_r_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "output_r", "role": "we0" }} , 
- 	{ "name": "output_r_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "output_r", "role": "d0" }} , 
- 	{ "name": "output_r_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "output_r", "role": "q0" }}  ]}
+ 	{ "name": "output_r_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "output_r", "role": "d0" }}  ]}
 
 set RtlHierarchyInfo {[
-	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1"],
+	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "",
 		"CDFG" : "max_pooling2d_fix16",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "5617", "EstimateLatencyMax" : "44385",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "4441", "EstimateLatencyMax" : "34977",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -93,25 +91,24 @@ set RtlHierarchyInfo {[
 			{"Name" : "output_depth", "Type" : "None", "Direction" : "I"},
 			{"Name" : "output_height", "Type" : "None", "Direction" : "I"},
 			{"Name" : "output_width", "Type" : "None", "Direction" : "I"},
-			{"Name" : "output_r", "Type" : "Memory", "Direction" : "IO"}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_ama_addmuladd_9ns_5ns_7ns_5ns_14_1_1_U17", "Parent" : "0"}]}
+			{"Name" : "output_r", "Type" : "Memory", "Direction" : "O"}]}]}
 
 
 set ArgLastReadFirstWriteLatency {
 	max_pooling2d_fix16 {
 		input_height {Type I LastRead 0 FirstWrite -1}
 		input_width {Type I LastRead 0 FirstWrite -1}
-		input_r {Type I LastRead 6 FirstWrite -1}
+		input_r {Type I LastRead 5 FirstWrite -1}
 		output_depth {Type I LastRead 0 FirstWrite -1}
 		output_height {Type I LastRead 0 FirstWrite -1}
 		output_width {Type I LastRead 0 FirstWrite -1}
-		output_r {Type IO LastRead 5 FirstWrite 6}}}
+		output_r {Type O LastRead -1 FirstWrite 5}}}
 
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "5617", "Max" : "44385"}
-	, {"Name" : "Interval", "Min" : "5617", "Max" : "44385"}
+	{"Name" : "Latency", "Min" : "4441", "Max" : "34977"}
+	, {"Name" : "Interval", "Min" : "4441", "Max" : "34977"}
 ]}
 
 set PipelineEnableSignalInfo {[
@@ -124,5 +121,5 @@ set Spec2ImplPortList {
 	output_depth { ap_none {  { output_depth in_data 0 6 } } }
 	output_height { ap_none {  { output_height in_data 0 5 } } }
 	output_width { ap_none {  { output_width in_data 0 5 } } }
-	output_r { ap_memory {  { output_r_address0 mem_address 1 14 }  { output_r_ce0 mem_ce 1 1 }  { output_r_we0 mem_we 1 1 }  { output_r_d0 mem_din 1 16 }  { output_r_q0 mem_dout 0 16 } } }
+	output_r { ap_memory {  { output_r_address0 mem_address 1 14 }  { output_r_ce0 mem_ce 1 1 }  { output_r_we0 mem_we 1 1 }  { output_r_d0 mem_din 1 16 } } }
 }

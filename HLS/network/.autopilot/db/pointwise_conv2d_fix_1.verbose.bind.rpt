@@ -3,9 +3,9 @@
 ================================================================
 == Vivado HLS Report for 'pointwise_conv2d_fix_1'
 ================================================================
-* Date:           Sat Nov 30 13:37:38 2019
+* Date:           Sun Dec  1 11:46:57 2019
 
-* Version:        2018.3.1 (Build 2489210 on Tue Mar 26 04:40:43 MDT 2019)
+* Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
 * Project:        HLS
 * Solution:       network
 * Product family: zynq

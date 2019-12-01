@@ -40,10 +40,10 @@ set SCTraceFileName mytrace
 set SCTraceFileFormat vcd
 set SCTraceOption all
 set TargetInfo xc7z020:clg400:-1
-set SourceFiles {sc {} c {../../layers_c/up_sampling2d.cpp ../../layers_c/separable_conv2d.cpp ../../layers_c/pointwise_conv2d.cpp ../../layers_c/padding2d.cpp ../../mnist_AXI_Stream.cpp ../../layers_c/max_pooling2d.cpp ../../layers_c/depthwise_conv2d.cpp ../../layers_c/conv2d.cpp}}
+set SourceFiles {sc {} c {../../layers_c/conv2d.cpp ../../layers_c/depthwise_conv2d.cpp ../../layers_c/max_pooling2d.cpp ../../mnist_AXI_Stream.cpp ../../layers_c/padding2d.cpp ../../layers_c/pointwise_conv2d.cpp ../../layers_c/separable_conv2d.cpp ../../layers_c/up_sampling2d.cpp}}
 set SourceFlags {sc {} c {{} {} {} {} {} {} {} {}}}
-set DirectiveFile /home/masudalab/DeepCAEonFPGA/HLS/network/network.directive
-set TBFiles {verilog {../../mnist_AXI_Stream.cpp ../../layers_cpp/array_printf_fix16.h ../../layers_cpp/array_printf_fix16.cpp} bc {../../mnist_AXI_Stream.cpp ../../layers_cpp/array_printf_fix16.h ../../layers_cpp/array_printf_fix16.cpp} vhdl {../../mnist_AXI_Stream.cpp ../../layers_cpp/array_printf_fix16.h ../../layers_cpp/array_printf_fix16.cpp} sc {../../mnist_AXI_Stream.cpp ../../layers_cpp/array_printf_fix16.h ../../layers_cpp/array_printf_fix16.cpp} cas {../../mnist_AXI_Stream.cpp ../../layers_cpp/array_printf_fix16.h ../../layers_cpp/array_printf_fix16.cpp} c {}}
+set DirectiveFile /home/shts/DeepCAEonFPGA/HLS/network/network.directive
+set TBFiles {verilog {../../layers_cpp/array_printf_fix16.cpp ../../layers_cpp/array_printf_fix16.h ../../mnist_AXI_Stream.cpp} bc {../../layers_cpp/array_printf_fix16.cpp ../../layers_cpp/array_printf_fix16.h ../../mnist_AXI_Stream.cpp} vhdl {../../layers_cpp/array_printf_fix16.cpp ../../layers_cpp/array_printf_fix16.h ../../mnist_AXI_Stream.cpp} sc {../../layers_cpp/array_printf_fix16.cpp ../../layers_cpp/array_printf_fix16.h ../../mnist_AXI_Stream.cpp} cas {../../layers_cpp/array_printf_fix16.cpp ../../layers_cpp/array_printf_fix16.h ../../mnist_AXI_Stream.cpp} c {}}
 set SpecLanguage C
 set TVInFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
 set TVOutFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}

@@ -1,7 +1,7 @@
 # This script segment is generated automatically by AutoPilot
 
 # Memory (RAM/ROM)  definition:
-set ID 37
+set ID 35
 set hasByteEnable 0
 set MemName pointwise_conv2d_fix_1_SeparableConv2D_1_b_s
 set CoreName ap_simcore_mem
@@ -84,7 +84,7 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_ROM] == "::AESL_LIB_VIRTEX::xil_gen_RO
 
 
 # Memory (RAM/ROM)  definition:
-set ID 38
+set ID 36
 set hasByteEnable 0
 set MemName pointwise_conv2d_fix_1_SeparableConv2D_1_w_s
 set CoreName ap_simcore_mem
@@ -177,7 +177,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 39 \
+    id 37 \
     name input_r \
     reset_level 1 \
     sync_rst true \
@@ -196,7 +196,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 40 \
+    id 38 \
     name output_r \
     reset_level 1 \
     sync_rst true \
