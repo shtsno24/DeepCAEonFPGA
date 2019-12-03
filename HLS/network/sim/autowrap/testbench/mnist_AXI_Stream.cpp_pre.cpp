@@ -76017,7 +76017,6 @@ int network(axis &input_data, axis &output_data) {
  1, 1, (int16_t*)SeparableConv2D_4_w_p, 1, 14);
 
  for(int i = 0; i < array_length; i++){
-
   MemBank_Out[i] = MemBank_B[i];
  }
 

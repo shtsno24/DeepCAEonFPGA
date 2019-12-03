@@ -239,26 +239,21 @@ uint8_t relu, uint8_t fractal_width){
 
 
 
-
+ int16_t buffer;
     for(uint16_t out_d = 0; out_d < output_depth; out_d++){
         for(uint16_t out_h = 0; out_h < output_height; out_h++){
             for(uint16_t out_w = 0; out_w < output_width; out_w++){
-                output[out_d * output_height * output_width + out_h * output_width + out_w] = 0;
+             buffer = bias[out_d];
                 for(uint16_t in_d = 0; in_d < input_depth; in_d++){
 
-                 output[out_d * output_height * output_width + out_h * output_width + out_w] +=
-                   (int16_t)(((int32_t)(
-                     input[in_d * output_height * output_width + out_h * output_width + out_w]) *
+                 buffer +=
+                   (int16_t)(((int32_t)(input[in_d * output_height * output_width + out_h * output_width + out_w]) *
                      (int32_t)(kernel[out_d * input_depth + in_d])) >> fractal_width);
                 }
-
-                output[out_d * output_height * output_width + out_h * output_width + out_w] += bias[out_d];
-
-                if(relu == 1){
-                    if(output[out_d * output_height * output_width + out_h * output_width + out_w] < 0){
-                        output[out_d * output_height * output_width + out_h * output_width + out_w] = 0;
-                    }
+                if(relu == 1 && buffer < 0){
+                 buffer = 0;
                 }
+                output[out_d * output_height * output_width + out_h * output_width + out_w] = buffer;
             }
         }
     }

@@ -3,9 +3,9 @@
 ================================================================
 == Vivado HLS Report for 'network'
 ================================================================
-* Date:           Sun Dec  1 11:46:58 2019
+* Date:           Tue Dec  3 18:18:18 2019
 
-* Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
+* Version:        2018.3.1 (Build 2489210 on Tue Mar 26 04:40:43 MDT 2019)
 * Project:        HLS
 * Solution:       network
 * Product family: zynq
@@ -20,7 +20,7 @@
     +--------+-------+----------+------------+
     |  Clock | Target| Estimated| Uncertainty|
     +--------+-------+----------+------------+
-    |ap_clk  |  10.00|     8.585|        1.25|
+    |ap_clk  |  10.00|     8.048|        1.25|
     +--------+-------+----------+------------+
 
 + Latency (clock cycles): 
@@ -29,7 +29,7 @@
     |      Latency     |     Interval     | Pipeline|
     |   min  |   max   |   min  |   max   |   Type  |
     +--------+---------+--------+---------+---------+
-    |  706018|  1907035|  706018|  1907035|   none  |
+    |  702490|  1919971|  702490|  1919971|   none  |
     +--------+---------+--------+---------+---------+
 
     + Detail: 
@@ -161,13 +161,13 @@ IsGatedGlobalClock: 0
 39 --> 
 	40  / true
 40 --> 
-	41  / (!tmp_51)
-	42  / (tmp_51)
+	41  / (!tmp_50)
+	42  / (tmp_50)
 41 --> 
 	40  / true
 42 --> 
-	45  / (tmp_53)
-	43  / (!tmp_53)
+	45  / (tmp_52)
+	43  / (!tmp_52)
 43 --> 
 	44  / true
 44 --> 
@@ -198,9 +198,9 @@ ST_1 : Operation 62 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopM
 ST_1 : Operation 63 [1/1] (0.00ns)   --->   "%MemBank_A = alloca [14400 x i16], align 16" [mnist_AXI_Stream.cpp:32]   --->   Operation 63 'alloca' 'MemBank_A' <Predicate = true> <Delay = 0.00> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 784> <RAM>
 ST_1 : Operation 64 [1/1] (0.00ns)   --->   "%MemBank_B = alloca [14400 x i16], align 16" [mnist_AXI_Stream.cpp:32]   --->   Operation 64 'alloca' 'MemBank_B' <Predicate = true> <Delay = 0.00> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 784> <RAM>
 ST_1 : Operation 65 [1/1] (0.00ns)   --->   "%MemBank_Out = alloca [784 x i16], align 16" [mnist_AXI_Stream.cpp:32]   --->   Operation 65 'alloca' 'MemBank_Out' <Predicate = true> <Delay = 0.00> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 784> <RAM>
-ST_1 : Operation 66 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %input_data_V_data_V, i2* %input_data_V_keep_V, i2* %input_data_V_strb_V, i1* %input_data_V_user_V, i1* %input_data_V_last_V, i1* %input_data_V_id_V, i1* %input_data_V_dest_V, [5 x i8]* @p_str2, i32 1, i32 1, [5 x i8]* @p_str13, i32 0, i32 0, [1 x i8]* @p_str24, [1 x i8]* @p_str24, [1 x i8]* @p_str24, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str24, [1 x i8]* @p_str24) nounwind" [mnist_AXI_Stream.cpp:28]   --->   Operation 66 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 67 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %output_data_V_data_V, i2* %output_data_V_keep_V, i2* %output_data_V_strb_V, i1* %output_data_V_user_V, i1* %output_data_V_last_V, i1* %output_data_V_id_V, i1* %output_data_V_dest_V, [5 x i8]* @p_str2, i32 1, i32 1, [5 x i8]* @p_str13, i32 0, i32 0, [1 x i8]* @p_str24, [1 x i8]* @p_str24, [1 x i8]* @p_str24, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str24, [1 x i8]* @p_str24) nounwind" [mnist_AXI_Stream.cpp:29]   --->   Operation 67 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 68 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 0, [10 x i8]* @p_str3, i32 1, i32 1, [1 x i8]* @p_str24, i32 0, i32 0, [1 x i8]* @p_str24, [1 x i8]* @p_str24, [1 x i8]* @p_str24, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str24, [1 x i8]* @p_str24) nounwind" [mnist_AXI_Stream.cpp:30]   --->   Operation 68 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 66 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %input_data_V_data_V, i2* %input_data_V_keep_V, i2* %input_data_V_strb_V, i1* %input_data_V_user_V, i1* %input_data_V_last_V, i1* %input_data_V_id_V, i1* %input_data_V_dest_V, [5 x i8]* @p_str, i32 1, i32 1, [5 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2) nounwind" [mnist_AXI_Stream.cpp:28]   --->   Operation 66 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 67 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %output_data_V_data_V, i2* %output_data_V_keep_V, i2* %output_data_V_strb_V, i1* %output_data_V_user_V, i1* %output_data_V_last_V, i1* %output_data_V_id_V, i1* %output_data_V_dest_V, [5 x i8]* @p_str, i32 1, i32 1, [5 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2) nounwind" [mnist_AXI_Stream.cpp:29]   --->   Operation 67 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 68 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 0, [10 x i8]* @p_str3, i32 1, i32 1, [1 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2) nounwind" [mnist_AXI_Stream.cpp:30]   --->   Operation 68 'specinterface' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 69 [1/1] (1.76ns)   --->   "br label %1" [mnist_AXI_Stream.cpp:41]   --->   Operation 69 'br' <Predicate = true> <Delay = 1.76>
 
 State 2 <SV = 1> <Delay = 7.42>
@@ -209,8 +209,8 @@ ST_2 : Operation 71 [1/1] (1.77ns)   --->   "%exitcond = icmp eq i10 %i, -240" [
 ST_2 : Operation 72 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 784, i64 784, i64 784)"   --->   Operation 72 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 73 [1/1] (1.73ns)   --->   "%i_1 = add i10 %i, 1" [mnist_AXI_Stream.cpp:41]   --->   Operation 73 'add' 'i_1' <Predicate = true> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 74 [1/1] (0.00ns)   --->   "br i1 %exitcond, label %3, label %2" [mnist_AXI_Stream.cpp:41]   --->   Operation 74 'br' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 75 [1/1] (0.00ns)   --->   "%empty_29 = call { i16, i2, i2, i1, i1, i1, i1 } @_ssdm_op_Read.axis.volatile.i16P.i2P.i2P.i1P.i1P.i1P.i1P(i16* %input_data_V_data_V, i2* %input_data_V_keep_V, i2* %input_data_V_strb_V, i1* %input_data_V_user_V, i1* %input_data_V_last_V, i1* %input_data_V_id_V, i1* %input_data_V_dest_V)" [mnist_AXI_Stream.cpp:42]   --->   Operation 75 'read' 'empty_29' <Predicate = (!exitcond)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
-ST_2 : Operation 76 [1/1] (0.00ns)   --->   "%tmp_data_V = extractvalue { i16, i2, i2, i1, i1, i1, i1 } %empty_29, 0" [mnist_AXI_Stream.cpp:42]   --->   Operation 76 'extractvalue' 'tmp_data_V' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_2 : Operation 75 [1/1] (0.00ns)   --->   "%empty_30 = call { i16, i2, i2, i1, i1, i1, i1 } @_ssdm_op_Read.axis.volatile.i16P.i2P.i2P.i1P.i1P.i1P.i1P(i16* %input_data_V_data_V, i2* %input_data_V_keep_V, i2* %input_data_V_strb_V, i1* %input_data_V_user_V, i1* %input_data_V_last_V, i1* %input_data_V_id_V, i1* %input_data_V_dest_V)" [mnist_AXI_Stream.cpp:42]   --->   Operation 75 'read' 'empty_30' <Predicate = (!exitcond)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_2 : Operation 76 [1/1] (0.00ns)   --->   "%tmp_data_V = extractvalue { i16, i2, i2, i1, i1, i1, i1 } %empty_30, 0" [mnist_AXI_Stream.cpp:42]   --->   Operation 76 'extractvalue' 'tmp_data_V' <Predicate = (!exitcond)> <Delay = 0.00>
 ST_2 : Operation 77 [1/1] (0.00ns)   --->   "%tmp_s = zext i10 %i to i64" [mnist_AXI_Stream.cpp:43]   --->   Operation 77 'zext' 'tmp_s' <Predicate = (!exitcond)> <Delay = 0.00>
 ST_2 : Operation 78 [1/1] (0.00ns)   --->   "%MemBank_A_addr = getelementptr inbounds [14400 x i16]* %MemBank_A, i64 0, i64 %tmp_s" [mnist_AXI_Stream.cpp:43]   --->   Operation 78 'getelementptr' 'MemBank_A_addr' <Predicate = (!exitcond)> <Delay = 0.00>
 ST_2 : Operation 79 [1/1] (3.25ns)   --->   "store i16 %tmp_data_V, i16* %MemBank_A_addr, align 2" [mnist_AXI_Stream.cpp:43]   --->   Operation 79 'store' <Predicate = (!exitcond)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 784> <RAM>
@@ -331,49 +331,49 @@ ST_39 : Operation 119 [1/1] (1.76ns)   --->   "br label %4" [mnist_AXI_Stream.cp
 
 State 40 <SV = 39> <Delay = 3.25>
 ST_40 : Operation 120 [1/1] (0.00ns)   --->   "%i1 = phi i10 [ 0, %3 ], [ %i_2, %5 ]"   --->   Operation 120 'phi' 'i1' <Predicate = true> <Delay = 0.00>
-ST_40 : Operation 121 [1/1] (1.77ns)   --->   "%tmp_51 = icmp eq i10 %i1, -240" [mnist_AXI_Stream.cpp:132]   --->   Operation 121 'icmp' 'tmp_51' <Predicate = true> <Delay = 1.77> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.77> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_40 : Operation 122 [1/1] (0.00ns)   --->   "%empty_30 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 784, i64 784, i64 784)"   --->   Operation 122 'speclooptripcount' 'empty_30' <Predicate = true> <Delay = 0.00>
+ST_40 : Operation 121 [1/1] (1.77ns)   --->   "%tmp_50 = icmp eq i10 %i1, -240" [mnist_AXI_Stream.cpp:132]   --->   Operation 121 'icmp' 'tmp_50' <Predicate = true> <Delay = 1.77> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.77> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_40 : Operation 122 [1/1] (0.00ns)   --->   "%empty_31 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 784, i64 784, i64 784)"   --->   Operation 122 'speclooptripcount' 'empty_31' <Predicate = true> <Delay = 0.00>
 ST_40 : Operation 123 [1/1] (1.73ns)   --->   "%i_2 = add i10 %i1, 1" [mnist_AXI_Stream.cpp:132]   --->   Operation 123 'add' 'i_2' <Predicate = true> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_40 : Operation 124 [1/1] (0.00ns)   --->   "br i1 %tmp_51, label %.preheader.preheader, label %5" [mnist_AXI_Stream.cpp:132]   --->   Operation 124 'br' <Predicate = true> <Delay = 0.00>
-ST_40 : Operation 125 [1/1] (0.00ns)   --->   "%tmp_52 = zext i10 %i1 to i64" [mnist_AXI_Stream.cpp:134]   --->   Operation 125 'zext' 'tmp_52' <Predicate = (!tmp_51)> <Delay = 0.00>
-ST_40 : Operation 126 [1/1] (0.00ns)   --->   "%MemBank_B_addr = getelementptr inbounds [14400 x i16]* %MemBank_B, i64 0, i64 %tmp_52" [mnist_AXI_Stream.cpp:134]   --->   Operation 126 'getelementptr' 'MemBank_B_addr' <Predicate = (!tmp_51)> <Delay = 0.00>
-ST_40 : Operation 127 [2/2] (3.25ns)   --->   "%MemBank_B_load = load i16* %MemBank_B_addr, align 2" [mnist_AXI_Stream.cpp:134]   --->   Operation 127 'load' 'MemBank_B_load' <Predicate = (!tmp_51)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 784> <RAM>
-ST_40 : Operation 128 [1/1] (1.76ns)   --->   "br label %.preheader" [mnist_AXI_Stream.cpp:137]   --->   Operation 128 'br' <Predicate = (tmp_51)> <Delay = 1.76>
+ST_40 : Operation 124 [1/1] (0.00ns)   --->   "br i1 %tmp_50, label %.preheader.preheader, label %5" [mnist_AXI_Stream.cpp:132]   --->   Operation 124 'br' <Predicate = true> <Delay = 0.00>
+ST_40 : Operation 125 [1/1] (0.00ns)   --->   "%tmp_51 = zext i10 %i1 to i64" [mnist_AXI_Stream.cpp:133]   --->   Operation 125 'zext' 'tmp_51' <Predicate = (!tmp_50)> <Delay = 0.00>
+ST_40 : Operation 126 [1/1] (0.00ns)   --->   "%MemBank_B_addr = getelementptr inbounds [14400 x i16]* %MemBank_B, i64 0, i64 %tmp_51" [mnist_AXI_Stream.cpp:133]   --->   Operation 126 'getelementptr' 'MemBank_B_addr' <Predicate = (!tmp_50)> <Delay = 0.00>
+ST_40 : Operation 127 [2/2] (3.25ns)   --->   "%MemBank_B_load = load i16* %MemBank_B_addr, align 2" [mnist_AXI_Stream.cpp:133]   --->   Operation 127 'load' 'MemBank_B_load' <Predicate = (!tmp_50)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 784> <RAM>
+ST_40 : Operation 128 [1/1] (1.76ns)   --->   "br label %.preheader" [mnist_AXI_Stream.cpp:136]   --->   Operation 128 'br' <Predicate = (tmp_50)> <Delay = 1.76>
 
 State 41 <SV = 40> <Delay = 6.50>
-ST_41 : Operation 129 [1/2] (3.25ns)   --->   "%MemBank_B_load = load i16* %MemBank_B_addr, align 2" [mnist_AXI_Stream.cpp:134]   --->   Operation 129 'load' 'MemBank_B_load' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 784> <RAM>
-ST_41 : Operation 130 [1/1] (0.00ns)   --->   "%MemBank_Out_addr = getelementptr inbounds [784 x i16]* %MemBank_Out, i64 0, i64 %tmp_52" [mnist_AXI_Stream.cpp:134]   --->   Operation 130 'getelementptr' 'MemBank_Out_addr' <Predicate = true> <Delay = 0.00>
-ST_41 : Operation 131 [1/1] (3.25ns)   --->   "store i16 %MemBank_B_load, i16* %MemBank_Out_addr, align 2" [mnist_AXI_Stream.cpp:134]   --->   Operation 131 'store' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 784> <RAM>
+ST_41 : Operation 129 [1/2] (3.25ns)   --->   "%MemBank_B_load = load i16* %MemBank_B_addr, align 2" [mnist_AXI_Stream.cpp:133]   --->   Operation 129 'load' 'MemBank_B_load' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 784> <RAM>
+ST_41 : Operation 130 [1/1] (0.00ns)   --->   "%MemBank_Out_addr = getelementptr inbounds [784 x i16]* %MemBank_Out, i64 0, i64 %tmp_51" [mnist_AXI_Stream.cpp:133]   --->   Operation 130 'getelementptr' 'MemBank_Out_addr' <Predicate = true> <Delay = 0.00>
+ST_41 : Operation 131 [1/1] (3.25ns)   --->   "store i16 %MemBank_B_load, i16* %MemBank_Out_addr, align 2" [mnist_AXI_Stream.cpp:133]   --->   Operation 131 'store' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 784> <RAM>
 ST_41 : Operation 132 [1/1] (0.00ns)   --->   "br label %4" [mnist_AXI_Stream.cpp:132]   --->   Operation 132 'br' <Predicate = true> <Delay = 0.00>
 
 State 42 <SV = 40> <Delay = 3.25>
 ST_42 : Operation 133 [1/1] (0.00ns)   --->   "%i2 = phi i10 [ %i_3, %6 ], [ 0, %.preheader.preheader ]"   --->   Operation 133 'phi' 'i2' <Predicate = true> <Delay = 0.00>
-ST_42 : Operation 134 [1/1] (1.77ns)   --->   "%tmp_53 = icmp eq i10 %i2, -240" [mnist_AXI_Stream.cpp:137]   --->   Operation 134 'icmp' 'tmp_53' <Predicate = true> <Delay = 1.77> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.77> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_42 : Operation 135 [1/1] (0.00ns)   --->   "%empty_31 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 784, i64 784, i64 784)"   --->   Operation 135 'speclooptripcount' 'empty_31' <Predicate = true> <Delay = 0.00>
-ST_42 : Operation 136 [1/1] (1.73ns)   --->   "%i_3 = add i10 %i2, 1" [mnist_AXI_Stream.cpp:137]   --->   Operation 136 'add' 'i_3' <Predicate = true> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_42 : Operation 137 [1/1] (0.00ns)   --->   "br i1 %tmp_53, label %7, label %6" [mnist_AXI_Stream.cpp:137]   --->   Operation 137 'br' <Predicate = true> <Delay = 0.00>
-ST_42 : Operation 138 [1/1] (0.00ns)   --->   "%i2_cast1 = zext i10 %i2 to i64" [mnist_AXI_Stream.cpp:137]   --->   Operation 138 'zext' 'i2_cast1' <Predicate = (!tmp_53)> <Delay = 0.00>
-ST_42 : Operation 139 [1/1] (1.77ns)   --->   "%tmp_user_V = icmp eq i10 %i2, 0" [mnist_AXI_Stream.cpp:145]   --->   Operation 139 'icmp' 'tmp_user_V' <Predicate = (!tmp_53)> <Delay = 1.77> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.77> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_42 : Operation 140 [1/1] (1.77ns)   --->   "%tmp_last_V = icmp eq i10 %i2, -241" [mnist_AXI_Stream.cpp:148]   --->   Operation 140 'icmp' 'tmp_last_V' <Predicate = (!tmp_53)> <Delay = 1.77> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.77> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_42 : Operation 141 [1/1] (0.00ns)   --->   "%MemBank_Out_addr_1 = getelementptr inbounds [784 x i16]* %MemBank_Out, i64 0, i64 %i2_cast1" [mnist_AXI_Stream.cpp:151]   --->   Operation 141 'getelementptr' 'MemBank_Out_addr_1' <Predicate = (!tmp_53)> <Delay = 0.00>
-ST_42 : Operation 142 [2/2] (3.25ns)   --->   "%tmp_data_V_1 = load i16* %MemBank_Out_addr_1, align 2" [mnist_AXI_Stream.cpp:151]   --->   Operation 142 'load' 'tmp_data_V_1' <Predicate = (!tmp_53)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 784> <RAM>
+ST_42 : Operation 134 [1/1] (1.77ns)   --->   "%tmp_52 = icmp eq i10 %i2, -240" [mnist_AXI_Stream.cpp:136]   --->   Operation 134 'icmp' 'tmp_52' <Predicate = true> <Delay = 1.77> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.77> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_42 : Operation 135 [1/1] (0.00ns)   --->   "%empty_32 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 784, i64 784, i64 784)"   --->   Operation 135 'speclooptripcount' 'empty_32' <Predicate = true> <Delay = 0.00>
+ST_42 : Operation 136 [1/1] (1.73ns)   --->   "%i_3 = add i10 %i2, 1" [mnist_AXI_Stream.cpp:136]   --->   Operation 136 'add' 'i_3' <Predicate = true> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_42 : Operation 137 [1/1] (0.00ns)   --->   "br i1 %tmp_52, label %7, label %6" [mnist_AXI_Stream.cpp:136]   --->   Operation 137 'br' <Predicate = true> <Delay = 0.00>
+ST_42 : Operation 138 [1/1] (0.00ns)   --->   "%i2_cast1 = zext i10 %i2 to i64" [mnist_AXI_Stream.cpp:136]   --->   Operation 138 'zext' 'i2_cast1' <Predicate = (!tmp_52)> <Delay = 0.00>
+ST_42 : Operation 139 [1/1] (1.77ns)   --->   "%tmp_user_V = icmp eq i10 %i2, 0" [mnist_AXI_Stream.cpp:144]   --->   Operation 139 'icmp' 'tmp_user_V' <Predicate = (!tmp_52)> <Delay = 1.77> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.77> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_42 : Operation 140 [1/1] (1.77ns)   --->   "%tmp_last_V = icmp eq i10 %i2, -241" [mnist_AXI_Stream.cpp:147]   --->   Operation 140 'icmp' 'tmp_last_V' <Predicate = (!tmp_52)> <Delay = 1.77> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.77> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_42 : Operation 141 [1/1] (0.00ns)   --->   "%MemBank_Out_addr_1 = getelementptr inbounds [784 x i16]* %MemBank_Out, i64 0, i64 %i2_cast1" [mnist_AXI_Stream.cpp:150]   --->   Operation 141 'getelementptr' 'MemBank_Out_addr_1' <Predicate = (!tmp_52)> <Delay = 0.00>
+ST_42 : Operation 142 [2/2] (3.25ns)   --->   "%tmp_data_V_1 = load i16* %MemBank_Out_addr_1, align 2" [mnist_AXI_Stream.cpp:150]   --->   Operation 142 'load' 'tmp_data_V_1' <Predicate = (!tmp_52)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 784> <RAM>
 
 State 43 <SV = 41> <Delay = 3.25>
-ST_43 : Operation 143 [1/2] (3.25ns)   --->   "%tmp_data_V_1 = load i16* %MemBank_Out_addr_1, align 2" [mnist_AXI_Stream.cpp:151]   --->   Operation 143 'load' 'tmp_data_V_1' <Predicate = (!tmp_53)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 784> <RAM>
-ST_43 : Operation 144 [2/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i16P.i2P.i2P.i1P.i1P.i1P.i1P(i16* %output_data_V_data_V, i2* %output_data_V_keep_V, i2* %output_data_V_strb_V, i1* %output_data_V_user_V, i1* %output_data_V_last_V, i1* %output_data_V_id_V, i1* %output_data_V_dest_V, i16 %tmp_data_V_1, i2 0, i2 0, i1 %tmp_user_V, i1 %tmp_last_V, i1 false, i1 false)" [mnist_AXI_Stream.cpp:152]   --->   Operation 144 'write' <Predicate = (!tmp_53)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_43 : Operation 143 [1/2] (3.25ns)   --->   "%tmp_data_V_1 = load i16* %MemBank_Out_addr_1, align 2" [mnist_AXI_Stream.cpp:150]   --->   Operation 143 'load' 'tmp_data_V_1' <Predicate = (!tmp_52)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 784> <RAM>
+ST_43 : Operation 144 [2/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i16P.i2P.i2P.i1P.i1P.i1P.i1P(i16* %output_data_V_data_V, i2* %output_data_V_keep_V, i2* %output_data_V_strb_V, i1* %output_data_V_user_V, i1* %output_data_V_last_V, i1* %output_data_V_id_V, i1* %output_data_V_dest_V, i16 %tmp_data_V_1, i2 0, i2 0, i1 %tmp_user_V, i1 %tmp_last_V, i1 false, i1 false)" [mnist_AXI_Stream.cpp:151]   --->   Operation 144 'write' <Predicate = (!tmp_52)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
 
 State 44 <SV = 42> <Delay = 0.00>
-ST_44 : Operation 145 [1/1] (0.00ns)   --->   "%tmp = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str4)" [mnist_AXI_Stream.cpp:137]   --->   Operation 145 'specregionbegin' 'tmp' <Predicate = (!tmp_53)> <Delay = 0.00>
-ST_44 : Operation 146 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str24) nounwind" [mnist_AXI_Stream.cpp:138]   --->   Operation 146 'specpipeline' <Predicate = (!tmp_53)> <Delay = 0.00>
-ST_44 : Operation 147 [1/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i16P.i2P.i2P.i1P.i1P.i1P.i1P(i16* %output_data_V_data_V, i2* %output_data_V_keep_V, i2* %output_data_V_strb_V, i1* %output_data_V_user_V, i1* %output_data_V_last_V, i1* %output_data_V_id_V, i1* %output_data_V_dest_V, i16 %tmp_data_V_1, i2 0, i2 0, i1 %tmp_user_V, i1 %tmp_last_V, i1 false, i1 false)" [mnist_AXI_Stream.cpp:152]   --->   Operation 147 'write' <Predicate = (!tmp_53)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
-ST_44 : Operation 148 [1/1] (0.00ns)   --->   "%empty_32 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str4, i32 %tmp)" [mnist_AXI_Stream.cpp:153]   --->   Operation 148 'specregionend' 'empty_32' <Predicate = (!tmp_53)> <Delay = 0.00>
-ST_44 : Operation 149 [1/1] (0.00ns)   --->   "br label %.preheader" [mnist_AXI_Stream.cpp:137]   --->   Operation 149 'br' <Predicate = (!tmp_53)> <Delay = 0.00>
+ST_44 : Operation 145 [1/1] (0.00ns)   --->   "%tmp = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str4)" [mnist_AXI_Stream.cpp:136]   --->   Operation 145 'specregionbegin' 'tmp' <Predicate = (!tmp_52)> <Delay = 0.00>
+ST_44 : Operation 146 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str2) nounwind" [mnist_AXI_Stream.cpp:137]   --->   Operation 146 'specpipeline' <Predicate = (!tmp_52)> <Delay = 0.00>
+ST_44 : Operation 147 [1/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i16P.i2P.i2P.i1P.i1P.i1P.i1P(i16* %output_data_V_data_V, i2* %output_data_V_keep_V, i2* %output_data_V_strb_V, i1* %output_data_V_user_V, i1* %output_data_V_last_V, i1* %output_data_V_id_V, i1* %output_data_V_dest_V, i16 %tmp_data_V_1, i2 0, i2 0, i1 %tmp_user_V, i1 %tmp_last_V, i1 false, i1 false)" [mnist_AXI_Stream.cpp:151]   --->   Operation 147 'write' <Predicate = (!tmp_52)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_44 : Operation 148 [1/1] (0.00ns)   --->   "%empty_33 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str4, i32 %tmp)" [mnist_AXI_Stream.cpp:152]   --->   Operation 148 'specregionend' 'empty_33' <Predicate = (!tmp_52)> <Delay = 0.00>
+ST_44 : Operation 149 [1/1] (0.00ns)   --->   "br label %.preheader" [mnist_AXI_Stream.cpp:136]   --->   Operation 149 'br' <Predicate = (!tmp_52)> <Delay = 0.00>
 
 State 45 <SV = 41> <Delay = 0.00>
-ST_45 : Operation 150 [2/2] (0.00ns)   --->   "ret i32 0" [mnist_AXI_Stream.cpp:154]   --->   Operation 150 'ret' <Predicate = true> <Delay = 0.00>
+ST_45 : Operation 150 [2/2] (0.00ns)   --->   "ret i32 0" [mnist_AXI_Stream.cpp:153]   --->   Operation 150 'ret' <Predicate = true> <Delay = 0.00>
 
 State 46 <SV = 42> <Delay = 0.00>
-ST_46 : Operation 151 [1/2] (0.00ns)   --->   "ret i32 0" [mnist_AXI_Stream.cpp:154]   --->   Operation 151 'ret' <Predicate = true> <Delay = 0.00>
+ST_46 : Operation 151 [1/2] (0.00ns)   --->   "ret i32 0" [mnist_AXI_Stream.cpp:153]   --->   Operation 151 'ret' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -516,23 +516,23 @@ The critical path consists of the following:
  <State 40>: 3.25ns
 The critical path consists of the following:
 	'phi' operation ('i') with incoming values : ('i', mnist_AXI_Stream.cpp:132) [91]  (0 ns)
-	'getelementptr' operation ('MemBank_B_addr', mnist_AXI_Stream.cpp:134) [98]  (0 ns)
-	'load' operation ('MemBank_B_load', mnist_AXI_Stream.cpp:134) on array 'MemBank_B', mnist_AXI_Stream.cpp:32 [99]  (3.25 ns)
+	'getelementptr' operation ('MemBank_B_addr', mnist_AXI_Stream.cpp:133) [98]  (0 ns)
+	'load' operation ('MemBank_B_load', mnist_AXI_Stream.cpp:133) on array 'MemBank_B', mnist_AXI_Stream.cpp:32 [99]  (3.25 ns)
 
  <State 41>: 6.51ns
 The critical path consists of the following:
-	'load' operation ('MemBank_B_load', mnist_AXI_Stream.cpp:134) on array 'MemBank_B', mnist_AXI_Stream.cpp:32 [99]  (3.25 ns)
-	'store' operation (mnist_AXI_Stream.cpp:134) of variable 'MemBank_B_load', mnist_AXI_Stream.cpp:134 on array 'MemBank_Out', mnist_AXI_Stream.cpp:32 [101]  (3.25 ns)
+	'load' operation ('MemBank_B_load', mnist_AXI_Stream.cpp:133) on array 'MemBank_B', mnist_AXI_Stream.cpp:32 [99]  (3.25 ns)
+	'store' operation (mnist_AXI_Stream.cpp:133) of variable 'MemBank_B_load', mnist_AXI_Stream.cpp:133 on array 'MemBank_Out', mnist_AXI_Stream.cpp:32 [101]  (3.25 ns)
 
  <State 42>: 3.25ns
 The critical path consists of the following:
-	'phi' operation ('i') with incoming values : ('i', mnist_AXI_Stream.cpp:137) [106]  (0 ns)
-	'getelementptr' operation ('MemBank_Out_addr_1', mnist_AXI_Stream.cpp:151) [117]  (0 ns)
-	'load' operation ('val', mnist_AXI_Stream.cpp:151) on array 'MemBank_Out', mnist_AXI_Stream.cpp:32 [118]  (3.25 ns)
+	'phi' operation ('i') with incoming values : ('i', mnist_AXI_Stream.cpp:136) [106]  (0 ns)
+	'getelementptr' operation ('MemBank_Out_addr_1', mnist_AXI_Stream.cpp:150) [117]  (0 ns)
+	'load' operation ('val', mnist_AXI_Stream.cpp:150) on array 'MemBank_Out', mnist_AXI_Stream.cpp:32 [118]  (3.25 ns)
 
  <State 43>: 3.25ns
 The critical path consists of the following:
-	'load' operation ('val', mnist_AXI_Stream.cpp:151) on array 'MemBank_Out', mnist_AXI_Stream.cpp:32 [118]  (3.25 ns)
+	'load' operation ('val', mnist_AXI_Stream.cpp:150) on array 'MemBank_Out', mnist_AXI_Stream.cpp:32 [118]  (3.25 ns)
 
  <State 44>: 0ns
 The critical path consists of the following:

@@ -1,7 +1,7 @@
 <profile>
 
 <ReportVersion>
-<Version>2018.3</Version>
+<Version>2018.3.1</Version>
 </ReportVersion>
 
 <UserAssignments>
@@ -17,7 +17,7 @@
 <PipelineType>none</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>8.585</EstimatedClockPeriod>
+<EstimatedClockPeriod>7.345</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
@@ -94,8 +94,8 @@
 <AreaEstimates>
 <Resources>
 <DSP48E>1</DSP48E>
-<FF>187</FF>
-<LUT>539</LUT>
+<FF>212</FF>
+<LUT>498</LUT>
 <BRAM_18K>0</BRAM_18K>
 </Resources>
 <AvailableResources>
@@ -291,17 +291,6 @@
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>16</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>output_r_q0</name>
-<Object>output_r</Object>
-<Type>array</Type>
-<Scope></Scope>
-<IOProtocol>ap_memory</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
 <Bits>16</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>

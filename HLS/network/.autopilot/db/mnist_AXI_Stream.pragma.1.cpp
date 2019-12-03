@@ -28692,7 +28692,6 @@ _ssdm_op_SpecInterface(0, "s_axilite", 1, 1, "", 0, 0, "", "", "", 0, 0, 0, 0, "
  1, 1, (int16_t*)SeparableConv2D_4_w_p, 1, 14);
 
  for(int i = 0; i < array_length; i++){
-
   MemBank_Out[i] = MemBank_B[i];
  }
 

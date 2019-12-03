@@ -1,7 +1,7 @@
 <profile>
 
 <ReportVersion>
-<Version>2018.3</Version>
+<Version>2018.3.1</Version>
 </ReportVersion>
 
 <UserAssignments>
@@ -17,29 +17,29 @@
 <PipelineType>none</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>6.900</EstimatedClockPeriod>
+<EstimatedClockPeriod>6.947</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>13857</Best-caseLatency>
-<Average-caseLatency>13857</Average-caseLatency>
-<Worst-caseLatency>13857</Worst-caseLatency>
-<Interval-min>13857</Interval-min>
-<Interval-max>13857</Interval-max>
+<Best-caseLatency>13465</Best-caseLatency>
+<Average-caseLatency>13465</Average-caseLatency>
+<Worst-caseLatency>13465</Worst-caseLatency>
+<Interval-min>13465</Interval-min>
+<Interval-max>13465</Interval-max>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <Loop1>
 <TripCount>8</TripCount>
-<Latency>13856</Latency>
-<IterationLatency>1732</IterationLatency>
+<Latency>13464</Latency>
+<IterationLatency>1683</IterationLatency>
 <Loop1.1>
 <TripCount>7</TripCount>
-<Latency>1729</Latency>
-<IterationLatency>247</IterationLatency>
+<Latency>1680</Latency>
+<IterationLatency>240</IterationLatency>
 <Loop1.1.1>
 <TripCount>7</TripCount>
-<Latency>245</Latency>
-<IterationLatency>35</IterationLatency>
+<Latency>238</Latency>
+<IterationLatency>34</IterationLatency>
 <Loop1.1.1.1>
 <TripCount>8</TripCount>
 <Latency>32</Latency>
@@ -55,8 +55,8 @@
 <Resources>
 <BRAM_18K>0</BRAM_18K>
 <DSP48E>1</DSP48E>
-<FF>260</FF>
-<LUT>435</LUT>
+<FF>218</FF>
+<LUT>373</LUT>
 </Resources>
 <AvailableResources>
 <BRAM_18K>280</BRAM_18K>

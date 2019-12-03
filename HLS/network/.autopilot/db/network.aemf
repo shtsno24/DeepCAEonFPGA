@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1575168423000">
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1575364704000">
   <ports id="1" name="input_data_V_data_V" type="PortType" originalName="input_data.V.data.V" bitwidth="16">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
@@ -177,7 +177,7 @@
     <controlOutputObjs>phi</controlOutputObjs>
     <controlOutputObjs>block_62</controlOutputObjs>
     <node_objs xsi:type="cdfg:CdfgNode" id="49" name="MemBank_A" lineNumber="32" originalName="MemBank_A" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." rtlName="MemBank_A_U" coreName="RAM" contextFuncName="network" bitwidth="16" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="32" fileDirectory="/home/shts/DeepCAEonFPGA" functionName="network"/>
+      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="32" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="network"/>
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>call</dataOutputObjs>
@@ -201,7 +201,7 @@
       <constName>empty</constName>
     </node_objs>
     <node_objs xsi:type="cdfg:CdfgNode" id="50" name="MemBank_B" lineNumber="32" originalName="MemBank_B" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." rtlName="MemBank_B_U" coreName="RAM" contextFuncName="network" bitwidth="16" opcode="alloca" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="32" fileDirectory="/home/shts/DeepCAEonFPGA" functionName="network"/>
+      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="32" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="network"/>
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>call</dataOutputObjs>
@@ -225,13 +225,13 @@
       <constName>empty</constName>
     </node_objs>
     <node_objs xsi:type="cdfg:CdfgNode" id="51" name="MemBank_Out" lineNumber="32" originalName="MemBank_Out" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." rtlName="MemBank_Out_U" coreName="RAM" contextFuncName="network" bitwidth="16" opcode="alloca" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="32" fileDirectory="/home/shts/DeepCAEonFPGA" functionName="network"/>
+      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="32" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="network"/>
       <dataOutputObjs>store</dataOutputObjs>
       <dataOutputObjs>load</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
     <node_objs xsi:type="cdfg:CdfgNode" id="55" name="node_55" lineNumber="41" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." contextFuncName="network" opcode="br" m_display="0" m_delay="1.76" m_topoIndex="4" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="41" fileDirectory="/home/shts/DeepCAEonFPGA" functionName="network"/>
+      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="41" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="network"/>
       <controlInputObjs>block_62</controlInputObjs>
     </node_objs>
     <fileValidLineNumbers fileName="mnist_AXI_Stream.cpp">
@@ -256,19 +256,19 @@
       <constName>empty</constName>
     </node_objs>
     <node_objs xsi:type="cdfg:CdfgNode" id="58" name="exitcond" lineNumber="41" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." rtlName="exitcond_fu_471_p2" contextFuncName="network" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="1.77" m_topoIndex="6" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="41" fileDirectory="/home/shts/DeepCAEonFPGA" functionName="network"/>
+      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="41" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="network"/>
       <dataInputObjs>phi</dataInputObjs>
       <dataOutputObjs>br</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
     <node_objs xsi:type="cdfg:CdfgNode" id="60" name="i_1" lineNumber="41" originalName="i" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." rtlName="i_1_fu_477_p2" contextFuncName="network" bitwidth="10" opcode="add" nodeLabel="1.0" m_display="0" m_delay="1.73" m_topoIndex="7" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="41" fileDirectory="/home/shts/DeepCAEonFPGA" functionName="network"/>
+      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="41" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="network"/>
       <dataInputObjs>phi</dataInputObjs>
       <dataOutputObjs>phi</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
     <node_objs xsi:type="cdfg:CdfgNode" id="61" name="node_61" lineNumber="41" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." contextFuncName="network" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="41" fileDirectory="/home/shts/DeepCAEonFPGA" functionName="network"/>
+      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="41" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="network"/>
       <dataInputObjs>icmp</dataInputObjs>
       <controlInputObjs>block_69</controlInputObjs>
       <controlInputObjs>block_90</controlInputObjs>
@@ -282,8 +282,8 @@
     <controlOutputObjs>phi</controlOutputObjs>
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>block_62</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="63" name="empty_29" lineNumber="42" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." contextFuncName="network" bitwidth="24" opcode="read" nodeLabel="1.0" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="42" fileDirectory="/home/shts/DeepCAEonFPGA" functionName="network"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="63" name="empty_30" lineNumber="42" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." contextFuncName="network" bitwidth="24" opcode="read" nodeLabel="1.0" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="42" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="network"/>
       <dataInputObjs>input_data_V_data_V</dataInputObjs>
       <dataInputObjs>input_data_V_keep_V</dataInputObjs>
       <dataInputObjs>input_data_V_strb_V</dataInputObjs>
@@ -294,13 +294,13 @@
       <dataOutputObjs>store</dataOutputObjs>
     </node_objs>
     <node_objs xsi:type="cdfg:CdfgNode" id="67" name="node_67" lineNumber="43" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." contextFuncName="network" opcode="store" nodeLabel="1.0" m_display="0" m_delay="3.25" m_topoIndex="13" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="43" fileDirectory="/home/shts/DeepCAEonFPGA" functionName="network"/>
+      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="43" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="network"/>
       <dataInputObjs>read</dataInputObjs>
       <dataInputObjs>phi</dataInputObjs>
       <dataInputObjs>alloca</dataInputObjs>
     </node_objs>
     <node_objs xsi:type="cdfg:CdfgNode" id="68" name="node_68" lineNumber="41" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." contextFuncName="network" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="41" fileDirectory="/home/shts/DeepCAEonFPGA" functionName="network"/>
+      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="41" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="network"/>
       <controlInputObjs>block_62</controlInputObjs>
     </node_objs>
     <fileValidLineNumbers fileName="mnist_AXI_Stream.cpp">
@@ -315,134 +315,134 @@
     <controlOutputObjs>phi</controlOutputObjs>
     <controlOutputObjs>block_96</controlOutputObjs>
     <node_objs xsi:type="cdfg:CdfgNode" id="70" name="node_70" lineNumber="46" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." rtlName="grp_padding2d_fix16_fu_307" contextFuncName="network" opcode="call" nodeLabel="1.0" nodeLatency="1" m_display="0" m_delay="7.42" m_topoIndex="15" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="46" fileDirectory="/home/shts/DeepCAEonFPGA" functionName="network"/>
+      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="46" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="network"/>
       <dataInputObjs>alloca</dataInputObjs>
       <dataInputObjs>alloca</dataInputObjs>
       <constName>padding2d_fix16</constName>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="71" name="node_71" lineNumber="50" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." rtlName="grp_depthwise_conv2d_fix_fu_463" contextFuncName="network" opcode="call" nodeLabel="3.0" nodeLatency="1" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="50" fileDirectory="/home/shts/DeepCAEonFPGA" functionName="network"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="71" name="node_71" lineNumber="50" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." rtlName="grp_depthwise_conv2d_fix_fu_445" contextFuncName="network" opcode="call" nodeLabel="3.0" nodeLatency="1" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="50" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="network"/>
       <dataInputObjs>alloca</dataInputObjs>
       <dataInputObjs>alloca</dataInputObjs>
       <constName>depthwise_conv2d_fix</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="72" name="node_72" lineNumber="55" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." rtlName="grp_pointwise_conv2d_fix_fu_453" contextFuncName="network" opcode="call" nodeLabel="5.0" nodeLatency="1" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="55" fileDirectory="/home/shts/DeepCAEonFPGA" functionName="network"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="72" name="node_72" lineNumber="55" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." rtlName="grp_pointwise_conv2d_fix_fu_461" contextFuncName="network" opcode="call" nodeLabel="5.0" nodeLatency="1" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="55" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="network"/>
       <dataInputObjs>alloca</dataInputObjs>
       <dataInputObjs>alloca</dataInputObjs>
       <constName>pointwise_conv2d_fix</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="73" name="node_73" lineNumber="60" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." rtlName="grp_max_pooling2d_fix16_fu_325" contextFuncName="network" opcode="call" nodeLabel="7.0" nodeLatency="1" m_display="0" m_delay="1.76" m_topoIndex="18" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="60" fileDirectory="/home/shts/DeepCAEonFPGA" functionName="network"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="73" name="node_73" lineNumber="60" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." rtlName="grp_max_pooling2d_fix16_fu_373" contextFuncName="network" opcode="call" nodeLabel="7.0" nodeLatency="1" m_display="0" m_delay="1.76" m_topoIndex="18" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="60" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="network"/>
       <dataInputObjs>alloca</dataInputObjs>
       <dataInputObjs>alloca</dataInputObjs>
       <constName>max_pooling2d_fix16</constName>
       <constName>empty</constName>
     </node_objs>
     <node_objs xsi:type="cdfg:CdfgNode" id="74" name="node_74" lineNumber="64" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." rtlName="grp_padding2d_fix16_fu_307" contextFuncName="network" opcode="call" nodeLabel="9.0" nodeLatency="1" m_display="0" m_delay="7.42" m_topoIndex="19" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="64" fileDirectory="/home/shts/DeepCAEonFPGA" functionName="network"/>
+      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="64" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="network"/>
       <dataInputObjs>alloca</dataInputObjs>
       <dataInputObjs>alloca</dataInputObjs>
       <constName>padding2d_fix16</constName>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="75" name="node_75" lineNumber="68" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." rtlName="grp_depthwise_conv2d_fix_2_fu_346" contextFuncName="network" opcode="call" nodeLabel="11.0" nodeLatency="1" m_display="0" m_delay="1.76" m_topoIndex="20" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="68" fileDirectory="/home/shts/DeepCAEonFPGA" functionName="network"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="75" name="node_75" lineNumber="68" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." rtlName="grp_depthwise_conv2d_fix_2_fu_325" contextFuncName="network" opcode="call" nodeLabel="11.0" nodeLatency="1" m_display="0" m_delay="1.76" m_topoIndex="20" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="68" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="network"/>
       <dataInputObjs>alloca</dataInputObjs>
       <dataInputObjs>alloca</dataInputObjs>
       <constName>depthwise_conv2d_fix_2</constName>
       <constName>empty</constName>
     </node_objs>
     <node_objs xsi:type="cdfg:CdfgNode" id="76" name="node_76" lineNumber="73" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." rtlName="grp_pointwise_conv2d_fix_1_fu_404" contextFuncName="network" opcode="call" nodeLabel="13.0" nodeLatency="1" m_display="0" m_topoIndex="21" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="73" fileDirectory="/home/shts/DeepCAEonFPGA" functionName="network"/>
+      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="73" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="network"/>
       <dataInputObjs>alloca</dataInputObjs>
       <dataInputObjs>alloca</dataInputObjs>
       <constName>pointwise_conv2d_fix_1</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="77" name="node_77" lineNumber="78" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." rtlName="grp_max_pooling2d_fix16_fu_325" contextFuncName="network" opcode="call" nodeLabel="15.0" nodeLatency="1" m_display="0" m_delay="1.76" m_topoIndex="22" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="78" fileDirectory="/home/shts/DeepCAEonFPGA" functionName="network"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="77" name="node_77" lineNumber="78" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." rtlName="grp_max_pooling2d_fix16_fu_373" contextFuncName="network" opcode="call" nodeLabel="15.0" nodeLatency="1" m_display="0" m_delay="1.76" m_topoIndex="22" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="78" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="network"/>
       <dataInputObjs>alloca</dataInputObjs>
       <dataInputObjs>alloca</dataInputObjs>
       <constName>max_pooling2d_fix16</constName>
       <constName>empty</constName>
     </node_objs>
     <node_objs xsi:type="cdfg:CdfgNode" id="78" name="node_78" lineNumber="82" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." rtlName="grp_padding2d_fix16_fu_307" contextFuncName="network" opcode="call" nodeLabel="17.0" nodeLatency="1" m_display="0" m_delay="7.42" m_topoIndex="23" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="82" fileDirectory="/home/shts/DeepCAEonFPGA" functionName="network"/>
+      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="82" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="network"/>
       <dataInputObjs>alloca</dataInputObjs>
       <dataInputObjs>alloca</dataInputObjs>
       <constName>padding2d_fix16</constName>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="79" name="node_79" lineNumber="86" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." rtlName="grp_depthwise_conv2d_fix_1_fu_370" contextFuncName="network" opcode="call" nodeLabel="19.0" nodeLatency="1" m_display="0" m_delay="1.76" m_topoIndex="24" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="86" fileDirectory="/home/shts/DeepCAEonFPGA" functionName="network"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="79" name="node_79" lineNumber="86" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." rtlName="grp_depthwise_conv2d_fix_1_fu_349" contextFuncName="network" opcode="call" nodeLabel="19.0" nodeLatency="1" m_display="0" m_delay="1.76" m_topoIndex="24" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="86" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="network"/>
       <dataInputObjs>alloca</dataInputObjs>
       <dataInputObjs>alloca</dataInputObjs>
       <constName>depthwise_conv2d_fix_1</constName>
       <constName>empty</constName>
     </node_objs>
     <node_objs xsi:type="cdfg:CdfgNode" id="80" name="node_80" lineNumber="91" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." rtlName="grp_pointwise_conv2d_fix_2_fu_414" contextFuncName="network" opcode="call" nodeLabel="21.0" nodeLatency="1" m_display="0" m_topoIndex="25" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="91" fileDirectory="/home/shts/DeepCAEonFPGA" functionName="network"/>
+      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="91" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="network"/>
       <dataInputObjs>alloca</dataInputObjs>
       <dataInputObjs>alloca</dataInputObjs>
       <constName>pointwise_conv2d_fix_2</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="81" name="node_81" lineNumber="96" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." rtlName="grp_up_sampling2d_fix16_fu_432" contextFuncName="network" opcode="call" nodeLabel="23.0" nodeLatency="1" m_display="0" m_delay="1.76" m_topoIndex="26" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="96" fileDirectory="/home/shts/DeepCAEonFPGA" functionName="network"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="81" name="node_81" lineNumber="96" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." rtlName="grp_up_sampling2d_fix16_fu_424" contextFuncName="network" opcode="call" nodeLabel="23.0" nodeLatency="1" m_display="0" m_delay="1.76" m_topoIndex="26" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="96" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="network"/>
       <dataInputObjs>alloca</dataInputObjs>
       <dataInputObjs>alloca</dataInputObjs>
       <constName>up_sampling2d_fix16</constName>
       <constName>empty</constName>
     </node_objs>
     <node_objs xsi:type="cdfg:CdfgNode" id="82" name="node_82" lineNumber="100" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." rtlName="grp_padding2d_fix16_fu_307" contextFuncName="network" opcode="call" nodeLabel="25.0" nodeLatency="1" m_display="0" m_delay="7.42" m_topoIndex="27" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="100" fileDirectory="/home/shts/DeepCAEonFPGA" functionName="network"/>
+      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="100" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="network"/>
       <dataInputObjs>alloca</dataInputObjs>
       <dataInputObjs>alloca</dataInputObjs>
       <constName>padding2d_fix16</constName>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="83" name="node_83" lineNumber="104" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." rtlName="grp_depthwise_conv2d_fix_1_fu_370" contextFuncName="network" opcode="call" nodeLabel="27.0" nodeLatency="1" m_display="0" m_delay="1.76" m_topoIndex="28" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="104" fileDirectory="/home/shts/DeepCAEonFPGA" functionName="network"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="83" name="node_83" lineNumber="104" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." rtlName="grp_depthwise_conv2d_fix_1_fu_349" contextFuncName="network" opcode="call" nodeLabel="27.0" nodeLatency="1" m_display="0" m_delay="1.76" m_topoIndex="28" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="104" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="network"/>
       <dataInputObjs>alloca</dataInputObjs>
       <dataInputObjs>alloca</dataInputObjs>
       <constName>depthwise_conv2d_fix_1</constName>
       <constName>empty</constName>
     </node_objs>
     <node_objs xsi:type="cdfg:CdfgNode" id="84" name="node_84" lineNumber="109" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." rtlName="grp_pointwise_conv2d_fix_3_fu_394" contextFuncName="network" opcode="call" nodeLabel="29.0" nodeLatency="1" m_display="0" m_topoIndex="29" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="109" fileDirectory="/home/shts/DeepCAEonFPGA" functionName="network"/>
+      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="109" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="network"/>
       <dataInputObjs>alloca</dataInputObjs>
       <dataInputObjs>alloca</dataInputObjs>
       <constName>pointwise_conv2d_fix_3</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="85" name="node_85" lineNumber="114" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." rtlName="grp_up_sampling2d_fix16_fu_432" contextFuncName="network" opcode="call" nodeLabel="31.0" nodeLatency="1" m_display="0" m_delay="1.76" m_topoIndex="30" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="114" fileDirectory="/home/shts/DeepCAEonFPGA" functionName="network"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="85" name="node_85" lineNumber="114" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." rtlName="grp_up_sampling2d_fix16_fu_424" contextFuncName="network" opcode="call" nodeLabel="31.0" nodeLatency="1" m_display="0" m_delay="1.76" m_topoIndex="30" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="114" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="network"/>
       <dataInputObjs>alloca</dataInputObjs>
       <dataInputObjs>alloca</dataInputObjs>
       <constName>up_sampling2d_fix16</constName>
       <constName>empty</constName>
     </node_objs>
     <node_objs xsi:type="cdfg:CdfgNode" id="86" name="node_86" lineNumber="118" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." rtlName="grp_padding2d_fix16_fu_307" contextFuncName="network" opcode="call" nodeLabel="33.0" nodeLatency="1" m_display="0" m_delay="7.42" m_topoIndex="31" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="118" fileDirectory="/home/shts/DeepCAEonFPGA" functionName="network"/>
+      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="118" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="network"/>
       <dataInputObjs>alloca</dataInputObjs>
       <dataInputObjs>alloca</dataInputObjs>
       <constName>padding2d_fix16</constName>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="87" name="node_87" lineNumber="122" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." rtlName="grp_depthwise_conv2d_fix_2_fu_346" contextFuncName="network" opcode="call" nodeLabel="35.0" nodeLatency="1" m_display="0" m_delay="1.76" m_topoIndex="32" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="122" fileDirectory="/home/shts/DeepCAEonFPGA" functionName="network"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="87" name="node_87" lineNumber="122" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." rtlName="grp_depthwise_conv2d_fix_2_fu_325" contextFuncName="network" opcode="call" nodeLabel="35.0" nodeLatency="1" m_display="0" m_delay="1.76" m_topoIndex="32" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="122" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="network"/>
       <dataInputObjs>alloca</dataInputObjs>
       <dataInputObjs>alloca</dataInputObjs>
       <constName>depthwise_conv2d_fix_2</constName>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="88" name="node_88" lineNumber="127" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." rtlName="grp_pointwise_conv2d_fix_4_fu_424" contextFuncName="network" opcode="call" nodeLabel="37.0" nodeLatency="1" m_display="0" m_topoIndex="33" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="127" fileDirectory="/home/shts/DeepCAEonFPGA" functionName="network"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="88" name="node_88" lineNumber="127" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." rtlName="grp_pointwise_conv2d_fix_4_fu_453" contextFuncName="network" opcode="call" nodeLabel="37.0" nodeLatency="1" m_display="0" m_topoIndex="33" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="127" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="network"/>
       <dataInputObjs>alloca</dataInputObjs>
       <dataInputObjs>alloca</dataInputObjs>
       <constName>pointwise_conv2d_fix_4</constName>
     </node_objs>
     <node_objs xsi:type="cdfg:CdfgNode" id="89" name="node_89" lineNumber="132" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." contextFuncName="network" opcode="br" nodeLabel="38.0" m_display="0" m_delay="1.76" m_topoIndex="34" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="132" fileDirectory="/home/shts/DeepCAEonFPGA" functionName="network"/>
+      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="132" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="network"/>
       <controlInputObjs>block_96</controlInputObjs>
     </node_objs>
     <fileValidLineNumbers fileName="mnist_AXI_Stream.cpp">
@@ -485,20 +485,20 @@
       <controlInputObjs>block_103</controlInputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="92" name="tmp_51" lineNumber="132" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." rtlName="tmp_51_fu_493_p2" contextFuncName="network" bitwidth="1" opcode="icmp" nodeLabel="39.0" m_display="0" m_delay="1.77" m_topoIndex="36" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="132" fileDirectory="/home/shts/DeepCAEonFPGA" functionName="network"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="92" name="tmp_50" lineNumber="132" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." rtlName="tmp_50_fu_493_p2" contextFuncName="network" bitwidth="1" opcode="icmp" nodeLabel="39.0" m_display="0" m_delay="1.77" m_topoIndex="36" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="132" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="network"/>
       <dataInputObjs>phi</dataInputObjs>
       <dataOutputObjs>br</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
     <node_objs xsi:type="cdfg:CdfgNode" id="94" name="i_2" lineNumber="132" originalName="i" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." rtlName="i_2_fu_499_p2" contextFuncName="network" bitwidth="10" opcode="add" nodeLabel="39.0" m_display="0" m_delay="1.73" m_topoIndex="37" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="132" fileDirectory="/home/shts/DeepCAEonFPGA" functionName="network"/>
+      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="132" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="network"/>
       <dataInputObjs>phi</dataInputObjs>
       <dataOutputObjs>phi</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
     <node_objs xsi:type="cdfg:CdfgNode" id="95" name="node_95" lineNumber="132" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." contextFuncName="network" opcode="br" nodeLabel="39.0" m_display="0" m_topoIndex="38" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="132" fileDirectory="/home/shts/DeepCAEonFPGA" functionName="network"/>
+      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="132" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="network"/>
       <dataInputObjs>icmp</dataInputObjs>
       <controlInputObjs>block_103</controlInputObjs>
       <controlInputObjs>.preheader.preheader</controlInputObjs>
@@ -512,24 +512,24 @@
     <controlOutputObjs>phi</controlOutputObjs>
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>block_96</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="99" name="MemBank_B_load" lineNumber="134" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." contextFuncName="network" bitwidth="16" opcode="load" nodeLabel="39.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="41" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="134" fileDirectory="/home/shts/DeepCAEonFPGA" functionName="network"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="99" name="MemBank_B_load" lineNumber="133" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." contextFuncName="network" bitwidth="16" opcode="load" nodeLabel="39.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="41" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="133" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="network"/>
       <dataInputObjs>phi</dataInputObjs>
       <dataInputObjs>alloca</dataInputObjs>
       <dataOutputObjs>store</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="101" name="node_101" lineNumber="134" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." contextFuncName="network" opcode="store" nodeLabel="40.0" m_display="0" m_delay="3.25" m_topoIndex="44" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="134" fileDirectory="/home/shts/DeepCAEonFPGA" functionName="network"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="101" name="node_101" lineNumber="133" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." contextFuncName="network" opcode="store" nodeLabel="40.0" m_display="0" m_delay="3.25" m_topoIndex="44" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="133" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="network"/>
       <dataInputObjs>load</dataInputObjs>
       <dataInputObjs>phi</dataInputObjs>
       <dataInputObjs>alloca</dataInputObjs>
     </node_objs>
     <node_objs xsi:type="cdfg:CdfgNode" id="102" name="node_102" lineNumber="132" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." contextFuncName="network" opcode="br" nodeLabel="40.0" m_display="0" m_topoIndex="45" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="132" fileDirectory="/home/shts/DeepCAEonFPGA" functionName="network"/>
+      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="132" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="network"/>
       <controlInputObjs>block_96</controlInputObjs>
     </node_objs>
     <fileValidLineNumbers fileName="mnist_AXI_Stream.cpp">
-      <validLinenumbers>134</validLinenumbers>
+      <validLinenumbers>133</validLinenumbers>
       <validLinenumbers>132</validLinenumbers>
     </fileValidLineNumbers>
   </blocks>
@@ -538,24 +538,24 @@
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>phi</controlOutputObjs>
     <controlOutputObjs>.preheader</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="104" name="node_104" lineNumber="137" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." contextFuncName="network" opcode="br" nodeLabel="39.0" m_display="0" m_delay="1.76" m_topoIndex="42" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="137" fileDirectory="/home/shts/DeepCAEonFPGA" functionName="network"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="104" name="node_104" lineNumber="136" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." contextFuncName="network" opcode="br" nodeLabel="39.0" m_display="0" m_delay="1.76" m_topoIndex="42" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="136" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="network"/>
       <controlInputObjs>.preheader</controlInputObjs>
     </node_objs>
     <fileValidLineNumbers fileName="mnist_AXI_Stream.cpp">
-      <validLinenumbers>137</validLinenumbers>
+      <validLinenumbers>136</validLinenumbers>
     </fileValidLineNumbers>
   </blocks>
   <blocks id="124" name="block_124" type="BlockType">
     <controlInputObjs>.preheader</controlInputObjs>
     <controlOutputObjs>br</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="123" name="node_123" lineNumber="154" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." contextFuncName="network" opcode="ret" nodeLabel="44.0" nodeLatency="1" m_display="0" m_topoIndex="57" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="154" fileDirectory="/home/shts/DeepCAEonFPGA" functionName="network"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="123" name="node_123" lineNumber="153" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." contextFuncName="network" opcode="ret" nodeLabel="44.0" nodeLatency="1" m_display="0" m_topoIndex="57" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="153" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="network"/>
       <dataOutputObjs>ap_return</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
     <fileValidLineNumbers fileName="mnist_AXI_Stream.cpp">
-      <validLinenumbers>154</validLinenumbers>
+      <validLinenumbers>153</validLinenumbers>
     </fileValidLineNumbers>
   </blocks>
   <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" id="590" pipe_depth="3" RegionName="Loop 3">
@@ -577,26 +577,26 @@
         <controlInputObjs>.preheader.preheader</controlInputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="107" name="tmp_53" lineNumber="137" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." rtlName="tmp_53_fu_510_p2" contextFuncName="network" bitwidth="1" opcode="icmp" nodeLabel="41.0" m_display="0" m_delay="1.77" m_topoIndex="47" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="137" fileDirectory="/home/shts/DeepCAEonFPGA" functionName="network"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="107" name="tmp_52" lineNumber="136" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." rtlName="tmp_52_fu_510_p2" contextFuncName="network" bitwidth="1" opcode="icmp" nodeLabel="41.0" m_display="0" m_delay="1.77" m_topoIndex="47" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="136" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="network"/>
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>br</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="109" name="i_3" lineNumber="137" originalName="i" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." rtlName="i_3_fu_516_p2" contextFuncName="network" bitwidth="10" opcode="add" nodeLabel="41.0" m_display="0" m_delay="1.73" m_topoIndex="48" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="137" fileDirectory="/home/shts/DeepCAEonFPGA" functionName="network"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="109" name="i_3" lineNumber="136" originalName="i" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." rtlName="i_3_fu_516_p2" contextFuncName="network" bitwidth="10" opcode="add" nodeLabel="41.0" m_display="0" m_delay="1.73" m_topoIndex="48" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="136" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="network"/>
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>phi</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="110" name="node_110" lineNumber="137" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." contextFuncName="network" opcode="br" nodeLabel="41.0" m_display="0" m_topoIndex="49" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="137" fileDirectory="/home/shts/DeepCAEonFPGA" functionName="network"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="110" name="node_110" lineNumber="136" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." contextFuncName="network" opcode="br" nodeLabel="41.0" m_display="0" m_topoIndex="49" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="136" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="network"/>
         <dataInputObjs>icmp</dataInputObjs>
         <controlInputObjs>block_122</controlInputObjs>
         <controlInputObjs>block_124</controlInputObjs>
       </node_objs>
       <fileValidLineNumbers fileName="mnist_AXI_Stream.cpp">
-        <validLinenumbers>137</validLinenumbers>
+        <validLinenumbers>136</validLinenumbers>
       </fileValidLineNumbers>
     </basic_blocks>
     <basic_blocks id="122" name="block_122" type="BlockType">
@@ -604,26 +604,26 @@
       <controlOutputObjs>phi</controlOutputObjs>
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>.preheader</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="115" name="tmp_user_V" lineNumber="145" originalName="tmp.user.V" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." rtlName="tmp_user_V_fu_527_p2" contextFuncName="network" bitwidth="1" opcode="icmp" nodeLabel="41.0" m_display="0" m_delay="1.77" m_topoIndex="51" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="145" fileDirectory="/home/shts/DeepCAEonFPGA" functionName="network"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="115" name="tmp_user_V" lineNumber="144" originalName="tmp.user.V" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." rtlName="tmp_user_V_fu_527_p2" contextFuncName="network" bitwidth="1" opcode="icmp" nodeLabel="41.0" m_display="0" m_delay="1.77" m_topoIndex="51" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="144" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="network"/>
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>write</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="116" name="tmp_last_V" lineNumber="148" originalName="tmp.last.V" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." rtlName="tmp_last_V_fu_533_p2" contextFuncName="network" bitwidth="1" opcode="icmp" nodeLabel="41.0" m_display="0" m_delay="1.77" m_topoIndex="52" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="148" fileDirectory="/home/shts/DeepCAEonFPGA" functionName="network"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="116" name="tmp_last_V" lineNumber="147" originalName="tmp.last.V" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." rtlName="tmp_last_V_fu_533_p2" contextFuncName="network" bitwidth="1" opcode="icmp" nodeLabel="41.0" m_display="0" m_delay="1.77" m_topoIndex="52" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="147" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="network"/>
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>write</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="118" name="tmp_data_V_1" lineNumber="151" originalName="val" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." contextFuncName="network" bitwidth="16" opcode="load" nodeLabel="41.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="54" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="151" fileDirectory="/home/shts/DeepCAEonFPGA" functionName="network"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="118" name="tmp_data_V_1" lineNumber="150" originalName="val" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." contextFuncName="network" bitwidth="16" opcode="load" nodeLabel="41.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="54" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="150" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="network"/>
         <dataInputObjs>phi</dataInputObjs>
         <dataInputObjs>alloca</dataInputObjs>
         <dataOutputObjs>write</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="119" name="node_119" lineNumber="152" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." contextFuncName="network" opcode="write" nodeLabel="42.0" nodeLatency="1" m_display="0" m_topoIndex="55" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="152" fileDirectory="/home/shts/DeepCAEonFPGA" functionName="network"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="119" name="node_119" lineNumber="151" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." contextFuncName="network" opcode="write" nodeLabel="42.0" nodeLatency="1" m_display="0" m_topoIndex="55" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="151" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="network"/>
         <dataInputObjs>load</dataInputObjs>
         <dataInputObjs>icmp</dataInputObjs>
         <dataInputObjs>icmp</dataInputObjs>
@@ -636,16 +636,16 @@
         <dataOutputObjs>output_data_V_dest_V</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="121" name="node_121" lineNumber="137" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." contextFuncName="network" opcode="br" nodeLabel="43.0" m_display="0" m_topoIndex="56" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="137" fileDirectory="/home/shts/DeepCAEonFPGA" functionName="network"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="121" name="node_121" lineNumber="136" fileName="mnist_AXI_Stream.cpp" fileDirectory=".." contextFuncName="network" opcode="br" nodeLabel="43.0" m_display="0" m_topoIndex="56" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="mnist_AXI_Stream.cpp" linenumber="136" fileDirectory="/home/masudalab/DeepCAEonFPGA" functionName="network"/>
         <controlInputObjs>.preheader</controlInputObjs>
       </node_objs>
       <fileValidLineNumbers fileName="mnist_AXI_Stream.cpp">
-        <validLinenumbers>145</validLinenumbers>
-        <validLinenumbers>148</validLinenumbers>
+        <validLinenumbers>144</validLinenumbers>
+        <validLinenumbers>147</validLinenumbers>
+        <validLinenumbers>150</validLinenumbers>
         <validLinenumbers>151</validLinenumbers>
-        <validLinenumbers>152</validLinenumbers>
-        <validLinenumbers>137</validLinenumbers>
+        <validLinenumbers>136</validLinenumbers>
       </fileValidLineNumbers>
     </basic_blocks>
   </regions>
@@ -695,20 +695,17 @@
   <ScheduleInfo time="43"/>
   <ScheduleInfo time="44"/>
   <ScheduleInfo time="45"/>
+  <regnodes realName="tmp_51_reg_556">
+    <nodeIds>97</nodeIds>
+  </regnodes>
   <regnodes realName="tmp_user_V_reg_575">
     <nodeIds>115</nodeIds>
   </regnodes>
-  <regnodes realName="tmp_51_reg_547">
-    <nodeIds>92</nodeIds>
-  </regnodes>
-  <regnodes realName="tmp_52_reg_556">
-    <nodeIds>97</nodeIds>
+  <regnodes realName="tmp_52_reg_566">
+    <nodeIds>107</nodeIds>
   </regnodes>
   <regnodes realName="i_1_reg_542">
     <nodeIds>60</nodeIds>
-  </regnodes>
-  <regnodes realName="tmp_53_reg_566">
-    <nodeIds>107</nodeIds>
   </regnodes>
   <regnodes realName="i2_reg_296">
     <nodeIds>106</nodeIds>
@@ -737,14 +734,14 @@
   <regnodes realName="tmp_data_V_1_reg_590">
     <nodeIds>118</nodeIds>
   </regnodes>
+  <regnodes realName="tmp_50_reg_547">
+    <nodeIds>92</nodeIds>
+  </regnodes>
   <expressionNodes realName="MemBank_Out_alloca_fu_178">
     <nodeIds>51</nodeIds>
   </expressionNodes>
   <expressionNodes realName="i_phi_fu_278">
     <nodeIds>57</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="tmp_51_fu_493">
-    <nodeIds>92</nodeIds>
   </expressionNodes>
   <expressionNodes realName="MemBank_A_addr_gep_fu_229">
     <nodeIds>66</nodeIds>
@@ -752,11 +749,11 @@
   <expressionNodes realName="i1_phi_fu_289">
     <nodeIds>91</nodeIds>
   </expressionNodes>
+  <expressionNodes realName="tmp_52_fu_510">
+    <nodeIds>107</nodeIds>
+  </expressionNodes>
   <expressionNodes realName="tmp_data_V_fu_483">
     <nodeIds>64</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="tmp_53_fu_510">
-    <nodeIds>107</nodeIds>
   </expressionNodes>
   <expressionNodes realName="tmp_last_V_fu_533">
     <nodeIds>116</nodeIds>
@@ -773,14 +770,17 @@
   <expressionNodes realName="i2_phi_fu_300">
     <nodeIds>106</nodeIds>
   </expressionNodes>
+  <expressionNodes realName="tmp_51_fu_505">
+    <nodeIds>97</nodeIds>
+  </expressionNodes>
   <expressionNodes realName="MemBank_Out_addr_gep_fu_253">
     <nodeIds>100</nodeIds>
   </expressionNodes>
+  <expressionNodes realName="tmp_50_fu_493">
+    <nodeIds>92</nodeIds>
+  </expressionNodes>
   <expressionNodes realName="i2_cast1_fu_522">
     <nodeIds>112</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="tmp_52_fu_505">
-    <nodeIds>97</nodeIds>
   </expressionNodes>
   <expressionNodes realName="MemBank_Out_addr_1_gep_fu_266">
     <nodeIds>117</nodeIds>
@@ -803,32 +803,33 @@
   <expressionNodes realName="tmp_s_fu_488">
     <nodeIds>65</nodeIds>
   </expressionNodes>
-  <moduleNodes realName="grp_pointwise_conv2d_fix_2_fu_414">
-    <nodeIds>80</nodeIds>
+  <moduleNodes realName="grp_depthwise_conv2d_fix_fu_445">
+    <nodeIds>71</nodeIds>
   </moduleNodes>
-  <moduleNodes realName="grp_max_pooling2d_fix16_fu_325">
-    <nodeIds>73</nodeIds>
-    <nodeIds>77</nodeIds>
-  </moduleNodes>
-  <moduleNodes realName="grp_up_sampling2d_fix16_fu_432">
+  <moduleNodes realName="grp_up_sampling2d_fix16_fu_424">
     <nodeIds>81</nodeIds>
     <nodeIds>85</nodeIds>
   </moduleNodes>
-  <moduleNodes realName="grp_depthwise_conv2d_fix_fu_463">
-    <nodeIds>71</nodeIds>
-  </moduleNodes>
-  <moduleNodes realName="grp_depthwise_conv2d_fix_2_fu_346">
+  <moduleNodes realName="grp_depthwise_conv2d_fix_2_fu_325">
     <nodeIds>75</nodeIds>
     <nodeIds>87</nodeIds>
   </moduleNodes>
-  <moduleNodes realName="grp_pointwise_conv2d_fix_1_fu_404">
-    <nodeIds>76</nodeIds>
+  <moduleNodes realName="grp_pointwise_conv2d_fix_2_fu_414">
+    <nodeIds>80</nodeIds>
   </moduleNodes>
-  <moduleNodes realName="grp_pointwise_conv2d_fix_fu_453">
+  <moduleNodes realName="grp_depthwise_conv2d_fix_1_fu_349">
+    <nodeIds>79</nodeIds>
+    <nodeIds>83</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_max_pooling2d_fix16_fu_373">
+    <nodeIds>73</nodeIds>
+    <nodeIds>77</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_pointwise_conv2d_fix_fu_461">
     <nodeIds>72</nodeIds>
   </moduleNodes>
-  <moduleNodes realName="grp_pointwise_conv2d_fix_4_fu_424">
-    <nodeIds>88</nodeIds>
+  <moduleNodes realName="grp_pointwise_conv2d_fix_1_fu_404">
+    <nodeIds>76</nodeIds>
   </moduleNodes>
   <moduleNodes realName="grp_pointwise_conv2d_fix_3_fu_394">
     <nodeIds>84</nodeIds>
@@ -840,14 +841,13 @@
     <nodeIds>82</nodeIds>
     <nodeIds>86</nodeIds>
   </moduleNodes>
-  <moduleNodes realName="grp_depthwise_conv2d_fix_1_fu_370">
-    <nodeIds>79</nodeIds>
-    <nodeIds>83</nodeIds>
+  <moduleNodes realName="grp_pointwise_conv2d_fix_4_fu_453">
+    <nodeIds>88</nodeIds>
   </moduleNodes>
   <ioNodes realName="grp_write_fu_200">
     <nodeIds>119</nodeIds>
   </ioNodes>
-  <ioNodes realName="empty_29_read_fu_182">
+  <ioNodes realName="empty_30_read_fu_182">
     <nodeIds>63</nodeIds>
   </ioNodes>
   <memoryPorts dataString="MemBank_A">
@@ -1375,7 +1375,7 @@
     </transitions>
   </fsm>
   <CFGRegionsRoot>
-    <cfgRegions mId="1" mTag="network" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="706018" mMaxLatency="1907035">
+    <cfgRegions mId="1" mTag="network" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="702490" mMaxLatency="1919971">
       <subRegions>2</subRegions>
       <subRegions>3</subRegions>
       <subRegions>4</subRegions>
@@ -1394,7 +1394,7 @@
       <basicBlocks>69</basicBlocks>
       <mDfPipe/>
     </cfgRegions>
-    <cfgRegions mId="4" mTag="Region 1" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="702876" mMaxLatency="1903893">
+    <cfgRegions mId="4" mTag="Region 1" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="699348" mMaxLatency="1916829">
       <basicBlocks>90</basicBlocks>
       <mDfPipe/>
     </cfgRegions>

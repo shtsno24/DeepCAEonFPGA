@@ -1,9 +1,9 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'pointwise_conv2d_fix_4'" level="0">
-<item name = "Date">Sun Dec  1 11:46:58 2019
+<item name = "Date">Tue Dec  3 18:18:18 2019
 </item>
-<item name = "Version">2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)</item>
+<item name = "Version">2018.3.1 (Build 2489210 on Tue Mar 26 04:40:43 MDT 2019)</item>
 <item name = "Project">HLS</item>
 <item name = "Solution">network</item>
 <item name = "Product family">zynq</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">52585, 52585, 52585, 52585, none</column>
+<column name="">51801, 51801, 51801, 51801, none</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,8 +35,8 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- Loop 1">52584, 52584, 1878, -, -, 28, no</column>
-<column name=" + Loop 1.1">1876, 1876, 67, -, -, 28, no</column>
+<column name="- Loop 1">51800, 51800, 1850, -, -, 28, no</column>
+<column name=" + Loop 1.1">1848, 1848, 66, -, -, 28, no</column>
 <column name="  ++ Loop 1.1.1">64, 64, 4, -, -, 16, no</column>
 </table>
 </item>

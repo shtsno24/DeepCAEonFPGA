@@ -1,5 +1,5 @@
 // ==============================================================
-// File generated on Sat Nov 30 13:42:09 JST 2019
+// File generated on Tue Dec 03 18:19:00 JST 2019
 // Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3.1 (64-bit)
 // SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
 // IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
@@ -248,28 +248,29 @@ uint8_t relu, uint8_t fractal_width){
 
 
 
+ int16_t buffer;
 
     for(uint16_t out_d = 0; out_d < output_depth; out_d++){
         for(uint16_t out_h = 0; out_h < output_height; out_h++){
             for(uint16_t out_w = 0; out_w < output_width; out_w++){
-                output[out_d * output_height * output_width + out_h * output_width + out_w] = 0;
-                for(uint16_t k_h = 0; k_h < kernel_height; k_h++){
+             buffer = bias[out_d];
+             for(uint16_t k_h = 0; k_h < kernel_height; k_h++){
+
                     for(uint16_t k_w = 0; k_w < kernel_width; k_w++){
-                        output[out_d * output_height * output_width + out_h * output_width + out_w] +=
+
+                     buffer +=
                                 (int16_t)(((int32_t)input[out_d * input_height * input_width + (out_h + k_h) * input_width + (out_w + k_w)] *
                                             (int32_t)kernel[(out_d * kernel_height * kernel_width) + (k_h * kernel_width) + k_w])>> fractal_width);
                     }
                 }
-                output[out_d * output_height * output_width + out_h * output_width + out_w] += bias[out_d];
-
-                if(relu == 1){
-                    if(output[out_d * output_height * output_width + out_h * output_width + out_w] < 0){
-                        output[out_d * output_height * output_width + out_h * output_width + out_w] = 0;
-                    }
+                if(relu == 1 && buffer < 0){
+                 buffer = 0;
                 }
+                output[out_d * output_height * output_width + out_h * output_width + out_w] = buffer;
             }
         }
     }
+
     return(0);
 }
 

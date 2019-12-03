@@ -1,7 +1,7 @@
 <profile>
 
 <ReportVersion>
-<Version>2018.3</Version>
+<Version>2018.3.1</Version>
 </ReportVersion>
 
 <UserAssignments>
@@ -125,7 +125,7 @@
 <Resources>
 <DSP48E>0</DSP48E>
 <FF>452</FF>
-<LUT>958</LUT>
+<LUT>902</LUT>
 <BRAM_18K>0</BRAM_18K>
 </Resources>
 <AvailableResources>

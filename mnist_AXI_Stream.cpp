@@ -1,4 +1,4 @@
-/*
+/*//
  * author : shtsno24
  * Date : 2019-11-26 10:04:07.898723
  * Language : c
@@ -130,7 +130,6 @@ int network(axis &input_data, axis &output_data) {
 	1, 1, (int16_t*)SeparableConv2D_4_w_p, 1, fractal_width_SeparableConv2D_4);
 
 	for(int i = 0; i < array_length; i++){
-//#pragma HLS PIPELINE
 		MemBank_Out[i] = MemBank_B[i];
 	}
 
