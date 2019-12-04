@@ -211,10 +211,6 @@ typedef __intmax_t intmax_t;
 typedef __uintmax_t uintmax_t;
 #pragma line 10 "/tools/Xilinx/Vivado/2018.3/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/include/stdint.h" 2 3 4
 #pragma line 2 "/home/masudalab/DeepCAEonFPGA/layers_c/max_pooling2d.cpp" 2
-#pragma empty_line
-#pragma empty_line
-#pragma empty_line
-#pragma empty_line
 #pragma line 1 "/home/masudalab/DeepCAEonFPGA/layers_c/max_pooling2d.h" 1
 #pragma empty_line
 #pragma empty_line
@@ -231,7 +227,7 @@ uint16_t output_depth, uint16_t output_height, uint16_t output_width, int16_t* o
 uint8_t max_pooling2d_float32(uint16_t kernel_size,
 uint16_t input_depth, uint16_t input_height, uint16_t input_width, float* input,
 uint16_t output_depth, uint16_t output_height, uint16_t output_width, float* output);
-#pragma line 7 "/home/masudalab/DeepCAEonFPGA/layers_c/max_pooling2d.cpp" 2
+#pragma line 3 "/home/masudalab/DeepCAEonFPGA/layers_c/max_pooling2d.cpp" 2
 #pragma empty_line
 #pragma empty_line
 #pragma empty_line
@@ -241,24 +237,21 @@ uint8_t max_pooling2d_fix16(uint16_t kernel_size,
 uint16_t input_depth, uint16_t input_height, uint16_t input_width, int16_t* input,
 uint16_t output_depth, uint16_t output_height, uint16_t output_width, int16_t* output){
 #pragma empty_line
+#pragma HLS allocation instances=mul limit=0 operation
 #pragma empty_line
- int16_t buffer;
+ int16_t buffer, tmp;
 #pragma empty_line
     for(uint16_t out_d = 0; out_d < output_depth; out_d++){
         for(uint16_t out_h = 0; out_h < output_height; out_h++){
             for(uint16_t out_w = 0; out_w < output_width; out_w++){
-              for(uint16_t in_h = 0; in_h < kernel_size; in_h++){
-#pragma empty_line
+#pragma HLS UNROLL FACTOR=7
+             for(uint16_t in_h = 0; in_h < kernel_size; in_h++){
+#pragma HLS UNROLL
                     for(uint16_t in_w = 0; in_w < kernel_size; in_w++){
-#pragma empty_line
-                        if(in_h == 0 && in_w == 0){
-                         buffer =
-                            input[out_d * input_height * input_width + (kernel_size * out_h + in_h) * input_width + (kernel_size * out_w + in_w)];
-                        } else if (buffer <
-                        input[out_d * input_height * input_width + (kernel_size * out_h + in_h) * input_width + (kernel_size * out_w + in_w)]){
-                          buffer =
-                            input[out_d * input_height * input_width + (kernel_size * out_h + in_h) * input_width + (kernel_size * out_w + in_w)];
-#pragma empty_line
+#pragma HLS UNROLL
+                     tmp = input[out_d * input_height * input_width + (kernel_size * out_h + in_h) * input_width + (kernel_size * out_w + in_w)];
+                        if((in_h == 0 && in_w == 0) || (buffer < tmp)){
+                         buffer = tmp;
                         }
                     }
                 }

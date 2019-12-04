@@ -1,5 +1,5 @@
 // ==============================================================
-// File generated on Tue Dec 03 18:18:54 JST 2019
+// File generated on Wed Dec 04 20:08:58 JST 2019
 // Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3.1 (64-bit)
 // SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
 // IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
@@ -76024,11 +76024,13 @@ int network(axis &input_data, axis &output_data) {
  1, 1, (int16_t*)SeparableConv2D_4_w_p, 1, 14);
 
  for(int i = 0; i < array_length; i++){
+#pragma HLS UNROLL
   MemBank_Out[i] = MemBank_B[i];
  }
 
  for(uint64_t i = 0; i < array_length; i++){
 #pragma HLS PIPELINE
+
   out.user = 0;
   out.last = 0;
   out.dest = 0;
@@ -76049,13 +76051,13 @@ int network(axis &input_data, axis &output_data) {
 
 
 #ifndef HLS_FASTSIM
-#156 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
+#158 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
 
 #ifndef HLS_FASTSIM
 #include "apatb_network.h"
 #endif
 
-#156 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
+#158 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
 int main(void){
  axis input_buffer;
  axis output_buffer;
@@ -76097,19 +76099,19 @@ int main(void){
 #define network AESL_WRAP_network
 #endif
 
-#192 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
+#194 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
 
 #ifndef HLS_FASTSIM
 #define network AESL_WRAP_network
 #endif
 
-#192 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
+#194 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
 network
 #undef network
-#192 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
+#194 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
 
 #undef network
-#192 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
+#194 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
 (input_buffer, output_buffer);
 
  cout << "\r\n";
@@ -76136,4 +76138,4 @@ network
  return 0;
 }
 #endif
-#216 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
+#218 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"

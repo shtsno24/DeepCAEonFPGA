@@ -1,5 +1,5 @@
 // ==============================================================
-// File generated on Tue Dec 03 18:18:24 JST 2019
+// File generated on Wed Dec 04 20:23:35 JST 2019
 // Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3.1 (64-bit)
 // SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
 // IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
@@ -7,7 +7,7 @@
 // ==============================================================
 `timescale 1 ns / 1 ps
 (* rom_style = "block" *) module network_SeparableConv2D_2_w_1_rom (
-addr0, ce0, q0, clk);
+addr0, ce0, q0, addr1, ce1, q1, clk);
 
 parameter DWIDTH = 16;
 parameter AWIDTH = 7;
@@ -16,6 +16,9 @@ parameter MEM_SIZE = 72;
 input[AWIDTH-1:0] addr0;
 input ce0;
 output reg[DWIDTH-1:0] q0;
+input[AWIDTH-1:0] addr1;
+input ce1;
+output reg[DWIDTH-1:0] q1;
 input clk;
 
 (* ram_style = "block" *)reg [DWIDTH-1:0] ram[0:MEM_SIZE-1];
@@ -36,6 +39,16 @@ end
 
 
 
+always @(posedge clk)  
+begin 
+    if (ce1) 
+    begin
+        q1 <= ram[addr1];
+    end
+end
+
+
+
 endmodule
 
 `timescale 1 ns / 1 ps
@@ -44,7 +57,10 @@ module network_SeparableConv2D_2_w_1(
     clk,
     address0,
     ce0,
-    q0);
+    q0,
+    address1,
+    ce1,
+    q1);
 
 parameter DataWidth = 32'd16;
 parameter AddressRange = 32'd72;
@@ -54,6 +70,9 @@ input clk;
 input[AddressWidth - 1:0] address0;
 input ce0;
 output[DataWidth - 1:0] q0;
+input[AddressWidth - 1:0] address1;
+input ce1;
+output[DataWidth - 1:0] q1;
 
 
 
@@ -61,7 +80,10 @@ network_SeparableConv2D_2_w_1_rom network_SeparableConv2D_2_w_1_rom_U(
     .clk( clk ),
     .addr0( address0 ),
     .ce0( ce0 ),
-    .q0( q0 ));
+    .q0( q0 ),
+    .addr1( address1 ),
+    .ce1( ce1 ),
+    .q1( q1 ));
 
 endmodule
 

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'network'" level="0">
-<item name = "Date">Tue Dec  3 18:18:19 2019
+<item name = "Date">Wed Dec  4 20:23:09 2019
 </item>
 <item name = "Version">2018.3.1 (Build 2489210 on Tue Mar 26 04:40:43 MDT 2019)</item>
 <item name = "Project">HLS</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00, 8.570, 1.25</column>
+<column name="ap_clk">4.40, 4.350, 1.25</column>
 </table>
 </item>
 </section>
@@ -24,31 +24,30 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">702490, 1919971, 702490, 1919971, none</column>
+<column name="">?, ?, ?, ?, none</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="7">Instance, Module, min, max, min, max, Type</keys>
-<column name="grp_padding2d_fix16_fu_307">padding2d_fix16, 157, 28354, 157, 28354, none</column>
-<column name="grp_depthwise_conv2d_fix_2_fu_325">depthwise_conv2d_fix_2, 141601, 565409, 141601, 565409, none</column>
-<column name="grp_depthwise_conv2d_fix_1_fu_349">depthwise_conv2d_fix_1, 17769, 70801, 17769, 70801, none</column>
-<column name="grp_max_pooling2d_fix16_fu_373">max_pooling2d_fix16, 5617, 44385, 5617, 44385, none</column>
-<column name="grp_pointwise_conv2d_fix_3_fu_394">pointwise_conv2d_fix_3, 107121, 107121, 107121, 107121, none</column>
-<column name="grp_pointwise_conv2d_fix_1_fu_404">pointwise_conv2d_fix_1, 103737, 103737, 103737, 103737, none</column>
-<column name="grp_pointwise_conv2d_fix_2_fu_414">pointwise_conv2d_fix_2, 13465, 13465, 13465, 13465, none</column>
-<column name="grp_up_sampling2d_fix16_fu_424">up_sampling2d_fix16, 3377, 26017, 3377, 26017, none</column>
-<column name="grp_depthwise_conv2d_fix_fu_445">depthwise_conv2d_fix, 34553, 34553, 34553, 34553, none</column>
-<column name="grp_pointwise_conv2d_fix_4_fu_453">pointwise_conv2d_fix_4, 51801, 51801, 51801, 51801, none</column>
-<column name="grp_pointwise_conv2d_fix_fu_461">pointwise_conv2d_fix, 51121, 51121, 51121, 51121, none</column>
+<column name="grp_pointwise_conv2d_fix_fu_14393">pointwise_conv2d_fix, ?, ?, ?, ?, none</column>
+<column name="grp_pointwise_conv2d_fix_3_fu_14403">pointwise_conv2d_fix_3, ?, ?, ?, ?, none</column>
+<column name="grp_pointwise_conv2d_fix_2_fu_14413">pointwise_conv2d_fix_2, ?, ?, ?, ?, none</column>
+<column name="grp_depthwise_conv2d_fix_2_fu_14423">depthwise_conv2d_fix_2, ?, ?, ?, ?, none</column>
+<column name="grp_max_pooling2d_fix16_fu_14447">max_pooling2d_fix16, ?, ?, ?, ?, none</column>
+<column name="grp_depthwise_conv2d_fix_1_fu_14468">depthwise_conv2d_fix_1, ?, ?, ?, ?, none</column>
+<column name="grp_pointwise_conv2d_fix_1_fu_14492">pointwise_conv2d_fix_1, 45721, 45721, 45721, 45721, none</column>
+<column name="grp_depthwise_conv2d_fix_fu_14502">depthwise_conv2d_fix, 6357, 6357, 6357, 6357, none</column>
+<column name="grp_pointwise_conv2d_fix_4_fu_14508">pointwise_conv2d_fix_4, 21225, 21225, 21225, 21225, none</column>
+<column name="grp_up_sampling2d_fix16_fu_14514">up_sampling2d_fix16, ?, ?, ?, ?, none</column>
+<column name="grp_padding2d_fix16_fu_14535">padding2d_fix16, 209, 40901, 209, 40901, none</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
 <column name="- Loop 1">784, 784, 1, -, -, 784, no</column>
-<column name="- Loop 2">1568, 1568, 2, -, -, 784, no</column>
-<column name="- Loop 3">785, 785, 3, 1, 1, 784, yes</column>
+<column name="- Loop 2">785, 785, 3, 1, 1, 784, yes</column>
 </table>
 </item>
 </section>

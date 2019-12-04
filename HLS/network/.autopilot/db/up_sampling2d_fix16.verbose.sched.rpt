@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'up_sampling2d_fix16'
 ================================================================
-* Date:           Tue Dec  3 18:18:17 2019
+* Date:           Wed Dec  4 20:22:52 2019
 
 * Version:        2018.3.1 (Build 2489210 on Tue Mar 26 04:40:43 MDT 2019)
 * Project:        HLS
@@ -20,31 +20,31 @@
     +--------+-------+----------+------------+
     |  Clock | Target| Estimated| Uncertainty|
     +--------+-------+----------+------------+
-    |ap_clk  |  10.00|     6.508|        1.25|
+    |ap_clk  |   4.40|     4.350|        1.25|
     +--------+-------+----------+------------+
 
 + Latency (clock cycles): 
     * Summary: 
-    +------+-------+------+-------+---------+
-    |    Latency   |   Interval   | Pipeline|
-    |  min |  max  |  min |  max  |   Type  |
-    +------+-------+------+-------+---------+
-    |  3377|  26017|  3377|  26017|   none  |
-    +------+-------+------+-------+---------+
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    ?|    ?|    ?|    ?|   none  |
+    +-----+-----+-----+-----+---------+
 
     + Detail: 
         * Instance: 
         N/A
 
         * Loop: 
-        +-----------------+------+-------+------------+-----------+-----------+---------+----------+
-        |                 |    Latency   |  Iteration |  Initiation Interval  |   Trip  |          |
-        |    Loop Name    |  min |  max  |   Latency  |  achieved |   target  |  Count  | Pipelined|
-        +-----------------+------+-------+------------+-----------+-----------+---------+----------+
-        |- Loop 1         |  3376|  26016| 422 ~ 1626 |          -|          -|  8 ~ 16 |    no    |
-        | + Loop 1.1      |   420|   1624|   30 ~ 58  |          -|          -| 14 ~ 28 |    no    |
-        |  ++ Loop 1.1.1  |    28|     56|           2|          -|          -| 14 ~ 28 |    no    |
-        +-----------------+------+-------+------------+-----------+-----------+---------+----------+
+        +-----------------+-----+-----+----------+-----------+-----------+---------+----------+
+        |                 |  Latency  | Iteration|  Initiation Interval  |   Trip  |          |
+        |    Loop Name    | min | max |  Latency |  achieved |   target  |  Count  | Pipelined|
+        +-----------------+-----+-----+----------+-----------+-----------+---------+----------+
+        |- Loop 1         |    ?|    ?|         ?|          -|          -|  8 ~ 16 |    no    |
+        | + Loop 1.1      |    ?|    ?|         ?|          -|          -| 14 ~ 28 |    no    |
+        |  ++ Loop 1.1.1  |    ?|    ?|        22|          -|          -|        ?|    no    |
+        +-----------------+-----+-----+----------+-----------+-----------+---------+----------+
 
 ============================================================
 + Verbose Summary: Synthesis Manager
@@ -72,7 +72,7 @@ IsGatedGlobalClock: 0
 ============================================================
 + Verbose Summary: Schedule
 ============================================================
-* Number of FSM states : 5
+* Number of FSM states : 26
 * Pipeline : 0
 * Dataflow Pipeline: 0
 
@@ -85,114 +85,384 @@ IsGatedGlobalClock: 0
 	4  / (!exitcond2)
 	2  / (exitcond2)
 4 --> 
-	5  / (!exitcond)
-	3  / (exitcond)
+	5  / true
 5 --> 
-	4  / true
+	6  / (!exitcond)
+	23  / (exitcond)
+6 --> 
+	7  / true
+7 --> 
+	8  / true
+8 --> 
+	9  / (!exitcond_1)
+	23  / (exitcond_1)
+9 --> 
+	10  / true
+10 --> 
+	11  / true
+11 --> 
+	12  / (!exitcond_2)
+	23  / (exitcond_2)
+12 --> 
+	13  / true
+13 --> 
+	14  / true
+14 --> 
+	15  / (!exitcond_3)
+	23  / (exitcond_3)
+15 --> 
+	16  / true
+16 --> 
+	17  / true
+17 --> 
+	18  / (!exitcond_4)
+	23  / (exitcond_4)
+18 --> 
+	19  / true
+19 --> 
+	20  / true
+20 --> 
+	21  / (!exitcond_5)
+	23  / (exitcond_5)
+21 --> 
+	22  / true
+22 --> 
+	23  / true
+23 --> 
+	24  / (!exitcond & !exitcond_1 & !exitcond_2 & !exitcond_3 & !exitcond_4 & !exitcond_5 & !exitcond_6)
+	3  / (exitcond_6) | (exitcond_5) | (exitcond_4) | (exitcond_3) | (exitcond_2) | (exitcond_1) | (exitcond)
+24 --> 
+	25  / true
+25 --> 
+	26  / true
+26 --> 
+	5  / true
 
 * FSM state operations: 
 
 State 1 <SV = 0> <Delay = 1.76>
-ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%output_width_read = call i6 @_ssdm_op_Read.ap_auto.i6(i6 %output_width)" [layers_c/up_sampling2d.cpp:6]   --->   Operation 6 'read' 'output_width_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%output_height_read = call i6 @_ssdm_op_Read.ap_auto.i6(i6 %output_height)" [layers_c/up_sampling2d.cpp:6]   --->   Operation 7 'read' 'output_height_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%output_depth_read = call i6 @_ssdm_op_Read.ap_auto.i6(i6 %output_depth)" [layers_c/up_sampling2d.cpp:6]   --->   Operation 8 'read' 'output_depth_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%input_width_read = call i5 @_ssdm_op_Read.ap_auto.i5(i5 %input_width)" [layers_c/up_sampling2d.cpp:6]   --->   Operation 9 'read' 'input_width_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%input_height_read = call i5 @_ssdm_op_Read.ap_auto.i5(i5 %input_height)" [layers_c/up_sampling2d.cpp:6]   --->   Operation 10 'read' 'input_height_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%tmp_1_cast = zext i5 %input_height_read to i8" [layers_c/up_sampling2d.cpp:14]   --->   Operation 11 'zext' 'tmp_1_cast' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%tmp_3_cast = zext i6 %output_height_read to i9" [layers_c/up_sampling2d.cpp:14]   --->   Operation 12 'zext' 'tmp_3_cast' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%tmp_4_cast = zext i6 %output_width_read to i14" [layers_c/up_sampling2d.cpp:6]   --->   Operation 13 'zext' 'tmp_4_cast' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%tmp_2 = zext i5 %input_width_read to i12" [layers_c/up_sampling2d.cpp:6]   --->   Operation 14 'zext' 'tmp_2' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 15 [1/1] (1.76ns)   --->   "br label %.loopexit" [layers_c/up_sampling2d.cpp:11]   --->   Operation 15 'br' <Predicate = true> <Delay = 1.76>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%output_width_read = call i6 @_ssdm_op_Read.ap_auto.i6(i6 %output_width)"   --->   Operation 27 'read' 'output_width_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%output_height_read = call i6 @_ssdm_op_Read.ap_auto.i6(i6 %output_height)"   --->   Operation 28 'read' 'output_height_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%output_depth_read = call i6 @_ssdm_op_Read.ap_auto.i6(i6 %output_depth)"   --->   Operation 29 'read' 'output_depth_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%input_width_read = call i5 @_ssdm_op_Read.ap_auto.i5(i5 %input_width)"   --->   Operation 30 'read' 'input_width_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%input_height_read = call i5 @_ssdm_op_Read.ap_auto.i5(i5 %input_height)"   --->   Operation 31 'read' 'input_height_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%output_width_cast = zext i6 %output_width_read to i16"   --->   Operation 32 'zext' 'output_width_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%input_width_cast_cas = zext i5 %input_width_read to i13"   --->   Operation 33 'zext' 'input_width_cast_cas' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 34 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecResourceLimit(i32 0, [4 x i8]* @p_str21, [1 x i8]* @p_str122, [1 x i8]* @p_str122, [1 x i8]* @p_str122) nounwind" [layers_c/up_sampling2d.cpp:10]   --->   Operation 34 'specresourcelimit' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%tmp_1_cast = zext i5 %input_height_read to i8" [layers_c/up_sampling2d.cpp:16]   --->   Operation 35 'zext' 'tmp_1_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%tmp_3_cast = zext i6 %output_height_read to i9" [layers_c/up_sampling2d.cpp:16]   --->   Operation 36 'zext' 'tmp_3_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%tmp_4_cast_cast = zext i6 %output_width_read to i15" [layers_c/up_sampling2d.cpp:11]   --->   Operation 37 'zext' 'tmp_4_cast_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 38 [1/1] (1.76ns)   --->   "br label %.loopexit" [layers_c/up_sampling2d.cpp:11]   --->   Operation 38 'br' <Predicate = true> <Delay = 1.76>
 
 State 2 <SV = 1> <Delay = 1.91>
-ST_2 : Operation 16 [1/1] (0.00ns)   --->   "%out_d = phi i5 [ 0, %0 ], [ %out_d_1, %.loopexit.loopexit ]"   --->   Operation 16 'phi' 'out_d' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 17 [1/1] (0.00ns)   --->   "%phi_mul = phi i8 [ 0, %0 ], [ %next_mul, %.loopexit.loopexit ]" [layers_c/up_sampling2d.cpp:14]   --->   Operation 17 'phi' 'phi_mul' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%phi_mul2 = phi i9 [ 0, %0 ], [ %next_mul3, %.loopexit.loopexit ]" [layers_c/up_sampling2d.cpp:14]   --->   Operation 18 'phi' 'phi_mul2' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 19 [1/1] (1.82ns)   --->   "%next_mul3 = add i9 %phi_mul2, %tmp_3_cast" [layers_c/up_sampling2d.cpp:14]   --->   Operation 19 'add' 'next_mul3' <Predicate = true> <Delay = 1.82> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.81> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 20 [1/1] (1.91ns)   --->   "%next_mul = add i8 %phi_mul, %tmp_1_cast" [layers_c/up_sampling2d.cpp:14]   --->   Operation 20 'add' 'next_mul' <Predicate = true> <Delay = 1.91> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.81> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 21 [1/1] (0.00ns)   --->   "%out_d_cast = zext i5 %out_d to i6" [layers_c/up_sampling2d.cpp:11]   --->   Operation 21 'zext' 'out_d_cast' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 22 [1/1] (1.42ns)   --->   "%exitcond3 = icmp eq i6 %out_d_cast, %output_depth_read" [layers_c/up_sampling2d.cpp:11]   --->   Operation 22 'icmp' 'exitcond3' <Predicate = true> <Delay = 1.42> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.42> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 23 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 8, i64 16, i64 0)"   --->   Operation 23 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 24 [1/1] (1.78ns)   --->   "%out_d_1 = add i5 %out_d, 1" [layers_c/up_sampling2d.cpp:11]   --->   Operation 24 'add' 'out_d_1' <Predicate = true> <Delay = 1.78> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.81> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 25 [1/1] (0.00ns)   --->   "br i1 %exitcond3, label %2, label %.preheader4.preheader" [layers_c/up_sampling2d.cpp:11]   --->   Operation 25 'br' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 26 [1/1] (1.76ns)   --->   "br label %.preheader4" [layers_c/up_sampling2d.cpp:12]   --->   Operation 26 'br' <Predicate = (!exitcond3)> <Delay = 1.76>
-ST_2 : Operation 27 [1/1] (0.00ns)   --->   "ret void"   --->   Operation 27 'ret' <Predicate = (exitcond3)> <Delay = 0.00>
+ST_2 : Operation 39 [1/1] (0.00ns)   --->   "%out_d = phi i5 [ 0, %0 ], [ %out_d_1, %.loopexit.loopexit ]"   --->   Operation 39 'phi' 'out_d' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 40 [1/1] (0.00ns)   --->   "%phi_mul = phi i8 [ 0, %0 ], [ %next_mul, %.loopexit.loopexit ]" [layers_c/up_sampling2d.cpp:16]   --->   Operation 40 'phi' 'phi_mul' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 41 [1/1] (0.00ns)   --->   "%phi_mul2 = phi i9 [ 0, %0 ], [ %next_mul3, %.loopexit.loopexit ]" [layers_c/up_sampling2d.cpp:16]   --->   Operation 41 'phi' 'phi_mul2' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 42 [1/1] (1.82ns)   --->   "%next_mul3 = add i9 %phi_mul2, %tmp_3_cast" [layers_c/up_sampling2d.cpp:16]   --->   Operation 42 'add' 'next_mul3' <Predicate = true> <Delay = 1.82> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 43 [1/1] (1.91ns)   --->   "%next_mul = add i8 %phi_mul, %tmp_1_cast" [layers_c/up_sampling2d.cpp:16]   --->   Operation 43 'add' 'next_mul' <Predicate = true> <Delay = 1.91> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 44 [1/1] (0.00ns)   --->   "%out_d_cast = zext i5 %out_d to i6" [layers_c/up_sampling2d.cpp:11]   --->   Operation 44 'zext' 'out_d_cast' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 45 [1/1] (1.42ns)   --->   "%exitcond3 = icmp eq i6 %out_d_cast, %output_depth_read" [layers_c/up_sampling2d.cpp:11]   --->   Operation 45 'icmp' 'exitcond3' <Predicate = true> <Delay = 1.42> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.42> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 46 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 8, i64 16, i64 0)"   --->   Operation 46 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 47 [1/1] (1.78ns)   --->   "%out_d_1 = add i5 %out_d, 1" [layers_c/up_sampling2d.cpp:11]   --->   Operation 47 'add' 'out_d_1' <Predicate = true> <Delay = 1.78> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 48 [1/1] (0.00ns)   --->   "br i1 %exitcond3, label %3, label %.preheader4.preheader" [layers_c/up_sampling2d.cpp:11]   --->   Operation 48 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 49 [1/1] (1.76ns)   --->   "br label %.preheader4" [layers_c/up_sampling2d.cpp:12]   --->   Operation 49 'br' <Predicate = (!exitcond3)> <Delay = 1.76>
+ST_2 : Operation 50 [1/1] (0.00ns)   --->   "ret void"   --->   Operation 50 'ret' <Predicate = (exitcond3)> <Delay = 0.00>
 
-State 3 <SV = 2> <Delay = 6.17>
-ST_3 : Operation 28 [1/1] (0.00ns)   --->   "%out_h = phi i5 [ %out_h_1, %.preheader4.loopexit ], [ 0, %.preheader4.preheader ]"   --->   Operation 28 'phi' 'out_h' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 29 [1/1] (0.00ns)   --->   "%out_h_cast = zext i5 %out_h to i6" [layers_c/up_sampling2d.cpp:12]   --->   Operation 29 'zext' 'out_h_cast' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 30 [1/1] (1.42ns)   --->   "%exitcond2 = icmp eq i6 %out_h_cast, %output_height_read" [layers_c/up_sampling2d.cpp:12]   --->   Operation 30 'icmp' 'exitcond2' <Predicate = true> <Delay = 1.42> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.42> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 31 [1/1] (0.00ns)   --->   "%empty_7 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 14, i64 28, i64 0)"   --->   Operation 31 'speclooptripcount' 'empty_7' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 32 [1/1] (1.78ns)   --->   "%out_h_1 = add i5 %out_h, 1" [layers_c/up_sampling2d.cpp:12]   --->   Operation 32 'add' 'out_h_1' <Predicate = true> <Delay = 1.78> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.81> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 33 [1/1] (0.00ns)   --->   "br i1 %exitcond2, label %.loopexit.loopexit, label %.preheader.preheader" [layers_c/up_sampling2d.cpp:12]   --->   Operation 33 'br' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 34 [1/1] (0.00ns)   --->   "%div = call i4 @_ssdm_op_PartSelect.i4.i5.i32.i32(i5 %out_h, i32 1, i32 4)" [layers_c/up_sampling2d.cpp:14]   --->   Operation 34 'partselect' 'div' <Predicate = (!exitcond2)> <Delay = 0.00>
-ST_3 : Operation 35 [1/1] (0.00ns)   --->   "%tmp_9_cast = zext i4 %div to i8" [layers_c/up_sampling2d.cpp:14]   --->   Operation 35 'zext' 'tmp_9_cast' <Predicate = (!exitcond2)> <Delay = 0.00>
-ST_3 : Operation 36 [1/1] (0.00ns)   --->   "%tmp_cast = zext i5 %out_h to i9" [layers_c/up_sampling2d.cpp:12]   --->   Operation 36 'zext' 'tmp_cast' <Predicate = (!exitcond2)> <Delay = 0.00>
-ST_3 : Operation 37 [1/1] (1.91ns)   --->   "%tmp = add i8 %phi_mul, %tmp_9_cast" [layers_c/up_sampling2d.cpp:14]   --->   Operation 37 'add' 'tmp' <Predicate = (!exitcond2)> <Delay = 1.91> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.81> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 38 [1/1] (0.00ns)   --->   "%tmp_1 = zext i8 %tmp to i12" [layers_c/up_sampling2d.cpp:14]   --->   Operation 38 'zext' 'tmp_1' <Predicate = (!exitcond2)> <Delay = 0.00>
-ST_3 : Operation 39 [1/1] (4.17ns)   --->   "%tmp1_cast = mul i12 %tmp_1, %tmp_2" [layers_c/up_sampling2d.cpp:14]   --->   Operation 39 'mul' 'tmp1_cast' <Predicate = (!exitcond2)> <Delay = 4.17> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 4.35> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 40 [1/1] (1.82ns)   --->   "%tmp2 = add i9 %phi_mul2, %tmp_cast" [layers_c/up_sampling2d.cpp:14]   --->   Operation 40 'add' 'tmp2' <Predicate = (!exitcond2)> <Delay = 1.82> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.81> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 41 [1/1] (0.00ns)   --->   "%tmp2_cast = zext i9 %tmp2 to i14" [layers_c/up_sampling2d.cpp:14]   --->   Operation 41 'zext' 'tmp2_cast' <Predicate = (!exitcond2)> <Delay = 0.00>
-ST_3 : Operation 42 [1/1] (4.35ns)   --->   "%tmp3 = mul i14 %tmp2_cast, %tmp_4_cast" [layers_c/up_sampling2d.cpp:14]   --->   Operation 42 'mul' 'tmp3' <Predicate = (!exitcond2)> <Delay = 4.35> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 4.35> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 43 [1/1] (1.76ns)   --->   "br label %.preheader" [layers_c/up_sampling2d.cpp:13]   --->   Operation 43 'br' <Predicate = (!exitcond2)> <Delay = 1.76>
-ST_3 : Operation 44 [1/1] (0.00ns)   --->   "br label %.loopexit"   --->   Operation 44 'br' <Predicate = (exitcond2)> <Delay = 0.00>
+State 3 <SV = 2> <Delay = 1.91>
+ST_3 : Operation 51 [1/1] (0.00ns)   --->   "%out_h = phi i5 [ %out_h_1, %2 ], [ 0, %.preheader4.preheader ]"   --->   Operation 51 'phi' 'out_h' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 52 [1/1] (0.00ns)   --->   "%out_h_cast = zext i5 %out_h to i6" [layers_c/up_sampling2d.cpp:12]   --->   Operation 52 'zext' 'out_h_cast' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 53 [1/1] (1.42ns)   --->   "%exitcond2 = icmp eq i6 %out_h_cast, %output_height_read" [layers_c/up_sampling2d.cpp:12]   --->   Operation 53 'icmp' 'exitcond2' <Predicate = true> <Delay = 1.42> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.42> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 54 [1/1] (0.00ns)   --->   "%empty_19 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 14, i64 28, i64 0)"   --->   Operation 54 'speclooptripcount' 'empty_19' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 55 [1/1] (1.78ns)   --->   "%out_h_1 = add i5 %out_h, 1" [layers_c/up_sampling2d.cpp:12]   --->   Operation 55 'add' 'out_h_1' <Predicate = true> <Delay = 1.78> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 56 [1/1] (0.00ns)   --->   "br i1 %exitcond2, label %.loopexit.loopexit, label %.preheader.preheader" [layers_c/up_sampling2d.cpp:12]   --->   Operation 56 'br' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 57 [1/1] (0.00ns)   --->   "%div = call i4 @_ssdm_op_PartSelect.i4.i5.i32.i32(i5 %out_h, i32 1, i32 4)" [layers_c/up_sampling2d.cpp:16]   --->   Operation 57 'partselect' 'div' <Predicate = (!exitcond2)> <Delay = 0.00>
+ST_3 : Operation 58 [1/1] (0.00ns)   --->   "%tmp_9_cast = zext i4 %div to i8" [layers_c/up_sampling2d.cpp:16]   --->   Operation 58 'zext' 'tmp_9_cast' <Predicate = (!exitcond2)> <Delay = 0.00>
+ST_3 : Operation 59 [1/1] (0.00ns)   --->   "%tmp_cast = zext i5 %out_h to i9" [layers_c/up_sampling2d.cpp:12]   --->   Operation 59 'zext' 'tmp_cast' <Predicate = (!exitcond2)> <Delay = 0.00>
+ST_3 : Operation 60 [1/1] (1.91ns)   --->   "%tmp = add i8 %phi_mul, %tmp_9_cast" [layers_c/up_sampling2d.cpp:16]   --->   Operation 60 'add' 'tmp' <Predicate = (!exitcond2)> <Delay = 1.91> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 61 [1/1] (1.82ns)   --->   "%tmp2 = add i9 %phi_mul2, %tmp_cast" [layers_c/up_sampling2d.cpp:16]   --->   Operation 61 'add' 'tmp2' <Predicate = (!exitcond2)> <Delay = 1.82> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 62 [1/1] (0.00ns)   --->   "br label %.loopexit"   --->   Operation 62 'br' <Predicate = (exitcond2)> <Delay = 0.00>
 
-State 4 <SV = 3> <Delay = 4.80>
-ST_4 : Operation 45 [1/1] (0.00ns)   --->   "%out_w = phi i5 [ %out_w_1, %1 ], [ 0, %.preheader.preheader ]"   --->   Operation 45 'phi' 'out_w' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 46 [1/1] (0.00ns)   --->   "%out_w_cast = zext i5 %out_w to i6" [layers_c/up_sampling2d.cpp:13]   --->   Operation 46 'zext' 'out_w_cast' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 47 [1/1] (1.42ns)   --->   "%exitcond = icmp eq i6 %out_w_cast, %output_width_read" [layers_c/up_sampling2d.cpp:13]   --->   Operation 47 'icmp' 'exitcond' <Predicate = true> <Delay = 1.42> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.42> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_4 : Operation 48 [1/1] (0.00ns)   --->   "%empty_8 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 14, i64 28, i64 0)"   --->   Operation 48 'speclooptripcount' 'empty_8' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 49 [1/1] (1.78ns)   --->   "%out_w_1 = add i5 %out_w, 1" [layers_c/up_sampling2d.cpp:13]   --->   Operation 49 'add' 'out_w_1' <Predicate = true> <Delay = 1.78> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.81> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_4 : Operation 50 [1/1] (0.00ns)   --->   "br i1 %exitcond, label %.preheader4.loopexit, label %1" [layers_c/up_sampling2d.cpp:13]   --->   Operation 50 'br' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 51 [1/1] (0.00ns)   --->   "%div1 = call i4 @_ssdm_op_PartSelect.i4.i5.i32.i32(i5 %out_w, i32 1, i32 4)" [layers_c/up_sampling2d.cpp:14]   --->   Operation 51 'partselect' 'div1' <Predicate = (!exitcond)> <Delay = 0.00>
-ST_4 : Operation 52 [1/1] (0.00ns)   --->   "%tmp_8_cast = zext i4 %div1 to i12" [layers_c/up_sampling2d.cpp:14]   --->   Operation 52 'zext' 'tmp_8_cast' <Predicate = (!exitcond)> <Delay = 0.00>
-ST_4 : Operation 53 [1/1] (1.54ns)   --->   "%tmp_s = add i12 %tmp_8_cast, %tmp1_cast" [layers_c/up_sampling2d.cpp:14]   --->   Operation 53 'add' 'tmp_s' <Predicate = (!exitcond)> <Delay = 1.54> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.81> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_4 : Operation 54 [1/1] (0.00ns)   --->   "%tmp_3 = zext i12 %tmp_s to i64" [layers_c/up_sampling2d.cpp:14]   --->   Operation 54 'zext' 'tmp_3' <Predicate = (!exitcond)> <Delay = 0.00>
-ST_4 : Operation 55 [1/1] (0.00ns)   --->   "%input_addr = getelementptr [14400 x i16]* %input_r, i64 0, i64 %tmp_3" [layers_c/up_sampling2d.cpp:14]   --->   Operation 55 'getelementptr' 'input_addr' <Predicate = (!exitcond)> <Delay = 0.00>
-ST_4 : Operation 56 [2/2] (3.25ns)   --->   "%input_load = load i16* %input_addr, align 2" [layers_c/up_sampling2d.cpp:14]   --->   Operation 56 'load' 'input_load' <Predicate = (!exitcond)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 14400> <RAM>
-ST_4 : Operation 57 [1/1] (0.00ns)   --->   "%tmp_12_cast = zext i5 %out_w to i14" [layers_c/up_sampling2d.cpp:14]   --->   Operation 57 'zext' 'tmp_12_cast' <Predicate = (!exitcond)> <Delay = 0.00>
-ST_4 : Operation 58 [1/1] (1.81ns)   --->   "%tmp_4 = add i14 %tmp_12_cast, %tmp3" [layers_c/up_sampling2d.cpp:14]   --->   Operation 58 'add' 'tmp_4' <Predicate = (!exitcond)> <Delay = 1.81> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.81> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_4 : Operation 59 [1/1] (0.00ns)   --->   "br label %.preheader4"   --->   Operation 59 'br' <Predicate = (exitcond)> <Delay = 0.00>
+State 4 <SV = 3> <Delay = 4.35>
+ST_4 : Operation 63 [1/1] (0.00ns)   --->   "%tmp_cast_cast = zext i8 %tmp to i13" [layers_c/up_sampling2d.cpp:16]   --->   Operation 63 'zext' 'tmp_cast_cast' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 64 [1/1] (4.17ns)   --->   "%tmp1 = mul i13 %tmp_cast_cast, %input_width_cast_cas" [layers_c/up_sampling2d.cpp:16]   --->   Operation 64 'mul' 'tmp1' <Predicate = true> <Delay = 4.17> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 4.35> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 65 [1/1] (0.00ns)   --->   "%tmp1_cast = zext i13 %tmp1 to i16" [layers_c/up_sampling2d.cpp:16]   --->   Operation 65 'zext' 'tmp1_cast' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 66 [1/1] (0.00ns)   --->   "%tmp2_cast_cast = zext i9 %tmp2 to i15" [layers_c/up_sampling2d.cpp:16]   --->   Operation 66 'zext' 'tmp2_cast_cast' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 67 [1/1] (4.35ns)   --->   "%tmp3 = mul i15 %tmp2_cast_cast, %tmp_4_cast_cast" [layers_c/up_sampling2d.cpp:16]   --->   Operation 67 'mul' 'tmp3' <Predicate = true> <Delay = 4.35> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 4.35> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 68 [1/1] (0.00ns)   --->   "%tmp3_cast = zext i15 %tmp3 to i17" [layers_c/up_sampling2d.cpp:16]   --->   Operation 68 'zext' 'tmp3_cast' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 69 [1/1] (1.76ns)   --->   "br label %.preheader.0" [layers_c/up_sampling2d.cpp:14]   --->   Operation 69 'br' <Predicate = true> <Delay = 1.76>
 
-State 5 <SV = 4> <Delay = 6.50>
-ST_5 : Operation 60 [1/2] (3.25ns)   --->   "%input_load = load i16* %input_addr, align 2" [layers_c/up_sampling2d.cpp:14]   --->   Operation 60 'load' 'input_load' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 14400> <RAM>
-ST_5 : Operation 61 [1/1] (0.00ns)   --->   "%tmp_5 = zext i14 %tmp_4 to i64" [layers_c/up_sampling2d.cpp:14]   --->   Operation 61 'zext' 'tmp_5' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 62 [1/1] (0.00ns)   --->   "%output_addr = getelementptr [14400 x i16]* %output_r, i64 0, i64 %tmp_5" [layers_c/up_sampling2d.cpp:14]   --->   Operation 62 'getelementptr' 'output_addr' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 63 [1/1] (3.25ns)   --->   "store i16 %input_load, i16* %output_addr, align 2" [layers_c/up_sampling2d.cpp:14]   --->   Operation 63 'store' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 14400> <RAM>
-ST_5 : Operation 64 [1/1] (0.00ns)   --->   "br label %.preheader" [layers_c/up_sampling2d.cpp:13]   --->   Operation 64 'br' <Predicate = true> <Delay = 0.00>
+State 5 <SV = 4> <Delay = 2.42>
+ST_5 : Operation 70 [1/1] (0.00ns)   --->   "%out_w = phi i16 [ %out_w_1_6, %1 ], [ 0, %.preheader.preheader ]" [layers_c/up_sampling2d.cpp:14]   --->   Operation 70 'phi' 'out_w' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 71 [1/1] (2.42ns)   --->   "%exitcond = icmp eq i16 %out_w, %output_width_cast" [layers_c/up_sampling2d.cpp:14]   --->   Operation 71 'icmp' 'exitcond' <Predicate = true> <Delay = 2.42> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.42> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 72 [1/1] (0.00ns)   --->   "br i1 %exitcond, label %2, label %.preheader.1" [layers_c/up_sampling2d.cpp:14]   --->   Operation 72 'br' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 73 [1/1] (0.00ns)   --->   "%div1 = call i15 @_ssdm_op_PartSelect.i15.i16.i32.i32(i16 %out_w, i32 1, i32 15)" [layers_c/up_sampling2d.cpp:16]   --->   Operation 73 'partselect' 'div1' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_5 : Operation 74 [1/1] (0.00ns)   --->   "%tmp_4 = zext i15 %div1 to i16" [layers_c/up_sampling2d.cpp:16]   --->   Operation 74 'zext' 'tmp_4' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_5 : Operation 75 [1/1] (1.94ns)   --->   "%tmp_s = add i16 %tmp1_cast, %tmp_4" [layers_c/up_sampling2d.cpp:16]   --->   Operation 75 'add' 'tmp_s' <Predicate = (!exitcond)> <Delay = 1.94> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+
+State 6 <SV = 5> <Delay = 1.68>
+ST_6 : Operation 76 [1/1] (0.00ns)   --->   "%tmp_1 = zext i16 %tmp_s to i64" [layers_c/up_sampling2d.cpp:16]   --->   Operation 76 'zext' 'tmp_1' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 77 [1/1] (0.00ns)   --->   "%input_addr = getelementptr [14400 x i16]* %input_r, i64 0, i64 %tmp_1" [layers_c/up_sampling2d.cpp:16]   --->   Operation 77 'getelementptr' 'input_addr' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 78 [2/2] (1.68ns)   --->   "%input_load = load i16* %input_addr, align 2" [layers_c/up_sampling2d.cpp:16]   --->   Operation 78 'load' 'input_load' <Predicate = true> <Delay = 1.68> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 14400> <RAM>
+
+State 7 <SV = 6> <Delay = 2.07>
+ST_7 : Operation 79 [1/2] (1.68ns)   --->   "%input_load = load i16* %input_addr, align 2" [layers_c/up_sampling2d.cpp:16]   --->   Operation 79 'load' 'input_load' <Predicate = true> <Delay = 1.68> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 14400> <RAM>
+ST_7 : Operation 80 [1/1] (0.00ns)   --->   "%tmp_12_cast = zext i16 %out_w to i17" [layers_c/up_sampling2d.cpp:16]   --->   Operation 80 'zext' 'tmp_12_cast' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 81 [1/1] (2.07ns)   --->   "%tmp_2 = add i17 %tmp3_cast, %tmp_12_cast" [layers_c/up_sampling2d.cpp:16]   --->   Operation 81 'add' 'tmp_2' <Predicate = true> <Delay = 2.07> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 82 [1/1] (2.07ns)   --->   "%out_w_1 = add i16 %out_w, 1" [layers_c/up_sampling2d.cpp:14]   --->   Operation 82 'add' 'out_w_1' <Predicate = true> <Delay = 2.07> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+
+State 8 <SV = 7> <Delay = 2.42>
+ST_8 : Operation 83 [1/1] (0.00ns)   --->   "%tmp_3 = zext i17 %tmp_2 to i64" [layers_c/up_sampling2d.cpp:16]   --->   Operation 83 'zext' 'tmp_3' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 84 [1/1] (0.00ns)   --->   "%output_addr = getelementptr [14400 x i16]* %output_r, i64 0, i64 %tmp_3" [layers_c/up_sampling2d.cpp:16]   --->   Operation 84 'getelementptr' 'output_addr' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 85 [1/1] (1.68ns)   --->   "store i16 %input_load, i16* %output_addr, align 2" [layers_c/up_sampling2d.cpp:16]   --->   Operation 85 'store' <Predicate = true> <Delay = 1.68> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 14400> <RAM>
+ST_8 : Operation 86 [1/1] (2.42ns)   --->   "%exitcond_1 = icmp eq i16 %out_w_1, %output_width_cast" [layers_c/up_sampling2d.cpp:14]   --->   Operation 86 'icmp' 'exitcond_1' <Predicate = true> <Delay = 2.42> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.42> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 87 [1/1] (0.00ns)   --->   "br i1 %exitcond_1, label %2, label %.preheader.2" [layers_c/up_sampling2d.cpp:14]   --->   Operation 87 'br' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 88 [1/1] (0.00ns)   --->   "%div1_1 = call i15 @_ssdm_op_PartSelect.i15.i16.i32.i32(i16 %out_w_1, i32 1, i32 15)" [layers_c/up_sampling2d.cpp:16]   --->   Operation 88 'partselect' 'div1_1' <Predicate = (!exitcond_1)> <Delay = 0.00>
+ST_8 : Operation 89 [1/1] (0.00ns)   --->   "%tmp_5 = zext i15 %div1_1 to i16" [layers_c/up_sampling2d.cpp:16]   --->   Operation 89 'zext' 'tmp_5' <Predicate = (!exitcond_1)> <Delay = 0.00>
+ST_8 : Operation 90 [1/1] (1.94ns)   --->   "%tmp_10_1 = add i16 %tmp1_cast, %tmp_5" [layers_c/up_sampling2d.cpp:16]   --->   Operation 90 'add' 'tmp_10_1' <Predicate = (!exitcond_1)> <Delay = 1.94> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+
+State 9 <SV = 8> <Delay = 1.68>
+ST_9 : Operation 91 [1/1] (0.00ns)   --->   "%tmp_11_1 = zext i16 %tmp_10_1 to i64" [layers_c/up_sampling2d.cpp:16]   --->   Operation 91 'zext' 'tmp_11_1' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 92 [1/1] (0.00ns)   --->   "%input_addr_1 = getelementptr [14400 x i16]* %input_r, i64 0, i64 %tmp_11_1" [layers_c/up_sampling2d.cpp:16]   --->   Operation 92 'getelementptr' 'input_addr_1' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 93 [2/2] (1.68ns)   --->   "%input_load_1 = load i16* %input_addr_1, align 2" [layers_c/up_sampling2d.cpp:16]   --->   Operation 93 'load' 'input_load_1' <Predicate = true> <Delay = 1.68> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 14400> <RAM>
+
+State 10 <SV = 9> <Delay = 2.07>
+ST_10 : Operation 94 [1/2] (1.68ns)   --->   "%input_load_1 = load i16* %input_addr_1, align 2" [layers_c/up_sampling2d.cpp:16]   --->   Operation 94 'load' 'input_load_1' <Predicate = true> <Delay = 1.68> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 14400> <RAM>
+ST_10 : Operation 95 [1/1] (0.00ns)   --->   "%tmp_12_1_cast = zext i16 %out_w_1 to i17" [layers_c/up_sampling2d.cpp:16]   --->   Operation 95 'zext' 'tmp_12_1_cast' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 96 [1/1] (2.07ns)   --->   "%tmp_13_1 = add i17 %tmp3_cast, %tmp_12_1_cast" [layers_c/up_sampling2d.cpp:16]   --->   Operation 96 'add' 'tmp_13_1' <Predicate = true> <Delay = 2.07> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_10 : Operation 97 [1/1] (2.07ns)   --->   "%out_w_1_1 = add i16 %out_w, 2" [layers_c/up_sampling2d.cpp:14]   --->   Operation 97 'add' 'out_w_1_1' <Predicate = true> <Delay = 2.07> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+
+State 11 <SV = 10> <Delay = 2.42>
+ST_11 : Operation 98 [1/1] (0.00ns)   --->   "%tmp_14_1 = zext i17 %tmp_13_1 to i64" [layers_c/up_sampling2d.cpp:16]   --->   Operation 98 'zext' 'tmp_14_1' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 99 [1/1] (0.00ns)   --->   "%output_addr_1 = getelementptr [14400 x i16]* %output_r, i64 0, i64 %tmp_14_1" [layers_c/up_sampling2d.cpp:16]   --->   Operation 99 'getelementptr' 'output_addr_1' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 100 [1/1] (1.68ns)   --->   "store i16 %input_load_1, i16* %output_addr_1, align 2" [layers_c/up_sampling2d.cpp:16]   --->   Operation 100 'store' <Predicate = true> <Delay = 1.68> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 14400> <RAM>
+ST_11 : Operation 101 [1/1] (2.42ns)   --->   "%exitcond_2 = icmp eq i16 %out_w_1_1, %output_width_cast" [layers_c/up_sampling2d.cpp:14]   --->   Operation 101 'icmp' 'exitcond_2' <Predicate = true> <Delay = 2.42> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.42> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_11 : Operation 102 [1/1] (0.00ns)   --->   "br i1 %exitcond_2, label %2, label %.preheader.3" [layers_c/up_sampling2d.cpp:14]   --->   Operation 102 'br' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 103 [1/1] (0.00ns)   --->   "%div1_2 = call i15 @_ssdm_op_PartSelect.i15.i16.i32.i32(i16 %out_w_1_1, i32 1, i32 15)" [layers_c/up_sampling2d.cpp:16]   --->   Operation 103 'partselect' 'div1_2' <Predicate = (!exitcond_2)> <Delay = 0.00>
+ST_11 : Operation 104 [1/1] (0.00ns)   --->   "%tmp_8 = zext i15 %div1_2 to i16" [layers_c/up_sampling2d.cpp:16]   --->   Operation 104 'zext' 'tmp_8' <Predicate = (!exitcond_2)> <Delay = 0.00>
+ST_11 : Operation 105 [1/1] (1.94ns)   --->   "%tmp_10_2 = add i16 %tmp1_cast, %tmp_8" [layers_c/up_sampling2d.cpp:16]   --->   Operation 105 'add' 'tmp_10_2' <Predicate = (!exitcond_2)> <Delay = 1.94> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+
+State 12 <SV = 11> <Delay = 1.68>
+ST_12 : Operation 106 [1/1] (0.00ns)   --->   "%tmp_11_2 = zext i16 %tmp_10_2 to i64" [layers_c/up_sampling2d.cpp:16]   --->   Operation 106 'zext' 'tmp_11_2' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 107 [1/1] (0.00ns)   --->   "%input_addr_2 = getelementptr [14400 x i16]* %input_r, i64 0, i64 %tmp_11_2" [layers_c/up_sampling2d.cpp:16]   --->   Operation 107 'getelementptr' 'input_addr_2' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 108 [2/2] (1.68ns)   --->   "%input_load_2 = load i16* %input_addr_2, align 2" [layers_c/up_sampling2d.cpp:16]   --->   Operation 108 'load' 'input_load_2' <Predicate = true> <Delay = 1.68> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 14400> <RAM>
+
+State 13 <SV = 12> <Delay = 2.07>
+ST_13 : Operation 109 [1/2] (1.68ns)   --->   "%input_load_2 = load i16* %input_addr_2, align 2" [layers_c/up_sampling2d.cpp:16]   --->   Operation 109 'load' 'input_load_2' <Predicate = true> <Delay = 1.68> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 14400> <RAM>
+ST_13 : Operation 110 [1/1] (0.00ns)   --->   "%tmp_12_2_cast = zext i16 %out_w_1_1 to i17" [layers_c/up_sampling2d.cpp:16]   --->   Operation 110 'zext' 'tmp_12_2_cast' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 111 [1/1] (2.07ns)   --->   "%tmp_13_2 = add i17 %tmp3_cast, %tmp_12_2_cast" [layers_c/up_sampling2d.cpp:16]   --->   Operation 111 'add' 'tmp_13_2' <Predicate = true> <Delay = 2.07> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_13 : Operation 112 [1/1] (2.07ns)   --->   "%out_w_1_2 = add i16 %out_w, 3" [layers_c/up_sampling2d.cpp:14]   --->   Operation 112 'add' 'out_w_1_2' <Predicate = true> <Delay = 2.07> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+
+State 14 <SV = 13> <Delay = 2.42>
+ST_14 : Operation 113 [1/1] (0.00ns)   --->   "%tmp_14_2 = zext i17 %tmp_13_2 to i64" [layers_c/up_sampling2d.cpp:16]   --->   Operation 113 'zext' 'tmp_14_2' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 114 [1/1] (0.00ns)   --->   "%output_addr_2 = getelementptr [14400 x i16]* %output_r, i64 0, i64 %tmp_14_2" [layers_c/up_sampling2d.cpp:16]   --->   Operation 114 'getelementptr' 'output_addr_2' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 115 [1/1] (1.68ns)   --->   "store i16 %input_load_2, i16* %output_addr_2, align 2" [layers_c/up_sampling2d.cpp:16]   --->   Operation 115 'store' <Predicate = true> <Delay = 1.68> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 14400> <RAM>
+ST_14 : Operation 116 [1/1] (2.42ns)   --->   "%exitcond_3 = icmp eq i16 %out_w_1_2, %output_width_cast" [layers_c/up_sampling2d.cpp:14]   --->   Operation 116 'icmp' 'exitcond_3' <Predicate = true> <Delay = 2.42> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.42> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_14 : Operation 117 [1/1] (0.00ns)   --->   "br i1 %exitcond_3, label %2, label %.preheader.4" [layers_c/up_sampling2d.cpp:14]   --->   Operation 117 'br' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 118 [1/1] (0.00ns)   --->   "%div1_3 = call i15 @_ssdm_op_PartSelect.i15.i16.i32.i32(i16 %out_w_1_2, i32 1, i32 15)" [layers_c/up_sampling2d.cpp:16]   --->   Operation 118 'partselect' 'div1_3' <Predicate = (!exitcond_3)> <Delay = 0.00>
+ST_14 : Operation 119 [1/1] (0.00ns)   --->   "%tmp_9 = zext i15 %div1_3 to i16" [layers_c/up_sampling2d.cpp:16]   --->   Operation 119 'zext' 'tmp_9' <Predicate = (!exitcond_3)> <Delay = 0.00>
+ST_14 : Operation 120 [1/1] (1.94ns)   --->   "%tmp_10_3 = add i16 %tmp1_cast, %tmp_9" [layers_c/up_sampling2d.cpp:16]   --->   Operation 120 'add' 'tmp_10_3' <Predicate = (!exitcond_3)> <Delay = 1.94> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+
+State 15 <SV = 14> <Delay = 1.68>
+ST_15 : Operation 121 [1/1] (0.00ns)   --->   "%tmp_11_3 = zext i16 %tmp_10_3 to i64" [layers_c/up_sampling2d.cpp:16]   --->   Operation 121 'zext' 'tmp_11_3' <Predicate = true> <Delay = 0.00>
+ST_15 : Operation 122 [1/1] (0.00ns)   --->   "%input_addr_3 = getelementptr [14400 x i16]* %input_r, i64 0, i64 %tmp_11_3" [layers_c/up_sampling2d.cpp:16]   --->   Operation 122 'getelementptr' 'input_addr_3' <Predicate = true> <Delay = 0.00>
+ST_15 : Operation 123 [2/2] (1.68ns)   --->   "%input_load_3 = load i16* %input_addr_3, align 2" [layers_c/up_sampling2d.cpp:16]   --->   Operation 123 'load' 'input_load_3' <Predicate = true> <Delay = 1.68> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 14400> <RAM>
+
+State 16 <SV = 15> <Delay = 2.07>
+ST_16 : Operation 124 [1/2] (1.68ns)   --->   "%input_load_3 = load i16* %input_addr_3, align 2" [layers_c/up_sampling2d.cpp:16]   --->   Operation 124 'load' 'input_load_3' <Predicate = true> <Delay = 1.68> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 14400> <RAM>
+ST_16 : Operation 125 [1/1] (0.00ns)   --->   "%tmp_12_3_cast = zext i16 %out_w_1_2 to i17" [layers_c/up_sampling2d.cpp:16]   --->   Operation 125 'zext' 'tmp_12_3_cast' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 126 [1/1] (2.07ns)   --->   "%tmp_13_3 = add i17 %tmp3_cast, %tmp_12_3_cast" [layers_c/up_sampling2d.cpp:16]   --->   Operation 126 'add' 'tmp_13_3' <Predicate = true> <Delay = 2.07> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_16 : Operation 127 [1/1] (2.07ns)   --->   "%out_w_1_3 = add i16 %out_w, 4" [layers_c/up_sampling2d.cpp:14]   --->   Operation 127 'add' 'out_w_1_3' <Predicate = true> <Delay = 2.07> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+
+State 17 <SV = 16> <Delay = 2.42>
+ST_17 : Operation 128 [1/1] (0.00ns)   --->   "%tmp_14_3 = zext i17 %tmp_13_3 to i64" [layers_c/up_sampling2d.cpp:16]   --->   Operation 128 'zext' 'tmp_14_3' <Predicate = true> <Delay = 0.00>
+ST_17 : Operation 129 [1/1] (0.00ns)   --->   "%output_addr_3 = getelementptr [14400 x i16]* %output_r, i64 0, i64 %tmp_14_3" [layers_c/up_sampling2d.cpp:16]   --->   Operation 129 'getelementptr' 'output_addr_3' <Predicate = true> <Delay = 0.00>
+ST_17 : Operation 130 [1/1] (1.68ns)   --->   "store i16 %input_load_3, i16* %output_addr_3, align 2" [layers_c/up_sampling2d.cpp:16]   --->   Operation 130 'store' <Predicate = true> <Delay = 1.68> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 14400> <RAM>
+ST_17 : Operation 131 [1/1] (2.42ns)   --->   "%exitcond_4 = icmp eq i16 %out_w_1_3, %output_width_cast" [layers_c/up_sampling2d.cpp:14]   --->   Operation 131 'icmp' 'exitcond_4' <Predicate = true> <Delay = 2.42> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.42> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_17 : Operation 132 [1/1] (0.00ns)   --->   "br i1 %exitcond_4, label %2, label %.preheader.5" [layers_c/up_sampling2d.cpp:14]   --->   Operation 132 'br' <Predicate = true> <Delay = 0.00>
+ST_17 : Operation 133 [1/1] (0.00ns)   --->   "%div1_4 = call i15 @_ssdm_op_PartSelect.i15.i16.i32.i32(i16 %out_w_1_3, i32 1, i32 15)" [layers_c/up_sampling2d.cpp:16]   --->   Operation 133 'partselect' 'div1_4' <Predicate = (!exitcond_4)> <Delay = 0.00>
+ST_17 : Operation 134 [1/1] (0.00ns)   --->   "%tmp_6 = zext i15 %div1_4 to i16" [layers_c/up_sampling2d.cpp:16]   --->   Operation 134 'zext' 'tmp_6' <Predicate = (!exitcond_4)> <Delay = 0.00>
+ST_17 : Operation 135 [1/1] (1.94ns)   --->   "%tmp_10_4 = add i16 %tmp1_cast, %tmp_6" [layers_c/up_sampling2d.cpp:16]   --->   Operation 135 'add' 'tmp_10_4' <Predicate = (!exitcond_4)> <Delay = 1.94> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+
+State 18 <SV = 17> <Delay = 1.68>
+ST_18 : Operation 136 [1/1] (0.00ns)   --->   "%tmp_11_4 = zext i16 %tmp_10_4 to i64" [layers_c/up_sampling2d.cpp:16]   --->   Operation 136 'zext' 'tmp_11_4' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 137 [1/1] (0.00ns)   --->   "%input_addr_4 = getelementptr [14400 x i16]* %input_r, i64 0, i64 %tmp_11_4" [layers_c/up_sampling2d.cpp:16]   --->   Operation 137 'getelementptr' 'input_addr_4' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 138 [2/2] (1.68ns)   --->   "%input_load_4 = load i16* %input_addr_4, align 2" [layers_c/up_sampling2d.cpp:16]   --->   Operation 138 'load' 'input_load_4' <Predicate = true> <Delay = 1.68> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 14400> <RAM>
+
+State 19 <SV = 18> <Delay = 2.07>
+ST_19 : Operation 139 [1/2] (1.68ns)   --->   "%input_load_4 = load i16* %input_addr_4, align 2" [layers_c/up_sampling2d.cpp:16]   --->   Operation 139 'load' 'input_load_4' <Predicate = true> <Delay = 1.68> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 14400> <RAM>
+ST_19 : Operation 140 [1/1] (0.00ns)   --->   "%tmp_12_4_cast = zext i16 %out_w_1_3 to i17" [layers_c/up_sampling2d.cpp:16]   --->   Operation 140 'zext' 'tmp_12_4_cast' <Predicate = true> <Delay = 0.00>
+ST_19 : Operation 141 [1/1] (2.07ns)   --->   "%tmp_13_4 = add i17 %tmp3_cast, %tmp_12_4_cast" [layers_c/up_sampling2d.cpp:16]   --->   Operation 141 'add' 'tmp_13_4' <Predicate = true> <Delay = 2.07> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_19 : Operation 142 [1/1] (2.07ns)   --->   "%out_w_1_4 = add i16 %out_w, 5" [layers_c/up_sampling2d.cpp:14]   --->   Operation 142 'add' 'out_w_1_4' <Predicate = true> <Delay = 2.07> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+
+State 20 <SV = 19> <Delay = 2.42>
+ST_20 : Operation 143 [1/1] (0.00ns)   --->   "%tmp_14_4 = zext i17 %tmp_13_4 to i64" [layers_c/up_sampling2d.cpp:16]   --->   Operation 143 'zext' 'tmp_14_4' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 144 [1/1] (0.00ns)   --->   "%output_addr_4 = getelementptr [14400 x i16]* %output_r, i64 0, i64 %tmp_14_4" [layers_c/up_sampling2d.cpp:16]   --->   Operation 144 'getelementptr' 'output_addr_4' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 145 [1/1] (1.68ns)   --->   "store i16 %input_load_4, i16* %output_addr_4, align 2" [layers_c/up_sampling2d.cpp:16]   --->   Operation 145 'store' <Predicate = true> <Delay = 1.68> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 14400> <RAM>
+ST_20 : Operation 146 [1/1] (2.42ns)   --->   "%exitcond_5 = icmp eq i16 %out_w_1_4, %output_width_cast" [layers_c/up_sampling2d.cpp:14]   --->   Operation 146 'icmp' 'exitcond_5' <Predicate = true> <Delay = 2.42> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.42> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_20 : Operation 147 [1/1] (0.00ns)   --->   "br i1 %exitcond_5, label %2, label %.preheader.6" [layers_c/up_sampling2d.cpp:14]   --->   Operation 147 'br' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 148 [1/1] (0.00ns)   --->   "%div1_5 = call i15 @_ssdm_op_PartSelect.i15.i16.i32.i32(i16 %out_w_1_4, i32 1, i32 15)" [layers_c/up_sampling2d.cpp:16]   --->   Operation 148 'partselect' 'div1_5' <Predicate = (!exitcond_5)> <Delay = 0.00>
+ST_20 : Operation 149 [1/1] (0.00ns)   --->   "%tmp_7 = zext i15 %div1_5 to i16" [layers_c/up_sampling2d.cpp:16]   --->   Operation 149 'zext' 'tmp_7' <Predicate = (!exitcond_5)> <Delay = 0.00>
+ST_20 : Operation 150 [1/1] (1.94ns)   --->   "%tmp_10_5 = add i16 %tmp1_cast, %tmp_7" [layers_c/up_sampling2d.cpp:16]   --->   Operation 150 'add' 'tmp_10_5' <Predicate = (!exitcond_5)> <Delay = 1.94> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+
+State 21 <SV = 20> <Delay = 1.68>
+ST_21 : Operation 151 [1/1] (0.00ns)   --->   "%tmp_11_5 = zext i16 %tmp_10_5 to i64" [layers_c/up_sampling2d.cpp:16]   --->   Operation 151 'zext' 'tmp_11_5' <Predicate = true> <Delay = 0.00>
+ST_21 : Operation 152 [1/1] (0.00ns)   --->   "%input_addr_5 = getelementptr [14400 x i16]* %input_r, i64 0, i64 %tmp_11_5" [layers_c/up_sampling2d.cpp:16]   --->   Operation 152 'getelementptr' 'input_addr_5' <Predicate = true> <Delay = 0.00>
+ST_21 : Operation 153 [2/2] (1.68ns)   --->   "%input_load_5 = load i16* %input_addr_5, align 2" [layers_c/up_sampling2d.cpp:16]   --->   Operation 153 'load' 'input_load_5' <Predicate = true> <Delay = 1.68> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 14400> <RAM>
+
+State 22 <SV = 21> <Delay = 2.07>
+ST_22 : Operation 154 [1/2] (1.68ns)   --->   "%input_load_5 = load i16* %input_addr_5, align 2" [layers_c/up_sampling2d.cpp:16]   --->   Operation 154 'load' 'input_load_5' <Predicate = true> <Delay = 1.68> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 14400> <RAM>
+ST_22 : Operation 155 [1/1] (0.00ns)   --->   "%tmp_12_5_cast = zext i16 %out_w_1_4 to i17" [layers_c/up_sampling2d.cpp:16]   --->   Operation 155 'zext' 'tmp_12_5_cast' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 156 [1/1] (2.07ns)   --->   "%tmp_13_5 = add i17 %tmp3_cast, %tmp_12_5_cast" [layers_c/up_sampling2d.cpp:16]   --->   Operation 156 'add' 'tmp_13_5' <Predicate = true> <Delay = 2.07> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_22 : Operation 157 [1/1] (2.07ns)   --->   "%out_w_1_5 = add i16 %out_w, 6" [layers_c/up_sampling2d.cpp:14]   --->   Operation 157 'add' 'out_w_1_5' <Predicate = true> <Delay = 2.07> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+
+State 23 <SV = 22> <Delay = 2.42>
+ST_23 : Operation 158 [1/1] (0.00ns)   --->   "%tmp_14_5 = zext i17 %tmp_13_5 to i64" [layers_c/up_sampling2d.cpp:16]   --->   Operation 158 'zext' 'tmp_14_5' <Predicate = (!exitcond & !exitcond_1 & !exitcond_2 & !exitcond_3 & !exitcond_4 & !exitcond_5)> <Delay = 0.00>
+ST_23 : Operation 159 [1/1] (0.00ns)   --->   "%output_addr_5 = getelementptr [14400 x i16]* %output_r, i64 0, i64 %tmp_14_5" [layers_c/up_sampling2d.cpp:16]   --->   Operation 159 'getelementptr' 'output_addr_5' <Predicate = (!exitcond & !exitcond_1 & !exitcond_2 & !exitcond_3 & !exitcond_4 & !exitcond_5)> <Delay = 0.00>
+ST_23 : Operation 160 [1/1] (1.68ns)   --->   "store i16 %input_load_5, i16* %output_addr_5, align 2" [layers_c/up_sampling2d.cpp:16]   --->   Operation 160 'store' <Predicate = (!exitcond & !exitcond_1 & !exitcond_2 & !exitcond_3 & !exitcond_4 & !exitcond_5)> <Delay = 1.68> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 14400> <RAM>
+ST_23 : Operation 161 [1/1] (2.42ns)   --->   "%exitcond_6 = icmp eq i16 %out_w_1_5, %output_width_cast" [layers_c/up_sampling2d.cpp:14]   --->   Operation 161 'icmp' 'exitcond_6' <Predicate = (!exitcond & !exitcond_1 & !exitcond_2 & !exitcond_3 & !exitcond_4 & !exitcond_5)> <Delay = 2.42> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.42> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_23 : Operation 162 [1/1] (0.00ns)   --->   "br i1 %exitcond_6, label %2, label %1" [layers_c/up_sampling2d.cpp:14]   --->   Operation 162 'br' <Predicate = (!exitcond & !exitcond_1 & !exitcond_2 & !exitcond_3 & !exitcond_4 & !exitcond_5)> <Delay = 0.00>
+ST_23 : Operation 163 [1/1] (0.00ns)   --->   "%div1_6 = call i15 @_ssdm_op_PartSelect.i15.i16.i32.i32(i16 %out_w_1_5, i32 1, i32 15)" [layers_c/up_sampling2d.cpp:16]   --->   Operation 163 'partselect' 'div1_6' <Predicate = (!exitcond & !exitcond_1 & !exitcond_2 & !exitcond_3 & !exitcond_4 & !exitcond_5 & !exitcond_6)> <Delay = 0.00>
+ST_23 : Operation 164 [1/1] (0.00ns)   --->   "%tmp_10 = zext i15 %div1_6 to i16" [layers_c/up_sampling2d.cpp:16]   --->   Operation 164 'zext' 'tmp_10' <Predicate = (!exitcond & !exitcond_1 & !exitcond_2 & !exitcond_3 & !exitcond_4 & !exitcond_5 & !exitcond_6)> <Delay = 0.00>
+ST_23 : Operation 165 [1/1] (1.94ns)   --->   "%tmp_10_6 = add i16 %tmp1_cast, %tmp_10" [layers_c/up_sampling2d.cpp:16]   --->   Operation 165 'add' 'tmp_10_6' <Predicate = (!exitcond & !exitcond_1 & !exitcond_2 & !exitcond_3 & !exitcond_4 & !exitcond_5 & !exitcond_6)> <Delay = 1.94> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_23 : Operation 166 [1/1] (0.00ns)   --->   "%tmp_12_6_cast = zext i16 %out_w_1_5 to i17" [layers_c/up_sampling2d.cpp:16]   --->   Operation 166 'zext' 'tmp_12_6_cast' <Predicate = (!exitcond & !exitcond_1 & !exitcond_2 & !exitcond_3 & !exitcond_4 & !exitcond_5 & !exitcond_6)> <Delay = 0.00>
+ST_23 : Operation 167 [1/1] (2.07ns)   --->   "%tmp_13_6 = add i17 %tmp3_cast, %tmp_12_6_cast" [layers_c/up_sampling2d.cpp:16]   --->   Operation 167 'add' 'tmp_13_6' <Predicate = (!exitcond & !exitcond_1 & !exitcond_2 & !exitcond_3 & !exitcond_4 & !exitcond_5 & !exitcond_6)> <Delay = 2.07> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_23 : Operation 168 [1/1] (2.07ns)   --->   "%out_w_1_6 = add i16 %out_w, 7" [layers_c/up_sampling2d.cpp:14]   --->   Operation 168 'add' 'out_w_1_6' <Predicate = (!exitcond & !exitcond_1 & !exitcond_2 & !exitcond_3 & !exitcond_4 & !exitcond_5 & !exitcond_6)> <Delay = 2.07> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_23 : Operation 169 [1/1] (0.00ns)   --->   "br label %.preheader4" [layers_c/up_sampling2d.cpp:12]   --->   Operation 169 'br' <Predicate = (exitcond_6) | (exitcond_5) | (exitcond_4) | (exitcond_3) | (exitcond_2) | (exitcond_1) | (exitcond)> <Delay = 0.00>
+
+State 24 <SV = 23> <Delay = 1.68>
+ST_24 : Operation 170 [1/1] (0.00ns)   --->   "%tmp_11_6 = zext i16 %tmp_10_6 to i64" [layers_c/up_sampling2d.cpp:16]   --->   Operation 170 'zext' 'tmp_11_6' <Predicate = true> <Delay = 0.00>
+ST_24 : Operation 171 [1/1] (0.00ns)   --->   "%input_addr_6 = getelementptr [14400 x i16]* %input_r, i64 0, i64 %tmp_11_6" [layers_c/up_sampling2d.cpp:16]   --->   Operation 171 'getelementptr' 'input_addr_6' <Predicate = true> <Delay = 0.00>
+ST_24 : Operation 172 [2/2] (1.68ns)   --->   "%input_load_6 = load i16* %input_addr_6, align 2" [layers_c/up_sampling2d.cpp:16]   --->   Operation 172 'load' 'input_load_6' <Predicate = true> <Delay = 1.68> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 14400> <RAM>
+
+State 25 <SV = 24> <Delay = 1.68>
+ST_25 : Operation 173 [1/2] (1.68ns)   --->   "%input_load_6 = load i16* %input_addr_6, align 2" [layers_c/up_sampling2d.cpp:16]   --->   Operation 173 'load' 'input_load_6' <Predicate = true> <Delay = 1.68> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 14400> <RAM>
+
+State 26 <SV = 25> <Delay = 1.68>
+ST_26 : Operation 174 [1/1] (0.00ns)   --->   "%tmp_14_6 = zext i17 %tmp_13_6 to i64" [layers_c/up_sampling2d.cpp:16]   --->   Operation 174 'zext' 'tmp_14_6' <Predicate = true> <Delay = 0.00>
+ST_26 : Operation 175 [1/1] (0.00ns)   --->   "%output_addr_6 = getelementptr [14400 x i16]* %output_r, i64 0, i64 %tmp_14_6" [layers_c/up_sampling2d.cpp:16]   --->   Operation 175 'getelementptr' 'output_addr_6' <Predicate = true> <Delay = 0.00>
+ST_26 : Operation 176 [1/1] (1.68ns)   --->   "store i16 %input_load_6, i16* %output_addr_6, align 2" [layers_c/up_sampling2d.cpp:16]   --->   Operation 176 'store' <Predicate = true> <Delay = 1.68> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 14400> <RAM>
+ST_26 : Operation 177 [1/1] (0.00ns)   --->   "br label %.preheader.0" [layers_c/up_sampling2d.cpp:14]   --->   Operation 177 'br' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
 + Verbose Summary: Timing violations
 ============================================================
-Target clock period: 10ns, clock uncertainty: 1.25ns.
+Target clock period: 4.4ns, clock uncertainty: 1.25ns.
 
  <State 1>: 1.77ns
 The critical path consists of the following:
-	multiplexor before 'phi' operation ('out_d') with incoming values : ('out_d', layers_c/up_sampling2d.cpp:11) [19]  (1.77 ns)
+	multiplexor before 'phi' operation ('out_d') with incoming values : ('out_d', layers_c/up_sampling2d.cpp:11) [21]  (1.77 ns)
 
  <State 2>: 1.92ns
 The critical path consists of the following:
-	'phi' operation ('phi_mul', layers_c/up_sampling2d.cpp:14) with incoming values : ('next_mul', layers_c/up_sampling2d.cpp:14) [20]  (0 ns)
-	'add' operation ('next_mul', layers_c/up_sampling2d.cpp:14) [23]  (1.92 ns)
+	'phi' operation ('phi_mul', layers_c/up_sampling2d.cpp:16) with incoming values : ('next_mul', layers_c/up_sampling2d.cpp:16) [22]  (0 ns)
+	'add' operation ('next_mul', layers_c/up_sampling2d.cpp:16) [25]  (1.92 ns)
 
- <State 3>: 6.17ns
+ <State 3>: 1.92ns
 The critical path consists of the following:
-	'phi' operation ('out_h') with incoming values : ('out_h', layers_c/up_sampling2d.cpp:12) [32]  (0 ns)
-	'add' operation ('tmp2', layers_c/up_sampling2d.cpp:14) [45]  (1.82 ns)
-	'mul' operation ('tmp3', layers_c/up_sampling2d.cpp:14) [47]  (4.35 ns)
+	'phi' operation ('out_h') with incoming values : ('out_h', layers_c/up_sampling2d.cpp:12) [34]  (0 ns)
+	'add' operation ('tmp', layers_c/up_sampling2d.cpp:16) [44]  (1.92 ns)
 
- <State 4>: 4.8ns
+ <State 4>: 4.35ns
 The critical path consists of the following:
-	'phi' operation ('out_w') with incoming values : ('out_w', layers_c/up_sampling2d.cpp:13) [50]  (0 ns)
-	'add' operation ('tmp_s', layers_c/up_sampling2d.cpp:14) [59]  (1.55 ns)
-	'getelementptr' operation ('input_addr', layers_c/up_sampling2d.cpp:14) [61]  (0 ns)
-	'load' operation ('input_load', layers_c/up_sampling2d.cpp:14) on array 'input_r' [62]  (3.25 ns)
+	'mul' operation ('tmp3', layers_c/up_sampling2d.cpp:16) [50]  (4.35 ns)
 
- <State 5>: 6.51ns
+ <State 5>: 2.43ns
 The critical path consists of the following:
-	'load' operation ('input_load', layers_c/up_sampling2d.cpp:14) on array 'input_r' [62]  (3.25 ns)
-	'store' operation (layers_c/up_sampling2d.cpp:14) of variable 'input_load', layers_c/up_sampling2d.cpp:14 on array 'output_r' [67]  (3.25 ns)
+	'phi' operation ('out_w', layers_c/up_sampling2d.cpp:14) with incoming values : ('out_w_1_6', layers_c/up_sampling2d.cpp:14) [54]  (0 ns)
+	'icmp' operation ('exitcond', layers_c/up_sampling2d.cpp:14) [55]  (2.43 ns)
+
+ <State 6>: 1.68ns
+The critical path consists of the following:
+	'getelementptr' operation ('input_addr', layers_c/up_sampling2d.cpp:16) [62]  (0 ns)
+	'load' operation ('input_load', layers_c/up_sampling2d.cpp:16) on array 'input_r' [63]  (1.68 ns)
+
+ <State 7>: 2.08ns
+The critical path consists of the following:
+	'add' operation ('tmp_2', layers_c/up_sampling2d.cpp:16) [65]  (2.08 ns)
+
+ <State 8>: 2.43ns
+The critical path consists of the following:
+	'icmp' operation ('exitcond_1', layers_c/up_sampling2d.cpp:14) [70]  (2.43 ns)
+
+ <State 9>: 1.68ns
+The critical path consists of the following:
+	'getelementptr' operation ('input_addr_1', layers_c/up_sampling2d.cpp:16) [77]  (0 ns)
+	'load' operation ('input_load_1', layers_c/up_sampling2d.cpp:16) on array 'input_r' [78]  (1.68 ns)
+
+ <State 10>: 2.08ns
+The critical path consists of the following:
+	'add' operation ('tmp_13_1', layers_c/up_sampling2d.cpp:16) [80]  (2.08 ns)
+
+ <State 11>: 2.43ns
+The critical path consists of the following:
+	'icmp' operation ('exitcond_2', layers_c/up_sampling2d.cpp:14) [85]  (2.43 ns)
+
+ <State 12>: 1.68ns
+The critical path consists of the following:
+	'getelementptr' operation ('input_addr_2', layers_c/up_sampling2d.cpp:16) [92]  (0 ns)
+	'load' operation ('input_load_2', layers_c/up_sampling2d.cpp:16) on array 'input_r' [93]  (1.68 ns)
+
+ <State 13>: 2.08ns
+The critical path consists of the following:
+	'add' operation ('tmp_13_2', layers_c/up_sampling2d.cpp:16) [95]  (2.08 ns)
+
+ <State 14>: 2.43ns
+The critical path consists of the following:
+	'icmp' operation ('exitcond_3', layers_c/up_sampling2d.cpp:14) [100]  (2.43 ns)
+
+ <State 15>: 1.68ns
+The critical path consists of the following:
+	'getelementptr' operation ('input_addr_3', layers_c/up_sampling2d.cpp:16) [107]  (0 ns)
+	'load' operation ('input_load_3', layers_c/up_sampling2d.cpp:16) on array 'input_r' [108]  (1.68 ns)
+
+ <State 16>: 2.08ns
+The critical path consists of the following:
+	'add' operation ('tmp_13_3', layers_c/up_sampling2d.cpp:16) [110]  (2.08 ns)
+
+ <State 17>: 2.43ns
+The critical path consists of the following:
+	'icmp' operation ('exitcond_4', layers_c/up_sampling2d.cpp:14) [115]  (2.43 ns)
+
+ <State 18>: 1.68ns
+The critical path consists of the following:
+	'getelementptr' operation ('input_addr_4', layers_c/up_sampling2d.cpp:16) [122]  (0 ns)
+	'load' operation ('input_load_4', layers_c/up_sampling2d.cpp:16) on array 'input_r' [123]  (1.68 ns)
+
+ <State 19>: 2.08ns
+The critical path consists of the following:
+	'add' operation ('tmp_13_4', layers_c/up_sampling2d.cpp:16) [125]  (2.08 ns)
+
+ <State 20>: 2.43ns
+The critical path consists of the following:
+	'icmp' operation ('exitcond_5', layers_c/up_sampling2d.cpp:14) [130]  (2.43 ns)
+
+ <State 21>: 1.68ns
+The critical path consists of the following:
+	'getelementptr' operation ('input_addr_5', layers_c/up_sampling2d.cpp:16) [137]  (0 ns)
+	'load' operation ('input_load_5', layers_c/up_sampling2d.cpp:16) on array 'input_r' [138]  (1.68 ns)
+
+ <State 22>: 2.08ns
+The critical path consists of the following:
+	'add' operation ('tmp_13_5', layers_c/up_sampling2d.cpp:16) [140]  (2.08 ns)
+
+ <State 23>: 2.43ns
+The critical path consists of the following:
+	'icmp' operation ('exitcond_6', layers_c/up_sampling2d.cpp:14) [145]  (2.43 ns)
+
+ <State 24>: 1.68ns
+The critical path consists of the following:
+	'getelementptr' operation ('input_addr_6', layers_c/up_sampling2d.cpp:16) [152]  (0 ns)
+	'load' operation ('input_load_6', layers_c/up_sampling2d.cpp:16) on array 'input_r' [153]  (1.68 ns)
+
+ <State 25>: 1.68ns
+The critical path consists of the following:
+	'load' operation ('input_load_6', layers_c/up_sampling2d.cpp:16) on array 'input_r' [153]  (1.68 ns)
+
+ <State 26>: 1.68ns
+The critical path consists of the following:
+	'getelementptr' operation ('output_addr_6', layers_c/up_sampling2d.cpp:16) [157]  (0 ns)
+	'store' operation (layers_c/up_sampling2d.cpp:16) of variable 'input_load_6', layers_c/up_sampling2d.cpp:16 on array 'output_r' [158]  (1.68 ns)
 
 
 ============================================================
@@ -208,6 +478,27 @@ N/A
 	State 3
 	State 4
 	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+	State 20
+	State 21
+	State 22
+	State 23
+	State 24
+	State 25
+	State 26
 
 
 ============================================================

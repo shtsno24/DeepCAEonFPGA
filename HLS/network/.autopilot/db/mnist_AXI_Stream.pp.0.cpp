@@ -28692,11 +28692,13 @@ int network(axis &input_data, axis &output_data) {
  1, 1, (int16_t*)SeparableConv2D_4_w_p, 1, 14);
 
  for(int i = 0; i < array_length; i++){
-  MemBank_Out[i] = MemBank_B[i];
+#pragma HLS UNROLL
+ MemBank_Out[i] = MemBank_B[i];
  }
 
  for(uint64_t i = 0; i < array_length; i++){
 #pragma HLS PIPELINE
+
  out.user = 0;
   out.last = 0;
   out.dest = 0;

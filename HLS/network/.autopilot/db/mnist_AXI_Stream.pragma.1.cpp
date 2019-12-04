@@ -28692,11 +28692,13 @@ _ssdm_op_SpecInterface(0, "s_axilite", 1, 1, "", 0, 0, "", "", "", 0, 0, 0, 0, "
  1, 1, (int16_t*)SeparableConv2D_4_w_p, 1, 14);
 
  for(int i = 0; i < array_length; i++){
-  MemBank_Out[i] = MemBank_B[i];
+_ssdm_Unroll(0,0,0, "");
+ MemBank_Out[i] = MemBank_B[i];
  }
 
  for(uint64_t i = 0; i < array_length; i++){
 _ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
+
  out.user = 0;
   out.last = 0;
   out.dest = 0;

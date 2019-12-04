@@ -2,8 +2,8 @@
 # Vivado v2018.3.1 (64-bit)
 # SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
 # IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
-# Start of session at: Tue Dec  3 18:57:41 2019
-# Process ID: 4382
+# Start of session at: Wed Dec  4 20:11:02 2019
+# Process ID: 9319
 # Current directory: /home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog
 # Command line: vivado -source open_wave.tcl
 # Log file: /home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/vivado.log
@@ -15,10 +15,9 @@ source open_wave.tcl
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2018.3/data/ip'.
-current_fileset: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 6394.965 ; gain = 96.746 ; free physical = 782 ; free virtual = 4535
 # open_wave_database network.wdb
 open_wave_config /home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/network.wcfg
 close_sim
 INFO: [Simtcl 6-16] Simulation closed
 exit
-INFO: [Common 17-206] Exiting Vivado at Tue Dec  3 18:58:45 2019...
+INFO: [Common 17-206] Exiting Vivado at Wed Dec  4 20:12:56 2019...

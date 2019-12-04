@@ -1,0 +1,46 @@
+// ==============================================================
+// File generated on Wed Dec 04 20:23:35 JST 2019
+// Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3.1 (64-bit)
+// SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
+// IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+// Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+// ==============================================================
+#ifndef __network_mac_muladd_16ns_9ns_9s_25_3_1__HH__
+#define __network_mac_muladd_16ns_9ns_9s_25_3_1__HH__
+#include "simcore_mac_3.h"
+#include <systemc>
+
+template<
+    int ID,
+    int NUM_STAGE,
+    int din0_WIDTH,
+    int din1_WIDTH,
+    int din2_WIDTH,
+    int dout_WIDTH>
+SC_MODULE(network_mac_muladd_16ns_9ns_9s_25_3_1) {
+    sc_core::sc_in_clk clk;
+    sc_core::sc_in<sc_dt::sc_logic> reset;
+    sc_core::sc_in<sc_dt::sc_logic> ce;
+    sc_core::sc_in< sc_dt::sc_lv<din0_WIDTH> >   din0;
+    sc_core::sc_in< sc_dt::sc_lv<din1_WIDTH> >   din1;
+    sc_core::sc_in< sc_dt::sc_lv<din2_WIDTH> >   din2;
+    sc_core::sc_out< sc_dt::sc_lv<dout_WIDTH> >   dout;
+
+
+
+    simcore_mac_3<ID, 3, din0_WIDTH, din1_WIDTH, din2_WIDTH, dout_WIDTH> simcore_mac_3_U;
+
+    SC_CTOR(network_mac_muladd_16ns_9ns_9s_25_3_1):  simcore_mac_3_U ("simcore_mac_3_U") {
+        simcore_mac_3_U.clk(clk);
+        simcore_mac_3_U.reset(reset);
+        simcore_mac_3_U.ce(ce);
+        simcore_mac_3_U.din0(din0);
+        simcore_mac_3_U.din1(din1);
+        simcore_mac_3_U.din2(din2);
+        simcore_mac_3_U.dout(dout);
+
+    }
+
+};
+
+#endif //

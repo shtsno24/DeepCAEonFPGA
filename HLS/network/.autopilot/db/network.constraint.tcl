@@ -2,7 +2,7 @@ set clock_constraint { \
     name clk \
     module network \
     port ap_clk \
-    period 10 \
+    period 4.4 \
     uncertainty 1.25 \
 }
 

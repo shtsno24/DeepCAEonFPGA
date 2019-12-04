@@ -1,5 +1,5 @@
 # ==============================================================
-# File generated on Tue Dec 03 16:36:48 JST 2019
+# File generated on Wed Dec 04 17:24:01 JST 2019
 # Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3.1 (64-bit)
 # SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
 # IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
@@ -21,7 +21,7 @@ __SIM_DDS__ = 1
 
 ObjDir = obj
 
-HLS_SOURCES = ../../../../layers_cpp/array_printf_fix16.cpp ../../../../mnist_AXI_Stream.cpp ../../../../layers_c/conv2d.cpp ../../../../layers_c/depthwise_conv2d.cpp ../../../../layers_c/max_pooling2d.cpp ../../../../layers_c/padding2d.cpp ../../../../layers_c/pointwise_conv2d.cpp ../../../../layers_c/separable_conv2d.cpp ../../../../layers_c/up_sampling2d.cpp
+HLS_SOURCES = ../../../../mnist_AXI_Stream.cpp ../../../../layers_cpp/array_printf_fix16.cpp ../../../../layers_c/up_sampling2d.cpp ../../../../layers_c/separable_conv2d.cpp ../../../../layers_c/pointwise_conv2d.cpp ../../../../layers_c/padding2d.cpp ../../../../layers_c/max_pooling2d.cpp ../../../../layers_c/depthwise_conv2d.cpp ../../../../layers_c/conv2d.cpp
 
 TARGET := csim.exe
 
@@ -74,47 +74,23 @@ all: $(TARGET)
 
 
 
-$(ObjDir)/array_printf_fix16.o: ../../../../layers_cpp/array_printf_fix16.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling ../../../../layers_cpp/array_printf_fix16.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CC) ${CCFLAG} -c -MMD -std=c++14 -Wno-unknown-pragmas  $(IFLAG) $(DFLAG) $< -o $@ ; \
-
--include $(ObjDir)/array_printf_fix16.d
-
 $(ObjDir)/mnist_AXI_Stream.o: ../../../../mnist_AXI_Stream.cpp $(ObjDir)/.dir
 	$(Echo) "   Compiling ../../../../mnist_AXI_Stream.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
 	$(Verb)  $(CC) ${CCFLAG} -c -MMD -std=c++14 -Wno-unknown-pragmas  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
 -include $(ObjDir)/mnist_AXI_Stream.d
 
-$(ObjDir)/conv2d.o: ../../../../layers_c/conv2d.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling ../../../../layers_c/conv2d.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
+$(ObjDir)/array_printf_fix16.o: ../../../../layers_cpp/array_printf_fix16.cpp $(ObjDir)/.dir
+	$(Echo) "   Compiling ../../../../layers_cpp/array_printf_fix16.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
+	$(Verb)  $(CC) ${CCFLAG} -c -MMD -std=c++14 -Wno-unknown-pragmas  $(IFLAG) $(DFLAG) $< -o $@ ; \
+
+-include $(ObjDir)/array_printf_fix16.d
+
+$(ObjDir)/up_sampling2d.o: ../../../../layers_c/up_sampling2d.cpp $(ObjDir)/.dir
+	$(Echo) "   Compiling ../../../../layers_c/up_sampling2d.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
 	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
--include $(ObjDir)/conv2d.d
-
-$(ObjDir)/depthwise_conv2d.o: ../../../../layers_c/depthwise_conv2d.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling ../../../../layers_c/depthwise_conv2d.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
-
--include $(ObjDir)/depthwise_conv2d.d
-
-$(ObjDir)/max_pooling2d.o: ../../../../layers_c/max_pooling2d.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling ../../../../layers_c/max_pooling2d.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
-
--include $(ObjDir)/max_pooling2d.d
-
-$(ObjDir)/padding2d.o: ../../../../layers_c/padding2d.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling ../../../../layers_c/padding2d.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
-
--include $(ObjDir)/padding2d.d
-
-$(ObjDir)/pointwise_conv2d.o: ../../../../layers_c/pointwise_conv2d.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling ../../../../layers_c/pointwise_conv2d.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
-
--include $(ObjDir)/pointwise_conv2d.d
+-include $(ObjDir)/up_sampling2d.d
 
 $(ObjDir)/separable_conv2d.o: ../../../../layers_c/separable_conv2d.cpp $(ObjDir)/.dir
 	$(Echo) "   Compiling ../../../../layers_c/separable_conv2d.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
@@ -122,8 +98,32 @@ $(ObjDir)/separable_conv2d.o: ../../../../layers_c/separable_conv2d.cpp $(ObjDir
 
 -include $(ObjDir)/separable_conv2d.d
 
-$(ObjDir)/up_sampling2d.o: ../../../../layers_c/up_sampling2d.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling ../../../../layers_c/up_sampling2d.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
+$(ObjDir)/pointwise_conv2d.o: ../../../../layers_c/pointwise_conv2d.cpp $(ObjDir)/.dir
+	$(Echo) "   Compiling ../../../../layers_c/pointwise_conv2d.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
 	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
--include $(ObjDir)/up_sampling2d.d
+-include $(ObjDir)/pointwise_conv2d.d
+
+$(ObjDir)/padding2d.o: ../../../../layers_c/padding2d.cpp $(ObjDir)/.dir
+	$(Echo) "   Compiling ../../../../layers_c/padding2d.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
+	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
+
+-include $(ObjDir)/padding2d.d
+
+$(ObjDir)/max_pooling2d.o: ../../../../layers_c/max_pooling2d.cpp $(ObjDir)/.dir
+	$(Echo) "   Compiling ../../../../layers_c/max_pooling2d.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
+	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
+
+-include $(ObjDir)/max_pooling2d.d
+
+$(ObjDir)/depthwise_conv2d.o: ../../../../layers_c/depthwise_conv2d.cpp $(ObjDir)/.dir
+	$(Echo) "   Compiling ../../../../layers_c/depthwise_conv2d.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
+	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
+
+-include $(ObjDir)/depthwise_conv2d.d
+
+$(ObjDir)/conv2d.o: ../../../../layers_c/conv2d.cpp $(ObjDir)/.dir
+	$(Echo) "   Compiling ../../../../layers_c/conv2d.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
+	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
+
+-include $(ObjDir)/conv2d.d
