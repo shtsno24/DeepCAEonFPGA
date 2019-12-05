@@ -1,12 +1,12 @@
 // ==============================================================
-// File generated on Wed Dec 04 20:08:10 JST 2019
+// File generated on Thu Dec 05 22:30:13 JST 2019
 // Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3.1 (64-bit)
 // SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
 // IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // ==============================================================
 `timescale 1 ns / 1 ps
-module network_MemBank_A_ram (addr0, ce0, d0, we0, q0, addr1, ce1, q1,  clk);
+module network_MemBank_A_ram (addr0, ce0, d0, we0, q0, addr1, ce1, d1, we1, q1,  clk);
 
 parameter DWIDTH = 16;
 parameter AWIDTH = 14;
@@ -19,6 +19,8 @@ input we0;
 output reg[DWIDTH-1:0] q0;
 input[AWIDTH-1:0] addr1;
 input ce1;
+input[DWIDTH-1:0] d1;
+input we1;
 output reg[DWIDTH-1:0] q1;
 input clk;
 
@@ -44,6 +46,10 @@ always @(posedge clk)
 begin 
     if (ce1) 
     begin
+        if (we1) 
+        begin 
+            ram[addr1] <= d1; 
+        end 
         q1 <= ram[addr1];
     end
 end
@@ -62,6 +68,8 @@ module network_MemBank_A(
     q0,
     address1,
     ce1,
+    we1,
+    d1,
     q1);
 
 parameter DataWidth = 32'd16;
@@ -76,6 +84,8 @@ input[DataWidth - 1:0] d0;
 output[DataWidth - 1:0] q0;
 input[AddressWidth - 1:0] address1;
 input ce1;
+input we1;
+input[DataWidth - 1:0] d1;
 output[DataWidth - 1:0] q1;
 
 
@@ -89,6 +99,8 @@ network_MemBank_A_ram network_MemBank_A_ram_U(
     .q0( q0 ),
     .addr1( address1 ),
     .ce1( ce1 ),
+    .we1( we1 ),
+    .d1( d1 ),
     .q1( q1 ));
 
 endmodule

@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'pointwise_conv2d_fix'
 ================================================================
-* Date:           Wed Dec  4 20:23:15 2019
+* Date:           Thu Dec  5 22:36:42 2019
 
 * Version:        2018.3.1 (Build 2489210 on Tue Mar 26 04:40:43 MDT 2019)
 * Project:        HLS
@@ -20,7 +20,7 @@
     +--------+-------+----------+------------+
     |  Clock | Target| Estimated| Uncertainty|
     +--------+-------+----------+------------+
-    |ap_clk  |   4.40|     3.903|        1.25|
+    |ap_clk  |   4.40|     3.903|        1.27|
     +--------+-------+----------+------------+
 
 + Latency (clock cycles): 
@@ -79,38 +79,38 @@
     +---------------------------------------------+-----------------------------------------+--------------+
     |                   Instance                  |                  Module                 |  Expression  |
     +---------------------------------------------+-----------------------------------------+--------------+
-    |network_mac_muladd_16ns_11ns_11s_27_3_1_U33  |network_mac_muladd_16ns_11ns_11s_27_3_1  | i0 * i1 + i2 |
-    |network_mac_muladd_16ns_11ns_11s_27_3_1_U35  |network_mac_muladd_16ns_11ns_11s_27_3_1  | i0 * i1 + i2 |
-    |network_mac_muladd_16ns_11ns_11s_27_3_1_U36  |network_mac_muladd_16ns_11ns_11s_27_3_1  | i0 * i1 + i2 |
-    |network_mac_muladd_16ns_11ns_11s_27_3_1_U37  |network_mac_muladd_16ns_11ns_11s_27_3_1  | i0 * i1 + i2 |
-    |network_mac_muladd_16ns_11ns_11s_27_3_1_U38  |network_mac_muladd_16ns_11ns_11s_27_3_1  | i0 * i1 + i2 |
-    |network_mac_muladd_16ns_11ns_11s_27_3_1_U39  |network_mac_muladd_16ns_11ns_11s_27_3_1  | i0 * i1 + i2 |
-    |network_mac_muladd_16ns_11ns_11s_27_3_1_U40  |network_mac_muladd_16ns_11ns_11s_27_3_1  | i0 * i1 + i2 |
     |network_mac_muladd_16ns_11ns_11s_27_3_1_U41  |network_mac_muladd_16ns_11ns_11s_27_3_1  | i0 * i1 + i2 |
-    |network_mac_muladd_16ns_11ns_11s_27_3_1_U42  |network_mac_muladd_16ns_11ns_11s_27_3_1  | i0 * i1 + i2 |
     |network_mac_muladd_16ns_11ns_11s_27_3_1_U43  |network_mac_muladd_16ns_11ns_11s_27_3_1  | i0 * i1 + i2 |
+    |network_mac_muladd_16ns_11ns_11s_27_3_1_U44  |network_mac_muladd_16ns_11ns_11s_27_3_1  | i0 * i1 + i2 |
     |network_mac_muladd_16ns_11ns_11s_27_3_1_U45  |network_mac_muladd_16ns_11ns_11s_27_3_1  | i0 * i1 + i2 |
     |network_mac_muladd_16ns_11ns_11s_27_3_1_U46  |network_mac_muladd_16ns_11ns_11s_27_3_1  | i0 * i1 + i2 |
+    |network_mac_muladd_16ns_11ns_11s_27_3_1_U47  |network_mac_muladd_16ns_11ns_11s_27_3_1  | i0 * i1 + i2 |
+    |network_mac_muladd_16ns_11ns_11s_27_3_1_U48  |network_mac_muladd_16ns_11ns_11s_27_3_1  | i0 * i1 + i2 |
     |network_mac_muladd_16ns_11ns_11s_27_3_1_U49  |network_mac_muladd_16ns_11ns_11s_27_3_1  | i0 * i1 + i2 |
     |network_mac_muladd_16ns_11ns_11s_27_3_1_U50  |network_mac_muladd_16ns_11ns_11s_27_3_1  | i0 * i1 + i2 |
+    |network_mac_muladd_16ns_11ns_11s_27_3_1_U51  |network_mac_muladd_16ns_11ns_11s_27_3_1  | i0 * i1 + i2 |
     |network_mac_muladd_16ns_11ns_11s_27_3_1_U53  |network_mac_muladd_16ns_11ns_11s_27_3_1  | i0 * i1 + i2 |
     |network_mac_muladd_16ns_11ns_11s_27_3_1_U54  |network_mac_muladd_16ns_11ns_11s_27_3_1  | i0 * i1 + i2 |
-    |network_mul_mul_16s_15s_30_3_1_U34           |network_mul_mul_16s_15s_30_3_1           |    i0 * i1   |
-    |network_mul_mul_16s_15s_30_3_1_U44           |network_mul_mul_16s_15s_30_3_1           |    i0 * i1   |
-    |network_mul_mul_16s_15s_30_3_1_U47           |network_mul_mul_16s_15s_30_3_1           |    i0 * i1   |
-    |network_mul_mul_16s_15s_30_3_1_U48           |network_mul_mul_16s_15s_30_3_1           |    i0 * i1   |
-    |network_mul_mul_16s_15s_30_3_1_U51           |network_mul_mul_16s_15s_30_3_1           |    i0 * i1   |
+    |network_mac_muladd_16ns_11ns_11s_27_3_1_U57  |network_mac_muladd_16ns_11ns_11s_27_3_1  | i0 * i1 + i2 |
+    |network_mac_muladd_16ns_11ns_11s_27_3_1_U58  |network_mac_muladd_16ns_11ns_11s_27_3_1  | i0 * i1 + i2 |
+    |network_mac_muladd_16ns_11ns_11s_27_3_1_U61  |network_mac_muladd_16ns_11ns_11s_27_3_1  | i0 * i1 + i2 |
+    |network_mac_muladd_16ns_11ns_11s_27_3_1_U62  |network_mac_muladd_16ns_11ns_11s_27_3_1  | i0 * i1 + i2 |
+    |network_mul_mul_16s_15s_30_3_1_U42           |network_mul_mul_16s_15s_30_3_1           |    i0 * i1   |
     |network_mul_mul_16s_15s_30_3_1_U52           |network_mul_mul_16s_15s_30_3_1           |    i0 * i1   |
     |network_mul_mul_16s_15s_30_3_1_U55           |network_mul_mul_16s_15s_30_3_1           |    i0 * i1   |
     |network_mul_mul_16s_15s_30_3_1_U56           |network_mul_mul_16s_15s_30_3_1           |    i0 * i1   |
-    |network_mul_mul_16s_15s_30_3_1_U57           |network_mul_mul_16s_15s_30_3_1           |    i0 * i1   |
-    |network_mul_mul_16s_15s_30_3_1_U58           |network_mul_mul_16s_15s_30_3_1           |    i0 * i1   |
     |network_mul_mul_16s_15s_30_3_1_U59           |network_mul_mul_16s_15s_30_3_1           |    i0 * i1   |
     |network_mul_mul_16s_15s_30_3_1_U60           |network_mul_mul_16s_15s_30_3_1           |    i0 * i1   |
-    |network_mul_mul_16s_15s_30_3_1_U61           |network_mul_mul_16s_15s_30_3_1           |    i0 * i1   |
-    |network_mul_mul_16s_15s_30_3_1_U62           |network_mul_mul_16s_15s_30_3_1           |    i0 * i1   |
     |network_mul_mul_16s_15s_30_3_1_U63           |network_mul_mul_16s_15s_30_3_1           |    i0 * i1   |
     |network_mul_mul_16s_15s_30_3_1_U64           |network_mul_mul_16s_15s_30_3_1           |    i0 * i1   |
+    |network_mul_mul_16s_15s_30_3_1_U65           |network_mul_mul_16s_15s_30_3_1           |    i0 * i1   |
+    |network_mul_mul_16s_15s_30_3_1_U66           |network_mul_mul_16s_15s_30_3_1           |    i0 * i1   |
+    |network_mul_mul_16s_15s_30_3_1_U67           |network_mul_mul_16s_15s_30_3_1           |    i0 * i1   |
+    |network_mul_mul_16s_15s_30_3_1_U68           |network_mul_mul_16s_15s_30_3_1           |    i0 * i1   |
+    |network_mul_mul_16s_15s_30_3_1_U69           |network_mul_mul_16s_15s_30_3_1           |    i0 * i1   |
+    |network_mul_mul_16s_15s_30_3_1_U70           |network_mul_mul_16s_15s_30_3_1           |    i0 * i1   |
+    |network_mul_mul_16s_15s_30_3_1_U71           |network_mul_mul_16s_15s_30_3_1           |    i0 * i1   |
+    |network_mul_mul_16s_15s_30_3_1_U72           |network_mul_mul_16s_15s_30_3_1           |    i0 * i1   |
     +---------------------------------------------+-----------------------------------------+--------------+
 
     * Memory: 
@@ -135,7 +135,7 @@
     |in_d_1_15_fu_1110_p2   |     +    |      0|  0|  23|          16|           5|
     |next_mul_fu_497_p2     |     +    |      0|  0|  19|          14|          10|
     |out_d_2_fu_509_p2      |     +    |      0|  0|  15|           5|           1|
-    |out_h_2_fu_534_p2      |     +    |      0|  0|  15|           5|           1|
+    |out_h_1_fu_534_p2      |     +    |      0|  0|  15|           5|           1|
     |out_w_1_fu_576_p2      |     +    |      0|  0|  15|           5|           1|
     |tmp10_fu_1387_p2       |     +    |      0|  0|  23|          16|          16|
     |tmp11_fu_1439_p2       |     +    |      0|  0|  16|          16|          16|
@@ -150,7 +150,8 @@
     |tmp7_fu_1448_p2        |     +    |      0|  0|  16|          16|          16|
     |tmp8_fu_1444_p2        |     +    |      0|  0|  16|          16|          16|
     |tmp9_fu_1363_p2        |     +    |      0|  0|  23|          16|          16|
-    |tmp_12_fu_609_p2       |     +    |      0|  0|  24|          17|          17|
+    |tmp_21_fu_586_p2       |     +    |      0|  0|  13|          11|          11|
+    |tmp_25_fu_609_p2       |     +    |      0|  0|  24|          17|          17|
     |tmp_34_10_fu_949_p2    |     +    |      0|  0|  24|          17|          17|
     |tmp_34_11_fu_1008_p2   |     +    |      0|  0|  24|          17|          17|
     |tmp_34_12_fu_1027_p2   |     +    |      0|  0|  24|          17|          17|
@@ -166,7 +167,6 @@
     |tmp_34_8_fu_860_p2     |     +    |      0|  0|  24|          17|          17|
     |tmp_34_9_fu_879_p2     |     +    |      0|  0|  24|          17|          17|
     |tmp_34_s_fu_930_p2     |     +    |      0|  0|  24|          17|          17|
-    |tmp_5_fu_586_p2        |     +    |      0|  0|  13|          11|          11|
     |tmp_8_fu_675_p2        |     +    |      0|  0|  21|          15|          15|
     |tmp_fu_1453_p2         |     +    |      0|  0|  16|          16|          16|
     |tmp_4_fu_564_p2        |     -    |      0|  0|  13|          11|          11|
@@ -234,7 +234,7 @@
     |next_mul_reg_1708      |  14|   0|   14|          0|
     |out_d_2_reg_1716       |   5|   0|    5|          0|
     |out_d_reg_382          |   5|   0|    5|          0|
-    |out_h_2_reg_1754       |   5|   0|    5|          0|
+    |out_h_1_reg_1754       |   5|   0|    5|          0|
     |out_h_reg_405          |   5|   0|    5|          0|
     |out_w_1_reg_1767       |   5|   0|    5|          0|
     |out_w_reg_416          |   5|   0|    5|          0|
@@ -257,11 +257,12 @@
     |tmp6_reg_2442          |  16|   0|   16|          0|
     |tmp7_reg_2532          |  16|   0|   16|          0|
     |tmp9_reg_2482          |  16|   0|   16|          0|
-    |tmp_10_reg_1806        |  27|   0|   27|          0|
-    |tmp_12_reg_1811        |  17|   0|   17|          0|
-    |tmp_14_reg_1836        |  30|   0|   30|          0|
-    |tmp_15_cast_reg_1777   |  27|   0|   27|          0|
     |tmp_1_cast1_reg_1726   |   5|   0|   17|         12|
+    |tmp_21_cast_reg_1777   |  27|   0|   27|          0|
+    |tmp_21_reg_1772        |  11|   0|   11|          0|
+    |tmp_23_reg_1806        |  27|   0|   27|          0|
+    |tmp_25_reg_1811        |  17|   0|   17|          0|
+    |tmp_27_reg_1836        |  30|   0|   30|          0|
     |tmp_31_10_reg_2197     |  27|   0|   27|          0|
     |tmp_31_11_reg_2282     |  27|   0|   27|          0|
     |tmp_31_12_reg_2287     |  27|   0|   27|          0|
@@ -313,7 +314,6 @@
     |tmp_39_4_reg_2357      |  16|   0|   16|          0|
     |tmp_39_5_reg_2362      |  16|   0|   16|          0|
     |tmp_4_reg_1759         |   9|   0|   11|          2|
-    |tmp_5_reg_1772         |  11|   0|   11|          0|
     |tmp_8_reg_1867         |  15|   0|   15|          0|
     +-----------------------+----+----+-----+-----------+
     |Total                  |1817|   0| 1833|         16|

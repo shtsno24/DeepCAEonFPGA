@@ -58,7 +58,7 @@ end;
 architecture behav of network is 
     attribute CORE_GENERATION_INFO : STRING;
     attribute CORE_GENERATION_INFO of behav : architecture is
-    "network,hls_ip_2018_3_1,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z020clg400-1,HLS_INPUT_CLOCK=4.400000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=4.350000,HLS_SYN_LAT=-1,HLS_SYN_TPT=none,HLS_SYN_MEM=46,HLS_SYN_DSP=183,HLS_SYN_FF=16968,HLS_SYN_LUT=25835,HLS_VERSION=2018_3_1}";
+    "network,hls_ip_2018_3_1,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z020clg400-1,HLS_INPUT_CLOCK=4.400000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=4.350000,HLS_SYN_LAT=-1,HLS_SYN_TPT=none,HLS_SYN_MEM=46,HLS_SYN_DSP=207,HLS_SYN_FF=27676,HLS_SYN_LUT=47749,HLS_VERSION=2018_3_1}";
     constant ap_const_logic_1 : STD_LOGIC := '1';
     constant ap_const_logic_0 : STD_LOGIC := '0';
     constant ap_ST_fsm_state1 : STD_LOGIC_VECTOR (435 downto 0) := "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001";
@@ -904,58 +904,58 @@ architecture behav of network is
     constant ap_const_lv32_27 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000100111";
     constant ap_const_lv32_1B0 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000110110000";
     constant ap_const_lv10_0 : STD_LOGIC_VECTOR (9 downto 0) := "0000000000";
-    constant ap_const_lv32_5 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000101";
-    constant ap_const_lv32_6 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000110";
-    constant ap_const_lv32_1D : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000011101";
-    constant ap_const_lv32_1E : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000011110";
-    constant ap_const_lv32_15 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000010101";
-    constant ap_const_lv32_16 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000010110";
-    constant ap_const_lv32_B : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000001011";
-    constant ap_const_lv32_23 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000100011";
-    constant ap_const_lv7_10 : STD_LOGIC_VECTOR (6 downto 0) := "0010000";
-    constant ap_const_lv32_C : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000001100";
-    constant ap_const_lv7_1E : STD_LOGIC_VECTOR (6 downto 0) := "0011110";
-    constant ap_const_lv32_24 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000100100";
-    constant ap_const_lv6_10 : STD_LOGIC_VECTOR (5 downto 0) := "010000";
-    constant ap_const_lv6_1E : STD_LOGIC_VECTOR (5 downto 0) := "011110";
-    constant ap_const_lv6_E : STD_LOGIC_VECTOR (5 downto 0) := "001110";
-    constant ap_const_lv6_1C : STD_LOGIC_VECTOR (5 downto 0) := "011100";
-    constant ap_const_lv32_7 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000111";
-    constant ap_const_lv32_F : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000001111";
-    constant ap_const_lv7_1C : STD_LOGIC_VECTOR (6 downto 0) := "0011100";
-    constant ap_const_lv32_8 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000001000";
-    constant ap_const_lv7_E : STD_LOGIC_VECTOR (6 downto 0) := "0001110";
-    constant ap_const_lv32_10 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000010000";
-    constant ap_const_lv6_8 : STD_LOGIC_VECTOR (5 downto 0) := "001000";
-    constant ap_const_lv5_E : STD_LOGIC_VECTOR (4 downto 0) := "01110";
-    constant ap_const_lv5_7 : STD_LOGIC_VECTOR (4 downto 0) := "00111";
-    constant ap_const_lv32_13 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000010011";
-    constant ap_const_lv32_1B : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000011011";
-    constant ap_const_lv6_9 : STD_LOGIC_VECTOR (5 downto 0) := "001001";
-    constant ap_const_lv32_14 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000010100";
-    constant ap_const_lv32_1C : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000011100";
-    constant ap_const_lv32_D : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000001101";
-    constant ap_const_lv32_E : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000001110";
-    constant ap_const_lv32_3 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000011";
-    constant ap_const_lv32_4 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000100";
-    constant ap_const_lv32_25 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000100101";
-    constant ap_const_lv32_26 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000100110";
-    constant ap_const_lv32_17 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000010111";
-    constant ap_const_lv32_1F : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000011111";
-    constant ap_const_lv32_18 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000011000";
-    constant ap_const_lv32_20 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000100000";
     constant ap_const_lv32_9 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000001001";
     constant ap_const_lv32_11 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000010001";
     constant ap_const_lv32_19 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000011001";
     constant ap_const_lv32_21 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000100001";
     constant ap_const_lv7_1 : STD_LOGIC_VECTOR (6 downto 0) := "0000001";
     constant ap_const_lv32_2 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000010";
+    constant ap_const_lv7_10 : STD_LOGIC_VECTOR (6 downto 0) := "0010000";
     constant ap_const_lv32_A : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000001010";
     constant ap_const_lv7_8 : STD_LOGIC_VECTOR (6 downto 0) := "0001000";
     constant ap_const_lv32_12 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000010010";
     constant ap_const_lv32_1A : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000011010";
     constant ap_const_lv32_22 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000100010";
+    constant ap_const_lv6_1C : STD_LOGIC_VECTOR (5 downto 0) := "011100";
+    constant ap_const_lv6_E : STD_LOGIC_VECTOR (5 downto 0) := "001110";
     constant ap_const_lv6_7 : STD_LOGIC_VECTOR (5 downto 0) := "000111";
+    constant ap_const_lv32_B : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000001011";
+    constant ap_const_lv32_23 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000100011";
+    constant ap_const_lv32_C : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000001100";
+    constant ap_const_lv7_1E : STD_LOGIC_VECTOR (6 downto 0) := "0011110";
+    constant ap_const_lv32_24 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000100100";
+    constant ap_const_lv6_10 : STD_LOGIC_VECTOR (5 downto 0) := "010000";
+    constant ap_const_lv6_1E : STD_LOGIC_VECTOR (5 downto 0) := "011110";
+    constant ap_const_lv32_13 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000010011";
+    constant ap_const_lv32_1B : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000011011";
+    constant ap_const_lv6_9 : STD_LOGIC_VECTOR (5 downto 0) := "001001";
+    constant ap_const_lv32_14 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000010100";
+    constant ap_const_lv32_1C : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000011100";
+    constant ap_const_lv5_7 : STD_LOGIC_VECTOR (4 downto 0) := "00111";
+    constant ap_const_lv5_E : STD_LOGIC_VECTOR (4 downto 0) := "01110";
+    constant ap_const_lv32_3 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000011";
+    constant ap_const_lv32_4 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000100";
+    constant ap_const_lv32_5 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000101";
+    constant ap_const_lv32_6 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000110";
+    constant ap_const_lv32_1D : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000011101";
+    constant ap_const_lv32_1E : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000011110";
+    constant ap_const_lv32_15 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000010101";
+    constant ap_const_lv32_16 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000010110";
+    constant ap_const_lv32_17 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000010111";
+    constant ap_const_lv32_1F : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000011111";
+    constant ap_const_lv32_18 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000011000";
+    constant ap_const_lv32_20 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000100000";
+    constant ap_const_lv6_8 : STD_LOGIC_VECTOR (5 downto 0) := "001000";
+    constant ap_const_lv32_7 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000111";
+    constant ap_const_lv32_F : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000001111";
+    constant ap_const_lv7_1C : STD_LOGIC_VECTOR (6 downto 0) := "0011100";
+    constant ap_const_lv32_8 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000001000";
+    constant ap_const_lv7_E : STD_LOGIC_VECTOR (6 downto 0) := "0001110";
+    constant ap_const_lv32_10 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000010000";
+    constant ap_const_lv32_D : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000001101";
+    constant ap_const_lv32_E : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000001110";
+    constant ap_const_lv32_25 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000100101";
+    constant ap_const_lv32_26 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000100110";
     constant ap_const_lv64_0 : STD_LOGIC_VECTOR (63 downto 0) := "0000000000000000000000000000000000000000000000000000000000000000";
     constant ap_const_lv64_1 : STD_LOGIC_VECTOR (63 downto 0) := "0000000000000000000000000000000000000000000000000000000000000001";
     constant ap_const_lv64_2 : STD_LOGIC_VECTOR (63 downto 0) := "0000000000000000000000000000000000000000000000000000000000000010";
@@ -1881,9 +1881,9 @@ architecture behav of network is
     attribute fsm_encoding of ap_CS_fsm_pp0_stage0 : signal is "none";
     signal ap_enable_reg_pp0_iter1 : STD_LOGIC := '0';
     signal ap_block_pp0_stage0 : BOOLEAN;
-    signal tmp_49_reg_18542 : STD_LOGIC_VECTOR (0 downto 0);
+    signal tmp_38_reg_18542 : STD_LOGIC_VECTOR (0 downto 0);
     signal ap_enable_reg_pp0_iter2 : STD_LOGIC := '0';
-    signal tmp_49_reg_18542_pp0_iter1_reg : STD_LOGIC_VECTOR (0 downto 0);
+    signal tmp_38_reg_18542_pp0_iter1_reg : STD_LOGIC_VECTOR (0 downto 0);
     signal i2_reg_14382 : STD_LOGIC_VECTOR (9 downto 0);
     signal MemBank_B_q0 : STD_LOGIC_VECTOR (15 downto 0);
     signal reg_14553 : STD_LOGIC_VECTOR (15 downto 0);
@@ -2677,7 +2677,7 @@ architecture behav of network is
     signal ap_block_state2 : BOOLEAN;
     signal ap_CS_fsm_state40 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state40 : signal is "none";
-    signal tmp_49_fu_14585_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal tmp_38_fu_14585_p2 : STD_LOGIC_VECTOR (0 downto 0);
     signal ap_block_state434_pp0_stage0_iter0 : BOOLEAN;
     signal ap_block_state435_pp0_stage0_iter1 : BOOLEAN;
     signal ap_block_state435_io : BOOLEAN;
@@ -2702,6 +2702,7 @@ architecture behav of network is
     signal MemBank_A_q0 : STD_LOGIC_VECTOR (15 downto 0);
     signal MemBank_A_address1 : STD_LOGIC_VECTOR (13 downto 0);
     signal MemBank_A_ce1 : STD_LOGIC;
+    signal MemBank_A_we1 : STD_LOGIC;
     signal MemBank_A_q1 : STD_LOGIC_VECTOR (15 downto 0);
     signal MemBank_B_address0 : STD_LOGIC_VECTOR (13 downto 0);
     signal MemBank_B_ce0 : STD_LOGIC;
@@ -2709,247 +2710,190 @@ architecture behav of network is
     signal MemBank_B_d0 : STD_LOGIC_VECTOR (15 downto 0);
     signal MemBank_B_address1 : STD_LOGIC_VECTOR (13 downto 0);
     signal MemBank_B_ce1 : STD_LOGIC;
+    signal MemBank_B_we1 : STD_LOGIC;
     signal MemBank_Out_address0 : STD_LOGIC_VECTOR (9 downto 0);
     signal MemBank_Out_ce0 : STD_LOGIC;
     signal MemBank_Out_we0 : STD_LOGIC;
     signal MemBank_Out_address1 : STD_LOGIC_VECTOR (9 downto 0);
     signal MemBank_Out_ce1 : STD_LOGIC;
     signal MemBank_Out_we1 : STD_LOGIC;
-    signal grp_pointwise_conv2d_fix_fu_14393_ap_start : STD_LOGIC;
-    signal grp_pointwise_conv2d_fix_fu_14393_ap_done : STD_LOGIC;
-    signal grp_pointwise_conv2d_fix_fu_14393_ap_idle : STD_LOGIC;
-    signal grp_pointwise_conv2d_fix_fu_14393_ap_ready : STD_LOGIC;
-    signal grp_pointwise_conv2d_fix_fu_14393_input_r_address0 : STD_LOGIC_VECTOR (13 downto 0);
-    signal grp_pointwise_conv2d_fix_fu_14393_input_r_ce0 : STD_LOGIC;
-    signal grp_pointwise_conv2d_fix_fu_14393_input_r_address1 : STD_LOGIC_VECTOR (13 downto 0);
-    signal grp_pointwise_conv2d_fix_fu_14393_input_r_ce1 : STD_LOGIC;
-    signal grp_pointwise_conv2d_fix_fu_14393_output_r_address0 : STD_LOGIC_VECTOR (13 downto 0);
-    signal grp_pointwise_conv2d_fix_fu_14393_output_r_ce0 : STD_LOGIC;
-    signal grp_pointwise_conv2d_fix_fu_14393_output_r_we0 : STD_LOGIC;
-    signal grp_pointwise_conv2d_fix_fu_14393_output_r_d0 : STD_LOGIC_VECTOR (15 downto 0);
-    signal grp_pointwise_conv2d_fix_3_fu_14403_ap_start : STD_LOGIC;
-    signal grp_pointwise_conv2d_fix_3_fu_14403_ap_done : STD_LOGIC;
-    signal grp_pointwise_conv2d_fix_3_fu_14403_ap_idle : STD_LOGIC;
-    signal grp_pointwise_conv2d_fix_3_fu_14403_ap_ready : STD_LOGIC;
-    signal grp_pointwise_conv2d_fix_3_fu_14403_input_r_address0 : STD_LOGIC_VECTOR (13 downto 0);
-    signal grp_pointwise_conv2d_fix_3_fu_14403_input_r_ce0 : STD_LOGIC;
-    signal grp_pointwise_conv2d_fix_3_fu_14403_input_r_address1 : STD_LOGIC_VECTOR (13 downto 0);
-    signal grp_pointwise_conv2d_fix_3_fu_14403_input_r_ce1 : STD_LOGIC;
-    signal grp_pointwise_conv2d_fix_3_fu_14403_output_r_address0 : STD_LOGIC_VECTOR (13 downto 0);
-    signal grp_pointwise_conv2d_fix_3_fu_14403_output_r_ce0 : STD_LOGIC;
-    signal grp_pointwise_conv2d_fix_3_fu_14403_output_r_we0 : STD_LOGIC;
-    signal grp_pointwise_conv2d_fix_3_fu_14403_output_r_d0 : STD_LOGIC_VECTOR (15 downto 0);
-    signal grp_pointwise_conv2d_fix_2_fu_14413_ap_start : STD_LOGIC;
-    signal grp_pointwise_conv2d_fix_2_fu_14413_ap_done : STD_LOGIC;
-    signal grp_pointwise_conv2d_fix_2_fu_14413_ap_idle : STD_LOGIC;
-    signal grp_pointwise_conv2d_fix_2_fu_14413_ap_ready : STD_LOGIC;
-    signal grp_pointwise_conv2d_fix_2_fu_14413_input_r_address0 : STD_LOGIC_VECTOR (13 downto 0);
-    signal grp_pointwise_conv2d_fix_2_fu_14413_input_r_ce0 : STD_LOGIC;
-    signal grp_pointwise_conv2d_fix_2_fu_14413_input_r_address1 : STD_LOGIC_VECTOR (13 downto 0);
-    signal grp_pointwise_conv2d_fix_2_fu_14413_input_r_ce1 : STD_LOGIC;
-    signal grp_pointwise_conv2d_fix_2_fu_14413_output_r_address0 : STD_LOGIC_VECTOR (13 downto 0);
-    signal grp_pointwise_conv2d_fix_2_fu_14413_output_r_ce0 : STD_LOGIC;
-    signal grp_pointwise_conv2d_fix_2_fu_14413_output_r_we0 : STD_LOGIC;
-    signal grp_pointwise_conv2d_fix_2_fu_14413_output_r_d0 : STD_LOGIC_VECTOR (15 downto 0);
-    signal grp_depthwise_conv2d_fix_2_fu_14423_ap_start : STD_LOGIC;
-    signal grp_depthwise_conv2d_fix_2_fu_14423_ap_done : STD_LOGIC;
-    signal grp_depthwise_conv2d_fix_2_fu_14423_ap_idle : STD_LOGIC;
-    signal grp_depthwise_conv2d_fix_2_fu_14423_ap_ready : STD_LOGIC;
-    signal grp_depthwise_conv2d_fix_2_fu_14423_input_height : STD_LOGIC_VECTOR (6 downto 0);
-    signal grp_depthwise_conv2d_fix_2_fu_14423_input_width : STD_LOGIC_VECTOR (5 downto 0);
-    signal grp_depthwise_conv2d_fix_2_fu_14423_input_r_address0 : STD_LOGIC_VECTOR (13 downto 0);
-    signal grp_depthwise_conv2d_fix_2_fu_14423_input_r_ce0 : STD_LOGIC;
-    signal grp_depthwise_conv2d_fix_2_fu_14423_input_r_address1 : STD_LOGIC_VECTOR (13 downto 0);
-    signal grp_depthwise_conv2d_fix_2_fu_14423_input_r_ce1 : STD_LOGIC;
-    signal grp_depthwise_conv2d_fix_2_fu_14423_output_height : STD_LOGIC_VECTOR (5 downto 0);
-    signal grp_depthwise_conv2d_fix_2_fu_14423_output_width : STD_LOGIC_VECTOR (5 downto 0);
-    signal grp_depthwise_conv2d_fix_2_fu_14423_output_r_address0 : STD_LOGIC_VECTOR (13 downto 0);
-    signal grp_depthwise_conv2d_fix_2_fu_14423_output_r_ce0 : STD_LOGIC;
-    signal grp_depthwise_conv2d_fix_2_fu_14423_output_r_we0 : STD_LOGIC;
-    signal grp_depthwise_conv2d_fix_2_fu_14423_output_r_d0 : STD_LOGIC_VECTOR (15 downto 0);
-    signal grp_depthwise_conv2d_fix_2_fu_14423_bias_address0 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_depthwise_conv2d_fix_2_fu_14423_bias_ce0 : STD_LOGIC;
-    signal grp_depthwise_conv2d_fix_2_fu_14423_bias_q0 : STD_LOGIC_VECTOR (15 downto 0);
-    signal grp_depthwise_conv2d_fix_2_fu_14423_kernel_0_address0 : STD_LOGIC_VECTOR (7 downto 0);
-    signal grp_depthwise_conv2d_fix_2_fu_14423_kernel_0_ce0 : STD_LOGIC;
-    signal grp_depthwise_conv2d_fix_2_fu_14423_kernel_0_q0 : STD_LOGIC_VECTOR (15 downto 0);
-    signal grp_depthwise_conv2d_fix_2_fu_14423_kernel_0_address1 : STD_LOGIC_VECTOR (7 downto 0);
-    signal grp_depthwise_conv2d_fix_2_fu_14423_kernel_0_ce1 : STD_LOGIC;
-    signal grp_depthwise_conv2d_fix_2_fu_14423_kernel_0_q1 : STD_LOGIC_VECTOR (15 downto 0);
-    signal grp_max_pooling2d_fix16_fu_14447_ap_start : STD_LOGIC;
-    signal grp_max_pooling2d_fix16_fu_14447_ap_done : STD_LOGIC;
-    signal grp_max_pooling2d_fix16_fu_14447_ap_idle : STD_LOGIC;
-    signal grp_max_pooling2d_fix16_fu_14447_ap_ready : STD_LOGIC;
-    signal grp_max_pooling2d_fix16_fu_14447_input_height : STD_LOGIC_VECTOR (6 downto 0);
-    signal grp_max_pooling2d_fix16_fu_14447_input_width : STD_LOGIC_VECTOR (5 downto 0);
-    signal grp_max_pooling2d_fix16_fu_14447_input_r_address0 : STD_LOGIC_VECTOR (13 downto 0);
-    signal grp_max_pooling2d_fix16_fu_14447_input_r_ce0 : STD_LOGIC;
-    signal grp_max_pooling2d_fix16_fu_14447_input_r_address1 : STD_LOGIC_VECTOR (13 downto 0);
-    signal grp_max_pooling2d_fix16_fu_14447_input_r_ce1 : STD_LOGIC;
-    signal grp_max_pooling2d_fix16_fu_14447_output_depth : STD_LOGIC_VECTOR (5 downto 0);
-    signal grp_max_pooling2d_fix16_fu_14447_output_height : STD_LOGIC_VECTOR (4 downto 0);
-    signal grp_max_pooling2d_fix16_fu_14447_output_width : STD_LOGIC_VECTOR (4 downto 0);
-    signal grp_max_pooling2d_fix16_fu_14447_output_r_address0 : STD_LOGIC_VECTOR (13 downto 0);
-    signal grp_max_pooling2d_fix16_fu_14447_output_r_ce0 : STD_LOGIC;
-    signal grp_max_pooling2d_fix16_fu_14447_output_r_we0 : STD_LOGIC;
-    signal grp_max_pooling2d_fix16_fu_14447_output_r_d0 : STD_LOGIC_VECTOR (15 downto 0);
-    signal grp_depthwise_conv2d_fix_1_fu_14468_ap_start : STD_LOGIC;
-    signal grp_depthwise_conv2d_fix_1_fu_14468_ap_done : STD_LOGIC;
-    signal grp_depthwise_conv2d_fix_1_fu_14468_ap_idle : STD_LOGIC;
-    signal grp_depthwise_conv2d_fix_1_fu_14468_ap_ready : STD_LOGIC;
-    signal grp_depthwise_conv2d_fix_1_fu_14468_input_height : STD_LOGIC_VECTOR (5 downto 0);
-    signal grp_depthwise_conv2d_fix_1_fu_14468_input_width : STD_LOGIC_VECTOR (5 downto 0);
-    signal grp_depthwise_conv2d_fix_1_fu_14468_input_r_address0 : STD_LOGIC_VECTOR (13 downto 0);
-    signal grp_depthwise_conv2d_fix_1_fu_14468_input_r_ce0 : STD_LOGIC;
-    signal grp_depthwise_conv2d_fix_1_fu_14468_input_r_address1 : STD_LOGIC_VECTOR (13 downto 0);
-    signal grp_depthwise_conv2d_fix_1_fu_14468_input_r_ce1 : STD_LOGIC;
-    signal grp_depthwise_conv2d_fix_1_fu_14468_output_height : STD_LOGIC_VECTOR (4 downto 0);
-    signal grp_depthwise_conv2d_fix_1_fu_14468_output_width : STD_LOGIC_VECTOR (4 downto 0);
-    signal grp_depthwise_conv2d_fix_1_fu_14468_output_r_address0 : STD_LOGIC_VECTOR (13 downto 0);
-    signal grp_depthwise_conv2d_fix_1_fu_14468_output_r_ce0 : STD_LOGIC;
-    signal grp_depthwise_conv2d_fix_1_fu_14468_output_r_we0 : STD_LOGIC;
-    signal grp_depthwise_conv2d_fix_1_fu_14468_output_r_d0 : STD_LOGIC_VECTOR (15 downto 0);
-    signal grp_depthwise_conv2d_fix_1_fu_14468_bias_address0 : STD_LOGIC_VECTOR (2 downto 0);
-    signal grp_depthwise_conv2d_fix_1_fu_14468_bias_ce0 : STD_LOGIC;
-    signal grp_depthwise_conv2d_fix_1_fu_14468_bias_q0 : STD_LOGIC_VECTOR (15 downto 0);
-    signal grp_depthwise_conv2d_fix_1_fu_14468_kernel_0_address0 : STD_LOGIC_VECTOR (6 downto 0);
-    signal grp_depthwise_conv2d_fix_1_fu_14468_kernel_0_ce0 : STD_LOGIC;
-    signal grp_depthwise_conv2d_fix_1_fu_14468_kernel_0_q0 : STD_LOGIC_VECTOR (15 downto 0);
-    signal grp_depthwise_conv2d_fix_1_fu_14468_kernel_0_address1 : STD_LOGIC_VECTOR (6 downto 0);
-    signal grp_depthwise_conv2d_fix_1_fu_14468_kernel_0_ce1 : STD_LOGIC;
-    signal grp_depthwise_conv2d_fix_1_fu_14468_kernel_0_q1 : STD_LOGIC_VECTOR (15 downto 0);
-    signal grp_pointwise_conv2d_fix_1_fu_14492_ap_start : STD_LOGIC;
-    signal grp_pointwise_conv2d_fix_1_fu_14492_ap_done : STD_LOGIC;
-    signal grp_pointwise_conv2d_fix_1_fu_14492_ap_idle : STD_LOGIC;
-    signal grp_pointwise_conv2d_fix_1_fu_14492_ap_ready : STD_LOGIC;
-    signal grp_pointwise_conv2d_fix_1_fu_14492_input_r_address0 : STD_LOGIC_VECTOR (13 downto 0);
-    signal grp_pointwise_conv2d_fix_1_fu_14492_input_r_ce0 : STD_LOGIC;
-    signal grp_pointwise_conv2d_fix_1_fu_14492_input_r_address1 : STD_LOGIC_VECTOR (13 downto 0);
-    signal grp_pointwise_conv2d_fix_1_fu_14492_input_r_ce1 : STD_LOGIC;
-    signal grp_pointwise_conv2d_fix_1_fu_14492_output_r_address0 : STD_LOGIC_VECTOR (13 downto 0);
-    signal grp_pointwise_conv2d_fix_1_fu_14492_output_r_ce0 : STD_LOGIC;
-    signal grp_pointwise_conv2d_fix_1_fu_14492_output_r_we0 : STD_LOGIC;
-    signal grp_pointwise_conv2d_fix_1_fu_14492_output_r_d0 : STD_LOGIC_VECTOR (15 downto 0);
-    signal grp_depthwise_conv2d_fix_fu_14502_ap_start : STD_LOGIC;
-    signal grp_depthwise_conv2d_fix_fu_14502_ap_done : STD_LOGIC;
-    signal grp_depthwise_conv2d_fix_fu_14502_ap_idle : STD_LOGIC;
-    signal grp_depthwise_conv2d_fix_fu_14502_ap_ready : STD_LOGIC;
-    signal grp_depthwise_conv2d_fix_fu_14502_input_r_address0 : STD_LOGIC_VECTOR (13 downto 0);
-    signal grp_depthwise_conv2d_fix_fu_14502_input_r_ce0 : STD_LOGIC;
-    signal grp_depthwise_conv2d_fix_fu_14502_input_r_address1 : STD_LOGIC_VECTOR (13 downto 0);
-    signal grp_depthwise_conv2d_fix_fu_14502_input_r_ce1 : STD_LOGIC;
-    signal grp_depthwise_conv2d_fix_fu_14502_output_r_address0 : STD_LOGIC_VECTOR (13 downto 0);
-    signal grp_depthwise_conv2d_fix_fu_14502_output_r_ce0 : STD_LOGIC;
-    signal grp_depthwise_conv2d_fix_fu_14502_output_r_we0 : STD_LOGIC;
-    signal grp_depthwise_conv2d_fix_fu_14502_output_r_d0 : STD_LOGIC_VECTOR (15 downto 0);
-    signal grp_pointwise_conv2d_fix_4_fu_14508_ap_start : STD_LOGIC;
-    signal grp_pointwise_conv2d_fix_4_fu_14508_ap_done : STD_LOGIC;
-    signal grp_pointwise_conv2d_fix_4_fu_14508_ap_idle : STD_LOGIC;
-    signal grp_pointwise_conv2d_fix_4_fu_14508_ap_ready : STD_LOGIC;
-    signal grp_pointwise_conv2d_fix_4_fu_14508_input_r_address0 : STD_LOGIC_VECTOR (13 downto 0);
-    signal grp_pointwise_conv2d_fix_4_fu_14508_input_r_ce0 : STD_LOGIC;
-    signal grp_pointwise_conv2d_fix_4_fu_14508_input_r_address1 : STD_LOGIC_VECTOR (13 downto 0);
-    signal grp_pointwise_conv2d_fix_4_fu_14508_input_r_ce1 : STD_LOGIC;
-    signal grp_pointwise_conv2d_fix_4_fu_14508_output_r_address0 : STD_LOGIC_VECTOR (13 downto 0);
-    signal grp_pointwise_conv2d_fix_4_fu_14508_output_r_ce0 : STD_LOGIC;
-    signal grp_pointwise_conv2d_fix_4_fu_14508_output_r_we0 : STD_LOGIC;
-    signal grp_pointwise_conv2d_fix_4_fu_14508_output_r_d0 : STD_LOGIC_VECTOR (15 downto 0);
-    signal grp_up_sampling2d_fix16_fu_14514_ap_start : STD_LOGIC;
-    signal grp_up_sampling2d_fix16_fu_14514_ap_done : STD_LOGIC;
-    signal grp_up_sampling2d_fix16_fu_14514_ap_idle : STD_LOGIC;
-    signal grp_up_sampling2d_fix16_fu_14514_ap_ready : STD_LOGIC;
-    signal grp_up_sampling2d_fix16_fu_14514_input_height : STD_LOGIC_VECTOR (4 downto 0);
-    signal grp_up_sampling2d_fix16_fu_14514_input_width : STD_LOGIC_VECTOR (4 downto 0);
-    signal grp_up_sampling2d_fix16_fu_14514_input_r_address0 : STD_LOGIC_VECTOR (13 downto 0);
-    signal grp_up_sampling2d_fix16_fu_14514_input_r_ce0 : STD_LOGIC;
-    signal grp_up_sampling2d_fix16_fu_14514_output_depth : STD_LOGIC_VECTOR (5 downto 0);
-    signal grp_up_sampling2d_fix16_fu_14514_output_height : STD_LOGIC_VECTOR (5 downto 0);
-    signal grp_up_sampling2d_fix16_fu_14514_output_width : STD_LOGIC_VECTOR (5 downto 0);
-    signal grp_up_sampling2d_fix16_fu_14514_output_r_address0 : STD_LOGIC_VECTOR (13 downto 0);
-    signal grp_up_sampling2d_fix16_fu_14514_output_r_ce0 : STD_LOGIC;
-    signal grp_up_sampling2d_fix16_fu_14514_output_r_we0 : STD_LOGIC;
-    signal grp_up_sampling2d_fix16_fu_14514_output_r_d0 : STD_LOGIC_VECTOR (15 downto 0);
-    signal grp_padding2d_fix16_fu_14535_ap_start : STD_LOGIC;
-    signal grp_padding2d_fix16_fu_14535_ap_done : STD_LOGIC;
-    signal grp_padding2d_fix16_fu_14535_ap_idle : STD_LOGIC;
-    signal grp_padding2d_fix16_fu_14535_ap_ready : STD_LOGIC;
-    signal grp_padding2d_fix16_fu_14535_input_depth : STD_LOGIC_VECTOR (6 downto 0);
-    signal grp_padding2d_fix16_fu_14535_input_height : STD_LOGIC_VECTOR (5 downto 0);
-    signal grp_padding2d_fix16_fu_14535_input_width : STD_LOGIC_VECTOR (5 downto 0);
-    signal grp_padding2d_fix16_fu_14535_input_r_address0 : STD_LOGIC_VECTOR (13 downto 0);
-    signal grp_padding2d_fix16_fu_14535_input_r_ce0 : STD_LOGIC;
-    signal grp_padding2d_fix16_fu_14535_output_r_address0 : STD_LOGIC_VECTOR (13 downto 0);
-    signal grp_padding2d_fix16_fu_14535_output_r_ce0 : STD_LOGIC;
-    signal grp_padding2d_fix16_fu_14535_output_r_we0 : STD_LOGIC;
-    signal grp_padding2d_fix16_fu_14535_output_r_d0 : STD_LOGIC_VECTOR (15 downto 0);
+    signal grp_padding2d_fix16_fu_14393_ap_start : STD_LOGIC;
+    signal grp_padding2d_fix16_fu_14393_ap_done : STD_LOGIC;
+    signal grp_padding2d_fix16_fu_14393_ap_idle : STD_LOGIC;
+    signal grp_padding2d_fix16_fu_14393_ap_ready : STD_LOGIC;
+    signal grp_padding2d_fix16_fu_14393_input_depth : STD_LOGIC_VECTOR (6 downto 0);
+    signal grp_padding2d_fix16_fu_14393_input_height : STD_LOGIC_VECTOR (5 downto 0);
+    signal grp_padding2d_fix16_fu_14393_input_width : STD_LOGIC_VECTOR (5 downto 0);
+    signal grp_padding2d_fix16_fu_14393_input_r_address0 : STD_LOGIC_VECTOR (13 downto 0);
+    signal grp_padding2d_fix16_fu_14393_input_r_ce0 : STD_LOGIC;
+    signal grp_padding2d_fix16_fu_14393_output_r_address0 : STD_LOGIC_VECTOR (13 downto 0);
+    signal grp_padding2d_fix16_fu_14393_output_r_ce0 : STD_LOGIC;
+    signal grp_padding2d_fix16_fu_14393_output_r_we0 : STD_LOGIC;
+    signal grp_padding2d_fix16_fu_14393_output_r_d0 : STD_LOGIC_VECTOR (15 downto 0);
+    signal grp_padding2d_fix16_fu_14393_output_r_address1 : STD_LOGIC_VECTOR (13 downto 0);
+    signal grp_padding2d_fix16_fu_14393_output_r_ce1 : STD_LOGIC;
+    signal grp_padding2d_fix16_fu_14393_output_r_we1 : STD_LOGIC;
+    signal grp_padding2d_fix16_fu_14393_output_r_d1 : STD_LOGIC_VECTOR (15 downto 0);
+    signal grp_depthwise_conv2d_fix_2_fu_14411_ap_start : STD_LOGIC;
+    signal grp_depthwise_conv2d_fix_2_fu_14411_ap_done : STD_LOGIC;
+    signal grp_depthwise_conv2d_fix_2_fu_14411_ap_idle : STD_LOGIC;
+    signal grp_depthwise_conv2d_fix_2_fu_14411_ap_ready : STD_LOGIC;
+    signal grp_depthwise_conv2d_fix_2_fu_14411_input_height : STD_LOGIC_VECTOR (6 downto 0);
+    signal grp_depthwise_conv2d_fix_2_fu_14411_input_width : STD_LOGIC_VECTOR (5 downto 0);
+    signal grp_depthwise_conv2d_fix_2_fu_14411_input_r_address0 : STD_LOGIC_VECTOR (13 downto 0);
+    signal grp_depthwise_conv2d_fix_2_fu_14411_input_r_ce0 : STD_LOGIC;
+    signal grp_depthwise_conv2d_fix_2_fu_14411_input_r_address1 : STD_LOGIC_VECTOR (13 downto 0);
+    signal grp_depthwise_conv2d_fix_2_fu_14411_input_r_ce1 : STD_LOGIC;
+    signal grp_depthwise_conv2d_fix_2_fu_14411_output_height : STD_LOGIC_VECTOR (5 downto 0);
+    signal grp_depthwise_conv2d_fix_2_fu_14411_output_width : STD_LOGIC_VECTOR (5 downto 0);
+    signal grp_depthwise_conv2d_fix_2_fu_14411_output_r_address0 : STD_LOGIC_VECTOR (13 downto 0);
+    signal grp_depthwise_conv2d_fix_2_fu_14411_output_r_ce0 : STD_LOGIC;
+    signal grp_depthwise_conv2d_fix_2_fu_14411_output_r_we0 : STD_LOGIC;
+    signal grp_depthwise_conv2d_fix_2_fu_14411_output_r_d0 : STD_LOGIC_VECTOR (15 downto 0);
+    signal grp_depthwise_conv2d_fix_2_fu_14411_bias_address0 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_depthwise_conv2d_fix_2_fu_14411_bias_ce0 : STD_LOGIC;
+    signal grp_depthwise_conv2d_fix_2_fu_14411_bias_q0 : STD_LOGIC_VECTOR (15 downto 0);
+    signal grp_depthwise_conv2d_fix_2_fu_14411_kernel_0_address0 : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_depthwise_conv2d_fix_2_fu_14411_kernel_0_ce0 : STD_LOGIC;
+    signal grp_depthwise_conv2d_fix_2_fu_14411_kernel_0_q0 : STD_LOGIC_VECTOR (15 downto 0);
+    signal grp_depthwise_conv2d_fix_2_fu_14411_kernel_0_address1 : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_depthwise_conv2d_fix_2_fu_14411_kernel_0_ce1 : STD_LOGIC;
+    signal grp_depthwise_conv2d_fix_2_fu_14411_kernel_0_q1 : STD_LOGIC_VECTOR (15 downto 0);
+    signal grp_depthwise_conv2d_fix_1_fu_14435_ap_start : STD_LOGIC;
+    signal grp_depthwise_conv2d_fix_1_fu_14435_ap_done : STD_LOGIC;
+    signal grp_depthwise_conv2d_fix_1_fu_14435_ap_idle : STD_LOGIC;
+    signal grp_depthwise_conv2d_fix_1_fu_14435_ap_ready : STD_LOGIC;
+    signal grp_depthwise_conv2d_fix_1_fu_14435_input_height : STD_LOGIC_VECTOR (5 downto 0);
+    signal grp_depthwise_conv2d_fix_1_fu_14435_input_width : STD_LOGIC_VECTOR (5 downto 0);
+    signal grp_depthwise_conv2d_fix_1_fu_14435_input_r_address0 : STD_LOGIC_VECTOR (13 downto 0);
+    signal grp_depthwise_conv2d_fix_1_fu_14435_input_r_ce0 : STD_LOGIC;
+    signal grp_depthwise_conv2d_fix_1_fu_14435_input_r_address1 : STD_LOGIC_VECTOR (13 downto 0);
+    signal grp_depthwise_conv2d_fix_1_fu_14435_input_r_ce1 : STD_LOGIC;
+    signal grp_depthwise_conv2d_fix_1_fu_14435_output_height : STD_LOGIC_VECTOR (4 downto 0);
+    signal grp_depthwise_conv2d_fix_1_fu_14435_output_width : STD_LOGIC_VECTOR (4 downto 0);
+    signal grp_depthwise_conv2d_fix_1_fu_14435_output_r_address0 : STD_LOGIC_VECTOR (13 downto 0);
+    signal grp_depthwise_conv2d_fix_1_fu_14435_output_r_ce0 : STD_LOGIC;
+    signal grp_depthwise_conv2d_fix_1_fu_14435_output_r_we0 : STD_LOGIC;
+    signal grp_depthwise_conv2d_fix_1_fu_14435_output_r_d0 : STD_LOGIC_VECTOR (15 downto 0);
+    signal grp_depthwise_conv2d_fix_1_fu_14435_bias_address0 : STD_LOGIC_VECTOR (2 downto 0);
+    signal grp_depthwise_conv2d_fix_1_fu_14435_bias_ce0 : STD_LOGIC;
+    signal grp_depthwise_conv2d_fix_1_fu_14435_bias_q0 : STD_LOGIC_VECTOR (15 downto 0);
+    signal grp_depthwise_conv2d_fix_1_fu_14435_kernel_0_address0 : STD_LOGIC_VECTOR (6 downto 0);
+    signal grp_depthwise_conv2d_fix_1_fu_14435_kernel_0_ce0 : STD_LOGIC;
+    signal grp_depthwise_conv2d_fix_1_fu_14435_kernel_0_q0 : STD_LOGIC_VECTOR (15 downto 0);
+    signal grp_depthwise_conv2d_fix_1_fu_14435_kernel_0_address1 : STD_LOGIC_VECTOR (6 downto 0);
+    signal grp_depthwise_conv2d_fix_1_fu_14435_kernel_0_ce1 : STD_LOGIC;
+    signal grp_depthwise_conv2d_fix_1_fu_14435_kernel_0_q1 : STD_LOGIC_VECTOR (15 downto 0);
+    signal grp_depthwise_conv2d_fix_fu_14459_ap_start : STD_LOGIC;
+    signal grp_depthwise_conv2d_fix_fu_14459_ap_done : STD_LOGIC;
+    signal grp_depthwise_conv2d_fix_fu_14459_ap_idle : STD_LOGIC;
+    signal grp_depthwise_conv2d_fix_fu_14459_ap_ready : STD_LOGIC;
+    signal grp_depthwise_conv2d_fix_fu_14459_input_r_address0 : STD_LOGIC_VECTOR (13 downto 0);
+    signal grp_depthwise_conv2d_fix_fu_14459_input_r_ce0 : STD_LOGIC;
+    signal grp_depthwise_conv2d_fix_fu_14459_input_r_address1 : STD_LOGIC_VECTOR (13 downto 0);
+    signal grp_depthwise_conv2d_fix_fu_14459_input_r_ce1 : STD_LOGIC;
+    signal grp_depthwise_conv2d_fix_fu_14459_output_r_address0 : STD_LOGIC_VECTOR (13 downto 0);
+    signal grp_depthwise_conv2d_fix_fu_14459_output_r_ce0 : STD_LOGIC;
+    signal grp_depthwise_conv2d_fix_fu_14459_output_r_we0 : STD_LOGIC;
+    signal grp_depthwise_conv2d_fix_fu_14459_output_r_d0 : STD_LOGIC_VECTOR (15 downto 0);
+    signal grp_depthwise_conv2d_fix_fu_14459_output_r_address1 : STD_LOGIC_VECTOR (13 downto 0);
+    signal grp_depthwise_conv2d_fix_fu_14459_output_r_ce1 : STD_LOGIC;
+    signal grp_depthwise_conv2d_fix_fu_14459_output_r_we1 : STD_LOGIC;
+    signal grp_depthwise_conv2d_fix_fu_14459_output_r_d1 : STD_LOGIC_VECTOR (15 downto 0);
+    signal grp_pointwise_conv2d_fix_fu_14465_ap_start : STD_LOGIC;
+    signal grp_pointwise_conv2d_fix_fu_14465_ap_done : STD_LOGIC;
+    signal grp_pointwise_conv2d_fix_fu_14465_ap_idle : STD_LOGIC;
+    signal grp_pointwise_conv2d_fix_fu_14465_ap_ready : STD_LOGIC;
+    signal grp_pointwise_conv2d_fix_fu_14465_input_r_address0 : STD_LOGIC_VECTOR (13 downto 0);
+    signal grp_pointwise_conv2d_fix_fu_14465_input_r_ce0 : STD_LOGIC;
+    signal grp_pointwise_conv2d_fix_fu_14465_input_r_address1 : STD_LOGIC_VECTOR (13 downto 0);
+    signal grp_pointwise_conv2d_fix_fu_14465_input_r_ce1 : STD_LOGIC;
+    signal grp_pointwise_conv2d_fix_fu_14465_output_r_address0 : STD_LOGIC_VECTOR (13 downto 0);
+    signal grp_pointwise_conv2d_fix_fu_14465_output_r_ce0 : STD_LOGIC;
+    signal grp_pointwise_conv2d_fix_fu_14465_output_r_we0 : STD_LOGIC;
+    signal grp_pointwise_conv2d_fix_fu_14465_output_r_d0 : STD_LOGIC_VECTOR (15 downto 0);
+    signal grp_pointwise_conv2d_fix_3_fu_14475_ap_start : STD_LOGIC;
+    signal grp_pointwise_conv2d_fix_3_fu_14475_ap_done : STD_LOGIC;
+    signal grp_pointwise_conv2d_fix_3_fu_14475_ap_idle : STD_LOGIC;
+    signal grp_pointwise_conv2d_fix_3_fu_14475_ap_ready : STD_LOGIC;
+    signal grp_pointwise_conv2d_fix_3_fu_14475_input_r_address0 : STD_LOGIC_VECTOR (13 downto 0);
+    signal grp_pointwise_conv2d_fix_3_fu_14475_input_r_ce0 : STD_LOGIC;
+    signal grp_pointwise_conv2d_fix_3_fu_14475_input_r_address1 : STD_LOGIC_VECTOR (13 downto 0);
+    signal grp_pointwise_conv2d_fix_3_fu_14475_input_r_ce1 : STD_LOGIC;
+    signal grp_pointwise_conv2d_fix_3_fu_14475_output_r_address0 : STD_LOGIC_VECTOR (13 downto 0);
+    signal grp_pointwise_conv2d_fix_3_fu_14475_output_r_ce0 : STD_LOGIC;
+    signal grp_pointwise_conv2d_fix_3_fu_14475_output_r_we0 : STD_LOGIC;
+    signal grp_pointwise_conv2d_fix_3_fu_14475_output_r_d0 : STD_LOGIC_VECTOR (15 downto 0);
+    signal grp_pointwise_conv2d_fix_2_fu_14485_ap_start : STD_LOGIC;
+    signal grp_pointwise_conv2d_fix_2_fu_14485_ap_done : STD_LOGIC;
+    signal grp_pointwise_conv2d_fix_2_fu_14485_ap_idle : STD_LOGIC;
+    signal grp_pointwise_conv2d_fix_2_fu_14485_ap_ready : STD_LOGIC;
+    signal grp_pointwise_conv2d_fix_2_fu_14485_input_r_address0 : STD_LOGIC_VECTOR (13 downto 0);
+    signal grp_pointwise_conv2d_fix_2_fu_14485_input_r_ce0 : STD_LOGIC;
+    signal grp_pointwise_conv2d_fix_2_fu_14485_input_r_address1 : STD_LOGIC_VECTOR (13 downto 0);
+    signal grp_pointwise_conv2d_fix_2_fu_14485_input_r_ce1 : STD_LOGIC;
+    signal grp_pointwise_conv2d_fix_2_fu_14485_output_r_address0 : STD_LOGIC_VECTOR (13 downto 0);
+    signal grp_pointwise_conv2d_fix_2_fu_14485_output_r_ce0 : STD_LOGIC;
+    signal grp_pointwise_conv2d_fix_2_fu_14485_output_r_we0 : STD_LOGIC;
+    signal grp_pointwise_conv2d_fix_2_fu_14485_output_r_d0 : STD_LOGIC_VECTOR (15 downto 0);
+    signal grp_up_sampling2d_fix16_fu_14495_ap_start : STD_LOGIC;
+    signal grp_up_sampling2d_fix16_fu_14495_ap_done : STD_LOGIC;
+    signal grp_up_sampling2d_fix16_fu_14495_ap_idle : STD_LOGIC;
+    signal grp_up_sampling2d_fix16_fu_14495_ap_ready : STD_LOGIC;
+    signal grp_up_sampling2d_fix16_fu_14495_input_height : STD_LOGIC_VECTOR (4 downto 0);
+    signal grp_up_sampling2d_fix16_fu_14495_input_width : STD_LOGIC_VECTOR (4 downto 0);
+    signal grp_up_sampling2d_fix16_fu_14495_input_r_address0 : STD_LOGIC_VECTOR (13 downto 0);
+    signal grp_up_sampling2d_fix16_fu_14495_input_r_ce0 : STD_LOGIC;
+    signal grp_up_sampling2d_fix16_fu_14495_output_depth : STD_LOGIC_VECTOR (5 downto 0);
+    signal grp_up_sampling2d_fix16_fu_14495_output_height : STD_LOGIC_VECTOR (5 downto 0);
+    signal grp_up_sampling2d_fix16_fu_14495_output_width : STD_LOGIC_VECTOR (5 downto 0);
+    signal grp_up_sampling2d_fix16_fu_14495_output_r_address0 : STD_LOGIC_VECTOR (13 downto 0);
+    signal grp_up_sampling2d_fix16_fu_14495_output_r_ce0 : STD_LOGIC;
+    signal grp_up_sampling2d_fix16_fu_14495_output_r_we0 : STD_LOGIC;
+    signal grp_up_sampling2d_fix16_fu_14495_output_r_d0 : STD_LOGIC_VECTOR (15 downto 0);
+    signal grp_max_pooling2d_fix16_fu_14516_ap_start : STD_LOGIC;
+    signal grp_max_pooling2d_fix16_fu_14516_ap_done : STD_LOGIC;
+    signal grp_max_pooling2d_fix16_fu_14516_ap_idle : STD_LOGIC;
+    signal grp_max_pooling2d_fix16_fu_14516_ap_ready : STD_LOGIC;
+    signal grp_max_pooling2d_fix16_fu_14516_input_height : STD_LOGIC_VECTOR (6 downto 0);
+    signal grp_max_pooling2d_fix16_fu_14516_input_width : STD_LOGIC_VECTOR (5 downto 0);
+    signal grp_max_pooling2d_fix16_fu_14516_input_r_address0 : STD_LOGIC_VECTOR (13 downto 0);
+    signal grp_max_pooling2d_fix16_fu_14516_input_r_ce0 : STD_LOGIC;
+    signal grp_max_pooling2d_fix16_fu_14516_input_r_address1 : STD_LOGIC_VECTOR (13 downto 0);
+    signal grp_max_pooling2d_fix16_fu_14516_input_r_ce1 : STD_LOGIC;
+    signal grp_max_pooling2d_fix16_fu_14516_output_depth : STD_LOGIC_VECTOR (5 downto 0);
+    signal grp_max_pooling2d_fix16_fu_14516_output_height : STD_LOGIC_VECTOR (4 downto 0);
+    signal grp_max_pooling2d_fix16_fu_14516_output_width : STD_LOGIC_VECTOR (4 downto 0);
+    signal grp_max_pooling2d_fix16_fu_14516_output_r_address0 : STD_LOGIC_VECTOR (13 downto 0);
+    signal grp_max_pooling2d_fix16_fu_14516_output_r_ce0 : STD_LOGIC;
+    signal grp_max_pooling2d_fix16_fu_14516_output_r_we0 : STD_LOGIC;
+    signal grp_max_pooling2d_fix16_fu_14516_output_r_d0 : STD_LOGIC_VECTOR (15 downto 0);
+    signal grp_pointwise_conv2d_fix_1_fu_14537_ap_start : STD_LOGIC;
+    signal grp_pointwise_conv2d_fix_1_fu_14537_ap_done : STD_LOGIC;
+    signal grp_pointwise_conv2d_fix_1_fu_14537_ap_idle : STD_LOGIC;
+    signal grp_pointwise_conv2d_fix_1_fu_14537_ap_ready : STD_LOGIC;
+    signal grp_pointwise_conv2d_fix_1_fu_14537_input_r_address0 : STD_LOGIC_VECTOR (13 downto 0);
+    signal grp_pointwise_conv2d_fix_1_fu_14537_input_r_ce0 : STD_LOGIC;
+    signal grp_pointwise_conv2d_fix_1_fu_14537_input_r_address1 : STD_LOGIC_VECTOR (13 downto 0);
+    signal grp_pointwise_conv2d_fix_1_fu_14537_input_r_ce1 : STD_LOGIC;
+    signal grp_pointwise_conv2d_fix_1_fu_14537_output_r_address0 : STD_LOGIC_VECTOR (13 downto 0);
+    signal grp_pointwise_conv2d_fix_1_fu_14537_output_r_ce0 : STD_LOGIC;
+    signal grp_pointwise_conv2d_fix_1_fu_14537_output_r_we0 : STD_LOGIC;
+    signal grp_pointwise_conv2d_fix_1_fu_14537_output_r_d0 : STD_LOGIC_VECTOR (15 downto 0);
+    signal grp_pointwise_conv2d_fix_4_fu_14547_ap_start : STD_LOGIC;
+    signal grp_pointwise_conv2d_fix_4_fu_14547_ap_done : STD_LOGIC;
+    signal grp_pointwise_conv2d_fix_4_fu_14547_ap_idle : STD_LOGIC;
+    signal grp_pointwise_conv2d_fix_4_fu_14547_ap_ready : STD_LOGIC;
+    signal grp_pointwise_conv2d_fix_4_fu_14547_input_r_address0 : STD_LOGIC_VECTOR (13 downto 0);
+    signal grp_pointwise_conv2d_fix_4_fu_14547_input_r_ce0 : STD_LOGIC;
+    signal grp_pointwise_conv2d_fix_4_fu_14547_input_r_address1 : STD_LOGIC_VECTOR (13 downto 0);
+    signal grp_pointwise_conv2d_fix_4_fu_14547_input_r_ce1 : STD_LOGIC;
+    signal grp_pointwise_conv2d_fix_4_fu_14547_output_r_address0 : STD_LOGIC_VECTOR (13 downto 0);
+    signal grp_pointwise_conv2d_fix_4_fu_14547_output_r_ce0 : STD_LOGIC;
+    signal grp_pointwise_conv2d_fix_4_fu_14547_output_r_we0 : STD_LOGIC;
+    signal grp_pointwise_conv2d_fix_4_fu_14547_output_r_d0 : STD_LOGIC_VECTOR (15 downto 0);
     signal i_reg_14371 : STD_LOGIC_VECTOR (9 downto 0);
-    signal grp_pointwise_conv2d_fix_fu_14393_ap_start_reg : STD_LOGIC := '0';
-    signal ap_CS_fsm_state6 : STD_LOGIC;
-    attribute fsm_encoding of ap_CS_fsm_state6 : signal is "none";
-    signal ap_CS_fsm_state7 : STD_LOGIC;
-    attribute fsm_encoding of ap_CS_fsm_state7 : signal is "none";
-    signal grp_pointwise_conv2d_fix_3_fu_14403_ap_start_reg : STD_LOGIC := '0';
-    signal ap_CS_fsm_state30 : STD_LOGIC;
-    attribute fsm_encoding of ap_CS_fsm_state30 : signal is "none";
-    signal ap_CS_fsm_state31 : STD_LOGIC;
-    attribute fsm_encoding of ap_CS_fsm_state31 : signal is "none";
-    signal grp_pointwise_conv2d_fix_2_fu_14413_ap_start_reg : STD_LOGIC := '0';
-    signal ap_CS_fsm_state22 : STD_LOGIC;
-    attribute fsm_encoding of ap_CS_fsm_state22 : signal is "none";
-    signal ap_CS_fsm_state23 : STD_LOGIC;
-    attribute fsm_encoding of ap_CS_fsm_state23 : signal is "none";
-    signal grp_depthwise_conv2d_fix_2_fu_14423_ap_start_reg : STD_LOGIC := '0';
-    signal ap_CS_fsm_state12 : STD_LOGIC;
-    attribute fsm_encoding of ap_CS_fsm_state12 : signal is "none";
-    signal ap_CS_fsm_state36 : STD_LOGIC;
-    attribute fsm_encoding of ap_CS_fsm_state36 : signal is "none";
-    signal ap_CS_fsm_state13 : STD_LOGIC;
-    attribute fsm_encoding of ap_CS_fsm_state13 : signal is "none";
-    signal ap_CS_fsm_state37 : STD_LOGIC;
-    attribute fsm_encoding of ap_CS_fsm_state37 : signal is "none";
-    signal grp_max_pooling2d_fix16_fu_14447_ap_start_reg : STD_LOGIC := '0';
-    signal ap_CS_fsm_state8 : STD_LOGIC;
-    attribute fsm_encoding of ap_CS_fsm_state8 : signal is "none";
-    signal ap_CS_fsm_state16 : STD_LOGIC;
-    attribute fsm_encoding of ap_CS_fsm_state16 : signal is "none";
-    signal ap_CS_fsm_state9 : STD_LOGIC;
-    attribute fsm_encoding of ap_CS_fsm_state9 : signal is "none";
-    signal ap_CS_fsm_state17 : STD_LOGIC;
-    attribute fsm_encoding of ap_CS_fsm_state17 : signal is "none";
-    signal grp_depthwise_conv2d_fix_1_fu_14468_ap_start_reg : STD_LOGIC := '0';
-    signal ap_CS_fsm_state20 : STD_LOGIC;
-    attribute fsm_encoding of ap_CS_fsm_state20 : signal is "none";
-    signal ap_CS_fsm_state28 : STD_LOGIC;
-    attribute fsm_encoding of ap_CS_fsm_state28 : signal is "none";
-    signal ap_CS_fsm_state21 : STD_LOGIC;
-    attribute fsm_encoding of ap_CS_fsm_state21 : signal is "none";
-    signal ap_CS_fsm_state29 : STD_LOGIC;
-    attribute fsm_encoding of ap_CS_fsm_state29 : signal is "none";
-    signal grp_pointwise_conv2d_fix_1_fu_14492_ap_start_reg : STD_LOGIC := '0';
-    signal ap_CS_fsm_state14 : STD_LOGIC;
-    attribute fsm_encoding of ap_CS_fsm_state14 : signal is "none";
-    signal ap_CS_fsm_state15 : STD_LOGIC;
-    attribute fsm_encoding of ap_CS_fsm_state15 : signal is "none";
-    signal grp_depthwise_conv2d_fix_fu_14502_ap_start_reg : STD_LOGIC := '0';
-    signal ap_CS_fsm_state4 : STD_LOGIC;
-    attribute fsm_encoding of ap_CS_fsm_state4 : signal is "none";
-    signal ap_CS_fsm_state5 : STD_LOGIC;
-    attribute fsm_encoding of ap_CS_fsm_state5 : signal is "none";
-    signal grp_pointwise_conv2d_fix_4_fu_14508_ap_start_reg : STD_LOGIC := '0';
-    signal ap_CS_fsm_state38 : STD_LOGIC;
-    attribute fsm_encoding of ap_CS_fsm_state38 : signal is "none";
-    signal ap_CS_fsm_state39 : STD_LOGIC;
-    attribute fsm_encoding of ap_CS_fsm_state39 : signal is "none";
-    signal grp_up_sampling2d_fix16_fu_14514_ap_start_reg : STD_LOGIC := '0';
-    signal ap_CS_fsm_state24 : STD_LOGIC;
-    attribute fsm_encoding of ap_CS_fsm_state24 : signal is "none";
-    signal ap_CS_fsm_state32 : STD_LOGIC;
-    attribute fsm_encoding of ap_CS_fsm_state32 : signal is "none";
-    signal ap_CS_fsm_state25 : STD_LOGIC;
-    attribute fsm_encoding of ap_CS_fsm_state25 : signal is "none";
-    signal ap_CS_fsm_state33 : STD_LOGIC;
-    attribute fsm_encoding of ap_CS_fsm_state33 : signal is "none";
-    signal grp_padding2d_fix16_fu_14535_ap_start_reg : STD_LOGIC := '0';
+    signal grp_padding2d_fix16_fu_14393_ap_start_reg : STD_LOGIC := '0';
     signal ap_block_state2_ignore_call0 : BOOLEAN;
     signal ap_CS_fsm_state10 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state10 : signal is "none";
@@ -2969,6 +2913,72 @@ architecture behav of network is
     attribute fsm_encoding of ap_CS_fsm_state27 : signal is "none";
     signal ap_CS_fsm_state35 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state35 : signal is "none";
+    signal grp_depthwise_conv2d_fix_2_fu_14411_ap_start_reg : STD_LOGIC := '0';
+    signal ap_CS_fsm_state12 : STD_LOGIC;
+    attribute fsm_encoding of ap_CS_fsm_state12 : signal is "none";
+    signal ap_CS_fsm_state36 : STD_LOGIC;
+    attribute fsm_encoding of ap_CS_fsm_state36 : signal is "none";
+    signal ap_CS_fsm_state13 : STD_LOGIC;
+    attribute fsm_encoding of ap_CS_fsm_state13 : signal is "none";
+    signal ap_CS_fsm_state37 : STD_LOGIC;
+    attribute fsm_encoding of ap_CS_fsm_state37 : signal is "none";
+    signal grp_depthwise_conv2d_fix_1_fu_14435_ap_start_reg : STD_LOGIC := '0';
+    signal ap_CS_fsm_state20 : STD_LOGIC;
+    attribute fsm_encoding of ap_CS_fsm_state20 : signal is "none";
+    signal ap_CS_fsm_state28 : STD_LOGIC;
+    attribute fsm_encoding of ap_CS_fsm_state28 : signal is "none";
+    signal ap_CS_fsm_state21 : STD_LOGIC;
+    attribute fsm_encoding of ap_CS_fsm_state21 : signal is "none";
+    signal ap_CS_fsm_state29 : STD_LOGIC;
+    attribute fsm_encoding of ap_CS_fsm_state29 : signal is "none";
+    signal grp_depthwise_conv2d_fix_fu_14459_ap_start_reg : STD_LOGIC := '0';
+    signal ap_CS_fsm_state4 : STD_LOGIC;
+    attribute fsm_encoding of ap_CS_fsm_state4 : signal is "none";
+    signal ap_CS_fsm_state5 : STD_LOGIC;
+    attribute fsm_encoding of ap_CS_fsm_state5 : signal is "none";
+    signal grp_pointwise_conv2d_fix_fu_14465_ap_start_reg : STD_LOGIC := '0';
+    signal ap_CS_fsm_state6 : STD_LOGIC;
+    attribute fsm_encoding of ap_CS_fsm_state6 : signal is "none";
+    signal ap_CS_fsm_state7 : STD_LOGIC;
+    attribute fsm_encoding of ap_CS_fsm_state7 : signal is "none";
+    signal grp_pointwise_conv2d_fix_3_fu_14475_ap_start_reg : STD_LOGIC := '0';
+    signal ap_CS_fsm_state30 : STD_LOGIC;
+    attribute fsm_encoding of ap_CS_fsm_state30 : signal is "none";
+    signal ap_CS_fsm_state31 : STD_LOGIC;
+    attribute fsm_encoding of ap_CS_fsm_state31 : signal is "none";
+    signal grp_pointwise_conv2d_fix_2_fu_14485_ap_start_reg : STD_LOGIC := '0';
+    signal ap_CS_fsm_state22 : STD_LOGIC;
+    attribute fsm_encoding of ap_CS_fsm_state22 : signal is "none";
+    signal ap_CS_fsm_state23 : STD_LOGIC;
+    attribute fsm_encoding of ap_CS_fsm_state23 : signal is "none";
+    signal grp_up_sampling2d_fix16_fu_14495_ap_start_reg : STD_LOGIC := '0';
+    signal ap_CS_fsm_state24 : STD_LOGIC;
+    attribute fsm_encoding of ap_CS_fsm_state24 : signal is "none";
+    signal ap_CS_fsm_state32 : STD_LOGIC;
+    attribute fsm_encoding of ap_CS_fsm_state32 : signal is "none";
+    signal ap_CS_fsm_state25 : STD_LOGIC;
+    attribute fsm_encoding of ap_CS_fsm_state25 : signal is "none";
+    signal ap_CS_fsm_state33 : STD_LOGIC;
+    attribute fsm_encoding of ap_CS_fsm_state33 : signal is "none";
+    signal grp_max_pooling2d_fix16_fu_14516_ap_start_reg : STD_LOGIC := '0';
+    signal ap_CS_fsm_state8 : STD_LOGIC;
+    attribute fsm_encoding of ap_CS_fsm_state8 : signal is "none";
+    signal ap_CS_fsm_state16 : STD_LOGIC;
+    attribute fsm_encoding of ap_CS_fsm_state16 : signal is "none";
+    signal ap_CS_fsm_state9 : STD_LOGIC;
+    attribute fsm_encoding of ap_CS_fsm_state9 : signal is "none";
+    signal ap_CS_fsm_state17 : STD_LOGIC;
+    attribute fsm_encoding of ap_CS_fsm_state17 : signal is "none";
+    signal grp_pointwise_conv2d_fix_1_fu_14537_ap_start_reg : STD_LOGIC := '0';
+    signal ap_CS_fsm_state14 : STD_LOGIC;
+    attribute fsm_encoding of ap_CS_fsm_state14 : signal is "none";
+    signal ap_CS_fsm_state15 : STD_LOGIC;
+    attribute fsm_encoding of ap_CS_fsm_state15 : signal is "none";
+    signal grp_pointwise_conv2d_fix_4_fu_14547_ap_start_reg : STD_LOGIC := '0';
+    signal ap_CS_fsm_state38 : STD_LOGIC;
+    attribute fsm_encoding of ap_CS_fsm_state38 : signal is "none";
+    signal ap_CS_fsm_state39 : STD_LOGIC;
+    attribute fsm_encoding of ap_CS_fsm_state39 : signal is "none";
     signal tmp_s_fu_14580_p1 : STD_LOGIC_VECTOR (63 downto 0);
     signal i2_cast1_fu_14597_p1 : STD_LOGIC_VECTOR (63 downto 0);
     signal ap_block_pp0_stage0_01001 : BOOLEAN;
@@ -2980,6 +2990,124 @@ architecture behav of network is
     signal ap_NS_fsm : STD_LOGIC_VECTOR (435 downto 0);
     signal ap_idle_pp0 : STD_LOGIC;
     signal ap_enable_pp0 : STD_LOGIC;
+
+    component padding2d_fix16 IS
+    port (
+        ap_clk : IN STD_LOGIC;
+        ap_rst : IN STD_LOGIC;
+        ap_start : IN STD_LOGIC;
+        ap_done : OUT STD_LOGIC;
+        ap_idle : OUT STD_LOGIC;
+        ap_ready : OUT STD_LOGIC;
+        input_depth : IN STD_LOGIC_VECTOR (6 downto 0);
+        input_height : IN STD_LOGIC_VECTOR (5 downto 0);
+        input_width : IN STD_LOGIC_VECTOR (5 downto 0);
+        input_r_address0 : OUT STD_LOGIC_VECTOR (13 downto 0);
+        input_r_ce0 : OUT STD_LOGIC;
+        input_r_q0 : IN STD_LOGIC_VECTOR (15 downto 0);
+        output_r_address0 : OUT STD_LOGIC_VECTOR (13 downto 0);
+        output_r_ce0 : OUT STD_LOGIC;
+        output_r_we0 : OUT STD_LOGIC;
+        output_r_d0 : OUT STD_LOGIC_VECTOR (15 downto 0);
+        output_r_address1 : OUT STD_LOGIC_VECTOR (13 downto 0);
+        output_r_ce1 : OUT STD_LOGIC;
+        output_r_we1 : OUT STD_LOGIC;
+        output_r_d1 : OUT STD_LOGIC_VECTOR (15 downto 0) );
+    end component;
+
+
+    component depthwise_conv2d_fix_2 IS
+    port (
+        ap_clk : IN STD_LOGIC;
+        ap_rst : IN STD_LOGIC;
+        ap_start : IN STD_LOGIC;
+        ap_done : OUT STD_LOGIC;
+        ap_idle : OUT STD_LOGIC;
+        ap_ready : OUT STD_LOGIC;
+        input_height : IN STD_LOGIC_VECTOR (6 downto 0);
+        input_width : IN STD_LOGIC_VECTOR (5 downto 0);
+        input_r_address0 : OUT STD_LOGIC_VECTOR (13 downto 0);
+        input_r_ce0 : OUT STD_LOGIC;
+        input_r_q0 : IN STD_LOGIC_VECTOR (15 downto 0);
+        input_r_address1 : OUT STD_LOGIC_VECTOR (13 downto 0);
+        input_r_ce1 : OUT STD_LOGIC;
+        input_r_q1 : IN STD_LOGIC_VECTOR (15 downto 0);
+        output_height : IN STD_LOGIC_VECTOR (5 downto 0);
+        output_width : IN STD_LOGIC_VECTOR (5 downto 0);
+        output_r_address0 : OUT STD_LOGIC_VECTOR (13 downto 0);
+        output_r_ce0 : OUT STD_LOGIC;
+        output_r_we0 : OUT STD_LOGIC;
+        output_r_d0 : OUT STD_LOGIC_VECTOR (15 downto 0);
+        bias_address0 : OUT STD_LOGIC_VECTOR (3 downto 0);
+        bias_ce0 : OUT STD_LOGIC;
+        bias_q0 : IN STD_LOGIC_VECTOR (15 downto 0);
+        kernel_0_address0 : OUT STD_LOGIC_VECTOR (7 downto 0);
+        kernel_0_ce0 : OUT STD_LOGIC;
+        kernel_0_q0 : IN STD_LOGIC_VECTOR (15 downto 0);
+        kernel_0_address1 : OUT STD_LOGIC_VECTOR (7 downto 0);
+        kernel_0_ce1 : OUT STD_LOGIC;
+        kernel_0_q1 : IN STD_LOGIC_VECTOR (15 downto 0) );
+    end component;
+
+
+    component depthwise_conv2d_fix_1 IS
+    port (
+        ap_clk : IN STD_LOGIC;
+        ap_rst : IN STD_LOGIC;
+        ap_start : IN STD_LOGIC;
+        ap_done : OUT STD_LOGIC;
+        ap_idle : OUT STD_LOGIC;
+        ap_ready : OUT STD_LOGIC;
+        input_height : IN STD_LOGIC_VECTOR (5 downto 0);
+        input_width : IN STD_LOGIC_VECTOR (5 downto 0);
+        input_r_address0 : OUT STD_LOGIC_VECTOR (13 downto 0);
+        input_r_ce0 : OUT STD_LOGIC;
+        input_r_q0 : IN STD_LOGIC_VECTOR (15 downto 0);
+        input_r_address1 : OUT STD_LOGIC_VECTOR (13 downto 0);
+        input_r_ce1 : OUT STD_LOGIC;
+        input_r_q1 : IN STD_LOGIC_VECTOR (15 downto 0);
+        output_height : IN STD_LOGIC_VECTOR (4 downto 0);
+        output_width : IN STD_LOGIC_VECTOR (4 downto 0);
+        output_r_address0 : OUT STD_LOGIC_VECTOR (13 downto 0);
+        output_r_ce0 : OUT STD_LOGIC;
+        output_r_we0 : OUT STD_LOGIC;
+        output_r_d0 : OUT STD_LOGIC_VECTOR (15 downto 0);
+        bias_address0 : OUT STD_LOGIC_VECTOR (2 downto 0);
+        bias_ce0 : OUT STD_LOGIC;
+        bias_q0 : IN STD_LOGIC_VECTOR (15 downto 0);
+        kernel_0_address0 : OUT STD_LOGIC_VECTOR (6 downto 0);
+        kernel_0_ce0 : OUT STD_LOGIC;
+        kernel_0_q0 : IN STD_LOGIC_VECTOR (15 downto 0);
+        kernel_0_address1 : OUT STD_LOGIC_VECTOR (6 downto 0);
+        kernel_0_ce1 : OUT STD_LOGIC;
+        kernel_0_q1 : IN STD_LOGIC_VECTOR (15 downto 0) );
+    end component;
+
+
+    component depthwise_conv2d_fix IS
+    port (
+        ap_clk : IN STD_LOGIC;
+        ap_rst : IN STD_LOGIC;
+        ap_start : IN STD_LOGIC;
+        ap_done : OUT STD_LOGIC;
+        ap_idle : OUT STD_LOGIC;
+        ap_ready : OUT STD_LOGIC;
+        input_r_address0 : OUT STD_LOGIC_VECTOR (13 downto 0);
+        input_r_ce0 : OUT STD_LOGIC;
+        input_r_q0 : IN STD_LOGIC_VECTOR (15 downto 0);
+        input_r_address1 : OUT STD_LOGIC_VECTOR (13 downto 0);
+        input_r_ce1 : OUT STD_LOGIC;
+        input_r_q1 : IN STD_LOGIC_VECTOR (15 downto 0);
+        output_r_address0 : OUT STD_LOGIC_VECTOR (13 downto 0);
+        output_r_ce0 : OUT STD_LOGIC;
+        output_r_we0 : OUT STD_LOGIC;
+        output_r_d0 : OUT STD_LOGIC_VECTOR (15 downto 0);
+        output_r_address1 : OUT STD_LOGIC_VECTOR (13 downto 0);
+        output_r_ce1 : OUT STD_LOGIC;
+        output_r_we1 : OUT STD_LOGIC;
+        output_r_d1 : OUT STD_LOGIC_VECTOR (15 downto 0) );
+    end component;
+
 
     component pointwise_conv2d_fix IS
     port (
@@ -3044,7 +3172,7 @@ architecture behav of network is
     end component;
 
 
-    component depthwise_conv2d_fix_2 IS
+    component up_sampling2d_fix16 IS
     port (
         ap_clk : IN STD_LOGIC;
         ap_rst : IN STD_LOGIC;
@@ -3052,29 +3180,18 @@ architecture behav of network is
         ap_done : OUT STD_LOGIC;
         ap_idle : OUT STD_LOGIC;
         ap_ready : OUT STD_LOGIC;
-        input_height : IN STD_LOGIC_VECTOR (6 downto 0);
-        input_width : IN STD_LOGIC_VECTOR (5 downto 0);
+        input_height : IN STD_LOGIC_VECTOR (4 downto 0);
+        input_width : IN STD_LOGIC_VECTOR (4 downto 0);
         input_r_address0 : OUT STD_LOGIC_VECTOR (13 downto 0);
         input_r_ce0 : OUT STD_LOGIC;
         input_r_q0 : IN STD_LOGIC_VECTOR (15 downto 0);
-        input_r_address1 : OUT STD_LOGIC_VECTOR (13 downto 0);
-        input_r_ce1 : OUT STD_LOGIC;
-        input_r_q1 : IN STD_LOGIC_VECTOR (15 downto 0);
+        output_depth : IN STD_LOGIC_VECTOR (5 downto 0);
         output_height : IN STD_LOGIC_VECTOR (5 downto 0);
         output_width : IN STD_LOGIC_VECTOR (5 downto 0);
         output_r_address0 : OUT STD_LOGIC_VECTOR (13 downto 0);
         output_r_ce0 : OUT STD_LOGIC;
         output_r_we0 : OUT STD_LOGIC;
-        output_r_d0 : OUT STD_LOGIC_VECTOR (15 downto 0);
-        bias_address0 : OUT STD_LOGIC_VECTOR (3 downto 0);
-        bias_ce0 : OUT STD_LOGIC;
-        bias_q0 : IN STD_LOGIC_VECTOR (15 downto 0);
-        kernel_0_address0 : OUT STD_LOGIC_VECTOR (7 downto 0);
-        kernel_0_ce0 : OUT STD_LOGIC;
-        kernel_0_q0 : IN STD_LOGIC_VECTOR (15 downto 0);
-        kernel_0_address1 : OUT STD_LOGIC_VECTOR (7 downto 0);
-        kernel_0_ce1 : OUT STD_LOGIC;
-        kernel_0_q1 : IN STD_LOGIC_VECTOR (15 downto 0) );
+        output_r_d0 : OUT STD_LOGIC_VECTOR (15 downto 0) );
     end component;
 
 
@@ -3104,62 +3221,7 @@ architecture behav of network is
     end component;
 
 
-    component depthwise_conv2d_fix_1 IS
-    port (
-        ap_clk : IN STD_LOGIC;
-        ap_rst : IN STD_LOGIC;
-        ap_start : IN STD_LOGIC;
-        ap_done : OUT STD_LOGIC;
-        ap_idle : OUT STD_LOGIC;
-        ap_ready : OUT STD_LOGIC;
-        input_height : IN STD_LOGIC_VECTOR (5 downto 0);
-        input_width : IN STD_LOGIC_VECTOR (5 downto 0);
-        input_r_address0 : OUT STD_LOGIC_VECTOR (13 downto 0);
-        input_r_ce0 : OUT STD_LOGIC;
-        input_r_q0 : IN STD_LOGIC_VECTOR (15 downto 0);
-        input_r_address1 : OUT STD_LOGIC_VECTOR (13 downto 0);
-        input_r_ce1 : OUT STD_LOGIC;
-        input_r_q1 : IN STD_LOGIC_VECTOR (15 downto 0);
-        output_height : IN STD_LOGIC_VECTOR (4 downto 0);
-        output_width : IN STD_LOGIC_VECTOR (4 downto 0);
-        output_r_address0 : OUT STD_LOGIC_VECTOR (13 downto 0);
-        output_r_ce0 : OUT STD_LOGIC;
-        output_r_we0 : OUT STD_LOGIC;
-        output_r_d0 : OUT STD_LOGIC_VECTOR (15 downto 0);
-        bias_address0 : OUT STD_LOGIC_VECTOR (2 downto 0);
-        bias_ce0 : OUT STD_LOGIC;
-        bias_q0 : IN STD_LOGIC_VECTOR (15 downto 0);
-        kernel_0_address0 : OUT STD_LOGIC_VECTOR (6 downto 0);
-        kernel_0_ce0 : OUT STD_LOGIC;
-        kernel_0_q0 : IN STD_LOGIC_VECTOR (15 downto 0);
-        kernel_0_address1 : OUT STD_LOGIC_VECTOR (6 downto 0);
-        kernel_0_ce1 : OUT STD_LOGIC;
-        kernel_0_q1 : IN STD_LOGIC_VECTOR (15 downto 0) );
-    end component;
-
-
     component pointwise_conv2d_fix_1 IS
-    port (
-        ap_clk : IN STD_LOGIC;
-        ap_rst : IN STD_LOGIC;
-        ap_start : IN STD_LOGIC;
-        ap_done : OUT STD_LOGIC;
-        ap_idle : OUT STD_LOGIC;
-        ap_ready : OUT STD_LOGIC;
-        input_r_address0 : OUT STD_LOGIC_VECTOR (13 downto 0);
-        input_r_ce0 : OUT STD_LOGIC;
-        input_r_q0 : IN STD_LOGIC_VECTOR (15 downto 0);
-        input_r_address1 : OUT STD_LOGIC_VECTOR (13 downto 0);
-        input_r_ce1 : OUT STD_LOGIC;
-        input_r_q1 : IN STD_LOGIC_VECTOR (15 downto 0);
-        output_r_address0 : OUT STD_LOGIC_VECTOR (13 downto 0);
-        output_r_ce0 : OUT STD_LOGIC;
-        output_r_we0 : OUT STD_LOGIC;
-        output_r_d0 : OUT STD_LOGIC_VECTOR (15 downto 0) );
-    end component;
-
-
-    component depthwise_conv2d_fix IS
     port (
         ap_clk : IN STD_LOGIC;
         ap_rst : IN STD_LOGIC;
@@ -3194,50 +3256,6 @@ architecture behav of network is
         input_r_address1 : OUT STD_LOGIC_VECTOR (13 downto 0);
         input_r_ce1 : OUT STD_LOGIC;
         input_r_q1 : IN STD_LOGIC_VECTOR (15 downto 0);
-        output_r_address0 : OUT STD_LOGIC_VECTOR (13 downto 0);
-        output_r_ce0 : OUT STD_LOGIC;
-        output_r_we0 : OUT STD_LOGIC;
-        output_r_d0 : OUT STD_LOGIC_VECTOR (15 downto 0) );
-    end component;
-
-
-    component up_sampling2d_fix16 IS
-    port (
-        ap_clk : IN STD_LOGIC;
-        ap_rst : IN STD_LOGIC;
-        ap_start : IN STD_LOGIC;
-        ap_done : OUT STD_LOGIC;
-        ap_idle : OUT STD_LOGIC;
-        ap_ready : OUT STD_LOGIC;
-        input_height : IN STD_LOGIC_VECTOR (4 downto 0);
-        input_width : IN STD_LOGIC_VECTOR (4 downto 0);
-        input_r_address0 : OUT STD_LOGIC_VECTOR (13 downto 0);
-        input_r_ce0 : OUT STD_LOGIC;
-        input_r_q0 : IN STD_LOGIC_VECTOR (15 downto 0);
-        output_depth : IN STD_LOGIC_VECTOR (5 downto 0);
-        output_height : IN STD_LOGIC_VECTOR (5 downto 0);
-        output_width : IN STD_LOGIC_VECTOR (5 downto 0);
-        output_r_address0 : OUT STD_LOGIC_VECTOR (13 downto 0);
-        output_r_ce0 : OUT STD_LOGIC;
-        output_r_we0 : OUT STD_LOGIC;
-        output_r_d0 : OUT STD_LOGIC_VECTOR (15 downto 0) );
-    end component;
-
-
-    component padding2d_fix16 IS
-    port (
-        ap_clk : IN STD_LOGIC;
-        ap_rst : IN STD_LOGIC;
-        ap_start : IN STD_LOGIC;
-        ap_done : OUT STD_LOGIC;
-        ap_idle : OUT STD_LOGIC;
-        ap_ready : OUT STD_LOGIC;
-        input_depth : IN STD_LOGIC_VECTOR (6 downto 0);
-        input_height : IN STD_LOGIC_VECTOR (5 downto 0);
-        input_width : IN STD_LOGIC_VECTOR (5 downto 0);
-        input_r_address0 : OUT STD_LOGIC_VECTOR (13 downto 0);
-        input_r_ce0 : OUT STD_LOGIC;
-        input_r_q0 : IN STD_LOGIC_VECTOR (15 downto 0);
         output_r_address0 : OUT STD_LOGIC_VECTOR (13 downto 0);
         output_r_ce0 : OUT STD_LOGIC;
         output_r_we0 : OUT STD_LOGIC;
@@ -3356,6 +3374,8 @@ architecture behav of network is
         q0 : OUT STD_LOGIC_VECTOR (15 downto 0);
         address1 : IN STD_LOGIC_VECTOR (13 downto 0);
         ce1 : IN STD_LOGIC;
+        we1 : IN STD_LOGIC;
+        d1 : IN STD_LOGIC_VECTOR (15 downto 0);
         q1 : OUT STD_LOGIC_VECTOR (15 downto 0) );
     end component;
 
@@ -3424,7 +3444,7 @@ begin
     port map (
         clk => ap_clk,
         reset => ap_rst_n_inv,
-        address0 => grp_depthwise_conv2d_fix_2_fu_14423_bias_address0,
+        address0 => grp_depthwise_conv2d_fix_2_fu_14411_bias_address0,
         ce0 => SeparableConv2D_1_b_1_ce0,
         q0 => SeparableConv2D_1_b_1_q0);
 
@@ -3436,10 +3456,10 @@ begin
     port map (
         clk => ap_clk,
         reset => ap_rst_n_inv,
-        address0 => grp_depthwise_conv2d_fix_2_fu_14423_kernel_0_address0,
+        address0 => grp_depthwise_conv2d_fix_2_fu_14411_kernel_0_address0,
         ce0 => SeparableConv2D_1_w_1_ce0,
         q0 => SeparableConv2D_1_w_1_q0,
-        address1 => grp_depthwise_conv2d_fix_2_fu_14423_kernel_0_address1,
+        address1 => grp_depthwise_conv2d_fix_2_fu_14411_kernel_0_address1,
         ce1 => SeparableConv2D_1_w_1_ce1,
         q1 => SeparableConv2D_1_w_1_q1);
 
@@ -3451,7 +3471,7 @@ begin
     port map (
         clk => ap_clk,
         reset => ap_rst_n_inv,
-        address0 => grp_depthwise_conv2d_fix_1_fu_14468_bias_address0,
+        address0 => grp_depthwise_conv2d_fix_1_fu_14435_bias_address0,
         ce0 => SeparableConv2D_2_b_1_ce0,
         q0 => SeparableConv2D_2_b_1_q0);
 
@@ -3463,10 +3483,10 @@ begin
     port map (
         clk => ap_clk,
         reset => ap_rst_n_inv,
-        address0 => grp_depthwise_conv2d_fix_1_fu_14468_kernel_0_address0,
+        address0 => grp_depthwise_conv2d_fix_1_fu_14435_kernel_0_address0,
         ce0 => SeparableConv2D_2_w_1_ce0,
         q0 => SeparableConv2D_2_w_1_q0,
-        address1 => grp_depthwise_conv2d_fix_1_fu_14468_kernel_0_address1,
+        address1 => grp_depthwise_conv2d_fix_1_fu_14435_kernel_0_address1,
         ce1 => SeparableConv2D_2_w_1_ce1,
         q1 => SeparableConv2D_2_w_1_q1);
 
@@ -3478,7 +3498,7 @@ begin
     port map (
         clk => ap_clk,
         reset => ap_rst_n_inv,
-        address0 => grp_depthwise_conv2d_fix_1_fu_14468_bias_address0,
+        address0 => grp_depthwise_conv2d_fix_1_fu_14435_bias_address0,
         ce0 => SeparableConv2D_3_b_1_ce0,
         q0 => SeparableConv2D_3_b_1_q0);
 
@@ -3490,10 +3510,10 @@ begin
     port map (
         clk => ap_clk,
         reset => ap_rst_n_inv,
-        address0 => grp_depthwise_conv2d_fix_1_fu_14468_kernel_0_address0,
+        address0 => grp_depthwise_conv2d_fix_1_fu_14435_kernel_0_address0,
         ce0 => SeparableConv2D_3_w_1_ce0,
         q0 => SeparableConv2D_3_w_1_q0,
-        address1 => grp_depthwise_conv2d_fix_1_fu_14468_kernel_0_address1,
+        address1 => grp_depthwise_conv2d_fix_1_fu_14435_kernel_0_address1,
         ce1 => SeparableConv2D_3_w_1_ce1,
         q1 => SeparableConv2D_3_w_1_q1);
 
@@ -3505,7 +3525,7 @@ begin
     port map (
         clk => ap_clk,
         reset => ap_rst_n_inv,
-        address0 => grp_depthwise_conv2d_fix_2_fu_14423_bias_address0,
+        address0 => grp_depthwise_conv2d_fix_2_fu_14411_bias_address0,
         ce0 => SeparableConv2D_4_b_s_ce0,
         q0 => SeparableConv2D_4_b_s_q0);
 
@@ -3517,10 +3537,10 @@ begin
     port map (
         clk => ap_clk,
         reset => ap_rst_n_inv,
-        address0 => grp_depthwise_conv2d_fix_2_fu_14423_kernel_0_address0,
+        address0 => grp_depthwise_conv2d_fix_2_fu_14411_kernel_0_address0,
         ce0 => SeparableConv2D_4_w_s_ce0,
         q0 => SeparableConv2D_4_w_s_q0,
-        address1 => grp_depthwise_conv2d_fix_2_fu_14423_kernel_0_address1,
+        address1 => grp_depthwise_conv2d_fix_2_fu_14411_kernel_0_address1,
         ce1 => SeparableConv2D_4_w_s_ce1,
         q1 => SeparableConv2D_4_w_s_q1);
 
@@ -3571,6 +3591,8 @@ begin
         q0 => MemBank_A_q0,
         address1 => MemBank_A_address1,
         ce1 => MemBank_A_ce1,
+        we1 => MemBank_A_we1,
+        d1 => grp_depthwise_conv2d_fix_fu_14459_output_r_d1,
         q1 => MemBank_A_q1);
 
     MemBank_B_U : component network_MemBank_A
@@ -3588,6 +3610,8 @@ begin
         q0 => MemBank_B_q0,
         address1 => MemBank_B_address1,
         ce1 => MemBank_B_ce1,
+        we1 => MemBank_B_we1,
+        d1 => grp_padding2d_fix16_fu_14393_output_r_d1,
         q1 => MemBank_B_q1);
 
     MemBank_Out_U : component network_MemBank_Out
@@ -3608,247 +3632,255 @@ begin
         we1 => MemBank_Out_we1,
         d1 => reg_14558);
 
-    grp_pointwise_conv2d_fix_fu_14393 : component pointwise_conv2d_fix
+    grp_padding2d_fix16_fu_14393 : component padding2d_fix16
     port map (
         ap_clk => ap_clk,
         ap_rst => ap_rst_n_inv,
-        ap_start => grp_pointwise_conv2d_fix_fu_14393_ap_start,
-        ap_done => grp_pointwise_conv2d_fix_fu_14393_ap_done,
-        ap_idle => grp_pointwise_conv2d_fix_fu_14393_ap_idle,
-        ap_ready => grp_pointwise_conv2d_fix_fu_14393_ap_ready,
-        input_r_address0 => grp_pointwise_conv2d_fix_fu_14393_input_r_address0,
-        input_r_ce0 => grp_pointwise_conv2d_fix_fu_14393_input_r_ce0,
+        ap_start => grp_padding2d_fix16_fu_14393_ap_start,
+        ap_done => grp_padding2d_fix16_fu_14393_ap_done,
+        ap_idle => grp_padding2d_fix16_fu_14393_ap_idle,
+        ap_ready => grp_padding2d_fix16_fu_14393_ap_ready,
+        input_depth => grp_padding2d_fix16_fu_14393_input_depth,
+        input_height => grp_padding2d_fix16_fu_14393_input_height,
+        input_width => grp_padding2d_fix16_fu_14393_input_width,
+        input_r_address0 => grp_padding2d_fix16_fu_14393_input_r_address0,
+        input_r_ce0 => grp_padding2d_fix16_fu_14393_input_r_ce0,
         input_r_q0 => MemBank_A_q0,
-        input_r_address1 => grp_pointwise_conv2d_fix_fu_14393_input_r_address1,
-        input_r_ce1 => grp_pointwise_conv2d_fix_fu_14393_input_r_ce1,
-        input_r_q1 => MemBank_A_q1,
-        output_r_address0 => grp_pointwise_conv2d_fix_fu_14393_output_r_address0,
-        output_r_ce0 => grp_pointwise_conv2d_fix_fu_14393_output_r_ce0,
-        output_r_we0 => grp_pointwise_conv2d_fix_fu_14393_output_r_we0,
-        output_r_d0 => grp_pointwise_conv2d_fix_fu_14393_output_r_d0);
+        output_r_address0 => grp_padding2d_fix16_fu_14393_output_r_address0,
+        output_r_ce0 => grp_padding2d_fix16_fu_14393_output_r_ce0,
+        output_r_we0 => grp_padding2d_fix16_fu_14393_output_r_we0,
+        output_r_d0 => grp_padding2d_fix16_fu_14393_output_r_d0,
+        output_r_address1 => grp_padding2d_fix16_fu_14393_output_r_address1,
+        output_r_ce1 => grp_padding2d_fix16_fu_14393_output_r_ce1,
+        output_r_we1 => grp_padding2d_fix16_fu_14393_output_r_we1,
+        output_r_d1 => grp_padding2d_fix16_fu_14393_output_r_d1);
 
-    grp_pointwise_conv2d_fix_3_fu_14403 : component pointwise_conv2d_fix_3
+    grp_depthwise_conv2d_fix_2_fu_14411 : component depthwise_conv2d_fix_2
     port map (
         ap_clk => ap_clk,
         ap_rst => ap_rst_n_inv,
-        ap_start => grp_pointwise_conv2d_fix_3_fu_14403_ap_start,
-        ap_done => grp_pointwise_conv2d_fix_3_fu_14403_ap_done,
-        ap_idle => grp_pointwise_conv2d_fix_3_fu_14403_ap_idle,
-        ap_ready => grp_pointwise_conv2d_fix_3_fu_14403_ap_ready,
-        input_r_address0 => grp_pointwise_conv2d_fix_3_fu_14403_input_r_address0,
-        input_r_ce0 => grp_pointwise_conv2d_fix_3_fu_14403_input_r_ce0,
-        input_r_q0 => MemBank_A_q0,
-        input_r_address1 => grp_pointwise_conv2d_fix_3_fu_14403_input_r_address1,
-        input_r_ce1 => grp_pointwise_conv2d_fix_3_fu_14403_input_r_ce1,
-        input_r_q1 => MemBank_A_q1,
-        output_r_address0 => grp_pointwise_conv2d_fix_3_fu_14403_output_r_address0,
-        output_r_ce0 => grp_pointwise_conv2d_fix_3_fu_14403_output_r_ce0,
-        output_r_we0 => grp_pointwise_conv2d_fix_3_fu_14403_output_r_we0,
-        output_r_d0 => grp_pointwise_conv2d_fix_3_fu_14403_output_r_d0);
-
-    grp_pointwise_conv2d_fix_2_fu_14413 : component pointwise_conv2d_fix_2
-    port map (
-        ap_clk => ap_clk,
-        ap_rst => ap_rst_n_inv,
-        ap_start => grp_pointwise_conv2d_fix_2_fu_14413_ap_start,
-        ap_done => grp_pointwise_conv2d_fix_2_fu_14413_ap_done,
-        ap_idle => grp_pointwise_conv2d_fix_2_fu_14413_ap_idle,
-        ap_ready => grp_pointwise_conv2d_fix_2_fu_14413_ap_ready,
-        input_r_address0 => grp_pointwise_conv2d_fix_2_fu_14413_input_r_address0,
-        input_r_ce0 => grp_pointwise_conv2d_fix_2_fu_14413_input_r_ce0,
-        input_r_q0 => MemBank_A_q0,
-        input_r_address1 => grp_pointwise_conv2d_fix_2_fu_14413_input_r_address1,
-        input_r_ce1 => grp_pointwise_conv2d_fix_2_fu_14413_input_r_ce1,
-        input_r_q1 => MemBank_A_q1,
-        output_r_address0 => grp_pointwise_conv2d_fix_2_fu_14413_output_r_address0,
-        output_r_ce0 => grp_pointwise_conv2d_fix_2_fu_14413_output_r_ce0,
-        output_r_we0 => grp_pointwise_conv2d_fix_2_fu_14413_output_r_we0,
-        output_r_d0 => grp_pointwise_conv2d_fix_2_fu_14413_output_r_d0);
-
-    grp_depthwise_conv2d_fix_2_fu_14423 : component depthwise_conv2d_fix_2
-    port map (
-        ap_clk => ap_clk,
-        ap_rst => ap_rst_n_inv,
-        ap_start => grp_depthwise_conv2d_fix_2_fu_14423_ap_start,
-        ap_done => grp_depthwise_conv2d_fix_2_fu_14423_ap_done,
-        ap_idle => grp_depthwise_conv2d_fix_2_fu_14423_ap_idle,
-        ap_ready => grp_depthwise_conv2d_fix_2_fu_14423_ap_ready,
-        input_height => grp_depthwise_conv2d_fix_2_fu_14423_input_height,
-        input_width => grp_depthwise_conv2d_fix_2_fu_14423_input_width,
-        input_r_address0 => grp_depthwise_conv2d_fix_2_fu_14423_input_r_address0,
-        input_r_ce0 => grp_depthwise_conv2d_fix_2_fu_14423_input_r_ce0,
+        ap_start => grp_depthwise_conv2d_fix_2_fu_14411_ap_start,
+        ap_done => grp_depthwise_conv2d_fix_2_fu_14411_ap_done,
+        ap_idle => grp_depthwise_conv2d_fix_2_fu_14411_ap_idle,
+        ap_ready => grp_depthwise_conv2d_fix_2_fu_14411_ap_ready,
+        input_height => grp_depthwise_conv2d_fix_2_fu_14411_input_height,
+        input_width => grp_depthwise_conv2d_fix_2_fu_14411_input_width,
+        input_r_address0 => grp_depthwise_conv2d_fix_2_fu_14411_input_r_address0,
+        input_r_ce0 => grp_depthwise_conv2d_fix_2_fu_14411_input_r_ce0,
         input_r_q0 => MemBank_B_q0,
-        input_r_address1 => grp_depthwise_conv2d_fix_2_fu_14423_input_r_address1,
-        input_r_ce1 => grp_depthwise_conv2d_fix_2_fu_14423_input_r_ce1,
+        input_r_address1 => grp_depthwise_conv2d_fix_2_fu_14411_input_r_address1,
+        input_r_ce1 => grp_depthwise_conv2d_fix_2_fu_14411_input_r_ce1,
         input_r_q1 => MemBank_B_q1,
-        output_height => grp_depthwise_conv2d_fix_2_fu_14423_output_height,
-        output_width => grp_depthwise_conv2d_fix_2_fu_14423_output_width,
-        output_r_address0 => grp_depthwise_conv2d_fix_2_fu_14423_output_r_address0,
-        output_r_ce0 => grp_depthwise_conv2d_fix_2_fu_14423_output_r_ce0,
-        output_r_we0 => grp_depthwise_conv2d_fix_2_fu_14423_output_r_we0,
-        output_r_d0 => grp_depthwise_conv2d_fix_2_fu_14423_output_r_d0,
-        bias_address0 => grp_depthwise_conv2d_fix_2_fu_14423_bias_address0,
-        bias_ce0 => grp_depthwise_conv2d_fix_2_fu_14423_bias_ce0,
-        bias_q0 => grp_depthwise_conv2d_fix_2_fu_14423_bias_q0,
-        kernel_0_address0 => grp_depthwise_conv2d_fix_2_fu_14423_kernel_0_address0,
-        kernel_0_ce0 => grp_depthwise_conv2d_fix_2_fu_14423_kernel_0_ce0,
-        kernel_0_q0 => grp_depthwise_conv2d_fix_2_fu_14423_kernel_0_q0,
-        kernel_0_address1 => grp_depthwise_conv2d_fix_2_fu_14423_kernel_0_address1,
-        kernel_0_ce1 => grp_depthwise_conv2d_fix_2_fu_14423_kernel_0_ce1,
-        kernel_0_q1 => grp_depthwise_conv2d_fix_2_fu_14423_kernel_0_q1);
+        output_height => grp_depthwise_conv2d_fix_2_fu_14411_output_height,
+        output_width => grp_depthwise_conv2d_fix_2_fu_14411_output_width,
+        output_r_address0 => grp_depthwise_conv2d_fix_2_fu_14411_output_r_address0,
+        output_r_ce0 => grp_depthwise_conv2d_fix_2_fu_14411_output_r_ce0,
+        output_r_we0 => grp_depthwise_conv2d_fix_2_fu_14411_output_r_we0,
+        output_r_d0 => grp_depthwise_conv2d_fix_2_fu_14411_output_r_d0,
+        bias_address0 => grp_depthwise_conv2d_fix_2_fu_14411_bias_address0,
+        bias_ce0 => grp_depthwise_conv2d_fix_2_fu_14411_bias_ce0,
+        bias_q0 => grp_depthwise_conv2d_fix_2_fu_14411_bias_q0,
+        kernel_0_address0 => grp_depthwise_conv2d_fix_2_fu_14411_kernel_0_address0,
+        kernel_0_ce0 => grp_depthwise_conv2d_fix_2_fu_14411_kernel_0_ce0,
+        kernel_0_q0 => grp_depthwise_conv2d_fix_2_fu_14411_kernel_0_q0,
+        kernel_0_address1 => grp_depthwise_conv2d_fix_2_fu_14411_kernel_0_address1,
+        kernel_0_ce1 => grp_depthwise_conv2d_fix_2_fu_14411_kernel_0_ce1,
+        kernel_0_q1 => grp_depthwise_conv2d_fix_2_fu_14411_kernel_0_q1);
 
-    grp_max_pooling2d_fix16_fu_14447 : component max_pooling2d_fix16
+    grp_depthwise_conv2d_fix_1_fu_14435 : component depthwise_conv2d_fix_1
     port map (
         ap_clk => ap_clk,
         ap_rst => ap_rst_n_inv,
-        ap_start => grp_max_pooling2d_fix16_fu_14447_ap_start,
-        ap_done => grp_max_pooling2d_fix16_fu_14447_ap_done,
-        ap_idle => grp_max_pooling2d_fix16_fu_14447_ap_idle,
-        ap_ready => grp_max_pooling2d_fix16_fu_14447_ap_ready,
-        input_height => grp_max_pooling2d_fix16_fu_14447_input_height,
-        input_width => grp_max_pooling2d_fix16_fu_14447_input_width,
-        input_r_address0 => grp_max_pooling2d_fix16_fu_14447_input_r_address0,
-        input_r_ce0 => grp_max_pooling2d_fix16_fu_14447_input_r_ce0,
+        ap_start => grp_depthwise_conv2d_fix_1_fu_14435_ap_start,
+        ap_done => grp_depthwise_conv2d_fix_1_fu_14435_ap_done,
+        ap_idle => grp_depthwise_conv2d_fix_1_fu_14435_ap_idle,
+        ap_ready => grp_depthwise_conv2d_fix_1_fu_14435_ap_ready,
+        input_height => grp_depthwise_conv2d_fix_1_fu_14435_input_height,
+        input_width => grp_depthwise_conv2d_fix_1_fu_14435_input_width,
+        input_r_address0 => grp_depthwise_conv2d_fix_1_fu_14435_input_r_address0,
+        input_r_ce0 => grp_depthwise_conv2d_fix_1_fu_14435_input_r_ce0,
         input_r_q0 => MemBank_B_q0,
-        input_r_address1 => grp_max_pooling2d_fix16_fu_14447_input_r_address1,
-        input_r_ce1 => grp_max_pooling2d_fix16_fu_14447_input_r_ce1,
+        input_r_address1 => grp_depthwise_conv2d_fix_1_fu_14435_input_r_address1,
+        input_r_ce1 => grp_depthwise_conv2d_fix_1_fu_14435_input_r_ce1,
         input_r_q1 => MemBank_B_q1,
-        output_depth => grp_max_pooling2d_fix16_fu_14447_output_depth,
-        output_height => grp_max_pooling2d_fix16_fu_14447_output_height,
-        output_width => grp_max_pooling2d_fix16_fu_14447_output_width,
-        output_r_address0 => grp_max_pooling2d_fix16_fu_14447_output_r_address0,
-        output_r_ce0 => grp_max_pooling2d_fix16_fu_14447_output_r_ce0,
-        output_r_we0 => grp_max_pooling2d_fix16_fu_14447_output_r_we0,
-        output_r_d0 => grp_max_pooling2d_fix16_fu_14447_output_r_d0);
+        output_height => grp_depthwise_conv2d_fix_1_fu_14435_output_height,
+        output_width => grp_depthwise_conv2d_fix_1_fu_14435_output_width,
+        output_r_address0 => grp_depthwise_conv2d_fix_1_fu_14435_output_r_address0,
+        output_r_ce0 => grp_depthwise_conv2d_fix_1_fu_14435_output_r_ce0,
+        output_r_we0 => grp_depthwise_conv2d_fix_1_fu_14435_output_r_we0,
+        output_r_d0 => grp_depthwise_conv2d_fix_1_fu_14435_output_r_d0,
+        bias_address0 => grp_depthwise_conv2d_fix_1_fu_14435_bias_address0,
+        bias_ce0 => grp_depthwise_conv2d_fix_1_fu_14435_bias_ce0,
+        bias_q0 => grp_depthwise_conv2d_fix_1_fu_14435_bias_q0,
+        kernel_0_address0 => grp_depthwise_conv2d_fix_1_fu_14435_kernel_0_address0,
+        kernel_0_ce0 => grp_depthwise_conv2d_fix_1_fu_14435_kernel_0_ce0,
+        kernel_0_q0 => grp_depthwise_conv2d_fix_1_fu_14435_kernel_0_q0,
+        kernel_0_address1 => grp_depthwise_conv2d_fix_1_fu_14435_kernel_0_address1,
+        kernel_0_ce1 => grp_depthwise_conv2d_fix_1_fu_14435_kernel_0_ce1,
+        kernel_0_q1 => grp_depthwise_conv2d_fix_1_fu_14435_kernel_0_q1);
 
-    grp_depthwise_conv2d_fix_1_fu_14468 : component depthwise_conv2d_fix_1
+    grp_depthwise_conv2d_fix_fu_14459 : component depthwise_conv2d_fix
     port map (
         ap_clk => ap_clk,
         ap_rst => ap_rst_n_inv,
-        ap_start => grp_depthwise_conv2d_fix_1_fu_14468_ap_start,
-        ap_done => grp_depthwise_conv2d_fix_1_fu_14468_ap_done,
-        ap_idle => grp_depthwise_conv2d_fix_1_fu_14468_ap_idle,
-        ap_ready => grp_depthwise_conv2d_fix_1_fu_14468_ap_ready,
-        input_height => grp_depthwise_conv2d_fix_1_fu_14468_input_height,
-        input_width => grp_depthwise_conv2d_fix_1_fu_14468_input_width,
-        input_r_address0 => grp_depthwise_conv2d_fix_1_fu_14468_input_r_address0,
-        input_r_ce0 => grp_depthwise_conv2d_fix_1_fu_14468_input_r_ce0,
+        ap_start => grp_depthwise_conv2d_fix_fu_14459_ap_start,
+        ap_done => grp_depthwise_conv2d_fix_fu_14459_ap_done,
+        ap_idle => grp_depthwise_conv2d_fix_fu_14459_ap_idle,
+        ap_ready => grp_depthwise_conv2d_fix_fu_14459_ap_ready,
+        input_r_address0 => grp_depthwise_conv2d_fix_fu_14459_input_r_address0,
+        input_r_ce0 => grp_depthwise_conv2d_fix_fu_14459_input_r_ce0,
         input_r_q0 => MemBank_B_q0,
-        input_r_address1 => grp_depthwise_conv2d_fix_1_fu_14468_input_r_address1,
-        input_r_ce1 => grp_depthwise_conv2d_fix_1_fu_14468_input_r_ce1,
+        input_r_address1 => grp_depthwise_conv2d_fix_fu_14459_input_r_address1,
+        input_r_ce1 => grp_depthwise_conv2d_fix_fu_14459_input_r_ce1,
         input_r_q1 => MemBank_B_q1,
-        output_height => grp_depthwise_conv2d_fix_1_fu_14468_output_height,
-        output_width => grp_depthwise_conv2d_fix_1_fu_14468_output_width,
-        output_r_address0 => grp_depthwise_conv2d_fix_1_fu_14468_output_r_address0,
-        output_r_ce0 => grp_depthwise_conv2d_fix_1_fu_14468_output_r_ce0,
-        output_r_we0 => grp_depthwise_conv2d_fix_1_fu_14468_output_r_we0,
-        output_r_d0 => grp_depthwise_conv2d_fix_1_fu_14468_output_r_d0,
-        bias_address0 => grp_depthwise_conv2d_fix_1_fu_14468_bias_address0,
-        bias_ce0 => grp_depthwise_conv2d_fix_1_fu_14468_bias_ce0,
-        bias_q0 => grp_depthwise_conv2d_fix_1_fu_14468_bias_q0,
-        kernel_0_address0 => grp_depthwise_conv2d_fix_1_fu_14468_kernel_0_address0,
-        kernel_0_ce0 => grp_depthwise_conv2d_fix_1_fu_14468_kernel_0_ce0,
-        kernel_0_q0 => grp_depthwise_conv2d_fix_1_fu_14468_kernel_0_q0,
-        kernel_0_address1 => grp_depthwise_conv2d_fix_1_fu_14468_kernel_0_address1,
-        kernel_0_ce1 => grp_depthwise_conv2d_fix_1_fu_14468_kernel_0_ce1,
-        kernel_0_q1 => grp_depthwise_conv2d_fix_1_fu_14468_kernel_0_q1);
+        output_r_address0 => grp_depthwise_conv2d_fix_fu_14459_output_r_address0,
+        output_r_ce0 => grp_depthwise_conv2d_fix_fu_14459_output_r_ce0,
+        output_r_we0 => grp_depthwise_conv2d_fix_fu_14459_output_r_we0,
+        output_r_d0 => grp_depthwise_conv2d_fix_fu_14459_output_r_d0,
+        output_r_address1 => grp_depthwise_conv2d_fix_fu_14459_output_r_address1,
+        output_r_ce1 => grp_depthwise_conv2d_fix_fu_14459_output_r_ce1,
+        output_r_we1 => grp_depthwise_conv2d_fix_fu_14459_output_r_we1,
+        output_r_d1 => grp_depthwise_conv2d_fix_fu_14459_output_r_d1);
 
-    grp_pointwise_conv2d_fix_1_fu_14492 : component pointwise_conv2d_fix_1
+    grp_pointwise_conv2d_fix_fu_14465 : component pointwise_conv2d_fix
     port map (
         ap_clk => ap_clk,
         ap_rst => ap_rst_n_inv,
-        ap_start => grp_pointwise_conv2d_fix_1_fu_14492_ap_start,
-        ap_done => grp_pointwise_conv2d_fix_1_fu_14492_ap_done,
-        ap_idle => grp_pointwise_conv2d_fix_1_fu_14492_ap_idle,
-        ap_ready => grp_pointwise_conv2d_fix_1_fu_14492_ap_ready,
-        input_r_address0 => grp_pointwise_conv2d_fix_1_fu_14492_input_r_address0,
-        input_r_ce0 => grp_pointwise_conv2d_fix_1_fu_14492_input_r_ce0,
+        ap_start => grp_pointwise_conv2d_fix_fu_14465_ap_start,
+        ap_done => grp_pointwise_conv2d_fix_fu_14465_ap_done,
+        ap_idle => grp_pointwise_conv2d_fix_fu_14465_ap_idle,
+        ap_ready => grp_pointwise_conv2d_fix_fu_14465_ap_ready,
+        input_r_address0 => grp_pointwise_conv2d_fix_fu_14465_input_r_address0,
+        input_r_ce0 => grp_pointwise_conv2d_fix_fu_14465_input_r_ce0,
         input_r_q0 => MemBank_A_q0,
-        input_r_address1 => grp_pointwise_conv2d_fix_1_fu_14492_input_r_address1,
-        input_r_ce1 => grp_pointwise_conv2d_fix_1_fu_14492_input_r_ce1,
+        input_r_address1 => grp_pointwise_conv2d_fix_fu_14465_input_r_address1,
+        input_r_ce1 => grp_pointwise_conv2d_fix_fu_14465_input_r_ce1,
         input_r_q1 => MemBank_A_q1,
-        output_r_address0 => grp_pointwise_conv2d_fix_1_fu_14492_output_r_address0,
-        output_r_ce0 => grp_pointwise_conv2d_fix_1_fu_14492_output_r_ce0,
-        output_r_we0 => grp_pointwise_conv2d_fix_1_fu_14492_output_r_we0,
-        output_r_d0 => grp_pointwise_conv2d_fix_1_fu_14492_output_r_d0);
+        output_r_address0 => grp_pointwise_conv2d_fix_fu_14465_output_r_address0,
+        output_r_ce0 => grp_pointwise_conv2d_fix_fu_14465_output_r_ce0,
+        output_r_we0 => grp_pointwise_conv2d_fix_fu_14465_output_r_we0,
+        output_r_d0 => grp_pointwise_conv2d_fix_fu_14465_output_r_d0);
 
-    grp_depthwise_conv2d_fix_fu_14502 : component depthwise_conv2d_fix
+    grp_pointwise_conv2d_fix_3_fu_14475 : component pointwise_conv2d_fix_3
     port map (
         ap_clk => ap_clk,
         ap_rst => ap_rst_n_inv,
-        ap_start => grp_depthwise_conv2d_fix_fu_14502_ap_start,
-        ap_done => grp_depthwise_conv2d_fix_fu_14502_ap_done,
-        ap_idle => grp_depthwise_conv2d_fix_fu_14502_ap_idle,
-        ap_ready => grp_depthwise_conv2d_fix_fu_14502_ap_ready,
-        input_r_address0 => grp_depthwise_conv2d_fix_fu_14502_input_r_address0,
-        input_r_ce0 => grp_depthwise_conv2d_fix_fu_14502_input_r_ce0,
-        input_r_q0 => MemBank_B_q0,
-        input_r_address1 => grp_depthwise_conv2d_fix_fu_14502_input_r_address1,
-        input_r_ce1 => grp_depthwise_conv2d_fix_fu_14502_input_r_ce1,
-        input_r_q1 => MemBank_B_q1,
-        output_r_address0 => grp_depthwise_conv2d_fix_fu_14502_output_r_address0,
-        output_r_ce0 => grp_depthwise_conv2d_fix_fu_14502_output_r_ce0,
-        output_r_we0 => grp_depthwise_conv2d_fix_fu_14502_output_r_we0,
-        output_r_d0 => grp_depthwise_conv2d_fix_fu_14502_output_r_d0);
-
-    grp_pointwise_conv2d_fix_4_fu_14508 : component pointwise_conv2d_fix_4
-    port map (
-        ap_clk => ap_clk,
-        ap_rst => ap_rst_n_inv,
-        ap_start => grp_pointwise_conv2d_fix_4_fu_14508_ap_start,
-        ap_done => grp_pointwise_conv2d_fix_4_fu_14508_ap_done,
-        ap_idle => grp_pointwise_conv2d_fix_4_fu_14508_ap_idle,
-        ap_ready => grp_pointwise_conv2d_fix_4_fu_14508_ap_ready,
-        input_r_address0 => grp_pointwise_conv2d_fix_4_fu_14508_input_r_address0,
-        input_r_ce0 => grp_pointwise_conv2d_fix_4_fu_14508_input_r_ce0,
+        ap_start => grp_pointwise_conv2d_fix_3_fu_14475_ap_start,
+        ap_done => grp_pointwise_conv2d_fix_3_fu_14475_ap_done,
+        ap_idle => grp_pointwise_conv2d_fix_3_fu_14475_ap_idle,
+        ap_ready => grp_pointwise_conv2d_fix_3_fu_14475_ap_ready,
+        input_r_address0 => grp_pointwise_conv2d_fix_3_fu_14475_input_r_address0,
+        input_r_ce0 => grp_pointwise_conv2d_fix_3_fu_14475_input_r_ce0,
         input_r_q0 => MemBank_A_q0,
-        input_r_address1 => grp_pointwise_conv2d_fix_4_fu_14508_input_r_address1,
-        input_r_ce1 => grp_pointwise_conv2d_fix_4_fu_14508_input_r_ce1,
+        input_r_address1 => grp_pointwise_conv2d_fix_3_fu_14475_input_r_address1,
+        input_r_ce1 => grp_pointwise_conv2d_fix_3_fu_14475_input_r_ce1,
         input_r_q1 => MemBank_A_q1,
-        output_r_address0 => grp_pointwise_conv2d_fix_4_fu_14508_output_r_address0,
-        output_r_ce0 => grp_pointwise_conv2d_fix_4_fu_14508_output_r_ce0,
-        output_r_we0 => grp_pointwise_conv2d_fix_4_fu_14508_output_r_we0,
-        output_r_d0 => grp_pointwise_conv2d_fix_4_fu_14508_output_r_d0);
+        output_r_address0 => grp_pointwise_conv2d_fix_3_fu_14475_output_r_address0,
+        output_r_ce0 => grp_pointwise_conv2d_fix_3_fu_14475_output_r_ce0,
+        output_r_we0 => grp_pointwise_conv2d_fix_3_fu_14475_output_r_we0,
+        output_r_d0 => grp_pointwise_conv2d_fix_3_fu_14475_output_r_d0);
 
-    grp_up_sampling2d_fix16_fu_14514 : component up_sampling2d_fix16
+    grp_pointwise_conv2d_fix_2_fu_14485 : component pointwise_conv2d_fix_2
     port map (
         ap_clk => ap_clk,
         ap_rst => ap_rst_n_inv,
-        ap_start => grp_up_sampling2d_fix16_fu_14514_ap_start,
-        ap_done => grp_up_sampling2d_fix16_fu_14514_ap_done,
-        ap_idle => grp_up_sampling2d_fix16_fu_14514_ap_idle,
-        ap_ready => grp_up_sampling2d_fix16_fu_14514_ap_ready,
-        input_height => grp_up_sampling2d_fix16_fu_14514_input_height,
-        input_width => grp_up_sampling2d_fix16_fu_14514_input_width,
-        input_r_address0 => grp_up_sampling2d_fix16_fu_14514_input_r_address0,
-        input_r_ce0 => grp_up_sampling2d_fix16_fu_14514_input_r_ce0,
-        input_r_q0 => MemBank_B_q0,
-        output_depth => grp_up_sampling2d_fix16_fu_14514_output_depth,
-        output_height => grp_up_sampling2d_fix16_fu_14514_output_height,
-        output_width => grp_up_sampling2d_fix16_fu_14514_output_width,
-        output_r_address0 => grp_up_sampling2d_fix16_fu_14514_output_r_address0,
-        output_r_ce0 => grp_up_sampling2d_fix16_fu_14514_output_r_ce0,
-        output_r_we0 => grp_up_sampling2d_fix16_fu_14514_output_r_we0,
-        output_r_d0 => grp_up_sampling2d_fix16_fu_14514_output_r_d0);
-
-    grp_padding2d_fix16_fu_14535 : component padding2d_fix16
-    port map (
-        ap_clk => ap_clk,
-        ap_rst => ap_rst_n_inv,
-        ap_start => grp_padding2d_fix16_fu_14535_ap_start,
-        ap_done => grp_padding2d_fix16_fu_14535_ap_done,
-        ap_idle => grp_padding2d_fix16_fu_14535_ap_idle,
-        ap_ready => grp_padding2d_fix16_fu_14535_ap_ready,
-        input_depth => grp_padding2d_fix16_fu_14535_input_depth,
-        input_height => grp_padding2d_fix16_fu_14535_input_height,
-        input_width => grp_padding2d_fix16_fu_14535_input_width,
-        input_r_address0 => grp_padding2d_fix16_fu_14535_input_r_address0,
-        input_r_ce0 => grp_padding2d_fix16_fu_14535_input_r_ce0,
+        ap_start => grp_pointwise_conv2d_fix_2_fu_14485_ap_start,
+        ap_done => grp_pointwise_conv2d_fix_2_fu_14485_ap_done,
+        ap_idle => grp_pointwise_conv2d_fix_2_fu_14485_ap_idle,
+        ap_ready => grp_pointwise_conv2d_fix_2_fu_14485_ap_ready,
+        input_r_address0 => grp_pointwise_conv2d_fix_2_fu_14485_input_r_address0,
+        input_r_ce0 => grp_pointwise_conv2d_fix_2_fu_14485_input_r_ce0,
         input_r_q0 => MemBank_A_q0,
-        output_r_address0 => grp_padding2d_fix16_fu_14535_output_r_address0,
-        output_r_ce0 => grp_padding2d_fix16_fu_14535_output_r_ce0,
-        output_r_we0 => grp_padding2d_fix16_fu_14535_output_r_we0,
-        output_r_d0 => grp_padding2d_fix16_fu_14535_output_r_d0);
+        input_r_address1 => grp_pointwise_conv2d_fix_2_fu_14485_input_r_address1,
+        input_r_ce1 => grp_pointwise_conv2d_fix_2_fu_14485_input_r_ce1,
+        input_r_q1 => MemBank_A_q1,
+        output_r_address0 => grp_pointwise_conv2d_fix_2_fu_14485_output_r_address0,
+        output_r_ce0 => grp_pointwise_conv2d_fix_2_fu_14485_output_r_ce0,
+        output_r_we0 => grp_pointwise_conv2d_fix_2_fu_14485_output_r_we0,
+        output_r_d0 => grp_pointwise_conv2d_fix_2_fu_14485_output_r_d0);
+
+    grp_up_sampling2d_fix16_fu_14495 : component up_sampling2d_fix16
+    port map (
+        ap_clk => ap_clk,
+        ap_rst => ap_rst_n_inv,
+        ap_start => grp_up_sampling2d_fix16_fu_14495_ap_start,
+        ap_done => grp_up_sampling2d_fix16_fu_14495_ap_done,
+        ap_idle => grp_up_sampling2d_fix16_fu_14495_ap_idle,
+        ap_ready => grp_up_sampling2d_fix16_fu_14495_ap_ready,
+        input_height => grp_up_sampling2d_fix16_fu_14495_input_height,
+        input_width => grp_up_sampling2d_fix16_fu_14495_input_width,
+        input_r_address0 => grp_up_sampling2d_fix16_fu_14495_input_r_address0,
+        input_r_ce0 => grp_up_sampling2d_fix16_fu_14495_input_r_ce0,
+        input_r_q0 => MemBank_B_q0,
+        output_depth => grp_up_sampling2d_fix16_fu_14495_output_depth,
+        output_height => grp_up_sampling2d_fix16_fu_14495_output_height,
+        output_width => grp_up_sampling2d_fix16_fu_14495_output_width,
+        output_r_address0 => grp_up_sampling2d_fix16_fu_14495_output_r_address0,
+        output_r_ce0 => grp_up_sampling2d_fix16_fu_14495_output_r_ce0,
+        output_r_we0 => grp_up_sampling2d_fix16_fu_14495_output_r_we0,
+        output_r_d0 => grp_up_sampling2d_fix16_fu_14495_output_r_d0);
+
+    grp_max_pooling2d_fix16_fu_14516 : component max_pooling2d_fix16
+    port map (
+        ap_clk => ap_clk,
+        ap_rst => ap_rst_n_inv,
+        ap_start => grp_max_pooling2d_fix16_fu_14516_ap_start,
+        ap_done => grp_max_pooling2d_fix16_fu_14516_ap_done,
+        ap_idle => grp_max_pooling2d_fix16_fu_14516_ap_idle,
+        ap_ready => grp_max_pooling2d_fix16_fu_14516_ap_ready,
+        input_height => grp_max_pooling2d_fix16_fu_14516_input_height,
+        input_width => grp_max_pooling2d_fix16_fu_14516_input_width,
+        input_r_address0 => grp_max_pooling2d_fix16_fu_14516_input_r_address0,
+        input_r_ce0 => grp_max_pooling2d_fix16_fu_14516_input_r_ce0,
+        input_r_q0 => MemBank_B_q0,
+        input_r_address1 => grp_max_pooling2d_fix16_fu_14516_input_r_address1,
+        input_r_ce1 => grp_max_pooling2d_fix16_fu_14516_input_r_ce1,
+        input_r_q1 => MemBank_B_q1,
+        output_depth => grp_max_pooling2d_fix16_fu_14516_output_depth,
+        output_height => grp_max_pooling2d_fix16_fu_14516_output_height,
+        output_width => grp_max_pooling2d_fix16_fu_14516_output_width,
+        output_r_address0 => grp_max_pooling2d_fix16_fu_14516_output_r_address0,
+        output_r_ce0 => grp_max_pooling2d_fix16_fu_14516_output_r_ce0,
+        output_r_we0 => grp_max_pooling2d_fix16_fu_14516_output_r_we0,
+        output_r_d0 => grp_max_pooling2d_fix16_fu_14516_output_r_d0);
+
+    grp_pointwise_conv2d_fix_1_fu_14537 : component pointwise_conv2d_fix_1
+    port map (
+        ap_clk => ap_clk,
+        ap_rst => ap_rst_n_inv,
+        ap_start => grp_pointwise_conv2d_fix_1_fu_14537_ap_start,
+        ap_done => grp_pointwise_conv2d_fix_1_fu_14537_ap_done,
+        ap_idle => grp_pointwise_conv2d_fix_1_fu_14537_ap_idle,
+        ap_ready => grp_pointwise_conv2d_fix_1_fu_14537_ap_ready,
+        input_r_address0 => grp_pointwise_conv2d_fix_1_fu_14537_input_r_address0,
+        input_r_ce0 => grp_pointwise_conv2d_fix_1_fu_14537_input_r_ce0,
+        input_r_q0 => MemBank_A_q0,
+        input_r_address1 => grp_pointwise_conv2d_fix_1_fu_14537_input_r_address1,
+        input_r_ce1 => grp_pointwise_conv2d_fix_1_fu_14537_input_r_ce1,
+        input_r_q1 => MemBank_A_q1,
+        output_r_address0 => grp_pointwise_conv2d_fix_1_fu_14537_output_r_address0,
+        output_r_ce0 => grp_pointwise_conv2d_fix_1_fu_14537_output_r_ce0,
+        output_r_we0 => grp_pointwise_conv2d_fix_1_fu_14537_output_r_we0,
+        output_r_d0 => grp_pointwise_conv2d_fix_1_fu_14537_output_r_d0);
+
+    grp_pointwise_conv2d_fix_4_fu_14547 : component pointwise_conv2d_fix_4
+    port map (
+        ap_clk => ap_clk,
+        ap_rst => ap_rst_n_inv,
+        ap_start => grp_pointwise_conv2d_fix_4_fu_14547_ap_start,
+        ap_done => grp_pointwise_conv2d_fix_4_fu_14547_ap_done,
+        ap_idle => grp_pointwise_conv2d_fix_4_fu_14547_ap_idle,
+        ap_ready => grp_pointwise_conv2d_fix_4_fu_14547_ap_ready,
+        input_r_address0 => grp_pointwise_conv2d_fix_4_fu_14547_input_r_address0,
+        input_r_ce0 => grp_pointwise_conv2d_fix_4_fu_14547_input_r_ce0,
+        input_r_q0 => MemBank_A_q0,
+        input_r_address1 => grp_pointwise_conv2d_fix_4_fu_14547_input_r_address1,
+        input_r_ce1 => grp_pointwise_conv2d_fix_4_fu_14547_input_r_ce1,
+        input_r_q1 => MemBank_A_q1,
+        output_r_address0 => grp_pointwise_conv2d_fix_4_fu_14547_output_r_address0,
+        output_r_ce0 => grp_pointwise_conv2d_fix_4_fu_14547_output_r_ce0,
+        output_r_we0 => grp_pointwise_conv2d_fix_4_fu_14547_output_r_we0,
+        output_r_d0 => grp_pointwise_conv2d_fix_4_fu_14547_output_r_d0);
 
 
 
@@ -3916,176 +3948,176 @@ begin
     end process;
 
 
-    grp_depthwise_conv2d_fix_1_fu_14468_ap_start_reg_assign_proc : process(ap_clk)
+    grp_depthwise_conv2d_fix_1_fu_14435_ap_start_reg_assign_proc : process(ap_clk)
     begin
         if (ap_clk'event and ap_clk =  '1') then
             if (ap_rst_n_inv = '1') then
-                grp_depthwise_conv2d_fix_1_fu_14468_ap_start_reg <= ap_const_logic_0;
+                grp_depthwise_conv2d_fix_1_fu_14435_ap_start_reg <= ap_const_logic_0;
             else
                 if (((ap_const_logic_1 = ap_CS_fsm_state28) or (ap_const_logic_1 = ap_CS_fsm_state20))) then 
-                    grp_depthwise_conv2d_fix_1_fu_14468_ap_start_reg <= ap_const_logic_1;
-                elsif ((grp_depthwise_conv2d_fix_1_fu_14468_ap_ready = ap_const_logic_1)) then 
-                    grp_depthwise_conv2d_fix_1_fu_14468_ap_start_reg <= ap_const_logic_0;
+                    grp_depthwise_conv2d_fix_1_fu_14435_ap_start_reg <= ap_const_logic_1;
+                elsif ((grp_depthwise_conv2d_fix_1_fu_14435_ap_ready = ap_const_logic_1)) then 
+                    grp_depthwise_conv2d_fix_1_fu_14435_ap_start_reg <= ap_const_logic_0;
                 end if; 
             end if;
         end if;
     end process;
 
 
-    grp_depthwise_conv2d_fix_2_fu_14423_ap_start_reg_assign_proc : process(ap_clk)
+    grp_depthwise_conv2d_fix_2_fu_14411_ap_start_reg_assign_proc : process(ap_clk)
     begin
         if (ap_clk'event and ap_clk =  '1') then
             if (ap_rst_n_inv = '1') then
-                grp_depthwise_conv2d_fix_2_fu_14423_ap_start_reg <= ap_const_logic_0;
+                grp_depthwise_conv2d_fix_2_fu_14411_ap_start_reg <= ap_const_logic_0;
             else
                 if (((ap_const_logic_1 = ap_CS_fsm_state36) or (ap_const_logic_1 = ap_CS_fsm_state12))) then 
-                    grp_depthwise_conv2d_fix_2_fu_14423_ap_start_reg <= ap_const_logic_1;
-                elsif ((grp_depthwise_conv2d_fix_2_fu_14423_ap_ready = ap_const_logic_1)) then 
-                    grp_depthwise_conv2d_fix_2_fu_14423_ap_start_reg <= ap_const_logic_0;
+                    grp_depthwise_conv2d_fix_2_fu_14411_ap_start_reg <= ap_const_logic_1;
+                elsif ((grp_depthwise_conv2d_fix_2_fu_14411_ap_ready = ap_const_logic_1)) then 
+                    grp_depthwise_conv2d_fix_2_fu_14411_ap_start_reg <= ap_const_logic_0;
                 end if; 
             end if;
         end if;
     end process;
 
 
-    grp_depthwise_conv2d_fix_fu_14502_ap_start_reg_assign_proc : process(ap_clk)
+    grp_depthwise_conv2d_fix_fu_14459_ap_start_reg_assign_proc : process(ap_clk)
     begin
         if (ap_clk'event and ap_clk =  '1') then
             if (ap_rst_n_inv = '1') then
-                grp_depthwise_conv2d_fix_fu_14502_ap_start_reg <= ap_const_logic_0;
+                grp_depthwise_conv2d_fix_fu_14459_ap_start_reg <= ap_const_logic_0;
             else
                 if ((ap_const_logic_1 = ap_CS_fsm_state4)) then 
-                    grp_depthwise_conv2d_fix_fu_14502_ap_start_reg <= ap_const_logic_1;
-                elsif ((grp_depthwise_conv2d_fix_fu_14502_ap_ready = ap_const_logic_1)) then 
-                    grp_depthwise_conv2d_fix_fu_14502_ap_start_reg <= ap_const_logic_0;
+                    grp_depthwise_conv2d_fix_fu_14459_ap_start_reg <= ap_const_logic_1;
+                elsif ((grp_depthwise_conv2d_fix_fu_14459_ap_ready = ap_const_logic_1)) then 
+                    grp_depthwise_conv2d_fix_fu_14459_ap_start_reg <= ap_const_logic_0;
                 end if; 
             end if;
         end if;
     end process;
 
 
-    grp_max_pooling2d_fix16_fu_14447_ap_start_reg_assign_proc : process(ap_clk)
+    grp_max_pooling2d_fix16_fu_14516_ap_start_reg_assign_proc : process(ap_clk)
     begin
         if (ap_clk'event and ap_clk =  '1') then
             if (ap_rst_n_inv = '1') then
-                grp_max_pooling2d_fix16_fu_14447_ap_start_reg <= ap_const_logic_0;
+                grp_max_pooling2d_fix16_fu_14516_ap_start_reg <= ap_const_logic_0;
             else
                 if (((ap_const_logic_1 = ap_CS_fsm_state16) or (ap_const_logic_1 = ap_CS_fsm_state8))) then 
-                    grp_max_pooling2d_fix16_fu_14447_ap_start_reg <= ap_const_logic_1;
-                elsif ((grp_max_pooling2d_fix16_fu_14447_ap_ready = ap_const_logic_1)) then 
-                    grp_max_pooling2d_fix16_fu_14447_ap_start_reg <= ap_const_logic_0;
+                    grp_max_pooling2d_fix16_fu_14516_ap_start_reg <= ap_const_logic_1;
+                elsif ((grp_max_pooling2d_fix16_fu_14516_ap_ready = ap_const_logic_1)) then 
+                    grp_max_pooling2d_fix16_fu_14516_ap_start_reg <= ap_const_logic_0;
                 end if; 
             end if;
         end if;
     end process;
 
 
-    grp_padding2d_fix16_fu_14535_ap_start_reg_assign_proc : process(ap_clk)
+    grp_padding2d_fix16_fu_14393_ap_start_reg_assign_proc : process(ap_clk)
     begin
         if (ap_clk'event and ap_clk =  '1') then
             if (ap_rst_n_inv = '1') then
-                grp_padding2d_fix16_fu_14535_ap_start_reg <= ap_const_logic_0;
+                grp_padding2d_fix16_fu_14393_ap_start_reg <= ap_const_logic_0;
             else
                 if (((ap_const_logic_1 = ap_CS_fsm_state34) or (ap_const_logic_1 = ap_CS_fsm_state26) or (ap_const_logic_1 = ap_CS_fsm_state18) or (ap_const_logic_1 = ap_CS_fsm_state10) or (not(((exitcond_fu_14563_p2 = ap_const_lv1_0) and (input_data_V_data_V_0_vld_out = ap_const_logic_0))) and (exitcond_fu_14563_p2 = ap_const_lv1_1) and (ap_const_logic_1 = ap_CS_fsm_state2)))) then 
-                    grp_padding2d_fix16_fu_14535_ap_start_reg <= ap_const_logic_1;
-                elsif ((grp_padding2d_fix16_fu_14535_ap_ready = ap_const_logic_1)) then 
-                    grp_padding2d_fix16_fu_14535_ap_start_reg <= ap_const_logic_0;
+                    grp_padding2d_fix16_fu_14393_ap_start_reg <= ap_const_logic_1;
+                elsif ((grp_padding2d_fix16_fu_14393_ap_ready = ap_const_logic_1)) then 
+                    grp_padding2d_fix16_fu_14393_ap_start_reg <= ap_const_logic_0;
                 end if; 
             end if;
         end if;
     end process;
 
 
-    grp_pointwise_conv2d_fix_1_fu_14492_ap_start_reg_assign_proc : process(ap_clk)
+    grp_pointwise_conv2d_fix_1_fu_14537_ap_start_reg_assign_proc : process(ap_clk)
     begin
         if (ap_clk'event and ap_clk =  '1') then
             if (ap_rst_n_inv = '1') then
-                grp_pointwise_conv2d_fix_1_fu_14492_ap_start_reg <= ap_const_logic_0;
+                grp_pointwise_conv2d_fix_1_fu_14537_ap_start_reg <= ap_const_logic_0;
             else
                 if ((ap_const_logic_1 = ap_CS_fsm_state14)) then 
-                    grp_pointwise_conv2d_fix_1_fu_14492_ap_start_reg <= ap_const_logic_1;
-                elsif ((grp_pointwise_conv2d_fix_1_fu_14492_ap_ready = ap_const_logic_1)) then 
-                    grp_pointwise_conv2d_fix_1_fu_14492_ap_start_reg <= ap_const_logic_0;
+                    grp_pointwise_conv2d_fix_1_fu_14537_ap_start_reg <= ap_const_logic_1;
+                elsif ((grp_pointwise_conv2d_fix_1_fu_14537_ap_ready = ap_const_logic_1)) then 
+                    grp_pointwise_conv2d_fix_1_fu_14537_ap_start_reg <= ap_const_logic_0;
                 end if; 
             end if;
         end if;
     end process;
 
 
-    grp_pointwise_conv2d_fix_2_fu_14413_ap_start_reg_assign_proc : process(ap_clk)
+    grp_pointwise_conv2d_fix_2_fu_14485_ap_start_reg_assign_proc : process(ap_clk)
     begin
         if (ap_clk'event and ap_clk =  '1') then
             if (ap_rst_n_inv = '1') then
-                grp_pointwise_conv2d_fix_2_fu_14413_ap_start_reg <= ap_const_logic_0;
+                grp_pointwise_conv2d_fix_2_fu_14485_ap_start_reg <= ap_const_logic_0;
             else
                 if ((ap_const_logic_1 = ap_CS_fsm_state22)) then 
-                    grp_pointwise_conv2d_fix_2_fu_14413_ap_start_reg <= ap_const_logic_1;
-                elsif ((grp_pointwise_conv2d_fix_2_fu_14413_ap_ready = ap_const_logic_1)) then 
-                    grp_pointwise_conv2d_fix_2_fu_14413_ap_start_reg <= ap_const_logic_0;
+                    grp_pointwise_conv2d_fix_2_fu_14485_ap_start_reg <= ap_const_logic_1;
+                elsif ((grp_pointwise_conv2d_fix_2_fu_14485_ap_ready = ap_const_logic_1)) then 
+                    grp_pointwise_conv2d_fix_2_fu_14485_ap_start_reg <= ap_const_logic_0;
                 end if; 
             end if;
         end if;
     end process;
 
 
-    grp_pointwise_conv2d_fix_3_fu_14403_ap_start_reg_assign_proc : process(ap_clk)
+    grp_pointwise_conv2d_fix_3_fu_14475_ap_start_reg_assign_proc : process(ap_clk)
     begin
         if (ap_clk'event and ap_clk =  '1') then
             if (ap_rst_n_inv = '1') then
-                grp_pointwise_conv2d_fix_3_fu_14403_ap_start_reg <= ap_const_logic_0;
+                grp_pointwise_conv2d_fix_3_fu_14475_ap_start_reg <= ap_const_logic_0;
             else
                 if ((ap_const_logic_1 = ap_CS_fsm_state30)) then 
-                    grp_pointwise_conv2d_fix_3_fu_14403_ap_start_reg <= ap_const_logic_1;
-                elsif ((grp_pointwise_conv2d_fix_3_fu_14403_ap_ready = ap_const_logic_1)) then 
-                    grp_pointwise_conv2d_fix_3_fu_14403_ap_start_reg <= ap_const_logic_0;
+                    grp_pointwise_conv2d_fix_3_fu_14475_ap_start_reg <= ap_const_logic_1;
+                elsif ((grp_pointwise_conv2d_fix_3_fu_14475_ap_ready = ap_const_logic_1)) then 
+                    grp_pointwise_conv2d_fix_3_fu_14475_ap_start_reg <= ap_const_logic_0;
                 end if; 
             end if;
         end if;
     end process;
 
 
-    grp_pointwise_conv2d_fix_4_fu_14508_ap_start_reg_assign_proc : process(ap_clk)
+    grp_pointwise_conv2d_fix_4_fu_14547_ap_start_reg_assign_proc : process(ap_clk)
     begin
         if (ap_clk'event and ap_clk =  '1') then
             if (ap_rst_n_inv = '1') then
-                grp_pointwise_conv2d_fix_4_fu_14508_ap_start_reg <= ap_const_logic_0;
+                grp_pointwise_conv2d_fix_4_fu_14547_ap_start_reg <= ap_const_logic_0;
             else
                 if ((ap_const_logic_1 = ap_CS_fsm_state38)) then 
-                    grp_pointwise_conv2d_fix_4_fu_14508_ap_start_reg <= ap_const_logic_1;
-                elsif ((grp_pointwise_conv2d_fix_4_fu_14508_ap_ready = ap_const_logic_1)) then 
-                    grp_pointwise_conv2d_fix_4_fu_14508_ap_start_reg <= ap_const_logic_0;
+                    grp_pointwise_conv2d_fix_4_fu_14547_ap_start_reg <= ap_const_logic_1;
+                elsif ((grp_pointwise_conv2d_fix_4_fu_14547_ap_ready = ap_const_logic_1)) then 
+                    grp_pointwise_conv2d_fix_4_fu_14547_ap_start_reg <= ap_const_logic_0;
                 end if; 
             end if;
         end if;
     end process;
 
 
-    grp_pointwise_conv2d_fix_fu_14393_ap_start_reg_assign_proc : process(ap_clk)
+    grp_pointwise_conv2d_fix_fu_14465_ap_start_reg_assign_proc : process(ap_clk)
     begin
         if (ap_clk'event and ap_clk =  '1') then
             if (ap_rst_n_inv = '1') then
-                grp_pointwise_conv2d_fix_fu_14393_ap_start_reg <= ap_const_logic_0;
+                grp_pointwise_conv2d_fix_fu_14465_ap_start_reg <= ap_const_logic_0;
             else
                 if ((ap_const_logic_1 = ap_CS_fsm_state6)) then 
-                    grp_pointwise_conv2d_fix_fu_14393_ap_start_reg <= ap_const_logic_1;
-                elsif ((grp_pointwise_conv2d_fix_fu_14393_ap_ready = ap_const_logic_1)) then 
-                    grp_pointwise_conv2d_fix_fu_14393_ap_start_reg <= ap_const_logic_0;
+                    grp_pointwise_conv2d_fix_fu_14465_ap_start_reg <= ap_const_logic_1;
+                elsif ((grp_pointwise_conv2d_fix_fu_14465_ap_ready = ap_const_logic_1)) then 
+                    grp_pointwise_conv2d_fix_fu_14465_ap_start_reg <= ap_const_logic_0;
                 end if; 
             end if;
         end if;
     end process;
 
 
-    grp_up_sampling2d_fix16_fu_14514_ap_start_reg_assign_proc : process(ap_clk)
+    grp_up_sampling2d_fix16_fu_14495_ap_start_reg_assign_proc : process(ap_clk)
     begin
         if (ap_clk'event and ap_clk =  '1') then
             if (ap_rst_n_inv = '1') then
-                grp_up_sampling2d_fix16_fu_14514_ap_start_reg <= ap_const_logic_0;
+                grp_up_sampling2d_fix16_fu_14495_ap_start_reg <= ap_const_logic_0;
             else
                 if (((ap_const_logic_1 = ap_CS_fsm_state32) or (ap_const_logic_1 = ap_CS_fsm_state24))) then 
-                    grp_up_sampling2d_fix16_fu_14514_ap_start_reg <= ap_const_logic_1;
-                elsif ((grp_up_sampling2d_fix16_fu_14514_ap_ready = ap_const_logic_1)) then 
-                    grp_up_sampling2d_fix16_fu_14514_ap_start_reg <= ap_const_logic_0;
+                    grp_up_sampling2d_fix16_fu_14495_ap_start_reg <= ap_const_logic_1;
+                elsif ((grp_up_sampling2d_fix16_fu_14495_ap_ready = ap_const_logic_1)) then 
+                    grp_up_sampling2d_fix16_fu_14495_ap_start_reg <= ap_const_logic_0;
                 end if; 
             end if;
         end if;
@@ -4445,7 +4477,7 @@ begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_logic_1 = ap_CS_fsm_state433)) then 
                 i2_reg_14382 <= ap_const_lv10_0;
-            elsif (((ap_const_boolean_0 = ap_block_pp0_stage0_11001) and (tmp_49_fu_14585_p2 = ap_const_lv1_0) and (ap_enable_reg_pp0_iter0 = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage0))) then 
+            elsif (((ap_const_boolean_0 = ap_block_pp0_stage0_11001) and (tmp_38_fu_14585_p2 = ap_const_lv1_0) and (ap_enable_reg_pp0_iter0 = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage0))) then 
                 i2_reg_14382 <= i_2_fu_14591_p2;
             end if; 
         end if;
@@ -4538,22 +4570,22 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if (((ap_const_boolean_0 = ap_block_pp0_stage0_11001) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage0))) then
-                tmp_49_reg_18542 <= tmp_49_fu_14585_p2;
-                tmp_49_reg_18542_pp0_iter1_reg <= tmp_49_reg_18542;
+                tmp_38_reg_18542 <= tmp_38_fu_14585_p2;
+                tmp_38_reg_18542_pp0_iter1_reg <= tmp_38_reg_18542;
             end if;
         end if;
     end process;
     process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
-            if (((ap_const_boolean_0 = ap_block_pp0_stage0_11001) and (tmp_49_fu_14585_p2 = ap_const_lv1_0) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage0))) then
+            if (((ap_const_boolean_0 = ap_block_pp0_stage0_11001) and (tmp_38_fu_14585_p2 = ap_const_lv1_0) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage0))) then
                 tmp_last_V_reg_18556 <= tmp_last_V_fu_14608_p2;
                 tmp_user_V_reg_18551 <= tmp_user_V_fu_14602_p2;
             end if;
         end if;
     end process;
 
-    ap_NS_fsm_assign_proc : process (ap_start, ap_CS_fsm, ap_CS_fsm_state1, input_data_V_data_V_0_vld_out, output_data_V_data_V_1_ack_in, output_data_V_data_V_1_state, output_data_V_keep_V_1_ack_in, output_data_V_keep_V_1_state, output_data_V_strb_V_1_ack_in, output_data_V_strb_V_1_state, output_data_V_user_V_1_ack_in, output_data_V_user_V_1_state, output_data_V_last_V_1_ack_in, output_data_V_last_V_1_state, output_data_V_id_V_1_ack_in, output_data_V_id_V_1_state, output_data_V_dest_V_1_ack_in, output_data_V_dest_V_1_state, ap_CS_fsm_state2, exitcond_fu_14563_p2, ap_enable_reg_pp0_iter1, ap_enable_reg_pp0_iter2, tmp_49_fu_14585_p2, ap_enable_reg_pp0_iter0, ap_block_pp0_stage0_subdone, grp_pointwise_conv2d_fix_fu_14393_ap_done, grp_pointwise_conv2d_fix_3_fu_14403_ap_done, grp_pointwise_conv2d_fix_2_fu_14413_ap_done, grp_depthwise_conv2d_fix_2_fu_14423_ap_done, grp_max_pooling2d_fix16_fu_14447_ap_done, grp_depthwise_conv2d_fix_1_fu_14468_ap_done, grp_pointwise_conv2d_fix_1_fu_14492_ap_done, grp_depthwise_conv2d_fix_fu_14502_ap_done, grp_pointwise_conv2d_fix_4_fu_14508_ap_done, grp_up_sampling2d_fix16_fu_14514_ap_done, grp_padding2d_fix16_fu_14535_ap_done, ap_CS_fsm_state7, ap_CS_fsm_state31, ap_CS_fsm_state23, ap_CS_fsm_state13, ap_CS_fsm_state37, ap_CS_fsm_state9, ap_CS_fsm_state17, ap_CS_fsm_state21, ap_CS_fsm_state29, ap_CS_fsm_state15, ap_CS_fsm_state5, ap_CS_fsm_state39, ap_CS_fsm_state25, ap_CS_fsm_state33, ap_CS_fsm_state3, ap_CS_fsm_state11, ap_CS_fsm_state19, ap_CS_fsm_state27, ap_CS_fsm_state35, ap_CS_fsm_state438)
+    ap_NS_fsm_assign_proc : process (ap_start, ap_CS_fsm, ap_CS_fsm_state1, input_data_V_data_V_0_vld_out, output_data_V_data_V_1_ack_in, output_data_V_data_V_1_state, output_data_V_keep_V_1_ack_in, output_data_V_keep_V_1_state, output_data_V_strb_V_1_ack_in, output_data_V_strb_V_1_state, output_data_V_user_V_1_ack_in, output_data_V_user_V_1_state, output_data_V_last_V_1_ack_in, output_data_V_last_V_1_state, output_data_V_id_V_1_ack_in, output_data_V_id_V_1_state, output_data_V_dest_V_1_ack_in, output_data_V_dest_V_1_state, ap_CS_fsm_state2, exitcond_fu_14563_p2, ap_enable_reg_pp0_iter1, ap_enable_reg_pp0_iter2, tmp_38_fu_14585_p2, ap_enable_reg_pp0_iter0, ap_block_pp0_stage0_subdone, grp_padding2d_fix16_fu_14393_ap_done, grp_depthwise_conv2d_fix_2_fu_14411_ap_done, grp_depthwise_conv2d_fix_1_fu_14435_ap_done, grp_depthwise_conv2d_fix_fu_14459_ap_done, grp_pointwise_conv2d_fix_fu_14465_ap_done, grp_pointwise_conv2d_fix_3_fu_14475_ap_done, grp_pointwise_conv2d_fix_2_fu_14485_ap_done, grp_up_sampling2d_fix16_fu_14495_ap_done, grp_max_pooling2d_fix16_fu_14516_ap_done, grp_pointwise_conv2d_fix_1_fu_14537_ap_done, grp_pointwise_conv2d_fix_4_fu_14547_ap_done, ap_CS_fsm_state3, ap_CS_fsm_state11, ap_CS_fsm_state19, ap_CS_fsm_state27, ap_CS_fsm_state35, ap_CS_fsm_state13, ap_CS_fsm_state37, ap_CS_fsm_state21, ap_CS_fsm_state29, ap_CS_fsm_state5, ap_CS_fsm_state7, ap_CS_fsm_state31, ap_CS_fsm_state23, ap_CS_fsm_state25, ap_CS_fsm_state33, ap_CS_fsm_state9, ap_CS_fsm_state17, ap_CS_fsm_state15, ap_CS_fsm_state39, ap_CS_fsm_state438)
     begin
         case ap_CS_fsm is
             when ap_ST_fsm_state1 => 
@@ -4571,7 +4603,7 @@ begin
                     ap_NS_fsm <= ap_ST_fsm_state2;
                 end if;
             when ap_ST_fsm_state3 => 
-                if (((grp_padding2d_fix16_fu_14535_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state3))) then
+                if (((grp_padding2d_fix16_fu_14393_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state3))) then
                     ap_NS_fsm <= ap_ST_fsm_state4;
                 else
                     ap_NS_fsm <= ap_ST_fsm_state3;
@@ -4579,7 +4611,7 @@ begin
             when ap_ST_fsm_state4 => 
                 ap_NS_fsm <= ap_ST_fsm_state5;
             when ap_ST_fsm_state5 => 
-                if (((grp_depthwise_conv2d_fix_fu_14502_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state5))) then
+                if (((grp_depthwise_conv2d_fix_fu_14459_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state5))) then
                     ap_NS_fsm <= ap_ST_fsm_state6;
                 else
                     ap_NS_fsm <= ap_ST_fsm_state5;
@@ -4587,7 +4619,7 @@ begin
             when ap_ST_fsm_state6 => 
                 ap_NS_fsm <= ap_ST_fsm_state7;
             when ap_ST_fsm_state7 => 
-                if (((grp_pointwise_conv2d_fix_fu_14393_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state7))) then
+                if (((grp_pointwise_conv2d_fix_fu_14465_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state7))) then
                     ap_NS_fsm <= ap_ST_fsm_state8;
                 else
                     ap_NS_fsm <= ap_ST_fsm_state7;
@@ -4595,7 +4627,7 @@ begin
             when ap_ST_fsm_state8 => 
                 ap_NS_fsm <= ap_ST_fsm_state9;
             when ap_ST_fsm_state9 => 
-                if (((grp_max_pooling2d_fix16_fu_14447_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state9))) then
+                if (((grp_max_pooling2d_fix16_fu_14516_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state9))) then
                     ap_NS_fsm <= ap_ST_fsm_state10;
                 else
                     ap_NS_fsm <= ap_ST_fsm_state9;
@@ -4603,7 +4635,7 @@ begin
             when ap_ST_fsm_state10 => 
                 ap_NS_fsm <= ap_ST_fsm_state11;
             when ap_ST_fsm_state11 => 
-                if (((grp_padding2d_fix16_fu_14535_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state11))) then
+                if (((grp_padding2d_fix16_fu_14393_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state11))) then
                     ap_NS_fsm <= ap_ST_fsm_state12;
                 else
                     ap_NS_fsm <= ap_ST_fsm_state11;
@@ -4611,7 +4643,7 @@ begin
             when ap_ST_fsm_state12 => 
                 ap_NS_fsm <= ap_ST_fsm_state13;
             when ap_ST_fsm_state13 => 
-                if (((grp_depthwise_conv2d_fix_2_fu_14423_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state13))) then
+                if (((grp_depthwise_conv2d_fix_2_fu_14411_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state13))) then
                     ap_NS_fsm <= ap_ST_fsm_state14;
                 else
                     ap_NS_fsm <= ap_ST_fsm_state13;
@@ -4619,7 +4651,7 @@ begin
             when ap_ST_fsm_state14 => 
                 ap_NS_fsm <= ap_ST_fsm_state15;
             when ap_ST_fsm_state15 => 
-                if (((grp_pointwise_conv2d_fix_1_fu_14492_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state15))) then
+                if (((grp_pointwise_conv2d_fix_1_fu_14537_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state15))) then
                     ap_NS_fsm <= ap_ST_fsm_state16;
                 else
                     ap_NS_fsm <= ap_ST_fsm_state15;
@@ -4627,7 +4659,7 @@ begin
             when ap_ST_fsm_state16 => 
                 ap_NS_fsm <= ap_ST_fsm_state17;
             when ap_ST_fsm_state17 => 
-                if (((grp_max_pooling2d_fix16_fu_14447_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state17))) then
+                if (((grp_max_pooling2d_fix16_fu_14516_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state17))) then
                     ap_NS_fsm <= ap_ST_fsm_state18;
                 else
                     ap_NS_fsm <= ap_ST_fsm_state17;
@@ -4635,7 +4667,7 @@ begin
             when ap_ST_fsm_state18 => 
                 ap_NS_fsm <= ap_ST_fsm_state19;
             when ap_ST_fsm_state19 => 
-                if (((grp_padding2d_fix16_fu_14535_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state19))) then
+                if (((grp_padding2d_fix16_fu_14393_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state19))) then
                     ap_NS_fsm <= ap_ST_fsm_state20;
                 else
                     ap_NS_fsm <= ap_ST_fsm_state19;
@@ -4643,7 +4675,7 @@ begin
             when ap_ST_fsm_state20 => 
                 ap_NS_fsm <= ap_ST_fsm_state21;
             when ap_ST_fsm_state21 => 
-                if (((grp_depthwise_conv2d_fix_1_fu_14468_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state21))) then
+                if (((grp_depthwise_conv2d_fix_1_fu_14435_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state21))) then
                     ap_NS_fsm <= ap_ST_fsm_state22;
                 else
                     ap_NS_fsm <= ap_ST_fsm_state21;
@@ -4651,7 +4683,7 @@ begin
             when ap_ST_fsm_state22 => 
                 ap_NS_fsm <= ap_ST_fsm_state23;
             when ap_ST_fsm_state23 => 
-                if (((grp_pointwise_conv2d_fix_2_fu_14413_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state23))) then
+                if (((grp_pointwise_conv2d_fix_2_fu_14485_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state23))) then
                     ap_NS_fsm <= ap_ST_fsm_state24;
                 else
                     ap_NS_fsm <= ap_ST_fsm_state23;
@@ -4659,7 +4691,7 @@ begin
             when ap_ST_fsm_state24 => 
                 ap_NS_fsm <= ap_ST_fsm_state25;
             when ap_ST_fsm_state25 => 
-                if (((grp_up_sampling2d_fix16_fu_14514_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state25))) then
+                if (((grp_up_sampling2d_fix16_fu_14495_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state25))) then
                     ap_NS_fsm <= ap_ST_fsm_state26;
                 else
                     ap_NS_fsm <= ap_ST_fsm_state25;
@@ -4667,7 +4699,7 @@ begin
             when ap_ST_fsm_state26 => 
                 ap_NS_fsm <= ap_ST_fsm_state27;
             when ap_ST_fsm_state27 => 
-                if (((grp_padding2d_fix16_fu_14535_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state27))) then
+                if (((grp_padding2d_fix16_fu_14393_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state27))) then
                     ap_NS_fsm <= ap_ST_fsm_state28;
                 else
                     ap_NS_fsm <= ap_ST_fsm_state27;
@@ -4675,7 +4707,7 @@ begin
             when ap_ST_fsm_state28 => 
                 ap_NS_fsm <= ap_ST_fsm_state29;
             when ap_ST_fsm_state29 => 
-                if (((grp_depthwise_conv2d_fix_1_fu_14468_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state29))) then
+                if (((grp_depthwise_conv2d_fix_1_fu_14435_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state29))) then
                     ap_NS_fsm <= ap_ST_fsm_state30;
                 else
                     ap_NS_fsm <= ap_ST_fsm_state29;
@@ -4683,7 +4715,7 @@ begin
             when ap_ST_fsm_state30 => 
                 ap_NS_fsm <= ap_ST_fsm_state31;
             when ap_ST_fsm_state31 => 
-                if (((grp_pointwise_conv2d_fix_3_fu_14403_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state31))) then
+                if (((grp_pointwise_conv2d_fix_3_fu_14475_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state31))) then
                     ap_NS_fsm <= ap_ST_fsm_state32;
                 else
                     ap_NS_fsm <= ap_ST_fsm_state31;
@@ -4691,7 +4723,7 @@ begin
             when ap_ST_fsm_state32 => 
                 ap_NS_fsm <= ap_ST_fsm_state33;
             when ap_ST_fsm_state33 => 
-                if (((grp_up_sampling2d_fix16_fu_14514_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state33))) then
+                if (((grp_up_sampling2d_fix16_fu_14495_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state33))) then
                     ap_NS_fsm <= ap_ST_fsm_state34;
                 else
                     ap_NS_fsm <= ap_ST_fsm_state33;
@@ -4699,7 +4731,7 @@ begin
             when ap_ST_fsm_state34 => 
                 ap_NS_fsm <= ap_ST_fsm_state35;
             when ap_ST_fsm_state35 => 
-                if (((grp_padding2d_fix16_fu_14535_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state35))) then
+                if (((grp_padding2d_fix16_fu_14393_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state35))) then
                     ap_NS_fsm <= ap_ST_fsm_state36;
                 else
                     ap_NS_fsm <= ap_ST_fsm_state35;
@@ -4707,7 +4739,7 @@ begin
             when ap_ST_fsm_state36 => 
                 ap_NS_fsm <= ap_ST_fsm_state37;
             when ap_ST_fsm_state37 => 
-                if (((grp_depthwise_conv2d_fix_2_fu_14423_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state37))) then
+                if (((grp_depthwise_conv2d_fix_2_fu_14411_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state37))) then
                     ap_NS_fsm <= ap_ST_fsm_state38;
                 else
                     ap_NS_fsm <= ap_ST_fsm_state37;
@@ -4715,7 +4747,7 @@ begin
             when ap_ST_fsm_state38 => 
                 ap_NS_fsm <= ap_ST_fsm_state39;
             when ap_ST_fsm_state39 => 
-                if (((grp_pointwise_conv2d_fix_4_fu_14508_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state39))) then
+                if (((grp_pointwise_conv2d_fix_4_fu_14547_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state39))) then
                     ap_NS_fsm <= ap_ST_fsm_state40;
                 else
                     ap_NS_fsm <= ap_ST_fsm_state39;
@@ -5509,9 +5541,9 @@ begin
             when ap_ST_fsm_state433 => 
                 ap_NS_fsm <= ap_ST_fsm_pp0_stage0;
             when ap_ST_fsm_pp0_stage0 => 
-                if ((not(((ap_const_boolean_0 = ap_block_pp0_stage0_subdone) and (tmp_49_fu_14585_p2 = ap_const_lv1_1) and (ap_enable_reg_pp0_iter0 = ap_const_logic_1) and (ap_enable_reg_pp0_iter1 = ap_const_logic_0))) and not(((ap_const_boolean_0 = ap_block_pp0_stage0_subdone) and (ap_enable_reg_pp0_iter2 = ap_const_logic_1) and (ap_enable_reg_pp0_iter1 = ap_const_logic_0))))) then
+                if ((not(((ap_const_boolean_0 = ap_block_pp0_stage0_subdone) and (tmp_38_fu_14585_p2 = ap_const_lv1_1) and (ap_enable_reg_pp0_iter0 = ap_const_logic_1) and (ap_enable_reg_pp0_iter1 = ap_const_logic_0))) and not(((ap_const_boolean_0 = ap_block_pp0_stage0_subdone) and (ap_enable_reg_pp0_iter2 = ap_const_logic_1) and (ap_enable_reg_pp0_iter1 = ap_const_logic_0))))) then
                     ap_NS_fsm <= ap_ST_fsm_pp0_stage0;
-                elsif ((((ap_const_boolean_0 = ap_block_pp0_stage0_subdone) and (tmp_49_fu_14585_p2 = ap_const_lv1_1) and (ap_enable_reg_pp0_iter0 = ap_const_logic_1) and (ap_enable_reg_pp0_iter1 = ap_const_logic_0)) or ((ap_const_boolean_0 = ap_block_pp0_stage0_subdone) and (ap_enable_reg_pp0_iter2 = ap_const_logic_1) and (ap_enable_reg_pp0_iter1 = ap_const_logic_0)))) then
+                elsif ((((ap_const_boolean_0 = ap_block_pp0_stage0_subdone) and (tmp_38_fu_14585_p2 = ap_const_lv1_1) and (ap_enable_reg_pp0_iter0 = ap_const_logic_1) and (ap_enable_reg_pp0_iter1 = ap_const_logic_0)) or ((ap_const_boolean_0 = ap_block_pp0_stage0_subdone) and (ap_enable_reg_pp0_iter2 = ap_const_logic_1) and (ap_enable_reg_pp0_iter1 = ap_const_logic_0)))) then
                     ap_NS_fsm <= ap_ST_fsm_state437;
                 else
                     ap_NS_fsm <= ap_ST_fsm_pp0_stage0;
@@ -5529,147 +5561,161 @@ begin
         end case;
     end process;
 
-    MemBank_A_address0_assign_proc : process(ap_CS_fsm_state2, exitcond_fu_14563_p2, grp_pointwise_conv2d_fix_fu_14393_input_r_address0, grp_pointwise_conv2d_fix_3_fu_14403_input_r_address0, grp_pointwise_conv2d_fix_2_fu_14413_input_r_address0, grp_depthwise_conv2d_fix_2_fu_14423_output_r_address0, grp_max_pooling2d_fix16_fu_14447_output_r_address0, grp_depthwise_conv2d_fix_1_fu_14468_output_r_address0, grp_pointwise_conv2d_fix_1_fu_14492_input_r_address0, grp_depthwise_conv2d_fix_fu_14502_output_r_address0, grp_pointwise_conv2d_fix_4_fu_14508_input_r_address0, grp_up_sampling2d_fix16_fu_14514_output_r_address0, grp_padding2d_fix16_fu_14535_input_r_address0, ap_CS_fsm_state7, ap_CS_fsm_state31, ap_CS_fsm_state23, ap_CS_fsm_state13, ap_CS_fsm_state37, ap_CS_fsm_state9, ap_CS_fsm_state17, ap_CS_fsm_state21, ap_CS_fsm_state29, ap_CS_fsm_state15, ap_CS_fsm_state5, ap_CS_fsm_state39, ap_CS_fsm_state25, ap_CS_fsm_state33, ap_CS_fsm_state3, ap_CS_fsm_state11, ap_CS_fsm_state19, ap_CS_fsm_state27, ap_CS_fsm_state35, tmp_s_fu_14580_p1)
+    MemBank_A_address0_assign_proc : process(ap_CS_fsm_state2, exitcond_fu_14563_p2, grp_padding2d_fix16_fu_14393_input_r_address0, grp_depthwise_conv2d_fix_2_fu_14411_output_r_address0, grp_depthwise_conv2d_fix_1_fu_14435_output_r_address0, grp_depthwise_conv2d_fix_fu_14459_output_r_address0, grp_pointwise_conv2d_fix_fu_14465_input_r_address0, grp_pointwise_conv2d_fix_3_fu_14475_input_r_address0, grp_pointwise_conv2d_fix_2_fu_14485_input_r_address0, grp_up_sampling2d_fix16_fu_14495_output_r_address0, grp_max_pooling2d_fix16_fu_14516_output_r_address0, grp_pointwise_conv2d_fix_1_fu_14537_input_r_address0, grp_pointwise_conv2d_fix_4_fu_14547_input_r_address0, ap_CS_fsm_state3, ap_CS_fsm_state11, ap_CS_fsm_state19, ap_CS_fsm_state27, ap_CS_fsm_state35, ap_CS_fsm_state13, ap_CS_fsm_state37, ap_CS_fsm_state21, ap_CS_fsm_state29, ap_CS_fsm_state5, ap_CS_fsm_state7, ap_CS_fsm_state31, ap_CS_fsm_state23, ap_CS_fsm_state25, ap_CS_fsm_state33, ap_CS_fsm_state9, ap_CS_fsm_state17, ap_CS_fsm_state15, ap_CS_fsm_state39, tmp_s_fu_14580_p1)
     begin
         if (((exitcond_fu_14563_p2 = ap_const_lv1_0) and (ap_const_logic_1 = ap_CS_fsm_state2))) then 
             MemBank_A_address0 <= tmp_s_fu_14580_p1(14 - 1 downto 0);
-        elsif (((ap_const_logic_1 = ap_CS_fsm_state35) or (ap_const_logic_1 = ap_CS_fsm_state27) or (ap_const_logic_1 = ap_CS_fsm_state19) or (ap_const_logic_1 = ap_CS_fsm_state11) or (ap_const_logic_1 = ap_CS_fsm_state3))) then 
-            MemBank_A_address0 <= grp_padding2d_fix16_fu_14535_input_r_address0;
-        elsif (((ap_const_logic_1 = ap_CS_fsm_state33) or (ap_const_logic_1 = ap_CS_fsm_state25))) then 
-            MemBank_A_address0 <= grp_up_sampling2d_fix16_fu_14514_output_r_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state39)) then 
-            MemBank_A_address0 <= grp_pointwise_conv2d_fix_4_fu_14508_input_r_address0;
-        elsif ((ap_const_logic_1 = ap_CS_fsm_state5)) then 
-            MemBank_A_address0 <= grp_depthwise_conv2d_fix_fu_14502_output_r_address0;
+            MemBank_A_address0 <= grp_pointwise_conv2d_fix_4_fu_14547_input_r_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state15)) then 
-            MemBank_A_address0 <= grp_pointwise_conv2d_fix_1_fu_14492_input_r_address0;
-        elsif (((ap_const_logic_1 = ap_CS_fsm_state29) or (ap_const_logic_1 = ap_CS_fsm_state21))) then 
-            MemBank_A_address0 <= grp_depthwise_conv2d_fix_1_fu_14468_output_r_address0;
+            MemBank_A_address0 <= grp_pointwise_conv2d_fix_1_fu_14537_input_r_address0;
         elsif (((ap_const_logic_1 = ap_CS_fsm_state17) or (ap_const_logic_1 = ap_CS_fsm_state9))) then 
-            MemBank_A_address0 <= grp_max_pooling2d_fix16_fu_14447_output_r_address0;
-        elsif (((ap_const_logic_1 = ap_CS_fsm_state37) or (ap_const_logic_1 = ap_CS_fsm_state13))) then 
-            MemBank_A_address0 <= grp_depthwise_conv2d_fix_2_fu_14423_output_r_address0;
+            MemBank_A_address0 <= grp_max_pooling2d_fix16_fu_14516_output_r_address0;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state33) or (ap_const_logic_1 = ap_CS_fsm_state25))) then 
+            MemBank_A_address0 <= grp_up_sampling2d_fix16_fu_14495_output_r_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state23)) then 
-            MemBank_A_address0 <= grp_pointwise_conv2d_fix_2_fu_14413_input_r_address0;
+            MemBank_A_address0 <= grp_pointwise_conv2d_fix_2_fu_14485_input_r_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            MemBank_A_address0 <= grp_pointwise_conv2d_fix_3_fu_14403_input_r_address0;
+            MemBank_A_address0 <= grp_pointwise_conv2d_fix_3_fu_14475_input_r_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state7)) then 
-            MemBank_A_address0 <= grp_pointwise_conv2d_fix_fu_14393_input_r_address0;
+            MemBank_A_address0 <= grp_pointwise_conv2d_fix_fu_14465_input_r_address0;
+        elsif ((ap_const_logic_1 = ap_CS_fsm_state5)) then 
+            MemBank_A_address0 <= grp_depthwise_conv2d_fix_fu_14459_output_r_address0;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state29) or (ap_const_logic_1 = ap_CS_fsm_state21))) then 
+            MemBank_A_address0 <= grp_depthwise_conv2d_fix_1_fu_14435_output_r_address0;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state37) or (ap_const_logic_1 = ap_CS_fsm_state13))) then 
+            MemBank_A_address0 <= grp_depthwise_conv2d_fix_2_fu_14411_output_r_address0;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state35) or (ap_const_logic_1 = ap_CS_fsm_state27) or (ap_const_logic_1 = ap_CS_fsm_state19) or (ap_const_logic_1 = ap_CS_fsm_state11) or (ap_const_logic_1 = ap_CS_fsm_state3))) then 
+            MemBank_A_address0 <= grp_padding2d_fix16_fu_14393_input_r_address0;
         else 
             MemBank_A_address0 <= "XXXXXXXXXXXXXX";
         end if; 
     end process;
 
 
-    MemBank_A_address1_assign_proc : process(grp_pointwise_conv2d_fix_fu_14393_input_r_address1, grp_pointwise_conv2d_fix_3_fu_14403_input_r_address1, grp_pointwise_conv2d_fix_2_fu_14413_input_r_address1, grp_pointwise_conv2d_fix_1_fu_14492_input_r_address1, grp_pointwise_conv2d_fix_4_fu_14508_input_r_address1, ap_CS_fsm_state7, ap_CS_fsm_state31, ap_CS_fsm_state23, ap_CS_fsm_state15, ap_CS_fsm_state39)
+    MemBank_A_address1_assign_proc : process(grp_depthwise_conv2d_fix_fu_14459_output_r_address1, grp_pointwise_conv2d_fix_fu_14465_input_r_address1, grp_pointwise_conv2d_fix_3_fu_14475_input_r_address1, grp_pointwise_conv2d_fix_2_fu_14485_input_r_address1, grp_pointwise_conv2d_fix_1_fu_14537_input_r_address1, grp_pointwise_conv2d_fix_4_fu_14547_input_r_address1, ap_CS_fsm_state5, ap_CS_fsm_state7, ap_CS_fsm_state31, ap_CS_fsm_state23, ap_CS_fsm_state15, ap_CS_fsm_state39)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state39)) then 
-            MemBank_A_address1 <= grp_pointwise_conv2d_fix_4_fu_14508_input_r_address1;
+            MemBank_A_address1 <= grp_pointwise_conv2d_fix_4_fu_14547_input_r_address1;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state15)) then 
-            MemBank_A_address1 <= grp_pointwise_conv2d_fix_1_fu_14492_input_r_address1;
+            MemBank_A_address1 <= grp_pointwise_conv2d_fix_1_fu_14537_input_r_address1;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state23)) then 
-            MemBank_A_address1 <= grp_pointwise_conv2d_fix_2_fu_14413_input_r_address1;
+            MemBank_A_address1 <= grp_pointwise_conv2d_fix_2_fu_14485_input_r_address1;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            MemBank_A_address1 <= grp_pointwise_conv2d_fix_3_fu_14403_input_r_address1;
+            MemBank_A_address1 <= grp_pointwise_conv2d_fix_3_fu_14475_input_r_address1;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state7)) then 
-            MemBank_A_address1 <= grp_pointwise_conv2d_fix_fu_14393_input_r_address1;
+            MemBank_A_address1 <= grp_pointwise_conv2d_fix_fu_14465_input_r_address1;
+        elsif ((ap_const_logic_1 = ap_CS_fsm_state5)) then 
+            MemBank_A_address1 <= grp_depthwise_conv2d_fix_fu_14459_output_r_address1;
         else 
             MemBank_A_address1 <= "XXXXXXXXXXXXXX";
         end if; 
     end process;
 
 
-    MemBank_A_ce0_assign_proc : process(input_data_V_data_V_0_vld_out, ap_CS_fsm_state2, exitcond_fu_14563_p2, grp_pointwise_conv2d_fix_fu_14393_input_r_ce0, grp_pointwise_conv2d_fix_3_fu_14403_input_r_ce0, grp_pointwise_conv2d_fix_2_fu_14413_input_r_ce0, grp_depthwise_conv2d_fix_2_fu_14423_output_r_ce0, grp_max_pooling2d_fix16_fu_14447_output_r_ce0, grp_depthwise_conv2d_fix_1_fu_14468_output_r_ce0, grp_pointwise_conv2d_fix_1_fu_14492_input_r_ce0, grp_depthwise_conv2d_fix_fu_14502_output_r_ce0, grp_pointwise_conv2d_fix_4_fu_14508_input_r_ce0, grp_up_sampling2d_fix16_fu_14514_output_r_ce0, grp_padding2d_fix16_fu_14535_input_r_ce0, ap_CS_fsm_state7, ap_CS_fsm_state31, ap_CS_fsm_state23, ap_CS_fsm_state13, ap_CS_fsm_state37, ap_CS_fsm_state9, ap_CS_fsm_state17, ap_CS_fsm_state21, ap_CS_fsm_state29, ap_CS_fsm_state15, ap_CS_fsm_state5, ap_CS_fsm_state39, ap_CS_fsm_state25, ap_CS_fsm_state33, ap_CS_fsm_state3, ap_CS_fsm_state11, ap_CS_fsm_state19, ap_CS_fsm_state27, ap_CS_fsm_state35)
+    MemBank_A_ce0_assign_proc : process(input_data_V_data_V_0_vld_out, ap_CS_fsm_state2, exitcond_fu_14563_p2, grp_padding2d_fix16_fu_14393_input_r_ce0, grp_depthwise_conv2d_fix_2_fu_14411_output_r_ce0, grp_depthwise_conv2d_fix_1_fu_14435_output_r_ce0, grp_depthwise_conv2d_fix_fu_14459_output_r_ce0, grp_pointwise_conv2d_fix_fu_14465_input_r_ce0, grp_pointwise_conv2d_fix_3_fu_14475_input_r_ce0, grp_pointwise_conv2d_fix_2_fu_14485_input_r_ce0, grp_up_sampling2d_fix16_fu_14495_output_r_ce0, grp_max_pooling2d_fix16_fu_14516_output_r_ce0, grp_pointwise_conv2d_fix_1_fu_14537_input_r_ce0, grp_pointwise_conv2d_fix_4_fu_14547_input_r_ce0, ap_CS_fsm_state3, ap_CS_fsm_state11, ap_CS_fsm_state19, ap_CS_fsm_state27, ap_CS_fsm_state35, ap_CS_fsm_state13, ap_CS_fsm_state37, ap_CS_fsm_state21, ap_CS_fsm_state29, ap_CS_fsm_state5, ap_CS_fsm_state7, ap_CS_fsm_state31, ap_CS_fsm_state23, ap_CS_fsm_state25, ap_CS_fsm_state33, ap_CS_fsm_state9, ap_CS_fsm_state17, ap_CS_fsm_state15, ap_CS_fsm_state39)
     begin
         if ((not(((exitcond_fu_14563_p2 = ap_const_lv1_0) and (input_data_V_data_V_0_vld_out = ap_const_logic_0))) and (exitcond_fu_14563_p2 = ap_const_lv1_0) and (ap_const_logic_1 = ap_CS_fsm_state2))) then 
             MemBank_A_ce0 <= ap_const_logic_1;
-        elsif (((ap_const_logic_1 = ap_CS_fsm_state35) or (ap_const_logic_1 = ap_CS_fsm_state27) or (ap_const_logic_1 = ap_CS_fsm_state19) or (ap_const_logic_1 = ap_CS_fsm_state11) or (ap_const_logic_1 = ap_CS_fsm_state3))) then 
-            MemBank_A_ce0 <= grp_padding2d_fix16_fu_14535_input_r_ce0;
-        elsif (((ap_const_logic_1 = ap_CS_fsm_state33) or (ap_const_logic_1 = ap_CS_fsm_state25))) then 
-            MemBank_A_ce0 <= grp_up_sampling2d_fix16_fu_14514_output_r_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state39)) then 
-            MemBank_A_ce0 <= grp_pointwise_conv2d_fix_4_fu_14508_input_r_ce0;
-        elsif ((ap_const_logic_1 = ap_CS_fsm_state5)) then 
-            MemBank_A_ce0 <= grp_depthwise_conv2d_fix_fu_14502_output_r_ce0;
+            MemBank_A_ce0 <= grp_pointwise_conv2d_fix_4_fu_14547_input_r_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state15)) then 
-            MemBank_A_ce0 <= grp_pointwise_conv2d_fix_1_fu_14492_input_r_ce0;
-        elsif (((ap_const_logic_1 = ap_CS_fsm_state29) or (ap_const_logic_1 = ap_CS_fsm_state21))) then 
-            MemBank_A_ce0 <= grp_depthwise_conv2d_fix_1_fu_14468_output_r_ce0;
+            MemBank_A_ce0 <= grp_pointwise_conv2d_fix_1_fu_14537_input_r_ce0;
         elsif (((ap_const_logic_1 = ap_CS_fsm_state17) or (ap_const_logic_1 = ap_CS_fsm_state9))) then 
-            MemBank_A_ce0 <= grp_max_pooling2d_fix16_fu_14447_output_r_ce0;
-        elsif (((ap_const_logic_1 = ap_CS_fsm_state37) or (ap_const_logic_1 = ap_CS_fsm_state13))) then 
-            MemBank_A_ce0 <= grp_depthwise_conv2d_fix_2_fu_14423_output_r_ce0;
+            MemBank_A_ce0 <= grp_max_pooling2d_fix16_fu_14516_output_r_ce0;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state33) or (ap_const_logic_1 = ap_CS_fsm_state25))) then 
+            MemBank_A_ce0 <= grp_up_sampling2d_fix16_fu_14495_output_r_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state23)) then 
-            MemBank_A_ce0 <= grp_pointwise_conv2d_fix_2_fu_14413_input_r_ce0;
+            MemBank_A_ce0 <= grp_pointwise_conv2d_fix_2_fu_14485_input_r_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            MemBank_A_ce0 <= grp_pointwise_conv2d_fix_3_fu_14403_input_r_ce0;
+            MemBank_A_ce0 <= grp_pointwise_conv2d_fix_3_fu_14475_input_r_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state7)) then 
-            MemBank_A_ce0 <= grp_pointwise_conv2d_fix_fu_14393_input_r_ce0;
+            MemBank_A_ce0 <= grp_pointwise_conv2d_fix_fu_14465_input_r_ce0;
+        elsif ((ap_const_logic_1 = ap_CS_fsm_state5)) then 
+            MemBank_A_ce0 <= grp_depthwise_conv2d_fix_fu_14459_output_r_ce0;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state29) or (ap_const_logic_1 = ap_CS_fsm_state21))) then 
+            MemBank_A_ce0 <= grp_depthwise_conv2d_fix_1_fu_14435_output_r_ce0;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state37) or (ap_const_logic_1 = ap_CS_fsm_state13))) then 
+            MemBank_A_ce0 <= grp_depthwise_conv2d_fix_2_fu_14411_output_r_ce0;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state35) or (ap_const_logic_1 = ap_CS_fsm_state27) or (ap_const_logic_1 = ap_CS_fsm_state19) or (ap_const_logic_1 = ap_CS_fsm_state11) or (ap_const_logic_1 = ap_CS_fsm_state3))) then 
+            MemBank_A_ce0 <= grp_padding2d_fix16_fu_14393_input_r_ce0;
         else 
             MemBank_A_ce0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    MemBank_A_ce1_assign_proc : process(grp_pointwise_conv2d_fix_fu_14393_input_r_ce1, grp_pointwise_conv2d_fix_3_fu_14403_input_r_ce1, grp_pointwise_conv2d_fix_2_fu_14413_input_r_ce1, grp_pointwise_conv2d_fix_1_fu_14492_input_r_ce1, grp_pointwise_conv2d_fix_4_fu_14508_input_r_ce1, ap_CS_fsm_state7, ap_CS_fsm_state31, ap_CS_fsm_state23, ap_CS_fsm_state15, ap_CS_fsm_state39)
+    MemBank_A_ce1_assign_proc : process(grp_depthwise_conv2d_fix_fu_14459_output_r_ce1, grp_pointwise_conv2d_fix_fu_14465_input_r_ce1, grp_pointwise_conv2d_fix_3_fu_14475_input_r_ce1, grp_pointwise_conv2d_fix_2_fu_14485_input_r_ce1, grp_pointwise_conv2d_fix_1_fu_14537_input_r_ce1, grp_pointwise_conv2d_fix_4_fu_14547_input_r_ce1, ap_CS_fsm_state5, ap_CS_fsm_state7, ap_CS_fsm_state31, ap_CS_fsm_state23, ap_CS_fsm_state15, ap_CS_fsm_state39)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state39)) then 
-            MemBank_A_ce1 <= grp_pointwise_conv2d_fix_4_fu_14508_input_r_ce1;
+            MemBank_A_ce1 <= grp_pointwise_conv2d_fix_4_fu_14547_input_r_ce1;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state15)) then 
-            MemBank_A_ce1 <= grp_pointwise_conv2d_fix_1_fu_14492_input_r_ce1;
+            MemBank_A_ce1 <= grp_pointwise_conv2d_fix_1_fu_14537_input_r_ce1;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state23)) then 
-            MemBank_A_ce1 <= grp_pointwise_conv2d_fix_2_fu_14413_input_r_ce1;
+            MemBank_A_ce1 <= grp_pointwise_conv2d_fix_2_fu_14485_input_r_ce1;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            MemBank_A_ce1 <= grp_pointwise_conv2d_fix_3_fu_14403_input_r_ce1;
+            MemBank_A_ce1 <= grp_pointwise_conv2d_fix_3_fu_14475_input_r_ce1;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state7)) then 
-            MemBank_A_ce1 <= grp_pointwise_conv2d_fix_fu_14393_input_r_ce1;
+            MemBank_A_ce1 <= grp_pointwise_conv2d_fix_fu_14465_input_r_ce1;
+        elsif ((ap_const_logic_1 = ap_CS_fsm_state5)) then 
+            MemBank_A_ce1 <= grp_depthwise_conv2d_fix_fu_14459_output_r_ce1;
         else 
             MemBank_A_ce1 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    MemBank_A_d0_assign_proc : process(input_data_V_data_V_0_data_out, ap_CS_fsm_state2, exitcond_fu_14563_p2, grp_depthwise_conv2d_fix_2_fu_14423_output_r_d0, grp_max_pooling2d_fix16_fu_14447_output_r_d0, grp_depthwise_conv2d_fix_1_fu_14468_output_r_d0, grp_depthwise_conv2d_fix_fu_14502_output_r_d0, grp_up_sampling2d_fix16_fu_14514_output_r_d0, ap_CS_fsm_state13, ap_CS_fsm_state37, ap_CS_fsm_state9, ap_CS_fsm_state17, ap_CS_fsm_state21, ap_CS_fsm_state29, ap_CS_fsm_state5, ap_CS_fsm_state25, ap_CS_fsm_state33)
+    MemBank_A_d0_assign_proc : process(input_data_V_data_V_0_data_out, ap_CS_fsm_state2, exitcond_fu_14563_p2, grp_depthwise_conv2d_fix_2_fu_14411_output_r_d0, grp_depthwise_conv2d_fix_1_fu_14435_output_r_d0, grp_depthwise_conv2d_fix_fu_14459_output_r_d0, grp_up_sampling2d_fix16_fu_14495_output_r_d0, grp_max_pooling2d_fix16_fu_14516_output_r_d0, ap_CS_fsm_state13, ap_CS_fsm_state37, ap_CS_fsm_state21, ap_CS_fsm_state29, ap_CS_fsm_state5, ap_CS_fsm_state25, ap_CS_fsm_state33, ap_CS_fsm_state9, ap_CS_fsm_state17)
     begin
         if (((exitcond_fu_14563_p2 = ap_const_lv1_0) and (ap_const_logic_1 = ap_CS_fsm_state2))) then 
             MemBank_A_d0 <= input_data_V_data_V_0_data_out;
-        elsif (((ap_const_logic_1 = ap_CS_fsm_state33) or (ap_const_logic_1 = ap_CS_fsm_state25))) then 
-            MemBank_A_d0 <= grp_up_sampling2d_fix16_fu_14514_output_r_d0;
-        elsif ((ap_const_logic_1 = ap_CS_fsm_state5)) then 
-            MemBank_A_d0 <= grp_depthwise_conv2d_fix_fu_14502_output_r_d0;
-        elsif (((ap_const_logic_1 = ap_CS_fsm_state29) or (ap_const_logic_1 = ap_CS_fsm_state21))) then 
-            MemBank_A_d0 <= grp_depthwise_conv2d_fix_1_fu_14468_output_r_d0;
         elsif (((ap_const_logic_1 = ap_CS_fsm_state17) or (ap_const_logic_1 = ap_CS_fsm_state9))) then 
-            MemBank_A_d0 <= grp_max_pooling2d_fix16_fu_14447_output_r_d0;
+            MemBank_A_d0 <= grp_max_pooling2d_fix16_fu_14516_output_r_d0;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state33) or (ap_const_logic_1 = ap_CS_fsm_state25))) then 
+            MemBank_A_d0 <= grp_up_sampling2d_fix16_fu_14495_output_r_d0;
+        elsif ((ap_const_logic_1 = ap_CS_fsm_state5)) then 
+            MemBank_A_d0 <= grp_depthwise_conv2d_fix_fu_14459_output_r_d0;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state29) or (ap_const_logic_1 = ap_CS_fsm_state21))) then 
+            MemBank_A_d0 <= grp_depthwise_conv2d_fix_1_fu_14435_output_r_d0;
         elsif (((ap_const_logic_1 = ap_CS_fsm_state37) or (ap_const_logic_1 = ap_CS_fsm_state13))) then 
-            MemBank_A_d0 <= grp_depthwise_conv2d_fix_2_fu_14423_output_r_d0;
+            MemBank_A_d0 <= grp_depthwise_conv2d_fix_2_fu_14411_output_r_d0;
         else 
             MemBank_A_d0 <= "XXXXXXXXXXXXXXXX";
         end if; 
     end process;
 
 
-    MemBank_A_we0_assign_proc : process(input_data_V_data_V_0_vld_out, ap_CS_fsm_state2, exitcond_fu_14563_p2, grp_depthwise_conv2d_fix_2_fu_14423_output_r_we0, grp_max_pooling2d_fix16_fu_14447_output_r_we0, grp_depthwise_conv2d_fix_1_fu_14468_output_r_we0, grp_depthwise_conv2d_fix_fu_14502_output_r_we0, grp_up_sampling2d_fix16_fu_14514_output_r_we0, ap_CS_fsm_state13, ap_CS_fsm_state37, ap_CS_fsm_state9, ap_CS_fsm_state17, ap_CS_fsm_state21, ap_CS_fsm_state29, ap_CS_fsm_state5, ap_CS_fsm_state25, ap_CS_fsm_state33)
+    MemBank_A_we0_assign_proc : process(input_data_V_data_V_0_vld_out, ap_CS_fsm_state2, exitcond_fu_14563_p2, grp_depthwise_conv2d_fix_2_fu_14411_output_r_we0, grp_depthwise_conv2d_fix_1_fu_14435_output_r_we0, grp_depthwise_conv2d_fix_fu_14459_output_r_we0, grp_up_sampling2d_fix16_fu_14495_output_r_we0, grp_max_pooling2d_fix16_fu_14516_output_r_we0, ap_CS_fsm_state13, ap_CS_fsm_state37, ap_CS_fsm_state21, ap_CS_fsm_state29, ap_CS_fsm_state5, ap_CS_fsm_state25, ap_CS_fsm_state33, ap_CS_fsm_state9, ap_CS_fsm_state17)
     begin
         if ((not(((exitcond_fu_14563_p2 = ap_const_lv1_0) and (input_data_V_data_V_0_vld_out = ap_const_logic_0))) and (exitcond_fu_14563_p2 = ap_const_lv1_0) and (ap_const_logic_1 = ap_CS_fsm_state2))) then 
             MemBank_A_we0 <= ap_const_logic_1;
-        elsif (((ap_const_logic_1 = ap_CS_fsm_state33) or (ap_const_logic_1 = ap_CS_fsm_state25))) then 
-            MemBank_A_we0 <= grp_up_sampling2d_fix16_fu_14514_output_r_we0;
-        elsif ((ap_const_logic_1 = ap_CS_fsm_state5)) then 
-            MemBank_A_we0 <= grp_depthwise_conv2d_fix_fu_14502_output_r_we0;
-        elsif (((ap_const_logic_1 = ap_CS_fsm_state29) or (ap_const_logic_1 = ap_CS_fsm_state21))) then 
-            MemBank_A_we0 <= grp_depthwise_conv2d_fix_1_fu_14468_output_r_we0;
         elsif (((ap_const_logic_1 = ap_CS_fsm_state17) or (ap_const_logic_1 = ap_CS_fsm_state9))) then 
-            MemBank_A_we0 <= grp_max_pooling2d_fix16_fu_14447_output_r_we0;
+            MemBank_A_we0 <= grp_max_pooling2d_fix16_fu_14516_output_r_we0;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state33) or (ap_const_logic_1 = ap_CS_fsm_state25))) then 
+            MemBank_A_we0 <= grp_up_sampling2d_fix16_fu_14495_output_r_we0;
+        elsif ((ap_const_logic_1 = ap_CS_fsm_state5)) then 
+            MemBank_A_we0 <= grp_depthwise_conv2d_fix_fu_14459_output_r_we0;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state29) or (ap_const_logic_1 = ap_CS_fsm_state21))) then 
+            MemBank_A_we0 <= grp_depthwise_conv2d_fix_1_fu_14435_output_r_we0;
         elsif (((ap_const_logic_1 = ap_CS_fsm_state37) or (ap_const_logic_1 = ap_CS_fsm_state13))) then 
-            MemBank_A_we0 <= grp_depthwise_conv2d_fix_2_fu_14423_output_r_we0;
+            MemBank_A_we0 <= grp_depthwise_conv2d_fix_2_fu_14411_output_r_we0;
         else 
             MemBank_A_we0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    MemBank_B_address0_assign_proc : process(ap_CS_fsm_state41, ap_CS_fsm_state42, ap_CS_fsm_state43, ap_CS_fsm_state44, ap_CS_fsm_state45, ap_CS_fsm_state46, ap_CS_fsm_state47, ap_CS_fsm_state48, ap_CS_fsm_state49, ap_CS_fsm_state50, ap_CS_fsm_state51, ap_CS_fsm_state52, ap_CS_fsm_state53, ap_CS_fsm_state54, ap_CS_fsm_state55, ap_CS_fsm_state56, ap_CS_fsm_state57, ap_CS_fsm_state58, ap_CS_fsm_state59, ap_CS_fsm_state60, ap_CS_fsm_state61, ap_CS_fsm_state62, ap_CS_fsm_state63, ap_CS_fsm_state64, ap_CS_fsm_state65, ap_CS_fsm_state66, ap_CS_fsm_state67, ap_CS_fsm_state68, ap_CS_fsm_state69, ap_CS_fsm_state70, ap_CS_fsm_state71, ap_CS_fsm_state72, ap_CS_fsm_state73, ap_CS_fsm_state74, ap_CS_fsm_state75, ap_CS_fsm_state76, ap_CS_fsm_state77, ap_CS_fsm_state78, ap_CS_fsm_state79, ap_CS_fsm_state80, ap_CS_fsm_state81, ap_CS_fsm_state82, ap_CS_fsm_state83, ap_CS_fsm_state84, ap_CS_fsm_state85, ap_CS_fsm_state86, ap_CS_fsm_state87, ap_CS_fsm_state88, ap_CS_fsm_state89, ap_CS_fsm_state90, ap_CS_fsm_state91, ap_CS_fsm_state92, ap_CS_fsm_state93, ap_CS_fsm_state94, ap_CS_fsm_state95, ap_CS_fsm_state96, ap_CS_fsm_state97, ap_CS_fsm_state98, ap_CS_fsm_state99, ap_CS_fsm_state100, ap_CS_fsm_state101, ap_CS_fsm_state102, ap_CS_fsm_state103, ap_CS_fsm_state104, ap_CS_fsm_state105, ap_CS_fsm_state106, ap_CS_fsm_state107, ap_CS_fsm_state108, ap_CS_fsm_state109, ap_CS_fsm_state110, ap_CS_fsm_state111, ap_CS_fsm_state112, ap_CS_fsm_state113, ap_CS_fsm_state114, ap_CS_fsm_state115, ap_CS_fsm_state116, ap_CS_fsm_state117, ap_CS_fsm_state118, ap_CS_fsm_state119, ap_CS_fsm_state120, ap_CS_fsm_state121, ap_CS_fsm_state122, ap_CS_fsm_state123, ap_CS_fsm_state124, ap_CS_fsm_state125, ap_CS_fsm_state126, ap_CS_fsm_state127, ap_CS_fsm_state128, ap_CS_fsm_state129, ap_CS_fsm_state130, ap_CS_fsm_state131, ap_CS_fsm_state132, ap_CS_fsm_state133, ap_CS_fsm_state134, ap_CS_fsm_state135, ap_CS_fsm_state136, ap_CS_fsm_state137, ap_CS_fsm_state138, ap_CS_fsm_state139, ap_CS_fsm_state140, ap_CS_fsm_state141, ap_CS_fsm_state142, ap_CS_fsm_state143, ap_CS_fsm_state144, ap_CS_fsm_state145, ap_CS_fsm_state146, ap_CS_fsm_state147, ap_CS_fsm_state148, ap_CS_fsm_state149, ap_CS_fsm_state150, ap_CS_fsm_state151, ap_CS_fsm_state152, ap_CS_fsm_state153, ap_CS_fsm_state154, ap_CS_fsm_state155, ap_CS_fsm_state156, ap_CS_fsm_state157, ap_CS_fsm_state158, ap_CS_fsm_state159, ap_CS_fsm_state160, ap_CS_fsm_state161, ap_CS_fsm_state162, ap_CS_fsm_state163, ap_CS_fsm_state164, ap_CS_fsm_state165, ap_CS_fsm_state166, ap_CS_fsm_state167, ap_CS_fsm_state168, ap_CS_fsm_state169, ap_CS_fsm_state170, ap_CS_fsm_state171, ap_CS_fsm_state172, ap_CS_fsm_state173, ap_CS_fsm_state174, ap_CS_fsm_state175, ap_CS_fsm_state176, ap_CS_fsm_state177, ap_CS_fsm_state178, ap_CS_fsm_state179, ap_CS_fsm_state180, ap_CS_fsm_state181, ap_CS_fsm_state182, ap_CS_fsm_state183, ap_CS_fsm_state184, ap_CS_fsm_state185, ap_CS_fsm_state186, ap_CS_fsm_state187, ap_CS_fsm_state188, ap_CS_fsm_state189, ap_CS_fsm_state190, ap_CS_fsm_state191, ap_CS_fsm_state192, ap_CS_fsm_state193, ap_CS_fsm_state194, ap_CS_fsm_state195, ap_CS_fsm_state196, ap_CS_fsm_state197, ap_CS_fsm_state198, ap_CS_fsm_state199, ap_CS_fsm_state200, ap_CS_fsm_state201, ap_CS_fsm_state202, ap_CS_fsm_state203, ap_CS_fsm_state204, ap_CS_fsm_state205, ap_CS_fsm_state206, ap_CS_fsm_state207, ap_CS_fsm_state208, ap_CS_fsm_state209, ap_CS_fsm_state210, ap_CS_fsm_state211, ap_CS_fsm_state212, ap_CS_fsm_state213, ap_CS_fsm_state214, ap_CS_fsm_state215, ap_CS_fsm_state216, ap_CS_fsm_state217, ap_CS_fsm_state218, ap_CS_fsm_state219, ap_CS_fsm_state220, ap_CS_fsm_state221, ap_CS_fsm_state222, ap_CS_fsm_state223, ap_CS_fsm_state224, ap_CS_fsm_state225, ap_CS_fsm_state226, ap_CS_fsm_state227, ap_CS_fsm_state228, ap_CS_fsm_state229, ap_CS_fsm_state230, ap_CS_fsm_state231, ap_CS_fsm_state232, ap_CS_fsm_state233, ap_CS_fsm_state234, ap_CS_fsm_state235, ap_CS_fsm_state236, ap_CS_fsm_state237, ap_CS_fsm_state238, ap_CS_fsm_state239, ap_CS_fsm_state240, ap_CS_fsm_state241, ap_CS_fsm_state242, ap_CS_fsm_state243, ap_CS_fsm_state244, ap_CS_fsm_state245, ap_CS_fsm_state246, ap_CS_fsm_state247, ap_CS_fsm_state248, ap_CS_fsm_state249, ap_CS_fsm_state250, ap_CS_fsm_state251, ap_CS_fsm_state252, ap_CS_fsm_state253, ap_CS_fsm_state254, ap_CS_fsm_state255, ap_CS_fsm_state256, ap_CS_fsm_state257, ap_CS_fsm_state258, ap_CS_fsm_state259, ap_CS_fsm_state260, ap_CS_fsm_state261, ap_CS_fsm_state262, ap_CS_fsm_state263, ap_CS_fsm_state264, ap_CS_fsm_state265, ap_CS_fsm_state266, ap_CS_fsm_state267, ap_CS_fsm_state268, ap_CS_fsm_state269, ap_CS_fsm_state270, ap_CS_fsm_state271, ap_CS_fsm_state272, ap_CS_fsm_state273, ap_CS_fsm_state274, ap_CS_fsm_state275, ap_CS_fsm_state276, ap_CS_fsm_state277, ap_CS_fsm_state278, ap_CS_fsm_state279, ap_CS_fsm_state280, ap_CS_fsm_state281, ap_CS_fsm_state282, ap_CS_fsm_state283, ap_CS_fsm_state284, ap_CS_fsm_state285, ap_CS_fsm_state286, ap_CS_fsm_state287, ap_CS_fsm_state288, ap_CS_fsm_state289, ap_CS_fsm_state290, ap_CS_fsm_state291, ap_CS_fsm_state292, ap_CS_fsm_state293, ap_CS_fsm_state294, ap_CS_fsm_state295, ap_CS_fsm_state296, ap_CS_fsm_state297, ap_CS_fsm_state298, ap_CS_fsm_state299, ap_CS_fsm_state300, ap_CS_fsm_state301, ap_CS_fsm_state302, ap_CS_fsm_state303, ap_CS_fsm_state304, ap_CS_fsm_state305, ap_CS_fsm_state306, ap_CS_fsm_state307, ap_CS_fsm_state308, ap_CS_fsm_state309, ap_CS_fsm_state310, ap_CS_fsm_state311, ap_CS_fsm_state312, ap_CS_fsm_state313, ap_CS_fsm_state314, ap_CS_fsm_state315, ap_CS_fsm_state316, ap_CS_fsm_state317, ap_CS_fsm_state318, ap_CS_fsm_state319, ap_CS_fsm_state320, ap_CS_fsm_state321, ap_CS_fsm_state322, ap_CS_fsm_state323, ap_CS_fsm_state324, ap_CS_fsm_state325, ap_CS_fsm_state326, ap_CS_fsm_state327, ap_CS_fsm_state328, ap_CS_fsm_state329, ap_CS_fsm_state330, ap_CS_fsm_state331, ap_CS_fsm_state332, ap_CS_fsm_state333, ap_CS_fsm_state334, ap_CS_fsm_state335, ap_CS_fsm_state336, ap_CS_fsm_state337, ap_CS_fsm_state338, ap_CS_fsm_state339, ap_CS_fsm_state340, ap_CS_fsm_state341, ap_CS_fsm_state342, ap_CS_fsm_state343, ap_CS_fsm_state344, ap_CS_fsm_state345, ap_CS_fsm_state346, ap_CS_fsm_state347, ap_CS_fsm_state348, ap_CS_fsm_state349, ap_CS_fsm_state350, ap_CS_fsm_state351, ap_CS_fsm_state352, ap_CS_fsm_state353, ap_CS_fsm_state354, ap_CS_fsm_state355, ap_CS_fsm_state356, ap_CS_fsm_state357, ap_CS_fsm_state358, ap_CS_fsm_state359, ap_CS_fsm_state360, ap_CS_fsm_state361, ap_CS_fsm_state362, ap_CS_fsm_state363, ap_CS_fsm_state364, ap_CS_fsm_state365, ap_CS_fsm_state366, ap_CS_fsm_state367, ap_CS_fsm_state368, ap_CS_fsm_state369, ap_CS_fsm_state370, ap_CS_fsm_state371, ap_CS_fsm_state372, ap_CS_fsm_state373, ap_CS_fsm_state374, ap_CS_fsm_state375, ap_CS_fsm_state376, ap_CS_fsm_state377, ap_CS_fsm_state378, ap_CS_fsm_state379, ap_CS_fsm_state380, ap_CS_fsm_state381, ap_CS_fsm_state382, ap_CS_fsm_state383, ap_CS_fsm_state384, ap_CS_fsm_state385, ap_CS_fsm_state386, ap_CS_fsm_state387, ap_CS_fsm_state388, ap_CS_fsm_state389, ap_CS_fsm_state390, ap_CS_fsm_state391, ap_CS_fsm_state392, ap_CS_fsm_state393, ap_CS_fsm_state394, ap_CS_fsm_state395, ap_CS_fsm_state396, ap_CS_fsm_state397, ap_CS_fsm_state398, ap_CS_fsm_state399, ap_CS_fsm_state400, ap_CS_fsm_state401, ap_CS_fsm_state402, ap_CS_fsm_state403, ap_CS_fsm_state404, ap_CS_fsm_state405, ap_CS_fsm_state406, ap_CS_fsm_state407, ap_CS_fsm_state408, ap_CS_fsm_state409, ap_CS_fsm_state410, ap_CS_fsm_state411, ap_CS_fsm_state412, ap_CS_fsm_state413, ap_CS_fsm_state414, ap_CS_fsm_state415, ap_CS_fsm_state416, ap_CS_fsm_state417, ap_CS_fsm_state418, ap_CS_fsm_state419, ap_CS_fsm_state420, ap_CS_fsm_state421, ap_CS_fsm_state422, ap_CS_fsm_state423, ap_CS_fsm_state424, ap_CS_fsm_state425, ap_CS_fsm_state426, ap_CS_fsm_state427, ap_CS_fsm_state428, ap_CS_fsm_state429, ap_CS_fsm_state430, ap_CS_fsm_state431, ap_CS_fsm_state40, grp_pointwise_conv2d_fix_fu_14393_output_r_address0, grp_pointwise_conv2d_fix_3_fu_14403_output_r_address0, grp_pointwise_conv2d_fix_2_fu_14413_output_r_address0, grp_depthwise_conv2d_fix_2_fu_14423_input_r_address0, grp_max_pooling2d_fix16_fu_14447_input_r_address0, grp_depthwise_conv2d_fix_1_fu_14468_input_r_address0, grp_pointwise_conv2d_fix_1_fu_14492_output_r_address0, grp_depthwise_conv2d_fix_fu_14502_input_r_address0, grp_pointwise_conv2d_fix_4_fu_14508_output_r_address0, grp_up_sampling2d_fix16_fu_14514_input_r_address0, grp_padding2d_fix16_fu_14535_output_r_address0, ap_CS_fsm_state7, ap_CS_fsm_state31, ap_CS_fsm_state23, ap_CS_fsm_state13, ap_CS_fsm_state37, ap_CS_fsm_state9, ap_CS_fsm_state17, ap_CS_fsm_state21, ap_CS_fsm_state29, ap_CS_fsm_state15, ap_CS_fsm_state5, ap_CS_fsm_state39, ap_CS_fsm_state25, ap_CS_fsm_state33, ap_CS_fsm_state3, ap_CS_fsm_state11, ap_CS_fsm_state19, ap_CS_fsm_state27, ap_CS_fsm_state35)
+    MemBank_A_we1_assign_proc : process(grp_depthwise_conv2d_fix_fu_14459_output_r_we1, ap_CS_fsm_state5)
+    begin
+        if ((ap_const_logic_1 = ap_CS_fsm_state5)) then 
+            MemBank_A_we1 <= grp_depthwise_conv2d_fix_fu_14459_output_r_we1;
+        else 
+            MemBank_A_we1 <= ap_const_logic_0;
+        end if; 
+    end process;
+
+
+    MemBank_B_address0_assign_proc : process(ap_CS_fsm_state41, ap_CS_fsm_state42, ap_CS_fsm_state43, ap_CS_fsm_state44, ap_CS_fsm_state45, ap_CS_fsm_state46, ap_CS_fsm_state47, ap_CS_fsm_state48, ap_CS_fsm_state49, ap_CS_fsm_state50, ap_CS_fsm_state51, ap_CS_fsm_state52, ap_CS_fsm_state53, ap_CS_fsm_state54, ap_CS_fsm_state55, ap_CS_fsm_state56, ap_CS_fsm_state57, ap_CS_fsm_state58, ap_CS_fsm_state59, ap_CS_fsm_state60, ap_CS_fsm_state61, ap_CS_fsm_state62, ap_CS_fsm_state63, ap_CS_fsm_state64, ap_CS_fsm_state65, ap_CS_fsm_state66, ap_CS_fsm_state67, ap_CS_fsm_state68, ap_CS_fsm_state69, ap_CS_fsm_state70, ap_CS_fsm_state71, ap_CS_fsm_state72, ap_CS_fsm_state73, ap_CS_fsm_state74, ap_CS_fsm_state75, ap_CS_fsm_state76, ap_CS_fsm_state77, ap_CS_fsm_state78, ap_CS_fsm_state79, ap_CS_fsm_state80, ap_CS_fsm_state81, ap_CS_fsm_state82, ap_CS_fsm_state83, ap_CS_fsm_state84, ap_CS_fsm_state85, ap_CS_fsm_state86, ap_CS_fsm_state87, ap_CS_fsm_state88, ap_CS_fsm_state89, ap_CS_fsm_state90, ap_CS_fsm_state91, ap_CS_fsm_state92, ap_CS_fsm_state93, ap_CS_fsm_state94, ap_CS_fsm_state95, ap_CS_fsm_state96, ap_CS_fsm_state97, ap_CS_fsm_state98, ap_CS_fsm_state99, ap_CS_fsm_state100, ap_CS_fsm_state101, ap_CS_fsm_state102, ap_CS_fsm_state103, ap_CS_fsm_state104, ap_CS_fsm_state105, ap_CS_fsm_state106, ap_CS_fsm_state107, ap_CS_fsm_state108, ap_CS_fsm_state109, ap_CS_fsm_state110, ap_CS_fsm_state111, ap_CS_fsm_state112, ap_CS_fsm_state113, ap_CS_fsm_state114, ap_CS_fsm_state115, ap_CS_fsm_state116, ap_CS_fsm_state117, ap_CS_fsm_state118, ap_CS_fsm_state119, ap_CS_fsm_state120, ap_CS_fsm_state121, ap_CS_fsm_state122, ap_CS_fsm_state123, ap_CS_fsm_state124, ap_CS_fsm_state125, ap_CS_fsm_state126, ap_CS_fsm_state127, ap_CS_fsm_state128, ap_CS_fsm_state129, ap_CS_fsm_state130, ap_CS_fsm_state131, ap_CS_fsm_state132, ap_CS_fsm_state133, ap_CS_fsm_state134, ap_CS_fsm_state135, ap_CS_fsm_state136, ap_CS_fsm_state137, ap_CS_fsm_state138, ap_CS_fsm_state139, ap_CS_fsm_state140, ap_CS_fsm_state141, ap_CS_fsm_state142, ap_CS_fsm_state143, ap_CS_fsm_state144, ap_CS_fsm_state145, ap_CS_fsm_state146, ap_CS_fsm_state147, ap_CS_fsm_state148, ap_CS_fsm_state149, ap_CS_fsm_state150, ap_CS_fsm_state151, ap_CS_fsm_state152, ap_CS_fsm_state153, ap_CS_fsm_state154, ap_CS_fsm_state155, ap_CS_fsm_state156, ap_CS_fsm_state157, ap_CS_fsm_state158, ap_CS_fsm_state159, ap_CS_fsm_state160, ap_CS_fsm_state161, ap_CS_fsm_state162, ap_CS_fsm_state163, ap_CS_fsm_state164, ap_CS_fsm_state165, ap_CS_fsm_state166, ap_CS_fsm_state167, ap_CS_fsm_state168, ap_CS_fsm_state169, ap_CS_fsm_state170, ap_CS_fsm_state171, ap_CS_fsm_state172, ap_CS_fsm_state173, ap_CS_fsm_state174, ap_CS_fsm_state175, ap_CS_fsm_state176, ap_CS_fsm_state177, ap_CS_fsm_state178, ap_CS_fsm_state179, ap_CS_fsm_state180, ap_CS_fsm_state181, ap_CS_fsm_state182, ap_CS_fsm_state183, ap_CS_fsm_state184, ap_CS_fsm_state185, ap_CS_fsm_state186, ap_CS_fsm_state187, ap_CS_fsm_state188, ap_CS_fsm_state189, ap_CS_fsm_state190, ap_CS_fsm_state191, ap_CS_fsm_state192, ap_CS_fsm_state193, ap_CS_fsm_state194, ap_CS_fsm_state195, ap_CS_fsm_state196, ap_CS_fsm_state197, ap_CS_fsm_state198, ap_CS_fsm_state199, ap_CS_fsm_state200, ap_CS_fsm_state201, ap_CS_fsm_state202, ap_CS_fsm_state203, ap_CS_fsm_state204, ap_CS_fsm_state205, ap_CS_fsm_state206, ap_CS_fsm_state207, ap_CS_fsm_state208, ap_CS_fsm_state209, ap_CS_fsm_state210, ap_CS_fsm_state211, ap_CS_fsm_state212, ap_CS_fsm_state213, ap_CS_fsm_state214, ap_CS_fsm_state215, ap_CS_fsm_state216, ap_CS_fsm_state217, ap_CS_fsm_state218, ap_CS_fsm_state219, ap_CS_fsm_state220, ap_CS_fsm_state221, ap_CS_fsm_state222, ap_CS_fsm_state223, ap_CS_fsm_state224, ap_CS_fsm_state225, ap_CS_fsm_state226, ap_CS_fsm_state227, ap_CS_fsm_state228, ap_CS_fsm_state229, ap_CS_fsm_state230, ap_CS_fsm_state231, ap_CS_fsm_state232, ap_CS_fsm_state233, ap_CS_fsm_state234, ap_CS_fsm_state235, ap_CS_fsm_state236, ap_CS_fsm_state237, ap_CS_fsm_state238, ap_CS_fsm_state239, ap_CS_fsm_state240, ap_CS_fsm_state241, ap_CS_fsm_state242, ap_CS_fsm_state243, ap_CS_fsm_state244, ap_CS_fsm_state245, ap_CS_fsm_state246, ap_CS_fsm_state247, ap_CS_fsm_state248, ap_CS_fsm_state249, ap_CS_fsm_state250, ap_CS_fsm_state251, ap_CS_fsm_state252, ap_CS_fsm_state253, ap_CS_fsm_state254, ap_CS_fsm_state255, ap_CS_fsm_state256, ap_CS_fsm_state257, ap_CS_fsm_state258, ap_CS_fsm_state259, ap_CS_fsm_state260, ap_CS_fsm_state261, ap_CS_fsm_state262, ap_CS_fsm_state263, ap_CS_fsm_state264, ap_CS_fsm_state265, ap_CS_fsm_state266, ap_CS_fsm_state267, ap_CS_fsm_state268, ap_CS_fsm_state269, ap_CS_fsm_state270, ap_CS_fsm_state271, ap_CS_fsm_state272, ap_CS_fsm_state273, ap_CS_fsm_state274, ap_CS_fsm_state275, ap_CS_fsm_state276, ap_CS_fsm_state277, ap_CS_fsm_state278, ap_CS_fsm_state279, ap_CS_fsm_state280, ap_CS_fsm_state281, ap_CS_fsm_state282, ap_CS_fsm_state283, ap_CS_fsm_state284, ap_CS_fsm_state285, ap_CS_fsm_state286, ap_CS_fsm_state287, ap_CS_fsm_state288, ap_CS_fsm_state289, ap_CS_fsm_state290, ap_CS_fsm_state291, ap_CS_fsm_state292, ap_CS_fsm_state293, ap_CS_fsm_state294, ap_CS_fsm_state295, ap_CS_fsm_state296, ap_CS_fsm_state297, ap_CS_fsm_state298, ap_CS_fsm_state299, ap_CS_fsm_state300, ap_CS_fsm_state301, ap_CS_fsm_state302, ap_CS_fsm_state303, ap_CS_fsm_state304, ap_CS_fsm_state305, ap_CS_fsm_state306, ap_CS_fsm_state307, ap_CS_fsm_state308, ap_CS_fsm_state309, ap_CS_fsm_state310, ap_CS_fsm_state311, ap_CS_fsm_state312, ap_CS_fsm_state313, ap_CS_fsm_state314, ap_CS_fsm_state315, ap_CS_fsm_state316, ap_CS_fsm_state317, ap_CS_fsm_state318, ap_CS_fsm_state319, ap_CS_fsm_state320, ap_CS_fsm_state321, ap_CS_fsm_state322, ap_CS_fsm_state323, ap_CS_fsm_state324, ap_CS_fsm_state325, ap_CS_fsm_state326, ap_CS_fsm_state327, ap_CS_fsm_state328, ap_CS_fsm_state329, ap_CS_fsm_state330, ap_CS_fsm_state331, ap_CS_fsm_state332, ap_CS_fsm_state333, ap_CS_fsm_state334, ap_CS_fsm_state335, ap_CS_fsm_state336, ap_CS_fsm_state337, ap_CS_fsm_state338, ap_CS_fsm_state339, ap_CS_fsm_state340, ap_CS_fsm_state341, ap_CS_fsm_state342, ap_CS_fsm_state343, ap_CS_fsm_state344, ap_CS_fsm_state345, ap_CS_fsm_state346, ap_CS_fsm_state347, ap_CS_fsm_state348, ap_CS_fsm_state349, ap_CS_fsm_state350, ap_CS_fsm_state351, ap_CS_fsm_state352, ap_CS_fsm_state353, ap_CS_fsm_state354, ap_CS_fsm_state355, ap_CS_fsm_state356, ap_CS_fsm_state357, ap_CS_fsm_state358, ap_CS_fsm_state359, ap_CS_fsm_state360, ap_CS_fsm_state361, ap_CS_fsm_state362, ap_CS_fsm_state363, ap_CS_fsm_state364, ap_CS_fsm_state365, ap_CS_fsm_state366, ap_CS_fsm_state367, ap_CS_fsm_state368, ap_CS_fsm_state369, ap_CS_fsm_state370, ap_CS_fsm_state371, ap_CS_fsm_state372, ap_CS_fsm_state373, ap_CS_fsm_state374, ap_CS_fsm_state375, ap_CS_fsm_state376, ap_CS_fsm_state377, ap_CS_fsm_state378, ap_CS_fsm_state379, ap_CS_fsm_state380, ap_CS_fsm_state381, ap_CS_fsm_state382, ap_CS_fsm_state383, ap_CS_fsm_state384, ap_CS_fsm_state385, ap_CS_fsm_state386, ap_CS_fsm_state387, ap_CS_fsm_state388, ap_CS_fsm_state389, ap_CS_fsm_state390, ap_CS_fsm_state391, ap_CS_fsm_state392, ap_CS_fsm_state393, ap_CS_fsm_state394, ap_CS_fsm_state395, ap_CS_fsm_state396, ap_CS_fsm_state397, ap_CS_fsm_state398, ap_CS_fsm_state399, ap_CS_fsm_state400, ap_CS_fsm_state401, ap_CS_fsm_state402, ap_CS_fsm_state403, ap_CS_fsm_state404, ap_CS_fsm_state405, ap_CS_fsm_state406, ap_CS_fsm_state407, ap_CS_fsm_state408, ap_CS_fsm_state409, ap_CS_fsm_state410, ap_CS_fsm_state411, ap_CS_fsm_state412, ap_CS_fsm_state413, ap_CS_fsm_state414, ap_CS_fsm_state415, ap_CS_fsm_state416, ap_CS_fsm_state417, ap_CS_fsm_state418, ap_CS_fsm_state419, ap_CS_fsm_state420, ap_CS_fsm_state421, ap_CS_fsm_state422, ap_CS_fsm_state423, ap_CS_fsm_state424, ap_CS_fsm_state425, ap_CS_fsm_state426, ap_CS_fsm_state427, ap_CS_fsm_state428, ap_CS_fsm_state429, ap_CS_fsm_state430, ap_CS_fsm_state431, ap_CS_fsm_state40, grp_padding2d_fix16_fu_14393_output_r_address0, grp_depthwise_conv2d_fix_2_fu_14411_input_r_address0, grp_depthwise_conv2d_fix_1_fu_14435_input_r_address0, grp_depthwise_conv2d_fix_fu_14459_input_r_address0, grp_pointwise_conv2d_fix_fu_14465_output_r_address0, grp_pointwise_conv2d_fix_3_fu_14475_output_r_address0, grp_pointwise_conv2d_fix_2_fu_14485_output_r_address0, grp_up_sampling2d_fix16_fu_14495_input_r_address0, grp_max_pooling2d_fix16_fu_14516_input_r_address0, grp_pointwise_conv2d_fix_1_fu_14537_output_r_address0, grp_pointwise_conv2d_fix_4_fu_14547_output_r_address0, ap_CS_fsm_state3, ap_CS_fsm_state11, ap_CS_fsm_state19, ap_CS_fsm_state27, ap_CS_fsm_state35, ap_CS_fsm_state13, ap_CS_fsm_state37, ap_CS_fsm_state21, ap_CS_fsm_state29, ap_CS_fsm_state5, ap_CS_fsm_state7, ap_CS_fsm_state31, ap_CS_fsm_state23, ap_CS_fsm_state25, ap_CS_fsm_state33, ap_CS_fsm_state9, ap_CS_fsm_state17, ap_CS_fsm_state15, ap_CS_fsm_state39)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state431)) then 
             MemBank_B_address0 <= ap_const_lv64_30E(14 - 1 downto 0);
@@ -6455,35 +6501,35 @@ begin
             MemBank_B_address0 <= ap_const_lv64_2(14 - 1 downto 0);
         elsif ((ap_const_logic_1 = ap_CS_fsm_state40)) then 
             MemBank_B_address0 <= ap_const_lv64_0(14 - 1 downto 0);
-        elsif (((ap_const_logic_1 = ap_CS_fsm_state35) or (ap_const_logic_1 = ap_CS_fsm_state27) or (ap_const_logic_1 = ap_CS_fsm_state19) or (ap_const_logic_1 = ap_CS_fsm_state11) or (ap_const_logic_1 = ap_CS_fsm_state3))) then 
-            MemBank_B_address0 <= grp_padding2d_fix16_fu_14535_output_r_address0;
-        elsif (((ap_const_logic_1 = ap_CS_fsm_state33) or (ap_const_logic_1 = ap_CS_fsm_state25))) then 
-            MemBank_B_address0 <= grp_up_sampling2d_fix16_fu_14514_input_r_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state39)) then 
-            MemBank_B_address0 <= grp_pointwise_conv2d_fix_4_fu_14508_output_r_address0;
-        elsif ((ap_const_logic_1 = ap_CS_fsm_state5)) then 
-            MemBank_B_address0 <= grp_depthwise_conv2d_fix_fu_14502_input_r_address0;
+            MemBank_B_address0 <= grp_pointwise_conv2d_fix_4_fu_14547_output_r_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state15)) then 
-            MemBank_B_address0 <= grp_pointwise_conv2d_fix_1_fu_14492_output_r_address0;
-        elsif (((ap_const_logic_1 = ap_CS_fsm_state29) or (ap_const_logic_1 = ap_CS_fsm_state21))) then 
-            MemBank_B_address0 <= grp_depthwise_conv2d_fix_1_fu_14468_input_r_address0;
+            MemBank_B_address0 <= grp_pointwise_conv2d_fix_1_fu_14537_output_r_address0;
         elsif (((ap_const_logic_1 = ap_CS_fsm_state17) or (ap_const_logic_1 = ap_CS_fsm_state9))) then 
-            MemBank_B_address0 <= grp_max_pooling2d_fix16_fu_14447_input_r_address0;
-        elsif (((ap_const_logic_1 = ap_CS_fsm_state37) or (ap_const_logic_1 = ap_CS_fsm_state13))) then 
-            MemBank_B_address0 <= grp_depthwise_conv2d_fix_2_fu_14423_input_r_address0;
+            MemBank_B_address0 <= grp_max_pooling2d_fix16_fu_14516_input_r_address0;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state33) or (ap_const_logic_1 = ap_CS_fsm_state25))) then 
+            MemBank_B_address0 <= grp_up_sampling2d_fix16_fu_14495_input_r_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state23)) then 
-            MemBank_B_address0 <= grp_pointwise_conv2d_fix_2_fu_14413_output_r_address0;
+            MemBank_B_address0 <= grp_pointwise_conv2d_fix_2_fu_14485_output_r_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            MemBank_B_address0 <= grp_pointwise_conv2d_fix_3_fu_14403_output_r_address0;
+            MemBank_B_address0 <= grp_pointwise_conv2d_fix_3_fu_14475_output_r_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state7)) then 
-            MemBank_B_address0 <= grp_pointwise_conv2d_fix_fu_14393_output_r_address0;
+            MemBank_B_address0 <= grp_pointwise_conv2d_fix_fu_14465_output_r_address0;
+        elsif ((ap_const_logic_1 = ap_CS_fsm_state5)) then 
+            MemBank_B_address0 <= grp_depthwise_conv2d_fix_fu_14459_input_r_address0;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state29) or (ap_const_logic_1 = ap_CS_fsm_state21))) then 
+            MemBank_B_address0 <= grp_depthwise_conv2d_fix_1_fu_14435_input_r_address0;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state37) or (ap_const_logic_1 = ap_CS_fsm_state13))) then 
+            MemBank_B_address0 <= grp_depthwise_conv2d_fix_2_fu_14411_input_r_address0;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state35) or (ap_const_logic_1 = ap_CS_fsm_state27) or (ap_const_logic_1 = ap_CS_fsm_state19) or (ap_const_logic_1 = ap_CS_fsm_state11) or (ap_const_logic_1 = ap_CS_fsm_state3))) then 
+            MemBank_B_address0 <= grp_padding2d_fix16_fu_14393_output_r_address0;
         else 
             MemBank_B_address0 <= "XXXXXXXXXXXXXX";
         end if; 
     end process;
 
 
-    MemBank_B_address1_assign_proc : process(ap_CS_fsm_state41, ap_CS_fsm_state42, ap_CS_fsm_state43, ap_CS_fsm_state44, ap_CS_fsm_state45, ap_CS_fsm_state46, ap_CS_fsm_state47, ap_CS_fsm_state48, ap_CS_fsm_state49, ap_CS_fsm_state50, ap_CS_fsm_state51, ap_CS_fsm_state52, ap_CS_fsm_state53, ap_CS_fsm_state54, ap_CS_fsm_state55, ap_CS_fsm_state56, ap_CS_fsm_state57, ap_CS_fsm_state58, ap_CS_fsm_state59, ap_CS_fsm_state60, ap_CS_fsm_state61, ap_CS_fsm_state62, ap_CS_fsm_state63, ap_CS_fsm_state64, ap_CS_fsm_state65, ap_CS_fsm_state66, ap_CS_fsm_state67, ap_CS_fsm_state68, ap_CS_fsm_state69, ap_CS_fsm_state70, ap_CS_fsm_state71, ap_CS_fsm_state72, ap_CS_fsm_state73, ap_CS_fsm_state74, ap_CS_fsm_state75, ap_CS_fsm_state76, ap_CS_fsm_state77, ap_CS_fsm_state78, ap_CS_fsm_state79, ap_CS_fsm_state80, ap_CS_fsm_state81, ap_CS_fsm_state82, ap_CS_fsm_state83, ap_CS_fsm_state84, ap_CS_fsm_state85, ap_CS_fsm_state86, ap_CS_fsm_state87, ap_CS_fsm_state88, ap_CS_fsm_state89, ap_CS_fsm_state90, ap_CS_fsm_state91, ap_CS_fsm_state92, ap_CS_fsm_state93, ap_CS_fsm_state94, ap_CS_fsm_state95, ap_CS_fsm_state96, ap_CS_fsm_state97, ap_CS_fsm_state98, ap_CS_fsm_state99, ap_CS_fsm_state100, ap_CS_fsm_state101, ap_CS_fsm_state102, ap_CS_fsm_state103, ap_CS_fsm_state104, ap_CS_fsm_state105, ap_CS_fsm_state106, ap_CS_fsm_state107, ap_CS_fsm_state108, ap_CS_fsm_state109, ap_CS_fsm_state110, ap_CS_fsm_state111, ap_CS_fsm_state112, ap_CS_fsm_state113, ap_CS_fsm_state114, ap_CS_fsm_state115, ap_CS_fsm_state116, ap_CS_fsm_state117, ap_CS_fsm_state118, ap_CS_fsm_state119, ap_CS_fsm_state120, ap_CS_fsm_state121, ap_CS_fsm_state122, ap_CS_fsm_state123, ap_CS_fsm_state124, ap_CS_fsm_state125, ap_CS_fsm_state126, ap_CS_fsm_state127, ap_CS_fsm_state128, ap_CS_fsm_state129, ap_CS_fsm_state130, ap_CS_fsm_state131, ap_CS_fsm_state132, ap_CS_fsm_state133, ap_CS_fsm_state134, ap_CS_fsm_state135, ap_CS_fsm_state136, ap_CS_fsm_state137, ap_CS_fsm_state138, ap_CS_fsm_state139, ap_CS_fsm_state140, ap_CS_fsm_state141, ap_CS_fsm_state142, ap_CS_fsm_state143, ap_CS_fsm_state144, ap_CS_fsm_state145, ap_CS_fsm_state146, ap_CS_fsm_state147, ap_CS_fsm_state148, ap_CS_fsm_state149, ap_CS_fsm_state150, ap_CS_fsm_state151, ap_CS_fsm_state152, ap_CS_fsm_state153, ap_CS_fsm_state154, ap_CS_fsm_state155, ap_CS_fsm_state156, ap_CS_fsm_state157, ap_CS_fsm_state158, ap_CS_fsm_state159, ap_CS_fsm_state160, ap_CS_fsm_state161, ap_CS_fsm_state162, ap_CS_fsm_state163, ap_CS_fsm_state164, ap_CS_fsm_state165, ap_CS_fsm_state166, ap_CS_fsm_state167, ap_CS_fsm_state168, ap_CS_fsm_state169, ap_CS_fsm_state170, ap_CS_fsm_state171, ap_CS_fsm_state172, ap_CS_fsm_state173, ap_CS_fsm_state174, ap_CS_fsm_state175, ap_CS_fsm_state176, ap_CS_fsm_state177, ap_CS_fsm_state178, ap_CS_fsm_state179, ap_CS_fsm_state180, ap_CS_fsm_state181, ap_CS_fsm_state182, ap_CS_fsm_state183, ap_CS_fsm_state184, ap_CS_fsm_state185, ap_CS_fsm_state186, ap_CS_fsm_state187, ap_CS_fsm_state188, ap_CS_fsm_state189, ap_CS_fsm_state190, ap_CS_fsm_state191, ap_CS_fsm_state192, ap_CS_fsm_state193, ap_CS_fsm_state194, ap_CS_fsm_state195, ap_CS_fsm_state196, ap_CS_fsm_state197, ap_CS_fsm_state198, ap_CS_fsm_state199, ap_CS_fsm_state200, ap_CS_fsm_state201, ap_CS_fsm_state202, ap_CS_fsm_state203, ap_CS_fsm_state204, ap_CS_fsm_state205, ap_CS_fsm_state206, ap_CS_fsm_state207, ap_CS_fsm_state208, ap_CS_fsm_state209, ap_CS_fsm_state210, ap_CS_fsm_state211, ap_CS_fsm_state212, ap_CS_fsm_state213, ap_CS_fsm_state214, ap_CS_fsm_state215, ap_CS_fsm_state216, ap_CS_fsm_state217, ap_CS_fsm_state218, ap_CS_fsm_state219, ap_CS_fsm_state220, ap_CS_fsm_state221, ap_CS_fsm_state222, ap_CS_fsm_state223, ap_CS_fsm_state224, ap_CS_fsm_state225, ap_CS_fsm_state226, ap_CS_fsm_state227, ap_CS_fsm_state228, ap_CS_fsm_state229, ap_CS_fsm_state230, ap_CS_fsm_state231, ap_CS_fsm_state232, ap_CS_fsm_state233, ap_CS_fsm_state234, ap_CS_fsm_state235, ap_CS_fsm_state236, ap_CS_fsm_state237, ap_CS_fsm_state238, ap_CS_fsm_state239, ap_CS_fsm_state240, ap_CS_fsm_state241, ap_CS_fsm_state242, ap_CS_fsm_state243, ap_CS_fsm_state244, ap_CS_fsm_state245, ap_CS_fsm_state246, ap_CS_fsm_state247, ap_CS_fsm_state248, ap_CS_fsm_state249, ap_CS_fsm_state250, ap_CS_fsm_state251, ap_CS_fsm_state252, ap_CS_fsm_state253, ap_CS_fsm_state254, ap_CS_fsm_state255, ap_CS_fsm_state256, ap_CS_fsm_state257, ap_CS_fsm_state258, ap_CS_fsm_state259, ap_CS_fsm_state260, ap_CS_fsm_state261, ap_CS_fsm_state262, ap_CS_fsm_state263, ap_CS_fsm_state264, ap_CS_fsm_state265, ap_CS_fsm_state266, ap_CS_fsm_state267, ap_CS_fsm_state268, ap_CS_fsm_state269, ap_CS_fsm_state270, ap_CS_fsm_state271, ap_CS_fsm_state272, ap_CS_fsm_state273, ap_CS_fsm_state274, ap_CS_fsm_state275, ap_CS_fsm_state276, ap_CS_fsm_state277, ap_CS_fsm_state278, ap_CS_fsm_state279, ap_CS_fsm_state280, ap_CS_fsm_state281, ap_CS_fsm_state282, ap_CS_fsm_state283, ap_CS_fsm_state284, ap_CS_fsm_state285, ap_CS_fsm_state286, ap_CS_fsm_state287, ap_CS_fsm_state288, ap_CS_fsm_state289, ap_CS_fsm_state290, ap_CS_fsm_state291, ap_CS_fsm_state292, ap_CS_fsm_state293, ap_CS_fsm_state294, ap_CS_fsm_state295, ap_CS_fsm_state296, ap_CS_fsm_state297, ap_CS_fsm_state298, ap_CS_fsm_state299, ap_CS_fsm_state300, ap_CS_fsm_state301, ap_CS_fsm_state302, ap_CS_fsm_state303, ap_CS_fsm_state304, ap_CS_fsm_state305, ap_CS_fsm_state306, ap_CS_fsm_state307, ap_CS_fsm_state308, ap_CS_fsm_state309, ap_CS_fsm_state310, ap_CS_fsm_state311, ap_CS_fsm_state312, ap_CS_fsm_state313, ap_CS_fsm_state314, ap_CS_fsm_state315, ap_CS_fsm_state316, ap_CS_fsm_state317, ap_CS_fsm_state318, ap_CS_fsm_state319, ap_CS_fsm_state320, ap_CS_fsm_state321, ap_CS_fsm_state322, ap_CS_fsm_state323, ap_CS_fsm_state324, ap_CS_fsm_state325, ap_CS_fsm_state326, ap_CS_fsm_state327, ap_CS_fsm_state328, ap_CS_fsm_state329, ap_CS_fsm_state330, ap_CS_fsm_state331, ap_CS_fsm_state332, ap_CS_fsm_state333, ap_CS_fsm_state334, ap_CS_fsm_state335, ap_CS_fsm_state336, ap_CS_fsm_state337, ap_CS_fsm_state338, ap_CS_fsm_state339, ap_CS_fsm_state340, ap_CS_fsm_state341, ap_CS_fsm_state342, ap_CS_fsm_state343, ap_CS_fsm_state344, ap_CS_fsm_state345, ap_CS_fsm_state346, ap_CS_fsm_state347, ap_CS_fsm_state348, ap_CS_fsm_state349, ap_CS_fsm_state350, ap_CS_fsm_state351, ap_CS_fsm_state352, ap_CS_fsm_state353, ap_CS_fsm_state354, ap_CS_fsm_state355, ap_CS_fsm_state356, ap_CS_fsm_state357, ap_CS_fsm_state358, ap_CS_fsm_state359, ap_CS_fsm_state360, ap_CS_fsm_state361, ap_CS_fsm_state362, ap_CS_fsm_state363, ap_CS_fsm_state364, ap_CS_fsm_state365, ap_CS_fsm_state366, ap_CS_fsm_state367, ap_CS_fsm_state368, ap_CS_fsm_state369, ap_CS_fsm_state370, ap_CS_fsm_state371, ap_CS_fsm_state372, ap_CS_fsm_state373, ap_CS_fsm_state374, ap_CS_fsm_state375, ap_CS_fsm_state376, ap_CS_fsm_state377, ap_CS_fsm_state378, ap_CS_fsm_state379, ap_CS_fsm_state380, ap_CS_fsm_state381, ap_CS_fsm_state382, ap_CS_fsm_state383, ap_CS_fsm_state384, ap_CS_fsm_state385, ap_CS_fsm_state386, ap_CS_fsm_state387, ap_CS_fsm_state388, ap_CS_fsm_state389, ap_CS_fsm_state390, ap_CS_fsm_state391, ap_CS_fsm_state392, ap_CS_fsm_state393, ap_CS_fsm_state394, ap_CS_fsm_state395, ap_CS_fsm_state396, ap_CS_fsm_state397, ap_CS_fsm_state398, ap_CS_fsm_state399, ap_CS_fsm_state400, ap_CS_fsm_state401, ap_CS_fsm_state402, ap_CS_fsm_state403, ap_CS_fsm_state404, ap_CS_fsm_state405, ap_CS_fsm_state406, ap_CS_fsm_state407, ap_CS_fsm_state408, ap_CS_fsm_state409, ap_CS_fsm_state410, ap_CS_fsm_state411, ap_CS_fsm_state412, ap_CS_fsm_state413, ap_CS_fsm_state414, ap_CS_fsm_state415, ap_CS_fsm_state416, ap_CS_fsm_state417, ap_CS_fsm_state418, ap_CS_fsm_state419, ap_CS_fsm_state420, ap_CS_fsm_state421, ap_CS_fsm_state422, ap_CS_fsm_state423, ap_CS_fsm_state424, ap_CS_fsm_state425, ap_CS_fsm_state426, ap_CS_fsm_state427, ap_CS_fsm_state428, ap_CS_fsm_state429, ap_CS_fsm_state430, ap_CS_fsm_state431, ap_CS_fsm_state40, grp_depthwise_conv2d_fix_2_fu_14423_input_r_address1, grp_max_pooling2d_fix16_fu_14447_input_r_address1, grp_depthwise_conv2d_fix_1_fu_14468_input_r_address1, grp_depthwise_conv2d_fix_fu_14502_input_r_address1, ap_CS_fsm_state13, ap_CS_fsm_state37, ap_CS_fsm_state9, ap_CS_fsm_state17, ap_CS_fsm_state21, ap_CS_fsm_state29, ap_CS_fsm_state5)
+    MemBank_B_address1_assign_proc : process(ap_CS_fsm_state41, ap_CS_fsm_state42, ap_CS_fsm_state43, ap_CS_fsm_state44, ap_CS_fsm_state45, ap_CS_fsm_state46, ap_CS_fsm_state47, ap_CS_fsm_state48, ap_CS_fsm_state49, ap_CS_fsm_state50, ap_CS_fsm_state51, ap_CS_fsm_state52, ap_CS_fsm_state53, ap_CS_fsm_state54, ap_CS_fsm_state55, ap_CS_fsm_state56, ap_CS_fsm_state57, ap_CS_fsm_state58, ap_CS_fsm_state59, ap_CS_fsm_state60, ap_CS_fsm_state61, ap_CS_fsm_state62, ap_CS_fsm_state63, ap_CS_fsm_state64, ap_CS_fsm_state65, ap_CS_fsm_state66, ap_CS_fsm_state67, ap_CS_fsm_state68, ap_CS_fsm_state69, ap_CS_fsm_state70, ap_CS_fsm_state71, ap_CS_fsm_state72, ap_CS_fsm_state73, ap_CS_fsm_state74, ap_CS_fsm_state75, ap_CS_fsm_state76, ap_CS_fsm_state77, ap_CS_fsm_state78, ap_CS_fsm_state79, ap_CS_fsm_state80, ap_CS_fsm_state81, ap_CS_fsm_state82, ap_CS_fsm_state83, ap_CS_fsm_state84, ap_CS_fsm_state85, ap_CS_fsm_state86, ap_CS_fsm_state87, ap_CS_fsm_state88, ap_CS_fsm_state89, ap_CS_fsm_state90, ap_CS_fsm_state91, ap_CS_fsm_state92, ap_CS_fsm_state93, ap_CS_fsm_state94, ap_CS_fsm_state95, ap_CS_fsm_state96, ap_CS_fsm_state97, ap_CS_fsm_state98, ap_CS_fsm_state99, ap_CS_fsm_state100, ap_CS_fsm_state101, ap_CS_fsm_state102, ap_CS_fsm_state103, ap_CS_fsm_state104, ap_CS_fsm_state105, ap_CS_fsm_state106, ap_CS_fsm_state107, ap_CS_fsm_state108, ap_CS_fsm_state109, ap_CS_fsm_state110, ap_CS_fsm_state111, ap_CS_fsm_state112, ap_CS_fsm_state113, ap_CS_fsm_state114, ap_CS_fsm_state115, ap_CS_fsm_state116, ap_CS_fsm_state117, ap_CS_fsm_state118, ap_CS_fsm_state119, ap_CS_fsm_state120, ap_CS_fsm_state121, ap_CS_fsm_state122, ap_CS_fsm_state123, ap_CS_fsm_state124, ap_CS_fsm_state125, ap_CS_fsm_state126, ap_CS_fsm_state127, ap_CS_fsm_state128, ap_CS_fsm_state129, ap_CS_fsm_state130, ap_CS_fsm_state131, ap_CS_fsm_state132, ap_CS_fsm_state133, ap_CS_fsm_state134, ap_CS_fsm_state135, ap_CS_fsm_state136, ap_CS_fsm_state137, ap_CS_fsm_state138, ap_CS_fsm_state139, ap_CS_fsm_state140, ap_CS_fsm_state141, ap_CS_fsm_state142, ap_CS_fsm_state143, ap_CS_fsm_state144, ap_CS_fsm_state145, ap_CS_fsm_state146, ap_CS_fsm_state147, ap_CS_fsm_state148, ap_CS_fsm_state149, ap_CS_fsm_state150, ap_CS_fsm_state151, ap_CS_fsm_state152, ap_CS_fsm_state153, ap_CS_fsm_state154, ap_CS_fsm_state155, ap_CS_fsm_state156, ap_CS_fsm_state157, ap_CS_fsm_state158, ap_CS_fsm_state159, ap_CS_fsm_state160, ap_CS_fsm_state161, ap_CS_fsm_state162, ap_CS_fsm_state163, ap_CS_fsm_state164, ap_CS_fsm_state165, ap_CS_fsm_state166, ap_CS_fsm_state167, ap_CS_fsm_state168, ap_CS_fsm_state169, ap_CS_fsm_state170, ap_CS_fsm_state171, ap_CS_fsm_state172, ap_CS_fsm_state173, ap_CS_fsm_state174, ap_CS_fsm_state175, ap_CS_fsm_state176, ap_CS_fsm_state177, ap_CS_fsm_state178, ap_CS_fsm_state179, ap_CS_fsm_state180, ap_CS_fsm_state181, ap_CS_fsm_state182, ap_CS_fsm_state183, ap_CS_fsm_state184, ap_CS_fsm_state185, ap_CS_fsm_state186, ap_CS_fsm_state187, ap_CS_fsm_state188, ap_CS_fsm_state189, ap_CS_fsm_state190, ap_CS_fsm_state191, ap_CS_fsm_state192, ap_CS_fsm_state193, ap_CS_fsm_state194, ap_CS_fsm_state195, ap_CS_fsm_state196, ap_CS_fsm_state197, ap_CS_fsm_state198, ap_CS_fsm_state199, ap_CS_fsm_state200, ap_CS_fsm_state201, ap_CS_fsm_state202, ap_CS_fsm_state203, ap_CS_fsm_state204, ap_CS_fsm_state205, ap_CS_fsm_state206, ap_CS_fsm_state207, ap_CS_fsm_state208, ap_CS_fsm_state209, ap_CS_fsm_state210, ap_CS_fsm_state211, ap_CS_fsm_state212, ap_CS_fsm_state213, ap_CS_fsm_state214, ap_CS_fsm_state215, ap_CS_fsm_state216, ap_CS_fsm_state217, ap_CS_fsm_state218, ap_CS_fsm_state219, ap_CS_fsm_state220, ap_CS_fsm_state221, ap_CS_fsm_state222, ap_CS_fsm_state223, ap_CS_fsm_state224, ap_CS_fsm_state225, ap_CS_fsm_state226, ap_CS_fsm_state227, ap_CS_fsm_state228, ap_CS_fsm_state229, ap_CS_fsm_state230, ap_CS_fsm_state231, ap_CS_fsm_state232, ap_CS_fsm_state233, ap_CS_fsm_state234, ap_CS_fsm_state235, ap_CS_fsm_state236, ap_CS_fsm_state237, ap_CS_fsm_state238, ap_CS_fsm_state239, ap_CS_fsm_state240, ap_CS_fsm_state241, ap_CS_fsm_state242, ap_CS_fsm_state243, ap_CS_fsm_state244, ap_CS_fsm_state245, ap_CS_fsm_state246, ap_CS_fsm_state247, ap_CS_fsm_state248, ap_CS_fsm_state249, ap_CS_fsm_state250, ap_CS_fsm_state251, ap_CS_fsm_state252, ap_CS_fsm_state253, ap_CS_fsm_state254, ap_CS_fsm_state255, ap_CS_fsm_state256, ap_CS_fsm_state257, ap_CS_fsm_state258, ap_CS_fsm_state259, ap_CS_fsm_state260, ap_CS_fsm_state261, ap_CS_fsm_state262, ap_CS_fsm_state263, ap_CS_fsm_state264, ap_CS_fsm_state265, ap_CS_fsm_state266, ap_CS_fsm_state267, ap_CS_fsm_state268, ap_CS_fsm_state269, ap_CS_fsm_state270, ap_CS_fsm_state271, ap_CS_fsm_state272, ap_CS_fsm_state273, ap_CS_fsm_state274, ap_CS_fsm_state275, ap_CS_fsm_state276, ap_CS_fsm_state277, ap_CS_fsm_state278, ap_CS_fsm_state279, ap_CS_fsm_state280, ap_CS_fsm_state281, ap_CS_fsm_state282, ap_CS_fsm_state283, ap_CS_fsm_state284, ap_CS_fsm_state285, ap_CS_fsm_state286, ap_CS_fsm_state287, ap_CS_fsm_state288, ap_CS_fsm_state289, ap_CS_fsm_state290, ap_CS_fsm_state291, ap_CS_fsm_state292, ap_CS_fsm_state293, ap_CS_fsm_state294, ap_CS_fsm_state295, ap_CS_fsm_state296, ap_CS_fsm_state297, ap_CS_fsm_state298, ap_CS_fsm_state299, ap_CS_fsm_state300, ap_CS_fsm_state301, ap_CS_fsm_state302, ap_CS_fsm_state303, ap_CS_fsm_state304, ap_CS_fsm_state305, ap_CS_fsm_state306, ap_CS_fsm_state307, ap_CS_fsm_state308, ap_CS_fsm_state309, ap_CS_fsm_state310, ap_CS_fsm_state311, ap_CS_fsm_state312, ap_CS_fsm_state313, ap_CS_fsm_state314, ap_CS_fsm_state315, ap_CS_fsm_state316, ap_CS_fsm_state317, ap_CS_fsm_state318, ap_CS_fsm_state319, ap_CS_fsm_state320, ap_CS_fsm_state321, ap_CS_fsm_state322, ap_CS_fsm_state323, ap_CS_fsm_state324, ap_CS_fsm_state325, ap_CS_fsm_state326, ap_CS_fsm_state327, ap_CS_fsm_state328, ap_CS_fsm_state329, ap_CS_fsm_state330, ap_CS_fsm_state331, ap_CS_fsm_state332, ap_CS_fsm_state333, ap_CS_fsm_state334, ap_CS_fsm_state335, ap_CS_fsm_state336, ap_CS_fsm_state337, ap_CS_fsm_state338, ap_CS_fsm_state339, ap_CS_fsm_state340, ap_CS_fsm_state341, ap_CS_fsm_state342, ap_CS_fsm_state343, ap_CS_fsm_state344, ap_CS_fsm_state345, ap_CS_fsm_state346, ap_CS_fsm_state347, ap_CS_fsm_state348, ap_CS_fsm_state349, ap_CS_fsm_state350, ap_CS_fsm_state351, ap_CS_fsm_state352, ap_CS_fsm_state353, ap_CS_fsm_state354, ap_CS_fsm_state355, ap_CS_fsm_state356, ap_CS_fsm_state357, ap_CS_fsm_state358, ap_CS_fsm_state359, ap_CS_fsm_state360, ap_CS_fsm_state361, ap_CS_fsm_state362, ap_CS_fsm_state363, ap_CS_fsm_state364, ap_CS_fsm_state365, ap_CS_fsm_state366, ap_CS_fsm_state367, ap_CS_fsm_state368, ap_CS_fsm_state369, ap_CS_fsm_state370, ap_CS_fsm_state371, ap_CS_fsm_state372, ap_CS_fsm_state373, ap_CS_fsm_state374, ap_CS_fsm_state375, ap_CS_fsm_state376, ap_CS_fsm_state377, ap_CS_fsm_state378, ap_CS_fsm_state379, ap_CS_fsm_state380, ap_CS_fsm_state381, ap_CS_fsm_state382, ap_CS_fsm_state383, ap_CS_fsm_state384, ap_CS_fsm_state385, ap_CS_fsm_state386, ap_CS_fsm_state387, ap_CS_fsm_state388, ap_CS_fsm_state389, ap_CS_fsm_state390, ap_CS_fsm_state391, ap_CS_fsm_state392, ap_CS_fsm_state393, ap_CS_fsm_state394, ap_CS_fsm_state395, ap_CS_fsm_state396, ap_CS_fsm_state397, ap_CS_fsm_state398, ap_CS_fsm_state399, ap_CS_fsm_state400, ap_CS_fsm_state401, ap_CS_fsm_state402, ap_CS_fsm_state403, ap_CS_fsm_state404, ap_CS_fsm_state405, ap_CS_fsm_state406, ap_CS_fsm_state407, ap_CS_fsm_state408, ap_CS_fsm_state409, ap_CS_fsm_state410, ap_CS_fsm_state411, ap_CS_fsm_state412, ap_CS_fsm_state413, ap_CS_fsm_state414, ap_CS_fsm_state415, ap_CS_fsm_state416, ap_CS_fsm_state417, ap_CS_fsm_state418, ap_CS_fsm_state419, ap_CS_fsm_state420, ap_CS_fsm_state421, ap_CS_fsm_state422, ap_CS_fsm_state423, ap_CS_fsm_state424, ap_CS_fsm_state425, ap_CS_fsm_state426, ap_CS_fsm_state427, ap_CS_fsm_state428, ap_CS_fsm_state429, ap_CS_fsm_state430, ap_CS_fsm_state431, ap_CS_fsm_state40, grp_padding2d_fix16_fu_14393_output_r_address1, grp_depthwise_conv2d_fix_2_fu_14411_input_r_address1, grp_depthwise_conv2d_fix_1_fu_14435_input_r_address1, grp_depthwise_conv2d_fix_fu_14459_input_r_address1, grp_max_pooling2d_fix16_fu_14516_input_r_address1, ap_CS_fsm_state3, ap_CS_fsm_state11, ap_CS_fsm_state19, ap_CS_fsm_state27, ap_CS_fsm_state35, ap_CS_fsm_state13, ap_CS_fsm_state37, ap_CS_fsm_state21, ap_CS_fsm_state29, ap_CS_fsm_state5, ap_CS_fsm_state9, ap_CS_fsm_state17)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state431)) then 
             MemBank_B_address1 <= ap_const_lv64_30F(14 - 1 downto 0);
@@ -7269,106 +7315,120 @@ begin
             MemBank_B_address1 <= ap_const_lv64_3(14 - 1 downto 0);
         elsif ((ap_const_logic_1 = ap_CS_fsm_state40)) then 
             MemBank_B_address1 <= ap_const_lv64_1(14 - 1 downto 0);
-        elsif ((ap_const_logic_1 = ap_CS_fsm_state5)) then 
-            MemBank_B_address1 <= grp_depthwise_conv2d_fix_fu_14502_input_r_address1;
-        elsif (((ap_const_logic_1 = ap_CS_fsm_state29) or (ap_const_logic_1 = ap_CS_fsm_state21))) then 
-            MemBank_B_address1 <= grp_depthwise_conv2d_fix_1_fu_14468_input_r_address1;
         elsif (((ap_const_logic_1 = ap_CS_fsm_state17) or (ap_const_logic_1 = ap_CS_fsm_state9))) then 
-            MemBank_B_address1 <= grp_max_pooling2d_fix16_fu_14447_input_r_address1;
+            MemBank_B_address1 <= grp_max_pooling2d_fix16_fu_14516_input_r_address1;
+        elsif ((ap_const_logic_1 = ap_CS_fsm_state5)) then 
+            MemBank_B_address1 <= grp_depthwise_conv2d_fix_fu_14459_input_r_address1;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state29) or (ap_const_logic_1 = ap_CS_fsm_state21))) then 
+            MemBank_B_address1 <= grp_depthwise_conv2d_fix_1_fu_14435_input_r_address1;
         elsif (((ap_const_logic_1 = ap_CS_fsm_state37) or (ap_const_logic_1 = ap_CS_fsm_state13))) then 
-            MemBank_B_address1 <= grp_depthwise_conv2d_fix_2_fu_14423_input_r_address1;
+            MemBank_B_address1 <= grp_depthwise_conv2d_fix_2_fu_14411_input_r_address1;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state35) or (ap_const_logic_1 = ap_CS_fsm_state27) or (ap_const_logic_1 = ap_CS_fsm_state19) or (ap_const_logic_1 = ap_CS_fsm_state11) or (ap_const_logic_1 = ap_CS_fsm_state3))) then 
+            MemBank_B_address1 <= grp_padding2d_fix16_fu_14393_output_r_address1;
         else 
             MemBank_B_address1 <= "XXXXXXXXXXXXXX";
         end if; 
     end process;
 
 
-    MemBank_B_ce0_assign_proc : process(ap_CS_fsm_state41, ap_CS_fsm_state42, ap_CS_fsm_state43, ap_CS_fsm_state44, ap_CS_fsm_state45, ap_CS_fsm_state46, ap_CS_fsm_state47, ap_CS_fsm_state48, ap_CS_fsm_state49, ap_CS_fsm_state50, ap_CS_fsm_state51, ap_CS_fsm_state52, ap_CS_fsm_state53, ap_CS_fsm_state54, ap_CS_fsm_state55, ap_CS_fsm_state56, ap_CS_fsm_state57, ap_CS_fsm_state58, ap_CS_fsm_state59, ap_CS_fsm_state60, ap_CS_fsm_state61, ap_CS_fsm_state62, ap_CS_fsm_state63, ap_CS_fsm_state64, ap_CS_fsm_state65, ap_CS_fsm_state66, ap_CS_fsm_state67, ap_CS_fsm_state68, ap_CS_fsm_state69, ap_CS_fsm_state70, ap_CS_fsm_state71, ap_CS_fsm_state72, ap_CS_fsm_state73, ap_CS_fsm_state74, ap_CS_fsm_state75, ap_CS_fsm_state76, ap_CS_fsm_state77, ap_CS_fsm_state78, ap_CS_fsm_state79, ap_CS_fsm_state80, ap_CS_fsm_state81, ap_CS_fsm_state82, ap_CS_fsm_state83, ap_CS_fsm_state84, ap_CS_fsm_state85, ap_CS_fsm_state86, ap_CS_fsm_state87, ap_CS_fsm_state88, ap_CS_fsm_state89, ap_CS_fsm_state90, ap_CS_fsm_state91, ap_CS_fsm_state92, ap_CS_fsm_state93, ap_CS_fsm_state94, ap_CS_fsm_state95, ap_CS_fsm_state96, ap_CS_fsm_state97, ap_CS_fsm_state98, ap_CS_fsm_state99, ap_CS_fsm_state100, ap_CS_fsm_state101, ap_CS_fsm_state102, ap_CS_fsm_state103, ap_CS_fsm_state104, ap_CS_fsm_state105, ap_CS_fsm_state106, ap_CS_fsm_state107, ap_CS_fsm_state108, ap_CS_fsm_state109, ap_CS_fsm_state110, ap_CS_fsm_state111, ap_CS_fsm_state112, ap_CS_fsm_state113, ap_CS_fsm_state114, ap_CS_fsm_state115, ap_CS_fsm_state116, ap_CS_fsm_state117, ap_CS_fsm_state118, ap_CS_fsm_state119, ap_CS_fsm_state120, ap_CS_fsm_state121, ap_CS_fsm_state122, ap_CS_fsm_state123, ap_CS_fsm_state124, ap_CS_fsm_state125, ap_CS_fsm_state126, ap_CS_fsm_state127, ap_CS_fsm_state128, ap_CS_fsm_state129, ap_CS_fsm_state130, ap_CS_fsm_state131, ap_CS_fsm_state132, ap_CS_fsm_state133, ap_CS_fsm_state134, ap_CS_fsm_state135, ap_CS_fsm_state136, ap_CS_fsm_state137, ap_CS_fsm_state138, ap_CS_fsm_state139, ap_CS_fsm_state140, ap_CS_fsm_state141, ap_CS_fsm_state142, ap_CS_fsm_state143, ap_CS_fsm_state144, ap_CS_fsm_state145, ap_CS_fsm_state146, ap_CS_fsm_state147, ap_CS_fsm_state148, ap_CS_fsm_state149, ap_CS_fsm_state150, ap_CS_fsm_state151, ap_CS_fsm_state152, ap_CS_fsm_state153, ap_CS_fsm_state154, ap_CS_fsm_state155, ap_CS_fsm_state156, ap_CS_fsm_state157, ap_CS_fsm_state158, ap_CS_fsm_state159, ap_CS_fsm_state160, ap_CS_fsm_state161, ap_CS_fsm_state162, ap_CS_fsm_state163, ap_CS_fsm_state164, ap_CS_fsm_state165, ap_CS_fsm_state166, ap_CS_fsm_state167, ap_CS_fsm_state168, ap_CS_fsm_state169, ap_CS_fsm_state170, ap_CS_fsm_state171, ap_CS_fsm_state172, ap_CS_fsm_state173, ap_CS_fsm_state174, ap_CS_fsm_state175, ap_CS_fsm_state176, ap_CS_fsm_state177, ap_CS_fsm_state178, ap_CS_fsm_state179, ap_CS_fsm_state180, ap_CS_fsm_state181, ap_CS_fsm_state182, ap_CS_fsm_state183, ap_CS_fsm_state184, ap_CS_fsm_state185, ap_CS_fsm_state186, ap_CS_fsm_state187, ap_CS_fsm_state188, ap_CS_fsm_state189, ap_CS_fsm_state190, ap_CS_fsm_state191, ap_CS_fsm_state192, ap_CS_fsm_state193, ap_CS_fsm_state194, ap_CS_fsm_state195, ap_CS_fsm_state196, ap_CS_fsm_state197, ap_CS_fsm_state198, ap_CS_fsm_state199, ap_CS_fsm_state200, ap_CS_fsm_state201, ap_CS_fsm_state202, ap_CS_fsm_state203, ap_CS_fsm_state204, ap_CS_fsm_state205, ap_CS_fsm_state206, ap_CS_fsm_state207, ap_CS_fsm_state208, ap_CS_fsm_state209, ap_CS_fsm_state210, ap_CS_fsm_state211, ap_CS_fsm_state212, ap_CS_fsm_state213, ap_CS_fsm_state214, ap_CS_fsm_state215, ap_CS_fsm_state216, ap_CS_fsm_state217, ap_CS_fsm_state218, ap_CS_fsm_state219, ap_CS_fsm_state220, ap_CS_fsm_state221, ap_CS_fsm_state222, ap_CS_fsm_state223, ap_CS_fsm_state224, ap_CS_fsm_state225, ap_CS_fsm_state226, ap_CS_fsm_state227, ap_CS_fsm_state228, ap_CS_fsm_state229, ap_CS_fsm_state230, ap_CS_fsm_state231, ap_CS_fsm_state232, ap_CS_fsm_state233, ap_CS_fsm_state234, ap_CS_fsm_state235, ap_CS_fsm_state236, ap_CS_fsm_state237, ap_CS_fsm_state238, ap_CS_fsm_state239, ap_CS_fsm_state240, ap_CS_fsm_state241, ap_CS_fsm_state242, ap_CS_fsm_state243, ap_CS_fsm_state244, ap_CS_fsm_state245, ap_CS_fsm_state246, ap_CS_fsm_state247, ap_CS_fsm_state248, ap_CS_fsm_state249, ap_CS_fsm_state250, ap_CS_fsm_state251, ap_CS_fsm_state252, ap_CS_fsm_state253, ap_CS_fsm_state254, ap_CS_fsm_state255, ap_CS_fsm_state256, ap_CS_fsm_state257, ap_CS_fsm_state258, ap_CS_fsm_state259, ap_CS_fsm_state260, ap_CS_fsm_state261, ap_CS_fsm_state262, ap_CS_fsm_state263, ap_CS_fsm_state264, ap_CS_fsm_state265, ap_CS_fsm_state266, ap_CS_fsm_state267, ap_CS_fsm_state268, ap_CS_fsm_state269, ap_CS_fsm_state270, ap_CS_fsm_state271, ap_CS_fsm_state272, ap_CS_fsm_state273, ap_CS_fsm_state274, ap_CS_fsm_state275, ap_CS_fsm_state276, ap_CS_fsm_state277, ap_CS_fsm_state278, ap_CS_fsm_state279, ap_CS_fsm_state280, ap_CS_fsm_state281, ap_CS_fsm_state282, ap_CS_fsm_state283, ap_CS_fsm_state284, ap_CS_fsm_state285, ap_CS_fsm_state286, ap_CS_fsm_state287, ap_CS_fsm_state288, ap_CS_fsm_state289, ap_CS_fsm_state290, ap_CS_fsm_state291, ap_CS_fsm_state292, ap_CS_fsm_state293, ap_CS_fsm_state294, ap_CS_fsm_state295, ap_CS_fsm_state296, ap_CS_fsm_state297, ap_CS_fsm_state298, ap_CS_fsm_state299, ap_CS_fsm_state300, ap_CS_fsm_state301, ap_CS_fsm_state302, ap_CS_fsm_state303, ap_CS_fsm_state304, ap_CS_fsm_state305, ap_CS_fsm_state306, ap_CS_fsm_state307, ap_CS_fsm_state308, ap_CS_fsm_state309, ap_CS_fsm_state310, ap_CS_fsm_state311, ap_CS_fsm_state312, ap_CS_fsm_state313, ap_CS_fsm_state314, ap_CS_fsm_state315, ap_CS_fsm_state316, ap_CS_fsm_state317, ap_CS_fsm_state318, ap_CS_fsm_state319, ap_CS_fsm_state320, ap_CS_fsm_state321, ap_CS_fsm_state322, ap_CS_fsm_state323, ap_CS_fsm_state324, ap_CS_fsm_state325, ap_CS_fsm_state326, ap_CS_fsm_state327, ap_CS_fsm_state328, ap_CS_fsm_state329, ap_CS_fsm_state330, ap_CS_fsm_state331, ap_CS_fsm_state332, ap_CS_fsm_state333, ap_CS_fsm_state334, ap_CS_fsm_state335, ap_CS_fsm_state336, ap_CS_fsm_state337, ap_CS_fsm_state338, ap_CS_fsm_state339, ap_CS_fsm_state340, ap_CS_fsm_state341, ap_CS_fsm_state342, ap_CS_fsm_state343, ap_CS_fsm_state344, ap_CS_fsm_state345, ap_CS_fsm_state346, ap_CS_fsm_state347, ap_CS_fsm_state348, ap_CS_fsm_state349, ap_CS_fsm_state350, ap_CS_fsm_state351, ap_CS_fsm_state352, ap_CS_fsm_state353, ap_CS_fsm_state354, ap_CS_fsm_state355, ap_CS_fsm_state356, ap_CS_fsm_state357, ap_CS_fsm_state358, ap_CS_fsm_state359, ap_CS_fsm_state360, ap_CS_fsm_state361, ap_CS_fsm_state362, ap_CS_fsm_state363, ap_CS_fsm_state364, ap_CS_fsm_state365, ap_CS_fsm_state366, ap_CS_fsm_state367, ap_CS_fsm_state368, ap_CS_fsm_state369, ap_CS_fsm_state370, ap_CS_fsm_state371, ap_CS_fsm_state372, ap_CS_fsm_state373, ap_CS_fsm_state374, ap_CS_fsm_state375, ap_CS_fsm_state376, ap_CS_fsm_state377, ap_CS_fsm_state378, ap_CS_fsm_state379, ap_CS_fsm_state380, ap_CS_fsm_state381, ap_CS_fsm_state382, ap_CS_fsm_state383, ap_CS_fsm_state384, ap_CS_fsm_state385, ap_CS_fsm_state386, ap_CS_fsm_state387, ap_CS_fsm_state388, ap_CS_fsm_state389, ap_CS_fsm_state390, ap_CS_fsm_state391, ap_CS_fsm_state392, ap_CS_fsm_state393, ap_CS_fsm_state394, ap_CS_fsm_state395, ap_CS_fsm_state396, ap_CS_fsm_state397, ap_CS_fsm_state398, ap_CS_fsm_state399, ap_CS_fsm_state400, ap_CS_fsm_state401, ap_CS_fsm_state402, ap_CS_fsm_state403, ap_CS_fsm_state404, ap_CS_fsm_state405, ap_CS_fsm_state406, ap_CS_fsm_state407, ap_CS_fsm_state408, ap_CS_fsm_state409, ap_CS_fsm_state410, ap_CS_fsm_state411, ap_CS_fsm_state412, ap_CS_fsm_state413, ap_CS_fsm_state414, ap_CS_fsm_state415, ap_CS_fsm_state416, ap_CS_fsm_state417, ap_CS_fsm_state418, ap_CS_fsm_state419, ap_CS_fsm_state420, ap_CS_fsm_state421, ap_CS_fsm_state422, ap_CS_fsm_state423, ap_CS_fsm_state424, ap_CS_fsm_state425, ap_CS_fsm_state426, ap_CS_fsm_state427, ap_CS_fsm_state428, ap_CS_fsm_state429, ap_CS_fsm_state430, ap_CS_fsm_state431, ap_CS_fsm_state40, grp_pointwise_conv2d_fix_fu_14393_output_r_ce0, grp_pointwise_conv2d_fix_3_fu_14403_output_r_ce0, grp_pointwise_conv2d_fix_2_fu_14413_output_r_ce0, grp_depthwise_conv2d_fix_2_fu_14423_input_r_ce0, grp_max_pooling2d_fix16_fu_14447_input_r_ce0, grp_depthwise_conv2d_fix_1_fu_14468_input_r_ce0, grp_pointwise_conv2d_fix_1_fu_14492_output_r_ce0, grp_depthwise_conv2d_fix_fu_14502_input_r_ce0, grp_pointwise_conv2d_fix_4_fu_14508_output_r_ce0, grp_up_sampling2d_fix16_fu_14514_input_r_ce0, grp_padding2d_fix16_fu_14535_output_r_ce0, ap_CS_fsm_state7, ap_CS_fsm_state31, ap_CS_fsm_state23, ap_CS_fsm_state13, ap_CS_fsm_state37, ap_CS_fsm_state9, ap_CS_fsm_state17, ap_CS_fsm_state21, ap_CS_fsm_state29, ap_CS_fsm_state15, ap_CS_fsm_state5, ap_CS_fsm_state39, ap_CS_fsm_state25, ap_CS_fsm_state33, ap_CS_fsm_state3, ap_CS_fsm_state11, ap_CS_fsm_state19, ap_CS_fsm_state27, ap_CS_fsm_state35)
+    MemBank_B_ce0_assign_proc : process(ap_CS_fsm_state41, ap_CS_fsm_state42, ap_CS_fsm_state43, ap_CS_fsm_state44, ap_CS_fsm_state45, ap_CS_fsm_state46, ap_CS_fsm_state47, ap_CS_fsm_state48, ap_CS_fsm_state49, ap_CS_fsm_state50, ap_CS_fsm_state51, ap_CS_fsm_state52, ap_CS_fsm_state53, ap_CS_fsm_state54, ap_CS_fsm_state55, ap_CS_fsm_state56, ap_CS_fsm_state57, ap_CS_fsm_state58, ap_CS_fsm_state59, ap_CS_fsm_state60, ap_CS_fsm_state61, ap_CS_fsm_state62, ap_CS_fsm_state63, ap_CS_fsm_state64, ap_CS_fsm_state65, ap_CS_fsm_state66, ap_CS_fsm_state67, ap_CS_fsm_state68, ap_CS_fsm_state69, ap_CS_fsm_state70, ap_CS_fsm_state71, ap_CS_fsm_state72, ap_CS_fsm_state73, ap_CS_fsm_state74, ap_CS_fsm_state75, ap_CS_fsm_state76, ap_CS_fsm_state77, ap_CS_fsm_state78, ap_CS_fsm_state79, ap_CS_fsm_state80, ap_CS_fsm_state81, ap_CS_fsm_state82, ap_CS_fsm_state83, ap_CS_fsm_state84, ap_CS_fsm_state85, ap_CS_fsm_state86, ap_CS_fsm_state87, ap_CS_fsm_state88, ap_CS_fsm_state89, ap_CS_fsm_state90, ap_CS_fsm_state91, ap_CS_fsm_state92, ap_CS_fsm_state93, ap_CS_fsm_state94, ap_CS_fsm_state95, ap_CS_fsm_state96, ap_CS_fsm_state97, ap_CS_fsm_state98, ap_CS_fsm_state99, ap_CS_fsm_state100, ap_CS_fsm_state101, ap_CS_fsm_state102, ap_CS_fsm_state103, ap_CS_fsm_state104, ap_CS_fsm_state105, ap_CS_fsm_state106, ap_CS_fsm_state107, ap_CS_fsm_state108, ap_CS_fsm_state109, ap_CS_fsm_state110, ap_CS_fsm_state111, ap_CS_fsm_state112, ap_CS_fsm_state113, ap_CS_fsm_state114, ap_CS_fsm_state115, ap_CS_fsm_state116, ap_CS_fsm_state117, ap_CS_fsm_state118, ap_CS_fsm_state119, ap_CS_fsm_state120, ap_CS_fsm_state121, ap_CS_fsm_state122, ap_CS_fsm_state123, ap_CS_fsm_state124, ap_CS_fsm_state125, ap_CS_fsm_state126, ap_CS_fsm_state127, ap_CS_fsm_state128, ap_CS_fsm_state129, ap_CS_fsm_state130, ap_CS_fsm_state131, ap_CS_fsm_state132, ap_CS_fsm_state133, ap_CS_fsm_state134, ap_CS_fsm_state135, ap_CS_fsm_state136, ap_CS_fsm_state137, ap_CS_fsm_state138, ap_CS_fsm_state139, ap_CS_fsm_state140, ap_CS_fsm_state141, ap_CS_fsm_state142, ap_CS_fsm_state143, ap_CS_fsm_state144, ap_CS_fsm_state145, ap_CS_fsm_state146, ap_CS_fsm_state147, ap_CS_fsm_state148, ap_CS_fsm_state149, ap_CS_fsm_state150, ap_CS_fsm_state151, ap_CS_fsm_state152, ap_CS_fsm_state153, ap_CS_fsm_state154, ap_CS_fsm_state155, ap_CS_fsm_state156, ap_CS_fsm_state157, ap_CS_fsm_state158, ap_CS_fsm_state159, ap_CS_fsm_state160, ap_CS_fsm_state161, ap_CS_fsm_state162, ap_CS_fsm_state163, ap_CS_fsm_state164, ap_CS_fsm_state165, ap_CS_fsm_state166, ap_CS_fsm_state167, ap_CS_fsm_state168, ap_CS_fsm_state169, ap_CS_fsm_state170, ap_CS_fsm_state171, ap_CS_fsm_state172, ap_CS_fsm_state173, ap_CS_fsm_state174, ap_CS_fsm_state175, ap_CS_fsm_state176, ap_CS_fsm_state177, ap_CS_fsm_state178, ap_CS_fsm_state179, ap_CS_fsm_state180, ap_CS_fsm_state181, ap_CS_fsm_state182, ap_CS_fsm_state183, ap_CS_fsm_state184, ap_CS_fsm_state185, ap_CS_fsm_state186, ap_CS_fsm_state187, ap_CS_fsm_state188, ap_CS_fsm_state189, ap_CS_fsm_state190, ap_CS_fsm_state191, ap_CS_fsm_state192, ap_CS_fsm_state193, ap_CS_fsm_state194, ap_CS_fsm_state195, ap_CS_fsm_state196, ap_CS_fsm_state197, ap_CS_fsm_state198, ap_CS_fsm_state199, ap_CS_fsm_state200, ap_CS_fsm_state201, ap_CS_fsm_state202, ap_CS_fsm_state203, ap_CS_fsm_state204, ap_CS_fsm_state205, ap_CS_fsm_state206, ap_CS_fsm_state207, ap_CS_fsm_state208, ap_CS_fsm_state209, ap_CS_fsm_state210, ap_CS_fsm_state211, ap_CS_fsm_state212, ap_CS_fsm_state213, ap_CS_fsm_state214, ap_CS_fsm_state215, ap_CS_fsm_state216, ap_CS_fsm_state217, ap_CS_fsm_state218, ap_CS_fsm_state219, ap_CS_fsm_state220, ap_CS_fsm_state221, ap_CS_fsm_state222, ap_CS_fsm_state223, ap_CS_fsm_state224, ap_CS_fsm_state225, ap_CS_fsm_state226, ap_CS_fsm_state227, ap_CS_fsm_state228, ap_CS_fsm_state229, ap_CS_fsm_state230, ap_CS_fsm_state231, ap_CS_fsm_state232, ap_CS_fsm_state233, ap_CS_fsm_state234, ap_CS_fsm_state235, ap_CS_fsm_state236, ap_CS_fsm_state237, ap_CS_fsm_state238, ap_CS_fsm_state239, ap_CS_fsm_state240, ap_CS_fsm_state241, ap_CS_fsm_state242, ap_CS_fsm_state243, ap_CS_fsm_state244, ap_CS_fsm_state245, ap_CS_fsm_state246, ap_CS_fsm_state247, ap_CS_fsm_state248, ap_CS_fsm_state249, ap_CS_fsm_state250, ap_CS_fsm_state251, ap_CS_fsm_state252, ap_CS_fsm_state253, ap_CS_fsm_state254, ap_CS_fsm_state255, ap_CS_fsm_state256, ap_CS_fsm_state257, ap_CS_fsm_state258, ap_CS_fsm_state259, ap_CS_fsm_state260, ap_CS_fsm_state261, ap_CS_fsm_state262, ap_CS_fsm_state263, ap_CS_fsm_state264, ap_CS_fsm_state265, ap_CS_fsm_state266, ap_CS_fsm_state267, ap_CS_fsm_state268, ap_CS_fsm_state269, ap_CS_fsm_state270, ap_CS_fsm_state271, ap_CS_fsm_state272, ap_CS_fsm_state273, ap_CS_fsm_state274, ap_CS_fsm_state275, ap_CS_fsm_state276, ap_CS_fsm_state277, ap_CS_fsm_state278, ap_CS_fsm_state279, ap_CS_fsm_state280, ap_CS_fsm_state281, ap_CS_fsm_state282, ap_CS_fsm_state283, ap_CS_fsm_state284, ap_CS_fsm_state285, ap_CS_fsm_state286, ap_CS_fsm_state287, ap_CS_fsm_state288, ap_CS_fsm_state289, ap_CS_fsm_state290, ap_CS_fsm_state291, ap_CS_fsm_state292, ap_CS_fsm_state293, ap_CS_fsm_state294, ap_CS_fsm_state295, ap_CS_fsm_state296, ap_CS_fsm_state297, ap_CS_fsm_state298, ap_CS_fsm_state299, ap_CS_fsm_state300, ap_CS_fsm_state301, ap_CS_fsm_state302, ap_CS_fsm_state303, ap_CS_fsm_state304, ap_CS_fsm_state305, ap_CS_fsm_state306, ap_CS_fsm_state307, ap_CS_fsm_state308, ap_CS_fsm_state309, ap_CS_fsm_state310, ap_CS_fsm_state311, ap_CS_fsm_state312, ap_CS_fsm_state313, ap_CS_fsm_state314, ap_CS_fsm_state315, ap_CS_fsm_state316, ap_CS_fsm_state317, ap_CS_fsm_state318, ap_CS_fsm_state319, ap_CS_fsm_state320, ap_CS_fsm_state321, ap_CS_fsm_state322, ap_CS_fsm_state323, ap_CS_fsm_state324, ap_CS_fsm_state325, ap_CS_fsm_state326, ap_CS_fsm_state327, ap_CS_fsm_state328, ap_CS_fsm_state329, ap_CS_fsm_state330, ap_CS_fsm_state331, ap_CS_fsm_state332, ap_CS_fsm_state333, ap_CS_fsm_state334, ap_CS_fsm_state335, ap_CS_fsm_state336, ap_CS_fsm_state337, ap_CS_fsm_state338, ap_CS_fsm_state339, ap_CS_fsm_state340, ap_CS_fsm_state341, ap_CS_fsm_state342, ap_CS_fsm_state343, ap_CS_fsm_state344, ap_CS_fsm_state345, ap_CS_fsm_state346, ap_CS_fsm_state347, ap_CS_fsm_state348, ap_CS_fsm_state349, ap_CS_fsm_state350, ap_CS_fsm_state351, ap_CS_fsm_state352, ap_CS_fsm_state353, ap_CS_fsm_state354, ap_CS_fsm_state355, ap_CS_fsm_state356, ap_CS_fsm_state357, ap_CS_fsm_state358, ap_CS_fsm_state359, ap_CS_fsm_state360, ap_CS_fsm_state361, ap_CS_fsm_state362, ap_CS_fsm_state363, ap_CS_fsm_state364, ap_CS_fsm_state365, ap_CS_fsm_state366, ap_CS_fsm_state367, ap_CS_fsm_state368, ap_CS_fsm_state369, ap_CS_fsm_state370, ap_CS_fsm_state371, ap_CS_fsm_state372, ap_CS_fsm_state373, ap_CS_fsm_state374, ap_CS_fsm_state375, ap_CS_fsm_state376, ap_CS_fsm_state377, ap_CS_fsm_state378, ap_CS_fsm_state379, ap_CS_fsm_state380, ap_CS_fsm_state381, ap_CS_fsm_state382, ap_CS_fsm_state383, ap_CS_fsm_state384, ap_CS_fsm_state385, ap_CS_fsm_state386, ap_CS_fsm_state387, ap_CS_fsm_state388, ap_CS_fsm_state389, ap_CS_fsm_state390, ap_CS_fsm_state391, ap_CS_fsm_state392, ap_CS_fsm_state393, ap_CS_fsm_state394, ap_CS_fsm_state395, ap_CS_fsm_state396, ap_CS_fsm_state397, ap_CS_fsm_state398, ap_CS_fsm_state399, ap_CS_fsm_state400, ap_CS_fsm_state401, ap_CS_fsm_state402, ap_CS_fsm_state403, ap_CS_fsm_state404, ap_CS_fsm_state405, ap_CS_fsm_state406, ap_CS_fsm_state407, ap_CS_fsm_state408, ap_CS_fsm_state409, ap_CS_fsm_state410, ap_CS_fsm_state411, ap_CS_fsm_state412, ap_CS_fsm_state413, ap_CS_fsm_state414, ap_CS_fsm_state415, ap_CS_fsm_state416, ap_CS_fsm_state417, ap_CS_fsm_state418, ap_CS_fsm_state419, ap_CS_fsm_state420, ap_CS_fsm_state421, ap_CS_fsm_state422, ap_CS_fsm_state423, ap_CS_fsm_state424, ap_CS_fsm_state425, ap_CS_fsm_state426, ap_CS_fsm_state427, ap_CS_fsm_state428, ap_CS_fsm_state429, ap_CS_fsm_state430, ap_CS_fsm_state431, ap_CS_fsm_state40, grp_padding2d_fix16_fu_14393_output_r_ce0, grp_depthwise_conv2d_fix_2_fu_14411_input_r_ce0, grp_depthwise_conv2d_fix_1_fu_14435_input_r_ce0, grp_depthwise_conv2d_fix_fu_14459_input_r_ce0, grp_pointwise_conv2d_fix_fu_14465_output_r_ce0, grp_pointwise_conv2d_fix_3_fu_14475_output_r_ce0, grp_pointwise_conv2d_fix_2_fu_14485_output_r_ce0, grp_up_sampling2d_fix16_fu_14495_input_r_ce0, grp_max_pooling2d_fix16_fu_14516_input_r_ce0, grp_pointwise_conv2d_fix_1_fu_14537_output_r_ce0, grp_pointwise_conv2d_fix_4_fu_14547_output_r_ce0, ap_CS_fsm_state3, ap_CS_fsm_state11, ap_CS_fsm_state19, ap_CS_fsm_state27, ap_CS_fsm_state35, ap_CS_fsm_state13, ap_CS_fsm_state37, ap_CS_fsm_state21, ap_CS_fsm_state29, ap_CS_fsm_state5, ap_CS_fsm_state7, ap_CS_fsm_state31, ap_CS_fsm_state23, ap_CS_fsm_state25, ap_CS_fsm_state33, ap_CS_fsm_state9, ap_CS_fsm_state17, ap_CS_fsm_state15, ap_CS_fsm_state39)
     begin
         if (((ap_const_logic_1 = ap_CS_fsm_state40) or (ap_const_logic_1 = ap_CS_fsm_state431) or (ap_const_logic_1 = ap_CS_fsm_state430) or (ap_const_logic_1 = ap_CS_fsm_state429) or (ap_const_logic_1 = ap_CS_fsm_state428) or (ap_const_logic_1 = ap_CS_fsm_state427) or (ap_const_logic_1 = ap_CS_fsm_state426) or (ap_const_logic_1 = ap_CS_fsm_state425) or (ap_const_logic_1 = ap_CS_fsm_state424) or (ap_const_logic_1 = ap_CS_fsm_state423) or (ap_const_logic_1 = ap_CS_fsm_state422) or (ap_const_logic_1 = ap_CS_fsm_state421) or (ap_const_logic_1 = ap_CS_fsm_state420) or (ap_const_logic_1 = ap_CS_fsm_state419) or (ap_const_logic_1 = ap_CS_fsm_state418) or (ap_const_logic_1 = ap_CS_fsm_state417) or (ap_const_logic_1 = ap_CS_fsm_state416) or (ap_const_logic_1 = ap_CS_fsm_state415) or (ap_const_logic_1 = ap_CS_fsm_state414) or (ap_const_logic_1 = ap_CS_fsm_state413) or (ap_const_logic_1 = ap_CS_fsm_state412) or (ap_const_logic_1 = ap_CS_fsm_state411) or (ap_const_logic_1 = ap_CS_fsm_state410) or (ap_const_logic_1 = ap_CS_fsm_state409) or (ap_const_logic_1 = ap_CS_fsm_state408) or (ap_const_logic_1 = ap_CS_fsm_state407) or (ap_const_logic_1 = ap_CS_fsm_state406) or (ap_const_logic_1 = ap_CS_fsm_state405) or (ap_const_logic_1 = ap_CS_fsm_state404) or (ap_const_logic_1 = ap_CS_fsm_state403) or (ap_const_logic_1 = ap_CS_fsm_state402) or (ap_const_logic_1 = ap_CS_fsm_state401) or (ap_const_logic_1 = ap_CS_fsm_state400) or (ap_const_logic_1 = ap_CS_fsm_state399) or (ap_const_logic_1 = ap_CS_fsm_state398) or (ap_const_logic_1 = ap_CS_fsm_state397) or (ap_const_logic_1 = ap_CS_fsm_state396) or (ap_const_logic_1 = ap_CS_fsm_state395) or (ap_const_logic_1 = ap_CS_fsm_state394) or (ap_const_logic_1 = ap_CS_fsm_state393) or (ap_const_logic_1 = ap_CS_fsm_state392) or (ap_const_logic_1 = ap_CS_fsm_state391) or (ap_const_logic_1 = ap_CS_fsm_state390) or (ap_const_logic_1 = ap_CS_fsm_state389) or (ap_const_logic_1 = ap_CS_fsm_state388) or (ap_const_logic_1 = ap_CS_fsm_state387) or (ap_const_logic_1 = ap_CS_fsm_state386) or (ap_const_logic_1 = ap_CS_fsm_state385) or (ap_const_logic_1 = ap_CS_fsm_state384) or (ap_const_logic_1 = ap_CS_fsm_state383) or (ap_const_logic_1 = ap_CS_fsm_state382) or (ap_const_logic_1 = ap_CS_fsm_state381) or (ap_const_logic_1 = ap_CS_fsm_state380) or (ap_const_logic_1 = ap_CS_fsm_state379) or (ap_const_logic_1 = ap_CS_fsm_state378) or (ap_const_logic_1 = ap_CS_fsm_state377) or (ap_const_logic_1 = ap_CS_fsm_state376) or (ap_const_logic_1 = ap_CS_fsm_state375) or (ap_const_logic_1 = ap_CS_fsm_state374) or (ap_const_logic_1 = ap_CS_fsm_state373) or (ap_const_logic_1 = ap_CS_fsm_state372) or (ap_const_logic_1 = ap_CS_fsm_state371) or (ap_const_logic_1 = ap_CS_fsm_state370) or (ap_const_logic_1 = ap_CS_fsm_state369) or (ap_const_logic_1 = ap_CS_fsm_state368) or (ap_const_logic_1 = ap_CS_fsm_state367) or (ap_const_logic_1 = ap_CS_fsm_state366) or (ap_const_logic_1 = ap_CS_fsm_state365) or (ap_const_logic_1 = ap_CS_fsm_state364) or (ap_const_logic_1 = ap_CS_fsm_state363) or (ap_const_logic_1 = ap_CS_fsm_state362) or (ap_const_logic_1 = ap_CS_fsm_state361) or (ap_const_logic_1 = ap_CS_fsm_state360) or (ap_const_logic_1 = ap_CS_fsm_state359) or (ap_const_logic_1 = ap_CS_fsm_state358) or (ap_const_logic_1 = ap_CS_fsm_state357) or (ap_const_logic_1 = ap_CS_fsm_state356) or (ap_const_logic_1 = ap_CS_fsm_state355) or (ap_const_logic_1 = ap_CS_fsm_state354) or (ap_const_logic_1 = ap_CS_fsm_state353) or (ap_const_logic_1 = ap_CS_fsm_state352) or (ap_const_logic_1 = ap_CS_fsm_state351) or (ap_const_logic_1 = ap_CS_fsm_state350) or (ap_const_logic_1 = ap_CS_fsm_state349) or (ap_const_logic_1 = ap_CS_fsm_state348) or (ap_const_logic_1 = ap_CS_fsm_state347) or (ap_const_logic_1 = ap_CS_fsm_state346) or (ap_const_logic_1 = ap_CS_fsm_state345) or (ap_const_logic_1 = ap_CS_fsm_state344) or (ap_const_logic_1 = ap_CS_fsm_state343) or (ap_const_logic_1 = ap_CS_fsm_state342) or (ap_const_logic_1 = ap_CS_fsm_state341) or (ap_const_logic_1 = ap_CS_fsm_state340) or (ap_const_logic_1 = ap_CS_fsm_state339) or (ap_const_logic_1 = ap_CS_fsm_state338) or (ap_const_logic_1 = ap_CS_fsm_state337) or (ap_const_logic_1 = ap_CS_fsm_state336) or (ap_const_logic_1 = ap_CS_fsm_state335) or (ap_const_logic_1 = ap_CS_fsm_state334) or (ap_const_logic_1 = ap_CS_fsm_state333) or (ap_const_logic_1 = ap_CS_fsm_state332) or (ap_const_logic_1 = ap_CS_fsm_state331) or (ap_const_logic_1 = ap_CS_fsm_state330) or (ap_const_logic_1 = ap_CS_fsm_state329) or (ap_const_logic_1 = ap_CS_fsm_state328) or (ap_const_logic_1 = ap_CS_fsm_state327) or (ap_const_logic_1 = ap_CS_fsm_state326) or (ap_const_logic_1 = ap_CS_fsm_state325) or (ap_const_logic_1 = ap_CS_fsm_state324) or (ap_const_logic_1 = ap_CS_fsm_state323) or (ap_const_logic_1 = ap_CS_fsm_state322) or (ap_const_logic_1 = ap_CS_fsm_state321) or (ap_const_logic_1 = ap_CS_fsm_state320) or (ap_const_logic_1 = ap_CS_fsm_state319) or (ap_const_logic_1 = ap_CS_fsm_state318) or (ap_const_logic_1 = ap_CS_fsm_state317) or (ap_const_logic_1 = ap_CS_fsm_state316) or (ap_const_logic_1 = ap_CS_fsm_state315) or (ap_const_logic_1 = ap_CS_fsm_state314) or (ap_const_logic_1 = ap_CS_fsm_state313) or (ap_const_logic_1 = ap_CS_fsm_state312) or (ap_const_logic_1 = ap_CS_fsm_state311) or (ap_const_logic_1 = ap_CS_fsm_state310) or (ap_const_logic_1 = ap_CS_fsm_state309) or (ap_const_logic_1 = ap_CS_fsm_state308) or (ap_const_logic_1 = ap_CS_fsm_state307) or (ap_const_logic_1 = ap_CS_fsm_state306) or (ap_const_logic_1 = ap_CS_fsm_state305) or (ap_const_logic_1 = ap_CS_fsm_state304) or (ap_const_logic_1 = ap_CS_fsm_state303) or (ap_const_logic_1 = ap_CS_fsm_state302) or (ap_const_logic_1 = ap_CS_fsm_state301) or (ap_const_logic_1 = ap_CS_fsm_state300) or (ap_const_logic_1 = ap_CS_fsm_state299) or (ap_const_logic_1 = ap_CS_fsm_state298) or (ap_const_logic_1 = ap_CS_fsm_state297) or (ap_const_logic_1 = ap_CS_fsm_state296) or (ap_const_logic_1 = ap_CS_fsm_state295) or (ap_const_logic_1 = ap_CS_fsm_state294) or (ap_const_logic_1 = ap_CS_fsm_state293) or (ap_const_logic_1 = ap_CS_fsm_state292) or (ap_const_logic_1 = ap_CS_fsm_state291) or (ap_const_logic_1 = ap_CS_fsm_state290) or (ap_const_logic_1 = ap_CS_fsm_state289) or (ap_const_logic_1 = ap_CS_fsm_state288) or (ap_const_logic_1 = ap_CS_fsm_state287) or (ap_const_logic_1 = ap_CS_fsm_state286) or (ap_const_logic_1 = ap_CS_fsm_state285) or (ap_const_logic_1 = ap_CS_fsm_state284) or (ap_const_logic_1 = ap_CS_fsm_state283) or (ap_const_logic_1 = ap_CS_fsm_state282) or (ap_const_logic_1 = ap_CS_fsm_state281) or (ap_const_logic_1 = ap_CS_fsm_state280) or (ap_const_logic_1 = ap_CS_fsm_state279) or (ap_const_logic_1 = ap_CS_fsm_state278) or (ap_const_logic_1 = ap_CS_fsm_state277) or (ap_const_logic_1 = ap_CS_fsm_state276) or (ap_const_logic_1 = ap_CS_fsm_state275) or (ap_const_logic_1 = ap_CS_fsm_state274) or (ap_const_logic_1 = ap_CS_fsm_state273) or (ap_const_logic_1 = ap_CS_fsm_state272) or (ap_const_logic_1 = ap_CS_fsm_state271) or (ap_const_logic_1 = ap_CS_fsm_state270) or (ap_const_logic_1 = ap_CS_fsm_state269) or (ap_const_logic_1 = ap_CS_fsm_state268) or (ap_const_logic_1 = ap_CS_fsm_state267) or (ap_const_logic_1 = ap_CS_fsm_state266) or (ap_const_logic_1 = ap_CS_fsm_state265) or (ap_const_logic_1 = ap_CS_fsm_state264) or (ap_const_logic_1 = ap_CS_fsm_state263) or (ap_const_logic_1 = ap_CS_fsm_state262) or (ap_const_logic_1 = ap_CS_fsm_state261) or (ap_const_logic_1 = ap_CS_fsm_state260) or (ap_const_logic_1 = ap_CS_fsm_state259) or (ap_const_logic_1 = ap_CS_fsm_state258) or (ap_const_logic_1 = ap_CS_fsm_state257) or (ap_const_logic_1 = ap_CS_fsm_state256) or (ap_const_logic_1 = ap_CS_fsm_state255) or (ap_const_logic_1 = ap_CS_fsm_state254) or (ap_const_logic_1 = ap_CS_fsm_state253) or (ap_const_logic_1 = ap_CS_fsm_state252) or (ap_const_logic_1 = ap_CS_fsm_state251) or (ap_const_logic_1 = ap_CS_fsm_state250) or (ap_const_logic_1 = ap_CS_fsm_state249) or (ap_const_logic_1 = ap_CS_fsm_state248) or (ap_const_logic_1 = ap_CS_fsm_state247) or (ap_const_logic_1 = ap_CS_fsm_state246) or (ap_const_logic_1 = ap_CS_fsm_state245) or (ap_const_logic_1 = ap_CS_fsm_state244) or (ap_const_logic_1 = ap_CS_fsm_state243) or (ap_const_logic_1 = ap_CS_fsm_state242) or (ap_const_logic_1 = ap_CS_fsm_state241) or (ap_const_logic_1 = ap_CS_fsm_state240) or (ap_const_logic_1 = ap_CS_fsm_state239) or (ap_const_logic_1 = ap_CS_fsm_state238) or (ap_const_logic_1 = ap_CS_fsm_state237) or (ap_const_logic_1 = ap_CS_fsm_state236) or (ap_const_logic_1 = ap_CS_fsm_state235) or (ap_const_logic_1 = ap_CS_fsm_state234) or (ap_const_logic_1 = ap_CS_fsm_state233) or (ap_const_logic_1 = ap_CS_fsm_state232) or (ap_const_logic_1 = ap_CS_fsm_state231) or (ap_const_logic_1 = ap_CS_fsm_state230) or (ap_const_logic_1 = ap_CS_fsm_state229) or (ap_const_logic_1 = ap_CS_fsm_state228) or (ap_const_logic_1 = ap_CS_fsm_state227) or (ap_const_logic_1 = ap_CS_fsm_state226) or (ap_const_logic_1 = ap_CS_fsm_state225) or (ap_const_logic_1 = ap_CS_fsm_state224) or (ap_const_logic_1 = ap_CS_fsm_state223) or (ap_const_logic_1 = ap_CS_fsm_state222) or (ap_const_logic_1 = ap_CS_fsm_state221) or (ap_const_logic_1 = ap_CS_fsm_state220) or (ap_const_logic_1 = ap_CS_fsm_state219) or (ap_const_logic_1 = ap_CS_fsm_state218) or (ap_const_logic_1 = ap_CS_fsm_state217) or (ap_const_logic_1 = ap_CS_fsm_state216) or (ap_const_logic_1 = ap_CS_fsm_state215) or (ap_const_logic_1 = ap_CS_fsm_state214) or (ap_const_logic_1 = ap_CS_fsm_state213) or (ap_const_logic_1 = ap_CS_fsm_state212) or (ap_const_logic_1 = ap_CS_fsm_state211) or (ap_const_logic_1 = ap_CS_fsm_state210) or (ap_const_logic_1 = ap_CS_fsm_state209) or (ap_const_logic_1 = ap_CS_fsm_state208) or (ap_const_logic_1 = ap_CS_fsm_state207) or (ap_const_logic_1 = ap_CS_fsm_state206) or (ap_const_logic_1 = ap_CS_fsm_state205) or (ap_const_logic_1 = ap_CS_fsm_state204) or (ap_const_logic_1 = ap_CS_fsm_state203) or (ap_const_logic_1 = ap_CS_fsm_state202) or (ap_const_logic_1 = ap_CS_fsm_state201) or (ap_const_logic_1 = ap_CS_fsm_state200) or (ap_const_logic_1 = ap_CS_fsm_state199) or (ap_const_logic_1 = ap_CS_fsm_state198) or (ap_const_logic_1 = ap_CS_fsm_state197) or (ap_const_logic_1 = ap_CS_fsm_state196) or (ap_const_logic_1 = ap_CS_fsm_state195) or (ap_const_logic_1 = ap_CS_fsm_state194) or (ap_const_logic_1 = ap_CS_fsm_state193) or (ap_const_logic_1 = ap_CS_fsm_state192) or (ap_const_logic_1 = ap_CS_fsm_state191) or (ap_const_logic_1 = ap_CS_fsm_state190) or (ap_const_logic_1 = ap_CS_fsm_state189) or (ap_const_logic_1 = ap_CS_fsm_state188) or (ap_const_logic_1 = ap_CS_fsm_state187) or (ap_const_logic_1 = ap_CS_fsm_state186) or (ap_const_logic_1 = ap_CS_fsm_state185) or (ap_const_logic_1 = ap_CS_fsm_state184) or (ap_const_logic_1 = ap_CS_fsm_state183) or (ap_const_logic_1 = ap_CS_fsm_state182) or (ap_const_logic_1 = ap_CS_fsm_state181) or (ap_const_logic_1 = ap_CS_fsm_state180) or (ap_const_logic_1 = ap_CS_fsm_state179) or (ap_const_logic_1 = ap_CS_fsm_state178) or (ap_const_logic_1 = ap_CS_fsm_state177) or (ap_const_logic_1 = ap_CS_fsm_state176) or (ap_const_logic_1 = ap_CS_fsm_state175) or (ap_const_logic_1 = ap_CS_fsm_state174) or (ap_const_logic_1 = ap_CS_fsm_state173) or (ap_const_logic_1 = ap_CS_fsm_state172) or (ap_const_logic_1 = ap_CS_fsm_state171) or (ap_const_logic_1 = ap_CS_fsm_state170) or (ap_const_logic_1 = ap_CS_fsm_state169) or (ap_const_logic_1 = ap_CS_fsm_state168) or (ap_const_logic_1 = ap_CS_fsm_state167) or (ap_const_logic_1 = ap_CS_fsm_state166) or (ap_const_logic_1 = ap_CS_fsm_state165) or (ap_const_logic_1 = ap_CS_fsm_state164) or (ap_const_logic_1 = ap_CS_fsm_state163) or (ap_const_logic_1 = ap_CS_fsm_state162) or (ap_const_logic_1 = ap_CS_fsm_state161) or (ap_const_logic_1 = ap_CS_fsm_state160) or (ap_const_logic_1 = ap_CS_fsm_state159) or (ap_const_logic_1 = ap_CS_fsm_state158) or (ap_const_logic_1 = ap_CS_fsm_state157) or (ap_const_logic_1 = ap_CS_fsm_state156) or (ap_const_logic_1 = ap_CS_fsm_state155) or (ap_const_logic_1 = ap_CS_fsm_state154) or (ap_const_logic_1 = ap_CS_fsm_state153) or (ap_const_logic_1 = ap_CS_fsm_state152) or (ap_const_logic_1 = ap_CS_fsm_state151) or (ap_const_logic_1 = ap_CS_fsm_state150) or (ap_const_logic_1 = ap_CS_fsm_state149) or (ap_const_logic_1 = ap_CS_fsm_state148) or (ap_const_logic_1 = ap_CS_fsm_state147) or (ap_const_logic_1 = ap_CS_fsm_state146) or (ap_const_logic_1 = ap_CS_fsm_state145) or (ap_const_logic_1 = ap_CS_fsm_state144) or (ap_const_logic_1 = ap_CS_fsm_state143) or (ap_const_logic_1 = ap_CS_fsm_state142) or (ap_const_logic_1 = ap_CS_fsm_state141) or (ap_const_logic_1 = ap_CS_fsm_state140) or (ap_const_logic_1 = ap_CS_fsm_state139) or (ap_const_logic_1 = ap_CS_fsm_state138) or (ap_const_logic_1 = ap_CS_fsm_state137) or (ap_const_logic_1 = ap_CS_fsm_state136) or (ap_const_logic_1 = ap_CS_fsm_state135) or (ap_const_logic_1 = ap_CS_fsm_state134) or (ap_const_logic_1 = ap_CS_fsm_state133) or (ap_const_logic_1 = ap_CS_fsm_state132) or (ap_const_logic_1 = ap_CS_fsm_state131) or (ap_const_logic_1 = ap_CS_fsm_state130) or (ap_const_logic_1 = ap_CS_fsm_state129) or (ap_const_logic_1 = ap_CS_fsm_state128) or (ap_const_logic_1 = ap_CS_fsm_state127) or (ap_const_logic_1 = ap_CS_fsm_state126) or (ap_const_logic_1 = ap_CS_fsm_state125) or (ap_const_logic_1 = ap_CS_fsm_state124) or (ap_const_logic_1 = ap_CS_fsm_state123) or (ap_const_logic_1 = ap_CS_fsm_state122) or (ap_const_logic_1 = ap_CS_fsm_state121) or (ap_const_logic_1 = ap_CS_fsm_state120) or (ap_const_logic_1 = ap_CS_fsm_state119) or (ap_const_logic_1 = ap_CS_fsm_state118) or (ap_const_logic_1 = ap_CS_fsm_state117) or (ap_const_logic_1 = ap_CS_fsm_state116) or (ap_const_logic_1 = ap_CS_fsm_state115) or (ap_const_logic_1 = ap_CS_fsm_state114) or (ap_const_logic_1 = ap_CS_fsm_state113) or (ap_const_logic_1 = ap_CS_fsm_state112) or (ap_const_logic_1 = ap_CS_fsm_state111) or (ap_const_logic_1 = ap_CS_fsm_state110) or (ap_const_logic_1 = ap_CS_fsm_state109) or (ap_const_logic_1 = ap_CS_fsm_state108) or (ap_const_logic_1 = ap_CS_fsm_state107) or (ap_const_logic_1 = ap_CS_fsm_state106) or (ap_const_logic_1 = ap_CS_fsm_state105) or (ap_const_logic_1 = ap_CS_fsm_state104) or (ap_const_logic_1 = ap_CS_fsm_state103) or (ap_const_logic_1 = ap_CS_fsm_state102) or (ap_const_logic_1 = ap_CS_fsm_state101) or (ap_const_logic_1 = ap_CS_fsm_state100) or (ap_const_logic_1 = ap_CS_fsm_state99) or (ap_const_logic_1 = ap_CS_fsm_state98) or (ap_const_logic_1 = ap_CS_fsm_state97) or (ap_const_logic_1 = ap_CS_fsm_state96) or (ap_const_logic_1 = ap_CS_fsm_state95) or (ap_const_logic_1 = ap_CS_fsm_state94) or (ap_const_logic_1 = ap_CS_fsm_state93) or (ap_const_logic_1 = ap_CS_fsm_state92) or (ap_const_logic_1 = ap_CS_fsm_state91) or (ap_const_logic_1 = ap_CS_fsm_state90) or (ap_const_logic_1 = ap_CS_fsm_state89) or (ap_const_logic_1 = ap_CS_fsm_state88) or (ap_const_logic_1 = ap_CS_fsm_state87) or (ap_const_logic_1 = ap_CS_fsm_state86) or (ap_const_logic_1 = ap_CS_fsm_state85) or (ap_const_logic_1 = ap_CS_fsm_state84) or (ap_const_logic_1 = ap_CS_fsm_state83) or (ap_const_logic_1 = ap_CS_fsm_state82) or (ap_const_logic_1 = ap_CS_fsm_state81) or (ap_const_logic_1 = ap_CS_fsm_state80) or (ap_const_logic_1 = ap_CS_fsm_state79) or (ap_const_logic_1 = ap_CS_fsm_state78) or (ap_const_logic_1 = ap_CS_fsm_state77) or (ap_const_logic_1 = ap_CS_fsm_state76) or (ap_const_logic_1 = ap_CS_fsm_state75) or (ap_const_logic_1 = ap_CS_fsm_state74) or (ap_const_logic_1 = ap_CS_fsm_state73) or (ap_const_logic_1 = ap_CS_fsm_state72) or (ap_const_logic_1 = ap_CS_fsm_state71) or (ap_const_logic_1 = ap_CS_fsm_state70) or (ap_const_logic_1 = ap_CS_fsm_state69) or (ap_const_logic_1 = ap_CS_fsm_state68) or (ap_const_logic_1 = ap_CS_fsm_state67) or (ap_const_logic_1 = ap_CS_fsm_state66) or (ap_const_logic_1 = ap_CS_fsm_state65) or (ap_const_logic_1 = ap_CS_fsm_state64) or (ap_const_logic_1 = ap_CS_fsm_state63) or (ap_const_logic_1 = ap_CS_fsm_state62) or (ap_const_logic_1 = ap_CS_fsm_state61) or (ap_const_logic_1 = ap_CS_fsm_state60) or (ap_const_logic_1 = ap_CS_fsm_state59) or (ap_const_logic_1 = ap_CS_fsm_state58) or (ap_const_logic_1 = ap_CS_fsm_state57) or (ap_const_logic_1 = ap_CS_fsm_state56) or (ap_const_logic_1 = ap_CS_fsm_state55) or (ap_const_logic_1 = ap_CS_fsm_state54) or (ap_const_logic_1 = ap_CS_fsm_state53) or (ap_const_logic_1 = ap_CS_fsm_state52) or (ap_const_logic_1 = ap_CS_fsm_state51) or (ap_const_logic_1 = ap_CS_fsm_state50) or (ap_const_logic_1 = ap_CS_fsm_state49) or (ap_const_logic_1 = ap_CS_fsm_state48) or (ap_const_logic_1 = ap_CS_fsm_state47) or (ap_const_logic_1 = ap_CS_fsm_state46) or (ap_const_logic_1 = ap_CS_fsm_state45) or (ap_const_logic_1 = ap_CS_fsm_state44) or (ap_const_logic_1 = ap_CS_fsm_state43) or (ap_const_logic_1 = ap_CS_fsm_state42) or (ap_const_logic_1 = ap_CS_fsm_state41))) then 
             MemBank_B_ce0 <= ap_const_logic_1;
-        elsif (((ap_const_logic_1 = ap_CS_fsm_state35) or (ap_const_logic_1 = ap_CS_fsm_state27) or (ap_const_logic_1 = ap_CS_fsm_state19) or (ap_const_logic_1 = ap_CS_fsm_state11) or (ap_const_logic_1 = ap_CS_fsm_state3))) then 
-            MemBank_B_ce0 <= grp_padding2d_fix16_fu_14535_output_r_ce0;
-        elsif (((ap_const_logic_1 = ap_CS_fsm_state33) or (ap_const_logic_1 = ap_CS_fsm_state25))) then 
-            MemBank_B_ce0 <= grp_up_sampling2d_fix16_fu_14514_input_r_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state39)) then 
-            MemBank_B_ce0 <= grp_pointwise_conv2d_fix_4_fu_14508_output_r_ce0;
-        elsif ((ap_const_logic_1 = ap_CS_fsm_state5)) then 
-            MemBank_B_ce0 <= grp_depthwise_conv2d_fix_fu_14502_input_r_ce0;
+            MemBank_B_ce0 <= grp_pointwise_conv2d_fix_4_fu_14547_output_r_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state15)) then 
-            MemBank_B_ce0 <= grp_pointwise_conv2d_fix_1_fu_14492_output_r_ce0;
-        elsif (((ap_const_logic_1 = ap_CS_fsm_state29) or (ap_const_logic_1 = ap_CS_fsm_state21))) then 
-            MemBank_B_ce0 <= grp_depthwise_conv2d_fix_1_fu_14468_input_r_ce0;
+            MemBank_B_ce0 <= grp_pointwise_conv2d_fix_1_fu_14537_output_r_ce0;
         elsif (((ap_const_logic_1 = ap_CS_fsm_state17) or (ap_const_logic_1 = ap_CS_fsm_state9))) then 
-            MemBank_B_ce0 <= grp_max_pooling2d_fix16_fu_14447_input_r_ce0;
-        elsif (((ap_const_logic_1 = ap_CS_fsm_state37) or (ap_const_logic_1 = ap_CS_fsm_state13))) then 
-            MemBank_B_ce0 <= grp_depthwise_conv2d_fix_2_fu_14423_input_r_ce0;
+            MemBank_B_ce0 <= grp_max_pooling2d_fix16_fu_14516_input_r_ce0;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state33) or (ap_const_logic_1 = ap_CS_fsm_state25))) then 
+            MemBank_B_ce0 <= grp_up_sampling2d_fix16_fu_14495_input_r_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state23)) then 
-            MemBank_B_ce0 <= grp_pointwise_conv2d_fix_2_fu_14413_output_r_ce0;
+            MemBank_B_ce0 <= grp_pointwise_conv2d_fix_2_fu_14485_output_r_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            MemBank_B_ce0 <= grp_pointwise_conv2d_fix_3_fu_14403_output_r_ce0;
+            MemBank_B_ce0 <= grp_pointwise_conv2d_fix_3_fu_14475_output_r_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state7)) then 
-            MemBank_B_ce0 <= grp_pointwise_conv2d_fix_fu_14393_output_r_ce0;
+            MemBank_B_ce0 <= grp_pointwise_conv2d_fix_fu_14465_output_r_ce0;
+        elsif ((ap_const_logic_1 = ap_CS_fsm_state5)) then 
+            MemBank_B_ce0 <= grp_depthwise_conv2d_fix_fu_14459_input_r_ce0;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state29) or (ap_const_logic_1 = ap_CS_fsm_state21))) then 
+            MemBank_B_ce0 <= grp_depthwise_conv2d_fix_1_fu_14435_input_r_ce0;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state37) or (ap_const_logic_1 = ap_CS_fsm_state13))) then 
+            MemBank_B_ce0 <= grp_depthwise_conv2d_fix_2_fu_14411_input_r_ce0;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state35) or (ap_const_logic_1 = ap_CS_fsm_state27) or (ap_const_logic_1 = ap_CS_fsm_state19) or (ap_const_logic_1 = ap_CS_fsm_state11) or (ap_const_logic_1 = ap_CS_fsm_state3))) then 
+            MemBank_B_ce0 <= grp_padding2d_fix16_fu_14393_output_r_ce0;
         else 
             MemBank_B_ce0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    MemBank_B_ce1_assign_proc : process(ap_CS_fsm_state41, ap_CS_fsm_state42, ap_CS_fsm_state43, ap_CS_fsm_state44, ap_CS_fsm_state45, ap_CS_fsm_state46, ap_CS_fsm_state47, ap_CS_fsm_state48, ap_CS_fsm_state49, ap_CS_fsm_state50, ap_CS_fsm_state51, ap_CS_fsm_state52, ap_CS_fsm_state53, ap_CS_fsm_state54, ap_CS_fsm_state55, ap_CS_fsm_state56, ap_CS_fsm_state57, ap_CS_fsm_state58, ap_CS_fsm_state59, ap_CS_fsm_state60, ap_CS_fsm_state61, ap_CS_fsm_state62, ap_CS_fsm_state63, ap_CS_fsm_state64, ap_CS_fsm_state65, ap_CS_fsm_state66, ap_CS_fsm_state67, ap_CS_fsm_state68, ap_CS_fsm_state69, ap_CS_fsm_state70, ap_CS_fsm_state71, ap_CS_fsm_state72, ap_CS_fsm_state73, ap_CS_fsm_state74, ap_CS_fsm_state75, ap_CS_fsm_state76, ap_CS_fsm_state77, ap_CS_fsm_state78, ap_CS_fsm_state79, ap_CS_fsm_state80, ap_CS_fsm_state81, ap_CS_fsm_state82, ap_CS_fsm_state83, ap_CS_fsm_state84, ap_CS_fsm_state85, ap_CS_fsm_state86, ap_CS_fsm_state87, ap_CS_fsm_state88, ap_CS_fsm_state89, ap_CS_fsm_state90, ap_CS_fsm_state91, ap_CS_fsm_state92, ap_CS_fsm_state93, ap_CS_fsm_state94, ap_CS_fsm_state95, ap_CS_fsm_state96, ap_CS_fsm_state97, ap_CS_fsm_state98, ap_CS_fsm_state99, ap_CS_fsm_state100, ap_CS_fsm_state101, ap_CS_fsm_state102, ap_CS_fsm_state103, ap_CS_fsm_state104, ap_CS_fsm_state105, ap_CS_fsm_state106, ap_CS_fsm_state107, ap_CS_fsm_state108, ap_CS_fsm_state109, ap_CS_fsm_state110, ap_CS_fsm_state111, ap_CS_fsm_state112, ap_CS_fsm_state113, ap_CS_fsm_state114, ap_CS_fsm_state115, ap_CS_fsm_state116, ap_CS_fsm_state117, ap_CS_fsm_state118, ap_CS_fsm_state119, ap_CS_fsm_state120, ap_CS_fsm_state121, ap_CS_fsm_state122, ap_CS_fsm_state123, ap_CS_fsm_state124, ap_CS_fsm_state125, ap_CS_fsm_state126, ap_CS_fsm_state127, ap_CS_fsm_state128, ap_CS_fsm_state129, ap_CS_fsm_state130, ap_CS_fsm_state131, ap_CS_fsm_state132, ap_CS_fsm_state133, ap_CS_fsm_state134, ap_CS_fsm_state135, ap_CS_fsm_state136, ap_CS_fsm_state137, ap_CS_fsm_state138, ap_CS_fsm_state139, ap_CS_fsm_state140, ap_CS_fsm_state141, ap_CS_fsm_state142, ap_CS_fsm_state143, ap_CS_fsm_state144, ap_CS_fsm_state145, ap_CS_fsm_state146, ap_CS_fsm_state147, ap_CS_fsm_state148, ap_CS_fsm_state149, ap_CS_fsm_state150, ap_CS_fsm_state151, ap_CS_fsm_state152, ap_CS_fsm_state153, ap_CS_fsm_state154, ap_CS_fsm_state155, ap_CS_fsm_state156, ap_CS_fsm_state157, ap_CS_fsm_state158, ap_CS_fsm_state159, ap_CS_fsm_state160, ap_CS_fsm_state161, ap_CS_fsm_state162, ap_CS_fsm_state163, ap_CS_fsm_state164, ap_CS_fsm_state165, ap_CS_fsm_state166, ap_CS_fsm_state167, ap_CS_fsm_state168, ap_CS_fsm_state169, ap_CS_fsm_state170, ap_CS_fsm_state171, ap_CS_fsm_state172, ap_CS_fsm_state173, ap_CS_fsm_state174, ap_CS_fsm_state175, ap_CS_fsm_state176, ap_CS_fsm_state177, ap_CS_fsm_state178, ap_CS_fsm_state179, ap_CS_fsm_state180, ap_CS_fsm_state181, ap_CS_fsm_state182, ap_CS_fsm_state183, ap_CS_fsm_state184, ap_CS_fsm_state185, ap_CS_fsm_state186, ap_CS_fsm_state187, ap_CS_fsm_state188, ap_CS_fsm_state189, ap_CS_fsm_state190, ap_CS_fsm_state191, ap_CS_fsm_state192, ap_CS_fsm_state193, ap_CS_fsm_state194, ap_CS_fsm_state195, ap_CS_fsm_state196, ap_CS_fsm_state197, ap_CS_fsm_state198, ap_CS_fsm_state199, ap_CS_fsm_state200, ap_CS_fsm_state201, ap_CS_fsm_state202, ap_CS_fsm_state203, ap_CS_fsm_state204, ap_CS_fsm_state205, ap_CS_fsm_state206, ap_CS_fsm_state207, ap_CS_fsm_state208, ap_CS_fsm_state209, ap_CS_fsm_state210, ap_CS_fsm_state211, ap_CS_fsm_state212, ap_CS_fsm_state213, ap_CS_fsm_state214, ap_CS_fsm_state215, ap_CS_fsm_state216, ap_CS_fsm_state217, ap_CS_fsm_state218, ap_CS_fsm_state219, ap_CS_fsm_state220, ap_CS_fsm_state221, ap_CS_fsm_state222, ap_CS_fsm_state223, ap_CS_fsm_state224, ap_CS_fsm_state225, ap_CS_fsm_state226, ap_CS_fsm_state227, ap_CS_fsm_state228, ap_CS_fsm_state229, ap_CS_fsm_state230, ap_CS_fsm_state231, ap_CS_fsm_state232, ap_CS_fsm_state233, ap_CS_fsm_state234, ap_CS_fsm_state235, ap_CS_fsm_state236, ap_CS_fsm_state237, ap_CS_fsm_state238, ap_CS_fsm_state239, ap_CS_fsm_state240, ap_CS_fsm_state241, ap_CS_fsm_state242, ap_CS_fsm_state243, ap_CS_fsm_state244, ap_CS_fsm_state245, ap_CS_fsm_state246, ap_CS_fsm_state247, ap_CS_fsm_state248, ap_CS_fsm_state249, ap_CS_fsm_state250, ap_CS_fsm_state251, ap_CS_fsm_state252, ap_CS_fsm_state253, ap_CS_fsm_state254, ap_CS_fsm_state255, ap_CS_fsm_state256, ap_CS_fsm_state257, ap_CS_fsm_state258, ap_CS_fsm_state259, ap_CS_fsm_state260, ap_CS_fsm_state261, ap_CS_fsm_state262, ap_CS_fsm_state263, ap_CS_fsm_state264, ap_CS_fsm_state265, ap_CS_fsm_state266, ap_CS_fsm_state267, ap_CS_fsm_state268, ap_CS_fsm_state269, ap_CS_fsm_state270, ap_CS_fsm_state271, ap_CS_fsm_state272, ap_CS_fsm_state273, ap_CS_fsm_state274, ap_CS_fsm_state275, ap_CS_fsm_state276, ap_CS_fsm_state277, ap_CS_fsm_state278, ap_CS_fsm_state279, ap_CS_fsm_state280, ap_CS_fsm_state281, ap_CS_fsm_state282, ap_CS_fsm_state283, ap_CS_fsm_state284, ap_CS_fsm_state285, ap_CS_fsm_state286, ap_CS_fsm_state287, ap_CS_fsm_state288, ap_CS_fsm_state289, ap_CS_fsm_state290, ap_CS_fsm_state291, ap_CS_fsm_state292, ap_CS_fsm_state293, ap_CS_fsm_state294, ap_CS_fsm_state295, ap_CS_fsm_state296, ap_CS_fsm_state297, ap_CS_fsm_state298, ap_CS_fsm_state299, ap_CS_fsm_state300, ap_CS_fsm_state301, ap_CS_fsm_state302, ap_CS_fsm_state303, ap_CS_fsm_state304, ap_CS_fsm_state305, ap_CS_fsm_state306, ap_CS_fsm_state307, ap_CS_fsm_state308, ap_CS_fsm_state309, ap_CS_fsm_state310, ap_CS_fsm_state311, ap_CS_fsm_state312, ap_CS_fsm_state313, ap_CS_fsm_state314, ap_CS_fsm_state315, ap_CS_fsm_state316, ap_CS_fsm_state317, ap_CS_fsm_state318, ap_CS_fsm_state319, ap_CS_fsm_state320, ap_CS_fsm_state321, ap_CS_fsm_state322, ap_CS_fsm_state323, ap_CS_fsm_state324, ap_CS_fsm_state325, ap_CS_fsm_state326, ap_CS_fsm_state327, ap_CS_fsm_state328, ap_CS_fsm_state329, ap_CS_fsm_state330, ap_CS_fsm_state331, ap_CS_fsm_state332, ap_CS_fsm_state333, ap_CS_fsm_state334, ap_CS_fsm_state335, ap_CS_fsm_state336, ap_CS_fsm_state337, ap_CS_fsm_state338, ap_CS_fsm_state339, ap_CS_fsm_state340, ap_CS_fsm_state341, ap_CS_fsm_state342, ap_CS_fsm_state343, ap_CS_fsm_state344, ap_CS_fsm_state345, ap_CS_fsm_state346, ap_CS_fsm_state347, ap_CS_fsm_state348, ap_CS_fsm_state349, ap_CS_fsm_state350, ap_CS_fsm_state351, ap_CS_fsm_state352, ap_CS_fsm_state353, ap_CS_fsm_state354, ap_CS_fsm_state355, ap_CS_fsm_state356, ap_CS_fsm_state357, ap_CS_fsm_state358, ap_CS_fsm_state359, ap_CS_fsm_state360, ap_CS_fsm_state361, ap_CS_fsm_state362, ap_CS_fsm_state363, ap_CS_fsm_state364, ap_CS_fsm_state365, ap_CS_fsm_state366, ap_CS_fsm_state367, ap_CS_fsm_state368, ap_CS_fsm_state369, ap_CS_fsm_state370, ap_CS_fsm_state371, ap_CS_fsm_state372, ap_CS_fsm_state373, ap_CS_fsm_state374, ap_CS_fsm_state375, ap_CS_fsm_state376, ap_CS_fsm_state377, ap_CS_fsm_state378, ap_CS_fsm_state379, ap_CS_fsm_state380, ap_CS_fsm_state381, ap_CS_fsm_state382, ap_CS_fsm_state383, ap_CS_fsm_state384, ap_CS_fsm_state385, ap_CS_fsm_state386, ap_CS_fsm_state387, ap_CS_fsm_state388, ap_CS_fsm_state389, ap_CS_fsm_state390, ap_CS_fsm_state391, ap_CS_fsm_state392, ap_CS_fsm_state393, ap_CS_fsm_state394, ap_CS_fsm_state395, ap_CS_fsm_state396, ap_CS_fsm_state397, ap_CS_fsm_state398, ap_CS_fsm_state399, ap_CS_fsm_state400, ap_CS_fsm_state401, ap_CS_fsm_state402, ap_CS_fsm_state403, ap_CS_fsm_state404, ap_CS_fsm_state405, ap_CS_fsm_state406, ap_CS_fsm_state407, ap_CS_fsm_state408, ap_CS_fsm_state409, ap_CS_fsm_state410, ap_CS_fsm_state411, ap_CS_fsm_state412, ap_CS_fsm_state413, ap_CS_fsm_state414, ap_CS_fsm_state415, ap_CS_fsm_state416, ap_CS_fsm_state417, ap_CS_fsm_state418, ap_CS_fsm_state419, ap_CS_fsm_state420, ap_CS_fsm_state421, ap_CS_fsm_state422, ap_CS_fsm_state423, ap_CS_fsm_state424, ap_CS_fsm_state425, ap_CS_fsm_state426, ap_CS_fsm_state427, ap_CS_fsm_state428, ap_CS_fsm_state429, ap_CS_fsm_state430, ap_CS_fsm_state431, ap_CS_fsm_state40, grp_depthwise_conv2d_fix_2_fu_14423_input_r_ce1, grp_max_pooling2d_fix16_fu_14447_input_r_ce1, grp_depthwise_conv2d_fix_1_fu_14468_input_r_ce1, grp_depthwise_conv2d_fix_fu_14502_input_r_ce1, ap_CS_fsm_state13, ap_CS_fsm_state37, ap_CS_fsm_state9, ap_CS_fsm_state17, ap_CS_fsm_state21, ap_CS_fsm_state29, ap_CS_fsm_state5)
+    MemBank_B_ce1_assign_proc : process(ap_CS_fsm_state41, ap_CS_fsm_state42, ap_CS_fsm_state43, ap_CS_fsm_state44, ap_CS_fsm_state45, ap_CS_fsm_state46, ap_CS_fsm_state47, ap_CS_fsm_state48, ap_CS_fsm_state49, ap_CS_fsm_state50, ap_CS_fsm_state51, ap_CS_fsm_state52, ap_CS_fsm_state53, ap_CS_fsm_state54, ap_CS_fsm_state55, ap_CS_fsm_state56, ap_CS_fsm_state57, ap_CS_fsm_state58, ap_CS_fsm_state59, ap_CS_fsm_state60, ap_CS_fsm_state61, ap_CS_fsm_state62, ap_CS_fsm_state63, ap_CS_fsm_state64, ap_CS_fsm_state65, ap_CS_fsm_state66, ap_CS_fsm_state67, ap_CS_fsm_state68, ap_CS_fsm_state69, ap_CS_fsm_state70, ap_CS_fsm_state71, ap_CS_fsm_state72, ap_CS_fsm_state73, ap_CS_fsm_state74, ap_CS_fsm_state75, ap_CS_fsm_state76, ap_CS_fsm_state77, ap_CS_fsm_state78, ap_CS_fsm_state79, ap_CS_fsm_state80, ap_CS_fsm_state81, ap_CS_fsm_state82, ap_CS_fsm_state83, ap_CS_fsm_state84, ap_CS_fsm_state85, ap_CS_fsm_state86, ap_CS_fsm_state87, ap_CS_fsm_state88, ap_CS_fsm_state89, ap_CS_fsm_state90, ap_CS_fsm_state91, ap_CS_fsm_state92, ap_CS_fsm_state93, ap_CS_fsm_state94, ap_CS_fsm_state95, ap_CS_fsm_state96, ap_CS_fsm_state97, ap_CS_fsm_state98, ap_CS_fsm_state99, ap_CS_fsm_state100, ap_CS_fsm_state101, ap_CS_fsm_state102, ap_CS_fsm_state103, ap_CS_fsm_state104, ap_CS_fsm_state105, ap_CS_fsm_state106, ap_CS_fsm_state107, ap_CS_fsm_state108, ap_CS_fsm_state109, ap_CS_fsm_state110, ap_CS_fsm_state111, ap_CS_fsm_state112, ap_CS_fsm_state113, ap_CS_fsm_state114, ap_CS_fsm_state115, ap_CS_fsm_state116, ap_CS_fsm_state117, ap_CS_fsm_state118, ap_CS_fsm_state119, ap_CS_fsm_state120, ap_CS_fsm_state121, ap_CS_fsm_state122, ap_CS_fsm_state123, ap_CS_fsm_state124, ap_CS_fsm_state125, ap_CS_fsm_state126, ap_CS_fsm_state127, ap_CS_fsm_state128, ap_CS_fsm_state129, ap_CS_fsm_state130, ap_CS_fsm_state131, ap_CS_fsm_state132, ap_CS_fsm_state133, ap_CS_fsm_state134, ap_CS_fsm_state135, ap_CS_fsm_state136, ap_CS_fsm_state137, ap_CS_fsm_state138, ap_CS_fsm_state139, ap_CS_fsm_state140, ap_CS_fsm_state141, ap_CS_fsm_state142, ap_CS_fsm_state143, ap_CS_fsm_state144, ap_CS_fsm_state145, ap_CS_fsm_state146, ap_CS_fsm_state147, ap_CS_fsm_state148, ap_CS_fsm_state149, ap_CS_fsm_state150, ap_CS_fsm_state151, ap_CS_fsm_state152, ap_CS_fsm_state153, ap_CS_fsm_state154, ap_CS_fsm_state155, ap_CS_fsm_state156, ap_CS_fsm_state157, ap_CS_fsm_state158, ap_CS_fsm_state159, ap_CS_fsm_state160, ap_CS_fsm_state161, ap_CS_fsm_state162, ap_CS_fsm_state163, ap_CS_fsm_state164, ap_CS_fsm_state165, ap_CS_fsm_state166, ap_CS_fsm_state167, ap_CS_fsm_state168, ap_CS_fsm_state169, ap_CS_fsm_state170, ap_CS_fsm_state171, ap_CS_fsm_state172, ap_CS_fsm_state173, ap_CS_fsm_state174, ap_CS_fsm_state175, ap_CS_fsm_state176, ap_CS_fsm_state177, ap_CS_fsm_state178, ap_CS_fsm_state179, ap_CS_fsm_state180, ap_CS_fsm_state181, ap_CS_fsm_state182, ap_CS_fsm_state183, ap_CS_fsm_state184, ap_CS_fsm_state185, ap_CS_fsm_state186, ap_CS_fsm_state187, ap_CS_fsm_state188, ap_CS_fsm_state189, ap_CS_fsm_state190, ap_CS_fsm_state191, ap_CS_fsm_state192, ap_CS_fsm_state193, ap_CS_fsm_state194, ap_CS_fsm_state195, ap_CS_fsm_state196, ap_CS_fsm_state197, ap_CS_fsm_state198, ap_CS_fsm_state199, ap_CS_fsm_state200, ap_CS_fsm_state201, ap_CS_fsm_state202, ap_CS_fsm_state203, ap_CS_fsm_state204, ap_CS_fsm_state205, ap_CS_fsm_state206, ap_CS_fsm_state207, ap_CS_fsm_state208, ap_CS_fsm_state209, ap_CS_fsm_state210, ap_CS_fsm_state211, ap_CS_fsm_state212, ap_CS_fsm_state213, ap_CS_fsm_state214, ap_CS_fsm_state215, ap_CS_fsm_state216, ap_CS_fsm_state217, ap_CS_fsm_state218, ap_CS_fsm_state219, ap_CS_fsm_state220, ap_CS_fsm_state221, ap_CS_fsm_state222, ap_CS_fsm_state223, ap_CS_fsm_state224, ap_CS_fsm_state225, ap_CS_fsm_state226, ap_CS_fsm_state227, ap_CS_fsm_state228, ap_CS_fsm_state229, ap_CS_fsm_state230, ap_CS_fsm_state231, ap_CS_fsm_state232, ap_CS_fsm_state233, ap_CS_fsm_state234, ap_CS_fsm_state235, ap_CS_fsm_state236, ap_CS_fsm_state237, ap_CS_fsm_state238, ap_CS_fsm_state239, ap_CS_fsm_state240, ap_CS_fsm_state241, ap_CS_fsm_state242, ap_CS_fsm_state243, ap_CS_fsm_state244, ap_CS_fsm_state245, ap_CS_fsm_state246, ap_CS_fsm_state247, ap_CS_fsm_state248, ap_CS_fsm_state249, ap_CS_fsm_state250, ap_CS_fsm_state251, ap_CS_fsm_state252, ap_CS_fsm_state253, ap_CS_fsm_state254, ap_CS_fsm_state255, ap_CS_fsm_state256, ap_CS_fsm_state257, ap_CS_fsm_state258, ap_CS_fsm_state259, ap_CS_fsm_state260, ap_CS_fsm_state261, ap_CS_fsm_state262, ap_CS_fsm_state263, ap_CS_fsm_state264, ap_CS_fsm_state265, ap_CS_fsm_state266, ap_CS_fsm_state267, ap_CS_fsm_state268, ap_CS_fsm_state269, ap_CS_fsm_state270, ap_CS_fsm_state271, ap_CS_fsm_state272, ap_CS_fsm_state273, ap_CS_fsm_state274, ap_CS_fsm_state275, ap_CS_fsm_state276, ap_CS_fsm_state277, ap_CS_fsm_state278, ap_CS_fsm_state279, ap_CS_fsm_state280, ap_CS_fsm_state281, ap_CS_fsm_state282, ap_CS_fsm_state283, ap_CS_fsm_state284, ap_CS_fsm_state285, ap_CS_fsm_state286, ap_CS_fsm_state287, ap_CS_fsm_state288, ap_CS_fsm_state289, ap_CS_fsm_state290, ap_CS_fsm_state291, ap_CS_fsm_state292, ap_CS_fsm_state293, ap_CS_fsm_state294, ap_CS_fsm_state295, ap_CS_fsm_state296, ap_CS_fsm_state297, ap_CS_fsm_state298, ap_CS_fsm_state299, ap_CS_fsm_state300, ap_CS_fsm_state301, ap_CS_fsm_state302, ap_CS_fsm_state303, ap_CS_fsm_state304, ap_CS_fsm_state305, ap_CS_fsm_state306, ap_CS_fsm_state307, ap_CS_fsm_state308, ap_CS_fsm_state309, ap_CS_fsm_state310, ap_CS_fsm_state311, ap_CS_fsm_state312, ap_CS_fsm_state313, ap_CS_fsm_state314, ap_CS_fsm_state315, ap_CS_fsm_state316, ap_CS_fsm_state317, ap_CS_fsm_state318, ap_CS_fsm_state319, ap_CS_fsm_state320, ap_CS_fsm_state321, ap_CS_fsm_state322, ap_CS_fsm_state323, ap_CS_fsm_state324, ap_CS_fsm_state325, ap_CS_fsm_state326, ap_CS_fsm_state327, ap_CS_fsm_state328, ap_CS_fsm_state329, ap_CS_fsm_state330, ap_CS_fsm_state331, ap_CS_fsm_state332, ap_CS_fsm_state333, ap_CS_fsm_state334, ap_CS_fsm_state335, ap_CS_fsm_state336, ap_CS_fsm_state337, ap_CS_fsm_state338, ap_CS_fsm_state339, ap_CS_fsm_state340, ap_CS_fsm_state341, ap_CS_fsm_state342, ap_CS_fsm_state343, ap_CS_fsm_state344, ap_CS_fsm_state345, ap_CS_fsm_state346, ap_CS_fsm_state347, ap_CS_fsm_state348, ap_CS_fsm_state349, ap_CS_fsm_state350, ap_CS_fsm_state351, ap_CS_fsm_state352, ap_CS_fsm_state353, ap_CS_fsm_state354, ap_CS_fsm_state355, ap_CS_fsm_state356, ap_CS_fsm_state357, ap_CS_fsm_state358, ap_CS_fsm_state359, ap_CS_fsm_state360, ap_CS_fsm_state361, ap_CS_fsm_state362, ap_CS_fsm_state363, ap_CS_fsm_state364, ap_CS_fsm_state365, ap_CS_fsm_state366, ap_CS_fsm_state367, ap_CS_fsm_state368, ap_CS_fsm_state369, ap_CS_fsm_state370, ap_CS_fsm_state371, ap_CS_fsm_state372, ap_CS_fsm_state373, ap_CS_fsm_state374, ap_CS_fsm_state375, ap_CS_fsm_state376, ap_CS_fsm_state377, ap_CS_fsm_state378, ap_CS_fsm_state379, ap_CS_fsm_state380, ap_CS_fsm_state381, ap_CS_fsm_state382, ap_CS_fsm_state383, ap_CS_fsm_state384, ap_CS_fsm_state385, ap_CS_fsm_state386, ap_CS_fsm_state387, ap_CS_fsm_state388, ap_CS_fsm_state389, ap_CS_fsm_state390, ap_CS_fsm_state391, ap_CS_fsm_state392, ap_CS_fsm_state393, ap_CS_fsm_state394, ap_CS_fsm_state395, ap_CS_fsm_state396, ap_CS_fsm_state397, ap_CS_fsm_state398, ap_CS_fsm_state399, ap_CS_fsm_state400, ap_CS_fsm_state401, ap_CS_fsm_state402, ap_CS_fsm_state403, ap_CS_fsm_state404, ap_CS_fsm_state405, ap_CS_fsm_state406, ap_CS_fsm_state407, ap_CS_fsm_state408, ap_CS_fsm_state409, ap_CS_fsm_state410, ap_CS_fsm_state411, ap_CS_fsm_state412, ap_CS_fsm_state413, ap_CS_fsm_state414, ap_CS_fsm_state415, ap_CS_fsm_state416, ap_CS_fsm_state417, ap_CS_fsm_state418, ap_CS_fsm_state419, ap_CS_fsm_state420, ap_CS_fsm_state421, ap_CS_fsm_state422, ap_CS_fsm_state423, ap_CS_fsm_state424, ap_CS_fsm_state425, ap_CS_fsm_state426, ap_CS_fsm_state427, ap_CS_fsm_state428, ap_CS_fsm_state429, ap_CS_fsm_state430, ap_CS_fsm_state431, ap_CS_fsm_state40, grp_padding2d_fix16_fu_14393_output_r_ce1, grp_depthwise_conv2d_fix_2_fu_14411_input_r_ce1, grp_depthwise_conv2d_fix_1_fu_14435_input_r_ce1, grp_depthwise_conv2d_fix_fu_14459_input_r_ce1, grp_max_pooling2d_fix16_fu_14516_input_r_ce1, ap_CS_fsm_state3, ap_CS_fsm_state11, ap_CS_fsm_state19, ap_CS_fsm_state27, ap_CS_fsm_state35, ap_CS_fsm_state13, ap_CS_fsm_state37, ap_CS_fsm_state21, ap_CS_fsm_state29, ap_CS_fsm_state5, ap_CS_fsm_state9, ap_CS_fsm_state17)
     begin
         if (((ap_const_logic_1 = ap_CS_fsm_state40) or (ap_const_logic_1 = ap_CS_fsm_state431) or (ap_const_logic_1 = ap_CS_fsm_state430) or (ap_const_logic_1 = ap_CS_fsm_state429) or (ap_const_logic_1 = ap_CS_fsm_state428) or (ap_const_logic_1 = ap_CS_fsm_state427) or (ap_const_logic_1 = ap_CS_fsm_state426) or (ap_const_logic_1 = ap_CS_fsm_state425) or (ap_const_logic_1 = ap_CS_fsm_state424) or (ap_const_logic_1 = ap_CS_fsm_state423) or (ap_const_logic_1 = ap_CS_fsm_state422) or (ap_const_logic_1 = ap_CS_fsm_state421) or (ap_const_logic_1 = ap_CS_fsm_state420) or (ap_const_logic_1 = ap_CS_fsm_state419) or (ap_const_logic_1 = ap_CS_fsm_state418) or (ap_const_logic_1 = ap_CS_fsm_state417) or (ap_const_logic_1 = ap_CS_fsm_state416) or (ap_const_logic_1 = ap_CS_fsm_state415) or (ap_const_logic_1 = ap_CS_fsm_state414) or (ap_const_logic_1 = ap_CS_fsm_state413) or (ap_const_logic_1 = ap_CS_fsm_state412) or (ap_const_logic_1 = ap_CS_fsm_state411) or (ap_const_logic_1 = ap_CS_fsm_state410) or (ap_const_logic_1 = ap_CS_fsm_state409) or (ap_const_logic_1 = ap_CS_fsm_state408) or (ap_const_logic_1 = ap_CS_fsm_state407) or (ap_const_logic_1 = ap_CS_fsm_state406) or (ap_const_logic_1 = ap_CS_fsm_state405) or (ap_const_logic_1 = ap_CS_fsm_state404) or (ap_const_logic_1 = ap_CS_fsm_state403) or (ap_const_logic_1 = ap_CS_fsm_state402) or (ap_const_logic_1 = ap_CS_fsm_state401) or (ap_const_logic_1 = ap_CS_fsm_state400) or (ap_const_logic_1 = ap_CS_fsm_state399) or (ap_const_logic_1 = ap_CS_fsm_state398) or (ap_const_logic_1 = ap_CS_fsm_state397) or (ap_const_logic_1 = ap_CS_fsm_state396) or (ap_const_logic_1 = ap_CS_fsm_state395) or (ap_const_logic_1 = ap_CS_fsm_state394) or (ap_const_logic_1 = ap_CS_fsm_state393) or (ap_const_logic_1 = ap_CS_fsm_state392) or (ap_const_logic_1 = ap_CS_fsm_state391) or (ap_const_logic_1 = ap_CS_fsm_state390) or (ap_const_logic_1 = ap_CS_fsm_state389) or (ap_const_logic_1 = ap_CS_fsm_state388) or (ap_const_logic_1 = ap_CS_fsm_state387) or (ap_const_logic_1 = ap_CS_fsm_state386) or (ap_const_logic_1 = ap_CS_fsm_state385) or (ap_const_logic_1 = ap_CS_fsm_state384) or (ap_const_logic_1 = ap_CS_fsm_state383) or (ap_const_logic_1 = ap_CS_fsm_state382) or (ap_const_logic_1 = ap_CS_fsm_state381) or (ap_const_logic_1 = ap_CS_fsm_state380) or (ap_const_logic_1 = ap_CS_fsm_state379) or (ap_const_logic_1 = ap_CS_fsm_state378) or (ap_const_logic_1 = ap_CS_fsm_state377) or (ap_const_logic_1 = ap_CS_fsm_state376) or (ap_const_logic_1 = ap_CS_fsm_state375) or (ap_const_logic_1 = ap_CS_fsm_state374) or (ap_const_logic_1 = ap_CS_fsm_state373) or (ap_const_logic_1 = ap_CS_fsm_state372) or (ap_const_logic_1 = ap_CS_fsm_state371) or (ap_const_logic_1 = ap_CS_fsm_state370) or (ap_const_logic_1 = ap_CS_fsm_state369) or (ap_const_logic_1 = ap_CS_fsm_state368) or (ap_const_logic_1 = ap_CS_fsm_state367) or (ap_const_logic_1 = ap_CS_fsm_state366) or (ap_const_logic_1 = ap_CS_fsm_state365) or (ap_const_logic_1 = ap_CS_fsm_state364) or (ap_const_logic_1 = ap_CS_fsm_state363) or (ap_const_logic_1 = ap_CS_fsm_state362) or (ap_const_logic_1 = ap_CS_fsm_state361) or (ap_const_logic_1 = ap_CS_fsm_state360) or (ap_const_logic_1 = ap_CS_fsm_state359) or (ap_const_logic_1 = ap_CS_fsm_state358) or (ap_const_logic_1 = ap_CS_fsm_state357) or (ap_const_logic_1 = ap_CS_fsm_state356) or (ap_const_logic_1 = ap_CS_fsm_state355) or (ap_const_logic_1 = ap_CS_fsm_state354) or (ap_const_logic_1 = ap_CS_fsm_state353) or (ap_const_logic_1 = ap_CS_fsm_state352) or (ap_const_logic_1 = ap_CS_fsm_state351) or (ap_const_logic_1 = ap_CS_fsm_state350) or (ap_const_logic_1 = ap_CS_fsm_state349) or (ap_const_logic_1 = ap_CS_fsm_state348) or (ap_const_logic_1 = ap_CS_fsm_state347) or (ap_const_logic_1 = ap_CS_fsm_state346) or (ap_const_logic_1 = ap_CS_fsm_state345) or (ap_const_logic_1 = ap_CS_fsm_state344) or (ap_const_logic_1 = ap_CS_fsm_state343) or (ap_const_logic_1 = ap_CS_fsm_state342) or (ap_const_logic_1 = ap_CS_fsm_state341) or (ap_const_logic_1 = ap_CS_fsm_state340) or (ap_const_logic_1 = ap_CS_fsm_state339) or (ap_const_logic_1 = ap_CS_fsm_state338) or (ap_const_logic_1 = ap_CS_fsm_state337) or (ap_const_logic_1 = ap_CS_fsm_state336) or (ap_const_logic_1 = ap_CS_fsm_state335) or (ap_const_logic_1 = ap_CS_fsm_state334) or (ap_const_logic_1 = ap_CS_fsm_state333) or (ap_const_logic_1 = ap_CS_fsm_state332) or (ap_const_logic_1 = ap_CS_fsm_state331) or (ap_const_logic_1 = ap_CS_fsm_state330) or (ap_const_logic_1 = ap_CS_fsm_state329) or (ap_const_logic_1 = ap_CS_fsm_state328) or (ap_const_logic_1 = ap_CS_fsm_state327) or (ap_const_logic_1 = ap_CS_fsm_state326) or (ap_const_logic_1 = ap_CS_fsm_state325) or (ap_const_logic_1 = ap_CS_fsm_state324) or (ap_const_logic_1 = ap_CS_fsm_state323) or (ap_const_logic_1 = ap_CS_fsm_state322) or (ap_const_logic_1 = ap_CS_fsm_state321) or (ap_const_logic_1 = ap_CS_fsm_state320) or (ap_const_logic_1 = ap_CS_fsm_state319) or (ap_const_logic_1 = ap_CS_fsm_state318) or (ap_const_logic_1 = ap_CS_fsm_state317) or (ap_const_logic_1 = ap_CS_fsm_state316) or (ap_const_logic_1 = ap_CS_fsm_state315) or (ap_const_logic_1 = ap_CS_fsm_state314) or (ap_const_logic_1 = ap_CS_fsm_state313) or (ap_const_logic_1 = ap_CS_fsm_state312) or (ap_const_logic_1 = ap_CS_fsm_state311) or (ap_const_logic_1 = ap_CS_fsm_state310) or (ap_const_logic_1 = ap_CS_fsm_state309) or (ap_const_logic_1 = ap_CS_fsm_state308) or (ap_const_logic_1 = ap_CS_fsm_state307) or (ap_const_logic_1 = ap_CS_fsm_state306) or (ap_const_logic_1 = ap_CS_fsm_state305) or (ap_const_logic_1 = ap_CS_fsm_state304) or (ap_const_logic_1 = ap_CS_fsm_state303) or (ap_const_logic_1 = ap_CS_fsm_state302) or (ap_const_logic_1 = ap_CS_fsm_state301) or (ap_const_logic_1 = ap_CS_fsm_state300) or (ap_const_logic_1 = ap_CS_fsm_state299) or (ap_const_logic_1 = ap_CS_fsm_state298) or (ap_const_logic_1 = ap_CS_fsm_state297) or (ap_const_logic_1 = ap_CS_fsm_state296) or (ap_const_logic_1 = ap_CS_fsm_state295) or (ap_const_logic_1 = ap_CS_fsm_state294) or (ap_const_logic_1 = ap_CS_fsm_state293) or (ap_const_logic_1 = ap_CS_fsm_state292) or (ap_const_logic_1 = ap_CS_fsm_state291) or (ap_const_logic_1 = ap_CS_fsm_state290) or (ap_const_logic_1 = ap_CS_fsm_state289) or (ap_const_logic_1 = ap_CS_fsm_state288) or (ap_const_logic_1 = ap_CS_fsm_state287) or (ap_const_logic_1 = ap_CS_fsm_state286) or (ap_const_logic_1 = ap_CS_fsm_state285) or (ap_const_logic_1 = ap_CS_fsm_state284) or (ap_const_logic_1 = ap_CS_fsm_state283) or (ap_const_logic_1 = ap_CS_fsm_state282) or (ap_const_logic_1 = ap_CS_fsm_state281) or (ap_const_logic_1 = ap_CS_fsm_state280) or (ap_const_logic_1 = ap_CS_fsm_state279) or (ap_const_logic_1 = ap_CS_fsm_state278) or (ap_const_logic_1 = ap_CS_fsm_state277) or (ap_const_logic_1 = ap_CS_fsm_state276) or (ap_const_logic_1 = ap_CS_fsm_state275) or (ap_const_logic_1 = ap_CS_fsm_state274) or (ap_const_logic_1 = ap_CS_fsm_state273) or (ap_const_logic_1 = ap_CS_fsm_state272) or (ap_const_logic_1 = ap_CS_fsm_state271) or (ap_const_logic_1 = ap_CS_fsm_state270) or (ap_const_logic_1 = ap_CS_fsm_state269) or (ap_const_logic_1 = ap_CS_fsm_state268) or (ap_const_logic_1 = ap_CS_fsm_state267) or (ap_const_logic_1 = ap_CS_fsm_state266) or (ap_const_logic_1 = ap_CS_fsm_state265) or (ap_const_logic_1 = ap_CS_fsm_state264) or (ap_const_logic_1 = ap_CS_fsm_state263) or (ap_const_logic_1 = ap_CS_fsm_state262) or (ap_const_logic_1 = ap_CS_fsm_state261) or (ap_const_logic_1 = ap_CS_fsm_state260) or (ap_const_logic_1 = ap_CS_fsm_state259) or (ap_const_logic_1 = ap_CS_fsm_state258) or (ap_const_logic_1 = ap_CS_fsm_state257) or (ap_const_logic_1 = ap_CS_fsm_state256) or (ap_const_logic_1 = ap_CS_fsm_state255) or (ap_const_logic_1 = ap_CS_fsm_state254) or (ap_const_logic_1 = ap_CS_fsm_state253) or (ap_const_logic_1 = ap_CS_fsm_state252) or (ap_const_logic_1 = ap_CS_fsm_state251) or (ap_const_logic_1 = ap_CS_fsm_state250) or (ap_const_logic_1 = ap_CS_fsm_state249) or (ap_const_logic_1 = ap_CS_fsm_state248) or (ap_const_logic_1 = ap_CS_fsm_state247) or (ap_const_logic_1 = ap_CS_fsm_state246) or (ap_const_logic_1 = ap_CS_fsm_state245) or (ap_const_logic_1 = ap_CS_fsm_state244) or (ap_const_logic_1 = ap_CS_fsm_state243) or (ap_const_logic_1 = ap_CS_fsm_state242) or (ap_const_logic_1 = ap_CS_fsm_state241) or (ap_const_logic_1 = ap_CS_fsm_state240) or (ap_const_logic_1 = ap_CS_fsm_state239) or (ap_const_logic_1 = ap_CS_fsm_state238) or (ap_const_logic_1 = ap_CS_fsm_state237) or (ap_const_logic_1 = ap_CS_fsm_state236) or (ap_const_logic_1 = ap_CS_fsm_state235) or (ap_const_logic_1 = ap_CS_fsm_state234) or (ap_const_logic_1 = ap_CS_fsm_state233) or (ap_const_logic_1 = ap_CS_fsm_state232) or (ap_const_logic_1 = ap_CS_fsm_state231) or (ap_const_logic_1 = ap_CS_fsm_state230) or (ap_const_logic_1 = ap_CS_fsm_state229) or (ap_const_logic_1 = ap_CS_fsm_state228) or (ap_const_logic_1 = ap_CS_fsm_state227) or (ap_const_logic_1 = ap_CS_fsm_state226) or (ap_const_logic_1 = ap_CS_fsm_state225) or (ap_const_logic_1 = ap_CS_fsm_state224) or (ap_const_logic_1 = ap_CS_fsm_state223) or (ap_const_logic_1 = ap_CS_fsm_state222) or (ap_const_logic_1 = ap_CS_fsm_state221) or (ap_const_logic_1 = ap_CS_fsm_state220) or (ap_const_logic_1 = ap_CS_fsm_state219) or (ap_const_logic_1 = ap_CS_fsm_state218) or (ap_const_logic_1 = ap_CS_fsm_state217) or (ap_const_logic_1 = ap_CS_fsm_state216) or (ap_const_logic_1 = ap_CS_fsm_state215) or (ap_const_logic_1 = ap_CS_fsm_state214) or (ap_const_logic_1 = ap_CS_fsm_state213) or (ap_const_logic_1 = ap_CS_fsm_state212) or (ap_const_logic_1 = ap_CS_fsm_state211) or (ap_const_logic_1 = ap_CS_fsm_state210) or (ap_const_logic_1 = ap_CS_fsm_state209) or (ap_const_logic_1 = ap_CS_fsm_state208) or (ap_const_logic_1 = ap_CS_fsm_state207) or (ap_const_logic_1 = ap_CS_fsm_state206) or (ap_const_logic_1 = ap_CS_fsm_state205) or (ap_const_logic_1 = ap_CS_fsm_state204) or (ap_const_logic_1 = ap_CS_fsm_state203) or (ap_const_logic_1 = ap_CS_fsm_state202) or (ap_const_logic_1 = ap_CS_fsm_state201) or (ap_const_logic_1 = ap_CS_fsm_state200) or (ap_const_logic_1 = ap_CS_fsm_state199) or (ap_const_logic_1 = ap_CS_fsm_state198) or (ap_const_logic_1 = ap_CS_fsm_state197) or (ap_const_logic_1 = ap_CS_fsm_state196) or (ap_const_logic_1 = ap_CS_fsm_state195) or (ap_const_logic_1 = ap_CS_fsm_state194) or (ap_const_logic_1 = ap_CS_fsm_state193) or (ap_const_logic_1 = ap_CS_fsm_state192) or (ap_const_logic_1 = ap_CS_fsm_state191) or (ap_const_logic_1 = ap_CS_fsm_state190) or (ap_const_logic_1 = ap_CS_fsm_state189) or (ap_const_logic_1 = ap_CS_fsm_state188) or (ap_const_logic_1 = ap_CS_fsm_state187) or (ap_const_logic_1 = ap_CS_fsm_state186) or (ap_const_logic_1 = ap_CS_fsm_state185) or (ap_const_logic_1 = ap_CS_fsm_state184) or (ap_const_logic_1 = ap_CS_fsm_state183) or (ap_const_logic_1 = ap_CS_fsm_state182) or (ap_const_logic_1 = ap_CS_fsm_state181) or (ap_const_logic_1 = ap_CS_fsm_state180) or (ap_const_logic_1 = ap_CS_fsm_state179) or (ap_const_logic_1 = ap_CS_fsm_state178) or (ap_const_logic_1 = ap_CS_fsm_state177) or (ap_const_logic_1 = ap_CS_fsm_state176) or (ap_const_logic_1 = ap_CS_fsm_state175) or (ap_const_logic_1 = ap_CS_fsm_state174) or (ap_const_logic_1 = ap_CS_fsm_state173) or (ap_const_logic_1 = ap_CS_fsm_state172) or (ap_const_logic_1 = ap_CS_fsm_state171) or (ap_const_logic_1 = ap_CS_fsm_state170) or (ap_const_logic_1 = ap_CS_fsm_state169) or (ap_const_logic_1 = ap_CS_fsm_state168) or (ap_const_logic_1 = ap_CS_fsm_state167) or (ap_const_logic_1 = ap_CS_fsm_state166) or (ap_const_logic_1 = ap_CS_fsm_state165) or (ap_const_logic_1 = ap_CS_fsm_state164) or (ap_const_logic_1 = ap_CS_fsm_state163) or (ap_const_logic_1 = ap_CS_fsm_state162) or (ap_const_logic_1 = ap_CS_fsm_state161) or (ap_const_logic_1 = ap_CS_fsm_state160) or (ap_const_logic_1 = ap_CS_fsm_state159) or (ap_const_logic_1 = ap_CS_fsm_state158) or (ap_const_logic_1 = ap_CS_fsm_state157) or (ap_const_logic_1 = ap_CS_fsm_state156) or (ap_const_logic_1 = ap_CS_fsm_state155) or (ap_const_logic_1 = ap_CS_fsm_state154) or (ap_const_logic_1 = ap_CS_fsm_state153) or (ap_const_logic_1 = ap_CS_fsm_state152) or (ap_const_logic_1 = ap_CS_fsm_state151) or (ap_const_logic_1 = ap_CS_fsm_state150) or (ap_const_logic_1 = ap_CS_fsm_state149) or (ap_const_logic_1 = ap_CS_fsm_state148) or (ap_const_logic_1 = ap_CS_fsm_state147) or (ap_const_logic_1 = ap_CS_fsm_state146) or (ap_const_logic_1 = ap_CS_fsm_state145) or (ap_const_logic_1 = ap_CS_fsm_state144) or (ap_const_logic_1 = ap_CS_fsm_state143) or (ap_const_logic_1 = ap_CS_fsm_state142) or (ap_const_logic_1 = ap_CS_fsm_state141) or (ap_const_logic_1 = ap_CS_fsm_state140) or (ap_const_logic_1 = ap_CS_fsm_state139) or (ap_const_logic_1 = ap_CS_fsm_state138) or (ap_const_logic_1 = ap_CS_fsm_state137) or (ap_const_logic_1 = ap_CS_fsm_state136) or (ap_const_logic_1 = ap_CS_fsm_state135) or (ap_const_logic_1 = ap_CS_fsm_state134) or (ap_const_logic_1 = ap_CS_fsm_state133) or (ap_const_logic_1 = ap_CS_fsm_state132) or (ap_const_logic_1 = ap_CS_fsm_state131) or (ap_const_logic_1 = ap_CS_fsm_state130) or (ap_const_logic_1 = ap_CS_fsm_state129) or (ap_const_logic_1 = ap_CS_fsm_state128) or (ap_const_logic_1 = ap_CS_fsm_state127) or (ap_const_logic_1 = ap_CS_fsm_state126) or (ap_const_logic_1 = ap_CS_fsm_state125) or (ap_const_logic_1 = ap_CS_fsm_state124) or (ap_const_logic_1 = ap_CS_fsm_state123) or (ap_const_logic_1 = ap_CS_fsm_state122) or (ap_const_logic_1 = ap_CS_fsm_state121) or (ap_const_logic_1 = ap_CS_fsm_state120) or (ap_const_logic_1 = ap_CS_fsm_state119) or (ap_const_logic_1 = ap_CS_fsm_state118) or (ap_const_logic_1 = ap_CS_fsm_state117) or (ap_const_logic_1 = ap_CS_fsm_state116) or (ap_const_logic_1 = ap_CS_fsm_state115) or (ap_const_logic_1 = ap_CS_fsm_state114) or (ap_const_logic_1 = ap_CS_fsm_state113) or (ap_const_logic_1 = ap_CS_fsm_state112) or (ap_const_logic_1 = ap_CS_fsm_state111) or (ap_const_logic_1 = ap_CS_fsm_state110) or (ap_const_logic_1 = ap_CS_fsm_state109) or (ap_const_logic_1 = ap_CS_fsm_state108) or (ap_const_logic_1 = ap_CS_fsm_state107) or (ap_const_logic_1 = ap_CS_fsm_state106) or (ap_const_logic_1 = ap_CS_fsm_state105) or (ap_const_logic_1 = ap_CS_fsm_state104) or (ap_const_logic_1 = ap_CS_fsm_state103) or (ap_const_logic_1 = ap_CS_fsm_state102) or (ap_const_logic_1 = ap_CS_fsm_state101) or (ap_const_logic_1 = ap_CS_fsm_state100) or (ap_const_logic_1 = ap_CS_fsm_state99) or (ap_const_logic_1 = ap_CS_fsm_state98) or (ap_const_logic_1 = ap_CS_fsm_state97) or (ap_const_logic_1 = ap_CS_fsm_state96) or (ap_const_logic_1 = ap_CS_fsm_state95) or (ap_const_logic_1 = ap_CS_fsm_state94) or (ap_const_logic_1 = ap_CS_fsm_state93) or (ap_const_logic_1 = ap_CS_fsm_state92) or (ap_const_logic_1 = ap_CS_fsm_state91) or (ap_const_logic_1 = ap_CS_fsm_state90) or (ap_const_logic_1 = ap_CS_fsm_state89) or (ap_const_logic_1 = ap_CS_fsm_state88) or (ap_const_logic_1 = ap_CS_fsm_state87) or (ap_const_logic_1 = ap_CS_fsm_state86) or (ap_const_logic_1 = ap_CS_fsm_state85) or (ap_const_logic_1 = ap_CS_fsm_state84) or (ap_const_logic_1 = ap_CS_fsm_state83) or (ap_const_logic_1 = ap_CS_fsm_state82) or (ap_const_logic_1 = ap_CS_fsm_state81) or (ap_const_logic_1 = ap_CS_fsm_state80) or (ap_const_logic_1 = ap_CS_fsm_state79) or (ap_const_logic_1 = ap_CS_fsm_state78) or (ap_const_logic_1 = ap_CS_fsm_state77) or (ap_const_logic_1 = ap_CS_fsm_state76) or (ap_const_logic_1 = ap_CS_fsm_state75) or (ap_const_logic_1 = ap_CS_fsm_state74) or (ap_const_logic_1 = ap_CS_fsm_state73) or (ap_const_logic_1 = ap_CS_fsm_state72) or (ap_const_logic_1 = ap_CS_fsm_state71) or (ap_const_logic_1 = ap_CS_fsm_state70) or (ap_const_logic_1 = ap_CS_fsm_state69) or (ap_const_logic_1 = ap_CS_fsm_state68) or (ap_const_logic_1 = ap_CS_fsm_state67) or (ap_const_logic_1 = ap_CS_fsm_state66) or (ap_const_logic_1 = ap_CS_fsm_state65) or (ap_const_logic_1 = ap_CS_fsm_state64) or (ap_const_logic_1 = ap_CS_fsm_state63) or (ap_const_logic_1 = ap_CS_fsm_state62) or (ap_const_logic_1 = ap_CS_fsm_state61) or (ap_const_logic_1 = ap_CS_fsm_state60) or (ap_const_logic_1 = ap_CS_fsm_state59) or (ap_const_logic_1 = ap_CS_fsm_state58) or (ap_const_logic_1 = ap_CS_fsm_state57) or (ap_const_logic_1 = ap_CS_fsm_state56) or (ap_const_logic_1 = ap_CS_fsm_state55) or (ap_const_logic_1 = ap_CS_fsm_state54) or (ap_const_logic_1 = ap_CS_fsm_state53) or (ap_const_logic_1 = ap_CS_fsm_state52) or (ap_const_logic_1 = ap_CS_fsm_state51) or (ap_const_logic_1 = ap_CS_fsm_state50) or (ap_const_logic_1 = ap_CS_fsm_state49) or (ap_const_logic_1 = ap_CS_fsm_state48) or (ap_const_logic_1 = ap_CS_fsm_state47) or (ap_const_logic_1 = ap_CS_fsm_state46) or (ap_const_logic_1 = ap_CS_fsm_state45) or (ap_const_logic_1 = ap_CS_fsm_state44) or (ap_const_logic_1 = ap_CS_fsm_state43) or (ap_const_logic_1 = ap_CS_fsm_state42) or (ap_const_logic_1 = ap_CS_fsm_state41))) then 
             MemBank_B_ce1 <= ap_const_logic_1;
-        elsif ((ap_const_logic_1 = ap_CS_fsm_state5)) then 
-            MemBank_B_ce1 <= grp_depthwise_conv2d_fix_fu_14502_input_r_ce1;
-        elsif (((ap_const_logic_1 = ap_CS_fsm_state29) or (ap_const_logic_1 = ap_CS_fsm_state21))) then 
-            MemBank_B_ce1 <= grp_depthwise_conv2d_fix_1_fu_14468_input_r_ce1;
         elsif (((ap_const_logic_1 = ap_CS_fsm_state17) or (ap_const_logic_1 = ap_CS_fsm_state9))) then 
-            MemBank_B_ce1 <= grp_max_pooling2d_fix16_fu_14447_input_r_ce1;
+            MemBank_B_ce1 <= grp_max_pooling2d_fix16_fu_14516_input_r_ce1;
+        elsif ((ap_const_logic_1 = ap_CS_fsm_state5)) then 
+            MemBank_B_ce1 <= grp_depthwise_conv2d_fix_fu_14459_input_r_ce1;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state29) or (ap_const_logic_1 = ap_CS_fsm_state21))) then 
+            MemBank_B_ce1 <= grp_depthwise_conv2d_fix_1_fu_14435_input_r_ce1;
         elsif (((ap_const_logic_1 = ap_CS_fsm_state37) or (ap_const_logic_1 = ap_CS_fsm_state13))) then 
-            MemBank_B_ce1 <= grp_depthwise_conv2d_fix_2_fu_14423_input_r_ce1;
+            MemBank_B_ce1 <= grp_depthwise_conv2d_fix_2_fu_14411_input_r_ce1;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state35) or (ap_const_logic_1 = ap_CS_fsm_state27) or (ap_const_logic_1 = ap_CS_fsm_state19) or (ap_const_logic_1 = ap_CS_fsm_state11) or (ap_const_logic_1 = ap_CS_fsm_state3))) then 
+            MemBank_B_ce1 <= grp_padding2d_fix16_fu_14393_output_r_ce1;
         else 
             MemBank_B_ce1 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    MemBank_B_d0_assign_proc : process(grp_pointwise_conv2d_fix_fu_14393_output_r_d0, grp_pointwise_conv2d_fix_3_fu_14403_output_r_d0, grp_pointwise_conv2d_fix_2_fu_14413_output_r_d0, grp_pointwise_conv2d_fix_1_fu_14492_output_r_d0, grp_pointwise_conv2d_fix_4_fu_14508_output_r_d0, grp_padding2d_fix16_fu_14535_output_r_d0, ap_CS_fsm_state7, ap_CS_fsm_state31, ap_CS_fsm_state23, ap_CS_fsm_state15, ap_CS_fsm_state39, ap_CS_fsm_state3, ap_CS_fsm_state11, ap_CS_fsm_state19, ap_CS_fsm_state27, ap_CS_fsm_state35)
+    MemBank_B_d0_assign_proc : process(grp_padding2d_fix16_fu_14393_output_r_d0, grp_pointwise_conv2d_fix_fu_14465_output_r_d0, grp_pointwise_conv2d_fix_3_fu_14475_output_r_d0, grp_pointwise_conv2d_fix_2_fu_14485_output_r_d0, grp_pointwise_conv2d_fix_1_fu_14537_output_r_d0, grp_pointwise_conv2d_fix_4_fu_14547_output_r_d0, ap_CS_fsm_state3, ap_CS_fsm_state11, ap_CS_fsm_state19, ap_CS_fsm_state27, ap_CS_fsm_state35, ap_CS_fsm_state7, ap_CS_fsm_state31, ap_CS_fsm_state23, ap_CS_fsm_state15, ap_CS_fsm_state39)
     begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state35) or (ap_const_logic_1 = ap_CS_fsm_state27) or (ap_const_logic_1 = ap_CS_fsm_state19) or (ap_const_logic_1 = ap_CS_fsm_state11) or (ap_const_logic_1 = ap_CS_fsm_state3))) then 
-            MemBank_B_d0 <= grp_padding2d_fix16_fu_14535_output_r_d0;
-        elsif ((ap_const_logic_1 = ap_CS_fsm_state39)) then 
-            MemBank_B_d0 <= grp_pointwise_conv2d_fix_4_fu_14508_output_r_d0;
+        if ((ap_const_logic_1 = ap_CS_fsm_state39)) then 
+            MemBank_B_d0 <= grp_pointwise_conv2d_fix_4_fu_14547_output_r_d0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state15)) then 
-            MemBank_B_d0 <= grp_pointwise_conv2d_fix_1_fu_14492_output_r_d0;
+            MemBank_B_d0 <= grp_pointwise_conv2d_fix_1_fu_14537_output_r_d0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state23)) then 
-            MemBank_B_d0 <= grp_pointwise_conv2d_fix_2_fu_14413_output_r_d0;
+            MemBank_B_d0 <= grp_pointwise_conv2d_fix_2_fu_14485_output_r_d0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            MemBank_B_d0 <= grp_pointwise_conv2d_fix_3_fu_14403_output_r_d0;
+            MemBank_B_d0 <= grp_pointwise_conv2d_fix_3_fu_14475_output_r_d0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state7)) then 
-            MemBank_B_d0 <= grp_pointwise_conv2d_fix_fu_14393_output_r_d0;
+            MemBank_B_d0 <= grp_pointwise_conv2d_fix_fu_14465_output_r_d0;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state35) or (ap_const_logic_1 = ap_CS_fsm_state27) or (ap_const_logic_1 = ap_CS_fsm_state19) or (ap_const_logic_1 = ap_CS_fsm_state11) or (ap_const_logic_1 = ap_CS_fsm_state3))) then 
+            MemBank_B_d0 <= grp_padding2d_fix16_fu_14393_output_r_d0;
         else 
             MemBank_B_d0 <= "XXXXXXXXXXXXXXXX";
         end if; 
     end process;
 
 
-    MemBank_B_we0_assign_proc : process(grp_pointwise_conv2d_fix_fu_14393_output_r_we0, grp_pointwise_conv2d_fix_3_fu_14403_output_r_we0, grp_pointwise_conv2d_fix_2_fu_14413_output_r_we0, grp_pointwise_conv2d_fix_1_fu_14492_output_r_we0, grp_pointwise_conv2d_fix_4_fu_14508_output_r_we0, grp_padding2d_fix16_fu_14535_output_r_we0, ap_CS_fsm_state7, ap_CS_fsm_state31, ap_CS_fsm_state23, ap_CS_fsm_state15, ap_CS_fsm_state39, ap_CS_fsm_state3, ap_CS_fsm_state11, ap_CS_fsm_state19, ap_CS_fsm_state27, ap_CS_fsm_state35)
+    MemBank_B_we0_assign_proc : process(grp_padding2d_fix16_fu_14393_output_r_we0, grp_pointwise_conv2d_fix_fu_14465_output_r_we0, grp_pointwise_conv2d_fix_3_fu_14475_output_r_we0, grp_pointwise_conv2d_fix_2_fu_14485_output_r_we0, grp_pointwise_conv2d_fix_1_fu_14537_output_r_we0, grp_pointwise_conv2d_fix_4_fu_14547_output_r_we0, ap_CS_fsm_state3, ap_CS_fsm_state11, ap_CS_fsm_state19, ap_CS_fsm_state27, ap_CS_fsm_state35, ap_CS_fsm_state7, ap_CS_fsm_state31, ap_CS_fsm_state23, ap_CS_fsm_state15, ap_CS_fsm_state39)
     begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state35) or (ap_const_logic_1 = ap_CS_fsm_state27) or (ap_const_logic_1 = ap_CS_fsm_state19) or (ap_const_logic_1 = ap_CS_fsm_state11) or (ap_const_logic_1 = ap_CS_fsm_state3))) then 
-            MemBank_B_we0 <= grp_padding2d_fix16_fu_14535_output_r_we0;
-        elsif ((ap_const_logic_1 = ap_CS_fsm_state39)) then 
-            MemBank_B_we0 <= grp_pointwise_conv2d_fix_4_fu_14508_output_r_we0;
+        if ((ap_const_logic_1 = ap_CS_fsm_state39)) then 
+            MemBank_B_we0 <= grp_pointwise_conv2d_fix_4_fu_14547_output_r_we0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state15)) then 
-            MemBank_B_we0 <= grp_pointwise_conv2d_fix_1_fu_14492_output_r_we0;
+            MemBank_B_we0 <= grp_pointwise_conv2d_fix_1_fu_14537_output_r_we0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state23)) then 
-            MemBank_B_we0 <= grp_pointwise_conv2d_fix_2_fu_14413_output_r_we0;
+            MemBank_B_we0 <= grp_pointwise_conv2d_fix_2_fu_14485_output_r_we0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            MemBank_B_we0 <= grp_pointwise_conv2d_fix_3_fu_14403_output_r_we0;
+            MemBank_B_we0 <= grp_pointwise_conv2d_fix_3_fu_14475_output_r_we0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state7)) then 
-            MemBank_B_we0 <= grp_pointwise_conv2d_fix_fu_14393_output_r_we0;
+            MemBank_B_we0 <= grp_pointwise_conv2d_fix_fu_14465_output_r_we0;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state35) or (ap_const_logic_1 = ap_CS_fsm_state27) or (ap_const_logic_1 = ap_CS_fsm_state19) or (ap_const_logic_1 = ap_CS_fsm_state11) or (ap_const_logic_1 = ap_CS_fsm_state3))) then 
+            MemBank_B_we0 <= grp_padding2d_fix16_fu_14393_output_r_we0;
         else 
             MemBank_B_we0 <= ap_const_logic_0;
+        end if; 
+    end process;
+
+
+    MemBank_B_we1_assign_proc : process(grp_padding2d_fix16_fu_14393_output_r_we1, ap_CS_fsm_state3, ap_CS_fsm_state11, ap_CS_fsm_state19, ap_CS_fsm_state27, ap_CS_fsm_state35)
+    begin
+        if (((ap_const_logic_1 = ap_CS_fsm_state35) or (ap_const_logic_1 = ap_CS_fsm_state27) or (ap_const_logic_1 = ap_CS_fsm_state19) or (ap_const_logic_1 = ap_CS_fsm_state11) or (ap_const_logic_1 = ap_CS_fsm_state3))) then 
+            MemBank_B_we1 <= grp_padding2d_fix16_fu_14393_output_r_we1;
+        else 
+            MemBank_B_we1 <= ap_const_logic_0;
         end if; 
     end process;
 
@@ -8999,120 +9059,120 @@ begin
     end process;
 
 
-    SeparableConv2D_1_b_1_ce0_assign_proc : process(grp_depthwise_conv2d_fix_2_fu_14423_bias_ce0, ap_CS_fsm_state13)
+    SeparableConv2D_1_b_1_ce0_assign_proc : process(grp_depthwise_conv2d_fix_2_fu_14411_bias_ce0, ap_CS_fsm_state13)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state13)) then 
-            SeparableConv2D_1_b_1_ce0 <= grp_depthwise_conv2d_fix_2_fu_14423_bias_ce0;
+            SeparableConv2D_1_b_1_ce0 <= grp_depthwise_conv2d_fix_2_fu_14411_bias_ce0;
         else 
             SeparableConv2D_1_b_1_ce0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    SeparableConv2D_1_w_1_ce0_assign_proc : process(grp_depthwise_conv2d_fix_2_fu_14423_kernel_0_ce0, ap_CS_fsm_state13)
+    SeparableConv2D_1_w_1_ce0_assign_proc : process(grp_depthwise_conv2d_fix_2_fu_14411_kernel_0_ce0, ap_CS_fsm_state13)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state13)) then 
-            SeparableConv2D_1_w_1_ce0 <= grp_depthwise_conv2d_fix_2_fu_14423_kernel_0_ce0;
+            SeparableConv2D_1_w_1_ce0 <= grp_depthwise_conv2d_fix_2_fu_14411_kernel_0_ce0;
         else 
             SeparableConv2D_1_w_1_ce0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    SeparableConv2D_1_w_1_ce1_assign_proc : process(grp_depthwise_conv2d_fix_2_fu_14423_kernel_0_ce1, ap_CS_fsm_state13)
+    SeparableConv2D_1_w_1_ce1_assign_proc : process(grp_depthwise_conv2d_fix_2_fu_14411_kernel_0_ce1, ap_CS_fsm_state13)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state13)) then 
-            SeparableConv2D_1_w_1_ce1 <= grp_depthwise_conv2d_fix_2_fu_14423_kernel_0_ce1;
+            SeparableConv2D_1_w_1_ce1 <= grp_depthwise_conv2d_fix_2_fu_14411_kernel_0_ce1;
         else 
             SeparableConv2D_1_w_1_ce1 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    SeparableConv2D_2_b_1_ce0_assign_proc : process(grp_depthwise_conv2d_fix_1_fu_14468_bias_ce0, ap_CS_fsm_state21)
+    SeparableConv2D_2_b_1_ce0_assign_proc : process(grp_depthwise_conv2d_fix_1_fu_14435_bias_ce0, ap_CS_fsm_state21)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state21)) then 
-            SeparableConv2D_2_b_1_ce0 <= grp_depthwise_conv2d_fix_1_fu_14468_bias_ce0;
+            SeparableConv2D_2_b_1_ce0 <= grp_depthwise_conv2d_fix_1_fu_14435_bias_ce0;
         else 
             SeparableConv2D_2_b_1_ce0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    SeparableConv2D_2_w_1_ce0_assign_proc : process(grp_depthwise_conv2d_fix_1_fu_14468_kernel_0_ce0, ap_CS_fsm_state21)
+    SeparableConv2D_2_w_1_ce0_assign_proc : process(grp_depthwise_conv2d_fix_1_fu_14435_kernel_0_ce0, ap_CS_fsm_state21)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state21)) then 
-            SeparableConv2D_2_w_1_ce0 <= grp_depthwise_conv2d_fix_1_fu_14468_kernel_0_ce0;
+            SeparableConv2D_2_w_1_ce0 <= grp_depthwise_conv2d_fix_1_fu_14435_kernel_0_ce0;
         else 
             SeparableConv2D_2_w_1_ce0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    SeparableConv2D_2_w_1_ce1_assign_proc : process(grp_depthwise_conv2d_fix_1_fu_14468_kernel_0_ce1, ap_CS_fsm_state21)
+    SeparableConv2D_2_w_1_ce1_assign_proc : process(grp_depthwise_conv2d_fix_1_fu_14435_kernel_0_ce1, ap_CS_fsm_state21)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state21)) then 
-            SeparableConv2D_2_w_1_ce1 <= grp_depthwise_conv2d_fix_1_fu_14468_kernel_0_ce1;
+            SeparableConv2D_2_w_1_ce1 <= grp_depthwise_conv2d_fix_1_fu_14435_kernel_0_ce1;
         else 
             SeparableConv2D_2_w_1_ce1 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    SeparableConv2D_3_b_1_ce0_assign_proc : process(grp_depthwise_conv2d_fix_1_fu_14468_bias_ce0, ap_CS_fsm_state29)
+    SeparableConv2D_3_b_1_ce0_assign_proc : process(grp_depthwise_conv2d_fix_1_fu_14435_bias_ce0, ap_CS_fsm_state29)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state29)) then 
-            SeparableConv2D_3_b_1_ce0 <= grp_depthwise_conv2d_fix_1_fu_14468_bias_ce0;
+            SeparableConv2D_3_b_1_ce0 <= grp_depthwise_conv2d_fix_1_fu_14435_bias_ce0;
         else 
             SeparableConv2D_3_b_1_ce0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    SeparableConv2D_3_w_1_ce0_assign_proc : process(grp_depthwise_conv2d_fix_1_fu_14468_kernel_0_ce0, ap_CS_fsm_state29)
+    SeparableConv2D_3_w_1_ce0_assign_proc : process(grp_depthwise_conv2d_fix_1_fu_14435_kernel_0_ce0, ap_CS_fsm_state29)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state29)) then 
-            SeparableConv2D_3_w_1_ce0 <= grp_depthwise_conv2d_fix_1_fu_14468_kernel_0_ce0;
+            SeparableConv2D_3_w_1_ce0 <= grp_depthwise_conv2d_fix_1_fu_14435_kernel_0_ce0;
         else 
             SeparableConv2D_3_w_1_ce0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    SeparableConv2D_3_w_1_ce1_assign_proc : process(grp_depthwise_conv2d_fix_1_fu_14468_kernel_0_ce1, ap_CS_fsm_state29)
+    SeparableConv2D_3_w_1_ce1_assign_proc : process(grp_depthwise_conv2d_fix_1_fu_14435_kernel_0_ce1, ap_CS_fsm_state29)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state29)) then 
-            SeparableConv2D_3_w_1_ce1 <= grp_depthwise_conv2d_fix_1_fu_14468_kernel_0_ce1;
+            SeparableConv2D_3_w_1_ce1 <= grp_depthwise_conv2d_fix_1_fu_14435_kernel_0_ce1;
         else 
             SeparableConv2D_3_w_1_ce1 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    SeparableConv2D_4_b_s_ce0_assign_proc : process(grp_depthwise_conv2d_fix_2_fu_14423_bias_ce0, ap_CS_fsm_state37)
+    SeparableConv2D_4_b_s_ce0_assign_proc : process(grp_depthwise_conv2d_fix_2_fu_14411_bias_ce0, ap_CS_fsm_state37)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state37)) then 
-            SeparableConv2D_4_b_s_ce0 <= grp_depthwise_conv2d_fix_2_fu_14423_bias_ce0;
+            SeparableConv2D_4_b_s_ce0 <= grp_depthwise_conv2d_fix_2_fu_14411_bias_ce0;
         else 
             SeparableConv2D_4_b_s_ce0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    SeparableConv2D_4_w_s_ce0_assign_proc : process(grp_depthwise_conv2d_fix_2_fu_14423_kernel_0_ce0, ap_CS_fsm_state37)
+    SeparableConv2D_4_w_s_ce0_assign_proc : process(grp_depthwise_conv2d_fix_2_fu_14411_kernel_0_ce0, ap_CS_fsm_state37)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state37)) then 
-            SeparableConv2D_4_w_s_ce0 <= grp_depthwise_conv2d_fix_2_fu_14423_kernel_0_ce0;
+            SeparableConv2D_4_w_s_ce0 <= grp_depthwise_conv2d_fix_2_fu_14411_kernel_0_ce0;
         else 
             SeparableConv2D_4_w_s_ce0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    SeparableConv2D_4_w_s_ce1_assign_proc : process(grp_depthwise_conv2d_fix_2_fu_14423_kernel_0_ce1, ap_CS_fsm_state37)
+    SeparableConv2D_4_w_s_ce1_assign_proc : process(grp_depthwise_conv2d_fix_2_fu_14411_kernel_0_ce1, ap_CS_fsm_state37)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state37)) then 
-            SeparableConv2D_4_w_s_ce1 <= grp_depthwise_conv2d_fix_2_fu_14423_kernel_0_ce1;
+            SeparableConv2D_4_w_s_ce1 <= grp_depthwise_conv2d_fix_2_fu_14411_kernel_0_ce1;
         else 
             SeparableConv2D_4_w_s_ce1 <= ap_const_logic_0;
         end if; 
@@ -9582,16 +9642,16 @@ begin
 
         ap_block_state434_pp0_stage0_iter0 <= not((ap_const_boolean_1 = ap_const_boolean_1));
 
-    ap_block_state435_io_assign_proc : process(output_data_V_data_V_1_ack_in, tmp_49_reg_18542)
+    ap_block_state435_io_assign_proc : process(output_data_V_data_V_1_ack_in, tmp_38_reg_18542)
     begin
-                ap_block_state435_io <= ((tmp_49_reg_18542 = ap_const_lv1_0) and (output_data_V_data_V_1_ack_in = ap_const_logic_0));
+                ap_block_state435_io <= ((tmp_38_reg_18542 = ap_const_lv1_0) and (output_data_V_data_V_1_ack_in = ap_const_logic_0));
     end process;
 
         ap_block_state435_pp0_stage0_iter1 <= not((ap_const_boolean_1 = ap_const_boolean_1));
 
-    ap_block_state436_io_assign_proc : process(output_data_V_data_V_1_ack_in, tmp_49_reg_18542_pp0_iter1_reg)
+    ap_block_state436_io_assign_proc : process(output_data_V_data_V_1_ack_in, tmp_38_reg_18542_pp0_iter1_reg)
     begin
-                ap_block_state436_io <= ((tmp_49_reg_18542_pp0_iter1_reg = ap_const_lv1_0) and (output_data_V_data_V_1_ack_in = ap_const_logic_0));
+                ap_block_state436_io <= ((tmp_38_reg_18542_pp0_iter1_reg = ap_const_lv1_0) and (output_data_V_data_V_1_ack_in = ap_const_logic_0));
     end process;
 
         ap_block_state436_pp0_stage0_iter2 <= not((ap_const_boolean_1 = ap_const_boolean_1));
@@ -9602,9 +9662,9 @@ begin
     end process;
 
 
-    ap_condition_pp0_exit_iter0_state434_assign_proc : process(tmp_49_fu_14585_p2)
+    ap_condition_pp0_exit_iter0_state434_assign_proc : process(tmp_38_fu_14585_p2)
     begin
-        if ((tmp_49_fu_14585_p2 = ap_const_lv1_1)) then 
+        if ((tmp_38_fu_14585_p2 = ap_const_lv1_1)) then 
             ap_condition_pp0_exit_iter0_state434 <= ap_const_logic_1;
         else 
             ap_condition_pp0_exit_iter0_state434 <= ap_const_logic_0;
@@ -9660,344 +9720,344 @@ begin
     end process;
 
     exitcond_fu_14563_p2 <= "1" when (i_reg_14371 = ap_const_lv10_310) else "0";
-    grp_depthwise_conv2d_fix_1_fu_14468_ap_start <= grp_depthwise_conv2d_fix_1_fu_14468_ap_start_reg;
+    grp_depthwise_conv2d_fix_1_fu_14435_ap_start <= grp_depthwise_conv2d_fix_1_fu_14435_ap_start_reg;
 
-    grp_depthwise_conv2d_fix_1_fu_14468_bias_q0_assign_proc : process(SeparableConv2D_2_b_1_q0, SeparableConv2D_3_b_1_q0, ap_CS_fsm_state21, ap_CS_fsm_state29)
+    grp_depthwise_conv2d_fix_1_fu_14435_bias_q0_assign_proc : process(SeparableConv2D_2_b_1_q0, SeparableConv2D_3_b_1_q0, ap_CS_fsm_state21, ap_CS_fsm_state29)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state29)) then 
-            grp_depthwise_conv2d_fix_1_fu_14468_bias_q0 <= SeparableConv2D_3_b_1_q0;
+            grp_depthwise_conv2d_fix_1_fu_14435_bias_q0 <= SeparableConv2D_3_b_1_q0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state21)) then 
-            grp_depthwise_conv2d_fix_1_fu_14468_bias_q0 <= SeparableConv2D_2_b_1_q0;
+            grp_depthwise_conv2d_fix_1_fu_14435_bias_q0 <= SeparableConv2D_2_b_1_q0;
         else 
-            grp_depthwise_conv2d_fix_1_fu_14468_bias_q0 <= "XXXXXXXXXXXXXXXX";
+            grp_depthwise_conv2d_fix_1_fu_14435_bias_q0 <= "XXXXXXXXXXXXXXXX";
         end if; 
     end process;
 
 
-    grp_depthwise_conv2d_fix_1_fu_14468_input_height_assign_proc : process(ap_CS_fsm_state21, ap_CS_fsm_state29)
+    grp_depthwise_conv2d_fix_1_fu_14435_input_height_assign_proc : process(ap_CS_fsm_state21, ap_CS_fsm_state29)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state29)) then 
-            grp_depthwise_conv2d_fix_1_fu_14468_input_height <= ap_const_lv6_10;
+            grp_depthwise_conv2d_fix_1_fu_14435_input_height <= ap_const_lv6_10;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state21)) then 
-            grp_depthwise_conv2d_fix_1_fu_14468_input_height <= ap_const_lv6_9;
+            grp_depthwise_conv2d_fix_1_fu_14435_input_height <= ap_const_lv6_9;
         else 
-            grp_depthwise_conv2d_fix_1_fu_14468_input_height <= "XXXXXX";
+            grp_depthwise_conv2d_fix_1_fu_14435_input_height <= "XXXXXX";
         end if; 
     end process;
 
 
-    grp_depthwise_conv2d_fix_1_fu_14468_input_width_assign_proc : process(ap_CS_fsm_state21, ap_CS_fsm_state29)
+    grp_depthwise_conv2d_fix_1_fu_14435_input_width_assign_proc : process(ap_CS_fsm_state21, ap_CS_fsm_state29)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state29)) then 
-            grp_depthwise_conv2d_fix_1_fu_14468_input_width <= ap_const_lv6_10;
+            grp_depthwise_conv2d_fix_1_fu_14435_input_width <= ap_const_lv6_10;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state21)) then 
-            grp_depthwise_conv2d_fix_1_fu_14468_input_width <= ap_const_lv6_9;
+            grp_depthwise_conv2d_fix_1_fu_14435_input_width <= ap_const_lv6_9;
         else 
-            grp_depthwise_conv2d_fix_1_fu_14468_input_width <= "XXXXXX";
+            grp_depthwise_conv2d_fix_1_fu_14435_input_width <= "XXXXXX";
         end if; 
     end process;
 
 
-    grp_depthwise_conv2d_fix_1_fu_14468_kernel_0_q0_assign_proc : process(SeparableConv2D_2_w_1_q0, SeparableConv2D_3_w_1_q0, ap_CS_fsm_state21, ap_CS_fsm_state29)
+    grp_depthwise_conv2d_fix_1_fu_14435_kernel_0_q0_assign_proc : process(SeparableConv2D_2_w_1_q0, SeparableConv2D_3_w_1_q0, ap_CS_fsm_state21, ap_CS_fsm_state29)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state29)) then 
-            grp_depthwise_conv2d_fix_1_fu_14468_kernel_0_q0 <= SeparableConv2D_3_w_1_q0;
+            grp_depthwise_conv2d_fix_1_fu_14435_kernel_0_q0 <= SeparableConv2D_3_w_1_q0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state21)) then 
-            grp_depthwise_conv2d_fix_1_fu_14468_kernel_0_q0 <= SeparableConv2D_2_w_1_q0;
+            grp_depthwise_conv2d_fix_1_fu_14435_kernel_0_q0 <= SeparableConv2D_2_w_1_q0;
         else 
-            grp_depthwise_conv2d_fix_1_fu_14468_kernel_0_q0 <= "XXXXXXXXXXXXXXXX";
+            grp_depthwise_conv2d_fix_1_fu_14435_kernel_0_q0 <= "XXXXXXXXXXXXXXXX";
         end if; 
     end process;
 
 
-    grp_depthwise_conv2d_fix_1_fu_14468_kernel_0_q1_assign_proc : process(SeparableConv2D_2_w_1_q1, SeparableConv2D_3_w_1_q1, ap_CS_fsm_state21, ap_CS_fsm_state29)
+    grp_depthwise_conv2d_fix_1_fu_14435_kernel_0_q1_assign_proc : process(SeparableConv2D_2_w_1_q1, SeparableConv2D_3_w_1_q1, ap_CS_fsm_state21, ap_CS_fsm_state29)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state29)) then 
-            grp_depthwise_conv2d_fix_1_fu_14468_kernel_0_q1 <= SeparableConv2D_3_w_1_q1;
+            grp_depthwise_conv2d_fix_1_fu_14435_kernel_0_q1 <= SeparableConv2D_3_w_1_q1;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state21)) then 
-            grp_depthwise_conv2d_fix_1_fu_14468_kernel_0_q1 <= SeparableConv2D_2_w_1_q1;
+            grp_depthwise_conv2d_fix_1_fu_14435_kernel_0_q1 <= SeparableConv2D_2_w_1_q1;
         else 
-            grp_depthwise_conv2d_fix_1_fu_14468_kernel_0_q1 <= "XXXXXXXXXXXXXXXX";
+            grp_depthwise_conv2d_fix_1_fu_14435_kernel_0_q1 <= "XXXXXXXXXXXXXXXX";
         end if; 
     end process;
 
 
-    grp_depthwise_conv2d_fix_1_fu_14468_output_height_assign_proc : process(ap_CS_fsm_state21, ap_CS_fsm_state29)
+    grp_depthwise_conv2d_fix_1_fu_14435_output_height_assign_proc : process(ap_CS_fsm_state21, ap_CS_fsm_state29)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state29)) then 
-            grp_depthwise_conv2d_fix_1_fu_14468_output_height <= ap_const_lv5_E;
+            grp_depthwise_conv2d_fix_1_fu_14435_output_height <= ap_const_lv5_E;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state21)) then 
-            grp_depthwise_conv2d_fix_1_fu_14468_output_height <= ap_const_lv5_7;
+            grp_depthwise_conv2d_fix_1_fu_14435_output_height <= ap_const_lv5_7;
         else 
-            grp_depthwise_conv2d_fix_1_fu_14468_output_height <= "XXXXX";
+            grp_depthwise_conv2d_fix_1_fu_14435_output_height <= "XXXXX";
         end if; 
     end process;
 
 
-    grp_depthwise_conv2d_fix_1_fu_14468_output_width_assign_proc : process(ap_CS_fsm_state21, ap_CS_fsm_state29)
+    grp_depthwise_conv2d_fix_1_fu_14435_output_width_assign_proc : process(ap_CS_fsm_state21, ap_CS_fsm_state29)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state29)) then 
-            grp_depthwise_conv2d_fix_1_fu_14468_output_width <= ap_const_lv5_E;
+            grp_depthwise_conv2d_fix_1_fu_14435_output_width <= ap_const_lv5_E;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state21)) then 
-            grp_depthwise_conv2d_fix_1_fu_14468_output_width <= ap_const_lv5_7;
+            grp_depthwise_conv2d_fix_1_fu_14435_output_width <= ap_const_lv5_7;
         else 
-            grp_depthwise_conv2d_fix_1_fu_14468_output_width <= "XXXXX";
+            grp_depthwise_conv2d_fix_1_fu_14435_output_width <= "XXXXX";
         end if; 
     end process;
 
-    grp_depthwise_conv2d_fix_2_fu_14423_ap_start <= grp_depthwise_conv2d_fix_2_fu_14423_ap_start_reg;
+    grp_depthwise_conv2d_fix_2_fu_14411_ap_start <= grp_depthwise_conv2d_fix_2_fu_14411_ap_start_reg;
 
-    grp_depthwise_conv2d_fix_2_fu_14423_bias_q0_assign_proc : process(SeparableConv2D_1_b_1_q0, SeparableConv2D_4_b_s_q0, ap_CS_fsm_state13, ap_CS_fsm_state37)
+    grp_depthwise_conv2d_fix_2_fu_14411_bias_q0_assign_proc : process(SeparableConv2D_1_b_1_q0, SeparableConv2D_4_b_s_q0, ap_CS_fsm_state13, ap_CS_fsm_state37)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state37)) then 
-            grp_depthwise_conv2d_fix_2_fu_14423_bias_q0 <= SeparableConv2D_4_b_s_q0;
+            grp_depthwise_conv2d_fix_2_fu_14411_bias_q0 <= SeparableConv2D_4_b_s_q0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state13)) then 
-            grp_depthwise_conv2d_fix_2_fu_14423_bias_q0 <= SeparableConv2D_1_b_1_q0;
+            grp_depthwise_conv2d_fix_2_fu_14411_bias_q0 <= SeparableConv2D_1_b_1_q0;
         else 
-            grp_depthwise_conv2d_fix_2_fu_14423_bias_q0 <= "XXXXXXXXXXXXXXXX";
+            grp_depthwise_conv2d_fix_2_fu_14411_bias_q0 <= "XXXXXXXXXXXXXXXX";
         end if; 
     end process;
 
 
-    grp_depthwise_conv2d_fix_2_fu_14423_input_height_assign_proc : process(ap_CS_fsm_state13, ap_CS_fsm_state37)
+    grp_depthwise_conv2d_fix_2_fu_14411_input_height_assign_proc : process(ap_CS_fsm_state13, ap_CS_fsm_state37)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state37)) then 
-            grp_depthwise_conv2d_fix_2_fu_14423_input_height <= ap_const_lv7_1E;
+            grp_depthwise_conv2d_fix_2_fu_14411_input_height <= ap_const_lv7_1E;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state13)) then 
-            grp_depthwise_conv2d_fix_2_fu_14423_input_height <= ap_const_lv7_10;
+            grp_depthwise_conv2d_fix_2_fu_14411_input_height <= ap_const_lv7_10;
         else 
-            grp_depthwise_conv2d_fix_2_fu_14423_input_height <= "XXXXXXX";
+            grp_depthwise_conv2d_fix_2_fu_14411_input_height <= "XXXXXXX";
         end if; 
     end process;
 
 
-    grp_depthwise_conv2d_fix_2_fu_14423_input_width_assign_proc : process(ap_CS_fsm_state13, ap_CS_fsm_state37)
+    grp_depthwise_conv2d_fix_2_fu_14411_input_width_assign_proc : process(ap_CS_fsm_state13, ap_CS_fsm_state37)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state37)) then 
-            grp_depthwise_conv2d_fix_2_fu_14423_input_width <= ap_const_lv6_1E;
+            grp_depthwise_conv2d_fix_2_fu_14411_input_width <= ap_const_lv6_1E;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state13)) then 
-            grp_depthwise_conv2d_fix_2_fu_14423_input_width <= ap_const_lv6_10;
+            grp_depthwise_conv2d_fix_2_fu_14411_input_width <= ap_const_lv6_10;
         else 
-            grp_depthwise_conv2d_fix_2_fu_14423_input_width <= "XXXXXX";
+            grp_depthwise_conv2d_fix_2_fu_14411_input_width <= "XXXXXX";
         end if; 
     end process;
 
 
-    grp_depthwise_conv2d_fix_2_fu_14423_kernel_0_q0_assign_proc : process(SeparableConv2D_1_w_1_q0, SeparableConv2D_4_w_s_q0, ap_CS_fsm_state13, ap_CS_fsm_state37)
+    grp_depthwise_conv2d_fix_2_fu_14411_kernel_0_q0_assign_proc : process(SeparableConv2D_1_w_1_q0, SeparableConv2D_4_w_s_q0, ap_CS_fsm_state13, ap_CS_fsm_state37)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state37)) then 
-            grp_depthwise_conv2d_fix_2_fu_14423_kernel_0_q0 <= SeparableConv2D_4_w_s_q0;
+            grp_depthwise_conv2d_fix_2_fu_14411_kernel_0_q0 <= SeparableConv2D_4_w_s_q0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state13)) then 
-            grp_depthwise_conv2d_fix_2_fu_14423_kernel_0_q0 <= SeparableConv2D_1_w_1_q0;
+            grp_depthwise_conv2d_fix_2_fu_14411_kernel_0_q0 <= SeparableConv2D_1_w_1_q0;
         else 
-            grp_depthwise_conv2d_fix_2_fu_14423_kernel_0_q0 <= "XXXXXXXXXXXXXXXX";
+            grp_depthwise_conv2d_fix_2_fu_14411_kernel_0_q0 <= "XXXXXXXXXXXXXXXX";
         end if; 
     end process;
 
 
-    grp_depthwise_conv2d_fix_2_fu_14423_kernel_0_q1_assign_proc : process(SeparableConv2D_1_w_1_q1, SeparableConv2D_4_w_s_q1, ap_CS_fsm_state13, ap_CS_fsm_state37)
+    grp_depthwise_conv2d_fix_2_fu_14411_kernel_0_q1_assign_proc : process(SeparableConv2D_1_w_1_q1, SeparableConv2D_4_w_s_q1, ap_CS_fsm_state13, ap_CS_fsm_state37)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state37)) then 
-            grp_depthwise_conv2d_fix_2_fu_14423_kernel_0_q1 <= SeparableConv2D_4_w_s_q1;
+            grp_depthwise_conv2d_fix_2_fu_14411_kernel_0_q1 <= SeparableConv2D_4_w_s_q1;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state13)) then 
-            grp_depthwise_conv2d_fix_2_fu_14423_kernel_0_q1 <= SeparableConv2D_1_w_1_q1;
+            grp_depthwise_conv2d_fix_2_fu_14411_kernel_0_q1 <= SeparableConv2D_1_w_1_q1;
         else 
-            grp_depthwise_conv2d_fix_2_fu_14423_kernel_0_q1 <= "XXXXXXXXXXXXXXXX";
+            grp_depthwise_conv2d_fix_2_fu_14411_kernel_0_q1 <= "XXXXXXXXXXXXXXXX";
         end if; 
     end process;
 
 
-    grp_depthwise_conv2d_fix_2_fu_14423_output_height_assign_proc : process(ap_CS_fsm_state13, ap_CS_fsm_state37)
+    grp_depthwise_conv2d_fix_2_fu_14411_output_height_assign_proc : process(ap_CS_fsm_state13, ap_CS_fsm_state37)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state37)) then 
-            grp_depthwise_conv2d_fix_2_fu_14423_output_height <= ap_const_lv6_1C;
+            grp_depthwise_conv2d_fix_2_fu_14411_output_height <= ap_const_lv6_1C;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state13)) then 
-            grp_depthwise_conv2d_fix_2_fu_14423_output_height <= ap_const_lv6_E;
+            grp_depthwise_conv2d_fix_2_fu_14411_output_height <= ap_const_lv6_E;
         else 
-            grp_depthwise_conv2d_fix_2_fu_14423_output_height <= "XXXXXX";
+            grp_depthwise_conv2d_fix_2_fu_14411_output_height <= "XXXXXX";
         end if; 
     end process;
 
 
-    grp_depthwise_conv2d_fix_2_fu_14423_output_width_assign_proc : process(ap_CS_fsm_state13, ap_CS_fsm_state37)
+    grp_depthwise_conv2d_fix_2_fu_14411_output_width_assign_proc : process(ap_CS_fsm_state13, ap_CS_fsm_state37)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state37)) then 
-            grp_depthwise_conv2d_fix_2_fu_14423_output_width <= ap_const_lv6_1C;
+            grp_depthwise_conv2d_fix_2_fu_14411_output_width <= ap_const_lv6_1C;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state13)) then 
-            grp_depthwise_conv2d_fix_2_fu_14423_output_width <= ap_const_lv6_E;
+            grp_depthwise_conv2d_fix_2_fu_14411_output_width <= ap_const_lv6_E;
         else 
-            grp_depthwise_conv2d_fix_2_fu_14423_output_width <= "XXXXXX";
+            grp_depthwise_conv2d_fix_2_fu_14411_output_width <= "XXXXXX";
         end if; 
     end process;
 
-    grp_depthwise_conv2d_fix_fu_14502_ap_start <= grp_depthwise_conv2d_fix_fu_14502_ap_start_reg;
-    grp_max_pooling2d_fix16_fu_14447_ap_start <= grp_max_pooling2d_fix16_fu_14447_ap_start_reg;
+    grp_depthwise_conv2d_fix_fu_14459_ap_start <= grp_depthwise_conv2d_fix_fu_14459_ap_start_reg;
+    grp_max_pooling2d_fix16_fu_14516_ap_start <= grp_max_pooling2d_fix16_fu_14516_ap_start_reg;
 
-    grp_max_pooling2d_fix16_fu_14447_input_height_assign_proc : process(ap_CS_fsm_state9, ap_CS_fsm_state17)
+    grp_max_pooling2d_fix16_fu_14516_input_height_assign_proc : process(ap_CS_fsm_state9, ap_CS_fsm_state17)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state17)) then 
-            grp_max_pooling2d_fix16_fu_14447_input_height <= ap_const_lv7_E;
+            grp_max_pooling2d_fix16_fu_14516_input_height <= ap_const_lv7_E;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state9)) then 
-            grp_max_pooling2d_fix16_fu_14447_input_height <= ap_const_lv7_1C;
+            grp_max_pooling2d_fix16_fu_14516_input_height <= ap_const_lv7_1C;
         else 
-            grp_max_pooling2d_fix16_fu_14447_input_height <= "XXXXXXX";
+            grp_max_pooling2d_fix16_fu_14516_input_height <= "XXXXXXX";
         end if; 
     end process;
 
 
-    grp_max_pooling2d_fix16_fu_14447_input_width_assign_proc : process(ap_CS_fsm_state9, ap_CS_fsm_state17)
+    grp_max_pooling2d_fix16_fu_14516_input_width_assign_proc : process(ap_CS_fsm_state9, ap_CS_fsm_state17)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state17)) then 
-            grp_max_pooling2d_fix16_fu_14447_input_width <= ap_const_lv6_E;
+            grp_max_pooling2d_fix16_fu_14516_input_width <= ap_const_lv6_E;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state9)) then 
-            grp_max_pooling2d_fix16_fu_14447_input_width <= ap_const_lv6_1C;
+            grp_max_pooling2d_fix16_fu_14516_input_width <= ap_const_lv6_1C;
         else 
-            grp_max_pooling2d_fix16_fu_14447_input_width <= "XXXXXX";
+            grp_max_pooling2d_fix16_fu_14516_input_width <= "XXXXXX";
         end if; 
     end process;
 
 
-    grp_max_pooling2d_fix16_fu_14447_output_depth_assign_proc : process(ap_CS_fsm_state9, ap_CS_fsm_state17)
+    grp_max_pooling2d_fix16_fu_14516_output_depth_assign_proc : process(ap_CS_fsm_state9, ap_CS_fsm_state17)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state17)) then 
-            grp_max_pooling2d_fix16_fu_14447_output_depth <= ap_const_lv6_8;
+            grp_max_pooling2d_fix16_fu_14516_output_depth <= ap_const_lv6_8;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state9)) then 
-            grp_max_pooling2d_fix16_fu_14447_output_depth <= ap_const_lv6_10;
+            grp_max_pooling2d_fix16_fu_14516_output_depth <= ap_const_lv6_10;
         else 
-            grp_max_pooling2d_fix16_fu_14447_output_depth <= "XXXXXX";
+            grp_max_pooling2d_fix16_fu_14516_output_depth <= "XXXXXX";
         end if; 
     end process;
 
 
-    grp_max_pooling2d_fix16_fu_14447_output_height_assign_proc : process(ap_CS_fsm_state9, ap_CS_fsm_state17)
+    grp_max_pooling2d_fix16_fu_14516_output_height_assign_proc : process(ap_CS_fsm_state9, ap_CS_fsm_state17)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state17)) then 
-            grp_max_pooling2d_fix16_fu_14447_output_height <= ap_const_lv5_7;
+            grp_max_pooling2d_fix16_fu_14516_output_height <= ap_const_lv5_7;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state9)) then 
-            grp_max_pooling2d_fix16_fu_14447_output_height <= ap_const_lv5_E;
+            grp_max_pooling2d_fix16_fu_14516_output_height <= ap_const_lv5_E;
         else 
-            grp_max_pooling2d_fix16_fu_14447_output_height <= "XXXXX";
+            grp_max_pooling2d_fix16_fu_14516_output_height <= "XXXXX";
         end if; 
     end process;
 
 
-    grp_max_pooling2d_fix16_fu_14447_output_width_assign_proc : process(ap_CS_fsm_state9, ap_CS_fsm_state17)
+    grp_max_pooling2d_fix16_fu_14516_output_width_assign_proc : process(ap_CS_fsm_state9, ap_CS_fsm_state17)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state17)) then 
-            grp_max_pooling2d_fix16_fu_14447_output_width <= ap_const_lv5_7;
+            grp_max_pooling2d_fix16_fu_14516_output_width <= ap_const_lv5_7;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state9)) then 
-            grp_max_pooling2d_fix16_fu_14447_output_width <= ap_const_lv5_E;
+            grp_max_pooling2d_fix16_fu_14516_output_width <= ap_const_lv5_E;
         else 
-            grp_max_pooling2d_fix16_fu_14447_output_width <= "XXXXX";
+            grp_max_pooling2d_fix16_fu_14516_output_width <= "XXXXX";
         end if; 
     end process;
 
-    grp_padding2d_fix16_fu_14535_ap_start <= grp_padding2d_fix16_fu_14535_ap_start_reg;
+    grp_padding2d_fix16_fu_14393_ap_start <= grp_padding2d_fix16_fu_14393_ap_start_reg;
 
-    grp_padding2d_fix16_fu_14535_input_depth_assign_proc : process(ap_CS_fsm_state3, ap_CS_fsm_state11, ap_CS_fsm_state19, ap_CS_fsm_state27, ap_CS_fsm_state35)
+    grp_padding2d_fix16_fu_14393_input_depth_assign_proc : process(ap_CS_fsm_state3, ap_CS_fsm_state11, ap_CS_fsm_state19, ap_CS_fsm_state27, ap_CS_fsm_state35)
     begin
         if (((ap_const_logic_1 = ap_CS_fsm_state27) or (ap_const_logic_1 = ap_CS_fsm_state19))) then 
-            grp_padding2d_fix16_fu_14535_input_depth <= ap_const_lv7_8;
+            grp_padding2d_fix16_fu_14393_input_depth <= ap_const_lv7_8;
         elsif (((ap_const_logic_1 = ap_CS_fsm_state35) or (ap_const_logic_1 = ap_CS_fsm_state11))) then 
-            grp_padding2d_fix16_fu_14535_input_depth <= ap_const_lv7_10;
+            grp_padding2d_fix16_fu_14393_input_depth <= ap_const_lv7_10;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state3)) then 
-            grp_padding2d_fix16_fu_14535_input_depth <= ap_const_lv7_1;
+            grp_padding2d_fix16_fu_14393_input_depth <= ap_const_lv7_1;
         else 
-            grp_padding2d_fix16_fu_14535_input_depth <= "XXXXXXX";
+            grp_padding2d_fix16_fu_14393_input_depth <= "XXXXXXX";
         end if; 
     end process;
 
 
-    grp_padding2d_fix16_fu_14535_input_height_assign_proc : process(ap_CS_fsm_state3, ap_CS_fsm_state11, ap_CS_fsm_state19, ap_CS_fsm_state27, ap_CS_fsm_state35)
+    grp_padding2d_fix16_fu_14393_input_height_assign_proc : process(ap_CS_fsm_state3, ap_CS_fsm_state11, ap_CS_fsm_state19, ap_CS_fsm_state27, ap_CS_fsm_state35)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state19)) then 
-            grp_padding2d_fix16_fu_14535_input_height <= ap_const_lv6_7;
+            grp_padding2d_fix16_fu_14393_input_height <= ap_const_lv6_7;
         elsif (((ap_const_logic_1 = ap_CS_fsm_state27) or (ap_const_logic_1 = ap_CS_fsm_state11))) then 
-            grp_padding2d_fix16_fu_14535_input_height <= ap_const_lv6_E;
+            grp_padding2d_fix16_fu_14393_input_height <= ap_const_lv6_E;
         elsif (((ap_const_logic_1 = ap_CS_fsm_state35) or (ap_const_logic_1 = ap_CS_fsm_state3))) then 
-            grp_padding2d_fix16_fu_14535_input_height <= ap_const_lv6_1C;
+            grp_padding2d_fix16_fu_14393_input_height <= ap_const_lv6_1C;
         else 
-            grp_padding2d_fix16_fu_14535_input_height <= "XXXXXX";
+            grp_padding2d_fix16_fu_14393_input_height <= "XXXXXX";
         end if; 
     end process;
 
 
-    grp_padding2d_fix16_fu_14535_input_width_assign_proc : process(ap_CS_fsm_state3, ap_CS_fsm_state11, ap_CS_fsm_state19, ap_CS_fsm_state27, ap_CS_fsm_state35)
+    grp_padding2d_fix16_fu_14393_input_width_assign_proc : process(ap_CS_fsm_state3, ap_CS_fsm_state11, ap_CS_fsm_state19, ap_CS_fsm_state27, ap_CS_fsm_state35)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state19)) then 
-            grp_padding2d_fix16_fu_14535_input_width <= ap_const_lv6_7;
+            grp_padding2d_fix16_fu_14393_input_width <= ap_const_lv6_7;
         elsif (((ap_const_logic_1 = ap_CS_fsm_state27) or (ap_const_logic_1 = ap_CS_fsm_state11))) then 
-            grp_padding2d_fix16_fu_14535_input_width <= ap_const_lv6_E;
+            grp_padding2d_fix16_fu_14393_input_width <= ap_const_lv6_E;
         elsif (((ap_const_logic_1 = ap_CS_fsm_state35) or (ap_const_logic_1 = ap_CS_fsm_state3))) then 
-            grp_padding2d_fix16_fu_14535_input_width <= ap_const_lv6_1C;
+            grp_padding2d_fix16_fu_14393_input_width <= ap_const_lv6_1C;
         else 
-            grp_padding2d_fix16_fu_14535_input_width <= "XXXXXX";
+            grp_padding2d_fix16_fu_14393_input_width <= "XXXXXX";
         end if; 
     end process;
 
-    grp_pointwise_conv2d_fix_1_fu_14492_ap_start <= grp_pointwise_conv2d_fix_1_fu_14492_ap_start_reg;
-    grp_pointwise_conv2d_fix_2_fu_14413_ap_start <= grp_pointwise_conv2d_fix_2_fu_14413_ap_start_reg;
-    grp_pointwise_conv2d_fix_3_fu_14403_ap_start <= grp_pointwise_conv2d_fix_3_fu_14403_ap_start_reg;
-    grp_pointwise_conv2d_fix_4_fu_14508_ap_start <= grp_pointwise_conv2d_fix_4_fu_14508_ap_start_reg;
-    grp_pointwise_conv2d_fix_fu_14393_ap_start <= grp_pointwise_conv2d_fix_fu_14393_ap_start_reg;
-    grp_up_sampling2d_fix16_fu_14514_ap_start <= grp_up_sampling2d_fix16_fu_14514_ap_start_reg;
+    grp_pointwise_conv2d_fix_1_fu_14537_ap_start <= grp_pointwise_conv2d_fix_1_fu_14537_ap_start_reg;
+    grp_pointwise_conv2d_fix_2_fu_14485_ap_start <= grp_pointwise_conv2d_fix_2_fu_14485_ap_start_reg;
+    grp_pointwise_conv2d_fix_3_fu_14475_ap_start <= grp_pointwise_conv2d_fix_3_fu_14475_ap_start_reg;
+    grp_pointwise_conv2d_fix_4_fu_14547_ap_start <= grp_pointwise_conv2d_fix_4_fu_14547_ap_start_reg;
+    grp_pointwise_conv2d_fix_fu_14465_ap_start <= grp_pointwise_conv2d_fix_fu_14465_ap_start_reg;
+    grp_up_sampling2d_fix16_fu_14495_ap_start <= grp_up_sampling2d_fix16_fu_14495_ap_start_reg;
 
-    grp_up_sampling2d_fix16_fu_14514_input_height_assign_proc : process(ap_CS_fsm_state25, ap_CS_fsm_state33)
+    grp_up_sampling2d_fix16_fu_14495_input_height_assign_proc : process(ap_CS_fsm_state25, ap_CS_fsm_state33)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state33)) then 
-            grp_up_sampling2d_fix16_fu_14514_input_height <= ap_const_lv5_E;
+            grp_up_sampling2d_fix16_fu_14495_input_height <= ap_const_lv5_E;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state25)) then 
-            grp_up_sampling2d_fix16_fu_14514_input_height <= ap_const_lv5_7;
+            grp_up_sampling2d_fix16_fu_14495_input_height <= ap_const_lv5_7;
         else 
-            grp_up_sampling2d_fix16_fu_14514_input_height <= "XXXXX";
-        end if; 
-    end process;
-
-
-    grp_up_sampling2d_fix16_fu_14514_input_width_assign_proc : process(ap_CS_fsm_state25, ap_CS_fsm_state33)
-    begin
-        if ((ap_const_logic_1 = ap_CS_fsm_state33)) then 
-            grp_up_sampling2d_fix16_fu_14514_input_width <= ap_const_lv5_E;
-        elsif ((ap_const_logic_1 = ap_CS_fsm_state25)) then 
-            grp_up_sampling2d_fix16_fu_14514_input_width <= ap_const_lv5_7;
-        else 
-            grp_up_sampling2d_fix16_fu_14514_input_width <= "XXXXX";
+            grp_up_sampling2d_fix16_fu_14495_input_height <= "XXXXX";
         end if; 
     end process;
 
 
-    grp_up_sampling2d_fix16_fu_14514_output_depth_assign_proc : process(ap_CS_fsm_state25, ap_CS_fsm_state33)
+    grp_up_sampling2d_fix16_fu_14495_input_width_assign_proc : process(ap_CS_fsm_state25, ap_CS_fsm_state33)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state33)) then 
-            grp_up_sampling2d_fix16_fu_14514_output_depth <= ap_const_lv6_10;
+            grp_up_sampling2d_fix16_fu_14495_input_width <= ap_const_lv5_E;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state25)) then 
-            grp_up_sampling2d_fix16_fu_14514_output_depth <= ap_const_lv6_8;
+            grp_up_sampling2d_fix16_fu_14495_input_width <= ap_const_lv5_7;
         else 
-            grp_up_sampling2d_fix16_fu_14514_output_depth <= "XXXXXX";
+            grp_up_sampling2d_fix16_fu_14495_input_width <= "XXXXX";
         end if; 
     end process;
 
 
-    grp_up_sampling2d_fix16_fu_14514_output_height_assign_proc : process(ap_CS_fsm_state25, ap_CS_fsm_state33)
+    grp_up_sampling2d_fix16_fu_14495_output_depth_assign_proc : process(ap_CS_fsm_state25, ap_CS_fsm_state33)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state33)) then 
-            grp_up_sampling2d_fix16_fu_14514_output_height <= ap_const_lv6_1C;
+            grp_up_sampling2d_fix16_fu_14495_output_depth <= ap_const_lv6_10;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state25)) then 
-            grp_up_sampling2d_fix16_fu_14514_output_height <= ap_const_lv6_E;
+            grp_up_sampling2d_fix16_fu_14495_output_depth <= ap_const_lv6_8;
         else 
-            grp_up_sampling2d_fix16_fu_14514_output_height <= "XXXXXX";
+            grp_up_sampling2d_fix16_fu_14495_output_depth <= "XXXXXX";
         end if; 
     end process;
 
 
-    grp_up_sampling2d_fix16_fu_14514_output_width_assign_proc : process(ap_CS_fsm_state25, ap_CS_fsm_state33)
+    grp_up_sampling2d_fix16_fu_14495_output_height_assign_proc : process(ap_CS_fsm_state25, ap_CS_fsm_state33)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state33)) then 
-            grp_up_sampling2d_fix16_fu_14514_output_width <= ap_const_lv6_1C;
+            grp_up_sampling2d_fix16_fu_14495_output_height <= ap_const_lv6_1C;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state25)) then 
-            grp_up_sampling2d_fix16_fu_14514_output_width <= ap_const_lv6_E;
+            grp_up_sampling2d_fix16_fu_14495_output_height <= ap_const_lv6_E;
         else 
-            grp_up_sampling2d_fix16_fu_14514_output_width <= "XXXXXX";
+            grp_up_sampling2d_fix16_fu_14495_output_height <= "XXXXXX";
+        end if; 
+    end process;
+
+
+    grp_up_sampling2d_fix16_fu_14495_output_width_assign_proc : process(ap_CS_fsm_state25, ap_CS_fsm_state33)
+    begin
+        if ((ap_const_logic_1 = ap_CS_fsm_state33)) then 
+            grp_up_sampling2d_fix16_fu_14495_output_width <= ap_const_lv6_1C;
+        elsif ((ap_const_logic_1 = ap_CS_fsm_state25)) then 
+            grp_up_sampling2d_fix16_fu_14495_output_width <= ap_const_lv6_E;
+        else 
+            grp_up_sampling2d_fix16_fu_14495_output_width <= "XXXXXX";
         end if; 
     end process;
 
@@ -10055,9 +10115,9 @@ begin
     input_data_V_dest_V_0_vld_in <= input_data_TVALID;
     output_data_TDATA <= output_data_V_data_V_1_data_out;
 
-    output_data_TDATA_blk_n_assign_proc : process(output_data_V_data_V_1_state, ap_CS_fsm_pp0_stage0, ap_enable_reg_pp0_iter1, ap_block_pp0_stage0, tmp_49_reg_18542, ap_enable_reg_pp0_iter2, tmp_49_reg_18542_pp0_iter1_reg)
+    output_data_TDATA_blk_n_assign_proc : process(output_data_V_data_V_1_state, ap_CS_fsm_pp0_stage0, ap_enable_reg_pp0_iter1, ap_block_pp0_stage0, tmp_38_reg_18542, ap_enable_reg_pp0_iter2, tmp_38_reg_18542_pp0_iter1_reg)
     begin
-        if ((((tmp_49_reg_18542_pp0_iter1_reg = ap_const_lv1_0) and (ap_enable_reg_pp0_iter2 = ap_const_logic_1) and (ap_const_boolean_0 = ap_block_pp0_stage0)) or ((tmp_49_reg_18542 = ap_const_lv1_0) and (ap_enable_reg_pp0_iter1 = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage0) and (ap_const_boolean_0 = ap_block_pp0_stage0)))) then 
+        if ((((tmp_38_reg_18542_pp0_iter1_reg = ap_const_lv1_0) and (ap_enable_reg_pp0_iter2 = ap_const_logic_1) and (ap_const_boolean_0 = ap_block_pp0_stage0)) or ((tmp_38_reg_18542 = ap_const_lv1_0) and (ap_enable_reg_pp0_iter1 = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage0) and (ap_const_boolean_0 = ap_block_pp0_stage0)))) then 
             output_data_TDATA_blk_n <= output_data_V_data_V_1_state(1);
         else 
             output_data_TDATA_blk_n <= ap_const_logic_1;
@@ -10088,9 +10148,9 @@ begin
     output_data_V_data_V_1_sel <= output_data_V_data_V_1_sel_rd;
     output_data_V_data_V_1_state_cmp_full <= '0' when (output_data_V_data_V_1_state = ap_const_lv2_1) else '1';
 
-    output_data_V_data_V_1_vld_in_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_enable_reg_pp0_iter1, tmp_49_reg_18542, ap_block_pp0_stage0_11001)
+    output_data_V_data_V_1_vld_in_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_enable_reg_pp0_iter1, tmp_38_reg_18542, ap_block_pp0_stage0_11001)
     begin
-        if (((ap_const_boolean_0 = ap_block_pp0_stage0_11001) and (tmp_49_reg_18542 = ap_const_lv1_0) and (ap_enable_reg_pp0_iter1 = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage0))) then 
+        if (((ap_const_boolean_0 = ap_block_pp0_stage0_11001) and (tmp_38_reg_18542 = ap_const_lv1_0) and (ap_enable_reg_pp0_iter1 = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage0))) then 
             output_data_V_data_V_1_vld_in <= ap_const_logic_1;
         else 
             output_data_V_data_V_1_vld_in <= ap_const_logic_0;
@@ -10103,9 +10163,9 @@ begin
     output_data_V_dest_V_1_data_out <= ap_const_lv1_0;
     output_data_V_dest_V_1_sel <= output_data_V_dest_V_1_sel_rd;
 
-    output_data_V_dest_V_1_vld_in_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_enable_reg_pp0_iter1, tmp_49_reg_18542, ap_block_pp0_stage0_11001)
+    output_data_V_dest_V_1_vld_in_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_enable_reg_pp0_iter1, tmp_38_reg_18542, ap_block_pp0_stage0_11001)
     begin
-        if (((ap_const_boolean_0 = ap_block_pp0_stage0_11001) and (tmp_49_reg_18542 = ap_const_lv1_0) and (ap_enable_reg_pp0_iter1 = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage0))) then 
+        if (((ap_const_boolean_0 = ap_block_pp0_stage0_11001) and (tmp_38_reg_18542 = ap_const_lv1_0) and (ap_enable_reg_pp0_iter1 = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage0))) then 
             output_data_V_dest_V_1_vld_in <= ap_const_logic_1;
         else 
             output_data_V_dest_V_1_vld_in <= ap_const_logic_0;
@@ -10118,9 +10178,9 @@ begin
     output_data_V_id_V_1_data_out <= ap_const_lv1_0;
     output_data_V_id_V_1_sel <= output_data_V_id_V_1_sel_rd;
 
-    output_data_V_id_V_1_vld_in_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_enable_reg_pp0_iter1, tmp_49_reg_18542, ap_block_pp0_stage0_11001)
+    output_data_V_id_V_1_vld_in_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_enable_reg_pp0_iter1, tmp_38_reg_18542, ap_block_pp0_stage0_11001)
     begin
-        if (((ap_const_boolean_0 = ap_block_pp0_stage0_11001) and (tmp_49_reg_18542 = ap_const_lv1_0) and (ap_enable_reg_pp0_iter1 = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage0))) then 
+        if (((ap_const_boolean_0 = ap_block_pp0_stage0_11001) and (tmp_38_reg_18542 = ap_const_lv1_0) and (ap_enable_reg_pp0_iter1 = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage0))) then 
             output_data_V_id_V_1_vld_in <= ap_const_logic_1;
         else 
             output_data_V_id_V_1_vld_in <= ap_const_logic_0;
@@ -10133,9 +10193,9 @@ begin
     output_data_V_keep_V_1_data_out <= ap_const_lv2_0;
     output_data_V_keep_V_1_sel <= output_data_V_keep_V_1_sel_rd;
 
-    output_data_V_keep_V_1_vld_in_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_enable_reg_pp0_iter1, tmp_49_reg_18542, ap_block_pp0_stage0_11001)
+    output_data_V_keep_V_1_vld_in_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_enable_reg_pp0_iter1, tmp_38_reg_18542, ap_block_pp0_stage0_11001)
     begin
-        if (((ap_const_boolean_0 = ap_block_pp0_stage0_11001) and (tmp_49_reg_18542 = ap_const_lv1_0) and (ap_enable_reg_pp0_iter1 = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage0))) then 
+        if (((ap_const_boolean_0 = ap_block_pp0_stage0_11001) and (tmp_38_reg_18542 = ap_const_lv1_0) and (ap_enable_reg_pp0_iter1 = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage0))) then 
             output_data_V_keep_V_1_vld_in <= ap_const_logic_1;
         else 
             output_data_V_keep_V_1_vld_in <= ap_const_logic_0;
@@ -10160,9 +10220,9 @@ begin
     output_data_V_last_V_1_sel <= output_data_V_last_V_1_sel_rd;
     output_data_V_last_V_1_state_cmp_full <= '0' when (output_data_V_last_V_1_state = ap_const_lv2_1) else '1';
 
-    output_data_V_last_V_1_vld_in_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_enable_reg_pp0_iter1, tmp_49_reg_18542, ap_block_pp0_stage0_11001)
+    output_data_V_last_V_1_vld_in_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_enable_reg_pp0_iter1, tmp_38_reg_18542, ap_block_pp0_stage0_11001)
     begin
-        if (((ap_const_boolean_0 = ap_block_pp0_stage0_11001) and (tmp_49_reg_18542 = ap_const_lv1_0) and (ap_enable_reg_pp0_iter1 = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage0))) then 
+        if (((ap_const_boolean_0 = ap_block_pp0_stage0_11001) and (tmp_38_reg_18542 = ap_const_lv1_0) and (ap_enable_reg_pp0_iter1 = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage0))) then 
             output_data_V_last_V_1_vld_in <= ap_const_logic_1;
         else 
             output_data_V_last_V_1_vld_in <= ap_const_logic_0;
@@ -10175,9 +10235,9 @@ begin
     output_data_V_strb_V_1_data_out <= ap_const_lv2_0;
     output_data_V_strb_V_1_sel <= output_data_V_strb_V_1_sel_rd;
 
-    output_data_V_strb_V_1_vld_in_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_enable_reg_pp0_iter1, tmp_49_reg_18542, ap_block_pp0_stage0_11001)
+    output_data_V_strb_V_1_vld_in_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_enable_reg_pp0_iter1, tmp_38_reg_18542, ap_block_pp0_stage0_11001)
     begin
-        if (((ap_const_boolean_0 = ap_block_pp0_stage0_11001) and (tmp_49_reg_18542 = ap_const_lv1_0) and (ap_enable_reg_pp0_iter1 = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage0))) then 
+        if (((ap_const_boolean_0 = ap_block_pp0_stage0_11001) and (tmp_38_reg_18542 = ap_const_lv1_0) and (ap_enable_reg_pp0_iter1 = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage0))) then 
             output_data_V_strb_V_1_vld_in <= ap_const_logic_1;
         else 
             output_data_V_strb_V_1_vld_in <= ap_const_logic_0;
@@ -10202,9 +10262,9 @@ begin
     output_data_V_user_V_1_sel <= output_data_V_user_V_1_sel_rd;
     output_data_V_user_V_1_state_cmp_full <= '0' when (output_data_V_user_V_1_state = ap_const_lv2_1) else '1';
 
-    output_data_V_user_V_1_vld_in_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_enable_reg_pp0_iter1, tmp_49_reg_18542, ap_block_pp0_stage0_11001)
+    output_data_V_user_V_1_vld_in_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_enable_reg_pp0_iter1, tmp_38_reg_18542, ap_block_pp0_stage0_11001)
     begin
-        if (((ap_const_boolean_0 = ap_block_pp0_stage0_11001) and (tmp_49_reg_18542 = ap_const_lv1_0) and (ap_enable_reg_pp0_iter1 = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage0))) then 
+        if (((ap_const_boolean_0 = ap_block_pp0_stage0_11001) and (tmp_38_reg_18542 = ap_const_lv1_0) and (ap_enable_reg_pp0_iter1 = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage0))) then 
             output_data_V_user_V_1_vld_in <= ap_const_logic_1;
         else 
             output_data_V_user_V_1_vld_in <= ap_const_logic_0;
@@ -10212,7 +10272,7 @@ begin
     end process;
 
     output_data_V_user_V_1_vld_out <= output_data_V_user_V_1_state(0);
-    tmp_49_fu_14585_p2 <= "1" when (i2_reg_14382 = ap_const_lv10_310) else "0";
+    tmp_38_fu_14585_p2 <= "1" when (i2_reg_14382 = ap_const_lv10_310) else "0";
     tmp_last_V_fu_14608_p2 <= "1" when (i2_reg_14382 = ap_const_lv10_30F) else "0";
     tmp_s_fu_14580_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(i_reg_14371),64));
     tmp_user_V_fu_14602_p2 <= "1" when (i2_reg_14382 = ap_const_lv10_0) else "0";

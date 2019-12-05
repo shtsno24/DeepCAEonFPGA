@@ -239,6 +239,7 @@ uint8_t relu, uint8_t fractal_width){
 
 
 
+
  int16_t buffer;
     for(uint16_t out_d = 0; out_d < output_depth; out_d++){
      for(uint16_t out_h = 0; out_h < output_height; out_h++){

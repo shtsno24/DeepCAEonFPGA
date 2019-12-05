@@ -210,8 +210,8 @@ architecture behav of pointwise_conv2d_fix_2 is
     signal out_w_2_reg_1771 : STD_LOGIC_VECTOR (2 downto 0);
     signal ap_CS_fsm_state5 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state5 : signal is "none";
-    signal tmp_s_fu_588_p2 : STD_LOGIC_VECTOR (6 downto 0);
-    signal tmp_s_reg_1776 : STD_LOGIC_VECTOR (6 downto 0);
+    signal tmp_30_fu_588_p2 : STD_LOGIC_VECTOR (6 downto 0);
+    signal tmp_30_reg_1776 : STD_LOGIC_VECTOR (6 downto 0);
     signal exitcond1_fu_572_p2 : STD_LOGIC_VECTOR (0 downto 0);
     signal tmp_30_cast_fu_593_p1 : STD_LOGIC_VECTOR (22 downto 0);
     signal tmp_30_cast_reg_1781 : STD_LOGIC_VECTOR (22 downto 0);
@@ -234,7 +234,7 @@ architecture behav of pointwise_conv2d_fix_2 is
     signal tmp_34_5_fu_686_p2 : STD_LOGIC_VECTOR (16 downto 0);
     signal tmp_34_5_reg_1860 : STD_LOGIC_VECTOR (16 downto 0);
     signal grp_fu_1501_p3 : STD_LOGIC_VECTOR (22 downto 0);
-    signal tmp_27_reg_1865 : STD_LOGIC_VECTOR (22 downto 0);
+    signal tmp_31_reg_1865 : STD_LOGIC_VECTOR (22 downto 0);
     signal grp_fu_1508_p3 : STD_LOGIC_VECTOR (22 downto 0);
     signal tmp_31_3_reg_1880 : STD_LOGIC_VECTOR (22 downto 0);
     signal tmp_34_4_fu_717_p2 : STD_LOGIC_VECTOR (16 downto 0);
@@ -251,8 +251,8 @@ architecture behav of pointwise_conv2d_fix_2 is
     signal tmp_31_4_reg_1965 : STD_LOGIC_VECTOR (22 downto 0);
     signal grp_fu_1536_p3 : STD_LOGIC_VECTOR (22 downto 0);
     signal tmp_31_7_reg_1980 : STD_LOGIC_VECTOR (22 downto 0);
-    signal tmp_29_fu_820_p2 : STD_LOGIC_VECTOR (16 downto 0);
-    signal tmp_29_reg_1985 : STD_LOGIC_VECTOR (16 downto 0);
+    signal tmp_34_fu_820_p2 : STD_LOGIC_VECTOR (16 downto 0);
+    signal tmp_34_reg_1985 : STD_LOGIC_VECTOR (16 downto 0);
     signal grp_fu_1543_p3 : STD_LOGIC_VECTOR (22 downto 0);
     signal tmp_31_6_reg_2005 : STD_LOGIC_VECTOR (22 downto 0);
     signal grp_fu_1550_p2 : STD_LOGIC_VECTOR (29 downto 0);
@@ -276,7 +276,7 @@ architecture behav of pointwise_conv2d_fix_2 is
     signal grp_fu_1580_p2 : STD_LOGIC_VECTOR (29 downto 0);
     signal tmp_37_7_reg_2130 : STD_LOGIC_VECTOR (29 downto 0);
     signal grp_fu_1586_p2 : STD_LOGIC_VECTOR (29 downto 0);
-    signal tmp_31_reg_2135 : STD_LOGIC_VECTOR (29 downto 0);
+    signal tmp_37_reg_2135 : STD_LOGIC_VECTOR (29 downto 0);
     signal ap_CS_fsm_state18 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state18 : signal is "none";
     signal grp_fu_1592_p2 : STD_LOGIC_VECTOR (29 downto 0);
@@ -396,7 +396,7 @@ architecture behav of pointwise_conv2d_fix_2 is
     signal tmp_32_1_fu_694_p1 : STD_LOGIC_VECTOR (63 downto 0);
     signal tmp_35_2_fu_699_p1 : STD_LOGIC_VECTOR (63 downto 0);
     signal tmp_35_5_fu_722_p1 : STD_LOGIC_VECTOR (63 downto 0);
-    signal tmp_28_fu_748_p1 : STD_LOGIC_VECTOR (63 downto 0);
+    signal tmp_32_fu_748_p1 : STD_LOGIC_VECTOR (63 downto 0);
     signal tmp_32_3_fu_756_p1 : STD_LOGIC_VECTOR (63 downto 0);
     signal tmp_35_4_fu_761_p1 : STD_LOGIC_VECTOR (63 downto 0);
     signal tmp_35_7_fu_784_p1 : STD_LOGIC_VECTOR (63 downto 0);
@@ -405,7 +405,7 @@ architecture behav of pointwise_conv2d_fix_2 is
     signal tmp_35_6_fu_812_p1 : STD_LOGIC_VECTOR (63 downto 0);
     signal tmp_32_4_fu_836_p1 : STD_LOGIC_VECTOR (63 downto 0);
     signal tmp_32_7_fu_844_p1 : STD_LOGIC_VECTOR (63 downto 0);
-    signal tmp_30_fu_849_p1 : STD_LOGIC_VECTOR (63 downto 0);
+    signal tmp_35_fu_849_p1 : STD_LOGIC_VECTOR (63 downto 0);
     signal tmp_32_6_fu_872_p1 : STD_LOGIC_VECTOR (63 downto 0);
     signal tmp_35_8_fu_1071_p1 : STD_LOGIC_VECTOR (63 downto 0);
     signal tmp_35_9_fu_1075_p1 : STD_LOGIC_VECTOR (63 downto 0);
@@ -456,7 +456,7 @@ architecture behav of pointwise_conv2d_fix_2 is
     signal tmp_39_7_fu_954_p4 : STD_LOGIC_VECTOR (15 downto 0);
     signal tmp12_fu_968_p2 : STD_LOGIC_VECTOR (15 downto 0);
     signal tmp_39_6_fu_987_p4 : STD_LOGIC_VECTOR (15 downto 0);
-    signal tmp_32_fu_978_p4 : STD_LOGIC_VECTOR (15 downto 0);
+    signal tmp_s_fu_978_p4 : STD_LOGIC_VECTOR (15 downto 0);
     signal tmp10_fu_1001_p2 : STD_LOGIC_VECTOR (15 downto 0);
     signal tmp6_fu_1012_p2 : STD_LOGIC_VECTOR (15 downto 0);
     signal tmp_28_8_cast2_fu_1033_p1 : STD_LOGIC_VECTOR (16 downto 0);
@@ -490,8 +490,8 @@ architecture behav of pointwise_conv2d_fix_2 is
     signal tmp19_fu_1432_p2 : STD_LOGIC_VECTOR (15 downto 0);
     signal tmp17_fu_1443_p2 : STD_LOGIC_VECTOR (15 downto 0);
     signal tmp13_fu_1452_p2 : STD_LOGIC_VECTOR (15 downto 0);
-    signal tmp_34_fu_1465_p3 : STD_LOGIC_VECTOR (0 downto 0);
-    signal tmp_33_fu_1461_p1 : STD_LOGIC_VECTOR (14 downto 0);
+    signal tmp_22_fu_1465_p3 : STD_LOGIC_VECTOR (0 downto 0);
+    signal tmp_20_fu_1461_p1 : STD_LOGIC_VECTOR (14 downto 0);
     signal buffer_1_fu_1473_p3 : STD_LOGIC_VECTOR (14 downto 0);
     signal tmp_25_cast_fu_1486_p1 : STD_LOGIC_VECTOR (31 downto 0);
     signal grp_fu_1494_p0 : STD_LOGIC_VECTOR (15 downto 0);
@@ -656,7 +656,7 @@ begin
         ce1 => SeparableConv2D_2_w_s_ce1,
         q1 => SeparableConv2D_2_w_s_q1);
 
-    network_mac_muladd_16ns_7ns_7s_23_3_1_U153 : component network_mac_muladd_16ns_7ns_7s_23_3_1
+    network_mac_muladd_16ns_7ns_7s_23_3_1_U172 : component network_mac_muladd_16ns_7ns_7s_23_3_1
     generic map (
         ID => 1,
         NUM_STAGE => 3,
@@ -673,7 +673,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_1494_p3);
 
-    network_mac_muladd_16ns_7ns_7s_23_3_1_U154 : component network_mac_muladd_16ns_7ns_7s_23_3_1
+    network_mac_muladd_16ns_7ns_7s_23_3_1_U173 : component network_mac_muladd_16ns_7ns_7s_23_3_1
     generic map (
         ID => 1,
         NUM_STAGE => 3,
@@ -690,7 +690,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_1501_p3);
 
-    network_mac_muladd_16ns_7ns_7s_23_3_1_U155 : component network_mac_muladd_16ns_7ns_7s_23_3_1
+    network_mac_muladd_16ns_7ns_7s_23_3_1_U174 : component network_mac_muladd_16ns_7ns_7s_23_3_1
     generic map (
         ID => 1,
         NUM_STAGE => 3,
@@ -707,7 +707,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_1508_p3);
 
-    network_mac_muladd_16ns_7ns_7s_23_3_1_U156 : component network_mac_muladd_16ns_7ns_7s_23_3_1
+    network_mac_muladd_16ns_7ns_7s_23_3_1_U175 : component network_mac_muladd_16ns_7ns_7s_23_3_1
     generic map (
         ID => 1,
         NUM_STAGE => 3,
@@ -724,7 +724,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_1515_p3);
 
-    network_mac_muladd_16ns_7ns_7s_23_3_1_U157 : component network_mac_muladd_16ns_7ns_7s_23_3_1
+    network_mac_muladd_16ns_7ns_7s_23_3_1_U176 : component network_mac_muladd_16ns_7ns_7s_23_3_1
     generic map (
         ID => 1,
         NUM_STAGE => 3,
@@ -741,7 +741,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_1522_p3);
 
-    network_mac_muladd_16ns_7ns_7s_23_3_1_U158 : component network_mac_muladd_16ns_7ns_7s_23_3_1
+    network_mac_muladd_16ns_7ns_7s_23_3_1_U177 : component network_mac_muladd_16ns_7ns_7s_23_3_1
     generic map (
         ID => 1,
         NUM_STAGE => 3,
@@ -758,7 +758,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_1529_p3);
 
-    network_mac_muladd_16ns_7ns_7s_23_3_1_U159 : component network_mac_muladd_16ns_7ns_7s_23_3_1
+    network_mac_muladd_16ns_7ns_7s_23_3_1_U178 : component network_mac_muladd_16ns_7ns_7s_23_3_1
     generic map (
         ID => 1,
         NUM_STAGE => 3,
@@ -775,7 +775,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_1536_p3);
 
-    network_mac_muladd_16ns_7ns_7s_23_3_1_U160 : component network_mac_muladd_16ns_7ns_7s_23_3_1
+    network_mac_muladd_16ns_7ns_7s_23_3_1_U179 : component network_mac_muladd_16ns_7ns_7s_23_3_1
     generic map (
         ID => 1,
         NUM_STAGE => 3,
@@ -792,7 +792,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_1543_p3);
 
-    network_mul_mul_16s_15s_30_3_1_U161 : component network_mul_mul_16s_15s_30_3_1
+    network_mul_mul_16s_15s_30_3_1_U180 : component network_mul_mul_16s_15s_30_3_1
     generic map (
         ID => 1,
         NUM_STAGE => 3,
@@ -807,7 +807,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_1550_p2);
 
-    network_mul_mul_16s_15s_30_3_1_U162 : component network_mul_mul_16s_15s_30_3_1
+    network_mul_mul_16s_15s_30_3_1_U181 : component network_mul_mul_16s_15s_30_3_1
     generic map (
         ID => 1,
         NUM_STAGE => 3,
@@ -822,7 +822,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_1556_p2);
 
-    network_mul_mul_16s_15s_30_3_1_U163 : component network_mul_mul_16s_15s_30_3_1
+    network_mul_mul_16s_15s_30_3_1_U182 : component network_mul_mul_16s_15s_30_3_1
     generic map (
         ID => 1,
         NUM_STAGE => 3,
@@ -837,7 +837,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_1562_p2);
 
-    network_mul_mul_16s_15s_30_3_1_U164 : component network_mul_mul_16s_15s_30_3_1
+    network_mul_mul_16s_15s_30_3_1_U183 : component network_mul_mul_16s_15s_30_3_1
     generic map (
         ID => 1,
         NUM_STAGE => 3,
@@ -852,7 +852,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_1568_p2);
 
-    network_mul_mul_16s_15s_30_3_1_U165 : component network_mul_mul_16s_15s_30_3_1
+    network_mul_mul_16s_15s_30_3_1_U184 : component network_mul_mul_16s_15s_30_3_1
     generic map (
         ID => 1,
         NUM_STAGE => 3,
@@ -867,7 +867,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_1574_p2);
 
-    network_mul_mul_16s_15s_30_3_1_U166 : component network_mul_mul_16s_15s_30_3_1
+    network_mul_mul_16s_15s_30_3_1_U185 : component network_mul_mul_16s_15s_30_3_1
     generic map (
         ID => 1,
         NUM_STAGE => 3,
@@ -882,7 +882,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_1580_p2);
 
-    network_mul_mul_16s_15s_30_3_1_U167 : component network_mul_mul_16s_15s_30_3_1
+    network_mul_mul_16s_15s_30_3_1_U186 : component network_mul_mul_16s_15s_30_3_1
     generic map (
         ID => 1,
         NUM_STAGE => 3,
@@ -897,7 +897,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_1586_p2);
 
-    network_mul_mul_16s_15s_30_3_1_U168 : component network_mul_mul_16s_15s_30_3_1
+    network_mul_mul_16s_15s_30_3_1_U187 : component network_mul_mul_16s_15s_30_3_1
     generic map (
         ID => 1,
         NUM_STAGE => 3,
@@ -912,7 +912,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_1592_p2);
 
-    network_mac_muladd_16ns_7ns_7s_23_3_1_U169 : component network_mac_muladd_16ns_7ns_7s_23_3_1
+    network_mac_muladd_16ns_7ns_7s_23_3_1_U188 : component network_mac_muladd_16ns_7ns_7s_23_3_1
     generic map (
         ID => 1,
         NUM_STAGE => 3,
@@ -929,7 +929,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_1598_p3);
 
-    network_mac_muladd_16ns_7ns_7s_23_3_1_U170 : component network_mac_muladd_16ns_7ns_7s_23_3_1
+    network_mac_muladd_16ns_7ns_7s_23_3_1_U189 : component network_mac_muladd_16ns_7ns_7s_23_3_1
     generic map (
         ID => 1,
         NUM_STAGE => 3,
@@ -946,7 +946,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_1605_p3);
 
-    network_mac_muladd_16ns_7ns_7s_23_3_1_U171 : component network_mac_muladd_16ns_7ns_7s_23_3_1
+    network_mac_muladd_16ns_7ns_7s_23_3_1_U190 : component network_mac_muladd_16ns_7ns_7s_23_3_1
     generic map (
         ID => 1,
         NUM_STAGE => 3,
@@ -963,7 +963,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_1612_p3);
 
-    network_mac_muladd_16ns_7ns_7s_23_3_1_U172 : component network_mac_muladd_16ns_7ns_7s_23_3_1
+    network_mac_muladd_16ns_7ns_7s_23_3_1_U191 : component network_mac_muladd_16ns_7ns_7s_23_3_1
     generic map (
         ID => 1,
         NUM_STAGE => 3,
@@ -980,7 +980,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_1619_p3);
 
-    network_mac_muladd_16ns_7ns_7s_23_3_1_U173 : component network_mac_muladd_16ns_7ns_7s_23_3_1
+    network_mac_muladd_16ns_7ns_7s_23_3_1_U192 : component network_mac_muladd_16ns_7ns_7s_23_3_1
     generic map (
         ID => 1,
         NUM_STAGE => 3,
@@ -997,7 +997,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_1626_p3);
 
-    network_mac_muladd_16ns_7ns_7s_23_3_1_U174 : component network_mac_muladd_16ns_7ns_7s_23_3_1
+    network_mac_muladd_16ns_7ns_7s_23_3_1_U193 : component network_mac_muladd_16ns_7ns_7s_23_3_1
     generic map (
         ID => 1,
         NUM_STAGE => 3,
@@ -1014,7 +1014,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_1633_p3);
 
-    network_mac_muladd_16ns_7ns_7s_23_3_1_U175 : component network_mac_muladd_16ns_7ns_7s_23_3_1
+    network_mac_muladd_16ns_7ns_7s_23_3_1_U194 : component network_mac_muladd_16ns_7ns_7s_23_3_1
     generic map (
         ID => 1,
         NUM_STAGE => 3,
@@ -1031,7 +1031,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_1640_p3);
 
-    network_mac_muladd_16ns_7ns_7s_23_3_1_U176 : component network_mac_muladd_16ns_7ns_7s_23_3_1
+    network_mac_muladd_16ns_7ns_7s_23_3_1_U195 : component network_mac_muladd_16ns_7ns_7s_23_3_1
     generic map (
         ID => 1,
         NUM_STAGE => 3,
@@ -1048,7 +1048,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_1647_p3);
 
-    network_mul_mul_16s_15s_30_3_1_U177 : component network_mul_mul_16s_15s_30_3_1
+    network_mul_mul_16s_15s_30_3_1_U196 : component network_mul_mul_16s_15s_30_3_1
     generic map (
         ID => 1,
         NUM_STAGE => 3,
@@ -1063,7 +1063,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_1654_p2);
 
-    network_mul_mul_16s_15s_30_3_1_U178 : component network_mul_mul_16s_15s_30_3_1
+    network_mul_mul_16s_15s_30_3_1_U197 : component network_mul_mul_16s_15s_30_3_1
     generic map (
         ID => 1,
         NUM_STAGE => 3,
@@ -1078,7 +1078,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_1660_p2);
 
-    network_mul_mul_16s_15s_30_3_1_U179 : component network_mul_mul_16s_15s_30_3_1
+    network_mul_mul_16s_15s_30_3_1_U198 : component network_mul_mul_16s_15s_30_3_1
     generic map (
         ID => 1,
         NUM_STAGE => 3,
@@ -1093,7 +1093,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_1666_p2);
 
-    network_mul_mul_16s_15s_30_3_1_U180 : component network_mul_mul_16s_15s_30_3_1
+    network_mul_mul_16s_15s_30_3_1_U199 : component network_mul_mul_16s_15s_30_3_1
     generic map (
         ID => 1,
         NUM_STAGE => 3,
@@ -1108,7 +1108,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_1672_p2);
 
-    network_mul_mul_16s_15s_30_3_1_U181 : component network_mul_mul_16s_15s_30_3_1
+    network_mul_mul_16s_15s_30_3_1_U200 : component network_mul_mul_16s_15s_30_3_1
     generic map (
         ID => 1,
         NUM_STAGE => 3,
@@ -1123,7 +1123,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_1678_p2);
 
-    network_mul_mul_16s_15s_30_3_1_U182 : component network_mul_mul_16s_15s_30_3_1
+    network_mul_mul_16s_15s_30_3_1_U201 : component network_mul_mul_16s_15s_30_3_1
     generic map (
         ID => 1,
         NUM_STAGE => 3,
@@ -1138,7 +1138,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_1684_p2);
 
-    network_mul_mul_16s_15s_30_3_1_U183 : component network_mul_mul_16s_15s_30_3_1
+    network_mul_mul_16s_15s_30_3_1_U202 : component network_mul_mul_16s_15s_30_3_1
     generic map (
         ID => 1,
         NUM_STAGE => 3,
@@ -1153,7 +1153,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_1690_p2);
 
-    network_mul_mul_16s_15s_30_3_1_U184 : component network_mul_mul_16s_15s_30_3_1
+    network_mul_mul_16s_15s_30_3_1_U203 : component network_mul_mul_16s_15s_30_3_1
     generic map (
         ID => 1,
         NUM_STAGE => 3,
@@ -1404,8 +1404,8 @@ begin
             if ((ap_const_logic_1 = ap_CS_fsm_state18)) then
                 tmp11_reg_2150 <= tmp11_fu_973_p2;
                 tmp8_reg_2145 <= tmp8_fu_963_p2;
-                tmp_31_reg_2135 <= grp_fu_1586_p2;
                 tmp_37_6_reg_2140 <= grp_fu_1592_p2;
+                tmp_37_reg_2135 <= grp_fu_1586_p2;
             end if;
         end if;
     end process;
@@ -1475,29 +1475,9 @@ begin
     process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
-            if ((ap_const_logic_1 = ap_CS_fsm_state10)) then
-                tmp_27_reg_1865 <= grp_fu_1501_p3;
-                tmp_31_3_reg_1880 <= grp_fu_1508_p3;
-                tmp_34_4_reg_1890 <= tmp_34_4_fu_717_p2;
-                    tmp_34_7_reg_1905(16 downto 3) <= tmp_34_7_fu_740_p2(16 downto 3);
-            end if;
-        end if;
-    end process;
-    process (ap_clk)
-    begin
-        if (ap_clk'event and ap_clk = '1') then
-            if ((ap_const_logic_1 = ap_CS_fsm_state13)) then
-                tmp_29_reg_1985 <= tmp_29_fu_820_p2;
-                tmp_31_6_reg_2005 <= grp_fu_1543_p3;
-            end if;
-        end if;
-    end process;
-    process (ap_clk)
-    begin
-        if (ap_clk'event and ap_clk = '1') then
             if (((ap_const_logic_1 = ap_CS_fsm_state5) and (exitcond1_fu_572_p2 = ap_const_lv1_0))) then
                 tmp_30_cast_reg_1781 <= tmp_30_cast_fu_593_p1;
-                tmp_s_reg_1776 <= tmp_s_fu_588_p2;
+                tmp_30_reg_1776 <= tmp_30_fu_588_p2;
             end if;
         end if;
     end process;
@@ -1533,9 +1513,29 @@ begin
     process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
+            if ((ap_const_logic_1 = ap_CS_fsm_state10)) then
+                tmp_31_3_reg_1880 <= grp_fu_1508_p3;
+                tmp_31_reg_1865 <= grp_fu_1501_p3;
+                tmp_34_4_reg_1890 <= tmp_34_4_fu_717_p2;
+                    tmp_34_7_reg_1905(16 downto 3) <= tmp_34_7_fu_740_p2(16 downto 3);
+            end if;
+        end if;
+    end process;
+    process (ap_clk)
+    begin
+        if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_logic_1 = ap_CS_fsm_state12)) then
                 tmp_31_4_reg_1965 <= grp_fu_1529_p3;
                 tmp_31_7_reg_1980 <= grp_fu_1536_p3;
+            end if;
+        end if;
+    end process;
+    process (ap_clk)
+    begin
+        if (ap_clk'event and ap_clk = '1') then
+            if ((ap_const_logic_1 = ap_CS_fsm_state13)) then
+                tmp_31_6_reg_2005 <= grp_fu_1543_p3;
+                tmp_34_reg_1985 <= tmp_34_fu_820_p2;
             end if;
         end if;
     end process;
@@ -1776,7 +1776,7 @@ begin
     end process;
 
 
-    SeparableConv2D_2_w_s_address0_assign_proc : process(ap_CS_fsm_state9, ap_CS_fsm_state12, ap_CS_fsm_state23, ap_CS_fsm_state10, ap_CS_fsm_state11, ap_CS_fsm_state25, ap_CS_fsm_state24, ap_CS_fsm_state14, ap_CS_fsm_state8, ap_CS_fsm_state22, tmp_35_1_fu_626_p1, tmp_35_3_fu_668_p1, tmp_35_2_fu_699_p1, tmp_35_4_fu_761_p1, tmp_35_6_fu_812_p1, tmp_30_fu_849_p1, tmp_35_8_fu_1071_p1, tmp_35_10_fu_1117_p1, tmp_35_12_fu_1179_p1, tmp_35_14_fu_1247_p1)
+    SeparableConv2D_2_w_s_address0_assign_proc : process(ap_CS_fsm_state9, ap_CS_fsm_state12, ap_CS_fsm_state23, ap_CS_fsm_state10, ap_CS_fsm_state11, ap_CS_fsm_state25, ap_CS_fsm_state24, ap_CS_fsm_state14, ap_CS_fsm_state8, ap_CS_fsm_state22, tmp_35_1_fu_626_p1, tmp_35_3_fu_668_p1, tmp_35_2_fu_699_p1, tmp_35_4_fu_761_p1, tmp_35_6_fu_812_p1, tmp_35_fu_849_p1, tmp_35_8_fu_1071_p1, tmp_35_10_fu_1117_p1, tmp_35_12_fu_1179_p1, tmp_35_14_fu_1247_p1)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state25)) then 
             SeparableConv2D_2_w_s_address0 <= tmp_35_14_fu_1247_p1(6 - 1 downto 0);
@@ -1787,7 +1787,7 @@ begin
         elsif ((ap_const_logic_1 = ap_CS_fsm_state22)) then 
             SeparableConv2D_2_w_s_address0 <= tmp_35_8_fu_1071_p1(6 - 1 downto 0);
         elsif ((ap_const_logic_1 = ap_CS_fsm_state14)) then 
-            SeparableConv2D_2_w_s_address0 <= tmp_30_fu_849_p1(6 - 1 downto 0);
+            SeparableConv2D_2_w_s_address0 <= tmp_35_fu_849_p1(6 - 1 downto 0);
         elsif ((ap_const_logic_1 = ap_CS_fsm_state12)) then 
             SeparableConv2D_2_w_s_address0 <= tmp_35_6_fu_812_p1(6 - 1 downto 0);
         elsif ((ap_const_logic_1 = ap_CS_fsm_state11)) then 
@@ -1909,8 +1909,8 @@ begin
     end process;
 
     buffer_1_fu_1473_p3 <= 
-        ap_const_lv15_0 when (tmp_34_fu_1465_p3(0) = '1') else 
-        tmp_33_fu_1461_p1;
+        ap_const_lv15_0 when (tmp_22_fu_1465_p3(0) = '1') else 
+        tmp_20_fu_1461_p1;
     buffer_2_7_fu_1016_p2 <= std_logic_vector(unsigned(tmp9_reg_2160) + unsigned(tmp6_fu_1012_p2));
     buffer_2_s_fu_1456_p2 <= std_logic_vector(unsigned(tmp16_reg_2551) + unsigned(tmp13_fu_1452_p2));
         buffer_cast_fu_534_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(SeparableConv2D_2_b_s_q0),16));
@@ -2001,7 +2001,7 @@ begin
     in_d_1_28_fu_1206_p2 <= (in_d_reg_426 or ap_const_lv16_F);
     in_d_1_s_fu_649_p2 <= (in_d_reg_426 or ap_const_lv16_2);
 
-    input_r_address0_assign_proc : process(ap_CS_fsm_state12, ap_CS_fsm_state26, ap_CS_fsm_state10, ap_CS_fsm_state13, ap_CS_fsm_state11, ap_CS_fsm_state25, ap_CS_fsm_state27, ap_CS_fsm_state24, tmp_32_1_fu_694_p1, tmp_28_fu_748_p1, tmp_32_5_fu_807_p1, tmp_32_7_fu_844_p1, tmp_32_8_fu_1166_p1, tmp_32_10_fu_1234_p1, tmp_32_12_fu_1274_p1, tmp_32_14_fu_1306_p1)
+    input_r_address0_assign_proc : process(ap_CS_fsm_state12, ap_CS_fsm_state26, ap_CS_fsm_state10, ap_CS_fsm_state13, ap_CS_fsm_state11, ap_CS_fsm_state25, ap_CS_fsm_state27, ap_CS_fsm_state24, tmp_32_1_fu_694_p1, tmp_32_fu_748_p1, tmp_32_5_fu_807_p1, tmp_32_7_fu_844_p1, tmp_32_8_fu_1166_p1, tmp_32_10_fu_1234_p1, tmp_32_12_fu_1274_p1, tmp_32_14_fu_1306_p1)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state27)) then 
             input_r_address0 <= tmp_32_14_fu_1306_p1(14 - 1 downto 0);
@@ -2016,7 +2016,7 @@ begin
         elsif ((ap_const_logic_1 = ap_CS_fsm_state12)) then 
             input_r_address0 <= tmp_32_5_fu_807_p1(14 - 1 downto 0);
         elsif ((ap_const_logic_1 = ap_CS_fsm_state11)) then 
-            input_r_address0 <= tmp_28_fu_748_p1(14 - 1 downto 0);
+            input_r_address0 <= tmp_32_fu_748_p1(14 - 1 downto 0);
         elsif ((ap_const_logic_1 = ap_CS_fsm_state10)) then 
             input_r_address0 <= tmp_32_1_fu_694_p1(14 - 1 downto 0);
         else 
@@ -2097,7 +2097,7 @@ begin
     p_shl_cast_fu_562_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(p_shl_fu_554_p3),7));
     p_shl_fu_554_p3 <= (out_h_reg_404 & ap_const_lv3_0);
     phi_mul_cast_fu_492_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(phi_mul_reg_393),10));
-    tmp10_fu_1001_p2 <= std_logic_vector(unsigned(tmp_32_fu_978_p4) + unsigned(buffer1_reg_438));
+    tmp10_fu_1001_p2 <= std_logic_vector(unsigned(tmp_s_fu_978_p4) + unsigned(buffer1_reg_438));
     tmp11_fu_973_p2 <= std_logic_vector(unsigned(tmp12_fu_968_p2) + unsigned(tmp_39_2_reg_2115));
     tmp12_fu_968_p2 <= std_logic_vector(unsigned(tmp_39_1_reg_2050) + unsigned(tmp_39_7_fu_954_p4));
     tmp13_fu_1452_p2 <= std_logic_vector(unsigned(tmp15_reg_2521) + unsigned(tmp14_reg_2501));
@@ -2107,7 +2107,7 @@ begin
     tmp17_fu_1443_p2 <= std_logic_vector(unsigned(tmp_39_11_reg_2506) + unsigned(tmp_39_12_reg_2526));
     tmp18_fu_1438_p2 <= std_logic_vector(unsigned(tmp19_fu_1432_p2) + unsigned(tmp_39_13_reg_2531));
     tmp19_fu_1432_p2 <= std_logic_vector(unsigned(tmp_39_14_fu_1414_p4) + unsigned(tmp_39_s_fu_1423_p4));
-        tmp20_cast_fu_1063_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(tmp_s_reg_1776),10));
+        tmp20_cast_fu_1063_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(tmp_30_reg_1776),10));
 
     tmp6_fu_1012_p2 <= std_logic_vector(unsigned(tmp8_reg_2145) + unsigned(tmp7_reg_2155));
     tmp7_fu_996_p2 <= std_logic_vector(unsigned(tmp_39_5_reg_2125) + unsigned(tmp_39_6_fu_987_p4));
@@ -2117,8 +2117,10 @@ begin
     tmp_19_cast_fu_530_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(tmp_19_fu_523_p3),17));
     tmp_19_fu_523_p3 <= (tmp_reg_1725 & ap_const_lv3_0);
     tmp_20_cast1_fu_550_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(out_h_reg_404),7));
+    tmp_20_fu_1461_p1 <= buffer1_lcssa_reg_448(15 - 1 downto 0);
     tmp_21_fu_566_p2 <= std_logic_vector(unsigned(p_shl_cast_fu_562_p1) - unsigned(tmp_20_cast1_fu_550_p1));
     tmp_22_cast_fu_584_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(out_w_reg_415),7));
+    tmp_22_fu_1465_p3 <= buffer1_lcssa_reg_448(15 downto 15);
         tmp_25_cast_fu_1486_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(tmp_25_reg_2201),32));
 
     tmp_25_fu_1066_p2 <= std_logic_vector(signed(tmp20_cast_fu_1063_p1) + signed(phi_mul_cast_reg_1702));
@@ -2139,11 +2141,9 @@ begin
     tmp_28_9_cast2_fu_1050_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(in_d_1_22_fu_1044_p2),17));
     tmp_28_cast2_34_fu_1212_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(in_d_1_28_fu_1206_p2),17));
     tmp_28_cast2_fu_816_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(in_d_reg_426),17));
-    tmp_28_fu_748_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(tmp_31_cast_fu_745_p1),64));
-    tmp_29_fu_820_p2 <= std_logic_vector(unsigned(tmp_19_cast_reg_1730) + unsigned(tmp_28_cast2_fu_816_p1));
-        tmp_30_cast_fu_593_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(tmp_s_fu_588_p2),23));
+        tmp_30_cast_fu_593_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(tmp_30_fu_588_p2),23));
 
-    tmp_30_fu_849_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(tmp_29_reg_1985),64));
+    tmp_30_fu_588_p2 <= std_logic_vector(unsigned(tmp_21_reg_1763) + unsigned(tmp_22_cast_fu_584_p1));
         tmp_31_10_cast_fu_1231_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(tmp_31_10_reg_2286),32));
 
         tmp_31_11_cast_fu_1239_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(tmp_31_11_reg_2291),32));
@@ -2174,7 +2174,7 @@ begin
 
         tmp_31_cast_36_fu_1311_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(tmp_31_s_reg_2401),32));
 
-        tmp_31_cast_fu_745_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(tmp_27_reg_1865),32));
+        tmp_31_cast_fu_745_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(tmp_31_reg_1865),32));
 
     tmp_32_10_fu_1234_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(tmp_31_10_cast_fu_1231_p1),64));
     tmp_32_11_fu_1242_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(tmp_31_11_cast_fu_1239_p1),64));
@@ -2190,9 +2190,8 @@ begin
     tmp_32_7_fu_844_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(tmp_31_7_cast_fu_841_p1),64));
     tmp_32_8_fu_1166_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(tmp_31_8_cast_fu_1163_p1),64));
     tmp_32_9_fu_1174_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(tmp_31_9_cast_fu_1171_p1),64));
-    tmp_32_fu_978_p4 <= tmp_31_reg_2135(29 downto 14);
+    tmp_32_fu_748_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(tmp_31_cast_fu_745_p1),64));
     tmp_32_s_fu_1314_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(tmp_31_cast_36_fu_1311_p1),64));
-    tmp_33_fu_1461_p1 <= buffer1_lcssa_reg_448(15 - 1 downto 0);
     tmp_34_10_fu_1093_p2 <= std_logic_vector(unsigned(tmp_19_cast_reg_1730) + unsigned(tmp_28_10_cast2_fu_1085_p1));
     tmp_34_11_fu_1112_p2 <= std_logic_vector(unsigned(tmp_19_cast_reg_1730) + unsigned(tmp_28_11_cast2_fu_1104_p1));
     tmp_34_12_fu_1139_p2 <= std_logic_vector(unsigned(tmp_19_cast_reg_1730) + unsigned(tmp_28_12_cast2_fu_1131_p1));
@@ -2207,7 +2206,7 @@ begin
     tmp_34_7_fu_740_p2 <= std_logic_vector(unsigned(tmp_19_cast_reg_1730) + unsigned(tmp_28_7_cast2_fu_732_p1));
     tmp_34_8_fu_1039_p2 <= std_logic_vector(unsigned(tmp_19_cast_reg_1730) + unsigned(tmp_28_8_cast2_fu_1033_p1));
     tmp_34_9_fu_1058_p2 <= std_logic_vector(unsigned(tmp_19_cast_reg_1730) + unsigned(tmp_28_9_cast2_fu_1050_p1));
-    tmp_34_fu_1465_p3 <= buffer1_lcssa_reg_448(15 downto 15);
+    tmp_34_fu_820_p2 <= std_logic_vector(unsigned(tmp_19_cast_reg_1730) + unsigned(tmp_28_cast2_fu_816_p1));
     tmp_34_s_fu_1220_p2 <= std_logic_vector(unsigned(tmp_19_cast_reg_1730) + unsigned(tmp_28_cast2_34_fu_1212_p1));
     tmp_35_10_fu_1117_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(tmp_34_10_reg_2221),64));
     tmp_35_11_fu_1121_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(tmp_34_11_reg_2231),64));
@@ -2223,6 +2222,7 @@ begin
     tmp_35_7_fu_784_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(tmp_34_7_reg_1905),64));
     tmp_35_8_fu_1071_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(tmp_34_8_reg_2186),64));
     tmp_35_9_fu_1075_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(tmp_34_9_reg_2196),64));
+    tmp_35_fu_849_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(tmp_34_reg_1985),64));
     tmp_35_s_fu_1251_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(tmp_34_s_reg_2321),64));
     tmp_39_10_fu_1373_p4 <= tmp_37_10_reg_2471(29 downto 14);
     tmp_39_14_fu_1414_p4 <= tmp_37_14_reg_2536(29 downto 14);
@@ -2232,5 +2232,5 @@ begin
     tmp_39_8_fu_1334_p4 <= tmp_37_8_reg_2436(29 downto 14);
     tmp_39_s_fu_1423_p4 <= tmp_37_s_reg_2541(29 downto 14);
     tmp_fu_519_p1 <= out_d_reg_382(3 - 1 downto 0);
-    tmp_s_fu_588_p2 <= std_logic_vector(unsigned(tmp_21_reg_1763) + unsigned(tmp_22_cast_fu_584_p1));
+    tmp_s_fu_978_p4 <= tmp_37_reg_2135(29 downto 14);
 end behav;

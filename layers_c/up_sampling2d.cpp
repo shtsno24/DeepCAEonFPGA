@@ -7,10 +7,13 @@ uint16_t input_depth, uint16_t input_height, uint16_t input_width, int16_t* inpu
 uint16_t output_depth, uint16_t output_height, uint16_t output_width, int16_t* output){
 
     // output_* "must" be Divisible by kernel_size on any axis
-#pragma HLS allocation instances=mul limit=0 operation
+
+#pragma HLS ALLOCATION instances=mul limit=15 operation
+#pragma HLS ALLOCATION instances=add limit=15 operation
+
     for(uint16_t out_d = 0; out_d < output_depth; out_d++){
         for(uint16_t out_h = 0; out_h < output_height; out_h++){
-//#pragma HLS UNROLL FACTOR=2
+#pragma HLS UNROLL FACTOR=7
         	for(uint16_t out_w = 0; out_w < output_width; out_w++){
 #pragma HLS UNROLL FACTOR=7
                 output[out_d * output_height * output_width + out_h * output_width + out_w] = 

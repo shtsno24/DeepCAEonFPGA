@@ -29,6 +29,8 @@ int network(axis &input_data, axis &output_data) {
 #pragma HLS INTERFACE axis register both port=output_data
 #pragma HLS INTERFACE s_axilite register port=return
 
+
+
 	int16_t MemBank_A[14400], MemBank_B[14400], MemBank_Out[1 * 28 * 28];
 
 	int16_t* array_head = (int16_t*)MemBank_Out;

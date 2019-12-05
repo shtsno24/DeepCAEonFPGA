@@ -1,5 +1,5 @@
 // ==============================================================
-// File generated on Wed Dec 04 20:09:00 JST 2019
+// File generated on Thu Dec 05 22:30:51 JST 2019
 // Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3.1 (64-bit)
 // SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
 // IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
@@ -236,31 +236,37 @@ uint8_t padding2d_fix16(uint16_t padding_height, uint16_t padding_width,
   uint16_t input_depth, uint16_t input_height, uint16_t input_width,
   int16_t* input, uint16_t output_height, uint16_t output_width,
   int16_t* output) {
+#pragma HLS ALLOCATION instances=mul limit=0 operation
+#pragma HLS ALLOCATION instances=add limit=0 operation
 
  uint16_t o_count = 0, i_count = 0;
 
  for(uint16_t depth = 0; depth < input_depth; depth++){
+#pragma HLS UNROLL FACTOR=2
   for(uint16_t i = 0; i < padding_height * (padding_width * 2 + input_width) + padding_width; i++){
-
+#pragma HLS UNROLL FACTOR=4
    output[o_count] = 0;
    o_count += 1;
   }
 
   for(uint16_t height = 0; height < input_height; height++){
-
+#pragma HLS UNROLL FACTOR=7
    for(uint16_t width = 0; width < input_width; width++){
+#pragma HLS UNROLL FACTOR=7
     output[o_count] = input[i_count];
     i_count += 1;
     o_count += 1;
    }
 
    for(uint16_t width = 0; width < 2 * padding_width; width++){
+#pragma HLS UNROLL FACTOR=2
     output[o_count] = 0;
     o_count += 1;
    }
   }
 
   for(uint16_t i = 0; i < padding_height * (padding_width * 2 + input_width) - padding_width; i++){
+#pragma HLS UNROLL FACTOR=4
    output[o_count] = 0;
    o_count += 1;
   }

@@ -1,5 +1,5 @@
 -- ==============================================================
--- File generated on Wed Dec 04 20:23:35 JST 2019
+-- File generated on Thu Dec 05 22:37:11 JST 2019
 -- Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3.1 (64-bit)
 -- SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
 -- IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
@@ -9,7 +9,7 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 
-entity network_mac_muladd_5ns_11ns_11s_15_3_1_DSP48_16 is
+entity network_mac_muladd_5ns_11ns_11s_15_3_1_DSP48_13 is
 port (
     clk: in  std_logic;
     rst: in  std_logic;
@@ -20,11 +20,11 @@ port (
     dout: out std_logic_vector(15 - 1 downto 0));
 
     attribute use_dsp : string;
-    attribute use_dsp of network_mac_muladd_5ns_11ns_11s_15_3_1_DSP48_16 : entity is "yes";
+    attribute use_dsp of network_mac_muladd_5ns_11ns_11s_15_3_1_DSP48_13 : entity is "yes";
 
 end entity;
 
-architecture behav of network_mac_muladd_5ns_11ns_11s_15_3_1_DSP48_16 is
+architecture behav of network_mac_muladd_5ns_11ns_11s_15_3_1_DSP48_13 is
     signal a       : signed(25-1 downto 0);
     signal b       : signed(18-1 downto 0);
     signal c       : signed(48-1 downto 0);
@@ -76,7 +76,7 @@ entity network_mac_muladd_5ns_11ns_11s_15_3_1 is
 end entity;
 
 architecture arch of network_mac_muladd_5ns_11ns_11s_15_3_1 is
-    component network_mac_muladd_5ns_11ns_11s_15_3_1_DSP48_16 is
+    component network_mac_muladd_5ns_11ns_11s_15_3_1_DSP48_13 is
         port (
             clk : IN STD_LOGIC;
             rst : IN STD_LOGIC;
@@ -90,7 +90,7 @@ architecture arch of network_mac_muladd_5ns_11ns_11s_15_3_1 is
 
 
 begin
-    network_mac_muladd_5ns_11ns_11s_15_3_1_DSP48_16_U :  component network_mac_muladd_5ns_11ns_11s_15_3_1_DSP48_16
+    network_mac_muladd_5ns_11ns_11s_15_3_1_DSP48_13_U :  component network_mac_muladd_5ns_11ns_11s_15_3_1_DSP48_13
     port map (
         clk => clk,
         rst => reset,

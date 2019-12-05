@@ -1,5 +1,5 @@
 // ==============================================================
-// File generated on Wed Dec 04 20:08:59 JST 2019
+// File generated on Thu Dec 05 22:30:52 JST 2019
 // Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3.1 (64-bit)
 // SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
 // IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
@@ -244,7 +244,8 @@ uint16_t kernel_height, uint16_t kernel_width, const int16_t* kernel,
 uint8_t relu, uint8_t fractal_width){
 
 
-
+#pragma HLS ALLOCATION instances=mul limit=27 operation
+#pragma HLS ALLOCATION instances=add limit=27 operation
 
 
 
@@ -252,8 +253,8 @@ uint8_t relu, uint8_t fractal_width){
 
     for(uint16_t out_d = 0; out_d < output_depth; out_d++){
      for(uint16_t out_h = 0; out_h < output_height; out_h++){
-         for(uint16_t out_w = 0; out_w < output_width; out_w++){
-#pragma HLS UNROLL FACTOR=2
+      for(uint16_t out_w = 0; out_w < output_width; out_w++){
+#pragma HLS UNROLL FACTOR=7
           buffer = bias[out_d];
              for(uint16_t k_h = 0; k_h < kernel_height; k_h++){
 #pragma HLS UNROLL

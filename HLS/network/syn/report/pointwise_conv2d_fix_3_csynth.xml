@@ -10,7 +10,7 @@
 <Part>xc7z020clg400-1</Part>
 <TopModelName>pointwise_conv2d_fix_3</TopModelName>
 <TargetClockPeriod>4.40</TargetClockPeriod>
-<ClockUncertainty>1.25</ClockUncertainty>
+<ClockUncertainty>1.27</ClockUncertainty>
 </UserAssignments>
 
 <PerformanceEstimates>

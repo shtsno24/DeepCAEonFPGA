@@ -10,7 +10,7 @@
 <Part>xc7z020clg400-1</Part>
 <TopModelName>network</TopModelName>
 <TargetClockPeriod>4.40</TargetClockPeriod>
-<ClockUncertainty>1.25</ClockUncertainty>
+<ClockUncertainty>1.27</ClockUncertainty>
 </UserAssignments>
 
 <PerformanceEstimates>
@@ -45,9 +45,9 @@
 <AreaEstimates>
 <Resources>
 <BRAM_18K>46</BRAM_18K>
-<DSP48E>183</DSP48E>
-<FF>16968</FF>
-<LUT>25835</LUT>
+<DSP48E>207</DSP48E>
+<FF>27676</FF>
+<LUT>47749</LUT>
 </Resources>
 <AvailableResources>
 <BRAM_18K>280</BRAM_18K>

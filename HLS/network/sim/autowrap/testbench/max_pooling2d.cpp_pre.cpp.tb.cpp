@@ -1,5 +1,5 @@
 // ==============================================================
-// File generated on Wed Dec 04 20:09:00 JST 2019
+// File generated on Thu Dec 05 22:30:52 JST 2019
 // Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3.1 (64-bit)
 // SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
 // IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
@@ -245,12 +245,14 @@ uint16_t input_depth, uint16_t input_height, uint16_t input_width, int16_t* inpu
 uint16_t output_depth, uint16_t output_height, uint16_t output_width, int16_t* output){
 
 #pragma HLS allocation instances=mul limit=0 operation
+#pragma HLS ALLOCATION instances=add limit=0 operation
+
 
  int16_t buffer, tmp;
 
     for(uint16_t out_d = 0; out_d < output_depth; out_d++){
         for(uint16_t out_h = 0; out_h < output_height; out_h++){
-            for(uint16_t out_w = 0; out_w < output_width; out_w++){
+         for(uint16_t out_w = 0; out_w < output_width; out_w++){
 #pragma HLS UNROLL FACTOR=7
              for(uint16_t in_h = 0; in_h < kernel_size; in_h++){
 #pragma HLS UNROLL

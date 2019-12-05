@@ -75916,6 +75916,8 @@ int network(axis &input_data, axis &output_data) {
 #pragma HLS INTERFACE axis register both port=output_data
 #pragma HLS INTERFACE s_axilite register port=return
 #pragma empty_line
+#pragma empty_line
+#pragma empty_line
  int16_t MemBank_A[14400], MemBank_B[14400], MemBank_Out[1 * 28 * 28];
 #pragma empty_line
  int16_t* array_head = (int16_t*)MemBank_Out;
@@ -76044,13 +76046,13 @@ int network(axis &input_data, axis &output_data) {
 #pragma empty_line
 
 #ifndef HLS_FASTSIM
-#pragma line 158 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
+#pragma line 160 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
 
 #ifndef HLS_FASTSIM
 #include "apatb_network.h"
 #endif
 
-#pragma line 158 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
+#pragma line 160 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
 int main(void){
  axis input_buffer;
  axis output_buffer;
@@ -76092,19 +76094,19 @@ int main(void){
 #define network AESL_WRAP_network
 #endif
 
-#pragma line 194 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
+#pragma line 196 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
 
 #ifndef HLS_FASTSIM
 #define network AESL_WRAP_network
 #endif
 
-#pragma line 194 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
+#pragma line 196 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
 network
 #undef network
-#pragma line 194 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
+#pragma line 196 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
 
 #undef network
-#pragma line 194 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
+#pragma line 196 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
 (input_buffer, output_buffer);
 #pragma empty_line
  cout << "\r\n";
@@ -76131,4 +76133,4 @@ network
  return 0;
 }
 #endif
-#pragma line 218 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
+#pragma line 220 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"

@@ -28591,6 +28591,8 @@ _ssdm_op_SpecInterface(&input_data, "axis", 1, 1, "both", 0, 0, "", "", "", 0, 0
 _ssdm_op_SpecInterface(&output_data, "axis", 1, 1, "both", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
 _ssdm_op_SpecInterface(0, "s_axilite", 1, 1, "", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
 
+
+
  int16_t MemBank_A[14400], MemBank_B[14400], MemBank_Out[1 * 28 * 28];
 
  int16_t* array_head = (int16_t*)MemBank_Out;
