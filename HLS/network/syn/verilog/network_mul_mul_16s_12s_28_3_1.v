@@ -1,7 +1,7 @@
 
 `timescale 1 ns / 1 ps
 
-  module network_mul_mul_16s_12s_28_3_1_DSP48_7(clk, rst, ce, a, b, p);
+  module network_mul_mul_16s_12s_28_3_1_DSP48_9(clk, rst, ce, a, b, p);
 input clk;
 input rst;
 input ce;
@@ -48,7 +48,7 @@ output[dout_WIDTH - 1:0] dout;
 
 
 
-network_mul_mul_16s_12s_28_3_1_DSP48_7 network_mul_mul_16s_12s_28_3_1_DSP48_7_U(
+network_mul_mul_16s_12s_28_3_1_DSP48_9 network_mul_mul_16s_12s_28_3_1_DSP48_9_U(
     .clk( clk ),
     .rst( reset ),
     .ce( ce ),

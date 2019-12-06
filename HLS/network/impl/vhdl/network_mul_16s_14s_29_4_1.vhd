@@ -1,5 +1,5 @@
 -- ==============================================================
--- File generated on Thu Dec 05 22:37:10 JST 2019
+-- File generated on Fri Dec 06 20:46:23 JST 2019
 -- Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3.1 (64-bit)
 -- SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
 -- IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
@@ -9,7 +9,7 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 
-entity network_mul_16s_14s_29_4_1_MulnS_6 is
+entity network_mul_16s_14s_29_4_1_MulnS_7 is
 port (
     clk: in std_logic;
     ce: in std_logic;
@@ -18,7 +18,7 @@ port (
     p: out std_logic_vector(29 - 1 downto 0));
 end entity;
 
-architecture behav of network_mul_16s_14s_29_4_1_MulnS_6 is
+architecture behav of network_mul_16s_14s_29_4_1_MulnS_7 is
     signal tmp_product : std_logic_vector(29 - 1 downto 0);
     signal a_i : std_logic_vector(16 - 1 downto 0);
     signal b_i : std_logic_vector(14 - 1 downto 0);
@@ -68,7 +68,7 @@ entity network_mul_16s_14s_29_4_1 is
 end entity;
 
 architecture arch of network_mul_16s_14s_29_4_1 is
-    component network_mul_16s_14s_29_4_1_MulnS_6 is
+    component network_mul_16s_14s_29_4_1_MulnS_7 is
         port (
             clk : IN STD_LOGIC;
             ce : IN STD_LOGIC;
@@ -80,7 +80,7 @@ architecture arch of network_mul_16s_14s_29_4_1 is
 
 
 begin
-    network_mul_16s_14s_29_4_1_MulnS_6_U :  component network_mul_16s_14s_29_4_1_MulnS_6
+    network_mul_16s_14s_29_4_1_MulnS_7_U :  component network_mul_16s_14s_29_4_1_MulnS_7
     port map (
         clk => clk,
         ce => ce,

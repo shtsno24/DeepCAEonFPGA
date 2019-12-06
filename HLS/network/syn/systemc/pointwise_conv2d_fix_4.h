@@ -52,22 +52,22 @@ struct pointwise_conv2d_fix_4 : public sc_module {
 
     sc_trace_file* mVcdFile;
 
-    network_mul_mul_16s_14ns_30_3_1<1,3,16,14,30>* network_mul_mul_16s_14ns_30_3_1_U262;
-    network_mul_mul_16s_12s_28_3_1<1,3,16,12,28>* network_mul_mul_16s_12s_28_3_1_U263;
-    network_mul_mul_16s_13ns_29_3_1<1,3,16,13,29>* network_mul_mul_16s_13ns_29_3_1_U264;
-    network_mul_mul_16s_13s_29_3_1<1,3,16,13,29>* network_mul_mul_16s_13s_29_3_1_U265;
-    network_mul_mul_16s_10s_26_3_1<1,3,16,10,26>* network_mul_mul_16s_10s_26_3_1_U266;
-    network_mul_mul_16s_11ns_27_3_1<1,3,16,11,27>* network_mul_mul_16s_11ns_27_3_1_U267;
-    network_mul_mul_16s_14ns_30_3_1<1,3,16,14,30>* network_mul_mul_16s_14ns_30_3_1_U268;
     network_mul_mul_16s_14ns_30_3_1<1,3,16,14,30>* network_mul_mul_16s_14ns_30_3_1_U269;
-    network_mul_mul_16s_13ns_29_3_1<1,3,16,13,29>* network_mul_mul_16s_13ns_29_3_1_U270;
-    network_mul_mul_16s_15s_30_3_1<1,3,16,15,30>* network_mul_mul_16s_15s_30_3_1_U271;
-    network_mul_mul_16s_14ns_30_3_1<1,3,16,14,30>* network_mul_mul_16s_14ns_30_3_1_U272;
-    network_mul_mul_16s_14s_30_3_1<1,3,16,14,30>* network_mul_mul_16s_14s_30_3_1_U273;
-    network_mul_mul_16s_15s_30_3_1<1,3,16,15,30>* network_mul_mul_16s_15s_30_3_1_U274;
-    network_mul_mul_16s_15s_30_3_1<1,3,16,15,30>* network_mul_mul_16s_15s_30_3_1_U275;
-    network_mac_muladd_5ns_11ns_11s_15_3_1<1,3,5,11,11,15>* network_mac_muladd_5ns_11ns_11s_15_3_1_U276;
-    network_mul_mul_16s_14s_30_3_1<1,3,16,14,30>* network_mul_mul_16s_14s_30_3_1_U277;
+    network_mul_mul_16s_12s_28_3_1<1,3,16,12,28>* network_mul_mul_16s_12s_28_3_1_U270;
+    network_mul_mul_16s_13ns_29_3_1<1,3,16,13,29>* network_mul_mul_16s_13ns_29_3_1_U271;
+    network_mul_mul_16s_13s_29_3_1<1,3,16,13,29>* network_mul_mul_16s_13s_29_3_1_U272;
+    network_mul_mul_16s_10s_26_3_1<1,3,16,10,26>* network_mul_mul_16s_10s_26_3_1_U273;
+    network_mul_mul_16s_11ns_27_3_1<1,3,16,11,27>* network_mul_mul_16s_11ns_27_3_1_U274;
+    network_mul_mul_16s_14ns_30_3_1<1,3,16,14,30>* network_mul_mul_16s_14ns_30_3_1_U275;
+    network_mul_mul_16s_14ns_30_3_1<1,3,16,14,30>* network_mul_mul_16s_14ns_30_3_1_U276;
+    network_mul_mul_16s_13ns_29_3_1<1,3,16,13,29>* network_mul_mul_16s_13ns_29_3_1_U277;
+    network_mul_mul_16s_15s_30_3_1<1,3,16,15,30>* network_mul_mul_16s_15s_30_3_1_U278;
+    network_mul_mul_16s_14ns_30_3_1<1,3,16,14,30>* network_mul_mul_16s_14ns_30_3_1_U279;
+    network_mul_mul_16s_14s_30_3_1<1,3,16,14,30>* network_mul_mul_16s_14s_30_3_1_U280;
+    network_mul_mul_16s_15s_30_3_1<1,3,16,15,30>* network_mul_mul_16s_15s_30_3_1_U281;
+    network_mul_mul_16s_15s_30_3_1<1,3,16,15,30>* network_mul_mul_16s_15s_30_3_1_U282;
+    network_mac_muladd_5ns_11ns_11s_15_3_1<1,3,5,11,11,15>* network_mac_muladd_5ns_11ns_11s_15_3_1_U283;
+    network_mul_mul_16s_14s_30_3_1<1,3,16,14,30>* network_mul_mul_16s_14s_30_3_1_U284;
     sc_signal< sc_lv<28> > ap_CS_fsm;
     sc_signal< sc_logic > ap_CS_fsm_state1;
     sc_signal< sc_lv<16> > reg_323;

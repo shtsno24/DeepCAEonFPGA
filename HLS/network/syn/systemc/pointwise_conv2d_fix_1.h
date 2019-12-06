@@ -50,6 +50,8 @@ struct pointwise_conv2d_fix_1 : public sc_module {
 
     pointwise_conv2d_fix_1_SeparableConv2D_1_b_s* SeparableConv2D_1_b_s_U;
     pointwise_conv2d_fix_1_SeparableConv2D_1_w_s* SeparableConv2D_1_w_s_U;
+    network_mul_mul_15s_16s_30_3_1<1,3,15,16,30>* network_mul_mul_15s_16s_30_3_1_U116;
+    network_mul_mul_15s_16s_30_3_1<1,3,15,16,30>* network_mul_mul_15s_16s_30_3_1_U117;
     network_mul_mul_15s_16s_30_3_1<1,3,15,16,30>* network_mul_mul_15s_16s_30_3_1_U118;
     network_mul_mul_15s_16s_30_3_1<1,3,15,16,30>* network_mul_mul_15s_16s_30_3_1_U119;
     network_mul_mul_15s_16s_30_3_1<1,3,15,16,30>* network_mul_mul_15s_16s_30_3_1_U120;
@@ -63,10 +65,8 @@ struct pointwise_conv2d_fix_1 : public sc_module {
     network_mul_mul_15s_16s_30_3_1<1,3,15,16,30>* network_mul_mul_15s_16s_30_3_1_U128;
     network_mul_mul_15s_16s_30_3_1<1,3,15,16,30>* network_mul_mul_15s_16s_30_3_1_U129;
     network_mul_mul_15s_16s_30_3_1<1,3,15,16,30>* network_mul_mul_15s_16s_30_3_1_U130;
-    network_mul_mul_15s_16s_30_3_1<1,3,15,16,30>* network_mul_mul_15s_16s_30_3_1_U131;
-    network_mul_mul_15s_16s_30_3_1<1,3,15,16,30>* network_mul_mul_15s_16s_30_3_1_U132;
-    network_mac_muladd_5ns_9ns_9s_13_3_1<1,3,5,9,9,13>* network_mac_muladd_5ns_9ns_9s_13_3_1_U133;
-    network_mul_mul_16s_15s_30_3_1<1,3,16,15,30>* network_mul_mul_16s_15s_30_3_1_U134;
+    network_mac_muladd_5ns_9ns_9s_13_3_1<1,3,5,9,9,13>* network_mac_muladd_5ns_9ns_9s_13_3_1_U131;
+    network_mul_mul_16s_15s_30_3_1<1,3,16,15,30>* network_mul_mul_16s_15s_30_3_1_U132;
     sc_signal< sc_lv<32> > ap_CS_fsm;
     sc_signal< sc_logic > ap_CS_fsm_state1;
     sc_signal< sc_lv<3> > SeparableConv2D_1_b_s_address0;

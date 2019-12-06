@@ -1,5 +1,5 @@
 // ==============================================================
-// File generated on Thu Dec 05 22:37:11 JST 2019
+// File generated on Fri Dec 06 20:46:23 JST 2019
 // Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3.1 (64-bit)
 // SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
 // IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
@@ -7,7 +7,7 @@
 // ==============================================================
 `timescale 1 ns / 1 ps
 
-(* use_dsp = "yes" *) module network_mac_muladd_5ns_11ns_11s_15_3_1_DSP48_13(
+(* use_dsp = "yes" *) module network_mac_muladd_5ns_11ns_11s_15_3_1_DSP48_15(
     input clk,
     input rst,
     input ce,
@@ -69,7 +69,7 @@ output[dout_WIDTH - 1:0] dout;
 
 
 
-network_mac_muladd_5ns_11ns_11s_15_3_1_DSP48_13 network_mac_muladd_5ns_11ns_11s_15_3_1_DSP48_13_U(
+network_mac_muladd_5ns_11ns_11s_15_3_1_DSP48_15 network_mac_muladd_5ns_11ns_11s_15_3_1_DSP48_15_U(
     .clk( clk ),
     .rst( reset ),
     .ce( ce ),

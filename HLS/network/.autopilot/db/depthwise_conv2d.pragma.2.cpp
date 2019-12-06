@@ -377,8 +377,8 @@ uint16_t kernel_height, uint16_t kernel_width, const int16_t* kernel,
 uint8_t relu, uint8_t fractal_width){
 
 
-_ssdm_op_SpecResourceLimit(27, "mul", "", "", "");
-_ssdm_op_SpecResourceLimit(27, "add", "", "", "");
+_ssdm_op_SpecResourceLimit(29, "mul", "", "", "");
+_ssdm_op_SpecResourceLimit(29, "add", "", "", "");
 
 
 
@@ -387,7 +387,7 @@ _ssdm_op_SpecResourceLimit(27, "add", "", "", "");
     for(uint16_t out_d = 0; out_d < output_depth; out_d++){
      for(uint16_t out_h = 0; out_h < output_height; out_h++){
       for(uint16_t out_w = 0; out_w < output_width; out_w++){
-_ssdm_Unroll(1, 0, 7, "");
+_ssdm_Unroll(1, 0, 4, "");
  buffer = bias[out_d];
              for(uint16_t k_h = 0; k_h < kernel_height; k_h++){
 _ssdm_Unroll(0,0,0, "");

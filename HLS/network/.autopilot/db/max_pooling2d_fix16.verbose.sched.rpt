@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'max_pooling2d_fix16'
 ================================================================
-* Date:           Thu Dec  5 22:35:52 2019
+* Date:           Fri Dec  6 20:45:10 2019
 
 * Version:        2018.3.1 (Build 2489210 on Tue Mar 26 04:40:43 MDT 2019)
 * Project:        HLS
@@ -278,8 +278,8 @@ ST_1 : Operation 96 [1/1] (0.00ns)   --->   "%output_width_cast3 = sext i5 %outp
 ST_1 : Operation 97 [1/1] (0.00ns)   --->   "%output_height_cast2 = sext i5 %output_height_read to i6"   --->   Operation 97 'sext' 'output_height_cast2' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 98 [1/1] (0.00ns)   --->   "%input_width_cast = sext i6 %input_width_read to i7"   --->   Operation 98 'sext' 'input_width_cast' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 99 [1/1] (0.00ns)   --->   "%output_width_cast = zext i6 %output_width_cast3 to i16"   --->   Operation 99 'zext' 'output_width_cast' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 100 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecResourceLimit(i32 0, [4 x i8]* @p_str26, [1 x i8]* @p_str127, [1 x i8]* @p_str127, [1 x i8]* @p_str127) nounwind" [layers_c/max_pooling2d.cpp:12]   --->   Operation 100 'specresourcelimit' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 101 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecResourceLimit(i32 0, [4 x i8]* @p_str228, [1 x i8]* @p_str127, [1 x i8]* @p_str127, [1 x i8]* @p_str127) nounwind" [layers_c/max_pooling2d.cpp:13]   --->   Operation 101 'specresourcelimit' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 100 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecResourceLimit(i32 0, [4 x i8]* @p_str6, [1 x i8]* @p_str17, [1 x i8]* @p_str17, [1 x i8]* @p_str17) nounwind" [layers_c/max_pooling2d.cpp:12]   --->   Operation 100 'specresourcelimit' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 101 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecResourceLimit(i32 0, [4 x i8]* @p_str28, [1 x i8]* @p_str17, [1 x i8]* @p_str17, [1 x i8]* @p_str17) nounwind" [layers_c/max_pooling2d.cpp:13]   --->   Operation 101 'specresourcelimit' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 102 [1/1] (0.00ns)   --->   "%tmp_cast = zext i7 %input_height_read to i9" [layers_c/max_pooling2d.cpp:26]   --->   Operation 102 'zext' 'tmp_cast' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 103 [1/1] (0.00ns)   --->   "%tmp_41_cast1_cast = zext i7 %input_width_cast to i16" [layers_c/max_pooling2d.cpp:32]   --->   Operation 103 'zext' 'tmp_41_cast1_cast' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 104 [1/1] (0.00ns)   --->   "%tmp_42_cast = zext i6 %output_height_cast2 to i8" [layers_c/max_pooling2d.cpp:32]   --->   Operation 104 'zext' 'tmp_42_cast' <Predicate = true> <Delay = 0.00>

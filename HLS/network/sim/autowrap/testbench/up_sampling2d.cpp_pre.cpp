@@ -231,8 +231,8 @@ uint16_t output_depth, uint16_t output_height, uint16_t output_width, int16_t* o
 
 
 
-#pragma HLS ALLOCATION instances=mul limit=1 operation
-#pragma HLS ALLOCATION instances=add limit=1 operation
+
+
 
     for(uint16_t out_d = 0; out_d < output_depth; out_d++){
         for(uint16_t out_h = 0; out_h < output_height; out_h++){

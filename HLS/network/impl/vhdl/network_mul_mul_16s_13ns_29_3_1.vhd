@@ -3,7 +3,7 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 
-entity network_mul_mul_16s_13ns_29_3_1_DSP48_8 is
+entity network_mul_mul_16s_13ns_29_3_1_DSP48_10 is
 port (
     clk: in std_logic;
     rst: in std_logic;
@@ -14,7 +14,7 @@ port (
 
 end entity;
 
-architecture behav of network_mul_mul_16s_13ns_29_3_1_DSP48_8 is
+architecture behav of network_mul_mul_16s_13ns_29_3_1_DSP48_10 is
     signal a_cvt: signed(16 - 1 downto 0);
     signal b_cvt: unsigned(13 - 1 downto 0);
     signal p_cvt: signed(29 - 1 downto 0);
@@ -63,7 +63,7 @@ entity network_mul_mul_16s_13ns_29_3_1 is
 end entity;
 
 architecture arch of network_mul_mul_16s_13ns_29_3_1 is
-    component network_mul_mul_16s_13ns_29_3_1_DSP48_8 is
+    component network_mul_mul_16s_13ns_29_3_1_DSP48_10 is
         port (
             clk : IN STD_LOGIC;
             rst : IN STD_LOGIC;
@@ -76,7 +76,7 @@ architecture arch of network_mul_mul_16s_13ns_29_3_1 is
 
 
 begin
-    network_mul_mul_16s_13ns_29_3_1_DSP48_8_U :  component network_mul_mul_16s_13ns_29_3_1_DSP48_8
+    network_mul_mul_16s_13ns_29_3_1_DSP48_10_U :  component network_mul_mul_16s_13ns_29_3_1_DSP48_10
     port map (
         clk => clk,
         rst => reset,

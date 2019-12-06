@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'pointwise_conv2d_fix_3'" level="0">
-<item name = "Date">Thu Dec  5 22:36:54 2019
+<item name = "Date">Fri Dec  6 20:46:06 2019
 </item>
 <item name = "Version">2018.3.1 (Build 2489210 on Tue Mar 26 04:40:43 MDT 2019)</item>
 <item name = "Project">HLS</item>
@@ -69,38 +69,38 @@
 </item>
 <item name = "DSP48"><table name="" hasTotal="0">
 <keys size="3">Instance, Module, Expression</keys>
-<column name="network_mac_muladd_16ns_9ns_9s_25_3_1_U225">network_mac_muladd_16ns_9ns_9s_25_3_1, i0 * i1 + i2</column>
-<column name="network_mac_muladd_16ns_9ns_9s_25_3_1_U226">network_mac_muladd_16ns_9ns_9s_25_3_1, i0 * i1 + i2</column>
-<column name="network_mac_muladd_16ns_9ns_9s_25_3_1_U227">network_mac_muladd_16ns_9ns_9s_25_3_1, i0 * i1 + i2</column>
-<column name="network_mac_muladd_16ns_9ns_9s_25_3_1_U228">network_mac_muladd_16ns_9ns_9s_25_3_1, i0 * i1 + i2</column>
-<column name="network_mac_muladd_16ns_9ns_9s_25_3_1_U229">network_mac_muladd_16ns_9ns_9s_25_3_1, i0 * i1 + i2</column>
-<column name="network_mac_muladd_16ns_9ns_9s_25_3_1_U230">network_mac_muladd_16ns_9ns_9s_25_3_1, i0 * i1 + i2</column>
-<column name="network_mac_muladd_16ns_9ns_9s_25_3_1_U231">network_mac_muladd_16ns_9ns_9s_25_3_1, i0 * i1 + i2</column>
 <column name="network_mac_muladd_16ns_9ns_9s_25_3_1_U232">network_mac_muladd_16ns_9ns_9s_25_3_1, i0 * i1 + i2</column>
-<column name="network_mac_muladd_16ns_9ns_9s_25_3_1_U241">network_mac_muladd_16ns_9ns_9s_25_3_1, i0 * i1 + i2</column>
-<column name="network_mac_muladd_16ns_9ns_9s_25_3_1_U242">network_mac_muladd_16ns_9ns_9s_25_3_1, i0 * i1 + i2</column>
-<column name="network_mac_muladd_16ns_9ns_9s_25_3_1_U243">network_mac_muladd_16ns_9ns_9s_25_3_1, i0 * i1 + i2</column>
-<column name="network_mac_muladd_16ns_9ns_9s_25_3_1_U244">network_mac_muladd_16ns_9ns_9s_25_3_1, i0 * i1 + i2</column>
-<column name="network_mac_muladd_16ns_9ns_9s_25_3_1_U245">network_mac_muladd_16ns_9ns_9s_25_3_1, i0 * i1 + i2</column>
-<column name="network_mac_muladd_16ns_9ns_9s_25_3_1_U246">network_mac_muladd_16ns_9ns_9s_25_3_1, i0 * i1 + i2</column>
-<column name="network_mac_muladd_16ns_9ns_9s_25_3_1_U247">network_mac_muladd_16ns_9ns_9s_25_3_1, i0 * i1 + i2</column>
+<column name="network_mac_muladd_16ns_9ns_9s_25_3_1_U233">network_mac_muladd_16ns_9ns_9s_25_3_1, i0 * i1 + i2</column>
+<column name="network_mac_muladd_16ns_9ns_9s_25_3_1_U234">network_mac_muladd_16ns_9ns_9s_25_3_1, i0 * i1 + i2</column>
+<column name="network_mac_muladd_16ns_9ns_9s_25_3_1_U235">network_mac_muladd_16ns_9ns_9s_25_3_1, i0 * i1 + i2</column>
+<column name="network_mac_muladd_16ns_9ns_9s_25_3_1_U236">network_mac_muladd_16ns_9ns_9s_25_3_1, i0 * i1 + i2</column>
+<column name="network_mac_muladd_16ns_9ns_9s_25_3_1_U237">network_mac_muladd_16ns_9ns_9s_25_3_1, i0 * i1 + i2</column>
+<column name="network_mac_muladd_16ns_9ns_9s_25_3_1_U238">network_mac_muladd_16ns_9ns_9s_25_3_1, i0 * i1 + i2</column>
+<column name="network_mac_muladd_16ns_9ns_9s_25_3_1_U239">network_mac_muladd_16ns_9ns_9s_25_3_1, i0 * i1 + i2</column>
 <column name="network_mac_muladd_16ns_9ns_9s_25_3_1_U248">network_mac_muladd_16ns_9ns_9s_25_3_1, i0 * i1 + i2</column>
-<column name="network_mul_mul_16s_15s_30_3_1_U233">network_mul_mul_16s_15s_30_3_1, i0 * i1</column>
-<column name="network_mul_mul_16s_15s_30_3_1_U234">network_mul_mul_16s_15s_30_3_1, i0 * i1</column>
-<column name="network_mul_mul_16s_15s_30_3_1_U235">network_mul_mul_16s_15s_30_3_1, i0 * i1</column>
-<column name="network_mul_mul_16s_15s_30_3_1_U236">network_mul_mul_16s_15s_30_3_1, i0 * i1</column>
-<column name="network_mul_mul_16s_15s_30_3_1_U237">network_mul_mul_16s_15s_30_3_1, i0 * i1</column>
-<column name="network_mul_mul_16s_15s_30_3_1_U238">network_mul_mul_16s_15s_30_3_1, i0 * i1</column>
-<column name="network_mul_mul_16s_15s_30_3_1_U239">network_mul_mul_16s_15s_30_3_1, i0 * i1</column>
+<column name="network_mac_muladd_16ns_9ns_9s_25_3_1_U249">network_mac_muladd_16ns_9ns_9s_25_3_1, i0 * i1 + i2</column>
+<column name="network_mac_muladd_16ns_9ns_9s_25_3_1_U250">network_mac_muladd_16ns_9ns_9s_25_3_1, i0 * i1 + i2</column>
+<column name="network_mac_muladd_16ns_9ns_9s_25_3_1_U251">network_mac_muladd_16ns_9ns_9s_25_3_1, i0 * i1 + i2</column>
+<column name="network_mac_muladd_16ns_9ns_9s_25_3_1_U252">network_mac_muladd_16ns_9ns_9s_25_3_1, i0 * i1 + i2</column>
+<column name="network_mac_muladd_16ns_9ns_9s_25_3_1_U253">network_mac_muladd_16ns_9ns_9s_25_3_1, i0 * i1 + i2</column>
+<column name="network_mac_muladd_16ns_9ns_9s_25_3_1_U254">network_mac_muladd_16ns_9ns_9s_25_3_1, i0 * i1 + i2</column>
+<column name="network_mac_muladd_16ns_9ns_9s_25_3_1_U255">network_mac_muladd_16ns_9ns_9s_25_3_1, i0 * i1 + i2</column>
 <column name="network_mul_mul_16s_15s_30_3_1_U240">network_mul_mul_16s_15s_30_3_1, i0 * i1</column>
-<column name="network_mul_mul_16s_15s_30_3_1_U249">network_mul_mul_16s_15s_30_3_1, i0 * i1</column>
-<column name="network_mul_mul_16s_15s_30_3_1_U250">network_mul_mul_16s_15s_30_3_1, i0 * i1</column>
-<column name="network_mul_mul_16s_15s_30_3_1_U251">network_mul_mul_16s_15s_30_3_1, i0 * i1</column>
-<column name="network_mul_mul_16s_15s_30_3_1_U252">network_mul_mul_16s_15s_30_3_1, i0 * i1</column>
-<column name="network_mul_mul_16s_15s_30_3_1_U253">network_mul_mul_16s_15s_30_3_1, i0 * i1</column>
-<column name="network_mul_mul_16s_15s_30_3_1_U254">network_mul_mul_16s_15s_30_3_1, i0 * i1</column>
-<column name="network_mul_mul_16s_15s_30_3_1_U255">network_mul_mul_16s_15s_30_3_1, i0 * i1</column>
+<column name="network_mul_mul_16s_15s_30_3_1_U241">network_mul_mul_16s_15s_30_3_1, i0 * i1</column>
+<column name="network_mul_mul_16s_15s_30_3_1_U242">network_mul_mul_16s_15s_30_3_1, i0 * i1</column>
+<column name="network_mul_mul_16s_15s_30_3_1_U243">network_mul_mul_16s_15s_30_3_1, i0 * i1</column>
+<column name="network_mul_mul_16s_15s_30_3_1_U244">network_mul_mul_16s_15s_30_3_1, i0 * i1</column>
+<column name="network_mul_mul_16s_15s_30_3_1_U245">network_mul_mul_16s_15s_30_3_1, i0 * i1</column>
+<column name="network_mul_mul_16s_15s_30_3_1_U246">network_mul_mul_16s_15s_30_3_1, i0 * i1</column>
+<column name="network_mul_mul_16s_15s_30_3_1_U247">network_mul_mul_16s_15s_30_3_1, i0 * i1</column>
 <column name="network_mul_mul_16s_15s_30_3_1_U256">network_mul_mul_16s_15s_30_3_1, i0 * i1</column>
+<column name="network_mul_mul_16s_15s_30_3_1_U257">network_mul_mul_16s_15s_30_3_1, i0 * i1</column>
+<column name="network_mul_mul_16s_15s_30_3_1_U258">network_mul_mul_16s_15s_30_3_1, i0 * i1</column>
+<column name="network_mul_mul_16s_15s_30_3_1_U259">network_mul_mul_16s_15s_30_3_1, i0 * i1</column>
+<column name="network_mul_mul_16s_15s_30_3_1_U260">network_mul_mul_16s_15s_30_3_1, i0 * i1</column>
+<column name="network_mul_mul_16s_15s_30_3_1_U261">network_mul_mul_16s_15s_30_3_1, i0 * i1</column>
+<column name="network_mul_mul_16s_15s_30_3_1_U262">network_mul_mul_16s_15s_30_3_1, i0 * i1</column>
+<column name="network_mul_mul_16s_15s_30_3_1_U263">network_mul_mul_16s_15s_30_3_1, i0 * i1</column>
 </table>
 </item>
 <item name = "Memory"><table name="" hasTotal="1">

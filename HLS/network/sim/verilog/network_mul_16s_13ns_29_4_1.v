@@ -1,5 +1,5 @@
 // ==============================================================
-// File generated on Thu Dec 05 22:30:13 JST 2019
+// File generated on Fri Dec 06 20:46:23 JST 2019
 // Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3.1 (64-bit)
 // SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
 // IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
@@ -8,7 +8,7 @@
 
 `timescale 1 ns / 1 ps
 
-module network_mul_16s_13ns_29_4_1_MulnS_7(clk, ce, a, b, p);
+module network_mul_16s_13ns_29_4_1_MulnS_4(clk, ce, a, b, p);
 input clk;
 input ce;
 input[16 - 1 : 0] a; 
@@ -55,7 +55,7 @@ output[dout_WIDTH - 1:0] dout;
 
 
 
-network_mul_16s_13ns_29_4_1_MulnS_7 network_mul_16s_13ns_29_4_1_MulnS_7_U(
+network_mul_16s_13ns_29_4_1_MulnS_4 network_mul_16s_13ns_29_4_1_MulnS_4_U(
     .clk( clk ),
     .ce( ce ),
     .a( din0 ),

@@ -539,7 +539,7 @@ architecture behav of pointwise_conv2d_fix_4 is
 
 
 begin
-    network_mul_mul_16s_14ns_30_3_1_U262 : component network_mul_mul_16s_14ns_30_3_1
+    network_mul_mul_16s_14ns_30_3_1_U269 : component network_mul_mul_16s_14ns_30_3_1
     generic map (
         ID => 1,
         NUM_STAGE => 3,
@@ -554,7 +554,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_964_p2);
 
-    network_mul_mul_16s_12s_28_3_1_U263 : component network_mul_mul_16s_12s_28_3_1
+    network_mul_mul_16s_12s_28_3_1_U270 : component network_mul_mul_16s_12s_28_3_1
     generic map (
         ID => 1,
         NUM_STAGE => 3,
@@ -569,7 +569,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_970_p2);
 
-    network_mul_mul_16s_13ns_29_3_1_U264 : component network_mul_mul_16s_13ns_29_3_1
+    network_mul_mul_16s_13ns_29_3_1_U271 : component network_mul_mul_16s_13ns_29_3_1
     generic map (
         ID => 1,
         NUM_STAGE => 3,
@@ -584,7 +584,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_976_p2);
 
-    network_mul_mul_16s_13s_29_3_1_U265 : component network_mul_mul_16s_13s_29_3_1
+    network_mul_mul_16s_13s_29_3_1_U272 : component network_mul_mul_16s_13s_29_3_1
     generic map (
         ID => 1,
         NUM_STAGE => 3,
@@ -599,7 +599,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_982_p2);
 
-    network_mul_mul_16s_10s_26_3_1_U266 : component network_mul_mul_16s_10s_26_3_1
+    network_mul_mul_16s_10s_26_3_1_U273 : component network_mul_mul_16s_10s_26_3_1
     generic map (
         ID => 1,
         NUM_STAGE => 3,
@@ -614,7 +614,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_988_p2);
 
-    network_mul_mul_16s_11ns_27_3_1_U267 : component network_mul_mul_16s_11ns_27_3_1
+    network_mul_mul_16s_11ns_27_3_1_U274 : component network_mul_mul_16s_11ns_27_3_1
     generic map (
         ID => 1,
         NUM_STAGE => 3,
@@ -629,7 +629,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_994_p2);
 
-    network_mul_mul_16s_14ns_30_3_1_U268 : component network_mul_mul_16s_14ns_30_3_1
+    network_mul_mul_16s_14ns_30_3_1_U275 : component network_mul_mul_16s_14ns_30_3_1
     generic map (
         ID => 1,
         NUM_STAGE => 3,
@@ -644,7 +644,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_1000_p2);
 
-    network_mul_mul_16s_14ns_30_3_1_U269 : component network_mul_mul_16s_14ns_30_3_1
+    network_mul_mul_16s_14ns_30_3_1_U276 : component network_mul_mul_16s_14ns_30_3_1
     generic map (
         ID => 1,
         NUM_STAGE => 3,
@@ -659,7 +659,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_1006_p2);
 
-    network_mul_mul_16s_13ns_29_3_1_U270 : component network_mul_mul_16s_13ns_29_3_1
+    network_mul_mul_16s_13ns_29_3_1_U277 : component network_mul_mul_16s_13ns_29_3_1
     generic map (
         ID => 1,
         NUM_STAGE => 3,
@@ -674,7 +674,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_1012_p2);
 
-    network_mul_mul_16s_15s_30_3_1_U271 : component network_mul_mul_16s_15s_30_3_1
+    network_mul_mul_16s_15s_30_3_1_U278 : component network_mul_mul_16s_15s_30_3_1
     generic map (
         ID => 1,
         NUM_STAGE => 3,
@@ -689,7 +689,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_1018_p2);
 
-    network_mul_mul_16s_14ns_30_3_1_U272 : component network_mul_mul_16s_14ns_30_3_1
+    network_mul_mul_16s_14ns_30_3_1_U279 : component network_mul_mul_16s_14ns_30_3_1
     generic map (
         ID => 1,
         NUM_STAGE => 3,
@@ -704,7 +704,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_1024_p2);
 
-    network_mul_mul_16s_14s_30_3_1_U273 : component network_mul_mul_16s_14s_30_3_1
+    network_mul_mul_16s_14s_30_3_1_U280 : component network_mul_mul_16s_14s_30_3_1
     generic map (
         ID => 1,
         NUM_STAGE => 3,
@@ -719,7 +719,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_1030_p2);
 
-    network_mul_mul_16s_15s_30_3_1_U274 : component network_mul_mul_16s_15s_30_3_1
+    network_mul_mul_16s_15s_30_3_1_U281 : component network_mul_mul_16s_15s_30_3_1
     generic map (
         ID => 1,
         NUM_STAGE => 3,
@@ -734,7 +734,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_1036_p2);
 
-    network_mul_mul_16s_15s_30_3_1_U275 : component network_mul_mul_16s_15s_30_3_1
+    network_mul_mul_16s_15s_30_3_1_U282 : component network_mul_mul_16s_15s_30_3_1
     generic map (
         ID => 1,
         NUM_STAGE => 3,
@@ -749,7 +749,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_1042_p2);
 
-    network_mac_muladd_5ns_11ns_11s_15_3_1_U276 : component network_mac_muladd_5ns_11ns_11s_15_3_1
+    network_mac_muladd_5ns_11ns_11s_15_3_1_U283 : component network_mac_muladd_5ns_11ns_11s_15_3_1
     generic map (
         ID => 1,
         NUM_STAGE => 3,
@@ -766,7 +766,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_1048_p3);
 
-    network_mul_mul_16s_14s_30_3_1_U277 : component network_mul_mul_16s_14s_30_3_1
+    network_mul_mul_16s_14s_30_3_1_U284 : component network_mul_mul_16s_14s_30_3_1
     generic map (
         ID => 1,
         NUM_STAGE => 3,

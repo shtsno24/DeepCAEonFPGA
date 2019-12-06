@@ -1,5 +1,5 @@
 // ==============================================================
-// File generated on Thu Dec 05 22:30:51 JST 2019
+// File generated on Fri Dec 06 20:47:16 JST 2019
 // Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3.1 (64-bit)
 // SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
 // IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
@@ -251,7 +251,6 @@ uint8_t relu, uint8_t fractal_width){
     for(uint16_t out_d = 0; out_d < output_depth; out_d++){
      for(uint16_t out_h = 0; out_h < output_height; out_h++){
             for(uint16_t out_w = 0; out_w < output_width; out_w++){
-
              buffer = bias[out_d];
                 for(uint16_t in_d = 0; in_d < input_depth; in_d++){
 #pragma HLS UNROLL FACTOR=16
