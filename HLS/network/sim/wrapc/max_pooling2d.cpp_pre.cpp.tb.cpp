@@ -1,5 +1,5 @@
 // ==============================================================
-// File generated on Fri Dec 06 20:47:15 JST 2019
+// File generated on Thu Dec 12 12:30:15 JST 2019
 // Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3.1 (64-bit)
 // SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
 // IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
@@ -253,11 +253,11 @@ uint16_t output_depth, uint16_t output_height, uint16_t output_width, int16_t* o
     for(uint16_t out_d = 0; out_d < output_depth; out_d++){
         for(uint16_t out_h = 0; out_h < output_height; out_h++){
          for(uint16_t out_w = 0; out_w < output_width; out_w++){
-#pragma HLS UNROLL FACTOR=7
+
              for(uint16_t in_h = 0; in_h < kernel_size; in_h++){
-#pragma HLS UNROLL
+
                     for(uint16_t in_w = 0; in_w < kernel_size; in_w++){
-#pragma HLS UNROLL
+
                      tmp = input[out_d * input_height * input_width + (kernel_size * out_h + in_h) * input_width + (kernel_size * out_w + in_w)];
                         if((in_h == 0 && in_w == 0) || (buffer < tmp)){
                          buffer = tmp;

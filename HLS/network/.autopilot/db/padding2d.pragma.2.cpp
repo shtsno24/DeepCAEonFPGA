@@ -375,32 +375,32 @@ _ssdm_op_SpecResourceLimit(0, "add", "", "", "");
  uint16_t o_count = 0, i_count = 0;
 
  for(uint16_t depth = 0; depth < input_depth; depth++){
-_ssdm_Unroll(1, 0, 2, "");
- for(uint16_t i = 0; i < padding_height * (padding_width * 2 + input_width) + padding_width; i++){
-_ssdm_Unroll(1, 0, 4, "");
- output[o_count] = 0;
+
+  for(uint16_t i = 0; i < padding_height * (padding_width * 2 + input_width) + padding_width; i++){
+
+   output[o_count] = 0;
    o_count += 1;
   }
 
   for(uint16_t height = 0; height < input_height; height++){
-_ssdm_Unroll(1, 0, 7, "");
- for(uint16_t width = 0; width < input_width; width++){
-_ssdm_Unroll(1, 0, 7, "");
- output[o_count] = input[i_count];
+
+   for(uint16_t width = 0; width < input_width; width++){
+
+    output[o_count] = input[i_count];
     i_count += 1;
     o_count += 1;
    }
 
    for(uint16_t width = 0; width < 2 * padding_width; width++){
-_ssdm_Unroll(1, 0, 2, "");
- output[o_count] = 0;
+
+    output[o_count] = 0;
     o_count += 1;
    }
   }
 
   for(uint16_t i = 0; i < padding_height * (padding_width * 2 + input_width) - padding_width; i++){
-_ssdm_Unroll(1, 0, 4, "");
- output[o_count] = 0;
+
+   output[o_count] = 0;
    o_count += 1;
   }
  }
