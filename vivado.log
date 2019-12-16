@@ -214,3 +214,5 @@ INFO: [Common 17-14] Message 'Designutils 20-3303' appears 100 times and further
 open_run: Time (s): cpu = 00:00:23 ; elapsed = 00:00:18 . Memory (MB): peak = 8006.355 ; gain = 826.320 ; free physical = 8258 ; free virtual = 13815
 file copy -force /home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/impl_1/design_1_wrapper.sysdef /home/masudalab/DeepCAEonFPGA/HLx/HLx.sdk/design_1_wrapper.hdf
 
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 16 16:39:35 2019...
