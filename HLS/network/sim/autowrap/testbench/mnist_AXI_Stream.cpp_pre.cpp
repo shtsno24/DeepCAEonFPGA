@@ -76024,7 +76024,7 @@ int network(axis &input_data, axis &output_data) {
  }
 
  for(uint64_t i = 0; i < array_length; i++){
-#pragma HLS PIPELINE
+
 
   out.user = 0;
   out.last = 0;

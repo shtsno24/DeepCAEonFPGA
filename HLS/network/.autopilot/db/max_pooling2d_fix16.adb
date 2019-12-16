@@ -2598,7 +2598,7 @@
             <Obj>
               <type>0</type>
               <id>75</id>
-              <name>tmp_cast_36</name>
+              <name>tmp_cast_35</name>
               <fileName>layers_c/max_pooling2d.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>26</lineNumber>
@@ -10388,7 +10388,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_cast_36_fu_374</first>
+        <first>tmp_cast_35_fu_374</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

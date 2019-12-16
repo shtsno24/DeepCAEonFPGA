@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'depthwise_conv2d_fix'
 ================================================================
-* Date:           Mon Dec 16 17:14:49 2019
+* Date:           Mon Dec 16 19:00:31 2019
 
 * Version:        2018.3.1 (Build 2489210 on Tue Mar 26 04:40:43 MDT 2019)
 * Project:        HLS
@@ -244,7 +244,7 @@ ST_1 : Operation 10 [1/1] (1.76ns)   --->   "br label %.preheader6" [layers_c/de
 State 2 <SV = 1> <Delay = 1.78>
 ST_2 : Operation 11 [1/1] (0.00ns)   --->   "%out_h = phi i5 [ 0, %.preheader6.preheader.critedge ], [ %out_h_4, %.preheader6.loopexit ]"   --->   Operation 11 'phi' 'out_h' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 12 [1/1] (1.36ns)   --->   "%exitcond3 = icmp eq i5 %out_h, -4" [layers_c/depthwise_conv2d.cpp:20]   --->   Operation 12 'icmp' 'exitcond3' <Predicate = true> <Delay = 1.36> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.95> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 13 [1/1] (0.00ns)   --->   "%empty_48 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 28, i64 28, i64 28)"   --->   Operation 13 'speclooptripcount' 'empty_48' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 13 [1/1] (0.00ns)   --->   "%empty_47 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 28, i64 28, i64 28)"   --->   Operation 13 'speclooptripcount' 'empty_47' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 14 [1/1] (1.78ns)   --->   "%out_h_4 = add i5 %out_h, 1" [layers_c/depthwise_conv2d.cpp:20]   --->   Operation 14 'add' 'out_h_4' <Predicate = true> <Delay = 1.78> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 15 [1/1] (0.00ns)   --->   "br i1 %exitcond3, label %3, label %.preheader5.preheader" [layers_c/depthwise_conv2d.cpp:20]   --->   Operation 15 'br' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 16 [1/1] (0.00ns)   --->   "%p_shl1 = call i10 @_ssdm_op_BitConcatenate.i10.i5.i5(i5 %out_h, i5 0)" [layers_c/depthwise_conv2d.cpp:20]   --->   Operation 16 'bitconcatenate' 'p_shl1' <Predicate = (!exitcond3)> <Delay = 0.00>
@@ -253,13 +253,13 @@ ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%p_shl2 = call i7 @_ssdm_op_BitConc
 ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%p_shl2_cast = zext i7 %p_shl2 to i11" [layers_c/depthwise_conv2d.cpp:20]   --->   Operation 19 'zext' 'p_shl2_cast' <Predicate = (!exitcond3)> <Delay = 0.00>
 ST_2 : Operation 20 [1/1] (1.73ns)   --->   "%tmp3 = sub i11 %p_shl1_cast, %p_shl2_cast" [layers_c/depthwise_conv2d.cpp:20]   --->   Operation 20 'sub' 'tmp3' <Predicate = (!exitcond3)> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 21 [1/1] (1.76ns)   --->   "br label %.preheader5" [layers_c/depthwise_conv2d.cpp:21]   --->   Operation 21 'br' <Predicate = (!exitcond3)> <Delay = 1.76>
-ST_2 : Operation 22 [1/1] (0.00ns)   --->   "%empty_52 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 1, i64 1, i64 1)"   --->   Operation 22 'speclooptripcount' 'empty_52' <Predicate = (exitcond3)> <Delay = 0.00>
+ST_2 : Operation 22 [1/1] (0.00ns)   --->   "%empty_51 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 1, i64 1, i64 1)"   --->   Operation 22 'speclooptripcount' 'empty_51' <Predicate = (exitcond3)> <Delay = 0.00>
 ST_2 : Operation 23 [1/1] (0.00ns)   --->   "ret void"   --->   Operation 23 'ret' <Predicate = (exitcond3)> <Delay = 0.00>
 
 State 3 <SV = 2> <Delay = 1.78>
 ST_3 : Operation 24 [1/1] (0.00ns)   --->   "%out_w = phi i5 [ %out_w_4, %2 ], [ 0, %.preheader5.preheader ]"   --->   Operation 24 'phi' 'out_w' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 25 [1/1] (1.36ns)   --->   "%exitcond2 = icmp eq i5 %out_w, -4" [layers_c/depthwise_conv2d.cpp:21]   --->   Operation 25 'icmp' 'exitcond2' <Predicate = true> <Delay = 1.36> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.95> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 26 [1/1] (0.00ns)   --->   "%empty_49 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 28, i64 28, i64 28)"   --->   Operation 26 'speclooptripcount' 'empty_49' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 26 [1/1] (0.00ns)   --->   "%empty_48 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 28, i64 28, i64 28)"   --->   Operation 26 'speclooptripcount' 'empty_48' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 27 [1/1] (1.78ns)   --->   "%out_w_4 = add i5 %out_w, 1" [layers_c/depthwise_conv2d.cpp:21]   --->   Operation 27 'add' 'out_w_4' <Predicate = true> <Delay = 1.78> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_3 : Operation 28 [1/1] (0.00ns)   --->   "br i1 %exitcond2, label %.preheader6.loopexit, label %0" [layers_c/depthwise_conv2d.cpp:21]   --->   Operation 28 'br' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 29 [1/1] (0.00ns)   --->   "%tmp_95_cast = zext i5 %out_w to i11" [layers_c/depthwise_conv2d.cpp:24]   --->   Operation 29 'zext' 'tmp_95_cast' <Predicate = (!exitcond2)> <Delay = 0.00>
@@ -270,7 +270,7 @@ State 4 <SV = 3> <Delay = 4.89>
 ST_4 : Operation 32 [1/1] (0.00ns)   --->   "%buffer6 = phi i16 [ 0, %0 ], [ %buffer_1, %.loopexit.loopexit ]" [layers_c/depthwise_conv2d.cpp:28]   --->   Operation 32 'phi' 'buffer6' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 33 [1/1] (0.00ns)   --->   "%k_h = phi i2 [ 0, %0 ], [ %k_h_1, %.loopexit.loopexit ]"   --->   Operation 33 'phi' 'k_h' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 34 [1/1] (0.95ns)   --->   "%exitcond1 = icmp eq i2 %k_h, -1" [layers_c/depthwise_conv2d.cpp:24]   --->   Operation 34 'icmp' 'exitcond1' <Predicate = true> <Delay = 0.95> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.95> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_4 : Operation 35 [1/1] (0.00ns)   --->   "%empty_50 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 3, i64 3, i64 3)"   --->   Operation 35 'speclooptripcount' 'empty_50' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 35 [1/1] (0.00ns)   --->   "%empty_49 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 3, i64 3, i64 3)"   --->   Operation 35 'speclooptripcount' 'empty_49' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 36 [1/1] (1.56ns)   --->   "%k_h_1 = add i2 %k_h, 1" [layers_c/depthwise_conv2d.cpp:24]   --->   Operation 36 'add' 'k_h_1' <Predicate = true> <Delay = 1.56> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_4 : Operation 37 [1/1] (0.00ns)   --->   "br i1 %exitcond1, label %2, label %.preheader.preheader" [layers_c/depthwise_conv2d.cpp:24]   --->   Operation 37 'br' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 38 [1/1] (0.00ns)   --->   "%tmp_98_cast1 = zext i2 %k_h to i5" [layers_c/depthwise_conv2d.cpp:28]   --->   Operation 38 'zext' 'tmp_98_cast1' <Predicate = (!exitcond1)> <Delay = 0.00>
@@ -295,7 +295,7 @@ State 5 <SV = 4> <Delay = 6.67>
 ST_5 : Operation 55 [1/1] (0.00ns)   --->   "%buffer_1 = phi i16 [ %buffer, %1 ], [ %buffer6, %.preheader.preheader ]"   --->   Operation 55 'phi' 'buffer_1' <Predicate = true> <Delay = 0.00>
 ST_5 : Operation 56 [1/1] (0.00ns)   --->   "%k_w = phi i2 [ %k_w_1, %1 ], [ 0, %.preheader.preheader ]"   --->   Operation 56 'phi' 'k_w' <Predicate = true> <Delay = 0.00>
 ST_5 : Operation 57 [1/1] (0.95ns)   --->   "%exitcond = icmp eq i2 %k_w, -1" [layers_c/depthwise_conv2d.cpp:26]   --->   Operation 57 'icmp' 'exitcond' <Predicate = true> <Delay = 0.95> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.95> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_5 : Operation 58 [1/1] (0.00ns)   --->   "%empty_51 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 3, i64 3, i64 3)"   --->   Operation 58 'speclooptripcount' 'empty_51' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 58 [1/1] (0.00ns)   --->   "%empty_50 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 3, i64 3, i64 3)"   --->   Operation 58 'speclooptripcount' 'empty_50' <Predicate = true> <Delay = 0.00>
 ST_5 : Operation 59 [1/1] (1.56ns)   --->   "%k_w_1 = add i2 %k_w, 1" [layers_c/depthwise_conv2d.cpp:26]   --->   Operation 59 'add' 'k_w_1' <Predicate = true> <Delay = 1.56> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_5 : Operation 60 [1/1] (0.00ns)   --->   "br i1 %exitcond, label %.loopexit.loopexit, label %1" [layers_c/depthwise_conv2d.cpp:26]   --->   Operation 60 'br' <Predicate = true> <Delay = 0.00>
 ST_5 : Operation 61 [1/1] (0.00ns)   --->   "%tmp_101_cast = zext i2 %k_w to i5" [layers_c/depthwise_conv2d.cpp:28]   --->   Operation 61 'zext' 'tmp_101_cast' <Predicate = (!exitcond)> <Delay = 0.00>
@@ -352,7 +352,7 @@ empty                 (speclooptripcount) [ 000000000]
 StgValue_10           (br               ) [ 011111111]
 out_h                 (phi              ) [ 001011111]
 exitcond3             (icmp             ) [ 001111111]
-empty_48              (speclooptripcount) [ 000000000]
+empty_47              (speclooptripcount) [ 000000000]
 out_h_4               (add              ) [ 011111111]
 StgValue_15           (br               ) [ 000000000]
 p_shl1                (bitconcatenate   ) [ 000000000]
@@ -361,11 +361,11 @@ p_shl2                (bitconcatenate   ) [ 000000000]
 p_shl2_cast           (zext             ) [ 000000000]
 tmp3                  (sub              ) [ 000111111]
 StgValue_21           (br               ) [ 001111111]
-empty_52              (speclooptripcount) [ 000000000]
+empty_51              (speclooptripcount) [ 000000000]
 StgValue_23           (ret              ) [ 000000000]
 out_w                 (phi              ) [ 000101111]
 exitcond2             (icmp             ) [ 001111111]
-empty_49              (speclooptripcount) [ 000000000]
+empty_48              (speclooptripcount) [ 000000000]
 out_w_4               (add              ) [ 001111111]
 StgValue_28           (br               ) [ 000000000]
 tmp_95_cast           (zext             ) [ 000011111]
@@ -374,7 +374,7 @@ StgValue_31           (br               ) [ 011111111]
 buffer6               (phi              ) [ 000011111]
 k_h                   (phi              ) [ 000010000]
 exitcond1             (icmp             ) [ 001111111]
-empty_50              (speclooptripcount) [ 000000000]
+empty_49              (speclooptripcount) [ 000000000]
 k_h_1                 (add              ) [ 001111111]
 StgValue_37           (br               ) [ 000000000]
 tmp_98_cast1          (zext             ) [ 000000000]
@@ -397,7 +397,7 @@ StgValue_54           (br               ) [ 001111111]
 buffer_1              (phi              ) [ 001111111]
 k_w                   (phi              ) [ 000001000]
 exitcond              (icmp             ) [ 001111111]
-empty_51              (speclooptripcount) [ 000000000]
+empty_50              (speclooptripcount) [ 000000000]
 k_w_1                 (add              ) [ 001111111]
 StgValue_60           (br               ) [ 000000000]
 tmp_101_cast          (zext             ) [ 000000000]

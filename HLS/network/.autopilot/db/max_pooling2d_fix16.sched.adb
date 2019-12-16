@@ -2598,7 +2598,7 @@
 					<Obj>
 						<type>0</type>
 						<id>75</id>
-						<name>tmp_cast_36</name>
+						<name>tmp_cast_35</name>
 						<fileName>layers_c/max_pooling2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
 						<lineNumber>26</lineNumber>

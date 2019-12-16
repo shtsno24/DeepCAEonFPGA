@@ -28699,9 +28699,9 @@ _ssdm_Unroll(0,0,0, "");
  }
 
  for(uint64_t i = 0; i < array_length; i++){
-_ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
 
- out.user = 0;
+
+  out.user = 0;
   out.last = 0;
   out.dest = 0;
   out.id = 0;

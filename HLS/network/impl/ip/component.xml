@@ -776,7 +776,7 @@ esolve_type immediate dependency {} format string minimum {} maximum {}} value {
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>f0107ecb</spirit:value>
+            <spirit:value>62d0e37e</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -792,7 +792,7 @@ esolve_type immediate dependency {} format string minimum {} maximum {}} value {
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>43048663</spirit:value>
+            <spirit:value>e11680ba</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -808,7 +808,7 @@ esolve_type immediate dependency {} format string minimum {} maximum {}} value {
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>4239d85a</spirit:value>
+            <spirit:value>6e6e3d27</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -824,7 +824,7 @@ esolve_type immediate dependency {} format string minimum {} maximum {}} value {
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>3d45cf7a</spirit:value>
+            <spirit:value>2f2bae47</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -838,7 +838,7 @@ esolve_type immediate dependency {} format string minimum {} maximum {}} value {
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>a86319f1</spirit:value>
+            <spirit:value>1a3cd245</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -874,7 +874,7 @@ esolve_type immediate dependency {} format string minimum {} maximum {}} value {
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>140ad8b1</spirit:value>
+            <spirit:value>6e6ae3dd</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -2117,7 +2117,7 @@ esolve_type immediate dependency {} format string minimum {} maximum {}} value {
       <spirit:file>
         <spirit:name>hdl/vhdl/network.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_5399b7dd</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_ae996d08</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -2392,7 +2392,7 @@ esolve_type immediate dependency {} format string minimum {} maximum {}} value {
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>latency</spirit:name>
-      <spirit:value spirit:id="PARAM_VALUE.latency" spirit:order="5">701314</spirit:value>
+      <spirit:value spirit:id="PARAM_VALUE.latency" spirit:order="5">702880</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>II</spirit:name>
@@ -2409,17 +2409,17 @@ esolve_type immediate dependency {} format string minimum {} maximum {}} value {
       </xilinx:taxonomies>
       <xilinx:displayName>Network</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>1912161727</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2019-12-16T08:27:36Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>1912161907</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2019-12-16T10:07:34Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2018.3.1</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="24e8016e"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="5dc19620"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="97e55fb4"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="d43b4a8a"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="280a848e"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="1cf4461c"/>
-      <xilinx:checksum xilinx:scope="parameters" xilinx:value="6abd4785"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="7458332c"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>
 </spirit:component>

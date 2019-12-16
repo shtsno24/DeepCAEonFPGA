@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'max_pooling2d_fix16'
 ================================================================
-* Date:           Mon Dec 16 17:14:31 2019
+* Date:           Mon Dec 16 19:00:15 2019
 
 * Version:        2018.3.1 (Build 2489210 on Tue Mar 26 04:40:43 MDT 2019)
 * Project:        HLS
@@ -110,8 +110,8 @@ ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%input_height_read = call i7 @_ssdm
 ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%output_width_cast3 = sext i5 %output_width_read to i6"   --->   Operation 14 'sext' 'output_width_cast3' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%output_height_cast2 = sext i5 %output_height_read to i6"   --->   Operation 15 'sext' 'output_height_cast2' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%input_width_cast = sext i6 %input_width_read to i7"   --->   Operation 16 'sext' 'input_width_cast' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 17 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecResourceLimit(i32 0, [4 x i8]* @p_str10, [1 x i8]* @p_str111, [1 x i8]* @p_str111, [1 x i8]* @p_str111) nounwind" [layers_c/max_pooling2d.cpp:12]   --->   Operation 17 'specresourcelimit' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 18 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecResourceLimit(i32 0, [4 x i8]* @p_str212, [1 x i8]* @p_str111, [1 x i8]* @p_str111, [1 x i8]* @p_str111) nounwind" [layers_c/max_pooling2d.cpp:13]   --->   Operation 18 'specresourcelimit' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecResourceLimit(i32 0, [4 x i8]* @p_str, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [layers_c/max_pooling2d.cpp:12]   --->   Operation 17 'specresourcelimit' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecResourceLimit(i32 0, [4 x i8]* @p_str2, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [layers_c/max_pooling2d.cpp:13]   --->   Operation 18 'specresourcelimit' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%tmp_cast = zext i7 %input_height_read to i9" [layers_c/max_pooling2d.cpp:26]   --->   Operation 19 'zext' 'tmp_cast' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%tmp_69_cast = zext i7 %input_width_cast to i14"   --->   Operation 20 'zext' 'tmp_69_cast' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%tmp_70_cast = zext i6 %output_height_cast2 to i8" [layers_c/max_pooling2d.cpp:32]   --->   Operation 21 'zext' 'tmp_70_cast' <Predicate = true> <Delay = 0.00>
@@ -136,7 +136,7 @@ State 3 <SV = 2> <Delay = 6.08>
 ST_3 : Operation 36 [1/1] (0.00ns)   --->   "%out_h = phi i4 [ %out_h_3, %.preheader9.loopexit ], [ 0, %.preheader9.preheader ]"   --->   Operation 36 'phi' 'out_h' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 37 [1/1] (0.00ns)   --->   "%out_h_cast = zext i4 %out_h to i5" [layers_c/max_pooling2d.cpp:19]   --->   Operation 37 'zext' 'out_h_cast' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 38 [1/1] (1.36ns)   --->   "%exitcond4 = icmp eq i5 %out_h_cast, %output_height_read" [layers_c/max_pooling2d.cpp:19]   --->   Operation 38 'icmp' 'exitcond4' <Predicate = true> <Delay = 1.36> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.42> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 39 [1/1] (0.00ns)   --->   "%empty_33 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 7, i64 14, i64 0)"   --->   Operation 39 'speclooptripcount' 'empty_33' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 39 [1/1] (0.00ns)   --->   "%empty_32 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 7, i64 14, i64 0)"   --->   Operation 39 'speclooptripcount' 'empty_32' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 40 [1/1] (1.73ns)   --->   "%out_h_3 = add i4 %out_h, 1" [layers_c/max_pooling2d.cpp:19]   --->   Operation 40 'add' 'out_h_3' <Predicate = true> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_3 : Operation 41 [1/1] (0.00ns)   --->   "br i1 %exitcond4, label %.loopexit.loopexit, label %.preheader8.preheader" [layers_c/max_pooling2d.cpp:19]   --->   Operation 41 'br' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 42 [1/1] (0.00ns)   --->   "%tmp_75_cast1 = zext i4 %out_h to i8" [layers_c/max_pooling2d.cpp:26]   --->   Operation 42 'zext' 'tmp_75_cast1' <Predicate = (!exitcond4)> <Delay = 0.00>
@@ -152,7 +152,7 @@ State 4 <SV = 3> <Delay = 1.76>
 ST_4 : Operation 50 [1/1] (0.00ns)   --->   "%out_w = phi i4 [ %out_w_3, %2 ], [ 0, %.preheader8.preheader ]"   --->   Operation 50 'phi' 'out_w' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 51 [1/1] (0.00ns)   --->   "%out_w_cast = zext i4 %out_w to i5" [layers_c/max_pooling2d.cpp:20]   --->   Operation 51 'zext' 'out_w_cast' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 52 [1/1] (1.36ns)   --->   "%exitcond3 = icmp eq i5 %out_w_cast, %output_width_read" [layers_c/max_pooling2d.cpp:20]   --->   Operation 52 'icmp' 'exitcond3' <Predicate = true> <Delay = 1.36> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.42> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_4 : Operation 53 [1/1] (0.00ns)   --->   "%empty_34 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 7, i64 14, i64 0)"   --->   Operation 53 'speclooptripcount' 'empty_34' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 53 [1/1] (0.00ns)   --->   "%empty_33 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 7, i64 14, i64 0)"   --->   Operation 53 'speclooptripcount' 'empty_33' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 54 [1/1] (1.73ns)   --->   "%out_w_3 = add i4 %out_w, 1" [layers_c/max_pooling2d.cpp:20]   --->   Operation 54 'add' 'out_w_3' <Predicate = true> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_4 : Operation 55 [1/1] (0.00ns)   --->   "br i1 %exitcond3, label %.preheader9.loopexit, label %.preheader7.preheader" [layers_c/max_pooling2d.cpp:20]   --->   Operation 55 'br' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 56 [1/1] (0.00ns)   --->   "%tmp_78_cast1 = zext i4 %out_w to i12" [layers_c/max_pooling2d.cpp:26]   --->   Operation 56 'zext' 'tmp_78_cast1' <Predicate = (!exitcond3)> <Delay = 0.00>
@@ -165,14 +165,14 @@ State 5 <SV = 4> <Delay = 7.99>
 ST_5 : Operation 61 [1/1] (0.00ns)   --->   "%in_h = phi i2 [ 0, %.preheader7.preheader ], [ %in_h_1, %.preheader7.loopexit ]"   --->   Operation 61 'phi' 'in_h' <Predicate = true> <Delay = 0.00>
 ST_5 : Operation 62 [1/1] (0.00ns)   --->   "%tmp_52 = trunc i2 %in_h to i1" [layers_c/max_pooling2d.cpp:22]   --->   Operation 62 'trunc' 'tmp_52' <Predicate = true> <Delay = 0.00>
 ST_5 : Operation 63 [1/1] (0.95ns)   --->   "%exitcond2 = icmp eq i2 %in_h, -2" [layers_c/max_pooling2d.cpp:22]   --->   Operation 63 'icmp' 'exitcond2' <Predicate = true> <Delay = 0.95> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.42> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_5 : Operation 64 [1/1] (0.00ns)   --->   "%empty_35 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 2, i64 2, i64 2)"   --->   Operation 64 'speclooptripcount' 'empty_35' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 64 [1/1] (0.00ns)   --->   "%empty_34 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 2, i64 2, i64 2)"   --->   Operation 64 'speclooptripcount' 'empty_34' <Predicate = true> <Delay = 0.00>
 ST_5 : Operation 65 [1/1] (1.56ns)   --->   "%in_h_1 = add i2 1, %in_h" [layers_c/max_pooling2d.cpp:22]   --->   Operation 65 'add' 'in_h_1' <Predicate = true> <Delay = 1.56> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_5 : Operation 66 [1/1] (0.00ns)   --->   "br i1 %exitcond2, label %2, label %.preheader.preheader" [layers_c/max_pooling2d.cpp:22]   --->   Operation 66 'br' <Predicate = true> <Delay = 0.00>
 ST_5 : Operation 67 [1/1] (0.00ns)   --->   "%tmp_82_cast = zext i2 %in_h to i9" [layers_c/max_pooling2d.cpp:22]   --->   Operation 67 'zext' 'tmp_82_cast' <Predicate = (!exitcond2)> <Delay = 0.00>
 ST_5 : Operation 68 [1/1] (1.82ns)   --->   "%tmp4 = add i9 %phi_mul, %tmp_82_cast" [layers_c/max_pooling2d.cpp:26]   --->   Operation 68 'add' 'tmp4' <Predicate = (!exitcond2)> <Delay = 1.82> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_5 : Operation 69 [1/1] (1.82ns)   --->   "%tmp = add i9 %tmp4, %tmp_76_cast" [layers_c/max_pooling2d.cpp:26]   --->   Operation 69 'add' 'tmp' <Predicate = (!exitcond2)> <Delay = 1.82> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_5 : Operation 70 [1/1] (0.00ns)   --->   "%tmp_cast_36 = zext i9 %tmp to i14" [layers_c/max_pooling2d.cpp:26]   --->   Operation 70 'zext' 'tmp_cast_36' <Predicate = (!exitcond2)> <Delay = 0.00>
-ST_5 : Operation 71 [1/1] (4.35ns)   --->   "%tmp1 = mul i14 %tmp_cast_36, %tmp_69_cast" [layers_c/max_pooling2d.cpp:26]   --->   Operation 71 'mul' 'tmp1' <Predicate = (!exitcond2)> <Delay = 4.35> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 4.35> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 70 [1/1] (0.00ns)   --->   "%tmp_cast_35 = zext i9 %tmp to i14" [layers_c/max_pooling2d.cpp:26]   --->   Operation 70 'zext' 'tmp_cast_35' <Predicate = (!exitcond2)> <Delay = 0.00>
+ST_5 : Operation 71 [1/1] (4.35ns)   --->   "%tmp1 = mul i14 %tmp_cast_35, %tmp_69_cast" [layers_c/max_pooling2d.cpp:26]   --->   Operation 71 'mul' 'tmp1' <Predicate = (!exitcond2)> <Delay = 4.35> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 4.35> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
 ST_5 : Operation 72 [1/1] (1.76ns)   --->   "br label %.preheader" [layers_c/max_pooling2d.cpp:24]   --->   Operation 72 'br' <Predicate = (!exitcond2)> <Delay = 1.76>
 ST_5 : Operation 73 [1/1] (0.00ns)   --->   "%buffer_load = load i16* %buffer" [layers_c/max_pooling2d.cpp:32]   --->   Operation 73 'load' 'buffer_load' <Predicate = (exitcond2)> <Delay = 0.00>
 ST_5 : Operation 74 [1/1] (1.54ns)   --->   "%tmp_53 = add i12 %tmp3, %tmp_78_cast1" [layers_c/max_pooling2d.cpp:32]   --->   Operation 74 'add' 'tmp_53' <Predicate = (exitcond2)> <Delay = 1.54> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
@@ -185,7 +185,7 @@ State 6 <SV = 5> <Delay = 6.87>
 ST_6 : Operation 79 [1/1] (0.00ns)   --->   "%in_w = phi i2 [ %in_w_1, %1 ], [ 0, %.preheader.preheader ]"   --->   Operation 79 'phi' 'in_w' <Predicate = true> <Delay = 0.00>
 ST_6 : Operation 80 [1/1] (0.00ns)   --->   "%tmp_55 = trunc i2 %in_w to i1" [layers_c/max_pooling2d.cpp:24]   --->   Operation 80 'trunc' 'tmp_55' <Predicate = true> <Delay = 0.00>
 ST_6 : Operation 81 [1/1] (0.95ns)   --->   "%exitcond = icmp eq i2 %in_w, -2" [layers_c/max_pooling2d.cpp:24]   --->   Operation 81 'icmp' 'exitcond' <Predicate = true> <Delay = 0.95> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.42> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_6 : Operation 82 [1/1] (0.00ns)   --->   "%empty_37 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 2, i64 2, i64 2)"   --->   Operation 82 'speclooptripcount' 'empty_37' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 82 [1/1] (0.00ns)   --->   "%empty_36 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 2, i64 2, i64 2)"   --->   Operation 82 'speclooptripcount' 'empty_36' <Predicate = true> <Delay = 0.00>
 ST_6 : Operation 83 [1/1] (1.56ns)   --->   "%in_w_1 = add i2 1, %in_w" [layers_c/max_pooling2d.cpp:24]   --->   Operation 83 'add' 'in_w_1' <Predicate = true> <Delay = 1.56> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_6 : Operation 84 [1/1] (0.00ns)   --->   "br i1 %exitcond, label %.preheader7.loopexit, label %1" [layers_c/max_pooling2d.cpp:24]   --->   Operation 84 'br' <Predicate = true> <Delay = 0.00>
 ST_6 : Operation 85 [1/1] (0.00ns)   --->   "%tmp_83_cast = zext i2 %in_w to i14" [layers_c/max_pooling2d.cpp:26]   --->   Operation 85 'zext' 'tmp_83_cast' <Predicate = (!exitcond)> <Delay = 0.00>
