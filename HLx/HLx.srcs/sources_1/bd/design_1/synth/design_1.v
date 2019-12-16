@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2018.3.1 (lin64) Build 2489853 Tue Mar 26 04:18:30 MDT 2019
-//Date        : Thu Nov 21 16:49:29 2019
+//Date        : Mon Dec 16 14:14:57 2019
 //Host        : masudalab-ubuntu running 64-bit Ubuntu 18.04.3 LTS
 //Command     : generate_target design_1.bd
 //Design      : design_1
@@ -403,10 +403,10 @@ module design_1
         .output_data_TLAST(network_0_output_data_TLAST),
         .output_data_TREADY(network_0_output_data_TREADY),
         .output_data_TVALID(network_0_output_data_TVALID),
-        .s_axi_AXILiteS_ARADDR(ps7_0_axi_periph_M02_AXI_ARADDR[3:0]),
+        .s_axi_AXILiteS_ARADDR(ps7_0_axi_periph_M02_AXI_ARADDR[4:0]),
         .s_axi_AXILiteS_ARREADY(ps7_0_axi_periph_M02_AXI_ARREADY),
         .s_axi_AXILiteS_ARVALID(ps7_0_axi_periph_M02_AXI_ARVALID),
-        .s_axi_AXILiteS_AWADDR(ps7_0_axi_periph_M02_AXI_AWADDR[3:0]),
+        .s_axi_AXILiteS_AWADDR(ps7_0_axi_periph_M02_AXI_AWADDR[4:0]),
         .s_axi_AXILiteS_AWREADY(ps7_0_axi_periph_M02_AXI_AWREADY),
         .s_axi_AXILiteS_AWVALID(ps7_0_axi_periph_M02_AXI_AWVALID),
         .s_axi_AXILiteS_BREADY(ps7_0_axi_periph_M02_AXI_BREADY),

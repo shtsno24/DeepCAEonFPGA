@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xC675669CA4F09399",
+      "boundary_crc": "0xC675669C65778E50",
       "design_src": "SBD",
       "device": "xc7z020clg400-1",
       "name": "bd_afc3",
@@ -85,7 +85,7 @@
             "value_src": "auto_prop"
           },
           "FREQ_HZ": {
-            "value": "100000000",
+            "value": "200000000",
             "value_src": "user_prop"
           },
           "HAS_BRESP": {
@@ -213,7 +213,7 @@
             "value_src": "auto_prop"
           },
           "FREQ_HZ": {
-            "value": "100000000",
+            "value": "200000000",
             "value_src": "user_prop"
           },
           "HAS_BRESP": {
@@ -341,7 +341,7 @@
             "value_src": "ip"
           },
           "FREQ_HZ": {
-            "value": "100000000",
+            "value": "200000000",
             "value_src": "user_prop"
           },
           "HAS_BRESP": {
@@ -454,7 +454,7 @@
             "value_src": "default_prop"
           },
           "FREQ_HZ": {
-            "value": "100000000",
+            "value": "200000000",
             "value_src": "user_prop"
           },
           "INSERT_VIP": {
@@ -815,10 +815,10 @@
           }
         },
         "interface_nets": {
-          "S01_SC_AR_1": {
+          "S00_SC_AW_1": {
             "interface_ports": [
-              "S01_SC_AR",
-              "ar_switchboard/S01_SC"
+              "S00_SC_AW",
+              "aw_switchboard/S00_SC"
             ]
           },
           "S00_SC_R_1": {
@@ -827,10 +827,34 @@
               "r_switchboard/S00_SC"
             ]
           },
+          "aw_switchboard_M00_SC": {
+            "interface_ports": [
+              "M00_SC_AW",
+              "aw_switchboard/M00_SC"
+            ]
+          },
+          "S01_SC_AR_1": {
+            "interface_ports": [
+              "S01_SC_AR",
+              "ar_switchboard/S01_SC"
+            ]
+          },
+          "b_switchboard_M00_SC": {
+            "interface_ports": [
+              "M00_SC_B",
+              "b_switchboard/M00_SC"
+            ]
+          },
           "S00_SC_AR_1": {
             "interface_ports": [
               "S00_SC_AR",
               "ar_switchboard/S00_SC"
+            ]
+          },
+          "r_switchboard_M01_SC": {
+            "interface_ports": [
+              "M01_SC_R",
+              "r_switchboard/M01_SC"
             ]
           },
           "r_switchboard_M00_SC": {
@@ -845,40 +869,10 @@
               "aw_switchboard/S01_SC"
             ]
           },
-          "S00_SC_W_1": {
+          "S00_SC_B_1": {
             "interface_ports": [
-              "S00_SC_W",
-              "w_switchboard/S00_SC"
-            ]
-          },
-          "aw_switchboard_M00_SC": {
-            "interface_ports": [
-              "M00_SC_AW",
-              "aw_switchboard/M00_SC"
-            ]
-          },
-          "S00_SC_AW_1": {
-            "interface_ports": [
-              "S00_SC_AW",
-              "aw_switchboard/S00_SC"
-            ]
-          },
-          "S01_SC_W_1": {
-            "interface_ports": [
-              "S01_SC_W",
-              "w_switchboard/S01_SC"
-            ]
-          },
-          "r_switchboard_M01_SC": {
-            "interface_ports": [
-              "M01_SC_R",
-              "r_switchboard/M01_SC"
-            ]
-          },
-          "ar_switchboard_M00_SC": {
-            "interface_ports": [
-              "M00_SC_AR",
-              "ar_switchboard/M00_SC"
+              "S00_SC_B",
+              "b_switchboard/S00_SC"
             ]
           },
           "b_switchboard_M01_SC": {
@@ -887,22 +881,28 @@
               "b_switchboard/M01_SC"
             ]
           },
+          "ar_switchboard_M00_SC": {
+            "interface_ports": [
+              "M00_SC_AR",
+              "ar_switchboard/M00_SC"
+            ]
+          },
+          "S00_SC_W_1": {
+            "interface_ports": [
+              "S00_SC_W",
+              "w_switchboard/S00_SC"
+            ]
+          },
+          "S01_SC_W_1": {
+            "interface_ports": [
+              "S01_SC_W",
+              "w_switchboard/S01_SC"
+            ]
+          },
           "w_switchboard_M00_SC": {
             "interface_ports": [
               "M00_SC_W",
               "w_switchboard/M00_SC"
-            ]
-          },
-          "S00_SC_B_1": {
-            "interface_ports": [
-              "S00_SC_B",
-              "b_switchboard/S00_SC"
-            ]
-          },
-          "b_switchboard_M00_SC": {
-            "interface_ports": [
-              "M00_SC_B",
-              "b_switchboard/M00_SC"
             ]
           }
         },
@@ -1153,6 +1153,18 @@
           }
         },
         "interface_nets": {
+          "s00_si_converter_M_AXI": {
+            "interface_ports": [
+              "m_axi",
+              "s00_si_converter/M_AXI"
+            ]
+          },
+          "s00_transaction_regulator_M_AXI": {
+            "interface_ports": [
+              "s00_transaction_regulator/M_AXI",
+              "s00_si_converter/S_AXI"
+            ]
+          },
           "s00_mmu_M_AXI": {
             "interface_ports": [
               "s00_mmu/M_AXI",
@@ -1163,18 +1175,6 @@
             "interface_ports": [
               "s_axi",
               "s00_mmu/S_AXI"
-            ]
-          },
-          "s00_transaction_regulator_M_AXI": {
-            "interface_ports": [
-              "s00_transaction_regulator/M_AXI",
-              "s00_si_converter/S_AXI"
-            ]
-          },
-          "s00_si_converter_M_AXI": {
-            "interface_ports": [
-              "m_axi",
-              "s00_si_converter/M_AXI"
             ]
           }
         },
@@ -1576,6 +1576,12 @@
           }
         },
         "interface_nets": {
+          "S_SC_AR_1": {
+            "interface_ports": [
+              "S_SC_AR",
+              "s00_ar_node/S_SC"
+            ]
+          },
           "s00_ar_node_M_SC": {
             "interface_ports": [
               "M_SC_AR",
@@ -1586,12 +1592,6 @@
             "interface_ports": [
               "M_SC_R",
               "s00_r_node/M_SC"
-            ]
-          },
-          "S_SC_AR_1": {
-            "interface_ports": [
-              "S_SC_AR",
-              "s00_ar_node/S_SC"
             ]
           },
           "S_SC_R_1": {
@@ -2453,6 +2453,12 @@
               "s01_aw_node/S_SC"
             ]
           },
+          "S_SC_B_1": {
+            "interface_ports": [
+              "S_SC_B",
+              "s01_b_node/S_SC"
+            ]
+          },
           "s01_w_node_M_SC": {
             "interface_ports": [
               "M_SC_W",
@@ -2469,12 +2475,6 @@
             "interface_ports": [
               "M_SC_B",
               "s01_b_node/M_SC"
-            ]
-          },
-          "S_SC_B_1": {
-            "interface_ports": [
-              "S_SC_B",
-              "s01_b_node/S_SC"
             ]
           }
         },
@@ -3587,10 +3587,10 @@
       }
     },
     "interface_nets": {
-      "s00_entry_pipeline_m_axi": {
+      "S_SC_AR_1": {
         "interface_ports": [
-          "s00_entry_pipeline/m_axi",
-          "s00_axi2sc/S_AXI"
+          "s00_nodes/S_SC_AR",
+          "s00_axi2sc/M_SC_AR"
         ]
       },
       "S_SC_R_1": {
@@ -3605,12 +3605,6 @@
           "s00_axi2sc/S_SC_R"
         ]
       },
-      "S_SC_AR_1": {
-        "interface_ports": [
-          "s00_nodes/S_SC_AR",
-          "s00_axi2sc/M_SC_AR"
-        ]
-      },
       "s00_nodes_M_SC_AR": {
         "interface_ports": [
           "s00_nodes/M_SC_AR",
@@ -3621,6 +3615,12 @@
         "interface_ports": [
           "S00_AXI",
           "s00_entry_pipeline/s_axi"
+        ]
+      },
+      "s00_entry_pipeline_m_axi": {
+        "interface_ports": [
+          "s00_entry_pipeline/m_axi",
+          "s00_axi2sc/S_AXI"
         ]
       },
       "S01_AXI_1": {
