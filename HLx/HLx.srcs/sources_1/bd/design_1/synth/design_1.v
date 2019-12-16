@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2018.3.1 (lin64) Build 2489853 Tue Mar 26 04:18:30 MDT 2019
-//Date        : Mon Dec 16 20:53:19 2019
+//Date        : Mon Dec 16 21:27:28 2019
 //Host        : masudalab-ubuntu running 64-bit Ubuntu 18.04.3 LTS
 //Command     : generate_target design_1.bd
 //Design      : design_1
@@ -83,11 +83,12 @@ module design_1
   wire axi_dma_out_M_AXI_S2MM_BREADY;
   wire [1:0]axi_dma_out_M_AXI_S2MM_BRESP;
   wire axi_dma_out_M_AXI_S2MM_BVALID;
-  wire [63:0]axi_dma_out_M_AXI_S2MM_WDATA;
+  wire [31:0]axi_dma_out_M_AXI_S2MM_WDATA;
   wire axi_dma_out_M_AXI_S2MM_WLAST;
   wire axi_dma_out_M_AXI_S2MM_WREADY;
-  wire [7:0]axi_dma_out_M_AXI_S2MM_WSTRB;
+  wire [3:0]axi_dma_out_M_AXI_S2MM_WSTRB;
   wire axi_dma_out_M_AXI_S2MM_WVALID;
+  wire axi_dma_out_s2mm_introut;
   wire [31:0]axi_smc_M00_AXI_ARADDR;
   wire [1:0]axi_smc_M00_AXI_ARBURST;
   wire [3:0]axi_smc_M00_AXI_ARCACHE;
@@ -273,6 +274,7 @@ module design_1
         .m_axi_s2mm_wready(axi_dma_out_M_AXI_S2MM_WREADY),
         .m_axi_s2mm_wstrb(axi_dma_out_M_AXI_S2MM_WSTRB),
         .m_axi_s2mm_wvalid(axi_dma_out_M_AXI_S2MM_WVALID),
+        .s2mm_introut(axi_dma_out_s2mm_introut),
         .s_axi_lite_aclk(processing_system7_0_FCLK_CLK0),
         .s_axi_lite_araddr(ps7_0_axi_periph_M00_AXI_ARADDR[9:0]),
         .s_axi_lite_arready(ps7_0_axi_periph_M00_AXI_ARREADY),
@@ -384,6 +386,7 @@ module design_1
         .DDR_WEB(DDR_we_n),
         .FCLK_CLK0(processing_system7_0_FCLK_CLK0),
         .FCLK_RESET0_N(processing_system7_0_FCLK_RESET0_N),
+        .IRQ_F2P(axi_dma_out_s2mm_introut),
         .MIO(FIXED_IO_mio[53:0]),
         .M_AXI_GP0_ACLK(processing_system7_0_FCLK_CLK0),
         .M_AXI_GP0_ARADDR(processing_system7_0_M_AXI_GP0_ARADDR),

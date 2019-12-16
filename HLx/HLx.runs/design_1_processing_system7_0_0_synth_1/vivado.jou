@@ -2,8 +2,8 @@
 # Vivado v2018.3.1 (64-bit)
 # SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
 # IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
-# Start of session at: Mon Dec 16 20:16:33 2019
-# Process ID: 24790
+# Start of session at: Mon Dec 16 21:27:50 2019
+# Process ID: 1261
 # Current directory: /home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/design_1_processing_system7_0_0_synth_1
 # Command line: vivado -log design_1_processing_system7_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_processing_system7_0_0.tcl
 # Log file: /home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/design_1_processing_system7_0_0_synth_1/design_1_processing_system7_0_0.vds
