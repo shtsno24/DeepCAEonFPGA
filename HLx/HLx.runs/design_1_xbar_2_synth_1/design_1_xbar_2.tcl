@@ -36,6 +36,7 @@ update_ip_catalog
 set_property ip_output_repo /home/masudalab/DeepCAEonFPGA/HLx/HLx.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_ip -quiet /home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_xbar_2/design_1_xbar_2.xci
+set_property used_in_implementation false [get_files -all /home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_xbar_2/design_1_xbar_2_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -45,6 +46,8 @@ read_ip -quiet /home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
+read_xdc dont_touch.xdc
+set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
 
 set cached_ip [config_ip_cache -export -no_bom -use_project_ipc -dir /home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/design_1_xbar_2_synth_1 -new_name design_1_xbar_2 -ip [get_ips design_1_xbar_2]]
