@@ -776,7 +776,7 @@ esolve_type immediate dependency {} format string minimum {} maximum {}} value {
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>e8edeff0</spirit:value>
+            <spirit:value>f0107ecb</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -792,7 +792,7 @@ esolve_type immediate dependency {} format string minimum {} maximum {}} value {
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>d87d9756</spirit:value>
+            <spirit:value>43048663</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -808,7 +808,7 @@ esolve_type immediate dependency {} format string minimum {} maximum {}} value {
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>d21be089</spirit:value>
+            <spirit:value>4239d85a</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -824,7 +824,7 @@ esolve_type immediate dependency {} format string minimum {} maximum {}} value {
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>2c56e9c7</spirit:value>
+            <spirit:value>3d45cf7a</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -838,7 +838,7 @@ esolve_type immediate dependency {} format string minimum {} maximum {}} value {
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>b5ab8c1e</spirit:value>
+            <spirit:value>a86319f1</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -874,7 +874,7 @@ esolve_type immediate dependency {} format string minimum {} maximum {}} value {
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>2a62e30b</spirit:value>
+            <spirit:value>140ad8b1</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1565,15 +1565,15 @@ esolve_type immediate dependency {} format string minimum {} maximum {}} value {
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/network_mul_mul_15s_16s_30_3_1.v</spirit:name>
+        <spirit:name>hdl/verilog/network_mul_mul_15s_16s_30_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/network_mul_mul_16s_15s_30_3_1.v</spirit:name>
+        <spirit:name>hdl/verilog/network_mul_mul_16s_15s_30_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/network_mul_mul_16s_16s_30_3_1.v</spirit:name>
+        <spirit:name>hdl/verilog/network_mul_mul_16s_16s_30_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -1781,17 +1781,17 @@ esolve_type immediate dependency {} format string minimum {} maximum {}} value {
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/network_mul_mul_15s_16s_30_3_1.v</spirit:name>
+        <spirit:name>hdl/verilog/network_mul_mul_15s_16s_30_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/network_mul_mul_16s_15s_30_3_1.v</spirit:name>
+        <spirit:name>hdl/verilog/network_mul_mul_16s_15s_30_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/network_mul_mul_16s_16s_30_3_1.v</spirit:name>
+        <spirit:name>hdl/verilog/network_mul_mul_16s_16s_30_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -2015,15 +2015,15 @@ esolve_type immediate dependency {} format string minimum {} maximum {}} value {
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/network_mul_mul_15s_16s_30_3_1.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/network_mul_mul_15s_16s_30_1_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/network_mul_mul_16s_15s_30_3_1.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/network_mul_mul_16s_15s_30_1_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/network_mul_mul_16s_16s_30_3_1.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/network_mul_mul_16s_16s_30_1_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -2117,7 +2117,7 @@ esolve_type immediate dependency {} format string minimum {} maximum {}} value {
       <spirit:file>
         <spirit:name>hdl/vhdl/network.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_eb94d409</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_5399b7dd</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -2168,17 +2168,17 @@ esolve_type immediate dependency {} format string minimum {} maximum {}} value {
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/network_mul_mul_15s_16s_30_3_1.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/network_mul_mul_15s_16s_30_1_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/network_mul_mul_16s_15s_30_3_1.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/network_mul_mul_16s_15s_30_1_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/network_mul_mul_16s_16s_30_3_1.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/network_mul_mul_16s_16s_30_1_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -2380,7 +2380,7 @@ esolve_type immediate dependency {} format string minimum {} maximum {}} value {
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>clk_period</spirit:name>
-      <spirit:value spirit:id="PARAM_VALUE.clk_period" spirit:order="2">4.4</spirit:value>
+      <spirit:value spirit:id="PARAM_VALUE.clk_period" spirit:order="2">10</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>machine</spirit:name>
@@ -2392,7 +2392,7 @@ esolve_type immediate dependency {} format string minimum {} maximum {}} value {
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>latency</spirit:name>
-      <spirit:value spirit:id="PARAM_VALUE.latency" spirit:order="5">1366529</spirit:value>
+      <spirit:value spirit:id="PARAM_VALUE.latency" spirit:order="5">701314</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>II</spirit:name>
@@ -2409,17 +2409,17 @@ esolve_type immediate dependency {} format string minimum {} maximum {}} value {
       </xilinx:taxonomies>
       <xilinx:displayName>Network</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>1912121534</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2019-12-12T06:34:56Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>1912161727</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2019-12-16T08:27:36Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2018.3.1</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="24e8016e"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="5dc19620"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="85ae3f0c"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="97e55fb4"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="280a848e"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="1cf4461c"/>
-      <xilinx:checksum xilinx:scope="parameters" xilinx:value="0db79c3a"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="6abd4785"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>
 </spirit:component>

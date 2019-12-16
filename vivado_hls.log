@@ -1,11 +1,11 @@
 INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/vivado_hls'
-INFO: [HLS 200-10] For user 'masudalab' on host 'masudalab-ubuntu' (Linux_x86_64 version 5.0.0-37-generic) on Thu Dec 12 15:34:45 JST 2019
+INFO: [HLS 200-10] For user 'masudalab' on host 'masudalab-ubuntu' (Linux_x86_64 version 5.0.0-37-generic) on Mon Dec 16 17:27:25 JST 2019
 INFO: [HLS 200-10] On os Ubuntu 18.04.3 LTS
 INFO: [HLS 200-10] In directory '/home/masudalab/DeepCAEonFPGA'
 INFO: [HLS 200-10] Opening project '/home/masudalab/DeepCAEonFPGA/HLS'.
 INFO: [HLS 200-10] Opening solution '/home/masudalab/DeepCAEonFPGA/HLS/network'.
-INFO: [SYN 201-201] Setting up clock 'default' with a period of 4.4ns.
-INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.55ns.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
 INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
 INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
 INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
@@ -25,4 +25,4 @@ source run_ippack.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2018.3/data/ip'.
-INFO: [Common 17-206] Exiting Vivado at Thu Dec 12 15:34:56 2019...
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 16 17:27:36 2019...

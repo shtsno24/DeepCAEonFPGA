@@ -5,59 +5,59 @@
 <ModuleName>network</ModuleName>
 <InstancesList>
 <Instance>
-<InstName>grp_padding2d_fix16_fu_14397</InstName>
+<InstName>grp_padding2d_fix16_fu_14399</InstName>
 <ModuleName>padding2d_fix16</ModuleName>
-<ID>14397</ID>
+<ID>14399</ID>
 </Instance>
 <Instance>
-<InstName>grp_depthwise_conv2d_fix_2_fu_14415</InstName>
+<InstName>grp_depthwise_conv2d_fix_2_fu_14417</InstName>
 <ModuleName>depthwise_conv2d_fix_2</ModuleName>
-<ID>14415</ID>
+<ID>14417</ID>
 </Instance>
 <Instance>
-<InstName>grp_depthwise_conv2d_fix_1_fu_14439</InstName>
+<InstName>grp_depthwise_conv2d_fix_1_fu_14441</InstName>
 <ModuleName>depthwise_conv2d_fix_1</ModuleName>
-<ID>14439</ID>
+<ID>14441</ID>
 </Instance>
 <Instance>
-<InstName>grp_max_pooling2d_fix16_fu_14463</InstName>
+<InstName>grp_max_pooling2d_fix16_fu_14465</InstName>
 <ModuleName>max_pooling2d_fix16</ModuleName>
-<ID>14463</ID>
+<ID>14465</ID>
 </Instance>
 <Instance>
-<InstName>grp_pointwise_conv2d_fix_3_fu_14484</InstName>
+<InstName>grp_pointwise_conv2d_fix_3_fu_14486</InstName>
 <ModuleName>pointwise_conv2d_fix_3</ModuleName>
-<ID>14484</ID>
+<ID>14486</ID>
 </Instance>
 <Instance>
-<InstName>grp_pointwise_conv2d_fix_1_fu_14494</InstName>
+<InstName>grp_pointwise_conv2d_fix_1_fu_14496</InstName>
 <ModuleName>pointwise_conv2d_fix_1</ModuleName>
-<ID>14494</ID>
+<ID>14496</ID>
 </Instance>
 <Instance>
-<InstName>grp_pointwise_conv2d_fix_2_fu_14504</InstName>
+<InstName>grp_pointwise_conv2d_fix_2_fu_14506</InstName>
 <ModuleName>pointwise_conv2d_fix_2</ModuleName>
-<ID>14504</ID>
+<ID>14506</ID>
 </Instance>
 <Instance>
-<InstName>grp_depthwise_conv2d_fix_fu_14514</InstName>
-<ModuleName>depthwise_conv2d_fix</ModuleName>
-<ID>14514</ID>
-</Instance>
-<Instance>
-<InstName>grp_pointwise_conv2d_fix_4_fu_14522</InstName>
-<ModuleName>pointwise_conv2d_fix_4</ModuleName>
-<ID>14522</ID>
-</Instance>
-<Instance>
-<InstName>grp_up_sampling2d_fix16_fu_14530</InstName>
+<InstName>grp_up_sampling2d_fix16_fu_14516</InstName>
 <ModuleName>up_sampling2d_fix16</ModuleName>
-<ID>14530</ID>
+<ID>14516</ID>
 </Instance>
 <Instance>
-<InstName>grp_pointwise_conv2d_fix_fu_14551</InstName>
+<InstName>grp_depthwise_conv2d_fix_fu_14537</InstName>
+<ModuleName>depthwise_conv2d_fix</ModuleName>
+<ID>14537</ID>
+</Instance>
+<Instance>
+<InstName>grp_pointwise_conv2d_fix_4_fu_14545</InstName>
+<ModuleName>pointwise_conv2d_fix_4</ModuleName>
+<ID>14545</ID>
+</Instance>
+<Instance>
+<InstName>grp_pointwise_conv2d_fix_fu_14553</InstName>
 <ModuleName>pointwise_conv2d_fix</ModuleName>
-<ID>14551</ID>
+<ID>14553</ID>
 </Instance>
 </InstancesList>
 </TopModule>
@@ -68,15 +68,15 @@
 <Name>padding2d_fix16</Name>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
-<TargetClockPeriod>4.40</TargetClockPeriod>
-<ClockUncertainty>1.27</ClockUncertainty>
-<EstimatedClockPeriod>3.740</EstimatedClockPeriod>
+<TargetClockPeriod>10.00</TargetClockPeriod>
+<ClockUncertainty>1.25</ClockUncertainty>
+<EstimatedClockPeriod>6.508</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>211</Best-caseLatency>
+<Best-caseLatency>157</Best-caseLatency>
 <Average-caseLatency>undef</Average-caseLatency>
-<Worst-caseLatency>40918</Worst-caseLatency>
-<PipelineInitiationInterval>211 ~ 40918</PipelineInitiationInterval>
+<Worst-caseLatency>28354</Worst-caseLatency>
+<PipelineInitiationInterval>157 ~ 28354</PipelineInitiationInterval>
 <PipelineType>none</PipelineType>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
@@ -88,14 +88,14 @@
 <max>16</max>
 </range>
 </TripCount>
-<Latency>205 ~ 40912</Latency>
+<Latency>155 ~ 28352</Latency>
 <IterationLatency>
 <range>
-<min>205</min>
-<max>2557</max>
+<min>155</min>
+<max>1772</max>
 </range>
 </IterationLatency>
-<PipelineDepth>205 ~ 2557</PipelineDepth>
+<PipelineDepth>155 ~ 1772</PipelineDepth>
 <Loop1.1>
 <Name>Loop 1.1</Name>
 <TripCount>
@@ -116,14 +116,14 @@
 <max>28</max>
 </range>
 </TripCount>
-<Latency>182 ~ 2492</Latency>
+<Latency>133 ~ 1708</Latency>
 <IterationLatency>
 <range>
-<min>26</min>
-<max>89</max>
+<min>19</min>
+<max>61</max>
 </range>
 </IterationLatency>
-<PipelineDepth>26 ~ 89</PipelineDepth>
+<PipelineDepth>19 ~ 61</PipelineDepth>
 <Loop1.2.1>
 <Name>Loop 1.2.1</Name>
 <TripCount>
@@ -132,9 +132,9 @@
 <max>28</max>
 </range>
 </TripCount>
-<Latency>21 ~ 84</Latency>
-<IterationLatency>3</IterationLatency>
-<PipelineDepth>3</PipelineDepth>
+<Latency>14 ~ 56</Latency>
+<IterationLatency>2</IterationLatency>
+<PipelineDepth>2</PipelineDepth>
 </Loop1.2.1>
 <Loop1.2.2>
 <Name>Loop 1.2.2</Name>
@@ -162,8 +162,8 @@
 <AreaEstimates>
 <Resources>
 <DSP48E>0</DSP48E>
-<FF>551</FF>
-<LUT>980</LUT>
+<FF>457</FF>
+<LUT>962</LUT>
 <BRAM_18K>0</BRAM_18K>
 </Resources>
 </AreaEstimates>
@@ -350,42 +350,42 @@
 <Name>depthwise_conv2d_fix</Name>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
-<TargetClockPeriod>4.40</TargetClockPeriod>
-<ClockUncertainty>1.27</ClockUncertainty>
-<EstimatedClockPeriod>3.890</EstimatedClockPeriod>
+<TargetClockPeriod>10.00</TargetClockPeriod>
+<ClockUncertainty>1.25</ClockUncertainty>
+<EstimatedClockPeriod>6.673</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>65913</Best-caseLatency>
-<Average-caseLatency>65913</Average-caseLatency>
-<Worst-caseLatency>65913</Worst-caseLatency>
-<PipelineInitiationInterval>65913</PipelineInitiationInterval>
+<Best-caseLatency>34553</Best-caseLatency>
+<Average-caseLatency>34553</Average-caseLatency>
+<Worst-caseLatency>34553</Worst-caseLatency>
+<PipelineInitiationInterval>34553</PipelineInitiationInterval>
 <PipelineType>none</PipelineType>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <Loop1>
 <Name>Loop 1</Name>
 <TripCount>28</TripCount>
-<Latency>65912</Latency>
-<IterationLatency>2354</IterationLatency>
-<PipelineDepth>2354</PipelineDepth>
+<Latency>34552</Latency>
+<IterationLatency>1234</IterationLatency>
+<PipelineDepth>1234</PipelineDepth>
 <Loop1.1>
 <Name>Loop 1.1</Name>
 <TripCount>28</TripCount>
-<Latency>2352</Latency>
-<IterationLatency>84</IterationLatency>
-<PipelineDepth>84</PipelineDepth>
+<Latency>1232</Latency>
+<IterationLatency>44</IterationLatency>
+<PipelineDepth>44</PipelineDepth>
 <Loop1.1.1>
 <Name>Loop 1.1.1</Name>
 <TripCount>3</TripCount>
-<Latency>81</Latency>
-<IterationLatency>27</IterationLatency>
-<PipelineDepth>27</PipelineDepth>
+<Latency>42</Latency>
+<IterationLatency>14</IterationLatency>
+<PipelineDepth>14</PipelineDepth>
 <Loop1.1.1.1>
 <Name>Loop 1.1.1.1</Name>
 <TripCount>3</TripCount>
-<Latency>24</Latency>
-<IterationLatency>8</IterationLatency>
-<PipelineDepth>8</PipelineDepth>
+<Latency>12</Latency>
+<IterationLatency>4</IterationLatency>
+<PipelineDepth>4</PipelineDepth>
 </Loop1.1.1.1>
 </Loop1.1.1>
 </Loop1.1>
@@ -396,8 +396,8 @@
 <Resources>
 <BRAM_18K>0</BRAM_18K>
 <DSP48E>1</DSP48E>
-<FF>216</FF>
-<LUT>342</LUT>
+<FF>159</FF>
+<LUT>324</LUT>
 </Resources>
 </AreaEstimates>
 <InterfaceSummary>
@@ -550,36 +550,36 @@
 <Name>pointwise_conv2d_fix</Name>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
-<TargetClockPeriod>4.40</TargetClockPeriod>
-<ClockUncertainty>1.27</ClockUncertainty>
-<EstimatedClockPeriod>3.890</EstimatedClockPeriod>
+<TargetClockPeriod>10.00</TargetClockPeriod>
+<ClockUncertainty>1.25</ClockUncertainty>
+<EstimatedClockPeriod>6.380</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>101297</Best-caseLatency>
-<Average-caseLatency>101297</Average-caseLatency>
-<Worst-caseLatency>101297</Worst-caseLatency>
-<PipelineInitiationInterval>101297</PipelineInitiationInterval>
+<Best-caseLatency>51121</Best-caseLatency>
+<Average-caseLatency>51121</Average-caseLatency>
+<Worst-caseLatency>51121</Worst-caseLatency>
+<PipelineInitiationInterval>51121</PipelineInitiationInterval>
 <PipelineType>none</PipelineType>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <Loop1>
 <Name>Loop 1</Name>
 <TripCount>16</TripCount>
-<Latency>101296</Latency>
-<IterationLatency>6331</IterationLatency>
-<PipelineDepth>6331</PipelineDepth>
+<Latency>51120</Latency>
+<IterationLatency>3195</IterationLatency>
+<PipelineDepth>3195</PipelineDepth>
 <Loop1.1>
 <Name>Loop 1.1</Name>
 <TripCount>28</TripCount>
-<Latency>6328</Latency>
-<IterationLatency>226</IterationLatency>
-<PipelineDepth>226</PipelineDepth>
+<Latency>3192</Latency>
+<IterationLatency>114</IterationLatency>
+<PipelineDepth>114</PipelineDepth>
 <Loop1.1.1>
 <Name>Loop 1.1.1</Name>
 <TripCount>28</TripCount>
-<Latency>224</Latency>
-<IterationLatency>8</IterationLatency>
-<PipelineDepth>8</PipelineDepth>
+<Latency>112</Latency>
+<IterationLatency>4</IterationLatency>
+<PipelineDepth>4</PipelineDepth>
 </Loop1.1.1>
 </Loop1.1>
 </Loop1>
@@ -589,8 +589,8 @@
 <Resources>
 <BRAM_18K>0</BRAM_18K>
 <DSP48E>1</DSP48E>
-<FF>254</FF>
-<LUT>282</LUT>
+<FF>210</FF>
+<LUT>270</LUT>
 </Resources>
 </AreaEstimates>
 <InterfaceSummary>
@@ -743,15 +743,15 @@
 <Name>max_pooling2d_fix16</Name>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
-<TargetClockPeriod>4.40</TargetClockPeriod>
-<ClockUncertainty>1.27</ClockUncertainty>
-<EstimatedClockPeriod>4.350</EstimatedClockPeriod>
+<TargetClockPeriod>10.00</TargetClockPeriod>
+<ClockUncertainty>1.25</ClockUncertainty>
+<EstimatedClockPeriod>7.996</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>13905</Best-caseLatency>
+<Best-caseLatency>5617</Best-caseLatency>
 <Average-caseLatency>undef</Average-caseLatency>
-<Worst-caseLatency>110465</Worst-caseLatency>
-<PipelineInitiationInterval>13905 ~ 110465</PipelineInitiationInterval>
+<Worst-caseLatency>44385</Worst-caseLatency>
+<PipelineInitiationInterval>5617 ~ 44385</PipelineInitiationInterval>
 <PipelineType>none</PipelineType>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
@@ -763,14 +763,14 @@
 <max>16</max>
 </range>
 </TripCount>
-<Latency>13904 ~ 110464</Latency>
+<Latency>5616 ~ 44384</Latency>
 <IterationLatency>
 <range>
-<min>1738</min>
-<max>6904</max>
+<min>702</min>
+<max>2774</max>
 </range>
 </IterationLatency>
-<PipelineDepth>1738 ~ 6904</PipelineDepth>
+<PipelineDepth>702 ~ 2774</PipelineDepth>
 <Loop1.1>
 <Name>Loop 1.1</Name>
 <TripCount>
@@ -779,14 +779,14 @@
 <max>14</max>
 </range>
 </TripCount>
-<Latency>1736 ~ 6902</Latency>
+<Latency>700 ~ 2772</Latency>
 <IterationLatency>
 <range>
-<min>248</min>
-<max>493</max>
+<min>100</min>
+<max>198</max>
 </range>
 </IterationLatency>
-<PipelineDepth>248 ~ 493</PipelineDepth>
+<PipelineDepth>100 ~ 198</PipelineDepth>
 <Loop1.1.1>
 <Name>Loop 1.1.1</Name>
 <TripCount>
@@ -795,21 +795,21 @@
 <max>14</max>
 </range>
 </TripCount>
-<Latency>245 ~ 490</Latency>
-<IterationLatency>35</IterationLatency>
-<PipelineDepth>35</PipelineDepth>
+<Latency>98 ~ 196</Latency>
+<IterationLatency>14</IterationLatency>
+<PipelineDepth>14</PipelineDepth>
 <Loop1.1.1.1>
 <Name>Loop 1.1.1.1</Name>
-<TripCount>2</TripCount>
-<Latency>32</Latency>
-<IterationLatency>16</IterationLatency>
-<PipelineDepth>16</PipelineDepth>
-<Loop1.1.1.1.1>
-<Name>Loop 1.1.1.1.1</Name>
 <TripCount>2</TripCount>
 <Latency>12</Latency>
 <IterationLatency>6</IterationLatency>
 <PipelineDepth>6</PipelineDepth>
+<Loop1.1.1.1.1>
+<Name>Loop 1.1.1.1.1</Name>
+<TripCount>2</TripCount>
+<Latency>4</Latency>
+<IterationLatency>2</IterationLatency>
+<PipelineDepth>2</PipelineDepth>
 </Loop1.1.1.1.1>
 </Loop1.1.1.1>
 </Loop1.1.1>
@@ -820,8 +820,8 @@
 <AreaEstimates>
 <Resources>
 <DSP48E>0</DSP48E>
-<FF>248</FF>
-<LUT>492</LUT>
+<FF>157</FF>
+<LUT>468</LUT>
 <BRAM_18K>0</BRAM_18K>
 </Resources>
 </AreaEstimates>
@@ -1030,29 +1030,29 @@
 <Name>depthwise_conv2d_fix_2</Name>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
-<TargetClockPeriod>4.40</TargetClockPeriod>
-<ClockUncertainty>1.27</ClockUncertainty>
-<EstimatedClockPeriod>4.350</EstimatedClockPeriod>
+<TargetClockPeriod>10.00</TargetClockPeriod>
+<ClockUncertainty>1.25</ClockUncertainty>
+<EstimatedClockPeriod>7.953</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>279809</Best-caseLatency>
+<Best-caseLatency>141601</Best-caseLatency>
 <Average-caseLatency>undef</Average-caseLatency>
-<Worst-caseLatency>1117793</Worst-caseLatency>
-<PipelineInitiationInterval>279809 ~ 1117793</PipelineInitiationInterval>
+<Worst-caseLatency>565409</Worst-caseLatency>
+<PipelineInitiationInterval>141601 ~ 565409</PipelineInitiationInterval>
 <PipelineType>none</PipelineType>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <Loop1>
 <Name>Loop 1</Name>
 <TripCount>16</TripCount>
-<Latency>279808 ~ 1117792</Latency>
+<Latency>141600 ~ 565408</Latency>
 <IterationLatency>
 <range>
-<min>17488</min>
-<max>69862</max>
+<min>8850</min>
+<max>35338</max>
 </range>
 </IterationLatency>
-<PipelineDepth>17488 ~ 69862</PipelineDepth>
+<PipelineDepth>8850 ~ 35338</PipelineDepth>
 <Loop1.1>
 <Name>Loop 1.1</Name>
 <TripCount>
@@ -1061,14 +1061,14 @@
 <max>28</max>
 </range>
 </TripCount>
-<Latency>17486 ~ 69860</Latency>
+<Latency>8848 ~ 35336</Latency>
 <IterationLatency>
 <range>
-<min>1249</min>
-<max>2495</max>
+<min>632</min>
+<max>1262</max>
 </range>
 </IterationLatency>
-<PipelineDepth>1249 ~ 2495</PipelineDepth>
+<PipelineDepth>632 ~ 1262</PipelineDepth>
 <Loop1.1.1>
 <Name>Loop 1.1.1</Name>
 <TripCount>
@@ -1077,21 +1077,21 @@
 <max>28</max>
 </range>
 </TripCount>
-<Latency>1246 ~ 2492</Latency>
-<IterationLatency>89</IterationLatency>
-<PipelineDepth>89</PipelineDepth>
+<Latency>630 ~ 1260</Latency>
+<IterationLatency>45</IterationLatency>
+<PipelineDepth>45</PipelineDepth>
 <Loop1.1.1.1>
 <Name>Loop 1.1.1.1</Name>
 <TripCount>3</TripCount>
-<Latency>84</Latency>
-<IterationLatency>28</IterationLatency>
-<PipelineDepth>28</PipelineDepth>
+<Latency>42</Latency>
+<IterationLatency>14</IterationLatency>
+<PipelineDepth>14</PipelineDepth>
 <Loop1.1.1.1.1>
 <Name>Loop 1.1.1.1.1</Name>
 <TripCount>3</TripCount>
-<Latency>24</Latency>
-<IterationLatency>8</IterationLatency>
-<PipelineDepth>8</PipelineDepth>
+<Latency>12</Latency>
+<IterationLatency>4</IterationLatency>
+<PipelineDepth>4</PipelineDepth>
 </Loop1.1.1.1.1>
 </Loop1.1.1.1>
 </Loop1.1.1>
@@ -1102,8 +1102,8 @@
 <AreaEstimates>
 <Resources>
 <DSP48E>1</DSP48E>
-<FF>354</FF>
-<LUT>605</LUT>
+<FF>240</FF>
+<LUT>558</LUT>
 <BRAM_18K>0</BRAM_18K>
 </Resources>
 </AreaEstimates>
@@ -1367,42 +1367,42 @@
 <Name>pointwise_conv2d_fix_1</Name>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
-<TargetClockPeriod>4.40</TargetClockPeriod>
-<ClockUncertainty>1.27</ClockUncertainty>
-<EstimatedClockPeriod>3.890</EstimatedClockPeriod>
+<TargetClockPeriod>10.00</TargetClockPeriod>
+<ClockUncertainty>1.25</ClockUncertainty>
+<EstimatedClockPeriod>6.716</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>182137</Best-caseLatency>
-<Average-caseLatency>182137</Average-caseLatency>
-<Worst-caseLatency>182137</Worst-caseLatency>
-<PipelineInitiationInterval>182137</PipelineInitiationInterval>
+<Best-caseLatency>103737</Best-caseLatency>
+<Average-caseLatency>103737</Average-caseLatency>
+<Worst-caseLatency>103737</Worst-caseLatency>
+<PipelineInitiationInterval>103737</PipelineInitiationInterval>
 <PipelineType>none</PipelineType>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <Loop1>
 <Name>Loop 1</Name>
 <TripCount>8</TripCount>
-<Latency>182136</Latency>
-<IterationLatency>22767</IterationLatency>
-<PipelineDepth>22767</PipelineDepth>
+<Latency>103736</Latency>
+<IterationLatency>12967</IterationLatency>
+<PipelineDepth>12967</PipelineDepth>
 <Loop1.1>
 <Name>Loop 1.1</Name>
 <TripCount>14</TripCount>
-<Latency>22764</Latency>
-<IterationLatency>1626</IterationLatency>
-<PipelineDepth>1626</PipelineDepth>
+<Latency>12964</Latency>
+<IterationLatency>926</IterationLatency>
+<PipelineDepth>926</PipelineDepth>
 <Loop1.1.1>
 <Name>Loop 1.1.1</Name>
 <TripCount>14</TripCount>
-<Latency>1624</Latency>
-<IterationLatency>116</IterationLatency>
-<PipelineDepth>116</PipelineDepth>
+<Latency>924</Latency>
+<IterationLatency>66</IterationLatency>
+<PipelineDepth>66</PipelineDepth>
 <Loop1.1.1.1>
 <Name>Loop 1.1.1.1</Name>
 <TripCount>16</TripCount>
-<Latency>112</Latency>
-<IterationLatency>7</IterationLatency>
-<PipelineDepth>7</PipelineDepth>
+<Latency>64</Latency>
+<IterationLatency>4</IterationLatency>
+<PipelineDepth>4</PipelineDepth>
 </Loop1.1.1.1>
 </Loop1.1.1>
 </Loop1.1>
@@ -1413,8 +1413,8 @@
 <Resources>
 <BRAM_18K>1</BRAM_18K>
 <DSP48E>1</DSP48E>
-<FF>286</FF>
-<LUT>370</LUT>
+<FF>226</FF>
+<LUT>355</LUT>
 </Resources>
 </AreaEstimates>
 <InterfaceSummary>
@@ -1567,29 +1567,29 @@
 <Name>depthwise_conv2d_fix_1</Name>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
-<TargetClockPeriod>4.40</TargetClockPeriod>
-<ClockUncertainty>1.27</ClockUncertainty>
-<EstimatedClockPeriod>3.890</EstimatedClockPeriod>
+<TargetClockPeriod>10.00</TargetClockPeriod>
+<ClockUncertainty>1.25</ClockUncertainty>
+<EstimatedClockPeriod>7.345</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>35073</Best-caseLatency>
+<Best-caseLatency>17769</Best-caseLatency>
 <Average-caseLatency>undef</Average-caseLatency>
-<Worst-caseLatency>139905</Worst-caseLatency>
-<PipelineInitiationInterval>35073 ~ 139905</PipelineInitiationInterval>
+<Worst-caseLatency>70801</Worst-caseLatency>
+<PipelineInitiationInterval>17769 ~ 70801</PipelineInitiationInterval>
 <PipelineType>none</PipelineType>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <Loop1>
 <Name>Loop 1</Name>
 <TripCount>8</TripCount>
-<Latency>35072 ~ 139904</Latency>
+<Latency>17768 ~ 70800</Latency>
 <IterationLatency>
 <range>
-<min>4384</min>
-<max>17488</max>
+<min>2221</min>
+<max>8850</max>
 </range>
 </IterationLatency>
-<PipelineDepth>4384 ~ 17488</PipelineDepth>
+<PipelineDepth>2221 ~ 8850</PipelineDepth>
 <Loop1.1>
 <Name>Loop 1.1</Name>
 <TripCount>
@@ -1598,14 +1598,14 @@
 <max>14</max>
 </range>
 </TripCount>
-<Latency>4382 ~ 17486</Latency>
+<Latency>2219 ~ 8848</Latency>
 <IterationLatency>
 <range>
-<min>626</min>
-<max>1249</max>
+<min>317</min>
+<max>632</max>
 </range>
 </IterationLatency>
-<PipelineDepth>626 ~ 1249</PipelineDepth>
+<PipelineDepth>317 ~ 632</PipelineDepth>
 <Loop1.1.1>
 <Name>Loop 1.1.1</Name>
 <TripCount>
@@ -1614,21 +1614,21 @@
 <max>14</max>
 </range>
 </TripCount>
-<Latency>623 ~ 1246</Latency>
-<IterationLatency>89</IterationLatency>
-<PipelineDepth>89</PipelineDepth>
+<Latency>315 ~ 630</Latency>
+<IterationLatency>45</IterationLatency>
+<PipelineDepth>45</PipelineDepth>
 <Loop1.1.1.1>
 <Name>Loop 1.1.1.1</Name>
 <TripCount>3</TripCount>
-<Latency>84</Latency>
-<IterationLatency>28</IterationLatency>
-<PipelineDepth>28</PipelineDepth>
+<Latency>42</Latency>
+<IterationLatency>14</IterationLatency>
+<PipelineDepth>14</PipelineDepth>
 <Loop1.1.1.1.1>
 <Name>Loop 1.1.1.1.1</Name>
 <TripCount>3</TripCount>
-<Latency>24</Latency>
-<IterationLatency>8</IterationLatency>
-<PipelineDepth>8</PipelineDepth>
+<Latency>12</Latency>
+<IterationLatency>4</IterationLatency>
+<PipelineDepth>4</PipelineDepth>
 </Loop1.1.1.1.1>
 </Loop1.1.1.1>
 </Loop1.1.1>
@@ -1639,8 +1639,8 @@
 <AreaEstimates>
 <Resources>
 <DSP48E>1</DSP48E>
-<FF>312</FF>
-<LUT>545</LUT>
+<FF>212</FF>
+<LUT>498</LUT>
 <BRAM_18K>0</BRAM_18K>
 </Resources>
 </AreaEstimates>
@@ -1904,42 +1904,42 @@
 <Name>pointwise_conv2d_fix_2</Name>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
-<TargetClockPeriod>4.40</TargetClockPeriod>
-<ClockUncertainty>1.27</ClockUncertainty>
-<EstimatedClockPeriod>3.890</EstimatedClockPeriod>
+<TargetClockPeriod>10.00</TargetClockPeriod>
+<ClockUncertainty>1.25</ClockUncertainty>
+<EstimatedClockPeriod>6.947</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>26793</Best-caseLatency>
-<Average-caseLatency>26793</Average-caseLatency>
-<Worst-caseLatency>26793</Worst-caseLatency>
-<PipelineInitiationInterval>26793</PipelineInitiationInterval>
+<Best-caseLatency>13465</Best-caseLatency>
+<Average-caseLatency>13465</Average-caseLatency>
+<Worst-caseLatency>13465</Worst-caseLatency>
+<PipelineInitiationInterval>13465</PipelineInitiationInterval>
 <PipelineType>none</PipelineType>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <Loop1>
 <Name>Loop 1</Name>
 <TripCount>8</TripCount>
-<Latency>26792</Latency>
-<IterationLatency>3349</IterationLatency>
-<PipelineDepth>3349</PipelineDepth>
+<Latency>13464</Latency>
+<IterationLatency>1683</IterationLatency>
+<PipelineDepth>1683</PipelineDepth>
 <Loop1.1>
 <Name>Loop 1.1</Name>
 <TripCount>7</TripCount>
-<Latency>3346</Latency>
-<IterationLatency>478</IterationLatency>
-<PipelineDepth>478</PipelineDepth>
+<Latency>1680</Latency>
+<IterationLatency>240</IterationLatency>
+<PipelineDepth>240</PipelineDepth>
 <Loop1.1.1>
 <Name>Loop 1.1.1</Name>
 <TripCount>7</TripCount>
-<Latency>476</Latency>
-<IterationLatency>68</IterationLatency>
-<PipelineDepth>68</PipelineDepth>
+<Latency>238</Latency>
+<IterationLatency>34</IterationLatency>
+<PipelineDepth>34</PipelineDepth>
 <Loop1.1.1.1>
 <Name>Loop 1.1.1.1</Name>
 <TripCount>8</TripCount>
-<Latency>64</Latency>
-<IterationLatency>8</IterationLatency>
-<PipelineDepth>8</PipelineDepth>
+<Latency>32</Latency>
+<IterationLatency>4</IterationLatency>
+<PipelineDepth>4</PipelineDepth>
 </Loop1.1.1.1>
 </Loop1.1.1>
 </Loop1.1>
@@ -1950,8 +1950,8 @@
 <Resources>
 <BRAM_18K>0</BRAM_18K>
 <DSP48E>1</DSP48E>
-<FF>280</FF>
-<LUT>391</LUT>
+<FF>218</FF>
+<LUT>373</LUT>
 </Resources>
 </AreaEstimates>
 <InterfaceSummary>
@@ -2104,15 +2104,15 @@
 <Name>up_sampling2d_fix16</Name>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
-<TargetClockPeriod>4.40</TargetClockPeriod>
-<ClockUncertainty>1.27</ClockUncertainty>
-<EstimatedClockPeriod>4.350</EstimatedClockPeriod>
+<TargetClockPeriod>10.00</TargetClockPeriod>
+<ClockUncertainty>1.25</ClockUncertainty>
+<EstimatedClockPeriod>6.508</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>6625</Best-caseLatency>
+<Best-caseLatency>3377</Best-caseLatency>
 <Average-caseLatency>undef</Average-caseLatency>
-<Worst-caseLatency>51553</Worst-caseLatency>
-<PipelineInitiationInterval>6625 ~ 51553</PipelineInitiationInterval>
+<Worst-caseLatency>26017</Worst-caseLatency>
+<PipelineInitiationInterval>3377 ~ 26017</PipelineInitiationInterval>
 <PipelineType>none</PipelineType>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
@@ -2124,14 +2124,14 @@
 <max>16</max>
 </range>
 </TripCount>
-<Latency>6624 ~ 51552</Latency>
+<Latency>3376 ~ 26016</Latency>
 <IterationLatency>
 <range>
-<min>828</min>
-<max>3222</max>
+<min>422</min>
+<max>1626</max>
 </range>
 </IterationLatency>
-<PipelineDepth>828 ~ 3222</PipelineDepth>
+<PipelineDepth>422 ~ 1626</PipelineDepth>
 <Loop1.1>
 <Name>Loop 1.1</Name>
 <TripCount>
@@ -2140,14 +2140,14 @@
 <max>28</max>
 </range>
 </TripCount>
-<Latency>826 ~ 3220</Latency>
+<Latency>420 ~ 1624</Latency>
 <IterationLatency>
 <range>
-<min>59</min>
-<max>115</max>
+<min>30</min>
+<max>58</max>
 </range>
 </IterationLatency>
-<PipelineDepth>59 ~ 115</PipelineDepth>
+<PipelineDepth>30 ~ 58</PipelineDepth>
 <Loop1.1.1>
 <Name>Loop 1.1.1</Name>
 <TripCount>
@@ -2156,9 +2156,9 @@
 <max>28</max>
 </range>
 </TripCount>
-<Latency>56 ~ 112</Latency>
-<IterationLatency>4</IterationLatency>
-<PipelineDepth>4</PipelineDepth>
+<Latency>28 ~ 56</Latency>
+<IterationLatency>2</IterationLatency>
+<PipelineDepth>2</PipelineDepth>
 </Loop1.1.1>
 </Loop1.1>
 </Loop1>
@@ -2167,8 +2167,8 @@
 <AreaEstimates>
 <Resources>
 <DSP48E>0</DSP48E>
-<FF>179</FF>
-<LUT>350</LUT>
+<FF>131</FF>
+<LUT>339</LUT>
 <BRAM_18K>0</BRAM_18K>
 </Resources>
 </AreaEstimates>
@@ -2377,42 +2377,42 @@
 <Name>pointwise_conv2d_fix_3</Name>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
-<TargetClockPeriod>4.40</TargetClockPeriod>
-<ClockUncertainty>1.27</ClockUncertainty>
-<EstimatedClockPeriod>3.890</EstimatedClockPeriod>
+<TargetClockPeriod>10.00</TargetClockPeriod>
+<ClockUncertainty>1.25</ClockUncertainty>
+<EstimatedClockPeriod>6.624</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>213745</Best-caseLatency>
-<Average-caseLatency>213745</Average-caseLatency>
-<Worst-caseLatency>213745</Worst-caseLatency>
-<PipelineInitiationInterval>213745</PipelineInitiationInterval>
+<Best-caseLatency>107121</Best-caseLatency>
+<Average-caseLatency>107121</Average-caseLatency>
+<Worst-caseLatency>107121</Worst-caseLatency>
+<PipelineInitiationInterval>107121</PipelineInitiationInterval>
 <PipelineType>none</PipelineType>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <Loop1>
 <Name>Loop 1</Name>
 <TripCount>16</TripCount>
-<Latency>213744</Latency>
-<IterationLatency>13359</IterationLatency>
-<PipelineDepth>13359</PipelineDepth>
+<Latency>107120</Latency>
+<IterationLatency>6695</IterationLatency>
+<PipelineDepth>6695</PipelineDepth>
 <Loop1.1>
 <Name>Loop 1.1</Name>
 <TripCount>14</TripCount>
-<Latency>13356</Latency>
-<IterationLatency>954</IterationLatency>
-<PipelineDepth>954</PipelineDepth>
+<Latency>6692</Latency>
+<IterationLatency>478</IterationLatency>
+<PipelineDepth>478</PipelineDepth>
 <Loop1.1.1>
 <Name>Loop 1.1.1</Name>
 <TripCount>14</TripCount>
-<Latency>952</Latency>
-<IterationLatency>68</IterationLatency>
-<PipelineDepth>68</PipelineDepth>
+<Latency>476</Latency>
+<IterationLatency>34</IterationLatency>
+<PipelineDepth>34</PipelineDepth>
 <Loop1.1.1.1>
 <Name>Loop 1.1.1.1</Name>
 <TripCount>8</TripCount>
-<Latency>64</Latency>
-<IterationLatency>8</IterationLatency>
-<PipelineDepth>8</PipelineDepth>
+<Latency>32</Latency>
+<IterationLatency>4</IterationLatency>
+<PipelineDepth>4</PipelineDepth>
 </Loop1.1.1.1>
 </Loop1.1.1>
 </Loop1.1>
@@ -2423,8 +2423,8 @@
 <Resources>
 <BRAM_18K>1</BRAM_18K>
 <DSP48E>1</DSP48E>
-<FF>301</FF>
-<LUT>376</LUT>
+<FF>229</FF>
+<LUT>358</LUT>
 </Resources>
 </AreaEstimates>
 <InterfaceSummary>
@@ -2577,36 +2577,36 @@
 <Name>pointwise_conv2d_fix_4</Name>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
-<TargetClockPeriod>4.40</TargetClockPeriod>
-<ClockUncertainty>1.27</ClockUncertainty>
-<EstimatedClockPeriod>3.890</EstimatedClockPeriod>
+<TargetClockPeriod>10.00</TargetClockPeriod>
+<ClockUncertainty>1.25</ClockUncertainty>
+<EstimatedClockPeriod>6.878</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>102761</Best-caseLatency>
-<Average-caseLatency>102761</Average-caseLatency>
-<Worst-caseLatency>102761</Worst-caseLatency>
-<PipelineInitiationInterval>102761</PipelineInitiationInterval>
+<Best-caseLatency>51801</Best-caseLatency>
+<Average-caseLatency>51801</Average-caseLatency>
+<Worst-caseLatency>51801</Worst-caseLatency>
+<PipelineInitiationInterval>51801</PipelineInitiationInterval>
 <PipelineType>none</PipelineType>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <Loop1>
 <Name>Loop 1</Name>
 <TripCount>28</TripCount>
-<Latency>102760</Latency>
-<IterationLatency>3670</IterationLatency>
-<PipelineDepth>3670</PipelineDepth>
+<Latency>51800</Latency>
+<IterationLatency>1850</IterationLatency>
+<PipelineDepth>1850</PipelineDepth>
 <Loop1.1>
 <Name>Loop 1.1</Name>
 <TripCount>28</TripCount>
-<Latency>3668</Latency>
-<IterationLatency>131</IterationLatency>
-<PipelineDepth>131</PipelineDepth>
+<Latency>1848</Latency>
+<IterationLatency>66</IterationLatency>
+<PipelineDepth>66</PipelineDepth>
 <Loop1.1.1>
 <Name>Loop 1.1.1</Name>
 <TripCount>16</TripCount>
-<Latency>128</Latency>
-<IterationLatency>8</IterationLatency>
-<PipelineDepth>8</PipelineDepth>
+<Latency>64</Latency>
+<IterationLatency>4</IterationLatency>
+<PipelineDepth>4</PipelineDepth>
 </Loop1.1.1>
 </Loop1.1>
 </Loop1>
@@ -2616,8 +2616,8 @@
 <Resources>
 <BRAM_18K>0</BRAM_18K>
 <DSP48E>1</DSP48E>
-<FF>238</FF>
-<LUT>306</LUT>
+<FF>175</FF>
+<LUT>291</LUT>
 </Resources>
 </AreaEstimates>
 <InterfaceSummary>
@@ -2770,15 +2770,15 @@
 <Name>network</Name>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
-<TargetClockPeriod>4.40</TargetClockPeriod>
-<ClockUncertainty>1.27</ClockUncertainty>
-<EstimatedClockPeriod>4.350</EstimatedClockPeriod>
+<TargetClockPeriod>10.00</TargetClockPeriod>
+<ClockUncertainty>1.25</ClockUncertainty>
+<EstimatedClockPeriod>8.570</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>1366529</Best-caseLatency>
+<Best-caseLatency>701314</Best-caseLatency>
 <Average-caseLatency>undef</Average-caseLatency>
-<Worst-caseLatency>3738672</Worst-caseLatency>
-<PipelineInitiationInterval>1366530 ~ 3738673</PipelineInitiationInterval>
+<Worst-caseLatency>1918795</Worst-caseLatency>
+<PipelineInitiationInterval>701315 ~ 1918796</PipelineInitiationInterval>
 <PipelineType>none</PipelineType>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
@@ -2802,8 +2802,8 @@
 <Resources>
 <BRAM_18K>39</BRAM_18K>
 <DSP48E>8</DSP48E>
-<FF>4019</FF>
-<LUT>15116</LUT>
+<FF>3181</FF>
+<LUT>14869</LUT>
 </Resources>
 </AreaEstimates>
 <InterfaceSummary>

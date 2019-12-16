@@ -89,7 +89,7 @@ set RtlHierarchyInfo {[
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "35073", "EstimateLatencyMax" : "139905",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "17769", "EstimateLatencyMax" : "70801",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -105,25 +105,25 @@ set RtlHierarchyInfo {[
 			{"Name" : "output_r", "Type" : "Memory", "Direction" : "O"},
 			{"Name" : "bias", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "kernel_0", "Type" : "Memory", "Direction" : "I"}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mul_mul_16s_16s_30_3_1_U39", "Parent" : "0"}]}
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mul_mul_16s_16s_30_1_1_U39", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {
 	depthwise_conv2d_fix_1 {
 		input_height {Type I LastRead 0 FirstWrite -1}
 		input_width {Type I LastRead 0 FirstWrite -1}
-		input_r {Type I LastRead 12 FirstWrite -1}
+		input_r {Type I LastRead 6 FirstWrite -1}
 		output_height {Type I LastRead 0 FirstWrite -1}
 		output_width {Type I LastRead 0 FirstWrite -1}
-		output_r {Type O LastRead -1 FirstWrite 8}
-		bias {Type I LastRead 4 FirstWrite -1}
-		kernel_0 {Type I LastRead 12 FirstWrite -1}}}
+		output_r {Type O LastRead -1 FirstWrite 5}
+		bias {Type I LastRead 3 FirstWrite -1}
+		kernel_0 {Type I LastRead 6 FirstWrite -1}}}
 
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "35073", "Max" : "139905"}
-	, {"Name" : "Interval", "Min" : "35073", "Max" : "139905"}
+	{"Name" : "Latency", "Min" : "17769", "Max" : "70801"}
+	, {"Name" : "Interval", "Min" : "17769", "Max" : "70801"}
 ]}
 
 set PipelineEnableSignalInfo {[

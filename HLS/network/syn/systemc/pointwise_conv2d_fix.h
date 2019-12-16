@@ -11,7 +11,7 @@
 #include "systemc.h"
 #include "AESL_pkg.h"
 
-#include "network_mul_mul_15s_16s_30_3_1.h"
+#include "network_mul_mul_15s_16s_30_1_1.h"
 #include "pointwise_conv2d_fix_SeparableConv2D_0_b_s.h"
 #include "pointwise_conv2d_fix_SeparableConv2D_0_w_s.h"
 
@@ -32,7 +32,6 @@ struct pointwise_conv2d_fix : public sc_module {
     sc_out< sc_logic > output_r_ce0;
     sc_out< sc_logic > output_r_we0;
     sc_out< sc_lv<16> > output_r_d0;
-    sc_signal< sc_logic > ap_var_for_const0;
 
 
     // Module declarations
@@ -45,8 +44,8 @@ struct pointwise_conv2d_fix : public sc_module {
 
     pointwise_conv2d_fix_SeparableConv2D_0_b_s* SeparableConv2D_0_b_s_U;
     pointwise_conv2d_fix_SeparableConv2D_0_w_s* SeparableConv2D_0_w_s_U;
-    network_mul_mul_15s_16s_30_3_1<1,3,15,16,30>* network_mul_mul_15s_16s_30_3_1_U11;
-    sc_signal< sc_lv<12> > ap_CS_fsm;
+    network_mul_mul_15s_16s_30_1_1<1,1,15,16,30>* network_mul_mul_15s_16s_30_1_1_U11;
+    sc_signal< sc_lv<8> > ap_CS_fsm;
     sc_signal< sc_logic > ap_CS_fsm_state1;
     sc_signal< sc_lv<4> > SeparableConv2D_0_b_s_address0;
     sc_signal< sc_logic > SeparableConv2D_0_b_s_ce0;
@@ -55,80 +54,70 @@ struct pointwise_conv2d_fix : public sc_module {
     sc_signal< sc_logic > SeparableConv2D_0_w_s_ce0;
     sc_signal< sc_lv<15> > SeparableConv2D_0_w_s_q0;
     sc_signal< sc_lv<15> > phi_mul_cast_fu_142_p1;
-    sc_signal< sc_lv<15> > phi_mul_cast_reg_319;
+    sc_signal< sc_lv<15> > phi_mul_cast_reg_322;
     sc_signal< sc_logic > ap_CS_fsm_state2;
     sc_signal< sc_lv<14> > next_mul_fu_146_p2;
-    sc_signal< sc_lv<14> > next_mul_reg_324;
+    sc_signal< sc_lv<14> > next_mul_reg_327;
     sc_signal< sc_lv<5> > out_d_2_fu_158_p2;
-    sc_signal< sc_lv<5> > out_d_2_reg_332;
+    sc_signal< sc_lv<5> > out_d_2_reg_335;
     sc_signal< sc_lv<1> > exitcond3_fu_152_p2;
     sc_signal< sc_lv<30> > tmp_32_cast_fu_178_p1;
-    sc_signal< sc_lv<30> > tmp_32_cast_reg_347;
+    sc_signal< sc_lv<30> > tmp_32_cast_reg_350;
     sc_signal< sc_logic > ap_CS_fsm_state3;
     sc_signal< sc_lv<16> > tmp_24_fu_182_p1;
-    sc_signal< sc_lv<16> > tmp_24_reg_352;
+    sc_signal< sc_lv<16> > tmp_24_reg_355;
     sc_signal< sc_lv<5> > out_h_2_fu_192_p2;
-    sc_signal< sc_lv<5> > out_h_2_reg_360;
+    sc_signal< sc_lv<5> > out_h_2_reg_363;
     sc_signal< sc_logic > ap_CS_fsm_state4;
     sc_signal< sc_lv<11> > tmp_7_fu_222_p2;
-    sc_signal< sc_lv<11> > tmp_7_reg_365;
+    sc_signal< sc_lv<11> > tmp_7_reg_368;
     sc_signal< sc_lv<1> > exitcond2_fu_186_p2;
     sc_signal< sc_lv<5> > out_w_2_fu_234_p2;
-    sc_signal< sc_lv<5> > out_w_2_reg_373;
+    sc_signal< sc_lv<5> > out_w_2_reg_376;
     sc_signal< sc_logic > ap_CS_fsm_state5;
-    sc_signal< sc_lv<11> > tmp_11_fu_244_p2;
-    sc_signal< sc_lv<11> > tmp_11_reg_378;
     sc_signal< sc_lv<1> > exitcond1_fu_228_p2;
+    sc_signal< sc_lv<15> > tmp_9_fu_262_p2;
+    sc_signal< sc_lv<15> > tmp_9_reg_386;
+    sc_signal< sc_lv<16> > input_load_reg_391;
     sc_signal< sc_logic > ap_CS_fsm_state6;
-    sc_signal< sc_lv<15> > tmp_9_fu_260_p2;
-    sc_signal< sc_lv<15> > tmp_9_reg_389;
-    sc_signal< sc_lv<16> > input_load_reg_394;
+    sc_signal< sc_lv<16> > tmp_17_reg_396;
     sc_signal< sc_logic > ap_CS_fsm_state7;
-    sc_signal< sc_logic > ap_CS_fsm_state8;
-    sc_signal< sc_lv<30> > grp_fu_314_p2;
-    sc_signal< sc_lv<30> > tmp_15_reg_404;
-    sc_signal< sc_logic > ap_CS_fsm_state10;
-    sc_signal< sc_lv<15> > buffer_1_fu_294_p3;
-    sc_signal< sc_lv<15> > buffer_1_reg_409;
-    sc_signal< sc_logic > ap_CS_fsm_state11;
     sc_signal< sc_lv<5> > out_d_reg_98;
     sc_signal< sc_lv<14> > phi_mul_reg_109;
     sc_signal< sc_lv<5> > out_h_reg_120;
     sc_signal< sc_lv<5> > out_w_reg_131;
-    sc_signal< sc_logic > ap_CS_fsm_state12;
+    sc_signal< sc_logic > ap_CS_fsm_state8;
     sc_signal< sc_lv<64> > tmp_s_fu_164_p1;
     sc_signal< sc_lv<64> > tmp_14_fu_173_p1;
-    sc_signal< sc_lv<64> > tmp_12_fu_252_p1;
-    sc_signal< sc_lv<64> > tmp_10_fu_309_p1;
+    sc_signal< sc_lv<64> > tmp_12_fu_253_p1;
+    sc_signal< sc_lv<64> > tmp_10_fu_311_p1;
     sc_signal< sc_lv<4> > tmp_fu_169_p1;
     sc_signal< sc_lv<10> > p_shl_fu_198_p3;
     sc_signal< sc_lv<7> > p_shl1_fu_210_p3;
     sc_signal< sc_lv<11> > p_shl_cast_fu_206_p1;
     sc_signal< sc_lv<11> > p_shl1_cast_fu_218_p1;
     sc_signal< sc_lv<11> > tmp_19_cast4_fu_240_p1;
+    sc_signal< sc_lv<11> > tmp_11_fu_244_p2;
     sc_signal< sc_lv<32> > tmp_27_cast_fu_249_p1;
-    sc_signal< sc_lv<15> > tmp1_cast_fu_257_p1;
-    sc_signal< sc_lv<16> > tmp_17_fu_268_p4;
-    sc_signal< sc_lv<16> > buffer_3_fu_277_p2;
-    sc_signal< sc_lv<1> > tmp_27_fu_286_p3;
-    sc_signal< sc_lv<15> > tmp_26_fu_282_p1;
-    sc_signal< sc_lv<32> > tmp_22_cast_fu_306_p1;
-    sc_signal< sc_lv<15> > grp_fu_314_p0;
-    sc_signal< sc_lv<12> > ap_NS_fsm;
+    sc_signal< sc_lv<15> > tmp1_cast_fu_258_p1;
+    sc_signal< sc_lv<30> > tmp_15_fu_316_p2;
+    sc_signal< sc_lv<16> > buffer_3_fu_279_p2;
+    sc_signal< sc_lv<1> > tmp_27_fu_287_p3;
+    sc_signal< sc_lv<15> > tmp_26_fu_283_p1;
+    sc_signal< sc_lv<15> > buffer_1_fu_295_p3;
+    sc_signal< sc_lv<32> > tmp_22_cast_fu_308_p1;
+    sc_signal< sc_lv<15> > tmp_15_fu_316_p0;
+    sc_signal< sc_lv<8> > ap_NS_fsm;
     static const sc_logic ap_const_logic_1;
     static const sc_logic ap_const_logic_0;
-    static const sc_lv<12> ap_ST_fsm_state1;
-    static const sc_lv<12> ap_ST_fsm_state2;
-    static const sc_lv<12> ap_ST_fsm_state3;
-    static const sc_lv<12> ap_ST_fsm_state4;
-    static const sc_lv<12> ap_ST_fsm_state5;
-    static const sc_lv<12> ap_ST_fsm_state6;
-    static const sc_lv<12> ap_ST_fsm_state7;
-    static const sc_lv<12> ap_ST_fsm_state8;
-    static const sc_lv<12> ap_ST_fsm_state9;
-    static const sc_lv<12> ap_ST_fsm_state10;
-    static const sc_lv<12> ap_ST_fsm_state11;
-    static const sc_lv<12> ap_ST_fsm_state12;
+    static const sc_lv<8> ap_ST_fsm_state1;
+    static const sc_lv<8> ap_ST_fsm_state2;
+    static const sc_lv<8> ap_ST_fsm_state3;
+    static const sc_lv<8> ap_ST_fsm_state4;
+    static const sc_lv<8> ap_ST_fsm_state5;
+    static const sc_lv<8> ap_ST_fsm_state6;
+    static const sc_lv<8> ap_ST_fsm_state7;
+    static const sc_lv<8> ap_ST_fsm_state8;
     static const sc_lv<32> ap_const_lv32_0;
     static const sc_lv<32> ap_const_lv32_1;
     static const sc_lv<1> ap_const_lv1_0;
@@ -137,13 +126,10 @@ struct pointwise_conv2d_fix : public sc_module {
     static const sc_lv<32> ap_const_lv32_4;
     static const sc_lv<32> ap_const_lv32_5;
     static const sc_lv<32> ap_const_lv32_6;
-    static const sc_lv<32> ap_const_lv32_7;
-    static const sc_lv<32> ap_const_lv32_9;
-    static const sc_lv<32> ap_const_lv32_A;
     static const sc_lv<5> ap_const_lv5_0;
     static const sc_lv<1> ap_const_lv1_1;
     static const sc_lv<14> ap_const_lv14_0;
-    static const sc_lv<32> ap_const_lv32_B;
+    static const sc_lv<32> ap_const_lv32_7;
     static const sc_lv<14> ap_const_lv14_310;
     static const sc_lv<5> ap_const_lv5_10;
     static const sc_lv<5> ap_const_lv5_1;
@@ -155,16 +141,12 @@ struct pointwise_conv2d_fix : public sc_module {
     static const sc_lv<15> ap_const_lv15_0;
     static const bool ap_const_boolean_1;
     // Thread declarations
-    void thread_ap_var_for_const0();
     void thread_ap_clk_no_reset_();
     void thread_SeparableConv2D_0_b_s_address0();
     void thread_SeparableConv2D_0_b_s_ce0();
     void thread_SeparableConv2D_0_w_s_address0();
     void thread_SeparableConv2D_0_w_s_ce0();
     void thread_ap_CS_fsm_state1();
-    void thread_ap_CS_fsm_state10();
-    void thread_ap_CS_fsm_state11();
-    void thread_ap_CS_fsm_state12();
     void thread_ap_CS_fsm_state2();
     void thread_ap_CS_fsm_state3();
     void thread_ap_CS_fsm_state4();
@@ -175,12 +157,11 @@ struct pointwise_conv2d_fix : public sc_module {
     void thread_ap_done();
     void thread_ap_idle();
     void thread_ap_ready();
-    void thread_buffer_1_fu_294_p3();
-    void thread_buffer_3_fu_277_p2();
+    void thread_buffer_1_fu_295_p3();
+    void thread_buffer_3_fu_279_p2();
     void thread_exitcond1_fu_228_p2();
     void thread_exitcond2_fu_186_p2();
     void thread_exitcond3_fu_152_p2();
-    void thread_grp_fu_314_p0();
     void thread_input_r_address0();
     void thread_input_r_ce0();
     void thread_next_mul_fu_146_p2();
@@ -196,21 +177,21 @@ struct pointwise_conv2d_fix : public sc_module {
     void thread_p_shl_cast_fu_206_p1();
     void thread_p_shl_fu_198_p3();
     void thread_phi_mul_cast_fu_142_p1();
-    void thread_tmp1_cast_fu_257_p1();
-    void thread_tmp_10_fu_309_p1();
+    void thread_tmp1_cast_fu_258_p1();
+    void thread_tmp_10_fu_311_p1();
     void thread_tmp_11_fu_244_p2();
-    void thread_tmp_12_fu_252_p1();
+    void thread_tmp_12_fu_253_p1();
     void thread_tmp_14_fu_173_p1();
-    void thread_tmp_17_fu_268_p4();
+    void thread_tmp_15_fu_316_p0();
     void thread_tmp_19_cast4_fu_240_p1();
-    void thread_tmp_22_cast_fu_306_p1();
+    void thread_tmp_22_cast_fu_308_p1();
     void thread_tmp_24_fu_182_p1();
-    void thread_tmp_26_fu_282_p1();
+    void thread_tmp_26_fu_283_p1();
     void thread_tmp_27_cast_fu_249_p1();
-    void thread_tmp_27_fu_286_p3();
+    void thread_tmp_27_fu_287_p3();
     void thread_tmp_32_cast_fu_178_p1();
     void thread_tmp_7_fu_222_p2();
-    void thread_tmp_9_fu_260_p2();
+    void thread_tmp_9_fu_262_p2();
     void thread_tmp_fu_169_p1();
     void thread_tmp_s_fu_164_p1();
     void thread_ap_NS_fsm();

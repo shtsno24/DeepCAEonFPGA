@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3.1 (lin64) Build 2489853 Tue Mar 26 04:18:30 MDT 2019
-| Date         : Mon Dec 16 14:23:53 2019
+| Date         : Mon Dec 16 17:37:19 2019
 | Host         : masudalab-ubuntu running 64-bit Ubuntu 18.04.3 LTS
 | Command      : report_utilization -file design_1_network_0_0_utilization_synth.rpt -pb design_1_network_0_0_utilization_synth.pb
 | Design       : design_1_network_0_0
@@ -30,11 +30,11 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             | 3179 |     0 |     53200 |  5.98 |
-|   LUT as Logic          | 3179 |     0 |     53200 |  5.98 |
+| Slice LUTs*             | 2964 |     0 |     53200 |  5.57 |
+|   LUT as Logic          | 2964 |     0 |     53200 |  5.57 |
 |   LUT as Memory         |    0 |     0 |     17400 |  0.00 |
-| Slice Registers         | 2810 |     0 |    106400 |  2.64 |
-|   Register as Flip Flop | 2810 |     0 |    106400 |  2.64 |
+| Slice Registers         | 2213 |     0 |    106400 |  2.08 |
+|   Register as Flip Flop | 2213 |     0 |    106400 |  2.08 |
 |   Register as Latch     |    0 |     0 |    106400 |  0.00 |
 | F7 Muxes                |   18 |     0 |     26600 |  0.07 |
 | F8 Muxes                |    0 |     0 |     13300 |  0.00 |
@@ -57,7 +57,7 @@ Table of Contents
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
 | 20    |          Yes |         Set |            - |
-| 2790  |          Yes |       Reset |            - |
+| 2193  |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -149,14 +149,14 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDRE     | 2790 |        Flop & Latch |
-| LUT6     | 1303 |                 LUT |
-| LUT2     |  759 |                 LUT |
-| LUT4     |  649 |                 LUT |
-| LUT5     |  482 |                 LUT |
-| LUT3     |  480 |                 LUT |
-| CARRY4   |  252 |          CarryLogic |
-| LUT1     |   92 |                 LUT |
+| FDRE     | 2193 |        Flop & Latch |
+| LUT6     | 1269 |                 LUT |
+| LUT4     |  643 |                 LUT |
+| LUT2     |  592 |                 LUT |
+| LUT5     |  498 |                 LUT |
+| LUT3     |  494 |                 LUT |
+| CARRY4   |  242 |          CarryLogic |
+| LUT1     |  103 |                 LUT |
 | FDSE     |   20 |        Flop & Latch |
 | MUXF7    |   18 |               MuxFx |
 | RAMB36E1 |   16 |        Block Memory |

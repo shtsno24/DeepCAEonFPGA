@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'up_sampling2d_fix16'" level="0">
-<item name = "Date">Thu Dec 12 12:28:21 2019
+<item name = "Date">Mon Dec 16 17:14:51 2019
 </item>
 <item name = "Version">2018.3.1 (Build 2489210 on Tue Mar 26 04:40:43 MDT 2019)</item>
 <item name = "Project">HLS</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">4.40, 4.350, 1.27</column>
+<column name="ap_clk">10.00, 6.508, 1.25</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">6625, 51553, 6625, 51553, none</column>
+<column name="">3377, 26017, 3377, 26017, none</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,9 +35,9 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- Loop 1">6624, 51552, 828 ~ 3222, -, -, 8 ~ 16, no</column>
-<column name=" + Loop 1.1">826, 3220, 59 ~ 115, -, -, 14 ~ 28, no</column>
-<column name="  ++ Loop 1.1.1">56, 112, 4, -, -, 14 ~ 28, no</column>
+<column name="- Loop 1">3376, 26016, 422 ~ 1626, -, -, 8 ~ 16, no</column>
+<column name=" + Loop 1.1">420, 1624, 30 ~ 58, -, -, 14 ~ 28, no</column>
+<column name="  ++ Loop 1.1.1">28, 56, 2, -, -, 14 ~ 28, no</column>
 </table>
 </item>
 </section>
@@ -54,8 +54,8 @@
 <column name="FIFO">-, -, -, -</column>
 <column name="Instance">-, -, -, -</column>
 <column name="Memory">-, -, -, -</column>
-<column name="Multiplexer">-, -, -, 89</column>
-<column name="Register">-, -, 179, -</column>
+<column name="Multiplexer">-, -, -, 78</column>
+<column name="Register">-, -, 131, -</column>
 <specialColumn name="Available">280, 220, 106400, 53200</specialColumn>
 <specialColumn name="Utilization (%)">0, 0, ~0, ~0</specialColumn>
 </table>
@@ -80,56 +80,52 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="tmp1_cast_fu_246_p2">*, 0, 0, 41, 8, 5</column>
-<column name="tmp3_fu_254_p2">*, 0, 0, 51, 9, 6</column>
-<column name="next_mul3_fu_173_p2">+, 0, 0, 15, 9, 9</column>
-<column name="next_mul_fu_178_p2">+, 0, 0, 15, 8, 8</column>
-<column name="out_d_1_fu_192_p2">+, 0, 0, 15, 5, 1</column>
-<column name="out_h_1_fu_207_p2">+, 0, 0, 15, 5, 1</column>
-<column name="out_w_1_fu_268_p2">+, 0, 0, 15, 5, 1</column>
-<column name="tmp2_fu_237_p2">+, 0, 0, 15, 9, 9</column>
-<column name="tmp_4_fu_297_p2">+, 0, 0, 19, 14, 14</column>
-<column name="tmp_fu_231_p2">+, 0, 0, 15, 8, 8</column>
-<column name="tmp_s_fu_288_p2">+, 0, 0, 12, 12, 12</column>
-<column name="exitcond2_fu_202_p2">icmp, 0, 0, 11, 6, 6</column>
-<column name="exitcond3_fu_187_p2">icmp, 0, 0, 11, 6, 6</column>
-<column name="exitcond_fu_263_p2">icmp, 0, 0, 11, 6, 6</column>
+<column name="tmp1_cast_fu_242_p2">*, 0, 0, 41, 8, 5</column>
+<column name="tmp3_fu_257_p2">*, 0, 0, 51, 9, 6</column>
+<column name="next_mul3_fu_174_p2">+, 0, 0, 15, 9, 9</column>
+<column name="next_mul_fu_179_p2">+, 0, 0, 15, 8, 8</column>
+<column name="out_d_1_fu_193_p2">+, 0, 0, 15, 5, 1</column>
+<column name="out_h_1_fu_208_p2">+, 0, 0, 15, 5, 1</column>
+<column name="out_w_1_fu_271_p2">+, 0, 0, 15, 5, 1</column>
+<column name="tmp2_fu_247_p2">+, 0, 0, 15, 9, 9</column>
+<column name="tmp_4_fu_305_p2">+, 0, 0, 19, 14, 14</column>
+<column name="tmp_fu_232_p2">+, 0, 0, 15, 8, 8</column>
+<column name="tmp_s_fu_291_p2">+, 0, 0, 12, 12, 12</column>
+<column name="exitcond2_fu_203_p2">icmp, 0, 0, 11, 6, 6</column>
+<column name="exitcond3_fu_188_p2">icmp, 0, 0, 11, 6, 6</column>
+<column name="exitcond_fu_266_p2">icmp, 0, 0, 11, 6, 6</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
-<column name="ap_NS_fsm">44, 9, 1, 9</column>
-<column name="out_d_reg_100">9, 2, 5, 10</column>
-<column name="out_h_reg_135">9, 2, 5, 10</column>
-<column name="out_w_reg_146">9, 2, 5, 10</column>
-<column name="phi_mul2_reg_123">9, 2, 9, 18</column>
-<column name="phi_mul_reg_111">9, 2, 8, 16</column>
+<column name="ap_NS_fsm">33, 6, 1, 6</column>
+<column name="out_d_reg_101">9, 2, 5, 10</column>
+<column name="out_h_reg_136">9, 2, 5, 10</column>
+<column name="out_w_reg_147">9, 2, 5, 10</column>
+<column name="phi_mul2_reg_124">9, 2, 9, 18</column>
+<column name="phi_mul_reg_112">9, 2, 8, 16</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="ap_CS_fsm">8, 0, 8, 0</column>
-<column name="input_load_reg_414">16, 0, 16, 0</column>
-<column name="next_mul3_reg_345">9, 0, 9, 0</column>
-<column name="next_mul_reg_350">8, 0, 8, 0</column>
-<column name="out_d_1_reg_358">5, 0, 5, 0</column>
-<column name="out_d_reg_100">5, 0, 5, 0</column>
-<column name="out_h_1_reg_366">5, 0, 5, 0</column>
-<column name="out_h_reg_135">5, 0, 5, 0</column>
-<column name="out_w_1_reg_394">5, 0, 5, 0</column>
-<column name="out_w_reg_146">5, 0, 5, 0</column>
-<column name="phi_mul2_reg_123">9, 0, 9, 0</column>
-<column name="phi_mul_reg_111">8, 0, 8, 0</column>
-<column name="tmp1_cast_reg_381">12, 0, 12, 0</column>
-<column name="tmp2_reg_376">9, 0, 9, 0</column>
-<column name="tmp3_reg_386">14, 0, 14, 0</column>
-<column name="tmp_1_cast_reg_325">5, 0, 8, 3</column>
-<column name="tmp_2_reg_340">5, 0, 12, 7</column>
-<column name="tmp_3_cast_reg_330">6, 0, 9, 3</column>
-<column name="tmp_4_cast_reg_335">6, 0, 14, 8</column>
-<column name="tmp_4_reg_404">14, 0, 14, 0</column>
-<column name="tmp_reg_371">8, 0, 8, 0</column>
-<column name="tmp_s_reg_399">12, 0, 12, 0</column>
+<column name="ap_CS_fsm">5, 0, 5, 0</column>
+<column name="next_mul3_reg_349">9, 0, 9, 0</column>
+<column name="next_mul_reg_354">8, 0, 8, 0</column>
+<column name="out_d_1_reg_362">5, 0, 5, 0</column>
+<column name="out_d_reg_101">5, 0, 5, 0</column>
+<column name="out_h_1_reg_370">5, 0, 5, 0</column>
+<column name="out_h_reg_136">5, 0, 5, 0</column>
+<column name="out_w_1_reg_388">5, 0, 5, 0</column>
+<column name="out_w_reg_147">5, 0, 5, 0</column>
+<column name="phi_mul2_reg_124">9, 0, 9, 0</column>
+<column name="phi_mul_reg_112">8, 0, 8, 0</column>
+<column name="tmp1_cast_reg_375">12, 0, 12, 0</column>
+<column name="tmp3_reg_380">14, 0, 14, 0</column>
+<column name="tmp_1_cast_reg_329">5, 0, 8, 3</column>
+<column name="tmp_2_reg_344">5, 0, 12, 7</column>
+<column name="tmp_3_cast_reg_334">6, 0, 9, 3</column>
+<column name="tmp_4_cast_reg_339">6, 0, 14, 8</column>
+<column name="tmp_4_reg_398">14, 0, 14, 0</column>
 </table>
 </item>
 </section>

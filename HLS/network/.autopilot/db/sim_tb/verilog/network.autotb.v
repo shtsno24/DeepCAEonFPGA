@@ -1,5 +1,5 @@
 // ==============================================================
-// File generated on Thu Dec 12 12:30:22 JST 2019
+// File generated on Mon Dec 16 17:16:59 JST 2019
 // Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3.1 (64-bit)
 // SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
 // IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
@@ -15,7 +15,7 @@
 `define AUTOTB_PER_RESULT_TRANS_FILE "network.performance.result.transaction.xml"
 `define AUTOTB_TOP_INST AESL_inst_apatb_network_top
 `define AUTOTB_MAX_ALLOW_LATENCY  15000000
-`define AUTOTB_CLOCK_PERIOD_DIV2 2.20
+`define AUTOTB_CLOCK_PERIOD_DIV2 5.00
 
 `define AESL_DEPTH_input_data_V_data_V 1
 `define AESL_DEPTH_input_data_V_keep_V 1
@@ -79,7 +79,7 @@ module `AUTOTB_TOP;
 
 parameter AUTOTB_TRANSACTION_NUM = 1;
 parameter PROGRESS_TIMEOUT = 10000000;
-parameter LATENCY_ESTIMATION = 3738672;
+parameter LATENCY_ESTIMATION = 1918795;
 parameter LENGTH_input_data_V_data_V = 784;
 parameter LENGTH_input_data_V_keep_V = 784;
 parameter LENGTH_input_data_V_strb_V = 784;

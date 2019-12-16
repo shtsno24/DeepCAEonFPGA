@@ -1,8 +1,8 @@
-INFO-FLOW: Workspace /home/masudalab/DeepCAEonFPGA/HLS/network opened at Thu Dec 12 12:26:53 JST 2019
-Execute     config_clock -quiet -name default -period 4.4 -default=false 
-INFO: [SYN 201-201] Setting up clock 'default' with a period of 4.4ns.
-Execute     config_clock -quiet -name default -uncertainty 0.55 -unit % 
-INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.55ns.
+INFO-FLOW: Workspace /home/masudalab/DeepCAEonFPGA/HLS/network opened at Mon Dec 16 17:13:25 JST 2019
+Execute     config_clock -quiet -name default -period 10 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     config_clock -quiet -name default -uncertainty 1.25 -unit % 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
 Execute     open_platform DefaultPlatform 
 Execute     import_lib /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq 
 Execute       source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.lib 
@@ -49,21 +49,10 @@ Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/ip
 Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
 Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
 Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Command         ap_source done; 0.11 sec.
 Execute         source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
-Execute     open_platform DefaultPlatform 
-Execute     import_lib /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6 
-Execute       source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv7.lib 
-Execute         source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_hp.lib 
-Execute       source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv.hlp 
-Execute         source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute             source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute             source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute       source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_hp.hlp 
-Execute     source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
-Execute       source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+Command       ap_source done; 0.11 sec.
+Command     ap_source done; 0.11 sec.
 Execute     set_part xc7z020clg400-1 
 Execute       add_library xilinx/zynq/zynq:xc7z020:clg400:-1 
 Execute         get_default_platform 
@@ -93,16 +82,16 @@ Execute       get_default_platform
 Execute     get_default_platform 
 Execute     config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
 Execute     config_chip_info -quiet -speed slow 
-Execute     config_compile -no_signed_zeros=0 
+Execute     config_compile -no_signed_zeros=false 
 INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
-Execute     config_compile -unsafe_math_optimizations=0 
+Execute     config_compile -unsafe_math_optimizations=false 
 INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
 INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
 INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
 Execute     config_schedule -effort=medium 
-Execute     config_schedule -enable_dsp_full_reg=0 
-Execute     config_schedule -relax_ii_for_timing=0 
-Execute     config_schedule -verbose=0 
+Execute     config_schedule -enable_dsp_full_reg=false 
+Execute     config_schedule -relax_ii_for_timing=false 
+Execute     config_schedule -verbose=false 
 Execute     config_bind -effort=medium 
 Execute     config_export -format=ip_catalog 
 Execute     config_export -rtl=verilog 
@@ -140,7 +129,7 @@ Execute       get_config_interface -m_axi_addr64
 Execute       send_msg_by_id INFO @200-435@%s%s 'config_sdx -target' set_clock_uncertainty default 
 INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
 Execute       set_clock_uncertainty default 
-Command   open_solution done; 0.21 sec.
+Command   open_solution done; 0.22 sec.
 Execute   set_part xc7z020clg400-1 
 Execute     add_library xilinx/zynq/zynq:xc7z020:clg400:-1 
 Execute       get_default_platform 
@@ -166,13 +155,9 @@ Execute         source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq
 Execute       source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
 Execute         source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
 Execute     get_default_platform 
-Execute   create_clock -period 4.4 -name default 
-Execute   config_compile -no_signed_zeros=0 -unsafe_math_optimizations=0 
-INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
-INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
-INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
-INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
-Execute   config_schedule -effort medium -enable_dsp_full_reg=0 -relax_ii_for_timing=0 -verbose=0 
+Execute   create_clock -period 100MHz -name default 
+Execute   config_compile 
+Execute   config_schedule -effort medium -relax_ii_for_timing=0 
 Execute   config_bind -effort medium 
 Execute   config_export -format ip_catalog -rtl verilog -use_netlist none -vivado_impl_strategy default -vivado_phys_opt place -vivado_report_level 0 -vivado_synth_design_args -directive sdx_optimization_effort_high -vivado_synth_strategy default 
 Execute   config_sdx -optimization_level none -target none 
@@ -193,10 +178,7 @@ Execute     get_config_interface -m_axi_addr64
 Execute     send_msg_by_id INFO @200-435@%s%s 'config_sdx -target' set_clock_uncertainty default 
 INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
 Execute     set_clock_uncertainty default 
-Execute   set_clock_uncertainty 28.8% 
-Execute     get_clock_period -default -name=default 
-Execute     config_clock -quiet -name default -uncertainty 1.267 -unit % 
-INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.267ns.
+Execute   set_clock_uncertainty 12.5% 
 Execute   source ./HLS/network/directives.tcl 
 Execute     set_directive_unroll conv2d_fix16/conv2d_fix16_label3 
 INFO-FLOW: Setting directive 'UNROLL' 
@@ -226,15 +208,14 @@ INFO-FLOW: Running: GCC PP
 INFO-FLOW: Source preprocessing
 Execute       clang  -fno-limit-debug-info -gcc-toolchain "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc" -hls  -fno-exceptions  -D__llvm__  -E "layers_c/up_sampling2d.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/tools/Xilinx/Vivado/2018.3/common/technology/autopilot" -I "/tools/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "/home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/up_sampling2d.pp.0.cpp" 
 INFO-FLOW: exec /tools/Xilinx/Vivado/2018.3/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc -hls -fno-exceptions -D__llvm__ -E layers_c/up_sampling2d.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /tools/Xilinx/Vivado/2018.3/common/technology/autopilot -I /tools/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/up_sampling2d.pp.0.cpp
-Command       clang done; 1.72 sec.
+Command       clang done; 1.32 sec.
 Execute       tidy_31 xilinx-xfmat-array-geometry /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/up_sampling2d.pp.0.cpp std=gnu++98 
 INFO-FLOW: exec /tools/Xilinx/Vivado/2018.3/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/up_sampling2d.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
-Command       tidy_31 done; 0.63 sec.
 INFO-FLOW: Syntax Checking before pre-processing...
 Execute       clang -syntaxcheck -src /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/up_sampling2d.pp.0.cpp  -fno-limit-debug-info -gcc-toolchain "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/tools/Xilinx/Vivado/2018.3/common/technology/autopilot" -I "/tools/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  "/home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/up_sampling2d.pp.0.cpp"  -o "/home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/useless.bc"  
 INFO-FLOW: exec /tools/Xilinx/Vivado/2018.3/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /tools/Xilinx/Vivado/2018.3/common/technology/autopilot -I /tools/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/up_sampling2d.pp.0.cpp -o /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/useless.bc
-Command       clang done; 1.49 sec.
-INFO-FLOW: Done: GCC PP time: 3.8 seconds per iteration
+Command       clang done; 1.3 sec.
+INFO-FLOW: Done: GCC PP time: 2.6 seconds per iteration
 INFO-FLOW: Setting directive 'UNROLL' 
 INFO-FLOW: Setting directive 'UNROLL' 
 Execute       list_core -type functional_unit 
@@ -245,13 +226,10 @@ Execute       tidy_31 xilinx-directive2pragma /home/masudalab/DeepCAEonFPGA/HLS/
 INFO-FLOW: exec /tools/Xilinx/Vivado/2018.3/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-directive2pragma -import-directive=/home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/all.directive.json -quiet -fix-errors /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/up_sampling2d.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
 Execute       get_config_dataflow -strict_mode 
 Execute       ap_eval exec -ignorestderr /tools/Xilinx/Vivado/2018.3/lnx64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=/home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/xilinx-dataflow-lawyer.up_sampling2d.pp.0.cpp.diag.yml /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/up_sampling2d.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 -fstrict-dataflow > /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/xilinx-dataflow-lawyer.up_sampling2d.pp.0.cpp.out.log 2> /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/xilinx-dataflow-lawyer.up_sampling2d.pp.0.cpp.err.log 
-Command       ap_eval done; 0.25 sec.
 Execute       tidy_31 -errorcheck xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/up_sampling2d.pp.0.cpp std=gnu++98 
 Execute         ap_eval exec -ignorestderr /tools/Xilinx/Vivado/2018.3/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -export-fixes=/home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/tidy-3.1.up_sampling2d.pp.0.cpp.diag.yml -header-filter=.* -checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry -quiet -fix-errors /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/up_sampling2d.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/tidy-3.1.up_sampling2d.pp.0.cpp.out.log 2> /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/tidy-3.1.up_sampling2d.pp.0.cpp.err.log 
 Execute         ap_eval exec -ignorestderr /tools/Xilinx/Vivado/2018.3/lnx64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/up_sampling2d.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/xilinx-legacy-rewriter.up_sampling2d.pp.0.cpp.out.log 2> /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/xilinx-legacy-rewriter.up_sampling2d.pp.0.cpp.err.log 
-Command         ap_eval done; 0.35 sec.
-Command       tidy_31 done; 0.38 sec.
-INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 0.7 seconds per iteration
+INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 0.1 seconds per iteration
 INFO-FLOW: Pragma Handling...
 Execute       tidy_31 xilinx-ssdm-intrinsics-arguments /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/up_sampling2d.pragma.1.cpp std=gnu++98 
 INFO-FLOW: exec /tools/Xilinx/Vivado/2018.3/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-ssdm-intrinsics-arguments -quiet -fix-errors /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/up_sampling2d.pragma.1.cpp -- -std=gnu++98 -fhls -ferror-limit=0
@@ -259,7 +237,7 @@ Execute       get_default_platform
 INFO-FLOW: Processing labels
 Execute       clang -src /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/up_sampling2d.pragma.2.cpp  -fno-limit-debug-info -gcc-toolchain /tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "/home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/up_sampling2d.pragma.2.cpp"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/tools/Xilinx/Vivado/2018.3/common/technology/autopilot" -I "/tools/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "/home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/up_sampling2d.bc" 
 INFO-FLOW: exec /tools/Xilinx/Vivado/2018.3/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/up_sampling2d.pragma.2.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /tools/Xilinx/Vivado/2018.3/common/technology/autopilot -I /tools/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/up_sampling2d.bc
-Command       clang done; 1.32 sec.
+Command       clang done; 1.29 sec.
 INFO: [HLS 200-10] Analyzing design file 'layers_c/separable_conv2d.cpp' ... 
 INFO-FLOW: Compiling one TU...
 Execute       is_m_axi_addr64 
@@ -300,7 +278,7 @@ Execute       get_default_platform
 INFO-FLOW: Processing labels
 Execute       clang -src /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/separable_conv2d.pragma.2.cpp  -fno-limit-debug-info -gcc-toolchain /tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "/home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/separable_conv2d.pragma.2.cpp"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/tools/Xilinx/Vivado/2018.3/common/technology/autopilot" -I "/tools/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "/home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/separable_conv2d.bc" 
 INFO-FLOW: exec /tools/Xilinx/Vivado/2018.3/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/separable_conv2d.pragma.2.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /tools/Xilinx/Vivado/2018.3/common/technology/autopilot -I /tools/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/separable_conv2d.bc
-Command       clang done; 1.28 sec.
+Command       clang done; 1.29 sec.
 INFO: [HLS 200-10] Analyzing design file 'layers_c/pointwise_conv2d.cpp' ... 
 INFO-FLOW: Compiling one TU...
 Execute       is_m_axi_addr64 
@@ -312,13 +290,13 @@ INFO-FLOW: Running: GCC PP
 INFO-FLOW: Source preprocessing
 Execute       clang  -fno-limit-debug-info -gcc-toolchain "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc" -hls  -fno-exceptions  -D__llvm__  -E "layers_c/pointwise_conv2d.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/tools/Xilinx/Vivado/2018.3/common/technology/autopilot" -I "/tools/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "/home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/pointwise_conv2d.pp.0.cpp" 
 INFO-FLOW: exec /tools/Xilinx/Vivado/2018.3/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc -hls -fno-exceptions -D__llvm__ -E layers_c/pointwise_conv2d.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /tools/Xilinx/Vivado/2018.3/common/technology/autopilot -I /tools/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/pointwise_conv2d.pp.0.cpp
-Command       clang done; 1.28 sec.
+Command       clang done; 1.29 sec.
 Execute       tidy_31 xilinx-xfmat-array-geometry /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/pointwise_conv2d.pp.0.cpp std=gnu++98 
 INFO-FLOW: exec /tools/Xilinx/Vivado/2018.3/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/pointwise_conv2d.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
 INFO-FLOW: Syntax Checking before pre-processing...
 Execute       clang -syntaxcheck -src /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/pointwise_conv2d.pp.0.cpp  -fno-limit-debug-info -gcc-toolchain "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/tools/Xilinx/Vivado/2018.3/common/technology/autopilot" -I "/tools/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  "/home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/pointwise_conv2d.pp.0.cpp"  -o "/home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/useless.bc"  
 INFO-FLOW: exec /tools/Xilinx/Vivado/2018.3/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /tools/Xilinx/Vivado/2018.3/common/technology/autopilot -I /tools/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/pointwise_conv2d.pp.0.cpp -o /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/useless.bc
-Command       clang done; 1.3 sec.
+Command       clang done; 1.29 sec.
 INFO-FLOW: Done: GCC PP time: 2.6 seconds per iteration
 INFO-FLOW: Setting directive 'UNROLL' 
 INFO-FLOW: Setting directive 'UNROLL' 
@@ -341,7 +319,7 @@ Execute       get_default_platform
 INFO-FLOW: Processing labels
 Execute       clang -src /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/pointwise_conv2d.pragma.2.cpp  -fno-limit-debug-info -gcc-toolchain /tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "/home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/pointwise_conv2d.pragma.2.cpp"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/tools/Xilinx/Vivado/2018.3/common/technology/autopilot" -I "/tools/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "/home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/pointwise_conv2d.bc" 
 INFO-FLOW: exec /tools/Xilinx/Vivado/2018.3/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/pointwise_conv2d.pragma.2.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /tools/Xilinx/Vivado/2018.3/common/technology/autopilot -I /tools/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/pointwise_conv2d.bc
-Command       clang done; 1.29 sec.
+Command       clang done; 1.3 sec.
 INFO: [HLS 200-10] Analyzing design file 'layers_c/padding2d.cpp' ... 
 INFO-FLOW: Compiling one TU...
 Execute       is_m_axi_addr64 
@@ -353,13 +331,13 @@ INFO-FLOW: Running: GCC PP
 INFO-FLOW: Source preprocessing
 Execute       clang  -fno-limit-debug-info -gcc-toolchain "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc" -hls  -fno-exceptions  -D__llvm__  -E "layers_c/padding2d.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/tools/Xilinx/Vivado/2018.3/common/technology/autopilot" -I "/tools/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "/home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/padding2d.pp.0.cpp" 
 INFO-FLOW: exec /tools/Xilinx/Vivado/2018.3/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc -hls -fno-exceptions -D__llvm__ -E layers_c/padding2d.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /tools/Xilinx/Vivado/2018.3/common/technology/autopilot -I /tools/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/padding2d.pp.0.cpp
-Command       clang done; 1.28 sec.
+Command       clang done; 1.3 sec.
 Execute       tidy_31 xilinx-xfmat-array-geometry /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/padding2d.pp.0.cpp std=gnu++98 
 INFO-FLOW: exec /tools/Xilinx/Vivado/2018.3/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/padding2d.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
 INFO-FLOW: Syntax Checking before pre-processing...
 Execute       clang -syntaxcheck -src /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/padding2d.pp.0.cpp  -fno-limit-debug-info -gcc-toolchain "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/tools/Xilinx/Vivado/2018.3/common/technology/autopilot" -I "/tools/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  "/home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/padding2d.pp.0.cpp"  -o "/home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/useless.bc"  
 INFO-FLOW: exec /tools/Xilinx/Vivado/2018.3/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /tools/Xilinx/Vivado/2018.3/common/technology/autopilot -I /tools/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/padding2d.pp.0.cpp -o /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/useless.bc
-Command       clang done; 1.28 sec.
+Command       clang done; 1.29 sec.
 INFO-FLOW: Done: GCC PP time: 2.6 seconds per iteration
 INFO-FLOW: Setting directive 'UNROLL' 
 INFO-FLOW: Setting directive 'UNROLL' 
@@ -382,7 +360,7 @@ Execute       get_default_platform
 INFO-FLOW: Processing labels
 Execute       clang -src /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/padding2d.pragma.2.cpp  -fno-limit-debug-info -gcc-toolchain /tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "/home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/padding2d.pragma.2.cpp"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/tools/Xilinx/Vivado/2018.3/common/technology/autopilot" -I "/tools/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "/home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/padding2d.bc" 
 INFO-FLOW: exec /tools/Xilinx/Vivado/2018.3/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/padding2d.pragma.2.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /tools/Xilinx/Vivado/2018.3/common/technology/autopilot -I /tools/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/padding2d.bc
-Command       clang done; 1.29 sec.
+Command       clang done; 1.3 sec.
 INFO: [HLS 200-10] Analyzing design file 'mnist_AXI_Stream.cpp' ... 
 INFO-FLOW: Compiling one TU...
 Execute       is_m_axi_addr64 
@@ -394,10 +372,10 @@ INFO-FLOW: Running: GCC PP
 INFO-FLOW: Source preprocessing
 Execute       clang  -fno-limit-debug-info -gcc-toolchain "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc" -hls  -fno-exceptions  -D__llvm__  -E "mnist_AXI_Stream.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/tools/Xilinx/Vivado/2018.3/common/technology/autopilot" -I "/tools/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "/home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/mnist_AXI_Stream.pp.0.cpp" 
 INFO-FLOW: exec /tools/Xilinx/Vivado/2018.3/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc -hls -fno-exceptions -D__llvm__ -E mnist_AXI_Stream.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /tools/Xilinx/Vivado/2018.3/common/technology/autopilot -I /tools/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/mnist_AXI_Stream.pp.0.cpp
-Command       clang done; 1.94 sec.
+Command       clang done; 1.35 sec.
 Execute       tidy_31 xilinx-xfmat-array-geometry /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/mnist_AXI_Stream.pp.0.cpp std=gnu++98 
 INFO-FLOW: exec /tools/Xilinx/Vivado/2018.3/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/mnist_AXI_Stream.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
-Command       tidy_31 done; 0.8 sec.
+Command       tidy_31 done; 0.7 sec.
 INFO-FLOW: Syntax Checking before pre-processing...
 Execute       clang -syntaxcheck -src /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/mnist_AXI_Stream.pp.0.cpp  -fno-limit-debug-info -gcc-toolchain "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/tools/Xilinx/Vivado/2018.3/common/technology/autopilot" -I "/tools/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  "/home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/mnist_AXI_Stream.pp.0.cpp"  -o "/home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/useless.bc"  
 INFO-FLOW: exec /tools/Xilinx/Vivado/2018.3/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /tools/Xilinx/Vivado/2018.3/common/technology/autopilot -I /tools/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/mnist_AXI_Stream.pp.0.cpp -o /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/useless.bc
@@ -414,37 +392,37 @@ In file included from mnist_AXI_Stream.cpp:8:
                                                                                                                                                                                                                                                                                                                                                         ^~
                                                                                                                                                                                                                                                                                                                                                         =
 1 warning generated.
-Command       clang done; 1.76 sec.
-INFO-FLOW: Done: GCC PP time: 4.5 seconds per iteration
+Command       clang done; 1.75 sec.
+INFO-FLOW: Done: GCC PP time: 3.8 seconds per iteration
 INFO-FLOW: Setting directive 'UNROLL' 
 INFO-FLOW: Setting directive 'UNROLL' 
 Execute       list_core -type functional_unit 
 Execute       tidy_31 xilinx-systemc-detector /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/mnist_AXI_Stream.pp.0.cpp std=gnu++98 -directive=/home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/.systemc_flag 
 INFO-FLOW: exec /tools/Xilinx/Vivado/2018.3/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-systemc-detector -import-directive=/home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/.systemc_flag -quiet -fix-errors /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/mnist_AXI_Stream.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
-Command       tidy_31 done; 0.62 sec.
+Command       tidy_31 done; 0.64 sec.
 INFO-FLOW: Running: tidy-3.1 CDT preprocess
 Execute       tidy_31 xilinx-directive2pragma /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/mnist_AXI_Stream.pp.0.cpp std=gnu++98 -directive=/home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/all.directive.json 
 INFO-FLOW: exec /tools/Xilinx/Vivado/2018.3/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-directive2pragma -import-directive=/home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/all.directive.json -quiet -fix-errors /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/mnist_AXI_Stream.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
-Command       tidy_31 done; 0.62 sec.
+Command       tidy_31 done; 0.61 sec.
 Execute       get_config_dataflow -strict_mode 
 Execute       ap_eval exec -ignorestderr /tools/Xilinx/Vivado/2018.3/lnx64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=/home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/xilinx-dataflow-lawyer.mnist_AXI_Stream.pp.0.cpp.diag.yml /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/mnist_AXI_Stream.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 -fstrict-dataflow > /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/xilinx-dataflow-lawyer.mnist_AXI_Stream.pp.0.cpp.out.log 2> /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/xilinx-dataflow-lawyer.mnist_AXI_Stream.pp.0.cpp.err.log 
-Command       ap_eval done; 0.66 sec.
+Command       ap_eval done; 0.59 sec.
 Execute       tidy_31 -errorcheck xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/mnist_AXI_Stream.pp.0.cpp std=gnu++98 
 Execute         ap_eval exec -ignorestderr /tools/Xilinx/Vivado/2018.3/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -export-fixes=/home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/tidy-3.1.mnist_AXI_Stream.pp.0.cpp.diag.yml -header-filter=.* -checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry -quiet -fix-errors /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/mnist_AXI_Stream.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/tidy-3.1.mnist_AXI_Stream.pp.0.cpp.out.log 2> /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/tidy-3.1.mnist_AXI_Stream.pp.0.cpp.err.log 
-Command         ap_eval done; 0.79 sec.
+Command         ap_eval done; 0.8 sec.
 Execute         ap_eval exec -ignorestderr /tools/Xilinx/Vivado/2018.3/lnx64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/mnist_AXI_Stream.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/xilinx-legacy-rewriter.mnist_AXI_Stream.pp.0.cpp.out.log 2> /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/xilinx-legacy-rewriter.mnist_AXI_Stream.pp.0.cpp.err.log 
-Command         ap_eval done; 0.9 sec.
-Command       tidy_31 done; 1.69 sec.
-INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 3 seconds per iteration
+Command         ap_eval done; 0.79 sec.
+Command       tidy_31 done; 1.6 sec.
+INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 2.8 seconds per iteration
 INFO-FLOW: Pragma Handling...
 Execute       tidy_31 xilinx-ssdm-intrinsics-arguments /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/mnist_AXI_Stream.pragma.1.cpp std=gnu++98 
 INFO-FLOW: exec /tools/Xilinx/Vivado/2018.3/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-ssdm-intrinsics-arguments -quiet -fix-errors /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/mnist_AXI_Stream.pragma.1.cpp -- -std=gnu++98 -fhls -ferror-limit=0
-Command       tidy_31 done; 0.82 sec.
+Command       tidy_31 done; 0.85 sec.
 Execute       get_default_platform 
 INFO-FLOW: Processing labels
 Execute       clang -src /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/mnist_AXI_Stream.pragma.2.cpp  -fno-limit-debug-info -gcc-toolchain /tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "/home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/mnist_AXI_Stream.pragma.2.cpp"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/tools/Xilinx/Vivado/2018.3/common/technology/autopilot" -I "/tools/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "/home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/mnist_AXI_Stream.bc" 
 INFO-FLOW: exec /tools/Xilinx/Vivado/2018.3/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/mnist_AXI_Stream.pragma.2.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /tools/Xilinx/Vivado/2018.3/common/technology/autopilot -I /tools/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/mnist_AXI_Stream.bc
-Command       clang done; 1.76 sec.
+Command       clang done; 1.81 sec.
 INFO: [HLS 200-10] Analyzing design file 'layers_c/max_pooling2d.cpp' ... 
 INFO-FLOW: Compiling one TU...
 Execute       is_m_axi_addr64 
@@ -456,13 +434,13 @@ INFO-FLOW: Running: GCC PP
 INFO-FLOW: Source preprocessing
 Execute       clang  -fno-limit-debug-info -gcc-toolchain "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc" -hls  -fno-exceptions  -D__llvm__  -E "layers_c/max_pooling2d.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/tools/Xilinx/Vivado/2018.3/common/technology/autopilot" -I "/tools/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "/home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/max_pooling2d.pp.0.cpp" 
 INFO-FLOW: exec /tools/Xilinx/Vivado/2018.3/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc -hls -fno-exceptions -D__llvm__ -E layers_c/max_pooling2d.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /tools/Xilinx/Vivado/2018.3/common/technology/autopilot -I /tools/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/max_pooling2d.pp.0.cpp
-Command       clang done; 1.29 sec.
+Command       clang done; 1.32 sec.
 Execute       tidy_31 xilinx-xfmat-array-geometry /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/max_pooling2d.pp.0.cpp std=gnu++98 
 INFO-FLOW: exec /tools/Xilinx/Vivado/2018.3/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/max_pooling2d.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
 INFO-FLOW: Syntax Checking before pre-processing...
 Execute       clang -syntaxcheck -src /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/max_pooling2d.pp.0.cpp  -fno-limit-debug-info -gcc-toolchain "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/tools/Xilinx/Vivado/2018.3/common/technology/autopilot" -I "/tools/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  "/home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/max_pooling2d.pp.0.cpp"  -o "/home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/useless.bc"  
 INFO-FLOW: exec /tools/Xilinx/Vivado/2018.3/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /tools/Xilinx/Vivado/2018.3/common/technology/autopilot -I /tools/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/max_pooling2d.pp.0.cpp -o /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/useless.bc
-Command       clang done; 1.29 sec.
+Command       clang done; 1.31 sec.
 INFO-FLOW: Done: GCC PP time: 2.6 seconds per iteration
 INFO-FLOW: Setting directive 'UNROLL' 
 INFO-FLOW: Setting directive 'UNROLL' 
@@ -485,7 +463,7 @@ Execute       get_default_platform
 INFO-FLOW: Processing labels
 Execute       clang -src /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/max_pooling2d.pragma.2.cpp  -fno-limit-debug-info -gcc-toolchain /tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "/home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/max_pooling2d.pragma.2.cpp"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/tools/Xilinx/Vivado/2018.3/common/technology/autopilot" -I "/tools/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "/home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/max_pooling2d.bc" 
 INFO-FLOW: exec /tools/Xilinx/Vivado/2018.3/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/max_pooling2d.pragma.2.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /tools/Xilinx/Vivado/2018.3/common/technology/autopilot -I /tools/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/max_pooling2d.bc
-Command       clang done; 1.29 sec.
+Command       clang done; 1.31 sec.
 INFO: [HLS 200-10] Analyzing design file 'layers_c/depthwise_conv2d.cpp' ... 
 INFO-FLOW: Compiling one TU...
 Execute       is_m_axi_addr64 
@@ -497,7 +475,7 @@ INFO-FLOW: Running: GCC PP
 INFO-FLOW: Source preprocessing
 Execute       clang  -fno-limit-debug-info -gcc-toolchain "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc" -hls  -fno-exceptions  -D__llvm__  -E "layers_c/depthwise_conv2d.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/tools/Xilinx/Vivado/2018.3/common/technology/autopilot" -I "/tools/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "/home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/depthwise_conv2d.pp.0.cpp" 
 INFO-FLOW: exec /tools/Xilinx/Vivado/2018.3/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc -hls -fno-exceptions -D__llvm__ -E layers_c/depthwise_conv2d.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /tools/Xilinx/Vivado/2018.3/common/technology/autopilot -I /tools/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/depthwise_conv2d.pp.0.cpp
-Command       clang done; 1.28 sec.
+Command       clang done; 1.3 sec.
 Execute       tidy_31 xilinx-xfmat-array-geometry /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/depthwise_conv2d.pp.0.cpp std=gnu++98 
 INFO-FLOW: exec /tools/Xilinx/Vivado/2018.3/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/depthwise_conv2d.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
 INFO-FLOW: Syntax Checking before pre-processing...
@@ -538,13 +516,13 @@ INFO-FLOW: Running: GCC PP
 INFO-FLOW: Source preprocessing
 Execute       clang  -fno-limit-debug-info -gcc-toolchain "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc" -hls  -fno-exceptions  -D__llvm__  -E "layers_c/conv2d.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/tools/Xilinx/Vivado/2018.3/common/technology/autopilot" -I "/tools/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "/home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/conv2d.pp.0.cpp" 
 INFO-FLOW: exec /tools/Xilinx/Vivado/2018.3/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc -hls -fno-exceptions -D__llvm__ -E layers_c/conv2d.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /tools/Xilinx/Vivado/2018.3/common/technology/autopilot -I /tools/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/conv2d.pp.0.cpp
-Command       clang done; 1.28 sec.
+Command       clang done; 1.29 sec.
 Execute       tidy_31 xilinx-xfmat-array-geometry /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/conv2d.pp.0.cpp std=gnu++98 
 INFO-FLOW: exec /tools/Xilinx/Vivado/2018.3/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/conv2d.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
 INFO-FLOW: Syntax Checking before pre-processing...
 Execute       clang -syntaxcheck -src /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/conv2d.pp.0.cpp  -fno-limit-debug-info -gcc-toolchain "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/tools/Xilinx/Vivado/2018.3/common/technology/autopilot" -I "/tools/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  "/home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/conv2d.pp.0.cpp"  -o "/home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/useless.bc"  
 INFO-FLOW: exec /tools/Xilinx/Vivado/2018.3/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /tools/Xilinx/Vivado/2018.3/common/technology/autopilot -I /tools/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/conv2d.pp.0.cpp -o /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/useless.bc
-Command       clang done; 1.29 sec.
+Command       clang done; 1.3 sec.
 INFO-FLOW: Done: GCC PP time: 2.6 seconds per iteration
 INFO-FLOW: Setting directive 'UNROLL' 
 INFO-FLOW: Setting directive 'UNROLL' 
@@ -567,31 +545,30 @@ Execute       get_default_platform
 INFO-FLOW: Processing labels
 Execute       clang -src /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/conv2d.pragma.2.cpp  -fno-limit-debug-info -gcc-toolchain /tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "/home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/conv2d.pragma.2.cpp"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/tools/Xilinx/Vivado/2018.3/common/technology/autopilot" -I "/tools/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "/home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/conv2d.bc" 
 INFO-FLOW: exec /tools/Xilinx/Vivado/2018.3/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/conv2d.pragma.2.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /tools/Xilinx/Vivado/2018.3/common/technology/autopilot -I /tools/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/conv2d.bc
-Command       clang done; 1.29 sec.
+Command       clang done; 1.3 sec.
 INFO-FLOW: Linking Debug ...
 Execute       llvm-ld /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/up_sampling2d.g.bc /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/separable_conv2d.g.bc /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/pointwise_conv2d.g.bc /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/padding2d.g.bc /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/mnist_AXI_Stream.g.bc /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/max_pooling2d.g.bc /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/depthwise_conv2d.g.bc /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/conv2d.g.bc -hls-opt -except-internalize network -L/tools/Xilinx/Vivado/2018.3/lnx64/lib -lhlsm -lhlsmc++ -o /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/a.g 
-Command       llvm-ld done; 0.96 sec.
-INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 438.980 ; gain = 0.117 ; free physical = 10193 ; free virtual = 15243
-INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 438.980 ; gain = 0.117 ; free physical = 10193 ; free virtual = 15243
+Command       llvm-ld done; 0.69 sec.
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 438.977 ; gain = 0.117 ; free physical = 4658 ; free virtual = 11285
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 438.977 ; gain = 0.117 ; free physical = 4658 ; free virtual = 11285
 Execute       get_config_sdx -target 
 Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
 Execute         cleanup_all_models 
 INFO: [HLS 200-10] Starting code transformations ...
 Execute         transform -promote-dbg-pointer /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/a.pp.bc -o /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/a.pp.0.bc -f 
-Command         transform done; 0.22 sec.
 Execute         llvm-ld /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/a.pp.0.bc -disable-opt -L/tools/Xilinx/Vivado/2018.3/lnx64/lib -lfloatconversion -o /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/a.g.0 
 Command         llvm-ld done; 0.69 sec.
 INFO-FLOW: Running Standard Transforms...
 Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -lower-blackbox -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -prune-eh -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top network -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/a.g.0.bc -o /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/a.g.1.bc -f -phase std-opt 
-Command         transform done; 3.25 sec.
-INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:42 ; elapsed = 00:00:46 . Memory (MB): peak = 566.863 ; gain = 128.000 ; free physical = 10174 ; free virtual = 15230
+Command         transform done; 3.23 sec.
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 566.859 ; gain = 128.000 ; free physical = 4645 ; free virtual = 11272
 INFO: [HLS 200-10] Checking synthesizability ...
 INFO-FLOW: Checking Synthesizability 1/2..
 Execute         transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -pag -array-normalize -instcombine -dce -warn-fifo-pointer -array-seg-normalize -instcombine -dce -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce -check-dspbuiltin /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/a.g.1.bc -o /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/a.g.2.prechk.bc -f 
-Command         transform done; 3.23 sec.
+Command         transform done; 3.27 sec.
 INFO-FLOW: Checking Synthesizability 2/2..
 Execute         transform -syn-check /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/a.g.2.prechk.bc -o /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/a.g.2.bc -f -phase syn-check 
-INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:45 ; elapsed = 00:00:50 . Memory (MB): peak = 566.863 ; gain = 128.000 ; free physical = 10168 ; free virtual = 15226
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 566.859 ; gain = 128.000 ; free physical = 4640 ; free virtual = 11268
 INFO-FLOW: Compiler optimizing ...
 INFO-FLOW: Share syncheck's 1.bc for syn flow: copy /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/a.g.1.bc to /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/a.o.1.bc
 INFO-FLOW: Presyn 1...
@@ -605,7 +582,7 @@ INFO: [XFORM 203-102] Partitioning array 'SeparableConv2D_2_w_d' in dimension 1 
 INFO: [XFORM 203-102] Partitioning array 'SeparableConv2D_1_w_d' in dimension 1 automatically.
 INFO: [XFORM 203-102] Partitioning array 'SeparableConv2D_0_w_d' in dimension 1 automatically.
 INFO: [XFORM 203-102] Partitioning array 'SeparableConv2D_0_w_d.0' in dimension 1 automatically.
-Command         transform done; 5.64 sec.
+Command         transform done; 5.62 sec.
 INFO-FLOW: Presyn 2...
 Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -norm-name /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/a.o.1.tmp.bc -o /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/a.o.2.bc -f -phase presyn 
 WARNING: [XFORM 203-561] Updating loop upper bound from 65538 to 31 for loop 'Loop-0-0' in function 'padding2d_fix16'.
@@ -617,7 +594,7 @@ INFO: [XFORM 203-11] Balancing expressions in function 'depthwise_conv2d_fix16.2
 INFO: [XFORM 203-11] Balancing expressions in function 'depthwise_conv2d_fix16.1' (layers_c/depthwise_conv2d.cpp:19:63)...3 expression(s) balanced.
 INFO: [XFORM 203-11] Balancing expressions in function 'depthwise_conv2d_fix16' (layers_c/depthwise_conv2d.cpp:5)...3 expression(s) balanced.
 Command         transform done; 1.8 sec.
-INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:53 ; elapsed = 00:00:57 . Memory (MB): peak = 566.863 ; gain = 128.000 ; free physical = 10137 ; free virtual = 15195
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:53 ; elapsed = 00:00:54 . Memory (MB): peak = 566.859 ; gain = 128.000 ; free physical = 4608 ; free virtual = 11236
 INFO-FLOW: Building ssdm...
 Execute         transform -hls -function-uniquify -auto-function-inline -globaldce -ptrArgReplace -mem2reg -instcombine -dce -reset-lda -loop-simplify -indvars -licm -loop-dep -loop-bound -licm -loop-simplify -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -axi4-lower -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -disaggr -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -bitwidthmin -deadargelim -dce -canonicalize-dataflow -dce -scalar-propagation -deadargelim -globaldce -mem2reg -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -load-elim -bitop-lower -loop-rewind -pointer-simplify -dce -cfgopt -dce -bitwidth -loop-bound -loop-dep -read-loop-dep -dce -check-stream -norm-name -legalize -validate-dataflow -inst-clarity -cdfg-build /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/a.o.2.bc -o /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
 WARNING: [XFORM 203-631] Renaming function 'pointwise_conv2d_fix16.4' to 'pointwise_conv2d_fix' (layers_c/pointwise_conv2d.cpp:16:60)
@@ -629,11 +606,11 @@ WARNING: [XFORM 203-631] Renaming function 'depthwise_conv2d_fix16.2' to 'depthw
 WARNING: [XFORM 203-631] Renaming function 'depthwise_conv2d_fix16.1' to 'depthwise_conv2d_fix.1' (layers_c/depthwise_conv2d.cpp:19:63)
 WARNING: [XFORM 203-631] Renaming function 'depthwise_conv2d_fix16' to 'depthwise_conv2d_fix.2' (layers_c/depthwise_conv2d.cpp:19:63)
 WARNING: [XFORM 203-561] Ignored multiple trip count directives for loop 'Loop-0-0-0' in function 'pointwise_conv2d_fix'.
-Command         transform done; 9.69 sec.
-INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:01:02 ; elapsed = 00:01:07 . Memory (MB): peak = 886.863 ; gain = 448.000 ; free physical = 9833 ; free virtual = 14892
+Command         transform done; 9.73 sec.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:01:03 ; elapsed = 00:01:04 . Memory (MB): peak = 886.859 ; gain = 448.000 ; free physical = 4303 ; free virtual = 10932
 INFO-FLOW: Finish building internal data model.
-Command       opt_and_import_c done; 24.55 sec.
-Command     elaborate done; 66.25 sec.
+Command       opt_and_import_c done; 24.39 sec.
+Command     elaborate done; 63.3 sec.
 Execute     autosyn -from_csynth_design=1 
 INFO: [HLS 200-10] Starting hardware synthesis ...
 INFO-FLOW: Synthesizing C/C++ design ...
@@ -744,7 +721,7 @@ Execute       rtl_gen_preprocess pointwise_conv2d_fix.4
 INFO-FLOW: Preprocessing Module: network ...
 Execute       set_default_model network 
 Execute       cdfg_preprocess -model network 
-Command       cdfg_preprocess done; 0.93 sec.
+Command       cdfg_preprocess done; 1 sec.
 Execute       rtl_gen_preprocess network 
 INFO-FLOW: Model list for synthesis: padding2d_fix16 depthwise_conv2d_fix pointwise_conv2d_fix max_pooling2d_fix16 depthwise_conv2d_fix.2 pointwise_conv2d_fix.1 depthwise_conv2d_fix.1 pointwise_conv2d_fix.2 up_sampling2d_fix16 pointwise_conv2d_fix.3 pointwise_conv2d_fix.4 network
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -753,13 +730,8 @@ INFO: [HLS 200-10] -------------------------------------------------------------
 Execute       set_default_model padding2d_fix16 
 Execute       schedule -model padding2d_fix16 
 INFO: [SCHED 204-11] Starting scheduling ...
-WARNING: [SCHED 204-21] Estimated clock period (3.74ns) exceeds the target (target clock period: 4.4ns, clock uncertainty: 1.267ns, effective delay budget: 3.133ns).
-WARNING: [SCHED 204-21] The critical path in module 'padding2d_fix16' consists of the following:
-	wire read on port 'input_height' [7]  (0 ns)
-	'mul' operation ('tmp_30', layers_c/padding2d.cpp:13) [21]  (3.74 ns)
 INFO: [SCHED 204-11] Finished scheduling.
-Command       schedule done; 0.21 sec.
-INFO: [HLS 200-111]  Elapsed time: 67.96 seconds; current allocated memory: 417.182 MB.
+INFO: [HLS 200-111]  Elapsed time: 65.14 seconds; current allocated memory: 417.143 MB.
 Execute       report -o /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/padding2d_fix16.verbose.sched.rpt -verbose -f 
 INFO: [HLS 200-434] Only 0 loops out of a total 6 loops have been pipelined in this design.
 Execute       db_write -o /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/padding2d_fix16.sched.adb -f 
@@ -775,7 +747,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.13 seconds; current allocated memory: 417.765 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.12 seconds; current allocated memory: 417.656 MB.
 Execute       report -o /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/padding2d_fix16.verbose.bind.rpt -verbose -f 
 Command       report done; 0.12 sec.
 Execute       db_write -o /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/padding2d_fix16.bind.adb -f 
@@ -786,11 +758,8 @@ INFO: [HLS 200-10] -------------------------------------------------------------
 Execute       set_default_model depthwise_conv2d_fix 
 Execute       schedule -model depthwise_conv2d_fix 
 INFO: [SCHED 204-11] Starting scheduling ...
-WARNING: [SCHED 204-21] Estimated clock period (3.89ns) exceeds the target (target clock period: 4.4ns, clock uncertainty: 1.267ns, effective delay budget: 3.133ns).
-WARNING: [SCHED 204-21] The critical path in module 'depthwise_conv2d_fix' consists of the following:
-	'mul' operation of DSP[70] ('tmp_78', layers_c/depthwise_conv2d.cpp:28) [70]  (3.89 ns)
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.19 seconds; current allocated memory: 418.172 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.19 seconds; current allocated memory: 418.013 MB.
 Execute       report -o /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/depthwise_conv2d_fix.verbose.sched.rpt -verbose -f 
 Execute       db_write -o /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/depthwise_conv2d_fix.sched.adb -f 
 INFO-FLOW: Finish scheduling depthwise_conv2d_fix.
@@ -805,7 +774,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.07 seconds; current allocated memory: 418.445 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.08 seconds; current allocated memory: 418.271 MB.
 Execute       report -o /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/depthwise_conv2d_fix.verbose.bind.rpt -verbose -f 
 Execute       db_write -o /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/depthwise_conv2d_fix.bind.adb -f 
 INFO-FLOW: Finish binding depthwise_conv2d_fix.
@@ -815,11 +784,8 @@ INFO: [HLS 200-10] -------------------------------------------------------------
 Execute       set_default_model pointwise_conv2d_fix 
 Execute       schedule -model pointwise_conv2d_fix 
 INFO: [SCHED 204-11] Starting scheduling ...
-WARNING: [SCHED 204-21] Estimated clock period (3.89ns) exceeds the target (target clock period: 4.4ns, clock uncertainty: 1.267ns, effective delay budget: 3.133ns).
-WARNING: [SCHED 204-21] The critical path in module 'pointwise_conv2d_fix' consists of the following:
-	'mul' operation of DSP[53] ('tmp_15', layers_c/pointwise_conv2d.cpp:23) [53]  (3.89 ns)
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.11 seconds; current allocated memory: 418.633 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.11 seconds; current allocated memory: 418.523 MB.
 Execute       report -o /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/pointwise_conv2d_fix.verbose.sched.rpt -verbose -f 
 Execute       db_write -o /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/pointwise_conv2d_fix.sched.adb -f 
 INFO-FLOW: Finish scheduling pointwise_conv2d_fix.
@@ -834,7 +800,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.06 seconds; current allocated memory: 418.863 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.05 seconds; current allocated memory: 418.745 MB.
 Execute       report -o /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/pointwise_conv2d_fix.verbose.bind.rpt -verbose -f 
 Execute       db_write -o /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/pointwise_conv2d_fix.bind.adb -f 
 INFO-FLOW: Finish binding pointwise_conv2d_fix.
@@ -844,12 +810,8 @@ INFO: [HLS 200-10] -------------------------------------------------------------
 Execute       set_default_model max_pooling2d_fix16 
 Execute       schedule -model max_pooling2d_fix16 
 INFO: [SCHED 204-11] Starting scheduling ...
-WARNING: [SCHED 204-21] Estimated clock period (4.35ns) exceeds the target (target clock period: 4.4ns, clock uncertainty: 1.267ns, effective delay budget: 3.133ns).
-WARNING: [SCHED 204-21] The critical path in module 'max_pooling2d_fix16' consists of the following:
-	'mul' operation ('tmp1', layers_c/max_pooling2d.cpp:26) [76]  (4.35 ns)
 INFO: [SCHED 204-11] Finished scheduling.
-Command       schedule done; 0.11 sec.
-INFO: [HLS 200-111]  Elapsed time: 0.18 seconds; current allocated memory: 419.206 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.11 seconds; current allocated memory: 419.028 MB.
 Execute       report -o /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/max_pooling2d_fix16.verbose.sched.rpt -verbose -f 
 Execute       db_write -o /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/max_pooling2d_fix16.sched.adb -f 
 INFO-FLOW: Finish scheduling max_pooling2d_fix16.
@@ -864,7 +826,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.07 seconds; current allocated memory: 419.583 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.08 seconds; current allocated memory: 419.351 MB.
 Execute       report -o /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/max_pooling2d_fix16.verbose.bind.rpt -verbose -f 
 Execute       db_write -o /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/max_pooling2d_fix16.bind.adb -f 
 INFO-FLOW: Finish binding max_pooling2d_fix16.
@@ -874,11 +836,8 @@ INFO: [HLS 200-10] -------------------------------------------------------------
 Execute       set_default_model depthwise_conv2d_fix.2 
 Execute       schedule -model depthwise_conv2d_fix.2 
 INFO: [SCHED 204-11] Starting scheduling ...
-WARNING: [SCHED 204-21] Estimated clock period (4.35ns) exceeds the target (target clock period: 4.4ns, clock uncertainty: 1.267ns, effective delay budget: 3.133ns).
-WARNING: [SCHED 204-21] The critical path in module 'depthwise_conv2d_fix_2' consists of the following:
-	'mul' operation ('tmp3', layers_c/depthwise_conv2d.cpp:36) [47]  (4.35 ns)
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.2 seconds; current allocated memory: 419.964 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.16 seconds; current allocated memory: 419.687 MB.
 Execute       report -o /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/depthwise_conv2d_fix_2.verbose.sched.rpt -verbose -f 
 Execute       db_write -o /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/depthwise_conv2d_fix_2.sched.adb -f 
 INFO-FLOW: Finish scheduling depthwise_conv2d_fix.2.
@@ -893,7 +852,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.09 seconds; current allocated memory: 420.346 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.08 seconds; current allocated memory: 420.049 MB.
 Execute       report -o /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/depthwise_conv2d_fix_2.verbose.bind.rpt -verbose -f 
 Execute       db_write -o /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/depthwise_conv2d_fix_2.bind.adb -f 
 INFO-FLOW: Finish binding depthwise_conv2d_fix.2.
@@ -903,11 +862,8 @@ INFO: [HLS 200-10] -------------------------------------------------------------
 Execute       set_default_model pointwise_conv2d_fix.1 
 Execute       schedule -model pointwise_conv2d_fix.1 
 INFO: [SCHED 204-11] Starting scheduling ...
-WARNING: [SCHED 204-21] Estimated clock period (3.89ns) exceeds the target (target clock period: 4.4ns, clock uncertainty: 1.267ns, effective delay budget: 3.133ns).
-WARNING: [SCHED 204-21] The critical path in module 'pointwise_conv2d_fix_1' consists of the following:
-	'mul' operation of DSP[71] ('tmp_28', layers_c/pointwise_conv2d.cpp:23) [71]  (3.89 ns)
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.16 seconds; current allocated memory: 420.630 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.15 seconds; current allocated memory: 420.372 MB.
 Execute       report -o /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/pointwise_conv2d_fix_1.verbose.sched.rpt -verbose -f 
 Execute       db_write -o /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/pointwise_conv2d_fix_1.sched.adb -f 
 INFO-FLOW: Finish scheduling pointwise_conv2d_fix.1.
@@ -922,7 +878,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.08 seconds; current allocated memory: 420.931 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.06 seconds; current allocated memory: 420.660 MB.
 Execute       report -o /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/pointwise_conv2d_fix_1.verbose.bind.rpt -verbose -f 
 Execute       db_write -o /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/pointwise_conv2d_fix_1.bind.adb -f 
 INFO-FLOW: Finish binding pointwise_conv2d_fix.1.
@@ -932,11 +888,8 @@ INFO: [HLS 200-10] -------------------------------------------------------------
 Execute       set_default_model depthwise_conv2d_fix.1 
 Execute       schedule -model depthwise_conv2d_fix.1 
 INFO: [SCHED 204-11] Starting scheduling ...
-WARNING: [SCHED 204-21] Estimated clock period (3.89ns) exceeds the target (target clock period: 4.4ns, clock uncertainty: 1.267ns, effective delay budget: 3.133ns).
-WARNING: [SCHED 204-21] The critical path in module 'depthwise_conv2d_fix_1' consists of the following:
-	'mul' operation of DSP[104] ('tmp_78', layers_c/depthwise_conv2d.cpp:28) [104]  (3.89 ns)
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.18 seconds; current allocated memory: 421.278 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.14 seconds; current allocated memory: 420.965 MB.
 Execute       report -o /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/depthwise_conv2d_fix_1.verbose.sched.rpt -verbose -f 
 Execute       db_write -o /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/depthwise_conv2d_fix_1.sched.adb -f 
 INFO-FLOW: Finish scheduling depthwise_conv2d_fix.1.
@@ -951,7 +904,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.09 seconds; current allocated memory: 421.662 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.09 seconds; current allocated memory: 421.325 MB.
 Execute       report -o /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/depthwise_conv2d_fix_1.verbose.bind.rpt -verbose -f 
 Execute       db_write -o /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/depthwise_conv2d_fix_1.bind.adb -f 
 INFO-FLOW: Finish binding depthwise_conv2d_fix.1.
@@ -961,11 +914,8 @@ INFO: [HLS 200-10] -------------------------------------------------------------
 Execute       set_default_model pointwise_conv2d_fix.2 
 Execute       schedule -model pointwise_conv2d_fix.2 
 INFO: [SCHED 204-11] Starting scheduling ...
-WARNING: [SCHED 204-21] Estimated clock period (3.89ns) exceeds the target (target clock period: 4.4ns, clock uncertainty: 1.267ns, effective delay budget: 3.133ns).
-WARNING: [SCHED 204-21] The critical path in module 'pointwise_conv2d_fix_2' consists of the following:
-	'mul' operation of DSP[70] ('tmp_23', layers_c/pointwise_conv2d.cpp:23) [70]  (3.89 ns)
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.15 seconds; current allocated memory: 421.922 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.15 seconds; current allocated memory: 421.548 MB.
 Execute       report -o /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/pointwise_conv2d_fix_2.verbose.sched.rpt -verbose -f 
 Execute       db_write -o /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/pointwise_conv2d_fix_2.sched.adb -f 
 INFO-FLOW: Finish scheduling pointwise_conv2d_fix.2.
@@ -980,7 +930,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.08 seconds; current allocated memory: 422.215 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.07 seconds; current allocated memory: 421.826 MB.
 Execute       report -o /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/pointwise_conv2d_fix_2.verbose.bind.rpt -verbose -f 
 Execute       db_write -o /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/pointwise_conv2d_fix_2.bind.adb -f 
 INFO-FLOW: Finish binding pointwise_conv2d_fix.2.
@@ -990,11 +940,8 @@ INFO: [HLS 200-10] -------------------------------------------------------------
 Execute       set_default_model up_sampling2d_fix16 
 Execute       schedule -model up_sampling2d_fix16 
 INFO: [SCHED 204-11] Starting scheduling ...
-WARNING: [SCHED 204-21] Estimated clock period (4.35ns) exceeds the target (target clock period: 4.4ns, clock uncertainty: 1.267ns, effective delay budget: 3.133ns).
-WARNING: [SCHED 204-21] The critical path in module 'up_sampling2d_fix16' consists of the following:
-	'mul' operation ('tmp3', layers_c/up_sampling2d.cpp:19) [47]  (4.35 ns)
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.17 seconds; current allocated memory: 422.521 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.12 seconds; current allocated memory: 422.068 MB.
 Execute       report -o /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/up_sampling2d_fix16.verbose.sched.rpt -verbose -f 
 Execute       db_write -o /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/up_sampling2d_fix16.sched.adb -f 
 INFO-FLOW: Finish scheduling up_sampling2d_fix16.
@@ -1009,7 +956,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.05 seconds; current allocated memory: 422.749 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.05 seconds; current allocated memory: 422.289 MB.
 Execute       report -o /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/up_sampling2d_fix16.verbose.bind.rpt -verbose -f 
 Execute       db_write -o /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/up_sampling2d_fix16.bind.adb -f 
 INFO-FLOW: Finish binding up_sampling2d_fix16.
@@ -1019,11 +966,8 @@ INFO: [HLS 200-10] -------------------------------------------------------------
 Execute       set_default_model pointwise_conv2d_fix.3 
 Execute       schedule -model pointwise_conv2d_fix.3 
 INFO: [SCHED 204-11] Starting scheduling ...
-WARNING: [SCHED 204-21] Estimated clock period (3.89ns) exceeds the target (target clock period: 4.4ns, clock uncertainty: 1.267ns, effective delay budget: 3.133ns).
-WARNING: [SCHED 204-21] The critical path in module 'pointwise_conv2d_fix_3' consists of the following:
-	'mul' operation of DSP[71] ('tmp_10', layers_c/pointwise_conv2d.cpp:23) [71]  (3.89 ns)
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.1 seconds; current allocated memory: 423.050 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.11 seconds; current allocated memory: 422.611 MB.
 Execute       report -o /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/pointwise_conv2d_fix_3.verbose.sched.rpt -verbose -f 
 Execute       db_write -o /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/pointwise_conv2d_fix_3.sched.adb -f 
 INFO-FLOW: Finish scheduling pointwise_conv2d_fix.3.
@@ -1038,7 +982,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.08 seconds; current allocated memory: 423.356 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.06 seconds; current allocated memory: 422.899 MB.
 Execute       report -o /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/pointwise_conv2d_fix_3.verbose.bind.rpt -verbose -f 
 Execute       db_write -o /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/pointwise_conv2d_fix_3.bind.adb -f 
 INFO-FLOW: Finish binding pointwise_conv2d_fix.3.
@@ -1048,11 +992,8 @@ INFO: [HLS 200-10] -------------------------------------------------------------
 Execute       set_default_model pointwise_conv2d_fix.4 
 Execute       schedule -model pointwise_conv2d_fix.4 
 INFO: [SCHED 204-11] Starting scheduling ...
-WARNING: [SCHED 204-21] Estimated clock period (3.89ns) exceeds the target (target clock period: 4.4ns, clock uncertainty: 1.267ns, effective delay budget: 3.133ns).
-WARNING: [SCHED 204-21] The critical path in module 'pointwise_conv2d_fix_4' consists of the following:
-	'mul' operation of DSP[53] ('tmp_8', layers_c/pointwise_conv2d.cpp:23) [53]  (3.89 ns)
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.11 seconds; current allocated memory: 423.536 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.12 seconds; current allocated memory: 423.097 MB.
 Execute       report -o /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/pointwise_conv2d_fix_4.verbose.sched.rpt -verbose -f 
 Execute       db_write -o /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/pointwise_conv2d_fix_4.sched.adb -f 
 INFO-FLOW: Finish scheduling pointwise_conv2d_fix.4.
@@ -1067,7 +1008,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.13 seconds; current allocated memory: 423.776 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.06 seconds; current allocated memory: 423.322 MB.
 Execute       report -o /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/pointwise_conv2d_fix_4.verbose.bind.rpt -verbose -f 
 Execute       db_write -o /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/pointwise_conv2d_fix_4.bind.adb -f 
 INFO-FLOW: Finish binding pointwise_conv2d_fix.4.
@@ -1080,12 +1021,12 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining loop 'Loop 2'.
 INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
 INFO: [SCHED 204-11] Finished scheduling.
-Command       schedule done; 4.09 sec.
-INFO: [HLS 200-111]  Elapsed time: 4.16 seconds; current allocated memory: 432.178 MB.
+Command       schedule done; 4.15 sec.
+INFO: [HLS 200-111]  Elapsed time: 4.22 seconds; current allocated memory: 431.717 MB.
 Execute       report -o /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/network.verbose.sched.rpt -verbose -f 
-Command       report done; 3.65 sec.
+Command       report done; 4.03 sec.
 Execute       db_write -o /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/network.sched.adb -f 
-Command       db_write done; 0.69 sec.
+Command       db_write done; 0.76 sec.
 INFO-FLOW: Finish scheduling network.
 Execute       set_default_model network 
 Execute       bind -model network 
@@ -1098,12 +1039,12 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-Command       bind done; 3.33 sec.
-INFO: [HLS 200-111]  Elapsed time: 7.67 seconds; current allocated memory: 445.597 MB.
+Command       bind done; 3.11 sec.
+INFO: [HLS 200-111]  Elapsed time: 7.91 seconds; current allocated memory: 445.001 MB.
 Execute       report -o /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/network.verbose.bind.rpt -verbose -f 
-Command       report done; 3.1 sec.
+Command       report done; 3.42 sec.
 Execute       db_write -o /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/network.bind.adb -f 
-Command       db_write done; 0.72 sec.
+Command       db_write done; 0.79 sec.
 INFO-FLOW: Finish binding network.
 Execute       get_model_list network -filter all-wo-channel 
 INFO-FLOW: Preprocessing for RTLGen ...
@@ -1127,7 +1068,7 @@ Execute       get_config_rtl -prefix
 Execute       get_config_rtl -auto_prefix 
 Execute       create_rtl_model padding2d_fix16 -vendor xilinx -mg_file /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/padding2d_fix16.compgen.tcl 
 INFO: [RTGEN 206-100] Finished creating RTL model for 'padding2d_fix16'.
-INFO: [HLS 200-111]  Elapsed time: 3.84 seconds; current allocated memory: 446.714 MB.
+INFO: [HLS 200-111]  Elapsed time: 4.23 seconds; current allocated memory: 446.049 MB.
 Execute       source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/network.rtl_wrap.cfg.tcl 
 Execute       gen_rtl padding2d_fix16 -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/masudalab/DeepCAEonFPGA/HLS/network/syn/systemc/padding2d_fix16 -synmodules padding2d_fix16 depthwise_conv2d_fix pointwise_conv2d_fix max_pooling2d_fix16 depthwise_conv2d_fix.2 pointwise_conv2d_fix.1 depthwise_conv2d_fix.1 pointwise_conv2d_fix.2 up_sampling2d_fix16 pointwise_conv2d_fix.3 pointwise_conv2d_fix.4 network 
 Execute       gen_rtl padding2d_fix16 -style xilinx -f -lang vhdl -o /home/masudalab/DeepCAEonFPGA/HLS/network/syn/vhdl/padding2d_fix16 
@@ -1136,7 +1077,7 @@ Execute       gen_tb_info padding2d_fix16 -o /home/masudalab/DeepCAEonFPGA/HLS/n
 Execute       report -model padding2d_fix16 -o /home/masudalab/DeepCAEonFPGA/HLS/network/syn/report/padding2d_fix16_csynth.rpt -f 
 Execute       report -model padding2d_fix16 -o /home/masudalab/DeepCAEonFPGA/HLS/network/syn/report/padding2d_fix16_csynth.xml -f -x 
 Execute       report -model padding2d_fix16 -o /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/padding2d_fix16.verbose.rpt -verbose -f 
-Command       report done; 0.15 sec.
+Command       report done; 0.16 sec.
 Execute       db_write -model padding2d_fix16 -o /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/padding2d_fix16.adb -f 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'depthwise_conv2d_fix' 
@@ -1144,9 +1085,9 @@ INFO: [HLS 200-10] -------------------------------------------------------------
 Execute       get_config_rtl -prefix 
 Execute       get_config_rtl -auto_prefix 
 Execute       create_rtl_model depthwise_conv2d_fix -vendor xilinx -mg_file /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/depthwise_conv2d_fix.compgen.tcl 
-INFO: [RTGEN 206-100] Generating core module 'network_mul_mul_15s_16s_30_3_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'network_mul_mul_15s_16s_30_1_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'depthwise_conv2d_fix'.
-INFO: [HLS 200-111]  Elapsed time: 0.36 seconds; current allocated memory: 449.497 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.36 seconds; current allocated memory: 448.730 MB.
 Execute       source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/network.rtl_wrap.cfg.tcl 
 Execute       gen_rtl depthwise_conv2d_fix -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/masudalab/DeepCAEonFPGA/HLS/network/syn/systemc/depthwise_conv2d_fix -synmodules padding2d_fix16 depthwise_conv2d_fix pointwise_conv2d_fix max_pooling2d_fix16 depthwise_conv2d_fix.2 pointwise_conv2d_fix.1 depthwise_conv2d_fix.1 pointwise_conv2d_fix.2 up_sampling2d_fix16 pointwise_conv2d_fix.3 pointwise_conv2d_fix.4 network 
 Execute       gen_rtl depthwise_conv2d_fix -style xilinx -f -lang vhdl -o /home/masudalab/DeepCAEonFPGA/HLS/network/syn/vhdl/depthwise_conv2d_fix 
@@ -1162,9 +1103,9 @@ INFO: [HLS 200-10] -------------------------------------------------------------
 Execute       get_config_rtl -prefix 
 Execute       get_config_rtl -auto_prefix 
 Execute       create_rtl_model pointwise_conv2d_fix -vendor xilinx -mg_file /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/pointwise_conv2d_fix.compgen.tcl 
-INFO: [RTGEN 206-100] Generating core module 'network_mul_mul_15s_16s_30_3_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'network_mul_mul_15s_16s_30_1_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'pointwise_conv2d_fix'.
-INFO: [HLS 200-111]  Elapsed time: 0.19 seconds; current allocated memory: 451.189 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.19 seconds; current allocated memory: 450.353 MB.
 Execute       source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/network.rtl_wrap.cfg.tcl 
 Execute       gen_rtl pointwise_conv2d_fix -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/masudalab/DeepCAEonFPGA/HLS/network/syn/systemc/pointwise_conv2d_fix -synmodules padding2d_fix16 depthwise_conv2d_fix pointwise_conv2d_fix max_pooling2d_fix16 depthwise_conv2d_fix.2 pointwise_conv2d_fix.1 depthwise_conv2d_fix.1 pointwise_conv2d_fix.2 up_sampling2d_fix16 pointwise_conv2d_fix.3 pointwise_conv2d_fix.4 network 
 Execute       gen_rtl pointwise_conv2d_fix -style xilinx -f -lang vhdl -o /home/masudalab/DeepCAEonFPGA/HLS/network/syn/vhdl/pointwise_conv2d_fix 
@@ -1181,7 +1122,7 @@ Execute       get_config_rtl -prefix
 Execute       get_config_rtl -auto_prefix 
 Execute       create_rtl_model max_pooling2d_fix16 -vendor xilinx -mg_file /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/max_pooling2d_fix16.compgen.tcl 
 INFO: [RTGEN 206-100] Finished creating RTL model for 'max_pooling2d_fix16'.
-INFO: [HLS 200-111]  Elapsed time: 0.17 seconds; current allocated memory: 452.747 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.17 seconds; current allocated memory: 451.763 MB.
 Execute       source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/network.rtl_wrap.cfg.tcl 
 Execute       gen_rtl max_pooling2d_fix16 -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/masudalab/DeepCAEonFPGA/HLS/network/syn/systemc/max_pooling2d_fix16 -synmodules padding2d_fix16 depthwise_conv2d_fix pointwise_conv2d_fix max_pooling2d_fix16 depthwise_conv2d_fix.2 pointwise_conv2d_fix.1 depthwise_conv2d_fix.1 pointwise_conv2d_fix.2 up_sampling2d_fix16 pointwise_conv2d_fix.3 pointwise_conv2d_fix.4 network 
 Execute       gen_rtl max_pooling2d_fix16 -style xilinx -f -lang vhdl -o /home/masudalab/DeepCAEonFPGA/HLS/network/syn/vhdl/max_pooling2d_fix16 
@@ -1197,9 +1138,9 @@ INFO: [HLS 200-10] -------------------------------------------------------------
 Execute       get_config_rtl -prefix 
 Execute       get_config_rtl -auto_prefix 
 Execute       create_rtl_model depthwise_conv2d_fix.2 -vendor xilinx -mg_file /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/depthwise_conv2d_fix_2.compgen.tcl 
-INFO: [RTGEN 206-100] Generating core module 'network_mul_mul_16s_16s_30_3_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'network_mul_mul_16s_16s_30_1_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'depthwise_conv2d_fix_2'.
-INFO: [HLS 200-111]  Elapsed time: 0.24 seconds; current allocated memory: 454.964 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.24 seconds; current allocated memory: 453.825 MB.
 Execute       source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/network.rtl_wrap.cfg.tcl 
 Execute       gen_rtl depthwise_conv2d_fix.2 -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/masudalab/DeepCAEonFPGA/HLS/network/syn/systemc/depthwise_conv2d_fix_2 -synmodules padding2d_fix16 depthwise_conv2d_fix pointwise_conv2d_fix max_pooling2d_fix16 depthwise_conv2d_fix.2 pointwise_conv2d_fix.1 depthwise_conv2d_fix.1 pointwise_conv2d_fix.2 up_sampling2d_fix16 pointwise_conv2d_fix.3 pointwise_conv2d_fix.4 network 
 Execute       gen_rtl depthwise_conv2d_fix.2 -style xilinx -f -lang vhdl -o /home/masudalab/DeepCAEonFPGA/HLS/network/syn/vhdl/depthwise_conv2d_fix_2 
@@ -1215,9 +1156,9 @@ INFO: [HLS 200-10] -------------------------------------------------------------
 Execute       get_config_rtl -prefix 
 Execute       get_config_rtl -auto_prefix 
 Execute       create_rtl_model pointwise_conv2d_fix.1 -vendor xilinx -mg_file /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/pointwise_conv2d_fix_1.compgen.tcl 
-INFO: [RTGEN 206-100] Generating core module 'network_mul_mul_16s_15s_30_3_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'network_mul_mul_16s_15s_30_1_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'pointwise_conv2d_fix_1'.
-INFO: [HLS 200-111]  Elapsed time: 0.28 seconds; current allocated memory: 457.207 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.28 seconds; current allocated memory: 455.973 MB.
 Execute       source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/network.rtl_wrap.cfg.tcl 
 Execute       gen_rtl pointwise_conv2d_fix.1 -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/masudalab/DeepCAEonFPGA/HLS/network/syn/systemc/pointwise_conv2d_fix_1 -synmodules padding2d_fix16 depthwise_conv2d_fix pointwise_conv2d_fix max_pooling2d_fix16 depthwise_conv2d_fix.2 pointwise_conv2d_fix.1 depthwise_conv2d_fix.1 pointwise_conv2d_fix.2 up_sampling2d_fix16 pointwise_conv2d_fix.3 pointwise_conv2d_fix.4 network 
 Execute       gen_rtl pointwise_conv2d_fix.1 -style xilinx -f -lang vhdl -o /home/masudalab/DeepCAEonFPGA/HLS/network/syn/vhdl/pointwise_conv2d_fix_1 
@@ -1233,9 +1174,9 @@ INFO: [HLS 200-10] -------------------------------------------------------------
 Execute       get_config_rtl -prefix 
 Execute       get_config_rtl -auto_prefix 
 Execute       create_rtl_model depthwise_conv2d_fix.1 -vendor xilinx -mg_file /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/depthwise_conv2d_fix_1.compgen.tcl 
-INFO: [RTGEN 206-100] Generating core module 'network_mul_mul_16s_16s_30_3_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'network_mul_mul_16s_16s_30_1_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'depthwise_conv2d_fix_1'.
-INFO: [HLS 200-111]  Elapsed time: 0.23 seconds; current allocated memory: 459.166 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.23 seconds; current allocated memory: 457.871 MB.
 Execute       source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/network.rtl_wrap.cfg.tcl 
 Execute       gen_rtl depthwise_conv2d_fix.1 -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/masudalab/DeepCAEonFPGA/HLS/network/syn/systemc/depthwise_conv2d_fix_1 -synmodules padding2d_fix16 depthwise_conv2d_fix pointwise_conv2d_fix max_pooling2d_fix16 depthwise_conv2d_fix.2 pointwise_conv2d_fix.1 depthwise_conv2d_fix.1 pointwise_conv2d_fix.2 up_sampling2d_fix16 pointwise_conv2d_fix.3 pointwise_conv2d_fix.4 network 
 Execute       gen_rtl depthwise_conv2d_fix.1 -style xilinx -f -lang vhdl -o /home/masudalab/DeepCAEonFPGA/HLS/network/syn/vhdl/depthwise_conv2d_fix_1 
@@ -1251,9 +1192,9 @@ INFO: [HLS 200-10] -------------------------------------------------------------
 Execute       get_config_rtl -prefix 
 Execute       get_config_rtl -auto_prefix 
 Execute       create_rtl_model pointwise_conv2d_fix.2 -vendor xilinx -mg_file /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/pointwise_conv2d_fix_2.compgen.tcl 
-INFO: [RTGEN 206-100] Generating core module 'network_mul_mul_16s_15s_30_3_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'network_mul_mul_16s_15s_30_1_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'pointwise_conv2d_fix_2'.
-INFO: [HLS 200-111]  Elapsed time: 0.29 seconds; current allocated memory: 461.481 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.3 seconds; current allocated memory: 459.987 MB.
 Execute       source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/network.rtl_wrap.cfg.tcl 
 Execute       gen_rtl pointwise_conv2d_fix.2 -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/masudalab/DeepCAEonFPGA/HLS/network/syn/systemc/pointwise_conv2d_fix_2 -synmodules padding2d_fix16 depthwise_conv2d_fix pointwise_conv2d_fix max_pooling2d_fix16 depthwise_conv2d_fix.2 pointwise_conv2d_fix.1 depthwise_conv2d_fix.1 pointwise_conv2d_fix.2 up_sampling2d_fix16 pointwise_conv2d_fix.3 pointwise_conv2d_fix.4 network 
 Execute       gen_rtl pointwise_conv2d_fix.2 -style xilinx -f -lang vhdl -o /home/masudalab/DeepCAEonFPGA/HLS/network/syn/vhdl/pointwise_conv2d_fix_2 
@@ -1270,7 +1211,7 @@ Execute       get_config_rtl -prefix
 Execute       get_config_rtl -auto_prefix 
 Execute       create_rtl_model up_sampling2d_fix16 -vendor xilinx -mg_file /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/up_sampling2d_fix16.compgen.tcl 
 INFO: [RTGEN 206-100] Finished creating RTL model for 'up_sampling2d_fix16'.
-INFO: [HLS 200-111]  Elapsed time: 0.24 seconds; current allocated memory: 463.145 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.25 seconds; current allocated memory: 461.630 MB.
 Execute       source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/network.rtl_wrap.cfg.tcl 
 Execute       gen_rtl up_sampling2d_fix16 -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/masudalab/DeepCAEonFPGA/HLS/network/syn/systemc/up_sampling2d_fix16 -synmodules padding2d_fix16 depthwise_conv2d_fix pointwise_conv2d_fix max_pooling2d_fix16 depthwise_conv2d_fix.2 pointwise_conv2d_fix.1 depthwise_conv2d_fix.1 pointwise_conv2d_fix.2 up_sampling2d_fix16 pointwise_conv2d_fix.3 pointwise_conv2d_fix.4 network 
 Execute       gen_rtl up_sampling2d_fix16 -style xilinx -f -lang vhdl -o /home/masudalab/DeepCAEonFPGA/HLS/network/syn/vhdl/up_sampling2d_fix16 
@@ -1286,9 +1227,9 @@ INFO: [HLS 200-10] -------------------------------------------------------------
 Execute       get_config_rtl -prefix 
 Execute       get_config_rtl -auto_prefix 
 Execute       create_rtl_model pointwise_conv2d_fix.3 -vendor xilinx -mg_file /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/pointwise_conv2d_fix_3.compgen.tcl 
-INFO: [RTGEN 206-100] Generating core module 'network_mul_mul_16s_15s_30_3_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'network_mul_mul_16s_15s_30_1_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'pointwise_conv2d_fix_3'.
-INFO: [HLS 200-111]  Elapsed time: 0.21 seconds; current allocated memory: 464.789 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.23 seconds; current allocated memory: 463.179 MB.
 Execute       source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/network.rtl_wrap.cfg.tcl 
 Execute       gen_rtl pointwise_conv2d_fix.3 -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/masudalab/DeepCAEonFPGA/HLS/network/syn/systemc/pointwise_conv2d_fix_3 -synmodules padding2d_fix16 depthwise_conv2d_fix pointwise_conv2d_fix max_pooling2d_fix16 depthwise_conv2d_fix.2 pointwise_conv2d_fix.1 depthwise_conv2d_fix.1 pointwise_conv2d_fix.2 up_sampling2d_fix16 pointwise_conv2d_fix.3 pointwise_conv2d_fix.4 network 
 Execute       gen_rtl pointwise_conv2d_fix.3 -style xilinx -f -lang vhdl -o /home/masudalab/DeepCAEonFPGA/HLS/network/syn/vhdl/pointwise_conv2d_fix_3 
@@ -1305,9 +1246,9 @@ INFO: [HLS 200-10] -------------------------------------------------------------
 Execute       get_config_rtl -prefix 
 Execute       get_config_rtl -auto_prefix 
 Execute       create_rtl_model pointwise_conv2d_fix.4 -vendor xilinx -mg_file /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/pointwise_conv2d_fix_4.compgen.tcl 
-INFO: [RTGEN 206-100] Generating core module 'network_mul_mul_15s_16s_30_3_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'network_mul_mul_15s_16s_30_1_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'pointwise_conv2d_fix_4'.
-INFO: [HLS 200-111]  Elapsed time: 0.26 seconds; current allocated memory: 466.540 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.27 seconds; current allocated memory: 464.886 MB.
 Execute       source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/network.rtl_wrap.cfg.tcl 
 Execute       gen_rtl pointwise_conv2d_fix.4 -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/masudalab/DeepCAEonFPGA/HLS/network/syn/systemc/pointwise_conv2d_fix_4 -synmodules padding2d_fix16 depthwise_conv2d_fix pointwise_conv2d_fix max_pooling2d_fix16 depthwise_conv2d_fix.2 pointwise_conv2d_fix.1 depthwise_conv2d_fix.1 pointwise_conv2d_fix.2 up_sampling2d_fix16 pointwise_conv2d_fix.3 pointwise_conv2d_fix.4 network 
 Execute       gen_rtl pointwise_conv2d_fix.4 -style xilinx -f -lang vhdl -o /home/masudalab/DeepCAEonFPGA/HLS/network/syn/vhdl/pointwise_conv2d_fix_4 
@@ -1317,6 +1258,7 @@ Execute       report -model pointwise_conv2d_fix.4 -o /home/masudalab/DeepCAEonF
 Execute       report -model pointwise_conv2d_fix.4 -o /home/masudalab/DeepCAEonFPGA/HLS/network/syn/report/pointwise_conv2d_fix_4_csynth.xml -f -x 
 Execute       report -model pointwise_conv2d_fix.4 -o /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/pointwise_conv2d_fix_4.verbose.rpt -verbose -f 
 Execute       db_write -model pointwise_conv2d_fix.4 -o /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/pointwise_conv2d_fix_4.adb -f 
+Command       db_write done; 0.11 sec.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'network' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -1340,24 +1282,25 @@ INFO: [RTGEN 206-500] Setting interface mode on port 'network/output_data_V_dest
 INFO: [RTGEN 206-500] Setting interface mode on function 'network' to 's_axilite & ap_ctrl_hs' (register).
 INFO: [RTGEN 206-100] Bundling port 'return' to AXI-Lite port AXILiteS.
 INFO: [RTGEN 206-100] Finished creating RTL model for 'network'.
-Command       create_rtl_model done; 2.29 sec.
-INFO: [HLS 200-111]  Elapsed time: 2.51 seconds; current allocated memory: 491.252 MB.
+Command       create_rtl_model done; 2.05 sec.
+INFO: [HLS 200-111]  Elapsed time: 2.27 seconds; current allocated memory: 484.537 MB.
 Execute       source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/network.rtl_wrap.cfg.tcl 
 Execute       gen_rtl network -istop -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/masudalab/DeepCAEonFPGA/HLS/network/syn/systemc/network -synmodules padding2d_fix16 depthwise_conv2d_fix pointwise_conv2d_fix max_pooling2d_fix16 depthwise_conv2d_fix.2 pointwise_conv2d_fix.1 depthwise_conv2d_fix.1 pointwise_conv2d_fix.2 up_sampling2d_fix16 pointwise_conv2d_fix.3 pointwise_conv2d_fix.4 network 
 Execute       gen_rtl network -istop -style xilinx -f -lang vhdl -o /home/masudalab/DeepCAEonFPGA/HLS/network/syn/vhdl/network 
+Command       gen_rtl done; 0.11 sec.
 Execute       gen_rtl network -istop -style xilinx -f -lang vlog -o /home/masudalab/DeepCAEonFPGA/HLS/network/syn/verilog/network 
 Execute       export_constraint_db -o /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/network.constraint.tcl -f -tool general 
 Execute       report -model network -o /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/network.design.xml -verbose -f -dv 
-Command       report done; 0.41 sec.
+Command       report done; 0.42 sec.
 Execute       report -model network -o /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/network.sdaccel.xml -verbose -f -sdaccel 
-Command       report done; 0.41 sec.
+Command       report done; 0.4 sec.
 Execute       gen_tb_info network -o /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/network -p /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db 
 Execute       report -model network -o /home/masudalab/DeepCAEonFPGA/HLS/network/syn/report/network_csynth.rpt -f 
 Execute       report -model network -o /home/masudalab/DeepCAEonFPGA/HLS/network/syn/report/network_csynth.xml -f -x 
 Execute       report -model network -o /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/network.verbose.rpt -verbose -f 
-Command       report done; 3.18 sec.
+Command       report done; 3.45 sec.
 Execute       db_write -model network -o /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/network.adb -f 
-Command       db_write done; 0.88 sec.
+Command       db_write done; 0.92 sec.
 Execute       sc_get_clocks network 
 Execute       get_config_export -vivado_clock 
 Execute       sc_get_portdomain network 
@@ -1366,8 +1309,8 @@ INFO-FLOW: Handling components in module [padding2d_fix16] ...
 Execute       source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/padding2d_fix16.compgen.tcl 
 INFO-FLOW: Handling components in module [depthwise_conv2d_fix] ... 
 Execute       source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/depthwise_conv2d_fix.compgen.tcl 
-INFO-FLOW: Found component network_mul_mul_15s_16s_30_3_1.
-INFO-FLOW: Append model network_mul_mul_15s_16s_30_3_1
+INFO-FLOW: Found component network_mul_mul_15s_16s_30_1_1.
+INFO-FLOW: Append model network_mul_mul_15s_16s_30_1_1
 INFO-FLOW: Found component depthwise_conv2d_fix_SeparableConv2D_0_w_1.
 INFO-FLOW: Append model depthwise_conv2d_fix_SeparableConv2D_0_w_1
 INFO-FLOW: Handling components in module [pointwise_conv2d_fix] ... 
@@ -1380,12 +1323,12 @@ INFO-FLOW: Handling components in module [max_pooling2d_fix16] ...
 Execute       source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/max_pooling2d_fix16.compgen.tcl 
 INFO-FLOW: Handling components in module [depthwise_conv2d_fix_2] ... 
 Execute       source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/depthwise_conv2d_fix_2.compgen.tcl 
-INFO-FLOW: Found component network_mul_mul_16s_16s_30_3_1.
-INFO-FLOW: Append model network_mul_mul_16s_16s_30_3_1
+INFO-FLOW: Found component network_mul_mul_16s_16s_30_1_1.
+INFO-FLOW: Append model network_mul_mul_16s_16s_30_1_1
 INFO-FLOW: Handling components in module [pointwise_conv2d_fix_1] ... 
 Execute       source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/pointwise_conv2d_fix_1.compgen.tcl 
-INFO-FLOW: Found component network_mul_mul_16s_15s_30_3_1.
-INFO-FLOW: Append model network_mul_mul_16s_15s_30_3_1
+INFO-FLOW: Found component network_mul_mul_16s_15s_30_1_1.
+INFO-FLOW: Append model network_mul_mul_16s_15s_30_1_1
 INFO-FLOW: Found component pointwise_conv2d_fix_1_SeparableConv2D_1_b_s.
 INFO-FLOW: Append model pointwise_conv2d_fix_1_SeparableConv2D_1_b_s
 INFO-FLOW: Found component pointwise_conv2d_fix_1_SeparableConv2D_1_w_s.
@@ -1445,13 +1388,13 @@ INFO-FLOW: Append model pointwise_conv2d_fix_3
 INFO-FLOW: Append model pointwise_conv2d_fix_4
 INFO-FLOW: Append model network
 INFO-FLOW: Generating RTL model list ...
-INFO-FLOW: All models in this session: network_mul_mul_15s_16s_30_3_1 depthwise_conv2d_fix_SeparableConv2D_0_w_1 pointwise_conv2d_fix_SeparableConv2D_0_b_s pointwise_conv2d_fix_SeparableConv2D_0_w_s network_mul_mul_16s_16s_30_3_1 network_mul_mul_16s_15s_30_3_1 pointwise_conv2d_fix_1_SeparableConv2D_1_b_s pointwise_conv2d_fix_1_SeparableConv2D_1_w_s pointwise_conv2d_fix_2_SeparableConv2D_2_b_s pointwise_conv2d_fix_2_SeparableConv2D_2_w_s pointwise_conv2d_fix_3_SeparableConv2D_3_b_s pointwise_conv2d_fix_3_SeparableConv2D_3_w_s pointwise_conv2d_fix_4_SeparableConv2D_4_w_s network_SeparableConv2D_1_b_1 network_SeparableConv2D_1_w_1 network_SeparableConv2D_2_b_1 network_SeparableConv2D_2_w_1 network_SeparableConv2D_3_w_1 network_SeparableConv2D_4_w_1 network_MemBank_A network_MemBank_B network_MemBank_Out network_AXILiteS_s_axi padding2d_fix16 depthwise_conv2d_fix pointwise_conv2d_fix max_pooling2d_fix16 depthwise_conv2d_fix_2 pointwise_conv2d_fix_1 depthwise_conv2d_fix_1 pointwise_conv2d_fix_2 up_sampling2d_fix16 pointwise_conv2d_fix_3 pointwise_conv2d_fix_4 network
-INFO-FLOW: To file: write model network_mul_mul_15s_16s_30_3_1
+INFO-FLOW: All models in this session: network_mul_mul_15s_16s_30_1_1 depthwise_conv2d_fix_SeparableConv2D_0_w_1 pointwise_conv2d_fix_SeparableConv2D_0_b_s pointwise_conv2d_fix_SeparableConv2D_0_w_s network_mul_mul_16s_16s_30_1_1 network_mul_mul_16s_15s_30_1_1 pointwise_conv2d_fix_1_SeparableConv2D_1_b_s pointwise_conv2d_fix_1_SeparableConv2D_1_w_s pointwise_conv2d_fix_2_SeparableConv2D_2_b_s pointwise_conv2d_fix_2_SeparableConv2D_2_w_s pointwise_conv2d_fix_3_SeparableConv2D_3_b_s pointwise_conv2d_fix_3_SeparableConv2D_3_w_s pointwise_conv2d_fix_4_SeparableConv2D_4_w_s network_SeparableConv2D_1_b_1 network_SeparableConv2D_1_w_1 network_SeparableConv2D_2_b_1 network_SeparableConv2D_2_w_1 network_SeparableConv2D_3_w_1 network_SeparableConv2D_4_w_1 network_MemBank_A network_MemBank_B network_MemBank_Out network_AXILiteS_s_axi padding2d_fix16 depthwise_conv2d_fix pointwise_conv2d_fix max_pooling2d_fix16 depthwise_conv2d_fix_2 pointwise_conv2d_fix_1 depthwise_conv2d_fix_1 pointwise_conv2d_fix_2 up_sampling2d_fix16 pointwise_conv2d_fix_3 pointwise_conv2d_fix_4 network
+INFO-FLOW: To file: write model network_mul_mul_15s_16s_30_1_1
 INFO-FLOW: To file: write model depthwise_conv2d_fix_SeparableConv2D_0_w_1
 INFO-FLOW: To file: write model pointwise_conv2d_fix_SeparableConv2D_0_b_s
 INFO-FLOW: To file: write model pointwise_conv2d_fix_SeparableConv2D_0_w_s
-INFO-FLOW: To file: write model network_mul_mul_16s_16s_30_3_1
-INFO-FLOW: To file: write model network_mul_mul_16s_15s_30_3_1
+INFO-FLOW: To file: write model network_mul_mul_16s_16s_30_1_1
+INFO-FLOW: To file: write model network_mul_mul_16s_15s_30_1_1
 INFO-FLOW: To file: write model pointwise_conv2d_fix_1_SeparableConv2D_1_b_s
 INFO-FLOW: To file: write model pointwise_conv2d_fix_1_SeparableConv2D_1_w_s
 INFO-FLOW: To file: write model pointwise_conv2d_fix_2_SeparableConv2D_2_b_s
@@ -1515,7 +1458,7 @@ Execute             source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/
 Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
 Execute       source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
 Execute         source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
-INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=4.400 (was NA)
+INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
 INFO-FLOW: DBG:CMD:       generate_ip_cores sim=1 export=0 expOnly=0 dstVlogDir=syn/verilog
 Execute       source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/global.setting.tcl 
 Execute       source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/global.setting.tcl 
@@ -1663,22 +1606,22 @@ Execute       get_config_sdx -profile
 Execute       ::config_rtl 
 INFO-FLOW: DBG:CMD: add_json_sdx_info kernel file does not exist: /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/kernel.internal.xml
 INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
-INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:01:29 ; elapsed = 00:01:38 . Memory (MB): peak = 1038.883 ; gain = 600.020 ; free physical = 9625 ; free virtual = 14751
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:01:30 ; elapsed = 00:01:35 . Memory (MB): peak = 1030.871 ; gain = 592.012 ; free physical = 4121 ; free virtual = 10807
 INFO: [SYSC 207-301] Generating SystemC RTL for network.
 INFO: [VHDL 208-304] Generating VHDL RTL for network.
 INFO: [VLOG 209-307] Generating Verilog RTL for network.
-Command     autosyn done; 31.08 sec.
+Command     autosyn done; 31.39 sec.
 Execute     get_part 
 Execute     get_config_export -sdx_tcl 
-Command   csynth_design done; 97.33 sec.
-Command ap_source done; 97.66 sec.
+Command   csynth_design done; 94.7 sec.
+Command ap_source done; 95.2 sec.
 Execute cleanup_all 
-Command cleanup_all done; 0.27 sec.
-INFO-FLOW: Workspace /home/masudalab/DeepCAEonFPGA/HLS/network opened at Thu Dec 12 12:29:52 JST 2019
-Execute     config_clock -quiet -name default -period 4.4 -default=false 
-INFO: [SYN 201-201] Setting up clock 'default' with a period of 4.4ns.
-Execute     config_clock -quiet -name default -uncertainty 1.267 -unit % 
-INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.267ns.
+Command cleanup_all done; 0.28 sec.
+INFO-FLOW: Workspace /home/masudalab/DeepCAEonFPGA/HLS/network opened at Mon Dec 16 17:16:30 JST 2019
+Execute     config_clock -quiet -name default -period 10 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     config_clock -quiet -name default -uncertainty 1.25 -unit % 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
 Execute     open_platform DefaultPlatform 
 Execute     import_lib /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq 
 Execute       source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.lib 
@@ -1725,7 +1668,10 @@ Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/ip
 Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
 Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
 Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Command         ap_source done; 0.11 sec.
 Execute         source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.11 sec.
+Command     ap_source done; 0.11 sec.
 Execute     set_part xc7z020clg400-1 
 Execute       add_library xilinx/zynq/zynq:xc7z020:clg400:-1 
 Execute         get_default_platform 
@@ -1802,10 +1748,7 @@ Execute       get_config_interface -m_axi_addr64
 Execute       send_msg_by_id INFO @200-435@%s%s 'config_sdx -target' set_clock_uncertainty default 
 INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
 Execute       set_clock_uncertainty default 
-Execute         get_clock_period -default -name=default 
-Execute         config_clock -quiet -name default -uncertainty 0.55 -unit % 
-INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.55ns.
-Command   open_solution done; 0.2 sec.
+Command   open_solution done; 0.22 sec.
 Execute   cosim_design -trace_level all 
 Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/global.setting.tcl 
 Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/global.setting.tcl 
@@ -1835,7 +1778,7 @@ Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/ip
 Execute         source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
 Execute     source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
 Execute       source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
-INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=4.400 (was NA)
+INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
 Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/global.setting.tcl 
 Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/network.rtl_wrap.cfg.tcl 
 Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/network.tbgen.tcl 
@@ -1878,7 +1821,7 @@ Execute     get_default_platform
 INFO-FLOW: TB processing: /home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp /home/masudalab/DeepCAEonFPGA/HLS/network/./sim/autowrap/testbench/mnist_AXI_Stream.cpp_pre.cpp
 Execute     tidy_31 xilinx-tb-xfmat /home/masudalab/DeepCAEonFPGA/HLS/network/./sim/autowrap/testbench/mnist_AXI_Stream.cpp_pre.cpp std=c++14 
 INFO-FLOW: exec /tools/Xilinx/Vivado/2018.3/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-tb-xfmat -quiet -fix-errors /home/masudalab/DeepCAEonFPGA/HLS/network/./sim/autowrap/testbench/mnist_AXI_Stream.cpp_pre.cpp -- -std=c++14 -fhls -ferror-limit=0
-Command     tidy_31 done; 1.16 sec.
+Command     tidy_31 done; 1.23 sec.
 INFO-FLOW: Marker-Pragma convertor: /home/masudalab/DeepCAEonFPGA/HLS/network/./sim/autowrap/testbench/mnist_AXI_Stream.cpp_pre.cpp /home/masudalab/DeepCAEonFPGA/HLS/network/./sim/autowrap/testbench/mnist_AXI_Stream.cpp_pre.cpp.line.cpp ./sim/autowrap/testbench/line.tmp 1
 INFO-FLOW: Converting Markers to Pragmas...
 INFO-FLOW: Marker-Pragma convertor: /home/masudalab/DeepCAEonFPGA/HLS/network/./sim/autowrap/testbench/mnist_AXI_Stream.cpp_pre.cpp.tb.cpp.line /home/masudalab/DeepCAEonFPGA/HLS/network/./sim/autowrap/testbench/mnist_AXI_Stream.cpp_pre.cpp.tb.cpp ./sim/autowrap/testbench/line.tmp 0
@@ -1887,7 +1830,7 @@ Execute     get_default_platform
 INFO-FLOW: TB processing: /home/masudalab/DeepCAEonFPGA/layers_cpp/array_printf_fix16.cpp /home/masudalab/DeepCAEonFPGA/HLS/network/./sim/autowrap/testbench/array_printf_fix16.cpp_pre.cpp
 Execute     tidy_31 xilinx-tb-xfmat /home/masudalab/DeepCAEonFPGA/HLS/network/./sim/autowrap/testbench/array_printf_fix16.cpp_pre.cpp std=c++14 
 INFO-FLOW: exec /tools/Xilinx/Vivado/2018.3/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-tb-xfmat -quiet -fix-errors /home/masudalab/DeepCAEonFPGA/HLS/network/./sim/autowrap/testbench/array_printf_fix16.cpp_pre.cpp -- -std=c++14 -fhls -ferror-limit=0
-Command     tidy_31 done; 0.27 sec.
+Command     tidy_31 done; 0.28 sec.
 INFO-FLOW: Marker-Pragma convertor: /home/masudalab/DeepCAEonFPGA/HLS/network/./sim/autowrap/testbench/array_printf_fix16.cpp_pre.cpp /home/masudalab/DeepCAEonFPGA/HLS/network/./sim/autowrap/testbench/array_printf_fix16.cpp_pre.cpp.line.cpp ./sim/autowrap/testbench/line.tmp 1
 INFO-FLOW: Converting Markers to Pragmas...
 INFO-FLOW: Marker-Pragma convertor: /home/masudalab/DeepCAEonFPGA/HLS/network/./sim/autowrap/testbench/array_printf_fix16.cpp_pre.cpp.tb.cpp.line /home/masudalab/DeepCAEonFPGA/HLS/network/./sim/autowrap/testbench/array_printf_fix16.cpp_pre.cpp.tb.cpp ./sim/autowrap/testbench/line.tmp 0
@@ -1958,7 +1901,7 @@ Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/netwo
 Execute     get_default_platform 
 Execute     source .run_sim.tcl 
 INFO: [COSIM 212-302] Starting C TB testing ... 
-Command     ap_source done; 0.33 sec.
+Command     ap_source done; 0.22 sec.
 INFO: [COSIM 212-333] Generating C post check test bench ...
 Execute     get_default_platform 
 INFO: [COSIM 212-12] Generating RTL test bench ...
@@ -2002,17 +1945,17 @@ Execute       source .sim.status.tcl
 INFO: [COSIM 212-323] Starting verilog simulation. 
 INFO: [COSIM 212-15] Starting XSIM ...
 INFO: [COSIM 212-316] Starting C post checking ...
-Command     ap_source done; 167.49 sec.
+Command     ap_source done; 89.53 sec.
 INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
 INFO: [COSIM 212-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.
-Command   cosim_design done; 196.98 sec.
-Command ap_source done; 197.18 sec.
+Command   cosim_design done; 118.58 sec.
+Command ap_source done; 118.8 sec.
 Execute cleanup_all 
-INFO-FLOW: Workspace /home/masudalab/DeepCAEonFPGA/HLS/network opened at Thu Dec 12 15:34:45 JST 2019
-Execute     config_clock -quiet -name default -period 4.4 -default=false 
-INFO: [SYN 201-201] Setting up clock 'default' with a period of 4.4ns.
-Execute     config_clock -quiet -name default -uncertainty 0.55 -unit % 
-INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.55ns.
+INFO-FLOW: Workspace /home/masudalab/DeepCAEonFPGA/HLS/network opened at Mon Dec 16 17:27:25 JST 2019
+Execute     config_clock -quiet -name default -period 10 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     config_clock -quiet -name default -uncertainty 1.25 -unit % 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
 Execute     open_platform DefaultPlatform 
 Execute     import_lib /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq 
 Execute       source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.lib 
@@ -2059,21 +2002,10 @@ Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/ip
 Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
 Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
 Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Command         ap_source done; 0.11 sec.
 Execute         source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
-Execute     open_platform DefaultPlatform 
-Execute     import_lib /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6 
-Execute       source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv7.lib 
-Execute         source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_hp.lib 
-Execute       source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv.hlp 
-Execute         source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute             source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute             source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute       source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_hp.hlp 
-Execute     source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
-Execute       source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+Command       ap_source done; 0.12 sec.
+Command     ap_source done; 0.12 sec.
 Execute     set_part xc7z020clg400-1 
 Execute       add_library xilinx/zynq/zynq:xc7z020:clg400:-1 
 Execute         get_default_platform 
@@ -2084,6 +2016,20 @@ Execute         config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}   
 Execute         config_chip_info -quiet -speed slow 
 Execute       add_library xilinx/zynq/zynq_fpv6 
 Execute         get_default_platform 
+Execute         open_platform DefaultPlatform 
+Execute         import_lib /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv7.lib 
+Execute             source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_hp.lib 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv.hlp 
+Execute             source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute               source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute               source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute                 source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute                 source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute               source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_hp.hlp 
+Execute         source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
 INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
 Execute       get_default_platform 
 Execute     get_default_platform 
@@ -2136,7 +2082,7 @@ Execute       get_config_interface -m_axi_addr64
 Execute       send_msg_by_id INFO @200-435@%s%s 'config_sdx -target' set_clock_uncertainty default 
 INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
 Execute       set_clock_uncertainty default 
-Command   open_solution done; 0.2 sec.
+Command   open_solution done; 0.22 sec.
 Execute   export_design -rtl verilog -format ip_catalog 
 Execute     get_config_export -acc 
 Execute     get_config_export -clock_margin 
@@ -2190,9 +2136,11 @@ Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/ip
 Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
 Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
 Execute         source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.11 sec.
+Command     ap_source done; 0.11 sec.
 Execute     source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
 Execute       source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
-INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=4.400 (was NA)
+INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
 Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/global.setting.tcl 
 INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
 Execute     source /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/global.setting.tcl 
@@ -2343,10 +2291,13 @@ Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/ip
 Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
 Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
 Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Command         ap_source done; 0.11 sec.
 Execute         source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.11 sec.
+Command     ap_source done; 0.11 sec.
 Execute     source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
 Execute       source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
 INFO-FLOW: DBG:CMD:     exec /home/masudalab/DeepCAEonFPGA/HLS/network/impl/ip/pack.sh
-Command   export_design done; 10.96 sec.
-Command ap_source done; 11.16 sec.
+Command   export_design done; 10.5 sec.
+Command ap_source done; 10.72 sec.
 Execute cleanup_all 

@@ -262,7 +262,6 @@ uint16_t output_depth, uint16_t output_height, uint16_t output_width, int16_t* o
         }
     }
 #pragma empty_line
-#pragma empty_line
  return(0);
 }
 #pragma empty_line

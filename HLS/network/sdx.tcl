@@ -1,5 +1,5 @@
 # ==============================================================
-# File generated on Thu Dec 12 12:28:31 JST 2019
+# File generated on Mon Dec 16 17:15:00 JST 2019
 # Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3.1 (64-bit)
 # SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
 # IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
@@ -38,8 +38,8 @@ add_files weights_c/Conv2D_2_fix16.h
 add_files weights_c/Conv2D_1_fix16.h
 add_files weights_c/Conv2D_0_fix16.h
 set_part xc7z020clg400-1
-create_clock -name default -period 4.4
-set_clock_uncertainty 28.8% default
+create_clock -name default -period 100MHz
+set_clock_uncertainty 12.5% default
 config_compile -no_signed_zeros=0
 config_compile -unsafe_math_optimizations=0
 config_schedule -effort=medium

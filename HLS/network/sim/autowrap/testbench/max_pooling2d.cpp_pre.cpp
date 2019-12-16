@@ -262,7 +262,6 @@ uint16_t output_depth, uint16_t output_height, uint16_t output_width, int16_t* o
         }
     }
 
-
  return(0);
 }
 

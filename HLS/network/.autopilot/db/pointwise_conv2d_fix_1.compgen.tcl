@@ -1,22 +1,16 @@
 # This script segment is generated automatically by AutoPilot
 
 set id 33
-set name network_mul_mul_16s_15s_30_3_1
+set name network_mul_mul_16s_15s_30_1_1
 set corename simcore_mul
 set op mul
-set stage_num 3
+set stage_num 1
 set max_latency -1
 set registered_input 1
-set clk_width 1
-set clk_signed 0
-set reset_width 1
-set reset_signed 0
 set in0_width 16
 set in0_signed 1
 set in1_width 15
 set in1_signed 1
-set ce_width 1
-set ce_signed 0
 set out_width 30
 set exp i0*i1
 set arg_lists {i0 {16 1 +} i1 {15 1 +} p {30 1 +} acc {0} }
@@ -34,16 +28,10 @@ eval "ap_gen_simcore_mul { \
     stage_num ${stage_num} \
     max_latency ${max_latency} \
     registered_input ${registered_input} \
-    clk_width ${clk_width} \
-    clk_signed ${clk_signed} \
-    reset_width ${reset_width} \
-    reset_signed ${reset_signed} \
     in0_width ${in0_width} \
     in0_signed ${in0_signed} \
     in1_width ${in1_width} \
     in1_signed ${in1_signed} \
-    ce_width ${ce_width} \
-    ce_signed ${ce_signed} \
     out_width ${out_width} \
     exp ${exp} \
     arg_lists {${arg_lists}} \
@@ -74,16 +62,10 @@ eval "::AESL_LIB_VIRTEX::xil_gen_dsp48 { \
     stage_num ${stage_num} \
     max_latency ${max_latency} \
     registered_input ${registered_input} \
-    clk_width ${clk_width} \
-    clk_signed ${clk_signed} \
-    reset_width ${reset_width} \
-    reset_signed ${reset_signed} \
     in0_width ${in0_width} \
     in0_signed ${in0_signed} \
     in1_width ${in1_width} \
     in1_signed ${in1_signed} \
-    ce_width ${ce_width} \
-    ce_signed ${ce_signed} \
     out_width ${out_width} \
     exp ${exp} \
     arg_lists {${arg_lists}} \
@@ -110,8 +92,8 @@ set HasInitializer 1
 set Initializer $ROMData
 set NumOfStage 2
 set MaxLatency -1
-set DelayBudget 1.682
-set ClkPeriod 4.4
+set DelayBudget 3.254
+set ClkPeriod 10
 set RegisteredInput 0
 if {${::AESL::PGuard_simmodel_gen}} {
 if {[info proc ap_gen_simcore_mem] == "ap_gen_simcore_mem"} {
@@ -193,8 +175,8 @@ set HasInitializer 1
 set Initializer $ROMData
 set NumOfStage 2
 set MaxLatency -1
-set DelayBudget 1.682
-set ClkPeriod 4.4
+set DelayBudget 3.254
+set ClkPeriod 10
 set RegisteredInput 0
 if {${::AESL::PGuard_simmodel_gen}} {
 if {[info proc ap_gen_simcore_mem] == "ap_gen_simcore_mem"} {
