@@ -2,8 +2,8 @@
 # Vivado v2018.3.1 (64-bit)
 # SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
 # IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
-# Start of session at: Mon Dec 16 20:07:43 2019
-# Process ID: 23474
+# Start of session at: Mon Dec 16 20:43:45 2019
+# Process ID: 27197
 # Current directory: /home/masudalab/DeepCAEonFPGA
 # Command line: vivado
 # Log file: /home/masudalab/DeepCAEonFPGA/vivado.log
@@ -16,7 +16,7 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/masudalab/DeepCAEonFPGA/ip_generated'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2018.3/data/ip'.
-open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:08 . Memory (MB): peak = 6493.285 ; gain = 182.887 ; free physical = 7585 ; free virtual = 14496
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:08 . Memory (MB): peak = 6470.285 ; gain = 190.152 ; free physical = 7589 ; free virtual = 14501
 update_compile_order -fileset sources_1
 open_bd_design {/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/design_1.bd}
 Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
@@ -27,96 +27,53 @@ Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
 Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
 Adding cell -- xilinx.com:ip:smartconnect:1.0 - axi_smc
 Adding cell -- xilinx.com:ip:axi_dma:7.1 - axi_dma_out
-Adding cell -- xilinx.com:hls:network:1.0 - network_0
 Successfully read diagram <design_1> from BD file </home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/design_1.bd>
-CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
-CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.033 . PS DDR interfaces might fail when entering negative DQS skew values. 
-CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
-CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.033 . PS DDR interfaces might fail when entering negative DQS skew values. 
-WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
-ERROR: [PS7-1] Undefined Preset or invalid XML project file
-ERROR: [Common 17-39] 'send_msg_id' failed due to earlier errors.
-ERROR: [IP_Flow 19-3322] Tcl error in update_all procedure. Failed to evaluate Tcl procedure update_all
-CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
-CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.033 . PS DDR interfaces might fail when entering negative DQS skew values. 
 startgroup
-set_property -dict [list CONFIG.PCW_IMPORT_BOARD_PRESET {/home/masudalab/PYNQ_Develop/pynq_revC.tcl} CONFIG.PCW_QSPI_GRP_SINGLE_SS_ENABLE {1}] [get_bd_cells processing_system7_0]
-ERROR: [PS7-1] Undefined Preset or invalid XML project file
-ERROR: [Common 17-39] 'send_msg_id' failed due to earlier errors.
-ERROR: [IP_Flow 19-3322] Tcl error in update_all procedure. Failed to evaluate Tcl procedure update_all
+set_property -dict [list CONFIG.c_mm2s_burst_size {8}] [get_bd_cells axi_dma_in]
 endgroup
-CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
-CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.033 . PS DDR interfaces might fail when entering negative DQS skew values. 
-WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+startgroup
+set_property -dict [list CONFIG.c_s2mm_burst_size {8}] [get_bd_cells axi_dma_out]
+endgroup
 startgroup
 endgroup
-CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
-CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.033 . PS DDR interfaces might fail when entering negative DQS skew values. 
-WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
-ERROR: [PS7-1] Undefined Preset or invalid XML project file
-ERROR: [Common 17-39] 'send_msg_id' failed due to earlier errors.
-ERROR: [IP_Flow 19-3322] Tcl error in update_all procedure. Failed to evaluate Tcl procedure update_all
 startgroup
-set_property -dict [list CONFIG.PCW_IMPORT_BOARD_PRESET {/home/masudalab/PYNQ_Develop/pynq_revC.tcl}] [get_bd_cells processing_system7_0]
 endgroup
-CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
-CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.033 . PS DDR interfaces might fail when entering negative DQS skew values. 
-WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
-CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
-CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.033 . PS DDR interfaces might fail when entering negative DQS skew values. 
-CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
-CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.033 . PS DDR interfaces might fail when entering negative DQS skew values. 
 startgroup
-set_property -dict [list CONFIG.PCW_USE_S_AXI_GP0 {1} CONFIG.PCW_QSPI_GRP_SINGLE_SS_ENABLE {1}] [get_bd_cells processing_system7_0]
-CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
-CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.033 . PS DDR interfaces might fail when entering negative DQS skew values. 
 endgroup
-apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_slave {Auto} Clk_xbar {/processing_system7_0/FCLK_CLK0 (100 MHz)} Master {/axi_dma_in/M_AXI_MM2S} Slave {/processing_system7_0/S_AXI_GP0} intc_ip {/axi_smc} master_apm {0}}  [get_bd_intf_pins processing_system7_0/S_AXI_GP0]
-CRITICAL WARNING: [BD 41-1376] Forcibly mapping </processing_system7_0/S_AXI_GP0/GP0_DDR_LOWOCM> into conflicting address 0x0000000000000000 [ 512M ] in address space </axi_dma_in/Data_MM2S>. This must be resolved before passing validation
-CRITICAL WARNING: [BD 41-1376] Forcibly mapping </processing_system7_0/S_AXI_GP0/GP0_DDR_LOWOCM> into conflicting address 0x0000000000000000 [ 512M ] in address space </axi_dma_out/Data_S2MM>. This must be resolved before passing validation
-</processing_system7_0/S_AXI_GP0/GP0_DDR_LOWOCM> is being mapped into </axi_dma_in/Data_MM2S> at <0x00000000 [ 512M ]>
-</processing_system7_0/S_AXI_GP0/GP0_DDR_LOWOCM> is being mapped into </axi_dma_out/Data_S2MM> at <0x00000000 [ 512M ]>
-</processing_system7_0/S_AXI_GP0/GP0_QSPI_LINEAR> is being mapped into </axi_dma_in/Data_MM2S> at <0xFC000000 [ 16M ]>
-</processing_system7_0/S_AXI_GP0/GP0_QSPI_LINEAR> is being mapped into </axi_dma_out/Data_S2MM> at <0xFC000000 [ 16M ]>
-</processing_system7_0/S_AXI_GP0/GP0_IOP> is being mapped into </axi_dma_in/Data_MM2S> at <0xE0000000 [ 4M ]>
-INFO: [BD 41-1051] The usage <register> of peripheral </processing_system7_0/S_AXI_GP0/GP0_IOP> does not match the usage <memory> of master </axi_dma_in/Data_MM2S> and will be excluded using sparse connectivity from its address space. Use the include_bd_addr_seg command to override this precaution and make this peripheral visible within this masters address space.
-Excluding </processing_system7_0/S_AXI_GP0/GP0_IOP> from </axi_dma_in/Data_MM2S>
-</processing_system7_0/S_AXI_GP0/GP0_IOP> is being mapped into </axi_dma_out/Data_S2MM> at <0xE0000000 [ 4M ]>
-INFO: [BD 41-1051] The usage <register> of peripheral </processing_system7_0/S_AXI_GP0/GP0_IOP> does not match the usage <memory> of master </axi_dma_out/Data_S2MM> and will be excluded using sparse connectivity from its address space. Use the include_bd_addr_seg command to override this precaution and make this peripheral visible within this masters address space.
-Excluding </processing_system7_0/S_AXI_GP0/GP0_IOP> from </axi_dma_out/Data_S2MM>
-</processing_system7_0/S_AXI_GP0/GP0_M_AXI_GP0> is being mapped into </axi_dma_in/Data_MM2S> at <0x40000000 [ 1G ]>
-INFO: [BD 41-1051] The usage <register> of peripheral </processing_system7_0/S_AXI_GP0/GP0_M_AXI_GP0> does not match the usage <memory> of master </axi_dma_in/Data_MM2S> and will be excluded using sparse connectivity from its address space. Use the include_bd_addr_seg command to override this precaution and make this peripheral visible within this masters address space.
-Excluding </processing_system7_0/S_AXI_GP0/GP0_M_AXI_GP0> from </axi_dma_in/Data_MM2S>
-</processing_system7_0/S_AXI_GP0/GP0_M_AXI_GP0> is being mapped into </axi_dma_out/Data_S2MM> at <0x40000000 [ 1G ]>
-INFO: [BD 41-1051] The usage <register> of peripheral </processing_system7_0/S_AXI_GP0/GP0_M_AXI_GP0> does not match the usage <memory> of master </axi_dma_out/Data_S2MM> and will be excluded using sparse connectivity from its address space. Use the include_bd_addr_seg command to override this precaution and make this peripheral visible within this masters address space.
-Excluding </processing_system7_0/S_AXI_GP0/GP0_M_AXI_GP0> from </axi_dma_out/Data_S2MM>
-undo
-INFO: [Common 17-17] undo 'apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_slave {Auto} Clk_xbar {/processing_system7_0/FCLK_CLK0 (100 MHz)} Master {/axi_dma_in/M_AXI_MM2S} Slave {/processing_system7_0/S_AXI_GP0} intc_ip {/axi_smc} master_apm {0}}  [get_bd_intf_pins processing_system7_0/S_AXI_GP0]'
-Including </processing_system7_0/S_AXI_GP0/GP0_M_AXI_GP0> into </axi_dma_out/Data_S2MM>
-Including </processing_system7_0/S_AXI_GP0/GP0_M_AXI_GP0> into </axi_dma_in/Data_MM2S>
-Including </processing_system7_0/S_AXI_GP0/GP0_IOP> into </axi_dma_out/Data_S2MM>
-Including </processing_system7_0/S_AXI_GP0/GP0_IOP> into </axi_dma_in/Data_MM2S>
-undo
-INFO: [Common 17-17] undo 'endgroup'
-INFO: [Common 17-17] undo 'set_property -dict [list CONFIG.PCW_USE_S_AXI_GP0 {1} CONFIG.PCW_QSPI_GRP_SINGLE_SS_ENABLE {1}] [get_bd_cells processing_system7_0]'
-CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
-CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.033 . PS DDR interfaces might fail when entering negative DQS skew values. 
-INFO: [Common 17-17] undo 'startgroup'
-CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
-CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.033 . PS DDR interfaces might fail when entering negative DQS skew values. 
-WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
-CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
-CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.033 . PS DDR interfaces might fail when entering negative DQS skew values. 
 startgroup
-set_property -dict [list CONFIG.PCW_QSPI_GRP_SINGLE_SS_ENABLE {1}] [get_bd_cells processing_system7_0]
+set_property -dict [list CONFIG.c_m_axi_s2mm_data_width.VALUE_SRC USER] [get_bd_cells axi_dma_out]
+set_property -dict [list CONFIG.c_m_axi_s2mm_data_width {64}] [get_bd_cells axi_dma_out]
 endgroup
-delete_bd_objs [get_bd_intf_nets ps7_0_axi_periph_M02_AXI] [get_bd_intf_nets axi_dma_in_M_AXIS_MM2S] [get_bd_intf_nets network_0_output_data] [get_bd_cells network_0]
-connect_bd_intf_net [get_bd_intf_pins axi_dma_out/S_AXIS_S2MM] [get_bd_intf_pins axi_dma_in/M_AXIS_MM2S]
-regenerate_bd_layout
+startgroup
+endgroup
+startgroup
+endgroup
+startgroup
+endgroup
+startgroup
+set_property -dict [list CONFIG.c_m_axi_s2mm_data_width.VALUE_SRC USER] [get_bd_cells axi_dma_out]
+set_property -dict [list CONFIG.c_m_axi_s2mm_data_width {64}] [get_bd_cells axi_dma_out]
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:hls:network:1.0 network_0
+endgroup
+delete_bd_objs [get_bd_cells network_0]
 generate_target all [get_files  /home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/design_1.bd]
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter C_M_AXI_S2MM_DATA_WIDTH(64) on '/axi_dma_out' with propagated value(32). Command ignored
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter C_M_AXI_S2MM_DATA_WIDTH(64) on '/axi_dma_out' with propagated value(32). Command ignored
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter C_M_AXI_S2MM_DATA_WIDTH(64) on '/axi_dma_out' with propagated value(32). Command ignored
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter C_M_AXI_S2MM_DATA_WIDTH(64) on '/axi_dma_out' with propagated value(32). Command ignored
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter C_M_AXI_S2MM_DATA_WIDTH(64) on '/axi_dma_out' with propagated value(32). Command ignored
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter C_M_AXI_S2MM_DATA_WIDTH(64) on '/axi_dma_out' with propagated value(32). Command ignored
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter C_M_AXI_S2MM_DATA_WIDTH(64) on '/axi_dma_out' with propagated value(32). Command ignored
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter C_M_AXI_S2MM_DATA_WIDTH(64) on '/axi_dma_out' with propagated value(32). Command ignored
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter C_M_AXI_S2MM_DATA_WIDTH(64) on '/axi_dma_out' with propagated value(32). Command ignored
 WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter PCW_M_AXI_GP0_FREQMHZ(10) on '/processing_system7_0' with propagated value(100). Command ignored
 WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter PCW_S_AXI_HP0_FREQMHZ(10) on '/processing_system7_0' with propagated value(100). Command ignored
 INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter C_M_AXI_S2MM_DATA_WIDTH(64) on '/axi_dma_out' with propagated value(32). Command ignored
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter C_M_AXI_S2MM_DATA_WIDTH(64) on '/axi_dma_out' with propagated value(32). Command ignored
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter C_M_AXI_S2MM_DATA_WIDTH(64) on '/axi_dma_out' with propagated value(32). Command ignored
 WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter PCW_M_AXI_GP0_FREQMHZ(10) on '/processing_system7_0' with propagated value(100). Command ignored
 WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter PCW_S_AXI_HP0_FREQMHZ(10) on '/processing_system7_0' with propagated value(100). Command ignored
 Wrote  : </home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/design_1.bd> 
@@ -138,34 +95,34 @@ INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_pe
 Exporting to file /home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
 Generated Block Design Tcl file /home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
 Generated Hardware Definition File /home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/synth/design_1.hwdef
-generate_target: Time (s): cpu = 00:00:27 ; elapsed = 00:00:25 . Memory (MB): peak = 7108.266 ; gain = 19.180 ; free physical = 6962 ; free virtual = 13863
-catch { config_ip_cache -export [get_ips -all design_1_processing_system7_0_0] }
-catch { config_ip_cache -export [get_ips -all design_1_rst_ps7_0_100M_5] }
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_rst_ps7_0_100M_5, cache-ID = 8b95d7225080faf7; cache size = 260.877 MB.
-catch { [ delete_ip_run [get_ips -all design_1_rst_ps7_0_100M_5] ] }
-catch { config_ip_cache -export [get_ips -all design_1_xbar_2] }
+generate_target: Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 6979.227 ; gain = 120.258 ; free physical = 7156 ; free virtual = 14067
+catch { config_ip_cache -export [get_ips -all design_1_axi_dma_0_1] }
+catch { config_ip_cache -export [get_ips -all design_1_axi_smc_0] }
+catch { config_ip_cache -export [get_ips -all design_1_axi_dma_in_0] }
 catch { config_ip_cache -export [get_ips -all design_1_auto_pc_0] }
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = 0c824cce15272f18; cache size = 260.877 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = 0c824cce15272f18; cache size = 262.151 MB.
 export_ip_user_files -of_objects [get_files /home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
 create_ip_run [get_files -of_objects [get_fileset sources_1] /home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/design_1.bd]
-launch_runs -jobs 4 {design_1_processing_system7_0_0_synth_1 design_1_xbar_2_synth_1}
-[Mon Dec 16 20:16:01 2019] Launched design_1_processing_system7_0_0_synth_1, design_1_xbar_2_synth_1...
+launch_runs -jobs 4 {design_1_axi_smc_0_synth_1 design_1_axi_dma_0_1_synth_1 design_1_axi_dma_in_0_synth_1}
+[Mon Dec 16 20:53:24 2019] Launched design_1_axi_smc_0_synth_1, design_1_axi_dma_0_1_synth_1, design_1_axi_dma_in_0_synth_1...
 Run output will be captured here:
-design_1_processing_system7_0_0_synth_1: /home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/design_1_processing_system7_0_0_synth_1/runme.log
-design_1_xbar_2_synth_1: /home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/design_1_xbar_2_synth_1/runme.log
+design_1_axi_smc_0_synth_1: /home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/design_1_axi_smc_0_synth_1/runme.log
+design_1_axi_dma_0_1_synth_1: /home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/design_1_axi_dma_0_1_synth_1/runme.log
+design_1_axi_dma_in_0_synth_1: /home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/design_1_axi_dma_in_0_synth_1/runme.log
 export_simulation -of_objects [get_files /home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/design_1.bd] -directory /home/masudalab/DeepCAEonFPGA/HLx/HLx.ip_user_files/sim_scripts -ip_user_files_dir /home/masudalab/DeepCAEonFPGA/HLx/HLx.ip_user_files -ipstatic_source_dir /home/masudalab/DeepCAEonFPGA/HLx/HLx.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/masudalab/DeepCAEonFPGA/HLx/HLx.cache/compile_simlib/modelsim} {questa=/home/masudalab/DeepCAEonFPGA/HLx/HLx.cache/compile_simlib/questa} {ies=/home/masudalab/DeepCAEonFPGA/HLx/HLx.cache/compile_simlib/ies} {xcelium=/home/masudalab/DeepCAEonFPGA/HLx/HLx.cache/compile_simlib/xcelium} {vcs=/home/masudalab/DeepCAEonFPGA/HLx/HLx.cache/compile_simlib/vcs} {riviera=/home/masudalab/DeepCAEonFPGA/HLx/HLx.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
 make_wrapper -files [get_files /home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/design_1.bd] -top
 reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 4
-[Mon Dec 16 20:16:32 2019] Launched design_1_processing_system7_0_0_synth_1, design_1_xbar_2_synth_1, synth_1...
+[Mon Dec 16 20:54:30 2019] Launched design_1_axi_smc_0_synth_1, design_1_axi_dma_0_1_synth_1, design_1_axi_dma_in_0_synth_1, synth_1...
 Run output will be captured here:
-design_1_processing_system7_0_0_synth_1: /home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/design_1_processing_system7_0_0_synth_1/runme.log
-design_1_xbar_2_synth_1: /home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/design_1_xbar_2_synth_1/runme.log
+design_1_axi_smc_0_synth_1: /home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/design_1_axi_smc_0_synth_1/runme.log
+design_1_axi_dma_0_1_synth_1: /home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/design_1_axi_dma_0_1_synth_1/runme.log
+design_1_axi_dma_in_0_synth_1: /home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/design_1_axi_dma_in_0_synth_1/runme.log
 synth_1: /home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/synth_1/runme.log
-[Mon Dec 16 20:16:32 2019] Launched impl_1...
+[Mon Dec 16 20:54:30 2019] Launched impl_1...
 Run output will be captured here: /home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/impl_1/runme.log
 open_run impl_1
-INFO: [Netlist 29-17] Analyzing 238 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 239 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2018.3.1
 INFO: [Device 21-403] Loading part xc7z020clg400-1
@@ -177,10 +134,10 @@ INFO: [Project 1-853] Binary constraint restore complete.
 Reading XDEF placement.
 Reading placer database...
 Reading XDEF routing.
-Read XDEF File: Time (s): cpu = 00:00:00.67 ; elapsed = 00:00:00.67 . Memory (MB): peak = 7912.703 ; gain = 13.004 ; free physical = 6205 ; free virtual = 13096
-Restored from archive | CPU: 0.680000 secs | Memory: 11.095329 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:00.67 ; elapsed = 00:00:00.67 . Memory (MB): peak = 7912.703 ; gain = 13.004 ; free physical = 6205 ; free virtual = 13096
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 7912.703 ; gain = 0.000 ; free physical = 6207 ; free virtual = 13098
+Read XDEF File: Time (s): cpu = 00:00:00.65 ; elapsed = 00:00:00.64 . Memory (MB): peak = 7779.000 ; gain = 12.004 ; free physical = 6241 ; free virtual = 13174
+Restored from archive | CPU: 0.660000 secs | Memory: 11.365753 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.65 ; elapsed = 00:00:00.64 . Memory (MB): peak = 7779.000 ; gain = 12.004 ; free physical = 6241 ; free virtual = 13174
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 7779.000 ; gain = 0.000 ; free physical = 6243 ; free virtual = 13176
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 112 instances were transformed.
   RAM16X1D => RAM32X1D (RAMD32, RAMD32): 1 instances
@@ -287,8 +244,8 @@ WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
 WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
 WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
 INFO: [Common 17-14] Message 'Designutils 20-3303' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-open_run: Time (s): cpu = 00:00:22 ; elapsed = 00:00:17 . Memory (MB): peak = 8091.723 ; gain = 796.633 ; free physical = 6096 ; free virtual = 12987
+open_run: Time (s): cpu = 00:00:21 ; elapsed = 00:00:17 . Memory (MB): peak = 7964.012 ; gain = 800.617 ; free physical = 6145 ; free virtual = 13078
 file copy -force /home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/impl_1/design_1_wrapper.sysdef /home/masudalab/DeepCAEonFPGA/HLx/HLx.sdk/design_1_wrapper.hdf
 
 exit
-INFO: [Common 17-206] Exiting Vivado at Mon Dec 16 20:24:49 2019...
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 16 21:02:53 2019...
