@@ -62,9 +62,6 @@ INFO: [VRFC 10-311] analyzing module pointwise_conv2d_fix_3_SeparableConv2D_3_w_
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/network_mul_mul_16s_15s_30_1_1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module network_mul_mul_16s_15s_30_1_1_DSP48_2
 INFO: [VRFC 10-311] analyzing module network_mul_mul_16s_15s_30_1_1
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/network_MemBank_B.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module network_MemBank_B_ram
-INFO: [VRFC 10-311] analyzing module network_MemBank_B
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/max_pooling2d_fix16.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module max_pooling2d_fix16
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/network_AXILiteS_s_axi.v" into library xil_defaultlib
@@ -128,8 +125,6 @@ Compiling module xil_defaultlib.network_SeparableConv2D_4_w_1(Da...
 Compiling module xil_defaultlib.network_AXILiteS_s_axi
 Compiling module xil_defaultlib.network_MemBank_A_ram
 Compiling module xil_defaultlib.network_MemBank_A(DataWidth=16,A...
-Compiling module xil_defaultlib.network_MemBank_B_ram
-Compiling module xil_defaultlib.network_MemBank_B(DataWidth=16,A...
 Compiling module xil_defaultlib.network_MemBank_Out_ram
 Compiling module xil_defaultlib.network_MemBank_Out(DataWidth=16...
 Compiling module xil_defaultlib.padding2d_fix16

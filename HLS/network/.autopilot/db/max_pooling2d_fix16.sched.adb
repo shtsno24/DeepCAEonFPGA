@@ -574,7 +574,7 @@
 					<Obj>
 						<type>0</type>
 						<id>20</id>
-						<name>tmp_70_cast</name>
+						<name>tmp_72_cast</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -608,7 +608,7 @@
 					<Obj>
 						<type>0</type>
 						<id>21</id>
-						<name>tmp_71_cast</name>
+						<name>tmp_73_cast</name>
 						<fileName>layers_c/max_pooling2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
 						<lineNumber>32</lineNumber>
@@ -656,7 +656,7 @@
 					<Obj>
 						<type>0</type>
 						<id>22</id>
-						<name>tmp_72_cast</name>
+						<name>tmp_74_cast</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -1452,7 +1452,7 @@
 					<Obj>
 						<type>0</type>
 						<id>45</id>
-						<name>tmp_76_cast1</name>
+						<name>tmp_78_cast1</name>
 						<fileName>layers_c/max_pooling2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
 						<lineNumber>26</lineNumber>
@@ -1550,7 +1550,7 @@
 					<Obj>
 						<type>0</type>
 						<id>47</id>
-						<name>tmp_77_cast</name>
+						<name>tmp_79_cast</name>
 						<fileName>layers_c/max_pooling2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
 						<lineNumber>26</lineNumber>
@@ -2025,7 +2025,7 @@
 					<Obj>
 						<type>0</type>
 						<id>60</id>
-						<name>tmp_79_cast1</name>
+						<name>tmp_81_cast1</name>
 						<fileName>layers_c/max_pooling2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
 						<lineNumber>26</lineNumber>
@@ -2073,7 +2073,7 @@
 					<Obj>
 						<type>0</type>
 						<id>61</id>
-						<name>tmp_51</name>
+						<name>tmp_53</name>
 						<fileName>layers_c/max_pooling2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
 						<lineNumber>26</lineNumber>
@@ -2123,7 +2123,7 @@
 					<Obj>
 						<type>0</type>
 						<id>62</id>
-						<name>tmp_80_cast</name>
+						<name>tmp_82_cast</name>
 						<fileName>layers_c/max_pooling2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
 						<lineNumber>26</lineNumber>
@@ -2452,7 +2452,7 @@
 					<Obj>
 						<type>0</type>
 						<id>72</id>
-						<name>tmp_83_cast</name>
+						<name>tmp_85_cast</name>
 						<fileName>layers_c/max_pooling2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
 						<lineNumber>22</lineNumber>
@@ -2598,7 +2598,7 @@
 					<Obj>
 						<type>0</type>
 						<id>75</id>
-						<name>tmp_cast_35</name>
+						<name>tmp_cast_36</name>
 						<fileName>layers_c/max_pooling2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
 						<lineNumber>26</lineNumber>
@@ -2780,7 +2780,7 @@
 					<Obj>
 						<type>0</type>
 						<id>80</id>
-						<name>tmp_55</name>
+						<name>tmp_56</name>
 						<fileName>layers_c/max_pooling2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
 						<lineNumber>24</lineNumber>
@@ -3024,7 +3024,7 @@
 					<Obj>
 						<type>0</type>
 						<id>87</id>
-						<name>tmp_84_cast</name>
+						<name>tmp_86_cast</name>
 						<fileName>layers_c/max_pooling2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
 						<lineNumber>26</lineNumber>
@@ -3121,7 +3121,7 @@
 					<Obj>
 						<type>0</type>
 						<id>89</id>
-						<name>tmp_56</name>
+						<name>tmp_57</name>
 						<fileName>layers_c/max_pooling2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
 						<lineNumber>26</lineNumber>
@@ -3170,7 +3170,7 @@
 					<Obj>
 						<type>0</type>
 						<id>90</id>
-						<name>tmp_57</name>
+						<name>tmp_58</name>
 						<fileName>layers_c/max_pooling2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
 						<lineNumber>26</lineNumber>
@@ -3268,7 +3268,7 @@
 					<Obj>
 						<type>0</type>
 						<id>92</id>
-						<name>tmp_62</name>
+						<name>tmp_63</name>
 						<fileName>layers_c/max_pooling2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
 						<lineNumber>26</lineNumber>
@@ -3316,7 +3316,7 @@
 					<Obj>
 						<type>0</type>
 						<id>93</id>
-						<name>tmp_59</name>
+						<name>tmp_60</name>
 						<fileName>layers_c/max_pooling2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
 						<lineNumber>27</lineNumber>
@@ -3365,7 +3365,7 @@
 					<Obj>
 						<type>0</type>
 						<id>94</id>
-						<name>tmp_60</name>
+						<name>tmp_61</name>
 						<fileName>layers_c/max_pooling2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
 						<lineNumber>27</lineNumber>
@@ -3414,7 +3414,7 @@
 					<Obj>
 						<type>0</type>
 						<id>95</id>
-						<name>tmp_61</name>
+						<name>tmp_62</name>
 						<fileName>layers_c/max_pooling2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
 						<lineNumber>27</lineNumber>
@@ -3742,7 +3742,7 @@
 					<Obj>
 						<type>0</type>
 						<id>104</id>
-						<name>tmp_53</name>
+						<name>tmp_54</name>
 						<fileName>layers_c/max_pooling2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
 						<lineNumber>32</lineNumber>
@@ -3791,7 +3791,7 @@
 					<Obj>
 						<type>0</type>
 						<id>105</id>
-						<name>tmp_54</name>
+						<name>tmp_55</name>
 						<fileName>layers_c/max_pooling2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
 						<lineNumber>32</lineNumber>

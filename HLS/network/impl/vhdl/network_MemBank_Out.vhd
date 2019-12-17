@@ -1,5 +1,5 @@
 -- ==============================================================
--- File generated on Tue Dec 17 18:41:00 JST 2019
+-- File generated on Tue Dec 17 19:18:07 JST 2019
 -- Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3.1 (64-bit)
 -- SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
 -- IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
@@ -23,10 +23,6 @@ entity network_MemBank_Out_ram is
           d0        : in std_logic_vector(DWIDTH-1 downto 0); 
           we0       : in std_logic; 
           q0        : out std_logic_vector(DWIDTH-1 downto 0);
-          addr1     : in std_logic_vector(AWIDTH-1 downto 0); 
-          ce1       : in std_logic; 
-          d1        : in std_logic_vector(DWIDTH-1 downto 0); 
-          we1       : in std_logic; 
           clk        : in std_logic 
     ); 
 end entity; 
@@ -71,18 +67,6 @@ begin
 end process;
 
 
-p_memory_access_1: process (clk)  
-begin 
-    if (clk'event and clk = '1') then
-        if (ce1 = '1') then 
-            if (we1 = '1') then 
-                ram(CONV_INTEGER(addr1)) := d1; 
-            end if;
-        end if;
-    end if;
-end process;
-
-
 end rtl;
 
 Library IEEE;
@@ -100,11 +84,7 @@ entity network_MemBank_Out is
         ce0 : IN STD_LOGIC;
         we0 : IN STD_LOGIC;
         d0 : IN STD_LOGIC_VECTOR(DataWidth - 1 DOWNTO 0);
-        q0 : OUT STD_LOGIC_VECTOR(DataWidth - 1 DOWNTO 0);
-        address1 : IN STD_LOGIC_VECTOR(AddressWidth - 1 DOWNTO 0);
-        ce1 : IN STD_LOGIC;
-        we1 : IN STD_LOGIC;
-        d1 : IN STD_LOGIC_VECTOR(DataWidth - 1 DOWNTO 0));
+        q0 : OUT STD_LOGIC_VECTOR(DataWidth - 1 DOWNTO 0));
 end entity;
 
 architecture arch of network_MemBank_Out is
@@ -115,11 +95,7 @@ architecture arch of network_MemBank_Out is
             ce0 : IN STD_LOGIC;
             we0 : IN STD_LOGIC;
             d0 : IN STD_LOGIC_VECTOR;
-            q0 : OUT STD_LOGIC_VECTOR;
-            addr1 : IN STD_LOGIC_VECTOR;
-            ce1 : IN STD_LOGIC;
-            we1 : IN STD_LOGIC;
-            d1 : IN STD_LOGIC_VECTOR);
+            q0 : OUT STD_LOGIC_VECTOR);
     end component;
 
 
@@ -132,11 +108,7 @@ begin
         ce0 => ce0,
         we0 => we0,
         d0 => d0,
-        q0 => q0,
-        addr1 => address1,
-        ce1 => ce1,
-        we1 => we1,
-        d1 => d1);
+        q0 => q0);
 
 end architecture;
 

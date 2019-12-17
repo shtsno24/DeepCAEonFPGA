@@ -76019,7 +76019,7 @@ int network(axis &input_data, axis &output_data) {
  1, 1, (int16_t*)SeparableConv2D_4_w_p, 1, 14);
 #pragma empty_line
  for(int i = 0; i < array_length; i++){
-#pragma HLS UNROLL
+#pragma empty_line
   MemBank_Out[i] = MemBank_B[i];
  }
 #pragma empty_line

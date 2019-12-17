@@ -18,7 +18,6 @@ network_SeparableConv2D_2_w_1
 network_SeparableConv2D_3_w_1
 network_SeparableConv2D_4_w_1
 network_MemBank_A
-network_MemBank_B
 network_MemBank_Out
 network_AXILiteS_s_axi
 padding2d_fix16

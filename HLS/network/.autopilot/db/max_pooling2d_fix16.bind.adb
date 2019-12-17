@@ -574,7 +574,7 @@
 					<Obj>
 						<type>0</type>
 						<id>20</id>
-						<name>tmp_70_cast</name>
+						<name>tmp_72_cast</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -608,7 +608,7 @@
 					<Obj>
 						<type>0</type>
 						<id>21</id>
-						<name>tmp_71_cast</name>
+						<name>tmp_73_cast</name>
 						<fileName>layers_c/max_pooling2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
 						<lineNumber>32</lineNumber>
@@ -656,7 +656,7 @@
 					<Obj>
 						<type>0</type>
 						<id>22</id>
-						<name>tmp_72_cast</name>
+						<name>tmp_74_cast</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -1452,7 +1452,7 @@
 					<Obj>
 						<type>0</type>
 						<id>45</id>
-						<name>tmp_76_cast1</name>
+						<name>tmp_78_cast1</name>
 						<fileName>layers_c/max_pooling2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
 						<lineNumber>26</lineNumber>
@@ -1550,7 +1550,7 @@
 					<Obj>
 						<type>0</type>
 						<id>47</id>
-						<name>tmp_77_cast</name>
+						<name>tmp_79_cast</name>
 						<fileName>layers_c/max_pooling2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
 						<lineNumber>26</lineNumber>
@@ -2025,7 +2025,7 @@
 					<Obj>
 						<type>0</type>
 						<id>60</id>
-						<name>tmp_79_cast1</name>
+						<name>tmp_81_cast1</name>
 						<fileName>layers_c/max_pooling2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
 						<lineNumber>26</lineNumber>
@@ -2073,7 +2073,7 @@
 					<Obj>
 						<type>0</type>
 						<id>61</id>
-						<name>tmp_51</name>
+						<name>tmp_53</name>
 						<fileName>layers_c/max_pooling2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
 						<lineNumber>26</lineNumber>
@@ -2123,7 +2123,7 @@
 					<Obj>
 						<type>0</type>
 						<id>62</id>
-						<name>tmp_80_cast</name>
+						<name>tmp_82_cast</name>
 						<fileName>layers_c/max_pooling2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
 						<lineNumber>26</lineNumber>
@@ -2452,7 +2452,7 @@
 					<Obj>
 						<type>0</type>
 						<id>72</id>
-						<name>tmp_83_cast</name>
+						<name>tmp_85_cast</name>
 						<fileName>layers_c/max_pooling2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
 						<lineNumber>22</lineNumber>
@@ -2598,7 +2598,7 @@
 					<Obj>
 						<type>0</type>
 						<id>75</id>
-						<name>tmp_cast_35</name>
+						<name>tmp_cast_36</name>
 						<fileName>layers_c/max_pooling2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
 						<lineNumber>26</lineNumber>
@@ -2780,7 +2780,7 @@
 					<Obj>
 						<type>0</type>
 						<id>80</id>
-						<name>tmp_55</name>
+						<name>tmp_56</name>
 						<fileName>layers_c/max_pooling2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
 						<lineNumber>24</lineNumber>
@@ -3024,7 +3024,7 @@
 					<Obj>
 						<type>0</type>
 						<id>87</id>
-						<name>tmp_84_cast</name>
+						<name>tmp_86_cast</name>
 						<fileName>layers_c/max_pooling2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
 						<lineNumber>26</lineNumber>
@@ -3121,7 +3121,7 @@
 					<Obj>
 						<type>0</type>
 						<id>89</id>
-						<name>tmp_56</name>
+						<name>tmp_57</name>
 						<fileName>layers_c/max_pooling2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
 						<lineNumber>26</lineNumber>
@@ -3170,7 +3170,7 @@
 					<Obj>
 						<type>0</type>
 						<id>90</id>
-						<name>tmp_57</name>
+						<name>tmp_58</name>
 						<fileName>layers_c/max_pooling2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
 						<lineNumber>26</lineNumber>
@@ -3268,7 +3268,7 @@
 					<Obj>
 						<type>0</type>
 						<id>92</id>
-						<name>tmp_62</name>
+						<name>tmp_63</name>
 						<fileName>layers_c/max_pooling2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
 						<lineNumber>26</lineNumber>
@@ -3316,7 +3316,7 @@
 					<Obj>
 						<type>0</type>
 						<id>93</id>
-						<name>tmp_59</name>
+						<name>tmp_60</name>
 						<fileName>layers_c/max_pooling2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
 						<lineNumber>27</lineNumber>
@@ -3365,7 +3365,7 @@
 					<Obj>
 						<type>0</type>
 						<id>94</id>
-						<name>tmp_60</name>
+						<name>tmp_61</name>
 						<fileName>layers_c/max_pooling2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
 						<lineNumber>27</lineNumber>
@@ -3414,7 +3414,7 @@
 					<Obj>
 						<type>0</type>
 						<id>95</id>
-						<name>tmp_61</name>
+						<name>tmp_62</name>
 						<fileName>layers_c/max_pooling2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
 						<lineNumber>27</lineNumber>
@@ -3742,7 +3742,7 @@
 					<Obj>
 						<type>0</type>
 						<id>104</id>
-						<name>tmp_53</name>
+						<name>tmp_54</name>
 						<fileName>layers_c/max_pooling2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
 						<lineNumber>32</lineNumber>
@@ -3791,7 +3791,7 @@
 					<Obj>
 						<type>0</type>
 						<id>105</id>
-						<name>tmp_54</name>
+						<name>tmp_55</name>
 						<fileName>layers_c/max_pooling2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA</fileDirectory>
 						<lineNumber>32</lineNumber>
@@ -8707,14 +8707,6 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_51_fu_331</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>61</item>
-			</second>
-		</item>
-		<item>
 			<first>tmp_52_fu_343</first>
 			<second>
 				<count>1</count>
@@ -8723,7 +8715,15 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_53_fu_383</first>
+			<first>tmp_53_fu_331</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>61</item>
+			</second>
+		</item>
+		<item>
+			<first>tmp_54_fu_383</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8731,7 +8731,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_54_fu_387</first>
+			<first>tmp_55_fu_387</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8739,7 +8739,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_55_fu_392</first>
+			<first>tmp_56_fu_392</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8747,7 +8747,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_56_fu_417</first>
+			<first>tmp_57_fu_417</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8755,7 +8755,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_57_fu_422</first>
+			<first>tmp_58_fu_422</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8763,7 +8763,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_59_fu_427</first>
+			<first>tmp_60_fu_427</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8771,7 +8771,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_60_fu_431</first>
+			<first>tmp_61_fu_431</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8779,7 +8779,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_61_fu_437</first>
+			<first>tmp_62_fu_437</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8787,7 +8787,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_70_cast_fu_229</first>
+			<first>tmp_72_cast_fu_229</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8795,7 +8795,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_71_cast_fu_233</first>
+			<first>tmp_73_cast_fu_233</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8803,7 +8803,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_72_cast_fu_237</first>
+			<first>tmp_74_cast_fu_237</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8811,7 +8811,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_76_cast1_fu_281</first>
+			<first>tmp_78_cast1_fu_281</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8819,7 +8819,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_77_cast_fu_293</first>
+			<first>tmp_79_cast_fu_293</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8827,7 +8827,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_79_cast1_fu_327</first>
+			<first>tmp_81_cast1_fu_327</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8835,7 +8835,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_80_cast_fu_339</first>
+			<first>tmp_82_cast_fu_339</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8843,7 +8843,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_83_cast_fu_359</first>
+			<first>tmp_85_cast_fu_359</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8851,7 +8851,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_84_cast_fu_408</first>
+			<first>tmp_86_cast_fu_408</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8859,7 +8859,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_cast_35_fu_374</first>
+			<first>tmp_cast_36_fu_374</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9411,7 +9411,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_55_reg_575</first>
+			<first>tmp_56_reg_575</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9419,7 +9419,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_70_cast_reg_488</first>
+			<first>tmp_72_cast_reg_488</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9427,7 +9427,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_71_cast_reg_493</first>
+			<first>tmp_73_cast_reg_493</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9435,7 +9435,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_72_cast_reg_498</first>
+			<first>tmp_74_cast_reg_498</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9443,7 +9443,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_77_cast_reg_529</first>
+			<first>tmp_79_cast_reg_529</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9451,7 +9451,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_79_cast1_reg_547</first>
+			<first>tmp_81_cast1_reg_547</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9459,7 +9459,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_80_cast_reg_552</first>
+			<first>tmp_82_cast_reg_552</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>

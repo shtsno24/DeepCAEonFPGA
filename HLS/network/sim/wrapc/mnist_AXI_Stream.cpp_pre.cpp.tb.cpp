@@ -1,5 +1,5 @@
 // ==============================================================
-// File generated on Tue Dec 17 18:41:34 JST 2019
+// File generated on Tue Dec 17 19:18:42 JST 2019
 // Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3.1 (64-bit)
 // SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
 // IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
@@ -76026,7 +76026,7 @@ int network(axis &input_data, axis &output_data) {
  1, 1, (int16_t*)SeparableConv2D_4_w_p, 1, 14);
 
  for(int i = 0; i < array_length; i++){
-#pragma HLS UNROLL
+
   MemBank_Out[i] = MemBank_B[i];
  }
 
