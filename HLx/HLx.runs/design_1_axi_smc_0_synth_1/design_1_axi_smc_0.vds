@@ -2,8 +2,8 @@
 # Vivado v2018.3.1 (64-bit)
 # SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
 # IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
-# Start of session at: Mon Dec 16 21:27:50 2019
-# Process ID: 1259
+# Start of session at: Tue Dec 17 13:37:58 2019
+# Process ID: 16486
 # Current directory: /home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/design_1_axi_smc_0_synth_1
 # Command line: vivado -log design_1_axi_smc_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_axi_smc_0.tcl
 # Log file: /home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/design_1_axi_smc_0_synth_1/design_1_axi_smc_0.vds
@@ -18,9 +18,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 1395 
+INFO: Helper process launched with PID 16631 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1472.867 ; gain = 80.883 ; free physical = 4934 ; free virtual = 12130
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1472.652 ; gain = 98.883 ; free physical = 5612 ; free virtual = 13833
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'design_1_axi_smc_0' [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/synth/design_1_axi_smc_0.v:57]
 INFO: [Synth 8-6157] synthesizing module 'bd_afc3' [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:10]
@@ -194,7 +194,7 @@ INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM g
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized0' [/tools/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8368]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized0' [/tools/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
 	Parameter MEMORY_TYPE bound to: 1 - type: integer 
-	Parameter MEMORY_SIZE bound to: 6016 - type: integer 
+	Parameter MEMORY_SIZE bound to: 4992 - type: integer 
 	Parameter MEMORY_PRIMITIVE bound to: 1 - type: integer 
 	Parameter CLOCKING_MODE bound to: 0 - type: integer 
 	Parameter ECC_MODE bound to: 0 - type: integer 
@@ -207,32 +207,32 @@ INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized0' [/too
 	Parameter MESSAGE_CONTROL bound to: 0 - type: integer 
 	Parameter VERSION bound to: 0 - type: integer 
 	Parameter USE_EMBEDDED_CONSTRAINT bound to: 0 - type: integer 
-	Parameter WRITE_DATA_WIDTH_A bound to: 188 - type: integer 
-	Parameter READ_DATA_WIDTH_A bound to: 188 - type: integer 
-	Parameter BYTE_WRITE_WIDTH_A bound to: 188 - type: integer 
+	Parameter WRITE_DATA_WIDTH_A bound to: 156 - type: integer 
+	Parameter READ_DATA_WIDTH_A bound to: 156 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_A bound to: 156 - type: integer 
 	Parameter ADDR_WIDTH_A bound to: 5 - type: integer 
 	Parameter READ_RESET_VALUE_A bound to: 0 - type: string 
 	Parameter READ_LATENCY_A bound to: 2 - type: integer 
 	Parameter WRITE_MODE_A bound to: 1 - type: integer 
 	Parameter RST_MODE_A bound to: SYNC - type: string 
-	Parameter WRITE_DATA_WIDTH_B bound to: 188 - type: integer 
-	Parameter READ_DATA_WIDTH_B bound to: 188 - type: integer 
-	Parameter BYTE_WRITE_WIDTH_B bound to: 188 - type: integer 
+	Parameter WRITE_DATA_WIDTH_B bound to: 156 - type: integer 
+	Parameter READ_DATA_WIDTH_B bound to: 156 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_B bound to: 156 - type: integer 
 	Parameter ADDR_WIDTH_B bound to: 5 - type: integer 
 	Parameter READ_RESET_VALUE_B bound to: 0 - type: string 
 	Parameter READ_LATENCY_B bound to: 1 - type: integer 
 	Parameter WRITE_MODE_B bound to: 1 - type: integer 
 	Parameter RST_MODE_B bound to: SYNC - type: string 
 	Parameter P_MEMORY_PRIMITIVE bound to: distributed - type: string 
-	Parameter P_MIN_WIDTH_DATA_A bound to: 188 - type: integer 
-	Parameter P_MIN_WIDTH_DATA_B bound to: 188 - type: integer 
-	Parameter P_MIN_WIDTH_DATA bound to: 188 - type: integer 
-	Parameter P_MIN_WIDTH_DATA_ECC bound to: 188 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_A bound to: 156 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_B bound to: 156 - type: integer 
+	Parameter P_MIN_WIDTH_DATA bound to: 156 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_ECC bound to: 156 - type: integer 
 	Parameter P_MAX_DEPTH_DATA bound to: 32 - type: integer 
 	Parameter P_ECC_MODE bound to: no_ecc - type: string 
 	Parameter P_MEMORY_OPT bound to: yes - type: string 
-	Parameter P_WIDTH_COL_WRITE_A bound to: 188 - type: integer 
-	Parameter P_WIDTH_COL_WRITE_B bound to: 188 - type: integer 
+	Parameter P_WIDTH_COL_WRITE_A bound to: 156 - type: integer 
+	Parameter P_WIDTH_COL_WRITE_B bound to: 156 - type: integer 
 	Parameter P_NUM_COLS_WRITE_A bound to: 1 - type: integer 
 	Parameter P_NUM_COLS_WRITE_B bound to: 1 - type: integer 
 	Parameter P_NUM_ROWS_WRITE_A bound to: 1 - type: integer 
@@ -252,7 +252,7 @@ INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized0' [/too
 	Parameter P_SDP_WRITE_MODE bound to: yes - type: string 
 	Parameter NUM_CHAR_LOC bound to: 0 - type: integer 
 	Parameter MAX_NUM_CHAR bound to: 0 - type: integer 
-	Parameter P_MIN_WIDTH_DATA_SHFT bound to: 188 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_SHFT bound to: 156 - type: integer 
 	Parameter P_MIN_WIDTH_DATA_LDW bound to: 4 - type: integer 
 INFO: [Synth 8-5772] Detected attribute (* ram_ecc = "no_ecc" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized0' (31#1) [/tools/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
@@ -745,7 +745,7 @@ INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM g
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized7' [/tools/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8368]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized7' [/tools/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
 	Parameter MEMORY_TYPE bound to: 1 - type: integer 
-	Parameter MEMORY_SIZE bound to: 5440 - type: integer 
+	Parameter MEMORY_SIZE bound to: 4416 - type: integer 
 	Parameter MEMORY_PRIMITIVE bound to: 1 - type: integer 
 	Parameter CLOCKING_MODE bound to: 0 - type: integer 
 	Parameter ECC_MODE bound to: 0 - type: integer 
@@ -758,32 +758,32 @@ INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized7' [/too
 	Parameter MESSAGE_CONTROL bound to: 0 - type: integer 
 	Parameter VERSION bound to: 0 - type: integer 
 	Parameter USE_EMBEDDED_CONSTRAINT bound to: 0 - type: integer 
-	Parameter WRITE_DATA_WIDTH_A bound to: 170 - type: integer 
-	Parameter READ_DATA_WIDTH_A bound to: 170 - type: integer 
-	Parameter BYTE_WRITE_WIDTH_A bound to: 170 - type: integer 
+	Parameter WRITE_DATA_WIDTH_A bound to: 138 - type: integer 
+	Parameter READ_DATA_WIDTH_A bound to: 138 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_A bound to: 138 - type: integer 
 	Parameter ADDR_WIDTH_A bound to: 5 - type: integer 
 	Parameter READ_RESET_VALUE_A bound to: 0 - type: string 
 	Parameter READ_LATENCY_A bound to: 2 - type: integer 
 	Parameter WRITE_MODE_A bound to: 1 - type: integer 
 	Parameter RST_MODE_A bound to: SYNC - type: string 
-	Parameter WRITE_DATA_WIDTH_B bound to: 170 - type: integer 
-	Parameter READ_DATA_WIDTH_B bound to: 170 - type: integer 
-	Parameter BYTE_WRITE_WIDTH_B bound to: 170 - type: integer 
+	Parameter WRITE_DATA_WIDTH_B bound to: 138 - type: integer 
+	Parameter READ_DATA_WIDTH_B bound to: 138 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_B bound to: 138 - type: integer 
 	Parameter ADDR_WIDTH_B bound to: 5 - type: integer 
 	Parameter READ_RESET_VALUE_B bound to: 0 - type: string 
 	Parameter READ_LATENCY_B bound to: 1 - type: integer 
 	Parameter WRITE_MODE_B bound to: 1 - type: integer 
 	Parameter RST_MODE_B bound to: SYNC - type: string 
 	Parameter P_MEMORY_PRIMITIVE bound to: distributed - type: string 
-	Parameter P_MIN_WIDTH_DATA_A bound to: 170 - type: integer 
-	Parameter P_MIN_WIDTH_DATA_B bound to: 170 - type: integer 
-	Parameter P_MIN_WIDTH_DATA bound to: 170 - type: integer 
-	Parameter P_MIN_WIDTH_DATA_ECC bound to: 170 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_A bound to: 138 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_B bound to: 138 - type: integer 
+	Parameter P_MIN_WIDTH_DATA bound to: 138 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_ECC bound to: 138 - type: integer 
 	Parameter P_MAX_DEPTH_DATA bound to: 32 - type: integer 
 	Parameter P_ECC_MODE bound to: no_ecc - type: string 
 	Parameter P_MEMORY_OPT bound to: yes - type: string 
-	Parameter P_WIDTH_COL_WRITE_A bound to: 170 - type: integer 
-	Parameter P_WIDTH_COL_WRITE_B bound to: 170 - type: integer 
+	Parameter P_WIDTH_COL_WRITE_A bound to: 138 - type: integer 
+	Parameter P_WIDTH_COL_WRITE_B bound to: 138 - type: integer 
 	Parameter P_NUM_COLS_WRITE_A bound to: 1 - type: integer 
 	Parameter P_NUM_COLS_WRITE_B bound to: 1 - type: integer 
 	Parameter P_NUM_ROWS_WRITE_A bound to: 1 - type: integer 
@@ -803,7 +803,7 @@ INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized7' [/too
 	Parameter P_SDP_WRITE_MODE bound to: yes - type: string 
 	Parameter NUM_CHAR_LOC bound to: 0 - type: integer 
 	Parameter MAX_NUM_CHAR bound to: 0 - type: integer 
-	Parameter P_MIN_WIDTH_DATA_SHFT bound to: 170 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_SHFT bound to: 138 - type: integer 
 	Parameter P_MIN_WIDTH_DATA_LDW bound to: 4 - type: integer 
 INFO: [Synth 8-5772] Detected attribute (* ram_ecc = "no_ecc" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized7' (57#1) [/tools/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
@@ -1169,7 +1169,7 @@ WARNING: [Synth 8-3331] design xpm_memory_base__parameterized10 has unconnected 
 WARNING: [Synth 8-3331] design xpm_memory_base__parameterized10 has unconnected port dinb[62]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1651.617 ; gain = 259.633 ; free physical = 4552 ; free virtual = 11756
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1647.402 ; gain = 273.633 ; free physical = 5378 ; free virtual = 13603
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1182,10 +1182,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1651.617 ; gain = 259.633 ; free physical = 4541 ; free virtual = 11745
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1647.402 ; gain = 273.633 ; free physical = 5382 ; free virtual = 13607
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1651.617 ; gain = 259.633 ; free physical = 4541 ; free virtual = 11745
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1647.402 ; gain = 273.633 ; free physical = 5382 ; free virtual = 13607
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -1270,26 +1270,26 @@ WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SU
 Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'inst/s01_nodes/s01_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/tools/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_axi_smc_0_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_axi_smc_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2431.891 ; gain = 0.000 ; free physical = 4300 ; free virtual = 11503
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2414.059 ; gain = 0.000 ; free physical = 4503 ; free virtual = 12728
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2431.891 ; gain = 0.000 ; free physical = 4336 ; free virtual = 11538
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2414.059 ; gain = 0.000 ; free physical = 4503 ; free virtual = 12728
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 13 instances were transformed.
   FDR => FDRE: 12 instances
   SRL16 => SRL16E: 1 instances
 
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2431.891 ; gain = 0.000 ; free physical = 4336 ; free virtual = 11538
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.62 ; elapsed = 00:00:00.32 . Memory (MB): peak = 2431.891 ; gain = 0.000 ; free physical = 4337 ; free virtual = 11539
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2414.059 ; gain = 0.000 ; free physical = 4503 ; free virtual = 12728
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.55 ; elapsed = 00:00:00.35 . Memory (MB): peak = 2414.059 ; gain = 0.000 ; free physical = 4502 ; free virtual = 12727
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 2431.891 ; gain = 1039.906 ; free physical = 4807 ; free virtual = 12009
+Finished Constraint Validation : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 2414.059 ; gain = 1040.289 ; free physical = 4962 ; free virtual = 13187
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 2431.891 ; gain = 1039.906 ; free physical = 4807 ; free virtual = 12009
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 2414.059 ; gain = 1040.289 ; free physical = 4962 ; free virtual = 13187
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -1318,7 +1318,7 @@ Applied set_property DONT_TOUCH = true for inst/s00_nodes/s00_r_node/inst/inst_m
 Applied set_property DONT_TOUCH = true for inst/s01_nodes/s01_b_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for inst/s01_nodes/s01_w_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 2431.891 ; gain = 1039.906 ; free physical = 4805 ; free virtual = 12007
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 2414.059 ; gain = 1040.289 ; free physical = 4961 ; free virtual = 13186
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-4471] merging register 'seq_cnt_en_reg' into 'from_sys_reg' [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:377]
 INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
@@ -1390,7 +1390,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'gen_axi.gen_write.write_cs
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'gen_axi.gen_write.write_cs_reg' using encoding 'one-hot' in module 'sc_mmu_v1_0_7_decerr_slave__parameterized0'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 2431.891 ; gain = 1039.906 ; free physical = 4785 ; free virtual = 11992
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 2414.059 ; gain = 1040.289 ; free physical = 4936 ; free virtual = 13166
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1401,11 +1401,11 @@ Report RTL Partitions:
 |2     |sc_exit_v1_0_8_axi3_conv__GC0          |           1|      4812|
 |3     |sc_exit_v1_0_8_splitter__GC0           |           1|        18|
 |4     |sc_exit_v1_0_8_top__GC0                |           1|       533|
-|5     |sc_mmu_v1_0_7_top__GC0                 |           1|      2248|
+|5     |sc_mmu_v1_0_7_top__GC0                 |           1|      2184|
 |6     |s00_entry_pipeline_imp_USCCV8__GC0     |           1|       202|
-|7     |sc_mmu_v1_0_7_top__parameterized0__GC0 |           1|      2152|
+|7     |sc_mmu_v1_0_7_top__parameterized0__GC0 |           1|      2088|
 |8     |s01_entry_pipeline_imp_1W4H5O0__GC0    |           1|       242|
-|9     |bd_afc3__GC0                           |           1|     14677|
+|9     |bd_afc3__GC0                           |           1|     14421|
 +------+---------------------------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -1427,8 +1427,8 @@ Detailed RTL Component Info :
 +---Registers : 
 	             2178 Bit    Registers := 42    
 	              512 Bit    Registers := 2     
-	              188 Bit    Registers := 2     
-	              170 Bit    Registers := 4     
+	              156 Bit    Registers := 2     
+	              138 Bit    Registers := 4     
 	              106 Bit    Registers := 1     
 	              102 Bit    Registers := 1     
 	               88 Bit    Registers := 2     
@@ -1453,7 +1453,7 @@ Detailed RTL Component Info :
 +---Muxes : 
 	   2 Input   2178 Bit        Muxes := 21    
 	   2 Input    512 Bit        Muxes := 2     
-	   2 Input    170 Bit        Muxes := 2     
+	   2 Input    138 Bit        Muxes := 2     
 	   2 Input     88 Bit        Muxes := 1     
 	   2 Input     84 Bit        Muxes := 2     
 	   2 Input     64 Bit        Muxes := 5     
@@ -1903,7 +1903,7 @@ Detailed RTL Component Info :
 Module xpm_memory_base__parameterized0 
 Detailed RTL Component Info : 
 +---Registers : 
-	              188 Bit    Registers := 1     
+	              156 Bit    Registers := 1     
 Module sc_util_v1_0_4_counter__parameterized0__45 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -2090,7 +2090,7 @@ Detailed RTL Component Info :
 Module xpm_memory_base__parameterized0__2 
 Detailed RTL Component Info : 
 +---Registers : 
-	              188 Bit    Registers := 1     
+	              156 Bit    Registers := 1     
 Module sc_util_v1_0_4_counter__parameterized0__41 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -2754,7 +2754,7 @@ Detailed RTL Component Info :
 Module xpm_memory_base__parameterized7 
 Detailed RTL Component Info : 
 +---Registers : 
-	              170 Bit    Registers := 1     
+	              138 Bit    Registers := 1     
 Module sc_util_v1_0_4_counter__parameterized0__25 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -3030,7 +3030,7 @@ Detailed RTL Component Info :
 Module xpm_memory_base__parameterized7__2 
 Detailed RTL Component Info : 
 +---Registers : 
-	              170 Bit    Registers := 1     
+	              138 Bit    Registers := 1     
 Module sc_util_v1_0_4_counter__parameterized0__17 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -3386,19 +3386,19 @@ Detailed RTL Component Info :
 Module sc_util_v1_0_4_mux 
 Detailed RTL Component Info : 
 +---Muxes : 
-	   2 Input    170 Bit        Muxes := 1     
+	   2 Input    138 Bit        Muxes := 1     
 Module sc_util_v1_0_4_pipeline__parameterized10 
 Detailed RTL Component Info : 
 +---Registers : 
-	              170 Bit    Registers := 1     
+	              138 Bit    Registers := 1     
 Module sc_util_v1_0_4_mux__1 
 Detailed RTL Component Info : 
 +---Muxes : 
-	   2 Input    170 Bit        Muxes := 1     
+	   2 Input    138 Bit        Muxes := 1     
 Module sc_util_v1_0_4_pipeline__parameterized10__1 
 Detailed RTL Component Info : 
 +---Registers : 
-	              170 Bit    Registers := 1     
+	              138 Bit    Registers := 1     
 Module sc_util_v1_0_4_mux__parameterized0__1 
 Detailed RTL Component Info : 
 +---Muxes : 
@@ -3692,7 +3692,7 @@ INFO: [Synth 8-3333] propagating constant 0 across sequential element (sc_util_v
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (sc_util_v1_0_4_axi_reg_stall__6:/\skid_buffer_reg[46] )
 INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:21 ; elapsed = 00:01:26 . Memory (MB): peak = 2431.891 ; gain = 1039.906 ; free physical = 4688 ; free virtual = 11934
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:20 ; elapsed = 00:01:26 . Memory (MB): peak = 2414.059 ; gain = 1040.289 ; free physical = 4843 ; free virtual = 13111
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -3703,9 +3703,9 @@ Distributed RAM: Preliminary Mapping  Report (see note below)
 |Module Name                                                                                                                                                                                             | RTL Object                       | Inference      | Size (Depth x Width) | Primitives     | 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+----------------+
 |inst/i_0/\m00_nodes/m00_ar_node/inst /\inst_mi_handler/gen_normal_area.gen_node_prog_full.inst_node_prog_full/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst        | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 1               | RAM32X1D x 1   | 
-|inst/i_0/\m00_nodes/m00_ar_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                          | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 188             | RAM32M x 32    | 
+|inst/i_0/\m00_nodes/m00_ar_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                          | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 156             | RAM32M x 26    | 
 |inst/i_0/\m00_nodes/m00_aw_node/inst /\inst_mi_handler/gen_normal_area.gen_node_prog_full.inst_node_prog_full/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst        | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 1               | RAM32X1D x 1   | 
-|inst/i_0/\m00_nodes/m00_aw_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                          | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 188             | RAM32M x 32    | 
+|inst/i_0/\m00_nodes/m00_aw_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                          | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 156             | RAM32M x 26    | 
 |inst/i_0/\m00_nodes/m00_b_node/inst /\inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                     | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 19              | RAM32M x 4     | 
 |inst/i_0/\m00_nodes/m00_b_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                           | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 6               | RAM32M x 1     | 
 |inst/i_0/\m00_nodes/m00_r_node/inst /\inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                     | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 19              | RAM32M x 4     | 
@@ -3715,11 +3715,11 @@ Distributed RAM: Preliminary Mapping  Report (see note below)
 |inst/i_0/\m00_nodes/m00_w_node/inst /\inst_mi_handler/gen_normal_area.gen_node_prog_full.inst_node_prog_full/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst         | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 1               | RAM32X1D x 1   | 
 |inst/i_0/\m00_nodes/m00_w_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                           | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 106             | RAM32M x 18    | 
 |inst/i_0/\s00_nodes/s00_ar_node/inst /\inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                    | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 18              | RAM32M x 3     | 
-|inst/i_0/\s00_nodes/s00_ar_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                          | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 170             | RAM32M x 29    | 
+|inst/i_0/\s00_nodes/s00_ar_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                          | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 138             | RAM32M x 23    | 
 |inst/i_0/\s00_nodes/s00_r_node/inst /\inst_mi_handler/gen_normal_area.gen_node_prog_full.inst_node_prog_full/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst         | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 1               | RAM32X1D x 1   | 
 |inst/i_0/\s00_nodes/s00_r_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                           | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 102             | RAM32M x 17    | 
 |inst/i_0/\s01_nodes/s01_aw_node/inst /\inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                    | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 18              | RAM32M x 3     | 
-|inst/i_0/\s01_nodes/s01_aw_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                          | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 170             | RAM32M x 29    | 
+|inst/i_0/\s01_nodes/s01_aw_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                          | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 138             | RAM32M x 23    | 
 |inst/i_0/\s01_nodes/s01_b_node/inst /\inst_mi_handler/gen_normal_area.gen_node_prog_full.inst_node_prog_full/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst         | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 1               | RAM32X1D x 1   | 
 |inst/i_0/\s01_nodes/s01_b_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                           | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 24              | RAM32M x 4     | 
 |inst/i_0/\s01_nodes/s01_w_node/inst /\inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                     | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 18              | RAM32M x 3     | 
@@ -3739,19 +3739,19 @@ Report RTL Partitions:
 |2     |sc_exit_v1_0_8_axi3_conv__GC0          |           1|       950|
 |3     |sc_exit_v1_0_8_splitter__GC0           |           1|        19|
 |4     |sc_exit_v1_0_8_top__GC0                |           1|       237|
-|5     |sc_mmu_v1_0_7_top__GC0                 |           1|       442|
+|5     |sc_mmu_v1_0_7_top__GC0                 |           1|       338|
 |6     |s00_entry_pipeline_imp_USCCV8__GC0     |           1|        18|
-|7     |sc_mmu_v1_0_7_top__parameterized0__GC0 |           1|       312|
+|7     |sc_mmu_v1_0_7_top__parameterized0__GC0 |           1|       282|
 |8     |s01_entry_pipeline_imp_1W4H5O0__GC0    |           1|       194|
-|9     |bd_afc3__GC0                           |           1|      8930|
+|9     |bd_afc3__GC0                           |           1|      8682|
 |10    |sc_util_v1_0_4_axi_reg_stall__1        |           1|       377|
 |11    |sc_util_v1_0_4_axi_reg_stall__2        |           2|       292|
 |12    |sc_util_v1_0_4_axi_reg_stall__3        |           1|       412|
 |13    |sc_util_v1_0_4_axi_reg_stall__4        |           2|       382|
 |14    |sc_util_v1_0_4_axi_reg_stall__5        |           1|        57|
-|15    |sc_util_v1_0_4_axi_reg_stall__6        |           2|       494|
+|15    |sc_util_v1_0_4_axi_reg_stall__6        |           2|       334|
 |16    |sc_util_v1_0_4_axi_reg_stall__7        |           1|        41|
-|17    |sc_util_v1_0_4_axi_reg_stall__8        |           2|       492|
+|17    |sc_util_v1_0_4_axi_reg_stall__8        |           2|       332|
 |18    |sc_util_v1_0_4_axi_reg_stall__9        |           1|        30|
 |19    |sc_util_v1_0_4_axi_reg_stall__10       |           1|        30|
 |20    |sc_util_v1_0_4_axi_reg_stall__11       |           1|        28|
@@ -3765,13 +3765,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:26 ; elapsed = 00:01:32 . Memory (MB): peak = 2431.891 ; gain = 1039.906 ; free physical = 4572 ; free virtual = 11818
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:26 ; elapsed = 00:01:32 . Memory (MB): peak = 2414.059 ; gain = 1040.289 ; free physical = 4721 ; free virtual = 12989
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:32 ; elapsed = 00:01:38 . Memory (MB): peak = 2431.891 ; gain = 1039.906 ; free physical = 4534 ; free virtual = 11780
+Finished Timing Optimization : Time (s): cpu = 00:01:32 ; elapsed = 00:01:38 . Memory (MB): peak = 2414.059 ; gain = 1040.289 ; free physical = 4685 ; free virtual = 12954
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -3782,15 +3782,15 @@ Distributed RAM: Final Mapping  Report
 |Module Name                                                                                                                                                                                             | RTL Object                       | Inference      | Size (Depth x Width) | Primitives     | 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+----------------+
 |inst/i_0/\s01_nodes/s01_aw_node/inst /\inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                    | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 18              | RAM32M x 3     | 
-|inst/i_0/\s01_nodes/s01_aw_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                          | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 170             | RAM32M x 29    | 
+|inst/i_0/\s01_nodes/s01_aw_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                          | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 138             | RAM32M x 23    | 
 |inst/i_0/\s01_nodes/s01_b_node/inst /\inst_mi_handler/gen_normal_area.gen_node_prog_full.inst_node_prog_full/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst         | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 1               | RAM32X1D x 1   | 
 |inst/i_0/\s01_nodes/s01_b_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                           | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 24              | RAM32M x 4     | 
 |inst/i_0/\s01_nodes/s01_w_node/inst /\inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                     | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 18              | RAM32M x 3     | 
 |inst/i_0/\s01_nodes/s01_w_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                           | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 88              | RAM32M x 15    | 
 |inst/i_0/\m00_nodes/m00_ar_node/inst /\inst_mi_handler/gen_normal_area.gen_node_prog_full.inst_node_prog_full/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst        | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 1               | RAM32X1D x 1   | 
-|inst/i_0/\m00_nodes/m00_ar_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                          | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 188             | RAM32M x 32    | 
+|inst/i_0/\m00_nodes/m00_ar_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                          | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 156             | RAM32M x 26    | 
 |inst/i_0/\m00_nodes/m00_aw_node/inst /\inst_mi_handler/gen_normal_area.gen_node_prog_full.inst_node_prog_full/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst        | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 1               | RAM32X1D x 1   | 
-|inst/i_0/\m00_nodes/m00_aw_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                          | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 188             | RAM32M x 32    | 
+|inst/i_0/\m00_nodes/m00_aw_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                          | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 156             | RAM32M x 26    | 
 |inst/i_0/\m00_nodes/m00_b_node/inst /\inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                     | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 19              | RAM32M x 4     | 
 |inst/i_0/\m00_nodes/m00_b_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                           | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 6               | RAM32M x 1     | 
 |inst/i_0/\m00_nodes/m00_r_node/inst /\inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                     | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 19              | RAM32M x 4     | 
@@ -3800,7 +3800,7 @@ Distributed RAM: Final Mapping  Report
 |inst/i_0/\m00_nodes/m00_w_node/inst /\inst_mi_handler/gen_normal_area.gen_node_prog_full.inst_node_prog_full/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst         | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 1               | RAM32X1D x 1   | 
 |inst/i_0/\m00_nodes/m00_w_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                           | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 106             | RAM32M x 18    | 
 |inst/i_0/\s00_nodes/s00_ar_node/inst /\inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                    | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 18              | RAM32M x 3     | 
-|inst/i_0/\s00_nodes/s00_ar_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                          | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 170             | RAM32M x 29    | 
+|inst/i_0/\s00_nodes/s00_ar_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                          | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 138             | RAM32M x 23    | 
 |inst/i_0/\s00_nodes/s00_r_node/inst /\inst_mi_handler/gen_normal_area.gen_node_prog_full.inst_node_prog_full/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst         | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 1               | RAM32X1D x 1   | 
 |inst/i_0/\s00_nodes/s00_r_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                           | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 102             | RAM32M x 17    | 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+----------------+
@@ -3817,17 +3817,17 @@ Report RTL Partitions:
 |2     |sc_exit_v1_0_8_axi3_conv__GC0          |           1|       950|
 |3     |sc_exit_v1_0_8_splitter__GC0           |           1|        19|
 |4     |sc_exit_v1_0_8_top__GC0                |           1|       237|
-|5     |sc_mmu_v1_0_7_top__GC0                 |           1|       442|
+|5     |sc_mmu_v1_0_7_top__GC0                 |           1|       338|
 |6     |s00_entry_pipeline_imp_USCCV8__GC0     |           1|        18|
-|7     |sc_mmu_v1_0_7_top__parameterized0__GC0 |           1|       312|
+|7     |sc_mmu_v1_0_7_top__parameterized0__GC0 |           1|       277|
 |8     |sc_util_v1_0_4_axi_reg_stall__1        |           1|       377|
 |9     |sc_util_v1_0_4_axi_reg_stall__2        |           2|       292|
 |10    |sc_util_v1_0_4_axi_reg_stall__3        |           1|       412|
 |11    |sc_util_v1_0_4_axi_reg_stall__4        |           2|       382|
 |12    |sc_util_v1_0_4_axi_reg_stall__5        |           1|        57|
-|13    |sc_util_v1_0_4_axi_reg_stall__6        |           2|       494|
+|13    |sc_util_v1_0_4_axi_reg_stall__6        |           2|       334|
 |14    |sc_util_v1_0_4_axi_reg_stall__7        |           1|        41|
-|15    |sc_util_v1_0_4_axi_reg_stall__8        |           2|       492|
+|15    |sc_util_v1_0_4_axi_reg_stall__8        |           2|       332|
 |16    |sc_util_v1_0_4_axi_reg_stall__9        |           1|        30|
 |17    |sc_util_v1_0_4_axi_reg_stall__10       |           1|        30|
 |18    |sc_util_v1_0_4_axi_reg_stall__11       |           1|        28|
@@ -3836,7 +3836,7 @@ Report RTL Partitions:
 |21    |sc_util_v1_0_4_axi_reg_stall__14       |           1|       232|
 |22    |sc_util_v1_0_4_axi_reg_stall__15       |           1|        28|
 |23    |sc_util_v1_0_4_axi_reg_stall__16       |           1|        57|
-|24    |bd_afc3_GT0                            |           1|      9124|
+|24    |bd_afc3_GT0                            |           1|      8876|
 +------+---------------------------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Technology Mapping
@@ -3845,7 +3845,7 @@ INFO: [Synth 8-3332] Sequential element (gen_endpoint.decerr_slave_inst/FSM_oneh
 INFO: [Synth 8-3332] Sequential element (gen_endpoint.decerr_slave_inst/FSM_onehot_gen_axi.gen_write.write_cs_reg[1]) is unused and will be removed from module sc_mmu_v1_0_7_top.
 INFO: [Synth 8-3332] Sequential element (gen_endpoint.decerr_slave_inst/FSM_onehot_gen_axi.gen_write.write_cs_reg[0]) is unused and will be removed from module sc_mmu_v1_0_7_top.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:37 ; elapsed = 00:01:43 . Memory (MB): peak = 2431.891 ; gain = 1039.906 ; free physical = 4571 ; free virtual = 11817
+Finished Technology Mapping : Time (s): cpu = 00:01:37 ; elapsed = 00:01:44 . Memory (MB): peak = 2414.059 ; gain = 1040.289 ; free physical = 4723 ; free virtual = 12991
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -3892,7 +3892,7 @@ INFO: [Synth 8-5365] Flop inst_mi_handler/gen_normal_area.inst_fifo_node_payld/g
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:38 ; elapsed = 00:01:44 . Memory (MB): peak = 2431.891 ; gain = 1039.906 ; free physical = 4571 ; free virtual = 11817
+Finished IO Insertion : Time (s): cpu = 00:01:38 ; elapsed = 00:01:45 . Memory (MB): peak = 2414.059 ; gain = 1040.289 ; free physical = 4723 ; free virtual = 12991
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -3905,7 +3905,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:38 ; elapsed = 00:01:44 . Memory (MB): peak = 2431.891 ; gain = 1039.906 ; free physical = 4571 ; free virtual = 11817
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:38 ; elapsed = 00:01:45 . Memory (MB): peak = 2414.059 ; gain = 1040.289 ; free physical = 4723 ; free virtual = 12991
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -3917,25 +3917,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:39 ; elapsed = 00:01:45 . Memory (MB): peak = 2431.891 ; gain = 1039.906 ; free physical = 4571 ; free virtual = 11817
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:38 ; elapsed = 00:01:45 . Memory (MB): peak = 2414.059 ; gain = 1040.289 ; free physical = 4723 ; free virtual = 12991
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:39 ; elapsed = 00:01:45 . Memory (MB): peak = 2431.891 ; gain = 1039.906 ; free physical = 4571 ; free virtual = 11817
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:38 ; elapsed = 00:01:45 . Memory (MB): peak = 2414.059 ; gain = 1040.289 ; free physical = 4723 ; free virtual = 12991
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:39 ; elapsed = 00:01:45 . Memory (MB): peak = 2431.891 ; gain = 1039.906 ; free physical = 4573 ; free virtual = 11819
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:39 ; elapsed = 00:01:46 . Memory (MB): peak = 2414.059 ; gain = 1040.289 ; free physical = 4723 ; free virtual = 12991
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:39 ; elapsed = 00:01:45 . Memory (MB): peak = 2431.891 ; gain = 1039.906 ; free physical = 4573 ; free virtual = 11819
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:39 ; elapsed = 00:01:46 . Memory (MB): peak = 2414.059 ; gain = 1040.289 ; free physical = 4723 ; free virtual = 12991
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -3967,18 +3967,18 @@ Report Cell Usage:
 +------+---------+------+
 |1     |CARRY4   |    28|
 |2     |LUT1     |   139|
-|3     |LUT2     |   189|
-|4     |LUT3     |   932|
-|5     |LUT4     |   351|
-|6     |LUT5     |   453|
-|7     |LUT6     |   516|
+|3     |LUT2     |   191|
+|4     |LUT3     |   806|
+|5     |LUT4     |   338|
+|6     |LUT5     |   448|
+|7     |LUT6     |   512|
 |8     |RAM16X1D |     2|
-|9     |RAM32M   |   208|
+|9     |RAM32M   |   184|
 |10    |RAM32X1D |     5|
 |11    |SRL16    |     1|
 |12    |SRL16E   |    38|
 |13    |FDR      |     4|
-|14    |FDRE     |  4193|
+|14    |FDRE     |  3745|
 |15    |FDSE     |   167|
 +------+---------+------+
 
@@ -3986,8 +3986,8 @@ Report Instance Areas:
 +------+------------------------------------------------------------------------------------------------+----------------------------------------------------------+------+
 |      |Instance                                                                                        |Module                                                    |Cells |
 +------+------------------------------------------------------------------------------------------------+----------------------------------------------------------+------+
-|1     |top                                                                                             |                                                          |  7226|
-|2     |  inst                                                                                          |bd_afc3                                                   |  7226|
+|1     |top                                                                                             |                                                          |  6608|
+|2     |  inst                                                                                          |bd_afc3                                                   |  6608|
 |3     |    clk_map                                                                                     |clk_map_imp_5Y9LOC                                        |    41|
 |4     |      psr_aclk                                                                                  |bd_afc3_psr_aclk_0                                        |    41|
 |5     |        U0                                                                                      |proc_sys_reset                                            |    41|
@@ -4036,10 +4036,10 @@ Report Instance Areas:
 |48    |                \gen_srls[3].srl_nx1                                                            |sc_util_v1_0_4_srl_rtl_111                                |     2|
 |49    |                \gen_srls[4].srl_nx1                                                            |sc_util_v1_0_4_srl_rtl_112                                |     3|
 |50    |          w_reg                                                                                 |sc_util_v1_0_4_axi_reg_stall_104                          |   230|
-|51    |    m00_nodes                                                                                   |m00_nodes_imp_1GOYQYZ                                     |  1525|
-|52    |      m00_ar_node                                                                               |bd_afc3_m00arn_0                                          |   368|
-|53    |        inst                                                                                    |sc_node_v1_0_10_top                                       |   368|
-|54    |          inst_mi_handler                                                                       |sc_node_v1_0_10_mi_handler                                |   350|
+|51    |    m00_nodes                                                                                   |m00_nodes_imp_1GOYQYZ                                     |  1449|
+|52    |      m00_ar_node                                                                               |bd_afc3_m00arn_0                                          |   330|
+|53    |        inst                                                                                    |sc_node_v1_0_10_top                                       |   330|
+|54    |          inst_mi_handler                                                                       |sc_node_v1_0_10_mi_handler                                |   312|
 |55    |            \gen_normal_area.gen_node_prog_full.inst_node_prog_full                             |sc_node_v1_0_10_fifo__xdcDup__1                           |    70|
 |56    |              \gen_xpm_memory_fifo.inst_fifo                                                    |sc_util_v1_0_4_xpm_memory_fifo__xdcDup__1                 |    70|
 |57    |                \gen_mem_rep[0].inst_xpm_memory                                                 |xpm_memory_sdpram                                         |     4|
@@ -4047,10 +4047,10 @@ Report Instance Areas:
 |59    |                \gen_mem_rep[0].inst_rd_addrb                                                   |sc_util_v1_0_4_counter__parameterized0_97                 |    14|
 |60    |                \gen_mem_rep[0].inst_wr_addra                                                   |sc_util_v1_0_4_counter__parameterized0_98                 |    13|
 |61    |                \gen_wr.inst_wr_addra_p1                                                        |sc_util_v1_0_4_counter__parameterized1_99                 |    29|
-|62    |            \gen_normal_area.inst_fifo_node_payld                                               |sc_node_v1_0_10_fifo__parameterized0__xdcDup__1           |   277|
-|63    |              \gen_xpm_memory_fifo.inst_fifo                                                    |sc_util_v1_0_4_xpm_memory_fifo__parameterized0__xdcDup__1 |   277|
-|64    |                \gen_mem_rep[0].inst_xpm_memory                                                 |xpm_memory_sdpram__parameterized0                         |   221|
-|65    |                  xpm_memory_base_inst                                                          |xpm_memory_base__parameterized0                           |   221|
+|62    |            \gen_normal_area.inst_fifo_node_payld                                               |sc_node_v1_0_10_fifo__parameterized0__xdcDup__1           |   239|
+|63    |              \gen_xpm_memory_fifo.inst_fifo                                                    |sc_util_v1_0_4_xpm_memory_fifo__parameterized0__xdcDup__1 |   239|
+|64    |                \gen_mem_rep[0].inst_xpm_memory                                                 |xpm_memory_sdpram__parameterized0                         |   183|
+|65    |                  xpm_memory_base_inst                                                          |xpm_memory_base__parameterized0                           |   183|
 |66    |                \gen_mem_rep[0].inst_rd_addrb                                                   |sc_util_v1_0_4_counter__parameterized0_94                 |    14|
 |67    |                \gen_mem_rep[0].inst_wr_addra                                                   |sc_util_v1_0_4_counter__parameterized0_95                 |    13|
 |68    |                \gen_wr.inst_wr_addra_p1                                                        |sc_util_v1_0_4_counter__parameterized1_96                 |    21|
@@ -4059,9 +4059,9 @@ Report Instance Areas:
 |71    |          inst_si_handler                                                                       |sc_node_v1_0_10_si_handler                                |    14|
 |72    |            \gen_si_handler.gen_arbiter_rr_normal_area.inst_arbiter                             |sc_node_v1_0_10_arb_alg_rr_91                             |     7|
 |73    |            \gen_si_handler.gen_request_counters.gen_req_counter[0].inst_req_counter            |sc_util_v1_0_4_counter_92                                 |     6|
-|74    |      m00_aw_node                                                                               |bd_afc3_m00awn_0                                          |   397|
-|75    |        inst                                                                                    |sc_node_v1_0_10_top__parameterized0                       |   397|
-|76    |          inst_mi_handler                                                                       |sc_node_v1_0_10_mi_handler__parameterized0                |   351|
+|74    |      m00_aw_node                                                                               |bd_afc3_m00awn_0                                          |   359|
+|75    |        inst                                                                                    |sc_node_v1_0_10_top__parameterized0                       |   359|
+|76    |          inst_mi_handler                                                                       |sc_node_v1_0_10_mi_handler__parameterized0                |   313|
 |77    |            \gen_normal_area.gen_node_prog_full.inst_node_prog_full                             |sc_node_v1_0_10_fifo__xdcDup__2                           |    70|
 |78    |              \gen_xpm_memory_fifo.inst_fifo                                                    |sc_util_v1_0_4_xpm_memory_fifo__xdcDup__2                 |    70|
 |79    |                \gen_mem_rep[0].inst_xpm_memory                                                 |xpm_memory_sdpram__8                                      |     4|
@@ -4069,10 +4069,10 @@ Report Instance Areas:
 |81    |                \gen_mem_rep[0].inst_rd_addrb                                                   |sc_util_v1_0_4_counter__parameterized0_88                 |    14|
 |82    |                \gen_mem_rep[0].inst_wr_addra                                                   |sc_util_v1_0_4_counter__parameterized0_89                 |    13|
 |83    |                \gen_wr.inst_wr_addra_p1                                                        |sc_util_v1_0_4_counter__parameterized1_90                 |    29|
-|84    |            \gen_normal_area.inst_fifo_node_payld                                               |sc_node_v1_0_10_fifo__parameterized0                      |   277|
-|85    |              \gen_xpm_memory_fifo.inst_fifo                                                    |sc_util_v1_0_4_xpm_memory_fifo__parameterized0            |   277|
-|86    |                \gen_mem_rep[0].inst_xpm_memory                                                 |xpm_memory_sdpram__parameterized0__2                      |   221|
-|87    |                  xpm_memory_base_inst                                                          |xpm_memory_base__parameterized0__2                        |   221|
+|84    |            \gen_normal_area.inst_fifo_node_payld                                               |sc_node_v1_0_10_fifo__parameterized0                      |   239|
+|85    |              \gen_xpm_memory_fifo.inst_fifo                                                    |sc_util_v1_0_4_xpm_memory_fifo__parameterized0            |   239|
+|86    |                \gen_mem_rep[0].inst_xpm_memory                                                 |xpm_memory_sdpram__parameterized0__2                      |   183|
+|87    |                  xpm_memory_base_inst                                                          |xpm_memory_base__parameterized0__2                        |   183|
 |88    |                \gen_mem_rep[0].inst_rd_addrb                                                   |sc_util_v1_0_4_counter__parameterized0_85                 |    14|
 |89    |                \gen_mem_rep[0].inst_wr_addra                                                   |sc_util_v1_0_4_counter__parameterized0_86                 |    13|
 |90    |                \gen_wr.inst_wr_addra_p1                                                        |sc_util_v1_0_4_counter__parameterized1_87                 |    21|
@@ -4157,19 +4157,19 @@ Report Instance Areas:
 |169   |                \gen_mem_rep[0].inst_rd_addrb                                                   |sc_util_v1_0_4_counter__parameterized3                    |     6|
 |170   |                \gen_mem_rep[0].inst_wr_addra                                                   |sc_util_v1_0_4_counter__parameterized3_57                 |     6|
 |171   |                \gen_wr.inst_wr_addra_p1                                                        |sc_util_v1_0_4_counter__parameterized4                    |    10|
-|172   |    s00_entry_pipeline                                                                          |s00_entry_pipeline_imp_USCCV8                             |   848|
-|173   |      s00_mmu                                                                                   |bd_afc3_s00mmu_0                                          |   843|
-|174   |        inst                                                                                    |sc_mmu_v1_0_7_top                                         |   843|
-|175   |          ar_reg_stall                                                                          |sc_util_v1_0_4_axi_reg_stall_53                           |   284|
-|176   |          ar_sreg                                                                               |sc_util_v1_0_4_axi_reg_stall_54                           |   297|
-|177   |          \gen_endpoint.decerr_slave_inst                                                       |sc_mmu_v1_0_7_decerr_slave                                |    33|
-|178   |          r_sreg                                                                                |sc_util_v1_0_4_axi_reg_stall_55                           |   215|
+|172   |    s00_entry_pipeline                                                                          |s00_entry_pipeline_imp_USCCV8                             |   647|
+|173   |      s00_mmu                                                                                   |bd_afc3_s00mmu_0                                          |   642|
+|174   |        inst                                                                                    |sc_mmu_v1_0_7_top                                         |   642|
+|175   |          ar_reg_stall                                                                          |sc_util_v1_0_4_axi_reg_stall_53                           |   189|
+|176   |          ar_sreg                                                                               |sc_util_v1_0_4_axi_reg_stall_54                           |   188|
+|177   |          \gen_endpoint.decerr_slave_inst                                                       |sc_mmu_v1_0_7_decerr_slave                                |    31|
+|178   |          r_sreg                                                                                |sc_util_v1_0_4_axi_reg_stall_55                           |   218|
 |179   |      s00_si_converter                                                                          |bd_afc3_s00sic_0                                          |     5|
 |180   |        inst                                                                                    |sc_si_converter_v1_0_7_top                                |     5|
-|181   |    s00_nodes                                                                                   |s00_nodes_imp_Y7M43I                                      |   621|
-|182   |      s00_ar_node                                                                               |bd_afc3_sarn_0                                            |   363|
-|183   |        inst                                                                                    |sc_node_v1_0_10_top__parameterized4                       |   363|
-|184   |          inst_mi_handler                                                                       |sc_node_v1_0_10_mi_handler__parameterized4                |   356|
+|181   |    s00_nodes                                                                                   |s00_nodes_imp_Y7M43I                                      |   583|
+|182   |      s00_ar_node                                                                               |bd_afc3_sarn_0                                            |   325|
+|183   |        inst                                                                                    |sc_node_v1_0_10_top__parameterized4                       |   325|
+|184   |          inst_mi_handler                                                                       |sc_node_v1_0_10_mi_handler__parameterized4                |   318|
 |185   |            \gen_normal_area.gen_fifo_req.inst_fifo_req                                         |sc_node_v1_0_10_fifo__parameterized6__xdcDup__1           |    78|
 |186   |              \gen_xpm_memory_fifo.inst_fifo                                                    |sc_util_v1_0_4_xpm_memory_fifo__parameterized6__xdcDup__1 |    78|
 |187   |                \gen_mem_rep[0].inst_xpm_memory                                                 |xpm_memory_sdpram__parameterized6                         |    22|
@@ -4177,10 +4177,10 @@ Report Instance Areas:
 |189   |                \gen_mem_rep[0].inst_rd_addrb                                                   |sc_util_v1_0_4_counter__parameterized0_50                 |    14|
 |190   |                \gen_mem_rep[0].inst_wr_addra                                                   |sc_util_v1_0_4_counter__parameterized0_51                 |    13|
 |191   |                \gen_wr.inst_wr_addra_p1                                                        |sc_util_v1_0_4_counter__parameterized1_52                 |    22|
-|192   |            \gen_normal_area.inst_fifo_node_payld                                               |sc_node_v1_0_10_fifo__parameterized7__xdcDup__1           |   267|
-|193   |              \gen_xpm_memory_fifo.inst_fifo                                                    |sc_util_v1_0_4_xpm_memory_fifo__parameterized7__xdcDup__1 |   267|
-|194   |                \gen_mem_rep[0].inst_xpm_memory                                                 |xpm_memory_sdpram__parameterized7                         |   200|
-|195   |                  xpm_memory_base_inst                                                          |xpm_memory_base__parameterized7                           |   200|
+|192   |            \gen_normal_area.inst_fifo_node_payld                                               |sc_node_v1_0_10_fifo__parameterized7__xdcDup__1           |   229|
+|193   |              \gen_xpm_memory_fifo.inst_fifo                                                    |sc_util_v1_0_4_xpm_memory_fifo__parameterized7__xdcDup__1 |   229|
+|194   |                \gen_mem_rep[0].inst_xpm_memory                                                 |xpm_memory_sdpram__parameterized7                         |   162|
+|195   |                  xpm_memory_base_inst                                                          |xpm_memory_base__parameterized7                           |   162|
 |196   |                \gen_mem_rep[0].inst_rd_addrb                                                   |sc_util_v1_0_4_counter__parameterized0_47                 |    14|
 |197   |                \gen_mem_rep[0].inst_wr_addra                                                   |sc_util_v1_0_4_counter__parameterized0_48                 |    13|
 |198   |                \gen_wr.inst_wr_addra_p1                                                        |sc_util_v1_0_4_counter__parameterized1_49                 |    30|
@@ -4208,11 +4208,11 @@ Report Instance Areas:
 |220   |              inst_pipeline_valid                                                               |sc_util_v1_0_4_pipeline_38                                |     1|
 |221   |          inst_si_handler                                                                       |sc_node_v1_0_10_si_handler__parameterized2                |     3|
 |222   |            inst_arb_stall_late                                                                 |sc_util_v1_0_4_pipeline_37                                |     3|
-|223   |    s01_entry_pipeline                                                                          |s01_entry_pipeline_imp_1W4H5O0                            |   882|
-|224   |      s01_mmu                                                                                   |bd_afc3_s01mmu_0                                          |   772|
-|225   |        inst                                                                                    |sc_mmu_v1_0_7_top__parameterized0                         |   772|
-|226   |          aw_reg_stall                                                                          |sc_util_v1_0_4_axi_reg_stall                              |   279|
-|227   |          aw_sreg                                                                               |sc_util_v1_0_4_axi_reg_stall_34                           |   306|
+|223   |    s01_entry_pipeline                                                                          |s01_entry_pipeline_imp_1W4H5O0                            |   681|
+|224   |      s01_mmu                                                                                   |bd_afc3_s01mmu_0                                          |   571|
+|225   |        inst                                                                                    |sc_mmu_v1_0_7_top__parameterized0                         |   571|
+|226   |          aw_reg_stall                                                                          |sc_util_v1_0_4_axi_reg_stall                              |   183|
+|227   |          aw_sreg                                                                               |sc_util_v1_0_4_axi_reg_stall_34                           |   202|
 |228   |          b_sreg                                                                                |sc_util_v1_0_4_axi_reg_stall_35                           |    20|
 |229   |          \gen_endpoint.decerr_slave_inst                                                       |sc_mmu_v1_0_7_decerr_slave__parameterized0                |    18|
 |230   |          w_sreg                                                                                |sc_util_v1_0_4_axi_reg_stall_36                           |   126|
@@ -4234,10 +4234,10 @@ Report Instance Areas:
 |246   |              \gen_srls[7].srl_nx1                                                              |sc_util_v1_0_4_srl_rtl_31                                 |     2|
 |247   |              \gen_srls[8].srl_nx1                                                              |sc_util_v1_0_4_srl_rtl_32                                 |     2|
 |248   |              \gen_srls[9].srl_nx1                                                              |sc_util_v1_0_4_srl_rtl_33                                 |     2|
-|249   |    s01_nodes                                                                                   |s01_nodes_imp_1RW0SI0                                     |   938|
-|250   |      s01_aw_node                                                                               |bd_afc3_sawn_0                                            |   363|
-|251   |        inst                                                                                    |sc_node_v1_0_10_top__parameterized6                       |   363|
-|252   |          inst_mi_handler                                                                       |sc_node_v1_0_10_mi_handler__parameterized6                |   356|
+|249   |    s01_nodes                                                                                   |s01_nodes_imp_1RW0SI0                                     |   900|
+|250   |      s01_aw_node                                                                               |bd_afc3_sawn_0                                            |   325|
+|251   |        inst                                                                                    |sc_node_v1_0_10_top__parameterized6                       |   325|
+|252   |          inst_mi_handler                                                                       |sc_node_v1_0_10_mi_handler__parameterized6                |   318|
 |253   |            \gen_normal_area.gen_fifo_req.inst_fifo_req                                         |sc_node_v1_0_10_fifo__parameterized6                      |    78|
 |254   |              \gen_xpm_memory_fifo.inst_fifo                                                    |sc_util_v1_0_4_xpm_memory_fifo__parameterized6            |    78|
 |255   |                \gen_mem_rep[0].inst_xpm_memory                                                 |xpm_memory_sdpram__parameterized6__3                      |    22|
@@ -4245,10 +4245,10 @@ Report Instance Areas:
 |257   |                \gen_mem_rep[0].inst_rd_addrb                                                   |sc_util_v1_0_4_counter__parameterized0_18                 |    14|
 |258   |                \gen_mem_rep[0].inst_wr_addra                                                   |sc_util_v1_0_4_counter__parameterized0_19                 |    13|
 |259   |                \gen_wr.inst_wr_addra_p1                                                        |sc_util_v1_0_4_counter__parameterized1_20                 |    22|
-|260   |            \gen_normal_area.inst_fifo_node_payld                                               |sc_node_v1_0_10_fifo__parameterized7                      |   267|
-|261   |              \gen_xpm_memory_fifo.inst_fifo                                                    |sc_util_v1_0_4_xpm_memory_fifo__parameterized7            |   267|
-|262   |                \gen_mem_rep[0].inst_xpm_memory                                                 |xpm_memory_sdpram__parameterized7__2                      |   200|
-|263   |                  xpm_memory_base_inst                                                          |xpm_memory_base__parameterized7__2                        |   200|
+|260   |            \gen_normal_area.inst_fifo_node_payld                                               |sc_node_v1_0_10_fifo__parameterized7                      |   229|
+|261   |              \gen_xpm_memory_fifo.inst_fifo                                                    |sc_util_v1_0_4_xpm_memory_fifo__parameterized7            |   229|
+|262   |                \gen_mem_rep[0].inst_xpm_memory                                                 |xpm_memory_sdpram__parameterized7__2                      |   162|
+|263   |                  xpm_memory_base_inst                                                          |xpm_memory_base__parameterized7__2                        |   162|
 |264   |                \gen_mem_rep[0].inst_rd_addrb                                                   |sc_util_v1_0_4_counter__parameterized0_15                 |    14|
 |265   |                \gen_mem_rep[0].inst_wr_addra                                                   |sc_util_v1_0_4_counter__parameterized0_16                 |    13|
 |266   |                \gen_wr.inst_wr_addra_p1                                                        |sc_util_v1_0_4_counter__parameterized1_17                 |    30|
@@ -4299,13 +4299,13 @@ Report Instance Areas:
 |311   |            \gen_normal_area.inst_fifo_send                                                     |sc_node_v1_0_10_reg_slice3__parameterized1                |     9|
 |312   |          inst_si_handler                                                                       |sc_node_v1_0_10_si_handler__parameterized6                |     2|
 |313   |            inst_arb_stall_late                                                                 |sc_util_v1_0_4_pipeline                                   |     2|
-|314   |    switchboards                                                                                |switchboards_imp_4N4PBE                                   |   515|
-|315   |      ar_switchboard                                                                            |bd_afc3_arsw_0                                            |   169|
-|316   |        inst                                                                                    |sc_switchboard_v1_0_6_top                                 |   169|
-|317   |          \gen_mi[0].inst_opipe_payld                                                           |sc_util_v1_0_4_pipeline__parameterized10_0                |   169|
-|318   |      aw_switchboard                                                                            |bd_afc3_awsw_0                                            |   170|
-|319   |        inst                                                                                    |sc_switchboard_v1_0_6_top__1                              |   170|
-|320   |          \gen_mi[0].inst_opipe_payld                                                           |sc_util_v1_0_4_pipeline__parameterized10                  |   170|
+|314   |    switchboards                                                                                |switchboards_imp_4N4PBE                                   |   451|
+|315   |      ar_switchboard                                                                            |bd_afc3_arsw_0                                            |   137|
+|316   |        inst                                                                                    |sc_switchboard_v1_0_6_top                                 |   137|
+|317   |          \gen_mi[0].inst_opipe_payld                                                           |sc_util_v1_0_4_pipeline__parameterized10_0                |   137|
+|318   |      aw_switchboard                                                                            |bd_afc3_awsw_0                                            |   138|
+|319   |        inst                                                                                    |sc_switchboard_v1_0_6_top__1                              |   138|
+|320   |          \gen_mi[0].inst_opipe_payld                                                           |sc_util_v1_0_4_pipeline__parameterized10                  |   138|
 |321   |      b_switchboard                                                                             |bd_afc3_bsw_0                                             |     5|
 |322   |        inst                                                                                    |sc_switchboard_v1_0_6_top__parameterized0                 |     5|
 |323   |          \gen_mi[1].inst_opipe_payld                                                           |sc_util_v1_0_4_pipeline__parameterized12                  |     5|
@@ -4317,38 +4317,38 @@ Report Instance Areas:
 |329   |          \gen_mi[0].inst_opipe_payld                                                           |sc_util_v1_0_4_pipeline__parameterized16                  |    88|
 +------+------------------------------------------------------------------------------------------------+----------------------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:39 ; elapsed = 00:01:45 . Memory (MB): peak = 2431.891 ; gain = 1039.906 ; free physical = 4573 ; free virtual = 11819
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:39 ; elapsed = 00:01:46 . Memory (MB): peak = 2414.059 ; gain = 1040.289 ; free physical = 4723 ; free virtual = 12991
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 5183 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:18 ; elapsed = 00:01:25 . Memory (MB): peak = 2431.891 ; gain = 259.633 ; free physical = 4627 ; free virtual = 11874
-Synthesis Optimization Complete : Time (s): cpu = 00:01:39 ; elapsed = 00:01:45 . Memory (MB): peak = 2431.898 ; gain = 1039.906 ; free physical = 4627 ; free virtual = 11873
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:19 ; elapsed = 00:01:26 . Memory (MB): peak = 2414.059 ; gain = 273.633 ; free physical = 4779 ; free virtual = 13047
+Synthesis Optimization Complete : Time (s): cpu = 00:01:39 ; elapsed = 00:01:46 . Memory (MB): peak = 2414.066 ; gain = 1040.289 ; free physical = 4779 ; free virtual = 13047
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 248 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 224 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2431.898 ; gain = 0.000 ; free physical = 4571 ; free virtual = 11817
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2414.066 ; gain = 0.000 ; free physical = 4722 ; free virtual = 12990
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 220 instances were transformed.
+  A total of 196 instances were transformed.
   FDR => FDRE: 4 instances
   RAM16X1D => RAM32X1D (RAMD32, RAMD32): 2 instances
-  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 208 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 184 instances
   RAM32X1D => RAM32X1D (RAMD32, RAMD32): 5 instances
   SRL16 => SRL16E: 1 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
 585 Infos, 127 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:42 ; elapsed = 00:01:48 . Memory (MB): peak = 2431.898 ; gain = 1040.031 ; free physical = 4641 ; free virtual = 11887
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2431.898 ; gain = 0.000 ; free physical = 4641 ; free virtual = 11887
+synth_design: Time (s): cpu = 00:01:42 ; elapsed = 00:01:49 . Memory (MB): peak = 2414.066 ; gain = 1051.867 ; free physical = 4791 ; free virtual = 13059
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2414.066 ; gain = 0.000 ; free physical = 4791 ; free virtual = 13059
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint '/home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/design_1_axi_smc_0_synth_1/design_1_axi_smc_0.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_axi_smc_0, cache-ID = ba0ed7bce9c13537
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_axi_smc_0, cache-ID = e396732042d2d9bc
 INFO: [Coretcl 2-1174] Renamed 328 cell refs.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2455.902 ; gain = 0.000 ; free physical = 4706 ; free virtual = 11967
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2438.070 ; gain = 0.000 ; free physical = 4757 ; free virtual = 13038
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint '/home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/design_1_axi_smc_0_synth_1/design_1_axi_smc_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_axi_smc_0_utilization_synth.rpt -pb design_1_axi_smc_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Dec 16 21:29:59 2019...
+INFO: [Common 17-206] Exiting Vivado at Tue Dec 17 13:40:08 2019...

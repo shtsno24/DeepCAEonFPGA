@@ -12,8 +12,8 @@ preplace inst rst_ps7_0_100M -pg 1 -lvl 1 -y 300 -defaultsOSRD
 preplace inst processing_system7_0 -pg 1 -lvl 7 -y 120 -defaultsOSRD
 preplace netloc processing_system7_0_DDR 1 7 1 NJ
 preplace netloc axi_dma_in_M_AXI_MM2S 1 4 2 NJ 80 N
-preplace netloc axi_dma_in_M_AXIS_MM2S 1 4 1 1480
 preplace netloc processing_system7_0_M_AXI_GP0 1 1 7 370 20 NJ 20 NJ 20 NJ 20 1870J 230 NJ 230 2630
+preplace netloc axi_dma_in_M_AXIS_MM2S 1 4 1 1480
 preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 1 5 360 230 N 230 910 230 1490 70 1860
 preplace netloc axi_smc_M00_AXI 1 6 1 N
 preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 8 -10 200 NJ 200 NJ 200 NJ 200 1470J 90 1850J 250 NJ 250 2610
