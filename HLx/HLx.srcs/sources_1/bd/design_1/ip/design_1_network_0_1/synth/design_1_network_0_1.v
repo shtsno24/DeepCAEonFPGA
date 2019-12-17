@@ -48,11 +48,11 @@
 
 
 // IP VLNV: xilinx.com:hls:network:1.0
-// IP Revision: 1912172033
+// IP Revision: 1912172159
 
 (* X_CORE_INFO = "network,Vivado 2018.3.1" *)
 (* CHECK_LICENSE_TYPE = "design_1_network_0_1,network,{}" *)
-(* CORE_GENERATION_INFO = "design_1_network_0_1,network,{x_ipProduct=Vivado 2018.3.1,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=network,x_ipVersion=1.0,x_ipCoreRevision=1912172033,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_S_AXI_AXILITES_ADDR_WIDTH=5,C_S_AXI_AXILITES_DATA_WIDTH=32}" *)
+(* CORE_GENERATION_INFO = "design_1_network_0_1,network,{x_ipProduct=Vivado 2018.3.1,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=network,x_ipVersion=1.0,x_ipCoreRevision=1912172159,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_S_AXI_AXILITES_ADDR_WIDTH=5,C_S_AXI_AXILITES_DATA_WIDTH=32}" *)
 (* IP_DEFINITION_SOURCE = "HLS" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module design_1_network_0_1 (

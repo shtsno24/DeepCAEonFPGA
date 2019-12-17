@@ -39,7 +39,7 @@ add_files -tb layers_cpp/array_printf_fix16.h -cflags "-std=c++14 -Wno-unknown-p
 add_files -tb layers_cpp/array_printf_fix16.cpp -cflags "-std=c++14 -Wno-unknown-pragmas"
 open_solution "network"
 set_part {xc7z020clg400-1}
-create_clock -period 100MHz -name default
+create_clock -period 10.0 -name default
 config_compile -no_signed_zeros=0 -unsafe_math_optimizations=0
 config_schedule -effort medium -enable_dsp_full_reg=0 -relax_ii_for_timing=0 -verbose=0
 config_bind -effort medium

@@ -239,8 +239,8 @@ Built simulation snapshot network
     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 
 source /home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/xsim.dir/network/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-186] '/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/xsim.dir/network/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Dec 17 20:30:45 2019. For additional details about this file, please refer to the WebTalk help file at /tools/Xilinx/Vivado/2018.3/doc/webtalk_introduction.html.
-INFO: [Common 17-206] Exiting Webtalk at Tue Dec 17 20:30:45 2019...
+INFO: [Common 17-186] '/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/xsim.dir/network/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Dec 17 21:53:35 2019. For additional details about this file, please refer to the WebTalk help file at /tools/Xilinx/Vivado/2018.3/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Tue Dec 17 21:53:35 2019...
 
 ****** xsim v2018.3.1 (64-bit)
   **** SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
@@ -380,9 +380,9 @@ WARNING: [Simtcl 6-197] One or more HDL objects could not be logged because of o
 // RTL Simulation : 1 / 1 [100.00%] @ "12848805000"
 ////////////////////////////////////////////////////////////////////////////////////
 $finish called at time : 12848845 ns : File "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/network.autotb.v" Line 498
-run: Time (s): cpu = 00:00:22 ; elapsed = 00:01:01 . Memory (MB): peak = 1417.062 ; gain = 8.004 ; free physical = 2461 ; free virtual = 8346
+run: Time (s): cpu = 00:00:22 ; elapsed = 00:01:02 . Memory (MB): peak = 1417.059 ; gain = 8.004 ; free physical = 1681 ; free virtual = 7505
 ## quit
-INFO: [Common 17-206] Exiting xsim at Tue Dec 17 20:31:56 2019...
+INFO: [Common 17-206] Exiting xsim at Tue Dec 17 21:54:47 2019...
 
 output_buffer_length : 0
 

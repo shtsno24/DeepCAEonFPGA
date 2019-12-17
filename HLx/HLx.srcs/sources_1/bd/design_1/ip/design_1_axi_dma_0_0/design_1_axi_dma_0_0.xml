@@ -1655,7 +1655,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>ADDR_WIDTH</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_AXI_MM2S.ADDR_WIDTH">64</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_AXI_MM2S.ADDR_WIDTH">32</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -3557,8 +3557,8 @@
   <spirit:addressSpaces>
     <spirit:addressSpace>
       <spirit:name>Data_SG</spirit:name>
-      <spirit:range spirit:resolve="dependent" spirit:dependency="spirit:decode(id(pow(2,spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_SG_ADDR_WIDTH&apos;)))))">16777216T</spirit:range>
-      <spirit:width spirit:format="long" spirit:resolve="dependent" spirit:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_SG_ADDR_WIDTH&apos;))">64</spirit:width>
+      <spirit:range spirit:format="long" spirit:resolve="dependent" spirit:dependency="spirit:decode(id(pow(2,spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_SG_ADDR_WIDTH&apos;)))))">4294967296</spirit:range>
+      <spirit:width spirit:format="long" spirit:resolve="dependent" spirit:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_SG_ADDR_WIDTH&apos;))">32</spirit:width>
       <spirit:parameters>
         <spirit:parameter>
           <spirit:name>DEPENDENT_ON</spirit:name>
@@ -3579,8 +3579,8 @@
     </spirit:addressSpace>
     <spirit:addressSpace>
       <spirit:name>Data</spirit:name>
-      <spirit:range spirit:resolve="dependent" spirit:dependency="spirit:decode(id(pow(2,spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_MM2S_ADDR_WIDTH&apos;)))))">16777216T</spirit:range>
-      <spirit:width spirit:format="long" spirit:resolve="dependent" spirit:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_MM2S_ADDR_WIDTH&apos;))">64</spirit:width>
+      <spirit:range spirit:format="long" spirit:resolve="dependent" spirit:dependency="spirit:decode(id(pow(2,spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_MM2S_ADDR_WIDTH&apos;)))))">4294967296</spirit:range>
+      <spirit:width spirit:format="long" spirit:resolve="dependent" spirit:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_MM2S_ADDR_WIDTH&apos;))">32</spirit:width>
       <spirit:parameters>
         <spirit:parameter>
           <spirit:name>DEPENDENT_ON</spirit:name>
@@ -3601,8 +3601,8 @@
     </spirit:addressSpace>
     <spirit:addressSpace>
       <spirit:name>Data_MM2S</spirit:name>
-      <spirit:range spirit:resolve="dependent" spirit:dependency="spirit:decode(id(pow(2,spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_MM2S_ADDR_WIDTH&apos;)))))">16777216T</spirit:range>
-      <spirit:width spirit:format="long" spirit:resolve="dependent" spirit:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_MM2S_ADDR_WIDTH&apos;))">64</spirit:width>
+      <spirit:range spirit:format="long" spirit:resolve="dependent" spirit:dependency="spirit:decode(id(pow(2,spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_MM2S_ADDR_WIDTH&apos;)))))">4294967296</spirit:range>
+      <spirit:width spirit:format="long" spirit:resolve="dependent" spirit:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_MM2S_ADDR_WIDTH&apos;))">32</spirit:width>
       <spirit:parameters>
         <spirit:parameter>
           <spirit:name>DEPENDENT_ON</spirit:name>
@@ -3623,8 +3623,8 @@
     </spirit:addressSpace>
     <spirit:addressSpace>
       <spirit:name>Data_S2MM</spirit:name>
-      <spirit:range spirit:resolve="dependent" spirit:dependency="spirit:decode(id(pow(2,spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_S2MM_ADDR_WIDTH&apos;)))))">16777216T</spirit:range>
-      <spirit:width spirit:format="long" spirit:resolve="dependent" spirit:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_S2MM_ADDR_WIDTH&apos;))">64</spirit:width>
+      <spirit:range spirit:format="long" spirit:resolve="dependent" spirit:dependency="spirit:decode(id(pow(2,spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_S2MM_ADDR_WIDTH&apos;)))))">4294967296</spirit:range>
+      <spirit:width spirit:format="long" spirit:resolve="dependent" spirit:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_S2MM_ADDR_WIDTH&apos;))">32</spirit:width>
       <spirit:parameters>
         <spirit:parameter>
           <spirit:name>DEPENDENT_ON</spirit:name>
@@ -5044,7 +5044,7 @@ Note: This value must be greater than or equal to the largest expected packet to
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:bc042cf9</spirit:value>
+            <spirit:value>9:350d5108</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -5060,11 +5060,11 @@ Note: This value must be greater than or equal to the largest expected packet to
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Dec 17 12:26:27 UTC 2019</spirit:value>
+            <spirit:value>Tue Dec 17 13:08:38 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:bc042cf9</spirit:value>
+            <spirit:value>9:350d5108</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -5105,7 +5105,7 @@ Note: This value must be greater than or equal to the largest expected packet to
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:95629835</spirit:value>
+            <spirit:value>9:06c05a8f</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -5121,11 +5121,11 @@ Note: This value must be greater than or equal to the largest expected packet to
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Dec 17 12:26:27 UTC 2019</spirit:value>
+            <spirit:value>Tue Dec 17 13:08:38 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:95629835</spirit:value>
+            <spirit:value>9:06c05a8f</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -5139,11 +5139,11 @@ Note: This value must be greater than or equal to the largest expected packet to
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Dec 17 12:26:31 UTC 2019</spirit:value>
+            <spirit:value>Tue Dec 17 13:12:20 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:bc042cf9</spirit:value>
+            <spirit:value>9:350d5108</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -5511,7 +5511,7 @@ Note: This value must be greater than or equal to the largest expected packet to
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_SG_ADDR_WIDTH&apos;))-1">63</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_SG_ADDR_WIDTH&apos;))-1">31</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -5903,7 +5903,7 @@ Note: This value must be greater than or equal to the largest expected packet to
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_SG_ADDR_WIDTH&apos;))-1">63</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_SG_ADDR_WIDTH&apos;))-1">31</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -6234,7 +6234,7 @@ Note: This value must be greater than or equal to the largest expected packet to
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_MM2S_ADDR_WIDTH&apos;))-1">63</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_MM2S_ADDR_WIDTH&apos;))-1">31</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -6899,7 +6899,7 @@ Note: This value must be greater than or equal to the largest expected packet to
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_S2MM_ADDR_WIDTH&apos;))-1">63</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_S2MM_ADDR_WIDTH&apos;))-1">31</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -7756,7 +7756,7 @@ Note: This value must be greater than or equal to the largest expected packet to
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="INTEGER">
         <spirit:name>C_M_AXI_SG_ADDR_WIDTH</spirit:name>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_M_AXI_SG_ADDR_WIDTH" spirit:order="5950" spirit:minimum="32" spirit:maximum="64" spirit:rangeType="long">64</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_M_AXI_SG_ADDR_WIDTH" spirit:order="5950" spirit:minimum="32" spirit:maximum="64" spirit:rangeType="long">32</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="INTEGER">
         <spirit:name>C_M_AXI_SG_DATA_WIDTH</spirit:name>
@@ -7816,7 +7816,7 @@ Note: This value must be greater than or equal to the largest expected packet to
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="INTEGER">
         <spirit:name>C_M_AXI_MM2S_ADDR_WIDTH</spirit:name>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_M_AXI_MM2S_ADDR_WIDTH" spirit:minimum="32" spirit:maximum="64" spirit:rangeType="long">64</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_M_AXI_MM2S_ADDR_WIDTH" spirit:minimum="32" spirit:maximum="64" spirit:rangeType="long">32</spirit:value>
         <spirit:vendorExtensions>
           <xilinx:parameterInfo>
             <xilinx:enablement>
@@ -7886,7 +7886,7 @@ Note: This value must be greater than or equal to the largest expected packet to
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="INTEGER">
         <spirit:name>C_M_AXI_S2MM_ADDR_WIDTH</spirit:name>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_M_AXI_S2MM_ADDR_WIDTH" spirit:minimum="32" spirit:maximum="64" spirit:rangeType="long">64</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_M_AXI_S2MM_ADDR_WIDTH" spirit:minimum="32" spirit:maximum="64" spirit:rangeType="long">32</spirit:value>
         <spirit:vendorExtensions>
           <xilinx:parameterInfo>
             <xilinx:enablement>
@@ -8325,6 +8325,12 @@ Note: This value must be greater than or equal to the largest expected packet to
         <spirit:logicalName>xil_defaultlib</spirit:logicalName>
       </spirit:file>
       <spirit:file>
+        <spirit:name>design_1_axi_dma_0_0_stub.vhdl</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_synth_blackbox_stub</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
         <spirit:name>design_1_axi_dma_0_0_sim_netlist.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
@@ -8336,12 +8342,6 @@ Note: This value must be greater than or equal to the largest expected packet to
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
         <spirit:userFileType>USED_IN_single_language</spirit:userFileType>
-        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>design_1_axi_dma_0_0_stub.vhdl</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_synth_blackbox_stub</spirit:userFileType>
         <spirit:logicalName>xil_defaultlib</spirit:logicalName>
       </spirit:file>
     </spirit:fileSet>
@@ -8645,7 +8645,7 @@ Note: This value must be greater than or equal to the largest expected packet to
       <spirit:name>c_addr_width</spirit:name>
       <spirit:displayName>Address Width</spirit:displayName>
       <spirit:description>Specify the number of address bits required on AXI4 MMap interface</spirit:description>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.c_addr_width" spirit:order="3000" spirit:configGroups="1 NoDisplay" spirit:minimum="32" spirit:maximum="64" spirit:rangeType="long">64</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.c_addr_width" spirit:order="3000" spirit:configGroups="1 NoDisplay" spirit:minimum="32" spirit:maximum="64" spirit:rangeType="long">32</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>

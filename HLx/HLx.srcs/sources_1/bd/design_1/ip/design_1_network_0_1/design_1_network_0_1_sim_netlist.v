@@ -1,10 +1,10 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2018.3.1 (lin64) Build 2489853 Tue Mar 26 04:18:30 MDT 2019
-// Date        : Tue Dec 17 20:38:58 2019
+// Date        : Tue Dec 17 22:10:40 2019
 // Host        : masudalab-ubuntu running 64-bit Ubuntu 18.04.3 LTS
-// Command     : write_verilog -force -mode funcsim -rename_top design_1_network_0_1 -prefix
-//               design_1_network_0_1_ design_1_network_0_1_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim
+//               /home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_network_0_1/design_1_network_0_1_sim_netlist.v
 // Design      : design_1_network_0_1
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -12,6 +12,218 @@
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
+(* CHECK_LICENSE_TYPE = "design_1_network_0_1,network,{}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* IP_DEFINITION_SOURCE = "HLS" *) 
+(* X_CORE_INFO = "network,Vivado 2018.3.1" *) (* hls_module = "yes" *) 
+(* NotValidForBitStream *)
+module design_1_network_0_1
+   (s_axi_AXILiteS_AWADDR,
+    s_axi_AXILiteS_AWVALID,
+    s_axi_AXILiteS_AWREADY,
+    s_axi_AXILiteS_WDATA,
+    s_axi_AXILiteS_WSTRB,
+    s_axi_AXILiteS_WVALID,
+    s_axi_AXILiteS_WREADY,
+    s_axi_AXILiteS_BRESP,
+    s_axi_AXILiteS_BVALID,
+    s_axi_AXILiteS_BREADY,
+    s_axi_AXILiteS_ARADDR,
+    s_axi_AXILiteS_ARVALID,
+    s_axi_AXILiteS_ARREADY,
+    s_axi_AXILiteS_RDATA,
+    s_axi_AXILiteS_RRESP,
+    s_axi_AXILiteS_RVALID,
+    s_axi_AXILiteS_RREADY,
+    ap_clk,
+    ap_rst_n,
+    interrupt,
+    input_data_TVALID,
+    input_data_TREADY,
+    input_data_TDATA,
+    input_data_TDEST,
+    input_data_TKEEP,
+    input_data_TSTRB,
+    input_data_TUSER,
+    input_data_TLAST,
+    input_data_TID,
+    output_data_TVALID,
+    output_data_TREADY,
+    output_data_TDATA,
+    output_data_TDEST,
+    output_data_TKEEP,
+    output_data_TSTRB,
+    output_data_TUSER,
+    output_data_TLAST,
+    output_data_TID);
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_AXILiteS AWADDR" *) input [4:0]s_axi_AXILiteS_AWADDR;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_AXILiteS AWVALID" *) input s_axi_AXILiteS_AWVALID;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_AXILiteS AWREADY" *) output s_axi_AXILiteS_AWREADY;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_AXILiteS WDATA" *) input [31:0]s_axi_AXILiteS_WDATA;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_AXILiteS WSTRB" *) input [3:0]s_axi_AXILiteS_WSTRB;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_AXILiteS WVALID" *) input s_axi_AXILiteS_WVALID;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_AXILiteS WREADY" *) output s_axi_AXILiteS_WREADY;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_AXILiteS BRESP" *) output [1:0]s_axi_AXILiteS_BRESP;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_AXILiteS BVALID" *) output s_axi_AXILiteS_BVALID;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_AXILiteS BREADY" *) input s_axi_AXILiteS_BREADY;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_AXILiteS ARADDR" *) input [4:0]s_axi_AXILiteS_ARADDR;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_AXILiteS ARVALID" *) input s_axi_AXILiteS_ARVALID;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_AXILiteS ARREADY" *) output s_axi_AXILiteS_ARREADY;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_AXILiteS RDATA" *) output [31:0]s_axi_AXILiteS_RDATA;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_AXILiteS RRESP" *) output [1:0]s_axi_AXILiteS_RRESP;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_AXILiteS RVALID" *) output s_axi_AXILiteS_RVALID;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_AXILiteS RREADY" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME s_axi_AXILiteS, ADDR_WIDTH 5, DATA_WIDTH 32, PROTOCOL AXI4LITE, READ_WRITE_MODE READ_WRITE, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {CLK {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}}}, FREQ_HZ 100000000, ID_WIDTH 0, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 0, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 2, NUM_WRITE_OUTSTANDING 2, MAX_BURST_LENGTH 1, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) input s_axi_AXILiteS_RREADY;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 ap_clk CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME ap_clk, ASSOCIATED_BUSIF s_axi_AXILiteS:input_data:output_data, ASSOCIATED_RESET ap_rst_n, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {CLK {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}}}, FREQ_HZ 100000000, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *) input ap_clk;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 ap_rst_n RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME ap_rst_n, POLARITY ACTIVE_LOW, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {RST {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}}}, INSERT_VIP 0" *) input ap_rst_n;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:interrupt:1.0 interrupt INTERRUPT" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME interrupt, SENSITIVITY LEVEL_HIGH, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {INTERRUPT {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}}}, PortWidth 1" *) output interrupt;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 input_data TVALID" *) input input_data_TVALID;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 input_data TREADY" *) output input_data_TREADY;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 input_data TDATA" *) input [15:0]input_data_TDATA;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 input_data TDEST" *) input [0:0]input_data_TDEST;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 input_data TKEEP" *) input [1:0]input_data_TKEEP;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 input_data TSTRB" *) input [1:0]input_data_TSTRB;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 input_data TUSER" *) input [0:0]input_data_TUSER;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 input_data TLAST" *) input [0:0]input_data_TLAST;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 input_data TID" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME input_data, TDATA_NUM_BYTES 2, TDEST_WIDTH 1, TID_WIDTH 1, TUSER_WIDTH 1, LAYERED_METADATA undef, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 100000000, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *) input [0:0]input_data_TID;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 output_data TVALID" *) output output_data_TVALID;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 output_data TREADY" *) input output_data_TREADY;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 output_data TDATA" *) output [15:0]output_data_TDATA;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 output_data TDEST" *) output [0:0]output_data_TDEST;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 output_data TKEEP" *) output [1:0]output_data_TKEEP;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 output_data TSTRB" *) output [1:0]output_data_TSTRB;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 output_data TUSER" *) output [0:0]output_data_TUSER;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 output_data TLAST" *) output [0:0]output_data_TLAST;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 output_data TID" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME output_data, TDATA_NUM_BYTES 2, TDEST_WIDTH 1, TID_WIDTH 1, TUSER_WIDTH 1, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {CLK {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}} TDATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value true}}}} TDATA_WIDTH 16 TUSER {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} TUSER_WIDTH 1}, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 100000000, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *) output [0:0]output_data_TID;
+
+  wire ap_clk;
+  wire ap_rst_n;
+  wire [15:0]input_data_TDATA;
+  wire [0:0]input_data_TDEST;
+  wire [0:0]input_data_TID;
+  wire [1:0]input_data_TKEEP;
+  wire [0:0]input_data_TLAST;
+  wire input_data_TREADY;
+  wire [1:0]input_data_TSTRB;
+  wire [0:0]input_data_TUSER;
+  wire input_data_TVALID;
+  wire interrupt;
+  wire [15:0]output_data_TDATA;
+  wire [0:0]output_data_TDEST;
+  wire [0:0]output_data_TID;
+  wire [1:0]output_data_TKEEP;
+  wire [0:0]output_data_TLAST;
+  wire output_data_TREADY;
+  wire [1:0]output_data_TSTRB;
+  wire [0:0]output_data_TUSER;
+  wire output_data_TVALID;
+  wire [4:0]s_axi_AXILiteS_ARADDR;
+  wire s_axi_AXILiteS_ARREADY;
+  wire s_axi_AXILiteS_ARVALID;
+  wire [4:0]s_axi_AXILiteS_AWADDR;
+  wire s_axi_AXILiteS_AWREADY;
+  wire s_axi_AXILiteS_AWVALID;
+  wire s_axi_AXILiteS_BREADY;
+  wire [1:0]s_axi_AXILiteS_BRESP;
+  wire s_axi_AXILiteS_BVALID;
+  wire [31:0]s_axi_AXILiteS_RDATA;
+  wire s_axi_AXILiteS_RREADY;
+  wire [1:0]s_axi_AXILiteS_RRESP;
+  wire s_axi_AXILiteS_RVALID;
+  wire [31:0]s_axi_AXILiteS_WDATA;
+  wire s_axi_AXILiteS_WREADY;
+  wire [3:0]s_axi_AXILiteS_WSTRB;
+  wire s_axi_AXILiteS_WVALID;
+
+  (* C_S_AXI_AXILITES_ADDR_WIDTH = "5" *) 
+  (* C_S_AXI_AXILITES_DATA_WIDTH = "32" *) 
+  (* C_S_AXI_AXILITES_WSTRB_WIDTH = "4" *) 
+  (* C_S_AXI_DATA_WIDTH = "32" *) 
+  (* C_S_AXI_WSTRB_WIDTH = "4" *) 
+  (* ap_ST_fsm_state1 = "45'b000000000000000000000000000000000000000000001" *) 
+  (* ap_ST_fsm_state10 = "45'b000000000000000000000000000000000001000000000" *) 
+  (* ap_ST_fsm_state11 = "45'b000000000000000000000000000000000010000000000" *) 
+  (* ap_ST_fsm_state12 = "45'b000000000000000000000000000000000100000000000" *) 
+  (* ap_ST_fsm_state13 = "45'b000000000000000000000000000000001000000000000" *) 
+  (* ap_ST_fsm_state14 = "45'b000000000000000000000000000000010000000000000" *) 
+  (* ap_ST_fsm_state15 = "45'b000000000000000000000000000000100000000000000" *) 
+  (* ap_ST_fsm_state16 = "45'b000000000000000000000000000001000000000000000" *) 
+  (* ap_ST_fsm_state17 = "45'b000000000000000000000000000010000000000000000" *) 
+  (* ap_ST_fsm_state18 = "45'b000000000000000000000000000100000000000000000" *) 
+  (* ap_ST_fsm_state19 = "45'b000000000000000000000000001000000000000000000" *) 
+  (* ap_ST_fsm_state2 = "45'b000000000000000000000000000000000000000000010" *) 
+  (* ap_ST_fsm_state20 = "45'b000000000000000000000000010000000000000000000" *) 
+  (* ap_ST_fsm_state21 = "45'b000000000000000000000000100000000000000000000" *) 
+  (* ap_ST_fsm_state22 = "45'b000000000000000000000001000000000000000000000" *) 
+  (* ap_ST_fsm_state23 = "45'b000000000000000000000010000000000000000000000" *) 
+  (* ap_ST_fsm_state24 = "45'b000000000000000000000100000000000000000000000" *) 
+  (* ap_ST_fsm_state25 = "45'b000000000000000000001000000000000000000000000" *) 
+  (* ap_ST_fsm_state26 = "45'b000000000000000000010000000000000000000000000" *) 
+  (* ap_ST_fsm_state27 = "45'b000000000000000000100000000000000000000000000" *) 
+  (* ap_ST_fsm_state28 = "45'b000000000000000001000000000000000000000000000" *) 
+  (* ap_ST_fsm_state29 = "45'b000000000000000010000000000000000000000000000" *) 
+  (* ap_ST_fsm_state3 = "45'b000000000000000000000000000000000000000000100" *) 
+  (* ap_ST_fsm_state30 = "45'b000000000000000100000000000000000000000000000" *) 
+  (* ap_ST_fsm_state31 = "45'b000000000000001000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state32 = "45'b000000000000010000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state33 = "45'b000000000000100000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state34 = "45'b000000000001000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state35 = "45'b000000000010000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state36 = "45'b000000000100000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state37 = "45'b000000001000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state38 = "45'b000000010000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state39 = "45'b000000100000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state4 = "45'b000000000000000000000000000000000000000001000" *) 
+  (* ap_ST_fsm_state40 = "45'b000001000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state41 = "45'b000010000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state42 = "45'b000100000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state43 = "45'b001000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state44 = "45'b010000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state45 = "45'b100000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state5 = "45'b000000000000000000000000000000000000000010000" *) 
+  (* ap_ST_fsm_state6 = "45'b000000000000000000000000000000000000000100000" *) 
+  (* ap_ST_fsm_state7 = "45'b000000000000000000000000000000000000001000000" *) 
+  (* ap_ST_fsm_state8 = "45'b000000000000000000000000000000000000010000000" *) 
+  (* ap_ST_fsm_state9 = "45'b000000000000000000000000000000000000100000000" *) 
+  design_1_network_0_1_network inst
+       (.ap_clk(ap_clk),
+        .ap_rst_n(ap_rst_n),
+        .input_data_TDATA(input_data_TDATA),
+        .input_data_TDEST(input_data_TDEST),
+        .input_data_TID(input_data_TID),
+        .input_data_TKEEP(input_data_TKEEP),
+        .input_data_TLAST(input_data_TLAST),
+        .input_data_TREADY(input_data_TREADY),
+        .input_data_TSTRB(input_data_TSTRB),
+        .input_data_TUSER(input_data_TUSER),
+        .input_data_TVALID(input_data_TVALID),
+        .interrupt(interrupt),
+        .output_data_TDATA(output_data_TDATA),
+        .output_data_TDEST(output_data_TDEST),
+        .output_data_TID(output_data_TID),
+        .output_data_TKEEP(output_data_TKEEP),
+        .output_data_TLAST(output_data_TLAST),
+        .output_data_TREADY(output_data_TREADY),
+        .output_data_TSTRB(output_data_TSTRB),
+        .output_data_TUSER(output_data_TUSER),
+        .output_data_TVALID(output_data_TVALID),
+        .s_axi_AXILiteS_ARADDR(s_axi_AXILiteS_ARADDR),
+        .s_axi_AXILiteS_ARREADY(s_axi_AXILiteS_ARREADY),
+        .s_axi_AXILiteS_ARVALID(s_axi_AXILiteS_ARVALID),
+        .s_axi_AXILiteS_AWADDR(s_axi_AXILiteS_AWADDR),
+        .s_axi_AXILiteS_AWREADY(s_axi_AXILiteS_AWREADY),
+        .s_axi_AXILiteS_AWVALID(s_axi_AXILiteS_AWVALID),
+        .s_axi_AXILiteS_BREADY(s_axi_AXILiteS_BREADY),
+        .s_axi_AXILiteS_BRESP(s_axi_AXILiteS_BRESP),
+        .s_axi_AXILiteS_BVALID(s_axi_AXILiteS_BVALID),
+        .s_axi_AXILiteS_RDATA(s_axi_AXILiteS_RDATA),
+        .s_axi_AXILiteS_RREADY(s_axi_AXILiteS_RREADY),
+        .s_axi_AXILiteS_RRESP(s_axi_AXILiteS_RRESP),
+        .s_axi_AXILiteS_RVALID(s_axi_AXILiteS_RVALID),
+        .s_axi_AXILiteS_WDATA(s_axi_AXILiteS_WDATA),
+        .s_axi_AXILiteS_WREADY(s_axi_AXILiteS_WREADY),
+        .s_axi_AXILiteS_WSTRB(s_axi_AXILiteS_WSTRB),
+        .s_axi_AXILiteS_WVALID(s_axi_AXILiteS_WVALID));
+endmodule
+
+(* ORIG_REF_NAME = "depthwise_conv2d_fix" *) 
 module design_1_network_0_1_depthwise_conv2d_fix
    (ADDRARDADDR,
     \ap_CS_fsm_reg[6]_0 ,
@@ -1999,6 +2211,7 @@ module design_1_network_0_1_depthwise_conv2d_fix
         .R(1'b0));
 endmodule
 
+(* ORIG_REF_NAME = "depthwise_conv2d_fix_1" *) 
 module design_1_network_0_1_depthwise_conv2d_fix_1
    (tmp_67_fu_457_p2,
     tmp_67_fu_457_p2_0,
@@ -5402,6 +5615,7 @@ module design_1_network_0_1_depthwise_conv2d_fix_1
         .R(1'b0));
 endmodule
 
+(* ORIG_REF_NAME = "depthwise_conv2d_fix_2" *) 
 module design_1_network_0_1_depthwise_conv2d_fix_2
    (\k_h_reg_204_reg[0]_0 ,
     d0,
@@ -7715,217 +7929,7 @@ module design_1_network_0_1_depthwise_conv2d_fix_2
         .R(1'b0));
 endmodule
 
-(* CHECK_LICENSE_TYPE = "design_1_network_0_1,network,{}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* IP_DEFINITION_SOURCE = "HLS" *) 
-(* X_CORE_INFO = "network,Vivado 2018.3.1" *) (* hls_module = "yes" *) 
-(* NotValidForBitStream *)
-module design_1_network_0_1
-   (s_axi_AXILiteS_AWADDR,
-    s_axi_AXILiteS_AWVALID,
-    s_axi_AXILiteS_AWREADY,
-    s_axi_AXILiteS_WDATA,
-    s_axi_AXILiteS_WSTRB,
-    s_axi_AXILiteS_WVALID,
-    s_axi_AXILiteS_WREADY,
-    s_axi_AXILiteS_BRESP,
-    s_axi_AXILiteS_BVALID,
-    s_axi_AXILiteS_BREADY,
-    s_axi_AXILiteS_ARADDR,
-    s_axi_AXILiteS_ARVALID,
-    s_axi_AXILiteS_ARREADY,
-    s_axi_AXILiteS_RDATA,
-    s_axi_AXILiteS_RRESP,
-    s_axi_AXILiteS_RVALID,
-    s_axi_AXILiteS_RREADY,
-    ap_clk,
-    ap_rst_n,
-    interrupt,
-    input_data_TVALID,
-    input_data_TREADY,
-    input_data_TDATA,
-    input_data_TDEST,
-    input_data_TKEEP,
-    input_data_TSTRB,
-    input_data_TUSER,
-    input_data_TLAST,
-    input_data_TID,
-    output_data_TVALID,
-    output_data_TREADY,
-    output_data_TDATA,
-    output_data_TDEST,
-    output_data_TKEEP,
-    output_data_TSTRB,
-    output_data_TUSER,
-    output_data_TLAST,
-    output_data_TID);
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_AXILiteS AWADDR" *) input [4:0]s_axi_AXILiteS_AWADDR;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_AXILiteS AWVALID" *) input s_axi_AXILiteS_AWVALID;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_AXILiteS AWREADY" *) output s_axi_AXILiteS_AWREADY;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_AXILiteS WDATA" *) input [31:0]s_axi_AXILiteS_WDATA;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_AXILiteS WSTRB" *) input [3:0]s_axi_AXILiteS_WSTRB;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_AXILiteS WVALID" *) input s_axi_AXILiteS_WVALID;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_AXILiteS WREADY" *) output s_axi_AXILiteS_WREADY;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_AXILiteS BRESP" *) output [1:0]s_axi_AXILiteS_BRESP;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_AXILiteS BVALID" *) output s_axi_AXILiteS_BVALID;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_AXILiteS BREADY" *) input s_axi_AXILiteS_BREADY;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_AXILiteS ARADDR" *) input [4:0]s_axi_AXILiteS_ARADDR;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_AXILiteS ARVALID" *) input s_axi_AXILiteS_ARVALID;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_AXILiteS ARREADY" *) output s_axi_AXILiteS_ARREADY;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_AXILiteS RDATA" *) output [31:0]s_axi_AXILiteS_RDATA;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_AXILiteS RRESP" *) output [1:0]s_axi_AXILiteS_RRESP;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_AXILiteS RVALID" *) output s_axi_AXILiteS_RVALID;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_AXILiteS RREADY" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME s_axi_AXILiteS, ADDR_WIDTH 5, DATA_WIDTH 32, PROTOCOL AXI4LITE, READ_WRITE_MODE READ_WRITE, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {CLK {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}}}, FREQ_HZ 100000000, ID_WIDTH 0, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 0, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 2, NUM_WRITE_OUTSTANDING 2, MAX_BURST_LENGTH 1, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) input s_axi_AXILiteS_RREADY;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 ap_clk CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME ap_clk, ASSOCIATED_BUSIF s_axi_AXILiteS:input_data:output_data, ASSOCIATED_RESET ap_rst_n, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {CLK {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}}}, FREQ_HZ 100000000, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *) input ap_clk;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 ap_rst_n RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME ap_rst_n, POLARITY ACTIVE_LOW, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {RST {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}}}, INSERT_VIP 0" *) input ap_rst_n;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:interrupt:1.0 interrupt INTERRUPT" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME interrupt, SENSITIVITY LEVEL_HIGH, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {INTERRUPT {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}}}, PortWidth 1" *) output interrupt;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 input_data TVALID" *) input input_data_TVALID;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 input_data TREADY" *) output input_data_TREADY;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 input_data TDATA" *) input [15:0]input_data_TDATA;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 input_data TDEST" *) input [0:0]input_data_TDEST;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 input_data TKEEP" *) input [1:0]input_data_TKEEP;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 input_data TSTRB" *) input [1:0]input_data_TSTRB;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 input_data TUSER" *) input [0:0]input_data_TUSER;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 input_data TLAST" *) input [0:0]input_data_TLAST;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 input_data TID" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME input_data, TDATA_NUM_BYTES 2, TDEST_WIDTH 1, TID_WIDTH 1, TUSER_WIDTH 1, LAYERED_METADATA undef, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 100000000, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *) input [0:0]input_data_TID;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 output_data TVALID" *) output output_data_TVALID;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 output_data TREADY" *) input output_data_TREADY;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 output_data TDATA" *) output [15:0]output_data_TDATA;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 output_data TDEST" *) output [0:0]output_data_TDEST;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 output_data TKEEP" *) output [1:0]output_data_TKEEP;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 output_data TSTRB" *) output [1:0]output_data_TSTRB;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 output_data TUSER" *) output [0:0]output_data_TUSER;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 output_data TLAST" *) output [0:0]output_data_TLAST;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 output_data TID" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME output_data, TDATA_NUM_BYTES 2, TDEST_WIDTH 1, TID_WIDTH 1, TUSER_WIDTH 1, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {CLK {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}} TDATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value true}}}} TDATA_WIDTH 16 TUSER {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} TUSER_WIDTH 1}, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 100000000, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *) output [0:0]output_data_TID;
-
-  wire ap_clk;
-  wire ap_rst_n;
-  wire [15:0]input_data_TDATA;
-  wire [0:0]input_data_TDEST;
-  wire [0:0]input_data_TID;
-  wire [1:0]input_data_TKEEP;
-  wire [0:0]input_data_TLAST;
-  wire input_data_TREADY;
-  wire [1:0]input_data_TSTRB;
-  wire [0:0]input_data_TUSER;
-  wire input_data_TVALID;
-  wire interrupt;
-  wire [15:0]output_data_TDATA;
-  wire [0:0]output_data_TDEST;
-  wire [0:0]output_data_TID;
-  wire [1:0]output_data_TKEEP;
-  wire [0:0]output_data_TLAST;
-  wire output_data_TREADY;
-  wire [1:0]output_data_TSTRB;
-  wire [0:0]output_data_TUSER;
-  wire output_data_TVALID;
-  wire [4:0]s_axi_AXILiteS_ARADDR;
-  wire s_axi_AXILiteS_ARREADY;
-  wire s_axi_AXILiteS_ARVALID;
-  wire [4:0]s_axi_AXILiteS_AWADDR;
-  wire s_axi_AXILiteS_AWREADY;
-  wire s_axi_AXILiteS_AWVALID;
-  wire s_axi_AXILiteS_BREADY;
-  wire [1:0]s_axi_AXILiteS_BRESP;
-  wire s_axi_AXILiteS_BVALID;
-  wire [31:0]s_axi_AXILiteS_RDATA;
-  wire s_axi_AXILiteS_RREADY;
-  wire [1:0]s_axi_AXILiteS_RRESP;
-  wire s_axi_AXILiteS_RVALID;
-  wire [31:0]s_axi_AXILiteS_WDATA;
-  wire s_axi_AXILiteS_WREADY;
-  wire [3:0]s_axi_AXILiteS_WSTRB;
-  wire s_axi_AXILiteS_WVALID;
-
-  (* C_S_AXI_AXILITES_ADDR_WIDTH = "5" *) 
-  (* C_S_AXI_AXILITES_DATA_WIDTH = "32" *) 
-  (* C_S_AXI_AXILITES_WSTRB_WIDTH = "4" *) 
-  (* C_S_AXI_DATA_WIDTH = "32" *) 
-  (* C_S_AXI_WSTRB_WIDTH = "4" *) 
-  (* ap_ST_fsm_state1 = "45'b000000000000000000000000000000000000000000001" *) 
-  (* ap_ST_fsm_state10 = "45'b000000000000000000000000000000000001000000000" *) 
-  (* ap_ST_fsm_state11 = "45'b000000000000000000000000000000000010000000000" *) 
-  (* ap_ST_fsm_state12 = "45'b000000000000000000000000000000000100000000000" *) 
-  (* ap_ST_fsm_state13 = "45'b000000000000000000000000000000001000000000000" *) 
-  (* ap_ST_fsm_state14 = "45'b000000000000000000000000000000010000000000000" *) 
-  (* ap_ST_fsm_state15 = "45'b000000000000000000000000000000100000000000000" *) 
-  (* ap_ST_fsm_state16 = "45'b000000000000000000000000000001000000000000000" *) 
-  (* ap_ST_fsm_state17 = "45'b000000000000000000000000000010000000000000000" *) 
-  (* ap_ST_fsm_state18 = "45'b000000000000000000000000000100000000000000000" *) 
-  (* ap_ST_fsm_state19 = "45'b000000000000000000000000001000000000000000000" *) 
-  (* ap_ST_fsm_state2 = "45'b000000000000000000000000000000000000000000010" *) 
-  (* ap_ST_fsm_state20 = "45'b000000000000000000000000010000000000000000000" *) 
-  (* ap_ST_fsm_state21 = "45'b000000000000000000000000100000000000000000000" *) 
-  (* ap_ST_fsm_state22 = "45'b000000000000000000000001000000000000000000000" *) 
-  (* ap_ST_fsm_state23 = "45'b000000000000000000000010000000000000000000000" *) 
-  (* ap_ST_fsm_state24 = "45'b000000000000000000000100000000000000000000000" *) 
-  (* ap_ST_fsm_state25 = "45'b000000000000000000001000000000000000000000000" *) 
-  (* ap_ST_fsm_state26 = "45'b000000000000000000010000000000000000000000000" *) 
-  (* ap_ST_fsm_state27 = "45'b000000000000000000100000000000000000000000000" *) 
-  (* ap_ST_fsm_state28 = "45'b000000000000000001000000000000000000000000000" *) 
-  (* ap_ST_fsm_state29 = "45'b000000000000000010000000000000000000000000000" *) 
-  (* ap_ST_fsm_state3 = "45'b000000000000000000000000000000000000000000100" *) 
-  (* ap_ST_fsm_state30 = "45'b000000000000000100000000000000000000000000000" *) 
-  (* ap_ST_fsm_state31 = "45'b000000000000001000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state32 = "45'b000000000000010000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state33 = "45'b000000000000100000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state34 = "45'b000000000001000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state35 = "45'b000000000010000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state36 = "45'b000000000100000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state37 = "45'b000000001000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state38 = "45'b000000010000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state39 = "45'b000000100000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state4 = "45'b000000000000000000000000000000000000000001000" *) 
-  (* ap_ST_fsm_state40 = "45'b000001000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state41 = "45'b000010000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state42 = "45'b000100000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state43 = "45'b001000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state44 = "45'b010000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state45 = "45'b100000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state5 = "45'b000000000000000000000000000000000000000010000" *) 
-  (* ap_ST_fsm_state6 = "45'b000000000000000000000000000000000000000100000" *) 
-  (* ap_ST_fsm_state7 = "45'b000000000000000000000000000000000000001000000" *) 
-  (* ap_ST_fsm_state8 = "45'b000000000000000000000000000000000000010000000" *) 
-  (* ap_ST_fsm_state9 = "45'b000000000000000000000000000000000000100000000" *) 
-  design_1_network_0_1_network inst
-       (.ap_clk(ap_clk),
-        .ap_rst_n(ap_rst_n),
-        .input_data_TDATA(input_data_TDATA),
-        .input_data_TDEST(input_data_TDEST),
-        .input_data_TID(input_data_TID),
-        .input_data_TKEEP(input_data_TKEEP),
-        .input_data_TLAST(input_data_TLAST),
-        .input_data_TREADY(input_data_TREADY),
-        .input_data_TSTRB(input_data_TSTRB),
-        .input_data_TUSER(input_data_TUSER),
-        .input_data_TVALID(input_data_TVALID),
-        .interrupt(interrupt),
-        .output_data_TDATA(output_data_TDATA),
-        .output_data_TDEST(output_data_TDEST),
-        .output_data_TID(output_data_TID),
-        .output_data_TKEEP(output_data_TKEEP),
-        .output_data_TLAST(output_data_TLAST),
-        .output_data_TREADY(output_data_TREADY),
-        .output_data_TSTRB(output_data_TSTRB),
-        .output_data_TUSER(output_data_TUSER),
-        .output_data_TVALID(output_data_TVALID),
-        .s_axi_AXILiteS_ARADDR(s_axi_AXILiteS_ARADDR),
-        .s_axi_AXILiteS_ARREADY(s_axi_AXILiteS_ARREADY),
-        .s_axi_AXILiteS_ARVALID(s_axi_AXILiteS_ARVALID),
-        .s_axi_AXILiteS_AWADDR(s_axi_AXILiteS_AWADDR),
-        .s_axi_AXILiteS_AWREADY(s_axi_AXILiteS_AWREADY),
-        .s_axi_AXILiteS_AWVALID(s_axi_AXILiteS_AWVALID),
-        .s_axi_AXILiteS_BREADY(s_axi_AXILiteS_BREADY),
-        .s_axi_AXILiteS_BRESP(s_axi_AXILiteS_BRESP),
-        .s_axi_AXILiteS_BVALID(s_axi_AXILiteS_BVALID),
-        .s_axi_AXILiteS_RDATA(s_axi_AXILiteS_RDATA),
-        .s_axi_AXILiteS_RREADY(s_axi_AXILiteS_RREADY),
-        .s_axi_AXILiteS_RRESP(s_axi_AXILiteS_RRESP),
-        .s_axi_AXILiteS_RVALID(s_axi_AXILiteS_RVALID),
-        .s_axi_AXILiteS_WDATA(s_axi_AXILiteS_WDATA),
-        .s_axi_AXILiteS_WREADY(s_axi_AXILiteS_WREADY),
-        .s_axi_AXILiteS_WSTRB(s_axi_AXILiteS_WSTRB),
-        .s_axi_AXILiteS_WVALID(s_axi_AXILiteS_WVALID));
-endmodule
-
+(* ORIG_REF_NAME = "max_pooling2d_fix16" *) 
 module design_1_network_0_1_max_pooling2d_fix16
    (P,
     grp_max_pooling2d_fix16_fu_363_input_r_address0,
@@ -9872,22 +9876,23 @@ module design_1_network_0_1_max_pooling2d_fix16
 endmodule
 
 (* C_S_AXI_AXILITES_ADDR_WIDTH = "5" *) (* C_S_AXI_AXILITES_DATA_WIDTH = "32" *) (* C_S_AXI_AXILITES_WSTRB_WIDTH = "4" *) 
-(* C_S_AXI_DATA_WIDTH = "32" *) (* C_S_AXI_WSTRB_WIDTH = "4" *) (* ap_ST_fsm_state1 = "45'b000000000000000000000000000000000000000000001" *) 
-(* ap_ST_fsm_state10 = "45'b000000000000000000000000000000000001000000000" *) (* ap_ST_fsm_state11 = "45'b000000000000000000000000000000000010000000000" *) (* ap_ST_fsm_state12 = "45'b000000000000000000000000000000000100000000000" *) 
-(* ap_ST_fsm_state13 = "45'b000000000000000000000000000000001000000000000" *) (* ap_ST_fsm_state14 = "45'b000000000000000000000000000000010000000000000" *) (* ap_ST_fsm_state15 = "45'b000000000000000000000000000000100000000000000" *) 
-(* ap_ST_fsm_state16 = "45'b000000000000000000000000000001000000000000000" *) (* ap_ST_fsm_state17 = "45'b000000000000000000000000000010000000000000000" *) (* ap_ST_fsm_state18 = "45'b000000000000000000000000000100000000000000000" *) 
-(* ap_ST_fsm_state19 = "45'b000000000000000000000000001000000000000000000" *) (* ap_ST_fsm_state2 = "45'b000000000000000000000000000000000000000000010" *) (* ap_ST_fsm_state20 = "45'b000000000000000000000000010000000000000000000" *) 
-(* ap_ST_fsm_state21 = "45'b000000000000000000000000100000000000000000000" *) (* ap_ST_fsm_state22 = "45'b000000000000000000000001000000000000000000000" *) (* ap_ST_fsm_state23 = "45'b000000000000000000000010000000000000000000000" *) 
-(* ap_ST_fsm_state24 = "45'b000000000000000000000100000000000000000000000" *) (* ap_ST_fsm_state25 = "45'b000000000000000000001000000000000000000000000" *) (* ap_ST_fsm_state26 = "45'b000000000000000000010000000000000000000000000" *) 
-(* ap_ST_fsm_state27 = "45'b000000000000000000100000000000000000000000000" *) (* ap_ST_fsm_state28 = "45'b000000000000000001000000000000000000000000000" *) (* ap_ST_fsm_state29 = "45'b000000000000000010000000000000000000000000000" *) 
-(* ap_ST_fsm_state3 = "45'b000000000000000000000000000000000000000000100" *) (* ap_ST_fsm_state30 = "45'b000000000000000100000000000000000000000000000" *) (* ap_ST_fsm_state31 = "45'b000000000000001000000000000000000000000000000" *) 
-(* ap_ST_fsm_state32 = "45'b000000000000010000000000000000000000000000000" *) (* ap_ST_fsm_state33 = "45'b000000000000100000000000000000000000000000000" *) (* ap_ST_fsm_state34 = "45'b000000000001000000000000000000000000000000000" *) 
-(* ap_ST_fsm_state35 = "45'b000000000010000000000000000000000000000000000" *) (* ap_ST_fsm_state36 = "45'b000000000100000000000000000000000000000000000" *) (* ap_ST_fsm_state37 = "45'b000000001000000000000000000000000000000000000" *) 
-(* ap_ST_fsm_state38 = "45'b000000010000000000000000000000000000000000000" *) (* ap_ST_fsm_state39 = "45'b000000100000000000000000000000000000000000000" *) (* ap_ST_fsm_state4 = "45'b000000000000000000000000000000000000000001000" *) 
-(* ap_ST_fsm_state40 = "45'b000001000000000000000000000000000000000000000" *) (* ap_ST_fsm_state41 = "45'b000010000000000000000000000000000000000000000" *) (* ap_ST_fsm_state42 = "45'b000100000000000000000000000000000000000000000" *) 
-(* ap_ST_fsm_state43 = "45'b001000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state44 = "45'b010000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state45 = "45'b100000000000000000000000000000000000000000000" *) 
-(* ap_ST_fsm_state5 = "45'b000000000000000000000000000000000000000010000" *) (* ap_ST_fsm_state6 = "45'b000000000000000000000000000000000000000100000" *) (* ap_ST_fsm_state7 = "45'b000000000000000000000000000000000000001000000" *) 
-(* ap_ST_fsm_state8 = "45'b000000000000000000000000000000000000010000000" *) (* ap_ST_fsm_state9 = "45'b000000000000000000000000000000000000100000000" *) (* hls_module = "yes" *) 
+(* C_S_AXI_DATA_WIDTH = "32" *) (* C_S_AXI_WSTRB_WIDTH = "4" *) (* ORIG_REF_NAME = "network" *) 
+(* ap_ST_fsm_state1 = "45'b000000000000000000000000000000000000000000001" *) (* ap_ST_fsm_state10 = "45'b000000000000000000000000000000000001000000000" *) (* ap_ST_fsm_state11 = "45'b000000000000000000000000000000000010000000000" *) 
+(* ap_ST_fsm_state12 = "45'b000000000000000000000000000000000100000000000" *) (* ap_ST_fsm_state13 = "45'b000000000000000000000000000000001000000000000" *) (* ap_ST_fsm_state14 = "45'b000000000000000000000000000000010000000000000" *) 
+(* ap_ST_fsm_state15 = "45'b000000000000000000000000000000100000000000000" *) (* ap_ST_fsm_state16 = "45'b000000000000000000000000000001000000000000000" *) (* ap_ST_fsm_state17 = "45'b000000000000000000000000000010000000000000000" *) 
+(* ap_ST_fsm_state18 = "45'b000000000000000000000000000100000000000000000" *) (* ap_ST_fsm_state19 = "45'b000000000000000000000000001000000000000000000" *) (* ap_ST_fsm_state2 = "45'b000000000000000000000000000000000000000000010" *) 
+(* ap_ST_fsm_state20 = "45'b000000000000000000000000010000000000000000000" *) (* ap_ST_fsm_state21 = "45'b000000000000000000000000100000000000000000000" *) (* ap_ST_fsm_state22 = "45'b000000000000000000000001000000000000000000000" *) 
+(* ap_ST_fsm_state23 = "45'b000000000000000000000010000000000000000000000" *) (* ap_ST_fsm_state24 = "45'b000000000000000000000100000000000000000000000" *) (* ap_ST_fsm_state25 = "45'b000000000000000000001000000000000000000000000" *) 
+(* ap_ST_fsm_state26 = "45'b000000000000000000010000000000000000000000000" *) (* ap_ST_fsm_state27 = "45'b000000000000000000100000000000000000000000000" *) (* ap_ST_fsm_state28 = "45'b000000000000000001000000000000000000000000000" *) 
+(* ap_ST_fsm_state29 = "45'b000000000000000010000000000000000000000000000" *) (* ap_ST_fsm_state3 = "45'b000000000000000000000000000000000000000000100" *) (* ap_ST_fsm_state30 = "45'b000000000000000100000000000000000000000000000" *) 
+(* ap_ST_fsm_state31 = "45'b000000000000001000000000000000000000000000000" *) (* ap_ST_fsm_state32 = "45'b000000000000010000000000000000000000000000000" *) (* ap_ST_fsm_state33 = "45'b000000000000100000000000000000000000000000000" *) 
+(* ap_ST_fsm_state34 = "45'b000000000001000000000000000000000000000000000" *) (* ap_ST_fsm_state35 = "45'b000000000010000000000000000000000000000000000" *) (* ap_ST_fsm_state36 = "45'b000000000100000000000000000000000000000000000" *) 
+(* ap_ST_fsm_state37 = "45'b000000001000000000000000000000000000000000000" *) (* ap_ST_fsm_state38 = "45'b000000010000000000000000000000000000000000000" *) (* ap_ST_fsm_state39 = "45'b000000100000000000000000000000000000000000000" *) 
+(* ap_ST_fsm_state4 = "45'b000000000000000000000000000000000000000001000" *) (* ap_ST_fsm_state40 = "45'b000001000000000000000000000000000000000000000" *) (* ap_ST_fsm_state41 = "45'b000010000000000000000000000000000000000000000" *) 
+(* ap_ST_fsm_state42 = "45'b000100000000000000000000000000000000000000000" *) (* ap_ST_fsm_state43 = "45'b001000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state44 = "45'b010000000000000000000000000000000000000000000" *) 
+(* ap_ST_fsm_state45 = "45'b100000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state5 = "45'b000000000000000000000000000000000000000010000" *) (* ap_ST_fsm_state6 = "45'b000000000000000000000000000000000000000100000" *) 
+(* ap_ST_fsm_state7 = "45'b000000000000000000000000000000000000001000000" *) (* ap_ST_fsm_state8 = "45'b000000000000000000000000000000000000010000000" *) (* ap_ST_fsm_state9 = "45'b000000000000000000000000000000000000100000000" *) 
+(* hls_module = "yes" *) 
 module design_1_network_0_1_network
    (ap_clk,
     ap_rst_n,
@@ -13673,6 +13678,7 @@ module design_1_network_0_1_network
         .R(1'b0));
 endmodule
 
+(* ORIG_REF_NAME = "network_AXILiteS_s_axi" *) 
 module design_1_network_0_1_network_AXILiteS_s_axi
    (ap_rst_n_inv,
     D,
@@ -14334,6 +14340,7 @@ module design_1_network_0_1_network_AXILiteS_s_axi
         .R(1'b0));
 endmodule
 
+(* ORIG_REF_NAME = "network_MemBank_A" *) 
 module design_1_network_0_1_network_MemBank_A
    (\ap_CS_fsm_reg[6] ,
     \ap_CS_fsm_reg[1] ,
@@ -14723,6 +14730,7 @@ module design_1_network_0_1_network_MemBank_A_0
         .ram_reg_7_0(ram_reg_7));
 endmodule
 
+(* ORIG_REF_NAME = "network_MemBank_A_ram" *) 
 module design_1_network_0_1_network_MemBank_A_ram
    (CO,
     q0,
@@ -17052,6 +17060,7 @@ module design_1_network_0_1_network_MemBank_A_ram_11
         .WEBWE({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}));
 endmodule
 
+(* ORIG_REF_NAME = "network_MemBank_Out" *) 
 module design_1_network_0_1_network_MemBank_Out
    (D,
     ap_clk,
@@ -17082,6 +17091,7 @@ module design_1_network_0_1_network_MemBank_Out
         .ram_reg_1(ram_reg_0));
 endmodule
 
+(* ORIG_REF_NAME = "network_MemBank_Out_ram" *) 
 module design_1_network_0_1_network_MemBank_Out_ram
    (D,
     ap_clk,
@@ -17240,6 +17250,7 @@ module design_1_network_0_1_network_MemBank_Out_ram
         .O(MemBank_Out_address0[2]));
 endmodule
 
+(* ORIG_REF_NAME = "network_SeparableConv2D_1_w_1" *) 
 module design_1_network_0_1_network_SeparableConv2D_1_w_1
    (DOADO,
     ap_clk,
@@ -17262,6 +17273,7 @@ module design_1_network_0_1_network_SeparableConv2D_1_w_1
         .kernel_0_address0(kernel_0_address0));
 endmodule
 
+(* ORIG_REF_NAME = "network_SeparableConv2D_1_w_1_rom" *) 
 module design_1_network_0_1_network_SeparableConv2D_1_w_1_rom
    (DOADO,
     ap_clk,
@@ -17408,6 +17420,7 @@ module design_1_network_0_1_network_SeparableConv2D_1_w_1_rom
         .WEBWE({1'b0,1'b0,1'b0,1'b0}));
 endmodule
 
+(* ORIG_REF_NAME = "network_SeparableConv2D_2_w_1" *) 
 module design_1_network_0_1_network_SeparableConv2D_2_w_1
    (DOADO,
     ap_clk,
@@ -17430,6 +17443,7 @@ module design_1_network_0_1_network_SeparableConv2D_2_w_1
         .ap_clk(ap_clk));
 endmodule
 
+(* ORIG_REF_NAME = "network_SeparableConv2D_2_w_1_rom" *) 
 module design_1_network_0_1_network_SeparableConv2D_2_w_1_rom
    (DOADO,
     ap_clk,
@@ -17576,6 +17590,7 @@ module design_1_network_0_1_network_SeparableConv2D_2_w_1_rom
         .WEBWE({1'b0,1'b0,1'b0,1'b0}));
 endmodule
 
+(* ORIG_REF_NAME = "network_SeparableConv2D_3_w_1" *) 
 module design_1_network_0_1_network_SeparableConv2D_3_w_1
    (A,
     ap_clk,
@@ -17606,6 +17621,7 @@ module design_1_network_0_1_network_SeparableConv2D_3_w_1
         .ap_clk(ap_clk));
 endmodule
 
+(* ORIG_REF_NAME = "network_SeparableConv2D_3_w_1_rom" *) 
 module design_1_network_0_1_network_SeparableConv2D_3_w_1_rom
    (A,
     ap_clk,
@@ -17871,6 +17887,7 @@ module design_1_network_0_1_network_SeparableConv2D_3_w_1_rom
         .WEBWE({1'b0,1'b0,1'b0,1'b0}));
 endmodule
 
+(* ORIG_REF_NAME = "network_SeparableConv2D_4_w_1" *) 
 module design_1_network_0_1_network_SeparableConv2D_4_w_1
    (A,
     ap_clk,
@@ -17901,6 +17918,7 @@ module design_1_network_0_1_network_SeparableConv2D_4_w_1
         .kernel_0_address0(kernel_0_address0));
 endmodule
 
+(* ORIG_REF_NAME = "network_SeparableConv2D_4_w_1_rom" *) 
 module design_1_network_0_1_network_SeparableConv2D_4_w_1_rom
    (A,
     ap_clk,
@@ -18166,6 +18184,7 @@ module design_1_network_0_1_network_SeparableConv2D_4_w_1_rom
         .WEBWE({1'b0,1'b0,1'b0,1'b0}));
 endmodule
 
+(* ORIG_REF_NAME = "network_mul_mul_15s_16s_30_1_1" *) 
 module design_1_network_0_1_network_mul_mul_15s_16s_30_1_1
    (d0,
     O,
@@ -18410,6 +18429,7 @@ module design_1_network_0_1_network_mul_mul_15s_16s_30_1_1_7
         .q0(q0));
 endmodule
 
+(* ORIG_REF_NAME = "network_mul_mul_15s_16s_30_1_1_DSP48_0" *) 
 module design_1_network_0_1_network_mul_mul_15s_16s_30_1_1_DSP48_0
    (d0,
     O,
@@ -20106,6 +20126,7 @@ module design_1_network_0_1_network_mul_mul_15s_16s_30_1_1_DSP48_0_8
         .UNDERFLOW(NLW_p_UNDERFLOW_UNCONNECTED));
 endmodule
 
+(* ORIG_REF_NAME = "network_mul_mul_16s_15s_30_1_1" *) 
 module design_1_network_0_1_network_mul_mul_16s_15s_30_1_1
    (O,
     \ap_CS_fsm_reg[8] ,
@@ -20266,6 +20287,7 @@ module design_1_network_0_1_network_mul_mul_16s_15s_30_1_1_5
         .p_2(p_1));
 endmodule
 
+(* ORIG_REF_NAME = "network_mul_mul_16s_15s_30_1_1_DSP48_2" *) 
 module design_1_network_0_1_network_mul_mul_16s_15s_30_1_1_DSP48_2
    (O,
     \ap_CS_fsm_reg[8] ,
@@ -21750,6 +21772,7 @@ module design_1_network_0_1_network_mul_mul_16s_15s_30_1_1_DSP48_2_6
         .UNDERFLOW(NLW_p_UNDERFLOW_UNCONNECTED));
 endmodule
 
+(* ORIG_REF_NAME = "network_mul_mul_16s_16s_30_1_1" *) 
 module design_1_network_0_1_network_mul_mul_16s_16s_30_1_1
    (O,
     p,
@@ -21859,6 +21882,7 @@ module design_1_network_0_1_network_mul_mul_16s_16s_30_1_1_9
         .p_shl5_cast_fu_378_p1(p_shl5_cast_fu_378_p1));
 endmodule
 
+(* ORIG_REF_NAME = "network_mul_mul_16s_16s_30_1_1_DSP48_1" *) 
 module design_1_network_0_1_network_mul_mul_16s_16s_30_1_1_DSP48_1
    (O,
     p_0,
@@ -22860,6 +22884,7 @@ module design_1_network_0_1_network_mul_mul_16s_16s_30_1_1_DSP48_1_10
         .UNDERFLOW(NLW_p_UNDERFLOW_UNCONNECTED));
 endmodule
 
+(* ORIG_REF_NAME = "padding2d_fix16" *) 
 module design_1_network_0_1_padding2d_fix16
    (grp_padding2d_fix16_fu_297_output_r_we0,
     \ap_CS_fsm_reg[6]_0 ,
@@ -30665,6 +30690,7 @@ module design_1_network_0_1_padding2d_fix16
         .R(1'b0));
 endmodule
 
+(* ORIG_REF_NAME = "pointwise_conv2d_fix" *) 
 module design_1_network_0_1_pointwise_conv2d_fix
    (ADDRARDADDR,
     d0,
@@ -32549,6 +32575,7 @@ module design_1_network_0_1_pointwise_conv2d_fix
         .R(1'b0));
 endmodule
 
+(* ORIG_REF_NAME = "pointwise_conv2d_fix_1" *) 
 module design_1_network_0_1_pointwise_conv2d_fix_1
    (d0,
     D,
@@ -34644,6 +34671,7 @@ module design_1_network_0_1_pointwise_conv2d_fix_1
         .R(1'b0));
 endmodule
 
+(* ORIG_REF_NAME = "pointwise_conv2d_fix_1_SeparableConv2D_1_b_s" *) 
 module design_1_network_0_1_pointwise_conv2d_fix_1_SeparableConv2D_1_b_s
    (\q0_reg[12] ,
     Q,
@@ -34666,6 +34694,7 @@ module design_1_network_0_1_pointwise_conv2d_fix_1_SeparableConv2D_1_b_s
         .\q0_reg[12]_0 (\q0_reg[12] ));
 endmodule
 
+(* ORIG_REF_NAME = "pointwise_conv2d_fix_1_SeparableConv2D_1_b_s_rom" *) 
 module design_1_network_0_1_pointwise_conv2d_fix_1_SeparableConv2D_1_b_s_rom
    (\q0_reg[12]_0 ,
     Q,
@@ -34865,6 +34894,7 @@ module design_1_network_0_1_pointwise_conv2d_fix_1_SeparableConv2D_1_b_s_rom
         .R(1'b0));
 endmodule
 
+(* ORIG_REF_NAME = "pointwise_conv2d_fix_1_SeparableConv2D_1_w_s" *) 
 module design_1_network_0_1_pointwise_conv2d_fix_1_SeparableConv2D_1_w_s
    (DOADO,
     ap_clk,
@@ -34891,6 +34921,7 @@ module design_1_network_0_1_pointwise_conv2d_fix_1_SeparableConv2D_1_w_s
         .q0_reg_1(q0_reg_0));
 endmodule
 
+(* ORIG_REF_NAME = "pointwise_conv2d_fix_1_SeparableConv2D_1_w_s_rom" *) 
 module design_1_network_0_1_pointwise_conv2d_fix_1_SeparableConv2D_1_w_s_rom
    (DOADO,
     ap_clk,
@@ -35066,6 +35097,7 @@ module design_1_network_0_1_pointwise_conv2d_fix_1_SeparableConv2D_1_w_s_rom
         .O(q0_reg_i_3__2_n_4));
 endmodule
 
+(* ORIG_REF_NAME = "pointwise_conv2d_fix_2" *) 
 module design_1_network_0_1_pointwise_conv2d_fix_2
    (O,
     \phi_mul_reg_163_reg[8]_0 ,
@@ -36947,6 +36979,7 @@ module design_1_network_0_1_pointwise_conv2d_fix_2
         .R(1'b0));
 endmodule
 
+(* ORIG_REF_NAME = "pointwise_conv2d_fix_2_SeparableConv2D_2_b_s" *) 
 module design_1_network_0_1_pointwise_conv2d_fix_2_SeparableConv2D_2_b_s
    (\q0_reg[12] ,
     Q,
@@ -36969,6 +37002,7 @@ module design_1_network_0_1_pointwise_conv2d_fix_2_SeparableConv2D_2_b_s
         .\q0_reg[12]_0 (\q0_reg[12] ));
 endmodule
 
+(* ORIG_REF_NAME = "pointwise_conv2d_fix_2_SeparableConv2D_2_b_s_rom" *) 
 module design_1_network_0_1_pointwise_conv2d_fix_2_SeparableConv2D_2_b_s_rom
    (\q0_reg[12]_0 ,
     Q,
@@ -37140,6 +37174,7 @@ module design_1_network_0_1_pointwise_conv2d_fix_2_SeparableConv2D_2_b_s_rom
         .R(1'b0));
 endmodule
 
+(* ORIG_REF_NAME = "pointwise_conv2d_fix_3" *) 
 module design_1_network_0_1_pointwise_conv2d_fix_3
    (\ap_CS_fsm_reg[30] ,
     \ap_CS_fsm_reg[30]_0 ,
@@ -39374,6 +39409,7 @@ module design_1_network_0_1_pointwise_conv2d_fix_3
         .R(1'b0));
 endmodule
 
+(* ORIG_REF_NAME = "pointwise_conv2d_fix_3_SeparableConv2D_3_b_s" *) 
 module design_1_network_0_1_pointwise_conv2d_fix_3_SeparableConv2D_3_b_s
    (\q0_reg[13] ,
     Q,
@@ -39396,6 +39432,7 @@ module design_1_network_0_1_pointwise_conv2d_fix_3_SeparableConv2D_3_b_s
         .\q0_reg[13]_0 (\q0_reg[13] ));
 endmodule
 
+(* ORIG_REF_NAME = "pointwise_conv2d_fix_3_SeparableConv2D_3_b_s_rom" *) 
 module design_1_network_0_1_pointwise_conv2d_fix_3_SeparableConv2D_3_b_s_rom
    (\q0_reg[13]_0 ,
     Q,
@@ -39624,6 +39661,7 @@ module design_1_network_0_1_pointwise_conv2d_fix_3_SeparableConv2D_3_b_s_rom
         .R(1'b0));
 endmodule
 
+(* ORIG_REF_NAME = "pointwise_conv2d_fix_3_SeparableConv2D_3_w_s" *) 
 module design_1_network_0_1_pointwise_conv2d_fix_3_SeparableConv2D_3_w_s
    (DOADO,
     ap_clk,
@@ -39650,6 +39688,7 @@ module design_1_network_0_1_pointwise_conv2d_fix_3_SeparableConv2D_3_w_s
         .q0_reg_0(q0_reg));
 endmodule
 
+(* ORIG_REF_NAME = "pointwise_conv2d_fix_3_SeparableConv2D_3_w_s_rom" *) 
 module design_1_network_0_1_pointwise_conv2d_fix_3_SeparableConv2D_3_w_s_rom
    (DOADO,
     ap_clk,
@@ -39831,6 +39870,7 @@ module design_1_network_0_1_pointwise_conv2d_fix_3_SeparableConv2D_3_w_s_rom
         .O(sel[3]));
 endmodule
 
+(* ORIG_REF_NAME = "pointwise_conv2d_fix_4" *) 
 module design_1_network_0_1_pointwise_conv2d_fix_4
    (\buffer1_reg_109_reg[14]_0 ,
     \buffer1_reg_109_reg[15]_0 ,
@@ -41370,6 +41410,7 @@ module design_1_network_0_1_pointwise_conv2d_fix_4
         .R(1'b0));
 endmodule
 
+(* ORIG_REF_NAME = "pointwise_conv2d_fix_SeparableConv2D_0_b_s" *) 
 module design_1_network_0_1_pointwise_conv2d_fix_SeparableConv2D_0_b_s
    (\q0_reg[12] ,
     Q,
@@ -41392,6 +41433,7 @@ module design_1_network_0_1_pointwise_conv2d_fix_SeparableConv2D_0_b_s
         .\q0_reg[12]_0 (\q0_reg[12] ));
 endmodule
 
+(* ORIG_REF_NAME = "pointwise_conv2d_fix_SeparableConv2D_0_b_s_rom" *) 
 module design_1_network_0_1_pointwise_conv2d_fix_SeparableConv2D_0_b_s_rom
    (\q0_reg[12]_0 ,
     Q,
@@ -41604,6 +41646,7 @@ module design_1_network_0_1_pointwise_conv2d_fix_SeparableConv2D_0_b_s_rom
         .R(1'b0));
 endmodule
 
+(* ORIG_REF_NAME = "up_sampling2d_fix16" *) 
 module design_1_network_0_1_up_sampling2d_fix16
    (ADDRARDADDR,
     \ap_CS_fsm_reg[6] ,

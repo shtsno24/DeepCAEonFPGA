@@ -1,10 +1,10 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.3.1 (lin64) Build 2489853 Tue Mar 26 04:18:30 MDT 2019
--- Date        : Tue Dec 17 20:38:58 2019
+-- Date        : Tue Dec 17 22:10:41 2019
 -- Host        : masudalab-ubuntu running 64-bit Ubuntu 18.04.3 LTS
--- Command     : write_vhdl -force -mode funcsim -rename_top design_1_network_0_1 -prefix
---               design_1_network_0_1_ design_1_network_0_1_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim
+--               /home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_network_0_1/design_1_network_0_1_sim_netlist.vhdl
 -- Design      : design_1_network_0_1
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -57,6 +57,8 @@ entity design_1_network_0_1_max_pooling2d_fix16 is
     ap_rst_n_inv : in STD_LOGIC;
     q0 : in STD_LOGIC_VECTOR ( 15 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_network_0_1_max_pooling2d_fix16 : entity is "max_pooling2d_fix16";
 end design_1_network_0_1_max_pooling2d_fix16;
 
 architecture STRUCTURE of design_1_network_0_1_max_pooling2d_fix16 is
@@ -2575,6 +2577,8 @@ entity design_1_network_0_1_network_AXILiteS_s_axi is
     s_axi_AXILiteS_ARVALID : in STD_LOGIC;
     s_axi_AXILiteS_RREADY : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_network_0_1_network_AXILiteS_s_axi : entity is "network_AXILiteS_s_axi";
 end design_1_network_0_1_network_AXILiteS_s_axi;
 
 architecture STRUCTURE of design_1_network_0_1_network_AXILiteS_s_axi is
@@ -3366,6 +3370,8 @@ entity design_1_network_0_1_network_MemBank_A_ram is
     WEA : in STD_LOGIC_VECTOR ( 1 downto 0 );
     ram_reg_7_0 : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_network_0_1_network_MemBank_A_ram : entity is "network_MemBank_A_ram";
 end design_1_network_0_1_network_MemBank_A_ram;
 
 architecture STRUCTURE of design_1_network_0_1_network_MemBank_A_ram is
@@ -5925,6 +5931,8 @@ entity design_1_network_0_1_network_MemBank_Out_ram is
     ram_reg_0 : in STD_LOGIC_VECTOR ( 9 downto 0 );
     ram_reg_1 : in STD_LOGIC_VECTOR ( 9 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_network_0_1_network_MemBank_Out_ram : entity is "network_MemBank_Out_ram";
 end design_1_network_0_1_network_MemBank_Out_ram;
 
 architecture STRUCTURE of design_1_network_0_1_network_MemBank_Out_ram is
@@ -6126,6 +6134,8 @@ entity design_1_network_0_1_network_SeparableConv2D_1_w_1_rom is
     SeparableConv2D_1_w_1_ce0 : in STD_LOGIC;
     kernel_0_address0 : in STD_LOGIC_VECTOR ( 7 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_network_0_1_network_SeparableConv2D_1_w_1_rom : entity is "network_SeparableConv2D_1_w_1_rom";
 end design_1_network_0_1_network_SeparableConv2D_1_w_1_rom;
 
 architecture STRUCTURE of design_1_network_0_1_network_SeparableConv2D_1_w_1_rom is
@@ -6288,6 +6298,8 @@ entity design_1_network_0_1_network_SeparableConv2D_2_w_1_rom is
     SeparableConv2D_2_w_1_ce0 : in STD_LOGIC;
     ADDRARDADDR : in STD_LOGIC_VECTOR ( 6 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_network_0_1_network_SeparableConv2D_2_w_1_rom : entity is "network_SeparableConv2D_2_w_1_rom";
 end design_1_network_0_1_network_SeparableConv2D_2_w_1_rom;
 
 architecture STRUCTURE of design_1_network_0_1_network_SeparableConv2D_2_w_1_rom is
@@ -6452,6 +6464,8 @@ entity design_1_network_0_1_network_SeparableConv2D_3_w_1_rom is
     Q : in STD_LOGIC_VECTOR ( 0 to 0 );
     DOADO : in STD_LOGIC_VECTOR ( 15 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_network_0_1_network_SeparableConv2D_3_w_1_rom : entity is "network_SeparableConv2D_3_w_1_rom";
 end design_1_network_0_1_network_SeparableConv2D_3_w_1_rom;
 
 architecture STRUCTURE of design_1_network_0_1_network_SeparableConv2D_3_w_1_rom is
@@ -6777,6 +6791,8 @@ entity design_1_network_0_1_network_SeparableConv2D_4_w_1_rom is
     Q : in STD_LOGIC_VECTOR ( 0 to 0 );
     DOADO : in STD_LOGIC_VECTOR ( 15 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_network_0_1_network_SeparableConv2D_4_w_1_rom : entity is "network_SeparableConv2D_4_w_1_rom";
 end design_1_network_0_1_network_SeparableConv2D_4_w_1_rom;
 
 architecture STRUCTURE of design_1_network_0_1_network_SeparableConv2D_4_w_1_rom is
@@ -7129,6 +7145,8 @@ entity design_1_network_0_1_network_mul_mul_15s_16s_30_1_1_DSP48_0 is
     p_1 : in STD_LOGIC_VECTOR ( 3 downto 0 );
     DI : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_network_0_1_network_mul_mul_15s_16s_30_1_1_DSP48_0 : entity is "network_mul_mul_15s_16s_30_1_1_DSP48_0";
 end design_1_network_0_1_network_mul_mul_15s_16s_30_1_1_DSP48_0;
 
 architecture STRUCTURE of design_1_network_0_1_network_mul_mul_15s_16s_30_1_1_DSP48_0 is
@@ -9334,6 +9352,8 @@ entity design_1_network_0_1_network_mul_mul_16s_15s_30_1_1_DSP48_2 is
     \buffer1_reg_158_reg[11]\ : in STD_LOGIC_VECTOR ( 1 downto 0 );
     buffer1_reg_158_reg : in STD_LOGIC_VECTOR ( 12 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_network_0_1_network_mul_mul_16s_15s_30_1_1_DSP48_2 : entity is "network_mul_mul_16s_15s_30_1_1_DSP48_2";
 end design_1_network_0_1_network_mul_mul_16s_15s_30_1_1_DSP48_2;
 
 architecture STRUCTURE of design_1_network_0_1_network_mul_mul_16s_15s_30_1_1_DSP48_2 is
@@ -11345,6 +11365,8 @@ entity design_1_network_0_1_network_mul_mul_16s_16s_30_1_1_DSP48_1 is
     grp_depthwise_conv2d_fix_2_fu_315_output_r_d0 : in STD_LOGIC_VECTOR ( 3 downto 0 );
     \buffer_1_reg_215_reg[15]\ : in STD_LOGIC_VECTOR ( 11 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_network_0_1_network_mul_mul_16s_16s_30_1_1_DSP48_1 : entity is "network_mul_mul_16s_16s_30_1_1_DSP48_1";
 end design_1_network_0_1_network_mul_mul_16s_16s_30_1_1_DSP48_1;
 
 architecture STRUCTURE of design_1_network_0_1_network_mul_mul_16s_16s_30_1_1_DSP48_1 is
@@ -12680,6 +12702,8 @@ entity design_1_network_0_1_padding2d_fix16 is
     \ap_CS_fsm_reg[2]_0\ : in STD_LOGIC;
     ap_rst_n_inv : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_network_0_1_padding2d_fix16 : entity is "padding2d_fix16";
 end design_1_network_0_1_padding2d_fix16;
 
 architecture STRUCTURE of design_1_network_0_1_padding2d_fix16 is
@@ -23449,6 +23473,8 @@ entity design_1_network_0_1_pointwise_conv2d_fix_1_SeparableConv2D_1_b_s_rom is
     \q0_reg[0]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     ap_clk : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_network_0_1_pointwise_conv2d_fix_1_SeparableConv2D_1_b_s_rom : entity is "pointwise_conv2d_fix_1_SeparableConv2D_1_b_s_rom";
 end design_1_network_0_1_pointwise_conv2d_fix_1_SeparableConv2D_1_b_s_rom;
 
 architecture STRUCTURE of design_1_network_0_1_pointwise_conv2d_fix_1_SeparableConv2D_1_b_s_rom is
@@ -23714,6 +23740,8 @@ entity design_1_network_0_1_pointwise_conv2d_fix_1_SeparableConv2D_1_w_s_rom is
     q0_reg_0 : in STD_LOGIC_VECTOR ( 4 downto 0 );
     q0_reg_1 : in STD_LOGIC_VECTOR ( 2 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_network_0_1_pointwise_conv2d_fix_1_SeparableConv2D_1_w_s_rom : entity is "pointwise_conv2d_fix_1_SeparableConv2D_1_w_s_rom";
 end design_1_network_0_1_pointwise_conv2d_fix_1_SeparableConv2D_1_w_s_rom;
 
 architecture STRUCTURE of design_1_network_0_1_pointwise_conv2d_fix_1_SeparableConv2D_1_w_s_rom is
@@ -23919,6 +23947,8 @@ entity design_1_network_0_1_pointwise_conv2d_fix_2_SeparableConv2D_2_b_s_rom is
     \q0_reg[0]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     ap_clk : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_network_0_1_pointwise_conv2d_fix_2_SeparableConv2D_2_b_s_rom : entity is "pointwise_conv2d_fix_2_SeparableConv2D_2_b_s_rom";
 end design_1_network_0_1_pointwise_conv2d_fix_2_SeparableConv2D_2_b_s_rom;
 
 architecture STRUCTURE of design_1_network_0_1_pointwise_conv2d_fix_2_SeparableConv2D_2_b_s_rom is
@@ -24142,6 +24172,8 @@ entity design_1_network_0_1_pointwise_conv2d_fix_3_SeparableConv2D_3_b_s_rom is
     \q0_reg[0]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     ap_clk : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_network_0_1_pointwise_conv2d_fix_3_SeparableConv2D_3_b_s_rom : entity is "pointwise_conv2d_fix_3_SeparableConv2D_3_b_s_rom";
 end design_1_network_0_1_pointwise_conv2d_fix_3_SeparableConv2D_3_b_s_rom;
 
 architecture STRUCTURE of design_1_network_0_1_pointwise_conv2d_fix_3_SeparableConv2D_3_b_s_rom is
@@ -24441,6 +24473,8 @@ entity design_1_network_0_1_pointwise_conv2d_fix_3_SeparableConv2D_3_w_s_rom is
     Q : in STD_LOGIC_VECTOR ( 3 downto 0 );
     q0_reg_0 : in STD_LOGIC_VECTOR ( 3 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_network_0_1_pointwise_conv2d_fix_3_SeparableConv2D_3_w_s_rom : entity is "pointwise_conv2d_fix_3_SeparableConv2D_3_w_s_rom";
 end design_1_network_0_1_pointwise_conv2d_fix_3_SeparableConv2D_3_w_s_rom;
 
 architecture STRUCTURE of design_1_network_0_1_pointwise_conv2d_fix_3_SeparableConv2D_3_w_s_rom is
@@ -24649,6 +24683,8 @@ entity design_1_network_0_1_pointwise_conv2d_fix_SeparableConv2D_0_b_s_rom is
     \q0_reg[0]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     ap_clk : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_network_0_1_pointwise_conv2d_fix_SeparableConv2D_0_b_s_rom : entity is "pointwise_conv2d_fix_SeparableConv2D_0_b_s_rom";
 end design_1_network_0_1_pointwise_conv2d_fix_SeparableConv2D_0_b_s_rom;
 
 architecture STRUCTURE of design_1_network_0_1_pointwise_conv2d_fix_SeparableConv2D_0_b_s_rom is
@@ -24974,6 +25010,8 @@ entity design_1_network_0_1_up_sampling2d_fix16 is
     ap_rst_n_inv : in STD_LOGIC;
     ap_clk : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_network_0_1_up_sampling2d_fix16 : entity is "up_sampling2d_fix16";
 end design_1_network_0_1_up_sampling2d_fix16;
 
 architecture STRUCTURE of design_1_network_0_1_up_sampling2d_fix16 is
@@ -26884,6 +26922,8 @@ entity design_1_network_0_1_network_MemBank_A is
     WEA : in STD_LOGIC_VECTOR ( 1 downto 0 );
     ram_reg_7 : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_network_0_1_network_MemBank_A : entity is "network_MemBank_A";
 end design_1_network_0_1_network_MemBank_A;
 
 architecture STRUCTURE of design_1_network_0_1_network_MemBank_A is
@@ -27068,6 +27108,8 @@ entity design_1_network_0_1_network_MemBank_Out is
     ram_reg : in STD_LOGIC_VECTOR ( 9 downto 0 );
     ram_reg_0 : in STD_LOGIC_VECTOR ( 9 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_network_0_1_network_MemBank_Out : entity is "network_MemBank_Out";
 end design_1_network_0_1_network_MemBank_Out;
 
 architecture STRUCTURE of design_1_network_0_1_network_MemBank_Out is
@@ -27093,6 +27135,8 @@ entity design_1_network_0_1_network_SeparableConv2D_1_w_1 is
     SeparableConv2D_1_w_1_ce0 : in STD_LOGIC;
     kernel_0_address0 : in STD_LOGIC_VECTOR ( 7 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_network_0_1_network_SeparableConv2D_1_w_1 : entity is "network_SeparableConv2D_1_w_1";
 end design_1_network_0_1_network_SeparableConv2D_1_w_1;
 
 architecture STRUCTURE of design_1_network_0_1_network_SeparableConv2D_1_w_1 is
@@ -27116,6 +27160,8 @@ entity design_1_network_0_1_network_SeparableConv2D_2_w_1 is
     SeparableConv2D_2_w_1_ce0 : in STD_LOGIC;
     ADDRARDADDR : in STD_LOGIC_VECTOR ( 6 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_network_0_1_network_SeparableConv2D_2_w_1 : entity is "network_SeparableConv2D_2_w_1";
 end design_1_network_0_1_network_SeparableConv2D_2_w_1;
 
 architecture STRUCTURE of design_1_network_0_1_network_SeparableConv2D_2_w_1 is
@@ -27141,6 +27187,8 @@ entity design_1_network_0_1_network_SeparableConv2D_3_w_1 is
     Q : in STD_LOGIC_VECTOR ( 0 to 0 );
     DOADO : in STD_LOGIC_VECTOR ( 15 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_network_0_1_network_SeparableConv2D_3_w_1 : entity is "network_SeparableConv2D_3_w_1";
 end design_1_network_0_1_network_SeparableConv2D_3_w_1;
 
 architecture STRUCTURE of design_1_network_0_1_network_SeparableConv2D_3_w_1 is
@@ -27168,6 +27216,8 @@ entity design_1_network_0_1_network_SeparableConv2D_4_w_1 is
     Q : in STD_LOGIC_VECTOR ( 0 to 0 );
     DOADO : in STD_LOGIC_VECTOR ( 15 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_network_0_1_network_SeparableConv2D_4_w_1 : entity is "network_SeparableConv2D_4_w_1";
 end design_1_network_0_1_network_SeparableConv2D_4_w_1;
 
 architecture STRUCTURE of design_1_network_0_1_network_SeparableConv2D_4_w_1 is
@@ -27222,6 +27272,8 @@ entity design_1_network_0_1_network_mul_mul_15s_16s_30_1_1 is
     p_0 : in STD_LOGIC_VECTOR ( 3 downto 0 );
     DI : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_network_0_1_network_mul_mul_15s_16s_30_1_1 : entity is "network_mul_mul_15s_16s_30_1_1";
 end design_1_network_0_1_network_mul_mul_15s_16s_30_1_1;
 
 architecture STRUCTURE of design_1_network_0_1_network_mul_mul_15s_16s_30_1_1 is
@@ -27362,6 +27414,8 @@ entity design_1_network_0_1_network_mul_mul_16s_15s_30_1_1 is
     \buffer1_reg_158_reg[11]\ : in STD_LOGIC_VECTOR ( 1 downto 0 );
     buffer1_reg_158_reg : in STD_LOGIC_VECTOR ( 12 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_network_0_1_network_mul_mul_16s_15s_30_1_1 : entity is "network_mul_mul_16s_15s_30_1_1";
 end design_1_network_0_1_network_mul_mul_16s_15s_30_1_1;
 
 architecture STRUCTURE of design_1_network_0_1_network_mul_mul_16s_15s_30_1_1 is
@@ -27481,6 +27535,8 @@ entity design_1_network_0_1_network_mul_mul_16s_16s_30_1_1 is
     grp_depthwise_conv2d_fix_2_fu_315_output_r_d0 : in STD_LOGIC_VECTOR ( 3 downto 0 );
     \buffer_1_reg_215_reg[15]\ : in STD_LOGIC_VECTOR ( 11 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_network_0_1_network_mul_mul_16s_16s_30_1_1 : entity is "network_mul_mul_16s_16s_30_1_1";
 end design_1_network_0_1_network_mul_mul_16s_16s_30_1_1;
 
 architecture STRUCTURE of design_1_network_0_1_network_mul_mul_16s_16s_30_1_1 is
@@ -27553,6 +27609,8 @@ entity design_1_network_0_1_pointwise_conv2d_fix_1_SeparableConv2D_1_b_s is
     \q0_reg[0]\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     ap_clk : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_network_0_1_pointwise_conv2d_fix_1_SeparableConv2D_1_b_s : entity is "pointwise_conv2d_fix_1_SeparableConv2D_1_b_s";
 end design_1_network_0_1_pointwise_conv2d_fix_1_SeparableConv2D_1_b_s;
 
 architecture STRUCTURE of design_1_network_0_1_pointwise_conv2d_fix_1_SeparableConv2D_1_b_s is
@@ -27577,6 +27635,8 @@ entity design_1_network_0_1_pointwise_conv2d_fix_1_SeparableConv2D_1_w_s is
     q0_reg : in STD_LOGIC_VECTOR ( 4 downto 0 );
     q0_reg_0 : in STD_LOGIC_VECTOR ( 2 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_network_0_1_pointwise_conv2d_fix_1_SeparableConv2D_1_w_s : entity is "pointwise_conv2d_fix_1_SeparableConv2D_1_w_s";
 end design_1_network_0_1_pointwise_conv2d_fix_1_SeparableConv2D_1_w_s;
 
 architecture STRUCTURE of design_1_network_0_1_pointwise_conv2d_fix_1_SeparableConv2D_1_w_s is
@@ -27601,6 +27661,8 @@ entity design_1_network_0_1_pointwise_conv2d_fix_2_SeparableConv2D_2_b_s is
     \q0_reg[0]\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     ap_clk : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_network_0_1_pointwise_conv2d_fix_2_SeparableConv2D_2_b_s : entity is "pointwise_conv2d_fix_2_SeparableConv2D_2_b_s";
 end design_1_network_0_1_pointwise_conv2d_fix_2_SeparableConv2D_2_b_s;
 
 architecture STRUCTURE of design_1_network_0_1_pointwise_conv2d_fix_2_SeparableConv2D_2_b_s is
@@ -27624,6 +27686,8 @@ entity design_1_network_0_1_pointwise_conv2d_fix_3_SeparableConv2D_3_b_s is
     \q0_reg[0]\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     ap_clk : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_network_0_1_pointwise_conv2d_fix_3_SeparableConv2D_3_b_s : entity is "pointwise_conv2d_fix_3_SeparableConv2D_3_b_s";
 end design_1_network_0_1_pointwise_conv2d_fix_3_SeparableConv2D_3_b_s;
 
 architecture STRUCTURE of design_1_network_0_1_pointwise_conv2d_fix_3_SeparableConv2D_3_b_s is
@@ -27648,6 +27712,8 @@ entity design_1_network_0_1_pointwise_conv2d_fix_3_SeparableConv2D_3_w_s is
     Q : in STD_LOGIC_VECTOR ( 3 downto 0 );
     q0_reg : in STD_LOGIC_VECTOR ( 3 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_network_0_1_pointwise_conv2d_fix_3_SeparableConv2D_3_w_s : entity is "pointwise_conv2d_fix_3_SeparableConv2D_3_w_s";
 end design_1_network_0_1_pointwise_conv2d_fix_3_SeparableConv2D_3_w_s;
 
 architecture STRUCTURE of design_1_network_0_1_pointwise_conv2d_fix_3_SeparableConv2D_3_w_s is
@@ -27672,6 +27738,8 @@ entity design_1_network_0_1_pointwise_conv2d_fix_SeparableConv2D_0_b_s is
     \q0_reg[0]\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     ap_clk : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_network_0_1_pointwise_conv2d_fix_SeparableConv2D_0_b_s : entity is "pointwise_conv2d_fix_SeparableConv2D_0_b_s";
 end design_1_network_0_1_pointwise_conv2d_fix_SeparableConv2D_0_b_s;
 
 architecture STRUCTURE of design_1_network_0_1_pointwise_conv2d_fix_SeparableConv2D_0_b_s is
@@ -27772,6 +27840,8 @@ entity design_1_network_0_1_depthwise_conv2d_fix is
     ap_rst_n_inv : in STD_LOGIC;
     ap_clk : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_network_0_1_depthwise_conv2d_fix : entity is "depthwise_conv2d_fix";
 end design_1_network_0_1_depthwise_conv2d_fix;
 
 architecture STRUCTURE of design_1_network_0_1_depthwise_conv2d_fix is
@@ -30180,6 +30250,8 @@ entity design_1_network_0_1_depthwise_conv2d_fix_1 is
     ap_clk : in STD_LOGIC;
     A : in STD_LOGIC_VECTOR ( 15 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_network_0_1_depthwise_conv2d_fix_1 : entity is "depthwise_conv2d_fix_1";
 end design_1_network_0_1_depthwise_conv2d_fix_1;
 
 architecture STRUCTURE of design_1_network_0_1_depthwise_conv2d_fix_1 is
@@ -34598,6 +34670,8 @@ entity design_1_network_0_1_depthwise_conv2d_fix_2 is
     ap_clk : in STD_LOGIC;
     A : in STD_LOGIC_VECTOR ( 15 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_network_0_1_depthwise_conv2d_fix_2 : entity is "depthwise_conv2d_fix_2";
 end design_1_network_0_1_depthwise_conv2d_fix_2;
 
 architecture STRUCTURE of design_1_network_0_1_depthwise_conv2d_fix_2 is
@@ -37661,6 +37735,8 @@ entity design_1_network_0_1_pointwise_conv2d_fix is
     ap_clk : in STD_LOGIC;
     q0 : in STD_LOGIC_VECTOR ( 15 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_network_0_1_pointwise_conv2d_fix : entity is "pointwise_conv2d_fix";
 end design_1_network_0_1_pointwise_conv2d_fix;
 
 architecture STRUCTURE of design_1_network_0_1_pointwise_conv2d_fix is
@@ -39893,6 +39969,8 @@ entity design_1_network_0_1_pointwise_conv2d_fix_1 is
     ap_rst_n_inv : in STD_LOGIC;
     ap_clk : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_network_0_1_pointwise_conv2d_fix_1 : entity is "pointwise_conv2d_fix_1";
 end design_1_network_0_1_pointwise_conv2d_fix_1;
 
 architecture STRUCTURE of design_1_network_0_1_pointwise_conv2d_fix_1 is
@@ -42705,6 +42783,8 @@ entity design_1_network_0_1_pointwise_conv2d_fix_2 is
     output_r_ce0 : in STD_LOGIC;
     ap_rst_n_inv : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_network_0_1_pointwise_conv2d_fix_2 : entity is "pointwise_conv2d_fix_2";
 end design_1_network_0_1_pointwise_conv2d_fix_2;
 
 architecture STRUCTURE of design_1_network_0_1_pointwise_conv2d_fix_2 is
@@ -45221,6 +45301,8 @@ entity design_1_network_0_1_pointwise_conv2d_fix_3 is
     ap_rst_n_inv : in STD_LOGIC;
     ap_clk : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_network_0_1_pointwise_conv2d_fix_3 : entity is "pointwise_conv2d_fix_3";
 end design_1_network_0_1_pointwise_conv2d_fix_3;
 
 architecture STRUCTURE of design_1_network_0_1_pointwise_conv2d_fix_3 is
@@ -48185,6 +48267,8 @@ entity design_1_network_0_1_pointwise_conv2d_fix_4 is
     ap_clk : in STD_LOGIC;
     q0 : in STD_LOGIC_VECTOR ( 15 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_network_0_1_pointwise_conv2d_fix_4 : entity is "pointwise_conv2d_fix_4";
 end design_1_network_0_1_pointwise_conv2d_fix_4;
 
 architecture STRUCTURE of design_1_network_0_1_pointwise_conv2d_fix_4 is
@@ -50223,6 +50307,8 @@ entity design_1_network_0_1_network is
   attribute C_S_AXI_DATA_WIDTH of design_1_network_0_1_network : entity is 32;
   attribute C_S_AXI_WSTRB_WIDTH : integer;
   attribute C_S_AXI_WSTRB_WIDTH of design_1_network_0_1_network : entity is 4;
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_network_0_1_network : entity is "network";
   attribute ap_ST_fsm_state1 : string;
   attribute ap_ST_fsm_state1 of design_1_network_0_1_network : entity is "45'b000000000000000000000000000000000000000000001";
   attribute ap_ST_fsm_state10 : string;
