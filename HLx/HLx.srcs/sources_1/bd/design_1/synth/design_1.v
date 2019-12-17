@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2018.3.1 (lin64) Build 2489853 Tue Mar 26 04:18:30 MDT 2019
-//Date        : Tue Dec 17 19:25:43 2019
+//Date        : Tue Dec 17 20:01:57 2019
 //Host        : masudalab-ubuntu running 64-bit Ubuntu 18.04.3 LTS
 //Command     : generate_target design_1.bd
 //Design      : design_1
@@ -9,7 +9,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=14,numReposBlks=8,numNonXlnxBlks=0,numHierBlks=6,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=1,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=55,da_clkrst_cnt=12,da_ps7_cnt=1,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
+(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=14,numReposBlks=8,numNonXlnxBlks=0,numHierBlks=6,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=1,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=59,da_clkrst_cnt=14,da_ps7_cnt=1,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
 module design_1
    (DDR_addr,
     DDR_ba,
@@ -72,7 +72,7 @@ module design_1
   wire axi_dma_in_M_AXI_MM2S_RREADY;
   wire [1:0]axi_dma_in_M_AXI_MM2S_RRESP;
   wire axi_dma_in_M_AXI_MM2S_RVALID;
-  wire [31:0]axi_dma_out_M_AXI_S2MM_AWADDR;
+  wire [63:0]axi_dma_out_M_AXI_S2MM_AWADDR;
   wire [1:0]axi_dma_out_M_AXI_S2MM_AWBURST;
   wire [3:0]axi_dma_out_M_AXI_S2MM_AWCACHE;
   wire [7:0]axi_dma_out_M_AXI_S2MM_AWLEN;
@@ -111,15 +111,15 @@ module design_1
   wire axi_smc_M00_AXI_BREADY;
   wire [1:0]axi_smc_M00_AXI_BRESP;
   wire axi_smc_M00_AXI_BVALID;
-  wire [31:0]axi_smc_M00_AXI_RDATA;
+  wire [63:0]axi_smc_M00_AXI_RDATA;
   wire axi_smc_M00_AXI_RLAST;
   wire axi_smc_M00_AXI_RREADY;
   wire [1:0]axi_smc_M00_AXI_RRESP;
   wire axi_smc_M00_AXI_RVALID;
-  wire [31:0]axi_smc_M00_AXI_WDATA;
+  wire [63:0]axi_smc_M00_AXI_WDATA;
   wire axi_smc_M00_AXI_WLAST;
   wire axi_smc_M00_AXI_WREADY;
-  wire [3:0]axi_smc_M00_AXI_WSTRB;
+  wire [7:0]axi_smc_M00_AXI_WSTRB;
   wire axi_smc_M00_AXI_WVALID;
   wire [31:0]network_0_output_data_TDATA;
   wire [3:0]network_0_output_data_TKEEP;
@@ -238,7 +238,7 @@ module design_1
   wire ps7_0_axi_periph_M02_AXI_WVALID;
   wire [0:0]rst_ps7_0_100M_peripheral_aresetn;
 
-  design_1_axi_dma_0_1 axi_dma_in
+  design_1_axi_dma_0_0 axi_dma_in
        (.axi_resetn(rst_ps7_0_100M_peripheral_aresetn),
         .m_axi_mm2s_aclk(processing_system7_0_FCLK_CLK0),
         .m_axi_mm2s_araddr(axi_dma_in_M_AXI_MM2S_ARADDR),
@@ -260,23 +260,23 @@ module design_1
         .m_axis_mm2s_tready(axi_dma_in_M_AXIS_MM2S_TREADY),
         .m_axis_mm2s_tvalid(axi_dma_in_M_AXIS_MM2S_TVALID),
         .s_axi_lite_aclk(processing_system7_0_FCLK_CLK0),
-        .s_axi_lite_araddr(ps7_0_axi_periph_M01_AXI_ARADDR[9:0]),
-        .s_axi_lite_arready(ps7_0_axi_periph_M01_AXI_ARREADY),
-        .s_axi_lite_arvalid(ps7_0_axi_periph_M01_AXI_ARVALID),
-        .s_axi_lite_awaddr(ps7_0_axi_periph_M01_AXI_AWADDR[9:0]),
-        .s_axi_lite_awready(ps7_0_axi_periph_M01_AXI_AWREADY),
-        .s_axi_lite_awvalid(ps7_0_axi_periph_M01_AXI_AWVALID),
-        .s_axi_lite_bready(ps7_0_axi_periph_M01_AXI_BREADY),
-        .s_axi_lite_bresp(ps7_0_axi_periph_M01_AXI_BRESP),
-        .s_axi_lite_bvalid(ps7_0_axi_periph_M01_AXI_BVALID),
-        .s_axi_lite_rdata(ps7_0_axi_periph_M01_AXI_RDATA),
-        .s_axi_lite_rready(ps7_0_axi_periph_M01_AXI_RREADY),
-        .s_axi_lite_rresp(ps7_0_axi_periph_M01_AXI_RRESP),
-        .s_axi_lite_rvalid(ps7_0_axi_periph_M01_AXI_RVALID),
-        .s_axi_lite_wdata(ps7_0_axi_periph_M01_AXI_WDATA),
-        .s_axi_lite_wready(ps7_0_axi_periph_M01_AXI_WREADY),
-        .s_axi_lite_wvalid(ps7_0_axi_periph_M01_AXI_WVALID));
-  design_1_axi_dma_in_0 axi_dma_out
+        .s_axi_lite_araddr(ps7_0_axi_periph_M00_AXI_ARADDR[9:0]),
+        .s_axi_lite_arready(ps7_0_axi_periph_M00_AXI_ARREADY),
+        .s_axi_lite_arvalid(ps7_0_axi_periph_M00_AXI_ARVALID),
+        .s_axi_lite_awaddr(ps7_0_axi_periph_M00_AXI_AWADDR[9:0]),
+        .s_axi_lite_awready(ps7_0_axi_periph_M00_AXI_AWREADY),
+        .s_axi_lite_awvalid(ps7_0_axi_periph_M00_AXI_AWVALID),
+        .s_axi_lite_bready(ps7_0_axi_periph_M00_AXI_BREADY),
+        .s_axi_lite_bresp(ps7_0_axi_periph_M00_AXI_BRESP),
+        .s_axi_lite_bvalid(ps7_0_axi_periph_M00_AXI_BVALID),
+        .s_axi_lite_rdata(ps7_0_axi_periph_M00_AXI_RDATA),
+        .s_axi_lite_rready(ps7_0_axi_periph_M00_AXI_RREADY),
+        .s_axi_lite_rresp(ps7_0_axi_periph_M00_AXI_RRESP),
+        .s_axi_lite_rvalid(ps7_0_axi_periph_M00_AXI_RVALID),
+        .s_axi_lite_wdata(ps7_0_axi_periph_M00_AXI_WDATA),
+        .s_axi_lite_wready(ps7_0_axi_periph_M00_AXI_WREADY),
+        .s_axi_lite_wvalid(ps7_0_axi_periph_M00_AXI_WVALID));
+  design_1_axi_dma_0_2 axi_dma_out
        (.axi_resetn(rst_ps7_0_100M_peripheral_aresetn),
         .m_axi_s2mm_aclk(processing_system7_0_FCLK_CLK0),
         .m_axi_s2mm_awaddr(axi_dma_out_M_AXI_S2MM_AWADDR),
@@ -296,22 +296,22 @@ module design_1
         .m_axi_s2mm_wstrb(axi_dma_out_M_AXI_S2MM_WSTRB),
         .m_axi_s2mm_wvalid(axi_dma_out_M_AXI_S2MM_WVALID),
         .s_axi_lite_aclk(processing_system7_0_FCLK_CLK0),
-        .s_axi_lite_araddr(ps7_0_axi_periph_M00_AXI_ARADDR[9:0]),
-        .s_axi_lite_arready(ps7_0_axi_periph_M00_AXI_ARREADY),
-        .s_axi_lite_arvalid(ps7_0_axi_periph_M00_AXI_ARVALID),
-        .s_axi_lite_awaddr(ps7_0_axi_periph_M00_AXI_AWADDR[9:0]),
-        .s_axi_lite_awready(ps7_0_axi_periph_M00_AXI_AWREADY),
-        .s_axi_lite_awvalid(ps7_0_axi_periph_M00_AXI_AWVALID),
-        .s_axi_lite_bready(ps7_0_axi_periph_M00_AXI_BREADY),
-        .s_axi_lite_bresp(ps7_0_axi_periph_M00_AXI_BRESP),
-        .s_axi_lite_bvalid(ps7_0_axi_periph_M00_AXI_BVALID),
-        .s_axi_lite_rdata(ps7_0_axi_periph_M00_AXI_RDATA),
-        .s_axi_lite_rready(ps7_0_axi_periph_M00_AXI_RREADY),
-        .s_axi_lite_rresp(ps7_0_axi_periph_M00_AXI_RRESP),
-        .s_axi_lite_rvalid(ps7_0_axi_periph_M00_AXI_RVALID),
-        .s_axi_lite_wdata(ps7_0_axi_periph_M00_AXI_WDATA),
-        .s_axi_lite_wready(ps7_0_axi_periph_M00_AXI_WREADY),
-        .s_axi_lite_wvalid(ps7_0_axi_periph_M00_AXI_WVALID),
+        .s_axi_lite_araddr(ps7_0_axi_periph_M01_AXI_ARADDR[9:0]),
+        .s_axi_lite_arready(ps7_0_axi_periph_M01_AXI_ARREADY),
+        .s_axi_lite_arvalid(ps7_0_axi_periph_M01_AXI_ARVALID),
+        .s_axi_lite_awaddr(ps7_0_axi_periph_M01_AXI_AWADDR[9:0]),
+        .s_axi_lite_awready(ps7_0_axi_periph_M01_AXI_AWREADY),
+        .s_axi_lite_awvalid(ps7_0_axi_periph_M01_AXI_AWVALID),
+        .s_axi_lite_bready(ps7_0_axi_periph_M01_AXI_BREADY),
+        .s_axi_lite_bresp(ps7_0_axi_periph_M01_AXI_BRESP),
+        .s_axi_lite_bvalid(ps7_0_axi_periph_M01_AXI_BVALID),
+        .s_axi_lite_rdata(ps7_0_axi_periph_M01_AXI_RDATA),
+        .s_axi_lite_rready(ps7_0_axi_periph_M01_AXI_RREADY),
+        .s_axi_lite_rresp(ps7_0_axi_periph_M01_AXI_RRESP),
+        .s_axi_lite_rvalid(ps7_0_axi_periph_M01_AXI_RVALID),
+        .s_axi_lite_wdata(ps7_0_axi_periph_M01_AXI_WDATA),
+        .s_axi_lite_wready(ps7_0_axi_periph_M01_AXI_WREADY),
+        .s_axi_lite_wvalid(ps7_0_axi_periph_M01_AXI_WVALID),
         .s_axis_s2mm_tdata(network_0_output_data_TDATA),
         .s_axis_s2mm_tkeep(network_0_output_data_TKEEP),
         .s_axis_s2mm_tlast(network_0_output_data_TLAST),
@@ -896,20 +896,20 @@ module design_1_ps7_0_axi_periph_1
   wire m00_couplers_to_ps7_0_axi_periph_WVALID;
   wire [31:0]m01_couplers_to_ps7_0_axi_periph_ARADDR;
   wire [0:0]m01_couplers_to_ps7_0_axi_periph_ARREADY;
-  wire [0:0]m01_couplers_to_ps7_0_axi_periph_ARVALID;
+  wire m01_couplers_to_ps7_0_axi_periph_ARVALID;
   wire [31:0]m01_couplers_to_ps7_0_axi_periph_AWADDR;
   wire [0:0]m01_couplers_to_ps7_0_axi_periph_AWREADY;
-  wire [0:0]m01_couplers_to_ps7_0_axi_periph_AWVALID;
-  wire [0:0]m01_couplers_to_ps7_0_axi_periph_BREADY;
+  wire m01_couplers_to_ps7_0_axi_periph_AWVALID;
+  wire m01_couplers_to_ps7_0_axi_periph_BREADY;
   wire [1:0]m01_couplers_to_ps7_0_axi_periph_BRESP;
   wire [0:0]m01_couplers_to_ps7_0_axi_periph_BVALID;
   wire [31:0]m01_couplers_to_ps7_0_axi_periph_RDATA;
-  wire [0:0]m01_couplers_to_ps7_0_axi_periph_RREADY;
+  wire m01_couplers_to_ps7_0_axi_periph_RREADY;
   wire [1:0]m01_couplers_to_ps7_0_axi_periph_RRESP;
   wire [0:0]m01_couplers_to_ps7_0_axi_periph_RVALID;
   wire [31:0]m01_couplers_to_ps7_0_axi_periph_WDATA;
   wire [0:0]m01_couplers_to_ps7_0_axi_periph_WREADY;
-  wire [0:0]m01_couplers_to_ps7_0_axi_periph_WVALID;
+  wire m01_couplers_to_ps7_0_axi_periph_WVALID;
   wire [31:0]m02_couplers_to_ps7_0_axi_periph_ARADDR;
   wire m02_couplers_to_ps7_0_axi_periph_ARREADY;
   wire m02_couplers_to_ps7_0_axi_periph_ARVALID;
@@ -1022,20 +1022,20 @@ module design_1_ps7_0_axi_periph_1
   wire xbar_to_m00_couplers_WREADY;
   wire [0:0]xbar_to_m00_couplers_WVALID;
   wire [63:32]xbar_to_m01_couplers_ARADDR;
-  wire [0:0]xbar_to_m01_couplers_ARREADY;
+  wire xbar_to_m01_couplers_ARREADY;
   wire [1:1]xbar_to_m01_couplers_ARVALID;
   wire [63:32]xbar_to_m01_couplers_AWADDR;
-  wire [0:0]xbar_to_m01_couplers_AWREADY;
+  wire xbar_to_m01_couplers_AWREADY;
   wire [1:1]xbar_to_m01_couplers_AWVALID;
   wire [1:1]xbar_to_m01_couplers_BREADY;
   wire [1:0]xbar_to_m01_couplers_BRESP;
-  wire [0:0]xbar_to_m01_couplers_BVALID;
+  wire xbar_to_m01_couplers_BVALID;
   wire [31:0]xbar_to_m01_couplers_RDATA;
   wire [1:1]xbar_to_m01_couplers_RREADY;
   wire [1:0]xbar_to_m01_couplers_RRESP;
-  wire [0:0]xbar_to_m01_couplers_RVALID;
+  wire xbar_to_m01_couplers_RVALID;
   wire [63:32]xbar_to_m01_couplers_WDATA;
-  wire [0:0]xbar_to_m01_couplers_WREADY;
+  wire xbar_to_m01_couplers_WREADY;
   wire [1:1]xbar_to_m01_couplers_WVALID;
   wire [95:64]xbar_to_m02_couplers_ARADDR;
   wire xbar_to_m02_couplers_ARREADY;
@@ -1611,89 +1611,89 @@ module m01_couplers_imp_XU9C55
   input M_ACLK;
   input M_ARESETN;
   output [31:0]M_AXI_araddr;
-  input [0:0]M_AXI_arready;
-  output [0:0]M_AXI_arvalid;
+  input M_AXI_arready;
+  output M_AXI_arvalid;
   output [31:0]M_AXI_awaddr;
-  input [0:0]M_AXI_awready;
-  output [0:0]M_AXI_awvalid;
-  output [0:0]M_AXI_bready;
+  input M_AXI_awready;
+  output M_AXI_awvalid;
+  output M_AXI_bready;
   input [1:0]M_AXI_bresp;
-  input [0:0]M_AXI_bvalid;
+  input M_AXI_bvalid;
   input [31:0]M_AXI_rdata;
-  output [0:0]M_AXI_rready;
+  output M_AXI_rready;
   input [1:0]M_AXI_rresp;
-  input [0:0]M_AXI_rvalid;
+  input M_AXI_rvalid;
   output [31:0]M_AXI_wdata;
-  input [0:0]M_AXI_wready;
-  output [0:0]M_AXI_wvalid;
+  input M_AXI_wready;
+  output M_AXI_wvalid;
   input S_ACLK;
   input S_ARESETN;
   input [31:0]S_AXI_araddr;
-  output [0:0]S_AXI_arready;
-  input [0:0]S_AXI_arvalid;
+  output S_AXI_arready;
+  input S_AXI_arvalid;
   input [31:0]S_AXI_awaddr;
-  output [0:0]S_AXI_awready;
-  input [0:0]S_AXI_awvalid;
-  input [0:0]S_AXI_bready;
+  output S_AXI_awready;
+  input S_AXI_awvalid;
+  input S_AXI_bready;
   output [1:0]S_AXI_bresp;
-  output [0:0]S_AXI_bvalid;
+  output S_AXI_bvalid;
   output [31:0]S_AXI_rdata;
-  input [0:0]S_AXI_rready;
+  input S_AXI_rready;
   output [1:0]S_AXI_rresp;
-  output [0:0]S_AXI_rvalid;
+  output S_AXI_rvalid;
   input [31:0]S_AXI_wdata;
-  output [0:0]S_AXI_wready;
-  input [0:0]S_AXI_wvalid;
+  output S_AXI_wready;
+  input S_AXI_wvalid;
 
   wire [31:0]m01_couplers_to_m01_couplers_ARADDR;
-  wire [0:0]m01_couplers_to_m01_couplers_ARREADY;
-  wire [0:0]m01_couplers_to_m01_couplers_ARVALID;
+  wire m01_couplers_to_m01_couplers_ARREADY;
+  wire m01_couplers_to_m01_couplers_ARVALID;
   wire [31:0]m01_couplers_to_m01_couplers_AWADDR;
-  wire [0:0]m01_couplers_to_m01_couplers_AWREADY;
-  wire [0:0]m01_couplers_to_m01_couplers_AWVALID;
-  wire [0:0]m01_couplers_to_m01_couplers_BREADY;
+  wire m01_couplers_to_m01_couplers_AWREADY;
+  wire m01_couplers_to_m01_couplers_AWVALID;
+  wire m01_couplers_to_m01_couplers_BREADY;
   wire [1:0]m01_couplers_to_m01_couplers_BRESP;
-  wire [0:0]m01_couplers_to_m01_couplers_BVALID;
+  wire m01_couplers_to_m01_couplers_BVALID;
   wire [31:0]m01_couplers_to_m01_couplers_RDATA;
-  wire [0:0]m01_couplers_to_m01_couplers_RREADY;
+  wire m01_couplers_to_m01_couplers_RREADY;
   wire [1:0]m01_couplers_to_m01_couplers_RRESP;
-  wire [0:0]m01_couplers_to_m01_couplers_RVALID;
+  wire m01_couplers_to_m01_couplers_RVALID;
   wire [31:0]m01_couplers_to_m01_couplers_WDATA;
-  wire [0:0]m01_couplers_to_m01_couplers_WREADY;
-  wire [0:0]m01_couplers_to_m01_couplers_WVALID;
+  wire m01_couplers_to_m01_couplers_WREADY;
+  wire m01_couplers_to_m01_couplers_WVALID;
 
   assign M_AXI_araddr[31:0] = m01_couplers_to_m01_couplers_ARADDR;
-  assign M_AXI_arvalid[0] = m01_couplers_to_m01_couplers_ARVALID;
+  assign M_AXI_arvalid = m01_couplers_to_m01_couplers_ARVALID;
   assign M_AXI_awaddr[31:0] = m01_couplers_to_m01_couplers_AWADDR;
-  assign M_AXI_awvalid[0] = m01_couplers_to_m01_couplers_AWVALID;
-  assign M_AXI_bready[0] = m01_couplers_to_m01_couplers_BREADY;
-  assign M_AXI_rready[0] = m01_couplers_to_m01_couplers_RREADY;
+  assign M_AXI_awvalid = m01_couplers_to_m01_couplers_AWVALID;
+  assign M_AXI_bready = m01_couplers_to_m01_couplers_BREADY;
+  assign M_AXI_rready = m01_couplers_to_m01_couplers_RREADY;
   assign M_AXI_wdata[31:0] = m01_couplers_to_m01_couplers_WDATA;
-  assign M_AXI_wvalid[0] = m01_couplers_to_m01_couplers_WVALID;
-  assign S_AXI_arready[0] = m01_couplers_to_m01_couplers_ARREADY;
-  assign S_AXI_awready[0] = m01_couplers_to_m01_couplers_AWREADY;
+  assign M_AXI_wvalid = m01_couplers_to_m01_couplers_WVALID;
+  assign S_AXI_arready = m01_couplers_to_m01_couplers_ARREADY;
+  assign S_AXI_awready = m01_couplers_to_m01_couplers_AWREADY;
   assign S_AXI_bresp[1:0] = m01_couplers_to_m01_couplers_BRESP;
-  assign S_AXI_bvalid[0] = m01_couplers_to_m01_couplers_BVALID;
+  assign S_AXI_bvalid = m01_couplers_to_m01_couplers_BVALID;
   assign S_AXI_rdata[31:0] = m01_couplers_to_m01_couplers_RDATA;
   assign S_AXI_rresp[1:0] = m01_couplers_to_m01_couplers_RRESP;
-  assign S_AXI_rvalid[0] = m01_couplers_to_m01_couplers_RVALID;
-  assign S_AXI_wready[0] = m01_couplers_to_m01_couplers_WREADY;
+  assign S_AXI_rvalid = m01_couplers_to_m01_couplers_RVALID;
+  assign S_AXI_wready = m01_couplers_to_m01_couplers_WREADY;
   assign m01_couplers_to_m01_couplers_ARADDR = S_AXI_araddr[31:0];
-  assign m01_couplers_to_m01_couplers_ARREADY = M_AXI_arready[0];
-  assign m01_couplers_to_m01_couplers_ARVALID = S_AXI_arvalid[0];
+  assign m01_couplers_to_m01_couplers_ARREADY = M_AXI_arready;
+  assign m01_couplers_to_m01_couplers_ARVALID = S_AXI_arvalid;
   assign m01_couplers_to_m01_couplers_AWADDR = S_AXI_awaddr[31:0];
-  assign m01_couplers_to_m01_couplers_AWREADY = M_AXI_awready[0];
-  assign m01_couplers_to_m01_couplers_AWVALID = S_AXI_awvalid[0];
-  assign m01_couplers_to_m01_couplers_BREADY = S_AXI_bready[0];
+  assign m01_couplers_to_m01_couplers_AWREADY = M_AXI_awready;
+  assign m01_couplers_to_m01_couplers_AWVALID = S_AXI_awvalid;
+  assign m01_couplers_to_m01_couplers_BREADY = S_AXI_bready;
   assign m01_couplers_to_m01_couplers_BRESP = M_AXI_bresp[1:0];
-  assign m01_couplers_to_m01_couplers_BVALID = M_AXI_bvalid[0];
+  assign m01_couplers_to_m01_couplers_BVALID = M_AXI_bvalid;
   assign m01_couplers_to_m01_couplers_RDATA = M_AXI_rdata[31:0];
-  assign m01_couplers_to_m01_couplers_RREADY = S_AXI_rready[0];
+  assign m01_couplers_to_m01_couplers_RREADY = S_AXI_rready;
   assign m01_couplers_to_m01_couplers_RRESP = M_AXI_rresp[1:0];
-  assign m01_couplers_to_m01_couplers_RVALID = M_AXI_rvalid[0];
+  assign m01_couplers_to_m01_couplers_RVALID = M_AXI_rvalid;
   assign m01_couplers_to_m01_couplers_WDATA = S_AXI_wdata[31:0];
-  assign m01_couplers_to_m01_couplers_WREADY = M_AXI_wready[0];
-  assign m01_couplers_to_m01_couplers_WVALID = S_AXI_wvalid[0];
+  assign m01_couplers_to_m01_couplers_WREADY = M_AXI_wready;
+  assign m01_couplers_to_m01_couplers_WVALID = S_AXI_wvalid;
 endmodule
 
 module m02_couplers_imp_14WQB4R

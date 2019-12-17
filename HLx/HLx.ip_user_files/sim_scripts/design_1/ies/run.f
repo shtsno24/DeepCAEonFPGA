@@ -29,38 +29,8 @@
 -makelib ies_lib/xil_defaultlib \
   "../../../bd/design_1/ip/design_1_processing_system7_0_0/sim/design_1_processing_system7_0_0.v" \
 -endlib
--makelib ies_lib/lib_pkg_v1_0_2 \
-  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/0513/hdl/lib_pkg_v1_0_rfs.vhd" \
--endlib
--makelib ies_lib/fifo_generator_v13_2_3 \
-  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/64f4/simulation/fifo_generator_vlog_beh.v" \
--endlib
--makelib ies_lib/fifo_generator_v13_2_3 \
-  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/64f4/hdl/fifo_generator_v13_2_rfs.vhd" \
--endlib
--makelib ies_lib/fifo_generator_v13_2_3 \
-  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/64f4/hdl/fifo_generator_v13_2_rfs.v" \
--endlib
--makelib ies_lib/lib_fifo_v1_0_12 \
-  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/544a/hdl/lib_fifo_v1_0_rfs.vhd" \
--endlib
--makelib ies_lib/lib_srl_fifo_v1_0_2 \
-  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd" \
--endlib
 -makelib ies_lib/lib_cdc_v1_0_2 \
   "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd" \
--endlib
--makelib ies_lib/axi_datamover_v5_1_20 \
-  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/dfb3/hdl/axi_datamover_v5_1_vh_rfs.vhd" \
--endlib
--makelib ies_lib/axi_sg_v4_1_11 \
-  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/efa7/hdl/axi_sg_v4_1_rfs.vhd" \
--endlib
--makelib ies_lib/axi_dma_v7_1_19 \
-  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/09b0/hdl/axi_dma_v7_1_vh_rfs.vhd" \
--endlib
--makelib ies_lib/xil_defaultlib \
-  "../../../bd/design_1/ip/design_1_axi_dma_0_1/sim/design_1_axi_dma_0_1.vhd" \
 -endlib
 -makelib ies_lib/proc_sys_reset_v5_0_13 \
   "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd" \
@@ -73,6 +43,15 @@
 -endlib
 -makelib ies_lib/axi_register_slice_v2_1_18 \
   "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/cc23/hdl/axi_register_slice_v2_1_vl_rfs.v" \
+-endlib
+-makelib ies_lib/fifo_generator_v13_2_3 \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/64f4/simulation/fifo_generator_vlog_beh.v" \
+-endlib
+-makelib ies_lib/fifo_generator_v13_2_3 \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/64f4/hdl/fifo_generator_v13_2_rfs.vhd" \
+-endlib
+-makelib ies_lib/fifo_generator_v13_2_3 \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/64f4/hdl/fifo_generator_v13_2_rfs.v" \
 -endlib
 -makelib ies_lib/axi_data_fifo_v2_1_17 \
   "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/c4fd/hdl/axi_data_fifo_v2_1_vl_rfs.v" \
@@ -161,11 +140,6 @@
 -endlib
 -makelib ies_lib/xil_defaultlib \
   "../../../bd/design_1/ip/design_1_axi_smc_0/sim/design_1_axi_smc_0.v" \
--endlib
--makelib ies_lib/xil_defaultlib \
-  "../../../bd/design_1/ip/design_1_axi_dma_in_0/sim/design_1_axi_dma_in_0.vhd" \
--endlib
--makelib ies_lib/xil_defaultlib \
   "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/805e/hdl/verilog/depthwise_conv2d_fix.v" \
   "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/805e/hdl/verilog/depthwise_conv2d_fix_1.v" \
   "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/805e/hdl/verilog/depthwise_conv2d_fix_2.v" \
@@ -208,6 +182,28 @@
 -endlib
 -makelib ies_lib/xil_defaultlib \
   "../../../bd/design_1/ip/design_1_auto_pc_0/sim/design_1_auto_pc_0.v" \
+-endlib
+-makelib ies_lib/lib_pkg_v1_0_2 \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/0513/hdl/lib_pkg_v1_0_rfs.vhd" \
+-endlib
+-makelib ies_lib/lib_fifo_v1_0_12 \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/544a/hdl/lib_fifo_v1_0_rfs.vhd" \
+-endlib
+-makelib ies_lib/lib_srl_fifo_v1_0_2 \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd" \
+-endlib
+-makelib ies_lib/axi_datamover_v5_1_20 \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/dfb3/hdl/axi_datamover_v5_1_vh_rfs.vhd" \
+-endlib
+-makelib ies_lib/axi_sg_v4_1_11 \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/efa7/hdl/axi_sg_v4_1_rfs.vhd" \
+-endlib
+-makelib ies_lib/axi_dma_v7_1_19 \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/09b0/hdl/axi_dma_v7_1_vh_rfs.vhd" \
+-endlib
+-makelib ies_lib/xil_defaultlib \
+  "../../../bd/design_1/ip/design_1_axi_dma_0_0/sim/design_1_axi_dma_0_0.vhd" \
+  "../../../bd/design_1/ip/design_1_axi_dma_0_2/sim/design_1_axi_dma_0_2.vhd" \
 -endlib
 -makelib ies_lib/xil_defaultlib \
   glbl.v
