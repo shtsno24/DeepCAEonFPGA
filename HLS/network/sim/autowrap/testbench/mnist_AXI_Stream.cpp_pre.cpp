@@ -75909,7 +75909,7 @@ template<int D>
 
 using namespace std;
 
-typedef hls::stream< ap_axis<16, 1, 1, 1> > axis;
+typedef hls::stream< ap_axis<32, 1, 1, 1> > axis;
 
 int network(axis &input_data, axis &output_data) {
 #pragma HLS INTERFACE axis register both port=input_data
@@ -75924,8 +75924,8 @@ int network(axis &input_data, axis &output_data) {
  uint64_t array_length = (uint64_t)SeparableConv2D_4_depth * SeparableConv2D_4_height * SeparableConv2D_4_width;
 
 
- ap_axis<16, 1, 1, 1> tmp;
- ap_axis<16, 1, 1, 1> out;
+ ap_axis<32, 1, 1, 1> tmp;
+ ap_axis<32, 1, 1, 1> out;
 
  for(int i = 0; i < input_0_depth * input_0_height * input_0_width; i++){
   input_data >> tmp;
@@ -76050,13 +76050,13 @@ int main(void){
 #pragma HLS reset variable=output_buffer
 
     int16_t output_img_buff[1 * 28 * 28];
-    ap_axis<16, 1, 1, 1> tmp;
+    ap_axis<32, 1, 1, 1> tmp;
 
  int i = 0;
  for(int depth = 0; depth < 1; depth++){
   for(int height = 0; height < 28; height++){
    for(int width = 0; width < 28; width++){
-    tmp.data = (int16_t)test_input_fix16[depth][height][width];
+    tmp.data = (int32_t)test_input_fix16[depth][height][width];
 
     if(depth == 0 && height == 0 && width == 0){
      tmp.user = 1;

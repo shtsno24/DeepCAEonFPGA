@@ -1,5 +1,5 @@
 // ==============================================================
-// File generated on Tue Dec 17 15:49:36 JST 2019
+// File generated on Tue Dec 17 16:29:17 JST 2019
 // Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3.1 (64-bit)
 // SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
 // IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
@@ -142,20 +142,20 @@ wire  AXILiteS_BVALID;
 wire  AXILiteS_BREADY;
 wire [1 : 0] AXILiteS_BRESP;
 wire  AXILiteS_INTERRUPT;
-wire [15 : 0] input_data_TDATA;
+wire [31 : 0] input_data_TDATA;
 wire  input_data_TVALID;
 wire  input_data_TREADY;
-wire [1 : 0] input_data_TKEEP;
-wire [1 : 0] input_data_TSTRB;
+wire [3 : 0] input_data_TKEEP;
+wire [3 : 0] input_data_TSTRB;
 wire [0 : 0] input_data_TUSER;
 wire [0 : 0] input_data_TLAST;
 wire [0 : 0] input_data_TID;
 wire [0 : 0] input_data_TDEST;
-wire [15 : 0] output_data_TDATA;
+wire [31 : 0] output_data_TDATA;
 wire  output_data_TVALID;
 wire  output_data_TREADY;
-wire [1 : 0] output_data_TKEEP;
-wire [1 : 0] output_data_TSTRB;
+wire [3 : 0] output_data_TKEEP;
+wire [3 : 0] output_data_TSTRB;
 wire [0 : 0] output_data_TUSER;
 wire [0 : 0] output_data_TLAST;
 wire [0 : 0] output_data_TID;

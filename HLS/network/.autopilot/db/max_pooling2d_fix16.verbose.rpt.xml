@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'max_pooling2d_fix16'" level="0">
-<item name = "Date">Tue Dec 17 15:43:22 2019
+<item name = "Date">Tue Dec 17 16:26:11 2019
 </item>
 <item name = "Version">2018.3.1 (Build 2489210 on Tue Mar 26 04:40:43 MDT 2019)</item>
 <item name = "Project">HLS</item>
@@ -102,11 +102,11 @@
 <column name="exitcond4_fu_270_p2">icmp, 0, 0, 11, 5, 5</column>
 <column name="exitcond5_fu_255_p2">icmp, 0, 0, 11, 6, 6</column>
 <column name="exitcond_fu_395_p2">icmp, 0, 0, 9, 2, 3</column>
-<column name="tmp_60_fu_435_p2">icmp, 0, 0, 13, 16, 16</column>
+<column name="tmp_61_fu_435_p2">icmp, 0, 0, 13, 16, 16</column>
 <column name="or_cond6_fu_440_p2">or, 0, 0, 2, 1, 1</column>
-<column name="tmp_58_fu_425_p2">or, 0, 0, 2, 1, 1</column>
+<column name="tmp_59_fu_425_p2">or, 0, 0, 2, 1, 1</column>
 <column name="buffer_5_fu_446_p3">select, 0, 0, 16, 1, 16</column>
-<column name="tmp_59_fu_429_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="tmp_60_fu_429_p2">xor, 0, 0, 2, 1, 2</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
@@ -145,12 +145,12 @@
 <column name="tmp_55_reg_576">1, 0, 1, 0</column>
 <column name="tmp_56_reg_589">14, 0, 14, 0</column>
 <column name="tmp_62_reg_599">16, 0, 16, 0</column>
-<column name="tmp_69_cast_reg_484">7, 0, 14, 7</column>
-<column name="tmp_70_cast_reg_489">6, 0, 8, 2</column>
-<column name="tmp_71_cast_reg_494">6, 0, 12, 6</column>
-<column name="tmp_76_cast_reg_525">4, 0, 9, 5</column>
-<column name="tmp_78_cast1_reg_543">4, 0, 12, 8</column>
-<column name="tmp_79_cast_reg_548">4, 0, 14, 10</column>
+<column name="tmp_70_cast_reg_484">7, 0, 14, 7</column>
+<column name="tmp_71_cast_reg_489">6, 0, 8, 2</column>
+<column name="tmp_72_cast_reg_494">6, 0, 12, 6</column>
+<column name="tmp_77_cast_reg_525">4, 0, 9, 5</column>
+<column name="tmp_79_cast1_reg_543">4, 0, 12, 8</column>
+<column name="tmp_80_cast_reg_548">4, 0, 14, 10</column>
 <column name="tmp_cast_reg_479">7, 0, 9, 2</column>
 <column name="tmp_reg_566">9, 0, 9, 0</column>
 </table>

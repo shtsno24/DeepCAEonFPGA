@@ -208,8 +208,8 @@ Compiling module xil_defaultlib.pointwise_conv2d_fix_SeparableCo...
 Compiling module xil_defaultlib.pointwise_conv2d_fix_SeparableCo...
 Compiling module xil_defaultlib.pointwise_conv2d_fix
 Compiling module xil_defaultlib.network
-Compiling module xil_defaultlib.fifo(DEPTH=784,WIDTH=16)
-Compiling module xil_defaultlib.fifo(DEPTH=784,WIDTH=2)
+Compiling module xil_defaultlib.fifo(DEPTH=784,WIDTH=32)
+Compiling module xil_defaultlib.fifo(DEPTH=784,WIDTH=4)
 Compiling module xil_defaultlib.fifo(DEPTH=784,WIDTH=1)
 Compiling module xil_defaultlib.AESL_axi_s_input_data
 Compiling module xil_defaultlib.AESL_axi_s_output_data
@@ -224,8 +224,8 @@ Built simulation snapshot network
     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 
 source /home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/xsim.dir/network/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-186] '/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/xsim.dir/network/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Dec 17 15:49:45 2019. For additional details about this file, please refer to the WebTalk help file at /tools/Xilinx/Vivado/2018.3/doc/webtalk_introduction.html.
-INFO: [Common 17-206] Exiting Webtalk at Tue Dec 17 15:49:45 2019...
+INFO: [Common 17-186] '/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/xsim.dir/network/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Dec 17 16:29:25 2019. For additional details about this file, please refer to the WebTalk help file at /tools/Xilinx/Vivado/2018.3/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Tue Dec 17 16:29:25 2019...
 
 ****** xsim v2018.3.1 (64-bit)
   **** SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
@@ -365,9 +365,9 @@ WARNING: [Simtcl 6-197] One or more HDL objects could not be logged because of o
 // RTL Simulation : 1 / 1 [100.00%] @ "12929036000"
 ////////////////////////////////////////////////////////////////////////////////////
 $finish called at time : 12929068 ns : File "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/network.autotb.v" Line 498
-run: Time (s): cpu = 00:00:25 ; elapsed = 00:01:29 . Memory (MB): peak = 1417.055 ; gain = 8.004 ; free physical = 2658 ; free virtual = 10371
+run: Time (s): cpu = 00:00:25 ; elapsed = 00:01:31 . Memory (MB): peak = 1417.055 ; gain = 8.004 ; free physical = 2513 ; free virtual = 9956
 ## quit
-INFO: [Common 17-206] Exiting xsim at Tue Dec 17 15:51:24 2019...
+INFO: [Common 17-206] Exiting xsim at Tue Dec 17 16:31:06 2019...
 
 output_buffer_length : 0
 

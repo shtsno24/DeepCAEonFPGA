@@ -195,7 +195,7 @@
       "ctype": {
         "TDATA": {
           "Type": "integer signed",
-          "Width": "16"
+          "Width": "32"
         },
         "TVALID": {"Type": "bool"},
         "TREADY": {"Type": "bool"},
@@ -205,11 +205,11 @@
         },
         "TKEEP": {
           "Type": "integer unsigned",
-          "Width": "2"
+          "Width": "4"
         },
         "TSTRB": {
           "Type": "integer unsigned",
-          "Width": "2"
+          "Width": "4"
         },
         "TUSER": {
           "Type": "integer unsigned",
@@ -225,12 +225,12 @@
         }
       },
       "port_width": {
-        "TDATA": "16",
+        "TDATA": "32",
         "TDEST": "1",
         "TID": "1",
-        "TKEEP": "2",
+        "TKEEP": "4",
         "TLAST": "1",
-        "TSTRB": "2",
+        "TSTRB": "4",
         "TUSER": "1"
       }
     },
@@ -246,7 +246,7 @@
       "ctype": {
         "TDATA": {
           "Type": "integer signed",
-          "Width": "16"
+          "Width": "32"
         },
         "TREADY": {"Type": "bool"},
         "TVALID": {"Type": "bool"},
@@ -256,11 +256,11 @@
         },
         "TKEEP": {
           "Type": "integer unsigned",
-          "Width": "2"
+          "Width": "4"
         },
         "TSTRB": {
           "Type": "integer unsigned",
-          "Width": "2"
+          "Width": "4"
         },
         "TUSER": {
           "Type": "integer unsigned",
@@ -276,12 +276,12 @@
         }
       },
       "port_width": {
-        "TDATA": "16",
+        "TDATA": "32",
         "TDEST": "1",
         "TID": "1",
-        "TKEEP": "2",
+        "TKEEP": "4",
         "TLAST": "1",
-        "TSTRB": "2",
+        "TSTRB": "4",
         "TUSER": "1"
       }
     },
@@ -600,7 +600,7 @@
     },
     "input_data_TDATA": {
       "dir": "in",
-      "width": "16"
+      "width": "32"
     },
     "input_data_TVALID": {
       "dir": "in",
@@ -617,11 +617,11 @@
     },
     "input_data_TKEEP": {
       "dir": "in",
-      "width": "2"
+      "width": "4"
     },
     "input_data_TSTRB": {
       "dir": "in",
-      "width": "2"
+      "width": "4"
     },
     "input_data_TUSER": {
       "dir": "in",
@@ -640,7 +640,7 @@
     },
     "output_data_TDATA": {
       "dir": "out",
-      "width": "16"
+      "width": "32"
     },
     "output_data_TREADY": {
       "dir": "in",
@@ -657,11 +657,11 @@
     },
     "output_data_TKEEP": {
       "dir": "out",
-      "width": "2"
+      "width": "4"
     },
     "output_data_TSTRB": {
       "dir": "out",
-      "width": "2"
+      "width": "4"
     },
     "output_data_TUSER": {
       "dir": "out",
@@ -761,47 +761,47 @@
       "Instances": [
         {
           "ModuleName": "padding2d_fix16",
-          "InstanceName": "grp_padding2d_fix16_fu_14387"
+          "InstanceName": "grp_padding2d_fix16_fu_14386"
         },
         {
           "ModuleName": "depthwise_conv2d_fix_2",
-          "InstanceName": "grp_depthwise_conv2d_fix_2_fu_14405"
+          "InstanceName": "grp_depthwise_conv2d_fix_2_fu_14404"
         },
         {
           "ModuleName": "depthwise_conv2d_fix_1",
-          "InstanceName": "grp_depthwise_conv2d_fix_1_fu_14429"
+          "InstanceName": "grp_depthwise_conv2d_fix_1_fu_14428"
         },
         {
           "ModuleName": "max_pooling2d_fix16",
-          "InstanceName": "grp_max_pooling2d_fix16_fu_14453"
+          "InstanceName": "grp_max_pooling2d_fix16_fu_14452"
         },
         {
           "ModuleName": "pointwise_conv2d_fix_3",
-          "InstanceName": "grp_pointwise_conv2d_fix_3_fu_14474"
+          "InstanceName": "grp_pointwise_conv2d_fix_3_fu_14473"
         },
         {
           "ModuleName": "pointwise_conv2d_fix_1",
-          "InstanceName": "grp_pointwise_conv2d_fix_1_fu_14484"
+          "InstanceName": "grp_pointwise_conv2d_fix_1_fu_14483"
         },
         {
           "ModuleName": "pointwise_conv2d_fix_2",
-          "InstanceName": "grp_pointwise_conv2d_fix_2_fu_14494"
+          "InstanceName": "grp_pointwise_conv2d_fix_2_fu_14493"
         },
         {
           "ModuleName": "up_sampling2d_fix16",
-          "InstanceName": "grp_up_sampling2d_fix16_fu_14504"
+          "InstanceName": "grp_up_sampling2d_fix16_fu_14503"
         },
         {
           "ModuleName": "depthwise_conv2d_fix",
-          "InstanceName": "grp_depthwise_conv2d_fix_fu_14525"
+          "InstanceName": "grp_depthwise_conv2d_fix_fu_14524"
         },
         {
           "ModuleName": "pointwise_conv2d_fix_4",
-          "InstanceName": "grp_pointwise_conv2d_fix_4_fu_14533"
+          "InstanceName": "grp_pointwise_conv2d_fix_4_fu_14532"
         },
         {
           "ModuleName": "pointwise_conv2d_fix",
-          "InstanceName": "grp_pointwise_conv2d_fix_fu_14541"
+          "InstanceName": "grp_pointwise_conv2d_fix_fu_14540"
         }
       ]
     },
@@ -1462,7 +1462,7 @@
         "Area": {
           "BRAM_18K": "39",
           "DSP48E": "8",
-          "FF": "3583",
+          "FF": "3647",
           "LUT": "14902"
         }
       }
@@ -1478,7 +1478,7 @@
   },
   "GenData": {
     "DataVersion": "0.1",
-    "Time": "2019-12-17 15:43:32 JST",
+    "Time": "2019-12-17 16:26:21 JST",
     "ToolName": "vivado_hls",
     "ToolVersion": "2018.3.1"
   }

@@ -574,7 +574,7 @@
             <Obj>
               <type>0</type>
               <id>20</id>
-              <name>tmp_69_cast</name>
+              <name>tmp_70_cast</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -584,7 +584,7 @@
                 <item_version>0</item_version>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_69_cast_fu_229_p1</rtlName>
+              <rtlName>tmp_70_cast_fu_229_p1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>14</bitwidth>
@@ -608,7 +608,7 @@
             <Obj>
               <type>0</type>
               <id>21</id>
-              <name>tmp_70_cast</name>
+              <name>tmp_71_cast</name>
               <fileName>layers_c/max_pooling2d.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>32</lineNumber>
@@ -632,7 +632,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_70_cast_fu_233_p1</rtlName>
+              <rtlName>tmp_71_cast_fu_233_p1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -656,7 +656,7 @@
             <Obj>
               <type>0</type>
               <id>22</id>
-              <name>tmp_71_cast</name>
+              <name>tmp_72_cast</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -666,7 +666,7 @@
                 <item_version>0</item_version>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_71_cast_fu_237_p1</rtlName>
+              <rtlName>tmp_72_cast_fu_237_p1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>12</bitwidth>
@@ -1452,7 +1452,7 @@
             <Obj>
               <type>0</type>
               <id>45</id>
-              <name>tmp_75_cast1</name>
+              <name>tmp_76_cast1</name>
               <fileName>layers_c/max_pooling2d.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>26</lineNumber>
@@ -1476,7 +1476,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_75_cast1_fu_281_p1</rtlName>
+              <rtlName>tmp_76_cast1_fu_281_p1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -1550,7 +1550,7 @@
             <Obj>
               <type>0</type>
               <id>47</id>
-              <name>tmp_76_cast</name>
+              <name>tmp_77_cast</name>
               <fileName>layers_c/max_pooling2d.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>26</lineNumber>
@@ -1574,7 +1574,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_76_cast_fu_293_p1</rtlName>
+              <rtlName>tmp_77_cast_fu_293_p1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>9</bitwidth>
@@ -2025,7 +2025,7 @@
             <Obj>
               <type>0</type>
               <id>60</id>
-              <name>tmp_78_cast1</name>
+              <name>tmp_79_cast1</name>
               <fileName>layers_c/max_pooling2d.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>26</lineNumber>
@@ -2049,7 +2049,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_78_cast1_fu_327_p1</rtlName>
+              <rtlName>tmp_79_cast1_fu_327_p1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>12</bitwidth>
@@ -2123,7 +2123,7 @@
             <Obj>
               <type>0</type>
               <id>62</id>
-              <name>tmp_79_cast</name>
+              <name>tmp_80_cast</name>
               <fileName>layers_c/max_pooling2d.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>26</lineNumber>
@@ -2147,7 +2147,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_79_cast_fu_339_p1</rtlName>
+              <rtlName>tmp_80_cast_fu_339_p1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>14</bitwidth>
@@ -2452,7 +2452,7 @@
             <Obj>
               <type>0</type>
               <id>72</id>
-              <name>tmp_82_cast</name>
+              <name>tmp_83_cast</name>
               <fileName>layers_c/max_pooling2d.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>22</lineNumber>
@@ -2476,7 +2476,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_82_cast_fu_359_p1</rtlName>
+              <rtlName>tmp_83_cast_fu_359_p1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>9</bitwidth>
@@ -3024,7 +3024,7 @@
             <Obj>
               <type>0</type>
               <id>87</id>
-              <name>tmp_83_cast</name>
+              <name>tmp_84_cast</name>
               <fileName>layers_c/max_pooling2d.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>26</lineNumber>
@@ -3048,7 +3048,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_83_cast_fu_407_p1</rtlName>
+              <rtlName>tmp_84_cast_fu_407_p1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>14</bitwidth>
@@ -3316,55 +3316,6 @@
             <Obj>
               <type>0</type>
               <id>93</id>
-              <name>tmp_58</name>
-              <fileName>layers_c/max_pooling2d.cpp</fileName>
-              <fileDirectory>..</fileDirectory>
-              <lineNumber>27</lineNumber>
-              <contextFuncName>max_pooling2d_fix16</contextFuncName>
-              <inlineStackInfo>
-                <count>1</count>
-                <item_version>0</item_version>
-                <item>
-                  <first>/home/masudalab/DeepCAEonFPGA</first>
-                  <second>
-                    <count>1</count>
-                    <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>layers_c/max_pooling2d.cpp</first>
-                        <second>max_pooling2d_fix16</second>
-                      </first>
-                      <second>27</second>
-                    </item>
-                  </second>
-                </item>
-              </inlineStackInfo>
-              <originalName/>
-              <rtlName>tmp_58_fu_425_p2</rtlName>
-              <coreName/>
-            </Obj>
-            <bitwidth>1</bitwidth>
-          </Value>
-          <oprand_edges>
-            <count>2</count>
-            <item_version>0</item_version>
-            <item>264</item>
-            <item>265</item>
-          </oprand_edges>
-          <opcode>or</opcode>
-          <m_Display>0</m_Display>
-          <m_isOnCriticalPath>0</m_isOnCriticalPath>
-          <m_isLCDNode>0</m_isLCDNode>
-          <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>0.00</m_delay>
-          <m_topoIndex>79</m_topoIndex>
-          <m_clusterGroupNumber>1</m_clusterGroupNumber>
-        </item>
-        <item class_id_reference="9" object_id="_77">
-          <Value>
-            <Obj>
-              <type>0</type>
-              <id>94</id>
               <name>tmp_59</name>
               <fileName>layers_c/max_pooling2d.cpp</fileName>
               <fileDirectory>..</fileDirectory>
@@ -3389,7 +3340,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_59_fu_429_p2</rtlName>
+              <rtlName>tmp_59_fu_425_p2</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -3397,23 +3348,23 @@
           <oprand_edges>
             <count>2</count>
             <item_version>0</item_version>
-            <item>266</item>
-            <item>268</item>
+            <item>264</item>
+            <item>265</item>
           </oprand_edges>
-          <opcode>xor</opcode>
+          <opcode>or</opcode>
           <m_Display>0</m_Display>
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
           <m_delay>0.00</m_delay>
-          <m_topoIndex>80</m_topoIndex>
+          <m_topoIndex>79</m_topoIndex>
           <m_clusterGroupNumber>1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_78">
+        <item class_id_reference="9" object_id="_77">
           <Value>
             <Obj>
               <type>0</type>
-              <id>95</id>
+              <id>94</id>
               <name>tmp_60</name>
               <fileName>layers_c/max_pooling2d.cpp</fileName>
               <fileDirectory>..</fileDirectory>
@@ -3438,7 +3389,56 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_60_fu_435_p2</rtlName>
+              <rtlName>tmp_60_fu_429_p2</rtlName>
+              <coreName/>
+            </Obj>
+            <bitwidth>1</bitwidth>
+          </Value>
+          <oprand_edges>
+            <count>2</count>
+            <item_version>0</item_version>
+            <item>266</item>
+            <item>268</item>
+          </oprand_edges>
+          <opcode>xor</opcode>
+          <m_Display>0</m_Display>
+          <m_isOnCriticalPath>0</m_isOnCriticalPath>
+          <m_isLCDNode>0</m_isLCDNode>
+          <m_isStartOfPath>0</m_isStartOfPath>
+          <m_delay>0.00</m_delay>
+          <m_topoIndex>80</m_topoIndex>
+          <m_clusterGroupNumber>1</m_clusterGroupNumber>
+        </item>
+        <item class_id_reference="9" object_id="_78">
+          <Value>
+            <Obj>
+              <type>0</type>
+              <id>95</id>
+              <name>tmp_61</name>
+              <fileName>layers_c/max_pooling2d.cpp</fileName>
+              <fileDirectory>..</fileDirectory>
+              <lineNumber>27</lineNumber>
+              <contextFuncName>max_pooling2d_fix16</contextFuncName>
+              <inlineStackInfo>
+                <count>1</count>
+                <item_version>0</item_version>
+                <item>
+                  <first>/home/masudalab/DeepCAEonFPGA</first>
+                  <second>
+                    <count>1</count>
+                    <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>layers_c/max_pooling2d.cpp</first>
+                        <second>max_pooling2d_fix16</second>
+                      </first>
+                      <second>27</second>
+                    </item>
+                  </second>
+                </item>
+              </inlineStackInfo>
+              <originalName/>
+              <rtlName>tmp_61_fu_435_p2</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -7715,7 +7715,7 @@
           </second>
         </item>
         <item>
-          <first>tmp_58_fu_425_p2 ( or ) </first>
+          <first>tmp_59_fu_425_p2 ( or ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -7738,7 +7738,7 @@
           </second>
         </item>
         <item>
-          <first>tmp_59_fu_429_p2 ( xor ) </first>
+          <first>tmp_60_fu_429_p2 ( xor ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -7761,7 +7761,7 @@
           </second>
         </item>
         <item>
-          <first>tmp_60_fu_435_p2 ( icmp ) </first>
+          <first>tmp_61_fu_435_p2 ( icmp ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -8425,7 +8425,7 @@
           </second>
         </item>
         <item>
-          <first>tmp_69_cast_reg_484</first>
+          <first>tmp_70_cast_reg_484</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -8444,7 +8444,7 @@
           </second>
         </item>
         <item>
-          <first>tmp_70_cast_reg_489</first>
+          <first>tmp_71_cast_reg_489</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -8463,7 +8463,7 @@
           </second>
         </item>
         <item>
-          <first>tmp_71_cast_reg_494</first>
+          <first>tmp_72_cast_reg_494</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -8482,7 +8482,7 @@
           </second>
         </item>
         <item>
-          <first>tmp_76_cast_reg_525</first>
+          <first>tmp_77_cast_reg_525</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -8501,7 +8501,7 @@
           </second>
         </item>
         <item>
-          <first>tmp_78_cast1_reg_543</first>
+          <first>tmp_79_cast1_reg_543</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -8520,7 +8520,7 @@
           </second>
         </item>
         <item>
-          <first>tmp_79_cast_reg_548</first>
+          <first>tmp_80_cast_reg_548</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -8757,7 +8757,7 @@
           </second>
         </item>
         <item>
-          <first>tmp_58_fu_425_p2 ( or ) </first>
+          <first>tmp_59_fu_425_p2 ( or ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -8765,7 +8765,7 @@
           </second>
         </item>
         <item>
-          <first>tmp_59_fu_429_p2 ( xor ) </first>
+          <first>tmp_60_fu_429_p2 ( xor ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -8773,7 +8773,7 @@
           </second>
         </item>
         <item>
-          <first>tmp_60_fu_435_p2 ( icmp ) </first>
+          <first>tmp_61_fu_435_p2 ( icmp ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -10415,7 +10415,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_58_fu_425</first>
+        <first>tmp_59_fu_425</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10423,7 +10423,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_59_fu_429</first>
+        <first>tmp_60_fu_429</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10431,7 +10431,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_60_fu_435</first>
+        <first>tmp_61_fu_435</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10439,7 +10439,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_69_cast_fu_229</first>
+        <first>tmp_70_cast_fu_229</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10447,7 +10447,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_70_cast_fu_233</first>
+        <first>tmp_71_cast_fu_233</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10455,7 +10455,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_71_cast_fu_237</first>
+        <first>tmp_72_cast_fu_237</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10463,7 +10463,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_75_cast1_fu_281</first>
+        <first>tmp_76_cast1_fu_281</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10471,7 +10471,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_76_cast_fu_293</first>
+        <first>tmp_77_cast_fu_293</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10479,7 +10479,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_78_cast1_fu_327</first>
+        <first>tmp_79_cast1_fu_327</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10487,7 +10487,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_79_cast_fu_339</first>
+        <first>tmp_80_cast_fu_339</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10495,7 +10495,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_82_cast_fu_359</first>
+        <first>tmp_83_cast_fu_359</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10503,7 +10503,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_83_cast_fu_407</first>
+        <first>tmp_84_cast_fu_407</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -11111,7 +11111,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_69_cast_reg_484</first>
+        <first>tmp_70_cast_reg_484</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -11119,7 +11119,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_70_cast_reg_489</first>
+        <first>tmp_71_cast_reg_489</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -11127,7 +11127,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_71_cast_reg_494</first>
+        <first>tmp_72_cast_reg_494</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -11135,7 +11135,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_76_cast_reg_525</first>
+        <first>tmp_77_cast_reg_525</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -11143,7 +11143,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_78_cast1_reg_543</first>
+        <first>tmp_79_cast1_reg_543</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -11151,7 +11151,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_79_cast_reg_548</first>
+        <first>tmp_80_cast_reg_548</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'depthwise_conv2d_fix_1'" level="0">
-<item name = "Date">Tue Dec 17 15:43:23 2019
+<item name = "Date">Tue Dec 17 16:26:11 2019
 </item>
 <item name = "Version">2018.3.1 (Build 2489210 on Tue Mar 26 04:40:43 MDT 2019)</item>
 <item name = "Project">HLS</item>
@@ -98,11 +98,11 @@
 <column name="tmp5_fu_446_p2">+, 0, 0, 13, 4, 4</column>
 <column name="tmp6_fu_408_p2">+, 0, 0, 15, 8, 8</column>
 <column name="tmp7_fu_461_p2">+, 0, 0, 13, 4, 4</column>
-<column name="tmp_70_fu_413_p2">+, 0, 0, 13, 11, 11</column>
-<column name="tmp_74_fu_456_p2">+, 0, 0, 13, 11, 11</column>
-<column name="tmp_76_fu_471_p2">+, 0, 0, 15, 8, 8</column>
+<column name="tmp_72_fu_413_p2">+, 0, 0, 13, 11, 11</column>
+<column name="tmp_75_fu_456_p2">+, 0, 0, 13, 11, 11</column>
+<column name="tmp_77_fu_471_p2">+, 0, 0, 15, 8, 8</column>
 <column name="tmp_fu_402_p2">+, 0, 0, 15, 7, 7</column>
-<column name="tmp_72_fu_382_p2">-, 0, 0, 15, 5, 5</column>
+<column name="tmp_74_fu_382_p2">-, 0, 0, 15, 5, 5</column>
 <column name="exitcond1_fu_350_p2">icmp, 0, 0, 8, 2, 2</column>
 <column name="exitcond2_fu_335_p2">icmp, 0, 0, 11, 5, 5</column>
 <column name="exitcond3_fu_301_p2">icmp, 0, 0, 11, 5, 5</column>
@@ -150,13 +150,13 @@
 <column name="tmp1_reg_622">11, 0, 11, 0</column>
 <column name="tmp3_reg_581">11, 0, 11, 0</column>
 <column name="tmp6_reg_617">8, 0, 8, 0</column>
-<column name="tmp_104_cast_reg_599">4, 0, 11, 7</column>
-<column name="tmp_74_reg_635">11, 0, 11, 0</column>
-<column name="tmp_76_reg_640">8, 0, 8, 0</column>
-<column name="tmp_78_reg_665">30, 0, 30, 0</column>
-<column name="tmp_95_cast_reg_530">6, 0, 11, 5</column>
-<column name="tmp_96_cast_reg_535">5, 0, 7, 2</column>
-<column name="tmp_97_cast_reg_540">5, 0, 11, 6</column>
+<column name="tmp_105_cast_reg_599">4, 0, 11, 7</column>
+<column name="tmp_75_reg_635">11, 0, 11, 0</column>
+<column name="tmp_77_reg_640">8, 0, 8, 0</column>
+<column name="tmp_79_reg_665">30, 0, 30, 0</column>
+<column name="tmp_96_cast_reg_530">6, 0, 11, 5</column>
+<column name="tmp_97_cast_reg_535">5, 0, 7, 2</column>
+<column name="tmp_98_cast_reg_540">5, 0, 11, 6</column>
 <column name="tmp_cast_reg_525">6, 0, 7, 1</column>
 <column name="tmp_reg_612">7, 0, 7, 0</column>
 </table>

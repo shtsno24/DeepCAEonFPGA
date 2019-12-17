@@ -170,8 +170,8 @@ Compiling module xil_defaultlib.pointwise_conv2d_fix_SeparableCo...
 Compiling module xil_defaultlib.pointwise_conv2d_fix_SeparableCo...
 Compiling module xil_defaultlib.pointwise_conv2d_fix
 Compiling module xil_defaultlib.network
-Compiling module xil_defaultlib.fifo(DEPTH=784,WIDTH=16)
-Compiling module xil_defaultlib.fifo(DEPTH=784,WIDTH=2)
+Compiling module xil_defaultlib.fifo(DEPTH=784,WIDTH=32)
+Compiling module xil_defaultlib.fifo(DEPTH=784,WIDTH=4)
 Compiling module xil_defaultlib.fifo(DEPTH=784,WIDTH=1)
 Compiling module xil_defaultlib.AESL_axi_s_input_data
 Compiling module xil_defaultlib.AESL_axi_s_output_data
