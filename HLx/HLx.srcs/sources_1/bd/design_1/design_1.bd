@@ -1730,7 +1730,7 @@
         "xci_name": "design_1_axi_dma_0_1",
         "parameters": {
           "c_addr_width": {
-            "value": "32"
+            "value": "64"
           },
           "c_include_mm2s_dre": {
             "value": "0"
@@ -1751,7 +1751,7 @@
             "value": "0"
           },
           "c_mm2s_burst_size": {
-            "value": "8"
+            "value": "16"
           },
           "c_sg_length_width": {
             "value": "26"
@@ -2209,22 +2209,16 @@
           }
         },
         "interface_nets": {
-          "ps7_0_axi_periph_to_s00_couplers": {
+          "xbar_to_m03_couplers": {
             "interface_ports": [
-              "S00_AXI",
-              "s00_couplers/S_AXI"
+              "xbar/M03_AXI",
+              "m03_couplers/S_AXI"
             ]
           },
-          "m01_couplers_to_ps7_0_axi_periph": {
+          "xbar_to_m00_couplers": {
             "interface_ports": [
-              "M01_AXI",
-              "m01_couplers/M_AXI"
-            ]
-          },
-          "m03_couplers_to_ps7_0_axi_periph": {
-            "interface_ports": [
-              "M03_AXI",
-              "m03_couplers/M_AXI"
+              "xbar/M00_AXI",
+              "m00_couplers/S_AXI"
             ]
           },
           "m00_couplers_to_ps7_0_axi_periph": {
@@ -2239,16 +2233,22 @@
               "xbar/S00_AXI"
             ]
           },
-          "xbar_to_m00_couplers": {
+          "xbar_to_m01_couplers": {
             "interface_ports": [
-              "xbar/M00_AXI",
-              "m00_couplers/S_AXI"
+              "xbar/M01_AXI",
+              "m01_couplers/S_AXI"
             ]
           },
-          "xbar_to_m03_couplers": {
+          "m03_couplers_to_ps7_0_axi_periph": {
             "interface_ports": [
-              "xbar/M03_AXI",
-              "m03_couplers/S_AXI"
+              "M03_AXI",
+              "m03_couplers/M_AXI"
+            ]
+          },
+          "ps7_0_axi_periph_to_s00_couplers": {
+            "interface_ports": [
+              "S00_AXI",
+              "s00_couplers/S_AXI"
             ]
           },
           "m02_couplers_to_ps7_0_axi_periph": {
@@ -2257,16 +2257,16 @@
               "m02_couplers/M_AXI"
             ]
           },
+          "m01_couplers_to_ps7_0_axi_periph": {
+            "interface_ports": [
+              "M01_AXI",
+              "m01_couplers/M_AXI"
+            ]
+          },
           "xbar_to_m02_couplers": {
             "interface_ports": [
               "xbar/M02_AXI",
               "m02_couplers/S_AXI"
-            ]
-          },
-          "xbar_to_m01_couplers": {
-            "interface_ports": [
-              "xbar/M01_AXI",
-              "m01_couplers/S_AXI"
             ]
           }
         },
@@ -2339,7 +2339,7 @@
         "xci_name": "design_1_axi_dma_in_0",
         "parameters": {
           "c_addr_width": {
-            "value": "32"
+            "value": "64"
           },
           "c_include_mm2s": {
             "value": "0"
@@ -2360,7 +2360,7 @@
             "value": "0"
           },
           "c_s2mm_burst_size": {
-            "value": "8"
+            "value": "16"
           },
           "c_sg_length_width": {
             "value": "26"
@@ -2512,12 +2512,12 @@
       "/axi_dma_in": {
         "address_spaces": {
           "Data_MM2S": {
-            "range": "4G",
+            "range": "16E",
             "width": "32",
             "segments": {
               "SEG_processing_system7_0_HP0_DDR_LOWOCM": {
                 "address_block": "/processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM",
-                "offset": "0x00000000",
+                "offset": "0x0000000000000000",
                 "range": "512M"
               }
             }
@@ -2527,12 +2527,12 @@
       "/axi_dma_out": {
         "address_spaces": {
           "Data_S2MM": {
-            "range": "4G",
+            "range": "16E",
             "width": "32",
             "segments": {
               "SEG_processing_system7_0_HP0_DDR_LOWOCM": {
                 "address_block": "/processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM",
-                "offset": "0x00000000",
+                "offset": "0x0000000000000000",
                 "range": "512M"
               }
             }
