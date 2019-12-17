@@ -3,8 +3,8 @@
 -- Tool Version: Vivado v.2018.3.1 (lin64) Build 2489853 Tue Mar 26 04:18:30 MDT 2019
 -- Date        : Tue Dec 17 20:03:57 2019
 -- Host        : masudalab-ubuntu running 64-bit Ubuntu 18.04.3 LTS
--- Command     : write_vhdl -force -mode synth_stub
---               /home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_xbar_2/design_1_xbar_2_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top design_1_xbar_2 -prefix
+--               design_1_xbar_2_ design_1_xbar_2_stub.vhdl
 -- Design      : design_1_xbar_2
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z020clg400-1
