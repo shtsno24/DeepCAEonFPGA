@@ -827,7 +827,7 @@ proc create_hier_cell_s00_entry_pipeline { parentCell nameHier } {
   # Create instance: s00_mmu, and set properties
   set s00_mmu [ create_bd_cell -type ip -vlnv xilinx.com:ip:sc_mmu:1.0 s00_mmu ]
   set_property -dict [ list \
-   CONFIG.ADDR_WIDTH {32} \
+   CONFIG.ADDR_WIDTH {64} \
    CONFIG.ID_WIDTH {0} \
    CONFIG.IS_CASCADED {0} \
    CONFIG.MSC000_ROUTE {0b1} \
@@ -857,7 +857,7 @@ proc create_hier_cell_s00_entry_pipeline { parentCell nameHier } {
   # Create instance: s00_si_converter, and set properties
   set s00_si_converter [ create_bd_cell -type ip -vlnv xilinx.com:ip:sc_si_converter:1.0 s00_si_converter ]
   set_property -dict [ list \
-   CONFIG.ADDR_WIDTH {32} \
+   CONFIG.ADDR_WIDTH {64} \
    CONFIG.HAS_BURST {0} \
    CONFIG.ID_WIDTH {1} \
    CONFIG.IS_CASCADED {0} \
@@ -888,7 +888,7 @@ proc create_hier_cell_s00_entry_pipeline { parentCell nameHier } {
   # Create instance: s00_transaction_regulator, and set properties
   set s00_transaction_regulator [ create_bd_cell -type ip -vlnv xilinx.com:ip:sc_transaction_regulator:1.0 s00_transaction_regulator ]
   set_property -dict [ list \
-   CONFIG.ADDR_WIDTH {32} \
+   CONFIG.ADDR_WIDTH {64} \
    CONFIG.IS_CASCADED {0} \
    CONFIG.MEP_IDENTIFIER {0} \
    CONFIG.MEP_IDENTIFIER_WIDTH {1} \
@@ -1494,7 +1494,7 @@ proc create_root_design { parentCell } {
   # Create instance: s00_axi2sc, and set properties
   set s00_axi2sc [ create_bd_cell -type ip -vlnv xilinx.com:ip:sc_axi2sc:1.0 s00_axi2sc ]
   set_property -dict [ list \
-   CONFIG.AXI_ADDR_WIDTH {32} \
+   CONFIG.AXI_ADDR_WIDTH {64} \
    CONFIG.AXI_ID_WIDTH {1} \
    CONFIG.AXI_RDATA_WIDTH {32} \
    CONFIG.AXI_WDATA_WIDTH {32} \

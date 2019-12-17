@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'depthwise_conv2d_fix_1'
 ================================================================
-* Date:           Tue Dec 17 19:18:00 2019
+* Date:           Tue Dec 17 20:27:45 2019
 
 * Version:        2018.3.1 (Build 2489210 on Tue Mar 26 04:40:43 MDT 2019)
 * Project:        HLS
@@ -112,16 +112,16 @@ ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%output_height_read = call i5 @_ssd
 ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%input_width_read = call i6 @_ssdm_op_Read.ap_auto.i6(i6 %input_width)" [layers_c/depthwise_conv2d.cpp:5]   --->   Operation 13 'read' 'input_width_read' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%input_height_read = call i6 @_ssdm_op_Read.ap_auto.i6(i6 %input_height)" [layers_c/depthwise_conv2d.cpp:5]   --->   Operation 14 'read' 'input_height_read' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%tmp_cast = zext i6 %input_height_read to i7" [layers_c/depthwise_conv2d.cpp:28]   --->   Operation 15 'zext' 'tmp_cast' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%tmp_96_cast = zext i6 %input_width_read to i11" [layers_c/depthwise_conv2d.cpp:5]   --->   Operation 16 'zext' 'tmp_96_cast' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%tmp_97_cast = zext i5 %output_height_read to i7" [layers_c/depthwise_conv2d.cpp:36]   --->   Operation 17 'zext' 'tmp_97_cast' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%tmp_98_cast = zext i5 %output_width_read to i11" [layers_c/depthwise_conv2d.cpp:5]   --->   Operation 18 'zext' 'tmp_98_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%tmp_95_cast = zext i6 %input_width_read to i11" [layers_c/depthwise_conv2d.cpp:5]   --->   Operation 16 'zext' 'tmp_95_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%tmp_96_cast = zext i5 %output_height_read to i7" [layers_c/depthwise_conv2d.cpp:36]   --->   Operation 17 'zext' 'tmp_96_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%tmp_97_cast = zext i5 %output_width_read to i11" [layers_c/depthwise_conv2d.cpp:5]   --->   Operation 18 'zext' 'tmp_97_cast' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 19 [1/1] (1.76ns)   --->   "br label %.loopexit8" [layers_c/depthwise_conv2d.cpp:19]   --->   Operation 19 'br' <Predicate = true> <Delay = 1.76>
 
 State 2 <SV = 1> <Delay = 1.87>
 ST_2 : Operation 20 [1/1] (0.00ns)   --->   "%out_d = phi i4 [ 0, %0 ], [ %out_d_4, %.loopexit8.loopexit ]"   --->   Operation 20 'phi' 'out_d' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 21 [1/1] (0.00ns)   --->   "%phi_mul = phi i7 [ 0, %0 ], [ %next_mul, %.loopexit8.loopexit ]" [layers_c/depthwise_conv2d.cpp:28]   --->   Operation 21 'phi' 'phi_mul' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 22 [1/1] (0.00ns)   --->   "%phi_mul2 = phi i7 [ 0, %0 ], [ %next_mul3, %.loopexit8.loopexit ]" [layers_c/depthwise_conv2d.cpp:36]   --->   Operation 22 'phi' 'phi_mul2' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 23 [1/1] (1.87ns)   --->   "%next_mul3 = add i7 %phi_mul2, %tmp_97_cast" [layers_c/depthwise_conv2d.cpp:36]   --->   Operation 23 'add' 'next_mul3' <Predicate = true> <Delay = 1.87> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 23 [1/1] (1.87ns)   --->   "%next_mul3 = add i7 %phi_mul2, %tmp_96_cast" [layers_c/depthwise_conv2d.cpp:36]   --->   Operation 23 'add' 'next_mul3' <Predicate = true> <Delay = 1.87> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 24 [1/1] (1.87ns)   --->   "%next_mul = add i7 %phi_mul, %tmp_cast" [layers_c/depthwise_conv2d.cpp:28]   --->   Operation 24 'add' 'next_mul' <Predicate = true> <Delay = 1.87> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 25 [1/1] (1.30ns)   --->   "%exitcond4 = icmp eq i4 %out_d, -8" [layers_c/depthwise_conv2d.cpp:19]   --->   Operation 25 'icmp' 'exitcond4' <Predicate = true> <Delay = 1.30> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.95> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 26 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 8, i64 8, i64 8)"   --->   Operation 26 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
@@ -142,10 +142,10 @@ ST_3 : Operation 38 [1/1] (1.36ns)   --->   "%exitcond3 = icmp eq i5 %out_h_cast
 ST_3 : Operation 39 [1/1] (0.00ns)   --->   "%empty_43 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 7, i64 14, i64 0)"   --->   Operation 39 'speclooptripcount' 'empty_43' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 40 [1/1] (1.73ns)   --->   "%out_h_4 = add i4 %out_h, 1" [layers_c/depthwise_conv2d.cpp:20]   --->   Operation 40 'add' 'out_h_4' <Predicate = true> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_3 : Operation 41 [1/1] (0.00ns)   --->   "br i1 %exitcond3, label %.loopexit8.loopexit, label %.preheader5.preheader" [layers_c/depthwise_conv2d.cpp:20]   --->   Operation 41 'br' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 42 [1/1] (0.00ns)   --->   "%tmp_104_cast = zext i4 %out_h to i7" [layers_c/depthwise_conv2d.cpp:20]   --->   Operation 42 'zext' 'tmp_104_cast' <Predicate = (!exitcond3)> <Delay = 0.00>
-ST_3 : Operation 43 [1/1] (1.87ns)   --->   "%tmp2 = add i7 %phi_mul2, %tmp_104_cast" [layers_c/depthwise_conv2d.cpp:36]   --->   Operation 43 'add' 'tmp2' <Predicate = (!exitcond3)> <Delay = 1.87> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 42 [1/1] (0.00ns)   --->   "%tmp_103_cast = zext i4 %out_h to i7" [layers_c/depthwise_conv2d.cpp:20]   --->   Operation 42 'zext' 'tmp_103_cast' <Predicate = (!exitcond3)> <Delay = 0.00>
+ST_3 : Operation 43 [1/1] (1.87ns)   --->   "%tmp2 = add i7 %phi_mul2, %tmp_103_cast" [layers_c/depthwise_conv2d.cpp:36]   --->   Operation 43 'add' 'tmp2' <Predicate = (!exitcond3)> <Delay = 1.87> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_3 : Operation 44 [1/1] (0.00ns)   --->   "%tmp2_cast = zext i7 %tmp2 to i11" [layers_c/depthwise_conv2d.cpp:36]   --->   Operation 44 'zext' 'tmp2_cast' <Predicate = (!exitcond3)> <Delay = 0.00>
-ST_3 : Operation 45 [1/1] (3.74ns)   --->   "%tmp3 = mul i11 %tmp2_cast, %tmp_98_cast" [layers_c/depthwise_conv2d.cpp:36]   --->   Operation 45 'mul' 'tmp3' <Predicate = (!exitcond3)> <Delay = 3.74> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 3.74> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 45 [1/1] (3.74ns)   --->   "%tmp3 = mul i11 %tmp2_cast, %tmp_97_cast" [layers_c/depthwise_conv2d.cpp:36]   --->   Operation 45 'mul' 'tmp3' <Predicate = (!exitcond3)> <Delay = 3.74> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 3.74> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
 ST_3 : Operation 46 [1/1] (1.76ns)   --->   "br label %.preheader5" [layers_c/depthwise_conv2d.cpp:21]   --->   Operation 46 'br' <Predicate = (!exitcond3)> <Delay = 1.76>
 ST_3 : Operation 47 [1/1] (0.00ns)   --->   "br label %.loopexit8"   --->   Operation 47 'br' <Predicate = (exitcond3)> <Delay = 0.00>
 
@@ -161,7 +161,7 @@ ST_4 : Operation 55 [1/1] (0.00ns)   --->   "br label %.preheader6"   --->   Ope
 
 State 5 <SV = 4> <Delay = 2.32>
 ST_5 : Operation 56 [1/2] (2.32ns)   --->   "%buffer = load i16* %bias_addr, align 2" [layers_c/depthwise_conv2d.cpp:23]   --->   Operation 56 'load' 'buffer' <Predicate = true> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 14400> <RAM>
-ST_5 : Operation 57 [1/1] (0.00ns)   --->   "%tmp_105_cast = zext i4 %out_w to i11" [layers_c/depthwise_conv2d.cpp:24]   --->   Operation 57 'zext' 'tmp_105_cast' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 57 [1/1] (0.00ns)   --->   "%tmp_104_cast = zext i4 %out_w to i11" [layers_c/depthwise_conv2d.cpp:24]   --->   Operation 57 'zext' 'tmp_104_cast' <Predicate = true> <Delay = 0.00>
 ST_5 : Operation 58 [1/1] (1.76ns)   --->   "br label %.loopexit" [layers_c/depthwise_conv2d.cpp:24]   --->   Operation 58 'br' <Predicate = true> <Delay = 1.76>
 
 State 6 <SV = 5> <Delay = 7.34>
@@ -171,20 +171,20 @@ ST_6 : Operation 61 [1/1] (0.95ns)   --->   "%exitcond1 = icmp eq i2 %k_h, -1" [
 ST_6 : Operation 62 [1/1] (0.00ns)   --->   "%empty_45 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 3, i64 3, i64 3)"   --->   Operation 62 'speclooptripcount' 'empty_45' <Predicate = true> <Delay = 0.00>
 ST_6 : Operation 63 [1/1] (1.56ns)   --->   "%k_h_1 = add i2 %k_h, 1" [layers_c/depthwise_conv2d.cpp:24]   --->   Operation 63 'add' 'k_h_1' <Predicate = true> <Delay = 1.56> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_6 : Operation 64 [1/1] (0.00ns)   --->   "br i1 %exitcond1, label %3, label %.preheader.preheader" [layers_c/depthwise_conv2d.cpp:24]   --->   Operation 64 'br' <Predicate = true> <Delay = 0.00>
-ST_6 : Operation 65 [1/1] (0.00ns)   --->   "%tmp_108_cast9 = zext i2 %k_h to i5" [layers_c/depthwise_conv2d.cpp:28]   --->   Operation 65 'zext' 'tmp_108_cast9' <Predicate = (!exitcond1)> <Delay = 0.00>
-ST_6 : Operation 66 [1/1] (0.00ns)   --->   "%tmp_108_cast = zext i2 %k_h to i4" [layers_c/depthwise_conv2d.cpp:28]   --->   Operation 66 'zext' 'tmp_108_cast' <Predicate = (!exitcond1)> <Delay = 0.00>
+ST_6 : Operation 65 [1/1] (0.00ns)   --->   "%tmp_107_cast9 = zext i2 %k_h to i5" [layers_c/depthwise_conv2d.cpp:28]   --->   Operation 65 'zext' 'tmp_107_cast9' <Predicate = (!exitcond1)> <Delay = 0.00>
+ST_6 : Operation 66 [1/1] (0.00ns)   --->   "%tmp_107_cast = zext i2 %k_h to i4" [layers_c/depthwise_conv2d.cpp:28]   --->   Operation 66 'zext' 'tmp_107_cast' <Predicate = (!exitcond1)> <Delay = 0.00>
 ST_6 : Operation 67 [1/1] (0.00ns)   --->   "%p_shl5 = call i4 @_ssdm_op_BitConcatenate.i4.i2.i2(i2 %k_h, i2 0)" [layers_c/depthwise_conv2d.cpp:28]   --->   Operation 67 'bitconcatenate' 'p_shl5' <Predicate = (!exitcond1)> <Delay = 0.00>
 ST_6 : Operation 68 [1/1] (0.00ns)   --->   "%p_shl5_cast = zext i4 %p_shl5 to i5" [layers_c/depthwise_conv2d.cpp:28]   --->   Operation 68 'zext' 'p_shl5_cast' <Predicate = (!exitcond1)> <Delay = 0.00>
-ST_6 : Operation 69 [1/1] (1.73ns)   --->   "%tmp_75 = sub i5 %p_shl5_cast, %tmp_108_cast9" [layers_c/depthwise_conv2d.cpp:28]   --->   Operation 69 'sub' 'tmp_75' <Predicate = (!exitcond1)> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_6 : Operation 70 [1/1] (0.00ns)   --->   "%tmp_109_cast = sext i5 %tmp_75 to i8" [layers_c/depthwise_conv2d.cpp:28]   --->   Operation 70 'sext' 'tmp_109_cast' <Predicate = (!exitcond1)> <Delay = 0.00>
-ST_6 : Operation 71 [1/1] (1.73ns)   --->   "%tmp4 = add i4 %tmp_108_cast, %out_h" [layers_c/depthwise_conv2d.cpp:28]   --->   Operation 71 'add' 'tmp4' <Predicate = (!exitcond1)> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 69 [1/1] (1.73ns)   --->   "%tmp_75 = sub i5 %p_shl5_cast, %tmp_107_cast9" [layers_c/depthwise_conv2d.cpp:28]   --->   Operation 69 'sub' 'tmp_75' <Predicate = (!exitcond1)> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 70 [1/1] (0.00ns)   --->   "%tmp_108_cast = sext i5 %tmp_75 to i8" [layers_c/depthwise_conv2d.cpp:28]   --->   Operation 70 'sext' 'tmp_108_cast' <Predicate = (!exitcond1)> <Delay = 0.00>
+ST_6 : Operation 71 [1/1] (1.73ns)   --->   "%tmp4 = add i4 %tmp_107_cast, %out_h" [layers_c/depthwise_conv2d.cpp:28]   --->   Operation 71 'add' 'tmp4' <Predicate = (!exitcond1)> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_6 : Operation 72 [1/1] (0.00ns)   --->   "%tmp4_cast = zext i4 %tmp4 to i7" [layers_c/depthwise_conv2d.cpp:28]   --->   Operation 72 'zext' 'tmp4_cast' <Predicate = (!exitcond1)> <Delay = 0.00>
 ST_6 : Operation 73 [1/1] (1.87ns)   --->   "%tmp = add i7 %phi_mul, %tmp4_cast" [layers_c/depthwise_conv2d.cpp:28]   --->   Operation 73 'add' 'tmp' <Predicate = (!exitcond1)> <Delay = 1.87> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_6 : Operation 74 [1/1] (0.00ns)   --->   "%tmp_cast_46 = zext i7 %tmp to i11" [layers_c/depthwise_conv2d.cpp:28]   --->   Operation 74 'zext' 'tmp_cast_46' <Predicate = (!exitcond1)> <Delay = 0.00>
-ST_6 : Operation 75 [1/1] (3.74ns)   --->   "%tmp1 = mul i11 %tmp_96_cast, %tmp_cast_46" [layers_c/depthwise_conv2d.cpp:5]   --->   Operation 75 'mul' 'tmp1' <Predicate = (!exitcond1)> <Delay = 3.74> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 3.74> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
-ST_6 : Operation 76 [1/1] (1.82ns)   --->   "%tmp6 = add i8 %tmp_109_cast, %p_shl_cast" [layers_c/depthwise_conv2d.cpp:28]   --->   Operation 76 'add' 'tmp6' <Predicate = (!exitcond1)> <Delay = 1.82> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 75 [1/1] (3.74ns)   --->   "%tmp1 = mul i11 %tmp_95_cast, %tmp_cast_46" [layers_c/depthwise_conv2d.cpp:5]   --->   Operation 75 'mul' 'tmp1' <Predicate = (!exitcond1)> <Delay = 3.74> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 3.74> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 76 [1/1] (1.82ns)   --->   "%tmp6 = add i8 %tmp_108_cast, %p_shl_cast" [layers_c/depthwise_conv2d.cpp:28]   --->   Operation 76 'add' 'tmp6' <Predicate = (!exitcond1)> <Delay = 1.82> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_6 : Operation 77 [1/1] (1.76ns)   --->   "br label %.preheader" [layers_c/depthwise_conv2d.cpp:26]   --->   Operation 77 'br' <Predicate = (!exitcond1)> <Delay = 1.76>
-ST_6 : Operation 78 [1/1] (1.63ns)   --->   "%tmp_73 = add i11 %tmp3, %tmp_105_cast" [layers_c/depthwise_conv2d.cpp:36]   --->   Operation 78 'add' 'tmp_73' <Predicate = (exitcond1)> <Delay = 1.63> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 78 [1/1] (1.63ns)   --->   "%tmp_73 = add i11 %tmp3, %tmp_104_cast" [layers_c/depthwise_conv2d.cpp:36]   --->   Operation 78 'add' 'tmp_73' <Predicate = (exitcond1)> <Delay = 1.63> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_6 : Operation 79 [1/1] (0.00ns)   --->   "%tmp_74 = zext i11 %tmp_73 to i64" [layers_c/depthwise_conv2d.cpp:36]   --->   Operation 79 'zext' 'tmp_74' <Predicate = (exitcond1)> <Delay = 0.00>
 ST_6 : Operation 80 [1/1] (0.00ns)   --->   "%output_addr = getelementptr [14400 x i16]* %output_r, i64 0, i64 %tmp_74" [layers_c/depthwise_conv2d.cpp:36]   --->   Operation 80 'getelementptr' 'output_addr' <Predicate = (exitcond1)> <Delay = 0.00>
 ST_6 : Operation 81 [1/1] (3.25ns)   --->   "store i16 %buffer6, i16* %output_addr, align 2" [layers_c/depthwise_conv2d.cpp:36]   --->   Operation 81 'store' <Predicate = (exitcond1)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 14400> <RAM>
@@ -197,18 +197,18 @@ ST_7 : Operation 85 [1/1] (0.95ns)   --->   "%exitcond = icmp eq i2 %k_w, -1" [l
 ST_7 : Operation 86 [1/1] (0.00ns)   --->   "%empty_47 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 3, i64 3, i64 3)"   --->   Operation 86 'speclooptripcount' 'empty_47' <Predicate = true> <Delay = 0.00>
 ST_7 : Operation 87 [1/1] (1.56ns)   --->   "%k_w_1 = add i2 %k_w, 1" [layers_c/depthwise_conv2d.cpp:26]   --->   Operation 87 'add' 'k_w_1' <Predicate = true> <Delay = 1.56> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_7 : Operation 88 [1/1] (0.00ns)   --->   "br i1 %exitcond, label %.loopexit.loopexit, label %2" [layers_c/depthwise_conv2d.cpp:26]   --->   Operation 88 'br' <Predicate = true> <Delay = 0.00>
-ST_7 : Operation 89 [1/1] (0.00ns)   --->   "%tmp_110_cast = zext i2 %k_w to i4" [layers_c/depthwise_conv2d.cpp:28]   --->   Operation 89 'zext' 'tmp_110_cast' <Predicate = (!exitcond)> <Delay = 0.00>
-ST_7 : Operation 90 [1/1] (1.73ns)   --->   "%tmp5 = add i4 %tmp_110_cast, %out_w" [layers_c/depthwise_conv2d.cpp:28]   --->   Operation 90 'add' 'tmp5' <Predicate = (!exitcond)> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 89 [1/1] (0.00ns)   --->   "%tmp_109_cast = zext i2 %k_w to i4" [layers_c/depthwise_conv2d.cpp:28]   --->   Operation 89 'zext' 'tmp_109_cast' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_7 : Operation 90 [1/1] (1.73ns)   --->   "%tmp5 = add i4 %tmp_109_cast, %out_w" [layers_c/depthwise_conv2d.cpp:28]   --->   Operation 90 'add' 'tmp5' <Predicate = (!exitcond)> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_7 : Operation 91 [1/1] (0.00ns)   --->   "%tmp5_cast = zext i4 %tmp5 to i11" [layers_c/depthwise_conv2d.cpp:28]   --->   Operation 91 'zext' 'tmp5_cast' <Predicate = (!exitcond)> <Delay = 0.00>
 ST_7 : Operation 92 [1/1] (1.63ns)   --->   "%tmp_76 = add i11 %tmp5_cast, %tmp1" [layers_c/depthwise_conv2d.cpp:28]   --->   Operation 92 'add' 'tmp_76' <Predicate = (!exitcond)> <Delay = 1.63> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_7 : Operation 93 [1/1] (0.00ns)   --->   "%tmp_77 = zext i11 %tmp_76 to i64" [layers_c/depthwise_conv2d.cpp:28]   --->   Operation 93 'zext' 'tmp_77' <Predicate = (!exitcond)> <Delay = 0.00>
 ST_7 : Operation 94 [1/1] (0.00ns)   --->   "%input_addr = getelementptr [14400 x i16]* %input_r, i64 0, i64 %tmp_77" [layers_c/depthwise_conv2d.cpp:28]   --->   Operation 94 'getelementptr' 'input_addr' <Predicate = (!exitcond)> <Delay = 0.00>
 ST_7 : Operation 95 [2/2] (3.25ns)   --->   "%input_load = load i16* %input_addr, align 2" [layers_c/depthwise_conv2d.cpp:28]   --->   Operation 95 'load' 'input_load' <Predicate = (!exitcond)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 14400> <RAM>
-ST_7 : Operation 96 [1/1] (1.73ns)   --->   "%tmp7 = add i4 %out_d, %tmp_110_cast" [layers_c/depthwise_conv2d.cpp:28]   --->   Operation 96 'add' 'tmp7' <Predicate = (!exitcond)> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 96 [1/1] (1.73ns)   --->   "%tmp7 = add i4 %out_d, %tmp_109_cast" [layers_c/depthwise_conv2d.cpp:28]   --->   Operation 96 'add' 'tmp7' <Predicate = (!exitcond)> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_7 : Operation 97 [1/1] (0.00ns)   --->   "%tmp7_cast = zext i4 %tmp7 to i8" [layers_c/depthwise_conv2d.cpp:28]   --->   Operation 97 'zext' 'tmp7_cast' <Predicate = (!exitcond)> <Delay = 0.00>
 ST_7 : Operation 98 [1/1] (1.91ns)   --->   "%tmp_78 = add i8 %tmp7_cast, %tmp6" [layers_c/depthwise_conv2d.cpp:28]   --->   Operation 98 'add' 'tmp_78' <Predicate = (!exitcond)> <Delay = 1.91> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_7 : Operation 99 [1/1] (0.00ns)   --->   "%tmp_117_cast = sext i8 %tmp_78 to i32" [layers_c/depthwise_conv2d.cpp:28]   --->   Operation 99 'sext' 'tmp_117_cast' <Predicate = (!exitcond)> <Delay = 0.00>
-ST_7 : Operation 100 [1/1] (0.00ns)   --->   "%tmp_79 = zext i32 %tmp_117_cast to i64" [layers_c/depthwise_conv2d.cpp:28]   --->   Operation 100 'zext' 'tmp_79' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_7 : Operation 99 [1/1] (0.00ns)   --->   "%tmp_116_cast = sext i8 %tmp_78 to i32" [layers_c/depthwise_conv2d.cpp:28]   --->   Operation 99 'sext' 'tmp_116_cast' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_7 : Operation 100 [1/1] (0.00ns)   --->   "%tmp_79 = zext i32 %tmp_116_cast to i64" [layers_c/depthwise_conv2d.cpp:28]   --->   Operation 100 'zext' 'tmp_79' <Predicate = (!exitcond)> <Delay = 0.00>
 ST_7 : Operation 101 [1/1] (0.00ns)   --->   "%kernel_0_addr = getelementptr [72 x i16]* %kernel_0, i64 0, i64 %tmp_79" [layers_c/depthwise_conv2d.cpp:28]   --->   Operation 101 'getelementptr' 'kernel_0_addr' <Predicate = (!exitcond)> <Delay = 0.00>
 ST_7 : Operation 102 [2/2] (3.25ns)   --->   "%kernel_0_load = load i16* %kernel_0_addr, align 2" [layers_c/depthwise_conv2d.cpp:28]   --->   Operation 102 'load' 'kernel_0_load' <Predicate = (!exitcond)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 14400> <RAM>
 ST_7 : Operation 103 [1/1] (0.00ns)   --->   "br label %.loopexit"   --->   Operation 103 'br' <Predicate = (exitcond)> <Delay = 0.00>
@@ -218,9 +218,9 @@ ST_8 : Operation 104 [1/2] (3.25ns)   --->   "%input_load = load i16* %input_add
 ST_8 : Operation 105 [1/2] (3.25ns)   --->   "%kernel_0_load = load i16* %kernel_0_addr, align 2" [layers_c/depthwise_conv2d.cpp:28]   --->   Operation 105 'load' 'kernel_0_load' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 14400> <RAM>
 
 State 9 <SV = 8> <Delay = 6.38>
-ST_9 : Operation 106 [1/1] (0.00ns)   --->   "%tmp_115_cast = sext i16 %input_load to i30" [layers_c/depthwise_conv2d.cpp:28]   --->   Operation 106 'sext' 'tmp_115_cast' <Predicate = true> <Delay = 0.00>
-ST_9 : Operation 107 [1/1] (0.00ns)   --->   "%tmp_119_cast = sext i16 %kernel_0_load to i30" [layers_c/depthwise_conv2d.cpp:28]   --->   Operation 107 'sext' 'tmp_119_cast' <Predicate = true> <Delay = 0.00>
-ST_9 : Operation 108 [1/1] (6.38ns) (root node of the DSP)   --->   "%tmp_80 = mul i30 %tmp_119_cast, %tmp_115_cast" [layers_c/depthwise_conv2d.cpp:28]   --->   Operation 108 'mul' 'tmp_80' <Predicate = true> <Delay = 6.38> <Core = "DSP48">   --->   Core 65 'DSP48' <Latency = 0> <II = 1> <Delay = 6.38> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_9 : Operation 106 [1/1] (0.00ns)   --->   "%tmp_114_cast = sext i16 %input_load to i30" [layers_c/depthwise_conv2d.cpp:28]   --->   Operation 106 'sext' 'tmp_114_cast' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 107 [1/1] (0.00ns)   --->   "%tmp_118_cast = sext i16 %kernel_0_load to i30" [layers_c/depthwise_conv2d.cpp:28]   --->   Operation 107 'sext' 'tmp_118_cast' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 108 [1/1] (6.38ns) (root node of the DSP)   --->   "%tmp_80 = mul i30 %tmp_118_cast, %tmp_114_cast" [layers_c/depthwise_conv2d.cpp:28]   --->   Operation 108 'mul' 'tmp_80' <Predicate = true> <Delay = 6.38> <Core = "DSP48">   --->   Core 65 'DSP48' <Latency = 0> <II = 1> <Delay = 6.38> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
 ST_9 : Operation 109 [1/1] (0.00ns)   --->   "%tmp_81 = call i16 @_ssdm_op_PartSelect.i16.i30.i32.i32(i30 %tmp_80, i32 14, i32 29)" [layers_c/depthwise_conv2d.cpp:28]   --->   Operation 109 'partselect' 'tmp_81' <Predicate = true> <Delay = 0.00>
 
 State 10 <SV = 9> <Delay = 2.07>
@@ -258,9 +258,9 @@ output_height_read (read             ) [ 00111111111]
 input_width_read   (read             ) [ 00000000000]
 input_height_read  (read             ) [ 00000000000]
 tmp_cast           (zext             ) [ 00111111111]
+tmp_95_cast        (zext             ) [ 00111111111]
 tmp_96_cast        (zext             ) [ 00111111111]
 tmp_97_cast        (zext             ) [ 00111111111]
-tmp_98_cast        (zext             ) [ 00111111111]
 StgValue_19        (br               ) [ 01111111111]
 out_d              (phi              ) [ 00101111111]
 phi_mul            (phi              ) [ 00101111111]
@@ -284,7 +284,7 @@ exitcond3          (icmp             ) [ 00111111111]
 empty_43           (speclooptripcount) [ 00000000000]
 out_h_4            (add              ) [ 00111111111]
 StgValue_41        (br               ) [ 00000000000]
-tmp_104_cast       (zext             ) [ 00000000000]
+tmp_103_cast       (zext             ) [ 00000000000]
 tmp2               (add              ) [ 00000000000]
 tmp2_cast          (zext             ) [ 00000000000]
 tmp3               (mul              ) [ 00001111111]
@@ -298,7 +298,7 @@ out_w_4            (add              ) [ 00111111111]
 StgValue_53        (br               ) [ 00000000000]
 StgValue_55        (br               ) [ 00111111111]
 buffer             (load             ) [ 00111111111]
-tmp_105_cast       (zext             ) [ 00000011111]
+tmp_104_cast       (zext             ) [ 00000011111]
 StgValue_58        (br               ) [ 00111111111]
 buffer6            (phi              ) [ 00000011111]
 k_h                (phi              ) [ 00000010000]
@@ -306,12 +306,12 @@ exitcond1          (icmp             ) [ 00111111111]
 empty_45           (speclooptripcount) [ 00000000000]
 k_h_1              (add              ) [ 00111111111]
 StgValue_64        (br               ) [ 00000000000]
-tmp_108_cast9      (zext             ) [ 00000000000]
-tmp_108_cast       (zext             ) [ 00000000000]
+tmp_107_cast9      (zext             ) [ 00000000000]
+tmp_107_cast       (zext             ) [ 00000000000]
 p_shl5             (bitconcatenate   ) [ 00000000000]
 p_shl5_cast        (zext             ) [ 00000000000]
 tmp_75             (sub              ) [ 00000000000]
-tmp_109_cast       (sext             ) [ 00000000000]
+tmp_108_cast       (sext             ) [ 00000000000]
 tmp4               (add              ) [ 00000000000]
 tmp4_cast          (zext             ) [ 00000000000]
 tmp                (add              ) [ 00000000000]
@@ -330,7 +330,7 @@ exitcond           (icmp             ) [ 00111111111]
 empty_47           (speclooptripcount) [ 00000000000]
 k_w_1              (add              ) [ 00111111111]
 StgValue_88        (br               ) [ 00000000000]
-tmp_110_cast       (zext             ) [ 00000000000]
+tmp_109_cast       (zext             ) [ 00000000000]
 tmp5               (add              ) [ 00000000000]
 tmp5_cast          (zext             ) [ 00000000000]
 tmp_76             (add              ) [ 00000000000]
@@ -339,14 +339,14 @@ input_addr         (getelementptr    ) [ 00000000100]
 tmp7               (add              ) [ 00000000000]
 tmp7_cast          (zext             ) [ 00000000000]
 tmp_78             (add              ) [ 00000000000]
-tmp_117_cast       (sext             ) [ 00000000000]
+tmp_116_cast       (sext             ) [ 00000000000]
 tmp_79             (zext             ) [ 00000000000]
 kernel_0_addr      (getelementptr    ) [ 00000000100]
 StgValue_103       (br               ) [ 00111111111]
 input_load         (load             ) [ 00000000010]
 kernel_0_load      (load             ) [ 00000000010]
-tmp_115_cast       (sext             ) [ 00000000000]
-tmp_119_cast       (sext             ) [ 00000000000]
+tmp_114_cast       (sext             ) [ 00000000000]
+tmp_118_cast       (sext             ) [ 00000000000]
 tmp_80             (mul              ) [ 00000000000]
 tmp_81             (partselect       ) [ 00000000001]
 buffer_6           (add              ) [ 00111111111]
@@ -1000,10 +1000,21 @@ StgValue_111       (br               ) [ 00111111111]
 </bind>
 </comp>
 
-<comp id="242" class="1004" name="tmp_96_cast_fu_242">
+<comp id="242" class="1004" name="tmp_95_cast_fu_242">
 <pin_list>
 <pin id="243" dir="0" index="0" bw="6" slack="0"/>
 <pin id="244" dir="1" index="1" bw="11" slack="5"/>
+</pin_list>
+<bind>
+<opcode="zext(34) " fcode="zext"/>
+<opset="tmp_95_cast/1 "/>
+</bind>
+</comp>
+
+<comp id="246" class="1004" name="tmp_96_cast_fu_246">
+<pin_list>
+<pin id="247" dir="0" index="0" bw="5" slack="0"/>
+<pin id="248" dir="1" index="1" bw="7" slack="1"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
@@ -1011,25 +1022,14 @@ StgValue_111       (br               ) [ 00111111111]
 </bind>
 </comp>
 
-<comp id="246" class="1004" name="tmp_97_cast_fu_246">
-<pin_list>
-<pin id="247" dir="0" index="0" bw="5" slack="0"/>
-<pin id="248" dir="1" index="1" bw="7" slack="1"/>
-</pin_list>
-<bind>
-<opcode="zext(34) " fcode="zext"/>
-<opset="tmp_97_cast/1 "/>
-</bind>
-</comp>
-
-<comp id="250" class="1004" name="tmp_98_cast_fu_250">
+<comp id="250" class="1004" name="tmp_97_cast_fu_250">
 <pin_list>
 <pin id="251" dir="0" index="0" bw="5" slack="0"/>
 <pin id="252" dir="1" index="1" bw="11" slack="2"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="tmp_98_cast/1 "/>
+<opset="tmp_97_cast/1 "/>
 </bind>
 </comp>
 
@@ -1162,14 +1162,14 @@ StgValue_111       (br               ) [ 00111111111]
 </bind>
 </comp>
 
-<comp id="312" class="1004" name="tmp_104_cast_fu_312">
+<comp id="312" class="1004" name="tmp_103_cast_fu_312">
 <pin_list>
 <pin id="313" dir="0" index="0" bw="4" slack="0"/>
 <pin id="314" dir="1" index="1" bw="7" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="tmp_104_cast/3 "/>
+<opset="tmp_103_cast/3 "/>
 </bind>
 </comp>
 
@@ -1243,14 +1243,14 @@ StgValue_111       (br               ) [ 00111111111]
 </bind>
 </comp>
 
-<comp id="346" class="1004" name="tmp_105_cast_fu_346">
+<comp id="346" class="1004" name="tmp_104_cast_fu_346">
 <pin_list>
 <pin id="347" dir="0" index="0" bw="4" slack="1"/>
 <pin id="348" dir="1" index="1" bw="11" slack="1"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="tmp_105_cast/5 "/>
+<opset="tmp_104_cast/5 "/>
 </bind>
 </comp>
 
@@ -1278,25 +1278,25 @@ StgValue_111       (br               ) [ 00111111111]
 </bind>
 </comp>
 
-<comp id="362" class="1004" name="tmp_108_cast9_fu_362">
+<comp id="362" class="1004" name="tmp_107_cast9_fu_362">
 <pin_list>
 <pin id="363" dir="0" index="0" bw="2" slack="0"/>
 <pin id="364" dir="1" index="1" bw="5" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="tmp_108_cast9/6 "/>
+<opset="tmp_107_cast9/6 "/>
 </bind>
 </comp>
 
-<comp id="366" class="1004" name="tmp_108_cast_fu_366">
+<comp id="366" class="1004" name="tmp_107_cast_fu_366">
 <pin_list>
 <pin id="367" dir="0" index="0" bw="2" slack="0"/>
 <pin id="368" dir="1" index="1" bw="4" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="tmp_108_cast/6 "/>
+<opset="tmp_107_cast/6 "/>
 </bind>
 </comp>
 
@@ -1336,14 +1336,14 @@ StgValue_111       (br               ) [ 00111111111]
 </bind>
 </comp>
 
-<comp id="388" class="1004" name="tmp_109_cast_fu_388">
+<comp id="388" class="1004" name="tmp_108_cast_fu_388">
 <pin_list>
 <pin id="389" dir="0" index="0" bw="5" slack="0"/>
 <pin id="390" dir="1" index="1" bw="8" slack="0"/>
 </pin_list>
 <bind>
 <opcode="sext(35) " fcode="sext"/>
-<opset="tmp_109_cast/6 "/>
+<opset="tmp_108_cast/6 "/>
 </bind>
 </comp>
 
@@ -1464,14 +1464,14 @@ StgValue_111       (br               ) [ 00111111111]
 </bind>
 </comp>
 
-<comp id="443" class="1004" name="tmp_110_cast_fu_443">
+<comp id="443" class="1004" name="tmp_109_cast_fu_443">
 <pin_list>
 <pin id="444" dir="0" index="0" bw="2" slack="0"/>
 <pin id="445" dir="1" index="1" bw="4" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="tmp_110_cast/7 "/>
+<opset="tmp_109_cast/7 "/>
 </bind>
 </comp>
 
@@ -1556,14 +1556,14 @@ StgValue_111       (br               ) [ 00111111111]
 </bind>
 </comp>
 
-<comp id="482" class="1004" name="tmp_117_cast_fu_482">
+<comp id="482" class="1004" name="tmp_116_cast_fu_482">
 <pin_list>
 <pin id="483" dir="0" index="0" bw="8" slack="0"/>
 <pin id="484" dir="1" index="1" bw="32" slack="0"/>
 </pin_list>
 <bind>
 <opcode="sext(35) " fcode="sext"/>
-<opset="tmp_117_cast/7 "/>
+<opset="tmp_116_cast/7 "/>
 </bind>
 </comp>
 
@@ -1578,25 +1578,25 @@ StgValue_111       (br               ) [ 00111111111]
 </bind>
 </comp>
 
-<comp id="491" class="1004" name="tmp_115_cast_fu_491">
+<comp id="491" class="1004" name="tmp_114_cast_fu_491">
 <pin_list>
 <pin id="492" dir="0" index="0" bw="16" slack="1"/>
 <pin id="493" dir="1" index="1" bw="30" slack="0"/>
 </pin_list>
 <bind>
 <opcode="sext(35) " fcode="sext"/>
-<opset="tmp_115_cast/9 "/>
+<opset="tmp_114_cast/9 "/>
 </bind>
 </comp>
 
-<comp id="494" class="1004" name="tmp_119_cast_fu_494">
+<comp id="494" class="1004" name="tmp_118_cast_fu_494">
 <pin_list>
 <pin id="495" dir="0" index="0" bw="16" slack="1"/>
 <pin id="496" dir="1" index="1" bw="30" slack="0"/>
 </pin_list>
 <bind>
 <opcode="sext(35) " fcode="sext"/>
-<opset="tmp_119_cast/9 "/>
+<opset="tmp_118_cast/9 "/>
 </bind>
 </comp>
 
@@ -1668,33 +1668,33 @@ StgValue_111       (br               ) [ 00111111111]
 </bind>
 </comp>
 
-<comp id="533" class="1005" name="tmp_96_cast_reg_533">
+<comp id="533" class="1005" name="tmp_95_cast_reg_533">
 <pin_list>
 <pin id="534" dir="0" index="0" bw="11" slack="5"/>
 <pin id="535" dir="1" index="1" bw="11" slack="5"/>
+</pin_list>
+<bind>
+<opset="tmp_95_cast "/>
+</bind>
+</comp>
+
+<comp id="538" class="1005" name="tmp_96_cast_reg_538">
+<pin_list>
+<pin id="539" dir="0" index="0" bw="7" slack="1"/>
+<pin id="540" dir="1" index="1" bw="7" slack="1"/>
 </pin_list>
 <bind>
 <opset="tmp_96_cast "/>
 </bind>
 </comp>
 
-<comp id="538" class="1005" name="tmp_97_cast_reg_538">
-<pin_list>
-<pin id="539" dir="0" index="0" bw="7" slack="1"/>
-<pin id="540" dir="1" index="1" bw="7" slack="1"/>
-</pin_list>
-<bind>
-<opset="tmp_97_cast "/>
-</bind>
-</comp>
-
-<comp id="543" class="1005" name="tmp_98_cast_reg_543">
+<comp id="543" class="1005" name="tmp_97_cast_reg_543">
 <pin_list>
 <pin id="544" dir="0" index="0" bw="11" slack="2"/>
 <pin id="545" dir="1" index="1" bw="11" slack="2"/>
 </pin_list>
 <bind>
-<opset="tmp_98_cast "/>
+<opset="tmp_97_cast "/>
 </bind>
 </comp>
 
@@ -1788,13 +1788,13 @@ StgValue_111       (br               ) [ 00111111111]
 </bind>
 </comp>
 
-<comp id="602" class="1005" name="tmp_105_cast_reg_602">
+<comp id="602" class="1005" name="tmp_104_cast_reg_602">
 <pin_list>
 <pin id="603" dir="0" index="0" bw="11" slack="1"/>
 <pin id="604" dir="1" index="1" bw="11" slack="1"/>
 </pin_list>
 <bind>
-<opset="tmp_105_cast "/>
+<opset="tmp_104_cast "/>
 </bind>
 </comp>
 
@@ -2283,7 +2283,7 @@ StgValue_111       (br               ) [ 00111111111]
 		exitcond3 : 2
 		out_h_4 : 1
 		StgValue_41 : 3
-		tmp_104_cast : 1
+		tmp_103_cast : 1
 		tmp2 : 2
 		tmp2_cast : 3
 		tmp3 : 4
@@ -2297,12 +2297,12 @@ StgValue_111       (br               ) [ 00111111111]
 		exitcond1 : 1
 		k_h_1 : 1
 		StgValue_64 : 2
-		tmp_108_cast9 : 1
-		tmp_108_cast : 1
+		tmp_107_cast9 : 1
+		tmp_107_cast : 1
 		p_shl5 : 1
 		p_shl5_cast : 2
 		tmp_75 : 3
-		tmp_109_cast : 4
+		tmp_108_cast : 4
 		tmp4 : 2
 		tmp4_cast : 3
 		tmp : 4
@@ -2316,7 +2316,7 @@ StgValue_111       (br               ) [ 00111111111]
 		exitcond : 1
 		k_w_1 : 1
 		StgValue_88 : 2
-		tmp_110_cast : 1
+		tmp_109_cast : 1
 		tmp5 : 2
 		tmp5_cast : 3
 		tmp_76 : 4
@@ -2326,7 +2326,7 @@ StgValue_111       (br               ) [ 00111111111]
 		tmp7 : 2
 		tmp7_cast : 3
 		tmp_78 : 4
-		tmp_117_cast : 5
+		tmp_116_cast : 5
 		tmp_79 : 6
 		kernel_0_addr : 7
 		kernel_0_load : 8
@@ -2381,23 +2381,23 @@ StgValue_111       (br               ) [ 00111111111]
 |          |  input_height_read_read_fu_76 |    0    |    0    |    0    |
 |----------|-------------------------------|---------|---------|---------|
 |          |        tmp_cast_fu_238        |    0    |    0    |    0    |
-|          |       tmp_96_cast_fu_242      |    0    |    0    |    0    |
-|          |       tmp_97_cast_fu_246      |    0    |    0    |    0    |
-|          |       tmp_98_cast_fu_250      |    0    |    0    |    0    |
+|          |       tmp_95_cast_fu_242      |    0    |    0    |    0    |
+|          |       tmp_96_cast_fu_246      |    0    |    0    |    0    |
+|          |       tmp_97_cast_fu_250      |    0    |    0    |    0    |
 |          |          tmp_s_fu_276         |    0    |    0    |    0    |
 |          |       p_shl_cast_fu_293       |    0    |    0    |    0    |
 |          |       out_h_cast_fu_297       |    0    |    0    |    0    |
-|          |      tmp_104_cast_fu_312      |    0    |    0    |    0    |
+|          |      tmp_103_cast_fu_312      |    0    |    0    |    0    |
 |          |        tmp2_cast_fu_322       |    0    |    0    |    0    |
 |          |       out_w_cast_fu_331       |    0    |    0    |    0    |
-|   zext   |      tmp_105_cast_fu_346      |    0    |    0    |    0    |
-|          |      tmp_108_cast9_fu_362     |    0    |    0    |    0    |
-|          |      tmp_108_cast_fu_366      |    0    |    0    |    0    |
+|   zext   |      tmp_104_cast_fu_346      |    0    |    0    |    0    |
+|          |      tmp_107_cast9_fu_362     |    0    |    0    |    0    |
+|          |      tmp_107_cast_fu_366      |    0    |    0    |    0    |
 |          |       p_shl5_cast_fu_378      |    0    |    0    |    0    |
 |          |        tmp4_cast_fu_398       |    0    |    0    |    0    |
 |          |       tmp_cast_46_fu_408      |    0    |    0    |    0    |
 |          |         tmp_74_fu_426         |    0    |    0    |    0    |
-|          |      tmp_110_cast_fu_443      |    0    |    0    |    0    |
+|          |      tmp_109_cast_fu_443      |    0    |    0    |    0    |
 |          |        tmp5_cast_fu_453       |    0    |    0    |    0    |
 |          |         tmp_77_fu_462         |    0    |    0    |    0    |
 |          |        tmp7_cast_fu_473       |    0    |    0    |    0    |
@@ -2408,10 +2408,10 @@ StgValue_111       (br               ) [ 00111111111]
 |bitconcatenate|          p_shl_fu_285         |    0    |    0    |    0    |
 |          |         p_shl5_fu_370         |    0    |    0    |    0    |
 |----------|-------------------------------|---------|---------|---------|
-|          |      tmp_109_cast_fu_388      |    0    |    0    |    0    |
-|   sext   |      tmp_117_cast_fu_482      |    0    |    0    |    0    |
-|          |      tmp_115_cast_fu_491      |    0    |    0    |    0    |
-|          |      tmp_119_cast_fu_494      |    0    |    0    |    0    |
+|          |      tmp_108_cast_fu_388      |    0    |    0    |    0    |
+|   sext   |      tmp_116_cast_fu_482      |    0    |    0    |    0    |
+|          |      tmp_114_cast_fu_491      |    0    |    0    |    0    |
+|          |      tmp_118_cast_fu_494      |    0    |    0    |    0    |
 |----------|-------------------------------|---------|---------|---------|
 |partselect|         tmp_81_fu_497         |    0    |    0    |    0    |
 |----------|-------------------------------|---------|---------|---------|
@@ -2454,11 +2454,11 @@ N/A
 |       tmp1_reg_615       |   11   |
 |       tmp3_reg_584       |   11   |
 |       tmp6_reg_620       |    8   |
-|   tmp_105_cast_reg_602   |   11   |
+|   tmp_104_cast_reg_602   |   11   |
 |      tmp_81_reg_653      |   16   |
-|    tmp_96_cast_reg_533   |   11   |
-|    tmp_97_cast_reg_538   |    7   |
-|    tmp_98_cast_reg_543   |   11   |
+|    tmp_95_cast_reg_533   |   11   |
+|    tmp_96_cast_reg_538   |    7   |
+|    tmp_97_cast_reg_543   |   11   |
 |     tmp_cast_reg_528     |    7   |
 +--------------------------+--------+
 |           Total          |   291  |

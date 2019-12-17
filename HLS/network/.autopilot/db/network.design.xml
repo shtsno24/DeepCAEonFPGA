@@ -5,59 +5,59 @@
 <ModuleName>network</ModuleName>
 <InstancesList>
 <Instance>
-<InstName>grp_padding2d_fix16_fu_296</InstName>
+<InstName>grp_padding2d_fix16_fu_297</InstName>
 <ModuleName>padding2d_fix16</ModuleName>
-<ID>296</ID>
+<ID>297</ID>
 </Instance>
 <Instance>
-<InstName>grp_depthwise_conv2d_fix_2_fu_314</InstName>
+<InstName>grp_depthwise_conv2d_fix_2_fu_315</InstName>
 <ModuleName>depthwise_conv2d_fix_2</ModuleName>
-<ID>314</ID>
+<ID>315</ID>
 </Instance>
 <Instance>
-<InstName>grp_depthwise_conv2d_fix_1_fu_338</InstName>
+<InstName>grp_depthwise_conv2d_fix_1_fu_339</InstName>
 <ModuleName>depthwise_conv2d_fix_1</ModuleName>
-<ID>338</ID>
+<ID>339</ID>
 </Instance>
 <Instance>
-<InstName>grp_max_pooling2d_fix16_fu_362</InstName>
+<InstName>grp_max_pooling2d_fix16_fu_363</InstName>
 <ModuleName>max_pooling2d_fix16</ModuleName>
-<ID>362</ID>
+<ID>363</ID>
 </Instance>
 <Instance>
-<InstName>grp_pointwise_conv2d_fix_3_fu_383</InstName>
+<InstName>grp_pointwise_conv2d_fix_3_fu_384</InstName>
 <ModuleName>pointwise_conv2d_fix_3</ModuleName>
-<ID>383</ID>
+<ID>384</ID>
 </Instance>
 <Instance>
-<InstName>grp_pointwise_conv2d_fix_1_fu_393</InstName>
+<InstName>grp_pointwise_conv2d_fix_1_fu_394</InstName>
 <ModuleName>pointwise_conv2d_fix_1</ModuleName>
-<ID>393</ID>
+<ID>394</ID>
 </Instance>
 <Instance>
-<InstName>grp_pointwise_conv2d_fix_2_fu_403</InstName>
+<InstName>grp_pointwise_conv2d_fix_2_fu_404</InstName>
 <ModuleName>pointwise_conv2d_fix_2</ModuleName>
-<ID>403</ID>
+<ID>404</ID>
 </Instance>
 <Instance>
-<InstName>grp_up_sampling2d_fix16_fu_413</InstName>
+<InstName>grp_up_sampling2d_fix16_fu_414</InstName>
 <ModuleName>up_sampling2d_fix16</ModuleName>
-<ID>413</ID>
+<ID>414</ID>
 </Instance>
 <Instance>
-<InstName>grp_depthwise_conv2d_fix_fu_434</InstName>
+<InstName>grp_depthwise_conv2d_fix_fu_435</InstName>
 <ModuleName>depthwise_conv2d_fix</ModuleName>
-<ID>434</ID>
+<ID>435</ID>
 </Instance>
 <Instance>
-<InstName>grp_pointwise_conv2d_fix_4_fu_442</InstName>
+<InstName>grp_pointwise_conv2d_fix_4_fu_443</InstName>
 <ModuleName>pointwise_conv2d_fix_4</ModuleName>
-<ID>442</ID>
+<ID>443</ID>
 </Instance>
 <Instance>
-<InstName>grp_pointwise_conv2d_fix_fu_450</InstName>
+<InstName>grp_pointwise_conv2d_fix_fu_451</InstName>
 <ModuleName>pointwise_conv2d_fix</ModuleName>
-<ID>450</ID>
+<ID>451</ID>
 </Instance>
 </InstancesList>
 </TopModule>
@@ -2809,7 +2809,7 @@
 <Resources>
 <BRAM_18K>39</BRAM_18K>
 <DSP48E>8</DSP48E>
-<FF>2890</FF>
+<FF>2826</FF>
 <LUT>6344</LUT>
 </Resources>
 </AreaEstimates>
@@ -3076,7 +3076,7 @@
 <IOProtocol>axis</IOProtocol>
 <IOConfig>register, both mode</IOConfig>
 <Dir>in</Dir>
-<Bits>32</Bits>
+<Bits>16</Bits>
 <Attribute>data</Attribute>
 <CType>int</CType>
 </RtlPorts>
@@ -3124,7 +3124,7 @@
 <IOProtocol>axis</IOProtocol>
 <IOConfig>register, both mode</IOConfig>
 <Dir>in</Dir>
-<Bits>4</Bits>
+<Bits>2</Bits>
 <Attribute>data</Attribute>
 <CType>int</CType>
 </RtlPorts>
@@ -3136,7 +3136,7 @@
 <IOProtocol>axis</IOProtocol>
 <IOConfig>register, both mode</IOConfig>
 <Dir>in</Dir>
-<Bits>4</Bits>
+<Bits>2</Bits>
 <Attribute>data</Attribute>
 <CType>int</CType>
 </RtlPorts>
@@ -3184,7 +3184,7 @@
 <IOProtocol>axis</IOProtocol>
 <IOConfig>register, both mode</IOConfig>
 <Dir>out</Dir>
-<Bits>32</Bits>
+<Bits>16</Bits>
 <Attribute>data</Attribute>
 <CType>int</CType>
 </RtlPorts>
@@ -3232,7 +3232,7 @@
 <IOProtocol>axis</IOProtocol>
 <IOConfig>register, both mode</IOConfig>
 <Dir>out</Dir>
-<Bits>4</Bits>
+<Bits>2</Bits>
 <Attribute>data</Attribute>
 <CType>int</CType>
 </RtlPorts>
@@ -3244,7 +3244,7 @@
 <IOProtocol>axis</IOProtocol>
 <IOConfig>register, both mode</IOConfig>
 <Dir>out</Dir>
-<Bits>4</Bits>
+<Bits>2</Bits>
 <Attribute>data</Attribute>
 <CType>int</CType>
 </RtlPorts>

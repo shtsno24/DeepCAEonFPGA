@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2018.3.1 (lin64) Build 2489853 Tue Mar 26 04:18:30 MDT 2019
-//Date        : Tue Dec 17 20:01:57 2019
+//Date        : Tue Dec 17 20:37:45 2019
 //Host        : masudalab-ubuntu running 64-bit Ubuntu 18.04.3 LTS
 //Command     : generate_target design_1.bd
 //Design      : design_1
@@ -9,7 +9,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=14,numReposBlks=8,numNonXlnxBlks=0,numHierBlks=6,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=1,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=59,da_clkrst_cnt=14,da_ps7_cnt=1,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
+(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=14,numReposBlks=8,numNonXlnxBlks=0,numHierBlks=6,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=1,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=60,da_clkrst_cnt=14,da_ps7_cnt=1,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
 module design_1
    (DDR_addr,
     DDR_ba,
@@ -54,12 +54,12 @@ module design_1
   (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_PORB" *) inout FIXED_IO_ps_porb;
   (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_SRSTB" *) inout FIXED_IO_ps_srstb;
 
-  wire [31:0]axi_dma_in_M_AXIS_MM2S_TDATA;
-  wire [3:0]axi_dma_in_M_AXIS_MM2S_TKEEP;
+  wire [15:0]axi_dma_in_M_AXIS_MM2S_TDATA;
+  wire [1:0]axi_dma_in_M_AXIS_MM2S_TKEEP;
   wire axi_dma_in_M_AXIS_MM2S_TLAST;
   wire axi_dma_in_M_AXIS_MM2S_TREADY;
   wire axi_dma_in_M_AXIS_MM2S_TVALID;
-  wire [31:0]axi_dma_in_M_AXI_MM2S_ARADDR;
+  wire [63:0]axi_dma_in_M_AXI_MM2S_ARADDR;
   wire [1:0]axi_dma_in_M_AXI_MM2S_ARBURST;
   wire [3:0]axi_dma_in_M_AXI_MM2S_ARCACHE;
   wire [7:0]axi_dma_in_M_AXI_MM2S_ARLEN;
@@ -121,8 +121,8 @@ module design_1
   wire axi_smc_M00_AXI_WREADY;
   wire [7:0]axi_smc_M00_AXI_WSTRB;
   wire axi_smc_M00_AXI_WVALID;
-  wire [31:0]network_0_output_data_TDATA;
-  wire [3:0]network_0_output_data_TKEEP;
+  wire [15:0]network_0_output_data_TDATA;
+  wire [1:0]network_0_output_data_TKEEP;
   wire [0:0]network_0_output_data_TLAST;
   wire network_0_output_data_TREADY;
   wire network_0_output_data_TVALID;
@@ -386,7 +386,7 @@ module design_1
         .S01_AXI_wvalid(axi_dma_out_M_AXI_S2MM_WVALID),
         .aclk(processing_system7_0_FCLK_CLK0),
         .aresetn(rst_ps7_0_100M_peripheral_aresetn));
-  design_1_network_0_0 network_0
+  design_1_network_0_1 network_0
        (.ap_clk(processing_system7_0_FCLK_CLK0),
         .ap_rst_n(rst_ps7_0_100M_peripheral_aresetn),
         .input_data_TDATA(axi_dma_in_M_AXIS_MM2S_TDATA),
@@ -395,7 +395,7 @@ module design_1
         .input_data_TKEEP(axi_dma_in_M_AXIS_MM2S_TKEEP),
         .input_data_TLAST(axi_dma_in_M_AXIS_MM2S_TLAST),
         .input_data_TREADY(axi_dma_in_M_AXIS_MM2S_TREADY),
-        .input_data_TSTRB({1'b1,1'b1,1'b1,1'b1}),
+        .input_data_TSTRB({1'b1,1'b1}),
         .input_data_TUSER(1'b0),
         .input_data_TVALID(axi_dma_in_M_AXIS_MM2S_TVALID),
         .output_data_TDATA(network_0_output_data_TDATA),

@@ -17,9 +17,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 16167 
+INFO: Helper process launched with PID 22430 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1471.867 ; gain = 96.883 ; free physical = 1600 ; free virtual = 7405
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1471.645 ; gain = 98.883 ; free physical = 994 ; free virtual = 6852
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'design_1_axi_smc_0' [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/synth/design_1_axi_smc_0.v:57]
 INFO: [Synth 8-6157] synthesizing module 'bd_afc3' [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:10]
@@ -1168,7 +1168,7 @@ WARNING: [Synth 8-3331] design xpm_memory_base__parameterized10 has unconnected 
 WARNING: [Synth 8-3331] design xpm_memory_base__parameterized10 has unconnected port dinb[62]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1651.617 ; gain = 276.633 ; free physical = 1238 ; free virtual = 7049
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 1644.395 ; gain = 271.633 ; free physical = 667 ; free virtual = 6536
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1181,10 +1181,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1651.617 ; gain = 276.633 ; free physical = 1233 ; free virtual = 7044
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 1644.395 ; gain = 271.633 ; free physical = 640 ; free virtual = 6509
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1651.617 ; gain = 276.633 ; free physical = 1233 ; free virtual = 7044
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 1644.395 ; gain = 271.633 ; free physical = 640 ; free virtual = 6509
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -1269,26 +1269,26 @@ WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SU
 Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'inst/s01_nodes/s01_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/tools/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_axi_smc_0_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_axi_smc_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2436.266 ; gain = 0.000 ; free physical = 964 ; free virtual = 6777
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2416.676 ; gain = 0.000 ; free physical = 209 ; free virtual = 5387
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2436.266 ; gain = 0.000 ; free physical = 957 ; free virtual = 6771
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2416.676 ; gain = 0.000 ; free physical = 208 ; free virtual = 5386
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 13 instances were transformed.
   FDR => FDRE: 12 instances
   SRL16 => SRL16E: 1 instances
 
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2436.266 ; gain = 0.000 ; free physical = 956 ; free virtual = 6769
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.61 ; elapsed = 00:00:00.32 . Memory (MB): peak = 2436.266 ; gain = 0.000 ; free physical = 951 ; free virtual = 6765
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2416.676 ; gain = 0.000 ; free physical = 216 ; free virtual = 5394
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.50 ; elapsed = 00:00:00.45 . Memory (MB): peak = 2416.676 ; gain = 0.000 ; free physical = 215 ; free virtual = 5393
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 2436.266 ; gain = 1061.281 ; free physical = 1321 ; free virtual = 7135
+Finished Constraint Validation : Time (s): cpu = 00:00:37 ; elapsed = 00:00:44 . Memory (MB): peak = 2416.676 ; gain = 1043.914 ; free physical = 702 ; free virtual = 5881
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 2436.266 ; gain = 1061.281 ; free physical = 1321 ; free virtual = 7135
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:37 ; elapsed = 00:00:44 . Memory (MB): peak = 2416.676 ; gain = 1043.914 ; free physical = 702 ; free virtual = 5880
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -1317,7 +1317,7 @@ Applied set_property DONT_TOUCH = true for inst/s00_nodes/s00_r_node/inst/inst_m
 Applied set_property DONT_TOUCH = true for inst/s01_nodes/s01_b_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for inst/s01_nodes/s01_w_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 2436.266 ; gain = 1061.281 ; free physical = 1319 ; free virtual = 7133
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:44 . Memory (MB): peak = 2416.676 ; gain = 1043.914 ; free physical = 694 ; free virtual = 5872
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-4471] merging register 'seq_cnt_en_reg' into 'from_sys_reg' [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:377]
 INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
@@ -1377,7 +1377,7 @@ INFO: [Synth 8-5545] ROM "gen_w_ch.accum_reg[bytes][0][userdata]" won't be mappe
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'gen_axi.gen_write.write_cs_reg' using encoding 'one-hot' in module 'sc_mmu_v1_0_7_decerr_slave'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 2436.266 ; gain = 1061.281 ; free physical = 2007 ; free virtual = 7822
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:43 ; elapsed = 00:00:51 . Memory (MB): peak = 2416.676 ; gain = 1043.914 ; free physical = 1451 ; free virtual = 6635
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1388,7 +1388,7 @@ Report RTL Partitions:
 |2     |sc_exit_v1_0_8_axi3_conv__GC0          |           1|      4812|
 |3     |sc_exit_v1_0_8_splitter__GC0           |           1|        18|
 |4     |sc_exit_v1_0_8_top__GC0                |           1|       533|
-|5     |sc_mmu_v1_0_7_top__GC0                 |           1|      2086|
+|5     |sc_mmu_v1_0_7_top__GC0                 |           1|      2150|
 |6     |s00_entry_pipeline_imp_USCCV8__GC0     |           1|       242|
 |7     |sc_mmu_v1_0_7_top__parameterized0__GC0 |           1|      2150|
 |8     |s01_entry_pipeline_imp_1W4H5O0__GC0    |           1|       242|
@@ -1689,7 +1689,7 @@ Detailed RTL Component Info :
 	   6 Input      1 Bit        Muxes := 5     
 	  12 Input      1 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 2     
-Module sc_si_converter_v1_0_7_splitter 
+Module sc_si_converter_v1_0_7_splitter__1 
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input      8 Bit       Adders := 2     
@@ -1749,7 +1749,7 @@ Detailed RTL Component Info :
 	   6 Input      1 Bit        Muxes := 5     
 	  12 Input      1 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 2     
-Module sc_si_converter_v1_0_7_splitter__parameterized0 
+Module sc_si_converter_v1_0_7_splitter 
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input      8 Bit       Adders := 2     
@@ -3641,56 +3641,56 @@ INFO: [Synth 8-3333] propagating constant 1 across sequential element (sc_util_v
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (sc_util_v1_0_4_axi_reg_stall__2:/\m_vector_i_reg[1025] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (sc_util_v1_0_4_axi_reg_stall__2:/\m_vector_i_reg[1028] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (sc_util_v1_0_4_axi_reg_stall__2:/\m_vector_i_reg[1133] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\s00_entry_pipeline/s00_mmu/inst /ar_reg_stall/\skid_buffer_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\s00_entry_pipeline/s00_mmu/inst /ar_reg_stall/\skid_buffer_reg[1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\s00_entry_pipeline/s00_mmu/inst /ar_reg_stall/\skid_buffer_reg[2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\s00_entry_pipeline/s00_mmu/inst /ar_reg_stall/\skid_buffer_reg[3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\s00_entry_pipeline/s00_mmu/inst /ar_reg_stall/\skid_buffer_reg[4] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\s00_entry_pipeline/s00_mmu/inst /ar_reg_stall/\skid_buffer_reg[5] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\s00_entry_pipeline/s00_mmu/inst /ar_reg_stall/\skid_buffer_reg[6] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\s00_entry_pipeline/s00_mmu/inst /ar_reg_stall/\skid_buffer_reg[7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\s00_entry_pipeline/s00_mmu/inst /ar_reg_stall/\skid_buffer_reg[8] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\s00_entry_pipeline/s00_mmu/inst /ar_reg_stall/\skid_buffer_reg[9] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\s00_entry_pipeline/s00_mmu/inst /ar_reg_stall/\skid_buffer_reg[10] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\s00_entry_pipeline/s00_mmu/inst /ar_reg_stall/\skid_buffer_reg[11] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\s00_entry_pipeline/s00_mmu/inst /ar_reg_stall/\skid_buffer_reg[12] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\s00_entry_pipeline/s00_mmu/inst /ar_reg_stall/\skid_buffer_reg[13] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\s00_entry_pipeline/s00_mmu/inst /ar_reg_stall/\skid_buffer_reg[14] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\s00_entry_pipeline/s00_mmu/inst /ar_reg_stall/\skid_buffer_reg[15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\s00_entry_pipeline/s00_mmu/inst /ar_reg_stall/\skid_buffer_reg[16] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\s00_entry_pipeline/s00_mmu/inst /ar_reg_stall/\skid_buffer_reg[17] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\s00_entry_pipeline/s00_mmu/inst /ar_reg_stall/\skid_buffer_reg[18] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\s00_entry_pipeline/s00_mmu/inst /ar_reg_stall/\skid_buffer_reg[19] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\s00_entry_pipeline/s00_mmu/inst /ar_reg_stall/\skid_buffer_reg[20] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\s00_entry_pipeline/s00_mmu/inst /ar_reg_stall/\skid_buffer_reg[21] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\s00_entry_pipeline/s00_mmu/inst /ar_reg_stall/\skid_buffer_reg[22] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\s00_entry_pipeline/s00_mmu/inst /ar_reg_stall/\skid_buffer_reg[23] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\s00_entry_pipeline/s00_mmu/inst /ar_reg_stall/\skid_buffer_reg[24] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\s00_entry_pipeline/s00_mmu/inst /ar_reg_stall/\skid_buffer_reg[25] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\s00_entry_pipeline/s00_mmu/inst /ar_reg_stall/\skid_buffer_reg[26] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\s00_entry_pipeline/s00_mmu/inst /ar_reg_stall/\skid_buffer_reg[27] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\s00_entry_pipeline/s00_mmu/inst /ar_reg_stall/\skid_buffer_reg[28] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\s00_entry_pipeline/s00_mmu/inst /ar_reg_stall/\skid_buffer_reg[29] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\s00_entry_pipeline/s00_mmu/inst /ar_reg_stall/\skid_buffer_reg[30] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\s00_entry_pipeline/s00_mmu/inst /ar_reg_stall/\skid_buffer_reg[31] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\s00_entry_pipeline/s00_mmu/inst /ar_reg_stall/\skid_buffer_reg[32] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\s00_entry_pipeline/s00_mmu/inst /ar_reg_stall/\skid_buffer_reg[33] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\s00_entry_pipeline/s00_mmu/inst /ar_reg_stall/\skid_buffer_reg[34] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\s00_entry_pipeline/s00_mmu/inst /ar_reg_stall/\skid_buffer_reg[35] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\s00_entry_pipeline/s00_mmu/inst /ar_reg_stall/\skid_buffer_reg[36] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\s00_entry_pipeline/s00_mmu/inst /ar_reg_stall/\skid_buffer_reg[37] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\s00_entry_pipeline/s00_mmu/inst /ar_reg_stall/\skid_buffer_reg[38] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\s00_entry_pipeline/s00_mmu/inst /ar_reg_stall/\skid_buffer_reg[39] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\s00_entry_pipeline/s00_mmu/inst /ar_reg_stall/\skid_buffer_reg[40] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\s00_entry_pipeline/s00_mmu/inst /ar_reg_stall/\skid_buffer_reg[41] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\s00_entry_pipeline/s00_mmu/inst /ar_reg_stall/\skid_buffer_reg[42] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\s00_entry_pipeline/s00_mmu/inst /ar_reg_stall/\skid_buffer_reg[43] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\s00_entry_pipeline/s00_mmu/inst /ar_reg_stall/\skid_buffer_reg[44] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\s00_entry_pipeline/s00_mmu/inst /ar_reg_stall/\skid_buffer_reg[45] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\s00_entry_pipeline/s00_mmu/inst /ar_reg_stall/\skid_buffer_reg[46] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (sc_util_v1_0_4_axi_reg_stall__6:/\skid_buffer_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (sc_util_v1_0_4_axi_reg_stall__6:/\skid_buffer_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (sc_util_v1_0_4_axi_reg_stall__6:/\skid_buffer_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (sc_util_v1_0_4_axi_reg_stall__6:/\skid_buffer_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (sc_util_v1_0_4_axi_reg_stall__6:/\skid_buffer_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (sc_util_v1_0_4_axi_reg_stall__6:/\skid_buffer_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (sc_util_v1_0_4_axi_reg_stall__6:/\skid_buffer_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (sc_util_v1_0_4_axi_reg_stall__6:/\skid_buffer_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (sc_util_v1_0_4_axi_reg_stall__6:/\skid_buffer_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (sc_util_v1_0_4_axi_reg_stall__6:/\skid_buffer_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (sc_util_v1_0_4_axi_reg_stall__6:/\skid_buffer_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (sc_util_v1_0_4_axi_reg_stall__6:/\skid_buffer_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (sc_util_v1_0_4_axi_reg_stall__6:/\skid_buffer_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (sc_util_v1_0_4_axi_reg_stall__6:/\skid_buffer_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (sc_util_v1_0_4_axi_reg_stall__6:/\skid_buffer_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (sc_util_v1_0_4_axi_reg_stall__6:/\skid_buffer_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (sc_util_v1_0_4_axi_reg_stall__6:/\skid_buffer_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (sc_util_v1_0_4_axi_reg_stall__6:/\skid_buffer_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (sc_util_v1_0_4_axi_reg_stall__6:/\skid_buffer_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (sc_util_v1_0_4_axi_reg_stall__6:/\skid_buffer_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (sc_util_v1_0_4_axi_reg_stall__6:/\skid_buffer_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (sc_util_v1_0_4_axi_reg_stall__6:/\skid_buffer_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (sc_util_v1_0_4_axi_reg_stall__6:/\skid_buffer_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (sc_util_v1_0_4_axi_reg_stall__6:/\skid_buffer_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (sc_util_v1_0_4_axi_reg_stall__6:/\skid_buffer_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (sc_util_v1_0_4_axi_reg_stall__6:/\skid_buffer_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (sc_util_v1_0_4_axi_reg_stall__6:/\skid_buffer_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (sc_util_v1_0_4_axi_reg_stall__6:/\skid_buffer_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (sc_util_v1_0_4_axi_reg_stall__6:/\skid_buffer_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (sc_util_v1_0_4_axi_reg_stall__6:/\skid_buffer_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (sc_util_v1_0_4_axi_reg_stall__6:/\skid_buffer_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (sc_util_v1_0_4_axi_reg_stall__6:/\skid_buffer_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (sc_util_v1_0_4_axi_reg_stall__6:/\skid_buffer_reg[32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (sc_util_v1_0_4_axi_reg_stall__6:/\skid_buffer_reg[33] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (sc_util_v1_0_4_axi_reg_stall__6:/\skid_buffer_reg[34] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (sc_util_v1_0_4_axi_reg_stall__6:/\skid_buffer_reg[35] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (sc_util_v1_0_4_axi_reg_stall__6:/\skid_buffer_reg[36] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (sc_util_v1_0_4_axi_reg_stall__6:/\skid_buffer_reg[37] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (sc_util_v1_0_4_axi_reg_stall__6:/\skid_buffer_reg[38] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (sc_util_v1_0_4_axi_reg_stall__6:/\skid_buffer_reg[39] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (sc_util_v1_0_4_axi_reg_stall__6:/\skid_buffer_reg[40] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (sc_util_v1_0_4_axi_reg_stall__6:/\skid_buffer_reg[41] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (sc_util_v1_0_4_axi_reg_stall__6:/\skid_buffer_reg[42] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (sc_util_v1_0_4_axi_reg_stall__6:/\skid_buffer_reg[43] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (sc_util_v1_0_4_axi_reg_stall__6:/\skid_buffer_reg[44] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (sc_util_v1_0_4_axi_reg_stall__6:/\skid_buffer_reg[45] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (sc_util_v1_0_4_axi_reg_stall__6:/\skid_buffer_reg[46] )
 INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:20 ; elapsed = 00:01:25 . Memory (MB): peak = 2436.266 ; gain = 1061.281 ; free physical = 1912 ; free virtual = 7766
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:25 ; elapsed = 00:01:36 . Memory (MB): peak = 2416.676 ; gain = 1043.914 ; free physical = 1347 ; free virtual = 6569
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -3737,7 +3737,7 @@ Report RTL Partitions:
 |2     |sc_exit_v1_0_8_axi3_conv__GC0          |           1|       950|
 |3     |sc_exit_v1_0_8_splitter__GC0           |           1|        19|
 |4     |sc_exit_v1_0_8_top__GC0                |           1|       237|
-|5     |sc_mmu_v1_0_7_top__GC0                 |           1|       335|
+|5     |sc_mmu_v1_0_7_top__GC0                 |           1|       405|
 |6     |s00_entry_pipeline_imp_USCCV8__GC0     |           1|        39|
 |7     |sc_mmu_v1_0_7_top__parameterized0__GC0 |           1|       361|
 |8     |s01_entry_pipeline_imp_1W4H5O0__GC0    |           1|       194|
@@ -3747,32 +3747,30 @@ Report RTL Partitions:
 |12    |sc_util_v1_0_4_axi_reg_stall__3        |           1|       412|
 |13    |sc_util_v1_0_4_axi_reg_stall__4        |           1|       382|
 |14    |sc_util_v1_0_4_axi_reg_stall__5        |           1|        57|
-|15    |sc_util_v1_0_4_axi_reg_stall__6        |           1|       334|
+|15    |sc_util_v1_0_4_axi_reg_stall__6        |           2|       494|
 |16    |sc_util_v1_0_4_axi_reg_stall__7        |           1|        41|
-|17    |sc_util_v1_0_4_axi_reg_stall__8        |           1|       332|
+|17    |sc_util_v1_0_4_axi_reg_stall__8        |           2|       492|
 |18    |sc_util_v1_0_4_axi_reg_stall__9        |           1|        30|
 |19    |sc_util_v1_0_4_axi_reg_stall__10       |           1|        30|
 |20    |sc_util_v1_0_4_axi_reg_stall__11       |           1|       222|
 |21    |sc_util_v1_0_4_axi_reg_stall__12       |           1|        28|
 |22    |sc_util_v1_0_4_axi_reg_stall__13       |           1|        41|
-|23    |sc_util_v1_0_4_axi_reg_stall__14       |           1|       494|
-|24    |sc_util_v1_0_4_axi_reg_stall__15       |           1|        30|
-|25    |sc_util_v1_0_4_axi_reg_stall__16       |           1|       492|
-|26    |sc_util_v1_0_4_axi_reg_stall__17       |           1|       232|
-|27    |sc_util_v1_0_4_axi_reg_stall__18       |           1|        28|
-|28    |sc_util_v1_0_4_axi_reg_stall__19       |           1|        57|
+|23    |sc_util_v1_0_4_axi_reg_stall__14       |           1|        30|
+|24    |sc_util_v1_0_4_axi_reg_stall__15       |           1|       232|
+|25    |sc_util_v1_0_4_axi_reg_stall__16       |           1|        28|
+|26    |sc_util_v1_0_4_axi_reg_stall__17       |           1|        57|
 +------+---------------------------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:25 ; elapsed = 00:01:31 . Memory (MB): peak = 2436.266 ; gain = 1061.281 ; free physical = 1795 ; free virtual = 7649
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:30 ; elapsed = 00:01:42 . Memory (MB): peak = 2416.676 ; gain = 1043.914 ; free physical = 1232 ; free virtual = 6455
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:31 ; elapsed = 00:01:37 . Memory (MB): peak = 2436.266 ; gain = 1061.281 ; free physical = 1756 ; free virtual = 7611
+Finished Timing Optimization : Time (s): cpu = 00:01:36 ; elapsed = 00:01:48 . Memory (MB): peak = 2416.676 ; gain = 1043.914 ; free physical = 1193 ; free virtual = 6416
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -3818,7 +3816,7 @@ Report RTL Partitions:
 |2     |sc_exit_v1_0_8_axi3_conv__GC0          |           1|       950|
 |3     |sc_exit_v1_0_8_splitter__GC0           |           1|        19|
 |4     |sc_exit_v1_0_8_top__GC0                |           1|       237|
-|5     |sc_mmu_v1_0_7_top__GC0                 |           1|       335|
+|5     |sc_mmu_v1_0_7_top__GC0                 |           1|       405|
 |6     |s00_entry_pipeline_imp_USCCV8__GC0     |           1|        39|
 |7     |sc_mmu_v1_0_7_top__parameterized0__GC0 |           1|       370|
 |8     |sc_util_v1_0_4_axi_reg_stall__1        |           1|       377|
@@ -3826,21 +3824,19 @@ Report RTL Partitions:
 |10    |sc_util_v1_0_4_axi_reg_stall__3        |           1|       412|
 |11    |sc_util_v1_0_4_axi_reg_stall__4        |           1|       382|
 |12    |sc_util_v1_0_4_axi_reg_stall__5        |           1|        57|
-|13    |sc_util_v1_0_4_axi_reg_stall__6        |           1|       334|
+|13    |sc_util_v1_0_4_axi_reg_stall__6        |           2|       494|
 |14    |sc_util_v1_0_4_axi_reg_stall__7        |           1|        41|
-|15    |sc_util_v1_0_4_axi_reg_stall__8        |           1|       332|
+|15    |sc_util_v1_0_4_axi_reg_stall__8        |           2|       492|
 |16    |sc_util_v1_0_4_axi_reg_stall__9        |           1|        30|
 |17    |sc_util_v1_0_4_axi_reg_stall__10       |           1|        30|
 |18    |sc_util_v1_0_4_axi_reg_stall__11       |           1|       222|
 |19    |sc_util_v1_0_4_axi_reg_stall__12       |           1|        28|
 |20    |sc_util_v1_0_4_axi_reg_stall__13       |           1|        41|
-|21    |sc_util_v1_0_4_axi_reg_stall__14       |           1|       494|
-|22    |sc_util_v1_0_4_axi_reg_stall__15       |           1|        30|
-|23    |sc_util_v1_0_4_axi_reg_stall__16       |           1|       492|
-|24    |sc_util_v1_0_4_axi_reg_stall__17       |           1|       232|
-|25    |sc_util_v1_0_4_axi_reg_stall__18       |           1|        28|
-|26    |sc_util_v1_0_4_axi_reg_stall__19       |           1|        57|
-|27    |bd_afc3_GT0                            |           1|      9181|
+|21    |sc_util_v1_0_4_axi_reg_stall__14       |           1|        30|
+|22    |sc_util_v1_0_4_axi_reg_stall__15       |           1|       232|
+|23    |sc_util_v1_0_4_axi_reg_stall__16       |           1|        28|
+|24    |sc_util_v1_0_4_axi_reg_stall__17       |           1|        57|
+|25    |bd_afc3_GT0                            |           1|      9181|
 +------+---------------------------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Technology Mapping
@@ -3849,7 +3845,7 @@ INFO: [Synth 8-3332] Sequential element (gen_endpoint.decerr_slave_inst/FSM_oneh
 INFO: [Synth 8-3332] Sequential element (gen_endpoint.decerr_slave_inst/FSM_onehot_gen_axi.gen_write.write_cs_reg[1]) is unused and will be removed from module sc_mmu_v1_0_7_top.
 INFO: [Synth 8-3332] Sequential element (gen_endpoint.decerr_slave_inst/FSM_onehot_gen_axi.gen_write.write_cs_reg[0]) is unused and will be removed from module sc_mmu_v1_0_7_top.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:36 ; elapsed = 00:01:42 . Memory (MB): peak = 2436.266 ; gain = 1061.281 ; free physical = 1800 ; free virtual = 7654
+Finished Technology Mapping : Time (s): cpu = 00:01:42 ; elapsed = 00:01:54 . Memory (MB): peak = 2416.676 ; gain = 1043.914 ; free physical = 1232 ; free virtual = 6455
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -3896,7 +3892,7 @@ INFO: [Synth 8-5365] Flop inst_mi_handler/gen_normal_area.inst_fifo_node_payld/g
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:37 ; elapsed = 00:01:43 . Memory (MB): peak = 2436.266 ; gain = 1061.281 ; free physical = 1799 ; free virtual = 7653
+Finished IO Insertion : Time (s): cpu = 00:01:42 ; elapsed = 00:01:55 . Memory (MB): peak = 2416.676 ; gain = 1043.914 ; free physical = 1232 ; free virtual = 6455
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -3909,7 +3905,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:37 ; elapsed = 00:01:43 . Memory (MB): peak = 2436.266 ; gain = 1061.281 ; free physical = 1799 ; free virtual = 7653
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:43 ; elapsed = 00:01:55 . Memory (MB): peak = 2416.676 ; gain = 1043.914 ; free physical = 1232 ; free virtual = 6455
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -3921,25 +3917,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:37 ; elapsed = 00:01:43 . Memory (MB): peak = 2436.266 ; gain = 1061.281 ; free physical = 1799 ; free virtual = 7653
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:43 ; elapsed = 00:01:56 . Memory (MB): peak = 2416.676 ; gain = 1043.914 ; free physical = 1232 ; free virtual = 6455
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:37 ; elapsed = 00:01:43 . Memory (MB): peak = 2436.266 ; gain = 1061.281 ; free physical = 1799 ; free virtual = 7653
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:43 ; elapsed = 00:01:56 . Memory (MB): peak = 2416.676 ; gain = 1043.914 ; free physical = 1232 ; free virtual = 6455
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:38 ; elapsed = 00:01:44 . Memory (MB): peak = 2436.266 ; gain = 1061.281 ; free physical = 1802 ; free virtual = 7656
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:44 ; elapsed = 00:01:56 . Memory (MB): peak = 2416.676 ; gain = 1043.914 ; free physical = 1232 ; free virtual = 6455
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:38 ; elapsed = 00:01:44 . Memory (MB): peak = 2436.266 ; gain = 1061.281 ; free physical = 1802 ; free virtual = 7656
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:44 ; elapsed = 00:01:56 . Memory (MB): peak = 2416.676 ; gain = 1043.914 ; free physical = 1232 ; free virtual = 6455
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -3971,18 +3967,18 @@ Report Cell Usage:
 +------+---------+------+
 |1     |CARRY4   |    28|
 |2     |LUT1     |   139|
-|3     |LUT2     |   192|
-|4     |LUT3     |   878|
-|5     |LUT4     |   345|
+|3     |LUT2     |   191|
+|4     |LUT3     |   940|
+|5     |LUT4     |   354|
 |6     |LUT5     |   434|
-|7     |LUT6     |   542|
+|7     |LUT6     |   544|
 |8     |RAM16X1D |     2|
 |9     |RAM32M   |   208|
 |10    |RAM32X1D |     5|
 |11    |SRL16    |     1|
 |12    |SRL16E   |    38|
 |13    |FDR      |     4|
-|14    |FDRE     |  4023|
+|14    |FDRE     |  4151|
 |15    |FDSE     |   148|
 +------+---------+------+
 
@@ -3990,8 +3986,8 @@ Report Instance Areas:
 +------+------------------------------------------------------------------------------------------------+----------------------------------------------------------+------+
 |      |Instance                                                                                        |Module                                                    |Cells |
 +------+------------------------------------------------------------------------------------------------+----------------------------------------------------------+------+
-|1     |top                                                                                             |                                                          |  6987|
-|2     |  inst                                                                                          |bd_afc3                                                   |  6987|
+|1     |top                                                                                             |                                                          |  7187|
+|2     |  inst                                                                                          |bd_afc3                                                   |  7187|
 |3     |    clk_map                                                                                     |clk_map_imp_5Y9LOC                                        |    41|
 |4     |      psr_aclk                                                                                  |bd_afc3_psr_aclk_0                                        |    41|
 |5     |        U0                                                                                      |proc_sys_reset                                            |    41|
@@ -4161,13 +4157,13 @@ Report Instance Areas:
 |169   |                \gen_mem_rep[0].inst_rd_addrb                                                   |sc_util_v1_0_4_counter__parameterized3                    |     6|
 |170   |                \gen_mem_rep[0].inst_wr_addra                                                   |sc_util_v1_0_4_counter__parameterized3_58                 |     6|
 |171   |                \gen_wr.inst_wr_addra_p1                                                        |sc_util_v1_0_4_counter__parameterized4                    |    10|
-|172   |    s00_entry_pipeline                                                                          |s00_entry_pipeline_imp_USCCV8                             |   567|
-|173   |      s00_mmu                                                                                   |bd_afc3_s00mmu_0                                          |   550|
-|174   |        inst                                                                                    |sc_mmu_v1_0_7_top                                         |   550|
-|175   |          ar_reg_stall                                                                          |sc_util_v1_0_4_axi_reg_stall_53                           |   187|
-|176   |          ar_sreg                                                                               |sc_util_v1_0_4_axi_reg_stall_54                           |   196|
+|172   |    s00_entry_pipeline                                                                          |s00_entry_pipeline_imp_USCCV8                             |   767|
+|173   |      s00_mmu                                                                                   |bd_afc3_s00mmu_0                                          |   750|
+|174   |        inst                                                                                    |sc_mmu_v1_0_7_top                                         |   750|
+|175   |          ar_reg_stall                                                                          |sc_util_v1_0_4_axi_reg_stall_53                           |   280|
+|176   |          ar_sreg                                                                               |sc_util_v1_0_4_axi_reg_stall_54                           |   305|
 |177   |          \gen_endpoint.decerr_slave_inst                                                       |sc_mmu_v1_0_7_decerr_slave_55                             |    33|
-|178   |          r_sreg                                                                                |sc_util_v1_0_4_axi_reg_stall_56                           |   121|
+|178   |          r_sreg                                                                                |sc_util_v1_0_4_axi_reg_stall_56                           |   118|
 |179   |      s00_si_converter                                                                          |bd_afc3_s00sic_0                                          |    17|
 |180   |        inst                                                                                    |sc_si_converter_v1_0_7_top                                |    17|
 |181   |    s00_nodes                                                                                   |s00_nodes_imp_Y7M43I                                      |   660|
@@ -4223,7 +4219,7 @@ Report Instance Areas:
 |231   |          w_sreg                                                                                |sc_util_v1_0_4_axi_reg_stall_36                           |   124|
 |232   |      s01_si_converter                                                                          |bd_afc3_s01sic_0                                          |   110|
 |233   |        inst                                                                                    |sc_si_converter_v1_0_7_top__parameterized0                |   110|
-|234   |          splitter_inst                                                                         |sc_si_converter_v1_0_7_splitter__parameterized0           |    97|
+|234   |          splitter_inst                                                                         |sc_si_converter_v1_0_7_splitter                           |    97|
 |235   |            \gen_no_wsplitter.gen_endpoint_woffset.gen_wbypass_offset_fifo.wbypass_offset_fifo  |sc_util_v1_0_4_axic_reg_srl_fifo__parameterized5          |    96|
 |236   |              \gen_srls[0].srl_nx1                                                              |sc_util_v1_0_4_srl_rtl                                    |     1|
 |237   |              \gen_srls[10].srl_nx1                                                             |sc_util_v1_0_4_srl_rtl_21                                 |     2|
@@ -4322,17 +4318,17 @@ Report Instance Areas:
 |330   |          \gen_mi[0].inst_opipe_payld                                                           |sc_util_v1_0_4_pipeline__parameterized17                  |    88|
 +------+------------------------------------------------------------------------------------------------+----------------------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:38 ; elapsed = 00:01:44 . Memory (MB): peak = 2436.266 ; gain = 1061.281 ; free physical = 1802 ; free virtual = 7656
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:44 ; elapsed = 00:01:56 . Memory (MB): peak = 2416.676 ; gain = 1043.914 ; free physical = 1232 ; free virtual = 6455
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 5183 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:17 ; elapsed = 00:01:24 . Memory (MB): peak = 2436.266 ; gain = 276.633 ; free physical = 1856 ; free virtual = 7710
-Synthesis Optimization Complete : Time (s): cpu = 00:01:38 ; elapsed = 00:01:44 . Memory (MB): peak = 2436.273 ; gain = 1061.281 ; free physical = 1856 ; free virtual = 7710
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:23 ; elapsed = 00:01:34 . Memory (MB): peak = 2416.676 ; gain = 271.633 ; free physical = 1287 ; free virtual = 6511
+Synthesis Optimization Complete : Time (s): cpu = 00:01:44 ; elapsed = 00:01:56 . Memory (MB): peak = 2416.684 ; gain = 1043.914 ; free physical = 1287 ; free virtual = 6510
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 248 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2436.273 ; gain = 0.000 ; free physical = 1798 ; free virtual = 7652
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2416.684 ; gain = 0.000 ; free physical = 1230 ; free virtual = 6453
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 220 instances were transformed.
   FDR => FDRE: 4 instances
@@ -4344,16 +4340,16 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 580 Infos, 127 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:41 ; elapsed = 00:01:47 . Memory (MB): peak = 2436.273 ; gain = 1061.406 ; free physical = 1867 ; free virtual = 7721
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2436.273 ; gain = 0.000 ; free physical = 1867 ; free virtual = 7721
+synth_design: Time (s): cpu = 00:01:47 ; elapsed = 00:01:59 . Memory (MB): peak = 2416.684 ; gain = 1055.492 ; free physical = 1299 ; free virtual = 6522
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2416.684 ; gain = 0.000 ; free physical = 1299 ; free virtual = 6522
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint '/home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/design_1_axi_smc_0_synth_1/design_1_axi_smc_0.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_axi_smc_0, cache-ID = a355c532ae735cd5
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_axi_smc_0, cache-ID = d477313965376590
 INFO: [Coretcl 2-1174] Renamed 329 cell refs.
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2460.277 ; gain = 0.000 ; free physical = 1851 ; free virtual = 7718
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2440.688 ; gain = 0.000 ; free physical = 1279 ; free virtual = 6515
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint '/home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/design_1_axi_smc_0_synth_1/design_1_axi_smc_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_axi_smc_0_utilization_synth.rpt -pb design_1_axi_smc_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Dec 17 20:05:12 2019...
+INFO: [Common 17-206] Exiting Vivado at Tue Dec 17 20:40:20 2019...

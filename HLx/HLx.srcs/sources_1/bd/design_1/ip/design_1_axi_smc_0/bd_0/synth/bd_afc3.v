@@ -109,7 +109,7 @@ module bd_afc3
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M00_AXI WREADY" *) input M00_AXI_wready;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M00_AXI WSTRB" *) output [7:0]M00_AXI_wstrb;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M00_AXI WVALID" *) output M00_AXI_wvalid;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI ARADDR" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S00_AXI, ADDR_WIDTH 32, ARUSER_WIDTH 0, AWUSER_WIDTH 0, BUSER_WIDTH 0, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, DATA_WIDTH 32, FREQ_HZ 100000000, HAS_BRESP 0, HAS_BURST 0, HAS_CACHE 0, HAS_LOCK 0, HAS_PROT 0, HAS_QOS 0, HAS_REGION 0, HAS_RRESP 1, HAS_WSTRB 0, ID_WIDTH 0, INSERT_VIP 0, MAX_BURST_LENGTH 16, NUM_READ_OUTSTANDING 16, NUM_READ_THREADS 1, NUM_WRITE_OUTSTANDING 2, NUM_WRITE_THREADS 1, PHASE 0.000, PROTOCOL AXI4, READ_WRITE_MODE READ_ONLY, RUSER_BITS_PER_BYTE 0, RUSER_WIDTH 0, SUPPORTS_NARROW_BURST 0, WUSER_BITS_PER_BYTE 0, WUSER_WIDTH 0" *) input [31:0]S00_AXI_araddr;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI ARADDR" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S00_AXI, ADDR_WIDTH 64, ARUSER_WIDTH 0, AWUSER_WIDTH 0, BUSER_WIDTH 0, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, DATA_WIDTH 32, FREQ_HZ 100000000, HAS_BRESP 0, HAS_BURST 0, HAS_CACHE 0, HAS_LOCK 0, HAS_PROT 0, HAS_QOS 0, HAS_REGION 0, HAS_RRESP 1, HAS_WSTRB 0, ID_WIDTH 0, INSERT_VIP 0, MAX_BURST_LENGTH 16, NUM_READ_OUTSTANDING 16, NUM_READ_THREADS 1, NUM_WRITE_OUTSTANDING 2, NUM_WRITE_THREADS 1, PHASE 0.000, PROTOCOL AXI4, READ_WRITE_MODE READ_ONLY, RUSER_BITS_PER_BYTE 0, RUSER_WIDTH 0, SUPPORTS_NARROW_BURST 0, WUSER_BITS_PER_BYTE 0, WUSER_WIDTH 0" *) input [63:0]S00_AXI_araddr;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI ARBURST" *) input [1:0]S00_AXI_arburst;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI ARCACHE" *) input [3:0]S00_AXI_arcache;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI ARLEN" *) input [7:0]S00_AXI_arlen;
@@ -145,7 +145,7 @@ module bd_afc3
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.ACLK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.ACLK, ASSOCIATED_BUSIF M00_AXI:S00_AXI:S01_AXI, ASSOCIATED_CLKEN m_sc_aclken, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, FREQ_HZ 100000000, INSERT_VIP 0, PHASE 0.000" *) input aclk;
   (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST.ARESETN RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.ARESETN, INSERT_VIP 0, POLARITY ACTIVE_LOW" *) input aresetn;
 
-  wire [31:0]S00_AXI_1_ARADDR;
+  wire [63:0]S00_AXI_1_ARADDR;
   wire [1:0]S00_AXI_1_ARBURST;
   wire [3:0]S00_AXI_1_ARCACHE;
   wire [7:0]S00_AXI_1_ARLEN;
@@ -333,7 +333,7 @@ module bd_afc3
   wire [1023:0]m00_sc2axi_M_AXI_WUSER;
   wire m00_sc2axi_M_AXI_WVALID;
   wire [0:0]m_axi_aresetn_1;
-  wire [31:0]s00_entry_pipeline_m_axi_ARADDR;
+  wire [63:0]s00_entry_pipeline_m_axi_ARADDR;
   wire [3:0]s00_entry_pipeline_m_axi_ARCACHE;
   wire [0:0]s00_entry_pipeline_m_axi_ARID;
   wire [7:0]s00_entry_pipeline_m_axi_ARLEN;
@@ -423,7 +423,7 @@ module bd_afc3
   assign M00_AXI_wlast = m00_exit_pipeline_m_axi_WLAST;
   assign M00_AXI_wstrb[7:0] = m00_exit_pipeline_m_axi_WSTRB;
   assign M00_AXI_wvalid = m00_exit_pipeline_m_axi_WVALID;
-  assign S00_AXI_1_ARADDR = S00_AXI_araddr[31:0];
+  assign S00_AXI_1_ARADDR = S00_AXI_araddr[63:0];
   assign S00_AXI_1_ARBURST = S00_AXI_arburst[1:0];
   assign S00_AXI_1_ARCACHE = S00_AXI_arcache[3:0];
   assign S00_AXI_1_ARLEN = S00_AXI_arlen[7:0];
@@ -1709,7 +1709,7 @@ module s00_entry_pipeline_imp_USCCV8
     s_axi_rvalid);
   input aclk;
   input aresetn;
-  output [31:0]m_axi_araddr;
+  output [63:0]m_axi_araddr;
   output [3:0]m_axi_arcache;
   output [0:0]m_axi_arid;
   output [7:0]m_axi_arlen;
@@ -1726,7 +1726,7 @@ module s00_entry_pipeline_imp_USCCV8
   input [1:0]m_axi_rresp;
   input [1023:0]m_axi_ruser;
   input m_axi_rvalid;
-  input [31:0]s_axi_araddr;
+  input [63:0]s_axi_araddr;
   input [1:0]s_axi_arburst;
   input [3:0]s_axi_arcache;
   input [7:0]s_axi_arlen;
@@ -1744,7 +1744,7 @@ module s00_entry_pipeline_imp_USCCV8
 
   wire aclk_1;
   wire aresetn_1;
-  wire [31:0]s00_mmu_M_AXI_ARADDR;
+  wire [63:0]s00_mmu_M_AXI_ARADDR;
   wire [1:0]s00_mmu_M_AXI_ARBURST;
   wire [3:0]s00_mmu_M_AXI_ARCACHE;
   wire [7:0]s00_mmu_M_AXI_ARLEN;
@@ -1761,7 +1761,7 @@ module s00_entry_pipeline_imp_USCCV8
   wire [1:0]s00_mmu_M_AXI_RRESP;
   wire [1023:0]s00_mmu_M_AXI_RUSER;
   wire s00_mmu_M_AXI_RVALID;
-  wire [31:0]s00_si_converter_M_AXI_ARADDR;
+  wire [63:0]s00_si_converter_M_AXI_ARADDR;
   wire [3:0]s00_si_converter_M_AXI_ARCACHE;
   wire [0:0]s00_si_converter_M_AXI_ARID;
   wire [7:0]s00_si_converter_M_AXI_ARLEN;
@@ -1778,7 +1778,7 @@ module s00_entry_pipeline_imp_USCCV8
   wire [1:0]s00_si_converter_M_AXI_RRESP;
   wire [1023:0]s00_si_converter_M_AXI_RUSER;
   wire s00_si_converter_M_AXI_RVALID;
-  wire [31:0]s00_transaction_regulator_M_AXI_ARADDR;
+  wire [63:0]s00_transaction_regulator_M_AXI_ARADDR;
   wire [3:0]s00_transaction_regulator_M_AXI_ARCACHE;
   wire [0:0]s00_transaction_regulator_M_AXI_ARID;
   wire [7:0]s00_transaction_regulator_M_AXI_ARLEN;
@@ -1795,7 +1795,7 @@ module s00_entry_pipeline_imp_USCCV8
   wire [1:0]s00_transaction_regulator_M_AXI_RRESP;
   wire [1023:0]s00_transaction_regulator_M_AXI_RUSER;
   wire s00_transaction_regulator_M_AXI_RVALID;
-  wire [31:0]s_axi_1_ARADDR;
+  wire [63:0]s_axi_1_ARADDR;
   wire [1:0]s_axi_1_ARBURST;
   wire [3:0]s_axi_1_ARCACHE;
   wire [7:0]s_axi_1_ARLEN;
@@ -1813,7 +1813,7 @@ module s00_entry_pipeline_imp_USCCV8
 
   assign aclk_1 = aclk;
   assign aresetn_1 = aresetn;
-  assign m_axi_araddr[31:0] = s00_si_converter_M_AXI_ARADDR;
+  assign m_axi_araddr[63:0] = s00_si_converter_M_AXI_ARADDR;
   assign m_axi_arcache[3:0] = s00_si_converter_M_AXI_ARCACHE;
   assign m_axi_arid[0] = s00_si_converter_M_AXI_ARID;
   assign m_axi_arlen[7:0] = s00_si_converter_M_AXI_ARLEN;
@@ -1830,7 +1830,7 @@ module s00_entry_pipeline_imp_USCCV8
   assign s00_si_converter_M_AXI_RRESP = m_axi_rresp[1:0];
   assign s00_si_converter_M_AXI_RUSER = m_axi_ruser[1023:0];
   assign s00_si_converter_M_AXI_RVALID = m_axi_rvalid;
-  assign s_axi_1_ARADDR = s_axi_araddr[31:0];
+  assign s_axi_1_ARADDR = s_axi_araddr[63:0];
   assign s_axi_1_ARBURST = s_axi_arburst[1:0];
   assign s_axi_1_ARCACHE = s_axi_arcache[3:0];
   assign s_axi_1_ARLEN = s_axi_arlen[7:0];
