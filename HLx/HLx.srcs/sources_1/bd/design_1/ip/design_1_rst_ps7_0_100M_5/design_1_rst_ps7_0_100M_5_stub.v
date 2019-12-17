@@ -1,7 +1,7 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2018.3.1 (lin64) Build 2489853 Tue Mar 26 04:18:30 MDT 2019
-// Date        : Mon Dec 16 15:51:01 2019
+// Date        : Mon Dec 16 14:15:56 2019
 // Host        : masudalab-ubuntu running 64-bit Ubuntu 18.04.3 LTS
 // Command     : write_verilog -force -mode synth_stub -rename_top design_1_rst_ps7_0_100M_5 -prefix
 //               design_1_rst_ps7_0_100M_5_ design_1_rst_ps7_0_100M_5_stub.v
