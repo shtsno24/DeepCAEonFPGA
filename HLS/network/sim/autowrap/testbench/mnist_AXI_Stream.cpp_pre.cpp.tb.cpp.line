@@ -76038,7 +76038,7 @@ int network(axis &input_data, axis &output_data) {
   if(i == array_length - 1){
    out.last = 1;
   }
-  out.data = array_head[i];
+  out.data = (int32_t)(array_head[i]);
   output_data << out;
  }
  return(0);

@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2018.3.1 (lin64) Build 2489853 Tue Mar 26 04:18:30 MDT 2019
-//Date        : Tue Dec 17 17:53:27 2019
+//Date        : Tue Dec 17 18:46:25 2019
 //Host        : masudalab-ubuntu running 64-bit Ubuntu 18.04.3 LTS
 //Command     : generate_target design_1.bd
 //Design      : design_1
@@ -59,7 +59,7 @@ module design_1
   wire axi_dma_in_M_AXIS_MM2S_TLAST;
   wire axi_dma_in_M_AXIS_MM2S_TREADY;
   wire axi_dma_in_M_AXIS_MM2S_TVALID;
-  wire [63:0]axi_dma_in_M_AXI_MM2S_ARADDR;
+  wire [31:0]axi_dma_in_M_AXI_MM2S_ARADDR;
   wire [1:0]axi_dma_in_M_AXI_MM2S_ARBURST;
   wire [3:0]axi_dma_in_M_AXI_MM2S_ARCACHE;
   wire [7:0]axi_dma_in_M_AXI_MM2S_ARLEN;
@@ -67,12 +67,12 @@ module design_1
   wire axi_dma_in_M_AXI_MM2S_ARREADY;
   wire [2:0]axi_dma_in_M_AXI_MM2S_ARSIZE;
   wire axi_dma_in_M_AXI_MM2S_ARVALID;
-  wire [63:0]axi_dma_in_M_AXI_MM2S_RDATA;
+  wire [31:0]axi_dma_in_M_AXI_MM2S_RDATA;
   wire axi_dma_in_M_AXI_MM2S_RLAST;
   wire axi_dma_in_M_AXI_MM2S_RREADY;
   wire [1:0]axi_dma_in_M_AXI_MM2S_RRESP;
   wire axi_dma_in_M_AXI_MM2S_RVALID;
-  wire [63:0]axi_dma_out_M_AXI_S2MM_AWADDR;
+  wire [31:0]axi_dma_out_M_AXI_S2MM_AWADDR;
   wire [1:0]axi_dma_out_M_AXI_S2MM_AWBURST;
   wire [3:0]axi_dma_out_M_AXI_S2MM_AWCACHE;
   wire [7:0]axi_dma_out_M_AXI_S2MM_AWLEN;
@@ -83,10 +83,10 @@ module design_1
   wire axi_dma_out_M_AXI_S2MM_BREADY;
   wire [1:0]axi_dma_out_M_AXI_S2MM_BRESP;
   wire axi_dma_out_M_AXI_S2MM_BVALID;
-  wire [63:0]axi_dma_out_M_AXI_S2MM_WDATA;
+  wire [31:0]axi_dma_out_M_AXI_S2MM_WDATA;
   wire axi_dma_out_M_AXI_S2MM_WLAST;
   wire axi_dma_out_M_AXI_S2MM_WREADY;
-  wire [7:0]axi_dma_out_M_AXI_S2MM_WSTRB;
+  wire [3:0]axi_dma_out_M_AXI_S2MM_WSTRB;
   wire axi_dma_out_M_AXI_S2MM_WVALID;
   wire [31:0]axi_smc_M00_AXI_ARADDR;
   wire [1:0]axi_smc_M00_AXI_ARBURST;
@@ -111,15 +111,15 @@ module design_1
   wire axi_smc_M00_AXI_BREADY;
   wire [1:0]axi_smc_M00_AXI_BRESP;
   wire axi_smc_M00_AXI_BVALID;
-  wire [63:0]axi_smc_M00_AXI_RDATA;
+  wire [31:0]axi_smc_M00_AXI_RDATA;
   wire axi_smc_M00_AXI_RLAST;
   wire axi_smc_M00_AXI_RREADY;
   wire [1:0]axi_smc_M00_AXI_RRESP;
   wire axi_smc_M00_AXI_RVALID;
-  wire [63:0]axi_smc_M00_AXI_WDATA;
+  wire [31:0]axi_smc_M00_AXI_WDATA;
   wire axi_smc_M00_AXI_WLAST;
   wire axi_smc_M00_AXI_WREADY;
-  wire [7:0]axi_smc_M00_AXI_WSTRB;
+  wire [3:0]axi_smc_M00_AXI_WSTRB;
   wire axi_smc_M00_AXI_WVALID;
   wire [31:0]network_0_output_data_TDATA;
   wire [3:0]network_0_output_data_TKEEP;

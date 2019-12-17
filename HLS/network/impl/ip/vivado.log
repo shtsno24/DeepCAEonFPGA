@@ -2,8 +2,8 @@
 # Vivado v2018.3.1 (64-bit)
 # SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
 # IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
-# Start of session at: Tue Dec 17 16:35:13 2019
-# Process ID: 14714
+# Start of session at: Tue Dec 17 18:45:22 2019
+# Process ID: 1907
 # Current directory: /home/masudalab/DeepCAEonFPGA/HLS/network/impl/ip
 # Command line: vivado -notrace -mode batch -source run_ippack.tcl
 # Log file: /home/masudalab/DeepCAEonFPGA/HLS/network/impl/ip/vivado.log
@@ -13,4 +13,4 @@ source run_ippack.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2018.3/data/ip'.
-INFO: [Common 17-206] Exiting Vivado at Tue Dec 17 16:35:22 2019...
+INFO: [Common 17-206] Exiting Vivado at Tue Dec 17 18:45:31 2019...

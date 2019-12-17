@@ -88,8 +88,7 @@ wire   [14:0] tmp_9_fu_262_p2;
 reg   [14:0] tmp_9_reg_386;
 reg  signed [15:0] input_load_reg_391;
 wire    ap_CS_fsm_state6;
-wire  signed [29:0] tmp_15_fu_317_p2;
-reg  signed [29:0] tmp_15_reg_396;
+reg   [15:0] tmp_17_reg_396;
 wire    ap_CS_fsm_state7;
 reg   [4:0] out_d_reg_98;
 reg   [13:0] phi_mul_reg_109;
@@ -99,7 +98,7 @@ wire    ap_CS_fsm_state8;
 wire   [63:0] tmp_s_fu_164_p1;
 wire   [63:0] tmp_14_fu_173_p1;
 wire   [63:0] tmp_12_fu_253_p1;
-wire   [63:0] tmp_10_fu_312_p1;
+wire   [63:0] tmp_10_fu_311_p1;
 wire   [3:0] tmp_fu_169_p1;
 wire   [9:0] p_shl_fu_198_p3;
 wire   [6:0] p_shl1_fu_210_p3;
@@ -109,13 +108,13 @@ wire   [10:0] tmp_19_cast4_fu_240_p1;
 wire  signed [10:0] tmp_11_fu_244_p2;
 wire  signed [31:0] tmp_27_cast_fu_249_p1;
 wire  signed [14:0] tmp1_cast_fu_258_p1;
-wire   [15:0] tmp_17_fu_270_p4;
+wire  signed [29:0] tmp_15_fu_316_p2;
 wire   [15:0] buffer_3_fu_279_p2;
-wire   [0:0] tmp_27_fu_288_p3;
-wire   [14:0] tmp_26_fu_284_p1;
-wire   [14:0] buffer_1_fu_296_p3;
-wire  signed [31:0] tmp_22_cast_fu_309_p1;
-wire  signed [14:0] tmp_15_fu_317_p0;
+wire   [0:0] tmp_27_fu_287_p3;
+wire   [14:0] tmp_26_fu_283_p1;
+wire   [14:0] buffer_1_fu_295_p3;
+wire  signed [31:0] tmp_22_cast_fu_308_p1;
+wire  signed [14:0] tmp_15_fu_316_p0;
 reg   [7:0] ap_NS_fsm;
 
 // power-on initialization
@@ -154,9 +153,9 @@ network_mul_mul_15s_16s_30_1_1 #(
     .din1_WIDTH( 16 ),
     .dout_WIDTH( 30 ))
 network_mul_mul_15s_16s_30_1_1_U11(
-    .din0(tmp_15_fu_317_p0),
+    .din0(tmp_15_fu_316_p0),
     .din1(input_load_reg_391),
-    .dout(tmp_15_fu_317_p2)
+    .dout(tmp_15_fu_316_p2)
 );
 
 always @ (posedge ap_clk) begin
@@ -227,7 +226,7 @@ end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state7)) begin
-        tmp_15_reg_396 <= tmp_15_fu_317_p2;
+        tmp_17_reg_396 <= {{tmp_15_fu_316_p2[29:14]}};
     end
 end
 
@@ -382,9 +381,9 @@ assign ap_CS_fsm_state7 = ap_CS_fsm[32'd6];
 
 assign ap_CS_fsm_state8 = ap_CS_fsm[32'd7];
 
-assign buffer_1_fu_296_p3 = ((tmp_27_fu_288_p3[0:0] === 1'b1) ? 15'd0 : tmp_26_fu_284_p1);
+assign buffer_1_fu_295_p3 = ((tmp_27_fu_287_p3[0:0] === 1'b1) ? 15'd0 : tmp_26_fu_283_p1);
 
-assign buffer_3_fu_279_p2 = ($signed(tmp_17_fu_270_p4) + $signed(tmp_24_reg_355));
+assign buffer_3_fu_279_p2 = ($signed(tmp_17_reg_396) + $signed(tmp_24_reg_355));
 
 assign exitcond1_fu_228_p2 = ((out_w_reg_131 == 5'd28) ? 1'b1 : 1'b0);
 
@@ -402,9 +401,9 @@ assign out_h_2_fu_192_p2 = (out_h_reg_120 + 5'd1);
 
 assign out_w_2_fu_234_p2 = (out_w_reg_131 + 5'd1);
 
-assign output_r_address0 = tmp_10_fu_312_p1;
+assign output_r_address0 = tmp_10_fu_311_p1;
 
-assign output_r_d0 = buffer_1_fu_296_p3;
+assign output_r_d0 = buffer_1_fu_295_p3;
 
 assign p_shl1_cast_fu_218_p1 = p_shl1_fu_210_p3;
 
@@ -418,7 +417,7 @@ assign phi_mul_cast_fu_142_p1 = phi_mul_reg_109;
 
 assign tmp1_cast_fu_258_p1 = tmp_11_fu_244_p2;
 
-assign tmp_10_fu_312_p1 = $unsigned(tmp_22_cast_fu_309_p1);
+assign tmp_10_fu_311_p1 = $unsigned(tmp_22_cast_fu_308_p1);
 
 assign tmp_11_fu_244_p2 = (tmp_7_reg_368 + tmp_19_cast4_fu_240_p1);
 
@@ -426,21 +425,19 @@ assign tmp_12_fu_253_p1 = $unsigned(tmp_27_cast_fu_249_p1);
 
 assign tmp_14_fu_173_p1 = tmp_fu_169_p1;
 
-assign tmp_15_fu_317_p0 = tmp_32_cast_reg_350;
-
-assign tmp_17_fu_270_p4 = {{tmp_15_reg_396[29:14]}};
+assign tmp_15_fu_316_p0 = tmp_32_cast_reg_350;
 
 assign tmp_19_cast4_fu_240_p1 = out_w_reg_131;
 
-assign tmp_22_cast_fu_309_p1 = $signed(tmp_9_reg_386);
+assign tmp_22_cast_fu_308_p1 = $signed(tmp_9_reg_386);
 
 assign tmp_24_fu_182_p1 = $signed(SeparableConv2D_0_b_s_q0);
 
-assign tmp_26_fu_284_p1 = buffer_3_fu_279_p2[14:0];
+assign tmp_26_fu_283_p1 = buffer_3_fu_279_p2[14:0];
 
 assign tmp_27_cast_fu_249_p1 = tmp_11_fu_244_p2;
 
-assign tmp_27_fu_288_p3 = buffer_3_fu_279_p2[32'd15];
+assign tmp_27_fu_287_p3 = buffer_3_fu_279_p2[32'd15];
 
 assign tmp_32_cast_fu_178_p1 = $signed(SeparableConv2D_0_w_s_q0);
 
