@@ -9,23 +9,23 @@
 <ProductFamily>zynq</ProductFamily>
 <Part>xc7z020clg400-1</Part>
 <TopModelName>network</TopModelName>
-<TargetClockPeriod>10.00</TargetClockPeriod>
-<ClockUncertainty>1.25</ClockUncertainty>
+<TargetClockPeriod>8.00</TargetClockPeriod>
+<ClockUncertainty>1.60</ClockUncertainty>
 </UserAssignments>
 
 <PerformanceEstimates>
 <PipelineType>none</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>8.570</EstimatedClockPeriod>
+<EstimatedClockPeriod>7.544</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>702880</Best-caseLatency>
+<Best-caseLatency>851699</Best-caseLatency>
 <Average-caseLatency>undef</Average-caseLatency>
-<Worst-caseLatency>1920361</Worst-caseLatency>
-<Interval-min>702881</Interval-min>
-<Interval-max>1920362</Interval-max>
+<Worst-caseLatency>2462503</Worst-caseLatency>
+<Interval-min>851700</Interval-min>
+<Interval-max>2462504</Interval-max>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <Loop1>
@@ -45,8 +45,8 @@
 <Resources>
 <BRAM_18K>39</BRAM_18K>
 <DSP48E>8</DSP48E>
-<FF>3187</FF>
-<LUT>14845</LUT>
+<FF>3583</FF>
+<LUT>14902</LUT>
 </Resources>
 <AvailableResources>
 <BRAM_18K>280</BRAM_18K>

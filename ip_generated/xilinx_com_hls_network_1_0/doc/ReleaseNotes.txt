@@ -1,5 +1,5 @@
 # ==============================================================
-# File generated on Mon Dec 16 19:07:23 JST 2019
+# File generated on Tue Dec 17 15:58:37 JST 2019
 # Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3.1 (64-bit)
 # SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
 # IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
@@ -10,4 +10,4 @@ Family       : zynq
 Device       : xc7z020
 Package      : clg400
 Speed Grade  : -1
-Clock Period : 10.000 ns
+Clock Period : 8.000 ns

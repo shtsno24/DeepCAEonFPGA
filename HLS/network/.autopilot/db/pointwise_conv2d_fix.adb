@@ -1973,7 +1973,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_17_reg_396</rtlName>
+              <rtlName>tmp_17_fu_270_p4</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>16</bitwidth>
@@ -2073,7 +2073,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_26_fu_283_p1</rtlName>
+              <rtlName>tmp_26_fu_284_p1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>15</bitwidth>
@@ -2121,7 +2121,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_27_fu_287_p3</rtlName>
+              <rtlName>tmp_27_fu_288_p3</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -2171,7 +2171,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>buffer_1_fu_295_p3</rtlName>
+              <rtlName>buffer_1_fu_296_p3</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>15</bitwidth>
@@ -2366,7 +2366,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_22_cast_fu_308_p1</rtlName>
+              <rtlName>tmp_22_cast_fu_309_p1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -2414,7 +2414,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_10_fu_311_p1</rtlName>
+              <rtlName>tmp_10_fu_312_p1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>64</bitwidth>
@@ -4565,7 +4565,7 @@
         <item class_id_reference="26" object_id="_260">
           <id>7</id>
           <operations>
-            <count>3</count>
+            <count>2</count>
             <item_version>0</item_version>
             <item class_id_reference="28" object_id="_261">
               <id>52</id>
@@ -4577,18 +4577,18 @@
               <stage>1</stage>
               <latency>1</latency>
             </item>
-            <item class_id_reference="28" object_id="_263">
+          </operations>
+        </item>
+        <item class_id_reference="26" object_id="_263">
+          <id>8</id>
+          <operations>
+            <count>11</count>
+            <item_version>0</item_version>
+            <item class_id_reference="28" object_id="_264">
               <id>54</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
-          </operations>
-        </item>
-        <item class_id_reference="26" object_id="_264">
-          <id>8</id>
-          <operations>
-            <count>10</count>
-            <item_version>0</item_version>
             <item class_id_reference="28" object_id="_265">
               <id>55</id>
               <stage>1</stage>
@@ -4841,7 +4841,7 @@
         <count>12</count>
         <item_version>0</item_version>
         <item class_id="38" tracking_level="0" version="0">
-          <first>buffer_1_fu_295_p3 ( select ) </first>
+          <first>buffer_1_fu_296_p3 ( select ) </first>
           <second class_id="39" tracking_level="0" version="0">
             <count>5</count>
             <item_version>0</item_version>
@@ -5531,13 +5531,13 @@
           </second>
         </item>
         <item>
-          <first>tmp_17_reg_396</first>
+          <first>tmp_15_reg_396</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
             <item>
               <first>(Bits)</first>
-              <second>16</second>
+              <second>30</second>
             </item>
             <item>
               <first>(Consts)</first>
@@ -5545,7 +5545,7 @@
             </item>
             <item>
               <first>FF</first>
-              <second>16</second>
+              <second>30</second>
             </item>
           </second>
         </item>
@@ -5649,7 +5649,7 @@
         <count>12</count>
         <item_version>0</item_version>
         <item class_id="42" tracking_level="0" version="0">
-          <first>buffer_1_fu_295_p3 ( select ) </first>
+          <first>buffer_1_fu_296_p3 ( select ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -6056,7 +6056,7 @@
       <item>
         <first>54</first>
         <second>
-          <first>6</first>
+          <first>7</first>
           <second>0</second>
         </second>
       </item>
@@ -6563,7 +6563,7 @@
         </second>
       </item>
       <item>
-        <first>283</first>
+        <first>284</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6571,7 +6571,7 @@
         </second>
       </item>
       <item>
-        <first>287</first>
+        <first>288</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6579,7 +6579,7 @@
         </second>
       </item>
       <item>
-        <first>295</first>
+        <first>296</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6587,7 +6587,7 @@
         </second>
       </item>
       <item>
-        <first>303</first>
+        <first>304</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6595,7 +6595,7 @@
         </second>
       </item>
       <item>
-        <first>308</first>
+        <first>309</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6603,7 +6603,7 @@
         </second>
       </item>
       <item>
-        <first>311</first>
+        <first>312</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6611,7 +6611,7 @@
         </second>
       </item>
       <item>
-        <first>316</first>
+        <first>317</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6639,7 +6639,7 @@
         </second>
       </item>
       <item>
-        <first>buffer_1_cast_fu_303</first>
+        <first>buffer_1_cast_fu_304</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6647,7 +6647,7 @@
         </second>
       </item>
       <item>
-        <first>buffer_1_fu_295</first>
+        <first>buffer_1_fu_296</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6815,7 +6815,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_10_fu_311</first>
+        <first>tmp_10_fu_312</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6847,7 +6847,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_15_fu_316</first>
+        <first>tmp_15_fu_317</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6871,7 +6871,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_22_cast_fu_308</first>
+        <first>tmp_22_cast_fu_309</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6887,7 +6887,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_26_fu_283</first>
+        <first>tmp_26_fu_284</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6903,7 +6903,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_27_fu_287</first>
+        <first>tmp_27_fu_288</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -7166,7 +7166,7 @@
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>54</item>
+          <item>53</item>
         </second>
       </item>
     </dp_reg_nodes>
@@ -7278,11 +7278,11 @@
         </second>
       </item>
       <item>
-        <first>tmp_17_reg_396</first>
+        <first>tmp_15_reg_396</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>54</item>
+          <item>53</item>
         </second>
       </item>
       <item>

@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'pointwise_conv2d_fix'
 ================================================================
-* Date:           Mon Dec 16 19:00:15 2019
+* Date:           Tue Dec 17 15:43:07 2019
 
 * Version:        2018.3.1 (Build 2489210 on Tue Mar 26 04:40:43 MDT 2019)
 * Project:        HLS
@@ -20,7 +20,7 @@
     +--------+-------+----------+------------+
     |  Clock | Target| Estimated| Uncertainty|
     +--------+-------+----------+------------+
-    |ap_clk  |  10.00|     6.380|        1.25|
+    |ap_clk  |   8.00|     6.380|        1.60|
     +--------+-------+----------+------------+
 
 + Latency (clock cycles): 
@@ -162,9 +162,9 @@ ST_6 : Operation 57 [1/2] (3.25ns)   --->   "%input_load = load i16* %input_addr
 State 7 <SV = 6> <Delay = 6.38>
 ST_7 : Operation 58 [1/1] (0.00ns)   --->   "%tmp_29_cast = sext i16 %input_load to i30" [layers_c/pointwise_conv2d.cpp:23]   --->   Operation 58 'sext' 'tmp_29_cast' <Predicate = true> <Delay = 0.00>
 ST_7 : Operation 59 [1/1] (6.38ns) (root node of the DSP)   --->   "%tmp_15 = mul i30 %tmp_32_cast, %tmp_29_cast" [layers_c/pointwise_conv2d.cpp:23]   --->   Operation 59 'mul' 'tmp_15' <Predicate = true> <Delay = 6.38> <Core = "DSP48">   --->   Core 65 'DSP48' <Latency = 0> <II = 1> <Delay = 6.38> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
-ST_7 : Operation 60 [1/1] (0.00ns)   --->   "%tmp_17 = call i16 @_ssdm_op_PartSelect.i16.i30.i32.i32(i30 %tmp_15, i32 14, i32 29)" [layers_c/pointwise_conv2d.cpp:23]   --->   Operation 60 'partselect' 'tmp_17' <Predicate = true> <Delay = 0.00>
 
 State 8 <SV = 7> <Delay = 6.08>
+ST_8 : Operation 60 [1/1] (0.00ns)   --->   "%tmp_17 = call i16 @_ssdm_op_PartSelect.i16.i30.i32.i32(i30 %tmp_15, i32 14, i32 29)" [layers_c/pointwise_conv2d.cpp:23]   --->   Operation 60 'partselect' 'tmp_17' <Predicate = true> <Delay = 0.00>
 ST_8 : Operation 61 [1/1] (2.07ns)   --->   "%buffer_3 = add i16 %tmp_17, %tmp_24" [layers_c/pointwise_conv2d.cpp:23]   --->   Operation 61 'add' 'buffer_3' <Predicate = true> <Delay = 2.07> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_8 : Operation 62 [1/1] (0.00ns)   --->   "%tmp_26 = trunc i16 %buffer_3 to i15" [layers_c/pointwise_conv2d.cpp:20]   --->   Operation 62 'trunc' 'tmp_26' <Predicate = true> <Delay = 0.00>
 ST_8 : Operation 63 [1/1] (0.00ns)   --->   "%tmp_27 = call i1 @_ssdm_op_BitSelect.i1.i16.i32(i16 %buffer_3, i32 15)" [layers_c/pointwise_conv2d.cpp:27]   --->   Operation 63 'bitselect' 'tmp_27' <Predicate = true> <Delay = 0.00>
@@ -245,8 +245,8 @@ tmp_9                 (add              ) [ 000000111]
 StgValue_56           (br               ) [ 001111111]
 input_load            (load             ) [ 000000010]
 tmp_29_cast           (sext             ) [ 000000000]
-tmp_15                (mul              ) [ 000000000]
-tmp_17                (partselect       ) [ 000000001]
+tmp_15                (mul              ) [ 000000001]
+tmp_17                (partselect       ) [ 000000000]
 buffer_3              (add              ) [ 000000000]
 tmp_26                (trunc            ) [ 000000000]
 tmp_27                (bitselect        ) [ 000000000]
@@ -965,20 +965,20 @@ StgValue_70           (br               ) [ 001111111]
 <comp id="270" class="1004" name="tmp_17_fu_270">
 <pin_list>
 <pin id="271" dir="0" index="0" bw="16" slack="0"/>
-<pin id="272" dir="0" index="1" bw="30" slack="0"/>
+<pin id="272" dir="0" index="1" bw="30" slack="1"/>
 <pin id="273" dir="0" index="2" bw="5" slack="0"/>
 <pin id="274" dir="0" index="3" bw="6" slack="0"/>
-<pin id="275" dir="1" index="4" bw="16" slack="1"/>
+<pin id="275" dir="1" index="4" bw="16" slack="0"/>
 </pin_list>
 <bind>
 <opcode="partselect(1002) " fcode="partselect"/>
-<opset="tmp_17/7 "/>
+<opset="tmp_17/8 "/>
 </bind>
 </comp>
 
 <comp id="279" class="1004" name="buffer_3_fu_279">
 <pin_list>
-<pin id="280" dir="0" index="0" bw="16" slack="1"/>
+<pin id="280" dir="0" index="0" bw="16" slack="0"/>
 <pin id="281" dir="0" index="1" bw="13" slack="5"/>
 <pin id="282" dir="1" index="2" bw="16" slack="0"/>
 </pin_list>
@@ -988,10 +988,10 @@ StgValue_70           (br               ) [ 001111111]
 </bind>
 </comp>
 
-<comp id="283" class="1004" name="tmp_26_fu_283">
+<comp id="284" class="1004" name="tmp_26_fu_284">
 <pin_list>
-<pin id="284" dir="0" index="0" bw="16" slack="0"/>
-<pin id="285" dir="1" index="1" bw="15" slack="0"/>
+<pin id="285" dir="0" index="0" bw="16" slack="0"/>
+<pin id="286" dir="1" index="1" bw="15" slack="0"/>
 </pin_list>
 <bind>
 <opcode="trunc(33) " fcode="trunc"/>
@@ -999,12 +999,12 @@ StgValue_70           (br               ) [ 001111111]
 </bind>
 </comp>
 
-<comp id="287" class="1004" name="tmp_27_fu_287">
+<comp id="288" class="1004" name="tmp_27_fu_288">
 <pin_list>
-<pin id="288" dir="0" index="0" bw="1" slack="0"/>
-<pin id="289" dir="0" index="1" bw="16" slack="0"/>
-<pin id="290" dir="0" index="2" bw="5" slack="0"/>
-<pin id="291" dir="1" index="3" bw="1" slack="0"/>
+<pin id="289" dir="0" index="0" bw="1" slack="0"/>
+<pin id="290" dir="0" index="1" bw="16" slack="0"/>
+<pin id="291" dir="0" index="2" bw="5" slack="0"/>
+<pin id="292" dir="1" index="3" bw="1" slack="0"/>
 </pin_list>
 <bind>
 <opcode="bitselect(1000) " fcode="bitselect"/>
@@ -1012,12 +1012,12 @@ StgValue_70           (br               ) [ 001111111]
 </bind>
 </comp>
 
-<comp id="295" class="1004" name="buffer_1_fu_295">
+<comp id="296" class="1004" name="buffer_1_fu_296">
 <pin_list>
-<pin id="296" dir="0" index="0" bw="1" slack="0"/>
-<pin id="297" dir="0" index="1" bw="1" slack="0"/>
-<pin id="298" dir="0" index="2" bw="15" slack="0"/>
-<pin id="299" dir="1" index="3" bw="15" slack="0"/>
+<pin id="297" dir="0" index="0" bw="1" slack="0"/>
+<pin id="298" dir="0" index="1" bw="1" slack="0"/>
+<pin id="299" dir="0" index="2" bw="15" slack="0"/>
+<pin id="300" dir="1" index="3" bw="15" slack="0"/>
 </pin_list>
 <bind>
 <opcode="select(49) " fcode="select"/>
@@ -1025,10 +1025,10 @@ StgValue_70           (br               ) [ 001111111]
 </bind>
 </comp>
 
-<comp id="303" class="1004" name="buffer_1_cast_fu_303">
+<comp id="304" class="1004" name="buffer_1_cast_fu_304">
 <pin_list>
-<pin id="304" dir="0" index="0" bw="15" slack="0"/>
-<pin id="305" dir="1" index="1" bw="16" slack="0"/>
+<pin id="305" dir="0" index="0" bw="15" slack="0"/>
+<pin id="306" dir="1" index="1" bw="16" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
@@ -1036,10 +1036,10 @@ StgValue_70           (br               ) [ 001111111]
 </bind>
 </comp>
 
-<comp id="308" class="1004" name="tmp_22_cast_fu_308">
+<comp id="309" class="1004" name="tmp_22_cast_fu_309">
 <pin_list>
-<pin id="309" dir="0" index="0" bw="15" slack="3"/>
-<pin id="310" dir="1" index="1" bw="32" slack="0"/>
+<pin id="310" dir="0" index="0" bw="15" slack="3"/>
+<pin id="311" dir="1" index="1" bw="32" slack="0"/>
 </pin_list>
 <bind>
 <opcode="sext(35) " fcode="sext"/>
@@ -1047,10 +1047,10 @@ StgValue_70           (br               ) [ 001111111]
 </bind>
 </comp>
 
-<comp id="311" class="1004" name="tmp_10_fu_311">
+<comp id="312" class="1004" name="tmp_10_fu_312">
 <pin_list>
-<pin id="312" dir="0" index="0" bw="15" slack="0"/>
-<pin id="313" dir="1" index="1" bw="64" slack="0"/>
+<pin id="313" dir="0" index="0" bw="15" slack="0"/>
+<pin id="314" dir="1" index="1" bw="64" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
@@ -1058,11 +1058,11 @@ StgValue_70           (br               ) [ 001111111]
 </bind>
 </comp>
 
-<comp id="316" class="1007" name="tmp_15_fu_316">
+<comp id="317" class="1007" name="tmp_15_fu_317">
 <pin_list>
-<pin id="317" dir="0" index="0" bw="15" slack="4"/>
-<pin id="318" dir="0" index="1" bw="16" slack="0"/>
-<pin id="319" dir="1" index="2" bw="30" slack="0"/>
+<pin id="318" dir="0" index="0" bw="15" slack="4"/>
+<pin id="319" dir="0" index="1" bw="16" slack="0"/>
+<pin id="320" dir="1" index="2" bw="30" slack="1"/>
 </pin_list>
 <bind>
 <opcode="mul(12) " fcode="mul"/>
@@ -1200,13 +1200,13 @@ StgValue_70           (br               ) [ 001111111]
 </bind>
 </comp>
 
-<comp id="396" class="1005" name="tmp_17_reg_396">
+<comp id="396" class="1005" name="tmp_15_reg_396">
 <pin_list>
-<pin id="397" dir="0" index="0" bw="16" slack="1"/>
-<pin id="398" dir="1" index="1" bw="16" slack="1"/>
+<pin id="397" dir="0" index="0" bw="30" slack="1"/>
+<pin id="398" dir="1" index="1" bw="30" slack="1"/>
 </pin_list>
 <bind>
-<opset="tmp_17 "/>
+<opset="tmp_15 "/>
 </bind>
 </comp>
 
@@ -1337,31 +1337,31 @@ StgValue_70           (br               ) [ 001111111]
 
 <net id="278"><net_src comp="38" pin="0"/><net_sink comp="270" pin=3"/></net>
 
-<net id="286"><net_src comp="279" pin="2"/><net_sink comp="283" pin=0"/></net>
+<net id="283"><net_src comp="270" pin="4"/><net_sink comp="279" pin=0"/></net>
 
-<net id="292"><net_src comp="40" pin="0"/><net_sink comp="287" pin=0"/></net>
+<net id="287"><net_src comp="279" pin="2"/><net_sink comp="284" pin=0"/></net>
 
-<net id="293"><net_src comp="279" pin="2"/><net_sink comp="287" pin=1"/></net>
+<net id="293"><net_src comp="40" pin="0"/><net_sink comp="288" pin=0"/></net>
 
-<net id="294"><net_src comp="42" pin="0"/><net_sink comp="287" pin=2"/></net>
+<net id="294"><net_src comp="279" pin="2"/><net_sink comp="288" pin=1"/></net>
 
-<net id="300"><net_src comp="287" pin="3"/><net_sink comp="295" pin=0"/></net>
+<net id="295"><net_src comp="42" pin="0"/><net_sink comp="288" pin=2"/></net>
 
-<net id="301"><net_src comp="44" pin="0"/><net_sink comp="295" pin=1"/></net>
+<net id="301"><net_src comp="288" pin="3"/><net_sink comp="296" pin=0"/></net>
 
-<net id="302"><net_src comp="283" pin="1"/><net_sink comp="295" pin=2"/></net>
+<net id="302"><net_src comp="44" pin="0"/><net_sink comp="296" pin=1"/></net>
 
-<net id="306"><net_src comp="295" pin="3"/><net_sink comp="303" pin=0"/></net>
+<net id="303"><net_src comp="284" pin="1"/><net_sink comp="296" pin=2"/></net>
 
-<net id="307"><net_src comp="303" pin="1"/><net_sink comp="92" pin=1"/></net>
+<net id="307"><net_src comp="296" pin="3"/><net_sink comp="304" pin=0"/></net>
 
-<net id="314"><net_src comp="308" pin="1"/><net_sink comp="311" pin=0"/></net>
+<net id="308"><net_src comp="304" pin="1"/><net_sink comp="92" pin=1"/></net>
 
-<net id="315"><net_src comp="311" pin="1"/><net_sink comp="85" pin=2"/></net>
+<net id="315"><net_src comp="309" pin="1"/><net_sink comp="312" pin=0"/></net>
 
-<net id="320"><net_src comp="267" pin="1"/><net_sink comp="316" pin=1"/></net>
+<net id="316"><net_src comp="312" pin="1"/><net_sink comp="85" pin=2"/></net>
 
-<net id="321"><net_src comp="316" pin="2"/><net_sink comp="270" pin=1"/></net>
+<net id="321"><net_src comp="267" pin="1"/><net_sink comp="317" pin=1"/></net>
 
 <net id="325"><net_src comp="142" pin="1"/><net_sink comp="322" pin=0"/></net>
 
@@ -1385,7 +1385,7 @@ StgValue_70           (br               ) [ 001111111]
 
 <net id="353"><net_src comp="178" pin="1"/><net_sink comp="350" pin=0"/></net>
 
-<net id="354"><net_src comp="350" pin="1"/><net_sink comp="316" pin=0"/></net>
+<net id="354"><net_src comp="350" pin="1"/><net_sink comp="317" pin=0"/></net>
 
 <net id="358"><net_src comp="182" pin="1"/><net_sink comp="355" pin=0"/></net>
 
@@ -1409,15 +1409,15 @@ StgValue_70           (br               ) [ 001111111]
 
 <net id="389"><net_src comp="262" pin="2"/><net_sink comp="386" pin=0"/></net>
 
-<net id="390"><net_src comp="386" pin="1"/><net_sink comp="308" pin=0"/></net>
+<net id="390"><net_src comp="386" pin="1"/><net_sink comp="309" pin=0"/></net>
 
 <net id="394"><net_src comp="79" pin="3"/><net_sink comp="391" pin=0"/></net>
 
 <net id="395"><net_src comp="391" pin="1"/><net_sink comp="267" pin=0"/></net>
 
-<net id="399"><net_src comp="270" pin="4"/><net_sink comp="396" pin=0"/></net>
+<net id="399"><net_src comp="317" pin="2"/><net_sink comp="396" pin=0"/></net>
 
-<net id="400"><net_src comp="396" pin="1"/><net_sink comp="279" pin=0"/></net>
+<net id="400"><net_src comp="396" pin="1"/><net_sink comp="270" pin=1"/></net>
 
 </net_list>
 
@@ -1473,15 +1473,15 @@ StgValue_70           (br               ) [ 001111111]
 	State 6
 	State 7
 		tmp_15 : 1
-		tmp_17 : 2
 	State 8
-		tmp_26 : 1
-		tmp_27 : 1
-		buffer_1 : 2
-		buffer_1_cast : 3
+		buffer_3 : 1
+		tmp_26 : 2
+		tmp_27 : 2
+		buffer_1 : 3
+		buffer_1_cast : 4
 		tmp_10 : 1
 		output_addr : 2
-		StgValue_69 : 4
+		StgValue_69 : 5
 
 
 ============================================================
@@ -1504,11 +1504,11 @@ StgValue_70           (br               ) [ 001111111]
 |   icmp   |   exitcond2_fu_186   |    0    |    0    |    11   |
 |          |   exitcond1_fu_228   |    0    |    0    |    11   |
 |----------|----------------------|---------|---------|---------|
-|  select  |    buffer_1_fu_295   |    0    |    0    |    15   |
+|  select  |    buffer_1_fu_296   |    0    |    0    |    15   |
 |----------|----------------------|---------|---------|---------|
 |    sub   |     tmp_7_fu_222     |    0    |    0    |    14   |
 |----------|----------------------|---------|---------|---------|
-|    mul   |     tmp_15_fu_316    |    1    |    0    |    0    |
+|    mul   |     tmp_15_fu_317    |    1    |    0    |    0    |
 |----------|----------------------|---------|---------|---------|
 |          |  phi_mul_cast_fu_142 |    0    |    0    |    0    |
 |          |     tmp_s_fu_164     |    0    |    0    |    0    |
@@ -1517,25 +1517,25 @@ StgValue_70           (br               ) [ 001111111]
 |   zext   |  p_shl1_cast_fu_218  |    0    |    0    |    0    |
 |          |  tmp_19_cast4_fu_240 |    0    |    0    |    0    |
 |          |     tmp_12_fu_253    |    0    |    0    |    0    |
-|          | buffer_1_cast_fu_303 |    0    |    0    |    0    |
-|          |     tmp_10_fu_311    |    0    |    0    |    0    |
+|          | buffer_1_cast_fu_304 |    0    |    0    |    0    |
+|          |     tmp_10_fu_312    |    0    |    0    |    0    |
 |----------|----------------------|---------|---------|---------|
 |   trunc  |      tmp_fu_169      |    0    |    0    |    0    |
-|          |     tmp_26_fu_283    |    0    |    0    |    0    |
+|          |     tmp_26_fu_284    |    0    |    0    |    0    |
 |----------|----------------------|---------|---------|---------|
 |          |  tmp_32_cast_fu_178  |    0    |    0    |    0    |
 |          |     tmp_24_fu_182    |    0    |    0    |    0    |
 |   sext   |  tmp_27_cast_fu_249  |    0    |    0    |    0    |
 |          |   tmp1_cast_fu_258   |    0    |    0    |    0    |
 |          |  tmp_29_cast_fu_267  |    0    |    0    |    0    |
-|          |  tmp_22_cast_fu_308  |    0    |    0    |    0    |
+|          |  tmp_22_cast_fu_309  |    0    |    0    |    0    |
 |----------|----------------------|---------|---------|---------|
 |bitconcatenate|     p_shl_fu_198     |    0    |    0    |    0    |
 |          |     p_shl1_fu_210    |    0    |    0    |    0    |
 |----------|----------------------|---------|---------|---------|
 |partselect|     tmp_17_fu_270    |    0    |    0    |    0    |
 |----------|----------------------|---------|---------|---------|
-| bitselect|     tmp_27_fu_287    |    0    |    0    |    0    |
+| bitselect|     tmp_27_fu_288    |    0    |    0    |    0    |
 |----------|----------------------|---------|---------|---------|
 |   Total  |                      |    1    |    0    |   181   |
 |----------|----------------------|---------|---------|---------|
@@ -1560,13 +1560,13 @@ N/A
 |        out_w_reg_131        |    5   |
 |     phi_mul_cast_reg_322    |   15   |
 |       phi_mul_reg_109       |   14   |
-|        tmp_17_reg_396       |   16   |
+|        tmp_15_reg_396       |   30   |
 |        tmp_24_reg_355       |   16   |
 |     tmp_32_cast_reg_350     |   30   |
 |        tmp_7_reg_368        |   11   |
 |        tmp_9_reg_386        |   15   |
 +-----------------------------+--------+
-|            Total            |   199  |
+|            Total            |   213  |
 +-----------------------------+--------+
 
 * Multiplexer (MUX) list: 
@@ -1589,7 +1589,7 @@ N/A
 |  Function |    1   |    -   |    0   |   181  |
 |   Memory  |    -   |    -   |    -   |    -   |
 |Multiplexer|    -   |    5   |    -   |   27   |
-|  Register |    -   |    -   |   199  |    -   |
+|  Register |    -   |    -   |   213  |    -   |
 +-----------+--------+--------+--------+--------+
-|   Total   |    1   |    5   |   199  |   208  |
+|   Total   |    1   |    5   |   213  |   208  |
 +-----------+--------+--------+--------+--------+

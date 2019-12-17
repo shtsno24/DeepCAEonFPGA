@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'pointwise_conv2d_fix'" level="0">
-<item name = "Date">Mon Dec 16 19:00:31 2019
+<item name = "Date">Tue Dec 17 15:43:22 2019
 </item>
 <item name = "Version">2018.3.1 (Build 2489210 on Tue Mar 26 04:40:43 MDT 2019)</item>
 <item name = "Project">HLS</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00, 6.380, 1.25</column>
+<column name="ap_clk">8.00, 6.380, 1.60</column>
 </table>
 </item>
 </section>
@@ -55,7 +55,7 @@
 <column name="Instance">-, -, -, -</column>
 <column name="Memory">0, -, 28, 8</column>
 <column name="Multiplexer">-, -, -, 80</column>
-<column name="Register">-, -, 182, -</column>
+<column name="Register">-, -, 196, -</column>
 <specialColumn name="Available">280, 220, 106400, 53200</specialColumn>
 <specialColumn name="Utilization (%)">0, ~0, ~0, ~0</specialColumn>
 </table>
@@ -94,7 +94,7 @@
 <column name="exitcond1_fu_228_p2">icmp, 0, 0, 11, 5, 4</column>
 <column name="exitcond2_fu_186_p2">icmp, 0, 0, 11, 5, 4</column>
 <column name="exitcond3_fu_152_p2">icmp, 0, 0, 11, 5, 6</column>
-<column name="buffer_1_fu_295_p3">select, 0, 0, 15, 1, 1</column>
+<column name="buffer_1_fu_296_p3">select, 0, 0, 15, 1, 1</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
@@ -119,7 +119,7 @@
 <column name="out_w_reg_131">5, 0, 5, 0</column>
 <column name="phi_mul_cast_reg_322">14, 0, 15, 1</column>
 <column name="phi_mul_reg_109">14, 0, 14, 0</column>
-<column name="tmp_17_reg_396">16, 0, 16, 0</column>
+<column name="tmp_15_reg_396">30, 0, 30, 0</column>
 <column name="tmp_24_reg_355">16, 0, 16, 0</column>
 <column name="tmp_32_cast_reg_350">30, 0, 30, 0</column>
 <column name="tmp_7_reg_368">9, 0, 11, 2</column>

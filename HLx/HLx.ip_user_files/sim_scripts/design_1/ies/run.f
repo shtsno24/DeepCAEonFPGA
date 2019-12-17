@@ -166,6 +166,57 @@
 -makelib ies_lib/xil_defaultlib \
   "../../../bd/design_1/ip/design_1_axi_dma_in_0/sim/design_1_axi_dma_in_0.vhd" \
 -endlib
+-makelib ies_lib/xil_defaultlib \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/d004/hdl/verilog/depthwise_conv2d_fix.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/d004/hdl/verilog/depthwise_conv2d_fix_1.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/d004/hdl/verilog/depthwise_conv2d_fix_2.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/d004/hdl/verilog/depthwise_conv2d_fix_SeparableConv2D_0_w_1.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/d004/hdl/verilog/max_pooling2d_fix16.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/d004/hdl/verilog/network_AXILiteS_s_axi.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/d004/hdl/verilog/network_MemBank_A.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/d004/hdl/verilog/network_MemBank_B.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/d004/hdl/verilog/network_MemBank_Out.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/d004/hdl/verilog/network_mul_mul_15s_16s_30_1_1.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/d004/hdl/verilog/network_mul_mul_16s_15s_30_1_1.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/d004/hdl/verilog/network_mul_mul_16s_16s_30_1_1.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/d004/hdl/verilog/network_SeparableConv2D_1_b_1.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/d004/hdl/verilog/network_SeparableConv2D_1_w_1.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/d004/hdl/verilog/network_SeparableConv2D_2_b_1.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/d004/hdl/verilog/network_SeparableConv2D_2_w_1.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/d004/hdl/verilog/network_SeparableConv2D_3_w_1.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/d004/hdl/verilog/network_SeparableConv2D_4_w_1.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/d004/hdl/verilog/padding2d_fix16.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/d004/hdl/verilog/pointwise_conv2d_fix.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/d004/hdl/verilog/pointwise_conv2d_fix_1.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/d004/hdl/verilog/pointwise_conv2d_fix_1_SeparableConv2D_1_b_s.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/d004/hdl/verilog/pointwise_conv2d_fix_1_SeparableConv2D_1_w_s.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/d004/hdl/verilog/pointwise_conv2d_fix_2.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/d004/hdl/verilog/pointwise_conv2d_fix_2_SeparableConv2D_2_b_s.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/d004/hdl/verilog/pointwise_conv2d_fix_2_SeparableConv2D_2_w_s.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/d004/hdl/verilog/pointwise_conv2d_fix_3.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/d004/hdl/verilog/pointwise_conv2d_fix_3_SeparableConv2D_3_b_s.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/d004/hdl/verilog/pointwise_conv2d_fix_3_SeparableConv2D_3_w_s.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/d004/hdl/verilog/pointwise_conv2d_fix_4.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/d004/hdl/verilog/pointwise_conv2d_fix_4_SeparableConv2D_4_w_s.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/d004/hdl/verilog/pointwise_conv2d_fix_SeparableConv2D_0_b_s.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/d004/hdl/verilog/pointwise_conv2d_fix_SeparableConv2D_0_w_s.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/d004/hdl/verilog/up_sampling2d_fix16.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/d004/hdl/verilog/network.v" \
+  "../../../bd/design_1/ip/design_1_network_0_0/sim/design_1_network_0_0.v" \
+-endlib
+-makelib ies_lib/axis_infrastructure_v1_1_0 \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/8713/hdl/axis_infrastructure_v1_1_vl_rfs.v" \
+-endlib
+-makelib ies_lib/axis_register_slice_v1_1_18 \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/af00/hdl/axis_register_slice_v1_1_vl_rfs.v" \
+-endlib
+-makelib ies_lib/axis_dwidth_converter_v1_1_17 \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/4ca6/hdl/axis_dwidth_converter_v1_1_vl_rfs.v" \
+-endlib
+-makelib ies_lib/xil_defaultlib \
+  "../../../bd/design_1/ip/design_1_axis_dwidth_converter_0_0/sim/design_1_axis_dwidth_converter_0_0.v" \
+  "../../../bd/design_1/ip/design_1_axis_dwidth_converter_0_1/sim/design_1_axis_dwidth_converter_0_1.v" \
+-endlib
 -makelib ies_lib/axi_protocol_converter_v2_1_18 \
   "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/7a04/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
 -endlib

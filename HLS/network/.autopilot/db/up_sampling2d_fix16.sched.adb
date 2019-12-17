@@ -4058,8 +4058,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>3377</mMinLatency>
-			<mMaxLatency>26017</mMaxLatency>
+			<mMinLatency>4945</mMinLatency>
+			<mMaxLatency>38561</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -4104,8 +4104,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>8</mMinTripCount>
 			<mMaxTripCount>16</mMaxTripCount>
-			<mMinLatency>3376</mMinLatency>
-			<mMaxLatency>26016</mMaxLatency>
+			<mMinLatency>4944</mMinLatency>
+			<mMaxLatency>38560</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -4151,8 +4151,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>14</mMinTripCount>
 			<mMaxTripCount>28</mMaxTripCount>
-			<mMinLatency>420</mMinLatency>
-			<mMaxLatency>1624</mMaxLatency>
+			<mMinLatency>616</mMinLatency>
+			<mMaxLatency>2408</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -4197,8 +4197,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>14</mMinTripCount>
 			<mMaxTripCount>28</mMaxTripCount>
-			<mMinLatency>28</mMinLatency>
-			<mMaxLatency>56</mMaxLatency>
+			<mMinLatency>42</mMinLatency>
+			<mMaxLatency>84</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -4613,28 +4613,28 @@
 		<item>
 			<first>65</first>
 			<second>
-				<first>4</first>
+				<first>5</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>66</first>
 			<second>
-				<first>4</first>
+				<first>5</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>67</first>
 			<second>
-				<first>4</first>
+				<first>5</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>68</first>
 			<second>
-				<first>4</first>
+				<first>5</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -4709,7 +4709,7 @@
 			<first>69</first>
 			<second>
 				<first>3</first>
-				<second>4</second>
+				<second>5</second>
 			</second>
 		</item>
 		<item>

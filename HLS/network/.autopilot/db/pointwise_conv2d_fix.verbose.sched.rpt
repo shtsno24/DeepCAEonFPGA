@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'pointwise_conv2d_fix'
 ================================================================
-* Date:           Mon Dec 16 19:00:15 2019
+* Date:           Tue Dec 17 15:43:07 2019
 
 * Version:        2018.3.1 (Build 2489210 on Tue Mar 26 04:40:43 MDT 2019)
 * Project:        HLS
@@ -20,7 +20,7 @@
     +--------+-------+----------+------------+
     |  Clock | Target| Estimated| Uncertainty|
     +--------+-------+----------+------------+
-    |ap_clk  |  10.00|     6.380|        1.25|
+    |ap_clk  |   8.00|     6.380|        1.60|
     +--------+-------+----------+------------+
 
 + Latency (clock cycles): 
@@ -162,9 +162,9 @@ ST_6 : Operation 57 [1/2] (3.25ns)   --->   "%input_load = load i16* %input_addr
 State 7 <SV = 6> <Delay = 6.38>
 ST_7 : Operation 58 [1/1] (0.00ns)   --->   "%tmp_29_cast = sext i16 %input_load to i30" [layers_c/pointwise_conv2d.cpp:23]   --->   Operation 58 'sext' 'tmp_29_cast' <Predicate = true> <Delay = 0.00>
 ST_7 : Operation 59 [1/1] (6.38ns) (root node of the DSP)   --->   "%tmp_15 = mul i30 %tmp_32_cast, %tmp_29_cast" [layers_c/pointwise_conv2d.cpp:23]   --->   Operation 59 'mul' 'tmp_15' <Predicate = true> <Delay = 6.38> <Core = "DSP48">   --->   Core 65 'DSP48' <Latency = 0> <II = 1> <Delay = 6.38> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
-ST_7 : Operation 60 [1/1] (0.00ns)   --->   "%tmp_17 = call i16 @_ssdm_op_PartSelect.i16.i30.i32.i32(i30 %tmp_15, i32 14, i32 29)" [layers_c/pointwise_conv2d.cpp:23]   --->   Operation 60 'partselect' 'tmp_17' <Predicate = true> <Delay = 0.00>
 
 State 8 <SV = 7> <Delay = 6.08>
+ST_8 : Operation 60 [1/1] (0.00ns)   --->   "%tmp_17 = call i16 @_ssdm_op_PartSelect.i16.i30.i32.i32(i30 %tmp_15, i32 14, i32 29)" [layers_c/pointwise_conv2d.cpp:23]   --->   Operation 60 'partselect' 'tmp_17' <Predicate = true> <Delay = 0.00>
 ST_8 : Operation 61 [1/1] (2.07ns)   --->   "%buffer_3 = add i16 %tmp_17, %tmp_24" [layers_c/pointwise_conv2d.cpp:23]   --->   Operation 61 'add' 'buffer_3' <Predicate = true> <Delay = 2.07> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.81> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_8 : Operation 62 [1/1] (0.00ns)   --->   "%tmp_26 = trunc i16 %buffer_3 to i15" [layers_c/pointwise_conv2d.cpp:20]   --->   Operation 62 'trunc' 'tmp_26' <Predicate = true> <Delay = 0.00>
 ST_8 : Operation 63 [1/1] (0.00ns)   --->   "%tmp_27 = call i1 @_ssdm_op_BitSelect.i1.i16.i32(i16 %buffer_3, i32 15)" [layers_c/pointwise_conv2d.cpp:27]   --->   Operation 63 'bitselect' 'tmp_27' <Predicate = true> <Delay = 0.00>
@@ -180,7 +180,7 @@ ST_8 : Operation 70 [1/1] (0.00ns)   --->   "br label %.preheader" [layers_c/poi
 ============================================================
 + Verbose Summary: Timing violations
 ============================================================
-Target clock period: 10ns, clock uncertainty: 1.25ns.
+Target clock period: 8ns, clock uncertainty: 1.6ns.
 
  <State 1>: 1.77ns
 The critical path consists of the following:

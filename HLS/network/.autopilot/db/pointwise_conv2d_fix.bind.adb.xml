@@ -881,8 +881,11 @@
 ]]></Node>
 <StgValue><ssdm name="tmp_15"/></StgValue>
 </operation>
+</state>
 
-<operation id="60" st_id="7" stage="1" lat="1">
+<state id="8" st_id="8">
+
+<operation id="60" st_id="8" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -896,9 +899,6 @@
 ]]></Node>
 <StgValue><ssdm name="tmp_17"/></StgValue>
 </operation>
-</state>
-
-<state id="8" st_id="8">
 
 <operation id="61" st_id="8" stage="1" lat="1">
 <core>AddSub</core>
