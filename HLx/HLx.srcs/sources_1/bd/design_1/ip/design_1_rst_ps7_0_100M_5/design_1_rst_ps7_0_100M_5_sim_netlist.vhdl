@@ -1,10 +1,10 @@
--- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
--- Tool Version: Vivado v.2018.3.1 (lin64) Build 2489853 Tue Mar 26 04:18:30 MDT 2019
--- Date        : Mon Dec 16 15:51:01 2019
--- Host        : masudalab-ubuntu running 64-bit Ubuntu 18.04.3 LTS
--- Command     : write_vhdl -force -mode funcsim -rename_top design_1_rst_ps7_0_100M_5 -prefix
---               design_1_rst_ps7_0_100M_5_ design_1_rst_ps7_0_100M_5_sim_netlist.vhdl
+-- Tool Version: Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+-- Date        : Wed Dec 18 10:57:41 2019
+-- Host        : shts-server running 64-bit Ubuntu 18.04.3 LTS
+-- Command     : write_vhdl -force -mode funcsim
+--               /home/shts/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_5/design_1_rst_ps7_0_100M_5_sim_netlist.vhdl
 -- Design      : design_1_rst_ps7_0_100M_5
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -25,6 +25,8 @@ entity design_1_rst_ps7_0_100M_5_cdc_sync is
     aux_reset_in : in STD_LOGIC;
     slowest_sync_clk : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_rst_ps7_0_100M_5_cdc_sync : entity is "cdc_sync";
 end design_1_rst_ps7_0_100M_5_cdc_sync;
 
 architecture STRUCTURE of design_1_rst_ps7_0_100M_5_cdc_sync is
@@ -233,6 +235,8 @@ entity design_1_rst_ps7_0_100M_5_upcnt_n is
     seq_cnt_en : in STD_LOGIC;
     slowest_sync_clk : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_rst_ps7_0_100M_5_upcnt_n : entity is "upcnt_n";
 end design_1_rst_ps7_0_100M_5_upcnt_n;
 
 architecture STRUCTURE of design_1_rst_ps7_0_100M_5_upcnt_n is
@@ -397,6 +401,8 @@ entity design_1_rst_ps7_0_100M_5_lpf is
     ext_reset_in : in STD_LOGIC;
     aux_reset_in : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_rst_ps7_0_100M_5_lpf : entity is "lpf";
 end design_1_rst_ps7_0_100M_5_lpf;
 
 architecture STRUCTURE of design_1_rst_ps7_0_100M_5_lpf is
@@ -578,6 +584,8 @@ entity design_1_rst_ps7_0_100M_5_sequence_psr is
     lpf_int : in STD_LOGIC;
     slowest_sync_clk : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_rst_ps7_0_100M_5_sequence_psr : entity is "sequence_psr";
 end design_1_rst_ps7_0_100M_5_sequence_psr;
 
 architecture STRUCTURE of design_1_rst_ps7_0_100M_5_sequence_psr is
@@ -916,6 +924,8 @@ entity design_1_rst_ps7_0_100M_5_proc_sys_reset is
   attribute C_NUM_PERP_ARESETN of design_1_rst_ps7_0_100M_5_proc_sys_reset : entity is 1;
   attribute C_NUM_PERP_RST : integer;
   attribute C_NUM_PERP_RST of design_1_rst_ps7_0_100M_5_proc_sys_reset : entity is 1;
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_rst_ps7_0_100M_5_proc_sys_reset : entity is "proc_sys_reset";
 end design_1_rst_ps7_0_100M_5_proc_sys_reset;
 
 architecture STRUCTURE of design_1_rst_ps7_0_100M_5_proc_sys_reset is
@@ -1046,7 +1056,7 @@ entity design_1_rst_ps7_0_100M_5 is
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of design_1_rst_ps7_0_100M_5 : entity is "yes";
   attribute x_core_info : string;
-  attribute x_core_info of design_1_rst_ps7_0_100M_5 : entity is "proc_sys_reset,Vivado 2018.3.1";
+  attribute x_core_info of design_1_rst_ps7_0_100M_5 : entity is "proc_sys_reset,Vivado 2018.3";
 end design_1_rst_ps7_0_100M_5;
 
 architecture STRUCTURE of design_1_rst_ps7_0_100M_5 is

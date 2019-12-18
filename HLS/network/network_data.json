@@ -57,14 +57,14 @@
   },
   "Files": {
     "CSource": [
-      "..\/..\/layers_c\/conv2d.cpp",
-      "..\/..\/layers_c\/depthwise_conv2d.cpp",
-      "..\/..\/layers_c\/max_pooling2d.cpp",
-      "..\/..\/mnist_AXI_Stream.cpp",
-      "..\/..\/layers_c\/padding2d.cpp",
-      "..\/..\/layers_c\/pointwise_conv2d.cpp",
+      "..\/..\/layers_c\/up_sampling2d.cpp",
       "..\/..\/layers_c\/separable_conv2d.cpp",
-      "..\/..\/layers_c\/up_sampling2d.cpp"
+      "..\/..\/layers_c\/pointwise_conv2d.cpp",
+      "..\/..\/layers_c\/padding2d.cpp",
+      "..\/..\/mnist_AXI_Stream.cpp",
+      "..\/..\/layers_c\/max_pooling2d.cpp",
+      "..\/..\/layers_c\/depthwise_conv2d.cpp",
+      "..\/..\/layers_c\/conv2d.cpp"
     ],
     "Vhdl": [
       "impl\/vhdl\/depthwise_conv2d_fix.vhd",
@@ -165,8 +165,8 @@
       "impl\/misc\/drivers\/network_v1_0\/src\/xnetwork_sinit.c"
     ],
     "Misc": ["impl\/misc\/logo.png"],
-    "DesignXml": "\/home\/masudalab\/DeepCAEonFPGA\/HLS\/network\/.autopilot\/db\/network.design.xml",
-    "DebugDir": "\/home\/masudalab\/DeepCAEonFPGA\/HLS\/network\/.debug"
+    "DesignXml": "\/home\/shts\/DeepCAEonFPGA\/HLS\/network\/.autopilot\/db\/network.design.xml",
+    "DebugDir": "\/home\/shts\/DeepCAEonFPGA\/HLS\/network\/.debug"
   },
   "SubcoreInfo": {
     "HasXpmMemory": false,
@@ -1483,8 +1483,8 @@
   },
   "GenData": {
     "DataVersion": "0.1",
-    "Time": "2019-12-17 21:51:17 JST",
+    "Time": "2019-12-18 10:36:47 JST",
     "ToolName": "vivado_hls",
-    "ToolVersion": "2018.3.1"
+    "ToolVersion": "2018.3"
   }
 }

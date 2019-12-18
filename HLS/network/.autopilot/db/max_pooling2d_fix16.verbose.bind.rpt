@@ -3,9 +3,9 @@
 ================================================================
 == Vivado HLS Report for 'max_pooling2d_fix16'
 ================================================================
-* Date:           Tue Dec 17 21:51:09 2019
+* Date:           Wed Dec 18 10:36:40 2019
 
-* Version:        2018.3.1 (Build 2489210 on Tue Mar 26 04:40:43 MDT 2019)
+* Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
 * Project:        HLS
 * Solution:       network
 * Product family: zynq
@@ -110,8 +110,8 @@ ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%input_height_read = call i7 @_ssdm
 ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%output_width_cast3 = sext i5 %output_width_read to i6"   --->   Operation 14 'sext' 'output_width_cast3' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%output_height_cast2 = sext i5 %output_height_read to i6"   --->   Operation 15 'sext' 'output_height_cast2' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%input_width_cast = sext i6 %input_width_read to i7"   --->   Operation 16 'sext' 'input_width_cast' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 17 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecResourceLimit(i32 0, [4 x i8]* @p_str, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [layers_c/max_pooling2d.cpp:12]   --->   Operation 17 'specresourcelimit' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 18 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecResourceLimit(i32 0, [4 x i8]* @p_str2, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [layers_c/max_pooling2d.cpp:13]   --->   Operation 18 'specresourcelimit' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecResourceLimit(i32 0, [4 x i8]* @p_str9, [1 x i8]* @p_str110, [1 x i8]* @p_str110, [1 x i8]* @p_str110) nounwind" [layers_c/max_pooling2d.cpp:12]   --->   Operation 17 'specresourcelimit' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecResourceLimit(i32 0, [4 x i8]* @p_str211, [1 x i8]* @p_str110, [1 x i8]* @p_str110, [1 x i8]* @p_str110) nounwind" [layers_c/max_pooling2d.cpp:13]   --->   Operation 18 'specresourcelimit' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%tmp_cast = zext i7 %input_height_read to i9" [layers_c/max_pooling2d.cpp:26]   --->   Operation 19 'zext' 'tmp_cast' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%tmp_71_cast = zext i7 %input_width_cast to i14"   --->   Operation 20 'zext' 'tmp_71_cast' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%tmp_72_cast = zext i6 %output_height_cast2 to i8" [layers_c/max_pooling2d.cpp:32]   --->   Operation 21 'zext' 'tmp_72_cast' <Predicate = true> <Delay = 0.00>
@@ -453,7 +453,7 @@ StgValue_100        (br               ) [ 00111111]
 <pin id="27" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str"/></StgValue>
+<StgValue><ssdm name="p_str9"/></StgValue>
 </bind>
 </comp>
 
@@ -462,7 +462,7 @@ StgValue_100        (br               ) [ 00111111]
 <pin id="29" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str1"/></StgValue>
+<StgValue><ssdm name="p_str110"/></StgValue>
 </bind>
 </comp>
 
@@ -471,7 +471,7 @@ StgValue_100        (br               ) [ 00111111]
 <pin id="31" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str2"/></StgValue>
+<StgValue><ssdm name="p_str211"/></StgValue>
 </bind>
 </comp>
 

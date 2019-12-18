@@ -1,10 +1,10 @@
-// Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+// Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2018.3.1 (lin64) Build 2489853 Tue Mar 26 04:18:30 MDT 2019
-// Date        : Tue Dec 17 22:11:47 2019
-// Host        : masudalab-ubuntu running 64-bit Ubuntu 18.04.3 LTS
+// Tool Version: Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+// Date        : Wed Dec 18 10:59:52 2019
+// Host        : shts-server running 64-bit Ubuntu 18.04.3 LTS
 // Command     : write_verilog -force -mode funcsim
-//               /home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/design_1_smartconnect_0_0_sim_netlist.v
+//               /home/shts/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/design_1_smartconnect_0_0_sim_netlist.v
 // Design      : design_1_smartconnect_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -12,7 +12,7 @@
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CHECK_LICENSE_TYPE = "design_1_smartconnect_0_0,bd_48ac,{}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* X_CORE_INFO = "bd_48ac,Vivado 2018.3.1" *) 
+(* CHECK_LICENSE_TYPE = "design_1_smartconnect_0_0,bd_48ac,{}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* X_CORE_INFO = "bd_48ac,Vivado 2018.3" *) 
 (* NotValidForBitStream *)
 module design_1_smartconnect_0_0
    (aclk,
@@ -3706,7 +3706,7 @@ module design_1_smartconnect_0_0_m00_exit_pipeline_imp_CVVFJV
   wire aclk;
   wire [0:0]interconnect_aresetn;
 
-  (* X_CORE_INFO = "sc_exit_v1_0_8_top,Vivado 2018.3.1" *) 
+  (* X_CORE_INFO = "sc_exit_v1_0_8_top,Vivado 2018.3" *) 
   design_1_smartconnect_0_0_bd_48ac_m00e_0 m00_exit
        (.M00_AXI_araddr(M00_AXI_araddr),
         .M00_AXI_arcache(M00_AXI_arcache),
@@ -3871,7 +3871,7 @@ module design_1_smartconnect_0_0_m00_nodes_imp_Z1B1P3
   wire m00_aw_node_M_AXIS_ARB_TREADY;
   wire m00_aw_node_M_AXIS_ARB_TVALID;
 
-  (* X_CORE_INFO = "sc_node_v1_0_10_top,Vivado 2018.3.1" *) 
+  (* X_CORE_INFO = "sc_node_v1_0_10_top,Vivado 2018.3" *) 
   design_1_smartconnect_0_0_bd_48ac_m00arn_0 m00_ar_node
        (.M00_SC_AR_payld(M00_SC_AR_payld),
         .M_SC_AR_payld(M_SC_AR_payld),
@@ -3882,7 +3882,7 @@ module design_1_smartconnect_0_0_m00_nodes_imp_Z1B1P3
         .aclk(aclk),
         .\count_r_reg[0] (\count_r_reg[0] ),
         .interconnect_aresetn(interconnect_aresetn));
-  (* X_CORE_INFO = "sc_node_v1_0_10_top,Vivado 2018.3.1" *) 
+  (* X_CORE_INFO = "sc_node_v1_0_10_top,Vivado 2018.3" *) 
   design_1_smartconnect_0_0_bd_48ac_m00awn_0 m00_aw_node
        (.M00_SC_AW_payld(M00_SC_AW_payld),
         .M_SC_AW_payld(M_SC_AW_payld),
@@ -3896,7 +3896,7 @@ module design_1_smartconnect_0_0_m00_nodes_imp_Z1B1P3
         .m_axis_arb_tdata(m00_aw_node_M_AXIS_ARB_TDATA),
         .m_axis_arb_tvalid(m00_aw_node_M_AXIS_ARB_TVALID),
         .s_axis_arb_tready(m00_aw_node_M_AXIS_ARB_TREADY));
-  (* X_CORE_INFO = "sc_node_v1_0_10_top,Vivado 2018.3.1" *) 
+  (* X_CORE_INFO = "sc_node_v1_0_10_top,Vivado 2018.3" *) 
   design_1_smartconnect_0_0_bd_48ac_m00bn_0 m00_b_node
        (.M_SC_B_payld(M_SC_B_payld),
         .M_SC_B_send(M_SC_B_send),
@@ -3906,7 +3906,7 @@ module design_1_smartconnect_0_0_m00_nodes_imp_Z1B1P3
         .aclk(aclk),
         .\gen_AB_reg_slice.state_reg[1] (\gen_AB_reg_slice.state_reg[1] ),
         .interconnect_aresetn(interconnect_aresetn));
-  (* X_CORE_INFO = "sc_node_v1_0_10_top,Vivado 2018.3.1" *) 
+  (* X_CORE_INFO = "sc_node_v1_0_10_top,Vivado 2018.3" *) 
   design_1_smartconnect_0_0_bd_48ac_m00rn_0 m00_r_node
        (.M_SC_R_payld(M_SC_R_payld),
         .M_SC_R_send(M_SC_R_send),
@@ -3916,7 +3916,7 @@ module design_1_smartconnect_0_0_m00_nodes_imp_Z1B1P3
         .aclk(aclk),
         .\gen_AB_reg_slice.state_reg[1] (\gen_AB_reg_slice.state_reg[1]_0 ),
         .interconnect_aresetn(interconnect_aresetn));
-  (* X_CORE_INFO = "sc_node_v1_0_10_top,Vivado 2018.3.1" *) 
+  (* X_CORE_INFO = "sc_node_v1_0_10_top,Vivado 2018.3" *) 
   design_1_smartconnect_0_0_bd_48ac_m00wn_0 m00_w_node
        (.M00_SC_W_payld(M00_SC_W_payld),
         .M_SC_W_info(M_SC_W_info),
@@ -4043,7 +4043,7 @@ module design_1_smartconnect_0_0_s00_entry_pipeline_imp_1C3JDRS
   wire aclk;
   wire [0:0]interconnect_aresetn;
 
-  (* X_CORE_INFO = "sc_mmu_v1_0_7_top,Vivado 2018.3.1" *) 
+  (* X_CORE_INFO = "sc_mmu_v1_0_7_top,Vivado 2018.3" *) 
   design_1_smartconnect_0_0_bd_48ac_s00mmu_0 s00_mmu
        (.M_SC_R_payld(M_SC_R_payld),
         .M_SC_R_recv(M_SC_R_recv),
@@ -4068,7 +4068,7 @@ module design_1_smartconnect_0_0_s00_entry_pipeline_imp_1C3JDRS
         .S_SC_AR_send(S_SC_AR_send),
         .aclk(aclk),
         .interconnect_aresetn(interconnect_aresetn));
-  (* X_CORE_INFO = "sc_si_converter_v1_0_7_top,Vivado 2018.3.1" *) 
+  (* X_CORE_INFO = "sc_si_converter_v1_0_7_top,Vivado 2018.3" *) 
   design_1_smartconnect_0_0_bd_48ac_s00sic_0 s00_si_converter
        (.S_SC_AR_payld(S_SC_AR_payld[14:11]),
         .\gen_rd_b.doutb_reg_reg[91] ({S_SC_AR_payld[21:18],S_SC_AR_payld[6:3]}));
@@ -4123,7 +4123,7 @@ module design_1_smartconnect_0_0_s00_nodes_imp_1FAO4F6
   wire aclk;
   wire [0:0]interconnect_aresetn;
 
-  (* X_CORE_INFO = "sc_node_v1_0_10_top,Vivado 2018.3.1" *) 
+  (* X_CORE_INFO = "sc_node_v1_0_10_top,Vivado 2018.3" *) 
   design_1_smartconnect_0_0_bd_48ac_sarn_0 s00_ar_node
        (.M_SC_AR_payld(M_SC_AR_payld),
         .M_SC_AR_recv(M_SC_AR_recv),
@@ -4134,7 +4134,7 @@ module design_1_smartconnect_0_0_s00_nodes_imp_1FAO4F6
         .S_SC_AR_send(S_SC_AR_send),
         .aclk(aclk),
         .interconnect_aresetn(interconnect_aresetn));
-  (* X_CORE_INFO = "sc_node_v1_0_10_top,Vivado 2018.3.1" *) 
+  (* X_CORE_INFO = "sc_node_v1_0_10_top,Vivado 2018.3" *) 
   design_1_smartconnect_0_0_bd_48ac_srn_0 s00_r_node
        (.M00_SC_R_payld(M00_SC_R_payld),
         .M_SC_R_payld(M_SC_R_payld),
@@ -4241,7 +4241,7 @@ module design_1_smartconnect_0_0_s01_entry_pipeline_imp_F11SX8
   wire s01_mmu_M_AXI_WREADY;
   wire s01_mmu_M_AXI_WVALID;
 
-  (* X_CORE_INFO = "sc_mmu_v1_0_7_top,Vivado 2018.3.1" *) 
+  (* X_CORE_INFO = "sc_mmu_v1_0_7_top,Vivado 2018.3" *) 
   design_1_smartconnect_0_0_bd_48ac_s01mmu_0 s01_mmu
        (.M_SC_B_payld(M_SC_B_payld),
         .M_SC_B_recv(M_SC_B_recv),
@@ -4272,7 +4272,7 @@ module design_1_smartconnect_0_0_s01_entry_pipeline_imp_F11SX8
         .m_axi_wvalid(s01_mmu_M_AXI_WVALID),
         .s_axi_awready(s01_mmu_M_AXI_AWREADY),
         .s_axi_wready(s01_mmu_M_AXI_WREADY));
-  (* X_CORE_INFO = "sc_si_converter_v1_0_7_top,Vivado 2018.3.1" *) 
+  (* X_CORE_INFO = "sc_si_converter_v1_0_7_top,Vivado 2018.3" *) 
   design_1_smartconnect_0_0_bd_48ac_s01sic_0 s01_si_converter
        (.S_SC_AW_payld(S_SC_AW_payld[14:11]),
         .S_SC_AW_recv(S_SC_AW_recv),
@@ -4363,7 +4363,7 @@ module design_1_smartconnect_0_0_s01_nodes_imp_AIXRF8
   wire aclk;
   wire [0:0]interconnect_aresetn;
 
-  (* X_CORE_INFO = "sc_node_v1_0_10_top,Vivado 2018.3.1" *) 
+  (* X_CORE_INFO = "sc_node_v1_0_10_top,Vivado 2018.3" *) 
   design_1_smartconnect_0_0_bd_48ac_sawn_0 s01_aw_node
        (.M_SC_AW_payld(M_SC_AW_payld),
         .M_SC_AW_recv(M_SC_AW_recv),
@@ -4374,7 +4374,7 @@ module design_1_smartconnect_0_0_s01_nodes_imp_AIXRF8
         .S_SC_AW_send(S_SC_AW_send),
         .aclk(aclk),
         .interconnect_aresetn(interconnect_aresetn));
-  (* X_CORE_INFO = "sc_node_v1_0_10_top,Vivado 2018.3.1" *) 
+  (* X_CORE_INFO = "sc_node_v1_0_10_top,Vivado 2018.3" *) 
   design_1_smartconnect_0_0_bd_48ac_sbn_0 s01_b_node
        (.M01_SC_B_payld(M01_SC_B_payld),
         .M_SC_B_payld(M_SC_B_payld),
@@ -4384,7 +4384,7 @@ module design_1_smartconnect_0_0_s01_nodes_imp_AIXRF8
         .S_SC_B_send(S_SC_B_send),
         .aclk(aclk),
         .interconnect_aresetn(interconnect_aresetn));
-  (* X_CORE_INFO = "sc_node_v1_0_10_top,Vivado 2018.3.1" *) 
+  (* X_CORE_INFO = "sc_node_v1_0_10_top,Vivado 2018.3" *) 
   design_1_smartconnect_0_0_bd_48ac_swn_0 s01_w_node
        (.M_SC_W_info(M_SC_W_info),
         .M_SC_W_payld(M_SC_W_payld),
@@ -4617,28 +4617,28 @@ module design_1_smartconnect_0_0_switchboards_imp_1MKJLH2
   wire [86:0]S01_SC_W_payld;
   wire aclk;
 
-  (* X_CORE_INFO = "sc_switchboard_v1_0_6_top,Vivado 2018.3.1" *) 
+  (* X_CORE_INFO = "sc_switchboard_v1_0_6_top,Vivado 2018.3" *) 
   design_1_smartconnect_0_0_bd_48ac_arsw_0 ar_switchboard
        (.M00_SC_AR_payld(M00_SC_AR_payld),
         .S00_SC_AR_payld(S00_SC_AR_payld),
         .aclk(aclk));
-  (* X_CORE_INFO = "sc_switchboard_v1_0_6_top,Vivado 2018.3.1" *) 
+  (* X_CORE_INFO = "sc_switchboard_v1_0_6_top,Vivado 2018.3" *) 
   design_1_smartconnect_0_0_bd_48ac_awsw_0 aw_switchboard
        (.M00_SC_AW_payld(M00_SC_AW_payld),
         .M00_SC_AW_recv(M00_SC_AW_recv),
         .S01_SC_AW_payld(S01_SC_AW_payld),
         .aclk(aclk));
-  (* X_CORE_INFO = "sc_switchboard_v1_0_6_top,Vivado 2018.3.1" *) 
+  (* X_CORE_INFO = "sc_switchboard_v1_0_6_top,Vivado 2018.3" *) 
   design_1_smartconnect_0_0_bd_48ac_bsw_0 b_switchboard
        (.M01_SC_B_payld(M01_SC_B_payld),
         .S00_SC_B_payld(S00_SC_B_payld),
         .aclk(aclk));
-  (* X_CORE_INFO = "sc_switchboard_v1_0_6_top,Vivado 2018.3.1" *) 
+  (* X_CORE_INFO = "sc_switchboard_v1_0_6_top,Vivado 2018.3" *) 
   design_1_smartconnect_0_0_bd_48ac_rsw_0 r_switchboard
        (.M00_SC_R_payld(M00_SC_R_payld),
         .S00_SC_R_payld(S00_SC_R_payld),
         .aclk(aclk));
-  (* X_CORE_INFO = "sc_switchboard_v1_0_6_top,Vivado 2018.3.1" *) 
+  (* X_CORE_INFO = "sc_switchboard_v1_0_6_top,Vivado 2018.3" *) 
   design_1_smartconnect_0_0_bd_48ac_wsw_0 w_switchboard
        (.M00_SC_W_payld(M00_SC_W_payld),
         .M00_SC_W_recv(M00_SC_W_recv),

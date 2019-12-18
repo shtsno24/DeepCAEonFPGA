@@ -229,7 +229,7 @@
 
 <Node id="17" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="0" op_4_bw="0" op_5_bw="0">
 <![CDATA[
-:9  call void (...)* @_ssdm_op_SpecResourceLimit(i32 0, [4 x i8]* @p_str, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
+:9  call void (...)* @_ssdm_op_SpecResourceLimit(i32 0, [4 x i8]* @p_str9, [1 x i8]* @p_str110, [1 x i8]* @p_str110, [1 x i8]* @p_str110) nounwind
 
 ]]></Node>
 <StgValue><ssdm name=""/></StgValue>
@@ -244,7 +244,7 @@
 
 <Node id="18" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="0" op_4_bw="0" op_5_bw="0">
 <![CDATA[
-:10  call void (...)* @_ssdm_op_SpecResourceLimit(i32 0, [4 x i8]* @p_str2, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
+:10  call void (...)* @_ssdm_op_SpecResourceLimit(i32 0, [4 x i8]* @p_str211, [1 x i8]* @p_str110, [1 x i8]* @p_str110, [1 x i8]* @p_str110) nounwind
 
 ]]></Node>
 <StgValue><ssdm name=""/></StgValue>
