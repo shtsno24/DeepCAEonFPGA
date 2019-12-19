@@ -1,11 +1,11 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2018.3.1 (lin64) Build 2489853 Tue Mar 26 04:18:30 MDT 2019
-// Date        : Thu Dec 19 17:30:29 2019
+// Date        : Thu Dec 19 21:30:40 2019
 // Host        : masudalab-ubuntu running 64-bit Ubuntu 18.04.3 LTS
-// Command     : write_verilog -force -mode synth_stub -rename_top design_1_xbar_0 -prefix
-//               design_1_xbar_0_ design_1_xbar_2_stub.v
-// Design      : design_1_xbar_2
+// Command     : write_verilog -force -mode synth_stub
+//               /home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0_stub.v
+// Design      : design_1_xbar_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z020clg400-1
 // --------------------------------------------------------------------------------
