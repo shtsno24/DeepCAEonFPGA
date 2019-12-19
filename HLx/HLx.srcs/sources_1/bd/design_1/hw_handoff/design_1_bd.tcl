@@ -185,6 +185,7 @@ proc create_hier_cell_network_dma { parentCell nameHier } {
    CONFIG.c_addr_width {64} \
    CONFIG.c_include_mm2s {0} \
    CONFIG.c_include_sg {0} \
+   CONFIG.c_m_axi_s2mm_data_width {64} \
    CONFIG.c_s2mm_burst_size {8} \
    CONFIG.c_sg_include_stscntrl_strm {0} \
    CONFIG.c_sg_length_width {26} \

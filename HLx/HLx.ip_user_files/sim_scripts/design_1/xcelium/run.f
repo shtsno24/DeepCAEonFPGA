@@ -145,12 +145,6 @@
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   "../../../bd/design_1/ip/design_1_axi_smc_0/sim/design_1_axi_smc_0.v" \
--endlib
--makelib xcelium_lib/axi_protocol_converter_v2_1_18 \
-  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/7a04/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
--endlib
--makelib xcelium_lib/xil_defaultlib \
-  "../../../bd/design_1/ip/design_1_auto_pc_0/sim/design_1_auto_pc_0.v" \
   "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/4647/hdl/verilog/depthwise_conv2d_fix.v" \
   "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/4647/hdl/verilog/depthwise_conv2d_fix_1.v" \
   "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/4647/hdl/verilog/depthwise_conv2d_fix_2.v" \
@@ -208,6 +202,12 @@
 -makelib xcelium_lib/xil_defaultlib \
   "../../../bd/design_1/ip/design_1_axi_dma_in_0/sim/design_1_axi_dma_in_0.vhd" \
   "../../../bd/design_1/ip/design_1_axi_dma_out_0/sim/design_1_axi_dma_out_0.vhd" \
+-endlib
+-makelib xcelium_lib/axi_protocol_converter_v2_1_18 \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/7a04/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/design_1/ip/design_1_auto_pc_0/sim/design_1_auto_pc_0.v" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   glbl.v

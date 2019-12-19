@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2018.3.1 (lin64) Build 2489853 Tue Mar 26 04:18:30 MDT 2019
-//Date        : Thu Dec 19 19:07:30 2019
+//Date        : Thu Dec 19 19:39:20 2019
 //Host        : masudalab-ubuntu running 64-bit Ubuntu 18.04.3 LTS
 //Command     : generate_target design_1.bd
 //Design      : design_1
@@ -78,10 +78,10 @@ module design_1
   wire axi_dma_out_M_AXI_S2MM_BREADY;
   wire [1:0]axi_dma_out_M_AXI_S2MM_BRESP;
   wire axi_dma_out_M_AXI_S2MM_BVALID;
-  wire [31:0]axi_dma_out_M_AXI_S2MM_WDATA;
+  wire [63:0]axi_dma_out_M_AXI_S2MM_WDATA;
   wire axi_dma_out_M_AXI_S2MM_WLAST;
   wire axi_dma_out_M_AXI_S2MM_WREADY;
-  wire [3:0]axi_dma_out_M_AXI_S2MM_WSTRB;
+  wire [7:0]axi_dma_out_M_AXI_S2MM_WSTRB;
   wire axi_dma_out_M_AXI_S2MM_WVALID;
   wire [31:0]axi_smc_M00_AXI_ARADDR;
   wire [1:0]axi_smc_M00_AXI_ARBURST;
@@ -1735,10 +1735,10 @@ module network_dma_imp_1285LS0
   output M_AXI_S2MM_bready;
   input [1:0]M_AXI_S2MM_bresp;
   input M_AXI_S2MM_bvalid;
-  output [31:0]M_AXI_S2MM_wdata;
+  output [63:0]M_AXI_S2MM_wdata;
   output M_AXI_S2MM_wlast;
   input M_AXI_S2MM_wready;
-  output [3:0]M_AXI_S2MM_wstrb;
+  output [7:0]M_AXI_S2MM_wstrb;
   output M_AXI_S2MM_wvalid;
   input [31:0]S_AXI_LITE1_araddr;
   output S_AXI_LITE1_arready;
@@ -1821,10 +1821,10 @@ module network_dma_imp_1285LS0
   wire axi_dma_out_M_AXI_S2MM_BREADY;
   wire [1:0]axi_dma_out_M_AXI_S2MM_BRESP;
   wire axi_dma_out_M_AXI_S2MM_BVALID;
-  wire [31:0]axi_dma_out_M_AXI_S2MM_WDATA;
+  wire [63:0]axi_dma_out_M_AXI_S2MM_WDATA;
   wire axi_dma_out_M_AXI_S2MM_WLAST;
   wire axi_dma_out_M_AXI_S2MM_WREADY;
-  wire [3:0]axi_dma_out_M_AXI_S2MM_WSTRB;
+  wire [7:0]axi_dma_out_M_AXI_S2MM_WSTRB;
   wire axi_dma_out_M_AXI_S2MM_WVALID;
   wire [15:0]network_0_output_data_TDATA;
   wire [1:0]network_0_output_data_TKEEP;
@@ -1899,9 +1899,9 @@ module network_dma_imp_1285LS0
   assign M_AXI_S2MM_awsize[2:0] = axi_dma_out_M_AXI_S2MM_AWSIZE;
   assign M_AXI_S2MM_awvalid = axi_dma_out_M_AXI_S2MM_AWVALID;
   assign M_AXI_S2MM_bready = axi_dma_out_M_AXI_S2MM_BREADY;
-  assign M_AXI_S2MM_wdata[31:0] = axi_dma_out_M_AXI_S2MM_WDATA;
+  assign M_AXI_S2MM_wdata[63:0] = axi_dma_out_M_AXI_S2MM_WDATA;
   assign M_AXI_S2MM_wlast = axi_dma_out_M_AXI_S2MM_WLAST;
-  assign M_AXI_S2MM_wstrb[3:0] = axi_dma_out_M_AXI_S2MM_WSTRB;
+  assign M_AXI_S2MM_wstrb[7:0] = axi_dma_out_M_AXI_S2MM_WSTRB;
   assign M_AXI_S2MM_wvalid = axi_dma_out_M_AXI_S2MM_WVALID;
   assign S_AXI_LITE1_arready = ps7_0_axi_periph_M01_AXI_ARREADY;
   assign S_AXI_LITE1_awready = ps7_0_axi_periph_M01_AXI_AWREADY;
