@@ -3,9 +3,9 @@
 ================================================================
 == Vivado HLS Report for 'up_sampling2d_fix16'
 ================================================================
-* Date:           Wed Dec 18 10:36:41 2019
+* Date:           Thu Dec 19 21:54:46 2019
 
-* Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
+* Version:        2018.3.1 (Build 2489210 on Tue Mar 26 04:40:43 MDT 2019)
 * Project:        HLS
 * Solution:       network
 * Product family: zynq

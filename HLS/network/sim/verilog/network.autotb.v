@@ -1,9 +1,9 @@
 // ==============================================================
-// File generated on Wed Dec 18 10:38:37 JST 2019
-// Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
-// SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
-// IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-// Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+// File generated on Thu Dec 19 21:55:38 JST 2019
+// Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3.1 (64-bit)
+// SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
+// IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+// Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // ==============================================================
  `timescale 1ns/1ps
 
@@ -142,20 +142,20 @@ wire  AXILiteS_BVALID;
 wire  AXILiteS_BREADY;
 wire [1 : 0] AXILiteS_BRESP;
 wire  AXILiteS_INTERRUPT;
-wire [15 : 0] input_data_TDATA;
+wire [31 : 0] input_data_TDATA;
 wire  input_data_TVALID;
 wire  input_data_TREADY;
-wire [1 : 0] input_data_TKEEP;
-wire [1 : 0] input_data_TSTRB;
+wire [3 : 0] input_data_TKEEP;
+wire [3 : 0] input_data_TSTRB;
 wire [0 : 0] input_data_TUSER;
 wire [0 : 0] input_data_TLAST;
 wire [0 : 0] input_data_TID;
 wire [0 : 0] input_data_TDEST;
-wire [15 : 0] output_data_TDATA;
+wire [31 : 0] output_data_TDATA;
 wire  output_data_TVALID;
 wire  output_data_TREADY;
-wire [1 : 0] output_data_TKEEP;
-wire [1 : 0] output_data_TSTRB;
+wire [3 : 0] output_data_TKEEP;
+wire [3 : 0] output_data_TSTRB;
 wire [0 : 0] output_data_TUSER;
 wire [0 : 0] output_data_TLAST;
 wire [0 : 0] output_data_TID;

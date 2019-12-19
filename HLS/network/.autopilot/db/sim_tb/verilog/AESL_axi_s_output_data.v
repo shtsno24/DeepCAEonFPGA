@@ -1,9 +1,9 @@
 // ==============================================================
-// File generated on Wed Dec 18 10:38:37 JST 2019
-// Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
-// SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
-// IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-// Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+// File generated on Thu Dec 19 21:55:38 JST 2019
+// Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3.1 (64-bit)
+// SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
+// IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+// Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // ==============================================================
 
 `timescale 1 ns / 1 ps
@@ -28,9 +28,9 @@
 module AESL_axi_s_output_data (
     input clk,
     input reset,
-    input [16 - 1:0] TRAN_output_data_TDATA,
-    input [2 - 1:0] TRAN_output_data_TKEEP,
-    input [2 - 1:0] TRAN_output_data_TSTRB,
+    input [32 - 1:0] TRAN_output_data_TDATA,
+    input [4 - 1:0] TRAN_output_data_TKEEP,
+    input [4 - 1:0] TRAN_output_data_TSTRB,
     input TRAN_output_data_TUSER,
     input TRAN_output_data_TLAST,
     input TRAN_output_data_TID,
@@ -45,11 +45,11 @@ module AESL_axi_s_output_data (
     wire output_data_TDATA_full;
     wire output_data_TDATA_empty;
     reg output_data_TDATA_write_en;
-    reg [16 - 1:0] output_data_TDATA_write_data;
+    reg [32 - 1:0] output_data_TDATA_write_data;
     reg output_data_TDATA_read_en;
-    wire [16 - 1:0] output_data_TDATA_read_data;
+    wire [32 - 1:0] output_data_TDATA_read_data;
     
-    fifo #(784, 16) fifo_output_data_TDATA (
+    fifo #(784, 32) fifo_output_data_TDATA (
         .reset(1'b0),
         .write_clock(clk),
         .write_en(output_data_TDATA_write_en),
@@ -68,11 +68,11 @@ module AESL_axi_s_output_data (
     wire output_data_TKEEP_full;
     wire output_data_TKEEP_empty;
     reg output_data_TKEEP_write_en;
-    reg [2 - 1:0] output_data_TKEEP_write_data;
+    reg [4 - 1:0] output_data_TKEEP_write_data;
     reg output_data_TKEEP_read_en;
-    wire [2 - 1:0] output_data_TKEEP_read_data;
+    wire [4 - 1:0] output_data_TKEEP_read_data;
     
-    fifo #(784, 2) fifo_output_data_TKEEP (
+    fifo #(784, 4) fifo_output_data_TKEEP (
         .reset(1'b0),
         .write_clock(clk),
         .write_en(output_data_TKEEP_write_en),
@@ -91,11 +91,11 @@ module AESL_axi_s_output_data (
     wire output_data_TSTRB_full;
     wire output_data_TSTRB_empty;
     reg output_data_TSTRB_write_en;
-    reg [2 - 1:0] output_data_TSTRB_write_data;
+    reg [4 - 1:0] output_data_TSTRB_write_data;
     reg output_data_TSTRB_read_en;
-    wire [2 - 1:0] output_data_TSTRB_read_data;
+    wire [4 - 1:0] output_data_TSTRB_read_data;
     
-    fifo #(784, 2) fifo_output_data_TSTRB (
+    fifo #(784, 4) fifo_output_data_TSTRB (
         .reset(1'b0),
         .write_clock(clk),
         .write_en(output_data_TSTRB_write_en),
@@ -254,7 +254,7 @@ module AESL_axi_s_output_data (
     
     initial begin : AXI_stream_receiver_output_data_TDATA
         integer fp;
-        reg [16 - 1:0] data;
+        reg [32 - 1:0] data;
         reg [8 * 5:1] str;
         
         transaction_save_output_data_TDATA = 0;
@@ -285,7 +285,7 @@ module AESL_axi_s_output_data (
     
     initial begin : AXI_stream_receiver_output_data_TKEEP
         integer fp;
-        reg [2 - 1:0] data;
+        reg [4 - 1:0] data;
         reg [8 * 5:1] str;
         
         transaction_save_output_data_TKEEP = 0;
@@ -316,7 +316,7 @@ module AESL_axi_s_output_data (
     
     initial begin : AXI_stream_receiver_output_data_TSTRB
         integer fp;
-        reg [2 - 1:0] data;
+        reg [4 - 1:0] data;
         reg [8 * 5:1] str;
         
         transaction_save_output_data_TSTRB = 0;

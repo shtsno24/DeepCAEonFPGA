@@ -1,4 +1,4 @@
 #!/bin/sh
 lli=${LLVMINTERP-lli}
 exec $lli \
-    /home/shts/DeepCAEonFPGA/HLS/network/.autopilot/db/a.g.bc ${1+"$@"}
+    /home/masudalab/DeepCAEonFPGA/HLS/network/.autopilot/db/a.g.bc ${1+"$@"}

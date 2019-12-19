@@ -1,9 +1,9 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'depthwise_conv2d_fix_1'" level="0">
-<item name = "Date">Wed Dec 18 10:36:44 2019
+<item name = "Date">Thu Dec 19 21:54:49 2019
 </item>
-<item name = "Version">2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)</item>
+<item name = "Version">2018.3.1 (Build 2489210 on Tue Mar 26 04:40:43 MDT 2019)</item>
 <item name = "Project">HLS</item>
 <item name = "Solution">network</item>
 <item name = "Product family">zynq</item>
@@ -150,11 +150,11 @@
 <column name="tmp1_reg_615">11, 0, 11, 0</column>
 <column name="tmp3_reg_584">11, 0, 11, 0</column>
 <column name="tmp6_reg_620">8, 0, 8, 0</column>
-<column name="tmp_104_cast_reg_602">4, 0, 11, 7</column>
+<column name="tmp_105_cast_reg_602">4, 0, 11, 7</column>
 <column name="tmp_81_reg_653">16, 0, 16, 0</column>
-<column name="tmp_95_cast_reg_533">6, 0, 11, 5</column>
-<column name="tmp_96_cast_reg_538">5, 0, 7, 2</column>
-<column name="tmp_97_cast_reg_543">5, 0, 11, 6</column>
+<column name="tmp_96_cast_reg_533">6, 0, 11, 5</column>
+<column name="tmp_97_cast_reg_538">5, 0, 7, 2</column>
+<column name="tmp_98_cast_reg_543">5, 0, 11, 6</column>
 <column name="tmp_cast_reg_528">6, 0, 7, 1</column>
 </table>
 </item>
