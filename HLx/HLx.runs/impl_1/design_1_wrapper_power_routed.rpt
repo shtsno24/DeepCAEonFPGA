@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3.1 (lin64) Build 2489853 Tue Mar 26 04:18:30 MDT 2019
-| Date             : Thu Dec 19 17:34:06 2019
+| Date             : Thu Dec 19 18:18:04 2019
 | Host             : masudalab-ubuntu running 64-bit Ubuntu 18.04.3 LTS
 | Command          : report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
 | Design           : design_1_wrapper
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.499        |
+| Total On-Chip Power (W)  | 1.505        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.361        |
+| Dynamic (W)              | 1.366        |
 | Device Static (W)        | 0.139        |
 | Effective TJA (C/W)      | 11.5         |
-| Max Ambient (C)          | 67.7         |
-| Junction Temperature (C) | 42.3         |
+| Max Ambient (C)          | 67.6         |
+| Junction Temperature (C) | 42.4         |
 | Confidence Level         | Medium       |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,21 +52,20 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.026 |        3 |       --- |             --- |
-| Slice Logic              |     0.013 |    16747 |       --- |             --- |
-|   LUT as Logic           |     0.011 |     5434 |     53200 |           10.21 |
+| Clocks                   |     0.025 |        3 |       --- |             --- |
+| Slice Logic              |     0.013 |    16263 |       --- |             --- |
+|   LUT as Logic           |     0.011 |     5277 |     53200 |            9.92 |
 |   CARRY4                 |     0.001 |      344 |     13300 |            2.59 |
-|   Register               |    <0.001 |     7824 |    106400 |            7.35 |
-|   LUT as Distributed RAM |    <0.001 |      430 |     17400 |            2.47 |
-|   LUT as Shift Register  |    <0.001 |      187 |     17400 |            1.07 |
-|   F7/F8 Muxes            |    <0.001 |        5 |     53200 |           <0.01 |
+|   Register               |    <0.001 |     7503 |    106400 |            7.05 |
+|   LUT as Distributed RAM |    <0.001 |      442 |     17400 |            2.54 |
+|   LUT as Shift Register  |    <0.001 |      190 |     17400 |            1.09 |
 |   Others                 |     0.000 |      653 |       --- |             --- |
-| Signals                  |     0.017 |    11875 |       --- |             --- |
-| Block RAM                |     0.037 |     22.5 |       140 |           16.07 |
-| DSPs                     |     0.011 |       14 |       220 |            6.36 |
-| PS7                      |     1.256 |        1 |       --- |             --- |
+| Signals                  |     0.017 |    11491 |       --- |             --- |
+| Block RAM                |     0.037 |     21.5 |       140 |           15.36 |
+| DSPs                     |     0.012 |       14 |       220 |            6.36 |
+| PS7                      |     1.262 |        1 |       --- |             --- |
 | Static Power             |     0.139 |          |           |                 |
-| Total                    |     1.499 |          |           |                 |
+| Total                    |     1.505 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -89,7 +88,7 @@ Table of Contents
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
 | MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccpint   |       1.000 |     0.675 |       0.647 |      0.028 |
+| Vccpint   |       1.000 |     0.681 |       0.653 |      0.028 |
 | Vccpaux   |       1.800 |     0.036 |       0.026 |      0.010 |
 | Vccpll    |       1.800 |     0.017 |       0.014 |      0.003 |
 | Vcco_ddr  |       1.500 |     0.354 |       0.352 |      0.002 |
@@ -152,20 +151,17 @@ Table of Contents
 +--------------------------+-----------+
 | Name                     | Power (W) |
 +--------------------------+-----------+
-| design_1_wrapper         |     1.361 |
-|   design_1_i             |     1.361 |
-|     axi_dma_in           |     0.003 |
-|       U0                 |     0.003 |
-|     axi_dma_out          |     0.006 |
-|       U0                 |     0.006 |
-|     network_0            |     0.068 |
-|       inst               |     0.068 |
-|     processing_system7_0 |     1.257 |
-|       inst               |     1.257 |
+| design_1_wrapper         |     1.366 |
+|   design_1_i             |     1.366 |
+|     axi_smc              |     0.022 |
+|       inst               |     0.022 |
+|     network_dma          |     0.077 |
+|       axi_dma_0          |     0.007 |
+|       network_0          |     0.070 |
+|     processing_system7_0 |     1.263 |
+|       inst               |     1.263 |
 |     ps7_0_axi_periph     |     0.004 |
 |       s00_couplers       |     0.003 |
-|     smartconnect_0       |     0.022 |
-|       inst               |     0.022 |
 +--------------------------+-----------+
 
 
