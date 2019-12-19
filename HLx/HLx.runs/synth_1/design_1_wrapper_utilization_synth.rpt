@@ -1,8 +1,8 @@
-Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-| Date         : Wed Dec 18 11:17:15 2019
-| Host         : shts-server running 64-bit Ubuntu 18.04.3 LTS
+| Tool Version : Vivado v.2018.3.1 (lin64) Build 2489853 Tue Mar 26 04:18:30 MDT 2019
+| Date         : Thu Dec 19 12:59:36 2019
+| Host         : masudalab-ubuntu running 64-bit Ubuntu 18.04.3 LTS
 | Command      : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
 | Design       : design_1_wrapper
 | Device       : 7z020clg400-1
@@ -179,7 +179,6 @@ Table of Contents
 | design_1_smartconnect_0_0       |    1 |
 | design_1_rst_ps7_0_100M_5       |    1 |
 | design_1_processing_system7_0_0 |    1 |
-| design_1_network_0_0            |    1 |
 | design_1_axi_dma_0_2            |    1 |
 | design_1_axi_dma_0_0            |    1 |
 | design_1_auto_pc_0              |    1 |

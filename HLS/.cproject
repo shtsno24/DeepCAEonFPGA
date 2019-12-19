@@ -55,6 +55,8 @@
                                     									
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/lnx64/tools/auto_cc/include"/>
                                     									
+                                    <listOptionValue builtIn="false" value="/home/masudalab/DeepCAEonFPGA"/>
+                                    									
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/include"/>
                                     									
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/include/ap_sysc"/>
@@ -88,6 +90,8 @@
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/lnx64/tools/systemc/include"/>
                                     									
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/lnx64/tools/auto_cc/include"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="/home/masudalab/DeepCAEonFPGA"/>
                                     									
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/include"/>
                                     									
@@ -169,7 +173,7 @@
                                 								
                                 <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/lnx64/tools/auto_cc/include"/>
                                 								
-                                <listOptionValue builtIn="false" value="/home/shts/DeepCAEonFPGA"/>
+                                <listOptionValue builtIn="false" value="/home/masudalab/DeepCAEonFPGA"/>
                                 								
                                 <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/include"/>
                                 								
@@ -201,7 +205,7 @@
                                 								
                                 <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/lnx64/tools/auto_cc/include"/>
                                 								
-                                <listOptionValue builtIn="false" value="/home/shts/DeepCAEonFPGA"/>
+                                <listOptionValue builtIn="false" value="/home/masudalab/DeepCAEonFPGA"/>
                                 								
                                 <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/include"/>
                                 								
@@ -285,6 +289,8 @@
                                     									
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/lnx64/tools/auto_cc/include"/>
                                     									
+                                    <listOptionValue builtIn="false" value="/home/masudalab/DeepCAEonFPGA"/>
+                                    									
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/include"/>
                                     									
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/include/ap_sysc"/>
@@ -308,6 +314,8 @@
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/lnx64/tools/systemc/include"/>
                                     									
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/lnx64/tools/auto_cc/include"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="/home/masudalab/DeepCAEonFPGA"/>
                                     									
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/include"/>
                                     									
@@ -379,7 +387,7 @@
                                 								
                                 <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/lnx64/tools/auto_cc/include"/>
                                 								
-                                <listOptionValue builtIn="false" value="/home/shts/DeepCAEonFPGA"/>
+                                <listOptionValue builtIn="false" value="/home/masudalab/DeepCAEonFPGA"/>
                                 								
                                 <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/include"/>
                                 								
@@ -411,7 +419,7 @@
                                 								
                                 <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/lnx64/tools/auto_cc/include"/>
                                 								
-                                <listOptionValue builtIn="false" value="/home/shts/DeepCAEonFPGA"/>
+                                <listOptionValue builtIn="false" value="/home/masudalab/DeepCAEonFPGA"/>
                                 								
                                 <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/include"/>
                                 								
