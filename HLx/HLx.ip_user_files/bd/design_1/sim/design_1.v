@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2018.3.1 (lin64) Build 2489853 Tue Mar 26 04:18:30 MDT 2019
-//Date        : Thu Dec 19 18:11:23 2019
+//Date        : Thu Dec 19 18:46:43 2019
 //Host        : masudalab-ubuntu running 64-bit Ubuntu 18.04.3 LTS
 //Command     : generate_target design_1.bd
 //Design      : design_1
@@ -62,7 +62,7 @@ module design_1
   wire axi_dma_0_M_AXI_MM2S_ARREADY;
   wire [2:0]axi_dma_0_M_AXI_MM2S_ARSIZE;
   wire axi_dma_0_M_AXI_MM2S_ARVALID;
-  wire [31:0]axi_dma_0_M_AXI_MM2S_RDATA;
+  wire [63:0]axi_dma_0_M_AXI_MM2S_RDATA;
   wire axi_dma_0_M_AXI_MM2S_RLAST;
   wire axi_dma_0_M_AXI_MM2S_RREADY;
   wire [1:0]axi_dma_0_M_AXI_MM2S_RRESP;
@@ -1406,7 +1406,7 @@ module network_dma_imp_1285LS0
   input M_AXI_MM2S_arready;
   output [2:0]M_AXI_MM2S_arsize;
   output M_AXI_MM2S_arvalid;
-  input [31:0]M_AXI_MM2S_rdata;
+  input [63:0]M_AXI_MM2S_rdata;
   input M_AXI_MM2S_rlast;
   output M_AXI_MM2S_rready;
   input [1:0]M_AXI_MM2S_rresp;
@@ -1476,7 +1476,7 @@ module network_dma_imp_1285LS0
   wire axi_dma_0_M_AXI_MM2S_ARREADY;
   wire [2:0]axi_dma_0_M_AXI_MM2S_ARSIZE;
   wire axi_dma_0_M_AXI_MM2S_ARVALID;
-  wire [31:0]axi_dma_0_M_AXI_MM2S_RDATA;
+  wire [63:0]axi_dma_0_M_AXI_MM2S_RDATA;
   wire axi_dma_0_M_AXI_MM2S_RLAST;
   wire axi_dma_0_M_AXI_MM2S_RREADY;
   wire [1:0]axi_dma_0_M_AXI_MM2S_RRESP;
@@ -1567,7 +1567,7 @@ module network_dma_imp_1285LS0
   assign S_AXI_LITE_rvalid = ps7_0_axi_periph_M01_AXI_RVALID;
   assign S_AXI_LITE_wready = ps7_0_axi_periph_M01_AXI_WREADY;
   assign axi_dma_0_M_AXI_MM2S_ARREADY = M_AXI_MM2S_arready;
-  assign axi_dma_0_M_AXI_MM2S_RDATA = M_AXI_MM2S_rdata[31:0];
+  assign axi_dma_0_M_AXI_MM2S_RDATA = M_AXI_MM2S_rdata[63:0];
   assign axi_dma_0_M_AXI_MM2S_RLAST = M_AXI_MM2S_rlast;
   assign axi_dma_0_M_AXI_MM2S_RRESP = M_AXI_MM2S_rresp[1:0];
   assign axi_dma_0_M_AXI_MM2S_RVALID = M_AXI_MM2S_rvalid;
@@ -1941,7 +1941,7 @@ module s00_couplers_imp_UYSKKA
   assign s00_couplers_to_auto_pc_WLAST = S_AXI_wlast;
   assign s00_couplers_to_auto_pc_WSTRB = S_AXI_wstrb[3:0];
   assign s00_couplers_to_auto_pc_WVALID = S_AXI_wvalid;
-  design_1_auto_pc_1 auto_pc
+  design_1_auto_pc_0 auto_pc
        (.aclk(S_ACLK_1),
         .aresetn(S_ARESETN_1),
         .m_axi_araddr(auto_pc_to_s00_couplers_ARADDR),
