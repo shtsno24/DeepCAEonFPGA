@@ -145,7 +145,6 @@ S_AXI_HP0_WDATA,
 S_AXI_HP0_WSTRB, 
 FCLK_CLK0, 
 FCLK_RESET0_N, 
-FPGA_IDLE_N, 
 MIO, 
 DDR_CAS_n, 
 DDR_CKE, 
@@ -257,7 +256,6 @@ input [63 : 0] S_AXI_HP0_WDATA;
 input [7 : 0] S_AXI_HP0_WSTRB;
 output FCLK_CLK0;
 output FCLK_RESET0_N;
-input FPGA_IDLE_N;
 input [53 : 0] MIO;
 input DDR_CAS_n;
 input DDR_CKE;
