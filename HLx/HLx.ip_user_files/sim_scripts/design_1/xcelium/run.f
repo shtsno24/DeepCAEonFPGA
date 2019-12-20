@@ -66,11 +66,10 @@
   "../../../bd/design_1/ip/design_1_rst_ps7_0_100M_0/sim/design_1_rst_ps7_0_100M_0.vhd" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
-  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/85a1/hdl/verilog/fifo_w16_d784_A.v" \
-  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/85a1/hdl/verilog/network_AXILiteS_s_axi.v" \
-  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/85a1/hdl/verilog/network_MemBank_B.v" \
-  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/85a1/hdl/verilog/network_MemBank_Out.v" \
-  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/85a1/hdl/verilog/network.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/febb/hdl/verilog/network_AXILiteS_s_axi.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/febb/hdl/verilog/network_MemBank_B.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/febb/hdl/verilog/network_MemBank_Out.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/febb/hdl/verilog/network.v" \
   "../../../bd/design_1/ip/design_1_network_0_1/sim/design_1_network_0_1.v" \
 -endlib
 -makelib xcelium_lib/lib_pkg_v1_0_2 \
