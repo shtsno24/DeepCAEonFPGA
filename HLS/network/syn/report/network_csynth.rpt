@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'network'
 ================================================================
-* Date:           Fri Dec 20 13:58:11 2019
+* Date:           Fri Dec 20 14:22:34 2019
 
 * Version:        2018.3.1 (Build 2489210 on Tue Mar 26 04:40:43 MDT 2019)
 * Project:        HLS
@@ -20,17 +20,17 @@
     +--------+-------+----------+------------+
     |  Clock | Target| Estimated| Uncertainty|
     +--------+-------+----------+------------+
-    |ap_clk  |  10.00|     6.847|        1.25|
+    |ap_clk  |  10.00|     6.508|        1.25|
     +--------+-------+----------+------------+
 
 + Latency (clock cycles): 
     * Summary: 
-    +-----+-----+-----+-----+---------+
-    |  Latency  |  Interval | Pipeline|
-    | min | max | min | max |   Type  |
-    +-----+-----+-----+-----+---------+
-    |    ?|    ?|    ?|    ?|   none  |
-    +-----+-----+-----+-----+---------+
+    +------+------+------+------+---------+
+    |   Latency   |   Interval  | Pipeline|
+    |  min |  max |  min |  max |   Type  |
+    +------+------+------+------+---------+
+    |  4705|  4705|  4705|  4705|   none  |
+    +------+------+------+------+---------+
 
     + Detail: 
         * Instance: 
@@ -41,10 +41,9 @@
         |          |   Latency   | Iteration|  Initiation Interval  | Trip |          |
         | Loop Name|  min |  max |  Latency |  achieved |   target  | Count| Pipelined|
         +----------+------+------+----------+-----------+-----------+------+----------+
-        |- Loop 1  |     ?|     ?|         1|          -|          -|     ?|    no    |
-        |- Loop 2  |   784|   784|         1|          -|          -|   784|    no    |
-        |- Loop 3  |  1568|  1568|         2|          -|          -|   784|    no    |
-        |- Loop 4  |  2352|  2352|         3|          -|          -|   784|    no    |
+        |- Loop 1  |   784|   784|         1|          -|          -|   784|    no    |
+        |- Loop 2  |  1568|  1568|         2|          -|          -|   784|    no    |
+        |- Loop 3  |  2346|  2346|         3|          -|          -|   782|    no    |
         +----------+------+------+----------+-----------+-----------+------+----------+
 
 
@@ -57,14 +56,14 @@
 |       Name      | BRAM_18K| DSP48E|   FF   |  LUT  |
 +-----------------+---------+-------+--------+-------+
 |DSP              |        -|      -|       -|      -|
-|Expression       |        -|      -|       0|    209|
-|FIFO             |        1|      -|      49|     79|
+|Expression       |        -|      -|       0|    133|
+|FIFO             |        -|      -|       -|      -|
 |Instance         |        0|      -|      68|    104|
 |Memory           |       17|      -|       0|      0|
-|Multiplexer      |        -|      -|       -|    326|
-|Register         |        -|      -|     255|      -|
+|Multiplexer      |        -|      -|       -|    362|
+|Register         |        -|      -|     233|      -|
 +-----------------+---------+-------+--------+-------+
-|Total            |       18|      0|     372|    718|
+|Total            |       17|      0|     301|    599|
 +-----------------+---------+-------+--------+-------+
 |Available        |      280|    220|  106400|  53200|
 +-----------------+---------+-------+--------+-------+
@@ -95,48 +94,34 @@
     +---------------+---------------------+---------+---+----+-------+-----+------+-------------+
 
     * FIFO: 
-    +-----------------------+---------+----+----+------+-----+---------+
-    |          Name         | BRAM_18K| FF | LUT| Depth| Bits| Size:D*B|
-    +-----------------------+---------+----+----+------+-----+---------+
-    |input_buffer_V_fifo_U  |        1|  49|  79|   784|   16|    12544|
-    +-----------------------+---------+----+----+------+-----+---------+
-    |Total                  |        1|  49|  79|   784|   16|    12544|
-    +-----------------------+---------+----+----+------+-----+---------+
+    N/A
 
     * Expression: 
     +---------------------------------------+----------+-------+---+----+------------+------------+
     |             Variable Name             | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
     +---------------------------------------+----------+-------+---+----+------------+------------+
-    |i_1_fu_264_p2                          |     +    |      0|  0|  23|          16|           1|
-    |i_2_fu_281_p2                          |     +    |      0|  0|  14|          10|           1|
-    |i_3_fu_298_p2                          |     +    |      0|  0|  14|          10|           1|
-    |i_4_fu_320_p2                          |     +    |      0|  0|  14|          10|           1|
-    |ap_block_state3                        |    and   |      0|  0|   2|           1|           1|
+    |i_1_fu_257_p2                          |     +    |      0|  0|  14|          10|           1|
+    |i_2_fu_284_p2                          |     +    |      0|  0|  14|          10|           1|
+    |i_fu_231_p2                            |     +    |      0|  0|  14|          10|           1|
+    |ap_block_state2                        |    and   |      0|  0|   2|           1|           1|
     |input_data_V_data_V_0_load_A           |    and   |      0|  0|   2|           1|           1|
     |input_data_V_data_V_0_load_B           |    and   |      0|  0|   2|           1|           1|
-    |input_data_V_last_V_0_load_A           |    and   |      0|  0|   2|           1|           1|
-    |input_data_V_last_V_0_load_B           |    and   |      0|  0|   2|           1|           1|
     |output_data_V_data_V_1_load_A          |    and   |      0|  0|   2|           1|           1|
     |output_data_V_data_V_1_load_B          |    and   |      0|  0|   2|           1|           1|
     |output_data_V_last_V_1_load_A          |    and   |      0|  0|   2|           1|           1|
     |output_data_V_last_V_1_load_B          |    and   |      0|  0|   2|           1|           1|
     |output_data_V_user_V_1_load_A          |    and   |      0|  0|   2|           1|           1|
     |output_data_V_user_V_1_load_B          |    and   |      0|  0|   2|           1|           1|
-    |exitcond_fu_275_p2                     |   icmp   |      0|  0|  13|          10|           9|
+    |exitcond1_fu_225_p2                    |   icmp   |      0|  0|  13|          10|           9|
+    |exitcond_fu_278_p2                     |   icmp   |      0|  0|  13|          10|           9|
     |input_data_V_data_V_0_state_cmp_full   |   icmp   |      0|  0|   8|           2|           1|
-    |input_data_V_last_V_0_state_cmp_full   |   icmp   |      0|  0|   8|           2|           1|
     |output_data_V_data_V_1_state_cmp_full  |   icmp   |      0|  0|   8|           2|           1|
     |output_data_V_last_V_1_state_cmp_full  |   icmp   |      0|  0|   8|           2|           1|
     |output_data_V_user_V_1_state_cmp_full  |   icmp   |      0|  0|   8|           2|           1|
-    |tmp_1_fu_258_p2                        |   icmp   |      0|  0|  13|          16|          10|
-    |tmp_7_fu_314_p2                        |   icmp   |      0|  0|  13|          10|           9|
-    |tmp_9_fu_292_p2                        |   icmp   |      0|  0|  13|          10|           9|
-    |tmp_last_V_1_fu_332_p2                 |   icmp   |      0|  0|  13|          10|           9|
-    |tmp_user_V_fu_326_p2                   |   icmp   |      0|  0|  13|          10|           1|
-    |ap_block_state2                        |    or    |      0|  0|   2|           1|           1|
-    |ap_block_state9                        |    or    |      0|  0|   2|           1|           1|
+    |tmp_4_fu_251_p2                        |   icmp   |      0|  0|  13|          10|           9|
+    |ap_block_state11                       |    or    |      0|  0|   2|           1|           1|
     +---------------------------------------+----------+-------+---+----+------------+------------+
-    |Total                                  |          |      0|  0| 209|         135|          69|
+    |Total                                  |          |      0|  0| 133|          78|          44|
     +---------------------------------------+----------+-------+---+----+------------+------------+
 
     * Multiplexer: 
@@ -144,55 +129,49 @@
     |               Name              | LUT| Input Size| Bits| Total Bits|
     +---------------------------------+----+-----------+-----+-----------+
     |MemBank_B_address0               |  15|          3|   14|         42|
-    |MemBank_Out_address0             |  15|          3|   10|         30|
-    |ap_NS_fsm                        |  47|         10|    1|         10|
-    |i1_reg_217                       |   9|          2|   10|         20|
-    |i2_reg_228                       |   9|          2|   10|         20|
-    |i3_reg_239                       |   9|          2|   10|         20|
-    |i_reg_206                        |   9|          2|   16|         32|
+    |MemBank_Out_address0             |  27|          5|   10|         50|
+    |ap_NS_fsm                        |  53|         12|    1|         12|
+    |i1_reg_192                       |   9|          2|   10|         20|
+    |i2_reg_203                       |   9|          2|   10|         20|
+    |i3_reg_214                       |   9|          2|   10|         20|
     |input_data_TDATA_blk_n           |   9|          2|    1|          2|
     |input_data_V_data_V_0_data_out   |   9|          2|   32|         64|
     |input_data_V_data_V_0_state      |  15|          3|    2|          6|
     |input_data_V_dest_V_0_state      |  15|          3|    2|          6|
-    |input_data_V_last_V_0_data_out   |   9|          2|    1|          2|
-    |input_data_V_last_V_0_state      |  15|          3|    2|          6|
     |output_data_TDATA_blk_n          |   9|          2|    1|          2|
+    |output_data_V_data_V_1_data_in   |  21|          4|   32|        128|
     |output_data_V_data_V_1_data_out  |   9|          2|   32|         64|
     |output_data_V_data_V_1_state     |  15|          3|    2|          6|
     |output_data_V_dest_V_1_state     |  15|          3|    2|          6|
     |output_data_V_id_V_1_state       |  15|          3|    2|          6|
     |output_data_V_keep_V_1_state     |  15|          3|    2|          6|
+    |output_data_V_last_V_1_data_in   |  15|          3|    1|          3|
     |output_data_V_last_V_1_data_out  |   9|          2|    1|          2|
     |output_data_V_last_V_1_state     |  15|          3|    2|          6|
     |output_data_V_strb_V_1_state     |  15|          3|    2|          6|
+    |output_data_V_user_V_1_data_in   |  15|          3|    1|          3|
     |output_data_V_user_V_1_data_out  |   9|          2|    1|          2|
     |output_data_V_user_V_1_state     |  15|          3|    2|          6|
     +---------------------------------+----+-----------+-----+-----------+
-    |Total                            | 326|         68|  160|        372|
+    |Total                            | 362|         75|  175|        488|
     +---------------------------------+----+-----------+-----+-----------+
 
     * Register: 
     +----------------------------------+----+----+-----+-----------+
     |               Name               | FF | LUT| Bits| Const Bits|
     +----------------------------------+----+----+-----+-----------+
-    |ap_CS_fsm                         |   9|   0|    9|          0|
-    |i1_reg_217                        |  10|   0|   10|          0|
-    |i2_reg_228                        |  10|   0|   10|          0|
-    |i3_reg_239                        |  10|   0|   10|          0|
-    |i_3_reg_371                       |  10|   0|   10|          0|
-    |i_4_reg_389                       |  10|   0|   10|          0|
-    |i_reg_206                         |  16|   0|   16|          0|
+    |ap_CS_fsm                         |  11|   0|   11|          0|
+    |i1_reg_192                        |  10|   0|   10|          0|
+    |i2_reg_203                        |  10|   0|   10|          0|
+    |i3_reg_214                        |  10|   0|   10|          0|
+    |i_1_reg_316                       |  10|   0|   10|          0|
+    |i_2_reg_344                       |  10|   0|   10|          0|
     |input_data_V_data_V_0_payload_A   |  32|   0|   32|          0|
     |input_data_V_data_V_0_payload_B   |  32|   0|   32|          0|
     |input_data_V_data_V_0_sel_rd      |   1|   0|    1|          0|
     |input_data_V_data_V_0_sel_wr      |   1|   0|    1|          0|
     |input_data_V_data_V_0_state       |   2|   0|    2|          0|
     |input_data_V_dest_V_0_state       |   2|   0|    2|          0|
-    |input_data_V_last_V_0_payload_A   |   1|   0|    1|          0|
-    |input_data_V_last_V_0_payload_B   |   1|   0|    1|          0|
-    |input_data_V_last_V_0_sel_rd      |   1|   0|    1|          0|
-    |input_data_V_last_V_0_sel_wr      |   1|   0|    1|          0|
-    |input_data_V_last_V_0_state       |   2|   0|    2|          0|
     |output_data_V_data_V_1_payload_A  |  32|   0|   32|          0|
     |output_data_V_data_V_1_payload_B  |  32|   0|   32|          0|
     |output_data_V_data_V_1_sel_rd     |   1|   0|    1|          0|
@@ -216,11 +195,9 @@
     |output_data_V_user_V_1_sel_rd     |   1|   0|    1|          0|
     |output_data_V_user_V_1_sel_wr     |   1|   0|    1|          0|
     |output_data_V_user_V_1_state      |   2|   0|    2|          0|
-    |tmp_last_V_1_reg_399              |   1|   0|    1|          0|
-    |tmp_s_reg_376                     |  10|   0|   64|         54|
-    |tmp_user_V_reg_394                |   1|   0|    1|          0|
+    |tmp_6_reg_321                     |  10|   0|   64|         54|
     +----------------------------------+----+----+-----+-----------+
-    |Total                             | 255|   0|  309|         54|
+    |Total                             | 233|   0|  287|         54|
     +----------------------------------+----+----+-----+-----------+
 
 

@@ -28599,33 +28599,32 @@ _ssdm_op_SpecInterface(0, "s_axilite", 1, 1, "", 0, 0, "", "", "", 0, 0, 0, 0, "
  int32_t* array_head = (int32_t*)MemBank_Out;
  const uint64_t array_length = (uint64_t)SeparableConv2D_4_depth * SeparableConv2D_4_height * SeparableConv2D_4_width;
 
- hls::stream< int16_t> input_buffer;
-_ssdm_SpecStream( &input_buffer, 0, 784, "");
 
  ap_axis<32, 1, 1, 1> tmp;
  ap_axis<32, 1, 1, 1> out;
- int16_t trash;
 
  uint16_t i = 0;
- do {
-  input_data >> tmp;
-  if(i >= array_length){
-   input_buffer >> trash;
-  }
-  input_buffer << (int16_t)tmp.data;
-  i += 1;
- } while(tmp.last != 1);
 
  for(int i = 0; i < input_0_depth * input_0_height * input_0_width; i++){
-  input_buffer >> MemBank_B[i];
+  input_data >> tmp;
+  MemBank_B[i] = (int16_t) tmp.data;
  }
-# 152 "mnist_AXI_Stream.cpp"
+# 137 "mnist_AXI_Stream.cpp"
  for(int i = 0; i < array_length; i++){
 
   MemBank_Out[i] = (int32_t)MemBank_B[i];
  }
 
- for(uint64_t i = 0; i < array_length; i++){
+ out.user = 1;
+ out.last = 0;
+ out.dest = 0;
+ out.id = 0;
+ out.keep = 0;
+ out.strb = 0;
+ out.data = (int32_t)(array_head[0]);
+ output_data << out;
+
+ for(uint64_t i = 1; i < array_length-1; i++){
 
 
   out.user = 0;
@@ -28634,15 +28633,18 @@ _ssdm_SpecStream( &input_buffer, 0, 784, "");
   out.id = 0;
   out.keep = 0;
   out.strb = 0;
-  if(i == 0){
-   out.user = 1;
-  }
-  if(i == array_length - 1){
-   out.last = 1;
-  }
   out.data = (int32_t)(array_head[i]);
   output_data << out;
  }
+ out.user = 0;
+ out.last = 1;
+ out.dest = 0;
+ out.id = 0;
+ out.keep = 0;
+ out.strb = 0;
+ out.data = (int32_t)(array_head[array_length-1]);
+ output_data << out;
+
  return(0);
 }
 

@@ -77,8 +77,6 @@ INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA
 INFO: [VRFC 10-311] analyzing module network_AXILiteS_s_axi
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/AESL_fifo.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module fifo
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/fifo_w16_d784_A.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fifo_w16_d784_A
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/AESL_axi_s_output_data.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module AESL_axi_s_output_data
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/network_MemBank_Out.v" into library xil_defaultlib
@@ -96,7 +94,6 @@ Compiling module xil_defaultlib.network_MemBank_B_ram
 Compiling module xil_defaultlib.network_MemBank_B(DataWidth=16,A...
 Compiling module xil_defaultlib.network_MemBank_Out_ram
 Compiling module xil_defaultlib.network_MemBank_Out(DataWidth=16...
-Compiling module xil_defaultlib.fifo_w16_d784_A
 Compiling module xil_defaultlib.network
 Compiling module xil_defaultlib.fifo(DEPTH=784,WIDTH=32)
 Compiling module xil_defaultlib.fifo(DEPTH=784,WIDTH=4)
@@ -114,8 +111,8 @@ Built simulation snapshot network
     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 
 source /home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/xsim.dir/network/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-186] '/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/xsim.dir/network/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Fri Dec 20 13:59:17 2019. For additional details about this file, please refer to the WebTalk help file at /tools/Xilinx/Vivado/2018.3/doc/webtalk_introduction.html.
-INFO: [Common 17-206] Exiting Webtalk at Fri Dec 20 13:59:17 2019...
+INFO: [Common 17-186] '/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/xsim.dir/network/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Fri Dec 20 14:40:45 2019. For additional details about this file, please refer to the WebTalk help file at /tools/Xilinx/Vivado/2018.3/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Fri Dec 20 14:40:45 2019...
 
 ****** xsim v2018.3.1 (64-bit)
   **** SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
@@ -251,12 +248,12 @@ WARNING: [Simtcl 6-197] One or more HDL objects could not be logged because of o
 //
 // RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
 ////////////////////////////////////////////////////////////////////////////////////
-// RTL Simulation : 0 / 1 [n/a] @ "125000"
-// RTL Simulation : 1 / 1 [n/a] @ "55255000"
+// RTL Simulation : 0 / 1 [0.00%] @ "125000"
+// RTL Simulation : 1 / 1 [100.00%] @ "47415000"
 ////////////////////////////////////////////////////////////////////////////////////
-$finish called at time : 55295 ns : File "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/network.autotb.v" Line 498
+$finish called at time : 47455 ns : File "/home/masudalab/DeepCAEonFPGA/HLS/network/sim/verilog/network.autotb.v" Line 498
 ## quit
-INFO: [Common 17-206] Exiting xsim at Fri Dec 20 13:59:27 2019...
+INFO: [Common 17-206] Exiting xsim at Fri Dec 20 14:40:55 2019...
 
 output_buffer_length : 0
 
