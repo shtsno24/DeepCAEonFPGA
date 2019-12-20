@@ -1,2 +1,0 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/masudalab/DeepCAEonFPGA/HLx/HLx.ip_user_files/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_1/sim/bd_ae83_psr_aclk_0.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'bd_ae83_psr_aclk_0'

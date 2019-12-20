@@ -1,9 +1,0 @@
-{"sourceFile": [{
-      "name": "",
-      "directive": [{
-          "functionName": "conv2d_fix16",
-          "label": "conv2d_fix16_label3",
-          "functionLabel": "",
-          "pragma": {"name": "UNROLL"}
-        }]
-    }]}
