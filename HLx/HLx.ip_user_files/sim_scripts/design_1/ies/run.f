@@ -70,6 +70,9 @@
 -makelib ies_lib/xil_defaultlib \
   "../../../bd/design_1/ip/design_1_rst_ps7_0_100M_2/sim/design_1_rst_ps7_0_100M_2.vhd" \
 -endlib
+-makelib ies_lib/xil_defaultlib \
+  "../../../bd/design_1/ip/design_1_axi_smc_0/bd_0/sim/bd_afc3.v" \
+-endlib
 -makelib ies_lib/xlconstant_v1_1_5 \
   "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/4649/hdl/xlconstant_v1_1_vl_rfs.v" \
 -endlib
@@ -146,7 +149,6 @@
   "../../../bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_50/sim/bd_afc3_m00e_0.sv" \
 -endlib
 -makelib ies_lib/xil_defaultlib \
-  "../../../bd/design_1/ip/design_1_axi_smc_0/bd_0/sim/bd_afc3.v" \
   "../../../bd/design_1/ip/design_1_axi_smc_0/sim/design_1_axi_smc_0.v" \
 -endlib
 -makelib ies_lib/generic_baseblocks_v2_1_0 \
@@ -168,7 +170,7 @@
   "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/7a04/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
 -endlib
 -makelib ies_lib/xil_defaultlib \
-  "../../../bd/design_1/ip/design_1_auto_pc_2/sim/design_1_auto_pc_2.v" \
+  "../../../bd/design_1/ip/design_1_auto_pc_0/sim/design_1_auto_pc_0.v" \
 -endlib
 -makelib ies_lib/xil_defaultlib \
   glbl.v

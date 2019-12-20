@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2018.3.1 (lin64) Build 2489853 Tue Mar 26 04:18:30 MDT 2019
-//Date        : Fri Dec 20 20:54:20 2019
+//Date        : Fri Dec 20 21:13:44 2019
 //Host        : masudalab-ubuntu running 64-bit Ubuntu 18.04.3 LTS
 //Command     : generate_target design_1.bd
 //Design      : design_1
@@ -59,7 +59,7 @@ module design_1
   wire axi_dma_in_M_AXIS_MM2S_TLAST;
   wire axi_dma_in_M_AXIS_MM2S_TREADY;
   wire axi_dma_in_M_AXIS_MM2S_TVALID;
-  wire [63:0]axi_dma_in_M_AXI_MM2S_ARADDR;
+  wire [31:0]axi_dma_in_M_AXI_MM2S_ARADDR;
   wire [1:0]axi_dma_in_M_AXI_MM2S_ARBURST;
   wire [3:0]axi_dma_in_M_AXI_MM2S_ARCACHE;
   wire [7:0]axi_dma_in_M_AXI_MM2S_ARLEN;
@@ -72,7 +72,7 @@ module design_1
   wire axi_dma_in_M_AXI_MM2S_RREADY;
   wire [1:0]axi_dma_in_M_AXI_MM2S_RRESP;
   wire axi_dma_in_M_AXI_MM2S_RVALID;
-  wire [63:0]axi_dma_out_M_AXI_S2MM_AWADDR;
+  wire [31:0]axi_dma_out_M_AXI_S2MM_AWADDR;
   wire [1:0]axi_dma_out_M_AXI_S2MM_AWBURST;
   wire [3:0]axi_dma_out_M_AXI_S2MM_AWCACHE;
   wire [7:0]axi_dma_out_M_AXI_S2MM_AWLEN;
@@ -1578,7 +1578,7 @@ module s00_couplers_imp_UYSKKA
   assign s00_couplers_to_auto_pc_WLAST = S_AXI_wlast;
   assign s00_couplers_to_auto_pc_WSTRB = S_AXI_wstrb[3:0];
   assign s00_couplers_to_auto_pc_WVALID = S_AXI_wvalid;
-  design_1_auto_pc_2 auto_pc
+  design_1_auto_pc_0 auto_pc
        (.aclk(S_ACLK_1),
         .aresetn(S_ARESETN_1),
         .m_axi_araddr(auto_pc_to_s00_couplers_ARADDR),

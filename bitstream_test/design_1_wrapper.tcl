@@ -164,7 +164,7 @@ proc create_root_design { parentCell } {
   # Create instance: axi_dma_in, and set properties
   set axi_dma_in [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_dma:7.1 axi_dma_in ]
   set_property -dict [ list \
-   CONFIG.c_addr_width {64} \
+   CONFIG.c_addr_width {32} \
    CONFIG.c_include_s2mm {0} \
    CONFIG.c_include_sg {0} \
    CONFIG.c_m_axi_mm2s_data_width {64} \
@@ -177,7 +177,7 @@ proc create_root_design { parentCell } {
   # Create instance: axi_dma_out, and set properties
   set axi_dma_out [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_dma:7.1 axi_dma_out ]
   set_property -dict [ list \
-   CONFIG.c_addr_width {64} \
+   CONFIG.c_addr_width {32} \
    CONFIG.c_include_mm2s {0} \
    CONFIG.c_include_sg {0} \
    CONFIG.c_m_axi_s2mm_data_width {64} \

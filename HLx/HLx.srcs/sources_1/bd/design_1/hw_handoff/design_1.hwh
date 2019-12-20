@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Fri Dec 20 20:54:42 2019" VIVADOVERSION="2018.3.1">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Fri Dec 20 21:13:48 2019" VIVADOVERSION="2018.3.1">
 
   <SYSTEMINFO ARCH="zynq" BOARD="tul.com.tw:pynq-z2:part0:1.0" DEVICE="7z020" NAME="design_1" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -991,7 +991,7 @@
         <PARAMETER NAME="C_SG_INCLUDE_STSCNTRL_STRM" VALUE="0"/>
         <PARAMETER NAME="C_SG_USE_STSAPP_LENGTH" VALUE="0"/>
         <PARAMETER NAME="C_SG_LENGTH_WIDTH" VALUE="26"/>
-        <PARAMETER NAME="C_M_AXI_SG_ADDR_WIDTH" VALUE="64"/>
+        <PARAMETER NAME="C_M_AXI_SG_ADDR_WIDTH" VALUE="32"/>
         <PARAMETER NAME="C_M_AXI_SG_DATA_WIDTH" VALUE="32"/>
         <PARAMETER NAME="C_M_AXIS_MM2S_CNTRL_TDATA_WIDTH" VALUE="32"/>
         <PARAMETER NAME="C_S_AXIS_S2MM_STS_TDATA_WIDTH" VALUE="32"/>
@@ -999,14 +999,14 @@
         <PARAMETER NAME="C_INCLUDE_MM2S" VALUE="1"/>
         <PARAMETER NAME="C_INCLUDE_MM2S_SF" VALUE="1"/>
         <PARAMETER NAME="C_MM2S_BURST_SIZE" VALUE="8"/>
-        <PARAMETER NAME="C_M_AXI_MM2S_ADDR_WIDTH" VALUE="64"/>
+        <PARAMETER NAME="C_M_AXI_MM2S_ADDR_WIDTH" VALUE="32"/>
         <PARAMETER NAME="C_M_AXI_MM2S_DATA_WIDTH" VALUE="64"/>
         <PARAMETER NAME="C_M_AXIS_MM2S_TDATA_WIDTH" VALUE="16"/>
         <PARAMETER NAME="C_INCLUDE_MM2S_DRE" VALUE="0"/>
         <PARAMETER NAME="C_INCLUDE_S2MM" VALUE="0"/>
         <PARAMETER NAME="C_INCLUDE_S2MM_SF" VALUE="1"/>
         <PARAMETER NAME="C_S2MM_BURST_SIZE" VALUE="16"/>
-        <PARAMETER NAME="C_M_AXI_S2MM_ADDR_WIDTH" VALUE="64"/>
+        <PARAMETER NAME="C_M_AXI_S2MM_ADDR_WIDTH" VALUE="32"/>
         <PARAMETER NAME="C_M_AXI_S2MM_DATA_WIDTH" VALUE="32"/>
         <PARAMETER NAME="C_S_AXIS_S2MM_TDATA_WIDTH" VALUE="32"/>
         <PARAMETER NAME="C_INCLUDE_S2MM_DRE" VALUE="0"/>
@@ -1035,7 +1035,7 @@
         <PARAMETER NAME="c_include_s2mm_dre" VALUE="0"/>
         <PARAMETER NAME="c_include_s2mm_sf" VALUE="1"/>
         <PARAMETER NAME="c_s2mm_burst_size" VALUE="16"/>
-        <PARAMETER NAME="c_addr_width" VALUE="64"/>
+        <PARAMETER NAME="c_addr_width" VALUE="32"/>
         <PARAMETER NAME="c_single_interface" VALUE="0"/>
         <PARAMETER NAME="c_increase_throughput" VALUE="0"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
@@ -1138,7 +1138,7 @@
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M00_AXI_rresp"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="63" NAME="m_axi_mm2s_araddr" RIGHT="0" SIGIS="undef" SIGNAME="axi_dma_in_m_axi_mm2s_araddr">
+        <PORT DIR="O" LEFT="31" NAME="m_axi_mm2s_araddr" RIGHT="0" SIGIS="undef" SIGNAME="axi_dma_in_m_axi_mm2s_araddr">
           <CONNECTIONS>
             <CONNECTION INSTANCE="axi_smc" PORT="S00_AXI_araddr"/>
           </CONNECTIONS>
@@ -1290,7 +1290,7 @@
           <PARAMETER NAME="PROTOCOL" VALUE="AXI4"/>
           <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
           <PARAMETER NAME="ID_WIDTH" VALUE="0"/>
-          <PARAMETER NAME="ADDR_WIDTH" VALUE="64"/>
+          <PARAMETER NAME="ADDR_WIDTH" VALUE="32"/>
           <PARAMETER NAME="AWUSER_WIDTH" VALUE="0"/>
           <PARAMETER NAME="ARUSER_WIDTH" VALUE="0"/>
           <PARAMETER NAME="WUSER_WIDTH" VALUE="0"/>
@@ -2195,7 +2195,7 @@
         <PARAMETER NAME="C_SG_INCLUDE_STSCNTRL_STRM" VALUE="0"/>
         <PARAMETER NAME="C_SG_USE_STSAPP_LENGTH" VALUE="0"/>
         <PARAMETER NAME="C_SG_LENGTH_WIDTH" VALUE="26"/>
-        <PARAMETER NAME="C_M_AXI_SG_ADDR_WIDTH" VALUE="64"/>
+        <PARAMETER NAME="C_M_AXI_SG_ADDR_WIDTH" VALUE="32"/>
         <PARAMETER NAME="C_M_AXI_SG_DATA_WIDTH" VALUE="32"/>
         <PARAMETER NAME="C_M_AXIS_MM2S_CNTRL_TDATA_WIDTH" VALUE="32"/>
         <PARAMETER NAME="C_S_AXIS_S2MM_STS_TDATA_WIDTH" VALUE="32"/>
@@ -2203,14 +2203,14 @@
         <PARAMETER NAME="C_INCLUDE_MM2S" VALUE="0"/>
         <PARAMETER NAME="C_INCLUDE_MM2S_SF" VALUE="1"/>
         <PARAMETER NAME="C_MM2S_BURST_SIZE" VALUE="16"/>
-        <PARAMETER NAME="C_M_AXI_MM2S_ADDR_WIDTH" VALUE="64"/>
+        <PARAMETER NAME="C_M_AXI_MM2S_ADDR_WIDTH" VALUE="32"/>
         <PARAMETER NAME="C_M_AXI_MM2S_DATA_WIDTH" VALUE="32"/>
         <PARAMETER NAME="C_M_AXIS_MM2S_TDATA_WIDTH" VALUE="32"/>
         <PARAMETER NAME="C_INCLUDE_MM2S_DRE" VALUE="0"/>
         <PARAMETER NAME="C_INCLUDE_S2MM" VALUE="1"/>
         <PARAMETER NAME="C_INCLUDE_S2MM_SF" VALUE="1"/>
         <PARAMETER NAME="C_S2MM_BURST_SIZE" VALUE="8"/>
-        <PARAMETER NAME="C_M_AXI_S2MM_ADDR_WIDTH" VALUE="64"/>
+        <PARAMETER NAME="C_M_AXI_S2MM_ADDR_WIDTH" VALUE="32"/>
         <PARAMETER NAME="C_M_AXI_S2MM_DATA_WIDTH" VALUE="64"/>
         <PARAMETER NAME="C_S_AXIS_S2MM_TDATA_WIDTH" VALUE="16"/>
         <PARAMETER NAME="C_INCLUDE_S2MM_DRE" VALUE="0"/>
@@ -2239,7 +2239,7 @@
         <PARAMETER NAME="c_include_s2mm_dre" VALUE="0"/>
         <PARAMETER NAME="c_include_s2mm_sf" VALUE="1"/>
         <PARAMETER NAME="c_s2mm_burst_size" VALUE="8"/>
-        <PARAMETER NAME="c_addr_width" VALUE="64"/>
+        <PARAMETER NAME="c_addr_width" VALUE="32"/>
         <PARAMETER NAME="c_single_interface" VALUE="0"/>
         <PARAMETER NAME="c_increase_throughput" VALUE="0"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
@@ -2342,7 +2342,7 @@
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M01_AXI_rresp"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="63" NAME="m_axi_s2mm_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="axi_dma_out_m_axi_s2mm_awaddr">
+        <PORT DIR="O" LEFT="31" NAME="m_axi_s2mm_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="axi_dma_out_m_axi_s2mm_awaddr">
           <CONNECTIONS>
             <CONNECTION INSTANCE="axi_smc" PORT="S01_AXI_awaddr"/>
           </CONNECTIONS>
@@ -2509,7 +2509,7 @@
           <PARAMETER NAME="PROTOCOL" VALUE="AXI4"/>
           <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
           <PARAMETER NAME="ID_WIDTH" VALUE="0"/>
-          <PARAMETER NAME="ADDR_WIDTH" VALUE="64"/>
+          <PARAMETER NAME="ADDR_WIDTH" VALUE="32"/>
           <PARAMETER NAME="AWUSER_WIDTH" VALUE="0"/>
           <PARAMETER NAME="ARUSER_WIDTH" VALUE="0"/>
           <PARAMETER NAME="WUSER_WIDTH" VALUE="0"/>
@@ -2607,7 +2607,7 @@
             <CONNECTION INSTANCE="rst_ps7_0_100M" PORT="peripheral_aresetn"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="63" NAME="S00_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="axi_dma_in_m_axi_mm2s_araddr">
+        <PORT DIR="I" LEFT="31" NAME="S00_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="axi_dma_in_m_axi_mm2s_araddr">
           <CONNECTIONS>
             <CONNECTION INSTANCE="axi_dma_in" PORT="m_axi_mm2s_araddr"/>
           </CONNECTIONS>
@@ -2839,7 +2839,7 @@
             <CONNECTION INSTANCE="processing_system7_0" PORT="S_AXI_HP0_RREADY"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="63" NAME="S01_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="axi_dma_out_m_axi_s2mm_awaddr">
+        <PORT DIR="I" LEFT="31" NAME="S01_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="axi_dma_out_m_axi_s2mm_awaddr">
           <CONNECTIONS>
             <CONNECTION INSTANCE="axi_dma_out" PORT="m_axi_s2mm_awaddr"/>
           </CONNECTIONS>
@@ -2928,7 +2928,7 @@
           <PARAMETER NAME="PROTOCOL" VALUE="AXI4"/>
           <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
           <PARAMETER NAME="ID_WIDTH" VALUE="0"/>
-          <PARAMETER NAME="ADDR_WIDTH" VALUE="64"/>
+          <PARAMETER NAME="ADDR_WIDTH" VALUE="32"/>
           <PARAMETER NAME="AWUSER_WIDTH" VALUE="0"/>
           <PARAMETER NAME="ARUSER_WIDTH" VALUE="0"/>
           <PARAMETER NAME="WUSER_WIDTH" VALUE="0"/>
@@ -2978,7 +2978,7 @@
           <PARAMETER NAME="PROTOCOL" VALUE="AXI4"/>
           <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
           <PARAMETER NAME="ID_WIDTH" VALUE="0"/>
-          <PARAMETER NAME="ADDR_WIDTH" VALUE="64"/>
+          <PARAMETER NAME="ADDR_WIDTH" VALUE="32"/>
           <PARAMETER NAME="AWUSER_WIDTH" VALUE="0"/>
           <PARAMETER NAME="ARUSER_WIDTH" VALUE="0"/>
           <PARAMETER NAME="WUSER_WIDTH" VALUE="0"/>
