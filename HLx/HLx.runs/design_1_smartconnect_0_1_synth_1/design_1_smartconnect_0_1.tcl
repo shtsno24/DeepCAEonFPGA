@@ -35,6 +35,7 @@ update_ip_catalog
 set_property ip_output_repo /home/masudalab/DeepCAEonFPGA/HLx/HLx.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_ip -quiet /home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_smartconnect_0_1/design_1_smartconnect_0_1.xci
+set_property used_in_implementation false [get_files -all /home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_smartconnect_0_1/ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_smartconnect_0_1/bd_0/ip/ip_1/bd_886d_psr_aclk_0_board.xdc]
 set_property used_in_implementation false [get_files -all /home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_smartconnect_0_1/bd_0/ip/ip_1/bd_886d_psr_aclk_0.xdc]
 set_property used_in_implementation false [get_files -all /home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_smartconnect_0_1/bd_0/ip/ip_2/bd_886d_arsw_0_ooc.xdc]
@@ -55,7 +56,6 @@ set_property used_in_implementation false [get_files -all /home/masudalab/DeepCA
 set_property used_in_implementation false [get_files -all /home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_smartconnect_0_1/bd_0/ip/ip_23/bd_886d_m00awn_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_smartconnect_0_1/bd_0/ip/ip_24/bd_886d_m00wn_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_smartconnect_0_1/bd_0/ip/ip_25/bd_886d_m00bn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_smartconnect_0_1/ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the

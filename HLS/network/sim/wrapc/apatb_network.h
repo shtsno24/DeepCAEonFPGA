@@ -1,5 +1,5 @@
 // ==============================================================
-// File generated on Fri Dec 20 14:40:34 JST 2019
+// File generated on Fri Dec 20 17:25:12 JST 2019
 // Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3.1 (64-bit)
 // SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
 // IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
@@ -7,5 +7,5 @@
 // ==============================================================
 
 extern int AESL_WRAP_network (
-hls::stream<struct ap_axis<32, 1, 1, 1 > > (&input_data),
-hls::stream<struct ap_axis<32, 1, 1, 1 > > (&output_data));
+hls::stream<struct ap_axis<16, 1, 1, 1 > > (&input_data),
+hls::stream<struct ap_axis<16, 1, 1, 1 > > (&output_data));

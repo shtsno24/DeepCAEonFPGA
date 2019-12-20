@@ -75909,24 +75909,22 @@ template<int D>
 #pragma empty_line
 using namespace std;
 #pragma empty_line
-typedef hls::stream< ap_axis<32, 1, 1, 1> > axis;
+typedef hls::stream< ap_axis<16, 1, 1, 1> > axis;
 #pragma empty_line
 int network(axis &input_data, axis &output_data) {
 #pragma HLS INTERFACE axis register both port=input_data
 #pragma HLS INTERFACE axis register both port=output_data
 #pragma HLS INTERFACE s_axilite register port=return
 #pragma empty_line
-#pragma empty_line
-#pragma empty_line
  int16_t MemBank_A[14400], MemBank_B[14400];
- int32_t MemBank_Out[1 * 28 * 28];
+ int16_t MemBank_Out[1 * 28 * 28];
 #pragma empty_line
- int32_t* array_head = (int32_t*)MemBank_Out;
+ int16_t* array_head = (int16_t*)MemBank_Out;
  const uint64_t array_length = (uint64_t)SeparableConv2D_4_depth * SeparableConv2D_4_height * SeparableConv2D_4_width;
 #pragma empty_line
 #pragma empty_line
- ap_axis<32, 1, 1, 1> tmp;
- ap_axis<32, 1, 1, 1> out;
+ ap_axis<16, 1, 1, 1> tmp;
+ ap_axis<16, 1, 1, 1> out;
 #pragma empty_line
  uint16_t i = 0;
 #pragma empty_line
@@ -75934,22 +75932,13 @@ int network(axis &input_data, axis &output_data) {
   input_data >> tmp;
   MemBank_B[i] = (int16_t) tmp.data;
  }
-#pragma line 137 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
+#pragma line 135 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
  for(int i = 0; i < array_length; i++){
 #pragma empty_line
   MemBank_Out[i] = (int32_t)MemBank_B[i];
  }
 #pragma empty_line
- out.user = 1;
- out.last = 0;
- out.dest = 0;
- out.id = 0;
- out.keep = 0;
- out.strb = 0;
- out.data = (int32_t)(array_head[0]);
- output_data << out;
-#pragma empty_line
- for(uint64_t i = 1; i < array_length-1; i++){
+ for(uint64_t i = 0; i < array_length; i++){
 #pragma empty_line
 #pragma empty_line
   out.user = 0;
@@ -75958,18 +75947,15 @@ int network(axis &input_data, axis &output_data) {
   out.id = 0;
   out.keep = 0;
   out.strb = 0;
-  out.data = (int32_t)(array_head[i]);
+  if(i == 0){
+   out.user = 1;
+  }
+  if(i == array_length - 1){
+   out.last = 1;
+  }
+  out.data = (int16_t)(array_head[i]);
   output_data << out;
  }
- out.user = 0;
- out.last = 1;
- out.dest = 0;
- out.id = 0;
- out.keep = 0;
- out.strb = 0;
- out.data = (int32_t)(array_head[array_length-1]);
- output_data << out;
-#pragma empty_line
  return(0);
 }
 #pragma empty_line
@@ -75979,13 +75965,13 @@ int main(void){
 #pragma HLS reset variable=output_buffer
 #pragma empty_line
     int16_t output_img_buff[1 * 28 * 28];
-    ap_axis<32, 1, 1, 1> tmp;
+    ap_axis<16, 1, 1, 1> tmp;
 #pragma empty_line
  int i = 0;
  for(int depth = 0; depth < 1; depth++){
   for(int height = 0; height < 28; height++){
    for(int width = 0; width < 28; width++){
-    tmp.data = (int32_t)test_input_fix16[depth][height][width];
+    tmp.data = (int16_t)test_input_fix16[depth][height][width];
 #pragma empty_line
     if(depth == 0 && height == 0 && width == 0){
      tmp.user = 1;

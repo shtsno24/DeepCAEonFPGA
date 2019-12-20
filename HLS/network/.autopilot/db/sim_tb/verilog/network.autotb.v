@@ -1,5 +1,5 @@
 // ==============================================================
-// File generated on Fri Dec 20 14:40:39 JST 2019
+// File generated on Fri Dec 20 17:25:17 JST 2019
 // Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3.1 (64-bit)
 // SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
 // IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
@@ -79,7 +79,7 @@ module `AUTOTB_TOP;
 
 parameter AUTOTB_TRANSACTION_NUM = 1;
 parameter PROGRESS_TIMEOUT = 10000000;
-parameter LATENCY_ESTIMATION = 4705;
+parameter LATENCY_ESTIMATION = 4708;
 parameter LENGTH_input_data_V_data_V = 784;
 parameter LENGTH_input_data_V_keep_V = 784;
 parameter LENGTH_input_data_V_strb_V = 784;
@@ -195,20 +195,20 @@ wire  AXILiteS_BVALID;
 wire  AXILiteS_BREADY;
 wire [1 : 0] AXILiteS_BRESP;
 wire  AXILiteS_INTERRUPT;
-wire [31 : 0] input_data_TDATA;
+wire [15 : 0] input_data_TDATA;
 wire  input_data_TVALID;
 wire  input_data_TREADY;
-wire [3 : 0] input_data_TKEEP;
-wire [3 : 0] input_data_TSTRB;
+wire [1 : 0] input_data_TKEEP;
+wire [1 : 0] input_data_TSTRB;
 wire [0 : 0] input_data_TUSER;
 wire [0 : 0] input_data_TLAST;
 wire [0 : 0] input_data_TID;
 wire [0 : 0] input_data_TDEST;
-wire [31 : 0] output_data_TDATA;
+wire [15 : 0] output_data_TDATA;
 wire  output_data_TVALID;
 wire  output_data_TREADY;
-wire [3 : 0] output_data_TKEEP;
-wire [3 : 0] output_data_TSTRB;
+wire [1 : 0] output_data_TKEEP;
+wire [1 : 0] output_data_TSTRB;
 wire [0 : 0] output_data_TUSER;
 wire [0 : 0] output_data_TLAST;
 wire [0 : 0] output_data_TID;

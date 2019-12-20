@@ -224,7 +224,7 @@ eval "::AESL_LIB_XILADAPTER::native_axis_add { \
     corename {input_data} \
     metadata {  } \
     op interface \
-    ports { input_data_TDATA { I 32 vector } } \
+    ports { input_data_TDATA { I 16 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'input_data_V_data_V'"
@@ -243,7 +243,7 @@ eval "::AESL_LIB_XILADAPTER::native_axis_add { \
     corename {input_data} \
     metadata {  } \
     op interface \
-    ports { input_data_TKEEP { I 4 vector } } \
+    ports { input_data_TKEEP { I 2 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'input_data_V_keep_V'"
@@ -262,7 +262,7 @@ eval "::AESL_LIB_XILADAPTER::native_axis_add { \
     corename {input_data} \
     metadata {  } \
     op interface \
-    ports { input_data_TSTRB { I 4 vector } } \
+    ports { input_data_TSTRB { I 2 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'input_data_V_strb_V'"
@@ -357,7 +357,7 @@ eval "::AESL_LIB_XILADAPTER::native_axis_add { \
     corename {output_data} \
     metadata {  } \
     op interface \
-    ports { output_data_TDATA { O 32 vector } output_data_TREADY { I 1 bit } } \
+    ports { output_data_TDATA { O 16 vector } output_data_TREADY { I 1 bit } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'output_data_V_data_V'"
@@ -376,7 +376,7 @@ eval "::AESL_LIB_XILADAPTER::native_axis_add { \
     corename {output_data} \
     metadata {  } \
     op interface \
-    ports { output_data_TKEEP { O 4 vector } } \
+    ports { output_data_TKEEP { O 2 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'output_data_V_keep_V'"
@@ -395,7 +395,7 @@ eval "::AESL_LIB_XILADAPTER::native_axis_add { \
     corename {output_data} \
     metadata {  } \
     op interface \
-    ports { output_data_TSTRB { O 4 vector } } \
+    ports { output_data_TSTRB { O 2 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'output_data_V_strb_V'"
