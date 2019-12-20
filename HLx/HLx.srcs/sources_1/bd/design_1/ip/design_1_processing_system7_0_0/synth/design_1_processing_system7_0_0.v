@@ -147,6 +147,7 @@ module design_1_processing_system7_0_0 (
   S_AXI_HP0_WSTRB,
   FCLK_CLK0,
   FCLK_RESET0_N,
+  FPGA_IDLE_N,
   MIO,
   DDR_CAS_n,
   DDR_CKE,
@@ -356,6 +357,7 @@ output wire FCLK_CLK0;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME FCLK_RESET0_N, POLARITY ACTIVE_LOW, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 FCLK_RESET0_N RST" *)
 output wire FCLK_RESET0_N;
+input wire FPGA_IDLE_N;
 (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO MIO" *)
 inout wire [53 : 0] MIO;
 (* X_INTERFACE_INFO = "xilinx.com:interface:ddrx:1.0 DDR CAS_N" *)
@@ -1104,7 +1106,7 @@ inout wire PS_PORB;
     .FTMT_P2F_TRIGACK_3(1'B0),
     .FTMT_P2F_TRIG_3(),
     .FTMT_P2F_DEBUG(),
-    .FPGA_IDLE_N(1'B0),
+    .FPGA_IDLE_N(FPGA_IDLE_N),
     .EVENT_EVENTO(),
     .EVENT_STANDBYWFE(),
     .EVENT_STANDBYWFI(),
