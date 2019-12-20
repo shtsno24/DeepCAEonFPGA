@@ -167,9 +167,9 @@ proc create_root_design { parentCell } {
    CONFIG.c_addr_width {32} \
    CONFIG.c_include_s2mm {0} \
    CONFIG.c_include_sg {0} \
-   CONFIG.c_m_axi_mm2s_data_width {64} \
-   CONFIG.c_m_axis_mm2s_tdata_width {16} \
-   CONFIG.c_mm2s_burst_size {8} \
+   CONFIG.c_m_axi_mm2s_data_width {32} \
+   CONFIG.c_m_axis_mm2s_tdata_width {32} \
+   CONFIG.c_mm2s_burst_size {16} \
    CONFIG.c_sg_include_stscntrl_strm {0} \
    CONFIG.c_sg_length_width {26} \
  ] $axi_dma_in
@@ -180,7 +180,6 @@ proc create_root_design { parentCell } {
    CONFIG.c_addr_width {32} \
    CONFIG.c_include_mm2s {0} \
    CONFIG.c_include_sg {0} \
-   CONFIG.c_m_axi_s2mm_data_width {64} \
    CONFIG.c_sg_include_stscntrl_strm {0} \
    CONFIG.c_sg_length_width {26} \
  ] $axi_dma_out
