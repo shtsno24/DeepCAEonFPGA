@@ -2,29 +2,29 @@
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 6.8.11  2018-08-07 bk=1.4403 VDI=40 GEI=35 GUI=JA:9.0 TLS
 #  -string -flagsOSRD
-preplace port DDR -pg 1 -y 230 -defaultsOSRD
-preplace port FIXED_IO -pg 1 -y 250 -defaultsOSRD
-preplace inst network_dma -pg 1 -lvl 3 -y 190 -defaultsOSRD
-preplace inst ps7_0_axi_periph -pg 1 -lvl 2 -y 170 -defaultsOSRD
-preplace inst axi_mem_intercon -pg 1 -lvl 4 -y 270 -defaultsOSRD
-preplace inst rst_ps7_0_100M -pg 1 -lvl 1 -y 440 -defaultsOSRD
-preplace inst processing_system7_0 -pg 1 -lvl 5 -y 280 -defaultsOSRD
-preplace netloc ps7_0_axi_periph_M02_AXI 1 2 1 N
+preplace port DDR -pg 1 -y 90 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y 110 -defaultsOSRD
+preplace inst smartconnect_0 -pg 1 -lvl 2 -y 90 -defaultsOSRD
+preplace inst smartconnect_1 -pg 1 -lvl 4 -y 130 -defaultsOSRD
+preplace inst network_dma -pg 1 -lvl 3 -y 110 -defaultsOSRD
+preplace inst rst_ps7_0_100M -pg 1 -lvl 1 -y 270 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 5 -y 140 -defaultsOSRD
+preplace netloc smartconnect_0_M02_AXI 1 2 1 N
+preplace netloc S_AXI_LITE_1 1 2 1 N
 preplace netloc processing_system7_0_DDR 1 5 1 NJ
-preplace netloc axi_dma_in_M_AXI_MM2S 1 3 1 N
-preplace netloc processing_system7_0_M_AXI_GP0 1 1 5 390 10 NJ 10 NJ 10 NJ 10 1800
-preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 1 3 400 350 710 90 1030
-preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 6 30 340 NJ 340 NJ 340 1020J 430 NJ 430 1790
-preplace netloc axi_mem_intercon_M00_AXI 1 4 1 N
-preplace netloc ps7_0_axi_periph_M01_AXI 1 2 1 N
+preplace netloc network_dma_M_AXI_S2MM 1 3 1 N
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 5 410 250 NJ 250 NJ 250 NJ 250 1760
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 1 2 400 170 690J
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 6 30 170 390J 200 NJ 200 1010 240 1300J 260 1750
+preplace netloc smartconnect_0_M00_AXI 1 2 1 N
+preplace netloc network_dma_M_AXI_MM2S 1 3 1 N
 preplace netloc processing_system7_0_FIXED_IO 1 5 1 NJ
-preplace netloc processing_system7_0_FCLK_CLK0 1 0 6 20 330 390 330 700 80 1040 420 1340 390 1800
-preplace netloc axi_dma_out_M_AXI_S2MM 1 3 1 N
-preplace netloc ps7_0_axi_periph_M00_AXI 1 2 1 N
-levelinfo -pg 1 0 210 550 870 1190 1570 1830 -top 0 -bot 540
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 6 20 90 390 10 690 10 1010 30 1300 30 1770
+preplace netloc smartconnect_1_M00_AXI 1 4 1 N
+levelinfo -pg 1 0 210 550 860 1160 1530 1790 -top 0 -bot 370
 "
 }
 {
-   "da_axi4_cnt":"5",
+   "da_axi4_cnt":"7",
    "da_ps7_cnt":"1"
 }
