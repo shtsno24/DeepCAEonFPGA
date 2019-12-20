@@ -222,7 +222,7 @@ reg   [9:0] i_3_reg_305;
 wire    ap_CS_fsm_state5;
 wire   [0:0] tmp_user_V_fu_259_p2;
 reg   [0:0] tmp_user_V_reg_310;
-wire   [0:0] tmp_7_fu_247_p2;
+wire   [0:0] tmp_8_fu_247_p2;
 wire   [0:0] tmp_last_V_fu_265_p2;
 reg   [0:0] tmp_last_V_reg_315;
 wire  signed [31:0] tmp_data_V_1_fu_271_p1;
@@ -694,7 +694,7 @@ always @ (posedge ap_clk) begin
 end
 
 always @ (posedge ap_clk) begin
-    if (((tmp_7_fu_247_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state5))) begin
+    if (((tmp_8_fu_247_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state5))) begin
         tmp_last_V_reg_315 <= tmp_last_V_fu_265_p2;
         tmp_user_V_reg_310 <= tmp_user_V_fu_259_p2;
     end
@@ -925,7 +925,7 @@ always @ (*) begin
             ap_NS_fsm = ap_ST_fsm_state3;
         end
         ap_ST_fsm_state5 : begin
-            if (((tmp_7_fu_247_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state5))) begin
+            if (((tmp_8_fu_247_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state5))) begin
                 ap_NS_fsm = ap_ST_fsm_state8;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state6;
@@ -1122,7 +1122,7 @@ assign tmp_4_fu_225_p2 = ((i1_reg_177 == 10'd784) ? 1'b1 : 1'b0);
 
 assign tmp_5_fu_237_p1 = i1_reg_177;
 
-assign tmp_7_fu_247_p2 = ((i2_reg_188 == 10'd784) ? 1'b1 : 1'b0);
+assign tmp_8_fu_247_p2 = ((i2_reg_188 == 10'd784) ? 1'b1 : 1'b0);
 
 assign tmp_data_V_1_fu_271_p1 = $signed(MemBank_Out_q0);
 

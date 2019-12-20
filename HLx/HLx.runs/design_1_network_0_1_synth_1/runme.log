@@ -17,12 +17,12 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 7386 
+INFO: Helper process launched with PID 13272 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1452.016 ; gain = 65.883 ; free physical = 9223 ; free virtual = 13992
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1452.020 ; gain = 65.883 ; free physical = 7566 ; free virtual = 12520
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'design_1_network_0_1' [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_network_0_1/synth/design_1_network_0_1.v:58]
-INFO: [Synth 8-6157] synthesizing module 'network' [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ipshared/fc38/hdl/verilog/network.v:12]
+INFO: [Synth 8-6157] synthesizing module 'network' [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ipshared/0365/hdl/verilog/network.v:12]
 	Parameter ap_ST_fsm_state1 bound to: 8'b00000001 
 	Parameter ap_ST_fsm_state2 bound to: 8'b00000010 
 	Parameter ap_ST_fsm_state3 bound to: 8'b00000100 
@@ -36,8 +36,8 @@ INFO: [Synth 8-6157] synthesizing module 'network' [/home/masudalab/DeepCAEonFPG
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_AXILITES_WSTRB_WIDTH bound to: 4 - type: integer 
 	Parameter C_S_AXI_WSTRB_WIDTH bound to: 4 - type: integer 
-INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ipshared/fc38/hdl/verilog/network.v:111]
-INFO: [Synth 8-6157] synthesizing module 'network_AXILiteS_s_axi' [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ipshared/fc38/hdl/verilog/network_AXILiteS_s_axi.v:9]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ipshared/0365/hdl/verilog/network.v:111]
+INFO: [Synth 8-6157] synthesizing module 'network_AXILiteS_s_axi' [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ipshared/0365/hdl/verilog/network_AXILiteS_s_axi.v:9]
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter ADDR_AP_CTRL bound to: 5'b00000 
@@ -53,36 +53,36 @@ INFO: [Synth 8-6157] synthesizing module 'network_AXILiteS_s_axi' [/home/masudal
 	Parameter RDDATA bound to: 2'b01 
 	Parameter RDRESET bound to: 2'b10 
 	Parameter ADDR_BITS bound to: 5 - type: integer 
-INFO: [Synth 8-155] case statement is not full and has no default [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ipshared/fc38/hdl/verilog/network_AXILiteS_s_axi.v:194]
-INFO: [Synth 8-6155] done synthesizing module 'network_AXILiteS_s_axi' (1#1) [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ipshared/fc38/hdl/verilog/network_AXILiteS_s_axi.v:9]
-INFO: [Synth 8-6157] synthesizing module 'network_MemBank_B' [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ipshared/fc38/hdl/verilog/network_MemBank_B.v:43]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ipshared/0365/hdl/verilog/network_AXILiteS_s_axi.v:194]
+INFO: [Synth 8-6155] done synthesizing module 'network_AXILiteS_s_axi' (1#1) [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ipshared/0365/hdl/verilog/network_AXILiteS_s_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'network_MemBank_B' [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ipshared/0365/hdl/verilog/network_MemBank_B.v:43]
 	Parameter DataWidth bound to: 16 - type: integer 
 	Parameter AddressRange bound to: 14400 - type: integer 
 	Parameter AddressWidth bound to: 14 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'network_MemBank_B_ram' [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ipshared/fc38/hdl/verilog/network_MemBank_B.v:9]
+INFO: [Synth 8-6157] synthesizing module 'network_MemBank_B_ram' [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ipshared/0365/hdl/verilog/network_MemBank_B.v:9]
 	Parameter DWIDTH bound to: 16 - type: integer 
 	Parameter AWIDTH bound to: 14 - type: integer 
 	Parameter MEM_SIZE bound to: 14400 - type: integer 
-INFO: [Synth 8-5534] Detected attribute (* ram_style = "block" *) [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ipshared/fc38/hdl/verilog/network_MemBank_B.v:22]
-INFO: [Synth 8-6155] done synthesizing module 'network_MemBank_B_ram' (2#1) [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ipshared/fc38/hdl/verilog/network_MemBank_B.v:9]
-INFO: [Synth 8-6155] done synthesizing module 'network_MemBank_B' (3#1) [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ipshared/fc38/hdl/verilog/network_MemBank_B.v:43]
-INFO: [Synth 8-6157] synthesizing module 'network_MemBank_Out' [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ipshared/fc38/hdl/verilog/network_MemBank_Out.v:43]
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "block" *) [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ipshared/0365/hdl/verilog/network_MemBank_B.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'network_MemBank_B_ram' (2#1) [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ipshared/0365/hdl/verilog/network_MemBank_B.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'network_MemBank_B' (3#1) [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ipshared/0365/hdl/verilog/network_MemBank_B.v:43]
+INFO: [Synth 8-6157] synthesizing module 'network_MemBank_Out' [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ipshared/0365/hdl/verilog/network_MemBank_Out.v:43]
 	Parameter DataWidth bound to: 16 - type: integer 
 	Parameter AddressRange bound to: 784 - type: integer 
 	Parameter AddressWidth bound to: 10 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'network_MemBank_Out_ram' [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ipshared/fc38/hdl/verilog/network_MemBank_Out.v:9]
+INFO: [Synth 8-6157] synthesizing module 'network_MemBank_Out_ram' [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ipshared/0365/hdl/verilog/network_MemBank_Out.v:9]
 	Parameter DWIDTH bound to: 16 - type: integer 
 	Parameter AWIDTH bound to: 10 - type: integer 
 	Parameter MEM_SIZE bound to: 784 - type: integer 
-INFO: [Synth 8-5534] Detected attribute (* ram_style = "block" *) [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ipshared/fc38/hdl/verilog/network_MemBank_Out.v:22]
-INFO: [Synth 8-6155] done synthesizing module 'network_MemBank_Out_ram' (4#1) [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ipshared/fc38/hdl/verilog/network_MemBank_Out.v:9]
-INFO: [Synth 8-6155] done synthesizing module 'network_MemBank_Out' (5#1) [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ipshared/fc38/hdl/verilog/network_MemBank_Out.v:43]
-WARNING: [Synth 8-6014] Unused sequential element output_data_V_dest_V_1_sel_rd_reg was removed.  [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ipshared/fc38/hdl/verilog/network.v:432]
-WARNING: [Synth 8-6014] Unused sequential element output_data_V_id_V_1_sel_rd_reg was removed.  [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ipshared/fc38/hdl/verilog/network.v:458]
-WARNING: [Synth 8-6014] Unused sequential element output_data_V_keep_V_1_sel_rd_reg was removed.  [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ipshared/fc38/hdl/verilog/network.v:484]
-WARNING: [Synth 8-6014] Unused sequential element output_data_V_strb_V_1_sel_rd_reg was removed.  [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ipshared/fc38/hdl/verilog/network.v:546]
-WARNING: [Synth 8-3936] Found unconnected internal register 'input_data_V_data_V_0_data_out_reg' and it is trimmed from '32' to '16' bits. [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ipshared/fc38/hdl/verilog/network.v:797]
-INFO: [Synth 8-6155] done synthesizing module 'network' (6#1) [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ipshared/fc38/hdl/verilog/network.v:12]
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "block" *) [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ipshared/0365/hdl/verilog/network_MemBank_Out.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'network_MemBank_Out_ram' (4#1) [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ipshared/0365/hdl/verilog/network_MemBank_Out.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'network_MemBank_Out' (5#1) [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ipshared/0365/hdl/verilog/network_MemBank_Out.v:43]
+WARNING: [Synth 8-6014] Unused sequential element output_data_V_dest_V_1_sel_rd_reg was removed.  [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ipshared/0365/hdl/verilog/network.v:432]
+WARNING: [Synth 8-6014] Unused sequential element output_data_V_id_V_1_sel_rd_reg was removed.  [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ipshared/0365/hdl/verilog/network.v:458]
+WARNING: [Synth 8-6014] Unused sequential element output_data_V_keep_V_1_sel_rd_reg was removed.  [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ipshared/0365/hdl/verilog/network.v:484]
+WARNING: [Synth 8-6014] Unused sequential element output_data_V_strb_V_1_sel_rd_reg was removed.  [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ipshared/0365/hdl/verilog/network.v:546]
+WARNING: [Synth 8-3936] Found unconnected internal register 'input_data_V_data_V_0_data_out_reg' and it is trimmed from '32' to '16' bits. [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ipshared/0365/hdl/verilog/network.v:797]
+INFO: [Synth 8-6155] done synthesizing module 'network' (6#1) [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ipshared/0365/hdl/verilog/network.v:12]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_network_0_1' (7#1) [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_network_0_1/synth/design_1_network_0_1.v:58]
 WARNING: [Synth 8-3331] design network_MemBank_Out has unconnected port reset
 WARNING: [Synth 8-3331] design network_MemBank_B has unconnected port reset
@@ -131,7 +131,7 @@ WARNING: [Synth 8-3331] design network has unconnected port input_data_TLAST[0]
 WARNING: [Synth 8-3331] design network has unconnected port input_data_TID[0]
 WARNING: [Synth 8-3331] design network has unconnected port input_data_TDEST[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1501.523 ; gain = 115.391 ; free physical = 9232 ; free virtual = 14002
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1501.527 ; gain = 115.391 ; free physical = 7575 ; free virtual = 12530
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -144,10 +144,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1501.523 ; gain = 115.391 ; free physical = 9233 ; free virtual = 14003
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1501.527 ; gain = 115.391 ; free physical = 7575 ; free virtual = 12530
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1501.523 ; gain = 115.391 ; free physical = 9233 ; free virtual = 14003
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1501.527 ; gain = 115.391 ; free physical = 7575 ; free virtual = 12530
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -160,39 +160,39 @@ Parsing XDC File [/home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/design_1_network_0_
 Finished Parsing XDC File [/home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/design_1_network_0_1_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1844.539 ; gain = 0.000 ; free physical = 8919 ; free virtual = 13731
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1845.551 ; gain = 0.000 ; free physical = 7295 ; free virtual = 12250
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1844.539 ; gain = 0.000 ; free physical = 8919 ; free virtual = 13731
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.07 . Memory (MB): peak = 1844.539 ; gain = 0.000 ; free physical = 8919 ; free virtual = 13730
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1845.551 ; gain = 0.000 ; free physical = 7295 ; free virtual = 12250
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1845.551 ; gain = 0.000 ; free physical = 7295 ; free virtual = 12249
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1844.539 ; gain = 458.406 ; free physical = 8998 ; free virtual = 13810
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1845.551 ; gain = 459.414 ; free physical = 7374 ; free virtual = 12329
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1844.539 ; gain = 458.406 ; free physical = 8998 ; free virtual = 13810
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1845.551 ; gain = 459.414 ; free physical = 7374 ; free virtual = 12329
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property DONT_TOUCH = true for inst. (constraint file  /home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/design_1_network_0_1_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 1844.539 ; gain = 458.406 ; free physical = 9000 ; free virtual = 13812
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1845.551 ; gain = 459.414 ; free physical = 7377 ; free virtual = 12331
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'network_AXILiteS_s_axi'
 INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'network_AXILiteS_s_axi'
 INFO: [Synth 8-5544] ROM "wnext" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "wnext" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
-WARNING: [Synth 8-3936] Found unconnected internal register 'input_data_V_data_V_0_payload_B_reg' and it is trimmed from '32' to '16' bits. [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ipshared/fc38/hdl/verilog/network.v:650]
-WARNING: [Synth 8-3936] Found unconnected internal register 'input_data_V_data_V_0_payload_A_reg' and it is trimmed from '32' to '16' bits. [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ipshared/fc38/hdl/verilog/network.v:644]
+WARNING: [Synth 8-3936] Found unconnected internal register 'input_data_V_data_V_0_payload_B_reg' and it is trimmed from '32' to '16' bits. [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ipshared/0365/hdl/verilog/network.v:650]
+WARNING: [Synth 8-3936] Found unconnected internal register 'input_data_V_data_V_0_payload_A_reg' and it is trimmed from '32' to '16' bits. [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ipshared/0365/hdl/verilog/network.v:644]
 INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
 INFO: [Synth 8-5546] ROM "exitcond_fu_199_p2" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "tmp_4_fu_225_p2" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "tmp_7_fu_247_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_8_fu_247_p2" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "tmp_last_V_fu_265_p2" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "tmp_user_V_fu_259_p2" won't be mapped to RAM because it is too sparse
 ---------------------------------------------------------------------------------------------------
@@ -215,7 +215,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'network_AXILiteS_s_axi'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 1844.539 ; gain = 458.406 ; free physical = 8991 ; free virtual = 13803
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1845.551 ; gain = 459.414 ; free physical = 7367 ; free virtual = 12322
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -333,7 +333,7 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
 INFO: [Synth 8-5546] ROM "tmp_4_fu_225_p2" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "tmp_7_fu_247_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_8_fu_247_p2" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "exitcond_fu_199_p2" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "tmp_user_V_fu_259_p2" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "tmp_last_V_fu_265_p2" won't be mapped to RAM because it is too sparse
@@ -486,7 +486,7 @@ INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\net
 WARNING: [Synth 8-3332] Sequential element (network_AXILiteS_s_axi_U/FSM_onehot_wstate_reg[0]) is unused and will be removed from module network.
 WARNING: [Synth 8-3332] Sequential element (network_AXILiteS_s_axi_U/FSM_onehot_rstate_reg[0]) is unused and will be removed from module network.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 1844.539 ; gain = 458.406 ; free physical = 8976 ; free virtual = 13793
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1845.551 ; gain = 459.414 ; free physical = 7355 ; free virtual = 12312
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -516,13 +516,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 1844.539 ; gain = 458.406 ; free physical = 8839 ; free virtual = 13663
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1845.551 ; gain = 459.414 ; free physical = 7227 ; free virtual = 12184
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 1844.539 ; gain = 458.406 ; free physical = 8839 ; free virtual = 13662
+Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1845.551 ; gain = 459.414 ; free physical = 7227 ; free virtual = 12184
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -551,7 +551,7 @@ Start Technology Mapping
 INFO: [Synth 8-6837] The timing for the instance inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Synth 8-6837] The timing for the instance inst/MemBank_Out_U/network_MemBank_Out_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 1844.539 ; gain = 458.406 ; free physical = 8837 ; free virtual = 13661
+Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1845.551 ; gain = 459.414 ; free physical = 7225 ; free virtual = 12182
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -575,7 +575,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1844.539 ; gain = 458.406 ; free physical = 8838 ; free virtual = 13662
+Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1845.551 ; gain = 459.414 ; free physical = 7225 ; free virtual = 12182
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -588,7 +588,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1844.539 ; gain = 458.406 ; free physical = 8838 ; free virtual = 13662
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1845.551 ; gain = 459.414 ; free physical = 7225 ; free virtual = 12182
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -600,25 +600,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1844.539 ; gain = 458.406 ; free physical = 8838 ; free virtual = 13662
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1845.551 ; gain = 459.414 ; free physical = 7225 ; free virtual = 12182
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1844.539 ; gain = 458.406 ; free physical = 8838 ; free virtual = 13662
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1845.551 ; gain = 459.414 ; free physical = 7225 ; free virtual = 12182
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1844.539 ; gain = 458.406 ; free physical = 8838 ; free virtual = 13662
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1845.551 ; gain = 459.414 ; free physical = 7225 ; free virtual = 12182
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1844.539 ; gain = 458.406 ; free physical = 8838 ; free virtual = 13662
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1845.551 ; gain = 459.414 ; free physical = 7225 ; free virtual = 12182
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -658,33 +658,33 @@ Report Instance Areas:
 |7     |    network_AXILiteS_s_axi_U    |network_AXILiteS_s_axi  |    61|
 +------+--------------------------------+------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1844.539 ; gain = 458.406 ; free physical = 8838 ; free virtual = 13662
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1845.551 ; gain = 459.414 ; free physical = 7225 ; free virtual = 12182
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 64 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1844.539 ; gain = 115.391 ; free physical = 8896 ; free virtual = 13719
-Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1844.547 ; gain = 458.406 ; free physical = 8895 ; free virtual = 13719
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1845.551 ; gain = 115.391 ; free physical = 7282 ; free virtual = 12240
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1845.559 ; gain = 459.414 ; free physical = 7282 ; free virtual = 12240
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1844.547 ; gain = 0.000 ; free physical = 8835 ; free virtual = 13660
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1845.559 ; gain = 0.000 ; free physical = 7222 ; free virtual = 12179
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
 145 Infos, 109 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 1844.547 ; gain = 458.531 ; free physical = 8890 ; free virtual = 13714
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1844.547 ; gain = 0.000 ; free physical = 8890 ; free virtual = 13714
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1845.559 ; gain = 459.539 ; free physical = 7276 ; free virtual = 12233
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1845.559 ; gain = 0.000 ; free physical = 7276 ; free virtual = 12233
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint '/home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/design_1_network_0_1_synth_1/design_1_network_0_1.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_network_0_1, cache-ID = aba031ec836033f0
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_network_0_1, cache-ID = 2b13621eb4d80e69
 INFO: [Coretcl 2-1174] Renamed 6 cell refs.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1868.551 ; gain = 0.000 ; free physical = 8889 ; free virtual = 13714
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1869.562 ; gain = 0.000 ; free physical = 7275 ; free virtual = 12233
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint '/home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/design_1_network_0_1_synth_1/design_1_network_0_1.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_network_0_1_utilization_synth.rpt -pb design_1_network_0_1_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Dec 20 13:15:01 2019...
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 20 13:37:43 2019...

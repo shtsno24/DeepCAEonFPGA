@@ -45,14 +45,14 @@
 
 <trans id="81" from="5" to="6">
 <condition id="-1">
-<or_exp><and_exp><literal name="tmp_7" val="0"/>
+<or_exp><and_exp><literal name="tmp_8" val="0"/>
 </and_exp></or_exp>
 </condition>
 </trans>
 
 <trans id="82" from="5" to="8">
 <condition id="-1">
-<or_exp><and_exp><literal name="tmp_7" val="1"/>
+<or_exp><and_exp><literal name="tmp_8" val="1"/>
 </and_exp></or_exp>
 </condition>
 </trans>
@@ -85,7 +85,7 @@
 
 <Node id="15" bw="0" op_0_bw="0" op_1_bw="32">
 <![CDATA[
-:0  call void (...)* @_ssdm_op_SpecBitsMap(i32* %input_data_V_data_V), !map !121
+:0  call void (...)* @_ssdm_op_SpecBitsMap(i32* %input_data_V_data_V), !map !119
 
 ]]></Node>
 <StgValue><ssdm name=""/></StgValue>
@@ -100,7 +100,7 @@
 
 <Node id="16" bw="0" op_0_bw="0" op_1_bw="4">
 <![CDATA[
-:1  call void (...)* @_ssdm_op_SpecBitsMap(i4* %input_data_V_keep_V), !map !125
+:1  call void (...)* @_ssdm_op_SpecBitsMap(i4* %input_data_V_keep_V), !map !123
 
 ]]></Node>
 <StgValue><ssdm name=""/></StgValue>
@@ -115,7 +115,7 @@
 
 <Node id="17" bw="0" op_0_bw="0" op_1_bw="4">
 <![CDATA[
-:2  call void (...)* @_ssdm_op_SpecBitsMap(i4* %input_data_V_strb_V), !map !129
+:2  call void (...)* @_ssdm_op_SpecBitsMap(i4* %input_data_V_strb_V), !map !127
 
 ]]></Node>
 <StgValue><ssdm name=""/></StgValue>
@@ -130,7 +130,7 @@
 
 <Node id="18" bw="0" op_0_bw="0" op_1_bw="1">
 <![CDATA[
-:3  call void (...)* @_ssdm_op_SpecBitsMap(i1* %input_data_V_user_V), !map !133
+:3  call void (...)* @_ssdm_op_SpecBitsMap(i1* %input_data_V_user_V), !map !131
 
 ]]></Node>
 <StgValue><ssdm name=""/></StgValue>
@@ -145,7 +145,7 @@
 
 <Node id="19" bw="0" op_0_bw="0" op_1_bw="1">
 <![CDATA[
-:4  call void (...)* @_ssdm_op_SpecBitsMap(i1* %input_data_V_last_V), !map !137
+:4  call void (...)* @_ssdm_op_SpecBitsMap(i1* %input_data_V_last_V), !map !135
 
 ]]></Node>
 <StgValue><ssdm name=""/></StgValue>
@@ -160,7 +160,7 @@
 
 <Node id="20" bw="0" op_0_bw="0" op_1_bw="1">
 <![CDATA[
-:5  call void (...)* @_ssdm_op_SpecBitsMap(i1* %input_data_V_id_V), !map !141
+:5  call void (...)* @_ssdm_op_SpecBitsMap(i1* %input_data_V_id_V), !map !139
 
 ]]></Node>
 <StgValue><ssdm name=""/></StgValue>
@@ -175,7 +175,7 @@
 
 <Node id="21" bw="0" op_0_bw="0" op_1_bw="1">
 <![CDATA[
-:6  call void (...)* @_ssdm_op_SpecBitsMap(i1* %input_data_V_dest_V), !map !145
+:6  call void (...)* @_ssdm_op_SpecBitsMap(i1* %input_data_V_dest_V), !map !143
 
 ]]></Node>
 <StgValue><ssdm name=""/></StgValue>
@@ -190,7 +190,7 @@
 
 <Node id="22" bw="0" op_0_bw="0" op_1_bw="32">
 <![CDATA[
-:7  call void (...)* @_ssdm_op_SpecBitsMap(i32* %output_data_V_data_V), !map !149
+:7  call void (...)* @_ssdm_op_SpecBitsMap(i32* %output_data_V_data_V), !map !147
 
 ]]></Node>
 <StgValue><ssdm name=""/></StgValue>
@@ -205,7 +205,7 @@
 
 <Node id="23" bw="0" op_0_bw="0" op_1_bw="4">
 <![CDATA[
-:8  call void (...)* @_ssdm_op_SpecBitsMap(i4* %output_data_V_keep_V), !map !153
+:8  call void (...)* @_ssdm_op_SpecBitsMap(i4* %output_data_V_keep_V), !map !151
 
 ]]></Node>
 <StgValue><ssdm name=""/></StgValue>
@@ -220,7 +220,7 @@
 
 <Node id="24" bw="0" op_0_bw="0" op_1_bw="4">
 <![CDATA[
-:9  call void (...)* @_ssdm_op_SpecBitsMap(i4* %output_data_V_strb_V), !map !157
+:9  call void (...)* @_ssdm_op_SpecBitsMap(i4* %output_data_V_strb_V), !map !155
 
 ]]></Node>
 <StgValue><ssdm name=""/></StgValue>
@@ -235,7 +235,7 @@
 
 <Node id="25" bw="0" op_0_bw="0" op_1_bw="1">
 <![CDATA[
-:10  call void (...)* @_ssdm_op_SpecBitsMap(i1* %output_data_V_user_V), !map !161
+:10  call void (...)* @_ssdm_op_SpecBitsMap(i1* %output_data_V_user_V), !map !159
 
 ]]></Node>
 <StgValue><ssdm name=""/></StgValue>
@@ -250,7 +250,7 @@
 
 <Node id="26" bw="0" op_0_bw="0" op_1_bw="1">
 <![CDATA[
-:11  call void (...)* @_ssdm_op_SpecBitsMap(i1* %output_data_V_last_V), !map !165
+:11  call void (...)* @_ssdm_op_SpecBitsMap(i1* %output_data_V_last_V), !map !163
 
 ]]></Node>
 <StgValue><ssdm name=""/></StgValue>
@@ -265,7 +265,7 @@
 
 <Node id="27" bw="0" op_0_bw="0" op_1_bw="1">
 <![CDATA[
-:12  call void (...)* @_ssdm_op_SpecBitsMap(i1* %output_data_V_id_V), !map !169
+:12  call void (...)* @_ssdm_op_SpecBitsMap(i1* %output_data_V_id_V), !map !167
 
 ]]></Node>
 <StgValue><ssdm name=""/></StgValue>
@@ -280,7 +280,7 @@
 
 <Node id="28" bw="0" op_0_bw="0" op_1_bw="1">
 <![CDATA[
-:13  call void (...)* @_ssdm_op_SpecBitsMap(i1* %output_data_V_dest_V), !map !173
+:13  call void (...)* @_ssdm_op_SpecBitsMap(i1* %output_data_V_dest_V), !map !171
 
 ]]></Node>
 <StgValue><ssdm name=""/></StgValue>
@@ -295,7 +295,7 @@
 
 <Node id="29" bw="0" op_0_bw="0" op_1_bw="32">
 <![CDATA[
-:14  call void (...)* @_ssdm_op_SpecBitsMap(i32 0) nounwind, !map !177
+:14  call void (...)* @_ssdm_op_SpecBitsMap(i32 0) nounwind, !map !175
 
 ]]></Node>
 <StgValue><ssdm name=""/></StgValue>
@@ -341,7 +341,7 @@
 
 <Node id="32" bw="16" op_0_bw="64">
 <![CDATA[
-:17  %MemBank_Out = alloca [784 x i16], align 16
+:17  %MemBank_Out = alloca [784 x i16], align 2
 
 ]]></Node>
 <StgValue><ssdm name="MemBank_Out"/><MemPortTyVec>2 3 </MemPortTyVec>
@@ -783,7 +783,7 @@
 
 <Node id="63" bw="10" op_0_bw="16" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-:3  %MemBank_Out_addr = getelementptr inbounds [784 x i16]* %MemBank_Out, i64 0, i64 %tmp_5
+:3  %MemBank_Out_addr = getelementptr [784 x i16]* %MemBank_Out, i64 0, i64 %tmp_5
 
 ]]></Node>
 <StgValue><ssdm name="MemBank_Out_addr"/></StgValue>
@@ -861,10 +861,10 @@
 
 <Node id="71" bw="1" op_0_bw="10" op_1_bw="10">
 <![CDATA[
-.preheader:2  %tmp_7 = icmp eq i10 %i2, -240
+.preheader:2  %tmp_8 = icmp eq i10 %i2, -240
 
 ]]></Node>
-<StgValue><ssdm name="tmp_7"/></StgValue>
+<StgValue><ssdm name="tmp_8"/></StgValue>
 </operation>
 
 <operation id="60" st_id="5" stage="1" lat="1">
@@ -906,7 +906,7 @@
 
 <Node id="74" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
 <![CDATA[
-.preheader:5  br i1 %tmp_7, label %5, label %4
+.preheader:5  br i1 %tmp_8, label %5, label %4
 
 ]]></Node>
 <StgValue><ssdm name=""/></StgValue>
@@ -916,7 +916,7 @@
 <core>Cmp</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="tmp_7" val="0"/>
+<or_exp><and_exp><literal name="tmp_8" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -932,7 +932,7 @@
 <core>Cmp</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="tmp_7" val="0"/>
+<or_exp><and_exp><literal name="tmp_8" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -948,13 +948,13 @@
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="tmp_7" val="0"/>
+<or_exp><and_exp><literal name="tmp_8" val="0"/>
 </and_exp></or_exp>
 </condition>
 
 <Node id="78" bw="10" op_0_bw="16" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-:2  %MemBank_Out_addr_1 = getelementptr inbounds [784 x i16]* %MemBank_Out, i64 0, i64 %i2_cast1
+:2  %MemBank_Out_addr_1 = getelementptr [784 x i16]* %MemBank_Out, i64 0, i64 %i2_cast1
 
 ]]></Node>
 <StgValue><ssdm name="MemBank_Out_addr_1"/></StgValue>
@@ -964,7 +964,7 @@
 <core>RAM</core>
 <MemPortIdVec>0 </MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="tmp_7" val="0"/>
+<or_exp><and_exp><literal name="tmp_8" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -980,7 +980,7 @@
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="tmp_7" val="1"/>
+<or_exp><and_exp><literal name="tmp_8" val="1"/>
 </and_exp></or_exp>
 </condition>
 
@@ -1478,9 +1478,9 @@
 </dataflow>
 <dataflow id="273" from="i2" to="i2_cast1" fromId="57" toId="58">
 </dataflow>
-<dataflow id="274" from="i2" to="tmp_7" fromId="57" toId="59">
+<dataflow id="274" from="i2" to="tmp_8" fromId="57" toId="59">
 </dataflow>
-<dataflow id="275" from="StgValue_215" to="tmp_7" fromId="215" toId="59">
+<dataflow id="275" from="StgValue_215" to="tmp_8" fromId="215" toId="59">
 </dataflow>
 <dataflow id="276" from="_ssdm_op_SpecLoopTripCount" to="empty_5" fromId="217" toId="60">
 </dataflow>
@@ -1494,7 +1494,7 @@
 </dataflow>
 <dataflow id="281" from="StgValue_224" to="i_3" fromId="224" toId="61">
 </dataflow>
-<dataflow id="282" from="tmp_7" to="StgValue_62" fromId="59" toId="62">
+<dataflow id="282" from="tmp_8" to="StgValue_62" fromId="59" toId="62">
 </dataflow>
 <dataflow id="283" from="i2" to="tmp_user_V" fromId="57" toId="63">
 </dataflow>
@@ -1584,7 +1584,7 @@
 </dataflow>
 <dataflow id="330" from="tmp_4" to="StgValue_3" fromId="45" toId="3">
 </dataflow>
-<dataflow id="331" from="tmp_7" to="StgValue_5" fromId="59" toId="5">
+<dataflow id="331" from="tmp_8" to="StgValue_5" fromId="59" toId="5">
 </dataflow>
 </dataflows>
 

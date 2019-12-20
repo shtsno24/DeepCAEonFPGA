@@ -193,7 +193,7 @@ struct network : public sc_module {
     sc_signal< sc_logic > ap_CS_fsm_state5;
     sc_signal< sc_lv<1> > tmp_user_V_fu_259_p2;
     sc_signal< sc_lv<1> > tmp_user_V_reg_310;
-    sc_signal< sc_lv<1> > tmp_7_fu_247_p2;
+    sc_signal< sc_lv<1> > tmp_8_fu_247_p2;
     sc_signal< sc_lv<1> > tmp_last_V_fu_265_p2;
     sc_signal< sc_lv<1> > tmp_last_V_reg_315;
     sc_signal< sc_lv<32> > tmp_data_V_1_fu_271_p1;
@@ -352,7 +352,7 @@ struct network : public sc_module {
     void thread_tmp_2_fu_220_p1();
     void thread_tmp_4_fu_225_p2();
     void thread_tmp_5_fu_237_p1();
-    void thread_tmp_7_fu_247_p2();
+    void thread_tmp_8_fu_247_p2();
     void thread_tmp_data_V_1_fu_271_p1();
     void thread_tmp_last_V_fu_265_p2();
     void thread_tmp_user_V_fu_259_p2();

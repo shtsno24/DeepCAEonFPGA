@@ -75918,9 +75918,10 @@ int network(axis &input_data, axis &output_data) {
 
 
 
- int16_t MemBank_A[14400], MemBank_B[14400], MemBank_Out[1 * 28 * 28];
+ int16_t MemBank_A[14400], MemBank_B[14400];
+ int32_t MemBank_Out[1 * 28 * 28];
 
- int16_t* array_head = (int16_t*)MemBank_Out;
+ int32_t* array_head = (int32_t*)MemBank_Out;
  uint64_t array_length = (uint64_t)SeparableConv2D_4_depth * SeparableConv2D_4_height * SeparableConv2D_4_width;
 
 
@@ -75931,10 +75932,10 @@ int network(axis &input_data, axis &output_data) {
   input_data >> tmp;
   MemBank_B[i] = (int16_t) tmp.data;
  }
-# 134 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
+# 135 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
  for(int i = 0; i < array_length; i++){
 
-  MemBank_Out[i] = MemBank_B[i];
+  MemBank_Out[i] = (int32_t)MemBank_B[i];
  }
 
  for(uint64_t i = 0; i < array_length; i++){
@@ -75970,7 +75971,7 @@ int main(void){
  for(int depth = 0; depth < 1; depth++){
   for(int height = 0; height < 28; height++){
    for(int width = 0; width < 28; width++){
-    tmp.data = (int16_t)test_input_fix16[depth][height][width];
+    tmp.data = (int32_t)test_input_fix16[depth][height][width];
 
     if(depth == 0 && height == 0 && width == 0){
      tmp.user = 1;

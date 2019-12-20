@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'network'
 ================================================================
-* Date:           Fri Dec 20 13:10:57 2019
+* Date:           Fri Dec 20 13:31:41 2019
 
 * Version:        2018.3.1 (Build 2489210 on Tue Mar 26 04:40:43 MDT 2019)
 * Project:        HLS
@@ -118,7 +118,7 @@
     |output_data_V_last_V_1_state_cmp_full  |   icmp   |      0|  0|   8|           2|           1|
     |output_data_V_user_V_1_state_cmp_full  |   icmp   |      0|  0|   8|           2|           1|
     |tmp_4_fu_225_p2                        |   icmp   |      0|  0|  13|          10|           9|
-    |tmp_7_fu_247_p2                        |   icmp   |      0|  0|  13|          10|           9|
+    |tmp_8_fu_247_p2                        |   icmp   |      0|  0|  13|          10|           9|
     |tmp_last_V_fu_265_p2                   |   icmp   |      0|  0|  13|          10|           9|
     |tmp_user_V_fu_259_p2                   |   icmp   |      0|  0|  13|          10|           1|
     |ap_block_state8                        |    or    |      0|  0|   2|           1|           1|

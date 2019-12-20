@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'network'" level="0">
-<item name = "Date">Fri Dec 20 13:10:57 2019
+<item name = "Date">Fri Dec 20 13:31:41 2019
 </item>
 <item name = "Version">2018.3.1 (Build 2489210 on Tue Mar 26 04:40:43 MDT 2019)</item>
 <item name = "Project">HLS</item>
@@ -101,7 +101,7 @@
 <column name="output_data_V_last_V_1_state_cmp_full">icmp, 0, 0, 8, 2, 1</column>
 <column name="output_data_V_user_V_1_state_cmp_full">icmp, 0, 0, 8, 2, 1</column>
 <column name="tmp_4_fu_225_p2">icmp, 0, 0, 13, 10, 9</column>
-<column name="tmp_7_fu_247_p2">icmp, 0, 0, 13, 10, 9</column>
+<column name="tmp_8_fu_247_p2">icmp, 0, 0, 13, 10, 9</column>
 <column name="tmp_last_V_fu_265_p2">icmp, 0, 0, 13, 10, 9</column>
 <column name="tmp_user_V_fu_259_p2">icmp, 0, 0, 13, 10, 1</column>
 <column name="ap_block_state8">or, 0, 0, 2, 1, 1</column>
