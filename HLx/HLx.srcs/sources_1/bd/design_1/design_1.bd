@@ -12,7 +12,6 @@
       "processing_system7_0": "",
       "rst_ps7_0_100M": "",
       "network_dma": {
-        "network_0": "",
         "axi_dma_in": "",
         "axi_dma_out": ""
       },
@@ -1744,10 +1743,6 @@
           }
         },
         "components": {
-          "network_0": {
-            "vlnv": "xilinx.com:hls:network:1.0",
-            "xci_name": "design_1_network_0_0"
-          },
           "axi_dma_in": {
             "vlnv": "xilinx.com:ip:axi_dma:7.1",
             "xci_name": "design_1_axi_dma_0_0",
@@ -1795,12 +1790,6 @@
           }
         },
         "interface_nets": {
-          "ps7_0_axi_periph_M00_AXI": {
-            "interface_ports": [
-              "s_axi_AXILiteS",
-              "network_0/s_axi_AXILiteS"
-            ]
-          },
           "axi_dma_out_M_AXI_S2MM": {
             "interface_ports": [
               "M_AXI_S2MM",
@@ -1825,15 +1814,9 @@
               "axi_dma_in/M_AXI_MM2S"
             ]
           },
-          "network_0_output_data": {
-            "interface_ports": [
-              "network_0/output_data",
-              "axi_dma_out/S_AXIS_S2MM"
-            ]
-          },
           "axi_dma_in_M_AXIS_MM2S": {
             "interface_ports": [
-              "network_0/input_data",
+              "axi_dma_out/S_AXIS_S2MM",
               "axi_dma_in/M_AXIS_MM2S"
             ]
           }
@@ -1845,16 +1828,14 @@
               "axi_dma_in/s_axi_lite_aclk",
               "axi_dma_out/s_axi_lite_aclk",
               "axi_dma_in/m_axi_mm2s_aclk",
-              "axi_dma_out/m_axi_s2mm_aclk",
-              "network_0/ap_clk"
+              "axi_dma_out/m_axi_s2mm_aclk"
             ]
           },
           "rst_ps7_0_100M_peripheral_aresetn": {
             "ports": [
               "axi_resetn",
               "axi_dma_in/axi_resetn",
-              "axi_dma_out/axi_resetn",
-              "network_0/ap_rst_n"
+              "axi_dma_out/axi_resetn"
             ]
           }
         }
@@ -2017,11 +1998,6 @@
               "SEG_axi_dma_in_Reg": {
                 "address_block": "/network_dma/axi_dma_in/S_AXI_LITE/Reg",
                 "offset": "0x40400000",
-                "range": "64K"
-              },
-              "SEG_network_0_Reg": {
-                "address_block": "/network_dma/network_0/s_axi_AXILiteS/Reg",
-                "offset": "0x43C00000",
                 "range": "64K"
               }
             }

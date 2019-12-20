@@ -197,82 +197,9 @@
 						"WVALID": { "actual": "s_axi_lite_wvalid"}
 					}
 				},
-				"/network_dma/network_0/input_data": {
-					"interface": "xilinx.com:interface:axis:1.0",
-					"ports": {
-						"ACLK": { "actual": "ap_clk"},
-						"ARESETN": { "actual": "ap_rst_n"},
-						"TDATA": { "actual": "input_data_TDATA"},
-						"TDEST": { "actual": "input_data_TDEST"},
-						"TID": { "actual": "input_data_TID"},
-						"TKEEP": { "actual": "input_data_TKEEP"},
-						"TLAST": { "actual": "input_data_TLAST"},
-						"TREADY": { "actual": "input_data_TREADY"},
-						"TSTRB": { "actual": "input_data_TSTRB"},
-						"TUSER": { "actual": "input_data_TUSER"},
-						"TVALID": { "actual": "input_data_TVALID"}
-					}
-				},
-				"/network_dma/network_0/output_data": {
-					"interface": "xilinx.com:interface:axis:1.0",
-					"ports": {
-						"ACLK": { "actual": "ap_clk"},
-						"ARESETN": { "actual": "ap_rst_n"},
-						"TDATA": { "actual": "output_data_TDATA"},
-						"TDEST": { "actual": "output_data_TDEST"},
-						"TID": { "actual": "output_data_TID"},
-						"TKEEP": { "actual": "output_data_TKEEP"},
-						"TLAST": { "actual": "output_data_TLAST"},
-						"TREADY": { "actual": "output_data_TREADY"},
-						"TSTRB": { "actual": "output_data_TSTRB"},
-						"TUSER": { "actual": "output_data_TUSER"},
-						"TVALID": { "actual": "output_data_TVALID"}
-					}
-				},
-				"/network_dma/network_0/s_axi_AXILiteS": {
-					"interface": "xilinx.com:interface:aximm:1.0",
-					"ports": {
-						"ACLK": { "actual": "ap_clk"},
-						"ARADDR": { "actual": "s_axi_AXILiteS_ARADDR"},
-						"ARESETN": { "actual": "ap_rst_n"},
-						"ARREADY": { "actual": "s_axi_AXILiteS_ARREADY"},
-						"ARVALID": { "actual": "s_axi_AXILiteS_ARVALID"},
-						"AWADDR": { "actual": "s_axi_AXILiteS_AWADDR"},
-						"AWREADY": { "actual": "s_axi_AXILiteS_AWREADY"},
-						"AWVALID": { "actual": "s_axi_AXILiteS_AWVALID"},
-						"BREADY": { "actual": "s_axi_AXILiteS_BREADY"},
-						"BRESP": { "actual": "s_axi_AXILiteS_BRESP"},
-						"BVALID": { "actual": "s_axi_AXILiteS_BVALID"},
-						"RDATA": { "actual": "s_axi_AXILiteS_RDATA"},
-						"RREADY": { "actual": "s_axi_AXILiteS_RREADY"},
-						"RRESP": { "actual": "s_axi_AXILiteS_RRESP"},
-						"RVALID": { "actual": "s_axi_AXILiteS_RVALID"},
-						"WDATA": { "actual": "s_axi_AXILiteS_WDATA"},
-						"WREADY": { "actual": "s_axi_AXILiteS_WREADY"},
-						"WSTRB": { "actual": "s_axi_AXILiteS_WSTRB"},
-						"WVALID": { "actual": "s_axi_AXILiteS_WVALID"}
-					}
-				},
 				"/network_dma/s_axi_AXILiteS": {
 					"interface": "xilinx.com:interface:aximm:1.0",
 					"ports": {
-						"ARADDR": { "actual": "s_axi_AXILiteS_araddr"},
-						"ARREADY": { "actual": "s_axi_AXILiteS_arready"},
-						"ARVALID": { "actual": "s_axi_AXILiteS_arvalid"},
-						"AWADDR": { "actual": "s_axi_AXILiteS_awaddr"},
-						"AWREADY": { "actual": "s_axi_AXILiteS_awready"},
-						"AWVALID": { "actual": "s_axi_AXILiteS_awvalid"},
-						"BREADY": { "actual": "s_axi_AXILiteS_bready"},
-						"BRESP": { "actual": "s_axi_AXILiteS_bresp"},
-						"BVALID": { "actual": "s_axi_AXILiteS_bvalid"},
-						"RDATA": { "actual": "s_axi_AXILiteS_rdata"},
-						"RREADY": { "actual": "s_axi_AXILiteS_rready"},
-						"RRESP": { "actual": "s_axi_AXILiteS_rresp"},
-						"RVALID": { "actual": "s_axi_AXILiteS_rvalid"},
-						"WDATA": { "actual": "s_axi_AXILiteS_wdata"},
-						"WREADY": { "actual": "s_axi_AXILiteS_wready"},
-						"WSTRB": { "actual": "s_axi_AXILiteS_wstrb"},
-						"WVALID": { "actual": "s_axi_AXILiteS_wvalid"}
 					}
 				},
 				"/processing_system7_0/M_AXI_GP0": {

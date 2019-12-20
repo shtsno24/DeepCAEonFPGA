@@ -190,21 +190,16 @@ proc create_hier_cell_network_dma { parentCell nameHier } {
    CONFIG.c_sg_length_width {26} \
  ] $axi_dma_out
 
-  # Create instance: network_0, and set properties
-  set network_0 [ create_bd_cell -type ip -vlnv xilinx.com:hls:network:1.0 network_0 ]
-
   # Create interface connections
-  connect_bd_intf_net -intf_net axi_dma_in_M_AXIS_MM2S [get_bd_intf_pins axi_dma_in/M_AXIS_MM2S] [get_bd_intf_pins network_0/input_data]
+  connect_bd_intf_net -intf_net axi_dma_in_M_AXIS_MM2S [get_bd_intf_pins axi_dma_in/M_AXIS_MM2S] [get_bd_intf_pins axi_dma_out/S_AXIS_S2MM]
   connect_bd_intf_net -intf_net axi_dma_in_M_AXI_MM2S [get_bd_intf_pins M_AXI_MM2S] [get_bd_intf_pins axi_dma_in/M_AXI_MM2S]
   connect_bd_intf_net -intf_net axi_dma_out_M_AXI_S2MM [get_bd_intf_pins M_AXI_S2MM] [get_bd_intf_pins axi_dma_out/M_AXI_S2MM]
-  connect_bd_intf_net -intf_net network_0_output_data [get_bd_intf_pins axi_dma_out/S_AXIS_S2MM] [get_bd_intf_pins network_0/output_data]
-  connect_bd_intf_net -intf_net ps7_0_axi_periph_M00_AXI [get_bd_intf_pins s_axi_AXILiteS] [get_bd_intf_pins network_0/s_axi_AXILiteS]
   connect_bd_intf_net -intf_net ps7_0_axi_periph_M01_AXI [get_bd_intf_pins S_AXI_LITE] [get_bd_intf_pins axi_dma_in/S_AXI_LITE]
   connect_bd_intf_net -intf_net ps7_0_axi_periph_M02_AXI [get_bd_intf_pins S_AXI_LITE1] [get_bd_intf_pins axi_dma_out/S_AXI_LITE]
 
   # Create port connections
-  connect_bd_net -net processing_system7_0_FCLK_CLK0 [get_bd_pins s_axi_lite_aclk] [get_bd_pins axi_dma_in/m_axi_mm2s_aclk] [get_bd_pins axi_dma_in/s_axi_lite_aclk] [get_bd_pins axi_dma_out/m_axi_s2mm_aclk] [get_bd_pins axi_dma_out/s_axi_lite_aclk] [get_bd_pins network_0/ap_clk]
-  connect_bd_net -net rst_ps7_0_100M_peripheral_aresetn [get_bd_pins axi_resetn] [get_bd_pins axi_dma_in/axi_resetn] [get_bd_pins axi_dma_out/axi_resetn] [get_bd_pins network_0/ap_rst_n]
+  connect_bd_net -net processing_system7_0_FCLK_CLK0 [get_bd_pins s_axi_lite_aclk] [get_bd_pins axi_dma_in/m_axi_mm2s_aclk] [get_bd_pins axi_dma_in/s_axi_lite_aclk] [get_bd_pins axi_dma_out/m_axi_s2mm_aclk] [get_bd_pins axi_dma_out/s_axi_lite_aclk]
+  connect_bd_net -net rst_ps7_0_100M_peripheral_aresetn [get_bd_pins axi_resetn] [get_bd_pins axi_dma_in/axi_resetn] [get_bd_pins axi_dma_out/axi_resetn]
 
   # Restore current instance
   current_bd_instance $oldCurInst
@@ -1147,7 +1142,6 @@ proc create_root_design { parentCell } {
   # Create address segments
   create_bd_addr_seg -range 0x00010000 -offset 0x40410000 [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs network_dma/axi_dma_out/S_AXI_LITE/Reg] SEG_axi_dma_0_Reg
   create_bd_addr_seg -range 0x00010000 -offset 0x40400000 [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs network_dma/axi_dma_in/S_AXI_LITE/Reg] SEG_axi_dma_in_Reg
-  create_bd_addr_seg -range 0x00010000 -offset 0x43C00000 [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs network_dma/network_0/s_axi_AXILiteS/Reg] SEG_network_0_Reg
   create_bd_addr_seg -range 0x20000000 -offset 0x00000000 [get_bd_addr_spaces network_dma/axi_dma_in/Data_MM2S] [get_bd_addr_segs processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM] SEG_processing_system7_0_HP0_DDR_LOWOCM
   create_bd_addr_seg -range 0x20000000 -offset 0x00000000 [get_bd_addr_spaces network_dma/axi_dma_out/Data_S2MM] [get_bd_addr_segs processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM] SEG_processing_system7_0_HP0_DDR_LOWOCM
 
