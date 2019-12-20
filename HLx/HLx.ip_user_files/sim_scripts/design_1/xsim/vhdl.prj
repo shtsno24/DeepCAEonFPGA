@@ -2,6 +2,5 @@ vhdl xil_defaultlib  \
 "../../../bd/design_1/ip/design_1_axi_dma_in_0/sim/design_1_axi_dma_in_0.vhd" \
 "../../../bd/design_1/ip/design_1_axi_dma_out_0/sim/design_1_axi_dma_out_0.vhd" \
 "../../../bd/design_1/ip/design_1_rst_ps7_0_100M_2/sim/design_1_rst_ps7_0_100M_2.vhd" \
-"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_26/sim/bd_48ac_psr_aclk_0.vhd" \
 
 nosort

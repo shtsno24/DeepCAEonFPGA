@@ -1,7 +1,7 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.3.1 (lin64) Build 2489853 Tue Mar 26 04:18:30 MDT 2019
--- Date        : Fri Dec 20 18:29:22 2019
+-- Date        : Fri Dec 20 20:15:01 2019
 -- Host        : masudalab-ubuntu running 64-bit Ubuntu 18.04.3 LTS
 -- Command     : write_vhdl -force -mode funcsim
 --               /home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0_sim_netlist.vhdl
@@ -3448,6 +3448,7 @@ entity design_1_processing_system7_0_0 is
     S_AXI_HP0_WSTRB : in STD_LOGIC_VECTOR ( 7 downto 0 );
     FCLK_CLK0 : out STD_LOGIC;
     FCLK_RESET0_N : out STD_LOGIC;
+    FPGA_IDLE_N : in STD_LOGIC;
     MIO : inout STD_LOGIC_VECTOR ( 53 downto 0 );
     DDR_CAS_n : inout STD_LOGIC;
     DDR_CKE : inout STD_LOGIC;
@@ -4124,7 +4125,7 @@ inst: entity work.design_1_processing_system7_0_0_processing_system7_v5_5_proces
       FCLK_RESET1_N => NLW_inst_FCLK_RESET1_N_UNCONNECTED,
       FCLK_RESET2_N => NLW_inst_FCLK_RESET2_N_UNCONNECTED,
       FCLK_RESET3_N => NLW_inst_FCLK_RESET3_N_UNCONNECTED,
-      FPGA_IDLE_N => '0',
+      FPGA_IDLE_N => FPGA_IDLE_N,
       FTMD_TRACEIN_ATID(3 downto 0) => B"0000",
       FTMD_TRACEIN_CLK => '0',
       FTMD_TRACEIN_DATA(31 downto 0) => B"00000000000000000000000000000000",
