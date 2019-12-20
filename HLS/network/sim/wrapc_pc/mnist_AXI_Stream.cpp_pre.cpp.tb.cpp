@@ -1,5 +1,5 @@
 // ==============================================================
-// File generated on Fri Dec 20 13:33:30 JST 2019
+// File generated on Fri Dec 20 13:59:01 JST 2019
 // Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3.1 (64-bit)
 // SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
 // IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
@@ -75929,17 +75929,29 @@ int network(axis &input_data, axis &output_data) {
  int32_t MemBank_Out[1 * 28 * 28];
 
  int32_t* array_head = (int32_t*)MemBank_Out;
- uint64_t array_length = (uint64_t)SeparableConv2D_4_depth * SeparableConv2D_4_height * SeparableConv2D_4_width;
+ const uint64_t array_length = (uint64_t)SeparableConv2D_4_depth * SeparableConv2D_4_height * SeparableConv2D_4_width;
 
+ hls::stream< int16_t> input_buffer;
+#pragma HLS STREAM variable=input_buffer depth=784
 
  ap_axis<32, 1, 1, 1> tmp;
  ap_axis<32, 1, 1, 1> out;
+ int16_t trash;
+
+ uint16_t i = 0;
+ do {
+  input_data >> tmp;
+  if(i >= array_length){
+   input_buffer >> trash;
+  }
+  input_buffer << (int16_t)tmp.data;
+  i += 1;
+ } while(tmp.last != 1);
 
  for(int i = 0; i < input_0_depth * input_0_height * input_0_width; i++){
-  input_data >> tmp;
-  MemBank_B[i] = (int16_t) tmp.data;
+  input_buffer >> MemBank_B[i];
  }
-#135 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
+#152 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
  for(int i = 0; i < array_length; i++){
 
   MemBank_Out[i] = (int32_t)MemBank_B[i];
@@ -75968,13 +75980,13 @@ int network(axis &input_data, axis &output_data) {
 
 
 #ifndef HLS_FASTSIM
-#161 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
+#178 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
 
 #ifndef HLS_FASTSIM
 #include "apatb_network.h"
 #endif
 
-#161 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
+#178 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
 int main(void){
  axis input_buffer;
  axis output_buffer;
@@ -76016,19 +76028,19 @@ int main(void){
 #define network AESL_WRAP_network
 #endif
 
-#197 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
+#214 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
 
 #ifndef HLS_FASTSIM
 #define network AESL_WRAP_network
 #endif
 
-#197 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
+#214 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
 network
 #undef network
-#197 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
+#214 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
 
 #undef network
-#197 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
+#214 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
 (input_buffer, output_buffer);
 
  cout << "\r\n";
@@ -76055,4 +76067,4 @@ network
  return 0;
 }
 #endif
-#221 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
+#238 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"

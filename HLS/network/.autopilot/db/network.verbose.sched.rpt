@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'network'
 ================================================================
-* Date:           Fri Dec 20 13:31:41 2019
+* Date:           Fri Dec 20 13:58:11 2019
 
 * Version:        2018.3.1 (Build 2489210 on Tue Mar 26 04:40:43 MDT 2019)
 * Project:        HLS
@@ -20,17 +20,17 @@
     +--------+-------+----------+------------+
     |  Clock | Target| Estimated| Uncertainty|
     +--------+-------+----------+------------+
-    |ap_clk  |  10.00|     6.508|        1.25|
+    |ap_clk  |  10.00|     6.847|        1.25|
     +--------+-------+----------+------------+
 
 + Latency (clock cycles): 
     * Summary: 
-    +------+------+------+------+---------+
-    |   Latency   |   Interval  | Pipeline|
-    |  min |  max |  min |  max |   Type  |
-    +------+------+------+------+---------+
-    |  4708|  4708|  4708|  4708|   none  |
-    +------+------+------+------+---------+
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    ?|    ?|    ?|    ?|   none  |
+    +-----+-----+-----+-----+---------+
 
     + Detail: 
         * Instance: 
@@ -41,9 +41,10 @@
         |          |   Latency   | Iteration|  Initiation Interval  | Trip |          |
         | Loop Name|  min |  max |  Latency |  achieved |   target  | Count| Pipelined|
         +----------+------+------+----------+-----------+-----------+------+----------+
-        |- Loop 1  |   784|   784|         1|          -|          -|   784|    no    |
-        |- Loop 2  |  1568|  1568|         2|          -|          -|   784|    no    |
-        |- Loop 3  |  2352|  2352|         3|          -|          -|   784|    no    |
+        |- Loop 1  |     ?|     ?|         1|          -|          -|     ?|    no    |
+        |- Loop 2  |   784|   784|         1|          -|          -|   784|    no    |
+        |- Loop 3  |  1568|  1568|         2|          -|          -|   784|    no    |
+        |- Loop 4  |  2352|  2352|         3|          -|          -|   784|    no    |
         +----------+------+------+----------+-----------+-----------+------+----------+
 
 ============================================================
@@ -72,7 +73,7 @@ IsGatedGlobalClock: 0
 ============================================================
 + Verbose Summary: Schedule
 ============================================================
-* Number of FSM states : 8
+* Number of FSM states : 9
 * Pipeline : 0
 * Dataflow Pipeline: 0
 
@@ -80,104 +81,123 @@ IsGatedGlobalClock: 0
 1 --> 
 	2  / true
 2 --> 
-	2  / (!exitcond)
-	3  / (exitcond)
+	2  / (!tmp_last_V)
+	3  / (tmp_last_V)
 3 --> 
-	4  / (!tmp_4)
-	5  / (tmp_4)
+	3  / (!exitcond)
+	4  / (exitcond)
 4 --> 
-	3  / true
+	5  / (!tmp_9)
+	6  / (tmp_9)
 5 --> 
-	6  / (!tmp_8)
-	8  / (tmp_8)
+	4  / true
 6 --> 
-	7  / true
+	7  / (!tmp_7)
+	9  / (tmp_7)
 7 --> 
-	5  / true
+	8  / true
 8 --> 
+	6  / true
+9 --> 
 
 * FSM state operations: 
 
 State 1 <SV = 0> <Delay = 1.76>
-ST_1 : Operation 9 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %input_data_V_data_V), !map !119"   --->   Operation 9 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 10 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i4* %input_data_V_keep_V), !map !123"   --->   Operation 10 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 11 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i4* %input_data_V_strb_V), !map !127"   --->   Operation 11 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 12 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %input_data_V_user_V), !map !131"   --->   Operation 12 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 13 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %input_data_V_last_V), !map !135"   --->   Operation 13 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 14 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %input_data_V_id_V), !map !139"   --->   Operation 14 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 15 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %input_data_V_dest_V), !map !143"   --->   Operation 15 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 16 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %output_data_V_data_V), !map !147"   --->   Operation 16 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 17 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i4* %output_data_V_keep_V), !map !151"   --->   Operation 17 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 18 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i4* %output_data_V_strb_V), !map !155"   --->   Operation 18 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 19 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %output_data_V_user_V), !map !159"   --->   Operation 19 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 20 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %output_data_V_last_V), !map !163"   --->   Operation 20 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 21 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %output_data_V_id_V), !map !167"   --->   Operation 21 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 22 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %output_data_V_dest_V), !map !171"   --->   Operation 22 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 23 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32 0) nounwind, !map !175"   --->   Operation 23 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 24 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([8 x i8]* @network_str) nounwind"   --->   Operation 24 'spectopmodule' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%MemBank_B = alloca [14400 x i16], align 16" [mnist_AXI_Stream.cpp:34]   --->   Operation 25 'alloca' 'MemBank_B' <Predicate = true> <Delay = 0.00> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 784> <RAM>
-ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%MemBank_Out = alloca [784 x i16], align 2" [mnist_AXI_Stream.cpp:35]   --->   Operation 26 'alloca' 'MemBank_Out' <Predicate = true> <Delay = 0.00> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 784> <RAM>
-ST_1 : Operation 27 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %input_data_V_data_V, i4* %input_data_V_keep_V, i4* %input_data_V_strb_V, i1* %input_data_V_user_V, i1* %input_data_V_last_V, i1* %input_data_V_id_V, i1* %input_data_V_dest_V, [5 x i8]* @p_str5, i32 1, i32 1, [5 x i8]* @p_str16, i32 0, i32 0, [1 x i8]* @p_str27, [1 x i8]* @p_str27, [1 x i8]* @p_str27, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str27, [1 x i8]* @p_str27) nounwind" [mnist_AXI_Stream.cpp:28]   --->   Operation 27 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 28 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %output_data_V_data_V, i4* %output_data_V_keep_V, i4* %output_data_V_strb_V, i1* %output_data_V_user_V, i1* %output_data_V_last_V, i1* %output_data_V_id_V, i1* %output_data_V_dest_V, [5 x i8]* @p_str5, i32 1, i32 1, [5 x i8]* @p_str16, i32 0, i32 0, [1 x i8]* @p_str27, [1 x i8]* @p_str27, [1 x i8]* @p_str27, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str27, [1 x i8]* @p_str27) nounwind" [mnist_AXI_Stream.cpp:29]   --->   Operation 28 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 29 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 0, [10 x i8]* @p_str3, i32 1, i32 1, [1 x i8]* @p_str27, i32 0, i32 0, [1 x i8]* @p_str27, [1 x i8]* @p_str27, [1 x i8]* @p_str27, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str27, [1 x i8]* @p_str27) nounwind" [mnist_AXI_Stream.cpp:30]   --->   Operation 29 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 30 [1/1] (1.76ns)   --->   "br label %1" [mnist_AXI_Stream.cpp:44]   --->   Operation 30 'br' <Predicate = true> <Delay = 1.76>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %input_data_V_data_V), !map !125"   --->   Operation 10 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i4* %input_data_V_keep_V), !map !129"   --->   Operation 11 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i4* %input_data_V_strb_V), !map !133"   --->   Operation 12 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %input_data_V_user_V), !map !137"   --->   Operation 13 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %input_data_V_last_V), !map !141"   --->   Operation 14 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %input_data_V_id_V), !map !145"   --->   Operation 15 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %input_data_V_dest_V), !map !149"   --->   Operation 16 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %output_data_V_data_V), !map !153"   --->   Operation 17 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i4* %output_data_V_keep_V), !map !157"   --->   Operation 18 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i4* %output_data_V_strb_V), !map !161"   --->   Operation 19 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %output_data_V_user_V), !map !165"   --->   Operation 20 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %output_data_V_last_V), !map !169"   --->   Operation 21 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %output_data_V_id_V), !map !173"   --->   Operation 22 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %output_data_V_dest_V), !map !177"   --->   Operation 23 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32 0) nounwind, !map !181"   --->   Operation 24 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([8 x i8]* @network_str) nounwind"   --->   Operation 25 'spectopmodule' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%MemBank_B = alloca [14400 x i16], align 16" [mnist_AXI_Stream.cpp:34]   --->   Operation 26 'alloca' 'MemBank_B' <Predicate = true> <Delay = 0.00> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 784> <RAM>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%MemBank_Out = alloca [784 x i16], align 2" [mnist_AXI_Stream.cpp:35]   --->   Operation 27 'alloca' 'MemBank_Out' <Predicate = true> <Delay = 0.00> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 784> <RAM>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%input_buffer_V = alloca i16, align 2" [mnist_AXI_Stream.cpp:40]   --->   Operation 28 'alloca' 'input_buffer_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.59> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 784> <FIFO>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecChannel([15 x i8]* @input_buffer_OC_V_st, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 784, i32 784, i16* %input_buffer_V, i16* %input_buffer_V)"   --->   Operation 29 'specchannel' 'empty' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %input_buffer_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 30 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %input_data_V_data_V, i4* %input_data_V_keep_V, i4* %input_data_V_strb_V, i1* %input_data_V_user_V, i1* %input_data_V_last_V, i1* %input_data_V_id_V, i1* %input_data_V_dest_V, [5 x i8]* @p_str5, i32 1, i32 1, [5 x i8]* @p_str16, i32 0, i32 0, [1 x i8]* @p_str27, [1 x i8]* @p_str27, [1 x i8]* @p_str27, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str27, [1 x i8]* @p_str27) nounwind" [mnist_AXI_Stream.cpp:28]   --->   Operation 31 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %output_data_V_data_V, i4* %output_data_V_keep_V, i4* %output_data_V_strb_V, i1* %output_data_V_user_V, i1* %output_data_V_last_V, i1* %output_data_V_id_V, i1* %output_data_V_dest_V, [5 x i8]* @p_str5, i32 1, i32 1, [5 x i8]* @p_str16, i32 0, i32 0, [1 x i8]* @p_str27, [1 x i8]* @p_str27, [1 x i8]* @p_str27, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str27, [1 x i8]* @p_str27) nounwind" [mnist_AXI_Stream.cpp:29]   --->   Operation 32 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 0, [10 x i8]* @p_str3, i32 1, i32 1, [1 x i8]* @p_str27, i32 0, i32 0, [1 x i8]* @p_str27, [1 x i8]* @p_str27, [1 x i8]* @p_str27, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str27, [1 x i8]* @p_str27) nounwind" [mnist_AXI_Stream.cpp:30]   --->   Operation 33 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 34 [1/1] (1.76ns)   --->   "br label %._crit_edge149" [mnist_AXI_Stream.cpp:48]   --->   Operation 34 'br' <Predicate = true> <Delay = 1.76>
 
-State 2 <SV = 1> <Delay = 3.25>
-ST_2 : Operation 31 [1/1] (0.00ns)   --->   "%i = phi i10 [ 0, %0 ], [ %i_1, %2 ]"   --->   Operation 31 'phi' 'i' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 32 [1/1] (1.77ns)   --->   "%exitcond = icmp eq i10 %i, -240" [mnist_AXI_Stream.cpp:44]   --->   Operation 32 'icmp' 'exitcond' <Predicate = true> <Delay = 1.77> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.77> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 33 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 784, i64 784, i64 784)"   --->   Operation 33 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 34 [1/1] (1.73ns)   --->   "%i_1 = add i10 %i, 1" [mnist_AXI_Stream.cpp:44]   --->   Operation 34 'add' 'i_1' <Predicate = true> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 35 [1/1] (0.00ns)   --->   "br i1 %exitcond, label %.preheader87.preheader, label %2" [mnist_AXI_Stream.cpp:44]   --->   Operation 35 'br' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 36 [1/1] (0.00ns)   --->   "%empty_3 = call { i32, i4, i4, i1, i1, i1, i1 } @_ssdm_op_Read.axis.volatile.i32P.i4P.i4P.i1P.i1P.i1P.i1P(i32* %input_data_V_data_V, i4* %input_data_V_keep_V, i4* %input_data_V_strb_V, i1* %input_data_V_user_V, i1* %input_data_V_last_V, i1* %input_data_V_id_V, i1* %input_data_V_dest_V)" [mnist_AXI_Stream.cpp:45]   --->   Operation 36 'read' 'empty_3' <Predicate = (!exitcond)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
-ST_2 : Operation 37 [1/1] (0.00ns)   --->   "%tmp_data_V = extractvalue { i32, i4, i4, i1, i1, i1, i1 } %empty_3, 0" [mnist_AXI_Stream.cpp:45]   --->   Operation 37 'extractvalue' 'tmp_data_V' <Predicate = (!exitcond)> <Delay = 0.00>
-ST_2 : Operation 38 [1/1] (0.00ns)   --->   "%tmp = trunc i32 %tmp_data_V to i16" [mnist_AXI_Stream.cpp:46]   --->   Operation 38 'trunc' 'tmp' <Predicate = (!exitcond)> <Delay = 0.00>
-ST_2 : Operation 39 [1/1] (0.00ns)   --->   "%tmp_2 = zext i10 %i to i64" [mnist_AXI_Stream.cpp:46]   --->   Operation 39 'zext' 'tmp_2' <Predicate = (!exitcond)> <Delay = 0.00>
-ST_2 : Operation 40 [1/1] (0.00ns)   --->   "%MemBank_B_addr = getelementptr inbounds [14400 x i16]* %MemBank_B, i64 0, i64 %tmp_2" [mnist_AXI_Stream.cpp:46]   --->   Operation 40 'getelementptr' 'MemBank_B_addr' <Predicate = (!exitcond)> <Delay = 0.00>
-ST_2 : Operation 41 [1/1] (3.25ns)   --->   "store i16 %tmp, i16* %MemBank_B_addr, align 2" [mnist_AXI_Stream.cpp:46]   --->   Operation 41 'store' <Predicate = (!exitcond)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 784> <RAM>
-ST_2 : Operation 42 [1/1] (0.00ns)   --->   "br label %1" [mnist_AXI_Stream.cpp:44]   --->   Operation 42 'br' <Predicate = (!exitcond)> <Delay = 0.00>
-ST_2 : Operation 43 [1/1] (1.76ns)   --->   "br label %.preheader87" [mnist_AXI_Stream.cpp:135]   --->   Operation 43 'br' <Predicate = (exitcond)> <Delay = 1.76>
+State 2 <SV = 1> <Delay = 3.59>
+ST_2 : Operation 35 [1/1] (0.00ns)   --->   "%i = phi i16 [ 0, %0 ], [ %i_1, %._crit_edge ]"   --->   Operation 35 'phi' 'i' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 36 [1/1] (0.00ns)   --->   "%empty_4 = call { i32, i4, i4, i1, i1, i1, i1 } @_ssdm_op_Read.axis.volatile.i32P.i4P.i4P.i1P.i1P.i1P.i1P(i32* %input_data_V_data_V, i4* %input_data_V_keep_V, i4* %input_data_V_strb_V, i1* %input_data_V_user_V, i1* %input_data_V_last_V, i1* %input_data_V_id_V, i1* %input_data_V_dest_V)" [mnist_AXI_Stream.cpp:49]   --->   Operation 36 'read' 'empty_4' <Predicate = true> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_2 : Operation 37 [1/1] (0.00ns)   --->   "%tmp_data_V = extractvalue { i32, i4, i4, i1, i1, i1, i1 } %empty_4, 0" [mnist_AXI_Stream.cpp:49]   --->   Operation 37 'extractvalue' 'tmp_data_V' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 38 [1/1] (0.00ns)   --->   "%tmp_last_V = extractvalue { i32, i4, i4, i1, i1, i1, i1 } %empty_4, 4" [mnist_AXI_Stream.cpp:49]   --->   Operation 38 'extractvalue' 'tmp_last_V' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 39 [1/1] (2.42ns)   --->   "%tmp_1 = icmp ugt i16 %i, 783" [mnist_AXI_Stream.cpp:50]   --->   Operation 39 'icmp' 'tmp_1' <Predicate = true> <Delay = 2.42> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.77> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 40 [1/1] (2.07ns)   --->   "%i_1 = add i16 %i, 1" [mnist_AXI_Stream.cpp:54]   --->   Operation 40 'add' 'i_1' <Predicate = true> <Delay = 2.07> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 41 [1/1] (0.00ns)   --->   "br i1 %tmp_1, label %1, label %._crit_edge" [mnist_AXI_Stream.cpp:50]   --->   Operation 41 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 42 [1/1] (3.59ns)   --->   "%tmp_0 = call i16 @_ssdm_op_Read.ap_fifo.volatile.i16P(i16* %input_buffer_V)" [mnist_AXI_Stream.cpp:51]   --->   Operation 42 'read' 'tmp_0' <Predicate = (tmp_1)> <Delay = 3.59> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.59> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 784> <FIFO>
+ST_2 : Operation 43 [1/1] (0.00ns)   --->   "br label %._crit_edge" [mnist_AXI_Stream.cpp:52]   --->   Operation 43 'br' <Predicate = (tmp_1)> <Delay = 0.00>
+ST_2 : Operation 44 [1/1] (0.00ns)   --->   "%tmp = trunc i32 %tmp_data_V to i16" [mnist_AXI_Stream.cpp:53]   --->   Operation 44 'trunc' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 45 [1/1] (3.59ns)   --->   "call void @_ssdm_op_Write.ap_fifo.volatile.i16P(i16* %input_buffer_V, i16 %tmp)" [mnist_AXI_Stream.cpp:53]   --->   Operation 45 'write' <Predicate = true> <Delay = 3.59> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.59> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 784> <FIFO>
+ST_2 : Operation 46 [1/1] (0.00ns)   --->   "br i1 %tmp_last_V, label %.preheader117.preheader, label %._crit_edge149" [mnist_AXI_Stream.cpp:55]   --->   Operation 46 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 47 [1/1] (1.76ns)   --->   "br label %.preheader117" [mnist_AXI_Stream.cpp:57]   --->   Operation 47 'br' <Predicate = (tmp_last_V)> <Delay = 1.76>
 
-State 3 <SV = 2> <Delay = 3.25>
-ST_3 : Operation 44 [1/1] (0.00ns)   --->   "%i1 = phi i10 [ %i_2, %3 ], [ 0, %.preheader87.preheader ]"   --->   Operation 44 'phi' 'i1' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 45 [1/1] (1.77ns)   --->   "%tmp_4 = icmp eq i10 %i1, -240" [mnist_AXI_Stream.cpp:135]   --->   Operation 45 'icmp' 'tmp_4' <Predicate = true> <Delay = 1.77> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.77> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 46 [1/1] (0.00ns)   --->   "%empty_4 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 784, i64 784, i64 784)"   --->   Operation 46 'speclooptripcount' 'empty_4' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 47 [1/1] (1.73ns)   --->   "%i_2 = add i10 %i1, 1" [mnist_AXI_Stream.cpp:135]   --->   Operation 47 'add' 'i_2' <Predicate = true> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 48 [1/1] (0.00ns)   --->   "br i1 %tmp_4, label %.preheader.preheader, label %3" [mnist_AXI_Stream.cpp:135]   --->   Operation 48 'br' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 49 [1/1] (0.00ns)   --->   "%tmp_5 = zext i10 %i1 to i64" [mnist_AXI_Stream.cpp:137]   --->   Operation 49 'zext' 'tmp_5' <Predicate = (!tmp_4)> <Delay = 0.00>
-ST_3 : Operation 50 [1/1] (0.00ns)   --->   "%MemBank_B_addr_1 = getelementptr inbounds [14400 x i16]* %MemBank_B, i64 0, i64 %tmp_5" [mnist_AXI_Stream.cpp:137]   --->   Operation 50 'getelementptr' 'MemBank_B_addr_1' <Predicate = (!tmp_4)> <Delay = 0.00>
-ST_3 : Operation 51 [2/2] (3.25ns)   --->   "%MemBank_B_load = load i16* %MemBank_B_addr_1, align 2" [mnist_AXI_Stream.cpp:137]   --->   Operation 51 'load' 'MemBank_B_load' <Predicate = (!tmp_4)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 784> <RAM>
-ST_3 : Operation 52 [1/1] (1.76ns)   --->   "br label %.preheader" [mnist_AXI_Stream.cpp:140]   --->   Operation 52 'br' <Predicate = (tmp_4)> <Delay = 1.76>
+State 3 <SV = 2> <Delay = 6.84>
+ST_3 : Operation 48 [1/1] (0.00ns)   --->   "%i1 = phi i10 [ %i_2, %2 ], [ 0, %.preheader117.preheader ]"   --->   Operation 48 'phi' 'i1' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 49 [1/1] (1.77ns)   --->   "%exitcond = icmp eq i10 %i1, -240" [mnist_AXI_Stream.cpp:57]   --->   Operation 49 'icmp' 'exitcond' <Predicate = true> <Delay = 1.77> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.77> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 50 [1/1] (0.00ns)   --->   "%empty_5 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 784, i64 784, i64 784)"   --->   Operation 50 'speclooptripcount' 'empty_5' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 51 [1/1] (1.73ns)   --->   "%i_2 = add i10 %i1, 1" [mnist_AXI_Stream.cpp:57]   --->   Operation 51 'add' 'i_2' <Predicate = true> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 52 [1/1] (0.00ns)   --->   "br i1 %exitcond, label %.preheader116.preheader, label %2" [mnist_AXI_Stream.cpp:57]   --->   Operation 52 'br' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 53 [1/1] (0.00ns)   --->   "%tmp_6 = zext i10 %i1 to i64" [mnist_AXI_Stream.cpp:58]   --->   Operation 53 'zext' 'tmp_6' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_3 : Operation 54 [1/1] (0.00ns)   --->   "%MemBank_B_addr_1 = getelementptr inbounds [14400 x i16]* %MemBank_B, i64 0, i64 %tmp_6" [mnist_AXI_Stream.cpp:58]   --->   Operation 54 'getelementptr' 'MemBank_B_addr_1' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_3 : Operation 55 [1/1] (3.59ns)   --->   "%tmp_2 = call i16 @_ssdm_op_Read.ap_fifo.volatile.i16P(i16* %input_buffer_V)" [mnist_AXI_Stream.cpp:58]   --->   Operation 55 'read' 'tmp_2' <Predicate = (!exitcond)> <Delay = 3.59> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.59> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 784> <FIFO>
+ST_3 : Operation 56 [1/1] (3.25ns)   --->   "store i16 %tmp_2, i16* %MemBank_B_addr_1, align 2" [mnist_AXI_Stream.cpp:58]   --->   Operation 56 'store' <Predicate = (!exitcond)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 784> <RAM>
+ST_3 : Operation 57 [1/1] (0.00ns)   --->   "br label %.preheader117" [mnist_AXI_Stream.cpp:57]   --->   Operation 57 'br' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_3 : Operation 58 [1/1] (1.76ns)   --->   "br label %.preheader116" [mnist_AXI_Stream.cpp:152]   --->   Operation 58 'br' <Predicate = (exitcond)> <Delay = 1.76>
 
-State 4 <SV = 3> <Delay = 6.50>
-ST_4 : Operation 53 [1/2] (3.25ns)   --->   "%MemBank_B_load = load i16* %MemBank_B_addr_1, align 2" [mnist_AXI_Stream.cpp:137]   --->   Operation 53 'load' 'MemBank_B_load' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 784> <RAM>
-ST_4 : Operation 54 [1/1] (0.00ns)   --->   "%MemBank_Out_addr = getelementptr [784 x i16]* %MemBank_Out, i64 0, i64 %tmp_5" [mnist_AXI_Stream.cpp:137]   --->   Operation 54 'getelementptr' 'MemBank_Out_addr' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 55 [1/1] (3.25ns)   --->   "store i16 %MemBank_B_load, i16* %MemBank_Out_addr, align 2" [mnist_AXI_Stream.cpp:137]   --->   Operation 55 'store' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 784> <RAM>
-ST_4 : Operation 56 [1/1] (0.00ns)   --->   "br label %.preheader87" [mnist_AXI_Stream.cpp:135]   --->   Operation 56 'br' <Predicate = true> <Delay = 0.00>
+State 4 <SV = 3> <Delay = 3.25>
+ST_4 : Operation 59 [1/1] (0.00ns)   --->   "%i2 = phi i10 [ %i_3, %3 ], [ 0, %.preheader116.preheader ]"   --->   Operation 59 'phi' 'i2' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 60 [1/1] (1.77ns)   --->   "%tmp_9 = icmp eq i10 %i2, -240" [mnist_AXI_Stream.cpp:152]   --->   Operation 60 'icmp' 'tmp_9' <Predicate = true> <Delay = 1.77> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.77> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 61 [1/1] (0.00ns)   --->   "%empty_6 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 784, i64 784, i64 784)"   --->   Operation 61 'speclooptripcount' 'empty_6' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 62 [1/1] (1.73ns)   --->   "%i_3 = add i10 %i2, 1" [mnist_AXI_Stream.cpp:152]   --->   Operation 62 'add' 'i_3' <Predicate = true> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 63 [1/1] (0.00ns)   --->   "br i1 %tmp_9, label %.preheader.preheader, label %3" [mnist_AXI_Stream.cpp:152]   --->   Operation 63 'br' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 64 [1/1] (0.00ns)   --->   "%tmp_s = zext i10 %i2 to i64" [mnist_AXI_Stream.cpp:154]   --->   Operation 64 'zext' 'tmp_s' <Predicate = (!tmp_9)> <Delay = 0.00>
+ST_4 : Operation 65 [1/1] (0.00ns)   --->   "%MemBank_B_addr = getelementptr inbounds [14400 x i16]* %MemBank_B, i64 0, i64 %tmp_s" [mnist_AXI_Stream.cpp:154]   --->   Operation 65 'getelementptr' 'MemBank_B_addr' <Predicate = (!tmp_9)> <Delay = 0.00>
+ST_4 : Operation 66 [2/2] (3.25ns)   --->   "%MemBank_B_load = load i16* %MemBank_B_addr, align 2" [mnist_AXI_Stream.cpp:154]   --->   Operation 66 'load' 'MemBank_B_load' <Predicate = (!tmp_9)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 784> <RAM>
+ST_4 : Operation 67 [1/1] (1.76ns)   --->   "br label %.preheader" [mnist_AXI_Stream.cpp:157]   --->   Operation 67 'br' <Predicate = (tmp_9)> <Delay = 1.76>
 
-State 5 <SV = 3> <Delay = 3.25>
-ST_5 : Operation 57 [1/1] (0.00ns)   --->   "%i2 = phi i10 [ %i_3, %4 ], [ 0, %.preheader.preheader ]"   --->   Operation 57 'phi' 'i2' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 58 [1/1] (0.00ns)   --->   "%i2_cast1 = zext i10 %i2 to i64" [mnist_AXI_Stream.cpp:140]   --->   Operation 58 'zext' 'i2_cast1' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 59 [1/1] (1.77ns)   --->   "%tmp_8 = icmp eq i10 %i2, -240" [mnist_AXI_Stream.cpp:140]   --->   Operation 59 'icmp' 'tmp_8' <Predicate = true> <Delay = 1.77> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.77> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_5 : Operation 60 [1/1] (0.00ns)   --->   "%empty_5 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 784, i64 784, i64 784)"   --->   Operation 60 'speclooptripcount' 'empty_5' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 61 [1/1] (1.73ns)   --->   "%i_3 = add i10 %i2, 1" [mnist_AXI_Stream.cpp:140]   --->   Operation 61 'add' 'i_3' <Predicate = true> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_5 : Operation 62 [1/1] (0.00ns)   --->   "br i1 %tmp_8, label %5, label %4" [mnist_AXI_Stream.cpp:140]   --->   Operation 62 'br' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 63 [1/1] (1.77ns)   --->   "%tmp_user_V = icmp eq i10 %i2, 0" [mnist_AXI_Stream.cpp:149]   --->   Operation 63 'icmp' 'tmp_user_V' <Predicate = (!tmp_8)> <Delay = 1.77> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.77> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_5 : Operation 64 [1/1] (1.77ns)   --->   "%tmp_last_V = icmp eq i10 %i2, -241" [mnist_AXI_Stream.cpp:152]   --->   Operation 64 'icmp' 'tmp_last_V' <Predicate = (!tmp_8)> <Delay = 1.77> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.77> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_5 : Operation 65 [1/1] (0.00ns)   --->   "%MemBank_Out_addr_1 = getelementptr [784 x i16]* %MemBank_Out, i64 0, i64 %i2_cast1" [mnist_AXI_Stream.cpp:155]   --->   Operation 65 'getelementptr' 'MemBank_Out_addr_1' <Predicate = (!tmp_8)> <Delay = 0.00>
-ST_5 : Operation 66 [2/2] (3.25ns)   --->   "%MemBank_Out_load = load i16* %MemBank_Out_addr_1, align 2" [mnist_AXI_Stream.cpp:155]   --->   Operation 66 'load' 'MemBank_Out_load' <Predicate = (!tmp_8)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 784> <RAM>
-ST_5 : Operation 67 [2/2] (0.00ns)   --->   "ret i32 0" [mnist_AXI_Stream.cpp:158]   --->   Operation 67 'ret' <Predicate = (tmp_8)> <Delay = 0.00>
+State 5 <SV = 4> <Delay = 6.50>
+ST_5 : Operation 68 [1/2] (3.25ns)   --->   "%MemBank_B_load = load i16* %MemBank_B_addr, align 2" [mnist_AXI_Stream.cpp:154]   --->   Operation 68 'load' 'MemBank_B_load' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 784> <RAM>
+ST_5 : Operation 69 [1/1] (0.00ns)   --->   "%MemBank_Out_addr = getelementptr [784 x i16]* %MemBank_Out, i64 0, i64 %tmp_s" [mnist_AXI_Stream.cpp:154]   --->   Operation 69 'getelementptr' 'MemBank_Out_addr' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 70 [1/1] (3.25ns)   --->   "store i16 %MemBank_B_load, i16* %MemBank_Out_addr, align 2" [mnist_AXI_Stream.cpp:154]   --->   Operation 70 'store' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 784> <RAM>
+ST_5 : Operation 71 [1/1] (0.00ns)   --->   "br label %.preheader116" [mnist_AXI_Stream.cpp:152]   --->   Operation 71 'br' <Predicate = true> <Delay = 0.00>
 
 State 6 <SV = 4> <Delay = 3.25>
-ST_6 : Operation 68 [1/2] (3.25ns)   --->   "%MemBank_Out_load = load i16* %MemBank_Out_addr_1, align 2" [mnist_AXI_Stream.cpp:155]   --->   Operation 68 'load' 'MemBank_Out_load' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 784> <RAM>
-ST_6 : Operation 69 [1/1] (0.00ns)   --->   "%tmp_data_V_1 = sext i16 %MemBank_Out_load to i32" [mnist_AXI_Stream.cpp:155]   --->   Operation 69 'sext' 'tmp_data_V_1' <Predicate = true> <Delay = 0.00>
-ST_6 : Operation 70 [2/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i32P.i4P.i4P.i1P.i1P.i1P.i1P(i32* %output_data_V_data_V, i4* %output_data_V_keep_V, i4* %output_data_V_strb_V, i1* %output_data_V_user_V, i1* %output_data_V_last_V, i1* %output_data_V_id_V, i1* %output_data_V_dest_V, i32 %tmp_data_V_1, i4 0, i4 0, i1 %tmp_user_V, i1 %tmp_last_V, i1 false, i1 false)" [mnist_AXI_Stream.cpp:156]   --->   Operation 70 'write' <Predicate = true> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_6 : Operation 72 [1/1] (0.00ns)   --->   "%i3 = phi i10 [ %i_4, %4 ], [ 0, %.preheader.preheader ]"   --->   Operation 72 'phi' 'i3' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 73 [1/1] (0.00ns)   --->   "%i3_cast1 = zext i10 %i3 to i64" [mnist_AXI_Stream.cpp:157]   --->   Operation 73 'zext' 'i3_cast1' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 74 [1/1] (1.77ns)   --->   "%tmp_7 = icmp eq i10 %i3, -240" [mnist_AXI_Stream.cpp:157]   --->   Operation 74 'icmp' 'tmp_7' <Predicate = true> <Delay = 1.77> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.77> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 75 [1/1] (0.00ns)   --->   "%empty_7 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 784, i64 784, i64 784)"   --->   Operation 75 'speclooptripcount' 'empty_7' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 76 [1/1] (1.73ns)   --->   "%i_4 = add i10 %i3, 1" [mnist_AXI_Stream.cpp:157]   --->   Operation 76 'add' 'i_4' <Predicate = true> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 77 [1/1] (0.00ns)   --->   "br i1 %tmp_7, label %5, label %4" [mnist_AXI_Stream.cpp:157]   --->   Operation 77 'br' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 78 [1/1] (1.77ns)   --->   "%tmp_user_V = icmp eq i10 %i3, 0" [mnist_AXI_Stream.cpp:166]   --->   Operation 78 'icmp' 'tmp_user_V' <Predicate = (!tmp_7)> <Delay = 1.77> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.77> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 79 [1/1] (1.77ns)   --->   "%tmp_last_V_1 = icmp eq i10 %i3, -241" [mnist_AXI_Stream.cpp:169]   --->   Operation 79 'icmp' 'tmp_last_V_1' <Predicate = (!tmp_7)> <Delay = 1.77> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.77> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 80 [1/1] (0.00ns)   --->   "%MemBank_Out_addr_1 = getelementptr [784 x i16]* %MemBank_Out, i64 0, i64 %i3_cast1" [mnist_AXI_Stream.cpp:172]   --->   Operation 80 'getelementptr' 'MemBank_Out_addr_1' <Predicate = (!tmp_7)> <Delay = 0.00>
+ST_6 : Operation 81 [2/2] (3.25ns)   --->   "%MemBank_Out_load = load i16* %MemBank_Out_addr_1, align 2" [mnist_AXI_Stream.cpp:172]   --->   Operation 81 'load' 'MemBank_Out_load' <Predicate = (!tmp_7)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 784> <RAM>
+ST_6 : Operation 82 [2/2] (0.00ns)   --->   "ret i32 0" [mnist_AXI_Stream.cpp:175]   --->   Operation 82 'ret' <Predicate = (tmp_7)> <Delay = 0.00>
 
-State 7 <SV = 5> <Delay = 0.00>
-ST_7 : Operation 71 [1/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i32P.i4P.i4P.i1P.i1P.i1P.i1P(i32* %output_data_V_data_V, i4* %output_data_V_keep_V, i4* %output_data_V_strb_V, i1* %output_data_V_user_V, i1* %output_data_V_last_V, i1* %output_data_V_id_V, i1* %output_data_V_dest_V, i32 %tmp_data_V_1, i4 0, i4 0, i1 %tmp_user_V, i1 %tmp_last_V, i1 false, i1 false)" [mnist_AXI_Stream.cpp:156]   --->   Operation 71 'write' <Predicate = true> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
-ST_7 : Operation 72 [1/1] (0.00ns)   --->   "br label %.preheader" [mnist_AXI_Stream.cpp:140]   --->   Operation 72 'br' <Predicate = true> <Delay = 0.00>
+State 7 <SV = 5> <Delay = 3.25>
+ST_7 : Operation 83 [1/2] (3.25ns)   --->   "%MemBank_Out_load = load i16* %MemBank_Out_addr_1, align 2" [mnist_AXI_Stream.cpp:172]   --->   Operation 83 'load' 'MemBank_Out_load' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 784> <RAM>
+ST_7 : Operation 84 [1/1] (0.00ns)   --->   "%tmp_data_V_1 = sext i16 %MemBank_Out_load to i32" [mnist_AXI_Stream.cpp:172]   --->   Operation 84 'sext' 'tmp_data_V_1' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 85 [2/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i32P.i4P.i4P.i1P.i1P.i1P.i1P(i32* %output_data_V_data_V, i4* %output_data_V_keep_V, i4* %output_data_V_strb_V, i1* %output_data_V_user_V, i1* %output_data_V_last_V, i1* %output_data_V_id_V, i1* %output_data_V_dest_V, i32 %tmp_data_V_1, i4 0, i4 0, i1 %tmp_user_V, i1 %tmp_last_V_1, i1 false, i1 false)" [mnist_AXI_Stream.cpp:173]   --->   Operation 85 'write' <Predicate = true> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
 
-State 8 <SV = 4> <Delay = 0.00>
-ST_8 : Operation 73 [1/2] (0.00ns)   --->   "ret i32 0" [mnist_AXI_Stream.cpp:158]   --->   Operation 73 'ret' <Predicate = true> <Delay = 0.00>
+State 8 <SV = 6> <Delay = 0.00>
+ST_8 : Operation 86 [1/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i32P.i4P.i4P.i1P.i1P.i1P.i1P(i32* %output_data_V_data_V, i4* %output_data_V_keep_V, i4* %output_data_V_strb_V, i1* %output_data_V_user_V, i1* %output_data_V_last_V, i1* %output_data_V_id_V, i1* %output_data_V_dest_V, i32 %tmp_data_V_1, i4 0, i4 0, i1 %tmp_user_V, i1 %tmp_last_V_1, i1 false, i1 false)" [mnist_AXI_Stream.cpp:173]   --->   Operation 86 'write' <Predicate = true> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_8 : Operation 87 [1/1] (0.00ns)   --->   "br label %.preheader" [mnist_AXI_Stream.cpp:157]   --->   Operation 87 'br' <Predicate = true> <Delay = 0.00>
+
+State 9 <SV = 5> <Delay = 0.00>
+ST_9 : Operation 88 [1/2] (0.00ns)   --->   "ret i32 0" [mnist_AXI_Stream.cpp:175]   --->   Operation 88 'ret' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -187,39 +207,43 @@ Target clock period: 10ns, clock uncertainty: 1.25ns.
 
  <State 1>: 1.77ns
 The critical path consists of the following:
-	multiplexor before 'phi' operation ('i') with incoming values : ('i', mnist_AXI_Stream.cpp:44) [38]  (1.77 ns)
+	multiplexor before 'phi' operation ('i') with incoming values : ('i', mnist_AXI_Stream.cpp:54) [41]  (1.77 ns)
 
- <State 2>: 3.25ns
+ <State 2>: 3.59ns
 The critical path consists of the following:
-	'phi' operation ('i') with incoming values : ('i', mnist_AXI_Stream.cpp:44) [38]  (0 ns)
-	'getelementptr' operation ('MemBank_B_addr', mnist_AXI_Stream.cpp:46) [48]  (0 ns)
-	'store' operation (mnist_AXI_Stream.cpp:46) of variable 'tmp', mnist_AXI_Stream.cpp:46 on array 'MemBank_B', mnist_AXI_Stream.cpp:34 [49]  (3.25 ns)
+	axis read on port 'input_data_V_data_V' (mnist_AXI_Stream.cpp:49) [42]  (0 ns)
+	fifo write on port 'input_buffer.V', mnist_AXI_Stream.cpp:40 (mnist_AXI_Stream.cpp:53) [53]  (3.59 ns)
 
- <State 3>: 3.25ns
+ <State 3>: 6.85ns
 The critical path consists of the following:
-	'phi' operation ('i') with incoming values : ('i', mnist_AXI_Stream.cpp:135) [54]  (0 ns)
-	'getelementptr' operation ('MemBank_B_addr_1', mnist_AXI_Stream.cpp:137) [61]  (0 ns)
-	'load' operation ('MemBank_B_load', mnist_AXI_Stream.cpp:137) on array 'MemBank_B', mnist_AXI_Stream.cpp:34 [62]  (3.25 ns)
+	fifo read on port 'input_buffer.V', mnist_AXI_Stream.cpp:40 (mnist_AXI_Stream.cpp:58) [66]  (3.59 ns)
+	'store' operation (mnist_AXI_Stream.cpp:58) of variable 'tmp', mnist_AXI_Stream.cpp:58 on array 'MemBank_B', mnist_AXI_Stream.cpp:34 [67]  (3.25 ns)
 
- <State 4>: 6.51ns
+ <State 4>: 3.25ns
 The critical path consists of the following:
-	'load' operation ('MemBank_B_load', mnist_AXI_Stream.cpp:137) on array 'MemBank_B', mnist_AXI_Stream.cpp:34 [62]  (3.25 ns)
-	'store' operation (mnist_AXI_Stream.cpp:137) of variable 'MemBank_B_load', mnist_AXI_Stream.cpp:137 on array 'MemBank_Out', mnist_AXI_Stream.cpp:35 [64]  (3.25 ns)
+	'phi' operation ('i') with incoming values : ('i', mnist_AXI_Stream.cpp:152) [72]  (0 ns)
+	'getelementptr' operation ('MemBank_B_addr', mnist_AXI_Stream.cpp:154) [79]  (0 ns)
+	'load' operation ('MemBank_B_load', mnist_AXI_Stream.cpp:154) on array 'MemBank_B', mnist_AXI_Stream.cpp:34 [80]  (3.25 ns)
 
- <State 5>: 3.25ns
+ <State 5>: 6.51ns
 The critical path consists of the following:
-	'phi' operation ('i') with incoming values : ('i', mnist_AXI_Stream.cpp:140) [69]  (0 ns)
-	'getelementptr' operation ('MemBank_Out_addr_1', mnist_AXI_Stream.cpp:155) [78]  (0 ns)
-	'load' operation ('MemBank_Out_load', mnist_AXI_Stream.cpp:155) on array 'MemBank_Out', mnist_AXI_Stream.cpp:35 [79]  (3.25 ns)
+	'load' operation ('MemBank_B_load', mnist_AXI_Stream.cpp:154) on array 'MemBank_B', mnist_AXI_Stream.cpp:34 [80]  (3.25 ns)
+	'store' operation (mnist_AXI_Stream.cpp:154) of variable 'MemBank_B_load', mnist_AXI_Stream.cpp:154 on array 'MemBank_Out', mnist_AXI_Stream.cpp:35 [82]  (3.25 ns)
 
  <State 6>: 3.25ns
 The critical path consists of the following:
-	'load' operation ('MemBank_Out_load', mnist_AXI_Stream.cpp:155) on array 'MemBank_Out', mnist_AXI_Stream.cpp:35 [79]  (3.25 ns)
+	'phi' operation ('i') with incoming values : ('i', mnist_AXI_Stream.cpp:157) [87]  (0 ns)
+	'getelementptr' operation ('MemBank_Out_addr_1', mnist_AXI_Stream.cpp:172) [96]  (0 ns)
+	'load' operation ('MemBank_Out_load', mnist_AXI_Stream.cpp:172) on array 'MemBank_Out', mnist_AXI_Stream.cpp:35 [97]  (3.25 ns)
 
- <State 7>: 0ns
+ <State 7>: 3.25ns
 The critical path consists of the following:
+	'load' operation ('MemBank_Out_load', mnist_AXI_Stream.cpp:172) on array 'MemBank_Out', mnist_AXI_Stream.cpp:35 [97]  (3.25 ns)
 
  <State 8>: 0ns
+The critical path consists of the following:
+
+ <State 9>: 0ns
 The critical path consists of the following:
 
 
@@ -239,6 +263,7 @@ N/A
 	State 6
 	State 7
 	State 8
+	State 9
 
 
 ============================================================

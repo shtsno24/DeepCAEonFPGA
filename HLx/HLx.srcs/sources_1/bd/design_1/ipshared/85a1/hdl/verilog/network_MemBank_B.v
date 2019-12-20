@@ -1,16 +1,16 @@
 // ==============================================================
-// File generated on Fri Dec 20 13:31:42 JST 2019
+// File generated on Fri Dec 20 13:58:11 JST 2019
 // Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3.1 (64-bit)
 // SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
 // IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // ==============================================================
 `timescale 1 ns / 1 ps
-module network_MemBank_Out_ram (addr0, ce0, d0, we0, q0,  clk);
+module network_MemBank_B_ram (addr0, ce0, d0, we0, q0,  clk);
 
 parameter DWIDTH = 16;
-parameter AWIDTH = 10;
-parameter MEM_SIZE = 784;
+parameter AWIDTH = 14;
+parameter MEM_SIZE = 14400;
 
 input[AWIDTH-1:0] addr0;
 input ce0;
@@ -40,7 +40,7 @@ end
 endmodule
 
 `timescale 1 ns / 1 ps
-module network_MemBank_Out(
+module network_MemBank_B(
     reset,
     clk,
     address0,
@@ -50,8 +50,8 @@ module network_MemBank_Out(
     q0);
 
 parameter DataWidth = 32'd16;
-parameter AddressRange = 32'd784;
-parameter AddressWidth = 32'd10;
+parameter AddressRange = 32'd14400;
+parameter AddressWidth = 32'd14;
 input reset;
 input clk;
 input[AddressWidth - 1:0] address0;
@@ -62,7 +62,7 @@ output[DataWidth - 1:0] q0;
 
 
 
-network_MemBank_Out_ram network_MemBank_Out_ram_U(
+network_MemBank_B_ram network_MemBank_B_ram_U(
     .clk( clk ),
     .addr0( address0 ),
     .ce0( ce0 ),

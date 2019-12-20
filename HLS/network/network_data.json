@@ -40,7 +40,7 @@
     "ClockPeriod": "10",
     "IsCombLogic": "0",
     "II": "x",
-    "Latency": "4708",
+    "Latency": "undef",
     "Uncertainty": "1.25"
   },
   "Xdc": {"OocClocks": ["create_clock -name ap_clk -period 10.000 [get_ports ap_clk]"]},
@@ -67,12 +67,14 @@
       "..\/..\/layers_c\/conv2d.cpp"
     ],
     "Vhdl": [
+      "impl\/vhdl\/fifo_w16_d784_A.vhd",
       "impl\/vhdl\/network_AXILiteS_s_axi.vhd",
       "impl\/vhdl\/network_MemBank_B.vhd",
       "impl\/vhdl\/network_MemBank_Out.vhd",
       "impl\/vhdl\/network.vhd"
     ],
     "Verilog": [
+      "impl\/verilog\/fifo_w16_d784_A.v",
       "impl\/verilog\/network_AXILiteS_s_axi.v",
       "impl\/verilog\/network_MemBank_B.v",
       "impl\/verilog\/network_MemBank_Out.v",
@@ -644,72 +646,79 @@
     "output_data_V_data_V": {
       "interfaceRef": "output_data",
       "dir": "out",
-      "firstOutLatency": "4"
+      "firstOutLatency": "5"
     },
     "output_data_V_dest_V": {
       "interfaceRef": "output_data",
       "dir": "out",
-      "firstOutLatency": "4"
+      "firstOutLatency": "5"
     },
     "output_data_V_keep_V": {
       "interfaceRef": "output_data",
       "dir": "out",
-      "firstOutLatency": "4"
+      "firstOutLatency": "5"
     },
     "output_data_V_strb_V": {
       "interfaceRef": "output_data",
       "dir": "out",
-      "firstOutLatency": "4"
+      "firstOutLatency": "5"
     },
     "output_data_V_user_V": {
       "interfaceRef": "output_data",
       "dir": "out",
-      "firstOutLatency": "4"
+      "firstOutLatency": "5"
     },
     "output_data_V_last_V": {
       "interfaceRef": "output_data",
       "dir": "out",
-      "firstOutLatency": "4"
+      "firstOutLatency": "5"
     },
     "output_data_V_id_V": {
       "interfaceRef": "output_data",
       "dir": "out",
-      "firstOutLatency": "4"
+      "firstOutLatency": "5"
     }
   },
   "ModuleInfo": {
     "Hierarchy": {"ModuleName": "network"},
     "Metrics": {"network": {
         "Latency": {
-          "LatencyBest": "4708",
-          "LatencyAvg": "4708",
-          "LatencyWorst": "4708",
-          "PipelineII": "4709",
+          "LatencyBest": "",
+          "LatencyAvg": "",
+          "LatencyWorst": "",
+          "PipelineII": "",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
         "Timing": {
           "Target": "10.00",
           "Uncertainty": "1.25",
-          "Estimate": "6.508"
+          "Estimate": "6.847"
         },
         "Loops": [
           {
             "Name": "Loop 1",
-            "TripCount": "784",
-            "Latency": "784",
+            "TripCount": "",
+            "Latency": "",
             "PipelineII": "",
             "PipelineDepth": "1"
           },
           {
             "Name": "Loop 2",
             "TripCount": "784",
+            "Latency": "784",
+            "PipelineII": "",
+            "PipelineDepth": "1"
+          },
+          {
+            "Name": "Loop 3",
+            "TripCount": "784",
             "Latency": "1568",
             "PipelineII": "",
             "PipelineDepth": "2"
           },
           {
-            "Name": "Loop 3",
+            "Name": "Loop 4",
             "TripCount": "784",
             "Latency": "2352",
             "PipelineII": "",
@@ -717,9 +726,9 @@
           }
         ],
         "Area": {
-          "BRAM_18K": "17",
-          "FF": "300",
-          "LUT": "553",
+          "BRAM_18K": "18",
+          "FF": "372",
+          "LUT": "718",
           "DSP48E": "0"
         }
       }}
@@ -734,7 +743,7 @@
   },
   "GenData": {
     "DataVersion": "0.1",
-    "Time": "2019-12-20 13:31:42 JST",
+    "Time": "2019-12-20 13:58:12 JST",
     "ToolName": "vivado_hls",
     "ToolVersion": "2018.3.1"
   }

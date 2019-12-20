@@ -126,13 +126,13 @@ set NewPortList {[
  	{ "name": "output_data_TDEST", "direction": "out", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "output_data_V_dest_V", "role": "default" }}  ]}
 
 set RtlHierarchyInfo {[
-	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "3"],
+	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "3", "4"],
 		"CDFG" : "network",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "4708", "EstimateLatencyMax" : "4708",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "-1", "EstimateLatencyMax" : "-1",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -160,7 +160,8 @@ set RtlHierarchyInfo {[
 			{"Name" : "output_data_V_dest_V", "Type" : "Axis", "Direction" : "O"}]},
 	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_AXILiteS_s_axi_U", "Parent" : "0"},
 	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.MemBank_B_U", "Parent" : "0"},
-	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.MemBank_Out_U", "Parent" : "0"}]}
+	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.MemBank_Out_U", "Parent" : "0"},
+	{"ID" : "4", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.input_buffer_V_fifo_U", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {
@@ -172,19 +173,19 @@ set ArgLastReadFirstWriteLatency {
 		input_data_V_last_V {Type I LastRead 1 FirstWrite -1}
 		input_data_V_id_V {Type I LastRead 1 FirstWrite -1}
 		input_data_V_dest_V {Type I LastRead 1 FirstWrite -1}
-		output_data_V_data_V {Type O LastRead -1 FirstWrite 4}
-		output_data_V_keep_V {Type O LastRead -1 FirstWrite 4}
-		output_data_V_strb_V {Type O LastRead -1 FirstWrite 4}
-		output_data_V_user_V {Type O LastRead -1 FirstWrite 4}
-		output_data_V_last_V {Type O LastRead -1 FirstWrite 4}
-		output_data_V_id_V {Type O LastRead -1 FirstWrite 4}
-		output_data_V_dest_V {Type O LastRead -1 FirstWrite 4}}}
+		output_data_V_data_V {Type O LastRead -1 FirstWrite 5}
+		output_data_V_keep_V {Type O LastRead -1 FirstWrite 5}
+		output_data_V_strb_V {Type O LastRead -1 FirstWrite 5}
+		output_data_V_user_V {Type O LastRead -1 FirstWrite 5}
+		output_data_V_last_V {Type O LastRead -1 FirstWrite 5}
+		output_data_V_id_V {Type O LastRead -1 FirstWrite 5}
+		output_data_V_dest_V {Type O LastRead -1 FirstWrite 5}}}
 
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "4708", "Max" : "4708"}
-	, {"Name" : "Interval", "Min" : "4709", "Max" : "4709"}
+	{"Name" : "Latency", "Min" : "-1", "Max" : "-1"}
+	, {"Name" : "Interval", "Min" : "0", "Max" : "0"}
 ]}
 
 set PipelineEnableSignalInfo {[

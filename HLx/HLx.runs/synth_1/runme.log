@@ -17,25 +17,25 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 13430 
+INFO: Helper process launched with PID 20233 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1477.027 ; gain = 90.883 ; free physical = 7530 ; free virtual = 12486
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1477.023 ; gain = 90.883 ; free physical = 5191 ; free virtual = 10718
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
 INFO: [Synth 8-6157] synthesizing module 'design_1' [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/synth/design_1.v:13]
 INFO: [Synth 8-6157] synthesizing module 'network_dma_imp_1285LS0' [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/synth/design_1.v:1633]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_dma_in_0' [/home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/synth_1/.Xil/Vivado-13413-masudalab-ubuntu/realtime/design_1_axi_dma_in_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_dma_in_0' (1#1) [/home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/synth_1/.Xil/Vivado-13413-masudalab-ubuntu/realtime/design_1_axi_dma_in_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_dma_in_0' [/home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/synth_1/.Xil/Vivado-20214-masudalab-ubuntu/realtime/design_1_axi_dma_in_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_dma_in_0' (1#1) [/home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/synth_1/.Xil/Vivado-20214-masudalab-ubuntu/realtime/design_1_axi_dma_in_0_stub.v:6]
 WARNING: [Synth 8-350] instance 'axi_dma_in' of module 'design_1_axi_dma_in_0' requires 40 connections, but only 37 given [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/synth/design_1.v:1966]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_dma_out_0' [/home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/synth_1/.Xil/Vivado-13413-masudalab-ubuntu/realtime/design_1_axi_dma_out_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_dma_out_0' (2#1) [/home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/synth_1/.Xil/Vivado-13413-masudalab-ubuntu/realtime/design_1_axi_dma_out_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_dma_out_0' [/home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/synth_1/.Xil/Vivado-20214-masudalab-ubuntu/realtime/design_1_axi_dma_out_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_dma_out_0' (2#1) [/home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/synth_1/.Xil/Vivado-20214-masudalab-ubuntu/realtime/design_1_axi_dma_out_0_stub.v:6]
 WARNING: [Synth 8-350] instance 'axi_dma_out' of module 'design_1_axi_dma_out_0' requires 43 connections, but only 40 given [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/synth/design_1.v:2004]
-INFO: [Synth 8-6157] synthesizing module 'design_1_network_0_1' [/home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/synth_1/.Xil/Vivado-13413-masudalab-ubuntu/realtime/design_1_network_0_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_network_0_1' (3#1) [/home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/synth_1/.Xil/Vivado-13413-masudalab-ubuntu/realtime/design_1_network_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_network_0_1' [/home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/synth_1/.Xil/Vivado-20214-masudalab-ubuntu/realtime/design_1_network_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_network_0_1' (3#1) [/home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/synth_1/.Xil/Vivado-20214-masudalab-ubuntu/realtime/design_1_network_0_1_stub.v:6]
 WARNING: [Synth 8-350] instance 'network_0' of module 'design_1_network_0_1' requires 38 connections, but only 33 given [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/synth/design_1.v:2045]
 INFO: [Synth 8-6155] done synthesizing module 'network_dma_imp_1285LS0' (4#1) [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/synth/design_1.v:1633]
-INFO: [Synth 8-6157] synthesizing module 'design_1_processing_system7_0_1' [/home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/synth_1/.Xil/Vivado-13413-masudalab-ubuntu/realtime/design_1_processing_system7_0_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_processing_system7_0_1' (5#1) [/home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/synth_1/.Xil/Vivado-13413-masudalab-ubuntu/realtime/design_1_processing_system7_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_processing_system7_0_1' [/home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/synth_1/.Xil/Vivado-20214-masudalab-ubuntu/realtime/design_1_processing_system7_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_processing_system7_0_1' (5#1) [/home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/synth_1/.Xil/Vivado-20214-masudalab-ubuntu/realtime/design_1_processing_system7_0_1_stub.v:6]
 WARNING: [Synth 8-350] instance 'processing_system7_0' of module 'design_1_processing_system7_0_1' requires 110 connections, but only 102 given [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/synth/design_1.v:312]
 INFO: [Synth 8-6157] synthesizing module 'design_1_ps7_0_axi_periph_0' [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/synth/design_1.v:591]
 INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_15SPJYW' [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/synth/design_1.v:1251]
@@ -45,18 +45,18 @@ INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_XU9C55' (7#1) [/
 INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_14WQB4R' [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/synth/design_1.v:1501]
 INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_14WQB4R' (8#1) [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/synth/design_1.v:1501]
 INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_UYSKKA' [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/synth/design_1.v:2081]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_0' [/home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/synth_1/.Xil/Vivado-13413-masudalab-ubuntu/realtime/design_1_auto_pc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_0' (9#1) [/home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/synth_1/.Xil/Vivado-13413-masudalab-ubuntu/realtime/design_1_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_0' [/home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/synth_1/.Xil/Vivado-20214-masudalab-ubuntu/realtime/design_1_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_0' (9#1) [/home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/synth_1/.Xil/Vivado-20214-masudalab-ubuntu/realtime/design_1_auto_pc_0_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_UYSKKA' (10#1) [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/synth/design_1.v:2081]
-INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_0' [/home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/synth_1/.Xil/Vivado-13413-masudalab-ubuntu/realtime/design_1_xbar_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_0' (11#1) [/home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/synth_1/.Xil/Vivado-13413-masudalab-ubuntu/realtime/design_1_xbar_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_0' [/home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/synth_1/.Xil/Vivado-20214-masudalab-ubuntu/realtime/design_1_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_0' (11#1) [/home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/synth_1/.Xil/Vivado-20214-masudalab-ubuntu/realtime/design_1_xbar_0_stub.v:6]
 WARNING: [Synth 8-350] instance 'xbar' of module 'design_1_xbar_0' requires 40 connections, but only 38 given [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/synth/design_1.v:1210]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_ps7_0_axi_periph_0' (12#1) [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/synth/design_1.v:591]
-INFO: [Synth 8-6157] synthesizing module 'design_1_rst_ps7_0_100M_0' [/home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/synth_1/.Xil/Vivado-13413-masudalab-ubuntu/realtime/design_1_rst_ps7_0_100M_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_ps7_0_100M_0' (13#1) [/home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/synth_1/.Xil/Vivado-13413-masudalab-ubuntu/realtime/design_1_rst_ps7_0_100M_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_rst_ps7_0_100M_0' [/home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/synth_1/.Xil/Vivado-20214-masudalab-ubuntu/realtime/design_1_rst_ps7_0_100M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_ps7_0_100M_0' (13#1) [/home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/synth_1/.Xil/Vivado-20214-masudalab-ubuntu/realtime/design_1_rst_ps7_0_100M_0_stub.v:6]
 WARNING: [Synth 8-350] instance 'rst_ps7_0_100M' of module 'design_1_rst_ps7_0_100M_0' requires 10 connections, but only 6 given [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/synth/design_1.v:513]
-INFO: [Synth 8-6157] synthesizing module 'design_1_smartconnect_0_1' [/home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/synth_1/.Xil/Vivado-13413-masudalab-ubuntu/realtime/design_1_smartconnect_0_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_smartconnect_0_1' (14#1) [/home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/synth_1/.Xil/Vivado-13413-masudalab-ubuntu/realtime/design_1_smartconnect_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_smartconnect_0_1' [/home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/synth_1/.Xil/Vivado-20214-masudalab-ubuntu/realtime/design_1_smartconnect_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_smartconnect_0_1' (14#1) [/home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/synth_1/.Xil/Vivado-20214-masudalab-ubuntu/realtime/design_1_smartconnect_0_1_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'design_1' (15#1) [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/synth/design_1.v:13]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (16#1) [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
 WARNING: [Synth 8-3331] design s00_couplers_imp_UYSKKA has unconnected port M_ACLK
@@ -161,7 +161,7 @@ WARNING: [Synth 8-3331] design network_dma_imp_1285LS0 has unconnected port S_AX
 WARNING: [Synth 8-3331] design network_dma_imp_1285LS0 has unconnected port S_AXI_LITE_awaddr[20]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1523.777 ; gain = 137.633 ; free physical = 7542 ; free virtual = 12498
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1523.773 ; gain = 137.633 ; free physical = 5200 ; free virtual = 10731
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -174,10 +174,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1523.777 ; gain = 137.633 ; free physical = 7543 ; free virtual = 12499
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1523.773 ; gain = 137.633 ; free physical = 5201 ; free virtual = 10731
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1523.777 ; gain = 137.633 ; free physical = 7543 ; free virtual = 12499
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1523.773 ; gain = 137.633 ; free physical = 5201 ; free virtual = 10731
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -206,21 +206,21 @@ Parsing XDC File [/home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/synth_1/dont_touch.
 Finished Parsing XDC File [/home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1812.777 ; gain = 0.000 ; free physical = 7267 ; free virtual = 12223
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1812.773 ; gain = 0.000 ; free physical = 4863 ; free virtual = 10413
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1812.777 ; gain = 0.000 ; free physical = 7267 ; free virtual = 12223
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1812.777 ; gain = 0.000 ; free physical = 7267 ; free virtual = 12223
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 1812.773 ; gain = 0.000 ; free physical = 4861 ; free virtual = 10414
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1812.773 ; gain = 0.000 ; free physical = 4861 ; free virtual = 10414
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1812.777 ; gain = 426.633 ; free physical = 7348 ; free virtual = 12304
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1812.773 ; gain = 426.633 ; free physical = 4894 ; free virtual = 10473
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1812.777 ; gain = 426.633 ; free physical = 7347 ; free virtual = 12303
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1812.773 ; gain = 426.633 ; free physical = 4894 ; free virtual = 10473
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -496,10 +496,10 @@ Applied set_property DONT_TOUCH = true for design_1_i/network_dma/axi_dma_out. (
 Applied set_property DONT_TOUCH = true for design_1_i/smartconnect_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1812.777 ; gain = 426.633 ; free physical = 7350 ; free virtual = 12306
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1812.773 ; gain = 426.633 ; free physical = 4903 ; free virtual = 10471
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1812.777 ; gain = 426.633 ; free physical = 7349 ; free virtual = 12306
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1812.773 ; gain = 426.633 ; free physical = 4902 ; free virtual = 10471
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -535,7 +535,7 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1812.777 ; gain = 426.633 ; free physical = 7338 ; free virtual = 12296
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1812.773 ; gain = 426.633 ; free physical = 5607 ; free virtual = 11050
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -549,13 +549,13 @@ Start Applying XDC Timing Constraints
 INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/processing_system7_0/FCLK_CLK0' to pin 'design_1_i/processing_system7_0/bbstub_FCLK_CLK0/O'
 INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1827.777 ; gain = 441.633 ; free physical = 7211 ; free virtual = 12169
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1828.773 ; gain = 442.633 ; free physical = 5779 ; free virtual = 11221
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1827.777 ; gain = 441.633 ; free physical = 7211 ; free virtual = 12169
+Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1828.773 ; gain = 442.633 ; free physical = 5779 ; free virtual = 11220
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -567,7 +567,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1838.793 ; gain = 452.648 ; free physical = 7209 ; free virtual = 12167
+Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1838.789 ; gain = 452.648 ; free physical = 5777 ; free virtual = 11218
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -591,7 +591,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1838.793 ; gain = 452.648 ; free physical = 7211 ; free virtual = 12169
+Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1838.789 ; gain = 452.648 ; free physical = 5781 ; free virtual = 11222
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -604,7 +604,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1838.793 ; gain = 452.648 ; free physical = 7211 ; free virtual = 12169
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1838.789 ; gain = 452.648 ; free physical = 5781 ; free virtual = 11222
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -616,25 +616,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1838.793 ; gain = 452.648 ; free physical = 7211 ; free virtual = 12169
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1838.789 ; gain = 452.648 ; free physical = 5781 ; free virtual = 11222
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1838.793 ; gain = 452.648 ; free physical = 7211 ; free virtual = 12169
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1838.789 ; gain = 452.648 ; free physical = 5781 ; free virtual = 11222
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1838.793 ; gain = 452.648 ; free physical = 7211 ; free virtual = 12169
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1838.789 ; gain = 452.648 ; free physical = 5781 ; free virtual = 11222
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1838.793 ; gain = 452.648 ; free physical = 7211 ; free virtual = 12169
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1838.789 ; gain = 452.648 ; free physical = 5781 ; free virtual = 11222
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -679,25 +679,25 @@ Report Instance Areas:
 |5     |    network_dma      |network_dma_imp_1285LS0     |   487|
 +------+---------------------+----------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1838.793 ; gain = 452.648 ; free physical = 7211 ; free virtual = 12169
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1838.789 ; gain = 452.648 ; free physical = 5781 ; free virtual = 11222
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 8 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1838.793 ; gain = 163.648 ; free physical = 7269 ; free virtual = 12227
-Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1838.801 ; gain = 452.648 ; free physical = 7277 ; free virtual = 12235
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1838.789 ; gain = 163.648 ; free physical = 5839 ; free virtual = 11280
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1838.797 ; gain = 452.648 ; free physical = 5844 ; free virtual = 11285
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1844.793 ; gain = 0.000 ; free physical = 7206 ; free virtual = 12165
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1844.789 ; gain = 0.000 ; free physical = 5778 ; free virtual = 11219
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
 47 Infos, 106 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1848.793 ; gain = 462.766 ; free physical = 7253 ; free virtual = 12211
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1848.793 ; gain = 0.000 ; free physical = 7253 ; free virtual = 12211
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1848.789 ; gain = 462.766 ; free physical = 5824 ; free virtual = 11266
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1848.789 ; gain = 0.000 ; free physical = 5824 ; free virtual = 11266
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint '/home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/synth_1/design_1_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Dec 20 13:38:12 2019...
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 20 14:06:41 2019...

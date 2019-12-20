@@ -1,4 +1,5 @@
 network_MemBank_B
 network_MemBank_Out
+fifo_w16_d784_A
 network_AXILiteS_s_axi
 network
