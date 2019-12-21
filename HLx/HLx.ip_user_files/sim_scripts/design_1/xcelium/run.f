@@ -90,35 +90,11 @@
   "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/d99e/hdl/verilog/network.v" \
   "../../../bd/design_1/ip/design_1_network_0_0/sim/design_1_network_0_0.v" \
 -endlib
--makelib xcelium_lib/axis_infrastructure_v1_1_0 \
-  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/8713/hdl/axis_infrastructure_v1_1_vl_rfs.v" \
--endlib
--makelib xcelium_lib/axis_register_slice_v1_1_18 \
-  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/af00/hdl/axis_register_slice_v1_1_vl_rfs.v" \
--endlib
--makelib xcelium_lib/axis_dwidth_converter_v1_1_17 \
-  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/4ca6/hdl/axis_dwidth_converter_v1_1_vl_rfs.v" \
--endlib
--makelib xcelium_lib/xil_defaultlib \
-  "../../../bd/design_1/ip/design_1_axis_dwidth_converter_0_0/sim/design_1_axis_dwidth_converter_0_0.v" \
--endlib
 -makelib xcelium_lib/axi_protocol_converter_v2_1_18 \
   "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/7a04/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   "../../../bd/design_1/ip/design_1_auto_pc_0/sim/design_1_auto_pc_0.v" \
--endlib
--makelib xcelium_lib/axi_clock_converter_v2_1_17 \
-  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/693a/hdl/axi_clock_converter_v2_1_vl_rfs.v" \
--endlib
--makelib xcelium_lib/blk_mem_gen_v8_4_2 \
-  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/37c2/simulation/blk_mem_gen_v8_4.v" \
--endlib
--makelib xcelium_lib/axi_dwidth_converter_v2_1_18 \
-  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/0815/hdl/axi_dwidth_converter_v2_1_vl_rfs.v" \
--endlib
--makelib xcelium_lib/xil_defaultlib \
-  "../../../bd/design_1/ip/design_1_auto_us_0/sim/design_1_auto_us_0.v" \
   "../../../bd/design_1/ip/design_1_auto_pc_1/sim/design_1_auto_pc_1.v" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
