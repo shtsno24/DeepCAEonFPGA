@@ -83,12 +83,7 @@
 -endlib
 -makelib ies_lib/xil_defaultlib \
   "../../../bd/design_1/ip/design_1_xbar_0/sim/design_1_xbar_0.v" \
--endlib
--makelib ies_lib/axi_protocol_converter_v2_1_18 \
-  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/7a04/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
--endlib
--makelib ies_lib/xil_defaultlib \
-  "../../../bd/design_1/ip/design_1_auto_pc_0/sim/design_1_auto_pc_0.v" \
+  "../../../bd/design_1/ip/design_1_axi_smc_0/bd_0/sim/bd_afc3.v" \
 -endlib
 -makelib ies_lib/xlconstant_v1_1_5 \
   "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/4649/hdl/xlconstant_v1_1_vl_rfs.v" \
@@ -144,8 +139,8 @@
   "../../../bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_9/sim/bd_afc3_m00e_0.sv" \
 -endlib
 -makelib ies_lib/xil_defaultlib \
-  "../../../bd/design_1/ip/design_1_axi_smc_0/bd_0/sim/bd_afc3.v" \
   "../../../bd/design_1/ip/design_1_axi_smc_0/sim/design_1_axi_smc_0.v" \
+  "../../../bd/design_1/ip/design_1_axi_smc_1_0/bd_0/sim/bd_a878.v" \
   "../../../bd/design_1/ip/design_1_axi_smc_1_0/bd_0/ip/ip_0/sim/bd_a878_one_0.v" \
 -endlib
 -makelib ies_lib/xil_defaultlib \
@@ -163,8 +158,18 @@
   "../../../bd/design_1/ip/design_1_axi_smc_1_0/bd_0/ip/ip_10/sim/bd_a878_m00e_0.sv" \
 -endlib
 -makelib ies_lib/xil_defaultlib \
-  "../../../bd/design_1/ip/design_1_axi_smc_1_0/bd_0/sim/bd_a878.v" \
   "../../../bd/design_1/ip/design_1_axi_smc_1_0/sim/design_1_axi_smc_1_0.v" \
+-endlib
+-makelib ies_lib/axi_protocol_converter_v2_1_18 \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/7a04/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
+-endlib
+-makelib ies_lib/xil_defaultlib \
+  "../../../bd/design_1/ip/design_1_auto_pc_0/sim/design_1_auto_pc_0.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/d99e/hdl/verilog/network_AXILiteS_s_axi.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/d99e/hdl/verilog/network_MemBank_B.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/d99e/hdl/verilog/network_MemBank_Out.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/d99e/hdl/verilog/network.v" \
+  "../../../bd/design_1/ip/design_1_network_0_0/sim/design_1_network_0_0.v" \
 -endlib
 -makelib ies_lib/xil_defaultlib \
   glbl.v
