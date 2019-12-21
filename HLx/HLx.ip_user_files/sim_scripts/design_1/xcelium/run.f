@@ -84,11 +84,6 @@
 -makelib xcelium_lib/xil_defaultlib \
   "../../../bd/design_1/ip/design_1_xbar_1/sim/design_1_xbar_1.v" \
   "../../../bd/design_1/ip/design_1_xbar_0/sim/design_1_xbar_0.v" \
-  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/d99e/hdl/verilog/network_AXILiteS_s_axi.v" \
-  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/d99e/hdl/verilog/network_MemBank_B.v" \
-  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/d99e/hdl/verilog/network_MemBank_Out.v" \
-  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/d99e/hdl/verilog/network.v" \
-  "../../../bd/design_1/ip/design_1_network_0_0/sim/design_1_network_0_0.v" \
 -endlib
 -makelib xcelium_lib/axi_protocol_converter_v2_1_18 \
   "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/7a04/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
