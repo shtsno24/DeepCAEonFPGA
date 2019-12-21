@@ -134,6 +134,7 @@ vlog -work axi_crossbar_v2_1_19 -64 -incr "+incdir+../../../../HLx.srcs/sources_
 
 vlog -work xil_defaultlib -64 -incr "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/70cf/hdl" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0" "+incdir+/tools/Xilinx/Vivado/2018.3/data/xilinx_vip/include" \
 "../../../bd/design_1/ip/design_1_xbar_1/sim/design_1_xbar_1.v" \
+"../../../bd/design_1/ip/design_1_xbar_0/sim/design_1_xbar_0.v" \
 
 vlog -work axi_protocol_converter_v2_1_18 -64 -incr "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/70cf/hdl" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0" "+incdir+/tools/Xilinx/Vivado/2018.3/data/xilinx_vip/include" \
 "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/7a04/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
@@ -153,6 +154,11 @@ vlog -work axi_dwidth_converter_v2_1_18 -64 -incr "+incdir+../../../../HLx.srcs/
 vlog -work xil_defaultlib -64 -incr "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/70cf/hdl" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0" "+incdir+/tools/Xilinx/Vivado/2018.3/data/xilinx_vip/include" \
 "../../../bd/design_1/ip/design_1_auto_us_0/sim/design_1_auto_us_0.v" \
 "../../../bd/design_1/ip/design_1_auto_pc_1/sim/design_1_auto_pc_1.v" \
+"../../../../HLx.srcs/sources_1/bd/design_1/ipshared/b3ea/hdl/verilog/network_AXILiteS_s_axi.v" \
+"../../../../HLx.srcs/sources_1/bd/design_1/ipshared/b3ea/hdl/verilog/network_MemBank_B.v" \
+"../../../../HLx.srcs/sources_1/bd/design_1/ipshared/b3ea/hdl/verilog/network_MemBank_Out.v" \
+"../../../../HLx.srcs/sources_1/bd/design_1/ipshared/b3ea/hdl/verilog/network.v" \
+"../../../bd/design_1/ip/design_1_network_0_0/sim/design_1_network_0_0.v" \
 
 vlog -work xil_defaultlib \
 "glbl.v"
