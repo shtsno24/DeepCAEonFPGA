@@ -39,8 +39,8 @@
 -makelib xcelium_lib/xil_defaultlib \
   "../../../bd/design_1/ip/design_1_rst_ps7_0_100M_2/sim/design_1_rst_ps7_0_100M_2.vhd" \
 -endlib
--makelib xcelium_lib/generic_baseblocks_v2_1_0 \
-  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v" \
+-makelib xcelium_lib/lib_pkg_v1_0_2 \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/0513/hdl/lib_pkg_v1_0_rfs.vhd" \
 -endlib
 -makelib xcelium_lib/fifo_generator_v13_2_3 \
   "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/64f4/simulation/fifo_generator_vlog_beh.v" \
@@ -50,21 +50,6 @@
 -endlib
 -makelib xcelium_lib/fifo_generator_v13_2_3 \
   "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/64f4/hdl/fifo_generator_v13_2_rfs.v" \
--endlib
--makelib xcelium_lib/axi_data_fifo_v2_1_17 \
-  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/c4fd/hdl/axi_data_fifo_v2_1_vl_rfs.v" \
--endlib
--makelib xcelium_lib/axi_register_slice_v2_1_18 \
-  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/cc23/hdl/axi_register_slice_v2_1_vl_rfs.v" \
--endlib
--makelib xcelium_lib/axi_protocol_converter_v2_1_18 \
-  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/7a04/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
--endlib
--makelib xcelium_lib/xil_defaultlib \
-  "../../../bd/design_1/ip/design_1_auto_pc_0/sim/design_1_auto_pc_0.v" \
--endlib
--makelib xcelium_lib/lib_pkg_v1_0_2 \
-  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/0513/hdl/lib_pkg_v1_0_rfs.vhd" \
 -endlib
 -makelib xcelium_lib/lib_fifo_v1_0_12 \
   "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/544a/hdl/lib_fifo_v1_0_rfs.vhd" \
@@ -84,11 +69,26 @@
 -makelib xcelium_lib/xil_defaultlib \
   "../../../bd/design_1/ip/design_1_axi_dma_0_0/sim/design_1_axi_dma_0_0.vhd" \
 -endlib
+-makelib xcelium_lib/generic_baseblocks_v2_1_0 \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v" \
+-endlib
+-makelib xcelium_lib/axi_register_slice_v2_1_18 \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/cc23/hdl/axi_register_slice_v2_1_vl_rfs.v" \
+-endlib
+-makelib xcelium_lib/axi_data_fifo_v2_1_17 \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/c4fd/hdl/axi_data_fifo_v2_1_vl_rfs.v" \
+-endlib
 -makelib xcelium_lib/axi_crossbar_v2_1_19 \
   "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   "../../../bd/design_1/ip/design_1_xbar_1/sim/design_1_xbar_1.v" \
+-endlib
+-makelib xcelium_lib/axi_protocol_converter_v2_1_18 \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/7a04/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/design_1/ip/design_1_auto_pc_0/sim/design_1_auto_pc_0.v" \
 -endlib
 -makelib xcelium_lib/axi_clock_converter_v2_1_17 \
   "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/693a/hdl/axi_clock_converter_v2_1_vl_rfs.v" \
@@ -100,8 +100,8 @@
   "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/0815/hdl/axi_dwidth_converter_v2_1_vl_rfs.v" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
-  "../../../bd/design_1/ip/design_1_auto_us_1/sim/design_1_auto_us_1.v" \
-  "../../../bd/design_1/ip/design_1_auto_pc_2/sim/design_1_auto_pc_2.v" \
+  "../../../bd/design_1/ip/design_1_auto_us_0/sim/design_1_auto_us_0.v" \
+  "../../../bd/design_1/ip/design_1_auto_pc_1/sim/design_1_auto_pc_1.v" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   glbl.v

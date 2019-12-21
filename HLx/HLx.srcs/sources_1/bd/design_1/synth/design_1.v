@@ -1,7 +1,7 @@
 //Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-//Date        : Sat Dec 21 11:07:18 2019
+//Date        : Sat Dec 21 13:13:09 2019
 //Host        : shts-server running 64-bit Ubuntu 18.04.3 LTS
 //Command     : generate_target design_1.bd
 //Design      : design_1
@@ -54,8 +54,8 @@ module design_1
   (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_PORB" *) inout FIXED_IO_ps_porb;
   (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_SRSTB" *) inout FIXED_IO_ps_srstb;
 
-  wire [31:0]axi_dma_0_M_AXIS_MM2S_TDATA;
-  wire [3:0]axi_dma_0_M_AXIS_MM2S_TKEEP;
+  wire [15:0]axi_dma_0_M_AXIS_MM2S_TDATA;
+  wire [1:0]axi_dma_0_M_AXIS_MM2S_TKEEP;
   wire axi_dma_0_M_AXIS_MM2S_TLAST;
   wire axi_dma_0_M_AXIS_MM2S_TREADY;
   wire axi_dma_0_M_AXIS_MM2S_TVALID;
@@ -1735,7 +1735,7 @@ module m00_couplers_imp_HXKKWO
   assign m00_couplers_to_auto_pc_WLAST = S_AXI_wlast;
   assign m00_couplers_to_auto_pc_WSTRB = S_AXI_wstrb[7:0];
   assign m00_couplers_to_auto_pc_WVALID = S_AXI_wvalid;
-  design_1_auto_pc_2 auto_pc
+  design_1_auto_pc_1 auto_pc
        (.aclk(S_ACLK_1),
         .aresetn(S_ARESETN_1),
         .m_axi_araddr(auto_pc_to_m00_couplers_ARADDR),
@@ -1944,7 +1944,7 @@ module s00_couplers_imp_1FI55ZU
   assign s00_couplers_to_auto_us_ARSIZE = S_AXI_arsize[2:0];
   assign s00_couplers_to_auto_us_ARVALID = S_AXI_arvalid;
   assign s00_couplers_to_auto_us_RREADY = S_AXI_rready;
-  design_1_auto_us_1 auto_us
+  design_1_auto_us_0 auto_us
        (.m_axi_araddr(auto_us_to_s00_couplers_ARADDR),
         .m_axi_arburst(auto_us_to_s00_couplers_ARBURST),
         .m_axi_arcache(auto_us_to_s00_couplers_ARCACHE),
