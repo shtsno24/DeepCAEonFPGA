@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:hls:network:1.0
-// IP Revision: 1912201818
+// IP Revision: 1912211741
 
 `timescale 1ns/1ps
 

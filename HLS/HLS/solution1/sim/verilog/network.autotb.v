@@ -1,9 +1,9 @@
 // ==============================================================
-// File generated on Fri Dec 20 18:13:23 JST 2019
-// Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3.1 (64-bit)
-// SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
-// IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
-// Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+// File generated on Sat Dec 21 17:39:22 JST 2019
+// Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+// SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+// IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+// Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // ==============================================================
  `timescale 1ns/1ps
 
@@ -79,7 +79,7 @@ module `AUTOTB_TOP;
 
 parameter AUTOTB_TRANSACTION_NUM = 1;
 parameter PROGRESS_TIMEOUT = 10000000;
-parameter LATENCY_ESTIMATION = 4708;
+parameter LATENCY_ESTIMATION = 3142;
 parameter LENGTH_input_data_V_data_V = 784;
 parameter LENGTH_input_data_V_keep_V = 784;
 parameter LENGTH_input_data_V_strb_V = 784;

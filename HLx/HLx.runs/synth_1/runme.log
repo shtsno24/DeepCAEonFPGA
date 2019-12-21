@@ -19,29 +19,29 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 4766 
+INFO: Helper process launched with PID 27725 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1471.953 ; gain = 85.910 ; free physical = 5622 ; free virtual = 13194
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1471.957 ; gain = 85.910 ; free physical = 2408 ; free virtual = 11536
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [/home/shts/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
 INFO: [Synth 8-6157] synthesizing module 'design_1' [/home/shts/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/synth/design_1.v:13]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_dma_0_0' [/home/shts/DeepCAEonFPGA/HLx/HLx.runs/synth_1/.Xil/Vivado-4751-shts-server/realtime/design_1_axi_dma_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_dma_0_0' (1#1) [/home/shts/DeepCAEonFPGA/HLx/HLx.runs/synth_1/.Xil/Vivado-4751-shts-server/realtime/design_1_axi_dma_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_dma_0_0' [/home/shts/DeepCAEonFPGA/HLx/HLx.runs/synth_1/.Xil/Vivado-27710-shts-server/realtime/design_1_axi_dma_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_dma_0_0' (1#1) [/home/shts/DeepCAEonFPGA/HLx/HLx.runs/synth_1/.Xil/Vivado-27710-shts-server/realtime/design_1_axi_dma_0_0_stub.v:6]
 WARNING: [Synth 8-350] instance 'axi_dma_0' of module 'design_1_axi_dma_0_0' requires 64 connections, but only 59 given [/home/shts/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/synth/design_1.v:235]
 INFO: [Synth 8-6157] synthesizing module 'design_1_axi_mem_intercon_0' [/home/shts/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/synth/design_1.v:612]
 INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_HXKKWO' [/home/shts/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/synth/design_1.v:1872]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_1' [/home/shts/DeepCAEonFPGA/HLx/HLx.runs/synth_1/.Xil/Vivado-4751-shts-server/realtime/design_1_auto_pc_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_1' (2#1) [/home/shts/DeepCAEonFPGA/HLx/HLx.runs/synth_1/.Xil/Vivado-4751-shts-server/realtime/design_1_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_1' [/home/shts/DeepCAEonFPGA/HLx/HLx.runs/synth_1/.Xil/Vivado-27710-shts-server/realtime/design_1_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_1' (2#1) [/home/shts/DeepCAEonFPGA/HLx/HLx.runs/synth_1/.Xil/Vivado-27710-shts-server/realtime/design_1_auto_pc_1_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_HXKKWO' (3#1) [/home/shts/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/synth/design_1.v:1872]
 INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1FI55ZU' [/home/shts/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/synth/design_1.v:2409]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_us_0' [/home/shts/DeepCAEonFPGA/HLx/HLx.runs/synth_1/.Xil/Vivado-4751-shts-server/realtime/design_1_auto_us_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_us_0' (4#1) [/home/shts/DeepCAEonFPGA/HLx/HLx.runs/synth_1/.Xil/Vivado-4751-shts-server/realtime/design_1_auto_us_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_us_0' [/home/shts/DeepCAEonFPGA/HLx/HLx.runs/synth_1/.Xil/Vivado-27710-shts-server/realtime/design_1_auto_us_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_us_0' (4#1) [/home/shts/DeepCAEonFPGA/HLx/HLx.runs/synth_1/.Xil/Vivado-27710-shts-server/realtime/design_1_auto_us_0_stub.v:6]
 WARNING: [Synth 8-350] instance 'auto_us' of module 'design_1_auto_us_0' requires 34 connections, but only 33 given [/home/shts/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/synth/design_1.v:2536]
 INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1FI55ZU' (5#1) [/home/shts/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/synth/design_1.v:2409]
 INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_O3175N' [/home/shts/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/synth/design_1.v:2877]
 INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_O3175N' (6#1) [/home/shts/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/synth/design_1.v:2877]
-INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_1' [/home/shts/DeepCAEonFPGA/HLx/HLx.runs/synth_1/.Xil/Vivado-4751-shts-server/realtime/design_1_xbar_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_1' (7#1) [/home/shts/DeepCAEonFPGA/HLx/HLx.runs/synth_1/.Xil/Vivado-4751-shts-server/realtime/design_1_xbar_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_1' [/home/shts/DeepCAEonFPGA/HLx/HLx.runs/synth_1/.Xil/Vivado-27710-shts-server/realtime/design_1_xbar_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_1' (7#1) [/home/shts/DeepCAEonFPGA/HLx/HLx.runs/synth_1/.Xil/Vivado-27710-shts-server/realtime/design_1_xbar_1_stub.v:6]
 WARNING: [Synth 8-689] width (1) of port connection 's_axi_arready' does not match port width (2) of module 'design_1_xbar_1' [/home/shts/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/synth/design_1.v:1179]
 WARNING: [Synth 8-689] width (64) of port connection 's_axi_rdata' does not match port width (128) of module 'design_1_xbar_1' [/home/shts/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/synth/design_1.v:1196]
 WARNING: [Synth 8-689] width (1) of port connection 's_axi_rlast' does not match port width (2) of module 'design_1_xbar_1' [/home/shts/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/synth/design_1.v:1197]
@@ -49,13 +49,13 @@ WARNING: [Synth 8-689] width (2) of port connection 's_axi_rresp' does not match
 WARNING: [Synth 8-689] width (1) of port connection 's_axi_rvalid' does not match port width (2) of module 'design_1_xbar_1' [/home/shts/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/synth/design_1.v:1200]
 WARNING: [Synth 8-350] instance 'xbar' of module 'design_1_xbar_1' requires 78 connections, but only 76 given [/home/shts/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/synth/design_1.v:1129]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_mem_intercon_0' (8#1) [/home/shts/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/synth/design_1.v:612]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axis_dwidth_converter_0_0' [/home/shts/DeepCAEonFPGA/HLx/HLx.runs/synth_1/.Xil/Vivado-4751-shts-server/realtime/design_1_axis_dwidth_converter_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axis_dwidth_converter_0_0' (9#1) [/home/shts/DeepCAEonFPGA/HLx/HLx.runs/synth_1/.Xil/Vivado-4751-shts-server/realtime/design_1_axis_dwidth_converter_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_network_0_0' [/home/shts/DeepCAEonFPGA/HLx/HLx.runs/synth_1/.Xil/Vivado-4751-shts-server/realtime/design_1_network_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_network_0_0' (10#1) [/home/shts/DeepCAEonFPGA/HLx/HLx.runs/synth_1/.Xil/Vivado-4751-shts-server/realtime/design_1_network_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axis_dwidth_converter_0_0' [/home/shts/DeepCAEonFPGA/HLx/HLx.runs/synth_1/.Xil/Vivado-27710-shts-server/realtime/design_1_axis_dwidth_converter_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axis_dwidth_converter_0_0' (9#1) [/home/shts/DeepCAEonFPGA/HLx/HLx.runs/synth_1/.Xil/Vivado-27710-shts-server/realtime/design_1_axis_dwidth_converter_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_network_0_0' [/home/shts/DeepCAEonFPGA/HLx/HLx.runs/synth_1/.Xil/Vivado-27710-shts-server/realtime/design_1_network_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_network_0_0' (10#1) [/home/shts/DeepCAEonFPGA/HLx/HLx.runs/synth_1/.Xil/Vivado-27710-shts-server/realtime/design_1_network_0_0_stub.v:6]
 WARNING: [Synth 8-350] instance 'network_0' of module 'design_1_network_0_0' requires 38 connections, but only 33 given [/home/shts/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/synth/design_1.v:384]
-INFO: [Synth 8-6157] synthesizing module 'design_1_processing_system7_0_0' [/home/shts/DeepCAEonFPGA/HLx/HLx.runs/synth_1/.Xil/Vivado-4751-shts-server/realtime/design_1_processing_system7_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_processing_system7_0_0' (11#1) [/home/shts/DeepCAEonFPGA/HLx/HLx.runs/synth_1/.Xil/Vivado-4751-shts-server/realtime/design_1_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_processing_system7_0_0' [/home/shts/DeepCAEonFPGA/HLx/HLx.runs/synth_1/.Xil/Vivado-27710-shts-server/realtime/design_1_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_processing_system7_0_0' (11#1) [/home/shts/DeepCAEonFPGA/HLx/HLx.runs/synth_1/.Xil/Vivado-27710-shts-server/realtime/design_1_processing_system7_0_0_stub.v:6]
 WARNING: [Synth 8-350] instance 'processing_system7_0' of module 'design_1_processing_system7_0_0' requires 110 connections, but only 104 given [/home/shts/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/synth/design_1.v:418]
 INFO: [Synth 8-6157] synthesizing module 'design_1_ps7_0_axi_periph_1' [/home/shts/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/synth/design_1.v:1208]
 INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_15SPJYW' [/home/shts/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/synth/design_1.v:1747]
@@ -63,15 +63,15 @@ INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_15SPJYW' (12#1) 
 INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_XU9C55' [/home/shts/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/synth/design_1.v:2277]
 INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_XU9C55' (13#1) [/home/shts/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/synth/design_1.v:2277]
 INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_UYSKKA' [/home/shts/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/synth/design_1.v:2572]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_0' [/home/shts/DeepCAEonFPGA/HLx/HLx.runs/synth_1/.Xil/Vivado-4751-shts-server/realtime/design_1_auto_pc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_0' (14#1) [/home/shts/DeepCAEonFPGA/HLx/HLx.runs/synth_1/.Xil/Vivado-4751-shts-server/realtime/design_1_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_0' [/home/shts/DeepCAEonFPGA/HLx/HLx.runs/synth_1/.Xil/Vivado-27710-shts-server/realtime/design_1_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_0' (14#1) [/home/shts/DeepCAEonFPGA/HLx/HLx.runs/synth_1/.Xil/Vivado-27710-shts-server/realtime/design_1_auto_pc_0_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_UYSKKA' (15#1) [/home/shts/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/synth/design_1.v:2572]
-INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_0' [/home/shts/DeepCAEonFPGA/HLx/HLx.runs/synth_1/.Xil/Vivado-4751-shts-server/realtime/design_1_xbar_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_0' (16#1) [/home/shts/DeepCAEonFPGA/HLx/HLx.runs/synth_1/.Xil/Vivado-4751-shts-server/realtime/design_1_xbar_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_0' [/home/shts/DeepCAEonFPGA/HLx/HLx.runs/synth_1/.Xil/Vivado-27710-shts-server/realtime/design_1_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_0' (16#1) [/home/shts/DeepCAEonFPGA/HLx/HLx.runs/synth_1/.Xil/Vivado-27710-shts-server/realtime/design_1_xbar_0_stub.v:6]
 WARNING: [Synth 8-350] instance 'xbar' of module 'design_1_xbar_0' requires 40 connections, but only 38 given [/home/shts/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/synth/design_1.v:1706]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_ps7_0_axi_periph_1' (17#1) [/home/shts/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/synth/design_1.v:1208]
-INFO: [Synth 8-6157] synthesizing module 'design_1_rst_ps7_0_100M_2' [/home/shts/DeepCAEonFPGA/HLx/HLx.runs/synth_1/.Xil/Vivado-4751-shts-server/realtime/design_1_rst_ps7_0_100M_2_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_ps7_0_100M_2' (18#1) [/home/shts/DeepCAEonFPGA/HLx/HLx.runs/synth_1/.Xil/Vivado-4751-shts-server/realtime/design_1_rst_ps7_0_100M_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_rst_ps7_0_100M_2' [/home/shts/DeepCAEonFPGA/HLx/HLx.runs/synth_1/.Xil/Vivado-27710-shts-server/realtime/design_1_rst_ps7_0_100M_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_ps7_0_100M_2' (18#1) [/home/shts/DeepCAEonFPGA/HLx/HLx.runs/synth_1/.Xil/Vivado-27710-shts-server/realtime/design_1_rst_ps7_0_100M_2_stub.v:6]
 WARNING: [Synth 8-350] instance 'rst_ps7_0_100M' of module 'design_1_rst_ps7_0_100M_2' requires 10 connections, but only 6 given [/home/shts/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/synth/design_1.v:603]
 INFO: [Synth 8-6155] done synthesizing module 'design_1' (19#1) [/home/shts/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/synth/design_1.v:13]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (20#1) [/home/shts/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
@@ -116,7 +116,7 @@ WARNING: [Synth 8-3331] design design_1_axi_mem_intercon_0 has unconnected port 
 WARNING: [Synth 8-3331] design design_1_axi_mem_intercon_0 has unconnected port S01_ACLK
 WARNING: [Synth 8-3331] design design_1_axi_mem_intercon_0 has unconnected port S01_ARESETN
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1517.703 ; gain = 131.660 ; free physical = 5635 ; free virtual = 13208
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1517.707 ; gain = 131.660 ; free physical = 2420 ; free virtual = 11548
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -129,10 +129,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1517.703 ; gain = 131.660 ; free physical = 5636 ; free virtual = 13209
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1517.707 ; gain = 131.660 ; free physical = 2421 ; free virtual = 11549
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1517.703 ; gain = 131.660 ; free physical = 5636 ; free virtual = 13209
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1517.707 ; gain = 131.660 ; free physical = 2421 ; free virtual = 11549
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -151,33 +151,33 @@ Parsing XDC File [/home/shts/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip
 Finished Parsing XDC File [/home/shts/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0/design_1_xbar_0_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/xbar'
 Parsing XDC File [/home/shts/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_network_0_0/design_1_network_0_0/design_1_network_0_0_in_context.xdc] for cell 'design_1_i/network_0'
 Finished Parsing XDC File [/home/shts/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_network_0_0/design_1_network_0_0/design_1_network_0_0_in_context.xdc] for cell 'design_1_i/network_0'
+Parsing XDC File [/home/shts/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_axis_dwidth_converter_0_0/design_1_axis_dwidth_converter_0_0/design_1_axis_dwidth_converter_0_0_in_context.xdc] for cell 'design_1_i/axis_dwidth_converter_0'
+Finished Parsing XDC File [/home/shts/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_axis_dwidth_converter_0_0/design_1_axis_dwidth_converter_0_0/design_1_axis_dwidth_converter_0_0_in_context.xdc] for cell 'design_1_i/axis_dwidth_converter_0'
 Parsing XDC File [/home/shts/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc'
 Finished Parsing XDC File [/home/shts/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc'
 Parsing XDC File [/home/shts/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0/design_1_auto_us_1_in_context.xdc] for cell 'design_1_i/axi_mem_intercon_1/s00_couplers/auto_us'
 Finished Parsing XDC File [/home/shts/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0/design_1_auto_us_1_in_context.xdc] for cell 'design_1_i/axi_mem_intercon_1/s00_couplers/auto_us'
 Parsing XDC File [/home/shts/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1/design_1_auto_pc_2_in_context.xdc] for cell 'design_1_i/axi_mem_intercon_1/m00_couplers/auto_pc'
 Finished Parsing XDC File [/home/shts/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1/design_1_auto_pc_2_in_context.xdc] for cell 'design_1_i/axi_mem_intercon_1/m00_couplers/auto_pc'
-Parsing XDC File [/home/shts/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_axis_dwidth_converter_0_0/design_1_axis_dwidth_converter_0_0/design_1_axis_dwidth_converter_0_0_in_context.xdc] for cell 'design_1_i/axis_dwidth_converter_0'
-Finished Parsing XDC File [/home/shts/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_axis_dwidth_converter_0_0/design_1_axis_dwidth_converter_0_0/design_1_axis_dwidth_converter_0_0_in_context.xdc] for cell 'design_1_i/axis_dwidth_converter_0'
 Parsing XDC File [/home/shts/DeepCAEonFPGA/HLx/HLx.runs/synth_1/dont_touch.xdc]
 Finished Parsing XDC File [/home/shts/DeepCAEonFPGA/HLx/HLx.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1819.695 ; gain = 0.000 ; free physical = 5359 ; free virtual = 12932
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1819.715 ; gain = 0.000 ; free physical = 2143 ; free virtual = 11271
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1819.695 ; gain = 0.000 ; free physical = 5359 ; free virtual = 12932
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1819.695 ; gain = 0.000 ; free physical = 5358 ; free virtual = 12931
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1819.715 ; gain = 0.000 ; free physical = 2143 ; free virtual = 11271
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1819.715 ; gain = 0.000 ; free physical = 2143 ; free virtual = 11271
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1819.695 ; gain = 433.652 ; free physical = 5440 ; free virtual = 13013
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1819.715 ; gain = 433.668 ; free physical = 2225 ; free virtual = 11354
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1819.695 ; gain = 433.652 ; free physical = 5440 ; free virtual = 13013
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1819.715 ; gain = 433.668 ; free physical = 2225 ; free virtual = 11354
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -451,15 +451,15 @@ Applied set_property DONT_TOUCH = true for design_1_i/axi_mem_intercon_1/xbar. (
 Applied set_property DONT_TOUCH = true for design_1_i/axi_mem_intercon_1. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/ps7_0_axi_periph/xbar. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/network_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axis_dwidth_converter_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/axi_mem_intercon_1/s00_couplers/auto_us. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/axi_mem_intercon_1/m00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for design_1_i/axis_dwidth_converter_0. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1819.695 ; gain = 433.652 ; free physical = 5442 ; free virtual = 13015
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1819.715 ; gain = 433.668 ; free physical = 2228 ; free virtual = 11356
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1819.695 ; gain = 433.652 ; free physical = 5441 ; free virtual = 13015
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1819.715 ; gain = 433.668 ; free physical = 2227 ; free virtual = 11356
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -517,7 +517,7 @@ WARNING: [Synth 8-3331] design design_1_axi_mem_intercon_0 has unconnected port 
 WARNING: [Synth 8-3331] design design_1_axi_mem_intercon_0 has unconnected port S01_ACLK
 WARNING: [Synth 8-3331] design design_1_axi_mem_intercon_0 has unconnected port S01_ARESETN
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1819.695 ; gain = 433.652 ; free physical = 5430 ; free virtual = 13005
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1819.715 ; gain = 433.668 ; free physical = 2216 ; free virtual = 11347
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -531,13 +531,13 @@ Start Applying XDC Timing Constraints
 INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/processing_system7_0/FCLK_CLK0' to pin 'design_1_i/processing_system7_0/bbstub_FCLK_CLK0/O'
 INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1822.695 ; gain = 436.652 ; free physical = 5303 ; free virtual = 12879
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1822.715 ; gain = 436.668 ; free physical = 2090 ; free virtual = 11220
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1822.695 ; gain = 436.652 ; free physical = 5303 ; free virtual = 12878
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1822.715 ; gain = 436.668 ; free physical = 2090 ; free virtual = 11220
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -549,7 +549,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1833.711 ; gain = 447.668 ; free physical = 5301 ; free virtual = 12877
+Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1832.730 ; gain = 446.684 ; free physical = 2087 ; free virtual = 11218
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -573,7 +573,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1833.711 ; gain = 447.668 ; free physical = 5302 ; free virtual = 12877
+Finished IO Insertion : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1832.730 ; gain = 446.684 ; free physical = 2087 ; free virtual = 11218
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -586,7 +586,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1833.711 ; gain = 447.668 ; free physical = 5302 ; free virtual = 12877
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1832.730 ; gain = 446.684 ; free physical = 2087 ; free virtual = 11218
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -598,25 +598,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1833.711 ; gain = 447.668 ; free physical = 5302 ; free virtual = 12877
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1832.730 ; gain = 446.684 ; free physical = 2087 ; free virtual = 11218
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1833.711 ; gain = 447.668 ; free physical = 5302 ; free virtual = 12877
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1832.730 ; gain = 446.684 ; free physical = 2087 ; free virtual = 11218
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1833.711 ; gain = 447.668 ; free physical = 5302 ; free virtual = 12877
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1832.730 ; gain = 446.684 ; free physical = 2087 ; free virtual = 11218
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1833.711 ; gain = 447.668 ; free physical = 5302 ; free virtual = 12877
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1832.730 ; gain = 446.684 ; free physical = 2087 ; free virtual = 11218
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -667,25 +667,25 @@ Report Instance Areas:
 |7     |      s00_couplers     |s00_couplers_imp_UYSKKA     |   177|
 +------+-----------------------+----------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1833.711 ; gain = 447.668 ; free physical = 5302 ; free virtual = 12877
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1832.730 ; gain = 446.684 ; free physical = 2087 ; free virtual = 11218
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 22 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1833.711 ; gain = 145.676 ; free physical = 5359 ; free virtual = 12935
-Synthesis Optimization Complete : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1833.719 ; gain = 447.668 ; free physical = 5369 ; free virtual = 12945
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1832.730 ; gain = 144.676 ; free physical = 2145 ; free virtual = 11276
+Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1832.738 ; gain = 446.684 ; free physical = 2155 ; free virtual = 11286
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1839.711 ; gain = 0.000 ; free physical = 5296 ; free virtual = 12872
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1839.730 ; gain = 0.000 ; free physical = 2083 ; free virtual = 11214
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
 54 Infos, 75 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1843.711 ; gain = 469.211 ; free physical = 5342 ; free virtual = 12918
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1843.711 ; gain = 0.000 ; free physical = 5342 ; free virtual = 12918
+synth_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1843.730 ; gain = 469.227 ; free physical = 2128 ; free virtual = 11259
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1843.730 ; gain = 0.000 ; free physical = 2128 ; free virtual = 11259
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint '/home/shts/DeepCAEonFPGA/HLx/HLx.runs/synth_1/design_1_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sat Dec 21 14:34:01 2019...
+INFO: [Common 17-206] Exiting Vivado at Sat Dec 21 17:49:22 2019...

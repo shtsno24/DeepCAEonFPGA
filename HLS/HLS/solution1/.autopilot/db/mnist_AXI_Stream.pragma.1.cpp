@@ -28592,31 +28592,26 @@ _ssdm_op_SpecInterface(&output_data, "axis", 1, 1, "both", 0, 0, "", "", "", 0, 
 _ssdm_op_SpecInterface(0, "s_axilite", 1, 1, "", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
 
  int16_t MemBank_A[14400], MemBank_B[14400];
- int16_t MemBank_Out[1 * 28 * 28];
-
- int16_t* array_head = (int16_t*)MemBank_Out;
  const uint64_t array_length = (uint64_t)SeparableConv2D_4_depth * SeparableConv2D_4_height * SeparableConv2D_4_width;
 
+ int16_t MemBank_Out[1 * 28 * 28];
 
  ap_axis<16, 1, 1, 1> tmp;
  ap_axis<16, 1, 1, 1> out;
-
- uint16_t i = 0;
 
  for(int i = 0; i < input_0_depth * input_0_height * input_0_width; i++){
   input_data >> tmp;
   MemBank_B[i] = (int16_t) tmp.data;
  }
-# 135 "../mnist_AXI_Stream.cpp"
+# 131 "../mnist_AXI_Stream.cpp"
  for(int i = 0; i < array_length; i++){
 
-  MemBank_Out[i] = (int32_t)MemBank_B[i];
+  MemBank_Out[i] = (int16_t)MemBank_B[i];
  }
 
  for(uint64_t i = 0; i < array_length; i++){
-
-
-  out.user = 0;
+_ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
+ out.user = 0;
   out.last = 0;
   out.dest = 0;
   out.id = 0;
@@ -28628,7 +28623,7 @@ _ssdm_op_SpecInterface(0, "s_axilite", 1, 1, "", 0, 0, "", "", "", 0, 0, 0, 0, "
   if(i == array_length - 1){
    out.last = 1;
   }
-  out.data = (int16_t)(array_head[i]);
+  out.data = (int16_t)(MemBank_Out[i]);
   output_data << out;
  }
  return(0);

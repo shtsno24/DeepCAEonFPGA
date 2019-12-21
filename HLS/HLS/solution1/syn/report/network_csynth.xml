@@ -1,7 +1,7 @@
 <profile>
 
 <ReportVersion>
-<Version>2018.3.1</Version>
+<Version>2018.3</Version>
 </ReportVersion>
 
 <UserAssignments>
@@ -21,11 +21,11 @@
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>4708</Best-caseLatency>
-<Average-caseLatency>4708</Average-caseLatency>
-<Worst-caseLatency>4708</Worst-caseLatency>
-<Interval-min>4709</Interval-min>
-<Interval-max>4709</Interval-max>
+<Best-caseLatency>3142</Best-caseLatency>
+<Average-caseLatency>3142</Average-caseLatency>
+<Worst-caseLatency>3142</Worst-caseLatency>
+<Interval-min>3143</Interval-min>
+<Interval-max>3143</Interval-max>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <Loop1>
@@ -40,8 +40,9 @@
 </Loop2>
 <Loop3>
 <TripCount>784</TripCount>
-<Latency>2352</Latency>
-<IterationLatency>3</IterationLatency>
+<Latency>785</Latency>
+<PipelineII>1</PipelineII>
+<PipelineDepth>3</PipelineDepth>
 </Loop3>
 </SummaryOfLoopLatency>
 </PerformanceEstimates>
@@ -49,8 +50,8 @@
 <AreaEstimates>
 <Resources>
 <BRAM_18K>17</BRAM_18K>
-<FF>236</FF>
-<LUT>553</LUT>
+<FF>230</FF>
+<LUT>578</LUT>
 <DSP48E>0</DSP48E>
 </Resources>
 <AvailableResources>

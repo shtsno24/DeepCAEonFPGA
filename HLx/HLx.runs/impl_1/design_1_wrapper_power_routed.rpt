@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-| Date             : Sat Dec 21 14:35:11 2019
+| Date             : Sat Dec 21 17:50:33 2019
 | Host             : shts-server running 64-bit Ubuntu 18.04.3 LTS
 | Command          : report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
 | Design           : design_1_wrapper
@@ -52,16 +52,16 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.015 |        3 |       --- |             --- |
-| Slice Logic              |     0.003 |     8216 |       --- |             --- |
-|   LUT as Logic           |     0.002 |     2735 |     53200 |            5.14 |
+| Clocks                   |     0.014 |        3 |       --- |             --- |
+| Slice Logic              |     0.003 |     8217 |       --- |             --- |
+|   LUT as Logic           |     0.002 |     2742 |     53200 |            5.15 |
 |   CARRY4                 |    <0.001 |       88 |     13300 |            0.66 |
-|   Register               |    <0.001 |     3965 |    106400 |            3.73 |
+|   Register               |    <0.001 |     3959 |    106400 |            3.72 |
 |   LUT as Shift Register  |    <0.001 |      180 |     17400 |            1.03 |
 |   LUT as Distributed RAM |    <0.001 |       18 |     17400 |            0.10 |
 |   Others                 |     0.000 |      443 |       --- |             --- |
-| Signals                  |     0.004 |     6037 |       --- |             --- |
-| Block RAM                |     0.002 |      3.5 |       140 |            2.50 |
+| Signals                  |     0.004 |     6035 |       --- |             --- |
+| Block RAM                |     0.003 |      3.5 |       140 |            2.50 |
 | PS7                      |     1.256 |        1 |       --- |             --- |
 | Static Power             |     0.135 |          |           |                 |
 | Total                    |     1.415 |          |           |                 |

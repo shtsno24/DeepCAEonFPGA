@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="network.wdb" id="1">
+         <top_modules>
+            <top_module name="apatb_network_top" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+   </zoom_setting>
+   <column_width_setting>
+   </column_width_setting>
+   <WVObjectSize size="2" />
+   <wvobject type="group" fp_name="group1">
+      <obj_property name="label">Design Top Signals</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="group" fp_name="group2">
+         <obj_property name="label">C Outputs</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="group3">
+            <obj_property name="label">output_data(axis)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="array" fp_name="/apatb_network_top/AESL_inst_network/output_data_TDEST">
+               <obj_property name="ElementShortName">output_data_TDEST[0:0]</obj_property>
+               <obj_property name="ObjectShortName">output_data_TDEST[0:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_network_top/AESL_inst_network/output_data_TID">
+               <obj_property name="ElementShortName">output_data_TID[0:0]</obj_property>
+               <obj_property name="ObjectShortName">output_data_TID[0:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_network_top/AESL_inst_network/output_data_TLAST">
+               <obj_property name="ElementShortName">output_data_TLAST[0:0]</obj_property>
+               <obj_property name="ObjectShortName">output_data_TLAST[0:0]</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_network_top/AESL_inst_network/output_data_TUSER">
+               <obj_property name="ElementShortName">output_data_TUSER[0:0]</obj_property>
+               <obj_property name="ObjectShortName">output_data_TUSER[0:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_network_top/AESL_inst_network/output_data_TSTRB">
+               <obj_property name="ElementShortName">output_data_TSTRB[1:0]</obj_property>
+               <obj_property name="ObjectShortName">output_data_TSTRB[1:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_network_top/AESL_inst_network/output_data_TKEEP">
+               <obj_property name="ElementShortName">output_data_TKEEP[1:0]</obj_property>
+               <obj_property name="ObjectShortName">output_data_TKEEP[1:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/output_data_TREADY">
+               <obj_property name="ElementShortName">output_data_TREADY</obj_property>
+               <obj_property name="ObjectShortName">output_data_TREADY</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/output_data_TVALID">
+               <obj_property name="ElementShortName">output_data_TVALID</obj_property>
+               <obj_property name="ObjectShortName">output_data_TVALID</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_network_top/AESL_inst_network/output_data_TDATA">
+               <obj_property name="ElementShortName">output_data_TDATA[15:0]</obj_property>
+               <obj_property name="ObjectShortName">output_data_TDATA[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="group13">
+            <obj_property name="label">return__return(axi_slave)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/interrupt">
+               <obj_property name="ElementShortName">interrupt</obj_property>
+               <obj_property name="ObjectShortName">interrupt</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_network_top/AESL_inst_network/s_axi_AXILiteS_BRESP">
+               <obj_property name="ElementShortName">s_axi_AXILiteS_BRESP[1:0]</obj_property>
+               <obj_property name="ObjectShortName">s_axi_AXILiteS_BRESP[1:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/s_axi_AXILiteS_BREADY">
+               <obj_property name="ElementShortName">s_axi_AXILiteS_BREADY</obj_property>
+               <obj_property name="ObjectShortName">s_axi_AXILiteS_BREADY</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/s_axi_AXILiteS_BVALID">
+               <obj_property name="ElementShortName">s_axi_AXILiteS_BVALID</obj_property>
+               <obj_property name="ObjectShortName">s_axi_AXILiteS_BVALID</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_network_top/AESL_inst_network/s_axi_AXILiteS_RRESP">
+               <obj_property name="ElementShortName">s_axi_AXILiteS_RRESP[1:0]</obj_property>
+               <obj_property name="ObjectShortName">s_axi_AXILiteS_RRESP[1:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_network_top/AESL_inst_network/s_axi_AXILiteS_RDATA">
+               <obj_property name="ElementShortName">s_axi_AXILiteS_RDATA[31:0]</obj_property>
+               <obj_property name="ObjectShortName">s_axi_AXILiteS_RDATA[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/s_axi_AXILiteS_RREADY">
+               <obj_property name="ElementShortName">s_axi_AXILiteS_RREADY</obj_property>
+               <obj_property name="ObjectShortName">s_axi_AXILiteS_RREADY</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/s_axi_AXILiteS_RVALID">
+               <obj_property name="ElementShortName">s_axi_AXILiteS_RVALID</obj_property>
+               <obj_property name="ObjectShortName">s_axi_AXILiteS_RVALID</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/s_axi_AXILiteS_ARREADY">
+               <obj_property name="ElementShortName">s_axi_AXILiteS_ARREADY</obj_property>
+               <obj_property name="ObjectShortName">s_axi_AXILiteS_ARREADY</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/s_axi_AXILiteS_ARVALID">
+               <obj_property name="ElementShortName">s_axi_AXILiteS_ARVALID</obj_property>
+               <obj_property name="ObjectShortName">s_axi_AXILiteS_ARVALID</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_network_top/AESL_inst_network/s_axi_AXILiteS_ARADDR">
+               <obj_property name="ElementShortName">s_axi_AXILiteS_ARADDR[4:0]</obj_property>
+               <obj_property name="ObjectShortName">s_axi_AXILiteS_ARADDR[4:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_network_top/AESL_inst_network/s_axi_AXILiteS_WSTRB">
+               <obj_property name="ElementShortName">s_axi_AXILiteS_WSTRB[3:0]</obj_property>
+               <obj_property name="ObjectShortName">s_axi_AXILiteS_WSTRB[3:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_network_top/AESL_inst_network/s_axi_AXILiteS_WDATA">
+               <obj_property name="ElementShortName">s_axi_AXILiteS_WDATA[31:0]</obj_property>
+               <obj_property name="ObjectShortName">s_axi_AXILiteS_WDATA[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/s_axi_AXILiteS_WREADY">
+               <obj_property name="ElementShortName">s_axi_AXILiteS_WREADY</obj_property>
+               <obj_property name="ObjectShortName">s_axi_AXILiteS_WREADY</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/s_axi_AXILiteS_WVALID">
+               <obj_property name="ElementShortName">s_axi_AXILiteS_WVALID</obj_property>
+               <obj_property name="ObjectShortName">s_axi_AXILiteS_WVALID</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/s_axi_AXILiteS_AWREADY">
+               <obj_property name="ElementShortName">s_axi_AXILiteS_AWREADY</obj_property>
+               <obj_property name="ObjectShortName">s_axi_AXILiteS_AWREADY</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/s_axi_AXILiteS_AWVALID">
+               <obj_property name="ElementShortName">s_axi_AXILiteS_AWVALID</obj_property>
+               <obj_property name="ObjectShortName">s_axi_AXILiteS_AWVALID</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_network_top/AESL_inst_network/s_axi_AXILiteS_AWADDR">
+               <obj_property name="ElementShortName">s_axi_AXILiteS_AWADDR[4:0]</obj_property>
+               <obj_property name="ObjectShortName">s_axi_AXILiteS_AWADDR[4:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="group32">
+         <obj_property name="label">C Inputs</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="group33">
+            <obj_property name="label">input_data(axis)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="array" fp_name="/apatb_network_top/AESL_inst_network/input_data_TDEST">
+               <obj_property name="ElementShortName">input_data_TDEST[0:0]</obj_property>
+               <obj_property name="ObjectShortName">input_data_TDEST[0:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_network_top/AESL_inst_network/input_data_TID">
+               <obj_property name="ElementShortName">input_data_TID[0:0]</obj_property>
+               <obj_property name="ObjectShortName">input_data_TID[0:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_network_top/AESL_inst_network/input_data_TLAST">
+               <obj_property name="ElementShortName">input_data_TLAST[0:0]</obj_property>
+               <obj_property name="ObjectShortName">input_data_TLAST[0:0]</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_network_top/AESL_inst_network/input_data_TUSER">
+               <obj_property name="ElementShortName">input_data_TUSER[0:0]</obj_property>
+               <obj_property name="ObjectShortName">input_data_TUSER[0:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_network_top/AESL_inst_network/input_data_TSTRB">
+               <obj_property name="ElementShortName">input_data_TSTRB[1:0]</obj_property>
+               <obj_property name="ObjectShortName">input_data_TSTRB[1:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_network_top/AESL_inst_network/input_data_TKEEP">
+               <obj_property name="ElementShortName">input_data_TKEEP[1:0]</obj_property>
+               <obj_property name="ObjectShortName">input_data_TKEEP[1:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/input_data_TREADY">
+               <obj_property name="ElementShortName">input_data_TREADY</obj_property>
+               <obj_property name="ObjectShortName">input_data_TREADY</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/input_data_TVALID">
+               <obj_property name="ElementShortName">input_data_TVALID</obj_property>
+               <obj_property name="ObjectShortName">input_data_TVALID</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_network_top/AESL_inst_network/input_data_TDATA">
+               <obj_property name="ElementShortName">input_data_TDATA[15:0]</obj_property>
+               <obj_property name="ObjectShortName">input_data_TDATA[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="group43">
+         <obj_property name="label">Block-level IO Handshake(internal)</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/ap_done">
+            <obj_property name="ElementShortName">ap_done</obj_property>
+            <obj_property name="ObjectShortName">ap_done</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/ap_idle">
+            <obj_property name="ElementShortName">ap_idle</obj_property>
+            <obj_property name="ObjectShortName">ap_idle</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/ap_ready">
+            <obj_property name="ElementShortName">ap_ready</obj_property>
+            <obj_property name="ObjectShortName">ap_ready</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/ap_start">
+            <obj_property name="ElementShortName">ap_start</obj_property>
+            <obj_property name="ObjectShortName">ap_start</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="group48">
+         <obj_property name="label">Reset</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/ap_rst_n">
+            <obj_property name="ElementShortName">ap_rst_n</obj_property>
+            <obj_property name="ObjectShortName">ap_rst_n</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="group50">
+         <obj_property name="label">Clock</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/ap_clk">
+            <obj_property name="ElementShortName">ap_clk</obj_property>
+            <obj_property name="ObjectShortName">ap_clk</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group52">
+      <obj_property name="label">Test Bench Signals</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="group" fp_name="group53">
+         <obj_property name="label">Internal Signals</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="group54">
+            <obj_property name="label">Simulation Status</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="array" fp_name="/apatb_network_top/AUTOTB_TRANSACTION_NUM">
+               <obj_property name="ElementShortName">AUTOTB_TRANSACTION_NUM[31:0]</obj_property>
+               <obj_property name="ObjectShortName">AUTOTB_TRANSACTION_NUM[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_network_top/ready_cnt">
+               <obj_property name="ElementShortName">ready_cnt[31:0]</obj_property>
+               <obj_property name="ObjectShortName">ready_cnt[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_network_top/done_cnt">
+               <obj_property name="ElementShortName">done_cnt[31:0]</obj_property>
+               <obj_property name="ObjectShortName">done_cnt[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="group55">
+            <obj_property name="label">Port Depth</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="array" fp_name="/apatb_network_top/LENGTH_input_data_V_data_V">
+               <obj_property name="ElementShortName">LENGTH_input_data_V_data_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_input_data_V_data_V[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_network_top/LENGTH_input_data_V_keep_V">
+               <obj_property name="ElementShortName">LENGTH_input_data_V_keep_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_input_data_V_keep_V[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_network_top/LENGTH_input_data_V_strb_V">
+               <obj_property name="ElementShortName">LENGTH_input_data_V_strb_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_input_data_V_strb_V[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_network_top/LENGTH_input_data_V_user_V">
+               <obj_property name="ElementShortName">LENGTH_input_data_V_user_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_input_data_V_user_V[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_network_top/LENGTH_input_data_V_last_V">
+               <obj_property name="ElementShortName">LENGTH_input_data_V_last_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_input_data_V_last_V[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_network_top/LENGTH_input_data_V_id_V">
+               <obj_property name="ElementShortName">LENGTH_input_data_V_id_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_input_data_V_id_V[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_network_top/LENGTH_input_data_V_dest_V">
+               <obj_property name="ElementShortName">LENGTH_input_data_V_dest_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_input_data_V_dest_V[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_network_top/LENGTH_output_data_V_data_V">
+               <obj_property name="ElementShortName">LENGTH_output_data_V_data_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_output_data_V_data_V[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_network_top/LENGTH_output_data_V_keep_V">
+               <obj_property name="ElementShortName">LENGTH_output_data_V_keep_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_output_data_V_keep_V[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_network_top/LENGTH_output_data_V_strb_V">
+               <obj_property name="ElementShortName">LENGTH_output_data_V_strb_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_output_data_V_strb_V[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_network_top/LENGTH_output_data_V_user_V">
+               <obj_property name="ElementShortName">LENGTH_output_data_V_user_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_output_data_V_user_V[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_network_top/LENGTH_output_data_V_last_V">
+               <obj_property name="ElementShortName">LENGTH_output_data_V_last_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_output_data_V_last_V[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_network_top/LENGTH_output_data_V_id_V">
+               <obj_property name="ElementShortName">LENGTH_output_data_V_id_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_output_data_V_id_V[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_network_top/LENGTH_output_data_V_dest_V">
+               <obj_property name="ElementShortName">LENGTH_output_data_V_dest_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_output_data_V_dest_V[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_network_top/LENGTH_ap_return">
+               <obj_property name="ElementShortName">LENGTH_ap_return[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_ap_return[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="group74">
+         <obj_property name="label">C Outputs</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="group75">
+            <obj_property name="label">output_data(axis)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="array" fp_name="/apatb_network_top/output_data_TDEST">
+               <obj_property name="ElementShortName">output_data_TDEST[0:0]</obj_property>
+               <obj_property name="ObjectShortName">output_data_TDEST[0:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_network_top/output_data_TID">
+               <obj_property name="ElementShortName">output_data_TID[0:0]</obj_property>
+               <obj_property name="ObjectShortName">output_data_TID[0:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_network_top/output_data_TLAST">
+               <obj_property name="ElementShortName">output_data_TLAST[0:0]</obj_property>
+               <obj_property name="ObjectShortName">output_data_TLAST[0:0]</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_network_top/output_data_TUSER">
+               <obj_property name="ElementShortName">output_data_TUSER[0:0]</obj_property>
+               <obj_property name="ObjectShortName">output_data_TUSER[0:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_network_top/output_data_TSTRB">
+               <obj_property name="ElementShortName">output_data_TSTRB[1:0]</obj_property>
+               <obj_property name="ObjectShortName">output_data_TSTRB[1:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_network_top/output_data_TKEEP">
+               <obj_property name="ElementShortName">output_data_TKEEP[1:0]</obj_property>
+               <obj_property name="ObjectShortName">output_data_TKEEP[1:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_network_top/output_data_TREADY">
+               <obj_property name="ElementShortName">output_data_TREADY</obj_property>
+               <obj_property name="ObjectShortName">output_data_TREADY</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_network_top/output_data_TVALID">
+               <obj_property name="ElementShortName">output_data_TVALID</obj_property>
+               <obj_property name="ObjectShortName">output_data_TVALID</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_network_top/output_data_TDATA">
+               <obj_property name="ElementShortName">output_data_TDATA[15:0]</obj_property>
+               <obj_property name="ObjectShortName">output_data_TDATA[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="group85">
+            <obj_property name="label">return__return(axi_slave)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_network_top/AXILiteS_INTERRUPT">
+               <obj_property name="ElementShortName">AXILiteS_INTERRUPT</obj_property>
+               <obj_property name="ObjectShortName">AXILiteS_INTERRUPT</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_network_top/AXILiteS_BRESP">
+               <obj_property name="ElementShortName">AXILiteS_BRESP[1:0]</obj_property>
+               <obj_property name="ObjectShortName">AXILiteS_BRESP[1:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_network_top/AXILiteS_BREADY">
+               <obj_property name="ElementShortName">AXILiteS_BREADY</obj_property>
+               <obj_property name="ObjectShortName">AXILiteS_BREADY</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_network_top/AXILiteS_BVALID">
+               <obj_property name="ElementShortName">AXILiteS_BVALID</obj_property>
+               <obj_property name="ObjectShortName">AXILiteS_BVALID</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_network_top/AXILiteS_RRESP">
+               <obj_property name="ElementShortName">AXILiteS_RRESP[1:0]</obj_property>
+               <obj_property name="ObjectShortName">AXILiteS_RRESP[1:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_network_top/AXILiteS_RDATA">
+               <obj_property name="ElementShortName">AXILiteS_RDATA[31:0]</obj_property>
+               <obj_property name="ObjectShortName">AXILiteS_RDATA[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_network_top/AXILiteS_RREADY">
+               <obj_property name="ElementShortName">AXILiteS_RREADY</obj_property>
+               <obj_property name="ObjectShortName">AXILiteS_RREADY</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_network_top/AXILiteS_RVALID">
+               <obj_property name="ElementShortName">AXILiteS_RVALID</obj_property>
+               <obj_property name="ObjectShortName">AXILiteS_RVALID</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_network_top/AXILiteS_ARREADY">
+               <obj_property name="ElementShortName">AXILiteS_ARREADY</obj_property>
+               <obj_property name="ObjectShortName">AXILiteS_ARREADY</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_network_top/AXILiteS_ARVALID">
+               <obj_property name="ElementShortName">AXILiteS_ARVALID</obj_property>
+               <obj_property name="ObjectShortName">AXILiteS_ARVALID</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_network_top/AXILiteS_ARADDR">
+               <obj_property name="ElementShortName">AXILiteS_ARADDR[4:0]</obj_property>
+               <obj_property name="ObjectShortName">AXILiteS_ARADDR[4:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_network_top/AXILiteS_WSTRB">
+               <obj_property name="ElementShortName">AXILiteS_WSTRB[3:0]</obj_property>
+               <obj_property name="ObjectShortName">AXILiteS_WSTRB[3:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_network_top/AXILiteS_WDATA">
+               <obj_property name="ElementShortName">AXILiteS_WDATA[31:0]</obj_property>
+               <obj_property name="ObjectShortName">AXILiteS_WDATA[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_network_top/AXILiteS_WREADY">
+               <obj_property name="ElementShortName">AXILiteS_WREADY</obj_property>
+               <obj_property name="ObjectShortName">AXILiteS_WREADY</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_network_top/AXILiteS_WVALID">
+               <obj_property name="ElementShortName">AXILiteS_WVALID</obj_property>
+               <obj_property name="ObjectShortName">AXILiteS_WVALID</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_network_top/AXILiteS_AWREADY">
+               <obj_property name="ElementShortName">AXILiteS_AWREADY</obj_property>
+               <obj_property name="ObjectShortName">AXILiteS_AWREADY</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_network_top/AXILiteS_AWVALID">
+               <obj_property name="ElementShortName">AXILiteS_AWVALID</obj_property>
+               <obj_property name="ObjectShortName">AXILiteS_AWVALID</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_network_top/AXILiteS_AWADDR">
+               <obj_property name="ElementShortName">AXILiteS_AWADDR[4:0]</obj_property>
+               <obj_property name="ObjectShortName">AXILiteS_AWADDR[4:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="group104">
+         <obj_property name="label">C Inputs</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="group105">
+            <obj_property name="label">input_data(axis)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="array" fp_name="/apatb_network_top/input_data_TDEST">
+               <obj_property name="ElementShortName">input_data_TDEST[0:0]</obj_property>
+               <obj_property name="ObjectShortName">input_data_TDEST[0:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_network_top/input_data_TID">
+               <obj_property name="ElementShortName">input_data_TID[0:0]</obj_property>
+               <obj_property name="ObjectShortName">input_data_TID[0:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_network_top/input_data_TLAST">
+               <obj_property name="ElementShortName">input_data_TLAST[0:0]</obj_property>
+               <obj_property name="ObjectShortName">input_data_TLAST[0:0]</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_network_top/input_data_TUSER">
+               <obj_property name="ElementShortName">input_data_TUSER[0:0]</obj_property>
+               <obj_property name="ObjectShortName">input_data_TUSER[0:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_network_top/input_data_TSTRB">
+               <obj_property name="ElementShortName">input_data_TSTRB[1:0]</obj_property>
+               <obj_property name="ObjectShortName">input_data_TSTRB[1:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_network_top/input_data_TKEEP">
+               <obj_property name="ElementShortName">input_data_TKEEP[1:0]</obj_property>
+               <obj_property name="ObjectShortName">input_data_TKEEP[1:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_network_top/input_data_TREADY">
+               <obj_property name="ElementShortName">input_data_TREADY</obj_property>
+               <obj_property name="ObjectShortName">input_data_TREADY</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_network_top/input_data_TVALID">
+               <obj_property name="ElementShortName">input_data_TVALID</obj_property>
+               <obj_property name="ObjectShortName">input_data_TVALID</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_network_top/input_data_TDATA">
+               <obj_property name="ElementShortName">input_data_TDATA[15:0]</obj_property>
+               <obj_property name="ObjectShortName">input_data_TDATA[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+</wave_config>

@@ -2,8 +2,8 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Sat Dec 21 13:38:00 2019
-# Process ID: 27573
+# Start of session at: Sat Dec 21 17:48:32 2019
+# Process ID: 27554
 # Current directory: /home/shts/DeepCAEonFPGA/HLx/HLx.runs/design_1_network_0_0_synth_1
 # Command line: vivado -log design_1_network_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_network_0_0.tcl
 # Log file: /home/shts/DeepCAEonFPGA/HLx/HLx.runs/design_1_network_0_0_synth_1/design_1_network_0_0.vds

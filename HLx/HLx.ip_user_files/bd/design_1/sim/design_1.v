@@ -1,7 +1,7 @@
 //Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-//Date        : Sat Dec 21 14:30:55 2019
+//Date        : Sat Dec 21 17:48:06 2019
 //Host        : shts-server running 64-bit Ubuntu 18.04.3 LTS
 //Command     : generate_target design_1.bd
 //Design      : design_1
@@ -88,6 +88,7 @@ module design_1
   wire [0:0]axi_dma_0_M_AXI_S2MM_WREADY;
   wire [7:0]axi_dma_0_M_AXI_S2MM_WSTRB;
   wire axi_dma_0_M_AXI_S2MM_WVALID;
+  wire axi_dma_0_s_axis_s2mm_tready;
   wire [31:0]axi_mem_intercon_M00_AXI_ARADDR;
   wire [1:0]axi_mem_intercon_M00_AXI_ARBURST;
   wire [3:0]axi_mem_intercon_M00_AXI_ARCACHE;
@@ -134,7 +135,6 @@ module design_1
   wire [15:0]network_0_output_data_TDATA;
   wire [1:0]network_0_output_data_TKEEP;
   wire [0:0]network_0_output_data_TLAST;
-  wire network_0_output_data_TREADY;
   wire network_0_output_data_TVALID;
   wire [14:0]processing_system7_0_DDR_ADDR;
   wire [2:0]processing_system7_0_DDR_BA;
@@ -290,7 +290,7 @@ module design_1
         .s_axis_s2mm_tdata(network_0_output_data_TDATA),
         .s_axis_s2mm_tkeep(network_0_output_data_TKEEP),
         .s_axis_s2mm_tlast(network_0_output_data_TLAST),
-        .s_axis_s2mm_tready(network_0_output_data_TREADY),
+        .s_axis_s2mm_tready(axi_dma_0_s_axis_s2mm_tready),
         .s_axis_s2mm_tvalid(network_0_output_data_TVALID));
   design_1_axi_mem_intercon_0 axi_mem_intercon_1
        (.ACLK(processing_system7_0_FCLK_CLK0),
@@ -396,7 +396,7 @@ module design_1
         .output_data_TDATA(network_0_output_data_TDATA),
         .output_data_TKEEP(network_0_output_data_TKEEP),
         .output_data_TLAST(network_0_output_data_TLAST),
-        .output_data_TREADY(network_0_output_data_TREADY),
+        .output_data_TREADY(axi_dma_0_s_axis_s2mm_tready),
         .output_data_TVALID(network_0_output_data_TVALID),
         .s_axi_AXILiteS_ARADDR(ps7_0_axi_periph_M01_AXI_ARADDR[4:0]),
         .s_axi_AXILiteS_ARREADY(ps7_0_axi_periph_M01_AXI_ARREADY),
