@@ -25,7 +25,8 @@ vlib activehdl/axi_clock_converter_v2_1_17
 vlib activehdl/blk_mem_gen_v8_4_2
 vlib activehdl/axi_dwidth_converter_v2_1_18
 vlib activehdl/axis_infrastructure_v1_1_0
-vlib activehdl/axis_data_fifo_v2_0_0
+vlib activehdl/axis_register_slice_v1_1_18
+vlib activehdl/axis_dwidth_converter_v1_1_17
 
 vmap xilinx_vip activehdl/xilinx_vip
 vmap xil_defaultlib activehdl/xil_defaultlib
@@ -51,7 +52,8 @@ vmap axi_clock_converter_v2_1_17 activehdl/axi_clock_converter_v2_1_17
 vmap blk_mem_gen_v8_4_2 activehdl/blk_mem_gen_v8_4_2
 vmap axi_dwidth_converter_v2_1_18 activehdl/axi_dwidth_converter_v2_1_18
 vmap axis_infrastructure_v1_1_0 activehdl/axis_infrastructure_v1_1_0
-vmap axis_data_fifo_v2_0_0 activehdl/axis_data_fifo_v2_0_0
+vmap axis_register_slice_v1_1_18 activehdl/axis_register_slice_v1_1_18
+vmap axis_dwidth_converter_v1_1_17 activehdl/axis_dwidth_converter_v1_1_17
 
 vlog -work xilinx_vip  -sv2k12 "+incdir+/tools/Xilinx/Vivado/2018.3/data/xilinx_vip/include" \
 "/tools/Xilinx/Vivado/2018.3/data/xilinx_vip/hdl/axi4stream_vip_axi4streampc.sv" \
@@ -167,11 +169,14 @@ vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../HLx.srcs/sources_1/bd/desi
 vlog -work axis_infrastructure_v1_1_0  -v2k5 "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/70cf/hdl" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/8713/hdl" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0" "+incdir+/tools/Xilinx/Vivado/2018.3/data/xilinx_vip/include" \
 "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/8713/hdl/axis_infrastructure_v1_1_vl_rfs.v" \
 
-vlog -work axis_data_fifo_v2_0_0  -v2k5 "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/70cf/hdl" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/8713/hdl" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0" "+incdir+/tools/Xilinx/Vivado/2018.3/data/xilinx_vip/include" \
-"../../../../HLx.srcs/sources_1/bd/design_1/ipshared/4efd/hdl/axis_data_fifo_v2_0_vl_rfs.v" \
+vlog -work axis_register_slice_v1_1_18  -v2k5 "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/70cf/hdl" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/8713/hdl" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0" "+incdir+/tools/Xilinx/Vivado/2018.3/data/xilinx_vip/include" \
+"../../../../HLx.srcs/sources_1/bd/design_1/ipshared/af00/hdl/axis_register_slice_v1_1_vl_rfs.v" \
+
+vlog -work axis_dwidth_converter_v1_1_17  -v2k5 "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/70cf/hdl" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/8713/hdl" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0" "+incdir+/tools/Xilinx/Vivado/2018.3/data/xilinx_vip/include" \
+"../../../../HLx.srcs/sources_1/bd/design_1/ipshared/4ca6/hdl/axis_dwidth_converter_v1_1_vl_rfs.v" \
 
 vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/70cf/hdl" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/8713/hdl" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0" "+incdir+/tools/Xilinx/Vivado/2018.3/data/xilinx_vip/include" \
-"../../../bd/design_1/ip/design_1_axis_data_fifo_0_0/sim/design_1_axis_data_fifo_0_0.v" \
+"../../../bd/design_1/ip/design_1_axis_dwidth_converter_0_0/sim/design_1_axis_dwidth_converter_0_0.v" \
 
 vlog -work xil_defaultlib \
 "glbl.v"

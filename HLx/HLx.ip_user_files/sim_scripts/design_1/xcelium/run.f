@@ -112,11 +112,14 @@
 -makelib xcelium_lib/axis_infrastructure_v1_1_0 \
   "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/8713/hdl/axis_infrastructure_v1_1_vl_rfs.v" \
 -endlib
--makelib xcelium_lib/axis_data_fifo_v2_0_0 \
-  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/4efd/hdl/axis_data_fifo_v2_0_vl_rfs.v" \
+-makelib xcelium_lib/axis_register_slice_v1_1_18 \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/af00/hdl/axis_register_slice_v1_1_vl_rfs.v" \
+-endlib
+-makelib xcelium_lib/axis_dwidth_converter_v1_1_17 \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/4ca6/hdl/axis_dwidth_converter_v1_1_vl_rfs.v" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
-  "../../../bd/design_1/ip/design_1_axis_data_fifo_0_0/sim/design_1_axis_data_fifo_0_0.v" \
+  "../../../bd/design_1/ip/design_1_axis_dwidth_converter_0_0/sim/design_1_axis_dwidth_converter_0_0.v" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   glbl.v
