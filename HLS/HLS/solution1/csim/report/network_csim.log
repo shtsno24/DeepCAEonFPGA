@@ -1,19 +1,13 @@
 INFO: [SIM 2] *************** CSIM start ***************
 INFO: [SIM 4] CSIM will launch GCC as the compiler.
    Compiling ../../../../../mnist_AXI_Stream.cpp in debug mode
-   Compiling ../../../../../layers_c/up_sampling2d.cpp in debug mode
-   Compiling ../../../../../layers_c/separable_conv2d.cpp in debug mode
-   Compiling ../../../../../layers_c/pointwise_conv2d.cpp in debug mode
-   Compiling ../../../../../layers_c/padding2d.cpp in debug mode
-   Compiling ../../../../../layers_c/max_pooling2d.cpp in debug mode
    Compiling ../../../../../layers_c/depthwise_conv2d.cpp in debug mode
+   Compiling ../../../../../layers_c/max_pooling2d.cpp in debug mode
+   Compiling ../../../../../layers_c/padding2d.cpp in debug mode
+   Compiling ../../../../../layers_c/pointwise_conv2d.cpp in debug mode
+   Compiling ../../../../../layers_c/separable_conv2d.cpp in debug mode
+   Compiling ../../../../../layers_c/up_sampling2d.cpp in debug mode
    Generating csim.exe
-
-output_buffer_length : 0
-
-
-output_buffer_length : 784
-
      0 
 
      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0 
@@ -44,6 +38,10 @@ output_buffer_length : 784
      0      0      0      0      0      0      0      0      0   7773  16318  16318  14070   2569      0      0      0      0      0      0      0      0      0      0      0      0      0      0 
      0      0      0      0      0      0      0      0      0   7773  16318  13299   1156      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0 
      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0 
+
+
+
+count :784
 
 INFO: [SIM 1] CSim done with 0 errors.
 INFO: [SIM 3] *************** CSIM finish ***************

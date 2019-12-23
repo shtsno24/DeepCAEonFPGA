@@ -1,13 +1,13 @@
 #-----------------------------------------------------------
-# xsim v2018.3 (64-bit)
-# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
-# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Sat Dec 21 17:39:28 2019
-# Process ID: 25965
-# Current directory: /home/shts/DeepCAEonFPGA/HLS/HLS/solution1/sim/verilog
+# xsim v2018.3.1 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Mon Dec 23 15:54:28 2019
+# Process ID: 12538
+# Current directory: /home/masudalab/DeepCAEonFPGA/DeepCAEonFPGA/HLS/HLS/solution1/sim/verilog
 # Command line: xsim -mode tcl -source {xsim.dir/network/xsim_script.tcl}
-# Log file: /home/shts/DeepCAEonFPGA/HLS/HLS/solution1/sim/verilog/xsim.log
-# Journal file: /home/shts/DeepCAEonFPGA/HLS/HLS/solution1/sim/verilog/xsim.jou
+# Log file: /home/masudalab/DeepCAEonFPGA/DeepCAEonFPGA/HLS/HLS/solution1/sim/verilog/xsim.log
+# Journal file: /home/masudalab/DeepCAEonFPGA/DeepCAEonFPGA/HLS/HLS/solution1/sim/verilog/xsim.jou
 #-----------------------------------------------------------
 source xsim.dir/network/xsim_script.tcl
 # xsim {network} -autoloadwcfg -tclbatch {network.tcl}
@@ -74,20 +74,20 @@ WARNING: [Simtcl 6-197] One or more HDL objects could not be logged because of o
 ## add_wave /apatb_network_top/AUTOTB_TRANSACTION_NUM -into $tb_simstatus_group -radix hex
 ## add_wave /apatb_network_top/ready_cnt -into $tb_simstatus_group -radix hex
 ## add_wave /apatb_network_top/done_cnt -into $tb_simstatus_group -radix hex
-## add_wave /apatb_network_top/LENGTH_input_data_V_data_V -into $tb_portdepth_group -radix hex
-## add_wave /apatb_network_top/LENGTH_input_data_V_keep_V -into $tb_portdepth_group -radix hex
-## add_wave /apatb_network_top/LENGTH_input_data_V_strb_V -into $tb_portdepth_group -radix hex
-## add_wave /apatb_network_top/LENGTH_input_data_V_user_V -into $tb_portdepth_group -radix hex
-## add_wave /apatb_network_top/LENGTH_input_data_V_last_V -into $tb_portdepth_group -radix hex
-## add_wave /apatb_network_top/LENGTH_input_data_V_id_V -into $tb_portdepth_group -radix hex
-## add_wave /apatb_network_top/LENGTH_input_data_V_dest_V -into $tb_portdepth_group -radix hex
-## add_wave /apatb_network_top/LENGTH_output_data_V_data_V -into $tb_portdepth_group -radix hex
-## add_wave /apatb_network_top/LENGTH_output_data_V_keep_V -into $tb_portdepth_group -radix hex
-## add_wave /apatb_network_top/LENGTH_output_data_V_strb_V -into $tb_portdepth_group -radix hex
-## add_wave /apatb_network_top/LENGTH_output_data_V_user_V -into $tb_portdepth_group -radix hex
-## add_wave /apatb_network_top/LENGTH_output_data_V_last_V -into $tb_portdepth_group -radix hex
-## add_wave /apatb_network_top/LENGTH_output_data_V_id_V -into $tb_portdepth_group -radix hex
-## add_wave /apatb_network_top/LENGTH_output_data_V_dest_V -into $tb_portdepth_group -radix hex
+## add_wave /apatb_network_top/LENGTH_input_data_data_V -into $tb_portdepth_group -radix hex
+## add_wave /apatb_network_top/LENGTH_input_data_keep_V -into $tb_portdepth_group -radix hex
+## add_wave /apatb_network_top/LENGTH_input_data_strb_V -into $tb_portdepth_group -radix hex
+## add_wave /apatb_network_top/LENGTH_input_data_user_V -into $tb_portdepth_group -radix hex
+## add_wave /apatb_network_top/LENGTH_input_data_last_V -into $tb_portdepth_group -radix hex
+## add_wave /apatb_network_top/LENGTH_input_data_id_V -into $tb_portdepth_group -radix hex
+## add_wave /apatb_network_top/LENGTH_input_data_dest_V -into $tb_portdepth_group -radix hex
+## add_wave /apatb_network_top/LENGTH_output_data_data_V -into $tb_portdepth_group -radix hex
+## add_wave /apatb_network_top/LENGTH_output_data_keep_V -into $tb_portdepth_group -radix hex
+## add_wave /apatb_network_top/LENGTH_output_data_strb_V -into $tb_portdepth_group -radix hex
+## add_wave /apatb_network_top/LENGTH_output_data_user_V -into $tb_portdepth_group -radix hex
+## add_wave /apatb_network_top/LENGTH_output_data_last_V -into $tb_portdepth_group -radix hex
+## add_wave /apatb_network_top/LENGTH_output_data_id_V -into $tb_portdepth_group -radix hex
+## add_wave /apatb_network_top/LENGTH_output_data_dest_V -into $tb_portdepth_group -radix hex
 ## add_wave /apatb_network_top/LENGTH_ap_return -into $tb_portdepth_group -radix hex
 ## set tbcoutputgroup [add_wave_group "C Outputs" -into $testbenchgroup]
 ## set tb_output_data_group [add_wave_group output_data(axis) -into $tbcoutputgroup]
@@ -138,9 +138,9 @@ WARNING: [Simtcl 6-197] One or more HDL objects could not be logged because of o
 //
 // RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
 ////////////////////////////////////////////////////////////////////////////////////
-// RTL Simulation : 0 / 1 [0.00%] @ "125000"
-// RTL Simulation : 1 / 1 [100.00%] @ "31805000"
+// RTL Simulation : 0 / 1 [n/a] @ "125000"
+// RTL Simulation : 1 / 1 [n/a] @ "31805000"
 ////////////////////////////////////////////////////////////////////////////////////
-$finish called at time : 31845 ns : File "/home/shts/DeepCAEonFPGA/HLS/HLS/solution1/sim/verilog/network.autotb.v" Line 498
+$finish called at time : 31845 ns : File "/home/masudalab/DeepCAEonFPGA/DeepCAEonFPGA/HLS/HLS/solution1/sim/verilog/network.autotb.v" Line 498
 ## quit
-INFO: [Common 17-206] Exiting xsim at Sat Dec 21 17:39:37 2019...
+INFO: [Common 17-206] Exiting xsim at Mon Dec 23 15:54:36 2019...

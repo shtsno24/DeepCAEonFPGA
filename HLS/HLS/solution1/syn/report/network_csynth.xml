@@ -1,7 +1,7 @@
 <profile>
 
 <ReportVersion>
-<Version>2018.3</Version>
+<Version>2018.3.1</Version>
 </ReportVersion>
 
 <UserAssignments>
@@ -21,16 +21,16 @@
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>3142</Best-caseLatency>
-<Average-caseLatency>3142</Average-caseLatency>
-<Worst-caseLatency>3142</Worst-caseLatency>
-<Interval-min>3143</Interval-min>
-<Interval-max>3143</Interval-max>
+<Best-caseLatency>undef</Best-caseLatency>
+<Average-caseLatency>undef</Average-caseLatency>
+<Worst-caseLatency>undef</Worst-caseLatency>
+<Interval-min>undef</Interval-min>
+<Interval-max>undef</Interval-max>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <Loop1>
-<TripCount>784</TripCount>
-<Latency>784</Latency>
+<TripCount>undef</TripCount>
+<Latency>undef</Latency>
 <IterationLatency>1</IterationLatency>
 </Loop1>
 <Loop2>
@@ -50,8 +50,8 @@
 <AreaEstimates>
 <Resources>
 <BRAM_18K>17</BRAM_18K>
-<FF>230</FF>
-<LUT>578</LUT>
+<FF>258</FF>
+<LUT>624</LUT>
 <DSP48E>0</DSP48E>
 </Resources>
 <AvailableResources>
@@ -319,7 +319,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>input_data_TDATA</name>
-<Object>input_data_V_data_V</Object>
+<Object>input_data_data_V</Object>
 <Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>axis</IOProtocol>
@@ -331,7 +331,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>input_data_TVALID</name>
-<Object>input_data_V_dest_V</Object>
+<Object>input_data_dest_V</Object>
 <Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>axis</IOProtocol>
@@ -343,7 +343,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>input_data_TREADY</name>
-<Object>input_data_V_dest_V</Object>
+<Object>input_data_dest_V</Object>
 <Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>axis</IOProtocol>
@@ -355,7 +355,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>input_data_TDEST</name>
-<Object>input_data_V_dest_V</Object>
+<Object>input_data_dest_V</Object>
 <Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>axis</IOProtocol>
@@ -367,7 +367,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>input_data_TKEEP</name>
-<Object>input_data_V_keep_V</Object>
+<Object>input_data_keep_V</Object>
 <Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>axis</IOProtocol>
@@ -379,7 +379,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>input_data_TSTRB</name>
-<Object>input_data_V_strb_V</Object>
+<Object>input_data_strb_V</Object>
 <Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>axis</IOProtocol>
@@ -391,7 +391,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>input_data_TUSER</name>
-<Object>input_data_V_user_V</Object>
+<Object>input_data_user_V</Object>
 <Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>axis</IOProtocol>
@@ -403,7 +403,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>input_data_TLAST</name>
-<Object>input_data_V_last_V</Object>
+<Object>input_data_last_V</Object>
 <Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>axis</IOProtocol>
@@ -415,7 +415,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>input_data_TID</name>
-<Object>input_data_V_id_V</Object>
+<Object>input_data_id_V</Object>
 <Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>axis</IOProtocol>
@@ -427,7 +427,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>output_data_TDATA</name>
-<Object>output_data_V_data_V</Object>
+<Object>output_data_data_V</Object>
 <Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>axis</IOProtocol>
@@ -439,7 +439,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>output_data_TREADY</name>
-<Object>output_data_V_data_V</Object>
+<Object>output_data_data_V</Object>
 <Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>axis</IOProtocol>
@@ -451,7 +451,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>output_data_TVALID</name>
-<Object>output_data_V_dest_V</Object>
+<Object>output_data_dest_V</Object>
 <Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>axis</IOProtocol>
@@ -463,7 +463,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>output_data_TDEST</name>
-<Object>output_data_V_dest_V</Object>
+<Object>output_data_dest_V</Object>
 <Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>axis</IOProtocol>
@@ -475,7 +475,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>output_data_TKEEP</name>
-<Object>output_data_V_keep_V</Object>
+<Object>output_data_keep_V</Object>
 <Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>axis</IOProtocol>
@@ -487,7 +487,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>output_data_TSTRB</name>
-<Object>output_data_V_strb_V</Object>
+<Object>output_data_strb_V</Object>
 <Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>axis</IOProtocol>
@@ -499,7 +499,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>output_data_TUSER</name>
-<Object>output_data_V_user_V</Object>
+<Object>output_data_user_V</Object>
 <Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>axis</IOProtocol>
@@ -511,7 +511,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>output_data_TLAST</name>
-<Object>output_data_V_last_V</Object>
+<Object>output_data_last_V</Object>
 <Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>axis</IOProtocol>
@@ -523,7 +523,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>output_data_TID</name>
-<Object>output_data_V_id_V</Object>
+<Object>output_data_id_V</Object>
 <Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>axis</IOProtocol>

@@ -28584,9 +28584,10 @@ template<int D>
 
 using namespace std;
 
-typedef hls::stream< ap_axis<16, 1, 1, 1> > axis;
 
-int network(axis &input_data, axis &output_data) {
+typedef ap_axis<16, 1, 1, 1> axis;
+
+int network(axis input_data[784], axis output_data[784]) {_ssdm_SpecArrayDimSize(input_data, 784);_ssdm_SpecArrayDimSize(output_data, 784);
 #pragma HLS INTERFACE axis register both port=&input_data
 #pragma HLS INTERFACE axis register both port=&output_data
 #pragma HLS INTERFACE s_axilite register port=return
@@ -28594,88 +28595,81 @@ int network(axis &input_data, axis &output_data) {
  int16_t MemBank_A[14400], MemBank_B[14400];
  const uint64_t array_length = (uint64_t)SeparableConv2D_4_depth * SeparableConv2D_4_height * SeparableConv2D_4_width;
 
- int16_t MemBank_Out[1 * 28 * 28];
+ int16_t MemBank_Out[784];
 
  ap_axis<16, 1, 1, 1> tmp;
- ap_axis<16, 1, 1, 1> out;
 
- for(int i = 0; i < input_0_depth * input_0_height * input_0_width; i++){
-  input_data >> tmp;
-  MemBank_B[i] = (int16_t) tmp.data;
- }
-# 131 "../mnist_AXI_Stream.cpp"
- for(int i = 0; i < array_length; i++){
+ int i = 0;
+ do {
+  tmp = input_data[i];
+  MemBank_B[i] = (int16_t)tmp.data;
+  i += 1;
+ } while(tmp.last != 1);
+# 138 "../mnist_AXI_Stream.cpp"
+ for(i = 0; i < array_length; i++){
 
   MemBank_Out[i] = (int16_t)MemBank_B[i];
  }
-
- for(uint64_t i = 0; i < array_length; i++){
+# 161 "../mnist_AXI_Stream.cpp"
+ for(i = 0; i < array_length; i++){
 #pragma HLS PIPELINE
- out.user = 0;
-  out.last = 0;
-  out.dest = 0;
-  out.id = 0;
-  out.keep = 0;
-  out.strb = 0;
+ tmp.dest = 0;
+  tmp.id = 0;
+  tmp.keep = 0;
+  tmp.strb = 0;
+  tmp.data = MemBank_Out[i];
+  tmp.user = 0;
+  tmp.last = 0;
   if(i == 0){
-   out.user = 1;
+   tmp.user = 1;
   }
   if(i == array_length - 1){
-   out.last = 1;
+   tmp.last = 1;
   }
-  out.data = (int16_t)(MemBank_Out[i]);
-  output_data << out;
+  output_data[i] = tmp;
  }
  return(0);
 }
 
 int main(void){
- axis input_buffer;
- axis output_buffer;
+ axis input_buffer[784];
+#pragma HLS reset variable=&input_buffer
+ axis output_buffer[784];
 #pragma HLS reset variable=&output_buffer
 
  int16_t output_img_buff[1 * 28 * 28];
-    ap_axis<16, 1, 1, 1> tmp;
-
+    ap_axis<16, 1, 1, 1> temp;
+# 214 "../mnist_AXI_Stream.cpp"
  int i = 0;
  for(int depth = 0; depth < 1; depth++){
   for(int height = 0; height < 28; height++){
    for(int width = 0; width < 28; width++){
-    tmp.data = (int16_t)test_input_fix16[depth][height][width];
+    temp.data = (int16_t)test_input_fix16[depth][height][width];
 
-    if(depth == 0 && height == 0 && width == 0){
-     tmp.user = 1;
-    } else {
-     tmp.user = 0;
+    if(i == 0){
+     temp.user = 1;
     }
 
-    if(depth == 1 - 1 && height == 28 - 1 && width == 28 - 1){
-     tmp.last = 1;
-    } else {
-     tmp.last = 0;
+    if(i == 783){
+     temp.last = 1;
     }
 
-    input_buffer << tmp;
+    input_buffer[i] = temp;
     i += 1;
    }
   }
  }
 
- cout << "\r\n";
- cout << "output_buffer_length : " << output_buffer.size() << endl;
- cout << "\r\n";
+
+
+
 
  network(input_buffer, output_buffer);
-
- cout << "\r\n";
- cout << "output_buffer_length : " << output_buffer.size() << endl;
- cout << "\r\n";
-
+# 257 "../mnist_AXI_Stream.cpp"
  i = 0;
  do {
-  output_buffer >> tmp;
-  output_img_buff[i] = (int16_t)tmp.data;
-
+  temp = output_buffer[i];
+  output_img_buff[i] = (int16_t)temp.data;
   cout<< setw(6) << right << output_img_buff[i] << " ";
   if(i % (28 * 28) == 0){
    cout << "\n" << endl;
@@ -28683,9 +28677,9 @@ int main(void){
    cout << endl;
   }
   i += 1;
- } while(tmp.last != 1);
+ } while(temp.last != 1);
 
- cout << "\r\n";
+ cout << "\r\n\n\n\n" << "count :" << i << "\r\n";
  cout << "\r\n";
 
  return 0;

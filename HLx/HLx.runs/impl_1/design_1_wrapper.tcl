@@ -68,20 +68,20 @@ set rc [catch {
   create_project -in_memory -part xc7z020clg400-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir /home/shts/DeepCAEonFPGA/HLx/HLx.cache/wt [current_project]
-  set_property parent.project_path /home/shts/DeepCAEonFPGA/HLx/HLx.xpr [current_project]
+  set_property webtalk.parent_dir /home/masudalab/DeepCAEonFPGA/DeepCAEonFPGA/HLx/HLx.cache/wt [current_project]
+  set_property parent.project_path /home/masudalab/DeepCAEonFPGA/DeepCAEonFPGA/HLx/HLx.xpr [current_project]
   set_property ip_repo_paths {
-  /home/shts/DeepCAEonFPGA/ip_generated/xilinx_com_hls_network_1_0
-  /home/shts/PYNQ_Develop
+  /home/masudalab/DeepCAEonFPGA/DeepCAEonFPGA/ip_generated/xilinx_com_hls_network_1_0
+  /home/masudalab/DeepCAEonFPGA/PYNQ_Develop
 } [current_project]
   update_ip_catalog
-  set_property ip_output_repo /home/shts/DeepCAEonFPGA/HLx/HLx.cache/ip [current_project]
+  set_property ip_output_repo /home/masudalab/DeepCAEonFPGA/DeepCAEonFPGA/HLx/HLx.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
-  add_files -quiet /home/shts/DeepCAEonFPGA/HLx/HLx.runs/synth_1/design_1_wrapper.dcp
+  add_files -quiet /home/masudalab/DeepCAEonFPGA/DeepCAEonFPGA/HLx/HLx.runs/synth_1/design_1_wrapper.dcp
   set_msg_config -source 4 -id {BD 41-1661} -limit 0
   set_param project.isImplRun true
-  add_files /home/shts/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/design_1.bd
+  add_files /home/masudalab/DeepCAEonFPGA/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/design_1.bd
   set_param project.isImplRun false
   set_param project.isImplRun true
   link_design -top design_1_wrapper -part xc7z020clg400-1

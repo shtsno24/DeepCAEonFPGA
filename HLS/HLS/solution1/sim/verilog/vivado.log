@@ -1,13 +1,13 @@
 #-----------------------------------------------------------
-# Vivado v2018.3 (64-bit)
-# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
-# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Sat Dec 21 17:39:43 2019
-# Process ID: 26108
-# Current directory: /home/shts/DeepCAEonFPGA/HLS/HLS/solution1/sim/verilog
+# Vivado v2018.3.1 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Mon Dec 23 15:55:09 2019
+# Process ID: 12667
+# Current directory: /home/masudalab/DeepCAEonFPGA/DeepCAEonFPGA/HLS/HLS/solution1/sim/verilog
 # Command line: vivado -source open_wave.tcl
-# Log file: /home/shts/DeepCAEonFPGA/HLS/HLS/solution1/sim/verilog/vivado.log
-# Journal file: /home/shts/DeepCAEonFPGA/HLS/HLS/solution1/sim/verilog/vivado.jou
+# Log file: /home/masudalab/DeepCAEonFPGA/DeepCAEonFPGA/HLS/HLS/solution1/sim/verilog/vivado.log
+# Journal file: /home/masudalab/DeepCAEonFPGA/DeepCAEonFPGA/HLS/HLS/solution1/sim/verilog/vivado.jou
 #-----------------------------------------------------------
 start_gui
 source open_wave.tcl
@@ -16,8 +16,8 @@ INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2018.3/data/ip'.
 # open_wave_database network.wdb
-open_wave_config /home/shts/DeepCAEonFPGA/HLS/HLS/solution1/sim/verilog/network.wcfg
+open_wave_config /home/masudalab/DeepCAEonFPGA/DeepCAEonFPGA/HLS/HLS/solution1/sim/verilog/network.wcfg
 close_sim
 INFO: [Simtcl 6-16] Simulation closed
 exit
-INFO: [Common 17-206] Exiting Vivado at Sat Dec 21 17:41:28 2019...
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 23 15:56:02 2019...

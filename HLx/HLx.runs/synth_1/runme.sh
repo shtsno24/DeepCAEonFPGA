@@ -3,7 +3,7 @@
 # 
 # Vivado(TM)
 # runme.sh: a Vivado-generated Runs Script for UNIX
-# Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+# Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 # 
 
 if [ -z "$PATH" ]; then
@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/shts/DeepCAEonFPGA/HLx/HLx.runs/synth_1'
+HD_PWD='/home/masudalab/DeepCAEonFPGA/DeepCAEonFPGA/HLx/HLx.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

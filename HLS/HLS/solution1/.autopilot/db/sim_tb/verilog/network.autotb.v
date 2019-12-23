@@ -1,9 +1,9 @@
 // ==============================================================
-// File generated on Sat Dec 21 17:39:22 JST 2019
-// Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
-// SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
-// IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-// Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+// File generated on Mon Dec 23 15:54:21 JST 2019
+// Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3.1 (64-bit)
+// SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
+// IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+// Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // ==============================================================
  `timescale 1ns/1ps
 
@@ -17,83 +17,83 @@
 `define AUTOTB_MAX_ALLOW_LATENCY  15000000
 `define AUTOTB_CLOCK_PERIOD_DIV2 5.00
 
-`define AESL_DEPTH_input_data_V_data_V 1
-`define AESL_DEPTH_input_data_V_keep_V 1
-`define AESL_DEPTH_input_data_V_strb_V 1
-`define AESL_DEPTH_input_data_V_user_V 1
-`define AESL_DEPTH_input_data_V_last_V 1
-`define AESL_DEPTH_input_data_V_id_V 1
-`define AESL_DEPTH_input_data_V_dest_V 1
-`define AESL_DEPTH_output_data_V_data_V 1
-`define AESL_DEPTH_output_data_V_keep_V 1
-`define AESL_DEPTH_output_data_V_strb_V 1
-`define AESL_DEPTH_output_data_V_user_V 1
-`define AESL_DEPTH_output_data_V_last_V 1
-`define AESL_DEPTH_output_data_V_id_V 1
-`define AESL_DEPTH_output_data_V_dest_V 1
-`define AUTOTB_TVIN_input_data_V_data_V  "./c.network.autotvin_input_data_V_data_V.dat"
-`define AUTOTB_TVIN_input_data_V_keep_V  "./c.network.autotvin_input_data_V_keep_V.dat"
-`define AUTOTB_TVIN_input_data_V_strb_V  "./c.network.autotvin_input_data_V_strb_V.dat"
-`define AUTOTB_TVIN_input_data_V_user_V  "./c.network.autotvin_input_data_V_user_V.dat"
-`define AUTOTB_TVIN_input_data_V_last_V  "./c.network.autotvin_input_data_V_last_V.dat"
-`define AUTOTB_TVIN_input_data_V_id_V  "./c.network.autotvin_input_data_V_id_V.dat"
-`define AUTOTB_TVIN_input_data_V_dest_V  "./c.network.autotvin_input_data_V_dest_V.dat"
-`define AUTOTB_TVIN_output_data_V_data_V  "./c.network.autotvin_output_data_V_data_V.dat"
-`define AUTOTB_TVIN_output_data_V_keep_V  "./c.network.autotvin_output_data_V_keep_V.dat"
-`define AUTOTB_TVIN_output_data_V_strb_V  "./c.network.autotvin_output_data_V_strb_V.dat"
-`define AUTOTB_TVIN_output_data_V_user_V  "./c.network.autotvin_output_data_V_user_V.dat"
-`define AUTOTB_TVIN_output_data_V_last_V  "./c.network.autotvin_output_data_V_last_V.dat"
-`define AUTOTB_TVIN_output_data_V_id_V  "./c.network.autotvin_output_data_V_id_V.dat"
-`define AUTOTB_TVIN_output_data_V_dest_V  "./c.network.autotvin_output_data_V_dest_V.dat"
-`define AUTOTB_TVIN_input_data_V_data_V_out_wrapc  "./rtl.network.autotvin_input_data_V_data_V.dat"
-`define AUTOTB_TVIN_input_data_V_keep_V_out_wrapc  "./rtl.network.autotvin_input_data_V_keep_V.dat"
-`define AUTOTB_TVIN_input_data_V_strb_V_out_wrapc  "./rtl.network.autotvin_input_data_V_strb_V.dat"
-`define AUTOTB_TVIN_input_data_V_user_V_out_wrapc  "./rtl.network.autotvin_input_data_V_user_V.dat"
-`define AUTOTB_TVIN_input_data_V_last_V_out_wrapc  "./rtl.network.autotvin_input_data_V_last_V.dat"
-`define AUTOTB_TVIN_input_data_V_id_V_out_wrapc  "./rtl.network.autotvin_input_data_V_id_V.dat"
-`define AUTOTB_TVIN_input_data_V_dest_V_out_wrapc  "./rtl.network.autotvin_input_data_V_dest_V.dat"
-`define AUTOTB_TVIN_output_data_V_data_V_out_wrapc  "./rtl.network.autotvin_output_data_V_data_V.dat"
-`define AUTOTB_TVIN_output_data_V_keep_V_out_wrapc  "./rtl.network.autotvin_output_data_V_keep_V.dat"
-`define AUTOTB_TVIN_output_data_V_strb_V_out_wrapc  "./rtl.network.autotvin_output_data_V_strb_V.dat"
-`define AUTOTB_TVIN_output_data_V_user_V_out_wrapc  "./rtl.network.autotvin_output_data_V_user_V.dat"
-`define AUTOTB_TVIN_output_data_V_last_V_out_wrapc  "./rtl.network.autotvin_output_data_V_last_V.dat"
-`define AUTOTB_TVIN_output_data_V_id_V_out_wrapc  "./rtl.network.autotvin_output_data_V_id_V.dat"
-`define AUTOTB_TVIN_output_data_V_dest_V_out_wrapc  "./rtl.network.autotvin_output_data_V_dest_V.dat"
-`define AUTOTB_TVOUT_output_data_V_data_V  "./c.network.autotvout_output_data_V_data_V.dat"
-`define AUTOTB_TVOUT_output_data_V_keep_V  "./c.network.autotvout_output_data_V_keep_V.dat"
-`define AUTOTB_TVOUT_output_data_V_strb_V  "./c.network.autotvout_output_data_V_strb_V.dat"
-`define AUTOTB_TVOUT_output_data_V_user_V  "./c.network.autotvout_output_data_V_user_V.dat"
-`define AUTOTB_TVOUT_output_data_V_last_V  "./c.network.autotvout_output_data_V_last_V.dat"
-`define AUTOTB_TVOUT_output_data_V_id_V  "./c.network.autotvout_output_data_V_id_V.dat"
-`define AUTOTB_TVOUT_output_data_V_dest_V  "./c.network.autotvout_output_data_V_dest_V.dat"
+`define AESL_DEPTH_input_data_data_V 1
+`define AESL_DEPTH_input_data_keep_V 1
+`define AESL_DEPTH_input_data_strb_V 1
+`define AESL_DEPTH_input_data_user_V 1
+`define AESL_DEPTH_input_data_last_V 1
+`define AESL_DEPTH_input_data_id_V 1
+`define AESL_DEPTH_input_data_dest_V 1
+`define AESL_DEPTH_output_data_data_V 1
+`define AESL_DEPTH_output_data_keep_V 1
+`define AESL_DEPTH_output_data_strb_V 1
+`define AESL_DEPTH_output_data_user_V 1
+`define AESL_DEPTH_output_data_last_V 1
+`define AESL_DEPTH_output_data_id_V 1
+`define AESL_DEPTH_output_data_dest_V 1
+`define AUTOTB_TVIN_input_data_data_V  "./c.network.autotvin_input_data_data_V.dat"
+`define AUTOTB_TVIN_input_data_keep_V  "./c.network.autotvin_input_data_keep_V.dat"
+`define AUTOTB_TVIN_input_data_strb_V  "./c.network.autotvin_input_data_strb_V.dat"
+`define AUTOTB_TVIN_input_data_user_V  "./c.network.autotvin_input_data_user_V.dat"
+`define AUTOTB_TVIN_input_data_last_V  "./c.network.autotvin_input_data_last_V.dat"
+`define AUTOTB_TVIN_input_data_id_V  "./c.network.autotvin_input_data_id_V.dat"
+`define AUTOTB_TVIN_input_data_dest_V  "./c.network.autotvin_input_data_dest_V.dat"
+`define AUTOTB_TVIN_output_data_data_V  "./c.network.autotvin_output_data_data_V.dat"
+`define AUTOTB_TVIN_output_data_keep_V  "./c.network.autotvin_output_data_keep_V.dat"
+`define AUTOTB_TVIN_output_data_strb_V  "./c.network.autotvin_output_data_strb_V.dat"
+`define AUTOTB_TVIN_output_data_user_V  "./c.network.autotvin_output_data_user_V.dat"
+`define AUTOTB_TVIN_output_data_last_V  "./c.network.autotvin_output_data_last_V.dat"
+`define AUTOTB_TVIN_output_data_id_V  "./c.network.autotvin_output_data_id_V.dat"
+`define AUTOTB_TVIN_output_data_dest_V  "./c.network.autotvin_output_data_dest_V.dat"
+`define AUTOTB_TVIN_input_data_data_V_out_wrapc  "./rtl.network.autotvin_input_data_data_V.dat"
+`define AUTOTB_TVIN_input_data_keep_V_out_wrapc  "./rtl.network.autotvin_input_data_keep_V.dat"
+`define AUTOTB_TVIN_input_data_strb_V_out_wrapc  "./rtl.network.autotvin_input_data_strb_V.dat"
+`define AUTOTB_TVIN_input_data_user_V_out_wrapc  "./rtl.network.autotvin_input_data_user_V.dat"
+`define AUTOTB_TVIN_input_data_last_V_out_wrapc  "./rtl.network.autotvin_input_data_last_V.dat"
+`define AUTOTB_TVIN_input_data_id_V_out_wrapc  "./rtl.network.autotvin_input_data_id_V.dat"
+`define AUTOTB_TVIN_input_data_dest_V_out_wrapc  "./rtl.network.autotvin_input_data_dest_V.dat"
+`define AUTOTB_TVIN_output_data_data_V_out_wrapc  "./rtl.network.autotvin_output_data_data_V.dat"
+`define AUTOTB_TVIN_output_data_keep_V_out_wrapc  "./rtl.network.autotvin_output_data_keep_V.dat"
+`define AUTOTB_TVIN_output_data_strb_V_out_wrapc  "./rtl.network.autotvin_output_data_strb_V.dat"
+`define AUTOTB_TVIN_output_data_user_V_out_wrapc  "./rtl.network.autotvin_output_data_user_V.dat"
+`define AUTOTB_TVIN_output_data_last_V_out_wrapc  "./rtl.network.autotvin_output_data_last_V.dat"
+`define AUTOTB_TVIN_output_data_id_V_out_wrapc  "./rtl.network.autotvin_output_data_id_V.dat"
+`define AUTOTB_TVIN_output_data_dest_V_out_wrapc  "./rtl.network.autotvin_output_data_dest_V.dat"
+`define AUTOTB_TVOUT_output_data_data_V  "./c.network.autotvout_output_data_data_V.dat"
+`define AUTOTB_TVOUT_output_data_keep_V  "./c.network.autotvout_output_data_keep_V.dat"
+`define AUTOTB_TVOUT_output_data_strb_V  "./c.network.autotvout_output_data_strb_V.dat"
+`define AUTOTB_TVOUT_output_data_user_V  "./c.network.autotvout_output_data_user_V.dat"
+`define AUTOTB_TVOUT_output_data_last_V  "./c.network.autotvout_output_data_last_V.dat"
+`define AUTOTB_TVOUT_output_data_id_V  "./c.network.autotvout_output_data_id_V.dat"
+`define AUTOTB_TVOUT_output_data_dest_V  "./c.network.autotvout_output_data_dest_V.dat"
 `define AUTOTB_TVOUT_ap_return  "./c.network.autotvout_ap_return.dat"
-`define AUTOTB_TVOUT_output_data_V_data_V_out_wrapc  "./impl_rtl.network.autotvout_output_data_V_data_V.dat"
-`define AUTOTB_TVOUT_output_data_V_keep_V_out_wrapc  "./impl_rtl.network.autotvout_output_data_V_keep_V.dat"
-`define AUTOTB_TVOUT_output_data_V_strb_V_out_wrapc  "./impl_rtl.network.autotvout_output_data_V_strb_V.dat"
-`define AUTOTB_TVOUT_output_data_V_user_V_out_wrapc  "./impl_rtl.network.autotvout_output_data_V_user_V.dat"
-`define AUTOTB_TVOUT_output_data_V_last_V_out_wrapc  "./impl_rtl.network.autotvout_output_data_V_last_V.dat"
-`define AUTOTB_TVOUT_output_data_V_id_V_out_wrapc  "./impl_rtl.network.autotvout_output_data_V_id_V.dat"
-`define AUTOTB_TVOUT_output_data_V_dest_V_out_wrapc  "./impl_rtl.network.autotvout_output_data_V_dest_V.dat"
+`define AUTOTB_TVOUT_output_data_data_V_out_wrapc  "./impl_rtl.network.autotvout_output_data_data_V.dat"
+`define AUTOTB_TVOUT_output_data_keep_V_out_wrapc  "./impl_rtl.network.autotvout_output_data_keep_V.dat"
+`define AUTOTB_TVOUT_output_data_strb_V_out_wrapc  "./impl_rtl.network.autotvout_output_data_strb_V.dat"
+`define AUTOTB_TVOUT_output_data_user_V_out_wrapc  "./impl_rtl.network.autotvout_output_data_user_V.dat"
+`define AUTOTB_TVOUT_output_data_last_V_out_wrapc  "./impl_rtl.network.autotvout_output_data_last_V.dat"
+`define AUTOTB_TVOUT_output_data_id_V_out_wrapc  "./impl_rtl.network.autotvout_output_data_id_V.dat"
+`define AUTOTB_TVOUT_output_data_dest_V_out_wrapc  "./impl_rtl.network.autotvout_output_data_dest_V.dat"
 `define AUTOTB_TVOUT_ap_return_out_wrapc  "./impl_rtl.network.autotvout_ap_return.dat"
 module `AUTOTB_TOP;
 
 parameter AUTOTB_TRANSACTION_NUM = 1;
 parameter PROGRESS_TIMEOUT = 10000000;
-parameter LATENCY_ESTIMATION = 3142;
-parameter LENGTH_input_data_V_data_V = 784;
-parameter LENGTH_input_data_V_keep_V = 784;
-parameter LENGTH_input_data_V_strb_V = 784;
-parameter LENGTH_input_data_V_user_V = 784;
-parameter LENGTH_input_data_V_last_V = 784;
-parameter LENGTH_input_data_V_id_V = 784;
-parameter LENGTH_input_data_V_dest_V = 784;
-parameter LENGTH_output_data_V_data_V = 784;
-parameter LENGTH_output_data_V_keep_V = 784;
-parameter LENGTH_output_data_V_strb_V = 784;
-parameter LENGTH_output_data_V_user_V = 784;
-parameter LENGTH_output_data_V_last_V = 784;
-parameter LENGTH_output_data_V_id_V = 784;
-parameter LENGTH_output_data_V_dest_V = 784;
+parameter LATENCY_ESTIMATION = -1;
+parameter LENGTH_input_data_data_V = 784;
+parameter LENGTH_input_data_keep_V = 784;
+parameter LENGTH_input_data_strb_V = 784;
+parameter LENGTH_input_data_user_V = 784;
+parameter LENGTH_input_data_last_V = 784;
+parameter LENGTH_input_data_id_V = 784;
+parameter LENGTH_input_data_dest_V = 784;
+parameter LENGTH_output_data_data_V = 784;
+parameter LENGTH_output_data_keep_V = 784;
+parameter LENGTH_output_data_strb_V = 784;
+parameter LENGTH_output_data_user_V = 784;
+parameter LENGTH_output_data_last_V = 784;
+parameter LENGTH_output_data_id_V = 784;
+parameter LENGTH_output_data_dest_V = 784;
 parameter LENGTH_ap_return = 1;
 
 task read_token;
@@ -356,7 +356,7 @@ end
 
 
 
-reg [31:0] ap_c_n_tvin_trans_num_input_data_V_data_V;
+reg [31:0] ap_c_n_tvin_trans_num_input_data_data_V;
 
 reg input_data_ready_reg; // for self-sync
 
@@ -382,13 +382,13 @@ AESL_axi_s_input_data AESL_AXI_S_input_data(
     .done(input_data_done),
     .transaction(input_data_transaction));
 
-assign input_data_ready = input_data_ready_reg | ready_initial;
+assign input_data_ready = ready;
 assign input_data_done = 0;
 
 assign input_data_TVALID = axi_s_input_data_TVALID;
 
 assign axi_s_input_data_TREADY = input_data_TREADY;
-reg [31:0] ap_c_n_tvin_trans_num_output_data_V_data_V;
+reg [31:0] ap_c_n_tvin_trans_num_output_data_data_V;
 
 reg output_data_ready_reg; // for self-sync
 
@@ -550,86 +550,86 @@ end
         @ (posedge AESL_clock);
         @ (posedge AESL_clock);
         @ (posedge AESL_clock);
-    fp1 = $fopen("./rtl.network.autotvout_output_data_V_data_V.dat", "r");
-    fp2 = $fopen("./impl_rtl.network.autotvout_output_data_V_data_V.dat", "r");
+    fp1 = $fopen("./rtl.network.autotvout_output_data_data_V.dat", "r");
+    fp2 = $fopen("./impl_rtl.network.autotvout_output_data_data_V.dat", "r");
     if(fp1 == 0)        // Failed to open file
-        $display("Failed to open file \"./rtl.network.autotvout_output_data_V_data_V.dat\"!");
+        $display("Failed to open file \"./rtl.network.autotvout_output_data_data_V.dat\"!");
     else if(fp2 == 0)
-        $display("Failed to open file \"./impl_rtl.network.autotvout_output_data_V_data_V.dat\"!");
+        $display("Failed to open file \"./impl_rtl.network.autotvout_output_data_data_V.dat\"!");
     else begin
-        $display("Comparing rtl.network.autotvout_output_data_V_data_V.dat with impl_rtl.network.autotvout_output_data_V_data_V.dat");
+        $display("Comparing rtl.network.autotvout_output_data_data_V.dat with impl_rtl.network.autotvout_output_data_data_V.dat");
         post_check(fp1, fp2);
     end
     $fclose(fp1);
     $fclose(fp2);
-    fp1 = $fopen("./rtl.network.autotvout_output_data_V_keep_V.dat", "r");
-    fp2 = $fopen("./impl_rtl.network.autotvout_output_data_V_keep_V.dat", "r");
+    fp1 = $fopen("./rtl.network.autotvout_output_data_keep_V.dat", "r");
+    fp2 = $fopen("./impl_rtl.network.autotvout_output_data_keep_V.dat", "r");
     if(fp1 == 0)        // Failed to open file
-        $display("Failed to open file \"./rtl.network.autotvout_output_data_V_keep_V.dat\"!");
+        $display("Failed to open file \"./rtl.network.autotvout_output_data_keep_V.dat\"!");
     else if(fp2 == 0)
-        $display("Failed to open file \"./impl_rtl.network.autotvout_output_data_V_keep_V.dat\"!");
+        $display("Failed to open file \"./impl_rtl.network.autotvout_output_data_keep_V.dat\"!");
     else begin
-        $display("Comparing rtl.network.autotvout_output_data_V_keep_V.dat with impl_rtl.network.autotvout_output_data_V_keep_V.dat");
+        $display("Comparing rtl.network.autotvout_output_data_keep_V.dat with impl_rtl.network.autotvout_output_data_keep_V.dat");
         post_check(fp1, fp2);
     end
     $fclose(fp1);
     $fclose(fp2);
-    fp1 = $fopen("./rtl.network.autotvout_output_data_V_strb_V.dat", "r");
-    fp2 = $fopen("./impl_rtl.network.autotvout_output_data_V_strb_V.dat", "r");
+    fp1 = $fopen("./rtl.network.autotvout_output_data_strb_V.dat", "r");
+    fp2 = $fopen("./impl_rtl.network.autotvout_output_data_strb_V.dat", "r");
     if(fp1 == 0)        // Failed to open file
-        $display("Failed to open file \"./rtl.network.autotvout_output_data_V_strb_V.dat\"!");
+        $display("Failed to open file \"./rtl.network.autotvout_output_data_strb_V.dat\"!");
     else if(fp2 == 0)
-        $display("Failed to open file \"./impl_rtl.network.autotvout_output_data_V_strb_V.dat\"!");
+        $display("Failed to open file \"./impl_rtl.network.autotvout_output_data_strb_V.dat\"!");
     else begin
-        $display("Comparing rtl.network.autotvout_output_data_V_strb_V.dat with impl_rtl.network.autotvout_output_data_V_strb_V.dat");
+        $display("Comparing rtl.network.autotvout_output_data_strb_V.dat with impl_rtl.network.autotvout_output_data_strb_V.dat");
         post_check(fp1, fp2);
     end
     $fclose(fp1);
     $fclose(fp2);
-    fp1 = $fopen("./rtl.network.autotvout_output_data_V_user_V.dat", "r");
-    fp2 = $fopen("./impl_rtl.network.autotvout_output_data_V_user_V.dat", "r");
+    fp1 = $fopen("./rtl.network.autotvout_output_data_user_V.dat", "r");
+    fp2 = $fopen("./impl_rtl.network.autotvout_output_data_user_V.dat", "r");
     if(fp1 == 0)        // Failed to open file
-        $display("Failed to open file \"./rtl.network.autotvout_output_data_V_user_V.dat\"!");
+        $display("Failed to open file \"./rtl.network.autotvout_output_data_user_V.dat\"!");
     else if(fp2 == 0)
-        $display("Failed to open file \"./impl_rtl.network.autotvout_output_data_V_user_V.dat\"!");
+        $display("Failed to open file \"./impl_rtl.network.autotvout_output_data_user_V.dat\"!");
     else begin
-        $display("Comparing rtl.network.autotvout_output_data_V_user_V.dat with impl_rtl.network.autotvout_output_data_V_user_V.dat");
+        $display("Comparing rtl.network.autotvout_output_data_user_V.dat with impl_rtl.network.autotvout_output_data_user_V.dat");
         post_check(fp1, fp2);
     end
     $fclose(fp1);
     $fclose(fp2);
-    fp1 = $fopen("./rtl.network.autotvout_output_data_V_last_V.dat", "r");
-    fp2 = $fopen("./impl_rtl.network.autotvout_output_data_V_last_V.dat", "r");
+    fp1 = $fopen("./rtl.network.autotvout_output_data_last_V.dat", "r");
+    fp2 = $fopen("./impl_rtl.network.autotvout_output_data_last_V.dat", "r");
     if(fp1 == 0)        // Failed to open file
-        $display("Failed to open file \"./rtl.network.autotvout_output_data_V_last_V.dat\"!");
+        $display("Failed to open file \"./rtl.network.autotvout_output_data_last_V.dat\"!");
     else if(fp2 == 0)
-        $display("Failed to open file \"./impl_rtl.network.autotvout_output_data_V_last_V.dat\"!");
+        $display("Failed to open file \"./impl_rtl.network.autotvout_output_data_last_V.dat\"!");
     else begin
-        $display("Comparing rtl.network.autotvout_output_data_V_last_V.dat with impl_rtl.network.autotvout_output_data_V_last_V.dat");
+        $display("Comparing rtl.network.autotvout_output_data_last_V.dat with impl_rtl.network.autotvout_output_data_last_V.dat");
         post_check(fp1, fp2);
     end
     $fclose(fp1);
     $fclose(fp2);
-    fp1 = $fopen("./rtl.network.autotvout_output_data_V_id_V.dat", "r");
-    fp2 = $fopen("./impl_rtl.network.autotvout_output_data_V_id_V.dat", "r");
+    fp1 = $fopen("./rtl.network.autotvout_output_data_id_V.dat", "r");
+    fp2 = $fopen("./impl_rtl.network.autotvout_output_data_id_V.dat", "r");
     if(fp1 == 0)        // Failed to open file
-        $display("Failed to open file \"./rtl.network.autotvout_output_data_V_id_V.dat\"!");
+        $display("Failed to open file \"./rtl.network.autotvout_output_data_id_V.dat\"!");
     else if(fp2 == 0)
-        $display("Failed to open file \"./impl_rtl.network.autotvout_output_data_V_id_V.dat\"!");
+        $display("Failed to open file \"./impl_rtl.network.autotvout_output_data_id_V.dat\"!");
     else begin
-        $display("Comparing rtl.network.autotvout_output_data_V_id_V.dat with impl_rtl.network.autotvout_output_data_V_id_V.dat");
+        $display("Comparing rtl.network.autotvout_output_data_id_V.dat with impl_rtl.network.autotvout_output_data_id_V.dat");
         post_check(fp1, fp2);
     end
     $fclose(fp1);
     $fclose(fp2);
-    fp1 = $fopen("./rtl.network.autotvout_output_data_V_dest_V.dat", "r");
-    fp2 = $fopen("./impl_rtl.network.autotvout_output_data_V_dest_V.dat", "r");
+    fp1 = $fopen("./rtl.network.autotvout_output_data_dest_V.dat", "r");
+    fp2 = $fopen("./impl_rtl.network.autotvout_output_data_dest_V.dat", "r");
     if(fp1 == 0)        // Failed to open file
-        $display("Failed to open file \"./rtl.network.autotvout_output_data_V_dest_V.dat\"!");
+        $display("Failed to open file \"./rtl.network.autotvout_output_data_dest_V.dat\"!");
     else if(fp2 == 0)
-        $display("Failed to open file \"./impl_rtl.network.autotvout_output_data_V_dest_V.dat\"!");
+        $display("Failed to open file \"./impl_rtl.network.autotvout_output_data_dest_V.dat\"!");
     else begin
-        $display("Comparing rtl.network.autotvout_output_data_V_dest_V.dat with impl_rtl.network.autotvout_output_data_V_dest_V.dat");
+        $display("Comparing rtl.network.autotvout_output_data_dest_V.dat with impl_rtl.network.autotvout_output_data_dest_V.dat");
         post_check(fp1, fp2);
     end
     $fclose(fp1);
@@ -656,48 +656,48 @@ initial begin
 end
 
 
-reg end_input_data_V_data_V;
-reg [31:0] size_input_data_V_data_V;
-reg [31:0] size_input_data_V_data_V_backup;
-reg end_input_data_V_keep_V;
-reg [31:0] size_input_data_V_keep_V;
-reg [31:0] size_input_data_V_keep_V_backup;
-reg end_input_data_V_strb_V;
-reg [31:0] size_input_data_V_strb_V;
-reg [31:0] size_input_data_V_strb_V_backup;
-reg end_input_data_V_user_V;
-reg [31:0] size_input_data_V_user_V;
-reg [31:0] size_input_data_V_user_V_backup;
-reg end_input_data_V_last_V;
-reg [31:0] size_input_data_V_last_V;
-reg [31:0] size_input_data_V_last_V_backup;
-reg end_input_data_V_id_V;
-reg [31:0] size_input_data_V_id_V;
-reg [31:0] size_input_data_V_id_V_backup;
-reg end_input_data_V_dest_V;
-reg [31:0] size_input_data_V_dest_V;
-reg [31:0] size_input_data_V_dest_V_backup;
-reg end_output_data_V_data_V;
-reg [31:0] size_output_data_V_data_V;
-reg [31:0] size_output_data_V_data_V_backup;
-reg end_output_data_V_keep_V;
-reg [31:0] size_output_data_V_keep_V;
-reg [31:0] size_output_data_V_keep_V_backup;
-reg end_output_data_V_strb_V;
-reg [31:0] size_output_data_V_strb_V;
-reg [31:0] size_output_data_V_strb_V_backup;
-reg end_output_data_V_user_V;
-reg [31:0] size_output_data_V_user_V;
-reg [31:0] size_output_data_V_user_V_backup;
-reg end_output_data_V_last_V;
-reg [31:0] size_output_data_V_last_V;
-reg [31:0] size_output_data_V_last_V_backup;
-reg end_output_data_V_id_V;
-reg [31:0] size_output_data_V_id_V;
-reg [31:0] size_output_data_V_id_V_backup;
-reg end_output_data_V_dest_V;
-reg [31:0] size_output_data_V_dest_V;
-reg [31:0] size_output_data_V_dest_V_backup;
+reg end_input_data_data_V;
+reg [31:0] size_input_data_data_V;
+reg [31:0] size_input_data_data_V_backup;
+reg end_input_data_keep_V;
+reg [31:0] size_input_data_keep_V;
+reg [31:0] size_input_data_keep_V_backup;
+reg end_input_data_strb_V;
+reg [31:0] size_input_data_strb_V;
+reg [31:0] size_input_data_strb_V_backup;
+reg end_input_data_user_V;
+reg [31:0] size_input_data_user_V;
+reg [31:0] size_input_data_user_V_backup;
+reg end_input_data_last_V;
+reg [31:0] size_input_data_last_V;
+reg [31:0] size_input_data_last_V_backup;
+reg end_input_data_id_V;
+reg [31:0] size_input_data_id_V;
+reg [31:0] size_input_data_id_V_backup;
+reg end_input_data_dest_V;
+reg [31:0] size_input_data_dest_V;
+reg [31:0] size_input_data_dest_V_backup;
+reg end_output_data_data_V;
+reg [31:0] size_output_data_data_V;
+reg [31:0] size_output_data_data_V_backup;
+reg end_output_data_keep_V;
+reg [31:0] size_output_data_keep_V;
+reg [31:0] size_output_data_keep_V_backup;
+reg end_output_data_strb_V;
+reg [31:0] size_output_data_strb_V;
+reg [31:0] size_output_data_strb_V_backup;
+reg end_output_data_user_V;
+reg [31:0] size_output_data_user_V;
+reg [31:0] size_output_data_user_V_backup;
+reg end_output_data_last_V;
+reg [31:0] size_output_data_last_V;
+reg [31:0] size_output_data_last_V_backup;
+reg end_output_data_id_V;
+reg [31:0] size_output_data_id_V;
+reg [31:0] size_output_data_id_V_backup;
+reg end_output_data_dest_V;
+reg [31:0] size_output_data_dest_V;
+reg [31:0] size_output_data_dest_V_backup;
 reg end_ap_return;
 reg [31:0] size_ap_return;
 reg [31:0] size_ap_return_backup;
@@ -806,8 +806,8 @@ end
         input_data_ready_reg = 0;
         @ (posedge ready_initial);
         forever begin
-            @ (ap_c_n_tvin_trans_num_input_data_V_data_V or input_data_transaction);
-            if (ap_c_n_tvin_trans_num_input_data_V_data_V > input_data_transaction) begin
+            @ (ap_c_n_tvin_trans_num_input_data_data_V or input_data_transaction);
+            if (ap_c_n_tvin_trans_num_input_data_data_V > input_data_transaction) begin
                 input_data_ready_reg = 1;
             end else begin
                 input_data_ready_reg = 0;
@@ -815,99 +815,82 @@ end
         end
     end
     
-    `define STREAM_SIZE_IN_input_data_V_data_V "./stream_size_in_input_data_V_data_V.dat"
+    `define STREAM_SIZE_IN_input_data_data_V "./stream_size_in_input_data_data_V.dat"
     
-    initial begin : gen_ap_c_n_tvin_trans_num_input_data_V_data_V
-        integer fp_input_data_V_data_V;
-        reg [127:0] token_input_data_V_data_V;
+    initial begin : gen_ap_c_n_tvin_trans_num_input_data_data_V
+        integer fp_input_data_data_V;
+        reg [127:0] token_input_data_data_V;
         integer ret;
         
-        ap_c_n_tvin_trans_num_input_data_V_data_V = 0;
-        end_input_data_V_data_V = 0;
+        ap_c_n_tvin_trans_num_input_data_data_V = 0;
+        end_input_data_data_V = 0;
         wait (AESL_reset === 1);
         
-        fp_input_data_V_data_V = $fopen(`STREAM_SIZE_IN_input_data_V_data_V, "r");
-        if(fp_input_data_V_data_V == 0) begin
-            $display("Failed to open file \"%s\"!", `STREAM_SIZE_IN_input_data_V_data_V);
+        fp_input_data_data_V = $fopen(`AUTOTB_TVIN_input_data_data_V, "r");
+        if(fp_input_data_data_V == 0) begin
+            $display("Failed to open file \"%s\"!", `AUTOTB_TVIN_input_data_data_V);
             $finish;
         end
-        read_token(fp_input_data_V_data_V, token_input_data_V_data_V); // should be [[[runtime]]]
-        if (token_input_data_V_data_V != "[[[runtime]]]") begin
-            $display("ERROR: token_input_data_V_data_V != \"[[[runtime]]]\"");
+        read_token(fp_input_data_data_V, token_input_data_data_V); // should be [[[runtime]]]
+        if (token_input_data_data_V != "[[[runtime]]]") begin
+            $display("ERROR: token_input_data_data_V != \"[[[runtime]]]\"");
             $finish;
         end
-        size_input_data_V_data_V = 0;
-        size_input_data_V_data_V_backup = 0;
-        while (size_input_data_V_data_V == 0 && end_input_data_V_data_V == 0) begin
-            ap_c_n_tvin_trans_num_input_data_V_data_V = ap_c_n_tvin_trans_num_input_data_V_data_V + 1;
-            read_token(fp_input_data_V_data_V, token_input_data_V_data_V); // should be [[transaction]] or [[[/runtime]]]
-            if (token_input_data_V_data_V == "[[transaction]]") begin
-                read_token(fp_input_data_V_data_V, token_input_data_V_data_V); // should be transaction number
-                read_token(fp_input_data_V_data_V, token_input_data_V_data_V); // should be size for hls::stream
-                ret = $sscanf(token_input_data_V_data_V, "%d", size_input_data_V_data_V);
-                if (size_input_data_V_data_V > 0) begin
-                    size_input_data_V_data_V_backup = size_input_data_V_data_V;
-                end
-                read_token(fp_input_data_V_data_V, token_input_data_V_data_V); // should be [[/transaction]]
-            end else if (token_input_data_V_data_V == "[[[/runtime]]]") begin
-                $fclose(fp_input_data_V_data_V);
-                end_input_data_V_data_V = 1;
+        ap_c_n_tvin_trans_num_input_data_data_V = ap_c_n_tvin_trans_num_input_data_data_V + 1;
+        read_token(fp_input_data_data_V, token_input_data_data_V); // should be [[transaction]] or [[[/runtime]]]
+        if (token_input_data_data_V == "[[[/runtime]]]") begin
+            $fclose(fp_input_data_data_V);
+            end_input_data_data_V = 1;
+        end else begin
+            end_input_data_data_V = 0;
+            read_token(fp_input_data_data_V, token_input_data_data_V); // should be transaction number
+            read_token(fp_input_data_data_V, token_input_data_data_V);
+        end
+        while (token_input_data_data_V == "[[/transaction]]" && end_input_data_data_V == 0) begin
+            ap_c_n_tvin_trans_num_input_data_data_V = ap_c_n_tvin_trans_num_input_data_data_V + 1;
+            read_token(fp_input_data_data_V, token_input_data_data_V); // should be [[transaction]] or [[[/runtime]]]
+            if (token_input_data_data_V == "[[[/runtime]]]") begin
+                $fclose(fp_input_data_data_V);
+                end_input_data_data_V = 1;
             end else begin
-                $display("ERROR: unknown token_input_data_V_data_V");
-                $finish;
+                end_input_data_data_V = 0;
+                read_token(fp_input_data_data_V, token_input_data_data_V); // should be transaction number
+                read_token(fp_input_data_data_V, token_input_data_data_V);
             end
         end
         forever begin
             @ (posedge AESL_clock);
-            if (end_input_data_V_data_V == 0) begin
+            if (end_input_data_data_V == 0) begin
                 if ((input_data_TREADY & input_data_TVALID) == 1) begin
-                    if (size_input_data_V_data_V > 0) begin
-                        size_input_data_V_data_V = size_input_data_V_data_V - 1;
-                        while (size_input_data_V_data_V == 0 && end_input_data_V_data_V == 0) begin
-                            ap_c_n_tvin_trans_num_input_data_V_data_V = ap_c_n_tvin_trans_num_input_data_V_data_V + 1;
-                            read_token(fp_input_data_V_data_V, token_input_data_V_data_V); // should be [[transaction]] or [[[/runtime]]]
-                            if (token_input_data_V_data_V == "[[transaction]]") begin
-                                read_token(fp_input_data_V_data_V, token_input_data_V_data_V); // should be transaction number
-                                read_token(fp_input_data_V_data_V, token_input_data_V_data_V); // should be size for hls::stream
-                                ret = $sscanf(token_input_data_V_data_V, "%d", size_input_data_V_data_V);
-                                if (size_input_data_V_data_V > 0) begin
-                                    size_input_data_V_data_V_backup = size_input_data_V_data_V;
-                                end
-                                read_token(fp_input_data_V_data_V, token_input_data_V_data_V); // should be [[/transaction]]
-                            end else if (token_input_data_V_data_V == "[[[/runtime]]]") begin
-                                size_input_data_V_data_V = size_input_data_V_data_V_backup;
-                                $fclose(fp_input_data_V_data_V);
-                                end_input_data_V_data_V = 1;
-                            end else begin
-                                $display("ERROR: unknown token_input_data_V_data_V");
-                                $finish;
-                            end
+                    read_token(fp_input_data_data_V, token_input_data_data_V);
+                    while (token_input_data_data_V == "[[/transaction]]" && end_input_data_data_V == 0) begin
+                        ap_c_n_tvin_trans_num_input_data_data_V = ap_c_n_tvin_trans_num_input_data_data_V + 1;
+                        read_token(fp_input_data_data_V, token_input_data_data_V); // should be [[transaction]] or [[[/runtime]]]
+                        if (token_input_data_data_V == "[[[/runtime]]]") begin
+                            $fclose(fp_input_data_data_V);
+                            end_input_data_data_V = 1;
+                        end else begin
+                            end_input_data_data_V = 0;
+                            read_token(fp_input_data_data_V, token_input_data_data_V); // should be transaction number
+                            read_token(fp_input_data_data_V, token_input_data_data_V);
                         end
                     end
                 end
             end else begin
-                if ((input_data_TREADY & input_data_TVALID) == 1) begin
-                    if (size_input_data_V_data_V > 0) begin
-                        size_input_data_V_data_V = size_input_data_V_data_V - 1;
-                        if (size_input_data_V_data_V == 0) begin
-                            ap_c_n_tvin_trans_num_input_data_V_data_V = ap_c_n_tvin_trans_num_input_data_V_data_V + 1;
-                            size_input_data_V_data_V = size_input_data_V_data_V_backup;
-                        end
-                    end
-                end
+                ap_c_n_tvin_trans_num_input_data_data_V = ap_c_n_tvin_trans_num_input_data_data_V + 1;
             end
         end
     end
     
 
-reg dump_tvout_finish_output_data_V_data_V;
+reg dump_tvout_finish_output_data_data_V;
 
-initial begin : dump_tvout_runtime_sign_output_data_V_data_V
+initial begin : dump_tvout_runtime_sign_output_data_data_V
     integer fp;
-    dump_tvout_finish_output_data_V_data_V = 0;
-    fp = $fopen(`AUTOTB_TVOUT_output_data_V_data_V_out_wrapc, "w");
+    dump_tvout_finish_output_data_data_V = 0;
+    fp = $fopen(`AUTOTB_TVOUT_output_data_data_V_out_wrapc, "w");
     if (fp == 0) begin
-        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_output_data_V_data_V_out_wrapc);
+        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_output_data_data_V_out_wrapc);
         $display("ERROR: Simulation using HLS TB failed.");
         $finish;
     end
@@ -918,26 +901,26 @@ initial begin : dump_tvout_runtime_sign_output_data_V_data_V
     @ (posedge AESL_clock);
     @ (posedge AESL_clock);
     @ (posedge AESL_clock);
-    fp = $fopen(`AUTOTB_TVOUT_output_data_V_data_V_out_wrapc, "a");
+    fp = $fopen(`AUTOTB_TVOUT_output_data_data_V_out_wrapc, "a");
     if (fp == 0) begin
-        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_output_data_V_data_V_out_wrapc);
+        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_output_data_data_V_out_wrapc);
         $display("ERROR: Simulation using HLS TB failed.");
         $finish;
     end
     $fdisplay(fp,"[[[/runtime]]]");
     $fclose(fp);
-    dump_tvout_finish_output_data_V_data_V = 1;
+    dump_tvout_finish_output_data_data_V = 1;
 end
 
 
-reg dump_tvout_finish_output_data_V_keep_V;
+reg dump_tvout_finish_output_data_keep_V;
 
-initial begin : dump_tvout_runtime_sign_output_data_V_keep_V
+initial begin : dump_tvout_runtime_sign_output_data_keep_V
     integer fp;
-    dump_tvout_finish_output_data_V_keep_V = 0;
-    fp = $fopen(`AUTOTB_TVOUT_output_data_V_keep_V_out_wrapc, "w");
+    dump_tvout_finish_output_data_keep_V = 0;
+    fp = $fopen(`AUTOTB_TVOUT_output_data_keep_V_out_wrapc, "w");
     if (fp == 0) begin
-        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_output_data_V_keep_V_out_wrapc);
+        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_output_data_keep_V_out_wrapc);
         $display("ERROR: Simulation using HLS TB failed.");
         $finish;
     end
@@ -948,26 +931,26 @@ initial begin : dump_tvout_runtime_sign_output_data_V_keep_V
     @ (posedge AESL_clock);
     @ (posedge AESL_clock);
     @ (posedge AESL_clock);
-    fp = $fopen(`AUTOTB_TVOUT_output_data_V_keep_V_out_wrapc, "a");
+    fp = $fopen(`AUTOTB_TVOUT_output_data_keep_V_out_wrapc, "a");
     if (fp == 0) begin
-        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_output_data_V_keep_V_out_wrapc);
+        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_output_data_keep_V_out_wrapc);
         $display("ERROR: Simulation using HLS TB failed.");
         $finish;
     end
     $fdisplay(fp,"[[[/runtime]]]");
     $fclose(fp);
-    dump_tvout_finish_output_data_V_keep_V = 1;
+    dump_tvout_finish_output_data_keep_V = 1;
 end
 
 
-reg dump_tvout_finish_output_data_V_strb_V;
+reg dump_tvout_finish_output_data_strb_V;
 
-initial begin : dump_tvout_runtime_sign_output_data_V_strb_V
+initial begin : dump_tvout_runtime_sign_output_data_strb_V
     integer fp;
-    dump_tvout_finish_output_data_V_strb_V = 0;
-    fp = $fopen(`AUTOTB_TVOUT_output_data_V_strb_V_out_wrapc, "w");
+    dump_tvout_finish_output_data_strb_V = 0;
+    fp = $fopen(`AUTOTB_TVOUT_output_data_strb_V_out_wrapc, "w");
     if (fp == 0) begin
-        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_output_data_V_strb_V_out_wrapc);
+        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_output_data_strb_V_out_wrapc);
         $display("ERROR: Simulation using HLS TB failed.");
         $finish;
     end
@@ -978,26 +961,26 @@ initial begin : dump_tvout_runtime_sign_output_data_V_strb_V
     @ (posedge AESL_clock);
     @ (posedge AESL_clock);
     @ (posedge AESL_clock);
-    fp = $fopen(`AUTOTB_TVOUT_output_data_V_strb_V_out_wrapc, "a");
+    fp = $fopen(`AUTOTB_TVOUT_output_data_strb_V_out_wrapc, "a");
     if (fp == 0) begin
-        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_output_data_V_strb_V_out_wrapc);
+        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_output_data_strb_V_out_wrapc);
         $display("ERROR: Simulation using HLS TB failed.");
         $finish;
     end
     $fdisplay(fp,"[[[/runtime]]]");
     $fclose(fp);
-    dump_tvout_finish_output_data_V_strb_V = 1;
+    dump_tvout_finish_output_data_strb_V = 1;
 end
 
 
-reg dump_tvout_finish_output_data_V_user_V;
+reg dump_tvout_finish_output_data_user_V;
 
-initial begin : dump_tvout_runtime_sign_output_data_V_user_V
+initial begin : dump_tvout_runtime_sign_output_data_user_V
     integer fp;
-    dump_tvout_finish_output_data_V_user_V = 0;
-    fp = $fopen(`AUTOTB_TVOUT_output_data_V_user_V_out_wrapc, "w");
+    dump_tvout_finish_output_data_user_V = 0;
+    fp = $fopen(`AUTOTB_TVOUT_output_data_user_V_out_wrapc, "w");
     if (fp == 0) begin
-        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_output_data_V_user_V_out_wrapc);
+        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_output_data_user_V_out_wrapc);
         $display("ERROR: Simulation using HLS TB failed.");
         $finish;
     end
@@ -1008,26 +991,26 @@ initial begin : dump_tvout_runtime_sign_output_data_V_user_V
     @ (posedge AESL_clock);
     @ (posedge AESL_clock);
     @ (posedge AESL_clock);
-    fp = $fopen(`AUTOTB_TVOUT_output_data_V_user_V_out_wrapc, "a");
+    fp = $fopen(`AUTOTB_TVOUT_output_data_user_V_out_wrapc, "a");
     if (fp == 0) begin
-        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_output_data_V_user_V_out_wrapc);
+        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_output_data_user_V_out_wrapc);
         $display("ERROR: Simulation using HLS TB failed.");
         $finish;
     end
     $fdisplay(fp,"[[[/runtime]]]");
     $fclose(fp);
-    dump_tvout_finish_output_data_V_user_V = 1;
+    dump_tvout_finish_output_data_user_V = 1;
 end
 
 
-reg dump_tvout_finish_output_data_V_last_V;
+reg dump_tvout_finish_output_data_last_V;
 
-initial begin : dump_tvout_runtime_sign_output_data_V_last_V
+initial begin : dump_tvout_runtime_sign_output_data_last_V
     integer fp;
-    dump_tvout_finish_output_data_V_last_V = 0;
-    fp = $fopen(`AUTOTB_TVOUT_output_data_V_last_V_out_wrapc, "w");
+    dump_tvout_finish_output_data_last_V = 0;
+    fp = $fopen(`AUTOTB_TVOUT_output_data_last_V_out_wrapc, "w");
     if (fp == 0) begin
-        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_output_data_V_last_V_out_wrapc);
+        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_output_data_last_V_out_wrapc);
         $display("ERROR: Simulation using HLS TB failed.");
         $finish;
     end
@@ -1038,26 +1021,26 @@ initial begin : dump_tvout_runtime_sign_output_data_V_last_V
     @ (posedge AESL_clock);
     @ (posedge AESL_clock);
     @ (posedge AESL_clock);
-    fp = $fopen(`AUTOTB_TVOUT_output_data_V_last_V_out_wrapc, "a");
+    fp = $fopen(`AUTOTB_TVOUT_output_data_last_V_out_wrapc, "a");
     if (fp == 0) begin
-        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_output_data_V_last_V_out_wrapc);
+        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_output_data_last_V_out_wrapc);
         $display("ERROR: Simulation using HLS TB failed.");
         $finish;
     end
     $fdisplay(fp,"[[[/runtime]]]");
     $fclose(fp);
-    dump_tvout_finish_output_data_V_last_V = 1;
+    dump_tvout_finish_output_data_last_V = 1;
 end
 
 
-reg dump_tvout_finish_output_data_V_id_V;
+reg dump_tvout_finish_output_data_id_V;
 
-initial begin : dump_tvout_runtime_sign_output_data_V_id_V
+initial begin : dump_tvout_runtime_sign_output_data_id_V
     integer fp;
-    dump_tvout_finish_output_data_V_id_V = 0;
-    fp = $fopen(`AUTOTB_TVOUT_output_data_V_id_V_out_wrapc, "w");
+    dump_tvout_finish_output_data_id_V = 0;
+    fp = $fopen(`AUTOTB_TVOUT_output_data_id_V_out_wrapc, "w");
     if (fp == 0) begin
-        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_output_data_V_id_V_out_wrapc);
+        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_output_data_id_V_out_wrapc);
         $display("ERROR: Simulation using HLS TB failed.");
         $finish;
     end
@@ -1068,26 +1051,26 @@ initial begin : dump_tvout_runtime_sign_output_data_V_id_V
     @ (posedge AESL_clock);
     @ (posedge AESL_clock);
     @ (posedge AESL_clock);
-    fp = $fopen(`AUTOTB_TVOUT_output_data_V_id_V_out_wrapc, "a");
+    fp = $fopen(`AUTOTB_TVOUT_output_data_id_V_out_wrapc, "a");
     if (fp == 0) begin
-        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_output_data_V_id_V_out_wrapc);
+        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_output_data_id_V_out_wrapc);
         $display("ERROR: Simulation using HLS TB failed.");
         $finish;
     end
     $fdisplay(fp,"[[[/runtime]]]");
     $fclose(fp);
-    dump_tvout_finish_output_data_V_id_V = 1;
+    dump_tvout_finish_output_data_id_V = 1;
 end
 
 
-reg dump_tvout_finish_output_data_V_dest_V;
+reg dump_tvout_finish_output_data_dest_V;
 
-initial begin : dump_tvout_runtime_sign_output_data_V_dest_V
+initial begin : dump_tvout_runtime_sign_output_data_dest_V
     integer fp;
-    dump_tvout_finish_output_data_V_dest_V = 0;
-    fp = $fopen(`AUTOTB_TVOUT_output_data_V_dest_V_out_wrapc, "w");
+    dump_tvout_finish_output_data_dest_V = 0;
+    fp = $fopen(`AUTOTB_TVOUT_output_data_dest_V_out_wrapc, "w");
     if (fp == 0) begin
-        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_output_data_V_dest_V_out_wrapc);
+        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_output_data_dest_V_out_wrapc);
         $display("ERROR: Simulation using HLS TB failed.");
         $finish;
     end
@@ -1098,15 +1081,15 @@ initial begin : dump_tvout_runtime_sign_output_data_V_dest_V
     @ (posedge AESL_clock);
     @ (posedge AESL_clock);
     @ (posedge AESL_clock);
-    fp = $fopen(`AUTOTB_TVOUT_output_data_V_dest_V_out_wrapc, "a");
+    fp = $fopen(`AUTOTB_TVOUT_output_data_dest_V_out_wrapc, "a");
     if (fp == 0) begin
-        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_output_data_V_dest_V_out_wrapc);
+        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_output_data_dest_V_out_wrapc);
         $display("ERROR: Simulation using HLS TB failed.");
         $finish;
     end
     $fdisplay(fp,"[[[/runtime]]]");
     $fclose(fp);
-    dump_tvout_finish_output_data_V_dest_V = 1;
+    dump_tvout_finish_output_data_dest_V = 1;
 end
 
 
