@@ -32,7 +32,7 @@ set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property ip_repo_paths {
   /home/masudalab/DeepCAEonFPGA/DeepCAEonFPGA/ip_generated/xilinx_com_hls_network_1_0
-  /home/masudalab/DeepCAEonFPGA/PYNQ_Develop
+  /home/masudalab/DeepCAEonFPGA/DeepCAEonFPGA/Pynq
 } [current_project]
 update_ip_catalog
 set_property ip_output_repo /home/masudalab/DeepCAEonFPGA/DeepCAEonFPGA/HLx/HLx.cache/ip [current_project]
