@@ -106,7 +106,7 @@ input wire s_sc_ar_send;
 (* X_INTERFACE_INFO = "xilinx.com:interface:sc:1.0 S_SC_AR RECV" *)
 output wire s_sc_ar_recv;
 (* X_INTERFACE_INFO = "xilinx.com:interface:sc:1.0 S_SC_AR PAYLD" *)
-input wire [137 : 0] s_sc_ar_payld;
+input wire [169 : 0] s_sc_ar_payld;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI ARID" *)
 output wire [0 : 0] m_axi_arid;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI ARADDR" *)
@@ -149,7 +149,7 @@ output wire m_axi_rready;
     .C_AXI_ID_WIDTH(1),
     .C_AXI_RDATA_WIDTH(64),
     .C_AXI_WDATA_WIDTH(64),
-    .C_SC_ADDR_WIDTH(32),
+    .C_SC_ADDR_WIDTH(64),
     .C_SC_ID_WIDTH(1),
     .C_SC_RDATA_WIDTH(64),
     .C_SC_WDATA_WIDTH(64),
@@ -160,8 +160,8 @@ output wire m_axi_rready;
     .C_SC_BUSER_WIDTH(0),
     .C_MSC_ROUTE_WIDTH(1),
     .C_SSC_ROUTE_WIDTH(1),
-    .C_AWPAYLD_WIDTH(138),
-    .C_ARPAYLD_WIDTH(138),
+    .C_AWPAYLD_WIDTH(170),
+    .C_ARPAYLD_WIDTH(170),
     .C_WPAYLD_WIDTH(88),
     .C_RPAYLD_WIDTH(83),
     .C_BPAYLD_WIDTH(5)
@@ -186,7 +186,7 @@ output wire m_axi_rready;
     .s_sc_aw_info(1'D0),
     .s_sc_aw_send(1'D0),
     .s_sc_aw_recv(),
-    .s_sc_aw_payld(138'D0),
+    .s_sc_aw_payld(170'D0),
     .s_sc_w_req(1'D0),
     .s_sc_w_info(1'D0),
     .s_sc_w_send(1'D0),

@@ -55,7 +55,7 @@ module bd_afc3
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M00_AXI RREADY" *) output M00_AXI_rready;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M00_AXI RRESP" *) input [1:0]M00_AXI_rresp;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M00_AXI RVALID" *) input M00_AXI_rvalid;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI ARADDR" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S00_AXI, ADDR_WIDTH 32, ARUSER_WIDTH 0, AWUSER_WIDTH 0, BUSER_WIDTH 0, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, DATA_WIDTH 64, FREQ_HZ 100000000, HAS_BRESP 0, HAS_BURST 0, HAS_CACHE 0, HAS_LOCK 0, HAS_PROT 0, HAS_QOS 0, HAS_REGION 0, HAS_RRESP 1, HAS_WSTRB 0, ID_WIDTH 0, INSERT_VIP 0, MAX_BURST_LENGTH 8, NUM_READ_OUTSTANDING 16, NUM_READ_THREADS 1, NUM_WRITE_OUTSTANDING 2, NUM_WRITE_THREADS 1, PHASE 0.000, PROTOCOL AXI4, READ_WRITE_MODE READ_ONLY, RUSER_BITS_PER_BYTE 0, RUSER_WIDTH 0, SUPPORTS_NARROW_BURST 0, WUSER_BITS_PER_BYTE 0, WUSER_WIDTH 0" *) input [31:0]S00_AXI_araddr;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI ARADDR" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S00_AXI, ADDR_WIDTH 64, ARUSER_WIDTH 0, AWUSER_WIDTH 0, BUSER_WIDTH 0, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, DATA_WIDTH 32, FREQ_HZ 100000000, HAS_BRESP 0, HAS_BURST 0, HAS_CACHE 0, HAS_LOCK 0, HAS_PROT 0, HAS_QOS 0, HAS_REGION 0, HAS_RRESP 1, HAS_WSTRB 0, ID_WIDTH 0, INSERT_VIP 0, MAX_BURST_LENGTH 16, NUM_READ_OUTSTANDING 16, NUM_READ_THREADS 1, NUM_WRITE_OUTSTANDING 2, NUM_WRITE_THREADS 1, PHASE 0.000, PROTOCOL AXI4, READ_WRITE_MODE READ_ONLY, RUSER_BITS_PER_BYTE 0, RUSER_WIDTH 0, SUPPORTS_NARROW_BURST 0, WUSER_BITS_PER_BYTE 0, WUSER_WIDTH 0" *) input [63:0]S00_AXI_araddr;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI ARBURST" *) input [1:0]S00_AXI_arburst;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI ARCACHE" *) input [3:0]S00_AXI_arcache;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI ARLEN" *) input [7:0]S00_AXI_arlen;
@@ -65,7 +65,7 @@ module bd_afc3
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI ARREADY" *) output S00_AXI_arready;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI ARSIZE" *) input [2:0]S00_AXI_arsize;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI ARVALID" *) input S00_AXI_arvalid;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI RDATA" *) output [63:0]S00_AXI_rdata;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI RDATA" *) output [31:0]S00_AXI_rdata;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI RLAST" *) output S00_AXI_rlast;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI RREADY" *) input S00_AXI_rready;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI RRESP" *) output [1:0]S00_AXI_rresp;
@@ -73,7 +73,7 @@ module bd_afc3
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.ACLK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.ACLK, ASSOCIATED_BUSIF M00_AXI:S00_AXI, ASSOCIATED_CLKEN s_sc_aclken, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, FREQ_HZ 100000000, INSERT_VIP 0, PHASE 0.000" *) input aclk;
   (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST.ARESETN RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.ARESETN, INSERT_VIP 0, POLARITY ACTIVE_LOW" *) input aresetn;
 
-  wire [31:0]S00_AXI_1_ARADDR;
+  wire [63:0]S00_AXI_1_ARADDR;
   wire [1:0]S00_AXI_1_ARBURST;
   wire [3:0]S00_AXI_1_ARCACHE;
   wire [7:0]S00_AXI_1_ARLEN;
@@ -83,13 +83,13 @@ module bd_afc3
   wire S00_AXI_1_ARREADY;
   wire [2:0]S00_AXI_1_ARSIZE;
   wire S00_AXI_1_ARVALID;
-  wire [63:0]S00_AXI_1_RDATA;
+  wire [31:0]S00_AXI_1_RDATA;
   wire S00_AXI_1_RLAST;
   wire S00_AXI_1_RREADY;
   wire [1:0]S00_AXI_1_RRESP;
   wire S00_AXI_1_RVALID;
   wire [0:0]S_SC_AR_1_INFO;
-  wire [137:0]S_SC_AR_1_PAYLD;
+  wire [169:0]S_SC_AR_1_PAYLD;
   wire [0:0]S_SC_AR_1_RECV;
   wire S_SC_AR_1_REQ;
   wire S_SC_AR_1_SEND;
@@ -137,7 +137,7 @@ module bd_afc3
   wire m00_sc2axi_M_AXI_RVALID;
   wire m_sc_clk_1;
   wire [0:0]m_sc_resetn_1;
-  wire [31:0]s00_entry_pipeline_m_axi_ARADDR;
+  wire [63:0]s00_entry_pipeline_m_axi_ARADDR;
   wire [3:0]s00_entry_pipeline_m_axi_ARCACHE;
   wire [0:0]s00_entry_pipeline_m_axi_ARID;
   wire [7:0]s00_entry_pipeline_m_axi_ARLEN;
@@ -147,7 +147,7 @@ module bd_afc3
   wire s00_entry_pipeline_m_axi_ARREADY;
   wire [1023:0]s00_entry_pipeline_m_axi_ARUSER;
   wire s00_entry_pipeline_m_axi_ARVALID;
-  wire [63:0]s00_entry_pipeline_m_axi_RDATA;
+  wire [31:0]s00_entry_pipeline_m_axi_RDATA;
   wire [0:0]s00_entry_pipeline_m_axi_RID;
   wire s00_entry_pipeline_m_axi_RLAST;
   wire s00_entry_pipeline_m_axi_RREADY;
@@ -155,7 +155,7 @@ module bd_afc3
   wire [1023:0]s00_entry_pipeline_m_axi_RUSER;
   wire s00_entry_pipeline_m_axi_RVALID;
   wire [0:0]s00_nodes_M_SC_AR_INFO;
-  wire [137:0]s00_nodes_M_SC_AR_PAYLD;
+  wire [169:0]s00_nodes_M_SC_AR_PAYLD;
   wire s00_nodes_M_SC_AR_RECV;
   wire s00_nodes_M_SC_AR_REQ;
   wire s00_nodes_M_SC_AR_SEND;
@@ -177,7 +177,7 @@ module bd_afc3
   assign M00_AXI_arsize[2:0] = m00_exit_pipeline_m_axi_ARSIZE;
   assign M00_AXI_arvalid = m00_exit_pipeline_m_axi_ARVALID;
   assign M00_AXI_rready = m00_exit_pipeline_m_axi_RREADY;
-  assign S00_AXI_1_ARADDR = S00_AXI_araddr[31:0];
+  assign S00_AXI_1_ARADDR = S00_AXI_araddr[63:0];
   assign S00_AXI_1_ARBURST = S00_AXI_arburst[1:0];
   assign S00_AXI_1_ARCACHE = S00_AXI_arcache[3:0];
   assign S00_AXI_1_ARLEN = S00_AXI_arlen[7:0];
@@ -188,7 +188,7 @@ module bd_afc3
   assign S00_AXI_1_ARVALID = S00_AXI_arvalid;
   assign S00_AXI_1_RREADY = S00_AXI_rready;
   assign S00_AXI_arready = S00_AXI_1_ARREADY;
-  assign S00_AXI_rdata[63:0] = S00_AXI_1_RDATA;
+  assign S00_AXI_rdata[31:0] = S00_AXI_1_RDATA;
   assign S00_AXI_rlast = S00_AXI_1_RLAST;
   assign S00_AXI_rresp[1:0] = S00_AXI_1_RRESP;
   assign S00_AXI_rvalid = S00_AXI_1_RVALID;
@@ -621,7 +621,7 @@ module s00_entry_pipeline_imp_USCCV8
     s_axi_rvalid);
   input aclk;
   input aresetn;
-  output [31:0]m_axi_araddr;
+  output [63:0]m_axi_araddr;
   output [3:0]m_axi_arcache;
   output [0:0]m_axi_arid;
   output [7:0]m_axi_arlen;
@@ -631,14 +631,14 @@ module s00_entry_pipeline_imp_USCCV8
   input m_axi_arready;
   output [1023:0]m_axi_aruser;
   output m_axi_arvalid;
-  input [63:0]m_axi_rdata;
+  input [31:0]m_axi_rdata;
   input [0:0]m_axi_rid;
   input m_axi_rlast;
   output m_axi_rready;
   input [1:0]m_axi_rresp;
   input [1023:0]m_axi_ruser;
   input m_axi_rvalid;
-  input [31:0]s_axi_araddr;
+  input [63:0]s_axi_araddr;
   input [1:0]s_axi_arburst;
   input [3:0]s_axi_arcache;
   input [7:0]s_axi_arlen;
@@ -648,7 +648,7 @@ module s00_entry_pipeline_imp_USCCV8
   output s_axi_arready;
   input [2:0]s_axi_arsize;
   input s_axi_arvalid;
-  output [63:0]s_axi_rdata;
+  output [31:0]s_axi_rdata;
   output s_axi_rlast;
   input s_axi_rready;
   output [1:0]s_axi_rresp;
@@ -656,7 +656,7 @@ module s00_entry_pipeline_imp_USCCV8
 
   wire aclk_1;
   wire aresetn_1;
-  wire [31:0]s00_mmu_M_AXI_ARADDR;
+  wire [63:0]s00_mmu_M_AXI_ARADDR;
   wire [1:0]s00_mmu_M_AXI_ARBURST;
   wire [3:0]s00_mmu_M_AXI_ARCACHE;
   wire [7:0]s00_mmu_M_AXI_ARLEN;
@@ -667,13 +667,13 @@ module s00_entry_pipeline_imp_USCCV8
   wire [2:0]s00_mmu_M_AXI_ARSIZE;
   wire [1023:0]s00_mmu_M_AXI_ARUSER;
   wire s00_mmu_M_AXI_ARVALID;
-  wire [63:0]s00_mmu_M_AXI_RDATA;
+  wire [31:0]s00_mmu_M_AXI_RDATA;
   wire s00_mmu_M_AXI_RLAST;
   wire s00_mmu_M_AXI_RREADY;
   wire [1:0]s00_mmu_M_AXI_RRESP;
   wire [1023:0]s00_mmu_M_AXI_RUSER;
   wire s00_mmu_M_AXI_RVALID;
-  wire [31:0]s00_si_converter_M_AXI_ARADDR;
+  wire [63:0]s00_si_converter_M_AXI_ARADDR;
   wire [3:0]s00_si_converter_M_AXI_ARCACHE;
   wire [0:0]s00_si_converter_M_AXI_ARID;
   wire [7:0]s00_si_converter_M_AXI_ARLEN;
@@ -683,14 +683,14 @@ module s00_entry_pipeline_imp_USCCV8
   wire s00_si_converter_M_AXI_ARREADY;
   wire [1023:0]s00_si_converter_M_AXI_ARUSER;
   wire s00_si_converter_M_AXI_ARVALID;
-  wire [63:0]s00_si_converter_M_AXI_RDATA;
+  wire [31:0]s00_si_converter_M_AXI_RDATA;
   wire [0:0]s00_si_converter_M_AXI_RID;
   wire s00_si_converter_M_AXI_RLAST;
   wire s00_si_converter_M_AXI_RREADY;
   wire [1:0]s00_si_converter_M_AXI_RRESP;
   wire [1023:0]s00_si_converter_M_AXI_RUSER;
   wire s00_si_converter_M_AXI_RVALID;
-  wire [31:0]s00_transaction_regulator_M_AXI_ARADDR;
+  wire [63:0]s00_transaction_regulator_M_AXI_ARADDR;
   wire [3:0]s00_transaction_regulator_M_AXI_ARCACHE;
   wire [0:0]s00_transaction_regulator_M_AXI_ARID;
   wire [7:0]s00_transaction_regulator_M_AXI_ARLEN;
@@ -700,14 +700,14 @@ module s00_entry_pipeline_imp_USCCV8
   wire s00_transaction_regulator_M_AXI_ARREADY;
   wire [1023:0]s00_transaction_regulator_M_AXI_ARUSER;
   wire s00_transaction_regulator_M_AXI_ARVALID;
-  wire [63:0]s00_transaction_regulator_M_AXI_RDATA;
+  wire [31:0]s00_transaction_regulator_M_AXI_RDATA;
   wire [0:0]s00_transaction_regulator_M_AXI_RID;
   wire s00_transaction_regulator_M_AXI_RLAST;
   wire s00_transaction_regulator_M_AXI_RREADY;
   wire [1:0]s00_transaction_regulator_M_AXI_RRESP;
   wire [1023:0]s00_transaction_regulator_M_AXI_RUSER;
   wire s00_transaction_regulator_M_AXI_RVALID;
-  wire [31:0]s_axi_1_ARADDR;
+  wire [63:0]s_axi_1_ARADDR;
   wire [1:0]s_axi_1_ARBURST;
   wire [3:0]s_axi_1_ARCACHE;
   wire [7:0]s_axi_1_ARLEN;
@@ -717,7 +717,7 @@ module s00_entry_pipeline_imp_USCCV8
   wire s_axi_1_ARREADY;
   wire [2:0]s_axi_1_ARSIZE;
   wire s_axi_1_ARVALID;
-  wire [63:0]s_axi_1_RDATA;
+  wire [31:0]s_axi_1_RDATA;
   wire s_axi_1_RLAST;
   wire s_axi_1_RREADY;
   wire [1:0]s_axi_1_RRESP;
@@ -725,7 +725,7 @@ module s00_entry_pipeline_imp_USCCV8
 
   assign aclk_1 = aclk;
   assign aresetn_1 = aresetn;
-  assign m_axi_araddr[31:0] = s00_si_converter_M_AXI_ARADDR;
+  assign m_axi_araddr[63:0] = s00_si_converter_M_AXI_ARADDR;
   assign m_axi_arcache[3:0] = s00_si_converter_M_AXI_ARCACHE;
   assign m_axi_arid[0] = s00_si_converter_M_AXI_ARID;
   assign m_axi_arlen[7:0] = s00_si_converter_M_AXI_ARLEN;
@@ -736,13 +736,13 @@ module s00_entry_pipeline_imp_USCCV8
   assign m_axi_arvalid = s00_si_converter_M_AXI_ARVALID;
   assign m_axi_rready = s00_si_converter_M_AXI_RREADY;
   assign s00_si_converter_M_AXI_ARREADY = m_axi_arready;
-  assign s00_si_converter_M_AXI_RDATA = m_axi_rdata[63:0];
+  assign s00_si_converter_M_AXI_RDATA = m_axi_rdata[31:0];
   assign s00_si_converter_M_AXI_RID = m_axi_rid[0];
   assign s00_si_converter_M_AXI_RLAST = m_axi_rlast;
   assign s00_si_converter_M_AXI_RRESP = m_axi_rresp[1:0];
   assign s00_si_converter_M_AXI_RUSER = m_axi_ruser[1023:0];
   assign s00_si_converter_M_AXI_RVALID = m_axi_rvalid;
-  assign s_axi_1_ARADDR = s_axi_araddr[31:0];
+  assign s_axi_1_ARADDR = s_axi_araddr[63:0];
   assign s_axi_1_ARBURST = s_axi_arburst[1:0];
   assign s_axi_1_ARCACHE = s_axi_arcache[3:0];
   assign s_axi_1_ARLEN = s_axi_arlen[7:0];
@@ -753,7 +753,7 @@ module s00_entry_pipeline_imp_USCCV8
   assign s_axi_1_ARVALID = s_axi_arvalid;
   assign s_axi_1_RREADY = s_axi_rready;
   assign s_axi_arready = s_axi_1_ARREADY;
-  assign s_axi_rdata[63:0] = s_axi_1_RDATA;
+  assign s_axi_rdata[31:0] = s_axi_1_RDATA;
   assign s_axi_rlast = s_axi_1_RLAST;
   assign s_axi_rresp[1:0] = s_axi_1_RRESP;
   assign s_axi_rvalid = s_axi_1_RVALID;
@@ -894,7 +894,7 @@ module s00_nodes_imp_Y7M43I
     s_sc_clk,
     s_sc_resetn);
   output [0:0]M_SC_AR_info;
-  output [137:0]M_SC_AR_payld;
+  output [169:0]M_SC_AR_payld;
   input M_SC_AR_recv;
   output M_SC_AR_req;
   output M_SC_AR_send;
@@ -904,7 +904,7 @@ module s00_nodes_imp_Y7M43I
   output [0:0]M_SC_R_req;
   output [0:0]M_SC_R_send;
   input [0:0]S_SC_AR_info;
-  input [137:0]S_SC_AR_payld;
+  input [169:0]S_SC_AR_payld;
   output [0:0]S_SC_AR_recv;
   input [0:0]S_SC_AR_req;
   input [0:0]S_SC_AR_send;
@@ -919,7 +919,7 @@ module s00_nodes_imp_Y7M43I
   input s_sc_resetn;
 
   wire [0:0]S_SC_AR_1_INFO;
-  wire [137:0]S_SC_AR_1_PAYLD;
+  wire [169:0]S_SC_AR_1_PAYLD;
   wire [0:0]S_SC_AR_1_RECV;
   wire [0:0]S_SC_AR_1_REQ;
   wire [0:0]S_SC_AR_1_SEND;
@@ -931,7 +931,7 @@ module s00_nodes_imp_Y7M43I
   wire m_sc_clk_1;
   wire m_sc_resetn_1;
   wire [0:0]s00_ar_node_M_SC_INFO;
-  wire [137:0]s00_ar_node_M_SC_PAYLD;
+  wire [169:0]s00_ar_node_M_SC_PAYLD;
   wire s00_ar_node_M_SC_RECV;
   wire [0:0]s00_ar_node_M_SC_REQ;
   wire [0:0]s00_ar_node_M_SC_SEND;
@@ -944,7 +944,7 @@ module s00_nodes_imp_Y7M43I
   wire s_sc_resetn_1;
 
   assign M_SC_AR_info[0] = s00_ar_node_M_SC_INFO;
-  assign M_SC_AR_payld[137:0] = s00_ar_node_M_SC_PAYLD;
+  assign M_SC_AR_payld[169:0] = s00_ar_node_M_SC_PAYLD;
   assign M_SC_AR_req = s00_ar_node_M_SC_REQ;
   assign M_SC_AR_send = s00_ar_node_M_SC_SEND;
   assign M_SC_R_info[0] = s00_r_node_M_SC_INFO;
@@ -952,7 +952,7 @@ module s00_nodes_imp_Y7M43I
   assign M_SC_R_req[0] = s00_r_node_M_SC_REQ;
   assign M_SC_R_send[0] = s00_r_node_M_SC_SEND;
   assign S_SC_AR_1_INFO = S_SC_AR_info[0];
-  assign S_SC_AR_1_PAYLD = S_SC_AR_payld[137:0];
+  assign S_SC_AR_1_PAYLD = S_SC_AR_payld[169:0];
   assign S_SC_AR_1_REQ = S_SC_AR_req[0];
   assign S_SC_AR_1_SEND = S_SC_AR_send[0];
   assign S_SC_AR_recv[0] = S_SC_AR_1_RECV;

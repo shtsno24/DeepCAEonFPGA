@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<webTalkData  fileName='usage_statistics_ext_xsim.xml'  majorVersion='1' minorVersion='0' timeStamp='Mon Dec 23 15:54:34 2019'>
+<webTalkData  fileName='usage_statistics_ext_xsim.xml'  majorVersion='1' minorVersion='0' timeStamp='Mon Dec 23 18:16:19 2019'>
 <section name="__ROOT__" level="0" order="1" description="">
  <section name="software_version_and_target_device" level="1" order="1" description="">
   <keyValuePair key="beta" value="FALSE" description="" />
   <keyValuePair key="build_version" value="2489853" description="" />
-  <keyValuePair key="date_generated" value="Mon Dec 23 15:54:34 2019" description="" />
+  <keyValuePair key="date_generated" value="Mon Dec 23 18:16:19 2019" description="" />
   <keyValuePair key="os_platform" value="LIN64" description="" />
   <keyValuePair key="product_version" value="XSIM v2018.3.1 (64-bit)" description="" />
-  <keyValuePair key="project_id" value="c34262f0-e5fe-459f-8c0f-b236ab722878" description="" />
+  <keyValuePair key="project_id" value="781559f4-af3d-42e8-9b04-58f6489b033e" description="" />
   <keyValuePair key="project_iteration" value="2" description="" />
   <keyValuePair key="random_id" value="7a1e2c8b-a098-4cdc-9404-1c1178c416a5" description="" />
   <keyValuePair key="registration_id" value="7a1e2c8b-a098-4cdc-9404-1c1178c416a5" description="" />
@@ -20,7 +20,7 @@
  </section>
  <section name="user_environment" level="1" order="2" description="">
   <keyValuePair key="cpu_name" value="Intel(R) Core(TM) i5-4440 CPU @ 3.10GHz" description="" />
-  <keyValuePair key="cpu_speed" value="2505.212 MHz" description="" />
+  <keyValuePair key="cpu_speed" value="3132.480 MHz" description="" />
   <keyValuePair key="os_name" value="Ubuntu" description="" />
   <keyValuePair key="os_release" value="Ubuntu 18.04.3 LTS" description="" />
   <keyValuePair key="system_ram" value="16.000 GB" description="" />

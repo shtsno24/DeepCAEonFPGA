@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'network'" level="0">
-<item name = "Date">Mon Dec 23 15:53:45 2019
+<item name = "Date">Mon Dec 23 18:13:57 2019
 </item>
 <item name = "Version">2018.3.1 (Build 2489210 on Tue Mar 26 04:40:43 MDT 2019)</item>
 <item name = "Project">HLS</item>
@@ -244,8 +244,8 @@
 <item name = "Max Delay">6.51</item>
 <item name = "Critical Path Table"><table name="Critical Path Table" hasTotal="0">
 <keys size="15">Name, Operator, Delay, Accumulated Delay, Store Source, Resource, Core, Interface, Type, Port, Array, Scope, Pointer, Callee, Phi Node</keys>
-<column name="'MemBank_B_load', ../mnist_AXI_Stream.cpp:140">load, 3.25, 3.25, -, -, -, -, -, -, &apos;MemBank_B&apos;, ../mnist_AXI_Stream.cpp:33, -, -, -, -</column>
-<column name="../mnist_AXI_Stream.cpp:140">store, 3.25, 6.51, &apos;MemBank_B_load&apos;, ../mnist_AXI_Stream.cpp:140, -, -, -, -, -, &apos;MemBank_Out&apos;, ../mnist_AXI_Stream.cpp:36, -, -, -, -</column>
+<column name="'MemBank_B_load', ../mnist_AXI_Stream.cpp:141">load, 3.25, 3.25, -, -, -, -, -, -, &apos;MemBank_B&apos;, ../mnist_AXI_Stream.cpp:33, -, -, -, -</column>
+<column name="../mnist_AXI_Stream.cpp:141">store, 3.25, 6.51, &apos;MemBank_B_load&apos;, ../mnist_AXI_Stream.cpp:141, -, -, -, -, -, &apos;MemBank_Out&apos;, ../mnist_AXI_Stream.cpp:36, -, -, -, -</column>
 </table>
 </item>
 </section>

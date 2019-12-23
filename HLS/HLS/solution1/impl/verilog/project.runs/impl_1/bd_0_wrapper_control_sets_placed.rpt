@@ -1,0 +1,84 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3.1 (lin64) Build 2489853 Tue Mar 26 04:18:30 MDT 2019
+| Date         : Mon Dec 23 18:18:49 2019
+| Host         : masudalab-ubuntu running 64-bit Ubuntu 18.04.3 LTS
+| Command      : report_control_sets -verbose -file bd_0_wrapper_control_sets_placed.rpt
+| Design       : bd_0_wrapper
+| Device       : xc7z020
+-----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    14 |
+| Unused register locations in slices containing registers |    47 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            1 |
+|      3 |            1 |
+|      5 |            1 |
+|      9 |            1 |
+|     10 |            3 |
+|     14 |            1 |
+|    16+ |            6 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              24 |           12 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              51 |           16 |
+| Yes          | No                    | No                     |              92 |           39 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              26 |            8 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------+-----------------------------------------------------+----------------------------------------------------------------+------------------+----------------+
+| Clock Signal |                    Enable Signal                    |                        Set/Reset Signal                        | Slice Load Count | Bel Load Count |
++--------------+-----------------------------------------------------+----------------------------------------------------------------+------------------+----------------+
+|  ap_clk      | bd_0_i/hls_inst/inst/network_AXILiteS_s_axi_U/ar_hs | bd_0_i/hls_inst/inst/network_AXILiteS_s_axi_U/rdata[1]_i_1_n_6 |                1 |              2 |
+|  ap_clk      | bd_0_i/hls_inst/inst/network_AXILiteS_s_axi_U/ar_hs |                                                                |                2 |              3 |
+|  ap_clk      | bd_0_i/hls_inst/inst/network_AXILiteS_s_axi_U/waddr |                                                                |                2 |              5 |
+|  ap_clk      |                                                     | bd_0_i/hls_inst/inst/ap_NS_fsm1                                |                3 |              9 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state4               | bd_0_i/hls_inst/inst/ap_NS_fsm159_out                          |                3 |             10 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state3               |                                                                |                2 |             10 |
+|  ap_clk      | bd_0_i/hls_inst/inst/tmp_2_reg_293_reg0             |                                                                |                4 |             10 |
+|  ap_clk      | bd_0_i/hls_inst/inst/i_reg_1770                     | bd_0_i/hls_inst/inst/network_AXILiteS_s_axi_U/i_reg_177        |                4 |             14 |
+|  ap_clk      | bd_0_i/hls_inst/inst/input_data_data_V_0_load_B     |                                                                |               11 |             16 |
+|  ap_clk      | bd_0_i/hls_inst/inst/output_data_data_V_1_load_A    |                                                                |                4 |             16 |
+|  ap_clk      | bd_0_i/hls_inst/inst/output_data_data_V_1_load_B    |                                                                |                3 |             16 |
+|  ap_clk      | bd_0_i/hls_inst/inst/input_data_data_V_0_load_A     |                                                                |               11 |             16 |
+|  ap_clk      |                                                     |                                                                |               12 |             24 |
+|  ap_clk      |                                                     | bd_0_i/hls_inst/inst/network_AXILiteS_s_axi_U/ap_rst_n_inv     |               13 |             42 |
++--------------+-----------------------------------------------------+----------------------------------------------------------------+------------------+----------------+
+
+

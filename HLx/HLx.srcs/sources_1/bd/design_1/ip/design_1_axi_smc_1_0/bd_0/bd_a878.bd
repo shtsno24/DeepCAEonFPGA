@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x4FEE1843C48A0E83",
+      "boundary_crc": "0x9F15C5B877880B70",
       "design_src": "SBD",
       "device": "xc7z020clg400-1",
       "name": "bd_a878",
@@ -37,7 +37,7 @@
         "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
         "parameters": {
           "ADDR_WIDTH": {
-            "value": "32",
+            "value": "64",
             "value_src": "auto_prop"
           },
           "ARUSER_WIDTH": {
@@ -109,7 +109,7 @@
             "value_src": "default"
           },
           "MAX_BURST_LENGTH": {
-            "value": "8",
+            "value": "64",
             "value_src": "user_prop"
           },
           "NUM_READ_OUTSTANDING": {
@@ -237,7 +237,7 @@
             "value_src": "default"
           },
           "MAX_BURST_LENGTH": {
-            "value": "8"
+            "value": "16"
           },
           "NUM_READ_OUTSTANDING": {
             "value": "2"
@@ -452,7 +452,7 @@
             "xci_name": "bd_a878_s00mmu_0",
             "parameters": {
               "ADDR_WIDTH": {
-                "value": "32"
+                "value": "64"
               },
               "ID_WIDTH": {
                 "value": "0"
@@ -536,7 +536,7 @@
             "xci_name": "bd_a878_s00tr_0",
             "parameters": {
               "ADDR_WIDTH": {
-                "value": "32"
+                "value": "64"
               },
               "IS_CASCADED": {
                 "value": "0"
@@ -581,7 +581,7 @@
             "xci_name": "bd_a878_s00sic_0",
             "parameters": {
               "ADDR_WIDTH": {
-                "value": "32"
+                "value": "64"
               },
               "HAS_BURST": {
                 "value": "0"
@@ -668,12 +668,6 @@
               "s00_si_converter/S_AXI"
             ]
           },
-          "s_axi_1": {
-            "interface_ports": [
-              "s_axi",
-              "s00_mmu/S_AXI"
-            ]
-          },
           "s00_si_converter_M_AXI": {
             "interface_ports": [
               "m_axi",
@@ -684,6 +678,12 @@
             "interface_ports": [
               "s00_mmu/M_AXI",
               "s00_transaction_regulator/S_AXI"
+            ]
+          },
+          "s_axi_1": {
+            "interface_ports": [
+              "s_axi",
+              "s00_mmu/S_AXI"
             ]
           }
         },
@@ -711,7 +711,7 @@
         "xci_name": "bd_a878_s00a2s_0",
         "parameters": {
           "AXI_ADDR_WIDTH": {
-            "value": "32"
+            "value": "64"
           },
           "AXI_ID_WIDTH": {
             "value": "1"
@@ -729,7 +729,7 @@
             "value": "WRITE_ONLY"
           },
           "SC_ADDR_WIDTH": {
-            "value": "32"
+            "value": "64"
           },
           "SC_ARUSER_WIDTH": {
             "value": "0"
@@ -817,7 +817,7 @@
                 "value": "1"
               },
               "ADDR_WIDTH": {
-                "value": "32"
+                "value": "64"
               },
               "CHANNEL": {
                 "value": "3"
@@ -889,7 +889,7 @@
                 "value": "1"
               },
               "PAYLD_WIDTH": {
-                "value": "138"
+                "value": "170"
               },
               "S00_NUM_BYTES": {
                 "value": "8"
@@ -958,7 +958,7 @@
                 "value": "1"
               },
               "ADDR_WIDTH": {
-                "value": "32"
+                "value": "64"
               },
               "CHANNEL": {
                 "value": "1"
@@ -1099,7 +1099,7 @@
                 "value": "1"
               },
               "ADDR_WIDTH": {
-                "value": "32"
+                "value": "64"
               },
               "CHANNEL": {
                 "value": "4"
@@ -1231,10 +1231,16 @@
           }
         },
         "interface_nets": {
-          "S_SC_W_1": {
+          "S_SC_AW_1": {
             "interface_ports": [
-              "S_SC_W",
-              "s00_w_node/S_SC"
+              "S_SC_AW",
+              "s00_aw_node/S_SC"
+            ]
+          },
+          "s00_b_node_M_SC": {
+            "interface_ports": [
+              "M_SC_B",
+              "s00_b_node/M_SC"
             ]
           },
           "S_SC_B_1": {
@@ -1243,10 +1249,10 @@
               "s00_b_node/S_SC"
             ]
           },
-          "s00_b_node_M_SC": {
+          "S_SC_W_1": {
             "interface_ports": [
-              "M_SC_B",
-              "s00_b_node/M_SC"
+              "S_SC_W",
+              "s00_w_node/S_SC"
             ]
           },
           "s00_aw_node_M_SC": {
@@ -1259,12 +1265,6 @@
             "interface_ports": [
               "M_SC_W",
               "s00_w_node/M_SC"
-            ]
-          },
-          "S_SC_AW_1": {
-            "interface_ports": [
-              "S_SC_AW",
-              "s00_aw_node/S_SC"
             ]
           }
         },
@@ -1326,7 +1326,7 @@
             "value": "WRITE_ONLY"
           },
           "SC_ADDR_WIDTH": {
-            "value": "32"
+            "value": "64"
           },
           "SC_ARUSER_WIDTH": {
             "value": "0"
@@ -1414,7 +1414,7 @@
                 "value": "0"
               },
               "M_MAX_BURST_LENGTH": {
-                "value": "8"
+                "value": "16"
               },
               "M_PROTOCOL": {
                 "value": "AXI3"
@@ -1495,22 +1495,22 @@
       }
     },
     "interface_nets": {
-      "m00_exit_pipeline_m_axi": {
-        "interface_ports": [
-          "M00_AXI",
-          "m00_exit_pipeline/m_axi"
-        ]
-      },
       "m00_sc2axi_M_AXI": {
         "interface_ports": [
           "m00_sc2axi/M_AXI",
           "m00_exit_pipeline/s_axi"
         ]
       },
-      "s00_nodes_M_SC_AW": {
+      "S_SC_AW_1": {
         "interface_ports": [
-          "s00_nodes/M_SC_AW",
-          "m00_sc2axi/S_SC_AW"
+          "s00_nodes/S_SC_AW",
+          "s00_axi2sc/M_SC_AW"
+        ]
+      },
+      "S00_AXI_1": {
+        "interface_ports": [
+          "S00_AXI",
+          "s00_entry_pipeline/s_axi"
         ]
       },
       "S_SC_B_1": {
@@ -1525,22 +1525,10 @@
           "m00_sc2axi/S_SC_W"
         ]
       },
-      "S00_AXI_1": {
+      "m00_exit_pipeline_m_axi": {
         "interface_ports": [
-          "S00_AXI",
-          "s00_entry_pipeline/s_axi"
-        ]
-      },
-      "S_SC_AW_1": {
-        "interface_ports": [
-          "s00_nodes/S_SC_AW",
-          "s00_axi2sc/M_SC_AW"
-        ]
-      },
-      "s00_entry_pipeline_m_axi": {
-        "interface_ports": [
-          "s00_entry_pipeline/m_axi",
-          "s00_axi2sc/S_AXI"
+          "M00_AXI",
+          "m00_exit_pipeline/m_axi"
         ]
       },
       "s00_nodes_M_SC_B": {
@@ -1549,10 +1537,22 @@
           "s00_axi2sc/S_SC_B"
         ]
       },
+      "s00_nodes_M_SC_AW": {
+        "interface_ports": [
+          "s00_nodes/M_SC_AW",
+          "m00_sc2axi/S_SC_AW"
+        ]
+      },
       "S_SC_W_1": {
         "interface_ports": [
           "s00_nodes/S_SC_W",
           "s00_axi2sc/M_SC_W"
+        ]
+      },
+      "s00_entry_pipeline_m_axi": {
+        "interface_ports": [
+          "s00_entry_pipeline/m_axi",
+          "s00_axi2sc/S_AXI"
         ]
       }
     },
@@ -1619,7 +1619,7 @@
       "/": {
         "address_spaces": {
           "S00_AXI": {
-            "range": "4G",
+            "range": "16E",
             "width": "32"
           }
         },

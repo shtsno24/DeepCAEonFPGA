@@ -54,7 +54,7 @@ module bd_afc3_wrapper
   output M00_AXI_rready;
   input [1:0]M00_AXI_rresp;
   input M00_AXI_rvalid;
-  input [31:0]S00_AXI_araddr;
+  input [63:0]S00_AXI_araddr;
   input [1:0]S00_AXI_arburst;
   input [3:0]S00_AXI_arcache;
   input [7:0]S00_AXI_arlen;
@@ -64,7 +64,7 @@ module bd_afc3_wrapper
   output S00_AXI_arready;
   input [2:0]S00_AXI_arsize;
   input S00_AXI_arvalid;
-  output [63:0]S00_AXI_rdata;
+  output [31:0]S00_AXI_rdata;
   output S00_AXI_rlast;
   input S00_AXI_rready;
   output [1:0]S00_AXI_rresp;
@@ -87,7 +87,7 @@ module bd_afc3_wrapper
   wire M00_AXI_rready;
   wire [1:0]M00_AXI_rresp;
   wire M00_AXI_rvalid;
-  wire [31:0]S00_AXI_araddr;
+  wire [63:0]S00_AXI_araddr;
   wire [1:0]S00_AXI_arburst;
   wire [3:0]S00_AXI_arcache;
   wire [7:0]S00_AXI_arlen;
@@ -97,7 +97,7 @@ module bd_afc3_wrapper
   wire S00_AXI_arready;
   wire [2:0]S00_AXI_arsize;
   wire S00_AXI_arvalid;
-  wire [63:0]S00_AXI_rdata;
+  wire [31:0]S00_AXI_rdata;
   wire S00_AXI_rlast;
   wire S00_AXI_rready;
   wire [1:0]S00_AXI_rresp;

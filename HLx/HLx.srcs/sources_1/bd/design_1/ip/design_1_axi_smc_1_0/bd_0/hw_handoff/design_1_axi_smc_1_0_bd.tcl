@@ -174,7 +174,7 @@ proc create_hier_cell_s00_nodes { parentCell nameHier } {
   set_property -dict [ list \
    CONFIG.ACLKEN_CONVERSION {0} \
    CONFIG.ACLK_RELATIONSHIP {1} \
-   CONFIG.ADDR_WIDTH {32} \
+   CONFIG.ADDR_WIDTH {64} \
    CONFIG.CHANNEL {3} \
    CONFIG.ID_WIDTH {1} \
    CONFIG.M00_NUM_BYTES {8} \
@@ -198,7 +198,7 @@ proc create_hier_cell_s00_nodes { parentCell nameHier } {
    CONFIG.NUM_MI {1} \
    CONFIG.NUM_OUTSTANDING {16} \
    CONFIG.NUM_SI {1} \
-   CONFIG.PAYLD_WIDTH {138} \
+   CONFIG.PAYLD_WIDTH {170} \
    CONFIG.S00_NUM_BYTES {8} \
    CONFIG.S01_NUM_BYTES {8} \
    CONFIG.S02_NUM_BYTES {8} \
@@ -224,7 +224,7 @@ proc create_hier_cell_s00_nodes { parentCell nameHier } {
   set_property -dict [ list \
    CONFIG.ACLKEN_CONVERSION {0} \
    CONFIG.ACLK_RELATIONSHIP {1} \
-   CONFIG.ADDR_WIDTH {32} \
+   CONFIG.ADDR_WIDTH {64} \
    CONFIG.CHANNEL {4} \
    CONFIG.ID_WIDTH {1} \
    CONFIG.M00_NUM_BYTES {8} \
@@ -274,7 +274,7 @@ proc create_hier_cell_s00_nodes { parentCell nameHier } {
   set_property -dict [ list \
    CONFIG.ACLKEN_CONVERSION {0} \
    CONFIG.ACLK_RELATIONSHIP {1} \
-   CONFIG.ADDR_WIDTH {32} \
+   CONFIG.ADDR_WIDTH {64} \
    CONFIG.CHANNEL {1} \
    CONFIG.ID_WIDTH {1} \
    CONFIG.M00_NUM_BYTES {8} \
@@ -382,7 +382,7 @@ proc create_hier_cell_s00_entry_pipeline { parentCell nameHier } {
   # Create instance: s00_mmu, and set properties
   set s00_mmu [ create_bd_cell -type ip -vlnv xilinx.com:ip:sc_mmu:1.0 s00_mmu ]
   set_property -dict [ list \
-   CONFIG.ADDR_WIDTH {32} \
+   CONFIG.ADDR_WIDTH {64} \
    CONFIG.ID_WIDTH {0} \
    CONFIG.IS_CASCADED {0} \
    CONFIG.MSC000_ROUTE {0b1} \
@@ -413,7 +413,7 @@ proc create_hier_cell_s00_entry_pipeline { parentCell nameHier } {
   # Create instance: s00_si_converter, and set properties
   set s00_si_converter [ create_bd_cell -type ip -vlnv xilinx.com:ip:sc_si_converter:1.0 s00_si_converter ]
   set_property -dict [ list \
-   CONFIG.ADDR_WIDTH {32} \
+   CONFIG.ADDR_WIDTH {64} \
    CONFIG.HAS_BURST {0} \
    CONFIG.ID_WIDTH {1} \
    CONFIG.IS_CASCADED {0} \
@@ -444,7 +444,7 @@ proc create_hier_cell_s00_entry_pipeline { parentCell nameHier } {
   # Create instance: s00_transaction_regulator, and set properties
   set s00_transaction_regulator [ create_bd_cell -type ip -vlnv xilinx.com:ip:sc_transaction_regulator:1.0 s00_transaction_regulator ]
   set_property -dict [ list \
-   CONFIG.ADDR_WIDTH {32} \
+   CONFIG.ADDR_WIDTH {64} \
    CONFIG.IS_CASCADED {0} \
    CONFIG.MEP_IDENTIFIER {1} \
    CONFIG.MEP_IDENTIFIER_WIDTH {1} \
@@ -528,7 +528,7 @@ proc create_hier_cell_m00_exit_pipeline { parentCell nameHier } {
    CONFIG.M_AWUSER_WIDTH {0} \
    CONFIG.M_BUSER_WIDTH {0} \
    CONFIG.M_ID_WIDTH {0} \
-   CONFIG.M_MAX_BURST_LENGTH {8} \
+   CONFIG.M_MAX_BURST_LENGTH {16} \
    CONFIG.M_PROTOCOL {AXI3} \
    CONFIG.M_RUSER_BITS_PER_BYTE {0} \
    CONFIG.M_RUSER_WIDTH {0} \
@@ -661,7 +661,7 @@ proc create_root_design { parentCell } {
   # Create interface ports
   set M00_AXI [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:aximm_rtl:1.0 M00_AXI ]
   set_property -dict [ list \
-   CONFIG.MAX_BURST_LENGTH {8} \
+   CONFIG.MAX_BURST_LENGTH {16} \
    CONFIG.NUM_READ_OUTSTANDING {2} \
    CONFIG.NUM_WRITE_OUTSTANDING {16} \
    CONFIG.RUSER_BITS_PER_BYTE {0} \
@@ -699,7 +699,7 @@ proc create_root_design { parentCell } {
    CONFIG.AXI_WDATA_WIDTH {64} \
    CONFIG.MSC_ROUTE_WIDTH {1} \
    CONFIG.READ_WRITE_MODE {WRITE_ONLY} \
-   CONFIG.SC_ADDR_WIDTH {32} \
+   CONFIG.SC_ADDR_WIDTH {64} \
    CONFIG.SC_ARUSER_WIDTH {0} \
    CONFIG.SC_AWUSER_WIDTH {0} \
    CONFIG.SC_BUSER_WIDTH {0} \
@@ -714,13 +714,13 @@ proc create_root_design { parentCell } {
   # Create instance: s00_axi2sc, and set properties
   set s00_axi2sc [ create_bd_cell -type ip -vlnv xilinx.com:ip:sc_axi2sc:1.0 s00_axi2sc ]
   set_property -dict [ list \
-   CONFIG.AXI_ADDR_WIDTH {32} \
+   CONFIG.AXI_ADDR_WIDTH {64} \
    CONFIG.AXI_ID_WIDTH {1} \
    CONFIG.AXI_RDATA_WIDTH {64} \
    CONFIG.AXI_WDATA_WIDTH {64} \
    CONFIG.MSC_ROUTE_WIDTH {1} \
    CONFIG.READ_WRITE_MODE {WRITE_ONLY} \
-   CONFIG.SC_ADDR_WIDTH {32} \
+   CONFIG.SC_ADDR_WIDTH {64} \
    CONFIG.SC_ARUSER_WIDTH {0} \
    CONFIG.SC_AWUSER_WIDTH {0} \
    CONFIG.SC_BUSER_WIDTH {0} \

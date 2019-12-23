@@ -75981,18 +75981,19 @@ int network(axis input_data[784], axis output_data[784]) {
 #pragma empty_line
  ap_axis<16, 1, 1, 1> tmp;
 #pragma empty_line
+#pragma empty_line
  int i = 0;
  do {
   tmp = input_data[i];
   MemBank_B[i] = (int16_t)tmp.data;
   i += 1;
  } while(tmp.last != 1);
-#pragma line 138 "/home/masudalab/DeepCAEonFPGA/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
+#pragma line 139 "/home/masudalab/DeepCAEonFPGA/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
  for(i = 0; i < array_length; i++){
 #pragma empty_line
   MemBank_Out[i] = (int16_t)MemBank_B[i];
  }
-#pragma line 161 "/home/masudalab/DeepCAEonFPGA/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
+#pragma line 162 "/home/masudalab/DeepCAEonFPGA/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
  for(i = 0; i < array_length; i++){
 #pragma HLS PIPELINE
   tmp.dest = 0;
@@ -76021,7 +76022,7 @@ int main(void){
 #pragma empty_line
     int16_t output_img_buff[1 * 28 * 28];
     ap_axis<16, 1, 1, 1> temp;
-#pragma line 214 "/home/masudalab/DeepCAEonFPGA/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
+#pragma line 215 "/home/masudalab/DeepCAEonFPGA/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
  int i = 0;
  for(int depth = 0; depth < 1; depth++){
   for(int height = 0; height < 28; height++){
@@ -76047,7 +76048,7 @@ int main(void){
 #pragma empty_line
 #pragma empty_line
  network(input_buffer, output_buffer);
-#pragma line 257 "/home/masudalab/DeepCAEonFPGA/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
+#pragma line 258 "/home/masudalab/DeepCAEonFPGA/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
  i = 0;
  do {
   temp = output_buffer[i];

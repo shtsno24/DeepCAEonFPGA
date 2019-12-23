@@ -46,7 +46,7 @@ module bd_a878
     S00_AXI_wvalid,
     aclk,
     aresetn);
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M00_AXI AWADDR" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME M00_AXI, ADDR_WIDTH 32, ARUSER_WIDTH 0, AWUSER_WIDTH 0, BUSER_WIDTH 0, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, DATA_WIDTH 64, FREQ_HZ 100000000, HAS_BRESP 1, HAS_BURST 0, HAS_CACHE 0, HAS_LOCK 0, HAS_PROT 0, HAS_QOS 0, HAS_REGION 0, HAS_RRESP 0, HAS_WSTRB 1, ID_WIDTH 0, INSERT_VIP 0, MAX_BURST_LENGTH 8, NUM_READ_OUTSTANDING 2, NUM_READ_THREADS 1, NUM_WRITE_OUTSTANDING 16, NUM_WRITE_THREADS 1, PHASE 0.000, PROTOCOL AXI3, READ_WRITE_MODE WRITE_ONLY, RUSER_BITS_PER_BYTE 0, RUSER_WIDTH 0, SUPPORTS_NARROW_BURST 0, WUSER_BITS_PER_BYTE 0, WUSER_WIDTH 0" *) output [31:0]M00_AXI_awaddr;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M00_AXI AWADDR" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME M00_AXI, ADDR_WIDTH 32, ARUSER_WIDTH 0, AWUSER_WIDTH 0, BUSER_WIDTH 0, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, DATA_WIDTH 64, FREQ_HZ 100000000, HAS_BRESP 1, HAS_BURST 0, HAS_CACHE 0, HAS_LOCK 0, HAS_PROT 0, HAS_QOS 0, HAS_REGION 0, HAS_RRESP 0, HAS_WSTRB 1, ID_WIDTH 0, INSERT_VIP 0, MAX_BURST_LENGTH 16, NUM_READ_OUTSTANDING 2, NUM_READ_THREADS 1, NUM_WRITE_OUTSTANDING 16, NUM_WRITE_THREADS 1, PHASE 0.000, PROTOCOL AXI3, READ_WRITE_MODE WRITE_ONLY, RUSER_BITS_PER_BYTE 0, RUSER_WIDTH 0, SUPPORTS_NARROW_BURST 0, WUSER_BITS_PER_BYTE 0, WUSER_WIDTH 0" *) output [31:0]M00_AXI_awaddr;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M00_AXI AWBURST" *) output [1:0]M00_AXI_awburst;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M00_AXI AWCACHE" *) output [3:0]M00_AXI_awcache;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M00_AXI AWLEN" *) output [3:0]M00_AXI_awlen;
@@ -64,7 +64,7 @@ module bd_a878
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M00_AXI WREADY" *) input M00_AXI_wready;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M00_AXI WSTRB" *) output [7:0]M00_AXI_wstrb;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M00_AXI WVALID" *) output M00_AXI_wvalid;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI AWADDR" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S00_AXI, ADDR_WIDTH 32, ARUSER_WIDTH 0, AWUSER_WIDTH 0, BUSER_WIDTH 0, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, DATA_WIDTH 64, FREQ_HZ 100000000, HAS_BRESP 1, HAS_BURST 0, HAS_CACHE 0, HAS_LOCK 0, HAS_PROT 0, HAS_QOS 0, HAS_REGION 0, HAS_RRESP 0, HAS_WSTRB 1, ID_WIDTH 0, INSERT_VIP 0, MAX_BURST_LENGTH 8, NUM_READ_OUTSTANDING 2, NUM_READ_THREADS 1, NUM_WRITE_OUTSTANDING 16, NUM_WRITE_THREADS 1, PHASE 0.000, PROTOCOL AXI4, READ_WRITE_MODE WRITE_ONLY, RUSER_BITS_PER_BYTE 0, RUSER_WIDTH 0, SUPPORTS_NARROW_BURST 0, WUSER_BITS_PER_BYTE 0, WUSER_WIDTH 0" *) input [31:0]S00_AXI_awaddr;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI AWADDR" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S00_AXI, ADDR_WIDTH 64, ARUSER_WIDTH 0, AWUSER_WIDTH 0, BUSER_WIDTH 0, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, DATA_WIDTH 64, FREQ_HZ 100000000, HAS_BRESP 1, HAS_BURST 0, HAS_CACHE 0, HAS_LOCK 0, HAS_PROT 0, HAS_QOS 0, HAS_REGION 0, HAS_RRESP 0, HAS_WSTRB 1, ID_WIDTH 0, INSERT_VIP 0, MAX_BURST_LENGTH 64, NUM_READ_OUTSTANDING 2, NUM_READ_THREADS 1, NUM_WRITE_OUTSTANDING 16, NUM_WRITE_THREADS 1, PHASE 0.000, PROTOCOL AXI4, READ_WRITE_MODE WRITE_ONLY, RUSER_BITS_PER_BYTE 0, RUSER_WIDTH 0, SUPPORTS_NARROW_BURST 0, WUSER_BITS_PER_BYTE 0, WUSER_WIDTH 0" *) input [63:0]S00_AXI_awaddr;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI AWBURST" *) input [1:0]S00_AXI_awburst;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI AWCACHE" *) input [3:0]S00_AXI_awcache;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI AWLEN" *) input [7:0]S00_AXI_awlen;
@@ -85,7 +85,7 @@ module bd_a878
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.ACLK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.ACLK, ASSOCIATED_BUSIF M00_AXI:S00_AXI, ASSOCIATED_CLKEN s_sc_aclken, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, FREQ_HZ 100000000, INSERT_VIP 0, PHASE 0.000" *) input aclk;
   (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST.ARESETN RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.ARESETN, INSERT_VIP 0, POLARITY ACTIVE_LOW" *) input aresetn;
 
-  wire [31:0]S00_AXI_1_AWADDR;
+  wire [63:0]S00_AXI_1_AWADDR;
   wire [1:0]S00_AXI_1_AWBURST;
   wire [3:0]S00_AXI_1_AWCACHE;
   wire [7:0]S00_AXI_1_AWLEN;
@@ -104,7 +104,7 @@ module bd_a878
   wire [7:0]S00_AXI_1_WSTRB;
   wire S00_AXI_1_WVALID;
   wire [0:0]S_SC_AW_1_INFO;
-  wire [137:0]S_SC_AW_1_PAYLD;
+  wire [169:0]S_SC_AW_1_PAYLD;
   wire [0:0]S_SC_AW_1_RECV;
   wire S_SC_AW_1_REQ;
   wire S_SC_AW_1_SEND;
@@ -164,7 +164,7 @@ module bd_a878
   wire m00_sc2axi_M_AXI_WVALID;
   wire m_sc_clk_1;
   wire [0:0]m_sc_resetn_1;
-  wire [31:0]s00_entry_pipeline_m_axi_AWADDR;
+  wire [63:0]s00_entry_pipeline_m_axi_AWADDR;
   wire [3:0]s00_entry_pipeline_m_axi_AWCACHE;
   wire [0:0]s00_entry_pipeline_m_axi_AWID;
   wire [7:0]s00_entry_pipeline_m_axi_AWLEN;
@@ -186,7 +186,7 @@ module bd_a878
   wire [1023:0]s00_entry_pipeline_m_axi_WUSER;
   wire s00_entry_pipeline_m_axi_WVALID;
   wire [0:0]s00_nodes_M_SC_AW_INFO;
-  wire [137:0]s00_nodes_M_SC_AW_PAYLD;
+  wire [169:0]s00_nodes_M_SC_AW_PAYLD;
   wire s00_nodes_M_SC_AW_RECV;
   wire s00_nodes_M_SC_AW_REQ;
   wire s00_nodes_M_SC_AW_SEND;
@@ -217,7 +217,7 @@ module bd_a878
   assign M00_AXI_wlast = m00_exit_pipeline_m_axi_WLAST;
   assign M00_AXI_wstrb[7:0] = m00_exit_pipeline_m_axi_WSTRB;
   assign M00_AXI_wvalid = m00_exit_pipeline_m_axi_WVALID;
-  assign S00_AXI_1_AWADDR = S00_AXI_awaddr[31:0];
+  assign S00_AXI_1_AWADDR = S00_AXI_awaddr[63:0];
   assign S00_AXI_1_AWBURST = S00_AXI_awburst[1:0];
   assign S00_AXI_1_AWCACHE = S00_AXI_awcache[3:0];
   assign S00_AXI_1_AWLEN = S00_AXI_awlen[7:0];
@@ -747,7 +747,7 @@ module s00_entry_pipeline_imp_I9HTTY
     s_axi_wvalid);
   input aclk;
   input aresetn;
-  output [31:0]m_axi_awaddr;
+  output [63:0]m_axi_awaddr;
   output [3:0]m_axi_awcache;
   output [0:0]m_axi_awid;
   output [7:0]m_axi_awlen;
@@ -768,7 +768,7 @@ module s00_entry_pipeline_imp_I9HTTY
   output [7:0]m_axi_wstrb;
   output [1023:0]m_axi_wuser;
   output m_axi_wvalid;
-  input [31:0]s_axi_awaddr;
+  input [63:0]s_axi_awaddr;
   input [1:0]s_axi_awburst;
   input [3:0]s_axi_awcache;
   input [7:0]s_axi_awlen;
@@ -789,7 +789,7 @@ module s00_entry_pipeline_imp_I9HTTY
 
   wire aclk_1;
   wire aresetn_1;
-  wire [31:0]s00_mmu_M_AXI_AWADDR;
+  wire [63:0]s00_mmu_M_AXI_AWADDR;
   wire [1:0]s00_mmu_M_AXI_AWBURST;
   wire [3:0]s00_mmu_M_AXI_AWCACHE;
   wire [7:0]s00_mmu_M_AXI_AWLEN;
@@ -810,7 +810,7 @@ module s00_entry_pipeline_imp_I9HTTY
   wire [7:0]s00_mmu_M_AXI_WSTRB;
   wire [1023:0]s00_mmu_M_AXI_WUSER;
   wire s00_mmu_M_AXI_WVALID;
-  wire [31:0]s00_si_converter_M_AXI_AWADDR;
+  wire [63:0]s00_si_converter_M_AXI_AWADDR;
   wire [3:0]s00_si_converter_M_AXI_AWCACHE;
   wire [0:0]s00_si_converter_M_AXI_AWID;
   wire [7:0]s00_si_converter_M_AXI_AWLEN;
@@ -831,7 +831,7 @@ module s00_entry_pipeline_imp_I9HTTY
   wire [7:0]s00_si_converter_M_AXI_WSTRB;
   wire [1023:0]s00_si_converter_M_AXI_WUSER;
   wire s00_si_converter_M_AXI_WVALID;
-  wire [31:0]s00_transaction_regulator_M_AXI_AWADDR;
+  wire [63:0]s00_transaction_regulator_M_AXI_AWADDR;
   wire [3:0]s00_transaction_regulator_M_AXI_AWCACHE;
   wire [0:0]s00_transaction_regulator_M_AXI_AWID;
   wire [7:0]s00_transaction_regulator_M_AXI_AWLEN;
@@ -852,7 +852,7 @@ module s00_entry_pipeline_imp_I9HTTY
   wire [7:0]s00_transaction_regulator_M_AXI_WSTRB;
   wire [1023:0]s00_transaction_regulator_M_AXI_WUSER;
   wire s00_transaction_regulator_M_AXI_WVALID;
-  wire [31:0]s_axi_1_AWADDR;
+  wire [63:0]s_axi_1_AWADDR;
   wire [1:0]s_axi_1_AWBURST;
   wire [3:0]s_axi_1_AWCACHE;
   wire [7:0]s_axi_1_AWLEN;
@@ -873,7 +873,7 @@ module s00_entry_pipeline_imp_I9HTTY
 
   assign aclk_1 = aclk;
   assign aresetn_1 = aresetn;
-  assign m_axi_awaddr[31:0] = s00_si_converter_M_AXI_AWADDR;
+  assign m_axi_awaddr[63:0] = s00_si_converter_M_AXI_AWADDR;
   assign m_axi_awcache[3:0] = s00_si_converter_M_AXI_AWCACHE;
   assign m_axi_awid[0] = s00_si_converter_M_AXI_AWID;
   assign m_axi_awlen[7:0] = s00_si_converter_M_AXI_AWLEN;
@@ -894,7 +894,7 @@ module s00_entry_pipeline_imp_I9HTTY
   assign s00_si_converter_M_AXI_BUSER = m_axi_buser[1023:0];
   assign s00_si_converter_M_AXI_BVALID = m_axi_bvalid;
   assign s00_si_converter_M_AXI_WREADY = m_axi_wready;
-  assign s_axi_1_AWADDR = s_axi_awaddr[31:0];
+  assign s_axi_1_AWADDR = s_axi_awaddr[63:0];
   assign s_axi_1_AWBURST = s_axi_awburst[1:0];
   assign s_axi_1_AWCACHE = s_axi_awcache[3:0];
   assign s_axi_1_AWLEN = s_axi_awlen[7:0];
@@ -1082,7 +1082,7 @@ module s00_nodes_imp_NF95JW
     s_sc_clk,
     s_sc_resetn);
   output [0:0]M_SC_AW_info;
-  output [137:0]M_SC_AW_payld;
+  output [169:0]M_SC_AW_payld;
   input M_SC_AW_recv;
   output M_SC_AW_req;
   output M_SC_AW_send;
@@ -1097,7 +1097,7 @@ module s00_nodes_imp_NF95JW
   output M_SC_W_req;
   output M_SC_W_send;
   input [0:0]S_SC_AW_info;
-  input [137:0]S_SC_AW_payld;
+  input [169:0]S_SC_AW_payld;
   output [0:0]S_SC_AW_recv;
   input [0:0]S_SC_AW_req;
   input [0:0]S_SC_AW_send;
@@ -1117,7 +1117,7 @@ module s00_nodes_imp_NF95JW
   input s_sc_resetn;
 
   wire [0:0]S_SC_AW_1_INFO;
-  wire [137:0]S_SC_AW_1_PAYLD;
+  wire [169:0]S_SC_AW_1_PAYLD;
   wire [0:0]S_SC_AW_1_RECV;
   wire [0:0]S_SC_AW_1_REQ;
   wire [0:0]S_SC_AW_1_SEND;
@@ -1134,7 +1134,7 @@ module s00_nodes_imp_NF95JW
   wire m_sc_clk_1;
   wire m_sc_resetn_1;
   wire [0:0]s00_aw_node_M_SC_INFO;
-  wire [137:0]s00_aw_node_M_SC_PAYLD;
+  wire [169:0]s00_aw_node_M_SC_PAYLD;
   wire s00_aw_node_M_SC_RECV;
   wire [0:0]s00_aw_node_M_SC_REQ;
   wire [0:0]s00_aw_node_M_SC_SEND;
@@ -1152,7 +1152,7 @@ module s00_nodes_imp_NF95JW
   wire s_sc_resetn_1;
 
   assign M_SC_AW_info[0] = s00_aw_node_M_SC_INFO;
-  assign M_SC_AW_payld[137:0] = s00_aw_node_M_SC_PAYLD;
+  assign M_SC_AW_payld[169:0] = s00_aw_node_M_SC_PAYLD;
   assign M_SC_AW_req = s00_aw_node_M_SC_REQ;
   assign M_SC_AW_send = s00_aw_node_M_SC_SEND;
   assign M_SC_B_info[0] = s00_b_node_M_SC_INFO;
@@ -1164,7 +1164,7 @@ module s00_nodes_imp_NF95JW
   assign M_SC_W_req = s00_w_node_M_SC_REQ;
   assign M_SC_W_send = s00_w_node_M_SC_SEND;
   assign S_SC_AW_1_INFO = S_SC_AW_info[0];
-  assign S_SC_AW_1_PAYLD = S_SC_AW_payld[137:0];
+  assign S_SC_AW_1_PAYLD = S_SC_AW_payld[169:0];
   assign S_SC_AW_1_REQ = S_SC_AW_req[0];
   assign S_SC_AW_1_SEND = S_SC_AW_send[0];
   assign S_SC_AW_recv[0] = S_SC_AW_1_RECV;

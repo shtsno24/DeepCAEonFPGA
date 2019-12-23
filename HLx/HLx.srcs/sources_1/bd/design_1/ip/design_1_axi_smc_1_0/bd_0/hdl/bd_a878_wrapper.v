@@ -63,7 +63,7 @@ module bd_a878_wrapper
   input M00_AXI_wready;
   output [7:0]M00_AXI_wstrb;
   output M00_AXI_wvalid;
-  input [31:0]S00_AXI_awaddr;
+  input [63:0]S00_AXI_awaddr;
   input [1:0]S00_AXI_awburst;
   input [3:0]S00_AXI_awcache;
   input [7:0]S00_AXI_awlen;
@@ -102,7 +102,7 @@ module bd_a878_wrapper
   wire M00_AXI_wready;
   wire [7:0]M00_AXI_wstrb;
   wire M00_AXI_wvalid;
-  wire [31:0]S00_AXI_awaddr;
+  wire [63:0]S00_AXI_awaddr;
   wire [1:0]S00_AXI_awburst;
   wire [3:0]S00_AXI_awcache;
   wire [7:0]S00_AXI_awlen;

@@ -37,6 +37,7 @@ int network(axis input_data[784], axis output_data[784]) {
 
 	ap_axis<16, 1, 1, 1> tmp;
 
+
 	int i = 0;
 	do {
 		tmp = input_data[i];

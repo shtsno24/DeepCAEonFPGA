@@ -172,7 +172,7 @@ proc create_hier_cell_s00_nodes { parentCell nameHier } {
   set_property -dict [ list \
    CONFIG.ACLKEN_CONVERSION {0} \
    CONFIG.ACLK_RELATIONSHIP {1} \
-   CONFIG.ADDR_WIDTH {32} \
+   CONFIG.ADDR_WIDTH {64} \
    CONFIG.CHANNEL {2} \
    CONFIG.ID_WIDTH {1} \
    CONFIG.M00_NUM_BYTES {8} \
@@ -196,23 +196,23 @@ proc create_hier_cell_s00_nodes { parentCell nameHier } {
    CONFIG.NUM_MI {1} \
    CONFIG.NUM_OUTSTANDING {16} \
    CONFIG.NUM_SI {1} \
-   CONFIG.PAYLD_WIDTH {138} \
-   CONFIG.S00_NUM_BYTES {8} \
-   CONFIG.S01_NUM_BYTES {8} \
-   CONFIG.S02_NUM_BYTES {8} \
-   CONFIG.S03_NUM_BYTES {8} \
-   CONFIG.S04_NUM_BYTES {8} \
-   CONFIG.S05_NUM_BYTES {8} \
-   CONFIG.S06_NUM_BYTES {8} \
-   CONFIG.S07_NUM_BYTES {8} \
-   CONFIG.S08_NUM_BYTES {8} \
-   CONFIG.S09_NUM_BYTES {8} \
-   CONFIG.S10_NUM_BYTES {8} \
-   CONFIG.S11_NUM_BYTES {8} \
-   CONFIG.S12_NUM_BYTES {8} \
-   CONFIG.S13_NUM_BYTES {8} \
-   CONFIG.S14_NUM_BYTES {8} \
-   CONFIG.S15_NUM_BYTES {8} \
+   CONFIG.PAYLD_WIDTH {170} \
+   CONFIG.S00_NUM_BYTES {4} \
+   CONFIG.S01_NUM_BYTES {4} \
+   CONFIG.S02_NUM_BYTES {4} \
+   CONFIG.S03_NUM_BYTES {4} \
+   CONFIG.S04_NUM_BYTES {4} \
+   CONFIG.S05_NUM_BYTES {4} \
+   CONFIG.S06_NUM_BYTES {4} \
+   CONFIG.S07_NUM_BYTES {4} \
+   CONFIG.S08_NUM_BYTES {4} \
+   CONFIG.S09_NUM_BYTES {4} \
+   CONFIG.S10_NUM_BYTES {4} \
+   CONFIG.S11_NUM_BYTES {4} \
+   CONFIG.S12_NUM_BYTES {4} \
+   CONFIG.S13_NUM_BYTES {4} \
+   CONFIG.S14_NUM_BYTES {4} \
+   CONFIG.S15_NUM_BYTES {4} \
    CONFIG.SC_ROUTE_WIDTH {1} \
    CONFIG.USER_WIDTH {0} \
  ] $s00_ar_node
@@ -222,25 +222,25 @@ proc create_hier_cell_s00_nodes { parentCell nameHier } {
   set_property -dict [ list \
    CONFIG.ACLKEN_CONVERSION {0} \
    CONFIG.ACLK_RELATIONSHIP {1} \
-   CONFIG.ADDR_WIDTH {32} \
+   CONFIG.ADDR_WIDTH {64} \
    CONFIG.CHANNEL {0} \
    CONFIG.ID_WIDTH {1} \
-   CONFIG.M00_NUM_BYTES {8} \
-   CONFIG.M01_NUM_BYTES {8} \
-   CONFIG.M02_NUM_BYTES {8} \
-   CONFIG.M03_NUM_BYTES {8} \
-   CONFIG.M04_NUM_BYTES {8} \
-   CONFIG.M05_NUM_BYTES {8} \
-   CONFIG.M06_NUM_BYTES {8} \
-   CONFIG.M07_NUM_BYTES {8} \
-   CONFIG.M08_NUM_BYTES {8} \
-   CONFIG.M09_NUM_BYTES {8} \
-   CONFIG.M10_NUM_BYTES {8} \
-   CONFIG.M11_NUM_BYTES {8} \
-   CONFIG.M12_NUM_BYTES {8} \
-   CONFIG.M13_NUM_BYTES {8} \
-   CONFIG.M14_NUM_BYTES {8} \
-   CONFIG.M15_NUM_BYTES {8} \
+   CONFIG.M00_NUM_BYTES {4} \
+   CONFIG.M01_NUM_BYTES {4} \
+   CONFIG.M02_NUM_BYTES {4} \
+   CONFIG.M03_NUM_BYTES {4} \
+   CONFIG.M04_NUM_BYTES {4} \
+   CONFIG.M05_NUM_BYTES {4} \
+   CONFIG.M06_NUM_BYTES {4} \
+   CONFIG.M07_NUM_BYTES {4} \
+   CONFIG.M08_NUM_BYTES {4} \
+   CONFIG.M09_NUM_BYTES {4} \
+   CONFIG.M10_NUM_BYTES {4} \
+   CONFIG.M11_NUM_BYTES {4} \
+   CONFIG.M12_NUM_BYTES {4} \
+   CONFIG.M13_NUM_BYTES {4} \
+   CONFIG.M14_NUM_BYTES {4} \
+   CONFIG.M15_NUM_BYTES {4} \
    CONFIG.MAX_PAYLD_BYTES {8} \
    CONFIG.M_SEND_PIPELINE {0} \
    CONFIG.NUM_MI {1} \
@@ -328,7 +328,7 @@ proc create_hier_cell_s00_entry_pipeline { parentCell nameHier } {
   # Create instance: s00_mmu, and set properties
   set s00_mmu [ create_bd_cell -type ip -vlnv xilinx.com:ip:sc_mmu:1.0 s00_mmu ]
   set_property -dict [ list \
-   CONFIG.ADDR_WIDTH {32} \
+   CONFIG.ADDR_WIDTH {64} \
    CONFIG.ID_WIDTH {0} \
    CONFIG.IS_CASCADED {0} \
    CONFIG.MSC000_ROUTE {0b1} \
@@ -337,7 +337,7 @@ proc create_hier_cell_s00_entry_pipeline { parentCell nameHier } {
    CONFIG.NUM_READ_OUTSTANDING {16} \
    CONFIG.NUM_SEG {1} \
    CONFIG.NUM_WRITE_OUTSTANDING {2} \
-   CONFIG.RDATA_WIDTH {64} \
+   CONFIG.RDATA_WIDTH {32} \
    CONFIG.READ_WRITE_MODE {READ_ONLY} \
    CONFIG.SEG000_BASE_ADDR {0x0000000000000000} \
    CONFIG.SEG000_SECURE_READ {0} \
@@ -352,13 +352,13 @@ proc create_hier_cell_s00_entry_pipeline { parentCell nameHier } {
    CONFIG.S_PROTOCOL {AXI4} \
    CONFIG.S_RUSER_WIDTH {0} \
    CONFIG.S_WUSER_WIDTH {0} \
-   CONFIG.WDATA_WIDTH {64} \
+   CONFIG.WDATA_WIDTH {32} \
  ] $s00_mmu
 
   # Create instance: s00_si_converter, and set properties
   set s00_si_converter [ create_bd_cell -type ip -vlnv xilinx.com:ip:sc_si_converter:1.0 s00_si_converter ]
   set_property -dict [ list \
-   CONFIG.ADDR_WIDTH {32} \
+   CONFIG.ADDR_WIDTH {64} \
    CONFIG.HAS_BURST {0} \
    CONFIG.ID_WIDTH {1} \
    CONFIG.IS_CASCADED {0} \
@@ -375,7 +375,7 @@ proc create_hier_cell_s00_entry_pipeline { parentCell nameHier } {
    CONFIG.NUM_SEG {1} \
    CONFIG.NUM_WRITE_OUTSTANDING {2} \
    CONFIG.NUM_WRITE_THREADS {1} \
-   CONFIG.RDATA_WIDTH {64} \
+   CONFIG.RDATA_WIDTH {32} \
    CONFIG.READ_WRITE_MODE {READ_ONLY} \
    CONFIG.SEP000_PROTOCOL {AXI3} \
    CONFIG.SEP000_RDATA_WIDTH {64} \
@@ -383,25 +383,25 @@ proc create_hier_cell_s00_entry_pipeline { parentCell nameHier } {
    CONFIG.SUPPORTS_NARROW {0} \
    CONFIG.S_RUSER_BITS_PER_BYTE {0} \
    CONFIG.S_WUSER_BITS_PER_BYTE {0} \
-   CONFIG.WDATA_WIDTH {64} \
+   CONFIG.WDATA_WIDTH {32} \
  ] $s00_si_converter
 
   # Create instance: s00_transaction_regulator, and set properties
   set s00_transaction_regulator [ create_bd_cell -type ip -vlnv xilinx.com:ip:sc_transaction_regulator:1.0 s00_transaction_regulator ]
   set_property -dict [ list \
-   CONFIG.ADDR_WIDTH {32} \
+   CONFIG.ADDR_WIDTH {64} \
    CONFIG.IS_CASCADED {0} \
    CONFIG.MEP_IDENTIFIER {0} \
    CONFIG.MEP_IDENTIFIER_WIDTH {1} \
    CONFIG.NUM_READ_OUTSTANDING {16} \
    CONFIG.NUM_WRITE_OUTSTANDING {2} \
-   CONFIG.RDATA_WIDTH {64} \
+   CONFIG.RDATA_WIDTH {32} \
    CONFIG.READ_WRITE_MODE {READ_ONLY} \
    CONFIG.SEP_ROUTE_WIDTH {1} \
    CONFIG.SUPPORTS_READ_DEADLOCK {0} \
    CONFIG.SUPPORTS_WRITE_DEADLOCK {0} \
    CONFIG.S_ID_WIDTH {0} \
-   CONFIG.WDATA_WIDTH {64} \
+   CONFIG.WDATA_WIDTH {32} \
  ] $s00_transaction_regulator
 
   # Create interface connections
@@ -643,7 +643,7 @@ proc create_root_design { parentCell } {
    CONFIG.AXI_WDATA_WIDTH {64} \
    CONFIG.MSC_ROUTE_WIDTH {1} \
    CONFIG.READ_WRITE_MODE {READ_ONLY} \
-   CONFIG.SC_ADDR_WIDTH {32} \
+   CONFIG.SC_ADDR_WIDTH {64} \
    CONFIG.SC_ARUSER_WIDTH {0} \
    CONFIG.SC_AWUSER_WIDTH {0} \
    CONFIG.SC_BUSER_WIDTH {0} \
@@ -658,13 +658,13 @@ proc create_root_design { parentCell } {
   # Create instance: s00_axi2sc, and set properties
   set s00_axi2sc [ create_bd_cell -type ip -vlnv xilinx.com:ip:sc_axi2sc:1.0 s00_axi2sc ]
   set_property -dict [ list \
-   CONFIG.AXI_ADDR_WIDTH {32} \
+   CONFIG.AXI_ADDR_WIDTH {64} \
    CONFIG.AXI_ID_WIDTH {1} \
-   CONFIG.AXI_RDATA_WIDTH {64} \
-   CONFIG.AXI_WDATA_WIDTH {64} \
+   CONFIG.AXI_RDATA_WIDTH {32} \
+   CONFIG.AXI_WDATA_WIDTH {32} \
    CONFIG.MSC_ROUTE_WIDTH {1} \
    CONFIG.READ_WRITE_MODE {READ_ONLY} \
-   CONFIG.SC_ADDR_WIDTH {32} \
+   CONFIG.SC_ADDR_WIDTH {64} \
    CONFIG.SC_ARUSER_WIDTH {0} \
    CONFIG.SC_AWUSER_WIDTH {0} \
    CONFIG.SC_BUSER_WIDTH {0} \

@@ -52,8 +52,8 @@
 
 (* X_CORE_INFO = "sc_sc2axi_v1_0_7_top,Vivado 2018.3.1" *)
 (* CHECK_LICENSE_TYPE = "bd_afc3_m00s2a_0,sc_sc2axi_v1_0_7_top,{}" *)
-(* CORE_GENERATION_INFO = "bd_afc3_m00s2a_0,sc_sc2axi_v1_0_7_top,{x_ipProduct=Vivado 2018.3.1,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=sc_sc2axi,x_ipVersion=1.0,x_ipCoreRevision=7,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_AXI_ADDR_WIDTH=32,C_AXI_ID_WIDTH=1,C_AXI_RDATA_WIDTH=64,C_AXI_WDATA_WIDTH=64,C_SC_ADDR_WIDTH=32,C_SC_ID_WIDTH=1,C_SC_RDATA_WIDTH=64,C_SC_WDATA_WIDTH=64,C_SC_RUSER_BITS_PER_BYTE=0,C_SC_WUSER_BITS_PER_BYTE=0,C_SC_ARUSER_WIDTH=0,C_SC_AWUSER_WIDTH=0,C_SC_BUSER_WIDTH=0,C_MSC_ROUTE_WIDTH=1,C_SSC_ROUTE_\
-WIDTH=1,C_AWPAYLD_WIDTH=138,C_ARPAYLD_WIDTH=138,C_WPAYLD_WIDTH=88,C_RPAYLD_WIDTH=83,C_BPAYLD_WIDTH=5}" *)
+(* CORE_GENERATION_INFO = "bd_afc3_m00s2a_0,sc_sc2axi_v1_0_7_top,{x_ipProduct=Vivado 2018.3.1,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=sc_sc2axi,x_ipVersion=1.0,x_ipCoreRevision=7,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_AXI_ADDR_WIDTH=32,C_AXI_ID_WIDTH=1,C_AXI_RDATA_WIDTH=64,C_AXI_WDATA_WIDTH=64,C_SC_ADDR_WIDTH=64,C_SC_ID_WIDTH=1,C_SC_RDATA_WIDTH=64,C_SC_WDATA_WIDTH=64,C_SC_RUSER_BITS_PER_BYTE=0,C_SC_WUSER_BITS_PER_BYTE=0,C_SC_ARUSER_WIDTH=0,C_SC_AWUSER_WIDTH=0,C_SC_BUSER_WIDTH=0,C_MSC_ROUTE_WIDTH=1,C_SSC_ROUTE_\
+WIDTH=1,C_AWPAYLD_WIDTH=170,C_ARPAYLD_WIDTH=170,C_WPAYLD_WIDTH=88,C_RPAYLD_WIDTH=83,C_BPAYLD_WIDTH=5}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module bd_afc3_m00s2a_0 (
   aclk,
@@ -108,7 +108,7 @@ input wire s_sc_ar_send;
 (* X_INTERFACE_INFO = "xilinx.com:interface:sc:1.0 S_SC_AR RECV" *)
 output wire s_sc_ar_recv;
 (* X_INTERFACE_INFO = "xilinx.com:interface:sc:1.0 S_SC_AR PAYLD" *)
-input wire [137 : 0] s_sc_ar_payld;
+input wire [169 : 0] s_sc_ar_payld;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI ARID" *)
 output wire [0 : 0] m_axi_arid;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI ARADDR" *)
@@ -151,7 +151,7 @@ output wire m_axi_rready;
     .C_AXI_ID_WIDTH(1),
     .C_AXI_RDATA_WIDTH(64),
     .C_AXI_WDATA_WIDTH(64),
-    .C_SC_ADDR_WIDTH(32),
+    .C_SC_ADDR_WIDTH(64),
     .C_SC_ID_WIDTH(1),
     .C_SC_RDATA_WIDTH(64),
     .C_SC_WDATA_WIDTH(64),
@@ -162,8 +162,8 @@ output wire m_axi_rready;
     .C_SC_BUSER_WIDTH(0),
     .C_MSC_ROUTE_WIDTH(1),
     .C_SSC_ROUTE_WIDTH(1),
-    .C_AWPAYLD_WIDTH(138),
-    .C_ARPAYLD_WIDTH(138),
+    .C_AWPAYLD_WIDTH(170),
+    .C_ARPAYLD_WIDTH(170),
     .C_WPAYLD_WIDTH(88),
     .C_RPAYLD_WIDTH(83),
     .C_BPAYLD_WIDTH(5)
@@ -188,7 +188,7 @@ output wire m_axi_rready;
     .s_sc_aw_info(1'D0),
     .s_sc_aw_send(1'D0),
     .s_sc_aw_recv(),
-    .s_sc_aw_payld(138'D0),
+    .s_sc_aw_payld(170'D0),
     .s_sc_w_req(1'D0),
     .s_sc_w_info(1'D0),
     .s_sc_w_send(1'D0),

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.3.1 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Mon Dec 23 18:35:31 2019
+# Process ID: 10839
+# Current directory: /home/masudalab/DeepCAEonFPGA/DeepCAEonFPGA/HLx/HLx.sim/sim_1/impl/func/xsim
+# Command line: wbtcv -mode batch -source /home/masudalab/DeepCAEonFPGA/DeepCAEonFPGA/HLx/HLx.sim/sim_1/impl/func/xsim/xsim.dir/design_1_wrapper_func_impl/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /home/masudalab/DeepCAEonFPGA/DeepCAEonFPGA/HLx/HLx.sim/sim_1/impl/func/xsim/webtalk.log
+# Journal file: /home/masudalab/DeepCAEonFPGA/DeepCAEonFPGA/HLx/HLx.sim/sim_1/impl/func/xsim/webtalk.jou
+#-----------------------------------------------------------
+source /home/masudalab/DeepCAEonFPGA/DeepCAEonFPGA/HLx/HLx.sim/sim_1/impl/func/xsim/xsim.dir/design_1_wrapper_func_impl/webtalk/xsim_webtalk.tcl -notrace
