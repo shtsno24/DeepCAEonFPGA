@@ -2,8 +2,8 @@
 # Vivado v2018.3.1 (64-bit)
 # SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
 # IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
-# Start of session at: Mon Dec 23 18:23:35 2019
-# Process ID: 6580
+# Start of session at: Mon Dec 23 18:49:29 2019
+# Process ID: 12344
 # Current directory: /home/masudalab/DeepCAEonFPGA/DeepCAEonFPGA/HLx/HLx.runs/design_1_xbar_0_synth_1
 # Command line: vivado -log design_1_xbar_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_xbar_0.tcl
 # Log file: /home/masudalab/DeepCAEonFPGA/DeepCAEonFPGA/HLx/HLx.runs/design_1_xbar_0_synth_1/design_1_xbar_0.vds
@@ -14,14 +14,15 @@ INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/masudalab/DeepCAEonFPGA/DeepCAEonFPGA/ip_generated/xilinx_com_hls_network_1_0'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/masudalab/DeepCAEonFPGA/DeepCAEonFPGA/Pynq'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2018.3/data/ip'.
+update_ip_catalog: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1387.871 ; gain = 0.000 ; free physical = 149 ; free virtual = 4214
 Command: synth_design -top design_1_xbar_0 -part xc7z020clg400-1 -mode out_of_context
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 6751 
+INFO: Helper process launched with PID 12410 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:20 . Memory (MB): peak = 1460.457 ; gain = 73.883 ; free physical = 306 ; free virtual = 8703
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:17 . Memory (MB): peak = 1460.871 ; gain = 72.883 ; free physical = 243 ; free virtual = 3674
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_0' [/home/masudalab/DeepCAEonFPGA/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_xbar_0/synth/design_1_xbar_0.v:59]
 INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_19_axi_crossbar' [/home/masudalab/DeepCAEonFPGA/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:4884]
@@ -33,8 +34,8 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_19_axi_crossbar' [/h
 	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_AXI_PROTOCOL bound to: 2 - type: integer 
 	Parameter C_NUM_ADDR_RANGES bound to: 1 - type: integer 
-	Parameter C_M_AXI_BASE_ADDR bound to: 192'b000000000000000000000000000000000100000001000001000000000000000000000000000000000000000000000000010000111100000000000000000000000000000000000000000000000000000001000000010000000000000000000000 
-	Parameter C_M_AXI_ADDR_WIDTH bound to: 96'b000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000 
+	Parameter C_M_AXI_BASE_ADDR bound to: 192'b000000000000000000000000000000000100000001000001000000000000000011111111111111111111111111111111111111111111111111111111111111110000000000000000000000000000000001000000010000000000000000000000 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 96'b000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000010000 
 	Parameter C_S_AXI_BASE_ID bound to: 0 - type: integer 
 	Parameter C_S_AXI_THREAD_ID_WIDTH bound to: 0 - type: integer 
 	Parameter C_AXI_SUPPORTS_USER_SIGNALS bound to: 0 - type: integer 
@@ -82,8 +83,8 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_19_crossbar_sasd' [/
 	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
 	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_AXI_PROTOCOL bound to: 2 - type: integer 
-	Parameter C_M_AXI_BASE_ADDR bound to: 192'b000000000000000000000000000000000100000001000001000000000000000000000000000000000000000000000000010000111100000000000000000000000000000000000000000000000000000001000000010000000000000000000000 
-	Parameter C_M_AXI_HIGH_ADDR bound to: 192'b000000000000000000000000000000000100000001000001111111111111111100000000000000000000000000000000010000111100000011111111111111110000000000000000000000000000000001000000010000001111111111111111 
+	Parameter C_M_AXI_BASE_ADDR bound to: 192'b000000000000000000000000000000000100000001000001000000000000000011111111111111111111111111111111111111111111111111111111111111110000000000000000000000000000000001000000010000000000000000000000 
+	Parameter C_M_AXI_HIGH_ADDR bound to: 192'b000000000000000000000000000000000100000001000001111111111111111100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000010000001111111111111111 
 	Parameter C_S_AXI_BASE_ID bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
 	Parameter C_S_AXI_HIGH_ID bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
 	Parameter C_AXI_SUPPORTS_USER_SIGNALS bound to: 0 - type: integer 
@@ -135,8 +136,8 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_19_addr_decoder' [/h
 	Parameter C_TARGET_ENC bound to: 1 - type: integer 
 	Parameter C_TARGET_HOT bound to: 1 - type: integer 
 	Parameter C_REGION_ENC bound to: 1 - type: integer 
-	Parameter C_BASE_ADDR bound to: 192'b000000000000000000000000000000000100000001000001000000000000000000000000000000000000000000000000010000111100000000000000000000000000000000000000000000000000000001000000010000000000000000000000 
-	Parameter C_HIGH_ADDR bound to: 192'b000000000000000000000000000000000100000001000001111111111111111100000000000000000000000000000000010000111100000011111111111111110000000000000000000000000000000001000000010000001111111111111111 
+	Parameter C_BASE_ADDR bound to: 192'b000000000000000000000000000000000100000001000001000000000000000011111111111111111111111111111111111111111111111111111111111111110000000000000000000000000000000001000000010000000000000000000000 
+	Parameter C_HIGH_ADDR bound to: 192'b000000000000000000000000000000000100000001000001111111111111111100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000010000001111111111111111 
 	Parameter C_TARGET_QUAL bound to: 4'b0111 
 	Parameter C_RESOLUTION bound to: 2 - type: integer 
 	Parameter C_COMPARATOR_THRESHOLD bound to: 6 - type: integer 
@@ -153,20 +154,12 @@ INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_carry_a
 INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' (2#1) [/home/masudalab/DeepCAEonFPGA/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
 INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' [/home/masudalab/DeepCAEonFPGA/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
 	Parameter C_FAMILY bound to: rtl - type: string 
-	Parameter C_VALUE bound to: 30'b010000111100000000000000000000 
-	Parameter C_DATA_WIDTH bound to: 30 - type: integer 
-	Parameter C_BITS_PER_LUT bound to: 6 - type: integer 
-	Parameter C_NUM_LUT bound to: 5 - type: integer 
-	Parameter C_FIX_DATA_WIDTH bound to: 30 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' (2#1) [/home/masudalab/DeepCAEonFPGA/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized1' [/home/masudalab/DeepCAEonFPGA/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
-	Parameter C_FAMILY bound to: rtl - type: string 
 	Parameter C_VALUE bound to: 30'b010000000100000100000000000000 
 	Parameter C_DATA_WIDTH bound to: 30 - type: integer 
 	Parameter C_BITS_PER_LUT bound to: 6 - type: integer 
 	Parameter C_NUM_LUT bound to: 5 - type: integer 
 	Parameter C_FIX_DATA_WIDTH bound to: 30 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized1' (2#1) [/home/masudalab/DeepCAEonFPGA/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' (2#1) [/home/masudalab/DeepCAEonFPGA/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
 INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_19_addr_decoder' (3#1) [/home/masudalab/DeepCAEonFPGA/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
 INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_19_decerr_slave' [/home/masudalab/DeepCAEonFPGA/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:3501]
 	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
@@ -324,7 +317,7 @@ WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_axi_crossbar has unconnected
 WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_axi_crossbar has unconnected port m_axi_ruser[1]
 WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_axi_crossbar has unconnected port m_axi_ruser[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:37 . Memory (MB): peak = 1593.207 ; gain = 206.633 ; free physical = 826 ; free virtual = 8420
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:32 . Memory (MB): peak = 1593.621 ; gain = 205.633 ; free physical = 292 ; free virtual = 2958
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -337,10 +330,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:37 . Memory (MB): peak = 1593.207 ; gain = 206.633 ; free physical = 957 ; free virtual = 8551
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:32 . Memory (MB): peak = 1593.621 ; gain = 205.633 ; free physical = 290 ; free virtual = 2957
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:37 . Memory (MB): peak = 1593.207 ; gain = 206.633 ; free physical = 958 ; free virtual = 8551
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:32 . Memory (MB): peak = 1593.621 ; gain = 205.633 ; free physical = 290 ; free virtual = 2957
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -353,28 +346,28 @@ Parsing XDC File [/home/masudalab/DeepCAEonFPGA/DeepCAEonFPGA/HLx/HLx.runs/desig
 Finished Parsing XDC File [/home/masudalab/DeepCAEonFPGA/DeepCAEonFPGA/HLx/HLx.runs/design_1_xbar_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1851.504 ; gain = 0.000 ; free physical = 702 ; free virtual = 8298
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1850.918 ; gain = 0.000 ; free physical = 385 ; free virtual = 2953
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1851.504 ; gain = 0.000 ; free physical = 702 ; free virtual = 8298
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.06 . Memory (MB): peak = 1851.504 ; gain = 0.000 ; free physical = 699 ; free virtual = 8295
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1850.918 ; gain = 0.000 ; free physical = 385 ; free virtual = 2953
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.05 . Memory (MB): peak = 1850.918 ; gain = 0.000 ; free physical = 391 ; free virtual = 2959
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:48 . Memory (MB): peak = 1851.504 ; gain = 464.930 ; free physical = 600 ; free virtual = 8225
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:43 . Memory (MB): peak = 1850.918 ; gain = 462.930 ; free physical = 563 ; free virtual = 3166
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:48 . Memory (MB): peak = 1851.504 ; gain = 464.930 ; free physical = 600 ; free virtual = 8225
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:43 . Memory (MB): peak = 1850.918 ; gain = 462.930 ; free physical = 548 ; free virtual = 3168
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property DONT_TOUCH = true for inst. (constraint file  /home/masudalab/DeepCAEonFPGA/DeepCAEonFPGA/HLx/HLx.runs/design_1_xbar_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:48 . Memory (MB): peak = 1851.504 ; gain = 464.930 ; free physical = 603 ; free virtual = 8226
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:44 . Memory (MB): peak = 1850.918 ; gain = 462.930 ; free physical = 528 ; free virtual = 3151
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-4471] merging register 'gen_axilite.s_axi_wready_i_reg' into 'gen_axilite.s_axi_awready_i_reg' [/home/masudalab/DeepCAEonFPGA/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:3574]
 INFO: [Synth 8-5544] ROM "f_mux_return3" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
@@ -390,7 +383,7 @@ INFO: [Synth 8-5544] ROM "f_mux_return3" won't be mapped to Block RAM because ad
 INFO: [Synth 8-5544] ROM "f_mux_return2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "f_mux_return1" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:49 . Memory (MB): peak = 1851.504 ; gain = 464.930 ; free physical = 567 ; free virtual = 8217
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:45 . Memory (MB): peak = 1850.918 ; gain = 462.930 ; free physical = 526 ; free virtual = 3158
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -506,8 +499,9 @@ WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_axi_crossbar has unconnected
 WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_axi_crossbar has unconnected port s_axi_awsize[1]
 WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_axi_crossbar has unconnected port s_axi_awsize[0]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\gen_sasd.crossbar_sasd_0/m_atarget_hot_reg[1] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:51 . Memory (MB): peak = 1851.504 ; gain = 464.930 ; free physical = 573 ; free virtual = 8227
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:47 . Memory (MB): peak = 1850.918 ; gain = 462.930 ; free physical = 450 ; free virtual = 3107
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -519,13 +513,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:59 . Memory (MB): peak = 1851.504 ; gain = 464.930 ; free physical = 333 ; free virtual = 7975
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:54 . Memory (MB): peak = 1850.918 ; gain = 462.930 ; free physical = 244 ; free virtual = 2965
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:01:00 . Memory (MB): peak = 1851.504 ; gain = 464.930 ; free physical = 311 ; free virtual = 7952
+Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:54 . Memory (MB): peak = 1850.918 ; gain = 462.930 ; free physical = 239 ; free virtual = 2966
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -537,7 +531,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:01:00 . Memory (MB): peak = 1851.504 ; gain = 464.930 ; free physical = 308 ; free virtual = 7949
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:55 . Memory (MB): peak = 1850.918 ; gain = 462.930 ; free physical = 229 ; free virtual = 2959
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -561,7 +555,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:01:01 . Memory (MB): peak = 1851.504 ; gain = 464.930 ; free physical = 272 ; free virtual = 7917
+Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:55 . Memory (MB): peak = 1850.918 ; gain = 462.930 ; free physical = 217 ; free virtual = 2952
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -574,7 +568,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:01:01 . Memory (MB): peak = 1851.504 ; gain = 464.930 ; free physical = 279 ; free virtual = 7923
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:55 . Memory (MB): peak = 1850.918 ; gain = 462.930 ; free physical = 209 ; free virtual = 2944
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -586,25 +580,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:01:01 . Memory (MB): peak = 1851.504 ; gain = 464.930 ; free physical = 285 ; free virtual = 7930
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:55 . Memory (MB): peak = 1850.918 ; gain = 462.930 ; free physical = 221 ; free virtual = 2956
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:01:01 . Memory (MB): peak = 1851.504 ; gain = 464.930 ; free physical = 285 ; free virtual = 7930
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:55 . Memory (MB): peak = 1850.918 ; gain = 462.930 ; free physical = 229 ; free virtual = 2964
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:01:01 . Memory (MB): peak = 1851.504 ; gain = 464.930 ; free physical = 280 ; free virtual = 7925
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:56 . Memory (MB): peak = 1850.918 ; gain = 462.930 ; free physical = 229 ; free virtual = 2965
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:01:01 . Memory (MB): peak = 1851.504 ; gain = 464.930 ; free physical = 280 ; free virtual = 7924
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:56 . Memory (MB): peak = 1850.918 ; gain = 462.930 ; free physical = 226 ; free virtual = 2964
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -622,52 +616,52 @@ Report Cell Usage:
 +------+-----+------+
 |1     |LUT1 |     2|
 |2     |LUT2 |    10|
-|3     |LUT3 |    41|
-|4     |LUT4 |    50|
-|5     |LUT5 |    36|
+|3     |LUT3 |    38|
+|4     |LUT4 |    48|
+|5     |LUT5 |    30|
 |6     |LUT6 |    38|
-|7     |FDRE |   131|
+|7     |FDRE |   130|
 +------+-----+------+
 
 Report Instance Areas: 
 +------+-------------------------------------+-----------------------------------------------+------+
 |      |Instance                             |Module                                         |Cells |
 +------+-------------------------------------+-----------------------------------------------+------+
-|1     |top                                  |                                               |   308|
-|2     |  inst                               |axi_crossbar_v2_1_19_axi_crossbar              |   308|
-|3     |    \gen_sasd.crossbar_sasd_0        |axi_crossbar_v2_1_19_crossbar_sasd             |   308|
-|4     |      addr_arbiter_inst              |axi_crossbar_v2_1_19_addr_arbiter_sasd         |   126|
-|5     |      \gen_decerr.decerr_slave_inst  |axi_crossbar_v2_1_19_decerr_slave              |    13|
-|6     |      reg_slice_r                    |axi_register_slice_v2_1_18_axic_register_slice |   147|
+|1     |top                                  |                                               |   296|
+|2     |  inst                               |axi_crossbar_v2_1_19_axi_crossbar              |   296|
+|3     |    \gen_sasd.crossbar_sasd_0        |axi_crossbar_v2_1_19_crossbar_sasd             |   296|
+|4     |      addr_arbiter_inst              |axi_crossbar_v2_1_19_addr_arbiter_sasd         |   114|
+|5     |      \gen_decerr.decerr_slave_inst  |axi_crossbar_v2_1_19_decerr_slave              |    14|
+|6     |      reg_slice_r                    |axi_register_slice_v2_1_18_axic_register_slice |   148|
 |7     |      splitter_ar                    |axi_crossbar_v2_1_19_splitter__parameterized0  |     4|
 |8     |      splitter_aw                    |axi_crossbar_v2_1_19_splitter                  |     7|
 +------+-------------------------------------+-----------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:01:01 . Memory (MB): peak = 1851.504 ; gain = 464.930 ; free physical = 280 ; free virtual = 7924
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:56 . Memory (MB): peak = 1850.918 ; gain = 462.930 ; free physical = 227 ; free virtual = 2965
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 66 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:54 . Memory (MB): peak = 1851.504 ; gain = 206.633 ; free physical = 321 ; free virtual = 7966
-Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:01:01 . Memory (MB): peak = 1851.512 ; gain = 464.930 ; free physical = 321 ; free virtual = 7966
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:49 . Memory (MB): peak = 1850.918 ; gain = 205.633 ; free physical = 255 ; free virtual = 2994
+Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:56 . Memory (MB): peak = 1850.926 ; gain = 462.930 ; free physical = 264 ; free virtual = 3004
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1851.512 ; gain = 0.000 ; free physical = 423 ; free virtual = 8067
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1850.926 ; gain = 0.000 ; free physical = 164 ; free virtual = 2939
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-62 Infos, 104 Warnings, 0 Critical Warnings and 0 Errors encountered.
+61 Infos, 104 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:01:03 . Memory (MB): peak = 1851.512 ; gain = 465.055 ; free physical = 478 ; free virtual = 8123
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1851.512 ; gain = 0.000 ; free physical = 476 ; free virtual = 8120
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:01:00 . Memory (MB): peak = 1850.926 ; gain = 463.055 ; free physical = 216 ; free virtual = 2993
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1850.926 ; gain = 0.000 ; free physical = 216 ; free virtual = 2994
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint '/home/masudalab/DeepCAEonFPGA/DeepCAEonFPGA/HLx/HLx.runs/design_1_xbar_0_synth_1/design_1_xbar_0.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_xbar_0, cache-ID = 02f6abeefa641663
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_xbar_0, cache-ID = 722eaf03427ab456
 INFO: [Coretcl 2-1174] Renamed 7 cell refs.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1875.516 ; gain = 0.000 ; free physical = 478 ; free virtual = 8128
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1874.930 ; gain = 0.000 ; free physical = 157 ; free virtual = 2970
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint '/home/masudalab/DeepCAEonFPGA/DeepCAEonFPGA/HLx/HLx.runs/design_1_xbar_0_synth_1/design_1_xbar_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_xbar_0_utilization_synth.rpt -pb design_1_xbar_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Dec 23 18:24:57 2019...
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 23 18:50:57 2019...

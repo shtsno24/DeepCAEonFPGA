@@ -528,7 +528,7 @@ proc create_hier_cell_m00_exit_pipeline { parentCell nameHier } {
    CONFIG.M_AWUSER_WIDTH {0} \
    CONFIG.M_BUSER_WIDTH {0} \
    CONFIG.M_ID_WIDTH {0} \
-   CONFIG.M_MAX_BURST_LENGTH {16} \
+   CONFIG.M_MAX_BURST_LENGTH {8} \
    CONFIG.M_PROTOCOL {AXI3} \
    CONFIG.M_RUSER_BITS_PER_BYTE {0} \
    CONFIG.M_RUSER_WIDTH {0} \
@@ -661,7 +661,7 @@ proc create_root_design { parentCell } {
   # Create interface ports
   set M00_AXI [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:aximm_rtl:1.0 M00_AXI ]
   set_property -dict [ list \
-   CONFIG.MAX_BURST_LENGTH {16} \
+   CONFIG.MAX_BURST_LENGTH {8} \
    CONFIG.NUM_READ_OUTSTANDING {2} \
    CONFIG.NUM_WRITE_OUTSTANDING {16} \
    CONFIG.RUSER_BITS_PER_BYTE {0} \
