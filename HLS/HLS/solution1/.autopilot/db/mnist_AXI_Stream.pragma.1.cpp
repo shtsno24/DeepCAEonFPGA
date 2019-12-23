@@ -28608,8 +28608,8 @@ _ssdm_op_SpecInterface(0, "s_axilite", 1, 1, "", 0, 0, "", "", "", 0, 0, 0, 0, "
  } while(tmp.last != 1);
 # 139 "../mnist_AXI_Stream.cpp"
  for(i = 0; i < array_length; i++){
-
-  MemBank_Out[i] = (int16_t)MemBank_B[i];
+_ssdm_Unroll(0,0,0, "");
+ MemBank_Out[i] = (int16_t)MemBank_B[i];
  }
 # 162 "../mnist_AXI_Stream.cpp"
  for(i = 0; i < array_length; i++){

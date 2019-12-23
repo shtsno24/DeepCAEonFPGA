@@ -75990,7 +75990,7 @@ int network(axis input_data[784], axis output_data[784]) {
  } while(tmp.last != 1);
 # 139 "/home/masudalab/DeepCAEonFPGA/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
  for(i = 0; i < array_length; i++){
-
+#pragma HLS UNROLL
   MemBank_Out[i] = (int16_t)MemBank_B[i];
  }
 # 162 "/home/masudalab/DeepCAEonFPGA/DeepCAEonFPGA/mnist_AXI_Stream.cpp"

@@ -137,7 +137,7 @@ int network(axis input_data[784], axis output_data[784]) {
 //	1, 1, (int16_t*)SeparableConv2D_4_w_p, 1, fractal_width_SeparableConv2D_4);
 
 	for(i = 0; i < array_length; i++){
-//#pragma HLS UNROLL
+#pragma HLS UNROLL
 		MemBank_Out[i] = (int16_t)MemBank_B[i];
 	}
 

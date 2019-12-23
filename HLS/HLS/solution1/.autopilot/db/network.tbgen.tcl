@@ -172,13 +172,13 @@ set ArgLastReadFirstWriteLatency {
 		input_data_last_V {Type I LastRead 1 FirstWrite -1}
 		input_data_id_V {Type I LastRead 1 FirstWrite -1}
 		input_data_dest_V {Type I LastRead 1 FirstWrite -1}
-		output_data_data_V {Type O LastRead -1 FirstWrite 4}
-		output_data_keep_V {Type O LastRead -1 FirstWrite 4}
-		output_data_strb_V {Type O LastRead -1 FirstWrite 4}
-		output_data_user_V {Type O LastRead -1 FirstWrite 4}
-		output_data_last_V {Type O LastRead -1 FirstWrite 4}
-		output_data_id_V {Type O LastRead -1 FirstWrite 4}
-		output_data_dest_V {Type O LastRead -1 FirstWrite 4}}}
+		output_data_data_V {Type O LastRead -1 FirstWrite 396}
+		output_data_keep_V {Type O LastRead -1 FirstWrite 396}
+		output_data_strb_V {Type O LastRead -1 FirstWrite 396}
+		output_data_user_V {Type O LastRead -1 FirstWrite 396}
+		output_data_last_V {Type O LastRead -1 FirstWrite 396}
+		output_data_id_V {Type O LastRead -1 FirstWrite 396}
+		output_data_dest_V {Type O LastRead -1 FirstWrite 396}}}
 
 set hasDtUnsupportedChannel 0
 

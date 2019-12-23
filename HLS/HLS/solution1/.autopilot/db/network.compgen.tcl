@@ -5,7 +5,7 @@ set ID 1
 set hasByteEnable 0
 set MemName network_MemBank_B
 set CoreName ap_simcore_mem
-set PortList { 2 3 }
+set PortList { 2 1 }
 set DataWd 16
 set AddrRange 14400
 set AddrWd 14
@@ -90,7 +90,7 @@ set ID 2
 set hasByteEnable 0
 set MemName network_MemBank_Out
 set CoreName ap_simcore_mem
-set PortList { 2 3 }
+set PortList { 2 0 }
 set DataWd 16
 set AddrRange 784
 set AddrWd 10

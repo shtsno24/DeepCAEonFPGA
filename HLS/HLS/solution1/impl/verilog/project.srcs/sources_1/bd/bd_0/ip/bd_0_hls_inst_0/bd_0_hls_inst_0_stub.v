@@ -1,7 +1,7 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2018.3.1 (lin64) Build 2489853 Tue Mar 26 04:18:30 MDT 2019
-// Date        : Mon Dec 23 18:17:41 2019
+// Date        : Mon Dec 23 21:24:49 2019
 // Host        : masudalab-ubuntu running 64-bit Ubuntu 18.04.3 LTS
 // Command     : write_verilog -force -mode synth_stub
 //               /home/masudalab/DeepCAEonFPGA/DeepCAEonFPGA/HLS/HLS/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/bd_0_hls_inst_0_stub.v

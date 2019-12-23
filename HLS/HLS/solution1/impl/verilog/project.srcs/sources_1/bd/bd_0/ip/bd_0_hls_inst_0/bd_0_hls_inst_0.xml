@@ -1206,11 +1206,11 @@ m {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format l
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Dec 23 09:17:06 UTC 2019</spirit:value>
+            <spirit:value>Mon Dec 23 12:18:15 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:85413a77</spirit:value>
+            <spirit:value>9:ea5b5b10</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1221,7 +1221,7 @@ m {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format l
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:85413a77</spirit:value>
+            <spirit:value>9:ea5b5b10</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1237,11 +1237,11 @@ m {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format l
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Dec 23 09:17:06 UTC 2019</spirit:value>
+            <spirit:value>Mon Dec 23 12:18:15 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:85413a77</spirit:value>
+            <spirit:value>9:ea5b5b10</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1257,11 +1257,11 @@ m {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format l
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Dec 23 09:17:06 UTC 2019</spirit:value>
+            <spirit:value>Mon Dec 23 12:18:15 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:ebd88982</spirit:value>
+            <spirit:value>9:84c2e8e5</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1277,11 +1277,11 @@ m {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format l
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Dec 23 09:17:06 UTC 2019</spirit:value>
+            <spirit:value>Mon Dec 23 12:18:15 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:ebd88982</spirit:value>
+            <spirit:value>9:84c2e8e5</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1295,11 +1295,11 @@ m {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format l
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Dec 23 09:17:42 UTC 2019</spirit:value>
+            <spirit:value>Mon Dec 23 12:24:49 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:85413a77</spirit:value>
+            <spirit:value>9:ea5b5b10</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1922,19 +1922,19 @@ m {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format l
         <spirit:userFileType>USED_IN_out_of_context</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/2f37/hdl/verilog/network_AXILiteS_s_axi.v</spirit:name>
+        <spirit:name>../../ipshared/6726/hdl/verilog/network_AXILiteS_s_axi.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/2f37/hdl/verilog/network_MemBank_B.v</spirit:name>
+        <spirit:name>../../ipshared/6726/hdl/verilog/network_MemBank_B.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/2f37/hdl/verilog/network_MemBank_Out.v</spirit:name>
+        <spirit:name>../../ipshared/6726/hdl/verilog/network_MemBank_Out.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/2f37/hdl/verilog/network.v</spirit:name>
+        <spirit:name>../../ipshared/6726/hdl/verilog/network.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
@@ -1949,22 +1949,22 @@ m {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format l
     <spirit:fileSet>
       <spirit:name>xilinx_verilogbehavioralsimulation_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/2f37/hdl/verilog/network_AXILiteS_s_axi.v</spirit:name>
+        <spirit:name>../../ipshared/6726/hdl/verilog/network_AXILiteS_s_axi.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/2f37/hdl/verilog/network_MemBank_B.v</spirit:name>
+        <spirit:name>../../ipshared/6726/hdl/verilog/network_MemBank_B.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/2f37/hdl/verilog/network_MemBank_Out.v</spirit:name>
+        <spirit:name>../../ipshared/6726/hdl/verilog/network_MemBank_Out.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/2f37/hdl/verilog/network.v</spirit:name>
+        <spirit:name>../../ipshared/6726/hdl/verilog/network.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -2080,7 +2080,7 @@ m {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format l
     <xilinx:coreExtensions>
       <xilinx:displayName>Network</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>1912231816</xilinx:coreRevision>
+      <xilinx:coreRevision>1912232117</xilinx:coreRevision>
       <xilinx:configElementInfos>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.AP_CLK.CLK_DOMAIN" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.AP_CLK.FREQ_HZ" xilinx:valueSource="user_prop" xilinx:valuePermission="bd"/>
@@ -2135,7 +2135,7 @@ m {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format l
       <xilinx:xilinxVersion>2018.3.1</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="24e8016e"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="5dc19620"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="351ff4a8"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="570022d7"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="280a848e"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="1cf4461c"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="ed226a7c"/>

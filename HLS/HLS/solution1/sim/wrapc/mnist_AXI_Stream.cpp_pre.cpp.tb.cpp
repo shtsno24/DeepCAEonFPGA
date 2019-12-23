@@ -1,5 +1,5 @@
 // ==============================================================
-// File generated on Mon Dec 23 18:15:58 JST 2019
+// File generated on Mon Dec 23 21:14:42 JST 2019
 // Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3.1 (64-bit)
 // SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
 // IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
@@ -75997,7 +75997,7 @@ int network(axis input_data[784], axis output_data[784]) {
  } while(tmp.last != 1);
 #139 "/home/masudalab/DeepCAEonFPGA/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
  for(i = 0; i < array_length; i++){
-
+#pragma HLS UNROLL
   MemBank_Out[i] = (int16_t)MemBank_B[i];
  }
 #162 "/home/masudalab/DeepCAEonFPGA/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
