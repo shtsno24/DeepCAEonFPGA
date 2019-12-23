@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2018.3.1 (lin64) Build 2489853 Tue Mar 26 04:18:30 MDT 2019
-//Date        : Mon Dec 23 18:48:47 2019
+//Date        : Mon Dec 23 19:15:24 2019
 //Host        : masudalab-ubuntu running 64-bit Ubuntu 18.04.3 LTS
 //Command     : generate_target design_1.bd
 //Design      : design_1
@@ -70,8 +70,8 @@ module design_1
   wire axi_dma_0_M_AXI_S2MM_WREADY;
   wire [7:0]axi_dma_0_M_AXI_S2MM_WSTRB;
   wire axi_dma_0_M_AXI_S2MM_WVALID;
-  wire [15:0]axi_dma_mm2s_M_AXIS_MM2S_TDATA;
-  wire [1:0]axi_dma_mm2s_M_AXIS_MM2S_TKEEP;
+  wire [31:0]axi_dma_mm2s_M_AXIS_MM2S_TDATA;
+  wire [3:0]axi_dma_mm2s_M_AXIS_MM2S_TKEEP;
   wire axi_dma_mm2s_M_AXIS_MM2S_TLAST;
   wire axi_dma_mm2s_M_AXIS_MM2S_TREADY;
   wire axi_dma_mm2s_M_AXIS_MM2S_TVALID;
@@ -83,7 +83,7 @@ module design_1
   wire axi_dma_mm2s_M_AXI_MM2S_ARREADY;
   wire [2:0]axi_dma_mm2s_M_AXI_MM2S_ARSIZE;
   wire axi_dma_mm2s_M_AXI_MM2S_ARVALID;
-  wire [63:0]axi_dma_mm2s_M_AXI_MM2S_RDATA;
+  wire [31:0]axi_dma_mm2s_M_AXI_MM2S_RDATA;
   wire axi_dma_mm2s_M_AXI_MM2S_RLAST;
   wire axi_dma_mm2s_M_AXI_MM2S_RREADY;
   wire [1:0]axi_dma_mm2s_M_AXI_MM2S_RRESP;

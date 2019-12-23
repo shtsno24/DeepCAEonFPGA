@@ -465,6 +465,12 @@
           }
         },
         "interface_nets": {
+          "m02_couplers_to_ps7_0_axi_periph": {
+            "interface_ports": [
+              "M02_AXI",
+              "m02_couplers/M_AXI"
+            ]
+          },
           "xbar_to_m00_couplers": {
             "interface_ports": [
               "xbar/M00_AXI",
@@ -475,6 +481,12 @@
             "interface_ports": [
               "M01_AXI",
               "m01_couplers/M_AXI"
+            ]
+          },
+          "ps7_0_axi_periph_to_s00_couplers": {
+            "interface_ports": [
+              "S00_AXI",
+              "s00_couplers/S_AXI"
             ]
           },
           "xbar_to_m01_couplers": {
@@ -489,22 +501,10 @@
               "m00_couplers/M_AXI"
             ]
           },
-          "m02_couplers_to_ps7_0_axi_periph": {
-            "interface_ports": [
-              "M02_AXI",
-              "m02_couplers/M_AXI"
-            ]
-          },
           "xbar_to_m02_couplers": {
             "interface_ports": [
               "xbar/M02_AXI",
               "m02_couplers/S_AXI"
-            ]
-          },
-          "ps7_0_axi_periph_to_s00_couplers": {
-            "interface_ports": [
-              "S00_AXI",
-              "s00_couplers/S_AXI"
             ]
           },
           "s00_couplers_to_xbar": {
@@ -2269,7 +2269,7 @@
             "value": "0"
           },
           "c_s2mm_burst_size": {
-            "value": "8"
+            "value": "64"
           },
           "c_sg_length_width": {
             "value": "23"
@@ -2290,16 +2290,16 @@
             "value": "0"
           },
           "c_m_axi_mm2s_data_width": {
-            "value": "64"
+            "value": "32"
           },
           "c_m_axis_mm2s_tdata_width": {
-            "value": "16"
+            "value": "32"
           },
           "c_micro_dma": {
             "value": "0"
           },
           "c_mm2s_burst_size": {
-            "value": "8"
+            "value": "16"
           },
           "c_sg_length_width": {
             "value": "23"
