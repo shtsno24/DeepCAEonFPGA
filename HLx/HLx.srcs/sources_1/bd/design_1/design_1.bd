@@ -21,7 +21,8 @@
       "processing_system7_0": "",
       "rst_ps7_0_100M": "",
       "axi_smc": "",
-      "axi_dma": ""
+      "axi_dma": "",
+      "network_0": ""
     },
     "interface_ports": {
       "DDR": {
@@ -463,6 +464,18 @@
           }
         },
         "interface_nets": {
+          "m01_couplers_to_ps7_0_axi_periph": {
+            "interface_ports": [
+              "M01_AXI",
+              "m01_couplers/M_AXI"
+            ]
+          },
+          "s00_couplers_to_xbar": {
+            "interface_ports": [
+              "s00_couplers/M_AXI",
+              "xbar/S00_AXI"
+            ]
+          },
           "ps7_0_axi_periph_to_s00_couplers": {
             "interface_ports": [
               "S00_AXI",
@@ -481,22 +494,10 @@
               "m02_couplers/S_AXI"
             ]
           },
-          "s00_couplers_to_xbar": {
+          "xbar_to_m01_couplers": {
             "interface_ports": [
-              "s00_couplers/M_AXI",
-              "xbar/S00_AXI"
-            ]
-          },
-          "m01_couplers_to_ps7_0_axi_periph": {
-            "interface_ports": [
-              "M01_AXI",
-              "m01_couplers/M_AXI"
-            ]
-          },
-          "xbar_to_m00_couplers": {
-            "interface_ports": [
-              "xbar/M00_AXI",
-              "m00_couplers/S_AXI"
+              "xbar/M01_AXI",
+              "m01_couplers/S_AXI"
             ]
           },
           "m00_couplers_to_ps7_0_axi_periph": {
@@ -505,10 +506,10 @@
               "m00_couplers/M_AXI"
             ]
           },
-          "xbar_to_m01_couplers": {
+          "xbar_to_m00_couplers": {
             "interface_ports": [
-              "xbar/M01_AXI",
-              "m01_couplers/S_AXI"
+              "xbar/M00_AXI",
+              "m00_couplers/S_AXI"
             ]
           }
         },
@@ -962,13 +963,13 @@
             "value": "50"
           },
           "PCW_FPGA1_PERIPHERAL_FREQMHZ": {
-            "value": "50"
+            "value": "142.86"
           },
           "PCW_FPGA2_PERIPHERAL_FREQMHZ": {
-            "value": "50"
+            "value": "200"
           },
           "PCW_FPGA3_PERIPHERAL_FREQMHZ": {
-            "value": "50"
+            "value": "166.67"
           },
           "PCW_FPGA_FCLK0_ENABLE": {
             "value": "1"
@@ -1801,6 +1802,9 @@
           "PCW_S_AXI_HP1_DATA_WIDTH": {
             "value": "64"
           },
+          "PCW_S_AXI_HP2_DATA_WIDTH": {
+            "value": "64"
+          },
           "PCW_S_AXI_HP3_DATA_WIDTH": {
             "value": "64"
           },
@@ -2258,13 +2262,17 @@
             "value": "23"
           }
         }
+      },
+      "network_0": {
+        "vlnv": "xilinx.com:hls:network:1.0",
+        "xci_name": "design_1_network_0_0"
       }
     },
     "interface_nets": {
-      "axi_dma_M_AXIS_MM2S": {
+      "ps7_0_axi_periph_M00_AXI": {
         "interface_ports": [
-          "axi_dma/S_AXIS_S2MM",
-          "axi_dma/M_AXIS_MM2S"
+          "ps7_0_axi_periph/M00_AXI",
+          "network_0/s_axi_AXILiteS"
         ]
       },
       "processing_system7_0_FIXED_IO": {
@@ -2303,6 +2311,18 @@
           "axi_dma/S_AXI_LITE"
         ]
       },
+      "axi_dma_M_AXIS_MM2S": {
+        "interface_ports": [
+          "network_0/input_data",
+          "axi_dma/M_AXIS_MM2S"
+        ]
+      },
+      "network_0_output_data": {
+        "interface_ports": [
+          "network_0/output_data",
+          "axi_dma/S_AXIS_S2MM"
+        ]
+      },
       "axi_smc_M00_AXI": {
         "interface_ports": [
           "axi_smc/M00_AXI",
@@ -2325,7 +2345,8 @@
           "axi_dma/s_axi_lite_aclk",
           "ps7_0_axi_periph/M02_ACLK",
           "axi_dma/m_axi_mm2s_aclk",
-          "axi_dma/m_axi_s2mm_aclk"
+          "axi_dma/m_axi_s2mm_aclk",
+          "network_0/ap_clk"
         ]
       },
       "processing_system7_0_FCLK_RESET0_N": {
@@ -2343,7 +2364,8 @@
           "ps7_0_axi_periph/M01_ARESETN",
           "axi_smc/aresetn",
           "axi_dma/axi_resetn",
-          "ps7_0_axi_periph/M02_ARESETN"
+          "ps7_0_axi_periph/M02_ARESETN",
+          "network_0/ap_rst_n"
         ]
       }
     },
@@ -2357,6 +2379,11 @@
               "SEG_axi_dma_mm2s_Reg": {
                 "address_block": "/axi_dma/S_AXI_LITE/Reg",
                 "offset": "0x40410000",
+                "range": "64K"
+              },
+              "SEG_network_0_Reg": {
+                "address_block": "/network_0/s_axi_AXILiteS/Reg",
+                "offset": "0x43C00000",
                 "range": "64K"
               }
             }

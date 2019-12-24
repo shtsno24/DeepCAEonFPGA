@@ -217,6 +217,11 @@ vlog -work axi_protocol_converter_v2_1_18 -64 -incr "+incdir+../../../../HLx.src
 
 vlog -work xil_defaultlib -64 -incr "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/70cf/hdl" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/979d/hdl/verilog" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/b2d0/hdl/verilog" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0" "+incdir+/tools/Xilinx/Vivado/2018.3/data/xilinx_vip/include" \
 "../../../bd/design_1/ip/design_1_auto_pc_0/sim/design_1_auto_pc_0.v" \
+"../../../../HLx.srcs/sources_1/bd/design_1/ipshared/6726/hdl/verilog/network_AXILiteS_s_axi.v" \
+"../../../../HLx.srcs/sources_1/bd/design_1/ipshared/6726/hdl/verilog/network_MemBank_B.v" \
+"../../../../HLx.srcs/sources_1/bd/design_1/ipshared/6726/hdl/verilog/network_MemBank_Out.v" \
+"../../../../HLx.srcs/sources_1/bd/design_1/ipshared/6726/hdl/verilog/network.v" \
+"../../../bd/design_1/ip/design_1_network_0_0/sim/design_1_network_0_0.v" \
 
 vlog -work xil_defaultlib \
 "glbl.v"

@@ -6,4 +6,4 @@
 # Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 #
 
-vivado -log design_1_xbar_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_xbar_0.tcl
+vivado -log design_1_network_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_network_0_0.tcl

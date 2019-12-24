@@ -168,6 +168,11 @@
 -endlib
 -makelib ies_lib/xil_defaultlib \
   "../../../bd/design_1/ip/design_1_auto_pc_0/sim/design_1_auto_pc_0.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/6726/hdl/verilog/network_AXILiteS_s_axi.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/6726/hdl/verilog/network_MemBank_B.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/6726/hdl/verilog/network_MemBank_Out.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/6726/hdl/verilog/network.v" \
+  "../../../bd/design_1/ip/design_1_network_0_0/sim/design_1_network_0_0.v" \
 -endlib
 -makelib ies_lib/xil_defaultlib \
   glbl.v

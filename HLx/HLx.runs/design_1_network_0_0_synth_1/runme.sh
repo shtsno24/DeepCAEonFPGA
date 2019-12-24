@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/design_1_xbar_0_synth_1'
+HD_PWD='/home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/design_1_network_0_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -36,4 +36,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log design_1_xbar_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_xbar_0.tcl
+EAStep vivado -log design_1_network_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_network_0_0.tcl

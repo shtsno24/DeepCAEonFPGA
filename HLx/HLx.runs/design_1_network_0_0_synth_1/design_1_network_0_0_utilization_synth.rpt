@@ -1,13 +1,13 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
--------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3.1 (lin64) Build 2489853 Tue Mar 26 04:18:30 MDT 2019
-| Date         : Tue Dec 24 15:49:31 2019
+| Date         : Tue Dec 24 18:53:20 2019
 | Host         : masudalab-ubuntu running 64-bit Ubuntu 18.04.3 LTS
-| Command      : report_utilization -file design_1_xbar_0_utilization_synth.rpt -pb design_1_xbar_0_utilization_synth.pb
-| Design       : design_1_xbar_0
+| Command      : report_utilization -file design_1_network_0_0_utilization_synth.rpt -pb design_1_network_0_0_utilization_synth.pb
+| Design       : design_1_network_0_0
 | Device       : 7z020clg400-1
 | Design State : Synthesized
--------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------
 
 Utilization Design Information
 
@@ -30,13 +30,13 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             |  132 |     0 |     53200 |  0.25 |
-|   LUT as Logic          |  132 |     0 |     53200 |  0.25 |
+| Slice LUTs*             | 1471 |     0 |     53200 |  2.77 |
+|   LUT as Logic          | 1471 |     0 |     53200 |  2.77 |
 |   LUT as Memory         |    0 |     0 |     17400 |  0.00 |
-| Slice Registers         |  128 |     0 |    106400 |  0.12 |
-|   Register as Flip Flop |  128 |     0 |    106400 |  0.12 |
+| Slice Registers         |  554 |     0 |    106400 |  0.52 |
+|   Register as Flip Flop |  554 |     0 |    106400 |  0.52 |
 |   Register as Latch     |    0 |     0 |    106400 |  0.00 |
-| F7 Muxes                |    0 |     0 |     26600 |  0.00 |
+| F7 Muxes                |    1 |     0 |     26600 | <0.01 |
 | F8 Muxes                |    0 |     0 |     13300 |  0.00 |
 +-------------------------+------+-------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
@@ -56,21 +56,23 @@ Table of Contents
 | 0     |          Yes |           - |            - |
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
-| 0     |          Yes |         Set |            - |
-| 128   |          Yes |       Reset |            - |
+| 1     |          Yes |         Set |            - |
+| 553   |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
 2. Memory
 ---------
 
-+----------------+------+-------+-----------+-------+
-|    Site Type   | Used | Fixed | Available | Util% |
-+----------------+------+-------+-----------+-------+
-| Block RAM Tile |    0 |     0 |       140 |  0.00 |
-|   RAMB36/FIFO* |    0 |     0 |       140 |  0.00 |
-|   RAMB18       |    0 |     0 |       280 |  0.00 |
-+----------------+------+-------+-----------+-------+
++-------------------+------+-------+-----------+-------+
+|     Site Type     | Used | Fixed | Available | Util% |
++-------------------+------+-------+-----------+-------+
+| Block RAM Tile    |  8.5 |     0 |       140 |  6.07 |
+|   RAMB36/FIFO*    |    8 |     0 |       140 |  5.71 |
+|     RAMB36E1 only |    8 |       |           |       |
+|   RAMB18          |    1 |     0 |       280 |  0.36 |
+|     RAMB18E1 only |    1 |       |           |       |
++-------------------+------+-------+-----------+-------+
 * Note: Each Block RAM Tile only has one FIFO logic available and therefore can accommodate only one FIFO36E1 or one FIFO18E1. However, if a FIFO18E1 occupies a Block RAM Tile, that tile can still accommodate a RAMB18E1
 
 
@@ -146,13 +148,18 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDRE     |  128 |        Flop & Latch |
-| LUT4     |   47 |                 LUT |
-| LUT6     |   38 |                 LUT |
-| LUT3     |   36 |                 LUT |
-| LUT5     |   31 |                 LUT |
-| LUT2     |    7 |                 LUT |
+| LUT6     |  821 |                 LUT |
+| FDRE     |  553 |        Flop & Latch |
+| LUT4     |  313 |                 LUT |
+| LUT5     |  269 |                 LUT |
+| LUT2     |  218 |                 LUT |
+| LUT3     |  148 |                 LUT |
+| RAMB36E1 |    8 |        Block Memory |
+| CARRY4   |    4 |          CarryLogic |
 | LUT1     |    2 |                 LUT |
+| RAMB18E1 |    1 |        Block Memory |
+| MUXF7    |    1 |               MuxFx |
+| FDSE     |    1 |        Flop & Latch |
 +----------+------+---------------------+
 
 
