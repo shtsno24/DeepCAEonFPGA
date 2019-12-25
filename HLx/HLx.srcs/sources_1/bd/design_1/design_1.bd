@@ -251,16 +251,16 @@
               }
             },
             "interface_nets": {
-              "auto_pc_to_s00_couplers": {
-                "interface_ports": [
-                  "M_AXI",
-                  "auto_pc/M_AXI"
-                ]
-              },
               "s00_couplers_to_auto_pc": {
                 "interface_ports": [
                   "S_AXI",
                   "auto_pc/S_AXI"
+                ]
+              },
+              "auto_pc_to_s00_couplers": {
+                "interface_ports": [
+                  "M_AXI",
+                  "auto_pc/M_AXI"
                 ]
               }
             },
@@ -389,22 +389,16 @@
           }
         },
         "interface_nets": {
-          "m01_couplers_to_ps7_0_axi_periph": {
-            "interface_ports": [
-              "M01_AXI",
-              "m01_couplers/M_AXI"
-            ]
-          },
           "ps7_0_axi_periph_to_s00_couplers": {
             "interface_ports": [
               "S00_AXI",
               "s00_couplers/S_AXI"
             ]
           },
-          "s00_couplers_to_xbar": {
+          "m01_couplers_to_ps7_0_axi_periph": {
             "interface_ports": [
-              "s00_couplers/M_AXI",
-              "xbar/S00_AXI"
+              "M01_AXI",
+              "m01_couplers/M_AXI"
             ]
           },
           "xbar_to_m01_couplers": {
@@ -413,16 +407,22 @@
               "m01_couplers/S_AXI"
             ]
           },
-          "xbar_to_m00_couplers": {
+          "s00_couplers_to_xbar": {
             "interface_ports": [
-              "xbar/M00_AXI",
-              "m00_couplers/S_AXI"
+              "s00_couplers/M_AXI",
+              "xbar/S00_AXI"
             ]
           },
           "m00_couplers_to_ps7_0_axi_periph": {
             "interface_ports": [
               "M00_AXI",
               "m00_couplers/M_AXI"
+            ]
+          },
+          "xbar_to_m00_couplers": {
+            "interface_ports": [
+              "xbar/M00_AXI",
+              "m00_couplers/S_AXI"
             ]
           }
         },
@@ -2141,7 +2141,7 @@
         "xci_name": "design_1_axi_dma_0_0",
         "parameters": {
           "c_addr_width": {
-            "value": "64"
+            "value": "32"
           },
           "c_include_s2mm": {
             "value": "0"
@@ -2168,7 +2168,7 @@
         "xci_name": "design_1_axi_dma_mm2s_0",
         "parameters": {
           "c_addr_width": {
-            "value": "64"
+            "value": "32"
           },
           "c_include_mm2s": {
             "value": "0"
@@ -2195,30 +2195,6 @@
           "processing_system7_0/DDR"
         ]
       },
-      "processing_system7_0_M_AXI_GP0": {
-        "interface_ports": [
-          "processing_system7_0/M_AXI_GP0",
-          "ps7_0_axi_periph/S00_AXI"
-        ]
-      },
-      "ps7_0_axi_periph_M00_AXI": {
-        "interface_ports": [
-          "ps7_0_axi_periph/M00_AXI",
-          "axi_dma_mm2s/S_AXI_LITE"
-        ]
-      },
-      "axi_smc_M00_AXI": {
-        "interface_ports": [
-          "axi_smc/M00_AXI",
-          "processing_system7_0/S_AXI_HP0"
-        ]
-      },
-      "processing_system7_0_FIXED_IO": {
-        "interface_ports": [
-          "FIXED_IO",
-          "processing_system7_0/FIXED_IO"
-        ]
-      },
       "axi_dma_0_M_AXI_MM2S": {
         "interface_ports": [
           "axi_dma_mm2s/M_AXI_MM2S",
@@ -2231,16 +2207,40 @@
           "axi_dma_s2mm/S_AXIS_S2MM"
         ]
       },
-      "axi_dma_s2mm_M_AXI_S2MM": {
+      "ps7_0_axi_periph_M00_AXI": {
         "interface_ports": [
-          "axi_dma_s2mm/M_AXI_S2MM",
-          "axi_smc/S01_AXI"
+          "ps7_0_axi_periph/M00_AXI",
+          "axi_dma_mm2s/S_AXI_LITE"
+        ]
+      },
+      "processing_system7_0_FIXED_IO": {
+        "interface_ports": [
+          "FIXED_IO",
+          "processing_system7_0/FIXED_IO"
+        ]
+      },
+      "processing_system7_0_M_AXI_GP0": {
+        "interface_ports": [
+          "processing_system7_0/M_AXI_GP0",
+          "ps7_0_axi_periph/S00_AXI"
         ]
       },
       "ps7_0_axi_periph_M01_AXI": {
         "interface_ports": [
           "ps7_0_axi_periph/M01_AXI",
           "axi_dma_s2mm/S_AXI_LITE"
+        ]
+      },
+      "axi_dma_s2mm_M_AXI_S2MM": {
+        "interface_ports": [
+          "axi_dma_s2mm/M_AXI_S2MM",
+          "axi_smc/S01_AXI"
+        ]
+      },
+      "axi_smc_M00_AXI": {
+        "interface_ports": [
+          "axi_smc/M00_AXI",
+          "processing_system7_0/S_AXI_HP0"
         ]
       }
     },
@@ -2252,14 +2252,14 @@
           "ps7_0_axi_periph/S00_ACLK",
           "ps7_0_axi_periph/M00_ACLK",
           "processing_system7_0/M_AXI_GP0_ACLK",
-          "processing_system7_0/S_AXI_HP0_ACLK",
           "rst_ps7_0_100M/slowest_sync_clk",
           "axi_smc/aclk",
           "axi_dma_mm2s/s_axi_lite_aclk",
           "axi_dma_mm2s/m_axi_mm2s_aclk",
           "axi_dma_s2mm/s_axi_lite_aclk",
           "ps7_0_axi_periph/M01_ACLK",
-          "axi_dma_s2mm/m_axi_s2mm_aclk"
+          "axi_dma_s2mm/m_axi_s2mm_aclk",
+          "processing_system7_0/S_AXI_HP0_ACLK"
         ]
       },
       "processing_system7_0_FCLK_RESET0_N": {
@@ -2305,13 +2305,13 @@
       "/axi_dma_mm2s": {
         "address_spaces": {
           "Data_MM2S": {
-            "range": "16E",
+            "range": "4G",
             "width": "32",
             "segments": {
               "SEG_processing_system7_0_HP0_DDR_LOWOCM": {
                 "address_block": "/processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM",
-                "offset": "0x0000000000000000",
-                "range": "512M"
+                "offset": "0x00000000",
+                "range": "256M"
               }
             }
           }
@@ -2320,13 +2320,13 @@
       "/axi_dma_s2mm": {
         "address_spaces": {
           "Data_S2MM": {
-            "range": "16E",
+            "range": "4G",
             "width": "32",
             "segments": {
               "SEG_processing_system7_0_HP0_DDR_LOWOCM": {
                 "address_block": "/processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM",
-                "offset": "0x0000000000000000",
-                "range": "512M"
+                "offset": "0x00000000",
+                "range": "256M"
               }
             }
           }
