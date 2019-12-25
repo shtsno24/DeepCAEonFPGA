@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3.1 (lin64) Build 2489853 Tue Mar 26 04:18:30 MDT 2019
-| Date             : Wed Dec 25 20:22:47 2019
+| Date             : Wed Dec 25 20:37:52 2019
 | Host             : masudalab-ubuntu running 64-bit Ubuntu 18.04.3 LTS
 | Command          : report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
 | Design           : design_1_wrapper
@@ -52,16 +52,16 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.010 |        3 |       --- |             --- |
-| Slice Logic              |     0.004 |    12334 |       --- |             --- |
-|   LUT as Logic           |     0.003 |     3691 |     53200 |            6.94 |
-|   LUT as Distributed RAM |    <0.001 |      430 |     17400 |            2.47 |
-|   Register               |    <0.001 |     5942 |    106400 |            5.58 |
-|   CARRY4                 |    <0.001 |      102 |     13300 |            0.77 |
-|   LUT as Shift Register  |    <0.001 |      177 |     17400 |            1.02 |
+| Clocks                   |     0.011 |        3 |       --- |             --- |
+| Slice Logic              |     0.003 |    13271 |       --- |             --- |
+|   LUT as Logic           |     0.003 |     3863 |     53200 |            7.26 |
+|   LUT as Distributed RAM |    <0.001 |      446 |     17400 |            2.56 |
+|   Register               |    <0.001 |     6542 |    106400 |            6.15 |
+|   CARRY4                 |    <0.001 |      118 |     13300 |            0.89 |
+|   LUT as Shift Register  |    <0.001 |      210 |     17400 |            1.21 |
 |   F7/F8 Muxes            |    <0.001 |        5 |     53200 |           <0.01 |
-|   Others                 |     0.000 |      567 |       --- |             --- |
-| Signals                  |     0.004 |     8268 |       --- |             --- |
+|   Others                 |     0.000 |      569 |       --- |             --- |
+| Signals                  |     0.004 |     8967 |       --- |             --- |
 | Block RAM                |    <0.001 |        3 |       140 |            2.14 |
 | PS7                      |     1.256 |        1 |       --- |             --- |
 | Static Power             |     0.135 |          |           |                 |
@@ -153,8 +153,8 @@ Table of Contents
 +--------------------------+-----------+
 | design_1_wrapper         |     1.274 |
 |   design_1_i             |     1.274 |
-|     axi_dma_mm2s         |     0.001 |
-|       U0                 |     0.001 |
+|     axi_dma_mm2s         |     0.002 |
+|       U0                 |     0.002 |
 |     axi_dma_s2mm         |     0.003 |
 |       U0                 |     0.003 |
 |     axi_smc              |     0.011 |
