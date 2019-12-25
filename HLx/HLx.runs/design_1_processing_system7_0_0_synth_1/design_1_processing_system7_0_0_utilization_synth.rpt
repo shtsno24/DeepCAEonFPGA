@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3.1 (lin64) Build 2489853 Tue Mar 26 04:18:30 MDT 2019
-| Date         : Wed Dec 25 19:48:23 2019
+| Date         : Wed Dec 25 22:22:38 2019
 | Host         : masudalab-ubuntu running 64-bit Ubuntu 18.04.3 LTS
 | Command      : report_utilization -file design_1_processing_system7_0_0_utilization_synth.rpt -pb design_1_processing_system7_0_0_utilization_synth.pb
 | Design       : design_1_processing_system7_0_0
@@ -30,8 +30,8 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             |  143 |     0 |     53200 |  0.27 |
-|   LUT as Logic          |  143 |     0 |     53200 |  0.27 |
+| Slice LUTs*             |  112 |     0 |     53200 |  0.21 |
+|   LUT as Logic          |  112 |     0 |     53200 |  0.21 |
 |   LUT as Memory         |    0 |     0 |     17400 |  0.00 |
 | Slice Registers         |    0 |     0 |    106400 |  0.00 |
 |   Register as Flip Flop |    0 |     0 |    106400 |  0.00 |
@@ -148,10 +148,6 @@ Table of Contents
 +----------+------+----------------------+
 | BIBUF    |  130 |                   IO |
 | LUT1     |  112 |                  LUT |
-| LUT6     |   17 |                  LUT |
-| LUT5     |   13 |                  LUT |
-| LUT4     |    7 |                  LUT |
-| LUT3     |    3 |                  LUT |
 | PS7      |    1 | Specialized Resource |
 | BUFG     |    1 |                Clock |
 +----------+------+----------------------+

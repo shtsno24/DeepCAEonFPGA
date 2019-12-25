@@ -176,9 +176,9 @@ output M_AXI_GP0_BREADY;
 output M_AXI_GP0_RREADY;
 output M_AXI_GP0_WLAST;
 output M_AXI_GP0_WVALID;
-output [5 : 0] M_AXI_GP0_ARID;
-output [5 : 0] M_AXI_GP0_AWID;
-output [5 : 0] M_AXI_GP0_WID;
+output [11 : 0] M_AXI_GP0_ARID;
+output [11 : 0] M_AXI_GP0_AWID;
+output [11 : 0] M_AXI_GP0_WID;
 output [1 : 0] M_AXI_GP0_ARBURST;
 output [1 : 0] M_AXI_GP0_ARLOCK;
 output [2 : 0] M_AXI_GP0_ARSIZE;
@@ -204,8 +204,8 @@ input M_AXI_GP0_BVALID;
 input M_AXI_GP0_RLAST;
 input M_AXI_GP0_RVALID;
 input M_AXI_GP0_WREADY;
-input [5 : 0] M_AXI_GP0_BID;
-input [5 : 0] M_AXI_GP0_RID;
+input [11 : 0] M_AXI_GP0_BID;
+input [11 : 0] M_AXI_GP0_RID;
 input [1 : 0] M_AXI_GP0_BRESP;
 input [1 : 0] M_AXI_GP0_RRESP;
 input [31 : 0] M_AXI_GP0_RDATA;
@@ -293,13 +293,13 @@ input PS_PORB;
     .C_S_AXI_HP2_DATA_WIDTH(64),
     .C_S_AXI_HP3_DATA_WIDTH(64),
     .C_HIGH_OCM_EN(0),
-    .C_FCLK_CLK0_FREQ(50.0),
+    .C_FCLK_CLK0_FREQ(100.0),
     .C_FCLK_CLK1_FREQ(10.0),
     .C_FCLK_CLK2_FREQ(10.0),
     .C_FCLK_CLK3_FREQ(10.0),
-	.C_M_AXI_GP0_ENABLE_STATIC_REMAP(1),
+	.C_M_AXI_GP0_ENABLE_STATIC_REMAP(0),
 	.C_M_AXI_GP1_ENABLE_STATIC_REMAP(0),
-	.C_M_AXI_GP0_THREAD_ID_WIDTH (6), 
+	.C_M_AXI_GP0_THREAD_ID_WIDTH (12), 
 	.C_M_AXI_GP1_THREAD_ID_WIDTH (12)
   ) inst (
     .M_AXI_GP0_ARVALID(M_AXI_GP0_ARVALID),

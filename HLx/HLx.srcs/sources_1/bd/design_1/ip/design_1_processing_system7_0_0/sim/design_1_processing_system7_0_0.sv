@@ -176,9 +176,9 @@
       bit  M_AXI_GP0_RREADY;
       bit  M_AXI_GP0_WLAST;
       bit  M_AXI_GP0_WVALID;
-      bit  [5 : 0] M_AXI_GP0_ARID;
-      bit  [5 : 0] M_AXI_GP0_AWID;
-      bit  [5 : 0] M_AXI_GP0_WID;
+      bit  [11 : 0] M_AXI_GP0_ARID;
+      bit  [11 : 0] M_AXI_GP0_AWID;
+      bit  [11 : 0] M_AXI_GP0_WID;
       bit  [1 : 0] M_AXI_GP0_ARBURST;
       bit  [1 : 0] M_AXI_GP0_ARLOCK;
       bit  [2 : 0] M_AXI_GP0_ARSIZE;
@@ -204,8 +204,8 @@
       bit  M_AXI_GP0_RLAST;
       bit  M_AXI_GP0_RVALID;
       bit  M_AXI_GP0_WREADY;
-      bit  [5 : 0] M_AXI_GP0_BID;
-      bit  [5 : 0] M_AXI_GP0_RID;
+      bit  [11 : 0] M_AXI_GP0_BID;
+      bit  [11 : 0] M_AXI_GP0_RID;
       bit  [1 : 0] M_AXI_GP0_BRESP;
       bit  [1 : 0] M_AXI_GP0_RRESP;
       bit  [31 : 0] M_AXI_GP0_RDATA;
@@ -806,7 +806,7 @@
       parameter C_S_AXI_ACP_ARUSER_VAL = 31;
       parameter C_S_AXI_ACP_AWUSER_VAL = 31;
       parameter C_M_AXI_GP0_ID_WIDTH = 12;
-      parameter C_M_AXI_GP0_ENABLE_STATIC_REMAP = 1;
+      parameter C_M_AXI_GP0_ENABLE_STATIC_REMAP = 0;
       parameter C_M_AXI_GP1_ID_WIDTH = 12;
       parameter C_M_AXI_GP1_ENABLE_STATIC_REMAP = 0;
       parameter C_S_AXI_GP0_ID_WIDTH = 6;
@@ -820,7 +820,7 @@
       parameter C_S_AXI_HP2_DATA_WIDTH = 64;
       parameter C_S_AXI_HP3_ID_WIDTH = 6;
       parameter C_S_AXI_HP3_DATA_WIDTH = 64;
-      parameter C_M_AXI_GP0_THREAD_ID_WIDTH = 6;
+      parameter C_M_AXI_GP0_THREAD_ID_WIDTH = 12;
       parameter C_M_AXI_GP1_THREAD_ID_WIDTH = 12;
       parameter C_NUM_F2P_INTR_INPUTS = 1;
       parameter C_IRQ_F2P_MODE = "DIRECT";
@@ -859,9 +859,9 @@
       output  M_AXI_GP0_RREADY;
       output  M_AXI_GP0_WLAST;
       output  M_AXI_GP0_WVALID;
-      output  [5 : 0] M_AXI_GP0_ARID;
-      output  [5 : 0] M_AXI_GP0_AWID;
-      output  [5 : 0] M_AXI_GP0_WID;
+      output  [11 : 0] M_AXI_GP0_ARID;
+      output  [11 : 0] M_AXI_GP0_AWID;
+      output  [11 : 0] M_AXI_GP0_WID;
       output  [1 : 0] M_AXI_GP0_ARBURST;
       output  [1 : 0] M_AXI_GP0_ARLOCK;
       output  [2 : 0] M_AXI_GP0_ARSIZE;
@@ -887,8 +887,8 @@
       input  M_AXI_GP0_RLAST;
       input  M_AXI_GP0_RVALID;
       input  M_AXI_GP0_WREADY;
-      input  [5 : 0] M_AXI_GP0_BID;
-      input  [5 : 0] M_AXI_GP0_RID;
+      input  [11 : 0] M_AXI_GP0_BID;
+      input  [11 : 0] M_AXI_GP0_RID;
       input  [1 : 0] M_AXI_GP0_BRESP;
       input  [1 : 0] M_AXI_GP0_RRESP;
       input  [31 : 0] M_AXI_GP0_RDATA;
@@ -971,9 +971,9 @@
       reg M_AXI_GP0_RREADY;
       reg M_AXI_GP0_WLAST;
       reg M_AXI_GP0_WVALID;
-      reg [5 : 0] M_AXI_GP0_ARID;
-      reg [5 : 0] M_AXI_GP0_AWID;
-      reg [5 : 0] M_AXI_GP0_WID;
+      reg [11 : 0] M_AXI_GP0_ARID;
+      reg [11 : 0] M_AXI_GP0_AWID;
+      reg [11 : 0] M_AXI_GP0_WID;
       reg [1 : 0] M_AXI_GP0_ARBURST;
       reg [1 : 0] M_AXI_GP0_ARLOCK;
       reg [2 : 0] M_AXI_GP0_ARSIZE;
@@ -1024,18 +1024,18 @@ import "DPI-C" function void ps7_simulate_single_cycle_M_AXI_GP0_ACLK();
 import "DPI-C" function void ps7_set_inputs_m_axi_gp0_M_AXI_GP0_ACLK(
 input bit M_AXI_GP0_AWREADY,
 input bit M_AXI_GP0_WREADY,
-input bit [5 : 0] M_AXI_GP0_BID,
+input bit [11 : 0] M_AXI_GP0_BID,
 input bit [1 : 0] M_AXI_GP0_BRESP,
 input bit M_AXI_GP0_BVALID,
 input bit M_AXI_GP0_ARREADY,
-input bit [5 : 0] M_AXI_GP0_RID,
+input bit [11 : 0] M_AXI_GP0_RID,
 input bit [31 : 0] M_AXI_GP0_RDATA,
 input bit [1 : 0] M_AXI_GP0_RRESP,
 input bit M_AXI_GP0_RLAST,
 input bit M_AXI_GP0_RVALID
 );
 import "DPI-C" function void ps7_get_outputs_m_axi_gp0_M_AXI_GP0_ACLK(
-output bit [5 : 0] M_AXI_GP0_AWID,
+output bit [11 : 0] M_AXI_GP0_AWID,
 output bit [31 : 0] M_AXI_GP0_AWADDR,
 output bit [3 : 0] M_AXI_GP0_AWLEN,
 output bit [2 : 0] M_AXI_GP0_AWSIZE,
@@ -1045,13 +1045,13 @@ output bit [3 : 0] M_AXI_GP0_AWCACHE,
 output bit [2 : 0] M_AXI_GP0_AWPROT,
 output bit [3 : 0] M_AXI_GP0_AWQOS,
 output bit M_AXI_GP0_AWVALID,
-output bit [5 : 0] M_AXI_GP0_WID,
+output bit [11 : 0] M_AXI_GP0_WID,
 output bit [31 : 0] M_AXI_GP0_WDATA,
 output bit [3 : 0] M_AXI_GP0_WSTRB,
 output bit M_AXI_GP0_WLAST,
 output bit M_AXI_GP0_WVALID,
 output bit M_AXI_GP0_BREADY,
-output bit [5 : 0] M_AXI_GP0_ARID,
+output bit [11 : 0] M_AXI_GP0_ARID,
 output bit [31 : 0] M_AXI_GP0_ARADDR,
 output bit [3 : 0] M_AXI_GP0_ARLEN,
 output bit [2 : 0] M_AXI_GP0_ARSIZE,
@@ -1212,7 +1212,7 @@ output bit S_AXI_HP0_RVALID
      FCLK_CLK0 = 1'b0;
   end
 
-  always #(10.0) FCLK_CLK0 <= ~FCLK_CLK0;
+  always #(5.0) FCLK_CLK0 <= ~FCLK_CLK0;
 
   always@(posedge FCLK_CLK0)
   begin

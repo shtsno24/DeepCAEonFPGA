@@ -1,7 +1,7 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.3.1 (lin64) Build 2489853 Tue Mar 26 04:18:30 MDT 2019
--- Date        : Wed Dec 25 19:48:23 2019
+-- Date        : Wed Dec 25 22:22:39 2019
 -- Host        : masudalab-ubuntu running 64-bit Ubuntu 18.04.3 LTS
 -- Command     : write_vhdl -force -mode funcsim
 --               /home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0_sim_netlist.vhdl
@@ -191,9 +191,9 @@ entity design_1_processing_system7_0_0_processing_system7_v5_5_processing_system
     M_AXI_GP0_RREADY : out STD_LOGIC;
     M_AXI_GP0_WLAST : out STD_LOGIC;
     M_AXI_GP0_WVALID : out STD_LOGIC;
-    M_AXI_GP0_ARID : out STD_LOGIC_VECTOR ( 5 downto 0 );
-    M_AXI_GP0_AWID : out STD_LOGIC_VECTOR ( 5 downto 0 );
-    M_AXI_GP0_WID : out STD_LOGIC_VECTOR ( 5 downto 0 );
+    M_AXI_GP0_ARID : out STD_LOGIC_VECTOR ( 11 downto 0 );
+    M_AXI_GP0_AWID : out STD_LOGIC_VECTOR ( 11 downto 0 );
+    M_AXI_GP0_WID : out STD_LOGIC_VECTOR ( 11 downto 0 );
     M_AXI_GP0_ARBURST : out STD_LOGIC_VECTOR ( 1 downto 0 );
     M_AXI_GP0_ARLOCK : out STD_LOGIC_VECTOR ( 1 downto 0 );
     M_AXI_GP0_ARSIZE : out STD_LOGIC_VECTOR ( 2 downto 0 );
@@ -219,8 +219,8 @@ entity design_1_processing_system7_0_0_processing_system7_v5_5_processing_system
     M_AXI_GP0_RLAST : in STD_LOGIC;
     M_AXI_GP0_RVALID : in STD_LOGIC;
     M_AXI_GP0_WREADY : in STD_LOGIC;
-    M_AXI_GP0_BID : in STD_LOGIC_VECTOR ( 5 downto 0 );
-    M_AXI_GP0_RID : in STD_LOGIC_VECTOR ( 5 downto 0 );
+    M_AXI_GP0_BID : in STD_LOGIC_VECTOR ( 11 downto 0 );
+    M_AXI_GP0_RID : in STD_LOGIC_VECTOR ( 11 downto 0 );
     M_AXI_GP0_BRESP : in STD_LOGIC_VECTOR ( 1 downto 0 );
     M_AXI_GP0_RRESP : in STD_LOGIC_VECTOR ( 1 downto 0 );
     M_AXI_GP0_RDATA : in STD_LOGIC_VECTOR ( 31 downto 0 );
@@ -739,11 +739,11 @@ entity design_1_processing_system7_0_0_processing_system7_v5_5_processing_system
   attribute C_MIO_PRIMITIVE : integer;
   attribute C_MIO_PRIMITIVE of design_1_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 54;
   attribute C_M_AXI_GP0_ENABLE_STATIC_REMAP : integer;
-  attribute C_M_AXI_GP0_ENABLE_STATIC_REMAP of design_1_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 1;
+  attribute C_M_AXI_GP0_ENABLE_STATIC_REMAP of design_1_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 0;
   attribute C_M_AXI_GP0_ID_WIDTH : integer;
   attribute C_M_AXI_GP0_ID_WIDTH of design_1_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 12;
   attribute C_M_AXI_GP0_THREAD_ID_WIDTH : integer;
-  attribute C_M_AXI_GP0_THREAD_ID_WIDTH of design_1_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 6;
+  attribute C_M_AXI_GP0_THREAD_ID_WIDTH of design_1_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 12;
   attribute C_M_AXI_GP1_ENABLE_STATIC_REMAP : integer;
   attribute C_M_AXI_GP1_ENABLE_STATIC_REMAP of design_1_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 0;
   attribute C_M_AXI_GP1_ID_WIDTH : integer;
@@ -833,14 +833,9 @@ architecture STRUCTURE of design_1_processing_system7_0_0_processing_system7_v5_
   signal I2C1_SCL_T_n : STD_LOGIC;
   signal I2C1_SDA_T_n : STD_LOGIC;
   signal \^m_axi_gp0_arcache\ : STD_LOGIC_VECTOR ( 3 downto 0 );
-  signal M_AXI_GP0_ARID_FULL : STD_LOGIC_VECTOR ( 11 downto 0 );
   signal \^m_axi_gp0_arsize\ : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal \^m_axi_gp0_awcache\ : STD_LOGIC_VECTOR ( 3 downto 0 );
-  signal M_AXI_GP0_AWID_FULL : STD_LOGIC_VECTOR ( 11 downto 0 );
   signal \^m_axi_gp0_awsize\ : STD_LOGIC_VECTOR ( 1 downto 0 );
-  signal M_AXI_GP0_BID_FULL : STD_LOGIC_VECTOR ( 11 downto 0 );
-  signal M_AXI_GP0_RID_FULL : STD_LOGIC_VECTOR ( 11 downto 0 );
-  signal M_AXI_GP0_WID_FULL : STD_LOGIC_VECTOR ( 11 downto 0 );
   signal \^m_axi_gp1_arcache\ : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal \^m_axi_gp1_arsize\ : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal \^m_axi_gp1_awcache\ : STD_LOGIC_VECTOR ( 3 downto 0 );
@@ -938,26 +933,7 @@ architecture STRUCTURE of design_1_processing_system7_0_0_processing_system7_v5_
   attribute BOX_TYPE of DDR_VRN_BIBUF : label is "PRIMITIVE";
   attribute BOX_TYPE of DDR_VRP_BIBUF : label is "PRIMITIVE";
   attribute BOX_TYPE of DDR_WEB_BIBUF : label is "PRIMITIVE";
-  attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \M_AXI_GP0_ARID[1]_INST_0\ : label is "soft_lutpair8";
-  attribute SOFT_HLUTNM of \M_AXI_GP0_ARID[5]_INST_0\ : label is "soft_lutpair8";
-  attribute SOFT_HLUTNM of \M_AXI_GP0_AWID[1]_INST_0\ : label is "soft_lutpair7";
-  attribute SOFT_HLUTNM of \M_AXI_GP0_AWID[5]_INST_0\ : label is "soft_lutpair7";
-  attribute SOFT_HLUTNM of \M_AXI_GP0_WID[1]_INST_0\ : label is "soft_lutpair6";
-  attribute SOFT_HLUTNM of \M_AXI_GP0_WID[5]_INST_0\ : label is "soft_lutpair6";
   attribute BOX_TYPE of PS7_i : label is "PRIMITIVE";
-  attribute SOFT_HLUTNM of PS7_i_i_10 : label is "soft_lutpair3";
-  attribute SOFT_HLUTNM of PS7_i_i_11 : label is "soft_lutpair3";
-  attribute SOFT_HLUTNM of PS7_i_i_14 : label is "soft_lutpair0";
-  attribute SOFT_HLUTNM of PS7_i_i_16 : label is "soft_lutpair5";
-  attribute SOFT_HLUTNM of PS7_i_i_19 : label is "soft_lutpair2";
-  attribute SOFT_HLUTNM of PS7_i_i_20 : label is "soft_lutpair0";
-  attribute SOFT_HLUTNM of PS7_i_i_21 : label is "soft_lutpair5";
-  attribute SOFT_HLUTNM of PS7_i_i_22 : label is "soft_lutpair2";
-  attribute SOFT_HLUTNM of PS7_i_i_3 : label is "soft_lutpair1";
-  attribute SOFT_HLUTNM of PS7_i_i_5 : label is "soft_lutpair4";
-  attribute SOFT_HLUTNM of PS7_i_i_8 : label is "soft_lutpair4";
-  attribute SOFT_HLUTNM of PS7_i_i_9 : label is "soft_lutpair1";
   attribute BOX_TYPE of PS_CLK_BIBUF : label is "PRIMITIVE";
   attribute BOX_TYPE of PS_PORB_BIBUF : label is "PRIMITIVE";
   attribute BOX_TYPE of PS_SRSTB_BIBUF : label is "PRIMITIVE";
@@ -1742,222 +1718,6 @@ I2C1_SDA_T_INST_0: unisim.vcomponents.LUT1
       I0 => I2C1_SDA_T_n,
       O => I2C1_SDA_T
     );
-\M_AXI_GP0_ARID[0]_INST_0\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"FEEEFFCC"
-    )
-        port map (
-      I0 => M_AXI_GP0_ARID_FULL(0),
-      I1 => M_AXI_GP0_ARID_FULL(7),
-      I2 => M_AXI_GP0_ARID_FULL(4),
-      I3 => M_AXI_GP0_ARID_FULL(2),
-      I4 => M_AXI_GP0_ARID_FULL(11),
-      O => M_AXI_GP0_ARID(0)
-    );
-\M_AXI_GP0_ARID[1]_INST_0\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"EEFE"
-    )
-        port map (
-      I0 => M_AXI_GP0_ARID_FULL(8),
-      I1 => M_AXI_GP0_ARID_FULL(5),
-      I2 => M_AXI_GP0_ARID_FULL(3),
-      I3 => M_AXI_GP0_ARID_FULL(11),
-      O => M_AXI_GP0_ARID(1)
-    );
-\M_AXI_GP0_ARID[2]_INST_0\: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"EAAAEAAAFFFFEAAA"
-    )
-        port map (
-      I0 => M_AXI_GP0_ARID_FULL(9),
-      I1 => M_AXI_GP0_ARID_FULL(6),
-      I2 => M_AXI_GP0_ARID_FULL(3),
-      I3 => M_AXI_GP0_ARID_FULL(2),
-      I4 => M_AXI_GP0_ARID_FULL(4),
-      I5 => M_AXI_GP0_ARID_FULL(11),
-      O => M_AXI_GP0_ARID(2)
-    );
-\M_AXI_GP0_ARID[3]_INST_0\: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"C080C080C080CC8C"
-    )
-        port map (
-      I0 => M_AXI_GP0_ARID_FULL(4),
-      I1 => M_AXI_GP0_ARID_FULL(10),
-      I2 => M_AXI_GP0_ARID_FULL(11),
-      I3 => M_AXI_GP0_ARID_FULL(2),
-      I4 => M_AXI_GP0_ARID_FULL(0),
-      I5 => M_AXI_GP0_ARID_FULL(5),
-      O => M_AXI_GP0_ARID(3)
-    );
-\M_AXI_GP0_ARID[4]_INST_0\: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"EAC0EAC0EAC0EEC0"
-    )
-        port map (
-      I0 => M_AXI_GP0_ARID_FULL(3),
-      I1 => M_AXI_GP0_ARID_FULL(10),
-      I2 => M_AXI_GP0_ARID_FULL(0),
-      I3 => M_AXI_GP0_ARID_FULL(11),
-      I4 => M_AXI_GP0_ARID_FULL(2),
-      I5 => M_AXI_GP0_ARID_FULL(6),
-      O => M_AXI_GP0_ARID(4)
-    );
-\M_AXI_GP0_ARID[5]_INST_0\: unisim.vcomponents.LUT3
-    generic map(
-      INIT => X"08"
-    )
-        port map (
-      I0 => M_AXI_GP0_ARID_FULL(10),
-      I1 => M_AXI_GP0_ARID_FULL(11),
-      I2 => M_AXI_GP0_ARID_FULL(3),
-      O => M_AXI_GP0_ARID(5)
-    );
-\M_AXI_GP0_AWID[0]_INST_0\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"FEEEFFCC"
-    )
-        port map (
-      I0 => M_AXI_GP0_AWID_FULL(0),
-      I1 => M_AXI_GP0_AWID_FULL(7),
-      I2 => M_AXI_GP0_AWID_FULL(4),
-      I3 => M_AXI_GP0_AWID_FULL(2),
-      I4 => M_AXI_GP0_AWID_FULL(11),
-      O => M_AXI_GP0_AWID(0)
-    );
-\M_AXI_GP0_AWID[1]_INST_0\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"EEFE"
-    )
-        port map (
-      I0 => M_AXI_GP0_AWID_FULL(8),
-      I1 => M_AXI_GP0_AWID_FULL(5),
-      I2 => M_AXI_GP0_AWID_FULL(3),
-      I3 => M_AXI_GP0_AWID_FULL(11),
-      O => M_AXI_GP0_AWID(1)
-    );
-\M_AXI_GP0_AWID[2]_INST_0\: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"EAAAEAAAFFFFEAAA"
-    )
-        port map (
-      I0 => M_AXI_GP0_AWID_FULL(9),
-      I1 => M_AXI_GP0_AWID_FULL(6),
-      I2 => M_AXI_GP0_AWID_FULL(3),
-      I3 => M_AXI_GP0_AWID_FULL(2),
-      I4 => M_AXI_GP0_AWID_FULL(4),
-      I5 => M_AXI_GP0_AWID_FULL(11),
-      O => M_AXI_GP0_AWID(2)
-    );
-\M_AXI_GP0_AWID[3]_INST_0\: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"C080C080C080CC8C"
-    )
-        port map (
-      I0 => M_AXI_GP0_AWID_FULL(4),
-      I1 => M_AXI_GP0_AWID_FULL(10),
-      I2 => M_AXI_GP0_AWID_FULL(11),
-      I3 => M_AXI_GP0_AWID_FULL(2),
-      I4 => M_AXI_GP0_AWID_FULL(0),
-      I5 => M_AXI_GP0_AWID_FULL(5),
-      O => M_AXI_GP0_AWID(3)
-    );
-\M_AXI_GP0_AWID[4]_INST_0\: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"EAC0EAC0EAC0EEC0"
-    )
-        port map (
-      I0 => M_AXI_GP0_AWID_FULL(3),
-      I1 => M_AXI_GP0_AWID_FULL(10),
-      I2 => M_AXI_GP0_AWID_FULL(0),
-      I3 => M_AXI_GP0_AWID_FULL(11),
-      I4 => M_AXI_GP0_AWID_FULL(2),
-      I5 => M_AXI_GP0_AWID_FULL(6),
-      O => M_AXI_GP0_AWID(4)
-    );
-\M_AXI_GP0_AWID[5]_INST_0\: unisim.vcomponents.LUT3
-    generic map(
-      INIT => X"08"
-    )
-        port map (
-      I0 => M_AXI_GP0_AWID_FULL(10),
-      I1 => M_AXI_GP0_AWID_FULL(11),
-      I2 => M_AXI_GP0_AWID_FULL(3),
-      O => M_AXI_GP0_AWID(5)
-    );
-\M_AXI_GP0_WID[0]_INST_0\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"FEEEFFCC"
-    )
-        port map (
-      I0 => M_AXI_GP0_WID_FULL(0),
-      I1 => M_AXI_GP0_WID_FULL(7),
-      I2 => M_AXI_GP0_WID_FULL(4),
-      I3 => M_AXI_GP0_WID_FULL(2),
-      I4 => M_AXI_GP0_WID_FULL(11),
-      O => M_AXI_GP0_WID(0)
-    );
-\M_AXI_GP0_WID[1]_INST_0\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"EEFE"
-    )
-        port map (
-      I0 => M_AXI_GP0_WID_FULL(8),
-      I1 => M_AXI_GP0_WID_FULL(5),
-      I2 => M_AXI_GP0_WID_FULL(3),
-      I3 => M_AXI_GP0_WID_FULL(11),
-      O => M_AXI_GP0_WID(1)
-    );
-\M_AXI_GP0_WID[2]_INST_0\: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"EAAAEAAAFFFFEAAA"
-    )
-        port map (
-      I0 => M_AXI_GP0_WID_FULL(9),
-      I1 => M_AXI_GP0_WID_FULL(6),
-      I2 => M_AXI_GP0_WID_FULL(3),
-      I3 => M_AXI_GP0_WID_FULL(2),
-      I4 => M_AXI_GP0_WID_FULL(4),
-      I5 => M_AXI_GP0_WID_FULL(11),
-      O => M_AXI_GP0_WID(2)
-    );
-\M_AXI_GP0_WID[3]_INST_0\: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"C080C080C080CC8C"
-    )
-        port map (
-      I0 => M_AXI_GP0_WID_FULL(4),
-      I1 => M_AXI_GP0_WID_FULL(10),
-      I2 => M_AXI_GP0_WID_FULL(11),
-      I3 => M_AXI_GP0_WID_FULL(2),
-      I4 => M_AXI_GP0_WID_FULL(0),
-      I5 => M_AXI_GP0_WID_FULL(5),
-      O => M_AXI_GP0_WID(3)
-    );
-\M_AXI_GP0_WID[4]_INST_0\: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"EAC0EAC0EAC0EEC0"
-    )
-        port map (
-      I0 => M_AXI_GP0_WID_FULL(3),
-      I1 => M_AXI_GP0_WID_FULL(10),
-      I2 => M_AXI_GP0_WID_FULL(0),
-      I3 => M_AXI_GP0_WID_FULL(11),
-      I4 => M_AXI_GP0_WID_FULL(2),
-      I5 => M_AXI_GP0_WID_FULL(6),
-      O => M_AXI_GP0_WID(4)
-    );
-\M_AXI_GP0_WID[5]_INST_0\: unisim.vcomponents.LUT3
-    generic map(
-      INIT => X"08"
-    )
-        port map (
-      I0 => M_AXI_GP0_WID_FULL(10),
-      I1 => M_AXI_GP0_WID_FULL(11),
-      I2 => M_AXI_GP0_WID_FULL(3),
-      O => M_AXI_GP0_WID(5)
-    );
 PS7_i: unisim.vcomponents.PS7
      port map (
       DDRA(14 downto 0) => buffered_DDR_Addr(14 downto 0),
@@ -2260,7 +2020,7 @@ PS7_i: unisim.vcomponents.PS7
       MAXIGP0ARCACHE(1) => NLW_PS7_i_MAXIGP0ARCACHE_UNCONNECTED(1),
       MAXIGP0ARCACHE(0) => \^m_axi_gp0_arcache\(0),
       MAXIGP0ARESETN => M_AXI_GP0_ARESETN,
-      MAXIGP0ARID(11 downto 0) => M_AXI_GP0_ARID_FULL(11 downto 0),
+      MAXIGP0ARID(11 downto 0) => M_AXI_GP0_ARID(11 downto 0),
       MAXIGP0ARLEN(3 downto 0) => M_AXI_GP0_ARLEN(3 downto 0),
       MAXIGP0ARLOCK(1 downto 0) => M_AXI_GP0_ARLOCK(1 downto 0),
       MAXIGP0ARPROT(2 downto 0) => M_AXI_GP0_ARPROT(2 downto 0),
@@ -2273,7 +2033,7 @@ PS7_i: unisim.vcomponents.PS7
       MAXIGP0AWCACHE(3 downto 2) => \^m_axi_gp0_awcache\(3 downto 2),
       MAXIGP0AWCACHE(1) => NLW_PS7_i_MAXIGP0AWCACHE_UNCONNECTED(1),
       MAXIGP0AWCACHE(0) => \^m_axi_gp0_awcache\(0),
-      MAXIGP0AWID(11 downto 0) => M_AXI_GP0_AWID_FULL(11 downto 0),
+      MAXIGP0AWID(11 downto 0) => M_AXI_GP0_AWID(11 downto 0),
       MAXIGP0AWLEN(3 downto 0) => M_AXI_GP0_AWLEN(3 downto 0),
       MAXIGP0AWLOCK(1 downto 0) => M_AXI_GP0_AWLOCK(1 downto 0),
       MAXIGP0AWPROT(2 downto 0) => M_AXI_GP0_AWPROT(2 downto 0),
@@ -2281,22 +2041,18 @@ PS7_i: unisim.vcomponents.PS7
       MAXIGP0AWREADY => M_AXI_GP0_AWREADY,
       MAXIGP0AWSIZE(1 downto 0) => \^m_axi_gp0_awsize\(1 downto 0),
       MAXIGP0AWVALID => M_AXI_GP0_AWVALID,
-      MAXIGP0BID(11 downto 2) => M_AXI_GP0_BID_FULL(11 downto 2),
-      MAXIGP0BID(1) => '0',
-      MAXIGP0BID(0) => M_AXI_GP0_BID_FULL(0),
+      MAXIGP0BID(11 downto 0) => M_AXI_GP0_BID(11 downto 0),
       MAXIGP0BREADY => M_AXI_GP0_BREADY,
       MAXIGP0BRESP(1 downto 0) => M_AXI_GP0_BRESP(1 downto 0),
       MAXIGP0BVALID => M_AXI_GP0_BVALID,
       MAXIGP0RDATA(31 downto 0) => M_AXI_GP0_RDATA(31 downto 0),
-      MAXIGP0RID(11 downto 2) => M_AXI_GP0_RID_FULL(11 downto 2),
-      MAXIGP0RID(1) => '0',
-      MAXIGP0RID(0) => M_AXI_GP0_RID_FULL(0),
+      MAXIGP0RID(11 downto 0) => M_AXI_GP0_RID(11 downto 0),
       MAXIGP0RLAST => M_AXI_GP0_RLAST,
       MAXIGP0RREADY => M_AXI_GP0_RREADY,
       MAXIGP0RRESP(1 downto 0) => M_AXI_GP0_RRESP(1 downto 0),
       MAXIGP0RVALID => M_AXI_GP0_RVALID,
       MAXIGP0WDATA(31 downto 0) => M_AXI_GP0_WDATA(31 downto 0),
-      MAXIGP0WID(11 downto 0) => M_AXI_GP0_WID_FULL(11 downto 0),
+      MAXIGP0WID(11 downto 0) => M_AXI_GP0_WID(11 downto 0),
       MAXIGP0WLAST => M_AXI_GP0_WLAST,
       MAXIGP0WREADY => M_AXI_GP0_WREADY,
       MAXIGP0WSTRB(3 downto 0) => M_AXI_GP0_WSTRB(3 downto 0),
@@ -2655,274 +2411,6 @@ PS7_i: unisim.vcomponents.PS7
       SAXIHP3WRISSUECAP1EN => S_AXI_HP3_WRISSUECAP1_EN,
       SAXIHP3WSTRB(7 downto 0) => S_AXI_HP3_WSTRB(7 downto 0),
       SAXIHP3WVALID => S_AXI_HP3_WVALID
-    );
-PS7_i_i_1: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"DFDFC3C3DFDFC2C3"
-    )
-        port map (
-      I0 => M_AXI_GP0_BID(2),
-      I1 => M_AXI_GP0_BID(4),
-      I2 => M_AXI_GP0_BID(3),
-      I3 => M_AXI_GP0_BID(1),
-      I4 => M_AXI_GP0_BID(5),
-      I5 => M_AXI_GP0_BID(0),
-      O => M_AXI_GP0_BID_FULL(11)
-    );
-PS7_i_i_10: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"30FC10C0"
-    )
-        port map (
-      I0 => M_AXI_GP0_BID(2),
-      I1 => M_AXI_GP0_BID(4),
-      I2 => M_AXI_GP0_BID(3),
-      I3 => M_AXI_GP0_BID(5),
-      I4 => M_AXI_GP0_BID(0),
-      O => M_AXI_GP0_BID_FULL(2)
-    );
-PS7_i_i_11: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"000000DC"
-    )
-        port map (
-      I0 => M_AXI_GP0_BID(2),
-      I1 => M_AXI_GP0_BID(4),
-      I2 => M_AXI_GP0_BID(0),
-      I3 => M_AXI_GP0_BID(5),
-      I4 => M_AXI_GP0_BID(3),
-      O => M_AXI_GP0_BID_FULL(0)
-    );
-PS7_i_i_12: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"DFDFC3C3DFDFC2C3"
-    )
-        port map (
-      I0 => M_AXI_GP0_RID(2),
-      I1 => M_AXI_GP0_RID(4),
-      I2 => M_AXI_GP0_RID(3),
-      I3 => M_AXI_GP0_RID(1),
-      I4 => M_AXI_GP0_RID(5),
-      I5 => M_AXI_GP0_RID(0),
-      O => M_AXI_GP0_RID_FULL(11)
-    );
-PS7_i_i_13: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"FFFFFFFFFFEFFFEE"
-    )
-        port map (
-      I0 => M_AXI_GP0_RID(2),
-      I1 => M_AXI_GP0_RID(3),
-      I2 => M_AXI_GP0_RID(0),
-      I3 => M_AXI_GP0_RID(5),
-      I4 => M_AXI_GP0_RID(1),
-      I5 => M_AXI_GP0_RID(4),
-      O => M_AXI_GP0_RID_FULL(10)
-    );
-PS7_i_i_14: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"A202"
-    )
-        port map (
-      I0 => M_AXI_GP0_RID(2),
-      I1 => M_AXI_GP0_RID(3),
-      I2 => M_AXI_GP0_RID(4),
-      I3 => M_AXI_GP0_RID(5),
-      O => M_AXI_GP0_RID_FULL(9)
-    );
-PS7_i_i_15: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"C400C000F420F020"
-    )
-        port map (
-      I0 => M_AXI_GP0_RID(2),
-      I1 => M_AXI_GP0_RID(4),
-      I2 => M_AXI_GP0_RID(1),
-      I3 => M_AXI_GP0_RID(5),
-      I4 => M_AXI_GP0_RID(0),
-      I5 => M_AXI_GP0_RID(3),
-      O => M_AXI_GP0_RID_FULL(8)
-    );
-PS7_i_i_16: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"CF020000"
-    )
-        port map (
-      I0 => M_AXI_GP0_RID(2),
-      I1 => M_AXI_GP0_RID(4),
-      I2 => M_AXI_GP0_RID(3),
-      I3 => M_AXI_GP0_RID(5),
-      I4 => M_AXI_GP0_RID(0),
-      O => M_AXI_GP0_RID_FULL(7)
-    );
-PS7_i_i_17: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"0832"
-    )
-        port map (
-      I0 => M_AXI_GP0_RID(2),
-      I1 => M_AXI_GP0_RID(3),
-      I2 => M_AXI_GP0_RID(5),
-      I3 => M_AXI_GP0_RID(4),
-      O => M_AXI_GP0_RID_FULL(6)
-    );
-PS7_i_i_18: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"1000C0001000C100"
-    )
-        port map (
-      I0 => M_AXI_GP0_RID(2),
-      I1 => M_AXI_GP0_RID(4),
-      I2 => M_AXI_GP0_RID(3),
-      I3 => M_AXI_GP0_RID(1),
-      I4 => M_AXI_GP0_RID(5),
-      I5 => M_AXI_GP0_RID(0),
-      O => M_AXI_GP0_RID_FULL(5)
-    );
-PS7_i_i_19: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"F0E8E028"
-    )
-        port map (
-      I0 => M_AXI_GP0_RID(2),
-      I1 => M_AXI_GP0_RID(4),
-      I2 => M_AXI_GP0_RID(3),
-      I3 => M_AXI_GP0_RID(5),
-      I4 => M_AXI_GP0_RID(0),
-      O => M_AXI_GP0_RID_FULL(4)
-    );
-PS7_i_i_2: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"FFFFFFFFFFEFFFEE"
-    )
-        port map (
-      I0 => M_AXI_GP0_BID(2),
-      I1 => M_AXI_GP0_BID(3),
-      I2 => M_AXI_GP0_BID(0),
-      I3 => M_AXI_GP0_BID(5),
-      I4 => M_AXI_GP0_BID(1),
-      I5 => M_AXI_GP0_BID(4),
-      O => M_AXI_GP0_BID_FULL(10)
-    );
-PS7_i_i_20: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"2000F4C0"
-    )
-        port map (
-      I0 => M_AXI_GP0_RID(2),
-      I1 => M_AXI_GP0_RID(4),
-      I2 => M_AXI_GP0_RID(3),
-      I3 => M_AXI_GP0_RID(1),
-      I4 => M_AXI_GP0_RID(5),
-      O => M_AXI_GP0_RID_FULL(3)
-    );
-PS7_i_i_21: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"30FC10C0"
-    )
-        port map (
-      I0 => M_AXI_GP0_RID(2),
-      I1 => M_AXI_GP0_RID(4),
-      I2 => M_AXI_GP0_RID(3),
-      I3 => M_AXI_GP0_RID(5),
-      I4 => M_AXI_GP0_RID(0),
-      O => M_AXI_GP0_RID_FULL(2)
-    );
-PS7_i_i_22: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"000000DC"
-    )
-        port map (
-      I0 => M_AXI_GP0_RID(2),
-      I1 => M_AXI_GP0_RID(4),
-      I2 => M_AXI_GP0_RID(0),
-      I3 => M_AXI_GP0_RID(5),
-      I4 => M_AXI_GP0_RID(3),
-      O => M_AXI_GP0_RID_FULL(0)
-    );
-PS7_i_i_3: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"A202"
-    )
-        port map (
-      I0 => M_AXI_GP0_BID(2),
-      I1 => M_AXI_GP0_BID(3),
-      I2 => M_AXI_GP0_BID(4),
-      I3 => M_AXI_GP0_BID(5),
-      O => M_AXI_GP0_BID_FULL(9)
-    );
-PS7_i_i_4: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"C400C000F420F020"
-    )
-        port map (
-      I0 => M_AXI_GP0_BID(2),
-      I1 => M_AXI_GP0_BID(4),
-      I2 => M_AXI_GP0_BID(1),
-      I3 => M_AXI_GP0_BID(5),
-      I4 => M_AXI_GP0_BID(0),
-      I5 => M_AXI_GP0_BID(3),
-      O => M_AXI_GP0_BID_FULL(8)
-    );
-PS7_i_i_5: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"CF020000"
-    )
-        port map (
-      I0 => M_AXI_GP0_BID(2),
-      I1 => M_AXI_GP0_BID(4),
-      I2 => M_AXI_GP0_BID(3),
-      I3 => M_AXI_GP0_BID(5),
-      I4 => M_AXI_GP0_BID(0),
-      O => M_AXI_GP0_BID_FULL(7)
-    );
-PS7_i_i_6: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"0832"
-    )
-        port map (
-      I0 => M_AXI_GP0_BID(2),
-      I1 => M_AXI_GP0_BID(3),
-      I2 => M_AXI_GP0_BID(5),
-      I3 => M_AXI_GP0_BID(4),
-      O => M_AXI_GP0_BID_FULL(6)
-    );
-PS7_i_i_7: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"1000C0001000C100"
-    )
-        port map (
-      I0 => M_AXI_GP0_BID(2),
-      I1 => M_AXI_GP0_BID(4),
-      I2 => M_AXI_GP0_BID(3),
-      I3 => M_AXI_GP0_BID(1),
-      I4 => M_AXI_GP0_BID(5),
-      I5 => M_AXI_GP0_BID(0),
-      O => M_AXI_GP0_BID_FULL(5)
-    );
-PS7_i_i_8: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"F0E8E028"
-    )
-        port map (
-      I0 => M_AXI_GP0_BID(2),
-      I1 => M_AXI_GP0_BID(4),
-      I2 => M_AXI_GP0_BID(3),
-      I3 => M_AXI_GP0_BID(5),
-      I4 => M_AXI_GP0_BID(0),
-      O => M_AXI_GP0_BID_FULL(4)
-    );
-PS7_i_i_9: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"2000F4C0"
-    )
-        port map (
-      I0 => M_AXI_GP0_BID(2),
-      I1 => M_AXI_GP0_BID(4),
-      I2 => M_AXI_GP0_BID(3),
-      I3 => M_AXI_GP0_BID(1),
-      I4 => M_AXI_GP0_BID(5),
-      O => M_AXI_GP0_BID_FULL(3)
     );
 PS_CLK_BIBUF: unisim.vcomponents.BIBUF
      port map (
@@ -3880,9 +3368,9 @@ entity design_1_processing_system7_0_0 is
     M_AXI_GP0_RREADY : out STD_LOGIC;
     M_AXI_GP0_WLAST : out STD_LOGIC;
     M_AXI_GP0_WVALID : out STD_LOGIC;
-    M_AXI_GP0_ARID : out STD_LOGIC_VECTOR ( 5 downto 0 );
-    M_AXI_GP0_AWID : out STD_LOGIC_VECTOR ( 5 downto 0 );
-    M_AXI_GP0_WID : out STD_LOGIC_VECTOR ( 5 downto 0 );
+    M_AXI_GP0_ARID : out STD_LOGIC_VECTOR ( 11 downto 0 );
+    M_AXI_GP0_AWID : out STD_LOGIC_VECTOR ( 11 downto 0 );
+    M_AXI_GP0_WID : out STD_LOGIC_VECTOR ( 11 downto 0 );
     M_AXI_GP0_ARBURST : out STD_LOGIC_VECTOR ( 1 downto 0 );
     M_AXI_GP0_ARLOCK : out STD_LOGIC_VECTOR ( 1 downto 0 );
     M_AXI_GP0_ARSIZE : out STD_LOGIC_VECTOR ( 2 downto 0 );
@@ -3908,8 +3396,8 @@ entity design_1_processing_system7_0_0 is
     M_AXI_GP0_RLAST : in STD_LOGIC;
     M_AXI_GP0_RVALID : in STD_LOGIC;
     M_AXI_GP0_WREADY : in STD_LOGIC;
-    M_AXI_GP0_BID : in STD_LOGIC_VECTOR ( 5 downto 0 );
-    M_AXI_GP0_RID : in STD_LOGIC_VECTOR ( 5 downto 0 );
+    M_AXI_GP0_BID : in STD_LOGIC_VECTOR ( 11 downto 0 );
+    M_AXI_GP0_RID : in STD_LOGIC_VECTOR ( 11 downto 0 );
     M_AXI_GP0_BRESP : in STD_LOGIC_VECTOR ( 1 downto 0 );
     M_AXI_GP0_RRESP : in STD_LOGIC_VECTOR ( 1 downto 0 );
     M_AXI_GP0_RDATA : in STD_LOGIC_VECTOR ( 31 downto 0 );
@@ -4306,11 +3794,11 @@ architecture STRUCTURE of design_1_processing_system7_0_0 is
   attribute C_MIO_PRIMITIVE : integer;
   attribute C_MIO_PRIMITIVE of inst : label is 54;
   attribute C_M_AXI_GP0_ENABLE_STATIC_REMAP : integer;
-  attribute C_M_AXI_GP0_ENABLE_STATIC_REMAP of inst : label is 1;
+  attribute C_M_AXI_GP0_ENABLE_STATIC_REMAP of inst : label is 0;
   attribute C_M_AXI_GP0_ID_WIDTH : integer;
   attribute C_M_AXI_GP0_ID_WIDTH of inst : label is 12;
   attribute C_M_AXI_GP0_THREAD_ID_WIDTH : integer;
-  attribute C_M_AXI_GP0_THREAD_ID_WIDTH of inst : label is 6;
+  attribute C_M_AXI_GP0_THREAD_ID_WIDTH of inst : label is 12;
   attribute C_M_AXI_GP1_ENABLE_STATIC_REMAP : integer;
   attribute C_M_AXI_GP1_ENABLE_STATIC_REMAP of inst : label is 0;
   attribute C_M_AXI_GP1_ID_WIDTH : integer;
@@ -4399,11 +3887,11 @@ architecture STRUCTURE of design_1_processing_system7_0_0 is
   attribute X_INTERFACE_INFO of DDR_WEB : signal is "xilinx.com:interface:ddrx:1.0 DDR WE_N";
   attribute X_INTERFACE_INFO of FCLK_CLK0 : signal is "xilinx.com:signal:clock:1.0 FCLK_CLK0 CLK";
   attribute X_INTERFACE_PARAMETER : string;
-  attribute X_INTERFACE_PARAMETER of FCLK_CLK0 : signal is "XIL_INTERFACENAME FCLK_CLK0, FREQ_HZ 5e+07, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0";
+  attribute X_INTERFACE_PARAMETER of FCLK_CLK0 : signal is "XIL_INTERFACENAME FCLK_CLK0, FREQ_HZ 100000000, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0";
   attribute X_INTERFACE_INFO of FCLK_RESET0_N : signal is "xilinx.com:signal:reset:1.0 FCLK_RESET0_N RST";
   attribute X_INTERFACE_PARAMETER of FCLK_RESET0_N : signal is "XIL_INTERFACENAME FCLK_RESET0_N, POLARITY ACTIVE_LOW, INSERT_VIP 0";
   attribute X_INTERFACE_INFO of M_AXI_GP0_ACLK : signal is "xilinx.com:signal:clock:1.0 M_AXI_GP0_ACLK CLK";
-  attribute X_INTERFACE_PARAMETER of M_AXI_GP0_ACLK : signal is "XIL_INTERFACENAME M_AXI_GP0_ACLK, ASSOCIATED_BUSIF M_AXI_GP0, FREQ_HZ 50000000, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0";
+  attribute X_INTERFACE_PARAMETER of M_AXI_GP0_ACLK : signal is "XIL_INTERFACENAME M_AXI_GP0_ACLK, ASSOCIATED_BUSIF M_AXI_GP0, FREQ_HZ 100000000, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0";
   attribute X_INTERFACE_INFO of M_AXI_GP0_ARREADY : signal is "xilinx.com:interface:aximm:1.0 M_AXI_GP0 ARREADY";
   attribute X_INTERFACE_INFO of M_AXI_GP0_ARVALID : signal is "xilinx.com:interface:aximm:1.0 M_AXI_GP0 ARVALID";
   attribute X_INTERFACE_INFO of M_AXI_GP0_AWREADY : signal is "xilinx.com:interface:aximm:1.0 M_AXI_GP0 AWREADY";
@@ -4421,7 +3909,7 @@ architecture STRUCTURE of design_1_processing_system7_0_0 is
   attribute X_INTERFACE_PARAMETER of PS_PORB : signal is "XIL_INTERFACENAME FIXED_IO, CAN_DEBUG false";
   attribute X_INTERFACE_INFO of PS_SRSTB : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_SRSTB";
   attribute X_INTERFACE_INFO of S_AXI_HP0_ACLK : signal is "xilinx.com:signal:clock:1.0 S_AXI_HP0_ACLK CLK";
-  attribute X_INTERFACE_PARAMETER of S_AXI_HP0_ACLK : signal is "XIL_INTERFACENAME S_AXI_HP0_ACLK, ASSOCIATED_BUSIF S_AXI_HP0, FREQ_HZ 50000000, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0";
+  attribute X_INTERFACE_PARAMETER of S_AXI_HP0_ACLK : signal is "XIL_INTERFACENAME S_AXI_HP0_ACLK, ASSOCIATED_BUSIF S_AXI_HP0, FREQ_HZ 100000000, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0";
   attribute X_INTERFACE_INFO of S_AXI_HP0_ARREADY : signal is "xilinx.com:interface:aximm:1.0 S_AXI_HP0 ARREADY";
   attribute X_INTERFACE_INFO of S_AXI_HP0_ARVALID : signal is "xilinx.com:interface:aximm:1.0 S_AXI_HP0 ARVALID";
   attribute X_INTERFACE_INFO of S_AXI_HP0_AWREADY : signal is "xilinx.com:interface:aximm:1.0 S_AXI_HP0 AWREADY";
@@ -4467,7 +3955,7 @@ architecture STRUCTURE of design_1_processing_system7_0_0 is
   attribute X_INTERFACE_INFO of M_AXI_GP0_BID : signal is "xilinx.com:interface:aximm:1.0 M_AXI_GP0 BID";
   attribute X_INTERFACE_INFO of M_AXI_GP0_BRESP : signal is "xilinx.com:interface:aximm:1.0 M_AXI_GP0 BRESP";
   attribute X_INTERFACE_INFO of M_AXI_GP0_RDATA : signal is "xilinx.com:interface:aximm:1.0 M_AXI_GP0 RDATA";
-  attribute X_INTERFACE_PARAMETER of M_AXI_GP0_RDATA : signal is "XIL_INTERFACENAME M_AXI_GP0, SUPPORTS_NARROW_BURST 0, NUM_WRITE_OUTSTANDING 8, NUM_READ_OUTSTANDING 8, DATA_WIDTH 32, PROTOCOL AXI3, FREQ_HZ 50000000, ID_WIDTH 6, ADDR_WIDTH 32, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 1, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 1, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, MAX_BURST_LENGTH 16, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, NUM_READ_THREADS 4, NUM_WRITE_THREADS 4, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0";
+  attribute X_INTERFACE_PARAMETER of M_AXI_GP0_RDATA : signal is "XIL_INTERFACENAME M_AXI_GP0, SUPPORTS_NARROW_BURST 0, NUM_WRITE_OUTSTANDING 8, NUM_READ_OUTSTANDING 8, DATA_WIDTH 32, PROTOCOL AXI3, FREQ_HZ 100000000, ID_WIDTH 12, ADDR_WIDTH 32, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 1, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 1, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, MAX_BURST_LENGTH 16, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, NUM_READ_THREADS 4, NUM_WRITE_THREADS 4, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0";
   attribute X_INTERFACE_INFO of M_AXI_GP0_RID : signal is "xilinx.com:interface:aximm:1.0 M_AXI_GP0 RID";
   attribute X_INTERFACE_INFO of M_AXI_GP0_RRESP : signal is "xilinx.com:interface:aximm:1.0 M_AXI_GP0 RRESP";
   attribute X_INTERFACE_INFO of M_AXI_GP0_WDATA : signal is "xilinx.com:interface:aximm:1.0 M_AXI_GP0 WDATA";
@@ -4503,7 +3991,7 @@ architecture STRUCTURE of design_1_processing_system7_0_0 is
   attribute X_INTERFACE_INFO of S_AXI_HP0_WDATA : signal is "xilinx.com:interface:aximm:1.0 S_AXI_HP0 WDATA";
   attribute X_INTERFACE_INFO of S_AXI_HP0_WID : signal is "xilinx.com:interface:aximm:1.0 S_AXI_HP0 WID";
   attribute X_INTERFACE_INFO of S_AXI_HP0_WSTRB : signal is "xilinx.com:interface:aximm:1.0 S_AXI_HP0 WSTRB";
-  attribute X_INTERFACE_PARAMETER of S_AXI_HP0_WSTRB : signal is "XIL_INTERFACENAME S_AXI_HP0, NUM_WRITE_OUTSTANDING 8, NUM_READ_OUTSTANDING 8, DATA_WIDTH 64, PROTOCOL AXI3, FREQ_HZ 50000000, ID_WIDTH 6, ADDR_WIDTH 32, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 1, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 1, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, MAX_BURST_LENGTH 8, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0";
+  attribute X_INTERFACE_PARAMETER of S_AXI_HP0_WSTRB : signal is "XIL_INTERFACENAME S_AXI_HP0, NUM_WRITE_OUTSTANDING 8, NUM_READ_OUTSTANDING 8, DATA_WIDTH 64, PROTOCOL AXI3, FREQ_HZ 100000000, ID_WIDTH 6, ADDR_WIDTH 32, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 1, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 1, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, MAX_BURST_LENGTH 16, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0";
   attribute X_INTERFACE_INFO of USB0_PORT_INDCTL : signal is "xilinx.com:display_processing_system7:usbctrl:1.0 USBIND_0 PORT_INDCTL";
 begin
 inst: entity work.design_1_processing_system7_0_0_processing_system7_v5_5_processing_system7
@@ -4710,7 +4198,7 @@ inst: entity work.design_1_processing_system7_0_0_processing_system7_v5_5_proces
       M_AXI_GP0_ARBURST(1 downto 0) => M_AXI_GP0_ARBURST(1 downto 0),
       M_AXI_GP0_ARCACHE(3 downto 0) => M_AXI_GP0_ARCACHE(3 downto 0),
       M_AXI_GP0_ARESETN => NLW_inst_M_AXI_GP0_ARESETN_UNCONNECTED,
-      M_AXI_GP0_ARID(5 downto 0) => M_AXI_GP0_ARID(5 downto 0),
+      M_AXI_GP0_ARID(11 downto 0) => M_AXI_GP0_ARID(11 downto 0),
       M_AXI_GP0_ARLEN(3 downto 0) => M_AXI_GP0_ARLEN(3 downto 0),
       M_AXI_GP0_ARLOCK(1 downto 0) => M_AXI_GP0_ARLOCK(1 downto 0),
       M_AXI_GP0_ARPROT(2 downto 0) => M_AXI_GP0_ARPROT(2 downto 0),
@@ -4721,7 +4209,7 @@ inst: entity work.design_1_processing_system7_0_0_processing_system7_v5_5_proces
       M_AXI_GP0_AWADDR(31 downto 0) => M_AXI_GP0_AWADDR(31 downto 0),
       M_AXI_GP0_AWBURST(1 downto 0) => M_AXI_GP0_AWBURST(1 downto 0),
       M_AXI_GP0_AWCACHE(3 downto 0) => M_AXI_GP0_AWCACHE(3 downto 0),
-      M_AXI_GP0_AWID(5 downto 0) => M_AXI_GP0_AWID(5 downto 0),
+      M_AXI_GP0_AWID(11 downto 0) => M_AXI_GP0_AWID(11 downto 0),
       M_AXI_GP0_AWLEN(3 downto 0) => M_AXI_GP0_AWLEN(3 downto 0),
       M_AXI_GP0_AWLOCK(1 downto 0) => M_AXI_GP0_AWLOCK(1 downto 0),
       M_AXI_GP0_AWPROT(2 downto 0) => M_AXI_GP0_AWPROT(2 downto 0),
@@ -4729,18 +4217,18 @@ inst: entity work.design_1_processing_system7_0_0_processing_system7_v5_5_proces
       M_AXI_GP0_AWREADY => M_AXI_GP0_AWREADY,
       M_AXI_GP0_AWSIZE(2 downto 0) => M_AXI_GP0_AWSIZE(2 downto 0),
       M_AXI_GP0_AWVALID => M_AXI_GP0_AWVALID,
-      M_AXI_GP0_BID(5 downto 0) => M_AXI_GP0_BID(5 downto 0),
+      M_AXI_GP0_BID(11 downto 0) => M_AXI_GP0_BID(11 downto 0),
       M_AXI_GP0_BREADY => M_AXI_GP0_BREADY,
       M_AXI_GP0_BRESP(1 downto 0) => M_AXI_GP0_BRESP(1 downto 0),
       M_AXI_GP0_BVALID => M_AXI_GP0_BVALID,
       M_AXI_GP0_RDATA(31 downto 0) => M_AXI_GP0_RDATA(31 downto 0),
-      M_AXI_GP0_RID(5 downto 0) => M_AXI_GP0_RID(5 downto 0),
+      M_AXI_GP0_RID(11 downto 0) => M_AXI_GP0_RID(11 downto 0),
       M_AXI_GP0_RLAST => M_AXI_GP0_RLAST,
       M_AXI_GP0_RREADY => M_AXI_GP0_RREADY,
       M_AXI_GP0_RRESP(1 downto 0) => M_AXI_GP0_RRESP(1 downto 0),
       M_AXI_GP0_RVALID => M_AXI_GP0_RVALID,
       M_AXI_GP0_WDATA(31 downto 0) => M_AXI_GP0_WDATA(31 downto 0),
-      M_AXI_GP0_WID(5 downto 0) => M_AXI_GP0_WID(5 downto 0),
+      M_AXI_GP0_WID(11 downto 0) => M_AXI_GP0_WID(11 downto 0),
       M_AXI_GP0_WLAST => M_AXI_GP0_WLAST,
       M_AXI_GP0_WREADY => M_AXI_GP0_WREADY,
       M_AXI_GP0_WSTRB(3 downto 0) => M_AXI_GP0_WSTRB(3 downto 0),

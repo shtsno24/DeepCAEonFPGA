@@ -2,26 +2,22 @@
 # Vivado v2018.3.1 (64-bit)
 # SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
 # IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
-# Start of session at: Wed Dec 25 20:59:32 2019
-# Process ID: 2663
+# Start of session at: Wed Dec 25 22:23:16 2019
+# Process ID: 13309
 # Current directory: /home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/design_1_axi_dma_0_0_synth_1
 # Command line: vivado -log design_1_axi_dma_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_axi_dma_0_0.tcl
 # Log file: /home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/design_1_axi_dma_0_0_synth_1/design_1_axi_dma_0_0.vds
 # Journal file: /home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/design_1_axi_dma_0_0_synth_1/vivado.jou
 #-----------------------------------------------------------
 source design_1_axi_dma_0_0.tcl -notrace
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/masudalab/DeepCAEonFPGA/ip_generated/xilinx_com_hls_network_1_0'.
-INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/masudalab/DeepCAEonFPGA/pynq/ip'.
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2018.3/data/ip'.
 Command: synth_design -top design_1_axi_dma_0_0 -part xc7z020clg400-1 -mode out_of_context
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 2679 
+INFO: Helper process launched with PID 13376 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 1455.027 ; gain = 68.883 ; free physical = 4581 ; free virtual = 11519
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 1452.332 ; gain = 87.883 ; free physical = 5057 ; free virtual = 12424
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'design_1_axi_dma_0_0' [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/synth/design_1_axi_dma_0_0.vhd:128]
 	Parameter C_S_AXI_LITE_ADDR_WIDTH bound to: 10 - type: integer 
@@ -49,7 +45,7 @@ INFO: [Synth 8-638] synthesizing module 'design_1_axi_dma_0_0' [/home/masudalab/
 	Parameter C_INCLUDE_MM2S_DRE bound to: 0 - type: integer 
 	Parameter C_INCLUDE_S2MM bound to: 1 - type: integer 
 	Parameter C_INCLUDE_S2MM_SF bound to: 1 - type: integer 
-	Parameter C_S2MM_BURST_SIZE bound to: 8 - type: integer 
+	Parameter C_S2MM_BURST_SIZE bound to: 16 - type: integer 
 	Parameter C_M_AXI_S2MM_ADDR_WIDTH bound to: 64 - type: integer 
 	Parameter C_M_AXI_S2MM_DATA_WIDTH bound to: 64 - type: integer 
 	Parameter C_S_AXIS_S2MM_TDATA_WIDTH bound to: 16 - type: integer 
@@ -80,7 +76,7 @@ INFO: [Synth 8-638] synthesizing module 'axi_dma' [/home/masudalab/DeepCAEonFPGA
 	Parameter C_INCLUDE_S2MM bound to: 1 - type: integer 
 	Parameter C_INCLUDE_S2MM_SF bound to: 1 - type: integer 
 	Parameter C_INCLUDE_S2MM_DRE bound to: 0 - type: integer 
-	Parameter C_S2MM_BURST_SIZE bound to: 8 - type: integer 
+	Parameter C_S2MM_BURST_SIZE bound to: 16 - type: integer 
 	Parameter C_M_AXI_S2MM_ADDR_WIDTH bound to: 64 - type: integer 
 	Parameter C_M_AXI_S2MM_DATA_WIDTH bound to: 64 - type: integer 
 	Parameter C_S_AXIS_S2MM_TDATA_WIDTH bound to: 16 - type: integer 
@@ -293,7 +289,7 @@ INFO: [Synth 8-638] synthesizing module 'axi_datamover' [/home/masudalab/DeepCAE
 	Parameter C_S2MM_STSCMD_FIFO_DEPTH bound to: 1 - type: integer 
 	Parameter C_S2MM_STSCMD_IS_ASYNC bound to: 0 - type: integer 
 	Parameter C_INCLUDE_S2MM_DRE bound to: 0 - type: integer 
-	Parameter C_S2MM_BURST_SIZE bound to: 8 - type: integer 
+	Parameter C_S2MM_BURST_SIZE bound to: 16 - type: integer 
 	Parameter C_S2MM_BTT_USED bound to: 26 - type: integer 
 	Parameter C_S2MM_SUPPORT_INDET_BTT bound to: 1 - type: integer 
 	Parameter C_S2MM_ADDR_PIPE_DEPTH bound to: 4 - type: integer 
@@ -874,7 +870,7 @@ INFO: [Synth 8-638] synthesizing module 'axi_datamover_s2mm_full_wrap' [/home/ma
 	Parameter C_S2MM_STSCMD_FIFO_DEPTH bound to: 1 - type: integer 
 	Parameter C_S2MM_STSCMD_IS_ASYNC bound to: 0 - type: integer 
 	Parameter C_INCLUDE_S2MM_DRE bound to: 0 - type: integer 
-	Parameter C_S2MM_BURST_SIZE bound to: 8 - type: integer 
+	Parameter C_S2MM_BURST_SIZE bound to: 16 - type: integer 
 	Parameter C_S2MM_BTT_USED bound to: 26 - type: integer 
 	Parameter C_S2MM_SUPPORT_INDET_BTT bound to: 1 - type: integer 
 	Parameter C_S2MM_ADDR_PIPE_DEPTH bound to: 4 - type: integer 
@@ -961,12 +957,12 @@ INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f__parameterized3' (39#1)
 INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized6' (39#1) [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ipshared/dfb3/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
 INFO: [Synth 8-256] done synthesizing module 'axi_datamover_wr_status_cntl' (40#1) [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ipshared/dfb3/hdl/axi_datamover_v5_1_vh_rfs.vhd:17704]
 INFO: [Synth 8-638] synthesizing module 'axi_datamover_ibttcc' [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ipshared/dfb3/hdl/axi_datamover_v5_1_vh_rfs.vhd:25731]
-	Parameter C_SF_XFER_BYTES_WIDTH bound to: 7 - type: integer 
+	Parameter C_SF_XFER_BYTES_WIDTH bound to: 8 - type: integer 
 	Parameter C_DRE_ALIGN_WIDTH bound to: 1 - type: integer 
 	Parameter C_SEL_ADDR_WIDTH bound to: 3 - type: integer 
 	Parameter C_ADDR_WIDTH bound to: 64 - type: integer 
 	Parameter C_STREAM_DWIDTH bound to: 16 - type: integer 
-	Parameter C_MAX_BURST_LEN bound to: 8 - type: integer 
+	Parameter C_MAX_BURST_LEN bound to: 16 - type: integer 
 	Parameter C_CMD_WIDTH bound to: 103 - type: integer 
 	Parameter C_TAG_WIDTH bound to: 4 - type: integer 
 	Parameter C_BTT_USED bound to: 26 - type: integer 
@@ -1059,9 +1055,9 @@ WARNING: [Synth 8-6014] Unused sequential element sig_sm_ld_scatter_cmd_reg was 
 INFO: [Synth 8-256] done synthesizing module 'axi_datamover_s2mm_realign' (46#1) [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ipshared/dfb3/hdl/axi_datamover_v5_1_vh_rfs.vhd:47011]
 INFO: [Synth 8-638] synthesizing module 'axi_datamover_indet_btt' [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ipshared/dfb3/hdl/axi_datamover_v5_1_vh_rfs.vhd:28430]
 	Parameter C_SF_FIFO_DEPTH bound to: 128 - type: integer 
-	Parameter C_IBTT_XFER_BYTES_WIDTH bound to: 7 - type: integer 
+	Parameter C_IBTT_XFER_BYTES_WIDTH bound to: 8 - type: integer 
 	Parameter C_STRT_OFFSET_WIDTH bound to: 2 - type: integer 
-	Parameter C_MAX_BURST_LEN bound to: 8 - type: integer 
+	Parameter C_MAX_BURST_LEN bound to: 16 - type: integer 
 	Parameter C_MMAP_DWIDTH bound to: 64 - type: integer 
 	Parameter C_STREAM_DWIDTH bound to: 16 - type: integer 
 	Parameter C_ENABLE_SKID_BUF bound to: 11111 - type: string 
@@ -1072,7 +1068,7 @@ INFO: [Synth 8-638] synthesizing module 'axi_datamover_stbs_set' [/home/masudala
 	Parameter C_STROBE_WIDTH bound to: 2 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'axi_datamover_stbs_set' (47#1) [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ipshared/dfb3/hdl/axi_datamover_v5_1_vh_rfs.vhd:23410]
 INFO: [Synth 8-638] synthesizing module 'axi_datamover_sfifo_autord__parameterized0' [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ipshared/dfb3/hdl/axi_datamover_v5_1_vh_rfs.vhd:1295]
-	Parameter C_DWIDTH bound to: 9 - type: integer 
+	Parameter C_DWIDTH bound to: 10 - type: integer 
 	Parameter C_DEPTH bound to: 16 - type: integer 
 	Parameter C_DATA_CNT_WIDTH bound to: 5 - type: integer 
 	Parameter C_NEED_ALMOST_EMPTY bound to: 0 - type: integer 
@@ -1093,25 +1089,25 @@ INFO: [Synth 8-638] synthesizing module 'sync_fifo_fg__parameterized0' [/home/ma
 	Parameter C_PORTS_DIFFER bound to: 0 - type: integer 
 	Parameter C_RD_ACK_LOW bound to: 0 - type: integer 
 	Parameter C_USE_EMBEDDED_REG bound to: 0 - type: integer 
-	Parameter C_READ_DATA_WIDTH bound to: 9 - type: integer 
+	Parameter C_READ_DATA_WIDTH bound to: 10 - type: integer 
 	Parameter C_READ_DEPTH bound to: 16 - type: integer 
 	Parameter C_RD_ERR_LOW bound to: 0 - type: integer 
 	Parameter C_WR_ACK_LOW bound to: 0 - type: integer 
 	Parameter C_WR_ERR_LOW bound to: 0 - type: integer 
 	Parameter C_PRELOAD_REGS bound to: 1 - type: integer 
 	Parameter C_PRELOAD_LATENCY bound to: 0 - type: integer 
-	Parameter C_WRITE_DATA_WIDTH bound to: 9 - type: integer 
+	Parameter C_WRITE_DATA_WIDTH bound to: 10 - type: integer 
 	Parameter C_WRITE_DEPTH bound to: 16 - type: integer 
 	Parameter C_SYNCHRONIZER_STAGE bound to: 2 - type: integer 
 	Parameter C_XPM_FIFO bound to: 1 - type: integer 
 	Parameter FIFO_MEMORY_TYPE bound to: auto - type: string 
 	Parameter FIFO_WRITE_DEPTH bound to: 16 - type: integer 
-	Parameter WRITE_DATA_WIDTH bound to: 9 - type: integer 
+	Parameter WRITE_DATA_WIDTH bound to: 10 - type: integer 
 	Parameter READ_MODE bound to: fwft - type: string 
 	Parameter FIFO_READ_LATENCY bound to: 0 - type: integer 
 	Parameter FULL_RESET_VALUE bound to: 1 - type: integer 
 	Parameter USE_ADV_FEATURES bound to: 1F1F - type: string 
-	Parameter READ_DATA_WIDTH bound to: 9 - type: integer 
+	Parameter READ_DATA_WIDTH bound to: 10 - type: integer 
 	Parameter WR_DATA_COUNT_WIDTH bound to: 5 - type: integer 
 	Parameter PROG_FULL_THRESH bound to: 10 - type: integer 
 	Parameter RD_DATA_COUNT_WIDTH bound to: 4 - type: integer 
@@ -1124,14 +1120,14 @@ INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_sync__parameterized1' [/tools
 	Parameter FIFO_MEMORY_TYPE bound to: auto - type: string 
 	Parameter ECC_MODE bound to: no_ecc - type: string 
 	Parameter FIFO_WRITE_DEPTH bound to: 16 - type: integer 
-	Parameter WRITE_DATA_WIDTH bound to: 9 - type: integer 
+	Parameter WRITE_DATA_WIDTH bound to: 10 - type: integer 
 	Parameter WR_DATA_COUNT_WIDTH bound to: 5 - type: integer 
 	Parameter PROG_FULL_THRESH bound to: 10 - type: integer 
 	Parameter FULL_RESET_VALUE bound to: 1 - type: integer 
 	Parameter USE_ADV_FEATURES bound to: 1F1F - type: string 
 	Parameter READ_MODE bound to: fwft - type: string 
 	Parameter FIFO_READ_LATENCY bound to: 0 - type: integer 
-	Parameter READ_DATA_WIDTH bound to: 9 - type: integer 
+	Parameter READ_DATA_WIDTH bound to: 10 - type: integer 
 	Parameter RD_DATA_COUNT_WIDTH bound to: 4 - type: integer 
 	Parameter PROG_EMPTY_THRESH bound to: 10 - type: integer 
 	Parameter DOUT_RESET_VALUE bound to: 0 - type: string 
@@ -1148,13 +1144,13 @@ INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_base__parameterized0' [/tools
 	Parameter FIFO_MEMORY_TYPE bound to: 0 - type: integer 
 	Parameter ECC_MODE bound to: 0 - type: integer 
 	Parameter FIFO_WRITE_DEPTH bound to: 16 - type: integer 
-	Parameter WRITE_DATA_WIDTH bound to: 9 - type: integer 
+	Parameter WRITE_DATA_WIDTH bound to: 10 - type: integer 
 	Parameter WR_DATA_COUNT_WIDTH bound to: 5 - type: integer 
 	Parameter PROG_FULL_THRESH bound to: 10 - type: integer 
 	Parameter USE_ADV_FEATURES bound to: 1F1F - type: string 
 	Parameter READ_MODE bound to: 1 - type: integer 
 	Parameter FIFO_READ_LATENCY bound to: 0 - type: integer 
-	Parameter READ_DATA_WIDTH bound to: 9 - type: integer 
+	Parameter READ_DATA_WIDTH bound to: 10 - type: integer 
 	Parameter RD_DATA_COUNT_WIDTH bound to: 4 - type: integer 
 	Parameter PROG_EMPTY_THRESH bound to: 10 - type: integer 
 	Parameter DOUT_RESET_VALUE bound to: 0 - type: string 
@@ -1172,7 +1168,7 @@ INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_base__parameterized0' [/tools
 	Parameter RD_MODE bound to: 1 - type: integer 
 	Parameter ENABLE_ECC bound to: 0 - type: integer 
 	Parameter FIFO_READ_DEPTH bound to: 16 - type: integer 
-	Parameter FIFO_SIZE bound to: 144 - type: integer 
+	Parameter FIFO_SIZE bound to: 160 - type: integer 
 	Parameter WR_WIDTH_LOG bound to: 4 - type: integer 
 	Parameter WR_DEPTH_LOG bound to: 4 - type: integer 
 	Parameter WR_PNTR_WIDTH bound to: 4 - type: integer 
@@ -1211,7 +1207,7 @@ INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized5' [/to
 INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized5' (47#1) [/tools/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1733]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized0' [/tools/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
 	Parameter MEMORY_TYPE bound to: 1 - type: integer 
-	Parameter MEMORY_SIZE bound to: 144 - type: integer 
+	Parameter MEMORY_SIZE bound to: 160 - type: integer 
 	Parameter MEMORY_PRIMITIVE bound to: 0 - type: integer 
 	Parameter CLOCKING_MODE bound to: 0 - type: integer 
 	Parameter ECC_MODE bound to: 0 - type: integer 
@@ -1224,32 +1220,32 @@ INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized0' [/too
 	Parameter MESSAGE_CONTROL bound to: 0 - type: integer 
 	Parameter VERSION bound to: 0 - type: integer 
 	Parameter USE_EMBEDDED_CONSTRAINT bound to: 0 - type: integer 
-	Parameter WRITE_DATA_WIDTH_A bound to: 9 - type: integer 
-	Parameter READ_DATA_WIDTH_A bound to: 9 - type: integer 
-	Parameter BYTE_WRITE_WIDTH_A bound to: 9 - type: integer 
+	Parameter WRITE_DATA_WIDTH_A bound to: 10 - type: integer 
+	Parameter READ_DATA_WIDTH_A bound to: 10 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_A bound to: 10 - type: integer 
 	Parameter ADDR_WIDTH_A bound to: 4 - type: integer 
 	Parameter READ_RESET_VALUE_A bound to: 0 - type: string 
 	Parameter READ_LATENCY_A bound to: 2 - type: integer 
 	Parameter WRITE_MODE_A bound to: 2 - type: integer 
 	Parameter RST_MODE_A bound to: SYNC - type: string 
-	Parameter WRITE_DATA_WIDTH_B bound to: 9 - type: integer 
-	Parameter READ_DATA_WIDTH_B bound to: 9 - type: integer 
-	Parameter BYTE_WRITE_WIDTH_B bound to: 9 - type: integer 
+	Parameter WRITE_DATA_WIDTH_B bound to: 10 - type: integer 
+	Parameter READ_DATA_WIDTH_B bound to: 10 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_B bound to: 10 - type: integer 
 	Parameter ADDR_WIDTH_B bound to: 4 - type: integer 
 	Parameter READ_RESET_VALUE_B bound to: 0 - type: string 
 	Parameter READ_LATENCY_B bound to: 2 - type: integer 
 	Parameter WRITE_MODE_B bound to: 2 - type: integer 
 	Parameter RST_MODE_B bound to: SYNC - type: string 
 	Parameter P_MEMORY_PRIMITIVE bound to: auto - type: string 
-	Parameter P_MIN_WIDTH_DATA_A bound to: 9 - type: integer 
-	Parameter P_MIN_WIDTH_DATA_B bound to: 9 - type: integer 
-	Parameter P_MIN_WIDTH_DATA bound to: 9 - type: integer 
-	Parameter P_MIN_WIDTH_DATA_ECC bound to: 9 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_A bound to: 10 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_B bound to: 10 - type: integer 
+	Parameter P_MIN_WIDTH_DATA bound to: 10 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_ECC bound to: 10 - type: integer 
 	Parameter P_MAX_DEPTH_DATA bound to: 16 - type: integer 
 	Parameter P_ECC_MODE bound to: no_ecc - type: string 
 	Parameter P_MEMORY_OPT bound to: yes - type: string 
-	Parameter P_WIDTH_COL_WRITE_A bound to: 9 - type: integer 
-	Parameter P_WIDTH_COL_WRITE_B bound to: 9 - type: integer 
+	Parameter P_WIDTH_COL_WRITE_A bound to: 10 - type: integer 
+	Parameter P_WIDTH_COL_WRITE_B bound to: 10 - type: integer 
 	Parameter P_NUM_COLS_WRITE_A bound to: 1 - type: integer 
 	Parameter P_NUM_COLS_WRITE_B bound to: 1 - type: integer 
 	Parameter P_NUM_ROWS_WRITE_A bound to: 1 - type: integer 
@@ -1269,7 +1265,7 @@ INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized0' [/too
 	Parameter P_SDP_WRITE_MODE bound to: yes - type: string 
 	Parameter NUM_CHAR_LOC bound to: 0 - type: integer 
 	Parameter MAX_NUM_CHAR bound to: 0 - type: integer 
-	Parameter P_MIN_WIDTH_DATA_SHFT bound to: 9 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_SHFT bound to: 10 - type: integer 
 	Parameter P_MIN_WIDTH_DATA_LDW bound to: 4 - type: integer 
 INFO: [Synth 8-6059] Synth Info: [XPM_MEMORY 20-1] MEMORY_PRIMITIVE (0) instructs Vivado Synthesis to choose the memory primitive type. Depending on their values, other XPM_MEMORY parameters may preclude the choice of certain memory primitive types. Review XPM_MEMORY documentation and parameter values to understand any limitations, or set MEMORY_PRIMITIVE to a different value.   [/tools/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:518]
 WARNING: [Synth 8-6014] Unused sequential element gen_rd_b.gen_doutb_pipe.enb_pipe_reg[0] was removed.  [/tools/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:2935]
@@ -1704,7 +1700,7 @@ WARNING: [Synth 8-3331] design axi_dma_s2mm_mngr has unconnected port m_axis_s2m
 WARNING: [Synth 8-3331] design axi_dma_s2mm_mngr has unconnected port m_axis_s2mm_ftch_tdata_new[118]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:01:31 ; elapsed = 00:01:42 . Memory (MB): peak = 1646.777 ; gain = 260.633 ; free physical = 4549 ; free virtual = 11489
+Finished RTL Elaboration : Time (s): cpu = 00:01:40 ; elapsed = 00:01:53 . Memory (MB): peak = 1644.082 ; gain = 279.633 ; free physical = 5009 ; free virtual = 12446
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1717,10 +1713,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:32 ; elapsed = 00:01:43 . Memory (MB): peak = 1646.777 ; gain = 260.633 ; free physical = 4561 ; free virtual = 11502
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:41 ; elapsed = 00:01:54 . Memory (MB): peak = 1644.082 ; gain = 279.633 ; free physical = 5022 ; free virtual = 12459
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:32 ; elapsed = 00:01:43 . Memory (MB): peak = 1646.777 ; gain = 260.633 ; free physical = 4561 ; free virtual = 11502
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:41 ; elapsed = 00:01:54 . Memory (MB): peak = 1644.082 ; gain = 279.633 ; free physical = 5022 ; free virtual = 12459
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 12 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -1746,27 +1742,27 @@ Sourcing Tcl File [/tools/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_fifo/tcl/xpm_fifo
 Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst'
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/tools/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_axi_dma_0_0_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_axi_dma_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 1897.832 ; gain = 0.000 ; free physical = 4264 ; free virtual = 11204
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 1894.613 ; gain = 0.000 ; free physical = 5602 ; free virtual = 12987
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1897.832 ; gain = 0.000 ; free physical = 4264 ; free virtual = 11204
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1894.613 ; gain = 0.000 ; free physical = 5602 ; free virtual = 12987
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 12 instances were transformed.
   FDR => FDRE: 12 instances
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1897.832 ; gain = 0.000 ; free physical = 4264 ; free virtual = 11204
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.05 . Memory (MB): peak = 1897.832 ; gain = 0.000 ; free physical = 4263 ; free virtual = 11204
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1894.613 ; gain = 0.000 ; free physical = 5602 ; free virtual = 12987
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.04 . Memory (MB): peak = 1894.613 ; gain = 0.000 ; free physical = 5602 ; free virtual = 12987
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:01:39 ; elapsed = 00:01:51 . Memory (MB): peak = 1897.832 ; gain = 511.688 ; free physical = 4366 ; free virtual = 11307
+Finished Constraint Validation : Time (s): cpu = 00:01:48 ; elapsed = 00:02:02 . Memory (MB): peak = 1894.613 ; gain = 530.164 ; free physical = 5702 ; free virtual = 13088
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:01:39 ; elapsed = 00:01:51 . Memory (MB): peak = 1897.832 ; gain = 511.688 ; free physical = 4366 ; free virtual = 11307
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:48 ; elapsed = 00:02:02 . Memory (MB): peak = 1894.613 ; gain = 530.164 ; free physical = 5702 ; free virtual = 13088
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -1776,7 +1772,7 @@ Applied set_property DONT_TOUCH = true for U0/I_PRMRY_DATAMOVER/\GEN_MM2S_FULL.I
 Applied set_property DONT_TOUCH = true for U0/I_PRMRY_DATAMOVER/\GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER /\GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT /I_DATA_FIFO/\BLK_MEM.I_SYNC_FIFOGEN_FIFO /\xpm_fifo_instance.xpm_fifo_sync_inst . (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for U0/I_PRMRY_DATAMOVER/\GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER /\GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT /I_XD_FIFO/\NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO /\xpm_fifo_instance.xpm_fifo_sync_inst . (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:39 ; elapsed = 00:01:51 . Memory (MB): peak = 1897.832 ; gain = 511.688 ; free physical = 4368 ; free virtual = 11309
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:49 ; elapsed = 00:02:02 . Memory (MB): peak = 1894.613 ; gain = 530.164 ; free physical = 5704 ; free virtual = 13089
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-4471] merging register 'GEN_SYNC_WRITE.rst_wvalid_re_reg' into 'GEN_SYNC_WRITE.bvalid_i_reg' [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ipshared/09b0/hdl/axi_dma_v7_1_vh_rfs.vhd:2193]
 INFO: [Synth 8-4471] merging register 'GEN_SYNC_READ.rst_rvalid_re_reg' into 'GEN_SYNC_READ.s_axi_lite_rvalid_i_reg' [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ipshared/09b0/hdl/axi_dma_v7_1_vh_rfs.vhd:2964]
@@ -1931,7 +1927,7 @@ INFO: [Synth 8-5544] ROM "next_fwft_state" won't be mapped to Block RAM because 
 INFO: [Synth 8-5544] ROM "next_fwft_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "lsig_num_set" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5546] ROM "lvar_num_set" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5544] ROM "sig_dbc_max" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sig_dbc_max" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "lsig_offset_cntr_eq_max" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-4471] merging register 'GEN_NO_HOLD_DATA.mm2s_cmnd_pending_reg' into 'GEN_NO_HOLD_DATA.s_axis_mm2s_cmd_tvalid_reg' [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ipshared/09b0/hdl/axi_dma_v7_1_vh_rfs.vhd:13751]
 INFO: [Synth 8-802] inferred FSM for state register 'smpl_cs_reg' in module 'axi_dma_smple_sm'
@@ -2023,7 +2019,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'gen_fwft.curr_fwft_state_r
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'smpl_cs_reg' using encoding 'sequential' in module 'axi_dma_smple_sm'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:43 ; elapsed = 00:01:55 . Memory (MB): peak = 1897.832 ; gain = 511.688 ; free physical = 4353 ; free virtual = 11295
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:52 ; elapsed = 00:02:06 . Memory (MB): peak = 1894.613 ; gain = 530.164 ; free physical = 5694 ; free virtual = 13081
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -2038,9 +2034,9 @@ Detailed RTL Component Info :
 +---Adders : 
 	   3 Input     26 Bit       Adders := 1     
 	   2 Input     16 Bit       Adders := 3     
-	   2 Input      8 Bit       Adders := 6     
+	   2 Input      8 Bit       Adders := 9     
 	   4 Input      8 Bit       Adders := 8     
-	   2 Input      7 Bit       Adders := 4     
+	   2 Input      7 Bit       Adders := 1     
 	   4 Input      7 Bit       Adders := 10    
 	   3 Input      7 Bit       Adders := 2     
 	   2 Input      6 Bit       Adders := 2     
@@ -2048,9 +2044,9 @@ Detailed RTL Component Info :
 	   3 Input      5 Bit       Adders := 1     
 	   4 Input      5 Bit       Adders := 4     
 	   3 Input      4 Bit       Adders := 5     
-	   2 Input      4 Bit       Adders := 4     
+	   2 Input      4 Bit       Adders := 5     
 	   4 Input      4 Bit       Adders := 5     
-	   2 Input      3 Bit       Adders := 5     
+	   2 Input      3 Bit       Adders := 4     
 	   3 Input      3 Bit       Adders := 6     
 	   4 Input      2 Bit       Adders := 3     
 	   2 Input      2 Bit       Adders := 5     
@@ -2068,19 +2064,19 @@ Detailed RTL Component Info :
 	               26 Bit    Registers := 12    
 	               23 Bit    Registers := 2     
 	               16 Bit    Registers := 16    
-	               10 Bit    Registers := 3     
-	                9 Bit    Registers := 5     
-	                8 Bit    Registers := 24    
-	                7 Bit    Registers := 13    
+	               10 Bit    Registers := 5     
+	                9 Bit    Registers := 3     
+	                8 Bit    Registers := 25    
+	                7 Bit    Registers := 12    
 	                6 Bit    Registers := 3     
 	                5 Bit    Registers := 7     
-	                4 Bit    Registers := 39    
-	                3 Bit    Registers := 18    
+	                4 Bit    Registers := 40    
+	                3 Bit    Registers := 17    
 	                2 Bit    Registers := 30    
 	                1 Bit    Registers := 501   
 +---RAMs : 
 	               9K Bit         RAMs := 2     
-	              144 Bit         RAMs := 1     
+	              160 Bit         RAMs := 1     
 +---Muxes : 
 	   2 Input    185 Bit        Muxes := 2     
 	   2 Input     72 Bit        Muxes := 1     
@@ -2094,10 +2090,10 @@ Detailed RTL Component Info :
 	   4 Input     16 Bit        Muxes := 1     
 	   2 Input     11 Bit        Muxes := 2     
 	   2 Input      9 Bit        Muxes := 1     
-	   2 Input      8 Bit        Muxes := 33    
+	   2 Input      8 Bit        Muxes := 34    
 	   8 Input      8 Bit        Muxes := 7     
 	   3 Input      8 Bit        Muxes := 1     
-	   2 Input      7 Bit        Muxes := 9     
+	   2 Input      7 Bit        Muxes := 8     
 	   7 Input      7 Bit        Muxes := 1     
 	   2 Input      5 Bit        Muxes := 3     
 	   2 Input      4 Bit        Muxes := 7     
@@ -2481,7 +2477,7 @@ Module axi_datamover_ibttcc
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     16 Bit       Adders := 1     
-	   2 Input      7 Bit       Adders := 3     
+	   2 Input      8 Bit       Adders := 3     
 +---Registers : 
 	               64 Bit    Registers := 3     
 	               26 Bit    Registers := 3     
@@ -2495,9 +2491,10 @@ Detailed RTL Component Info :
 	   4 Input     26 Bit        Muxes := 1     
 	   2 Input     26 Bit        Muxes := 3     
 	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
 	   3 Input      8 Bit        Muxes := 1     
-	   2 Input      7 Bit        Muxes := 7     
 	   7 Input      7 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 6     
 	   6 Input      3 Bit        Muxes := 1     
 	   2 Input      3 Bit        Muxes := 6     
 	   2 Input      2 Bit        Muxes := 1     
@@ -2590,9 +2587,9 @@ Detailed RTL Component Info :
 Module xpm_memory_base__parameterized0 
 Detailed RTL Component Info : 
 +---Registers : 
-	                9 Bit    Registers := 2     
+	               10 Bit    Registers := 2     
 +---RAMs : 
-	              144 Bit         RAMs := 1     
+	              160 Bit         RAMs := 1     
 Module xpm_counter_updn__parameterized6 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -2677,12 +2674,12 @@ Detailed RTL Component Info :
 Module axi_datamover_indet_btt 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input      3 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
 	   2 Input      2 Bit       Adders := 2     
 +---Registers : 
 	               16 Bit    Registers := 4     
-	                7 Bit    Registers := 1     
-	                3 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
 	                2 Bit    Registers := 9     
 	                1 Bit    Registers := 5     
 +---Muxes : 
@@ -2793,9 +2790,11 @@ INFO: [Synth 8-5546] ROM "sig_dbeat_cntr_eq_0" won't be mapped to RAM because it
 INFO: [Synth 8-5546] ROM "sig_dbeat_cntr_eq_1" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "sig_new_len_eq_0" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5545] ROM "sig_btt_is_zero" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "sig_addr_aligned" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "sig_btt_upper_eq_0" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "lsig_acntr_msh_eq_max" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "lsig_acntr_seg3_eq_max" won't be mapped to RAM because it is too sparse
+INFO: [Common 17-14] Message 'Synth 8-5546' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Synth 8-4471] merging register 'sig_stop_request_reg' into 'sig_sready_stop_reg_reg' [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ipshared/dfb3/hdl/axi_datamover_v5_1_vh_rfs.vhd:19578]
 INFO: [Synth 8-4471] merging register 'GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/I_MSSAI_SKID_BUF/sig_reset_reg_reg' into 'I_DRE_CNTL_FIFO/sig_init_reg_reg' [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ipshared/dfb3/hdl/axi_datamover_v5_1_vh_rfs.vhd:44276]
 INFO: [Synth 8-4471] merging register 'GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/I_MSSAI_SKID_BUF/sig_stop_request_reg' into 'GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/I_MSSAI_SKID_BUF/sig_sready_stop_reg_reg' [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ipshared/dfb3/hdl/axi_datamover_v5_1_vh_rfs.vhd:44271]
@@ -2804,10 +2803,7 @@ INFO: [Synth 8-5545] ROM "GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/I_SCATTER_STROBE_GE
 INFO: [Synth 8-5545] ROM "GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/I_SCATTER_STROBE_GEN/var_start_vector" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_btt_eq_0_pre_reg" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
 INFO: [Synth 8-4471] merging register 'ENABLE_AXIS_SKID.I_INDET_BTT_SKID_BUF/sig_stop_request_reg' into 'ENABLE_AXIS_SKID.I_INDET_BTT_SKID_BUF/sig_sready_stop_reg_reg' [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ipshared/dfb3/hdl/axi_datamover_v5_1_vh_rfs.vhd:19578]
-INFO: [Synth 8-5544] ROM "sig_dbc_max" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5545] ROM "I_XD_FIFO/SFIFO_Almost_full" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5546] ROM "DIFF_WIDTH_OR_DRE_WDC.I_WDC_STBS_SET/lvar_num_set" won't be mapped to RAM because it is too sparse
-INFO: [Common 17-14] Message 'Synth 8-5546' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Synth 8-4471] merging register 'I_CMD_STATUS/GEN_INCLUDE_STATUS_FIFO.I_STS_FIFO/sig_init_reg_reg' into 'I_CMD_STATUS/I_CMD_FIFO/sig_init_reg_reg' [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ipshared/dfb3/hdl/axi_datamover_v5_1_vh_rfs.vhd:1961]
 INFO: [Synth 8-4471] merging register 'I_CMD_STATUS/GEN_INCLUDE_STATUS_FIFO.I_STS_FIFO/sig_init_reg2_reg' into 'I_CMD_STATUS/I_CMD_FIFO/sig_init_reg2_reg' [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ipshared/dfb3/hdl/axi_datamover_v5_1_vh_rfs.vhd:1962]
 INFO: [Synth 8-4471] merging register 'GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_CMD_STATUS/GEN_INCLUDE_STATUS_FIFO.I_STS_FIFO/sig_init_reg_reg' into 'GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/sig_init_reg_reg' [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ipshared/dfb3/hdl/axi_datamover_v5_1_vh_rfs.vhd:1961]
@@ -2915,7 +2911,6 @@ INFO: [Synth 8-3886] merging instance 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM
 INFO: [Synth 8-3886] merging instance 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/ENABLE_AXIS_SKID.I_INDET_BTT_SKID_BUF/sig_sstrb_stop_mask_reg[5]' (FDRE) to 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/ENABLE_AXIS_SKID.I_INDET_BTT_SKID_BUF/sig_sstrb_stop_mask_reg[6]'
 INFO: [Synth 8-3886] merging instance 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/ENABLE_AXIS_SKID.I_INDET_BTT_SKID_BUF/sig_sstrb_stop_mask_reg[6]' (FDRE) to 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/ENABLE_AXIS_SKID.I_INDET_BTT_SKID_BUF/sig_sstrb_stop_mask_reg[7]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/I_PRMRY_DATAMOVER/\GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/ENABLE_AXIS_SKID.I_INDET_BTT_SKID_BUF/sig_sstrb_stop_mask_reg[7] )
-INFO: [Synth 8-3886] merging instance 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_IBTTCC.I_S2MM_MSTR_IBTTCC/sig_xfer_len_reg_reg[4]' (FDRE) to 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_IBTTCC.I_S2MM_MSTR_IBTTCC/sig_xfer_len_reg_reg[5]'
 INFO: [Synth 8-3886] merging instance 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_IBTTCC.I_S2MM_MSTR_IBTTCC/sig_xfer_len_reg_reg[5]' (FDRE) to 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_IBTTCC.I_S2MM_MSTR_IBTTCC/sig_xfer_len_reg_reg[6]'
 INFO: [Synth 8-3886] merging instance 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_IBTTCC.I_S2MM_MSTR_IBTTCC/sig_xfer_len_reg_reg[6]' (FDRE) to 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_IBTTCC.I_S2MM_MSTR_IBTTCC/sig_xfer_len_reg_reg[7]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/I_PRMRY_DATAMOVER/\GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_IBTTCC.I_S2MM_MSTR_IBTTCC/sig_xfer_len_reg_reg[7] )
@@ -2953,11 +2948,12 @@ INFO: [Synth 8-3332] Sequential element (REG_HRD_RST_OUT/GENERATE_LEVEL_P_S_CDC.
 INFO: [Synth 8-3332] Sequential element (REG_HRD_RST_OUT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module axi_dma_rst_module.
 INFO: [Synth 8-3332] Sequential element (GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_IBTTCC.I_S2MM_MSTR_IBTTCC/FSM_onehot_sig_csm_state_reg[3]) is unused and will be removed from module axi_datamover.
 INFO: [Synth 8-3886] merging instance 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/I_ADDR_CNTL/sig_next_burst_reg_reg[1]' (FDRE) to 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/I_ADDR_CNTL/sig_next_size_reg_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/I_ADDR_CNTL/sig_next_size_reg_reg[2]' (FDRE) to 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/I_ADDR_CNTL/sig_next_len_reg_reg[5]'
 INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/I_PRMRY_DATAMOVER/\GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/I_ADDR_CNTL/sig_next_len_reg_reg[7] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/I_PRMRY_DATAMOVER/\GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_ADDR_CNTL/sig_next_len_reg_reg[7] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:51 ; elapsed = 00:02:04 . Memory (MB): peak = 1897.832 ; gain = 511.688 ; free physical = 4316 ; free virtual = 11266
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:01 ; elapsed = 00:02:15 . Memory (MB): peak = 1894.613 ; gain = 530.164 ; free physical = 5669 ; free virtual = 13063
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
@@ -2979,7 +2975,7 @@ Distributed RAM: Preliminary Mapping  Report (see note below)
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+-----------+----------------------+--------------+
 |Module Name                                                                                                                                                                                                                      | RTL Object                       | Inference | Size (Depth x Width) | Primitives   | 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+-----------+----------------------+--------------+
-|U0/I_PRMRY_DATAMOVER/\GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg | Implied   | 16 x 9               | RAM32M x 2   | 
+|U0/I_PRMRY_DATAMOVER/\GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg | Implied   | 16 x 10              | RAM32M x 2   | 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+-----------+----------------------+--------------+
 
 Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
@@ -2996,7 +2992,7 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:56 ; elapsed = 00:02:10 . Memory (MB): peak = 1897.832 ; gain = 511.688 ; free physical = 4198 ; free virtual = 11148
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:06 ; elapsed = 00:02:21 . Memory (MB): peak = 1894.613 ; gain = 530.164 ; free physical = 5550 ; free virtual = 12945
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
@@ -3004,7 +3000,7 @@ Start Timing Optimization
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:02:00 ; elapsed = 00:02:13 . Memory (MB): peak = 1914.840 ; gain = 528.695 ; free physical = 4166 ; free virtual = 11115
+Finished Timing Optimization : Time (s): cpu = 00:02:11 ; elapsed = 00:02:26 . Memory (MB): peak = 1935.637 ; gain = 571.188 ; free physical = 5496 ; free virtual = 12890
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -3023,7 +3019,7 @@ Distributed RAM: Final Mapping  Report
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+-----------+----------------------+--------------+
 |Module Name                                                                                                                                                                                                                      | RTL Object                       | Inference | Size (Depth x Width) | Primitives   | 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+-----------+----------------------+--------------+
-|U0/I_PRMRY_DATAMOVER/\GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg | Implied   | 16 x 9               | RAM32M x 2   | 
+|U0/I_PRMRY_DATAMOVER/\GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg | Implied   | 16 x 10              | RAM32M x 2   | 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+-----------+----------------------+--------------+
 
 ---------------------------------------------------------------------------------
@@ -3039,7 +3035,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:02:02 ; elapsed = 00:02:15 . Memory (MB): peak = 1922.848 ; gain = 536.703 ; free physical = 4161 ; free virtual = 11111
+Finished Technology Mapping : Time (s): cpu = 00:02:13 ; elapsed = 00:02:28 . Memory (MB): peak = 1943.645 ; gain = 579.195 ; free physical = 5492 ; free virtual = 12886
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -3063,7 +3059,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:02:02 ; elapsed = 00:02:16 . Memory (MB): peak = 1922.848 ; gain = 536.703 ; free physical = 4162 ; free virtual = 11112
+Finished IO Insertion : Time (s): cpu = 00:02:14 ; elapsed = 00:02:29 . Memory (MB): peak = 1943.645 ; gain = 579.195 ; free physical = 5492 ; free virtual = 12887
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -3076,7 +3072,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:02:02 ; elapsed = 00:02:16 . Memory (MB): peak = 1922.848 ; gain = 536.703 ; free physical = 4162 ; free virtual = 11112
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:14 ; elapsed = 00:02:29 . Memory (MB): peak = 1943.645 ; gain = 579.195 ; free physical = 5492 ; free virtual = 12887
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -3088,25 +3084,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:03 ; elapsed = 00:02:17 . Memory (MB): peak = 1922.848 ; gain = 536.703 ; free physical = 4162 ; free virtual = 11112
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:14 ; elapsed = 00:02:29 . Memory (MB): peak = 1943.645 ; gain = 579.195 ; free physical = 5493 ; free virtual = 12887
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:02:03 ; elapsed = 00:02:17 . Memory (MB): peak = 1922.848 ; gain = 536.703 ; free physical = 4162 ; free virtual = 11112
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:14 ; elapsed = 00:02:30 . Memory (MB): peak = 1943.645 ; gain = 579.195 ; free physical = 5493 ; free virtual = 12887
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:02:03 ; elapsed = 00:02:17 . Memory (MB): peak = 1922.848 ; gain = 536.703 ; free physical = 4162 ; free virtual = 11112
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:14 ; elapsed = 00:02:30 . Memory (MB): peak = 1943.645 ; gain = 579.195 ; free physical = 5493 ; free virtual = 12887
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:02:03 ; elapsed = 00:02:17 . Memory (MB): peak = 1922.848 ; gain = 536.703 ; free physical = 4162 ; free virtual = 11112
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:14 ; elapsed = 00:02:30 . Memory (MB): peak = 1943.645 ; gain = 579.195 ; free physical = 5493 ; free virtual = 12887
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -3144,18 +3140,18 @@ Report Cell Usage:
 +------+-----------+------+
 |1     |CARRY4     |    82|
 |2     |LUT1       |   109|
-|3     |LUT2       |   280|
-|4     |LUT3       |   617|
-|5     |LUT4       |   354|
-|6     |LUT5       |   296|
-|7     |LUT6       |   445|
+|3     |LUT2       |   265|
+|4     |LUT3       |   635|
+|5     |LUT4       |   360|
+|6     |LUT5       |   303|
+|7     |LUT6       |   448|
 |8     |MUXF7      |     5|
 |9     |RAM32M     |     2|
 |10    |RAMB18E1_1 |     2|
 |11    |RAMB36E1_1 |     2|
-|12    |SRL16E     |   246|
+|12    |SRL16E     |   248|
 |13    |FDR        |     8|
-|14    |FDRE       |  2665|
+|14    |FDRE       |  2671|
 |15    |FDSE       |    89|
 +------+-----------+------+
 
@@ -3163,8 +3159,8 @@ Report Instance Areas:
 +------+----------------------------------------------------------------+-------------------------------------------+------+
 |      |Instance                                                        |Module                                     |Cells |
 +------+----------------------------------------------------------------+-------------------------------------------+------+
-|1     |top                                                             |                                           |  5202|
-|2     |  U0                                                            |axi_dma                                    |  5202|
+|1     |top                                                             |                                           |  5229|
+|2     |  U0                                                            |axi_dma                                    |  5229|
 |3     |    \INCLUDE_MM2S_SOF_EOF_GENERATOR.I_MM2S_DMA_MNGR             |axi_dma_mm2s_mngr                          |   128|
 |4     |      \GEN_MM2S_DMA_CONTROL.GEN_SIMPLE_DMA_MODE.I_MM2S_SMPL_SM  |axi_dma_smple_sm_35                        |   110|
 |5     |      \GEN_MM2S_DMA_CONTROL.I_MM2S_CMDSTS                       |axi_dma_mm2s_cmdsts_if                     |    12|
@@ -3179,7 +3175,7 @@ Report Instance Areas:
 |14    |      \GEN_AXI_LITE_IF.AXI_LITE_IF_I                            |axi_dma_lite_if                            |   200|
 |15    |      \GEN_MM2S_REGISTERS.I_MM2S_DMA_REGISTER                   |axi_dma_register                           |   163|
 |16    |      \GEN_S2MM_REGISTERS.I_S2MM_DMA_REGISTER                   |axi_dma_register_s2mm                      |   158|
-|17    |    I_PRMRY_DATAMOVER                                           |axi_datamover                              |  4272|
+|17    |    I_PRMRY_DATAMOVER                                           |axi_datamover                              |  4299|
 |18    |      \GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER                        |axi_datamover_mm2s_full_wrap               |  1367|
 |19    |        \ENABLE_AXIS_SKID.I_MM2S_SKID_BUF                       |axi_datamover_skid_buf_13                  |    70|
 |20    |        \GEN_INCLUDE_MM2S_SF.I_RD_SF                            |axi_datamover_rd_sf                        |   294|
@@ -3219,10 +3215,10 @@ Report Instance Areas:
 |54    |                DYNSHREG_F_I                                    |dynshreg_f__parameterized0_19              |    29|
 |55    |        I_RD_STATUS_CNTLR                                       |axi_datamover_rd_status_cntl               |     8|
 |56    |        I_RESET                                                 |axi_datamover_reset_14                     |     5|
-|57    |      \GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER                        |axi_datamover_s2mm_full_wrap               |  2905|
-|58    |        \ENABLE_AXIS_SKID.I_S2MM_STRM_SKID_BUF                  |axi_datamover_skid_buf                     |    73|
-|59    |        \GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT                    |axi_datamover_indet_btt                    |   809|
-|60    |          \ENABLE_AXIS_SKID.I_INDET_BTT_SKID_BUF                |axi_datamover_skid_buf__parameterized0     |   255|
+|57    |      \GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER                        |axi_datamover_s2mm_full_wrap               |  2932|
+|58    |        \ENABLE_AXIS_SKID.I_S2MM_STRM_SKID_BUF                  |axi_datamover_skid_buf                     |    71|
+|59    |        \GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT                    |axi_datamover_indet_btt                    |   817|
+|60    |          \ENABLE_AXIS_SKID.I_INDET_BTT_SKID_BUF                |axi_datamover_skid_buf__parameterized0     |   251|
 |61    |          I_DATA_FIFO                                           |axi_datamover_sfifo_autord__parameterized1 |   249|
 |62    |            \BLK_MEM.I_SYNC_FIFOGEN_FIFO                        |sync_fifo_fg__parameterized1               |   249|
 |63    |              \xpm_fifo_instance.xpm_fifo_sync_inst             |xpm_fifo_sync__parameterized3              |   225|
@@ -3236,11 +3232,11 @@ Report Instance Areas:
 |71    |                  wrpp1_inst                                    |xpm_counter_updn__parameterized3_11        |    25|
 |72    |                  wrpp2_inst                                    |xpm_counter_updn__parameterized0           |    19|
 |73    |                  xpm_fifo_rst_inst                             |xpm_fifo_rst_12                            |    10|
-|74    |          I_XD_FIFO                                             |axi_datamover_sfifo_autord__parameterized0 |   202|
-|75    |            \NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO                    |sync_fifo_fg__parameterized0               |   202|
-|76    |              \xpm_fifo_instance.xpm_fifo_sync_inst             |xpm_fifo_sync__parameterized1              |   166|
-|77    |                xpm_fifo_base_inst                              |xpm_fifo_base__parameterized0              |   166|
-|78    |                  \gen_sdpram.xpm_memory_base_inst              |xpm_memory_base__parameterized0            |    20|
+|74    |          I_XD_FIFO                                             |axi_datamover_sfifo_autord__parameterized0 |   208|
+|75    |            \NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO                    |sync_fifo_fg__parameterized0               |   208|
+|76    |              \xpm_fifo_instance.xpm_fifo_sync_inst             |xpm_fifo_sync__parameterized1              |   168|
+|77    |                xpm_fifo_base_inst                              |xpm_fifo_base__parameterized0              |   168|
+|78    |                  \gen_sdpram.xpm_memory_base_inst              |xpm_memory_base__parameterized0            |    22|
 |79    |                  \gen_fwft.rdpp1_inst                          |xpm_counter_updn__parameterized1           |     9|
 |80    |                  rdp_inst                                      |xpm_counter_updn__parameterized6           |    17|
 |81    |                  rdpp1_inst                                    |xpm_counter_updn__parameterized7           |    10|
@@ -3249,50 +3245,50 @@ Report Instance Areas:
 |84    |                  wrpp1_inst                                    |xpm_counter_updn__parameterized7_7         |    12|
 |85    |                  wrpp2_inst                                    |xpm_counter_updn__parameterized5           |    11|
 |86    |                  xpm_fifo_rst_inst                             |xpm_fifo_rst                               |    10|
-|87    |        \GEN_INCLUDE_IBTTCC.I_S2MM_MSTR_IBTTCC                  |axi_datamover_ibttcc                       |   699|
-|88    |        \GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER                 |axi_datamover_s2mm_realign                 |   455|
+|87    |        \GEN_INCLUDE_IBTTCC.I_S2MM_MSTR_IBTTCC                  |axi_datamover_ibttcc                       |   716|
+|88    |        \GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER                 |axi_datamover_s2mm_realign                 |   452|
 |89    |          \GEN_INCLUDE_SCATTER.I_S2MM_SCATTER                   |axi_datamover_s2mm_scatter                 |   389|
-|90    |            I_MSSAI_SKID_BUF                                    |axi_datamover_mssai_skid_buf               |   156|
-|91    |            I_TSTRB_FIFO                                        |axi_datamover_fifo__parameterized7         |    41|
-|92    |              \USE_SRL_FIFO.I_SYNC_FIFO                         |srl_fifo_f__parameterized4                 |    35|
-|93    |                I_SRL_FIFO_RBU_F                                |srl_fifo_rbu_f__parameterized4             |    35|
-|94    |                  CNTR_INCR_DECR_ADDN_F_I                       |cntr_incr_decr_addn_f__parameterized1      |    19|
-|95    |                  DYNSHREG_F_I                                  |dynshreg_f__parameterized4                 |    15|
-|96    |            SLICE_INSERTION                                     |axi_datamover_slice                        |    46|
-|97    |          I_DRE_CNTL_FIFO                                       |axi_datamover_fifo__parameterized2         |    57|
+|90    |            I_MSSAI_SKID_BUF                                    |axi_datamover_mssai_skid_buf               |   153|
+|91    |            I_TSTRB_FIFO                                        |axi_datamover_fifo__parameterized7         |    47|
+|92    |              \USE_SRL_FIFO.I_SYNC_FIFO                         |srl_fifo_f__parameterized4                 |    41|
+|93    |                I_SRL_FIFO_RBU_F                                |srl_fifo_rbu_f__parameterized4             |    41|
+|94    |                  CNTR_INCR_DECR_ADDN_F_I                       |cntr_incr_decr_addn_f__parameterized1      |    20|
+|95    |                  DYNSHREG_F_I                                  |dynshreg_f__parameterized4                 |    20|
+|96    |            SLICE_INSERTION                                     |axi_datamover_slice                        |    43|
+|97    |          I_DRE_CNTL_FIFO                                       |axi_datamover_fifo__parameterized2         |    54|
 |98    |            \USE_SRL_FIFO.I_SYNC_FIFO                           |srl_fifo_f__parameterized0                 |    49|
 |99    |              I_SRL_FIFO_RBU_F                                  |srl_fifo_rbu_f__parameterized0             |    49|
 |100   |                CNTR_INCR_DECR_ADDN_F_I                         |cntr_incr_decr_addn_f_5                    |    11|
 |101   |                DYNSHREG_F_I                                    |dynshreg_f__parameterized0                 |    37|
-|102   |        I_ADDR_CNTL                                             |axi_datamover_addr_cntl__parameterized0    |   165|
+|102   |        I_ADDR_CNTL                                             |axi_datamover_addr_cntl__parameterized0    |   166|
 |103   |          \GEN_ADDR_FIFO.I_ADDR_QUAL_FIFO                       |axi_datamover_fifo__parameterized1         |    87|
 |104   |            \USE_SRL_FIFO.I_SYNC_FIFO                           |srl_fifo_f                                 |    84|
 |105   |              I_SRL_FIFO_RBU_F                                  |srl_fifo_rbu_f                             |    84|
-|106   |                CNTR_INCR_DECR_ADDN_F_I                         |cntr_incr_decr_addn_f_4                    |     9|
-|107   |                DYNSHREG_F_I                                    |dynshreg_f                                 |    74|
+|106   |                CNTR_INCR_DECR_ADDN_F_I                         |cntr_incr_decr_addn_f_4                    |     8|
+|107   |                DYNSHREG_F_I                                    |dynshreg_f                                 |    75|
 |108   |        I_CMD_STATUS                                            |axi_datamover_cmd_status__parameterized0   |   166|
 |109   |          \GEN_INCLUDE_STATUS_FIFO.I_STS_FIFO                   |axi_datamover_fifo__parameterized4         |    68|
 |110   |          I_CMD_FIFO                                            |axi_datamover_fifo                         |    98|
-|111   |        I_RESET                                                 |axi_datamover_reset                        |     7|
-|112   |        I_S2MM_MMAP_SKID_BUF                                    |axi_datamover_skid2mm_buf                  |   218|
-|113   |        I_WR_DATA_CNTL                                          |axi_datamover_wrdata_cntl                  |   178|
+|111   |        I_RESET                                                 |axi_datamover_reset                        |    11|
+|112   |        I_S2MM_MMAP_SKID_BUF                                    |axi_datamover_skid2mm_buf                  |   219|
+|113   |        I_WR_DATA_CNTL                                          |axi_datamover_wrdata_cntl                  |   184|
 |114   |          \GEN_INDET_BTT.I_STRT_STRB_GEN                        |axi_datamover_strb_gen2                    |     5|
 |115   |          \GEN_DATA_CNTL_FIFO.I_DATA_CNTL_FIFO                  |axi_datamover_fifo__parameterized8         |    44|
 |116   |            \USE_SRL_FIFO.I_SYNC_FIFO                           |srl_fifo_f__parameterized5                 |    41|
 |117   |              I_SRL_FIFO_RBU_F                                  |srl_fifo_rbu_f__parameterized5             |    41|
-|118   |                CNTR_INCR_DECR_ADDN_F_I                         |cntr_incr_decr_addn_f                      |    21|
-|119   |                DYNSHREG_F_I                                    |dynshreg_f__parameterized5                 |    19|
-|120   |        I_WR_STATUS_CNTLR                                       |axi_datamover_wr_status_cntl               |   135|
-|121   |          \GEN_ENABLE_INDET_BTT.I_SF_DATA_CNTL_STATUS_FIFO      |axi_datamover_fifo__parameterized6         |    52|
-|122   |            \USE_SRL_FIFO.I_SYNC_FIFO                           |srl_fifo_f__parameterized3                 |    49|
-|123   |              I_SRL_FIFO_RBU_F                                  |srl_fifo_rbu_f__parameterized3             |    49|
-|124   |                CNTR_INCR_DECR_ADDN_F_I                         |cntr_incr_decr_addn_f__parameterized0_3    |    14|
-|125   |                DYNSHREG_F_I                                    |dynshreg_f__parameterized3                 |    33|
-|126   |          I_WRESP_STATUS_FIFO                                   |axi_datamover_fifo__parameterized5         |    33|
-|127   |            \USE_SRL_FIFO.I_SYNC_FIFO                           |srl_fifo_f__parameterized2                 |    23|
-|128   |              I_SRL_FIFO_RBU_F                                  |srl_fifo_rbu_f__parameterized2             |    23|
-|129   |                CNTR_INCR_DECR_ADDN_F_I                         |cntr_incr_decr_addn_f__parameterized0      |    12|
-|130   |                DYNSHREG_F_I                                    |dynshreg_f__parameterized2                 |     5|
+|118   |                CNTR_INCR_DECR_ADDN_F_I                         |cntr_incr_decr_addn_f                      |    22|
+|119   |                DYNSHREG_F_I                                    |dynshreg_f__parameterized5                 |    18|
+|120   |        I_WR_STATUS_CNTLR                                       |axi_datamover_wr_status_cntl               |   130|
+|121   |          \GEN_ENABLE_INDET_BTT.I_SF_DATA_CNTL_STATUS_FIFO      |axi_datamover_fifo__parameterized6         |    53|
+|122   |            \USE_SRL_FIFO.I_SYNC_FIFO                           |srl_fifo_f__parameterized3                 |    50|
+|123   |              I_SRL_FIFO_RBU_F                                  |srl_fifo_rbu_f__parameterized3             |    50|
+|124   |                CNTR_INCR_DECR_ADDN_F_I                         |cntr_incr_decr_addn_f__parameterized0_3    |    15|
+|125   |                DYNSHREG_F_I                                    |dynshreg_f__parameterized3                 |    34|
+|126   |          I_WRESP_STATUS_FIFO                                   |axi_datamover_fifo__parameterized5         |    28|
+|127   |            \USE_SRL_FIFO.I_SYNC_FIFO                           |srl_fifo_f__parameterized2                 |    20|
+|128   |              I_SRL_FIFO_RBU_F                                  |srl_fifo_rbu_f__parameterized2             |    20|
+|129   |                CNTR_INCR_DECR_ADDN_F_I                         |cntr_incr_decr_addn_f__parameterized0      |    10|
+|130   |                DYNSHREG_F_I                                    |dynshreg_f__parameterized2                 |     4|
 |131   |    I_RST_MODULE                                                |axi_dma_rst_module                         |    74|
 |132   |      \GEN_RESET_FOR_MM2S.RESET_I                               |axi_dma_reset                              |    32|
 |133   |      \GEN_RESET_FOR_S2MM.RESET_I                               |axi_dma_reset_1                            |    31|
@@ -3300,35 +3296,35 @@ Report Instance Areas:
 |135   |      REG_HRD_RST_OUT                                           |cdc_sync_2                                 |     4|
 +------+----------------------------------------------------------------+-------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:02:03 ; elapsed = 00:02:17 . Memory (MB): peak = 1922.848 ; gain = 536.703 ; free physical = 4162 ; free virtual = 11112
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:14 ; elapsed = 00:02:30 . Memory (MB): peak = 1943.645 ; gain = 579.195 ; free physical = 5493 ; free virtual = 12887
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 1211 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:58 ; elapsed = 00:02:11 . Memory (MB): peak = 1922.848 ; gain = 285.648 ; free physical = 4218 ; free virtual = 11168
-Synthesis Optimization Complete : Time (s): cpu = 00:02:03 ; elapsed = 00:02:17 . Memory (MB): peak = 1922.855 ; gain = 536.703 ; free physical = 4217 ; free virtual = 11167
+Synthesis finished with 0 errors, 0 critical warnings and 1212 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:09 ; elapsed = 00:02:23 . Memory (MB): peak = 1943.645 ; gain = 328.664 ; free physical = 5549 ; free virtual = 12944
+Synthesis Optimization Complete : Time (s): cpu = 00:02:15 ; elapsed = 00:02:30 . Memory (MB): peak = 1943.652 ; gain = 579.195 ; free physical = 5549 ; free virtual = 12944
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 101 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1922.855 ; gain = 0.000 ; free physical = 4160 ; free virtual = 11110
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1943.652 ; gain = 0.000 ; free physical = 5492 ; free virtual = 12886
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 10 instances were transformed.
   FDR => FDRE: 8 instances
   RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 2 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-695 Infos, 265 Warnings, 0 Critical Warnings and 0 Errors encountered.
+690 Infos, 265 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:02:05 ; elapsed = 00:02:18 . Memory (MB): peak = 1922.855 ; gain = 536.828 ; free physical = 4235 ; free virtual = 11185
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1922.855 ; gain = 0.000 ; free physical = 4235 ; free virtual = 11185
+synth_design: Time (s): cpu = 00:02:17 ; elapsed = 00:02:31 . Memory (MB): peak = 1943.652 ; gain = 585.047 ; free physical = 5581 ; free virtual = 12975
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1943.652 ; gain = 0.000 ; free physical = 5581 ; free virtual = 12975
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint '/home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/design_1_axi_dma_0_0_synth_1/design_1_axi_dma_0_0.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_axi_dma_0_0, cache-ID = 17e65e4f73fb5bba
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_axi_dma_0_0, cache-ID = 06723e82978f5dad
 INFO: [Coretcl 2-1174] Renamed 134 cell refs.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1946.859 ; gain = 0.000 ; free physical = 4229 ; free virtual = 11186
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1967.656 ; gain = 0.000 ; free physical = 5575 ; free virtual = 12977
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint '/home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/design_1_axi_dma_0_0_synth_1/design_1_axi_dma_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_axi_dma_0_0_utilization_synth.rpt -pb design_1_axi_dma_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Dec 25 21:02:04 2019...
+INFO: [Common 17-206] Exiting Vivado at Wed Dec 25 22:26:01 2019...
