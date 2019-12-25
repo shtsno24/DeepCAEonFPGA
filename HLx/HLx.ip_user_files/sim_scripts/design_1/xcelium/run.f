@@ -153,17 +153,26 @@
 -makelib xcelium_lib/generic_baseblocks_v2_1_0 \
   "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v" \
 -endlib
+-makelib xcelium_lib/axi_register_slice_v2_1_18 \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/cc23/hdl/axi_register_slice_v2_1_vl_rfs.v" \
+-endlib
 -makelib xcelium_lib/axi_data_fifo_v2_1_17 \
   "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/c4fd/hdl/axi_data_fifo_v2_1_vl_rfs.v" \
 -endlib
--makelib xcelium_lib/axi_register_slice_v2_1_18 \
-  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/cc23/hdl/axi_register_slice_v2_1_vl_rfs.v" \
+-makelib xcelium_lib/axi_crossbar_v2_1_19 \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/design_1/ip/design_1_xbar_0/sim/design_1_xbar_0.v" \
 -endlib
 -makelib xcelium_lib/axi_protocol_converter_v2_1_18 \
   "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/7a04/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   "../../../bd/design_1/ip/design_1_auto_pc_0/sim/design_1_auto_pc_0.v" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/design_1/ip/design_1_axi_dma_mm2s_0/sim/design_1_axi_dma_mm2s_0.vhd" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   glbl.v
