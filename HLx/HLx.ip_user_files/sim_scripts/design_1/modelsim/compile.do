@@ -229,7 +229,7 @@ vlog -work axis_data_fifo_v2_0_0 -64 -incr "+incdir+../../../../HLx.srcs/sources
 "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/4efd/hdl/axis_data_fifo_v2_0_vl_rfs.v" \
 
 vlog -work xil_defaultlib -64 -incr "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/70cf/hdl" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/979d/hdl/verilog" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/b2d0/hdl/verilog" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/8713/hdl" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0" "+incdir+/tools/Xilinx/Vivado/2018.3/data/xilinx_vip/include" \
-"../../../bd/design_1/ip/design_1_axis_data_fifo_0_0/sim/design_1_axis_data_fifo_0_0.v" \
+"../../../bd/design_1/ip/design_1_axis_data_fifo_0_1/sim/design_1_axis_data_fifo_0_1.v" \
 
 vlog -work xil_defaultlib \
 "glbl.v"
