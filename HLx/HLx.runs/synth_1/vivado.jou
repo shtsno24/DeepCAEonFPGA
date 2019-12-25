@@ -2,8 +2,8 @@
 # Vivado v2018.3.1 (64-bit)
 # SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
 # IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
-# Start of session at: Wed Dec 25 19:51:36 2019
-# Process ID: 24628
+# Start of session at: Wed Dec 25 20:20:42 2019
+# Process ID: 28366
 # Current directory: /home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/synth_1
 # Command line: vivado -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
 # Log file: /home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/synth_1/design_1_wrapper.vds

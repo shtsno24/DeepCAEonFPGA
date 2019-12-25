@@ -174,12 +174,6 @@
 -makelib ies_lib/xil_defaultlib \
   "../../../bd/design_1/ip/design_1_auto_pc_0/sim/design_1_auto_pc_0.v" \
 -endlib
--makelib ies_lib/axis_protocol_checker_v2_0_2 \
-  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/2566/hdl/axis_protocol_checker_v2_0_vl_rfs.v" \
--endlib
--makelib ies_lib/xil_defaultlib \
-  "../../../bd/design_1/ip/design_1_axis_protocol_checker_0_0/sim/design_1_axis_protocol_checker_0_0.v" \
--endlib
 -makelib ies_lib/xil_defaultlib \
   glbl.v
 -endlib

@@ -23,7 +23,6 @@ vlib questa_lib/msim/axi_register_slice_v2_1_18
 vlib questa_lib/msim/axi_data_fifo_v2_1_17
 vlib questa_lib/msim/axi_crossbar_v2_1_19
 vlib questa_lib/msim/axi_protocol_converter_v2_1_18
-vlib questa_lib/msim/axis_protocol_checker_v2_0_2
 
 vmap xilinx_vip questa_lib/msim/xilinx_vip
 vmap xil_defaultlib questa_lib/msim/xil_defaultlib
@@ -47,7 +46,6 @@ vmap axi_register_slice_v2_1_18 questa_lib/msim/axi_register_slice_v2_1_18
 vmap axi_data_fifo_v2_1_17 questa_lib/msim/axi_data_fifo_v2_1_17
 vmap axi_crossbar_v2_1_19 questa_lib/msim/axi_crossbar_v2_1_19
 vmap axi_protocol_converter_v2_1_18 questa_lib/msim/axi_protocol_converter_v2_1_18
-vmap axis_protocol_checker_v2_0_2 questa_lib/msim/axis_protocol_checker_v2_0_2
 
 vlog -work xilinx_vip -64 -sv -L axi_vip_v1_1_4 -L processing_system7_vip_v1_0_6 -L smartconnect_v1_0 -L xilinx_vip "+incdir+/tools/Xilinx/Vivado/2018.3/data/xilinx_vip/include" \
 "/tools/Xilinx/Vivado/2018.3/data/xilinx_vip/hdl/axi4stream_vip_axi4streampc.sv" \
@@ -224,12 +222,6 @@ vlog -work axi_protocol_converter_v2_1_18 -64 "+incdir+../../../../HLx.srcs/sour
 
 vlog -work xil_defaultlib -64 "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/70cf/hdl" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/979d/hdl/verilog" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/b2d0/hdl/verilog" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0" "+incdir+/tools/Xilinx/Vivado/2018.3/data/xilinx_vip/include" \
 "../../../bd/design_1/ip/design_1_auto_pc_0/sim/design_1_auto_pc_0.v" \
-
-vlog -work axis_protocol_checker_v2_0_2 -64 "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/70cf/hdl" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/979d/hdl/verilog" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/b2d0/hdl/verilog" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0" "+incdir+/tools/Xilinx/Vivado/2018.3/data/xilinx_vip/include" \
-"../../../../HLx.srcs/sources_1/bd/design_1/ipshared/2566/hdl/axis_protocol_checker_v2_0_vl_rfs.v" \
-
-vlog -work xil_defaultlib -64 "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/70cf/hdl" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/979d/hdl/verilog" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/b2d0/hdl/verilog" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0" "+incdir+/tools/Xilinx/Vivado/2018.3/data/xilinx_vip/include" \
-"../../../bd/design_1/ip/design_1_axis_protocol_checker_0_0/sim/design_1_axis_protocol_checker_0_0.v" \
 
 vlog -work xil_defaultlib \
 "glbl.v"
