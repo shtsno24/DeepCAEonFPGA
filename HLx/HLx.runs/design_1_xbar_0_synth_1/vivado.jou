@@ -2,8 +2,8 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Thu Dec 26 16:29:16 2019
-# Process ID: 30882
+# Start of session at: Fri Dec 27 08:33:39 2019
+# Process ID: 14050
 # Current directory: /home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/design_1_xbar_0_synth_1
 # Command line: vivado -log design_1_xbar_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_xbar_0.tcl
 # Log file: /home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/design_1_xbar_0_synth_1/design_1_xbar_0.vds

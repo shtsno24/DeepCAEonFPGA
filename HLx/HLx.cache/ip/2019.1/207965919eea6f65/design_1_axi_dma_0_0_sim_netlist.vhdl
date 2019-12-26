@@ -1,10 +1,10 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
--- Date        : Thu Dec 26 18:08:40 2019
+-- Date        : Fri Dec 27 08:38:12 2019
 -- Host        : masudalab-ubuntu running 64-bit Ubuntu 18.04.3 LTS
--- Command     : write_vhdl -force -mode funcsim
---               /home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
+--               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ design_1_axi_dma_0_0_sim_netlist.vhdl
 -- Design      : design_1_axi_dma_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -14,7 +14,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_axi_dma_0_0_axi_datamover_fifo is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_fifo is
   port (
     sig_init_done : out STD_LOGIC;
     sig_cmd2mstr_cmd_valid : out STD_LOGIC;
@@ -29,11 +29,9 @@ entity design_1_axi_dma_0_0_axi_datamover_fifo is
     sig_cmd_stat_rst_user_reg_n_cdc_from_reg : in STD_LOGIC;
     \USE_SINGLE_REG.sig_regfifo_dout_reg_reg[98]_0\ : in STD_LOGIC_VECTOR ( 91 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_dma_0_0_axi_datamover_fifo : entity is "axi_datamover_fifo";
-end design_1_axi_dma_0_0_axi_datamover_fifo;
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_fifo;
 
-architecture STRUCTURE of design_1_axi_dma_0_0_axi_datamover_fifo is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_fifo is
   signal \USE_SINGLE_REG.sig_regfifo_empty_reg_i_1__1_n_0\ : STD_LOGIC;
   signal \^use_single_reg.sig_regfifo_empty_reg_reg_0\ : STD_LOGIC;
   signal \USE_SINGLE_REG.sig_regfifo_full_reg_i_1__1_n_0\ : STD_LOGIC;
@@ -1129,7 +1127,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_axi_dma_0_0_axi_datamover_fifo_20 is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_fifo_20 is
   port (
     sig_init_done : out STD_LOGIC;
     sig_cmd2mstr_cmd_valid : out STD_LOGIC;
@@ -1145,10 +1143,10 @@ entity design_1_axi_dma_0_0_axi_datamover_fifo_20 is
     D : in STD_LOGIC_VECTOR ( 91 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_dma_0_0_axi_datamover_fifo_20 : entity is "axi_datamover_fifo";
-end design_1_axi_dma_0_0_axi_datamover_fifo_20;
+  attribute ORIG_REF_NAME of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_fifo_20 : entity is "axi_datamover_fifo";
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_fifo_20;
 
-architecture STRUCTURE of design_1_axi_dma_0_0_axi_datamover_fifo_20 is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_fifo_20 is
   signal \USE_SINGLE_REG.sig_regfifo_empty_reg_i_1_n_0\ : STD_LOGIC;
   signal \^s_axis_mm2s_cmd_tready\ : STD_LOGIC;
   signal \^sig_init_done\ : STD_LOGIC;
@@ -2216,7 +2214,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_axi_dma_0_0_axi_datamover_fifo__parameterized0\ is
+entity \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_fifo__parameterized0\ is
   port (
     sig_init_done_0 : out STD_LOGIC;
     \USE_SINGLE_REG.sig_regfifo_full_reg_reg_0\ : out STD_LOGIC;
@@ -2235,10 +2233,10 @@ entity \design_1_axi_dma_0_0_axi_datamover_fifo__parameterized0\ is
     sig_rsc2stat_status : in STD_LOGIC_VECTOR ( 2 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_axi_dma_0_0_axi_datamover_fifo__parameterized0\ : entity is "axi_datamover_fifo";
-end \design_1_axi_dma_0_0_axi_datamover_fifo__parameterized0\;
+  attribute ORIG_REF_NAME of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_fifo__parameterized0\ : entity is "axi_datamover_fifo";
+end \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_fifo__parameterized0\;
 
-architecture STRUCTURE of \design_1_axi_dma_0_0_axi_datamover_fifo__parameterized0\ is
+architecture STRUCTURE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_fifo__parameterized0\ is
   signal \USE_SINGLE_REG.sig_regfifo_dout_reg[4]_i_1_n_0\ : STD_LOGIC;
   signal \USE_SINGLE_REG.sig_regfifo_dout_reg[5]_i_1_n_0\ : STD_LOGIC;
   signal \USE_SINGLE_REG.sig_regfifo_dout_reg[6]_i_1_n_0\ : STD_LOGIC;
@@ -2425,7 +2423,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_axi_dma_0_0_axi_datamover_fifo__parameterized4\ is
+entity \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_fifo__parameterized4\ is
   port (
     sig_init_done_0 : out STD_LOGIC;
     \USE_SINGLE_REG.sig_regfifo_full_reg_reg_0\ : out STD_LOGIC;
@@ -2447,10 +2445,10 @@ entity \design_1_axi_dma_0_0_axi_datamover_fifo__parameterized4\ is
     D : in STD_LOGIC_VECTOR ( 30 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_axi_dma_0_0_axi_datamover_fifo__parameterized4\ : entity is "axi_datamover_fifo";
-end \design_1_axi_dma_0_0_axi_datamover_fifo__parameterized4\;
+  attribute ORIG_REF_NAME of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_fifo__parameterized4\ : entity is "axi_datamover_fifo";
+end \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_fifo__parameterized4\;
 
-architecture STRUCTURE of \design_1_axi_dma_0_0_axi_datamover_fifo__parameterized4\ is
+architecture STRUCTURE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_fifo__parameterized4\ is
   signal \USE_SINGLE_REG.sig_regfifo_empty_reg_i_1__2_n_0\ : STD_LOGIC;
   signal \^use_single_reg.sig_regfifo_empty_reg_reg_0\ : STD_LOGIC;
   signal \USE_SINGLE_REG.sig_regfifo_full_reg_i_1__2_n_0\ : STD_LOGIC;
@@ -3216,7 +3214,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_axi_dma_0_0_axi_datamover_ibttcc is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_ibttcc is
   port (
     sig_psm_pop_input_cmd : out STD_LOGIC;
     sig_csm_pop_child_cmd : out STD_LOGIC;
@@ -3257,11 +3255,9 @@ entity design_1_axi_dma_0_0_axi_datamover_ibttcc is
     \sig_child_addr_cntr_lsh_reg[11]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     \sig_realigner_btt2_reg[16]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_dma_0_0_axi_datamover_ibttcc : entity is "axi_datamover_ibttcc";
-end design_1_axi_dma_0_0_axi_datamover_ibttcc;
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_ibttcc;
 
-architecture STRUCTURE of design_1_axi_dma_0_0_axi_datamover_ibttcc is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_ibttcc is
   signal \FSM_onehot_sig_csm_state[1]_i_1_n_0\ : STD_LOGIC;
   signal \FSM_onehot_sig_csm_state[1]_i_2_n_0\ : STD_LOGIC;
   signal \FSM_onehot_sig_csm_state[2]_i_1_n_0\ : STD_LOGIC;
@@ -11595,7 +11591,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_axi_dma_0_0_axi_datamover_mssai_skid_buf is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_mssai_skid_buf is
   port (
     \out\ : out STD_LOGIC;
     sig_m_valid_out_reg_0 : out STD_LOGIC;
@@ -11651,11 +11647,9 @@ entity design_1_axi_dma_0_0_axi_datamover_mssai_skid_buf is
     \sig_byte_cntr_reg[0]\ : in STD_LOGIC;
     D : in STD_LOGIC_VECTOR ( 15 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_dma_0_0_axi_datamover_mssai_skid_buf : entity is "axi_datamover_mssai_skid_buf";
-end design_1_axi_dma_0_0_axi_datamover_mssai_skid_buf;
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_mssai_skid_buf;
 
-architecture STRUCTURE of design_1_axi_dma_0_0_axi_datamover_mssai_skid_buf is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_mssai_skid_buf is
   signal \^lsig_first_dbeat\ : STD_LOGIC;
   signal sig_cmd_full0 : STD_LOGIC;
   signal sig_data_reg_out_en : STD_LOGIC;
@@ -13357,7 +13351,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_axi_dma_0_0_axi_datamover_pcc is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_pcc is
   port (
     sig_reset_reg : out STD_LOGIC;
     \in\ : out STD_LOGIC_VECTOR ( 68 downto 0 );
@@ -13383,11 +13377,9 @@ entity design_1_axi_dma_0_0_axi_datamover_pcc is
     sig_inhibit_rdy_n_3 : in STD_LOGIC;
     sig_cmd2addr_valid_reg_0 : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_dma_0_0_axi_datamover_pcc : entity is "axi_datamover_pcc";
-end design_1_axi_dma_0_0_axi_datamover_pcc;
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_pcc;
 
-architecture STRUCTURE of design_1_axi_dma_0_0_axi_datamover_pcc is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_pcc is
   signal \FSM_onehot_sig_pcc_sm_state[1]_i_1_n_0\ : STD_LOGIC;
   signal \FSM_onehot_sig_pcc_sm_state[2]_i_1_n_0\ : STD_LOGIC;
   signal \FSM_onehot_sig_pcc_sm_state[5]_i_1_n_0\ : STD_LOGIC;
@@ -20533,7 +20525,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_axi_dma_0_0_axi_datamover_rd_status_cntl is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_rd_status_cntl is
   port (
     sig_rsc2stat_status : out STD_LOGIC_VECTOR ( 2 downto 0 );
     sig_rsc2stat_status_valid : out STD_LOGIC;
@@ -20545,11 +20537,9 @@ entity design_1_axi_dma_0_0_axi_datamover_rd_status_cntl is
     sig_data2rsc_calc_err : in STD_LOGIC;
     sig_data2rsc_slverr : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_dma_0_0_axi_datamover_rd_status_cntl : entity is "axi_datamover_rd_status_cntl";
-end design_1_axi_dma_0_0_axi_datamover_rd_status_cntl;
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_rd_status_cntl;
 
-architecture STRUCTURE of design_1_axi_dma_0_0_axi_datamover_rd_status_cntl is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_rd_status_cntl is
   signal sig_rd_sts_interr_reg0 : STD_LOGIC;
   signal sig_rd_sts_slverr_reg0 : STD_LOGIC;
   signal \^sig_rsc2stat_status\ : STD_LOGIC_VECTOR ( 2 downto 0 );
@@ -20633,7 +20623,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_axi_dma_0_0_axi_datamover_reset is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_reset is
   port (
     sig_cmd_stat_rst_user_reg_n_cdc_from_reg : out STD_LOGIC;
     sig_rst2all_stop_request_0 : out STD_LOGIC;
@@ -20660,11 +20650,9 @@ entity design_1_axi_dma_0_0_axi_datamover_reset is
     sig_halt_cmplt_reg_1 : in STD_LOGIC;
     sig_addr_reg_empty : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_dma_0_0_axi_datamover_reset : entity is "axi_datamover_reset";
-end design_1_axi_dma_0_0_axi_datamover_reset;
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_reset;
 
-architecture STRUCTURE of design_1_axi_dma_0_0_axi_datamover_reset is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_reset is
   signal \^s2mm_halt_cmplt\ : STD_LOGIC;
   signal \^sig_cmd_stat_rst_user_reg_n_cdc_from_reg\ : STD_LOGIC;
   signal sig_halt_cmplt_i_1_n_0 : STD_LOGIC;
@@ -20800,7 +20788,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_axi_dma_0_0_axi_datamover_reset_14 is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_reset_14 is
   port (
     sig_cmd_stat_rst_user_reg_n_cdc_from_reg : out STD_LOGIC;
     sig_rst2all_stop_request : out STD_LOGIC;
@@ -20826,10 +20814,10 @@ entity design_1_axi_dma_0_0_axi_datamover_reset_14 is
     sig_addr2rsc_calc_error : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_dma_0_0_axi_datamover_reset_14 : entity is "axi_datamover_reset";
-end design_1_axi_dma_0_0_axi_datamover_reset_14;
+  attribute ORIG_REF_NAME of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_reset_14 : entity is "axi_datamover_reset";
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_reset_14;
 
-architecture STRUCTURE of design_1_axi_dma_0_0_axi_datamover_reset_14 is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_reset_14 is
   signal \^ss\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal \^mm2s_halt_cmplt\ : STD_LOGIC;
   signal \^sig_cmd_stat_rst_user_reg_n_cdc_from_reg\ : STD_LOGIC;
@@ -20946,7 +20934,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_axi_dma_0_0_axi_datamover_skid2mm_buf is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_skid2mm_buf is
   port (
     \out\ : out STD_LOGIC;
     m_axi_s2mm_wvalid : out STD_LOGIC;
@@ -20972,11 +20960,9 @@ entity design_1_axi_dma_0_0_axi_datamover_skid2mm_buf is
     \sig_strb_skid_reg_reg[7]_0\ : in STD_LOGIC_VECTOR ( 7 downto 0 );
     \sig_strb_reg_out_reg[7]_0\ : in STD_LOGIC_VECTOR ( 7 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_dma_0_0_axi_datamover_skid2mm_buf : entity is "axi_datamover_skid2mm_buf";
-end design_1_axi_dma_0_0_axi_datamover_skid2mm_buf;
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_skid2mm_buf;
 
-architecture STRUCTURE of design_1_axi_dma_0_0_axi_datamover_skid2mm_buf is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_skid2mm_buf is
   signal sig_data_reg_out_en : STD_LOGIC;
   signal sig_data_skid_mux_out : STD_LOGIC_VECTOR ( 63 downto 0 );
   signal sig_data_skid_reg : STD_LOGIC_VECTOR ( 63 downto 0 );
@@ -23358,7 +23344,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_axi_dma_0_0_axi_datamover_skid_buf is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_skid_buf is
   port (
     \out\ : out STD_LOGIC;
     s_axis_s2mm_tready : out STD_LOGIC;
@@ -23384,11 +23370,9 @@ entity design_1_axi_dma_0_0_axi_datamover_skid_buf is
     s_axis_s2mm_tkeep : in STD_LOGIC_VECTOR ( 1 downto 0 );
     s_axis_s2mm_tdata : in STD_LOGIC_VECTOR ( 15 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_dma_0_0_axi_datamover_skid_buf : entity is "axi_datamover_skid_buf";
-end design_1_axi_dma_0_0_axi_datamover_skid_buf;
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_skid_buf;
 
-architecture STRUCTURE of design_1_axi_dma_0_0_axi_datamover_skid_buf is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_skid_buf is
   signal sig_data_reg_out0 : STD_LOGIC;
   signal sig_data_skid_mux_out : STD_LOGIC_VECTOR ( 15 downto 0 );
   signal sig_data_skid_reg : STD_LOGIC_VECTOR ( 15 downto 0 );
@@ -24203,7 +24187,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_axi_dma_0_0_axi_datamover_skid_buf_13 is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_skid_buf_13 is
   port (
     \out\ : out STD_LOGIC;
     sig_m_valid_dup_reg_0 : out STD_LOGIC;
@@ -24238,10 +24222,10 @@ entity design_1_axi_dma_0_0_axi_datamover_skid_buf_13 is
     \sig_strb_skid_reg_reg[1]_0\ : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_dma_0_0_axi_datamover_skid_buf_13 : entity is "axi_datamover_skid_buf";
-end design_1_axi_dma_0_0_axi_datamover_skid_buf_13;
+  attribute ORIG_REF_NAME of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_skid_buf_13 : entity is "axi_datamover_skid_buf";
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_skid_buf_13;
 
-architecture STRUCTURE of design_1_axi_dma_0_0_axi_datamover_skid_buf_13 is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_skid_buf_13 is
   signal sig_data_reg_out0 : STD_LOGIC;
   signal sig_data_reg_out_en : STD_LOGIC;
   signal sig_m_valid_dup : STD_LOGIC;
@@ -24848,7 +24832,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_axi_dma_0_0_axi_datamover_skid_buf__parameterized0\ is
+entity \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_skid_buf__parameterized0\ is
   port (
     \out\ : out STD_LOGIC;
     sig_m_valid_out_reg_0 : out STD_LOGIC;
@@ -24880,10 +24864,10 @@ entity \design_1_axi_dma_0_0_axi_datamover_skid_buf__parameterized0\ is
     \sig_data_skid_reg_reg[67]_0\ : in STD_LOGIC_VECTOR ( 3 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_axi_dma_0_0_axi_datamover_skid_buf__parameterized0\ : entity is "axi_datamover_skid_buf";
-end \design_1_axi_dma_0_0_axi_datamover_skid_buf__parameterized0\;
+  attribute ORIG_REF_NAME of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_skid_buf__parameterized0\ : entity is "axi_datamover_skid_buf";
+end \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_skid_buf__parameterized0\;
 
-architecture STRUCTURE of \design_1_axi_dma_0_0_axi_datamover_skid_buf__parameterized0\ is
+architecture STRUCTURE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_skid_buf__parameterized0\ is
   signal \GEN_INDET_BTT.lsig_byte_cntr[3]_i_2_n_0\ : STD_LOGIC;
   signal \GEN_INDET_BTT.lsig_byte_cntr[3]_i_3_n_0\ : STD_LOGIC;
   signal \GEN_INDET_BTT.lsig_byte_cntr[3]_i_4_n_0\ : STD_LOGIC;
@@ -27674,7 +27658,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_axi_dma_0_0_axi_datamover_slice is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_slice is
   port (
     slice_insert_valid : out STD_LOGIC;
     \sig_next_strt_offset_reg[0]\ : out STD_LOGIC;
@@ -27715,11 +27699,9 @@ entity design_1_axi_dma_0_0_axi_datamover_slice is
     \out\ : in STD_LOGIC_VECTOR ( 25 downto 0 );
     sig_stream_rst : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_dma_0_0_axi_datamover_slice : entity is "axi_datamover_slice";
-end design_1_axi_dma_0_0_axi_datamover_slice;
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_slice;
 
-architecture STRUCTURE of design_1_axi_dma_0_0_axi_datamover_slice is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_slice is
   signal \I_SCATTER_STROBE_GEN/sig_end_offset_un\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal \I_SCATTER_STROBE_GEN/var_start_vector\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal \areset_d_reg_n_0_[0]\ : STD_LOGIC;
@@ -28181,16 +28163,14 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_axi_dma_0_0_axi_datamover_strb_gen2 is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_strb_gen2 is
   port (
     D : out STD_LOGIC_VECTOR ( 4 downto 0 );
     \out\ : in STD_LOGIC_VECTOR ( 2 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_dma_0_0_axi_datamover_strb_gen2 : entity is "axi_datamover_strb_gen2";
-end design_1_axi_dma_0_0_axi_datamover_strb_gen2;
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_strb_gen2;
 
-architecture STRUCTURE of design_1_axi_dma_0_0_axi_datamover_strb_gen2 is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_strb_gen2 is
   attribute SOFT_HLUTNM : string;
   attribute SOFT_HLUTNM of \sig_next_strt_strb_reg[1]_i_1\ : label is "soft_lutpair255";
   attribute SOFT_HLUTNM of \sig_next_strt_strb_reg[2]_i_1\ : label is "soft_lutpair254";
@@ -28250,7 +28230,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_axi_dma_0_0_axi_dma_lite_if is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma_lite_if is
   port (
     s_axi_lite_awready : out STD_LOGIC;
     s_axi_lite_arready : out STD_LOGIC;
@@ -28345,11 +28325,9 @@ entity design_1_axi_dma_0_0_axi_dma_lite_if is
     \GEN_SYNC_READ.s_axi_lite_rdata_reg[1]_1\ : in STD_LOGIC;
     s_axi_lite_araddr : in STD_LOGIC_VECTOR ( 9 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_dma_0_0_axi_dma_lite_if : entity is "axi_dma_lite_if";
-end design_1_axi_dma_0_0_axi_dma_lite_if;
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma_lite_if;
 
-architecture STRUCTURE of design_1_axi_dma_0_0_axi_dma_lite_if is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma_lite_if is
   signal \GEN_SYNC_READ.s_axi_lite_rdata[0]_i_2_n_0\ : STD_LOGIC;
   signal \GEN_SYNC_READ.s_axi_lite_rdata[0]_i_3_n_0\ : STD_LOGIC;
   signal \GEN_SYNC_READ.s_axi_lite_rdata[0]_i_4_n_0\ : STD_LOGIC;
@@ -30696,7 +30674,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_axi_dma_0_0_axi_dma_mm2s_cmdsts_if is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma_mm2s_cmdsts_if is
   port (
     p_4_out : out STD_LOGIC;
     p_5_out : out STD_LOGIC;
@@ -30720,11 +30698,9 @@ entity design_1_axi_dma_0_0_axi_dma_mm2s_cmdsts_if is
     dma_slverr_reg : in STD_LOGIC;
     dma_decerr_reg : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_dma_0_0_axi_dma_mm2s_cmdsts_if : entity is "axi_dma_mm2s_cmdsts_if";
-end design_1_axi_dma_0_0_axi_dma_mm2s_cmdsts_if;
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma_mm2s_cmdsts_if;
 
-architecture STRUCTURE of design_1_axi_dma_0_0_axi_dma_mm2s_cmdsts_if is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma_mm2s_cmdsts_if is
   signal mm2s_error_i_1_n_0 : STD_LOGIC;
   signal \^p_10_out\ : STD_LOGIC;
   signal \^p_2_out\ : STD_LOGIC;
@@ -30876,7 +30852,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_axi_dma_0_0_axi_dma_mm2s_sts_mngr is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma_mm2s_sts_mngr is
   port (
     p_18_out : out STD_LOGIC;
     p_17_out : out STD_LOGIC;
@@ -30896,11 +30872,9 @@ entity design_1_axi_dma_0_0_axi_dma_mm2s_sts_mngr is
     mm2s_stop_i : in STD_LOGIC;
     p_9_out : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_dma_0_0_axi_dma_mm2s_sts_mngr : entity is "axi_dma_mm2s_sts_mngr";
-end design_1_axi_dma_0_0_axi_dma_mm2s_sts_mngr;
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma_mm2s_sts_mngr;
 
-architecture STRUCTURE of design_1_axi_dma_0_0_axi_dma_mm2s_sts_mngr is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma_mm2s_sts_mngr is
   signal \^all_is_idle_d1\ : STD_LOGIC;
   signal \^p_17_out\ : STD_LOGIC;
 begin
@@ -30962,7 +30936,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_axi_dma_0_0_axi_dma_register is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma_register is
   port (
     dma_interr_reg_0 : out STD_LOGIC;
     dma_slverr_reg_0 : out STD_LOGIC;
@@ -31040,11 +31014,9 @@ entity design_1_axi_dma_0_0_axi_dma_register is
     \GEN_REG_FOR_SMPL.GEN_BUFF_ADDR_EQL64.buffer_address_i_64_reg[0]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     \GEN_REG_FOR_SMPL.buffer_length_i_reg[25]_1\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_dma_0_0_axi_dma_register : entity is "axi_dma_register";
-end design_1_axi_dma_0_0_axi_dma_register;
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma_register;
 
-architecture STRUCTURE of design_1_axi_dma_0_0_axi_dma_register is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma_register is
   signal \GEN_REG_FOR_SMPL.buffer_length_wren_i_3_n_0\ : STD_LOGIC;
   signal \GEN_REG_FOR_SMPL.buffer_length_wren_i_4_n_0\ : STD_LOGIC;
   signal \GEN_REG_FOR_SMPL.buffer_length_wren_i_5_n_0\ : STD_LOGIC;
@@ -32949,7 +32921,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_axi_dma_0_0_axi_dma_register_s2mm is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma_register_s2mm is
   port (
     dma_interr_reg_0 : out STD_LOGIC;
     dma_slverr_reg_0 : out STD_LOGIC;
@@ -33036,11 +33008,9 @@ entity design_1_axi_dma_0_0_axi_dma_register_s2mm is
     \GEN_REG_FOR_SMPL.buffer_length_i_reg[0]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     D : in STD_LOGIC_VECTOR ( 25 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_dma_0_0_axi_dma_register_s2mm : entity is "axi_dma_register_s2mm";
-end design_1_axi_dma_0_0_axi_dma_register_s2mm;
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma_register_s2mm;
 
-architecture STRUCTURE of design_1_axi_dma_0_0_axi_dma_register_s2mm is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma_register_s2mm is
   signal \^gen_reg_for_smpl.buffer_length_i_reg[25]_0\ : STD_LOGIC_VECTOR ( 25 downto 0 );
   signal \^gen_reg_for_smpl.buffer_length_wren_reg_0\ : STD_LOGIC;
   signal \^q\ : STD_LOGIC_VECTOR ( 2 downto 0 );
@@ -34846,7 +34816,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_axi_dma_0_0_axi_dma_reset is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma_reset is
   port (
     \out\ : out STD_LOGIC;
     \GNE_SYNC_RESET.prmry_resetn_reg_0\ : out STD_LOGIC;
@@ -34883,11 +34853,9 @@ entity design_1_axi_dma_0_0_axi_dma_reset is
     \GEN_RESET_FOR_MM2S.mm2s_soft_reset_done_reg_0\ : in STD_LOGIC;
     sig_rst2all_stop_request : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_dma_0_0_axi_dma_reset : entity is "axi_dma_reset";
-end design_1_axi_dma_0_0_axi_dma_reset;
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma_reset;
 
-architecture STRUCTURE of design_1_axi_dma_0_0_axi_dma_reset is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma_reset is
   signal \GNE_SYNC_RESET.halt_i_i_1_n_0\ : STD_LOGIC;
   signal \GNE_SYNC_RESET.min_assert_sftrst_i_1_n_0\ : STD_LOGIC;
   signal \GNE_SYNC_RESET.s_soft_reset_i_i_1_n_0\ : STD_LOGIC;
@@ -35272,7 +35240,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_axi_dma_0_0_axi_dma_reset_1 is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma_reset_1 is
   port (
     \out\ : out STD_LOGIC;
     \GNE_SYNC_RESET.prmry_resetn_reg_0\ : out STD_LOGIC;
@@ -35303,10 +35271,10 @@ entity design_1_axi_dma_0_0_axi_dma_reset_1 is
     sig_rst2all_stop_request_0 : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_dma_0_0_axi_dma_reset_1 : entity is "axi_dma_reset";
-end design_1_axi_dma_0_0_axi_dma_reset_1;
+  attribute ORIG_REF_NAME of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma_reset_1 : entity is "axi_dma_reset";
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma_reset_1;
 
-architecture STRUCTURE of design_1_axi_dma_0_0_axi_dma_reset_1 is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma_reset_1 is
   signal \GNE_SYNC_RESET.halt_i_i_1__0_n_0\ : STD_LOGIC;
   signal \GNE_SYNC_RESET.min_assert_sftrst_i_1_n_0\ : STD_LOGIC;
   signal \GNE_SYNC_RESET.s_soft_reset_i_i_1__0_n_0\ : STD_LOGIC;
@@ -35678,7 +35646,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_axi_dma_0_0_axi_dma_s2mm_cmdsts_if is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma_s2mm_cmdsts_if is
   port (
     smpl_dma_overflow : out STD_LOGIC;
     s_axis_s2mm_cmd_tvalid_split : out STD_LOGIC;
@@ -35708,11 +35676,9 @@ entity design_1_axi_dma_0_0_axi_dma_s2mm_cmdsts_if is
     dma_decerr_reg : in STD_LOGIC;
     \INDETERMINATE_BTT_MODE.s2mm_brcvd_reg[25]_0\ : in STD_LOGIC_VECTOR ( 25 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_dma_0_0_axi_dma_s2mm_cmdsts_if : entity is "axi_dma_s2mm_cmdsts_if";
-end design_1_axi_dma_0_0_axi_dma_s2mm_cmdsts_if;
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma_s2mm_cmdsts_if;
 
-architecture STRUCTURE of design_1_axi_dma_0_0_axi_dma_s2mm_cmdsts_if is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma_s2mm_cmdsts_if is
   signal \INDETERMINATE_BTT_MODE.s2mm_interr_i_reg_n_0\ : STD_LOGIC;
   signal \^m_axis_s2mm_sts_tready\ : STD_LOGIC;
   signal \^p_7_out\ : STD_LOGIC;
@@ -36379,7 +36345,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_axi_dma_0_0_axi_dma_s2mm_sts_mngr is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma_s2mm_sts_mngr is
   port (
     p_19_out : out STD_LOGIC;
     s2mm_halted_set : out STD_LOGIC;
@@ -36399,11 +36365,9 @@ entity design_1_axi_dma_0_0_axi_dma_s2mm_sts_mngr is
     s2mm_stop_i : in STD_LOGIC;
     p_12_out : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_dma_0_0_axi_dma_s2mm_sts_mngr : entity is "axi_dma_s2mm_sts_mngr";
-end design_1_axi_dma_0_0_axi_dma_s2mm_sts_mngr;
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma_s2mm_sts_mngr;
 
-architecture STRUCTURE of design_1_axi_dma_0_0_axi_dma_s2mm_sts_mngr is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma_s2mm_sts_mngr is
   signal \^all_is_idle_d1\ : STD_LOGIC;
   signal \^s2mm_halted_set\ : STD_LOGIC;
 begin
@@ -36465,7 +36429,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_axi_dma_0_0_axi_dma_smple_sm is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma_smple_sm is
   port (
     p_12_out : out STD_LOGIC;
     cmnds_queued_reg_0 : out STD_LOGIC;
@@ -36493,11 +36457,9 @@ entity design_1_axi_dma_0_0_axi_dma_smple_sm is
     \p_1_out__0\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     Q : in STD_LOGIC_VECTOR ( 25 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_dma_0_0_axi_dma_smple_sm : entity is "axi_dma_smple_sm";
-end design_1_axi_dma_0_0_axi_dma_smple_sm;
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma_smple_sm;
 
-architecture STRUCTURE of design_1_axi_dma_0_0_axi_dma_smple_sm is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma_smple_sm is
   signal \FSM_sequential_smpl_cs[0]_i_1__0_n_0\ : STD_LOGIC;
   signal \FSM_sequential_smpl_cs[1]_i_2__0_n_0\ : STD_LOGIC;
   signal \FSM_sequential_smpl_cs[1]_i_3__0_n_0\ : STD_LOGIC;
@@ -37466,7 +37428,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_axi_dma_0_0_axi_dma_smple_sm_35 is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma_smple_sm_35 is
   port (
     p_9_out : out STD_LOGIC;
     cmnds_queued_reg_0 : out STD_LOGIC;
@@ -37495,10 +37457,10 @@ entity design_1_axi_dma_0_0_axi_dma_smple_sm_35 is
     Q : in STD_LOGIC_VECTOR ( 25 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_dma_0_0_axi_dma_smple_sm_35 : entity is "axi_dma_smple_sm";
-end design_1_axi_dma_0_0_axi_dma_smple_sm_35;
+  attribute ORIG_REF_NAME of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma_smple_sm_35 : entity is "axi_dma_smple_sm";
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma_smple_sm_35;
 
-architecture STRUCTURE of design_1_axi_dma_0_0_axi_dma_smple_sm_35 is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma_smple_sm_35 is
   signal \^d\ : STD_LOGIC_VECTOR ( 91 downto 0 );
   signal \FSM_sequential_smpl_cs[0]_i_1_n_0\ : STD_LOGIC;
   signal \FSM_sequential_smpl_cs[1]_i_2_n_0\ : STD_LOGIC;
@@ -38467,7 +38429,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_axi_dma_0_0_axi_dma_sofeof_gen is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma_sofeof_gen is
   port (
     axi_dma_tstvec : out STD_LOGIC_VECTOR ( 1 downto 0 );
     p_0_in : in STD_LOGIC;
@@ -38477,11 +38439,9 @@ entity design_1_axi_dma_0_0_axi_dma_sofeof_gen is
     m_axis_mm2s_tlast : in STD_LOGIC;
     mm2s_prmry_resetn : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_dma_0_0_axi_dma_sofeof_gen : entity is "axi_dma_sofeof_gen";
-end design_1_axi_dma_0_0_axi_dma_sofeof_gen;
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma_sofeof_gen;
 
-architecture STRUCTURE of design_1_axi_dma_0_0_axi_dma_sofeof_gen is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma_sofeof_gen is
   signal \GEN_FOR_SYNC.s_sof_generated_i_1_n_0\ : STD_LOGIC;
   signal \^axi_dma_tstvec\ : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal p_0_out : STD_LOGIC;
@@ -38637,7 +38597,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_axi_dma_0_0_axi_dma_sofeof_gen_0 is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma_sofeof_gen_0 is
   port (
     axi_dma_tstvec : out STD_LOGIC_VECTOR ( 1 downto 0 );
     \GEN_FOR_SYNC.s_last_d1_reg_0\ : in STD_LOGIC;
@@ -38648,10 +38608,10 @@ entity design_1_axi_dma_0_0_axi_dma_sofeof_gen_0 is
     s2mm_prmry_resetn : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_dma_0_0_axi_dma_sofeof_gen_0 : entity is "axi_dma_sofeof_gen";
-end design_1_axi_dma_0_0_axi_dma_sofeof_gen_0;
+  attribute ORIG_REF_NAME of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma_sofeof_gen_0 : entity is "axi_dma_sofeof_gen";
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma_sofeof_gen_0;
 
-architecture STRUCTURE of design_1_axi_dma_0_0_axi_dma_sofeof_gen_0 is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma_sofeof_gen_0 is
   signal \GEN_FOR_SYNC.s_sof_generated_i_1__0_n_0\ : STD_LOGIC;
   signal \^axi_dma_tstvec\ : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal p_0_out : STD_LOGIC;
@@ -38807,17 +38767,15 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_axi_dma_0_0_cdc_sync is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_cdc_sync is
   port (
     scndry_out : out STD_LOGIC;
     axi_resetn : in STD_LOGIC;
     s_axi_lite_aclk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_dma_0_0_cdc_sync : entity is "cdc_sync";
-end design_1_axi_dma_0_0_cdc_sync;
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_cdc_sync;
 
-architecture STRUCTURE of design_1_axi_dma_0_0_cdc_sync is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_cdc_sync is
   signal s_level_out_d1_cdc_to : STD_LOGIC;
   signal s_level_out_d2 : STD_LOGIC;
   signal s_level_out_d3 : STD_LOGIC;
@@ -38886,17 +38844,17 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_axi_dma_0_0_cdc_sync_2 is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_cdc_sync_2 is
   port (
     scndry_out : out STD_LOGIC;
     axi_resetn : in STD_LOGIC;
     s_axi_lite_aclk : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_dma_0_0_cdc_sync_2 : entity is "cdc_sync";
-end design_1_axi_dma_0_0_cdc_sync_2;
+  attribute ORIG_REF_NAME of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_cdc_sync_2 : entity is "cdc_sync";
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_cdc_sync_2;
 
-architecture STRUCTURE of design_1_axi_dma_0_0_cdc_sync_2 is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_cdc_sync_2 is
   signal s_level_out_d1_cdc_to : STD_LOGIC;
   signal s_level_out_d2 : STD_LOGIC;
   signal s_level_out_d3 : STD_LOGIC;
@@ -38965,7 +38923,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_axi_dma_0_0_cntr_incr_decr_addn_f is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_cntr_incr_decr_addn_f is
   port (
     \sig_cmd_stat_rst_user_reg_n_cdc_from_reg__0\ : out STD_LOGIC;
     sig_last_dbeat_reg : out STD_LOGIC;
@@ -39007,11 +38965,9 @@ entity design_1_axi_dma_0_0_cntr_incr_decr_addn_f is
     sig_stream_rst : in STD_LOGIC;
     m_axi_s2mm_aclk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_dma_0_0_cntr_incr_decr_addn_f : entity is "cntr_incr_decr_addn_f";
-end design_1_axi_dma_0_0_cntr_incr_decr_addn_f;
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_cntr_incr_decr_addn_f;
 
-architecture STRUCTURE of design_1_axi_dma_0_0_cntr_incr_decr_addn_f is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_cntr_incr_decr_addn_f is
   signal \^e\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal \^q\ : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal addr_i_p1 : STD_LOGIC_VECTOR ( 2 downto 0 );
@@ -39313,7 +39269,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_axi_dma_0_0_cntr_incr_decr_addn_f_18 is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_cntr_incr_decr_addn_f_18 is
   port (
     fifo_full_p1 : out STD_LOGIC;
     Q : out STD_LOGIC_VECTOR ( 1 downto 0 );
@@ -39350,10 +39306,10 @@ entity design_1_axi_dma_0_0_cntr_incr_decr_addn_f_18 is
     m_axi_mm2s_aclk : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_dma_0_0_cntr_incr_decr_addn_f_18 : entity is "cntr_incr_decr_addn_f";
-end design_1_axi_dma_0_0_cntr_incr_decr_addn_f_18;
+  attribute ORIG_REF_NAME of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_cntr_incr_decr_addn_f_18 : entity is "cntr_incr_decr_addn_f";
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_cntr_incr_decr_addn_f_18;
 
-architecture STRUCTURE of design_1_axi_dma_0_0_cntr_incr_decr_addn_f_18 is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_cntr_incr_decr_addn_f_18 is
   signal \^q\ : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal addr_i_p1 : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal \^sig_dqual_reg_empty_reg\ : STD_LOGIC;
@@ -39613,7 +39569,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_axi_dma_0_0_cntr_incr_decr_addn_f_24 is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_cntr_incr_decr_addn_f_24 is
   port (
     fifo_full_p1 : out STD_LOGIC;
     Q : out STD_LOGIC_VECTOR ( 1 downto 0 );
@@ -39631,10 +39587,10 @@ entity design_1_axi_dma_0_0_cntr_incr_decr_addn_f_24 is
     m_axi_mm2s_aclk : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_dma_0_0_cntr_incr_decr_addn_f_24 : entity is "cntr_incr_decr_addn_f";
-end design_1_axi_dma_0_0_cntr_incr_decr_addn_f_24;
+  attribute ORIG_REF_NAME of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_cntr_incr_decr_addn_f_24 : entity is "cntr_incr_decr_addn_f";
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_cntr_incr_decr_addn_f_24;
 
-architecture STRUCTURE of design_1_axi_dma_0_0_cntr_incr_decr_addn_f_24 is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_cntr_incr_decr_addn_f_24 is
   signal \^q\ : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal addr_i_p1 : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal \^sig_halt_reg_reg\ : STD_LOGIC;
@@ -39748,7 +39704,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_axi_dma_0_0_cntr_incr_decr_addn_f_26 is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_cntr_incr_decr_addn_f_26 is
   port (
     fifo_full_p1 : out STD_LOGIC;
     Q : out STD_LOGIC_VECTOR ( 2 downto 0 );
@@ -39761,10 +39717,10 @@ entity design_1_axi_dma_0_0_cntr_incr_decr_addn_f_26 is
     m_axi_mm2s_aclk : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_dma_0_0_cntr_incr_decr_addn_f_26 : entity is "cntr_incr_decr_addn_f";
-end design_1_axi_dma_0_0_cntr_incr_decr_addn_f_26;
+  attribute ORIG_REF_NAME of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_cntr_incr_decr_addn_f_26 : entity is "cntr_incr_decr_addn_f";
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_cntr_incr_decr_addn_f_26;
 
-architecture STRUCTURE of design_1_axi_dma_0_0_cntr_incr_decr_addn_f_26 is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_cntr_incr_decr_addn_f_26 is
   signal \^q\ : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal addr_i_p1 : STD_LOGIC_VECTOR ( 2 downto 0 );
   attribute SOFT_HLUTNM : string;
@@ -39850,7 +39806,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_axi_dma_0_0_cntr_incr_decr_addn_f_4 is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_cntr_incr_decr_addn_f_4 is
   port (
     fifo_full_p1 : out STD_LOGIC;
     Q : out STD_LOGIC_VECTOR ( 1 downto 0 );
@@ -39865,10 +39821,10 @@ entity design_1_axi_dma_0_0_cntr_incr_decr_addn_f_4 is
     m_axi_s2mm_aclk : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_dma_0_0_cntr_incr_decr_addn_f_4 : entity is "cntr_incr_decr_addn_f";
-end design_1_axi_dma_0_0_cntr_incr_decr_addn_f_4;
+  attribute ORIG_REF_NAME of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_cntr_incr_decr_addn_f_4 : entity is "cntr_incr_decr_addn_f";
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_cntr_incr_decr_addn_f_4;
 
-architecture STRUCTURE of design_1_axi_dma_0_0_cntr_incr_decr_addn_f_4 is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_cntr_incr_decr_addn_f_4 is
   signal \^q\ : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal addr_i_p1 : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal \^sig_push_addr_reg1_out\ : STD_LOGIC;
@@ -39966,7 +39922,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_axi_dma_0_0_cntr_incr_decr_addn_f_5 is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_cntr_incr_decr_addn_f_5 is
   port (
     fifo_full_p1 : out STD_LOGIC;
     Q : out STD_LOGIC_VECTOR ( 2 downto 0 );
@@ -39986,10 +39942,10 @@ entity design_1_axi_dma_0_0_cntr_incr_decr_addn_f_5 is
     m_axi_s2mm_aclk : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_dma_0_0_cntr_incr_decr_addn_f_5 : entity is "cntr_incr_decr_addn_f";
-end design_1_axi_dma_0_0_cntr_incr_decr_addn_f_5;
+  attribute ORIG_REF_NAME of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_cntr_incr_decr_addn_f_5 : entity is "cntr_incr_decr_addn_f";
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_cntr_incr_decr_addn_f_5;
 
-architecture STRUCTURE of design_1_axi_dma_0_0_cntr_incr_decr_addn_f_5 is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_cntr_incr_decr_addn_f_5 is
   signal \^q\ : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal addr_i_p1 : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal sig_sm_pop_cmd_fifo_i_2_n_0 : STD_LOGIC;
@@ -40126,7 +40082,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_axi_dma_0_0_cntr_incr_decr_addn_f__parameterized0\ is
+entity \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_cntr_incr_decr_addn_f__parameterized0\ is
   port (
     fifo_full_p1 : out STD_LOGIC;
     Q : out STD_LOGIC_VECTOR ( 3 downto 0 );
@@ -40141,10 +40097,10 @@ entity \design_1_axi_dma_0_0_cntr_incr_decr_addn_f__parameterized0\ is
     m_axi_s2mm_aclk : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_axi_dma_0_0_cntr_incr_decr_addn_f__parameterized0\ : entity is "cntr_incr_decr_addn_f";
-end \design_1_axi_dma_0_0_cntr_incr_decr_addn_f__parameterized0\;
+  attribute ORIG_REF_NAME of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_cntr_incr_decr_addn_f__parameterized0\ : entity is "cntr_incr_decr_addn_f";
+end \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_cntr_incr_decr_addn_f__parameterized0\;
 
-architecture STRUCTURE of \design_1_axi_dma_0_0_cntr_incr_decr_addn_f__parameterized0\ is
+architecture STRUCTURE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_cntr_incr_decr_addn_f__parameterized0\ is
   signal \INFERRED_GEN.cnt_i[1]_i_2_n_0\ : STD_LOGIC;
   signal \^q\ : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal addr_i_p1 : STD_LOGIC_VECTOR ( 3 downto 0 );
@@ -40274,7 +40230,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_axi_dma_0_0_cntr_incr_decr_addn_f__parameterized0_3\ is
+entity \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_cntr_incr_decr_addn_f__parameterized0_3\ is
   port (
     fifo_full_p1 : out STD_LOGIC;
     Q : out STD_LOGIC_VECTOR ( 3 downto 0 );
@@ -40294,10 +40250,10 @@ entity \design_1_axi_dma_0_0_cntr_incr_decr_addn_f__parameterized0_3\ is
     m_axi_s2mm_aclk : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_axi_dma_0_0_cntr_incr_decr_addn_f__parameterized0_3\ : entity is "cntr_incr_decr_addn_f";
-end \design_1_axi_dma_0_0_cntr_incr_decr_addn_f__parameterized0_3\;
+  attribute ORIG_REF_NAME of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_cntr_incr_decr_addn_f__parameterized0_3\ : entity is "cntr_incr_decr_addn_f";
+end \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_cntr_incr_decr_addn_f__parameterized0_3\;
 
-architecture STRUCTURE of \design_1_axi_dma_0_0_cntr_incr_decr_addn_f__parameterized0_3\ is
+architecture STRUCTURE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_cntr_incr_decr_addn_f__parameterized0_3\ is
   signal \^inferred_gen.cnt_i_reg[3]_0\ : STD_LOGIC;
   signal \^q\ : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal addr_i_p1 : STD_LOGIC_VECTOR ( 3 downto 0 );
@@ -40467,7 +40423,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_axi_dma_0_0_cntr_incr_decr_addn_f__parameterized1\ is
+entity \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_cntr_incr_decr_addn_f__parameterized1\ is
   port (
     sig_eop_halt_xfer_reg : out STD_LOGIC_VECTOR ( 0 to 0 );
     Q : out STD_LOGIC_VECTOR ( 4 downto 0 );
@@ -40494,10 +40450,10 @@ entity \design_1_axi_dma_0_0_cntr_incr_decr_addn_f__parameterized1\ is
     m_axi_s2mm_aclk : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_axi_dma_0_0_cntr_incr_decr_addn_f__parameterized1\ : entity is "cntr_incr_decr_addn_f";
-end \design_1_axi_dma_0_0_cntr_incr_decr_addn_f__parameterized1\;
+  attribute ORIG_REF_NAME of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_cntr_incr_decr_addn_f__parameterized1\ : entity is "cntr_incr_decr_addn_f";
+end \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_cntr_incr_decr_addn_f__parameterized1\;
 
-architecture STRUCTURE of \design_1_axi_dma_0_0_cntr_incr_decr_addn_f__parameterized1\ is
+architecture STRUCTURE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_cntr_incr_decr_addn_f__parameterized1\ is
   signal FIFO_Full_i_2_n_0 : STD_LOGIC;
   signal FIFO_Full_i_3_n_0 : STD_LOGIC;
   signal \INFERRED_GEN.cnt_i[3]_i_2__1_n_0\ : STD_LOGIC;
@@ -40749,7 +40705,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_axi_dma_0_0_dynshreg_f is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_dynshreg_f is
   port (
     p_0_in : out STD_LOGIC;
     \out\ : out STD_LOGIC_VECTOR ( 71 downto 0 );
@@ -40761,11 +40717,9 @@ entity design_1_axi_dma_0_0_dynshreg_f is
     Q : in STD_LOGIC_VECTOR ( 1 downto 0 );
     m_axi_s2mm_aclk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_dma_0_0_dynshreg_f : entity is "dynshreg_f";
-end design_1_axi_dma_0_0_dynshreg_f;
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_dynshreg_f;
 
-architecture STRUCTURE of design_1_axi_dma_0_0_dynshreg_f is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_dynshreg_f is
   signal \^out\ : STD_LOGIC_VECTOR ( 71 downto 0 );
   signal \^sig_wr_fifo\ : STD_LOGIC;
   attribute srl_bus_name : string;
@@ -41948,7 +41902,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_axi_dma_0_0_dynshreg_f_25 is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_dynshreg_f_25 is
   port (
     FIFO_Full_reg : out STD_LOGIC;
     sig_calc_error_reg_reg : out STD_LOGIC;
@@ -41961,10 +41915,10 @@ entity design_1_axi_dma_0_0_dynshreg_f_25 is
     m_axi_mm2s_aclk : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_dma_0_0_dynshreg_f_25 : entity is "dynshreg_f";
-end design_1_axi_dma_0_0_dynshreg_f_25;
+  attribute ORIG_REF_NAME of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_dynshreg_f_25 : entity is "dynshreg_f";
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_dynshreg_f_25;
 
-architecture STRUCTURE of design_1_axi_dma_0_0_dynshreg_f_25 is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_dynshreg_f_25 is
   signal \^fifo_full_reg\ : STD_LOGIC;
   signal \^out\ : STD_LOGIC_VECTOR ( 70 downto 0 );
   attribute srl_bus_name : string;
@@ -43131,7 +43085,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_axi_dma_0_0_dynshreg_f__parameterized0\ is
+entity \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_dynshreg_f__parameterized0\ is
   port (
     sig_wr_fifo : out STD_LOGIC;
     \sig_cmd_stat_rst_user_reg_n_cdc_from_reg__0\ : out STD_LOGIC;
@@ -43153,10 +43107,10 @@ entity \design_1_axi_dma_0_0_dynshreg_f__parameterized0\ is
     m_axi_s2mm_aclk : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_axi_dma_0_0_dynshreg_f__parameterized0\ : entity is "dynshreg_f";
-end \design_1_axi_dma_0_0_dynshreg_f__parameterized0\;
+  attribute ORIG_REF_NAME of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_dynshreg_f__parameterized0\ : entity is "dynshreg_f";
+end \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_dynshreg_f__parameterized0\;
 
-architecture STRUCTURE of \design_1_axi_dma_0_0_dynshreg_f__parameterized0\ is
+architecture STRUCTURE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_dynshreg_f__parameterized0\ is
   signal \FSM_sequential_sig_cmdcntl_sm_state[0]_i_2_n_0\ : STD_LOGIC;
   signal \FSM_sequential_sig_cmdcntl_sm_state[1]_i_3_n_0\ : STD_LOGIC;
   signal \^out\ : STD_LOGIC_VECTOR ( 29 downto 0 );
@@ -43741,7 +43695,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_axi_dma_0_0_dynshreg_f__parameterized0_19\ is
+entity \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_dynshreg_f__parameterized0_19\ is
   port (
     \sig_cmd_stat_rst_user_reg_n_cdc_from_reg__0\ : out STD_LOGIC;
     FIFO_Full_reg : out STD_LOGIC;
@@ -43764,10 +43718,10 @@ entity \design_1_axi_dma_0_0_dynshreg_f__parameterized0_19\ is
     m_axi_mm2s_aclk : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_axi_dma_0_0_dynshreg_f__parameterized0_19\ : entity is "dynshreg_f";
-end \design_1_axi_dma_0_0_dynshreg_f__parameterized0_19\;
+  attribute ORIG_REF_NAME of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_dynshreg_f__parameterized0_19\ : entity is "dynshreg_f";
+end \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_dynshreg_f__parameterized0_19\;
 
-architecture STRUCTURE of \design_1_axi_dma_0_0_dynshreg_f__parameterized0_19\ is
+architecture STRUCTURE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_dynshreg_f__parameterized0_19\ is
   signal \^fifo_full_reg\ : STD_LOGIC;
   signal \^out\ : STD_LOGIC_VECTOR ( 21 downto 0 );
   signal sig_cmd_fifo_data_out : STD_LOGIC_VECTOR ( 7 to 7 );
@@ -44234,7 +44188,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_axi_dma_0_0_dynshreg_f__parameterized1\ is
+entity \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_dynshreg_f__parameterized1\ is
   port (
     sel : out STD_LOGIC;
     \out\ : out STD_LOGIC_VECTOR ( 1 downto 0 );
@@ -44246,10 +44200,10 @@ entity \design_1_axi_dma_0_0_dynshreg_f__parameterized1\ is
     m_axi_mm2s_aclk : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_axi_dma_0_0_dynshreg_f__parameterized1\ : entity is "dynshreg_f";
-end \design_1_axi_dma_0_0_dynshreg_f__parameterized1\;
+  attribute ORIG_REF_NAME of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_dynshreg_f__parameterized1\ : entity is "dynshreg_f";
+end \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_dynshreg_f__parameterized1\;
 
-architecture STRUCTURE of \design_1_axi_dma_0_0_dynshreg_f__parameterized1\ is
+architecture STRUCTURE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_dynshreg_f__parameterized1\ is
   signal \^sel\ : STD_LOGIC;
   attribute srl_bus_name : string;
   attribute srl_bus_name of \INFERRED_GEN.data_reg[3][0]_srl4\ : label is "U0/\I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/OMIT_DRE_CNTL.I_DRE_CNTL_FIFO/USE_SRL_FIFO.I_SYNC_FIFO/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN.data_reg[3] ";
@@ -44302,7 +44256,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_axi_dma_0_0_dynshreg_f__parameterized2\ is
+entity \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_dynshreg_f__parameterized2\ is
   port (
     \GEN_ENABLE_INDET_BTT.sig_coelsc_decerr_reg_reg\ : out STD_LOGIC;
     \m_axi_s2mm_bresp[1]\ : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -44315,10 +44269,10 @@ entity \design_1_axi_dma_0_0_dynshreg_f__parameterized2\ is
     m_axi_s2mm_aclk : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_axi_dma_0_0_dynshreg_f__parameterized2\ : entity is "dynshreg_f";
-end \design_1_axi_dma_0_0_dynshreg_f__parameterized2\;
+  attribute ORIG_REF_NAME of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_dynshreg_f__parameterized2\ : entity is "dynshreg_f";
+end \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_dynshreg_f__parameterized2\;
 
-architecture STRUCTURE of \design_1_axi_dma_0_0_dynshreg_f__parameterized2\ is
+architecture STRUCTURE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_dynshreg_f__parameterized2\ is
   signal \^m_axi_s2mm_bresp[1]\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal sig_wresp_sfifo_out : STD_LOGIC_VECTOR ( 0 to 0 );
   attribute SOFT_HLUTNM : string;
@@ -44387,7 +44341,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_axi_dma_0_0_dynshreg_f__parameterized3\ is
+entity \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_dynshreg_f__parameterized3\ is
   port (
     p_0_in : out STD_LOGIC;
     \out\ : out STD_LOGIC_VECTOR ( 28 downto 0 );
@@ -44408,10 +44362,10 @@ entity \design_1_axi_dma_0_0_dynshreg_f__parameterized3\ is
     m_axi_s2mm_aclk : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_axi_dma_0_0_dynshreg_f__parameterized3\ : entity is "dynshreg_f";
-end \design_1_axi_dma_0_0_dynshreg_f__parameterized3\;
+  attribute ORIG_REF_NAME of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_dynshreg_f__parameterized3\ : entity is "dynshreg_f";
+end \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_dynshreg_f__parameterized3\;
 
-architecture STRUCTURE of \design_1_axi_dma_0_0_dynshreg_f__parameterized3\ is
+architecture STRUCTURE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_dynshreg_f__parameterized3\ is
   signal \^fifo_full_reg\ : STD_LOGIC;
   signal \^out\ : STD_LOGIC_VECTOR ( 28 downto 0 );
   attribute SOFT_HLUTNM : string;
@@ -44953,7 +44907,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_axi_dma_0_0_dynshreg_f__parameterized4\ is
+entity \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_dynshreg_f__parameterized4\ is
   port (
     sig_btt_eq_0_reg : out STD_LOGIC;
     \GEN_INDET_BTT.lsig_absorb2tlast_reg\ : out STD_LOGIC;
@@ -44998,10 +44952,10 @@ entity \design_1_axi_dma_0_0_dynshreg_f__parameterized4\ is
     m_axi_s2mm_aclk : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_axi_dma_0_0_dynshreg_f__parameterized4\ : entity is "dynshreg_f";
-end \design_1_axi_dma_0_0_dynshreg_f__parameterized4\;
+  attribute ORIG_REF_NAME of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_dynshreg_f__parameterized4\ : entity is "dynshreg_f";
+end \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_dynshreg_f__parameterized4\;
 
-architecture STRUCTURE of \design_1_axi_dma_0_0_dynshreg_f__parameterized4\ is
+architecture STRUCTURE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_dynshreg_f__parameterized4\ is
   signal \^gen_indet_btt.lsig_absorb2tlast_reg\ : STD_LOGIC;
   signal \^lsig_set_absorb2tlast\ : STD_LOGIC;
   signal \^out\ : STD_LOGIC_VECTOR ( 4 downto 0 );
@@ -45277,7 +45231,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_axi_dma_0_0_dynshreg_f__parameterized5\ is
+entity \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_dynshreg_f__parameterized5\ is
   port (
     D : out STD_LOGIC_VECTOR ( 0 to 0 );
     \out\ : out STD_LOGIC_VECTOR ( 8 downto 0 );
@@ -45299,10 +45253,10 @@ entity \design_1_axi_dma_0_0_dynshreg_f__parameterized5\ is
     m_axi_s2mm_aclk : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_axi_dma_0_0_dynshreg_f__parameterized5\ : entity is "dynshreg_f";
-end \design_1_axi_dma_0_0_dynshreg_f__parameterized5\;
+  attribute ORIG_REF_NAME of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_dynshreg_f__parameterized5\ : entity is "dynshreg_f";
+end \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_dynshreg_f__parameterized5\;
 
-architecture STRUCTURE of \design_1_axi_dma_0_0_dynshreg_f__parameterized5\ is
+architecture STRUCTURE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_dynshreg_f__parameterized5\ is
   signal \^out\ : STD_LOGIC_VECTOR ( 8 downto 0 );
   signal sig_cmd_fifo_data_out : STD_LOGIC_VECTOR ( 7 to 7 );
   signal \^sig_wr_fifo\ : STD_LOGIC;
@@ -45530,7 +45484,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_axi_dma_0_0_xpm_counter_updn__parameterized0\ is
+entity \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized0\ is
   port (
     d_out_reg : out STD_LOGIC;
     ram_wr_en_pf : in STD_LOGIC;
@@ -45543,10 +45497,10 @@ entity \design_1_axi_dma_0_0_xpm_counter_updn__parameterized0\ is
     wr_clk : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_axi_dma_0_0_xpm_counter_updn__parameterized0\ : entity is "xpm_counter_updn";
-end \design_1_axi_dma_0_0_xpm_counter_updn__parameterized0\;
+  attribute ORIG_REF_NAME of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized0\ : entity is "xpm_counter_updn";
+end \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized0\;
 
-architecture STRUCTURE of \design_1_axi_dma_0_0_xpm_counter_updn__parameterized0\ is
+architecture STRUCTURE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized0\ is
   signal \count_value_i[0]_i_1__1_n_0\ : STD_LOGIC;
   signal \count_value_i[1]_i_1__1_n_0\ : STD_LOGIC;
   signal \count_value_i[2]_i_1__2_n_0\ : STD_LOGIC;
@@ -45790,7 +45744,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_axi_dma_0_0_xpm_counter_updn__parameterized0_33\ is
+entity \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized0_33\ is
   port (
     d_out_reg : out STD_LOGIC;
     ram_wr_en_pf : in STD_LOGIC;
@@ -45803,10 +45757,10 @@ entity \design_1_axi_dma_0_0_xpm_counter_updn__parameterized0_33\ is
     wr_clk : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_axi_dma_0_0_xpm_counter_updn__parameterized0_33\ : entity is "xpm_counter_updn";
-end \design_1_axi_dma_0_0_xpm_counter_updn__parameterized0_33\;
+  attribute ORIG_REF_NAME of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized0_33\ : entity is "xpm_counter_updn";
+end \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized0_33\;
 
-architecture STRUCTURE of \design_1_axi_dma_0_0_xpm_counter_updn__parameterized0_33\ is
+architecture STRUCTURE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized0_33\ is
   signal \count_value_i[0]_i_1__1_n_0\ : STD_LOGIC;
   signal \count_value_i[1]_i_1__1_n_0\ : STD_LOGIC;
   signal \count_value_i[2]_i_1__2_n_0\ : STD_LOGIC;
@@ -46050,7 +46004,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_axi_dma_0_0_xpm_counter_updn__parameterized1\ is
+entity \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized1\ is
   port (
     D : out STD_LOGIC_VECTOR ( 1 downto 0 );
     count_value_i : out STD_LOGIC_VECTOR ( 1 downto 0 );
@@ -46064,10 +46018,10 @@ entity \design_1_axi_dma_0_0_xpm_counter_updn__parameterized1\ is
     wr_clk : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_axi_dma_0_0_xpm_counter_updn__parameterized1\ : entity is "xpm_counter_updn";
-end \design_1_axi_dma_0_0_xpm_counter_updn__parameterized1\;
+  attribute ORIG_REF_NAME of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized1\ : entity is "xpm_counter_updn";
+end \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized1\;
 
-architecture STRUCTURE of \design_1_axi_dma_0_0_xpm_counter_updn__parameterized1\ is
+architecture STRUCTURE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized1\ is
   signal \^count_value_i\ : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal \count_value_i[0]_i_1_n_0\ : STD_LOGIC;
   signal \count_value_i[1]_i_1_n_0\ : STD_LOGIC;
@@ -46189,7 +46143,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_axi_dma_0_0_xpm_counter_updn__parameterized1_27\ is
+entity \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized1_27\ is
   port (
     S : out STD_LOGIC_VECTOR ( 1 downto 0 );
     DI : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -46203,10 +46157,10 @@ entity \design_1_axi_dma_0_0_xpm_counter_updn__parameterized1_27\ is
     wr_clk : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_axi_dma_0_0_xpm_counter_updn__parameterized1_27\ : entity is "xpm_counter_updn";
-end \design_1_axi_dma_0_0_xpm_counter_updn__parameterized1_27\;
+  attribute ORIG_REF_NAME of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized1_27\ : entity is "xpm_counter_updn";
+end \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized1_27\;
 
-architecture STRUCTURE of \design_1_axi_dma_0_0_xpm_counter_updn__parameterized1_27\ is
+architecture STRUCTURE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized1_27\ is
   signal \^di\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal count_value_i : STD_LOGIC_VECTOR ( 0 to 0 );
   signal \count_value_i[0]_i_1_n_0\ : STD_LOGIC;
@@ -46314,7 +46268,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_axi_dma_0_0_xpm_counter_updn__parameterized1_8\ is
+entity \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized1_8\ is
   port (
     S : out STD_LOGIC_VECTOR ( 1 downto 0 );
     DI : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -46328,10 +46282,10 @@ entity \design_1_axi_dma_0_0_xpm_counter_updn__parameterized1_8\ is
     wr_clk : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_axi_dma_0_0_xpm_counter_updn__parameterized1_8\ : entity is "xpm_counter_updn";
-end \design_1_axi_dma_0_0_xpm_counter_updn__parameterized1_8\;
+  attribute ORIG_REF_NAME of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized1_8\ : entity is "xpm_counter_updn";
+end \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized1_8\;
 
-architecture STRUCTURE of \design_1_axi_dma_0_0_xpm_counter_updn__parameterized1_8\ is
+architecture STRUCTURE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized1_8\ is
   signal \^di\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal count_value_i : STD_LOGIC_VECTOR ( 0 to 0 );
   signal \count_value_i[0]_i_1_n_0\ : STD_LOGIC;
@@ -46439,7 +46393,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_axi_dma_0_0_xpm_counter_updn__parameterized2\ is
+entity \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized2\ is
   port (
     DI : out STD_LOGIC_VECTOR ( 0 to 0 );
     Q : out STD_LOGIC_VECTOR ( 7 downto 0 );
@@ -46465,10 +46419,10 @@ entity \design_1_axi_dma_0_0_xpm_counter_updn__parameterized2\ is
     wr_clk : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_axi_dma_0_0_xpm_counter_updn__parameterized2\ : entity is "xpm_counter_updn";
-end \design_1_axi_dma_0_0_xpm_counter_updn__parameterized2\;
+  attribute ORIG_REF_NAME of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized2\ : entity is "xpm_counter_updn";
+end \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized2\;
 
-architecture STRUCTURE of \design_1_axi_dma_0_0_xpm_counter_updn__parameterized2\ is
+architecture STRUCTURE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized2\ is
   signal \^e\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal \^q\ : STD_LOGIC_VECTOR ( 7 downto 0 );
   signal \count_value_i[0]_i_1__2_n_0\ : STD_LOGIC;
@@ -47036,7 +46990,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_axi_dma_0_0_xpm_counter_updn__parameterized2_10\ is
+entity \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized2_10\ is
   port (
     ram_empty_i0 : out STD_LOGIC;
     \count_value_i_reg[0]_0\ : out STD_LOGIC;
@@ -47059,10 +47013,10 @@ entity \design_1_axi_dma_0_0_xpm_counter_updn__parameterized2_10\ is
     wr_clk : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_axi_dma_0_0_xpm_counter_updn__parameterized2_10\ : entity is "xpm_counter_updn";
-end \design_1_axi_dma_0_0_xpm_counter_updn__parameterized2_10\;
+  attribute ORIG_REF_NAME of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized2_10\ : entity is "xpm_counter_updn";
+end \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized2_10\;
 
-architecture STRUCTURE of \design_1_axi_dma_0_0_xpm_counter_updn__parameterized2_10\ is
+architecture STRUCTURE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized2_10\ is
   signal \^q\ : STD_LOGIC_VECTOR ( 6 downto 0 );
   signal \count_value_i[0]_i_1_n_0\ : STD_LOGIC;
   signal \count_value_i[1]_i_1_n_0\ : STD_LOGIC;
@@ -47448,7 +47402,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_axi_dma_0_0_xpm_counter_updn__parameterized2_28\ is
+entity \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized2_28\ is
   port (
     DI : out STD_LOGIC_VECTOR ( 0 to 0 );
     Q : out STD_LOGIC_VECTOR ( 7 downto 0 );
@@ -47474,10 +47428,10 @@ entity \design_1_axi_dma_0_0_xpm_counter_updn__parameterized2_28\ is
     wr_clk : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_axi_dma_0_0_xpm_counter_updn__parameterized2_28\ : entity is "xpm_counter_updn";
-end \design_1_axi_dma_0_0_xpm_counter_updn__parameterized2_28\;
+  attribute ORIG_REF_NAME of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized2_28\ : entity is "xpm_counter_updn";
+end \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized2_28\;
 
-architecture STRUCTURE of \design_1_axi_dma_0_0_xpm_counter_updn__parameterized2_28\ is
+architecture STRUCTURE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized2_28\ is
   signal \^e\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal \^q\ : STD_LOGIC_VECTOR ( 7 downto 0 );
   signal \count_value_i[0]_i_1__2_n_0\ : STD_LOGIC;
@@ -48045,7 +47999,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_axi_dma_0_0_xpm_counter_updn__parameterized2_31\ is
+entity \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized2_31\ is
   port (
     ram_empty_i0 : out STD_LOGIC;
     \count_value_i_reg[0]_0\ : out STD_LOGIC;
@@ -48068,10 +48022,10 @@ entity \design_1_axi_dma_0_0_xpm_counter_updn__parameterized2_31\ is
     wr_clk : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_axi_dma_0_0_xpm_counter_updn__parameterized2_31\ : entity is "xpm_counter_updn";
-end \design_1_axi_dma_0_0_xpm_counter_updn__parameterized2_31\;
+  attribute ORIG_REF_NAME of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized2_31\ : entity is "xpm_counter_updn";
+end \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized2_31\;
 
-architecture STRUCTURE of \design_1_axi_dma_0_0_xpm_counter_updn__parameterized2_31\ is
+architecture STRUCTURE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized2_31\ is
   signal \^q\ : STD_LOGIC_VECTOR ( 6 downto 0 );
   signal \count_value_i[0]_i_1_n_0\ : STD_LOGIC;
   signal \count_value_i[1]_i_1_n_0\ : STD_LOGIC;
@@ -48457,7 +48411,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_axi_dma_0_0_xpm_counter_updn__parameterized3\ is
+entity \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized3\ is
   port (
     \count_value_i_reg[1]_0\ : out STD_LOGIC;
     \count_value_i_reg[2]_0\ : in STD_LOGIC;
@@ -48470,10 +48424,10 @@ entity \design_1_axi_dma_0_0_xpm_counter_updn__parameterized3\ is
     wr_clk : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_axi_dma_0_0_xpm_counter_updn__parameterized3\ : entity is "xpm_counter_updn";
-end \design_1_axi_dma_0_0_xpm_counter_updn__parameterized3\;
+  attribute ORIG_REF_NAME of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized3\ : entity is "xpm_counter_updn";
+end \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized3\;
 
-architecture STRUCTURE of \design_1_axi_dma_0_0_xpm_counter_updn__parameterized3\ is
+architecture STRUCTURE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized3\ is
   signal \count_value_i[0]_i_1__3_n_0\ : STD_LOGIC;
   signal \count_value_i[1]_i_1__2_n_0\ : STD_LOGIC;
   signal \count_value_i[2]_i_1_n_0\ : STD_LOGIC;
@@ -48711,7 +48665,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_axi_dma_0_0_xpm_counter_updn__parameterized3_11\ is
+entity \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized3_11\ is
   port (
     Q : out STD_LOGIC_VECTOR ( 6 downto 0 );
     \count_value_i_reg[2]_0\ : out STD_LOGIC;
@@ -48729,10 +48683,10 @@ entity \design_1_axi_dma_0_0_xpm_counter_updn__parameterized3_11\ is
     wr_clk : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_axi_dma_0_0_xpm_counter_updn__parameterized3_11\ : entity is "xpm_counter_updn";
-end \design_1_axi_dma_0_0_xpm_counter_updn__parameterized3_11\;
+  attribute ORIG_REF_NAME of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized3_11\ : entity is "xpm_counter_updn";
+end \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized3_11\;
 
-architecture STRUCTURE of \design_1_axi_dma_0_0_xpm_counter_updn__parameterized3_11\ is
+architecture STRUCTURE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized3_11\ is
   signal \^q\ : STD_LOGIC_VECTOR ( 6 downto 0 );
   signal \count_value_i[0]_i_1__0_n_0\ : STD_LOGIC;
   signal \count_value_i[1]_i_1__0_n_0\ : STD_LOGIC;
@@ -49051,7 +49005,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_axi_dma_0_0_xpm_counter_updn__parameterized3_29\ is
+entity \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized3_29\ is
   port (
     \count_value_i_reg[1]_0\ : out STD_LOGIC;
     \count_value_i_reg[2]_0\ : in STD_LOGIC;
@@ -49064,10 +49018,10 @@ entity \design_1_axi_dma_0_0_xpm_counter_updn__parameterized3_29\ is
     wr_clk : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_axi_dma_0_0_xpm_counter_updn__parameterized3_29\ : entity is "xpm_counter_updn";
-end \design_1_axi_dma_0_0_xpm_counter_updn__parameterized3_29\;
+  attribute ORIG_REF_NAME of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized3_29\ : entity is "xpm_counter_updn";
+end \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized3_29\;
 
-architecture STRUCTURE of \design_1_axi_dma_0_0_xpm_counter_updn__parameterized3_29\ is
+architecture STRUCTURE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized3_29\ is
   signal \count_value_i[0]_i_1__3_n_0\ : STD_LOGIC;
   signal \count_value_i[1]_i_1__2_n_0\ : STD_LOGIC;
   signal \count_value_i[2]_i_1_n_0\ : STD_LOGIC;
@@ -49305,7 +49259,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_axi_dma_0_0_xpm_counter_updn__parameterized3_32\ is
+entity \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized3_32\ is
   port (
     Q : out STD_LOGIC_VECTOR ( 6 downto 0 );
     \count_value_i_reg[2]_0\ : out STD_LOGIC;
@@ -49323,10 +49277,10 @@ entity \design_1_axi_dma_0_0_xpm_counter_updn__parameterized3_32\ is
     wr_clk : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_axi_dma_0_0_xpm_counter_updn__parameterized3_32\ : entity is "xpm_counter_updn";
-end \design_1_axi_dma_0_0_xpm_counter_updn__parameterized3_32\;
+  attribute ORIG_REF_NAME of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized3_32\ : entity is "xpm_counter_updn";
+end \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized3_32\;
 
-architecture STRUCTURE of \design_1_axi_dma_0_0_xpm_counter_updn__parameterized3_32\ is
+architecture STRUCTURE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized3_32\ is
   signal \^q\ : STD_LOGIC_VECTOR ( 6 downto 0 );
   signal \count_value_i[0]_i_1__0_n_0\ : STD_LOGIC;
   signal \count_value_i[1]_i_1__0_n_0\ : STD_LOGIC;
@@ -49645,7 +49599,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_axi_dma_0_0_xpm_counter_updn__parameterized5\ is
+entity \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized5\ is
   port (
     sig_clr_dbc_reg_reg : out STD_LOGIC;
     ram_wr_en_pf : in STD_LOGIC;
@@ -49655,10 +49609,10 @@ entity \design_1_axi_dma_0_0_xpm_counter_updn__parameterized5\ is
     wr_clk : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_axi_dma_0_0_xpm_counter_updn__parameterized5\ : entity is "xpm_counter_updn";
-end \design_1_axi_dma_0_0_xpm_counter_updn__parameterized5\;
+  attribute ORIG_REF_NAME of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized5\ : entity is "xpm_counter_updn";
+end \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized5\;
 
-architecture STRUCTURE of \design_1_axi_dma_0_0_xpm_counter_updn__parameterized5\ is
+architecture STRUCTURE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized5\ is
   signal \count_value_i[0]_i_1__1_n_0\ : STD_LOGIC;
   signal \count_value_i[1]_i_1__1_n_0\ : STD_LOGIC;
   signal \count_value_i[2]_i_1__2_n_0\ : STD_LOGIC;
@@ -49797,7 +49751,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_axi_dma_0_0_xpm_counter_updn__parameterized6\ is
+entity \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized6\ is
   port (
     D : out STD_LOGIC_VECTOR ( 0 to 0 );
     Q : out STD_LOGIC_VECTOR ( 4 downto 0 );
@@ -49816,10 +49770,10 @@ entity \design_1_axi_dma_0_0_xpm_counter_updn__parameterized6\ is
     wr_clk : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_axi_dma_0_0_xpm_counter_updn__parameterized6\ : entity is "xpm_counter_updn";
-end \design_1_axi_dma_0_0_xpm_counter_updn__parameterized6\;
+  attribute ORIG_REF_NAME of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized6\ : entity is "xpm_counter_updn";
+end \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized6\;
 
-architecture STRUCTURE of \design_1_axi_dma_0_0_xpm_counter_updn__parameterized6\ is
+architecture STRUCTURE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized6\ is
   signal \^e\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal \^q\ : STD_LOGIC_VECTOR ( 4 downto 0 );
   signal \count_value_i[0]_i_1__2_n_0\ : STD_LOGIC;
@@ -50036,7 +49990,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_axi_dma_0_0_xpm_counter_updn__parameterized6_6\ is
+entity \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized6_6\ is
   port (
     D : out STD_LOGIC_VECTOR ( 2 downto 0 );
     \count_value_i_reg[3]_0\ : out STD_LOGIC_VECTOR ( 3 downto 0 );
@@ -50056,10 +50010,10 @@ entity \design_1_axi_dma_0_0_xpm_counter_updn__parameterized6_6\ is
     wr_clk : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_axi_dma_0_0_xpm_counter_updn__parameterized6_6\ : entity is "xpm_counter_updn";
-end \design_1_axi_dma_0_0_xpm_counter_updn__parameterized6_6\;
+  attribute ORIG_REF_NAME of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized6_6\ : entity is "xpm_counter_updn";
+end \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized6_6\;
 
-architecture STRUCTURE of \design_1_axi_dma_0_0_xpm_counter_updn__parameterized6_6\ is
+architecture STRUCTURE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized6_6\ is
   signal \count_value_i[0]_i_1_n_0\ : STD_LOGIC;
   signal \count_value_i[1]_i_1_n_0\ : STD_LOGIC;
   signal \count_value_i[2]_i_1__3_n_0\ : STD_LOGIC;
@@ -50336,7 +50290,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_axi_dma_0_0_xpm_counter_updn__parameterized7\ is
+entity \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized7\ is
   port (
     \count_value_i_reg[3]_0\ : out STD_LOGIC;
     \count_value_i_reg[2]_0\ : in STD_LOGIC;
@@ -50348,10 +50302,10 @@ entity \design_1_axi_dma_0_0_xpm_counter_updn__parameterized7\ is
     wr_clk : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_axi_dma_0_0_xpm_counter_updn__parameterized7\ : entity is "xpm_counter_updn";
-end \design_1_axi_dma_0_0_xpm_counter_updn__parameterized7\;
+  attribute ORIG_REF_NAME of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized7\ : entity is "xpm_counter_updn";
+end \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized7\;
 
-architecture STRUCTURE of \design_1_axi_dma_0_0_xpm_counter_updn__parameterized7\ is
+architecture STRUCTURE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized7\ is
   signal \count_value_i[0]_i_1__3_n_0\ : STD_LOGIC;
   signal \count_value_i[1]_i_1__3_n_0\ : STD_LOGIC;
   signal \count_value_i[2]_i_1__0_n_0\ : STD_LOGIC;
@@ -50483,7 +50437,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_axi_dma_0_0_xpm_counter_updn__parameterized7_7\ is
+entity \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized7_7\ is
   port (
     D : out STD_LOGIC_VECTOR ( 1 downto 0 );
     Q : out STD_LOGIC_VECTOR ( 3 downto 0 );
@@ -50494,10 +50448,10 @@ entity \design_1_axi_dma_0_0_xpm_counter_updn__parameterized7_7\ is
     wr_clk : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_axi_dma_0_0_xpm_counter_updn__parameterized7_7\ : entity is "xpm_counter_updn";
-end \design_1_axi_dma_0_0_xpm_counter_updn__parameterized7_7\;
+  attribute ORIG_REF_NAME of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized7_7\ : entity is "xpm_counter_updn";
+end \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized7_7\;
 
-architecture STRUCTURE of \design_1_axi_dma_0_0_xpm_counter_updn__parameterized7_7\ is
+architecture STRUCTURE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized7_7\ is
   signal \^q\ : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal \count_value_i[0]_i_1__0_n_0\ : STD_LOGIC;
   signal \count_value_i[1]_i_1__0_n_0\ : STD_LOGIC;
@@ -50647,7 +50601,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_axi_dma_0_0_xpm_fifo_reg_bit is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_reg_bit is
   port (
     rst_d1 : out STD_LOGIC;
     \gen_pntr_flags_cc.gaf_cc.ram_afull_i_reg\ : out STD_LOGIC;
@@ -50681,11 +50635,9 @@ entity design_1_axi_dma_0_0_xpm_fifo_reg_bit is
     prog_full : in STD_LOGIC;
     \gen_pntr_flags_cc.gen_full_rst_val.ram_full_i_reg_0\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_dma_0_0_xpm_fifo_reg_bit : entity is "xpm_fifo_reg_bit";
-end design_1_axi_dma_0_0_xpm_fifo_reg_bit;
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_reg_bit;
 
-architecture STRUCTURE of design_1_axi_dma_0_0_xpm_fifo_reg_bit is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_reg_bit is
   signal \gen_pntr_flags_cc.gaf_cc.ram_afull_i_i_3_n_0\ : STD_LOGIC;
   signal ram_afull_i : STD_LOGIC;
   signal \^ram_wr_en_pf\ : STD_LOGIC;
@@ -50854,7 +50806,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_axi_dma_0_0_xpm_fifo_reg_bit_30 is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_reg_bit_30 is
   port (
     rst_d1 : out STD_LOGIC;
     \gen_pntr_flags_cc.gaf_cc.ram_afull_i_reg\ : out STD_LOGIC;
@@ -50887,10 +50839,10 @@ entity design_1_axi_dma_0_0_xpm_fifo_reg_bit_30 is
     \gen_pntr_flags_cc.gen_full_rst_val.ram_full_i_reg_1\ : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_dma_0_0_xpm_fifo_reg_bit_30 : entity is "xpm_fifo_reg_bit";
-end design_1_axi_dma_0_0_xpm_fifo_reg_bit_30;
+  attribute ORIG_REF_NAME of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_reg_bit_30 : entity is "xpm_fifo_reg_bit";
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_reg_bit_30;
 
-architecture STRUCTURE of design_1_axi_dma_0_0_xpm_fifo_reg_bit_30 is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_reg_bit_30 is
   signal \gen_pntr_flags_cc.gaf_cc.ram_afull_i_i_3_n_0\ : STD_LOGIC;
   signal ram_afull_i : STD_LOGIC;
   signal \^ram_wr_en_pf\ : STD_LOGIC;
@@ -51045,7 +50997,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_axi_dma_0_0_xpm_fifo_reg_bit_9 is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_reg_bit_9 is
   port (
     rst_d1 : out STD_LOGIC;
     \gen_pntr_flags_cc.gaf_cc.ram_afull_i_reg\ : out STD_LOGIC;
@@ -51078,10 +51030,10 @@ entity design_1_axi_dma_0_0_xpm_fifo_reg_bit_9 is
     \gen_pntr_flags_cc.gen_full_rst_val.ram_full_i_reg_1\ : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_dma_0_0_xpm_fifo_reg_bit_9 : entity is "xpm_fifo_reg_bit";
-end design_1_axi_dma_0_0_xpm_fifo_reg_bit_9;
+  attribute ORIG_REF_NAME of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_reg_bit_9 : entity is "xpm_fifo_reg_bit";
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_reg_bit_9;
 
-architecture STRUCTURE of design_1_axi_dma_0_0_xpm_fifo_reg_bit_9 is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_reg_bit_9 is
   signal \gen_pntr_flags_cc.gaf_cc.ram_afull_i_i_3_n_0\ : STD_LOGIC;
   signal ram_afull_i : STD_LOGIC;
   signal \^ram_wr_en_pf\ : STD_LOGIC;
@@ -51236,7 +51188,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_axi_dma_0_0_xpm_fifo_rst is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_rst is
   port (
     \gen_pntr_flags_cc.gen_full_rst_val.ram_full_i_reg\ : out STD_LOGIC;
     Q : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -51256,11 +51208,9 @@ entity design_1_axi_dma_0_0_xpm_fifo_rst is
     \guf.underflow_i_reg\ : in STD_LOGIC;
     wr_clk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_dma_0_0_xpm_fifo_rst : entity is "xpm_fifo_rst";
-end design_1_axi_dma_0_0_xpm_fifo_rst;
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_rst;
 
-architecture STRUCTURE of design_1_axi_dma_0_0_xpm_fifo_rst is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_rst is
   signal \^q\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal \gen_rst_cc.fifo_wr_rst_cc\ : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal p_0_in : STD_LOGIC;
@@ -51384,7 +51334,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_axi_dma_0_0_xpm_fifo_rst_12 is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_rst_12 is
   port (
     \gen_pntr_flags_cc.gen_full_rst_val.ram_full_i_reg\ : out STD_LOGIC;
     Q : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -51405,10 +51355,10 @@ entity design_1_axi_dma_0_0_xpm_fifo_rst_12 is
     wr_clk : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_dma_0_0_xpm_fifo_rst_12 : entity is "xpm_fifo_rst";
-end design_1_axi_dma_0_0_xpm_fifo_rst_12;
+  attribute ORIG_REF_NAME of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_rst_12 : entity is "xpm_fifo_rst";
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_rst_12;
 
-architecture STRUCTURE of design_1_axi_dma_0_0_xpm_fifo_rst_12 is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_rst_12 is
   signal \^q\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal \gen_rst_cc.fifo_wr_rst_cc\ : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal p_0_in : STD_LOGIC;
@@ -51532,7 +51482,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_axi_dma_0_0_xpm_fifo_rst_34 is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_rst_34 is
   port (
     \gen_pntr_flags_cc.gen_full_rst_val.ram_full_i_reg\ : out STD_LOGIC;
     Q : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -51553,10 +51503,10 @@ entity design_1_axi_dma_0_0_xpm_fifo_rst_34 is
     wr_clk : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_dma_0_0_xpm_fifo_rst_34 : entity is "xpm_fifo_rst";
-end design_1_axi_dma_0_0_xpm_fifo_rst_34;
+  attribute ORIG_REF_NAME of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_rst_34 : entity is "xpm_fifo_rst";
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_rst_34;
 
-architecture STRUCTURE of design_1_axi_dma_0_0_xpm_fifo_rst_34 is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_rst_34 is
   signal \^q\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal \gen_rst_cc.fifo_wr_rst_cc\ : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal p_0_in : STD_LOGIC;
@@ -51680,7 +51630,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_axi_dma_0_0_xpm_memory_base is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base is
   port (
     sleep : in STD_LOGIC;
     clka : in STD_LOGIC;
@@ -51709,142 +51659,140 @@ entity design_1_axi_dma_0_0_xpm_memory_base is
     dbiterrb : out STD_LOGIC
   );
   attribute ADDR_WIDTH_A : integer;
-  attribute ADDR_WIDTH_A of design_1_axi_dma_0_0_xpm_memory_base : entity is 7;
+  attribute ADDR_WIDTH_A of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base : entity is 7;
   attribute ADDR_WIDTH_B : integer;
-  attribute ADDR_WIDTH_B of design_1_axi_dma_0_0_xpm_memory_base : entity is 7;
+  attribute ADDR_WIDTH_B of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base : entity is 7;
   attribute AUTO_SLEEP_TIME : integer;
-  attribute AUTO_SLEEP_TIME of design_1_axi_dma_0_0_xpm_memory_base : entity is 0;
+  attribute AUTO_SLEEP_TIME of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base : entity is 0;
   attribute BYTE_WRITE_WIDTH_A : integer;
-  attribute BYTE_WRITE_WIDTH_A of design_1_axi_dma_0_0_xpm_memory_base : entity is 75;
+  attribute BYTE_WRITE_WIDTH_A of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base : entity is 75;
   attribute BYTE_WRITE_WIDTH_B : integer;
-  attribute BYTE_WRITE_WIDTH_B of design_1_axi_dma_0_0_xpm_memory_base : entity is 75;
+  attribute BYTE_WRITE_WIDTH_B of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base : entity is 75;
   attribute CASCADE_HEIGHT : integer;
-  attribute CASCADE_HEIGHT of design_1_axi_dma_0_0_xpm_memory_base : entity is 0;
+  attribute CASCADE_HEIGHT of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base : entity is 0;
   attribute CLOCKING_MODE : integer;
-  attribute CLOCKING_MODE of design_1_axi_dma_0_0_xpm_memory_base : entity is 0;
+  attribute CLOCKING_MODE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base : entity is 0;
   attribute ECC_MODE : integer;
-  attribute ECC_MODE of design_1_axi_dma_0_0_xpm_memory_base : entity is 0;
+  attribute ECC_MODE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base : entity is 0;
   attribute MAX_NUM_CHAR : integer;
-  attribute MAX_NUM_CHAR of design_1_axi_dma_0_0_xpm_memory_base : entity is 0;
+  attribute MAX_NUM_CHAR of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base : entity is 0;
   attribute MEMORY_INIT_FILE : string;
-  attribute MEMORY_INIT_FILE of design_1_axi_dma_0_0_xpm_memory_base : entity is "none";
+  attribute MEMORY_INIT_FILE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base : entity is "none";
   attribute MEMORY_INIT_PARAM : string;
-  attribute MEMORY_INIT_PARAM of design_1_axi_dma_0_0_xpm_memory_base : entity is "";
+  attribute MEMORY_INIT_PARAM of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base : entity is "";
   attribute MEMORY_OPTIMIZATION : string;
-  attribute MEMORY_OPTIMIZATION of design_1_axi_dma_0_0_xpm_memory_base : entity is "true";
+  attribute MEMORY_OPTIMIZATION of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base : entity is "true";
   attribute MEMORY_PRIMITIVE : integer;
-  attribute MEMORY_PRIMITIVE of design_1_axi_dma_0_0_xpm_memory_base : entity is 2;
+  attribute MEMORY_PRIMITIVE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base : entity is 2;
   attribute MEMORY_SIZE : integer;
-  attribute MEMORY_SIZE of design_1_axi_dma_0_0_xpm_memory_base : entity is 9600;
+  attribute MEMORY_SIZE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base : entity is 9600;
   attribute MEMORY_TYPE : integer;
-  attribute MEMORY_TYPE of design_1_axi_dma_0_0_xpm_memory_base : entity is 1;
+  attribute MEMORY_TYPE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base : entity is 1;
   attribute MESSAGE_CONTROL : integer;
-  attribute MESSAGE_CONTROL of design_1_axi_dma_0_0_xpm_memory_base : entity is 0;
+  attribute MESSAGE_CONTROL of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base : entity is 0;
   attribute NUM_CHAR_LOC : integer;
-  attribute NUM_CHAR_LOC of design_1_axi_dma_0_0_xpm_memory_base : entity is 0;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_dma_0_0_xpm_memory_base : entity is "xpm_memory_base";
+  attribute NUM_CHAR_LOC of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base : entity is 0;
   attribute P_ECC_MODE : string;
-  attribute P_ECC_MODE of design_1_axi_dma_0_0_xpm_memory_base : entity is "no_ecc";
+  attribute P_ECC_MODE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base : entity is "no_ecc";
   attribute P_ENABLE_BYTE_WRITE_A : integer;
-  attribute P_ENABLE_BYTE_WRITE_A of design_1_axi_dma_0_0_xpm_memory_base : entity is 0;
+  attribute P_ENABLE_BYTE_WRITE_A of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base : entity is 0;
   attribute P_ENABLE_BYTE_WRITE_B : integer;
-  attribute P_ENABLE_BYTE_WRITE_B of design_1_axi_dma_0_0_xpm_memory_base : entity is 0;
+  attribute P_ENABLE_BYTE_WRITE_B of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base : entity is 0;
   attribute P_MAX_DEPTH_DATA : integer;
-  attribute P_MAX_DEPTH_DATA of design_1_axi_dma_0_0_xpm_memory_base : entity is 128;
+  attribute P_MAX_DEPTH_DATA of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base : entity is 128;
   attribute P_MEMORY_OPT : string;
-  attribute P_MEMORY_OPT of design_1_axi_dma_0_0_xpm_memory_base : entity is "yes";
+  attribute P_MEMORY_OPT of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base : entity is "yes";
   attribute P_MEMORY_PRIMITIVE : string;
-  attribute P_MEMORY_PRIMITIVE of design_1_axi_dma_0_0_xpm_memory_base : entity is "block";
+  attribute P_MEMORY_PRIMITIVE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base : entity is "block";
   attribute P_MIN_WIDTH_DATA : integer;
-  attribute P_MIN_WIDTH_DATA of design_1_axi_dma_0_0_xpm_memory_base : entity is 75;
+  attribute P_MIN_WIDTH_DATA of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base : entity is 75;
   attribute P_MIN_WIDTH_DATA_A : integer;
-  attribute P_MIN_WIDTH_DATA_A of design_1_axi_dma_0_0_xpm_memory_base : entity is 75;
+  attribute P_MIN_WIDTH_DATA_A of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base : entity is 75;
   attribute P_MIN_WIDTH_DATA_B : integer;
-  attribute P_MIN_WIDTH_DATA_B of design_1_axi_dma_0_0_xpm_memory_base : entity is 75;
+  attribute P_MIN_WIDTH_DATA_B of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base : entity is 75;
   attribute P_MIN_WIDTH_DATA_ECC : integer;
-  attribute P_MIN_WIDTH_DATA_ECC of design_1_axi_dma_0_0_xpm_memory_base : entity is 75;
+  attribute P_MIN_WIDTH_DATA_ECC of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base : entity is 75;
   attribute P_MIN_WIDTH_DATA_LDW : integer;
-  attribute P_MIN_WIDTH_DATA_LDW of design_1_axi_dma_0_0_xpm_memory_base : entity is 4;
+  attribute P_MIN_WIDTH_DATA_LDW of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base : entity is 4;
   attribute P_MIN_WIDTH_DATA_SHFT : integer;
-  attribute P_MIN_WIDTH_DATA_SHFT of design_1_axi_dma_0_0_xpm_memory_base : entity is 75;
+  attribute P_MIN_WIDTH_DATA_SHFT of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base : entity is 75;
   attribute P_NUM_COLS_WRITE_A : integer;
-  attribute P_NUM_COLS_WRITE_A of design_1_axi_dma_0_0_xpm_memory_base : entity is 1;
+  attribute P_NUM_COLS_WRITE_A of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base : entity is 1;
   attribute P_NUM_COLS_WRITE_B : integer;
-  attribute P_NUM_COLS_WRITE_B of design_1_axi_dma_0_0_xpm_memory_base : entity is 1;
+  attribute P_NUM_COLS_WRITE_B of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base : entity is 1;
   attribute P_NUM_ROWS_READ_A : integer;
-  attribute P_NUM_ROWS_READ_A of design_1_axi_dma_0_0_xpm_memory_base : entity is 1;
+  attribute P_NUM_ROWS_READ_A of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base : entity is 1;
   attribute P_NUM_ROWS_READ_B : integer;
-  attribute P_NUM_ROWS_READ_B of design_1_axi_dma_0_0_xpm_memory_base : entity is 1;
+  attribute P_NUM_ROWS_READ_B of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base : entity is 1;
   attribute P_NUM_ROWS_WRITE_A : integer;
-  attribute P_NUM_ROWS_WRITE_A of design_1_axi_dma_0_0_xpm_memory_base : entity is 1;
+  attribute P_NUM_ROWS_WRITE_A of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base : entity is 1;
   attribute P_NUM_ROWS_WRITE_B : integer;
-  attribute P_NUM_ROWS_WRITE_B of design_1_axi_dma_0_0_xpm_memory_base : entity is 1;
+  attribute P_NUM_ROWS_WRITE_B of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base : entity is 1;
   attribute P_SDP_WRITE_MODE : string;
-  attribute P_SDP_WRITE_MODE of design_1_axi_dma_0_0_xpm_memory_base : entity is "no";
+  attribute P_SDP_WRITE_MODE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base : entity is "no";
   attribute P_WIDTH_ADDR_LSB_READ_A : integer;
-  attribute P_WIDTH_ADDR_LSB_READ_A of design_1_axi_dma_0_0_xpm_memory_base : entity is 0;
+  attribute P_WIDTH_ADDR_LSB_READ_A of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base : entity is 0;
   attribute P_WIDTH_ADDR_LSB_READ_B : integer;
-  attribute P_WIDTH_ADDR_LSB_READ_B of design_1_axi_dma_0_0_xpm_memory_base : entity is 0;
+  attribute P_WIDTH_ADDR_LSB_READ_B of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base : entity is 0;
   attribute P_WIDTH_ADDR_LSB_WRITE_A : integer;
-  attribute P_WIDTH_ADDR_LSB_WRITE_A of design_1_axi_dma_0_0_xpm_memory_base : entity is 0;
+  attribute P_WIDTH_ADDR_LSB_WRITE_A of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base : entity is 0;
   attribute P_WIDTH_ADDR_LSB_WRITE_B : integer;
-  attribute P_WIDTH_ADDR_LSB_WRITE_B of design_1_axi_dma_0_0_xpm_memory_base : entity is 0;
+  attribute P_WIDTH_ADDR_LSB_WRITE_B of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base : entity is 0;
   attribute P_WIDTH_ADDR_READ_A : integer;
-  attribute P_WIDTH_ADDR_READ_A of design_1_axi_dma_0_0_xpm_memory_base : entity is 7;
+  attribute P_WIDTH_ADDR_READ_A of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base : entity is 7;
   attribute P_WIDTH_ADDR_READ_B : integer;
-  attribute P_WIDTH_ADDR_READ_B of design_1_axi_dma_0_0_xpm_memory_base : entity is 7;
+  attribute P_WIDTH_ADDR_READ_B of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base : entity is 7;
   attribute P_WIDTH_ADDR_WRITE_A : integer;
-  attribute P_WIDTH_ADDR_WRITE_A of design_1_axi_dma_0_0_xpm_memory_base : entity is 7;
+  attribute P_WIDTH_ADDR_WRITE_A of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base : entity is 7;
   attribute P_WIDTH_ADDR_WRITE_B : integer;
-  attribute P_WIDTH_ADDR_WRITE_B of design_1_axi_dma_0_0_xpm_memory_base : entity is 7;
+  attribute P_WIDTH_ADDR_WRITE_B of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base : entity is 7;
   attribute P_WIDTH_COL_WRITE_A : integer;
-  attribute P_WIDTH_COL_WRITE_A of design_1_axi_dma_0_0_xpm_memory_base : entity is 75;
+  attribute P_WIDTH_COL_WRITE_A of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base : entity is 75;
   attribute P_WIDTH_COL_WRITE_B : integer;
-  attribute P_WIDTH_COL_WRITE_B of design_1_axi_dma_0_0_xpm_memory_base : entity is 75;
+  attribute P_WIDTH_COL_WRITE_B of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base : entity is 75;
   attribute READ_DATA_WIDTH_A : integer;
-  attribute READ_DATA_WIDTH_A of design_1_axi_dma_0_0_xpm_memory_base : entity is 75;
+  attribute READ_DATA_WIDTH_A of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base : entity is 75;
   attribute READ_DATA_WIDTH_B : integer;
-  attribute READ_DATA_WIDTH_B of design_1_axi_dma_0_0_xpm_memory_base : entity is 75;
+  attribute READ_DATA_WIDTH_B of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base : entity is 75;
   attribute READ_LATENCY_A : integer;
-  attribute READ_LATENCY_A of design_1_axi_dma_0_0_xpm_memory_base : entity is 2;
+  attribute READ_LATENCY_A of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base : entity is 2;
   attribute READ_LATENCY_B : integer;
-  attribute READ_LATENCY_B of design_1_axi_dma_0_0_xpm_memory_base : entity is 2;
+  attribute READ_LATENCY_B of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base : entity is 2;
   attribute READ_RESET_VALUE_A : string;
-  attribute READ_RESET_VALUE_A of design_1_axi_dma_0_0_xpm_memory_base : entity is "0";
+  attribute READ_RESET_VALUE_A of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base : entity is "0";
   attribute READ_RESET_VALUE_B : string;
-  attribute READ_RESET_VALUE_B of design_1_axi_dma_0_0_xpm_memory_base : entity is "0";
+  attribute READ_RESET_VALUE_B of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base : entity is "0";
   attribute RST_MODE_A : string;
-  attribute RST_MODE_A of design_1_axi_dma_0_0_xpm_memory_base : entity is "SYNC";
+  attribute RST_MODE_A of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base : entity is "SYNC";
   attribute RST_MODE_B : string;
-  attribute RST_MODE_B of design_1_axi_dma_0_0_xpm_memory_base : entity is "SYNC";
+  attribute RST_MODE_B of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base : entity is "SYNC";
   attribute SIM_ASSERT_CHK : integer;
-  attribute SIM_ASSERT_CHK of design_1_axi_dma_0_0_xpm_memory_base : entity is 0;
+  attribute SIM_ASSERT_CHK of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base : entity is 0;
   attribute USE_EMBEDDED_CONSTRAINT : integer;
-  attribute USE_EMBEDDED_CONSTRAINT of design_1_axi_dma_0_0_xpm_memory_base : entity is 0;
+  attribute USE_EMBEDDED_CONSTRAINT of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base : entity is 0;
   attribute USE_MEM_INIT : integer;
-  attribute USE_MEM_INIT of design_1_axi_dma_0_0_xpm_memory_base : entity is 0;
+  attribute USE_MEM_INIT of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base : entity is 0;
   attribute VERSION : integer;
-  attribute VERSION of design_1_axi_dma_0_0_xpm_memory_base : entity is 0;
+  attribute VERSION of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base : entity is 0;
   attribute WAKEUP_TIME : integer;
-  attribute WAKEUP_TIME of design_1_axi_dma_0_0_xpm_memory_base : entity is 0;
+  attribute WAKEUP_TIME of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base : entity is 0;
   attribute WRITE_DATA_WIDTH_A : integer;
-  attribute WRITE_DATA_WIDTH_A of design_1_axi_dma_0_0_xpm_memory_base : entity is 75;
+  attribute WRITE_DATA_WIDTH_A of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base : entity is 75;
   attribute WRITE_DATA_WIDTH_B : integer;
-  attribute WRITE_DATA_WIDTH_B of design_1_axi_dma_0_0_xpm_memory_base : entity is 75;
+  attribute WRITE_DATA_WIDTH_B of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base : entity is 75;
   attribute WRITE_MODE_A : integer;
-  attribute WRITE_MODE_A of design_1_axi_dma_0_0_xpm_memory_base : entity is 2;
+  attribute WRITE_MODE_A of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base : entity is 2;
   attribute WRITE_MODE_B : integer;
-  attribute WRITE_MODE_B of design_1_axi_dma_0_0_xpm_memory_base : entity is 2;
+  attribute WRITE_MODE_B of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base : entity is 2;
   attribute XPM_MODULE : string;
-  attribute XPM_MODULE of design_1_axi_dma_0_0_xpm_memory_base : entity is "TRUE";
+  attribute XPM_MODULE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base : entity is "TRUE";
   attribute rsta_loop_iter : integer;
-  attribute rsta_loop_iter of design_1_axi_dma_0_0_xpm_memory_base : entity is 76;
+  attribute rsta_loop_iter of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base : entity is 76;
   attribute rstb_loop_iter : integer;
-  attribute rstb_loop_iter of design_1_axi_dma_0_0_xpm_memory_base : entity is 76;
-end design_1_axi_dma_0_0_xpm_memory_base;
+  attribute rstb_loop_iter of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base : entity is 76;
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base;
 
-architecture STRUCTURE of design_1_axi_dma_0_0_xpm_memory_base is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base is
   signal \<const0>\ : STD_LOGIC;
   signal \NLW_gen_wr_a.gen_word_narrow.mem_reg_0_CASCADEOUTA_UNCONNECTED\ : STD_LOGIC;
   signal \NLW_gen_wr_a.gen_word_narrow.mem_reg_0_CASCADEOUTB_UNCONNECTED\ : STD_LOGIC;
@@ -52351,7 +52299,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_axi_dma_0_0_xpm_memory_base__parameterized0\ is
+entity \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized0\ is
   port (
     sleep : in STD_LOGIC;
     clka : in STD_LOGIC;
@@ -52380,142 +52328,142 @@ entity \design_1_axi_dma_0_0_xpm_memory_base__parameterized0\ is
     dbiterrb : out STD_LOGIC
   );
   attribute ADDR_WIDTH_A : integer;
-  attribute ADDR_WIDTH_A of \design_1_axi_dma_0_0_xpm_memory_base__parameterized0\ : entity is 4;
+  attribute ADDR_WIDTH_A of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized0\ : entity is 4;
   attribute ADDR_WIDTH_B : integer;
-  attribute ADDR_WIDTH_B of \design_1_axi_dma_0_0_xpm_memory_base__parameterized0\ : entity is 4;
+  attribute ADDR_WIDTH_B of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized0\ : entity is 4;
   attribute AUTO_SLEEP_TIME : integer;
-  attribute AUTO_SLEEP_TIME of \design_1_axi_dma_0_0_xpm_memory_base__parameterized0\ : entity is 0;
+  attribute AUTO_SLEEP_TIME of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized0\ : entity is 0;
   attribute BYTE_WRITE_WIDTH_A : integer;
-  attribute BYTE_WRITE_WIDTH_A of \design_1_axi_dma_0_0_xpm_memory_base__parameterized0\ : entity is 9;
+  attribute BYTE_WRITE_WIDTH_A of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized0\ : entity is 9;
   attribute BYTE_WRITE_WIDTH_B : integer;
-  attribute BYTE_WRITE_WIDTH_B of \design_1_axi_dma_0_0_xpm_memory_base__parameterized0\ : entity is 9;
+  attribute BYTE_WRITE_WIDTH_B of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized0\ : entity is 9;
   attribute CASCADE_HEIGHT : integer;
-  attribute CASCADE_HEIGHT of \design_1_axi_dma_0_0_xpm_memory_base__parameterized0\ : entity is 0;
+  attribute CASCADE_HEIGHT of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized0\ : entity is 0;
   attribute CLOCKING_MODE : integer;
-  attribute CLOCKING_MODE of \design_1_axi_dma_0_0_xpm_memory_base__parameterized0\ : entity is 0;
+  attribute CLOCKING_MODE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized0\ : entity is 0;
   attribute ECC_MODE : integer;
-  attribute ECC_MODE of \design_1_axi_dma_0_0_xpm_memory_base__parameterized0\ : entity is 0;
+  attribute ECC_MODE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized0\ : entity is 0;
   attribute MAX_NUM_CHAR : integer;
-  attribute MAX_NUM_CHAR of \design_1_axi_dma_0_0_xpm_memory_base__parameterized0\ : entity is 0;
+  attribute MAX_NUM_CHAR of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized0\ : entity is 0;
   attribute MEMORY_INIT_FILE : string;
-  attribute MEMORY_INIT_FILE of \design_1_axi_dma_0_0_xpm_memory_base__parameterized0\ : entity is "none";
+  attribute MEMORY_INIT_FILE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized0\ : entity is "none";
   attribute MEMORY_INIT_PARAM : string;
-  attribute MEMORY_INIT_PARAM of \design_1_axi_dma_0_0_xpm_memory_base__parameterized0\ : entity is "";
+  attribute MEMORY_INIT_PARAM of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized0\ : entity is "";
   attribute MEMORY_OPTIMIZATION : string;
-  attribute MEMORY_OPTIMIZATION of \design_1_axi_dma_0_0_xpm_memory_base__parameterized0\ : entity is "true";
+  attribute MEMORY_OPTIMIZATION of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized0\ : entity is "true";
   attribute MEMORY_PRIMITIVE : integer;
-  attribute MEMORY_PRIMITIVE of \design_1_axi_dma_0_0_xpm_memory_base__parameterized0\ : entity is 0;
+  attribute MEMORY_PRIMITIVE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized0\ : entity is 0;
   attribute MEMORY_SIZE : integer;
-  attribute MEMORY_SIZE of \design_1_axi_dma_0_0_xpm_memory_base__parameterized0\ : entity is 144;
+  attribute MEMORY_SIZE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized0\ : entity is 144;
   attribute MEMORY_TYPE : integer;
-  attribute MEMORY_TYPE of \design_1_axi_dma_0_0_xpm_memory_base__parameterized0\ : entity is 1;
+  attribute MEMORY_TYPE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized0\ : entity is 1;
   attribute MESSAGE_CONTROL : integer;
-  attribute MESSAGE_CONTROL of \design_1_axi_dma_0_0_xpm_memory_base__parameterized0\ : entity is 0;
+  attribute MESSAGE_CONTROL of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized0\ : entity is 0;
   attribute NUM_CHAR_LOC : integer;
-  attribute NUM_CHAR_LOC of \design_1_axi_dma_0_0_xpm_memory_base__parameterized0\ : entity is 0;
+  attribute NUM_CHAR_LOC of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized0\ : entity is 0;
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_axi_dma_0_0_xpm_memory_base__parameterized0\ : entity is "xpm_memory_base";
+  attribute ORIG_REF_NAME of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized0\ : entity is "xpm_memory_base";
   attribute P_ECC_MODE : string;
-  attribute P_ECC_MODE of \design_1_axi_dma_0_0_xpm_memory_base__parameterized0\ : entity is "no_ecc";
+  attribute P_ECC_MODE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized0\ : entity is "no_ecc";
   attribute P_ENABLE_BYTE_WRITE_A : integer;
-  attribute P_ENABLE_BYTE_WRITE_A of \design_1_axi_dma_0_0_xpm_memory_base__parameterized0\ : entity is 0;
+  attribute P_ENABLE_BYTE_WRITE_A of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized0\ : entity is 0;
   attribute P_ENABLE_BYTE_WRITE_B : integer;
-  attribute P_ENABLE_BYTE_WRITE_B of \design_1_axi_dma_0_0_xpm_memory_base__parameterized0\ : entity is 0;
+  attribute P_ENABLE_BYTE_WRITE_B of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized0\ : entity is 0;
   attribute P_MAX_DEPTH_DATA : integer;
-  attribute P_MAX_DEPTH_DATA of \design_1_axi_dma_0_0_xpm_memory_base__parameterized0\ : entity is 16;
+  attribute P_MAX_DEPTH_DATA of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized0\ : entity is 16;
   attribute P_MEMORY_OPT : string;
-  attribute P_MEMORY_OPT of \design_1_axi_dma_0_0_xpm_memory_base__parameterized0\ : entity is "yes";
+  attribute P_MEMORY_OPT of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized0\ : entity is "yes";
   attribute P_MEMORY_PRIMITIVE : string;
-  attribute P_MEMORY_PRIMITIVE of \design_1_axi_dma_0_0_xpm_memory_base__parameterized0\ : entity is "auto";
+  attribute P_MEMORY_PRIMITIVE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized0\ : entity is "auto";
   attribute P_MIN_WIDTH_DATA : integer;
-  attribute P_MIN_WIDTH_DATA of \design_1_axi_dma_0_0_xpm_memory_base__parameterized0\ : entity is 9;
+  attribute P_MIN_WIDTH_DATA of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized0\ : entity is 9;
   attribute P_MIN_WIDTH_DATA_A : integer;
-  attribute P_MIN_WIDTH_DATA_A of \design_1_axi_dma_0_0_xpm_memory_base__parameterized0\ : entity is 9;
+  attribute P_MIN_WIDTH_DATA_A of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized0\ : entity is 9;
   attribute P_MIN_WIDTH_DATA_B : integer;
-  attribute P_MIN_WIDTH_DATA_B of \design_1_axi_dma_0_0_xpm_memory_base__parameterized0\ : entity is 9;
+  attribute P_MIN_WIDTH_DATA_B of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized0\ : entity is 9;
   attribute P_MIN_WIDTH_DATA_ECC : integer;
-  attribute P_MIN_WIDTH_DATA_ECC of \design_1_axi_dma_0_0_xpm_memory_base__parameterized0\ : entity is 9;
+  attribute P_MIN_WIDTH_DATA_ECC of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized0\ : entity is 9;
   attribute P_MIN_WIDTH_DATA_LDW : integer;
-  attribute P_MIN_WIDTH_DATA_LDW of \design_1_axi_dma_0_0_xpm_memory_base__parameterized0\ : entity is 4;
+  attribute P_MIN_WIDTH_DATA_LDW of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized0\ : entity is 4;
   attribute P_MIN_WIDTH_DATA_SHFT : integer;
-  attribute P_MIN_WIDTH_DATA_SHFT of \design_1_axi_dma_0_0_xpm_memory_base__parameterized0\ : entity is 9;
+  attribute P_MIN_WIDTH_DATA_SHFT of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized0\ : entity is 9;
   attribute P_NUM_COLS_WRITE_A : integer;
-  attribute P_NUM_COLS_WRITE_A of \design_1_axi_dma_0_0_xpm_memory_base__parameterized0\ : entity is 1;
+  attribute P_NUM_COLS_WRITE_A of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized0\ : entity is 1;
   attribute P_NUM_COLS_WRITE_B : integer;
-  attribute P_NUM_COLS_WRITE_B of \design_1_axi_dma_0_0_xpm_memory_base__parameterized0\ : entity is 1;
+  attribute P_NUM_COLS_WRITE_B of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized0\ : entity is 1;
   attribute P_NUM_ROWS_READ_A : integer;
-  attribute P_NUM_ROWS_READ_A of \design_1_axi_dma_0_0_xpm_memory_base__parameterized0\ : entity is 1;
+  attribute P_NUM_ROWS_READ_A of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized0\ : entity is 1;
   attribute P_NUM_ROWS_READ_B : integer;
-  attribute P_NUM_ROWS_READ_B of \design_1_axi_dma_0_0_xpm_memory_base__parameterized0\ : entity is 1;
+  attribute P_NUM_ROWS_READ_B of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized0\ : entity is 1;
   attribute P_NUM_ROWS_WRITE_A : integer;
-  attribute P_NUM_ROWS_WRITE_A of \design_1_axi_dma_0_0_xpm_memory_base__parameterized0\ : entity is 1;
+  attribute P_NUM_ROWS_WRITE_A of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized0\ : entity is 1;
   attribute P_NUM_ROWS_WRITE_B : integer;
-  attribute P_NUM_ROWS_WRITE_B of \design_1_axi_dma_0_0_xpm_memory_base__parameterized0\ : entity is 1;
+  attribute P_NUM_ROWS_WRITE_B of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized0\ : entity is 1;
   attribute P_SDP_WRITE_MODE : string;
-  attribute P_SDP_WRITE_MODE of \design_1_axi_dma_0_0_xpm_memory_base__parameterized0\ : entity is "yes";
+  attribute P_SDP_WRITE_MODE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized0\ : entity is "yes";
   attribute P_WIDTH_ADDR_LSB_READ_A : integer;
-  attribute P_WIDTH_ADDR_LSB_READ_A of \design_1_axi_dma_0_0_xpm_memory_base__parameterized0\ : entity is 0;
+  attribute P_WIDTH_ADDR_LSB_READ_A of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized0\ : entity is 0;
   attribute P_WIDTH_ADDR_LSB_READ_B : integer;
-  attribute P_WIDTH_ADDR_LSB_READ_B of \design_1_axi_dma_0_0_xpm_memory_base__parameterized0\ : entity is 0;
+  attribute P_WIDTH_ADDR_LSB_READ_B of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized0\ : entity is 0;
   attribute P_WIDTH_ADDR_LSB_WRITE_A : integer;
-  attribute P_WIDTH_ADDR_LSB_WRITE_A of \design_1_axi_dma_0_0_xpm_memory_base__parameterized0\ : entity is 0;
+  attribute P_WIDTH_ADDR_LSB_WRITE_A of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized0\ : entity is 0;
   attribute P_WIDTH_ADDR_LSB_WRITE_B : integer;
-  attribute P_WIDTH_ADDR_LSB_WRITE_B of \design_1_axi_dma_0_0_xpm_memory_base__parameterized0\ : entity is 0;
+  attribute P_WIDTH_ADDR_LSB_WRITE_B of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized0\ : entity is 0;
   attribute P_WIDTH_ADDR_READ_A : integer;
-  attribute P_WIDTH_ADDR_READ_A of \design_1_axi_dma_0_0_xpm_memory_base__parameterized0\ : entity is 4;
+  attribute P_WIDTH_ADDR_READ_A of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized0\ : entity is 4;
   attribute P_WIDTH_ADDR_READ_B : integer;
-  attribute P_WIDTH_ADDR_READ_B of \design_1_axi_dma_0_0_xpm_memory_base__parameterized0\ : entity is 4;
+  attribute P_WIDTH_ADDR_READ_B of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized0\ : entity is 4;
   attribute P_WIDTH_ADDR_WRITE_A : integer;
-  attribute P_WIDTH_ADDR_WRITE_A of \design_1_axi_dma_0_0_xpm_memory_base__parameterized0\ : entity is 4;
+  attribute P_WIDTH_ADDR_WRITE_A of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized0\ : entity is 4;
   attribute P_WIDTH_ADDR_WRITE_B : integer;
-  attribute P_WIDTH_ADDR_WRITE_B of \design_1_axi_dma_0_0_xpm_memory_base__parameterized0\ : entity is 4;
+  attribute P_WIDTH_ADDR_WRITE_B of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized0\ : entity is 4;
   attribute P_WIDTH_COL_WRITE_A : integer;
-  attribute P_WIDTH_COL_WRITE_A of \design_1_axi_dma_0_0_xpm_memory_base__parameterized0\ : entity is 9;
+  attribute P_WIDTH_COL_WRITE_A of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized0\ : entity is 9;
   attribute P_WIDTH_COL_WRITE_B : integer;
-  attribute P_WIDTH_COL_WRITE_B of \design_1_axi_dma_0_0_xpm_memory_base__parameterized0\ : entity is 9;
+  attribute P_WIDTH_COL_WRITE_B of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized0\ : entity is 9;
   attribute READ_DATA_WIDTH_A : integer;
-  attribute READ_DATA_WIDTH_A of \design_1_axi_dma_0_0_xpm_memory_base__parameterized0\ : entity is 9;
+  attribute READ_DATA_WIDTH_A of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized0\ : entity is 9;
   attribute READ_DATA_WIDTH_B : integer;
-  attribute READ_DATA_WIDTH_B of \design_1_axi_dma_0_0_xpm_memory_base__parameterized0\ : entity is 9;
+  attribute READ_DATA_WIDTH_B of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized0\ : entity is 9;
   attribute READ_LATENCY_A : integer;
-  attribute READ_LATENCY_A of \design_1_axi_dma_0_0_xpm_memory_base__parameterized0\ : entity is 2;
+  attribute READ_LATENCY_A of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized0\ : entity is 2;
   attribute READ_LATENCY_B : integer;
-  attribute READ_LATENCY_B of \design_1_axi_dma_0_0_xpm_memory_base__parameterized0\ : entity is 2;
+  attribute READ_LATENCY_B of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized0\ : entity is 2;
   attribute READ_RESET_VALUE_A : string;
-  attribute READ_RESET_VALUE_A of \design_1_axi_dma_0_0_xpm_memory_base__parameterized0\ : entity is "0";
+  attribute READ_RESET_VALUE_A of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized0\ : entity is "0";
   attribute READ_RESET_VALUE_B : string;
-  attribute READ_RESET_VALUE_B of \design_1_axi_dma_0_0_xpm_memory_base__parameterized0\ : entity is "0";
+  attribute READ_RESET_VALUE_B of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized0\ : entity is "0";
   attribute RST_MODE_A : string;
-  attribute RST_MODE_A of \design_1_axi_dma_0_0_xpm_memory_base__parameterized0\ : entity is "SYNC";
+  attribute RST_MODE_A of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized0\ : entity is "SYNC";
   attribute RST_MODE_B : string;
-  attribute RST_MODE_B of \design_1_axi_dma_0_0_xpm_memory_base__parameterized0\ : entity is "SYNC";
+  attribute RST_MODE_B of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized0\ : entity is "SYNC";
   attribute SIM_ASSERT_CHK : integer;
-  attribute SIM_ASSERT_CHK of \design_1_axi_dma_0_0_xpm_memory_base__parameterized0\ : entity is 0;
+  attribute SIM_ASSERT_CHK of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized0\ : entity is 0;
   attribute USE_EMBEDDED_CONSTRAINT : integer;
-  attribute USE_EMBEDDED_CONSTRAINT of \design_1_axi_dma_0_0_xpm_memory_base__parameterized0\ : entity is 0;
+  attribute USE_EMBEDDED_CONSTRAINT of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized0\ : entity is 0;
   attribute USE_MEM_INIT : integer;
-  attribute USE_MEM_INIT of \design_1_axi_dma_0_0_xpm_memory_base__parameterized0\ : entity is 0;
+  attribute USE_MEM_INIT of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized0\ : entity is 0;
   attribute VERSION : integer;
-  attribute VERSION of \design_1_axi_dma_0_0_xpm_memory_base__parameterized0\ : entity is 0;
+  attribute VERSION of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized0\ : entity is 0;
   attribute WAKEUP_TIME : integer;
-  attribute WAKEUP_TIME of \design_1_axi_dma_0_0_xpm_memory_base__parameterized0\ : entity is 0;
+  attribute WAKEUP_TIME of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized0\ : entity is 0;
   attribute WRITE_DATA_WIDTH_A : integer;
-  attribute WRITE_DATA_WIDTH_A of \design_1_axi_dma_0_0_xpm_memory_base__parameterized0\ : entity is 9;
+  attribute WRITE_DATA_WIDTH_A of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized0\ : entity is 9;
   attribute WRITE_DATA_WIDTH_B : integer;
-  attribute WRITE_DATA_WIDTH_B of \design_1_axi_dma_0_0_xpm_memory_base__parameterized0\ : entity is 9;
+  attribute WRITE_DATA_WIDTH_B of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized0\ : entity is 9;
   attribute WRITE_MODE_A : integer;
-  attribute WRITE_MODE_A of \design_1_axi_dma_0_0_xpm_memory_base__parameterized0\ : entity is 2;
+  attribute WRITE_MODE_A of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized0\ : entity is 2;
   attribute WRITE_MODE_B : integer;
-  attribute WRITE_MODE_B of \design_1_axi_dma_0_0_xpm_memory_base__parameterized0\ : entity is 2;
+  attribute WRITE_MODE_B of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized0\ : entity is 2;
   attribute XPM_MODULE : string;
-  attribute XPM_MODULE of \design_1_axi_dma_0_0_xpm_memory_base__parameterized0\ : entity is "TRUE";
+  attribute XPM_MODULE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized0\ : entity is "TRUE";
   attribute rsta_loop_iter : integer;
-  attribute rsta_loop_iter of \design_1_axi_dma_0_0_xpm_memory_base__parameterized0\ : entity is 12;
+  attribute rsta_loop_iter of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized0\ : entity is 12;
   attribute rstb_loop_iter : integer;
-  attribute rstb_loop_iter of \design_1_axi_dma_0_0_xpm_memory_base__parameterized0\ : entity is 12;
-end \design_1_axi_dma_0_0_xpm_memory_base__parameterized0\;
+  attribute rstb_loop_iter of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized0\ : entity is 12;
+end \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized0\;
 
-architecture STRUCTURE of \design_1_axi_dma_0_0_xpm_memory_base__parameterized0\ is
+architecture STRUCTURE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized0\ is
   signal \<const0>\ : STD_LOGIC;
   signal \gen_rd_b.doutb_reg0\ : STD_LOGIC_VECTOR ( 8 downto 0 );
   signal \gen_rd_b.doutb_reg_reg_n_0_[0]\ : STD_LOGIC;
@@ -52842,7 +52790,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_axi_dma_0_0_xpm_memory_base__parameterized1\ is
+entity \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized1\ is
   port (
     sleep : in STD_LOGIC;
     clka : in STD_LOGIC;
@@ -52871,142 +52819,142 @@ entity \design_1_axi_dma_0_0_xpm_memory_base__parameterized1\ is
     dbiterrb : out STD_LOGIC
   );
   attribute ADDR_WIDTH_A : integer;
-  attribute ADDR_WIDTH_A of \design_1_axi_dma_0_0_xpm_memory_base__parameterized1\ : entity is 7;
+  attribute ADDR_WIDTH_A of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized1\ : entity is 7;
   attribute ADDR_WIDTH_B : integer;
-  attribute ADDR_WIDTH_B of \design_1_axi_dma_0_0_xpm_memory_base__parameterized1\ : entity is 7;
+  attribute ADDR_WIDTH_B of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized1\ : entity is 7;
   attribute AUTO_SLEEP_TIME : integer;
-  attribute AUTO_SLEEP_TIME of \design_1_axi_dma_0_0_xpm_memory_base__parameterized1\ : entity is 0;
+  attribute AUTO_SLEEP_TIME of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized1\ : entity is 0;
   attribute BYTE_WRITE_WIDTH_A : integer;
-  attribute BYTE_WRITE_WIDTH_A of \design_1_axi_dma_0_0_xpm_memory_base__parameterized1\ : entity is 74;
+  attribute BYTE_WRITE_WIDTH_A of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized1\ : entity is 74;
   attribute BYTE_WRITE_WIDTH_B : integer;
-  attribute BYTE_WRITE_WIDTH_B of \design_1_axi_dma_0_0_xpm_memory_base__parameterized1\ : entity is 74;
+  attribute BYTE_WRITE_WIDTH_B of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized1\ : entity is 74;
   attribute CASCADE_HEIGHT : integer;
-  attribute CASCADE_HEIGHT of \design_1_axi_dma_0_0_xpm_memory_base__parameterized1\ : entity is 0;
+  attribute CASCADE_HEIGHT of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized1\ : entity is 0;
   attribute CLOCKING_MODE : integer;
-  attribute CLOCKING_MODE of \design_1_axi_dma_0_0_xpm_memory_base__parameterized1\ : entity is 0;
+  attribute CLOCKING_MODE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized1\ : entity is 0;
   attribute ECC_MODE : integer;
-  attribute ECC_MODE of \design_1_axi_dma_0_0_xpm_memory_base__parameterized1\ : entity is 0;
+  attribute ECC_MODE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized1\ : entity is 0;
   attribute MAX_NUM_CHAR : integer;
-  attribute MAX_NUM_CHAR of \design_1_axi_dma_0_0_xpm_memory_base__parameterized1\ : entity is 0;
+  attribute MAX_NUM_CHAR of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized1\ : entity is 0;
   attribute MEMORY_INIT_FILE : string;
-  attribute MEMORY_INIT_FILE of \design_1_axi_dma_0_0_xpm_memory_base__parameterized1\ : entity is "none";
+  attribute MEMORY_INIT_FILE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized1\ : entity is "none";
   attribute MEMORY_INIT_PARAM : string;
-  attribute MEMORY_INIT_PARAM of \design_1_axi_dma_0_0_xpm_memory_base__parameterized1\ : entity is "";
+  attribute MEMORY_INIT_PARAM of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized1\ : entity is "";
   attribute MEMORY_OPTIMIZATION : string;
-  attribute MEMORY_OPTIMIZATION of \design_1_axi_dma_0_0_xpm_memory_base__parameterized1\ : entity is "true";
+  attribute MEMORY_OPTIMIZATION of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized1\ : entity is "true";
   attribute MEMORY_PRIMITIVE : integer;
-  attribute MEMORY_PRIMITIVE of \design_1_axi_dma_0_0_xpm_memory_base__parameterized1\ : entity is 2;
+  attribute MEMORY_PRIMITIVE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized1\ : entity is 2;
   attribute MEMORY_SIZE : integer;
-  attribute MEMORY_SIZE of \design_1_axi_dma_0_0_xpm_memory_base__parameterized1\ : entity is 9472;
+  attribute MEMORY_SIZE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized1\ : entity is 9472;
   attribute MEMORY_TYPE : integer;
-  attribute MEMORY_TYPE of \design_1_axi_dma_0_0_xpm_memory_base__parameterized1\ : entity is 1;
+  attribute MEMORY_TYPE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized1\ : entity is 1;
   attribute MESSAGE_CONTROL : integer;
-  attribute MESSAGE_CONTROL of \design_1_axi_dma_0_0_xpm_memory_base__parameterized1\ : entity is 0;
+  attribute MESSAGE_CONTROL of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized1\ : entity is 0;
   attribute NUM_CHAR_LOC : integer;
-  attribute NUM_CHAR_LOC of \design_1_axi_dma_0_0_xpm_memory_base__parameterized1\ : entity is 0;
+  attribute NUM_CHAR_LOC of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized1\ : entity is 0;
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_axi_dma_0_0_xpm_memory_base__parameterized1\ : entity is "xpm_memory_base";
+  attribute ORIG_REF_NAME of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized1\ : entity is "xpm_memory_base";
   attribute P_ECC_MODE : string;
-  attribute P_ECC_MODE of \design_1_axi_dma_0_0_xpm_memory_base__parameterized1\ : entity is "no_ecc";
+  attribute P_ECC_MODE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized1\ : entity is "no_ecc";
   attribute P_ENABLE_BYTE_WRITE_A : integer;
-  attribute P_ENABLE_BYTE_WRITE_A of \design_1_axi_dma_0_0_xpm_memory_base__parameterized1\ : entity is 0;
+  attribute P_ENABLE_BYTE_WRITE_A of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized1\ : entity is 0;
   attribute P_ENABLE_BYTE_WRITE_B : integer;
-  attribute P_ENABLE_BYTE_WRITE_B of \design_1_axi_dma_0_0_xpm_memory_base__parameterized1\ : entity is 0;
+  attribute P_ENABLE_BYTE_WRITE_B of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized1\ : entity is 0;
   attribute P_MAX_DEPTH_DATA : integer;
-  attribute P_MAX_DEPTH_DATA of \design_1_axi_dma_0_0_xpm_memory_base__parameterized1\ : entity is 128;
+  attribute P_MAX_DEPTH_DATA of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized1\ : entity is 128;
   attribute P_MEMORY_OPT : string;
-  attribute P_MEMORY_OPT of \design_1_axi_dma_0_0_xpm_memory_base__parameterized1\ : entity is "yes";
+  attribute P_MEMORY_OPT of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized1\ : entity is "yes";
   attribute P_MEMORY_PRIMITIVE : string;
-  attribute P_MEMORY_PRIMITIVE of \design_1_axi_dma_0_0_xpm_memory_base__parameterized1\ : entity is "block";
+  attribute P_MEMORY_PRIMITIVE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized1\ : entity is "block";
   attribute P_MIN_WIDTH_DATA : integer;
-  attribute P_MIN_WIDTH_DATA of \design_1_axi_dma_0_0_xpm_memory_base__parameterized1\ : entity is 74;
+  attribute P_MIN_WIDTH_DATA of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized1\ : entity is 74;
   attribute P_MIN_WIDTH_DATA_A : integer;
-  attribute P_MIN_WIDTH_DATA_A of \design_1_axi_dma_0_0_xpm_memory_base__parameterized1\ : entity is 74;
+  attribute P_MIN_WIDTH_DATA_A of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized1\ : entity is 74;
   attribute P_MIN_WIDTH_DATA_B : integer;
-  attribute P_MIN_WIDTH_DATA_B of \design_1_axi_dma_0_0_xpm_memory_base__parameterized1\ : entity is 74;
+  attribute P_MIN_WIDTH_DATA_B of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized1\ : entity is 74;
   attribute P_MIN_WIDTH_DATA_ECC : integer;
-  attribute P_MIN_WIDTH_DATA_ECC of \design_1_axi_dma_0_0_xpm_memory_base__parameterized1\ : entity is 74;
+  attribute P_MIN_WIDTH_DATA_ECC of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized1\ : entity is 74;
   attribute P_MIN_WIDTH_DATA_LDW : integer;
-  attribute P_MIN_WIDTH_DATA_LDW of \design_1_axi_dma_0_0_xpm_memory_base__parameterized1\ : entity is 4;
+  attribute P_MIN_WIDTH_DATA_LDW of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized1\ : entity is 4;
   attribute P_MIN_WIDTH_DATA_SHFT : integer;
-  attribute P_MIN_WIDTH_DATA_SHFT of \design_1_axi_dma_0_0_xpm_memory_base__parameterized1\ : entity is 74;
+  attribute P_MIN_WIDTH_DATA_SHFT of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized1\ : entity is 74;
   attribute P_NUM_COLS_WRITE_A : integer;
-  attribute P_NUM_COLS_WRITE_A of \design_1_axi_dma_0_0_xpm_memory_base__parameterized1\ : entity is 1;
+  attribute P_NUM_COLS_WRITE_A of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized1\ : entity is 1;
   attribute P_NUM_COLS_WRITE_B : integer;
-  attribute P_NUM_COLS_WRITE_B of \design_1_axi_dma_0_0_xpm_memory_base__parameterized1\ : entity is 1;
+  attribute P_NUM_COLS_WRITE_B of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized1\ : entity is 1;
   attribute P_NUM_ROWS_READ_A : integer;
-  attribute P_NUM_ROWS_READ_A of \design_1_axi_dma_0_0_xpm_memory_base__parameterized1\ : entity is 1;
+  attribute P_NUM_ROWS_READ_A of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized1\ : entity is 1;
   attribute P_NUM_ROWS_READ_B : integer;
-  attribute P_NUM_ROWS_READ_B of \design_1_axi_dma_0_0_xpm_memory_base__parameterized1\ : entity is 1;
+  attribute P_NUM_ROWS_READ_B of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized1\ : entity is 1;
   attribute P_NUM_ROWS_WRITE_A : integer;
-  attribute P_NUM_ROWS_WRITE_A of \design_1_axi_dma_0_0_xpm_memory_base__parameterized1\ : entity is 1;
+  attribute P_NUM_ROWS_WRITE_A of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized1\ : entity is 1;
   attribute P_NUM_ROWS_WRITE_B : integer;
-  attribute P_NUM_ROWS_WRITE_B of \design_1_axi_dma_0_0_xpm_memory_base__parameterized1\ : entity is 1;
+  attribute P_NUM_ROWS_WRITE_B of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized1\ : entity is 1;
   attribute P_SDP_WRITE_MODE : string;
-  attribute P_SDP_WRITE_MODE of \design_1_axi_dma_0_0_xpm_memory_base__parameterized1\ : entity is "no";
+  attribute P_SDP_WRITE_MODE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized1\ : entity is "no";
   attribute P_WIDTH_ADDR_LSB_READ_A : integer;
-  attribute P_WIDTH_ADDR_LSB_READ_A of \design_1_axi_dma_0_0_xpm_memory_base__parameterized1\ : entity is 0;
+  attribute P_WIDTH_ADDR_LSB_READ_A of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized1\ : entity is 0;
   attribute P_WIDTH_ADDR_LSB_READ_B : integer;
-  attribute P_WIDTH_ADDR_LSB_READ_B of \design_1_axi_dma_0_0_xpm_memory_base__parameterized1\ : entity is 0;
+  attribute P_WIDTH_ADDR_LSB_READ_B of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized1\ : entity is 0;
   attribute P_WIDTH_ADDR_LSB_WRITE_A : integer;
-  attribute P_WIDTH_ADDR_LSB_WRITE_A of \design_1_axi_dma_0_0_xpm_memory_base__parameterized1\ : entity is 0;
+  attribute P_WIDTH_ADDR_LSB_WRITE_A of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized1\ : entity is 0;
   attribute P_WIDTH_ADDR_LSB_WRITE_B : integer;
-  attribute P_WIDTH_ADDR_LSB_WRITE_B of \design_1_axi_dma_0_0_xpm_memory_base__parameterized1\ : entity is 0;
+  attribute P_WIDTH_ADDR_LSB_WRITE_B of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized1\ : entity is 0;
   attribute P_WIDTH_ADDR_READ_A : integer;
-  attribute P_WIDTH_ADDR_READ_A of \design_1_axi_dma_0_0_xpm_memory_base__parameterized1\ : entity is 7;
+  attribute P_WIDTH_ADDR_READ_A of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized1\ : entity is 7;
   attribute P_WIDTH_ADDR_READ_B : integer;
-  attribute P_WIDTH_ADDR_READ_B of \design_1_axi_dma_0_0_xpm_memory_base__parameterized1\ : entity is 7;
+  attribute P_WIDTH_ADDR_READ_B of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized1\ : entity is 7;
   attribute P_WIDTH_ADDR_WRITE_A : integer;
-  attribute P_WIDTH_ADDR_WRITE_A of \design_1_axi_dma_0_0_xpm_memory_base__parameterized1\ : entity is 7;
+  attribute P_WIDTH_ADDR_WRITE_A of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized1\ : entity is 7;
   attribute P_WIDTH_ADDR_WRITE_B : integer;
-  attribute P_WIDTH_ADDR_WRITE_B of \design_1_axi_dma_0_0_xpm_memory_base__parameterized1\ : entity is 7;
+  attribute P_WIDTH_ADDR_WRITE_B of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized1\ : entity is 7;
   attribute P_WIDTH_COL_WRITE_A : integer;
-  attribute P_WIDTH_COL_WRITE_A of \design_1_axi_dma_0_0_xpm_memory_base__parameterized1\ : entity is 74;
+  attribute P_WIDTH_COL_WRITE_A of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized1\ : entity is 74;
   attribute P_WIDTH_COL_WRITE_B : integer;
-  attribute P_WIDTH_COL_WRITE_B of \design_1_axi_dma_0_0_xpm_memory_base__parameterized1\ : entity is 74;
+  attribute P_WIDTH_COL_WRITE_B of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized1\ : entity is 74;
   attribute READ_DATA_WIDTH_A : integer;
-  attribute READ_DATA_WIDTH_A of \design_1_axi_dma_0_0_xpm_memory_base__parameterized1\ : entity is 74;
+  attribute READ_DATA_WIDTH_A of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized1\ : entity is 74;
   attribute READ_DATA_WIDTH_B : integer;
-  attribute READ_DATA_WIDTH_B of \design_1_axi_dma_0_0_xpm_memory_base__parameterized1\ : entity is 74;
+  attribute READ_DATA_WIDTH_B of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized1\ : entity is 74;
   attribute READ_LATENCY_A : integer;
-  attribute READ_LATENCY_A of \design_1_axi_dma_0_0_xpm_memory_base__parameterized1\ : entity is 2;
+  attribute READ_LATENCY_A of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized1\ : entity is 2;
   attribute READ_LATENCY_B : integer;
-  attribute READ_LATENCY_B of \design_1_axi_dma_0_0_xpm_memory_base__parameterized1\ : entity is 2;
+  attribute READ_LATENCY_B of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized1\ : entity is 2;
   attribute READ_RESET_VALUE_A : string;
-  attribute READ_RESET_VALUE_A of \design_1_axi_dma_0_0_xpm_memory_base__parameterized1\ : entity is "0";
+  attribute READ_RESET_VALUE_A of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized1\ : entity is "0";
   attribute READ_RESET_VALUE_B : string;
-  attribute READ_RESET_VALUE_B of \design_1_axi_dma_0_0_xpm_memory_base__parameterized1\ : entity is "0";
+  attribute READ_RESET_VALUE_B of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized1\ : entity is "0";
   attribute RST_MODE_A : string;
-  attribute RST_MODE_A of \design_1_axi_dma_0_0_xpm_memory_base__parameterized1\ : entity is "SYNC";
+  attribute RST_MODE_A of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized1\ : entity is "SYNC";
   attribute RST_MODE_B : string;
-  attribute RST_MODE_B of \design_1_axi_dma_0_0_xpm_memory_base__parameterized1\ : entity is "SYNC";
+  attribute RST_MODE_B of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized1\ : entity is "SYNC";
   attribute SIM_ASSERT_CHK : integer;
-  attribute SIM_ASSERT_CHK of \design_1_axi_dma_0_0_xpm_memory_base__parameterized1\ : entity is 0;
+  attribute SIM_ASSERT_CHK of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized1\ : entity is 0;
   attribute USE_EMBEDDED_CONSTRAINT : integer;
-  attribute USE_EMBEDDED_CONSTRAINT of \design_1_axi_dma_0_0_xpm_memory_base__parameterized1\ : entity is 0;
+  attribute USE_EMBEDDED_CONSTRAINT of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized1\ : entity is 0;
   attribute USE_MEM_INIT : integer;
-  attribute USE_MEM_INIT of \design_1_axi_dma_0_0_xpm_memory_base__parameterized1\ : entity is 0;
+  attribute USE_MEM_INIT of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized1\ : entity is 0;
   attribute VERSION : integer;
-  attribute VERSION of \design_1_axi_dma_0_0_xpm_memory_base__parameterized1\ : entity is 0;
+  attribute VERSION of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized1\ : entity is 0;
   attribute WAKEUP_TIME : integer;
-  attribute WAKEUP_TIME of \design_1_axi_dma_0_0_xpm_memory_base__parameterized1\ : entity is 0;
+  attribute WAKEUP_TIME of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized1\ : entity is 0;
   attribute WRITE_DATA_WIDTH_A : integer;
-  attribute WRITE_DATA_WIDTH_A of \design_1_axi_dma_0_0_xpm_memory_base__parameterized1\ : entity is 74;
+  attribute WRITE_DATA_WIDTH_A of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized1\ : entity is 74;
   attribute WRITE_DATA_WIDTH_B : integer;
-  attribute WRITE_DATA_WIDTH_B of \design_1_axi_dma_0_0_xpm_memory_base__parameterized1\ : entity is 74;
+  attribute WRITE_DATA_WIDTH_B of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized1\ : entity is 74;
   attribute WRITE_MODE_A : integer;
-  attribute WRITE_MODE_A of \design_1_axi_dma_0_0_xpm_memory_base__parameterized1\ : entity is 2;
+  attribute WRITE_MODE_A of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized1\ : entity is 2;
   attribute WRITE_MODE_B : integer;
-  attribute WRITE_MODE_B of \design_1_axi_dma_0_0_xpm_memory_base__parameterized1\ : entity is 2;
+  attribute WRITE_MODE_B of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized1\ : entity is 2;
   attribute XPM_MODULE : string;
-  attribute XPM_MODULE of \design_1_axi_dma_0_0_xpm_memory_base__parameterized1\ : entity is "TRUE";
+  attribute XPM_MODULE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized1\ : entity is "TRUE";
   attribute rsta_loop_iter : integer;
-  attribute rsta_loop_iter of \design_1_axi_dma_0_0_xpm_memory_base__parameterized1\ : entity is 76;
+  attribute rsta_loop_iter of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized1\ : entity is 76;
   attribute rstb_loop_iter : integer;
-  attribute rstb_loop_iter of \design_1_axi_dma_0_0_xpm_memory_base__parameterized1\ : entity is 76;
-end \design_1_axi_dma_0_0_xpm_memory_base__parameterized1\;
+  attribute rstb_loop_iter of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized1\ : entity is 76;
+end \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized1\;
 
-architecture STRUCTURE of \design_1_axi_dma_0_0_xpm_memory_base__parameterized1\ is
+architecture STRUCTURE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized1\ is
   signal \<const0>\ : STD_LOGIC;
   signal \NLW_gen_wr_a.gen_word_narrow.mem_reg_0_CASCADEOUTA_UNCONNECTED\ : STD_LOGIC;
   signal \NLW_gen_wr_a.gen_word_narrow.mem_reg_0_CASCADEOUTB_UNCONNECTED\ : STD_LOGIC;
@@ -53512,7 +53460,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_axi_dma_0_0_axi_datamover_cmd_status is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_cmd_status is
   port (
     sig_init_done : out STD_LOGIC;
     sig_cmd2mstr_cmd_valid : out STD_LOGIC;
@@ -53540,13 +53488,11 @@ entity design_1_axi_dma_0_0_axi_datamover_cmd_status is
     D : in STD_LOGIC_VECTOR ( 91 downto 0 );
     sig_rsc2stat_status : in STD_LOGIC_VECTOR ( 2 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_dma_0_0_axi_datamover_cmd_status : entity is "axi_datamover_cmd_status";
-end design_1_axi_dma_0_0_axi_datamover_cmd_status;
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_cmd_status;
 
-architecture STRUCTURE of design_1_axi_dma_0_0_axi_datamover_cmd_status is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_cmd_status is
 begin
-\GEN_INCLUDE_STATUS_FIFO.I_STS_FIFO\: entity work.\design_1_axi_dma_0_0_axi_datamover_fifo__parameterized0\
+\GEN_INCLUDE_STATUS_FIFO.I_STS_FIFO\: entity work.\decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_fifo__parameterized0\
      port map (
       SS(0) => SS(0),
       \USE_SINGLE_REG.sig_regfifo_empty_reg_reg_0\ => sig_stat2rsc_status_ready,
@@ -53564,7 +53510,7 @@ begin
       sig_rsc2stat_status(2 downto 0) => sig_rsc2stat_status(2 downto 0),
       sig_rsc2stat_status_valid => sig_rsc2stat_status_valid
     );
-I_CMD_FIFO: entity work.design_1_axi_dma_0_0_axi_datamover_fifo_20
+I_CMD_FIFO: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_fifo_20
      port map (
       D(91 downto 0) => D(91 downto 0),
       E(0) => E(0),
@@ -53584,7 +53530,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_axi_dma_0_0_axi_datamover_cmd_status__parameterized0\ is
+entity \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_cmd_status__parameterized0\ is
   port (
     sig_init_done : out STD_LOGIC;
     sig_cmd2mstr_cmd_valid : out STD_LOGIC;
@@ -53615,12 +53561,12 @@ entity \design_1_axi_dma_0_0_axi_datamover_cmd_status__parameterized0\ is
     D : in STD_LOGIC_VECTOR ( 30 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_axi_dma_0_0_axi_datamover_cmd_status__parameterized0\ : entity is "axi_datamover_cmd_status";
-end \design_1_axi_dma_0_0_axi_datamover_cmd_status__parameterized0\;
+  attribute ORIG_REF_NAME of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_cmd_status__parameterized0\ : entity is "axi_datamover_cmd_status";
+end \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_cmd_status__parameterized0\;
 
-architecture STRUCTURE of \design_1_axi_dma_0_0_axi_datamover_cmd_status__parameterized0\ is
+architecture STRUCTURE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_cmd_status__parameterized0\ is
 begin
-\GEN_INCLUDE_STATUS_FIFO.I_STS_FIFO\: entity work.\design_1_axi_dma_0_0_axi_datamover_fifo__parameterized4\
+\GEN_INCLUDE_STATUS_FIFO.I_STS_FIFO\: entity work.\decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_fifo__parameterized4\
      port map (
       D(30 downto 0) => D(30 downto 0),
       \USE_SINGLE_REG.sig_regfifo_dout_reg_reg[34]_0\ => \USE_SINGLE_REG.sig_regfifo_dout_reg_reg[34]\,
@@ -53641,7 +53587,7 @@ begin
       sts_received_i_reg => sts_received_i_reg,
       sts_received_i_reg_0(25 downto 0) => sts_received_i_reg_0(25 downto 0)
     );
-I_CMD_FIFO: entity work.design_1_axi_dma_0_0_axi_datamover_fifo
+I_CMD_FIFO: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_fifo
      port map (
       Q(91 downto 0) => Q(91 downto 0),
       \USE_SINGLE_REG.sig_regfifo_dout_reg_reg[98]_0\(91 downto 0) => \USE_SINGLE_REG.sig_regfifo_dout_reg_reg[98]\(91 downto 0),
@@ -53661,7 +53607,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_axi_dma_0_0_axi_dma_mm2s_mngr is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma_mm2s_mngr is
   port (
     p_18_out : out STD_LOGIC;
     p_17_out : out STD_LOGIC;
@@ -53706,11 +53652,9 @@ entity design_1_axi_dma_0_0_axi_dma_mm2s_mngr is
     \p_1_out__0\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     Q : in STD_LOGIC_VECTOR ( 25 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_dma_0_0_axi_dma_mm2s_mngr : entity is "axi_dma_mm2s_mngr";
-end design_1_axi_dma_0_0_axi_dma_mm2s_mngr;
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma_mm2s_mngr;
 
-architecture STRUCTURE of design_1_axi_dma_0_0_axi_dma_mm2s_mngr is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma_mm2s_mngr is
   signal \^fsm_sequential_smpl_cs_reg[0]\ : STD_LOGIC;
   signal \GEN_MM2S_DMA_CONTROL.GEN_SIMPLE_DMA_MODE.I_MM2S_SMPL_SM_n_6\ : STD_LOGIC;
   signal \GEN_MM2S_DMA_CONTROL.GEN_SIMPLE_DMA_MODE.I_MM2S_SMPL_SM_n_8\ : STD_LOGIC;
@@ -53722,7 +53666,7 @@ begin
   \FSM_sequential_smpl_cs_reg[0]\ <= \^fsm_sequential_smpl_cs_reg[0]\;
   p_4_out <= \^p_4_out\;
   p_5_out <= \^p_5_out\;
-\GEN_MM2S_DMA_CONTROL.GEN_SIMPLE_DMA_MODE.I_MM2S_SMPL_SM\: entity work.design_1_axi_dma_0_0_axi_dma_smple_sm_35
+\GEN_MM2S_DMA_CONTROL.GEN_SIMPLE_DMA_MODE.I_MM2S_SMPL_SM\: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma_smple_sm_35
      port map (
       D(91 downto 0) => D(91 downto 0),
       \FSM_sequential_smpl_cs_reg[0]_0\ => smpl_cs(0),
@@ -53750,7 +53694,7 @@ begin
       sts_received_clr_reg_0 => \GEN_MM2S_DMA_CONTROL.GEN_SIMPLE_DMA_MODE.I_MM2S_SMPL_SM_n_6\,
       sts_received_i_reg => \^p_5_out\
     );
-\GEN_MM2S_DMA_CONTROL.I_MM2S_CMDSTS\: entity work.design_1_axi_dma_0_0_axi_dma_mm2s_cmdsts_if
+\GEN_MM2S_DMA_CONTROL.I_MM2S_CMDSTS\: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma_mm2s_cmdsts_if
      port map (
       E(0) => E(0),
       \GEN_NO_HOLD_DATA.s_axis_mm2s_cmd_tvalid_reg_0\ => \GEN_MM2S_DMA_CONTROL.GEN_SIMPLE_DMA_MODE.I_MM2S_SMPL_SM_n_8\,
@@ -53774,7 +53718,7 @@ begin
       s_axis_mm2s_cmd_tready => s_axis_mm2s_cmd_tready,
       sts_received_i_reg_0 => \GEN_MM2S_DMA_CONTROL.GEN_SIMPLE_DMA_MODE.I_MM2S_SMPL_SM_n_6\
     );
-\GEN_MM2S_DMA_CONTROL.I_MM2S_STS_MNGR\: entity work.design_1_axi_dma_0_0_axi_dma_mm2s_sts_mngr
+\GEN_MM2S_DMA_CONTROL.I_MM2S_STS_MNGR\: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma_mm2s_sts_mngr
      port map (
       \GNE_SYNC_RESET.scndry_resetn_reg\ => \GNE_SYNC_RESET.scndry_resetn_reg\,
       all_is_idle_d1 => all_is_idle_d1,
@@ -53807,7 +53751,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_axi_dma_0_0_axi_dma_reg_module is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma_reg_module is
   port (
     s_axi_lite_awready : out STD_LOGIC;
     s_axi_lite_arready : out STD_LOGIC;
@@ -53894,11 +53838,9 @@ entity design_1_axi_dma_0_0_axi_dma_reg_module is
     E : in STD_LOGIC_VECTOR ( 0 to 0 );
     D : in STD_LOGIC_VECTOR ( 25 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_dma_0_0_axi_dma_reg_module : entity is "axi_dma_reg_module";
-end design_1_axi_dma_0_0_axi_dma_reg_module;
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma_reg_module;
 
-architecture STRUCTURE of design_1_axi_dma_0_0_axi_dma_reg_module is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma_reg_module is
   signal \GEN_AXI_LITE_IF.AXI_LITE_IF_I_n_11\ : STD_LOGIC;
   signal \GEN_AXI_LITE_IF.AXI_LITE_IF_I_n_7\ : STD_LOGIC;
   signal \GEN_AXI_LITE_IF.AXI_LITE_IF_I_n_8\ : STD_LOGIC;
@@ -54026,7 +53968,7 @@ begin
   s2mm_da(63 downto 0) <= \^s2mm_da\(63 downto 0);
   s2mm_dmasr <= \^s2mm_dmasr\;
   s2mm_stop_i <= \^s2mm_stop_i\;
-\GEN_AXI_LITE_IF.AXI_LITE_IF_I\: entity work.design_1_axi_dma_0_0_axi_dma_lite_if
+\GEN_AXI_LITE_IF.AXI_LITE_IF_I\: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma_lite_if
      port map (
       E(0) => \GEN_AXI_LITE_IF.AXI_LITE_IF_I_n_7\,
       \GEN_SYNC_READ.s_axi_lite_rdata[0]_i_4_0\ => \^dmacr_i_reg[0]\(0),
@@ -54157,7 +54099,7 @@ begin
       s_axi_lite_rready => s_axi_lite_rready,
       s_axi_lite_wvalid => s_axi_lite_wvalid
     );
-\GEN_MM2S_REGISTERS.I_MM2S_DMA_REGISTER\: entity work.design_1_axi_dma_0_0_axi_dma_register
+\GEN_MM2S_REGISTERS.I_MM2S_DMA_REGISTER\: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma_register
      port map (
       E(0) => p_1_in,
       \GEN_REG_FOR_SMPL.GEN_BUFF_ADDR_EQL64.buffer_address_i_64_reg[0]_0\(0) => \GEN_AXI_LITE_IF.AXI_LITE_IF_I_n_11\,
@@ -54236,7 +54178,7 @@ begin
       soft_reset => soft_reset,
       soft_reset_d1_reg => \^dmacr_i_reg[2]\
     );
-\GEN_S2MM_REGISTERS.I_S2MM_DMA_REGISTER\: entity work.design_1_axi_dma_0_0_axi_dma_register_s2mm
+\GEN_S2MM_REGISTERS.I_S2MM_DMA_REGISTER\: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma_register_s2mm
      port map (
       D(25 downto 0) => D(25 downto 0),
       E(0) => \GEN_AXI_LITE_IF.AXI_LITE_IF_I_n_8\,
@@ -54362,7 +54304,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_axi_dma_0_0_axi_dma_rst_module is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma_rst_module is
   port (
     \out\ : out STD_LOGIC;
     \GNE_SYNC_RESET.prmry_resetn_reg\ : out STD_LOGIC;
@@ -54414,11 +54356,9 @@ entity design_1_axi_dma_0_0_axi_dma_rst_module is
     sig_rst2all_stop_request_0 : in STD_LOGIC;
     axi_resetn : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_dma_0_0_axi_dma_rst_module : entity is "axi_dma_rst_module";
-end design_1_axi_dma_0_0_axi_dma_rst_module;
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma_rst_module;
 
-architecture STRUCTURE of design_1_axi_dma_0_0_axi_dma_rst_module is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma_rst_module is
   signal \^generate_level_p_s_cdc.single_bit.cross_plevel_in2scndry_s_level_out_d4\ : STD_LOGIC;
   attribute RTL_KEEP : string;
   attribute RTL_KEEP of \GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4\ : signal is "true";
@@ -54441,7 +54381,7 @@ begin
   mm2s_soft_reset_done <= \^mm2s_soft_reset_done\;
   \out\ <= \^out\;
   s2mm_soft_reset_done <= \^s2mm_soft_reset_done\;
-\GEN_RESET_FOR_MM2S.RESET_I\: entity work.design_1_axi_dma_0_0_axi_dma_reset
+\GEN_RESET_FOR_MM2S.RESET_I\: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma_reset
      port map (
       \GEN_RESET_FOR_MM2S.mm2s_soft_reset_done_reg\ => \^s2mm_soft_reset_done\,
       \GEN_RESET_FOR_MM2S.mm2s_soft_reset_done_reg_0\ => \^mm2s_soft_reset_done\,
@@ -54489,7 +54429,7 @@ begin
       Q => \^mm2s_soft_reset_done\,
       R => '0'
     );
-\GEN_RESET_FOR_S2MM.RESET_I\: entity work.design_1_axi_dma_0_0_axi_dma_reset_1
+\GEN_RESET_FOR_S2MM.RESET_I\: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma_reset_1
      port map (
       \GEN_RESET_FOR_S2MM.s2mm_soft_reset_done_reg\ => \^s2mm_soft_reset_done\,
       \GEN_RESET_FOR_S2MM.s2mm_soft_reset_done_reg_0\ => \^mm2s_soft_reset_done\,
@@ -54530,13 +54470,13 @@ begin
       Q => \^s2mm_soft_reset_done\,
       R => '0'
     );
-REG_HRD_RST: entity work.design_1_axi_dma_0_0_cdc_sync
+REG_HRD_RST: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_cdc_sync
      port map (
       axi_resetn => axi_resetn,
       s_axi_lite_aclk => s_axi_lite_aclk,
       scndry_out => sg_hard_reset
     );
-REG_HRD_RST_OUT: entity work.design_1_axi_dma_0_0_cdc_sync_2
+REG_HRD_RST_OUT: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_cdc_sync_2
      port map (
       axi_resetn => axi_resetn,
       s_axi_lite_aclk => s_axi_lite_aclk,
@@ -54555,7 +54495,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_axi_dma_0_0_axi_dma_s2mm_mngr is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma_s2mm_mngr is
   port (
     smpl_dma_overflow : out STD_LOGIC;
     p_19_out : out STD_LOGIC;
@@ -54607,11 +54547,9 @@ entity design_1_axi_dma_0_0_axi_dma_s2mm_mngr is
     \p_1_out__0\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     Q : in STD_LOGIC_VECTOR ( 25 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_dma_0_0_axi_dma_s2mm_mngr : entity is "axi_dma_s2mm_mngr";
-end design_1_axi_dma_0_0_axi_dma_s2mm_mngr;
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma_s2mm_mngr;
 
-architecture STRUCTURE of design_1_axi_dma_0_0_axi_dma_s2mm_mngr is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma_s2mm_mngr is
   signal \^fsm_sequential_smpl_cs_reg[0]\ : STD_LOGIC;
   signal \GEN_S2MM_DMA_CONTROL.GEN_SIMPLE_DMA_MODE.I_S2MM_SMPL_SM_n_6\ : STD_LOGIC;
   signal \GEN_S2MM_DMA_CONTROL.GEN_SIMPLE_DMA_MODE.I_S2MM_SMPL_SM_n_8\ : STD_LOGIC;
@@ -54623,7 +54561,7 @@ begin
   \FSM_sequential_smpl_cs_reg[0]\ <= \^fsm_sequential_smpl_cs_reg[0]\;
   p_7_out <= \^p_7_out\;
   s_axis_s2mm_cmd_tvalid_split <= \^s_axis_s2mm_cmd_tvalid_split\;
-\GEN_S2MM_DMA_CONTROL.GEN_SIMPLE_DMA_MODE.I_S2MM_SMPL_SM\: entity work.design_1_axi_dma_0_0_axi_dma_smple_sm
+\GEN_S2MM_DMA_CONTROL.GEN_SIMPLE_DMA_MODE.I_S2MM_SMPL_SM\: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma_smple_sm
      port map (
       \FSM_sequential_smpl_cs_reg[0]_0\ => smpl_cs(0),
       \FSM_sequential_smpl_cs_reg[0]_1\ => \^fsm_sequential_smpl_cs_reg[0]\,
@@ -54651,7 +54589,7 @@ begin
       sts_received_clr_reg_0 => \GEN_S2MM_DMA_CONTROL.GEN_SIMPLE_DMA_MODE.I_S2MM_SMPL_SM_n_6\,
       sts_received_i_reg => \^p_7_out\
     );
-\GEN_S2MM_DMA_CONTROL.I_S2MM_CMDSTS\: entity work.design_1_axi_dma_0_0_axi_dma_s2mm_cmdsts_if
+\GEN_S2MM_DMA_CONTROL.I_S2MM_CMDSTS\: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma_s2mm_cmdsts_if
      port map (
       D(25 downto 0) => D(25 downto 0),
       E(0) => E(0),
@@ -54681,7 +54619,7 @@ begin
       smpl_dma_overflow => smpl_dma_overflow,
       sts_received_i_reg_0 => \GEN_S2MM_DMA_CONTROL.GEN_SIMPLE_DMA_MODE.I_S2MM_SMPL_SM_n_6\
     );
-\GEN_S2MM_DMA_CONTROL.I_S2MM_STS_MNGR\: entity work.design_1_axi_dma_0_0_axi_dma_s2mm_sts_mngr
+\GEN_S2MM_DMA_CONTROL.I_S2MM_STS_MNGR\: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma_s2mm_sts_mngr
      port map (
       \GNE_SYNC_RESET.scndry_resetn_reg\ => \GNE_SYNC_RESET.scndry_resetn_reg\,
       all_is_idle_d1 => all_is_idle_d1,
@@ -54714,7 +54652,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_axi_dma_0_0_srl_fifo_rbu_f is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_rbu_f is
   port (
     FIFO_Full_reg_0 : out STD_LOGIC;
     p_0_in : out STD_LOGIC;
@@ -54728,11 +54666,9 @@ entity design_1_axi_dma_0_0_srl_fifo_rbu_f is
     \INFERRED_GEN.cnt_i_reg[1]\ : in STD_LOGIC;
     \in\ : in STD_LOGIC_VECTOR ( 69 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_dma_0_0_srl_fifo_rbu_f : entity is "srl_fifo_rbu_f";
-end design_1_axi_dma_0_0_srl_fifo_rbu_f;
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_rbu_f;
 
-architecture STRUCTURE of design_1_axi_dma_0_0_srl_fifo_rbu_f is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_rbu_f is
   signal CNTR_INCR_DECR_ADDN_F_I_n_1 : STD_LOGIC;
   signal CNTR_INCR_DECR_ADDN_F_I_n_2 : STD_LOGIC;
   signal \^fifo_full_reg_0\ : STD_LOGIC;
@@ -54740,7 +54676,7 @@ architecture STRUCTURE of design_1_axi_dma_0_0_srl_fifo_rbu_f is
   signal sig_wr_fifo : STD_LOGIC;
 begin
   FIFO_Full_reg_0 <= \^fifo_full_reg_0\;
-CNTR_INCR_DECR_ADDN_F_I: entity work.design_1_axi_dma_0_0_cntr_incr_decr_addn_f_4
+CNTR_INCR_DECR_ADDN_F_I: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_cntr_incr_decr_addn_f_4
      port map (
       FIFO_Full_reg => FIFO_Full_reg_1,
       \INFERRED_GEN.cnt_i_reg[1]_0\ => \^fifo_full_reg_0\,
@@ -54755,7 +54691,7 @@ CNTR_INCR_DECR_ADDN_F_I: entity work.design_1_axi_dma_0_0_cntr_incr_decr_addn_f_
       sig_stream_rst => sig_stream_rst,
       sig_wr_fifo => sig_wr_fifo
     );
-DYNSHREG_F_I: entity work.design_1_axi_dma_0_0_dynshreg_f
+DYNSHREG_F_I: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_dynshreg_f
      port map (
       Q(1) => CNTR_INCR_DECR_ADDN_F_I_n_1,
       Q(0) => CNTR_INCR_DECR_ADDN_F_I_n_2,
@@ -54781,7 +54717,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_axi_dma_0_0_srl_fifo_rbu_f_23 is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_rbu_f_23 is
   port (
     FIFO_Full_reg_0 : out STD_LOGIC;
     sel : out STD_LOGIC;
@@ -54800,10 +54736,10 @@ entity design_1_axi_dma_0_0_srl_fifo_rbu_f_23 is
     \in\ : in STD_LOGIC_VECTOR ( 68 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_dma_0_0_srl_fifo_rbu_f_23 : entity is "srl_fifo_rbu_f";
-end design_1_axi_dma_0_0_srl_fifo_rbu_f_23;
+  attribute ORIG_REF_NAME of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_rbu_f_23 : entity is "srl_fifo_rbu_f";
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_rbu_f_23;
 
-architecture STRUCTURE of design_1_axi_dma_0_0_srl_fifo_rbu_f_23 is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_rbu_f_23 is
   signal CNTR_INCR_DECR_ADDN_F_I_n_1 : STD_LOGIC;
   signal CNTR_INCR_DECR_ADDN_F_I_n_2 : STD_LOGIC;
   signal \^fifo_full_reg_0\ : STD_LOGIC;
@@ -54812,7 +54748,7 @@ architecture STRUCTURE of design_1_axi_dma_0_0_srl_fifo_rbu_f_23 is
 begin
   FIFO_Full_reg_0 <= \^fifo_full_reg_0\;
   sel <= \^sel\;
-CNTR_INCR_DECR_ADDN_F_I: entity work.design_1_axi_dma_0_0_cntr_incr_decr_addn_f_24
+CNTR_INCR_DECR_ADDN_F_I: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_cntr_incr_decr_addn_f_24
      port map (
       FIFO_Full_reg => \^sel\,
       \INFERRED_GEN.cnt_i_reg[1]_0\ => \INFERRED_GEN.cnt_i_reg[1]\,
@@ -54830,7 +54766,7 @@ CNTR_INCR_DECR_ADDN_F_I: entity work.design_1_axi_dma_0_0_cntr_incr_decr_addn_f_
       sig_mstr2addr_cmd_valid => sig_mstr2addr_cmd_valid,
       sig_sf_allow_addr_req => sig_sf_allow_addr_req
     );
-DYNSHREG_F_I: entity work.design_1_axi_dma_0_0_dynshreg_f_25
+DYNSHREG_F_I: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_dynshreg_f_25
      port map (
       FIFO_Full_reg => \^sel\,
       Q(1) => CNTR_INCR_DECR_ADDN_F_I_n_1,
@@ -54856,7 +54792,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_axi_dma_0_0_srl_fifo_rbu_f__parameterized0\ is
+entity \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_rbu_f__parameterized0\ is
   port (
     FIFO_Full_reg_0 : out STD_LOGIC;
     Q : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -54881,10 +54817,10 @@ entity \design_1_axi_dma_0_0_srl_fifo_rbu_f__parameterized0\ is
     \in\ : in STD_LOGIC_VECTOR ( 30 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_axi_dma_0_0_srl_fifo_rbu_f__parameterized0\ : entity is "srl_fifo_rbu_f";
-end \design_1_axi_dma_0_0_srl_fifo_rbu_f__parameterized0\;
+  attribute ORIG_REF_NAME of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_rbu_f__parameterized0\ : entity is "srl_fifo_rbu_f";
+end \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_rbu_f__parameterized0\;
 
-architecture STRUCTURE of \design_1_axi_dma_0_0_srl_fifo_rbu_f__parameterized0\ is
+architecture STRUCTURE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_rbu_f__parameterized0\ is
   signal CNTR_INCR_DECR_ADDN_F_I_n_2 : STD_LOGIC;
   signal CNTR_INCR_DECR_ADDN_F_I_n_3 : STD_LOGIC;
   signal \^fifo_full_reg_0\ : STD_LOGIC;
@@ -54895,7 +54831,7 @@ architecture STRUCTURE of \design_1_axi_dma_0_0_srl_fifo_rbu_f__parameterized0\ 
 begin
   FIFO_Full_reg_0 <= \^fifo_full_reg_0\;
   Q(0) <= \^q\(0);
-CNTR_INCR_DECR_ADDN_F_I: entity work.design_1_axi_dma_0_0_cntr_incr_decr_addn_f_5
+CNTR_INCR_DECR_ADDN_F_I: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_cntr_incr_decr_addn_f_5
      port map (
       D(0) => D(2),
       \FSM_sequential_sig_cmdcntl_sm_state_reg[2]\(2 downto 0) => \FSM_sequential_sig_cmdcntl_sm_state_reg[1]\(2 downto 0),
@@ -54916,7 +54852,7 @@ CNTR_INCR_DECR_ADDN_F_I: entity work.design_1_axi_dma_0_0_cntr_incr_decr_addn_f_
       sig_stream_rst => sig_stream_rst,
       sig_wr_fifo => sig_wr_fifo
     );
-DYNSHREG_F_I: entity work.\design_1_axi_dma_0_0_dynshreg_f__parameterized0\
+DYNSHREG_F_I: entity work.\decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_dynshreg_f__parameterized0\
      port map (
       D(1 downto 0) => D(1 downto 0),
       E(0) => E(0),
@@ -54954,7 +54890,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_axi_dma_0_0_srl_fifo_rbu_f__parameterized0_17\ is
+entity \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_rbu_f__parameterized0_17\ is
   port (
     FIFO_Full_reg_0 : out STD_LOGIC;
     \sig_cmd_stat_rst_user_reg_n_cdc_from_reg__0\ : out STD_LOGIC;
@@ -54995,10 +54931,10 @@ entity \design_1_axi_dma_0_0_srl_fifo_rbu_f__parameterized0_17\ is
     \in\ : in STD_LOGIC_VECTOR ( 22 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_axi_dma_0_0_srl_fifo_rbu_f__parameterized0_17\ : entity is "srl_fifo_rbu_f";
-end \design_1_axi_dma_0_0_srl_fifo_rbu_f__parameterized0_17\;
+  attribute ORIG_REF_NAME of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_rbu_f__parameterized0_17\ : entity is "srl_fifo_rbu_f";
+end \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_rbu_f__parameterized0_17\;
 
-architecture STRUCTURE of \design_1_axi_dma_0_0_srl_fifo_rbu_f__parameterized0_17\ is
+architecture STRUCTURE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_rbu_f__parameterized0_17\ is
   signal CNTR_INCR_DECR_ADDN_F_I_n_1 : STD_LOGIC;
   signal CNTR_INCR_DECR_ADDN_F_I_n_2 : STD_LOGIC;
   signal \^fifo_full_reg_0\ : STD_LOGIC;
@@ -55012,7 +54948,7 @@ begin
   sel <= \^sel\;
   sig_dqual_reg_empty_reg <= \^sig_dqual_reg_empty_reg\;
   sig_halt_reg_reg <= \^sig_halt_reg_reg\;
-CNTR_INCR_DECR_ADDN_F_I: entity work.design_1_axi_dma_0_0_cntr_incr_decr_addn_f_18
+CNTR_INCR_DECR_ADDN_F_I: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_cntr_incr_decr_addn_f_18
      port map (
       D(6 downto 0) => D(7 downto 1),
       E(0) => E(0),
@@ -55049,7 +54985,7 @@ CNTR_INCR_DECR_ADDN_F_I: entity work.design_1_axi_dma_0_0_cntr_incr_decr_addn_f_
       sig_rsc2stat_status_valid => sig_rsc2stat_status_valid,
       sig_stat2rsc_status_ready => sig_stat2rsc_status_ready
     );
-DYNSHREG_F_I: entity work.\design_1_axi_dma_0_0_dynshreg_f__parameterized0_19\
+DYNSHREG_F_I: entity work.\decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_dynshreg_f__parameterized0_19\
      port map (
       D(0) => D(0),
       FIFO_Full_reg => \^sel\,
@@ -55086,7 +55022,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_axi_dma_0_0_srl_fifo_rbu_f__parameterized1\ is
+entity \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_rbu_f__parameterized1\ is
   port (
     FIFO_Full_reg_0 : out STD_LOGIC;
     Q : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -55100,10 +55036,10 @@ entity \design_1_axi_dma_0_0_srl_fifo_rbu_f__parameterized1\ is
     \in\ : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_axi_dma_0_0_srl_fifo_rbu_f__parameterized1\ : entity is "srl_fifo_rbu_f";
-end \design_1_axi_dma_0_0_srl_fifo_rbu_f__parameterized1\;
+  attribute ORIG_REF_NAME of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_rbu_f__parameterized1\ : entity is "srl_fifo_rbu_f";
+end \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_rbu_f__parameterized1\;
 
-architecture STRUCTURE of \design_1_axi_dma_0_0_srl_fifo_rbu_f__parameterized1\ is
+architecture STRUCTURE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_rbu_f__parameterized1\ is
   signal CNTR_INCR_DECR_ADDN_F_I_n_2 : STD_LOGIC;
   signal CNTR_INCR_DECR_ADDN_F_I_n_3 : STD_LOGIC;
   signal \^fifo_full_reg_0\ : STD_LOGIC;
@@ -55112,7 +55048,7 @@ architecture STRUCTURE of \design_1_axi_dma_0_0_srl_fifo_rbu_f__parameterized1\ 
 begin
   FIFO_Full_reg_0 <= \^fifo_full_reg_0\;
   sel <= \^sel\;
-CNTR_INCR_DECR_ADDN_F_I: entity work.design_1_axi_dma_0_0_cntr_incr_decr_addn_f_26
+CNTR_INCR_DECR_ADDN_F_I: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_cntr_incr_decr_addn_f_26
      port map (
       FIFO_Full_reg => \^sel\,
       \INFERRED_GEN.cnt_i_reg[1]_0\ => \INFERRED_GEN.cnt_i_reg[1]\,
@@ -55126,7 +55062,7 @@ CNTR_INCR_DECR_ADDN_F_I: entity work.design_1_axi_dma_0_0_cntr_incr_decr_addn_f_
       sig_mstr2sf_cmd_valid => sig_mstr2sf_cmd_valid,
       \sig_rd_fifo__0\ => \sig_rd_fifo__0\
     );
-DYNSHREG_F_I: entity work.\design_1_axi_dma_0_0_dynshreg_f__parameterized1\
+DYNSHREG_F_I: entity work.\decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_dynshreg_f__parameterized1\
      port map (
       FIFO_Full_reg => \^fifo_full_reg_0\,
       FIFO_Full_reg_0 => \INFERRED_GEN.cnt_i_reg[1]\,
@@ -55151,7 +55087,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_axi_dma_0_0_srl_fifo_rbu_f__parameterized2\ is
+entity \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_rbu_f__parameterized2\ is
   port (
     D : out STD_LOGIC_VECTOR ( 2 downto 0 );
     E : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -55175,10 +55111,10 @@ entity \design_1_axi_dma_0_0_srl_fifo_rbu_f__parameterized2\ is
     m_axi_s2mm_bresp : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_axi_dma_0_0_srl_fifo_rbu_f__parameterized2\ : entity is "srl_fifo_rbu_f";
-end \design_1_axi_dma_0_0_srl_fifo_rbu_f__parameterized2\;
+  attribute ORIG_REF_NAME of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_rbu_f__parameterized2\ : entity is "srl_fifo_rbu_f";
+end \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_rbu_f__parameterized2\;
 
-architecture STRUCTURE of \design_1_axi_dma_0_0_srl_fifo_rbu_f__parameterized2\ is
+architecture STRUCTURE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_rbu_f__parameterized2\ is
   signal CNTR_INCR_DECR_ADDN_F_I_n_2 : STD_LOGIC;
   signal CNTR_INCR_DECR_ADDN_F_I_n_3 : STD_LOGIC;
   signal CNTR_INCR_DECR_ADDN_F_I_n_4 : STD_LOGIC;
@@ -55186,7 +55122,7 @@ architecture STRUCTURE of \design_1_axi_dma_0_0_srl_fifo_rbu_f__parameterized2\ 
   signal fifo_full_p1 : STD_LOGIC;
   signal sig_wr_fifo : STD_LOGIC;
 begin
-CNTR_INCR_DECR_ADDN_F_I: entity work.\design_1_axi_dma_0_0_cntr_incr_decr_addn_f__parameterized0\
+CNTR_INCR_DECR_ADDN_F_I: entity work.\decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_cntr_incr_decr_addn_f__parameterized0\
      port map (
       \INFERRED_GEN.cnt_i_reg[0]_0\ => \INFERRED_GEN.cnt_i_reg[0]\,
       \INFERRED_GEN.cnt_i_reg[1]_0\ => FIFO_Full_reg_n_0,
@@ -55203,7 +55139,7 @@ CNTR_INCR_DECR_ADDN_F_I: entity work.\design_1_axi_dma_0_0_cntr_incr_decr_addn_f
       sig_stream_rst => sig_stream_rst,
       sig_wr_fifo => sig_wr_fifo
     );
-DYNSHREG_F_I: entity work.\design_1_axi_dma_0_0_dynshreg_f__parameterized2\
+DYNSHREG_F_I: entity work.\decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_dynshreg_f__parameterized2\
      port map (
       \GEN_ENABLE_INDET_BTT.sig_coelsc_decerr_reg_reg\ => \GEN_ENABLE_INDET_BTT.sig_coelsc_decerr_reg_reg\,
       \GEN_ENABLE_INDET_BTT.sig_coelsc_slverr_reg_reg\(1 downto 0) => \GEN_ENABLE_INDET_BTT.sig_coelsc_slverr_reg_reg\(1 downto 0),
@@ -55292,7 +55228,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_axi_dma_0_0_srl_fifo_rbu_f__parameterized3\ is
+entity \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_rbu_f__parameterized3\ is
   port (
     FIFO_Full_reg_0 : out STD_LOGIC;
     p_0_in : out STD_LOGIC;
@@ -55317,10 +55253,10 @@ entity \design_1_axi_dma_0_0_srl_fifo_rbu_f__parameterized3\ is
     \in\ : in STD_LOGIC_VECTOR ( 28 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_axi_dma_0_0_srl_fifo_rbu_f__parameterized3\ : entity is "srl_fifo_rbu_f";
-end \design_1_axi_dma_0_0_srl_fifo_rbu_f__parameterized3\;
+  attribute ORIG_REF_NAME of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_rbu_f__parameterized3\ : entity is "srl_fifo_rbu_f";
+end \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_rbu_f__parameterized3\;
 
-architecture STRUCTURE of \design_1_axi_dma_0_0_srl_fifo_rbu_f__parameterized3\ is
+architecture STRUCTURE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_rbu_f__parameterized3\ is
   signal CNTR_INCR_DECR_ADDN_F_I_n_2 : STD_LOGIC;
   signal CNTR_INCR_DECR_ADDN_F_I_n_3 : STD_LOGIC;
   signal CNTR_INCR_DECR_ADDN_F_I_n_4 : STD_LOGIC;
@@ -55335,7 +55271,7 @@ begin
   Q(0) <= \^q\(0);
   \out\(28 downto 0) <= \^out\(28 downto 0);
   sel <= \^sel\;
-CNTR_INCR_DECR_ADDN_F_I: entity work.\design_1_axi_dma_0_0_cntr_incr_decr_addn_f__parameterized0_3\
+CNTR_INCR_DECR_ADDN_F_I: entity work.\decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_cntr_incr_decr_addn_f__parameterized0_3\
      port map (
       D(2 downto 0) => D(2 downto 0),
       E(0) => E(0),
@@ -55357,7 +55293,7 @@ CNTR_INCR_DECR_ADDN_F_I: entity work.\design_1_axi_dma_0_0_cntr_incr_decr_addn_f
       sig_stream_rst => sig_stream_rst,
       \sig_wdc_statcnt_reg[3]\(3 downto 0) => \sig_wdc_statcnt_reg[3]\(3 downto 0)
     );
-DYNSHREG_F_I: entity work.\design_1_axi_dma_0_0_dynshreg_f__parameterized3\
+DYNSHREG_F_I: entity work.\decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_dynshreg_f__parameterized3\
      port map (
       FIFO_Full_reg => \^sel\,
       \GEN_ENABLE_INDET_BTT.sig_coelsc_eop_reg\(0) => \GEN_ENABLE_INDET_BTT.sig_coelsc_eop_reg\(0),
@@ -55393,7 +55329,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_axi_dma_0_0_srl_fifo_rbu_f__parameterized4\ is
+entity \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_rbu_f__parameterized4\ is
   port (
     FIFO_Full_reg_0 : out STD_LOGIC;
     SS : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -55447,10 +55383,10 @@ entity \design_1_axi_dma_0_0_srl_fifo_rbu_f__parameterized4\ is
     sig_dre2ibtt_tlast_reg_reg_1 : in STD_LOGIC_VECTOR ( 5 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_axi_dma_0_0_srl_fifo_rbu_f__parameterized4\ : entity is "srl_fifo_rbu_f";
-end \design_1_axi_dma_0_0_srl_fifo_rbu_f__parameterized4\;
+  attribute ORIG_REF_NAME of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_rbu_f__parameterized4\ : entity is "srl_fifo_rbu_f";
+end \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_rbu_f__parameterized4\;
 
-architecture STRUCTURE of \design_1_axi_dma_0_0_srl_fifo_rbu_f__parameterized4\ is
+architecture STRUCTURE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_rbu_f__parameterized4\ is
   signal CNTR_INCR_DECR_ADDN_F_I_n_2 : STD_LOGIC;
   signal CNTR_INCR_DECR_ADDN_F_I_n_3 : STD_LOGIC;
   signal CNTR_INCR_DECR_ADDN_F_I_n_4 : STD_LOGIC;
@@ -55465,7 +55401,7 @@ begin
   Q(0) <= \^q\(0);
   SS(0) <= \^ss\(0);
   \out\(4 downto 0) <= \^out\(4 downto 0);
-CNTR_INCR_DECR_ADDN_F_I: entity work.\design_1_axi_dma_0_0_cntr_incr_decr_addn_f__parameterized1\
+CNTR_INCR_DECR_ADDN_F_I: entity work.\decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_cntr_incr_decr_addn_f__parameterized1\
      port map (
       \INCLUDE_PACKING.DO_REG_SLICES[0].lsig_flag_slice_reg_reg[0][0]\ => \INCLUDE_PACKING.DO_REG_SLICES[0].lsig_strb_slice_reg_reg[0][1]\,
       \INCLUDE_PACKING.DO_REG_SLICES[1].lsig_flag_slice_reg_reg[1][0]\ => \INCLUDE_PACKING.DO_REG_SLICES[1].lsig_strb_slice_reg_reg[1][1]\,
@@ -55495,7 +55431,7 @@ CNTR_INCR_DECR_ADDN_F_I: entity work.\design_1_axi_dma_0_0_cntr_incr_decr_addn_f
       sig_eop_sent_reg => sig_eop_sent_reg,
       slice_insert_valid => slice_insert_valid
     );
-DYNSHREG_F_I: entity work.\design_1_axi_dma_0_0_dynshreg_f__parameterized4\
+DYNSHREG_F_I: entity work.\decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_dynshreg_f__parameterized4\
      port map (
       CO(0) => CO(0),
       \GEN_INDET_BTT.lsig_absorb2tlast_reg\ => \GEN_INDET_BTT.lsig_absorb2tlast_reg\,
@@ -55556,7 +55492,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_axi_dma_0_0_srl_fifo_rbu_f__parameterized5\ is
+entity \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_rbu_f__parameterized5\ is
   port (
     FIFO_Full_reg_0 : out STD_LOGIC;
     \sig_cmd_stat_rst_user_reg_n_cdc_from_reg__0\ : out STD_LOGIC;
@@ -55599,10 +55535,10 @@ entity \design_1_axi_dma_0_0_srl_fifo_rbu_f__parameterized5\ is
     sig_next_calc_error_reg_reg : in STD_LOGIC_VECTOR ( 9 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_axi_dma_0_0_srl_fifo_rbu_f__parameterized5\ : entity is "srl_fifo_rbu_f";
-end \design_1_axi_dma_0_0_srl_fifo_rbu_f__parameterized5\;
+  attribute ORIG_REF_NAME of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_rbu_f__parameterized5\ : entity is "srl_fifo_rbu_f";
+end \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_rbu_f__parameterized5\;
 
-architecture STRUCTURE of \design_1_axi_dma_0_0_srl_fifo_rbu_f__parameterized5\ is
+architecture STRUCTURE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_rbu_f__parameterized5\ is
   signal CNTR_INCR_DECR_ADDN_F_I_n_5 : STD_LOGIC;
   signal CNTR_INCR_DECR_ADDN_F_I_n_6 : STD_LOGIC;
   signal DYNSHREG_F_I_n_11 : STD_LOGIC;
@@ -55614,7 +55550,7 @@ architecture STRUCTURE of \design_1_axi_dma_0_0_srl_fifo_rbu_f__parameterized5\ 
 begin
   FIFO_Full_reg_0 <= \^fifo_full_reg_0\;
   sig_last_dbeat_reg <= \^sig_last_dbeat_reg\;
-CNTR_INCR_DECR_ADDN_F_I: entity work.design_1_axi_dma_0_0_cntr_incr_decr_addn_f
+CNTR_INCR_DECR_ADDN_F_I: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_cntr_incr_decr_addn_f
      port map (
       E(0) => E(0),
       \INFERRED_GEN.cnt_i_reg[0]_0\ => \^fifo_full_reg_0\,
@@ -55657,7 +55593,7 @@ CNTR_INCR_DECR_ADDN_F_I: entity work.design_1_axi_dma_0_0_cntr_incr_decr_addn_f
       sig_wr_fifo => sig_wr_fifo,
       sig_wsc2stat_status_valid => sig_wsc2stat_status_valid
     );
-DYNSHREG_F_I: entity work.\design_1_axi_dma_0_0_dynshreg_f__parameterized5\
+DYNSHREG_F_I: entity work.\decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_dynshreg_f__parameterized5\
      port map (
       D(0) => D(0),
       Q(0) => Q(0),
@@ -55694,7 +55630,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_axi_dma_0_0_xpm_fifo_base is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base is
   port (
     sleep : in STD_LOGIC;
     rst : in STD_LOGIC;
@@ -55725,128 +55661,126 @@ entity design_1_axi_dma_0_0_xpm_fifo_base is
     dbiterr : out STD_LOGIC
   );
   attribute CDC_DEST_SYNC_FF : integer;
-  attribute CDC_DEST_SYNC_FF of design_1_axi_dma_0_0_xpm_fifo_base : entity is 2;
+  attribute CDC_DEST_SYNC_FF of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base : entity is 2;
   attribute COMMON_CLOCK : integer;
-  attribute COMMON_CLOCK of design_1_axi_dma_0_0_xpm_fifo_base : entity is 1;
+  attribute COMMON_CLOCK of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base : entity is 1;
   attribute DOUT_RESET_VALUE : string;
-  attribute DOUT_RESET_VALUE of design_1_axi_dma_0_0_xpm_fifo_base : entity is "0";
+  attribute DOUT_RESET_VALUE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base : entity is "0";
   attribute ECC_MODE : integer;
-  attribute ECC_MODE of design_1_axi_dma_0_0_xpm_fifo_base : entity is 0;
+  attribute ECC_MODE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base : entity is 0;
   attribute ENABLE_ECC : integer;
-  attribute ENABLE_ECC of design_1_axi_dma_0_0_xpm_fifo_base : entity is 0;
+  attribute ENABLE_ECC of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base : entity is 0;
   attribute EN_ADV_FEATURE : string;
-  attribute EN_ADV_FEATURE of design_1_axi_dma_0_0_xpm_fifo_base : entity is "16'b0001111100011111";
+  attribute EN_ADV_FEATURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base : entity is "16'b0001111100011111";
   attribute EN_AE : string;
-  attribute EN_AE of design_1_axi_dma_0_0_xpm_fifo_base : entity is "1'b1";
+  attribute EN_AE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base : entity is "1'b1";
   attribute EN_AF : string;
-  attribute EN_AF of design_1_axi_dma_0_0_xpm_fifo_base : entity is "1'b1";
+  attribute EN_AF of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base : entity is "1'b1";
   attribute EN_DVLD : string;
-  attribute EN_DVLD of design_1_axi_dma_0_0_xpm_fifo_base : entity is "1'b1";
+  attribute EN_DVLD of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base : entity is "1'b1";
   attribute EN_OF : string;
-  attribute EN_OF of design_1_axi_dma_0_0_xpm_fifo_base : entity is "1'b1";
+  attribute EN_OF of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base : entity is "1'b1";
   attribute EN_PE : string;
-  attribute EN_PE of design_1_axi_dma_0_0_xpm_fifo_base : entity is "1'b1";
+  attribute EN_PE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base : entity is "1'b1";
   attribute EN_PF : string;
-  attribute EN_PF of design_1_axi_dma_0_0_xpm_fifo_base : entity is "1'b1";
+  attribute EN_PF of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base : entity is "1'b1";
   attribute EN_RDC : string;
-  attribute EN_RDC of design_1_axi_dma_0_0_xpm_fifo_base : entity is "1'b1";
+  attribute EN_RDC of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base : entity is "1'b1";
   attribute EN_UF : string;
-  attribute EN_UF of design_1_axi_dma_0_0_xpm_fifo_base : entity is "1'b1";
+  attribute EN_UF of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base : entity is "1'b1";
   attribute EN_WACK : string;
-  attribute EN_WACK of design_1_axi_dma_0_0_xpm_fifo_base : entity is "1'b1";
+  attribute EN_WACK of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base : entity is "1'b1";
   attribute EN_WDC : string;
-  attribute EN_WDC of design_1_axi_dma_0_0_xpm_fifo_base : entity is "1'b1";
+  attribute EN_WDC of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base : entity is "1'b1";
   attribute FG_EQ_ASYM_DOUT : string;
-  attribute FG_EQ_ASYM_DOUT of design_1_axi_dma_0_0_xpm_fifo_base : entity is "1'b0";
+  attribute FG_EQ_ASYM_DOUT of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base : entity is "1'b0";
   attribute FIFO_MEMORY_TYPE : integer;
-  attribute FIFO_MEMORY_TYPE of design_1_axi_dma_0_0_xpm_fifo_base : entity is 2;
+  attribute FIFO_MEMORY_TYPE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base : entity is 2;
   attribute FIFO_MEM_TYPE : integer;
-  attribute FIFO_MEM_TYPE of design_1_axi_dma_0_0_xpm_fifo_base : entity is 2;
+  attribute FIFO_MEM_TYPE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base : entity is 2;
   attribute FIFO_READ_DEPTH : integer;
-  attribute FIFO_READ_DEPTH of design_1_axi_dma_0_0_xpm_fifo_base : entity is 128;
+  attribute FIFO_READ_DEPTH of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base : entity is 128;
   attribute FIFO_READ_LATENCY : integer;
-  attribute FIFO_READ_LATENCY of design_1_axi_dma_0_0_xpm_fifo_base : entity is 0;
+  attribute FIFO_READ_LATENCY of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base : entity is 0;
   attribute FIFO_SIZE : integer;
-  attribute FIFO_SIZE of design_1_axi_dma_0_0_xpm_fifo_base : entity is 9600;
+  attribute FIFO_SIZE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base : entity is 9600;
   attribute FIFO_WRITE_DEPTH : integer;
-  attribute FIFO_WRITE_DEPTH of design_1_axi_dma_0_0_xpm_fifo_base : entity is 128;
+  attribute FIFO_WRITE_DEPTH of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base : entity is 128;
   attribute FULL_RESET_VALUE : integer;
-  attribute FULL_RESET_VALUE of design_1_axi_dma_0_0_xpm_fifo_base : entity is 1;
+  attribute FULL_RESET_VALUE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base : entity is 1;
   attribute FULL_RST_VAL : string;
-  attribute FULL_RST_VAL of design_1_axi_dma_0_0_xpm_fifo_base : entity is "1'b1";
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_dma_0_0_xpm_fifo_base : entity is "xpm_fifo_base";
+  attribute FULL_RST_VAL of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base : entity is "1'b1";
   attribute PE_THRESH_ADJ : integer;
-  attribute PE_THRESH_ADJ of design_1_axi_dma_0_0_xpm_fifo_base : entity is 8;
+  attribute PE_THRESH_ADJ of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base : entity is 8;
   attribute PE_THRESH_MAX : integer;
-  attribute PE_THRESH_MAX of design_1_axi_dma_0_0_xpm_fifo_base : entity is 123;
+  attribute PE_THRESH_MAX of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base : entity is 123;
   attribute PE_THRESH_MIN : integer;
-  attribute PE_THRESH_MIN of design_1_axi_dma_0_0_xpm_fifo_base : entity is 5;
+  attribute PE_THRESH_MIN of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base : entity is 5;
   attribute PF_THRESH_ADJ : integer;
-  attribute PF_THRESH_ADJ of design_1_axi_dma_0_0_xpm_fifo_base : entity is 8;
+  attribute PF_THRESH_ADJ of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base : entity is 8;
   attribute PF_THRESH_MAX : integer;
-  attribute PF_THRESH_MAX of design_1_axi_dma_0_0_xpm_fifo_base : entity is 123;
+  attribute PF_THRESH_MAX of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base : entity is 123;
   attribute PF_THRESH_MIN : integer;
-  attribute PF_THRESH_MIN of design_1_axi_dma_0_0_xpm_fifo_base : entity is 5;
+  attribute PF_THRESH_MIN of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base : entity is 5;
   attribute PROG_EMPTY_THRESH : integer;
-  attribute PROG_EMPTY_THRESH of design_1_axi_dma_0_0_xpm_fifo_base : entity is 10;
+  attribute PROG_EMPTY_THRESH of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base : entity is 10;
   attribute PROG_FULL_THRESH : integer;
-  attribute PROG_FULL_THRESH of design_1_axi_dma_0_0_xpm_fifo_base : entity is 10;
+  attribute PROG_FULL_THRESH of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base : entity is 10;
   attribute RD_DATA_COUNT_WIDTH : integer;
-  attribute RD_DATA_COUNT_WIDTH of design_1_axi_dma_0_0_xpm_fifo_base : entity is 4;
+  attribute RD_DATA_COUNT_WIDTH of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base : entity is 4;
   attribute RD_DC_WIDTH_EXT : integer;
-  attribute RD_DC_WIDTH_EXT of design_1_axi_dma_0_0_xpm_fifo_base : entity is 8;
+  attribute RD_DC_WIDTH_EXT of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base : entity is 8;
   attribute RD_LATENCY : integer;
-  attribute RD_LATENCY of design_1_axi_dma_0_0_xpm_fifo_base : entity is 2;
+  attribute RD_LATENCY of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base : entity is 2;
   attribute RD_MODE : integer;
-  attribute RD_MODE of design_1_axi_dma_0_0_xpm_fifo_base : entity is 1;
+  attribute RD_MODE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base : entity is 1;
   attribute RD_PNTR_WIDTH : integer;
-  attribute RD_PNTR_WIDTH of design_1_axi_dma_0_0_xpm_fifo_base : entity is 7;
+  attribute RD_PNTR_WIDTH of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base : entity is 7;
   attribute READ_DATA_WIDTH : integer;
-  attribute READ_DATA_WIDTH of design_1_axi_dma_0_0_xpm_fifo_base : entity is 75;
+  attribute READ_DATA_WIDTH of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base : entity is 75;
   attribute READ_MODE : integer;
-  attribute READ_MODE of design_1_axi_dma_0_0_xpm_fifo_base : entity is 1;
+  attribute READ_MODE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base : entity is 1;
   attribute RELATED_CLOCKS : integer;
-  attribute RELATED_CLOCKS of design_1_axi_dma_0_0_xpm_fifo_base : entity is 0;
+  attribute RELATED_CLOCKS of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base : entity is 0;
   attribute REMOVE_WR_RD_PROT_LOGIC : integer;
-  attribute REMOVE_WR_RD_PROT_LOGIC of design_1_axi_dma_0_0_xpm_fifo_base : entity is 0;
+  attribute REMOVE_WR_RD_PROT_LOGIC of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base : entity is 0;
   attribute SIM_ASSERT_CHK : integer;
-  attribute SIM_ASSERT_CHK of design_1_axi_dma_0_0_xpm_fifo_base : entity is 0;
+  attribute SIM_ASSERT_CHK of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base : entity is 0;
   attribute USE_ADV_FEATURES : string;
-  attribute USE_ADV_FEATURES of design_1_axi_dma_0_0_xpm_fifo_base : entity is "1F1F";
+  attribute USE_ADV_FEATURES of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base : entity is "1F1F";
   attribute VERSION : integer;
-  attribute VERSION of design_1_axi_dma_0_0_xpm_fifo_base : entity is 0;
+  attribute VERSION of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base : entity is 0;
   attribute WAKEUP_TIME : integer;
-  attribute WAKEUP_TIME of design_1_axi_dma_0_0_xpm_fifo_base : entity is 0;
+  attribute WAKEUP_TIME of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base : entity is 0;
   attribute WIDTH_RATIO : integer;
-  attribute WIDTH_RATIO of design_1_axi_dma_0_0_xpm_fifo_base : entity is 1;
+  attribute WIDTH_RATIO of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base : entity is 1;
   attribute WRITE_DATA_WIDTH : integer;
-  attribute WRITE_DATA_WIDTH of design_1_axi_dma_0_0_xpm_fifo_base : entity is 75;
+  attribute WRITE_DATA_WIDTH of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base : entity is 75;
   attribute WR_DATA_COUNT_WIDTH : integer;
-  attribute WR_DATA_COUNT_WIDTH of design_1_axi_dma_0_0_xpm_fifo_base : entity is 8;
+  attribute WR_DATA_COUNT_WIDTH of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base : entity is 8;
   attribute WR_DC_WIDTH_EXT : integer;
-  attribute WR_DC_WIDTH_EXT of design_1_axi_dma_0_0_xpm_fifo_base : entity is 8;
+  attribute WR_DC_WIDTH_EXT of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base : entity is 8;
   attribute WR_DEPTH_LOG : integer;
-  attribute WR_DEPTH_LOG of design_1_axi_dma_0_0_xpm_fifo_base : entity is 7;
+  attribute WR_DEPTH_LOG of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base : entity is 7;
   attribute WR_PNTR_WIDTH : integer;
-  attribute WR_PNTR_WIDTH of design_1_axi_dma_0_0_xpm_fifo_base : entity is 7;
+  attribute WR_PNTR_WIDTH of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base : entity is 7;
   attribute WR_RD_RATIO : integer;
-  attribute WR_RD_RATIO of design_1_axi_dma_0_0_xpm_fifo_base : entity is 0;
+  attribute WR_RD_RATIO of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base : entity is 0;
   attribute WR_WIDTH_LOG : integer;
-  attribute WR_WIDTH_LOG of design_1_axi_dma_0_0_xpm_fifo_base : entity is 7;
+  attribute WR_WIDTH_LOG of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base : entity is 7;
   attribute XPM_MODULE : string;
-  attribute XPM_MODULE of design_1_axi_dma_0_0_xpm_fifo_base : entity is "TRUE";
+  attribute XPM_MODULE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base : entity is "TRUE";
   attribute both_stages_valid : integer;
-  attribute both_stages_valid of design_1_axi_dma_0_0_xpm_fifo_base : entity is 3;
+  attribute both_stages_valid of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base : entity is 3;
   attribute invalid : integer;
-  attribute invalid of design_1_axi_dma_0_0_xpm_fifo_base : entity is 0;
+  attribute invalid of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base : entity is 0;
   attribute stage1_valid : integer;
-  attribute stage1_valid of design_1_axi_dma_0_0_xpm_fifo_base : entity is 2;
+  attribute stage1_valid of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base : entity is 2;
   attribute stage2_valid : integer;
-  attribute stage2_valid of design_1_axi_dma_0_0_xpm_fifo_base : entity is 1;
-end design_1_axi_dma_0_0_xpm_fifo_base;
+  attribute stage2_valid of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base : entity is 1;
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base;
 
-architecture STRUCTURE of design_1_axi_dma_0_0_xpm_fifo_base is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base is
   signal \<const0>\ : STD_LOGIC;
   signal aempty_fwft_i0 : STD_LOGIC;
   signal \^almost_empty\ : STD_LOGIC;
@@ -56202,7 +56136,7 @@ GND: unisim.vcomponents.GND
       Q => data_valid,
       R => xpm_fifo_rst_inst_n_1
     );
-\gen_fwft.rdpp1_inst\: entity work.\design_1_axi_dma_0_0_xpm_counter_updn__parameterized1_27\
+\gen_fwft.rdpp1_inst\: entity work.\decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized1_27\
      port map (
       DI(0) => \gen_fwft.rdpp1_inst_n_2\,
       Q(1 downto 0) => wr_pntr_ext(1 downto 0),
@@ -56507,7 +56441,7 @@ GND: unisim.vcomponents.GND
       Q => ram_wr_en_pf_q,
       R => xpm_fifo_rst_inst_n_1
     );
-\gen_sdpram.xpm_memory_base_inst\: entity work.design_1_axi_dma_0_0_xpm_memory_base
+\gen_sdpram.xpm_memory_base_inst\: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base
      port map (
       addra(6 downto 0) => wr_pntr_ext(6 downto 0),
       addrb(6 downto 0) => rd_pntr_ext(6 downto 0),
@@ -56674,7 +56608,7 @@ GND: unisim.vcomponents.GND
       Q => wr_data_count(7),
       R => xpm_fifo_rst_inst_n_1
     );
-rdp_inst: entity work.\design_1_axi_dma_0_0_xpm_counter_updn__parameterized2_28\
+rdp_inst: entity work.\decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized2_28\
      port map (
       D(6 downto 0) => diff_pntr_pe(6 downto 0),
       DI(0) => rdp_inst_n_0,
@@ -56711,7 +56645,7 @@ rdp_inst: entity work.\design_1_axi_dma_0_0_xpm_counter_updn__parameterized2_28\
       rd_en => rd_en,
       wr_clk => wr_clk
     );
-rdpp1_inst: entity work.\design_1_axi_dma_0_0_xpm_counter_updn__parameterized3_29\
+rdpp1_inst: entity work.\decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized3_29\
      port map (
       E(0) => ram_rd_en_pf,
       Q(1 downto 0) => curr_fwft_state(1 downto 0),
@@ -56723,7 +56657,7 @@ rdpp1_inst: entity work.\design_1_axi_dma_0_0_xpm_counter_updn__parameterized3_2
       rd_en => rd_en,
       wr_clk => wr_clk
     );
-rst_d1_inst: entity work.design_1_axi_dma_0_0_xpm_fifo_reg_bit_30
+rst_d1_inst: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_reg_bit_30
      port map (
       Q(0) => xpm_fifo_rst_inst_n_1,
       S(0) => rst_d1_inst_n_8,
@@ -56755,7 +56689,7 @@ rst_d1_inst: entity work.design_1_axi_dma_0_0_xpm_fifo_reg_bit_30
       wr_rst_busy => wr_rst_busy,
       write_only => write_only
     );
-wrp_inst: entity work.\design_1_axi_dma_0_0_xpm_counter_updn__parameterized2_31\
+wrp_inst: entity work.\decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized2_31\
      port map (
       D(7 downto 0) => \grdc.diff_wr_rd_pntr_rdc\(7 downto 0),
       DI(0) => \gen_fwft.rdpp1_inst_n_2\,
@@ -56783,7 +56717,7 @@ wrp_inst: entity work.\design_1_axi_dma_0_0_xpm_counter_updn__parameterized2_31\
       wr_clk => wr_clk,
       wr_en => wr_en
     );
-wrpp1_inst: entity work.\design_1_axi_dma_0_0_xpm_counter_updn__parameterized3_32\
+wrpp1_inst: entity work.\decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized3_32\
      port map (
       D(6 downto 0) => diff_pntr_pf_q0(7 downto 1),
       DI(0) => rdp_inst_n_0,
@@ -56808,7 +56742,7 @@ wrpp1_inst: entity work.\design_1_axi_dma_0_0_xpm_counter_updn__parameterized3_3
       wr_clk => wr_clk,
       wr_en => wr_en
     );
-wrpp2_inst: entity work.\design_1_axi_dma_0_0_xpm_counter_updn__parameterized0_33\
+wrpp2_inst: entity work.\decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized0_33\
      port map (
       Q(0) => xpm_fifo_rst_inst_n_1,
       \count_value_i_reg[6]_0\ => \^full\,
@@ -56820,7 +56754,7 @@ wrpp2_inst: entity work.\design_1_axi_dma_0_0_xpm_counter_updn__parameterized0_3
       wr_clk => wr_clk,
       wr_en => wr_en
     );
-xpm_fifo_rst_inst: entity work.design_1_axi_dma_0_0_xpm_fifo_rst_34
+xpm_fifo_rst_inst: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_rst_34
      port map (
       Q(0) => xpm_fifo_rst_inst_n_1,
       SR(0) => \grdc.rd_data_count_i0\,
@@ -56845,7 +56779,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_axi_dma_0_0_xpm_fifo_base__parameterized0\ is
+entity \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized0\ is
   port (
     sleep : in STD_LOGIC;
     rst : in STD_LOGIC;
@@ -56876,128 +56810,128 @@ entity \design_1_axi_dma_0_0_xpm_fifo_base__parameterized0\ is
     dbiterr : out STD_LOGIC
   );
   attribute CDC_DEST_SYNC_FF : integer;
-  attribute CDC_DEST_SYNC_FF of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized0\ : entity is 2;
+  attribute CDC_DEST_SYNC_FF of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized0\ : entity is 2;
   attribute COMMON_CLOCK : integer;
-  attribute COMMON_CLOCK of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized0\ : entity is 1;
+  attribute COMMON_CLOCK of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized0\ : entity is 1;
   attribute DOUT_RESET_VALUE : string;
-  attribute DOUT_RESET_VALUE of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized0\ : entity is "0";
+  attribute DOUT_RESET_VALUE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized0\ : entity is "0";
   attribute ECC_MODE : integer;
-  attribute ECC_MODE of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized0\ : entity is 0;
+  attribute ECC_MODE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized0\ : entity is 0;
   attribute ENABLE_ECC : integer;
-  attribute ENABLE_ECC of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized0\ : entity is 0;
+  attribute ENABLE_ECC of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized0\ : entity is 0;
   attribute EN_ADV_FEATURE : string;
-  attribute EN_ADV_FEATURE of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized0\ : entity is "16'b0001111100011111";
+  attribute EN_ADV_FEATURE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized0\ : entity is "16'b0001111100011111";
   attribute EN_AE : string;
-  attribute EN_AE of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized0\ : entity is "1'b1";
+  attribute EN_AE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized0\ : entity is "1'b1";
   attribute EN_AF : string;
-  attribute EN_AF of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized0\ : entity is "1'b1";
+  attribute EN_AF of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized0\ : entity is "1'b1";
   attribute EN_DVLD : string;
-  attribute EN_DVLD of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized0\ : entity is "1'b1";
+  attribute EN_DVLD of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized0\ : entity is "1'b1";
   attribute EN_OF : string;
-  attribute EN_OF of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized0\ : entity is "1'b1";
+  attribute EN_OF of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized0\ : entity is "1'b1";
   attribute EN_PE : string;
-  attribute EN_PE of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized0\ : entity is "1'b1";
+  attribute EN_PE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized0\ : entity is "1'b1";
   attribute EN_PF : string;
-  attribute EN_PF of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized0\ : entity is "1'b1";
+  attribute EN_PF of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized0\ : entity is "1'b1";
   attribute EN_RDC : string;
-  attribute EN_RDC of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized0\ : entity is "1'b1";
+  attribute EN_RDC of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized0\ : entity is "1'b1";
   attribute EN_UF : string;
-  attribute EN_UF of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized0\ : entity is "1'b1";
+  attribute EN_UF of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized0\ : entity is "1'b1";
   attribute EN_WACK : string;
-  attribute EN_WACK of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized0\ : entity is "1'b1";
+  attribute EN_WACK of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized0\ : entity is "1'b1";
   attribute EN_WDC : string;
-  attribute EN_WDC of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized0\ : entity is "1'b1";
+  attribute EN_WDC of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized0\ : entity is "1'b1";
   attribute FG_EQ_ASYM_DOUT : string;
-  attribute FG_EQ_ASYM_DOUT of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized0\ : entity is "1'b0";
+  attribute FG_EQ_ASYM_DOUT of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized0\ : entity is "1'b0";
   attribute FIFO_MEMORY_TYPE : integer;
-  attribute FIFO_MEMORY_TYPE of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized0\ : entity is 0;
+  attribute FIFO_MEMORY_TYPE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized0\ : entity is 0;
   attribute FIFO_MEM_TYPE : integer;
-  attribute FIFO_MEM_TYPE of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized0\ : entity is 0;
+  attribute FIFO_MEM_TYPE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized0\ : entity is 0;
   attribute FIFO_READ_DEPTH : integer;
-  attribute FIFO_READ_DEPTH of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized0\ : entity is 16;
+  attribute FIFO_READ_DEPTH of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized0\ : entity is 16;
   attribute FIFO_READ_LATENCY : integer;
-  attribute FIFO_READ_LATENCY of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized0\ : entity is 0;
+  attribute FIFO_READ_LATENCY of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized0\ : entity is 0;
   attribute FIFO_SIZE : integer;
-  attribute FIFO_SIZE of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized0\ : entity is 144;
+  attribute FIFO_SIZE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized0\ : entity is 144;
   attribute FIFO_WRITE_DEPTH : integer;
-  attribute FIFO_WRITE_DEPTH of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized0\ : entity is 16;
+  attribute FIFO_WRITE_DEPTH of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized0\ : entity is 16;
   attribute FULL_RESET_VALUE : integer;
-  attribute FULL_RESET_VALUE of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized0\ : entity is 1;
+  attribute FULL_RESET_VALUE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized0\ : entity is 1;
   attribute FULL_RST_VAL : string;
-  attribute FULL_RST_VAL of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized0\ : entity is "1'b1";
+  attribute FULL_RST_VAL of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized0\ : entity is "1'b1";
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized0\ : entity is "xpm_fifo_base";
+  attribute ORIG_REF_NAME of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized0\ : entity is "xpm_fifo_base";
   attribute PE_THRESH_ADJ : integer;
-  attribute PE_THRESH_ADJ of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized0\ : entity is 8;
+  attribute PE_THRESH_ADJ of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized0\ : entity is 8;
   attribute PE_THRESH_MAX : integer;
-  attribute PE_THRESH_MAX of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized0\ : entity is 11;
+  attribute PE_THRESH_MAX of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized0\ : entity is 11;
   attribute PE_THRESH_MIN : integer;
-  attribute PE_THRESH_MIN of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized0\ : entity is 5;
+  attribute PE_THRESH_MIN of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized0\ : entity is 5;
   attribute PF_THRESH_ADJ : integer;
-  attribute PF_THRESH_ADJ of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized0\ : entity is 8;
+  attribute PF_THRESH_ADJ of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized0\ : entity is 8;
   attribute PF_THRESH_MAX : integer;
-  attribute PF_THRESH_MAX of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized0\ : entity is 11;
+  attribute PF_THRESH_MAX of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized0\ : entity is 11;
   attribute PF_THRESH_MIN : integer;
-  attribute PF_THRESH_MIN of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized0\ : entity is 5;
+  attribute PF_THRESH_MIN of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized0\ : entity is 5;
   attribute PROG_EMPTY_THRESH : integer;
-  attribute PROG_EMPTY_THRESH of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized0\ : entity is 10;
+  attribute PROG_EMPTY_THRESH of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized0\ : entity is 10;
   attribute PROG_FULL_THRESH : integer;
-  attribute PROG_FULL_THRESH of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized0\ : entity is 10;
+  attribute PROG_FULL_THRESH of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized0\ : entity is 10;
   attribute RD_DATA_COUNT_WIDTH : integer;
-  attribute RD_DATA_COUNT_WIDTH of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized0\ : entity is 4;
+  attribute RD_DATA_COUNT_WIDTH of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized0\ : entity is 4;
   attribute RD_DC_WIDTH_EXT : integer;
-  attribute RD_DC_WIDTH_EXT of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized0\ : entity is 5;
+  attribute RD_DC_WIDTH_EXT of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized0\ : entity is 5;
   attribute RD_LATENCY : integer;
-  attribute RD_LATENCY of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized0\ : entity is 2;
+  attribute RD_LATENCY of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized0\ : entity is 2;
   attribute RD_MODE : integer;
-  attribute RD_MODE of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized0\ : entity is 1;
+  attribute RD_MODE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized0\ : entity is 1;
   attribute RD_PNTR_WIDTH : integer;
-  attribute RD_PNTR_WIDTH of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized0\ : entity is 4;
+  attribute RD_PNTR_WIDTH of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized0\ : entity is 4;
   attribute READ_DATA_WIDTH : integer;
-  attribute READ_DATA_WIDTH of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized0\ : entity is 9;
+  attribute READ_DATA_WIDTH of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized0\ : entity is 9;
   attribute READ_MODE : integer;
-  attribute READ_MODE of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized0\ : entity is 1;
+  attribute READ_MODE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized0\ : entity is 1;
   attribute RELATED_CLOCKS : integer;
-  attribute RELATED_CLOCKS of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized0\ : entity is 0;
+  attribute RELATED_CLOCKS of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized0\ : entity is 0;
   attribute REMOVE_WR_RD_PROT_LOGIC : integer;
-  attribute REMOVE_WR_RD_PROT_LOGIC of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized0\ : entity is 0;
+  attribute REMOVE_WR_RD_PROT_LOGIC of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized0\ : entity is 0;
   attribute SIM_ASSERT_CHK : integer;
-  attribute SIM_ASSERT_CHK of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized0\ : entity is 0;
+  attribute SIM_ASSERT_CHK of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized0\ : entity is 0;
   attribute USE_ADV_FEATURES : string;
-  attribute USE_ADV_FEATURES of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized0\ : entity is "1F1F";
+  attribute USE_ADV_FEATURES of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized0\ : entity is "1F1F";
   attribute VERSION : integer;
-  attribute VERSION of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized0\ : entity is 0;
+  attribute VERSION of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized0\ : entity is 0;
   attribute WAKEUP_TIME : integer;
-  attribute WAKEUP_TIME of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized0\ : entity is 0;
+  attribute WAKEUP_TIME of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized0\ : entity is 0;
   attribute WIDTH_RATIO : integer;
-  attribute WIDTH_RATIO of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized0\ : entity is 1;
+  attribute WIDTH_RATIO of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized0\ : entity is 1;
   attribute WRITE_DATA_WIDTH : integer;
-  attribute WRITE_DATA_WIDTH of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized0\ : entity is 9;
+  attribute WRITE_DATA_WIDTH of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized0\ : entity is 9;
   attribute WR_DATA_COUNT_WIDTH : integer;
-  attribute WR_DATA_COUNT_WIDTH of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized0\ : entity is 5;
+  attribute WR_DATA_COUNT_WIDTH of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized0\ : entity is 5;
   attribute WR_DC_WIDTH_EXT : integer;
-  attribute WR_DC_WIDTH_EXT of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized0\ : entity is 5;
+  attribute WR_DC_WIDTH_EXT of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized0\ : entity is 5;
   attribute WR_DEPTH_LOG : integer;
-  attribute WR_DEPTH_LOG of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized0\ : entity is 4;
+  attribute WR_DEPTH_LOG of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized0\ : entity is 4;
   attribute WR_PNTR_WIDTH : integer;
-  attribute WR_PNTR_WIDTH of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized0\ : entity is 4;
+  attribute WR_PNTR_WIDTH of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized0\ : entity is 4;
   attribute WR_RD_RATIO : integer;
-  attribute WR_RD_RATIO of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized0\ : entity is 0;
+  attribute WR_RD_RATIO of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized0\ : entity is 0;
   attribute WR_WIDTH_LOG : integer;
-  attribute WR_WIDTH_LOG of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized0\ : entity is 4;
+  attribute WR_WIDTH_LOG of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized0\ : entity is 4;
   attribute XPM_MODULE : string;
-  attribute XPM_MODULE of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized0\ : entity is "TRUE";
+  attribute XPM_MODULE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized0\ : entity is "TRUE";
   attribute both_stages_valid : integer;
-  attribute both_stages_valid of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized0\ : entity is 3;
+  attribute both_stages_valid of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized0\ : entity is 3;
   attribute invalid : integer;
-  attribute invalid of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized0\ : entity is 0;
+  attribute invalid of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized0\ : entity is 0;
   attribute stage1_valid : integer;
-  attribute stage1_valid of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized0\ : entity is 2;
+  attribute stage1_valid of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized0\ : entity is 2;
   attribute stage2_valid : integer;
-  attribute stage2_valid of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized0\ : entity is 1;
-end \design_1_axi_dma_0_0_xpm_fifo_base__parameterized0\;
+  attribute stage2_valid of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized0\ : entity is 1;
+end \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized0\;
 
-architecture STRUCTURE of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized0\ is
+architecture STRUCTURE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized0\ is
   signal \<const0>\ : STD_LOGIC;
   signal aempty_fwft_i0 : STD_LOGIC;
   signal \^almost_empty\ : STD_LOGIC;
@@ -57325,7 +57259,7 @@ GND: unisim.vcomponents.GND
       Q => data_valid,
       R => xpm_fifo_rst_inst_n_1
     );
-\gen_fwft.rdpp1_inst\: entity work.\design_1_axi_dma_0_0_xpm_counter_updn__parameterized1\
+\gen_fwft.rdpp1_inst\: entity work.\decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized1\
      port map (
       D(1) => \grdc.diff_wr_rd_pntr_rdc\(2),
       D(0) => \gen_fwft.rdpp1_inst_n_1\,
@@ -57542,7 +57476,7 @@ GND: unisim.vcomponents.GND
       Q => ram_wr_en_pf_q,
       R => xpm_fifo_rst_inst_n_1
     );
-\gen_sdpram.xpm_memory_base_inst\: entity work.\design_1_axi_dma_0_0_xpm_memory_base__parameterized0\
+\gen_sdpram.xpm_memory_base_inst\: entity work.\decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized0\
      port map (
       addra(3 downto 0) => wr_pntr_ext(3 downto 0),
       addrb(3 downto 0) => rd_pntr_ext(3 downto 0),
@@ -57685,7 +57619,7 @@ GND: unisim.vcomponents.GND
       Q => wr_data_count(4),
       R => xpm_fifo_rst_inst_n_1
     );
-rdp_inst: entity work.\design_1_axi_dma_0_0_xpm_counter_updn__parameterized6\
+rdp_inst: entity work.\decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized6\
      port map (
       D(0) => diff_pntr_pf_q0(3),
       E(0) => ram_rd_en_pf,
@@ -57707,7 +57641,7 @@ rdp_inst: entity work.\design_1_axi_dma_0_0_xpm_counter_updn__parameterized6\
       rd_en => rd_en,
       wr_clk => wr_clk
     );
-rdpp1_inst: entity work.\design_1_axi_dma_0_0_xpm_counter_updn__parameterized7\
+rdpp1_inst: entity work.\decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized7\
      port map (
       E(0) => ram_rd_en_pf,
       Q(3 downto 0) => wr_pntr_ext(3 downto 0),
@@ -57718,7 +57652,7 @@ rdpp1_inst: entity work.\design_1_axi_dma_0_0_xpm_counter_updn__parameterized7\
       rd_en => rd_en,
       wr_clk => wr_clk
     );
-rst_d1_inst: entity work.design_1_axi_dma_0_0_xpm_fifo_reg_bit
+rst_d1_inst: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_reg_bit
      port map (
       D(0) => diff_pntr_pf_q0(1),
       \FSM_sequential_gen_fwft.curr_fwft_state_reg[0]\ => rst_d1_inst_n_6,
@@ -57752,7 +57686,7 @@ rst_d1_inst: entity work.design_1_axi_dma_0_0_xpm_fifo_reg_bit
       wr_rst_busy => wr_rst_busy,
       write_only => write_only
     );
-wrp_inst: entity work.\design_1_axi_dma_0_0_xpm_counter_updn__parameterized6_6\
+wrp_inst: entity work.\decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized6_6\
      port map (
       D(2) => wrp_inst_n_0,
       D(1) => diff_pntr_pe(2),
@@ -57775,7 +57709,7 @@ wrp_inst: entity work.\design_1_axi_dma_0_0_xpm_counter_updn__parameterized6_6\
       ram_wr_en_pf => ram_wr_en_pf,
       wr_clk => wr_clk
     );
-wrpp1_inst: entity work.\design_1_axi_dma_0_0_xpm_counter_updn__parameterized7_7\
+wrpp1_inst: entity work.\decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized7_7\
      port map (
       D(1) => diff_pntr_pf_q0(4),
       D(0) => diff_pntr_pf_q0(2),
@@ -57789,7 +57723,7 @@ wrpp1_inst: entity work.\design_1_axi_dma_0_0_xpm_counter_updn__parameterized7_7
       ram_wr_en_pf => ram_wr_en_pf,
       wr_clk => wr_clk
     );
-wrpp2_inst: entity work.\design_1_axi_dma_0_0_xpm_counter_updn__parameterized5\
+wrpp2_inst: entity work.\decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized5\
      port map (
       Q(3 downto 0) => rd_pntr_ext(3 downto 0),
       \count_value_i_reg[0]_0\(0) => xpm_fifo_rst_inst_n_1,
@@ -57798,7 +57732,7 @@ wrpp2_inst: entity work.\design_1_axi_dma_0_0_xpm_counter_updn__parameterized5\
       sig_clr_dbc_reg_reg => wrpp2_inst_n_0,
       wr_clk => wr_clk
     );
-xpm_fifo_rst_inst: entity work.design_1_axi_dma_0_0_xpm_fifo_rst
+xpm_fifo_rst_inst: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_rst
      port map (
       Q(0) => xpm_fifo_rst_inst_n_1,
       SR(0) => \grdc.rd_data_count_i0\,
@@ -57823,7 +57757,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_axi_dma_0_0_xpm_fifo_base__parameterized1\ is
+entity \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized1\ is
   port (
     sleep : in STD_LOGIC;
     rst : in STD_LOGIC;
@@ -57854,128 +57788,128 @@ entity \design_1_axi_dma_0_0_xpm_fifo_base__parameterized1\ is
     dbiterr : out STD_LOGIC
   );
   attribute CDC_DEST_SYNC_FF : integer;
-  attribute CDC_DEST_SYNC_FF of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized1\ : entity is 2;
+  attribute CDC_DEST_SYNC_FF of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized1\ : entity is 2;
   attribute COMMON_CLOCK : integer;
-  attribute COMMON_CLOCK of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized1\ : entity is 1;
+  attribute COMMON_CLOCK of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized1\ : entity is 1;
   attribute DOUT_RESET_VALUE : string;
-  attribute DOUT_RESET_VALUE of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized1\ : entity is "0";
+  attribute DOUT_RESET_VALUE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized1\ : entity is "0";
   attribute ECC_MODE : integer;
-  attribute ECC_MODE of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized1\ : entity is 0;
+  attribute ECC_MODE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized1\ : entity is 0;
   attribute ENABLE_ECC : integer;
-  attribute ENABLE_ECC of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized1\ : entity is 0;
+  attribute ENABLE_ECC of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized1\ : entity is 0;
   attribute EN_ADV_FEATURE : string;
-  attribute EN_ADV_FEATURE of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized1\ : entity is "16'b0001111100011111";
+  attribute EN_ADV_FEATURE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized1\ : entity is "16'b0001111100011111";
   attribute EN_AE : string;
-  attribute EN_AE of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized1\ : entity is "1'b1";
+  attribute EN_AE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized1\ : entity is "1'b1";
   attribute EN_AF : string;
-  attribute EN_AF of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized1\ : entity is "1'b1";
+  attribute EN_AF of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized1\ : entity is "1'b1";
   attribute EN_DVLD : string;
-  attribute EN_DVLD of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized1\ : entity is "1'b1";
+  attribute EN_DVLD of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized1\ : entity is "1'b1";
   attribute EN_OF : string;
-  attribute EN_OF of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized1\ : entity is "1'b1";
+  attribute EN_OF of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized1\ : entity is "1'b1";
   attribute EN_PE : string;
-  attribute EN_PE of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized1\ : entity is "1'b1";
+  attribute EN_PE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized1\ : entity is "1'b1";
   attribute EN_PF : string;
-  attribute EN_PF of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized1\ : entity is "1'b1";
+  attribute EN_PF of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized1\ : entity is "1'b1";
   attribute EN_RDC : string;
-  attribute EN_RDC of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized1\ : entity is "1'b1";
+  attribute EN_RDC of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized1\ : entity is "1'b1";
   attribute EN_UF : string;
-  attribute EN_UF of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized1\ : entity is "1'b1";
+  attribute EN_UF of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized1\ : entity is "1'b1";
   attribute EN_WACK : string;
-  attribute EN_WACK of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized1\ : entity is "1'b1";
+  attribute EN_WACK of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized1\ : entity is "1'b1";
   attribute EN_WDC : string;
-  attribute EN_WDC of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized1\ : entity is "1'b1";
+  attribute EN_WDC of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized1\ : entity is "1'b1";
   attribute FG_EQ_ASYM_DOUT : string;
-  attribute FG_EQ_ASYM_DOUT of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized1\ : entity is "1'b0";
+  attribute FG_EQ_ASYM_DOUT of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized1\ : entity is "1'b0";
   attribute FIFO_MEMORY_TYPE : integer;
-  attribute FIFO_MEMORY_TYPE of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized1\ : entity is 2;
+  attribute FIFO_MEMORY_TYPE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized1\ : entity is 2;
   attribute FIFO_MEM_TYPE : integer;
-  attribute FIFO_MEM_TYPE of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized1\ : entity is 2;
+  attribute FIFO_MEM_TYPE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized1\ : entity is 2;
   attribute FIFO_READ_DEPTH : integer;
-  attribute FIFO_READ_DEPTH of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized1\ : entity is 128;
+  attribute FIFO_READ_DEPTH of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized1\ : entity is 128;
   attribute FIFO_READ_LATENCY : integer;
-  attribute FIFO_READ_LATENCY of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized1\ : entity is 0;
+  attribute FIFO_READ_LATENCY of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized1\ : entity is 0;
   attribute FIFO_SIZE : integer;
-  attribute FIFO_SIZE of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized1\ : entity is 9472;
+  attribute FIFO_SIZE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized1\ : entity is 9472;
   attribute FIFO_WRITE_DEPTH : integer;
-  attribute FIFO_WRITE_DEPTH of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized1\ : entity is 128;
+  attribute FIFO_WRITE_DEPTH of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized1\ : entity is 128;
   attribute FULL_RESET_VALUE : integer;
-  attribute FULL_RESET_VALUE of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized1\ : entity is 1;
+  attribute FULL_RESET_VALUE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized1\ : entity is 1;
   attribute FULL_RST_VAL : string;
-  attribute FULL_RST_VAL of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized1\ : entity is "1'b1";
+  attribute FULL_RST_VAL of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized1\ : entity is "1'b1";
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized1\ : entity is "xpm_fifo_base";
+  attribute ORIG_REF_NAME of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized1\ : entity is "xpm_fifo_base";
   attribute PE_THRESH_ADJ : integer;
-  attribute PE_THRESH_ADJ of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized1\ : entity is 8;
+  attribute PE_THRESH_ADJ of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized1\ : entity is 8;
   attribute PE_THRESH_MAX : integer;
-  attribute PE_THRESH_MAX of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized1\ : entity is 123;
+  attribute PE_THRESH_MAX of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized1\ : entity is 123;
   attribute PE_THRESH_MIN : integer;
-  attribute PE_THRESH_MIN of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized1\ : entity is 5;
+  attribute PE_THRESH_MIN of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized1\ : entity is 5;
   attribute PF_THRESH_ADJ : integer;
-  attribute PF_THRESH_ADJ of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized1\ : entity is 8;
+  attribute PF_THRESH_ADJ of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized1\ : entity is 8;
   attribute PF_THRESH_MAX : integer;
-  attribute PF_THRESH_MAX of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized1\ : entity is 123;
+  attribute PF_THRESH_MAX of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized1\ : entity is 123;
   attribute PF_THRESH_MIN : integer;
-  attribute PF_THRESH_MIN of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized1\ : entity is 5;
+  attribute PF_THRESH_MIN of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized1\ : entity is 5;
   attribute PROG_EMPTY_THRESH : integer;
-  attribute PROG_EMPTY_THRESH of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized1\ : entity is 10;
+  attribute PROG_EMPTY_THRESH of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized1\ : entity is 10;
   attribute PROG_FULL_THRESH : integer;
-  attribute PROG_FULL_THRESH of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized1\ : entity is 10;
+  attribute PROG_FULL_THRESH of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized1\ : entity is 10;
   attribute RD_DATA_COUNT_WIDTH : integer;
-  attribute RD_DATA_COUNT_WIDTH of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized1\ : entity is 4;
+  attribute RD_DATA_COUNT_WIDTH of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized1\ : entity is 4;
   attribute RD_DC_WIDTH_EXT : integer;
-  attribute RD_DC_WIDTH_EXT of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized1\ : entity is 8;
+  attribute RD_DC_WIDTH_EXT of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized1\ : entity is 8;
   attribute RD_LATENCY : integer;
-  attribute RD_LATENCY of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized1\ : entity is 2;
+  attribute RD_LATENCY of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized1\ : entity is 2;
   attribute RD_MODE : integer;
-  attribute RD_MODE of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized1\ : entity is 1;
+  attribute RD_MODE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized1\ : entity is 1;
   attribute RD_PNTR_WIDTH : integer;
-  attribute RD_PNTR_WIDTH of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized1\ : entity is 7;
+  attribute RD_PNTR_WIDTH of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized1\ : entity is 7;
   attribute READ_DATA_WIDTH : integer;
-  attribute READ_DATA_WIDTH of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized1\ : entity is 74;
+  attribute READ_DATA_WIDTH of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized1\ : entity is 74;
   attribute READ_MODE : integer;
-  attribute READ_MODE of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized1\ : entity is 1;
+  attribute READ_MODE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized1\ : entity is 1;
   attribute RELATED_CLOCKS : integer;
-  attribute RELATED_CLOCKS of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized1\ : entity is 0;
+  attribute RELATED_CLOCKS of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized1\ : entity is 0;
   attribute REMOVE_WR_RD_PROT_LOGIC : integer;
-  attribute REMOVE_WR_RD_PROT_LOGIC of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized1\ : entity is 0;
+  attribute REMOVE_WR_RD_PROT_LOGIC of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized1\ : entity is 0;
   attribute SIM_ASSERT_CHK : integer;
-  attribute SIM_ASSERT_CHK of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized1\ : entity is 0;
+  attribute SIM_ASSERT_CHK of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized1\ : entity is 0;
   attribute USE_ADV_FEATURES : string;
-  attribute USE_ADV_FEATURES of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized1\ : entity is "1F1F";
+  attribute USE_ADV_FEATURES of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized1\ : entity is "1F1F";
   attribute VERSION : integer;
-  attribute VERSION of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized1\ : entity is 0;
+  attribute VERSION of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized1\ : entity is 0;
   attribute WAKEUP_TIME : integer;
-  attribute WAKEUP_TIME of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized1\ : entity is 0;
+  attribute WAKEUP_TIME of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized1\ : entity is 0;
   attribute WIDTH_RATIO : integer;
-  attribute WIDTH_RATIO of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized1\ : entity is 1;
+  attribute WIDTH_RATIO of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized1\ : entity is 1;
   attribute WRITE_DATA_WIDTH : integer;
-  attribute WRITE_DATA_WIDTH of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized1\ : entity is 74;
+  attribute WRITE_DATA_WIDTH of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized1\ : entity is 74;
   attribute WR_DATA_COUNT_WIDTH : integer;
-  attribute WR_DATA_COUNT_WIDTH of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized1\ : entity is 8;
+  attribute WR_DATA_COUNT_WIDTH of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized1\ : entity is 8;
   attribute WR_DC_WIDTH_EXT : integer;
-  attribute WR_DC_WIDTH_EXT of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized1\ : entity is 8;
+  attribute WR_DC_WIDTH_EXT of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized1\ : entity is 8;
   attribute WR_DEPTH_LOG : integer;
-  attribute WR_DEPTH_LOG of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized1\ : entity is 7;
+  attribute WR_DEPTH_LOG of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized1\ : entity is 7;
   attribute WR_PNTR_WIDTH : integer;
-  attribute WR_PNTR_WIDTH of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized1\ : entity is 7;
+  attribute WR_PNTR_WIDTH of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized1\ : entity is 7;
   attribute WR_RD_RATIO : integer;
-  attribute WR_RD_RATIO of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized1\ : entity is 0;
+  attribute WR_RD_RATIO of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized1\ : entity is 0;
   attribute WR_WIDTH_LOG : integer;
-  attribute WR_WIDTH_LOG of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized1\ : entity is 7;
+  attribute WR_WIDTH_LOG of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized1\ : entity is 7;
   attribute XPM_MODULE : string;
-  attribute XPM_MODULE of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized1\ : entity is "TRUE";
+  attribute XPM_MODULE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized1\ : entity is "TRUE";
   attribute both_stages_valid : integer;
-  attribute both_stages_valid of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized1\ : entity is 3;
+  attribute both_stages_valid of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized1\ : entity is 3;
   attribute invalid : integer;
-  attribute invalid of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized1\ : entity is 0;
+  attribute invalid of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized1\ : entity is 0;
   attribute stage1_valid : integer;
-  attribute stage1_valid of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized1\ : entity is 2;
+  attribute stage1_valid of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized1\ : entity is 2;
   attribute stage2_valid : integer;
-  attribute stage2_valid of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized1\ : entity is 1;
-end \design_1_axi_dma_0_0_xpm_fifo_base__parameterized1\;
+  attribute stage2_valid of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized1\ : entity is 1;
+end \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized1\;
 
-architecture STRUCTURE of \design_1_axi_dma_0_0_xpm_fifo_base__parameterized1\ is
+architecture STRUCTURE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized1\ is
   signal \<const0>\ : STD_LOGIC;
   signal aempty_fwft_i0 : STD_LOGIC;
   signal \^almost_empty\ : STD_LOGIC;
@@ -58331,7 +58265,7 @@ GND: unisim.vcomponents.GND
       Q => data_valid,
       R => xpm_fifo_rst_inst_n_1
     );
-\gen_fwft.rdpp1_inst\: entity work.\design_1_axi_dma_0_0_xpm_counter_updn__parameterized1_8\
+\gen_fwft.rdpp1_inst\: entity work.\decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized1_8\
      port map (
       DI(0) => \gen_fwft.rdpp1_inst_n_2\,
       Q(1 downto 0) => wr_pntr_ext(1 downto 0),
@@ -58636,7 +58570,7 @@ GND: unisim.vcomponents.GND
       Q => ram_wr_en_pf_q,
       R => xpm_fifo_rst_inst_n_1
     );
-\gen_sdpram.xpm_memory_base_inst\: entity work.\design_1_axi_dma_0_0_xpm_memory_base__parameterized1\
+\gen_sdpram.xpm_memory_base_inst\: entity work.\decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base__parameterized1\
      port map (
       addra(6 downto 0) => wr_pntr_ext(6 downto 0),
       addrb(6 downto 0) => rd_pntr_ext(6 downto 0),
@@ -58803,7 +58737,7 @@ GND: unisim.vcomponents.GND
       Q => wr_data_count(7),
       R => xpm_fifo_rst_inst_n_1
     );
-rdp_inst: entity work.\design_1_axi_dma_0_0_xpm_counter_updn__parameterized2\
+rdp_inst: entity work.\decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized2\
      port map (
       D(6 downto 0) => diff_pntr_pe(6 downto 0),
       DI(0) => rdp_inst_n_0,
@@ -58840,7 +58774,7 @@ rdp_inst: entity work.\design_1_axi_dma_0_0_xpm_counter_updn__parameterized2\
       rd_en => rd_en,
       wr_clk => wr_clk
     );
-rdpp1_inst: entity work.\design_1_axi_dma_0_0_xpm_counter_updn__parameterized3\
+rdpp1_inst: entity work.\decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized3\
      port map (
       E(0) => ram_rd_en_pf,
       Q(1 downto 0) => curr_fwft_state(1 downto 0),
@@ -58852,7 +58786,7 @@ rdpp1_inst: entity work.\design_1_axi_dma_0_0_xpm_counter_updn__parameterized3\
       rd_en => rd_en,
       wr_clk => wr_clk
     );
-rst_d1_inst: entity work.design_1_axi_dma_0_0_xpm_fifo_reg_bit_9
+rst_d1_inst: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_reg_bit_9
      port map (
       Q(0) => xpm_fifo_rst_inst_n_1,
       S(0) => rst_d1_inst_n_8,
@@ -58884,7 +58818,7 @@ rst_d1_inst: entity work.design_1_axi_dma_0_0_xpm_fifo_reg_bit_9
       wr_rst_busy => wr_rst_busy,
       write_only => write_only
     );
-wrp_inst: entity work.\design_1_axi_dma_0_0_xpm_counter_updn__parameterized2_10\
+wrp_inst: entity work.\decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized2_10\
      port map (
       D(7 downto 0) => \grdc.diff_wr_rd_pntr_rdc\(7 downto 0),
       DI(0) => \gen_fwft.rdpp1_inst_n_2\,
@@ -58912,7 +58846,7 @@ wrp_inst: entity work.\design_1_axi_dma_0_0_xpm_counter_updn__parameterized2_10\
       wr_clk => wr_clk,
       wr_en => wr_en
     );
-wrpp1_inst: entity work.\design_1_axi_dma_0_0_xpm_counter_updn__parameterized3_11\
+wrpp1_inst: entity work.\decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized3_11\
      port map (
       D(6 downto 0) => diff_pntr_pf_q0(7 downto 1),
       DI(0) => rdp_inst_n_0,
@@ -58937,7 +58871,7 @@ wrpp1_inst: entity work.\design_1_axi_dma_0_0_xpm_counter_updn__parameterized3_1
       wr_clk => wr_clk,
       wr_en => wr_en
     );
-wrpp2_inst: entity work.\design_1_axi_dma_0_0_xpm_counter_updn__parameterized0\
+wrpp2_inst: entity work.\decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_counter_updn__parameterized0\
      port map (
       Q(0) => xpm_fifo_rst_inst_n_1,
       \count_value_i_reg[6]_0\ => \^full\,
@@ -58949,7 +58883,7 @@ wrpp2_inst: entity work.\design_1_axi_dma_0_0_xpm_counter_updn__parameterized0\
       wr_clk => wr_clk,
       wr_en => wr_en
     );
-xpm_fifo_rst_inst: entity work.design_1_axi_dma_0_0_xpm_fifo_rst_12
+xpm_fifo_rst_inst: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_rst_12
      port map (
       Q(0) => xpm_fifo_rst_inst_n_1,
       SR(0) => \grdc.rd_data_count_i0\,
@@ -58974,7 +58908,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_axi_dma_0_0_srl_fifo_f is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_f is
   port (
     FIFO_Full_reg : out STD_LOGIC;
     p_0_in : out STD_LOGIC;
@@ -58988,13 +58922,11 @@ entity design_1_axi_dma_0_0_srl_fifo_f is
     \INFERRED_GEN.cnt_i_reg[1]\ : in STD_LOGIC;
     \in\ : in STD_LOGIC_VECTOR ( 69 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_dma_0_0_srl_fifo_f : entity is "srl_fifo_f";
-end design_1_axi_dma_0_0_srl_fifo_f;
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_f;
 
-architecture STRUCTURE of design_1_axi_dma_0_0_srl_fifo_f is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_f is
 begin
-I_SRL_FIFO_RBU_F: entity work.design_1_axi_dma_0_0_srl_fifo_rbu_f
+I_SRL_FIFO_RBU_F: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_rbu_f
      port map (
       FIFO_Full_reg_0 => FIFO_Full_reg,
       FIFO_Full_reg_1 => FIFO_Full_reg_0,
@@ -59013,7 +58945,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_axi_dma_0_0_srl_fifo_f_22 is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_f_22 is
   port (
     FIFO_Full_reg : out STD_LOGIC;
     FIFO_Full_reg_0 : out STD_LOGIC;
@@ -59032,12 +58964,12 @@ entity design_1_axi_dma_0_0_srl_fifo_f_22 is
     \in\ : in STD_LOGIC_VECTOR ( 68 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_dma_0_0_srl_fifo_f_22 : entity is "srl_fifo_f";
-end design_1_axi_dma_0_0_srl_fifo_f_22;
+  attribute ORIG_REF_NAME of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_f_22 : entity is "srl_fifo_f";
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_f_22;
 
-architecture STRUCTURE of design_1_axi_dma_0_0_srl_fifo_f_22 is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_f_22 is
 begin
-I_SRL_FIFO_RBU_F: entity work.design_1_axi_dma_0_0_srl_fifo_rbu_f_23
+I_SRL_FIFO_RBU_F: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_rbu_f_23
      port map (
       FIFO_Full_reg_0 => FIFO_Full_reg,
       \INFERRED_GEN.cnt_i_reg[1]\ => \INFERRED_GEN.cnt_i_reg[1]\,
@@ -59060,7 +58992,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_axi_dma_0_0_srl_fifo_f__parameterized0\ is
+entity \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_f__parameterized0\ is
   port (
     FIFO_Full_reg : out STD_LOGIC;
     Q : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -59085,12 +59017,12 @@ entity \design_1_axi_dma_0_0_srl_fifo_f__parameterized0\ is
     \in\ : in STD_LOGIC_VECTOR ( 30 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_axi_dma_0_0_srl_fifo_f__parameterized0\ : entity is "srl_fifo_f";
-end \design_1_axi_dma_0_0_srl_fifo_f__parameterized0\;
+  attribute ORIG_REF_NAME of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_f__parameterized0\ : entity is "srl_fifo_f";
+end \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_f__parameterized0\;
 
-architecture STRUCTURE of \design_1_axi_dma_0_0_srl_fifo_f__parameterized0\ is
+architecture STRUCTURE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_f__parameterized0\ is
 begin
-I_SRL_FIFO_RBU_F: entity work.\design_1_axi_dma_0_0_srl_fifo_rbu_f__parameterized0\
+I_SRL_FIFO_RBU_F: entity work.\decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_rbu_f__parameterized0\
      port map (
       D(2 downto 0) => D(2 downto 0),
       E(0) => E(0),
@@ -59119,7 +59051,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_axi_dma_0_0_srl_fifo_f__parameterized0_16\ is
+entity \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_f__parameterized0_16\ is
   port (
     FIFO_Full_reg : out STD_LOGIC;
     \sig_cmd_stat_rst_user_reg_n_cdc_from_reg__0\ : out STD_LOGIC;
@@ -59160,12 +59092,12 @@ entity \design_1_axi_dma_0_0_srl_fifo_f__parameterized0_16\ is
     \in\ : in STD_LOGIC_VECTOR ( 22 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_axi_dma_0_0_srl_fifo_f__parameterized0_16\ : entity is "srl_fifo_f";
-end \design_1_axi_dma_0_0_srl_fifo_f__parameterized0_16\;
+  attribute ORIG_REF_NAME of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_f__parameterized0_16\ : entity is "srl_fifo_f";
+end \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_f__parameterized0_16\;
 
-architecture STRUCTURE of \design_1_axi_dma_0_0_srl_fifo_f__parameterized0_16\ is
+architecture STRUCTURE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_f__parameterized0_16\ is
 begin
-I_SRL_FIFO_RBU_F: entity work.\design_1_axi_dma_0_0_srl_fifo_rbu_f__parameterized0_17\
+I_SRL_FIFO_RBU_F: entity work.\decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_rbu_f__parameterized0_17\
      port map (
       D(7 downto 0) => D(7 downto 0),
       E(0) => E(0),
@@ -59210,7 +59142,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_axi_dma_0_0_srl_fifo_f__parameterized1\ is
+entity \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_f__parameterized1\ is
   port (
     FIFO_Full_reg : out STD_LOGIC;
     Q : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -59224,12 +59156,12 @@ entity \design_1_axi_dma_0_0_srl_fifo_f__parameterized1\ is
     \in\ : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_axi_dma_0_0_srl_fifo_f__parameterized1\ : entity is "srl_fifo_f";
-end \design_1_axi_dma_0_0_srl_fifo_f__parameterized1\;
+  attribute ORIG_REF_NAME of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_f__parameterized1\ : entity is "srl_fifo_f";
+end \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_f__parameterized1\;
 
-architecture STRUCTURE of \design_1_axi_dma_0_0_srl_fifo_f__parameterized1\ is
+architecture STRUCTURE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_f__parameterized1\ is
 begin
-I_SRL_FIFO_RBU_F: entity work.\design_1_axi_dma_0_0_srl_fifo_rbu_f__parameterized1\
+I_SRL_FIFO_RBU_F: entity work.\decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_rbu_f__parameterized1\
      port map (
       FIFO_Full_reg_0 => FIFO_Full_reg,
       \INFERRED_GEN.cnt_i_reg[1]\ => \INFERRED_GEN.cnt_i_reg[1]\,
@@ -59247,7 +59179,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_axi_dma_0_0_srl_fifo_f__parameterized2\ is
+entity \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_f__parameterized2\ is
   port (
     D : out STD_LOGIC_VECTOR ( 2 downto 0 );
     E : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -59271,12 +59203,12 @@ entity \design_1_axi_dma_0_0_srl_fifo_f__parameterized2\ is
     m_axi_s2mm_bresp : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_axi_dma_0_0_srl_fifo_f__parameterized2\ : entity is "srl_fifo_f";
-end \design_1_axi_dma_0_0_srl_fifo_f__parameterized2\;
+  attribute ORIG_REF_NAME of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_f__parameterized2\ : entity is "srl_fifo_f";
+end \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_f__parameterized2\;
 
-architecture STRUCTURE of \design_1_axi_dma_0_0_srl_fifo_f__parameterized2\ is
+architecture STRUCTURE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_f__parameterized2\ is
 begin
-I_SRL_FIFO_RBU_F: entity work.\design_1_axi_dma_0_0_srl_fifo_rbu_f__parameterized2\
+I_SRL_FIFO_RBU_F: entity work.\decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_rbu_f__parameterized2\
      port map (
       D(2 downto 0) => D(2 downto 0),
       E(0) => E(0),
@@ -59304,7 +59236,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_axi_dma_0_0_srl_fifo_f__parameterized3\ is
+entity \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_f__parameterized3\ is
   port (
     FIFO_Full_reg : out STD_LOGIC;
     p_0_in : out STD_LOGIC;
@@ -59329,12 +59261,12 @@ entity \design_1_axi_dma_0_0_srl_fifo_f__parameterized3\ is
     \in\ : in STD_LOGIC_VECTOR ( 28 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_axi_dma_0_0_srl_fifo_f__parameterized3\ : entity is "srl_fifo_f";
-end \design_1_axi_dma_0_0_srl_fifo_f__parameterized3\;
+  attribute ORIG_REF_NAME of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_f__parameterized3\ : entity is "srl_fifo_f";
+end \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_f__parameterized3\;
 
-architecture STRUCTURE of \design_1_axi_dma_0_0_srl_fifo_f__parameterized3\ is
+architecture STRUCTURE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_f__parameterized3\ is
 begin
-I_SRL_FIFO_RBU_F: entity work.\design_1_axi_dma_0_0_srl_fifo_rbu_f__parameterized3\
+I_SRL_FIFO_RBU_F: entity work.\decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_rbu_f__parameterized3\
      port map (
       D(2 downto 0) => D(2 downto 0),
       E(0) => E(0),
@@ -59363,7 +59295,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_axi_dma_0_0_srl_fifo_f__parameterized4\ is
+entity \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_f__parameterized4\ is
   port (
     FIFO_Full_reg : out STD_LOGIC;
     SS : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -59417,12 +59349,12 @@ entity \design_1_axi_dma_0_0_srl_fifo_f__parameterized4\ is
     sig_dre2ibtt_tlast_reg_reg_1 : in STD_LOGIC_VECTOR ( 5 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_axi_dma_0_0_srl_fifo_f__parameterized4\ : entity is "srl_fifo_f";
-end \design_1_axi_dma_0_0_srl_fifo_f__parameterized4\;
+  attribute ORIG_REF_NAME of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_f__parameterized4\ : entity is "srl_fifo_f";
+end \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_f__parameterized4\;
 
-architecture STRUCTURE of \design_1_axi_dma_0_0_srl_fifo_f__parameterized4\ is
+architecture STRUCTURE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_f__parameterized4\ is
 begin
-I_SRL_FIFO_RBU_F: entity work.\design_1_axi_dma_0_0_srl_fifo_rbu_f__parameterized4\
+I_SRL_FIFO_RBU_F: entity work.\decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_rbu_f__parameterized4\
      port map (
       CO(0) => CO(0),
       FIFO_Full_reg_0 => FIFO_Full_reg,
@@ -59480,7 +59412,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_axi_dma_0_0_srl_fifo_f__parameterized5\ is
+entity \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_f__parameterized5\ is
   port (
     FIFO_Full_reg : out STD_LOGIC;
     \sig_cmd_stat_rst_user_reg_n_cdc_from_reg__0\ : out STD_LOGIC;
@@ -59523,12 +59455,12 @@ entity \design_1_axi_dma_0_0_srl_fifo_f__parameterized5\ is
     sig_next_calc_error_reg_reg : in STD_LOGIC_VECTOR ( 9 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_axi_dma_0_0_srl_fifo_f__parameterized5\ : entity is "srl_fifo_f";
-end \design_1_axi_dma_0_0_srl_fifo_f__parameterized5\;
+  attribute ORIG_REF_NAME of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_f__parameterized5\ : entity is "srl_fifo_f";
+end \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_f__parameterized5\;
 
-architecture STRUCTURE of \design_1_axi_dma_0_0_srl_fifo_f__parameterized5\ is
+architecture STRUCTURE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_f__parameterized5\ is
 begin
-I_SRL_FIFO_RBU_F: entity work.\design_1_axi_dma_0_0_srl_fifo_rbu_f__parameterized5\
+I_SRL_FIFO_RBU_F: entity work.\decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_rbu_f__parameterized5\
      port map (
       D(0) => D(0),
       E(0) => E(0),
@@ -59575,7 +59507,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_axi_dma_0_0_xpm_fifo_sync is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_sync is
   port (
     sleep : in STD_LOGIC;
     rst : in STD_LOGIC;
@@ -59604,56 +59536,54 @@ entity design_1_axi_dma_0_0_xpm_fifo_sync is
     dbiterr : out STD_LOGIC
   );
   attribute DOUT_RESET_VALUE : string;
-  attribute DOUT_RESET_VALUE of design_1_axi_dma_0_0_xpm_fifo_sync : entity is "0";
+  attribute DOUT_RESET_VALUE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_sync : entity is "0";
   attribute ECC_MODE : string;
-  attribute ECC_MODE of design_1_axi_dma_0_0_xpm_fifo_sync : entity is "no_ecc";
+  attribute ECC_MODE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_sync : entity is "no_ecc";
   attribute EN_ADV_FEATURE_SYNC : string;
-  attribute EN_ADV_FEATURE_SYNC of design_1_axi_dma_0_0_xpm_fifo_sync : entity is "16'b0001111100011111";
+  attribute EN_ADV_FEATURE_SYNC of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_sync : entity is "16'b0001111100011111";
   attribute FIFO_MEMORY_TYPE : string;
-  attribute FIFO_MEMORY_TYPE of design_1_axi_dma_0_0_xpm_fifo_sync : entity is "block";
+  attribute FIFO_MEMORY_TYPE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_sync : entity is "block";
   attribute FIFO_READ_LATENCY : integer;
-  attribute FIFO_READ_LATENCY of design_1_axi_dma_0_0_xpm_fifo_sync : entity is 0;
+  attribute FIFO_READ_LATENCY of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_sync : entity is 0;
   attribute FIFO_WRITE_DEPTH : integer;
-  attribute FIFO_WRITE_DEPTH of design_1_axi_dma_0_0_xpm_fifo_sync : entity is 128;
+  attribute FIFO_WRITE_DEPTH of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_sync : entity is 128;
   attribute FULL_RESET_VALUE : integer;
-  attribute FULL_RESET_VALUE of design_1_axi_dma_0_0_xpm_fifo_sync : entity is 1;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_dma_0_0_xpm_fifo_sync : entity is "xpm_fifo_sync";
+  attribute FULL_RESET_VALUE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_sync : entity is 1;
   attribute PROG_EMPTY_THRESH : integer;
-  attribute PROG_EMPTY_THRESH of design_1_axi_dma_0_0_xpm_fifo_sync : entity is 10;
+  attribute PROG_EMPTY_THRESH of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_sync : entity is 10;
   attribute PROG_FULL_THRESH : integer;
-  attribute PROG_FULL_THRESH of design_1_axi_dma_0_0_xpm_fifo_sync : entity is 10;
+  attribute PROG_FULL_THRESH of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_sync : entity is 10;
   attribute P_COMMON_CLOCK : integer;
-  attribute P_COMMON_CLOCK of design_1_axi_dma_0_0_xpm_fifo_sync : entity is 1;
+  attribute P_COMMON_CLOCK of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_sync : entity is 1;
   attribute P_ECC_MODE : integer;
-  attribute P_ECC_MODE of design_1_axi_dma_0_0_xpm_fifo_sync : entity is 0;
+  attribute P_ECC_MODE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_sync : entity is 0;
   attribute P_FIFO_MEMORY_TYPE : integer;
-  attribute P_FIFO_MEMORY_TYPE of design_1_axi_dma_0_0_xpm_fifo_sync : entity is 2;
+  attribute P_FIFO_MEMORY_TYPE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_sync : entity is 2;
   attribute P_READ_MODE : integer;
-  attribute P_READ_MODE of design_1_axi_dma_0_0_xpm_fifo_sync : entity is 1;
+  attribute P_READ_MODE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_sync : entity is 1;
   attribute P_WAKEUP_TIME : integer;
-  attribute P_WAKEUP_TIME of design_1_axi_dma_0_0_xpm_fifo_sync : entity is 2;
+  attribute P_WAKEUP_TIME of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_sync : entity is 2;
   attribute RD_DATA_COUNT_WIDTH : integer;
-  attribute RD_DATA_COUNT_WIDTH of design_1_axi_dma_0_0_xpm_fifo_sync : entity is 4;
+  attribute RD_DATA_COUNT_WIDTH of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_sync : entity is 4;
   attribute READ_DATA_WIDTH : integer;
-  attribute READ_DATA_WIDTH of design_1_axi_dma_0_0_xpm_fifo_sync : entity is 75;
+  attribute READ_DATA_WIDTH of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_sync : entity is 75;
   attribute READ_MODE : string;
-  attribute READ_MODE of design_1_axi_dma_0_0_xpm_fifo_sync : entity is "fwft";
+  attribute READ_MODE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_sync : entity is "fwft";
   attribute SIM_ASSERT_CHK : integer;
-  attribute SIM_ASSERT_CHK of design_1_axi_dma_0_0_xpm_fifo_sync : entity is 0;
+  attribute SIM_ASSERT_CHK of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_sync : entity is 0;
   attribute USE_ADV_FEATURES : string;
-  attribute USE_ADV_FEATURES of design_1_axi_dma_0_0_xpm_fifo_sync : entity is "1F1F";
+  attribute USE_ADV_FEATURES of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_sync : entity is "1F1F";
   attribute WAKEUP_TIME : integer;
-  attribute WAKEUP_TIME of design_1_axi_dma_0_0_xpm_fifo_sync : entity is 0;
+  attribute WAKEUP_TIME of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_sync : entity is 0;
   attribute WRITE_DATA_WIDTH : integer;
-  attribute WRITE_DATA_WIDTH of design_1_axi_dma_0_0_xpm_fifo_sync : entity is 75;
+  attribute WRITE_DATA_WIDTH of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_sync : entity is 75;
   attribute WR_DATA_COUNT_WIDTH : integer;
-  attribute WR_DATA_COUNT_WIDTH of design_1_axi_dma_0_0_xpm_fifo_sync : entity is 8;
+  attribute WR_DATA_COUNT_WIDTH of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_sync : entity is 8;
   attribute XPM_MODULE : string;
-  attribute XPM_MODULE of design_1_axi_dma_0_0_xpm_fifo_sync : entity is "TRUE";
-end design_1_axi_dma_0_0_xpm_fifo_sync;
+  attribute XPM_MODULE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_sync : entity is "TRUE";
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_sync;
 
-architecture STRUCTURE of design_1_axi_dma_0_0_xpm_fifo_sync is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_sync is
   signal \<const0>\ : STD_LOGIC;
   signal \^rd_rst_busy\ : STD_LOGIC;
   signal NLW_xpm_fifo_base_inst_dbiterr_UNCONNECTED : STD_LOGIC;
@@ -59773,7 +59703,7 @@ GND: unisim.vcomponents.GND
      port map (
       G => \<const0>\
     );
-xpm_fifo_base_inst: entity work.design_1_axi_dma_0_0_xpm_fifo_base
+xpm_fifo_base_inst: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base
      port map (
       almost_empty => almost_empty,
       almost_full => almost_full,
@@ -59808,7 +59738,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_axi_dma_0_0_xpm_fifo_sync__parameterized1\ is
+entity \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_sync__parameterized1\ is
   port (
     sleep : in STD_LOGIC;
     rst : in STD_LOGIC;
@@ -59837,56 +59767,56 @@ entity \design_1_axi_dma_0_0_xpm_fifo_sync__parameterized1\ is
     dbiterr : out STD_LOGIC
   );
   attribute DOUT_RESET_VALUE : string;
-  attribute DOUT_RESET_VALUE of \design_1_axi_dma_0_0_xpm_fifo_sync__parameterized1\ : entity is "0";
+  attribute DOUT_RESET_VALUE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_sync__parameterized1\ : entity is "0";
   attribute ECC_MODE : string;
-  attribute ECC_MODE of \design_1_axi_dma_0_0_xpm_fifo_sync__parameterized1\ : entity is "no_ecc";
+  attribute ECC_MODE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_sync__parameterized1\ : entity is "no_ecc";
   attribute EN_ADV_FEATURE_SYNC : string;
-  attribute EN_ADV_FEATURE_SYNC of \design_1_axi_dma_0_0_xpm_fifo_sync__parameterized1\ : entity is "16'b0001111100011111";
+  attribute EN_ADV_FEATURE_SYNC of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_sync__parameterized1\ : entity is "16'b0001111100011111";
   attribute FIFO_MEMORY_TYPE : string;
-  attribute FIFO_MEMORY_TYPE of \design_1_axi_dma_0_0_xpm_fifo_sync__parameterized1\ : entity is "auto";
+  attribute FIFO_MEMORY_TYPE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_sync__parameterized1\ : entity is "auto";
   attribute FIFO_READ_LATENCY : integer;
-  attribute FIFO_READ_LATENCY of \design_1_axi_dma_0_0_xpm_fifo_sync__parameterized1\ : entity is 0;
+  attribute FIFO_READ_LATENCY of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_sync__parameterized1\ : entity is 0;
   attribute FIFO_WRITE_DEPTH : integer;
-  attribute FIFO_WRITE_DEPTH of \design_1_axi_dma_0_0_xpm_fifo_sync__parameterized1\ : entity is 16;
+  attribute FIFO_WRITE_DEPTH of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_sync__parameterized1\ : entity is 16;
   attribute FULL_RESET_VALUE : integer;
-  attribute FULL_RESET_VALUE of \design_1_axi_dma_0_0_xpm_fifo_sync__parameterized1\ : entity is 1;
+  attribute FULL_RESET_VALUE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_sync__parameterized1\ : entity is 1;
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_axi_dma_0_0_xpm_fifo_sync__parameterized1\ : entity is "xpm_fifo_sync";
+  attribute ORIG_REF_NAME of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_sync__parameterized1\ : entity is "xpm_fifo_sync";
   attribute PROG_EMPTY_THRESH : integer;
-  attribute PROG_EMPTY_THRESH of \design_1_axi_dma_0_0_xpm_fifo_sync__parameterized1\ : entity is 10;
+  attribute PROG_EMPTY_THRESH of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_sync__parameterized1\ : entity is 10;
   attribute PROG_FULL_THRESH : integer;
-  attribute PROG_FULL_THRESH of \design_1_axi_dma_0_0_xpm_fifo_sync__parameterized1\ : entity is 10;
+  attribute PROG_FULL_THRESH of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_sync__parameterized1\ : entity is 10;
   attribute P_COMMON_CLOCK : integer;
-  attribute P_COMMON_CLOCK of \design_1_axi_dma_0_0_xpm_fifo_sync__parameterized1\ : entity is 1;
+  attribute P_COMMON_CLOCK of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_sync__parameterized1\ : entity is 1;
   attribute P_ECC_MODE : integer;
-  attribute P_ECC_MODE of \design_1_axi_dma_0_0_xpm_fifo_sync__parameterized1\ : entity is 0;
+  attribute P_ECC_MODE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_sync__parameterized1\ : entity is 0;
   attribute P_FIFO_MEMORY_TYPE : integer;
-  attribute P_FIFO_MEMORY_TYPE of \design_1_axi_dma_0_0_xpm_fifo_sync__parameterized1\ : entity is 0;
+  attribute P_FIFO_MEMORY_TYPE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_sync__parameterized1\ : entity is 0;
   attribute P_READ_MODE : integer;
-  attribute P_READ_MODE of \design_1_axi_dma_0_0_xpm_fifo_sync__parameterized1\ : entity is 1;
+  attribute P_READ_MODE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_sync__parameterized1\ : entity is 1;
   attribute P_WAKEUP_TIME : integer;
-  attribute P_WAKEUP_TIME of \design_1_axi_dma_0_0_xpm_fifo_sync__parameterized1\ : entity is 2;
+  attribute P_WAKEUP_TIME of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_sync__parameterized1\ : entity is 2;
   attribute RD_DATA_COUNT_WIDTH : integer;
-  attribute RD_DATA_COUNT_WIDTH of \design_1_axi_dma_0_0_xpm_fifo_sync__parameterized1\ : entity is 4;
+  attribute RD_DATA_COUNT_WIDTH of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_sync__parameterized1\ : entity is 4;
   attribute READ_DATA_WIDTH : integer;
-  attribute READ_DATA_WIDTH of \design_1_axi_dma_0_0_xpm_fifo_sync__parameterized1\ : entity is 9;
+  attribute READ_DATA_WIDTH of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_sync__parameterized1\ : entity is 9;
   attribute READ_MODE : string;
-  attribute READ_MODE of \design_1_axi_dma_0_0_xpm_fifo_sync__parameterized1\ : entity is "fwft";
+  attribute READ_MODE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_sync__parameterized1\ : entity is "fwft";
   attribute SIM_ASSERT_CHK : integer;
-  attribute SIM_ASSERT_CHK of \design_1_axi_dma_0_0_xpm_fifo_sync__parameterized1\ : entity is 0;
+  attribute SIM_ASSERT_CHK of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_sync__parameterized1\ : entity is 0;
   attribute USE_ADV_FEATURES : string;
-  attribute USE_ADV_FEATURES of \design_1_axi_dma_0_0_xpm_fifo_sync__parameterized1\ : entity is "1F1F";
+  attribute USE_ADV_FEATURES of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_sync__parameterized1\ : entity is "1F1F";
   attribute WAKEUP_TIME : integer;
-  attribute WAKEUP_TIME of \design_1_axi_dma_0_0_xpm_fifo_sync__parameterized1\ : entity is 0;
+  attribute WAKEUP_TIME of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_sync__parameterized1\ : entity is 0;
   attribute WRITE_DATA_WIDTH : integer;
-  attribute WRITE_DATA_WIDTH of \design_1_axi_dma_0_0_xpm_fifo_sync__parameterized1\ : entity is 9;
+  attribute WRITE_DATA_WIDTH of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_sync__parameterized1\ : entity is 9;
   attribute WR_DATA_COUNT_WIDTH : integer;
-  attribute WR_DATA_COUNT_WIDTH of \design_1_axi_dma_0_0_xpm_fifo_sync__parameterized1\ : entity is 5;
+  attribute WR_DATA_COUNT_WIDTH of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_sync__parameterized1\ : entity is 5;
   attribute XPM_MODULE : string;
-  attribute XPM_MODULE of \design_1_axi_dma_0_0_xpm_fifo_sync__parameterized1\ : entity is "TRUE";
-end \design_1_axi_dma_0_0_xpm_fifo_sync__parameterized1\;
+  attribute XPM_MODULE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_sync__parameterized1\ : entity is "TRUE";
+end \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_sync__parameterized1\;
 
-architecture STRUCTURE of \design_1_axi_dma_0_0_xpm_fifo_sync__parameterized1\ is
+architecture STRUCTURE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_sync__parameterized1\ is
   signal \<const0>\ : STD_LOGIC;
   signal \^rd_rst_busy\ : STD_LOGIC;
   signal NLW_xpm_fifo_base_inst_dbiterr_UNCONNECTED : STD_LOGIC;
@@ -60006,7 +59936,7 @@ GND: unisim.vcomponents.GND
      port map (
       G => \<const0>\
     );
-xpm_fifo_base_inst: entity work.\design_1_axi_dma_0_0_xpm_fifo_base__parameterized0\
+xpm_fifo_base_inst: entity work.\decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized0\
      port map (
       almost_empty => almost_empty,
       almost_full => almost_full,
@@ -60041,7 +59971,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_axi_dma_0_0_xpm_fifo_sync__parameterized3\ is
+entity \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_sync__parameterized3\ is
   port (
     sleep : in STD_LOGIC;
     rst : in STD_LOGIC;
@@ -60070,56 +60000,56 @@ entity \design_1_axi_dma_0_0_xpm_fifo_sync__parameterized3\ is
     dbiterr : out STD_LOGIC
   );
   attribute DOUT_RESET_VALUE : string;
-  attribute DOUT_RESET_VALUE of \design_1_axi_dma_0_0_xpm_fifo_sync__parameterized3\ : entity is "0";
+  attribute DOUT_RESET_VALUE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_sync__parameterized3\ : entity is "0";
   attribute ECC_MODE : string;
-  attribute ECC_MODE of \design_1_axi_dma_0_0_xpm_fifo_sync__parameterized3\ : entity is "no_ecc";
+  attribute ECC_MODE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_sync__parameterized3\ : entity is "no_ecc";
   attribute EN_ADV_FEATURE_SYNC : string;
-  attribute EN_ADV_FEATURE_SYNC of \design_1_axi_dma_0_0_xpm_fifo_sync__parameterized3\ : entity is "16'b0001111100011111";
+  attribute EN_ADV_FEATURE_SYNC of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_sync__parameterized3\ : entity is "16'b0001111100011111";
   attribute FIFO_MEMORY_TYPE : string;
-  attribute FIFO_MEMORY_TYPE of \design_1_axi_dma_0_0_xpm_fifo_sync__parameterized3\ : entity is "block";
+  attribute FIFO_MEMORY_TYPE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_sync__parameterized3\ : entity is "block";
   attribute FIFO_READ_LATENCY : integer;
-  attribute FIFO_READ_LATENCY of \design_1_axi_dma_0_0_xpm_fifo_sync__parameterized3\ : entity is 0;
+  attribute FIFO_READ_LATENCY of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_sync__parameterized3\ : entity is 0;
   attribute FIFO_WRITE_DEPTH : integer;
-  attribute FIFO_WRITE_DEPTH of \design_1_axi_dma_0_0_xpm_fifo_sync__parameterized3\ : entity is 128;
+  attribute FIFO_WRITE_DEPTH of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_sync__parameterized3\ : entity is 128;
   attribute FULL_RESET_VALUE : integer;
-  attribute FULL_RESET_VALUE of \design_1_axi_dma_0_0_xpm_fifo_sync__parameterized3\ : entity is 1;
+  attribute FULL_RESET_VALUE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_sync__parameterized3\ : entity is 1;
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_axi_dma_0_0_xpm_fifo_sync__parameterized3\ : entity is "xpm_fifo_sync";
+  attribute ORIG_REF_NAME of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_sync__parameterized3\ : entity is "xpm_fifo_sync";
   attribute PROG_EMPTY_THRESH : integer;
-  attribute PROG_EMPTY_THRESH of \design_1_axi_dma_0_0_xpm_fifo_sync__parameterized3\ : entity is 10;
+  attribute PROG_EMPTY_THRESH of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_sync__parameterized3\ : entity is 10;
   attribute PROG_FULL_THRESH : integer;
-  attribute PROG_FULL_THRESH of \design_1_axi_dma_0_0_xpm_fifo_sync__parameterized3\ : entity is 10;
+  attribute PROG_FULL_THRESH of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_sync__parameterized3\ : entity is 10;
   attribute P_COMMON_CLOCK : integer;
-  attribute P_COMMON_CLOCK of \design_1_axi_dma_0_0_xpm_fifo_sync__parameterized3\ : entity is 1;
+  attribute P_COMMON_CLOCK of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_sync__parameterized3\ : entity is 1;
   attribute P_ECC_MODE : integer;
-  attribute P_ECC_MODE of \design_1_axi_dma_0_0_xpm_fifo_sync__parameterized3\ : entity is 0;
+  attribute P_ECC_MODE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_sync__parameterized3\ : entity is 0;
   attribute P_FIFO_MEMORY_TYPE : integer;
-  attribute P_FIFO_MEMORY_TYPE of \design_1_axi_dma_0_0_xpm_fifo_sync__parameterized3\ : entity is 2;
+  attribute P_FIFO_MEMORY_TYPE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_sync__parameterized3\ : entity is 2;
   attribute P_READ_MODE : integer;
-  attribute P_READ_MODE of \design_1_axi_dma_0_0_xpm_fifo_sync__parameterized3\ : entity is 1;
+  attribute P_READ_MODE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_sync__parameterized3\ : entity is 1;
   attribute P_WAKEUP_TIME : integer;
-  attribute P_WAKEUP_TIME of \design_1_axi_dma_0_0_xpm_fifo_sync__parameterized3\ : entity is 2;
+  attribute P_WAKEUP_TIME of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_sync__parameterized3\ : entity is 2;
   attribute RD_DATA_COUNT_WIDTH : integer;
-  attribute RD_DATA_COUNT_WIDTH of \design_1_axi_dma_0_0_xpm_fifo_sync__parameterized3\ : entity is 4;
+  attribute RD_DATA_COUNT_WIDTH of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_sync__parameterized3\ : entity is 4;
   attribute READ_DATA_WIDTH : integer;
-  attribute READ_DATA_WIDTH of \design_1_axi_dma_0_0_xpm_fifo_sync__parameterized3\ : entity is 74;
+  attribute READ_DATA_WIDTH of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_sync__parameterized3\ : entity is 74;
   attribute READ_MODE : string;
-  attribute READ_MODE of \design_1_axi_dma_0_0_xpm_fifo_sync__parameterized3\ : entity is "fwft";
+  attribute READ_MODE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_sync__parameterized3\ : entity is "fwft";
   attribute SIM_ASSERT_CHK : integer;
-  attribute SIM_ASSERT_CHK of \design_1_axi_dma_0_0_xpm_fifo_sync__parameterized3\ : entity is 0;
+  attribute SIM_ASSERT_CHK of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_sync__parameterized3\ : entity is 0;
   attribute USE_ADV_FEATURES : string;
-  attribute USE_ADV_FEATURES of \design_1_axi_dma_0_0_xpm_fifo_sync__parameterized3\ : entity is "1F1F";
+  attribute USE_ADV_FEATURES of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_sync__parameterized3\ : entity is "1F1F";
   attribute WAKEUP_TIME : integer;
-  attribute WAKEUP_TIME of \design_1_axi_dma_0_0_xpm_fifo_sync__parameterized3\ : entity is 0;
+  attribute WAKEUP_TIME of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_sync__parameterized3\ : entity is 0;
   attribute WRITE_DATA_WIDTH : integer;
-  attribute WRITE_DATA_WIDTH of \design_1_axi_dma_0_0_xpm_fifo_sync__parameterized3\ : entity is 74;
+  attribute WRITE_DATA_WIDTH of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_sync__parameterized3\ : entity is 74;
   attribute WR_DATA_COUNT_WIDTH : integer;
-  attribute WR_DATA_COUNT_WIDTH of \design_1_axi_dma_0_0_xpm_fifo_sync__parameterized3\ : entity is 8;
+  attribute WR_DATA_COUNT_WIDTH of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_sync__parameterized3\ : entity is 8;
   attribute XPM_MODULE : string;
-  attribute XPM_MODULE of \design_1_axi_dma_0_0_xpm_fifo_sync__parameterized3\ : entity is "TRUE";
-end \design_1_axi_dma_0_0_xpm_fifo_sync__parameterized3\;
+  attribute XPM_MODULE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_sync__parameterized3\ : entity is "TRUE";
+end \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_sync__parameterized3\;
 
-architecture STRUCTURE of \design_1_axi_dma_0_0_xpm_fifo_sync__parameterized3\ is
+architecture STRUCTURE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_sync__parameterized3\ is
   signal \<const0>\ : STD_LOGIC;
   signal \^rd_rst_busy\ : STD_LOGIC;
   signal NLW_xpm_fifo_base_inst_dbiterr_UNCONNECTED : STD_LOGIC;
@@ -60239,7 +60169,7 @@ GND: unisim.vcomponents.GND
      port map (
       G => \<const0>\
     );
-xpm_fifo_base_inst: entity work.\design_1_axi_dma_0_0_xpm_fifo_base__parameterized1\
+xpm_fifo_base_inst: entity work.\decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_base__parameterized1\
      port map (
       almost_empty => almost_empty,
       almost_full => almost_full,
@@ -60274,7 +60204,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_axi_dma_0_0_axi_datamover_fifo__parameterized1\ is
+entity \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_fifo__parameterized1\ is
   port (
     FIFO_Full_reg : out STD_LOGIC;
     sig_init_done : out STD_LOGIC;
@@ -60291,17 +60221,17 @@ entity \design_1_axi_dma_0_0_axi_datamover_fifo__parameterized1\ is
     \in\ : in STD_LOGIC_VECTOR ( 69 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_axi_dma_0_0_axi_datamover_fifo__parameterized1\ : entity is "axi_datamover_fifo";
-end \design_1_axi_dma_0_0_axi_datamover_fifo__parameterized1\;
+  attribute ORIG_REF_NAME of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_fifo__parameterized1\ : entity is "axi_datamover_fifo";
+end \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_fifo__parameterized1\;
 
-architecture STRUCTURE of \design_1_axi_dma_0_0_axi_datamover_fifo__parameterized1\ is
+architecture STRUCTURE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_fifo__parameterized1\ is
   signal sig_inhibit_rdy_n_i_1_n_0 : STD_LOGIC;
   signal \^sig_inhibit_rdy_n_reg_0\ : STD_LOGIC;
   signal \^sig_init_done\ : STD_LOGIC;
 begin
   sig_inhibit_rdy_n_reg_0 <= \^sig_inhibit_rdy_n_reg_0\;
   sig_init_done <= \^sig_init_done\;
-\USE_SRL_FIFO.I_SYNC_FIFO\: entity work.design_1_axi_dma_0_0_srl_fifo_f
+\USE_SRL_FIFO.I_SYNC_FIFO\: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_f
      port map (
       FIFO_Full_reg => FIFO_Full_reg,
       FIFO_Full_reg_0 => FIFO_Full_reg_0,
@@ -60351,7 +60281,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_axi_dma_0_0_axi_datamover_fifo__parameterized1_21\ is
+entity \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_fifo__parameterized1_21\ is
   port (
     sig_init_reg2 : out STD_LOGIC;
     FIFO_Full_reg : out STD_LOGIC;
@@ -60372,10 +60302,10 @@ entity \design_1_axi_dma_0_0_axi_datamover_fifo__parameterized1_21\ is
     \in\ : in STD_LOGIC_VECTOR ( 68 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_axi_dma_0_0_axi_datamover_fifo__parameterized1_21\ : entity is "axi_datamover_fifo";
-end \design_1_axi_dma_0_0_axi_datamover_fifo__parameterized1_21\;
+  attribute ORIG_REF_NAME of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_fifo__parameterized1_21\ : entity is "axi_datamover_fifo";
+end \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_fifo__parameterized1_21\;
 
-architecture STRUCTURE of \design_1_axi_dma_0_0_axi_datamover_fifo__parameterized1_21\ is
+architecture STRUCTURE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_fifo__parameterized1_21\ is
   signal sig_inhibit_rdy_n_i_1_n_0 : STD_LOGIC;
   signal \^sig_inhibit_rdy_n_reg_0\ : STD_LOGIC;
   signal sig_init_done : STD_LOGIC;
@@ -60384,7 +60314,7 @@ architecture STRUCTURE of \design_1_axi_dma_0_0_axi_datamover_fifo__parameterize
 begin
   sig_inhibit_rdy_n_reg_0 <= \^sig_inhibit_rdy_n_reg_0\;
   sig_init_reg2 <= \^sig_init_reg2\;
-\USE_SRL_FIFO.I_SYNC_FIFO\: entity work.design_1_axi_dma_0_0_srl_fifo_f_22
+\USE_SRL_FIFO.I_SYNC_FIFO\: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_f_22
      port map (
       FIFO_Full_reg => FIFO_Full_reg,
       FIFO_Full_reg_0 => sel,
@@ -60460,7 +60390,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_axi_dma_0_0_axi_datamover_fifo__parameterized2\ is
+entity \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_fifo__parameterized2\ is
   port (
     FIFO_Full_reg : out STD_LOGIC;
     sig_init_reg2 : out STD_LOGIC;
@@ -60487,10 +60417,10 @@ entity \design_1_axi_dma_0_0_axi_datamover_fifo__parameterized2\ is
     \in\ : in STD_LOGIC_VECTOR ( 30 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_axi_dma_0_0_axi_datamover_fifo__parameterized2\ : entity is "axi_datamover_fifo";
-end \design_1_axi_dma_0_0_axi_datamover_fifo__parameterized2\;
+  attribute ORIG_REF_NAME of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_fifo__parameterized2\ : entity is "axi_datamover_fifo";
+end \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_fifo__parameterized2\;
 
-architecture STRUCTURE of \design_1_axi_dma_0_0_axi_datamover_fifo__parameterized2\ is
+architecture STRUCTURE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_fifo__parameterized2\ is
   signal sig_inhibit_rdy_n_i_1_n_0 : STD_LOGIC;
   signal \^sig_inhibit_rdy_n_reg_0\ : STD_LOGIC;
   signal sig_init_done : STD_LOGIC;
@@ -60499,7 +60429,7 @@ architecture STRUCTURE of \design_1_axi_dma_0_0_axi_datamover_fifo__parameterize
 begin
   sig_inhibit_rdy_n_reg_0 <= \^sig_inhibit_rdy_n_reg_0\;
   sig_init_reg2 <= \^sig_init_reg2\;
-\USE_SRL_FIFO.I_SYNC_FIFO\: entity work.\design_1_axi_dma_0_0_srl_fifo_f__parameterized0\
+\USE_SRL_FIFO.I_SYNC_FIFO\: entity work.\decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_f__parameterized0\
      port map (
       D(2 downto 0) => D(2 downto 0),
       E(0) => E(0),
@@ -60581,7 +60511,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_axi_dma_0_0_axi_datamover_fifo__parameterized2_15\ is
+entity \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_fifo__parameterized2_15\ is
   port (
     FIFO_Full_reg : out STD_LOGIC;
     sig_init_done : out STD_LOGIC;
@@ -60624,17 +60554,17 @@ entity \design_1_axi_dma_0_0_axi_datamover_fifo__parameterized2_15\ is
     \in\ : in STD_LOGIC_VECTOR ( 22 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_axi_dma_0_0_axi_datamover_fifo__parameterized2_15\ : entity is "axi_datamover_fifo";
-end \design_1_axi_dma_0_0_axi_datamover_fifo__parameterized2_15\;
+  attribute ORIG_REF_NAME of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_fifo__parameterized2_15\ : entity is "axi_datamover_fifo";
+end \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_fifo__parameterized2_15\;
 
-architecture STRUCTURE of \design_1_axi_dma_0_0_axi_datamover_fifo__parameterized2_15\ is
+architecture STRUCTURE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_fifo__parameterized2_15\ is
   signal sig_inhibit_rdy_n_i_1_n_0 : STD_LOGIC;
   signal \^sig_inhibit_rdy_n_reg_0\ : STD_LOGIC;
   signal \^sig_init_done\ : STD_LOGIC;
 begin
   sig_inhibit_rdy_n_reg_0 <= \^sig_inhibit_rdy_n_reg_0\;
   sig_init_done <= \^sig_init_done\;
-\USE_SRL_FIFO.I_SYNC_FIFO\: entity work.\design_1_axi_dma_0_0_srl_fifo_f__parameterized0_16\
+\USE_SRL_FIFO.I_SYNC_FIFO\: entity work.\decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_f__parameterized0_16\
      port map (
       D(7 downto 0) => D(7 downto 0),
       E(0) => E(0),
@@ -60710,7 +60640,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_axi_dma_0_0_axi_datamover_fifo__parameterized3\ is
+entity \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_fifo__parameterized3\ is
   port (
     FIFO_Full_reg : out STD_LOGIC;
     sig_init_done : out STD_LOGIC;
@@ -60726,17 +60656,17 @@ entity \design_1_axi_dma_0_0_axi_datamover_fifo__parameterized3\ is
     \in\ : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_axi_dma_0_0_axi_datamover_fifo__parameterized3\ : entity is "axi_datamover_fifo";
-end \design_1_axi_dma_0_0_axi_datamover_fifo__parameterized3\;
+  attribute ORIG_REF_NAME of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_fifo__parameterized3\ : entity is "axi_datamover_fifo";
+end \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_fifo__parameterized3\;
 
-architecture STRUCTURE of \design_1_axi_dma_0_0_axi_datamover_fifo__parameterized3\ is
+architecture STRUCTURE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_fifo__parameterized3\ is
   signal sig_inhibit_rdy_n_i_1_n_0 : STD_LOGIC;
   signal \^sig_inhibit_rdy_n_reg_0\ : STD_LOGIC;
   signal \^sig_init_done\ : STD_LOGIC;
 begin
   sig_inhibit_rdy_n_reg_0 <= \^sig_inhibit_rdy_n_reg_0\;
   sig_init_done <= \^sig_init_done\;
-\USE_SRL_FIFO.I_SYNC_FIFO\: entity work.\design_1_axi_dma_0_0_srl_fifo_f__parameterized1\
+\USE_SRL_FIFO.I_SYNC_FIFO\: entity work.\decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_f__parameterized1\
      port map (
       FIFO_Full_reg => FIFO_Full_reg,
       FIFO_Full_reg_0 => sel,
@@ -60785,7 +60715,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_axi_dma_0_0_axi_datamover_fifo__parameterized5\ is
+entity \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_fifo__parameterized5\ is
   port (
     sig_init_reg_reg_0 : out STD_LOGIC;
     \sig_cmd_stat_rst_user_reg_n_cdc_from_reg__0\ : out STD_LOGIC;
@@ -60819,10 +60749,10 @@ entity \design_1_axi_dma_0_0_axi_datamover_fifo__parameterized5\ is
     m_axi_s2mm_bresp : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_axi_dma_0_0_axi_datamover_fifo__parameterized5\ : entity is "axi_datamover_fifo";
-end \design_1_axi_dma_0_0_axi_datamover_fifo__parameterized5\;
+  attribute ORIG_REF_NAME of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_fifo__parameterized5\ : entity is "axi_datamover_fifo";
+end \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_fifo__parameterized5\;
 
-architecture STRUCTURE of \design_1_axi_dma_0_0_axi_datamover_fifo__parameterized5\ is
+architecture STRUCTURE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_fifo__parameterized5\ is
   signal sig_inhibit_rdy_n : STD_LOGIC;
   signal sig_inhibit_rdy_n_i_1_n_0 : STD_LOGIC;
   signal sig_init_done_0 : STD_LOGIC;
@@ -60835,7 +60765,7 @@ architecture STRUCTURE of \design_1_axi_dma_0_0_axi_datamover_fifo__parameterize
   attribute SOFT_HLUTNM of \sig_realigner_btt2[25]_i_1\ : label is "soft_lutpair269";
 begin
   sig_init_reg_reg_0 <= \^sig_init_reg_reg_0\;
-\USE_SRL_FIFO.I_SYNC_FIFO\: entity work.\design_1_axi_dma_0_0_srl_fifo_f__parameterized2\
+\USE_SRL_FIFO.I_SYNC_FIFO\: entity work.\decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_f__parameterized2\
      port map (
       D(2 downto 0) => D(2 downto 0),
       E(0) => E(0),
@@ -60954,7 +60884,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_axi_dma_0_0_axi_datamover_fifo__parameterized6\ is
+entity \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_fifo__parameterized6\ is
   port (
     FIFO_Full_reg : out STD_LOGIC;
     sig_init_done : out STD_LOGIC;
@@ -60981,17 +60911,17 @@ entity \design_1_axi_dma_0_0_axi_datamover_fifo__parameterized6\ is
     \in\ : in STD_LOGIC_VECTOR ( 28 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_axi_dma_0_0_axi_datamover_fifo__parameterized6\ : entity is "axi_datamover_fifo";
-end \design_1_axi_dma_0_0_axi_datamover_fifo__parameterized6\;
+  attribute ORIG_REF_NAME of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_fifo__parameterized6\ : entity is "axi_datamover_fifo";
+end \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_fifo__parameterized6\;
 
-architecture STRUCTURE of \design_1_axi_dma_0_0_axi_datamover_fifo__parameterized6\ is
+architecture STRUCTURE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_fifo__parameterized6\ is
   signal sig_inhibit_rdy_n_i_1_n_0 : STD_LOGIC;
   signal \^sig_inhibit_rdy_n_reg_0\ : STD_LOGIC;
   signal \^sig_init_done\ : STD_LOGIC;
 begin
   sig_inhibit_rdy_n_reg_0 <= \^sig_inhibit_rdy_n_reg_0\;
   sig_init_done <= \^sig_init_done\;
-\USE_SRL_FIFO.I_SYNC_FIFO\: entity work.\design_1_axi_dma_0_0_srl_fifo_f__parameterized3\
+\USE_SRL_FIFO.I_SYNC_FIFO\: entity work.\decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_f__parameterized3\
      port map (
       D(2 downto 0) => D(2 downto 0),
       E(0) => E(0),
@@ -61051,7 +60981,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_axi_dma_0_0_axi_datamover_fifo__parameterized7\ is
+entity \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_fifo__parameterized7\ is
   port (
     FIFO_Full_reg : out STD_LOGIC;
     sig_eop_sent_reg0 : out STD_LOGIC;
@@ -61105,10 +61035,10 @@ entity \design_1_axi_dma_0_0_axi_datamover_fifo__parameterized7\ is
     sig_dre2ibtt_tlast_reg_reg_1 : in STD_LOGIC_VECTOR ( 5 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_axi_dma_0_0_axi_datamover_fifo__parameterized7\ : entity is "axi_datamover_fifo";
-end \design_1_axi_dma_0_0_axi_datamover_fifo__parameterized7\;
+  attribute ORIG_REF_NAME of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_fifo__parameterized7\ : entity is "axi_datamover_fifo";
+end \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_fifo__parameterized7\;
 
-architecture STRUCTURE of \design_1_axi_dma_0_0_axi_datamover_fifo__parameterized7\ is
+architecture STRUCTURE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_fifo__parameterized7\ is
   signal \^sig_eop_sent_reg0\ : STD_LOGIC;
   signal \^sig_inhibit_rdy_n\ : STD_LOGIC;
   signal sig_inhibit_rdy_n_i_1_n_0 : STD_LOGIC;
@@ -61119,7 +61049,7 @@ architecture STRUCTURE of \design_1_axi_dma_0_0_axi_datamover_fifo__parameterize
 begin
   sig_eop_sent_reg0 <= \^sig_eop_sent_reg0\;
   sig_inhibit_rdy_n <= \^sig_inhibit_rdy_n\;
-\USE_SRL_FIFO.I_SYNC_FIFO\: entity work.\design_1_axi_dma_0_0_srl_fifo_f__parameterized4\
+\USE_SRL_FIFO.I_SYNC_FIFO\: entity work.\decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_f__parameterized4\
      port map (
       CO(0) => CO(0),
       FIFO_Full_reg => FIFO_Full_reg,
@@ -61242,7 +61172,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_axi_dma_0_0_axi_datamover_fifo__parameterized8\ is
+entity \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_fifo__parameterized8\ is
   port (
     FIFO_Full_reg : out STD_LOGIC;
     sig_init_done : out STD_LOGIC;
@@ -61287,17 +61217,17 @@ entity \design_1_axi_dma_0_0_axi_datamover_fifo__parameterized8\ is
     sig_next_calc_error_reg_reg : in STD_LOGIC_VECTOR ( 9 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_axi_dma_0_0_axi_datamover_fifo__parameterized8\ : entity is "axi_datamover_fifo";
-end \design_1_axi_dma_0_0_axi_datamover_fifo__parameterized8\;
+  attribute ORIG_REF_NAME of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_fifo__parameterized8\ : entity is "axi_datamover_fifo";
+end \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_fifo__parameterized8\;
 
-architecture STRUCTURE of \design_1_axi_dma_0_0_axi_datamover_fifo__parameterized8\ is
+architecture STRUCTURE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_fifo__parameterized8\ is
   signal sig_inhibit_rdy_n_i_1_n_0 : STD_LOGIC;
   signal \^sig_inhibit_rdy_n_reg_0\ : STD_LOGIC;
   signal \^sig_init_done\ : STD_LOGIC;
 begin
   sig_inhibit_rdy_n_reg_0 <= \^sig_inhibit_rdy_n_reg_0\;
   sig_init_done <= \^sig_init_done\;
-\USE_SRL_FIFO.I_SYNC_FIFO\: entity work.\design_1_axi_dma_0_0_srl_fifo_f__parameterized5\
+\USE_SRL_FIFO.I_SYNC_FIFO\: entity work.\decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_srl_fifo_f__parameterized5\
      port map (
       D(0) => D(0),
       E(0) => E(0),
@@ -61375,7 +61305,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_axi_dma_0_0_sync_fifo_fg is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_sync_fifo_fg is
   port (
     full : out STD_LOGIC;
     empty : out STD_LOGIC;
@@ -61416,11 +61346,9 @@ entity design_1_axi_dma_0_0_sync_fifo_fg is
     m_axis_mm2s_tready : in STD_LOGIC;
     sig_reset_reg : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_dma_0_0_sync_fifo_fg : entity is "sync_fifo_fg";
-end design_1_axi_dma_0_0_sync_fifo_fg;
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_sync_fifo_fg;
 
-architecture STRUCTURE of design_1_axi_dma_0_0_sync_fifo_fg is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_sync_fifo_fg is
   signal \^empty\ : STD_LOGIC;
   signal \lsig_cmd_cmplt1__0\ : STD_LOGIC;
   signal \^lsig_ld_offset\ : STD_LOGIC;
@@ -62418,7 +62346,7 @@ sig_s_ready_dup_i_2: unisim.vcomponents.LUT6
       I4 => sig_data_fifo_data_out(65),
       O => \sig_strb_skid_reg[1]_i_2_n_0\
     );
-\xpm_fifo_instance.xpm_fifo_sync_inst\: entity work.design_1_axi_dma_0_0_xpm_fifo_sync
+\xpm_fifo_instance.xpm_fifo_sync_inst\: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_sync
      port map (
       almost_empty => \NLW_xpm_fifo_instance.xpm_fifo_sync_inst_almost_empty_UNCONNECTED\,
       almost_full => \xpm_fifo_instance.xpm_fifo_sync_inst_n_12\,
@@ -62475,7 +62403,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_axi_dma_0_0_sync_fifo_fg__parameterized0\ is
+entity \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_sync_fifo_fg__parameterized0\ is
   port (
     dout : out STD_LOGIC_VECTOR ( 8 downto 0 );
     empty : out STD_LOGIC;
@@ -62533,10 +62461,10 @@ entity \design_1_axi_dma_0_0_sync_fifo_fg__parameterized0\ is
     \sig_child_addr_cntr_lsh_reg[7]\ : in STD_LOGIC_VECTOR ( 3 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_axi_dma_0_0_sync_fifo_fg__parameterized0\ : entity is "sync_fifo_fg";
-end \design_1_axi_dma_0_0_sync_fifo_fg__parameterized0\;
+  attribute ORIG_REF_NAME of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_sync_fifo_fg__parameterized0\ : entity is "sync_fifo_fg";
+end \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_sync_fifo_fg__parameterized0\;
 
-architecture STRUCTURE of \design_1_axi_dma_0_0_sync_fifo_fg__parameterized0\ is
+architecture STRUCTURE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_sync_fifo_fg__parameterized0\ is
   signal \^gen_omit_dre.sig_output_strt_offset_reg_reg[0]\ : STD_LOGIC;
   signal \^include_packing.lsig_packer_full_reg_0\ : STD_LOGIC;
   signal \^dout\ : STD_LOGIC_VECTOR ( 8 downto 0 );
@@ -63058,7 +62986,7 @@ sig_xfer_is_seq_reg_i_1: unisim.vcomponents.LUT3
       I5 => \^dout\(6),
       O => \gen_rd_b.gen_doutb_pipe.doutb_pipe_reg[0][5]\(1)
     );
-\xpm_fifo_instance.xpm_fifo_sync_inst\: entity work.\design_1_axi_dma_0_0_xpm_fifo_sync__parameterized1\
+\xpm_fifo_instance.xpm_fifo_sync_inst\: entity work.\decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_sync__parameterized1\
      port map (
       almost_empty => \NLW_xpm_fifo_instance.xpm_fifo_sync_inst_almost_empty_UNCONNECTED\,
       almost_full => \xpm_fifo_instance.xpm_fifo_sync_inst_n_9\,
@@ -63095,7 +63023,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_axi_dma_0_0_sync_fifo_fg__parameterized1\ is
+entity \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_sync_fifo_fg__parameterized1\ is
   port (
     full : out STD_LOGIC;
     dout : out STD_LOGIC_VECTOR ( 73 downto 0 );
@@ -63119,10 +63047,10 @@ entity \design_1_axi_dma_0_0_sync_fifo_fg__parameterized1\ is
     \INCLUDE_PACKING.DO_REG_SLICES[3].lsig_strb_slice_reg_reg[3][0]\ : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_axi_dma_0_0_sync_fifo_fg__parameterized1\ : entity is "sync_fifo_fg";
-end \design_1_axi_dma_0_0_sync_fifo_fg__parameterized1\;
+  attribute ORIG_REF_NAME of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_sync_fifo_fg__parameterized1\ : entity is "sync_fifo_fg";
+end \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_sync_fifo_fg__parameterized1\;
 
-architecture STRUCTURE of \design_1_axi_dma_0_0_sync_fifo_fg__parameterized1\ is
+architecture STRUCTURE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_sync_fifo_fg__parameterized1\ is
   signal \^dout\ : STD_LOGIC_VECTOR ( 73 downto 0 );
   signal \^full\ : STD_LOGIC;
   signal lsig_good_push2fifo23_out : STD_LOGIC;
@@ -63490,7 +63418,7 @@ begin
       I2 => \^dout\(68),
       O => \sig_data_skid_reg[67]_i_2_n_0\
     );
-\xpm_fifo_instance.xpm_fifo_sync_inst\: entity work.\design_1_axi_dma_0_0_xpm_fifo_sync__parameterized3\
+\xpm_fifo_instance.xpm_fifo_sync_inst\: entity work.\decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_fifo_sync__parameterized3\
      port map (
       almost_empty => \NLW_xpm_fifo_instance.xpm_fifo_sync_inst_almost_empty_UNCONNECTED\,
       almost_full => \xpm_fifo_instance.xpm_fifo_sync_inst_n_12\,
@@ -63539,7 +63467,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_axi_dma_0_0_axi_datamover_addr_cntl is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_addr_cntl is
   port (
     \out\ : out STD_LOGIC;
     sig_posted_to_axi_reg_0 : out STD_LOGIC;
@@ -63564,11 +63492,9 @@ entity design_1_axi_dma_0_0_axi_datamover_addr_cntl is
     m_axi_mm2s_arready : in STD_LOGIC;
     \in\ : in STD_LOGIC_VECTOR ( 68 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_dma_0_0_axi_datamover_addr_cntl : entity is "axi_datamover_addr_cntl";
-end design_1_axi_dma_0_0_axi_datamover_addr_cntl;
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_addr_cntl;
 
-architecture STRUCTURE of design_1_axi_dma_0_0_axi_datamover_addr_cntl is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_addr_cntl is
   signal \GEN_ADDR_FIFO.I_ADDR_QUAL_FIFO_n_5\ : STD_LOGIC;
   signal \GEN_ADDR_FIFO.I_ADDR_QUAL_FIFO_n_6\ : STD_LOGIC;
   signal p_1_out : STD_LOGIC_VECTOR ( 82 downto 4 );
@@ -63595,7 +63521,7 @@ begin
   sig_addr2rsc_calc_error <= \^sig_addr2rsc_calc_error\;
   sig_addr_reg_empty <= \^sig_addr_reg_empty\;
   sig_posted_to_axi_reg_0 <= sig_posted_to_axi;
-\GEN_ADDR_FIFO.I_ADDR_QUAL_FIFO\: entity work.\design_1_axi_dma_0_0_axi_datamover_fifo__parameterized1_21\
+\GEN_ADDR_FIFO.I_ADDR_QUAL_FIFO\: entity work.\decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_fifo__parameterized1_21\
      port map (
       FIFO_Full_reg => FIFO_Full_reg,
       SS(0) => SS(0),
@@ -64470,7 +64396,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_axi_dma_0_0_axi_datamover_addr_cntl__parameterized0\ is
+entity \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_addr_cntl__parameterized0\ is
   port (
     \out\ : out STD_LOGIC;
     FIFO_Full_reg : out STD_LOGIC;
@@ -64493,10 +64419,10 @@ entity \design_1_axi_dma_0_0_axi_datamover_addr_cntl__parameterized0\ is
     \in\ : in STD_LOGIC_VECTOR ( 69 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_axi_dma_0_0_axi_datamover_addr_cntl__parameterized0\ : entity is "axi_datamover_addr_cntl";
-end \design_1_axi_dma_0_0_axi_datamover_addr_cntl__parameterized0\;
+  attribute ORIG_REF_NAME of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_addr_cntl__parameterized0\ : entity is "axi_datamover_addr_cntl";
+end \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_addr_cntl__parameterized0\;
 
-architecture STRUCTURE of \design_1_axi_dma_0_0_axi_datamover_addr_cntl__parameterized0\ is
+architecture STRUCTURE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_addr_cntl__parameterized0\ is
   signal p_0_in : STD_LOGIC;
   signal p_1_out : STD_LOGIC_VECTOR ( 82 downto 4 );
   signal \^sig_addr2wsc_calc_error\ : STD_LOGIC;
@@ -64521,7 +64447,7 @@ begin
   \out\ <= sig_posted_to_axi;
   sig_addr2wsc_calc_error <= \^sig_addr2wsc_calc_error\;
   sig_addr_reg_empty <= \^sig_addr_reg_empty\;
-\GEN_ADDR_FIFO.I_ADDR_QUAL_FIFO\: entity work.\design_1_axi_dma_0_0_axi_datamover_fifo__parameterized1\
+\GEN_ADDR_FIFO.I_ADDR_QUAL_FIFO\: entity work.\decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_fifo__parameterized1\
      port map (
       FIFO_Full_reg => FIFO_Full_reg,
       FIFO_Full_reg_0 => \^sig_addr_reg_empty\,
@@ -65403,7 +65329,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_axi_dma_0_0_axi_datamover_rddata_cntl is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_rddata_cntl is
   port (
     FIFO_Full_reg : out STD_LOGIC;
     sig_last_mmap_dbeat_reg_reg_0 : out STD_LOGIC;
@@ -65445,11 +65371,9 @@ entity design_1_axi_dma_0_0_axi_datamover_rddata_cntl is
     sig_rst2all_stop_request : in STD_LOGIC;
     \sig_addr_posted_cntr_reg[2]_1\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_dma_0_0_axi_datamover_rddata_cntl : entity is "axi_datamover_rddata_cntl";
-end design_1_axi_dma_0_0_axi_datamover_rddata_cntl;
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_rddata_cntl;
 
-architecture STRUCTURE of design_1_axi_dma_0_0_axi_datamover_rddata_cntl is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_rddata_cntl is
   signal \GEN_DATA_CNTL_FIFO.I_DATA_CNTL_FIFO_n_10\ : STD_LOGIC;
   signal \GEN_DATA_CNTL_FIFO.I_DATA_CNTL_FIFO_n_11\ : STD_LOGIC;
   signal \GEN_DATA_CNTL_FIFO.I_DATA_CNTL_FIFO_n_12\ : STD_LOGIC;
@@ -65526,7 +65450,7 @@ begin
   sig_halt_reg_dly2 <= \^sig_halt_reg_dly2\;
   sig_halt_reg_dly3 <= \^sig_halt_reg_dly3\;
   sig_last_mmap_dbeat_reg_reg_0 <= \^sig_last_mmap_dbeat_reg_reg_0\;
-\GEN_DATA_CNTL_FIFO.I_DATA_CNTL_FIFO\: entity work.\design_1_axi_dma_0_0_axi_datamover_fifo__parameterized2_15\
+\GEN_DATA_CNTL_FIFO.I_DATA_CNTL_FIFO\: entity work.\decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_fifo__parameterized2_15\
      port map (
       D(7) => \GEN_DATA_CNTL_FIFO.I_DATA_CNTL_FIFO_n_9\,
       D(6) => \GEN_DATA_CNTL_FIFO.I_DATA_CNTL_FIFO_n_10\,
@@ -66458,7 +66382,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_axi_dma_0_0_axi_datamover_s2mm_scatter is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_s2mm_scatter is
   port (
     \out\ : out STD_LOGIC;
     sig_m_valid_out_reg : out STD_LOGIC;
@@ -66513,11 +66437,9 @@ entity design_1_axi_dma_0_0_axi_datamover_s2mm_scatter is
     \FSM_sequential_sig_cmdcntl_sm_state_reg[1]\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     D : in STD_LOGIC_VECTOR ( 15 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_dma_0_0_axi_datamover_s2mm_scatter : entity is "axi_datamover_s2mm_scatter";
-end design_1_axi_dma_0_0_axi_datamover_s2mm_scatter;
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_s2mm_scatter;
 
-architecture STRUCTURE of design_1_axi_dma_0_0_axi_datamover_s2mm_scatter is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_s2mm_scatter is
   signal I_MSSAI_SKID_BUF_n_11 : STD_LOGIC;
   signal I_MSSAI_SKID_BUF_n_5 : STD_LOGIC;
   signal I_MSSAI_SKID_BUF_n_6 : STD_LOGIC;
@@ -66805,7 +66727,7 @@ begin
       Q => lsig_absorb2tlast,
       R => '0'
     );
-I_MSSAI_SKID_BUF: entity work.design_1_axi_dma_0_0_axi_datamover_mssai_skid_buf
+I_MSSAI_SKID_BUF: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_mssai_skid_buf
      port map (
       D(15 downto 0) => D(15 downto 0),
       E(0) => E(0),
@@ -66864,7 +66786,7 @@ I_MSSAI_SKID_BUF: entity work.design_1_axi_dma_0_0_axi_datamover_mssai_skid_buf
       sig_strm_tstrb(0) => sig_strm_tstrb(0),
       skid2dre_wlast => skid2dre_wlast
     );
-I_TSTRB_FIFO: entity work.\design_1_axi_dma_0_0_axi_datamover_fifo__parameterized7\
+I_TSTRB_FIFO: entity work.\decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_fifo__parameterized7\
      port map (
       CO(0) => sig_btt_lteq_max_first_incr,
       FIFO_Full_reg => I_TSTRB_FIFO_n_0,
@@ -66920,7 +66842,7 @@ I_TSTRB_FIFO: entity work.\design_1_axi_dma_0_0_axi_datamover_fifo__parameterize
       sig_valid_fifo_ld12_out => sig_valid_fifo_ld12_out,
       slice_insert_valid => slice_insert_valid
     );
-SLICE_INSERTION: entity work.design_1_axi_dma_0_0_axi_datamover_slice
+SLICE_INSERTION: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_slice
      port map (
       CO(0) => sig_btt_lteq_max_first_incr,
       DI(0) => SLICE_INSERTION_n_9,
@@ -68618,7 +68540,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_axi_dma_0_0_axi_datamover_sfifo_autord is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_sfifo_autord is
   port (
     full : out STD_LOGIC;
     empty : out STD_LOGIC;
@@ -68659,13 +68581,11 @@ entity design_1_axi_dma_0_0_axi_datamover_sfifo_autord is
     m_axis_mm2s_tready : in STD_LOGIC;
     sig_reset_reg : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_dma_0_0_axi_datamover_sfifo_autord : entity is "axi_datamover_sfifo_autord";
-end design_1_axi_dma_0_0_axi_datamover_sfifo_autord;
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_sfifo_autord;
 
-architecture STRUCTURE of design_1_axi_dma_0_0_axi_datamover_sfifo_autord is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_sfifo_autord is
 begin
-\BLK_MEM.I_SYNC_FIFOGEN_FIFO\: entity work.design_1_axi_dma_0_0_sync_fifo_fg
+\BLK_MEM.I_SYNC_FIFOGEN_FIFO\: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_sync_fifo_fg
      port map (
       D(15 downto 0) => D(15 downto 0),
       \INCLUDE_UNPACKING.lsig_cmd_loaded_reg\ => \INCLUDE_UNPACKING.lsig_cmd_loaded_reg\,
@@ -68711,7 +68631,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_axi_dma_0_0_axi_datamover_sfifo_autord__parameterized0\ is
+entity \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_sfifo_autord__parameterized0\ is
   port (
     dout : out STD_LOGIC_VECTOR ( 8 downto 0 );
     empty : out STD_LOGIC;
@@ -68769,12 +68689,12 @@ entity \design_1_axi_dma_0_0_axi_datamover_sfifo_autord__parameterized0\ is
     \sig_child_addr_cntr_lsh_reg[7]\ : in STD_LOGIC_VECTOR ( 3 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_axi_dma_0_0_axi_datamover_sfifo_autord__parameterized0\ : entity is "axi_datamover_sfifo_autord";
-end \design_1_axi_dma_0_0_axi_datamover_sfifo_autord__parameterized0\;
+  attribute ORIG_REF_NAME of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_sfifo_autord__parameterized0\ : entity is "axi_datamover_sfifo_autord";
+end \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_sfifo_autord__parameterized0\;
 
-architecture STRUCTURE of \design_1_axi_dma_0_0_axi_datamover_sfifo_autord__parameterized0\ is
+architecture STRUCTURE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_sfifo_autord__parameterized0\ is
 begin
-\NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO\: entity work.\design_1_axi_dma_0_0_sync_fifo_fg__parameterized0\
+\NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO\: entity work.\decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_sync_fifo_fg__parameterized0\
      port map (
       D(5 downto 0) => D(5 downto 0),
       E(0) => E(0),
@@ -68836,7 +68756,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_axi_dma_0_0_axi_datamover_sfifo_autord__parameterized1\ is
+entity \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_sfifo_autord__parameterized1\ is
   port (
     full : out STD_LOGIC;
     dout : out STD_LOGIC_VECTOR ( 73 downto 0 );
@@ -68860,12 +68780,12 @@ entity \design_1_axi_dma_0_0_axi_datamover_sfifo_autord__parameterized1\ is
     \INCLUDE_PACKING.DO_REG_SLICES[3].lsig_strb_slice_reg_reg[3][0]\ : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_axi_dma_0_0_axi_datamover_sfifo_autord__parameterized1\ : entity is "axi_datamover_sfifo_autord";
-end \design_1_axi_dma_0_0_axi_datamover_sfifo_autord__parameterized1\;
+  attribute ORIG_REF_NAME of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_sfifo_autord__parameterized1\ : entity is "axi_datamover_sfifo_autord";
+end \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_sfifo_autord__parameterized1\;
 
-architecture STRUCTURE of \design_1_axi_dma_0_0_axi_datamover_sfifo_autord__parameterized1\ is
+architecture STRUCTURE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_sfifo_autord__parameterized1\ is
 begin
-\BLK_MEM.I_SYNC_FIFOGEN_FIFO\: entity work.\design_1_axi_dma_0_0_sync_fifo_fg__parameterized1\
+\BLK_MEM.I_SYNC_FIFOGEN_FIFO\: entity work.\decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_sync_fifo_fg__parameterized1\
      port map (
       E(0) => E(0),
       \INCLUDE_PACKING.DO_REG_SLICES[0].lsig_strb_slice_reg_reg[0][0]\ => \INCLUDE_PACKING.DO_REG_SLICES[0].lsig_strb_slice_reg_reg[0][0]\,
@@ -68893,7 +68813,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_axi_dma_0_0_axi_datamover_wr_status_cntl is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_wr_status_cntl is
   port (
     FIFO_Full_reg : out STD_LOGIC;
     sig_wsc2stat_status_valid : out STD_LOGIC;
@@ -68925,11 +68845,9 @@ entity design_1_axi_dma_0_0_axi_datamover_wr_status_cntl is
     m_axi_s2mm_bresp : in STD_LOGIC_VECTOR ( 1 downto 0 );
     \in\ : in STD_LOGIC_VECTOR ( 28 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_dma_0_0_axi_datamover_wr_status_cntl : entity is "axi_datamover_wr_status_cntl";
-end design_1_axi_dma_0_0_axi_datamover_wr_status_cntl;
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_wr_status_cntl;
 
-architecture STRUCTURE of design_1_axi_dma_0_0_axi_datamover_wr_status_cntl is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_wr_status_cntl is
   signal \^d\ : STD_LOGIC_VECTOR ( 30 downto 0 );
   signal \GEN_ENABLE_INDET_BTT.I_SF_DATA_CNTL_STATUS_FIFO_n_35\ : STD_LOGIC;
   signal \GEN_ENABLE_INDET_BTT.I_SF_DATA_CNTL_STATUS_FIFO_n_36\ : STD_LOGIC;
@@ -68968,7 +68886,7 @@ begin
   D(30 downto 0) <= \^d\(30 downto 0);
   sig_halt_reg <= \^sig_halt_reg\;
   sig_wsc2stat_status_valid <= \^sig_wsc2stat_status_valid\;
-\GEN_ENABLE_INDET_BTT.I_SF_DATA_CNTL_STATUS_FIFO\: entity work.\design_1_axi_dma_0_0_axi_datamover_fifo__parameterized6\
+\GEN_ENABLE_INDET_BTT.I_SF_DATA_CNTL_STATUS_FIFO\: entity work.\decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_fifo__parameterized6\
      port map (
       D(2) => \GEN_ENABLE_INDET_BTT.I_SF_DATA_CNTL_STATUS_FIFO_n_37\,
       D(1) => \GEN_ENABLE_INDET_BTT.I_SF_DATA_CNTL_STATUS_FIFO_n_38\,
@@ -69369,7 +69287,7 @@ begin
       Q => \^d\(2),
       R => p_5_out
     );
-I_WRESP_STATUS_FIFO: entity work.\design_1_axi_dma_0_0_axi_datamover_fifo__parameterized5\
+I_WRESP_STATUS_FIFO: entity work.\decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_fifo__parameterized5\
      port map (
       D(2) => I_WRESP_STATUS_FIFO_n_2,
       D(1) => I_WRESP_STATUS_FIFO_n_3,
@@ -69567,7 +69485,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_axi_dma_0_0_axi_datamover_wrdata_cntl is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_wrdata_cntl is
   port (
     FIFO_Full_reg : out STD_LOGIC;
     sig_next_cmd_cmplt_reg : out STD_LOGIC;
@@ -69618,11 +69536,9 @@ entity design_1_axi_dma_0_0_axi_datamover_wrdata_cntl is
     SR : in STD_LOGIC_VECTOR ( 0 to 0 );
     D : in STD_LOGIC_VECTOR ( 3 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_dma_0_0_axi_datamover_wrdata_cntl : entity is "axi_datamover_wrdata_cntl";
-end design_1_axi_dma_0_0_axi_datamover_wrdata_cntl;
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_wrdata_cntl;
 
-architecture STRUCTURE of design_1_axi_dma_0_0_axi_datamover_wrdata_cntl is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_wrdata_cntl is
   signal \GEN_DATA_CNTL_FIFO.I_DATA_CNTL_FIFO_n_13\ : STD_LOGIC;
   signal \GEN_DATA_CNTL_FIFO.I_DATA_CNTL_FIFO_n_16\ : STD_LOGIC;
   signal \GEN_DATA_CNTL_FIFO.I_DATA_CNTL_FIFO_n_17\ : STD_LOGIC;
@@ -69766,7 +69682,7 @@ begin
   sig_halt_reg_dly2 <= \^sig_halt_reg_dly2\;
   sig_halt_reg_dly3 <= \^sig_halt_reg_dly3\;
   sig_next_cmd_cmplt_reg <= \^sig_next_cmd_cmplt_reg\;
-\GEN_DATA_CNTL_FIFO.I_DATA_CNTL_FIFO\: entity work.\design_1_axi_dma_0_0_axi_datamover_fifo__parameterized8\
+\GEN_DATA_CNTL_FIFO.I_DATA_CNTL_FIFO\: entity work.\decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_fifo__parameterized8\
      port map (
       D(0) => \GEN_DATA_CNTL_FIFO.I_DATA_CNTL_FIFO_n_6\,
       E(0) => \GEN_DATA_CNTL_FIFO.I_DATA_CNTL_FIFO_n_4\,
@@ -69818,7 +69734,7 @@ begin
       sig_wdc_status_going_full => sig_wdc_status_going_full,
       sig_wsc2stat_status_valid => sig_wsc2stat_status_valid
     );
-\GEN_INDET_BTT.I_STRT_STRB_GEN\: entity work.design_1_axi_dma_0_0_axi_datamover_strb_gen2
+\GEN_INDET_BTT.I_STRT_STRB_GEN\: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_strb_gen2
      port map (
       D(4 downto 2) => p_0_out(6 downto 4),
       D(1 downto 0) => p_0_out(2 downto 1),
@@ -71332,7 +71248,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_axi_dma_0_0_axi_datamover_indet_btt is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_indet_btt is
   port (
     dout : out STD_LOGIC_VECTOR ( 8 downto 0 );
     empty : out STD_LOGIC;
@@ -71404,11 +71320,9 @@ entity design_1_axi_dma_0_0_axi_datamover_indet_btt is
     \INCLUDE_PACKING.DO_REG_SLICES[2].lsig_strb_slice_reg_reg[2][1]_0\ : in STD_LOGIC_VECTOR ( 1 downto 0 );
     \INCLUDE_PACKING.DO_REG_SLICES[3].lsig_strb_slice_reg_reg[3][1]_0\ : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_dma_0_0_axi_datamover_indet_btt : entity is "axi_datamover_indet_btt";
-end design_1_axi_dma_0_0_axi_datamover_indet_btt;
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_indet_btt;
 
-architecture STRUCTURE of design_1_axi_dma_0_0_axi_datamover_indet_btt is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_indet_btt is
   signal \^gen_omit_dre.sig_output_strt_offset_reg_reg[0]\ : STD_LOGIC;
   signal \^gen_omit_dre.sig_output_strt_offset_reg_reg[0]_0\ : STD_LOGIC;
   signal \^gen_omit_dre.sig_output_strt_offset_reg_reg[0]_1\ : STD_LOGIC;
@@ -71463,7 +71377,7 @@ begin
   \GEN_OMIT_DRE.sig_output_strt_offset_reg_reg[0]_1\ <= \^gen_omit_dre.sig_output_strt_offset_reg_reg[0]_1\;
   \GEN_OMIT_DRE.sig_output_strt_offset_reg_reg[1]\ <= \^gen_omit_dre.sig_output_strt_offset_reg_reg[1]\;
   Q(1 downto 0) <= \^q\(1 downto 0);
-\ENABLE_AXIS_SKID.I_INDET_BTT_SKID_BUF\: entity work.\design_1_axi_dma_0_0_axi_datamover_skid_buf__parameterized0\
+\ENABLE_AXIS_SKID.I_INDET_BTT_SKID_BUF\: entity work.\decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_skid_buf__parameterized0\
      port map (
       CO(0) => CO(0),
       D(3 downto 0) => D(3 downto 0),
@@ -72178,7 +72092,7 @@ begin
       Q => lsig_packer_full,
       R => sig_stream_rst
     );
-I_DATA_FIFO: entity work.\design_1_axi_dma_0_0_axi_datamover_sfifo_autord__parameterized1\
+I_DATA_FIFO: entity work.\decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_sfifo_autord__parameterized1\
      port map (
       E(0) => \lsig_flag_slice_reg[0]_0\,
       \INCLUDE_PACKING.DO_REG_SLICES[0].lsig_strb_slice_reg_reg[0][0]\ => \^gen_omit_dre.sig_output_strt_offset_reg_reg[0]_0\,
@@ -72203,7 +72117,7 @@ I_DATA_FIFO: entity work.\design_1_axi_dma_0_0_axi_datamover_sfifo_autord__param
       sig_s_ready_dup_reg(0) => sig_data_skid_mux_out(64),
       sig_stream_rst => sig_stream_rst
     );
-I_XD_FIFO: entity work.\design_1_axi_dma_0_0_axi_datamover_sfifo_autord__parameterized0\
+I_XD_FIFO: entity work.\decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_sfifo_autord__parameterized0\
      port map (
       D(5 downto 0) => sig_byte_cntr(6 downto 1),
       E(0) => I_XD_FIFO_n_28,
@@ -72446,7 +72360,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_axi_dma_0_0_axi_datamover_rd_sf is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_rd_sf is
   port (
     full : out STD_LOGIC;
     empty : out STD_LOGIC;
@@ -72485,11 +72399,9 @@ entity design_1_axi_dma_0_0_axi_datamover_rd_sf is
     sig_reset_reg : in STD_LOGIC;
     \in\ : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_dma_0_0_axi_datamover_rd_sf : entity is "axi_datamover_rd_sf";
-end design_1_axi_dma_0_0_axi_datamover_rd_sf;
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_rd_sf;
 
-architecture STRUCTURE of design_1_axi_dma_0_0_axi_datamover_rd_sf is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_rd_sf is
   signal \INCLUDE_UNPACKING.lsig_0ffset_cntr[0]_i_1_n_0\ : STD_LOGIC;
   signal \INCLUDE_UNPACKING.lsig_0ffset_cntr[1]_i_1_n_0\ : STD_LOGIC;
   signal \INCLUDE_UNPACKING.lsig_0ffset_cntr_reg_n_0_[0]\ : STD_LOGIC;
@@ -72581,7 +72493,7 @@ begin
       Q => \^lsig_cmd_loaded\,
       R => SS(0)
     );
-I_DATA_FIFO: entity work.design_1_axi_dma_0_0_axi_datamover_sfifo_autord
+I_DATA_FIFO: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_sfifo_autord
      port map (
       D(15 downto 0) => D(15 downto 0),
       \INCLUDE_UNPACKING.lsig_cmd_loaded_reg\ => \INCLUDE_UNPACKING.lsig_cmd_loaded_reg_0\,
@@ -72622,7 +72534,7 @@ I_DATA_FIFO: entity work.design_1_axi_dma_0_0_axi_datamover_sfifo_autord
       sig_tokens_commited(0) => sig_tokens_commited(3),
       wr_en => wr_en
     );
-\OMIT_DRE_CNTL.I_DRE_CNTL_FIFO\: entity work.\design_1_axi_dma_0_0_axi_datamover_fifo__parameterized3\
+\OMIT_DRE_CNTL.I_DRE_CNTL_FIFO\: entity work.\decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_fifo__parameterized3\
      port map (
       FIFO_Full_reg => FIFO_Full_reg,
       Q(0) => sig_rd_empty,
@@ -72806,7 +72718,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_axi_dma_0_0_axi_datamover_s2mm_realign is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_s2mm_realign is
   port (
     \out\ : out STD_LOGIC;
     sig_m_valid_out_reg : out STD_LOGIC;
@@ -72858,11 +72770,9 @@ entity design_1_axi_dma_0_0_axi_datamover_s2mm_realign is
     \in\ : in STD_LOGIC_VECTOR ( 30 downto 0 );
     D : in STD_LOGIC_VECTOR ( 15 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_dma_0_0_axi_datamover_s2mm_realign : entity is "axi_datamover_s2mm_realign";
-end design_1_axi_dma_0_0_axi_datamover_s2mm_realign;
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_s2mm_realign;
 
-architecture STRUCTURE of design_1_axi_dma_0_0_axi_datamover_s2mm_realign is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_s2mm_realign is
   signal \GEN_INCLUDE_SCATTER.I_S2MM_SCATTER_n_6\ : STD_LOGIC;
   signal \GEN_INCLUDE_SCATTER.I_S2MM_SCATTER_n_96\ : STD_LOGIC;
   signal I_DRE_CNTL_FIFO_n_4 : STD_LOGIC;
@@ -72939,7 +72849,7 @@ begin
       Q => sig_need_cmd_flush,
       R => '0'
     );
-\GEN_INCLUDE_SCATTER.I_S2MM_SCATTER\: entity work.design_1_axi_dma_0_0_axi_datamover_s2mm_scatter
+\GEN_INCLUDE_SCATTER.I_S2MM_SCATTER\: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_s2mm_scatter
      port map (
       D(15 downto 0) => D(15 downto 0),
       E(0) => E(0),
@@ -73017,7 +72927,7 @@ begin
       Q => \GEN_OMIT_DRE.sig_output_strt_offset_reg_reg[1]_0\(1),
       R => sig_stream_rst
     );
-I_DRE_CNTL_FIFO: entity work.\design_1_axi_dma_0_0_axi_datamover_fifo__parameterized2\
+I_DRE_CNTL_FIFO: entity work.\decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_fifo__parameterized2\
      port map (
       D(2 downto 0) => sig_cmdcntl_sm_state_ns(2 downto 0),
       E(0) => sig_sm_ld_dre_cmd,
@@ -73072,7 +72982,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_axi_dma_0_0_axi_datamover_mm2s_full_wrap is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_mm2s_full_wrap is
   port (
     m_axis_mm2s_tvalid : out STD_LOGIC;
     sig_rst2all_stop_request : out STD_LOGIC;
@@ -73106,11 +73016,9 @@ entity design_1_axi_dma_0_0_axi_datamover_mm2s_full_wrap is
     p_5_out : in STD_LOGIC;
     D : in STD_LOGIC_VECTOR ( 91 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_dma_0_0_axi_datamover_mm2s_full_wrap : entity is "axi_datamover_mm2s_full_wrap";
-end design_1_axi_dma_0_0_axi_datamover_mm2s_full_wrap;
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_mm2s_full_wrap;
 
-architecture STRUCTURE of design_1_axi_dma_0_0_axi_datamover_mm2s_full_wrap is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_mm2s_full_wrap is
   signal \GEN_ADDR_FIFO.I_ADDR_QUAL_FIFO/sig_inhibit_rdy_n\ : STD_LOGIC;
   signal \GEN_ADDR_FIFO.I_ADDR_QUAL_FIFO/sig_wr_fifo\ : STD_LOGIC;
   signal \GEN_DATA_CNTL_FIFO.I_DATA_CNTL_FIFO/sig_inhibit_rdy_n\ : STD_LOGIC;
@@ -73248,7 +73156,7 @@ architecture STRUCTURE of design_1_axi_dma_0_0_axi_datamover_mm2s_full_wrap is
   signal sig_xfer_strt_strb2use_im3 : STD_LOGIC_VECTOR ( 7 downto 0 );
 begin
   sig_rst2all_stop_request <= \^sig_rst2all_stop_request\;
-\ENABLE_AXIS_SKID.I_MM2S_SKID_BUF\: entity work.design_1_axi_dma_0_0_axi_datamover_skid_buf_13
+\ENABLE_AXIS_SKID.I_MM2S_SKID_BUF\: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_skid_buf_13
      port map (
       D(15 downto 0) => s_data(15 downto 0),
       Q(15 downto 0) => sig_data_skid_reg(15 downto 0),
@@ -73282,7 +73190,7 @@ begin
       \sig_strb_reg_out_reg[1]_1\ => \GEN_INCLUDE_MM2S_SF.I_RD_SF_n_48\,
       \sig_strb_skid_reg_reg[1]_0\(1 downto 0) => sig_sstrb_with_stop(1 downto 0)
     );
-\GEN_INCLUDE_MM2S_SF.I_RD_SF\: entity work.design_1_axi_dma_0_0_axi_datamover_rd_sf
+\GEN_INCLUDE_MM2S_SF.I_RD_SF\: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_rd_sf
      port map (
       D(15 downto 0) => s_data(15 downto 0),
       FIFO_Full_reg => \GEN_INCLUDE_MM2S_SF.I_RD_SF_n_2\,
@@ -73324,7 +73232,7 @@ begin
       sig_wr_fifo => \OMIT_DRE_CNTL.I_DRE_CNTL_FIFO/sig_wr_fifo\,
       wr_en => sig_good_sin_strm_dbeat
     );
-I_ADDR_CNTL: entity work.design_1_axi_dma_0_0_axi_datamover_addr_cntl
+I_ADDR_CNTL: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_addr_cntl
      port map (
       FIFO_Full_reg => I_ADDR_CNTL_n_3,
       SS(0) => sig_stream_rst,
@@ -73353,7 +73261,7 @@ I_ADDR_CNTL: entity work.design_1_axi_dma_0_0_axi_datamover_addr_cntl
       sig_sf_allow_addr_req => sig_sf_allow_addr_req,
       sig_wr_fifo => \GEN_ADDR_FIFO.I_ADDR_QUAL_FIFO/sig_wr_fifo\
     );
-I_CMD_STATUS: entity work.design_1_axi_dma_0_0_axi_datamover_cmd_status
+I_CMD_STATUS: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_cmd_status
      port map (
       D(91 downto 0) => D(91 downto 0),
       E(0) => E(0),
@@ -73432,7 +73340,7 @@ I_CMD_STATUS: entity work.design_1_axi_dma_0_0_axi_datamover_cmd_status
       sig_rsc2stat_status_valid => sig_rsc2stat_status_valid,
       sig_stat2rsc_status_ready => sig_stat2rsc_status_ready
     );
-I_MSTR_PCC: entity work.design_1_axi_dma_0_0_axi_datamover_pcc
+I_MSTR_PCC: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_pcc
      port map (
       E(0) => E(0),
       Q(91) => I_CMD_STATUS_n_10,
@@ -73517,7 +73425,7 @@ I_MSTR_PCC: entity work.design_1_axi_dma_0_0_axi_datamover_pcc
       sig_wr_fifo_0 => \GEN_ADDR_FIFO.I_ADDR_QUAL_FIFO/sig_wr_fifo\,
       sig_wr_fifo_1 => \OMIT_DRE_CNTL.I_DRE_CNTL_FIFO/sig_wr_fifo\
     );
-I_RD_DATA_CNTL: entity work.design_1_axi_dma_0_0_axi_datamover_rddata_cntl
+I_RD_DATA_CNTL: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_rddata_cntl
      port map (
       FIFO_Full_reg => I_RD_DATA_CNTL_n_0,
       SS(0) => sig_stream_rst,
@@ -73567,7 +73475,7 @@ I_RD_DATA_CNTL: entity work.design_1_axi_dma_0_0_axi_datamover_rddata_cntl
       sig_wr_fifo => \GEN_DATA_CNTL_FIFO.I_DATA_CNTL_FIFO/sig_wr_fifo\,
       wr_en => sig_good_sin_strm_dbeat
     );
-I_RD_STATUS_CNTLR: entity work.design_1_axi_dma_0_0_axi_datamover_rd_status_cntl
+I_RD_STATUS_CNTLR: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_rd_status_cntl
      port map (
       m_axi_mm2s_aclk => m_axi_mm2s_aclk,
       sig_data2rsc_calc_err => sig_data2rsc_calc_err,
@@ -73579,7 +73487,7 @@ I_RD_STATUS_CNTLR: entity work.design_1_axi_dma_0_0_axi_datamover_rd_status_cntl
       sig_rsc2stat_status(2 downto 0) => sig_rsc2stat_status(6 downto 4),
       sig_rsc2stat_status_valid => sig_rsc2stat_status_valid
     );
-I_RESET: entity work.design_1_axi_dma_0_0_axi_datamover_reset_14
+I_RESET: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_reset_14
      port map (
       SS(0) => sig_stream_rst,
       m_axi_mm2s_aclk => m_axi_mm2s_aclk,
@@ -73609,7 +73517,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_axi_dma_0_0_axi_datamover_s2mm_full_wrap is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_s2mm_full_wrap is
   port (
     m_axi_s2mm_awburst : out STD_LOGIC_VECTOR ( 0 to 0 );
     m_axi_s2mm_awvalid : out STD_LOGIC;
@@ -73649,11 +73557,9 @@ entity design_1_axi_dma_0_0_axi_datamover_s2mm_full_wrap is
     m_axi_s2mm_awready : in STD_LOGIC;
     s_axis_s2mm_tkeep : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_dma_0_0_axi_datamover_s2mm_full_wrap : entity is "axi_datamover_s2mm_full_wrap";
-end design_1_axi_dma_0_0_axi_datamover_s2mm_full_wrap;
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_s2mm_full_wrap;
 
-architecture STRUCTURE of design_1_axi_dma_0_0_axi_datamover_s2mm_full_wrap is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_s2mm_full_wrap is
   signal \ENABLE_AXIS_SKID.I_S2MM_STRM_SKID_BUF_n_5\ : STD_LOGIC;
   signal \GEN_ADDR_FIFO.I_ADDR_QUAL_FIFO/sig_inhibit_rdy_n\ : STD_LOGIC;
   signal \GEN_ADDR_FIFO.I_ADDR_QUAL_FIFO/sig_init_done\ : STD_LOGIC;
@@ -73887,7 +73793,7 @@ architecture STRUCTURE of design_1_axi_dma_0_0_axi_datamover_s2mm_full_wrap is
   signal skid2dre_wstrb : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal skid2dre_wvalid : STD_LOGIC;
 begin
-\ENABLE_AXIS_SKID.I_S2MM_STRM_SKID_BUF\: entity work.design_1_axi_dma_0_0_axi_datamover_skid_buf
+\ENABLE_AXIS_SKID.I_S2MM_STRM_SKID_BUF\: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_skid_buf
      port map (
       E(0) => sig_data_reg_out_en,
       Q(15 downto 0) => skid2dre_wdata(15 downto 0),
@@ -73913,7 +73819,7 @@ begin
       sig_stream_rst => sig_stream_rst,
       skid2dre_wlast => skid2dre_wlast
     );
-\GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT\: entity work.design_1_axi_dma_0_0_axi_datamover_indet_btt
+\GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT\: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_indet_btt
      port map (
       CO(0) => \GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT_n_18\,
       D(3) => \GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT_n_19\,
@@ -74070,7 +73976,7 @@ begin
       \sig_xfer_len_reg_reg[2]\ => \GEN_INCLUDE_IBTTCC.I_S2MM_MSTR_IBTTCC_n_117\,
       \sig_xfer_len_reg_reg[2]_0\ => \GEN_INCLUDE_IBTTCC.I_S2MM_MSTR_IBTTCC_n_118\
     );
-\GEN_INCLUDE_IBTTCC.I_S2MM_MSTR_IBTTCC\: entity work.design_1_axi_dma_0_0_axi_datamover_ibttcc
+\GEN_INCLUDE_IBTTCC.I_S2MM_MSTR_IBTTCC\: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_ibttcc
      port map (
       D(1 downto 0) => sig_xfer_len(3 downto 2),
       \FSM_onehot_sig_csm_state_reg[4]_0\ => \GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT_n_26\,
@@ -74136,7 +74042,7 @@ begin
       sig_xfer_is_seq_reg_reg_0 => \GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT_n_25\,
       \sig_xfer_len_reg_reg[0]_0\ => I_WR_DATA_CNTL_n_0
     );
-\GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER\: entity work.design_1_axi_dma_0_0_axi_datamover_s2mm_realign
+\GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER\: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_s2mm_realign
      port map (
       D(15 downto 0) => skid2dre_wdata(15 downto 0),
       E(0) => sig_data_reg_out_en,
@@ -74260,7 +74166,7 @@ begin
       skid2dre_wlast => skid2dre_wlast,
       \storage_data_reg[1]\(0) => \GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_tstrb_fifo_data_out\(1)
     );
-I_ADDR_CNTL: entity work.\design_1_axi_dma_0_0_axi_datamover_addr_cntl__parameterized0\
+I_ADDR_CNTL: entity work.\decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_addr_cntl__parameterized0\
      port map (
       FIFO_Full_reg => I_ADDR_CNTL_n_1,
       \in\(69) => p_13_out,
@@ -74286,7 +74192,7 @@ I_ADDR_CNTL: entity work.\design_1_axi_dma_0_0_axi_datamover_addr_cntl__paramete
       sig_init_done_reg => I_RESET_n_7,
       sig_stream_rst => sig_stream_rst
     );
-I_CMD_STATUS: entity work.\design_1_axi_dma_0_0_axi_datamover_cmd_status__parameterized0\
+I_CMD_STATUS: entity work.\decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_cmd_status__parameterized0\
      port map (
       D(30 downto 0) => sig_wsc2stat_status(34 downto 4),
       Q(91 downto 28) => sig_cmd2mstr_command(98 downto 35),
@@ -74318,7 +74224,7 @@ I_CMD_STATUS: entity work.\design_1_axi_dma_0_0_axi_datamover_cmd_status__parame
       sts_received_i_reg => sts_received_i_reg,
       sts_received_i_reg_0(25 downto 0) => sts_received_i_reg_0(25 downto 0)
     );
-I_RESET: entity work.design_1_axi_dma_0_0_axi_datamover_reset
+I_RESET: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_reset
      port map (
       m_axi_s2mm_aclk => m_axi_s2mm_aclk,
       s2mm_halt_cmplt => s2mm_halt_cmplt,
@@ -74345,7 +74251,7 @@ I_RESET: entity work.design_1_axi_dma_0_0_axi_datamover_reset
       sig_s_h_halt_reg_reg_1 => sig_s_h_halt_reg_reg,
       sig_stream_rst => sig_stream_rst
     );
-I_S2MM_MMAP_SKID_BUF: entity work.design_1_axi_dma_0_0_axi_datamover_skid2mm_buf
+I_S2MM_MMAP_SKID_BUF: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_skid2mm_buf
      port map (
       D(63 downto 0) => sig_ibtt2wdc_tdata(63 downto 0),
       \GEN_INDET_BTT.lsig_end_of_cmd_reg_reg\ => I_WR_DATA_CNTL_n_40,
@@ -74371,7 +74277,7 @@ I_S2MM_MMAP_SKID_BUF: entity work.design_1_axi_dma_0_0_axi_datamover_skid2mm_buf
       \sig_strb_skid_reg_reg[7]_0\(7 downto 0) => sig_data2skid_wstrb(7 downto 0),
       sig_stream_rst => sig_stream_rst
     );
-I_WR_DATA_CNTL: entity work.design_1_axi_dma_0_0_axi_datamover_wrdata_cntl
+I_WR_DATA_CNTL: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_wrdata_cntl
      port map (
       CO(0) => \GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT_n_18\,
       D(3) => \GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT_n_19\,
@@ -74432,7 +74338,7 @@ I_WR_DATA_CNTL: entity work.design_1_axi_dma_0_0_axi_datamover_wrdata_cntl
       sig_wr_fifo => \GEN_ENABLE_INDET_BTT.I_SF_DATA_CNTL_STATUS_FIFO/sig_wr_fifo\,
       sig_wsc2stat_status_valid => sig_wsc2stat_status_valid
     );
-I_WR_STATUS_CNTLR: entity work.design_1_axi_dma_0_0_axi_datamover_wr_status_cntl
+I_WR_STATUS_CNTLR: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_wr_status_cntl
      port map (
       D(30 downto 0) => sig_wsc2stat_status(34 downto 4),
       FIFO_Full_reg => I_WR_STATUS_CNTLR_n_0,
@@ -74472,7 +74378,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_axi_dma_0_0_axi_datamover is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover is
   port (
     m_axis_mm2s_tvalid : out STD_LOGIC;
     sig_rst2all_stop_request : out STD_LOGIC;
@@ -74543,13 +74449,11 @@ entity design_1_axi_dma_0_0_axi_datamover is
     m_axi_s2mm_awready : in STD_LOGIC;
     s_axis_s2mm_tkeep : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_dma_0_0_axi_datamover : entity is "axi_datamover";
-end design_1_axi_dma_0_0_axi_datamover;
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover;
 
-architecture STRUCTURE of design_1_axi_dma_0_0_axi_datamover is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover is
 begin
-\GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER\: entity work.design_1_axi_dma_0_0_axi_datamover_mm2s_full_wrap
+\GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER\: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_mm2s_full_wrap
      port map (
       D(91 downto 0) => D(91 downto 0),
       E(0) => E(0),
@@ -74583,7 +74487,7 @@ begin
       sig_rst2all_stop_request => sig_rst2all_stop_request,
       sig_s_h_halt_reg_reg => sig_s_h_halt_reg_reg
     );
-\GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER\: entity work.design_1_axi_dma_0_0_axi_datamover_s2mm_full_wrap
+\GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER\: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover_s2mm_full_wrap
      port map (
       \USE_SINGLE_REG.sig_regfifo_dout_reg_reg[34]\ => \USE_SINGLE_REG.sig_regfifo_dout_reg_reg[34]\,
       \USE_SINGLE_REG.sig_regfifo_dout_reg_reg[98]\(91 downto 0) => \USE_SINGLE_REG.sig_regfifo_dout_reg_reg[98]\(91 downto 0),
@@ -74628,7 +74532,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_axi_dma_0_0_axi_dma is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma is
   port (
     s_axi_lite_aclk : in STD_LOGIC;
     m_axi_sg_aclk : in STD_LOGIC;
@@ -74748,78 +74652,76 @@ entity design_1_axi_dma_0_0_axi_dma is
     axi_dma_tstvec : out STD_LOGIC_VECTOR ( 31 downto 0 )
   );
   attribute C_DLYTMR_RESOLUTION : integer;
-  attribute C_DLYTMR_RESOLUTION of design_1_axi_dma_0_0_axi_dma : entity is 125;
+  attribute C_DLYTMR_RESOLUTION of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma : entity is 125;
   attribute C_ENABLE_MULTI_CHANNEL : integer;
-  attribute C_ENABLE_MULTI_CHANNEL of design_1_axi_dma_0_0_axi_dma : entity is 0;
+  attribute C_ENABLE_MULTI_CHANNEL of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma : entity is 0;
   attribute C_FAMILY : string;
-  attribute C_FAMILY of design_1_axi_dma_0_0_axi_dma : entity is "zynq";
+  attribute C_FAMILY of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma : entity is "zynq";
   attribute C_INCLUDE_MM2S : integer;
-  attribute C_INCLUDE_MM2S of design_1_axi_dma_0_0_axi_dma : entity is 1;
+  attribute C_INCLUDE_MM2S of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma : entity is 1;
   attribute C_INCLUDE_MM2S_DRE : integer;
-  attribute C_INCLUDE_MM2S_DRE of design_1_axi_dma_0_0_axi_dma : entity is 0;
+  attribute C_INCLUDE_MM2S_DRE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma : entity is 0;
   attribute C_INCLUDE_MM2S_SF : integer;
-  attribute C_INCLUDE_MM2S_SF of design_1_axi_dma_0_0_axi_dma : entity is 1;
+  attribute C_INCLUDE_MM2S_SF of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma : entity is 1;
   attribute C_INCLUDE_S2MM : integer;
-  attribute C_INCLUDE_S2MM of design_1_axi_dma_0_0_axi_dma : entity is 1;
+  attribute C_INCLUDE_S2MM of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma : entity is 1;
   attribute C_INCLUDE_S2MM_DRE : integer;
-  attribute C_INCLUDE_S2MM_DRE of design_1_axi_dma_0_0_axi_dma : entity is 0;
+  attribute C_INCLUDE_S2MM_DRE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma : entity is 0;
   attribute C_INCLUDE_S2MM_SF : integer;
-  attribute C_INCLUDE_S2MM_SF of design_1_axi_dma_0_0_axi_dma : entity is 1;
+  attribute C_INCLUDE_S2MM_SF of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma : entity is 1;
   attribute C_INCLUDE_SG : integer;
-  attribute C_INCLUDE_SG of design_1_axi_dma_0_0_axi_dma : entity is 0;
+  attribute C_INCLUDE_SG of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma : entity is 0;
   attribute C_INCREASE_THROUGHPUT : integer;
-  attribute C_INCREASE_THROUGHPUT of design_1_axi_dma_0_0_axi_dma : entity is 0;
+  attribute C_INCREASE_THROUGHPUT of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma : entity is 0;
   attribute C_INSTANCE : string;
-  attribute C_INSTANCE of design_1_axi_dma_0_0_axi_dma : entity is "axi_dma";
+  attribute C_INSTANCE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma : entity is "axi_dma";
   attribute C_MICRO_DMA : integer;
-  attribute C_MICRO_DMA of design_1_axi_dma_0_0_axi_dma : entity is 0;
+  attribute C_MICRO_DMA of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma : entity is 0;
   attribute C_MM2S_BURST_SIZE : integer;
-  attribute C_MM2S_BURST_SIZE of design_1_axi_dma_0_0_axi_dma : entity is 8;
+  attribute C_MM2S_BURST_SIZE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma : entity is 8;
   attribute C_M_AXIS_MM2S_CNTRL_TDATA_WIDTH : integer;
-  attribute C_M_AXIS_MM2S_CNTRL_TDATA_WIDTH of design_1_axi_dma_0_0_axi_dma : entity is 32;
+  attribute C_M_AXIS_MM2S_CNTRL_TDATA_WIDTH of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma : entity is 32;
   attribute C_M_AXIS_MM2S_TDATA_WIDTH : integer;
-  attribute C_M_AXIS_MM2S_TDATA_WIDTH of design_1_axi_dma_0_0_axi_dma : entity is 16;
+  attribute C_M_AXIS_MM2S_TDATA_WIDTH of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma : entity is 16;
   attribute C_M_AXI_MM2S_ADDR_WIDTH : integer;
-  attribute C_M_AXI_MM2S_ADDR_WIDTH of design_1_axi_dma_0_0_axi_dma : entity is 64;
+  attribute C_M_AXI_MM2S_ADDR_WIDTH of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma : entity is 64;
   attribute C_M_AXI_MM2S_DATA_WIDTH : integer;
-  attribute C_M_AXI_MM2S_DATA_WIDTH of design_1_axi_dma_0_0_axi_dma : entity is 64;
+  attribute C_M_AXI_MM2S_DATA_WIDTH of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma : entity is 64;
   attribute C_M_AXI_S2MM_ADDR_WIDTH : integer;
-  attribute C_M_AXI_S2MM_ADDR_WIDTH of design_1_axi_dma_0_0_axi_dma : entity is 64;
+  attribute C_M_AXI_S2MM_ADDR_WIDTH of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma : entity is 64;
   attribute C_M_AXI_S2MM_DATA_WIDTH : integer;
-  attribute C_M_AXI_S2MM_DATA_WIDTH of design_1_axi_dma_0_0_axi_dma : entity is 64;
+  attribute C_M_AXI_S2MM_DATA_WIDTH of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma : entity is 64;
   attribute C_M_AXI_SG_ADDR_WIDTH : integer;
-  attribute C_M_AXI_SG_ADDR_WIDTH of design_1_axi_dma_0_0_axi_dma : entity is 64;
+  attribute C_M_AXI_SG_ADDR_WIDTH of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma : entity is 64;
   attribute C_M_AXI_SG_DATA_WIDTH : integer;
-  attribute C_M_AXI_SG_DATA_WIDTH of design_1_axi_dma_0_0_axi_dma : entity is 32;
+  attribute C_M_AXI_SG_DATA_WIDTH of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma : entity is 32;
   attribute C_NUM_MM2S_CHANNELS : integer;
-  attribute C_NUM_MM2S_CHANNELS of design_1_axi_dma_0_0_axi_dma : entity is 1;
+  attribute C_NUM_MM2S_CHANNELS of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma : entity is 1;
   attribute C_NUM_S2MM_CHANNELS : integer;
-  attribute C_NUM_S2MM_CHANNELS of design_1_axi_dma_0_0_axi_dma : entity is 1;
+  attribute C_NUM_S2MM_CHANNELS of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma : entity is 1;
   attribute C_PRMRY_IS_ACLK_ASYNC : integer;
-  attribute C_PRMRY_IS_ACLK_ASYNC of design_1_axi_dma_0_0_axi_dma : entity is 0;
+  attribute C_PRMRY_IS_ACLK_ASYNC of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma : entity is 0;
   attribute C_S2MM_BURST_SIZE : integer;
-  attribute C_S2MM_BURST_SIZE of design_1_axi_dma_0_0_axi_dma : entity is 8;
+  attribute C_S2MM_BURST_SIZE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma : entity is 8;
   attribute C_SG_INCLUDE_STSCNTRL_STRM : integer;
-  attribute C_SG_INCLUDE_STSCNTRL_STRM of design_1_axi_dma_0_0_axi_dma : entity is 0;
+  attribute C_SG_INCLUDE_STSCNTRL_STRM of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma : entity is 0;
   attribute C_SG_LENGTH_WIDTH : integer;
-  attribute C_SG_LENGTH_WIDTH of design_1_axi_dma_0_0_axi_dma : entity is 26;
+  attribute C_SG_LENGTH_WIDTH of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma : entity is 26;
   attribute C_SG_USE_STSAPP_LENGTH : integer;
-  attribute C_SG_USE_STSAPP_LENGTH of design_1_axi_dma_0_0_axi_dma : entity is 0;
+  attribute C_SG_USE_STSAPP_LENGTH of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma : entity is 0;
   attribute C_S_AXIS_S2MM_STS_TDATA_WIDTH : integer;
-  attribute C_S_AXIS_S2MM_STS_TDATA_WIDTH of design_1_axi_dma_0_0_axi_dma : entity is 32;
+  attribute C_S_AXIS_S2MM_STS_TDATA_WIDTH of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma : entity is 32;
   attribute C_S_AXIS_S2MM_TDATA_WIDTH : integer;
-  attribute C_S_AXIS_S2MM_TDATA_WIDTH of design_1_axi_dma_0_0_axi_dma : entity is 16;
+  attribute C_S_AXIS_S2MM_TDATA_WIDTH of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma : entity is 16;
   attribute C_S_AXI_LITE_ADDR_WIDTH : integer;
-  attribute C_S_AXI_LITE_ADDR_WIDTH of design_1_axi_dma_0_0_axi_dma : entity is 10;
+  attribute C_S_AXI_LITE_ADDR_WIDTH of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma : entity is 10;
   attribute C_S_AXI_LITE_DATA_WIDTH : integer;
-  attribute C_S_AXI_LITE_DATA_WIDTH of design_1_axi_dma_0_0_axi_dma : entity is 32;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_dma_0_0_axi_dma : entity is "axi_dma";
+  attribute C_S_AXI_LITE_DATA_WIDTH of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma : entity is 32;
   attribute downgradeipidentifiedwarnings : string;
-  attribute downgradeipidentifiedwarnings of design_1_axi_dma_0_0_axi_dma : entity is "yes";
-end design_1_axi_dma_0_0_axi_dma;
+  attribute downgradeipidentifiedwarnings of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma : entity is "yes";
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma;
 
-architecture STRUCTURE of design_1_axi_dma_0_0_axi_dma is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma is
   signal \<const0>\ : STD_LOGIC;
   signal \<const1>\ : STD_LOGIC;
   signal \GEN_MM2S_DMA_CONTROL.GEN_SIMPLE_DMA_MODE.I_MM2S_SMPL_SM/cmnds_queued\ : STD_LOGIC;
@@ -75294,7 +75196,7 @@ GND: unisim.vcomponents.GND
      port map (
       G => \<const0>\
     );
-\INCLUDE_MM2S_SOF_EOF_GENERATOR.I_MM2S_DMA_MNGR\: entity work.design_1_axi_dma_0_0_axi_dma_mm2s_mngr
+\INCLUDE_MM2S_SOF_EOF_GENERATOR.I_MM2S_DMA_MNGR\: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma_mm2s_mngr
      port map (
       D(91 downto 28) => p_3_out(98 downto 35),
       D(27) => p_3_out(33),
@@ -75341,7 +75243,7 @@ GND: unisim.vcomponents.GND
       s_axis_mm2s_cmd_tready => s_axis_mm2s_cmd_tready,
       smpl_cs(1 downto 0) => \GEN_MM2S_DMA_CONTROL.GEN_SIMPLE_DMA_MODE.I_MM2S_SMPL_SM/smpl_cs\(1 downto 0)
     );
-\INCLUDE_MM2S_SOF_EOF_GENERATOR.I_MM2S_SOFEOF_GEN\: entity work.design_1_axi_dma_0_0_axi_dma_sofeof_gen
+\INCLUDE_MM2S_SOF_EOF_GENERATOR.I_MM2S_SOFEOF_GEN\: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma_sofeof_gen
      port map (
       axi_dma_tstvec(1 downto 0) => \^axi_dma_tstvec\(1 downto 0),
       m_axis_mm2s_tlast => \^m_axis_mm2s_tlast\,
@@ -75351,7 +75253,7 @@ GND: unisim.vcomponents.GND
       p_0_in => p_0_in,
       s_axi_lite_aclk => s_axi_lite_aclk
     );
-\INCLUDE_S2MM_SOF_EOF_GENERATOR.I_S2MM_DMA_MNGR\: entity work.design_1_axi_dma_0_0_axi_dma_s2mm_mngr
+\INCLUDE_S2MM_SOF_EOF_GENERATOR.I_S2MM_DMA_MNGR\: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma_s2mm_mngr
      port map (
       D(25 downto 0) => p_2_in(25 downto 0),
       E(0) => \INCLUDE_S2MM_SOF_EOF_GENERATOR.I_S2MM_DMA_MNGR_n_11\,
@@ -75405,7 +75307,7 @@ GND: unisim.vcomponents.GND
       smpl_cs(1 downto 0) => \GEN_S2MM_DMA_CONTROL.GEN_SIMPLE_DMA_MODE.I_S2MM_SMPL_SM/smpl_cs\(1 downto 0),
       smpl_dma_overflow => \GEN_S2MM_DMA_CONTROL.I_S2MM_CMDSTS/smpl_dma_overflow\
     );
-\INCLUDE_S2MM_SOF_EOF_GENERATOR.I_S2MM_SOFEOF_GEN\: entity work.design_1_axi_dma_0_0_axi_dma_sofeof_gen_0
+\INCLUDE_S2MM_SOF_EOF_GENERATOR.I_S2MM_SOFEOF_GEN\: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma_sofeof_gen_0
      port map (
       \GEN_FOR_SYNC.s_last_d1_reg_0\ => I_RST_MODULE_n_20,
       axi_dma_tstvec(1 downto 0) => \^axi_dma_tstvec\(3 downto 2),
@@ -75415,7 +75317,7 @@ GND: unisim.vcomponents.GND
       s_axis_s2mm_tready => \^s_axis_s2mm_tready\,
       s_axis_s2mm_tvalid => s_axis_s2mm_tvalid
     );
-I_AXI_DMA_REG_MODULE: entity work.design_1_axi_dma_0_0_axi_dma_reg_module
+I_AXI_DMA_REG_MODULE: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma_reg_module
      port map (
       D(25 downto 0) => p_2_in(25 downto 0),
       E(0) => \INCLUDE_S2MM_SOF_EOF_GENERATOR.I_S2MM_DMA_MNGR_n_11\,
@@ -75504,7 +75406,7 @@ I_AXI_DMA_REG_MODULE: entity work.design_1_axi_dma_0_0_axi_dma_reg_module
       soft_reset_re0 => \GEN_RESET_FOR_MM2S.RESET_I/soft_reset_re0\,
       \threshold_is_zero__6\ => \GEN_MM2S_REGISTERS.I_MM2S_DMA_REGISTER/threshold_is_zero__6\
     );
-I_PRMRY_DATAMOVER: entity work.design_1_axi_dma_0_0_axi_datamover
+I_PRMRY_DATAMOVER: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_datamover
      port map (
       D(91 downto 28) => p_3_out(98 downto 35),
       D(27) => p_3_out(33),
@@ -75579,7 +75481,7 @@ I_PRMRY_DATAMOVER: entity work.design_1_axi_dma_0_0_axi_datamover
       sts_received_i_reg => I_PRMRY_DATAMOVER_n_19,
       sts_received_i_reg_0(25 downto 0) => p_1_in(25 downto 0)
     );
-I_RST_MODULE: entity work.design_1_axi_dma_0_0_axi_dma_rst_module
+I_RST_MODULE: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma_rst_module
      port map (
       \GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4\ => axi_lite_reset_n,
       \GEN_SYNC_WRITE.axi2ip_wrce_reg[12]\(0) => \GEN_S2MM_REGISTERS.I_S2MM_DMA_REGISTER/dmacr_i\(23),
@@ -75641,7 +75543,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_axi_dma_0_0 is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix is
   port (
     s_axi_lite_aclk : in STD_LOGIC;
     m_axi_mm2s_aclk : in STD_LOGIC;
@@ -75709,16 +75611,16 @@ entity design_1_axi_dma_0_0 is
     axi_dma_tstvec : out STD_LOGIC_VECTOR ( 31 downto 0 )
   );
   attribute NotValidForBitStream : boolean;
-  attribute NotValidForBitStream of design_1_axi_dma_0_0 : entity is true;
+  attribute NotValidForBitStream of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix : entity is true;
   attribute CHECK_LICENSE_TYPE : string;
-  attribute CHECK_LICENSE_TYPE of design_1_axi_dma_0_0 : entity is "design_1_axi_dma_0_0,axi_dma,{}";
+  attribute CHECK_LICENSE_TYPE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix : entity is "design_1_axi_dma_0_0,axi_dma,{}";
   attribute downgradeipidentifiedwarnings : string;
-  attribute downgradeipidentifiedwarnings of design_1_axi_dma_0_0 : entity is "yes";
+  attribute downgradeipidentifiedwarnings of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix : entity is "yes";
   attribute x_core_info : string;
-  attribute x_core_info of design_1_axi_dma_0_0 : entity is "axi_dma,Vivado 2019.1";
-end design_1_axi_dma_0_0;
+  attribute x_core_info of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix : entity is "axi_dma,Vivado 2019.1";
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix;
 
-architecture STRUCTURE of design_1_axi_dma_0_0 is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix is
   signal NLW_U0_m_axi_sg_arvalid_UNCONNECTED : STD_LOGIC;
   signal NLW_U0_m_axi_sg_awvalid_UNCONNECTED : STD_LOGIC;
   signal NLW_U0_m_axi_sg_bready_UNCONNECTED : STD_LOGIC;
@@ -75825,14 +75727,14 @@ architecture STRUCTURE of design_1_axi_dma_0_0 is
   attribute x_interface_parameter : string;
   attribute x_interface_parameter of axi_resetn : signal is "XIL_INTERFACENAME AXI_RESETN, POLARITY ACTIVE_LOW, INSERT_VIP 0";
   attribute x_interface_info of m_axi_mm2s_aclk : signal is "xilinx.com:signal:clock:1.0 M_AXI_MM2S_CLK CLK";
-  attribute x_interface_parameter of m_axi_mm2s_aclk : signal is "XIL_INTERFACENAME M_AXI_MM2S_CLK, ASSOCIATED_BUSIF M_AXI_MM2S:M_AXIS_MM2S:M_AXIS_CNTRL, ASSOCIATED_RESET mm2s_prmry_reset_out_n:mm2s_cntrl_reset_out_n, FREQ_HZ 50000000, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0";
+  attribute x_interface_parameter of m_axi_mm2s_aclk : signal is "XIL_INTERFACENAME M_AXI_MM2S_CLK, ASSOCIATED_BUSIF M_AXI_MM2S:M_AXIS_MM2S:M_AXIS_CNTRL, ASSOCIATED_RESET mm2s_prmry_reset_out_n:mm2s_cntrl_reset_out_n, FREQ_HZ 125000000, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0";
   attribute x_interface_info of m_axi_mm2s_arready : signal is "xilinx.com:interface:aximm:1.0 M_AXI_MM2S ARREADY";
   attribute x_interface_info of m_axi_mm2s_arvalid : signal is "xilinx.com:interface:aximm:1.0 M_AXI_MM2S ARVALID";
   attribute x_interface_info of m_axi_mm2s_rlast : signal is "xilinx.com:interface:aximm:1.0 M_AXI_MM2S RLAST";
   attribute x_interface_info of m_axi_mm2s_rready : signal is "xilinx.com:interface:aximm:1.0 M_AXI_MM2S RREADY";
   attribute x_interface_info of m_axi_mm2s_rvalid : signal is "xilinx.com:interface:aximm:1.0 M_AXI_MM2S RVALID";
   attribute x_interface_info of m_axi_s2mm_aclk : signal is "xilinx.com:signal:clock:1.0 M_AXI_S2MM_CLK CLK";
-  attribute x_interface_parameter of m_axi_s2mm_aclk : signal is "XIL_INTERFACENAME M_AXI_S2MM_CLK, ASSOCIATED_BUSIF M_AXI_S2MM:S_AXIS_S2MM:S_AXIS_STS, ASSOCIATED_RESET s2mm_prmry_reset_out_n:s2mm_sts_reset_out_n, FREQ_HZ 50000000, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0";
+  attribute x_interface_parameter of m_axi_s2mm_aclk : signal is "XIL_INTERFACENAME M_AXI_S2MM_CLK, ASSOCIATED_BUSIF M_AXI_S2MM:S_AXIS_S2MM:S_AXIS_STS, ASSOCIATED_RESET s2mm_prmry_reset_out_n:s2mm_sts_reset_out_n, FREQ_HZ 125000000, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0";
   attribute x_interface_info of m_axi_s2mm_awready : signal is "xilinx.com:interface:aximm:1.0 M_AXI_S2MM AWREADY";
   attribute x_interface_info of m_axi_s2mm_awvalid : signal is "xilinx.com:interface:aximm:1.0 M_AXI_S2MM AWVALID";
   attribute x_interface_info of m_axi_s2mm_bready : signal is "xilinx.com:interface:aximm:1.0 M_AXI_S2MM BREADY";
@@ -75852,12 +75754,12 @@ architecture STRUCTURE of design_1_axi_dma_0_0 is
   attribute x_interface_info of s2mm_prmry_reset_out_n : signal is "xilinx.com:signal:reset:1.0 S2MM_PRMRY_RESET_OUT_N RST";
   attribute x_interface_parameter of s2mm_prmry_reset_out_n : signal is "XIL_INTERFACENAME S2MM_PRMRY_RESET_OUT_N, POLARITY ACTIVE_LOW, INSERT_VIP 0";
   attribute x_interface_info of s_axi_lite_aclk : signal is "xilinx.com:signal:clock:1.0 S_AXI_LITE_ACLK CLK";
-  attribute x_interface_parameter of s_axi_lite_aclk : signal is "XIL_INTERFACENAME S_AXI_LITE_ACLK, ASSOCIATED_BUSIF S_AXI_LITE:M_AXI, ASSOCIATED_RESET axi_resetn, FREQ_HZ 50000000, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0";
+  attribute x_interface_parameter of s_axi_lite_aclk : signal is "XIL_INTERFACENAME S_AXI_LITE_ACLK, ASSOCIATED_BUSIF S_AXI_LITE:M_AXI, ASSOCIATED_RESET axi_resetn, FREQ_HZ 125000000, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0";
   attribute x_interface_info of s_axi_lite_arready : signal is "xilinx.com:interface:aximm:1.0 S_AXI_LITE ARREADY";
   attribute x_interface_info of s_axi_lite_arvalid : signal is "xilinx.com:interface:aximm:1.0 S_AXI_LITE ARVALID";
   attribute x_interface_info of s_axi_lite_awready : signal is "xilinx.com:interface:aximm:1.0 S_AXI_LITE AWREADY";
   attribute x_interface_info of s_axi_lite_awvalid : signal is "xilinx.com:interface:aximm:1.0 S_AXI_LITE AWVALID";
-  attribute x_interface_parameter of s_axi_lite_awvalid : signal is "XIL_INTERFACENAME S_AXI_LITE, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 50000000, ID_WIDTH 0, ADDR_WIDTH 10, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 0, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 0, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 2, NUM_WRITE_OUTSTANDING 2, MAX_BURST_LENGTH 1, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0";
+  attribute x_interface_parameter of s_axi_lite_awvalid : signal is "XIL_INTERFACENAME S_AXI_LITE, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 125000000, ID_WIDTH 0, ADDR_WIDTH 10, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 0, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 0, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 2, NUM_WRITE_OUTSTANDING 2, MAX_BURST_LENGTH 1, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0";
   attribute x_interface_info of s_axi_lite_bready : signal is "xilinx.com:interface:aximm:1.0 S_AXI_LITE BREADY";
   attribute x_interface_info of s_axi_lite_bvalid : signal is "xilinx.com:interface:aximm:1.0 S_AXI_LITE BVALID";
   attribute x_interface_info of s_axi_lite_rready : signal is "xilinx.com:interface:aximm:1.0 S_AXI_LITE RREADY";
@@ -75868,7 +75770,7 @@ architecture STRUCTURE of design_1_axi_dma_0_0 is
   attribute x_interface_info of s_axis_s2mm_tready : signal is "xilinx.com:interface:axis:1.0 S_AXIS_S2MM TREADY";
   attribute x_interface_info of s_axis_s2mm_tvalid : signal is "xilinx.com:interface:axis:1.0 S_AXIS_S2MM TVALID";
   attribute x_interface_info of m_axi_mm2s_araddr : signal is "xilinx.com:interface:aximm:1.0 M_AXI_MM2S ARADDR";
-  attribute x_interface_parameter of m_axi_mm2s_araddr : signal is "XIL_INTERFACENAME M_AXI_MM2S, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 16, DATA_WIDTH 64, PROTOCOL AXI4, FREQ_HZ 50000000, ID_WIDTH 0, ADDR_WIDTH 64, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_ONLY, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 0, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 0, HAS_BRESP 0, HAS_RRESP 1, NUM_WRITE_OUTSTANDING 2, MAX_BURST_LENGTH 8, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0";
+  attribute x_interface_parameter of m_axi_mm2s_araddr : signal is "XIL_INTERFACENAME M_AXI_MM2S, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 16, DATA_WIDTH 64, PROTOCOL AXI4, FREQ_HZ 125000000, ID_WIDTH 0, ADDR_WIDTH 64, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_ONLY, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 0, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 0, HAS_BRESP 0, HAS_RRESP 1, NUM_WRITE_OUTSTANDING 2, MAX_BURST_LENGTH 8, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0";
   attribute x_interface_info of m_axi_mm2s_arburst : signal is "xilinx.com:interface:aximm:1.0 M_AXI_MM2S ARBURST";
   attribute x_interface_info of m_axi_mm2s_arcache : signal is "xilinx.com:interface:aximm:1.0 M_AXI_MM2S ARCACHE";
   attribute x_interface_info of m_axi_mm2s_arlen : signal is "xilinx.com:interface:aximm:1.0 M_AXI_MM2S ARLEN";
@@ -75877,7 +75779,7 @@ architecture STRUCTURE of design_1_axi_dma_0_0 is
   attribute x_interface_info of m_axi_mm2s_rdata : signal is "xilinx.com:interface:aximm:1.0 M_AXI_MM2S RDATA";
   attribute x_interface_info of m_axi_mm2s_rresp : signal is "xilinx.com:interface:aximm:1.0 M_AXI_MM2S RRESP";
   attribute x_interface_info of m_axi_s2mm_awaddr : signal is "xilinx.com:interface:aximm:1.0 M_AXI_S2MM AWADDR";
-  attribute x_interface_parameter of m_axi_s2mm_awaddr : signal is "XIL_INTERFACENAME M_AXI_S2MM, SUPPORTS_NARROW_BURST 0, NUM_WRITE_OUTSTANDING 16, DATA_WIDTH 64, PROTOCOL AXI4, FREQ_HZ 50000000, ID_WIDTH 0, ADDR_WIDTH 64, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE WRITE_ONLY, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 0, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 0, NUM_READ_OUTSTANDING 2, MAX_BURST_LENGTH 8, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0";
+  attribute x_interface_parameter of m_axi_s2mm_awaddr : signal is "XIL_INTERFACENAME M_AXI_S2MM, SUPPORTS_NARROW_BURST 0, NUM_WRITE_OUTSTANDING 16, DATA_WIDTH 64, PROTOCOL AXI4, FREQ_HZ 125000000, ID_WIDTH 0, ADDR_WIDTH 64, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE WRITE_ONLY, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 0, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 0, NUM_READ_OUTSTANDING 2, MAX_BURST_LENGTH 8, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0";
   attribute x_interface_info of m_axi_s2mm_awburst : signal is "xilinx.com:interface:aximm:1.0 M_AXI_S2MM AWBURST";
   attribute x_interface_info of m_axi_s2mm_awcache : signal is "xilinx.com:interface:aximm:1.0 M_AXI_S2MM AWCACHE";
   attribute x_interface_info of m_axi_s2mm_awlen : signal is "xilinx.com:interface:aximm:1.0 M_AXI_S2MM AWLEN";
@@ -75887,7 +75789,7 @@ architecture STRUCTURE of design_1_axi_dma_0_0 is
   attribute x_interface_info of m_axi_s2mm_wdata : signal is "xilinx.com:interface:aximm:1.0 M_AXI_S2MM WDATA";
   attribute x_interface_info of m_axi_s2mm_wstrb : signal is "xilinx.com:interface:aximm:1.0 M_AXI_S2MM WSTRB";
   attribute x_interface_info of m_axis_mm2s_tdata : signal is "xilinx.com:interface:axis:1.0 M_AXIS_MM2S TDATA";
-  attribute x_interface_parameter of m_axis_mm2s_tdata : signal is "XIL_INTERFACENAME M_AXIS_MM2S, TDATA_NUM_BYTES 2, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 50000000, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0, HAS_BURST 0";
+  attribute x_interface_parameter of m_axis_mm2s_tdata : signal is "XIL_INTERFACENAME M_AXIS_MM2S, TDATA_NUM_BYTES 2, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 125000000, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0, HAS_BURST 0";
   attribute x_interface_info of m_axis_mm2s_tkeep : signal is "xilinx.com:interface:axis:1.0 M_AXIS_MM2S TKEEP";
   attribute x_interface_info of s_axi_lite_araddr : signal is "xilinx.com:interface:aximm:1.0 S_AXI_LITE ARADDR";
   attribute x_interface_info of s_axi_lite_awaddr : signal is "xilinx.com:interface:aximm:1.0 S_AXI_LITE AWADDR";
@@ -75896,10 +75798,10 @@ architecture STRUCTURE of design_1_axi_dma_0_0 is
   attribute x_interface_info of s_axi_lite_rresp : signal is "xilinx.com:interface:aximm:1.0 S_AXI_LITE RRESP";
   attribute x_interface_info of s_axi_lite_wdata : signal is "xilinx.com:interface:aximm:1.0 S_AXI_LITE WDATA";
   attribute x_interface_info of s_axis_s2mm_tdata : signal is "xilinx.com:interface:axis:1.0 S_AXIS_S2MM TDATA";
-  attribute x_interface_parameter of s_axis_s2mm_tdata : signal is "XIL_INTERFACENAME S_AXIS_S2MM, TDATA_NUM_BYTES 2, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 50000000, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0";
+  attribute x_interface_parameter of s_axis_s2mm_tdata : signal is "XIL_INTERFACENAME S_AXIS_S2MM, TDATA_NUM_BYTES 2, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 125000000, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0";
   attribute x_interface_info of s_axis_s2mm_tkeep : signal is "xilinx.com:interface:axis:1.0 S_AXIS_S2MM TKEEP";
 begin
-U0: entity work.design_1_axi_dma_0_0_axi_dma
+U0: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_dma
      port map (
       axi_dma_tstvec(31 downto 0) => axi_dma_tstvec(31 downto 0),
       axi_resetn => axi_resetn,

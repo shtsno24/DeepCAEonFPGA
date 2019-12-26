@@ -1,10 +1,10 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-// Date        : Thu Dec 26 16:31:24 2019
+// Date        : Fri Dec 27 08:36:45 2019
 // Host        : masudalab-ubuntu running 64-bit Ubuntu 18.04.3 LTS
-// Command     : write_verilog -force -mode funcsim -rename_top design_1_auto_pc_0 -prefix
-//               design_1_auto_pc_0_ design_1_auto_pc_0_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
+//               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ design_1_auto_pc_0_sim_netlist.v
 // Design      : design_1_auto_pc_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -21,7 +21,7 @@
 (* P_AXI4 = "0" *) (* P_AXILITE = "2" *) (* P_AXILITE_SIZE = "3'b010" *) 
 (* P_CONVERSION = "2" *) (* P_DECERR = "2'b11" *) (* P_INCR = "2'b01" *) 
 (* P_PROTECTION = "1" *) (* P_SLVERR = "2'b10" *) 
-module design_1_auto_pc_0_axi_protocol_converter_v2_1_19_axi_protocol_converter
+module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_protocol_converter_v2_1_19_axi_protocol_converter
    (aclk,
     aresetn,
     s_axi_awid,
@@ -359,7 +359,7 @@ module design_1_auto_pc_0_axi_protocol_converter_v2_1_19_axi_protocol_converter
        (.G(\<const0> ));
   VCC VCC
        (.P(\<const1> ));
-  design_1_auto_pc_0_axi_protocol_converter_v2_1_19_b2s \gen_axilite.gen_b2s_conv.axilite_b2s 
+  decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_protocol_converter_v2_1_19_b2s \gen_axilite.gen_b2s_conv.axilite_b2s 
        (.Q({m_axi_awprot,m_axi_awaddr[31:12]}),
         .aclk(aclk),
         .aresetn(aresetn),
@@ -400,7 +400,7 @@ module design_1_auto_pc_0_axi_protocol_converter_v2_1_19_axi_protocol_converter
         .s_axi_rvalid(s_axi_rvalid));
 endmodule
 
-module design_1_auto_pc_0_axi_protocol_converter_v2_1_19_b2s
+module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_protocol_converter_v2_1_19_b2s
    (s_axi_awready,
     s_axi_arready,
     Q,
@@ -627,7 +627,7 @@ module design_1_auto_pc_0_axi_protocol_converter_v2_1_19_b2s
   wire si_rs_rvalid;
   wire [3:0]wrap_cnt;
 
-  design_1_auto_pc_0_axi_protocol_converter_v2_1_19_b2s_ar_channel \RD.ar_channel_0 
+  decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_protocol_converter_v2_1_19_b2s_ar_channel \RD.ar_channel_0 
        (.D(\cmd_translator_0/wrap_cmd_0/wrap_second_len ),
         .E(\ar.ar_pipe/p_1_in ),
         .\FSM_sequential_state_reg[1] (\RD.ar_channel_0_n_8 ),
@@ -665,7 +665,7 @@ module design_1_auto_pc_0_axi_protocol_converter_v2_1_19_b2s
         .\wrap_boundary_axaddr_r_reg[6] ({SI_REG_n_177,SI_REG_n_178,SI_REG_n_179,SI_REG_n_180,SI_REG_n_181,SI_REG_n_182,SI_REG_n_183}),
         .\wrap_cnt_r_reg[3] ({SI_REG_n_16,SI_REG_n_17,SI_REG_n_18,SI_REG_n_19}),
         .\wrap_second_len_r_reg[3] (\cmd_translator_0/wrap_cmd_0/wrap_second_len_r ));
-  design_1_auto_pc_0_axi_protocol_converter_v2_1_19_b2s_r_channel \RD.r_channel_0 
+  decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_protocol_converter_v2_1_19_b2s_r_channel \RD.r_channel_0 
        (.D(s_arid_r),
         .aclk(aclk),
         .areset_d1(areset_d1),
@@ -679,7 +679,7 @@ module design_1_auto_pc_0_axi_protocol_converter_v2_1_19_b2s
         .r_rlast(r_rlast),
         .si_rs_rready(si_rs_rready),
         .si_rs_rvalid(si_rs_rvalid));
-  design_1_auto_pc_0_axi_register_slice_v2_1_19_axi_register_slice SI_REG
+  decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_register_slice_v2_1_19_axi_register_slice SI_REG
        (.D(wrap_cnt),
         .E(\aw.aw_pipe/p_1_in ),
         .O({SI_REG_n_44,SI_REG_n_45,SI_REG_n_46,SI_REG_n_47}),
@@ -762,7 +762,7 @@ module design_1_auto_pc_0_axi_protocol_converter_v2_1_19_b2s
         .\wrap_second_len_r_reg[1] ({SI_REG_n_16,SI_REG_n_17,SI_REG_n_18,SI_REG_n_19}),
         .\wrap_second_len_r_reg[3] (\cmd_translator_0/wrap_cmd_0/wrap_second_len ),
         .\wrap_second_len_r_reg[3]_0 (\cmd_translator_0/wrap_cmd_0/wrap_second_len_r ));
-  design_1_auto_pc_0_axi_protocol_converter_v2_1_19_b2s_aw_channel \WR.aw_channel_0 
+  decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_protocol_converter_v2_1_19_b2s_aw_channel \WR.aw_channel_0 
        (.D(\cmd_translator_0/wrap_cmd_0/axaddr_offset_1 ),
         .E(\aw.aw_pipe/p_1_in ),
         .Q(\aw_cmd_fsm_0/state ),
@@ -794,7 +794,7 @@ module design_1_auto_pc_0_axi_protocol_converter_v2_1_19_b2s
         .\wrap_cnt_r_reg[3] (wrap_cnt),
         .\wrap_second_len_r_reg[3] (\cmd_translator_0/wrap_cmd_0/wrap_second_len_r_2 ),
         .\wrap_second_len_r_reg[3]_0 (\cmd_translator_0/wrap_cmd_0/wrap_second_len_0 ));
-  design_1_auto_pc_0_axi_protocol_converter_v2_1_19_b2s_b_channel \WR.b_channel_0 
+  decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_protocol_converter_v2_1_19_b2s_b_channel \WR.b_channel_0 
        (.aclk(aclk),
         .areset_d1(areset_d1),
         .b_full(b_full),
@@ -823,7 +823,7 @@ module design_1_auto_pc_0_axi_protocol_converter_v2_1_19_b2s
         .R(1'b0));
 endmodule
 
-module design_1_auto_pc_0_axi_protocol_converter_v2_1_19_b2s_ar_channel
+module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_protocol_converter_v2_1_19_b2s_ar_channel
    (sel_first,
     sel_first_reg,
     Q,
@@ -984,7 +984,7 @@ module design_1_auto_pc_0_axi_protocol_converter_v2_1_19_b2s_ar_channel
   wire [3:0]\wrap_second_len_r_reg[3] ;
 
   assign m_axi_araddr_0_sn_1 = m_axi_araddr_0_sp_1;
-  design_1_auto_pc_0_axi_protocol_converter_v2_1_19_b2s_rd_cmd_fsm ar_cmd_fsm_0
+  decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_protocol_converter_v2_1_19_b2s_rd_cmd_fsm ar_cmd_fsm_0
        (.D({ar_cmd_fsm_0_n_11,ar_cmd_fsm_0_n_12,ar_cmd_fsm_0_n_13,ar_cmd_fsm_0_n_14,ar_cmd_fsm_0_n_15,ar_cmd_fsm_0_n_16,ar_cmd_fsm_0_n_17,ar_cmd_fsm_0_n_18,ar_cmd_fsm_0_n_19,ar_cmd_fsm_0_n_20,ar_cmd_fsm_0_n_21,ar_cmd_fsm_0_n_22}),
         .E(\FSM_sequential_state_reg[1] ),
         .\FSM_sequential_state_reg[1]_0 (ar_cmd_fsm_0_n_0),
@@ -1017,7 +1017,7 @@ module design_1_auto_pc_0_axi_protocol_converter_v2_1_19_b2s_ar_channel
         .sel_first_reg_0(sel_first_reg),
         .sel_first_reg_1(cmd_translator_0_n_0),
         .si_rs_arvalid(si_rs_arvalid));
-  design_1_auto_pc_0_axi_protocol_converter_v2_1_19_b2s_cmd_translator_1 cmd_translator_0
+  decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_protocol_converter_v2_1_19_b2s_cmd_translator_1 cmd_translator_0
        (.D(D),
         .E(\FSM_sequential_state_reg[1] ),
         .O({cmd_translator_0_n_3,cmd_translator_0_n_4,cmd_translator_0_n_5,cmd_translator_0_n_6}),
@@ -1135,7 +1135,7 @@ module design_1_auto_pc_0_axi_protocol_converter_v2_1_19_b2s_ar_channel
         .R(1'b0));
 endmodule
 
-module design_1_auto_pc_0_axi_protocol_converter_v2_1_19_b2s_aw_channel
+module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_protocol_converter_v2_1_19_b2s_aw_channel
    (sel_first_0,
     sel_first,
     Q,
@@ -1246,7 +1246,7 @@ module design_1_auto_pc_0_axi_protocol_converter_v2_1_19_b2s_aw_channel
   wire [3:0]\wrap_second_len_r_reg[3]_0 ;
 
   assign m_axi_awaddr_0_sn_1 = m_axi_awaddr_0_sp_1;
-  design_1_auto_pc_0_axi_protocol_converter_v2_1_19_b2s_wr_cmd_fsm aw_cmd_fsm_0
+  decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_protocol_converter_v2_1_19_b2s_wr_cmd_fsm aw_cmd_fsm_0
        (.D({aw_cmd_fsm_0_n_8,aw_cmd_fsm_0_n_9}),
         .E(\state_reg[1] ),
         .Q(Q),
@@ -1274,7 +1274,7 @@ module design_1_auto_pc_0_axi_protocol_converter_v2_1_19_b2s_aw_channel
         .sel_first_reg_1(sel_first_0),
         .sel_first_reg_2(cmd_translator_0_n_0),
         .si_rs_awvalid(si_rs_awvalid));
-  design_1_auto_pc_0_axi_protocol_converter_v2_1_19_b2s_cmd_translator cmd_translator_0
+  decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_protocol_converter_v2_1_19_b2s_cmd_translator cmd_translator_0
        (.D(D),
         .E(\state_reg[1] ),
         .Q(cmd_translator_0_n_6),
@@ -1409,7 +1409,7 @@ module design_1_auto_pc_0_axi_protocol_converter_v2_1_19_b2s_aw_channel
         .R(1'b0));
 endmodule
 
-module design_1_auto_pc_0_axi_protocol_converter_v2_1_19_b2s_b_channel
+module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_protocol_converter_v2_1_19_b2s_b_channel
    (si_rs_bvalid,
     b_full,
     cnt_read,
@@ -1466,7 +1466,7 @@ module design_1_auto_pc_0_axi_protocol_converter_v2_1_19_b2s_b_channel
   wire si_rs_bready;
   wire si_rs_bvalid;
 
-  design_1_auto_pc_0_axi_protocol_converter_v2_1_19_b2s_simple_fifo bid_fifo_0
+  decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_protocol_converter_v2_1_19_b2s_simple_fifo bid_fifo_0
        (.Q(bresp_cnt_reg),
         .SR(s_bresp_acc0),
         .aclk(aclk),
@@ -1605,7 +1605,7 @@ module design_1_auto_pc_0_axi_protocol_converter_v2_1_19_b2s_b_channel
         .D(p_0_in[7]),
         .Q(bresp_cnt_reg[7]),
         .R(s_bresp_acc0));
-  design_1_auto_pc_0_axi_protocol_converter_v2_1_19_b2s_simple_fifo__parameterized0 bresp_fifo_0
+  decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_protocol_converter_v2_1_19_b2s_simple_fifo__parameterized0 bresp_fifo_0
        (.aclk(aclk),
         .areset_d1(areset_d1),
         .bresp_empty(bresp_empty),
@@ -1679,7 +1679,7 @@ module design_1_auto_pc_0_axi_protocol_converter_v2_1_19_b2s_b_channel
         .R(areset_d1));
 endmodule
 
-module design_1_auto_pc_0_axi_protocol_converter_v2_1_19_b2s_cmd_translator
+module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_protocol_converter_v2_1_19_b2s_cmd_translator
    (sel_first_reg_0,
     sel_first_reg_1,
     sel_first,
@@ -1798,7 +1798,7 @@ module design_1_auto_pc_0_axi_protocol_converter_v2_1_19_b2s_cmd_translator
   wire [3:0]\wrap_second_len_r_reg[3]_0 ;
 
   assign m_axi_awaddr_0_sn_1 = m_axi_awaddr_0_sp_1;
-  design_1_auto_pc_0_axi_protocol_converter_v2_1_19_b2s_incr_cmd incr_cmd_0
+  decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_protocol_converter_v2_1_19_b2s_incr_cmd incr_cmd_0
        (.E(E),
         .Q(axaddr_wrap),
         .S(S),
@@ -1850,7 +1850,7 @@ module design_1_auto_pc_0_axi_protocol_converter_v2_1_19_b2s_cmd_translator
         .D(sel_first_i),
         .Q(sel_first_reg_0),
         .R(1'b0));
-  design_1_auto_pc_0_axi_protocol_converter_v2_1_19_b2s_wrap_cmd wrap_cmd_0
+  decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_protocol_converter_v2_1_19_b2s_wrap_cmd wrap_cmd_0
        (.D(D),
         .E(E),
         .Q({\axaddr_wrap_reg[11] ,axaddr_wrap}),
@@ -1877,7 +1877,7 @@ module design_1_auto_pc_0_axi_protocol_converter_v2_1_19_b2s_cmd_translator
 endmodule
 
 (* ORIG_REF_NAME = "axi_protocol_converter_v2_1_19_b2s_cmd_translator" *) 
-module design_1_auto_pc_0_axi_protocol_converter_v2_1_19_b2s_cmd_translator_1
+module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_protocol_converter_v2_1_19_b2s_cmd_translator_1
    (sel_first_reg_0,
     sel_first_reg_1,
     sel_first_reg_2,
@@ -2035,7 +2035,7 @@ module design_1_auto_pc_0_axi_protocol_converter_v2_1_19_b2s_cmd_translator_1
         .I1(\axlen_cnt_reg[3] [15]),
         .I2(s_axburst_eq0),
         .O(next_pending));
-  design_1_auto_pc_0_axi_protocol_converter_v2_1_19_b2s_incr_cmd_2 incr_cmd_0
+  decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_protocol_converter_v2_1_19_b2s_incr_cmd_2 incr_cmd_0
        (.E(E),
         .Q({wrap_cmd_0_n_7,wrap_cmd_0_n_8,wrap_cmd_0_n_9,wrap_cmd_0_n_10,wrap_cmd_0_n_11,wrap_cmd_0_n_12,wrap_cmd_0_n_13,wrap_cmd_0_n_14,wrap_cmd_0_n_15,wrap_cmd_0_n_16,wrap_cmd_0_n_17}),
         .S(S),
@@ -2092,7 +2092,7 @@ module design_1_auto_pc_0_axi_protocol_converter_v2_1_19_b2s_cmd_translator_1
         .D(sel_first_i),
         .Q(sel_first_reg_0),
         .R(1'b0));
-  design_1_auto_pc_0_axi_protocol_converter_v2_1_19_b2s_wrap_cmd_3 wrap_cmd_0
+  decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_protocol_converter_v2_1_19_b2s_wrap_cmd_3 wrap_cmd_0
        (.D(D),
         .E(E),
         .O(O),
@@ -2122,7 +2122,7 @@ module design_1_auto_pc_0_axi_protocol_converter_v2_1_19_b2s_cmd_translator_1
         .\wrap_second_len_r_reg[3]_0 (\wrap_second_len_r_reg[3] ));
 endmodule
 
-module design_1_auto_pc_0_axi_protocol_converter_v2_1_19_b2s_incr_cmd
+module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_protocol_converter_v2_1_19_b2s_incr_cmd
    (incr_next_pending,
     sel_first_reg_0,
     \axaddr_incr_reg[11]_0 ,
@@ -2860,7 +2860,7 @@ module design_1_auto_pc_0_axi_protocol_converter_v2_1_19_b2s_incr_cmd
 endmodule
 
 (* ORIG_REF_NAME = "axi_protocol_converter_v2_1_19_b2s_incr_cmd" *) 
-module design_1_auto_pc_0_axi_protocol_converter_v2_1_19_b2s_incr_cmd_2
+module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_protocol_converter_v2_1_19_b2s_incr_cmd_2
    (incr_next_pending,
     sel_first_reg_0,
     \axaddr_incr_reg[11]_0 ,
@@ -3628,7 +3628,7 @@ module design_1_auto_pc_0_axi_protocol_converter_v2_1_19_b2s_incr_cmd_2
         .R(1'b0));
 endmodule
 
-module design_1_auto_pc_0_axi_protocol_converter_v2_1_19_b2s_r_channel
+module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_protocol_converter_v2_1_19_b2s_r_channel
    (r_full,
     m_axi_rready,
     si_rs_rvalid,
@@ -3761,7 +3761,7 @@ module design_1_auto_pc_0_axi_protocol_converter_v2_1_19_b2s_r_channel
         .D(r_rlast),
         .Q(trans_in[0]),
         .R(1'b0));
-  design_1_auto_pc_0_axi_protocol_converter_v2_1_19_b2s_simple_fifo__parameterized1 rd_data_fifo_0
+  decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_protocol_converter_v2_1_19_b2s_simple_fifo__parameterized1 rd_data_fifo_0
        (.E(transaction_fifo_0_n_1),
         .a_full0(a_full0),
         .aclk(aclk),
@@ -3773,7 +3773,7 @@ module design_1_auto_pc_0_axi_protocol_converter_v2_1_19_b2s_r_channel
         .rd_a_full(rd_a_full),
         .rd_en__1(rd_en__1),
         .wr_en0(wr_en0));
-  design_1_auto_pc_0_axi_protocol_converter_v2_1_19_b2s_simple_fifo__parameterized2 transaction_fifo_0
+  decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_protocol_converter_v2_1_19_b2s_simple_fifo__parameterized2 transaction_fifo_0
        (.E(transaction_fifo_0_n_1),
         .a_full0(a_full0),
         .aclk(aclk),
@@ -3789,7 +3789,7 @@ module design_1_auto_pc_0_axi_protocol_converter_v2_1_19_b2s_r_channel
         .wr_en0(wr_en0));
 endmodule
 
-module design_1_auto_pc_0_axi_protocol_converter_v2_1_19_b2s_rd_cmd_fsm
+module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_protocol_converter_v2_1_19_b2s_rd_cmd_fsm
    (\FSM_sequential_state_reg[1]_0 ,
     Q,
     s_ready_i0,
@@ -4178,7 +4178,7 @@ module design_1_auto_pc_0_axi_protocol_converter_v2_1_19_b2s_rd_cmd_fsm
         .O(E));
 endmodule
 
-module design_1_auto_pc_0_axi_protocol_converter_v2_1_19_b2s_simple_fifo
+module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_protocol_converter_v2_1_19_b2s_simple_fifo
    (b_full,
     addr,
     SR,
@@ -4541,7 +4541,7 @@ module design_1_auto_pc_0_axi_protocol_converter_v2_1_19_b2s_simple_fifo
 endmodule
 
 (* ORIG_REF_NAME = "axi_protocol_converter_v2_1_19_b2s_simple_fifo" *) 
-module design_1_auto_pc_0_axi_protocol_converter_v2_1_19_b2s_simple_fifo__parameterized0
+module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_protocol_converter_v2_1_19_b2s_simple_fifo__parameterized0
    (m_axi_bready,
     mhandshake,
     bresp_empty,
@@ -4665,7 +4665,7 @@ module design_1_auto_pc_0_axi_protocol_converter_v2_1_19_b2s_simple_fifo__parame
 endmodule
 
 (* ORIG_REF_NAME = "axi_protocol_converter_v2_1_19_b2s_simple_fifo" *) 
-module design_1_auto_pc_0_axi_protocol_converter_v2_1_19_b2s_simple_fifo__parameterized1
+module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_protocol_converter_v2_1_19_b2s_simple_fifo__parameterized1
    (m_axi_rready,
     wr_en0,
     rd_a_full,
@@ -5251,7 +5251,7 @@ module design_1_auto_pc_0_axi_protocol_converter_v2_1_19_b2s_simple_fifo__parame
 endmodule
 
 (* ORIG_REF_NAME = "axi_protocol_converter_v2_1_19_b2s_simple_fifo" *) 
-module design_1_auto_pc_0_axi_protocol_converter_v2_1_19_b2s_simple_fifo__parameterized2
+module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_protocol_converter_v2_1_19_b2s_simple_fifo__parameterized2
    (r_full,
     E,
     rd_en__1,
@@ -5603,7 +5603,7 @@ module design_1_auto_pc_0_axi_protocol_converter_v2_1_19_b2s_simple_fifo__parame
         .Q31(\NLW_memory_reg[31][9]_srl32_Q31_UNCONNECTED ));
 endmodule
 
-module design_1_auto_pc_0_axi_protocol_converter_v2_1_19_b2s_wr_cmd_fsm
+module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_protocol_converter_v2_1_19_b2s_wr_cmd_fsm
    (m_valid_i_reg,
     next,
     Q,
@@ -5837,7 +5837,7 @@ module design_1_auto_pc_0_axi_protocol_converter_v2_1_19_b2s_wr_cmd_fsm
         .O(E));
 endmodule
 
-module design_1_auto_pc_0_axi_protocol_converter_v2_1_19_b2s_wrap_cmd
+module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_protocol_converter_v2_1_19_b2s_wrap_cmd
    (wrap_next_pending,
     sel_first,
     Q,
@@ -6461,7 +6461,7 @@ module design_1_auto_pc_0_axi_protocol_converter_v2_1_19_b2s_wrap_cmd
 endmodule
 
 (* ORIG_REF_NAME = "axi_protocol_converter_v2_1_19_b2s_wrap_cmd" *) 
-module design_1_auto_pc_0_axi_protocol_converter_v2_1_19_b2s_wrap_cmd_3
+module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_protocol_converter_v2_1_19_b2s_wrap_cmd_3
    (wrap_next_pending,
     sel_first_reg_0,
     O,
@@ -7000,7 +7000,7 @@ module design_1_auto_pc_0_axi_protocol_converter_v2_1_19_b2s_wrap_cmd_3
         .R(1'b0));
 endmodule
 
-module design_1_auto_pc_0_axi_register_slice_v2_1_19_axi_register_slice
+module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_register_slice_v2_1_19_axi_register_slice
    (s_ready_i_reg,
     s_ready_i_reg_0,
     si_rs_awvalid,
@@ -7252,7 +7252,7 @@ module design_1_auto_pc_0_axi_register_slice_v2_1_19_axi_register_slice
   wire [3:0]\wrap_second_len_r_reg[3] ;
   wire [3:0]\wrap_second_len_r_reg[3]_0 ;
 
-  design_1_auto_pc_0_axi_register_slice_v2_1_19_axic_register_slice \ar.ar_pipe 
+  decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_register_slice_v2_1_19_axic_register_slice \ar.ar_pipe 
        (.O(O),
         .Q(\m_payload_i_reg[61]_0 ),
         .aclk(aclk),
@@ -7295,7 +7295,7 @@ module design_1_auto_pc_0_axi_register_slice_v2_1_19_axi_register_slice
         .\wrap_second_len_r_reg[1]_0 (\wrap_second_len_r_reg[3] [1]),
         .\wrap_second_len_r_reg[3] ({\wrap_second_len_r_reg[3] [3:2],\wrap_second_len_r_reg[3] [0]}),
         .\wrap_second_len_r_reg[3]_0 (\wrap_second_len_r_reg[3]_0 ));
-  design_1_auto_pc_0_axi_register_slice_v2_1_19_axic_register_slice_0 \aw.aw_pipe 
+  decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_register_slice_v2_1_19_axic_register_slice_0 \aw.aw_pipe 
        (.D(D),
         .E(E),
         .Q(Q),
@@ -7337,7 +7337,7 @@ module design_1_auto_pc_0_axi_register_slice_v2_1_19_axi_register_slice
         .\wrap_cnt_r_reg[0] (\wrap_cnt_r_reg[0] ),
         .wrap_second_len({wrap_second_len[3:2],wrap_second_len[0]}),
         .\wrap_second_len_r_reg[1] (wrap_second_len[1]));
-  design_1_auto_pc_0_axi_register_slice_v2_1_19_axic_register_slice__parameterized1 \b.b_pipe 
+  decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_register_slice_v2_1_19_axic_register_slice__parameterized1 \b.b_pipe 
        (.aclk(aclk),
         .\m_payload_i_reg[13]_0 (\m_payload_i_reg[13] ),
         .m_valid_i_reg_0(m_valid_i_reg),
@@ -7348,7 +7348,7 @@ module design_1_auto_pc_0_axi_register_slice_v2_1_19_axi_register_slice
         .s_ready_i_reg_1(\aw.aw_pipe_n_1 ),
         .si_rs_bvalid(si_rs_bvalid),
         .\skid_buffer_reg[1]_0 (\skid_buffer_reg[1] ));
-  design_1_auto_pc_0_axi_register_slice_v2_1_19_axic_register_slice__parameterized2 \r.r_pipe 
+  decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_register_slice_v2_1_19_axic_register_slice__parameterized2 \r.r_pipe 
        (.aclk(aclk),
         .\m_payload_i_reg[46]_0 (\m_payload_i_reg[46] ),
         .m_valid_i_reg_0(m_valid_i_reg_0),
@@ -7361,7 +7361,7 @@ module design_1_auto_pc_0_axi_register_slice_v2_1_19_axi_register_slice
         .\skid_buffer_reg[46]_0 (\skid_buffer_reg[46] ));
 endmodule
 
-module design_1_auto_pc_0_axi_register_slice_v2_1_19_axic_register_slice
+module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_register_slice_v2_1_19_axic_register_slice
    (s_ready_i_reg_0,
     m_valid_i_reg_0,
     \aresetn_d_reg[1]_inv_0 ,
@@ -9124,7 +9124,7 @@ module design_1_auto_pc_0_axi_register_slice_v2_1_19_axic_register_slice
 endmodule
 
 (* ORIG_REF_NAME = "axi_register_slice_v2_1_19_axic_register_slice" *) 
-module design_1_auto_pc_0_axi_register_slice_v2_1_19_axic_register_slice_0
+module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_register_slice_v2_1_19_axic_register_slice_0
    (s_ready_i_reg_0,
     \aresetn_d_reg[0]_0 ,
     m_valid_i_reg_0,
@@ -10860,7 +10860,7 @@ module design_1_auto_pc_0_axi_register_slice_v2_1_19_axic_register_slice_0
 endmodule
 
 (* ORIG_REF_NAME = "axi_register_slice_v2_1_19_axic_register_slice" *) 
-module design_1_auto_pc_0_axi_register_slice_v2_1_19_axic_register_slice__parameterized1
+module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_register_slice_v2_1_19_axic_register_slice__parameterized1
    (m_valid_i_reg_0,
     s_ready_i_reg_0,
     \m_payload_i_reg[13]_0 ,
@@ -11245,7 +11245,7 @@ module design_1_auto_pc_0_axi_register_slice_v2_1_19_axic_register_slice__parame
 endmodule
 
 (* ORIG_REF_NAME = "axi_register_slice_v2_1_19_axic_register_slice" *) 
-module design_1_auto_pc_0_axi_register_slice_v2_1_19_axic_register_slice__parameterized2
+module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_register_slice_v2_1_19_axic_register_slice__parameterized2
    (m_valid_i_reg_0,
     s_ready_i_reg_0,
     \m_payload_i_reg[46]_0 ,
@@ -12356,7 +12356,7 @@ endmodule
 
 (* CHECK_LICENSE_TYPE = "design_1_auto_pc_0,axi_protocol_converter_v2_1_19_axi_protocol_converter,{}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* X_CORE_INFO = "axi_protocol_converter_v2_1_19_axi_protocol_converter,Vivado 2019.1" *) 
 (* NotValidForBitStream *)
-module design_1_auto_pc_0
+module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix
    (aclk,
     aresetn,
     s_axi_awid,
@@ -12416,7 +12416,7 @@ module design_1_auto_pc_0
     m_axi_rresp,
     m_axi_rvalid,
     m_axi_rready);
-  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK, FREQ_HZ 50000000, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, ASSOCIATED_BUSIF S_AXI:M_AXI, ASSOCIATED_RESET ARESETN, INSERT_VIP 0" *) input aclk;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK, FREQ_HZ 125000000, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, ASSOCIATED_BUSIF S_AXI:M_AXI, ASSOCIATED_RESET ARESETN, INSERT_VIP 0" *) input aclk;
   (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST, POLARITY ACTIVE_LOW, INSERT_VIP 0, TYPE INTERCONNECT" *) input aresetn;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI AWID" *) input [11:0]s_axi_awid;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI AWADDR" *) input [31:0]s_axi_awaddr;
@@ -12455,7 +12455,7 @@ module design_1_auto_pc_0
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI RRESP" *) output [1:0]s_axi_rresp;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI RLAST" *) output s_axi_rlast;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI RVALID" *) output s_axi_rvalid;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI RREADY" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S_AXI, DATA_WIDTH 32, PROTOCOL AXI3, FREQ_HZ 50000000, ID_WIDTH 12, ADDR_WIDTH 32, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 1, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 1, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 8, NUM_WRITE_OUTSTANDING 8, MAX_BURST_LENGTH 16, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, NUM_READ_THREADS 4, NUM_WRITE_THREADS 4, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) input s_axi_rready;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI RREADY" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S_AXI, DATA_WIDTH 32, PROTOCOL AXI3, FREQ_HZ 125000000, ID_WIDTH 12, ADDR_WIDTH 32, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 1, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 1, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 8, NUM_WRITE_OUTSTANDING 8, MAX_BURST_LENGTH 16, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, NUM_READ_THREADS 4, NUM_WRITE_THREADS 4, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) input s_axi_rready;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI AWADDR" *) output [31:0]m_axi_awaddr;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI AWPROT" *) output [2:0]m_axi_awprot;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI AWVALID" *) output m_axi_awvalid;
@@ -12474,7 +12474,7 @@ module design_1_auto_pc_0
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI RDATA" *) input [31:0]m_axi_rdata;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI RRESP" *) input [1:0]m_axi_rresp;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI RVALID" *) input m_axi_rvalid;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI RREADY" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME M_AXI, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 50000000, ID_WIDTH 0, ADDR_WIDTH 32, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 1, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 8, NUM_WRITE_OUTSTANDING 8, MAX_BURST_LENGTH 1, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, NUM_READ_THREADS 4, NUM_WRITE_THREADS 4, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) output m_axi_rready;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI RREADY" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME M_AXI, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 125000000, ID_WIDTH 0, ADDR_WIDTH 32, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 1, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 8, NUM_WRITE_OUTSTANDING 8, MAX_BURST_LENGTH 1, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, NUM_READ_THREADS 4, NUM_WRITE_THREADS 4, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) output m_axi_rready;
 
   wire aclk;
   wire aresetn;
@@ -12585,7 +12585,7 @@ module design_1_auto_pc_0
   (* P_INCR = "2'b01" *) 
   (* P_PROTECTION = "1" *) 
   (* P_SLVERR = "2'b10" *) 
-  design_1_auto_pc_0_axi_protocol_converter_v2_1_19_axi_protocol_converter inst
+  decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axi_protocol_converter_v2_1_19_axi_protocol_converter inst
        (.aclk(aclk),
         .aresetn(aresetn),
         .m_axi_araddr(m_axi_araddr),

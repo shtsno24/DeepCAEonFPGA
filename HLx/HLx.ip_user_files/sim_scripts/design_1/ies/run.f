@@ -200,13 +200,13 @@
   "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/a2e6/hdl/verilog/up_sampling2d_fix16.v" \
   "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/a2e6/hdl/verilog/network.v" \
   "../../../bd/design_1/ip/design_1_network_0_0/sim/design_1_network_0_0.v" \
+  "../../../bd/design_1/sim/design_1.v" \
 -endlib
 -makelib ies_lib/axi_protocol_converter_v2_1_19 \
   "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
 -endlib
 -makelib ies_lib/xil_defaultlib \
   "../../../bd/design_1/ip/design_1_auto_pc_0/sim/design_1_auto_pc_0.v" \
-  "../../../bd/design_1/sim/design_1.v" \
 -endlib
 -makelib ies_lib/xil_defaultlib \
   glbl.v

@@ -249,13 +249,13 @@ vlog -work xil_defaultlib -64 -incr "+incdir+../../../../HLx.srcs/sources_1/bd/d
 "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/a2e6/hdl/verilog/up_sampling2d_fix16.v" \
 "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/a2e6/hdl/verilog/network.v" \
 "../../../bd/design_1/ip/design_1_network_0_0/sim/design_1_network_0_0.v" \
+"../../../bd/design_1/sim/design_1.v" \
 
 vlog -work axi_protocol_converter_v2_1_19 -64 -incr "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/8c62/hdl" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/1ddd/hdl/verilog" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/b2d0/hdl/verilog" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0" "+incdir+/tools/Xilinx/Vivado/2019.1/data/xilinx_vip/include" \
 "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
 
 vlog -work xil_defaultlib -64 -incr "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/8c62/hdl" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/1ddd/hdl/verilog" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/b2d0/hdl/verilog" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0" "+incdir+/tools/Xilinx/Vivado/2019.1/data/xilinx_vip/include" \
 "../../../bd/design_1/ip/design_1_auto_pc_0/sim/design_1_auto_pc_0.v" \
-"../../../bd/design_1/sim/design_1.v" \
 
 vlog -work xil_defaultlib \
 "glbl.v"
