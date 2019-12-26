@@ -286,6 +286,12 @@
       }
     },
     "interface_nets": {
+      "input_data_0_1": {
+        "interface_ports": [
+          "input_data",
+          "hls_inst/input_data"
+        ]
+      },
       "hls_inst_output_data": {
         "interface_ports": [
           "output_data",
@@ -296,12 +302,6 @@
         "interface_ports": [
           "s_axi_AXILiteS",
           "hls_inst/s_axi_AXILiteS"
-        ]
-      },
-      "input_data_0_1": {
-        "interface_ports": [
-          "input_data",
-          "hls_inst/input_data"
         ]
       }
     },

@@ -68,9 +68,6 @@
 -makelib xcelium_lib/xil_defaultlib \
   "../../../bd/design_1/ip/design_1_rst_ps7_0_100M_0/sim/design_1_rst_ps7_0_100M_0.vhd" \
 -endlib
--makelib xcelium_lib/xil_defaultlib \
-  "../../../bd/design_1/ip/design_1_axi_smc_0/bd_0/sim/bd_afc3.v" \
--endlib
 -makelib xcelium_lib/xlconstant_v1_1_6 \
   "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/66e7/hdl/xlconstant_v1_1_vl_rfs.v" \
 -endlib
@@ -147,6 +144,7 @@
   "../../../bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_26/sim/bd_afc3_m00e_0.sv" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/design_1/ip/design_1_axi_smc_0/bd_0/sim/bd_afc3.v" \
   "../../../bd/design_1/ip/design_1_axi_smc_0/sim/design_1_axi_smc_0.v" \
 -endlib
 -makelib xcelium_lib/generic_baseblocks_v2_1_0 \
@@ -163,10 +161,10 @@
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   "../../../bd/design_1/ip/design_1_xbar_0/sim/design_1_xbar_0.v" \
-  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/41ed/hdl/verilog/network_AXILiteS_s_axi.v" \
-  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/41ed/hdl/verilog/network_MemBank_B.v" \
-  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/41ed/hdl/verilog/network_MemBank_Out.v" \
-  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/41ed/hdl/verilog/network.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/0d5b/hdl/verilog/network_AXILiteS_s_axi.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/0d5b/hdl/verilog/network_MemBank_B.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/0d5b/hdl/verilog/network_MemBank_Out.v" \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/0d5b/hdl/verilog/network.v" \
   "../../../bd/design_1/ip/design_1_network_0_0/sim/design_1_network_0_0.v" \
 -endlib
 -makelib xcelium_lib/axi_protocol_converter_v2_1_19 \
@@ -174,6 +172,12 @@
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   "../../../bd/design_1/ip/design_1_auto_pc_0/sim/design_1_auto_pc_0.v" \
+-endlib
+-makelib xcelium_lib/xlconcat_v2_1_3 \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/design_1/ip/design_1_xlconcat_0_0/sim/design_1_xlconcat_0_0.v" \
   "../../../bd/design_1/sim/design_1.v" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \

@@ -75978,7 +75978,7 @@ int network(axis input_data[784], axis output_data[784]) {
 
  int16_t MemBank_Out[784];
 
- ap_axis<16, 1, 1, 1> tmp;
+ axis tmp;
 
 
  int i = 0;
@@ -75995,10 +75995,10 @@ int network(axis input_data[784], axis output_data[784]) {
 # 162 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
  for(i = 0; i < array_length; i++){
 #pragma HLS PIPELINE
-  tmp.dest = 0;
-  tmp.id = 0;
-  tmp.keep = 0;
-  tmp.strb = 0;
+
+
+
+
   tmp.data = MemBank_Out[i];
   tmp.user = 0;
   tmp.last = 0;
@@ -76020,7 +76020,7 @@ int main(void){
 #pragma HLS reset variable=output_buffer
 
     int16_t output_img_buff[1 * 28 * 28];
-    ap_axis<16, 1, 1, 1> temp;
+    axis temp;
 # 215 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
  int i = 0;
  for(int depth = 0; depth < 1; depth++){

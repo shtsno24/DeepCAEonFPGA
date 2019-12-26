@@ -28568,7 +28568,7 @@ _ssdm_op_SpecInterface(0, "s_axilite", 1, 1, "", 0, 0, "", "", "", 0, 0, 0, 0, "
 
  int16_t MemBank_Out[784];
 
- ap_axis<16, 1, 1, 1> tmp;
+ axis tmp;
 
 
  int i = 0;
@@ -28585,11 +28585,11 @@ _ssdm_Unroll(0,0,0, "");
 # 162 "../mnist_AXI_Stream.cpp"
  for(i = 0; i < array_length; i++){
 _ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
- tmp.dest = 0;
-  tmp.id = 0;
-  tmp.keep = 0;
-  tmp.strb = 0;
-  tmp.data = MemBank_Out[i];
+
+
+
+
+ tmp.data = MemBank_Out[i];
   tmp.user = 0;
   tmp.last = 0;
   if(i == 0){
@@ -28610,7 +28610,7 @@ _ssdm_op_SpecReset( input_buffer, 1,  "");
 _ssdm_op_SpecReset( output_buffer, 1,  "");
 
  int16_t output_img_buff[1 * 28 * 28];
-    ap_axis<16, 1, 1, 1> temp;
+    axis temp;
 # 215 "../mnist_AXI_Stream.cpp"
  int i = 0;
  for(int depth = 0; depth < 1; depth++){

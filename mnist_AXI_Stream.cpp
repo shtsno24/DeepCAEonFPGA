@@ -23,7 +23,7 @@
 using namespace std;
 
 //typedef hls::stream< ap_axis<16, 1, 1, 1> > axis;
-typedef ap_axis<16, 1, 1, 1> axis;
+typedef ap_axis<16, 2, 5, 6> axis;
 
 int network(axis input_data[784], axis output_data[784]) {
 #pragma HLS INTERFACE axis register both port=input_data
@@ -35,7 +35,7 @@ int network(axis input_data[784], axis output_data[784]) {
 	//	uint64_t array_length = 16 * 28 * 28;
 	int16_t MemBank_Out[784];
 
-	ap_axis<16, 1, 1, 1> tmp;
+	axis tmp;
 
 
 	int i = 0;
@@ -161,10 +161,10 @@ int network(axis input_data[784], axis output_data[784]) {
 
 	for(i = 0; i < array_length; i++){
 #pragma HLS PIPELINE
-		tmp.dest = 0;
-		tmp.id = 0;
-		tmp.keep = 0;
-		tmp.strb = 0;
+//		tmp.dest = 0;
+//		tmp.id = 0;
+//		tmp.keep = 0;
+//		tmp.strb = 0;
 		tmp.data = MemBank_Out[i];
 		tmp.user = 0;
 		tmp.last = 0;
@@ -186,7 +186,7 @@ int main(void){
 #pragma HLS reset variable=output_buffer
 
     int16_t output_img_buff[1 * 28 * 28];
-    ap_axis<16, 1, 1, 1> temp;
+    axis temp;
 
 //	int i = 0;
 //	for(int depth = 0; depth < 1; depth++){
