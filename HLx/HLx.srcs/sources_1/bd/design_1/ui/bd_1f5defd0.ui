@@ -9,20 +9,15 @@ preplace inst rst_ps7_0_100M -pg 1 -lvl 6 -x 2090 -y 160 -defaultsOSRD
 preplace inst axi_dma_0 -pg 1 -lvl 3 -x 940 -y 320 -defaultsOSRD
 preplace inst axi_smc -pg 1 -lvl 4 -x 1300 -y 290 -defaultsOSRD
 preplace inst ps7_0_axi_periph -pg 1 -lvl 1 -x 190 -y 400 -defaultsOSRD
-preplace inst xlconcat_0 -pg 1 -lvl 4 -x 1300 -y 80 -defaultsOSRD
 preplace inst network_0 -pg 1 -lvl 2 -x 550 -y 300 -defaultsOSRD
-preplace netloc processing_system7_0_FCLK_CLK0 1 0 6 40 260 340 400 750 450 1150 380 1450 420 1900
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 6 40 260 340 400 740 450 1130 380 1440 420 1900
 preplace netloc processing_system7_0_FCLK_RESET0_N 1 5 1 1910 140n
-preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 0 7 20 250 360 410 760 460 1160 430 NJ 430 NJ 430 2270
-preplace netloc network_0_interrupt 1 2 2 730J 60 N
-preplace netloc axi_dma_0_mm2s_introut 1 3 1 1130 80n
-preplace netloc axi_dma_0_s2mm_introut 1 3 1 1140 100n
-preplace netloc xlconcat_0_dout 1 4 1 1440 80n
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 0 7 20 250 360 410 750 460 1140 430 NJ 430 NJ 430 2270
 preplace netloc axi_dma_0_M_AXI_MM2S 1 3 1 N 260
-preplace netloc axi_smc_M00_AXI 1 4 1 N 290
+preplace netloc axi_smc_M00_AXI 1 4 1 1440 290n
 preplace netloc processing_system7_0_FIXED_IO 1 5 2 NJ 280 N
 preplace netloc axi_dma_0_M_AXI_S2MM 1 3 1 N 280
-preplace netloc ps7_0_axi_periph_M00_AXI 1 1 2 NJ 390 740
+preplace netloc ps7_0_axi_periph_M00_AXI 1 1 2 NJ 390 730
 preplace netloc processing_system7_0_DDR 1 5 2 NJ 260 N
 preplace netloc network_0_output_data 1 2 1 N 290
 preplace netloc axi_dma_0_M_AXIS_MM2S 1 1 3 370 440 NJ 440 1120
