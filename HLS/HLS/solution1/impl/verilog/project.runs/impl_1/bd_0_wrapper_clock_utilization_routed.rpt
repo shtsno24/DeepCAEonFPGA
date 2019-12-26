@@ -1,12 +1,13 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2018.3.1 (lin64) Build 2489853 Tue Mar 26 04:18:30 MDT 2019
-| Date         : Mon Dec 23 21:28:34 2019
+| Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
+| Date         : Thu Dec 26 15:31:33 2019
 | Host         : masudalab-ubuntu running 64-bit Ubuntu 18.04.3 LTS
 | Command      : report_clock_utilization -file bd_0_wrapper_clock_utilization_routed.rpt
 | Design       : bd_0_wrapper
 | Device       : 7z020-clg400
 | Speed File   : -1  PRODUCTION 1.11 2014-09-11
+| Design State : Routed
 ------------------------------------------------------------------------------------------
 
 Clock Utilization Report

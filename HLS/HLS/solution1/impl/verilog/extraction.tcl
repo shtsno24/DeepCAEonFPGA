@@ -1,8 +1,5 @@
 ## ==============================================================
-## File generated on Mon Dec 23 21:18:03 JST 2019
-## Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3.1 (64-bit)
-## SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
-## IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+## Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
 ## Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ## ==============================================================
 #----------------------------------------------------------------------------
@@ -197,7 +194,7 @@ proc extract_area_ise {file_name file_name1 file_name2} {
         ![regexp $slice_pattern_v2p $report_buf match_slice slice_count] } {
         set slice_count 0
     } 
-			
+            
     # LUT extraction
     if {![regexp $lut_pattern $report_buf match_lut lut_count] && \
         ![regexp $lut_pattern_v2p $report_buf match_lut lut_count]} {
@@ -517,12 +514,12 @@ proc extract_target_from_timing_report {report_file xdc_file} {
 }
 
 ## extract target clock from rpt file 
-proc extract_target_from_timing_summary {report_file xdc_file} {
+proc extract_target_from_timing_summary {report_file xdc_file {clock_name "ap_clk"}} {
     set t2 "NA"
     set fl [open $report_file r]
     set report_buf [read -nonewline $fl]
     close $fl
-    set clk_pattern {Path\s+Group:\s+ap_clk.*?Requirement:\s+(\d+\.\d+)ns.*?}
+    set clk_pattern "Path\\s+Group:\\s+${clock_name}.*?Requirement:\\s+(\\d+\\.\\d+)ns.*?"
     if {![regexp $clk_pattern $report_buf match_clk t2]} {
         #puts "DEBUG: using the old way to extract target clock"
         set t2 [format "%2.3f" [extract_clk_period_sdc $xdc_file [glob -nocomplain *.xdc]]]
@@ -781,7 +778,7 @@ proc invoke_coregen { {lang ""} } {
     set path [pwd]
     if {[string match *\.* $path]} {
         #puts "@W \[IMPL-253\] CoreGen currently could fail if there is a '.' in part of the path name, temporarily change the offending directory name by replacing '.' with '_'."
-	    ::AESL_AUTOIMPLMSG::autoimplmsg_warn253
+        ::AESL_AUTOIMPLMSG::autoimplmsg_warn253
     }
 
     set coregen_dir "ap_coregen"
@@ -816,7 +813,7 @@ proc invoke_coregen { {lang ""} } {
             set mif_file ${ip_name}.mif
             if {![file isfile $rtl_file] || ![file isfile $ngc_file]} {
                 #puts "@E \[IMPL-254\] IP generation did not complete as expected."
-	            ::AESL_AUTOIMPLMSG::autoimplmsg_err254
+                ::AESL_AUTOIMPLMSG::autoimplmsg_err254
                 exit 1
             } else {
                 file copy -force $rtl_file ..
@@ -836,11 +833,14 @@ proc invoke_coregen { {lang ""} } {
 # compile_reports_vivado
 # dump  ${basename}.rpt and  ${basename}.result.rb for Rodin flow
 #----------------------------------------------------------------------------
-proc compile_reports_vivado {has_impl target_clk_period reportdir basename outdir device project solution} {
+proc compile_reports_vivado {has_impl target_clk_period reportdir basename outdir device project solution {clock_name ""}} {
+    if { $clock_name eq "" } {
+        set clock_name "ap_clk"
+    }
     if { $has_impl } {
         set vivado_ver   [get_vivado_version           ./$reportdir/${basename}_timing_routed.rpt]
-        set timing_route [extract_from_timing_summary  ./$reportdir/${basename}_timing_routed.rpt clk_target $target_clk_period]
-        set timing_synth [extract_from_timing_summary  ./$reportdir/${basename}_timing_synth.rpt]
+        set timing_route [extract_from_timing_summary  ./$reportdir/${basename}_timing_routed.rpt $clock_name clk_target $target_clk_period]
+        set timing_synth [extract_from_timing_summary  ./$reportdir/${basename}_timing_synth.rpt $clock_name]
         #set timing_synth [extract_from_timing_report        ./report/${basename}_timing_paths_synth.rpt]
         extract_from_utilization                       ./$reportdir/${basename}_utilization_routed.rpt area_current area_total
         set timing_final $timing_route
@@ -848,7 +848,7 @@ proc compile_reports_vivado {has_impl target_clk_period reportdir basename outdi
         puts "HLS EXTRACTION: impl area_current: $area_current"
     } else {
         set vivado_ver   [get_vivado_version           ./$reportdir/${basename}_timing_synth.rpt]
-        set timing_synth [extract_from_timing_summary  ./$reportdir/${basename}_timing_synth.rpt clk_target $target_clk_period]
+        set timing_synth [extract_from_timing_summary  ./$reportdir/${basename}_timing_synth.rpt $clock_name clk_target $target_clk_period]
         #set vivado_ver   [get_vivado_version                 ./report/${basename}_timing_paths_synth.rpt]
         #set clk_target   [extract_target_from_timing_report  ./report/${basename}_timing_paths_synth.rpt ./${basename}.xdc]
         #set timing_synth [extract_from_timing_report         ./report/${basename}_timing_paths_synth.rpt]
@@ -900,68 +900,71 @@ proc extract_from_utilization { uti_file area_current_name area_totals_name} {
     # patterns for parsing utilization file
     ################################################################################
     set lut_re          {.*(?:Slice|CLB) LUTs\s*\**\s+\|\s+(\d+)\s+\|\s+\d+\s+\|\s+(\d+).*}
-    set ff_re           {.*(?:Slice|CLB) Registers\s*\**\s+\|\s+(\d+)\s+\|\s+\d+\s+\|\s+(\d+).*}
+    set ff_re           {.*(?:Slice|CLB|) Registers\s*\**\s+\|\s+(\d+)\s+\|\s+\d+\s+\|\s+(\d+).*}
     set slice_re        {.*Slice\s*\**\s+\|\s+(\d+)\s+\|\s+\d+\s+\|\s+(\d+).*}
     set clb_re          {.*CLB\s*\**\s+\|\s+(\d+)\s+\|\s+\d+\s+\|\s+(\d+.)*}
-    set DSP_re          {.*DSPs\s*\**\s+\|\s+(\d+)\s+\|\s+\d+\s+\|\s+(\d+).*}
-    set bram36_re       {.*RAMB36E\d only.+?(\d+).*}
-    set bram18_re       {.*RAMB18E\d only.+?(\d+).*}
-    set bram18_total_re {.*RAMB18\s*\**\s+\|\s+\d+\s+\|\s+\d+\s+\|\s+(\d+).*}
+    set DSP_re          {.*(?:DSPs|DSP Slices)\s*\**\s+\|\s+(\d+)\s+\|\s+\d+\s+\|\s+(\d+).*}
+    #set bram36_re       {.*RAMB36E\d only.+?(\d+).*}
+    #set bram18_re       {.*RAMB18E\d only.+?(\d+).*}
+    set bram36_re       {.*RAMB36(?:E\d|/FIFO|)\s*\**\s+\|\s+(\d+)\s+\|\s+\d+\s+\|\s+(\d+).*}
+    set bram18_re       {.*RAMB18(?:E\d|)\s*\**\s+\|\s+(\d+)\s+\|\s+\d+\s+\|\s+(\d+).*}
+    set URAM_re         {.*URAM\s*\**\s+\|\s+(\d+)\s+\|\s+\d+\s+\|\s+(\d+).*}
     set fifo_re         {.*FIFO18E\d only.+?(\d+).*}
     set latch_re        {.*Register as Latch.+?(\d+).*}
     set srl_re          {.*LUT as Shift Register.+?(\d+).*}
-    set URAM_re         {.*URAM\s*\**\s+\|\s+(\d+)\s+\|\s+\d+\s+\|\s+(\d+).*}
 
-    if {![regexp $slice_re $uti_rpt_buf match_txt slice_count slice_total] } {
+    if {![regexp -line $slice_re $uti_rpt_buf match_txt slice_count slice_total] } {
         set slice_count 0
         set slice_total 0
     }
 
-    if {![regexp $clb_re $uti_rpt_buf match_txt clb_count clb_total] } {
+    if {![regexp -line $clb_re $uti_rpt_buf match_txt clb_count clb_total] } {
         set clb_count 0
         set clb_total 0
     }
  
-    if {![regexp $lut_re $uti_rpt_buf match_txt lut_count lut_total] } {
+    if {![regexp -line $lut_re $uti_rpt_buf match_txt lut_count lut_total] } {
         set lut_count 0
         set lut_total 0
     }
  
-    if {![regexp $ff_re $uti_rpt_buf match_txt ff_count ff_total] } {
+    if {![regexp -line $ff_re $uti_rpt_buf match_txt ff_count ff_total] } {
         set ff_count 0
         set ff_total 0
     }
  
-    if {![regexp $DSP_re $uti_rpt_buf match_txt dsp_count dsp_total] } {
+    if {![regexp -line $DSP_re $uti_rpt_buf match_txt dsp_count dsp_total] } {
         set dsp_count 0
         set dsp_total 0
     }
 
-    if {![regexp $bram18_re $uti_rpt_buf match_txt bram_count18] } {
+    if {![regexp -line $bram18_re $uti_rpt_buf match_txt bram_count18 bram18_total] } {
         set bram_count18 0
+        set bram18_total 0
     }
 
-    if {![regexp $bram36_re $uti_rpt_buf match_txt bram_count36] } {
+    if {![regexp -line $bram36_re $uti_rpt_buf match_txt bram_count36 bram36_total] } {
         set bram_count36 0
+        set bram36_total 0
     }
  
-    if {![regexp $latch_re $uti_rpt_buf match_txt latch_count]} {
+    if {![regexp -line $latch_re $uti_rpt_buf match_txt latch_count]} {
         set latch_count 0
     }
  
-    if {![regexp $srl_re $uti_rpt_buf match_txt srl_count]} {
+    if {![regexp -line $srl_re $uti_rpt_buf match_txt srl_count]} {
         set srl_count 0
     }
 
-    if {![regexp $URAM_re $uti_rpt_buf match_txt uram_count uram_total] } {
+    if {![regexp -line $URAM_re $uti_rpt_buf match_txt uram_count uram_total] } {
         set uram_count 0
         set uram_total 0
     }
 
 
-    if {![regexp $bram18_total_re $uti_rpt_buf match_txt bram18_total] } {
-        set bram18_total 0
-    }
+#    if {![regexp $bram18_total_re $uti_rpt_buf match_txt bram18_total] } {
+#        set bram18_total 0
+#    }
  
 
     set has_uram $uram_total
@@ -978,15 +981,15 @@ proc extract_from_utilization { uti_file area_current_name area_totals_name} {
 #
 # Opens the .rpt file to extract the actual timing delay value
 #----------------------------------------------------------------------------
-proc extract_from_timing_summary {file_name {clk_target_name ""} {clk_target_default ""}} {
+proc extract_from_timing_summary {file_name {clock_name "ap_clk"} {clk_target_varname ""} {clk_target_default ""}} {
     set report_file [open $file_name r]
     set report_buf [read -nonewline $report_file]
     close $report_file
 
-    if { $clk_target_name ne "" } {
-        upvar $clk_target_name clk_target
+    if { $clk_target_varname ne "" } {
+        upvar $clk_target_varname clk_target
         set clk_target "NA"
-        set clk_pattern {Path\s+Group:\s+ap_clk.*?Requirement:\s+(\d+\.\d+)ns.*?}
+        set clk_pattern "Path\\s+Group:\\s+${clock_name}.*?Requirement:\\s+(\\d+\\.\\d+)ns.*?"
         if {![regexp $clk_pattern $report_buf match_clk clk_target]} {
             if { $clk_target_default eq "" } {
                 error "ERROR: cannot find clock target in file $file_name"
@@ -998,7 +1001,7 @@ proc extract_from_timing_summary {file_name {clk_target_name ""} {clk_target_def
     }
 
     set wns "NA"
-    set clk_setup_pat {From\s+Clock:\s+ap_clk\s+To\s+Clock:\s+ap_clk\s+Setup\s*:[^,]*,\s*Worst\s+Slack\s+?(-?\d+\.\d+)ns}
+    set clk_setup_pat "From\\s+Clock:\\s+${clock_name}\\s+To\\s+Clock:\\s+${clock_name}\\s+Setup\\s*:\[^,\]*,\\s*Worst\\s+Slack\\s+?(-?\\d+\\.\\d+)ns"
     if {[regexp ${clk_setup_pat} $report_buf -> setup_slack]} {
         #puts "DEBUG: setup slack is $setup_slack"
         set wns $setup_slack

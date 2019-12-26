@@ -177,6 +177,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
     AESL_LIB_XILADAPTER::native_axis_begin
 }
 
+set axilite_register_dict [dict create]
 set port_AXILiteS {
 ap_start { }
 ap_done { }
@@ -191,6 +192,7 @@ ap_return {
 	offset_end 0
 }
 }
+dict set axilite_register_dict AXILiteS $port_AXILiteS
 
 
 # Native S_AXILite:

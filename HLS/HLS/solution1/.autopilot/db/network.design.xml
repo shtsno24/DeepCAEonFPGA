@@ -44,6 +44,7 @@
 <BRAM_18K>17</BRAM_18K>
 <FF>619</FF>
 <LUT>9164</LUT>
+<URAM>0</URAM>
 <DSP48E>0</DSP48E>
 </Resources>
 </AreaEstimates>

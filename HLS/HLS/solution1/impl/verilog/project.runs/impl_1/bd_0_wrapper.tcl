@@ -66,13 +66,14 @@ set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
   set_param ips.enableSLRParameter 2
+  set_param chipscope.maxJobs 1
   reset_param project.defaultXPMLibraries 
-  open_checkpoint /home/masudalab/DeepCAEonFPGA/DeepCAEonFPGA/HLS/HLS/solution1/impl/verilog/project.runs/impl_1/bd_0_wrapper.dcp
-  set_property webtalk.parent_dir /home/masudalab/DeepCAEonFPGA/DeepCAEonFPGA/HLS/HLS/solution1/impl/verilog/project.cache/wt [current_project]
-  set_property parent.project_path /home/masudalab/DeepCAEonFPGA/DeepCAEonFPGA/HLS/HLS/solution1/impl/verilog/project.xpr [current_project]
-  set_property ip_repo_paths /home/masudalab/DeepCAEonFPGA/DeepCAEonFPGA/HLS/HLS/solution1/impl/ip [current_project]
+  open_checkpoint /home/masudalab/DeepCAEonFPGA/HLS/HLS/solution1/impl/verilog/project.runs/impl_1/bd_0_wrapper.dcp
+  set_property webtalk.parent_dir /home/masudalab/DeepCAEonFPGA/HLS/HLS/solution1/impl/verilog/project.cache/wt [current_project]
+  set_property parent.project_path /home/masudalab/DeepCAEonFPGA/HLS/HLS/solution1/impl/verilog/project.xpr [current_project]
+  set_property ip_repo_paths /home/masudalab/DeepCAEonFPGA/HLS/HLS/solution1/impl/ip [current_project]
   update_ip_catalog
-  set_property ip_output_repo /home/masudalab/DeepCAEonFPGA/DeepCAEonFPGA/HLS/HLS/solution1/impl/verilog/project.cache/ip [current_project]
+  set_property ip_output_repo /home/masudalab/DeepCAEonFPGA/HLS/HLS/solution1/impl/verilog/project.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES XPM_MEMORY [current_project]
   close_msg_db -file init_design.pb

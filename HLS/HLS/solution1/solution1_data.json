@@ -9,7 +9,7 @@
   "Target": {
     "Family": "zynq",
     "Device": "xc7z020",
-    "Package": "clg400",
+    "Package": "-clg400",
     "Speed": "-1"
   },
   "HlsSolution": {"Config": [
@@ -20,6 +20,184 @@
       "config_export -vivado_phys_opt=place",
       "config_export -vivado_report_level=0"
     ]},
+  "Args": {
+    "input_data": {
+      "index": "0",
+      "type": {
+        "kinds": [
+          "struct",
+          "array"
+        ],
+        "dataType": "ap_axis<16, 1, 1, 1>",
+        "arraySizes": ["784"],
+        "structImpl": "flat-field",
+        "dataPack": true,
+        "fields": {
+          "data": {
+            "order": "0",
+            "dataType": "ap_int",
+            "dataWidth": "16",
+            "interfaceRef": "input_data",
+            "bitMap": "15:0",
+            "portRef": "TDATA",
+            "structImpl": "interface",
+            "dataPack": true
+          },
+          "keep": {
+            "order": "1",
+            "dataType": "ap_uint",
+            "dataWidth": "2",
+            "interfaceRef": "input_data",
+            "bitMap": "1:0",
+            "portRef": "TDATA",
+            "structImpl": "interface",
+            "dataPack": true
+          },
+          "strb": {
+            "order": "2",
+            "dataType": "ap_uint",
+            "dataWidth": "2",
+            "interfaceRef": "input_data",
+            "bitMap": "1:0",
+            "portRef": "TDATA",
+            "structImpl": "interface",
+            "dataPack": true
+          },
+          "user": {
+            "order": "3",
+            "dataType": "ap_uint",
+            "dataWidth": "1",
+            "interfaceRef": "input_data",
+            "bitMap": "0:0",
+            "portRef": "TDATA",
+            "structImpl": "interface",
+            "dataPack": true
+          },
+          "last": {
+            "order": "4",
+            "dataType": "ap_uint",
+            "dataWidth": "1",
+            "interfaceRef": "input_data",
+            "bitMap": "0:0",
+            "portRef": "TDATA",
+            "structImpl": "interface",
+            "dataPack": true
+          },
+          "id": {
+            "order": "5",
+            "dataType": "ap_uint",
+            "dataWidth": "1",
+            "interfaceRef": "input_data",
+            "bitMap": "0:0",
+            "portRef": "TDATA",
+            "structImpl": "interface",
+            "dataPack": true
+          },
+          "dest": {
+            "order": "6",
+            "dataType": "ap_uint",
+            "dataWidth": "1",
+            "interfaceRef": "input_data",
+            "bitMap": "0:0",
+            "portRef": "TDATA",
+            "structImpl": "interface",
+            "dataPack": true
+          }
+        }
+      }
+    },
+    "output_data": {
+      "index": "1",
+      "type": {
+        "kinds": [
+          "struct",
+          "array"
+        ],
+        "dataType": "ap_axis<16, 1, 1, 1>",
+        "arraySizes": ["784"],
+        "structImpl": "flat-field",
+        "dataPack": true,
+        "fields": {
+          "data": {
+            "order": "0",
+            "dataType": "ap_int",
+            "dataWidth": "16",
+            "interfaceRef": "output_data",
+            "bitMap": "15:0",
+            "portRef": "TDATA",
+            "structImpl": "interface",
+            "dataPack": true
+          },
+          "keep": {
+            "order": "1",
+            "dataType": "ap_uint",
+            "dataWidth": "2",
+            "interfaceRef": "output_data",
+            "bitMap": "1:0",
+            "portRef": "TDATA",
+            "structImpl": "interface",
+            "dataPack": true
+          },
+          "strb": {
+            "order": "2",
+            "dataType": "ap_uint",
+            "dataWidth": "2",
+            "interfaceRef": "output_data",
+            "bitMap": "1:0",
+            "portRef": "TDATA",
+            "structImpl": "interface",
+            "dataPack": true
+          },
+          "user": {
+            "order": "3",
+            "dataType": "ap_uint",
+            "dataWidth": "1",
+            "interfaceRef": "output_data",
+            "bitMap": "0:0",
+            "portRef": "TDATA",
+            "structImpl": "interface",
+            "dataPack": true
+          },
+          "last": {
+            "order": "4",
+            "dataType": "ap_uint",
+            "dataWidth": "1",
+            "interfaceRef": "output_data",
+            "bitMap": "0:0",
+            "portRef": "TDATA",
+            "structImpl": "interface",
+            "dataPack": true
+          },
+          "id": {
+            "order": "5",
+            "dataType": "ap_uint",
+            "dataWidth": "1",
+            "interfaceRef": "output_data",
+            "bitMap": "0:0",
+            "portRef": "TDATA",
+            "structImpl": "interface",
+            "dataPack": true
+          },
+          "dest": {
+            "order": "6",
+            "dataType": "ap_uint",
+            "dataWidth": "1",
+            "interfaceRef": "output_data",
+            "bitMap": "0:0",
+            "portRef": "TDATA",
+            "structImpl": "interface",
+            "dataPack": true
+          }
+        }
+      }
+    }
+  },
+  "Return": {
+    "dataType": "int",
+    "dataWidth": "32",
+    "interfaceRef": "s_axi_AXILiteS",
+    "registerRefs": ["ap_return"]
+  },
   "ClockInfo": {
     "ClockName": "ap_clk",
     "ClockPeriod": "10",
@@ -42,13 +220,13 @@
   },
   "Files": {
     "CSource": [
-      "..\/..\/..\/layers_c\/up_sampling2d.cpp",
-      "..\/..\/..\/layers_c\/separable_conv2d.cpp",
-      "..\/..\/..\/layers_c\/pointwise_conv2d.cpp",
-      "..\/..\/..\/layers_c\/padding2d.cpp",
-      "..\/..\/..\/mnist_AXI_Stream.cpp",
+      "..\/..\/..\/layers_c\/depthwise_conv2d.cpp",
       "..\/..\/..\/layers_c\/max_pooling2d.cpp",
-      "..\/..\/..\/layers_c\/depthwise_conv2d.cpp"
+      "..\/..\/..\/mnist_AXI_Stream.cpp",
+      "..\/..\/..\/layers_c\/padding2d.cpp",
+      "..\/..\/..\/layers_c\/pointwise_conv2d.cpp",
+      "..\/..\/..\/layers_c\/separable_conv2d.cpp",
+      "..\/..\/..\/layers_c\/up_sampling2d.cpp"
     ],
     "Vhdl": [
       "impl\/vhdl\/network_AXILiteS_s_axi.vhd",
@@ -73,7 +251,9 @@
       "impl\/misc\/drivers\/network_v1_0\/src\/xnetwork_sinit.c"
     ],
     "Misc": ["impl\/misc\/logo.png"],
-    "DesignXml": "\/home\/masudalab\/DeepCAEonFPGA\/DeepCAEonFPGA\/HLS\/HLS\/solution1\/.autopilot\/db\/network.design.xml"
+    "DesignXml": "\/home\/masudalab\/DeepCAEonFPGA\/HLS\/HLS\/solution1\/.autopilot\/db\/network.design.xml",
+    "DebugDir": "\/home\/masudalab\/DeepCAEonFPGA\/HLS\/HLS\/solution1\/.debug",
+    "ProtoInst": ["\/home\/masudalab\/DeepCAEonFPGA\/HLS\/HLS\/solution1\/.debug\/network.protoinst"]
   },
   "SubcoreInfo": {
     "HasXpmMemory": false,
@@ -84,13 +264,17 @@
     "ap_clk": {
       "type": "clock",
       "ctype": {"CLK": {"Type": "bool"}},
+      "bundle_name": "ap_clk",
+      "bundle_role": "default",
       "buses": "s_axi_AXILiteS input_data output_data",
       "reset": "ap_rst_n"
     },
     "ap_rst_n": {
       "type": "reset",
       "polarity": "ACTIVE_LOW",
-      "ctype": {"RST": {"Type": "bool"}}
+      "ctype": {"RST": {"Type": "bool"}},
+      "bundle_name": "ap_rst_n",
+      "bundle_role": "default"
     },
     "input_data": {
       "type": "axi4stream",
@@ -141,7 +325,9 @@
     },
     "interrupt": {
       "type": "interrupt",
-      "ctype": {"INTERRUPT": {"Type": "bool"}}
+      "ctype": {"INTERRUPT": {"Type": "bool"}},
+      "bundle_name": "AXILiteS",
+      "bundle_role": "interrupt"
     },
     "output_data": {
       "type": "axi4stream",
@@ -370,7 +556,6 @@
             }]
         }
       ],
-      "memories": "",
       "ctype": {
         "AWVALID": {"Type": "bool"},
         "AWREADY": {"Type": "bool"},
@@ -584,84 +769,15 @@
       "isVector": "true"
     }
   },
-  "CPorts": {
-    "ap_ctrl": {
-      "interfaceRef": "s_axi_AXILiteS",
-      "dir": "in",
-      "offset": "0"
-    },
-    "ap_return": {
-      "interfaceRef": "s_axi_AXILiteS",
-      "dir": "in",
-      "offset": "16",
-      "statusOffset": "20"
-    },
-    "input_data_data_V": {
-      "interfaceRef": "input_data",
-      "dir": "in"
-    },
-    "input_data_dest_V": {
-      "interfaceRef": "input_data",
-      "dir": "in"
-    },
-    "input_data_keep_V": {
-      "interfaceRef": "input_data",
-      "dir": "in"
-    },
-    "input_data_strb_V": {
-      "interfaceRef": "input_data",
-      "dir": "in"
-    },
-    "input_data_user_V": {
-      "interfaceRef": "input_data",
-      "dir": "in"
-    },
-    "input_data_last_V": {
-      "interfaceRef": "input_data",
-      "dir": "in"
-    },
-    "input_data_id_V": {
-      "interfaceRef": "input_data",
-      "dir": "in"
-    },
-    "output_data_data_V": {
-      "interfaceRef": "output_data",
-      "dir": "out",
-      "firstOutLatency": "396"
-    },
-    "output_data_dest_V": {
-      "interfaceRef": "output_data",
-      "dir": "out",
-      "firstOutLatency": "396"
-    },
-    "output_data_keep_V": {
-      "interfaceRef": "output_data",
-      "dir": "out",
-      "firstOutLatency": "396"
-    },
-    "output_data_strb_V": {
-      "interfaceRef": "output_data",
-      "dir": "out",
-      "firstOutLatency": "396"
-    },
-    "output_data_user_V": {
-      "interfaceRef": "output_data",
-      "dir": "out",
-      "firstOutLatency": "396"
-    },
-    "output_data_last_V": {
-      "interfaceRef": "output_data",
-      "dir": "out",
-      "firstOutLatency": "396"
-    },
-    "output_data_id_V": {
-      "interfaceRef": "output_data",
-      "dir": "out",
-      "firstOutLatency": "396"
-    }
-  },
   "ModuleInfo": {
     "Hierarchy": {"ModuleName": "network"},
+    "Info": {"network": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      }},
     "Metrics": {"network": {
         "Latency": {
           "LatencyBest": "",
@@ -696,6 +812,7 @@
           "BRAM_18K": "17",
           "FF": "619",
           "LUT": "9164",
+          "URAM": "0",
           "DSP48E": "0"
         }
       }}
@@ -709,9 +826,9 @@
     "EnableXoSwEmu": "1"
   },
   "GenData": {
-    "DataVersion": "0.1",
-    "Time": "2019-12-23 21:14:05 JST",
+    "DataVersion": "0.2",
+    "Time": "2019-12-26 15:17:03 JST",
     "ToolName": "vivado_hls",
-    "ToolVersion": "2018.3.1"
+    "ToolVersion": "2019.1"
   }
 }

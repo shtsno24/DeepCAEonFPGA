@@ -1,15 +1,12 @@
 # ==============================================================
-# File generated on Mon Dec 23 21:14:50 JST 2019
-# Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3.1 (64-bit)
-# SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
-# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
 # Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 # ==============================================================
-set ::env(LD_LIBRARY_PATH) /tools/Xilinx/Vivado/2018.3/lnx64/tools/fpo_v7_0:$::env(LD_LIBRARY_PATH)
-set ::env(LD_LIBRARY_PATH) /tools/Xilinx/Vivado/2018.3/lnx64/tools/opencv:$::env(LD_LIBRARY_PATH)
-set ::env(LD_LIBRARY_PATH) /tools/Xilinx/Vivado/2018.3/lnx64/tools/fft_v9_1:$::env(LD_LIBRARY_PATH)
-set ::env(LD_LIBRARY_PATH) /tools/Xilinx/Vivado/2018.3/lnx64/tools/fir_v7_0:$::env(LD_LIBRARY_PATH)
-set ::env(LD_LIBRARY_PATH) /tools/Xilinx/Vivado/2018.3/lnx64/tools/dds_v6_0:$::env(LD_LIBRARY_PATH)
+set ::env(LD_LIBRARY_PATH) /tools/Xilinx/Vivado/2019.1/lnx64/tools/fpo_v7_0:$::env(LD_LIBRARY_PATH)
+set ::env(LD_LIBRARY_PATH) /tools/Xilinx/Vivado/2019.1/lnx64/tools/opencv:$::env(LD_LIBRARY_PATH)
+set ::env(LD_LIBRARY_PATH) /tools/Xilinx/Vivado/2019.1/lnx64/tools/fft_v9_1:$::env(LD_LIBRARY_PATH)
+set ::env(LD_LIBRARY_PATH) /tools/Xilinx/Vivado/2019.1/lnx64/tools/fir_v7_0:$::env(LD_LIBRARY_PATH)
+set ::env(LD_LIBRARY_PATH) /tools/Xilinx/Vivado/2019.1/lnx64/tools/dds_v6_0:$::env(LD_LIBRARY_PATH)
 set ::env(LD_LIBRARY_PATH) /usr/lib/x86_64-linux-gnu:$::env(LD_LIBRARY_PATH)
 
 proc cpvcdfromsctortl {} {

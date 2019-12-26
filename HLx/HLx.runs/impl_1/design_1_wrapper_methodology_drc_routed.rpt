@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-| Date         : Thu Dec 26 15:04:52 2019
+| Date         : Thu Dec 26 15:50:09 2019
 | Host         : masudalab-ubuntu running 64-bit Ubuntu 18.04.3 LTS
 | Command      : report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -pb design_1_wrapper_methodology_drc_routed.pb -rpx design_1_wrapper_methodology_drc_routed.rpx
 | Design       : design_1_wrapper
@@ -23,12 +23,33 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 0
-+------+----------+-------------+------------+
-| Rule | Severity | Description | Violations |
-+------+----------+-------------+------------+
-+------+----------+-------------+------------+
+             Violations found: 4
++-----------+----------+-----------------------+------------+
+| Rule      | Severity | Description           | Violations |
++-----------+----------+-----------------------+------------+
+| TIMING-16 | Warning  | Large setup violation | 4          |
++-----------+----------+-----------------------+------------+
 
 2. REPORT DETAILS
 -----------------
+TIMING-16#1 Warning
+Large setup violation  
+There is a large setup violation of -1.010 ns between design_1_i/network_0/inst/ap_CS_fsm_reg[52]/C (clocked by clk_fpga_0) and design_1_i/network_0/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_3/ADDRBWRADDR[2] (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#2 Warning
+Large setup violation  
+There is a large setup violation of -1.014 ns between design_1_i/network_0/inst/ap_CS_fsm_reg[52]/C (clocked by clk_fpga_0) and design_1_i/network_0/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_2/ADDRBWRADDR[2] (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#3 Warning
+Large setup violation  
+There is a large setup violation of -1.017 ns between design_1_i/network_0/inst/ap_CS_fsm_reg[52]/C (clocked by clk_fpga_0) and design_1_i/network_0/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_7/ADDRBWRADDR[2] (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#4 Warning
+Large setup violation  
+There is a large setup violation of -1.115 ns between design_1_i/network_0/inst/ap_CS_fsm_reg[52]/C (clocked by clk_fpga_0) and design_1_i/network_0/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_5/ADDRBWRADDR[2] (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
 

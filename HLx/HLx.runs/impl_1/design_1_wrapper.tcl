@@ -72,6 +72,8 @@ set rc [catch {
   set_param project.singleFileAddWarning.threshold 0
   set_property webtalk.parent_dir /home/masudalab/DeepCAEonFPGA/HLx/HLx.cache/wt [current_project]
   set_property parent.project_path /home/masudalab/DeepCAEonFPGA/HLx/HLx.xpr [current_project]
+  set_property ip_repo_paths /home/masudalab/DeepCAEonFPGA/ip_generated [current_project]
+  update_ip_catalog
   set_property ip_output_repo /home/masudalab/DeepCAEonFPGA/HLx/HLx.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]

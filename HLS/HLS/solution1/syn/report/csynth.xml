@@ -1,13 +1,13 @@
 <profile>
 
 <ReportVersion>
-<Version>2018.3.1</Version>
+<Version>2019.1</Version>
 </ReportVersion>
 
 <UserAssignments>
 <unit>ns</unit>
 <ProductFamily>zynq</ProductFamily>
-<Part>xc7z020clg400-1</Part>
+<Part>xc7z020-clg400-1</Part>
 <TopModelName>network</TopModelName>
 <TargetClockPeriod>10.00</TargetClockPeriod>
 <ClockUncertainty>1.25</ClockUncertainty>
@@ -47,6 +47,7 @@
 <BRAM_18K>17</BRAM_18K>
 <FF>619</FF>
 <LUT>9164</LUT>
+<URAM>0</URAM>
 <DSP48E>0</DSP48E>
 </Resources>
 <AvailableResources>
@@ -54,6 +55,7 @@
 <DSP48E>220</DSP48E>
 <FF>106400</FF>
 <LUT>53200</LUT>
+<URAM>0</URAM>
 </AvailableResources>
 </AreaEstimates>
 

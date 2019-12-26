@@ -6,6 +6,7 @@ set sim_status(no_tb_pc_needed) 0
 set sim_status(vhdl_needed)   0
 set sim_status(vlog_needed)   1
 set sim_status(bc_tb_needed)  0
+set sim_status(bc_tb_new_needed)  0
 set sim_status(cas_needed)    0
 set sim_DirAutoSimRoot        "sim"
 set sim_DirAutoSimTv          "sim/tv"

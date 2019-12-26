@@ -1,8 +1,5 @@
 # ==============================================================
-# File generated on Mon Dec 23 21:18:03 JST 2019
-# Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3.1 (64-bit)
-# SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
-# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
 # Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 # ==============================================================
 source ./settings.tcl
@@ -131,7 +128,7 @@ run_report report_timing -max_paths 10 -file $outputDir/${top_module}_timing_pat
 run_report report_utilization -file $outputDir/${top_module}_utilization_routed.rpt
 run_report report_timing_summary -file $outputDir/${top_module}_timing_routed.rpt
 check_impl_run impl_1 $error_if_impl_timing_fails
-if { [catch { compile_reports_vivado 1 $target_clk_period_ns $outputDir $top_module ../report/$language $targetPart $hlsProjectName $hlsSolutionName } err] } {
+if { [catch { compile_reports_vivado 1 $target_clk_period_ns $outputDir $top_module ../report/$language $targetPart $hlsProjectName $hlsSolutionName $clock } err] } {
     puts "ERROR \[IMPL-251\] Errors occured while compiling report: $err"
     exit 1
 }

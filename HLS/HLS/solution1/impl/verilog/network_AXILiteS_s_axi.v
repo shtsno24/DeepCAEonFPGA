@@ -1,8 +1,5 @@
 // ==============================================================
-// File generated on Mon Dec 23 21:14:05 JST 2019
-// Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3.1 (64-bit)
-// SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
-// IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+// Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // ==============================================================
 `timescale 1ns/1ps
@@ -11,7 +8,6 @@ module network_AXILiteS_s_axi
     C_S_AXI_ADDR_WIDTH = 5,
     C_S_AXI_DATA_WIDTH = 32
 )(
-    // axi4 lite slave signals
     input  wire                          ACLK,
     input  wire                          ARESET,
     input  wire                          ACLK_EN,
@@ -33,7 +29,6 @@ module network_AXILiteS_s_axi
     output wire                          RVALID,
     input  wire                          RREADY,
     output wire                          interrupt,
-    // user signals
     output wire                          ap_start,
     input  wire                          ap_done,
     input  wire                          ap_ready,

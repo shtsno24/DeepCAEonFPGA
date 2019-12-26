@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version     : Vivado v.2018.3.1 (lin64) Build 2489853 Tue Mar 26 04:18:30 MDT 2019
-| Date             : Mon Dec 23 21:28:34 2019
+| Tool Version     : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
+| Date             : Thu Dec 26 15:31:33 2019
 | Host             : masudalab-ubuntu running 64-bit Ubuntu 18.04.3 LTS
 | Command          : report_power -file bd_0_wrapper_power_routed.rpt -pb bd_0_wrapper_power_summary_routed.pb -rpx bd_0_wrapper_power_routed.rpx
 | Design           : bd_0_wrapper
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.153        |
+| Total On-Chip Power (W)  | 0.159        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.049        |
+| Dynamic (W)              | 0.055        |
 | Device Static (W)        | 0.104        |
 | Effective TJA (C/W)      | 11.5         |
 | Max Ambient (C)          | 83.2         |
@@ -53,16 +53,15 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.008 |        3 |       --- |             --- |
-| Slice Logic    |     0.002 |     2345 |       --- |             --- |
-|   LUT as Logic |     0.002 |     1469 |     53200 |            2.76 |
-|   Register     |    <0.001 |      560 |    106400 |            0.53 |
+| Slice Logic    |     0.004 |     2333 |       --- |             --- |
+|   LUT as Logic |     0.004 |     1448 |     53200 |            2.72 |
+|   Register     |    <0.001 |      556 |    106400 |            0.52 |
 |   CARRY4       |    <0.001 |        4 |     13300 |            0.03 |
-|   F7/F8 Muxes  |    <0.001 |        1 |     53200 |           <0.01 |
 |   Others       |     0.000 |        9 |       --- |             --- |
-| Signals        |     0.004 |     2279 |       --- |             --- |
-| Block RAM      |     0.035 |      8.5 |       140 |            6.07 |
+| Signals        |     0.007 |     2269 |       --- |             --- |
+| Block RAM      |     0.036 |      8.5 |       140 |            6.07 |
 | Static Power   |     0.104 |          |           |                 |
-| Total          |     0.153 |          |           |                 |
+| Total          |     0.159 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -72,7 +71,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.054 |       0.047 |      0.008 |
+| Vccint    |       1.000 |     0.060 |       0.053 |      0.008 |
 | Vccaux    |       1.800 |     0.010 |       0.000 |      0.010 |
 | Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -148,10 +147,10 @@ Table of Contents
 +--------------+-----------+
 | Name         | Power (W) |
 +--------------+-----------+
-| bd_0_wrapper |     0.049 |
-|   bd_0_i     |     0.049 |
-|     hls_inst |     0.049 |
-|       inst   |     0.049 |
+| bd_0_wrapper |     0.055 |
+|   bd_0_i     |     0.055 |
+|     hls_inst |     0.055 |
+|       inst   |     0.055 |
 +--------------+-----------+
 
 

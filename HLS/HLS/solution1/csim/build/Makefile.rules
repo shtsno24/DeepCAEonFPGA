@@ -2,7 +2,7 @@
 #
 # Makefile rules for autopilot SystemC simulation flow
 #
-#-  (c) Copyright 2011-2018 Xilinx, Inc. All rights reserved.
+#-  (c) Copyright 2011-2019 Xilinx, Inc. All rights reserved.
 #-
 #-  This file contains confidential and proprietary information
 #-  of Xilinx, Inc. and is protected under U.S. and
@@ -72,6 +72,8 @@ MKDIR = mkdir -p
 Make = make
 MV = mv
 RM = rm
+CP = cp
+CD = cd
 
 ### Directory for object files.
 ifndef ObjDir

@@ -1,13 +1,13 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'network'" level="0">
-<item name = "Date">Mon Dec 23 21:13:56 2019
+<item name = "Date">Thu Dec 26 15:16:55 2019
 </item>
-<item name = "Version">2018.3.1 (Build 2489210 on Tue Mar 26 04:40:43 MDT 2019)</item>
+<item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">HLS</item>
 <item name = "Solution">solution1</item>
 <item name = "Product family">zynq</item>
-<item name = "Target device">xc7z020clg400-1</item>
+<item name = "Target device">xc7z020-clg400-1</item>
 </section>
 
 <section name = "Performance Estimates" level="0">

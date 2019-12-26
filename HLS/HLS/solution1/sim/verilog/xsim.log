@@ -1,17 +1,17 @@
 #-----------------------------------------------------------
-# xsim v2018.3.1 (64-bit)
-# SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
-# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
-# Start of session at: Mon Dec 23 21:15:03 2019
-# Process ID: 30827
-# Current directory: /home/masudalab/DeepCAEonFPGA/DeepCAEonFPGA/HLS/HLS/solution1/sim/verilog
+# xsim v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Dec 26 15:18:42 2019
+# Process ID: 15714
+# Current directory: /home/masudalab/DeepCAEonFPGA/HLS/HLS/solution1/sim/verilog
 # Command line: xsim -mode tcl -source {xsim.dir/network/xsim_script.tcl}
-# Log file: /home/masudalab/DeepCAEonFPGA/DeepCAEonFPGA/HLS/HLS/solution1/sim/verilog/xsim.log
-# Journal file: /home/masudalab/DeepCAEonFPGA/DeepCAEonFPGA/HLS/HLS/solution1/sim/verilog/xsim.jou
+# Log file: /home/masudalab/DeepCAEonFPGA/HLS/HLS/solution1/sim/verilog/xsim.log
+# Journal file: /home/masudalab/DeepCAEonFPGA/HLS/HLS/solution1/sim/verilog/xsim.jou
 #-----------------------------------------------------------
 source xsim.dir/network/xsim_script.tcl
 # xsim {network} -autoloadwcfg -tclbatch {network.tcl}
-Vivado Simulator 2018.3
+Vivado Simulator 2019.1
 Time resolution is 1 ps
 source network.tcl
 ## log_wave -r /
@@ -141,6 +141,6 @@ WARNING: [Simtcl 6-197] One or more HDL objects could not be logged because of o
 // RTL Simulation : 0 / 1 [n/a] @ "125000"
 // RTL Simulation : 1 / 1 [n/a] @ "20045000"
 ////////////////////////////////////////////////////////////////////////////////////
-$finish called at time : 20085 ns : File "/home/masudalab/DeepCAEonFPGA/DeepCAEonFPGA/HLS/HLS/solution1/sim/verilog/network.autotb.v" Line 498
+$finish called at time : 20085 ns : File "/home/masudalab/DeepCAEonFPGA/HLS/HLS/solution1/sim/verilog/network.autotb.v" Line 495
 ## quit
-INFO: [Common 17-206] Exiting xsim at Mon Dec 23 21:15:12 2019...
+INFO: [Common 17-206] Exiting xsim at Thu Dec 26 15:18:52 2019...

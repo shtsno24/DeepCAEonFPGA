@@ -20,7 +20,7 @@ set script_folder [_tcl::get_script_folder]
 ################################################################
 # Check if script is running in correct Vivado version.
 ################################################################
-set scripts_vivado_version 2018.3
+set scripts_vivado_version 2019.1
 set current_vivado_version [version -short]
 
 if { [string first $scripts_vivado_version $current_vivado_version] == -1 } {
@@ -162,16 +162,18 @@ proc create_root_design { parentCell } {
    CONFIG.HAS_TLAST {1} \
    CONFIG.HAS_TREADY {1} \
    CONFIG.HAS_TSTRB {1} \
-   CONFIG.LAYERED_METADATA {xilinx.com:interface:datatypes:1.0 {TDATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value true}}}} TUSER {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}} \
+   CONFIG.LAYERED_METADATA {undef} \
    CONFIG.TDATA_NUM_BYTES {2} \
    CONFIG.TDEST_WIDTH {1} \
    CONFIG.TID_WIDTH {1} \
    CONFIG.TUSER_WIDTH {1} \
    ] $input_data
+
   set output_data [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:axis_rtl:1.0 output_data ]
   set_property -dict [ list \
    CONFIG.FREQ_HZ {100000000.0} \
    ] $output_data
+
   set s_axi_AXILiteS [ create_bd_intf_port -mode Slave -vlnv xilinx.com:interface:aximm_rtl:1.0 s_axi_AXILiteS ]
   set_property -dict [ list \
    CONFIG.ADDR_WIDTH {12} \
@@ -203,6 +205,7 @@ proc create_root_design { parentCell } {
    CONFIG.WUSER_BITS_PER_BYTE {0} \
    CONFIG.WUSER_WIDTH {0} \
    ] $s_axi_AXILiteS
+
 
   # Create ports
   set ap_clk [ create_bd_port -dir I -type clk ap_clk ]
