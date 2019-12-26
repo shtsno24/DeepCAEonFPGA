@@ -23,7 +23,7 @@
 using namespace std;
 
 //typedef hls::stream< ap_axis<16, 1, 1, 1> > axis;
-typedef ap_axis<16, 2, 5, 6> axis;
+typedef ap_axis<16, 1, 1, 1> axis;
 
 int network(axis input_data[784], axis output_data[784]) {
 #pragma HLS INTERFACE axis register both port=input_data
@@ -35,13 +35,19 @@ int network(axis input_data[784], axis output_data[784]) {
 	//	uint64_t array_length = 16 * 28 * 28;
 	int16_t MemBank_Out[784];
 
-	axis tmp;
+	axis tmp, sig_buffer[784];
 
 
 	int i = 0;
 	do {
 		tmp = input_data[i];
 		MemBank_B[i] = (int16_t)tmp.data;
+		sig_buffer[i].keep = tmp.keep;
+		sig_buffer[i].strb = tmp.strb;
+		sig_buffer[i].user = tmp.user;
+		sig_buffer[i].last = tmp.last;
+		sig_buffer[i].id = tmp.id;
+		sig_buffer[i].dest = tmp.dest;
 		i += 1;
 	} while(tmp.last != 1);
 
@@ -161,19 +167,13 @@ int network(axis input_data[784], axis output_data[784]) {
 
 	for(i = 0; i < array_length; i++){
 #pragma HLS PIPELINE
-//		tmp.dest = 0;
-//		tmp.id = 0;
-//		tmp.keep = 0;
-//		tmp.strb = 0;
 		tmp.data = MemBank_Out[i];
-		tmp.user = 0;
-		tmp.last = 0;
-		if(i == 0){
-			tmp.user = 1;
-		}
-		if(i == array_length - 1){
-			tmp.last = 1;
-		}
+		tmp.keep = sig_buffer[i].keep;
+		tmp.strb = sig_buffer[i].strb;
+		tmp.user = sig_buffer[i].user;
+		tmp.last = sig_buffer[i].last;
+		tmp.id = sig_buffer[i].id;
+		tmp.dest = sig_buffer[i].dest;
 		output_data[i] = tmp;
 	}
 	return(0);

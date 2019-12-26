@@ -1,4 +1,6 @@
 network_MemBank_B
 network_MemBank_Out
+network_sig_buffer_keep_V
+network_sig_buffer_user_V
 network_AXILiteS_s_axi
 network

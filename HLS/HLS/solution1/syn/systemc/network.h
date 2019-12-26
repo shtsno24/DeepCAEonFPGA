@@ -13,6 +13,8 @@
 
 #include "network_MemBank_B.h"
 #include "network_MemBank_Out.h"
+#include "network_sig_buffer_keep_V.h"
+#include "network_sig_buffer_user_V.h"
 #include "network_AXILiteS_s_axi.h"
 
 namespace ap_rtl {
@@ -75,6 +77,12 @@ struct network : public sc_module {
     network_AXILiteS_s_axi<C_S_AXI_AXILITES_ADDR_WIDTH,C_S_AXI_AXILITES_DATA_WIDTH>* network_AXILiteS_s_axi_U;
     network_MemBank_B* MemBank_B_U;
     network_MemBank_Out* MemBank_Out_U;
+    network_sig_buffer_keep_V* sig_buffer_keep_V_U;
+    network_sig_buffer_keep_V* sig_buffer_strb_V_U;
+    network_sig_buffer_user_V* sig_buffer_user_V_U;
+    network_sig_buffer_user_V* sig_buffer_last_V_U;
+    network_sig_buffer_user_V* sig_buffer_id_V_U;
+    network_sig_buffer_user_V* sig_buffer_dest_V_U;
     sc_signal< sc_logic > ap_rst_n_inv;
     sc_signal< sc_logic > ap_start;
     sc_signal< sc_logic > ap_done;
@@ -124,6 +132,20 @@ struct network : public sc_module {
     sc_signal< sc_logic > input_data_strb_V_0_load_B;
     sc_signal< sc_lv<2> > input_data_strb_V_0_state;
     sc_signal< sc_logic > input_data_strb_V_0_state_cmp_full;
+    sc_signal< sc_lv<1> > input_data_user_V_0_data_out;
+    sc_signal< sc_logic > input_data_user_V_0_vld_in;
+    sc_signal< sc_logic > input_data_user_V_0_vld_out;
+    sc_signal< sc_logic > input_data_user_V_0_ack_in;
+    sc_signal< sc_logic > input_data_user_V_0_ack_out;
+    sc_signal< sc_lv<1> > input_data_user_V_0_payload_A;
+    sc_signal< sc_lv<1> > input_data_user_V_0_payload_B;
+    sc_signal< sc_logic > input_data_user_V_0_sel_rd;
+    sc_signal< sc_logic > input_data_user_V_0_sel_wr;
+    sc_signal< sc_logic > input_data_user_V_0_sel;
+    sc_signal< sc_logic > input_data_user_V_0_load_A;
+    sc_signal< sc_logic > input_data_user_V_0_load_B;
+    sc_signal< sc_lv<2> > input_data_user_V_0_state;
+    sc_signal< sc_logic > input_data_user_V_0_state_cmp_full;
     sc_signal< sc_lv<1> > input_data_last_V_0_data_out;
     sc_signal< sc_logic > input_data_last_V_0_vld_in;
     sc_signal< sc_logic > input_data_last_V_0_vld_out;
@@ -271,15 +293,11 @@ struct network : public sc_module {
     sc_signal< sc_logic > ap_CS_fsm_pp0_stage0;
     sc_signal< sc_logic > ap_enable_reg_pp0_iter1;
     sc_signal< bool > ap_block_pp0_stage0;
-    sc_signal< sc_lv<1> > icmp_ln162_reg_18309;
+    sc_signal< sc_lv<1> > icmp_ln168_reg_18441;
     sc_signal< sc_logic > ap_enable_reg_pp0_iter2;
-    sc_signal< sc_lv<1> > icmp_ln162_reg_18309_pp0_iter1_reg;
-    sc_signal< sc_lv<10> > i_2_reg_14285;
-    sc_signal< sc_lv<2> > tmp_keep_V_reg_14361;
-    sc_signal< sc_lv<2> > tmp_strb_V_reg_14366;
-    sc_signal< sc_lv<1> > tmp_id_V_reg_14374;
-    sc_signal< sc_lv<1> > tmp_dest_V_reg_14379;
-    sc_signal< sc_lv<32> > i_fu_14326_p2;
+    sc_signal< sc_lv<1> > icmp_ln168_reg_18441_pp0_iter1_reg;
+    sc_signal< sc_lv<10> > i_2_reg_14427;
+    sc_signal< sc_lv<32> > i_fu_14484_p2;
     sc_signal< sc_logic > ap_CS_fsm_state3;
     sc_signal< sc_logic > ap_CS_fsm_state4;
     sc_signal< sc_logic > ap_CS_fsm_state5;
@@ -672,20 +690,22 @@ struct network : public sc_module {
     sc_signal< sc_logic > ap_CS_fsm_state392;
     sc_signal< sc_logic > ap_CS_fsm_state393;
     sc_signal< sc_logic > ap_CS_fsm_state394;
-    sc_signal< sc_lv<1> > icmp_ln162_fu_14332_p2;
+    sc_signal< sc_lv<1> > icmp_ln168_fu_14490_p2;
     sc_signal< bool > ap_block_state396_pp0_stage0_iter0;
     sc_signal< bool > ap_block_state397_pp0_stage0_iter1;
     sc_signal< bool > ap_block_state397_io;
     sc_signal< bool > ap_block_state398_pp0_stage0_iter2;
     sc_signal< bool > ap_block_state398_io;
     sc_signal< bool > ap_block_pp0_stage0_11001;
-    sc_signal< sc_lv<10> > i_1_fu_14338_p2;
+    sc_signal< sc_lv<10> > i_1_fu_14496_p2;
     sc_signal< sc_logic > ap_enable_reg_pp0_iter0;
-    sc_signal< sc_lv<1> > tmp_user_V_fu_14349_p2;
-    sc_signal< sc_lv<1> > tmp_user_V_reg_18323;
-    sc_signal< sc_lv<1> > icmp_ln174_fu_14355_p2;
-    sc_signal< sc_lv<1> > icmp_ln174_reg_18328;
     sc_signal< sc_lv<16> > MemBank_Out_q0;
+    sc_signal< sc_lv<2> > sig_buffer_keep_V_q0;
+    sc_signal< sc_lv<2> > sig_buffer_strb_V_q0;
+    sc_signal< sc_lv<1> > sig_buffer_user_V_q0;
+    sc_signal< sc_lv<1> > sig_buffer_last_V_q0;
+    sc_signal< sc_lv<1> > sig_buffer_id_V_q0;
+    sc_signal< sc_lv<1> > sig_buffer_dest_V_q0;
     sc_signal< sc_logic > ap_CS_fsm_state395;
     sc_signal< bool > ap_block_pp0_stage0_subdone;
     sc_signal< sc_logic > ap_condition_pp0_exit_iter0_state396;
@@ -704,10 +724,28 @@ struct network : public sc_module {
     sc_signal< sc_logic > MemBank_Out_ce1;
     sc_signal< sc_logic > MemBank_Out_we1;
     sc_signal< sc_lv<16> > MemBank_Out_d1;
-    sc_signal< sc_lv<32> > i_0_reg_14274;
-    sc_signal< sc_lv<1> > tmp_last_V_fu_14314_p1;
-    sc_signal< sc_lv<64> > sext_ln43_fu_14296_p1;
-    sc_signal< sc_lv<64> > zext_ln168_fu_14344_p1;
+    sc_signal< sc_lv<10> > sig_buffer_keep_V_address0;
+    sc_signal< sc_logic > sig_buffer_keep_V_ce0;
+    sc_signal< sc_logic > sig_buffer_keep_V_we0;
+    sc_signal< sc_lv<10> > sig_buffer_strb_V_address0;
+    sc_signal< sc_logic > sig_buffer_strb_V_ce0;
+    sc_signal< sc_logic > sig_buffer_strb_V_we0;
+    sc_signal< sc_lv<10> > sig_buffer_user_V_address0;
+    sc_signal< sc_logic > sig_buffer_user_V_ce0;
+    sc_signal< sc_logic > sig_buffer_user_V_we0;
+    sc_signal< sc_lv<10> > sig_buffer_last_V_address0;
+    sc_signal< sc_logic > sig_buffer_last_V_ce0;
+    sc_signal< sc_logic > sig_buffer_last_V_we0;
+    sc_signal< sc_lv<10> > sig_buffer_id_V_address0;
+    sc_signal< sc_logic > sig_buffer_id_V_ce0;
+    sc_signal< sc_logic > sig_buffer_id_V_we0;
+    sc_signal< sc_lv<10> > sig_buffer_dest_V_address0;
+    sc_signal< sc_logic > sig_buffer_dest_V_ce0;
+    sc_signal< sc_logic > sig_buffer_dest_V_we0;
+    sc_signal< sc_lv<32> > i_0_reg_14416;
+    sc_signal< sc_lv<1> > input_data_last_V_tm_fu_14469_p1;
+    sc_signal< sc_lv<64> > sext_ln43_fu_14438_p1;
+    sc_signal< sc_lv<64> > zext_ln170_fu_14502_p1;
     sc_signal< bool > ap_block_pp0_stage0_01001;
     sc_signal< sc_logic > ap_CS_fsm_state399;
     sc_signal< sc_logic > ap_CS_fsm_state400;
@@ -2307,7 +2345,6 @@ struct network : public sc_module {
     static const sc_lv<64> ap_const_lv64_30F;
     static const sc_lv<10> ap_const_lv10_310;
     static const sc_lv<10> ap_const_lv10_1;
-    static const sc_lv<10> ap_const_lv10_30F;
     static const sc_lv<32> ap_const_lv32_18C;
     static const sc_lv<32> ap_const_lv32_18D;
     // Thread declarations
@@ -2742,10 +2779,9 @@ struct network : public sc_module {
     void thread_ap_ready();
     void thread_ap_return();
     void thread_ap_rst_n_inv();
-    void thread_i_1_fu_14338_p2();
-    void thread_i_fu_14326_p2();
-    void thread_icmp_ln162_fu_14332_p2();
-    void thread_icmp_ln174_fu_14355_p2();
+    void thread_i_1_fu_14496_p2();
+    void thread_i_fu_14484_p2();
+    void thread_icmp_ln168_fu_14490_p2();
     void thread_input_data_TDATA_blk_n();
     void thread_input_data_TREADY();
     void thread_input_data_data_V_0_ack_in();
@@ -2793,6 +2829,7 @@ struct network : public sc_module {
     void thread_input_data_last_V_0_state_cmp_full();
     void thread_input_data_last_V_0_vld_in();
     void thread_input_data_last_V_0_vld_out();
+    void thread_input_data_last_V_tm_fu_14469_p1();
     void thread_input_data_strb_V_0_ack_in();
     void thread_input_data_strb_V_0_ack_out();
     void thread_input_data_strb_V_0_data_out();
@@ -2802,6 +2839,15 @@ struct network : public sc_module {
     void thread_input_data_strb_V_0_state_cmp_full();
     void thread_input_data_strb_V_0_vld_in();
     void thread_input_data_strb_V_0_vld_out();
+    void thread_input_data_user_V_0_ack_in();
+    void thread_input_data_user_V_0_ack_out();
+    void thread_input_data_user_V_0_data_out();
+    void thread_input_data_user_V_0_load_A();
+    void thread_input_data_user_V_0_load_B();
+    void thread_input_data_user_V_0_sel();
+    void thread_input_data_user_V_0_state_cmp_full();
+    void thread_input_data_user_V_0_vld_in();
+    void thread_input_data_user_V_0_vld_out();
     void thread_output_data_TDATA();
     void thread_output_data_TDATA_blk_n();
     void thread_output_data_TDEST();
@@ -2874,10 +2920,26 @@ struct network : public sc_module {
     void thread_output_data_user_V_1_state_cmp_full();
     void thread_output_data_user_V_1_vld_in();
     void thread_output_data_user_V_1_vld_out();
-    void thread_sext_ln43_fu_14296_p1();
-    void thread_tmp_last_V_fu_14314_p1();
-    void thread_tmp_user_V_fu_14349_p2();
-    void thread_zext_ln168_fu_14344_p1();
+    void thread_sext_ln43_fu_14438_p1();
+    void thread_sig_buffer_dest_V_address0();
+    void thread_sig_buffer_dest_V_ce0();
+    void thread_sig_buffer_dest_V_we0();
+    void thread_sig_buffer_id_V_address0();
+    void thread_sig_buffer_id_V_ce0();
+    void thread_sig_buffer_id_V_we0();
+    void thread_sig_buffer_keep_V_address0();
+    void thread_sig_buffer_keep_V_ce0();
+    void thread_sig_buffer_keep_V_we0();
+    void thread_sig_buffer_last_V_address0();
+    void thread_sig_buffer_last_V_ce0();
+    void thread_sig_buffer_last_V_we0();
+    void thread_sig_buffer_strb_V_address0();
+    void thread_sig_buffer_strb_V_ce0();
+    void thread_sig_buffer_strb_V_we0();
+    void thread_sig_buffer_user_V_address0();
+    void thread_sig_buffer_user_V_ce0();
+    void thread_sig_buffer_user_V_we0();
+    void thread_zext_ln170_fu_14502_p1();
     void thread_ap_NS_fsm();
     void thread_hdltv_gen();
 };

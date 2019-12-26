@@ -22,8 +22,8 @@ vlib riviera/generic_baseblocks_v2_1_0
 vlib riviera/axi_register_slice_v2_1_19
 vlib riviera/axi_data_fifo_v2_1_18
 vlib riviera/axi_crossbar_v2_1_20
-vlib riviera/axi_protocol_converter_v2_1_19
 vlib riviera/xlconcat_v2_1_3
+vlib riviera/axi_protocol_converter_v2_1_19
 
 vmap xilinx_vip riviera/xilinx_vip
 vmap xil_defaultlib riviera/xil_defaultlib
@@ -46,8 +46,8 @@ vmap generic_baseblocks_v2_1_0 riviera/generic_baseblocks_v2_1_0
 vmap axi_register_slice_v2_1_19 riviera/axi_register_slice_v2_1_19
 vmap axi_data_fifo_v2_1_18 riviera/axi_data_fifo_v2_1_18
 vmap axi_crossbar_v2_1_20 riviera/axi_crossbar_v2_1_20
-vmap axi_protocol_converter_v2_1_19 riviera/axi_protocol_converter_v2_1_19
 vmap xlconcat_v2_1_3 riviera/xlconcat_v2_1_3
+vmap axi_protocol_converter_v2_1_19 riviera/axi_protocol_converter_v2_1_19
 
 vlog -work xilinx_vip  -sv2k12 "+incdir+/tools/Xilinx/Vivado/2019.1/data/xilinx_vip/include" \
 "/tools/Xilinx/Vivado/2019.1/data/xilinx_vip/hdl/axi4stream_vip_axi4streampc.sv" \
@@ -118,6 +118,9 @@ vcom -work proc_sys_reset_v5_0_13 -93 \
 
 vcom -work xil_defaultlib -93 \
 "../../../bd/design_1/ip/design_1_rst_ps7_0_100M_0/sim/design_1_rst_ps7_0_100M_0.vhd" \
+
+vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/8c62/hdl" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/1ddd/hdl/verilog" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/b2d0/hdl/verilog" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0" "+incdir+/tools/Xilinx/Vivado/2019.1/data/xilinx_vip/include" \
+"../../../bd/design_1/ip/design_1_axi_smc_0/bd_0/sim/bd_afc3.v" \
 
 vlog -work xlconstant_v1_1_6  -v2k5 "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/8c62/hdl" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/1ddd/hdl/verilog" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/b2d0/hdl/verilog" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0" "+incdir+/tools/Xilinx/Vivado/2019.1/data/xilinx_vip/include" \
 "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/66e7/hdl/xlconstant_v1_1_vl_rfs.v" \
@@ -195,7 +198,6 @@ vlog -work xil_defaultlib  -sv2k12 "+incdir+../../../../HLx.srcs/sources_1/bd/de
 "../../../bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_26/sim/bd_afc3_m00e_0.sv" \
 
 vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/8c62/hdl" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/1ddd/hdl/verilog" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/b2d0/hdl/verilog" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0" "+incdir+/tools/Xilinx/Vivado/2019.1/data/xilinx_vip/include" \
-"../../../bd/design_1/ip/design_1_axi_smc_0/bd_0/sim/bd_afc3.v" \
 "../../../bd/design_1/ip/design_1_axi_smc_0/sim/design_1_axi_smc_0.v" \
 
 vlog -work generic_baseblocks_v2_1_0  -v2k5 "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/8c62/hdl" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/1ddd/hdl/verilog" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/b2d0/hdl/verilog" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0" "+incdir+/tools/Xilinx/Vivado/2019.1/data/xilinx_vip/include" \
@@ -212,23 +214,25 @@ vlog -work axi_crossbar_v2_1_20  -v2k5 "+incdir+../../../../HLx.srcs/sources_1/b
 
 vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/8c62/hdl" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/1ddd/hdl/verilog" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/b2d0/hdl/verilog" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0" "+incdir+/tools/Xilinx/Vivado/2019.1/data/xilinx_vip/include" \
 "../../../bd/design_1/ip/design_1_xbar_0/sim/design_1_xbar_0.v" \
-"../../../../HLx.srcs/sources_1/bd/design_1/ipshared/0d5b/hdl/verilog/network_AXILiteS_s_axi.v" \
-"../../../../HLx.srcs/sources_1/bd/design_1/ipshared/0d5b/hdl/verilog/network_MemBank_B.v" \
-"../../../../HLx.srcs/sources_1/bd/design_1/ipshared/0d5b/hdl/verilog/network_MemBank_Out.v" \
-"../../../../HLx.srcs/sources_1/bd/design_1/ipshared/0d5b/hdl/verilog/network.v" \
+"../../../../HLx.srcs/sources_1/bd/design_1/ipshared/4c18/hdl/verilog/network_AXILiteS_s_axi.v" \
+"../../../../HLx.srcs/sources_1/bd/design_1/ipshared/4c18/hdl/verilog/network_MemBank_B.v" \
+"../../../../HLx.srcs/sources_1/bd/design_1/ipshared/4c18/hdl/verilog/network_MemBank_Out.v" \
+"../../../../HLx.srcs/sources_1/bd/design_1/ipshared/4c18/hdl/verilog/network_sig_buffer_keep_V.v" \
+"../../../../HLx.srcs/sources_1/bd/design_1/ipshared/4c18/hdl/verilog/network_sig_buffer_user_V.v" \
+"../../../../HLx.srcs/sources_1/bd/design_1/ipshared/4c18/hdl/verilog/network.v" \
 "../../../bd/design_1/ip/design_1_network_0_0/sim/design_1_network_0_0.v" \
-
-vlog -work axi_protocol_converter_v2_1_19  -v2k5 "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/8c62/hdl" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/1ddd/hdl/verilog" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/b2d0/hdl/verilog" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0" "+incdir+/tools/Xilinx/Vivado/2019.1/data/xilinx_vip/include" \
-"../../../../HLx.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
-
-vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/8c62/hdl" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/1ddd/hdl/verilog" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/b2d0/hdl/verilog" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0" "+incdir+/tools/Xilinx/Vivado/2019.1/data/xilinx_vip/include" \
-"../../../bd/design_1/ip/design_1_auto_pc_0/sim/design_1_auto_pc_0.v" \
 
 vlog -work xlconcat_v2_1_3  -v2k5 "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/8c62/hdl" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/1ddd/hdl/verilog" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/b2d0/hdl/verilog" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0" "+incdir+/tools/Xilinx/Vivado/2019.1/data/xilinx_vip/include" \
 "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v" \
 
 vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/8c62/hdl" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/1ddd/hdl/verilog" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/b2d0/hdl/verilog" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0" "+incdir+/tools/Xilinx/Vivado/2019.1/data/xilinx_vip/include" \
 "../../../bd/design_1/ip/design_1_xlconcat_0_0/sim/design_1_xlconcat_0_0.v" \
+
+vlog -work axi_protocol_converter_v2_1_19  -v2k5 "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/8c62/hdl" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/1ddd/hdl/verilog" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/b2d0/hdl/verilog" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0" "+incdir+/tools/Xilinx/Vivado/2019.1/data/xilinx_vip/include" \
+"../../../../HLx.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
+
+vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/8c62/hdl" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/1ddd/hdl/verilog" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/b2d0/hdl/verilog" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0" "+incdir+/tools/Xilinx/Vivado/2019.1/data/xilinx_vip/include" \
+"../../../bd/design_1/ip/design_1_auto_pc_0/sim/design_1_auto_pc_0.v" \
 "../../../bd/design_1/sim/design_1.v" \
 
 vlog -work xil_defaultlib \

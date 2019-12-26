@@ -1187,11 +1187,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu Dec 26 08:41:40 UTC 2019</spirit:value>
+            <spirit:value>Thu Dec 26 09:59:20 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:95b436cf</spirit:value>
+            <spirit:value>9:43ec5c70</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1202,7 +1202,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:95b436cf</spirit:value>
+            <spirit:value>9:43ec5c70</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1218,11 +1218,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu Dec 26 08:41:40 UTC 2019</spirit:value>
+            <spirit:value>Thu Dec 26 09:59:20 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:95b436cf</spirit:value>
+            <spirit:value>9:43ec5c70</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1238,11 +1238,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu Dec 26 08:41:40 UTC 2019</spirit:value>
+            <spirit:value>Thu Dec 26 09:59:20 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:a402d047</spirit:value>
+            <spirit:value>9:725abaf8</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1258,11 +1258,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu Dec 26 08:41:40 UTC 2019</spirit:value>
+            <spirit:value>Thu Dec 26 09:59:20 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:a402d047</spirit:value>
+            <spirit:value>9:725abaf8</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1276,11 +1276,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu Dec 26 08:44:09 UTC 2019</spirit:value>
+            <spirit:value>Thu Dec 26 10:02:30 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:95b436cf</spirit:value>
+            <spirit:value>9:43ec5c70</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1903,19 +1903,27 @@
         <spirit:userFileType>USED_IN_out_of_context</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/0d5b/hdl/verilog/network_AXILiteS_s_axi.v</spirit:name>
+        <spirit:name>../../ipshared/4c18/hdl/verilog/network_AXILiteS_s_axi.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/0d5b/hdl/verilog/network_MemBank_B.v</spirit:name>
+        <spirit:name>../../ipshared/4c18/hdl/verilog/network_MemBank_B.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/0d5b/hdl/verilog/network_MemBank_Out.v</spirit:name>
+        <spirit:name>../../ipshared/4c18/hdl/verilog/network_MemBank_Out.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/0d5b/hdl/verilog/network.v</spirit:name>
+        <spirit:name>../../ipshared/4c18/hdl/verilog/network_sig_buffer_keep_V.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/4c18/hdl/verilog/network_sig_buffer_user_V.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/4c18/hdl/verilog/network.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
@@ -1930,22 +1938,32 @@
     <spirit:fileSet>
       <spirit:name>xilinx_verilogbehavioralsimulation_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/0d5b/hdl/verilog/network_AXILiteS_s_axi.v</spirit:name>
+        <spirit:name>../../ipshared/4c18/hdl/verilog/network_AXILiteS_s_axi.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/0d5b/hdl/verilog/network_MemBank_B.v</spirit:name>
+        <spirit:name>../../ipshared/4c18/hdl/verilog/network_MemBank_B.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/0d5b/hdl/verilog/network_MemBank_Out.v</spirit:name>
+        <spirit:name>../../ipshared/4c18/hdl/verilog/network_MemBank_Out.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/0d5b/hdl/verilog/network.v</spirit:name>
+        <spirit:name>../../ipshared/4c18/hdl/verilog/network_sig_buffer_keep_V.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/4c18/hdl/verilog/network_sig_buffer_user_V.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/4c18/hdl/verilog/network.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -2061,7 +2079,7 @@
     <xilinx:coreExtensions>
       <xilinx:displayName>Network</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>1912261741</xilinx:coreRevision>
+      <xilinx:coreRevision>1912261858</xilinx:coreRevision>
       <xilinx:configElementInfos>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.AP_CLK.CLK_DOMAIN" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.AP_CLK.FREQ_HZ" xilinx:valueSource="user_prop" xilinx:valuePermission="bd"/>
@@ -2109,7 +2127,7 @@
       <xilinx:xilinxVersion>2019.1</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="0a3280ec"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="5dc19620"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="db89ee9c"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="9489cf85"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="280a848e"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="1cf4461c"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="0d9cfa94"/>

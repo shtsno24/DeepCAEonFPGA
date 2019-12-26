@@ -234,12 +234,16 @@
       "impl\/vhdl\/network_AXILiteS_s_axi.vhd",
       "impl\/vhdl\/network_MemBank_B.vhd",
       "impl\/vhdl\/network_MemBank_Out.vhd",
+      "impl\/vhdl\/network_sig_buffer_keep_V.vhd",
+      "impl\/vhdl\/network_sig_buffer_user_V.vhd",
       "impl\/vhdl\/network.vhd"
     ],
     "Verilog": [
       "impl\/verilog\/network_AXILiteS_s_axi.v",
       "impl\/verilog\/network_MemBank_B.v",
       "impl\/verilog\/network_MemBank_Out.v",
+      "impl\/verilog\/network_sig_buffer_keep_V.v",
+      "impl\/verilog\/network_sig_buffer_user_V.v",
       "impl\/verilog\/network.v"
     ],
     "SwDriver": [
@@ -811,9 +815,9 @@
           }
         ],
         "Area": {
-          "BRAM_18K": "17",
-          "FF": "667",
-          "LUT": "9377",
+          "BRAM_18K": "19",
+          "FF": "673",
+          "LUT": "9529",
           "URAM": "0",
           "DSP48E": "0"
         }
@@ -829,7 +833,7 @@
   },
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2019-12-26 17:37:14 JST",
+    "Time": "2019-12-26 18:53:56 JST",
     "ToolName": "vivado_hls",
     "ToolVersion": "2019.1"
   }

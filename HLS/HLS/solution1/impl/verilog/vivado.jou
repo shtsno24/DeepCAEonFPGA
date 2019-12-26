@@ -2,8 +2,8 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Thu Dec 26 17:41:30 2019
-# Process ID: 8724
+# Start of session at: Thu Dec 26 18:59:10 2019
+# Process ID: 21914
 # Current directory: /home/masudalab/DeepCAEonFPGA/HLS/HLS/solution1/impl/verilog
 # Command line: vivado -notrace -mode batch -source run_vivado.tcl
 # Log file: /home/masudalab/DeepCAEonFPGA/HLS/HLS/solution1/impl/verilog/vivado.log

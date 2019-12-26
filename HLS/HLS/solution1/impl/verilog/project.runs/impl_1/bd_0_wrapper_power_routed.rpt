@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-| Date             : Thu Dec 26 17:45:54 2019
+| Date             : Thu Dec 26 19:04:15 2019
 | Host             : masudalab-ubuntu running 64-bit Ubuntu 18.04.3 LTS
 | Command          : report_power -file bd_0_wrapper_power_routed.rpt -pb bd_0_wrapper_power_summary_routed.pb -rpx bd_0_wrapper_power_routed.rpx
 | Design           : bd_0_wrapper
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.131        |
+| Total On-Chip Power (W)  | 0.129        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.028        |
+| Dynamic (W)              | 0.026        |
 | Device Static (W)        | 0.103        |
 | Effective TJA (C/W)      | 11.5         |
 | Max Ambient (C)          | 83.5         |
@@ -49,21 +49,22 @@ Table of Contents
 1.1 On-Chip Components
 ----------------------
 
-+----------------+-----------+----------+-----------+-----------------+
-| On-Chip        | Power (W) | Used     | Available | Utilization (%) |
-+----------------+-----------+----------+-----------+-----------------+
-| Clocks         |     0.005 |        3 |       --- |             --- |
-| Slice Logic    |     0.002 |     2455 |       --- |             --- |
-|   LUT as Logic |     0.002 |     1497 |     53200 |            2.81 |
-|   Register     |    <0.001 |      606 |    106400 |            0.57 |
-|   CARRY4       |    <0.001 |        4 |     13300 |            0.03 |
-|   F7/F8 Muxes  |    <0.001 |        1 |     53200 |           <0.01 |
-|   Others       |     0.000 |        9 |       --- |             --- |
-| Signals        |     0.003 |     2332 |       --- |             --- |
-| Block RAM      |     0.018 |      8.5 |       140 |            6.07 |
-| Static Power   |     0.103 |          |           |                 |
-| Total          |     0.131 |          |           |                 |
-+----------------+-----------+----------+-----------+-----------------+
++--------------------------+-----------+----------+-----------+-----------------+
+| On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
++--------------------------+-----------+----------+-----------+-----------------+
+| Clocks                   |     0.005 |        3 |       --- |             --- |
+| Slice Logic              |     0.001 |     2563 |       --- |             --- |
+|   LUT as Logic           |     0.001 |     1511 |     53200 |            2.84 |
+|   LUT as Distributed RAM |    <0.001 |       52 |     17400 |            0.30 |
+|   Register               |    <0.001 |      608 |    106400 |            0.57 |
+|   F7/F8 Muxes            |    <0.001 |       40 |     53200 |            0.08 |
+|   CARRY4                 |    <0.001 |        4 |     13300 |            0.03 |
+|   Others                 |     0.000 |       21 |       --- |             --- |
+| Signals                  |     0.002 |     2359 |       --- |             --- |
+| Block RAM                |     0.018 |      9.5 |       140 |            6.79 |
+| Static Power             |     0.103 |          |           |                 |
+| Total                    |     0.129 |          |           |                 |
++--------------------------+-----------+----------+-----------+-----------------+
 
 
 1.2 Power Supply Summary
@@ -72,7 +73,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.034 |       0.026 |      0.008 |
+| Vccint    |       1.000 |     0.032 |       0.024 |      0.008 |
 | Vccaux    |       1.800 |     0.010 |       0.000 |      0.010 |
 | Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -148,10 +149,10 @@ Table of Contents
 +--------------+-----------+
 | Name         | Power (W) |
 +--------------+-----------+
-| bd_0_wrapper |     0.028 |
-|   bd_0_i     |     0.028 |
-|     hls_inst |     0.028 |
-|       inst   |     0.028 |
+| bd_0_wrapper |     0.026 |
+|   bd_0_i     |     0.026 |
+|     hls_inst |     0.026 |
+|       inst   |     0.026 |
 +--------------+-----------+
 
 

@@ -28568,36 +28568,36 @@ int network(axis input_data[784], axis output_data[784]) {_ssdm_SpecArrayDimSize
 
  int16_t MemBank_Out[784];
 
- axis tmp;
+ axis tmp, sig_buffer[784];
 
 
  int i = 0;
  do {
   tmp = input_data[i];
   MemBank_B[i] = (int16_t)tmp.data;
+  sig_buffer[i].keep = tmp.keep;
+  sig_buffer[i].strb = tmp.strb;
+  sig_buffer[i].user = tmp.user;
+  sig_buffer[i].last = tmp.last;
+  sig_buffer[i].id = tmp.id;
+  sig_buffer[i].dest = tmp.dest;
   i += 1;
  } while(tmp.last != 1);
-# 139 "../mnist_AXI_Stream.cpp"
+# 145 "../mnist_AXI_Stream.cpp"
  for(i = 0; i < array_length; i++){
 #pragma HLS UNROLL
  MemBank_Out[i] = (int16_t)MemBank_B[i];
  }
-# 162 "../mnist_AXI_Stream.cpp"
+# 168 "../mnist_AXI_Stream.cpp"
  for(i = 0; i < array_length; i++){
 #pragma HLS PIPELINE
-
-
-
-
  tmp.data = MemBank_Out[i];
-  tmp.user = 0;
-  tmp.last = 0;
-  if(i == 0){
-   tmp.user = 1;
-  }
-  if(i == array_length - 1){
-   tmp.last = 1;
-  }
+  tmp.keep = sig_buffer[i].keep;
+  tmp.strb = sig_buffer[i].strb;
+  tmp.user = sig_buffer[i].user;
+  tmp.last = sig_buffer[i].last;
+  tmp.id = sig_buffer[i].id;
+  tmp.dest = sig_buffer[i].dest;
   output_data[i] = tmp;
  }
  return(0);
