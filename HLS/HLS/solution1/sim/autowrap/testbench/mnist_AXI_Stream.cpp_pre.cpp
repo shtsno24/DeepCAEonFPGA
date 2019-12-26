@@ -75984,7 +75984,7 @@ int network(axis input_data[784], axis output_data[784]) {
  int i = 0;
  do {
   tmp = input_data[i];
-  MemBank_B[i] = (int16_t)tmp.data;
+  MemBank_A[i] = (int16_t)tmp.data;
   sig_buffer[i].keep = tmp.keep;
   sig_buffer[i].strb = tmp.strb;
   sig_buffer[i].user = tmp.user;
@@ -75993,9 +75993,100 @@ int network(axis input_data[784], axis output_data[784]) {
   sig_buffer[i].dest = tmp.dest;
   i += 1;
  } while(tmp.last != 1);
-# 145 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
+
+
+
+
+
+
+ padding2d_fix16(1, 1,
+ input_0_depth, input_0_height, input_0_width, (int16_t*)MemBank_A,
+ Padding2D_0_height, Padding2D_0_width, (int16_t*)MemBank_B);
+
+ depthwise_conv2d_fix16(Padding2D_0_depth, Padding2D_0_height, Padding2D_0_width, (int16_t*)MemBank_B,
+ Padding2D_0_depth, SeparableConv2D_0_height, SeparableConv2D_0_width, (int16_t*)MemBank_A,
+ (int16_t*) SeparableConv2D_0_b_d,
+ 3, 3, (int16_t*) SeparableConv2D_0_w_d, 0, 14);
+
+ pointwise_conv2d_fix16(Padding2D_0_depth, SeparableConv2D_0_height, SeparableConv2D_0_width, (int16_t*)MemBank_A,
+ SeparableConv2D_0_depth, SeparableConv2D_0_height, SeparableConv2D_0_width, (int16_t*)MemBank_B,
+ (int16_t*)SeparableConv2D_0_b_p,
+ 1, 1, (int16_t*)SeparableConv2D_0_w_p, 1, 14);
+
+ max_pooling2d_fix16(2,
+ SeparableConv2D_0_depth, SeparableConv2D_0_height, SeparableConv2D_0_width, (int16_t*)MemBank_B,
+ MaxPooling2D_0_depth, MaxPooling2D_0_height, MaxPooling2D_0_width, (int16_t*)MemBank_A);
+
+ padding2d_fix16(1, 1,
+ MaxPooling2D_0_depth, MaxPooling2D_0_height, MaxPooling2D_0_width, (int16_t*)MemBank_A,
+ Padding2D_1_height, Padding2D_1_width, (int16_t*)MemBank_B);
+
+ depthwise_conv2d_fix16(Padding2D_1_depth, Padding2D_1_height, Padding2D_1_width, (int16_t*)MemBank_B,
+ Padding2D_1_depth, SeparableConv2D_1_height, SeparableConv2D_1_width, (int16_t*)MemBank_A,
+ (int16_t*) SeparableConv2D_1_b_d,
+ 3, 3, (int16_t*) SeparableConv2D_1_w_d, 0, 14);
+
+ pointwise_conv2d_fix16(Padding2D_1_depth, SeparableConv2D_1_height, SeparableConv2D_1_width, (int16_t*)MemBank_A,
+ SeparableConv2D_1_depth, SeparableConv2D_1_height, SeparableConv2D_1_width, (int16_t*)MemBank_B,
+ (int16_t*)SeparableConv2D_1_b_p,
+ 1, 1, (int16_t*)SeparableConv2D_1_w_p, 1, 14);
+
+ max_pooling2d_fix16(2,
+ SeparableConv2D_1_depth, SeparableConv2D_1_height, SeparableConv2D_1_width, (int16_t*)MemBank_B,
+ MaxPooling2D_1_depth, MaxPooling2D_1_height, MaxPooling2D_1_width, (int16_t*)MemBank_A);
+
+ padding2d_fix16(1, 1,
+ MaxPooling2D_1_depth, MaxPooling2D_1_height, MaxPooling2D_1_width, (int16_t*)MemBank_A,
+ Padding2D_2_height, Padding2D_2_width, (int16_t*)MemBank_B);
+
+ depthwise_conv2d_fix16(Padding2D_2_depth, Padding2D_2_height, Padding2D_2_width, (int16_t*)MemBank_B,
+ Padding2D_2_depth, SeparableConv2D_2_height, SeparableConv2D_2_width, (int16_t*)MemBank_A,
+ (int16_t*) SeparableConv2D_2_b_d,
+ 3, 3, (int16_t*) SeparableConv2D_2_w_d, 0, 14);
+
+ pointwise_conv2d_fix16(Padding2D_2_depth, SeparableConv2D_2_height, SeparableConv2D_2_width, (int16_t*)MemBank_A,
+ SeparableConv2D_2_depth, SeparableConv2D_2_height, SeparableConv2D_2_width, (int16_t*)MemBank_B,
+ (int16_t*)SeparableConv2D_2_b_p,
+ 1, 1, (int16_t*)SeparableConv2D_2_w_p, 1, 14);
+
+ up_sampling2d_fix16(2,
+ SeparableConv2D_2_depth, SeparableConv2D_2_height, SeparableConv2D_2_width, (int16_t*)MemBank_B,
+ UpSampling2D_0_depth, UpSampling2D_0_height, UpSampling2D_0_width, (int16_t*)MemBank_A);
+
+ padding2d_fix16(1, 1,
+ UpSampling2D_0_depth, UpSampling2D_0_height, UpSampling2D_0_width, (int16_t*)MemBank_A,
+ Padding2D_3_height, Padding2D_3_width, (int16_t*)MemBank_B);
+
+ depthwise_conv2d_fix16(Padding2D_3_depth, Padding2D_3_height, Padding2D_3_width, (int16_t*)MemBank_B,
+ Padding2D_3_depth, SeparableConv2D_3_height, SeparableConv2D_3_width, (int16_t*)MemBank_A,
+ (int16_t*) SeparableConv2D_3_b_d,
+ 3, 3, (int16_t*) SeparableConv2D_3_w_d, 0, 14);
+
+ pointwise_conv2d_fix16(Padding2D_3_depth, SeparableConv2D_3_height, SeparableConv2D_3_width, (int16_t*)MemBank_A,
+ SeparableConv2D_3_depth, SeparableConv2D_3_height, SeparableConv2D_3_width, (int16_t*)MemBank_B,
+ (int16_t*)SeparableConv2D_3_b_p,
+ 1, 1, (int16_t*)SeparableConv2D_3_w_p, 1, 14);
+
+ up_sampling2d_fix16(2,
+ SeparableConv2D_3_depth, SeparableConv2D_3_height, SeparableConv2D_3_width, (int16_t*)MemBank_B,
+ UpSampling2D_1_depth, UpSampling2D_1_height, UpSampling2D_1_width, (int16_t*)MemBank_A);
+
+ padding2d_fix16(1, 1,
+ UpSampling2D_1_depth, UpSampling2D_1_height, UpSampling2D_1_width, (int16_t*)MemBank_A,
+ Padding2D_4_height, Padding2D_4_width, (int16_t*)MemBank_B);
+
+ depthwise_conv2d_fix16(Padding2D_4_depth, Padding2D_4_height, Padding2D_4_width, (int16_t*)MemBank_B,
+ Padding2D_4_depth, SeparableConv2D_4_height, SeparableConv2D_4_width, (int16_t*)MemBank_A,
+ (int16_t*) SeparableConv2D_4_b_d,
+ 3, 3, (int16_t*) SeparableConv2D_4_w_d, 0, 14);
+
+ pointwise_conv2d_fix16(Padding2D_4_depth, SeparableConv2D_4_height, SeparableConv2D_4_width, (int16_t*)MemBank_A,
+ SeparableConv2D_4_depth, SeparableConv2D_4_height, SeparableConv2D_4_width, (int16_t*)MemBank_B,
+ (int16_t*)SeparableConv2D_4_b_p,
+ 1, 1, (int16_t*)SeparableConv2D_4_w_p, 1, 14);
+
  for(i = 0; i < array_length; i++){
-#pragma HLS UNROLL
+#pragma HLS PIPELINE
   MemBank_Out[i] = (int16_t)MemBank_B[i];
  }
 # 168 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"

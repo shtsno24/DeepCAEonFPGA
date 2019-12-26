@@ -212,20 +212,50 @@ vlog -work axi_crossbar_v2_1_20  -v2k5 "+incdir+../../../../HLx.srcs/sources_1/b
 
 vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/8c62/hdl" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/1ddd/hdl/verilog" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/b2d0/hdl/verilog" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0" "+incdir+/tools/Xilinx/Vivado/2019.1/data/xilinx_vip/include" \
 "../../../bd/design_1/ip/design_1_xbar_0/sim/design_1_xbar_0.v" \
-"../../../../HLx.srcs/sources_1/bd/design_1/ipshared/4c18/hdl/verilog/network_AXILiteS_s_axi.v" \
-"../../../../HLx.srcs/sources_1/bd/design_1/ipshared/4c18/hdl/verilog/network_MemBank_B.v" \
-"../../../../HLx.srcs/sources_1/bd/design_1/ipshared/4c18/hdl/verilog/network_MemBank_Out.v" \
-"../../../../HLx.srcs/sources_1/bd/design_1/ipshared/4c18/hdl/verilog/network_sig_buffer_keep_V.v" \
-"../../../../HLx.srcs/sources_1/bd/design_1/ipshared/4c18/hdl/verilog/network_sig_buffer_user_V.v" \
-"../../../../HLx.srcs/sources_1/bd/design_1/ipshared/4c18/hdl/verilog/network.v" \
+"../../../../HLx.srcs/sources_1/bd/design_1/ipshared/a2e6/hdl/verilog/depthwise_conv2d_fix.v" \
+"../../../../HLx.srcs/sources_1/bd/design_1/ipshared/a2e6/hdl/verilog/depthwise_conv2d_fix_1.v" \
+"../../../../HLx.srcs/sources_1/bd/design_1/ipshared/a2e6/hdl/verilog/depthwise_conv2d_fix_2.v" \
+"../../../../HLx.srcs/sources_1/bd/design_1/ipshared/a2e6/hdl/verilog/depthwise_conv2d_fix_SeparableConv2D_0_w_1.v" \
+"../../../../HLx.srcs/sources_1/bd/design_1/ipshared/a2e6/hdl/verilog/max_pooling2d_fix16.v" \
+"../../../../HLx.srcs/sources_1/bd/design_1/ipshared/a2e6/hdl/verilog/network_AXILiteS_s_axi.v" \
+"../../../../HLx.srcs/sources_1/bd/design_1/ipshared/a2e6/hdl/verilog/network_MemBank_A.v" \
+"../../../../HLx.srcs/sources_1/bd/design_1/ipshared/a2e6/hdl/verilog/network_MemBank_Out.v" \
+"../../../../HLx.srcs/sources_1/bd/design_1/ipshared/a2e6/hdl/verilog/network_mul_mul_15s_16s_30_1_1.v" \
+"../../../../HLx.srcs/sources_1/bd/design_1/ipshared/a2e6/hdl/verilog/network_mul_mul_16s_15s_30_1_1.v" \
+"../../../../HLx.srcs/sources_1/bd/design_1/ipshared/a2e6/hdl/verilog/network_mul_mul_16s_16s_30_1_1.v" \
+"../../../../HLx.srcs/sources_1/bd/design_1/ipshared/a2e6/hdl/verilog/network_SeparableConv2D_1_b_1.v" \
+"../../../../HLx.srcs/sources_1/bd/design_1/ipshared/a2e6/hdl/verilog/network_SeparableConv2D_1_w_1.v" \
+"../../../../HLx.srcs/sources_1/bd/design_1/ipshared/a2e6/hdl/verilog/network_SeparableConv2D_2_b_1.v" \
+"../../../../HLx.srcs/sources_1/bd/design_1/ipshared/a2e6/hdl/verilog/network_SeparableConv2D_2_w_1.v" \
+"../../../../HLx.srcs/sources_1/bd/design_1/ipshared/a2e6/hdl/verilog/network_SeparableConv2D_3_w_1.v" \
+"../../../../HLx.srcs/sources_1/bd/design_1/ipshared/a2e6/hdl/verilog/network_SeparableConv2D_4_w_1.v" \
+"../../../../HLx.srcs/sources_1/bd/design_1/ipshared/a2e6/hdl/verilog/network_sig_buffer_keep_V.v" \
+"../../../../HLx.srcs/sources_1/bd/design_1/ipshared/a2e6/hdl/verilog/network_sig_buffer_user_V.v" \
+"../../../../HLx.srcs/sources_1/bd/design_1/ipshared/a2e6/hdl/verilog/padding2d_fix16.v" \
+"../../../../HLx.srcs/sources_1/bd/design_1/ipshared/a2e6/hdl/verilog/pointwise_conv2d_fix.v" \
+"../../../../HLx.srcs/sources_1/bd/design_1/ipshared/a2e6/hdl/verilog/pointwise_conv2d_fix_1.v" \
+"../../../../HLx.srcs/sources_1/bd/design_1/ipshared/a2e6/hdl/verilog/pointwise_conv2d_fix_1_SeparableConv2D_1_b_s.v" \
+"../../../../HLx.srcs/sources_1/bd/design_1/ipshared/a2e6/hdl/verilog/pointwise_conv2d_fix_1_SeparableConv2D_1_w_s.v" \
+"../../../../HLx.srcs/sources_1/bd/design_1/ipshared/a2e6/hdl/verilog/pointwise_conv2d_fix_2.v" \
+"../../../../HLx.srcs/sources_1/bd/design_1/ipshared/a2e6/hdl/verilog/pointwise_conv2d_fix_2_SeparableConv2D_2_b_s.v" \
+"../../../../HLx.srcs/sources_1/bd/design_1/ipshared/a2e6/hdl/verilog/pointwise_conv2d_fix_2_SeparableConv2D_2_w_s.v" \
+"../../../../HLx.srcs/sources_1/bd/design_1/ipshared/a2e6/hdl/verilog/pointwise_conv2d_fix_3.v" \
+"../../../../HLx.srcs/sources_1/bd/design_1/ipshared/a2e6/hdl/verilog/pointwise_conv2d_fix_3_SeparableConv2D_3_b_s.v" \
+"../../../../HLx.srcs/sources_1/bd/design_1/ipshared/a2e6/hdl/verilog/pointwise_conv2d_fix_3_SeparableConv2D_3_w_s.v" \
+"../../../../HLx.srcs/sources_1/bd/design_1/ipshared/a2e6/hdl/verilog/pointwise_conv2d_fix_4.v" \
+"../../../../HLx.srcs/sources_1/bd/design_1/ipshared/a2e6/hdl/verilog/pointwise_conv2d_fix_4_SeparableConv2D_4_w_s.v" \
+"../../../../HLx.srcs/sources_1/bd/design_1/ipshared/a2e6/hdl/verilog/pointwise_conv2d_fix_SeparableConv2D_0_b_s.v" \
+"../../../../HLx.srcs/sources_1/bd/design_1/ipshared/a2e6/hdl/verilog/pointwise_conv2d_fix_SeparableConv2D_0_w_s.v" \
+"../../../../HLx.srcs/sources_1/bd/design_1/ipshared/a2e6/hdl/verilog/up_sampling2d_fix16.v" \
+"../../../../HLx.srcs/sources_1/bd/design_1/ipshared/a2e6/hdl/verilog/network.v" \
 "../../../bd/design_1/ip/design_1_network_0_0/sim/design_1_network_0_0.v" \
-"../../../bd/design_1/sim/design_1.v" \
 
 vlog -work axi_protocol_converter_v2_1_19  -v2k5 "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/8c62/hdl" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/1ddd/hdl/verilog" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/b2d0/hdl/verilog" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0" "+incdir+/tools/Xilinx/Vivado/2019.1/data/xilinx_vip/include" \
 "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
 
 vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/8c62/hdl" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/1ddd/hdl/verilog" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ipshared/b2d0/hdl/verilog" "+incdir+../../../../HLx.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0" "+incdir+/tools/Xilinx/Vivado/2019.1/data/xilinx_vip/include" \
 "../../../bd/design_1/ip/design_1_auto_pc_0/sim/design_1_auto_pc_0.v" \
+"../../../bd/design_1/sim/design_1.v" \
 
 vlog -work xil_defaultlib \
 "glbl.v"

@@ -13,14 +13,14 @@ set hlsSolutionName solution1
 set outputDir ./report 
 set top_inst_name $top_module
 set error_if_impl_timing_fails false
-set target_clk_period_ns "20.000"
+set target_clk_period_ns "10.000"
 file mkdir $outputDir
 
 create_project $vivadoProjectName $vivadoProjectDir -part $targetPart -force
 set_property target_language $language [current_project]
 
 # setup testbench files
-set simtbs [glob -nocomplain ./sim_tbs/*.v ./sim_tbs/*.vhd ./sim_tbs/cdatafile/*.dat ./sim_tbs/rtldatafile/*.dat]
+set simtbs [glob -nocomplain ./sim_tbs/*.v ./sim_tbs/*.vhd ./sim_tbs/cdatafile/*.dat ./sim_tbs/rtldatafile/*.dat ./*.dat]
 if {$simtbs != "" } {
     add_files -fileset sim_1  -norecurse $simtbs
 }

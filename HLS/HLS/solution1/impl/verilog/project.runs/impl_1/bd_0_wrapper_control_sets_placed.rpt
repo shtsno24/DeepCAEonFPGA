@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-| Date         : Thu Dec 26 19:03:49 2019
+| Date         : Thu Dec 26 20:30:23 2019
 | Host         : masudalab-ubuntu running 64-bit Ubuntu 18.04.3 LTS
 | Command      : report_control_sets -verbose -file bd_0_wrapper_control_sets_placed.rpt
 | Design       : bd_0_wrapper
@@ -23,11 +23,11 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Total control sets                                       |    19 |
-|    Minimum number of control sets                        |    19 |
+| Total control sets                                       |   136 |
+|    Minimum number of control sets                        |   136 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |    48 |
+| Unused register locations in slices containing registers |   402 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -39,15 +39,15 @@ Table of Contents
 +--------------------+-------+
 |       Fanout       | Count |
 +--------------------+-------+
-| Total control sets |    19 |
+| Total control sets |   136 |
 | >= 0 to < 4        |     4 |
-| >= 4 to < 6        |     4 |
-| >= 6 to < 8        |     0 |
-| >= 8 to < 10       |     0 |
-| >= 10 to < 12      |     1 |
-| >= 12 to < 14      |     0 |
-| >= 14 to < 16      |     1 |
-| >= 16              |     9 |
+| >= 4 to < 6        |    56 |
+| >= 6 to < 8        |     3 |
+| >= 8 to < 10       |     6 |
+| >= 10 to < 12      |     6 |
+| >= 12 to < 14      |     6 |
+| >= 14 to < 16      |    10 |
+| >= 16              |    45 |
 +--------------------+-------+
 * Control sets can be remapped at either synth_design or opt_design
 
@@ -58,40 +58,157 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              29 |           14 |
+| No           | No                    | No                     |             109 |           39 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |             469 |          199 |
-| Yes          | No                    | No                     |              86 |           33 |
+| No           | Yes                   | No                     |             205 |           83 |
+| Yes          | No                    | No                     |            1138 |          363 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |              24 |            7 |
+| Yes          | Yes                   | No                     |             426 |          128 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 4. Detailed Control Set Information
 -----------------------------------
 
-+--------------+------------------------------------------------------------------------------------------------+------------------------------------------------------------+------------------+----------------+
-| Clock Signal |                                          Enable Signal                                         |                      Set/Reset Signal                      | Slice Load Count | Bel Load Count |
-+--------------+------------------------------------------------------------------------------------------------+------------------------------------------------------------+------------------+----------------+
-|  ap_clk      | bd_0_i/hls_inst/inst/output_data_strb_V_1_load_B                                               |                                                            |                1 |              2 |
-|  ap_clk      | bd_0_i/hls_inst/inst/output_data_strb_V_1_load_A                                               |                                                            |                1 |              2 |
-|  ap_clk      | bd_0_i/hls_inst/inst/output_data_keep_V_1_load_B                                               |                                                            |                1 |              2 |
-|  ap_clk      | bd_0_i/hls_inst/inst/output_data_keep_V_1_load_A                                               |                                                            |                1 |              2 |
-|  ap_clk      | bd_0_i/hls_inst/inst/sig_buffer_dest_V_U/network_sig_buffer_user_V_ram_U/sig_buffer_dest_V_ce0 |                                                            |                4 |              4 |
-|  ap_clk      | bd_0_i/hls_inst/inst/sig_buffer_last_V_U/network_sig_buffer_user_V_ram_U/i_0_reg_14416_reg[9]  |                                                            |                1 |              4 |
-|  ap_clk      | bd_0_i/hls_inst/inst/network_AXILiteS_s_axi_U/ar_hs                                            |                                                            |                2 |              5 |
-|  ap_clk      | bd_0_i/hls_inst/inst/network_AXILiteS_s_axi_U/waddr                                            |                                                            |                2 |              5 |
-|  ap_clk      | bd_0_i/hls_inst/inst/sel                                                                       | bd_0_i/hls_inst/inst/ap_CS_fsm_state395                    |                3 |             10 |
-|  ap_clk      | bd_0_i/hls_inst/inst/i_0_reg_14416[0]_i_2_n_3                                                  | bd_0_i/hls_inst/inst/network_AXILiteS_s_axi_U/clear        |                4 |             14 |
-|  ap_clk      | bd_0_i/hls_inst/inst/input_data_data_V_0_load_A                                                |                                                            |                7 |             16 |
-|  ap_clk      | bd_0_i/hls_inst/inst/input_data_data_V_0_load_B                                                |                                                            |                7 |             16 |
-|  ap_clk      | bd_0_i/hls_inst/inst/output_data_data_V_1_load_A                                               |                                                            |                3 |             16 |
-|  ap_clk      | bd_0_i/hls_inst/inst/output_data_data_V_1_load_B                                               |                                                            |                4 |             16 |
-|  ap_clk      | bd_0_i/hls_inst/inst/sig_buffer_dest_V_U/network_sig_buffer_user_V_ram_U/i_2_reg_14427_reg[8]  |                                                            |                4 |             16 |
-|  ap_clk      | bd_0_i/hls_inst/inst/sig_buffer_dest_V_U/network_sig_buffer_user_V_ram_U/i_0_reg_14416_reg[9]  |                                                            |                4 |             16 |
-|  ap_clk      | bd_0_i/hls_inst/inst/sig_buffer_dest_V_U/network_sig_buffer_user_V_ram_U/i_0_reg_14416_reg[8]  |                                                            |                4 |             16 |
-|  ap_clk      |                                                                                                |                                                            |               14 |             29 |
-|  ap_clk      |                                                                                                | bd_0_i/hls_inst/inst/network_AXILiteS_s_axi_U/ap_rst_n_inv |              199 |            469 |
-+--------------+------------------------------------------------------------------------------------------------+------------------------------------------------------------+------------------+----------------+
++--------------+--------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+------------------+----------------+
+| Clock Signal |                                              Enable Signal                                             |                                    Set/Reset Signal                                    | Slice Load Count | Bel Load Count |
++--------------+--------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+------------------+----------------+
+|  ap_clk      | bd_0_i/hls_inst/inst/output_data_strb_V_1_payload_A[1]_i_1_n_5                                         |                                                                                        |                1 |              2 |
+|  ap_clk      | bd_0_i/hls_inst/inst/output_data_strb_V_1_load_B                                                       |                                                                                        |                1 |              2 |
+|  ap_clk      | bd_0_i/hls_inst/inst/output_data_keep_V_1_payload_A[1]_i_1_n_5                                         |                                                                                        |                1 |              2 |
+|  ap_clk      | bd_0_i/hls_inst/inst/output_data_keep_V_1_load_B                                                       |                                                                                        |                1 |              2 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_max_pooling2d_fix16_fu_509/ap_CS_fsm_state4                                   |                                                                                        |                1 |              4 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_2_fu_461/out_h_0_reg_1690                                |                                                                                        |                2 |              4 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_2_fu_550/Q[0]                                            |                                                                                        |                1 |              4 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_1_fu_540/ap_CS_fsm_state4                                |                                                                                        |                1 |              4 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_max_pooling2d_fix16_fu_509/ap_CS_fsm_state3                                   |                                                                                        |                2 |              4 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_1_fu_540/ap_CS_fsm_state5                                |                                                                                        |                1 |              4 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_3_fu_530/ap_NS_fsm[2]                                    |                                                                                        |                2 |              4 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_3_fu_530/ap_CS_fsm_state4                                |                                                                                        |                1 |              4 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_3_fu_530/ap_CS_fsm_state5                                |                                                                                        |                1 |              4 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_1_fu_540/ap_NS_fsm1                                      | bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_1_fu_540/out_h_0_reg_134                 |                1 |              4 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_3_fu_530/ap_NS_fsm1                                      | bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_3_fu_530/out_h_0_reg_136                 |                1 |              4 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_max_pooling2d_fix16_fu_509/ap_NS_fsm10_out                                    | bd_0_i/hls_inst/inst/grp_max_pooling2d_fix16_fu_509/out_h_0_reg_1650                   |                2 |              4 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_3_fu_530/grp_pointwise_conv2d_fix_3_fu_530_output_r_we0  | bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_3_fu_530/out_w_0_reg_1470                |                1 |              4 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_3_fu_530/output_r_ce0                                    |                                                                                        |                2 |              4 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_3_fu_530/zext_ln20_reg_491[3]_i_1_n_5                    |                                                                                        |                1 |              4 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_1_fu_485/grp_depthwise_conv2d_fix_1_fu_485_output_r_we0  | bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_1_fu_485/out_w_0_reg_1810                |                2 |              4 |
+|  ap_clk      | bd_0_i/hls_inst/inst/sig_buffer_dest_V_U/network_sig_buffer_user_V_ram_U/sig_buffer_dest_V_ce0         |                                                                                        |                4 |              4 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_max_pooling2d_fix16_fu_509/out_w_0_reg_1760                                   |                                                                                        |                2 |              4 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_1_fu_540/E[0]                                            | bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_1_fu_540/out_w_0_reg_1450                |                1 |              4 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_1_fu_485/ap_CS_fsm_reg_n_5_[3]                           |                                                                                        |                1 |              4 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_1_fu_485/ap_CS_fsm_state3                                |                                                                                        |                1 |              4 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_1_fu_485/ap_NS_fsm10_out                                 | bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_1_fu_485/out_h_0_reg_169                 |                1 |              4 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_1_fu_485/ap_CS_fsm_state5                                |                                                                                        |                1 |              4 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_max_pooling2d_fix16_fu_509/E[0]                                               | bd_0_i/hls_inst/inst/grp_max_pooling2d_fix16_fu_509/out_w_0_reg_1760                   |                1 |              4 |
+|  ap_clk      | bd_0_i/hls_inst/inst/sig_buffer_last_V_U/network_sig_buffer_user_V_ram_U/ap_enable_reg_pp1_iter0_reg   |                                                                                        |                1 |              4 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_1_fu_540/zext_ln20_reg_489[3]_i_1_n_5                    |                                                                                        |                1 |              4 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_max_pooling2d_fix16_fu_509/in_h_0_reg_1870                                    |                                                                                        |                2 |              4 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_up_sampling2d_fix16_fu_560/ap_CS_fsm_reg[4]_0[0]                              |                                                                                        |                1 |              5 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_up_sampling2d_fix16_fu_560/ap_NS_fsm1                                         | bd_0_i/hls_inst/inst/grp_up_sampling2d_fix16_fu_560/out_h_0_reg_1360                   |                2 |              5 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_up_sampling2d_fix16_fu_560/ap_CS_fsm_state3                                   |                                                                                        |                2 |              5 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_up_sampling2d_fix16_fu_560/ap_CS_fsm_reg[4]_0[1]                              | bd_0_i/hls_inst/inst/grp_up_sampling2d_fix16_fu_560/out_w_0_reg_1470                   |                2 |              5 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_4_fu_589/E[0]                                            | bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_4_fu_589/out_w_0_reg_980                 |                1 |              5 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_fu_597/ap_CS_fsm_reg[7]_1[1]                             | bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_fu_597/out_w_0_reg_1310                  |                2 |              5 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_4_fu_589/p_0_in                                          |                                                                                        |                2 |              5 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_1_fu_540/grp_pointwise_conv2d_fix_1_fu_540_output_r_ce0  |                                                                                        |                2 |              5 |
+|  ap_clk      | bd_0_i/hls_inst/inst/network_AXILiteS_s_axi_U/ar_hs                                                    |                                                                                        |                2 |              5 |
+|  ap_clk      | bd_0_i/hls_inst/inst/network_AXILiteS_s_axi_U/waddr                                                    |                                                                                        |                1 |              5 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_2_fu_461/E[0]                                            | bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_2_fu_461/out_w_0_reg_1810                |                1 |              5 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_fu_581/buffer_0_reg_1090                                 |                                                                                        |                2 |              5 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_fu_581/ap_NS_fsm10_out                                   | bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_fu_581/out_h_0_reg_85                    |                2 |              5 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_fu_581/E[0]                                              | bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_fu_581/out_w_0_reg_970                   |                3 |              5 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_padding2d_fix16_fu_443/ap_CS_fsm_state3                                       |                                                                                        |                1 |              5 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_4_fu_589/output_r_ce0                                    |                                                                                        |                2 |              5 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_fu_581/ap_CS_fsm_state2                                  |                                                                                        |                2 |              5 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_2_fu_461/ap_NS_fsm10_out                                 | bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_2_fu_461/out_h_0_reg_169                 |                1 |              5 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_padding2d_fix16_fu_443/ap_NS_fsm10_out                                        | bd_0_i/hls_inst/inst/grp_padding2d_fix16_fu_443/ap_NS_fsm13_out                        |                1 |              5 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_padding2d_fix16_fu_443/ap_CS_fsm_state5                                       |                                                                                        |                2 |              5 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_2_fu_461/ap_CS_fsm_state3                                |                                                                                        |                2 |              5 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_fu_597/ap_CS_fsm_state4                                  |                                                                                        |                2 |              5 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_fu_581/ap_CS_fsm_state3                                  |                                                                                        |                2 |              5 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_4_fu_589/ap_CS_fsm_state2                                |                                                                                        |                1 |              5 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_4_fu_589/ap_CS_fsm_state3                                |                                                                                        |                1 |              5 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_2_fu_461/ap_CS_fsm_reg_n_5_[3]                           |                                                                                        |                1 |              5 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_fu_597/ap_NS_fsm1                                        | bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_fu_597/out_h_0_reg_120                   |                1 |              5 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_4_fu_589/ap_NS_fsm1                                      | bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_4_fu_589/out_h_0_reg_87                  |                2 |              5 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_fu_597/ap_CS_fsm_reg[7]_1[0]                             |                                                                                        |                2 |              5 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_2_fu_550/out_w_0_reg_1310                                |                                                                                        |                3 |              6 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_1_fu_540/out_w_0_reg_1450                                |                                                                                        |                3 |              7 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_3_fu_530/out_w_0_reg_1470                                |                                                                                        |                2 |              7 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_2_fu_461/buffer_1_reg_2151                               |                                                                                        |                4 |              8 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_fu_581/out_w_0_reg_970                                   |                                                                                        |                2 |              8 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_fu_597/out_w_0_reg_1310                                  |                                                                                        |                3 |              8 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_4_fu_589/out_w_0_reg_980                                 |                                                                                        |                2 |              8 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_3_fu_530/add_ln23_4_reg_5090                             |                                                                                        |                2 |              9 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_2_fu_550/add_ln23_6_reg_4850                             |                                                                                        |                3 |              9 |
+|  ap_clk      | bd_0_i/hls_inst/inst/sel                                                                               | bd_0_i/hls_inst/inst/ap_CS_fsm_state43                                                 |                2 |             10 |
+|  ap_clk      | bd_0_i/hls_inst/inst/zext_ln147_reg_716[9]_i_1_n_5                                                     |                                                                                        |                4 |             10 |
+|  ap_clk      | bd_0_i/hls_inst/inst/i_1_reg_421[9]_i_2_n_5                                                            | bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_4_fu_589/SR[0]                           |                3 |             10 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_1_fu_540/add_ln23_8_reg_5070                             |                                                                                        |                3 |             11 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_1_fu_485/out_w_0_reg_1810                                |                                                                                        |                4 |             11 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_4_fu_589/add_ln23_2_reg_3680                             |                                                                                        |                3 |             11 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_fu_597/ap_CS_fsm_state3                                  |                                                                                        |                5 |             13 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_1_fu_540/ap_NS_fsm10_out                                 | bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_1_fu_540/out_d_0_reg_112                 |                5 |             13 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_2_fu_550/ap_NS_fsm10_out                                 | bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_2_fu_550/out_d_0_reg_98                  |                6 |             13 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_3_fu_530/ap_CS_fsm_state9                                | bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_3_fu_530/in_d_0_reg_168                  |                4 |             13 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_2_fu_550/ap_CS_fsm_state9                                | bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_2_fu_550/in_d_0_reg_152                  |                4 |             13 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_fu_581/buffer_1_reg_1331                                 |                                                                                        |                4 |             13 |
+|  ap_clk      | bd_0_i/hls_inst/inst/i_0_reg_410[0]_i_2_n_5                                                            | bd_0_i/hls_inst/inst/network_AXILiteS_s_axi_U/clear                                    |                4 |             14 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_padding2d_fix16_fu_443/ap_NS_fsm12_out                                        |                                                                                        |                4 |             14 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_padding2d_fix16_fu_443/ap_NS_fsm11_out                                        |                                                                                        |                4 |             14 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_padding2d_fix16_fu_443/i_count_2_reg_2990                                     |                                                                                        |                4 |             14 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_padding2d_fix16_fu_443/o_count_1_reg_223[0]_i_1_n_5                           |                                                                                        |                4 |             14 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_padding2d_fix16_fu_443/o_count_4_reg_309[0]_i_1_n_5                           |                                                                                        |                4 |             14 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_2_fu_550/ap_CS_fsm_state3                                |                                                                                        |                4 |             14 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_padding2d_fix16_fu_443/ap_NS_fsm[6]                                           |                                                                                        |                5 |             14 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_padding2d_fix16_fu_443/ap_NS_fsm[8]                                           |                                                                                        |                4 |             14 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_fu_597/add_ln30_1_reg_3860                               |                                                                                        |                4 |             14 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_1_fu_540/ap_CS_fsm_state3                                |                                                                                        |                5 |             16 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_2_fu_550/ap_NS_fsm[5]                                    |                                                                                        |                4 |             16 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_2_fu_461/sel                                             |                                                                                        |                4 |             16 |
+|  ap_clk      | bd_0_i/hls_inst/inst/sig_buffer_dest_V_U/network_sig_buffer_user_V_ram_U/ap_enable_reg_pp1_iter0_reg_0 |                                                                                        |                4 |             16 |
+|  ap_clk      | bd_0_i/hls_inst/inst/sig_buffer_dest_V_U/network_sig_buffer_user_V_ram_U/ap_enable_reg_pp1_iter0_reg_1 |                                                                                        |                4 |             16 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_1_fu_540/ap_CS_fsm_state9                                | bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_1_fu_540/in_d_0_reg_166                  |                5 |             16 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_2_fu_461/buffer_0_reg_193[15]_i_1_n_5                    |                                                                                        |                4 |             16 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_1_fu_485/buffer_0_reg_193[15]_i_2_n_5                    | bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_1_fu_485/buffer_0_reg_193[15]_i_1__0_n_5 |                2 |             16 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_fu_597/ap_NS_fsm10_out                                   | bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_fu_597/out_d_0_reg_98                    |                4 |             16 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_3_fu_530/ap_NS_fsm10_out                                 | bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_3_fu_530/out_d_0_reg_114                 |                5 |             16 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_3_fu_530/ap_NS_fsm[5]                                    |                                                                                        |                4 |             16 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_1_fu_540/ap_NS_fsm[5]                                    |                                                                                        |                4 |             16 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_max_pooling2d_fix16_fu_509/buffer_01_fu_70                                    |                                                                                        |                6 |             16 |
+|  ap_clk      | bd_0_i/hls_inst/inst/input_data_data_V_0_payload_A[15]_i_1_n_5                                         |                                                                                        |                9 |             16 |
+|  ap_clk      | bd_0_i/hls_inst/inst/input_data_data_V_0_payload_B[15]_i_1_n_5                                         |                                                                                        |               10 |             16 |
+|  ap_clk      | bd_0_i/hls_inst/inst/output_data_data_V_1_load_B                                                       |                                                                                        |                5 |             16 |
+|  ap_clk      | bd_0_i/hls_inst/inst/output_data_data_V_1_payload_A[15]_i_1_n_5                                        |                                                                                        |                5 |             16 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_fu_581/ap_NS_fsm[4]                                      |                                                                                        |                4 |             16 |
+|  ap_clk      | bd_0_i/hls_inst/inst/sig_buffer_dest_V_U/network_sig_buffer_user_V_ram_U/ap_enable_reg_pp1_iter0_reg   |                                                                                        |                4 |             16 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_1_fu_485/sel                                             |                                                                                        |                4 |             16 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_fu_581/ap_NS_fsm1                                        | bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_fu_581/buffer_0_reg_109                  |                4 |             18 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_1_fu_485/ap_CS_fsm_state2                                |                                                                                        |                6 |             18 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_3_fu_530/ap_CS_fsm_state3                                |                                                                                        |                5 |             18 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_1_fu_485/buffer_1_reg_2151                               |                                                                                        |                7 |             18 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_1_fu_485/ap_NS_fsm11_out                                 | bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_1_fu_485/out_d_0_reg_133                 |                6 |             18 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_padding2d_fix16_fu_443/ap_NS_fsm14_out                                        |                                                                                        |                8 |             20 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_2_fu_461/ap_NS_fsm11_out                                 | bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_2_fu_461/out_d_0_reg_133                 |               10 |             21 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_2_fu_461/ap_CS_fsm_state2                                |                                                                                        |                7 |             21 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_up_sampling2d_fix16_fu_560/ap_CS_fsm_state2                                   |                                                                                        |                6 |             21 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_max_pooling2d_fix16_fu_509/ap_NS_fsm11_out                                    | bd_0_i/hls_inst/inst/grp_max_pooling2d_fix16_fu_509/out_d_0_reg_130                    |                5 |             21 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_max_pooling2d_fix16_fu_509/ap_CS_fsm_state2                                   |                                                                                        |                6 |             21 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_up_sampling2d_fix16_fu_560/ap_NS_fsm10_out                                    | bd_0_i/hls_inst/inst/grp_up_sampling2d_fix16_fu_560/out_d_0_reg_101                    |                6 |             21 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_padding2d_fix16_fu_443/sel                                                    |                                                                                        |               11 |             27 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_padding2d_fix16_fu_443/ap_NS_fsm[5]                                           |                                                                                        |                6 |             28 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_padding2d_fix16_fu_443/ap_NS_fsm13_out                                        |                                                                                        |                8 |             28 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_4_fu_589/ap_CS_fsm_state7                                | bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_4_fu_589/buffer_0_reg_109                |                9 |             32 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_2_fu_550/ap_CS_fsm_state2                                |                                                                                        |               10 |             33 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_1_fu_540/ap_CS_fsm_state2                                |                                                                                        |               10 |             35 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_fu_597/ap_CS_fsm_state2                                  |                                                                                        |               11 |             40 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_3_fu_530/ap_CS_fsm_state2                                |                                                                                        |               10 |             41 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_padding2d_fix16_fu_443/phi_ln13_1_reg_233                                     |                                                                                        |               13 |             56 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_padding2d_fix16_fu_443/ap_NS_fsm1                                             | bd_0_i/hls_inst/inst/grp_padding2d_fix16_fu_443/ap_CS_fsm_state2                       |               16 |             58 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_padding2d_fix16_fu_443/ap_CS_fsm_state2                                       |                                                                                        |               26 |             70 |
+|  ap_clk      |                                                                                                        |                                                                                        |               39 |            109 |
+|  ap_clk      |                                                                                                        | bd_0_i/hls_inst/inst/network_AXILiteS_s_axi_U/ap_rst_n_0[0]                            |               83 |            205 |
++--------------+--------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+------------------+----------------+
 
 

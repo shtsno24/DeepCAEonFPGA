@@ -2,8 +2,8 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Thu Dec 26 18:59:00 2019
-# Process ID: 21850
+# Start of session at: Thu Dec 26 20:27:38 2019
+# Process ID: 2279
 # Current directory: /home/masudalab/DeepCAEonFPGA/HLS/HLS/solution1/impl/ip
 # Command line: vivado -notrace -mode batch -source run_ippack.tcl
 # Log file: /home/masudalab/DeepCAEonFPGA/HLS/HLS/solution1/impl/ip/vivado.log

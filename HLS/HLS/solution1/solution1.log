@@ -1246,3 +1246,349 @@ Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
+INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file '../layers_c/depthwise_conv2d.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file '../layers_c/max_pooling2d.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file '../mnist_AXI_Stream.cpp' ... 
+WARNING: [HLS 200-40] In file included from ../mnist_AXI_Stream.cpp:1:
+In file included from ../mnist_AXI_Stream.cpp:8:
+/tools/Xilinx/Vivado/2018.3/include/gmp.h:2226:345: warning: equality comparison with extraneous parentheses [-Wparentheses-equality]
+  do { mp_size_t __gmp_i; mp_limb_t __gmp_x; __gmp_i = (__gmp_ysize); if (__gmp_i != 0) { if (__gmpn_add_n (__gmp_wp, __gmp_xp, __gmp_yp, __gmp_i)) { do { if (__gmp_i >= (__gmp_xsize)) { (__gmp_c) = 1; goto __gmp_done; } __gmp_x = (__gmp_xp)[__gmp_i]; } while ((((__gmp_wp)[__gmp_i++] = (__gmp_x + 1) & ((~ (static_cast<mp_limb_t> (0))) >> 0)) == 0)); } } if ((__gmp_wp) != (__gmp_xp)) do { mp_size_t __gmp_j; for (__gmp_j = (__gmp_i); __gmp_j < (__gmp_xsize); __gmp_j++) (__gmp_wp)[__gmp_j] = (__gmp_xp)[__gmp_j]; } while (0); (__gmp_c) = 0; __gmp_done: ; } while (0);
+                                                                                                                                                                                                                                                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+/tools/Xilinx/Vivado/2018.3/include/gmp.h:2226:345: note: remove extraneous parentheses around the comparison to silence this warning
+  do { mp_size_t __gmp_i; mp_limb_t __gmp_x; __gmp_i = (__gmp_ysize); if (__gmp_i != 0) { if (__gmpn_add_n (__gmp_wp, __gmp_xp, __gmp_yp, __gmp_i)) { do { if (__gmp_i >= (__gmp_xsize)) { (__gmp_c) = 1; goto __gmp_done; } __gmp_x = (__gmp_xp)[__gmp_i]; } while ((((__gmp_wp)[__gmp_i++] = (__gmp_x + 1) & ((~ (static_cast<mp_limb_t> (0))) >> 0)) == 0)); } } if ((__gmp_wp) != (__gmp_xp)) do { mp_size_t __gmp_j; for (__gmp_j = (__gmp_i); __gmp_j < (__gmp_xsize); __gmp_j++) (__gmp_wp)[__gmp_j] = (__gmp_xp)[__gmp_j]; } while (0); (__gmp_c) = 0; __gmp_done: ; } while (0);
+                                                                                                                                                                                                                                                                     ~                                                                                  ^   ~
+/tools/Xilinx/Vivado/2018.3/include/gmp.h:2226:345: note: use '=' to turn this equality comparison into an assignment
+  do { mp_size_t __gmp_i; mp_limb_t __gmp_x; __gmp_i = (__gmp_ysize); if (__gmp_i != 0) { if (__gmpn_add_n (__gmp_wp, __gmp_xp, __gmp_yp, __gmp_i)) { do { if (__gmp_i >= (__gmp_xsize)) { (__gmp_c) = 1; goto __gmp_done; } __gmp_x = (__gmp_xp)[__gmp_i]; } while ((((__gmp_wp)[__gmp_i++] = (__gmp_x + 1) & ((~ (static_cast<mp_limb_t> (0))) >> 0)) == 0)); } } if ((__gmp_wp) != (__gmp_xp)) do { mp_size_t __gmp_j; for (__gmp_j = (__gmp_i); __gmp_j < (__gmp_xsize); __gmp_j++) (__gmp_wp)[__gmp_j] = (__gmp_xp)[__gmp_j]; } while (0); (__gmp_c) = 0; __gmp_done: ; } while (0);
+                                                                                                                                                                                                                                                                                                                                                        ^~
+                                                                                                                                                                                                                                                                                                                                                        =
+1 warning generated.
+INFO: [HLS 200-10] Analyzing design file '../layers_c/padding2d.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file '../layers_c/pointwise_conv2d.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file '../layers_c/separable_conv2d.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file '../layers_c/up_sampling2d.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 897.250 ; gain = 194.969 ; free physical = 3047 ; free virtual = 9319
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 897.250 ; gain = 194.969 ; free physical = 3047 ; free virtual = 9319
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 897.250 ; gain = 194.969 ; free physical = 3038 ; free virtual = 9312
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 897.250 ; gain = 194.969 ; free physical = 3034 ; free virtual = 9308
+WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'output_data.data.V' (../mnist_AXI_Stream.cpp:28).
+WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'input_data.data.V' (../mnist_AXI_Stream.cpp:28).
+INFO: [XFORM 203-102] Partitioning array 'SeparableConv2D_4_b_p' automatically.
+INFO: [XFORM 203-102] Partitioning array 'SeparableConv2D_0_b_d' automatically.
+INFO: [XFORM 203-102] Partitioning array 'SeparableConv2D_4_w_d' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'SeparableConv2D_3_w_d' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'SeparableConv2D_2_w_d' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'SeparableConv2D_1_w_d' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'SeparableConv2D_0_w_d' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'SeparableConv2D_0_w_d.0' in dimension 1 automatically.
+WARNING: [XFORM 203-561] Updating loop upper bound from 65538 to 31 for loop 'Loop-0-0' in function 'padding2d_fix16'.
+WARNING: [XFORM 203-561] Updating loop lower bound from 3 to 10 for loop 'Loop-0-0' in function 'padding2d_fix16'.
+WARNING: [XFORM 203-561] Updating loop upper bound from 65536 to 29 for loop 'Loop-0-2' in function 'padding2d_fix16'.
+WARNING: [XFORM 203-561] Updating loop lower bound from 1 to 8 for loop 'Loop-0-2' in function 'padding2d_fix16'.
+INFO: [XFORM 203-11] Balancing expressions in function 'padding2d_fix16' (../layers_c/padding2d.cpp:5)...3 expression(s) balanced.
+INFO: [XFORM 203-11] Balancing expressions in function 'depthwise_conv2d_fix16.2' (../layers_c/depthwise_conv2d.cpp:19:63)...3 expression(s) balanced.
+INFO: [XFORM 203-11] Balancing expressions in function 'depthwise_conv2d_fix16.1' (../layers_c/depthwise_conv2d.cpp:19:63)...3 expression(s) balanced.
+INFO: [XFORM 203-11] Balancing expressions in function 'depthwise_conv2d_fix16' (../layers_c/depthwise_conv2d.cpp:5)...3 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:48 ; elapsed = 00:00:49 . Memory (MB): peak = 897.250 ; gain = 194.969 ; free physical = 3010 ; free virtual = 9285
+WARNING: [XFORM 203-631] Renaming function 'pointwise_conv2d_fix16.4' to 'pointwise_conv2d_fix' (../layers_c/pointwise_conv2d.cpp:16:60)
+WARNING: [XFORM 203-631] Renaming function 'pointwise_conv2d_fix16.3' to 'pointwise_conv2d_fix.1' (../layers_c/pointwise_conv2d.cpp:16:60)
+WARNING: [XFORM 203-631] Renaming function 'pointwise_conv2d_fix16.2' to 'pointwise_conv2d_fix.2' (../layers_c/pointwise_conv2d.cpp:16:60)
+WARNING: [XFORM 203-631] Renaming function 'pointwise_conv2d_fix16.1' to 'pointwise_conv2d_fix.3' (../layers_c/pointwise_conv2d.cpp:16:60)
+WARNING: [XFORM 203-631] Renaming function 'pointwise_conv2d_fix16' to 'pointwise_conv2d_fix.4' (../layers_c/pointwise_conv2d.cpp:17:60)
+WARNING: [XFORM 203-631] Renaming function 'depthwise_conv2d_fix16.2' to 'depthwise_conv2d_fix' (../layers_c/depthwise_conv2d.cpp:20:63)
+WARNING: [XFORM 203-631] Renaming function 'depthwise_conv2d_fix16.1' to 'depthwise_conv2d_fix.1' (../layers_c/depthwise_conv2d.cpp:19:63)
+WARNING: [XFORM 203-631] Renaming function 'depthwise_conv2d_fix16' to 'depthwise_conv2d_fix.2' (../layers_c/depthwise_conv2d.cpp:19:63)
+WARNING: [XFORM 203-561] Ignored multiple trip count directives for loop 'Loop-0-0-0' in function 'pointwise_conv2d_fix'.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 897.250 ; gain = 194.969 ; free physical = 2917 ; free virtual = 9192
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'network' ...
+WARNING: [SYN 201-103] Legalizing function name 'depthwise_conv2d_fix.2' to 'depthwise_conv2d_fix_2'.
+WARNING: [SYN 201-103] Legalizing function name 'pointwise_conv2d_fix.1' to 'pointwise_conv2d_fix_1'.
+WARNING: [SYN 201-103] Legalizing function name 'depthwise_conv2d_fix.1' to 'depthwise_conv2d_fix_1'.
+WARNING: [SYN 201-103] Legalizing function name 'pointwise_conv2d_fix.2' to 'pointwise_conv2d_fix_2'.
+WARNING: [SYN 201-103] Legalizing function name 'pointwise_conv2d_fix.3' to 'pointwise_conv2d_fix_3'.
+WARNING: [SYN 201-103] Legalizing function name 'pointwise_conv2d_fix.4' to 'pointwise_conv2d_fix_4'.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'padding2d_fix16' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 50.04 seconds; current allocated memory: 234.063 MB.
+INFO: [HLS 200-434] Only 0 loops out of a total 6 loops have been pipelined in this design.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.08 seconds; current allocated memory: 234.562 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'depthwise_conv2d_fix' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.14 seconds; current allocated memory: 234.930 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.04 seconds; current allocated memory: 235.188 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pointwise_conv2d_fix' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.07 seconds; current allocated memory: 235.416 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.04 seconds; current allocated memory: 235.639 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'max_pooling2d_fix16' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.08 seconds; current allocated memory: 235.915 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.05 seconds; current allocated memory: 236.238 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'depthwise_conv2d_fix_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.11 seconds; current allocated memory: 236.586 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.06 seconds; current allocated memory: 236.945 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pointwise_conv2d_fix_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.1 seconds; current allocated memory: 237.287 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.05 seconds; current allocated memory: 237.577 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'depthwise_conv2d_fix_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.1 seconds; current allocated memory: 237.906 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.05 seconds; current allocated memory: 238.268 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pointwise_conv2d_fix_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.1 seconds; current allocated memory: 238.498 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.04 seconds; current allocated memory: 238.815 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'up_sampling2d_fix16' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.09 seconds; current allocated memory: 239.025 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.04 seconds; current allocated memory: 239.247 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pointwise_conv2d_fix_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.08 seconds; current allocated memory: 239.514 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.05 seconds; current allocated memory: 239.805 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pointwise_conv2d_fix_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.09 seconds; current allocated memory: 240.022 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.04 seconds; current allocated memory: 240.247 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'network' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 2'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 3'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.14 seconds; current allocated memory: 240.695 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1 seconds; current allocated memory: 241.865 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'padding2d_fix16' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'padding2d_fix16'.
+INFO: [HLS 200-111]  Elapsed time: 0.44 seconds; current allocated memory: 242.892 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'depthwise_conv2d_fix' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'network_mul_mul_15s_16s_30_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'depthwise_conv2d_fix'.
+INFO: [HLS 200-111]  Elapsed time: 0.27 seconds; current allocated memory: 245.629 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pointwise_conv2d_fix' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'network_mul_mul_15s_16s_30_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pointwise_conv2d_fix'.
+INFO: [HLS 200-111]  Elapsed time: 0.14 seconds; current allocated memory: 247.208 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'max_pooling2d_fix16' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'max_pooling2d_fix16'.
+INFO: [HLS 200-111]  Elapsed time: 0.14 seconds; current allocated memory: 248.634 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'depthwise_conv2d_fix_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'network_mul_mul_16s_16s_30_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'depthwise_conv2d_fix_2'.
+INFO: [HLS 200-111]  Elapsed time: 0.18 seconds; current allocated memory: 250.759 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pointwise_conv2d_fix_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'network_mul_mul_16s_15s_30_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pointwise_conv2d_fix_1'.
+INFO: [HLS 200-111]  Elapsed time: 0.22 seconds; current allocated memory: 252.870 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'depthwise_conv2d_fix_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'network_mul_mul_16s_16s_30_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'depthwise_conv2d_fix_1'.
+INFO: [HLS 200-111]  Elapsed time: 0.18 seconds; current allocated memory: 254.788 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pointwise_conv2d_fix_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'network_mul_mul_16s_15s_30_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pointwise_conv2d_fix_2'.
+INFO: [HLS 200-111]  Elapsed time: 0.23 seconds; current allocated memory: 256.938 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'up_sampling2d_fix16' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'up_sampling2d_fix16'.
+INFO: [HLS 200-111]  Elapsed time: 0.2 seconds; current allocated memory: 258.597 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pointwise_conv2d_fix_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'network_mul_mul_16s_15s_30_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pointwise_conv2d_fix_3'.
+INFO: [HLS 200-111]  Elapsed time: 0.19 seconds; current allocated memory: 260.153 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pointwise_conv2d_fix_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'network_mul_mul_15s_16s_30_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pointwise_conv2d_fix_4'.
+INFO: [HLS 200-111]  Elapsed time: 0.22 seconds; current allocated memory: 261.868 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'network' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'network/input_data_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'network/input_data_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'network/input_data_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'network/input_data_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'network/input_data_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'network/input_data_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'network/input_data_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'network/output_data_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'network/output_data_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'network/output_data_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'network/output_data_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'network/output_data_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'network/output_data_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'network/output_data_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'network' to 's_axilite & ap_ctrl_hs' (register).
+INFO: [RTGEN 206-100] Bundling port 'return' to AXI-Lite port AXILiteS.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'network'.
+INFO: [HLS 200-111]  Elapsed time: 0.44 seconds; current allocated memory: 265.746 MB.
+INFO: [RTMG 210-279] Implementing memory 'depthwise_conv2d_fix_SeparableConv2D_0_w_1_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'pointwise_conv2d_fix_SeparableConv2D_0_b_s_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'pointwise_conv2d_fix_SeparableConv2D_0_w_s_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'pointwise_conv2d_fix_1_SeparableConv2D_1_b_s_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'pointwise_conv2d_fix_1_SeparableConv2D_1_w_s_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'pointwise_conv2d_fix_2_SeparableConv2D_2_b_s_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'pointwise_conv2d_fix_2_SeparableConv2D_2_w_s_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'pointwise_conv2d_fix_3_SeparableConv2D_3_b_s_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'pointwise_conv2d_fix_3_SeparableConv2D_3_w_s_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'pointwise_conv2d_fix_4_SeparableConv2D_4_w_s_rom' using distributed ROMs.
+WARNING: [RTMG 210-274] Memory 'network_SeparableConv2D_1_b_1' is read-only, switch it to a ROM.
+INFO: [RTMG 210-279] Implementing memory 'network_SeparableConv2D_1_b_1_rom' using distributed ROMs.
+WARNING: [RTMG 210-274] Memory 'network_SeparableConv2D_1_w_1' is read-only, switch it to a ROM.
+INFO: [RTMG 210-279] Implementing memory 'network_SeparableConv2D_1_w_1_rom' using block ROMs.
+WARNING: [RTMG 210-274] Memory 'network_SeparableConv2D_2_b_1' is read-only, switch it to a ROM.
+INFO: [RTMG 210-279] Implementing memory 'network_SeparableConv2D_2_b_1_rom' using distributed ROMs.
+WARNING: [RTMG 210-274] Memory 'network_SeparableConv2D_2_w_1' is read-only, switch it to a ROM.
+INFO: [RTMG 210-279] Implementing memory 'network_SeparableConv2D_2_w_1_rom' using block ROMs.
+WARNING: [RTMG 210-274] Memory 'network_SeparableConv2D_3_w_1' is read-only, switch it to a ROM.
+INFO: [RTMG 210-279] Implementing memory 'network_SeparableConv2D_3_w_1_rom' using block ROMs.
+WARNING: [RTMG 210-274] Memory 'network_SeparableConv2D_4_w_1' is read-only, switch it to a ROM.
+INFO: [RTMG 210-279]==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================

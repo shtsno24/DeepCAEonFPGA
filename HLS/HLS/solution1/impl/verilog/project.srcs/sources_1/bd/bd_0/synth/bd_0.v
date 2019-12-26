@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-//Date        : Thu Dec 26 18:59:20 2019
+//Date        : Thu Dec 26 20:27:58 2019
 //Host        : masudalab-ubuntu running 64-bit Ubuntu 18.04.3 LTS
 //Command     : generate_target bd_0.bd
 //Design      : bd_0
@@ -49,9 +49,9 @@ module bd_0
     s_axi_AXILiteS_wready,
     s_axi_AXILiteS_wstrb,
     s_axi_AXILiteS_wvalid);
-  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.AP_CLK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.AP_CLK, ASSOCIATED_BUSIF input_data:output_data:s_axi_AXILiteS, ASSOCIATED_RESET ap_rst_n, CLK_DOMAIN bd_0_ap_clk_0, FREQ_HZ 50000000.0, INSERT_VIP 0, PHASE 0.000" *) input ap_clk;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.AP_CLK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.AP_CLK, ASSOCIATED_BUSIF input_data:output_data:s_axi_AXILiteS, ASSOCIATED_RESET ap_rst_n, CLK_DOMAIN bd_0_ap_clk_0, FREQ_HZ 100000000.0, INSERT_VIP 0, PHASE 0.000" *) input ap_clk;
   (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST.AP_RST_N RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.AP_RST_N, INSERT_VIP 0, POLARITY ACTIVE_LOW" *) input ap_rst_n;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 input_data " *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME input_data, CLK_DOMAIN bd_0_ap_clk_0, FREQ_HZ 50000000.0, HAS_TKEEP 1, HAS_TLAST 1, HAS_TREADY 1, HAS_TSTRB 1, INSERT_VIP 0, LAYERED_METADATA undef, PHASE 0.000, TDATA_NUM_BYTES 2, TDEST_WIDTH 1, TID_WIDTH 1, TUSER_WIDTH 1" *) input [15:0]input_data_tdata;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 input_data " *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME input_data, CLK_DOMAIN bd_0_ap_clk_0, FREQ_HZ 100000000.0, HAS_TKEEP 1, HAS_TLAST 1, HAS_TREADY 1, HAS_TSTRB 1, INSERT_VIP 0, LAYERED_METADATA undef, PHASE 0.000, TDATA_NUM_BYTES 2, TDEST_WIDTH 1, TID_WIDTH 1, TUSER_WIDTH 1" *) input [15:0]input_data_tdata;
   (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 input_data " *) input [0:0]input_data_tdest;
   (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 input_data " *) input [0:0]input_data_tid;
   (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 input_data " *) input [1:0]input_data_tkeep;
@@ -61,7 +61,7 @@ module bd_0
   (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 input_data " *) input [0:0]input_data_tuser;
   (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 input_data " *) input input_data_tvalid;
   (* X_INTERFACE_INFO = "xilinx.com:signal:interrupt:1.0 INTR.INTERRUPT INTERRUPT" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME INTR.INTERRUPT, PortWidth 1, SENSITIVITY LEVEL_HIGH" *) output interrupt;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 output_data " *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME output_data, CLK_DOMAIN bd_0_ap_clk_0, FREQ_HZ 50000000.0, HAS_TKEEP 1, HAS_TLAST 1, HAS_TREADY 1, HAS_TSTRB 1, INSERT_VIP 0, LAYERED_METADATA undef, PHASE 0.000, TDATA_NUM_BYTES 2, TDEST_WIDTH 1, TID_WIDTH 1, TUSER_WIDTH 1" *) output [15:0]output_data_tdata;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 output_data " *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME output_data, CLK_DOMAIN bd_0_ap_clk_0, FREQ_HZ 100000000.0, HAS_TKEEP 1, HAS_TLAST 1, HAS_TREADY 1, HAS_TSTRB 1, INSERT_VIP 0, LAYERED_METADATA undef, PHASE 0.000, TDATA_NUM_BYTES 2, TDEST_WIDTH 1, TID_WIDTH 1, TUSER_WIDTH 1" *) output [15:0]output_data_tdata;
   (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 output_data " *) output [0:0]output_data_tdest;
   (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 output_data " *) output [0:0]output_data_tid;
   (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 output_data " *) output [1:0]output_data_tkeep;
@@ -70,7 +70,7 @@ module bd_0
   (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 output_data " *) output [1:0]output_data_tstrb;
   (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 output_data " *) output [0:0]output_data_tuser;
   (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 output_data " *) output output_data_tvalid;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_AXILiteS " *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME s_axi_AXILiteS, ADDR_WIDTH 12, ARUSER_WIDTH 0, AWUSER_WIDTH 0, BUSER_WIDTH 0, CLK_DOMAIN bd_0_ap_clk_0, DATA_WIDTH 32, FREQ_HZ 50000000.0, HAS_BRESP 1, HAS_BURST 0, HAS_CACHE 0, HAS_LOCK 0, HAS_PROT 0, HAS_QOS 0, HAS_REGION 0, HAS_RRESP 1, HAS_WSTRB 1, ID_WIDTH 0, INSERT_VIP 0, MAX_BURST_LENGTH 1, NUM_READ_OUTSTANDING 1, NUM_READ_THREADS 1, NUM_WRITE_OUTSTANDING 1, NUM_WRITE_THREADS 1, PHASE 0.000, PROTOCOL AXI4LITE, READ_WRITE_MODE READ_WRITE, RUSER_BITS_PER_BYTE 0, RUSER_WIDTH 0, SUPPORTS_NARROW_BURST 0, WUSER_BITS_PER_BYTE 0, WUSER_WIDTH 0" *) input [4:0]s_axi_AXILiteS_araddr;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_AXILiteS " *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME s_axi_AXILiteS, ADDR_WIDTH 12, ARUSER_WIDTH 0, AWUSER_WIDTH 0, BUSER_WIDTH 0, CLK_DOMAIN bd_0_ap_clk_0, DATA_WIDTH 32, FREQ_HZ 100000000.0, HAS_BRESP 1, HAS_BURST 0, HAS_CACHE 0, HAS_LOCK 0, HAS_PROT 0, HAS_QOS 0, HAS_REGION 0, HAS_RRESP 1, HAS_WSTRB 1, ID_WIDTH 0, INSERT_VIP 0, MAX_BURST_LENGTH 1, NUM_READ_OUTSTANDING 1, NUM_READ_THREADS 1, NUM_WRITE_OUTSTANDING 1, NUM_WRITE_THREADS 1, PHASE 0.000, PROTOCOL AXI4LITE, READ_WRITE_MODE READ_WRITE, RUSER_BITS_PER_BYTE 0, RUSER_WIDTH 0, SUPPORTS_NARROW_BURST 0, WUSER_BITS_PER_BYTE 0, WUSER_WIDTH 0" *) input [4:0]s_axi_AXILiteS_araddr;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_AXILiteS " *) output s_axi_AXILiteS_arready;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_AXILiteS " *) input s_axi_AXILiteS_arvalid;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_AXILiteS " *) input [4:0]s_axi_AXILiteS_awaddr;

@@ -1,0 +1,209 @@
+
+
+================================================================
+== Vivado HLS Report for 'up_sampling2d_fix16'
+================================================================
+* Date:           Thu Dec 26 20:23:25 2019
+
+* Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
+* Project:        HLS
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     6.508|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +------+-------+------+-------+---------+
+    |    Latency   |   Interval   | Pipeline|
+    |  min |  max  |  min |  max  |   Type  |
+    +------+-------+------+-------+---------+
+    |  3377|  26017|  3377|  26017|   none  |
+    +------+-------+------+-------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-----------------+------+-------+------------+-----------+-----------+---------+----------+
+        |                 |    Latency   |  Iteration |  Initiation Interval  |   Trip  |          |
+        |    Loop Name    |  min |  max  |   Latency  |  achieved |   target  |  Count  | Pipelined|
+        +-----------------+------+-------+------------+-----------+-----------+---------+----------+
+        |- Loop 1         |  3376|  26016| 422 ~ 1626 |          -|          -|  8 ~ 16 |    no    |
+        | + Loop 1.1      |   420|   1624|   30 ~ 58  |          -|          -| 14 ~ 28 |    no    |
+        |  ++ Loop 1.1.1  |    28|     56|           2|          -|          -| 14 ~ 28 |    no    |
+        +-----------------+------+-------+------------+-----------+-----------+---------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 5
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 2 
+4 --> 5 3 
+5 --> 4 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.76>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%output_width_read = call i6 @_ssdm_op_Read.ap_auto.i6(i6 %output_width)" [../layers_c/up_sampling2d.cpp:6]   --->   Operation 6 'read' 'output_width_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%output_height_read = call i6 @_ssdm_op_Read.ap_auto.i6(i6 %output_height)" [../layers_c/up_sampling2d.cpp:6]   --->   Operation 7 'read' 'output_height_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%output_depth_read = call i6 @_ssdm_op_Read.ap_auto.i6(i6 %output_depth)" [../layers_c/up_sampling2d.cpp:6]   --->   Operation 8 'read' 'output_depth_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%input_width_read = call i5 @_ssdm_op_Read.ap_auto.i5(i5 %input_width)" [../layers_c/up_sampling2d.cpp:6]   --->   Operation 9 'read' 'input_width_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%input_height_read = call i5 @_ssdm_op_Read.ap_auto.i5(i5 %input_height)" [../layers_c/up_sampling2d.cpp:6]   --->   Operation 10 'read' 'input_height_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%zext_ln19 = zext i5 %input_height_read to i8" [../layers_c/up_sampling2d.cpp:19]   --->   Operation 11 'zext' 'zext_ln19' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%zext_ln19_1 = zext i6 %output_height_read to i9" [../layers_c/up_sampling2d.cpp:19]   --->   Operation 12 'zext' 'zext_ln19_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%zext_ln19_3_cast = zext i6 %output_width_read to i14" [../layers_c/up_sampling2d.cpp:6]   --->   Operation 13 'zext' 'zext_ln19_3_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%empty = trunc i6 %output_width_read to i5" [../layers_c/up_sampling2d.cpp:6]   --->   Operation 14 'trunc' 'empty' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%empty_7 = trunc i6 %output_height_read to i5" [../layers_c/up_sampling2d.cpp:6]   --->   Operation 15 'trunc' 'empty_7' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%empty_8 = trunc i6 %output_depth_read to i5" [../layers_c/up_sampling2d.cpp:6]   --->   Operation 16 'trunc' 'empty_8' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%empty_9 = zext i5 %input_width_read to i12" [../layers_c/up_sampling2d.cpp:6]   --->   Operation 17 'zext' 'empty_9' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (1.76ns)   --->   "br label %.loopexit" [../layers_c/up_sampling2d.cpp:14]   --->   Operation 18 'br' <Predicate = true> <Delay = 1.76>
+
+State 2 <SV = 1> <Delay = 1.91>
+ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%out_d_0 = phi i5 [ 0, %0 ], [ %out_d, %.loopexit.loopexit ]"   --->   Operation 19 'phi' 'out_d_0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 20 [1/1] (0.00ns)   --->   "%phi_mul = phi i8 [ 0, %0 ], [ %next_mul, %.loopexit.loopexit ]" [../layers_c/up_sampling2d.cpp:19]   --->   Operation 20 'phi' 'phi_mul' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 21 [1/1] (0.00ns)   --->   "%phi_mul4 = phi i9 [ 0, %0 ], [ %next_mul5, %.loopexit.loopexit ]" [../layers_c/up_sampling2d.cpp:19]   --->   Operation 21 'phi' 'phi_mul4' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 22 [1/1] (1.82ns)   --->   "%next_mul5 = add i9 %phi_mul4, %zext_ln19_1" [../layers_c/up_sampling2d.cpp:19]   --->   Operation 22 'add' 'next_mul5' <Predicate = true> <Delay = 1.82> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.81> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 23 [1/1] (1.91ns)   --->   "%next_mul = add i8 %phi_mul, %zext_ln19" [../layers_c/up_sampling2d.cpp:19]   --->   Operation 23 'add' 'next_mul' <Predicate = true> <Delay = 1.91> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.81> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 24 [1/1] (0.00ns)   --->   "%empty_10 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 8, i64 16, i64 0)"   --->   Operation 24 'speclooptripcount' 'empty_10' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 25 [1/1] (1.36ns)   --->   "%icmp_ln14 = icmp eq i5 %out_d_0, %empty_8" [../layers_c/up_sampling2d.cpp:14]   --->   Operation 25 'icmp' 'icmp_ln14' <Predicate = true> <Delay = 1.36> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.36> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 26 [1/1] (1.78ns)   --->   "%out_d = add i5 %out_d_0, 1" [../layers_c/up_sampling2d.cpp:14]   --->   Operation 26 'add' 'out_d' <Predicate = true> <Delay = 1.78> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.81> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 27 [1/1] (0.00ns)   --->   "br i1 %icmp_ln14, label %2, label %.preheader4.preheader" [../layers_c/up_sampling2d.cpp:14]   --->   Operation 27 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 28 [1/1] (1.76ns)   --->   "br label %.preheader4"   --->   Operation 28 'br' <Predicate = (!icmp_ln14)> <Delay = 1.76>
+ST_2 : Operation 29 [1/1] (0.00ns)   --->   "ret void"   --->   Operation 29 'ret' <Predicate = (icmp_ln14)> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 6.17>
+ST_3 : Operation 30 [1/1] (0.00ns)   --->   "%out_h_0 = phi i5 [ %out_h, %.preheader4.loopexit ], [ 0, %.preheader4.preheader ]"   --->   Operation 30 'phi' 'out_h_0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 31 [1/1] (0.00ns)   --->   "%empty_11 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 14, i64 28, i64 0)"   --->   Operation 31 'speclooptripcount' 'empty_11' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 32 [1/1] (1.36ns)   --->   "%icmp_ln15 = icmp eq i5 %out_h_0, %empty_7" [../layers_c/up_sampling2d.cpp:15]   --->   Operation 32 'icmp' 'icmp_ln15' <Predicate = true> <Delay = 1.36> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.36> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 33 [1/1] (1.78ns)   --->   "%out_h = add i5 %out_h_0, 1" [../layers_c/up_sampling2d.cpp:15]   --->   Operation 33 'add' 'out_h' <Predicate = true> <Delay = 1.78> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.81> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 34 [1/1] (0.00ns)   --->   "br i1 %icmp_ln15, label %.loopexit.loopexit, label %.preheader.preheader" [../layers_c/up_sampling2d.cpp:15]   --->   Operation 34 'br' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 35 [1/1] (0.00ns)   --->   "%lshr_ln = call i4 @_ssdm_op_PartSelect.i4.i5.i32.i32(i5 %out_h_0, i32 1, i32 4)" [../layers_c/up_sampling2d.cpp:19]   --->   Operation 35 'partselect' 'lshr_ln' <Predicate = (!icmp_ln15)> <Delay = 0.00>
+ST_3 : Operation 36 [1/1] (0.00ns)   --->   "%zext_ln19_2 = zext i4 %lshr_ln to i8" [../layers_c/up_sampling2d.cpp:19]   --->   Operation 36 'zext' 'zext_ln19_2' <Predicate = (!icmp_ln15)> <Delay = 0.00>
+ST_3 : Operation 37 [1/1] (0.00ns)   --->   "%zext_ln19_6_cast = zext i5 %out_h_0 to i9" [../layers_c/up_sampling2d.cpp:15]   --->   Operation 37 'zext' 'zext_ln19_6_cast' <Predicate = (!icmp_ln15)> <Delay = 0.00>
+ST_3 : Operation 38 [1/1] (1.91ns)   --->   "%tmp = add i8 %phi_mul, %zext_ln19_2" [../layers_c/up_sampling2d.cpp:19]   --->   Operation 38 'add' 'tmp' <Predicate = (!icmp_ln15)> <Delay = 1.91> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.81> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 39 [1/1] (0.00ns)   --->   "%empty_12 = zext i8 %tmp to i12" [../layers_c/up_sampling2d.cpp:19]   --->   Operation 39 'zext' 'empty_12' <Predicate = (!icmp_ln15)> <Delay = 0.00>
+ST_3 : Operation 40 [1/1] (4.17ns)   --->   "%tmp1_cast = mul i12 %empty_12, %empty_9" [../layers_c/up_sampling2d.cpp:19]   --->   Operation 40 'mul' 'tmp1_cast' <Predicate = (!icmp_ln15)> <Delay = 4.17> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 4.35> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 41 [1/1] (1.82ns)   --->   "%tmp2 = add i9 %phi_mul4, %zext_ln19_6_cast" [../layers_c/up_sampling2d.cpp:19]   --->   Operation 41 'add' 'tmp2' <Predicate = (!icmp_ln15)> <Delay = 1.82> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.81> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 42 [1/1] (0.00ns)   --->   "%tmp2_cast = zext i9 %tmp2 to i14" [../layers_c/up_sampling2d.cpp:19]   --->   Operation 42 'zext' 'tmp2_cast' <Predicate = (!icmp_ln15)> <Delay = 0.00>
+ST_3 : Operation 43 [1/1] (4.35ns)   --->   "%tmp3 = mul i14 %tmp2_cast, %zext_ln19_3_cast" [../layers_c/up_sampling2d.cpp:19]   --->   Operation 43 'mul' 'tmp3' <Predicate = (!icmp_ln15)> <Delay = 4.35> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 4.35> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 44 [1/1] (1.76ns)   --->   "br label %.preheader" [../layers_c/up_sampling2d.cpp:17]   --->   Operation 44 'br' <Predicate = (!icmp_ln15)> <Delay = 1.76>
+ST_3 : Operation 45 [1/1] (0.00ns)   --->   "br label %.loopexit"   --->   Operation 45 'br' <Predicate = (icmp_ln15)> <Delay = 0.00>
+
+State 4 <SV = 3> <Delay = 4.80>
+ST_4 : Operation 46 [1/1] (0.00ns)   --->   "%out_w_0 = phi i5 [ %out_w, %1 ], [ 0, %.preheader.preheader ]"   --->   Operation 46 'phi' 'out_w_0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 47 [1/1] (0.00ns)   --->   "%empty_13 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 14, i64 28, i64 0)"   --->   Operation 47 'speclooptripcount' 'empty_13' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 48 [1/1] (1.36ns)   --->   "%icmp_ln17 = icmp eq i5 %out_w_0, %empty" [../layers_c/up_sampling2d.cpp:17]   --->   Operation 48 'icmp' 'icmp_ln17' <Predicate = true> <Delay = 1.36> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.36> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 49 [1/1] (1.78ns)   --->   "%out_w = add i5 %out_w_0, 1" [../layers_c/up_sampling2d.cpp:17]   --->   Operation 49 'add' 'out_w' <Predicate = true> <Delay = 1.78> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.81> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 50 [1/1] (0.00ns)   --->   "br i1 %icmp_ln17, label %.preheader4.loopexit, label %1" [../layers_c/up_sampling2d.cpp:17]   --->   Operation 50 'br' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 51 [1/1] (0.00ns)   --->   "%lshr_ln19_1 = call i4 @_ssdm_op_PartSelect.i4.i5.i32.i32(i5 %out_w_0, i32 1, i32 4)" [../layers_c/up_sampling2d.cpp:19]   --->   Operation 51 'partselect' 'lshr_ln19_1' <Predicate = (!icmp_ln17)> <Delay = 0.00>
+ST_4 : Operation 52 [1/1] (0.00ns)   --->   "%zext_ln19_3 = zext i4 %lshr_ln19_1 to i12" [../layers_c/up_sampling2d.cpp:19]   --->   Operation 52 'zext' 'zext_ln19_3' <Predicate = (!icmp_ln17)> <Delay = 0.00>
+ST_4 : Operation 53 [1/1] (1.54ns)   --->   "%add_ln19 = add i12 %zext_ln19_3, %tmp1_cast" [../layers_c/up_sampling2d.cpp:19]   --->   Operation 53 'add' 'add_ln19' <Predicate = (!icmp_ln17)> <Delay = 1.54> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.81> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 54 [1/1] (0.00ns)   --->   "%zext_ln19_4 = zext i12 %add_ln19 to i64" [../layers_c/up_sampling2d.cpp:19]   --->   Operation 54 'zext' 'zext_ln19_4' <Predicate = (!icmp_ln17)> <Delay = 0.00>
+ST_4 : Operation 55 [1/1] (0.00ns)   --->   "%input_addr = getelementptr [14400 x i16]* %input_r, i64 0, i64 %zext_ln19_4" [../layers_c/up_sampling2d.cpp:19]   --->   Operation 55 'getelementptr' 'input_addr' <Predicate = (!icmp_ln17)> <Delay = 0.00>
+ST_4 : Operation 56 [2/2] (3.25ns)   --->   "%input_load = load i16* %input_addr, align 2" [../layers_c/up_sampling2d.cpp:19]   --->   Operation 56 'load' 'input_load' <Predicate = (!icmp_ln17)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 14400> <RAM>
+ST_4 : Operation 57 [1/1] (0.00ns)   --->   "%zext_ln19_5 = zext i5 %out_w_0 to i14" [../layers_c/up_sampling2d.cpp:19]   --->   Operation 57 'zext' 'zext_ln19_5' <Predicate = (!icmp_ln17)> <Delay = 0.00>
+ST_4 : Operation 58 [1/1] (1.81ns)   --->   "%add_ln19_1 = add i14 %zext_ln19_5, %tmp3" [../layers_c/up_sampling2d.cpp:19]   --->   Operation 58 'add' 'add_ln19_1' <Predicate = (!icmp_ln17)> <Delay = 1.81> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.81> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 59 [1/1] (0.00ns)   --->   "br label %.preheader4"   --->   Operation 59 'br' <Predicate = (icmp_ln17)> <Delay = 0.00>
+
+State 5 <SV = 4> <Delay = 6.50>
+ST_5 : Operation 60 [1/2] (3.25ns)   --->   "%input_load = load i16* %input_addr, align 2" [../layers_c/up_sampling2d.cpp:19]   --->   Operation 60 'load' 'input_load' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 14400> <RAM>
+ST_5 : Operation 61 [1/1] (0.00ns)   --->   "%zext_ln19_6 = zext i14 %add_ln19_1 to i64" [../layers_c/up_sampling2d.cpp:19]   --->   Operation 61 'zext' 'zext_ln19_6' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 62 [1/1] (0.00ns)   --->   "%output_addr = getelementptr [14400 x i16]* %output_r, i64 0, i64 %zext_ln19_6" [../layers_c/up_sampling2d.cpp:19]   --->   Operation 62 'getelementptr' 'output_addr' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 63 [1/1] (3.25ns)   --->   "store i16 %input_load, i16* %output_addr, align 2" [../layers_c/up_sampling2d.cpp:19]   --->   Operation 63 'store' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 14400> <RAM>
+ST_5 : Operation 64 [1/1] (0.00ns)   --->   "br label %.preheader" [../layers_c/up_sampling2d.cpp:17]   --->   Operation 64 'br' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 1.77ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('out_d') with incoming values : ('out_d', ../layers_c/up_sampling2d.cpp:14) [22]  (1.77 ns)
+
+ <State 2>: 1.92ns
+The critical path consists of the following:
+	'phi' operation ('phi_mul', ../layers_c/up_sampling2d.cpp:19) with incoming values : ('next_mul', ../layers_c/up_sampling2d.cpp:19) [23]  (0 ns)
+	'add' operation ('next_mul', ../layers_c/up_sampling2d.cpp:19) [26]  (1.92 ns)
+
+ <State 3>: 6.17ns
+The critical path consists of the following:
+	'phi' operation ('out_h') with incoming values : ('out_h', ../layers_c/up_sampling2d.cpp:15) [34]  (0 ns)
+	'add' operation ('tmp2', ../layers_c/up_sampling2d.cpp:19) [46]  (1.82 ns)
+	'mul' operation ('tmp3', ../layers_c/up_sampling2d.cpp:19) [48]  (4.35 ns)
+
+ <State 4>: 4.8ns
+The critical path consists of the following:
+	'phi' operation ('out_w') with incoming values : ('out_w', ../layers_c/up_sampling2d.cpp:17) [51]  (0 ns)
+	'add' operation ('add_ln19', ../layers_c/up_sampling2d.cpp:19) [59]  (1.55 ns)
+	'getelementptr' operation ('input_addr', ../layers_c/up_sampling2d.cpp:19) [61]  (0 ns)
+	'load' operation ('input_load', ../layers_c/up_sampling2d.cpp:19) on array 'input_r' [62]  (3.25 ns)
+
+ <State 5>: 6.51ns
+The critical path consists of the following:
+	'load' operation ('input_load', ../layers_c/up_sampling2d.cpp:19) on array 'input_r' [62]  (3.25 ns)
+	'store' operation ('store_ln19', ../layers_c/up_sampling2d.cpp:19) of variable 'input_load', ../layers_c/up_sampling2d.cpp:19 on array 'output_r' [67]  (3.25 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A
