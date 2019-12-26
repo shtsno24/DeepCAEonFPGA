@@ -11,8 +11,8 @@
 <Name>network</Name>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
-<TargetClockPeriod>10.00</TargetClockPeriod>
-<ClockUncertainty>1.25</ClockUncertainty>
+<TargetClockPeriod>20.00</TargetClockPeriod>
+<ClockUncertainty>5.00</ClockUncertainty>
 <EstimatedClockPeriod>6.508</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>

@@ -30,10 +30,11 @@ add_files ../weights_c/SeparableConv2D_0_fix16.h
 add_files -tb ../mnist_AXI_Stream.cpp -cflags "-Wno-unknown-pragmas"
 open_solution "solution1"
 set_part {xc7z020clg400-1} -tool vivado
-create_clock -period 10 -name default
+create_clock -period 20 -name default
 config_compile -no_signed_zeros=0 -unsafe_math_optimizations=0
-config_export -format ip_catalog -rtl verilog -vivado_phys_opt place -vivado_report_level 0
-set_clock_uncertainty 12.5%
+config_sdx -target none
+config_export -format ip_catalog -rtl verilog -vivado_optimization_level 2 -vivado_phys_opt place -vivado_report_level 0
+set_clock_uncertainty 25%
 #source "./HLS/solution1/directives.tcl"
 csim_design -clean
 csynth_design

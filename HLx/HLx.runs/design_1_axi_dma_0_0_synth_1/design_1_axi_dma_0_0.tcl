@@ -17,6 +17,7 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param chipscope.maxJobs 1
 set_param project.vivado.isBlockSynthRun true
 set_msg_config -msgmgr_mode ooc_run
 create_project -in_memory -part xc7z020clg400-1
@@ -31,6 +32,8 @@ set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part tul.com.tw:pynq-z2:part0:1.0 [current_project]
+set_property ip_repo_paths /home/masudalab/DeepCAEonFPGA/ip_generated [current_project]
+update_ip_catalog
 set_property ip_output_repo /home/masudalab/DeepCAEonFPGA/HLx/HLx.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_ip -quiet /home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0.xci

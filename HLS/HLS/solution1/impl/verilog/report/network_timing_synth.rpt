@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-| Date         : Thu Dec 26 15:29:51 2019
+| Date         : Thu Dec 26 16:14:58 2019
 | Host         : masudalab-ubuntu running 64-bit Ubuntu 18.04.3 LTS
 | Command      : report_timing_summary -file ./report/network_timing_synth.rpt
 | Design       : bd_0_wrapper
@@ -127,10 +127,10 @@ Table of Contents
 
     WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
     -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
-     -3.308      -73.655                     32                  916        0.252        0.000                      0                  916        4.500        0.000                       0                   572  
+      6.692        0.000                      0                  916        0.252        0.000                      0                  916        9.500        0.000                       0                   572  
 
 
-Timing constraints are not met.
+All user specified timing constraints are met.
 
 
 ------------------------------------------------------------------------------------------------
@@ -140,7 +140,7 @@ Timing constraints are not met.
 
 Clock   Waveform(ns)       Period(ns)      Frequency(MHz)
 -----   ------------       ----------      --------------
-ap_clk  {0.000 5.000}      10.000          100.000         
+ap_clk  {0.000 10.000}     20.000          50.000          
 
 
 ------------------------------------------------------------------------------------------------
@@ -150,7 +150,7 @@ ap_clk  {0.000 5.000}      10.000          100.000
 
 Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
 -----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
-ap_clk             -3.308      -73.655                     32                  916        0.252        0.000                      0                  916        4.500        0.000                       0                   572  
+ap_clk              6.692        0.000                      0                  916        0.252        0.000                      0                  916        9.500        0.000                       0                   572  
 
 
 ------------------------------------------------------------------------------------------------
@@ -181,26 +181,26 @@ Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing 
 From Clock:  ap_clk
   To Clock:  ap_clk
 
-Setup :           32  Failing Endpoints,  Worst Slack       -3.308ns,  Total Violation      -73.655ns
+Setup :            0  Failing Endpoints,  Worst Slack        6.692ns,  Total Violation        0.000ns
 Hold  :            0  Failing Endpoints,  Worst Slack        0.252ns,  Total Violation        0.000ns
-PW    :            0  Failing Endpoints,  Worst Slack        4.500ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        9.500ns,  Total Violation        0.000ns
 ---------------------------------------------------------------------------------------------------
 
 
 Max Delay Paths
 --------------------------------------------------------------------------------------
-Slack (VIOLATED) :        -3.308ns  (required time - arrival time)
+Slack (MET) :             6.692ns  (required time - arrival time)
   Source:                 bd_0_i/hls_inst/inst/ap_CS_fsm_reg[26]/C
-                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
   Destination:            bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_0/ADDRBWRADDR[2]
-                            (rising edge-triggered cell RAMB36E1 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+                            (rising edge-triggered cell RAMB36E1 clocked by ap_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
   Path Group:             ap_clk
   Path Type:              Setup (Max at Slow Process Corner)
-  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Requirement:            20.000ns  (ap_clk rise@20.000ns - ap_clk rise@0.000ns)
   Data Path Delay:        12.658ns  (logic 2.921ns (23.077%)  route 9.737ns (76.923%))
   Logic Levels:           18  (LUT3=1 LUT6=17)
   Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Destination Clock Delay (DCD):    0.924ns = ( 20.924 - 20.000 ) 
     Source Clock Delay      (SCD):    0.973ns
     Clock Pessimism Removal (CPR):    0.000ns
   Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
@@ -257,19 +257,19 @@ Slack (VIOLATED) :        -3.308ns  (required time - arrival time)
                          RAMB36E1                                     r  bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_0/ADDRBWRADDR[2]
   -------------------------------------------------------------------    -------------------
 
-                         (clock ap_clk rise edge)    10.000    10.000 r  
-                                                      0.000    10.000 r  ap_clk (IN)
-                         net (fo=571, unset)          0.924    10.924    bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ap_clk
+                         (clock ap_clk rise edge)    20.000    20.000 r  
+                                                      0.000    20.000 r  ap_clk (IN)
+                         net (fo=571, unset)          0.924    20.924    bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ap_clk
                          RAMB36E1                                     r  bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_0/CLKBWRCLK
-                         clock pessimism              0.000    10.924    
-                         clock uncertainty           -0.035    10.889    
+                         clock pessimism              0.000    20.924    
+                         clock uncertainty           -0.035    20.889    
                          RAMB36E1 (Setup_ramb36e1_CLKBWRCLK_ADDRBWRADDR[2])
-                                                     -0.566    10.323    bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_0
+                                                     -0.566    20.323    bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_0
   -------------------------------------------------------------------
-                         required time                         10.323    
+                         required time                         20.323    
                          arrival time                         -13.631    
   -------------------------------------------------------------------
-                         slack                                 -3.308    
+                         slack                                  6.692    
 
 
 
@@ -279,9 +279,9 @@ Min Delay Paths
 --------------------------------------------------------------------------------------
 Slack (MET) :             0.252ns  (arrival time - required time)
   Source:                 bd_0_i/hls_inst/inst/network_AXILiteS_s_axi_U/int_ap_idle_reg/C
-                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
   Destination:            bd_0_i/hls_inst/inst/network_AXILiteS_s_axi_U/rdata_reg[2]/D
-                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
   Path Group:             ap_clk
   Path Type:              Hold (Min at Fast Process Corner)
   Requirement:            0.000ns  (ap_clk rise@0.000ns - ap_clk rise@0.000ns)
@@ -325,14 +325,14 @@ Slack (MET) :             0.252ns  (arrival time - required time)
 Pulse Width Checks
 --------------------------------------------------------------------------------------
 Clock Name:         ap_clk
-Waveform(ns):       { 0.000 5.000 }
-Period(ns):         10.000
+Waveform(ns):       { 0.000 10.000 }
+Period(ns):         20.000
 Sources:            { ap_clk }
 
 Check Type        Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location  Pin
-Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.944         10.000      7.056                bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_2/CLKARDCLK
-Low Pulse Width   Fast    FDRE/C              n/a            0.500         5.000       4.500                bd_0_i/hls_inst/inst/ap_CS_fsm_reg[172]/C
-High Pulse Width  Slow    FDRE/C              n/a            0.500         5.000       4.500                bd_0_i/hls_inst/inst/ap_CS_fsm_reg[172]/C
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.944         20.000      17.056               bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_2/CLKARDCLK
+Low Pulse Width   Slow    FDRE/C              n/a            0.500         10.000      9.500                bd_0_i/hls_inst/inst/ap_CS_fsm_reg[172]/C
+High Pulse Width  Slow    FDRE/C              n/a            0.500         10.000      9.500                bd_0_i/hls_inst/inst/ap_CS_fsm_reg[172]/C
 
 
 

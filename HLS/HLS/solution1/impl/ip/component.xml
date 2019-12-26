@@ -746,7 +746,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>649b715d</spirit:value>
+            <spirit:value>96ea0f2f</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -762,7 +762,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>078cc5c6</spirit:value>
+            <spirit:value>f5029311</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -778,7 +778,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>3a16e63f</spirit:value>
+            <spirit:value>4b11938d</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -794,7 +794,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>d09e617c</spirit:value>
+            <spirit:value>3a1723ba</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1556,7 +1556,7 @@
       <spirit:file>
         <spirit:name>hdl/vhdl/network.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_0fb490c7</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_e53dd201</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -1664,7 +1664,7 @@
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>clk_period</spirit:name>
-      <spirit:value spirit:id="PARAM_VALUE.clk_period" spirit:order="2">10</spirit:value>
+      <spirit:value spirit:id="PARAM_VALUE.clk_period" spirit:order="2">20</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>machine</spirit:name>
@@ -1693,17 +1693,17 @@
       </xilinx:taxonomies>
       <xilinx:displayName>Network</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>1912261526</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2019-12-26T06:26:18Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>1912261611</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2019-12-26T07:11:23Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2019.1</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="0a3280ec"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="5dc19620"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="f90bbec1"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="c2948661"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="280a848e"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="1cf4461c"/>
-      <xilinx:checksum xilinx:scope="parameters" xilinx:value="ed226a7c"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="0d9cfa94"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>
 </spirit:component>

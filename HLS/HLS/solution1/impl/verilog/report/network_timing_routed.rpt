@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-| Date         : Thu Dec 26 15:31:36 2019
+| Date         : Thu Dec 26 16:16:07 2019
 | Host         : masudalab-ubuntu running 64-bit Ubuntu 18.04.3 LTS
 | Command      : report_timing_summary -file ./report/network_timing_routed.rpt
 | Design       : bd_0_wrapper
@@ -127,10 +127,10 @@ Table of Contents
 
     WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
     -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
-     -0.705       -9.297                     32                  918        0.158        0.000                      0                  918        4.500        0.000                       0                   574  
+      4.329        0.000                      0                  916        0.170        0.000                      0                  916        9.500        0.000                       0                   572  
 
 
-Timing constraints are not met.
+All user specified timing constraints are met.
 
 
 ------------------------------------------------------------------------------------------------
@@ -140,7 +140,7 @@ Timing constraints are not met.
 
 Clock   Waveform(ns)       Period(ns)      Frequency(MHz)
 -----   ------------       ----------      --------------
-ap_clk  {0.000 5.000}      10.000          100.000         
+ap_clk  {0.000 10.000}     20.000          50.000          
 
 
 ------------------------------------------------------------------------------------------------
@@ -150,7 +150,7 @@ ap_clk  {0.000 5.000}      10.000          100.000
 
 Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
 -----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
-ap_clk             -0.705       -9.297                     32                  918        0.158        0.000                      0                  918        4.500        0.000                       0                   574  
+ap_clk              4.329        0.000                      0                  916        0.170        0.000                      0                  916        9.500        0.000                       0                   572  
 
 
 ------------------------------------------------------------------------------------------------
@@ -181,26 +181,26 @@ Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing 
 From Clock:  ap_clk
   To Clock:  ap_clk
 
-Setup :           32  Failing Endpoints,  Worst Slack       -0.705ns,  Total Violation       -9.297ns
-Hold  :            0  Failing Endpoints,  Worst Slack        0.158ns,  Total Violation        0.000ns
-PW    :            0  Failing Endpoints,  Worst Slack        4.500ns,  Total Violation        0.000ns
+Setup :            0  Failing Endpoints,  Worst Slack        4.329ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.170ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        9.500ns,  Total Violation        0.000ns
 ---------------------------------------------------------------------------------------------------
 
 
 Max Delay Paths
 --------------------------------------------------------------------------------------
-Slack (VIOLATED) :        -0.705ns  (required time - arrival time)
-  Source:                 bd_0_i/hls_inst/inst/ap_CS_fsm_reg[59]/C
-                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_4/ADDRBWRADDR[2]
-                            (rising edge-triggered cell RAMB36E1 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+Slack (MET) :             4.329ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/ap_CS_fsm_reg[43]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_6/ADDRBWRADDR[2]
+                            (rising edge-triggered cell RAMB36E1 clocked by ap_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
   Path Group:             ap_clk
   Path Type:              Setup (Max at Slow Process Corner)
-  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
-  Data Path Delay:        10.055ns  (logic 2.626ns (26.115%)  route 7.429ns (73.885%))
-  Logic Levels:           17  (LUT4=1 LUT5=1 LUT6=15)
+  Requirement:            20.000ns  (ap_clk rise@20.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        15.021ns  (logic 3.050ns (20.304%)  route 11.971ns (79.695%))
+  Logic Levels:           17  (LUT3=1 LUT5=1 LUT6=15)
   Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Destination Clock Delay (DCD):    0.924ns = ( 20.924 - 20.000 ) 
     Source Clock Delay      (SCD):    0.973ns
     Clock Pessimism Removal (CPR):    0.000ns
   Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
@@ -213,61 +213,61 @@ Slack (VIOLATED) :        -0.705ns  (required time - arrival time)
   -------------------------------------------------------------------    -------------------
                          (clock ap_clk rise edge)     0.000     0.000 r  
                                                       0.000     0.000 r  ap_clk (IN)
-                         net (fo=573, unset)          0.973     0.973    bd_0_i/hls_inst/inst/ap_clk
-    SLICE_X20Y45         FDRE                                         r  bd_0_i/hls_inst/inst/ap_CS_fsm_reg[59]/C
+                         net (fo=571, unset)          0.973     0.973    bd_0_i/hls_inst/inst/ap_clk
+    SLICE_X38Y34         FDRE                                         r  bd_0_i/hls_inst/inst/ap_CS_fsm_reg[43]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X20Y45         FDRE (Prop_fdre_C_Q)         0.518     1.491 r  bd_0_i/hls_inst/inst/ap_CS_fsm_reg[59]/Q
-                         net (fo=11, routed)          0.870     2.361    bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/Q[58]
-    SLICE_X20Y45         LUT4 (Prop_lut4_I0_O)        0.124     2.485 r  bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_0_i_1057/O
-                         net (fo=1, routed)           0.603     3.088    bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_0_i_1057_n_3
-    SLICE_X22Y46         LUT5 (Prop_lut5_I0_O)        0.124     3.212 f  bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_0_i_1043/O
-                         net (fo=1, routed)           1.026     4.238    bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_0_i_1043_n_3
-    SLICE_X24Y46         LUT6 (Prop_lut6_I5_O)        0.124     4.362 f  bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_0_i_1029/O
-                         net (fo=1, routed)           0.300     4.662    bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_0_i_1029_n_3
-    SLICE_X24Y45         LUT6 (Prop_lut6_I1_O)        0.124     4.786 f  bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_0_i_1017/O
-                         net (fo=1, routed)           0.161     4.947    bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_0_i_1017_n_3
-    SLICE_X24Y45         LUT6 (Prop_lut6_I3_O)        0.124     5.071 f  bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_0_i_999/O
-                         net (fo=1, routed)           0.291     5.362    bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_0_i_999_n_3
-    SLICE_X25Y45         LUT6 (Prop_lut6_I2_O)        0.124     5.486 f  bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_0_i_987/O
-                         net (fo=1, routed)           0.300     5.786    bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_0_i_987_n_3
-    SLICE_X27Y44         LUT6 (Prop_lut6_I2_O)        0.124     5.910 f  bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_0_i_967/O
-                         net (fo=1, routed)           0.298     6.207    bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_0_i_967_n_3
-    SLICE_X29Y44         LUT6 (Prop_lut6_I1_O)        0.124     6.331 f  bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_0_i_952/O
-                         net (fo=1, routed)           0.149     6.480    bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_0_i_952_n_3
-    SLICE_X29Y44         LUT6 (Prop_lut6_I2_O)        0.124     6.604 f  bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_0_i_933/O
-                         net (fo=1, routed)           0.530     7.134    bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_0_i_933_n_3
-    SLICE_X33Y43         LUT6 (Prop_lut6_I2_O)        0.124     7.258 f  bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_0_i_913/O
-                         net (fo=1, routed)           0.360     7.618    bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_0_i_913_n_3
-    SLICE_X32Y43         LUT6 (Prop_lut6_I2_O)        0.124     7.742 f  bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_0_i_884/O
-                         net (fo=1, routed)           0.296     8.038    bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_0_i_884_n_3
-    SLICE_X33Y43         LUT6 (Prop_lut6_I2_O)        0.124     8.162 f  bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_0_i_846/O
-                         net (fo=1, routed)           0.263     8.425    bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_0_i_846_n_3
-    SLICE_X33Y43         LUT6 (Prop_lut6_I2_O)        0.124     8.549 f  bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_0_i_770/O
-                         net (fo=1, routed)           0.151     8.700    bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_0_i_770_n_3
-    SLICE_X33Y43         LUT6 (Prop_lut6_I2_O)        0.124     8.824 f  bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_0_i_566/O
-                         net (fo=1, routed)           0.290     9.114    bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_0_i_566_n_3
-    SLICE_X33Y42         LUT6 (Prop_lut6_I2_O)        0.124     9.238 f  bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_0_i_293/O
-                         net (fo=1, routed)           0.151     9.389    bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_0_i_293_n_3
-    SLICE_X33Y42         LUT6 (Prop_lut6_I3_O)        0.124     9.513 r  bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_0_i_107/O
-                         net (fo=1, routed)           0.351     9.865    bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_0_i_107_n_3
-    SLICE_X32Y42         LUT6 (Prop_lut6_I3_O)        0.124     9.989 r  bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_0_i_25/O
-                         net (fo=8, routed)           1.040    11.028    bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_0_i_25_n_3
-    RAMB36_X2Y11         RAMB36E1                                     r  bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_4/ADDRBWRADDR[2]
+    SLICE_X38Y34         FDRE (Prop_fdre_C_Q)         0.518     1.491 r  bd_0_i/hls_inst/inst/ap_CS_fsm_reg[43]/Q
+                         net (fo=9, routed)           0.937     2.428    bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/Q[42]
+    SLICE_X36Y33         LUT5 (Prop_lut5_I0_O)        0.116     2.544 r  bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_0_i_722/O
+                         net (fo=2, routed)           0.841     3.385    bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_0_i_722_n_3
+    SLICE_X37Y32         LUT3 (Prop_lut3_I2_O)        0.354     3.739 r  bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_0_i_1039/O
+                         net (fo=1, routed)           0.932     4.671    bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_0_i_1039_n_3
+    SLICE_X38Y31         LUT6 (Prop_lut6_I1_O)        0.326     4.997 f  bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_0_i_1029/O
+                         net (fo=1, routed)           0.298     5.295    bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_0_i_1029_n_3
+    SLICE_X41Y31         LUT6 (Prop_lut6_I1_O)        0.124     5.419 f  bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_0_i_1017/O
+                         net (fo=1, routed)           0.590     6.009    bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_0_i_1017_n_3
+    SLICE_X45Y34         LUT6 (Prop_lut6_I3_O)        0.124     6.133 f  bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_0_i_999/O
+                         net (fo=1, routed)           0.452     6.585    bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_0_i_999_n_3
+    SLICE_X48Y36         LUT6 (Prop_lut6_I2_O)        0.124     6.709 f  bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_0_i_987/O
+                         net (fo=1, routed)           0.443     7.151    bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_0_i_987_n_3
+    SLICE_X48Y39         LUT6 (Prop_lut6_I2_O)        0.124     7.275 f  bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_0_i_967/O
+                         net (fo=1, routed)           0.442     7.717    bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_0_i_967_n_3
+    SLICE_X47Y41         LUT6 (Prop_lut6_I1_O)        0.124     7.841 f  bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_0_i_952/O
+                         net (fo=1, routed)           0.435     8.276    bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_0_i_952_n_3
+    SLICE_X47Y43         LUT6 (Prop_lut6_I2_O)        0.124     8.400 f  bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_0_i_933/O
+                         net (fo=1, routed)           0.580     8.981    bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_0_i_933_n_3
+    SLICE_X42Y46         LUT6 (Prop_lut6_I2_O)        0.124     9.105 f  bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_0_i_913/O
+                         net (fo=1, routed)           0.567     9.672    bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_0_i_913_n_3
+    SLICE_X37Y45         LUT6 (Prop_lut6_I2_O)        0.124     9.796 f  bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_0_i_884/O
+                         net (fo=1, routed)           0.889    10.685    bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_0_i_884_n_3
+    SLICE_X30Y39         LUT6 (Prop_lut6_I2_O)        0.124    10.809 f  bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_0_i_846/O
+                         net (fo=1, routed)           0.544    11.353    bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_0_i_846_n_3
+    SLICE_X23Y39         LUT6 (Prop_lut6_I2_O)        0.124    11.477 f  bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_0_i_770/O
+                         net (fo=1, routed)           0.494    11.970    bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_0_i_770_n_3
+    SLICE_X22Y41         LUT6 (Prop_lut6_I2_O)        0.124    12.094 f  bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_0_i_566/O
+                         net (fo=1, routed)           0.675    12.769    bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_0_i_566_n_3
+    SLICE_X24Y44         LUT6 (Prop_lut6_I2_O)        0.124    12.893 f  bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_0_i_293/O
+                         net (fo=1, routed)           0.808    13.701    bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_0_i_293_n_3
+    SLICE_X33Y47         LUT6 (Prop_lut6_I3_O)        0.124    13.825 r  bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_0_i_107/O
+                         net (fo=1, routed)           0.538    14.363    bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_0_i_107_n_3
+    SLICE_X30Y48         LUT6 (Prop_lut6_I3_O)        0.124    14.487 r  bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_0_i_25/O
+                         net (fo=8, routed)           1.508    15.994    bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_0_i_25_n_3
+    RAMB36_X0Y8          RAMB36E1                                     r  bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_6/ADDRBWRADDR[2]
   -------------------------------------------------------------------    -------------------
 
-                         (clock ap_clk rise edge)    10.000    10.000 r  
-                                                      0.000    10.000 r  ap_clk (IN)
-                         net (fo=573, unset)          0.924    10.924    bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ap_clk
-    RAMB36_X2Y11         RAMB36E1                                     r  bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_4/CLKBWRCLK
-                         clock pessimism              0.000    10.924    
-                         clock uncertainty           -0.035    10.889    
-    RAMB36_X2Y11         RAMB36E1 (Setup_ramb36e1_CLKBWRCLK_ADDRBWRADDR[2])
-                                                     -0.566    10.323    bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_4
+                         (clock ap_clk rise edge)    20.000    20.000 r  
+                                                      0.000    20.000 r  ap_clk (IN)
+                         net (fo=571, unset)          0.924    20.924    bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ap_clk
+    RAMB36_X0Y8          RAMB36E1                                     r  bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_6/CLKBWRCLK
+                         clock pessimism              0.000    20.924    
+                         clock uncertainty           -0.035    20.889    
+    RAMB36_X0Y8          RAMB36E1 (Setup_ramb36e1_CLKBWRCLK_ADDRBWRADDR[2])
+                                                     -0.566    20.323    bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_6
   -------------------------------------------------------------------
-                         required time                         10.323    
-                         arrival time                         -11.028    
+                         required time                         20.323    
+                         arrival time                         -15.994    
   -------------------------------------------------------------------
-                         slack                                 -0.705    
+                         slack                                  4.329    
 
 
 
@@ -275,16 +275,16 @@ Slack (VIOLATED) :        -0.705ns  (required time - arrival time)
 
 Min Delay Paths
 --------------------------------------------------------------------------------------
-Slack (MET) :             0.158ns  (arrival time - required time)
-  Source:                 bd_0_i/hls_inst/inst/network_AXILiteS_s_axi_U/int_ap_ready_reg/C
-                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            bd_0_i/hls_inst/inst/network_AXILiteS_s_axi_U/rdata_reg[3]/D
-                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+Slack (MET) :             0.170ns  (arrival time - required time)
+  Source:                 bd_0_i/hls_inst/inst/i_2_reg_14293_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            bd_0_i/hls_inst/inst/i_2_reg_14293_reg[5]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
   Path Group:             ap_clk
   Path Type:              Hold (Min at Fast Process Corner)
   Requirement:            0.000ns  (ap_clk rise@0.000ns - ap_clk rise@0.000ns)
-  Data Path Delay:        0.301ns  (logic 0.186ns (61.789%)  route 0.115ns (38.211%))
-  Logic Levels:           1  (LUT6=1)
+  Data Path Delay:        0.323ns  (logic 0.189ns (58.578%)  route 0.134ns (41.422%))
+  Logic Levels:           1  (LUT5=1)
   Clock Path Skew:        0.022ns (DCD - SCD - CPR)
     Destination Clock Delay (DCD):    0.432ns
     Source Clock Delay      (SCD):    0.410ns
@@ -294,27 +294,27 @@ Slack (MET) :             0.158ns  (arrival time - required time)
   -------------------------------------------------------------------    -------------------
                          (clock ap_clk rise edge)     0.000     0.000 r  
                                                       0.000     0.000 r  ap_clk (IN)
-                         net (fo=573, unset)          0.410     0.410    bd_0_i/hls_inst/inst/network_AXILiteS_s_axi_U/ap_clk
-    SLICE_X33Y67         FDRE                                         r  bd_0_i/hls_inst/inst/network_AXILiteS_s_axi_U/int_ap_ready_reg/C
+                         net (fo=571, unset)          0.410     0.410    bd_0_i/hls_inst/inst/ap_clk
+    SLICE_X27Y49         FDRE                                         r  bd_0_i/hls_inst/inst/i_2_reg_14293_reg[2]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X33Y67         FDRE (Prop_fdre_C_Q)         0.141     0.551 r  bd_0_i/hls_inst/inst/network_AXILiteS_s_axi_U/int_ap_ready_reg/Q
-                         net (fo=1, routed)           0.115     0.666    bd_0_i/hls_inst/inst/network_AXILiteS_s_axi_U/data0[3]
-    SLICE_X34Y67         LUT6 (Prop_lut6_I5_O)        0.045     0.711 r  bd_0_i/hls_inst/inst/network_AXILiteS_s_axi_U/rdata[3]_i_1/O
-                         net (fo=1, routed)           0.000     0.711    bd_0_i/hls_inst/inst/network_AXILiteS_s_axi_U/rdata[3]
-    SLICE_X34Y67         FDRE                                         r  bd_0_i/hls_inst/inst/network_AXILiteS_s_axi_U/rdata_reg[3]/D
+    SLICE_X27Y49         FDRE (Prop_fdre_C_Q)         0.141     0.551 r  bd_0_i/hls_inst/inst/i_2_reg_14293_reg[2]/Q
+                         net (fo=10, routed)          0.134     0.685    bd_0_i/hls_inst/inst/i_2_reg_14293_reg[2]
+    SLICE_X26Y49         LUT5 (Prop_lut5_I1_O)        0.048     0.733 r  bd_0_i/hls_inst/inst/i_2_reg_14293[5]_i_1/O
+                         net (fo=1, routed)           0.000     0.733    bd_0_i/hls_inst/inst/i_2_reg_14293[5]_i_1_n_3
+    SLICE_X26Y49         FDRE                                         r  bd_0_i/hls_inst/inst/i_2_reg_14293_reg[5]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock ap_clk rise edge)     0.000     0.000 r  
                                                       0.000     0.000 r  ap_clk (IN)
-                         net (fo=573, unset)          0.432     0.432    bd_0_i/hls_inst/inst/network_AXILiteS_s_axi_U/ap_clk
-    SLICE_X34Y67         FDRE                                         r  bd_0_i/hls_inst/inst/network_AXILiteS_s_axi_U/rdata_reg[3]/C
+                         net (fo=571, unset)          0.432     0.432    bd_0_i/hls_inst/inst/ap_clk
+    SLICE_X26Y49         FDRE                                         r  bd_0_i/hls_inst/inst/i_2_reg_14293_reg[5]/C
                          clock pessimism              0.000     0.432    
-    SLICE_X34Y67         FDRE (Hold_fdre_C_D)         0.121     0.553    bd_0_i/hls_inst/inst/network_AXILiteS_s_axi_U/rdata_reg[3]
+    SLICE_X26Y49         FDRE (Hold_fdre_C_D)         0.131     0.563    bd_0_i/hls_inst/inst/i_2_reg_14293_reg[5]
   -------------------------------------------------------------------
-                         required time                         -0.553    
-                         arrival time                           0.711    
+                         required time                         -0.563    
+                         arrival time                           0.733    
   -------------------------------------------------------------------
-                         slack                                  0.158    
+                         slack                                  0.170    
 
 
 
@@ -323,14 +323,14 @@ Slack (MET) :             0.158ns  (arrival time - required time)
 Pulse Width Checks
 --------------------------------------------------------------------------------------
 Clock Name:         ap_clk
-Waveform(ns):       { 0.000 5.000 }
-Period(ns):         10.000
+Waveform(ns):       { 0.000 10.000 }
+Period(ns):         20.000
 Sources:            { ap_clk }
 
 Check Type        Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location      Pin
-Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.944         10.000      7.056      RAMB36_X2Y10  bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_2/CLKARDCLK
-Low Pulse Width   Fast    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X33Y39  bd_0_i/hls_inst/inst/ap_CS_fsm_reg[172]/C
-High Pulse Width  Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X33Y39  bd_0_i/hls_inst/inst/ap_CS_fsm_reg[172]/C
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.944         20.000      17.056     RAMB36_X1Y9   bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_2/CLKARDCLK
+Low Pulse Width   Slow    FDRE/C              n/a            0.500         10.000      9.500      SLICE_X47Y41  bd_0_i/hls_inst/inst/ap_CS_fsm_reg[172]/C
+High Pulse Width  Slow    FDRE/C              n/a            0.500         10.000      9.500      SLICE_X47Y41  bd_0_i/hls_inst/inst/ap_CS_fsm_reg[172]/C
 
 
 

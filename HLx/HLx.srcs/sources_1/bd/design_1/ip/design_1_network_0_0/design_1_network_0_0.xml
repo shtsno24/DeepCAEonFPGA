@@ -169,7 +169,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>FREQ_HZ</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXI_AXILITES.FREQ_HZ">100000000</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXI_AXILITES.FREQ_HZ">50000000</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -438,7 +438,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>FREQ_HZ</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.AP_CLK.FREQ_HZ">100000000</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.AP_CLK.FREQ_HZ">50000000</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -674,7 +674,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>FREQ_HZ</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.INPUT_DATA.FREQ_HZ">100000000</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.INPUT_DATA.FREQ_HZ">50000000</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -848,7 +848,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>FREQ_HZ</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.OUTPUT_DATA.FREQ_HZ">100000000</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.OUTPUT_DATA.FREQ_HZ">50000000</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -1187,11 +1187,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu Dec 26 06:43:32 UTC 2019</spirit:value>
+            <spirit:value>Thu Dec 26 07:29:12 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:8fc74161</spirit:value>
+            <spirit:value>9:8f3d9f23</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1202,7 +1202,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:8fc74161</spirit:value>
+            <spirit:value>9:8f3d9f23</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1218,11 +1218,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu Dec 26 06:43:32 UTC 2019</spirit:value>
+            <spirit:value>Thu Dec 26 07:29:12 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:8fc74161</spirit:value>
+            <spirit:value>9:8f3d9f23</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1238,11 +1238,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu Dec 26 06:43:32 UTC 2019</spirit:value>
+            <spirit:value>Thu Dec 26 07:29:12 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:96b802ca</spirit:value>
+            <spirit:value>9:65e14720</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1258,11 +1258,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu Dec 26 06:43:32 UTC 2019</spirit:value>
+            <spirit:value>Thu Dec 26 07:29:12 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:96b802ca</spirit:value>
+            <spirit:value>9:65e14720</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1276,11 +1276,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu Dec 26 06:46:15 UTC 2019</spirit:value>
+            <spirit:value>Thu Dec 26 07:34:45 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:8fc74161</spirit:value>
+            <spirit:value>9:8f3d9f23</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1903,19 +1903,19 @@
         <spirit:userFileType>USED_IN_out_of_context</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/28b8/hdl/verilog/network_AXILiteS_s_axi.v</spirit:name>
+        <spirit:name>../../ipshared/41ed/hdl/verilog/network_AXILiteS_s_axi.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/28b8/hdl/verilog/network_MemBank_B.v</spirit:name>
+        <spirit:name>../../ipshared/41ed/hdl/verilog/network_MemBank_B.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/28b8/hdl/verilog/network_MemBank_Out.v</spirit:name>
+        <spirit:name>../../ipshared/41ed/hdl/verilog/network_MemBank_Out.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/28b8/hdl/verilog/network.v</spirit:name>
+        <spirit:name>../../ipshared/41ed/hdl/verilog/network.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
@@ -1930,22 +1930,22 @@
     <spirit:fileSet>
       <spirit:name>xilinx_verilogbehavioralsimulation_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/28b8/hdl/verilog/network_AXILiteS_s_axi.v</spirit:name>
+        <spirit:name>../../ipshared/41ed/hdl/verilog/network_AXILiteS_s_axi.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/28b8/hdl/verilog/network_MemBank_B.v</spirit:name>
+        <spirit:name>../../ipshared/41ed/hdl/verilog/network_MemBank_B.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/28b8/hdl/verilog/network_MemBank_Out.v</spirit:name>
+        <spirit:name>../../ipshared/41ed/hdl/verilog/network_MemBank_Out.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/28b8/hdl/verilog/network.v</spirit:name>
+        <spirit:name>../../ipshared/41ed/hdl/verilog/network.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -2003,7 +2003,7 @@
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>clk_period</spirit:name>
-      <spirit:value spirit:id="PARAM_VALUE.clk_period" spirit:order="2">10</spirit:value>
+      <spirit:value spirit:id="PARAM_VALUE.clk_period" spirit:order="2">20</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -2061,7 +2061,7 @@
     <xilinx:coreExtensions>
       <xilinx:displayName>Network</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>1912261526</xilinx:coreRevision>
+      <xilinx:coreRevision>1912261611</xilinx:coreRevision>
       <xilinx:configElementInfos>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.AP_CLK.CLK_DOMAIN" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.AP_CLK.FREQ_HZ" xilinx:valueSource="user_prop" xilinx:valuePermission="bd"/>
@@ -2105,10 +2105,10 @@
       <xilinx:xilinxVersion>2019.1</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="0a3280ec"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="5dc19620"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="f90bbec1"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="c2948661"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="280a848e"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="1cf4461c"/>
-      <xilinx:checksum xilinx:scope="parameters" xilinx:value="ed226a7c"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="0d9cfa94"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>
 </spirit:component>

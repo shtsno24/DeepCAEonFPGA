@@ -108,8 +108,8 @@ Built simulation snapshot network
     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 
 source /home/masudalab/DeepCAEonFPGA/HLS/HLS/solution1/sim/verilog/xsim.dir/network/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-186] '/home/masudalab/DeepCAEonFPGA/HLS/HLS/solution1/sim/verilog/xsim.dir/network/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Thu Dec 26 15:18:41 2019. For additional details about this file, please refer to the WebTalk help file at /tools/Xilinx/Vivado/2019.1/doc/webtalk_introduction.html.
-INFO: [Common 17-206] Exiting Webtalk at Thu Dec 26 15:18:41 2019...
+INFO: [Common 17-186] '/home/masudalab/DeepCAEonFPGA/HLS/HLS/solution1/sim/verilog/xsim.dir/network/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Thu Dec 26 16:09:45 2019. For additional details about this file, please refer to the WebTalk help file at /tools/Xilinx/Vivado/2019.1/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Thu Dec 26 16:09:45 2019...
 
 ****** xsim v2019.1 (64-bit)
   **** SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
@@ -245,12 +245,12 @@ WARNING: [Simtcl 6-197] One or more HDL objects could not be logged because of o
 //
 // RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
 ////////////////////////////////////////////////////////////////////////////////////
-// RTL Simulation : 0 / 1 [n/a] @ "125000"
-// RTL Simulation : 1 / 1 [n/a] @ "20045000"
+// RTL Simulation : 0 / 1 [n/a] @ "150000"
+// RTL Simulation : 1 / 1 [n/a] @ "39990000"
 ////////////////////////////////////////////////////////////////////////////////////
-$finish called at time : 20085 ns : File "/home/masudalab/DeepCAEonFPGA/HLS/HLS/solution1/sim/verilog/network.autotb.v" Line 495
+$finish called at time : 40070 ns : File "/home/masudalab/DeepCAEonFPGA/HLS/HLS/solution1/sim/verilog/network.autotb.v" Line 495
 ## quit
-INFO: [Common 17-206] Exiting xsim at Thu Dec 26 15:18:52 2019...
+INFO: [Common 17-206] Exiting xsim at Thu Dec 26 16:09:55 2019...
      0 
 
      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0 
