@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Root MajorVersion="0" MinorVersion="36">
+<Root MajorVersion="0" MinorVersion="37">
   <CompositeFile CompositeFileTopName="bd_afc3" CanBeSetAsTop="true" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1577280111"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1577280111"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1577280111"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1577280111"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1577338361"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1577338361"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1577338361"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1577338361"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip/ip_0/bd_afc3_one_0.xci" Type="IP">
         <Instance HierarchyPath="clk_map/one"/>

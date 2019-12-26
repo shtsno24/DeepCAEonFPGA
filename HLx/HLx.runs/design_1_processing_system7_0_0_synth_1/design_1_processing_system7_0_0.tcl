@@ -48,7 +48,7 @@ read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
 
-set cached_ip [config_ip_cache -export -no_bom -use_project_ipc -dir /home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/design_1_processing_system7_0_0_synth_1 -new_name design_1_processing_system7_0_0 -ip [get_ips design_1_processing_system7_0_0]]
+set cached_ip [config_ip_cache -export -no_bom  -dir /home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/design_1_processing_system7_0_0_synth_1 -new_name design_1_processing_system7_0_0 -ip [get_ips design_1_processing_system7_0_0]]
 
 if { $cached_ip eq {} } {
 close [open __synthesis_is_running__ w]

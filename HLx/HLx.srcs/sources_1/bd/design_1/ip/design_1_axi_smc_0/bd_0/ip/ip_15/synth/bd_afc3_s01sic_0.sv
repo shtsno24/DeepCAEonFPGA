@@ -48,12 +48,12 @@
 
 
 // IP VLNV: xilinx.com:ip:sc_si_converter:1.0
-// IP Revision: 7
+// IP Revision: 8
 
-(* X_CORE_INFO = "sc_si_converter_v1_0_7_top,Vivado 2018.3.1" *)
-(* CHECK_LICENSE_TYPE = "bd_afc3_s01sic_0,sc_si_converter_v1_0_7_top,{}" *)
-(* CORE_GENERATION_INFO = "bd_afc3_s01sic_0,sc_si_converter_v1_0_7_top,{x_ipProduct=Vivado 2018.3.1,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=sc_si_converter,x_ipVersion=1.0,x_ipCoreRevision=7,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_LIMIT_WRITE_LENGTH=0,C_LIMIT_READ_LENGTH=0,C_WRITE_WATERMARK=0,C_READ_WATERMARK=0,C_ENABLE_PIPELINING=0x1,C_IS_CASCADED=0,C_NUM_WRITE_THREADS=1,C_NUM_READ_THREADS=1,C_MEP_IDENTIFIER_WIDTH=1,C_SUPPORTS_NARROW=0,C_HAS_BURST=0,C_NUM_SEG=1,C_SEP_WDATA_WIDTH_ARRAY=0x00000040,C_SEP_RDATA_WI\
-DTH_ARRAY=0x00000040,C_SEP_PROTOCOL_ARRAY=0x00000001,C_NUM_MSC=1,C_MSC_WDATA_WIDTH_ARRAY=0x00000040,C_MSC_RDATA_WIDTH_ARRAY=0x00000040,C_ADDR_WIDTH=64,C_ID_WIDTH=1,C_WDATA_WIDTH=64,C_RDATA_WIDTH=64,C_S_WUSER_BITS_PER_BYTE=0,C_S_RUSER_BITS_PER_BYTE=0,C_MAX_WUSER_BITS_PER_BYTE=0,C_MAX_RUSER_BITS_PER_BYTE=0,C_SINGLE_ISSUING=0,C_NUM_READ_OUTSTANDING=2,C_NUM_WRITE_OUTSTANDING=16,C_READ_ACCEPTANCE=32,C_WRITE_ACCEPTANCE=32}" *)
+(* X_CORE_INFO = "sc_si_converter_v1_0_8_top,Vivado 2019.1" *)
+(* CHECK_LICENSE_TYPE = "bd_afc3_s01sic_0,sc_si_converter_v1_0_8_top,{}" *)
+(* CORE_GENERATION_INFO = "bd_afc3_s01sic_0,sc_si_converter_v1_0_8_top,{x_ipProduct=Vivado 2019.1,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=sc_si_converter,x_ipVersion=1.0,x_ipCoreRevision=8,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_LIMIT_WRITE_LENGTH=0,C_LIMIT_READ_LENGTH=0,C_WRITE_WATERMARK=0,C_READ_WATERMARK=0,C_ENABLE_PIPELINING=0x1,C_IS_CASCADED=0,C_NUM_WRITE_THREADS=1,C_NUM_READ_THREADS=1,C_MEP_IDENTIFIER_WIDTH=1,C_SUPPORTS_NARROW=0,C_HAS_BURST=0,C_NUM_SEG=1,C_SEP_WDATA_WIDTH_ARRAY=0x00000040,C_SEP_RDATA_WIDT\
+H_ARRAY=0x00000040,C_SEP_PROTOCOL_ARRAY=0x00000001,C_NUM_MSC=1,C_MSC_WDATA_WIDTH_ARRAY=0x00000040,C_MSC_RDATA_WIDTH_ARRAY=0x00000040,C_ADDR_WIDTH=64,C_ID_WIDTH=1,C_WDATA_WIDTH=64,C_RDATA_WIDTH=64,C_S_WUSER_BITS_PER_BYTE=0,C_S_RUSER_BITS_PER_BYTE=0,C_MAX_WUSER_BITS_PER_BYTE=0,C_MAX_RUSER_BITS_PER_BYTE=0,C_SINGLE_ISSUING=0,C_NUM_READ_OUTSTANDING=2,C_NUM_WRITE_OUTSTANDING=16,C_READ_ACCEPTANCE=32,C_WRITE_ACCEPTANCE=32}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module bd_afc3_s01sic_0 (
   aclk,
@@ -61,6 +61,7 @@ module bd_afc3_s01sic_0 (
   s_axi_awid,
   s_axi_awaddr,
   s_axi_awlen,
+  s_axi_awsize,
   s_axi_awlock,
   s_axi_awcache,
   s_axi_awprot,
@@ -114,6 +115,8 @@ input wire [0 : 0] s_axi_awid;
 input wire [63 : 0] s_axi_awaddr;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI AWLEN" *)
 input wire [7 : 0] s_axi_awlen;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI AWSIZE" *)
+input wire [2 : 0] s_axi_awsize;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI AWLOCK" *)
 input wire [0 : 0] s_axi_awlock;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI AWCACHE" *)
@@ -197,7 +200,7 @@ _THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, I
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI BREADY" *)
 output wire m_axi_bready;
 
-  sc_si_converter_v1_0_7_top #(
+  sc_si_converter_v1_0_8_top #(
     .C_LIMIT_WRITE_LENGTH(0),
     .C_LIMIT_READ_LENGTH(0),
     .C_WRITE_WATERMARK(0),
@@ -236,7 +239,7 @@ output wire m_axi_bready;
     .s_axi_awid(s_axi_awid),
     .s_axi_awaddr(s_axi_awaddr),
     .s_axi_awlen(s_axi_awlen),
-    .s_axi_awsize(3'H0),
+    .s_axi_awsize(s_axi_awsize),
     .s_axi_awburst(2'H1),
     .s_axi_awlock(s_axi_awlock),
     .s_axi_awcache(s_axi_awcache),

@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:ip:sc_si_converter:1.0
-// IP Revision: 7
+// IP Revision: 8
 
 `timescale 1ns/1ps
 
@@ -59,6 +59,7 @@ module bd_afc3_s01sic_0 (
   s_axi_awid,
   s_axi_awaddr,
   s_axi_awlen,
+  s_axi_awsize,
   s_axi_awlock,
   s_axi_awcache,
   s_axi_awprot,
@@ -112,6 +113,8 @@ input wire [0 : 0] s_axi_awid;
 input wire [63 : 0] s_axi_awaddr;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI AWLEN" *)
 input wire [7 : 0] s_axi_awlen;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI AWSIZE" *)
+input wire [2 : 0] s_axi_awsize;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI AWLOCK" *)
 input wire [0 : 0] s_axi_awlock;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI AWCACHE" *)
@@ -195,7 +198,7 @@ _THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, I
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI BREADY" *)
 output wire m_axi_bready;
 
-  sc_si_converter_v1_0_7_top #(
+  sc_si_converter_v1_0_8_top #(
     .C_LIMIT_WRITE_LENGTH(0),
     .C_LIMIT_READ_LENGTH(0),
     .C_WRITE_WATERMARK(0),
@@ -234,7 +237,7 @@ output wire m_axi_bready;
     .s_axi_awid(s_axi_awid),
     .s_axi_awaddr(s_axi_awaddr),
     .s_axi_awlen(s_axi_awlen),
-    .s_axi_awsize(3'H0),
+    .s_axi_awsize(s_axi_awsize),
     .s_axi_awburst(2'H1),
     .s_axi_awlock(s_axi_awlock),
     .s_axi_awcache(s_axi_awcache),

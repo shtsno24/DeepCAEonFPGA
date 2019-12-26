@@ -91,9 +91,11 @@
 				"/m00_exit_pipeline/m_axi": {
 					"interface": "xilinx.com:interface:aximm:1.0",
 					"ports": {
+						"ACLK": { "actual": "aclk"},
 						"ARADDR": { "actual": "m_axi_araddr"},
 						"ARBURST": { "actual": "m_axi_arburst"},
 						"ARCACHE": { "actual": "m_axi_arcache"},
+						"ARESETN": { "actual": "aresetn"},
 						"ARLEN": { "actual": "m_axi_arlen"},
 						"ARLOCK": { "actual": "m_axi_arlock"},
 						"ARPROT": { "actual": "m_axi_arprot"},
@@ -129,8 +131,10 @@
 				"/m00_exit_pipeline/s_axi": {
 					"interface": "xilinx.com:interface:aximm:1.0",
 					"ports": {
+						"ACLK": { "actual": "aclk"},
 						"ARADDR": { "actual": "s_axi_araddr"},
 						"ARCACHE": { "actual": "s_axi_arcache"},
+						"ARESETN": { "actual": "aresetn"},
 						"ARID": { "actual": "s_axi_arid[0:0]"},
 						"ARLEN": { "actual": "s_axi_arlen"},
 						"ARLOCK": { "actual": "s_axi_arlock"},
@@ -259,8 +263,10 @@
 				"/s00_entry_pipeline/m_axi": {
 					"interface": "xilinx.com:interface:aximm:1.0",
 					"ports": {
+						"ACLK": { "actual": "aclk"},
 						"ARADDR": { "actual": "m_axi_araddr"},
 						"ARCACHE": { "actual": "m_axi_arcache"},
+						"ARESETN": { "actual": "aresetn"},
 						"ARID": { "actual": "m_axi_arid[0:0]"},
 						"ARLEN": { "actual": "m_axi_arlen"},
 						"ARLOCK": { "actual": "m_axi_arlock"},
@@ -361,6 +367,7 @@
 						"ARPROT": { "actual": "s_axi_arprot"},
 						"ARQOS": { "actual": "s_axi_arqos"},
 						"ARREADY": { "actual": "s_axi_arready"},
+						"ARSIZE": { "actual": "s_axi_arsize"},
 						"ARUSER": { "actual": "s_axi_aruser"},
 						"ARVALID": { "actual": "s_axi_arvalid"},
 						"RDATA": { "actual": "s_axi_rdata"},
@@ -425,9 +432,11 @@
 				"/s00_entry_pipeline/s_axi": {
 					"interface": "xilinx.com:interface:aximm:1.0",
 					"ports": {
+						"ACLK": { "actual": "aclk"},
 						"ARADDR": { "actual": "s_axi_araddr"},
 						"ARBURST": { "actual": "s_axi_arburst"},
 						"ARCACHE": { "actual": "s_axi_arcache"},
+						"ARESETN": { "actual": "aresetn"},
 						"ARLEN": { "actual": "s_axi_arlen"},
 						"ARLOCK": { "actual": "s_axi_arlock"},
 						"ARPROT": { "actual": "s_axi_arprot"},
@@ -472,6 +481,8 @@
 				"/s01_entry_pipeline/m_axi": {
 					"interface": "xilinx.com:interface:aximm:1.0",
 					"ports": {
+						"ACLK": { "actual": "aclk"},
+						"ARESETN": { "actual": "aresetn"},
 						"AWADDR": { "actual": "m_axi_awaddr"},
 						"AWCACHE": { "actual": "m_axi_awcache"},
 						"AWID": { "actual": "m_axi_awid[0:0]"},
@@ -589,6 +600,7 @@
 						"AWPROT": { "actual": "s_axi_awprot"},
 						"AWQOS": { "actual": "s_axi_awqos"},
 						"AWREADY": { "actual": "s_axi_awready"},
+						"AWSIZE": { "actual": "s_axi_awsize"},
 						"AWUSER": { "actual": "s_axi_awuser"},
 						"AWVALID": { "actual": "s_axi_awvalid"},
 						"BID": { "actual": "s_axi_bid"},
@@ -665,6 +677,8 @@
 				"/s01_entry_pipeline/s_axi": {
 					"interface": "xilinx.com:interface:aximm:1.0",
 					"ports": {
+						"ACLK": { "actual": "aclk"},
+						"ARESETN": { "actual": "aresetn"},
 						"AWADDR": { "actual": "s_axi_awaddr"},
 						"AWBURST": { "actual": "s_axi_awburst"},
 						"AWCACHE": { "actual": "s_axi_awcache"},

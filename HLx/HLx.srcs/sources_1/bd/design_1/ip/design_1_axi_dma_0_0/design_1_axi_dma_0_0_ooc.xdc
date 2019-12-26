@@ -1,4 +1,4 @@
-# (c) Copyright 2009 - 2013 Xilinx, Inc. All rights reserved.
+# (c) Copyright 2012-2019 Xilinx, Inc. All rights reserved.
 # 
 # This file contains confidential and proprietary information
 # of Xilinx, Inc. and is protected under U.S. and
@@ -43,14 +43,19 @@
 # 
 # THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
 # PART OF THIS FILE AT ALL TIMES.
+# 
+# DO NOT MODIFY THIS FILE.
+# #########################################################
+#
+# This XDC is used only in OOC mode for synthesis, implementation
+#
+# #########################################################
 
 
-# This XDC is used only for OOC mode of synthesis, implementation
-# User should update the correct clock period before proceeding further
+create_clock -period 10 -name m_axi_mm2s_aclk [get_ports m_axi_mm2s_aclk]
 
- create_clock -name all_clock -period 10 [get_ports {s_axi_lite_aclk m_axi_mm2s_aclk m_axi_s2mm_aclk }]
-## set_property HD.CLK_SRC BUFGCTRL_X0Y0 [get_ports s_axi_lite_aclk]
-# create_clock -name m_axi_mm2s_aclk -period 10 [get_ports m_axi_mm2s_aclk]
-## set_property HD.CLK_SRC BUFGCTRL_X0Y1 [get_ports m_axi_mm2s_aclk]
-# create_clock -name m_axi_s2mm_aclk -period 10 [get_ports m_axi_s2mm_aclk]
-## set_property HD.CLK_SRC BUFGCTRL_X0Y2 [get_ports m_axi_s2mm_aclk]
+create_clock -period 10 -name m_axi_s2mm_aclk [get_ports m_axi_s2mm_aclk]
+
+create_clock -period 10 -name s_axi_lite_aclk [get_ports s_axi_lite_aclk]
+
+

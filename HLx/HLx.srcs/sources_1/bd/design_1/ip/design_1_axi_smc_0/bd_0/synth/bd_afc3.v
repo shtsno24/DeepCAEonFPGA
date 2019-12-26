@@ -6,7 +6,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "bd_afc3,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=bd_afc3,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=35,numReposBlks=27,numNonXlnxBlks=0,numHierBlks=8,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=SBD,synth_mode=Global}" *) (* HW_HANDOFF = "design_1_axi_smc_0.hwdef" *) 
+(* CORE_GENERATION_INFO = "bd_afc3,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=bd_afc3,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=35,numReposBlks=27,numNonXlnxBlks=0,numHierBlks=8,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=SBD,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "design_1_axi_smc_0.hwdef" *) 
 module bd_afc3
    (M00_AXI_araddr,
     M00_AXI_arburst,
@@ -1786,6 +1786,7 @@ module s00_entry_pipeline_imp_USCCV8
   wire [2:0]s00_transaction_regulator_M_AXI_ARPROT;
   wire [3:0]s00_transaction_regulator_M_AXI_ARQOS;
   wire s00_transaction_regulator_M_AXI_ARREADY;
+  wire [2:0]s00_transaction_regulator_M_AXI_ARSIZE;
   wire [1023:0]s00_transaction_regulator_M_AXI_ARUSER;
   wire s00_transaction_regulator_M_AXI_ARVALID;
   wire [63:0]s00_transaction_regulator_M_AXI_RDATA;
@@ -1908,6 +1909,7 @@ module s00_entry_pipeline_imp_USCCV8
         .s_axi_arprot(s00_transaction_regulator_M_AXI_ARPROT),
         .s_axi_arqos(s00_transaction_regulator_M_AXI_ARQOS),
         .s_axi_arready(s00_transaction_regulator_M_AXI_ARREADY),
+        .s_axi_arsize(s00_transaction_regulator_M_AXI_ARSIZE),
         .s_axi_aruser(s00_transaction_regulator_M_AXI_ARUSER),
         .s_axi_arvalid(s00_transaction_regulator_M_AXI_ARVALID),
         .s_axi_rdata(s00_transaction_regulator_M_AXI_RDATA),
@@ -1928,6 +1930,7 @@ module s00_entry_pipeline_imp_USCCV8
         .m_axi_arprot(s00_transaction_regulator_M_AXI_ARPROT),
         .m_axi_arqos(s00_transaction_regulator_M_AXI_ARQOS),
         .m_axi_arready(s00_transaction_regulator_M_AXI_ARREADY),
+        .m_axi_arsize(s00_transaction_regulator_M_AXI_ARSIZE),
         .m_axi_aruser(s00_transaction_regulator_M_AXI_ARUSER),
         .m_axi_arvalid(s00_transaction_regulator_M_AXI_ARVALID),
         .m_axi_rdata(s00_transaction_regulator_M_AXI_RDATA),
@@ -2223,6 +2226,7 @@ module s01_entry_pipeline_imp_1W4H5O0
   wire [2:0]s01_transaction_regulator_M_AXI_AWPROT;
   wire [3:0]s01_transaction_regulator_M_AXI_AWQOS;
   wire s01_transaction_regulator_M_AXI_AWREADY;
+  wire [2:0]s01_transaction_regulator_M_AXI_AWSIZE;
   wire [1023:0]s01_transaction_regulator_M_AXI_AWUSER;
   wire s01_transaction_regulator_M_AXI_AWVALID;
   wire [0:0]s01_transaction_regulator_M_AXI_BID;
@@ -2370,6 +2374,7 @@ module s01_entry_pipeline_imp_1W4H5O0
         .s_axi_awprot(s01_transaction_regulator_M_AXI_AWPROT),
         .s_axi_awqos(s01_transaction_regulator_M_AXI_AWQOS),
         .s_axi_awready(s01_transaction_regulator_M_AXI_AWREADY),
+        .s_axi_awsize(s01_transaction_regulator_M_AXI_AWSIZE),
         .s_axi_awuser(s01_transaction_regulator_M_AXI_AWUSER),
         .s_axi_awvalid(s01_transaction_regulator_M_AXI_AWVALID),
         .s_axi_bid(s01_transaction_regulator_M_AXI_BID),
@@ -2394,6 +2399,7 @@ module s01_entry_pipeline_imp_1W4H5O0
         .m_axi_awprot(s01_transaction_regulator_M_AXI_AWPROT),
         .m_axi_awqos(s01_transaction_regulator_M_AXI_AWQOS),
         .m_axi_awready(s01_transaction_regulator_M_AXI_AWREADY),
+        .m_axi_awsize(s01_transaction_regulator_M_AXI_AWSIZE),
         .m_axi_awuser(s01_transaction_regulator_M_AXI_AWUSER),
         .m_axi_awvalid(s01_transaction_regulator_M_AXI_AWVALID),
         .m_axi_bid(s01_transaction_regulator_M_AXI_BID),

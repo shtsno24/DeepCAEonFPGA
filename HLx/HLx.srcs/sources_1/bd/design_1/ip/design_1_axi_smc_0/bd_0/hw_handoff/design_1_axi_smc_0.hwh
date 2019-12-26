@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Dec 25 22:21:51 2019" VIVADOVERSION="2018.3.1">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Dec 26 14:32:41 2019" VIVADOVERSION="2019.1">
 
   <SYSTEMINFO ARCH="zynq" BOARD="tul.com.tw:pynq-z2:part0:1.0" DEVICE="7z020" NAME="bd_afc3" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -560,7 +560,7 @@
   </EXTERNALINTERFACES>
 
   <MODULES>
-    <MODULE COREREVISION="5" FULLNAME="/clk_map/one" HWVERSION="1.1" INSTANCE="clk_map_one" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
+    <MODULE COREREVISION="6" FULLNAME="/clk_map/one" HWVERSION="1.1" INSTANCE="clk_map_one" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="CONST_WIDTH" VALUE="1"/>
@@ -5433,7 +5433,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="7" FULLNAME="/s00_entry_pipeline/s00_si_converter" HWVERSION="1.0" INSTANCE="s00_entry_pipeline_s00_si_converter" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="sc_si_converter" VLNV="xilinx.com:ip:sc_si_converter:1.0">
+    <MODULE COREREVISION="8" FULLNAME="/s00_entry_pipeline/s00_si_converter" HWVERSION="1.0" INSTANCE="s00_entry_pipeline_s00_si_converter" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="sc_si_converter" VLNV="xilinx.com:ip:sc_si_converter:1.0">
       <DOCUMENTS>
         <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=smartconnect;v=v1_0;d=pg247-smartconnect.pdf"/>
       </DOCUMENTS>
@@ -6422,6 +6422,11 @@
             <CONNECTION INSTANCE="s00_entry_pipeline_s00_transaction_regulator" PORT="m_axi_arlen"/>
           </CONNECTIONS>
         </PORT>
+        <PORT DIR="I" LEFT="2" NAME="s_axi_arsize" RIGHT="0" SIGIS="undef" SIGNAME="s00_entry_pipeline_s00_si_converter_s_axi_arsize">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="s00_entry_pipeline_s00_transaction_regulator" PORT="m_axi_arsize"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT DIR="I" LEFT="0" NAME="s_axi_arlock" RIGHT="0" SIGIS="undef" SIGNAME="s00_entry_pipeline_s00_si_converter_s_axi_arlock">
           <CONNECTIONS>
             <CONNECTION INSTANCE="s00_entry_pipeline_s00_transaction_regulator" PORT="m_axi_arlock"/>
@@ -6616,6 +6621,7 @@
             <PORTMAP LOGICAL="ARID" PHYSICAL="s_axi_arid"/>
             <PORTMAP LOGICAL="ARADDR" PHYSICAL="s_axi_araddr"/>
             <PORTMAP LOGICAL="ARLEN" PHYSICAL="s_axi_arlen"/>
+            <PORTMAP LOGICAL="ARSIZE" PHYSICAL="s_axi_arsize"/>
             <PORTMAP LOGICAL="ARLOCK" PHYSICAL="s_axi_arlock"/>
             <PORTMAP LOGICAL="ARCACHE" PHYSICAL="s_axi_arcache"/>
             <PORTMAP LOGICAL="ARPROT" PHYSICAL="s_axi_arprot"/>
@@ -6846,7 +6852,11 @@
             <CONNECTION INSTANCE="s00_entry_pipeline_s00_si_converter" PORT="s_axi_arlen"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="2" NAME="m_axi_arsize" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="2" NAME="m_axi_arsize" RIGHT="0" SIGIS="undef" SIGNAME="s00_entry_pipeline_s00_si_converter_s_axi_arsize">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="s00_entry_pipeline_s00_si_converter" PORT="s_axi_arsize"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT DIR="O" LEFT="1" NAME="m_axi_arburst" RIGHT="0" SIGIS="undef"/>
         <PORT DIR="O" LEFT="0" NAME="m_axi_arlock" RIGHT="0" SIGIS="undef" SIGNAME="s00_entry_pipeline_s00_si_converter_s_axi_arlock">
           <CONNECTIONS>
@@ -9960,7 +9970,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="7" FULLNAME="/s01_entry_pipeline/s01_si_converter" HWVERSION="1.0" INSTANCE="s01_entry_pipeline_s01_si_converter" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="sc_si_converter" VLNV="xilinx.com:ip:sc_si_converter:1.0">
+    <MODULE COREREVISION="8" FULLNAME="/s01_entry_pipeline/s01_si_converter" HWVERSION="1.0" INSTANCE="s01_entry_pipeline_s01_si_converter" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="sc_si_converter" VLNV="xilinx.com:ip:sc_si_converter:1.0">
       <DOCUMENTS>
         <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=smartconnect;v=v1_0;d=pg247-smartconnect.pdf"/>
       </DOCUMENTS>
@@ -10949,6 +10959,11 @@
             <CONNECTION INSTANCE="s01_entry_pipeline_s01_transaction_regulator" PORT="m_axi_awlen"/>
           </CONNECTIONS>
         </PORT>
+        <PORT DIR="I" LEFT="2" NAME="s_axi_awsize" RIGHT="0" SIGIS="undef" SIGNAME="s01_entry_pipeline_s01_si_converter_s_axi_awsize">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="s01_entry_pipeline_s01_transaction_regulator" PORT="m_axi_awsize"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT DIR="I" LEFT="0" NAME="s_axi_awlock" RIGHT="0" SIGIS="undef" SIGNAME="s01_entry_pipeline_s01_si_converter_s_axi_awlock">
           <CONNECTIONS>
             <CONNECTION INSTANCE="s01_entry_pipeline_s01_transaction_regulator" PORT="m_axi_awlock"/>
@@ -11183,6 +11198,7 @@
             <PORTMAP LOGICAL="AWID" PHYSICAL="s_axi_awid"/>
             <PORTMAP LOGICAL="AWADDR" PHYSICAL="s_axi_awaddr"/>
             <PORTMAP LOGICAL="AWLEN" PHYSICAL="s_axi_awlen"/>
+            <PORTMAP LOGICAL="AWSIZE" PHYSICAL="s_axi_awsize"/>
             <PORTMAP LOGICAL="AWLOCK" PHYSICAL="s_axi_awlock"/>
             <PORTMAP LOGICAL="AWCACHE" PHYSICAL="s_axi_awcache"/>
             <PORTMAP LOGICAL="AWPROT" PHYSICAL="s_axi_awprot"/>
@@ -11441,7 +11457,11 @@
             <CONNECTION INSTANCE="s01_entry_pipeline_s01_si_converter" PORT="s_axi_awlen"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="2" NAME="m_axi_awsize" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="2" NAME="m_axi_awsize" RIGHT="0" SIGIS="undef" SIGNAME="s01_entry_pipeline_s01_si_converter_s_axi_awsize">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="s01_entry_pipeline_s01_si_converter" PORT="s_axi_awsize"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT DIR="O" LEFT="1" NAME="m_axi_awburst" RIGHT="0" SIGIS="undef"/>
         <PORT DIR="O" LEFT="0" NAME="m_axi_awlock" RIGHT="0" SIGIS="undef" SIGNAME="s01_entry_pipeline_s01_si_converter_s_axi_awlock">
           <CONNECTIONS>
