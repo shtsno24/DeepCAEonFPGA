@@ -28,6 +28,12 @@ struct pointwise_conv2d_fix_3_SeparableConv2D_3_w_s_ram : public sc_core::sc_mod
 sc_core::sc_in <sc_lv<AddressWidth> > address0;
 sc_core::sc_in <sc_logic> ce0;
 sc_core::sc_out <sc_lv<DataWidth> > q0;
+sc_core::sc_in <sc_lv<AddressWidth> > address1;
+sc_core::sc_in <sc_logic> ce1;
+sc_core::sc_out <sc_lv<DataWidth> > q1;
+sc_core::sc_in <sc_lv<AddressWidth> > address2;
+sc_core::sc_in <sc_logic> ce2;
+sc_core::sc_out <sc_lv<DataWidth> > q2;
 sc_core::sc_in<sc_logic> reset;
 sc_core::sc_in<bool> clk;
 
@@ -168,6 +174,14 @@ sc_lv<DataWidth> ram[AddressRange];
 
 SC_METHOD(prc_write_0);
   sensitive<<clk.pos();
+
+
+SC_METHOD(prc_write_1);
+  sensitive<<clk.pos();
+
+
+SC_METHOD(prc_write_2);
+  sensitive<<clk.pos();
    }
 
 
@@ -179,6 +193,30 @@ void prc_write_0()
               q0 = ram[address0.read().to_uint()];
             else
               q0 = sc_lv<DataWidth>();
+    }
+}
+
+
+void prc_write_1()
+{
+    if (ce1.read() == sc_dt::Log_1) 
+    {
+            if(address1.read().is_01() && address1.read().to_uint()<AddressRange)
+              q1 = ram[address1.read().to_uint()];
+            else
+              q1 = sc_lv<DataWidth>();
+    }
+}
+
+
+void prc_write_2()
+{
+    if (ce2.read() == sc_dt::Log_1) 
+    {
+            if(address2.read().is_01() && address2.read().to_uint()<AddressRange)
+              q2 = ram[address2.read().to_uint()];
+            else
+              q2 = sc_lv<DataWidth>();
     }
 }
 
@@ -196,6 +234,12 @@ static const unsigned AddressWidth = 7;
 sc_core::sc_in <sc_lv<AddressWidth> > address0;
 sc_core::sc_in<sc_logic> ce0;
 sc_core::sc_out <sc_lv<DataWidth> > q0;
+sc_core::sc_in <sc_lv<AddressWidth> > address1;
+sc_core::sc_in<sc_logic> ce1;
+sc_core::sc_out <sc_lv<DataWidth> > q1;
+sc_core::sc_in <sc_lv<AddressWidth> > address2;
+sc_core::sc_in<sc_logic> ce2;
+sc_core::sc_out <sc_lv<DataWidth> > q2;
 sc_core::sc_in<sc_logic> reset;
 sc_core::sc_in<bool> clk;
 
@@ -208,6 +252,14 @@ meminst = new pointwise_conv2d_fix_3_SeparableConv2D_3_w_s_ram("pointwise_conv2d
 meminst->address0(address0);
 meminst->ce0(ce0);
 meminst->q0(q0);
+
+meminst->address1(address1);
+meminst->ce1(ce1);
+meminst->q1(q1);
+
+meminst->address2(address2);
+meminst->ce2(ce2);
+meminst->q2(q2);
 
 meminst->reset(reset);
 meminst->clk(clk);

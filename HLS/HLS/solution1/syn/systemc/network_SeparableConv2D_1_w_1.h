@@ -28,6 +28,9 @@ struct network_SeparableConv2D_1_w_1_ram : public sc_core::sc_module {
 sc_core::sc_in <sc_lv<AddressWidth> > address0;
 sc_core::sc_in <sc_logic> ce0;
 sc_core::sc_out <sc_lv<DataWidth> > q0;
+sc_core::sc_in <sc_lv<AddressWidth> > address1;
+sc_core::sc_in <sc_logic> ce1;
+sc_core::sc_out <sc_lv<DataWidth> > q1;
 sc_core::sc_in<sc_logic> reset;
 sc_core::sc_in<bool> clk;
 
@@ -184,6 +187,10 @@ sc_lv<DataWidth> ram[AddressRange];
 
 SC_METHOD(prc_write_0);
   sensitive<<clk.pos();
+
+
+SC_METHOD(prc_write_1);
+  sensitive<<clk.pos();
    }
 
 
@@ -195,6 +202,18 @@ void prc_write_0()
               q0 = ram[address0.read().to_uint()];
             else
               q0 = sc_lv<DataWidth>();
+    }
+}
+
+
+void prc_write_1()
+{
+    if (ce1.read() == sc_dt::Log_1) 
+    {
+            if(address1.read().is_01() && address1.read().to_uint()<AddressRange)
+              q1 = ram[address1.read().to_uint()];
+            else
+              q1 = sc_lv<DataWidth>();
     }
 }
 
@@ -212,6 +231,9 @@ static const unsigned AddressWidth = 8;
 sc_core::sc_in <sc_lv<AddressWidth> > address0;
 sc_core::sc_in<sc_logic> ce0;
 sc_core::sc_out <sc_lv<DataWidth> > q0;
+sc_core::sc_in <sc_lv<AddressWidth> > address1;
+sc_core::sc_in<sc_logic> ce1;
+sc_core::sc_out <sc_lv<DataWidth> > q1;
 sc_core::sc_in<sc_logic> reset;
 sc_core::sc_in<bool> clk;
 
@@ -225,6 +247,9 @@ meminst->address0(address0);
 meminst->ce0(ce0);
 meminst->q0(q0);
 
+meminst->address1(address1);
+meminst->ce1(ce1);
+meminst->q1(q1);
 
 meminst->reset(reset);
 meminst->clk(clk);

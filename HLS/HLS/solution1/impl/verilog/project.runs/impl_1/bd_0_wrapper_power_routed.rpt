@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-| Date             : Thu Dec 26 20:30:53 2019
+| Date             : Fri Dec 27 12:20:09 2019
 | Host             : masudalab-ubuntu running 64-bit Ubuntu 18.04.3 LTS
 | Command          : report_power -file bd_0_wrapper_power_routed.rpt -pb bd_0_wrapper_power_summary_routed.pb -rpx bd_0_wrapper_power_routed.rpx
 | Design           : bd_0_wrapper
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.171        |
+| Total On-Chip Power (W)  | 0.323        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.067        |
-| Device Static (W)        | 0.105        |
+| Dynamic (W)              | 0.215        |
+| Device Static (W)        | 0.107        |
 | Effective TJA (C/W)      | 11.5         |
-| Max Ambient (C)          | 83.0         |
-| Junction Temperature (C) | 27.0         |
+| Max Ambient (C)          | 81.3         |
+| Junction Temperature (C) | 28.7         |
 | Confidence Level         | Medium       |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,19 +52,19 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.008 |        3 |       --- |             --- |
-| Slice Logic              |     0.006 |     4576 |       --- |             --- |
-|   LUT as Logic           |     0.005 |     1838 |     53200 |            3.45 |
-|   CARRY4                 |    <0.001 |      245 |     13300 |            1.84 |
-|   Register               |    <0.001 |     1878 |    106400 |            1.77 |
+| Clocks                   |     0.012 |        3 |       --- |             --- |
+| Slice Logic              |     0.033 |    27929 |       --- |             --- |
+|   LUT as Logic           |     0.029 |    13075 |     53200 |           24.58 |
+|   CARRY4                 |     0.004 |     2910 |     13300 |           21.88 |
+|   Register               |    <0.001 |     9030 |    106400 |            8.49 |
 |   LUT as Distributed RAM |    <0.001 |       52 |     17400 |            0.30 |
-|   F7/F8 Muxes            |    <0.001 |       36 |     53200 |            0.07 |
-|   Others                 |     0.000 |       98 |       --- |             --- |
-| Signals                  |     0.009 |     3585 |       --- |             --- |
-| Block RAM                |     0.032 |     20.5 |       140 |           14.64 |
-| DSPs                     |     0.011 |       14 |       220 |            6.36 |
-| Static Power             |     0.105 |          |           |                 |
-| Total                    |     0.171 |          |           |                 |
+|   F7/F8 Muxes            |    <0.001 |       37 |     53200 |            0.07 |
+|   Others                 |     0.000 |      393 |       --- |             --- |
+| Signals                  |     0.058 |    28425 |       --- |             --- |
+| Block RAM                |     0.023 |     24.5 |       140 |           17.50 |
+| DSPs                     |     0.089 |      218 |       220 |           99.09 |
+| Static Power             |     0.107 |          |           |                 |
+| Total                    |     0.323 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -74,8 +74,8 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.072 |       0.064 |      0.008 |
-| Vccaux    |       1.800 |     0.010 |       0.000 |      0.010 |
+| Vccint    |       1.000 |     0.222 |       0.213 |      0.009 |
+| Vccaux    |       1.800 |     0.011 |       0.000 |      0.011 |
 | Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
@@ -83,11 +83,11 @@ Table of Contents
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccbram   |       1.000 |     0.004 |       0.002 |      0.001 |
+| Vccbram   |       1.000 |     0.003 |       0.002 |      0.001 |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
 | MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccpint   |       1.000 |     0.017 |       0.000 |      0.017 |
+| Vccpint   |       1.000 |     0.018 |       0.000 |      0.018 |
 | Vccpaux   |       1.800 |     0.010 |       0.000 |      0.010 |
 | Vccpll    |       1.800 |     0.003 |       0.000 |      0.003 |
 | Vcco_ddr  |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -137,7 +137,7 @@ Table of Contents
 +--------+--------+-----------------+
 | Clock  | Domain | Constraint (ns) |
 +--------+--------+-----------------+
-| ap_clk | ap_clk |            10.0 |
+| ap_clk | ap_clk |            20.0 |
 +--------+--------+-----------------+
 
 
@@ -150,10 +150,10 @@ Table of Contents
 +--------------+-----------+
 | Name         | Power (W) |
 +--------------+-----------+
-| bd_0_wrapper |     0.067 |
-|   bd_0_i     |     0.067 |
-|     hls_inst |     0.067 |
-|       inst   |     0.067 |
+| bd_0_wrapper |     0.215 |
+|   bd_0_i     |     0.215 |
+|     hls_inst |     0.215 |
+|       inst   |     0.215 |
 +--------------+-----------+
 
 

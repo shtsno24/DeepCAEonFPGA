@@ -37,181 +37,181 @@
          <obj_property name="Render_Data">/apatb_network_top/AESL_inst_network//AESL_inst_network_activity.dataflowTxWaveData.Cycles</obj_property>
          <obj_property name="Value_Data">/apatb_network_top/AESL_inst_network//AESL_inst_network_activity.dataflowTxWaveData.OutStanding</obj_property>
          <obj_property name="Detail_Data">/apatb_network_top/AESL_inst_network//AESL_inst_network_activity.dataflowTxTooltipData</obj_property>
-         <wvobject type="group" fp_name="/apatb_network_top/AESL_inst_network/grp_padding2d_fix16_fu_443/grp_padding2d_fix16_fu_443_activity">
-            <obj_property name="label">grp_padding2d_fix16_fu_443_activity</obj_property>
+         <wvobject type="group" fp_name="/apatb_network_top/AESL_inst_network/grp_padding2d_fix16_fu_439/grp_padding2d_fix16_fu_439_activity">
+            <obj_property name="label">grp_padding2d_fix16_fu_439_activity</obj_property>
             <obj_property name="DisplayName">label</obj_property>
             <obj_property name="UseFullPath">true</obj_property>
-            <obj_property name="ElementShortName">grp_padding2d_fix16_fu_443_activity</obj_property>
-            <obj_property name="ObjectShortName">grp_padding2d_fix16_fu_443_activity</obj_property>
+            <obj_property name="ElementShortName">grp_padding2d_fix16_fu_439_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_padding2d_fix16_fu_439_activity</obj_property>
             <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
             <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
             <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
             <obj_property name="UseCustomSignalColor">true</obj_property>
             <obj_property name="CustomSignalColor">turquoise</obj_property>
             <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-            <obj_property name="Render_Data">/apatb_network_top/AESL_inst_network/grp_padding2d_fix16_fu_443/grp_padding2d_fix16_fu_443_activity.dataflowTxWaveData.Cycles</obj_property>
-            <obj_property name="Value_Data">/apatb_network_top/AESL_inst_network/grp_padding2d_fix16_fu_443/grp_padding2d_fix16_fu_443_activity.dataflowTxWaveData.OutStanding</obj_property>
-            <obj_property name="Detail_Data">/apatb_network_top/AESL_inst_network/grp_padding2d_fix16_fu_443/grp_padding2d_fix16_fu_443_activity.dataflowTxTooltipData</obj_property>
+            <obj_property name="Render_Data">/apatb_network_top/AESL_inst_network/grp_padding2d_fix16_fu_439/grp_padding2d_fix16_fu_439_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_network_top/AESL_inst_network/grp_padding2d_fix16_fu_439/grp_padding2d_fix16_fu_439_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_network_top/AESL_inst_network/grp_padding2d_fix16_fu_439/grp_padding2d_fix16_fu_439_activity.dataflowTxTooltipData</obj_property>
          </wvobject>
-         <wvobject type="group" fp_name="/apatb_network_top/AESL_inst_network/grp_depthwise_conv2d_fix_2_fu_461/grp_depthwise_conv2d_fix_2_fu_461_activity">
-            <obj_property name="label">grp_depthwise_conv2d_fix_2_fu_461_activity</obj_property>
+         <wvobject type="group" fp_name="/apatb_network_top/AESL_inst_network/grp_up_sampling2d_fix16_fu_457/grp_up_sampling2d_fix16_fu_457_activity">
+            <obj_property name="label">grp_up_sampling2d_fix16_fu_457_activity</obj_property>
             <obj_property name="DisplayName">label</obj_property>
             <obj_property name="UseFullPath">true</obj_property>
-            <obj_property name="ElementShortName">grp_depthwise_conv2d_fix_2_fu_461_activity</obj_property>
-            <obj_property name="ObjectShortName">grp_depthwise_conv2d_fix_2_fu_461_activity</obj_property>
+            <obj_property name="ElementShortName">grp_up_sampling2d_fix16_fu_457_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_up_sampling2d_fix16_fu_457_activity</obj_property>
             <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
             <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
             <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
             <obj_property name="UseCustomSignalColor">true</obj_property>
             <obj_property name="CustomSignalColor">turquoise</obj_property>
             <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-            <obj_property name="Render_Data">/apatb_network_top/AESL_inst_network/grp_depthwise_conv2d_fix_2_fu_461/grp_depthwise_conv2d_fix_2_fu_461_activity.dataflowTxWaveData.Cycles</obj_property>
-            <obj_property name="Value_Data">/apatb_network_top/AESL_inst_network/grp_depthwise_conv2d_fix_2_fu_461/grp_depthwise_conv2d_fix_2_fu_461_activity.dataflowTxWaveData.OutStanding</obj_property>
-            <obj_property name="Detail_Data">/apatb_network_top/AESL_inst_network/grp_depthwise_conv2d_fix_2_fu_461/grp_depthwise_conv2d_fix_2_fu_461_activity.dataflowTxTooltipData</obj_property>
+            <obj_property name="Render_Data">/apatb_network_top/AESL_inst_network/grp_up_sampling2d_fix16_fu_457/grp_up_sampling2d_fix16_fu_457_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_network_top/AESL_inst_network/grp_up_sampling2d_fix16_fu_457/grp_up_sampling2d_fix16_fu_457_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_network_top/AESL_inst_network/grp_up_sampling2d_fix16_fu_457/grp_up_sampling2d_fix16_fu_457_activity.dataflowTxTooltipData</obj_property>
          </wvobject>
-         <wvobject type="group" fp_name="/apatb_network_top/AESL_inst_network/grp_depthwise_conv2d_fix_1_fu_485/grp_depthwise_conv2d_fix_1_fu_485_activity">
-            <obj_property name="label">grp_depthwise_conv2d_fix_1_fu_485_activity</obj_property>
+         <wvobject type="group" fp_name="/apatb_network_top/AESL_inst_network/grp_depthwise_conv2d_fix_2_fu_478/grp_depthwise_conv2d_fix_2_fu_478_activity">
+            <obj_property name="label">grp_depthwise_conv2d_fix_2_fu_478_activity</obj_property>
             <obj_property name="DisplayName">label</obj_property>
             <obj_property name="UseFullPath">true</obj_property>
-            <obj_property name="ElementShortName">grp_depthwise_conv2d_fix_1_fu_485_activity</obj_property>
-            <obj_property name="ObjectShortName">grp_depthwise_conv2d_fix_1_fu_485_activity</obj_property>
+            <obj_property name="ElementShortName">grp_depthwise_conv2d_fix_2_fu_478_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_depthwise_conv2d_fix_2_fu_478_activity</obj_property>
             <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
             <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
             <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
             <obj_property name="UseCustomSignalColor">true</obj_property>
             <obj_property name="CustomSignalColor">turquoise</obj_property>
             <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-            <obj_property name="Render_Data">/apatb_network_top/AESL_inst_network/grp_depthwise_conv2d_fix_1_fu_485/grp_depthwise_conv2d_fix_1_fu_485_activity.dataflowTxWaveData.Cycles</obj_property>
-            <obj_property name="Value_Data">/apatb_network_top/AESL_inst_network/grp_depthwise_conv2d_fix_1_fu_485/grp_depthwise_conv2d_fix_1_fu_485_activity.dataflowTxWaveData.OutStanding</obj_property>
-            <obj_property name="Detail_Data">/apatb_network_top/AESL_inst_network/grp_depthwise_conv2d_fix_1_fu_485/grp_depthwise_conv2d_fix_1_fu_485_activity.dataflowTxTooltipData</obj_property>
+            <obj_property name="Render_Data">/apatb_network_top/AESL_inst_network/grp_depthwise_conv2d_fix_2_fu_478/grp_depthwise_conv2d_fix_2_fu_478_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_network_top/AESL_inst_network/grp_depthwise_conv2d_fix_2_fu_478/grp_depthwise_conv2d_fix_2_fu_478_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_network_top/AESL_inst_network/grp_depthwise_conv2d_fix_2_fu_478/grp_depthwise_conv2d_fix_2_fu_478_activity.dataflowTxTooltipData</obj_property>
          </wvobject>
-         <wvobject type="group" fp_name="/apatb_network_top/AESL_inst_network/grp_max_pooling2d_fix16_fu_509/grp_max_pooling2d_fix16_fu_509_activity">
-            <obj_property name="label">grp_max_pooling2d_fix16_fu_509_activity</obj_property>
+         <wvobject type="group" fp_name="/apatb_network_top/AESL_inst_network/grp_depthwise_conv2d_fix_1_fu_502/grp_depthwise_conv2d_fix_1_fu_502_activity">
+            <obj_property name="label">grp_depthwise_conv2d_fix_1_fu_502_activity</obj_property>
             <obj_property name="DisplayName">label</obj_property>
             <obj_property name="UseFullPath">true</obj_property>
-            <obj_property name="ElementShortName">grp_max_pooling2d_fix16_fu_509_activity</obj_property>
-            <obj_property name="ObjectShortName">grp_max_pooling2d_fix16_fu_509_activity</obj_property>
+            <obj_property name="ElementShortName">grp_depthwise_conv2d_fix_1_fu_502_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_depthwise_conv2d_fix_1_fu_502_activity</obj_property>
             <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
             <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
             <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
             <obj_property name="UseCustomSignalColor">true</obj_property>
             <obj_property name="CustomSignalColor">turquoise</obj_property>
             <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-            <obj_property name="Render_Data">/apatb_network_top/AESL_inst_network/grp_max_pooling2d_fix16_fu_509/grp_max_pooling2d_fix16_fu_509_activity.dataflowTxWaveData.Cycles</obj_property>
-            <obj_property name="Value_Data">/apatb_network_top/AESL_inst_network/grp_max_pooling2d_fix16_fu_509/grp_max_pooling2d_fix16_fu_509_activity.dataflowTxWaveData.OutStanding</obj_property>
-            <obj_property name="Detail_Data">/apatb_network_top/AESL_inst_network/grp_max_pooling2d_fix16_fu_509/grp_max_pooling2d_fix16_fu_509_activity.dataflowTxTooltipData</obj_property>
+            <obj_property name="Render_Data">/apatb_network_top/AESL_inst_network/grp_depthwise_conv2d_fix_1_fu_502/grp_depthwise_conv2d_fix_1_fu_502_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_network_top/AESL_inst_network/grp_depthwise_conv2d_fix_1_fu_502/grp_depthwise_conv2d_fix_1_fu_502_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_network_top/AESL_inst_network/grp_depthwise_conv2d_fix_1_fu_502/grp_depthwise_conv2d_fix_1_fu_502_activity.dataflowTxTooltipData</obj_property>
          </wvobject>
-         <wvobject type="group" fp_name="/apatb_network_top/AESL_inst_network/grp_pointwise_conv2d_fix_3_fu_530/grp_pointwise_conv2d_fix_3_fu_530_activity">
-            <obj_property name="label">grp_pointwise_conv2d_fix_3_fu_530_activity</obj_property>
+         <wvobject type="group" fp_name="/apatb_network_top/AESL_inst_network/grp_max_pooling2d_fix16_fu_526/grp_max_pooling2d_fix16_fu_526_activity">
+            <obj_property name="label">grp_max_pooling2d_fix16_fu_526_activity</obj_property>
             <obj_property name="DisplayName">label</obj_property>
             <obj_property name="UseFullPath">true</obj_property>
-            <obj_property name="ElementShortName">grp_pointwise_conv2d_fix_3_fu_530_activity</obj_property>
-            <obj_property name="ObjectShortName">grp_pointwise_conv2d_fix_3_fu_530_activity</obj_property>
+            <obj_property name="ElementShortName">grp_max_pooling2d_fix16_fu_526_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_max_pooling2d_fix16_fu_526_activity</obj_property>
             <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
             <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
             <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
             <obj_property name="UseCustomSignalColor">true</obj_property>
             <obj_property name="CustomSignalColor">turquoise</obj_property>
             <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-            <obj_property name="Render_Data">/apatb_network_top/AESL_inst_network/grp_pointwise_conv2d_fix_3_fu_530/grp_pointwise_conv2d_fix_3_fu_530_activity.dataflowTxWaveData.Cycles</obj_property>
-            <obj_property name="Value_Data">/apatb_network_top/AESL_inst_network/grp_pointwise_conv2d_fix_3_fu_530/grp_pointwise_conv2d_fix_3_fu_530_activity.dataflowTxWaveData.OutStanding</obj_property>
-            <obj_property name="Detail_Data">/apatb_network_top/AESL_inst_network/grp_pointwise_conv2d_fix_3_fu_530/grp_pointwise_conv2d_fix_3_fu_530_activity.dataflowTxTooltipData</obj_property>
+            <obj_property name="Render_Data">/apatb_network_top/AESL_inst_network/grp_max_pooling2d_fix16_fu_526/grp_max_pooling2d_fix16_fu_526_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_network_top/AESL_inst_network/grp_max_pooling2d_fix16_fu_526/grp_max_pooling2d_fix16_fu_526_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_network_top/AESL_inst_network/grp_max_pooling2d_fix16_fu_526/grp_max_pooling2d_fix16_fu_526_activity.dataflowTxTooltipData</obj_property>
          </wvobject>
-         <wvobject type="group" fp_name="/apatb_network_top/AESL_inst_network/grp_pointwise_conv2d_fix_1_fu_540/grp_pointwise_conv2d_fix_1_fu_540_activity">
-            <obj_property name="label">grp_pointwise_conv2d_fix_1_fu_540_activity</obj_property>
+         <wvobject type="group" fp_name="/apatb_network_top/AESL_inst_network/grp_depthwise_conv2d_fix_fu_547/grp_depthwise_conv2d_fix_fu_547_activity">
+            <obj_property name="label">grp_depthwise_conv2d_fix_fu_547_activity</obj_property>
             <obj_property name="DisplayName">label</obj_property>
             <obj_property name="UseFullPath">true</obj_property>
-            <obj_property name="ElementShortName">grp_pointwise_conv2d_fix_1_fu_540_activity</obj_property>
-            <obj_property name="ObjectShortName">grp_pointwise_conv2d_fix_1_fu_540_activity</obj_property>
+            <obj_property name="ElementShortName">grp_depthwise_conv2d_fix_fu_547_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_depthwise_conv2d_fix_fu_547_activity</obj_property>
             <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
             <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
             <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
             <obj_property name="UseCustomSignalColor">true</obj_property>
             <obj_property name="CustomSignalColor">turquoise</obj_property>
             <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-            <obj_property name="Render_Data">/apatb_network_top/AESL_inst_network/grp_pointwise_conv2d_fix_1_fu_540/grp_pointwise_conv2d_fix_1_fu_540_activity.dataflowTxWaveData.Cycles</obj_property>
-            <obj_property name="Value_Data">/apatb_network_top/AESL_inst_network/grp_pointwise_conv2d_fix_1_fu_540/grp_pointwise_conv2d_fix_1_fu_540_activity.dataflowTxWaveData.OutStanding</obj_property>
-            <obj_property name="Detail_Data">/apatb_network_top/AESL_inst_network/grp_pointwise_conv2d_fix_1_fu_540/grp_pointwise_conv2d_fix_1_fu_540_activity.dataflowTxTooltipData</obj_property>
+            <obj_property name="Render_Data">/apatb_network_top/AESL_inst_network/grp_depthwise_conv2d_fix_fu_547/grp_depthwise_conv2d_fix_fu_547_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_network_top/AESL_inst_network/grp_depthwise_conv2d_fix_fu_547/grp_depthwise_conv2d_fix_fu_547_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_network_top/AESL_inst_network/grp_depthwise_conv2d_fix_fu_547/grp_depthwise_conv2d_fix_fu_547_activity.dataflowTxTooltipData</obj_property>
          </wvobject>
-         <wvobject type="group" fp_name="/apatb_network_top/AESL_inst_network/grp_pointwise_conv2d_fix_2_fu_550/grp_pointwise_conv2d_fix_2_fu_550_activity">
-            <obj_property name="label">grp_pointwise_conv2d_fix_2_fu_550_activity</obj_property>
+         <wvobject type="group" fp_name="/apatb_network_top/AESL_inst_network/grp_pointwise_conv2d_fix_3_fu_553/grp_pointwise_conv2d_fix_3_fu_553_activity">
+            <obj_property name="label">grp_pointwise_conv2d_fix_3_fu_553_activity</obj_property>
             <obj_property name="DisplayName">label</obj_property>
             <obj_property name="UseFullPath">true</obj_property>
-            <obj_property name="ElementShortName">grp_pointwise_conv2d_fix_2_fu_550_activity</obj_property>
-            <obj_property name="ObjectShortName">grp_pointwise_conv2d_fix_2_fu_550_activity</obj_property>
+            <obj_property name="ElementShortName">grp_pointwise_conv2d_fix_3_fu_553_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_pointwise_conv2d_fix_3_fu_553_activity</obj_property>
             <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
             <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
             <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
             <obj_property name="UseCustomSignalColor">true</obj_property>
             <obj_property name="CustomSignalColor">turquoise</obj_property>
             <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-            <obj_property name="Render_Data">/apatb_network_top/AESL_inst_network/grp_pointwise_conv2d_fix_2_fu_550/grp_pointwise_conv2d_fix_2_fu_550_activity.dataflowTxWaveData.Cycles</obj_property>
-            <obj_property name="Value_Data">/apatb_network_top/AESL_inst_network/grp_pointwise_conv2d_fix_2_fu_550/grp_pointwise_conv2d_fix_2_fu_550_activity.dataflowTxWaveData.OutStanding</obj_property>
-            <obj_property name="Detail_Data">/apatb_network_top/AESL_inst_network/grp_pointwise_conv2d_fix_2_fu_550/grp_pointwise_conv2d_fix_2_fu_550_activity.dataflowTxTooltipData</obj_property>
+            <obj_property name="Render_Data">/apatb_network_top/AESL_inst_network/grp_pointwise_conv2d_fix_3_fu_553/grp_pointwise_conv2d_fix_3_fu_553_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_network_top/AESL_inst_network/grp_pointwise_conv2d_fix_3_fu_553/grp_pointwise_conv2d_fix_3_fu_553_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_network_top/AESL_inst_network/grp_pointwise_conv2d_fix_3_fu_553/grp_pointwise_conv2d_fix_3_fu_553_activity.dataflowTxTooltipData</obj_property>
          </wvobject>
-         <wvobject type="group" fp_name="/apatb_network_top/AESL_inst_network/grp_up_sampling2d_fix16_fu_560/grp_up_sampling2d_fix16_fu_560_activity">
-            <obj_property name="label">grp_up_sampling2d_fix16_fu_560_activity</obj_property>
+         <wvobject type="group" fp_name="/apatb_network_top/AESL_inst_network/grp_pointwise_conv2d_fix_fu_563/grp_pointwise_conv2d_fix_fu_563_activity">
+            <obj_property name="label">grp_pointwise_conv2d_fix_fu_563_activity</obj_property>
             <obj_property name="DisplayName">label</obj_property>
             <obj_property name="UseFullPath">true</obj_property>
-            <obj_property name="ElementShortName">grp_up_sampling2d_fix16_fu_560_activity</obj_property>
-            <obj_property name="ObjectShortName">grp_up_sampling2d_fix16_fu_560_activity</obj_property>
+            <obj_property name="ElementShortName">grp_pointwise_conv2d_fix_fu_563_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_pointwise_conv2d_fix_fu_563_activity</obj_property>
             <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
             <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
             <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
             <obj_property name="UseCustomSignalColor">true</obj_property>
             <obj_property name="CustomSignalColor">turquoise</obj_property>
             <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-            <obj_property name="Render_Data">/apatb_network_top/AESL_inst_network/grp_up_sampling2d_fix16_fu_560/grp_up_sampling2d_fix16_fu_560_activity.dataflowTxWaveData.Cycles</obj_property>
-            <obj_property name="Value_Data">/apatb_network_top/AESL_inst_network/grp_up_sampling2d_fix16_fu_560/grp_up_sampling2d_fix16_fu_560_activity.dataflowTxWaveData.OutStanding</obj_property>
-            <obj_property name="Detail_Data">/apatb_network_top/AESL_inst_network/grp_up_sampling2d_fix16_fu_560/grp_up_sampling2d_fix16_fu_560_activity.dataflowTxTooltipData</obj_property>
+            <obj_property name="Render_Data">/apatb_network_top/AESL_inst_network/grp_pointwise_conv2d_fix_fu_563/grp_pointwise_conv2d_fix_fu_563_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_network_top/AESL_inst_network/grp_pointwise_conv2d_fix_fu_563/grp_pointwise_conv2d_fix_fu_563_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_network_top/AESL_inst_network/grp_pointwise_conv2d_fix_fu_563/grp_pointwise_conv2d_fix_fu_563_activity.dataflowTxTooltipData</obj_property>
          </wvobject>
-         <wvobject type="group" fp_name="/apatb_network_top/AESL_inst_network/grp_depthwise_conv2d_fix_fu_581/grp_depthwise_conv2d_fix_fu_581_activity">
-            <obj_property name="label">grp_depthwise_conv2d_fix_fu_581_activity</obj_property>
+         <wvobject type="group" fp_name="/apatb_network_top/AESL_inst_network/grp_pointwise_conv2d_fix_2_fu_573/grp_pointwise_conv2d_fix_2_fu_573_activity">
+            <obj_property name="label">grp_pointwise_conv2d_fix_2_fu_573_activity</obj_property>
             <obj_property name="DisplayName">label</obj_property>
             <obj_property name="UseFullPath">true</obj_property>
-            <obj_property name="ElementShortName">grp_depthwise_conv2d_fix_fu_581_activity</obj_property>
-            <obj_property name="ObjectShortName">grp_depthwise_conv2d_fix_fu_581_activity</obj_property>
+            <obj_property name="ElementShortName">grp_pointwise_conv2d_fix_2_fu_573_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_pointwise_conv2d_fix_2_fu_573_activity</obj_property>
             <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
             <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
             <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
             <obj_property name="UseCustomSignalColor">true</obj_property>
             <obj_property name="CustomSignalColor">turquoise</obj_property>
             <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-            <obj_property name="Render_Data">/apatb_network_top/AESL_inst_network/grp_depthwise_conv2d_fix_fu_581/grp_depthwise_conv2d_fix_fu_581_activity.dataflowTxWaveData.Cycles</obj_property>
-            <obj_property name="Value_Data">/apatb_network_top/AESL_inst_network/grp_depthwise_conv2d_fix_fu_581/grp_depthwise_conv2d_fix_fu_581_activity.dataflowTxWaveData.OutStanding</obj_property>
-            <obj_property name="Detail_Data">/apatb_network_top/AESL_inst_network/grp_depthwise_conv2d_fix_fu_581/grp_depthwise_conv2d_fix_fu_581_activity.dataflowTxTooltipData</obj_property>
+            <obj_property name="Render_Data">/apatb_network_top/AESL_inst_network/grp_pointwise_conv2d_fix_2_fu_573/grp_pointwise_conv2d_fix_2_fu_573_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_network_top/AESL_inst_network/grp_pointwise_conv2d_fix_2_fu_573/grp_pointwise_conv2d_fix_2_fu_573_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_network_top/AESL_inst_network/grp_pointwise_conv2d_fix_2_fu_573/grp_pointwise_conv2d_fix_2_fu_573_activity.dataflowTxTooltipData</obj_property>
          </wvobject>
-         <wvobject type="group" fp_name="/apatb_network_top/AESL_inst_network/grp_pointwise_conv2d_fix_4_fu_589/grp_pointwise_conv2d_fix_4_fu_589_activity">
-            <obj_property name="label">grp_pointwise_conv2d_fix_4_fu_589_activity</obj_property>
+         <wvobject type="group" fp_name="/apatb_network_top/AESL_inst_network/grp_pointwise_conv2d_fix_1_fu_583/grp_pointwise_conv2d_fix_1_fu_583_activity">
+            <obj_property name="label">grp_pointwise_conv2d_fix_1_fu_583_activity</obj_property>
             <obj_property name="DisplayName">label</obj_property>
             <obj_property name="UseFullPath">true</obj_property>
-            <obj_property name="ElementShortName">grp_pointwise_conv2d_fix_4_fu_589_activity</obj_property>
-            <obj_property name="ObjectShortName">grp_pointwise_conv2d_fix_4_fu_589_activity</obj_property>
+            <obj_property name="ElementShortName">grp_pointwise_conv2d_fix_1_fu_583_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_pointwise_conv2d_fix_1_fu_583_activity</obj_property>
             <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
             <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
             <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
             <obj_property name="UseCustomSignalColor">true</obj_property>
             <obj_property name="CustomSignalColor">turquoise</obj_property>
             <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-            <obj_property name="Render_Data">/apatb_network_top/AESL_inst_network/grp_pointwise_conv2d_fix_4_fu_589/grp_pointwise_conv2d_fix_4_fu_589_activity.dataflowTxWaveData.Cycles</obj_property>
-            <obj_property name="Value_Data">/apatb_network_top/AESL_inst_network/grp_pointwise_conv2d_fix_4_fu_589/grp_pointwise_conv2d_fix_4_fu_589_activity.dataflowTxWaveData.OutStanding</obj_property>
-            <obj_property name="Detail_Data">/apatb_network_top/AESL_inst_network/grp_pointwise_conv2d_fix_4_fu_589/grp_pointwise_conv2d_fix_4_fu_589_activity.dataflowTxTooltipData</obj_property>
+            <obj_property name="Render_Data">/apatb_network_top/AESL_inst_network/grp_pointwise_conv2d_fix_1_fu_583/grp_pointwise_conv2d_fix_1_fu_583_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_network_top/AESL_inst_network/grp_pointwise_conv2d_fix_1_fu_583/grp_pointwise_conv2d_fix_1_fu_583_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_network_top/AESL_inst_network/grp_pointwise_conv2d_fix_1_fu_583/grp_pointwise_conv2d_fix_1_fu_583_activity.dataflowTxTooltipData</obj_property>
          </wvobject>
-         <wvobject type="group" fp_name="/apatb_network_top/AESL_inst_network/grp_pointwise_conv2d_fix_fu_597/grp_pointwise_conv2d_fix_fu_597_activity">
-            <obj_property name="label">grp_pointwise_conv2d_fix_fu_597_activity</obj_property>
+         <wvobject type="group" fp_name="/apatb_network_top/AESL_inst_network/grp_pointwise_conv2d_fix_4_fu_593/grp_pointwise_conv2d_fix_4_fu_593_activity">
+            <obj_property name="label">grp_pointwise_conv2d_fix_4_fu_593_activity</obj_property>
             <obj_property name="DisplayName">label</obj_property>
             <obj_property name="UseFullPath">true</obj_property>
-            <obj_property name="ElementShortName">grp_pointwise_conv2d_fix_fu_597_activity</obj_property>
-            <obj_property name="ObjectShortName">grp_pointwise_conv2d_fix_fu_597_activity</obj_property>
+            <obj_property name="ElementShortName">grp_pointwise_conv2d_fix_4_fu_593_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_pointwise_conv2d_fix_4_fu_593_activity</obj_property>
             <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
             <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
             <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
             <obj_property name="UseCustomSignalColor">true</obj_property>
             <obj_property name="CustomSignalColor">turquoise</obj_property>
             <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-            <obj_property name="Render_Data">/apatb_network_top/AESL_inst_network/grp_pointwise_conv2d_fix_fu_597/grp_pointwise_conv2d_fix_fu_597_activity.dataflowTxWaveData.Cycles</obj_property>
-            <obj_property name="Value_Data">/apatb_network_top/AESL_inst_network/grp_pointwise_conv2d_fix_fu_597/grp_pointwise_conv2d_fix_fu_597_activity.dataflowTxWaveData.OutStanding</obj_property>
-            <obj_property name="Detail_Data">/apatb_network_top/AESL_inst_network/grp_pointwise_conv2d_fix_fu_597/grp_pointwise_conv2d_fix_fu_597_activity.dataflowTxTooltipData</obj_property>
+            <obj_property name="Render_Data">/apatb_network_top/AESL_inst_network/grp_pointwise_conv2d_fix_4_fu_593/grp_pointwise_conv2d_fix_4_fu_593_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_network_top/AESL_inst_network/grp_pointwise_conv2d_fix_4_fu_593/grp_pointwise_conv2d_fix_4_fu_593_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_network_top/AESL_inst_network/grp_pointwise_conv2d_fix_4_fu_593/grp_pointwise_conv2d_fix_4_fu_593_activity.dataflowTxTooltipData</obj_property>
          </wvobject>
       </wvobject>
    </wvobject>
@@ -222,49 +222,49 @@
    <wvobject type="group" fp_name="AESL_inst_network_group">
       <obj_property name="label">AESL_inst_network</obj_property>
       <obj_property name="DisplayName">label</obj_property>
-      <wvobject type="protoinst" fp_name="/apatb_network_top/AESL_inst_network/grp_padding2d_fix16_fu_443/grp_padding2d_fix16_fu_443_activity">
-         <obj_property name="ElementShortName">grp_padding2d_fix16_fu_443_activity</obj_property>
-         <obj_property name="ObjectShortName">grp_padding2d_fix16_fu_443_activity</obj_property>
+      <wvobject type="protoinst" fp_name="/apatb_network_top/AESL_inst_network/grp_padding2d_fix16_fu_439/grp_padding2d_fix16_fu_439_activity">
+         <obj_property name="ElementShortName">grp_padding2d_fix16_fu_439_activity</obj_property>
+         <obj_property name="ObjectShortName">grp_padding2d_fix16_fu_439_activity</obj_property>
       </wvobject>
-      <wvobject type="protoinst" fp_name="/apatb_network_top/AESL_inst_network/grp_depthwise_conv2d_fix_2_fu_461/grp_depthwise_conv2d_fix_2_fu_461_activity">
-         <obj_property name="ElementShortName">grp_depthwise_conv2d_fix_2_fu_461_activity</obj_property>
-         <obj_property name="ObjectShortName">grp_depthwise_conv2d_fix_2_fu_461_activity</obj_property>
+      <wvobject type="protoinst" fp_name="/apatb_network_top/AESL_inst_network/grp_up_sampling2d_fix16_fu_457/grp_up_sampling2d_fix16_fu_457_activity">
+         <obj_property name="ElementShortName">grp_up_sampling2d_fix16_fu_457_activity</obj_property>
+         <obj_property name="ObjectShortName">grp_up_sampling2d_fix16_fu_457_activity</obj_property>
       </wvobject>
-      <wvobject type="protoinst" fp_name="/apatb_network_top/AESL_inst_network/grp_depthwise_conv2d_fix_1_fu_485/grp_depthwise_conv2d_fix_1_fu_485_activity">
-         <obj_property name="ElementShortName">grp_depthwise_conv2d_fix_1_fu_485_activity</obj_property>
-         <obj_property name="ObjectShortName">grp_depthwise_conv2d_fix_1_fu_485_activity</obj_property>
+      <wvobject type="protoinst" fp_name="/apatb_network_top/AESL_inst_network/grp_depthwise_conv2d_fix_2_fu_478/grp_depthwise_conv2d_fix_2_fu_478_activity">
+         <obj_property name="ElementShortName">grp_depthwise_conv2d_fix_2_fu_478_activity</obj_property>
+         <obj_property name="ObjectShortName">grp_depthwise_conv2d_fix_2_fu_478_activity</obj_property>
       </wvobject>
-      <wvobject type="protoinst" fp_name="/apatb_network_top/AESL_inst_network/grp_max_pooling2d_fix16_fu_509/grp_max_pooling2d_fix16_fu_509_activity">
-         <obj_property name="ElementShortName">grp_max_pooling2d_fix16_fu_509_activity</obj_property>
-         <obj_property name="ObjectShortName">grp_max_pooling2d_fix16_fu_509_activity</obj_property>
+      <wvobject type="protoinst" fp_name="/apatb_network_top/AESL_inst_network/grp_depthwise_conv2d_fix_1_fu_502/grp_depthwise_conv2d_fix_1_fu_502_activity">
+         <obj_property name="ElementShortName">grp_depthwise_conv2d_fix_1_fu_502_activity</obj_property>
+         <obj_property name="ObjectShortName">grp_depthwise_conv2d_fix_1_fu_502_activity</obj_property>
       </wvobject>
-      <wvobject type="protoinst" fp_name="/apatb_network_top/AESL_inst_network/grp_pointwise_conv2d_fix_3_fu_530/grp_pointwise_conv2d_fix_3_fu_530_activity">
-         <obj_property name="ElementShortName">grp_pointwise_conv2d_fix_3_fu_530_activity</obj_property>
-         <obj_property name="ObjectShortName">grp_pointwise_conv2d_fix_3_fu_530_activity</obj_property>
+      <wvobject type="protoinst" fp_name="/apatb_network_top/AESL_inst_network/grp_max_pooling2d_fix16_fu_526/grp_max_pooling2d_fix16_fu_526_activity">
+         <obj_property name="ElementShortName">grp_max_pooling2d_fix16_fu_526_activity</obj_property>
+         <obj_property name="ObjectShortName">grp_max_pooling2d_fix16_fu_526_activity</obj_property>
       </wvobject>
-      <wvobject type="protoinst" fp_name="/apatb_network_top/AESL_inst_network/grp_pointwise_conv2d_fix_1_fu_540/grp_pointwise_conv2d_fix_1_fu_540_activity">
-         <obj_property name="ElementShortName">grp_pointwise_conv2d_fix_1_fu_540_activity</obj_property>
-         <obj_property name="ObjectShortName">grp_pointwise_conv2d_fix_1_fu_540_activity</obj_property>
+      <wvobject type="protoinst" fp_name="/apatb_network_top/AESL_inst_network/grp_depthwise_conv2d_fix_fu_547/grp_depthwise_conv2d_fix_fu_547_activity">
+         <obj_property name="ElementShortName">grp_depthwise_conv2d_fix_fu_547_activity</obj_property>
+         <obj_property name="ObjectShortName">grp_depthwise_conv2d_fix_fu_547_activity</obj_property>
       </wvobject>
-      <wvobject type="protoinst" fp_name="/apatb_network_top/AESL_inst_network/grp_pointwise_conv2d_fix_2_fu_550/grp_pointwise_conv2d_fix_2_fu_550_activity">
-         <obj_property name="ElementShortName">grp_pointwise_conv2d_fix_2_fu_550_activity</obj_property>
-         <obj_property name="ObjectShortName">grp_pointwise_conv2d_fix_2_fu_550_activity</obj_property>
+      <wvobject type="protoinst" fp_name="/apatb_network_top/AESL_inst_network/grp_pointwise_conv2d_fix_3_fu_553/grp_pointwise_conv2d_fix_3_fu_553_activity">
+         <obj_property name="ElementShortName">grp_pointwise_conv2d_fix_3_fu_553_activity</obj_property>
+         <obj_property name="ObjectShortName">grp_pointwise_conv2d_fix_3_fu_553_activity</obj_property>
       </wvobject>
-      <wvobject type="protoinst" fp_name="/apatb_network_top/AESL_inst_network/grp_up_sampling2d_fix16_fu_560/grp_up_sampling2d_fix16_fu_560_activity">
-         <obj_property name="ElementShortName">grp_up_sampling2d_fix16_fu_560_activity</obj_property>
-         <obj_property name="ObjectShortName">grp_up_sampling2d_fix16_fu_560_activity</obj_property>
+      <wvobject type="protoinst" fp_name="/apatb_network_top/AESL_inst_network/grp_pointwise_conv2d_fix_fu_563/grp_pointwise_conv2d_fix_fu_563_activity">
+         <obj_property name="ElementShortName">grp_pointwise_conv2d_fix_fu_563_activity</obj_property>
+         <obj_property name="ObjectShortName">grp_pointwise_conv2d_fix_fu_563_activity</obj_property>
       </wvobject>
-      <wvobject type="protoinst" fp_name="/apatb_network_top/AESL_inst_network/grp_depthwise_conv2d_fix_fu_581/grp_depthwise_conv2d_fix_fu_581_activity">
-         <obj_property name="ElementShortName">grp_depthwise_conv2d_fix_fu_581_activity</obj_property>
-         <obj_property name="ObjectShortName">grp_depthwise_conv2d_fix_fu_581_activity</obj_property>
+      <wvobject type="protoinst" fp_name="/apatb_network_top/AESL_inst_network/grp_pointwise_conv2d_fix_2_fu_573/grp_pointwise_conv2d_fix_2_fu_573_activity">
+         <obj_property name="ElementShortName">grp_pointwise_conv2d_fix_2_fu_573_activity</obj_property>
+         <obj_property name="ObjectShortName">grp_pointwise_conv2d_fix_2_fu_573_activity</obj_property>
       </wvobject>
-      <wvobject type="protoinst" fp_name="/apatb_network_top/AESL_inst_network/grp_pointwise_conv2d_fix_4_fu_589/grp_pointwise_conv2d_fix_4_fu_589_activity">
-         <obj_property name="ElementShortName">grp_pointwise_conv2d_fix_4_fu_589_activity</obj_property>
-         <obj_property name="ObjectShortName">grp_pointwise_conv2d_fix_4_fu_589_activity</obj_property>
+      <wvobject type="protoinst" fp_name="/apatb_network_top/AESL_inst_network/grp_pointwise_conv2d_fix_1_fu_583/grp_pointwise_conv2d_fix_1_fu_583_activity">
+         <obj_property name="ElementShortName">grp_pointwise_conv2d_fix_1_fu_583_activity</obj_property>
+         <obj_property name="ObjectShortName">grp_pointwise_conv2d_fix_1_fu_583_activity</obj_property>
       </wvobject>
-      <wvobject type="protoinst" fp_name="/apatb_network_top/AESL_inst_network/grp_pointwise_conv2d_fix_fu_597/grp_pointwise_conv2d_fix_fu_597_activity">
-         <obj_property name="ElementShortName">grp_pointwise_conv2d_fix_fu_597_activity</obj_property>
-         <obj_property name="ObjectShortName">grp_pointwise_conv2d_fix_fu_597_activity</obj_property>
+      <wvobject type="protoinst" fp_name="/apatb_network_top/AESL_inst_network/grp_pointwise_conv2d_fix_4_fu_593/grp_pointwise_conv2d_fix_4_fu_593_activity">
+         <obj_property name="ElementShortName">grp_pointwise_conv2d_fix_4_fu_593_activity</obj_property>
+         <obj_property name="ObjectShortName">grp_pointwise_conv2d_fix_4_fu_593_activity</obj_property>
       </wvobject>
       <wvobject type="group" fp_name="AESL_inst_network_Handshake_group">
          <obj_property name="label">Block-level handshake</obj_property>
@@ -282,221 +282,221 @@
             <obj_property name="ObjectShortName">ap_done</obj_property>
          </wvobject>
       </wvobject>
-      <wvobject type="group" fp_name="grp_padding2d_fix16_fu_443_group">
-         <obj_property name="label">grp_padding2d_fix16_fu_443</obj_property>
+      <wvobject type="group" fp_name="grp_padding2d_fix16_fu_439_group">
+         <obj_property name="label">grp_padding2d_fix16_fu_439</obj_property>
          <obj_property name="DisplayName">label</obj_property>
-         <wvobject type="group" fp_name="grp_padding2d_fix16_fu_443_Handshake_group">
+         <wvobject type="group" fp_name="grp_padding2d_fix16_fu_439_Handshake_group">
             <obj_property name="label">Block-level handshake</obj_property>
             <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/grp_padding2d_fix16_fu_443/ap_start">
+            <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/grp_padding2d_fix16_fu_439/ap_start">
                <obj_property name="ElementShortName">ap_start</obj_property>
                <obj_property name="ObjectShortName">ap_start</obj_property>
             </wvobject>
-            <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/grp_padding2d_fix16_fu_443/ap_ready">
+            <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/grp_padding2d_fix16_fu_439/ap_ready">
                <obj_property name="ElementShortName">ap_ready</obj_property>
                <obj_property name="ObjectShortName">ap_ready</obj_property>
             </wvobject>
-            <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/grp_padding2d_fix16_fu_443/ap_done">
+            <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/grp_padding2d_fix16_fu_439/ap_done">
                <obj_property name="ElementShortName">ap_done</obj_property>
                <obj_property name="ObjectShortName">ap_done</obj_property>
             </wvobject>
          </wvobject>
       </wvobject>
-      <wvobject type="group" fp_name="grp_depthwise_conv2d_fix_2_fu_461_group">
-         <obj_property name="label">grp_depthwise_conv2d_fix_2_fu_461</obj_property>
+      <wvobject type="group" fp_name="grp_up_sampling2d_fix16_fu_457_group">
+         <obj_property name="label">grp_up_sampling2d_fix16_fu_457</obj_property>
          <obj_property name="DisplayName">label</obj_property>
-         <wvobject type="group" fp_name="grp_depthwise_conv2d_fix_2_fu_461_Handshake_group">
+         <wvobject type="group" fp_name="grp_up_sampling2d_fix16_fu_457_Handshake_group">
             <obj_property name="label">Block-level handshake</obj_property>
             <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/grp_depthwise_conv2d_fix_2_fu_461/ap_start">
+            <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/grp_up_sampling2d_fix16_fu_457/ap_start">
                <obj_property name="ElementShortName">ap_start</obj_property>
                <obj_property name="ObjectShortName">ap_start</obj_property>
             </wvobject>
-            <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/grp_depthwise_conv2d_fix_2_fu_461/ap_ready">
+            <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/grp_up_sampling2d_fix16_fu_457/ap_ready">
                <obj_property name="ElementShortName">ap_ready</obj_property>
                <obj_property name="ObjectShortName">ap_ready</obj_property>
             </wvobject>
-            <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/grp_depthwise_conv2d_fix_2_fu_461/ap_done">
+            <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/grp_up_sampling2d_fix16_fu_457/ap_done">
                <obj_property name="ElementShortName">ap_done</obj_property>
                <obj_property name="ObjectShortName">ap_done</obj_property>
             </wvobject>
          </wvobject>
       </wvobject>
-      <wvobject type="group" fp_name="grp_depthwise_conv2d_fix_1_fu_485_group">
-         <obj_property name="label">grp_depthwise_conv2d_fix_1_fu_485</obj_property>
+      <wvobject type="group" fp_name="grp_depthwise_conv2d_fix_2_fu_478_group">
+         <obj_property name="label">grp_depthwise_conv2d_fix_2_fu_478</obj_property>
          <obj_property name="DisplayName">label</obj_property>
-         <wvobject type="group" fp_name="grp_depthwise_conv2d_fix_1_fu_485_Handshake_group">
+         <wvobject type="group" fp_name="grp_depthwise_conv2d_fix_2_fu_478_Handshake_group">
             <obj_property name="label">Block-level handshake</obj_property>
             <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/grp_depthwise_conv2d_fix_1_fu_485/ap_start">
+            <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/grp_depthwise_conv2d_fix_2_fu_478/ap_start">
                <obj_property name="ElementShortName">ap_start</obj_property>
                <obj_property name="ObjectShortName">ap_start</obj_property>
             </wvobject>
-            <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/grp_depthwise_conv2d_fix_1_fu_485/ap_ready">
+            <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/grp_depthwise_conv2d_fix_2_fu_478/ap_ready">
                <obj_property name="ElementShortName">ap_ready</obj_property>
                <obj_property name="ObjectShortName">ap_ready</obj_property>
             </wvobject>
-            <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/grp_depthwise_conv2d_fix_1_fu_485/ap_done">
+            <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/grp_depthwise_conv2d_fix_2_fu_478/ap_done">
                <obj_property name="ElementShortName">ap_done</obj_property>
                <obj_property name="ObjectShortName">ap_done</obj_property>
             </wvobject>
          </wvobject>
       </wvobject>
-      <wvobject type="group" fp_name="grp_max_pooling2d_fix16_fu_509_group">
-         <obj_property name="label">grp_max_pooling2d_fix16_fu_509</obj_property>
+      <wvobject type="group" fp_name="grp_depthwise_conv2d_fix_1_fu_502_group">
+         <obj_property name="label">grp_depthwise_conv2d_fix_1_fu_502</obj_property>
          <obj_property name="DisplayName">label</obj_property>
-         <wvobject type="group" fp_name="grp_max_pooling2d_fix16_fu_509_Handshake_group">
+         <wvobject type="group" fp_name="grp_depthwise_conv2d_fix_1_fu_502_Handshake_group">
             <obj_property name="label">Block-level handshake</obj_property>
             <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/grp_max_pooling2d_fix16_fu_509/ap_start">
+            <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/grp_depthwise_conv2d_fix_1_fu_502/ap_start">
                <obj_property name="ElementShortName">ap_start</obj_property>
                <obj_property name="ObjectShortName">ap_start</obj_property>
             </wvobject>
-            <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/grp_max_pooling2d_fix16_fu_509/ap_ready">
+            <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/grp_depthwise_conv2d_fix_1_fu_502/ap_ready">
                <obj_property name="ElementShortName">ap_ready</obj_property>
                <obj_property name="ObjectShortName">ap_ready</obj_property>
             </wvobject>
-            <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/grp_max_pooling2d_fix16_fu_509/ap_done">
+            <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/grp_depthwise_conv2d_fix_1_fu_502/ap_done">
                <obj_property name="ElementShortName">ap_done</obj_property>
                <obj_property name="ObjectShortName">ap_done</obj_property>
             </wvobject>
          </wvobject>
       </wvobject>
-      <wvobject type="group" fp_name="grp_pointwise_conv2d_fix_3_fu_530_group">
-         <obj_property name="label">grp_pointwise_conv2d_fix_3_fu_530</obj_property>
+      <wvobject type="group" fp_name="grp_max_pooling2d_fix16_fu_526_group">
+         <obj_property name="label">grp_max_pooling2d_fix16_fu_526</obj_property>
          <obj_property name="DisplayName">label</obj_property>
-         <wvobject type="group" fp_name="grp_pointwise_conv2d_fix_3_fu_530_Handshake_group">
+         <wvobject type="group" fp_name="grp_max_pooling2d_fix16_fu_526_Handshake_group">
             <obj_property name="label">Block-level handshake</obj_property>
             <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/grp_pointwise_conv2d_fix_3_fu_530/ap_start">
+            <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/grp_max_pooling2d_fix16_fu_526/ap_start">
                <obj_property name="ElementShortName">ap_start</obj_property>
                <obj_property name="ObjectShortName">ap_start</obj_property>
             </wvobject>
-            <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/grp_pointwise_conv2d_fix_3_fu_530/ap_ready">
+            <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/grp_max_pooling2d_fix16_fu_526/ap_ready">
                <obj_property name="ElementShortName">ap_ready</obj_property>
                <obj_property name="ObjectShortName">ap_ready</obj_property>
             </wvobject>
-            <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/grp_pointwise_conv2d_fix_3_fu_530/ap_done">
+            <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/grp_max_pooling2d_fix16_fu_526/ap_done">
                <obj_property name="ElementShortName">ap_done</obj_property>
                <obj_property name="ObjectShortName">ap_done</obj_property>
             </wvobject>
          </wvobject>
       </wvobject>
-      <wvobject type="group" fp_name="grp_pointwise_conv2d_fix_1_fu_540_group">
-         <obj_property name="label">grp_pointwise_conv2d_fix_1_fu_540</obj_property>
+      <wvobject type="group" fp_name="grp_depthwise_conv2d_fix_fu_547_group">
+         <obj_property name="label">grp_depthwise_conv2d_fix_fu_547</obj_property>
          <obj_property name="DisplayName">label</obj_property>
-         <wvobject type="group" fp_name="grp_pointwise_conv2d_fix_1_fu_540_Handshake_group">
+         <wvobject type="group" fp_name="grp_depthwise_conv2d_fix_fu_547_Handshake_group">
             <obj_property name="label">Block-level handshake</obj_property>
             <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/grp_pointwise_conv2d_fix_1_fu_540/ap_start">
+            <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/grp_depthwise_conv2d_fix_fu_547/ap_start">
                <obj_property name="ElementShortName">ap_start</obj_property>
                <obj_property name="ObjectShortName">ap_start</obj_property>
             </wvobject>
-            <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/grp_pointwise_conv2d_fix_1_fu_540/ap_ready">
+            <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/grp_depthwise_conv2d_fix_fu_547/ap_ready">
                <obj_property name="ElementShortName">ap_ready</obj_property>
                <obj_property name="ObjectShortName">ap_ready</obj_property>
             </wvobject>
-            <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/grp_pointwise_conv2d_fix_1_fu_540/ap_done">
+            <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/grp_depthwise_conv2d_fix_fu_547/ap_done">
                <obj_property name="ElementShortName">ap_done</obj_property>
                <obj_property name="ObjectShortName">ap_done</obj_property>
             </wvobject>
          </wvobject>
       </wvobject>
-      <wvobject type="group" fp_name="grp_pointwise_conv2d_fix_2_fu_550_group">
-         <obj_property name="label">grp_pointwise_conv2d_fix_2_fu_550</obj_property>
+      <wvobject type="group" fp_name="grp_pointwise_conv2d_fix_3_fu_553_group">
+         <obj_property name="label">grp_pointwise_conv2d_fix_3_fu_553</obj_property>
          <obj_property name="DisplayName">label</obj_property>
-         <wvobject type="group" fp_name="grp_pointwise_conv2d_fix_2_fu_550_Handshake_group">
+         <wvobject type="group" fp_name="grp_pointwise_conv2d_fix_3_fu_553_Handshake_group">
             <obj_property name="label">Block-level handshake</obj_property>
             <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/grp_pointwise_conv2d_fix_2_fu_550/ap_start">
+            <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/grp_pointwise_conv2d_fix_3_fu_553/ap_start">
                <obj_property name="ElementShortName">ap_start</obj_property>
                <obj_property name="ObjectShortName">ap_start</obj_property>
             </wvobject>
-            <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/grp_pointwise_conv2d_fix_2_fu_550/ap_ready">
+            <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/grp_pointwise_conv2d_fix_3_fu_553/ap_ready">
                <obj_property name="ElementShortName">ap_ready</obj_property>
                <obj_property name="ObjectShortName">ap_ready</obj_property>
             </wvobject>
-            <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/grp_pointwise_conv2d_fix_2_fu_550/ap_done">
+            <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/grp_pointwise_conv2d_fix_3_fu_553/ap_done">
                <obj_property name="ElementShortName">ap_done</obj_property>
                <obj_property name="ObjectShortName">ap_done</obj_property>
             </wvobject>
          </wvobject>
       </wvobject>
-      <wvobject type="group" fp_name="grp_up_sampling2d_fix16_fu_560_group">
-         <obj_property name="label">grp_up_sampling2d_fix16_fu_560</obj_property>
+      <wvobject type="group" fp_name="grp_pointwise_conv2d_fix_fu_563_group">
+         <obj_property name="label">grp_pointwise_conv2d_fix_fu_563</obj_property>
          <obj_property name="DisplayName">label</obj_property>
-         <wvobject type="group" fp_name="grp_up_sampling2d_fix16_fu_560_Handshake_group">
+         <wvobject type="group" fp_name="grp_pointwise_conv2d_fix_fu_563_Handshake_group">
             <obj_property name="label">Block-level handshake</obj_property>
             <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/grp_up_sampling2d_fix16_fu_560/ap_start">
+            <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/grp_pointwise_conv2d_fix_fu_563/ap_start">
                <obj_property name="ElementShortName">ap_start</obj_property>
                <obj_property name="ObjectShortName">ap_start</obj_property>
             </wvobject>
-            <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/grp_up_sampling2d_fix16_fu_560/ap_ready">
+            <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/grp_pointwise_conv2d_fix_fu_563/ap_ready">
                <obj_property name="ElementShortName">ap_ready</obj_property>
                <obj_property name="ObjectShortName">ap_ready</obj_property>
             </wvobject>
-            <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/grp_up_sampling2d_fix16_fu_560/ap_done">
+            <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/grp_pointwise_conv2d_fix_fu_563/ap_done">
                <obj_property name="ElementShortName">ap_done</obj_property>
                <obj_property name="ObjectShortName">ap_done</obj_property>
             </wvobject>
          </wvobject>
       </wvobject>
-      <wvobject type="group" fp_name="grp_depthwise_conv2d_fix_fu_581_group">
-         <obj_property name="label">grp_depthwise_conv2d_fix_fu_581</obj_property>
+      <wvobject type="group" fp_name="grp_pointwise_conv2d_fix_2_fu_573_group">
+         <obj_property name="label">grp_pointwise_conv2d_fix_2_fu_573</obj_property>
          <obj_property name="DisplayName">label</obj_property>
-         <wvobject type="group" fp_name="grp_depthwise_conv2d_fix_fu_581_Handshake_group">
+         <wvobject type="group" fp_name="grp_pointwise_conv2d_fix_2_fu_573_Handshake_group">
             <obj_property name="label">Block-level handshake</obj_property>
             <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/grp_depthwise_conv2d_fix_fu_581/ap_start">
+            <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/grp_pointwise_conv2d_fix_2_fu_573/ap_start">
                <obj_property name="ElementShortName">ap_start</obj_property>
                <obj_property name="ObjectShortName">ap_start</obj_property>
             </wvobject>
-            <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/grp_depthwise_conv2d_fix_fu_581/ap_ready">
+            <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/grp_pointwise_conv2d_fix_2_fu_573/ap_ready">
                <obj_property name="ElementShortName">ap_ready</obj_property>
                <obj_property name="ObjectShortName">ap_ready</obj_property>
             </wvobject>
-            <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/grp_depthwise_conv2d_fix_fu_581/ap_done">
+            <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/grp_pointwise_conv2d_fix_2_fu_573/ap_done">
                <obj_property name="ElementShortName">ap_done</obj_property>
                <obj_property name="ObjectShortName">ap_done</obj_property>
             </wvobject>
          </wvobject>
       </wvobject>
-      <wvobject type="group" fp_name="grp_pointwise_conv2d_fix_4_fu_589_group">
-         <obj_property name="label">grp_pointwise_conv2d_fix_4_fu_589</obj_property>
+      <wvobject type="group" fp_name="grp_pointwise_conv2d_fix_1_fu_583_group">
+         <obj_property name="label">grp_pointwise_conv2d_fix_1_fu_583</obj_property>
          <obj_property name="DisplayName">label</obj_property>
-         <wvobject type="group" fp_name="grp_pointwise_conv2d_fix_4_fu_589_Handshake_group">
+         <wvobject type="group" fp_name="grp_pointwise_conv2d_fix_1_fu_583_Handshake_group">
             <obj_property name="label">Block-level handshake</obj_property>
             <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/grp_pointwise_conv2d_fix_4_fu_589/ap_start">
+            <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/grp_pointwise_conv2d_fix_1_fu_583/ap_start">
                <obj_property name="ElementShortName">ap_start</obj_property>
                <obj_property name="ObjectShortName">ap_start</obj_property>
             </wvobject>
-            <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/grp_pointwise_conv2d_fix_4_fu_589/ap_ready">
+            <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/grp_pointwise_conv2d_fix_1_fu_583/ap_ready">
                <obj_property name="ElementShortName">ap_ready</obj_property>
                <obj_property name="ObjectShortName">ap_ready</obj_property>
             </wvobject>
-            <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/grp_pointwise_conv2d_fix_4_fu_589/ap_done">
+            <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/grp_pointwise_conv2d_fix_1_fu_583/ap_done">
                <obj_property name="ElementShortName">ap_done</obj_property>
                <obj_property name="ObjectShortName">ap_done</obj_property>
             </wvobject>
          </wvobject>
       </wvobject>
-      <wvobject type="group" fp_name="grp_pointwise_conv2d_fix_fu_597_group">
-         <obj_property name="label">grp_pointwise_conv2d_fix_fu_597</obj_property>
+      <wvobject type="group" fp_name="grp_pointwise_conv2d_fix_4_fu_593_group">
+         <obj_property name="label">grp_pointwise_conv2d_fix_4_fu_593</obj_property>
          <obj_property name="DisplayName">label</obj_property>
-         <wvobject type="group" fp_name="grp_pointwise_conv2d_fix_fu_597_Handshake_group">
+         <wvobject type="group" fp_name="grp_pointwise_conv2d_fix_4_fu_593_Handshake_group">
             <obj_property name="label">Block-level handshake</obj_property>
             <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/grp_pointwise_conv2d_fix_fu_597/ap_start">
+            <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/grp_pointwise_conv2d_fix_4_fu_593/ap_start">
                <obj_property name="ElementShortName">ap_start</obj_property>
                <obj_property name="ObjectShortName">ap_start</obj_property>
             </wvobject>
-            <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/grp_pointwise_conv2d_fix_fu_597/ap_ready">
+            <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/grp_pointwise_conv2d_fix_4_fu_593/ap_ready">
                <obj_property name="ElementShortName">ap_ready</obj_property>
                <obj_property name="ObjectShortName">ap_ready</obj_property>
             </wvobject>
-            <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/grp_pointwise_conv2d_fix_fu_597/ap_done">
+            <wvobject type="logic" fp_name="/apatb_network_top/AESL_inst_network/grp_pointwise_conv2d_fix_4_fu_593/ap_done">
                <obj_property name="ElementShortName">ap_done</obj_property>
                <obj_property name="ObjectShortName">ap_done</obj_property>
             </wvobject>

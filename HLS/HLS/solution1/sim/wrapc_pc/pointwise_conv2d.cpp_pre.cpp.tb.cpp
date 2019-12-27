@@ -240,8 +240,8 @@ uint16_t kernel_height, uint16_t kernel_width, const int16_t* kernel,
 uint8_t relu, uint8_t fractal_width){
 
 
-
-
+#pragma HLS ALLOCATION instances=mul limit=32 operation
+#pragma HLS ALLOCATION instances=add limit=32 operation
 
 
  int16_t buffer;
@@ -250,7 +250,7 @@ uint8_t relu, uint8_t fractal_width){
             for(uint16_t out_w = 0; out_w < output_width; out_w++){
              buffer = bias[out_d];
                 for(uint16_t in_d = 0; in_d < input_depth; in_d++){
-
+#pragma HLS UNROLL FACTOR=16
 
                  buffer +=
                    (int16_t)(((int32_t)(input[in_d * output_height * output_width + out_h * output_width + out_w]) *

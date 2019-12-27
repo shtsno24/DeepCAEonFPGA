@@ -18,7 +18,7 @@ __SIM_DDS__ = 1
 
 ObjDir = obj
 
-HLS_SOURCES = ../../../../../mnist_AXI_Stream.cpp ../../../../../layers_c/up_sampling2d.cpp ../../../../../layers_c/separable_conv2d.cpp ../../../../../layers_c/pointwise_conv2d.cpp ../../../../../layers_c/padding2d.cpp ../../../../../layers_c/max_pooling2d.cpp ../../../../../layers_c/depthwise_conv2d.cpp
+HLS_SOURCES = ../../../../../mnist_AXI_Stream.cpp ../../../../../layers_c/depthwise_conv2d.cpp ../../../../../layers_c/max_pooling2d.cpp ../../../../../layers_c/padding2d.cpp ../../../../../layers_c/pointwise_conv2d.cpp ../../../../../layers_c/separable_conv2d.cpp ../../../../../layers_c/up_sampling2d.cpp
 
 TARGET := csim.exe
 
@@ -73,33 +73,15 @@ all: $(TARGET)
 
 $(ObjDir)/mnist_AXI_Stream.o: ../../../../../mnist_AXI_Stream.cpp $(ObjDir)/.dir
 	$(Echo) "   Compiling ../../../../../mnist_AXI_Stream.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CC) ${CCFLAG} -c -MMD -Wno-unknown-pragmas  $(IFLAG) $(DFLAG) $< -o $@ ; \
+	$(Verb)  $(CC) ${CCFLAG} -c -MMD -Wno-unknown-pragmas -Wno-unknown-pragmas  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
 -include $(ObjDir)/mnist_AXI_Stream.d
 
-$(ObjDir)/up_sampling2d.o: ../../../../../layers_c/up_sampling2d.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling ../../../../../layers_c/up_sampling2d.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
+$(ObjDir)/depthwise_conv2d.o: ../../../../../layers_c/depthwise_conv2d.cpp $(ObjDir)/.dir
+	$(Echo) "   Compiling ../../../../../layers_c/depthwise_conv2d.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
 	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
--include $(ObjDir)/up_sampling2d.d
-
-$(ObjDir)/separable_conv2d.o: ../../../../../layers_c/separable_conv2d.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling ../../../../../layers_c/separable_conv2d.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
-
--include $(ObjDir)/separable_conv2d.d
-
-$(ObjDir)/pointwise_conv2d.o: ../../../../../layers_c/pointwise_conv2d.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling ../../../../../layers_c/pointwise_conv2d.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
-
--include $(ObjDir)/pointwise_conv2d.d
-
-$(ObjDir)/padding2d.o: ../../../../../layers_c/padding2d.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling ../../../../../layers_c/padding2d.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
-
--include $(ObjDir)/padding2d.d
+-include $(ObjDir)/depthwise_conv2d.d
 
 $(ObjDir)/max_pooling2d.o: ../../../../../layers_c/max_pooling2d.cpp $(ObjDir)/.dir
 	$(Echo) "   Compiling ../../../../../layers_c/max_pooling2d.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
@@ -107,8 +89,26 @@ $(ObjDir)/max_pooling2d.o: ../../../../../layers_c/max_pooling2d.cpp $(ObjDir)/.
 
 -include $(ObjDir)/max_pooling2d.d
 
-$(ObjDir)/depthwise_conv2d.o: ../../../../../layers_c/depthwise_conv2d.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling ../../../../../layers_c/depthwise_conv2d.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
+$(ObjDir)/padding2d.o: ../../../../../layers_c/padding2d.cpp $(ObjDir)/.dir
+	$(Echo) "   Compiling ../../../../../layers_c/padding2d.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
 	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
--include $(ObjDir)/depthwise_conv2d.d
+-include $(ObjDir)/padding2d.d
+
+$(ObjDir)/pointwise_conv2d.o: ../../../../../layers_c/pointwise_conv2d.cpp $(ObjDir)/.dir
+	$(Echo) "   Compiling ../../../../../layers_c/pointwise_conv2d.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
+	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
+
+-include $(ObjDir)/pointwise_conv2d.d
+
+$(ObjDir)/separable_conv2d.o: ../../../../../layers_c/separable_conv2d.cpp $(ObjDir)/.dir
+	$(Echo) "   Compiling ../../../../../layers_c/separable_conv2d.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
+	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
+
+-include $(ObjDir)/separable_conv2d.d
+
+$(ObjDir)/up_sampling2d.o: ../../../../../layers_c/up_sampling2d.cpp $(ObjDir)/.dir
+	$(Echo) "   Compiling ../../../../../layers_c/up_sampling2d.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
+	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
+
+-include $(ObjDir)/up_sampling2d.d

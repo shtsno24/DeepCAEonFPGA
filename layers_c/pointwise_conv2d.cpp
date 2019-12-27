@@ -8,8 +8,8 @@ uint16_t kernel_height, uint16_t kernel_width, const int16_t* kernel,
 uint8_t relu, uint8_t fractal_width){
     // uint16_t output_hight = (input_shape.height + 2 * pad - kernel_shape.height) / stride + 1;
     // uint16_t output_width = (input_shape.width + 2 * pad - kernel_shape.width) / stride + 1;
-//#pragma HLS ALLOCATION instances=mul limit=32 operation
-//#pragma HLS ALLOCATION instances=add limit=32 operation
+#pragma HLS ALLOCATION instances=mul limit=32 operation
+#pragma HLS ALLOCATION instances=add limit=32 operation
     // input_size *must* be included padding size
     // stride is fixed to 1
 	int16_t buffer;
@@ -18,7 +18,7 @@ uint8_t relu, uint8_t fractal_width){
             for(uint16_t out_w = 0; out_w < output_width; out_w++){
             	buffer = bias[out_d];
                 for(uint16_t in_d = 0; in_d < input_depth; in_d++){
-//#pragma HLS UNROLL FACTOR=16
+#pragma HLS UNROLL FACTOR=16
                     //output[out_d][out_h][out_w] += input[in_d][out_h][out_w] * kernel[out_d][in_d][1][1];
                 	buffer +=
                 			(int16_t)(((int32_t)(input[in_d * output_height * output_width + out_h * output_width + out_w]) *

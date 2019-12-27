@@ -16,7 +16,7 @@ set C_modelType { void 0 }
 set C_modelArgList {
 	{ input_height uint 7 regular  }
 	{ input_width int 6 regular  }
-	{ input_r int 16 regular {array 14400 { 1 3 } 1 1 }  }
+	{ input_r int 16 regular {array 14400 { 1 1 } 1 1 }  }
 	{ output_depth int 6 regular  }
 	{ output_height int 5 regular  }
 	{ output_width int 5 regular  }
@@ -31,7 +31,7 @@ set C_modelArgMapList {[
  	{ "Name" : "output_width", "interface" : "wire", "bitwidth" : 5, "direction" : "READONLY"} , 
  	{ "Name" : "output_r", "interface" : "memory", "bitwidth" : 16, "direction" : "WRITEONLY"} ]}
 # RTL Port declarations: 
-set portNum 18
+set portNum 21
 set portList { 
 	{ ap_clk sc_in sc_logic 1 clock -1 } 
 	{ ap_rst sc_in sc_logic 1 reset -1 active_high_sync } 
@@ -44,6 +44,9 @@ set portList {
 	{ input_r_address0 sc_out sc_lv 14 signal 2 } 
 	{ input_r_ce0 sc_out sc_logic 1 signal 2 } 
 	{ input_r_q0 sc_in sc_lv 16 signal 2 } 
+	{ input_r_address1 sc_out sc_lv 14 signal 2 } 
+	{ input_r_ce1 sc_out sc_logic 1 signal 2 } 
+	{ input_r_q1 sc_in sc_lv 16 signal 2 } 
 	{ output_depth sc_in sc_lv 6 signal 3 } 
 	{ output_height sc_in sc_lv 5 signal 4 } 
 	{ output_width sc_in sc_lv 5 signal 5 } 
@@ -64,6 +67,9 @@ set NewPortList {[
  	{ "name": "input_r_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":14, "type": "signal", "bundle":{"name": "input_r", "role": "address0" }} , 
  	{ "name": "input_r_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "input_r", "role": "ce0" }} , 
  	{ "name": "input_r_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "input_r", "role": "q0" }} , 
+ 	{ "name": "input_r_address1", "direction": "out", "datatype": "sc_lv", "bitwidth":14, "type": "signal", "bundle":{"name": "input_r", "role": "address1" }} , 
+ 	{ "name": "input_r_ce1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "input_r", "role": "ce1" }} , 
+ 	{ "name": "input_r_q1", "direction": "in", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "input_r", "role": "q1" }} , 
  	{ "name": "output_depth", "direction": "in", "datatype": "sc_lv", "bitwidth":6, "type": "signal", "bundle":{"name": "output_depth", "role": "default" }} , 
  	{ "name": "output_height", "direction": "in", "datatype": "sc_lv", "bitwidth":5, "type": "signal", "bundle":{"name": "output_height", "role": "default" }} , 
  	{ "name": "output_width", "direction": "in", "datatype": "sc_lv", "bitwidth":5, "type": "signal", "bundle":{"name": "output_width", "role": "default" }} , 
@@ -79,7 +85,7 @@ set RtlHierarchyInfo {[
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "5617", "EstimateLatencyMax" : "44385",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "-1", "EstimateLatencyMax" : "-1",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -100,17 +106,17 @@ set ArgLastReadFirstWriteLatency {
 	max_pooling2d_fix16 {
 		input_height {Type I LastRead 0 FirstWrite -1}
 		input_width {Type I LastRead 0 FirstWrite -1}
-		input_r {Type I LastRead 5 FirstWrite -1}
+		input_r {Type I LastRead 31 FirstWrite -1}
 		output_depth {Type I LastRead 0 FirstWrite -1}
 		output_height {Type I LastRead 0 FirstWrite -1}
 		output_width {Type I LastRead 0 FirstWrite -1}
-		output_r {Type O LastRead -1 FirstWrite 4}}}
+		output_r {Type O LastRead -1 FirstWrite 7}}}
 
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "5617", "Max" : "44385"}
-	, {"Name" : "Interval", "Min" : "5617", "Max" : "44385"}
+	{"Name" : "Latency", "Min" : "-1", "Max" : "-1"}
+	, {"Name" : "Interval", "Min" : "-1", "Max" : "-1"}
 ]}
 
 set PipelineEnableSignalInfo {[
@@ -119,7 +125,7 @@ set PipelineEnableSignalInfo {[
 set Spec2ImplPortList { 
 	input_height { ap_none {  { input_height in_data 0 7 } } }
 	input_width { ap_none {  { input_width in_data 0 6 } } }
-	input_r { ap_memory {  { input_r_address0 mem_address 1 14 }  { input_r_ce0 mem_ce 1 1 }  { input_r_q0 mem_dout 0 16 } } }
+	input_r { ap_memory {  { input_r_address0 mem_address 1 14 }  { input_r_ce0 mem_ce 1 1 }  { input_r_q0 mem_dout 0 16 }  { input_r_address1 MemPortADDR2 1 14 }  { input_r_ce1 MemPortCE2 1 1 }  { input_r_q1 MemPortDOUT2 0 16 } } }
 	output_depth { ap_none {  { output_depth in_data 0 6 } } }
 	output_height { ap_none {  { output_height in_data 0 5 } } }
 	output_width { ap_none {  { output_width in_data 0 5 } } }
