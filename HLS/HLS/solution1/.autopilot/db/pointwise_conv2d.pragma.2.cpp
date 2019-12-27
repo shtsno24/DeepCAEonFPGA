@@ -393,8 +393,7 @@ _ssdm_op_SpecResourceLimit(32, "add", "", "", "");
                 for(uint16_t in_d = 0; in_d < input_depth; in_d++){
 _ssdm_Unroll(1, 0, 16, "");
 
- buffer +=
-                   (int16_t)(((int32_t)(input[in_d * output_height * output_width + out_h * output_width + out_w]) *
+ buffer += (int16_t)(((int32_t)(input[in_d * output_height * output_width + out_h * output_width + out_w]) *
                      (int32_t)(kernel[out_d * input_depth + in_d])) >> fractal_width);
                 }
                 if(relu == 1 && buffer < 0){

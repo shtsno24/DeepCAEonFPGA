@@ -7,7 +7,7 @@
 
 `timescale 1 ns / 1 ps 
 
-(* CORE_GENERATION_INFO="network,hls_ip_2019_1,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z020-clg400-1,HLS_INPUT_CLOCK=20.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=13.537000,HLS_SYN_LAT=-1,HLS_SYN_TPT=none,HLS_SYN_MEM=49,HLS_SYN_DSP=199,HLS_SYN_FF=13903,HLS_SYN_LUT=38045,HLS_VERSION=2019_1}" *)
+(* CORE_GENERATION_INFO="network,hls_ip_2019_1,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z020-clg400-1,HLS_INPUT_CLOCK=20.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=17.440000,HLS_SYN_LAT=-1,HLS_SYN_TPT=none,HLS_SYN_MEM=49,HLS_SYN_DSP=224,HLS_SYN_FF=13211,HLS_SYN_LUT=40375,HLS_VERSION=2019_1}" *)
 
 module network (
         ap_clk,
@@ -577,30 +577,30 @@ wire   [13:0] grp_pointwise_conv2d_fix_3_fu_553_output_r_address0;
 wire    grp_pointwise_conv2d_fix_3_fu_553_output_r_ce0;
 wire    grp_pointwise_conv2d_fix_3_fu_553_output_r_we0;
 wire   [15:0] grp_pointwise_conv2d_fix_3_fu_553_output_r_d0;
-wire    grp_pointwise_conv2d_fix_fu_563_ap_start;
-wire    grp_pointwise_conv2d_fix_fu_563_ap_done;
-wire    grp_pointwise_conv2d_fix_fu_563_ap_idle;
-wire    grp_pointwise_conv2d_fix_fu_563_ap_ready;
-wire   [13:0] grp_pointwise_conv2d_fix_fu_563_input_r_address0;
-wire    grp_pointwise_conv2d_fix_fu_563_input_r_ce0;
-wire   [13:0] grp_pointwise_conv2d_fix_fu_563_input_r_address1;
-wire    grp_pointwise_conv2d_fix_fu_563_input_r_ce1;
-wire   [13:0] grp_pointwise_conv2d_fix_fu_563_output_r_address0;
-wire    grp_pointwise_conv2d_fix_fu_563_output_r_ce0;
-wire    grp_pointwise_conv2d_fix_fu_563_output_r_we0;
-wire   [15:0] grp_pointwise_conv2d_fix_fu_563_output_r_d0;
-wire    grp_pointwise_conv2d_fix_2_fu_573_ap_start;
-wire    grp_pointwise_conv2d_fix_2_fu_573_ap_done;
-wire    grp_pointwise_conv2d_fix_2_fu_573_ap_idle;
-wire    grp_pointwise_conv2d_fix_2_fu_573_ap_ready;
-wire   [13:0] grp_pointwise_conv2d_fix_2_fu_573_input_r_address0;
-wire    grp_pointwise_conv2d_fix_2_fu_573_input_r_ce0;
-wire   [13:0] grp_pointwise_conv2d_fix_2_fu_573_input_r_address1;
-wire    grp_pointwise_conv2d_fix_2_fu_573_input_r_ce1;
-wire   [13:0] grp_pointwise_conv2d_fix_2_fu_573_output_r_address0;
-wire    grp_pointwise_conv2d_fix_2_fu_573_output_r_ce0;
-wire    grp_pointwise_conv2d_fix_2_fu_573_output_r_we0;
-wire   [15:0] grp_pointwise_conv2d_fix_2_fu_573_output_r_d0;
+wire    grp_pointwise_conv2d_fix_2_fu_563_ap_start;
+wire    grp_pointwise_conv2d_fix_2_fu_563_ap_done;
+wire    grp_pointwise_conv2d_fix_2_fu_563_ap_idle;
+wire    grp_pointwise_conv2d_fix_2_fu_563_ap_ready;
+wire   [13:0] grp_pointwise_conv2d_fix_2_fu_563_input_r_address0;
+wire    grp_pointwise_conv2d_fix_2_fu_563_input_r_ce0;
+wire   [13:0] grp_pointwise_conv2d_fix_2_fu_563_input_r_address1;
+wire    grp_pointwise_conv2d_fix_2_fu_563_input_r_ce1;
+wire   [13:0] grp_pointwise_conv2d_fix_2_fu_563_output_r_address0;
+wire    grp_pointwise_conv2d_fix_2_fu_563_output_r_ce0;
+wire    grp_pointwise_conv2d_fix_2_fu_563_output_r_we0;
+wire   [15:0] grp_pointwise_conv2d_fix_2_fu_563_output_r_d0;
+wire    grp_pointwise_conv2d_fix_fu_573_ap_start;
+wire    grp_pointwise_conv2d_fix_fu_573_ap_done;
+wire    grp_pointwise_conv2d_fix_fu_573_ap_idle;
+wire    grp_pointwise_conv2d_fix_fu_573_ap_ready;
+wire   [13:0] grp_pointwise_conv2d_fix_fu_573_input_r_address0;
+wire    grp_pointwise_conv2d_fix_fu_573_input_r_ce0;
+wire   [13:0] grp_pointwise_conv2d_fix_fu_573_input_r_address1;
+wire    grp_pointwise_conv2d_fix_fu_573_input_r_ce1;
+wire   [13:0] grp_pointwise_conv2d_fix_fu_573_output_r_address0;
+wire    grp_pointwise_conv2d_fix_fu_573_output_r_ce0;
+wire    grp_pointwise_conv2d_fix_fu_573_output_r_we0;
+wire   [15:0] grp_pointwise_conv2d_fix_fu_573_output_r_d0;
 wire    grp_pointwise_conv2d_fix_1_fu_583_ap_start;
 wire    grp_pointwise_conv2d_fix_1_fu_583_ap_done;
 wire    grp_pointwise_conv2d_fix_1_fu_583_ap_idle;
@@ -662,12 +662,12 @@ wire    ap_CS_fsm_state6;
 reg    grp_pointwise_conv2d_fix_3_fu_553_ap_start_reg;
 wire    ap_CS_fsm_state31;
 wire    ap_CS_fsm_state32;
-reg    grp_pointwise_conv2d_fix_fu_563_ap_start_reg;
-wire    ap_CS_fsm_state7;
-wire    ap_CS_fsm_state8;
-reg    grp_pointwise_conv2d_fix_2_fu_573_ap_start_reg;
+reg    grp_pointwise_conv2d_fix_2_fu_563_ap_start_reg;
 wire    ap_CS_fsm_state23;
 wire    ap_CS_fsm_state24;
+reg    grp_pointwise_conv2d_fix_fu_573_ap_start_reg;
+wire    ap_CS_fsm_state7;
+wire    ap_CS_fsm_state8;
 reg    grp_pointwise_conv2d_fix_1_fu_583_ap_start_reg;
 wire    ap_CS_fsm_state15;
 wire    ap_CS_fsm_state16;
@@ -743,8 +743,8 @@ initial begin
 #0 grp_max_pooling2d_fix16_fu_526_ap_start_reg = 1'b0;
 #0 grp_depthwise_conv2d_fix_fu_547_ap_start_reg = 1'b0;
 #0 grp_pointwise_conv2d_fix_3_fu_553_ap_start_reg = 1'b0;
-#0 grp_pointwise_conv2d_fix_fu_563_ap_start_reg = 1'b0;
-#0 grp_pointwise_conv2d_fix_2_fu_573_ap_start_reg = 1'b0;
+#0 grp_pointwise_conv2d_fix_2_fu_563_ap_start_reg = 1'b0;
+#0 grp_pointwise_conv2d_fix_fu_573_ap_start_reg = 1'b0;
 #0 grp_pointwise_conv2d_fix_1_fu_583_ap_start_reg = 1'b0;
 #0 grp_pointwise_conv2d_fix_4_fu_593_ap_start_reg = 1'b0;
 end
@@ -1193,42 +1193,42 @@ pointwise_conv2d_fix_3 grp_pointwise_conv2d_fix_3_fu_553(
     .output_r_d0(grp_pointwise_conv2d_fix_3_fu_553_output_r_d0)
 );
 
-pointwise_conv2d_fix grp_pointwise_conv2d_fix_fu_563(
+pointwise_conv2d_fix_2 grp_pointwise_conv2d_fix_2_fu_563(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst_n_inv),
-    .ap_start(grp_pointwise_conv2d_fix_fu_563_ap_start),
-    .ap_done(grp_pointwise_conv2d_fix_fu_563_ap_done),
-    .ap_idle(grp_pointwise_conv2d_fix_fu_563_ap_idle),
-    .ap_ready(grp_pointwise_conv2d_fix_fu_563_ap_ready),
-    .input_r_address0(grp_pointwise_conv2d_fix_fu_563_input_r_address0),
-    .input_r_ce0(grp_pointwise_conv2d_fix_fu_563_input_r_ce0),
+    .ap_start(grp_pointwise_conv2d_fix_2_fu_563_ap_start),
+    .ap_done(grp_pointwise_conv2d_fix_2_fu_563_ap_done),
+    .ap_idle(grp_pointwise_conv2d_fix_2_fu_563_ap_idle),
+    .ap_ready(grp_pointwise_conv2d_fix_2_fu_563_ap_ready),
+    .input_r_address0(grp_pointwise_conv2d_fix_2_fu_563_input_r_address0),
+    .input_r_ce0(grp_pointwise_conv2d_fix_2_fu_563_input_r_ce0),
     .input_r_q0(MemBank_A_q0),
-    .input_r_address1(grp_pointwise_conv2d_fix_fu_563_input_r_address1),
-    .input_r_ce1(grp_pointwise_conv2d_fix_fu_563_input_r_ce1),
+    .input_r_address1(grp_pointwise_conv2d_fix_2_fu_563_input_r_address1),
+    .input_r_ce1(grp_pointwise_conv2d_fix_2_fu_563_input_r_ce1),
     .input_r_q1(MemBank_A_q1),
-    .output_r_address0(grp_pointwise_conv2d_fix_fu_563_output_r_address0),
-    .output_r_ce0(grp_pointwise_conv2d_fix_fu_563_output_r_ce0),
-    .output_r_we0(grp_pointwise_conv2d_fix_fu_563_output_r_we0),
-    .output_r_d0(grp_pointwise_conv2d_fix_fu_563_output_r_d0)
+    .output_r_address0(grp_pointwise_conv2d_fix_2_fu_563_output_r_address0),
+    .output_r_ce0(grp_pointwise_conv2d_fix_2_fu_563_output_r_ce0),
+    .output_r_we0(grp_pointwise_conv2d_fix_2_fu_563_output_r_we0),
+    .output_r_d0(grp_pointwise_conv2d_fix_2_fu_563_output_r_d0)
 );
 
-pointwise_conv2d_fix_2 grp_pointwise_conv2d_fix_2_fu_573(
+pointwise_conv2d_fix grp_pointwise_conv2d_fix_fu_573(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst_n_inv),
-    .ap_start(grp_pointwise_conv2d_fix_2_fu_573_ap_start),
-    .ap_done(grp_pointwise_conv2d_fix_2_fu_573_ap_done),
-    .ap_idle(grp_pointwise_conv2d_fix_2_fu_573_ap_idle),
-    .ap_ready(grp_pointwise_conv2d_fix_2_fu_573_ap_ready),
-    .input_r_address0(grp_pointwise_conv2d_fix_2_fu_573_input_r_address0),
-    .input_r_ce0(grp_pointwise_conv2d_fix_2_fu_573_input_r_ce0),
+    .ap_start(grp_pointwise_conv2d_fix_fu_573_ap_start),
+    .ap_done(grp_pointwise_conv2d_fix_fu_573_ap_done),
+    .ap_idle(grp_pointwise_conv2d_fix_fu_573_ap_idle),
+    .ap_ready(grp_pointwise_conv2d_fix_fu_573_ap_ready),
+    .input_r_address0(grp_pointwise_conv2d_fix_fu_573_input_r_address0),
+    .input_r_ce0(grp_pointwise_conv2d_fix_fu_573_input_r_ce0),
     .input_r_q0(MemBank_A_q0),
-    .input_r_address1(grp_pointwise_conv2d_fix_2_fu_573_input_r_address1),
-    .input_r_ce1(grp_pointwise_conv2d_fix_2_fu_573_input_r_ce1),
+    .input_r_address1(grp_pointwise_conv2d_fix_fu_573_input_r_address1),
+    .input_r_ce1(grp_pointwise_conv2d_fix_fu_573_input_r_ce1),
     .input_r_q1(MemBank_A_q1),
-    .output_r_address0(grp_pointwise_conv2d_fix_2_fu_573_output_r_address0),
-    .output_r_ce0(grp_pointwise_conv2d_fix_2_fu_573_output_r_ce0),
-    .output_r_we0(grp_pointwise_conv2d_fix_2_fu_573_output_r_we0),
-    .output_r_d0(grp_pointwise_conv2d_fix_2_fu_573_output_r_d0)
+    .output_r_address0(grp_pointwise_conv2d_fix_fu_573_output_r_address0),
+    .output_r_ce0(grp_pointwise_conv2d_fix_fu_573_output_r_ce0),
+    .output_r_we0(grp_pointwise_conv2d_fix_fu_573_output_r_we0),
+    .output_r_d0(grp_pointwise_conv2d_fix_fu_573_output_r_d0)
 );
 
 pointwise_conv2d_fix_1 grp_pointwise_conv2d_fix_1_fu_583(
@@ -1415,12 +1415,12 @@ end
 
 always @ (posedge ap_clk) begin
     if (ap_rst_n_inv == 1'b1) begin
-        grp_pointwise_conv2d_fix_2_fu_573_ap_start_reg <= 1'b0;
+        grp_pointwise_conv2d_fix_2_fu_563_ap_start_reg <= 1'b0;
     end else begin
         if ((1'b1 == ap_CS_fsm_state23)) begin
-            grp_pointwise_conv2d_fix_2_fu_573_ap_start_reg <= 1'b1;
-        end else if ((grp_pointwise_conv2d_fix_2_fu_573_ap_ready == 1'b1)) begin
-            grp_pointwise_conv2d_fix_2_fu_573_ap_start_reg <= 1'b0;
+            grp_pointwise_conv2d_fix_2_fu_563_ap_start_reg <= 1'b1;
+        end else if ((grp_pointwise_conv2d_fix_2_fu_563_ap_ready == 1'b1)) begin
+            grp_pointwise_conv2d_fix_2_fu_563_ap_start_reg <= 1'b0;
         end
     end
 end
@@ -1451,12 +1451,12 @@ end
 
 always @ (posedge ap_clk) begin
     if (ap_rst_n_inv == 1'b1) begin
-        grp_pointwise_conv2d_fix_fu_563_ap_start_reg <= 1'b0;
+        grp_pointwise_conv2d_fix_fu_573_ap_start_reg <= 1'b0;
     end else begin
         if ((1'b1 == ap_CS_fsm_state7)) begin
-            grp_pointwise_conv2d_fix_fu_563_ap_start_reg <= 1'b1;
-        end else if ((grp_pointwise_conv2d_fix_fu_563_ap_ready == 1'b1)) begin
-            grp_pointwise_conv2d_fix_fu_563_ap_start_reg <= 1'b0;
+            grp_pointwise_conv2d_fix_fu_573_ap_start_reg <= 1'b1;
+        end else if ((grp_pointwise_conv2d_fix_fu_573_ap_ready == 1'b1)) begin
+            grp_pointwise_conv2d_fix_fu_573_ap_start_reg <= 1'b0;
         end
     end
 end
@@ -2195,10 +2195,10 @@ always @ (*) begin
         MemBank_A_address0 = grp_pointwise_conv2d_fix_4_fu_593_input_r_address0;
     end else if ((1'b1 == ap_CS_fsm_state16)) begin
         MemBank_A_address0 = grp_pointwise_conv2d_fix_1_fu_583_input_r_address0;
-    end else if ((1'b1 == ap_CS_fsm_state24)) begin
-        MemBank_A_address0 = grp_pointwise_conv2d_fix_2_fu_573_input_r_address0;
     end else if ((1'b1 == ap_CS_fsm_state8)) begin
-        MemBank_A_address0 = grp_pointwise_conv2d_fix_fu_563_input_r_address0;
+        MemBank_A_address0 = grp_pointwise_conv2d_fix_fu_573_input_r_address0;
+    end else if ((1'b1 == ap_CS_fsm_state24)) begin
+        MemBank_A_address0 = grp_pointwise_conv2d_fix_2_fu_563_input_r_address0;
     end else if ((1'b1 == ap_CS_fsm_state32)) begin
         MemBank_A_address0 = grp_pointwise_conv2d_fix_3_fu_553_input_r_address0;
     end else if ((1'b1 == ap_CS_fsm_state6)) begin
@@ -2223,10 +2223,10 @@ always @ (*) begin
         MemBank_A_address1 = grp_pointwise_conv2d_fix_4_fu_593_input_r_address1;
     end else if ((1'b1 == ap_CS_fsm_state16)) begin
         MemBank_A_address1 = grp_pointwise_conv2d_fix_1_fu_583_input_r_address1;
-    end else if ((1'b1 == ap_CS_fsm_state24)) begin
-        MemBank_A_address1 = grp_pointwise_conv2d_fix_2_fu_573_input_r_address1;
     end else if ((1'b1 == ap_CS_fsm_state8)) begin
-        MemBank_A_address1 = grp_pointwise_conv2d_fix_fu_563_input_r_address1;
+        MemBank_A_address1 = grp_pointwise_conv2d_fix_fu_573_input_r_address1;
+    end else if ((1'b1 == ap_CS_fsm_state24)) begin
+        MemBank_A_address1 = grp_pointwise_conv2d_fix_2_fu_563_input_r_address1;
     end else if ((1'b1 == ap_CS_fsm_state32)) begin
         MemBank_A_address1 = grp_pointwise_conv2d_fix_3_fu_553_input_r_address1;
     end else begin
@@ -2241,10 +2241,10 @@ always @ (*) begin
         MemBank_A_ce0 = grp_pointwise_conv2d_fix_4_fu_593_input_r_ce0;
     end else if ((1'b1 == ap_CS_fsm_state16)) begin
         MemBank_A_ce0 = grp_pointwise_conv2d_fix_1_fu_583_input_r_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state24)) begin
-        MemBank_A_ce0 = grp_pointwise_conv2d_fix_2_fu_573_input_r_ce0;
     end else if ((1'b1 == ap_CS_fsm_state8)) begin
-        MemBank_A_ce0 = grp_pointwise_conv2d_fix_fu_563_input_r_ce0;
+        MemBank_A_ce0 = grp_pointwise_conv2d_fix_fu_573_input_r_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state24)) begin
+        MemBank_A_ce0 = grp_pointwise_conv2d_fix_2_fu_563_input_r_ce0;
     end else if ((1'b1 == ap_CS_fsm_state32)) begin
         MemBank_A_ce0 = grp_pointwise_conv2d_fix_3_fu_553_input_r_ce0;
     end else if ((1'b1 == ap_CS_fsm_state6)) begin
@@ -2269,10 +2269,10 @@ always @ (*) begin
         MemBank_A_ce1 = grp_pointwise_conv2d_fix_4_fu_593_input_r_ce1;
     end else if ((1'b1 == ap_CS_fsm_state16)) begin
         MemBank_A_ce1 = grp_pointwise_conv2d_fix_1_fu_583_input_r_ce1;
-    end else if ((1'b1 == ap_CS_fsm_state24)) begin
-        MemBank_A_ce1 = grp_pointwise_conv2d_fix_2_fu_573_input_r_ce1;
     end else if ((1'b1 == ap_CS_fsm_state8)) begin
-        MemBank_A_ce1 = grp_pointwise_conv2d_fix_fu_563_input_r_ce1;
+        MemBank_A_ce1 = grp_pointwise_conv2d_fix_fu_573_input_r_ce1;
+    end else if ((1'b1 == ap_CS_fsm_state24)) begin
+        MemBank_A_ce1 = grp_pointwise_conv2d_fix_2_fu_563_input_r_ce1;
     end else if ((1'b1 == ap_CS_fsm_state32)) begin
         MemBank_A_ce1 = grp_pointwise_conv2d_fix_3_fu_553_input_r_ce1;
     end else begin
@@ -2323,10 +2323,10 @@ always @ (*) begin
         MemBank_B_address0 = grp_pointwise_conv2d_fix_4_fu_593_output_r_address0;
     end else if ((1'b1 == ap_CS_fsm_state16)) begin
         MemBank_B_address0 = grp_pointwise_conv2d_fix_1_fu_583_output_r_address0;
-    end else if ((1'b1 == ap_CS_fsm_state24)) begin
-        MemBank_B_address0 = grp_pointwise_conv2d_fix_2_fu_573_output_r_address0;
     end else if ((1'b1 == ap_CS_fsm_state8)) begin
-        MemBank_B_address0 = grp_pointwise_conv2d_fix_fu_563_output_r_address0;
+        MemBank_B_address0 = grp_pointwise_conv2d_fix_fu_573_output_r_address0;
+    end else if ((1'b1 == ap_CS_fsm_state24)) begin
+        MemBank_B_address0 = grp_pointwise_conv2d_fix_2_fu_563_output_r_address0;
     end else if ((1'b1 == ap_CS_fsm_state32)) begin
         MemBank_B_address0 = grp_pointwise_conv2d_fix_3_fu_553_output_r_address0;
     end else if ((1'b1 == ap_CS_fsm_state6)) begin
@@ -2369,10 +2369,10 @@ always @ (*) begin
         MemBank_B_ce0 = grp_pointwise_conv2d_fix_4_fu_593_output_r_ce0;
     end else if ((1'b1 == ap_CS_fsm_state16)) begin
         MemBank_B_ce0 = grp_pointwise_conv2d_fix_1_fu_583_output_r_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state24)) begin
-        MemBank_B_ce0 = grp_pointwise_conv2d_fix_2_fu_573_output_r_ce0;
     end else if ((1'b1 == ap_CS_fsm_state8)) begin
-        MemBank_B_ce0 = grp_pointwise_conv2d_fix_fu_563_output_r_ce0;
+        MemBank_B_ce0 = grp_pointwise_conv2d_fix_fu_573_output_r_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state24)) begin
+        MemBank_B_ce0 = grp_pointwise_conv2d_fix_2_fu_563_output_r_ce0;
     end else if ((1'b1 == ap_CS_fsm_state32)) begin
         MemBank_B_ce0 = grp_pointwise_conv2d_fix_3_fu_553_output_r_ce0;
     end else if ((1'b1 == ap_CS_fsm_state6)) begin
@@ -2413,10 +2413,10 @@ always @ (*) begin
         MemBank_B_d0 = grp_pointwise_conv2d_fix_4_fu_593_output_r_d0;
     end else if ((1'b1 == ap_CS_fsm_state16)) begin
         MemBank_B_d0 = grp_pointwise_conv2d_fix_1_fu_583_output_r_d0;
-    end else if ((1'b1 == ap_CS_fsm_state24)) begin
-        MemBank_B_d0 = grp_pointwise_conv2d_fix_2_fu_573_output_r_d0;
     end else if ((1'b1 == ap_CS_fsm_state8)) begin
-        MemBank_B_d0 = grp_pointwise_conv2d_fix_fu_563_output_r_d0;
+        MemBank_B_d0 = grp_pointwise_conv2d_fix_fu_573_output_r_d0;
+    end else if ((1'b1 == ap_CS_fsm_state24)) begin
+        MemBank_B_d0 = grp_pointwise_conv2d_fix_2_fu_563_output_r_d0;
     end else if ((1'b1 == ap_CS_fsm_state32)) begin
         MemBank_B_d0 = grp_pointwise_conv2d_fix_3_fu_553_output_r_d0;
     end else if (((1'b1 == ap_CS_fsm_state36) | (1'b1 == ap_CS_fsm_state28) | (1'b1 == ap_CS_fsm_state20) | (1'b1 == ap_CS_fsm_state12) | (1'b1 == ap_CS_fsm_state4))) begin
@@ -2431,10 +2431,10 @@ always @ (*) begin
         MemBank_B_we0 = grp_pointwise_conv2d_fix_4_fu_593_output_r_we0;
     end else if ((1'b1 == ap_CS_fsm_state16)) begin
         MemBank_B_we0 = grp_pointwise_conv2d_fix_1_fu_583_output_r_we0;
-    end else if ((1'b1 == ap_CS_fsm_state24)) begin
-        MemBank_B_we0 = grp_pointwise_conv2d_fix_2_fu_573_output_r_we0;
     end else if ((1'b1 == ap_CS_fsm_state8)) begin
-        MemBank_B_we0 = grp_pointwise_conv2d_fix_fu_563_output_r_we0;
+        MemBank_B_we0 = grp_pointwise_conv2d_fix_fu_573_output_r_we0;
+    end else if ((1'b1 == ap_CS_fsm_state24)) begin
+        MemBank_B_we0 = grp_pointwise_conv2d_fix_2_fu_563_output_r_we0;
     end else if ((1'b1 == ap_CS_fsm_state32)) begin
         MemBank_B_we0 = grp_pointwise_conv2d_fix_3_fu_553_output_r_we0;
     end else if (((1'b1 == ap_CS_fsm_state36) | (1'b1 == ap_CS_fsm_state28) | (1'b1 == ap_CS_fsm_state20) | (1'b1 == ap_CS_fsm_state12) | (1'b1 == ap_CS_fsm_state4))) begin
@@ -3344,7 +3344,7 @@ always @ (*) begin
             ap_NS_fsm = ap_ST_fsm_state8;
         end
         ap_ST_fsm_state8 : begin
-            if (((1'b1 == ap_CS_fsm_state8) & (grp_pointwise_conv2d_fix_fu_563_ap_done == 1'b1))) begin
+            if (((1'b1 == ap_CS_fsm_state8) & (grp_pointwise_conv2d_fix_fu_573_ap_done == 1'b1))) begin
                 ap_NS_fsm = ap_ST_fsm_state9;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state8;
@@ -3424,7 +3424,7 @@ always @ (*) begin
             ap_NS_fsm = ap_ST_fsm_state24;
         end
         ap_ST_fsm_state24 : begin
-            if (((1'b1 == ap_CS_fsm_state24) & (grp_pointwise_conv2d_fix_2_fu_573_ap_done == 1'b1))) begin
+            if (((1'b1 == ap_CS_fsm_state24) & (grp_pointwise_conv2d_fix_2_fu_563_ap_done == 1'b1))) begin
                 ap_NS_fsm = ap_ST_fsm_state25;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state24;
@@ -3699,13 +3699,13 @@ assign grp_padding2d_fix16_fu_439_ap_start = grp_padding2d_fix16_fu_439_ap_start
 
 assign grp_pointwise_conv2d_fix_1_fu_583_ap_start = grp_pointwise_conv2d_fix_1_fu_583_ap_start_reg;
 
-assign grp_pointwise_conv2d_fix_2_fu_573_ap_start = grp_pointwise_conv2d_fix_2_fu_573_ap_start_reg;
+assign grp_pointwise_conv2d_fix_2_fu_563_ap_start = grp_pointwise_conv2d_fix_2_fu_563_ap_start_reg;
 
 assign grp_pointwise_conv2d_fix_3_fu_553_ap_start = grp_pointwise_conv2d_fix_3_fu_553_ap_start_reg;
 
 assign grp_pointwise_conv2d_fix_4_fu_593_ap_start = grp_pointwise_conv2d_fix_4_fu_593_ap_start_reg;
 
-assign grp_pointwise_conv2d_fix_fu_563_ap_start = grp_pointwise_conv2d_fix_fu_563_ap_start_reg;
+assign grp_pointwise_conv2d_fix_fu_573_ap_start = grp_pointwise_conv2d_fix_fu_573_ap_start_reg;
 
 assign grp_up_sampling2d_fix16_fu_457_ap_start = grp_up_sampling2d_fix16_fu_457_ap_start_reg;
 

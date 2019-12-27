@@ -6,7 +6,7 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 
-entity network_am_addmul_16ns_10ns_6ns_21_1_1_DSP48_9 is
+entity network_am_addmul_16ns_10ns_6ns_21_1_1_DSP48_12 is
 port (
     in0:  in  std_logic_vector(16 - 1 downto 0);
     in1:  in  std_logic_vector(10 - 1 downto 0);
@@ -15,7 +15,7 @@ port (
 
 end entity;
 
-architecture behav of network_am_addmul_16ns_10ns_6ns_21_1_1_DSP48_9 is
+architecture behav of network_am_addmul_16ns_10ns_6ns_21_1_1_DSP48_12 is
     signal b       : signed(18-1 downto 0);
     signal a       : signed(25-1 downto 0);
     signal d       : signed(25-1 downto 0);
@@ -51,7 +51,7 @@ entity network_am_addmul_16ns_10ns_6ns_21_1_1 is
 end entity;
 
 architecture arch of network_am_addmul_16ns_10ns_6ns_21_1_1 is
-    component network_am_addmul_16ns_10ns_6ns_21_1_1_DSP48_9 is
+    component network_am_addmul_16ns_10ns_6ns_21_1_1_DSP48_12 is
         port (
             in0 : IN STD_LOGIC_VECTOR;
             in1 : IN STD_LOGIC_VECTOR;
@@ -62,7 +62,7 @@ architecture arch of network_am_addmul_16ns_10ns_6ns_21_1_1 is
 
 
 begin
-    network_am_addmul_16ns_10ns_6ns_21_1_1_DSP48_9_U :  component network_am_addmul_16ns_10ns_6ns_21_1_1_DSP48_9
+    network_am_addmul_16ns_10ns_6ns_21_1_1_DSP48_12_U :  component network_am_addmul_16ns_10ns_6ns_21_1_1_DSP48_12
     port map (
         in0 => din0,
         in1 => din1,

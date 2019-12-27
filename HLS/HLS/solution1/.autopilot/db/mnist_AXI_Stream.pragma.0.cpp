@@ -28564,6 +28564,8 @@ int network(axis input_data[784], axis output_data[784]) {_ssdm_SpecArrayDimSize
 #pragma HLS INTERFACE s_axilite register port=return
 
  int16_t MemBank_A[14400], MemBank_B[14400];
+#pragma HLS array_partition variable=&MemBank_A block factor=16
+#pragma HLS array_partition variable=&MemBank_B block factor=16
  const uint64_t array_length = (uint64_t)SeparableConv2D_4_depth * SeparableConv2D_4_height * SeparableConv2D_4_width;
 
  int16_t MemBank_Out[784];
@@ -28679,7 +28681,7 @@ int network(axis input_data[784], axis output_data[784]) {_ssdm_SpecArrayDimSize
 #pragma HLS PIPELINE
  MemBank_Out[i] = (int16_t)MemBank_B[i];
  }
-# 168 "../mnist_AXI_Stream.cpp"
+# 170 "../mnist_AXI_Stream.cpp"
  for(i = 0; i < array_length; i++){
 #pragma HLS PIPELINE
  tmp.data = MemBank_Out[i];
@@ -28702,7 +28704,7 @@ int main(void){
 
  int16_t output_img_buff[1 * 28 * 28];
     axis temp;
-# 215 "../mnist_AXI_Stream.cpp"
+# 217 "../mnist_AXI_Stream.cpp"
  int i = 0;
  for(int depth = 0; depth < 1; depth++){
   for(int height = 0; height < 28; height++){
@@ -28728,7 +28730,7 @@ int main(void){
 
 
  network(input_buffer, output_buffer);
-# 258 "../mnist_AXI_Stream.cpp"
+# 260 "../mnist_AXI_Stream.cpp"
  i = 0;
  do {
   temp = output_buffer[i];

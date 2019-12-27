@@ -31,10 +31,10 @@ add_files -tb ../mnist_AXI_Stream.cpp -cflags "-Wno-unknown-pragmas" -csimflags 
 open_solution "solution1"
 set_part {xc7z020-clg400-1} -tool vivado
 create_clock -period 50MHz -name default
-config_compile  
+config_compile -no_signed_zeros=0 -unsafe_math_optimizations=0
 config_sdx -target none
 config_export -format ip_catalog -rtl verilog -vivado_optimization_level 2 -vivado_phys_opt place -vivado_report_level 0
-set_clock_uncertainty 25%
+set_clock_uncertainty 6.25%
 #source "./HLS/solution1/directives.tcl"
 csim_design -clean
 csynth_design

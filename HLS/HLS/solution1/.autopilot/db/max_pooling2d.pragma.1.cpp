@@ -391,7 +391,7 @@ _ssdm_op_SpecResourceLimit(0, "add", "", "", "");
     for(uint16_t out_d = 0; out_d < output_depth; out_d++){
         for(uint16_t out_h = 0; out_h < output_height; out_h++){
          for(uint16_t out_w = 0; out_w < output_width; out_w++){
-_ssdm_Unroll(1, 0, 7, "");
+_ssdm_Unroll(1, 0, 2, "");
  for(uint16_t in_h = 0; in_h < kernel_size; in_h++){
 _ssdm_Unroll(0,0,0, "");
  for(uint16_t in_w = 0; in_w < kernel_size; in_w++){

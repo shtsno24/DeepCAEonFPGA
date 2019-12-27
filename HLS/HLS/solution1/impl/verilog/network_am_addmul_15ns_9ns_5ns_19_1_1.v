@@ -4,7 +4,7 @@
 // ==============================================================
 `timescale 1 ns / 1 ps
 
-module network_am_addmul_15ns_9ns_5ns_19_1_1_DSP48_8(
+module network_am_addmul_15ns_9ns_5ns_19_1_1_DSP48_11(
     input  [15 - 1:0] in0,
     input  [9 - 1:0] in1,
     input  [5 - 1:0] in2,
@@ -46,7 +46,7 @@ output[dout_WIDTH - 1:0] dout;
 
 
 
-network_am_addmul_15ns_9ns_5ns_19_1_1_DSP48_8 network_am_addmul_15ns_9ns_5ns_19_1_1_DSP48_8_U(
+network_am_addmul_15ns_9ns_5ns_19_1_1_DSP48_11 network_am_addmul_15ns_9ns_5ns_19_1_1_DSP48_11_U(
     .in0( din0 ),
     .in1( din1 ),
     .in2( din2 ),

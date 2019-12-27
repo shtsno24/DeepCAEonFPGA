@@ -1,7 +1,7 @@
 
 `timescale 1 ns / 1 ps
 
-  module network_mul_mul_16s_13s_29_1_1_DSP48_6(a, b, p);
+  module network_mul_mul_16s_13s_29_1_1_DSP48_5(a, b, p);
 input signed [16 - 1 : 0] a;
 input signed [13 - 1 : 0] b;
 output signed [29 - 1 : 0] p;
@@ -26,7 +26,7 @@ output[dout_WIDTH - 1:0] dout;
 
 
 
-network_mul_mul_16s_13s_29_1_1_DSP48_6 network_mul_mul_16s_13s_29_1_1_DSP48_6_U(
+network_mul_mul_16s_13s_29_1_1_DSP48_5 network_mul_mul_16s_13s_29_1_1_DSP48_5_U(
     .a( din0 ),
     .b( din1 ),
     .p( dout ));

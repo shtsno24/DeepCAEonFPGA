@@ -251,7 +251,7 @@ uint8_t relu, uint8_t fractal_width){
     for(uint16_t out_d = 0; out_d < output_depth; out_d++){
      for(uint16_t out_h = 0; out_h < output_height; out_h++){
       for(uint16_t out_w = 0; out_w < output_width; out_w++){
-#pragma HLS UNROLL FACTOR=4
+#pragma HLS UNROLL FACTOR=5
        buffer = bias[out_d];
              for(uint16_t k_h = 0; k_h < kernel_height; k_h++){
 #pragma HLS UNROLL

@@ -20,8 +20,7 @@ uint8_t relu, uint8_t fractal_width){
                 for(uint16_t in_d = 0; in_d < input_depth; in_d++){
 #pragma HLS UNROLL FACTOR=16
                     //output[out_d][out_h][out_w] += input[in_d][out_h][out_w] * kernel[out_d][in_d][1][1];
-                	buffer +=
-                			(int16_t)(((int32_t)(input[in_d * output_height * output_width + out_h * output_width + out_w]) *
+                	buffer += (int16_t)(((int32_t)(input[in_d * output_height * output_width + out_h * output_width + out_w]) *
                 					(int32_t)(kernel[out_d * input_depth + in_d])) >> fractal_width);
                 }
                 if(relu == 1 && buffer < 0){

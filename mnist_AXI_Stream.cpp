@@ -31,6 +31,8 @@ int network(axis input_data[784], axis output_data[784]) {
 #pragma HLS INTERFACE s_axilite register port=return
 
 	int16_t MemBank_A[14400], MemBank_B[14400];
+#pragma HLS array_partition variable=MemBank_A block factor=16
+#pragma HLS array_partition variable=MemBank_B block factor=16
 	const uint64_t array_length = (uint64_t)SeparableConv2D_4_depth * SeparableConv2D_4_height * SeparableConv2D_4_width;
 	//	uint64_t array_length = 16 * 28 * 28;
 	int16_t MemBank_Out[784];
