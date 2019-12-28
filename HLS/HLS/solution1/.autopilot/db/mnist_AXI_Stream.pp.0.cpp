@@ -21822,6 +21822,7 @@ const int16_t SeparableConv2D_0_w_d[1][1][3][3] =
 {-5322, -7602, -1037},
 { -783, 3015, -3653}}}};
 
+
 const uint16_t shape_SeparableConv2D_0_w_p[] = {16, 1, 1, 1};
 const int16_t SeparableConv2D_0_w_p[16] =
 {-1770, 6639, 8093, -628, 4920, 9618, -9253, 1545, -10856, 2733, 1194, 6035, 3956, -6935, 5414, 6639};
@@ -28563,9 +28564,37 @@ int network(axis input_data[784], axis output_data[784]) {_ssdm_SpecArrayDimSize
 #pragma HLS INTERFACE axis register both port=&output_data
 #pragma HLS INTERFACE s_axilite register port=return
 
+
+
+
+#pragma HLS array_partition variable=&SeparableConv2D_0_w_d
+#pragma HLS array_partition variable=&SeparableConv2D_0_w_p
+
+
+
+#pragma HLS array_partition variable=&SeparableConv2D_1_w_d
+#pragma HLS array_partition variable=&SeparableConv2D_1_w_p
+
+
+
+#pragma HLS array_partition variable=&SeparableConv2D_2_w_d
+#pragma HLS array_partition variable=&SeparableConv2D_2_w_p
+
+
+
+#pragma HLS array_partition variable=&SeparableConv2D_3_w_d
+#pragma HLS array_partition variable=&SeparableConv2D_3_w_p
+
+
+
+#pragma HLS array_partition variable=&SeparableConv2D_4_w_d
+#pragma HLS array_partition variable=&SeparableConv2D_4_w_p
+
  int16_t MemBank_A[14400], MemBank_B[14400];
-#pragma HLS array_partition variable=&MemBank_A block factor=16
-#pragma HLS array_partition variable=&MemBank_B block factor=16
+
+
+
+
  const uint64_t array_length = (uint64_t)SeparableConv2D_4_depth * SeparableConv2D_4_height * SeparableConv2D_4_width;
 
  int16_t MemBank_Out[784];
@@ -28575,7 +28604,9 @@ int network(axis input_data[784], axis output_data[784]) {_ssdm_SpecArrayDimSize
 
  int i = 0;
  do {
-  tmp = input_data[i];
+#pragma HLS loop_flatten
+#pragma HLS PIPELINE
+ tmp = input_data[i];
   MemBank_A[i] = (int16_t)tmp.data;
   sig_buffer[i].keep = tmp.keep;
   sig_buffer[i].strb = tmp.strb;
@@ -28678,11 +28709,13 @@ int network(axis input_data[784], axis output_data[784]) {_ssdm_SpecArrayDimSize
  1, 1, (int16_t*)SeparableConv2D_4_w_p, 1, 14);
 
  for(i = 0; i < array_length; i++){
+#pragma HLS loop_flatten
 #pragma HLS PIPELINE
  MemBank_Out[i] = (int16_t)MemBank_B[i];
  }
-# 170 "../mnist_AXI_Stream.cpp"
+# 201 "../mnist_AXI_Stream.cpp"
  for(i = 0; i < array_length; i++){
+#pragma HLS loop_flatten
 #pragma HLS PIPELINE
  tmp.data = MemBank_Out[i];
   tmp.keep = sig_buffer[i].keep;
@@ -28704,7 +28737,7 @@ int main(void){
 
  int16_t output_img_buff[1 * 28 * 28];
     axis temp;
-# 217 "../mnist_AXI_Stream.cpp"
+# 249 "../mnist_AXI_Stream.cpp"
  int i = 0;
  for(int depth = 0; depth < 1; depth++){
   for(int height = 0; height < 28; height++){
@@ -28730,7 +28763,7 @@ int main(void){
 
 
  network(input_buffer, output_buffer);
-# 260 "../mnist_AXI_Stream.cpp"
+# 292 "../mnist_AXI_Stream.cpp"
  i = 0;
  do {
   temp = output_buffer[i];

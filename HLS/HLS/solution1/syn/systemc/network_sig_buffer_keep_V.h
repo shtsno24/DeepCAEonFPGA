@@ -22,9 +22,9 @@ struct network_sig_buffer_keep_V_ram : public sc_core::sc_module {
   static const unsigned AddressRange = 784;
   static const unsigned AddressWidth = 10;
 
-//latency = 1
+//latency = 2
 //input_reg = 1
-//output_reg = 0
+//output_reg = 1
 sc_core::sc_in <sc_lv<AddressWidth> > address0;
 sc_core::sc_in <sc_logic> ce0;
 sc_core::sc_out <sc_lv<DataWidth> > q0;
@@ -37,13 +37,27 @@ sc_core::sc_in<bool> clk;
 sc_lv<DataWidth> ram[AddressRange];
 
 
+sc_core::sc_signal<sc_lv<DataWidth> > q0_t0;
+sc_core::sc_signal<sc_lv<DataWidth> > q0_t1;
    SC_CTOR(network_sig_buffer_keep_V_ram) {
+SC_METHOD(prc_comb_0);
+  sensitive<<q0_t1;
+
+SC_METHOD(prc_seq);
+  sensitive<<clk.pos(); 
 
 
 SC_METHOD(prc_write_0);
   sensitive<<clk.pos();
    }
 
+void prc_comb_0() {
+  q0 = q0_t1.read();
+}
+
+void prc_seq() { 
+    q0_t1 = q0_t0.read();
+}
 
 void prc_write_0()
 {
@@ -54,16 +68,16 @@ void prc_write_0()
            if(address0.read().is_01() && address0.read().to_uint()<AddressRange)
            {
               ram[address0.read().to_uint()] = d0.read(); 
-              q0 = d0.read();
+              q0_t0 = d0.read();
            }
            else
-              q0 = sc_lv<DataWidth>();
+              q0_t0 = sc_lv<DataWidth>();
         }
         else {
             if(address0.read().is_01() && address0.read().to_uint()<AddressRange)
-              q0 = ram[address0.read().to_uint()];
+              q0_t0 = ram[address0.read().to_uint()];
             else
-              q0 = sc_lv<DataWidth>();
+              q0_t0 = sc_lv<DataWidth>();
         }
     }
 }

@@ -37121,6 +37121,7 @@ const int16_t SeparableConv2D_0_w_d[1][1][3][3] =
 {-5322, -7602, -1037},
 { -783, 3015, -3653}}}};
 
+
 const uint16_t shape_SeparableConv2D_0_w_p[] = {16, 1, 1, 1};
 const int16_t SeparableConv2D_0_w_p[16] =
 {-1770, 6639, 8093, -628, 4920, 9618, -9253, 1545, -10856, 2733, 1194, 6035, 3956, -6935, 5414, 6639};
@@ -75977,7 +75978,37 @@ int network(axis input_data[784], axis output_data[784]) {
 #pragma HLS INTERFACE axis register both port=output_data
 #pragma HLS INTERFACE s_axilite register port=return
 
+
+
+
+#pragma HLS array_partition variable=SeparableConv2D_0_w_d
+#pragma HLS array_partition variable=SeparableConv2D_0_w_p
+
+
+
+#pragma HLS array_partition variable=SeparableConv2D_1_w_d
+#pragma HLS array_partition variable=SeparableConv2D_1_w_p
+
+
+
+#pragma HLS array_partition variable=SeparableConv2D_2_w_d
+#pragma HLS array_partition variable=SeparableConv2D_2_w_p
+
+
+
+#pragma HLS array_partition variable=SeparableConv2D_3_w_d
+#pragma HLS array_partition variable=SeparableConv2D_3_w_p
+
+
+
+#pragma HLS array_partition variable=SeparableConv2D_4_w_d
+#pragma HLS array_partition variable=SeparableConv2D_4_w_p
+
  int16_t MemBank_A[14400], MemBank_B[14400];
+
+
+
+
  const uint64_t array_length = (uint64_t)SeparableConv2D_4_depth * SeparableConv2D_4_height * SeparableConv2D_4_width;
 
  int16_t MemBank_Out[784];
@@ -75987,6 +76018,8 @@ int network(axis input_data[784], axis output_data[784]) {
 
  int i = 0;
  do {
+#pragma HLS loop_flatten
+#pragma HLS PIPELINE
   tmp = input_data[i];
   MemBank_A[i] = (int16_t)tmp.data;
   sig_buffer[i].keep = tmp.keep;
@@ -76090,11 +76123,13 @@ int network(axis input_data[784], axis output_data[784]) {
  1, 1, (int16_t*)SeparableConv2D_4_w_p, 1, 14);
 
  for(i = 0; i < array_length; i++){
+#pragma HLS loop_flatten
 #pragma HLS PIPELINE
   MemBank_Out[i] = (int16_t)MemBank_B[i];
  }
-# 168 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
+# 201 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
  for(i = 0; i < array_length; i++){
+#pragma HLS loop_flatten
 #pragma HLS PIPELINE
   tmp.data = MemBank_Out[i];
   tmp.keep = sig_buffer[i].keep;
@@ -76112,7 +76147,7 @@ int network(axis input_data[784], axis output_data[784]) {
 #ifndef HLS_FASTSIM
 #include "apatb_network.h"
 #endif
-# 182 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
+# 216 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
 int main(void){
  axis input_buffer[784];
 #pragma HLS reset variable=input_buffer
@@ -76121,7 +76156,7 @@ int main(void){
 
     int16_t output_img_buff[1 * 28 * 28];
     axis temp;
-# 215 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
+# 249 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
  int i = 0;
  for(int depth = 0; depth < 1; depth++){
   for(int height = 0; height < 28; height++){
@@ -76150,12 +76185,12 @@ int main(void){
 #ifndef HLS_FASTSIM
 #define network AESL_WRAP_network
 #endif
-# 239 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
+# 273 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
 network(input_buffer, output_buffer);
 #undef network
-# 239 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
+# 273 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
 
-# 258 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
+# 292 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
  i = 0;
  do {
   temp = output_buffer[i];
@@ -76175,5 +76210,5 @@ network(input_buffer, output_buffer);
  return 0;
 }
 #endif
-# 275 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
+# 309 "/home/masudalab/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
 

@@ -2,6 +2,9 @@
     <checksum>
         <value string="false"/>
     </checksum>
+    <downStreamTool>
+        <DownStreamTool name="vivado"/>
+    </downStreamTool>
     <config>
         <schedule model="network"/>
         <config_compile no_signed_zeros="0" unsafe_math_optimizations="0"/>
@@ -39,15 +42,15 @@
             </RTLs>
         </UIAutoSimConf>
     </UIConfigurations>
-    <ExportDesign askAgain="true" evaluate="true" flow="true" flowChoice="impl" formatName="ip_catalog" rtl="verilog" rtlButton="true" rtlCombo="verilog">
-        <Format formatName="ip_catalog"/>
+    <ExportDesign askAgain="true" evaluate="true" flow="true" flowChoice="impl" formatName="ip_catalog" rtl="vlog" rtlButton="true" rtlCombo="verilog">
+        <Format formatName="ip_catalog" description="" vendor="" library="" ipname="" version="1.0" driver_input_dir="" display_name="" taxonomy=""/>
         <Format formatName="sysgen"/>
         <Format formatName="sysgen_ise"/>
         <Format formatName="syn_dcp"/>
         <Format formatName="pcore" use_netlist="none"/>
     </ExportDesign>
-    <Simulation argv="">
-        <SimFlow askAgain="true" clangSanitizer="false" compile="false" compileChoice="gcc" disableDeadlockDetect="false" dumpTrace="all" name="cosim" optimizeCompile="false" reduce_diskspace="false" setup="false" toolName="auto" waveDebug="false" ldflags="" mflags="" compiledLibrary="">
+    <Simulation>
+        <SimFlow askAgain="true" clangSanitizer="false" compile="false" compileChoice="gcc" disableDeadlockDetect="false" dumpTrace="all" name="cosim" optimizeCompile="false" reduce_diskspace="false" setup="false" toolName="Auto" waveDebug="false">
             <Rtl active="false" name="systemc"/>
             <Rtl active="true" name="verilog"/>
             <Rtl active="false" name="vhdl"/>
@@ -66,11 +69,8 @@
         <library name="DefaultPlatform" value="xilinx/zynq/zynq"/>
         <library value="xilinx/zynq/zynq_fpv6" name="DefaultPlatform"/>
     </libraryList>
-    <downStreamTool>
-        <DownStreamTool name="vivado"/>
-    </downStreamTool>
     <clockList>
-        <clock default="false" name="default" uncertainty="6.25%" period="50MHz"/>
+        <clock name="default" default="false" uncertainty="12.5%" period="150MHz"/>
     </clockList>
 </solution>
 

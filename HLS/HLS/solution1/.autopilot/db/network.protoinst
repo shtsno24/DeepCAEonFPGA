@@ -13,7 +13,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_depthwise_conv2d_fix_1_fu_953/grp_depthwise_conv2d_fix_1_fu_953_activity": {
+				"grp_depthwise_conv2d_fix_1_fu_479/grp_depthwise_conv2d_fix_1_fu_479_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -23,7 +23,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_depthwise_conv2d_fix_2_fu_899/grp_depthwise_conv2d_fix_2_fu_899_activity": {
+				"grp_depthwise_conv2d_fix_2_fu_449/grp_depthwise_conv2d_fix_2_fu_449_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -33,7 +33,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_depthwise_conv2d_fix_fu_1007/grp_depthwise_conv2d_fix_fu_1007_activity": {
+				"grp_depthwise_conv2d_fix_fu_509/grp_depthwise_conv2d_fix_fu_509_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -43,7 +43,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_max_pooling2d_fix16_fu_1151/grp_max_pooling2d_fix16_fu_1151_activity": {
+				"grp_max_pooling2d_fix16_fu_563/grp_max_pooling2d_fix16_fu_563_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -53,7 +53,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_padding2d_fix16_fu_800/grp_padding2d_fix16_fu_800_activity": {
+				"grp_padding2d_fix16_fu_545/grp_padding2d_fix16_fu_545_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -63,7 +63,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_pointwise_conv2d_fix_1_fu_1233/grp_pointwise_conv2d_fix_1_fu_1233_activity": {
+				"grp_pointwise_conv2d_fix_1_fu_521/grp_pointwise_conv2d_fix_1_fu_521_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -73,7 +73,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_pointwise_conv2d_fix_2_fu_1123/grp_pointwise_conv2d_fix_2_fu_1123_activity": {
+				"grp_pointwise_conv2d_fix_2_fu_537/grp_pointwise_conv2d_fix_2_fu_537_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -83,7 +83,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_pointwise_conv2d_fix_3_fu_1083/grp_pointwise_conv2d_fix_3_fu_1083_activity": {
+				"grp_pointwise_conv2d_fix_3_fu_529/grp_pointwise_conv2d_fix_3_fu_529_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -93,7 +93,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_pointwise_conv2d_fix_4_fu_1202/grp_pointwise_conv2d_fix_4_fu_1202_activity": {
+				"grp_pointwise_conv2d_fix_4_fu_515/grp_pointwise_conv2d_fix_4_fu_515_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -103,7 +103,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_pointwise_conv2d_fix_fu_1043/grp_pointwise_conv2d_fix_fu_1043_activity": {
+				"grp_pointwise_conv2d_fix_fu_584/grp_pointwise_conv2d_fix_fu_584_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -113,7 +113,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_up_sampling2d_fix16_fu_848/grp_up_sampling2d_fix16_fu_848_activity": {
+				"grp_up_sampling2d_fix16_fu_592/grp_up_sampling2d_fix16_fu_592_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},

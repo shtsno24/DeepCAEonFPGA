@@ -1,29 +1,152 @@
 # This script segment is generated automatically by AutoPilot
 
-set id 1019
-set name network_urem_24ns_11ns_24_28_seq_1
-set corename simcore_urem_seq
-set op urem
-set stage_num 28
+set id 102
+set name network_mux_646_16_6_1
+set corename simcore_mux
+set op mux
+set stage_num 6
 set max_latency -1
 set registered_input 1
 set clk_width 1
 set clk_signed 0
 set reset_width 1
 set reset_signed 0
-set start_width 1
-set start_signed 0
-set done_width 1
-set in0_width 24
-set in0_signed 0
-set in1_width 11
-set in1_signed 0
+set din0_width 16
+set din0_signed 0
+set din1_width 16
+set din1_signed 0
+set din2_width 16
+set din2_signed 1
+set din3_width 16
+set din3_signed 0
+set din4_width 16
+set din4_signed 1
+set din5_width 16
+set din5_signed 1
+set din6_width 16
+set din6_signed 0
+set din7_width 16
+set din7_signed 0
+set din8_width 16
+set din8_signed 0
+set din9_width 16
+set din9_signed 1
+set din10_width 16
+set din10_signed 0
+set din11_width 16
+set din11_signed 1
+set din12_width 16
+set din12_signed 1
+set din13_width 16
+set din13_signed 1
+set din14_width 16
+set din14_signed 1
+set din15_width 16
+set din15_signed 1
+set din16_width 16
+set din16_signed 1
+set din17_width 16
+set din17_signed 0
+set din18_width 16
+set din18_signed 1
+set din19_width 16
+set din19_signed 1
+set din20_width 16
+set din20_signed 0
+set din21_width 16
+set din21_signed 1
+set din22_width 16
+set din22_signed 0
+set din23_width 16
+set din23_signed 1
+set din24_width 16
+set din24_signed 0
+set din25_width 16
+set din25_signed 0
+set din26_width 16
+set din26_signed 1
+set din27_width 16
+set din27_signed 0
+set din28_width 16
+set din28_signed 0
+set din29_width 16
+set din29_signed 0
+set din30_width 16
+set din30_signed 1
+set din31_width 16
+set din31_signed 0
+set din32_width 16
+set din32_signed 1
+set din33_width 16
+set din33_signed 0
+set din34_width 16
+set din34_signed 1
+set din35_width 16
+set din35_signed 0
+set din36_width 16
+set din36_signed 0
+set din37_width 16
+set din37_signed 0
+set din38_width 16
+set din38_signed 0
+set din39_width 16
+set din39_signed 0
+set din40_width 16
+set din40_signed 0
+set din41_width 16
+set din41_signed 1
+set din42_width 16
+set din42_signed 1
+set din43_width 16
+set din43_signed 0
+set din44_width 16
+set din44_signed 1
+set din45_width 16
+set din45_signed 0
+set din46_width 16
+set din46_signed 0
+set din47_width 16
+set din47_signed 1
+set din48_width 16
+set din48_signed 0
+set din49_width 16
+set din49_signed 0
+set din50_width 16
+set din50_signed 0
+set din51_width 16
+set din51_signed 0
+set din52_width 16
+set din52_signed 1
+set din53_width 16
+set din53_signed 1
+set din54_width 16
+set din54_signed 1
+set din55_width 16
+set din55_signed 1
+set din56_width 16
+set din56_signed 0
+set din57_width 16
+set din57_signed 0
+set din58_width 16
+set din58_signed 1
+set din59_width 16
+set din59_signed 0
+set din60_width 16
+set din60_signed 1
+set din61_width 16
+set din61_signed 1
+set din62_width 16
+set din62_signed 1
+set din63_width 16
+set din63_signed 0
+set din64_width 6
+set din64_signed 0
 set ce_width 1
 set ce_signed 0
-set out_width 24
+set dout_width 16
 if {${::AESL::PGuard_simmodel_gen}} {
-if {[info proc ap_gen_simcore_urem] == "ap_gen_simcore_urem"} {
-eval "ap_gen_simcore_urem { \
+if {[info proc ap_gen_simcore_mux] == "ap_gen_simcore_mux"} {
+eval "ap_gen_simcore_mux { \
     id ${id} \
     name ${name} \
     corename ${corename} \
@@ -37,19 +160,142 @@ eval "ap_gen_simcore_urem { \
     clk_signed ${clk_signed} \
     reset_width ${reset_width} \
     reset_signed ${reset_signed} \
-    start_width ${start_width} \
-    start_signed ${start_signed} \
-    done_width ${done_width} \
-    in0_width ${in0_width} \
-    in0_signed ${in0_signed} \
-    in1_width ${in1_width} \
-    in1_signed ${in1_signed} \
+    din0_width ${din0_width} \
+    din0_signed ${din0_signed} \
+    din1_width ${din1_width} \
+    din1_signed ${din1_signed} \
+    din2_width ${din2_width} \
+    din2_signed ${din2_signed} \
+    din3_width ${din3_width} \
+    din3_signed ${din3_signed} \
+    din4_width ${din4_width} \
+    din4_signed ${din4_signed} \
+    din5_width ${din5_width} \
+    din5_signed ${din5_signed} \
+    din6_width ${din6_width} \
+    din6_signed ${din6_signed} \
+    din7_width ${din7_width} \
+    din7_signed ${din7_signed} \
+    din8_width ${din8_width} \
+    din8_signed ${din8_signed} \
+    din9_width ${din9_width} \
+    din9_signed ${din9_signed} \
+    din10_width ${din10_width} \
+    din10_signed ${din10_signed} \
+    din11_width ${din11_width} \
+    din11_signed ${din11_signed} \
+    din12_width ${din12_width} \
+    din12_signed ${din12_signed} \
+    din13_width ${din13_width} \
+    din13_signed ${din13_signed} \
+    din14_width ${din14_width} \
+    din14_signed ${din14_signed} \
+    din15_width ${din15_width} \
+    din15_signed ${din15_signed} \
+    din16_width ${din16_width} \
+    din16_signed ${din16_signed} \
+    din17_width ${din17_width} \
+    din17_signed ${din17_signed} \
+    din18_width ${din18_width} \
+    din18_signed ${din18_signed} \
+    din19_width ${din19_width} \
+    din19_signed ${din19_signed} \
+    din20_width ${din20_width} \
+    din20_signed ${din20_signed} \
+    din21_width ${din21_width} \
+    din21_signed ${din21_signed} \
+    din22_width ${din22_width} \
+    din22_signed ${din22_signed} \
+    din23_width ${din23_width} \
+    din23_signed ${din23_signed} \
+    din24_width ${din24_width} \
+    din24_signed ${din24_signed} \
+    din25_width ${din25_width} \
+    din25_signed ${din25_signed} \
+    din26_width ${din26_width} \
+    din26_signed ${din26_signed} \
+    din27_width ${din27_width} \
+    din27_signed ${din27_signed} \
+    din28_width ${din28_width} \
+    din28_signed ${din28_signed} \
+    din29_width ${din29_width} \
+    din29_signed ${din29_signed} \
+    din30_width ${din30_width} \
+    din30_signed ${din30_signed} \
+    din31_width ${din31_width} \
+    din31_signed ${din31_signed} \
+    din32_width ${din32_width} \
+    din32_signed ${din32_signed} \
+    din33_width ${din33_width} \
+    din33_signed ${din33_signed} \
+    din34_width ${din34_width} \
+    din34_signed ${din34_signed} \
+    din35_width ${din35_width} \
+    din35_signed ${din35_signed} \
+    din36_width ${din36_width} \
+    din36_signed ${din36_signed} \
+    din37_width ${din37_width} \
+    din37_signed ${din37_signed} \
+    din38_width ${din38_width} \
+    din38_signed ${din38_signed} \
+    din39_width ${din39_width} \
+    din39_signed ${din39_signed} \
+    din40_width ${din40_width} \
+    din40_signed ${din40_signed} \
+    din41_width ${din41_width} \
+    din41_signed ${din41_signed} \
+    din42_width ${din42_width} \
+    din42_signed ${din42_signed} \
+    din43_width ${din43_width} \
+    din43_signed ${din43_signed} \
+    din44_width ${din44_width} \
+    din44_signed ${din44_signed} \
+    din45_width ${din45_width} \
+    din45_signed ${din45_signed} \
+    din46_width ${din46_width} \
+    din46_signed ${din46_signed} \
+    din47_width ${din47_width} \
+    din47_signed ${din47_signed} \
+    din48_width ${din48_width} \
+    din48_signed ${din48_signed} \
+    din49_width ${din49_width} \
+    din49_signed ${din49_signed} \
+    din50_width ${din50_width} \
+    din50_signed ${din50_signed} \
+    din51_width ${din51_width} \
+    din51_signed ${din51_signed} \
+    din52_width ${din52_width} \
+    din52_signed ${din52_signed} \
+    din53_width ${din53_width} \
+    din53_signed ${din53_signed} \
+    din54_width ${din54_width} \
+    din54_signed ${din54_signed} \
+    din55_width ${din55_width} \
+    din55_signed ${din55_signed} \
+    din56_width ${din56_width} \
+    din56_signed ${din56_signed} \
+    din57_width ${din57_width} \
+    din57_signed ${din57_signed} \
+    din58_width ${din58_width} \
+    din58_signed ${din58_signed} \
+    din59_width ${din59_width} \
+    din59_signed ${din59_signed} \
+    din60_width ${din60_width} \
+    din60_signed ${din60_signed} \
+    din61_width ${din61_width} \
+    din61_signed ${din61_signed} \
+    din62_width ${din62_width} \
+    din62_signed ${din62_signed} \
+    din63_width ${din63_width} \
+    din63_signed ${din63_signed} \
+    din64_width ${din64_width} \
+    din64_signed ${din64_signed} \
     ce_width ${ce_width} \
     ce_signed ${ce_signed} \
-    out_width ${out_width} \
+    dout_width ${dout_width} \
 }"
 } else {
-puts "@W \[IMPL-100\] Cannot find ap_gen_simcore_urem, check your AutoPilot builtin lib"
+puts "@W \[IMPL-100\] Cannot find ap_gen_simcore_mux, check your AutoPilot builtin lib"
 }
 }
 
@@ -59,11 +305,11 @@ if {${::AESL::PGuard_rtl_comp_handler}} {
 }
 
 
-set op urem
-set corename DivnS_SEQ
+set op mux
+set corename MuxnS
 if {${::AESL::PGuard_autocg_gen} && ${::AESL::PGuard_autocg_ipmgen}} {
-if {[info proc ::AESL_LIB_VIRTEX::xil_gen_div] == "::AESL_LIB_VIRTEX::xil_gen_div"} {
-eval "::AESL_LIB_VIRTEX::xil_gen_div { \
+if {[info proc ::AESL_LIB_VIRTEX::xil_gen_pipemux] == "::AESL_LIB_VIRTEX::xil_gen_pipemux"} {
+eval "::AESL_LIB_VIRTEX::xil_gen_pipemux { \
     id ${id} \
     name ${name} \
     corename ${corename} \
@@ -77,9 +323,180 @@ eval "::AESL_LIB_VIRTEX::xil_gen_div { \
     clk_signed ${clk_signed} \
     reset_width ${reset_width} \
     reset_signed ${reset_signed} \
-    start_width ${start_width} \
-    start_signed ${start_signed} \
-    done_width ${done_width} \
+    din0_width ${din0_width} \
+    din0_signed ${din0_signed} \
+    din1_width ${din1_width} \
+    din1_signed ${din1_signed} \
+    din2_width ${din2_width} \
+    din2_signed ${din2_signed} \
+    din3_width ${din3_width} \
+    din3_signed ${din3_signed} \
+    din4_width ${din4_width} \
+    din4_signed ${din4_signed} \
+    din5_width ${din5_width} \
+    din5_signed ${din5_signed} \
+    din6_width ${din6_width} \
+    din6_signed ${din6_signed} \
+    din7_width ${din7_width} \
+    din7_signed ${din7_signed} \
+    din8_width ${din8_width} \
+    din8_signed ${din8_signed} \
+    din9_width ${din9_width} \
+    din9_signed ${din9_signed} \
+    din10_width ${din10_width} \
+    din10_signed ${din10_signed} \
+    din11_width ${din11_width} \
+    din11_signed ${din11_signed} \
+    din12_width ${din12_width} \
+    din12_signed ${din12_signed} \
+    din13_width ${din13_width} \
+    din13_signed ${din13_signed} \
+    din14_width ${din14_width} \
+    din14_signed ${din14_signed} \
+    din15_width ${din15_width} \
+    din15_signed ${din15_signed} \
+    din16_width ${din16_width} \
+    din16_signed ${din16_signed} \
+    din17_width ${din17_width} \
+    din17_signed ${din17_signed} \
+    din18_width ${din18_width} \
+    din18_signed ${din18_signed} \
+    din19_width ${din19_width} \
+    din19_signed ${din19_signed} \
+    din20_width ${din20_width} \
+    din20_signed ${din20_signed} \
+    din21_width ${din21_width} \
+    din21_signed ${din21_signed} \
+    din22_width ${din22_width} \
+    din22_signed ${din22_signed} \
+    din23_width ${din23_width} \
+    din23_signed ${din23_signed} \
+    din24_width ${din24_width} \
+    din24_signed ${din24_signed} \
+    din25_width ${din25_width} \
+    din25_signed ${din25_signed} \
+    din26_width ${din26_width} \
+    din26_signed ${din26_signed} \
+    din27_width ${din27_width} \
+    din27_signed ${din27_signed} \
+    din28_width ${din28_width} \
+    din28_signed ${din28_signed} \
+    din29_width ${din29_width} \
+    din29_signed ${din29_signed} \
+    din30_width ${din30_width} \
+    din30_signed ${din30_signed} \
+    din31_width ${din31_width} \
+    din31_signed ${din31_signed} \
+    din32_width ${din32_width} \
+    din32_signed ${din32_signed} \
+    din33_width ${din33_width} \
+    din33_signed ${din33_signed} \
+    din34_width ${din34_width} \
+    din34_signed ${din34_signed} \
+    din35_width ${din35_width} \
+    din35_signed ${din35_signed} \
+    din36_width ${din36_width} \
+    din36_signed ${din36_signed} \
+    din37_width ${din37_width} \
+    din37_signed ${din37_signed} \
+    din38_width ${din38_width} \
+    din38_signed ${din38_signed} \
+    din39_width ${din39_width} \
+    din39_signed ${din39_signed} \
+    din40_width ${din40_width} \
+    din40_signed ${din40_signed} \
+    din41_width ${din41_width} \
+    din41_signed ${din41_signed} \
+    din42_width ${din42_width} \
+    din42_signed ${din42_signed} \
+    din43_width ${din43_width} \
+    din43_signed ${din43_signed} \
+    din44_width ${din44_width} \
+    din44_signed ${din44_signed} \
+    din45_width ${din45_width} \
+    din45_signed ${din45_signed} \
+    din46_width ${din46_width} \
+    din46_signed ${din46_signed} \
+    din47_width ${din47_width} \
+    din47_signed ${din47_signed} \
+    din48_width ${din48_width} \
+    din48_signed ${din48_signed} \
+    din49_width ${din49_width} \
+    din49_signed ${din49_signed} \
+    din50_width ${din50_width} \
+    din50_signed ${din50_signed} \
+    din51_width ${din51_width} \
+    din51_signed ${din51_signed} \
+    din52_width ${din52_width} \
+    din52_signed ${din52_signed} \
+    din53_width ${din53_width} \
+    din53_signed ${din53_signed} \
+    din54_width ${din54_width} \
+    din54_signed ${din54_signed} \
+    din55_width ${din55_width} \
+    din55_signed ${din55_signed} \
+    din56_width ${din56_width} \
+    din56_signed ${din56_signed} \
+    din57_width ${din57_width} \
+    din57_signed ${din57_signed} \
+    din58_width ${din58_width} \
+    din58_signed ${din58_signed} \
+    din59_width ${din59_width} \
+    din59_signed ${din59_signed} \
+    din60_width ${din60_width} \
+    din60_signed ${din60_signed} \
+    din61_width ${din61_width} \
+    din61_signed ${din61_signed} \
+    din62_width ${din62_width} \
+    din62_signed ${din62_signed} \
+    din63_width ${din63_width} \
+    din63_signed ${din63_signed} \
+    din64_width ${din64_width} \
+    din64_signed ${din64_signed} \
+    ce_width ${ce_width} \
+    ce_signed ${ce_signed} \
+    dout_width ${dout_width} \
+}"
+} else {
+puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_pipemux, check your platform lib"
+}
+}
+
+
+set id 103
+set name network_add_22s_22ns_22_2_1
+set corename simcore_add
+set op add
+set stage_num 2
+set max_latency -1
+set registered_input 1
+set clk_width 1
+set clk_signed 0
+set reset_width 1
+set reset_signed 0
+set in0_width 22
+set in0_signed 1
+set in1_width 22
+set in1_signed 0
+set ce_width 1
+set ce_signed 0
+set out_width 22
+if {${::AESL::PGuard_simmodel_gen}} {
+if {[info proc ap_gen_simcore_add] == "ap_gen_simcore_add"} {
+eval "ap_gen_simcore_add { \
+    id ${id} \
+    name ${name} \
+    corename ${corename} \
+    op ${op} \
+    reset_level 1 \
+    sync_rst true \
+    stage_num ${stage_num} \
+    max_latency ${max_latency} \
+    registered_input ${registered_input} \
+    clk_width ${clk_width} \
+    clk_signed ${clk_signed} \
+    reset_width ${reset_width} \
+    reset_signed ${reset_signed} \
     in0_width ${in0_width} \
     in0_signed ${in0_signed} \
     in1_width ${in1_width} \
@@ -89,13 +506,132 @@ eval "::AESL_LIB_VIRTEX::xil_gen_div { \
     out_width ${out_width} \
 }"
 } else {
-puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_div, check your platform lib"
+puts "@W \[IMPL-100\] Cannot find ap_gen_simcore_add, check your AutoPilot builtin lib"
+}
+}
+
+
+if {${::AESL::PGuard_rtl_comp_handler}} {
+	::AP::rtl_comp_handler ${name}
+}
+
+
+set op add
+set corename AddSubnS
+if {${::AESL::PGuard_autocg_gen} && ${::AESL::PGuard_autocg_ipmgen}} {
+if {[info proc ::AESL_LIB_VIRTEX::xil_gen_pipeaddsub] == "::AESL_LIB_VIRTEX::xil_gen_pipeaddsub"} {
+eval "::AESL_LIB_VIRTEX::xil_gen_pipeaddsub { \
+    id ${id} \
+    name ${name} \
+    corename ${corename} \
+    op ${op} \
+    reset_level 1 \
+    sync_rst true \
+    stage_num ${stage_num} \
+    max_latency ${max_latency} \
+    registered_input ${registered_input} \
+    clk_width ${clk_width} \
+    clk_signed ${clk_signed} \
+    reset_width ${reset_width} \
+    reset_signed ${reset_signed} \
+    in0_width ${in0_width} \
+    in0_signed ${in0_signed} \
+    in1_width ${in1_width} \
+    in1_signed ${in1_signed} \
+    ce_width ${ce_width} \
+    ce_signed ${ce_signed} \
+    out_width ${out_width} \
+}"
+} else {
+puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_pipeaddsub, check your platform lib"
+}
+}
+
+
+set id 104
+set name network_mac_muladd_4ns_7ns_7s_10_1_1
+set corename simcore_mac
+set op mac
+set stage_num 1
+set max_latency -1
+set registered_input 1
+set in0_width 4
+set in0_signed 0
+set in1_width 7
+set in1_signed 0
+set in2_width 7
+set in2_signed 1
+set out_width 10
+set exp i0*i1+i2
+set arg_lists {i0 {4 0 +} i1 {7 0 +} m {10 0 +} i2 {7 1 +} p {10 1 +} c_reg {1} rnd {0} acc {0} }
+set TrueReset 0
+if {${::AESL::PGuard_simmodel_gen}} {
+if {[info proc ap_gen_simcore_mac] == "ap_gen_simcore_mac"} {
+eval "ap_gen_simcore_mac { \
+    id ${id} \
+    name ${name} \
+    corename ${corename} \
+    op ${op} \
+    reset_level 1 \
+    sync_rst true \
+    true_reset ${TrueReset} \
+    stage_num ${stage_num} \
+    max_latency ${max_latency} \
+    registered_input ${registered_input} \
+    in0_width ${in0_width} \
+    in0_signed ${in0_signed} \
+    in1_width ${in1_width} \
+    in1_signed ${in1_signed} \
+    in2_width ${in2_width} \
+    in2_signed ${in2_signed} \
+    out_width ${out_width} \
+    exp ${exp} \
+    arg_lists {${arg_lists}} \
+}"
+} else {
+puts "@W \[IMPL-100\] Cannot find ap_gen_simcore_mac, check your AutoPilot builtin lib"
+}
+}
+
+
+if {${::AESL::PGuard_rtl_comp_handler}} {
+	::AP::rtl_comp_handler ${name}
+}
+
+
+set op mac
+set corename DSP48
+if {${::AESL::PGuard_autocg_gen} && ${::AESL::PGuard_autocg_ipmgen}} {
+if {[info proc ::AESL_LIB_VIRTEX::xil_gen_dsp48] == "::AESL_LIB_VIRTEX::xil_gen_dsp48"} {
+eval "::AESL_LIB_VIRTEX::xil_gen_dsp48 { \
+    id ${id} \
+    name ${name} \
+    corename ${corename} \
+    op ${op} \
+    reset_level 1 \
+    sync_rst true \
+    true_reset ${TrueReset} \
+    stage_num ${stage_num} \
+    max_latency ${max_latency} \
+    registered_input ${registered_input} \
+    in0_width ${in0_width} \
+    in0_signed ${in0_signed} \
+    in1_width ${in1_width} \
+    in1_signed ${in1_signed} \
+    in2_width ${in2_width} \
+    in2_signed ${in2_signed} \
+    out_width ${out_width} \
+    exp ${exp} \
+    arg_lists {${arg_lists}} \
+}"
+} else {
+puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_dsp48, check your platform lib"
 }
 }
 
 
 # Memory (RAM/ROM)  definition:
-set ID 1047
+set ID 109
 set hasByteEnable 0
 set MemName pointwise_conv2d_fix_2_SeparableConv2D_2_b_s
 set CoreName ap_simcore_mem
@@ -110,8 +646,8 @@ set HasInitializer 1
 set Initializer $ROMData
 set NumOfStage 2
 set MaxLatency -1
-set DelayBudget 3.254
-set ClkPeriod 20
+set DelayBudget 1.682
+set ClkPeriod 6.667
 set RegisteredInput 0
 if {${::AESL::PGuard_simmodel_gen}} {
 if {[info proc ap_gen_simcore_mem] == "ap_gen_simcore_mem"} {
@@ -161,89 +697,6 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_ROM] == "::AESL_LIB_VIRTEX::xil_gen_RO
     stage_num ${NumOfStage}  \
     registered_input ${RegisteredInput} \
     port_num 1 \
-    port_list \{${PortList}\} \
-    data_wd ${DataWd} \
-    addr_wd ${AddrWd} \
-    addr_range ${AddrRange} \
-    true_reset ${TrueReset} \
-    delay_budget ${DelayBudget} \
-    clk_period ${ClkPeriod} \
-    HasInitializer ${HasInitializer} \
-    rom_data \{${ROMData}\} \
- } "
-  } else {
-    puts "@W \[IMPL-104\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_ROM, check your platform lib"
-  }
-}
-
-
-# Memory (RAM/ROM)  definition:
-set ID 1048
-set hasByteEnable 0
-set MemName pointwise_conv2d_fix_2_SeparableConv2D_2_w_s
-set CoreName ap_simcore_mem
-set PortList { 1 1 }
-set DataWd 15
-set AddrRange 64
-set AddrWd 6
-set TrueReset 0
-set IsROM 1
-set ROMData { "010101010010010" "001100011011001" "111001001000000" "000110111110101" "110000110101011" "111111101100111" "010011100111011" "001101101000000" "000001000111101" "110001111101100" "001100011001100" "101101101100000" "101110000011010" "110101011011011" "111110010010100" "111111111011000" "101111101111100" "000100000110001" "101101011110001" "110011000010101" "000001001011111" "110000001101111" "001111010111011" "110101010100110" "010110100011011" "010000011011101" "111100100111001" "010000100100101" "000101001101001" "000110101011111" "111110001101110" "001000111010000" "110100001100000" "001101101110100" "110100101000110" "010010010111101" "001100110111010" "001001101010000" "001110101110100" "010000110110101" "001100110100100" "101011010000100" "111100100001001" "001011100001011" "101111110101100" "010111101110101" "000101101000011" "110110110001000" "010010110011100" "001111110011101" "000001011011101" "010001101010111" "110111101001110" "111101100110111" "110011000011001" "111000101110010" "000011010111000" "000100001100111" "111100001110110" "001001111011001" "111111001100111" "110100011111100" "111000000111011" "000011110100100" }
-set HasInitializer 1
-set Initializer $ROMData
-set NumOfStage 2
-set MaxLatency -1
-set DelayBudget 3.254
-set ClkPeriod 20
-set RegisteredInput 0
-if {${::AESL::PGuard_simmodel_gen}} {
-if {[info proc ap_gen_simcore_mem] == "ap_gen_simcore_mem"} {
-    eval "ap_gen_simcore_mem { \
-    id ${ID} \
-    name ${MemName} \
-    corename ${CoreName}  \
-    op mem \
-    hasByteEnable ${hasByteEnable} \
-    reset_level 1 \
-    sync_rst true \
-    stage_num ${NumOfStage}  \
-    registered_input ${RegisteredInput} \
-    port_num 2 \
-    port_list \{${PortList}\} \
-    data_wd ${DataWd} \
-    addr_wd ${AddrWd} \
-    addr_range ${AddrRange} \
-    true_reset ${TrueReset} \
-    delay_budget ${DelayBudget} \
-    clk_period ${ClkPeriod} \
-    HasInitializer ${HasInitializer} \
-    rom_data \{${ROMData}\} \
- } "
-} else {
-    puts "@W \[IMPL-102\] Cannot find ap_gen_simcore_mem, check your platform lib"
-}
-}
-
-
-if {${::AESL::PGuard_rtl_comp_handler}} {
-  ::AP::rtl_comp_handler $MemName
-}
-
-
-set CoreName ROM_nP
-if {${::AESL::PGuard_autocg_gen} && ${::AESL::PGuard_autocg_ipmgen}} {
-if {[info proc ::AESL_LIB_VIRTEX::xil_gen_ROM] == "::AESL_LIB_VIRTEX::xil_gen_ROM"} {
-    eval "::AESL_LIB_VIRTEX::xil_gen_ROM { \
-    id ${ID} \
-    name ${MemName} \
-    corename ${CoreName}  \
-    op mem \
-    hasByteEnable ${hasByteEnable} \
-    reset_level 1 \
-    sync_rst true \
-    stage_num ${NumOfStage}  \
-    registered_input ${RegisteredInput} \
-    port_num 2 \
     port_list \{${PortList}\} \
     data_wd ${DataWd} \
     addr_wd ${AddrWd} \
@@ -271,17 +724,17 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 1049 \
-    name input_0 \
+    id 110 \
+    name input_r \
     reset_level 1 \
     sync_rst true \
     dir I \
-    corename input_0 \
+    corename input_r \
     op interface \
-    ports { input_0_address0 { O 10 vector } input_0_ce0 { O 1 bit } input_0_q0 { I 16 vector } input_0_address1 { O 10 vector } input_0_ce1 { O 1 bit } input_0_q1 { I 16 vector } } \
+    ports { input_r_address0 { O 14 vector } input_r_ce0 { O 1 bit } input_r_q0 { I 16 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'input_0'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'input_r'"
 }
 }
 
@@ -290,359 +743,17 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 1050 \
-    name input_1 \
-    reset_level 1 \
-    sync_rst true \
-    dir I \
-    corename input_1 \
-    op interface \
-    ports { input_1_address0 { O 10 vector } input_1_ce0 { O 1 bit } input_1_q0 { I 16 vector } input_1_address1 { O 10 vector } input_1_ce1 { O 1 bit } input_1_q1 { I 16 vector } } \
-} "
-} else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'input_1'"
-}
-}
-
-
-# XIL_BRAM:
-if {${::AESL::PGuard_autoexp_gen}} {
-if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
-eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 1051 \
-    name input_2 \
-    reset_level 1 \
-    sync_rst true \
-    dir I \
-    corename input_2 \
-    op interface \
-    ports { input_2_address0 { O 10 vector } input_2_ce0 { O 1 bit } input_2_q0 { I 16 vector } input_2_address1 { O 10 vector } input_2_ce1 { O 1 bit } input_2_q1 { I 16 vector } } \
-} "
-} else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'input_2'"
-}
-}
-
-
-# XIL_BRAM:
-if {${::AESL::PGuard_autoexp_gen}} {
-if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
-eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 1052 \
-    name input_3 \
-    reset_level 1 \
-    sync_rst true \
-    dir I \
-    corename input_3 \
-    op interface \
-    ports { input_3_address0 { O 10 vector } input_3_ce0 { O 1 bit } input_3_q0 { I 16 vector } input_3_address1 { O 10 vector } input_3_ce1 { O 1 bit } input_3_q1 { I 16 vector } } \
-} "
-} else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'input_3'"
-}
-}
-
-
-# XIL_BRAM:
-if {${::AESL::PGuard_autoexp_gen}} {
-if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
-eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 1053 \
-    name input_4 \
-    reset_level 1 \
-    sync_rst true \
-    dir I \
-    corename input_4 \
-    op interface \
-    ports { input_4_address0 { O 10 vector } input_4_ce0 { O 1 bit } input_4_q0 { I 16 vector } input_4_address1 { O 10 vector } input_4_ce1 { O 1 bit } input_4_q1 { I 16 vector } } \
-} "
-} else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'input_4'"
-}
-}
-
-
-# XIL_BRAM:
-if {${::AESL::PGuard_autoexp_gen}} {
-if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
-eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 1054 \
-    name input_5 \
-    reset_level 1 \
-    sync_rst true \
-    dir I \
-    corename input_5 \
-    op interface \
-    ports { input_5_address0 { O 10 vector } input_5_ce0 { O 1 bit } input_5_q0 { I 16 vector } input_5_address1 { O 10 vector } input_5_ce1 { O 1 bit } input_5_q1 { I 16 vector } } \
-} "
-} else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'input_5'"
-}
-}
-
-
-# XIL_BRAM:
-if {${::AESL::PGuard_autoexp_gen}} {
-if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
-eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 1055 \
-    name input_6 \
-    reset_level 1 \
-    sync_rst true \
-    dir I \
-    corename input_6 \
-    op interface \
-    ports { input_6_address0 { O 10 vector } input_6_ce0 { O 1 bit } input_6_q0 { I 16 vector } input_6_address1 { O 10 vector } input_6_ce1 { O 1 bit } input_6_q1 { I 16 vector } } \
-} "
-} else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'input_6'"
-}
-}
-
-
-# XIL_BRAM:
-if {${::AESL::PGuard_autoexp_gen}} {
-if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
-eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 1056 \
-    name input_7 \
-    reset_level 1 \
-    sync_rst true \
-    dir I \
-    corename input_7 \
-    op interface \
-    ports { input_7_address0 { O 10 vector } input_7_ce0 { O 1 bit } input_7_q0 { I 16 vector } input_7_address1 { O 10 vector } input_7_ce1 { O 1 bit } input_7_q1 { I 16 vector } } \
-} "
-} else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'input_7'"
-}
-}
-
-
-# XIL_BRAM:
-if {${::AESL::PGuard_autoexp_gen}} {
-if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
-eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 1057 \
-    name input_8 \
-    reset_level 1 \
-    sync_rst true \
-    dir I \
-    corename input_8 \
-    op interface \
-    ports { input_8_address0 { O 10 vector } input_8_ce0 { O 1 bit } input_8_q0 { I 16 vector } input_8_address1 { O 10 vector } input_8_ce1 { O 1 bit } input_8_q1 { I 16 vector } } \
-} "
-} else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'input_8'"
-}
-}
-
-
-# XIL_BRAM:
-if {${::AESL::PGuard_autoexp_gen}} {
-if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
-eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 1058 \
-    name input_9 \
-    reset_level 1 \
-    sync_rst true \
-    dir I \
-    corename input_9 \
-    op interface \
-    ports { input_9_address0 { O 10 vector } input_9_ce0 { O 1 bit } input_9_q0 { I 16 vector } input_9_address1 { O 10 vector } input_9_ce1 { O 1 bit } input_9_q1 { I 16 vector } } \
-} "
-} else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'input_9'"
-}
-}
-
-
-# XIL_BRAM:
-if {${::AESL::PGuard_autoexp_gen}} {
-if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
-eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 1059 \
-    name input_10 \
-    reset_level 1 \
-    sync_rst true \
-    dir I \
-    corename input_10 \
-    op interface \
-    ports { input_10_address0 { O 10 vector } input_10_ce0 { O 1 bit } input_10_q0 { I 16 vector } input_10_address1 { O 10 vector } input_10_ce1 { O 1 bit } input_10_q1 { I 16 vector } } \
-} "
-} else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'input_10'"
-}
-}
-
-
-# XIL_BRAM:
-if {${::AESL::PGuard_autoexp_gen}} {
-if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
-eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 1060 \
-    name input_11 \
-    reset_level 1 \
-    sync_rst true \
-    dir I \
-    corename input_11 \
-    op interface \
-    ports { input_11_address0 { O 10 vector } input_11_ce0 { O 1 bit } input_11_q0 { I 16 vector } input_11_address1 { O 10 vector } input_11_ce1 { O 1 bit } input_11_q1 { I 16 vector } } \
-} "
-} else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'input_11'"
-}
-}
-
-
-# XIL_BRAM:
-if {${::AESL::PGuard_autoexp_gen}} {
-if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
-eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 1061 \
-    name input_12 \
-    reset_level 1 \
-    sync_rst true \
-    dir I \
-    corename input_12 \
-    op interface \
-    ports { input_12_address0 { O 10 vector } input_12_ce0 { O 1 bit } input_12_q0 { I 16 vector } input_12_address1 { O 10 vector } input_12_ce1 { O 1 bit } input_12_q1 { I 16 vector } } \
-} "
-} else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'input_12'"
-}
-}
-
-
-# XIL_BRAM:
-if {${::AESL::PGuard_autoexp_gen}} {
-if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
-eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 1062 \
-    name input_13 \
-    reset_level 1 \
-    sync_rst true \
-    dir I \
-    corename input_13 \
-    op interface \
-    ports { input_13_address0 { O 10 vector } input_13_ce0 { O 1 bit } input_13_q0 { I 16 vector } input_13_address1 { O 10 vector } input_13_ce1 { O 1 bit } input_13_q1 { I 16 vector } } \
-} "
-} else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'input_13'"
-}
-}
-
-
-# XIL_BRAM:
-if {${::AESL::PGuard_autoexp_gen}} {
-if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
-eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 1063 \
-    name input_14 \
-    reset_level 1 \
-    sync_rst true \
-    dir I \
-    corename input_14 \
-    op interface \
-    ports { input_14_address0 { O 10 vector } input_14_ce0 { O 1 bit } input_14_q0 { I 16 vector } input_14_address1 { O 10 vector } input_14_ce1 { O 1 bit } input_14_q1 { I 16 vector } } \
-} "
-} else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'input_14'"
-}
-}
-
-
-# XIL_BRAM:
-if {${::AESL::PGuard_autoexp_gen}} {
-if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
-eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 1064 \
-    name input_15 \
-    reset_level 1 \
-    sync_rst true \
-    dir I \
-    corename input_15 \
-    op interface \
-    ports { input_15_address0 { O 10 vector } input_15_ce0 { O 1 bit } input_15_q0 { I 16 vector } input_15_address1 { O 10 vector } input_15_ce1 { O 1 bit } input_15_q1 { I 16 vector } } \
-} "
-} else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'input_15'"
-}
-}
-
-
-# XIL_BRAM:
-if {${::AESL::PGuard_autoexp_gen}} {
-if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
-eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 1065 \
-    name output_0 \
+    id 111 \
+    name output_r \
     reset_level 1 \
     sync_rst true \
     dir O \
-    corename output_0 \
+    corename output_r \
     op interface \
-    ports { output_0_address0 { O 10 vector } output_0_ce0 { O 1 bit } output_0_we0 { O 1 bit } output_0_d0 { O 16 vector } } \
+    ports { output_r_address0 { O 14 vector } output_r_ce0 { O 1 bit } output_r_we0 { O 1 bit } output_r_d0 { O 16 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'output_0'"
-}
-}
-
-
-# XIL_BRAM:
-if {${::AESL::PGuard_autoexp_gen}} {
-if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
-eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 1066 \
-    name output_1 \
-    reset_level 1 \
-    sync_rst true \
-    dir O \
-    corename output_1 \
-    op interface \
-    ports { output_1_address0 { O 10 vector } output_1_ce0 { O 1 bit } output_1_we0 { O 1 bit } output_1_d0 { O 16 vector } } \
-} "
-} else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'output_1'"
-}
-}
-
-
-# XIL_BRAM:
-if {${::AESL::PGuard_autoexp_gen}} {
-if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
-eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 1067 \
-    name output_2 \
-    reset_level 1 \
-    sync_rst true \
-    dir O \
-    corename output_2 \
-    op interface \
-    ports { output_2_address0 { O 10 vector } output_2_ce0 { O 1 bit } output_2_we0 { O 1 bit } output_2_d0 { O 16 vector } } \
-} "
-} else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'output_2'"
-}
-}
-
-
-# XIL_BRAM:
-if {${::AESL::PGuard_autoexp_gen}} {
-if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
-eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 1068 \
-    name output_15 \
-    reset_level 1 \
-    sync_rst true \
-    dir O \
-    corename output_15 \
-    op interface \
-    ports { output_15_address0 { O 10 vector } output_15_ce0 { O 1 bit } output_15_we0 { O 1 bit } output_15_d0 { O 16 vector } } \
-} "
-} else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'output_15'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'output_r'"
 }
 }
 

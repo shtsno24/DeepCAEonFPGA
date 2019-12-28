@@ -45,7 +45,7 @@ all: a.out
 a.out: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: GCC C++ Linker'
-	g++ -L/tools/Xilinx/Vivado/2018.3/lnx64/tools/systemc/lib -o "a.out" $(OBJS) $(USER_OBJS) $(LIBS)
+	g++ -L/tools/Xilinx/Vivado/2019.1/lnx64/tools/systemc/lib -o "a.out" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 

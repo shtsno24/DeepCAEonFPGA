@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'padding2d_fix16'" level="0">
-<item name = "Date">Fri Dec 27 22:22:58 2019
+<item name = "Date">Sat Dec 28 18:43:54 2019
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">HLS</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">20.00, 10.911, 1.25</column>
+<column name="ap_clk">6.67, 3.903, 6.00</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">?, ?, ?, ?, none</column>
+<column name="">141, 17637, 141, 17637, none</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,41 +35,12 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- Loop 1">?, ?, ?, -, -, ?, no</column>
-<column name=" + Loop 1.1">78, 1278087, 78, -, -, 1 ~ 16385, no</column>
-<column name=" + Loop 1.2">?, ?, ?, -, -, ?, no</column>
-<column name="  ++ Loop 1.2.1">?, ?, 142, -, -, ?, no</column>
-<column name="  ++ Loop 1.2.2">42, 42, 21, -, -, 2, no</column>
-<column name="  ++ Loop 1.2.3">?, ?, 142, -, -, ?, no</column>
-<column name="  ++ Loop 1.2.4">42, 42, 21, -, -, 2, no</column>
-<column name="  ++ Loop 1.2.5">?, ?, 142, -, -, ?, no</column>
-<column name="  ++ Loop 1.2.6">42, 42, 21, -, -, 2, no</column>
-<column name="  ++ Loop 1.2.7">?, ?, 142, -, -, ?, no</column>
-<column name="  ++ Loop 1.2.8">42, 42, 21, -, -, 2, no</column>
-<column name="  ++ Loop 1.2.9">?, ?, 142, -, -, ?, no</column>
-<column name="  ++ Loop 1.2.10">42, 42, 21, -, -, 2, no</column>
-<column name="  ++ Loop 1.2.11">?, ?, 142, -, -, ?, no</column>
-<column name="  ++ Loop 1.2.12">42, 42, 21, -, -, 2, no</column>
-<column name="  ++ Loop 1.2.13">?, ?, 148, -, -, ?, no</column>
-<column name="  ++ Loop 1.2.14">42, 42, 21, -, -, 2, no</column>
-<column name=" + Loop 1.3">78, 1278009, 78, -, -, 1 ~ 16384, no</column>
-<column name=" + Loop 1.4">78, 1278087, 78, -, -, 1 ~ 16385, no</column>
-<column name=" + Loop 1.5">?, ?, ?, -, -, ?, no</column>
-<column name="  ++ Loop 1.5.1">?, ?, 142, -, -, ?, no</column>
-<column name="  ++ Loop 1.5.2">42, 42, 21, -, -, 2, no</column>
-<column name="  ++ Loop 1.5.3">?, ?, 142, -, -, ?, no</column>
-<column name="  ++ Loop 1.5.4">42, 42, 21, -, -, 2, no</column>
-<column name="  ++ Loop 1.5.5">?, ?, 142, -, -, ?, no</column>
-<column name="  ++ Loop 1.5.6">42, 42, 21, -, -, 2, no</column>
-<column name="  ++ Loop 1.5.7">?, ?, 142, -, -, ?, no</column>
-<column name="  ++ Loop 1.5.8">42, 42, 21, -, -, 2, no</column>
-<column name="  ++ Loop 1.5.9">?, ?, 142, -, -, ?, no</column>
-<column name="  ++ Loop 1.5.10">42, 42, 21, -, -, 2, no</column>
-<column name="  ++ Loop 1.5.11">?, ?, 142, -, -, ?, no</column>
-<column name="  ++ Loop 1.5.12">42, 42, 21, -, -, 2, no</column>
-<column name="  ++ Loop 1.5.13">?, ?, 141, -, -, ?, no</column>
-<column name="  ++ Loop 1.5.14">40, 40, 20, -, -, 2, no</column>
-<column name=" + Loop 1.6">81, 1327164, 81, -, -, 1 ~ 16384, no</column>
+<column name="- Loop 1">136, 17632, 136 ~ 1102, -, -, 1 ~ 16, no</column>
+<column name=" + Loop 1.1">10, 31, 1, 1, 1, 10 ~ 31, yes</column>
+<column name=" + Loop 1.2">112, 1036, 16 ~ 37, -, -, 7 ~ 28, no</column>
+<column name="  ++ Loop 1.2.1">9, 30, 4, 1, 1, 7 ~ 28, yes</column>
+<column name="  ++ Loop 1.2.2">2, 2, 1, 1, 1, 2, yes</column>
+<column name=" + Loop 1.3">8, 29, 1, 1, 1, 8 ~ 29, yes</column>
 </table>
 </item>
 </section>
