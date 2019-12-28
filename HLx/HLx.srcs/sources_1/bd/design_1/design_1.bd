@@ -21,10 +21,7 @@
         "m00_couplers": {},
         "m01_couplers": {}
       },
-      "network_0": "",
-      "axis_clock_converter_0": "",
-      "axis_clock_converter_1": "",
-      "rst_ps7_0_200M": ""
+      "network_0": ""
     },
     "interface_ports": {
       "DDR": {
@@ -119,10 +116,10 @@
             "value": "10.000000"
           },
           "PCW_ACT_FPGA0_PERIPHERAL_FREQMHZ": {
-            "value": "142.857132"
+            "value": "100.000000"
           },
           "PCW_ACT_FPGA1_PERIPHERAL_FREQMHZ": {
-            "value": "100.000000"
+            "value": "10.000000"
           },
           "PCW_ACT_FPGA2_PERIPHERAL_FREQMHZ": {
             "value": "10.000000"
@@ -209,10 +206,10 @@
             "value": "0"
           },
           "PCW_CLK0_FREQ": {
-            "value": "142857132"
+            "value": "100000000"
           },
           "PCW_CLK1_FREQ": {
-            "value": "100000000"
+            "value": "10000000"
           },
           "PCW_CLK2_FREQ": {
             "value": "10000000"
@@ -311,7 +308,7 @@
             "value": "1"
           },
           "PCW_EN_CLK1_PORT": {
-            "value": "1"
+            "value": "0"
           },
           "PCW_EN_CLK2_PORT": {
             "value": "0"
@@ -508,11 +505,8 @@
           "PCW_FCLK_CLK0_BUF": {
             "value": "TRUE"
           },
-          "PCW_FCLK_CLK1_BUF": {
-            "value": "TRUE"
-          },
           "PCW_FPGA0_PERIPHERAL_FREQMHZ": {
-            "value": "150"
+            "value": "100"
           },
           "PCW_FPGA1_PERIPHERAL_FREQMHZ": {
             "value": "100"
@@ -524,9 +518,6 @@
             "value": "50"
           },
           "PCW_FPGA_FCLK0_ENABLE": {
-            "value": "1"
-          },
-          "PCW_FPGA_FCLK1_ENABLE": {
             "value": "1"
           },
           "PCW_GPIO_BASEADDR": {
@@ -1964,16 +1955,16 @@
               }
             },
             "interface_nets": {
-              "s00_couplers_to_auto_pc": {
-                "interface_ports": [
-                  "S_AXI",
-                  "auto_pc/S_AXI"
-                ]
-              },
               "auto_pc_to_s00_couplers": {
                 "interface_ports": [
                   "M_AXI",
                   "auto_pc/M_AXI"
+                ]
+              },
+              "s00_couplers_to_auto_pc": {
+                "interface_ports": [
+                  "S_AXI",
+                  "auto_pc/S_AXI"
                 ]
               }
             },
@@ -2114,16 +2105,16 @@
               "m00_couplers/S_AXI"
             ]
           },
-          "xbar_to_m01_couplers": {
-            "interface_ports": [
-              "xbar/M01_AXI",
-              "m01_couplers/S_AXI"
-            ]
-          },
           "m00_couplers_to_ps7_0_axi_periph": {
             "interface_ports": [
               "M00_AXI",
               "m00_couplers/M_AXI"
+            ]
+          },
+          "xbar_to_m01_couplers": {
+            "interface_ports": [
+              "xbar/M01_AXI",
+              "m01_couplers/S_AXI"
             ]
           },
           "s00_couplers_to_xbar": {
@@ -2169,18 +2160,6 @@
       "network_0": {
         "vlnv": "xilinx.com:hls:network:1.0",
         "xci_name": "design_1_network_0_0"
-      },
-      "axis_clock_converter_0": {
-        "vlnv": "xilinx.com:ip:axis_clock_converter:1.1",
-        "xci_name": "design_1_axis_clock_converter_0_0"
-      },
-      "axis_clock_converter_1": {
-        "vlnv": "xilinx.com:ip:axis_clock_converter:1.1",
-        "xci_name": "design_1_axis_clock_converter_0_1"
-      },
-      "rst_ps7_0_200M": {
-        "vlnv": "xilinx.com:ip:proc_sys_reset:5.0",
-        "xci_name": "design_1_rst_ps7_0_200M_0"
       }
     },
     "interface_nets": {
@@ -2235,25 +2214,13 @@
       "network_0_output_data": {
         "interface_ports": [
           "network_0/output_data",
-          "axis_clock_converter_1/S_AXIS"
+          "axi_dma_0/S_AXIS_S2MM"
         ]
       },
       "axi_dma_0_M_AXIS_MM2S": {
         "interface_ports": [
-          "axi_dma_0/M_AXIS_MM2S",
-          "axis_clock_converter_0/S_AXIS"
-        ]
-      },
-      "axis_clock_converter_1_M_AXIS": {
-        "interface_ports": [
-          "axis_clock_converter_1/M_AXIS",
-          "axi_dma_0/S_AXIS_S2MM"
-        ]
-      },
-      "axis_clock_converter_0_M_AXIS": {
-        "interface_ports": [
-          "axis_clock_converter_0/M_AXIS",
-          "network_0/input_data"
+          "network_0/input_data",
+          "axi_dma_0/M_AXIS_MM2S"
         ]
       }
     },
@@ -2261,8 +2228,7 @@
       "processing_system7_0_FCLK_RESET0_N": {
         "ports": [
           "processing_system7_0/FCLK_RESET0_N",
-          "rst_ps7_0_100M/ext_reset_in",
-          "rst_ps7_0_200M/ext_reset_in"
+          "rst_ps7_0_100M/ext_reset_in"
         ]
       },
       "rst_ps7_0_100M_peripheral_aresetn": {
@@ -2277,38 +2243,21 @@
           "network_0/ap_rst_n"
         ]
       },
-      "Net": {
-        "ports": [
-          "processing_system7_0/FCLK_CLK1",
-          "axis_clock_converter_0/m_axis_aclk",
-          "network_0/ap_clk",
-          "axis_clock_converter_1/s_axis_aclk",
-          "rst_ps7_0_100M/slowest_sync_clk",
-          "ps7_0_axi_periph/ACLK",
-          "ps7_0_axi_periph/S00_ACLK",
-          "ps7_0_axi_periph/M00_ACLK",
-          "ps7_0_axi_periph/M01_ACLK",
-          "processing_system7_0/M_AXI_GP0_ACLK",
-          "axi_dma_0/s_axi_lite_aclk"
-        ]
-      },
-      "rst_ps7_0_200M_peripheral_aresetn": {
-        "ports": [
-          "rst_ps7_0_200M/peripheral_aresetn",
-          "axis_clock_converter_0/s_axis_aresetn",
-          "axis_clock_converter_1/m_axis_aresetn"
-        ]
-      },
       "processing_system7_0_FCLK_CLK0": {
         "ports": [
           "processing_system7_0/FCLK_CLK0",
           "processing_system7_0/S_AXI_HP0_ACLK",
           "axi_smc/aclk",
           "axi_dma_0/m_axi_mm2s_aclk",
-          "axis_clock_converter_0/s_axis_aclk",
           "axi_dma_0/m_axi_s2mm_aclk",
-          "axis_clock_converter_1/m_axis_aclk",
-          "rst_ps7_0_200M/slowest_sync_clk"
+          "rst_ps7_0_100M/slowest_sync_clk",
+          "ps7_0_axi_periph/ACLK",
+          "ps7_0_axi_periph/S00_ACLK",
+          "ps7_0_axi_periph/M00_ACLK",
+          "ps7_0_axi_periph/M01_ACLK",
+          "processing_system7_0/M_AXI_GP0_ACLK",
+          "axi_dma_0/s_axi_lite_aclk",
+          "network_0/ap_clk"
         ]
       }
     },
