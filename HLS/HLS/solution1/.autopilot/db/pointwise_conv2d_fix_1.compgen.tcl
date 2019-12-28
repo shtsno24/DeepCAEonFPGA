@@ -1,16 +1,12 @@
 # This script segment is generated automatically by AutoPilot
 
 set id 67
-set name network_mux_1287_16_7_1
+set name network_mux_1287_16_1_1
 set corename simcore_mux
 set op mux
-set stage_num 7
+set stage_num 1
 set max_latency -1
 set registered_input 1
-set clk_width 1
-set clk_signed 0
-set reset_width 1
-set reset_signed 0
 set din0_width 16
 set din0_signed 1
 set din1_width 16
@@ -269,8 +265,6 @@ set din127_width 16
 set din127_signed 1
 set din128_width 7
 set din128_signed 0
-set ce_width 1
-set ce_signed 0
 set dout_width 16
 if {${::AESL::PGuard_simmodel_gen}} {
 if {[info proc ap_gen_simcore_mux] == "ap_gen_simcore_mux"} {
@@ -284,10 +278,6 @@ eval "ap_gen_simcore_mux { \
     stage_num ${stage_num} \
     max_latency ${max_latency} \
     registered_input ${registered_input} \
-    clk_width ${clk_width} \
-    clk_signed ${clk_signed} \
-    reset_width ${reset_width} \
-    reset_signed ${reset_signed} \
     din0_width ${din0_width} \
     din0_signed ${din0_signed} \
     din1_width ${din1_width} \
@@ -546,8 +536,6 @@ eval "ap_gen_simcore_mux { \
     din127_signed ${din127_signed} \
     din128_width ${din128_width} \
     din128_signed ${din128_signed} \
-    ce_width ${ce_width} \
-    ce_signed ${ce_signed} \
     dout_width ${dout_width} \
 }"
 } else {
@@ -575,10 +563,6 @@ eval "::AESL_LIB_VIRTEX::xil_gen_pipemux { \
     stage_num ${stage_num} \
     max_latency ${max_latency} \
     registered_input ${registered_input} \
-    clk_width ${clk_width} \
-    clk_signed ${clk_signed} \
-    reset_width ${reset_width} \
-    reset_signed ${reset_signed} \
     din0_width ${din0_width} \
     din0_signed ${din0_signed} \
     din1_width ${din1_width} \
@@ -837,8 +821,6 @@ eval "::AESL_LIB_VIRTEX::xil_gen_pipemux { \
     din127_signed ${din127_signed} \
     din128_width ${din128_width} \
     din128_signed ${din128_signed} \
-    ce_width ${ce_width} \
-    ce_signed ${ce_signed} \
     dout_width ${dout_width} \
 }"
 } else {
@@ -848,91 +830,6 @@ puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_pipemux, check your
 
 
 set id 68
-set name network_add_23s_23ns_23_2_1
-set corename simcore_add
-set op add
-set stage_num 2
-set max_latency -1
-set registered_input 1
-set clk_width 1
-set clk_signed 0
-set reset_width 1
-set reset_signed 0
-set in0_width 23
-set in0_signed 1
-set in1_width 23
-set in1_signed 0
-set ce_width 1
-set ce_signed 0
-set out_width 23
-if {${::AESL::PGuard_simmodel_gen}} {
-if {[info proc ap_gen_simcore_add] == "ap_gen_simcore_add"} {
-eval "ap_gen_simcore_add { \
-    id ${id} \
-    name ${name} \
-    corename ${corename} \
-    op ${op} \
-    reset_level 1 \
-    sync_rst true \
-    stage_num ${stage_num} \
-    max_latency ${max_latency} \
-    registered_input ${registered_input} \
-    clk_width ${clk_width} \
-    clk_signed ${clk_signed} \
-    reset_width ${reset_width} \
-    reset_signed ${reset_signed} \
-    in0_width ${in0_width} \
-    in0_signed ${in0_signed} \
-    in1_width ${in1_width} \
-    in1_signed ${in1_signed} \
-    ce_width ${ce_width} \
-    ce_signed ${ce_signed} \
-    out_width ${out_width} \
-}"
-} else {
-puts "@W \[IMPL-100\] Cannot find ap_gen_simcore_add, check your AutoPilot builtin lib"
-}
-}
-
-
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler ${name}
-}
-
-
-set op add
-set corename AddSubnS
-if {${::AESL::PGuard_autocg_gen} && ${::AESL::PGuard_autocg_ipmgen}} {
-if {[info proc ::AESL_LIB_VIRTEX::xil_gen_pipeaddsub] == "::AESL_LIB_VIRTEX::xil_gen_pipeaddsub"} {
-eval "::AESL_LIB_VIRTEX::xil_gen_pipeaddsub { \
-    id ${id} \
-    name ${name} \
-    corename ${corename} \
-    op ${op} \
-    reset_level 1 \
-    sync_rst true \
-    stage_num ${stage_num} \
-    max_latency ${max_latency} \
-    registered_input ${registered_input} \
-    clk_width ${clk_width} \
-    clk_signed ${clk_signed} \
-    reset_width ${reset_width} \
-    reset_signed ${reset_signed} \
-    in0_width ${in0_width} \
-    in0_signed ${in0_signed} \
-    in1_width ${in1_width} \
-    in1_signed ${in1_signed} \
-    ce_width ${ce_width} \
-    ce_signed ${ce_signed} \
-    out_width ${out_width} \
-}"
-} else {
-puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_pipeaddsub, check your platform lib"
-}
-}
-
-
-set id 69
 set name network_mac_muladd_5ns_9ns_9s_13_1_1
 set corename simcore_mac
 set op mac
@@ -1015,7 +912,7 @@ puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_dsp48, check your p
 
 
 # Memory (RAM/ROM)  definition:
-set ID 74
+set ID 72
 set hasByteEnable 0
 set MemName pointwise_conv2d_fix_1_SeparableConv2D_1_b_s
 set CoreName ap_simcore_mem
@@ -1030,8 +927,8 @@ set HasInitializer 1
 set Initializer $ROMData
 set NumOfStage 2
 set MaxLatency -1
-set DelayBudget 1.682
-set ClkPeriod 6.667
+set DelayBudget 3.254
+set ClkPeriod 10
 set RegisteredInput 0
 if {${::AESL::PGuard_simmodel_gen}} {
 if {[info proc ap_gen_simcore_mem] == "ap_gen_simcore_mem"} {
@@ -1108,7 +1005,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 75 \
+    id 73 \
     name input_r \
     reset_level 1 \
     sync_rst true \
@@ -1127,7 +1024,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 76 \
+    id 74 \
     name output_r \
     reset_level 1 \
     sync_rst true \

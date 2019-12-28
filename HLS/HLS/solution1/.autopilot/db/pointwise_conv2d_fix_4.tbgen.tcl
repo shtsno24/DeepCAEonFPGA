@@ -14,7 +14,7 @@ set isEnableWaveformDebug 1
 set C_modelName {pointwise_conv2d_fix.4}
 set C_modelType { void 0 }
 set C_modelArgList {
-	{ input_r int 16 regular {array 14400 { 1 3 } 2 1 }  }
+	{ input_r int 16 regular {array 14400 { 1 3 } 1 1 }  }
 	{ output_r int 16 regular {array 14400 { 0 3 } 0 1 }  }
 }
 set C_modelArgMapList {[ 
@@ -53,13 +53,13 @@ set NewPortList {[
  	{ "name": "output_r_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "output_r", "role": "d0" }}  ]}
 
 set RtlHierarchyInfo {[
-	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "3", "4"],
+	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "3"],
 		"CDFG" : "pointwise_conv2d_fix_4",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "50191", "EstimateLatencyMax" : "50191",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "12550", "EstimateLatencyMax" : "12550",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -69,22 +69,21 @@ set RtlHierarchyInfo {[
 		"Port" : [
 			{"Name" : "input_r", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "output_r", "Type" : "Memory", "Direction" : "O"}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mux_164_16_4_1_x_U134", "Parent" : "0"},
-	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_add_23ns_23s_23_2_1_U135", "Parent" : "0"},
-	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mac_muladd_11ns_5ns_11s_15_1_1_U136", "Parent" : "0"},
-	{"ID" : "4", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mul_mul_16s_16s_32_1_1_U137", "Parent" : "0"}]}
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mux_164_16_1_1_x_U129", "Parent" : "0"},
+	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mac_muladd_11ns_5ns_11s_15_1_1_U130", "Parent" : "0"},
+	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mul_mul_16s_16s_32_1_1_U131", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {
 	pointwise_conv2d_fix_4 {
-		input_r {Type I LastRead 10 FirstWrite -1}
-		output_r {Type O LastRead -1 FirstWrite 18}}}
+		input_r {Type I LastRead 3 FirstWrite -1}
+		output_r {Type O LastRead -1 FirstWrite 6}}}
 
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "50191", "Max" : "50191"}
-	, {"Name" : "Interval", "Min" : "50191", "Max" : "50191"}
+	{"Name" : "Latency", "Min" : "12550", "Max" : "12550"}
+	, {"Name" : "Interval", "Min" : "12550", "Max" : "12550"}
 ]}
 
 set PipelineEnableSignalInfo {[

@@ -43,7 +43,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_max_pooling2d_fix16_fu_563/grp_max_pooling2d_fix16_fu_563_activity": {
+				"grp_max_pooling2d_fix16_fu_533/grp_max_pooling2d_fix16_fu_533_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -53,7 +53,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_padding2d_fix16_fu_545/grp_padding2d_fix16_fu_545_activity": {
+				"grp_padding2d_fix16_fu_515/grp_padding2d_fix16_fu_515_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -63,7 +63,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_pointwise_conv2d_fix_1_fu_521/grp_pointwise_conv2d_fix_1_fu_521_activity": {
+				"grp_pointwise_conv2d_fix_1_fu_560/grp_pointwise_conv2d_fix_1_fu_560_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -73,7 +73,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_pointwise_conv2d_fix_2_fu_537/grp_pointwise_conv2d_fix_2_fu_537_activity": {
+				"grp_pointwise_conv2d_fix_2_fu_576/grp_pointwise_conv2d_fix_2_fu_576_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -83,7 +83,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_pointwise_conv2d_fix_3_fu_529/grp_pointwise_conv2d_fix_3_fu_529_activity": {
+				"grp_pointwise_conv2d_fix_3_fu_568/grp_pointwise_conv2d_fix_3_fu_568_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -93,7 +93,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_pointwise_conv2d_fix_4_fu_515/grp_pointwise_conv2d_fix_4_fu_515_activity": {
+				"grp_pointwise_conv2d_fix_4_fu_554/grp_pointwise_conv2d_fix_4_fu_554_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},

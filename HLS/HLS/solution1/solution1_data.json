@@ -202,13 +202,13 @@
   },
   "ClockInfo": {
     "ClockName": "ap_clk",
-    "ClockPeriod": "6.667",
+    "ClockPeriod": "10",
     "IsCombLogic": "0",
     "II": "x",
     "Latency": "undef",
-    "Uncertainty": "6"
+    "Uncertainty": "1.25"
   },
-  "Xdc": {"OocClocks": ["create_clock -name ap_clk -period 6.667 [get_ports ap_clk]"]},
+  "Xdc": {"OocClocks": ["create_clock -name ap_clk -period 10.000 [get_ports ap_clk]"]},
   "Ipx": {
     "Vendor": "xilinx.com",
     "Library": "hls",
@@ -235,10 +235,6 @@
       "impl\/vhdl\/depthwise_conv2d_fix_1.vhd",
       "impl\/vhdl\/depthwise_conv2d_fix_2.vhd",
       "impl\/vhdl\/max_pooling2d_fix16.vhd",
-      "impl\/vhdl\/network_add_22s_22ns_22_2_1.vhd",
-      "impl\/vhdl\/network_add_23ns_23s_23_2_1.vhd",
-      "impl\/vhdl\/network_add_23s_23ns_23_2_1.vhd",
-      "impl\/vhdl\/network_add_32s_32ns_32_2_1.vhd",
       "impl\/vhdl\/network_AXILiteS_s_axi.vhd",
       "impl\/vhdl\/network_mac_muladd_4ns_7ns_7s_10_1_1.vhd",
       "impl\/vhdl\/network_mac_muladd_4ns_9ns_9s_12_1_1.vhd",
@@ -256,13 +252,13 @@
       "impl\/vhdl\/network_mul_mul_11ns_5ns_14_1_1.vhd",
       "impl\/vhdl\/network_mul_mul_16s_16s_30_1_1.vhd",
       "impl\/vhdl\/network_mul_mul_16s_16s_32_1_1.vhd",
-      "impl\/vhdl\/network_mux_32_16_3_1.vhd",
-      "impl\/vhdl\/network_mux_32_16_3_1_x.vhd",
-      "impl\/vhdl\/network_mux_164_16_4_1.vhd",
-      "impl\/vhdl\/network_mux_164_16_4_1_x.vhd",
-      "impl\/vhdl\/network_mux_646_16_6_1.vhd",
-      "impl\/vhdl\/network_mux_1287_16_7_1.vhd",
-      "impl\/vhdl\/network_mux_1287_16_7_1_x.vhd",
+      "impl\/vhdl\/network_mux_32_16_1_1.vhd",
+      "impl\/vhdl\/network_mux_32_16_1_1_x.vhd",
+      "impl\/vhdl\/network_mux_164_16_1_1.vhd",
+      "impl\/vhdl\/network_mux_164_16_1_1_x.vhd",
+      "impl\/vhdl\/network_mux_646_16_1_1.vhd",
+      "impl\/vhdl\/network_mux_1287_16_1_1.vhd",
+      "impl\/vhdl\/network_mux_1287_16_1_1_x.vhd",
       "impl\/vhdl\/network_SeparableConv2D_1_b_1.vhd",
       "impl\/vhdl\/network_SeparableConv2D_1_w_1.vhd",
       "impl\/vhdl\/network_SeparableConv2D_1_w_2.vhd",
@@ -297,10 +293,6 @@
       "impl\/verilog\/depthwise_conv2d_fix_1.v",
       "impl\/verilog\/depthwise_conv2d_fix_2.v",
       "impl\/verilog\/max_pooling2d_fix16.v",
-      "impl\/verilog\/network_add_22s_22ns_22_2_1.v",
-      "impl\/verilog\/network_add_23ns_23s_23_2_1.v",
-      "impl\/verilog\/network_add_23s_23ns_23_2_1.v",
-      "impl\/verilog\/network_add_32s_32ns_32_2_1.v",
       "impl\/verilog\/network_AXILiteS_s_axi.v",
       "impl\/verilog\/network_mac_muladd_4ns_7ns_7s_10_1_1.v",
       "impl\/verilog\/network_mac_muladd_4ns_9ns_9s_12_1_1.v",
@@ -318,13 +310,13 @@
       "impl\/verilog\/network_mul_mul_11ns_5ns_14_1_1.v",
       "impl\/verilog\/network_mul_mul_16s_16s_30_1_1.v",
       "impl\/verilog\/network_mul_mul_16s_16s_32_1_1.v",
-      "impl\/verilog\/network_mux_32_16_3_1.v",
-      "impl\/verilog\/network_mux_32_16_3_1_x.v",
-      "impl\/verilog\/network_mux_164_16_4_1.v",
-      "impl\/verilog\/network_mux_164_16_4_1_x.v",
-      "impl\/verilog\/network_mux_646_16_6_1.v",
-      "impl\/verilog\/network_mux_1287_16_7_1.v",
-      "impl\/verilog\/network_mux_1287_16_7_1_x.v",
+      "impl\/verilog\/network_mux_32_16_1_1.v",
+      "impl\/verilog\/network_mux_32_16_1_1_x.v",
+      "impl\/verilog\/network_mux_164_16_1_1.v",
+      "impl\/verilog\/network_mux_164_16_1_1_x.v",
+      "impl\/verilog\/network_mux_646_16_1_1.v",
+      "impl\/verilog\/network_mux_1287_16_1_1.v",
+      "impl\/verilog\/network_mux_1287_16_1_1_x.v",
       "impl\/verilog\/network_SeparableConv2D_1_b_1.v",
       "impl\/verilog\/network_SeparableConv2D_1_b_1_rom.dat",
       "impl\/verilog\/network_SeparableConv2D_1_w_1.v",
@@ -918,28 +910,28 @@
           "InstanceName": "grp_depthwise_conv2d_fix_fu_509"
         },
         {
-          "ModuleName": "pointwise_conv2d_fix_4",
-          "InstanceName": "grp_pointwise_conv2d_fix_4_fu_515"
-        },
-        {
-          "ModuleName": "pointwise_conv2d_fix_1",
-          "InstanceName": "grp_pointwise_conv2d_fix_1_fu_521"
-        },
-        {
-          "ModuleName": "pointwise_conv2d_fix_3",
-          "InstanceName": "grp_pointwise_conv2d_fix_3_fu_529"
-        },
-        {
-          "ModuleName": "pointwise_conv2d_fix_2",
-          "InstanceName": "grp_pointwise_conv2d_fix_2_fu_537"
-        },
-        {
           "ModuleName": "padding2d_fix16",
-          "InstanceName": "grp_padding2d_fix16_fu_545"
+          "InstanceName": "grp_padding2d_fix16_fu_515"
         },
         {
           "ModuleName": "max_pooling2d_fix16",
-          "InstanceName": "grp_max_pooling2d_fix16_fu_563"
+          "InstanceName": "grp_max_pooling2d_fix16_fu_533"
+        },
+        {
+          "ModuleName": "pointwise_conv2d_fix_4",
+          "InstanceName": "grp_pointwise_conv2d_fix_4_fu_554"
+        },
+        {
+          "ModuleName": "pointwise_conv2d_fix_1",
+          "InstanceName": "grp_pointwise_conv2d_fix_1_fu_560"
+        },
+        {
+          "ModuleName": "pointwise_conv2d_fix_3",
+          "InstanceName": "grp_pointwise_conv2d_fix_3_fu_568"
+        },
+        {
+          "ModuleName": "pointwise_conv2d_fix_2",
+          "InstanceName": "grp_pointwise_conv2d_fix_2_fu_576"
         },
         {
           "ModuleName": "pointwise_conv2d_fix",
@@ -1040,30 +1032,30 @@
     "Metrics": {
       "padding2d_fix16": {
         "Latency": {
-          "LatencyBest": "141",
+          "LatencyBest": "124",
           "LatencyAvg": "",
-          "LatencyWorst": "17637",
-          "PipelineIIMin": "141",
-          "PipelineIIMax": "17637",
-          "PipelineII": "141 ~ 17637",
+          "LatencyWorst": "16738",
+          "PipelineIIMin": "124",
+          "PipelineIIMax": "16738",
+          "PipelineII": "124 ~ 16738",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
         "Timing": {
-          "Target": "6.67",
-          "Uncertainty": "6.00",
-          "Estimate": "3.903"
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "6.964"
         },
         "Loops": [{
             "Name": "Loop 1",
             "TripCount": "",
-            "LatencyMin": "136",
-            "LatencyMax": "17632",
-            "Latency": "136 ~ 17632",
+            "LatencyMin": "122",
+            "LatencyMax": "16736",
+            "Latency": "122 ~ 16736",
             "PipelineII": "",
-            "PipelineDepthMin": "136",
-            "PipelineDepthMax": "1102",
-            "PipelineDepth": "136 ~ 1102",
+            "PipelineDepthMin": "122",
+            "PipelineDepthMax": "1046",
+            "PipelineDepth": "122 ~ 1046",
             "Loops": [
               {
                 "Name": "Loop 1.1",
@@ -1077,22 +1069,22 @@
               {
                 "Name": "Loop 1.2",
                 "TripCount": "",
-                "LatencyMin": "112",
-                "LatencyMax": "1036",
-                "Latency": "112 ~ 1036",
+                "LatencyMin": "98",
+                "LatencyMax": "980",
+                "Latency": "98 ~ 980",
                 "PipelineII": "",
-                "PipelineDepthMin": "16",
-                "PipelineDepthMax": "37",
-                "PipelineDepth": "16 ~ 37",
+                "PipelineDepthMin": "14",
+                "PipelineDepthMax": "35",
+                "PipelineDepth": "14 ~ 35",
                 "Loops": [
                   {
                     "Name": "Loop 1.2.1",
                     "TripCount": "",
-                    "LatencyMin": "9",
-                    "LatencyMax": "30",
-                    "Latency": "9 ~ 30",
+                    "LatencyMin": "7",
+                    "LatencyMax": "28",
+                    "Latency": "7 ~ 28",
                     "PipelineII": "1",
-                    "PipelineDepth": "4"
+                    "PipelineDepth": "2"
                   },
                   {
                     "Name": "Loop 1.2.2",
@@ -1115,344 +1107,344 @@
             ]
           }],
         "Area": {
-          "BRAM_18K": "0",
           "DSP48E": "0",
-          "FF": "647",
-          "LUT": "1071",
+          "FF": "462",
+          "LUT": "995",
+          "BRAM_18K": "0",
           "URAM": "0"
         }
       },
       "depthwise_conv2d_fix": {
         "Latency": {
-          "LatencyBest": "3933",
-          "LatencyAvg": "3933",
-          "LatencyWorst": "3933",
-          "PipelineII": "3933",
+          "LatencyBest": "3926",
+          "LatencyAvg": "3926",
+          "LatencyWorst": "3926",
+          "PipelineII": "3926",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
         "Timing": {
-          "Target": "6.67",
-          "Uncertainty": "6.00",
-          "Estimate": "6.380"
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "8.153"
         },
         "Loops": [{
             "Name": "Loop 1",
             "TripCount": "784",
-            "Latency": "3931",
+            "Latency": "3924",
             "PipelineII": "5",
-            "PipelineDepth": "17"
+            "PipelineDepth": "10"
           }],
         "Area": {
-          "BRAM_18K": "0",
           "DSP48E": "9",
-          "FF": "3138",
-          "LUT": "1489",
+          "FF": "598",
+          "LUT": "1201",
+          "BRAM_18K": "0",
           "URAM": "0"
         }
       },
       "pointwise_conv2d_fix": {
         "Latency": {
-          "LatencyBest": "188161",
-          "LatencyAvg": "188161",
-          "LatencyWorst": "188161",
-          "PipelineII": "188161",
+          "LatencyBest": "87809",
+          "LatencyAvg": "87809",
+          "LatencyWorst": "87809",
+          "PipelineII": "87809",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
         "Timing": {
-          "Target": "6.67",
-          "Uncertainty": "6.00",
-          "Estimate": "6.380"
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "8.444"
         },
         "Loops": [{
             "Name": "Loop 1",
             "TripCount": "12544",
-            "Latency": "188160",
+            "Latency": "87808",
             "PipelineII": "",
-            "PipelineDepth": "15",
+            "PipelineDepth": "7",
             "Loops": [{
                 "Name": "Loop 1.1",
                 "TripCount": "1",
-                "Latency": "5",
+                "Latency": "3",
                 "PipelineII": "1",
-                "PipelineDepth": "6"
+                "PipelineDepth": "4"
               }]
           }],
         "Area": {
           "BRAM_18K": "0",
           "DSP48E": "2",
-          "FF": "935",
-          "LUT": "593",
+          "FF": "268",
+          "LUT": "517",
           "URAM": "0"
         }
       },
       "max_pooling2d_fix16": {
         "Latency": {
-          "LatencyBest": "1592",
+          "LatencyBest": "1580",
           "LatencyAvg": "",
-          "LatencyWorst": "12568",
-          "PipelineIIMin": "1592",
-          "PipelineIIMax": "12568",
-          "PipelineII": "1592 ~ 12568",
+          "LatencyWorst": "12556",
+          "PipelineIIMin": "1580",
+          "PipelineIIMax": "12556",
+          "PipelineII": "1580 ~ 12556",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
         "Timing": {
-          "Target": "6.67",
-          "Uncertainty": "6.00",
-          "Estimate": "6.380"
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "8.310"
         },
         "Loops": [{
             "Name": "Loop 1",
             "TripCount": "",
-            "LatencyMin": "1589",
-            "LatencyMax": "12565",
-            "Latency": "1589 ~ 12565",
+            "LatencyMin": "1578",
+            "LatencyMax": "12554",
+            "Latency": "1578 ~ 12554",
             "PipelineII": "4",
-            "PipelineDepth": "26"
+            "PipelineDepth": "15"
           }],
         "Area": {
           "BRAM_18K": "0",
           "DSP48E": "1",
-          "FF": "1101",
-          "LUT": "1191",
+          "FF": "911",
+          "LUT": "1196",
           "URAM": "0"
         }
       },
       "depthwise_conv2d_fix_2": {
         "Latency": {
-          "LatencyBest": "15694",
+          "LatencyBest": "15689",
           "LatencyAvg": "",
-          "LatencyWorst": "62734",
-          "PipelineIIMin": "15694",
-          "PipelineIIMax": "62734",
-          "PipelineII": "15694 ~ 62734",
+          "LatencyWorst": "62729",
+          "PipelineIIMin": "15689",
+          "PipelineIIMax": "62729",
+          "PipelineII": "15689 ~ 62729",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
         "Timing": {
-          "Target": "6.67",
-          "Uncertainty": "6.00",
-          "Estimate": "6.380"
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "8.310"
         },
         "Loops": [{
             "Name": "Loop 1",
             "TripCount": "",
-            "LatencyMin": "15692",
-            "LatencyMax": "62732",
-            "Latency": "15692 ~ 62732",
+            "LatencyMin": "15687",
+            "LatencyMax": "62727",
+            "Latency": "15687 ~ 62727",
             "PipelineII": "5",
-            "PipelineDepth": "18"
+            "PipelineDepth": "11"
           }],
         "Area": {
-          "BRAM_18K": "0",
           "DSP48E": "10",
-          "FF": "3427",
-          "LUT": "1720",
+          "FF": "756",
+          "LUT": "1447",
+          "BRAM_18K": "0",
           "URAM": "0"
         }
       },
       "pointwise_conv2d_fix_1": {
         "Latency": {
-          "LatencyBest": "75409",
-          "LatencyAvg": "75409",
-          "LatencyWorst": "75409",
-          "PipelineII": "75409",
+          "LatencyBest": "25145",
+          "LatencyAvg": "25145",
+          "LatencyWorst": "25145",
+          "PipelineII": "25145",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
         "Timing": {
-          "Target": "6.67",
-          "Uncertainty": "6.00",
-          "Estimate": "6.380"
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "9.634"
         },
         "Loops": [{
             "Name": "Loop 1",
             "TripCount": "8",
-            "Latency": "75408",
+            "Latency": "25144",
             "PipelineII": "",
-            "PipelineDepth": "9426",
+            "PipelineDepth": "3143",
             "Loops": [{
                 "Name": "Loop 1.1",
                 "TripCount": "3136",
-                "Latency": "9421",
-                "PipelineII": "3",
-                "PipelineDepth": "17"
+                "Latency": "3139",
+                "PipelineII": "1",
+                "PipelineDepth": "5"
               }]
           }],
         "Area": {
           "BRAM_18K": "0",
           "DSP48E": "2",
-          "FF": "1446",
-          "LUT": "879",
+          "FF": "639",
+          "LUT": "812",
           "URAM": "0"
         }
       },
       "depthwise_conv2d_fix_1": {
         "Latency": {
-          "LatencyBest": "1974",
+          "LatencyBest": "1966",
           "LatencyAvg": "",
-          "LatencyWorst": "7854",
-          "PipelineIIMin": "1974",
-          "PipelineIIMax": "7854",
-          "PipelineII": "1974 ~ 7854",
+          "LatencyWorst": "7846",
+          "PipelineIIMin": "1966",
+          "PipelineIIMax": "7846",
+          "PipelineII": "1966 ~ 7846",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
         "Timing": {
-          "Target": "6.67",
-          "Uncertainty": "6.00",
-          "Estimate": "6.380"
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "8.633"
         },
         "Loops": [{
             "Name": "Loop 1",
             "TripCount": "",
-            "LatencyMin": "1972",
-            "LatencyMax": "7852",
-            "Latency": "1972 ~ 7852",
+            "LatencyMin": "1964",
+            "LatencyMax": "7844",
+            "Latency": "1964 ~ 7844",
             "PipelineII": "5",
-            "PipelineDepth": "18"
+            "PipelineDepth": "10"
           }],
         "Area": {
-          "BRAM_18K": "0",
           "DSP48E": "10",
-          "FF": "3322",
-          "LUT": "1539",
+          "FF": "685",
+          "LUT": "1251",
+          "BRAM_18K": "0",
           "URAM": "0"
         }
       },
       "pointwise_conv2d_fix_2": {
         "Latency": {
-          "LatencyBest": "9537",
-          "LatencyAvg": "9537",
-          "LatencyWorst": "9537",
-          "PipelineII": "9537",
+          "LatencyBest": "3193",
+          "LatencyAvg": "3193",
+          "LatencyWorst": "3193",
+          "PipelineII": "3193",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
         "Timing": {
-          "Target": "6.67",
-          "Uncertainty": "6.00",
-          "Estimate": "6.380"
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "9.634"
         },
         "Loops": [{
             "Name": "Loop 1",
             "TripCount": "8",
-            "Latency": "9536",
+            "Latency": "3192",
             "PipelineII": "",
-            "PipelineDepth": "1192",
+            "PipelineDepth": "399",
             "Loops": [{
                 "Name": "Loop 1.1",
                 "TripCount": "392",
-                "Latency": "1187",
-                "PipelineII": "3",
-                "PipelineDepth": "15"
+                "Latency": "395",
+                "PipelineII": "1",
+                "PipelineDepth": "5"
               }]
           }],
         "Area": {
           "BRAM_18K": "0",
           "DSP48E": "2",
-          "FF": "1377",
-          "LUT": "868",
+          "FF": "449",
+          "LUT": "704",
           "URAM": "0"
         }
       },
       "up_sampling2d_fix16": {
         "Latency": {
-          "LatencyBest": "4713",
+          "LatencyBest": "1572",
           "LatencyAvg": "",
-          "LatencyWorst": "37641",
-          "PipelineIIMin": "4713",
-          "PipelineIIMax": "37641",
-          "PipelineII": "4713 ~ 37641",
+          "LatencyWorst": "12548",
+          "PipelineIIMin": "1572",
+          "PipelineIIMax": "12548",
+          "PipelineII": "1572 ~ 12548",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
         "Timing": {
-          "Target": "6.67",
-          "Uncertainty": "6.00",
-          "Estimate": "6.380"
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "9.634"
         },
         "Loops": [{
             "Name": "Loop 1",
             "TripCount": "",
-            "LatencyMin": "4710",
-            "LatencyMax": "37638",
-            "Latency": "4710 ~ 37638",
-            "PipelineII": "3",
-            "PipelineDepth": "10"
+            "LatencyMin": "1569",
+            "LatencyMax": "12545",
+            "Latency": "1569 ~ 12545",
+            "PipelineII": "1",
+            "PipelineDepth": "3"
           }],
         "Area": {
-          "BRAM_18K": "0",
           "DSP48E": "3",
-          "FF": "381",
-          "LUT": "556",
+          "FF": "142",
+          "LUT": "470",
+          "BRAM_18K": "0",
           "URAM": "0"
         }
       },
       "pointwise_conv2d_fix_3": {
         "Latency": {
-          "LatencyBest": "75553",
-          "LatencyAvg": "75553",
-          "LatencyWorst": "75553",
-          "PipelineII": "75553",
+          "LatencyBest": "25201",
+          "LatencyAvg": "25201",
+          "LatencyWorst": "25201",
+          "PipelineII": "25201",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
         "Timing": {
-          "Target": "6.67",
-          "Uncertainty": "6.00",
-          "Estimate": "6.380"
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "9.634"
         },
         "Loops": [{
             "Name": "Loop 1",
             "TripCount": "16",
-            "Latency": "75552",
+            "Latency": "25200",
             "PipelineII": "",
-            "PipelineDepth": "4722",
+            "PipelineDepth": "1575",
             "Loops": [{
                 "Name": "Loop 1.1",
                 "TripCount": "1568",
-                "Latency": "4717",
-                "PipelineII": "3",
-                "PipelineDepth": "17"
+                "Latency": "1571",
+                "PipelineII": "1",
+                "PipelineDepth": "5"
               }]
           }],
         "Area": {
           "BRAM_18K": "0",
           "DSP48E": "2",
-          "FF": "1442",
-          "LUT": "879",
+          "FF": "639",
+          "LUT": "811",
           "URAM": "0"
         }
       },
       "pointwise_conv2d_fix_4": {
         "Latency": {
-          "LatencyBest": "50191",
-          "LatencyAvg": "50191",
-          "LatencyWorst": "50191",
-          "PipelineII": "50191",
+          "LatencyBest": "12550",
+          "LatencyAvg": "12550",
+          "LatencyWorst": "12550",
+          "PipelineII": "12550",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
         "Timing": {
-          "Target": "6.67",
-          "Uncertainty": "6.00",
-          "Estimate": "6.380"
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "9.634"
         },
         "Loops": [{
             "Name": "Loop 1",
             "TripCount": "12544",
-            "Latency": "50189",
-            "PipelineII": "4",
-            "PipelineDepth": "18"
+            "Latency": "12548",
+            "PipelineII": "1",
+            "PipelineDepth": "6"
           }],
         "Area": {
           "BRAM_18K": "0",
           "DSP48E": "2",
-          "FF": "1229",
-          "LUT": "850",
+          "FF": "665",
+          "LUT": "883",
           "URAM": "0"
         }
       },
@@ -1466,38 +1458,38 @@
           "PipelineType": "none"
         },
         "Timing": {
-          "Target": "6.67",
-          "Uncertainty": "6.00",
-          "Estimate": "6.380"
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "9.634"
         },
         "Loops": [
           {
             "Name": "Loop 1",
             "TripCount": "",
             "Latency": "",
-            "PipelineII": "2",
-            "PipelineDepth": "2"
+            "PipelineII": "1",
+            "PipelineDepth": "1"
           },
           {
             "Name": "Loop 2",
             "TripCount": "784",
-            "Latency": "786",
+            "Latency": "784",
             "PipelineII": "1",
-            "PipelineDepth": "4"
+            "PipelineDepth": "2"
           },
           {
             "Name": "Loop 3",
             "TripCount": "784",
-            "Latency": "786",
+            "Latency": "785",
             "PipelineII": "1",
-            "PipelineDepth": "4"
+            "PipelineDepth": "3"
           }
         ],
         "Area": {
           "BRAM_18K": "35",
           "DSP48E": "43",
-          "FF": "19738",
-          "LUT": "14036",
+          "FF": "7080",
+          "LUT": "12587",
           "URAM": "0"
         }
       }
@@ -1513,7 +1505,7 @@
   },
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2019-12-28 18:44:09 JST",
+    "Time": "2019-12-28 19:43:40 JST",
     "ToolName": "vivado_hls",
     "ToolVersion": "2019.1"
   }

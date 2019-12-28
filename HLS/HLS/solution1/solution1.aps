@@ -70,7 +70,7 @@
         <library value="xilinx/zynq/zynq_fpv6" name="DefaultPlatform"/>
     </libraryList>
     <clockList>
-        <clock name="default" default="false" uncertainty="12.5%" period="150MHz"/>
+        <clock name="default" default="false" uncertainty="12.5%" period="100MHz"/>
     </clockList>
 </solution>
 

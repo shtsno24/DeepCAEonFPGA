@@ -226,6 +226,19 @@
   "../../../bd/design_1/ip/design_1_network_0_0/sim/design_1_network_0_0.v" \
   "../../../bd/design_1/sim/design_1.v" \
 -endlib
+-makelib ies_lib/axis_infrastructure_v1_1_0 \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/8713/hdl/axis_infrastructure_v1_1_vl_rfs.v" \
+-endlib
+-makelib ies_lib/axis_clock_converter_v1_1_20 \
+  "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/9a88/hdl/axis_clock_converter_v1_1_vl_rfs.v" \
+-endlib
+-makelib ies_lib/xil_defaultlib \
+  "../../../bd/design_1/ip/design_1_axis_clock_converter_0_0/sim/design_1_axis_clock_converter_0_0.v" \
+  "../../../bd/design_1/ip/design_1_axis_clock_converter_0_1/sim/design_1_axis_clock_converter_0_1.v" \
+-endlib
+-makelib ies_lib/xil_defaultlib \
+  "../../../bd/design_1/ip/design_1_rst_ps7_0_200M_0/sim/design_1_rst_ps7_0_200M_0.vhd" \
+-endlib
 -makelib ies_lib/axi_protocol_converter_v2_1_19 \
   "../../../../HLx.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
 -endlib

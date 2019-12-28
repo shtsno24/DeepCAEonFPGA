@@ -16,7 +16,7 @@ set C_modelType { void 0 }
 set C_modelArgList {
 	{ input_height uint 7 regular  }
 	{ input_width int 6 regular  }
-	{ input_r int 16 regular {array 14400 { 1 1 } 2 1 }  }
+	{ input_r int 16 regular {array 14400 { 1 1 } 1 1 }  }
 	{ output_depth int 6 regular  }
 	{ output_height int 5 regular  }
 	{ output_width int 5 regular  }
@@ -85,7 +85,7 @@ set RtlHierarchyInfo {[
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "1592", "EstimateLatencyMax" : "12568",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "1580", "EstimateLatencyMax" : "12556",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -105,19 +105,19 @@ set RtlHierarchyInfo {[
 
 set ArgLastReadFirstWriteLatency {
 	max_pooling2d_fix16 {
-		input_height {Type I LastRead 1 FirstWrite -1}
-		input_width {Type I LastRead 1 FirstWrite -1}
-		input_r {Type I LastRead 24 FirstWrite -1}
-		output_depth {Type I LastRead 1 FirstWrite -1}
+		input_height {Type I LastRead 0 FirstWrite -1}
+		input_width {Type I LastRead 0 FirstWrite -1}
+		input_r {Type I LastRead 14 FirstWrite -1}
+		output_depth {Type I LastRead 0 FirstWrite -1}
 		output_height {Type I LastRead 0 FirstWrite -1}
 		output_width {Type I LastRead 0 FirstWrite -1}
-		output_r {Type O LastRead -1 FirstWrite 27}}}
+		output_r {Type O LastRead -1 FirstWrite 15}}}
 
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "1592", "Max" : "12568"}
-	, {"Name" : "Interval", "Min" : "1592", "Max" : "12568"}
+	{"Name" : "Latency", "Min" : "1580", "Max" : "12556"}
+	, {"Name" : "Interval", "Min" : "1580", "Max" : "12556"}
 ]}
 
 set PipelineEnableSignalInfo {[

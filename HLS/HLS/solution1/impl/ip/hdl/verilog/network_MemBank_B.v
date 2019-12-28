@@ -13,33 +13,15 @@ input[AWIDTH-1:0] addr0;
 input ce0;
 input[DWIDTH-1:0] d0;
 input we0;
-output wire[DWIDTH-1:0] q0;
+output reg[DWIDTH-1:0] q0;
 input[AWIDTH-1:0] addr1;
 input ce1;
-output wire[DWIDTH-1:0] q1;
+output reg[DWIDTH-1:0] q1;
 input clk;
 
 (* ram_style = "block" *)reg [DWIDTH-1:0] ram[0:MEM_SIZE-1];
-reg [DWIDTH-1:0] q0_t0;
-reg [DWIDTH-1:0] q0_t1;
-reg [DWIDTH-1:0] q1_t0;
-reg [DWIDTH-1:0] q1_t1;
 
 
-assign q0 = q0_t1;
-assign q1 = q1_t1;
-
-always @(posedge clk)  
-begin
-    if (ce0) 
-    begin
-        q0_t1 <= q0_t0;
-    end
-    if (ce1) 
-    begin
-        q1_t1 <= q1_t0;
-    end
-end
 
 
 always @(posedge clk)  
@@ -50,7 +32,7 @@ begin
         begin 
             ram[addr0] <= d0; 
         end 
-        q0_t0 <= ram[addr0];
+        q0 <= ram[addr0];
     end
 end
 
@@ -59,7 +41,7 @@ always @(posedge clk)
 begin 
     if (ce1) 
     begin
-        q1_t0 <= ram[addr1];
+        q1 <= ram[addr1];
     end
 end
 

@@ -388,6 +388,7 @@ uint8_t relu, uint8_t fractal_width){
 
 
  int32_t buffer;
+
 #pragma HLS array_partition variable=&kernel
 
 

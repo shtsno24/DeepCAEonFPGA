@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-| Date         : Sat Dec 28 18:51:13 2019
+| Date         : Sat Dec 28 19:51:24 2019
 | Host         : masudalab-ubuntu running 64-bit Ubuntu 18.04.3 LTS
 | Command      : report_timing_summary -file ./report/network_timing_synth.rpt
 | Design       : bd_0_wrapper
@@ -127,10 +127,10 @@ Table of Contents
 
     WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
     -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
-      0.588        0.000                      0                13681        0.219        0.000                      0                13681        2.083        0.000                       0                  5813  
+     -0.298       -2.500                     16                 8466        0.219        0.000                      0                 8466        3.750        0.000                       0                  2931  
 
 
-All user specified timing constraints are met.
+Timing constraints are not met.
 
 
 ------------------------------------------------------------------------------------------------
@@ -138,9 +138,9 @@ All user specified timing constraints are met.
 | -------------
 ------------------------------------------------------------------------------------------------
 
-Clock   Waveform(ns)         Period(ns)      Frequency(MHz)
------   ------------         ----------      --------------
-ap_clk  {0.000 3.333}        6.667           149.992         
+Clock   Waveform(ns)       Period(ns)      Frequency(MHz)
+-----   ------------       ----------      --------------
+ap_clk  {0.000 5.000}      10.000          100.000         
 
 
 ------------------------------------------------------------------------------------------------
@@ -150,7 +150,7 @@ ap_clk  {0.000 3.333}        6.667           149.992
 
 Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
 -----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
-ap_clk              0.588        0.000                      0                13681        0.219        0.000                      0                13681        2.083        0.000                       0                  5813  
+ap_clk             -0.298       -2.500                     16                 8466        0.219        0.000                      0                 8466        3.750        0.000                       0                  2931  
 
 
 ------------------------------------------------------------------------------------------------
@@ -181,26 +181,26 @@ Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing 
 From Clock:  ap_clk
   To Clock:  ap_clk
 
-Setup :            0  Failing Endpoints,  Worst Slack        0.588ns,  Total Violation        0.000ns
+Setup :           16  Failing Endpoints,  Worst Slack       -0.298ns,  Total Violation       -2.500ns
 Hold  :            0  Failing Endpoints,  Worst Slack        0.219ns,  Total Violation        0.000ns
-PW    :            0  Failing Endpoints,  Worst Slack        2.083ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        3.750ns,  Total Violation        0.000ns
 ---------------------------------------------------------------------------------------------------
 
 
 Max Delay Paths
 --------------------------------------------------------------------------------------
-Slack (MET) :             0.588ns  (required time - arrival time)
-  Source:                 bd_0_i/hls_inst/inst/ap_CS_fsm_reg[36]/C
-                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@3.333ns period=6.667ns})
+Slack (VIOLATED) :        -0.298ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_1_fu_479/tmp5_0_0_mid2_v_v_reg_1121_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
   Destination:            bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_0/ADDRARDADDR[11]
-                            (rising edge-triggered cell RAMB36E1 clocked by ap_clk  {rise@0.000ns fall@3.333ns period=6.667ns})
+                            (rising edge-triggered cell RAMB36E1 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             ap_clk
   Path Type:              Setup (Max at Slow Process Corner)
-  Requirement:            6.667ns  (ap_clk rise@6.667ns - ap_clk rise@0.000ns)
-  Data Path Delay:        5.429ns  (logic 1.433ns (26.397%)  route 3.996ns (73.603%))
-  Logic Levels:           6  (LUT5=2 LUT6=4)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        9.648ns  (logic 4.216ns (43.699%)  route 5.432ns (56.301%))
+  Logic Levels:           11  (CARRY4=4 LUT2=1 LUT5=1 LUT6=5)
   Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    0.924ns = ( 7.591 - 6.667 ) 
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
     Source Clock Delay      (SCD):    0.973ns
     Clock Pessimism Removal (CPR):    0.000ns
   Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
@@ -213,39 +213,53 @@ Slack (MET) :             0.588ns  (required time - arrival time)
   -------------------------------------------------------------------    -------------------
                          (clock ap_clk rise edge)     0.000     0.000 r  
                                                       0.000     0.000 r  ap_clk (IN)
-                         net (fo=5812, unset)         0.973     0.973    bd_0_i/hls_inst/inst/ap_clk
-                         FDRE                                         r  bd_0_i/hls_inst/inst/ap_CS_fsm_reg[36]/C
+                         net (fo=2938, unset)         0.973     0.973    bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_1_fu_479/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_1_fu_479/tmp5_0_0_mid2_v_v_reg_1121_reg[1]/C
   -------------------------------------------------------------------    -------------------
-                         FDRE (Prop_fdre_C_Q)         0.518     1.491 f  bd_0_i/hls_inst/inst/ap_CS_fsm_reg[36]/Q
-                         net (fo=5, unplaced)         0.834     2.325    bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/Q[12]
-                         LUT5 (Prop_lut5_I0_O)        0.295     2.620 f  bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_0_i_121/O
-                         net (fo=66, unplaced)        0.538     3.158    bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_2_fu_537/MemBank_B_address014_out
-                         LUT5 (Prop_lut5_I0_O)        0.124     3.282 r  bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_2_fu_537/ram_reg_0_i_243/O
-                         net (fo=5, unplaced)         0.477     3.759    bd_0_i/hls_inst/inst/grp_padding2d_fix16_fu_545/ram_reg_0_i_41
-                         LUT6 (Prop_lut6_I0_O)        0.124     3.883 r  bd_0_i/hls_inst/inst/grp_padding2d_fix16_fu_545/ram_reg_0_i_252/O
-                         net (fo=1, unplaced)         0.449     4.332    bd_0_i/hls_inst/inst/grp_max_pooling2d_fix16_fu_563/ram_reg_0_i_50
-                         LUT6 (Prop_lut6_I0_O)        0.124     4.456 r  bd_0_i/hls_inst/inst/grp_max_pooling2d_fix16_fu_563/ram_reg_0_i_152/O
-                         net (fo=1, unplaced)         0.449     4.905    bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_3_fu_529/ram_reg_0_34
-                         LUT6 (Prop_lut6_I5_O)        0.124     5.029 r  bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_3_fu_529/ram_reg_0_i_50/O
-                         net (fo=1, unplaced)         0.449     5.478    bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_3_fu_529/ram_reg_0_i_50_n_5
-                         LUT6 (Prop_lut6_I0_O)        0.124     5.602 r  bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_3_fu_529/ram_reg_0_i_6/O
-                         net (fo=8, unplaced)         0.800     6.402    bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ADDRARDADDR[10]
+                         FDRE (Prop_fdre_C_Q)         0.518     1.491 r  bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_1_fu_479/tmp5_0_0_mid2_v_v_reg_1121_reg[1]/Q
+                         net (fo=55, unplaced)        0.555     2.046    bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_1_fu_479/tmp5_0_0_mid2_v_v_reg_1121[1]
+                         LUT2 (Prop_lut2_I0_O)        0.321     2.367 r  bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_1_fu_479/tmp5_0_0_mid2_reg_1133[1]_i_3/O
+                         net (fo=1, unplaced)         0.000     2.367    bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_1_fu_479/tmp5_0_0_mid2_reg_1133[1]_i_3_n_5
+                         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.547     2.914 r  bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_1_fu_479/tmp5_0_0_mid2_reg_1133_reg[1]_i_1/CO[3]
+                         net (fo=1, unplaced)         0.009     2.923    bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_1_fu_479/tmp5_0_0_mid2_reg_1133_reg[1]_i_1_n_5
+                         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.232     3.155 r  bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_1_fu_479/tmp5_0_0_mid2_reg_1133_reg[9]_i_10/O[0]
+                         net (fo=4, unplaced)         0.335     3.490    bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_1_fu_479/tmp5_0_0_mid2_reg_1133_reg[9]_i_10_n_12
+                         LUT5 (Prop_lut5_I2_O)        0.287     3.777 r  bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_1_fu_479/tmp5_0_0_mid2_reg_1133[9]_i_12/O
+                         net (fo=2, unplaced)         0.460     4.237    bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_1_fu_479/tmp5_0_0_mid2_reg_1133[9]_i_12_n_5
+                         LUT6 (Prop_lut6_I0_O)        0.124     4.361 r  bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_1_fu_479/tmp5_0_0_mid2_reg_1133[9]_i_4/O
+                         net (fo=2, unplaced)         0.650     5.011    bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_1_fu_479/tmp5_0_0_mid2_reg_1133[9]_i_4_n_5
+                         CARRY4 (Prop_carry4_DI[1]_O[3])
+                                                      0.629     5.640 r  bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_1_fu_479/tmp5_0_0_mid2_reg_1133_reg[9]_i_1/O[3]
+                         net (fo=3, unplaced)         0.824     6.464    bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_1_fu_479/tmp5_0_0_mid2_fu_500_p2[9]
+                         CARRY4 (Prop_carry4_S[1]_O[2])
+                                                      0.885     7.349 r  bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_1_fu_479/ram_reg_0_i_429/O[2]
+                         net (fo=1, unplaced)         0.452     7.801    bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_1_fu_479/ram_reg_0_i_429_n_10
+                         LUT6 (Prop_lut6_I1_O)        0.301     8.102 f  bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_1_fu_479/ram_reg_0_i_269/O
+                         net (fo=1, unplaced)         0.449     8.551    bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_1_fu_479/ram_reg_0_i_269_n_5
+                         LUT6 (Prop_lut6_I0_O)        0.124     8.675 r  bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_1_fu_479/ram_reg_0_i_157/O
+                         net (fo=1, unplaced)         0.449     9.124    bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_1_fu_479/grp_depthwise_conv2d_fix_1_fu_479_input_r_address0[10]
+                         LUT6 (Prop_lut6_I1_O)        0.124     9.248 f  bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_1_fu_479/ram_reg_0_i_50/O
+                         net (fo=1, unplaced)         0.449     9.697    bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_2_fu_576/ram_reg_0_1
+                         LUT6 (Prop_lut6_I3_O)        0.124     9.821 r  bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_2_fu_576/ram_reg_0_i_6/O
+                         net (fo=8, unplaced)         0.800    10.621    bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ADDRARDADDR[10]
                          RAMB36E1                                     r  bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_0/ADDRARDADDR[11]
   -------------------------------------------------------------------    -------------------
 
-                         (clock ap_clk rise edge)     6.667     6.667 r  
-                                                      0.000     6.667 r  ap_clk (IN)
-                         net (fo=5812, unset)         0.924     7.591    bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ap_clk
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=2938, unset)         0.924    10.924    bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ap_clk
                          RAMB36E1                                     r  bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_0/CLKARDCLK
-                         clock pessimism              0.000     7.591    
-                         clock uncertainty           -0.035     7.556    
+                         clock pessimism              0.000    10.924    
+                         clock uncertainty           -0.035    10.889    
                          RAMB36E1 (Setup_ramb36e1_CLKARDCLK_ADDRARDADDR[11])
-                                                     -0.566     6.990    bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_0
+                                                     -0.566    10.323    bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_0
   -------------------------------------------------------------------
-                         required time                          6.990    
-                         arrival time                          -6.402    
+                         required time                         10.323    
+                         arrival time                         -10.621    
   -------------------------------------------------------------------
-                         slack                                  0.588    
+                         slack                                 -0.298    
 
 
 
@@ -254,10 +268,10 @@ Slack (MET) :             0.588ns  (required time - arrival time)
 Min Delay Paths
 --------------------------------------------------------------------------------------
 Slack (MET) :             0.219ns  (arrival time - required time)
-  Source:                 bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_1_fu_521/add_ln34_1_reg_1268_reg[0]/C
-                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@3.333ns period=6.667ns})
-  Destination:            bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_1_fu_521/add_ln34_1_reg_1268_pp0_iter4_reg_reg[0]_srl2/D
-                            (rising edge-triggered cell SRL16E clocked by ap_clk  {rise@0.000ns fall@3.333ns period=6.667ns})
+  Source:                 bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_4_fu_554/or_ln24_1_reg_764_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_4_fu_554/or_ln24_1_reg_764_pp0_iter3_reg_reg[0]_srl2/D
+                            (rising edge-triggered cell SRL16E clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             ap_clk
   Path Type:              Hold (Min at Fast Process Corner)
   Requirement:            0.000ns  (ap_clk rise@0.000ns - ap_clk rise@0.000ns)
@@ -272,21 +286,21 @@ Slack (MET) :             0.219ns  (arrival time - required time)
   -------------------------------------------------------------------    -------------------
                          (clock ap_clk rise edge)     0.000     0.000 r  
                                                       0.000     0.000 r  ap_clk (IN)
-                         net (fo=5812, unset)         0.410     0.410    bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_1_fu_521/ap_clk
-                         FDRE                                         r  bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_1_fu_521/add_ln34_1_reg_1268_reg[0]/C
+                         net (fo=2938, unset)         0.410     0.410    bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_4_fu_554/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_4_fu_554/or_ln24_1_reg_764_reg[0]/C
   -------------------------------------------------------------------    -------------------
-                         FDRE (Prop_fdre_C_Q)         0.164     0.574 r  bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_1_fu_521/add_ln34_1_reg_1268_reg[0]/Q
-                         net (fo=1, unplaced)         0.141     0.715    bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_1_fu_521/add_ln34_1_reg_1268[0]
-                         SRL16E                                       r  bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_1_fu_521/add_ln34_1_reg_1268_pp0_iter4_reg_reg[0]_srl2/D
+                         FDRE (Prop_fdre_C_Q)         0.164     0.574 r  bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_4_fu_554/or_ln24_1_reg_764_reg[0]/Q
+                         net (fo=1, unplaced)         0.141     0.715    bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_4_fu_554/or_ln24_1_reg_764
+                         SRL16E                                       r  bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_4_fu_554/or_ln24_1_reg_764_pp0_iter3_reg_reg[0]_srl2/D
   -------------------------------------------------------------------    -------------------
 
                          (clock ap_clk rise edge)     0.000     0.000 r  
                                                       0.000     0.000 r  ap_clk (IN)
-                         net (fo=5812, unset)         0.432     0.432    bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_1_fu_521/ap_clk
-                         SRL16E                                       r  bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_1_fu_521/add_ln34_1_reg_1268_pp0_iter4_reg_reg[0]_srl2/CLK
+                         net (fo=2938, unset)         0.432     0.432    bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_4_fu_554/ap_clk
+                         SRL16E                                       r  bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_4_fu_554/or_ln24_1_reg_764_pp0_iter3_reg_reg[0]_srl2/CLK
                          clock pessimism              0.000     0.432    
                          SRL16E (Hold_srl16e_CLK_D)
-                                                      0.064     0.496    bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_1_fu_521/add_ln34_1_reg_1268_pp0_iter4_reg_reg[0]_srl2
+                                                      0.064     0.496    bd_0_i/hls_inst/inst/grp_pointwise_conv2d_fix_4_fu_554/or_ln24_1_reg_764_pp0_iter3_reg_reg[0]_srl2
   -------------------------------------------------------------------
                          required time                         -0.496    
                          arrival time                           0.715    
@@ -300,14 +314,14 @@ Slack (MET) :             0.219ns  (arrival time - required time)
 Pulse Width Checks
 --------------------------------------------------------------------------------------
 Clock Name:         ap_clk
-Waveform(ns):       { 0.000 3.333 }
-Period(ns):         6.667
+Waveform(ns):       { 0.000 5.000 }
+Period(ns):         10.000
 Sources:            { ap_clk }
 
 Check Type        Corner  Lib Pin      Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location  Pin
-Min Period        n/a     DSP48E1/CLK  n/a            3.884         6.667       2.783                bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_1_fu_479/mul_ln34_17_reg_1464_reg/CLK
-Low Pulse Width   Slow    RAMS32/CLK   n/a            1.250         3.334       2.084                bd_0_i/hls_inst/inst/sig_buffer_dest_V_U/network_sig_buffer_user_V_ram_U/ram_reg_0_15_0_0/SP/CLK
-High Pulse Width  Fast    RAMS32/CLK   n/a            1.250         3.333       2.083                bd_0_i/hls_inst/inst/sig_buffer_dest_V_U/network_sig_buffer_user_V_ram_U/ram_reg_0_15_0_0/SP/CLK
+Min Period        n/a     DSP48E1/CLK  n/a            3.884         10.000      6.116                bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_1_fu_479/network_mul_mul_16s_16s_30_1_1_U81/network_mul_mul_16s_16s_30_1_1_DSP48_0_U/p/CLK
+Low Pulse Width   Fast    RAMS32/CLK   n/a            1.250         5.000       3.750                bd_0_i/hls_inst/inst/sig_buffer_dest_V_U/network_sig_buffer_user_V_ram_U/ram_reg_0_15_0_0/SP/CLK
+High Pulse Width  Slow    RAMS32/CLK   n/a            1.250         5.000       3.750                bd_0_i/hls_inst/inst/sig_buffer_dest_V_U/network_sig_buffer_user_V_ram_U/ram_reg_0_15_0_0/SP/CLK
 
 
 

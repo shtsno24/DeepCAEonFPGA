@@ -1,16 +1,12 @@
 # This script segment is generated automatically by AutoPilot
 
 set id 23
-set name network_mux_164_16_4_1
+set name network_mux_164_16_1_1
 set corename simcore_mux
 set op mux
-set stage_num 4
+set stage_num 1
 set max_latency -1
 set registered_input 1
-set clk_width 1
-set clk_signed 0
-set reset_width 1
-set reset_signed 0
 set din0_width 16
 set din0_signed 1
 set din1_width 16
@@ -45,8 +41,6 @@ set din15_width 16
 set din15_signed 0
 set din16_width 4
 set din16_signed 0
-set ce_width 1
-set ce_signed 0
 set dout_width 16
 if {${::AESL::PGuard_simmodel_gen}} {
 if {[info proc ap_gen_simcore_mux] == "ap_gen_simcore_mux"} {
@@ -60,10 +54,6 @@ eval "ap_gen_simcore_mux { \
     stage_num ${stage_num} \
     max_latency ${max_latency} \
     registered_input ${registered_input} \
-    clk_width ${clk_width} \
-    clk_signed ${clk_signed} \
-    reset_width ${reset_width} \
-    reset_signed ${reset_signed} \
     din0_width ${din0_width} \
     din0_signed ${din0_signed} \
     din1_width ${din1_width} \
@@ -98,8 +88,6 @@ eval "ap_gen_simcore_mux { \
     din15_signed ${din15_signed} \
     din16_width ${din16_width} \
     din16_signed ${din16_signed} \
-    ce_width ${ce_width} \
-    ce_signed ${ce_signed} \
     dout_width ${dout_width} \
 }"
 } else {
@@ -127,10 +115,6 @@ eval "::AESL_LIB_VIRTEX::xil_gen_pipemux { \
     stage_num ${stage_num} \
     max_latency ${max_latency} \
     registered_input ${registered_input} \
-    clk_width ${clk_width} \
-    clk_signed ${clk_signed} \
-    reset_width ${reset_width} \
-    reset_signed ${reset_signed} \
     din0_width ${din0_width} \
     din0_signed ${din0_signed} \
     din1_width ${din1_width} \
@@ -165,8 +149,6 @@ eval "::AESL_LIB_VIRTEX::xil_gen_pipemux { \
     din15_signed ${din15_signed} \
     din16_width ${din16_width} \
     din16_signed ${din16_signed} \
-    ce_width ${ce_width} \
-    ce_signed ${ce_signed} \
     dout_width ${dout_width} \
 }"
 } else {
@@ -343,8 +325,8 @@ set HasInitializer 1
 set Initializer $ROMData
 set NumOfStage 2
 set MaxLatency -1
-set DelayBudget 1.682
-set ClkPeriod 6.667
+set DelayBudget 3.254
+set ClkPeriod 10
 set RegisteredInput 0
 if {${::AESL::PGuard_simmodel_gen}} {
 if {[info proc ap_gen_simcore_mem] == "ap_gen_simcore_mem"} {

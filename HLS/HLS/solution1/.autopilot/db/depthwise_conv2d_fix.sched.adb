@@ -75,10 +75,10 @@
 					<Obj>
 						<type>0</type>
 						<id>3</id>
-						<name>_ln21</name>
+						<name>_ln22</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>21</lineNumber>
+						<lineNumber>22</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -93,7 +93,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>21</second>
+										<second>22</second>
 									</item>
 								</second>
 							</item>
@@ -114,7 +114,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.66</m_delay>
+				<m_delay>1.76</m_delay>
 				<m_topoIndex>1</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -126,7 +126,7 @@
 						<name>indvar_flatten71</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -141,7 +141,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -177,7 +177,7 @@
 						<name>out_d_0</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -192,7 +192,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -228,7 +228,7 @@
 						<name>indvar_flatten</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>22</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -243,7 +243,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>22</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -279,7 +279,7 @@
 						<name>out_h_0</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>22</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -294,7 +294,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>22</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -356,7 +356,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>13</m_topoIndex>
+				<m_topoIndex>6</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_9">
@@ -364,10 +364,10 @@
 					<Obj>
 						<type>0</type>
 						<id>10</id>
-						<name>zext_ln40_1</name>
+						<name>zext_ln41_1</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>40</lineNumber>
+						<lineNumber>41</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -382,7 +382,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>40</second>
+										<second>41</second>
 									</item>
 								</second>
 							</item>
@@ -404,7 +404,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>6</m_topoIndex>
+				<m_topoIndex>7</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_10">
@@ -415,7 +415,7 @@
 						<name>out_d</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -430,7 +430,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -453,7 +453,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.97</m_delay>
-				<m_topoIndex>14</m_topoIndex>
+				<m_topoIndex>8</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_11">
@@ -464,7 +464,7 @@
 						<name>p_shl</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>22</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -479,7 +479,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>22</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -503,7 +503,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>15</m_topoIndex>
+				<m_topoIndex>9</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_12">
@@ -514,7 +514,7 @@
 						<name>p_shl10_cast</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>22</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -529,7 +529,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>22</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -551,7 +551,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>16</m_topoIndex>
+				<m_topoIndex>10</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_13">
@@ -562,7 +562,7 @@
 						<name>p_shl1</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>22</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -577,7 +577,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>22</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -601,7 +601,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>17</m_topoIndex>
+				<m_topoIndex>11</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_14">
@@ -612,7 +612,7 @@
 						<name>p_shl11_cast</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>22</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -627,7 +627,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>22</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -649,7 +649,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>18</m_topoIndex>
+				<m_topoIndex>12</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_15">
@@ -660,7 +660,7 @@
 						<name>tmp5_0_0</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>22</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -675,7 +675,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>22</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -698,7 +698,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>1.73</m_delay>
-				<m_topoIndex>19</m_topoIndex>
+				<m_topoIndex>13</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_16">
@@ -709,7 +709,7 @@
 						<name>tmp_1_0</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>22</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -724,7 +724,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>22</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -747,7 +747,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>1.78</m_delay>
-				<m_topoIndex>7</m_topoIndex>
+				<m_topoIndex>14</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_17">
@@ -758,7 +758,7 @@
 						<name>p_shl8</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>22</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -773,7 +773,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>22</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -797,7 +797,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>20</m_topoIndex>
+				<m_topoIndex>15</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_18">
@@ -808,7 +808,7 @@
 						<name>p_shl8_cast</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>22</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -823,7 +823,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>22</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -845,7 +845,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>21</m_topoIndex>
+				<m_topoIndex>16</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_19">
@@ -856,7 +856,7 @@
 						<name>p_shl9</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>22</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -871,7 +871,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>22</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -895,7 +895,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>22</m_topoIndex>
+				<m_topoIndex>17</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_20">
@@ -906,7 +906,7 @@
 						<name>p_shl9_cast</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>22</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -921,7 +921,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>22</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -943,7 +943,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>23</m_topoIndex>
+				<m_topoIndex>18</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_21">
@@ -954,7 +954,7 @@
 						<name>tmp5_1_0</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>22</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -969,7 +969,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>22</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -992,7 +992,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>1.73</m_delay>
-				<m_topoIndex>24</m_topoIndex>
+				<m_topoIndex>19</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_22">
@@ -1003,7 +1003,7 @@
 						<name>tmp_2_0</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>22</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1018,7 +1018,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>22</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -1041,7 +1041,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>1.78</m_delay>
-				<m_topoIndex>8</m_topoIndex>
+				<m_topoIndex>20</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_23">
@@ -1052,7 +1052,7 @@
 						<name>p_shl6</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>22</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1067,7 +1067,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>22</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -1091,7 +1091,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>25</m_topoIndex>
+				<m_topoIndex>21</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_24">
@@ -1102,7 +1102,7 @@
 						<name>p_shl7</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>22</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1117,7 +1117,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>22</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -1141,7 +1141,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>26</m_topoIndex>
+				<m_topoIndex>22</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_25">
@@ -1152,7 +1152,7 @@
 						<name>p_shl7_cast</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>22</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1167,7 +1167,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>22</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -1189,7 +1189,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>27</m_topoIndex>
+				<m_topoIndex>23</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_26">
@@ -1200,7 +1200,7 @@
 						<name>tmp5_2_0</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>22</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1215,7 +1215,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>22</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -1238,7 +1238,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>1.73</m_delay>
-				<m_topoIndex>28</m_topoIndex>
+				<m_topoIndex>24</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_27">
@@ -1249,7 +1249,7 @@
 						<name>tmp6</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>40</lineNumber>
+						<lineNumber>41</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1264,7 +1264,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>40</second>
+										<second>41</second>
 									</item>
 								</second>
 							</item>
@@ -1287,7 +1287,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>1.78</m_delay>
-				<m_topoIndex>9</m_topoIndex>
+				<m_topoIndex>25</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_28">
@@ -1298,7 +1298,7 @@
 						<name>p_shl4</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>40</lineNumber>
+						<lineNumber>41</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1313,7 +1313,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>40</second>
+										<second>41</second>
 									</item>
 								</second>
 							</item>
@@ -1337,7 +1337,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>29</m_topoIndex>
+				<m_topoIndex>26</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_29">
@@ -1348,7 +1348,7 @@
 						<name>p_shl4_cast</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>40</lineNumber>
+						<lineNumber>41</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1363,7 +1363,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>40</second>
+										<second>41</second>
 									</item>
 								</second>
 							</item>
@@ -1385,7 +1385,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>30</m_topoIndex>
+				<m_topoIndex>27</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_30">
@@ -1396,7 +1396,7 @@
 						<name>p_shl5</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>40</lineNumber>
+						<lineNumber>41</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1411,7 +1411,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>40</second>
+										<second>41</second>
 									</item>
 								</second>
 							</item>
@@ -1435,7 +1435,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>31</m_topoIndex>
+				<m_topoIndex>28</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_31">
@@ -1446,7 +1446,7 @@
 						<name>p_shl5_cast</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>40</lineNumber>
+						<lineNumber>41</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1461,7 +1461,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>40</second>
+										<second>41</second>
 									</item>
 								</second>
 							</item>
@@ -1483,7 +1483,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>32</m_topoIndex>
+				<m_topoIndex>29</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_32">
@@ -1494,7 +1494,7 @@
 						<name>tmp7</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>40</lineNumber>
+						<lineNumber>41</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1509,7 +1509,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>40</second>
+										<second>41</second>
 									</item>
 								</second>
 							</item>
@@ -1532,7 +1532,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>1.73</m_delay>
-				<m_topoIndex>33</m_topoIndex>
+				<m_topoIndex>30</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_33">
@@ -1540,10 +1540,10 @@
 					<Obj>
 						<type>0</type>
 						<id>34</id>
-						<name>icmp_ln34</name>
+						<name>icmp_ln35</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1558,7 +1558,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -1581,7 +1581,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>1.77</m_delay>
-				<m_topoIndex>10</m_topoIndex>
+				<m_topoIndex>31</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_34">
@@ -1589,10 +1589,10 @@
 					<Obj>
 						<type>0</type>
 						<id>35</id>
-						<name>add_ln34_23</name>
+						<name>add_ln35_21</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1607,7 +1607,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -1630,7 +1630,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>1.73</m_delay>
-				<m_topoIndex>34</m_topoIndex>
+				<m_topoIndex>32</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_35">
@@ -1638,10 +1638,10 @@
 					<Obj>
 						<type>0</type>
 						<id>36</id>
-						<name>_ln34</name>
+						<name>_ln35</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1656,7 +1656,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -1680,7 +1680,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>35</m_topoIndex>
+				<m_topoIndex>33</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_36">
@@ -1688,991 +1688,6 @@
 					<Obj>
 						<type>0</type>
 						<id>39</id>
-						<name>icmp_ln22</name>
-						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
-						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>22</lineNumber>
-						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/masudalab/DeepCAEonFPGA/HLS</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../layers_c/depthwise_conv2d.cpp</first>
-											<second>depthwise_conv2d_fix16</second>
-										</first>
-										<second>22</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>1</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>286</item>
-					<item>287</item>
-				</oprand_edges>
-				<opcode>icmp</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.77</m_delay>
-				<m_topoIndex>11</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_37">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>40</id>
-						<name>select_ln34</name>
-						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
-						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
-						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/masudalab/DeepCAEonFPGA/HLS</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../layers_c/depthwise_conv2d.cpp</first>
-											<second>depthwise_conv2d_fix16</second>
-										</first>
-										<second>34</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>5</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>3</count>
-					<item_version>0</item_version>
-					<item>288</item>
-					<item>289</item>
-					<item>290</item>
-				</oprand_edges>
-				<opcode>select</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.21</m_delay>
-				<m_topoIndex>36</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_38">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>41</id>
-						<name>select_ln34_13</name>
-						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
-						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
-						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/masudalab/DeepCAEonFPGA/HLS</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../layers_c/depthwise_conv2d.cpp</first>
-											<second>depthwise_conv2d_fix16</second>
-										</first>
-										<second>34</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>1</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>3</count>
-					<item_version>0</item_version>
-					<item>291</item>
-					<item>292</item>
-					<item>293</item>
-				</oprand_edges>
-				<opcode>select</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.99</m_delay>
-				<m_topoIndex>38</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_39">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>42</id>
-						<name>zext_ln34</name>
-						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
-						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
-						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/masudalab/DeepCAEonFPGA/HLS</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../layers_c/depthwise_conv2d.cpp</first>
-											<second>depthwise_conv2d_fix16</second>
-										</first>
-										<second>34</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>2</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>1</count>
-					<item_version>0</item_version>
-					<item>294</item>
-				</oprand_edges>
-				<opcode>zext</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>91</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_40">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>43</id>
-						<name>zext_ln34_33</name>
-						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
-						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
-						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/masudalab/DeepCAEonFPGA/HLS</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../layers_c/depthwise_conv2d.cpp</first>
-											<second>depthwise_conv2d_fix16</second>
-										</first>
-										<second>34</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>5</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>1</count>
-					<item_version>0</item_version>
-					<item>295</item>
-				</oprand_edges>
-				<opcode>zext</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>43</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_41">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>44</id>
-						<name>select_ln34_14</name>
-						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
-						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
-						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/masudalab/DeepCAEonFPGA/HLS</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../layers_c/depthwise_conv2d.cpp</first>
-											<second>depthwise_conv2d_fix16</second>
-										</first>
-										<second>34</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>1</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>3</count>
-					<item_version>0</item_version>
-					<item>296</item>
-					<item>297</item>
-					<item>298</item>
-				</oprand_edges>
-				<opcode>select</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.99</m_delay>
-				<m_topoIndex>39</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_42">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>45</id>
-						<name>zext_ln34_34</name>
-						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
-						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
-						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/masudalab/DeepCAEonFPGA/HLS</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../layers_c/depthwise_conv2d.cpp</first>
-											<second>depthwise_conv2d_fix16</second>
-										</first>
-										<second>34</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>2</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>1</count>
-					<item_version>0</item_version>
-					<item>299</item>
-				</oprand_edges>
-				<opcode>zext</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>92</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_43">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>46</id>
-						<name>or_ln</name>
-						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
-						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
-						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/masudalab/DeepCAEonFPGA/HLS</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../layers_c/depthwise_conv2d.cpp</first>
-											<second>depthwise_conv2d_fix16</second>
-										</first>
-										<second>34</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>2</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>3</count>
-					<item_version>0</item_version>
-					<item>301</item>
-					<item>302</item>
-					<item>303</item>
-				</oprand_edges>
-				<opcode>bitconcatenate</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>109</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_44">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>47</id>
-						<name>select_ln34_15</name>
-						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
-						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
-						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/masudalab/DeepCAEonFPGA/HLS</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../layers_c/depthwise_conv2d.cpp</first>
-											<second>depthwise_conv2d_fix16</second>
-										</first>
-										<second>34</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>2</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>3</count>
-					<item_version>0</item_version>
-					<item>304</item>
-					<item>306</item>
-					<item>307</item>
-				</oprand_edges>
-				<opcode>select</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.99</m_delay>
-				<m_topoIndex>93</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_45">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>48</id>
-						<name>select_ln34_16</name>
-						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
-						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
-						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/masudalab/DeepCAEonFPGA/HLS</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../layers_c/depthwise_conv2d.cpp</first>
-											<second>depthwise_conv2d_fix16</second>
-										</first>
-										<second>34</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>11</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>3</count>
-					<item_version>0</item_version>
-					<item>308</item>
-					<item>310</item>
-					<item>311</item>
-				</oprand_edges>
-				<opcode>select</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>55</m_topoIndex>
-				<m_clusterGroupNumber>1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_46">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>49</id>
-						<name>select_ln34_17</name>
-						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
-						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
-						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/masudalab/DeepCAEonFPGA/HLS</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../layers_c/depthwise_conv2d.cpp</first>
-											<second>depthwise_conv2d_fix16</second>
-										</first>
-										<second>34</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>11</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>3</count>
-					<item_version>0</item_version>
-					<item>312</item>
-					<item>314</item>
-					<item>315</item>
-				</oprand_edges>
-				<opcode>select</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>78</m_topoIndex>
-				<m_clusterGroupNumber>2</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_47">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>50</id>
-						<name>select_ln34_18</name>
-						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
-						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
-						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/masudalab/DeepCAEonFPGA/HLS</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../layers_c/depthwise_conv2d.cpp</first>
-											<second>depthwise_conv2d_fix16</second>
-										</first>
-										<second>34</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>10</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>3</count>
-					<item_version>0</item_version>
-					<item>316</item>
-					<item>318</item>
-					<item>319</item>
-				</oprand_edges>
-				<opcode>select</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>79</m_topoIndex>
-				<m_clusterGroupNumber>3</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_48">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>51</id>
-						<name>tmp_s</name>
-						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
-						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
-						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/masudalab/DeepCAEonFPGA/HLS</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../layers_c/depthwise_conv2d.cpp</first>
-											<second>depthwise_conv2d_fix16</second>
-										</first>
-										<second>34</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>6</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>3</count>
-					<item_version>0</item_version>
-					<item>321</item>
-					<item>322</item>
-					<item>323</item>
-				</oprand_edges>
-				<opcode>bitconcatenate</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>56</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_49">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>52</id>
-						<name>p_shl4_cast_mid161_ca</name>
-						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
-						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
-						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/masudalab/DeepCAEonFPGA/HLS</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../layers_c/depthwise_conv2d.cpp</first>
-											<second>depthwise_conv2d_fix16</second>
-										</first>
-										<second>34</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>7</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>1</count>
-					<item_version>0</item_version>
-					<item>324</item>
-				</oprand_edges>
-				<opcode>zext</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>57</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_50">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>53</id>
-						<name>tmp_9</name>
-						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
-						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
-						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/masudalab/DeepCAEonFPGA/HLS</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../layers_c/depthwise_conv2d.cpp</first>
-											<second>depthwise_conv2d_fix16</second>
-										</first>
-										<second>34</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>3</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>3</count>
-					<item_version>0</item_version>
-					<item>326</item>
-					<item>327</item>
-					<item>328</item>
-				</oprand_edges>
-				<opcode>bitconcatenate</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>58</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_51">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>54</id>
-						<name>p_shl5_cast_mid165_ca</name>
-						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
-						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
-						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/masudalab/DeepCAEonFPGA/HLS</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../layers_c/depthwise_conv2d.cpp</first>
-											<second>depthwise_conv2d_fix16</second>
-										</first>
-										<second>34</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>7</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>1</count>
-					<item_version>0</item_version>
-					<item>329</item>
-				</oprand_edges>
-				<opcode>zext</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>59</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_52">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>55</id>
-						<name>tmp7_mid167</name>
-						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
-						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
-						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/masudalab/DeepCAEonFPGA/HLS</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../layers_c/depthwise_conv2d.cpp</first>
-											<second>depthwise_conv2d_fix16</second>
-										</first>
-										<second>34</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>7</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>330</item>
-					<item>331</item>
-				</oprand_edges>
-				<opcode>sub</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.82</m_delay>
-				<m_topoIndex>60</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_53">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>56</id>
-						<name>tmp7_mid167_cast</name>
-						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
-						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
-						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/masudalab/DeepCAEonFPGA/HLS</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../layers_c/depthwise_conv2d.cpp</first>
-											<second>depthwise_conv2d_fix16</second>
-										</first>
-										<second>34</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>11</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>1</count>
-					<item_version>0</item_version>
-					<item>332</item>
-				</oprand_edges>
-				<opcode>sext</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>80</m_topoIndex>
-				<m_clusterGroupNumber>4</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_54">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>57</id>
-						<name>select_ln34_19</name>
-						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
-						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
-						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/masudalab/DeepCAEonFPGA/HLS</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../layers_c/depthwise_conv2d.cpp</first>
-											<second>depthwise_conv2d_fix16</second>
-										</first>
-										<second>34</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>11</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>3</count>
-					<item_version>0</item_version>
-					<item>333</item>
-					<item>334</item>
-					<item>335</item>
-				</oprand_edges>
-				<opcode>select</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>81</m_topoIndex>
-				<m_clusterGroupNumber>4</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_55">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>58</id>
-						<name>xor_ln34</name>
-						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
-						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
-						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/masudalab/DeepCAEonFPGA/HLS</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../layers_c/depthwise_conv2d.cpp</first>
-											<second>depthwise_conv2d_fix16</second>
-										</first>
-										<second>34</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>1</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>336</item>
-					<item>337</item>
-				</oprand_edges>
-				<opcode>xor</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>40</m_topoIndex>
-				<m_clusterGroupNumber>5</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_56">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>59</id>
 						<name>icmp_ln23</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
@@ -2705,27 +1720,27 @@
 				<oprand_edges>
 					<count>2</count>
 					<item_version>0</item_version>
-					<item>338</item>
-					<item>340</item>
+					<item>286</item>
+					<item>287</item>
 				</oprand_edges>
 				<opcode>icmp</opcode>
-				<m_Display>1</m_Display>
+				<m_Display>0</m_Display>
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>1</m_isLCDNode>
-				<m_isStartOfPath>1</m_isStartOfPath>
-				<m_delay>1.36</m_delay>
-				<m_topoIndex>37</m_topoIndex>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>1.77</m_delay>
+				<m_topoIndex>34</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
-			<item class_id_reference="9" object_id="_57">
+			<item class_id_reference="9" object_id="_37">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>60</id>
-						<name>and_ln34</name>
+						<id>40</id>
+						<name>select_ln35</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2740,7 +1755,992 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>5</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>288</item>
+					<item>289</item>
+					<item>290</item>
+				</oprand_edges>
+				<opcode>select</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>1.21</m_delay>
+				<m_topoIndex>35</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_38">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>41</id>
+						<name>select_ln35_1</name>
+						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
+						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
+						<lineNumber>35</lineNumber>
+						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/masudalab/DeepCAEonFPGA/HLS</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../layers_c/depthwise_conv2d.cpp</first>
+											<second>depthwise_conv2d_fix16</second>
+										</first>
+										<second>35</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>1</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>291</item>
+					<item>292</item>
+					<item>293</item>
+				</oprand_edges>
+				<opcode>select</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.99</m_delay>
+				<m_topoIndex>41</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_39">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>42</id>
+						<name>zext_ln35</name>
+						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
+						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
+						<lineNumber>35</lineNumber>
+						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/masudalab/DeepCAEonFPGA/HLS</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../layers_c/depthwise_conv2d.cpp</first>
+											<second>depthwise_conv2d_fix16</second>
+										</first>
+										<second>35</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>2</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>1</count>
+					<item_version>0</item_version>
+					<item>294</item>
+				</oprand_edges>
+				<opcode>zext</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>110</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_40">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>43</id>
+						<name>zext_ln35_25</name>
+						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
+						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
+						<lineNumber>35</lineNumber>
+						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/masudalab/DeepCAEonFPGA/HLS</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../layers_c/depthwise_conv2d.cpp</first>
+											<second>depthwise_conv2d_fix16</second>
+										</first>
+										<second>35</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>5</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>1</count>
+					<item_version>0</item_version>
+					<item>295</item>
+				</oprand_edges>
+				<opcode>zext</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>42</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_41">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>44</id>
+						<name>select_ln35_2</name>
+						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
+						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
+						<lineNumber>35</lineNumber>
+						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/masudalab/DeepCAEonFPGA/HLS</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../layers_c/depthwise_conv2d.cpp</first>
+											<second>depthwise_conv2d_fix16</second>
+										</first>
+										<second>35</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>1</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>296</item>
+					<item>297</item>
+					<item>298</item>
+				</oprand_edges>
+				<opcode>select</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.99</m_delay>
+				<m_topoIndex>43</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_42">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>45</id>
+						<name>zext_ln35_26</name>
+						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
+						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
+						<lineNumber>35</lineNumber>
+						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/masudalab/DeepCAEonFPGA/HLS</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../layers_c/depthwise_conv2d.cpp</first>
+											<second>depthwise_conv2d_fix16</second>
+										</first>
+										<second>35</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>2</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>1</count>
+					<item_version>0</item_version>
+					<item>299</item>
+				</oprand_edges>
+				<opcode>zext</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>111</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_43">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>46</id>
+						<name>or_ln</name>
+						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
+						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
+						<lineNumber>35</lineNumber>
+						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/masudalab/DeepCAEonFPGA/HLS</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../layers_c/depthwise_conv2d.cpp</first>
+											<second>depthwise_conv2d_fix16</second>
+										</first>
+										<second>35</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>2</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>301</item>
+					<item>302</item>
+					<item>303</item>
+				</oprand_edges>
+				<opcode>bitconcatenate</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>130</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_44">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>47</id>
+						<name>select_ln35_3</name>
+						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
+						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
+						<lineNumber>35</lineNumber>
+						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/masudalab/DeepCAEonFPGA/HLS</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../layers_c/depthwise_conv2d.cpp</first>
+											<second>depthwise_conv2d_fix16</second>
+										</first>
+										<second>35</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>2</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>304</item>
+					<item>306</item>
+					<item>307</item>
+				</oprand_edges>
+				<opcode>select</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>131</m_topoIndex>
+				<m_clusterGroupNumber>1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_45">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>48</id>
+						<name>select_ln35_4</name>
+						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
+						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
+						<lineNumber>35</lineNumber>
+						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/masudalab/DeepCAEonFPGA/HLS</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../layers_c/depthwise_conv2d.cpp</first>
+											<second>depthwise_conv2d_fix16</second>
+										</first>
+										<second>35</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>11</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>308</item>
+					<item>310</item>
+					<item>311</item>
+				</oprand_edges>
+				<opcode>select</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>44</m_topoIndex>
+				<m_clusterGroupNumber>2</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_46">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>49</id>
+						<name>select_ln35_5</name>
+						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
+						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
+						<lineNumber>35</lineNumber>
+						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/masudalab/DeepCAEonFPGA/HLS</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../layers_c/depthwise_conv2d.cpp</first>
+											<second>depthwise_conv2d_fix16</second>
+										</first>
+										<second>35</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>11</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>312</item>
+					<item>314</item>
+					<item>315</item>
+				</oprand_edges>
+				<opcode>select</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>45</m_topoIndex>
+				<m_clusterGroupNumber>3</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_47">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>50</id>
+						<name>select_ln35_6</name>
+						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
+						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
+						<lineNumber>35</lineNumber>
+						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/masudalab/DeepCAEonFPGA/HLS</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../layers_c/depthwise_conv2d.cpp</first>
+											<second>depthwise_conv2d_fix16</second>
+										</first>
+										<second>35</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>10</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>316</item>
+					<item>318</item>
+					<item>319</item>
+				</oprand_edges>
+				<opcode>select</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>46</m_topoIndex>
+				<m_clusterGroupNumber>4</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_48">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>51</id>
+						<name>tmp_s</name>
+						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
+						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
+						<lineNumber>35</lineNumber>
+						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/masudalab/DeepCAEonFPGA/HLS</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../layers_c/depthwise_conv2d.cpp</first>
+											<second>depthwise_conv2d_fix16</second>
+										</first>
+										<second>35</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>6</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>321</item>
+					<item>322</item>
+					<item>323</item>
+				</oprand_edges>
+				<opcode>bitconcatenate</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>47</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_49">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>52</id>
+						<name>p_shl4_cast_mid161_ca</name>
+						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
+						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
+						<lineNumber>35</lineNumber>
+						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/masudalab/DeepCAEonFPGA/HLS</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../layers_c/depthwise_conv2d.cpp</first>
+											<second>depthwise_conv2d_fix16</second>
+										</first>
+										<second>35</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>7</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>1</count>
+					<item_version>0</item_version>
+					<item>324</item>
+				</oprand_edges>
+				<opcode>zext</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>48</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_50">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>53</id>
+						<name>tmp_9</name>
+						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
+						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
+						<lineNumber>35</lineNumber>
+						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/masudalab/DeepCAEonFPGA/HLS</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../layers_c/depthwise_conv2d.cpp</first>
+											<second>depthwise_conv2d_fix16</second>
+										</first>
+										<second>35</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>3</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>326</item>
+					<item>327</item>
+					<item>328</item>
+				</oprand_edges>
+				<opcode>bitconcatenate</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>49</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_51">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>54</id>
+						<name>p_shl5_cast_mid165_ca</name>
+						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
+						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
+						<lineNumber>35</lineNumber>
+						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/masudalab/DeepCAEonFPGA/HLS</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../layers_c/depthwise_conv2d.cpp</first>
+											<second>depthwise_conv2d_fix16</second>
+										</first>
+										<second>35</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>7</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>1</count>
+					<item_version>0</item_version>
+					<item>329</item>
+				</oprand_edges>
+				<opcode>zext</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>50</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_52">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>55</id>
+						<name>tmp7_mid167</name>
+						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
+						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
+						<lineNumber>35</lineNumber>
+						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/masudalab/DeepCAEonFPGA/HLS</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../layers_c/depthwise_conv2d.cpp</first>
+											<second>depthwise_conv2d_fix16</second>
+										</first>
+										<second>35</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>7</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>330</item>
+					<item>331</item>
+				</oprand_edges>
+				<opcode>sub</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>1.82</m_delay>
+				<m_topoIndex>51</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_53">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>56</id>
+						<name>tmp7_mid167_cast</name>
+						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
+						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
+						<lineNumber>35</lineNumber>
+						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/masudalab/DeepCAEonFPGA/HLS</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../layers_c/depthwise_conv2d.cpp</first>
+											<second>depthwise_conv2d_fix16</second>
+										</first>
+										<second>35</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>11</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>1</count>
+					<item_version>0</item_version>
+					<item>332</item>
+				</oprand_edges>
+				<opcode>sext</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>52</m_topoIndex>
+				<m_clusterGroupNumber>5</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_54">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>57</id>
+						<name>select_ln35_7</name>
+						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
+						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
+						<lineNumber>35</lineNumber>
+						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/masudalab/DeepCAEonFPGA/HLS</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../layers_c/depthwise_conv2d.cpp</first>
+											<second>depthwise_conv2d_fix16</second>
+										</first>
+										<second>35</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>11</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>333</item>
+					<item>334</item>
+					<item>335</item>
+				</oprand_edges>
+				<opcode>select</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>53</m_topoIndex>
+				<m_clusterGroupNumber>5</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_55">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>58</id>
+						<name>xor_ln35</name>
+						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
+						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
+						<lineNumber>35</lineNumber>
+						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/masudalab/DeepCAEonFPGA/HLS</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../layers_c/depthwise_conv2d.cpp</first>
+											<second>depthwise_conv2d_fix16</second>
+										</first>
+										<second>35</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>1</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>336</item>
+					<item>337</item>
+				</oprand_edges>
+				<opcode>xor</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>36</m_topoIndex>
+				<m_clusterGroupNumber>6</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_56">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>59</id>
+						<name>icmp_ln24</name>
+						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
+						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
+						<lineNumber>24</lineNumber>
+						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/masudalab/DeepCAEonFPGA/HLS</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../layers_c/depthwise_conv2d.cpp</first>
+											<second>depthwise_conv2d_fix16</second>
+										</first>
+										<second>24</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>1</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>338</item>
+					<item>340</item>
+				</oprand_edges>
+				<opcode>icmp</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>1.36</m_delay>
+				<m_topoIndex>37</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_57">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>60</id>
+						<name>and_ln35</name>
+						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
+						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
+						<lineNumber>35</lineNumber>
+						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/masudalab/DeepCAEonFPGA/HLS</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../layers_c/depthwise_conv2d.cpp</first>
+											<second>depthwise_conv2d_fix16</second>
+										</first>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -2758,13 +2758,13 @@
 					<item>342</item>
 				</oprand_edges>
 				<opcode>and</opcode>
-				<m_Display>1</m_Display>
+				<m_Display>0</m_Display>
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>1</m_isLCDNode>
+				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.97</m_delay>
-				<m_topoIndex>41</m_topoIndex>
-				<m_clusterGroupNumber>5</m_clusterGroupNumber>
+				<m_topoIndex>38</m_topoIndex>
+				<m_clusterGroupNumber>6</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_58">
 				<Value>
@@ -2774,7 +2774,7 @@
 						<name>out_h</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>22</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2789,7 +2789,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>22</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -2812,7 +2812,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>1.78</m_delay>
-				<m_topoIndex>42</m_topoIndex>
+				<m_topoIndex>39</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_59">
@@ -2823,7 +2823,7 @@
 						<name>empty_54</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2838,7 +2838,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -2861,8 +2861,8 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>44</m_topoIndex>
-				<m_clusterGroupNumber>6</m_clusterGroupNumber>
+				<m_topoIndex>54</m_topoIndex>
+				<m_clusterGroupNumber>7</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_60">
 				<Value>
@@ -2872,7 +2872,7 @@
 						<name>out_w_0_mid2</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2887,7 +2887,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -2906,13 +2906,13 @@
 					<item>349</item>
 				</oprand_edges>
 				<opcode>select</opcode>
-				<m_Display>1</m_Display>
+				<m_Display>0</m_Display>
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>1</m_isLCDNode>
+				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>1.21</m_delay>
-				<m_topoIndex>45</m_topoIndex>
-				<m_clusterGroupNumber>6</m_clusterGroupNumber>
+				<m_topoIndex>55</m_topoIndex>
+				<m_clusterGroupNumber>7</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_61">
 				<Value>
@@ -2922,7 +2922,7 @@
 						<name>p_shl10_mid1</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>22</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2937,7 +2937,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>22</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -2961,7 +2961,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>46</m_topoIndex>
+				<m_topoIndex>56</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_62">
@@ -2972,7 +2972,7 @@
 						<name>p_shl10_cast_mid1</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>22</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2987,7 +2987,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>22</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -3009,7 +3009,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>47</m_topoIndex>
+				<m_topoIndex>57</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_63">
@@ -3020,7 +3020,7 @@
 						<name>p_shl11_mid1</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>22</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3035,7 +3035,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>22</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -3059,7 +3059,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>48</m_topoIndex>
+				<m_topoIndex>58</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_64">
@@ -3070,7 +3070,7 @@
 						<name>p_shl11_cast_mid1</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>22</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3085,7 +3085,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>22</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -3107,7 +3107,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>49</m_topoIndex>
+				<m_topoIndex>59</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_65">
@@ -3118,7 +3118,7 @@
 						<name>tmp5_0_0_mid1</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>22</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3133,7 +3133,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>22</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -3156,7 +3156,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>1.73</m_delay>
-				<m_topoIndex>50</m_topoIndex>
+				<m_topoIndex>60</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_66">
@@ -3167,7 +3167,7 @@
 						<name>tmp5_0_0_mid2</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3182,7 +3182,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -3207,7 +3207,7 @@
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.69</m_delay>
 				<m_topoIndex>61</m_topoIndex>
-				<m_clusterGroupNumber>1</m_clusterGroupNumber>
+				<m_clusterGroupNumber>2</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_67">
 				<Value>
@@ -3217,7 +3217,7 @@
 						<name>tmp_1_0_mid1</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3232,7 +3232,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -3255,7 +3255,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>1.78</m_delay>
-				<m_topoIndex>51</m_topoIndex>
+				<m_topoIndex>62</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_68">
@@ -3266,7 +3266,7 @@
 						<name>p_shl8_mid1</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3281,7 +3281,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -3305,7 +3305,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>62</m_topoIndex>
+				<m_topoIndex>63</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_69">
@@ -3316,7 +3316,7 @@
 						<name>p_shl8_cast_mid1</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3331,7 +3331,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -3353,7 +3353,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>63</m_topoIndex>
+				<m_topoIndex>64</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_70">
@@ -3364,7 +3364,7 @@
 						<name>p_shl9_mid1</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3379,7 +3379,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -3403,7 +3403,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>64</m_topoIndex>
+				<m_topoIndex>65</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_71">
@@ -3414,7 +3414,7 @@
 						<name>p_shl9_cast_mid1</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3429,7 +3429,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -3451,7 +3451,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>65</m_topoIndex>
+				<m_topoIndex>66</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_72">
@@ -3462,7 +3462,7 @@
 						<name>tmp5_1_0_mid1</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3477,7 +3477,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -3500,7 +3500,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>1.73</m_delay>
-				<m_topoIndex>66</m_topoIndex>
+				<m_topoIndex>67</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_73">
@@ -3511,7 +3511,7 @@
 						<name>tmp5_1_0_mid2</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3526,7 +3526,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -3550,8 +3550,8 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.69</m_delay>
-				<m_topoIndex>82</m_topoIndex>
-				<m_clusterGroupNumber>2</m_clusterGroupNumber>
+				<m_topoIndex>68</m_topoIndex>
+				<m_clusterGroupNumber>3</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_74">
 				<Value>
@@ -3561,7 +3561,7 @@
 						<name>tmp_2_0_mid1</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3576,7 +3576,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -3599,7 +3599,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>1.78</m_delay>
-				<m_topoIndex>52</m_topoIndex>
+				<m_topoIndex>69</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_75">
@@ -3610,7 +3610,7 @@
 						<name>p_shl6_mid1</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3625,7 +3625,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -3649,7 +3649,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>67</m_topoIndex>
+				<m_topoIndex>70</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_76">
@@ -3660,7 +3660,7 @@
 						<name>p_shl7_mid1</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3675,7 +3675,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -3699,7 +3699,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>68</m_topoIndex>
+				<m_topoIndex>71</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_77">
@@ -3710,7 +3710,7 @@
 						<name>p_shl7_cast_mid1</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3725,7 +3725,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -3747,7 +3747,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>69</m_topoIndex>
+				<m_topoIndex>72</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_78">
@@ -3758,7 +3758,7 @@
 						<name>tmp5_2_0_mid1</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3773,7 +3773,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -3796,7 +3796,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>1.73</m_delay>
-				<m_topoIndex>70</m_topoIndex>
+				<m_topoIndex>73</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_79">
@@ -3807,7 +3807,7 @@
 						<name>tmp5_2_0_mid2</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3822,7 +3822,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -3846,8 +3846,8 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.68</m_delay>
-				<m_topoIndex>83</m_topoIndex>
-				<m_clusterGroupNumber>3</m_clusterGroupNumber>
+				<m_topoIndex>74</m_topoIndex>
+				<m_clusterGroupNumber>4</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_80">
 				<Value>
@@ -3857,7 +3857,7 @@
 						<name>tmp6_mid1</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>22</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3872,7 +3872,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>22</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -3895,7 +3895,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>1.78</m_delay>
-				<m_topoIndex>53</m_topoIndex>
+				<m_topoIndex>75</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_81">
@@ -3906,7 +3906,7 @@
 						<name>p_shl4_mid1</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>22</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3921,7 +3921,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>22</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -3945,7 +3945,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>71</m_topoIndex>
+				<m_topoIndex>76</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_82">
@@ -3956,7 +3956,7 @@
 						<name>p_shl4_cast_mid1</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>22</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3971,7 +3971,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>22</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -3993,7 +3993,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>72</m_topoIndex>
+				<m_topoIndex>77</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_83">
@@ -4004,7 +4004,7 @@
 						<name>p_shl5_mid1</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>22</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4019,7 +4019,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>22</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -4043,7 +4043,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>73</m_topoIndex>
+				<m_topoIndex>78</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_84">
@@ -4054,7 +4054,7 @@
 						<name>p_shl5_cast_mid1</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>22</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4069,7 +4069,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>22</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -4091,7 +4091,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>74</m_topoIndex>
+				<m_topoIndex>79</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_85">
@@ -4102,7 +4102,7 @@
 						<name>tmp7_mid1</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>22</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4117,7 +4117,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>22</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -4140,7 +4140,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>1.73</m_delay>
-				<m_topoIndex>75</m_topoIndex>
+				<m_topoIndex>80</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_86">
@@ -4151,7 +4151,7 @@
 						<name>tmp7_mid2</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4166,7 +4166,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -4190,18 +4190,18 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>84</m_topoIndex>
-				<m_clusterGroupNumber>4</m_clusterGroupNumber>
+				<m_topoIndex>81</m_topoIndex>
+				<m_clusterGroupNumber>5</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_87">
 				<Value>
 					<Obj>
 						<type>0</type>
 						<id>90</id>
-						<name>select_ln22</name>
+						<name>select_ln23</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>22</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4216,7 +4216,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>22</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -4240,7 +4240,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>1.21</m_delay>
-				<m_topoIndex>54</m_topoIndex>
+				<m_topoIndex>132</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_88">
@@ -4248,10 +4248,10 @@
 					<Obj>
 						<type>0</type>
 						<id>93</id>
-						<name>zext_ln34_14</name>
+						<name>zext_ln35_2</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4266,7 +4266,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -4288,7 +4288,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>120</m_topoIndex>
+				<m_topoIndex>133</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_89">
@@ -4296,10 +4296,10 @@
 					<Obj>
 						<type>0</type>
 						<id>94</id>
-						<name>zext_ln34_15</name>
+						<name>zext_ln35_12</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4314,7 +4314,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -4336,7 +4336,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>85</m_topoIndex>
+				<m_topoIndex>82</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_90">
@@ -4344,10 +4344,10 @@
 					<Obj>
 						<type>0</type>
 						<id>95</id>
-						<name>add_ln34</name>
+						<name>add_ln35</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4362,7 +4362,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -4385,7 +4385,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>1.63</m_delay>
-				<m_topoIndex>86</m_topoIndex>
+				<m_topoIndex>83</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_91">
@@ -4393,10 +4393,10 @@
 					<Obj>
 						<type>0</type>
 						<id>96</id>
-						<name>sext_ln34_1</name>
+						<name>sext_ln35_1</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4411,7 +4411,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -4433,7 +4433,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>94</m_topoIndex>
+				<m_topoIndex>84</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_92">
@@ -4441,10 +4441,10 @@
 					<Obj>
 						<type>0</type>
 						<id>97</id>
-						<name>zext_ln34_4</name>
+						<name>zext_ln35_3</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4459,7 +4459,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -4481,7 +4481,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>95</m_topoIndex>
+				<m_topoIndex>85</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_93">
@@ -4492,7 +4492,7 @@
 						<name>input_addr</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4507,7 +4507,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -4531,7 +4531,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>96</m_topoIndex>
+				<m_topoIndex>86</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_94">
@@ -4542,7 +4542,7 @@
 						<name>input_load</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4557,7 +4557,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -4578,8 +4578,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.68</m_delay>
-				<m_topoIndex>97</m_topoIndex>
+				<m_delay>3.25</m_delay>
+				<m_topoIndex>87</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_95">
@@ -4587,10 +4587,10 @@
 					<Obj>
 						<type>0</type>
 						<id>100</id>
-						<name>sext_ln34_2</name>
+						<name>sext_ln35_2</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4605,7 +4605,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -4623,11 +4623,11 @@
 				</oprand_edges>
 				<opcode>sext</opcode>
 				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>1</m_isOnCriticalPath>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>1</m_isStartOfPath>
+				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>134</m_topoIndex>
+				<m_topoIndex>112</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_96">
@@ -4638,7 +4638,7 @@
 						<name>tmp_5</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4653,7 +4653,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -4678,8 +4678,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.57</m_delay>
-				<m_topoIndex>98</m_topoIndex>
+				<m_delay>1.77</m_delay>
+				<m_topoIndex>113</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_97">
@@ -4687,10 +4687,10 @@
 					<Obj>
 						<type>0</type>
 						<id>102</id>
-						<name>sext_ln34_3</name>
+						<name>sext_ln35_3</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4705,7 +4705,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -4727,7 +4727,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>135</m_topoIndex>
+				<m_topoIndex>114</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_98">
@@ -4735,10 +4735,10 @@
 					<Obj>
 						<type>0</type>
 						<id>103</id>
-						<name>mul_ln34</name>
+						<name>mul_ln35</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4753,7 +4753,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -4772,11 +4772,11 @@
 				</oprand_edges>
 				<opcode>mul</opcode>
 				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>1</m_isOnCriticalPath>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>6.38</m_delay>
-				<m_topoIndex>136</m_topoIndex>
+				<m_topoIndex>115</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_99">
@@ -4787,7 +4787,7 @@
 						<name>trunc_ln</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>40</lineNumber>
+						<lineNumber>41</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4802,7 +4802,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>40</second>
+										<second>41</second>
 									</item>
 								</second>
 							</item>
@@ -4827,7 +4827,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>146</m_topoIndex>
+				<m_topoIndex>116</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_100">
@@ -4838,7 +4838,7 @@
 						<name>out_w</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4853,7 +4853,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -4865,19 +4865,18 @@
 					<bitwidth>5</bitwidth>
 				</Value>
 				<oprand_edges>
-					<count>3</count>
+					<count>2</count>
 					<item_version>0</item_version>
 					<item>442</item>
 					<item>443</item>
-					<item>2147483647</item>
 				</oprand_edges>
 				<opcode>add</opcode>
-				<m_Display>1</m_Display>
+				<m_Display>0</m_Display>
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>1</m_isLCDNode>
+				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>1.78</m_delay>
-				<m_topoIndex>76</m_topoIndex>
+				<m_topoIndex>88</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_101">
@@ -4885,10 +4884,10 @@
 					<Obj>
 						<type>0</type>
 						<id>106</id>
-						<name>zext_ln34_16</name>
+						<name>zext_ln35_13</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4903,7 +4902,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -4925,7 +4924,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>121</m_topoIndex>
+				<m_topoIndex>134</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_102">
@@ -4933,10 +4932,10 @@
 					<Obj>
 						<type>0</type>
 						<id>107</id>
-						<name>zext_ln34_17</name>
+						<name>zext_ln35_14</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4951,7 +4950,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -4973,7 +4972,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>87</m_topoIndex>
+				<m_topoIndex>89</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_103">
@@ -4981,10 +4980,10 @@
 					<Obj>
 						<type>0</type>
 						<id>108</id>
-						<name>add_ln34_3</name>
+						<name>add_ln35_2</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4999,7 +4998,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -5022,7 +5021,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>1.63</m_delay>
-				<m_topoIndex>88</m_topoIndex>
+				<m_topoIndex>90</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_104">
@@ -5030,10 +5029,10 @@
 					<Obj>
 						<type>0</type>
 						<id>109</id>
-						<name>sext_ln34_4</name>
+						<name>sext_ln35_4</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5048,7 +5047,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -5070,7 +5069,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>99</m_topoIndex>
+				<m_topoIndex>91</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_105">
@@ -5078,10 +5077,10 @@
 					<Obj>
 						<type>0</type>
 						<id>110</id>
-						<name>zext_ln34_5</name>
+						<name>zext_ln35_4</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5096,7 +5095,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -5118,7 +5117,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>100</m_topoIndex>
+				<m_topoIndex>92</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_106">
@@ -5129,7 +5128,7 @@
 						<name>input_addr_7</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5144,7 +5143,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -5168,7 +5167,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>101</m_topoIndex>
+				<m_topoIndex>93</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_107">
@@ -5179,7 +5178,7 @@
 						<name>input_load_7</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5194,7 +5193,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -5215,8 +5214,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.68</m_delay>
-				<m_topoIndex>102</m_topoIndex>
+				<m_delay>3.25</m_delay>
+				<m_topoIndex>94</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_108">
@@ -5224,10 +5223,10 @@
 					<Obj>
 						<type>0</type>
 						<id>113</id>
-						<name>sext_ln34_5</name>
+						<name>sext_ln35_5</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5242,7 +5241,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -5264,7 +5263,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>137</m_topoIndex>
+				<m_topoIndex>117</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_109">
@@ -5275,7 +5274,7 @@
 						<name>tmp_6</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5290,7 +5289,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -5315,8 +5314,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.57</m_delay>
-				<m_topoIndex>103</m_topoIndex>
+				<m_delay>1.77</m_delay>
+				<m_topoIndex>118</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_110">
@@ -5324,10 +5323,10 @@
 					<Obj>
 						<type>0</type>
 						<id>115</id>
-						<name>sext_ln34_6</name>
+						<name>sext_ln35_6</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5342,7 +5341,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -5364,7 +5363,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>138</m_topoIndex>
+				<m_topoIndex>119</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_111">
@@ -5372,10 +5371,10 @@
 					<Obj>
 						<type>0</type>
 						<id>116</id>
-						<name>mul_ln34_1</name>
+						<name>mul_ln35_1</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5390,7 +5389,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -5413,7 +5412,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>6.38</m_delay>
-				<m_topoIndex>139</m_topoIndex>
+				<m_topoIndex>120</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_112">
@@ -5421,10 +5420,10 @@
 					<Obj>
 						<type>0</type>
 						<id>117</id>
-						<name>trunc_ln40_1</name>
+						<name>trunc_ln41_1</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>40</lineNumber>
+						<lineNumber>41</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5439,7 +5438,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>40</second>
+										<second>41</second>
 									</item>
 								</second>
 							</item>
@@ -5464,7 +5463,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>147</m_topoIndex>
+				<m_topoIndex>121</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_113">
@@ -5472,10 +5471,10 @@
 					<Obj>
 						<type>0</type>
 						<id>118</id>
-						<name>add_ln34_4</name>
+						<name>add_ln35_3</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5490,7 +5489,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -5513,7 +5512,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>1.78</m_delay>
-				<m_topoIndex>89</m_topoIndex>
+				<m_topoIndex>96</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_114">
@@ -5521,10 +5520,10 @@
 					<Obj>
 						<type>0</type>
 						<id>119</id>
-						<name>zext_ln34_18</name>
+						<name>zext_ln35_15</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5539,7 +5538,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -5561,7 +5560,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>122</m_topoIndex>
+				<m_topoIndex>135</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_115">
@@ -5569,10 +5568,10 @@
 					<Obj>
 						<type>0</type>
 						<id>120</id>
-						<name>zext_ln34_19</name>
+						<name>zext_ln35_16</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5587,7 +5586,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -5609,7 +5608,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>104</m_topoIndex>
+				<m_topoIndex>97</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_116">
@@ -5617,10 +5616,10 @@
 					<Obj>
 						<type>0</type>
 						<id>121</id>
-						<name>add_ln34_5</name>
+						<name>add_ln35_4</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5635,7 +5634,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -5658,7 +5657,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>1.63</m_delay>
-				<m_topoIndex>105</m_topoIndex>
+				<m_topoIndex>98</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_117">
@@ -5666,10 +5665,10 @@
 					<Obj>
 						<type>0</type>
 						<id>122</id>
-						<name>sext_ln34_7</name>
+						<name>sext_ln35_7</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5684,7 +5683,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -5706,7 +5705,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>110</m_topoIndex>
+				<m_topoIndex>99</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_118">
@@ -5714,10 +5713,10 @@
 					<Obj>
 						<type>0</type>
 						<id>123</id>
-						<name>zext_ln34_6</name>
+						<name>zext_ln35_5</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5732,7 +5731,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -5754,7 +5753,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>111</m_topoIndex>
+				<m_topoIndex>100</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_119">
@@ -5765,7 +5764,7 @@
 						<name>input_addr_8</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5780,7 +5779,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -5804,7 +5803,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>112</m_topoIndex>
+				<m_topoIndex>101</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_120">
@@ -5815,7 +5814,7 @@
 						<name>input_load_8</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5830,7 +5829,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -5847,12 +5846,12 @@
 					<item>478</item>
 				</oprand_edges>
 				<opcode>load</opcode>
-				<m_Display>0</m_Display>
+				<m_Display>1</m_Display>
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.68</m_delay>
-				<m_topoIndex>113</m_topoIndex>
+				<m_isLCDNode>1</m_isLCDNode>
+				<m_isStartOfPath>1</m_isStartOfPath>
+				<m_delay>3.25</m_delay>
+				<m_topoIndex>102</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_121">
@@ -5860,10 +5859,10 @@
 					<Obj>
 						<type>0</type>
 						<id>126</id>
-						<name>sext_ln34_8</name>
+						<name>sext_ln35_8</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5878,7 +5877,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -5900,7 +5899,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>148</m_topoIndex>
+				<m_topoIndex>136</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_122">
@@ -5911,7 +5910,7 @@
 						<name>tmp_7</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5926,7 +5925,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -5951,8 +5950,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.57</m_delay>
-				<m_topoIndex>114</m_topoIndex>
+				<m_delay>1.77</m_delay>
+				<m_topoIndex>137</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_123">
@@ -5960,10 +5959,10 @@
 					<Obj>
 						<type>0</type>
 						<id>128</id>
-						<name>sext_ln34_9</name>
+						<name>sext_ln35_9</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5978,7 +5977,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -6000,7 +5999,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>149</m_topoIndex>
+				<m_topoIndex>138</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_124">
@@ -6008,10 +6007,10 @@
 					<Obj>
 						<type>0</type>
 						<id>129</id>
-						<name>mul_ln34_2</name>
+						<name>mul_ln35_2</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6026,7 +6025,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -6049,7 +6048,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>6.38</m_delay>
-				<m_topoIndex>150</m_topoIndex>
+				<m_topoIndex>139</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_125">
@@ -6057,10 +6056,10 @@
 					<Obj>
 						<type>0</type>
 						<id>130</id>
-						<name>trunc_ln40_2</name>
+						<name>trunc_ln41_2</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>40</lineNumber>
+						<lineNumber>41</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6075,7 +6074,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>40</second>
+										<second>41</second>
 									</item>
 								</second>
 							</item>
@@ -6100,7 +6099,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>158</m_topoIndex>
+				<m_topoIndex>140</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_126">
@@ -6108,10 +6107,10 @@
 					<Obj>
 						<type>0</type>
 						<id>131</id>
-						<name>add_ln34_6</name>
+						<name>add_ln35_5</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6126,7 +6125,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -6149,7 +6148,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>1.63</m_delay>
-				<m_topoIndex>106</m_topoIndex>
+				<m_topoIndex>103</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_127">
@@ -6157,10 +6156,10 @@
 					<Obj>
 						<type>0</type>
 						<id>132</id>
-						<name>sext_ln34_10</name>
+						<name>sext_ln35_10</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6175,7 +6174,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -6197,7 +6196,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>115</m_topoIndex>
+				<m_topoIndex>104</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_128">
@@ -6205,10 +6204,10 @@
 					<Obj>
 						<type>0</type>
 						<id>133</id>
-						<name>zext_ln34_7</name>
+						<name>zext_ln35_6</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6223,7 +6222,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -6245,7 +6244,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>116</m_topoIndex>
+				<m_topoIndex>105</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_129">
@@ -6256,7 +6255,7 @@
 						<name>input_addr_9</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6271,7 +6270,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -6295,7 +6294,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>117</m_topoIndex>
+				<m_topoIndex>106</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_130">
@@ -6306,7 +6305,7 @@
 						<name>input_load_9</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6321,7 +6320,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -6342,8 +6341,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.68</m_delay>
-				<m_topoIndex>118</m_topoIndex>
+				<m_delay>3.25</m_delay>
+				<m_topoIndex>107</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_131">
@@ -6351,10 +6350,10 @@
 					<Obj>
 						<type>0</type>
 						<id>136</id>
-						<name>sext_ln34_11</name>
+						<name>sext_ln35_11</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6369,7 +6368,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -6391,7 +6390,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>151</m_topoIndex>
+				<m_topoIndex>141</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_132">
@@ -6402,7 +6401,7 @@
 						<name>tmp_8</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6417,7 +6416,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -6442,19 +6441,19 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.57</m_delay>
-				<m_topoIndex>119</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+				<m_delay>1.77</m_delay>
+				<m_topoIndex>142</m_topoIndex>
+				<m_clusterGroupNumber>1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_133">
 				<Value>
 					<Obj>
 						<type>0</type>
 						<id>138</id>
-						<name>sext_ln34_12</name>
+						<name>sext_ln35_12</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6469,7 +6468,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -6491,7 +6490,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>152</m_topoIndex>
+				<m_topoIndex>143</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_134">
@@ -6499,10 +6498,10 @@
 					<Obj>
 						<type>0</type>
 						<id>139</id>
-						<name>mul_ln34_3</name>
+						<name>mul_ln35_3</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6517,7 +6516,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -6540,7 +6539,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>6.38</m_delay>
-				<m_topoIndex>153</m_topoIndex>
+				<m_topoIndex>144</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_135">
@@ -6548,10 +6547,10 @@
 					<Obj>
 						<type>0</type>
 						<id>140</id>
-						<name>trunc_ln40_3</name>
+						<name>trunc_ln41_3</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>40</lineNumber>
+						<lineNumber>41</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6566,7 +6565,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>40</second>
+										<second>41</second>
 									</item>
 								</second>
 							</item>
@@ -6591,7 +6590,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>159</m_topoIndex>
+				<m_topoIndex>145</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_136">
@@ -6599,10 +6598,10 @@
 					<Obj>
 						<type>0</type>
 						<id>141</id>
-						<name>add_ln34_7</name>
+						<name>add_ln35_6</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6617,7 +6616,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -6640,7 +6639,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>1.63</m_delay>
-				<m_topoIndex>107</m_topoIndex>
+				<m_topoIndex>108</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_137">
@@ -6648,10 +6647,10 @@
 					<Obj>
 						<type>0</type>
 						<id>142</id>
-						<name>sext_ln34_13</name>
+						<name>sext_ln35_13</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6666,7 +6665,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -6688,7 +6687,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>123</m_topoIndex>
+				<m_topoIndex>122</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_138">
@@ -6696,10 +6695,10 @@
 					<Obj>
 						<type>0</type>
 						<id>143</id>
-						<name>zext_ln34_8</name>
+						<name>zext_ln35_7</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6714,7 +6713,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -6736,7 +6735,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>124</m_topoIndex>
+				<m_topoIndex>123</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_139">
@@ -6747,7 +6746,7 @@
 						<name>input_addr_10</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6762,7 +6761,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -6786,7 +6785,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>125</m_topoIndex>
+				<m_topoIndex>124</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_140">
@@ -6797,7 +6796,7 @@
 						<name>input_load_10</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6812,7 +6811,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -6833,8 +6832,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.68</m_delay>
-				<m_topoIndex>126</m_topoIndex>
+				<m_delay>3.25</m_delay>
+				<m_topoIndex>125</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_141">
@@ -6842,10 +6841,10 @@
 					<Obj>
 						<type>0</type>
 						<id>146</id>
-						<name>sext_ln34_14</name>
+						<name>sext_ln35_14</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6860,7 +6859,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -6882,7 +6881,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>160</m_topoIndex>
+				<m_topoIndex>157</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_142">
@@ -6890,10 +6889,10 @@
 					<Obj>
 						<type>0</type>
 						<id>147</id>
-						<name>mul_ln34_4</name>
+						<name>mul_ln35_4</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6908,7 +6907,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -6931,7 +6930,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>6.38</m_delay>
-				<m_topoIndex>161</m_topoIndex>
+				<m_topoIndex>158</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_143">
@@ -6939,10 +6938,10 @@
 					<Obj>
 						<type>0</type>
 						<id>148</id>
-						<name>trunc_ln40_4</name>
+						<name>trunc_ln41_4</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>40</lineNumber>
+						<lineNumber>41</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6957,7 +6956,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>40</second>
+										<second>41</second>
 									</item>
 								</second>
 							</item>
@@ -6982,7 +6981,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>166</m_topoIndex>
+				<m_topoIndex>159</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_144">
@@ -6990,10 +6989,10 @@
 					<Obj>
 						<type>0</type>
 						<id>149</id>
-						<name>add_ln34_8</name>
+						<name>add_ln35_7</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -7008,7 +7007,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -7031,7 +7030,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>1.63</m_delay>
-				<m_topoIndex>108</m_topoIndex>
+				<m_topoIndex>109</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_145">
@@ -7039,10 +7038,10 @@
 					<Obj>
 						<type>0</type>
 						<id>150</id>
-						<name>sext_ln34_15</name>
+						<name>sext_ln35_15</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -7057,7 +7056,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -7079,7 +7078,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>127</m_topoIndex>
+				<m_topoIndex>126</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_146">
@@ -7087,10 +7086,10 @@
 					<Obj>
 						<type>0</type>
 						<id>151</id>
-						<name>zext_ln34_9</name>
+						<name>zext_ln35_8</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -7105,7 +7104,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -7127,7 +7126,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>128</m_topoIndex>
+				<m_topoIndex>127</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_147">
@@ -7138,7 +7137,7 @@
 						<name>input_addr_11</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -7153,7 +7152,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -7177,7 +7176,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>129</m_topoIndex>
+				<m_topoIndex>128</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_148">
@@ -7188,7 +7187,7 @@
 						<name>input_load_11</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -7203,7 +7202,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -7224,8 +7223,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.68</m_delay>
-				<m_topoIndex>130</m_topoIndex>
+				<m_delay>3.25</m_delay>
+				<m_topoIndex>129</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_149">
@@ -7233,10 +7232,10 @@
 					<Obj>
 						<type>0</type>
 						<id>154</id>
-						<name>sext_ln34_16</name>
+						<name>sext_ln35_16</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -7251,7 +7250,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -7273,7 +7272,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>162</m_topoIndex>
+				<m_topoIndex>160</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_150">
@@ -7281,10 +7280,10 @@
 					<Obj>
 						<type>0</type>
 						<id>155</id>
-						<name>mul_ln34_5</name>
+						<name>mul_ln35_5</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -7299,7 +7298,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -7322,7 +7321,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>6.38</m_delay>
-				<m_topoIndex>163</m_topoIndex>
+				<m_topoIndex>161</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_151">
@@ -7330,10 +7329,10 @@
 					<Obj>
 						<type>0</type>
 						<id>156</id>
-						<name>trunc_ln40_5</name>
+						<name>trunc_ln41_5</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>40</lineNumber>
+						<lineNumber>41</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -7348,7 +7347,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>40</second>
+										<second>41</second>
 									</item>
 								</second>
 							</item>
@@ -7373,7 +7372,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>167</m_topoIndex>
+				<m_topoIndex>162</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_152">
@@ -7381,10 +7380,10 @@
 					<Obj>
 						<type>0</type>
 						<id>157</id>
-						<name>add_ln34_9</name>
+						<name>add_ln35_8</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -7399,7 +7398,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -7422,7 +7421,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>1.73</m_delay>
-				<m_topoIndex>131</m_topoIndex>
+				<m_topoIndex>146</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_153">
@@ -7430,10 +7429,10 @@
 					<Obj>
 						<type>0</type>
 						<id>158</id>
-						<name>zext_ln34_10</name>
+						<name>zext_ln35_9</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -7448,7 +7447,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -7470,7 +7469,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>140</m_topoIndex>
+				<m_topoIndex>147</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_154">
@@ -7481,7 +7480,7 @@
 						<name>input_addr_12</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -7496,7 +7495,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -7520,7 +7519,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>141</m_topoIndex>
+				<m_topoIndex>148</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_155">
@@ -7531,7 +7530,7 @@
 						<name>input_load_12</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -7546,7 +7545,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -7563,12 +7562,12 @@
 					<item>549</item>
 				</oprand_edges>
 				<opcode>load</opcode>
-				<m_Display>1</m_Display>
+				<m_Display>0</m_Display>
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>1</m_isLCDNode>
-				<m_isStartOfPath>1</m_isStartOfPath>
-				<m_delay>1.68</m_delay>
-				<m_topoIndex>142</m_topoIndex>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>3.25</m_delay>
+				<m_topoIndex>149</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_156">
@@ -7576,10 +7575,10 @@
 					<Obj>
 						<type>0</type>
 						<id>161</id>
-						<name>sext_ln34_17</name>
+						<name>sext_ln35_17</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -7594,7 +7593,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -7624,10 +7623,10 @@
 					<Obj>
 						<type>0</type>
 						<id>162</id>
-						<name>mul_ln34_6</name>
+						<name>mul_ln35_6</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -7642,7 +7641,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -7673,10 +7672,10 @@
 					<Obj>
 						<type>0</type>
 						<id>163</id>
-						<name>trunc_ln40_6</name>
+						<name>trunc_ln41_6</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>40</lineNumber>
+						<lineNumber>41</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -7691,7 +7690,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>40</second>
+										<second>41</second>
 									</item>
 								</second>
 							</item>
@@ -7716,7 +7715,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>173</m_topoIndex>
+				<m_topoIndex>170</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_159">
@@ -7724,10 +7723,10 @@
 					<Obj>
 						<type>0</type>
 						<id>164</id>
-						<name>add_ln34_10</name>
+						<name>add_ln35_9</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -7742,7 +7741,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -7765,7 +7764,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>1.73</m_delay>
-				<m_topoIndex>132</m_topoIndex>
+				<m_topoIndex>150</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_160">
@@ -7773,10 +7772,10 @@
 					<Obj>
 						<type>0</type>
 						<id>165</id>
-						<name>zext_ln34_11</name>
+						<name>zext_ln35_10</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -7791,7 +7790,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -7813,7 +7812,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>143</m_topoIndex>
+				<m_topoIndex>151</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_161">
@@ -7824,7 +7823,7 @@
 						<name>input_addr_13</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -7839,7 +7838,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -7863,7 +7862,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>144</m_topoIndex>
+				<m_topoIndex>152</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_162">
@@ -7874,7 +7873,7 @@
 						<name>input_load_13</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -7889,7 +7888,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -7910,8 +7909,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.68</m_delay>
-				<m_topoIndex>145</m_topoIndex>
+				<m_delay>3.25</m_delay>
+				<m_topoIndex>153</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_163">
@@ -7919,10 +7918,10 @@
 					<Obj>
 						<type>0</type>
 						<id>168</id>
-						<name>sext_ln34_18</name>
+						<name>sext_ln35_18</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -7937,7 +7936,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -7959,7 +7958,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>170</m_topoIndex>
+				<m_topoIndex>171</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_164">
@@ -7967,10 +7966,10 @@
 					<Obj>
 						<type>0</type>
 						<id>169</id>
-						<name>mul_ln34_7</name>
+						<name>mul_ln35_7</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -7985,7 +7984,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -8008,7 +8007,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>6.38</m_delay>
-				<m_topoIndex>171</m_topoIndex>
+				<m_topoIndex>172</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_165">
@@ -8016,10 +8015,10 @@
 					<Obj>
 						<type>0</type>
 						<id>170</id>
-						<name>trunc_ln40_7</name>
+						<name>trunc_ln41_7</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>40</lineNumber>
+						<lineNumber>41</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -8034,7 +8033,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>40</second>
+										<second>41</second>
 									</item>
 								</second>
 							</item>
@@ -8059,7 +8058,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>174</m_topoIndex>
+				<m_topoIndex>173</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_166">
@@ -8067,10 +8066,10 @@
 					<Obj>
 						<type>0</type>
 						<id>171</id>
-						<name>add_ln34_11</name>
+						<name>add_ln35_10</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -8085,7 +8084,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -8108,7 +8107,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>1.73</m_delay>
-				<m_topoIndex>133</m_topoIndex>
+				<m_topoIndex>154</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_167">
@@ -8116,10 +8115,10 @@
 					<Obj>
 						<type>0</type>
 						<id>172</id>
-						<name>zext_ln34_12</name>
+						<name>zext_ln35_11</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -8134,7 +8133,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -8156,7 +8155,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>154</m_topoIndex>
+				<m_topoIndex>163</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_168">
@@ -8167,7 +8166,7 @@
 						<name>input_addr_14</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -8182,7 +8181,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -8206,7 +8205,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>155</m_topoIndex>
+				<m_topoIndex>164</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_169">
@@ -8217,7 +8216,7 @@
 						<name>input_load_14</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -8232,7 +8231,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -8253,8 +8252,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.68</m_delay>
-				<m_topoIndex>156</m_topoIndex>
+				<m_delay>3.25</m_delay>
+				<m_topoIndex>165</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_170">
@@ -8262,10 +8261,10 @@
 					<Obj>
 						<type>0</type>
 						<id>175</id>
-						<name>sext_ln34_19</name>
+						<name>sext_ln35_19</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -8280,7 +8279,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -8310,10 +8309,10 @@
 					<Obj>
 						<type>0</type>
 						<id>176</id>
-						<name>mul_ln34_8</name>
+						<name>mul_ln35_8</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -8328,7 +8327,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -8359,10 +8358,10 @@
 					<Obj>
 						<type>0</type>
 						<id>177</id>
-						<name>trunc_ln40_8</name>
+						<name>trunc_ln41_8</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>40</lineNumber>
+						<lineNumber>41</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -8377,7 +8376,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>40</second>
+										<second>41</second>
 									</item>
 								</second>
 							</item>
@@ -8410,10 +8409,10 @@
 					<Obj>
 						<type>0</type>
 						<id>178</id>
-						<name>add_ln40_1</name>
+						<name>add_ln41_1</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>40</lineNumber>
+						<lineNumber>41</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -8428,7 +8427,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>40</second>
+										<second>41</second>
 									</item>
 								</second>
 							</item>
@@ -8451,7 +8450,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>2.07</m_delay>
-				<m_topoIndex>157</m_topoIndex>
+				<m_topoIndex>155</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_174">
@@ -8459,10 +8458,10 @@
 					<Obj>
 						<type>0</type>
 						<id>179</id>
-						<name>add_ln40_2</name>
+						<name>add_ln41_2</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>40</lineNumber>
+						<lineNumber>41</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -8477,7 +8476,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>40</second>
+										<second>41</second>
 									</item>
 								</second>
 							</item>
@@ -8500,7 +8499,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>164</m_topoIndex>
+				<m_topoIndex>166</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_175">
@@ -8508,10 +8507,10 @@
 					<Obj>
 						<type>0</type>
 						<id>180</id>
-						<name>add_ln40_3</name>
+						<name>add_ln41_3</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>40</lineNumber>
+						<lineNumber>41</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -8526,7 +8525,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>40</second>
+										<second>41</second>
 									</item>
 								</second>
 							</item>
@@ -8549,7 +8548,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>3.90</m_delay>
-				<m_topoIndex>165</m_topoIndex>
+				<m_topoIndex>167</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_176">
@@ -8557,10 +8556,10 @@
 					<Obj>
 						<type>0</type>
 						<id>181</id>
-						<name>add_ln40_4</name>
+						<name>add_ln41_4</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>40</lineNumber>
+						<lineNumber>41</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -8575,7 +8574,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>40</second>
+										<second>41</second>
 									</item>
 								</second>
 							</item>
@@ -8598,7 +8597,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>2.07</m_delay>
-				<m_topoIndex>172</m_topoIndex>
+				<m_topoIndex>174</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_177">
@@ -8606,10 +8605,10 @@
 					<Obj>
 						<type>0</type>
 						<id>182</id>
-						<name>add_ln40_5</name>
+						<name>add_ln41_5</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>40</lineNumber>
+						<lineNumber>41</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -8624,7 +8623,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>40</second>
+										<second>41</second>
 									</item>
 								</second>
 							</item>
@@ -8655,10 +8654,10 @@
 					<Obj>
 						<type>0</type>
 						<id>183</id>
-						<name>add_ln40_6</name>
+						<name>add_ln41_6</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>40</lineNumber>
+						<lineNumber>41</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -8673,7 +8672,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>40</second>
+										<second>41</second>
 									</item>
 								</second>
 							</item>
@@ -8704,10 +8703,10 @@
 					<Obj>
 						<type>0</type>
 						<id>184</id>
-						<name>add_ln40_7</name>
+						<name>add_ln41_7</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>40</lineNumber>
+						<lineNumber>41</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -8722,7 +8721,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>40</second>
+										<second>41</second>
 									</item>
 								</second>
 							</item>
@@ -8753,10 +8752,10 @@
 					<Obj>
 						<type>0</type>
 						<id>185</id>
-						<name>add_ln40_8</name>
+						<name>add_ln41_8</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>40</lineNumber>
+						<lineNumber>41</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -8771,7 +8770,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>40</second>
+										<second>41</second>
 									</item>
 								</second>
 							</item>
@@ -8802,10 +8801,10 @@
 					<Obj>
 						<type>0</type>
 						<id>186</id>
-						<name>add_ln40</name>
+						<name>add_ln41</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>40</lineNumber>
+						<lineNumber>41</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -8820,7 +8819,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>40</second>
+										<second>41</second>
 									</item>
 								</second>
 							</item>
@@ -8843,18 +8842,18 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>1.63</m_delay>
-				<m_topoIndex>90</m_topoIndex>
-				<m_clusterGroupNumber>4</m_clusterGroupNumber>
+				<m_topoIndex>95</m_topoIndex>
+				<m_clusterGroupNumber>5</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_182">
 				<Value>
 					<Obj>
 						<type>0</type>
 						<id>187</id>
-						<name>sext_ln40</name>
+						<name>sext_ln41</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>40</lineNumber>
+						<lineNumber>41</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -8869,7 +8868,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>40</second>
+										<second>41</second>
 									</item>
 								</second>
 							</item>
@@ -8899,10 +8898,10 @@
 					<Obj>
 						<type>0</type>
 						<id>188</id>
-						<name>zext_ln40</name>
+						<name>zext_ln41</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>40</lineNumber>
+						<lineNumber>41</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -8917,7 +8916,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>40</second>
+										<second>41</second>
 									</item>
 								</second>
 							</item>
@@ -8950,7 +8949,7 @@
 						<name>output_addr</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>40</lineNumber>
+						<lineNumber>41</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -8965,7 +8964,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>40</second>
+										<second>41</second>
 									</item>
 								</second>
 							</item>
@@ -8997,10 +8996,10 @@
 					<Obj>
 						<type>0</type>
 						<id>190</id>
-						<name>output_addr_write_ln40</name>
+						<name>output_addr_write_ln41</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>40</lineNumber>
+						<lineNumber>41</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -9015,7 +9014,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>40</second>
+										<second>41</second>
 									</item>
 								</second>
 							</item>
@@ -9037,7 +9036,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.68</m_delay>
+				<m_delay>3.25</m_delay>
 				<m_topoIndex>185</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -9046,10 +9045,10 @@
 					<Obj>
 						<type>0</type>
 						<id>192</id>
-						<name>add_ln22_3</name>
+						<name>add_ln23_7</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>22</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -9064,7 +9063,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>22</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -9087,7 +9086,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>1.73</m_delay>
-				<m_topoIndex>12</m_topoIndex>
+				<m_topoIndex>40</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_187">
@@ -9095,10 +9094,10 @@
 					<Obj>
 						<type>0</type>
 						<id>193</id>
-						<name>select_ln22_3</name>
+						<name>select_ln23_3</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>22</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -9113,7 +9112,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>22</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -9137,7 +9136,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.68</m_delay>
-				<m_topoIndex>77</m_topoIndex>
+				<m_topoIndex>156</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_188">
@@ -9145,10 +9144,10 @@
 					<Obj>
 						<type>0</type>
 						<id>194</id>
-						<name>_ln23</name>
+						<name>_ln24</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
-						<lineNumber>23</lineNumber>
+						<lineNumber>24</lineNumber>
 						<contextFuncName>depthwise_conv2d_fix16</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -9163,7 +9162,7 @@
 											<first>../layers_c/depthwise_conv2d.cpp</first>
 											<second>depthwise_conv2d_fix16</second>
 										</first>
-										<second>23</second>
+										<second>24</second>
 									</item>
 								</second>
 							</item>
@@ -9989,7 +9988,7 @@
 			</item>
 		</blocks>
 		<edges class_id="19" tracking_level="0" version="0">
-			<count>362</count>
+			<count>361</count>
 			<item_version>0</item_version>
 			<item class_id="20" tracking_level="1" version="0" object_id="_215">
 				<id>198</id>
@@ -12518,19 +12517,12 @@
 				<sink_obj>37</sink_obj>
 				<is_back_edge>1</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_576">
-				<id>2147483647</id>
-				<edge_type>1</edge_type>
-				<source_obj>105</source_obj>
-				<sink_obj>59</sink_obj>
-				<is_back_edge>1</is_back_edge>
-			</item>
 		</edges>
 	</cdfg>
 	<cdfg_regions class_id="21" tracking_level="0" version="0">
 		<count>4</count>
 		<item_version>0</item_version>
-		<item class_id="22" tracking_level="1" version="0" object_id="_577">
+		<item class_id="22" tracking_level="1" version="0" object_id="_576">
 			<mId>1</mId>
 			<mTag>depthwise_conv2d_fix</mTag>
 			<mType>0</mType>
@@ -12549,12 +12541,12 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>3933</mMinLatency>
-			<mMaxLatency>3933</mMaxLatency>
+			<mMinLatency>3926</mMinLatency>
+			<mMaxLatency>3926</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
-		<item class_id_reference="22" object_id="_578">
+		<item class_id_reference="22" object_id="_577">
 			<mId>2</mId>
 			<mTag>Entry</mTag>
 			<mType>0</mType>
@@ -12576,7 +12568,7 @@
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
-		<item class_id_reference="22" object_id="_579">
+		<item class_id_reference="22" object_id="_578">
 			<mId>3</mId>
 			<mTag>Loop 1</mTag>
 			<mType>1</mType>
@@ -12591,15 +12583,15 @@
 				<item>195</item>
 			</basic_blocks>
 			<mII>5</mII>
-			<mDepth>17</mDepth>
+			<mDepth>10</mDepth>
 			<mMinTripCount>784</mMinTripCount>
 			<mMaxTripCount>784</mMaxTripCount>
-			<mMinLatency>3931</mMinLatency>
-			<mMaxLatency>3931</mMaxLatency>
+			<mMinLatency>3924</mMinLatency>
+			<mMaxLatency>3924</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
-		<item class_id_reference="22" object_id="_580">
+		<item class_id_reference="22" object_id="_579">
 			<mId>4</mId>
 			<mTag>Return</mTag>
 			<mType>0</mType>
@@ -12665,7 +12657,7 @@
 		<item>
 			<first>9</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -12679,42 +12671,42 @@
 		<item>
 			<first>11</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>12</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>13</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>14</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>15</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>16</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -12728,35 +12720,35 @@
 		<item>
 			<first>18</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>19</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>20</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>21</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>22</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -12770,28 +12762,28 @@
 		<item>
 			<first>24</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>25</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>26</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>27</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -12805,35 +12797,35 @@
 		<item>
 			<first>29</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>30</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>31</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>32</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>33</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -12847,14 +12839,14 @@
 		<item>
 			<first>35</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>36</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -12868,1043 +12860,1043 @@
 		<item>
 			<first>40</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>41</first>
 			<second>
-				<first>3</first>
+				<first>2</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>42</first>
 			<second>
-				<first>7</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>43</first>
 			<second>
-				<first>4</first>
+				<first>2</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>44</first>
 			<second>
-				<first>3</first>
+				<first>2</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>45</first>
 			<second>
-				<first>7</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>46</first>
 			<second>
-				<first>8</first>
+				<first>5</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>47</first>
 			<second>
-				<first>7</first>
+				<first>5</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>48</first>
 			<second>
-				<first>5</first>
+				<first>2</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>49</first>
 			<second>
-				<first>6</first>
+				<first>2</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>50</first>
 			<second>
-				<first>6</first>
+				<first>2</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>51</first>
 			<second>
-				<first>5</first>
+				<first>2</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>52</first>
 			<second>
-				<first>5</first>
+				<first>2</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>53</first>
 			<second>
-				<first>5</first>
+				<first>2</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>54</first>
 			<second>
-				<first>5</first>
+				<first>2</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>55</first>
 			<second>
-				<first>5</first>
+				<first>2</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>56</first>
 			<second>
-				<first>6</first>
+				<first>2</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>57</first>
 			<second>
-				<first>6</first>
+				<first>2</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>58</first>
 			<second>
-				<first>3</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>59</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>60</first>
 			<second>
-				<first>3</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>61</first>
 			<second>
-				<first>3</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>62</first>
 			<second>
-				<first>4</first>
+				<first>2</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>63</first>
 			<second>
-				<first>4</first>
+				<first>2</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>64</first>
 			<second>
-				<first>4</first>
+				<first>2</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>65</first>
 			<second>
-				<first>4</first>
+				<first>2</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>66</first>
 			<second>
-				<first>4</first>
+				<first>2</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>67</first>
 			<second>
-				<first>4</first>
+				<first>2</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>68</first>
 			<second>
-				<first>4</first>
+				<first>2</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>69</first>
 			<second>
-				<first>5</first>
+				<first>2</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>70</first>
 			<second>
-				<first>4</first>
+				<first>2</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>71</first>
 			<second>
-				<first>5</first>
+				<first>2</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>72</first>
 			<second>
-				<first>5</first>
+				<first>2</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>73</first>
 			<second>
-				<first>5</first>
+				<first>2</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>74</first>
 			<second>
-				<first>5</first>
+				<first>2</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>75</first>
 			<second>
-				<first>5</first>
+				<first>2</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>76</first>
 			<second>
-				<first>6</first>
+				<first>2</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>77</first>
 			<second>
-				<first>4</first>
+				<first>2</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>78</first>
 			<second>
-				<first>5</first>
+				<first>2</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>79</first>
 			<second>
-				<first>5</first>
+				<first>2</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>80</first>
 			<second>
-				<first>5</first>
+				<first>2</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>81</first>
 			<second>
-				<first>5</first>
+				<first>2</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>82</first>
 			<second>
-				<first>6</first>
+				<first>2</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>83</first>
 			<second>
-				<first>4</first>
+				<first>2</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>84</first>
 			<second>
-				<first>5</first>
+				<first>2</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>85</first>
 			<second>
-				<first>5</first>
+				<first>2</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>86</first>
 			<second>
-				<first>5</first>
+				<first>2</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>87</first>
 			<second>
-				<first>5</first>
+				<first>2</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>88</first>
 			<second>
-				<first>5</first>
+				<first>2</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>89</first>
 			<second>
-				<first>6</first>
+				<first>2</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>90</first>
 			<second>
-				<first>4</first>
+				<first>5</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>93</first>
 			<second>
-				<first>9</first>
+				<first>5</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>94</first>
 			<second>
-				<first>6</first>
+				<first>2</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>95</first>
 			<second>
-				<first>6</first>
+				<first>2</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>96</first>
 			<second>
-				<first>7</first>
+				<first>2</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>97</first>
 			<second>
-				<first>7</first>
+				<first>2</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>98</first>
 			<second>
-				<first>7</first>
+				<first>2</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>99</first>
 			<second>
-				<first>7</first>
-				<second>2</second>
+				<first>2</first>
+				<second>1</second>
 			</second>
 		</item>
 		<item>
 			<first>100</first>
 			<second>
-				<first>10</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>101</first>
 			<second>
-				<first>7</first>
-				<second>2</second>
+				<first>4</first>
+				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>102</first>
 			<second>
-				<first>10</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>103</first>
 			<second>
-				<first>10</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>104</first>
 			<second>
-				<first>11</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>105</first>
 			<second>
-				<first>5</first>
+				<first>2</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>106</first>
 			<second>
-				<first>9</first>
+				<first>5</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>107</first>
 			<second>
-				<first>6</first>
+				<first>2</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>108</first>
 			<second>
-				<first>6</first>
+				<first>2</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>109</first>
 			<second>
-				<first>7</first>
+				<first>2</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>110</first>
 			<second>
-				<first>7</first>
+				<first>2</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>111</first>
 			<second>
-				<first>7</first>
+				<first>2</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>112</first>
 			<second>
-				<first>7</first>
-				<second>2</second>
+				<first>2</first>
+				<second>1</second>
 			</second>
 		</item>
 		<item>
 			<first>113</first>
 			<second>
-				<first>10</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>114</first>
 			<second>
-				<first>7</first>
-				<second>2</second>
+				<first>4</first>
+				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>115</first>
 			<second>
-				<first>10</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>116</first>
 			<second>
-				<first>10</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>117</first>
 			<second>
-				<first>11</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>118</first>
 			<second>
-				<first>6</first>
+				<first>3</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>119</first>
 			<second>
-				<first>9</first>
+				<first>5</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>120</first>
 			<second>
-				<first>7</first>
+				<first>3</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>121</first>
 			<second>
-				<first>7</first>
+				<first>3</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>122</first>
 			<second>
-				<first>8</first>
+				<first>3</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>123</first>
 			<second>
-				<first>8</first>
+				<first>3</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>124</first>
 			<second>
-				<first>8</first>
+				<first>3</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>125</first>
 			<second>
-				<first>8</first>
-				<second>2</second>
+				<first>3</first>
+				<second>1</second>
 			</second>
 		</item>
 		<item>
 			<first>126</first>
 			<second>
-				<first>11</first>
+				<first>5</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>127</first>
 			<second>
-				<first>8</first>
-				<second>2</second>
+				<first>5</first>
+				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>128</first>
 			<second>
-				<first>11</first>
+				<first>5</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>129</first>
 			<second>
-				<first>11</first>
+				<first>5</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>130</first>
 			<second>
-				<first>12</first>
+				<first>5</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>131</first>
 			<second>
-				<first>7</first>
+				<first>3</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>132</first>
 			<second>
-				<first>8</first>
+				<first>3</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>133</first>
 			<second>
-				<first>8</first>
+				<first>3</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>134</first>
 			<second>
-				<first>8</first>
+				<first>3</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>135</first>
 			<second>
-				<first>8</first>
-				<second>2</second>
+				<first>3</first>
+				<second>1</second>
 			</second>
 		</item>
 		<item>
 			<first>136</first>
 			<second>
-				<first>11</first>
+				<first>5</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>137</first>
 			<second>
-				<first>8</first>
-				<second>2</second>
+				<first>5</first>
+				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>138</first>
 			<second>
-				<first>11</first>
+				<first>5</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>139</first>
 			<second>
-				<first>11</first>
+				<first>5</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>140</first>
 			<second>
-				<first>12</first>
+				<first>5</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>141</first>
 			<second>
-				<first>7</first>
+				<first>3</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>142</first>
 			<second>
-				<first>9</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>143</first>
 			<second>
-				<first>9</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>144</first>
 			<second>
-				<first>9</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>145</first>
 			<second>
-				<first>9</first>
-				<second>2</second>
+				<first>4</first>
+				<second>1</second>
 			</second>
 		</item>
 		<item>
 			<first>146</first>
-			<second>
-				<first>12</first>
-				<second>0</second>
-			</second>
-		</item>
-		<item>
-			<first>147</first>
-			<second>
-				<first>12</first>
-				<second>0</second>
-			</second>
-		</item>
-		<item>
-			<first>148</first>
-			<second>
-				<first>13</first>
-				<second>0</second>
-			</second>
-		</item>
-		<item>
-			<first>149</first>
-			<second>
-				<first>7</first>
-				<second>0</second>
-			</second>
-		</item>
-		<item>
-			<first>150</first>
-			<second>
-				<first>9</first>
-				<second>0</second>
-			</second>
-		</item>
-		<item>
-			<first>151</first>
-			<second>
-				<first>9</first>
-				<second>0</second>
-			</second>
-		</item>
-		<item>
-			<first>152</first>
-			<second>
-				<first>9</first>
-				<second>0</second>
-			</second>
-		</item>
-		<item>
-			<first>153</first>
-			<second>
-				<first>9</first>
-				<second>2</second>
-			</second>
-		</item>
-		<item>
-			<first>154</first>
-			<second>
-				<first>12</first>
-				<second>0</second>
-			</second>
-		</item>
-		<item>
-			<first>155</first>
-			<second>
-				<first>12</first>
-				<second>0</second>
-			</second>
-		</item>
-		<item>
-			<first>156</first>
-			<second>
-				<first>13</first>
-				<second>0</second>
-			</second>
-		</item>
-		<item>
-			<first>157</first>
-			<second>
-				<first>9</first>
-				<second>0</second>
-			</second>
-		</item>
-		<item>
-			<first>158</first>
-			<second>
-				<first>10</first>
-				<second>0</second>
-			</second>
-		</item>
-		<item>
-			<first>159</first>
-			<second>
-				<first>10</first>
-				<second>0</second>
-			</second>
-		</item>
-		<item>
-			<first>160</first>
-			<second>
-				<first>10</first>
-				<second>2</second>
-			</second>
-		</item>
-		<item>
-			<first>161</first>
-			<second>
-				<first>13</first>
-				<second>0</second>
-			</second>
-		</item>
-		<item>
-			<first>162</first>
-			<second>
-				<first>13</first>
-				<second>0</second>
-			</second>
-		</item>
-		<item>
-			<first>163</first>
-			<second>
-				<first>14</first>
-				<second>0</second>
-			</second>
-		</item>
-		<item>
-			<first>164</first>
-			<second>
-				<first>9</first>
-				<second>0</second>
-			</second>
-		</item>
-		<item>
-			<first>165</first>
-			<second>
-				<first>10</first>
-				<second>0</second>
-			</second>
-		</item>
-		<item>
-			<first>166</first>
-			<second>
-				<first>10</first>
-				<second>0</second>
-			</second>
-		</item>
-		<item>
-			<first>167</first>
-			<second>
-				<first>10</first>
-				<second>2</second>
-			</second>
-		</item>
-		<item>
-			<first>168</first>
-			<second>
-				<first>13</first>
-				<second>0</second>
-			</second>
-		</item>
-		<item>
-			<first>169</first>
-			<second>
-				<first>13</first>
-				<second>0</second>
-			</second>
-		</item>
-		<item>
-			<first>170</first>
-			<second>
-				<first>14</first>
-				<second>0</second>
-			</second>
-		</item>
-		<item>
-			<first>171</first>
-			<second>
-				<first>9</first>
-				<second>0</second>
-			</second>
-		</item>
-		<item>
-			<first>172</first>
-			<second>
-				<first>11</first>
-				<second>0</second>
-			</second>
-		</item>
-		<item>
-			<first>173</first>
-			<second>
-				<first>11</first>
-				<second>0</second>
-			</second>
-		</item>
-		<item>
-			<first>174</first>
-			<second>
-				<first>11</first>
-				<second>2</second>
-			</second>
-		</item>
-		<item>
-			<first>175</first>
-			<second>
-				<first>14</first>
-				<second>0</second>
-			</second>
-		</item>
-		<item>
-			<first>176</first>
-			<second>
-				<first>14</first>
-				<second>0</second>
-			</second>
-		</item>
-		<item>
-			<first>177</first>
-			<second>
-				<first>15</first>
-				<second>0</second>
-			</second>
-		</item>
-		<item>
-			<first>178</first>
-			<second>
-				<first>11</first>
-				<second>0</second>
-			</second>
-		</item>
-		<item>
-			<first>179</first>
-			<second>
-				<first>12</first>
-				<second>0</second>
-			</second>
-		</item>
-		<item>
-			<first>180</first>
-			<second>
-				<first>12</first>
-				<second>0</second>
-			</second>
-		</item>
-		<item>
-			<first>181</first>
-			<second>
-				<first>13</first>
-				<second>0</second>
-			</second>
-		</item>
-		<item>
-			<first>182</first>
-			<second>
-				<first>15</first>
-				<second>0</second>
-			</second>
-		</item>
-		<item>
-			<first>183</first>
-			<second>
-				<first>15</first>
-				<second>0</second>
-			</second>
-		</item>
-		<item>
-			<first>184</first>
-			<second>
-				<first>16</first>
-				<second>0</second>
-			</second>
-		</item>
-		<item>
-			<first>185</first>
-			<second>
-				<first>16</first>
-				<second>0</second>
-			</second>
-		</item>
-		<item>
-			<first>186</first>
 			<second>
 				<first>6</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
+			<first>147</first>
+			<second>
+				<first>6</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>148</first>
+			<second>
+				<first>6</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>149</first>
+			<second>
+				<first>3</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>150</first>
+			<second>
+				<first>4</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>151</first>
+			<second>
+				<first>4</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>152</first>
+			<second>
+				<first>4</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>153</first>
+			<second>
+				<first>4</first>
+				<second>1</second>
+			</second>
+		</item>
+		<item>
+			<first>154</first>
+			<second>
+				<first>6</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>155</first>
+			<second>
+				<first>6</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>156</first>
+			<second>
+				<first>6</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>157</first>
+			<second>
+				<first>5</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>158</first>
+			<second>
+				<first>5</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>159</first>
+			<second>
+				<first>5</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>160</first>
+			<second>
+				<first>5</first>
+				<second>1</second>
+			</second>
+		</item>
+		<item>
+			<first>161</first>
+			<second>
+				<first>7</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>162</first>
+			<second>
+				<first>7</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>163</first>
+			<second>
+				<first>7</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>164</first>
+			<second>
+				<first>5</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>165</first>
+			<second>
+				<first>5</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>166</first>
+			<second>
+				<first>5</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>167</first>
+			<second>
+				<first>5</first>
+				<second>1</second>
+			</second>
+		</item>
+		<item>
+			<first>168</first>
+			<second>
+				<first>7</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>169</first>
+			<second>
+				<first>7</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>170</first>
+			<second>
+				<first>7</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>171</first>
+			<second>
+				<first>5</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>172</first>
+			<second>
+				<first>6</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>173</first>
+			<second>
+				<first>6</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>174</first>
+			<second>
+				<first>6</first>
+				<second>1</second>
+			</second>
+		</item>
+		<item>
+			<first>175</first>
+			<second>
+				<first>8</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>176</first>
+			<second>
+				<first>8</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>177</first>
+			<second>
+				<first>8</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>178</first>
+			<second>
+				<first>5</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>179</first>
+			<second>
+				<first>6</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>180</first>
+			<second>
+				<first>6</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>181</first>
+			<second>
+				<first>7</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>182</first>
+			<second>
+				<first>9</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>183</first>
+			<second>
+				<first>9</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>184</first>
+			<second>
+				<first>9</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>185</first>
+			<second>
+				<first>9</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>186</first>
+			<second>
+				<first>2</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
 			<first>187</first>
 			<second>
-				<first>17</first>
+				<first>10</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>188</first>
 			<second>
-				<first>17</first>
+				<first>10</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>189</first>
 			<second>
-				<first>17</first>
+				<first>10</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>190</first>
 			<second>
-				<first>17</first>
+				<first>10</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -13925,14 +13917,14 @@
 		<item>
 			<first>194</first>
 			<second>
-				<first>17</first>
+				<first>10</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>196</first>
 			<second>
-				<first>18</first>
+				<first>11</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -13951,28 +13943,28 @@
 			<first>37</first>
 			<second>
 				<first>1</first>
-				<second>2</second>
+				<second>1</second>
 			</second>
 		</item>
 		<item>
 			<first>195</first>
 			<second>
 				<first>1</first>
-				<second>17</second>
+				<second>10</second>
 			</second>
 		</item>
 		<item>
 			<first>197</first>
 			<second>
-				<first>3</first>
-				<second>3</second>
+				<first>2</first>
+				<second>2</second>
 			</second>
 		</item>
 	</bblk_ent_exit>
 	<regions class_id="32" tracking_level="0" version="0">
 		<count>1</count>
 		<item_version>0</item_version>
-		<item class_id="33" tracking_level="1" version="0" object_id="_581">
+		<item class_id="33" tracking_level="1" version="0" object_id="_580">
 			<region_name>Loop 1</region_name>
 			<basic_blocks>
 				<count>2</count>
@@ -13987,7 +13979,7 @@
 			<anchor_node>-1</anchor_node>
 			<region_type>8</region_type>
 			<interval>5</interval>
-			<pipe_depth>17</pipe_depth>
+			<pipe_depth>10</pipe_depth>
 		</item>
 	</regions>
 	<dp_fu_nodes class_id="34" tracking_level="0" version="0">

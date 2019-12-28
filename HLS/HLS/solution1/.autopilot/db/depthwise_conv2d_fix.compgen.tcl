@@ -1,16 +1,12 @@
 # This script segment is generated automatically by AutoPilot
 
 set id 6
-set name network_mux_32_16_3_1
+set name network_mux_32_16_1_1
 set corename simcore_mux
 set op mux
-set stage_num 3
+set stage_num 1
 set max_latency -1
 set registered_input 1
-set clk_width 1
-set clk_signed 0
-set reset_width 1
-set reset_signed 0
 set din0_width 16
 set din0_signed 1
 set din1_width 16
@@ -19,8 +15,6 @@ set din2_width 16
 set din2_signed 0
 set din3_width 2
 set din3_signed 0
-set ce_width 1
-set ce_signed 0
 set dout_width 16
 if {${::AESL::PGuard_simmodel_gen}} {
 if {[info proc ap_gen_simcore_mux] == "ap_gen_simcore_mux"} {
@@ -34,10 +28,6 @@ eval "ap_gen_simcore_mux { \
     stage_num ${stage_num} \
     max_latency ${max_latency} \
     registered_input ${registered_input} \
-    clk_width ${clk_width} \
-    clk_signed ${clk_signed} \
-    reset_width ${reset_width} \
-    reset_signed ${reset_signed} \
     din0_width ${din0_width} \
     din0_signed ${din0_signed} \
     din1_width ${din1_width} \
@@ -46,8 +36,6 @@ eval "ap_gen_simcore_mux { \
     din2_signed ${din2_signed} \
     din3_width ${din3_width} \
     din3_signed ${din3_signed} \
-    ce_width ${ce_width} \
-    ce_signed ${ce_signed} \
     dout_width ${dout_width} \
 }"
 } else {
@@ -75,10 +63,6 @@ eval "::AESL_LIB_VIRTEX::xil_gen_pipemux { \
     stage_num ${stage_num} \
     max_latency ${max_latency} \
     registered_input ${registered_input} \
-    clk_width ${clk_width} \
-    clk_signed ${clk_signed} \
-    reset_width ${reset_width} \
-    reset_signed ${reset_signed} \
     din0_width ${din0_width} \
     din0_signed ${din0_signed} \
     din1_width ${din1_width} \
@@ -87,8 +71,6 @@ eval "::AESL_LIB_VIRTEX::xil_gen_pipemux { \
     din2_signed ${din2_signed} \
     din3_width ${din3_width} \
     din3_signed ${din3_signed} \
-    ce_width ${ce_width} \
-    ce_signed ${ce_signed} \
     dout_width ${dout_width} \
 }"
 } else {

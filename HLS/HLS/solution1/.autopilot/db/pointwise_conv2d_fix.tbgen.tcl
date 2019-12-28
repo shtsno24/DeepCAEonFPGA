@@ -14,7 +14,7 @@ set isEnableWaveformDebug 1
 set C_modelName {pointwise_conv2d_fix}
 set C_modelType { void 0 }
 set C_modelArgList {
-	{ input_r int 16 regular {array 14400 { 1 3 } 2 1 }  }
+	{ input_r int 16 regular {array 14400 { 1 3 } 1 1 }  }
 	{ output_r int 16 regular {array 14400 { 0 3 } 0 1 }  }
 }
 set C_modelArgMapList {[ 
@@ -59,7 +59,7 @@ set RtlHierarchyInfo {[
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "188161", "EstimateLatencyMax" : "188161",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "87809", "EstimateLatencyMax" : "87809",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -71,22 +71,22 @@ set RtlHierarchyInfo {[
 			{"Name" : "output_r", "Type" : "Memory", "Direction" : "O"},
 			{"Name" : "SeparableConv2D_0_b_s", "Type" : "Memory", "Direction" : "I"}]},
 	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.SeparableConv2D_0_b_s_U", "Parent" : "0"},
-	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mux_164_16_4_1_U23", "Parent" : "0"},
+	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mux_164_16_1_1_U23", "Parent" : "0"},
 	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mul_mul_11ns_5ns_14_1_1_U24", "Parent" : "0"},
 	{"ID" : "4", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mul_mul_16s_16s_32_1_1_U25", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {
 	pointwise_conv2d_fix {
-		input_r {Type I LastRead 8 FirstWrite -1}
-		output_r {Type O LastRead -1 FirstWrite 10}
+		input_r {Type I LastRead 3 FirstWrite -1}
+		output_r {Type O LastRead -1 FirstWrite 4}
 		SeparableConv2D_0_b_s {Type I LastRead -1 FirstWrite -1}}}
 
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "188161", "Max" : "188161"}
-	, {"Name" : "Interval", "Min" : "188161", "Max" : "188161"}
+	{"Name" : "Latency", "Min" : "87809", "Max" : "87809"}
+	, {"Name" : "Interval", "Min" : "87809", "Max" : "87809"}
 ]}
 
 set PipelineEnableSignalInfo {[

@@ -14,7 +14,7 @@ set isEnableWaveformDebug 1
 set C_modelName {depthwise_conv2d_fix}
 set C_modelType { void 0 }
 set C_modelArgList {
-	{ input_r int 16 regular {array 14400 { 1 1 } 2 1 }  }
+	{ input_r int 16 regular {array 14400 { 1 1 } 1 1 }  }
 	{ output_r int 16 regular {array 14400 { 0 3 } 0 1 }  }
 }
 set C_modelArgMapList {[ 
@@ -65,7 +65,7 @@ set RtlHierarchyInfo {[
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "3933", "EstimateLatencyMax" : "3933",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "3926", "EstimateLatencyMax" : "3926",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -75,10 +75,10 @@ set RtlHierarchyInfo {[
 		"Port" : [
 			{"Name" : "input_r", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "output_r", "Type" : "Memory", "Direction" : "O"}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mux_32_16_3_1_U6", "Parent" : "0"},
-	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mux_32_16_3_1_U7", "Parent" : "0"},
-	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mux_32_16_3_1_U8", "Parent" : "0"},
-	{"ID" : "4", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mux_32_16_3_1_U9", "Parent" : "0"},
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mux_32_16_1_1_U6", "Parent" : "0"},
+	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mux_32_16_1_1_U7", "Parent" : "0"},
+	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mux_32_16_1_1_U8", "Parent" : "0"},
+	{"ID" : "4", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mux_32_16_1_1_U9", "Parent" : "0"},
 	{"ID" : "5", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mul_mul_16s_16s_30_1_1_U10", "Parent" : "0"},
 	{"ID" : "6", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mul_mul_16s_16s_30_1_1_U11", "Parent" : "0"},
 	{"ID" : "7", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mul_mul_16s_16s_30_1_1_U12", "Parent" : "0"},
@@ -92,14 +92,14 @@ set RtlHierarchyInfo {[
 
 set ArgLastReadFirstWriteLatency {
 	depthwise_conv2d_fix {
-		input_r {Type I LastRead 13 FirstWrite -1}
-		output_r {Type O LastRead -1 FirstWrite 17}}}
+		input_r {Type I LastRead 7 FirstWrite -1}
+		output_r {Type O LastRead -1 FirstWrite 10}}}
 
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "3933", "Max" : "3933"}
-	, {"Name" : "Interval", "Min" : "3933", "Max" : "3933"}
+	{"Name" : "Latency", "Min" : "3926", "Max" : "3926"}
+	, {"Name" : "Interval", "Min" : "3926", "Max" : "3926"}
 ]}
 
 set PipelineEnableSignalInfo {[

@@ -17,7 +17,7 @@ set C_modelArgList {
 	{ input_depth uint 7 regular  }
 	{ input_height int 6 regular  }
 	{ input_width int 6 regular  }
-	{ input_r int 16 regular {array 14400 { 1 3 } 2 1 }  }
+	{ input_r int 16 regular {array 14400 { 1 3 } 1 1 }  }
 	{ output_r int 16 regular {array 14400 { 0 3 } 0 1 }  }
 }
 set C_modelArgMapList {[ 
@@ -71,7 +71,7 @@ set RtlHierarchyInfo {[
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "141", "EstimateLatencyMax" : "17637",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "124", "EstimateLatencyMax" : "16738",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -88,17 +88,17 @@ set RtlHierarchyInfo {[
 
 set ArgLastReadFirstWriteLatency {
 	padding2d_fix16 {
-		input_depth {Type I LastRead 4 FirstWrite -1}
-		input_height {Type I LastRead 1 FirstWrite -1}
+		input_depth {Type I LastRead 1 FirstWrite -1}
+		input_height {Type I LastRead 0 FirstWrite -1}
 		input_width {Type I LastRead 0 FirstWrite -1}
-		input_r {Type I LastRead 9 FirstWrite -1}
-		output_r {Type O LastRead -1 FirstWrite 6}}}
+		input_r {Type I LastRead 6 FirstWrite -1}
+		output_r {Type O LastRead -1 FirstWrite 3}}}
 
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "141", "Max" : "17637"}
-	, {"Name" : "Interval", "Min" : "141", "Max" : "17637"}
+	{"Name" : "Latency", "Min" : "124", "Max" : "16738"}
+	, {"Name" : "Interval", "Min" : "124", "Max" : "16738"}
 ]}
 
 set PipelineEnableSignalInfo {[

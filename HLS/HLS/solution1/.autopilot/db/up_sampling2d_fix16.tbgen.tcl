@@ -16,7 +16,7 @@ set C_modelType { void 0 }
 set C_modelArgList {
 	{ input_height uint 5 regular  }
 	{ input_width int 5 regular  }
-	{ input_r int 16 regular {array 14400 { 1 3 } 2 1 }  }
+	{ input_r int 16 regular {array 14400 { 1 3 } 1 1 }  }
 	{ output_depth int 6 regular  }
 	{ output_height int 6 regular  }
 	{ output_width int 6 regular  }
@@ -79,7 +79,7 @@ set RtlHierarchyInfo {[
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "4713", "EstimateLatencyMax" : "37641",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "1572", "EstimateLatencyMax" : "12548",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -94,26 +94,26 @@ set RtlHierarchyInfo {[
 			{"Name" : "output_height", "Type" : "None", "Direction" : "I"},
 			{"Name" : "output_width", "Type" : "None", "Direction" : "I"},
 			{"Name" : "output_r", "Type" : "Memory", "Direction" : "O"}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mul_mul_10ns_5ns_15_1_1_U112", "Parent" : "0"},
-	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mac_muladd_8ns_5ns_4ns_12_1_1_U113", "Parent" : "0"},
-	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mac_muladd_9ns_6ns_5ns_14_1_1_U114", "Parent" : "0"}]}
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mul_mul_10ns_5ns_15_1_1_U108", "Parent" : "0"},
+	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mac_muladd_8ns_5ns_4ns_12_1_1_U109", "Parent" : "0"},
+	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mac_muladd_9ns_6ns_5ns_14_1_1_U110", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {
 	up_sampling2d_fix16 {
 		input_height {Type I LastRead 1 FirstWrite -1}
 		input_width {Type I LastRead 1 FirstWrite -1}
-		input_r {Type I LastRead 8 FirstWrite -1}
+		input_r {Type I LastRead 3 FirstWrite -1}
 		output_depth {Type I LastRead 1 FirstWrite -1}
 		output_height {Type I LastRead 0 FirstWrite -1}
 		output_width {Type I LastRead 0 FirstWrite -1}
-		output_r {Type O LastRead -1 FirstWrite 11}}}
+		output_r {Type O LastRead -1 FirstWrite 4}}}
 
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "4713", "Max" : "37641"}
-	, {"Name" : "Interval", "Min" : "4713", "Max" : "37641"}
+	{"Name" : "Latency", "Min" : "1572", "Max" : "12548"}
+	, {"Name" : "Interval", "Min" : "1572", "Max" : "12548"}
 ]}
 
 set PipelineEnableSignalInfo {[

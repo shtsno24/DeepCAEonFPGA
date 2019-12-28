@@ -388,6 +388,7 @@ uint8_t relu, uint8_t fractal_width){
 
 
  int32_t buffer;
+
 _ssdm_SpecArrayPartition( kernel, 1, "complete", 0, "");
 
 
