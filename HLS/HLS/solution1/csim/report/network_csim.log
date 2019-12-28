@@ -1,11 +1,17 @@
 INFO: [SIM 2] *************** CSIM start ***************
 INFO: [SIM 4] CSIM will launch GCC as the compiler.
    Compiling ../../../../../mnist_AXI_Stream.cpp in debug mode
-csim.mk:75: recipe for target 'obj/mnist_AXI_Stream.o' failed
-../../../../../mnist_AXI_Stream.cpp: In function ‘int network(axis*, axis*)’:
-../../../../../mnist_AXI_Stream.cpp:93:51: error: ‘MemBank_B’ was not declared in this scope
-  Padding2D_0_height, Padding2D_0_width, (int16_t*)MemBank_B);
-                                                   ^~~~~~~~~
-make: *** [obj/mnist_AXI_Stream.o] Error 1
+   Compiling ../../../../../layers_c/up_sampling2d.cpp in debug mode
+   Compiling ../../../../../layers_c/separable_conv2d.cpp in debug mode
+   Compiling ../../../../../layers_c/pointwise_conv2d.cpp in debug mode
+   Compiling ../../../../../layers_c/padding2d.cpp in debug mode
+   Compiling ../../../../../layers_c/max_pooling2d.cpp in debug mode
+   Compiling ../../../../../layers_c/depthwise_conv2d.cpp in debug mode
+csim.mk:111: recipe for target 'obj/depthwise_conv2d.o' failed
+../../../../../layers_c/depthwise_conv2d.cpp: In function ‘uint8_t depthwise_conv2d_fix16(uint16_t, uint16_t, uint16_t, int16_t*, uint16_t, uint16_t, uint16_t, int16_t*, const int16_t*, uint16_t, uint16_t, const int16_t*, uint8_t, uint8_t)’:
+../../../../../layers_c/depthwise_conv2d.cpp:97:31: error: ‘tmp’ was not declared in this scope
+     int32_t tmp_20 = tmp_10 + tmp 11;
+                               ^~~
+make: *** [obj/depthwise_conv2d.o] Error 1
 ERR: [SIM 100] 'csim_design' failed: compilation error(s).
 INFO: [SIM 3] *************** CSIM finish ***************

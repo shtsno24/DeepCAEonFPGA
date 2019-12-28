@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'max_pooling2d_fix16'" level="0">
-<item name = "Date">Sat Dec 28 19:43:26 2019
+<item name = "Date">Sat Dec 28 21:58:55 2019
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">HLS</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00, 8.310, 1.25</column>
+<column name="ap_clk">6.67, 4.350, 3.33</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">1580, 12556, 1580, 12556, none</column>
+<column name="">11553, 91649, 11553, 91649, none</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,7 +35,11 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- Loop 1">1578, 12554, 15, 4, 1, 392 ~ 3136, yes</column>
+<column name="- Loop 1">11552, 91648, 1444 ~ 5728, -, -, 8 ~ 16, no</column>
+<column name=" + Loop 1.1">1442, 5726, 206 ~ 409, -, -, 7 ~ 14, no</column>
+<column name="  ++ Loop 1.1.1">203, 406, 29, -, -, 7 ~ 14, no</column>
+<column name="   +++ Loop 1.1.1.1">26, 26, 13, -, -, 2, no</column>
+<column name="    ++++ Loop 1.1.1.1.1">10, 10, 5, -, -, 2, no</column>
 </table>
 </item>
 </section>

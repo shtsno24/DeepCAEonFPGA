@@ -374,12 +374,11 @@ uint16_t kernel_height, uint16_t kernel_width, const float* kernel,
 uint8_t relu);
 # 3 "../layers_c/depthwise_conv2d.cpp" 2
 
-
-uint8_t depthwise_conv2d_fix16(uint16_t input_depth, uint16_t input_height, uint16_t input_width, int16_t* input,
-uint16_t output_depth, uint16_t output_height, uint16_t output_width, int16_t* output,
-const int16_t* bias,
-uint16_t kernel_height, uint16_t kernel_width, const int16_t* kernel,
-uint8_t relu, uint8_t fractal_width){
+uint8_t depthwise_conv2d_fix16(uint16_t input_depth, uint16_t input_height,
+  uint16_t input_width, int16_t* input, uint16_t output_depth,
+  uint16_t output_height, uint16_t output_width, int16_t* output,
+  const int16_t* bias, uint16_t kernel_height, uint16_t kernel_width,
+  const int16_t* kernel, uint8_t relu, uint8_t fractal_width) {
 
 
 
@@ -391,66 +390,126 @@ uint8_t relu, uint8_t fractal_width){
 
 #pragma HLS array_partition variable=&kernel
 
+ for (uint16_t out_d = 0; out_d < output_depth; out_d++) {
+  for (uint16_t out_h = 0; out_h < output_height; out_h++) {
+   for (uint16_t out_w = 0; out_w < output_width; out_w++) {
+    buffer = bias[out_d];
+# 36 "../layers_c/depthwise_conv2d.cpp"
+    int32_t tmp_0 =
+      (((int32_t) input[out_d * input_height * input_width
+        + (out_h + 0) * input_width + (out_w + 0)]
+        * (int32_t) kernel[(out_d * kernel_height
+          * kernel_width) + (0 * kernel_width) + 0])
+        >> fractal_width);
+    int32_t tmp_1 =
+      (((int32_t) input[out_d * input_height * input_width
+        + (out_h + 0) * input_width + (out_w + 1)]
+        * (int32_t) kernel[(out_d * kernel_height
+          * kernel_width) + (0 * kernel_width) + 1])
+        >> fractal_width);
+    int32_t tmp_2 =
+      (((int32_t) input[out_d * input_height * input_width
+        + (out_h + 0) * input_width + (out_w + 2)]
+        * (int32_t) kernel[(out_d * kernel_height
+          * kernel_width) + (0 * kernel_width) + 2])
+        >> fractal_width);
 
- for(uint16_t out_d = 0; out_d < output_depth; out_d++){
-     for(uint16_t out_h = 0; out_h < output_height; out_h++){
-      for(uint16_t out_w = 0; out_w < output_width; out_w++){
+    int32_t tmp_3 =
+      (((int32_t) input[out_d * input_height * input_width
+        + (out_h + 1) * input_width + (out_w + 0)]
+        * (int32_t) kernel[(out_d * kernel_height
+          * kernel_width) + (1 * kernel_width) + 0])
+        >> fractal_width);
+    int32_t tmp_4 =
+      (((int32_t) input[out_d * input_height * input_width
+        + (out_h + 1) * input_width + (out_w + 1)]
+        * (int32_t) kernel[(out_d * kernel_height
+          * kernel_width) + (1 * kernel_width) + 1])
+        >> fractal_width);
+    int32_t tmp_5 =
+      (((int32_t) input[out_d * input_height * input_width
+        + (out_h + 1) * input_width + (out_w + 2)]
+        * (int32_t) kernel[(out_d * kernel_height
+          * kernel_width) + (1 * kernel_width) + 2])
+        >> fractal_width);
 
-#pragma HLS loop_flatten
-#pragma HLS PIPELINE
+    int32_t tmp_6 =
+      (((int32_t) input[out_d * input_height * input_width
+        + (out_h + 2) * input_width + (out_w + 0)]
+        * (int32_t) kernel[(out_d * kernel_height
+          * kernel_width) + (2 * kernel_width) + 0])
+        >> fractal_width);
+    int32_t tmp_7 =
+      (((int32_t) input[out_d * input_height * input_width
+        + (out_h + 2) * input_width + (out_w + 1)]
+        * (int32_t) kernel[(out_d * kernel_height
+          * kernel_width) + (2 * kernel_width) + 1])
+        >> fractal_width);
+    int32_t tmp_8 =
+      (((int32_t) input[out_d * input_height * input_width
+        + (out_h + 2) * input_width + (out_w + 2)]
+        * (int32_t) kernel[(out_d * kernel_height
+          * kernel_width) + (2 * kernel_width) + 2])
+        >> fractal_width);
+    int32_t tmp_10 = tmp_0 + tmp_1;
+    int32_t tmp_11 = tmp_2 + tmp_3;
+    int32_t tmp_12 = tmp_4 + tmp_5;
+    int32_t tmp_13 = tmp_6 + tmp_7;
 
- buffer = bias[out_d];
+    int32_t tmp_20 = tmp_10 + tmp_11;
+    int32_t tmp_21 = tmp_12 + tmp_13;
 
-       for(uint16_t k_h = 0; k_h < kernel_height; k_h++){
-#pragma HLS UNROLL
- for(uint16_t k_w = 0; k_w < kernel_width; k_w++){
-#pragma HLS UNROLL
- buffer +=
-                                (((int32_t)input[out_d * input_height * input_width + (out_h + k_h) * input_width + (out_w + k_w)] *
-                                            (int32_t)kernel[(out_d * kernel_height * kernel_width) + (k_h * kernel_width) + k_w])>> fractal_width);
-                    }
-                }
-       buffer &= ~(0x0000 - ((buffer >> 15) & relu));
-                output[out_d * output_height * output_width + out_h * output_width + out_w] = (int16_t)buffer;
-            }
-        }
-    }
 
-    return(0);
+    buffer = tmp_20 + tmp_21 + tmp_8;
+    buffer &= ~(0x00000000 - ((buffer >> 31) & relu));
+    output[out_d * output_height * output_width
+      + out_h * output_width + out_w] = (int16_t) buffer;
+   }
+  }
+ }
+
+ return (0);
 }
 
-uint8_t depthwise_conv2d_float32(uint16_t input_depth, uint16_t input_height, uint16_t input_width, float* input,
-uint16_t output_depth, uint16_t output_height, uint16_t output_width, float* output,
-const float* bias,
-uint16_t kernel_height, uint16_t kernel_width, const float* kernel,
-uint8_t relu){
+uint8_t depthwise_conv2d_float32(uint16_t input_depth, uint16_t input_height,
+  uint16_t input_width, float* input, uint16_t output_depth,
+  uint16_t output_height, uint16_t output_width, float* output,
+  const float* bias, uint16_t kernel_height, uint16_t kernel_width,
+  const float* kernel, uint8_t relu) {
 
 
 
 
 
 
-    for(uint16_t out_d = 0; out_d < output_depth; out_d++){
-        for(uint16_t out_h = 0; out_h < output_height; out_h++){
-            for(uint16_t out_w = 0; out_w < output_width; out_w++){
-                output[out_d * output_height * output_width + out_h * output_width + out_w] = 0;
-                for(uint16_t k_h = 0; k_h < kernel_height; k_h++){
-                    for(uint16_t k_w = 0; k_w < kernel_width; k_w++){
-                        output[out_d * output_height * output_width + out_h * output_width + out_w] +=
-                                input[out_d * input_height * input_width + (out_h + k_h) * input_width + (out_w + k_w)] *
-                                    kernel[(out_d * kernel_height * kernel_width) + (k_h * kernel_width) + k_w];
+ for (uint16_t out_d = 0; out_d < output_depth; out_d++) {
+  for (uint16_t out_h = 0; out_h < output_height; out_h++) {
+   for (uint16_t out_w = 0; out_w < output_width; out_w++) {
+    output[out_d * output_height * output_width
+      + out_h * output_width + out_w] = 0;
+    for (uint16_t k_h = 0; k_h < kernel_height; k_h++) {
+     for (uint16_t k_w = 0; k_w < kernel_width; k_w++) {
+      output[out_d * output_height * output_width
+        + out_h * output_width + out_w] += input[out_d
+        * input_height * input_width
+        + (out_h + k_h) * input_width + (out_w + k_w)]
+        * kernel[(out_d * kernel_height * kernel_width)
+          + (k_h * kernel_width) + k_w];
 
-                    }
-                }
-                output[out_d * output_height * output_width + out_h * output_width + out_w] += bias[out_d];
-
-                if(relu == 1){
-                    if(output[out_d * output_height * output_width + out_h * output_width + out_w] < 0){
-                        output[out_d * output_height * output_width + out_h * output_width + out_w] = 0;
-                    }
-                }
-            }
-        }
+     }
     }
-    return(0);
+    output[out_d * output_height * output_width
+      + out_h * output_width + out_w] += bias[out_d];
+
+    if (relu == 1) {
+     if (output[out_d * output_height * output_width
+       + out_h * output_width + out_w] < 0) {
+      output[out_d * output_height * output_width
+        + out_h * output_width + out_w] = 0;
+     }
+    }
+   }
+  }
+ }
+ return (0);
 }

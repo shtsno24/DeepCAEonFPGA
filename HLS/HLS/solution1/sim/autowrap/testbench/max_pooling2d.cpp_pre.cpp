@@ -247,12 +247,9 @@ uint16_t output_depth, uint16_t output_height, uint16_t output_width, int16_t* o
         for(uint16_t out_h = 0; out_h < output_height; out_h++){
          for(uint16_t out_w = 0; out_w < output_width; out_w++){
 
-#pragma HLS loop_flatten
-#pragma HLS PIPELINE
+
           for(uint16_t in_h = 0; in_h < kernel_size; in_h++){
-
                     for(uint16_t in_w = 0; in_w < kernel_size; in_w++){
-
                      tmp = input[out_d * input_height * input_width + (kernel_size * out_h + in_h) * input_width + (kernel_size * out_w + in_w)];
                         if((in_h == 0 && in_w == 0) || (buffer < tmp)){
                          buffer = tmp;
