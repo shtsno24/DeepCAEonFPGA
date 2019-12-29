@@ -75979,35 +75979,32 @@ int network(axis input_data[784], axis output_data[784]) {
 #pragma HLS INTERFACE s_axilite register port=return
 
 
-
+#pragma HLS array_partition variable=SeparableConv2D_0_b_p
 
 #pragma HLS array_partition variable=SeparableConv2D_0_w_d
 #pragma HLS array_partition variable=SeparableConv2D_0_w_p
 
-
+#pragma HLS array_partition variable=SeparableConv2D_1_b_p
 
 #pragma HLS array_partition variable=SeparableConv2D_1_w_d
 #pragma HLS array_partition variable=SeparableConv2D_1_w_p
 
-
+#pragma HLS array_partition variable=SeparableConv2D_2_b_p
 
 #pragma HLS array_partition variable=SeparableConv2D_2_w_d
 #pragma HLS array_partition variable=SeparableConv2D_2_w_p
 
-
+#pragma HLS array_partition variable=SeparableConv2D_3_b_p
 
 #pragma HLS array_partition variable=SeparableConv2D_3_w_d
 #pragma HLS array_partition variable=SeparableConv2D_3_w_p
 
-
+#pragma HLS array_partition variable=SeparableConv2D_4_b_p
 
 #pragma HLS array_partition variable=SeparableConv2D_4_w_d
 #pragma HLS array_partition variable=SeparableConv2D_4_w_p
 
  int16_t MemBank_A[14400], MemBank_B[14400];
-
-
-
 
  const uint64_t array_length = (uint64_t)SeparableConv2D_4_depth * SeparableConv2D_4_height * SeparableConv2D_4_width;
 
@@ -76126,7 +76123,7 @@ int network(axis input_data[784], axis output_data[784]) {
 #pragma HLS PIPELINE
   MemBank_Out[i] = (int16_t)MemBank_B[i];
  }
-# 200 "/home/shts/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
+# 197 "/home/shts/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
  for(i = 0; i < array_length; i++){
 
 #pragma HLS PIPELINE
@@ -76146,7 +76143,7 @@ int network(axis input_data[784], axis output_data[784]) {
 #ifndef HLS_FASTSIM
 #include "apatb_network.h"
 #endif
-# 215 "/home/shts/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
+# 212 "/home/shts/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
 int main(void){
  axis input_buffer[784];
 #pragma HLS reset variable=input_buffer
@@ -76155,7 +76152,7 @@ int main(void){
 
     int16_t output_img_buff[1 * 28 * 28];
     axis temp;
-# 248 "/home/shts/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
+# 245 "/home/shts/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
  int i = 0;
  for(int depth = 0; depth < 1; depth++){
   for(int height = 0; height < 28; height++){
@@ -76184,12 +76181,12 @@ int main(void){
 #ifndef HLS_FASTSIM
 #define network AESL_WRAP_network
 #endif
-# 272 "/home/shts/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
+# 269 "/home/shts/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
 network(input_buffer, output_buffer);
 #undef network
-# 272 "/home/shts/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
+# 269 "/home/shts/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
 
-# 291 "/home/shts/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
+# 288 "/home/shts/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
  i = 0;
  do {
   temp = output_buffer[i];
@@ -76209,5 +76206,5 @@ network(input_buffer, output_buffer);
  return 0;
 }
 #endif
-# 308 "/home/shts/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
+# 305 "/home/shts/DeepCAEonFPGA/mnist_AXI_Stream.cpp"
 

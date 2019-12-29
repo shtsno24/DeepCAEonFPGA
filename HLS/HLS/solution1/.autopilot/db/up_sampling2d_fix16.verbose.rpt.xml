@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'up_sampling2d_fix16'" level="0">
-<item name = "Date">Sun Dec 29 16:52:30 2019
+<item name = "Date">Mon Dec 30 01:10:39 2019
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">HLS</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00, 9.634, 1.25</column>
+<column name="ap_clk">10.00, 9.634, 1.00</column>
 </table>
 </item>
 </section>
@@ -66,9 +66,9 @@
 </item>
 <item name = "DSP48E"><table name="" hasTotal="0">
 <keys size="3">Instance, Module, Expression</keys>
-<column name="network_mac_muladd_8ns_5ns_4ns_12_1_1_U90">network_mac_muladd_8ns_5ns_4ns_12_1_1, i0 + i1 * i2</column>
-<column name="network_mac_muladd_9ns_6ns_5ns_14_1_1_U91">network_mac_muladd_9ns_6ns_5ns_14_1_1, i0 + i1 * i2</column>
-<column name="network_mul_mul_10ns_5ns_15_1_1_U89">network_mul_mul_10ns_5ns_15_1_1, i0 * i1</column>
+<column name="network_mac_muladd_8ns_5ns_4ns_12_1_1_U93">network_mac_muladd_8ns_5ns_4ns_12_1_1, i0 + i1 * i2</column>
+<column name="network_mac_muladd_9ns_6ns_5ns_14_1_1_U94">network_mac_muladd_9ns_6ns_5ns_14_1_1, i0 + i1 * i2</column>
+<column name="network_mul_mul_10ns_5ns_15_1_1_U92">network_mul_mul_10ns_5ns_15_1_1, i0 * i1</column>
 </table>
 </item>
 <item name = "Memory"><table name="" hasTotal="1">
@@ -81,10 +81,10 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="mul_ln19_1_fu_235_p2">*, 0, 0, 26, 5, 6</column>
-<column name="mul_ln19_2_fu_308_p2">*, 0, 0, 17, 5, 5</column>
-<column name="mul_ln19_3_fu_321_p2">*, 0, 0, 26, 5, 6</column>
-<column name="mul_ln19_fu_230_p2">*, 0, 0, 17, 5, 5</column>
+<column name="mul_ln18_1_fu_235_p2">*, 0, 0, 26, 5, 6</column>
+<column name="mul_ln18_2_fu_308_p2">*, 0, 0, 17, 5, 5</column>
+<column name="mul_ln18_3_fu_321_p2">*, 0, 0, 26, 5, 6</column>
+<column name="mul_ln18_fu_230_p2">*, 0, 0, 17, 5, 5</column>
 <column name="mul_ln6_fu_186_p2">*, 0, 0, 17, 5, 5</column>
 <column name="add_ln14_fu_275_p2">+, 0, 0, 21, 15, 1</column>
 <column name="add_ln15_1_fu_460_p2">+, 0, 0, 14, 10, 1</column>
@@ -99,19 +99,19 @@
 <column name="icmp_ln15_fu_287_p2">icmp, 0, 0, 13, 10, 10</column>
 <column name="icmp_ln16_1_fu_350_p2">icmp, 0, 0, 11, 5, 5</column>
 <column name="icmp_ln16_fu_217_p2">icmp, 0, 0, 11, 5, 1</column>
-<column name="or_ln19_fu_376_p2">or, 0, 0, 2, 1, 1</column>
+<column name="or_ln18_fu_376_p2">or, 0, 0, 2, 1, 1</column>
 <column name="select_ln14_fu_362_p3">select, 0, 0, 5, 1, 5</column>
 <column name="select_ln15_1_fu_466_p3">select, 0, 0, 10, 1, 1</column>
 <column name="select_ln15_fu_436_p3">select, 0, 0, 5, 1, 5</column>
-<column name="select_ln19_1_fu_313_p3">select, 0, 0, 8, 1, 8</column>
-<column name="select_ln19_2_fu_326_p3">select, 0, 0, 9, 1, 9</column>
-<column name="select_ln19_3_fu_334_p3">select, 0, 0, 8, 1, 8</column>
-<column name="select_ln19_4_fu_342_p3">select, 0, 0, 9, 1, 9</column>
-<column name="select_ln19_5_fu_355_p3">select, 0, 0, 2, 1, 1</column>
-<column name="select_ln19_6_fu_382_p3">select, 0, 0, 5, 1, 1</column>
-<column name="select_ln19_7_fu_414_p3">select, 0, 0, 8, 1, 8</column>
-<column name="select_ln19_8_fu_428_p3">select, 0, 0, 9, 1, 9</column>
-<column name="select_ln19_fu_292_p3">select, 0, 0, 5, 1, 1</column>
+<column name="select_ln18_1_fu_313_p3">select, 0, 0, 8, 1, 8</column>
+<column name="select_ln18_2_fu_326_p3">select, 0, 0, 9, 1, 9</column>
+<column name="select_ln18_3_fu_334_p3">select, 0, 0, 8, 1, 8</column>
+<column name="select_ln18_4_fu_342_p3">select, 0, 0, 9, 1, 9</column>
+<column name="select_ln18_5_fu_355_p3">select, 0, 0, 2, 1, 1</column>
+<column name="select_ln18_6_fu_382_p3">select, 0, 0, 5, 1, 1</column>
+<column name="select_ln18_7_fu_414_p3">select, 0, 0, 8, 1, 8</column>
+<column name="select_ln18_8_fu_428_p3">select, 0, 0, 9, 1, 9</column>
+<column name="select_ln18_fu_292_p3">select, 0, 0, 5, 1, 1</column>
 <column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
 <column name="ap_enable_reg_pp0_iter1">xor, 0, 0, 2, 2, 1</column>
 </table>
@@ -130,7 +130,7 @@
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="add_ln19_1_reg_623">14, 0, 14, 0</column>
+<column name="add_ln18_1_reg_623">14, 0, 14, 0</column>
 <column name="ap_CS_fsm">4, 0, 4, 0</column>
 <column name="ap_enable_reg_pp0_iter0">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
@@ -142,18 +142,18 @@
 <column name="icmp_ln16_reg_564">1, 0, 1, 0</column>
 <column name="indvar_flatten31_reg_115">15, 0, 15, 0</column>
 <column name="indvar_flatten_reg_137">10, 0, 10, 0</column>
-<column name="lshr_ln19_1_reg_603">4, 0, 4, 0</column>
+<column name="lshr_ln18_1_reg_603">4, 0, 4, 0</column>
 <column name="mul_ln6_1_reg_559">15, 0, 15, 0</column>
 <column name="mul_ln6_reg_531">10, 0, 10, 0</column>
 <column name="out_d_0_reg_126">5, 0, 5, 0</column>
 <column name="out_h_0_reg_148">5, 0, 5, 0</column>
 <column name="out_w_0_reg_159">5, 0, 5, 0</column>
-<column name="select_ln19_6_reg_583">5, 0, 5, 0</column>
-<column name="select_ln19_7_reg_588">8, 0, 8, 0</column>
-<column name="select_ln19_8_reg_593">9, 0, 9, 0</column>
-<column name="zext_ln19_1_reg_543">6, 0, 9, 3</column>
-<column name="zext_ln19_3_cast_reg_549">6, 0, 14, 8</column>
-<column name="zext_ln19_reg_537">5, 0, 8, 3</column>
+<column name="select_ln18_6_reg_583">5, 0, 5, 0</column>
+<column name="select_ln18_7_reg_588">8, 0, 8, 0</column>
+<column name="select_ln18_8_reg_593">9, 0, 9, 0</column>
+<column name="zext_ln18_1_reg_543">6, 0, 9, 3</column>
+<column name="zext_ln18_3_cast_reg_549">6, 0, 14, 8</column>
+<column name="zext_ln18_reg_537">5, 0, 8, 3</column>
 </table>
 </item>
 </section>

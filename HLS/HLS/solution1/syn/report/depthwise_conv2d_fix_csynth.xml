@@ -10,14 +10,14 @@
 <Part>xc7z020-clg400-1</Part>
 <TopModelName>depthwise_conv2d_fix</TopModelName>
 <TargetClockPeriod>10.00</TargetClockPeriod>
-<ClockUncertainty>1.25</ClockUncertainty>
+<ClockUncertainty>1.00</ClockUncertainty>
 </UserAssignments>
 
 <PerformanceEstimates>
 <PipelineType>none</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>7.888</EstimatedClockPeriod>
+<EstimatedClockPeriod>8.866</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
@@ -41,7 +41,7 @@
 <Resources>
 <BRAM_18K>0</BRAM_18K>
 <DSP48E>9</DSP48E>
-<FF>586</FF>
+<FF>587</FF>
 <LUT>1155</LUT>
 <URAM>0</URAM>
 </Resources>

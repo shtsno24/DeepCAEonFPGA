@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'padding2d_fix16'" level="0">
-<item name = "Date">Sun Dec 29 16:52:27 2019
+<item name = "Date">Mon Dec 30 01:10:36 2019
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">HLS</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00, 6.964, 1.25</column>
+<column name="ap_clk">10.00, 6.964, 1.00</column>
 </table>
 </item>
 </section>
@@ -111,8 +111,8 @@
 <column name="add_ln30_1_fu_598_p2">+, 0, 0, 19, 14, 1</column>
 <column name="add_ln30_fu_578_p2">+, 0, 0, 19, 14, 14</column>
 <column name="depth_fu_525_p2">+, 0, 0, 15, 5, 1</column>
-<column name="empty_31_fu_402_p2">+, 0, 0, 15, 2, 5</column>
-<column name="empty_32_fu_423_p2">+, 0, 0, 15, 1, 5</column>
+<column name="empty_35_fu_402_p2">+, 0, 0, 15, 2, 5</column>
+<column name="empty_36_fu_423_p2">+, 0, 0, 15, 1, 5</column>
 <column name="height_fu_572_p2">+, 0, 0, 15, 5, 1</column>
 <column name="i_count_fu_552_p2">+, 0, 0, 19, 14, 14</column>
 <column name="o_count_6_fu_662_p2">+, 0, 0, 23, 16, 1</column>
@@ -168,8 +168,8 @@
 <column name="ap_enable_reg_pp1_iter1">1, 0, 1, 0</column>
 <column name="depth_0_reg_224">5, 0, 5, 0</column>
 <column name="depth_reg_821">5, 0, 5, 0</column>
-<column name="empty_33_reg_733">5, 0, 5, 0</column>
-<column name="empty_34_reg_807">5, 0, 5, 0</column>
+<column name="empty_37_reg_733">5, 0, 5, 0</column>
+<column name="empty_38_reg_807">5, 0, 5, 0</column>
 <column name="empty_reg_722">10, 0, 10, 0</column>
 <column name="height_0_reg_289">5, 0, 5, 0</column>
 <column name="height_reg_849">5, 0, 5, 0</column>

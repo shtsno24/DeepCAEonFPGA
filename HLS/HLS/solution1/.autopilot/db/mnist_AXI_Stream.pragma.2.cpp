@@ -28565,27 +28565,27 @@ _ssdm_op_SpecInterface(output_data, "axis", 1, 1, "both", 0, 0, "", "", "", 0, 0
 _ssdm_op_SpecInterface(0, "s_axilite", 1, 1, "", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
 
 
-
+_ssdm_SpecArrayPartition( &SeparableConv2D_0_b_p, 1, "complete", 0, "");
 
 _ssdm_SpecArrayPartition( &SeparableConv2D_0_w_d, 1, "complete", 0, "");
 _ssdm_SpecArrayPartition( &SeparableConv2D_0_w_p, 1, "complete", 0, "");
 
-
+_ssdm_SpecArrayPartition( &SeparableConv2D_1_b_p, 1, "complete", 0, "");
 
 _ssdm_SpecArrayPartition( &SeparableConv2D_1_w_d, 1, "complete", 0, "");
 _ssdm_SpecArrayPartition( &SeparableConv2D_1_w_p, 1, "complete", 0, "");
 
-
+_ssdm_SpecArrayPartition( &SeparableConv2D_2_b_p, 1, "complete", 0, "");
 
 _ssdm_SpecArrayPartition( &SeparableConv2D_2_w_d, 1, "complete", 0, "");
 _ssdm_SpecArrayPartition( &SeparableConv2D_2_w_p, 1, "complete", 0, "");
 
-
+_ssdm_SpecArrayPartition( &SeparableConv2D_3_b_p, 1, "complete", 0, "");
 
 _ssdm_SpecArrayPartition( &SeparableConv2D_3_w_d, 1, "complete", 0, "");
 _ssdm_SpecArrayPartition( &SeparableConv2D_3_w_p, 1, "complete", 0, "");
 
-
+_ssdm_SpecArrayPartition( &SeparableConv2D_4_b_p, 1, "complete", 0, "");
 
 _ssdm_SpecArrayPartition( &SeparableConv2D_4_w_d, 1, "complete", 0, "");
 _ssdm_SpecArrayPartition( &SeparableConv2D_4_w_p, 1, "complete", 0, "");

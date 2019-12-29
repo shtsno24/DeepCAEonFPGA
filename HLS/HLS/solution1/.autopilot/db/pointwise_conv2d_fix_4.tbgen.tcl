@@ -69,9 +69,9 @@ set RtlHierarchyInfo {[
 		"Port" : [
 			{"Name" : "input_r", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "output_r", "Type" : "Memory", "Direction" : "O"}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mux_164_16_1_1_x_U110", "Parent" : "0"},
-	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mux_164_32_1_1_U111", "Parent" : "0"},
-	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mac_muladd_11ns_5ns_11s_15_1_1_U112", "Parent" : "0"}]}
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mux_164_16_1_1_x0_U114", "Parent" : "0"},
+	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mux_164_32_1_1_U115", "Parent" : "0"},
+	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mac_muladd_11ns_5ns_11s_15_1_1_U116", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {

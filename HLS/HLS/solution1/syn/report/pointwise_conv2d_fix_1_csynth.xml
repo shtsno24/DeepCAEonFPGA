@@ -10,7 +10,7 @@
 <Part>xc7z020-clg400-1</Part>
 <TopModelName>pointwise_conv2d_fix_1</TopModelName>
 <TargetClockPeriod>10.00</TargetClockPeriod>
-<ClockUncertainty>1.25</ClockUncertainty>
+<ClockUncertainty>1.00</ClockUncertainty>
 </UserAssignments>
 
 <PerformanceEstimates>
@@ -21,17 +21,17 @@
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>25289</Best-caseLatency>
-<Average-caseLatency>25289</Average-caseLatency>
-<Worst-caseLatency>25289</Worst-caseLatency>
-<Interval-min>25289</Interval-min>
-<Interval-max>25289</Interval-max>
+<Best-caseLatency>25281</Best-caseLatency>
+<Average-caseLatency>25281</Average-caseLatency>
+<Worst-caseLatency>25281</Worst-caseLatency>
+<Interval-min>25281</Interval-min>
+<Interval-max>25281</Interval-max>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <Loop1>
 <TripCount>8</TripCount>
-<Latency>25288</Latency>
-<IterationLatency>3161</IterationLatency>
+<Latency>25280</Latency>
+<IterationLatency>3160</IterationLatency>
 <Loop1.1>
 <TripCount>16</TripCount>
 <Latency>16</Latency>
@@ -52,8 +52,8 @@
 <Resources>
 <BRAM_18K>0</BRAM_18K>
 <DSP48E>3</DSP48E>
-<FF>1121</FF>
-<LUT>910</LUT>
+<FF>1107</FF>
+<LUT>970</LUT>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>

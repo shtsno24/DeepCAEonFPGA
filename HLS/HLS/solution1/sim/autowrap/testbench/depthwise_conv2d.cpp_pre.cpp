@@ -249,7 +249,6 @@ uint8_t depthwise_conv2d_fix16(uint16_t input_depth, uint16_t input_height,
 #pragma HLS array_partition variable=kernel_buffer
 
  for (uint16_t out_d = 0; out_d < output_depth; out_d++) {
-#pragma HLS UNROLL factor=2
 #pragma HLS PIPELINE
   for (uint8_t i = 0; i < kernel_height * kernel_width; i++) {
 #pragma HLS PIPELINE
@@ -260,20 +259,15 @@ uint8_t depthwise_conv2d_fix16(uint16_t input_depth, uint16_t input_height,
 
   for (uint16_t out_h = 0; out_h < output_height; out_h++) {
    for (uint16_t out_w = 0; out_w < output_width; out_w++) {
+#pragma HLS PIPELINE
     buffer = bias_buffer;
     for (uint16_t k_h = 0; k_h < kernel_height; k_h++) {
-#pragma HLS PIPELINE
-
      for (uint16_t k_w = 0; k_w < kernel_width; k_w++) {
-
-#pragma HLS loop_flatten
-
       buffer += (((int32_t) input[out_d * input_height
         * input_width + (out_h + k_h) * input_width
         + (out_w + k_w)]
         * kernel_buffer[(k_h * kernel_width) + k_w])
         >> fractal_width);
-
      }
     }
     buffer &= ~(0x00000000 - ((buffer >> 31) & relu));

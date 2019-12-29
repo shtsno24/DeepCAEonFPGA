@@ -383,29 +383,28 @@ uint8_t pointwise_conv2d_fix16(uint16_t input_depth, uint16_t input_height,
  int32_t buffer;
  int32_t kernel_buffer[16];
  int32_t bias_buffer;
+
 _ssdm_SpecArrayPartition( kernel_buffer, 1, "complete", 0, "");
 
  for (uint16_t out_d = 0; out_d < output_depth; out_d++) {
-
-  for (uint8_t i = 0; i < input_depth; i++) {
+  bias_buffer = bias[out_d];
+  for (uint16_t i = 0; i < input_depth; i++) {
 _ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
  kernel_buffer[i] = kernel[out_d * input_depth + i];
   }
-  bias_buffer = bias[out_d];
 
   for (uint16_t out_h = 0; out_h < output_height; out_h++) {
-   for (uint16_t out_w = 0; out_w < output_width; out_w++) {
 _ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
- buffer = bias_buffer;
+ for (uint16_t out_w = 0; out_w < output_width; out_w++) {
+    buffer = bias_buffer;
     for (uint16_t in_d = 0; in_d < input_depth; in_d++) {
-_ssdm_SpecLoopFlatten(0, "");
 
+_ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
  buffer += ((int32_t)(
        input[in_d * output_height * output_width
          + out_h * output_width + out_w])
        * kernel_buffer[in_d]) >> fractal_width;
     }
-
     buffer &= ~(0x00000000 - ((buffer >> 31) & relu));
     output[out_d * output_height * output_width
       + out_h * output_width + out_w] = (int16_t) buffer;
