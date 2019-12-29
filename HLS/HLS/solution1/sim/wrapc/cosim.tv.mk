@@ -1,9 +1,6 @@
 # ==============================================================
-# File generated on Sat Dec 21 17:39:18 JST 2019
-# Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
-# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
-# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+# Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+# Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 # ==============================================================
 __SIM_FPO__ = 1
 __SIM_MATHHLS__ = 1
@@ -14,7 +11,7 @@ __SIM_DDS__ = 1
 
 TARGET := cosim.tv.exe
 
-AUTOPILOT_ROOT := /tools/Xilinx/Vivado/2018.3
+AUTOPILOT_ROOT := /tools/Xilinx/Vivado/2019.1
 AUTOPILOT_MACH := lnx64
 
 ifdef COSIM_M32
@@ -27,7 +24,7 @@ ifdef AP_GCC_M32
 endif
 IFLAG += -fPIC
 ifndef AP_GCC_PATH
-  AP_GCC_PATH := /tools/Xilinx/Vivado/2018.3/tps/lnx64/gcc-6.2.0/bin
+  AP_GCC_PATH := /tools/Xilinx/Vivado/2019.1/tps/lnx64/gcc-6.2.0/bin
 endif
 AUTOPILOT_TOOL = ${AUTOPILOT_ROOT}/${AUTOPILOT_MACH}/tools
 AUTOPILOT_TECH = ${AUTOPILOT_ROOT}/common/technology

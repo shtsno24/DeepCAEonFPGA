@@ -1,9 +1,6 @@
 -- ==============================================================
--- File generated on Sat Dec 21 17:38:50 JST 2019
--- Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
--- SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
--- IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
--- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-- Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+-- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- ==============================================================
 library IEEE;
 use IEEE.STD_LOGIC_1164.all;
@@ -14,7 +11,6 @@ generic (
     C_S_AXI_ADDR_WIDTH    : INTEGER := 5;
     C_S_AXI_DATA_WIDTH    : INTEGER := 32);
 port (
-    -- axi4 lite slave signals
     ACLK                  :in   STD_LOGIC;
     ARESET                :in   STD_LOGIC;
     ACLK_EN               :in   STD_LOGIC;
@@ -36,7 +32,6 @@ port (
     RVALID                :out  STD_LOGIC;
     RREADY                :in   STD_LOGIC;
     interrupt             :out  STD_LOGIC;
-    -- user signals
     ap_start              :out  STD_LOGIC;
     ap_done               :in   STD_LOGIC;
     ap_ready              :in   STD_LOGIC;

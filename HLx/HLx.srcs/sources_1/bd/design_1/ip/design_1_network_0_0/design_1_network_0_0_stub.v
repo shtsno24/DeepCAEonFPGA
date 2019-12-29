@@ -1,10 +1,10 @@
-// Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+// Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-// Date        : Sat Dec 21 17:48:56 2019
-// Host        : shts-server running 64-bit Ubuntu 18.04.3 LTS
-// Command     : write_verilog -force -mode synth_stub -rename_top design_1_network_0_0 -prefix
-//               design_1_network_0_0_ design_1_network_0_0_stub.v
+// Tool Version: Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
+// Date        : Sat Dec 28 20:33:07 2019
+// Host        : masudalab-ubuntu running 64-bit Ubuntu 18.04.3 LTS
+// Command     : write_verilog -force -mode synth_stub
+//               /home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_network_0_0/design_1_network_0_0_stub.v
 // Design      : design_1_network_0_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z020clg400-1
@@ -13,7 +13,7 @@
 // This empty module with port declaration file causes synthesis tools to infer a black box for IP.
 // The synthesis directives are for Synopsys Synplify support to prevent IO buffer insertion.
 // Please paste the declaration into a Verilog source file or add the file as an additional source.
-(* X_CORE_INFO = "network,Vivado 2018.3" *)
+(* X_CORE_INFO = "network,Vivado 2019.1" *)
 module design_1_network_0_0(s_axi_AXILiteS_AWADDR, 
   s_axi_AXILiteS_AWVALID, s_axi_AXILiteS_AWREADY, s_axi_AXILiteS_WDATA, 
   s_axi_AXILiteS_WSTRB, s_axi_AXILiteS_WVALID, s_axi_AXILiteS_WREADY, 

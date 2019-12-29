@@ -12,22 +12,24 @@ uint8_t relu, uint8_t fractal_width){
 //#pragma HLS ALLOCATION instances=add limit=32 operation
     // input_size *must* be included padding size
     // stride is fixed to 1
-	int16_t buffer;
+#pragma HLS array_partition variable=kernel
+
+	int32_t buffer;
     for(uint16_t out_d = 0; out_d < output_depth; out_d++){
     	for(uint16_t out_h = 0; out_h < output_height; out_h++){
-            for(uint16_t out_w = 0; out_w < output_width; out_w++){
+    		for(uint16_t out_w = 0; out_w < output_width; out_w++){
             	buffer = bias[out_d];
                 for(uint16_t in_d = 0; in_d < input_depth; in_d++){
-//#pragma HLS UNROLL FACTOR=16
+//#pragma HLS loop_flatten
+//#pragma HLS PIPELINE
+
                     //output[out_d][out_h][out_w] += input[in_d][out_h][out_w] * kernel[out_d][in_d][1][1];
-                	buffer +=
-                			(int16_t)(((int32_t)(input[in_d * output_height * output_width + out_h * output_width + out_w]) *
+                	buffer += (((int32_t)(input[in_d * output_height * output_width + out_h * output_width + out_w]) *
                 					(int32_t)(kernel[out_d * input_depth + in_d])) >> fractal_width);
                 }
-                if(relu == 1 && buffer < 0){
-                	buffer = 0;
-                }
-                output[out_d * output_height * output_width + out_h * output_width + out_w] = buffer;
+
+				buffer &= ~(0x00000000 - ((buffer >> 31) & relu));
+                output[out_d * output_height * output_width + out_h * output_width + out_w] = (int16_t)buffer;
             }
         }
     }

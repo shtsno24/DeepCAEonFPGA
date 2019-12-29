@@ -1,9 +1,6 @@
 # ==============================================================
-# File generated on Sat Dec 21 17:39:22 JST 2019
-# Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
-# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
-# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+# Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+# Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 # ==============================================================
 proc sc_sim_check {ret err logfile} {
 	if {$::AESL_AUTOSIM::gDebug == 1} {
@@ -83,27 +80,27 @@ proc check_tvin_file {} {
 		puts stdout "[debug_prompt arg check_sim.tcl] start...";
 	}
     set rtlfilelist {
-         "c.network.autotvin_input_data_V_data_V.dat"
-         "c.network.autotvin_input_data_V_keep_V.dat"
-         "c.network.autotvin_input_data_V_strb_V.dat"
-         "c.network.autotvin_input_data_V_user_V.dat"
-         "c.network.autotvin_input_data_V_last_V.dat"
-         "c.network.autotvin_input_data_V_id_V.dat"
-         "c.network.autotvin_input_data_V_dest_V.dat"
-         "c.network.autotvin_output_data_V_data_V.dat"
-         "c.network.autotvin_output_data_V_keep_V.dat"
-         "c.network.autotvin_output_data_V_strb_V.dat"
-         "c.network.autotvin_output_data_V_user_V.dat"
-         "c.network.autotvin_output_data_V_last_V.dat"
-         "c.network.autotvin_output_data_V_id_V.dat"
-         "c.network.autotvin_output_data_V_dest_V.dat"
-         "c.network.autotvout_output_data_V_data_V.dat"
-         "c.network.autotvout_output_data_V_keep_V.dat"
-         "c.network.autotvout_output_data_V_strb_V.dat"
-         "c.network.autotvout_output_data_V_user_V.dat"
-         "c.network.autotvout_output_data_V_last_V.dat"
-         "c.network.autotvout_output_data_V_id_V.dat"
-         "c.network.autotvout_output_data_V_dest_V.dat"
+         "c.network.autotvin_input_data_data_V.dat"
+         "c.network.autotvin_input_data_keep_V.dat"
+         "c.network.autotvin_input_data_strb_V.dat"
+         "c.network.autotvin_input_data_user_V.dat"
+         "c.network.autotvin_input_data_last_V.dat"
+         "c.network.autotvin_input_data_id_V.dat"
+         "c.network.autotvin_input_data_dest_V.dat"
+         "c.network.autotvin_output_data_data_V.dat"
+         "c.network.autotvin_output_data_keep_V.dat"
+         "c.network.autotvin_output_data_strb_V.dat"
+         "c.network.autotvin_output_data_user_V.dat"
+         "c.network.autotvin_output_data_last_V.dat"
+         "c.network.autotvin_output_data_id_V.dat"
+         "c.network.autotvin_output_data_dest_V.dat"
+         "c.network.autotvout_output_data_data_V.dat"
+         "c.network.autotvout_output_data_keep_V.dat"
+         "c.network.autotvout_output_data_strb_V.dat"
+         "c.network.autotvout_output_data_user_V.dat"
+         "c.network.autotvout_output_data_last_V.dat"
+         "c.network.autotvout_output_data_id_V.dat"
+         "c.network.autotvout_output_data_dest_V.dat"
          "c.network.autotvout_ap_return.dat"
     }
     foreach rtlfile $rtlfilelist {
@@ -129,13 +126,13 @@ proc check_tvout_file {} {
 		puts stdout "[debug_prompt arg check_sim.tcl] start...";
 	}
     set rtlfilelist {
-         "rtl.network.autotvout_output_data_V_data_V.dat"
-         "rtl.network.autotvout_output_data_V_keep_V.dat"
-         "rtl.network.autotvout_output_data_V_strb_V.dat"
-         "rtl.network.autotvout_output_data_V_user_V.dat"
-         "rtl.network.autotvout_output_data_V_last_V.dat"
-         "rtl.network.autotvout_output_data_V_id_V.dat"
-         "rtl.network.autotvout_output_data_V_dest_V.dat"
+         "rtl.network.autotvout_output_data_data_V.dat"
+         "rtl.network.autotvout_output_data_keep_V.dat"
+         "rtl.network.autotvout_output_data_strb_V.dat"
+         "rtl.network.autotvout_output_data_user_V.dat"
+         "rtl.network.autotvout_output_data_last_V.dat"
+         "rtl.network.autotvout_output_data_id_V.dat"
+         "rtl.network.autotvout_output_data_dest_V.dat"
          "rtl.network.autotvout_ap_return.dat"
     }
     foreach rtlfile $rtlfilelist {

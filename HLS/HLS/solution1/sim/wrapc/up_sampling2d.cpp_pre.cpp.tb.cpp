@@ -1,47 +1,44 @@
 // ==============================================================
-// File generated on Sat Dec 21 17:39:18 JST 2019
-// Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
-// SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
-// IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-// Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+// Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+// Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // ==============================================================
-#1 "/home/shts/DeepCAEonFPGA/layers_c/up_sampling2d.cpp"
-#1 "<組み込み>"
-#1 "<コマンドライン>"
-#1 "/usr/include/stdc-predef.h" 1 3 4
-#1 "<コマンドライン>" 2
-#1 "/home/shts/DeepCAEonFPGA/layers_c/up_sampling2d.cpp"
-#1 "/tools/Xilinx/Vivado/2018.3/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/include/stdint.h" 1 3 4
-#9 "/tools/Xilinx/Vivado/2018.3/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/include/stdint.h" 3 4
-#1 "/usr/include/stdint.h" 1 3 4
-#26 "/usr/include/stdint.h" 3 4
-#1 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 1 3 4
-#33 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 3 4
-#1 "/usr/include/features.h" 1 3 4
-#424 "/usr/include/features.h" 3 4
-#1 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 1 3 4
-#427 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 3 4
-#1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
-#428 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 2 3 4
-#1 "/usr/include/x86_64-linux-gnu/bits/long-double.h" 1 3 4
-#429 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 2 3 4
-#425 "/usr/include/features.h" 2 3 4
-#448 "/usr/include/features.h" 3 4
-#1 "/usr/include/x86_64-linux-gnu/gnu/stubs.h" 1 3 4
-#10 "/usr/include/x86_64-linux-gnu/gnu/stubs.h" 3 4
-#1 "/usr/include/x86_64-linux-gnu/gnu/stubs-64.h" 1 3 4
-#11 "/usr/include/x86_64-linux-gnu/gnu/stubs.h" 2 3 4
-#449 "/usr/include/features.h" 2 3 4
-#34 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 2 3 4
-#27 "/usr/include/stdint.h" 2 3 4
-#1 "/usr/include/x86_64-linux-gnu/bits/types.h" 1 3 4
-#27 "/usr/include/x86_64-linux-gnu/bits/types.h" 3 4
-#1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
-#28 "/usr/include/x86_64-linux-gnu/bits/types.h" 2 3 4
+# 1 "/home/masudalab/DeepCAEonFPGA/layers_c/up_sampling2d.cpp"
+# 1 "<built-in>"
+# 1 "<command-line>"
+# 1 "/usr/include/stdc-predef.h" 1 3 4
+# 1 "<command-line>" 2
+# 1 "/home/masudalab/DeepCAEonFPGA/layers_c/up_sampling2d.cpp"
+# 1 "/tools/Xilinx/Vivado/2019.1/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/include/stdint.h" 1 3 4
+# 9 "/tools/Xilinx/Vivado/2019.1/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/include/stdint.h" 3 4
+# 1 "/usr/include/stdint.h" 1 3 4
+# 26 "/usr/include/stdint.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 1 3 4
+# 33 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 3 4
+# 1 "/usr/include/features.h" 1 3 4
+# 424 "/usr/include/features.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 1 3 4
+# 427 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
+# 428 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 2 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/long-double.h" 1 3 4
+# 429 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 2 3 4
+# 425 "/usr/include/features.h" 2 3 4
+# 448 "/usr/include/features.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/gnu/stubs.h" 1 3 4
+# 10 "/usr/include/x86_64-linux-gnu/gnu/stubs.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/gnu/stubs-64.h" 1 3 4
+# 11 "/usr/include/x86_64-linux-gnu/gnu/stubs.h" 2 3 4
+# 449 "/usr/include/features.h" 2 3 4
+# 34 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 2 3 4
+# 27 "/usr/include/stdint.h" 2 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/types.h" 1 3 4
+# 27 "/usr/include/x86_64-linux-gnu/bits/types.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
+# 28 "/usr/include/x86_64-linux-gnu/bits/types.h" 2 3 4
 
 
 
-#30 "/usr/include/x86_64-linux-gnu/bits/types.h" 3 4
+# 30 "/usr/include/x86_64-linux-gnu/bits/types.h" 3 4
 typedef unsigned char __u_char;
 typedef unsigned short int __u_short;
 typedef unsigned int __u_int;
@@ -75,9 +72,9 @@ typedef unsigned long int __u_quad_t;
 
 typedef long int __intmax_t;
 typedef unsigned long int __uintmax_t;
-#130 "/usr/include/x86_64-linux-gnu/bits/types.h" 3 4
-#1 "/usr/include/x86_64-linux-gnu/bits/typesizes.h" 1 3 4
-#131 "/usr/include/x86_64-linux-gnu/bits/types.h" 2 3 4
+# 130 "/usr/include/x86_64-linux-gnu/bits/types.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/typesizes.h" 1 3 4
+# 131 "/usr/include/x86_64-linux-gnu/bits/types.h" 2 3 4
 
 
 typedef unsigned long int __dev_t;
@@ -150,31 +147,31 @@ typedef unsigned int __socklen_t;
 
 
 typedef int __sig_atomic_t;
-#28 "/usr/include/stdint.h" 2 3 4
-#1 "/usr/include/x86_64-linux-gnu/bits/wchar.h" 1 3 4
-#29 "/usr/include/stdint.h" 2 3 4
-#1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
-#30 "/usr/include/stdint.h" 2 3 4
+# 28 "/usr/include/stdint.h" 2 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/wchar.h" 1 3 4
+# 29 "/usr/include/stdint.h" 2 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
+# 30 "/usr/include/stdint.h" 2 3 4
 
 
 
 
-#1 "/usr/include/x86_64-linux-gnu/bits/stdint-intn.h" 1 3 4
-#24 "/usr/include/x86_64-linux-gnu/bits/stdint-intn.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/stdint-intn.h" 1 3 4
+# 24 "/usr/include/x86_64-linux-gnu/bits/stdint-intn.h" 3 4
 typedef __int8_t int8_t;
 typedef __int16_t int16_t;
 typedef __int32_t int32_t;
 typedef __int64_t int64_t;
-#35 "/usr/include/stdint.h" 2 3 4
+# 35 "/usr/include/stdint.h" 2 3 4
 
 
-#1 "/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h" 1 3 4
-#24 "/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h" 1 3 4
+# 24 "/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h" 3 4
 typedef __uint8_t uint8_t;
 typedef __uint16_t uint16_t;
 typedef __uint32_t uint32_t;
 typedef __uint64_t uint64_t;
-#38 "/usr/include/stdint.h" 2 3 4
+# 38 "/usr/include/stdint.h" 2 3 4
 
 
 
@@ -196,32 +193,32 @@ typedef unsigned short int uint_least16_t;
 typedef unsigned int uint_least32_t;
 
 typedef unsigned long int uint_least64_t;
-#68 "/usr/include/stdint.h" 3 4
+# 68 "/usr/include/stdint.h" 3 4
 typedef signed char int_fast8_t;
 
 typedef long int int_fast16_t;
 typedef long int int_fast32_t;
 typedef long int int_fast64_t;
-#81 "/usr/include/stdint.h" 3 4
+# 81 "/usr/include/stdint.h" 3 4
 typedef unsigned char uint_fast8_t;
 
 typedef unsigned long int uint_fast16_t;
 typedef unsigned long int uint_fast32_t;
 typedef unsigned long int uint_fast64_t;
-#97 "/usr/include/stdint.h" 3 4
+# 97 "/usr/include/stdint.h" 3 4
 typedef long int intptr_t;
 
 
 typedef unsigned long int uintptr_t;
-#111 "/usr/include/stdint.h" 3 4
+# 111 "/usr/include/stdint.h" 3 4
 typedef __intmax_t intmax_t;
 typedef __uintmax_t uintmax_t;
-#10 "/tools/Xilinx/Vivado/2018.3/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/include/stdint.h" 2 3 4
-#2 "/home/shts/DeepCAEonFPGA/layers_c/up_sampling2d.cpp" 2
-#1 "/home/shts/DeepCAEonFPGA/layers_c/up_sampling2d.h" 1
+# 10 "/tools/Xilinx/Vivado/2019.1/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/include/stdint.h" 2 3 4
+# 2 "/home/masudalab/DeepCAEonFPGA/layers_c/up_sampling2d.cpp" 2
+# 1 "/home/masudalab/DeepCAEonFPGA/layers_c/up_sampling2d.h" 1
 
 
-#2 "/home/shts/DeepCAEonFPGA/layers_c/up_sampling2d.h"
+# 2 "/home/masudalab/DeepCAEonFPGA/layers_c/up_sampling2d.h"
 uint8_t up_sampling2d_fix16(uint16_t kernel_size,
 uint16_t input_depth, uint16_t input_height, uint16_t input_width, int16_t* input,
 uint16_t output_depth, uint16_t output_height, uint16_t output_width, int16_t* output);
@@ -229,7 +226,7 @@ uint16_t output_depth, uint16_t output_height, uint16_t output_width, int16_t* o
 uint8_t up_sampling2d_float32(uint16_t kernel_size,
 uint16_t input_depth, uint16_t input_height, uint16_t input_width, float* input,
 uint16_t output_depth, uint16_t output_height, uint16_t output_width, float* output);
-#3 "/home/shts/DeepCAEonFPGA/layers_c/up_sampling2d.cpp" 2
+# 3 "/home/masudalab/DeepCAEonFPGA/layers_c/up_sampling2d.cpp" 2
 
 
 uint8_t up_sampling2d_fix16(uint16_t kernel_size,
@@ -243,10 +240,10 @@ uint16_t output_depth, uint16_t output_height, uint16_t output_width, int16_t* o
 
     for(uint16_t out_d = 0; out_d < output_depth; out_d++){
         for(uint16_t out_h = 0; out_h < output_height; out_h++){
-
          for(uint16_t out_w = 0; out_w < output_width; out_w++){
-
-                output[out_d * output_height * output_width + out_h * output_width + out_w] =
+#pragma HLS loop_flatten
+#pragma HLS PIPELINE
+          output[out_d * output_height * output_width + out_h * output_width + out_w] =
                 input[out_d * input_height * input_width + (out_h/kernel_size) * input_width + (out_w/kernel_size)];
             }
         }

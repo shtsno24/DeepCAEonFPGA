@@ -1,6 +1,6 @@
 
 set TopModule "network"
-set ClockPeriod 10
+set ClockPeriod 6.667
 set ClockList ap_clk
 set HasVivadoClockPeriod 0
 set CombLogicFlag 0
@@ -13,7 +13,7 @@ set FftOrFirFlag 0
 set NbRWValue 0
 set intNbAccess 0
 set NewDSPMapping 1
-set HasDSPModule 0
+set HasDSPModule 1
 set ResetLevelFlag 0
 set ResetStyle control
 set ResetSyncFlag 1
@@ -39,10 +39,10 @@ set ExportMCPathFlag 0
 set SCTraceFileName mytrace
 set SCTraceFileFormat vcd
 set SCTraceOption all
-set TargetInfo xc7z020:clg400:-1
+set TargetInfo xc7z020:-clg400:-1
 set SourceFiles {sc {} c {../../../layers_c/depthwise_conv2d.cpp ../../../layers_c/max_pooling2d.cpp ../../../mnist_AXI_Stream.cpp ../../../layers_c/padding2d.cpp ../../../layers_c/pointwise_conv2d.cpp ../../../layers_c/separable_conv2d.cpp ../../../layers_c/up_sampling2d.cpp}}
 set SourceFlags {sc {} c {{} {} {} {} {} {} {}}}
-set DirectiveFile /home/shts/DeepCAEonFPGA/HLS/HLS/solution1/solution1.directive
+set DirectiveFile /home/masudalab/DeepCAEonFPGA/HLS/HLS/solution1/solution1.directive
 set TBFiles {verilog ../../../mnist_AXI_Stream.cpp bc ../../../mnist_AXI_Stream.cpp vhdl ../../../mnist_AXI_Stream.cpp sc ../../../mnist_AXI_Stream.cpp cas ../../../mnist_AXI_Stream.cpp c {}}
 set SpecLanguage C
 set TVInFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}

@@ -10,8 +10,8 @@
 
 
 
-# 1 "/tools/Xilinx/Vivado/2018.3/common/technology/autopilot/etc/autopilot_ssdm_op.h" 1
-# 157 "/tools/Xilinx/Vivado/2018.3/common/technology/autopilot/etc/autopilot_ssdm_op.h"
+# 1 "/tools/Xilinx/Vivado/2019.1/common/technology/autopilot/etc/autopilot_ssdm_op.h" 1
+# 157 "/tools/Xilinx/Vivado/2019.1/common/technology/autopilot/etc/autopilot_ssdm_op.h"
 extern "C" {
 
 
@@ -118,6 +118,11 @@ extern "C" {
 
     void _ssdm_SpecStream(...) __attribute__ ((nothrow));
 
+    void _ssdm_op_SpecStable(...) __attribute__ ((nothrow));
+    void _ssdm_op_SpecStableContent(...) __attribute__ ((nothrow));
+
+    void _ssdm_op_SpecPipoDepth(...) __attribute__ ((nothrow));
+
     void _ssdm_SpecExpr(...) __attribute__ ((nothrow));
     void _ssdm_SpecExprBalance(...) __attribute__ ((nothrow));
 
@@ -145,8 +150,8 @@ extern "C" {
 # 8 "<command line>" 2
 # 1 "<built-in>" 2
 # 1 "../layers_c/max_pooling2d.cpp" 2
-# 1 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 1 3
-# 33 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 3
+# 1 "/tools/Xilinx/Vivado/2019.1/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 1 3
+# 33 "/tools/Xilinx/Vivado/2019.1/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 3
 # 1 "/usr/include/stdint.h" 1 3 4
 # 26 "/usr/include/stdint.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 1 3 4
@@ -351,7 +356,7 @@ typedef unsigned long int uintptr_t;
 # 111 "/usr/include/stdint.h" 3 4
 typedef __intmax_t intmax_t;
 typedef __uintmax_t uintmax_t;
-# 34 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 2 3
+# 34 "/tools/Xilinx/Vivado/2019.1/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 2 3
 # 2 "../layers_c/max_pooling2d.cpp" 2
 # 1 "../layers_c/max_pooling2d.h" 1
 
@@ -377,8 +382,8 @@ uint8_t max_pooling2d_fix16(uint16_t kernel_size,
 uint16_t input_depth, uint16_t input_height, uint16_t input_width, int16_t* input,
 uint16_t output_depth, uint16_t output_height, uint16_t output_width, int16_t* output){
 
-#pragma HLS allocation instances=mul limit=0 operation
-#pragma HLS ALLOCATION instances=add limit=0 operation
+
+
 
 
  int16_t buffer, tmp;
@@ -387,10 +392,9 @@ uint16_t output_depth, uint16_t output_height, uint16_t output_width, int16_t* o
         for(uint16_t out_h = 0; out_h < output_height; out_h++){
          for(uint16_t out_w = 0; out_w < output_width; out_w++){
 
-             for(uint16_t in_h = 0; in_h < kernel_size; in_h++){
 
+          for(uint16_t in_h = 0; in_h < kernel_size; in_h++){
                     for(uint16_t in_w = 0; in_w < kernel_size; in_w++){
-
                      tmp = input[out_d * input_height * input_width + (kernel_size * out_h + in_h) * input_width + (kernel_size * out_w + in_w)];
                         if((in_h == 0 && in_w == 0) || (buffer < tmp)){
                          buffer = tmp;

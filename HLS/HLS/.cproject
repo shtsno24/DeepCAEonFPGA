@@ -51,17 +51,27 @@
                                 								
                                 <option id="gnu.cpp.compiler.option.include.paths.581025199" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
                                     									
-                                    <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/lnx64/tools/systemc/include"/>
+                                    <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2019.1/include/etc"/>
                                     									
-                                    <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/lnx64/tools/auto_cc/include"/>
-                                    									
+<<<<<<< HEAD
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/include"/>
+=======
+                                    <listOptionValue builtIn="false" value="/home/shts/DeepCAEonFPGA/HLS"/>
                                     									
-                                    <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/include/ap_sysc"/>
+                                    <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2019.1/include/ap_sysc"/>
+>>>>>>> e3552fb35b9f0786af406dc3d7cd3554972d4273
                                     									
+                                    <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2019.1/lnx64/tools/auto_cc/include"/>
+                                    									
+<<<<<<< HEAD
                                     <listOptionValue builtIn="false" value="/home/masudalab/DeepCAEonFPGA/HLS"/>
                                     									
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/include/etc"/>
+=======
+                                    <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2019.1/include"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2019.1/lnx64/tools/systemc/include"/>
+>>>>>>> e3552fb35b9f0786af406dc3d7cd3554972d4273
                                     								
                                 </option>
                                 								
@@ -87,17 +97,27 @@
                                 								
                                 <option id="gnu.c.compiler.option.include.paths.873749429" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
                                     									
-                                    <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/lnx64/tools/systemc/include"/>
+                                    <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2019.1/include/etc"/>
                                     									
-                                    <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/lnx64/tools/auto_cc/include"/>
-                                    									
+<<<<<<< HEAD
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/include"/>
+=======
+                                    <listOptionValue builtIn="false" value="/home/shts/DeepCAEonFPGA/HLS"/>
                                     									
-                                    <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/include/ap_sysc"/>
+                                    <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2019.1/include/ap_sysc"/>
+>>>>>>> e3552fb35b9f0786af406dc3d7cd3554972d4273
                                     									
+                                    <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2019.1/lnx64/tools/auto_cc/include"/>
+                                    									
+<<<<<<< HEAD
                                     <listOptionValue builtIn="false" value="/home/masudalab/DeepCAEonFPGA/HLS"/>
                                     									
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/include/etc"/>
+=======
+                                    <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2019.1/include"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2019.1/lnx64/tools/systemc/include"/>
+>>>>>>> e3552fb35b9f0786af406dc3d7cd3554972d4273
                                     								
                                 </option>
                                 								
@@ -119,7 +139,7 @@
                                 								
                                 <option id="gnu.c.link.option.paths.1349580307" name="Library search path (-L)" superClass="gnu.c.link.option.paths" valueType="libPaths">
                                     									
-                                    <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/lnx64/tools/systemc/lib"/>
+                                    <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2019.1/lnx64/tools/systemc/lib"/>
                                     								
                                 </option>
                                 								
@@ -133,7 +153,7 @@
                                 								
                                 <option id="gnu.cpp.link.option.paths.585654573" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" valueType="libPaths">
                                     									
-                                    <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/lnx64/tools/systemc/lib"/>
+                                    <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2019.1/lnx64/tools/systemc/lib"/>
                                     								
                                 </option>
                                 								
@@ -169,17 +189,17 @@
                             							
                             <option id="gnu.cpp.compiler.option.include.paths.438836988" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
                                 								
-                                <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/lnx64/tools/systemc/include"/>
+                                <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2019.1/include/etc"/>
                                 								
-                                <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/lnx64/tools/auto_cc/include"/>
+                                <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2019.1/include/ap_sysc"/>
                                 								
-                                <listOptionValue builtIn="false" value="/home/shts/DeepCAEonFPGA/HLS"/>
+                                <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2019.1/lnx64/tools/auto_cc/include"/>
                                 								
-                                <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/include"/>
+                                <listOptionValue builtIn="false" value="/home/masudalab/DeepCAEonFPGA/HLS"/>
                                 								
-                                <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/include/ap_sysc"/>
+                                <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2019.1/include"/>
                                 								
-                                <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/include/etc"/>
+                                <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2019.1/lnx64/tools/systemc/include"/>
                                 							
                             </option>
                             							
@@ -283,17 +303,27 @@
                                 								
                                 <option id="gnu.cpp.compiler.option.include.paths.1318080174" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
                                     									
-                                    <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/lnx64/tools/systemc/include"/>
+                                    <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2019.1/include/etc"/>
                                     									
-                                    <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/lnx64/tools/auto_cc/include"/>
-                                    									
+<<<<<<< HEAD
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/include"/>
+=======
+                                    <listOptionValue builtIn="false" value="/home/shts/DeepCAEonFPGA/HLS"/>
                                     									
-                                    <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/include/ap_sysc"/>
+                                    <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2019.1/include/ap_sysc"/>
+>>>>>>> e3552fb35b9f0786af406dc3d7cd3554972d4273
                                     									
+                                    <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2019.1/lnx64/tools/auto_cc/include"/>
+                                    									
+<<<<<<< HEAD
                                     <listOptionValue builtIn="false" value="/home/masudalab/DeepCAEonFPGA/HLS"/>
                                     									
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/include/etc"/>
+=======
+                                    <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2019.1/include"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2019.1/lnx64/tools/systemc/include"/>
+>>>>>>> e3552fb35b9f0786af406dc3d7cd3554972d4273
                                     								
                                 </option>
                                 								
@@ -309,17 +339,27 @@
                                 								
                                 <option id="gnu.c.compiler.option.include.paths.742368728" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
                                     									
-                                    <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/lnx64/tools/systemc/include"/>
+                                    <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2019.1/include/etc"/>
                                     									
-                                    <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/lnx64/tools/auto_cc/include"/>
-                                    									
+<<<<<<< HEAD
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/include"/>
+=======
+                                    <listOptionValue builtIn="false" value="/home/shts/DeepCAEonFPGA/HLS"/>
                                     									
-                                    <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/include/ap_sysc"/>
+                                    <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2019.1/include/ap_sysc"/>
+>>>>>>> e3552fb35b9f0786af406dc3d7cd3554972d4273
                                     									
+                                    <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2019.1/lnx64/tools/auto_cc/include"/>
+                                    									
+<<<<<<< HEAD
                                     <listOptionValue builtIn="false" value="/home/masudalab/DeepCAEonFPGA/HLS"/>
                                     									
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/include/etc"/>
+=======
+                                    <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2019.1/include"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2019.1/lnx64/tools/systemc/include"/>
+>>>>>>> e3552fb35b9f0786af406dc3d7cd3554972d4273
                                     								
                                 </option>
                                 								
@@ -331,7 +371,7 @@
                                 								
                                 <option id="gnu.c.link.option.paths.1998237824" name="Library search path (-L)" superClass="gnu.c.link.option.paths" valueType="libPaths">
                                     									
-                                    <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/lnx64/tools/systemc/lib"/>
+                                    <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2019.1/lnx64/tools/systemc/lib"/>
                                     								
                                 </option>
                                 								
@@ -345,7 +385,7 @@
                                 								
                                 <option id="gnu.cpp.link.option.paths.2032617461" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" valueType="libPaths">
                                     									
-                                    <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/lnx64/tools/systemc/lib"/>
+                                    <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2019.1/lnx64/tools/systemc/lib"/>
                                     								
                                 </option>
                                 								
@@ -381,17 +421,17 @@
                             							
                             <option id="gnu.cpp.compiler.option.include.paths.1361735270" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
                                 								
-                                <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/lnx64/tools/systemc/include"/>
+                                <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2019.1/include/etc"/>
                                 								
-                                <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/lnx64/tools/auto_cc/include"/>
+                                <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2019.1/include/ap_sysc"/>
                                 								
-                                <listOptionValue builtIn="false" value="/home/shts/DeepCAEonFPGA/HLS"/>
+                                <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2019.1/lnx64/tools/auto_cc/include"/>
                                 								
-                                <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/include"/>
+                                <listOptionValue builtIn="false" value="/home/masudalab/DeepCAEonFPGA/HLS"/>
                                 								
-                                <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/include/ap_sysc"/>
+                                <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2019.1/include"/>
                                 								
-                                <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/include/etc"/>
+                                <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2019.1/lnx64/tools/systemc/include"/>
                                 							
                             </option>
                             							
@@ -486,5 +526,7 @@
     </storageModule>
     	
     <storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+    	
+    <storageModule moduleId="refreshScope"/>
     
 </cproject>

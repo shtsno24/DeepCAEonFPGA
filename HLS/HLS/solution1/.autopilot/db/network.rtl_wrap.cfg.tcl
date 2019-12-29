@@ -9,10 +9,10 @@ set BitWidth1 "64"
 set ArrayOpt1 ""
 set Const1 "0"
 set Volatile1 "0"
-set Pointer1 "2"
-set Reference1 "1"
-set Dims1 [list 0]
-set Interface1 [list AP_STREAM 0] 
+set Pointer1 "0"
+set Reference1 "0"
+set Dims1 [list 784]
+set Interface1 "wire"
 set structMem1 ""
 set PortName10 "data"
 set BitWidth10 "16"
@@ -106,7 +106,7 @@ set structParameter1 [list [list $DataType1tp0 D] [list $DataType1tp1 U] [list $
 set structArgument1 [list 16 1 1 1 ]
 set NameSpace1 [list ]
 set structIsPacked1 "0"
-set DataType1 [list "ap_axis<16, 1, 1, 1>" "struct ap_axis" $structMem1 1 0 $structParameter1 $structArgument1 $NameSpace1 $structIsPacked1]
+set DataType1 [list "ap_axis<16, 1, 1, 1>" "struct ap_axis" $structMem1 0 0 $structParameter1 $structArgument1 $NameSpace1 $structIsPacked1]
 set Port1 [list $PortName1 $Interface1 $DataType1 $Pointer1 $Dims1 $Const1 $Volatile1 $ArrayOpt1]
 lappend PortList $Port1
 set PortName2 "output_data"
@@ -114,10 +114,10 @@ set BitWidth2 "64"
 set ArrayOpt2 ""
 set Const2 "0"
 set Volatile2 "0"
-set Pointer2 "2"
-set Reference2 "1"
-set Dims2 [list 0]
-set Interface2 [list AP_STREAM 0] 
+set Pointer2 "0"
+set Reference2 "0"
+set Dims2 [list 784]
+set Interface2 "wire"
 set structMem2 ""
 set PortName20 "data"
 set BitWidth20 "16"
@@ -211,7 +211,7 @@ set structParameter2 [list [list $DataType2tp0 D] [list $DataType2tp1 U] [list $
 set structArgument2 [list 16 1 1 1 ]
 set NameSpace2 [list ]
 set structIsPacked2 "0"
-set DataType2 [list "ap_axis<16, 1, 1, 1>" "struct ap_axis" $structMem2 1 0 $structParameter2 $structArgument2 $NameSpace2 $structIsPacked2]
+set DataType2 [list "ap_axis<16, 1, 1, 1>" "struct ap_axis" $structMem2 0 0 $structParameter2 $structArgument2 $NameSpace2 $structIsPacked2]
 set Port2 [list $PortName2 $Interface2 $DataType2 $Pointer2 $Dims2 $Const2 $Volatile2 $ArrayOpt2]
 lappend PortList $Port2
 set PortName0 "return"

@@ -10,8 +10,8 @@
 
 
 
-# 1 "/tools/Xilinx/Vivado/2018.3/common/technology/autopilot/etc/autopilot_ssdm_op.h" 1
-# 157 "/tools/Xilinx/Vivado/2018.3/common/technology/autopilot/etc/autopilot_ssdm_op.h"
+# 1 "/tools/Xilinx/Vivado/2019.1/common/technology/autopilot/etc/autopilot_ssdm_op.h" 1
+# 157 "/tools/Xilinx/Vivado/2019.1/common/technology/autopilot/etc/autopilot_ssdm_op.h"
 extern "C" {
 
 
@@ -118,6 +118,11 @@ extern "C" {
 
     void _ssdm_SpecStream(...) __attribute__ ((nothrow));
 
+    void _ssdm_op_SpecStable(...) __attribute__ ((nothrow));
+    void _ssdm_op_SpecStableContent(...) __attribute__ ((nothrow));
+
+    void _ssdm_op_SpecPipoDepth(...) __attribute__ ((nothrow));
+
     void _ssdm_SpecExpr(...) __attribute__ ((nothrow));
     void _ssdm_SpecExprBalance(...) __attribute__ ((nothrow));
 
@@ -145,8 +150,8 @@ extern "C" {
 # 8 "<command line>" 2
 # 1 "<built-in>" 2
 # 1 "../layers_c/padding2d.cpp" 2
-# 1 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 1 3
-# 33 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 3
+# 1 "/tools/Xilinx/Vivado/2019.1/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 1 3
+# 33 "/tools/Xilinx/Vivado/2019.1/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 3
 # 1 "/usr/include/stdint.h" 1 3 4
 # 26 "/usr/include/stdint.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 1 3 4
@@ -351,7 +356,7 @@ typedef unsigned long int uintptr_t;
 # 111 "/usr/include/stdint.h" 3 4
 typedef __intmax_t intmax_t;
 typedef __uintmax_t uintmax_t;
-# 34 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 2 3
+# 34 "/tools/Xilinx/Vivado/2019.1/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 2 3
 # 2 "../layers_c/padding2d.cpp" 2
 # 1 "../layers_c/padding2d.h" 1
 
@@ -369,8 +374,8 @@ uint8_t padding2d_fix16(uint16_t padding_height, uint16_t padding_width,
   uint16_t input_depth, uint16_t input_height, uint16_t input_width,
   int16_t* input, uint16_t output_height, uint16_t output_width,
   int16_t* output) {
-#pragma HLS ALLOCATION instances=mul limit=0 operation
-#pragma HLS ALLOCATION instances=add limit=0 operation
+
+
 
  uint16_t o_count = 0, i_count = 0;
 
@@ -378,7 +383,9 @@ uint8_t padding2d_fix16(uint16_t padding_height, uint16_t padding_width,
 
   for(uint16_t i = 0; i < padding_height * (padding_width * 2 + input_width) + padding_width; i++){
 
-   output[o_count] = 0;
+#pragma HLS loop_flatten
+#pragma HLS PIPELINE
+ output[o_count] = 0;
    o_count += 1;
   }
 
@@ -386,21 +393,27 @@ uint8_t padding2d_fix16(uint16_t padding_height, uint16_t padding_width,
 
    for(uint16_t width = 0; width < input_width; width++){
 
-    output[o_count] = input[i_count];
+#pragma HLS loop_flatten
+#pragma HLS PIPELINE
+ output[o_count] = input[i_count];
     i_count += 1;
     o_count += 1;
    }
 
    for(uint16_t width = 0; width < 2 * padding_width; width++){
 
-    output[o_count] = 0;
+#pragma HLS loop_flatten
+#pragma HLS PIPELINE
+ output[o_count] = 0;
     o_count += 1;
    }
   }
 
   for(uint16_t i = 0; i < padding_height * (padding_width * 2 + input_width) - padding_width; i++){
 
-   output[o_count] = 0;
+#pragma HLS loop_flatten
+#pragma HLS PIPELINE
+ output[o_count] = 0;
    o_count += 1;
   }
  }

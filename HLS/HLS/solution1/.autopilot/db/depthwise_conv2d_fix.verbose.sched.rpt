@@ -1,0 +1,352 @@
+
+
+================================================================
+== Vivado HLS Report for 'depthwise_conv2d_fix'
+================================================================
+* Date:           Sat Dec 28 21:58:55 2019
+
+* Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
+* Project:        HLS
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |   6.67|     6.380|        3.33|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +------+------+------+------+---------+
+    |   Latency   |   Interval  | Pipeline|
+    |  min |  max |  min |  max |   Type  |
+    +------+------+------+------+---------+
+    |  8709|  8709|  8709|  8709|   none  |
+    +------+------+------+------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------+------+------+----------+-----------+-----------+------+----------+
+        |             |   Latency   | Iteration|  Initiation Interval  | Trip |          |
+        |  Loop Name  |  min |  max |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------+------+------+----------+-----------+-----------+------+----------+
+        |- Loop 1     |  8708|  8708|       311|          -|          -|    28|    no    |
+        | + Loop 1.1  |   308|   308|        11|          -|          -|    28|    no    |
+        +-------------+------+------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 14
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 2 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 14 
+14 --> 4 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.76>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 1, i64 1, i64 1)"   --->   Operation 15 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (1.76ns)   --->   "br label %.preheader3" [../layers_c/depthwise_conv2d.cpp:21]   --->   Operation 16 'br' <Predicate = true> <Delay = 1.76>
+
+State 2 <SV = 1> <Delay = 1.78>
+ST_2 : Operation 17 [1/1] (0.00ns)   --->   "%out_h_0 = phi i5 [ 0, %.preheader3.preheader.critedge ], [ %out_h, %.preheader3.loopexit ]"   --->   Operation 17 'phi' 'out_h_0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 18 [1/1] (1.36ns)   --->   "%icmp_ln21 = icmp eq i5 %out_h_0, -4" [../layers_c/depthwise_conv2d.cpp:21]   --->   Operation 18 'icmp' 'icmp_ln21' <Predicate = true> <Delay = 1.36> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.36> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%empty_68 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 28, i64 28, i64 28)"   --->   Operation 19 'speclooptripcount' 'empty_68' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 20 [1/1] (1.78ns)   --->   "%out_h = add i5 %out_h_0, 1" [../layers_c/depthwise_conv2d.cpp:60]   --->   Operation 20 'add' 'out_h' <Predicate = true> <Delay = 1.78> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 21 [1/1] (0.00ns)   --->   "br i1 %icmp_ln21, label %1, label %.preheader.preheader" [../layers_c/depthwise_conv2d.cpp:21]   --->   Operation 21 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 22 [1/1] (1.78ns)   --->   "%add_ln79 = add i5 %out_h_0, 2" [../layers_c/depthwise_conv2d.cpp:79]   --->   Operation 22 'add' 'add_ln79' <Predicate = (!icmp_ln21)> <Delay = 1.78> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 23 [1/1] (0.00ns)   --->   "%empty_70 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 1, i64 1, i64 1)"   --->   Operation 23 'speclooptripcount' 'empty_70' <Predicate = (icmp_ln21)> <Delay = 0.00>
+ST_2 : Operation 24 [1/1] (0.00ns)   --->   "ret void"   --->   Operation 24 'ret' <Predicate = (icmp_ln21)> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 1.76>
+ST_3 : Operation 25 [1/1] (0.00ns)   --->   "%shl_ln = call i10 @_ssdm_op_BitConcatenate.i10.i5.i5(i5 %out_h_0, i5 0)" [../layers_c/depthwise_conv2d.cpp:41]   --->   Operation 25 'bitconcatenate' 'shl_ln' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 26 [1/1] (0.00ns)   --->   "%zext_ln41_4 = zext i10 %shl_ln to i11" [../layers_c/depthwise_conv2d.cpp:41]   --->   Operation 26 'zext' 'zext_ln41_4' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 27 [1/1] (0.00ns)   --->   "%shl_ln41_1 = call i6 @_ssdm_op_BitConcatenate.i6.i5.i1(i5 %out_h_0, i1 false)" [../layers_c/depthwise_conv2d.cpp:41]   --->   Operation 27 'bitconcatenate' 'shl_ln41_1' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 28 [1/1] (0.00ns)   --->   "%zext_ln41_5 = zext i6 %shl_ln41_1 to i11" [../layers_c/depthwise_conv2d.cpp:41]   --->   Operation 28 'zext' 'zext_ln41_5' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 29 [1/1] (1.73ns)   --->   "%sub_ln41 = sub i11 %zext_ln41_4, %zext_ln41_5" [../layers_c/depthwise_conv2d.cpp:41]   --->   Operation 29 'sub' 'sub_ln41' <Predicate = true> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 30 [1/1] (0.00ns)   --->   "%shl_ln1 = call i10 @_ssdm_op_BitConcatenate.i10.i5.i5(i5 %out_h, i5 0)" [../layers_c/depthwise_conv2d.cpp:60]   --->   Operation 30 'bitconcatenate' 'shl_ln1' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 31 [1/1] (0.00ns)   --->   "%zext_ln60_3 = zext i10 %shl_ln1 to i11" [../layers_c/depthwise_conv2d.cpp:60]   --->   Operation 31 'zext' 'zext_ln60_3' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 32 [1/1] (0.00ns)   --->   "%shl_ln60_1 = call i6 @_ssdm_op_BitConcatenate.i6.i5.i1(i5 %out_h, i1 false)" [../layers_c/depthwise_conv2d.cpp:60]   --->   Operation 32 'bitconcatenate' 'shl_ln60_1' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 33 [1/1] (0.00ns)   --->   "%zext_ln60_4 = zext i6 %shl_ln60_1 to i11" [../layers_c/depthwise_conv2d.cpp:60]   --->   Operation 33 'zext' 'zext_ln60_4' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 34 [1/1] (1.73ns)   --->   "%sub_ln60 = sub i11 %zext_ln60_3, %zext_ln60_4" [../layers_c/depthwise_conv2d.cpp:60]   --->   Operation 34 'sub' 'sub_ln60' <Predicate = true> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 35 [1/1] (0.00ns)   --->   "%shl_ln2 = call i10 @_ssdm_op_BitConcatenate.i10.i5.i5(i5 %add_ln79, i5 0)" [../layers_c/depthwise_conv2d.cpp:79]   --->   Operation 35 'bitconcatenate' 'shl_ln2' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 36 [1/1] (0.00ns)   --->   "%shl_ln79_1 = call i6 @_ssdm_op_BitConcatenate.i6.i5.i1(i5 %add_ln79, i1 false)" [../layers_c/depthwise_conv2d.cpp:79]   --->   Operation 36 'bitconcatenate' 'shl_ln79_1' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 37 [1/1] (0.00ns)   --->   "%zext_ln79_3 = zext i6 %shl_ln79_1 to i10" [../layers_c/depthwise_conv2d.cpp:79]   --->   Operation 37 'zext' 'zext_ln79_3' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 38 [1/1] (1.73ns)   --->   "%sub_ln79 = sub i10 %shl_ln2, %zext_ln79_3" [../layers_c/depthwise_conv2d.cpp:79]   --->   Operation 38 'sub' 'sub_ln79' <Predicate = true> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 39 [1/1] (0.00ns)   --->   "%p_shl9 = call i7 @_ssdm_op_BitConcatenate.i7.i5.i2(i5 %out_h_0, i2 0)" [../layers_c/depthwise_conv2d.cpp:60]   --->   Operation 39 'bitconcatenate' 'p_shl9' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 40 [1/1] (0.00ns)   --->   "%p_shl9_cast = zext i7 %p_shl9 to i11" [../layers_c/depthwise_conv2d.cpp:60]   --->   Operation 40 'zext' 'p_shl9_cast' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 41 [1/1] (1.73ns)   --->   "%tmp10 = sub i11 %zext_ln41_4, %p_shl9_cast" [../layers_c/depthwise_conv2d.cpp:41]   --->   Operation 41 'sub' 'tmp10' <Predicate = true> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 42 [1/1] (1.76ns)   --->   "br label %.preheader" [../layers_c/depthwise_conv2d.cpp:22]   --->   Operation 42 'br' <Predicate = true> <Delay = 1.76>
+
+State 4 <SV = 3> <Delay = 3.27>
+ST_4 : Operation 43 [1/1] (0.00ns)   --->   "%out_w_0 = phi i5 [ %out_w, %0 ], [ 0, %.preheader.preheader ]"   --->   Operation 43 'phi' 'out_w_0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 44 [1/1] (1.36ns)   --->   "%icmp_ln22 = icmp eq i5 %out_w_0, -4" [../layers_c/depthwise_conv2d.cpp:22]   --->   Operation 44 'icmp' 'icmp_ln22' <Predicate = true> <Delay = 1.36> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.36> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 45 [1/1] (0.00ns)   --->   "%empty_69 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 28, i64 28, i64 28)"   --->   Operation 45 'speclooptripcount' 'empty_69' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 46 [1/1] (1.78ns)   --->   "%out_w = add i5 %out_w_0, 1" [../layers_c/depthwise_conv2d.cpp:22]   --->   Operation 46 'add' 'out_w' <Predicate = true> <Delay = 1.78> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 47 [1/1] (0.00ns)   --->   "br i1 %icmp_ln22, label %.preheader3.loopexit, label %0" [../layers_c/depthwise_conv2d.cpp:22]   --->   Operation 47 'br' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 48 [1/1] (0.00ns)   --->   "%zext_ln41_6 = zext i5 %out_w_0 to i10" [../layers_c/depthwise_conv2d.cpp:41]   --->   Operation 48 'zext' 'zext_ln41_6' <Predicate = (!icmp_ln22)> <Delay = 0.00>
+ST_4 : Operation 49 [1/1] (0.00ns)   --->   "%zext_ln41_7 = zext i5 %out_w_0 to i11" [../layers_c/depthwise_conv2d.cpp:41]   --->   Operation 49 'zext' 'zext_ln41_7' <Predicate = (!icmp_ln22)> <Delay = 0.00>
+ST_4 : Operation 50 [1/1] (1.63ns)   --->   "%add_ln41 = add i11 %zext_ln41_7, %sub_ln41" [../layers_c/depthwise_conv2d.cpp:41]   --->   Operation 50 'add' 'add_ln41' <Predicate = (!icmp_ln22)> <Delay = 1.63> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 51 [1/1] (1.63ns)   --->   "%add_ln47_1 = add i11 %add_ln41, 1" [../layers_c/depthwise_conv2d.cpp:47]   --->   Operation 51 'add' 'add_ln47_1' <Predicate = (!icmp_ln22)> <Delay = 1.63> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 52 [1/1] (1.63ns)   --->   "%add_ln60_1 = add i11 %zext_ln41_7, %sub_ln60" [../layers_c/depthwise_conv2d.cpp:60]   --->   Operation 52 'add' 'add_ln60_1' <Predicate = (!icmp_ln22)> <Delay = 1.63> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 53 [1/1] (1.73ns)   --->   "%add_ln79_1 = add i10 %zext_ln41_6, %sub_ln79" [../layers_c/depthwise_conv2d.cpp:79]   --->   Operation 53 'add' 'add_ln79_1' <Predicate = (!icmp_ln22)> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 54 [1/1] (1.63ns)   --->   "%add_ln103 = add i11 %zext_ln41_7, %tmp10" [../layers_c/depthwise_conv2d.cpp:103]   --->   Operation 54 'add' 'add_ln103' <Predicate = (!icmp_ln22)> <Delay = 1.63> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 55 [1/1] (0.00ns)   --->   "br label %.preheader3"   --->   Operation 55 'br' <Predicate = (icmp_ln22)> <Delay = 0.00>
+
+State 5 <SV = 4> <Delay = 3.25>
+ST_5 : Operation 56 [1/1] (0.00ns)   --->   "%sext_ln41 = sext i11 %add_ln41 to i32" [../layers_c/depthwise_conv2d.cpp:41]   --->   Operation 56 'sext' 'sext_ln41' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 57 [1/1] (0.00ns)   --->   "%zext_ln41_3 = zext i32 %sext_ln41 to i64" [../layers_c/depthwise_conv2d.cpp:41]   --->   Operation 57 'zext' 'zext_ln41_3' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 58 [1/1] (0.00ns)   --->   "%input_addr = getelementptr [14400 x i16]* %input_r, i64 0, i64 %zext_ln41_3" [../layers_c/depthwise_conv2d.cpp:41]   --->   Operation 58 'getelementptr' 'input_addr' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 59 [2/2] (3.25ns)   --->   "%input_load = load i16* %input_addr, align 2" [../layers_c/depthwise_conv2d.cpp:41]   --->   Operation 59 'load' 'input_load' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 14400> <RAM>
+ST_5 : Operation 60 [1/1] (0.00ns)   --->   "%sext_ln47 = sext i11 %add_ln47_1 to i32" [../layers_c/depthwise_conv2d.cpp:47]   --->   Operation 60 'sext' 'sext_ln47' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 61 [1/1] (0.00ns)   --->   "%zext_ln47 = zext i32 %sext_ln47 to i64" [../layers_c/depthwise_conv2d.cpp:47]   --->   Operation 61 'zext' 'zext_ln47' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 62 [1/1] (0.00ns)   --->   "%input_addr_1 = getelementptr [14400 x i16]* %input_r, i64 0, i64 %zext_ln47" [../layers_c/depthwise_conv2d.cpp:47]   --->   Operation 62 'getelementptr' 'input_addr_1' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 63 [2/2] (3.25ns)   --->   "%input_load_1 = load i16* %input_addr_1, align 2" [../layers_c/depthwise_conv2d.cpp:47]   --->   Operation 63 'load' 'input_load_1' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 14400> <RAM>
+ST_5 : Operation 64 [1/1] (1.63ns)   --->   "%add_ln53_1 = add i11 %add_ln41, 2" [../layers_c/depthwise_conv2d.cpp:53]   --->   Operation 64 'add' 'add_ln53_1' <Predicate = true> <Delay = 1.63> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+
+State 6 <SV = 5> <Delay = 3.25>
+ST_6 : Operation 65 [1/2] (3.25ns)   --->   "%input_load = load i16* %input_addr, align 2" [../layers_c/depthwise_conv2d.cpp:41]   --->   Operation 65 'load' 'input_load' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 14400> <RAM>
+ST_6 : Operation 66 [1/2] (3.25ns)   --->   "%input_load_1 = load i16* %input_addr_1, align 2" [../layers_c/depthwise_conv2d.cpp:47]   --->   Operation 66 'load' 'input_load_1' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 14400> <RAM>
+ST_6 : Operation 67 [1/1] (0.00ns)   --->   "%sext_ln53 = sext i11 %add_ln53_1 to i32" [../layers_c/depthwise_conv2d.cpp:53]   --->   Operation 67 'sext' 'sext_ln53' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 68 [1/1] (0.00ns)   --->   "%zext_ln53 = zext i32 %sext_ln53 to i64" [../layers_c/depthwise_conv2d.cpp:53]   --->   Operation 68 'zext' 'zext_ln53' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 69 [1/1] (0.00ns)   --->   "%input_addr_2 = getelementptr [14400 x i16]* %input_r, i64 0, i64 %zext_ln53" [../layers_c/depthwise_conv2d.cpp:53]   --->   Operation 69 'getelementptr' 'input_addr_2' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 70 [2/2] (3.25ns)   --->   "%input_load_2 = load i16* %input_addr_2, align 2" [../layers_c/depthwise_conv2d.cpp:53]   --->   Operation 70 'load' 'input_load_2' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 14400> <RAM>
+ST_6 : Operation 71 [1/1] (0.00ns)   --->   "%sext_ln60_1 = sext i11 %add_ln60_1 to i32" [../layers_c/depthwise_conv2d.cpp:60]   --->   Operation 71 'sext' 'sext_ln60_1' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 72 [1/1] (0.00ns)   --->   "%zext_ln60 = zext i32 %sext_ln60_1 to i64" [../layers_c/depthwise_conv2d.cpp:60]   --->   Operation 72 'zext' 'zext_ln60' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 73 [1/1] (0.00ns)   --->   "%input_addr_3 = getelementptr [14400 x i16]* %input_r, i64 0, i64 %zext_ln60" [../layers_c/depthwise_conv2d.cpp:60]   --->   Operation 73 'getelementptr' 'input_addr_3' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 74 [2/2] (3.25ns)   --->   "%input_load_3 = load i16* %input_addr_3, align 2" [../layers_c/depthwise_conv2d.cpp:60]   --->   Operation 74 'load' 'input_load_3' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 14400> <RAM>
+ST_6 : Operation 75 [1/1] (1.63ns)   --->   "%add_ln66 = add i11 %add_ln60_1, 1" [../layers_c/depthwise_conv2d.cpp:66]   --->   Operation 75 'add' 'add_ln66' <Predicate = true> <Delay = 1.63> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 76 [1/1] (1.63ns)   --->   "%add_ln72 = add i11 %add_ln60_1, 2" [../layers_c/depthwise_conv2d.cpp:72]   --->   Operation 76 'add' 'add_ln72' <Predicate = true> <Delay = 1.63> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+
+State 7 <SV = 6> <Delay = 6.38>
+ST_7 : Operation 77 [1/1] (0.00ns)   --->   "%sext_ln41_1 = sext i16 %input_load to i30" [../layers_c/depthwise_conv2d.cpp:41]   --->   Operation 77 'sext' 'sext_ln41_1' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 78 [1/1] (6.38ns) (root node of the DSP)   --->   "%mul_ln41 = mul i30 %sext_ln41_1, -12554" [../layers_c/depthwise_conv2d.cpp:41]   --->   Operation 78 'mul' 'mul_ln41' <Predicate = true> <Delay = 6.38> <Core = "DSP48">   --->   Core 88 'DSP48' <Latency = 0> <II = 1> <Delay = 6.38> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_7 : Operation 79 [1/1] (0.00ns)   --->   "%sext_ln47_1 = sext i16 %input_load_1 to i30" [../layers_c/depthwise_conv2d.cpp:47]   --->   Operation 79 'sext' 'sext_ln47_1' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 80 [1/1] (6.38ns) (root node of the DSP)   --->   "%mul_ln47 = mul i30 %sext_ln47_1, -12685" [../layers_c/depthwise_conv2d.cpp:47]   --->   Operation 80 'mul' 'mul_ln47' <Predicate = true> <Delay = 6.38> <Core = "DSP48">   --->   Core 88 'DSP48' <Latency = 0> <II = 1> <Delay = 6.38> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_7 : Operation 81 [1/2] (3.25ns)   --->   "%input_load_2 = load i16* %input_addr_2, align 2" [../layers_c/depthwise_conv2d.cpp:53]   --->   Operation 81 'load' 'input_load_2' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 14400> <RAM>
+ST_7 : Operation 82 [1/2] (3.25ns)   --->   "%input_load_3 = load i16* %input_addr_3, align 2" [../layers_c/depthwise_conv2d.cpp:60]   --->   Operation 82 'load' 'input_load_3' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 14400> <RAM>
+ST_7 : Operation 83 [1/1] (0.00ns)   --->   "%sext_ln66 = sext i11 %add_ln66 to i32" [../layers_c/depthwise_conv2d.cpp:66]   --->   Operation 83 'sext' 'sext_ln66' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 84 [1/1] (0.00ns)   --->   "%zext_ln66 = zext i32 %sext_ln66 to i64" [../layers_c/depthwise_conv2d.cpp:66]   --->   Operation 84 'zext' 'zext_ln66' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 85 [1/1] (0.00ns)   --->   "%input_addr_4 = getelementptr [14400 x i16]* %input_r, i64 0, i64 %zext_ln66" [../layers_c/depthwise_conv2d.cpp:66]   --->   Operation 85 'getelementptr' 'input_addr_4' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 86 [2/2] (3.25ns)   --->   "%input_load_4 = load i16* %input_addr_4, align 2" [../layers_c/depthwise_conv2d.cpp:66]   --->   Operation 86 'load' 'input_load_4' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 14400> <RAM>
+ST_7 : Operation 87 [1/1] (0.00ns)   --->   "%sext_ln72 = sext i11 %add_ln72 to i32" [../layers_c/depthwise_conv2d.cpp:72]   --->   Operation 87 'sext' 'sext_ln72' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 88 [1/1] (0.00ns)   --->   "%zext_ln72 = zext i32 %sext_ln72 to i64" [../layers_c/depthwise_conv2d.cpp:72]   --->   Operation 88 'zext' 'zext_ln72' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 89 [1/1] (0.00ns)   --->   "%input_addr_5 = getelementptr [14400 x i16]* %input_r, i64 0, i64 %zext_ln72" [../layers_c/depthwise_conv2d.cpp:72]   --->   Operation 89 'getelementptr' 'input_addr_5' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 90 [2/2] (3.25ns)   --->   "%input_load_5 = load i16* %input_addr_5, align 2" [../layers_c/depthwise_conv2d.cpp:72]   --->   Operation 90 'load' 'input_load_5' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 14400> <RAM>
+
+State 8 <SV = 7> <Delay = 6.38>
+ST_8 : Operation 91 [1/1] (0.00ns)   --->   "%sext_ln53_3 = sext i16 %input_load_2 to i28" [../layers_c/depthwise_conv2d.cpp:53]   --->   Operation 91 'sext' 'sext_ln53_3' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 92 [1/1] (6.38ns) (root node of the DSP)   --->   "%mul_ln53 = mul i28 %sext_ln53_3, 1933" [../layers_c/depthwise_conv2d.cpp:53]   --->   Operation 92 'mul' 'mul_ln53' <Predicate = true> <Delay = 6.38> <Core = "DSP48">   --->   Core 88 'DSP48' <Latency = 0> <II = 1> <Delay = 6.38> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_8 : Operation 93 [1/1] (0.00ns)   --->   "%sext_ln60 = sext i16 %input_load_3 to i17" [../layers_c/depthwise_conv2d.cpp:60]   --->   Operation 93 'sext' 'sext_ln60' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 94 [1/1] (2.07ns)   --->   "%sub_ln60_1 = sub i17 0, %sext_ln60" [../layers_c/depthwise_conv2d.cpp:60]   --->   Operation 94 'sub' 'sub_ln60_1' <Predicate = true> <Delay = 2.07> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 95 [1/2] (3.25ns)   --->   "%input_load_4 = load i16* %input_addr_4, align 2" [../layers_c/depthwise_conv2d.cpp:66]   --->   Operation 95 'load' 'input_load_4' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 14400> <RAM>
+ST_8 : Operation 96 [1/2] (3.25ns)   --->   "%input_load_5 = load i16* %input_addr_5, align 2" [../layers_c/depthwise_conv2d.cpp:72]   --->   Operation 96 'load' 'input_load_5' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 14400> <RAM>
+ST_8 : Operation 97 [1/1] (0.00ns)   --->   "%zext_ln79 = zext i10 %add_ln79_1 to i64" [../layers_c/depthwise_conv2d.cpp:79]   --->   Operation 97 'zext' 'zext_ln79' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 98 [1/1] (0.00ns)   --->   "%input_addr_6 = getelementptr [14400 x i16]* %input_r, i64 0, i64 %zext_ln79" [../layers_c/depthwise_conv2d.cpp:79]   --->   Operation 98 'getelementptr' 'input_addr_6' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 99 [2/2] (3.25ns)   --->   "%input_load_6 = load i16* %input_addr_6, align 2" [../layers_c/depthwise_conv2d.cpp:79]   --->   Operation 99 'load' 'input_load_6' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 14400> <RAM>
+ST_8 : Operation 100 [1/1] (1.73ns)   --->   "%add_ln85 = add i10 %add_ln79_1, 1" [../layers_c/depthwise_conv2d.cpp:85]   --->   Operation 100 'add' 'add_ln85' <Predicate = true> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 101 [1/1] (1.73ns)   --->   "%add_ln91 = add i10 %add_ln79_1, 2" [../layers_c/depthwise_conv2d.cpp:91]   --->   Operation 101 'add' 'add_ln91' <Predicate = true> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 102 [1/1] (0.00ns)   --->   "%trunc_ln = call i16 @_ssdm_op_PartSelect.i16.i30.i32.i32(i30 %mul_ln47, i32 14, i32 29)" [../layers_c/depthwise_conv2d.cpp:92]   --->   Operation 102 'partselect' 'trunc_ln' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 103 [1/1] (0.00ns)   --->   "%trunc_ln92_1 = call i16 @_ssdm_op_PartSelect.i16.i30.i32.i32(i30 %mul_ln41, i32 14, i32 29)" [../layers_c/depthwise_conv2d.cpp:92]   --->   Operation 103 'partselect' 'trunc_ln92_1' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 104 [1/1] (0.00ns)   --->   "%tmp_7 = call i3 @_ssdm_op_PartSelect.i3.i17.i32.i32(i17 %sub_ln60_1, i32 14, i32 16)" [../layers_c/depthwise_conv2d.cpp:97]   --->   Operation 104 'partselect' 'tmp_7' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 105 [1/1] (2.07ns)   --->   "%add_ln103_2 = add i16 %trunc_ln, %trunc_ln92_1" [../layers_c/depthwise_conv2d.cpp:103]   --->   Operation 105 'add' 'add_ln103_2' <Predicate = true> <Delay = 2.07> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+
+State 9 <SV = 8> <Delay = 6.38>
+ST_9 : Operation 106 [1/1] (0.00ns)   --->   "%sext_ln66_1 = sext i16 %input_load_4 to i30" [../layers_c/depthwise_conv2d.cpp:66]   --->   Operation 106 'sext' 'sext_ln66_1' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 107 [1/1] (6.38ns) (root node of the DSP)   --->   "%mul_ln66 = mul i30 %sext_ln66_1, -12554" [../layers_c/depthwise_conv2d.cpp:66]   --->   Operation 107 'mul' 'mul_ln66' <Predicate = true> <Delay = 6.38> <Core = "DSP48">   --->   Core 88 'DSP48' <Latency = 0> <II = 1> <Delay = 6.38> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_9 : Operation 108 [1/1] (0.00ns)   --->   "%sext_ln72_1 = sext i16 %input_load_5 to i30" [../layers_c/depthwise_conv2d.cpp:72]   --->   Operation 108 'sext' 'sext_ln72_1' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 109 [1/1] (6.38ns) (root node of the DSP)   --->   "%mul_ln72 = mul i30 %sext_ln72_1, -12685" [../layers_c/depthwise_conv2d.cpp:72]   --->   Operation 109 'mul' 'mul_ln72' <Predicate = true> <Delay = 6.38> <Core = "DSP48">   --->   Core 88 'DSP48' <Latency = 0> <II = 1> <Delay = 6.38> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_9 : Operation 110 [1/2] (3.25ns)   --->   "%input_load_6 = load i16* %input_addr_6, align 2" [../layers_c/depthwise_conv2d.cpp:79]   --->   Operation 110 'load' 'input_load_6' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 14400> <RAM>
+ST_9 : Operation 111 [1/1] (0.00ns)   --->   "%zext_ln85 = zext i10 %add_ln85 to i64" [../layers_c/depthwise_conv2d.cpp:85]   --->   Operation 111 'zext' 'zext_ln85' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 112 [1/1] (0.00ns)   --->   "%input_addr_7 = getelementptr [14400 x i16]* %input_r, i64 0, i64 %zext_ln85" [../layers_c/depthwise_conv2d.cpp:85]   --->   Operation 112 'getelementptr' 'input_addr_7' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 113 [2/2] (3.25ns)   --->   "%input_load_7 = load i16* %input_addr_7, align 2" [../layers_c/depthwise_conv2d.cpp:85]   --->   Operation 113 'load' 'input_load_7' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 14400> <RAM>
+ST_9 : Operation 114 [1/1] (0.00ns)   --->   "%zext_ln91 = zext i10 %add_ln91 to i64" [../layers_c/depthwise_conv2d.cpp:91]   --->   Operation 114 'zext' 'zext_ln91' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 115 [1/1] (0.00ns)   --->   "%input_addr_8 = getelementptr [14400 x i16]* %input_r, i64 0, i64 %zext_ln91" [../layers_c/depthwise_conv2d.cpp:91]   --->   Operation 115 'getelementptr' 'input_addr_8' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 116 [2/2] (3.25ns)   --->   "%input_load_8 = load i16* %input_addr_8, align 2" [../layers_c/depthwise_conv2d.cpp:91]   --->   Operation 116 'load' 'input_load_8' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 14400> <RAM>
+ST_9 : Operation 117 [1/1] (0.00ns)   --->   "%tmp = call i14 @_ssdm_op_PartSelect.i14.i28.i32.i32(i28 %mul_ln53, i32 14, i32 27)" [../layers_c/depthwise_conv2d.cpp:93]   --->   Operation 117 'partselect' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 118 [1/1] (0.00ns)   --->   "%sext_ln93 = sext i14 %tmp to i16" [../layers_c/depthwise_conv2d.cpp:93]   --->   Operation 118 'sext' 'sext_ln93' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 119 [1/1] (0.00ns)   --->   "%sext_ln97 = sext i3 %tmp_7 to i16" [../layers_c/depthwise_conv2d.cpp:97]   --->   Operation 119 'sext' 'sext_ln97' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 120 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln103_3 = add i16 %sext_ln97, %sext_ln93" [../layers_c/depthwise_conv2d.cpp:103]   --->   Operation 120 'add' 'add_ln103_3' <Predicate = true> <Delay = 0.00> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.95> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_9 : Operation 121 [1/1] (3.90ns) (root node of TernaryAdder)   --->   "%add_ln103_4 = add i16 %add_ln103_2, %add_ln103_3" [../layers_c/depthwise_conv2d.cpp:103]   --->   Operation 121 'add' 'add_ln103_4' <Predicate = true> <Delay = 3.90> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.95> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+
+State 10 <SV = 9> <Delay = 6.38>
+ST_10 : Operation 122 [1/1] (0.00ns)   --->   "%sext_ln79 = sext i16 %input_load_6 to i28" [../layers_c/depthwise_conv2d.cpp:79]   --->   Operation 122 'sext' 'sext_ln79' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 123 [1/1] (6.38ns) (root node of the DSP)   --->   "%mul_ln79 = mul i28 %sext_ln79, 1933" [../layers_c/depthwise_conv2d.cpp:79]   --->   Operation 123 'mul' 'mul_ln79' <Predicate = true> <Delay = 6.38> <Core = "DSP48">   --->   Core 88 'DSP48' <Latency = 0> <II = 1> <Delay = 6.38> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_10 : Operation 124 [1/2] (3.25ns)   --->   "%input_load_7 = load i16* %input_addr_7, align 2" [../layers_c/depthwise_conv2d.cpp:85]   --->   Operation 124 'load' 'input_load_7' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 14400> <RAM>
+ST_10 : Operation 125 [1/2] (3.25ns)   --->   "%input_load_8 = load i16* %input_addr_8, align 2" [../layers_c/depthwise_conv2d.cpp:91]   --->   Operation 125 'load' 'input_load_8' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 14400> <RAM>
+ST_10 : Operation 126 [1/1] (0.00ns)   --->   "%trunc_ln10 = call i16 @_ssdm_op_PartSelect.i16.i30.i32.i32(i30 %mul_ln66, i32 14, i32 29)" [../layers_c/depthwise_conv2d.cpp:95]   --->   Operation 126 'partselect' 'trunc_ln10' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 127 [1/1] (0.00ns)   --->   "%trunc_ln11 = call i16 @_ssdm_op_PartSelect.i16.i30.i32.i32(i30 %mul_ln72, i32 14, i32 29)" [../layers_c/depthwise_conv2d.cpp:98]   --->   Operation 127 'partselect' 'trunc_ln11' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 128 [1/1] (2.07ns)   --->   "%add_ln103_5 = add i16 %trunc_ln11, %trunc_ln10" [../layers_c/depthwise_conv2d.cpp:103]   --->   Operation 128 'add' 'add_ln103_5' <Predicate = true> <Delay = 2.07> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+
+State 11 <SV = 10> <Delay = 6.38>
+ST_11 : Operation 129 [1/1] (0.00ns)   --->   "%sext_ln85 = sext i16 %input_load_7 to i17" [../layers_c/depthwise_conv2d.cpp:85]   --->   Operation 129 'sext' 'sext_ln85' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 130 [1/1] (2.07ns)   --->   "%sub_ln85 = sub i17 0, %sext_ln85" [../layers_c/depthwise_conv2d.cpp:85]   --->   Operation 130 'sub' 'sub_ln85' <Predicate = true> <Delay = 2.07> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_11 : Operation 131 [1/1] (0.00ns)   --->   "%sext_ln91 = sext i16 %input_load_8 to i30" [../layers_c/depthwise_conv2d.cpp:91]   --->   Operation 131 'sext' 'sext_ln91' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 132 [1/1] (6.38ns) (root node of the DSP)   --->   "%mul_ln91 = mul i30 %sext_ln91, -12554" [../layers_c/depthwise_conv2d.cpp:91]   --->   Operation 132 'mul' 'mul_ln91' <Predicate = true> <Delay = 6.38> <Core = "DSP48">   --->   Core 88 'DSP48' <Latency = 0> <II = 1> <Delay = 6.38> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_11 : Operation 133 [1/1] (0.00ns)   --->   "%tmp_8 = call i14 @_ssdm_op_PartSelect.i14.i28.i32.i32(i28 %mul_ln79, i32 14, i32 27)" [../layers_c/depthwise_conv2d.cpp:94]   --->   Operation 133 'partselect' 'tmp_8' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 134 [1/1] (0.00ns)   --->   "%tmp_9 = call i3 @_ssdm_op_PartSelect.i3.i17.i32.i32(i17 %sub_ln85, i32 14, i32 16)" [../layers_c/depthwise_conv2d.cpp:101]   --->   Operation 134 'partselect' 'tmp_9' <Predicate = true> <Delay = 0.00>
+
+State 12 <SV = 11> <Delay = 3.90>
+ST_12 : Operation 135 [1/1] (0.00ns)   --->   "%sext_ln94 = sext i14 %tmp_8 to i16" [../layers_c/depthwise_conv2d.cpp:94]   --->   Operation 135 'sext' 'sext_ln94' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 136 [1/1] (0.00ns)   --->   "%sext_ln101 = sext i3 %tmp_9 to i16" [../layers_c/depthwise_conv2d.cpp:101]   --->   Operation 136 'sext' 'sext_ln101' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 137 [1/1] (0.00ns)   --->   "%trunc_ln101_1 = call i16 @_ssdm_op_PartSelect.i16.i30.i32.i32(i30 %mul_ln91, i32 14, i32 29)" [../layers_c/depthwise_conv2d.cpp:101]   --->   Operation 137 'partselect' 'trunc_ln101_1' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 138 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln103_6 = add i16 %trunc_ln101_1, %sext_ln101" [../layers_c/depthwise_conv2d.cpp:103]   --->   Operation 138 'add' 'add_ln103_6' <Predicate = true> <Delay = 0.00> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.95> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_12 : Operation 139 [1/1] (3.90ns) (root node of TernaryAdder)   --->   "%add_ln103_7 = add i16 %sext_ln94, %add_ln103_6" [../layers_c/depthwise_conv2d.cpp:103]   --->   Operation 139 'add' 'add_ln103_7' <Predicate = true> <Delay = 3.90> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.95> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+
+State 13 <SV = 12> <Delay = 3.90>
+ST_13 : Operation 140 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln103_8 = add i16 %add_ln103_5, %add_ln103_7" [../layers_c/depthwise_conv2d.cpp:103]   --->   Operation 140 'add' 'add_ln103_8' <Predicate = true> <Delay = 0.00> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.95> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_13 : Operation 141 [1/1] (3.90ns) (root node of TernaryAdder)   --->   "%add_ln103_1 = add i16 %add_ln103_4, %add_ln103_8" [../layers_c/depthwise_conv2d.cpp:103]   --->   Operation 141 'add' 'add_ln103_1' <Predicate = true> <Delay = 3.90> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.95> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+
+State 14 <SV = 13> <Delay = 3.25>
+ST_14 : Operation 142 [1/1] (0.00ns)   --->   "%sext_ln103 = sext i11 %add_ln103 to i32" [../layers_c/depthwise_conv2d.cpp:103]   --->   Operation 142 'sext' 'sext_ln103' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 143 [1/1] (0.00ns)   --->   "%zext_ln103 = zext i32 %sext_ln103 to i64" [../layers_c/depthwise_conv2d.cpp:103]   --->   Operation 143 'zext' 'zext_ln103' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 144 [1/1] (0.00ns)   --->   "%output_addr = getelementptr [14400 x i16]* %output_r, i64 0, i64 %zext_ln103" [../layers_c/depthwise_conv2d.cpp:103]   --->   Operation 144 'getelementptr' 'output_addr' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 145 [1/1] (3.25ns)   --->   "store i16 %add_ln103_1, i16* %output_addr, align 2" [../layers_c/depthwise_conv2d.cpp:103]   --->   Operation 145 'store' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 14400> <RAM>
+ST_14 : Operation 146 [1/1] (0.00ns)   --->   "br label %.preheader" [../layers_c/depthwise_conv2d.cpp:22]   --->   Operation 146 'br' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 6.67ns, clock uncertainty: 3.33ns.
+
+ <State 1>: 1.77ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('out_h') with incoming values : ('out_h', ../layers_c/depthwise_conv2d.cpp:60) [6]  (1.77 ns)
+
+ <State 2>: 1.78ns
+The critical path consists of the following:
+	'phi' operation ('out_h') with incoming values : ('out_h', ../layers_c/depthwise_conv2d.cpp:60) [6]  (0 ns)
+	'add' operation ('out_h', ../layers_c/depthwise_conv2d.cpp:60) [9]  (1.78 ns)
+
+ <State 3>: 1.77ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('out_w') with incoming values : ('out_w', ../layers_c/depthwise_conv2d.cpp:22) [32]  (1.77 ns)
+
+ <State 4>: 3.28ns
+The critical path consists of the following:
+	'phi' operation ('out_w') with incoming values : ('out_w', ../layers_c/depthwise_conv2d.cpp:22) [32]  (0 ns)
+	'add' operation ('add_ln41', ../layers_c/depthwise_conv2d.cpp:41) [40]  (1.64 ns)
+	'add' operation ('add_ln47_1', ../layers_c/depthwise_conv2d.cpp:47) [47]  (1.64 ns)
+
+ <State 5>: 3.25ns
+The critical path consists of the following:
+	'getelementptr' operation ('input_addr', ../layers_c/depthwise_conv2d.cpp:41) [43]  (0 ns)
+	'load' operation ('input_load', ../layers_c/depthwise_conv2d.cpp:41) on array 'input_r' [44]  (3.25 ns)
+
+ <State 6>: 3.25ns
+The critical path consists of the following:
+	'load' operation ('input_load', ../layers_c/depthwise_conv2d.cpp:41) on array 'input_r' [44]  (3.25 ns)
+
+ <State 7>: 6.38ns
+The critical path consists of the following:
+	'mul' operation of DSP[46] ('mul_ln41', ../layers_c/depthwise_conv2d.cpp:41) [46]  (6.38 ns)
+
+ <State 8>: 6.38ns
+The critical path consists of the following:
+	'mul' operation of DSP[60] ('mul_ln53', ../layers_c/depthwise_conv2d.cpp:53) [60]  (6.38 ns)
+
+ <State 9>: 6.38ns
+The critical path consists of the following:
+	'mul' operation of DSP[74] ('mul_ln66', ../layers_c/depthwise_conv2d.cpp:66) [74]  (6.38 ns)
+
+ <State 10>: 6.38ns
+The critical path consists of the following:
+	'mul' operation of DSP[87] ('mul_ln79', ../layers_c/depthwise_conv2d.cpp:79) [87]  (6.38 ns)
+
+ <State 11>: 6.38ns
+The critical path consists of the following:
+	'mul' operation of DSP[99] ('mul_ln91', ../layers_c/depthwise_conv2d.cpp:91) [99]  (6.38 ns)
+
+ <State 12>: 3.9ns
+The critical path consists of the following:
+	'add' operation ('add_ln103_7', ../layers_c/depthwise_conv2d.cpp:103) [118]  (3.9 ns)
+
+ <State 13>: 3.9ns
+The critical path consists of the following:
+	'add' operation ('add_ln103_8', ../layers_c/depthwise_conv2d.cpp:103) [119]  (0 ns)
+	'add' operation ('add_ln103_1', ../layers_c/depthwise_conv2d.cpp:103) [120]  (3.9 ns)
+
+ <State 14>: 3.25ns
+The critical path consists of the following:
+	'getelementptr' operation ('output_addr', ../layers_c/depthwise_conv2d.cpp:103) [124]  (0 ns)
+	'store' operation ('store_ln103', ../layers_c/depthwise_conv2d.cpp:103) of variable 'add_ln103_1', ../layers_c/depthwise_conv2d.cpp:103 on array 'output_r' [125]  (3.25 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

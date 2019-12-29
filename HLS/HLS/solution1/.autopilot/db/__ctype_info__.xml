@@ -1,6 +1,6 @@
 <InterfaceSummary>
 <RtlPorts>
-<name>input_data_V_data_V</name>
+<name>input_data_data_V</name>
 <CType>
 <TypeName>ap_int 16</TypeName>
 <TypeWidth>16</TypeWidth>
@@ -10,7 +10,7 @@
 <InvalidType>0</InvalidType>
 </RtlPorts>
 <RtlPorts>
-<name>input_data_V_keep_V</name>
+<name>input_data_keep_V</name>
 <CType>
 <TypeName>ap_uint 2</TypeName>
 <TypeWidth>2</TypeWidth>
@@ -20,7 +20,7 @@
 <InvalidType>0</InvalidType>
 </RtlPorts>
 <RtlPorts>
-<name>input_data_V_strb_V</name>
+<name>input_data_strb_V</name>
 <CType>
 <TypeName>ap_uint 2</TypeName>
 <TypeWidth>2</TypeWidth>
@@ -30,7 +30,7 @@
 <InvalidType>0</InvalidType>
 </RtlPorts>
 <RtlPorts>
-<name>input_data_V_user_V</name>
+<name>input_data_user_V</name>
 <CType>
 <TypeName>ap_uint 1</TypeName>
 <TypeWidth>1</TypeWidth>
@@ -40,7 +40,7 @@
 <InvalidType>0</InvalidType>
 </RtlPorts>
 <RtlPorts>
-<name>input_data_V_last_V</name>
+<name>input_data_last_V</name>
 <CType>
 <TypeName>ap_uint 1</TypeName>
 <TypeWidth>1</TypeWidth>
@@ -50,7 +50,7 @@
 <InvalidType>0</InvalidType>
 </RtlPorts>
 <RtlPorts>
-<name>input_data_V_id_V</name>
+<name>input_data_id_V</name>
 <CType>
 <TypeName>ap_uint 1</TypeName>
 <TypeWidth>1</TypeWidth>
@@ -60,7 +60,7 @@
 <InvalidType>0</InvalidType>
 </RtlPorts>
 <RtlPorts>
-<name>input_data_V_dest_V</name>
+<name>input_data_dest_V</name>
 <CType>
 <TypeName>ap_uint 1</TypeName>
 <TypeWidth>1</TypeWidth>
@@ -70,7 +70,7 @@
 <InvalidType>0</InvalidType>
 </RtlPorts>
 <RtlPorts>
-<name>output_data_V_data_V</name>
+<name>output_data_data_V</name>
 <CType>
 <TypeName>ap_int 16</TypeName>
 <TypeWidth>16</TypeWidth>
@@ -80,7 +80,7 @@
 <InvalidType>0</InvalidType>
 </RtlPorts>
 <RtlPorts>
-<name>output_data_V_keep_V</name>
+<name>output_data_keep_V</name>
 <CType>
 <TypeName>ap_uint 2</TypeName>
 <TypeWidth>2</TypeWidth>
@@ -90,7 +90,7 @@
 <InvalidType>0</InvalidType>
 </RtlPorts>
 <RtlPorts>
-<name>output_data_V_strb_V</name>
+<name>output_data_strb_V</name>
 <CType>
 <TypeName>ap_uint 2</TypeName>
 <TypeWidth>2</TypeWidth>
@@ -100,7 +100,7 @@
 <InvalidType>0</InvalidType>
 </RtlPorts>
 <RtlPorts>
-<name>output_data_V_user_V</name>
+<name>output_data_user_V</name>
 <CType>
 <TypeName>ap_uint 1</TypeName>
 <TypeWidth>1</TypeWidth>
@@ -110,7 +110,7 @@
 <InvalidType>0</InvalidType>
 </RtlPorts>
 <RtlPorts>
-<name>output_data_V_last_V</name>
+<name>output_data_last_V</name>
 <CType>
 <TypeName>ap_uint 1</TypeName>
 <TypeWidth>1</TypeWidth>
@@ -120,7 +120,7 @@
 <InvalidType>0</InvalidType>
 </RtlPorts>
 <RtlPorts>
-<name>output_data_V_id_V</name>
+<name>output_data_id_V</name>
 <CType>
 <TypeName>ap_uint 1</TypeName>
 <TypeWidth>1</TypeWidth>
@@ -130,7 +130,7 @@
 <InvalidType>0</InvalidType>
 </RtlPorts>
 <RtlPorts>
-<name>output_data_V_dest_V</name>
+<name>output_data_dest_V</name>
 <CType>
 <TypeName>ap_uint 1</TypeName>
 <TypeWidth>1</TypeWidth>

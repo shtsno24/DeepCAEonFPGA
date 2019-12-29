@@ -1,27 +1,17 @@
 // ==============================================================
-// File generated on Sat Dec 21 17:39:22 JST 2019
-// Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
-// SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
-// IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-// Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+// Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+// Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // ==============================================================
 
 `timescale 1 ns / 1 ps
 
-`define TV_OUT_output_data_TDATA "./impl_rtl.network.autotvout_output_data_V_data_V.dat"
-`define EGRESS_STATUS_output_data_TDATA "./stream_egress_status_output_data_V_data_V.dat"
-`define TV_OUT_output_data_TKEEP "./impl_rtl.network.autotvout_output_data_V_keep_V.dat"
-`define EGRESS_STATUS_output_data_TKEEP "./stream_egress_status_output_data_V_keep_V.dat"
-`define TV_OUT_output_data_TSTRB "./impl_rtl.network.autotvout_output_data_V_strb_V.dat"
-`define EGRESS_STATUS_output_data_TSTRB "./stream_egress_status_output_data_V_strb_V.dat"
-`define TV_OUT_output_data_TUSER "./impl_rtl.network.autotvout_output_data_V_user_V.dat"
-`define EGRESS_STATUS_output_data_TUSER "./stream_egress_status_output_data_V_user_V.dat"
-`define TV_OUT_output_data_TLAST "./impl_rtl.network.autotvout_output_data_V_last_V.dat"
-`define EGRESS_STATUS_output_data_TLAST "./stream_egress_status_output_data_V_last_V.dat"
-`define TV_OUT_output_data_TID "./impl_rtl.network.autotvout_output_data_V_id_V.dat"
-`define EGRESS_STATUS_output_data_TID "./stream_egress_status_output_data_V_id_V.dat"
-`define TV_OUT_output_data_TDEST "./impl_rtl.network.autotvout_output_data_V_dest_V.dat"
-`define EGRESS_STATUS_output_data_TDEST "./stream_egress_status_output_data_V_dest_V.dat"
+`define TV_OUT_output_data_TDATA "./impl_rtl.network.autotvout_output_data_data_V.dat"
+`define TV_OUT_output_data_TKEEP "./impl_rtl.network.autotvout_output_data_keep_V.dat"
+`define TV_OUT_output_data_TSTRB "./impl_rtl.network.autotvout_output_data_strb_V.dat"
+`define TV_OUT_output_data_TUSER "./impl_rtl.network.autotvout_output_data_user_V.dat"
+`define TV_OUT_output_data_TLAST "./impl_rtl.network.autotvout_output_data_last_V.dat"
+`define TV_OUT_output_data_TID "./impl_rtl.network.autotvout_output_data_id_V.dat"
+`define TV_OUT_output_data_TDEST "./impl_rtl.network.autotvout_output_data_dest_V.dat"
 
 `define AUTOTB_TRANSACTION_NUM 1
 

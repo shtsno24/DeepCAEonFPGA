@@ -1,10 +1,7 @@
 #!/bin/sh
 # ==============================================================
-# File generated on Sat Dec 21 17:39:22 JST 2019
-# Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
-# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
-# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+# Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+# Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 # ==============================================================
 # The next line restarts using autoesl tclsh \
-    exec /tools/Xilinx/Vivado/2018.3/bin/vivado_hls run_sim.tcl
+    exec /tools/Xilinx/Vivado/2019.1/bin/vivado_hls run_sim.tcl

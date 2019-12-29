@@ -5,8 +5,8 @@ uint8_t padding2d_fix16(uint16_t padding_height, uint16_t padding_width,
 		uint16_t input_depth, uint16_t input_height, uint16_t input_width,
 		int16_t* input, uint16_t output_height, uint16_t output_width,
 		int16_t* output) {
-#pragma HLS ALLOCATION instances=mul limit=0 operation
-#pragma HLS ALLOCATION instances=add limit=0 operation
+//#pragma HLS ALLOCATION instances=mul limit=0 operation
+//#pragma HLS ALLOCATION instances=add limit=0 operation
 
 	uint16_t o_count = 0, i_count = 0;
 
@@ -14,6 +14,8 @@ uint8_t padding2d_fix16(uint16_t padding_height, uint16_t padding_width,
 //#pragma HLS UNROLL FACTOR=2
 		for(uint16_t i = 0; i < padding_height * (padding_width * 2 + input_width) + padding_width; i++){
 //#pragma HLS UNROLL FACTOR=4
+#pragma HLS loop_flatten
+#pragma HLS PIPELINE
 			output[o_count] = 0;
 			o_count += 1;
 		}
@@ -22,6 +24,8 @@ uint8_t padding2d_fix16(uint16_t padding_height, uint16_t padding_width,
 //#pragma HLS UNROLL FACTOR=7
 			for(uint16_t width = 0; width < input_width; width++){
 //#pragma HLS UNROLL FACTOR=7
+#pragma HLS loop_flatten
+#pragma HLS PIPELINE
 				output[o_count] = input[i_count];
 				i_count += 1;
 				o_count += 1;
@@ -29,6 +33,8 @@ uint8_t padding2d_fix16(uint16_t padding_height, uint16_t padding_width,
 
 			for(uint16_t width = 0; width < 2 * padding_width; width++){
 //#pragma HLS UNROLL FACTOR=2
+#pragma HLS loop_flatten
+#pragma HLS PIPELINE
 				output[o_count] = 0;
 				o_count += 1;
 			}
@@ -36,6 +42,8 @@ uint8_t padding2d_fix16(uint16_t padding_height, uint16_t padding_width,
 
 		for(uint16_t i = 0; i < padding_height * (padding_width * 2 + input_width) - padding_width; i++){
 //#pragma HLS UNROLL FACTOR=4
+#pragma HLS loop_flatten
+#pragma HLS PIPELINE
 			output[o_count] = 0;
 			o_count += 1;
 		}

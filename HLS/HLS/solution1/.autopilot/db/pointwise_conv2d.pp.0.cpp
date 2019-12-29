@@ -10,8 +10,8 @@
 
 
 
-# 1 "/tools/Xilinx/Vivado/2018.3/common/technology/autopilot/etc/autopilot_ssdm_op.h" 1
-# 157 "/tools/Xilinx/Vivado/2018.3/common/technology/autopilot/etc/autopilot_ssdm_op.h"
+# 1 "/tools/Xilinx/Vivado/2019.1/common/technology/autopilot/etc/autopilot_ssdm_op.h" 1
+# 157 "/tools/Xilinx/Vivado/2019.1/common/technology/autopilot/etc/autopilot_ssdm_op.h"
 extern "C" {
 
 
@@ -118,6 +118,11 @@ extern "C" {
 
     void _ssdm_SpecStream(...) __attribute__ ((nothrow));
 
+    void _ssdm_op_SpecStable(...) __attribute__ ((nothrow));
+    void _ssdm_op_SpecStableContent(...) __attribute__ ((nothrow));
+
+    void _ssdm_op_SpecPipoDepth(...) __attribute__ ((nothrow));
+
     void _ssdm_SpecExpr(...) __attribute__ ((nothrow));
     void _ssdm_SpecExprBalance(...) __attribute__ ((nothrow));
 
@@ -145,8 +150,8 @@ extern "C" {
 # 8 "<command line>" 2
 # 1 "<built-in>" 2
 # 1 "../layers_c/pointwise_conv2d.cpp" 2
-# 1 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 1 3
-# 33 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 3
+# 1 "/tools/Xilinx/Vivado/2019.1/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 1 3
+# 33 "/tools/Xilinx/Vivado/2019.1/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 3
 # 1 "/usr/include/stdint.h" 1 3 4
 # 26 "/usr/include/stdint.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 1 3 4
@@ -351,7 +356,7 @@ typedef unsigned long int uintptr_t;
 # 111 "/usr/include/stdint.h" 3 4
 typedef __intmax_t intmax_t;
 typedef __uintmax_t uintmax_t;
-# 34 "/tools/Xilinx/Vivado/2018.3/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 2 3
+# 34 "/tools/Xilinx/Vivado/2019.1/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 2 3
 # 2 "../layers_c/pointwise_conv2d.cpp" 2
 # 1 "../layers_c/pointwise_conv2d.h" 1
 
@@ -380,22 +385,24 @@ uint8_t relu, uint8_t fractal_width){
 
 
 
- int16_t buffer;
+#pragma HLS array_partition variable=&kernel
+
+ int32_t buffer;
     for(uint16_t out_d = 0; out_d < output_depth; out_d++){
      for(uint16_t out_h = 0; out_h < output_height; out_h++){
-            for(uint16_t out_w = 0; out_w < output_width; out_w++){
+      for(uint16_t out_w = 0; out_w < output_width; out_w++){
              buffer = bias[out_d];
                 for(uint16_t in_d = 0; in_d < input_depth; in_d++){
 
 
-                 buffer +=
-                   (int16_t)(((int32_t)(input[in_d * output_height * output_width + out_h * output_width + out_w]) *
+
+
+                 buffer += (((int32_t)(input[in_d * output_height * output_width + out_h * output_width + out_w]) *
                      (int32_t)(kernel[out_d * input_depth + in_d])) >> fractal_width);
                 }
-                if(relu == 1 && buffer < 0){
-                 buffer = 0;
-                }
-                output[out_d * output_height * output_width + out_h * output_width + out_w] = buffer;
+
+    buffer &= ~(0x00000000 - ((buffer >> 31) & relu));
+                output[out_d * output_height * output_width + out_h * output_width + out_w] = (int16_t)buffer;
             }
         }
     }
