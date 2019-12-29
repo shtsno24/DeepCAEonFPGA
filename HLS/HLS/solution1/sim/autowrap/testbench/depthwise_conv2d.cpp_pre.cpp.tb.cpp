@@ -2,12 +2,12 @@
 // Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // ==============================================================
-# 1 "/home/masudalab/DeepCAEonFPGA/layers_c/depthwise_conv2d.cpp"
-# 1 "<built-in>"
-# 1 "<command-line>"
+# 1 "/home/shts/DeepCAEonFPGA/layers_c/depthwise_conv2d.cpp"
+# 1 "<組み込み>"
+# 1 "<コマンドライン>"
 # 1 "/usr/include/stdc-predef.h" 1 3 4
-# 1 "<command-line>" 2
-# 1 "/home/masudalab/DeepCAEonFPGA/layers_c/depthwise_conv2d.cpp"
+# 1 "<コマンドライン>" 2
+# 1 "/home/shts/DeepCAEonFPGA/layers_c/depthwise_conv2d.cpp"
 # 1 "/tools/Xilinx/Vivado/2019.1/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/include/stdint.h" 1 3 4
 # 9 "/tools/Xilinx/Vivado/2019.1/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/include/stdint.h" 3 4
 # 1 "/usr/include/stdint.h" 1 3 4
@@ -214,12 +214,12 @@ typedef unsigned long int uintptr_t;
 typedef __intmax_t intmax_t;
 typedef __uintmax_t uintmax_t;
 # 10 "/tools/Xilinx/Vivado/2019.1/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/include/stdint.h" 2 3 4
-# 2 "/home/masudalab/DeepCAEonFPGA/layers_c/depthwise_conv2d.cpp" 2
-# 1 "/home/masudalab/DeepCAEonFPGA/layers_c/depthwise_conv2d.h" 1
+# 2 "/home/shts/DeepCAEonFPGA/layers_c/depthwise_conv2d.cpp" 2
+# 1 "/home/shts/DeepCAEonFPGA/layers_c/depthwise_conv2d.h" 1
 
 
 
-# 3 "/home/masudalab/DeepCAEonFPGA/layers_c/depthwise_conv2d.h"
+# 3 "/home/shts/DeepCAEonFPGA/layers_c/depthwise_conv2d.h"
 uint8_t depthwise_conv2d_fix16(uint16_t input_depth, uint16_t input_height, uint16_t input_width, int16_t* input,
 uint16_t output_depth, uint16_t output_height, uint16_t output_width, int16_t* output,
 const int16_t* bias,
@@ -231,7 +231,7 @@ uint16_t output_depth, uint16_t output_height, uint16_t output_width, float* out
 const float* bias,
 uint16_t kernel_height, uint16_t kernel_width, const float* kernel,
 uint8_t relu);
-# 3 "/home/masudalab/DeepCAEonFPGA/layers_c/depthwise_conv2d.cpp" 2
+# 3 "/home/shts/DeepCAEonFPGA/layers_c/depthwise_conv2d.cpp" 2
 
 uint8_t depthwise_conv2d_fix16(uint16_t input_depth, uint16_t input_height,
   uint16_t input_width, int16_t* input, uint16_t output_depth,
@@ -246,80 +246,40 @@ uint8_t depthwise_conv2d_fix16(uint16_t input_depth, uint16_t input_height,
 
 
  int32_t buffer;
+ int32_t kernel_buffer[kernel_height * kernel_width];
+ int32_t bias_buffer;
+ int32_t input_buffer;
 
-#pragma HLS array_partition variable=kernel
+#pragma HLS array_partition variable=kernel_buffer
 
  for (uint16_t out_d = 0; out_d < output_depth; out_d++) {
+#pragma HLS UNROLL factor=2
+#pragma HLS PIPELINE
+  for (uint8_t i = 0; i < kernel_height * kernel_width; i++) {
+#pragma HLS PIPELINE
+   kernel_buffer[i] = (int32_t) kernel[out_d * kernel_height
+     * kernel_width + i];
+  }
+  bias_buffer = bias[out_d];
+
   for (uint16_t out_h = 0; out_h < output_height; out_h++) {
    for (uint16_t out_w = 0; out_w < output_width; out_w++) {
-    buffer = bias[out_d];
-# 36 "/home/masudalab/DeepCAEonFPGA/layers_c/depthwise_conv2d.cpp"
-    int32_t tmp_0 =
-      (((int32_t) input[out_d * input_height * input_width
-        + (out_h + 0) * input_width + (out_w + 0)]
-        * (int32_t) kernel[(out_d * kernel_height
-          * kernel_width) + (0 * kernel_width) + 0])
-        >> fractal_width);
-    int32_t tmp_1 =
-      (((int32_t) input[out_d * input_height * input_width
-        + (out_h + 0) * input_width + (out_w + 1)]
-        * (int32_t) kernel[(out_d * kernel_height
-          * kernel_width) + (0 * kernel_width) + 1])
-        >> fractal_width);
-    int32_t tmp_2 =
-      (((int32_t) input[out_d * input_height * input_width
-        + (out_h + 0) * input_width + (out_w + 2)]
-        * (int32_t) kernel[(out_d * kernel_height
-          * kernel_width) + (0 * kernel_width) + 2])
+    buffer = bias_buffer;
+    for (uint16_t k_h = 0; k_h < kernel_height; k_h++) {
+#pragma HLS PIPELINE
+
+     for (uint16_t k_w = 0; k_w < kernel_width; k_w++) {
+
+#pragma HLS loop_flatten
+
+      buffer += (((int32_t) input[out_d * input_height
+        * input_width + (out_h + k_h) * input_width
+        + (out_w + k_w)]
+        * kernel_buffer[(k_h * kernel_width) + k_w])
         >> fractal_width);
 
-    int32_t tmp_3 =
-      (((int32_t) input[out_d * input_height * input_width
-        + (out_h + 1) * input_width + (out_w + 0)]
-        * (int32_t) kernel[(out_d * kernel_height
-          * kernel_width) + (1 * kernel_width) + 0])
-        >> fractal_width);
-    int32_t tmp_4 =
-      (((int32_t) input[out_d * input_height * input_width
-        + (out_h + 1) * input_width + (out_w + 1)]
-        * (int32_t) kernel[(out_d * kernel_height
-          * kernel_width) + (1 * kernel_width) + 1])
-        >> fractal_width);
-    int32_t tmp_5 =
-      (((int32_t) input[out_d * input_height * input_width
-        + (out_h + 1) * input_width + (out_w + 2)]
-        * (int32_t) kernel[(out_d * kernel_height
-          * kernel_width) + (1 * kernel_width) + 2])
-        >> fractal_width);
-
-    int32_t tmp_6 =
-      (((int32_t) input[out_d * input_height * input_width
-        + (out_h + 2) * input_width + (out_w + 0)]
-        * (int32_t) kernel[(out_d * kernel_height
-          * kernel_width) + (2 * kernel_width) + 0])
-        >> fractal_width);
-    int32_t tmp_7 =
-      (((int32_t) input[out_d * input_height * input_width
-        + (out_h + 2) * input_width + (out_w + 1)]
-        * (int32_t) kernel[(out_d * kernel_height
-          * kernel_width) + (2 * kernel_width) + 1])
-        >> fractal_width);
-    int32_t tmp_8 =
-      (((int32_t) input[out_d * input_height * input_width
-        + (out_h + 2) * input_width + (out_w + 2)]
-        * (int32_t) kernel[(out_d * kernel_height
-          * kernel_width) + (2 * kernel_width) + 2])
-        >> fractal_width);
-    int32_t tmp_10 = tmp_0 + tmp_1;
-    int32_t tmp_11 = tmp_2 + tmp_3;
-    int32_t tmp_12 = tmp_4 + tmp_5;
-    int32_t tmp_13 = tmp_6 + tmp_7;
-
-    int32_t tmp_20 = tmp_10 + tmp_11;
-    int32_t tmp_21 = tmp_12 + tmp_13;
-
-
-    buffer = tmp_20 + tmp_21 + tmp_8;
+     }
+    }
     buffer &= ~(0x00000000 - ((buffer >> 31) & relu));
     output[out_d * output_height * output_width
       + out_h * output_width + out_w] = (int16_t) buffer;

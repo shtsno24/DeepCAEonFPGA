@@ -157,8 +157,8 @@ extern "C" {
 
 
 
-# 1 "/tools/Xilinx/Vivado/2018.3/include/gmp.h" 1
-# 26 "/tools/Xilinx/Vivado/2018.3/include/gmp.h"
+# 1 "/tools/Xilinx/Vivado/2019.1/include/gmp.h" 1
+# 26 "/tools/Xilinx/Vivado/2019.1/include/gmp.h"
 # 1 "/tools/Xilinx/Vivado/2019.1/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/iosfwd" 1 3
 # 38 "/tools/Xilinx/Vivado/2019.1/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/iosfwd" 3
 # 38 "/tools/Xilinx/Vivado/2019.1/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/iosfwd" 3
@@ -1295,7 +1295,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
 }
-# 27 "/tools/Xilinx/Vivado/2018.3/include/gmp.h" 2
+# 27 "/tools/Xilinx/Vivado/2019.1/include/gmp.h" 2
 # 1 "/tools/Xilinx/Vivado/2019.1/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/cstdio" 1 3
 # 41 "/tools/Xilinx/Vivado/2019.1/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/cstdio" 3
 # 41 "/tools/Xilinx/Vivado/2019.1/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/cstdio" 3
@@ -2219,8 +2219,8 @@ namespace std
   using ::__gnu_cxx::vsnprintf;
   using ::__gnu_cxx::vsscanf;
 }
-# 28 "/tools/Xilinx/Vivado/2018.3/include/gmp.h" 2
-# 53 "/tools/Xilinx/Vivado/2018.3/include/gmp.h"
+# 28 "/tools/Xilinx/Vivado/2019.1/include/gmp.h" 2
+# 53 "/tools/Xilinx/Vivado/2019.1/include/gmp.h"
 # 1 "/tools/Xilinx/Vivado/2019.1/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/cstddef" 1 3
 # 41 "/tools/Xilinx/Vivado/2019.1/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/cstddef" 3
 # 41 "/tools/Xilinx/Vivado/2019.1/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/cstddef" 3
@@ -2228,8 +2228,8 @@ namespace std
 
 # 1 "/tools/Xilinx/Vivado/2019.1/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 1 3
 # 44 "/tools/Xilinx/Vivado/2019.1/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/cstddef" 2 3
-# 54 "/tools/Xilinx/Vivado/2018.3/include/gmp.h" 2
-# 201 "/tools/Xilinx/Vivado/2018.3/include/gmp.h"
+# 54 "/tools/Xilinx/Vivado/2019.1/include/gmp.h" 2
+# 201 "/tools/Xilinx/Vivado/2019.1/include/gmp.h"
 typedef unsigned long int mp_limb_t;
 typedef long int mp_limb_signed_t;
 
@@ -2319,7 +2319,7 @@ typedef const __mpf_struct *mpf_srcptr;
 typedef __mpf_struct *mpf_ptr;
 typedef const __mpq_struct *mpq_srcptr;
 typedef __mpq_struct *mpq_ptr;
-# 532 "/tools/Xilinx/Vivado/2018.3/include/gmp.h"
+# 532 "/tools/Xilinx/Vivado/2019.1/include/gmp.h"
 extern "C" {
 using std::FILE;
 
@@ -2390,7 +2390,7 @@ using std::FILE;
 
 
                int __gmp_fprintf (FILE *, const char *, ...);
-# 615 "/tools/Xilinx/Vivado/2018.3/include/gmp.h"
+# 615 "/tools/Xilinx/Vivado/2019.1/include/gmp.h"
                int __gmp_printf (const char *, ...);
 
 
@@ -2451,7 +2451,7 @@ using std::FILE;
 
 
                int __gmp_vsscanf (const char *, const char *, va_list);
-# 684 "/tools/Xilinx/Vivado/2018.3/include/gmp.h"
+# 684 "/tools/Xilinx/Vivado/2019.1/include/gmp.h"
                void *__gmpz_realloc (mpz_ptr, mp_size_t);
 
 
@@ -3276,7 +3276,7 @@ using std::FILE;
 
 
                void __gmpf_urandomb (mpf_t, gmp_randstate_t, mp_bitcnt_t);
-# 1516 "/tools/Xilinx/Vivado/2018.3/include/gmp.h"
+# 1516 "/tools/Xilinx/Vivado/2019.1/include/gmp.h"
                mp_limb_t __gmpn_add (mp_ptr, mp_srcptr, mp_size_t, mp_srcptr,mp_size_t);
 
 
@@ -3542,7 +3542,7 @@ using std::FILE;
                void __gmpn_copyd (mp_ptr, mp_srcptr, mp_size_t);
 
                void __gmpn_zero (mp_ptr, mp_size_t);
-# 1799 "/tools/Xilinx/Vivado/2018.3/include/gmp.h"
+# 1799 "/tools/Xilinx/Vivado/2019.1/include/gmp.h"
 extern __inline__ __attribute__((__gnu_inline__)) void
 __gmpz_abs (mpz_ptr __gmp_w, mpz_srcptr __gmp_u)
 {
@@ -3550,7 +3550,7 @@ __gmpz_abs (mpz_ptr __gmp_w, mpz_srcptr __gmp_u)
     __gmpz_set (__gmp_w, __gmp_u);
   __gmp_w->_mp_size = ((__gmp_w->_mp_size) >= 0 ? (__gmp_w->_mp_size) : -(__gmp_w->_mp_size));
 }
-# 1823 "/tools/Xilinx/Vivado/2018.3/include/gmp.h"
+# 1823 "/tools/Xilinx/Vivado/2019.1/include/gmp.h"
 extern __inline__ __attribute__((__gnu_inline__))
 
 int
@@ -3599,7 +3599,7 @@ __gmpz_get_ui (mpz_srcptr __gmp_z) throw ()
 
 
   return (unsigned long)(__gmp_n != 0 ? __gmp_l : 0);
-# 1879 "/tools/Xilinx/Vivado/2018.3/include/gmp.h"
+# 1879 "/tools/Xilinx/Vivado/2019.1/include/gmp.h"
 }
 
 
@@ -3706,7 +3706,7 @@ __gmpq_neg (mpq_ptr __gmp_w, mpq_srcptr __gmp_u)
     __gmpq_set (__gmp_w, __gmp_u);
   __gmp_w->_mp_num._mp_size = - __gmp_w->_mp_num._mp_size;
 }
-# 2220 "/tools/Xilinx/Vivado/2018.3/include/gmp.h"
+# 2220 "/tools/Xilinx/Vivado/2019.1/include/gmp.h"
 extern __inline__ __attribute__((__gnu_inline__))
 
 mp_limb_t
@@ -3772,17 +3772,17 @@ __gmpn_sub_1 (mp_ptr __gmp_dst, mp_srcptr __gmp_src, mp_size_t __gmp_size, mp_li
 
 
 }
-# 2328 "/tools/Xilinx/Vivado/2018.3/include/gmp.h"
+# 2328 "/tools/Xilinx/Vivado/2019.1/include/gmp.h"
                   std::ostream& operator<< (std::ostream &, mpz_srcptr);
                   std::ostream& operator<< (std::ostream &, mpq_srcptr);
                   std::ostream& operator<< (std::ostream &, mpf_srcptr);
                   std::istream& operator>> (std::istream &, mpz_ptr);
                   std::istream& operator>> (std::istream &, mpq_ptr);
                   std::istream& operator>> (std::istream &, mpf_ptr);
-# 2348 "/tools/Xilinx/Vivado/2018.3/include/gmp.h"
+# 2348 "/tools/Xilinx/Vivado/2019.1/include/gmp.h"
 typedef __mpz_struct MP_INT;
 typedef __mpq_struct MP_RAT;
-# 2358 "/tools/Xilinx/Vivado/2018.3/include/gmp.h"
+# 2358 "/tools/Xilinx/Vivado/2019.1/include/gmp.h"
 enum
 {
   GMP_ERROR_NONE = 0,
@@ -28563,11 +28563,34 @@ int network(axis input_data[784], axis output_data[784]) {_ssdm_SpecArrayDimSize
 #pragma HLS INTERFACE axis register both port=&input_data
 #pragma HLS INTERFACE axis register both port=&output_data
 #pragma HLS INTERFACE s_axilite register port=return
-# 59 "../mnist_AXI_Stream.cpp"
+
+
+
+
+#pragma HLS array_partition variable=&SeparableConv2D_0_w_d
+#pragma HLS array_partition variable=&SeparableConv2D_0_w_p
+
+
+
+#pragma HLS array_partition variable=&SeparableConv2D_1_w_d
+#pragma HLS array_partition variable=&SeparableConv2D_1_w_p
+
+
+
+#pragma HLS array_partition variable=&SeparableConv2D_2_w_d
+#pragma HLS array_partition variable=&SeparableConv2D_2_w_p
+
+
+
+#pragma HLS array_partition variable=&SeparableConv2D_3_w_d
+#pragma HLS array_partition variable=&SeparableConv2D_3_w_p
+
+
+
+#pragma HLS array_partition variable=&SeparableConv2D_4_w_d
+#pragma HLS array_partition variable=&SeparableConv2D_4_w_p
+
  int16_t MemBank_A[14400], MemBank_B[14400];
-
-
-
 
  const uint64_t array_length = (uint64_t)SeparableConv2D_4_depth * SeparableConv2D_4_height * SeparableConv2D_4_width;
 
@@ -28686,7 +28709,7 @@ int network(axis input_data[784], axis output_data[784]) {_ssdm_SpecArrayDimSize
 #pragma HLS PIPELINE
  MemBank_Out[i] = (int16_t)MemBank_B[i];
  }
-# 200 "../mnist_AXI_Stream.cpp"
+# 197 "../mnist_AXI_Stream.cpp"
  for(i = 0; i < array_length; i++){
 
 #pragma HLS PIPELINE
@@ -28710,7 +28733,7 @@ int main(void){
 
  int16_t output_img_buff[1 * 28 * 28];
     axis temp;
-# 248 "../mnist_AXI_Stream.cpp"
+# 245 "../mnist_AXI_Stream.cpp"
  int i = 0;
  for(int depth = 0; depth < 1; depth++){
   for(int height = 0; height < 28; height++){
@@ -28736,7 +28759,7 @@ int main(void){
 
 
  network(input_buffer, output_buffer);
-# 291 "../mnist_AXI_Stream.cpp"
+# 288 "../mnist_AXI_Stream.cpp"
  i = 0;
  do {
   temp = output_buffer[i];

@@ -53,13 +53,13 @@ set NewPortList {[
  	{ "name": "output_r_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "output_r", "role": "d0" }}  ]}
 
 set RtlHierarchyInfo {[
-	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2"],
+	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "3"],
 		"CDFG" : "pointwise_conv2d_fix_4",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "65129", "EstimateLatencyMax" : "65129",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "12567", "EstimateLatencyMax" : "12567",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -69,23 +69,25 @@ set RtlHierarchyInfo {[
 		"Port" : [
 			{"Name" : "input_r", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "output_r", "Type" : "Memory", "Direction" : "O"}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mux_164_16_1_1_x_U108", "Parent" : "0"},
-	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mul_mul_16s_16s_32_1_1_U109", "Parent" : "0"}]}
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mux_164_16_1_1_x_U110", "Parent" : "0"},
+	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mux_164_32_1_1_U111", "Parent" : "0"},
+	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mac_muladd_11ns_5ns_11s_15_1_1_U112", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {
 	pointwise_conv2d_fix_4 {
 		input_r {Type I LastRead 4 FirstWrite -1}
-		output_r {Type O LastRead -1 FirstWrite 4}}}
+		output_r {Type O LastRead -1 FirstWrite 7}}}
 
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "65129", "Max" : "65129"}
-	, {"Name" : "Interval", "Min" : "65129", "Max" : "65129"}
+	{"Name" : "Latency", "Min" : "12567", "Max" : "12567"}
+	, {"Name" : "Interval", "Min" : "12567", "Max" : "12567"}
 ]}
 
 set PipelineEnableSignalInfo {[
+	{"Pipeline" : "1", "EnableSignal" : "ap_enable_pp1"}
 ]}
 
 set Spec2ImplPortList { 

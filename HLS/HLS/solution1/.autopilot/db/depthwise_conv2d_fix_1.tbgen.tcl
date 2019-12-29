@@ -20,9 +20,8 @@ set C_modelArgList {
 	{ output_height int 5 regular  }
 	{ output_width int 5 regular  }
 	{ output_r int 16 regular {array 14400 { 0 3 } 0 1 }  }
-	{ kernel int 16 regular {array 24 { 1 3 } 1 1 }  }
-	{ kernel1 int 16 regular {array 24 { 1 3 } 1 1 }  }
-	{ kernel2 int 16 regular {array 24 { 1 3 } 1 1 }  }
+	{ bias int 16 regular {array 8 { 1 3 } 1 1 }  }
+	{ kernel int 16 regular {array 72 { 1 1 } 1 1 }  }
 }
 set C_modelArgMapList {[ 
 	{ "Name" : "input_height", "interface" : "wire", "bitwidth" : 6, "direction" : "READONLY"} , 
@@ -31,9 +30,8 @@ set C_modelArgMapList {[
  	{ "Name" : "output_height", "interface" : "wire", "bitwidth" : 5, "direction" : "READONLY"} , 
  	{ "Name" : "output_width", "interface" : "wire", "bitwidth" : 5, "direction" : "READONLY"} , 
  	{ "Name" : "output_r", "interface" : "memory", "bitwidth" : 16, "direction" : "WRITEONLY"} , 
- 	{ "Name" : "kernel", "interface" : "memory", "bitwidth" : 16, "direction" : "READONLY"} , 
- 	{ "Name" : "kernel1", "interface" : "memory", "bitwidth" : 16, "direction" : "READONLY"} , 
- 	{ "Name" : "kernel2", "interface" : "memory", "bitwidth" : 16, "direction" : "READONLY"} ]}
+ 	{ "Name" : "bias", "interface" : "memory", "bitwidth" : 16, "direction" : "READONLY"} , 
+ 	{ "Name" : "kernel", "interface" : "memory", "bitwidth" : 16, "direction" : "READONLY"} ]}
 # RTL Port declarations: 
 set portNum 29
 set portList { 
@@ -57,15 +55,15 @@ set portList {
 	{ output_r_ce0 sc_out sc_logic 1 signal 5 } 
 	{ output_r_we0 sc_out sc_logic 1 signal 5 } 
 	{ output_r_d0 sc_out sc_lv 16 signal 5 } 
-	{ kernel_address0 sc_out sc_lv 5 signal 6 } 
-	{ kernel_ce0 sc_out sc_logic 1 signal 6 } 
-	{ kernel_q0 sc_in sc_lv 16 signal 6 } 
-	{ kernel1_address0 sc_out sc_lv 5 signal 7 } 
-	{ kernel1_ce0 sc_out sc_logic 1 signal 7 } 
-	{ kernel1_q0 sc_in sc_lv 16 signal 7 } 
-	{ kernel2_address0 sc_out sc_lv 5 signal 8 } 
-	{ kernel2_ce0 sc_out sc_logic 1 signal 8 } 
-	{ kernel2_q0 sc_in sc_lv 16 signal 8 } 
+	{ bias_address0 sc_out sc_lv 3 signal 6 } 
+	{ bias_ce0 sc_out sc_logic 1 signal 6 } 
+	{ bias_q0 sc_in sc_lv 16 signal 6 } 
+	{ kernel_address0 sc_out sc_lv 7 signal 7 } 
+	{ kernel_ce0 sc_out sc_logic 1 signal 7 } 
+	{ kernel_q0 sc_in sc_lv 16 signal 7 } 
+	{ kernel_address1 sc_out sc_lv 7 signal 7 } 
+	{ kernel_ce1 sc_out sc_logic 1 signal 7 } 
+	{ kernel_q1 sc_in sc_lv 16 signal 7 } 
 }
 set NewPortList {[ 
 	{ "name": "ap_clk", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "clock", "bundle":{"name": "ap_clk", "role": "default" }} , 
@@ -88,24 +86,24 @@ set NewPortList {[
  	{ "name": "output_r_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "output_r", "role": "ce0" }} , 
  	{ "name": "output_r_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "output_r", "role": "we0" }} , 
  	{ "name": "output_r_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "output_r", "role": "d0" }} , 
- 	{ "name": "kernel_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":5, "type": "signal", "bundle":{"name": "kernel", "role": "address0" }} , 
+ 	{ "name": "bias_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":3, "type": "signal", "bundle":{"name": "bias", "role": "address0" }} , 
+ 	{ "name": "bias_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "bias", "role": "ce0" }} , 
+ 	{ "name": "bias_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "bias", "role": "q0" }} , 
+ 	{ "name": "kernel_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":7, "type": "signal", "bundle":{"name": "kernel", "role": "address0" }} , 
  	{ "name": "kernel_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "kernel", "role": "ce0" }} , 
  	{ "name": "kernel_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "kernel", "role": "q0" }} , 
- 	{ "name": "kernel1_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":5, "type": "signal", "bundle":{"name": "kernel1", "role": "address0" }} , 
- 	{ "name": "kernel1_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "kernel1", "role": "ce0" }} , 
- 	{ "name": "kernel1_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "kernel1", "role": "q0" }} , 
- 	{ "name": "kernel2_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":5, "type": "signal", "bundle":{"name": "kernel2", "role": "address0" }} , 
- 	{ "name": "kernel2_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "kernel2", "role": "ce0" }} , 
- 	{ "name": "kernel2_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "kernel2", "role": "q0" }}  ]}
+ 	{ "name": "kernel_address1", "direction": "out", "datatype": "sc_lv", "bitwidth":7, "type": "signal", "bundle":{"name": "kernel", "role": "address1" }} , 
+ 	{ "name": "kernel_ce1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "kernel", "role": "ce1" }} , 
+ 	{ "name": "kernel_q1", "direction": "in", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "kernel", "role": "q1" }}  ]}
 
 set RtlHierarchyInfo {[
-	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13"],
+	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"],
 		"CDFG" : "depthwise_conv2d_fix_1",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "4505", "EstimateLatencyMax" : "17609",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "1966", "EstimateLatencyMax" : "7846",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -119,44 +117,40 @@ set RtlHierarchyInfo {[
 			{"Name" : "output_height", "Type" : "None", "Direction" : "I"},
 			{"Name" : "output_width", "Type" : "None", "Direction" : "I"},
 			{"Name" : "output_r", "Type" : "Memory", "Direction" : "O"},
-			{"Name" : "kernel", "Type" : "Memory", "Direction" : "I"},
-			{"Name" : "kernel1", "Type" : "Memory", "Direction" : "I"},
-			{"Name" : "kernel2", "Type" : "Memory", "Direction" : "I"}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mux_32_16_1_1_U61", "Parent" : "0"},
-	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mux_32_16_1_1_U62", "Parent" : "0"},
-	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mux_32_16_1_1_U63", "Parent" : "0"},
-	{"ID" : "4", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mux_32_16_1_1_U64", "Parent" : "0"},
-	{"ID" : "5", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mul_mul_16s_16s_30_1_1_U65", "Parent" : "0"},
-	{"ID" : "6", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mul_mul_16s_16s_30_1_1_U66", "Parent" : "0"},
-	{"ID" : "7", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mul_mul_16s_16s_30_1_1_U67", "Parent" : "0"},
-	{"ID" : "8", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mul_mul_16s_16s_30_1_1_U68", "Parent" : "0"},
-	{"ID" : "9", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mul_mul_16s_16s_30_1_1_U69", "Parent" : "0"},
-	{"ID" : "10", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mul_mul_16s_16s_30_1_1_U70", "Parent" : "0"},
-	{"ID" : "11", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mul_mul_16s_16s_30_1_1_U71", "Parent" : "0"},
-	{"ID" : "12", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mul_mul_16s_16s_30_1_1_U72", "Parent" : "0"},
-	{"ID" : "13", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mul_mul_16s_16s_30_1_1_U73", "Parent" : "0"}]}
+			{"Name" : "bias", "Type" : "Memory", "Direction" : "I"},
+			{"Name" : "kernel", "Type" : "Memory", "Direction" : "I"}]},
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mul_mul_16s_16s_30_1_1_U62", "Parent" : "0"},
+	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mul_mul_16s_16s_30_1_1_U63", "Parent" : "0"},
+	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mul_mul_16s_16s_30_1_1_U64", "Parent" : "0"},
+	{"ID" : "4", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mul_mul_16s_16s_30_1_1_U65", "Parent" : "0"},
+	{"ID" : "5", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mul_mul_16s_16s_30_1_1_U66", "Parent" : "0"},
+	{"ID" : "6", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mul_mul_16s_16s_30_1_1_U67", "Parent" : "0"},
+	{"ID" : "7", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mul_mul_16s_16s_30_1_1_U68", "Parent" : "0"},
+	{"ID" : "8", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mul_mul_16s_16s_30_1_1_U69", "Parent" : "0"},
+	{"ID" : "9", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mac_muladd_5ns_7ns_4ns_11_1_1_U70", "Parent" : "0"},
+	{"ID" : "10", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mul_mul_16s_16s_30_1_1_U71", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {
 	depthwise_conv2d_fix_1 {
 		input_height {Type I LastRead 0 FirstWrite -1}
 		input_width {Type I LastRead 0 FirstWrite -1}
-		input_r {Type I LastRead 11 FirstWrite -1}
+		input_r {Type I LastRead 7 FirstWrite -1}
 		output_height {Type I LastRead 0 FirstWrite -1}
 		output_width {Type I LastRead 0 FirstWrite -1}
-		output_r {Type O LastRead -1 FirstWrite 15}
-		kernel {Type I LastRead 8 FirstWrite -1}
-		kernel1 {Type I LastRead 8 FirstWrite -1}
-		kernel2 {Type I LastRead 8 FirstWrite -1}}}
+		output_r {Type O LastRead -1 FirstWrite 10}
+		bias {Type I LastRead 6 FirstWrite -1}
+		kernel {Type I LastRead 6 FirstWrite -1}}}
 
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "4505", "Max" : "17609"}
-	, {"Name" : "Interval", "Min" : "4505", "Max" : "17609"}
+	{"Name" : "Latency", "Min" : "1966", "Max" : "7846"}
+	, {"Name" : "Interval", "Min" : "1966", "Max" : "7846"}
 ]}
 
 set PipelineEnableSignalInfo {[
+	{"Pipeline" : "0", "EnableSignal" : "ap_enable_pp0"}
 ]}
 
 set Spec2ImplPortList { 
@@ -166,7 +160,6 @@ set Spec2ImplPortList {
 	output_height { ap_none {  { output_height in_data 0 5 } } }
 	output_width { ap_none {  { output_width in_data 0 5 } } }
 	output_r { ap_memory {  { output_r_address0 mem_address 1 14 }  { output_r_ce0 mem_ce 1 1 }  { output_r_we0 mem_we 1 1 }  { output_r_d0 mem_din 1 16 } } }
-	kernel { ap_memory {  { kernel_address0 mem_address 1 5 }  { kernel_ce0 mem_ce 1 1 }  { kernel_q0 mem_dout 0 16 } } }
-	kernel1 { ap_memory {  { kernel1_address0 mem_address 1 5 }  { kernel1_ce0 mem_ce 1 1 }  { kernel1_q0 mem_dout 0 16 } } }
-	kernel2 { ap_memory {  { kernel2_address0 mem_address 1 5 }  { kernel2_ce0 mem_ce 1 1 }  { kernel2_q0 mem_dout 0 16 } } }
+	bias { ap_memory {  { bias_address0 mem_address 1 3 }  { bias_ce0 mem_ce 1 1 }  { bias_q0 mem_dout 0 16 } } }
+	kernel { ap_memory {  { kernel_address0 mem_address 1 7 }  { kernel_ce0 mem_ce 1 1 }  { kernel_q0 mem_dout 0 16 }  { kernel_address1 MemPortADDR2 1 7 }  { kernel_ce1 MemPortCE2 1 1 }  { kernel_q1 MemPortDOUT2 0 16 } } }
 }

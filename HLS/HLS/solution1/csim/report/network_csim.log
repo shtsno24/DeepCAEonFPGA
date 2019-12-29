@@ -1,17 +1,48 @@
 INFO: [SIM 2] *************** CSIM start ***************
 INFO: [SIM 4] CSIM will launch GCC as the compiler.
    Compiling ../../../../../mnist_AXI_Stream.cpp in debug mode
-   Compiling ../../../../../layers_c/up_sampling2d.cpp in debug mode
-   Compiling ../../../../../layers_c/separable_conv2d.cpp in debug mode
-   Compiling ../../../../../layers_c/pointwise_conv2d.cpp in debug mode
-   Compiling ../../../../../layers_c/padding2d.cpp in debug mode
-   Compiling ../../../../../layers_c/max_pooling2d.cpp in debug mode
+   Compiling ../../../../../layers_c/conv2d.cpp in debug mode
    Compiling ../../../../../layers_c/depthwise_conv2d.cpp in debug mode
-csim.mk:111: recipe for target 'obj/depthwise_conv2d.o' failed
-../../../../../layers_c/depthwise_conv2d.cpp: In function ‘uint8_t depthwise_conv2d_fix16(uint16_t, uint16_t, uint16_t, int16_t*, uint16_t, uint16_t, uint16_t, int16_t*, const int16_t*, uint16_t, uint16_t, const int16_t*, uint8_t, uint8_t)’:
-../../../../../layers_c/depthwise_conv2d.cpp:97:31: error: ‘tmp’ was not declared in this scope
-     int32_t tmp_20 = tmp_10 + tmp 11;
-                               ^~~
-make: *** [obj/depthwise_conv2d.o] Error 1
-ERR: [SIM 100] 'csim_design' failed: compilation error(s).
+   Compiling ../../../../../layers_c/max_pooling2d.cpp in debug mode
+   Compiling ../../../../../layers_c/padding2d.cpp in debug mode
+   Compiling ../../../../../layers_c/pointwise_conv2d.cpp in debug mode
+   Compiling ../../../../../layers_c/separable_conv2d.cpp in debug mode
+   Compiling ../../../../../layers_c/up_sampling2d.cpp in debug mode
+   Generating csim.exe
+     0 
+
+     0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0 
+     0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0 
+     0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0 
+     0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0 
+     0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0 
+     0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0 
+     0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0 
+     0      0      0      0      0      0   2477   4867   6318   6803   6312   5533   3890   2450   2132   2999   4718   6623   7294   6538   1565      0      0      0      0      0      0      0 
+     0      0      0      0      0    362   5421   7948  10397  11691  12505  12392  11172   9819   9394  10220  12185  14249  14414  12893   6275      0      0      0      0      0      0      0 
+     0      0      0      0      0      0   3295   5707   8103   9655  11168  12193  12014  11844  11954  12966  15584  18529  18769  16564   9170      0      0      0      0      0      0      0 
+     0      0      0      0      0      0      0      0   1516   2532   4307   6134   7772   8629   9963  11184  14538  18025  18958  16885   9267      0      0      0      0      0      0      0 
+     0      0      0      0      0      0      0      0      0      0      0      0      0   2279   5239   8424  13037  17218  18271  15159   7079      0      0      0      0      0      0      0 
+     0      0      0      0      0      0      0      0      0      0      0      0      0      0   1179   6395  12656  16884  16733  12418   3393      0      0      0      0      0      0      0 
+     0      0      0      0      0      0      0      0      0      0      0      0      0      0      0   6933  14064  17604  16231  10108    351      0      0      0      0      0      0      0 
+     0      0      0      0      0      0      0      0      0      0      0      0      0      0    242   8944  16104  19044  16193   9275      0      0      0      0      0      0      0      0 
+     0      0      0      0      0      0      0      0      0      0      0      0      0      0   3946  11691  17567  18905  14620   5857      0      0      0      0      0      0      0      0 
+     0      0      0      0      0      0      0      0      0      0      0      0      0   1115   8042  13747  16759  16831  10325    487      0      0      0      0      0      0      0      0 
+     0      0      0      0      0      0      0      0      0      0      0      0   1018   7560  13032  15716  15700  12243   4432      0      0      0      0      0      0      0      0      0 
+     0      0      0      0      0      0      0      0      0      0      0      0   6586  12726  16456  17641  13896   7949      0      0      0      0      0      0      0      0      0      0 
+     0      0      0      0      0      0      0      0      0      0      0   2447  11007  16751  18867  16512   9828    870      0      0      0      0      0      0      0      0      0      0 
+     0      0      0      0      0      0      0      0      0      0      0   5174  12832  17871  17103  12348   3219      0      0      0      0      0      0      0      0      0      0      0 
+     0      0      0      0      0      0      0      0      0      0    411   8228  14713  17442  14704   7473      0      0      0      0      0      0      0      0      0      0      0      0 
+     0      0      0      0      0      0      0      0      0      0   3025  10558  15101  16098  11341   3766      0      0      0      0      0      0      0      0      0      0      0      0 
+     0      0      0      0      0      0      0      0      0      0   7749  13641  16093  14136   7916      0      0      0      0      0      0      0      0      0      0      0      0      0 
+     0      0      0      0      0      0      0      0      0   5186  11822  16035  15890  12871   4933      0      0      0      0      0      0      0      0      0      0      0      0      0 
+     0      0      0      0      0      0      0      0    865   6887  12029  14113  12545   8371    423      0      0      0      0      0      0      0      0      0      0      0      0      0 
+     0      0      0      0      0      0      0      0    896   5102   8034   9692   7567   3111      0      0      0      0      0      0      0      0      0      0      0      0      0      0 
+     0      0      0      0      0      0      0      0      0      0   1015   1854      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0 
+
+
+
+count :784
+
+INFO: [SIM 1] CSim done with 0 errors.
 INFO: [SIM 3] *************** CSIM finish ***************

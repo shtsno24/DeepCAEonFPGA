@@ -2,12 +2,12 @@
 # xsim v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Sat Dec 28 22:02:07 2019
-# Process ID: 27380
-# Current directory: /home/masudalab/DeepCAEonFPGA/HLS/HLS/solution1/sim/verilog
+# Start of session at: Sun Dec 29 16:38:46 2019
+# Process ID: 1855
+# Current directory: /home/shts/DeepCAEonFPGA/HLS/HLS/solution1/sim/verilog
 # Command line: xsim -mode tcl -source {xsim.dir/network/xsim_script.tcl}
-# Log file: /home/masudalab/DeepCAEonFPGA/HLS/HLS/solution1/sim/verilog/xsim.log
-# Journal file: /home/masudalab/DeepCAEonFPGA/HLS/HLS/solution1/sim/verilog/xsim.jou
+# Log file: /home/shts/DeepCAEonFPGA/HLS/HLS/solution1/sim/verilog/xsim.log
+# Journal file: /home/shts/DeepCAEonFPGA/HLS/HLS/solution1/sim/verilog/xsim.jou
 #-----------------------------------------------------------
 source xsim.dir/network/xsim_script.tcl
 source network.tcl

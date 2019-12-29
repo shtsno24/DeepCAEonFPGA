@@ -1,1 +1,1 @@
-set ::AESL_AUTOSIM::gTopFileName /home/masudalab/DeepCAEonFPGA/HLS/HLS/solution1/./sim/autowrap/testbench/mnist_AXI_Stream.cpp_pre.cpp.tb.cpp
+set ::AESL_AUTOSIM::gTopFileName /home/shts/DeepCAEonFPGA/HLS/HLS/solution1/./sim/autowrap/testbench/mnist_AXI_Stream.cpp_pre.cpp.tb.cpp

@@ -4,7 +4,7 @@
 // ==============================================================
 #ifndef __network_mac_muladd_9ns_6ns_5ns_14_1_1__HH__
 #define __network_mac_muladd_9ns_6ns_5ns_14_1_1__HH__
-#include "simcore_mac_1.h"
+#include "simcore_mac_5.h"
 #include <systemc>
 
 template<
@@ -22,13 +22,13 @@ SC_MODULE(network_mac_muladd_9ns_6ns_5ns_14_1_1) {
 
 
 
-    simcore_mac_1<ID, 1, din0_WIDTH, din1_WIDTH, din2_WIDTH, dout_WIDTH> simcore_mac_1_U;
+    simcore_mac_5<ID, 1, din0_WIDTH, din1_WIDTH, din2_WIDTH, dout_WIDTH> simcore_mac_5_U;
 
-    SC_CTOR(network_mac_muladd_9ns_6ns_5ns_14_1_1):  simcore_mac_1_U ("simcore_mac_1_U") {
-        simcore_mac_1_U.din0(din0);
-        simcore_mac_1_U.din1(din1);
-        simcore_mac_1_U.din2(din2);
-        simcore_mac_1_U.dout(dout);
+    SC_CTOR(network_mac_muladd_9ns_6ns_5ns_14_1_1):  simcore_mac_5_U ("simcore_mac_5_U") {
+        simcore_mac_5_U.din0(din0);
+        simcore_mac_5_U.din1(din1);
+        simcore_mac_5_U.din2(din2);
+        simcore_mac_5_U.dout(dout);
 
     }
 

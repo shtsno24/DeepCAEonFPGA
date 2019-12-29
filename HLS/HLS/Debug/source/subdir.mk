@@ -4,14 +4,16 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
-/home/masudalab/DeepCAEonFPGA/layers_c/depthwise_conv2d.cpp \
-/home/masudalab/DeepCAEonFPGA/layers_c/max_pooling2d.cpp \
-/home/masudalab/DeepCAEonFPGA/layers_c/padding2d.cpp \
-/home/masudalab/DeepCAEonFPGA/layers_c/pointwise_conv2d.cpp \
-/home/masudalab/DeepCAEonFPGA/layers_c/separable_conv2d.cpp \
-/home/masudalab/DeepCAEonFPGA/layers_c/up_sampling2d.cpp 
+/home/shts/DeepCAEonFPGA/layers_c/conv2d.cpp \
+/home/shts/DeepCAEonFPGA/layers_c/depthwise_conv2d.cpp \
+/home/shts/DeepCAEonFPGA/layers_c/max_pooling2d.cpp \
+/home/shts/DeepCAEonFPGA/layers_c/padding2d.cpp \
+/home/shts/DeepCAEonFPGA/layers_c/pointwise_conv2d.cpp \
+/home/shts/DeepCAEonFPGA/layers_c/separable_conv2d.cpp \
+/home/shts/DeepCAEonFPGA/layers_c/up_sampling2d.cpp 
 
 OBJS += \
+./source/conv2d.o \
 ./source/depthwise_conv2d.o \
 ./source/max_pooling2d.o \
 ./source/padding2d.o \
@@ -20,6 +22,7 @@ OBJS += \
 ./source/up_sampling2d.o 
 
 CPP_DEPS += \
+./source/conv2d.d \
 ./source/depthwise_conv2d.d \
 ./source/max_pooling2d.d \
 ./source/padding2d.d \
@@ -29,45 +32,52 @@ CPP_DEPS += \
 
 
 # Each subdirectory must supply rules for building sources it contributes
-source/depthwise_conv2d.o: /home/masudalab/DeepCAEonFPGA/layers_c/depthwise_conv2d.cpp
+source/conv2d.o: /home/shts/DeepCAEonFPGA/layers_c/conv2d.cpp
 	@echo 'Building file: $<'
 	@echo 'Invoking: GCC C++ Compiler'
-	g++ -DAESL_TB -D__llvm__ -D__llvm__ -I/tools/Xilinx/Vivado/2019.1/include/etc -I/tools/Xilinx/Vivado/2019.1/include/ap_sysc -I/tools/Xilinx/Vivado/2019.1/lnx64/tools/auto_cc/include -I/home/masudalab/DeepCAEonFPGA/HLS -I/tools/Xilinx/Vivado/2019.1/include -I/tools/Xilinx/Vivado/2019.1/lnx64/tools/systemc/include -I/home/shts/DeepCAEonFPGA/HLS -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	g++ -DAESL_TB -D__llvm__ -D__llvm__ -I/tools/Xilinx/Vivado/2019.1/include/etc -I/home/shts/DeepCAEonFPGA/HLS -I/tools/Xilinx/Vivado/2019.1/include/ap_sysc -I/tools/Xilinx/Vivado/2019.1/lnx64/tools/auto_cc/include -I/tools/Xilinx/Vivado/2019.1/include -I/tools/Xilinx/Vivado/2019.1/lnx64/tools/systemc/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-source/max_pooling2d.o: /home/masudalab/DeepCAEonFPGA/layers_c/max_pooling2d.cpp
+source/depthwise_conv2d.o: /home/shts/DeepCAEonFPGA/layers_c/depthwise_conv2d.cpp
 	@echo 'Building file: $<'
 	@echo 'Invoking: GCC C++ Compiler'
-	g++ -DAESL_TB -D__llvm__ -D__llvm__ -I/tools/Xilinx/Vivado/2019.1/include/etc -I/tools/Xilinx/Vivado/2019.1/include/ap_sysc -I/tools/Xilinx/Vivado/2019.1/lnx64/tools/auto_cc/include -I/home/masudalab/DeepCAEonFPGA/HLS -I/tools/Xilinx/Vivado/2019.1/include -I/tools/Xilinx/Vivado/2019.1/lnx64/tools/systemc/include -I/home/shts/DeepCAEonFPGA/HLS -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	g++ -DAESL_TB -D__llvm__ -D__llvm__ -I/tools/Xilinx/Vivado/2019.1/include/etc -I/home/shts/DeepCAEonFPGA/HLS -I/tools/Xilinx/Vivado/2019.1/include/ap_sysc -I/tools/Xilinx/Vivado/2019.1/lnx64/tools/auto_cc/include -I/tools/Xilinx/Vivado/2019.1/include -I/tools/Xilinx/Vivado/2019.1/lnx64/tools/systemc/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-source/padding2d.o: /home/masudalab/DeepCAEonFPGA/layers_c/padding2d.cpp
+source/max_pooling2d.o: /home/shts/DeepCAEonFPGA/layers_c/max_pooling2d.cpp
 	@echo 'Building file: $<'
 	@echo 'Invoking: GCC C++ Compiler'
-	g++ -DAESL_TB -D__llvm__ -D__llvm__ -I/tools/Xilinx/Vivado/2019.1/include/etc -I/tools/Xilinx/Vivado/2019.1/include/ap_sysc -I/tools/Xilinx/Vivado/2019.1/lnx64/tools/auto_cc/include -I/home/masudalab/DeepCAEonFPGA/HLS -I/tools/Xilinx/Vivado/2019.1/include -I/tools/Xilinx/Vivado/2019.1/lnx64/tools/systemc/include -I/home/shts/DeepCAEonFPGA/HLS -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	g++ -DAESL_TB -D__llvm__ -D__llvm__ -I/tools/Xilinx/Vivado/2019.1/include/etc -I/home/shts/DeepCAEonFPGA/HLS -I/tools/Xilinx/Vivado/2019.1/include/ap_sysc -I/tools/Xilinx/Vivado/2019.1/lnx64/tools/auto_cc/include -I/tools/Xilinx/Vivado/2019.1/include -I/tools/Xilinx/Vivado/2019.1/lnx64/tools/systemc/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-source/pointwise_conv2d.o: /home/masudalab/DeepCAEonFPGA/layers_c/pointwise_conv2d.cpp
+source/padding2d.o: /home/shts/DeepCAEonFPGA/layers_c/padding2d.cpp
 	@echo 'Building file: $<'
 	@echo 'Invoking: GCC C++ Compiler'
-	g++ -DAESL_TB -D__llvm__ -D__llvm__ -I/tools/Xilinx/Vivado/2019.1/include/etc -I/tools/Xilinx/Vivado/2019.1/include/ap_sysc -I/tools/Xilinx/Vivado/2019.1/lnx64/tools/auto_cc/include -I/home/masudalab/DeepCAEonFPGA/HLS -I/tools/Xilinx/Vivado/2019.1/include -I/tools/Xilinx/Vivado/2019.1/lnx64/tools/systemc/include -I/home/shts/DeepCAEonFPGA/HLS -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	g++ -DAESL_TB -D__llvm__ -D__llvm__ -I/tools/Xilinx/Vivado/2019.1/include/etc -I/home/shts/DeepCAEonFPGA/HLS -I/tools/Xilinx/Vivado/2019.1/include/ap_sysc -I/tools/Xilinx/Vivado/2019.1/lnx64/tools/auto_cc/include -I/tools/Xilinx/Vivado/2019.1/include -I/tools/Xilinx/Vivado/2019.1/lnx64/tools/systemc/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-source/separable_conv2d.o: /home/masudalab/DeepCAEonFPGA/layers_c/separable_conv2d.cpp
+source/pointwise_conv2d.o: /home/shts/DeepCAEonFPGA/layers_c/pointwise_conv2d.cpp
 	@echo 'Building file: $<'
 	@echo 'Invoking: GCC C++ Compiler'
-	g++ -DAESL_TB -D__llvm__ -D__llvm__ -I/tools/Xilinx/Vivado/2019.1/include/etc -I/tools/Xilinx/Vivado/2019.1/include/ap_sysc -I/tools/Xilinx/Vivado/2019.1/lnx64/tools/auto_cc/include -I/home/masudalab/DeepCAEonFPGA/HLS -I/tools/Xilinx/Vivado/2019.1/include -I/tools/Xilinx/Vivado/2019.1/lnx64/tools/systemc/include -I/home/shts/DeepCAEonFPGA/HLS -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	g++ -DAESL_TB -D__llvm__ -D__llvm__ -I/tools/Xilinx/Vivado/2019.1/include/etc -I/home/shts/DeepCAEonFPGA/HLS -I/tools/Xilinx/Vivado/2019.1/include/ap_sysc -I/tools/Xilinx/Vivado/2019.1/lnx64/tools/auto_cc/include -I/tools/Xilinx/Vivado/2019.1/include -I/tools/Xilinx/Vivado/2019.1/lnx64/tools/systemc/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-source/up_sampling2d.o: /home/masudalab/DeepCAEonFPGA/layers_c/up_sampling2d.cpp
+source/separable_conv2d.o: /home/shts/DeepCAEonFPGA/layers_c/separable_conv2d.cpp
 	@echo 'Building file: $<'
 	@echo 'Invoking: GCC C++ Compiler'
-	g++ -DAESL_TB -D__llvm__ -D__llvm__ -I/tools/Xilinx/Vivado/2019.1/include/etc -I/tools/Xilinx/Vivado/2019.1/include/ap_sysc -I/tools/Xilinx/Vivado/2019.1/lnx64/tools/auto_cc/include -I/home/masudalab/DeepCAEonFPGA/HLS -I/tools/Xilinx/Vivado/2019.1/include -I/tools/Xilinx/Vivado/2019.1/lnx64/tools/systemc/include -I/home/shts/DeepCAEonFPGA/HLS -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	g++ -DAESL_TB -D__llvm__ -D__llvm__ -I/tools/Xilinx/Vivado/2019.1/include/etc -I/home/shts/DeepCAEonFPGA/HLS -I/tools/Xilinx/Vivado/2019.1/include/ap_sysc -I/tools/Xilinx/Vivado/2019.1/lnx64/tools/auto_cc/include -I/tools/Xilinx/Vivado/2019.1/include -I/tools/Xilinx/Vivado/2019.1/lnx64/tools/systemc/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+source/up_sampling2d.o: /home/shts/DeepCAEonFPGA/layers_c/up_sampling2d.cpp
+	@echo 'Building file: $<'
+	@echo 'Invoking: GCC C++ Compiler'
+	g++ -DAESL_TB -D__llvm__ -D__llvm__ -I/tools/Xilinx/Vivado/2019.1/include/etc -I/home/shts/DeepCAEonFPGA/HLS -I/tools/Xilinx/Vivado/2019.1/include/ap_sysc -I/tools/Xilinx/Vivado/2019.1/lnx64/tools/auto_cc/include -I/tools/Xilinx/Vivado/2019.1/include -I/tools/Xilinx/Vivado/2019.1/lnx64/tools/systemc/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 

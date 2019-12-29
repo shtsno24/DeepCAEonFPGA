@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'network'" level="0">
-<item name = "Date">Sat Dec 28 21:59:02 2019
+<item name = "Date">Sun Dec 29 16:52:32 2019
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">HLS</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">6.67, 6.380, 3.33</column>
+<column name="ap_clk">10.00, 9.634, 1.25</column>
 </table>
 </item>
 </section>
@@ -31,23 +31,23 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="7">Instance, Module, min, max, min, max, Type</keys>
-<column name="grp_depthwise_conv2d_fix_2_fu_440">depthwise_conv2d_fix_2, 38353, 151921, 38353, 151921, none</column>
-<column name="grp_depthwise_conv2d_fix_1_fu_467">depthwise_conv2d_fix_1, 4505, 17609, 4505, 17609, none</column>
-<column name="grp_padding2d_fix16_fu_494">padding2d_fix16, 134, 17189, 134, 17189, none</column>
-<column name="grp_depthwise_conv2d_fix_fu_512">depthwise_conv2d_fix, 8709, 8709, 8709, 8709, none</column>
-<column name="grp_up_sampling2d_fix16_fu_518">up_sampling2d_fix16, 3143, 25095, 3143, 25095, none</column>
-<column name="grp_max_pooling2d_fix16_fu_539">max_pooling2d_fix16, 11553, 91649, 11553, 91649, none</column>
-<column name="grp_pointwise_conv2d_fix_1_fu_560">pointwise_conv2d_fix_1, 130393, 130393, 130393, 130393, none</column>
-<column name="grp_pointwise_conv2d_fix_3_fu_568">pointwise_conv2d_fix_3, 135345, 135345, 135345, 135345, none</column>
-<column name="grp_pointwise_conv2d_fix_2_fu_576">pointwise_conv2d_fix_2, 16993, 16993, 16993, 16993, none</column>
-<column name="grp_pointwise_conv2d_fix_fu_584">pointwise_conv2d_fix, 88753, 88753, 88753, 88753, none</column>
-<column name="grp_pointwise_conv2d_fix_4_fu_592">pointwise_conv2d_fix_4, 65129, 65129, 65129, 65129, none</column>
+<column name="grp_depthwise_conv2d_fix_2_fu_435">depthwise_conv2d_fix_2, 15689, 62729, 15689, 62729, none</column>
+<column name="grp_depthwise_conv2d_fix_1_fu_459">depthwise_conv2d_fix_1, 1966, 7846, 1966, 7846, none</column>
+<column name="grp_depthwise_conv2d_fix_fu_483">depthwise_conv2d_fix, 3926, 3926, 3926, 3926, none</column>
+<column name="grp_pointwise_conv2d_fix_1_fu_491">pointwise_conv2d_fix_1, 25289, 25289, 25289, 25289, none</column>
+<column name="grp_padding2d_fix16_fu_499">padding2d_fix16, 124, 16738, 124, 16738, none</column>
+<column name="grp_pointwise_conv2d_fix_3_fu_517">pointwise_conv2d_fix_3, 25361, 25361, 25361, 25361, none</column>
+<column name="grp_pointwise_conv2d_fix_2_fu_525">pointwise_conv2d_fix_2, 3273, 3273, 3273, 3273, none</column>
+<column name="grp_pointwise_conv2d_fix_4_fu_533">pointwise_conv2d_fix_4, 12567, 12567, 12567, 12567, none</column>
+<column name="grp_up_sampling2d_fix16_fu_539">up_sampling2d_fix16, 1572, 12548, 1572, 12548, none</column>
+<column name="grp_max_pooling2d_fix16_fu_560">max_pooling2d_fix16, 5617, 44385, 5617, 44385, none</column>
+<column name="grp_pointwise_conv2d_fix_fu_581">pointwise_conv2d_fix, 75313, 75313, 75313, 75313, none</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
 <column name="- Loop 1">?, ?, 1, 1, 1, ?, yes</column>
-<column name="- Loop 2">785, 785, 3, 1, 1, 784, yes</column>
+<column name="- Loop 2">784, 784, 2, 1, 1, 784, yes</column>
 <column name="- Loop 3">785, 785, 3, 1, 1, 784, yes</column>
 </table>
 </item>
@@ -63,30 +63,30 @@
 <column name="DSP">-, -, -, -, -</column>
 <column name="Expression">-, -, 0, 277, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">0, 33, 5135, 7052, -</column>
-<column name="Memory">35, -, 392, 160, 0</column>
-<column name="Multiplexer">-, -, -, 1672, -</column>
-<column name="Register">-, -, 306, -, -</column>
+<column name="Instance">0, 45, 7120, 9710, -</column>
+<column name="Memory">39, -, 136, 64, 0</column>
+<column name="Multiplexer">-, -, -, 1669, -</column>
+<column name="Register">-, -, 278, -, -</column>
 <specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
-<specialColumn name="Utilization (%)">12, 15, 5, 17, 0</specialColumn>
+<specialColumn name="Utilization (%)">13, 20, 7, 22, 0</specialColumn>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
-<column name="grp_depthwise_conv2d_fix_fu_512">depthwise_conv2d_fix, 0, 7, 522, 601, 0</column>
-<column name="grp_depthwise_conv2d_fix_1_fu_467">depthwise_conv2d_fix_1, 0, 9, 998, 1095, 0</column>
-<column name="grp_depthwise_conv2d_fix_2_fu_440">depthwise_conv2d_fix_2, 0, 9, 1067, 1233, 0</column>
-<column name="grp_max_pooling2d_fix16_fu_539">max_pooling2d_fix16, 0, 0, 236, 478, 0</column>
+<column name="grp_depthwise_conv2d_fix_fu_483">depthwise_conv2d_fix, 0, 9, 586, 1155, 0</column>
+<column name="grp_depthwise_conv2d_fix_1_fu_459">depthwise_conv2d_fix_1, 0, 10, 557, 1216, 0</column>
+<column name="grp_depthwise_conv2d_fix_2_fu_435">depthwise_conv2d_fix_2, 0, 10, 640, 1418, 0</column>
+<column name="grp_max_pooling2d_fix16_fu_560">max_pooling2d_fix16, 0, 0, 170, 460, 0</column>
 <column name="network_AXILiteS_s_axi_U">network_AXILiteS_s_axi, 0, 0, 68, 104, 0</column>
-<column name="grp_padding2d_fix16_fu_494">padding2d_fix16, 0, 0, 533, 1007, 0</column>
-<column name="grp_pointwise_conv2d_fix_fu_584">pointwise_conv2d_fix, 0, 1, 267, 354, 0</column>
-<column name="grp_pointwise_conv2d_fix_1_fu_560">pointwise_conv2d_fix_1, 0, 1, 309, 426, 0</column>
-<column name="grp_pointwise_conv2d_fix_2_fu_576">pointwise_conv2d_fix_2, 0, 1, 270, 425, 0</column>
-<column name="grp_pointwise_conv2d_fix_3_fu_568">pointwise_conv2d_fix_3, 0, 1, 310, 427, 0</column>
-<column name="grp_pointwise_conv2d_fix_4_fu_592">pointwise_conv2d_fix_4, 0, 1, 224, 351, 0</column>
-<column name="grp_up_sampling2d_fix16_fu_518">up_sampling2d_fix16, 0, 3, 331, 551, 0</column>
+<column name="grp_padding2d_fix16_fu_499">padding2d_fix16, 0, 0, 462, 995, 0</column>
+<column name="grp_pointwise_conv2d_fix_fu_581">pointwise_conv2d_fix, 0, 1, 247, 407, 0</column>
+<column name="grp_pointwise_conv2d_fix_1_fu_491">pointwise_conv2d_fix_1, 0, 3, 1121, 910, 0</column>
+<column name="grp_pointwise_conv2d_fix_2_fu_525">pointwise_conv2d_fix_2, 0, 3, 1060, 894, 0</column>
+<column name="grp_pointwise_conv2d_fix_3_fu_517">pointwise_conv2d_fix_3, 0, 3, 1085, 908, 0</column>
+<column name="grp_pointwise_conv2d_fix_4_fu_533">pointwise_conv2d_fix_4, 0, 3, 982, 773, 0</column>
+<column name="grp_up_sampling2d_fix16_fu_539">up_sampling2d_fix16, 0, 3, 142, 470, 0</column>
 </table>
 </item>
 <item name = "DSP48E"><table name="" hasTotal="0">
@@ -98,18 +98,14 @@
 <column name="MemBank_A_U">network_MemBank_A, 16, 0, 0, 0, 14400, 16, 1, 230400</column>
 <column name="MemBank_B_U">network_MemBank_B, 16, 0, 0, 0, 14400, 16, 1, 230400</column>
 <column name="MemBank_Out_U">network_MemBank_Out, 1, 0, 0, 0, 784, 16, 1, 12544</column>
-<column name="SeparableConv2D_1_w_1_U">network_SeparableConv2D_1_w_1, 0, 32, 12, 0, 48, 16, 1, 768</column>
-<column name="SeparableConv2D_1_w_2_U">network_SeparableConv2D_1_w_2, 0, 32, 12, 0, 48, 16, 1, 768</column>
-<column name="SeparableConv2D_1_w_s_U">network_SeparableConv2D_1_w_s, 0, 32, 12, 0, 48, 16, 1, 768</column>
-<column name="SeparableConv2D_2_w_1_U">network_SeparableConv2D_2_w_1, 0, 32, 6, 0, 24, 16, 1, 384</column>
-<column name="SeparableConv2D_2_w_2_U">network_SeparableConv2D_2_w_2, 0, 32, 6, 0, 24, 16, 1, 384</column>
-<column name="SeparableConv2D_2_w_s_U">network_SeparableConv2D_2_w_s, 0, 32, 6, 0, 24, 16, 1, 384</column>
-<column name="SeparableConv2D_3_w_1_U">network_SeparableConv2D_3_w_1, 0, 32, 6, 0, 24, 16, 1, 384</column>
-<column name="SeparableConv2D_3_w_2_U">network_SeparableConv2D_3_w_2, 0, 32, 6, 0, 24, 16, 1, 384</column>
-<column name="SeparableConv2D_3_w_s_U">network_SeparableConv2D_3_w_s, 0, 32, 6, 0, 24, 16, 1, 384</column>
-<column name="SeparableConv2D_4_w_1_U">network_SeparableConv2D_4_w_1, 0, 32, 12, 0, 48, 16, 1, 768</column>
-<column name="SeparableConv2D_4_w_2_U">network_SeparableConv2D_4_w_2, 0, 32, 12, 0, 48, 16, 1, 768</column>
-<column name="SeparableConv2D_4_w_s_U">network_SeparableConv2D_4_w_s, 0, 32, 12, 0, 48, 16, 1, 768</column>
+<column name="SeparableConv2D_1_b_1_U">network_SeparableConv2D_1_b_1, 0, 32, 4, 0, 16, 16, 1, 256</column>
+<column name="SeparableConv2D_4_b_s_U">network_SeparableConv2D_1_b_1, 0, 32, 4, 0, 16, 16, 1, 256</column>
+<column name="SeparableConv2D_1_w_s_U">network_SeparableConv2D_1_w_s, 1, 0, 0, 0, 144, 16, 1, 2304</column>
+<column name="SeparableConv2D_2_b_1_U">network_SeparableConv2D_2_b_1, 0, 32, 2, 0, 8, 16, 1, 128</column>
+<column name="SeparableConv2D_3_b_1_U">network_SeparableConv2D_2_b_1, 0, 32, 2, 0, 8, 16, 1, 128</column>
+<column name="SeparableConv2D_2_w_s_U">network_SeparableConv2D_2_w_s, 1, 0, 0, 0, 72, 16, 1, 1152</column>
+<column name="SeparableConv2D_3_w_s_U">network_SeparableConv2D_3_w_s, 1, 0, 0, 0, 72, 16, 1, 1152</column>
+<column name="SeparableConv2D_4_w_s_U">network_SeparableConv2D_4_w_s, 1, 0, 0, 0, 144, 16, 1, 2304</column>
 <column name="sig_buffer_keep_V_U">network_sig_buffer_keep_V, 1, 0, 0, 0, 784, 2, 1, 1568</column>
 <column name="sig_buffer_strb_V_U">network_sig_buffer_keep_V, 1, 0, 0, 0, 784, 2, 1, 1568</column>
 <column name="sig_buffer_user_V_U">network_sig_buffer_user_V, 0, 2, 13, 0, 784, 1, 1, 784</column>
@@ -124,11 +120,11 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="i_3_fu_656_p2">+, 0, 0, 14, 10, 1</column>
-<column name="i_4_fu_673_p2">+, 0, 0, 14, 10, 1</column>
-<column name="i_fu_644_p2">+, 0, 0, 39, 32, 1</column>
+<column name="i_3_fu_647_p2">+, 0, 0, 14, 10, 1</column>
+<column name="i_4_fu_664_p2">+, 0, 0, 14, 10, 1</column>
+<column name="i_fu_635_p2">+, 0, 0, 39, 32, 1</column>
+<column name="ap_block_state45_io">and, 0, 0, 2, 1, 1</column>
 <column name="ap_block_state46_io">and, 0, 0, 2, 1, 1</column>
-<column name="ap_block_state47_io">and, 0, 0, 2, 1, 1</column>
 <column name="input_data_data_V_0_load_A">and, 0, 0, 2, 1, 1</column>
 <column name="input_data_data_V_0_load_B">and, 0, 0, 2, 1, 1</column>
 <column name="input_data_dest_V_0_load_A">and, 0, 0, 2, 1, 1</column>
@@ -157,8 +153,8 @@
 <column name="output_data_strb_V_1_load_B">and, 0, 0, 2, 1, 1</column>
 <column name="output_data_user_V_1_load_A">and, 0, 0, 2, 1, 1</column>
 <column name="output_data_user_V_1_load_B">and, 0, 0, 2, 1, 1</column>
-<column name="icmp_ln176_fu_650_p2">icmp, 0, 0, 13, 10, 9</column>
-<column name="icmp_ln200_fu_667_p2">icmp, 0, 0, 13, 10, 9</column>
+<column name="icmp_ln173_fu_641_p2">icmp, 0, 0, 13, 10, 9</column>
+<column name="icmp_ln197_fu_658_p2">icmp, 0, 0, 13, 10, 9</column>
 <column name="input_data_data_V_0_state_cmp_full">icmp, 0, 0, 8, 2, 1</column>
 <column name="input_data_dest_V_0_state_cmp_full">icmp, 0, 0, 8, 2, 1</column>
 <column name="input_data_id_V_0_state_cmp_full">icmp, 0, 0, 8, 2, 1</column>
@@ -174,7 +170,7 @@
 <column name="output_data_strb_V_1_state_cmp_full">icmp, 0, 0, 8, 2, 1</column>
 <column name="output_data_user_V_1_state_cmp_full">icmp, 0, 0, 8, 2, 1</column>
 <column name="ap_block_pp2_stage0_11001">or, 0, 0, 2, 1, 1</column>
-<column name="ap_block_state49">or, 0, 0, 2, 1, 1</column>
+<column name="ap_block_state48">or, 0, 0, 2, 1, 1</column>
 <column name="ap_enable_pp1">xor, 0, 0, 2, 1, 2</column>
 <column name="ap_enable_pp2">xor, 0, 0, 2, 1, 2</column>
 <column name="ap_enable_reg_pp1_iter1">xor, 0, 0, 2, 2, 1</column>
@@ -194,53 +190,52 @@
 <column name="MemBank_B_d0">38, 7, 16, 112</column>
 <column name="MemBank_B_we0">38, 7, 1, 7</column>
 <column name="MemBank_Out_address0">15, 3, 10, 30</column>
-<column name="SeparableConv2D_1_w_1_ce0">9, 2, 1, 2</column>
-<column name="SeparableConv2D_1_w_2_ce0">9, 2, 1, 2</column>
+<column name="SeparableConv2D_1_b_1_ce0">9, 2, 1, 2</column>
 <column name="SeparableConv2D_1_w_s_ce0">9, 2, 1, 2</column>
-<column name="SeparableConv2D_2_w_1_ce0">9, 2, 1, 2</column>
-<column name="SeparableConv2D_2_w_2_ce0">9, 2, 1, 2</column>
+<column name="SeparableConv2D_1_w_s_ce1">9, 2, 1, 2</column>
+<column name="SeparableConv2D_2_b_1_ce0">9, 2, 1, 2</column>
 <column name="SeparableConv2D_2_w_s_ce0">9, 2, 1, 2</column>
-<column name="SeparableConv2D_3_w_1_ce0">9, 2, 1, 2</column>
-<column name="SeparableConv2D_3_w_2_ce0">9, 2, 1, 2</column>
+<column name="SeparableConv2D_2_w_s_ce1">9, 2, 1, 2</column>
+<column name="SeparableConv2D_3_b_1_ce0">9, 2, 1, 2</column>
 <column name="SeparableConv2D_3_w_s_ce0">9, 2, 1, 2</column>
-<column name="SeparableConv2D_4_w_1_ce0">9, 2, 1, 2</column>
-<column name="SeparableConv2D_4_w_2_ce0">9, 2, 1, 2</column>
+<column name="SeparableConv2D_3_w_s_ce1">9, 2, 1, 2</column>
+<column name="SeparableConv2D_4_b_s_ce0">9, 2, 1, 2</column>
 <column name="SeparableConv2D_4_w_s_ce0">9, 2, 1, 2</column>
+<column name="SeparableConv2D_4_w_s_ce1">9, 2, 1, 2</column>
 <column name="ap_NS_fsm">201, 46, 1, 46</column>
-<column name="ap_enable_reg_pp1_iter1">9, 2, 1, 2</column>
-<column name="ap_enable_reg_pp1_iter2">9, 2, 1, 2</column>
+<column name="ap_enable_reg_pp1_iter1">15, 3, 1, 3</column>
 <column name="ap_enable_reg_pp2_iter1">9, 2, 1, 2</column>
 <column name="ap_enable_reg_pp2_iter2">9, 2, 1, 2</column>
-<column name="grp_depthwise_conv2d_fix_1_fu_467_input_height">15, 3, 6, 18</column>
-<column name="grp_depthwise_conv2d_fix_1_fu_467_input_width">15, 3, 6, 18</column>
-<column name="grp_depthwise_conv2d_fix_1_fu_467_kernel1_q0">15, 3, 16, 48</column>
-<column name="grp_depthwise_conv2d_fix_1_fu_467_kernel2_q0">15, 3, 16, 48</column>
-<column name="grp_depthwise_conv2d_fix_1_fu_467_kernel_q0">15, 3, 16, 48</column>
-<column name="grp_depthwise_conv2d_fix_1_fu_467_output_height">15, 3, 5, 15</column>
-<column name="grp_depthwise_conv2d_fix_1_fu_467_output_width">15, 3, 5, 15</column>
-<column name="grp_depthwise_conv2d_fix_2_fu_440_input_height">15, 3, 7, 21</column>
-<column name="grp_depthwise_conv2d_fix_2_fu_440_input_width">15, 3, 6, 18</column>
-<column name="grp_depthwise_conv2d_fix_2_fu_440_kernel1_q0">15, 3, 16, 48</column>
-<column name="grp_depthwise_conv2d_fix_2_fu_440_kernel2_q0">15, 3, 16, 48</column>
-<column name="grp_depthwise_conv2d_fix_2_fu_440_kernel_q0">15, 3, 16, 48</column>
-<column name="grp_depthwise_conv2d_fix_2_fu_440_output_height">15, 3, 6, 18</column>
-<column name="grp_depthwise_conv2d_fix_2_fu_440_output_width">15, 3, 6, 18</column>
-<column name="grp_max_pooling2d_fix16_fu_539_input_height">15, 3, 7, 21</column>
-<column name="grp_max_pooling2d_fix16_fu_539_input_width">15, 3, 6, 18</column>
-<column name="grp_max_pooling2d_fix16_fu_539_output_depth">15, 3, 6, 18</column>
-<column name="grp_max_pooling2d_fix16_fu_539_output_height">15, 3, 5, 15</column>
-<column name="grp_max_pooling2d_fix16_fu_539_output_width">15, 3, 5, 15</column>
-<column name="grp_padding2d_fix16_fu_494_input_depth">21, 4, 7, 28</column>
-<column name="grp_padding2d_fix16_fu_494_input_height">21, 4, 6, 24</column>
-<column name="grp_padding2d_fix16_fu_494_input_width">21, 4, 6, 24</column>
-<column name="grp_up_sampling2d_fix16_fu_518_input_height">15, 3, 5, 15</column>
-<column name="grp_up_sampling2d_fix16_fu_518_input_width">15, 3, 5, 15</column>
-<column name="grp_up_sampling2d_fix16_fu_518_output_depth">15, 3, 6, 18</column>
-<column name="grp_up_sampling2d_fix16_fu_518_output_height">15, 3, 6, 18</column>
-<column name="grp_up_sampling2d_fix16_fu_518_output_width">15, 3, 6, 18</column>
-<column name="i_0_reg_407">9, 2, 32, 64</column>
-<column name="i_1_reg_418">9, 2, 10, 20</column>
-<column name="i_2_reg_429">9, 2, 10, 20</column>
+<column name="grp_depthwise_conv2d_fix_1_fu_459_bias_q0">15, 3, 16, 48</column>
+<column name="grp_depthwise_conv2d_fix_1_fu_459_input_height">15, 3, 6, 18</column>
+<column name="grp_depthwise_conv2d_fix_1_fu_459_input_width">15, 3, 6, 18</column>
+<column name="grp_depthwise_conv2d_fix_1_fu_459_kernel_q0">15, 3, 16, 48</column>
+<column name="grp_depthwise_conv2d_fix_1_fu_459_kernel_q1">15, 3, 16, 48</column>
+<column name="grp_depthwise_conv2d_fix_1_fu_459_output_height">15, 3, 5, 15</column>
+<column name="grp_depthwise_conv2d_fix_1_fu_459_output_width">15, 3, 5, 15</column>
+<column name="grp_depthwise_conv2d_fix_2_fu_435_bias_q0">15, 3, 16, 48</column>
+<column name="grp_depthwise_conv2d_fix_2_fu_435_input_height">15, 3, 7, 21</column>
+<column name="grp_depthwise_conv2d_fix_2_fu_435_input_width">15, 3, 6, 18</column>
+<column name="grp_depthwise_conv2d_fix_2_fu_435_kernel_q0">15, 3, 16, 48</column>
+<column name="grp_depthwise_conv2d_fix_2_fu_435_kernel_q1">15, 3, 16, 48</column>
+<column name="grp_depthwise_conv2d_fix_2_fu_435_output_height">15, 3, 6, 18</column>
+<column name="grp_depthwise_conv2d_fix_2_fu_435_output_width">15, 3, 6, 18</column>
+<column name="grp_max_pooling2d_fix16_fu_560_input_height">15, 3, 7, 21</column>
+<column name="grp_max_pooling2d_fix16_fu_560_input_width">15, 3, 6, 18</column>
+<column name="grp_max_pooling2d_fix16_fu_560_output_depth">15, 3, 6, 18</column>
+<column name="grp_max_pooling2d_fix16_fu_560_output_height">15, 3, 5, 15</column>
+<column name="grp_max_pooling2d_fix16_fu_560_output_width">15, 3, 5, 15</column>
+<column name="grp_padding2d_fix16_fu_499_input_depth">21, 4, 7, 28</column>
+<column name="grp_padding2d_fix16_fu_499_input_height">21, 4, 6, 24</column>
+<column name="grp_padding2d_fix16_fu_499_input_width">21, 4, 6, 24</column>
+<column name="grp_up_sampling2d_fix16_fu_539_input_height">15, 3, 5, 15</column>
+<column name="grp_up_sampling2d_fix16_fu_539_input_width">15, 3, 5, 15</column>
+<column name="grp_up_sampling2d_fix16_fu_539_output_depth">15, 3, 6, 18</column>
+<column name="grp_up_sampling2d_fix16_fu_539_output_height">15, 3, 6, 18</column>
+<column name="grp_up_sampling2d_fix16_fu_539_output_width">15, 3, 6, 18</column>
+<column name="i_0_reg_402">9, 2, 32, 64</column>
+<column name="i_1_reg_413">9, 2, 10, 20</column>
+<column name="i_2_reg_424">9, 2, 10, 20</column>
 <column name="input_data_TDATA_blk_n">9, 2, 1, 2</column>
 <column name="input_data_data_V_0_data_out">9, 2, 16, 32</column>
 <column name="input_data_data_V_0_state">15, 3, 2, 6</column>
@@ -281,32 +276,29 @@
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="MemBank_B_load_reg_717">16, 0, 16, 0</column>
 <column name="ap_CS_fsm">45, 0, 45, 0</column>
 <column name="ap_enable_reg_pp1_iter0">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp1_iter1">1, 0, 1, 0</column>
-<column name="ap_enable_reg_pp1_iter2">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp2_iter0">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp2_iter1">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp2_iter2">1, 0, 1, 0</column>
-<column name="grp_depthwise_conv2d_fix_1_fu_467_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_depthwise_conv2d_fix_2_fu_440_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_depthwise_conv2d_fix_fu_512_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_max_pooling2d_fix16_fu_539_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_padding2d_fix16_fu_494_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_pointwise_conv2d_fix_1_fu_560_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_pointwise_conv2d_fix_2_fu_576_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_pointwise_conv2d_fix_3_fu_568_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_pointwise_conv2d_fix_4_fu_592_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_pointwise_conv2d_fix_fu_584_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_up_sampling2d_fix16_fu_518_ap_start_reg">1, 0, 1, 0</column>
-<column name="i_0_reg_407">32, 0, 32, 0</column>
-<column name="i_1_reg_418">10, 0, 10, 0</column>
-<column name="i_2_reg_429">10, 0, 10, 0</column>
-<column name="icmp_ln176_reg_698">1, 0, 1, 0</column>
-<column name="icmp_ln176_reg_698_pp1_iter1_reg">1, 0, 1, 0</column>
-<column name="icmp_ln200_reg_722">1, 0, 1, 0</column>
-<column name="icmp_ln200_reg_722_pp2_iter1_reg">1, 0, 1, 0</column>
+<column name="grp_depthwise_conv2d_fix_1_fu_459_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_depthwise_conv2d_fix_2_fu_435_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_depthwise_conv2d_fix_fu_483_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_max_pooling2d_fix16_fu_560_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_padding2d_fix16_fu_499_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_pointwise_conv2d_fix_1_fu_491_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_pointwise_conv2d_fix_2_fu_525_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_pointwise_conv2d_fix_3_fu_517_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_pointwise_conv2d_fix_4_fu_533_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_pointwise_conv2d_fix_fu_581_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_up_sampling2d_fix16_fu_539_ap_start_reg">1, 0, 1, 0</column>
+<column name="i_0_reg_402">32, 0, 32, 0</column>
+<column name="i_1_reg_413">10, 0, 10, 0</column>
+<column name="i_2_reg_424">10, 0, 10, 0</column>
+<column name="icmp_ln173_reg_689">1, 0, 1, 0</column>
+<column name="icmp_ln197_reg_708">1, 0, 1, 0</column>
+<column name="icmp_ln197_reg_708_pp2_iter1_reg">1, 0, 1, 0</column>
 <column name="input_data_data_V_0_payload_A">16, 0, 16, 0</column>
 <column name="input_data_data_V_0_payload_B">16, 0, 16, 0</column>
 <column name="input_data_data_V_0_sel_rd">1, 0, 1, 0</column>
@@ -377,8 +369,7 @@
 <column name="output_data_user_V_1_sel_rd">1, 0, 1, 0</column>
 <column name="output_data_user_V_1_sel_wr">1, 0, 1, 0</column>
 <column name="output_data_user_V_1_state">2, 0, 2, 0</column>
-<column name="zext_ln179_reg_707">10, 0, 64, 54</column>
-<column name="zext_ln179_reg_707_pp1_iter1_reg">10, 0, 64, 54</column>
+<column name="zext_ln176_reg_698">10, 0, 64, 54</column>
 </table>
 </item>
 </section>

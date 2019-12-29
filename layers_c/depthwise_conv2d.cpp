@@ -14,88 +14,39 @@ uint8_t depthwise_conv2d_fix16(uint16_t input_depth, uint16_t input_height,
 	// stride is fixed to 1
 	// dilation rate *must* be (1, 1)
 	int32_t buffer;
-	int16_t w00, w01, w02, w10, w11, w12, w20, w21, w22;
+	int32_t kernel_buffer[kernel_height * kernel_width];
+	int32_t bias_buffer;
+	int32_t input_buffer;
 
-#pragma HLS array_partition variable=kernel
+#pragma HLS array_partition variable=kernel_buffer
 
 	for (uint16_t out_d = 0; out_d < output_depth; out_d++) {
-
-		w00 = kernel[out_d * kernel_height * kernel_width];
-		w01 = kernel[out_d * kernel_height * kernel_width + 1];
-		w02 = kernel[out_d * kernel_height * kernel_width + 2];
-
-		w10 = kernel[out_d * kernel_height * kernel_width + 3];
-		w11 = kernel[out_d * kernel_height * kernel_width + 4];
-		w12 = kernel[out_d * kernel_height * kernel_width + 5];
-
-		w20 = kernel[out_d * kernel_height * kernel_width + 6];
-		w21 = kernel[out_d * kernel_height * kernel_width + 7];
-		w22 = kernel[out_d * kernel_height * kernel_width + 8];
+#pragma HLS PIPELINE
+		for (uint8_t i = 0; i < kernel_height * kernel_width; i++) {
+#pragma HLS PIPELINE
+			kernel_buffer[i] = (int32_t) kernel[out_d * kernel_height
+					* kernel_width + i];
+		}
+		bias_buffer = bias[out_d];
 
 		for (uint16_t out_h = 0; out_h < output_height; out_h++) {
 			for (uint16_t out_w = 0; out_w < output_width; out_w++) {
-				buffer = bias[out_d];
-//    			for(uint16_t k_h = 0; k_h < kernel_height; k_h++){
+				buffer = bias_buffer;
+				for (uint16_t k_h = 0; k_h < kernel_height; k_h++) {
+#pragma HLS PIPELINE
 //#pragma HLS UNROLL
-//    				for(uint16_t k_w = 0; k_w < kernel_width; k_w++){
+					for (uint16_t k_w = 0; k_w < kernel_width; k_w++) {
 //#pragma HLS UNROLL
-//				buffer +=
-//						(((int32_t) input[out_d * input_height * input_width
-//								+ (out_h + k_h) * input_width + (out_w + k_w)]
-//								* (int32_t) kernel[(out_d * kernel_height
-//										* kernel_width) + (k_h * kernel_width)
-//										+ k_w]) >> fractal_width);
-//                    }
-//                }
-				int32_t tmp_0 =
-						(((int32_t) input[out_d * input_height * input_width
-								+ (out_h + 0) * input_width + (out_w + 0)]
-								* (int32_t) w00) >> fractal_width);
-				int32_t tmp_1 =
-						(((int32_t) input[out_d * input_height * input_width
-								+ (out_h + 0) * input_width + (out_w + 1)]
-								* (int32_t) w01) >> fractal_width);
-				int32_t tmp_2 =
-						(((int32_t) input[out_d * input_height * input_width
-								+ (out_h + 0) * input_width + (out_w + 2)]
-								* (int32_t) w02) >> fractal_width);
+#pragma HLS loop_flatten
+//#pragma HLS PIPELINE
+						buffer += (((int32_t) input[out_d * input_height
+								* input_width + (out_h + k_h) * input_width
+								+ (out_w + k_w)]
+								* kernel_buffer[(k_h * kernel_width) + k_w])
+								>> fractal_width);
 
-				int32_t tmp_3 =
-						(((int32_t) input[out_d * input_height * input_width
-								+ (out_h + 1) * input_width + (out_w + 0)]
-								* (int32_t) w10) >> fractal_width);
-				int32_t tmp_4 =
-						(((int32_t) input[out_d * input_height * input_width
-								+ (out_h + 1) * input_width + (out_w + 1)]
-								* (int32_t) w11) >> fractal_width);
-				int32_t tmp_5 =
-						(((int32_t) input[out_d * input_height * input_width
-								+ (out_h + 1) * input_width + (out_w + 2)]
-								* (int32_t) w12) >> fractal_width);
-
-				int32_t tmp_6 =
-						(((int32_t) input[out_d * input_height * input_width
-								+ (out_h + 2) * input_width + (out_w + 0)]
-								* (int32_t) w20) >> fractal_width);
-				int32_t tmp_7 =
-						(((int32_t) input[out_d * input_height * input_width
-								+ (out_h + 2) * input_width + (out_w + 1)]
-								* (int32_t) w21) >> fractal_width);
-				int32_t tmp_8 =
-						(((int32_t) input[out_d * input_height * input_width
-								+ (out_h + 2) * input_width + (out_w + 2)]
-								* (int32_t) w22) >> fractal_width);
-
-				int32_t tmp_10 = tmp_0 + tmp_1;
-				int32_t tmp_11 = tmp_2 + tmp_3;
-				int32_t tmp_12 = tmp_4 + tmp_5;
-				int32_t tmp_13 = tmp_6 + tmp_7;
-
-				int32_t tmp_20 = tmp_10 + tmp_11;
-				int32_t tmp_21 = tmp_12 + tmp_13;
-
-
-				buffer = tmp_20 + tmp_21 + tmp_8;
+					}
+				}
 				buffer &= ~(0x00000000 - ((buffer >> 31) & relu));
 				output[out_d * output_height * output_width
 						+ out_h * output_width + out_w] = (int16_t) buffer;
