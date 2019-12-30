@@ -1610,7 +1610,7 @@ hls_label_1:63  %input_load_4 = load i16* %input_addr_4, align 2
 
 <Node id="37" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-.preheader7:5  call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str16) nounwind
+.preheader7:5  call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str121) nounwind
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln20"/></StgValue>
@@ -1705,10 +1705,10 @@ hls_label_1:63  %input_load_4 = load i16* %input_addr_4, align 2
 
 <Node id="57" bw="8" op_0_bw="5">
 <![CDATA[
-hls_label_1:6  %zext_ln34_5 = zext i5 %out_d to i8
+hls_label_1:6  %zext_ln34_3 = zext i5 %out_d to i8
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln34_5"/></StgValue>
+<StgValue><ssdm name="zext_ln34_3"/></StgValue>
 </operation>
 
 <operation id="118" st_id="12" stage="1" lat="1">
@@ -1721,7 +1721,7 @@ hls_label_1:6  %zext_ln34_5 = zext i5 %out_d to i8
 
 <Node id="61" bw="8" op_0_bw="8" op_1_bw="8">
 <![CDATA[
-hls_label_1:10  %mul_ln34_1 = mul i8 %zext_ln34_5, %zext_ln34
+hls_label_1:10  %mul_ln34_1 = mul i8 %zext_ln34_3, %zext_ln34
 
 ]]></Node>
 <StgValue><ssdm name="mul_ln34_1"/></StgValue>
@@ -2041,7 +2041,7 @@ hls_label_1:72  %input_load_6 = load i16* %input_addr_6, align 2
 
 <Node id="52" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-hls_label_1:1  call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str16) nounwind
+hls_label_1:1  call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str121) nounwind
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln20"/></StgValue>
@@ -2073,7 +2073,7 @@ hls_label_1:2  %empty_56 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 392, 
 
 <Node id="56" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-hls_label_1:5  call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str16) nounwind
+hls_label_1:5  call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str121) nounwind
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln20"/></StgValue>
@@ -2089,7 +2089,7 @@ hls_label_1:5  call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32
 
 <Node id="86" bw="32" op_0_bw="32" op_1_bw="0">
 <![CDATA[
-hls_label_1:35  %tmp_s = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str27)
+hls_label_1:35  %tmp_s = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str222)
 
 ]]></Node>
 <StgValue><ssdm name="tmp_s"/></StgValue>
@@ -2105,7 +2105,7 @@ hls_label_1:35  %tmp_s = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p
 
 <Node id="87" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-hls_label_1:36  call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str16) nounwind
+hls_label_1:36  call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str121) nounwind
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln23"/></StgValue>
@@ -2185,7 +2185,7 @@ hls_label_1:76  store i16 %input_load_6, i16* %output_addr, align 2
 
 <Node id="128" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32">
 <![CDATA[
-hls_label_1:77  %empty_57 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str27, i32 %tmp_s)
+hls_label_1:77  %empty_57 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str222, i32 %tmp_s)
 
 ]]></Node>
 <StgValue><ssdm name="empty_57"/></StgValue>

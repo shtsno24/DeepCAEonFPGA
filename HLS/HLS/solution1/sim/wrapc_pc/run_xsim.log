@@ -259,8 +259,8 @@ Built simulation snapshot network
     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 
 source /home/shts/DeepCAEonFPGA/HLS/HLS/solution1/sim/verilog/xsim.dir/network/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-186] '/home/shts/DeepCAEonFPGA/HLS/HLS/solution1/sim/verilog/xsim.dir/network/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Mon Dec 30 01:12:05 2019. For additional details about this file, please refer to the WebTalk help file at /tools/Xilinx/Vivado/2019.1/doc/webtalk_introduction.html.
-INFO: [Common 17-206] Exiting Webtalk at Mon Dec 30 01:12:05 2019...
+INFO: [Common 17-186] '/home/shts/DeepCAEonFPGA/HLS/HLS/solution1/sim/verilog/xsim.dir/network/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Mon Dec 30 21:21:34 2019. For additional details about this file, please refer to the WebTalk help file at /tools/Xilinx/Vivado/2019.1/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Mon Dec 30 21:21:34 2019...
 
 ****** xsim v2019.1 (64-bit)
   **** SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
@@ -400,9 +400,9 @@ WARNING: [Simtcl 6-197] One or more HDL objects could not be logged because of o
 // RTL Simulation : 1 / 1 [n/a] @ "2913355000"
 ////////////////////////////////////////////////////////////////////////////////////
 $finish called at time : 2913395 ns : File "/home/shts/DeepCAEonFPGA/HLS/HLS/solution1/sim/verilog/network.autotb.v" Line 495
-run: Time (s): cpu = 00:00:10 ; elapsed = 00:00:23 . Memory (MB): peak = 1530.359 ; gain = 72.004 ; free physical = 9133 ; free virtual = 13481
+run: Time (s): cpu = 00:00:10 ; elapsed = 00:00:22 . Memory (MB): peak = 1530.359 ; gain = 72.004 ; free physical = 8550 ; free virtual = 13566
 ## quit
-INFO: [Common 17-206] Exiting xsim at Mon Dec 30 01:12:39 2019...
+INFO: [Common 17-206] Exiting xsim at Mon Dec 30 21:22:07 2019...
      0 
 
      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0 

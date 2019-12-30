@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'network'" level="0">
-<item name = "Date">Mon Dec 30 01:10:40 2019
+<item name = "Date">Mon Dec 30 21:12:40 2019
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">HLS</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00, 9.634, 1.00</column>
+<column name="ap_clk">10.00, 9.634, 1.25</column>
 </table>
 </item>
 </section>
@@ -63,7 +63,7 @@
 <column name="DSP">-, -, -, -, -</column>
 <column name="Expression">-, -, 0, 277, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">0, 47, 7886, 10757, -</column>
+<column name="Instance">0, 47, 7856, 10757, -</column>
 <column name="Memory">39, -, 136, 64, 0</column>
 <column name="Multiplexer">-, -, -, 1681, -</column>
 <column name="Register">-, -, 278, -, -</column>
@@ -75,16 +75,16 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
-<column name="grp_depthwise_conv2d_fix_fu_475">depthwise_conv2d_fix, 0, 9, 587, 1155, 0</column>
+<column name="grp_depthwise_conv2d_fix_fu_475">depthwise_conv2d_fix, 0, 9, 586, 1155, 0</column>
 <column name="grp_depthwise_conv2d_fix_1_fu_451">depthwise_conv2d_fix_1, 0, 10, 557, 1216, 0</column>
-<column name="grp_depthwise_conv2d_fix_2_fu_427">depthwise_conv2d_fix_2, 0, 10, 659, 1418, 0</column>
+<column name="grp_depthwise_conv2d_fix_2_fu_427">depthwise_conv2d_fix_2, 0, 10, 640, 1418, 0</column>
 <column name="grp_max_pooling2d_fix16_fu_525">max_pooling2d_fix16, 0, 1, 911, 1196, 0</column>
 <column name="network_AXILiteS_s_axi_U">network_AXILiteS_s_axi, 0, 0, 68, 104, 0</column>
 <column name="grp_padding2d_fix16_fu_495">padding2d_fix16, 0, 0, 462, 995, 0</column>
 <column name="grp_pointwise_conv2d_fix_fu_546">pointwise_conv2d_fix, 0, 2, 295, 540, 0</column>
-<column name="grp_pointwise_conv2d_fix_1_fu_483">pointwise_conv2d_fix_1, 0, 3, 1107, 970, 0</column>
-<column name="grp_pointwise_conv2d_fix_2_fu_513">pointwise_conv2d_fix_2, 0, 3, 1046, 954, 0</column>
-<column name="grp_pointwise_conv2d_fix_3_fu_489">pointwise_conv2d_fix_3, 0, 3, 1070, 966, 0</column>
+<column name="grp_pointwise_conv2d_fix_1_fu_483">pointwise_conv2d_fix_1, 0, 3, 1104, 970, 0</column>
+<column name="grp_pointwise_conv2d_fix_2_fu_513">pointwise_conv2d_fix_2, 0, 3, 1043, 954, 0</column>
+<column name="grp_pointwise_conv2d_fix_3_fu_489">pointwise_conv2d_fix_3, 0, 3, 1066, 966, 0</column>
 <column name="grp_pointwise_conv2d_fix_4_fu_519">pointwise_conv2d_fix_4, 0, 3, 982, 773, 0</column>
 <column name="grp_up_sampling2d_fix16_fu_552">up_sampling2d_fix16, 0, 3, 142, 470, 0</column>
 </table>

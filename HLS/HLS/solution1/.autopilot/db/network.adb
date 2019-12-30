@@ -10210,7 +10210,7 @@
             </item>
             <item>
               <first>FF</first>
-              <second>659</second>
+              <second>640</second>
             </item>
             <item>
               <first>LUT</first>
@@ -10233,7 +10233,7 @@
             </item>
             <item>
               <first>FF</first>
-              <second>587</second>
+              <second>586</second>
             </item>
             <item>
               <first>LUT</first>
@@ -10298,7 +10298,7 @@
             </item>
             <item>
               <first>FF</first>
-              <second>1107</second>
+              <second>1104</second>
             </item>
             <item>
               <first>LUT</first>
@@ -10321,7 +10321,7 @@
             </item>
             <item>
               <first>FF</first>
-              <second>1046</second>
+              <second>1043</second>
             </item>
             <item>
               <first>LUT</first>
@@ -10344,7 +10344,7 @@
             </item>
             <item>
               <first>FF</first>
-              <second>1070</second>
+              <second>1066</second>
             </item>
             <item>
               <first>LUT</first>

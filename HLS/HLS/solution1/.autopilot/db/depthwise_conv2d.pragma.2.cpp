@@ -407,7 +407,9 @@ _ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
 _ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
  buffer = bias_buffer;
     for (uint16_t k_h = 0; k_h < kernel_height; k_h++) {
+
      for (uint16_t k_w = 0; k_w < kernel_width; k_w++) {
+
       buffer += (((int32_t) input[out_d * input_height
         * input_width + (out_h + k_h) * input_width
         + (out_w + k_w)]

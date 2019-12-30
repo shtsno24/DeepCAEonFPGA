@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'up_sampling2d_fix16'
 ================================================================
-* Date:           Mon Dec 30 01:10:33 2019
+* Date:           Mon Dec 30 21:12:33 2019
 
 * Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
 * Project:        HLS
@@ -20,7 +20,7 @@
     +--------+-------+----------+------------+
     |  Clock | Target| Estimated| Uncertainty|
     +--------+-------+----------+------------+
-    |ap_clk  |  10.00|     9.634|        1.00|
+    |ap_clk  |  10.00|     9.634|        1.25|
     +--------+-------+----------+------------+
 
 + Latency (clock cycles): 
@@ -175,13 +175,13 @@ ST_4 : Operation 83 [1/1] (3.02ns) (root node of the DSP)   --->   "%add_ln18_1 
 
 State 5 <SV = 4> <Delay = 6.50>
 ST_5 : Operation 84 [1/1] (0.00ns)   --->   "%empty_12 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 1568, i64 12544, i64 0)"   --->   Operation 84 'speclooptripcount' 'empty_12' <Predicate = (!icmp_ln14)> <Delay = 0.00>
-ST_5 : Operation 85 [1/1] (0.00ns)   --->   "%tmp_1 = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str29)" [../layers_c/up_sampling2d.cpp:16]   --->   Operation 85 'specregionbegin' 'tmp_1' <Predicate = (!icmp_ln14)> <Delay = 0.00>
-ST_5 : Operation 86 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str130) nounwind" [../layers_c/up_sampling2d.cpp:17]   --->   Operation 86 'specpipeline' <Predicate = (!icmp_ln14)> <Delay = 0.00>
+ST_5 : Operation 85 [1/1] (0.00ns)   --->   "%tmp_1 = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str)" [../layers_c/up_sampling2d.cpp:16]   --->   Operation 85 'specregionbegin' 'tmp_1' <Predicate = (!icmp_ln14)> <Delay = 0.00>
+ST_5 : Operation 86 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind" [../layers_c/up_sampling2d.cpp:17]   --->   Operation 86 'specpipeline' <Predicate = (!icmp_ln14)> <Delay = 0.00>
 ST_5 : Operation 87 [1/2] (3.25ns)   --->   "%input_load = load i16* %input_addr, align 2" [../layers_c/up_sampling2d.cpp:18]   --->   Operation 87 'load' 'input_load' <Predicate = (!icmp_ln14)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 14400> <RAM>
 ST_5 : Operation 88 [1/1] (0.00ns)   --->   "%zext_ln18_8 = zext i14 %add_ln18_1 to i64" [../layers_c/up_sampling2d.cpp:18]   --->   Operation 88 'zext' 'zext_ln18_8' <Predicate = (!icmp_ln14)> <Delay = 0.00>
 ST_5 : Operation 89 [1/1] (0.00ns)   --->   "%output_addr = getelementptr [14400 x i16]* %output_r, i64 0, i64 %zext_ln18_8" [../layers_c/up_sampling2d.cpp:18]   --->   Operation 89 'getelementptr' 'output_addr' <Predicate = (!icmp_ln14)> <Delay = 0.00>
 ST_5 : Operation 90 [1/1] (3.25ns)   --->   "store i16 %input_load, i16* %output_addr, align 2" [../layers_c/up_sampling2d.cpp:18]   --->   Operation 90 'store' <Predicate = (!icmp_ln14)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 14400> <RAM>
-ST_5 : Operation 91 [1/1] (0.00ns)   --->   "%empty_13 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str29, i32 %tmp_1)" [../layers_c/up_sampling2d.cpp:20]   --->   Operation 91 'specregionend' 'empty_13' <Predicate = (!icmp_ln14)> <Delay = 0.00>
+ST_5 : Operation 91 [1/1] (0.00ns)   --->   "%empty_13 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str, i32 %tmp_1)" [../layers_c/up_sampling2d.cpp:20]   --->   Operation 91 'specregionend' 'empty_13' <Predicate = (!icmp_ln14)> <Delay = 0.00>
 ST_5 : Operation 92 [1/1] (0.00ns)   --->   "br label %.preheader" [../layers_c/up_sampling2d.cpp:16]   --->   Operation 92 'br' <Predicate = (!icmp_ln14)> <Delay = 0.00>
 
 State 6 <SV = 3> <Delay = 0.00>
@@ -191,7 +191,7 @@ ST_6 : Operation 93 [1/1] (0.00ns)   --->   "ret void"   --->   Operation 93 're
 ============================================================
 + Verbose Summary: Timing violations
 ============================================================
-Target clock period: 10ns, clock uncertainty: 1ns.
+Target clock period: 10ns, clock uncertainty: 1.25ns.
 
  <State 1>: 3.49ns
 The critical path consists of the following:

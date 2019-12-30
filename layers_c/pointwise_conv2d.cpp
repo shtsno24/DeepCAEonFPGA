@@ -17,6 +17,7 @@ uint8_t pointwise_conv2d_fix16(uint16_t input_depth, uint16_t input_height,
 	int32_t buffer;
 	int32_t kernel_buffer[16];
 	int32_t bias_buffer;
+//	int32_t input_addr;
 
 #pragma HLS array_partition variable=kernel_buffer
 
@@ -31,13 +32,16 @@ uint8_t pointwise_conv2d_fix16(uint16_t input_depth, uint16_t input_height,
 #pragma HLS PIPELINE
 			for (uint16_t out_w = 0; out_w < output_width; out_w++) {
 				buffer = bias_buffer;
+//				input_addr = out_h * output_width + out_w;
 				for (uint16_t in_d = 0; in_d < input_depth; in_d++) {
 					//output[out_d][out_h][out_w] += input[in_d][out_h][out_w] * kernel[out_d][in_d][1][1];
-#pragma HLS PIPELINE
+#pragma HLS PIPELINE II=0
 					buffer += ((int32_t)(
 							input[in_d * output_height * output_width
 									+ out_h * output_width + out_w])
 							* kernel_buffer[in_d]) >> fractal_width;
+//					input_addr = (in_d + 1) * output_height * output_width
+//							+ out_h * output_width + out_w;
 				}
 				buffer &= ~(0x00000000 - ((buffer >> 31) & relu));
 				output[out_d * output_height * output_width

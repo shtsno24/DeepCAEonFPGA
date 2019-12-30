@@ -262,7 +262,9 @@ uint8_t depthwise_conv2d_fix16(uint16_t input_depth, uint16_t input_height,
 #pragma HLS PIPELINE
     buffer = bias_buffer;
     for (uint16_t k_h = 0; k_h < kernel_height; k_h++) {
+
      for (uint16_t k_w = 0; k_w < kernel_width; k_w++) {
+
       buffer += (((int32_t) input[out_d * input_height
         * input_width + (out_h + k_h) * input_width
         + (out_w + k_w)]

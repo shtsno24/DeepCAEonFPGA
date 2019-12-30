@@ -2302,7 +2302,7 @@
             <Obj>
               <type>0</type>
               <id>57</id>
-              <name>zext_ln34_5</name>
+              <name>zext_ln34_3</name>
               <fileName>../layers_c/max_pooling2d.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>34</lineNumber>
@@ -14335,7 +14335,7 @@
         </second>
       </item>
       <item>
-        <first>zext_ln34_5_fu_609</first>
+        <first>zext_ln34_3_fu_609</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

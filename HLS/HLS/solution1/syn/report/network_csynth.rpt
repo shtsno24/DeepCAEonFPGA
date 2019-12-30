@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'network'
 ================================================================
-* Date:           Mon Dec 30 01:10:40 2019
+* Date:           Mon Dec 30 21:12:40 2019
 
 * Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
 * Project:        HLS
@@ -20,7 +20,7 @@
     +--------+-------+----------+------------+
     |  Clock | Target| Estimated| Uncertainty|
     +--------+-------+----------+------------+
-    |ap_clk  |  10.00|     9.634|        1.00|
+    |ap_clk  |  10.00|     9.634|        1.25|
     +--------+-------+----------+------------+
 
 + Latency (clock cycles): 
@@ -73,12 +73,12 @@
 |DSP              |        -|      -|       -|      -|    -|
 |Expression       |        -|      -|       0|    277|    -|
 |FIFO             |        -|      -|       -|      -|    -|
-|Instance         |        0|     47|    7886|  10757|    -|
+|Instance         |        0|     47|    7856|  10757|    -|
 |Memory           |       39|      -|     136|     64|    0|
 |Multiplexer      |        -|      -|       -|   1681|    -|
 |Register         |        -|      -|     278|      -|    -|
 +-----------------+---------+-------+--------+-------+-----+
-|Total            |       39|     47|    8300|  12779|    0|
+|Total            |       39|     47|    8270|  12779|    0|
 +-----------------+---------+-------+--------+-------+-----+
 |Available        |      280|    220|  106400|  53200|    0|
 +-----------------+---------+-------+--------+-------+-----+
@@ -90,20 +90,20 @@
     +-----------------------------------+------------------------+---------+-------+------+------+-----+
     |              Instance             |         Module         | BRAM_18K| DSP48E|  FF  |  LUT | URAM|
     +-----------------------------------+------------------------+---------+-------+------+------+-----+
-    |grp_depthwise_conv2d_fix_fu_475    |depthwise_conv2d_fix    |        0|      9|   587|  1155|    0|
+    |grp_depthwise_conv2d_fix_fu_475    |depthwise_conv2d_fix    |        0|      9|   586|  1155|    0|
     |grp_depthwise_conv2d_fix_1_fu_451  |depthwise_conv2d_fix_1  |        0|     10|   557|  1216|    0|
-    |grp_depthwise_conv2d_fix_2_fu_427  |depthwise_conv2d_fix_2  |        0|     10|   659|  1418|    0|
+    |grp_depthwise_conv2d_fix_2_fu_427  |depthwise_conv2d_fix_2  |        0|     10|   640|  1418|    0|
     |grp_max_pooling2d_fix16_fu_525     |max_pooling2d_fix16     |        0|      1|   911|  1196|    0|
     |network_AXILiteS_s_axi_U           |network_AXILiteS_s_axi  |        0|      0|    68|   104|    0|
     |grp_padding2d_fix16_fu_495         |padding2d_fix16         |        0|      0|   462|   995|    0|
     |grp_pointwise_conv2d_fix_fu_546    |pointwise_conv2d_fix    |        0|      2|   295|   540|    0|
-    |grp_pointwise_conv2d_fix_1_fu_483  |pointwise_conv2d_fix_1  |        0|      3|  1107|   970|    0|
-    |grp_pointwise_conv2d_fix_2_fu_513  |pointwise_conv2d_fix_2  |        0|      3|  1046|   954|    0|
-    |grp_pointwise_conv2d_fix_3_fu_489  |pointwise_conv2d_fix_3  |        0|      3|  1070|   966|    0|
+    |grp_pointwise_conv2d_fix_1_fu_483  |pointwise_conv2d_fix_1  |        0|      3|  1104|   970|    0|
+    |grp_pointwise_conv2d_fix_2_fu_513  |pointwise_conv2d_fix_2  |        0|      3|  1043|   954|    0|
+    |grp_pointwise_conv2d_fix_3_fu_489  |pointwise_conv2d_fix_3  |        0|      3|  1066|   966|    0|
     |grp_pointwise_conv2d_fix_4_fu_519  |pointwise_conv2d_fix_4  |        0|      3|   982|   773|    0|
     |grp_up_sampling2d_fix16_fu_552     |up_sampling2d_fix16     |        0|      3|   142|   470|    0|
     +-----------------------------------+------------------------+---------+-------+------+------+-----+
-    |Total                              |                        |        0|     47|  7886| 10757|    0|
+    |Total                              |                        |        0|     47|  7856| 10757|    0|
     +-----------------------------------+------------------------+---------+-------+------+------+-----+
 
     * DSP48E: 

@@ -14,6 +14,8 @@
   },
   "HlsSolution": {"Config": [
       "config_sdx -target=none",
+      "config_export -format=ip_catalog",
+      "config_export -rtl=verilog",
       "config_export -vivado_optimization_level=2",
       "config_export -vivado_phys_opt=place",
       "config_export -vivado_report_level=0"
@@ -202,7 +204,7 @@
     "IsCombLogic": "0",
     "II": "x",
     "Latency": "undef",
-    "Uncertainty": "1"
+    "Uncertainty": "1.25"
   },
   "Xdc": {"OocClocks": ["create_clock -name ap_clk -period 10.000 [get_ports ap_clk]"]},
   "Ipx": {
@@ -218,14 +220,14 @@
   },
   "Files": {
     "CSource": [
-      "..\/..\/..\/layers_c\/conv2d.cpp",
-      "..\/..\/..\/layers_c\/depthwise_conv2d.cpp",
-      "..\/..\/..\/layers_c\/max_pooling2d.cpp",
-      "..\/..\/..\/mnist_AXI_Stream.cpp",
-      "..\/..\/..\/layers_c\/padding2d.cpp",
-      "..\/..\/..\/layers_c\/pointwise_conv2d.cpp",
+      "..\/..\/..\/layers_c\/up_sampling2d.cpp",
       "..\/..\/..\/layers_c\/separable_conv2d.cpp",
-      "..\/..\/..\/layers_c\/up_sampling2d.cpp"
+      "..\/..\/..\/layers_c\/pointwise_conv2d.cpp",
+      "..\/..\/..\/layers_c\/padding2d.cpp",
+      "..\/..\/..\/mnist_AXI_Stream.cpp",
+      "..\/..\/..\/layers_c\/max_pooling2d.cpp",
+      "..\/..\/..\/layers_c\/depthwise_conv2d.cpp",
+      "..\/..\/..\/layers_c\/conv2d.cpp"
     ],
     "Vhdl": [
       "impl\/vhdl\/depthwise_conv2d_fix.vhd",
@@ -1009,7 +1011,7 @@
         },
         "Timing": {
           "Target": "10.00",
-          "Uncertainty": "1.00",
+          "Uncertainty": "1.25",
           "Estimate": "6.964"
         },
         "Loops": [{
@@ -1091,8 +1093,8 @@
         },
         "Timing": {
           "Target": "10.00",
-          "Uncertainty": "1.00",
-          "Estimate": "8.866"
+          "Uncertainty": "1.25",
+          "Estimate": "7.888"
         },
         "Loops": [{
             "Name": "Loop 1",
@@ -1104,7 +1106,7 @@
         "Area": {
           "BRAM_18K": "0",
           "DSP48E": "9",
-          "FF": "587",
+          "FF": "586",
           "LUT": "1155",
           "URAM": "0"
         }
@@ -1120,7 +1122,7 @@
         },
         "Timing": {
           "Target": "10.00",
-          "Uncertainty": "1.00",
+          "Uncertainty": "1.25",
           "Estimate": "8.510"
         },
         "Loops": [{
@@ -1165,7 +1167,7 @@
         },
         "Timing": {
           "Target": "10.00",
-          "Uncertainty": "1.00",
+          "Uncertainty": "1.25",
           "Estimate": "8.310"
         },
         "Loops": [{
@@ -1198,8 +1200,8 @@
         },
         "Timing": {
           "Target": "10.00",
-          "Uncertainty": "1.00",
-          "Estimate": "8.963"
+          "Uncertainty": "1.25",
+          "Estimate": "8.310"
         },
         "Loops": [{
             "Name": "Loop 1",
@@ -1212,7 +1214,7 @@
           }],
         "Area": {
           "DSP48E": "10",
-          "FF": "659",
+          "FF": "640",
           "LUT": "1418",
           "BRAM_18K": "0",
           "URAM": "0"
@@ -1229,7 +1231,7 @@
         },
         "Timing": {
           "Target": "10.00",
-          "Uncertainty": "1.00",
+          "Uncertainty": "1.25",
           "Estimate": "9.634"
         },
         "Loops": [{
@@ -1258,7 +1260,7 @@
         "Area": {
           "BRAM_18K": "0",
           "DSP48E": "3",
-          "FF": "1107",
+          "FF": "1104",
           "LUT": "970",
           "URAM": "0"
         }
@@ -1276,7 +1278,7 @@
         },
         "Timing": {
           "Target": "10.00",
-          "Uncertainty": "1.00",
+          "Uncertainty": "1.25",
           "Estimate": "8.633"
         },
         "Loops": [{
@@ -1307,7 +1309,7 @@
         },
         "Timing": {
           "Target": "10.00",
-          "Uncertainty": "1.00",
+          "Uncertainty": "1.25",
           "Estimate": "9.634"
         },
         "Loops": [{
@@ -1336,7 +1338,7 @@
         "Area": {
           "BRAM_18K": "0",
           "DSP48E": "3",
-          "FF": "1046",
+          "FF": "1043",
           "LUT": "954",
           "URAM": "0"
         }
@@ -1354,7 +1356,7 @@
         },
         "Timing": {
           "Target": "10.00",
-          "Uncertainty": "1.00",
+          "Uncertainty": "1.25",
           "Estimate": "9.634"
         },
         "Loops": [{
@@ -1385,7 +1387,7 @@
         },
         "Timing": {
           "Target": "10.00",
-          "Uncertainty": "1.00",
+          "Uncertainty": "1.25",
           "Estimate": "9.634"
         },
         "Loops": [{
@@ -1414,7 +1416,7 @@
         "Area": {
           "BRAM_18K": "0",
           "DSP48E": "3",
-          "FF": "1070",
+          "FF": "1066",
           "LUT": "966",
           "URAM": "0"
         }
@@ -1430,7 +1432,7 @@
         },
         "Timing": {
           "Target": "10.00",
-          "Uncertainty": "1.00",
+          "Uncertainty": "1.25",
           "Estimate": "9.634"
         },
         "Loops": [
@@ -1468,7 +1470,7 @@
         },
         "Timing": {
           "Target": "10.00",
-          "Uncertainty": "1.00",
+          "Uncertainty": "1.25",
           "Estimate": "9.634"
         },
         "Loops": [
@@ -1497,7 +1499,7 @@
         "Area": {
           "BRAM_18K": "39",
           "DSP48E": "47",
-          "FF": "8300",
+          "FF": "8270",
           "LUT": "12779",
           "URAM": "0"
         }
@@ -1514,7 +1516,7 @@
   },
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2019-12-30 01:10:43 JST",
+    "Time": "2019-12-30 21:12:42 JST",
     "ToolName": "vivado_hls",
     "ToolVersion": "2019.1"
   }

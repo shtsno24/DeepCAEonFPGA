@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'max_pooling2d_fix16'
 ================================================================
-* Date:           Mon Dec 30 01:10:31 2019
+* Date:           Mon Dec 30 21:12:31 2019
 
 * Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
 * Project:        HLS
@@ -20,7 +20,7 @@
     +--------+-------+----------+------------+
     |  Clock | Target| Estimated| Uncertainty|
     +--------+-------+----------+------------+
-    |ap_clk  |  10.00|     8.310|        1.00|
+    |ap_clk  |  10.00|     8.310|        1.25|
     +--------+-------+----------+------------+
 
 + Latency (clock cycles): 
@@ -215,14 +215,14 @@ State 11 <SV = 10> <Delay = 3.25>
 ST_11 : Operation 110 [1/2] (3.25ns)   --->   "%input_load_4 = load i16* %input_addr_4, align 2" [../layers_c/max_pooling2d.cpp:29]   --->   Operation 110 'load' 'input_load_4' <Predicate = (!icmp_ln19)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 14400> <RAM>
 
 State 12 <SV = 11> <Delay = 6.94>
-ST_12 : Operation 111 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str16) nounwind" [../layers_c/max_pooling2d.cpp:20]   --->   Operation 111 'specpipeline' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 111 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str121) nounwind" [../layers_c/max_pooling2d.cpp:20]   --->   Operation 111 'specpipeline' <Predicate = true> <Delay = 0.00>
 ST_12 : Operation 112 [1/1] (0.00ns)   --->   "%zext_ln34_1 = zext i5 %out_d_0 to i8" [../layers_c/max_pooling2d.cpp:34]   --->   Operation 112 'zext' 'zext_ln34_1' <Predicate = true> <Delay = 0.00>
 ST_12 : Operation 113 [1/1] (3.78ns)   --->   "%mul_ln34 = mul i8 %zext_ln34_1, %zext_ln34" [../layers_c/max_pooling2d.cpp:34]   --->   Operation 113 'mul' 'mul_ln34' <Predicate = true> <Delay = 3.78> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 4.17> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
 ST_12 : Operation 114 [1/1] (0.00ns)   --->   "%zext_ln26_2 = zext i4 %out_h_0 to i8" [../layers_c/max_pooling2d.cpp:26]   --->   Operation 114 'zext' 'zext_ln26_2' <Predicate = (!icmp_ln21 & !select_ln20_5)> <Delay = 0.00>
 ST_12 : Operation 115 [1/1] (1.91ns)   --->   "%tmp4 = add i8 %zext_ln26_2, %mul_ln34" [../layers_c/max_pooling2d.cpp:26]   --->   Operation 115 'add' 'tmp4' <Predicate = (!icmp_ln21 & !select_ln20_5)> <Delay = 1.91> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.91> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_12 : Operation 116 [1/1] (0.00ns)   --->   "br i1 %icmp_ln19, label %1, label %hls_label_1" [../layers_c/max_pooling2d.cpp:19]   --->   Operation 116 'br' <Predicate = true> <Delay = 0.00>
-ST_12 : Operation 117 [1/1] (0.00ns)   --->   "%zext_ln34_5 = zext i5 %out_d to i8" [../layers_c/max_pooling2d.cpp:34]   --->   Operation 117 'zext' 'zext_ln34_5' <Predicate = (!icmp_ln19)> <Delay = 0.00>
-ST_12 : Operation 118 [1/1] (3.78ns)   --->   "%mul_ln34_1 = mul i8 %zext_ln34_5, %zext_ln34" [../layers_c/max_pooling2d.cpp:34]   --->   Operation 118 'mul' 'mul_ln34_1' <Predicate = (!icmp_ln19)> <Delay = 3.78> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 4.17> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_12 : Operation 117 [1/1] (0.00ns)   --->   "%zext_ln34_3 = zext i5 %out_d to i8" [../layers_c/max_pooling2d.cpp:34]   --->   Operation 117 'zext' 'zext_ln34_3' <Predicate = (!icmp_ln19)> <Delay = 0.00>
+ST_12 : Operation 118 [1/1] (3.78ns)   --->   "%mul_ln34_1 = mul i8 %zext_ln34_3, %zext_ln34" [../layers_c/max_pooling2d.cpp:34]   --->   Operation 118 'mul' 'mul_ln34_1' <Predicate = (!icmp_ln19)> <Delay = 3.78> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 4.17> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
 ST_12 : Operation 119 [1/1] (0.00ns) (grouped into LUT with out node tmp4_mid1)   --->   "%select_ln20_2 = select i1 %icmp_ln21, i8 %mul_ln34_1, i8 %mul_ln34" [../layers_c/max_pooling2d.cpp:20]   --->   Operation 119 'select' 'select_ln20_2' <Predicate = (!icmp_ln19 & select_ln20_5)> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 1.24> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
 ST_12 : Operation 120 [1/1] (0.00ns) (grouped into LUT with out node select_ln26_2)   --->   "%select_ln20_4 = select i1 %icmp_ln21, i8 %mul_ln34_1, i8 %tmp4" [../layers_c/max_pooling2d.cpp:20]   --->   Operation 120 'select' 'select_ln20_4' <Predicate = (!icmp_ln19 & !select_ln20_5)> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 1.24> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
 ST_12 : Operation 121 [1/1] (0.00ns) (grouped into LUT with out node tmp4_mid1)   --->   "%zext_ln26_6 = zext i4 %out_h to i8" [../layers_c/max_pooling2d.cpp:26]   --->   Operation 121 'zext' 'zext_ln26_6' <Predicate = (!icmp_ln19 & select_ln20_5)> <Delay = 0.00>
@@ -249,16 +249,16 @@ ST_15 : Operation 135 [1/1] (0.00ns)   --->   "%input_addr_6 = getelementptr [14
 ST_15 : Operation 136 [2/2] (3.25ns)   --->   "%input_load_6 = load i16* %input_addr_6, align 2" [../layers_c/max_pooling2d.cpp:29]   --->   Operation 136 'load' 'input_load_6' <Predicate = (!icmp_ln19)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 14400> <RAM>
 
 State 16 <SV = 15> <Delay = 6.50>
-ST_16 : Operation 137 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str16) nounwind" [../layers_c/max_pooling2d.cpp:20]   --->   Operation 137 'specpipeline' <Predicate = (!icmp_ln19)> <Delay = 0.00>
+ST_16 : Operation 137 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str121) nounwind" [../layers_c/max_pooling2d.cpp:20]   --->   Operation 137 'specpipeline' <Predicate = (!icmp_ln19)> <Delay = 0.00>
 ST_16 : Operation 138 [1/1] (0.00ns)   --->   "%empty_56 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 392, i64 3136, i64 0)"   --->   Operation 138 'speclooptripcount' 'empty_56' <Predicate = (!icmp_ln19)> <Delay = 0.00>
-ST_16 : Operation 139 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str16) nounwind" [../layers_c/max_pooling2d.cpp:20]   --->   Operation 139 'specpipeline' <Predicate = (!icmp_ln19)> <Delay = 0.00>
-ST_16 : Operation 140 [1/1] (0.00ns)   --->   "%tmp_s = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str27)" [../layers_c/max_pooling2d.cpp:22]   --->   Operation 140 'specregionbegin' 'tmp_s' <Predicate = (!icmp_ln19)> <Delay = 0.00>
-ST_16 : Operation 141 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str16) nounwind" [../layers_c/max_pooling2d.cpp:23]   --->   Operation 141 'specpipeline' <Predicate = (!icmp_ln19)> <Delay = 0.00>
+ST_16 : Operation 139 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str121) nounwind" [../layers_c/max_pooling2d.cpp:20]   --->   Operation 139 'specpipeline' <Predicate = (!icmp_ln19)> <Delay = 0.00>
+ST_16 : Operation 140 [1/1] (0.00ns)   --->   "%tmp_s = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str222)" [../layers_c/max_pooling2d.cpp:22]   --->   Operation 140 'specregionbegin' 'tmp_s' <Predicate = (!icmp_ln19)> <Delay = 0.00>
+ST_16 : Operation 141 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str121) nounwind" [../layers_c/max_pooling2d.cpp:23]   --->   Operation 141 'specpipeline' <Predicate = (!icmp_ln19)> <Delay = 0.00>
 ST_16 : Operation 142 [1/2] (3.25ns)   --->   "%input_load_6 = load i16* %input_addr_6, align 2" [../layers_c/max_pooling2d.cpp:29]   --->   Operation 142 'load' 'input_load_6' <Predicate = (!icmp_ln19)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 14400> <RAM>
 ST_16 : Operation 143 [1/1] (0.00ns)   --->   "%zext_ln34_2 = zext i12 %add_ln34 to i64" [../layers_c/max_pooling2d.cpp:34]   --->   Operation 143 'zext' 'zext_ln34_2' <Predicate = (!icmp_ln19)> <Delay = 0.00>
 ST_16 : Operation 144 [1/1] (0.00ns)   --->   "%output_addr = getelementptr [14400 x i16]* %output_r, i64 0, i64 %zext_ln34_2" [../layers_c/max_pooling2d.cpp:34]   --->   Operation 144 'getelementptr' 'output_addr' <Predicate = (!icmp_ln19)> <Delay = 0.00>
 ST_16 : Operation 145 [1/1] (3.25ns)   --->   "store i16 %input_load_6, i16* %output_addr, align 2" [../layers_c/max_pooling2d.cpp:34]   --->   Operation 145 'store' <Predicate = (!icmp_ln19)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 14400> <RAM>
-ST_16 : Operation 146 [1/1] (0.00ns)   --->   "%empty_57 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str27, i32 %tmp_s)" [../layers_c/max_pooling2d.cpp:36]   --->   Operation 146 'specregionend' 'empty_57' <Predicate = (!icmp_ln19)> <Delay = 0.00>
+ST_16 : Operation 146 [1/1] (0.00ns)   --->   "%empty_57 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str222, i32 %tmp_s)" [../layers_c/max_pooling2d.cpp:36]   --->   Operation 146 'specregionend' 'empty_57' <Predicate = (!icmp_ln19)> <Delay = 0.00>
 ST_16 : Operation 147 [1/1] (0.00ns)   --->   "br label %.preheader7" [../layers_c/max_pooling2d.cpp:22]   --->   Operation 147 'br' <Predicate = (!icmp_ln19)> <Delay = 0.00>
 
 State 17 <SV = 12> <Delay = 0.00>
@@ -268,7 +268,7 @@ ST_17 : Operation 148 [1/1] (0.00ns)   --->   "ret void"   --->   Operation 148 
 ============================================================
 + Verbose Summary: Timing violations
 ============================================================
-Target clock period: 10ns, clock uncertainty: 1ns.
+Target clock period: 10ns, clock uncertainty: 1.25ns.
 
  <State 1>: 6.51ns
 The critical path consists of the following:

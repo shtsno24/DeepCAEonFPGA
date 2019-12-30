@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'pointwise_conv2d_fix_2'" level="0">
-<item name = "Date">Mon Dec 30 01:10:32 2019
+<item name = "Date">Mon Dec 30 21:12:32 2019
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">HLS</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00, 9.634, 1.00</column>
+<column name="ap_clk">10.00, 9.634, 1.25</column>
 </table>
 </item>
 </section>
@@ -37,7 +37,7 @@
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
 <column name="- Loop 1">3264, 3264, 408, -, -, 8, no</column>
 <column name=" + Loop 1.1">8, 8, 1, 1, 1, 8, yes</column>
-<column name=" + Loop 1.2">395, 395, 5, 1, 1, 392, yes</column>
+<column name=" + Loop 1.2">395, 395, 5, 1, 0, 392, yes</column>
 </table>
 </item>
 </section>

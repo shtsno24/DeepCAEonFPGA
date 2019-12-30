@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-| Date         : Mon Dec 30 01:18:51 2019
+| Date         : Mon Dec 30 21:26:47 2019
 | Host         : shts-server running 64-bit Ubuntu 18.04.3 LTS
 | Command      : report_timing_summary -file ./report/network_timing_synth.rpt
 | Design       : bd_0_wrapper
@@ -127,7 +127,7 @@ Table of Contents
 
     WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
     -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
-     -0.298       -2.500                     16                10934        0.252        0.000                      0                10934        3.750        0.000                       0                  4025  
+     -0.298       -2.500                     16                10851        0.252        0.000                      0                10851        3.750        0.000                       0                  3972  
 
 
 Timing constraints are not met.
@@ -150,7 +150,7 @@ ap_clk  {0.000 5.000}      10.000          100.000
 
 Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
 -----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
-ap_clk             -0.298       -2.500                     16                10934        0.252        0.000                      0                10934        3.750        0.000                       0                  4025  
+ap_clk             -0.298       -2.500                     16                10851        0.252        0.000                      0                10851        3.750        0.000                       0                  3972  
 
 
 ------------------------------------------------------------------------------------------------
@@ -213,7 +213,7 @@ Slack (VIOLATED) :        -0.298ns  (required time - arrival time)
   -------------------------------------------------------------------    -------------------
                          (clock ap_clk rise edge)     0.000     0.000 r  
                                                       0.000     0.000 r  ap_clk (IN)
-                         net (fo=4036, unset)         0.973     0.973    bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_1_fu_451/ap_clk
+                         net (fo=3983, unset)         0.973     0.973    bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_1_fu_451/ap_clk
                          FDRE                                         r  bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_1_fu_451/tmp10_0_0_mid2_v_v_reg_1288_reg[1]/C
   -------------------------------------------------------------------    -------------------
                          FDRE (Prop_fdre_C_Q)         0.518     1.491 r  bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_1_fu_451/tmp10_0_0_mid2_v_v_reg_1288_reg[1]/Q
@@ -234,11 +234,11 @@ Slack (VIOLATED) :        -0.298ns  (required time - arrival time)
                                                       0.629     5.640 r  bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_1_fu_451/tmp10_0_0_mid2_reg_1320_reg[9]_i_1/O[3]
                          net (fo=3, unplaced)         0.824     6.464    bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_1_fu_451/tmp10_0_0_mid2_fu_640_p2[9]
                          CARRY4 (Prop_carry4_S[1]_O[2])
-                                                      0.885     7.349 r  bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_1_fu_451/ram_reg_0_i_412/O[2]
-                         net (fo=1, unplaced)         0.452     7.801    bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_1_fu_451/ram_reg_0_i_412_n_10
-                         LUT6 (Prop_lut6_I1_O)        0.301     8.102 f  bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_1_fu_451/ram_reg_0_i_278/O
-                         net (fo=1, unplaced)         0.449     8.551    bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_1_fu_451/ram_reg_0_i_278_n_5
-                         LUT6 (Prop_lut6_I0_O)        0.124     8.675 r  bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_1_fu_451/ram_reg_0_i_157/O
+                                                      0.885     7.349 r  bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_1_fu_451/ram_reg_0_i_459/O[2]
+                         net (fo=1, unplaced)         0.452     7.801    bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_1_fu_451/ram_reg_0_i_459_n_10
+                         LUT6 (Prop_lut6_I1_O)        0.301     8.102 f  bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_1_fu_451/ram_reg_0_i_297/O
+                         net (fo=1, unplaced)         0.449     8.551    bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_1_fu_451/ram_reg_0_i_297_n_5
+                         LUT6 (Prop_lut6_I0_O)        0.124     8.675 r  bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_1_fu_451/ram_reg_0_i_159/O
                          net (fo=1, unplaced)         0.449     9.124    bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_fu_475/grp_depthwise_conv2d_fix_1_fu_451_input_r_address0[10]
                          LUT6 (Prop_lut6_I3_O)        0.124     9.248 r  bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_fu_475/ram_reg_0_i_48__0/O
                          net (fo=1, unplaced)         0.449     9.697    bd_0_i/hls_inst/inst/grp_padding2d_fix16_fu_495/ram_reg_0_34
@@ -249,7 +249,7 @@ Slack (VIOLATED) :        -0.298ns  (required time - arrival time)
 
                          (clock ap_clk rise edge)    10.000    10.000 r  
                                                       0.000    10.000 r  ap_clk (IN)
-                         net (fo=4036, unset)         0.924    10.924    bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ap_clk
+                         net (fo=3983, unset)         0.924    10.924    bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ap_clk
                          RAMB36E1                                     r  bd_0_i/hls_inst/inst/MemBank_B_U/network_MemBank_B_ram_U/ram_reg_0/CLKARDCLK
                          clock pessimism              0.000    10.924    
                          clock uncertainty           -0.035    10.889    
@@ -286,7 +286,7 @@ Slack (MET) :             0.252ns  (arrival time - required time)
   -------------------------------------------------------------------    -------------------
                          (clock ap_clk rise edge)     0.000     0.000 r  
                                                       0.000     0.000 r  ap_clk (IN)
-                         net (fo=4036, unset)         0.410     0.410    bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_1_fu_451/ap_clk
+                         net (fo=3983, unset)         0.410     0.410    bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_1_fu_451/ap_clk
                          FDRE                                         r  bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_1_fu_451/out_w_0_reg_344_reg[0]/C
   -------------------------------------------------------------------    -------------------
                          FDRE (Prop_fdre_C_Q)         0.164     0.574 r  bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_1_fu_451/out_w_0_reg_344_reg[0]/Q
@@ -298,7 +298,7 @@ Slack (MET) :             0.252ns  (arrival time - required time)
 
                          (clock ap_clk rise edge)     0.000     0.000 r  
                                                       0.000     0.000 r  ap_clk (IN)
-                         net (fo=4036, unset)         0.432     0.432    bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_1_fu_451/ap_clk
+                         net (fo=3983, unset)         0.432     0.432    bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_1_fu_451/ap_clk
                          FDRE                                         r  bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_1_fu_451/out_w_0_mid2_reg_1276_reg[0]/C
                          clock pessimism              0.000     0.432    
                          FDRE (Hold_fdre_C_D)         0.120     0.552    bd_0_i/hls_inst/inst/grp_depthwise_conv2d_fix_1_fu_451/out_w_0_mid2_reg_1276_reg[0]
