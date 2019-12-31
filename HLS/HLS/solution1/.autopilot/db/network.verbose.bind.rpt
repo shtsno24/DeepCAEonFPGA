@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'network'
 ================================================================
-* Date:           Tue Dec 31 13:49:14 2019
+* Date:           Tue Dec 31 16:01:03 2019
 
 * Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
 * Project:        HLS
@@ -20,7 +20,7 @@
     +--------+-------+----------+------------+
     |  Clock | Target| Estimated| Uncertainty|
     +--------+-------+----------+------------+
-    |ap_clk  |   6.67|     6.380|        1.67|
+    |ap_clk  |   7.69|     6.380|        3.08|
     +--------+-------+----------+------------+
 
 + Latency (clock cycles): 
@@ -39,8 +39,8 @@
         |              Instance             |         Module         |   min  |   max  |   min  |   max  |   Type  |
         +-----------------------------------+------------------------+--------+--------+--------+--------+---------+
         |grp_depthwise_conv2d_fix_2_fu_426  |depthwise_conv2d_fix_2  |   15691|   62731|   15691|   62731|   none  |
-        |grp_depthwise_conv2d_fix_1_fu_450  |depthwise_conv2d_fix_1  |    1970|    7850|    1970|    7850|   none  |
-        |grp_depthwise_conv2d_fix_fu_474    |depthwise_conv2d_fix    |    3928|    3928|    3928|    3928|   none  |
+        |grp_depthwise_conv2d_fix_1_fu_450  |depthwise_conv2d_fix_1  |    1971|    7851|    1971|    7851|   none  |
+        |grp_depthwise_conv2d_fix_fu_474    |depthwise_conv2d_fix    |    3929|    3929|    3929|    3929|   none  |
         |grp_pointwise_conv2d_fix_1_fu_482  |pointwise_conv2d_fix_1  |   25337|   25337|   25337|   25337|   none  |
         |grp_pointwise_conv2d_fix_3_fu_488  |pointwise_conv2d_fix_3  |   25457|   25457|   25457|   25457|   none  |
         |grp_pointwise_conv2d_fix_2_fu_494  |pointwise_conv2d_fix_2  |    3321|    3321|    3321|    3321|   none  |
@@ -48,7 +48,7 @@
         |grp_max_pooling2d_fix16_fu_506     |max_pooling2d_fix16     |    1584|   12560|    1584|   12560|   none  |
         |grp_padding2d_fix16_fu_527         |padding2d_fix16         |     113|   15845|     113|   15845|   none  |
         |grp_pointwise_conv2d_fix_fu_545    |pointwise_conv2d_fix    |  150561|  150561|  150561|  150561|   none  |
-        |grp_up_sampling2d_fix16_fu_551     |up_sampling2d_fix16     |    1576|   12552|    1576|   12552|   none  |
+        |grp_up_sampling2d_fix16_fu_551     |up_sampling2d_fix16     |    3143|   25095|    3143|   25095|   none  |
         +-----------------------------------+------------------------+--------+--------+--------+--------+---------+
 
         * Loop: 
@@ -214,8 +214,8 @@ ST_2 : Operation 105 [1/1] (2.55ns)   --->   "%i = add nsw i32 %i_0, 1" [../mnis
 ST_2 : Operation 106 [1/1] (0.00ns)   --->   "%empty_46 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str519, i32 %tmp)" [../mnist_AXI_Stream.cpp:80]   --->   Operation 106 'specregionend' 'empty_46' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 107 [1/1] (0.00ns)   --->   "br i1 %input_data_last_V_tm, label %0, label %hls_label_0" [../mnist_AXI_Stream.cpp:80]   --->   Operation 107 'br' <Predicate = true> <Delay = 0.00>
 
-State 3 <SV = 2> <Delay = 6.14>
-ST_3 : Operation 108 [2/2] (6.14ns)   --->   "call fastcc void @padding2d_fix16(i7 zeroext 1, i6 zeroext 28, i6 zeroext 28, [14400 x i16]* %MemBank_A, [14400 x i16]* %MemBank_B)" [../mnist_AXI_Stream.cpp:87]   --->   Operation 108 'call' <Predicate = true> <Delay = 6.14> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+State 3 <SV = 2> <Delay = 5.75>
+ST_3 : Operation 108 [2/2] (5.75ns)   --->   "call fastcc void @padding2d_fix16(i7 zeroext 1, i6 zeroext 28, i6 zeroext 28, [14400 x i16]* %MemBank_A, [14400 x i16]* %MemBank_B)" [../mnist_AXI_Stream.cpp:87]   --->   Operation 108 'call' <Predicate = true> <Delay = 5.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 4 <SV = 3> <Delay = 0.00>
 ST_4 : Operation 109 [1/2] (0.00ns)   --->   "call fastcc void @padding2d_fix16(i7 zeroext 1, i6 zeroext 28, i6 zeroext 28, [14400 x i16]* %MemBank_A, [14400 x i16]* %MemBank_B)" [../mnist_AXI_Stream.cpp:87]   --->   Operation 109 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
@@ -232,20 +232,20 @@ ST_7 : Operation 112 [2/2] (0.00ns)   --->   "call fastcc void @pointwise_conv2d
 State 8 <SV = 7> <Delay = 0.00>
 ST_8 : Operation 113 [1/2] (0.00ns)   --->   "call fastcc void @pointwise_conv2d_fix([14400 x i16]* %MemBank_A, [14400 x i16]* %MemBank_B)" [../mnist_AXI_Stream.cpp:96]   --->   Operation 113 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
-State 9 <SV = 8> <Delay = 5.00>
-ST_9 : Operation 114 [2/2] (5.00ns)   --->   "call fastcc void @max_pooling2d_fix16(i7 zeroext 28, i6 zeroext 28, [14400 x i16]* %MemBank_B, i6 zeroext 16, i5 zeroext 14, i5 zeroext 14, [14400 x i16]* %MemBank_A)" [../mnist_AXI_Stream.cpp:101]   --->   Operation 114 'call' <Predicate = true> <Delay = 5.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+State 9 <SV = 8> <Delay = 4.61>
+ST_9 : Operation 114 [2/2] (4.61ns)   --->   "call fastcc void @max_pooling2d_fix16(i7 zeroext 28, i6 zeroext 28, [14400 x i16]* %MemBank_B, i6 zeroext 16, i5 zeroext 14, i5 zeroext 14, [14400 x i16]* %MemBank_A)" [../mnist_AXI_Stream.cpp:101]   --->   Operation 114 'call' <Predicate = true> <Delay = 4.61> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 10 <SV = 9> <Delay = 0.00>
 ST_10 : Operation 115 [1/2] (0.00ns)   --->   "call fastcc void @max_pooling2d_fix16(i7 zeroext 28, i6 zeroext 28, [14400 x i16]* %MemBank_B, i6 zeroext 16, i5 zeroext 14, i5 zeroext 14, [14400 x i16]* %MemBank_A)" [../mnist_AXI_Stream.cpp:101]   --->   Operation 115 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
-State 11 <SV = 10> <Delay = 6.14>
-ST_11 : Operation 116 [2/2] (6.14ns)   --->   "call fastcc void @padding2d_fix16(i7 zeroext 16, i6 zeroext 14, i6 zeroext 14, [14400 x i16]* %MemBank_A, [14400 x i16]* %MemBank_B)" [../mnist_AXI_Stream.cpp:105]   --->   Operation 116 'call' <Predicate = true> <Delay = 6.14> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+State 11 <SV = 10> <Delay = 5.75>
+ST_11 : Operation 116 [2/2] (5.75ns)   --->   "call fastcc void @padding2d_fix16(i7 zeroext 16, i6 zeroext 14, i6 zeroext 14, [14400 x i16]* %MemBank_A, [14400 x i16]* %MemBank_B)" [../mnist_AXI_Stream.cpp:105]   --->   Operation 116 'call' <Predicate = true> <Delay = 5.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 12 <SV = 11> <Delay = 0.00>
 ST_12 : Operation 117 [1/2] (0.00ns)   --->   "call fastcc void @padding2d_fix16(i7 zeroext 16, i6 zeroext 14, i6 zeroext 14, [14400 x i16]* %MemBank_A, [14400 x i16]* %MemBank_B)" [../mnist_AXI_Stream.cpp:105]   --->   Operation 117 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
-State 13 <SV = 12> <Delay = 5.00>
-ST_13 : Operation 118 [2/2] (5.00ns)   --->   "call fastcc void @depthwise_conv2d_fix.2(i7 16, i6 16, [14400 x i16]* %MemBank_B, i6 14, i6 14, [14400 x i16]* %MemBank_A, [16 x i16]* @SeparableConv2D_1_b_s, [144 x i16]* @SeparableConv2D_1_w_s)" [../mnist_AXI_Stream.cpp:109]   --->   Operation 118 'call' <Predicate = true> <Delay = 5.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+State 13 <SV = 12> <Delay = 4.61>
+ST_13 : Operation 118 [2/2] (4.61ns)   --->   "call fastcc void @depthwise_conv2d_fix.2(i7 16, i6 16, [14400 x i16]* %MemBank_B, i6 14, i6 14, [14400 x i16]* %MemBank_A, [16 x i16]* @SeparableConv2D_1_b_s, [144 x i16]* @SeparableConv2D_1_w_s)" [../mnist_AXI_Stream.cpp:109]   --->   Operation 118 'call' <Predicate = true> <Delay = 4.61> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 14 <SV = 13> <Delay = 0.00>
 ST_14 : Operation 119 [1/2] (0.00ns)   --->   "call fastcc void @depthwise_conv2d_fix.2(i7 16, i6 16, [14400 x i16]* %MemBank_B, i6 14, i6 14, [14400 x i16]* %MemBank_A, [16 x i16]* @SeparableConv2D_1_b_s, [144 x i16]* @SeparableConv2D_1_w_s)" [../mnist_AXI_Stream.cpp:109]   --->   Operation 119 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
@@ -256,14 +256,14 @@ ST_15 : Operation 120 [2/2] (0.00ns)   --->   "call fastcc void @pointwise_conv2
 State 16 <SV = 15> <Delay = 0.00>
 ST_16 : Operation 121 [1/2] (0.00ns)   --->   "call fastcc void @pointwise_conv2d_fix.1([14400 x i16]* %MemBank_A, [14400 x i16]* %MemBank_B)" [../mnist_AXI_Stream.cpp:114]   --->   Operation 121 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
-State 17 <SV = 16> <Delay = 5.00>
-ST_17 : Operation 122 [2/2] (5.00ns)   --->   "call fastcc void @max_pooling2d_fix16(i7 zeroext 14, i6 zeroext 14, [14400 x i16]* %MemBank_B, i6 zeroext 8, i5 zeroext 7, i5 zeroext 7, [14400 x i16]* %MemBank_A)" [../mnist_AXI_Stream.cpp:119]   --->   Operation 122 'call' <Predicate = true> <Delay = 5.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+State 17 <SV = 16> <Delay = 4.61>
+ST_17 : Operation 122 [2/2] (4.61ns)   --->   "call fastcc void @max_pooling2d_fix16(i7 zeroext 14, i6 zeroext 14, [14400 x i16]* %MemBank_B, i6 zeroext 8, i5 zeroext 7, i5 zeroext 7, [14400 x i16]* %MemBank_A)" [../mnist_AXI_Stream.cpp:119]   --->   Operation 122 'call' <Predicate = true> <Delay = 4.61> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 18 <SV = 17> <Delay = 0.00>
 ST_18 : Operation 123 [1/2] (0.00ns)   --->   "call fastcc void @max_pooling2d_fix16(i7 zeroext 14, i6 zeroext 14, [14400 x i16]* %MemBank_B, i6 zeroext 8, i5 zeroext 7, i5 zeroext 7, [14400 x i16]* %MemBank_A)" [../mnist_AXI_Stream.cpp:119]   --->   Operation 123 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
-State 19 <SV = 18> <Delay = 6.14>
-ST_19 : Operation 124 [2/2] (6.14ns)   --->   "call fastcc void @padding2d_fix16(i7 zeroext 8, i6 zeroext 7, i6 zeroext 7, [14400 x i16]* %MemBank_A, [14400 x i16]* %MemBank_B)" [../mnist_AXI_Stream.cpp:123]   --->   Operation 124 'call' <Predicate = true> <Delay = 6.14> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+State 19 <SV = 18> <Delay = 5.75>
+ST_19 : Operation 124 [2/2] (5.75ns)   --->   "call fastcc void @padding2d_fix16(i7 zeroext 8, i6 zeroext 7, i6 zeroext 7, [14400 x i16]* %MemBank_A, [14400 x i16]* %MemBank_B)" [../mnist_AXI_Stream.cpp:123]   --->   Operation 124 'call' <Predicate = true> <Delay = 5.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 20 <SV = 19> <Delay = 0.00>
 ST_20 : Operation 125 [1/2] (0.00ns)   --->   "call fastcc void @padding2d_fix16(i7 zeroext 8, i6 zeroext 7, i6 zeroext 7, [14400 x i16]* %MemBank_A, [14400 x i16]* %MemBank_B)" [../mnist_AXI_Stream.cpp:123]   --->   Operation 125 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
@@ -280,14 +280,14 @@ ST_23 : Operation 128 [2/2] (0.00ns)   --->   "call fastcc void @pointwise_conv2
 State 24 <SV = 23> <Delay = 0.00>
 ST_24 : Operation 129 [1/2] (0.00ns)   --->   "call fastcc void @pointwise_conv2d_fix.2([14400 x i16]* %MemBank_A, [14400 x i16]* %MemBank_B)" [../mnist_AXI_Stream.cpp:132]   --->   Operation 129 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
-State 25 <SV = 24> <Delay = 5.00>
-ST_25 : Operation 130 [2/2] (5.00ns)   --->   "call fastcc void @up_sampling2d_fix16(i5 zeroext 7, i5 zeroext 7, [14400 x i16]* %MemBank_B, i6 zeroext 8, i6 zeroext 14, i6 zeroext 14, [14400 x i16]* %MemBank_A)" [../mnist_AXI_Stream.cpp:137]   --->   Operation 130 'call' <Predicate = true> <Delay = 5.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+State 25 <SV = 24> <Delay = 4.61>
+ST_25 : Operation 130 [2/2] (4.61ns)   --->   "call fastcc void @up_sampling2d_fix16(i5 zeroext 7, i5 zeroext 7, [14400 x i16]* %MemBank_B, i6 zeroext 8, i6 zeroext 14, i6 zeroext 14, [14400 x i16]* %MemBank_A)" [../mnist_AXI_Stream.cpp:137]   --->   Operation 130 'call' <Predicate = true> <Delay = 4.61> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 26 <SV = 25> <Delay = 0.00>
 ST_26 : Operation 131 [1/2] (0.00ns)   --->   "call fastcc void @up_sampling2d_fix16(i5 zeroext 7, i5 zeroext 7, [14400 x i16]* %MemBank_B, i6 zeroext 8, i6 zeroext 14, i6 zeroext 14, [14400 x i16]* %MemBank_A)" [../mnist_AXI_Stream.cpp:137]   --->   Operation 131 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
-State 27 <SV = 26> <Delay = 6.14>
-ST_27 : Operation 132 [2/2] (6.14ns)   --->   "call fastcc void @padding2d_fix16(i7 zeroext 8, i6 zeroext 14, i6 zeroext 14, [14400 x i16]* %MemBank_A, [14400 x i16]* %MemBank_B)" [../mnist_AXI_Stream.cpp:141]   --->   Operation 132 'call' <Predicate = true> <Delay = 6.14> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+State 27 <SV = 26> <Delay = 5.75>
+ST_27 : Operation 132 [2/2] (5.75ns)   --->   "call fastcc void @padding2d_fix16(i7 zeroext 8, i6 zeroext 14, i6 zeroext 14, [14400 x i16]* %MemBank_A, [14400 x i16]* %MemBank_B)" [../mnist_AXI_Stream.cpp:141]   --->   Operation 132 'call' <Predicate = true> <Delay = 5.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 28 <SV = 27> <Delay = 0.00>
 ST_28 : Operation 133 [1/2] (0.00ns)   --->   "call fastcc void @padding2d_fix16(i7 zeroext 8, i6 zeroext 14, i6 zeroext 14, [14400 x i16]* %MemBank_A, [14400 x i16]* %MemBank_B)" [../mnist_AXI_Stream.cpp:141]   --->   Operation 133 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
@@ -304,20 +304,20 @@ ST_31 : Operation 136 [2/2] (0.00ns)   --->   "call fastcc void @pointwise_conv2
 State 32 <SV = 31> <Delay = 0.00>
 ST_32 : Operation 137 [1/2] (0.00ns)   --->   "call fastcc void @pointwise_conv2d_fix.3([14400 x i16]* %MemBank_A, [14400 x i16]* %MemBank_B)" [../mnist_AXI_Stream.cpp:150]   --->   Operation 137 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
-State 33 <SV = 32> <Delay = 5.00>
-ST_33 : Operation 138 [2/2] (5.00ns)   --->   "call fastcc void @up_sampling2d_fix16(i5 zeroext 14, i5 zeroext 14, [14400 x i16]* %MemBank_B, i6 zeroext 16, i6 zeroext 28, i6 zeroext 28, [14400 x i16]* %MemBank_A)" [../mnist_AXI_Stream.cpp:155]   --->   Operation 138 'call' <Predicate = true> <Delay = 5.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+State 33 <SV = 32> <Delay = 4.61>
+ST_33 : Operation 138 [2/2] (4.61ns)   --->   "call fastcc void @up_sampling2d_fix16(i5 zeroext 14, i5 zeroext 14, [14400 x i16]* %MemBank_B, i6 zeroext 16, i6 zeroext 28, i6 zeroext 28, [14400 x i16]* %MemBank_A)" [../mnist_AXI_Stream.cpp:155]   --->   Operation 138 'call' <Predicate = true> <Delay = 4.61> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 34 <SV = 33> <Delay = 0.00>
 ST_34 : Operation 139 [1/2] (0.00ns)   --->   "call fastcc void @up_sampling2d_fix16(i5 zeroext 14, i5 zeroext 14, [14400 x i16]* %MemBank_B, i6 zeroext 16, i6 zeroext 28, i6 zeroext 28, [14400 x i16]* %MemBank_A)" [../mnist_AXI_Stream.cpp:155]   --->   Operation 139 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
-State 35 <SV = 34> <Delay = 6.14>
-ST_35 : Operation 140 [2/2] (6.14ns)   --->   "call fastcc void @padding2d_fix16(i7 zeroext 16, i6 zeroext 28, i6 zeroext 28, [14400 x i16]* %MemBank_A, [14400 x i16]* %MemBank_B)" [../mnist_AXI_Stream.cpp:159]   --->   Operation 140 'call' <Predicate = true> <Delay = 6.14> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+State 35 <SV = 34> <Delay = 5.75>
+ST_35 : Operation 140 [2/2] (5.75ns)   --->   "call fastcc void @padding2d_fix16(i7 zeroext 16, i6 zeroext 28, i6 zeroext 28, [14400 x i16]* %MemBank_A, [14400 x i16]* %MemBank_B)" [../mnist_AXI_Stream.cpp:159]   --->   Operation 140 'call' <Predicate = true> <Delay = 5.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 36 <SV = 35> <Delay = 0.00>
 ST_36 : Operation 141 [1/2] (0.00ns)   --->   "call fastcc void @padding2d_fix16(i7 zeroext 16, i6 zeroext 28, i6 zeroext 28, [14400 x i16]* %MemBank_A, [14400 x i16]* %MemBank_B)" [../mnist_AXI_Stream.cpp:159]   --->   Operation 141 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
-State 37 <SV = 36> <Delay = 5.00>
-ST_37 : Operation 142 [2/2] (5.00ns)   --->   "call fastcc void @depthwise_conv2d_fix.2(i7 30, i6 30, [14400 x i16]* %MemBank_B, i6 28, i6 28, [14400 x i16]* %MemBank_A, [16 x i16]* @SeparableConv2D_4_b_s, [144 x i16]* @SeparableConv2D_4_w_s)" [../mnist_AXI_Stream.cpp:163]   --->   Operation 142 'call' <Predicate = true> <Delay = 5.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+State 37 <SV = 36> <Delay = 4.61>
+ST_37 : Operation 142 [2/2] (4.61ns)   --->   "call fastcc void @depthwise_conv2d_fix.2(i7 30, i6 30, [14400 x i16]* %MemBank_B, i6 28, i6 28, [14400 x i16]* %MemBank_A, [16 x i16]* @SeparableConv2D_4_b_s, [144 x i16]* @SeparableConv2D_4_w_s)" [../mnist_AXI_Stream.cpp:163]   --->   Operation 142 'call' <Predicate = true> <Delay = 4.61> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 38 <SV = 37> <Delay = 0.00>
 ST_38 : Operation 143 [1/2] (0.00ns)   --->   "call fastcc void @depthwise_conv2d_fix.2(i7 30, i6 30, [14400 x i16]* %MemBank_B, i6 28, i6 28, [14400 x i16]* %MemBank_A, [16 x i16]* @SeparableConv2D_4_b_s, [144 x i16]* @SeparableConv2D_4_w_s)" [../mnist_AXI_Stream.cpp:163]   --->   Operation 143 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
@@ -2923,17 +2923,17 @@ ret_ln209              (ret              ) [ 00000000000000000000000000000000000
 |----------|-----------------------------------|---------|---------|---------|---------|
 | Operation|          Functional Unit          |  DSP48E |  Delay  |    FF   |   LUT   |
 |----------|-----------------------------------|---------|---------|---------|---------|
-|          | grp_depthwise_conv2d_fix_2_fu_426 |    10   | 16.9494 |   1397  |   1322  |
-|          | grp_depthwise_conv2d_fix_1_fu_450 |    10   | 20.4874 |   1200  |   1157  |
-|          |  grp_depthwise_conv2d_fix_fu_474  |    9    | 16.9494 |   1017  |   977   |
-|          | grp_pointwise_conv2d_fix_1_fu_482 |    3    |  5.307  |   1137  |   658   |
-|          | grp_pointwise_conv2d_fix_3_fu_488 |    3    |  7.076  |   1089  |   653   |
-|   call   | grp_pointwise_conv2d_fix_2_fu_494 |    3    |  5.307  |   1056  |   636   |
-|          | grp_pointwise_conv2d_fix_4_fu_500 |    3    |  7.076  |   1076  |   528   |
+|          | grp_depthwise_conv2d_fix_2_fu_426 |    10   | 16.9494 |   1413  |   1322  |
+|          | grp_depthwise_conv2d_fix_1_fu_450 |    10   | 16.9494 |   1284  |   1139  |
+|          |  grp_depthwise_conv2d_fix_fu_474  |    9    | 18.7184 |   1140  |   986   |
+|          | grp_pointwise_conv2d_fix_1_fu_482 |    3    |  3.538  |   1154  |   649   |
+|          | grp_pointwise_conv2d_fix_3_fu_488 |    3    |  5.307  |   1107  |   644   |
+|   call   | grp_pointwise_conv2d_fix_2_fu_494 |    3    |  5.307  |   1067  |   636   |
+|          | grp_pointwise_conv2d_fix_4_fu_500 |    3    |  5.307  |   1065  |   519   |
 |          |   grp_max_pooling2d_fix16_fu_506  |    1    | 16.3364 |   536   |   838   |
 |          |     grp_padding2d_fix16_fu_527    |    0    | 8.98225 |   640   |   672   |
 |          |  grp_pointwise_conv2d_fix_fu_545  |    2    |  7.076  |   558   |   407   |
-|          |   grp_up_sampling2d_fix16_fu_551  |    3    |  1.769  |   312   |   385   |
+|          |   grp_up_sampling2d_fix16_fu_551  |    3    |  10.614 |   300   |   430   |
 |----------|-----------------------------------|---------|---------|---------|---------|
 |          |              i_fu_618             |    0    |    0    |    0    |    39   |
 |    add   |             i_3_fu_630            |    0    |    0    |    0    |    14   |
@@ -2959,7 +2959,7 @@ ret_ln209              (ret              ) [ 00000000000000000000000000000000000
 |   zext   |         zext_ln176_fu_636         |    0    |    0    |    0    |    0    |
 |          |         zext_ln200_fu_653         |    0    |    0    |    0    |    0    |
 |----------|-----------------------------------|---------|---------|---------|---------|
-|   Total  |                                   |    47   | 113.316 |  10018  |   8326  |
+|   Total  |                                   |    47   | 115.085 |  10264  |   8335  |
 |----------|-----------------------------------|---------|---------|---------|---------|
 
 Memories:
@@ -3075,10 +3075,10 @@ Memories:
 +-----------+--------+--------+--------+--------+--------+--------+
 |           |  BRAM  | DSP48E |  Delay |   FF   |   LUT  |  URAM  |
 +-----------+--------+--------+--------+--------+--------+--------+
-|  Function |    -   |   47   |   113  |  10018 |  8326  |    -   |
+|  Function |    -   |   47   |   115  |  10264 |  8335  |    -   |
 |   Memory  |   39   |    -   |    -   |   166  |   67   |    0   |
 |Multiplexer|    -   |    -   |   71   |    -   |   213  |    -   |
 |  Register |    -   |    -   |    -   |   294  |    -   |    -   |
 +-----------+--------+--------+--------+--------+--------+--------+
-|   Total   |   39   |   47   |   184  |  10478 |  8606  |    0   |
+|   Total   |   39   |   47   |   186  |  10724 |  8615  |    0   |
 +-----------+--------+--------+--------+--------+--------+--------+

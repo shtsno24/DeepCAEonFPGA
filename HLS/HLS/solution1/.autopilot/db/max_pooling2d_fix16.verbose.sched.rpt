@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'max_pooling2d_fix16'
 ================================================================
-* Date:           Tue Dec 31 13:49:09 2019
+* Date:           Tue Dec 31 16:00:59 2019
 
 * Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
 * Project:        HLS
@@ -20,7 +20,7 @@
     +--------+-------+----------+------------+
     |  Clock | Target| Estimated| Uncertainty|
     +--------+-------+----------+------------+
-    |ap_clk  |   6.67|     6.380|        1.67|
+    |ap_clk  |   7.69|     6.380|        3.08|
     +--------+-------+----------+------------+
 
 + Latency (clock cycles): 
@@ -280,7 +280,7 @@ ST_21 : Operation 152 [1/1] (0.00ns)   --->   "ret void"   --->   Operation 152 
 ============================================================
 + Verbose Summary: Timing violations
 ============================================================
-Target clock period: 6.67ns, clock uncertainty: 1.67ns.
+Target clock period: 7.69ns, clock uncertainty: 3.08ns.
 
  <State 1>: 2.34ns
 The critical path consists of the following:

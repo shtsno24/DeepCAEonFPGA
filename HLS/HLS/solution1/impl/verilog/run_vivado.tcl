@@ -13,7 +13,7 @@ set hlsSolutionName solution1
 set outputDir ./report 
 set top_inst_name $top_module
 set error_if_impl_timing_fails false
-set target_clk_period_ns "6.667"
+set target_clk_period_ns "7.692"
 file mkdir $outputDir
 
 create_project $vivadoProjectName $vivadoProjectDir -part $targetPart -force

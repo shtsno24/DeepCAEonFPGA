@@ -9,8 +9,8 @@
 <ProductFamily>zynq</ProductFamily>
 <Part>xc7z020-clg400-1</Part>
 <TopModelName>pointwise_conv2d_fix_3</TopModelName>
-<TargetClockPeriod>6.67</TargetClockPeriod>
-<ClockUncertainty>1.67</ClockUncertainty>
+<TargetClockPeriod>7.69</TargetClockPeriod>
+<ClockUncertainty>3.08</ClockUncertainty>
 </UserAssignments>
 
 <PerformanceEstimates>
@@ -52,8 +52,8 @@
 <Resources>
 <BRAM_18K>0</BRAM_18K>
 <DSP48E>3</DSP48E>
-<FF>1417</FF>
-<LUT>1023</LUT>
+<FF>1438</FF>
+<LUT>1014</LUT>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>

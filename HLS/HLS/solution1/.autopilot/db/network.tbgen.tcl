@@ -263,7 +263,7 @@ set RtlHierarchyInfo {[
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "1970", "EstimateLatencyMax" : "7850",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "1971", "EstimateLatencyMax" : "7851",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -295,7 +295,7 @@ set RtlHierarchyInfo {[
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "3928", "EstimateLatencyMax" : "3928",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "3929", "EstimateLatencyMax" : "3929",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -465,7 +465,7 @@ set RtlHierarchyInfo {[
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "1576", "EstimateLatencyMax" : "12552",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "3143", "EstimateLatencyMax" : "25095",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -522,15 +522,15 @@ set ArgLastReadFirstWriteLatency {
 	depthwise_conv2d_fix_1 {
 		input_height {Type I LastRead 0 FirstWrite -1}
 		input_width {Type I LastRead 0 FirstWrite -1}
-		input_r {Type I LastRead 10 FirstWrite -1}
+		input_r {Type I LastRead 11 FirstWrite -1}
 		output_height {Type I LastRead 0 FirstWrite -1}
 		output_width {Type I LastRead 0 FirstWrite -1}
-		output_r {Type O LastRead -1 FirstWrite 14}
+		output_r {Type O LastRead -1 FirstWrite 15}
 		bias {Type I LastRead 7 FirstWrite -1}
 		kernel {Type I LastRead 7 FirstWrite -1}}
 	depthwise_conv2d_fix {
-		input_r {Type I LastRead 8 FirstWrite -1}
-		output_r {Type O LastRead -1 FirstWrite 12}
+		input_r {Type I LastRead 9 FirstWrite -1}
+		output_r {Type O LastRead -1 FirstWrite 13}
 		SeparableConv2D_0_w_s {Type I LastRead -1 FirstWrite -1}}
 	pointwise_conv2d_fix_1 {
 		input_r {Type I LastRead 7 FirstWrite -1}

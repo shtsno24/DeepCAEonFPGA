@@ -2732,10 +2732,10 @@
 					<item>246</item>
 				</oprand_edges>
 				<opcode>icmp</opcode>
-				<m_Display>0</m_Display>
+				<m_Display>1</m_Display>
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_isLCDNode>1</m_isLCDNode>
+				<m_isStartOfPath>1</m_isStartOfPath>
 				<m_delay>1.30</m_delay>
 				<m_topoIndex>37</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
@@ -4787,10 +4787,10 @@
 					<item>330</item>
 				</oprand_edges>
 				<opcode>load</opcode>
-				<m_Display>1</m_Display>
+				<m_Display>0</m_Display>
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>1</m_isLCDNode>
-				<m_isStartOfPath>1</m_isStartOfPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>3.25</m_delay>
 				<m_topoIndex>78</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
@@ -5227,10 +5227,10 @@
 					<item>347</item>
 				</oprand_edges>
 				<opcode>load</opcode>
-				<m_Display>0</m_Display>
+				<m_Display>1</m_Display>
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_isLCDNode>1</m_isLCDNode>
+				<m_isStartOfPath>1</m_isStartOfPath>
 				<m_delay>3.25</m_delay>
 				<m_topoIndex>88</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
@@ -5711,15 +5711,16 @@
 					<bitwidth>4</bitwidth>
 				</Value>
 				<oprand_edges>
-					<count>2</count>
+					<count>3</count>
 					<item_version>0</item_version>
 					<item>366</item>
 					<item>367</item>
+					<item>2147483647</item>
 				</oprand_edges>
 				<opcode>add</opcode>
-				<m_Display>0</m_Display>
+				<m_Display>1</m_Display>
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
+				<m_isLCDNode>1</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>1.73</m_delay>
 				<m_topoIndex>67</m_topoIndex>
@@ -6373,7 +6374,7 @@
 			</item>
 		</blocks>
 		<edges class_id="19" tracking_level="0" version="0">
-			<count>220</count>
+			<count>221</count>
 			<item_version>0</item_version>
 			<item class_id="20" tracking_level="1" version="0" object_id="_140">
 				<id>138</id>
@@ -7915,12 +7916,19 @@
 				<sink_obj>50</sink_obj>
 				<is_back_edge>1</is_back_edge>
 			</item>
+			<item class_id_reference="20" object_id="_360">
+				<id>2147483647</id>
+				<edge_type>1</edge_type>
+				<source_obj>129</source_obj>
+				<sink_obj>65</sink_obj>
+				<is_back_edge>1</is_back_edge>
+			</item>
 		</edges>
 	</cdfg>
 	<cdfg_regions class_id="21" tracking_level="0" version="0">
 		<count>4</count>
 		<item_version>0</item_version>
-		<item class_id="22" tracking_level="1" version="0" object_id="_360">
+		<item class_id="22" tracking_level="1" version="0" object_id="_361">
 			<mId>1</mId>
 			<mTag>max_pooling2d_fix16</mTag>
 			<mType>0</mType>
@@ -7944,7 +7952,7 @@
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
-		<item class_id_reference="22" object_id="_361">
+		<item class_id_reference="22" object_id="_362">
 			<mId>2</mId>
 			<mTag>Entry</mTag>
 			<mType>0</mType>
@@ -7966,7 +7974,7 @@
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
-		<item class_id_reference="22" object_id="_362">
+		<item class_id_reference="22" object_id="_363">
 			<mId>3</mId>
 			<mTag>Loop 1</mTag>
 			<mType>1</mType>
@@ -7989,7 +7997,7 @@
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
-		<item class_id_reference="22" object_id="_363">
+		<item class_id_reference="22" object_id="_364">
 			<mId>4</mId>
 			<mTag>Return</mTag>
 			<mType>0</mType>
@@ -8872,7 +8880,7 @@
 	<regions class_id="32" tracking_level="0" version="0">
 		<count>1</count>
 		<item_version>0</item_version>
-		<item class_id="33" tracking_level="1" version="0" object_id="_364">
+		<item class_id="33" tracking_level="1" version="0" object_id="_365">
 			<region_name>Loop 1</region_name>
 			<basic_blocks>
 				<count>2</count>

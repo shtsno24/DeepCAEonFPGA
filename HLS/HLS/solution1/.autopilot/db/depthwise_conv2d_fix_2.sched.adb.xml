@@ -663,27 +663,11 @@ hls_label_2:11  %add_ln27_1 = add i8 %zext_ln27_2, %zext_ln27_3
 ]]></Node>
 <StgValue><ssdm name="add_ln27_1"/></StgValue>
 </operation>
-
-<operation id="54" st_id="2" stage="1" lat="1">
-<core>Sel</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln23" val="0"/>
-</and_exp></or_exp>
-</condition>
-
-<Node id="60" bw="8" op_0_bw="1" op_1_bw="8" op_2_bw="8">
-<![CDATA[
-hls_label_2:12  %select_ln24_1 = select i1 %icmp_ln32, i8 %add_ln27_1, i8 %add_ln27
-
-]]></Node>
-<StgValue><ssdm name="select_ln24_1"/></StgValue>
-</operation>
 </state>
 
 <state id="3" st_id="3">
 
-<operation id="55" st_id="3" stage="1" lat="1">
+<operation id="54" st_id="3" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -698,7 +682,7 @@ hls_label_2:12  %select_ln24_1 = select i1 %icmp_ln32, i8 %add_ln27_1, i8 %add_l
 <StgValue><ssdm name="out_h_0"/></StgValue>
 </operation>
 
-<operation id="56" st_id="3" stage="1" lat="1">
+<operation id="55" st_id="3" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -713,7 +697,7 @@ hls_label_2:12  %select_ln24_1 = select i1 %icmp_ln32, i8 %add_ln27_1, i8 %add_l
 <StgValue><ssdm name="out_w_0"/></StgValue>
 </operation>
 
-<operation id="57" st_id="3" stage="1" lat="1">
+<operation id="56" st_id="3" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -728,7 +712,7 @@ hls_label_2:12  %select_ln24_1 = select i1 %icmp_ln32, i8 %add_ln27_1, i8 %add_l
 <StgValue><ssdm name="specpipeline_ln24"/></StgValue>
 </operation>
 
-<operation id="58" st_id="3" stage="1" lat="1">
+<operation id="57" st_id="3" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -743,7 +727,7 @@ hls_label_2:12  %select_ln24_1 = select i1 %icmp_ln32, i8 %add_ln27_1, i8 %add_l
 <StgValue><ssdm name="zext_ln40_2_cast"/></StgValue>
 </operation>
 
-<operation id="59" st_id="3" stage="1" lat="1">
+<operation id="58" st_id="3" stage="1" lat="1">
 <core>AddSub</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -759,7 +743,7 @@ hls_label_2:12  %select_ln24_1 = select i1 %icmp_ln32, i8 %add_ln27_1, i8 %add_l
 <StgValue><ssdm name="tmp_0_0"/></StgValue>
 </operation>
 
-<operation id="60" st_id="3" stage="1" lat="1">
+<operation id="59" st_id="3" stage="1" lat="1">
 <core>AddSub</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -775,7 +759,7 @@ hls_label_2:12  %select_ln24_1 = select i1 %icmp_ln32, i8 %add_ln27_1, i8 %add_l
 <StgValue><ssdm name="tmp11"/></StgValue>
 </operation>
 
-<operation id="61" st_id="3" stage="1" lat="1">
+<operation id="60" st_id="3" stage="1" lat="1">
 <core>AddSub</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -790,7 +774,7 @@ hls_label_2:12  %select_ln24_1 = select i1 %icmp_ln32, i8 %add_ln27_1, i8 %add_l
 <StgValue><ssdm name="add_ln23"/></StgValue>
 </operation>
 
-<operation id="62" st_id="3" stage="1" lat="1">
+<operation id="61" st_id="3" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -805,7 +789,7 @@ hls_label_2:12  %select_ln24_1 = select i1 %icmp_ln32, i8 %add_ln27_1, i8 %add_l
 <StgValue><ssdm name="br_ln23"/></StgValue>
 </operation>
 
-<operation id="63" st_id="3" stage="1" lat="1">
+<operation id="62" st_id="3" stage="1" lat="1">
 <core>Sel</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -821,7 +805,7 @@ hls_label_2:4  %select_ln24 = select i1 %icmp_ln32, i5 0, i5 %out_h_0
 <StgValue><ssdm name="select_ln24"/></StgValue>
 </operation>
 
-<operation id="64" st_id="3" stage="1" lat="1">
+<operation id="63" st_id="3" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -835,6 +819,22 @@ hls_label_2:6  %zext_ln48_2 = zext i5 %out_d to i9
 
 ]]></Node>
 <StgValue><ssdm name="zext_ln48_2"/></StgValue>
+</operation>
+
+<operation id="64" st_id="3" stage="1" lat="1">
+<core>Sel</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp><literal name="icmp_ln23" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<Node id="60" bw="8" op_0_bw="1" op_1_bw="8" op_2_bw="8">
+<![CDATA[
+hls_label_2:12  %select_ln24_1 = select i1 %icmp_ln32, i8 %add_ln27_1, i8 %add_ln27
+
+]]></Node>
+<StgValue><ssdm name="select_ln24_1"/></StgValue>
 </operation>
 
 <operation id="65" st_id="3" stage="1" lat="1">

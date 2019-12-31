@@ -3,8 +3,8 @@
 -- Tool Version: Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
 -- Date        : Tue Dec 31 14:55:47 2019
 -- Host        : shts-server running 64-bit Ubuntu 18.04.3 LTS
--- Command     : write_vhdl -force -mode synth_stub
---               /home/shts/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_s00_data_fifo_0/design_1_s00_data_fifo_0_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top design_1_s00_data_fifo_0 -prefix
+--               design_1_s00_data_fifo_0_ design_1_s00_data_fifo_0_stub.vhdl
 -- Design      : design_1_s00_data_fifo_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z020clg400-1

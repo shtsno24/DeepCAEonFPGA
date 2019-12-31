@@ -99,10 +99,10 @@ void design_1_s00_data_fifo_0::before_end_of_elaboration()
     S_AXI_transactor_param_props.addLong("NUM_WRITE_THREADS", "4");
     S_AXI_transactor_param_props.addLong("RUSER_BITS_PER_BYTE", "0");
     S_AXI_transactor_param_props.addLong("WUSER_BITS_PER_BYTE", "0");
-    S_AXI_transactor_param_props.addFloat("PHASE", "0.000");
+    S_AXI_transactor_param_props.addFloat("PHASE", "0.0");
     S_AXI_transactor_param_props.addString("PROTOCOL", "AXI4LITE");
     S_AXI_transactor_param_props.addString("READ_WRITE_MODE", "READ_WRITE");
-    S_AXI_transactor_param_props.addString("CLK_DOMAIN", "design_1_processing_system7_0_0_FCLK_CLK0");
+    S_AXI_transactor_param_props.addString("CLK_DOMAIN", "/clk_wiz_0_clk_out1");
     mp_S_AXI_transactor = new xtlm::xaximm_pin2xtlm_t<32,32,1,1,1,1,1,1>("S_AXI_transactor", S_AXI_transactor_param_props);
     mp_S_AXI_transactor->AWADDR(s_axi_awaddr);
     mp_S_AXI_transactor->AWPROT(s_axi_awprot);
@@ -160,10 +160,10 @@ void design_1_s00_data_fifo_0::before_end_of_elaboration()
     M_AXI_transactor_param_props.addLong("NUM_WRITE_THREADS", "4");
     M_AXI_transactor_param_props.addLong("RUSER_BITS_PER_BYTE", "0");
     M_AXI_transactor_param_props.addLong("WUSER_BITS_PER_BYTE", "0");
-    M_AXI_transactor_param_props.addFloat("PHASE", "0.000");
+    M_AXI_transactor_param_props.addFloat("PHASE", "0.0");
     M_AXI_transactor_param_props.addString("PROTOCOL", "AXI4LITE");
     M_AXI_transactor_param_props.addString("READ_WRITE_MODE", "READ_WRITE");
-    M_AXI_transactor_param_props.addString("CLK_DOMAIN", "design_1_processing_system7_0_0_FCLK_CLK0");
+    M_AXI_transactor_param_props.addString("CLK_DOMAIN", "/clk_wiz_0_clk_out1");
     mp_M_AXI_transactor = new xtlm::xaximm_xtlm2pin_t<32,32,1,1,1,1,1,1>("M_AXI_transactor", M_AXI_transactor_param_props);
     mp_M_AXI_transactor->AWADDR(m_axi_awaddr);
     mp_M_AXI_transactor->AWPROT(m_axi_awprot);

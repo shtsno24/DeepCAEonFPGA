@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'network'" level="0">
-<item name = "Date">Tue Dec 31 13:49:14 2019
+<item name = "Date">Tue Dec 31 16:01:03 2019
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">HLS</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">6.67, 6.380, 1.67</column>
+<column name="ap_clk">7.69, 6.380, 3.08</column>
 </table>
 </item>
 </section>
@@ -32,8 +32,8 @@
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="7">Instance, Module, min, max, min, max, Type</keys>
 <column name="grp_depthwise_conv2d_fix_2_fu_426">depthwise_conv2d_fix_2, 15691, 62731, 15691, 62731, none</column>
-<column name="grp_depthwise_conv2d_fix_1_fu_450">depthwise_conv2d_fix_1, 1970, 7850, 1970, 7850, none</column>
-<column name="grp_depthwise_conv2d_fix_fu_474">depthwise_conv2d_fix, 3928, 3928, 3928, 3928, none</column>
+<column name="grp_depthwise_conv2d_fix_1_fu_450">depthwise_conv2d_fix_1, 1971, 7851, 1971, 7851, none</column>
+<column name="grp_depthwise_conv2d_fix_fu_474">depthwise_conv2d_fix, 3929, 3929, 3929, 3929, none</column>
 <column name="grp_pointwise_conv2d_fix_1_fu_482">pointwise_conv2d_fix_1, 25337, 25337, 25337, 25337, none</column>
 <column name="grp_pointwise_conv2d_fix_3_fu_488">pointwise_conv2d_fix_3, 25457, 25457, 25457, 25457, none</column>
 <column name="grp_pointwise_conv2d_fix_2_fu_494">pointwise_conv2d_fix_2, 3321, 3321, 3321, 3321, none</column>
@@ -41,7 +41,7 @@
 <column name="grp_max_pooling2d_fix16_fu_506">max_pooling2d_fix16, 1584, 12560, 1584, 12560, none</column>
 <column name="grp_padding2d_fix16_fu_527">padding2d_fix16, 113, 15845, 113, 15845, none</column>
 <column name="grp_pointwise_conv2d_fix_fu_545">pointwise_conv2d_fix, 150561, 150561, 150561, 150561, none</column>
-<column name="grp_up_sampling2d_fix16_fu_551">up_sampling2d_fix16, 1576, 12552, 1576, 12552, none</column>
+<column name="grp_up_sampling2d_fix16_fu_551">up_sampling2d_fix16, 3143, 25095, 3143, 25095, none</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

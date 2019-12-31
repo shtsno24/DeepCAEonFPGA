@@ -18,7 +18,7 @@ set Initializer $ROMData
 set NumOfStage 2
 set MaxLatency -1
 set DelayBudget 2.322
-set ClkPeriod 6.667
+set ClkPeriod 7.692
 set RegisteredInput 0
 if {${::AESL::PGuard_simmodel_gen}} {
 if {[info proc ap_gen_simcore_mem] == "ap_gen_simcore_mem"} {
@@ -104,7 +104,7 @@ set Initializer $ROMData
 set NumOfStage 2
 set MaxLatency -1
 set DelayBudget 3.254
-set ClkPeriod 6.667
+set ClkPeriod 7.692
 set RegisteredInput 0
 if {${::AESL::PGuard_simmodel_gen}} {
 if {[info proc ap_gen_simcore_mem] == "ap_gen_simcore_mem"} {
@@ -190,7 +190,7 @@ set Initializer $ROMData
 set NumOfStage 2
 set MaxLatency -1
 set DelayBudget 2.322
-set ClkPeriod 6.667
+set ClkPeriod 7.692
 set RegisteredInput 0
 if {${::AESL::PGuard_simmodel_gen}} {
 if {[info proc ap_gen_simcore_mem] == "ap_gen_simcore_mem"} {
@@ -276,7 +276,7 @@ set Initializer $ROMData
 set NumOfStage 2
 set MaxLatency -1
 set DelayBudget 3.254
-set ClkPeriod 6.667
+set ClkPeriod 7.692
 set RegisteredInput 0
 if {${::AESL::PGuard_simmodel_gen}} {
 if {[info proc ap_gen_simcore_mem] == "ap_gen_simcore_mem"} {
@@ -362,7 +362,7 @@ set Initializer $ROMData
 set NumOfStage 2
 set MaxLatency -1
 set DelayBudget 3.254
-set ClkPeriod 6.667
+set ClkPeriod 7.692
 set RegisteredInput 0
 if {${::AESL::PGuard_simmodel_gen}} {
 if {[info proc ap_gen_simcore_mem] == "ap_gen_simcore_mem"} {
@@ -448,7 +448,7 @@ set Initializer $ROMData
 set NumOfStage 2
 set MaxLatency -1
 set DelayBudget 3.254
-set ClkPeriod 6.667
+set ClkPeriod 7.692
 set RegisteredInput 0
 if {${::AESL::PGuard_simmodel_gen}} {
 if {[info proc ap_gen_simcore_mem] == "ap_gen_simcore_mem"} {
@@ -533,7 +533,7 @@ set ROMData {}
 set NumOfStage 2
 set MaxLatency -1
 set DelayBudget 3.254
-set ClkPeriod 6.667
+set ClkPeriod 7.692
 set RegisteredInput 0
 if {${::AESL::PGuard_simmodel_gen}} {
 if {[info proc ap_gen_simcore_mem] == "ap_gen_simcore_mem"} {
@@ -618,7 +618,7 @@ set ROMData {}
 set NumOfStage 2
 set MaxLatency -1
 set DelayBudget 3.254
-set ClkPeriod 6.667
+set ClkPeriod 7.692
 set RegisteredInput 0
 if {${::AESL::PGuard_simmodel_gen}} {
 if {[info proc ap_gen_simcore_mem] == "ap_gen_simcore_mem"} {
@@ -703,7 +703,7 @@ set ROMData {}
 set NumOfStage 2
 set MaxLatency -1
 set DelayBudget 3.254
-set ClkPeriod 6.667
+set ClkPeriod 7.692
 set RegisteredInput 0
 if {${::AESL::PGuard_simmodel_gen}} {
 if {[info proc ap_gen_simcore_mem] == "ap_gen_simcore_mem"} {
@@ -788,7 +788,7 @@ set ROMData {}
 set NumOfStage 2
 set MaxLatency -1
 set DelayBudget 3.254
-set ClkPeriod 6.667
+set ClkPeriod 7.692
 set RegisteredInput 0
 if {${::AESL::PGuard_simmodel_gen}} {
 if {[info proc ap_gen_simcore_mem] == "ap_gen_simcore_mem"} {
@@ -873,7 +873,7 @@ set ROMData {}
 set NumOfStage 2
 set MaxLatency -1
 set DelayBudget 2.566
-set ClkPeriod 6.667
+set ClkPeriod 7.692
 set RegisteredInput 0
 if {${::AESL::PGuard_simmodel_gen}} {
 if {[info proc ap_gen_simcore_mem] == "ap_gen_simcore_mem"} {
