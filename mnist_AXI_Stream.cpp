@@ -61,9 +61,8 @@ int network(axis input_data[784], axis output_data[784]) {
 	const uint64_t array_length = (uint64_t)SeparableConv2D_4_depth * SeparableConv2D_4_height * SeparableConv2D_4_width;
 	//	uint64_t array_length = 16 * 28 * 28;
 	int16_t MemBank_Out[784];
-//#pragma HLS array_partition variable=MemBank_Out
 	axis tmp, sig_buffer[784];
-#pragma HLS array_partition variable=sig_buffer
+//#pragma HLS array_partition variable=sig_buffer
 
 	int i = 0;
 	do {

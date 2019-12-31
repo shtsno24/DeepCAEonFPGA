@@ -217,7 +217,7 @@ initial begin
 #0 ap_enable_reg_pp1_iter3 = 1'b0;
 end
 
-network_mux_164_16_1_1_x #(
+network_mux_164_16_1_1_x0 #(
     .ID( 1 ),
     .NUM_STAGE( 1 ),
     .din0_WIDTH( 16 ),
@@ -238,7 +238,7 @@ network_mux_164_16_1_1_x #(
     .din15_WIDTH( 16 ),
     .din16_WIDTH( 4 ),
     .dout_WIDTH( 16 ))
-network_mux_164_16_1_1_x_U105(
+network_mux_164_16_1_1_x0_U106(
     .din0(16'd14),
     .din1(16'd62211),
     .din2(16'd262),
@@ -392,7 +392,7 @@ network_mux_1287_16_1_1_x #(
     .din127_WIDTH( 16 ),
     .din128_WIDTH( 7 ),
     .dout_WIDTH( 16 ))
-network_mux_1287_16_1_1_x_U106(
+network_mux_1287_16_1_1_x_U107(
     .din0(16'd62885),
     .din1(16'd2073),
     .din2(16'd1156),
@@ -546,7 +546,7 @@ network_mux_164_32_1_1 #(
     .din15_WIDTH( 32 ),
     .din16_WIDTH( 4 ),
     .dout_WIDTH( 32 ))
-network_mux_164_32_1_1_U107(
+network_mux_164_32_1_1_U108(
     .din0(kernel_buffer_15_fu_402),
     .din1(kernel_buffer_15_17_fu_406),
     .din2(kernel_buffer_15_18_fu_410),
@@ -574,7 +574,7 @@ network_mac_muladd_4ns_9ns_9s_12_1_1 #(
     .din1_WIDTH( 9 ),
     .din2_WIDTH( 9 ),
     .dout_WIDTH( 12 ))
-network_mac_muladd_4ns_9ns_9s_12_1_1_U108(
+network_mac_muladd_4ns_9ns_9s_12_1_1_U109(
     .din0(grp_fu_1432_p0),
     .din1(grp_fu_1432_p1),
     .din2(select_ln36_6_reg_1611),

@@ -1,0 +1,59 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'network'" level="0">
+<item name = "Date">Tue Dec 31 23:13:13 2019
+</item>
+<item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
+<item name = "Project">HLS</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg400-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00, 9.634, 1.25</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">?, ?, ?, ?, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+<column name="grp_depthwise_conv2d_fix_2_fu_419">depthwise_conv2d_fix_2, 15889, 62929, 15889, 62929, none</column>
+<column name="grp_depthwise_conv2d_fix_1_fu_440">depthwise_conv2d_fix_1, 2057, 7937, 2057, 7937, none</column>
+<column name="grp_depthwise_conv2d_fix_fu_461">depthwise_conv2d_fix, 3926, 3926, 3926, 3926, none</column>
+<column name="grp_pointwise_conv2d_fix_1_fu_469">pointwise_conv2d_fix_1, 25281, 25281, 25281, 25281, none</column>
+<column name="grp_pointwise_conv2d_fix_3_fu_475">pointwise_conv2d_fix_3, 25345, 25345, 25345, 25345, none</column>
+<column name="grp_pointwise_conv2d_fix_2_fu_481">pointwise_conv2d_fix_2, 3265, 3265, 3265, 3265, none</column>
+<column name="grp_pointwise_conv2d_fix_4_fu_487">pointwise_conv2d_fix_4, 12567, 12567, 12567, 12567, none</column>
+<column name="grp_padding2d_fix16_fu_493">padding2d_fix16, 96, 14946, 96, 14946, none</column>
+<column name="grp_max_pooling2d_fix16_fu_511">max_pooling2d_fix16, 1580, 12556, 1580, 12556, none</column>
+<column name="grp_pointwise_conv2d_fix_fu_532">pointwise_conv2d_fix, 75297, 75297, 75297, 75297, none</column>
+<column name="grp_up_sampling2d_fix16_fu_538">up_sampling2d_fix16, 1572, 12548, 1572, 12548, none</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- Loop 1">?, ?, 1, 1, 1, ?, yes</column>
+<column name="- Loop 2">784, 784, 2, 1, 1, 784, yes</column>
+<column name="- Loop 3">785, 785, 3, 1, 1, 784, yes</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>
