@@ -257,7 +257,7 @@ struct depthwise_conv2d_fix : public sc_module {
     sc_signal< sc_lv<3> > select_ln27_1_fu_796_p3;
     sc_signal< sc_lv<3> > select_ln24_6_fu_804_p3;
     sc_signal< sc_lv<6> > tmp_fu_825_p3;
-    sc_signal< sc_lv<3> > tmp_1_fu_836_p3;
+    sc_signal< sc_lv<3> > tmp_4_fu_836_p3;
     sc_signal< sc_lv<7> > p_shl13_cast_mid170_c_fu_832_p1;
     sc_signal< sc_lv<7> > p_shl14_cast_mid174_c_fu_843_p1;
     sc_signal< sc_lv<7> > tmp12_mid176_fu_847_p2;
@@ -524,9 +524,9 @@ struct depthwise_conv2d_fix : public sc_module {
     void thread_tmp12_mid2_fu_898_p3();
     void thread_tmp_1_0_fu_405_p2();
     void thread_tmp_1_0_mid1_fu_683_p2();
-    void thread_tmp_1_fu_836_p3();
     void thread_tmp_2_0_fu_441_p2();
     void thread_tmp_2_0_mid1_fu_991_p2();
+    void thread_tmp_4_fu_836_p3();
     void thread_tmp_fu_825_p3();
     void thread_xor_ln24_1_fu_604_p2();
     void thread_xor_ln24_2_fu_609_p2();

@@ -153,8 +153,8 @@ struct depthwise_conv2d_fix_2 : public sc_module {
     sc_signal< sc_lv<30> > sext_ln27_7_reg_1212;
     sc_signal< sc_lv<30> > sext_ln30_fu_572_p1;
     sc_signal< sc_lv<30> > sext_ln30_reg_1217;
-    sc_signal< sc_lv<16> > tmp_4_fu_576_p18;
-    sc_signal< sc_lv<16> > tmp_4_reg_1222;
+    sc_signal< sc_lv<16> > tmp_2_fu_576_p18;
+    sc_signal< sc_lv<16> > tmp_2_reg_1222;
     sc_signal< sc_lv<1> > icmp_ln32_fu_613_p2;
     sc_signal< sc_lv<10> > add_ln32_fu_618_p2;
     sc_signal< sc_lv<10> > add_ln32_reg_1231;

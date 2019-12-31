@@ -284,7 +284,7 @@ architecture behav of depthwise_conv2d_fix is
     signal select_ln27_1_fu_796_p3 : STD_LOGIC_VECTOR (2 downto 0);
     signal select_ln24_6_fu_804_p3 : STD_LOGIC_VECTOR (2 downto 0);
     signal tmp_fu_825_p3 : STD_LOGIC_VECTOR (5 downto 0);
-    signal tmp_1_fu_836_p3 : STD_LOGIC_VECTOR (2 downto 0);
+    signal tmp_4_fu_836_p3 : STD_LOGIC_VECTOR (2 downto 0);
     signal p_shl13_cast_mid170_c_fu_832_p1 : STD_LOGIC_VECTOR (6 downto 0);
     signal p_shl14_cast_mid174_c_fu_843_p1 : STD_LOGIC_VECTOR (6 downto 0);
     signal tmp12_mid176_fu_847_p2 : STD_LOGIC_VECTOR (6 downto 0);
@@ -1185,7 +1185,7 @@ begin
     p_shl13_cast_mid1_fu_876_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(p_shl13_mid1_fu_868_p3),11));
     p_shl13_mid1_fu_868_p3 <= (tmp11_mid1_fu_863_p2 & ap_const_lv5_0);
     p_shl14_cast_fu_499_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(p_shl7_fu_491_p3),11));
-    p_shl14_cast_mid174_c_fu_843_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(tmp_1_fu_836_p3),7));
+    p_shl14_cast_mid174_c_fu_843_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(tmp_4_fu_836_p3),7));
     p_shl14_cast_mid1_fu_888_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(p_shl14_mid1_fu_880_p3),11));
     p_shl14_mid1_fu_880_p3 <= (tmp11_mid1_fu_863_p2 & ap_const_lv2_0);
     p_shl15_mid1_fu_996_p3 <= (tmp_2_0_mid1_fu_991_p2 & ap_const_lv5_0);
@@ -1309,9 +1309,9 @@ begin
         select_ln24_13_fu_857_p3;
     tmp_1_0_fu_405_p2 <= std_logic_vector(unsigned(ap_phi_mux_out_h_0_phi_fu_304_p4) + unsigned(ap_const_lv5_1));
     tmp_1_0_mid1_fu_683_p2 <= std_logic_vector(unsigned(select_ln24_reg_1432) + unsigned(ap_const_lv5_2));
-    tmp_1_fu_836_p3 <= (out_d_reg_1372 & ap_const_lv2_0);
     tmp_2_0_fu_441_p2 <= std_logic_vector(unsigned(ap_phi_mux_out_h_0_phi_fu_304_p4) + unsigned(ap_const_lv5_2));
     tmp_2_0_mid1_fu_991_p2 <= std_logic_vector(unsigned(select_ln24_reg_1432) + unsigned(ap_const_lv5_3));
+    tmp_4_fu_836_p3 <= (out_d_reg_1372 & ap_const_lv2_0);
     tmp_fu_825_p3 <= (out_d_reg_1372 & ap_const_lv5_0);
     xor_ln24_1_fu_604_p2 <= (icmp_ln32_reg_1416 xor ap_const_lv1_1);
     xor_ln24_2_fu_609_p2 <= (xor_ln24_1_fu_604_p2 xor out_d_0_reg_276);

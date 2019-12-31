@@ -1422,10 +1422,10 @@ hls_label_0_begin:50  %sext_ln30 = sext i16 %kernel_load_8 to i30
 
 <Node id="84" bw="16" op_0_bw="16" op_1_bw="16" op_2_bw="16" op_3_bw="16" op_4_bw="16" op_5_bw="16" op_6_bw="16" op_7_bw="16" op_8_bw="16" op_9_bw="3">
 <![CDATA[
-hls_label_0_begin:51  %tmp_5 = call i16 @_ssdm_op_Mux.ap_auto.8i16.i3(i16 0, i16 0, i16 0, i16 0, i16 0, i16 0, i16 0, i16 0, i3 %trunc_ln27)
+hls_label_0_begin:51  %tmp_3 = call i16 @_ssdm_op_Mux.ap_auto.8i16.i3(i16 0, i16 0, i16 0, i16 0, i16 0, i16 0, i16 0, i16 0, i3 %trunc_ln27)
 
 ]]></Node>
-<StgValue><ssdm name="tmp_5"/></StgValue>
+<StgValue><ssdm name="tmp_3"/></StgValue>
 </operation>
 
 <operation id="104" st_id="7" stage="1" lat="1">
@@ -2742,7 +2742,7 @@ hls_label_2:77  %input_load_21 = load i16* %input_addr_21, align 2
 
 <Node id="182" bw="16" op_0_bw="16" op_1_bw="16">
 <![CDATA[
-hls_label_2:88  %add_ln48_9 = add i16 %trunc_ln, %tmp_5
+hls_label_2:88  %add_ln48_9 = add i16 %trunc_ln, %tmp_3
 
 ]]></Node>
 <StgValue><ssdm name="add_ln48_9"/></StgValue>

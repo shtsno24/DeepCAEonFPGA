@@ -194,8 +194,8 @@ architecture behav of depthwise_conv2d_fix_1 is
     signal sext_ln27_14_reg_1193 : STD_LOGIC_VECTOR (29 downto 0);
     signal sext_ln30_fu_564_p1 : STD_LOGIC_VECTOR (29 downto 0);
     signal sext_ln30_reg_1198 : STD_LOGIC_VECTOR (29 downto 0);
-    signal tmp_5_fu_568_p10 : STD_LOGIC_VECTOR (15 downto 0);
-    signal tmp_5_reg_1203 : STD_LOGIC_VECTOR (15 downto 0);
+    signal tmp_3_fu_568_p10 : STD_LOGIC_VECTOR (15 downto 0);
+    signal tmp_3_reg_1203 : STD_LOGIC_VECTOR (15 downto 0);
     signal icmp_ln32_fu_589_p2 : STD_LOGIC_VECTOR (0 downto 0);
     signal add_ln32_fu_594_p2 : STD_LOGIC_VECTOR (7 downto 0);
     signal add_ln32_reg_1212 : STD_LOGIC_VECTOR (7 downto 0);
@@ -434,7 +434,7 @@ begin
         din6 => ap_const_lv16_0,
         din7 => ap_const_lv16_0,
         din8 => trunc_ln27_reg_1058,
-        dout => tmp_5_fu_568_p10);
+        dout => tmp_3_fu_568_p10);
 
     network_mac_muladd_7ns_5ns_4ns_11_1_1_U66 : component network_mac_muladd_7ns_5ns_4ns_11_1_1
     generic map (
@@ -866,7 +866,7 @@ begin
                 sext_ln27_9_reg_1168 <= sext_ln27_9_fu_545_p1;
                 sext_ln27_reg_1158 <= sext_ln27_fu_539_p1;
                 sext_ln30_reg_1198 <= sext_ln30_fu_564_p1;
-                tmp_5_reg_1203 <= tmp_5_fu_568_p10;
+                tmp_3_reg_1203 <= tmp_3_fu_568_p10;
             end if;
         end if;
     end process;
@@ -1017,7 +1017,7 @@ begin
     add_ln48_14_fu_919_p2 <= std_logic_vector(unsigned(trunc_ln48_4_reg_1395) + unsigned(trunc_ln48_5_reg_1400));
     add_ln48_15_fu_923_p2 <= std_logic_vector(unsigned(add_ln48_14_fu_919_p2) + unsigned(trunc_ln48_3_reg_1390));
     add_ln48_16_fu_928_p2 <= std_logic_vector(unsigned(add_ln48_15_fu_923_p2) + unsigned(add_ln48_13_fu_915_p2));
-    add_ln48_9_fu_833_p2 <= std_logic_vector(unsigned(trunc_ln_reg_1310) + unsigned(tmp_5_reg_1203));
+    add_ln48_9_fu_833_p2 <= std_logic_vector(unsigned(trunc_ln_reg_1310) + unsigned(tmp_3_reg_1203));
     ap_CS_fsm_pp0_stage0 <= ap_CS_fsm(7);
     ap_CS_fsm_pp0_stage1 <= ap_CS_fsm(8);
     ap_CS_fsm_pp0_stage2 <= ap_CS_fsm(9);

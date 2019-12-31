@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'depthwise_conv2d_fix_1'
 ================================================================
-* Date:           Tue Dec 31 23:13:10 2019
+* Date:           Tue Dec 31 23:40:44 2019
 
 * Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
 * Project:        HLS
@@ -198,7 +198,7 @@ ST_7 : Operation 99 [1/2] (3.25ns)   --->   "%kernel_load_7 = load i16* %kernel_
 ST_7 : Operation 100 [1/1] (0.00ns)   --->   "%sext_ln27_14 = sext i16 %kernel_load_7 to i30" [../layers_c/depthwise_conv2d.cpp:27]   --->   Operation 100 'sext' 'sext_ln27_14' <Predicate = true> <Delay = 0.00>
 ST_7 : Operation 101 [1/2] (3.25ns)   --->   "%kernel_load_8 = load i16* %kernel_addr_8, align 2" [../layers_c/depthwise_conv2d.cpp:27]   --->   Operation 101 'load' 'kernel_load_8' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 72> <RAM>
 ST_7 : Operation 102 [1/1] (0.00ns)   --->   "%sext_ln30 = sext i16 %kernel_load_8 to i30" [../layers_c/depthwise_conv2d.cpp:30]   --->   Operation 102 'sext' 'sext_ln30' <Predicate = true> <Delay = 0.00>
-ST_7 : Operation 103 [1/1] (2.47ns)   --->   "%tmp_5 = call i16 @_ssdm_op_Mux.ap_auto.8i16.i3(i16 0, i16 0, i16 0, i16 0, i16 0, i16 0, i16 0, i16 0, i3 %trunc_ln27)" [../layers_c/depthwise_conv2d.cpp:30]   --->   Operation 103 'mux' 'tmp_5' <Predicate = true> <Delay = 2.47> <Core = "MuxnS">   --->   Core 31 'MuxnS' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 103 [1/1] (2.47ns)   --->   "%tmp_3 = call i16 @_ssdm_op_Mux.ap_auto.8i16.i3(i16 0, i16 0, i16 0, i16 0, i16 0, i16 0, i16 0, i16 0, i3 %trunc_ln27)" [../layers_c/depthwise_conv2d.cpp:30]   --->   Operation 103 'mux' 'tmp_3' <Predicate = true> <Delay = 2.47> <Core = "MuxnS">   --->   Core 31 'MuxnS' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
 ST_7 : Operation 104 [1/1] (1.76ns)   --->   "br label %.preheader5" [../layers_c/depthwise_conv2d.cpp:32]   --->   Operation 104 'br' <Predicate = true> <Delay = 1.76>
 
 State 8 <SV = 7> <Delay = 8.36>
@@ -290,7 +290,7 @@ ST_12 : Operation 181 [2/2] (3.25ns)   --->   "%input_load_20 = load i16* %input
 ST_12 : Operation 182 [1/1] (0.00ns)   --->   "%zext_ln40_23 = zext i11 %add_ln40_19 to i64" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 182 'zext' 'zext_ln40_23' <Predicate = (!icmp_ln32)> <Delay = 0.00>
 ST_12 : Operation 183 [1/1] (0.00ns)   --->   "%input_addr_21 = getelementptr [14400 x i16]* %input_r, i64 0, i64 %zext_ln40_23" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 183 'getelementptr' 'input_addr_21' <Predicate = (!icmp_ln32)> <Delay = 0.00>
 ST_12 : Operation 184 [2/2] (3.25ns)   --->   "%input_load_21 = load i16* %input_addr_21, align 2" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 184 'load' 'input_load_21' <Predicate = (!icmp_ln32)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 72> <RAM>
-ST_12 : Operation 185 [1/1] (2.07ns)   --->   "%add_ln48_9 = add i16 %trunc_ln, %tmp_5" [../layers_c/depthwise_conv2d.cpp:48]   --->   Operation 185 'add' 'add_ln48_9' <Predicate = (!icmp_ln32)> <Delay = 2.07> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_12 : Operation 185 [1/1] (2.07ns)   --->   "%add_ln48_9 = add i16 %trunc_ln, %tmp_3" [../layers_c/depthwise_conv2d.cpp:48]   --->   Operation 185 'add' 'add_ln48_9' <Predicate = (!icmp_ln32)> <Delay = 2.07> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 
 State 13 <SV = 12> <Delay = 6.38>
 ST_13 : Operation 186 [1/1] (0.00ns)   --->   "%sext_ln40_12 = sext i16 %input_load_18 to i30" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 186 'sext' 'sext_ln40_12' <Predicate = (!icmp_ln32)> <Delay = 0.00>
@@ -443,7 +443,7 @@ kernel_load_7          (load             ) [ 0000000000000000000]
 sext_ln27_14           (sext             ) [ 0000000011111111110]
 kernel_load_8          (load             ) [ 0000000000000000000]
 sext_ln30              (sext             ) [ 0000000011111111110]
-tmp_5                  (mux              ) [ 0000000011111111110]
+tmp_3                  (mux              ) [ 0000000011111111110]
 br_ln32                (br               ) [ 0011111111111111111]
 indvar_flatten         (phi              ) [ 0000000010000000000]
 out_h_0                (phi              ) [ 0000000010000000000]
@@ -1975,7 +1975,7 @@ br_ln23                (br               ) [ 0111111111111111111]
 </bind>
 </comp>
 
-<comp id="568" class="1004" name="tmp_5_fu_568">
+<comp id="568" class="1004" name="tmp_3_fu_568">
 <pin_list>
 <pin id="569" dir="0" index="0" bw="16" slack="0"/>
 <pin id="570" dir="0" index="1" bw="1" slack="0"/>
@@ -1991,7 +1991,7 @@ br_ln23                (br               ) [ 0111111111111111111]
 </pin_list>
 <bind>
 <opcode="mux(1196) " fcode="mux"/>
-<opset="tmp_5/7 "/>
+<opset="tmp_3/7 "/>
 </bind>
 </comp>
 
@@ -3307,13 +3307,13 @@ br_ln23                (br               ) [ 0111111111111111111]
 </bind>
 </comp>
 
-<comp id="1203" class="1005" name="tmp_5_reg_1203">
+<comp id="1203" class="1005" name="tmp_3_reg_1203">
 <pin_list>
 <pin id="1204" dir="0" index="0" bw="16" slack="5"/>
 <pin id="1205" dir="1" index="1" bw="16" slack="5"/>
 </pin_list>
 <bind>
-<opset="tmp_5 "/>
+<opset="tmp_3 "/>
 </bind>
 </comp>
 
@@ -4762,7 +4762,7 @@ br_ln23                (br               ) [ 0111111111111111111]
 |          |       mul_ln40_15_fu_996      |    1    |    0    |    0    |
 |          |      mul_ln40_16_fu_1002      |    1    |    0    |    0    |
 |----------|-------------------------------|---------|---------|---------|
-|    mux   |          tmp_5_fu_568         |    0    |    0    |    45   |
+|    mux   |          tmp_3_fu_568         |    0    |    0    |    45   |
 |----------|-------------------------------|---------|---------|---------|
 |          |        icmp_ln23_fu_415       |    0    |    0    |    9    |
 |   icmp   |        icmp_ln32_fu_589       |    0    |    0    |    11   |
@@ -4924,7 +4924,7 @@ N/A
 |    tmp10_1_0_mid2_reg_1247    |   11   |
 |    tmp10_2_0_mid2_reg_1282    |   11   |
 |    tmp12_mid2_v_v_reg_1242    |    7   |
-|         tmp_5_reg_1203        |   16   |
+|         tmp_3_reg_1203        |   16   |
 |      trunc_ln27_reg_1058      |    3   |
 |     trunc_ln48_1_reg_1370     |   16   |
 |     trunc_ln48_2_reg_1375     |   16   |

@@ -3706,7 +3706,7 @@
             <Obj>
               <type>0</type>
               <id>85</id>
-              <name>tmp_4</name>
+              <name>tmp_2</name>
               <fileName>../layers_c/depthwise_conv2d.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>30</lineNumber>
@@ -13967,7 +13967,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>65</second>
+              <second>2693</second>
             </item>
           </second>
         </item>
@@ -16556,7 +16556,7 @@
           </second>
         </item>
         <item>
-          <first>tmp_4_reg_1222</first>
+          <first>tmp_2_reg_1222</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -20953,7 +20953,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_4_fu_576</first>
+        <first>tmp_2_fu_576</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -22638,7 +22638,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_4_reg_1222</first>
+        <first>tmp_2_reg_1222</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

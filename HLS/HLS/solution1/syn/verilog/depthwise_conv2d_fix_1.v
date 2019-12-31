@@ -178,8 +178,8 @@ wire  signed [29:0] sext_ln27_14_fu_560_p1;
 reg  signed [29:0] sext_ln27_14_reg_1193;
 wire  signed [29:0] sext_ln30_fu_564_p1;
 reg  signed [29:0] sext_ln30_reg_1198;
-wire   [15:0] tmp_5_fu_568_p10;
-reg   [15:0] tmp_5_reg_1203;
+wire   [15:0] tmp_3_fu_568_p10;
+reg   [15:0] tmp_3_reg_1203;
 wire   [0:0] icmp_ln32_fu_589_p2;
 wire   [7:0] add_ln32_fu_594_p2;
 reg   [7:0] add_ln32_reg_1212;
@@ -363,7 +363,7 @@ network_mux_83_16_1_1_x_U65(
     .din6(16'd0),
     .din7(16'd0),
     .din8(trunc_ln27_reg_1058),
-    .dout(tmp_5_fu_568_p10)
+    .dout(tmp_3_fu_568_p10)
 );
 
 network_mac_muladd_7ns_5ns_4ns_11_1_1 #(
@@ -721,7 +721,7 @@ always @ (posedge ap_clk) begin
         sext_ln27_9_reg_1168 <= sext_ln27_9_fu_545_p1;
         sext_ln27_reg_1158 <= sext_ln27_fu_539_p1;
         sext_ln30_reg_1198 <= sext_ln30_fu_564_p1;
-        tmp_5_reg_1203 <= tmp_5_fu_568_p10;
+        tmp_3_reg_1203 <= tmp_3_fu_568_p10;
     end
 end
 
@@ -1072,7 +1072,7 @@ assign add_ln48_15_fu_923_p2 = (add_ln48_14_fu_919_p2 + trunc_ln48_3_reg_1390);
 
 assign add_ln48_16_fu_928_p2 = (add_ln48_15_fu_923_p2 + add_ln48_13_fu_915_p2);
 
-assign add_ln48_9_fu_833_p2 = (trunc_ln_reg_1310 + tmp_5_reg_1203);
+assign add_ln48_9_fu_833_p2 = (trunc_ln_reg_1310 + tmp_3_reg_1203);
 
 assign ap_CS_fsm_pp0_stage0 = ap_CS_fsm[32'd7];
 

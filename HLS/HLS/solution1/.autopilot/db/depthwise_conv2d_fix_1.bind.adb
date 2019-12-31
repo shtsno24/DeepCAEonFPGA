@@ -3658,7 +3658,7 @@
 					<Obj>
 						<type>0</type>
 						<id>84</id>
-						<name>tmp_5</name>
+						<name>tmp_3</name>
 						<fileName>../layers_c/depthwise_conv2d.cpp</fileName>
 						<fileDirectory>/home/shts/DeepCAEonFPGA/HLS</fileDirectory>
 						<lineNumber>30</lineNumber>
@@ -17270,7 +17270,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_5_fu_568</first>
+			<first>tmp_3_fu_568</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -18931,7 +18931,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_5_reg_1203</first>
+			<first>tmp_3_reg_1203</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>

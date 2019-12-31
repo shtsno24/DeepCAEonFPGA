@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'depthwise_conv2d_fix_1'
 ================================================================
-* Date:           Tue Dec 31 23:13:10 2019
+* Date:           Tue Dec 31 23:40:44 2019
 
 * Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
 * Project:        HLS
@@ -198,7 +198,7 @@ ST_7 : Operation 99 [1/2] (3.25ns)   --->   "%kernel_load_7 = load i16* %kernel_
 ST_7 : Operation 100 [1/1] (0.00ns)   --->   "%sext_ln27_14 = sext i16 %kernel_load_7 to i30" [../layers_c/depthwise_conv2d.cpp:27]   --->   Operation 100 'sext' 'sext_ln27_14' <Predicate = true> <Delay = 0.00>
 ST_7 : Operation 101 [1/2] (3.25ns)   --->   "%kernel_load_8 = load i16* %kernel_addr_8, align 2" [../layers_c/depthwise_conv2d.cpp:27]   --->   Operation 101 'load' 'kernel_load_8' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 72> <RAM>
 ST_7 : Operation 102 [1/1] (0.00ns)   --->   "%sext_ln30 = sext i16 %kernel_load_8 to i30" [../layers_c/depthwise_conv2d.cpp:30]   --->   Operation 102 'sext' 'sext_ln30' <Predicate = true> <Delay = 0.00>
-ST_7 : Operation 103 [1/1] (2.47ns)   --->   "%tmp_5 = call i16 @_ssdm_op_Mux.ap_auto.8i16.i3(i16 0, i16 0, i16 0, i16 0, i16 0, i16 0, i16 0, i16 0, i3 %trunc_ln27)" [../layers_c/depthwise_conv2d.cpp:30]   --->   Operation 103 'mux' 'tmp_5' <Predicate = true> <Delay = 2.47> <Core = "MuxnS">   --->   Core 31 'MuxnS' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 103 [1/1] (2.47ns)   --->   "%tmp_3 = call i16 @_ssdm_op_Mux.ap_auto.8i16.i3(i16 0, i16 0, i16 0, i16 0, i16 0, i16 0, i16 0, i16 0, i3 %trunc_ln27)" [../layers_c/depthwise_conv2d.cpp:30]   --->   Operation 103 'mux' 'tmp_3' <Predicate = true> <Delay = 2.47> <Core = "MuxnS">   --->   Core 31 'MuxnS' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
 ST_7 : Operation 104 [1/1] (1.76ns)   --->   "br label %.preheader5" [../layers_c/depthwise_conv2d.cpp:32]   --->   Operation 104 'br' <Predicate = true> <Delay = 1.76>
 
 State 8 <SV = 7> <Delay = 8.36>
@@ -290,7 +290,7 @@ ST_12 : Operation 181 [2/2] (3.25ns)   --->   "%input_load_20 = load i16* %input
 ST_12 : Operation 182 [1/1] (0.00ns)   --->   "%zext_ln40_23 = zext i11 %add_ln40_19 to i64" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 182 'zext' 'zext_ln40_23' <Predicate = (!icmp_ln32)> <Delay = 0.00>
 ST_12 : Operation 183 [1/1] (0.00ns)   --->   "%input_addr_21 = getelementptr [14400 x i16]* %input_r, i64 0, i64 %zext_ln40_23" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 183 'getelementptr' 'input_addr_21' <Predicate = (!icmp_ln32)> <Delay = 0.00>
 ST_12 : Operation 184 [2/2] (3.25ns)   --->   "%input_load_21 = load i16* %input_addr_21, align 2" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 184 'load' 'input_load_21' <Predicate = (!icmp_ln32)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 72> <RAM>
-ST_12 : Operation 185 [1/1] (2.07ns)   --->   "%add_ln48_9 = add i16 %trunc_ln, %tmp_5" [../layers_c/depthwise_conv2d.cpp:48]   --->   Operation 185 'add' 'add_ln48_9' <Predicate = (!icmp_ln32)> <Delay = 2.07> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_12 : Operation 185 [1/1] (2.07ns)   --->   "%add_ln48_9 = add i16 %trunc_ln, %tmp_3" [../layers_c/depthwise_conv2d.cpp:48]   --->   Operation 185 'add' 'add_ln48_9' <Predicate = (!icmp_ln32)> <Delay = 2.07> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 
 State 13 <SV = 12> <Delay = 6.38>
 ST_13 : Operation 186 [1/1] (0.00ns)   --->   "%sext_ln40_12 = sext i16 %input_load_18 to i30" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 186 'sext' 'sext_ln40_12' <Predicate = (!icmp_ln32)> <Delay = 0.00>

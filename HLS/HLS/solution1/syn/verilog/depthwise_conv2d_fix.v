@@ -264,7 +264,7 @@ wire   [2:0] select_ln24_5_fu_784_p3;
 wire   [2:0] select_ln27_1_fu_796_p3;
 wire   [2:0] select_ln24_6_fu_804_p3;
 wire   [5:0] tmp_fu_825_p3;
-wire   [2:0] tmp_1_fu_836_p3;
+wire   [2:0] tmp_4_fu_836_p3;
 wire   [6:0] p_shl13_cast_mid170_c_fu_832_p1;
 wire   [6:0] p_shl14_cast_mid174_c_fu_843_p1;
 wire   [6:0] tmp12_mid176_fu_847_p2;
@@ -1094,7 +1094,7 @@ assign p_shl13_mid1_fu_868_p3 = {{tmp11_mid1_fu_863_p2}, {5'd0}};
 
 assign p_shl14_cast_fu_499_p1 = p_shl7_fu_491_p3;
 
-assign p_shl14_cast_mid174_c_fu_843_p1 = tmp_1_fu_836_p3;
+assign p_shl14_cast_mid174_c_fu_843_p1 = tmp_4_fu_836_p3;
 
 assign p_shl14_cast_mid1_fu_888_p1 = p_shl14_mid1_fu_880_p3;
 
@@ -1236,11 +1236,11 @@ assign tmp_1_0_fu_405_p2 = (ap_phi_mux_out_h_0_phi_fu_304_p4 + 5'd1);
 
 assign tmp_1_0_mid1_fu_683_p2 = (select_ln24_reg_1432 + 5'd2);
 
-assign tmp_1_fu_836_p3 = {{out_d_reg_1372}, {2'd0}};
-
 assign tmp_2_0_fu_441_p2 = (ap_phi_mux_out_h_0_phi_fu_304_p4 + 5'd2);
 
 assign tmp_2_0_mid1_fu_991_p2 = (select_ln24_reg_1432 + 5'd3);
+
+assign tmp_4_fu_836_p3 = {{out_d_reg_1372}, {2'd0}};
 
 assign tmp_fu_825_p3 = {{out_d_reg_1372}, {5'd0}};
 

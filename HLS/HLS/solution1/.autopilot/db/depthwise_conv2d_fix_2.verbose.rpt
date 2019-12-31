@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'depthwise_conv2d_fix_2'
 ================================================================
-* Date:           Tue Dec 31 23:13:15 2019
+* Date:           Tue Dec 31 23:42:39 2019
 
 * Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
 * Project:        HLS
@@ -57,27 +57,27 @@
 |DSP              |        -|     10|       -|      -|    -|
 |Expression       |        -|      0|       0|    838|    -|
 |FIFO             |        -|      -|       -|      -|    -|
-|Instance         |        -|      -|       0|     65|    -|
+|Instance         |        -|      -|       0|   2693|    -|
 |Memory           |        -|      -|       -|      -|    -|
 |Multiplexer      |        -|      -|       -|    287|    -|
 |Register         |        -|      -|     935|      -|    -|
 +-----------------+---------+-------+--------+-------+-----+
-|Total            |        0|     10|     935|   1190|    0|
+|Total            |        0|     10|     935|   3818|    0|
 +-----------------+---------+-------+--------+-------+-----+
 |Available        |      280|    220|  106400|  53200|    0|
 +-----------------+---------+-------+--------+-------+-----+
-|Utilization (%)  |        0|      4|   ~0   |      2|    0|
+|Utilization (%)  |        0|      4|   ~0   |      7|    0|
 +-----------------+---------+-------+--------+-------+-----+
 
 + Detail: 
     * Instance: 
-    +------------------------------+--------------------------+---------+-------+---+----+-----+
-    |           Instance           |          Module          | BRAM_18K| DSP48E| FF| LUT| URAM|
-    +------------------------------+--------------------------+---------+-------+---+----+-----+
-    |network_mux_164_16_1_1_x_U34  |network_mux_164_16_1_1_x  |        0|      0|  0|  65|    0|
-    +------------------------------+--------------------------+---------+-------+---+----+-----+
-    |Total                         |                          |        0|      0|  0|  65|    0|
-    +------------------------------+--------------------------+---------+-------+---+----+-----+
+    +------------------------------+--------------------------+---------+-------+---+------+-----+
+    |           Instance           |          Module          | BRAM_18K| DSP48E| FF|  LUT | URAM|
+    +------------------------------+--------------------------+---------+-------+---+------+-----+
+    |network_mux_164_16_1_1_x_U34  |network_mux_164_16_1_1_x  |        0|      0|  0|  2693|    0|
+    +------------------------------+--------------------------+---------+-------+---+------+-----+
+    |Total                         |                          |        0|      0|  0|  2693|    0|
+    +------------------------------+--------------------------+---------+-------+---+------+-----+
 
     * DSP48E: 
     +-------------------------------------------+---------------------------------------+--------------+
@@ -241,7 +241,7 @@
     |tmp10_1_0_mid2_reg_1276           |  14|   0|   14|          0|
     |tmp10_2_0_mid2_reg_1311           |  14|   0|   14|          0|
     |tmp12_mid2_v_v_reg_1271           |   9|   0|    9|          0|
-    |tmp_4_reg_1222                    |  16|   0|   16|          0|
+    |tmp_2_reg_1222                    |  16|   0|   16|          0|
     |trunc_ln27_reg_1080               |   4|   0|    4|          0|
     |trunc_ln48_1_reg_1374             |  16|   0|   16|          0|
     |trunc_ln48_2_reg_1379             |  16|   0|   16|          0|
@@ -455,7 +455,7 @@ ST_7 : Operation 101 [1/2] (3.25ns)   --->   "%kernel_load_7 = load i16* %kernel
 ST_7 : Operation 102 [1/1] (0.00ns)   --->   "%sext_ln27_7 = sext i16 %kernel_load_7 to i30" [../layers_c/depthwise_conv2d.cpp:27]   --->   Operation 102 'sext' 'sext_ln27_7' <Predicate = true> <Delay = 0.00>
 ST_7 : Operation 103 [1/2] (3.25ns)   --->   "%kernel_load_8 = load i16* %kernel_addr_8, align 2" [../layers_c/depthwise_conv2d.cpp:27]   --->   Operation 103 'load' 'kernel_load_8' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 144> <RAM>
 ST_7 : Operation 104 [1/1] (0.00ns)   --->   "%sext_ln30 = sext i16 %kernel_load_8 to i30" [../layers_c/depthwise_conv2d.cpp:30]   --->   Operation 104 'sext' 'sext_ln30' <Predicate = true> <Delay = 0.00>
-ST_7 : Operation 105 [1/1] (2.06ns)   --->   "%tmp_4 = call i16 @_ssdm_op_Mux.ap_auto.16i16.i4(i16 0, i16 0, i16 0, i16 0, i16 0, i16 0, i16 0, i16 0, i16 0, i16 0, i16 0, i16 0, i16 0, i16 0, i16 0, i16 0, i4 %trunc_ln27)" [../layers_c/depthwise_conv2d.cpp:30]   --->   Operation 105 'mux' 'tmp_4' <Predicate = true> <Delay = 2.06> <Core = "MuxnS">   --->   Core 31 'MuxnS' <Latency = 0> <II = 1> <Delay = 2.06> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 105 [1/1] (2.06ns)   --->   "%tmp_2 = call i16 @_ssdm_op_Mux.ap_auto.16i16.i4(i16 0, i16 0, i16 0, i16 0, i16 0, i16 0, i16 0, i16 0, i16 0, i16 0, i16 0, i16 0, i16 0, i16 0, i16 0, i16 0, i4 %trunc_ln27)" [../layers_c/depthwise_conv2d.cpp:30]   --->   Operation 105 'mux' 'tmp_2' <Predicate = true> <Delay = 2.06> <Core = "MuxnS">   --->   Core 31 'MuxnS' <Latency = 0> <II = 1> <Delay = 5.34> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
 ST_7 : Operation 106 [1/1] (1.76ns)   --->   "br label %.preheader5" [../layers_c/depthwise_conv2d.cpp:32]   --->   Operation 106 'br' <Predicate = true> <Delay = 1.76>
 
 State 8 <SV = 7> <Delay = 2.57>
@@ -549,7 +549,7 @@ ST_13 : Operation 183 [2/2] (3.25ns)   --->   "%input_load_12 = load i16* %input
 ST_13 : Operation 184 [1/1] (0.00ns)   --->   "%zext_ln40_11 = zext i14 %add_ln40_9 to i64" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 184 'zext' 'zext_ln40_11' <Predicate = (!icmp_ln32)> <Delay = 0.00>
 ST_13 : Operation 185 [1/1] (0.00ns)   --->   "%input_addr_13 = getelementptr [14400 x i16]* %input_r, i64 0, i64 %zext_ln40_11" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 185 'getelementptr' 'input_addr_13' <Predicate = (!icmp_ln32)> <Delay = 0.00>
 ST_13 : Operation 186 [2/2] (3.25ns)   --->   "%input_load_13 = load i16* %input_addr_13, align 2" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 186 'load' 'input_load_13' <Predicate = (!icmp_ln32)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 144> <RAM>
-ST_13 : Operation 187 [1/1] (2.07ns)   --->   "%add_ln48_1 = add i16 %trunc_ln, %tmp_4" [../layers_c/depthwise_conv2d.cpp:48]   --->   Operation 187 'add' 'add_ln48_1' <Predicate = (!icmp_ln32)> <Delay = 2.07> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_13 : Operation 187 [1/1] (2.07ns)   --->   "%add_ln48_1 = add i16 %trunc_ln, %tmp_2" [../layers_c/depthwise_conv2d.cpp:48]   --->   Operation 187 'add' 'add_ln48_1' <Predicate = (!icmp_ln32)> <Delay = 2.07> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 
 State 14 <SV = 13> <Delay = 6.38>
 ST_14 : Operation 188 [1/1] (0.00ns)   --->   "%sext_ln40_4 = sext i16 %input_load_10 to i30" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 188 'sext' 'sext_ln40_4' <Predicate = (!icmp_ln32)> <Delay = 0.00>
@@ -703,7 +703,7 @@ kernel_load_7          (load             ) [ 00000000000000000000]
 sext_ln27_7            (sext             ) [ 00000000111111111110]
 kernel_load_8          (load             ) [ 00000000000000000000]
 sext_ln30              (sext             ) [ 00000000111111111110]
-tmp_4                  (mux              ) [ 00000000111111111110]
+tmp_2                  (mux              ) [ 00000000111111111110]
 br_ln32                (br               ) [ 00111111111111111111]
 indvar_flatten         (phi              ) [ 00000000100000000000]
 out_h_0                (phi              ) [ 00000000110000000000]
@@ -2264,7 +2264,7 @@ br_ln23                (br               ) [ 01111111111111111111]
 </bind>
 </comp>
 
-<comp id="576" class="1004" name="tmp_4_fu_576">
+<comp id="576" class="1004" name="tmp_2_fu_576">
 <pin_list>
 <pin id="577" dir="0" index="0" bw="16" slack="0"/>
 <pin id="578" dir="0" index="1" bw="1" slack="0"/>
@@ -2288,7 +2288,7 @@ br_ln23                (br               ) [ 01111111111111111111]
 </pin_list>
 <bind>
 <opcode="mux(1196) " fcode="mux"/>
-<opset="tmp_4/7 "/>
+<opset="tmp_2/7 "/>
 </bind>
 </comp>
 
@@ -3594,13 +3594,13 @@ br_ln23                (br               ) [ 01111111111111111111]
 </bind>
 </comp>
 
-<comp id="1222" class="1005" name="tmp_4_reg_1222">
+<comp id="1222" class="1005" name="tmp_2_reg_1222">
 <pin_list>
 <pin id="1223" dir="0" index="0" bw="16" slack="6"/>
 <pin id="1224" dir="1" index="1" bw="16" slack="6"/>
 </pin_list>
 <bind>
-<opset="tmp_4 "/>
+<opset="tmp_2 "/>
 </bind>
 </comp>
 
@@ -5039,6 +5039,8 @@ br_ln23                (br               ) [ 01111111111111111111]
 |----------|--------------------------------|---------|---------|---------|
 | Operation|         Functional Unit        |  DSP48E |    FF   |   LUT   |
 |----------|--------------------------------|---------|---------|---------|
+|    mux   |          tmp_2_fu_576          |    0    |    0    |   2693  |
+|----------|--------------------------------|---------|---------|---------|
 |          |         add_ln23_fu_414        |    0    |    0    |    15   |
 |          |        add_ln23_1_fu_419       |    0    |    0    |    15   |
 |          |          out_d_fu_430          |    0    |    0    |    15   |
@@ -5091,8 +5093,6 @@ br_ln23                (br               ) [ 01111111111111111111]
 |          |       mul_ln40_6_fu_1012       |    1    |    0    |    0    |
 |          |       mul_ln40_7_fu_1018       |    1    |    0    |    0    |
 |          |       mul_ln40_8_fu_1024       |    1    |    0    |    0    |
-|----------|--------------------------------|---------|---------|---------|
-|    mux   |          tmp_4_fu_576          |    0    |    0    |    65   |
 |----------|--------------------------------|---------|---------|---------|
 |          |        icmp_ln23_fu_424        |    0    |    0    |    11   |
 |   icmp   |        icmp_ln32_fu_613        |    0    |    0    |    13   |
@@ -5180,7 +5180,7 @@ br_ln23                (br               ) [ 01111111111111111111]
 |          |       trunc_ln48_6_fu_915      |    0    |    0    |    0    |
 |          |       trunc_ln48_7_fu_928      |    0    |    0    |    0    |
 |----------|--------------------------------|---------|---------|---------|
-|   Total  |                                |    10   |    0    |   901   |
+|   Total  |                                |    10   |    0    |   3529  |
 |----------|--------------------------------|---------|---------|---------|
 
 Memories:
@@ -5257,7 +5257,7 @@ N/A
 |    tmp10_1_0_mid2_reg_1276    |   14   |
 |    tmp10_2_0_mid2_reg_1311    |   14   |
 |    tmp12_mid2_v_v_reg_1271    |    9   |
-|         tmp_4_reg_1222        |   16   |
+|         tmp_2_reg_1222        |   16   |
 |      trunc_ln27_reg_1080      |    4   |
 |     trunc_ln48_1_reg_1374     |   16   |
 |     trunc_ln48_2_reg_1379     |   16   |
@@ -5303,10 +5303,10 @@ N/A
 +-----------+--------+--------+--------+--------+
 |           | DSP48E |  Delay |   FF   |   LUT  |
 +-----------+--------+--------+--------+--------+
-|  Function |   10   |    -   |    0   |   901  |
+|  Function |   10   |    -   |    0   |  3529  |
 |   Memory  |    -   |    -   |    -   |    -   |
 |Multiplexer|    -   |   18   |    -   |   230  |
 |  Register |    -   |    -   |  1149  |    -   |
 +-----------+--------+--------+--------+--------+
-|   Total   |   10   |   18   |  1149  |  1131  |
+|   Total   |   10   |   18   |  1149  |  3759  |
 +-----------+--------+--------+--------+--------+

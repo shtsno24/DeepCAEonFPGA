@@ -28596,7 +28596,7 @@ _ssdm_SpecArrayPartition( &SeparableConv2D_4_w_p, 1, "complete", 0, "");
 
  int16_t MemBank_Out[784];
  axis tmp, sig_buffer[784];
-
+_ssdm_SpecArrayPartition( sig_buffer, 1, "complete", 0, "");
 
  int i = 0;
  do {

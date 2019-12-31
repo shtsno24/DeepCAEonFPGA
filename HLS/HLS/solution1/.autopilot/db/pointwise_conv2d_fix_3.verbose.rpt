@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'pointwise_conv2d_fix_3'
 ================================================================
-* Date:           Tue Dec 31 23:13:17 2019
+* Date:           Tue Dec 31 23:42:43 2019
 
 * Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
 * Project:        HLS
@@ -58,29 +58,29 @@
 |DSP              |        -|      1|       -|      -|    -|
 |Expression       |        -|      2|       0|    456|    -|
 |FIFO             |        -|      -|       -|      -|    -|
-|Instance         |        -|      -|       0|    195|    -|
+|Instance         |        -|      -|       0|   8079|    -|
 |Memory           |        -|      -|       -|      -|    -|
 |Multiplexer      |        -|      -|       -|    155|    -|
 |Register         |        0|      -|    1066|    160|    -|
 +-----------------+---------+-------+--------+-------+-----+
-|Total            |        0|      3|    1066|    966|    0|
+|Total            |        0|      3|    1066|   8850|    0|
 +-----------------+---------+-------+--------+-------+-----+
 |Available        |      280|    220|  106400|  53200|    0|
 +-----------------+---------+-------+--------+-------+-----+
-|Utilization (%)  |        0|      1|       1|      1|    0|
+|Utilization (%)  |        0|      1|       1|     16|    0|
 +-----------------+---------+-------+--------+-------+-----+
 
 + Detail: 
     * Instance: 
-    +--------------------------------+---------------------------+---------+-------+---+----+-----+
-    |            Instance            |           Module          | BRAM_18K| DSP48E| FF| LUT| URAM|
-    +--------------------------------+---------------------------+---------+-------+---+----+-----+
-    |network_mux_1287_16_1_1_x_U107  |network_mux_1287_16_1_1_x  |        0|      0|  0|  65|    0|
-    |network_mux_164_16_1_1_x0_U106  |network_mux_164_16_1_1_x0  |        0|      0|  0|  65|    0|
-    |network_mux_164_32_1_1_U108     |network_mux_164_32_1_1     |        0|      0|  0|  65|    0|
-    +--------------------------------+---------------------------+---------+-------+---+----+-----+
-    |Total                           |                           |        0|      0|  0| 195|    0|
-    +--------------------------------+---------------------------+---------+-------+---+----+-----+
+    +--------------------------------+---------------------------+---------+-------+---+------+-----+
+    |            Instance            |           Module          | BRAM_18K| DSP48E| FF|  LUT | URAM|
+    +--------------------------------+---------------------------+---------+-------+---+------+-----+
+    |network_mux_1287_16_1_1_x_U107  |network_mux_1287_16_1_1_x  |        0|      0|  0|  2693|    0|
+    |network_mux_164_16_1_1_x0_U106  |network_mux_164_16_1_1_x0  |        0|      0|  0|  2693|    0|
+    |network_mux_164_32_1_1_U108     |network_mux_164_32_1_1     |        0|      0|  0|  2693|    0|
+    +--------------------------------+---------------------------+---------+-------+---+------+-----+
+    |Total                           |                           |        0|      0|  0|  8079|    0|
+    +--------------------------------+---------------------------+---------+-------+---+------+-----+
 
     * DSP48E: 
     +-------------------------------------------+--------------------------------------+--------------+
@@ -330,7 +330,7 @@ ST_2 : Operation 32 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_
 ST_2 : Operation 33 [1/1] (1.78ns)   --->   "%out_d = add i5 %out_d_0, 1" [../layers_c/pointwise_conv2d.cpp:24]   --->   Operation 33 'add' 'out_d' <Predicate = true> <Delay = 1.78> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 34 [1/1] (0.00ns)   --->   "br i1 %icmp_ln24, label %3, label %1" [../layers_c/pointwise_conv2d.cpp:24]   --->   Operation 34 'br' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 35 [1/1] (0.00ns)   --->   "%trunc_ln25 = trunc i5 %out_d_0 to i4" [../layers_c/pointwise_conv2d.cpp:25]   --->   Operation 35 'trunc' 'trunc_ln25' <Predicate = (!icmp_ln24)> <Delay = 0.00>
-ST_2 : Operation 36 [1/1] (2.06ns)   --->   "%tmp_9 = call i16 @_ssdm_op_Mux.ap_auto.16i16.i4(i16 14, i16 -3325, i16 262, i16 1, i16 -56, i16 0, i16 -5, i16 402, i16 -323, i16 -3385, i16 4336, i16 0, i16 -4652, i16 59, i16 76, i16 -1950, i4 %trunc_ln25)" [../layers_c/pointwise_conv2d.cpp:25]   --->   Operation 36 'mux' 'tmp_9' <Predicate = (!icmp_ln24)> <Delay = 2.06> <Core = "MuxnS">   --->   Core 31 'MuxnS' <Latency = 0> <II = 1> <Delay = 2.06> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 36 [1/1] (2.06ns)   --->   "%tmp_9 = call i16 @_ssdm_op_Mux.ap_auto.16i16.i4(i16 14, i16 -3325, i16 262, i16 1, i16 -56, i16 0, i16 -5, i16 402, i16 -323, i16 -3385, i16 4336, i16 0, i16 -4652, i16 59, i16 76, i16 -1950, i4 %trunc_ln25)" [../layers_c/pointwise_conv2d.cpp:25]   --->   Operation 36 'mux' 'tmp_9' <Predicate = (!icmp_ln24)> <Delay = 2.06> <Core = "MuxnS">   --->   Core 31 'MuxnS' <Latency = 0> <II = 1> <Delay = 5.34> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 37 [1/1] (0.00ns)   --->   "%sext_ln34 = sext i16 %tmp_9 to i22" [../layers_c/pointwise_conv2d.cpp:34]   --->   Operation 37 'sext' 'sext_ln34' <Predicate = (!icmp_ln24)> <Delay = 0.00>
 ST_2 : Operation 38 [1/1] (0.00ns)   --->   "%shl_ln = call i7 @_ssdm_op_BitConcatenate.i7.i4.i3(i4 %trunc_ln25, i3 0)" [../layers_c/pointwise_conv2d.cpp:28]   --->   Operation 38 'bitconcatenate' 'shl_ln' <Predicate = (!icmp_ln24)> <Delay = 0.00>
 ST_2 : Operation 39 [1/1] (1.76ns)   --->   "br label %2" [../layers_c/pointwise_conv2d.cpp:26]   --->   Operation 39 'br' <Predicate = (!icmp_ln24)> <Delay = 1.76>
@@ -346,7 +346,7 @@ ST_3 : Operation 46 [1/1] (0.00ns)   --->   "%tmp_s = call i32 (...)* @_ssdm_op_
 ST_3 : Operation 47 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str13) nounwind" [../layers_c/pointwise_conv2d.cpp:27]   --->   Operation 47 'specpipeline' <Predicate = (!icmp_ln26)> <Delay = 0.00>
 ST_3 : Operation 48 [1/1] (0.00ns)   --->   "%zext_ln28 = zext i4 %i_0 to i7" [../layers_c/pointwise_conv2d.cpp:28]   --->   Operation 48 'zext' 'zext_ln28' <Predicate = (!icmp_ln26)> <Delay = 0.00>
 ST_3 : Operation 49 [1/1] (1.87ns)   --->   "%add_ln28 = add i7 %shl_ln, %zext_ln28" [../layers_c/pointwise_conv2d.cpp:28]   --->   Operation 49 'add' 'add_ln28' <Predicate = (!icmp_ln26)> <Delay = 1.87> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 50 [1/1] (4.23ns)   --->   "%tmp_3 = call i16 @_ssdm_op_Mux.ap_auto.128i16.i7(i16 -2651, i16 2073, i16 1156, i16 3349, i16 604, i16 -8156, i16 -5028, i16 6387, i16 -10026, i16 5920, i16 1322, i16 -7540, i16 3993, i16 8863, i16 10066, i16 6497, i16 -5839, i16 4141, i16 -5493, i16 7347, i16 -1488, i16 -2148, i16 -8023, i16 6361, i16 2258, i16 -967, i16 -946, i16 -7367, i16 6947, i16 -7301, i16 1582, i16 -5886, i16 3762, i16 -5238, i16 4505, i16 -7039, i16 -1746, i16 953, i16 5991, i16 -7318, i16 -4192, i16 7946, i16 -6801, i16 -6934, i16 6251, i16 -7325, i16 -4293, i16 -7732, i16 6991, i16 -2587, i16 1501, i16 -4347, i16 -6826, i16 535, i16 7485, i16 -99, i16 -4407, i16 6362, i16 -4718, i16 -4734, i16 2770, i16 -1312, i16 2669, i16 -2859, i16 -4441, i16 -5484, i16 6676, i16 -4288, i16 -7260, i16 669, i16 -6517, i16 -2572, i16 -6350, i16 2136, i16 4793, i16 7198, i16 -6744, i16 8508, i16 -5838, i16 6660, i16 8779, i16 7883, i16 -1167, i16 -1243, i16 3744, i16 2181, i16 4585, i16 -2179, i16 738, i16 -7926, i16 4738, i16 2494, i16 2931, i16 -7453, i16 7364, i16 -767, i16 -4640, i16 -6124, i16 -4374, i16 -1684, i16 9249, i16 9727, i16 -67, i16 1304, i16 -6983, i16 788, i16 5068, i16 -2722, i16 -5044, i16 -8187, i16 -1037, i16 7848, i16 -2065, i16 -7293, i16 2987, i16 -5070, i16 -260, i16 -7630, i16 -228, i16 -2840, i16 -2855, i16 -8214, i16 -2709, i16 -5582, i16 -4899, i16 4232, i16 5145, i16 1740, i7 %add_ln28)" [../layers_c/pointwise_conv2d.cpp:28]   --->   Operation 50 'mux' 'tmp_3' <Predicate = (!icmp_ln26)> <Delay = 4.23> <Core = "MuxnS">   --->   Core 31 'MuxnS' <Latency = 0> <II = 1> <Delay = 2.06> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 50 [1/1] (4.23ns)   --->   "%tmp_3 = call i16 @_ssdm_op_Mux.ap_auto.128i16.i7(i16 -2651, i16 2073, i16 1156, i16 3349, i16 604, i16 -8156, i16 -5028, i16 6387, i16 -10026, i16 5920, i16 1322, i16 -7540, i16 3993, i16 8863, i16 10066, i16 6497, i16 -5839, i16 4141, i16 -5493, i16 7347, i16 -1488, i16 -2148, i16 -8023, i16 6361, i16 2258, i16 -967, i16 -946, i16 -7367, i16 6947, i16 -7301, i16 1582, i16 -5886, i16 3762, i16 -5238, i16 4505, i16 -7039, i16 -1746, i16 953, i16 5991, i16 -7318, i16 -4192, i16 7946, i16 -6801, i16 -6934, i16 6251, i16 -7325, i16 -4293, i16 -7732, i16 6991, i16 -2587, i16 1501, i16 -4347, i16 -6826, i16 535, i16 7485, i16 -99, i16 -4407, i16 6362, i16 -4718, i16 -4734, i16 2770, i16 -1312, i16 2669, i16 -2859, i16 -4441, i16 -5484, i16 6676, i16 -4288, i16 -7260, i16 669, i16 -6517, i16 -2572, i16 -6350, i16 2136, i16 4793, i16 7198, i16 -6744, i16 8508, i16 -5838, i16 6660, i16 8779, i16 7883, i16 -1167, i16 -1243, i16 3744, i16 2181, i16 4585, i16 -2179, i16 738, i16 -7926, i16 4738, i16 2494, i16 2931, i16 -7453, i16 7364, i16 -767, i16 -4640, i16 -6124, i16 -4374, i16 -1684, i16 9249, i16 9727, i16 -67, i16 1304, i16 -6983, i16 788, i16 5068, i16 -2722, i16 -5044, i16 -8187, i16 -1037, i16 7848, i16 -2065, i16 -7293, i16 2987, i16 -5070, i16 -260, i16 -7630, i16 -228, i16 -2840, i16 -2855, i16 -8214, i16 -2709, i16 -5582, i16 -4899, i16 4232, i16 5145, i16 1740, i7 %add_ln28)" [../layers_c/pointwise_conv2d.cpp:28]   --->   Operation 50 'mux' 'tmp_3' <Predicate = (!icmp_ln26)> <Delay = 4.23> <Core = "MuxnS">   --->   Core 31 'MuxnS' <Latency = 0> <II = 1> <Delay = 5.34> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
 ST_3 : Operation 51 [1/1] (0.00ns)   --->   "%kernel_buffer_0 = sext i16 %tmp_3 to i32" [../layers_c/pointwise_conv2d.cpp:28]   --->   Operation 51 'sext' 'kernel_buffer_0' <Predicate = (!icmp_ln26)> <Delay = 0.00>
 ST_3 : Operation 52 [1/1] (1.36ns)   --->   "switch i4 %i_0, label %branch15 [
     i4 0, label %hls_label_0_begin.hls_label_0_end_crit_edge
@@ -475,7 +475,7 @@ ST_7 : Operation 152 [1/1] (0.00ns)   --->   "%kernel_buffer_15_28_1 = load i32*
 ST_7 : Operation 153 [1/1] (0.00ns)   --->   "%kernel_buffer_15_29_1 = load i32* %kernel_buffer_15_29" [../layers_c/pointwise_conv2d.cpp:39]   --->   Operation 153 'load' 'kernel_buffer_15_29_1' <Predicate = (!icmp_ln31)> <Delay = 0.00>
 ST_7 : Operation 154 [1/1] (0.00ns)   --->   "%kernel_buffer_15_01 = load i32* %kernel_buffer_15_016" [../layers_c/pointwise_conv2d.cpp:39]   --->   Operation 154 'load' 'kernel_buffer_15_01' <Predicate = (!icmp_ln31)> <Delay = 0.00>
 ST_7 : Operation 155 [1/2] (3.25ns)   --->   "%input_load = load i16* %input_addr, align 2" [../layers_c/pointwise_conv2d.cpp:39]   --->   Operation 155 'load' 'input_load' <Predicate = (!icmp_ln31)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 144> <RAM>
-ST_7 : Operation 156 [1/1] (2.06ns)   --->   "%tmp = call i32 @_ssdm_op_Mux.ap_auto.16i32.i4(i32 %kernel_buffer_15_lo, i32 %kernel_buffer_15_17_1, i32 %kernel_buffer_15_18_1, i32 %kernel_buffer_15_19_1, i32 %kernel_buffer_15_20_1, i32 %kernel_buffer_15_21_1, i32 %kernel_buffer_15_22_1, i32 %kernel_buffer_15_23_1, i32 undef, i32 %kernel_buffer_15_24_1, i32 %kernel_buffer_15_25_1, i32 %kernel_buffer_15_26_1, i32 %kernel_buffer_15_27_1, i32 %kernel_buffer_15_28_1, i32 %kernel_buffer_15_29_1, i32 %kernel_buffer_15_01, i4 %select_ln36_4)" [../layers_c/pointwise_conv2d.cpp:39]   --->   Operation 156 'mux' 'tmp' <Predicate = (!icmp_ln31)> <Delay = 2.06> <Core = "MuxnS">   --->   Core 31 'MuxnS' <Latency = 0> <II = 1> <Delay = 2.06> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 156 [1/1] (2.06ns)   --->   "%tmp = call i32 @_ssdm_op_Mux.ap_auto.16i32.i4(i32 %kernel_buffer_15_lo, i32 %kernel_buffer_15_17_1, i32 %kernel_buffer_15_18_1, i32 %kernel_buffer_15_19_1, i32 %kernel_buffer_15_20_1, i32 %kernel_buffer_15_21_1, i32 %kernel_buffer_15_22_1, i32 %kernel_buffer_15_23_1, i32 undef, i32 %kernel_buffer_15_24_1, i32 %kernel_buffer_15_25_1, i32 %kernel_buffer_15_26_1, i32 %kernel_buffer_15_27_1, i32 %kernel_buffer_15_28_1, i32 %kernel_buffer_15_29_1, i32 %kernel_buffer_15_01, i4 %select_ln36_4)" [../layers_c/pointwise_conv2d.cpp:39]   --->   Operation 156 'mux' 'tmp' <Predicate = (!icmp_ln31)> <Delay = 2.06> <Core = "MuxnS">   --->   Core 31 'MuxnS' <Latency = 0> <II = 1> <Delay = 5.34> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
 
 State 8 <SV = 7> <Delay = 8.51>
 ST_8 : Operation 157 [1/1] (0.00ns)   --->   "%sext_ln39_1 = sext i16 %input_load to i32" [../layers_c/pointwise_conv2d.cpp:39]   --->   Operation 157 'sext' 'sext_ln39_1' <Predicate = (!icmp_ln31)> <Delay = 0.00>
@@ -5719,6 +5719,10 @@ br_ln0                (br               ) [ 01111111111]
 |----------|-------------------------|---------|---------|---------|
 | Operation|     Functional Unit     |  DSP48E |    FF   |   LUT   |
 |----------|-------------------------|---------|---------|---------|
+|          |       tmp_9_fu_612      |    0    |    0    |   2693  |
+|    mux   |       tmp_3_fu_683      |    0    |    0    |   2693  |
+|          |       tmp_fu_1306       |    0    |    0    |   2693  |
+|----------|-------------------------|---------|---------|---------|
 |          |     add_ln24_fu_590     |    0    |    0    |    12   |
 |          |       out_d_fu_602      |    0    |    0    |    15   |
 |          |         i_fu_668        |    0    |    0    |    13   |
@@ -5733,10 +5737,6 @@ br_ln0                (br               ) [ 01111111111]
 |          |     add_ln47_fu_1256    |    0    |    0    |    15   |
 |          |      buffer_fu_1376     |    0    |    0    |    29   |
 |          |    add_ln47_1_fu_1418   |    0    |    0    |    12   |
-|----------|-------------------------|---------|---------|---------|
-|          |       tmp_9_fu_612      |    0    |    0    |    65   |
-|    mux   |       tmp_3_fu_683      |    0    |    0    |    65   |
-|          |       tmp_fu_1306       |    0    |    0    |    65   |
 |----------|-------------------------|---------|---------|---------|
 |          |   select_ln32_fu_1088   |    0    |    0    |    4    |
 |          |  select_ln32_4_fu_1126  |    0    |    0    |    9    |
@@ -5807,7 +5807,7 @@ br_ln0                (br               ) [ 01111111111]
 |----------|-------------------------|---------|---------|---------|
 | bitselect|      tmp_4_fu_1382      |    0    |    0    |    0    |
 |----------|-------------------------|---------|---------|---------|
-|   Total  |                         |    3    |    0    |   650   |
+|   Total  |                         |    3    |    0    |   8534  |
 |----------|-------------------------|---------|---------|---------|
 
 Memories:
@@ -5885,10 +5885,10 @@ N/A
 +-----------+--------+--------+--------+--------+
 |           | DSP48E |  Delay |   FF   |   LUT  |
 +-----------+--------+--------+--------+--------+
-|  Function |    3   |    -   |    0   |   650  |
+|  Function |    3   |    -   |    0   |  8534  |
 |   Memory  |    -   |    -   |    -   |    -   |
 |Multiplexer|    -   |    1   |    -   |    9   |
 |  Register |    -   |    -   |   800  |    -   |
 +-----------+--------+--------+--------+--------+
-|   Total   |    3   |    1   |   800  |   659  |
+|   Total   |    3   |    1   |   800  |  8543  |
 +-----------+--------+--------+--------+--------+

@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'depthwise_conv2d_fix'
 ================================================================
-* Date:           Tue Dec 31 23:13:08 2019
+* Date:           Tue Dec 31 23:40:39 2019
 
 * Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
 * Project:        HLS
@@ -210,8 +210,8 @@ ST_4 : Operation 118 [1/1] (0.99ns)   --->   "%select_ln24_9 = select i1 %icmp_l
 ST_4 : Operation 119 [1/1] (0.00ns)   --->   "%zext_ln24_5 = zext i1 %select_ln24_9 to i5" [../layers_c/depthwise_conv2d.cpp:24]   --->   Operation 119 'zext' 'zext_ln24_5' <Predicate = (!icmp_ln24 & and_ln24)> <Delay = 0.00>
 ST_4 : Operation 120 [1/1] (0.00ns)   --->   "%tmp = call i6 @_ssdm_op_BitConcatenate.i6.i1.i5(i1 %out_d, i5 0)" [../layers_c/depthwise_conv2d.cpp:27]   --->   Operation 120 'bitconcatenate' 'tmp' <Predicate = (!icmp_ln24 & icmp_ln32 & !and_ln24)> <Delay = 0.00>
 ST_4 : Operation 121 [1/1] (0.00ns)   --->   "%p_shl13_cast_mid170_c = zext i6 %tmp to i7" [../layers_c/depthwise_conv2d.cpp:27]   --->   Operation 121 'zext' 'p_shl13_cast_mid170_c' <Predicate = (!icmp_ln24 & icmp_ln32 & !and_ln24)> <Delay = 0.00>
-ST_4 : Operation 122 [1/1] (0.00ns)   --->   "%tmp_1 = call i3 @_ssdm_op_BitConcatenate.i3.i1.i2(i1 %out_d, i2 0)" [../layers_c/depthwise_conv2d.cpp:27]   --->   Operation 122 'bitconcatenate' 'tmp_1' <Predicate = (!icmp_ln24 & icmp_ln32 & !and_ln24)> <Delay = 0.00>
-ST_4 : Operation 123 [1/1] (0.00ns)   --->   "%p_shl14_cast_mid174_c = zext i3 %tmp_1 to i7" [../layers_c/depthwise_conv2d.cpp:27]   --->   Operation 123 'zext' 'p_shl14_cast_mid174_c' <Predicate = (!icmp_ln24 & icmp_ln32 & !and_ln24)> <Delay = 0.00>
+ST_4 : Operation 122 [1/1] (0.00ns)   --->   "%tmp_4 = call i3 @_ssdm_op_BitConcatenate.i3.i1.i2(i1 %out_d, i2 0)" [../layers_c/depthwise_conv2d.cpp:27]   --->   Operation 122 'bitconcatenate' 'tmp_4' <Predicate = (!icmp_ln24 & icmp_ln32 & !and_ln24)> <Delay = 0.00>
+ST_4 : Operation 123 [1/1] (0.00ns)   --->   "%p_shl14_cast_mid174_c = zext i3 %tmp_4 to i7" [../layers_c/depthwise_conv2d.cpp:27]   --->   Operation 123 'zext' 'p_shl14_cast_mid174_c' <Predicate = (!icmp_ln24 & icmp_ln32 & !and_ln24)> <Delay = 0.00>
 ST_4 : Operation 124 [1/1] (1.82ns)   --->   "%tmp12_mid176 = sub i7 %p_shl13_cast_mid170_c, %p_shl14_cast_mid174_c" [../layers_c/depthwise_conv2d.cpp:27]   --->   Operation 124 'sub' 'tmp12_mid176' <Predicate = (!icmp_ln24 & icmp_ln32 & !and_ln24)> <Delay = 1.82> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_4 : Operation 125 [1/1] (0.00ns) (grouped into LUT with out node add_ln48)   --->   "%tmp12_mid176_cast = sext i7 %tmp12_mid176 to i11" [../layers_c/depthwise_conv2d.cpp:27]   --->   Operation 125 'sext' 'tmp12_mid176_cast' <Predicate = (!icmp_ln24 & icmp_ln32 & !and_ln24)> <Delay = 0.00>
 ST_4 : Operation 126 [1/1] (0.00ns) (grouped into LUT with out node add_ln48)   --->   "%select_ln24_13 = select i1 %icmp_ln32, i11 %tmp12_mid176_cast, i11 %tmp12" [../layers_c/depthwise_conv2d.cpp:24]   --->   Operation 126 'select' 'select_ln24_13' <Predicate = (!icmp_ln24 & !and_ln24)> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.68> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>

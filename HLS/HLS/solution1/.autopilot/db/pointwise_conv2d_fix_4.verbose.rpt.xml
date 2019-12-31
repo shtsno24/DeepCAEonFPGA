@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'pointwise_conv2d_fix_4'" level="0">
-<item name = "Date">Tue Dec 31 23:13:18 2019
+<item name = "Date">Tue Dec 31 23:42:43 2019
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">HLS</item>
@@ -51,20 +51,20 @@
 <column name="DSP">-, 1, -, -, -</column>
 <column name="Expression">-, 2, 0, 383, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">-, -, 0, 130, -</column>
+<column name="Instance">-, -, 0, 5386, -</column>
 <column name="Memory">-, -, -, -, -</column>
 <column name="Multiplexer">-, -, -, 132, -</column>
 <column name="Register">0, -, 982, 128, -</column>
 <specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
-<specialColumn name="Utilization (%)">0, 1, ~0, 1, 0</specialColumn>
+<specialColumn name="Utilization (%)">0, 1, ~0, 11, 0</specialColumn>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
-<column name="network_mux_164_16_1_1_x1_U115">network_mux_164_16_1_1_x1, 0, 0, 0, 65, 0</column>
-<column name="network_mux_164_32_1_1_U116">network_mux_164_32_1_1, 0, 0, 0, 65, 0</column>
+<column name="network_mux_164_16_1_1_x1_U115">network_mux_164_16_1_1_x1, 0, 0, 0, 2693, 0</column>
+<column name="network_mux_164_32_1_1_U116">network_mux_164_32_1_1, 0, 0, 0, 2693, 0</column>
 </table>
 </item>
 <item name = "DSP48E"><table name="" hasTotal="0">

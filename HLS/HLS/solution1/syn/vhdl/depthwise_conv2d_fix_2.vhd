@@ -195,8 +195,8 @@ architecture behav of depthwise_conv2d_fix_2 is
     signal sext_ln27_7_reg_1212 : STD_LOGIC_VECTOR (29 downto 0);
     signal sext_ln30_fu_572_p1 : STD_LOGIC_VECTOR (29 downto 0);
     signal sext_ln30_reg_1217 : STD_LOGIC_VECTOR (29 downto 0);
-    signal tmp_4_fu_576_p18 : STD_LOGIC_VECTOR (15 downto 0);
-    signal tmp_4_reg_1222 : STD_LOGIC_VECTOR (15 downto 0);
+    signal tmp_2_fu_576_p18 : STD_LOGIC_VECTOR (15 downto 0);
+    signal tmp_2_reg_1222 : STD_LOGIC_VECTOR (15 downto 0);
     signal icmp_ln32_fu_613_p2 : STD_LOGIC_VECTOR (0 downto 0);
     signal add_ln32_fu_618_p2 : STD_LOGIC_VECTOR (9 downto 0);
     signal add_ln32_reg_1231 : STD_LOGIC_VECTOR (9 downto 0);
@@ -472,7 +472,7 @@ begin
         din14 => ap_const_lv16_0,
         din15 => ap_const_lv16_0,
         din16 => trunc_ln27_reg_1080,
-        dout => tmp_4_fu_576_p18);
+        dout => tmp_2_fu_576_p18);
 
     network_mac_muladd_9ns_6ns_5ns_14_1_1_U35 : component network_mac_muladd_9ns_6ns_5ns_14_1_1
     generic map (
@@ -916,7 +916,7 @@ begin
                 sext_ln27_7_reg_1212 <= sext_ln27_7_fu_568_p1;
                 sext_ln27_reg_1177 <= sext_ln27_fu_547_p1;
                 sext_ln30_reg_1217 <= sext_ln30_fu_572_p1;
-                tmp_4_reg_1222 <= tmp_4_fu_576_p18;
+                tmp_2_reg_1222 <= tmp_2_fu_576_p18;
             end if;
         end if;
     end process;
@@ -1067,7 +1067,7 @@ begin
     add_ln40_8_fu_809_p2 <= std_logic_vector(unsigned(tmp10_2_0_mid2_reg_1311) + unsigned(zext_ln40_1_reg_1283));
     add_ln40_9_fu_813_p2 <= std_logic_vector(unsigned(zext_ln40_3_reg_1300) + unsigned(tmp10_2_0_mid2_reg_1311));
     add_ln40_fu_691_p2 <= std_logic_vector(unsigned(tmp10_0_0_mid2_reg_1264) + unsigned(zext_ln40_1_fu_688_p1));
-    add_ln48_1_fu_855_p2 <= std_logic_vector(unsigned(trunc_ln_reg_1339) + unsigned(tmp_4_reg_1222));
+    add_ln48_1_fu_855_p2 <= std_logic_vector(unsigned(trunc_ln_reg_1339) + unsigned(tmp_2_reg_1222));
     add_ln48_2_fu_889_p2 <= std_logic_vector(unsigned(trunc_ln48_1_reg_1374) + unsigned(trunc_ln48_2_reg_1379));
     add_ln48_3_fu_893_p2 <= std_logic_vector(unsigned(add_ln48_2_fu_889_p2) + unsigned(trunc_ln48_s_reg_1344));
     add_ln48_4_fu_956_p2 <= std_logic_vector(unsigned(add_ln48_3_reg_1414) + unsigned(add_ln48_1_reg_1394));

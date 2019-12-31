@@ -1422,10 +1422,10 @@ hls_label_0_begin:50  %sext_ln30 = sext i16 %kernel_load_8 to i30
 
 <Node id="84" bw="16" op_0_bw="16" op_1_bw="16" op_2_bw="16" op_3_bw="16" op_4_bw="16" op_5_bw="16" op_6_bw="16" op_7_bw="16" op_8_bw="16" op_9_bw="3">
 <![CDATA[
-hls_label_0_begin:51  %tmp_5 = call i16 @_ssdm_op_Mux.ap_auto.8i16.i3(i16 0, i16 0, i16 0, i16 0, i16 0, i16 0, i16 0, i16 0, i3 %trunc_ln27)
+hls_label_0_begin:51  %tmp_3 = call i16 @_ssdm_op_Mux.ap_auto.8i16.i3(i16 0, i16 0, i16 0, i16 0, i16 0, i16 0, i16 0, i16 0, i3 %trunc_ln27)
 
 ]]></Node>
-<StgValue><ssdm name="tmp_5"/></StgValue>
+<StgValue><ssdm name="tmp_3"/></StgValue>
 </operation>
 
 <operation id="104" st_id="7" stage="1" lat="1">
@@ -2742,7 +2742,7 @@ hls_label_2:77  %input_load_21 = load i16* %input_addr_21, align 2
 
 <Node id="182" bw="16" op_0_bw="16" op_1_bw="16">
 <![CDATA[
-hls_label_2:88  %add_ln48_9 = add i16 %trunc_ln, %tmp_5
+hls_label_2:88  %add_ln48_9 = add i16 %trunc_ln, %tmp_3
 
 ]]></Node>
 <StgValue><ssdm name="add_ln48_9"/></StgValue>
@@ -3720,25 +3720,25 @@ hls_label_0_end:1  br label %1
 </dataflow>
 <dataflow id="428" from="kernel_load_8" to="sext_ln30" fromId="101" toId="102">
 </dataflow>
-<dataflow id="430" from="_ssdm_op_Mux.ap_auto.8i16.i3" to="tmp_5" fromId="429" toId="103">
+<dataflow id="430" from="_ssdm_op_Mux.ap_auto.8i16.i3" to="tmp_3" fromId="429" toId="103">
 </dataflow>
-<dataflow id="432" from="StgValue_431" to="tmp_5" fromId="431" toId="103">
+<dataflow id="432" from="StgValue_431" to="tmp_3" fromId="431" toId="103">
 </dataflow>
-<dataflow id="433" from="StgValue_431" to="tmp_5" fromId="431" toId="103">
+<dataflow id="433" from="StgValue_431" to="tmp_3" fromId="431" toId="103">
 </dataflow>
-<dataflow id="434" from="StgValue_431" to="tmp_5" fromId="431" toId="103">
+<dataflow id="434" from="StgValue_431" to="tmp_3" fromId="431" toId="103">
 </dataflow>
-<dataflow id="435" from="StgValue_431" to="tmp_5" fromId="431" toId="103">
+<dataflow id="435" from="StgValue_431" to="tmp_3" fromId="431" toId="103">
 </dataflow>
-<dataflow id="436" from="StgValue_431" to="tmp_5" fromId="431" toId="103">
+<dataflow id="436" from="StgValue_431" to="tmp_3" fromId="431" toId="103">
 </dataflow>
-<dataflow id="437" from="StgValue_431" to="tmp_5" fromId="431" toId="103">
+<dataflow id="437" from="StgValue_431" to="tmp_3" fromId="431" toId="103">
 </dataflow>
-<dataflow id="438" from="StgValue_431" to="tmp_5" fromId="431" toId="103">
+<dataflow id="438" from="StgValue_431" to="tmp_3" fromId="431" toId="103">
 </dataflow>
-<dataflow id="439" from="StgValue_431" to="tmp_5" fromId="431" toId="103">
+<dataflow id="439" from="StgValue_431" to="tmp_3" fromId="431" toId="103">
 </dataflow>
-<dataflow id="440" from="trunc_ln27" to="tmp_5" fromId="43" toId="103">
+<dataflow id="440" from="trunc_ln27" to="tmp_3" fromId="43" toId="103">
 </dataflow>
 <dataflow id="442" from="StgValue_441" to="indvar_flatten" fromId="441" toId="105">
 <condition id="-1">
@@ -4067,7 +4067,7 @@ hls_label_0_end:1  br label %1
 </dataflow>
 <dataflow id="596" from="trunc_ln" to="add_ln48_9" fromId="154" toId="185">
 </dataflow>
-<dataflow id="597" from="tmp_5" to="add_ln48_9" fromId="103" toId="185">
+<dataflow id="597" from="tmp_3" to="add_ln48_9" fromId="103" toId="185">
 </dataflow>
 <dataflow id="598" from="input_load_18" to="sext_ln40_12" fromId="177" toId="186">
 </dataflow>

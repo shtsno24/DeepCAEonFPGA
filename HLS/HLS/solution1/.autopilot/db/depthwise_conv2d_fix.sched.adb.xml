@@ -1835,10 +1835,10 @@ hls_label_2:61  %p_shl13_cast_mid170_c = zext i6 %tmp to i7
 
 <Node id="105" bw="3" op_0_bw="3" op_1_bw="1" op_2_bw="2">
 <![CDATA[
-hls_label_2:62  %tmp_1 = call i3 @_ssdm_op_BitConcatenate.i3.i1.i2(i1 %out_d, i2 0)
+hls_label_2:62  %tmp_4 = call i3 @_ssdm_op_BitConcatenate.i3.i1.i2(i1 %out_d, i2 0)
 
 ]]></Node>
-<StgValue><ssdm name="tmp_1"/></StgValue>
+<StgValue><ssdm name="tmp_4"/></StgValue>
 </operation>
 
 <operation id="123" st_id="4" stage="1" lat="1">
@@ -1853,7 +1853,7 @@ hls_label_2:62  %tmp_1 = call i3 @_ssdm_op_BitConcatenate.i3.i1.i2(i1 %out_d, i2
 
 <Node id="106" bw="7" op_0_bw="3">
 <![CDATA[
-hls_label_2:63  %p_shl14_cast_mid174_c = zext i3 %tmp_1 to i7
+hls_label_2:63  %p_shl14_cast_mid174_c = zext i3 %tmp_4 to i7
 
 ]]></Node>
 <StgValue><ssdm name="p_shl14_cast_mid174_c"/></StgValue>

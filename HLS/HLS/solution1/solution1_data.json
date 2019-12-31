@@ -261,12 +261,12 @@
       "impl\/vhdl\/network_mux_646_16_1_1.vhd",
       "impl\/vhdl\/network_mux_1287_16_1_1.vhd",
       "impl\/vhdl\/network_mux_1287_16_1_1_x.vhd",
+      "impl\/vhdl\/network_mux_78410_1_1_1.vhd",
+      "impl\/vhdl\/network_mux_78410_2_1_1.vhd",
       "impl\/vhdl\/network_SeparableConv2D_1_w_s.vhd",
       "impl\/vhdl\/network_SeparableConv2D_2_w_s.vhd",
       "impl\/vhdl\/network_SeparableConv2D_3_w_s.vhd",
       "impl\/vhdl\/network_SeparableConv2D_4_w_s.vhd",
-      "impl\/vhdl\/network_sig_buffer_keep_V.vhd",
-      "impl\/vhdl\/network_sig_buffer_user_V.vhd",
       "impl\/vhdl\/padding2d_fix16.vhd",
       "impl\/vhdl\/pointwise_conv2d_fix.vhd",
       "impl\/vhdl\/pointwise_conv2d_fix_1.vhd",
@@ -309,6 +309,8 @@
       "impl\/verilog\/network_mux_646_16_1_1.v",
       "impl\/verilog\/network_mux_1287_16_1_1.v",
       "impl\/verilog\/network_mux_1287_16_1_1_x.v",
+      "impl\/verilog\/network_mux_78410_1_1_1.v",
+      "impl\/verilog\/network_mux_78410_2_1_1.v",
       "impl\/verilog\/network_SeparableConv2D_1_w_s.v",
       "impl\/verilog\/network_SeparableConv2D_1_w_s_rom.dat",
       "impl\/verilog\/network_SeparableConv2D_2_w_s.v",
@@ -317,8 +319,6 @@
       "impl\/verilog\/network_SeparableConv2D_3_w_s_rom.dat",
       "impl\/verilog\/network_SeparableConv2D_4_w_s.v",
       "impl\/verilog\/network_SeparableConv2D_4_w_s_rom.dat",
-      "impl\/verilog\/network_sig_buffer_keep_V.v",
-      "impl\/verilog\/network_sig_buffer_user_V.v",
       "impl\/verilog\/padding2d_fix16.v",
       "impl\/verilog\/pointwise_conv2d_fix.v",
       "impl\/verilog\/pointwise_conv2d_fix_1.v",
@@ -862,48 +862,48 @@
       "ModuleName": "network",
       "Instances": [
         {
-          "ModuleName": "depthwise_conv2d_fix_2",
-          "InstanceName": "grp_depthwise_conv2d_fix_2_fu_419"
-        },
-        {
-          "ModuleName": "depthwise_conv2d_fix_1",
-          "InstanceName": "grp_depthwise_conv2d_fix_1_fu_440"
-        },
-        {
-          "ModuleName": "depthwise_conv2d_fix",
-          "InstanceName": "grp_depthwise_conv2d_fix_fu_461"
-        },
-        {
           "ModuleName": "pointwise_conv2d_fix_1",
-          "InstanceName": "grp_pointwise_conv2d_fix_1_fu_469"
+          "InstanceName": "grp_pointwise_conv2d_fix_1_fu_20657"
         },
         {
           "ModuleName": "pointwise_conv2d_fix_3",
-          "InstanceName": "grp_pointwise_conv2d_fix_3_fu_475"
+          "InstanceName": "grp_pointwise_conv2d_fix_3_fu_20663"
         },
         {
           "ModuleName": "pointwise_conv2d_fix_2",
-          "InstanceName": "grp_pointwise_conv2d_fix_2_fu_481"
+          "InstanceName": "grp_pointwise_conv2d_fix_2_fu_20669"
         },
         {
           "ModuleName": "pointwise_conv2d_fix_4",
-          "InstanceName": "grp_pointwise_conv2d_fix_4_fu_487"
-        },
-        {
-          "ModuleName": "padding2d_fix16",
-          "InstanceName": "grp_padding2d_fix16_fu_493"
-        },
-        {
-          "ModuleName": "max_pooling2d_fix16",
-          "InstanceName": "grp_max_pooling2d_fix16_fu_511"
+          "InstanceName": "grp_pointwise_conv2d_fix_4_fu_20675"
         },
         {
           "ModuleName": "pointwise_conv2d_fix",
-          "InstanceName": "grp_pointwise_conv2d_fix_fu_532"
+          "InstanceName": "grp_pointwise_conv2d_fix_fu_20681"
+        },
+        {
+          "ModuleName": "depthwise_conv2d_fix_2",
+          "InstanceName": "grp_depthwise_conv2d_fix_2_fu_20687"
+        },
+        {
+          "ModuleName": "depthwise_conv2d_fix_1",
+          "InstanceName": "grp_depthwise_conv2d_fix_1_fu_20708"
+        },
+        {
+          "ModuleName": "depthwise_conv2d_fix",
+          "InstanceName": "grp_depthwise_conv2d_fix_fu_20729"
+        },
+        {
+          "ModuleName": "padding2d_fix16",
+          "InstanceName": "grp_padding2d_fix16_fu_20737"
+        },
+        {
+          "ModuleName": "max_pooling2d_fix16",
+          "InstanceName": "grp_max_pooling2d_fix16_fu_20755"
         },
         {
           "ModuleName": "up_sampling2d_fix16",
-          "InstanceName": "grp_up_sampling2d_fix16_fu_538"
+          "InstanceName": "grp_up_sampling2d_fix16_fu_20776"
         }
       ]
     },
@@ -1137,7 +1137,7 @@
           "BRAM_18K": "0",
           "DSP48E": "2",
           "FF": "295",
-          "LUT": "540",
+          "LUT": "5796",
           "URAM": "0"
         }
       },
@@ -1213,7 +1213,7 @@
         "Area": {
           "DSP48E": "10",
           "FF": "935",
-          "LUT": "1190",
+          "LUT": "3818",
           "BRAM_18K": "0",
           "URAM": "0"
         }
@@ -1259,7 +1259,7 @@
           "BRAM_18K": "0",
           "DSP48E": "3",
           "FF": "1104",
-          "LUT": "970",
+          "LUT": "8854",
           "URAM": "0"
         }
       },
@@ -1302,7 +1302,7 @@
         "Area": {
           "DSP48E": "10",
           "FF": "874",
-          "LUT": "1065",
+          "LUT": "3693",
           "BRAM_18K": "0",
           "URAM": "0"
         }
@@ -1348,7 +1348,7 @@
           "BRAM_18K": "0",
           "DSP48E": "3",
           "FF": "1043",
-          "LUT": "954",
+          "LUT": "8838",
           "URAM": "0"
         }
       },
@@ -1426,7 +1426,7 @@
           "BRAM_18K": "0",
           "DSP48E": "3",
           "FF": "1066",
-          "LUT": "966",
+          "LUT": "8850",
           "URAM": "0"
         }
       },
@@ -1464,7 +1464,7 @@
           "BRAM_18K": "0",
           "DSP48E": "3",
           "FF": "982",
-          "LUT": "773",
+          "LUT": "6029",
           "URAM": "0"
         }
       },
@@ -1506,10 +1506,10 @@
           }
         ],
         "Area": {
-          "BRAM_18K": "39",
+          "BRAM_18K": "37",
           "DSP48E": "47",
-          "FF": "8686",
-          "LUT": "12221",
+          "FF": "14958",
+          "LUT": "67657",
           "URAM": "0"
         }
       }
@@ -1525,7 +1525,7 @@
   },
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2019-12-31 23:13:20 JST",
+    "Time": "2019-12-31 23:43:26 JST",
     "ToolName": "vivado_hls",
     "ToolVersion": "2019.1"
   }

@@ -76006,7 +76006,7 @@ int network(axis input_data[784], axis output_data[784]) {
 
  int16_t MemBank_Out[784];
  axis tmp, sig_buffer[784];
-
+#pragma HLS array_partition variable=sig_buffer
 
  int i = 0;
  do {

@@ -146,8 +146,8 @@ reg   [2:0] trunc_ln27_reg_1058;
 wire   [0:0] icmp_ln23_fu_415_p2;
 wire   [5:0] add_ln27_fu_443_p2;
 reg   [5:0] add_ln27_reg_1063;
-wire   [6:0] zext_ln27_23_fu_454_p1;
-reg   [6:0] zext_ln27_23_reg_1073;
+wire   [6:0] zext_ln27_19_fu_454_p1;
+reg   [6:0] zext_ln27_19_reg_1073;
 wire    ap_CS_fsm_state3;
 reg   [15:0] kernel_load_reg_1083;
 reg   [15:0] kernel_load_1_reg_1098;
@@ -178,8 +178,8 @@ wire  signed [29:0] sext_ln27_14_fu_560_p1;
 reg  signed [29:0] sext_ln27_14_reg_1193;
 wire  signed [29:0] sext_ln30_fu_564_p1;
 reg  signed [29:0] sext_ln30_reg_1198;
-wire   [15:0] tmp_5_fu_568_p10;
-reg   [15:0] tmp_5_reg_1203;
+wire   [15:0] tmp_3_fu_568_p10;
+reg   [15:0] tmp_3_reg_1203;
 wire   [0:0] icmp_ln32_fu_589_p2;
 wire   [7:0] add_ln32_fu_594_p2;
 reg   [7:0] add_ln32_reg_1212;
@@ -240,15 +240,15 @@ reg   [7:0] ap_phi_mux_indvar_flatten_phi_fu_328_p4;
 wire    ap_block_pp0_stage0;
 reg   [3:0] ap_phi_mux_out_h_0_phi_fu_339_p4;
 reg   [3:0] ap_phi_mux_out_w_0_phi_fu_350_p4;
-wire   [63:0] zext_ln27_14_fu_449_p1;
-wire   [63:0] zext_ln27_15_fu_463_p1;
-wire   [63:0] zext_ln27_16_fu_474_p1;
-wire   [63:0] zext_ln27_17_fu_484_p1;
-wire   [63:0] zext_ln27_18_fu_494_p1;
-wire   [63:0] zext_ln27_19_fu_504_p1;
-wire   [63:0] zext_ln27_20_fu_514_p1;
-wire   [63:0] zext_ln27_21_fu_524_p1;
-wire   [63:0] zext_ln27_22_fu_534_p1;
+wire   [63:0] zext_ln27_10_fu_449_p1;
+wire   [63:0] zext_ln27_11_fu_463_p1;
+wire   [63:0] zext_ln27_12_fu_474_p1;
+wire   [63:0] zext_ln27_13_fu_484_p1;
+wire   [63:0] zext_ln27_14_fu_494_p1;
+wire   [63:0] zext_ln27_15_fu_504_p1;
+wire   [63:0] zext_ln27_16_fu_514_p1;
+wire   [63:0] zext_ln27_17_fu_524_p1;
+wire   [63:0] zext_ln27_18_fu_534_p1;
 wire   [63:0] zext_ln40_14_fu_674_p1;
 wire    ap_block_pp0_stage1;
 wire   [63:0] zext_ln40_16_fu_693_p1;
@@ -363,7 +363,7 @@ network_mux_83_16_1_1_x_U65(
     .din6(16'd0),
     .din7(16'd0),
     .din8(trunc_ln27_reg_1058),
-    .dout(tmp_5_fu_568_p10)
+    .dout(tmp_3_fu_568_p10)
 );
 
 network_mac_muladd_7ns_5ns_4ns_11_1_1 #(
@@ -691,7 +691,7 @@ end
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state3)) begin
         kernel_load_reg_1083 <= kernel_q0;
-        zext_ln27_23_reg_1073[5 : 0] <= zext_ln27_23_fu_454_p1[5 : 0];
+        zext_ln27_19_reg_1073[5 : 0] <= zext_ln27_19_fu_454_p1[5 : 0];
     end
 end
 
@@ -721,7 +721,7 @@ always @ (posedge ap_clk) begin
         sext_ln27_9_reg_1168 <= sext_ln27_9_fu_545_p1;
         sext_ln27_reg_1158 <= sext_ln27_fu_539_p1;
         sext_ln30_reg_1198 <= sext_ln30_fu_564_p1;
-        tmp_5_reg_1203 <= tmp_5_fu_568_p10;
+        tmp_3_reg_1203 <= tmp_3_fu_568_p10;
     end
 end
 
@@ -875,15 +875,15 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state6)) begin
-        kernel_address0 = zext_ln27_22_fu_534_p1;
+        kernel_address0 = zext_ln27_18_fu_534_p1;
     end else if ((1'b1 == ap_CS_fsm_state5)) begin
-        kernel_address0 = zext_ln27_20_fu_514_p1;
+        kernel_address0 = zext_ln27_16_fu_514_p1;
     end else if ((1'b1 == ap_CS_fsm_state4)) begin
-        kernel_address0 = zext_ln27_18_fu_494_p1;
+        kernel_address0 = zext_ln27_14_fu_494_p1;
     end else if ((1'b1 == ap_CS_fsm_state3)) begin
-        kernel_address0 = zext_ln27_15_fu_463_p1;
+        kernel_address0 = zext_ln27_11_fu_463_p1;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        kernel_address0 = zext_ln27_14_fu_449_p1;
+        kernel_address0 = zext_ln27_10_fu_449_p1;
     end else begin
         kernel_address0 = 'bx;
     end
@@ -891,13 +891,13 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state6)) begin
-        kernel_address1 = zext_ln27_21_fu_524_p1;
+        kernel_address1 = zext_ln27_17_fu_524_p1;
     end else if ((1'b1 == ap_CS_fsm_state5)) begin
-        kernel_address1 = zext_ln27_19_fu_504_p1;
+        kernel_address1 = zext_ln27_15_fu_504_p1;
     end else if ((1'b1 == ap_CS_fsm_state4)) begin
-        kernel_address1 = zext_ln27_17_fu_484_p1;
+        kernel_address1 = zext_ln27_13_fu_484_p1;
     end else if ((1'b1 == ap_CS_fsm_state3)) begin
-        kernel_address1 = zext_ln27_16_fu_474_p1;
+        kernel_address1 = zext_ln27_12_fu_474_p1;
     end else begin
         kernel_address1 = 'bx;
     end
@@ -1018,21 +1018,21 @@ assign add_ln23_3_fu_410_p2 = (phi_mul_reg_300 + zext_ln40_reg_1008);
 
 assign add_ln23_fu_405_p2 = (phi_mul5_reg_312 + zext_ln48_reg_1020);
 
-assign add_ln27_1_fu_457_p2 = (7'd1 + zext_ln27_23_fu_454_p1);
+assign add_ln27_1_fu_457_p2 = (7'd1 + zext_ln27_19_fu_454_p1);
 
-assign add_ln27_2_fu_468_p2 = (7'd2 + zext_ln27_23_fu_454_p1);
+assign add_ln27_2_fu_468_p2 = (7'd2 + zext_ln27_19_fu_454_p1);
 
-assign add_ln27_3_fu_479_p2 = (7'd3 + zext_ln27_23_reg_1073);
+assign add_ln27_3_fu_479_p2 = (7'd3 + zext_ln27_19_reg_1073);
 
-assign add_ln27_4_fu_489_p2 = (7'd4 + zext_ln27_23_reg_1073);
+assign add_ln27_4_fu_489_p2 = (7'd4 + zext_ln27_19_reg_1073);
 
-assign add_ln27_5_fu_499_p2 = (7'd5 + zext_ln27_23_reg_1073);
+assign add_ln27_5_fu_499_p2 = (7'd5 + zext_ln27_19_reg_1073);
 
-assign add_ln27_6_fu_509_p2 = (7'd6 + zext_ln27_23_reg_1073);
+assign add_ln27_6_fu_509_p2 = (7'd6 + zext_ln27_19_reg_1073);
 
-assign add_ln27_7_fu_519_p2 = (7'd7 + zext_ln27_23_reg_1073);
+assign add_ln27_7_fu_519_p2 = (7'd7 + zext_ln27_19_reg_1073);
 
-assign add_ln27_8_fu_529_p2 = (7'd8 + zext_ln27_23_reg_1073);
+assign add_ln27_8_fu_529_p2 = (7'd8 + zext_ln27_19_reg_1073);
 
 assign add_ln27_fu_443_p2 = (zext_ln27_fu_427_p1 + shl_ln_fu_435_p3);
 
@@ -1072,7 +1072,7 @@ assign add_ln48_15_fu_923_p2 = (add_ln48_14_fu_919_p2 + trunc_ln48_3_reg_1390);
 
 assign add_ln48_16_fu_928_p2 = (add_ln48_15_fu_923_p2 + add_ln48_13_fu_915_p2);
 
-assign add_ln48_9_fu_833_p2 = (trunc_ln_reg_1310 + tmp_5_reg_1203);
+assign add_ln48_9_fu_833_p2 = (trunc_ln_reg_1310 + tmp_3_reg_1203);
 
 assign ap_CS_fsm_pp0_stage0 = ap_CS_fsm[32'd7];
 
@@ -1268,25 +1268,25 @@ assign tmp12_mid2_v_v_fu_646_p2 = (phi_mul5_reg_312 + tmp10_0_0_mid2_v_v_v_fu_62
 
 assign trunc_ln27_fu_431_p1 = out_d_0_reg_289[2:0];
 
-assign zext_ln27_14_fu_449_p1 = add_ln27_fu_443_p2;
+assign zext_ln27_10_fu_449_p1 = add_ln27_fu_443_p2;
 
-assign zext_ln27_15_fu_463_p1 = add_ln27_1_fu_457_p2;
+assign zext_ln27_11_fu_463_p1 = add_ln27_1_fu_457_p2;
 
-assign zext_ln27_16_fu_474_p1 = add_ln27_2_fu_468_p2;
+assign zext_ln27_12_fu_474_p1 = add_ln27_2_fu_468_p2;
 
-assign zext_ln27_17_fu_484_p1 = add_ln27_3_fu_479_p2;
+assign zext_ln27_13_fu_484_p1 = add_ln27_3_fu_479_p2;
 
-assign zext_ln27_18_fu_494_p1 = add_ln27_4_fu_489_p2;
+assign zext_ln27_14_fu_494_p1 = add_ln27_4_fu_489_p2;
 
-assign zext_ln27_19_fu_504_p1 = add_ln27_5_fu_499_p2;
+assign zext_ln27_15_fu_504_p1 = add_ln27_5_fu_499_p2;
 
-assign zext_ln27_20_fu_514_p1 = add_ln27_6_fu_509_p2;
+assign zext_ln27_16_fu_514_p1 = add_ln27_6_fu_509_p2;
 
-assign zext_ln27_21_fu_524_p1 = add_ln27_7_fu_519_p2;
+assign zext_ln27_17_fu_524_p1 = add_ln27_7_fu_519_p2;
 
-assign zext_ln27_22_fu_534_p1 = add_ln27_8_fu_529_p2;
+assign zext_ln27_18_fu_534_p1 = add_ln27_8_fu_529_p2;
 
-assign zext_ln27_23_fu_454_p1 = add_ln27_reg_1063;
+assign zext_ln27_19_fu_454_p1 = add_ln27_reg_1063;
 
 assign zext_ln27_fu_427_p1 = out_d_0_reg_289;
 
@@ -1329,7 +1329,7 @@ always @ (posedge ap_clk) begin
     zext_ln40_1_cast23_reg_1013[10:6] <= 5'b00000;
     zext_ln48_reg_1020[6:5] <= 2'b00;
     zext_ln48_1_cast_reg_1025[10:5] <= 6'b000000;
-    zext_ln27_23_reg_1073[6] <= 1'b0;
+    zext_ln27_19_reg_1073[6] <= 1'b0;
     zext_ln40_13_reg_1254[10:4] <= 7'b0000000;
     zext_ln40_15_reg_1271[10:4] <= 7'b0000000;
     zext_ln40_17_reg_1289[10:4] <= 7'b0000000;
