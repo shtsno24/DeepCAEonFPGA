@@ -9,15 +9,15 @@
 <ProductFamily>zynq</ProductFamily>
 <Part>xc7z020-clg400-1</Part>
 <TopModelName>network</TopModelName>
-<TargetClockPeriod>7.69</TargetClockPeriod>
-<ClockUncertainty>3.08</ClockUncertainty>
+<TargetClockPeriod>10.00</TargetClockPeriod>
+<ClockUncertainty>1.25</ClockUncertainty>
 </UserAssignments>
 
 <PerformanceEstimates>
 <PipelineType>none</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>6.380</EstimatedClockPeriod>
+<EstimatedClockPeriod>9.634</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
@@ -36,9 +36,9 @@
 </Loop1>
 <Loop2>
 <TripCount>784</TripCount>
-<Latency>785</Latency>
+<Latency>784</Latency>
 <PipelineII>1</PipelineII>
-<PipelineDepth>3</PipelineDepth>
+<PipelineDepth>2</PipelineDepth>
 </Loop2>
 <Loop3>
 <TripCount>784</TripCount>
@@ -53,8 +53,8 @@
 <Resources>
 <BRAM_18K>39</BRAM_18K>
 <DSP48E>47</DSP48E>
-<FF>11855</FF>
-<LUT>12923</LUT>
+<FF>8202</FF>
+<LUT>12678</LUT>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>

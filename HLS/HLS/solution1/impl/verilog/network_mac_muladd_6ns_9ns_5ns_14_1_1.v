@@ -4,7 +4,7 @@
 // ==============================================================
 `timescale 1 ns / 1 ps
 
-(* use_dsp = "yes" *) module network_mac_muladd_6ns_9ns_5ns_14_1_1_DSP48_2(
+(* use_dsp = "yes" *) module network_mac_muladd_6ns_9ns_5ns_14_1_1_DSP48_3(
     input  [6 - 1:0] in0,
     input  [9 - 1:0] in1,
     input  [5 - 1:0] in2,
@@ -46,7 +46,7 @@ output[dout_WIDTH - 1:0] dout;
 
 
 
-network_mac_muladd_6ns_9ns_5ns_14_1_1_DSP48_2 network_mac_muladd_6ns_9ns_5ns_14_1_1_DSP48_2_U(
+network_mac_muladd_6ns_9ns_5ns_14_1_1_DSP48_3 network_mac_muladd_6ns_9ns_5ns_14_1_1_DSP48_3_U(
     .in0( din0 ),
     .in1( din1 ),
     .in2( din2 ),

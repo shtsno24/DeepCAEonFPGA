@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'network'" level="0">
-<item name = "Date">Tue Dec 31 16:01:02 2019
+<item name = "Date">Tue Dec 31 20:30:47 2019
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">HLS</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">7.69, 6.380, 3.08</column>
+<column name="ap_clk">10.00, 9.634, 1.25</column>
 </table>
 </item>
 </section>
@@ -36,7 +36,7 @@
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
 <column name="- Loop 1">?, ?, 1, 1, 1, ?, yes</column>
-<column name="- Loop 2">785, 785, 3, 1, 1, 784, yes</column>
+<column name="- Loop 2">784, 784, 2, 1, 1, 784, yes</column>
 <column name="- Loop 3">785, 785, 3, 1, 1, 784, yes</column>
 </table>
 </item>

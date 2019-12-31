@@ -9,23 +9,23 @@
 <ProductFamily>zynq</ProductFamily>
 <Part>xc7z020-clg400-1</Part>
 <TopModelName>pointwise_conv2d_fix_4</TopModelName>
-<TargetClockPeriod>7.69</TargetClockPeriod>
-<ClockUncertainty>3.08</ClockUncertainty>
+<TargetClockPeriod>10.00</TargetClockPeriod>
+<ClockUncertainty>1.25</ClockUncertainty>
 </UserAssignments>
 
 <PerformanceEstimates>
 <PipelineType>none</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>6.380</EstimatedClockPeriod>
+<EstimatedClockPeriod>9.634</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>12574</Best-caseLatency>
-<Average-caseLatency>12574</Average-caseLatency>
-<Worst-caseLatency>12574</Worst-caseLatency>
-<Interval-min>12574</Interval-min>
-<Interval-max>12574</Interval-max>
+<Best-caseLatency>12567</Best-caseLatency>
+<Average-caseLatency>12567</Average-caseLatency>
+<Worst-caseLatency>12567</Worst-caseLatency>
+<Interval-min>12567</Interval-min>
+<Interval-max>12567</Interval-max>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <Loop1>
@@ -36,9 +36,9 @@
 </Loop1>
 <Loop2>
 <TripCount>12544</TripCount>
-<Latency>12554</Latency>
+<Latency>12547</Latency>
 <PipelineII>1</PipelineII>
-<PipelineDepth>12</PipelineDepth>
+<PipelineDepth>5</PipelineDepth>
 </Loop2>
 </SummaryOfLoopLatency>
 </PerformanceEstimates>
@@ -47,8 +47,8 @@
 <Resources>
 <BRAM_18K>0</BRAM_18K>
 <DSP48E>3</DSP48E>
-<FF>1314</FF>
-<LUT>793</LUT>
+<FF>982</FF>
+<LUT>773</LUT>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>

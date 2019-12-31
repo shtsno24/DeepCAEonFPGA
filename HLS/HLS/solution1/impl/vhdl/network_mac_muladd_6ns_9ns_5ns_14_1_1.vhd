@@ -6,7 +6,7 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 
-entity network_mac_muladd_6ns_9ns_5ns_14_1_1_DSP48_2 is
+entity network_mac_muladd_6ns_9ns_5ns_14_1_1_DSP48_3 is
 port (
     in0:  in  std_logic_vector(6 - 1 downto 0);
     in1:  in  std_logic_vector(9 - 1 downto 0);
@@ -14,11 +14,11 @@ port (
     dout: out std_logic_vector(14 - 1 downto 0));
 
     attribute use_dsp : string;
-    attribute use_dsp of network_mac_muladd_6ns_9ns_5ns_14_1_1_DSP48_2 : entity is "yes";
+    attribute use_dsp of network_mac_muladd_6ns_9ns_5ns_14_1_1_DSP48_3 : entity is "yes";
 
 end entity;
 
-architecture behav of network_mac_muladd_6ns_9ns_5ns_14_1_1_DSP48_2 is
+architecture behav of network_mac_muladd_6ns_9ns_5ns_14_1_1_DSP48_3 is
     signal a       : signed(25-1 downto 0);
     signal b       : signed(18-1 downto 0);
     signal c       : signed(48-1 downto 0);
@@ -54,7 +54,7 @@ entity network_mac_muladd_6ns_9ns_5ns_14_1_1 is
 end entity;
 
 architecture arch of network_mac_muladd_6ns_9ns_5ns_14_1_1 is
-    component network_mac_muladd_6ns_9ns_5ns_14_1_1_DSP48_2 is
+    component network_mac_muladd_6ns_9ns_5ns_14_1_1_DSP48_3 is
         port (
             in0 : IN STD_LOGIC_VECTOR;
             in1 : IN STD_LOGIC_VECTOR;
@@ -65,7 +65,7 @@ architecture arch of network_mac_muladd_6ns_9ns_5ns_14_1_1 is
 
 
 begin
-    network_mac_muladd_6ns_9ns_5ns_14_1_1_DSP48_2_U :  component network_mac_muladd_6ns_9ns_5ns_14_1_1_DSP48_2
+    network_mac_muladd_6ns_9ns_5ns_14_1_1_DSP48_3_U :  component network_mac_muladd_6ns_9ns_5ns_14_1_1_DSP48_3
     port map (
         in0 => din0,
         in1 => din1,

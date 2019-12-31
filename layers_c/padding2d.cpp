@@ -11,7 +11,8 @@ uint8_t padding2d_fix16(uint16_t padding_height, uint16_t padding_width,
 	uint16_t o_count = 0, i_count = 0;
 
 	for(uint16_t depth = 0; depth < input_depth; depth++){
-//#pragma HLS UNROLL FACTOR=2
+#pragma HLS PIPELINE
+		//#pragma HLS UNROLL FACTOR=2
 		for(uint16_t i = 0; i < padding_height * (padding_width * 2 + input_width) + padding_width; i++){
 //#pragma HLS UNROLL FACTOR=4
 #pragma HLS loop_flatten
