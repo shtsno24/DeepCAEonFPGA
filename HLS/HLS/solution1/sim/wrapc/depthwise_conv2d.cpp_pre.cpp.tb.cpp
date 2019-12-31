@@ -253,6 +253,7 @@ uint8_t depthwise_conv2d_fix16(uint16_t input_depth, uint16_t input_height,
 #pragma HLS array_partition variable=kernel_buffer
 
  for (uint16_t out_d = 0; out_d < output_depth; out_d++) {
+#pragma HLS unroll factor=4
 #pragma HLS PIPELINE
   for (uint8_t i = 0; i < kernel_height * kernel_width; i++) {
 #pragma HLS PIPELINE

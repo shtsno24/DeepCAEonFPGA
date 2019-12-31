@@ -1342,10 +1342,10 @@ hls_label_2:85  %tmp10_1_0_mid2 = select i1 %and_ln24, i11 %tmp10_1_0_mid1, i11 
 
 <Node id="146" bw="11" op_0_bw="5">
 <![CDATA[
-hls_label_2:103  %zext_ln40_2 = zext i5 %out_w_0_mid2 to i11
+hls_label_2:103  %zext_ln40_1 = zext i5 %out_w_0_mid2 to i11
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln40_2"/></StgValue>
+<StgValue><ssdm name="zext_ln40_1"/></StgValue>
 </operation>
 
 <operation id="93" st_id="3" stage="1" lat="1">
@@ -1358,7 +1358,7 @@ hls_label_2:103  %zext_ln40_2 = zext i5 %out_w_0_mid2 to i11
 
 <Node id="147" bw="11" op_0_bw="11" op_1_bw="11">
 <![CDATA[
-hls_label_2:104  %add_ln40 = add i11 %zext_ln40_2, %tmp10_0_0_mid2
+hls_label_2:104  %add_ln40 = add i11 %zext_ln40_1, %tmp10_0_0_mid2
 
 ]]></Node>
 <StgValue><ssdm name="add_ln40"/></StgValue>
@@ -1390,10 +1390,10 @@ hls_label_2:105  %sext_ln40_1 = sext i11 %add_ln40 to i32
 
 <Node id="149" bw="64" op_0_bw="32">
 <![CDATA[
-hls_label_2:106  %zext_ln40_3 = zext i32 %sext_ln40_1 to i64
+hls_label_2:106  %zext_ln40_2 = zext i32 %sext_ln40_1 to i64
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln40_3"/></StgValue>
+<StgValue><ssdm name="zext_ln40_2"/></StgValue>
 </operation>
 
 <operation id="96" st_id="3" stage="1" lat="1">
@@ -1406,7 +1406,7 @@ hls_label_2:106  %zext_ln40_3 = zext i32 %sext_ln40_1 to i64
 
 <Node id="150" bw="14" op_0_bw="16" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-hls_label_2:107  %input_addr = getelementptr [14400 x i16]* %input_r, i64 0, i64 %zext_ln40_3
+hls_label_2:107  %input_addr = getelementptr [14400 x i16]* %input_r, i64 0, i64 %zext_ln40_2
 
 ]]></Node>
 <StgValue><ssdm name="input_addr"/></StgValue>
@@ -1454,10 +1454,10 @@ hls_label_2:112  %out_w = add i5 %out_w_0_mid2, 1
 
 <Node id="157" bw="11" op_0_bw="5">
 <![CDATA[
-hls_label_2:114  %zext_ln40_13 = zext i5 %out_w to i11
+hls_label_2:114  %zext_ln40_12 = zext i5 %out_w to i11
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln40_13"/></StgValue>
+<StgValue><ssdm name="zext_ln40_12"/></StgValue>
 </operation>
 
 <operation id="100" st_id="3" stage="1" lat="1">
@@ -1470,7 +1470,7 @@ hls_label_2:114  %zext_ln40_13 = zext i5 %out_w to i11
 
 <Node id="158" bw="11" op_0_bw="11" op_1_bw="11">
 <![CDATA[
-hls_label_2:115  %add_ln40_2 = add i11 %tmp10_0_0_mid2, %zext_ln40_13
+hls_label_2:115  %add_ln40_2 = add i11 %tmp10_0_0_mid2, %zext_ln40_12
 
 ]]></Node>
 <StgValue><ssdm name="add_ln40_2"/></StgValue>
@@ -1502,10 +1502,10 @@ hls_label_2:116  %sext_ln40_3 = sext i11 %add_ln40_2 to i32
 
 <Node id="160" bw="64" op_0_bw="32">
 <![CDATA[
-hls_label_2:117  %zext_ln40_4 = zext i32 %sext_ln40_3 to i64
+hls_label_2:117  %zext_ln40_3 = zext i32 %sext_ln40_3 to i64
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln40_4"/></StgValue>
+<StgValue><ssdm name="zext_ln40_3"/></StgValue>
 </operation>
 
 <operation id="103" st_id="3" stage="1" lat="1">
@@ -1518,7 +1518,7 @@ hls_label_2:117  %zext_ln40_4 = zext i32 %sext_ln40_3 to i64
 
 <Node id="161" bw="14" op_0_bw="16" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-hls_label_2:118  %input_addr_7 = getelementptr [14400 x i16]* %input_r, i64 0, i64 %zext_ln40_4
+hls_label_2:118  %input_addr_7 = getelementptr [14400 x i16]* %input_r, i64 0, i64 %zext_ln40_3
 
 ]]></Node>
 <StgValue><ssdm name="input_addr_7"/></StgValue>
@@ -2088,10 +2088,10 @@ hls_label_2:123  %add_ln40_3 = add i5 %out_w_0_mid2, 2
 
 <Node id="168" bw="11" op_0_bw="5">
 <![CDATA[
-hls_label_2:125  %zext_ln40_15 = zext i5 %add_ln40_3 to i11
+hls_label_2:125  %zext_ln40_14 = zext i5 %add_ln40_3 to i11
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln40_15"/></StgValue>
+<StgValue><ssdm name="zext_ln40_14"/></StgValue>
 </operation>
 
 <operation id="138" st_id="4" stage="1" lat="1">
@@ -2104,7 +2104,7 @@ hls_label_2:125  %zext_ln40_15 = zext i5 %add_ln40_3 to i11
 
 <Node id="169" bw="11" op_0_bw="11" op_1_bw="11">
 <![CDATA[
-hls_label_2:126  %add_ln40_4 = add i11 %tmp10_0_0_mid2, %zext_ln40_15
+hls_label_2:126  %add_ln40_4 = add i11 %tmp10_0_0_mid2, %zext_ln40_14
 
 ]]></Node>
 <StgValue><ssdm name="add_ln40_4"/></StgValue>
@@ -2136,10 +2136,10 @@ hls_label_2:127  %sext_ln40_5 = sext i11 %add_ln40_4 to i32
 
 <Node id="171" bw="64" op_0_bw="32">
 <![CDATA[
-hls_label_2:128  %zext_ln40_5 = zext i32 %sext_ln40_5 to i64
+hls_label_2:128  %zext_ln40_4 = zext i32 %sext_ln40_5 to i64
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln40_5"/></StgValue>
+<StgValue><ssdm name="zext_ln40_4"/></StgValue>
 </operation>
 
 <operation id="141" st_id="4" stage="1" lat="1">
@@ -2152,7 +2152,7 @@ hls_label_2:128  %zext_ln40_5 = zext i32 %sext_ln40_5 to i64
 
 <Node id="172" bw="14" op_0_bw="16" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-hls_label_2:129  %input_addr_8 = getelementptr [14400 x i16]* %input_r, i64 0, i64 %zext_ln40_5
+hls_label_2:129  %input_addr_8 = getelementptr [14400 x i16]* %input_r, i64 0, i64 %zext_ln40_4
 
 ]]></Node>
 <StgValue><ssdm name="input_addr_8"/></StgValue>
@@ -2184,7 +2184,7 @@ hls_label_2:130  %input_load_8 = load i16* %input_addr_8, align 2
 
 <Node id="177" bw="11" op_0_bw="11" op_1_bw="11">
 <![CDATA[
-hls_label_2:134  %add_ln40_5 = add i11 %zext_ln40_2, %tmp10_1_0_mid2
+hls_label_2:134  %add_ln40_5 = add i11 %zext_ln40_1, %tmp10_1_0_mid2
 
 ]]></Node>
 <StgValue><ssdm name="add_ln40_5"/></StgValue>
@@ -2216,10 +2216,10 @@ hls_label_2:135  %sext_ln40_7 = sext i11 %add_ln40_5 to i32
 
 <Node id="179" bw="64" op_0_bw="32">
 <![CDATA[
-hls_label_2:136  %zext_ln40_6 = zext i32 %sext_ln40_7 to i64
+hls_label_2:136  %zext_ln40_5 = zext i32 %sext_ln40_7 to i64
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln40_6"/></StgValue>
+<StgValue><ssdm name="zext_ln40_5"/></StgValue>
 </operation>
 
 <operation id="146" st_id="4" stage="1" lat="1">
@@ -2232,7 +2232,7 @@ hls_label_2:136  %zext_ln40_6 = zext i32 %sext_ln40_7 to i64
 
 <Node id="180" bw="14" op_0_bw="16" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-hls_label_2:137  %input_addr_9 = getelementptr [14400 x i16]* %input_r, i64 0, i64 %zext_ln40_6
+hls_label_2:137  %input_addr_9 = getelementptr [14400 x i16]* %input_r, i64 0, i64 %zext_ln40_5
 
 ]]></Node>
 <StgValue><ssdm name="input_addr_9"/></StgValue>
@@ -2264,7 +2264,7 @@ hls_label_2:138  %input_load_9 = load i16* %input_addr_9, align 2
 
 <Node id="185" bw="11" op_0_bw="11" op_1_bw="11">
 <![CDATA[
-hls_label_2:142  %add_ln40_6 = add i11 %tmp10_1_0_mid2, %zext_ln40_13
+hls_label_2:142  %add_ln40_6 = add i11 %tmp10_1_0_mid2, %zext_ln40_12
 
 ]]></Node>
 <StgValue><ssdm name="add_ln40_6"/></StgValue>
@@ -2280,7 +2280,7 @@ hls_label_2:142  %add_ln40_6 = add i11 %tmp10_1_0_mid2, %zext_ln40_13
 
 <Node id="193" bw="11" op_0_bw="11" op_1_bw="11">
 <![CDATA[
-hls_label_2:150  %add_ln40_7 = add i11 %tmp10_1_0_mid2, %zext_ln40_15
+hls_label_2:150  %add_ln40_7 = add i11 %tmp10_1_0_mid2, %zext_ln40_14
 
 ]]></Node>
 <StgValue><ssdm name="add_ln40_7"/></StgValue>
@@ -2296,7 +2296,7 @@ hls_label_2:150  %add_ln40_7 = add i11 %tmp10_1_0_mid2, %zext_ln40_15
 
 <Node id="230" bw="11" op_0_bw="11" op_1_bw="11">
 <![CDATA[
-hls_label_2:187  %add_ln48 = add i11 %zext_ln40_2, %tmp12_mid2
+hls_label_2:187  %add_ln48 = add i11 %zext_ln40_1, %tmp12_mid2
 
 ]]></Node>
 <StgValue><ssdm name="add_ln48"/></StgValue>
@@ -2313,10 +2313,10 @@ hls_label_2:187  %add_ln48 = add i11 %zext_ln40_2, %tmp12_mid2
 
 <Node id="236" bw="10" op_0_bw="10" op_1_bw="10">
 <![CDATA[
-hls_label_2:193  %add_ln32_5 = add i10 %indvar_flatten, 1
+hls_label_2:193  %add_ln32_3 = add i10 %indvar_flatten, 1
 
 ]]></Node>
-<StgValue><ssdm name="add_ln32_5"/></StgValue>
+<StgValue><ssdm name="add_ln32_3"/></StgValue>
 </operation>
 </state>
 
@@ -2770,10 +2770,10 @@ hls_label_2:143  %sext_ln40_9 = sext i11 %add_ln40_6 to i32
 
 <Node id="187" bw="64" op_0_bw="32">
 <![CDATA[
-hls_label_2:144  %zext_ln40_7 = zext i32 %sext_ln40_9 to i64
+hls_label_2:144  %zext_ln40_6 = zext i32 %sext_ln40_9 to i64
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln40_7"/></StgValue>
+<StgValue><ssdm name="zext_ln40_6"/></StgValue>
 </operation>
 
 <operation id="180" st_id="5" stage="1" lat="1">
@@ -2786,7 +2786,7 @@ hls_label_2:144  %zext_ln40_7 = zext i32 %sext_ln40_9 to i64
 
 <Node id="188" bw="14" op_0_bw="16" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-hls_label_2:145  %input_addr_10 = getelementptr [14400 x i16]* %input_r, i64 0, i64 %zext_ln40_7
+hls_label_2:145  %input_addr_10 = getelementptr [14400 x i16]* %input_r, i64 0, i64 %zext_ln40_6
 
 ]]></Node>
 <StgValue><ssdm name="input_addr_10"/></StgValue>
@@ -2834,10 +2834,10 @@ hls_label_2:151  %sext_ln40_11 = sext i11 %add_ln40_7 to i32
 
 <Node id="195" bw="64" op_0_bw="32">
 <![CDATA[
-hls_label_2:152  %zext_ln40_8 = zext i32 %sext_ln40_11 to i64
+hls_label_2:152  %zext_ln40_7 = zext i32 %sext_ln40_11 to i64
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln40_8"/></StgValue>
+<StgValue><ssdm name="zext_ln40_7"/></StgValue>
 </operation>
 
 <operation id="184" st_id="5" stage="1" lat="1">
@@ -2850,7 +2850,7 @@ hls_label_2:152  %zext_ln40_8 = zext i32 %sext_ln40_11 to i64
 
 <Node id="196" bw="14" op_0_bw="16" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-hls_label_2:153  %input_addr_11 = getelementptr [14400 x i16]* %input_r, i64 0, i64 %zext_ln40_8
+hls_label_2:153  %input_addr_11 = getelementptr [14400 x i16]* %input_r, i64 0, i64 %zext_ln40_7
 
 ]]></Node>
 <StgValue><ssdm name="input_addr_11"/></StgValue>
@@ -3079,10 +3079,10 @@ hls_label_2:102  %zext_ln40 = zext i5 %out_w_0_mid2 to i10
 
 <Node id="156" bw="10" op_0_bw="5">
 <![CDATA[
-hls_label_2:113  %zext_ln40_12 = zext i5 %out_w to i10
+hls_label_2:113  %zext_ln40_11 = zext i5 %out_w to i10
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln40_12"/></StgValue>
+<StgValue><ssdm name="zext_ln40_11"/></StgValue>
 </operation>
 
 <operation id="199" st_id="6" stage="1" lat="1">
@@ -3095,10 +3095,10 @@ hls_label_2:113  %zext_ln40_12 = zext i5 %out_w to i10
 
 <Node id="167" bw="10" op_0_bw="5">
 <![CDATA[
-hls_label_2:124  %zext_ln40_14 = zext i5 %add_ln40_3 to i10
+hls_label_2:124  %zext_ln40_13 = zext i5 %add_ln40_3 to i10
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln40_14"/></StgValue>
+<StgValue><ssdm name="zext_ln40_13"/></StgValue>
 </operation>
 
 <operation id="200" st_id="6" stage="1" lat="1">
@@ -3255,10 +3255,10 @@ hls_label_2:158  %add_ln40_8 = add i10 %zext_ln40, %tmp10_2_0_mid2
 
 <Node id="202" bw="64" op_0_bw="10">
 <![CDATA[
-hls_label_2:159  %zext_ln40_9 = zext i10 %add_ln40_8 to i64
+hls_label_2:159  %zext_ln40_8 = zext i10 %add_ln40_8 to i64
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln40_9"/></StgValue>
+<StgValue><ssdm name="zext_ln40_8"/></StgValue>
 </operation>
 
 <operation id="210" st_id="6" stage="1" lat="1">
@@ -3271,7 +3271,7 @@ hls_label_2:159  %zext_ln40_9 = zext i10 %add_ln40_8 to i64
 
 <Node id="203" bw="14" op_0_bw="16" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-hls_label_2:160  %input_addr_12 = getelementptr [14400 x i16]* %input_r, i64 0, i64 %zext_ln40_9
+hls_label_2:160  %input_addr_12 = getelementptr [14400 x i16]* %input_r, i64 0, i64 %zext_ln40_8
 
 ]]></Node>
 <StgValue><ssdm name="input_addr_12"/></StgValue>
@@ -3303,7 +3303,7 @@ hls_label_2:161  %input_load_12 = load i16* %input_addr_12, align 2
 
 <Node id="208" bw="10" op_0_bw="10" op_1_bw="10">
 <![CDATA[
-hls_label_2:165  %add_ln40_9 = add i10 %tmp10_2_0_mid2, %zext_ln40_12
+hls_label_2:165  %add_ln40_9 = add i10 %tmp10_2_0_mid2, %zext_ln40_11
 
 ]]></Node>
 <StgValue><ssdm name="add_ln40_9"/></StgValue>
@@ -3319,10 +3319,10 @@ hls_label_2:165  %add_ln40_9 = add i10 %tmp10_2_0_mid2, %zext_ln40_12
 
 <Node id="209" bw="64" op_0_bw="10">
 <![CDATA[
-hls_label_2:166  %zext_ln40_10 = zext i10 %add_ln40_9 to i64
+hls_label_2:166  %zext_ln40_9 = zext i10 %add_ln40_9 to i64
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln40_10"/></StgValue>
+<StgValue><ssdm name="zext_ln40_9"/></StgValue>
 </operation>
 
 <operation id="214" st_id="6" stage="1" lat="1">
@@ -3335,7 +3335,7 @@ hls_label_2:166  %zext_ln40_10 = zext i10 %add_ln40_9 to i64
 
 <Node id="210" bw="14" op_0_bw="16" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-hls_label_2:167  %input_addr_13 = getelementptr [14400 x i16]* %input_r, i64 0, i64 %zext_ln40_10
+hls_label_2:167  %input_addr_13 = getelementptr [14400 x i16]* %input_r, i64 0, i64 %zext_ln40_9
 
 ]]></Node>
 <StgValue><ssdm name="input_addr_13"/></StgValue>
@@ -3367,7 +3367,7 @@ hls_label_2:168  %input_load_13 = load i16* %input_addr_13, align 2
 
 <Node id="215" bw="10" op_0_bw="10" op_1_bw="10">
 <![CDATA[
-hls_label_2:172  %add_ln40_10 = add i10 %tmp10_2_0_mid2, %zext_ln40_14
+hls_label_2:172  %add_ln40_10 = add i10 %tmp10_2_0_mid2, %zext_ln40_13
 
 ]]></Node>
 <StgValue><ssdm name="add_ln40_10"/></StgValue>
@@ -3399,7 +3399,7 @@ hls_label_2:179  %add_ln48_1 = add i16 %trunc_ln, %trunc_ln48_1
 
 <Node id="237" bw="10" op_0_bw="1" op_1_bw="10" op_2_bw="10">
 <![CDATA[
-hls_label_2:194  %select_ln32_15 = select i1 %icmp_ln32, i10 1, i10 %add_ln32_5
+hls_label_2:194  %select_ln32_15 = select i1 %icmp_ln32, i10 1, i10 %add_ln32_3
 
 ]]></Node>
 <StgValue><ssdm name="select_ln32_15"/></StgValue>
@@ -3594,10 +3594,10 @@ hls_label_2:168  %input_load_13 = load i16* %input_addr_13, align 2
 
 <Node id="216" bw="64" op_0_bw="10">
 <![CDATA[
-hls_label_2:173  %zext_ln40_11 = zext i10 %add_ln40_10 to i64
+hls_label_2:173  %zext_ln40_10 = zext i10 %add_ln40_10 to i64
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln40_11"/></StgValue>
+<StgValue><ssdm name="zext_ln40_10"/></StgValue>
 </operation>
 
 <operation id="231" st_id="7" stage="1" lat="1">
@@ -3610,7 +3610,7 @@ hls_label_2:173  %zext_ln40_11 = zext i10 %add_ln40_10 to i64
 
 <Node id="217" bw="14" op_0_bw="16" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-hls_label_2:174  %input_addr_14 = getelementptr [14400 x i16]* %input_r, i64 0, i64 %zext_ln40_11
+hls_label_2:174  %input_addr_14 = getelementptr [14400 x i16]* %input_r, i64 0, i64 %zext_ln40_10
 
 ]]></Node>
 <StgValue><ssdm name="input_addr_14"/></StgValue>

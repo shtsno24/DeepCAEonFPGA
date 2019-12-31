@@ -5730,7 +5730,7 @@
 					<Obj>
 						<type>0</type>
 						<id>130</id>
-						<name>add_ln21_3</name>
+						<name>add_ln21_1</name>
 						<fileName>../layers_c/max_pooling2d.cpp</fileName>
 						<fileDirectory>/home/shts/DeepCAEonFPGA/HLS</fileDirectory>
 						<lineNumber>21</lineNumber>
@@ -10820,7 +10820,7 @@
 			</second>
 		</item>
 		<item>
-			<first>add_ln21_3_fu_557</first>
+			<first>add_ln21_1_fu_557</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'padding2d_fix16'" level="0">
-<item name = "Date">Tue Dec 31 20:30:49 2019
+<item name = "Date">Tue Dec 31 22:01:50 2019
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">HLS</item>
@@ -96,15 +96,15 @@
 <column name="add_ln13_8_fu_446_p2">+, 0, 0, 16, 1, 5</column>
 <column name="add_ln13_9_fu_452_p2">+, 0, 0, 15, 5, 5</column>
 <column name="add_ln13_fu_324_p2">+, 0, 0, 15, 2, 5</column>
-<column name="add_ln21_1_fu_525_p2">+, 0, 0, 23, 16, 16</column>
-<column name="add_ln21_2_fu_557_p2">+, 0, 0, 19, 14, 14</column>
-<column name="add_ln21_fu_488_p2">+, 0, 0, 23, 16, 1</column>
-<column name="add_ln24_1_fu_504_p2">+, 0, 0, 16, 16, 16</column>
-<column name="add_ln24_3_fu_578_p2">+, 0, 0, 19, 14, 14</column>
-<column name="add_ln24_fu_499_p2">+, 0, 0, 16, 16, 16</column>
-<column name="add_ln32_1_fu_540_p2">+, 0, 0, 19, 14, 1</column>
-<column name="add_ln32_fu_520_p2">+, 0, 0, 19, 14, 14</column>
-<column name="add_ln41_fu_567_p2">+, 0, 0, 19, 14, 1</column>
+<column name="add_ln24_1_fu_525_p2">+, 0, 0, 23, 16, 16</column>
+<column name="add_ln24_2_fu_557_p2">+, 0, 0, 19, 14, 14</column>
+<column name="add_ln24_fu_488_p2">+, 0, 0, 23, 16, 1</column>
+<column name="add_ln27_1_fu_504_p2">+, 0, 0, 16, 16, 16</column>
+<column name="add_ln27_3_fu_578_p2">+, 0, 0, 19, 14, 14</column>
+<column name="add_ln27_fu_499_p2">+, 0, 0, 16, 16, 16</column>
+<column name="add_ln36_1_fu_540_p2">+, 0, 0, 19, 14, 1</column>
+<column name="add_ln36_fu_520_p2">+, 0, 0, 19, 14, 14</column>
+<column name="add_ln45_fu_567_p2">+, 0, 0, 19, 14, 1</column>
 <column name="depth_fu_467_p2">+, 0, 0, 15, 5, 1</column>
 <column name="empty_35_fu_378_p2">+, 0, 0, 15, 2, 5</column>
 <column name="empty_36_fu_399_p2">+, 0, 0, 15, 1, 5</column>
@@ -114,9 +114,9 @@
 <column name="o_count_6_fu_546_p2">+, 0, 0, 19, 14, 1</column>
 <column name="icmp_ln13_fu_462_p2">icmp, 0, 0, 11, 5, 5</column>
 <column name="icmp_ln16_fu_477_p2">icmp, 0, 0, 11, 5, 5</column>
-<column name="icmp_ln24_fu_509_p2">icmp, 0, 0, 11, 5, 5</column>
-<column name="icmp_ln27_fu_529_p2">icmp, 0, 0, 13, 14, 14</column>
-<column name="icmp_ln45_fu_587_p2">icmp, 0, 0, 11, 5, 5</column>
+<column name="icmp_ln27_fu_509_p2">icmp, 0, 0, 11, 5, 5</column>
+<column name="icmp_ln31_fu_529_p2">icmp, 0, 0, 13, 14, 14</column>
+<column name="icmp_ln49_fu_587_p2">icmp, 0, 0, 11, 5, 5</column>
 <column name="ap_enable_pp1">xor, 0, 0, 2, 1, 2</column>
 <column name="ap_enable_reg_pp1_iter1">xor, 0, 0, 2, 2, 1</column>
 </table>
@@ -150,9 +150,9 @@
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
 <column name="add_ln13_9_reg_724">5, 0, 5, 0</column>
 <column name="add_ln13_reg_642">5, 0, 5, 0</column>
-<column name="add_ln21_1_reg_777">16, 0, 16, 0</column>
-<column name="add_ln24_1_reg_757">16, 0, 16, 0</column>
-<column name="add_ln32_reg_772">14, 0, 14, 0</column>
+<column name="add_ln24_1_reg_777">16, 0, 16, 0</column>
+<column name="add_ln27_1_reg_757">16, 0, 16, 0</column>
+<column name="add_ln36_reg_772">14, 0, 14, 0</column>
 <column name="ap_CS_fsm">10, 0, 10, 0</column>
 <column name="ap_enable_reg_pp1_iter0">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp1_iter1">1, 0, 1, 0</column>
@@ -165,7 +165,7 @@
 <column name="i_count_1_reg_264">14, 0, 14, 0</column>
 <column name="i_count_2_reg_297">14, 0, 14, 0</column>
 <column name="i_count_reg_752">14, 0, 14, 0</column>
-<column name="icmp_ln27_reg_782">1, 0, 1, 0</column>
+<column name="icmp_ln31_reg_782">1, 0, 1, 0</column>
 <column name="indvars_iv10_reg_187">14, 0, 14, 0</column>
 <column name="indvars_iv2_reg_157">5, 0, 5, 0</column>
 <column name="indvars_iv_reg_167">5, 0, 5, 0</column>
@@ -185,7 +185,7 @@
 <column name="trunc_ln13_1_reg_657">5, 0, 5, 0</column>
 <column name="trunc_ln13_2_reg_730">5, 0, 5, 0</column>
 <column name="trunc_ln13_reg_635">5, 0, 5, 0</column>
-<column name="trunc_ln24_reg_662">5, 0, 5, 0</column>
+<column name="trunc_ln27_reg_662">5, 0, 5, 0</column>
 <column name="zext_ln13_2_reg_673">7, 0, 14, 7</column>
 <column name="zext_ln13_5_reg_683">12, 0, 16, 4</column>
 <column name="zext_ln13_6_reg_708">10, 0, 14, 4</column>

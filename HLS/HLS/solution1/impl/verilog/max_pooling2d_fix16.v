@@ -248,7 +248,7 @@ wire   [13:0] zext_ln26_7_fu_475_p1;
 wire   [4:0] or_ln26_fu_489_p2;
 wire   [13:0] zext_ln26_9_fu_495_p1;
 wire   [0:0] icmp_ln29_fu_536_p2;
-wire   [7:0] add_ln21_3_fu_557_p2;
+wire   [7:0] add_ln21_1_fu_557_p2;
 wire   [0:0] icmp_ln29_1_fu_574_p2;
 wire   [4:0] mul_ln34_fu_594_p0;
 wire   [5:0] mul_ln34_fu_594_p1;
@@ -720,7 +720,7 @@ end
 
 assign add_ln19_fu_519_p2 = (indvar_flatten39_reg_175 + 13'd1);
 
-assign add_ln21_3_fu_557_p2 = (indvar_flatten_reg_199 + 8'd1);
+assign add_ln21_1_fu_557_p2 = (indvar_flatten_reg_199 + 8'd1);
 
 assign add_ln26_1_fu_499_p2 = (mul_ln26_2_reg_770 + zext_ln26_9_fu_495_p1);
 
@@ -930,7 +930,7 @@ assign select_ln20_5_fu_394_p3 = ((icmp_ln21_fu_351_p2[0:0] === 1'b1) ? icmp_ln2
 
 assign select_ln20_fu_356_p3 = ((icmp_ln21_fu_351_p2[0:0] === 1'b1) ? 4'd0 : ap_phi_mux_out_h_0_phi_fu_215_p4);
 
-assign select_ln21_1_fu_563_p3 = ((icmp_ln21_reg_737[0:0] === 1'b1) ? 8'd1 : add_ln21_3_fu_557_p2);
+assign select_ln21_1_fu_563_p3 = ((icmp_ln21_reg_737[0:0] === 1'b1) ? 8'd1 : add_ln21_1_fu_557_p2);
 
 assign select_ln21_fu_531_p3 = ((select_ln20_5_reg_751[0:0] === 1'b1) ? out_h_reg_758 : select_ln20_reg_746);
 

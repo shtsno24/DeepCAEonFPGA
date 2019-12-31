@@ -659,10 +659,10 @@ hls_label_2:9  %shl_ln27_mid1 = call i6 @_ssdm_op_BitConcatenate.i6.i3.i3(i3 %tr
 
 <Node id="56" bw="6" op_0_bw="6" op_1_bw="6">
 <![CDATA[
-hls_label_2:10  %add_ln27_2 = add i6 %zext_ln27_4, %shl_ln27_mid1
+hls_label_2:10  %add_ln27_5 = add i6 %zext_ln27_4, %shl_ln27_mid1
 
 ]]></Node>
-<StgValue><ssdm name="add_ln27_2"/></StgValue>
+<StgValue><ssdm name="add_ln27_5"/></StgValue>
 </operation>
 
 <operation id="51" st_id="2" stage="1" lat="1">
@@ -675,7 +675,7 @@ hls_label_2:10  %add_ln27_2 = add i6 %zext_ln27_4, %shl_ln27_mid1
 
 <Node id="57" bw="6" op_0_bw="1" op_1_bw="6" op_2_bw="6">
 <![CDATA[
-hls_label_2:11  %select_ln24_8 = select i1 %icmp_ln32, i6 %add_ln27_2, i6 %add_ln27
+hls_label_2:11  %select_ln24_8 = select i1 %icmp_ln32, i6 %add_ln27_5, i6 %add_ln27
 
 ]]></Node>
 <StgValue><ssdm name="select_ln24_8"/></StgValue>
@@ -915,10 +915,10 @@ hls_label_2:74  %tmp10_0_0_mid2_v_v = select i1 %select_ln24_14, i7 %tmp_0_0_mid
 
 <Node id="218" bw="8" op_0_bw="8" op_1_bw="8">
 <![CDATA[
-hls_label_2:172  %add_ln32_4 = add i8 1, %indvar_flatten
+hls_label_2:172  %add_ln32_2 = add i8 1, %indvar_flatten
 
 ]]></Node>
-<StgValue><ssdm name="add_ln32_4"/></StgValue>
+<StgValue><ssdm name="add_ln32_2"/></StgValue>
 </operation>
 </state>
 
@@ -1030,10 +1030,10 @@ hls_label_2:20  %kernel_load_9 = load i16* %kernel_addr_9, align 2
 
 <Node id="68" bw="7" op_0_bw="7" op_1_bw="7">
 <![CDATA[
-hls_label_2:22  %add_ln24_11 = add i7 2, %zext_ln24_19
+hls_label_2:22  %add_ln24_10 = add i7 2, %zext_ln24_19
 
 ]]></Node>
-<StgValue><ssdm name="add_ln24_11"/></StgValue>
+<StgValue><ssdm name="add_ln24_10"/></StgValue>
 </operation>
 
 <operation id="74" st_id="3" stage="1" lat="1">
@@ -1046,7 +1046,7 @@ hls_label_2:22  %add_ln24_11 = add i7 2, %zext_ln24_19
 
 <Node id="69" bw="64" op_0_bw="7">
 <![CDATA[
-hls_label_2:23  %zext_ln24_11 = zext i7 %add_ln24_11 to i64
+hls_label_2:23  %zext_ln24_11 = zext i7 %add_ln24_10 to i64
 
 ]]></Node>
 <StgValue><ssdm name="zext_ln24_11"/></StgValue>
@@ -1174,10 +1174,10 @@ hls_label_2:79  %tmp10_1_0_mid2 = mul i11 %zext_ln40_1_cast14, %tmp10_1_0_mid2_v
 
 <Node id="136" bw="11" op_0_bw="4">
 <![CDATA[
-hls_label_2:90  %zext_ln40_14 = zext i4 %out_w_0_mid2 to i11
+hls_label_2:90  %zext_ln40_13 = zext i4 %out_w_0_mid2 to i11
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln40_14"/></StgValue>
+<StgValue><ssdm name="zext_ln40_13"/></StgValue>
 </operation>
 
 <operation id="83" st_id="3" stage="1" lat="1">
@@ -1190,7 +1190,7 @@ hls_label_2:90  %zext_ln40_14 = zext i4 %out_w_0_mid2 to i11
 
 <Node id="137" bw="11" op_0_bw="11" op_1_bw="11">
 <![CDATA[
-hls_label_2:91  %add_ln40 = add i11 %zext_ln40_14, %tmp10_0_0_mid2
+hls_label_2:91  %add_ln40 = add i11 %zext_ln40_13, %tmp10_0_0_mid2
 
 ]]></Node>
 <StgValue><ssdm name="add_ln40"/></StgValue>
@@ -1206,10 +1206,10 @@ hls_label_2:91  %add_ln40 = add i11 %zext_ln40_14, %tmp10_0_0_mid2
 
 <Node id="138" bw="64" op_0_bw="11">
 <![CDATA[
-hls_label_2:92  %zext_ln40_15 = zext i11 %add_ln40 to i64
+hls_label_2:92  %zext_ln40_14 = zext i11 %add_ln40 to i64
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln40_15"/></StgValue>
+<StgValue><ssdm name="zext_ln40_14"/></StgValue>
 </operation>
 
 <operation id="85" st_id="3" stage="1" lat="1">
@@ -1222,7 +1222,7 @@ hls_label_2:92  %zext_ln40_15 = zext i11 %add_ln40 to i64
 
 <Node id="139" bw="14" op_0_bw="16" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-hls_label_2:93  %input_addr = getelementptr [14400 x i16]* %input_r, i64 0, i64 %zext_ln40_15
+hls_label_2:93  %input_addr = getelementptr [14400 x i16]* %input_r, i64 0, i64 %zext_ln40_14
 
 ]]></Node>
 <StgValue><ssdm name="input_addr"/></StgValue>
@@ -1270,10 +1270,10 @@ hls_label_2:98  %out_w = add i4 1, %out_w_0_mid2
 
 <Node id="145" bw="11" op_0_bw="4">
 <![CDATA[
-hls_label_2:99  %zext_ln40_16 = zext i4 %out_w to i11
+hls_label_2:99  %zext_ln40_15 = zext i4 %out_w to i11
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln40_16"/></StgValue>
+<StgValue><ssdm name="zext_ln40_15"/></StgValue>
 </operation>
 
 <operation id="89" st_id="3" stage="1" lat="1">
@@ -1286,7 +1286,7 @@ hls_label_2:99  %zext_ln40_16 = zext i4 %out_w to i11
 
 <Node id="146" bw="11" op_0_bw="11" op_1_bw="11">
 <![CDATA[
-hls_label_2:100  %add_ln40_12 = add i11 %tmp10_0_0_mid2, %zext_ln40_16
+hls_label_2:100  %add_ln40_12 = add i11 %tmp10_0_0_mid2, %zext_ln40_15
 
 ]]></Node>
 <StgValue><ssdm name="add_ln40_12"/></StgValue>
@@ -1302,10 +1302,10 @@ hls_label_2:100  %add_ln40_12 = add i11 %tmp10_0_0_mid2, %zext_ln40_16
 
 <Node id="147" bw="64" op_0_bw="11">
 <![CDATA[
-hls_label_2:101  %zext_ln40_17 = zext i11 %add_ln40_12 to i64
+hls_label_2:101  %zext_ln40_16 = zext i11 %add_ln40_12 to i64
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln40_17"/></StgValue>
+<StgValue><ssdm name="zext_ln40_16"/></StgValue>
 </operation>
 
 <operation id="91" st_id="3" stage="1" lat="1">
@@ -1318,7 +1318,7 @@ hls_label_2:101  %zext_ln40_17 = zext i11 %add_ln40_12 to i64
 
 <Node id="148" bw="14" op_0_bw="16" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-hls_label_2:102  %input_addr_15 = getelementptr [14400 x i16]* %input_r, i64 0, i64 %zext_ln40_17
+hls_label_2:102  %input_addr_15 = getelementptr [14400 x i16]* %input_r, i64 0, i64 %zext_ln40_16
 
 ]]></Node>
 <StgValue><ssdm name="input_addr_15"/></StgValue>
@@ -1462,10 +1462,10 @@ hls_label_2:25  %kernel_load_10 = load i16* %kernel_addr_10, align 2
 
 <Node id="73" bw="7" op_0_bw="7" op_1_bw="7">
 <![CDATA[
-hls_label_2:27  %add_ln24_12 = add i7 3, %zext_ln24_19
+hls_label_2:27  %add_ln24_11 = add i7 3, %zext_ln24_19
 
 ]]></Node>
-<StgValue><ssdm name="add_ln24_12"/></StgValue>
+<StgValue><ssdm name="add_ln24_11"/></StgValue>
 </operation>
 
 <operation id="101" st_id="4" stage="1" lat="1">
@@ -1478,7 +1478,7 @@ hls_label_2:27  %add_ln24_12 = add i7 3, %zext_ln24_19
 
 <Node id="74" bw="64" op_0_bw="7">
 <![CDATA[
-hls_label_2:28  %zext_ln24_12 = zext i7 %add_ln24_12 to i64
+hls_label_2:28  %zext_ln24_12 = zext i7 %add_ln24_11 to i64
 
 ]]></Node>
 <StgValue><ssdm name="zext_ln24_12"/></StgValue>
@@ -1526,10 +1526,10 @@ hls_label_2:30  %kernel_load_11 = load i16* %kernel_addr_11, align 2
 
 <Node id="78" bw="7" op_0_bw="7" op_1_bw="7">
 <![CDATA[
-hls_label_2:32  %add_ln24_13 = add i7 4, %zext_ln24_19
+hls_label_2:32  %add_ln24_12 = add i7 4, %zext_ln24_19
 
 ]]></Node>
-<StgValue><ssdm name="add_ln24_13"/></StgValue>
+<StgValue><ssdm name="add_ln24_12"/></StgValue>
 </operation>
 
 <operation id="105" st_id="4" stage="1" lat="1">
@@ -1542,7 +1542,7 @@ hls_label_2:32  %add_ln24_13 = add i7 4, %zext_ln24_19
 
 <Node id="79" bw="64" op_0_bw="7">
 <![CDATA[
-hls_label_2:33  %zext_ln24_13 = zext i7 %add_ln24_13 to i64
+hls_label_2:33  %zext_ln24_13 = zext i7 %add_ln24_12 to i64
 
 ]]></Node>
 <StgValue><ssdm name="zext_ln24_13"/></StgValue>
@@ -1686,10 +1686,10 @@ hls_label_2:107  %add_ln40_13 = add i4 2, %out_w_0_mid2
 
 <Node id="154" bw="11" op_0_bw="4">
 <![CDATA[
-hls_label_2:108  %zext_ln40_18 = zext i4 %add_ln40_13 to i11
+hls_label_2:108  %zext_ln40_17 = zext i4 %add_ln40_13 to i11
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln40_18"/></StgValue>
+<StgValue><ssdm name="zext_ln40_17"/></StgValue>
 </operation>
 
 <operation id="115" st_id="4" stage="1" lat="1">
@@ -1702,7 +1702,7 @@ hls_label_2:108  %zext_ln40_18 = zext i4 %add_ln40_13 to i11
 
 <Node id="155" bw="11" op_0_bw="11" op_1_bw="11">
 <![CDATA[
-hls_label_2:109  %add_ln40_14 = add i11 %tmp10_0_0_mid2, %zext_ln40_18
+hls_label_2:109  %add_ln40_14 = add i11 %tmp10_0_0_mid2, %zext_ln40_17
 
 ]]></Node>
 <StgValue><ssdm name="add_ln40_14"/></StgValue>
@@ -1718,10 +1718,10 @@ hls_label_2:109  %add_ln40_14 = add i11 %tmp10_0_0_mid2, %zext_ln40_18
 
 <Node id="156" bw="64" op_0_bw="11">
 <![CDATA[
-hls_label_2:110  %zext_ln40_19 = zext i11 %add_ln40_14 to i64
+hls_label_2:110  %zext_ln40_18 = zext i11 %add_ln40_14 to i64
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln40_19"/></StgValue>
+<StgValue><ssdm name="zext_ln40_18"/></StgValue>
 </operation>
 
 <operation id="117" st_id="4" stage="1" lat="1">
@@ -1734,7 +1734,7 @@ hls_label_2:110  %zext_ln40_19 = zext i11 %add_ln40_14 to i64
 
 <Node id="157" bw="14" op_0_bw="16" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-hls_label_2:111  %input_addr_16 = getelementptr [14400 x i16]* %input_r, i64 0, i64 %zext_ln40_19
+hls_label_2:111  %input_addr_16 = getelementptr [14400 x i16]* %input_r, i64 0, i64 %zext_ln40_18
 
 ]]></Node>
 <StgValue><ssdm name="input_addr_16"/></StgValue>
@@ -1766,7 +1766,7 @@ hls_label_2:112  %input_load_16 = load i16* %input_addr_16, align 2
 
 <Node id="162" bw="11" op_0_bw="11" op_1_bw="11">
 <![CDATA[
-hls_label_2:116  %add_ln40_15 = add i11 %zext_ln40_14, %tmp10_1_0_mid2
+hls_label_2:116  %add_ln40_15 = add i11 %zext_ln40_13, %tmp10_1_0_mid2
 
 ]]></Node>
 <StgValue><ssdm name="add_ln40_15"/></StgValue>
@@ -1782,10 +1782,10 @@ hls_label_2:116  %add_ln40_15 = add i11 %zext_ln40_14, %tmp10_1_0_mid2
 
 <Node id="163" bw="64" op_0_bw="11">
 <![CDATA[
-hls_label_2:117  %zext_ln40_20 = zext i11 %add_ln40_15 to i64
+hls_label_2:117  %zext_ln40_19 = zext i11 %add_ln40_15 to i64
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln40_20"/></StgValue>
+<StgValue><ssdm name="zext_ln40_19"/></StgValue>
 </operation>
 
 <operation id="121" st_id="4" stage="1" lat="1">
@@ -1798,7 +1798,7 @@ hls_label_2:117  %zext_ln40_20 = zext i11 %add_ln40_15 to i64
 
 <Node id="164" bw="14" op_0_bw="16" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-hls_label_2:118  %input_addr_17 = getelementptr [14400 x i16]* %input_r, i64 0, i64 %zext_ln40_20
+hls_label_2:118  %input_addr_17 = getelementptr [14400 x i16]* %input_r, i64 0, i64 %zext_ln40_19
 
 ]]></Node>
 <StgValue><ssdm name="input_addr_17"/></StgValue>
@@ -1897,10 +1897,10 @@ hls_label_2:35  %kernel_load_12 = load i16* %kernel_addr_12, align 2
 
 <Node id="83" bw="7" op_0_bw="7" op_1_bw="7">
 <![CDATA[
-hls_label_2:37  %add_ln24_14 = add i7 5, %zext_ln24_19
+hls_label_2:37  %add_ln24_13 = add i7 5, %zext_ln24_19
 
 ]]></Node>
-<StgValue><ssdm name="add_ln24_14"/></StgValue>
+<StgValue><ssdm name="add_ln24_13"/></StgValue>
 </operation>
 
 <operation id="128" st_id="5" stage="1" lat="1">
@@ -1913,7 +1913,7 @@ hls_label_2:37  %add_ln24_14 = add i7 5, %zext_ln24_19
 
 <Node id="84" bw="64" op_0_bw="7">
 <![CDATA[
-hls_label_2:38  %zext_ln24_14 = zext i7 %add_ln24_14 to i64
+hls_label_2:38  %zext_ln24_14 = zext i7 %add_ln24_13 to i64
 
 ]]></Node>
 <StgValue><ssdm name="zext_ln24_14"/></StgValue>
@@ -1961,10 +1961,10 @@ hls_label_2:40  %kernel_load_13 = load i16* %kernel_addr_13, align 2
 
 <Node id="88" bw="7" op_0_bw="7" op_1_bw="7">
 <![CDATA[
-hls_label_2:42  %add_ln24_15 = add i7 6, %zext_ln24_19
+hls_label_2:42  %add_ln24_14 = add i7 6, %zext_ln24_19
 
 ]]></Node>
-<StgValue><ssdm name="add_ln24_15"/></StgValue>
+<StgValue><ssdm name="add_ln24_14"/></StgValue>
 </operation>
 
 <operation id="132" st_id="5" stage="1" lat="1">
@@ -1977,7 +1977,7 @@ hls_label_2:42  %add_ln24_15 = add i7 6, %zext_ln24_19
 
 <Node id="89" bw="64" op_0_bw="7">
 <![CDATA[
-hls_label_2:43  %zext_ln24_15 = zext i7 %add_ln24_15 to i64
+hls_label_2:43  %zext_ln24_15 = zext i7 %add_ln24_14 to i64
 
 ]]></Node>
 <StgValue><ssdm name="zext_ln24_15"/></StgValue>
@@ -2236,7 +2236,7 @@ hls_label_2:119  %input_load_17 = load i16* %input_addr_17, align 2
 
 <Node id="169" bw="11" op_0_bw="11" op_1_bw="11">
 <![CDATA[
-hls_label_2:123  %add_ln40_16 = add i11 %tmp10_1_0_mid2, %zext_ln40_16
+hls_label_2:123  %add_ln40_16 = add i11 %tmp10_1_0_mid2, %zext_ln40_15
 
 ]]></Node>
 <StgValue><ssdm name="add_ln40_16"/></StgValue>
@@ -2252,10 +2252,10 @@ hls_label_2:123  %add_ln40_16 = add i11 %tmp10_1_0_mid2, %zext_ln40_16
 
 <Node id="170" bw="64" op_0_bw="11">
 <![CDATA[
-hls_label_2:124  %zext_ln40_21 = zext i11 %add_ln40_16 to i64
+hls_label_2:124  %zext_ln40_20 = zext i11 %add_ln40_16 to i64
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln40_21"/></StgValue>
+<StgValue><ssdm name="zext_ln40_20"/></StgValue>
 </operation>
 
 <operation id="150" st_id="5" stage="1" lat="1">
@@ -2268,7 +2268,7 @@ hls_label_2:124  %zext_ln40_21 = zext i11 %add_ln40_16 to i64
 
 <Node id="171" bw="14" op_0_bw="16" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-hls_label_2:125  %input_addr_18 = getelementptr [14400 x i16]* %input_r, i64 0, i64 %zext_ln40_21
+hls_label_2:125  %input_addr_18 = getelementptr [14400 x i16]* %input_r, i64 0, i64 %zext_ln40_20
 
 ]]></Node>
 <StgValue><ssdm name="input_addr_18"/></StgValue>
@@ -2300,7 +2300,7 @@ hls_label_2:126  %input_load_18 = load i16* %input_addr_18, align 2
 
 <Node id="176" bw="11" op_0_bw="11" op_1_bw="11">
 <![CDATA[
-hls_label_2:130  %add_ln40_17 = add i11 %tmp10_1_0_mid2, %zext_ln40_18
+hls_label_2:130  %add_ln40_17 = add i11 %tmp10_1_0_mid2, %zext_ln40_17
 
 ]]></Node>
 <StgValue><ssdm name="add_ln40_17"/></StgValue>
@@ -2316,10 +2316,10 @@ hls_label_2:130  %add_ln40_17 = add i11 %tmp10_1_0_mid2, %zext_ln40_18
 
 <Node id="177" bw="64" op_0_bw="11">
 <![CDATA[
-hls_label_2:131  %zext_ln40_22 = zext i11 %add_ln40_17 to i64
+hls_label_2:131  %zext_ln40_21 = zext i11 %add_ln40_17 to i64
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln40_22"/></StgValue>
+<StgValue><ssdm name="zext_ln40_21"/></StgValue>
 </operation>
 
 <operation id="154" st_id="5" stage="1" lat="1">
@@ -2332,7 +2332,7 @@ hls_label_2:131  %zext_ln40_22 = zext i11 %add_ln40_17 to i64
 
 <Node id="178" bw="14" op_0_bw="16" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-hls_label_2:132  %input_addr_19 = getelementptr [14400 x i16]* %input_r, i64 0, i64 %zext_ln40_22
+hls_label_2:132  %input_addr_19 = getelementptr [14400 x i16]* %input_r, i64 0, i64 %zext_ln40_21
 
 ]]></Node>
 <StgValue><ssdm name="input_addr_19"/></StgValue>
@@ -2431,10 +2431,10 @@ hls_label_2:45  %kernel_load_14 = load i16* %kernel_addr_14, align 2
 
 <Node id="93" bw="7" op_0_bw="7" op_1_bw="7">
 <![CDATA[
-hls_label_2:47  %add_ln24_16 = add i7 7, %zext_ln24_19
+hls_label_2:47  %add_ln24_15 = add i7 7, %zext_ln24_19
 
 ]]></Node>
-<StgValue><ssdm name="add_ln24_16"/></StgValue>
+<StgValue><ssdm name="add_ln24_15"/></StgValue>
 </operation>
 
 <operation id="161" st_id="6" stage="1" lat="1">
@@ -2447,7 +2447,7 @@ hls_label_2:47  %add_ln24_16 = add i7 7, %zext_ln24_19
 
 <Node id="94" bw="64" op_0_bw="7">
 <![CDATA[
-hls_label_2:48  %zext_ln24_16 = zext i7 %add_ln24_16 to i64
+hls_label_2:48  %zext_ln24_16 = zext i7 %add_ln24_15 to i64
 
 ]]></Node>
 <StgValue><ssdm name="zext_ln24_16"/></StgValue>
@@ -2495,10 +2495,10 @@ hls_label_2:50  %kernel_load_15 = load i16* %kernel_addr_15, align 2
 
 <Node id="98" bw="7" op_0_bw="7" op_1_bw="7">
 <![CDATA[
-hls_label_2:52  %add_ln24_17 = add i7 8, %zext_ln24_19
+hls_label_2:52  %add_ln24_16 = add i7 8, %zext_ln24_19
 
 ]]></Node>
-<StgValue><ssdm name="add_ln24_17"/></StgValue>
+<StgValue><ssdm name="add_ln24_16"/></StgValue>
 </operation>
 
 <operation id="165" st_id="6" stage="1" lat="1">
@@ -2511,7 +2511,7 @@ hls_label_2:52  %add_ln24_17 = add i7 8, %zext_ln24_19
 
 <Node id="99" bw="64" op_0_bw="7">
 <![CDATA[
-hls_label_2:53  %zext_ln24_17 = zext i7 %add_ln24_17 to i64
+hls_label_2:53  %zext_ln24_17 = zext i7 %add_ln24_16 to i64
 
 ]]></Node>
 <StgValue><ssdm name="zext_ln24_17"/></StgValue>
@@ -2719,7 +2719,7 @@ hls_label_2:133  %input_load_19 = load i16* %input_addr_19, align 2
 
 <Node id="183" bw="11" op_0_bw="11" op_1_bw="11">
 <![CDATA[
-hls_label_2:137  %add_ln40_18 = add i11 %zext_ln40_14, %tmp10_2_0_mid2
+hls_label_2:137  %add_ln40_18 = add i11 %zext_ln40_13, %tmp10_2_0_mid2
 
 ]]></Node>
 <StgValue><ssdm name="add_ln40_18"/></StgValue>
@@ -2735,10 +2735,10 @@ hls_label_2:137  %add_ln40_18 = add i11 %zext_ln40_14, %tmp10_2_0_mid2
 
 <Node id="184" bw="64" op_0_bw="11">
 <![CDATA[
-hls_label_2:138  %zext_ln40_23 = zext i11 %add_ln40_18 to i64
+hls_label_2:138  %zext_ln40_22 = zext i11 %add_ln40_18 to i64
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln40_23"/></StgValue>
+<StgValue><ssdm name="zext_ln40_22"/></StgValue>
 </operation>
 
 <operation id="180" st_id="6" stage="1" lat="1">
@@ -2751,7 +2751,7 @@ hls_label_2:138  %zext_ln40_23 = zext i11 %add_ln40_18 to i64
 
 <Node id="185" bw="14" op_0_bw="16" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-hls_label_2:139  %input_addr_20 = getelementptr [14400 x i16]* %input_r, i64 0, i64 %zext_ln40_23
+hls_label_2:139  %input_addr_20 = getelementptr [14400 x i16]* %input_r, i64 0, i64 %zext_ln40_22
 
 ]]></Node>
 <StgValue><ssdm name="input_addr_20"/></StgValue>
@@ -2783,7 +2783,7 @@ hls_label_2:140  %input_load_20 = load i16* %input_addr_20, align 2
 
 <Node id="190" bw="11" op_0_bw="11" op_1_bw="11">
 <![CDATA[
-hls_label_2:144  %add_ln40_19 = add i11 %tmp10_2_0_mid2, %zext_ln40_16
+hls_label_2:144  %add_ln40_19 = add i11 %tmp10_2_0_mid2, %zext_ln40_15
 
 ]]></Node>
 <StgValue><ssdm name="add_ln40_19"/></StgValue>
@@ -2799,10 +2799,10 @@ hls_label_2:144  %add_ln40_19 = add i11 %tmp10_2_0_mid2, %zext_ln40_16
 
 <Node id="191" bw="64" op_0_bw="11">
 <![CDATA[
-hls_label_2:145  %zext_ln40_24 = zext i11 %add_ln40_19 to i64
+hls_label_2:145  %zext_ln40_23 = zext i11 %add_ln40_19 to i64
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln40_24"/></StgValue>
+<StgValue><ssdm name="zext_ln40_23"/></StgValue>
 </operation>
 
 <operation id="184" st_id="6" stage="1" lat="1">
@@ -2815,7 +2815,7 @@ hls_label_2:145  %zext_ln40_24 = zext i11 %add_ln40_19 to i64
 
 <Node id="192" bw="14" op_0_bw="16" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-hls_label_2:146  %input_addr_21 = getelementptr [14400 x i16]* %input_r, i64 0, i64 %zext_ln40_24
+hls_label_2:146  %input_addr_21 = getelementptr [14400 x i16]* %input_r, i64 0, i64 %zext_ln40_23
 
 ]]></Node>
 <StgValue><ssdm name="input_addr_21"/></StgValue>
@@ -2847,7 +2847,7 @@ hls_label_2:147  %input_load_21 = load i16* %input_addr_21, align 2
 
 <Node id="197" bw="11" op_0_bw="11" op_1_bw="11">
 <![CDATA[
-hls_label_2:151  %add_ln40_20 = add i11 %tmp10_2_0_mid2, %zext_ln40_18
+hls_label_2:151  %add_ln40_20 = add i11 %tmp10_2_0_mid2, %zext_ln40_17
 
 ]]></Node>
 <StgValue><ssdm name="add_ln40_20"/></StgValue>
@@ -2863,7 +2863,7 @@ hls_label_2:151  %add_ln40_20 = add i11 %tmp10_2_0_mid2, %zext_ln40_18
 
 <Node id="219" bw="8" op_0_bw="1" op_1_bw="8" op_2_bw="8">
 <![CDATA[
-hls_label_2:173  %select_ln32_14 = select i1 %icmp_ln32, i8 1, i8 %add_ln32_4
+hls_label_2:173  %select_ln32_14 = select i1 %icmp_ln32, i8 1, i8 %add_ln32_2
 
 ]]></Node>
 <StgValue><ssdm name="select_ln32_14"/></StgValue>
@@ -3122,10 +3122,10 @@ hls_label_2:147  %input_load_21 = load i16* %input_addr_21, align 2
 
 <Node id="198" bw="64" op_0_bw="11">
 <![CDATA[
-hls_label_2:152  %zext_ln40_25 = zext i11 %add_ln40_20 to i64
+hls_label_2:152  %zext_ln40_24 = zext i11 %add_ln40_20 to i64
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln40_25"/></StgValue>
+<StgValue><ssdm name="zext_ln40_24"/></StgValue>
 </operation>
 
 <operation id="204" st_id="7" stage="1" lat="1">
@@ -3138,7 +3138,7 @@ hls_label_2:152  %zext_ln40_25 = zext i11 %add_ln40_20 to i64
 
 <Node id="199" bw="14" op_0_bw="16" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-hls_label_2:153  %input_addr_22 = getelementptr [14400 x i16]* %input_r, i64 0, i64 %zext_ln40_25
+hls_label_2:153  %input_addr_22 = getelementptr [14400 x i16]* %input_r, i64 0, i64 %zext_ln40_24
 
 ]]></Node>
 <StgValue><ssdm name="input_addr_22"/></StgValue>
@@ -3512,7 +3512,7 @@ hls_label_2:157  %trunc_ln48_5 = call i16 @_ssdm_op_PartSelect.i16.i30.i32.i32(i
 
 <Node id="213" bw="11" op_0_bw="11" op_1_bw="11">
 <![CDATA[
-hls_label_2:167  %add_ln48 = add i11 %zext_ln40_14, %tmp12_mid2
+hls_label_2:167  %add_ln48 = add i11 %zext_ln40_13, %tmp12_mid2
 
 ]]></Node>
 <StgValue><ssdm name="add_ln48"/></StgValue>
@@ -3989,13 +3989,13 @@ hls_label_2:174  br label %.preheader5
 </dataflow>
 <dataflow id="357" from="StgValue_301" to="shl_ln27_mid1" fromId="301" toId="49">
 </dataflow>
-<dataflow id="358" from="zext_ln27_4" to="add_ln27_2" fromId="47" toId="50">
+<dataflow id="358" from="zext_ln27_4" to="add_ln27_5" fromId="47" toId="50">
 </dataflow>
-<dataflow id="359" from="shl_ln27_mid1" to="add_ln27_2" fromId="49" toId="50">
+<dataflow id="359" from="shl_ln27_mid1" to="add_ln27_5" fromId="49" toId="50">
 </dataflow>
 <dataflow id="360" from="icmp_ln32" to="select_ln24_8" fromId="44" toId="51">
 </dataflow>
-<dataflow id="361" from="add_ln27_2" to="select_ln24_8" fromId="50" toId="51">
+<dataflow id="361" from="add_ln27_5" to="select_ln24_8" fromId="50" toId="51">
 </dataflow>
 <dataflow id="362" from="add_ln27" to="select_ln24_8" fromId="38" toId="51">
 </dataflow>
@@ -4061,9 +4061,9 @@ hls_label_2:174  br label %.preheader5
 </dataflow>
 <dataflow id="394" from="select_ln24_12" to="tmp10_0_0_mid2_v_v" fromId="57" toId="65">
 </dataflow>
-<dataflow id="396" from="StgValue_395" to="add_ln32_4" fromId="395" toId="66">
+<dataflow id="396" from="StgValue_395" to="add_ln32_2" fromId="395" toId="66">
 </dataflow>
-<dataflow id="397" from="indvar_flatten" to="add_ln32_4" fromId="31" toId="66">
+<dataflow id="397" from="indvar_flatten" to="add_ln32_2" fromId="31" toId="66">
 </dataflow>
 <dataflow id="398" from="kernel_addr" to="kernel_load" fromId="53" toId="67">
 </dataflow>
@@ -4083,11 +4083,11 @@ hls_label_2:174  br label %.preheader5
 </dataflow>
 <dataflow id="407" from="kernel_addr_9" to="kernel_load_9" fromId="71" toId="72">
 </dataflow>
-<dataflow id="409" from="StgValue_408" to="add_ln24_11" fromId="408" toId="73">
+<dataflow id="409" from="StgValue_408" to="add_ln24_10" fromId="408" toId="73">
 </dataflow>
-<dataflow id="410" from="zext_ln24_19" to="add_ln24_11" fromId="68" toId="73">
+<dataflow id="410" from="zext_ln24_19" to="add_ln24_10" fromId="68" toId="73">
 </dataflow>
-<dataflow id="411" from="add_ln24_11" to="zext_ln24_11" fromId="73" toId="74">
+<dataflow id="411" from="add_ln24_10" to="zext_ln24_11" fromId="73" toId="74">
 </dataflow>
 <dataflow id="412" from="kernel" to="kernel_addr_10" fromId="277" toId="75">
 </dataflow>
@@ -4113,19 +4113,19 @@ hls_label_2:174  br label %.preheader5
 </dataflow>
 <dataflow id="423" from="tmp10_1_0_mid2_v" to="tmp10_1_0_mid2" fromId="80" toId="81">
 </dataflow>
-<dataflow id="424" from="out_w_0_mid2" to="zext_ln40_14" fromId="62" toId="82">
+<dataflow id="424" from="out_w_0_mid2" to="zext_ln40_13" fromId="62" toId="82">
 </dataflow>
-<dataflow id="425" from="zext_ln40_14" to="add_ln40" fromId="82" toId="83">
+<dataflow id="425" from="zext_ln40_13" to="add_ln40" fromId="82" toId="83">
 </dataflow>
 <dataflow id="426" from="tmp10_0_0_mid2" to="add_ln40" fromId="78" toId="83">
 </dataflow>
-<dataflow id="427" from="add_ln40" to="zext_ln40_15" fromId="83" toId="84">
+<dataflow id="427" from="add_ln40" to="zext_ln40_14" fromId="83" toId="84">
 </dataflow>
 <dataflow id="428" from="input_r" to="input_addr" fromId="272" toId="85">
 </dataflow>
 <dataflow id="429" from="StgValue_365" to="input_addr" fromId="365" toId="85">
 </dataflow>
-<dataflow id="430" from="zext_ln40_15" to="input_addr" fromId="84" toId="85">
+<dataflow id="430" from="zext_ln40_14" to="input_addr" fromId="84" toId="85">
 </dataflow>
 <dataflow id="431" from="input_addr" to="input_load" fromId="85" toId="86">
 </dataflow>
@@ -4133,19 +4133,19 @@ hls_label_2:174  br label %.preheader5
 </dataflow>
 <dataflow id="433" from="out_w_0_mid2" to="out_w" fromId="62" toId="87">
 </dataflow>
-<dataflow id="434" from="out_w" to="zext_ln40_16" fromId="87" toId="88">
+<dataflow id="434" from="out_w" to="zext_ln40_15" fromId="87" toId="88">
 </dataflow>
 <dataflow id="435" from="tmp10_0_0_mid2" to="add_ln40_12" fromId="78" toId="89">
 </dataflow>
-<dataflow id="436" from="zext_ln40_16" to="add_ln40_12" fromId="88" toId="89">
+<dataflow id="436" from="zext_ln40_15" to="add_ln40_12" fromId="88" toId="89">
 </dataflow>
-<dataflow id="437" from="add_ln40_12" to="zext_ln40_17" fromId="89" toId="90">
+<dataflow id="437" from="add_ln40_12" to="zext_ln40_16" fromId="89" toId="90">
 </dataflow>
 <dataflow id="438" from="input_r" to="input_addr_15" fromId="272" toId="91">
 </dataflow>
 <dataflow id="439" from="StgValue_365" to="input_addr_15" fromId="365" toId="91">
 </dataflow>
-<dataflow id="440" from="zext_ln40_17" to="input_addr_15" fromId="90" toId="91">
+<dataflow id="440" from="zext_ln40_16" to="input_addr_15" fromId="90" toId="91">
 </dataflow>
 <dataflow id="441" from="input_addr_15" to="input_load_15" fromId="91" toId="92">
 </dataflow>
@@ -4179,11 +4179,11 @@ hls_label_2:174  br label %.preheader5
 </dataflow>
 <dataflow id="462" from="kernel_addr_10" to="kernel_load_10" fromId="75" toId="99">
 </dataflow>
-<dataflow id="464" from="StgValue_463" to="add_ln24_12" fromId="463" toId="100">
+<dataflow id="464" from="StgValue_463" to="add_ln24_11" fromId="463" toId="100">
 </dataflow>
-<dataflow id="465" from="zext_ln24_19" to="add_ln24_12" fromId="68" toId="100">
+<dataflow id="465" from="zext_ln24_19" to="add_ln24_11" fromId="68" toId="100">
 </dataflow>
-<dataflow id="466" from="add_ln24_12" to="zext_ln24_12" fromId="100" toId="101">
+<dataflow id="466" from="add_ln24_11" to="zext_ln24_12" fromId="100" toId="101">
 </dataflow>
 <dataflow id="467" from="kernel" to="kernel_addr_11" fromId="277" toId="102">
 </dataflow>
@@ -4193,11 +4193,11 @@ hls_label_2:174  br label %.preheader5
 </dataflow>
 <dataflow id="470" from="kernel_addr_11" to="kernel_load_11" fromId="102" toId="103">
 </dataflow>
-<dataflow id="472" from="StgValue_471" to="add_ln24_13" fromId="471" toId="104">
+<dataflow id="472" from="StgValue_471" to="add_ln24_12" fromId="471" toId="104">
 </dataflow>
-<dataflow id="473" from="zext_ln24_19" to="add_ln24_13" fromId="68" toId="104">
+<dataflow id="473" from="zext_ln24_19" to="add_ln24_12" fromId="68" toId="104">
 </dataflow>
-<dataflow id="474" from="add_ln24_13" to="zext_ln24_13" fromId="104" toId="105">
+<dataflow id="474" from="add_ln24_12" to="zext_ln24_13" fromId="104" toId="105">
 </dataflow>
 <dataflow id="475" from="kernel" to="kernel_addr_12" fromId="277" toId="106">
 </dataflow>
@@ -4225,33 +4225,33 @@ hls_label_2:174  br label %.preheader5
 </dataflow>
 <dataflow id="488" from="out_w_0_mid2" to="add_ln40_13" fromId="62" toId="113">
 </dataflow>
-<dataflow id="489" from="add_ln40_13" to="zext_ln40_18" fromId="113" toId="114">
+<dataflow id="489" from="add_ln40_13" to="zext_ln40_17" fromId="113" toId="114">
 </dataflow>
 <dataflow id="490" from="tmp10_0_0_mid2" to="add_ln40_14" fromId="78" toId="115">
 </dataflow>
-<dataflow id="491" from="zext_ln40_18" to="add_ln40_14" fromId="114" toId="115">
+<dataflow id="491" from="zext_ln40_17" to="add_ln40_14" fromId="114" toId="115">
 </dataflow>
-<dataflow id="492" from="add_ln40_14" to="zext_ln40_19" fromId="115" toId="116">
+<dataflow id="492" from="add_ln40_14" to="zext_ln40_18" fromId="115" toId="116">
 </dataflow>
 <dataflow id="493" from="input_r" to="input_addr_16" fromId="272" toId="117">
 </dataflow>
 <dataflow id="494" from="StgValue_365" to="input_addr_16" fromId="365" toId="117">
 </dataflow>
-<dataflow id="495" from="zext_ln40_19" to="input_addr_16" fromId="116" toId="117">
+<dataflow id="495" from="zext_ln40_18" to="input_addr_16" fromId="116" toId="117">
 </dataflow>
 <dataflow id="496" from="input_addr_16" to="input_load_16" fromId="117" toId="118">
 </dataflow>
-<dataflow id="497" from="zext_ln40_14" to="add_ln40_15" fromId="82" toId="119">
+<dataflow id="497" from="zext_ln40_13" to="add_ln40_15" fromId="82" toId="119">
 </dataflow>
 <dataflow id="498" from="tmp10_1_0_mid2" to="add_ln40_15" fromId="81" toId="119">
 </dataflow>
-<dataflow id="499" from="add_ln40_15" to="zext_ln40_20" fromId="119" toId="120">
+<dataflow id="499" from="add_ln40_15" to="zext_ln40_19" fromId="119" toId="120">
 </dataflow>
 <dataflow id="500" from="input_r" to="input_addr_17" fromId="272" toId="121">
 </dataflow>
 <dataflow id="501" from="StgValue_365" to="input_addr_17" fromId="365" toId="121">
 </dataflow>
-<dataflow id="502" from="zext_ln40_20" to="input_addr_17" fromId="120" toId="121">
+<dataflow id="502" from="zext_ln40_19" to="input_addr_17" fromId="120" toId="121">
 </dataflow>
 <dataflow id="503" from="input_addr_17" to="input_load_17" fromId="121" toId="122">
 </dataflow>
@@ -4263,11 +4263,11 @@ hls_label_2:174  br label %.preheader5
 </dataflow>
 <dataflow id="507" from="kernel_addr_12" to="kernel_load_12" fromId="106" toId="126">
 </dataflow>
-<dataflow id="509" from="StgValue_508" to="add_ln24_14" fromId="508" toId="127">
+<dataflow id="509" from="StgValue_508" to="add_ln24_13" fromId="508" toId="127">
 </dataflow>
-<dataflow id="510" from="zext_ln24_19" to="add_ln24_14" fromId="68" toId="127">
+<dataflow id="510" from="zext_ln24_19" to="add_ln24_13" fromId="68" toId="127">
 </dataflow>
-<dataflow id="511" from="add_ln24_14" to="zext_ln24_14" fromId="127" toId="128">
+<dataflow id="511" from="add_ln24_13" to="zext_ln24_14" fromId="127" toId="128">
 </dataflow>
 <dataflow id="512" from="kernel" to="kernel_addr_13" fromId="277" toId="129">
 </dataflow>
@@ -4277,11 +4277,11 @@ hls_label_2:174  br label %.preheader5
 </dataflow>
 <dataflow id="515" from="kernel_addr_13" to="kernel_load_13" fromId="129" toId="130">
 </dataflow>
-<dataflow id="517" from="StgValue_516" to="add_ln24_15" fromId="516" toId="131">
+<dataflow id="517" from="StgValue_516" to="add_ln24_14" fromId="516" toId="131">
 </dataflow>
-<dataflow id="518" from="zext_ln24_19" to="add_ln24_15" fromId="68" toId="131">
+<dataflow id="518" from="zext_ln24_19" to="add_ln24_14" fromId="68" toId="131">
 </dataflow>
-<dataflow id="519" from="add_ln24_15" to="zext_ln24_15" fromId="131" toId="132">
+<dataflow id="519" from="add_ln24_14" to="zext_ln24_15" fromId="131" toId="132">
 </dataflow>
 <dataflow id="520" from="kernel" to="kernel_addr_14" fromId="277" toId="133">
 </dataflow>
@@ -4351,29 +4351,29 @@ hls_label_2:174  br label %.preheader5
 </dataflow>
 <dataflow id="556" from="tmp10_1_0_mid2" to="add_ln40_16" fromId="81" toId="148">
 </dataflow>
-<dataflow id="557" from="zext_ln40_16" to="add_ln40_16" fromId="88" toId="148">
+<dataflow id="557" from="zext_ln40_15" to="add_ln40_16" fromId="88" toId="148">
 </dataflow>
-<dataflow id="558" from="add_ln40_16" to="zext_ln40_21" fromId="148" toId="149">
+<dataflow id="558" from="add_ln40_16" to="zext_ln40_20" fromId="148" toId="149">
 </dataflow>
 <dataflow id="559" from="input_r" to="input_addr_18" fromId="272" toId="150">
 </dataflow>
 <dataflow id="560" from="StgValue_365" to="input_addr_18" fromId="365" toId="150">
 </dataflow>
-<dataflow id="561" from="zext_ln40_21" to="input_addr_18" fromId="149" toId="150">
+<dataflow id="561" from="zext_ln40_20" to="input_addr_18" fromId="149" toId="150">
 </dataflow>
 <dataflow id="562" from="input_addr_18" to="input_load_18" fromId="150" toId="151">
 </dataflow>
 <dataflow id="563" from="tmp10_1_0_mid2" to="add_ln40_17" fromId="81" toId="152">
 </dataflow>
-<dataflow id="564" from="zext_ln40_18" to="add_ln40_17" fromId="114" toId="152">
+<dataflow id="564" from="zext_ln40_17" to="add_ln40_17" fromId="114" toId="152">
 </dataflow>
-<dataflow id="565" from="add_ln40_17" to="zext_ln40_22" fromId="152" toId="153">
+<dataflow id="565" from="add_ln40_17" to="zext_ln40_21" fromId="152" toId="153">
 </dataflow>
 <dataflow id="566" from="input_r" to="input_addr_19" fromId="272" toId="154">
 </dataflow>
 <dataflow id="567" from="StgValue_365" to="input_addr_19" fromId="365" toId="154">
 </dataflow>
-<dataflow id="568" from="zext_ln40_22" to="input_addr_19" fromId="153" toId="154">
+<dataflow id="568" from="zext_ln40_21" to="input_addr_19" fromId="153" toId="154">
 </dataflow>
 <dataflow id="569" from="input_addr_19" to="input_load_19" fromId="154" toId="155">
 </dataflow>
@@ -4385,11 +4385,11 @@ hls_label_2:174  br label %.preheader5
 </dataflow>
 <dataflow id="573" from="kernel_addr_14" to="kernel_load_14" fromId="133" toId="159">
 </dataflow>
-<dataflow id="575" from="StgValue_574" to="add_ln24_16" fromId="574" toId="160">
+<dataflow id="575" from="StgValue_574" to="add_ln24_15" fromId="574" toId="160">
 </dataflow>
-<dataflow id="576" from="zext_ln24_19" to="add_ln24_16" fromId="68" toId="160">
+<dataflow id="576" from="zext_ln24_19" to="add_ln24_15" fromId="68" toId="160">
 </dataflow>
-<dataflow id="577" from="add_ln24_16" to="zext_ln24_16" fromId="160" toId="161">
+<dataflow id="577" from="add_ln24_15" to="zext_ln24_16" fromId="160" toId="161">
 </dataflow>
 <dataflow id="578" from="kernel" to="kernel_addr_15" fromId="277" toId="162">
 </dataflow>
@@ -4399,11 +4399,11 @@ hls_label_2:174  br label %.preheader5
 </dataflow>
 <dataflow id="581" from="kernel_addr_15" to="kernel_load_15" fromId="162" toId="163">
 </dataflow>
-<dataflow id="583" from="StgValue_582" to="add_ln24_17" fromId="582" toId="164">
+<dataflow id="583" from="StgValue_582" to="add_ln24_16" fromId="582" toId="164">
 </dataflow>
-<dataflow id="584" from="zext_ln24_19" to="add_ln24_17" fromId="68" toId="164">
+<dataflow id="584" from="zext_ln24_19" to="add_ln24_16" fromId="68" toId="164">
 </dataflow>
-<dataflow id="585" from="add_ln24_17" to="zext_ln24_17" fromId="164" toId="165">
+<dataflow id="585" from="add_ln24_16" to="zext_ln24_17" fromId="164" toId="165">
 </dataflow>
 <dataflow id="586" from="kernel" to="kernel_addr_16" fromId="277" toId="166">
 </dataflow>
@@ -4457,43 +4457,43 @@ hls_label_2:174  br label %.preheader5
 </dataflow>
 <dataflow id="611" from="input_addr_19" to="input_load_19" fromId="154" toId="177">
 </dataflow>
-<dataflow id="612" from="zext_ln40_14" to="add_ln40_18" fromId="82" toId="178">
+<dataflow id="612" from="zext_ln40_13" to="add_ln40_18" fromId="82" toId="178">
 </dataflow>
 <dataflow id="613" from="tmp10_2_0_mid2" to="add_ln40_18" fromId="110" toId="178">
 </dataflow>
-<dataflow id="614" from="add_ln40_18" to="zext_ln40_23" fromId="178" toId="179">
+<dataflow id="614" from="add_ln40_18" to="zext_ln40_22" fromId="178" toId="179">
 </dataflow>
 <dataflow id="615" from="input_r" to="input_addr_20" fromId="272" toId="180">
 </dataflow>
 <dataflow id="616" from="StgValue_365" to="input_addr_20" fromId="365" toId="180">
 </dataflow>
-<dataflow id="617" from="zext_ln40_23" to="input_addr_20" fromId="179" toId="180">
+<dataflow id="617" from="zext_ln40_22" to="input_addr_20" fromId="179" toId="180">
 </dataflow>
 <dataflow id="618" from="input_addr_20" to="input_load_20" fromId="180" toId="181">
 </dataflow>
 <dataflow id="619" from="tmp10_2_0_mid2" to="add_ln40_19" fromId="110" toId="182">
 </dataflow>
-<dataflow id="620" from="zext_ln40_16" to="add_ln40_19" fromId="88" toId="182">
+<dataflow id="620" from="zext_ln40_15" to="add_ln40_19" fromId="88" toId="182">
 </dataflow>
-<dataflow id="621" from="add_ln40_19" to="zext_ln40_24" fromId="182" toId="183">
+<dataflow id="621" from="add_ln40_19" to="zext_ln40_23" fromId="182" toId="183">
 </dataflow>
 <dataflow id="622" from="input_r" to="input_addr_21" fromId="272" toId="184">
 </dataflow>
 <dataflow id="623" from="StgValue_365" to="input_addr_21" fromId="365" toId="184">
 </dataflow>
-<dataflow id="624" from="zext_ln40_24" to="input_addr_21" fromId="183" toId="184">
+<dataflow id="624" from="zext_ln40_23" to="input_addr_21" fromId="183" toId="184">
 </dataflow>
 <dataflow id="625" from="input_addr_21" to="input_load_21" fromId="184" toId="185">
 </dataflow>
 <dataflow id="626" from="tmp10_2_0_mid2" to="add_ln40_20" fromId="110" toId="186">
 </dataflow>
-<dataflow id="627" from="zext_ln40_18" to="add_ln40_20" fromId="114" toId="186">
+<dataflow id="627" from="zext_ln40_17" to="add_ln40_20" fromId="114" toId="186">
 </dataflow>
 <dataflow id="628" from="icmp_ln32" to="select_ln32_14" fromId="44" toId="187">
 </dataflow>
 <dataflow id="629" from="StgValue_395" to="select_ln32_14" fromId="395" toId="187">
 </dataflow>
-<dataflow id="630" from="add_ln32_4" to="select_ln32_14" fromId="66" toId="187">
+<dataflow id="630" from="add_ln32_2" to="select_ln32_14" fromId="66" toId="187">
 </dataflow>
 <dataflow id="631" from="kernel_load_12" to="sext_ln24_12" fromId="126" toId="188">
 </dataflow>
@@ -4545,13 +4545,13 @@ hls_label_2:174  br label %.preheader5
 </dataflow>
 <dataflow id="655" from="input_addr_21" to="input_load_21" fromId="184" toId="202">
 </dataflow>
-<dataflow id="656" from="add_ln40_20" to="zext_ln40_25" fromId="186" toId="203">
+<dataflow id="656" from="add_ln40_20" to="zext_ln40_24" fromId="186" toId="203">
 </dataflow>
 <dataflow id="657" from="input_r" to="input_addr_22" fromId="272" toId="204">
 </dataflow>
 <dataflow id="658" from="StgValue_365" to="input_addr_22" fromId="365" toId="204">
 </dataflow>
-<dataflow id="659" from="zext_ln40_25" to="input_addr_22" fromId="203" toId="204">
+<dataflow id="659" from="zext_ln40_24" to="input_addr_22" fromId="203" toId="204">
 </dataflow>
 <dataflow id="660" from="input_addr_22" to="input_load_22" fromId="204" toId="205">
 </dataflow>
@@ -4633,7 +4633,7 @@ hls_label_2:174  br label %.preheader5
 </dataflow>
 <dataflow id="699" from="StgValue_545" to="trunc_ln48_5" fromId="545" toId="226">
 </dataflow>
-<dataflow id="700" from="zext_ln40_14" to="add_ln48" fromId="82" toId="227">
+<dataflow id="700" from="zext_ln40_13" to="add_ln48" fromId="82" toId="227">
 </dataflow>
 <dataflow id="701" from="tmp12_mid2" to="add_ln48" fromId="223" toId="227">
 </dataflow>

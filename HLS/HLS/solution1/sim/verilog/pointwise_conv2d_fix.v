@@ -168,7 +168,7 @@ network_mux_164_16_1_1 #(
     .din15_WIDTH( 16 ),
     .din16_WIDTH( 4 ),
     .dout_WIDTH( 16 ))
-network_mux_164_16_1_1_U19(
+network_mux_164_16_1_1_U46(
     .din0(16'd1542),
     .din1(16'd64488),
     .din2(16'd65203),
@@ -210,7 +210,7 @@ network_mux_164_16_1_1 #(
     .din15_WIDTH( 16 ),
     .din16_WIDTH( 4 ),
     .dout_WIDTH( 16 ))
-network_mux_164_16_1_1_U20(
+network_mux_164_16_1_1_U47(
     .din0(16'd63766),
     .din1(16'd6639),
     .din2(16'd8093),

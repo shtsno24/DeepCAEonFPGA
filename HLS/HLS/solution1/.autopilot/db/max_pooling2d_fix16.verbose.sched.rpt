@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'max_pooling2d_fix16'
 ================================================================
-* Date:           Tue Dec 31 20:30:44 2019
+* Date:           Tue Dec 31 22:01:45 2019
 
 * Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
 * Project:        HLS
@@ -188,8 +188,8 @@ ST_5 : Operation 94 [1/1] (0.00ns)   --->   "%zext_ln26_11 = zext i14 %add_ln26_
 ST_5 : Operation 95 [1/1] (0.00ns)   --->   "%input_addr_3 = getelementptr [14400 x i16]* %input_r, i64 0, i64 %zext_ln26_11" [../layers_c/max_pooling2d.cpp:26]   --->   Operation 95 'getelementptr' 'input_addr_3' <Predicate = (!icmp_ln19)> <Delay = 0.00>
 ST_5 : Operation 96 [2/2] (3.25ns)   --->   "%input_load_3 = load i16* %input_addr_3, align 2" [../layers_c/max_pooling2d.cpp:26]   --->   Operation 96 'load' 'input_load_3' <Predicate = (!icmp_ln19)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 14400> <RAM>
 ST_5 : Operation 97 [1/1] (1.73ns)   --->   "%out_w = add i4 %select_ln26, 1" [../layers_c/max_pooling2d.cpp:22]   --->   Operation 97 'add' 'out_w' <Predicate = (!icmp_ln19)> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.91> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_5 : Operation 98 [1/1] (1.91ns)   --->   "%add_ln21_3 = add i8 %indvar_flatten, 1" [../layers_c/max_pooling2d.cpp:21]   --->   Operation 98 'add' 'add_ln21_3' <Predicate = (!icmp_ln19 & !icmp_ln21)> <Delay = 1.91> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.91> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_5 : Operation 99 [1/1] (1.24ns)   --->   "%select_ln21_1 = select i1 %icmp_ln21, i8 1, i8 %add_ln21_3" [../layers_c/max_pooling2d.cpp:21]   --->   Operation 99 'select' 'select_ln21_1' <Predicate = (!icmp_ln19)> <Delay = 1.24> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 1.24> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_5 : Operation 98 [1/1] (1.91ns)   --->   "%add_ln21_1 = add i8 %indvar_flatten, 1" [../layers_c/max_pooling2d.cpp:21]   --->   Operation 98 'add' 'add_ln21_1' <Predicate = (!icmp_ln19 & !icmp_ln21)> <Delay = 1.91> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.91> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 99 [1/1] (1.24ns)   --->   "%select_ln21_1 = select i1 %icmp_ln21, i8 1, i8 %add_ln21_1" [../layers_c/max_pooling2d.cpp:21]   --->   Operation 99 'select' 'select_ln21_1' <Predicate = (!icmp_ln19)> <Delay = 1.24> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 1.24> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
 
 State 6 <SV = 5> <Delay = 3.25>
 ST_6 : Operation 100 [1/1] (0.00ns)   --->   "%zext_ln29 = zext i14 %select_ln29 to i64" [../layers_c/max_pooling2d.cpp:29]   --->   Operation 100 'zext' 'zext_ln29' <Predicate = (!icmp_ln19)> <Delay = 0.00>

@@ -249,7 +249,7 @@ architecture behav of max_pooling2d_fix16 is
     signal or_ln26_fu_489_p2 : STD_LOGIC_VECTOR (4 downto 0);
     signal zext_ln26_9_fu_495_p1 : STD_LOGIC_VECTOR (13 downto 0);
     signal icmp_ln29_fu_536_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal add_ln21_3_fu_557_p2 : STD_LOGIC_VECTOR (7 downto 0);
+    signal add_ln21_1_fu_557_p2 : STD_LOGIC_VECTOR (7 downto 0);
     signal icmp_ln29_1_fu_574_p2 : STD_LOGIC_VECTOR (0 downto 0);
     signal mul_ln34_fu_594_p0 : STD_LOGIC_VECTOR (4 downto 0);
     signal mul_ln34_fu_594_p1 : STD_LOGIC_VECTOR (5 downto 0);
@@ -658,7 +658,7 @@ begin
         end case;
     end process;
     add_ln19_fu_519_p2 <= std_logic_vector(unsigned(indvar_flatten39_reg_175) + unsigned(ap_const_lv13_1));
-    add_ln21_3_fu_557_p2 <= std_logic_vector(unsigned(indvar_flatten_reg_199) + unsigned(ap_const_lv8_1));
+    add_ln21_1_fu_557_p2 <= std_logic_vector(unsigned(indvar_flatten_reg_199) + unsigned(ap_const_lv8_1));
     add_ln26_1_fu_499_p2 <= std_logic_vector(unsigned(mul_ln26_2_reg_770) + unsigned(zext_ln26_9_fu_495_p1));
     add_ln26_2_fu_509_p2 <= std_logic_vector(unsigned(mul_ln26_3_reg_776) + unsigned(zext_ln26_7_fu_475_p1));
     add_ln26_3_fu_514_p2 <= std_logic_vector(unsigned(mul_ln26_3_reg_776) + unsigned(zext_ln26_9_fu_495_p1));
@@ -949,7 +949,7 @@ begin
         ap_phi_mux_out_h_0_phi_fu_215_p4;
     select_ln21_1_fu_563_p3 <= 
         ap_const_lv8_1 when (icmp_ln21_reg_737(0) = '1') else 
-        add_ln21_3_fu_557_p2;
+        add_ln21_1_fu_557_p2;
     select_ln21_fu_531_p3 <= 
         out_h_reg_758 when (select_ln20_5_reg_751(0) = '1') else 
         select_ln20_reg_746;

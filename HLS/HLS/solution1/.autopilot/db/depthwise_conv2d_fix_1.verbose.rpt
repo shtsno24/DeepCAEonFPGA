@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'depthwise_conv2d_fix_1'
 ================================================================
-* Date:           Tue Dec 31 20:30:51 2019
+* Date:           Tue Dec 31 22:01:53 2019
 
 * Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
 * Project:        HLS
@@ -107,17 +107,17 @@
     |tmp10_1_0_mid2_fu_654_p2      |     *    |      0|  0|  33|           6|           7|
     |tmp10_2_0_mid2_fu_737_p2      |     *    |      0|  0|  33|           6|           7|
     |add_ln23_fu_702_p2            |     +    |      0|  0|  13|           1|          11|
-    |add_ln24_11_fu_626_p2         |     +    |      0|  0|  15|           2|           7|
-    |add_ln24_12_fu_708_p2         |     +    |      0|  0|  15|           2|           7|
-    |add_ln24_13_fu_718_p2         |     +    |      0|  0|  15|           3|           7|
-    |add_ln24_14_fu_778_p2         |     +    |      0|  0|  15|           3|           7|
-    |add_ln24_15_fu_788_p2         |     +    |      0|  0|  15|           3|           7|
-    |add_ln24_16_fu_878_p2         |     +    |      0|  0|  15|           3|           7|
-    |add_ln24_17_fu_888_p2         |     +    |      0|  0|  15|           4|           7|
+    |add_ln24_10_fu_626_p2         |     +    |      0|  0|  15|           2|           7|
+    |add_ln24_11_fu_708_p2         |     +    |      0|  0|  15|           2|           7|
+    |add_ln24_12_fu_718_p2         |     +    |      0|  0|  15|           3|           7|
+    |add_ln24_13_fu_778_p2         |     +    |      0|  0|  15|           3|           7|
+    |add_ln24_14_fu_788_p2         |     +    |      0|  0|  15|           3|           7|
+    |add_ln24_15_fu_878_p2         |     +    |      0|  0|  15|           3|           7|
+    |add_ln24_16_fu_888_p2         |     +    |      0|  0|  15|           4|           7|
     |add_ln24_fu_615_p2            |     +    |      0|  0|  15|           1|           7|
-    |add_ln27_2_fu_516_p2          |     +    |      0|  0|  15|           6|           6|
+    |add_ln27_5_fu_516_p2          |     +    |      0|  0|  15|           6|           6|
     |add_ln27_fu_451_p2            |     +    |      0|  0|  15|           6|           6|
-    |add_ln32_4_fu_606_p2          |     +    |      0|  0|  15|           1|           8|
+    |add_ln32_2_fu_606_p2          |     +    |      0|  0|  15|           1|           8|
     |add_ln40_12_fu_682_p2         |     +    |      0|  0|  13|          11|          11|
     |add_ln40_13_fu_742_p2         |     +    |      0|  0|  13|           2|           4|
     |add_ln40_14_fu_751_p2         |     +    |      0|  0|  13|          11|          11|
@@ -202,7 +202,7 @@
     |                 Name                | FF | LUT| Bits| Const Bits|
     +-------------------------------------+----+----+-----+-----------+
     |add_ln23_reg_1370                    |  11|   0|   11|          0|
-    |add_ln32_4_reg_1295                  |   8|   0|    8|          0|
+    |add_ln32_2_reg_1295                  |   8|   0|    8|          0|
     |add_ln40_20_reg_1484                 |  11|   0|   11|          0|
     |add_ln48_10_reg_1514                 |  16|   0|   16|          0|
     |add_ln48_12_reg_1529                 |  16|   0|   16|          0|
@@ -256,10 +256,10 @@
     |trunc_ln48_s_reg_1464                |  16|   0|   16|          0|
     |trunc_ln_reg_1423                    |  16|   0|   16|          0|
     |zext_ln24_19_reg_1300                |   6|   0|    7|          1|
-    |zext_ln40_14_reg_1332                |   4|   0|   11|          7|
-    |zext_ln40_14_reg_1332_pp0_iter1_reg  |   4|   0|   11|          7|
-    |zext_ln40_16_reg_1349                |   4|   0|   11|          7|
-    |zext_ln40_18_reg_1392                |   4|   0|   11|          7|
+    |zext_ln40_13_reg_1332                |   4|   0|   11|          7|
+    |zext_ln40_13_reg_1332_pp0_iter1_reg  |   4|   0|   11|          7|
+    |zext_ln40_15_reg_1349                |   4|   0|   11|          7|
+    |zext_ln40_17_reg_1392                |   4|   0|   11|          7|
     |zext_ln40_1_cast14_reg_1180          |   6|   0|   11|          5|
     |zext_ln40_2_cast_mid_reg_1283        |   4|   0|    7|          3|
     |zext_ln40_2_cast_reg_1223            |   4|   0|    7|          3|
@@ -402,8 +402,8 @@ ST_2 : Operation 46 [1/1] (0.00ns)   --->   "%zext_ln48_4 = zext i4 %out_d to i7
 ST_2 : Operation 47 [1/1] (0.00ns)   --->   "%zext_ln27_4 = zext i4 %out_d to i6" [../layers_c/depthwise_conv2d.cpp:27]   --->   Operation 47 'zext' 'zext_ln27_4' <Predicate = (!icmp_ln23)> <Delay = 0.00>
 ST_2 : Operation 48 [1/1] (0.00ns)   --->   "%trunc_ln27_2 = trunc i4 %out_d to i3" [../layers_c/depthwise_conv2d.cpp:27]   --->   Operation 48 'trunc' 'trunc_ln27_2' <Predicate = (!icmp_ln23)> <Delay = 0.00>
 ST_2 : Operation 49 [1/1] (0.00ns)   --->   "%shl_ln27_mid1 = call i6 @_ssdm_op_BitConcatenate.i6.i3.i3(i3 %trunc_ln27_2, i3 0)" [../layers_c/depthwise_conv2d.cpp:27]   --->   Operation 49 'bitconcatenate' 'shl_ln27_mid1' <Predicate = (!icmp_ln23)> <Delay = 0.00>
-ST_2 : Operation 50 [1/1] (1.82ns)   --->   "%add_ln27_2 = add i6 %zext_ln27_4, %shl_ln27_mid1" [../layers_c/depthwise_conv2d.cpp:27]   --->   Operation 50 'add' 'add_ln27_2' <Predicate = (!icmp_ln23)> <Delay = 1.82> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 51 [1/1] (1.18ns)   --->   "%select_ln24_8 = select i1 %icmp_ln32, i6 %add_ln27_2, i6 %add_ln27" [../layers_c/depthwise_conv2d.cpp:24]   --->   Operation 51 'select' 'select_ln24_8' <Predicate = (!icmp_ln23)> <Delay = 1.18> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 50 [1/1] (1.82ns)   --->   "%add_ln27_5 = add i6 %zext_ln27_4, %shl_ln27_mid1" [../layers_c/depthwise_conv2d.cpp:27]   --->   Operation 50 'add' 'add_ln27_5' <Predicate = (!icmp_ln23)> <Delay = 1.82> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 51 [1/1] (1.18ns)   --->   "%select_ln24_8 = select i1 %icmp_ln32, i6 %add_ln27_5, i6 %add_ln27" [../layers_c/depthwise_conv2d.cpp:24]   --->   Operation 51 'select' 'select_ln24_8' <Predicate = (!icmp_ln23)> <Delay = 1.18> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
 ST_2 : Operation 52 [1/1] (0.00ns)   --->   "%zext_ln24 = zext i6 %select_ln24_8 to i64" [../layers_c/depthwise_conv2d.cpp:24]   --->   Operation 52 'zext' 'zext_ln24' <Predicate = (!icmp_ln23)> <Delay = 0.00>
 ST_2 : Operation 53 [1/1] (0.00ns)   --->   "%kernel_addr = getelementptr [72 x i16]* %kernel, i64 0, i64 %zext_ln24" [../layers_c/depthwise_conv2d.cpp:27]   --->   Operation 53 'getelementptr' 'kernel_addr' <Predicate = (!icmp_ln23)> <Delay = 0.00>
 ST_2 : Operation 54 [2/2] (3.25ns)   --->   "%kernel_load = load i16* %kernel_addr, align 2" [../layers_c/depthwise_conv2d.cpp:24]   --->   Operation 54 'load' 'kernel_load' <Predicate = (!icmp_ln23)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 144> <RAM>
@@ -418,7 +418,7 @@ ST_2 : Operation 62 [1/1] (1.02ns) (out node of the LUT)   --->   "%out_w_0_mid2
 ST_2 : Operation 63 [1/1] (0.00ns)   --->   "%zext_ln40_2_cast_mid = zext i4 %out_h to i7" [../layers_c/depthwise_conv2d.cpp:32]   --->   Operation 63 'zext' 'zext_ln40_2_cast_mid' <Predicate = (!icmp_ln23)> <Delay = 0.00>
 ST_2 : Operation 64 [1/1] (1.87ns) (out node of the LUT)   --->   "%tmp_0_0_mid1 = add i7 %zext_ln40_2_cast_mid, %select_ln24_10" [../layers_c/depthwise_conv2d.cpp:32]   --->   Operation 64 'add' 'tmp_0_0_mid1' <Predicate = (!icmp_ln23)> <Delay = 1.87> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 65 [1/1] (0.99ns) (out node of the LUT)   --->   "%tmp10_0_0_mid2_v_v = select i1 %select_ln24_14, i7 %tmp_0_0_mid1, i7 %select_ln24_12" [../layers_c/depthwise_conv2d.cpp:24]   --->   Operation 65 'select' 'tmp10_0_0_mid2_v_v' <Predicate = (!icmp_ln23)> <Delay = 0.99> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_2 : Operation 66 [1/1] (1.91ns)   --->   "%add_ln32_4 = add i8 1, %indvar_flatten" [../layers_c/depthwise_conv2d.cpp:32]   --->   Operation 66 'add' 'add_ln32_4' <Predicate = (!icmp_ln23)> <Delay = 1.91> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 66 [1/1] (1.91ns)   --->   "%add_ln32_2 = add i8 1, %indvar_flatten" [../layers_c/depthwise_conv2d.cpp:32]   --->   Operation 66 'add' 'add_ln32_2' <Predicate = (!icmp_ln23)> <Delay = 1.91> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 
 State 3 <SV = 2> <Delay = 8.63>
 ST_3 : Operation 67 [1/2] (3.25ns)   --->   "%kernel_load = load i16* %kernel_addr, align 2" [../layers_c/depthwise_conv2d.cpp:24]   --->   Operation 67 'load' 'kernel_load' <Predicate = (!icmp_ln23)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 144> <RAM>
@@ -427,8 +427,8 @@ ST_3 : Operation 69 [1/1] (1.82ns)   --->   "%add_ln24 = add i7 1, %zext_ln24_19
 ST_3 : Operation 70 [1/1] (0.00ns)   --->   "%zext_ln24_10 = zext i7 %add_ln24 to i64" [../layers_c/depthwise_conv2d.cpp:24]   --->   Operation 70 'zext' 'zext_ln24_10' <Predicate = (!icmp_ln23)> <Delay = 0.00>
 ST_3 : Operation 71 [1/1] (0.00ns)   --->   "%kernel_addr_9 = getelementptr [72 x i16]* %kernel, i64 0, i64 %zext_ln24_10" [../layers_c/depthwise_conv2d.cpp:27]   --->   Operation 71 'getelementptr' 'kernel_addr_9' <Predicate = (!icmp_ln23)> <Delay = 0.00>
 ST_3 : Operation 72 [2/2] (3.25ns)   --->   "%kernel_load_9 = load i16* %kernel_addr_9, align 2" [../layers_c/depthwise_conv2d.cpp:24]   --->   Operation 72 'load' 'kernel_load_9' <Predicate = (!icmp_ln23)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 144> <RAM>
-ST_3 : Operation 73 [1/1] (1.82ns)   --->   "%add_ln24_11 = add i7 2, %zext_ln24_19" [../layers_c/depthwise_conv2d.cpp:24]   --->   Operation 73 'add' 'add_ln24_11' <Predicate = (!icmp_ln23)> <Delay = 1.82> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 74 [1/1] (0.00ns)   --->   "%zext_ln24_11 = zext i7 %add_ln24_11 to i64" [../layers_c/depthwise_conv2d.cpp:24]   --->   Operation 74 'zext' 'zext_ln24_11' <Predicate = (!icmp_ln23)> <Delay = 0.00>
+ST_3 : Operation 73 [1/1] (1.82ns)   --->   "%add_ln24_10 = add i7 2, %zext_ln24_19" [../layers_c/depthwise_conv2d.cpp:24]   --->   Operation 73 'add' 'add_ln24_10' <Predicate = (!icmp_ln23)> <Delay = 1.82> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 74 [1/1] (0.00ns)   --->   "%zext_ln24_11 = zext i7 %add_ln24_10 to i64" [../layers_c/depthwise_conv2d.cpp:24]   --->   Operation 74 'zext' 'zext_ln24_11' <Predicate = (!icmp_ln23)> <Delay = 0.00>
 ST_3 : Operation 75 [1/1] (0.00ns)   --->   "%kernel_addr_10 = getelementptr [72 x i16]* %kernel, i64 0, i64 %zext_ln24_11" [../layers_c/depthwise_conv2d.cpp:27]   --->   Operation 75 'getelementptr' 'kernel_addr_10' <Predicate = (!icmp_ln23)> <Delay = 0.00>
 ST_3 : Operation 76 [2/2] (3.25ns)   --->   "%kernel_load_10 = load i16* %kernel_addr_10, align 2" [../layers_c/depthwise_conv2d.cpp:24]   --->   Operation 76 'load' 'kernel_load_10' <Predicate = (!icmp_ln23)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 144> <RAM>
 ST_3 : Operation 77 [1/1] (0.00ns)   --->   "%tmp10_0_0_mid2_v = zext i7 %tmp10_0_0_mid2_v_v to i11" [../layers_c/depthwise_conv2d.cpp:24]   --->   Operation 77 'zext' 'tmp10_0_0_mid2_v' <Predicate = (!icmp_ln23)> <Delay = 0.00>
@@ -436,16 +436,16 @@ ST_3 : Operation 78 [1/1] (3.74ns)   --->   "%tmp10_0_0_mid2 = mul i11 %zext_ln4
 ST_3 : Operation 79 [1/1] (1.87ns)   --->   "%tmp10_1_0_mid2_v_v = add i7 1, %tmp10_0_0_mid2_v_v" [../layers_c/depthwise_conv2d.cpp:24]   --->   Operation 79 'add' 'tmp10_1_0_mid2_v_v' <Predicate = (!icmp_ln23)> <Delay = 1.87> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_3 : Operation 80 [1/1] (0.00ns)   --->   "%tmp10_1_0_mid2_v = zext i7 %tmp10_1_0_mid2_v_v to i11" [../layers_c/depthwise_conv2d.cpp:24]   --->   Operation 80 'zext' 'tmp10_1_0_mid2_v' <Predicate = (!icmp_ln23)> <Delay = 0.00>
 ST_3 : Operation 81 [1/1] (3.74ns)   --->   "%tmp10_1_0_mid2 = mul i11 %zext_ln40_1_cast14, %tmp10_1_0_mid2_v" [../layers_c/depthwise_conv2d.cpp:4]   --->   Operation 81 'mul' 'tmp10_1_0_mid2' <Predicate = (!icmp_ln23)> <Delay = 3.74> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 3.74> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 82 [1/1] (0.00ns)   --->   "%zext_ln40_14 = zext i4 %out_w_0_mid2 to i11" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 82 'zext' 'zext_ln40_14' <Predicate = (!icmp_ln23)> <Delay = 0.00>
-ST_3 : Operation 83 [1/1] (1.63ns)   --->   "%add_ln40 = add i11 %zext_ln40_14, %tmp10_0_0_mid2" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 83 'add' 'add_ln40' <Predicate = (!icmp_ln23)> <Delay = 1.63> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 84 [1/1] (0.00ns)   --->   "%zext_ln40_15 = zext i11 %add_ln40 to i64" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 84 'zext' 'zext_ln40_15' <Predicate = (!icmp_ln23)> <Delay = 0.00>
-ST_3 : Operation 85 [1/1] (0.00ns)   --->   "%input_addr = getelementptr [14400 x i16]* %input_r, i64 0, i64 %zext_ln40_15" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 85 'getelementptr' 'input_addr' <Predicate = (!icmp_ln23)> <Delay = 0.00>
+ST_3 : Operation 82 [1/1] (0.00ns)   --->   "%zext_ln40_13 = zext i4 %out_w_0_mid2 to i11" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 82 'zext' 'zext_ln40_13' <Predicate = (!icmp_ln23)> <Delay = 0.00>
+ST_3 : Operation 83 [1/1] (1.63ns)   --->   "%add_ln40 = add i11 %zext_ln40_13, %tmp10_0_0_mid2" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 83 'add' 'add_ln40' <Predicate = (!icmp_ln23)> <Delay = 1.63> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 84 [1/1] (0.00ns)   --->   "%zext_ln40_14 = zext i11 %add_ln40 to i64" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 84 'zext' 'zext_ln40_14' <Predicate = (!icmp_ln23)> <Delay = 0.00>
+ST_3 : Operation 85 [1/1] (0.00ns)   --->   "%input_addr = getelementptr [14400 x i16]* %input_r, i64 0, i64 %zext_ln40_14" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 85 'getelementptr' 'input_addr' <Predicate = (!icmp_ln23)> <Delay = 0.00>
 ST_3 : Operation 86 [2/2] (3.25ns)   --->   "%input_load = load i16* %input_addr, align 2" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 86 'load' 'input_load' <Predicate = (!icmp_ln23)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 144> <RAM>
 ST_3 : Operation 87 [1/1] (1.73ns)   --->   "%out_w = add i4 1, %out_w_0_mid2" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 87 'add' 'out_w' <Predicate = (!icmp_ln23)> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 88 [1/1] (0.00ns)   --->   "%zext_ln40_16 = zext i4 %out_w to i11" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 88 'zext' 'zext_ln40_16' <Predicate = (!icmp_ln23)> <Delay = 0.00>
-ST_3 : Operation 89 [1/1] (1.63ns)   --->   "%add_ln40_12 = add i11 %tmp10_0_0_mid2, %zext_ln40_16" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 89 'add' 'add_ln40_12' <Predicate = (!icmp_ln23)> <Delay = 1.63> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 90 [1/1] (0.00ns)   --->   "%zext_ln40_17 = zext i11 %add_ln40_12 to i64" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 90 'zext' 'zext_ln40_17' <Predicate = (!icmp_ln23)> <Delay = 0.00>
-ST_3 : Operation 91 [1/1] (0.00ns)   --->   "%input_addr_15 = getelementptr [14400 x i16]* %input_r, i64 0, i64 %zext_ln40_17" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 91 'getelementptr' 'input_addr_15' <Predicate = (!icmp_ln23)> <Delay = 0.00>
+ST_3 : Operation 88 [1/1] (0.00ns)   --->   "%zext_ln40_15 = zext i4 %out_w to i11" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 88 'zext' 'zext_ln40_15' <Predicate = (!icmp_ln23)> <Delay = 0.00>
+ST_3 : Operation 89 [1/1] (1.63ns)   --->   "%add_ln40_12 = add i11 %tmp10_0_0_mid2, %zext_ln40_15" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 89 'add' 'add_ln40_12' <Predicate = (!icmp_ln23)> <Delay = 1.63> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 90 [1/1] (0.00ns)   --->   "%zext_ln40_16 = zext i11 %add_ln40_12 to i64" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 90 'zext' 'zext_ln40_16' <Predicate = (!icmp_ln23)> <Delay = 0.00>
+ST_3 : Operation 91 [1/1] (0.00ns)   --->   "%input_addr_15 = getelementptr [14400 x i16]* %input_r, i64 0, i64 %zext_ln40_16" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 91 'getelementptr' 'input_addr_15' <Predicate = (!icmp_ln23)> <Delay = 0.00>
 ST_3 : Operation 92 [2/2] (3.25ns)   --->   "%input_load_15 = load i16* %input_addr_15, align 2" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 92 'load' 'input_load_15' <Predicate = (!icmp_ln23)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 144> <RAM>
 
 State 4 <SV = 3> <Delay = 6.62>
@@ -456,12 +456,12 @@ ST_4 : Operation 96 [1/1] (1.63ns)   --->   "%add_ln23 = add i11 1, %indvar_flat
 ST_4 : Operation 97 [1/1] (0.00ns)   --->   "br i1 %icmp_ln23, label %1, label %hls_label_2" [../layers_c/depthwise_conv2d.cpp:23]   --->   Operation 97 'br' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 98 [1/2] (3.25ns)   --->   "%kernel_load_9 = load i16* %kernel_addr_9, align 2" [../layers_c/depthwise_conv2d.cpp:24]   --->   Operation 98 'load' 'kernel_load_9' <Predicate = (!icmp_ln23)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 144> <RAM>
 ST_4 : Operation 99 [1/2] (3.25ns)   --->   "%kernel_load_10 = load i16* %kernel_addr_10, align 2" [../layers_c/depthwise_conv2d.cpp:24]   --->   Operation 99 'load' 'kernel_load_10' <Predicate = (!icmp_ln23)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 144> <RAM>
-ST_4 : Operation 100 [1/1] (1.82ns)   --->   "%add_ln24_12 = add i7 3, %zext_ln24_19" [../layers_c/depthwise_conv2d.cpp:24]   --->   Operation 100 'add' 'add_ln24_12' <Predicate = (!icmp_ln23)> <Delay = 1.82> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_4 : Operation 101 [1/1] (0.00ns)   --->   "%zext_ln24_12 = zext i7 %add_ln24_12 to i64" [../layers_c/depthwise_conv2d.cpp:24]   --->   Operation 101 'zext' 'zext_ln24_12' <Predicate = (!icmp_ln23)> <Delay = 0.00>
+ST_4 : Operation 100 [1/1] (1.82ns)   --->   "%add_ln24_11 = add i7 3, %zext_ln24_19" [../layers_c/depthwise_conv2d.cpp:24]   --->   Operation 100 'add' 'add_ln24_11' <Predicate = (!icmp_ln23)> <Delay = 1.82> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 101 [1/1] (0.00ns)   --->   "%zext_ln24_12 = zext i7 %add_ln24_11 to i64" [../layers_c/depthwise_conv2d.cpp:24]   --->   Operation 101 'zext' 'zext_ln24_12' <Predicate = (!icmp_ln23)> <Delay = 0.00>
 ST_4 : Operation 102 [1/1] (0.00ns)   --->   "%kernel_addr_11 = getelementptr [72 x i16]* %kernel, i64 0, i64 %zext_ln24_12" [../layers_c/depthwise_conv2d.cpp:27]   --->   Operation 102 'getelementptr' 'kernel_addr_11' <Predicate = (!icmp_ln23)> <Delay = 0.00>
 ST_4 : Operation 103 [2/2] (3.25ns)   --->   "%kernel_load_11 = load i16* %kernel_addr_11, align 2" [../layers_c/depthwise_conv2d.cpp:24]   --->   Operation 103 'load' 'kernel_load_11' <Predicate = (!icmp_ln23)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 144> <RAM>
-ST_4 : Operation 104 [1/1] (1.82ns)   --->   "%add_ln24_13 = add i7 4, %zext_ln24_19" [../layers_c/depthwise_conv2d.cpp:24]   --->   Operation 104 'add' 'add_ln24_13' <Predicate = (!icmp_ln23)> <Delay = 1.82> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_4 : Operation 105 [1/1] (0.00ns)   --->   "%zext_ln24_13 = zext i7 %add_ln24_13 to i64" [../layers_c/depthwise_conv2d.cpp:24]   --->   Operation 105 'zext' 'zext_ln24_13' <Predicate = (!icmp_ln23)> <Delay = 0.00>
+ST_4 : Operation 104 [1/1] (1.82ns)   --->   "%add_ln24_12 = add i7 4, %zext_ln24_19" [../layers_c/depthwise_conv2d.cpp:24]   --->   Operation 104 'add' 'add_ln24_12' <Predicate = (!icmp_ln23)> <Delay = 1.82> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 105 [1/1] (0.00ns)   --->   "%zext_ln24_13 = zext i7 %add_ln24_12 to i64" [../layers_c/depthwise_conv2d.cpp:24]   --->   Operation 105 'zext' 'zext_ln24_13' <Predicate = (!icmp_ln23)> <Delay = 0.00>
 ST_4 : Operation 106 [1/1] (0.00ns)   --->   "%kernel_addr_12 = getelementptr [72 x i16]* %kernel, i64 0, i64 %zext_ln24_13" [../layers_c/depthwise_conv2d.cpp:27]   --->   Operation 106 'getelementptr' 'kernel_addr_12' <Predicate = (!icmp_ln23)> <Delay = 0.00>
 ST_4 : Operation 107 [2/2] (3.25ns)   --->   "%kernel_load_12 = load i16* %kernel_addr_12, align 2" [../layers_c/depthwise_conv2d.cpp:24]   --->   Operation 107 'load' 'kernel_load_12' <Predicate = (!icmp_ln23)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 144> <RAM>
 ST_4 : Operation 108 [1/1] (1.87ns)   --->   "%tmp10_2_0_mid2_v_v = add i7 2, %tmp10_0_0_mid2_v_v" [../layers_c/depthwise_conv2d.cpp:24]   --->   Operation 108 'add' 'tmp10_2_0_mid2_v_v' <Predicate = (!icmp_ln23)> <Delay = 1.87> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
@@ -470,14 +470,14 @@ ST_4 : Operation 110 [1/1] (3.74ns)   --->   "%tmp10_2_0_mid2 = mul i11 %zext_ln
 ST_4 : Operation 111 [1/2] (3.25ns)   --->   "%input_load = load i16* %input_addr, align 2" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 111 'load' 'input_load' <Predicate = (!icmp_ln23)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 144> <RAM>
 ST_4 : Operation 112 [1/2] (3.25ns)   --->   "%input_load_15 = load i16* %input_addr_15, align 2" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 112 'load' 'input_load_15' <Predicate = (!icmp_ln23)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 144> <RAM>
 ST_4 : Operation 113 [1/1] (1.73ns)   --->   "%add_ln40_13 = add i4 2, %out_w_0_mid2" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 113 'add' 'add_ln40_13' <Predicate = (!icmp_ln23)> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_4 : Operation 114 [1/1] (0.00ns)   --->   "%zext_ln40_18 = zext i4 %add_ln40_13 to i11" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 114 'zext' 'zext_ln40_18' <Predicate = (!icmp_ln23)> <Delay = 0.00>
-ST_4 : Operation 115 [1/1] (1.63ns)   --->   "%add_ln40_14 = add i11 %tmp10_0_0_mid2, %zext_ln40_18" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 115 'add' 'add_ln40_14' <Predicate = (!icmp_ln23)> <Delay = 1.63> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_4 : Operation 116 [1/1] (0.00ns)   --->   "%zext_ln40_19 = zext i11 %add_ln40_14 to i64" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 116 'zext' 'zext_ln40_19' <Predicate = (!icmp_ln23)> <Delay = 0.00>
-ST_4 : Operation 117 [1/1] (0.00ns)   --->   "%input_addr_16 = getelementptr [14400 x i16]* %input_r, i64 0, i64 %zext_ln40_19" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 117 'getelementptr' 'input_addr_16' <Predicate = (!icmp_ln23)> <Delay = 0.00>
+ST_4 : Operation 114 [1/1] (0.00ns)   --->   "%zext_ln40_17 = zext i4 %add_ln40_13 to i11" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 114 'zext' 'zext_ln40_17' <Predicate = (!icmp_ln23)> <Delay = 0.00>
+ST_4 : Operation 115 [1/1] (1.63ns)   --->   "%add_ln40_14 = add i11 %tmp10_0_0_mid2, %zext_ln40_17" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 115 'add' 'add_ln40_14' <Predicate = (!icmp_ln23)> <Delay = 1.63> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 116 [1/1] (0.00ns)   --->   "%zext_ln40_18 = zext i11 %add_ln40_14 to i64" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 116 'zext' 'zext_ln40_18' <Predicate = (!icmp_ln23)> <Delay = 0.00>
+ST_4 : Operation 117 [1/1] (0.00ns)   --->   "%input_addr_16 = getelementptr [14400 x i16]* %input_r, i64 0, i64 %zext_ln40_18" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 117 'getelementptr' 'input_addr_16' <Predicate = (!icmp_ln23)> <Delay = 0.00>
 ST_4 : Operation 118 [2/2] (3.25ns)   --->   "%input_load_16 = load i16* %input_addr_16, align 2" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 118 'load' 'input_load_16' <Predicate = (!icmp_ln23)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 144> <RAM>
-ST_4 : Operation 119 [1/1] (1.63ns)   --->   "%add_ln40_15 = add i11 %zext_ln40_14, %tmp10_1_0_mid2" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 119 'add' 'add_ln40_15' <Predicate = (!icmp_ln23)> <Delay = 1.63> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_4 : Operation 120 [1/1] (0.00ns)   --->   "%zext_ln40_20 = zext i11 %add_ln40_15 to i64" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 120 'zext' 'zext_ln40_20' <Predicate = (!icmp_ln23)> <Delay = 0.00>
-ST_4 : Operation 121 [1/1] (0.00ns)   --->   "%input_addr_17 = getelementptr [14400 x i16]* %input_r, i64 0, i64 %zext_ln40_20" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 121 'getelementptr' 'input_addr_17' <Predicate = (!icmp_ln23)> <Delay = 0.00>
+ST_4 : Operation 119 [1/1] (1.63ns)   --->   "%add_ln40_15 = add i11 %zext_ln40_13, %tmp10_1_0_mid2" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 119 'add' 'add_ln40_15' <Predicate = (!icmp_ln23)> <Delay = 1.63> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 120 [1/1] (0.00ns)   --->   "%zext_ln40_19 = zext i11 %add_ln40_15 to i64" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 120 'zext' 'zext_ln40_19' <Predicate = (!icmp_ln23)> <Delay = 0.00>
+ST_4 : Operation 121 [1/1] (0.00ns)   --->   "%input_addr_17 = getelementptr [14400 x i16]* %input_r, i64 0, i64 %zext_ln40_19" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 121 'getelementptr' 'input_addr_17' <Predicate = (!icmp_ln23)> <Delay = 0.00>
 ST_4 : Operation 122 [2/2] (3.25ns)   --->   "%input_load_17 = load i16* %input_addr_17, align 2" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 122 'load' 'input_load_17' <Predicate = (!icmp_ln23)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 144> <RAM>
 
 State 5 <SV = 4> <Delay = 6.38>
@@ -485,12 +485,12 @@ ST_5 : Operation 123 [1/1] (0.00ns)   --->   "%sext_ln24 = sext i16 %kernel_load
 ST_5 : Operation 124 [1/1] (0.00ns)   --->   "%sext_ln24_9 = sext i16 %kernel_load_9 to i30" [../layers_c/depthwise_conv2d.cpp:24]   --->   Operation 124 'sext' 'sext_ln24_9' <Predicate = (!icmp_ln23)> <Delay = 0.00>
 ST_5 : Operation 125 [1/2] (3.25ns)   --->   "%kernel_load_11 = load i16* %kernel_addr_11, align 2" [../layers_c/depthwise_conv2d.cpp:24]   --->   Operation 125 'load' 'kernel_load_11' <Predicate = (!icmp_ln23)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 144> <RAM>
 ST_5 : Operation 126 [1/2] (3.25ns)   --->   "%kernel_load_12 = load i16* %kernel_addr_12, align 2" [../layers_c/depthwise_conv2d.cpp:24]   --->   Operation 126 'load' 'kernel_load_12' <Predicate = (!icmp_ln23)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 144> <RAM>
-ST_5 : Operation 127 [1/1] (1.82ns)   --->   "%add_ln24_14 = add i7 5, %zext_ln24_19" [../layers_c/depthwise_conv2d.cpp:24]   --->   Operation 127 'add' 'add_ln24_14' <Predicate = (!icmp_ln23)> <Delay = 1.82> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_5 : Operation 128 [1/1] (0.00ns)   --->   "%zext_ln24_14 = zext i7 %add_ln24_14 to i64" [../layers_c/depthwise_conv2d.cpp:24]   --->   Operation 128 'zext' 'zext_ln24_14' <Predicate = (!icmp_ln23)> <Delay = 0.00>
+ST_5 : Operation 127 [1/1] (1.82ns)   --->   "%add_ln24_13 = add i7 5, %zext_ln24_19" [../layers_c/depthwise_conv2d.cpp:24]   --->   Operation 127 'add' 'add_ln24_13' <Predicate = (!icmp_ln23)> <Delay = 1.82> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 128 [1/1] (0.00ns)   --->   "%zext_ln24_14 = zext i7 %add_ln24_13 to i64" [../layers_c/depthwise_conv2d.cpp:24]   --->   Operation 128 'zext' 'zext_ln24_14' <Predicate = (!icmp_ln23)> <Delay = 0.00>
 ST_5 : Operation 129 [1/1] (0.00ns)   --->   "%kernel_addr_13 = getelementptr [72 x i16]* %kernel, i64 0, i64 %zext_ln24_14" [../layers_c/depthwise_conv2d.cpp:27]   --->   Operation 129 'getelementptr' 'kernel_addr_13' <Predicate = (!icmp_ln23)> <Delay = 0.00>
 ST_5 : Operation 130 [2/2] (3.25ns)   --->   "%kernel_load_13 = load i16* %kernel_addr_13, align 2" [../layers_c/depthwise_conv2d.cpp:24]   --->   Operation 130 'load' 'kernel_load_13' <Predicate = (!icmp_ln23)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 144> <RAM>
-ST_5 : Operation 131 [1/1] (1.82ns)   --->   "%add_ln24_15 = add i7 6, %zext_ln24_19" [../layers_c/depthwise_conv2d.cpp:24]   --->   Operation 131 'add' 'add_ln24_15' <Predicate = (!icmp_ln23)> <Delay = 1.82> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_5 : Operation 132 [1/1] (0.00ns)   --->   "%zext_ln24_15 = zext i7 %add_ln24_15 to i64" [../layers_c/depthwise_conv2d.cpp:24]   --->   Operation 132 'zext' 'zext_ln24_15' <Predicate = (!icmp_ln23)> <Delay = 0.00>
+ST_5 : Operation 131 [1/1] (1.82ns)   --->   "%add_ln24_14 = add i7 6, %zext_ln24_19" [../layers_c/depthwise_conv2d.cpp:24]   --->   Operation 131 'add' 'add_ln24_14' <Predicate = (!icmp_ln23)> <Delay = 1.82> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 132 [1/1] (0.00ns)   --->   "%zext_ln24_15 = zext i7 %add_ln24_14 to i64" [../layers_c/depthwise_conv2d.cpp:24]   --->   Operation 132 'zext' 'zext_ln24_15' <Predicate = (!icmp_ln23)> <Delay = 0.00>
 ST_5 : Operation 133 [1/1] (0.00ns)   --->   "%kernel_addr_14 = getelementptr [72 x i16]* %kernel, i64 0, i64 %zext_ln24_15" [../layers_c/depthwise_conv2d.cpp:27]   --->   Operation 133 'getelementptr' 'kernel_addr_14' <Predicate = (!icmp_ln23)> <Delay = 0.00>
 ST_5 : Operation 134 [2/2] (3.25ns)   --->   "%kernel_load_14 = load i16* %kernel_addr_14, align 2" [../layers_c/depthwise_conv2d.cpp:24]   --->   Operation 134 'load' 'kernel_load_14' <Predicate = (!icmp_ln23)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 144> <RAM>
 ST_5 : Operation 135 [1/1] (3.49ns)   --->   "%mul_ln48_2 = mul i7 %zext_ln48_4, %zext_ln48" [../layers_c/depthwise_conv2d.cpp:48]   --->   Operation 135 'mul' 'mul_ln48_2' <Predicate = (!icmp_ln23)> <Delay = 3.49> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 3.74> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
@@ -506,13 +506,13 @@ ST_5 : Operation 144 [1/1] (6.38ns) (root node of the DSP)   --->   "%mul_ln40_1
 ST_5 : Operation 145 [1/1] (0.00ns)   --->   "%trunc_ln48_9 = call i16 @_ssdm_op_PartSelect.i16.i30.i32.i32(i30 %mul_ln40_10, i32 14, i32 29)" [../layers_c/depthwise_conv2d.cpp:48]   --->   Operation 145 'partselect' 'trunc_ln48_9' <Predicate = (!icmp_ln23)> <Delay = 0.00>
 ST_5 : Operation 146 [1/2] (3.25ns)   --->   "%input_load_16 = load i16* %input_addr_16, align 2" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 146 'load' 'input_load_16' <Predicate = (!icmp_ln23)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 144> <RAM>
 ST_5 : Operation 147 [1/2] (3.25ns)   --->   "%input_load_17 = load i16* %input_addr_17, align 2" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 147 'load' 'input_load_17' <Predicate = (!icmp_ln23)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 144> <RAM>
-ST_5 : Operation 148 [1/1] (1.63ns)   --->   "%add_ln40_16 = add i11 %tmp10_1_0_mid2, %zext_ln40_16" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 148 'add' 'add_ln40_16' <Predicate = (!icmp_ln23)> <Delay = 1.63> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_5 : Operation 149 [1/1] (0.00ns)   --->   "%zext_ln40_21 = zext i11 %add_ln40_16 to i64" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 149 'zext' 'zext_ln40_21' <Predicate = (!icmp_ln23)> <Delay = 0.00>
-ST_5 : Operation 150 [1/1] (0.00ns)   --->   "%input_addr_18 = getelementptr [14400 x i16]* %input_r, i64 0, i64 %zext_ln40_21" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 150 'getelementptr' 'input_addr_18' <Predicate = (!icmp_ln23)> <Delay = 0.00>
+ST_5 : Operation 148 [1/1] (1.63ns)   --->   "%add_ln40_16 = add i11 %tmp10_1_0_mid2, %zext_ln40_15" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 148 'add' 'add_ln40_16' <Predicate = (!icmp_ln23)> <Delay = 1.63> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 149 [1/1] (0.00ns)   --->   "%zext_ln40_20 = zext i11 %add_ln40_16 to i64" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 149 'zext' 'zext_ln40_20' <Predicate = (!icmp_ln23)> <Delay = 0.00>
+ST_5 : Operation 150 [1/1] (0.00ns)   --->   "%input_addr_18 = getelementptr [14400 x i16]* %input_r, i64 0, i64 %zext_ln40_20" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 150 'getelementptr' 'input_addr_18' <Predicate = (!icmp_ln23)> <Delay = 0.00>
 ST_5 : Operation 151 [2/2] (3.25ns)   --->   "%input_load_18 = load i16* %input_addr_18, align 2" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 151 'load' 'input_load_18' <Predicate = (!icmp_ln23)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 144> <RAM>
-ST_5 : Operation 152 [1/1] (1.63ns)   --->   "%add_ln40_17 = add i11 %tmp10_1_0_mid2, %zext_ln40_18" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 152 'add' 'add_ln40_17' <Predicate = (!icmp_ln23)> <Delay = 1.63> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_5 : Operation 153 [1/1] (0.00ns)   --->   "%zext_ln40_22 = zext i11 %add_ln40_17 to i64" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 153 'zext' 'zext_ln40_22' <Predicate = (!icmp_ln23)> <Delay = 0.00>
-ST_5 : Operation 154 [1/1] (0.00ns)   --->   "%input_addr_19 = getelementptr [14400 x i16]* %input_r, i64 0, i64 %zext_ln40_22" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 154 'getelementptr' 'input_addr_19' <Predicate = (!icmp_ln23)> <Delay = 0.00>
+ST_5 : Operation 152 [1/1] (1.63ns)   --->   "%add_ln40_17 = add i11 %tmp10_1_0_mid2, %zext_ln40_17" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 152 'add' 'add_ln40_17' <Predicate = (!icmp_ln23)> <Delay = 1.63> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 153 [1/1] (0.00ns)   --->   "%zext_ln40_21 = zext i11 %add_ln40_17 to i64" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 153 'zext' 'zext_ln40_21' <Predicate = (!icmp_ln23)> <Delay = 0.00>
+ST_5 : Operation 154 [1/1] (0.00ns)   --->   "%input_addr_19 = getelementptr [14400 x i16]* %input_r, i64 0, i64 %zext_ln40_21" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 154 'getelementptr' 'input_addr_19' <Predicate = (!icmp_ln23)> <Delay = 0.00>
 ST_5 : Operation 155 [2/2] (3.25ns)   --->   "%input_load_19 = load i16* %input_addr_19, align 2" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 155 'load' 'input_load_19' <Predicate = (!icmp_ln23)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 144> <RAM>
 
 State 6 <SV = 5> <Delay = 6.38>
@@ -520,12 +520,12 @@ ST_6 : Operation 156 [1/1] (0.00ns)   --->   "%sext_ln24_10 = sext i16 %kernel_l
 ST_6 : Operation 157 [1/1] (0.00ns)   --->   "%sext_ln24_11 = sext i16 %kernel_load_11 to i30" [../layers_c/depthwise_conv2d.cpp:24]   --->   Operation 157 'sext' 'sext_ln24_11' <Predicate = (!icmp_ln23)> <Delay = 0.00>
 ST_6 : Operation 158 [1/2] (3.25ns)   --->   "%kernel_load_13 = load i16* %kernel_addr_13, align 2" [../layers_c/depthwise_conv2d.cpp:24]   --->   Operation 158 'load' 'kernel_load_13' <Predicate = (!icmp_ln23)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 144> <RAM>
 ST_6 : Operation 159 [1/2] (3.25ns)   --->   "%kernel_load_14 = load i16* %kernel_addr_14, align 2" [../layers_c/depthwise_conv2d.cpp:24]   --->   Operation 159 'load' 'kernel_load_14' <Predicate = (!icmp_ln23)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 144> <RAM>
-ST_6 : Operation 160 [1/1] (1.82ns)   --->   "%add_ln24_16 = add i7 7, %zext_ln24_19" [../layers_c/depthwise_conv2d.cpp:24]   --->   Operation 160 'add' 'add_ln24_16' <Predicate = (!icmp_ln23)> <Delay = 1.82> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_6 : Operation 161 [1/1] (0.00ns)   --->   "%zext_ln24_16 = zext i7 %add_ln24_16 to i64" [../layers_c/depthwise_conv2d.cpp:24]   --->   Operation 161 'zext' 'zext_ln24_16' <Predicate = (!icmp_ln23)> <Delay = 0.00>
+ST_6 : Operation 160 [1/1] (1.82ns)   --->   "%add_ln24_15 = add i7 7, %zext_ln24_19" [../layers_c/depthwise_conv2d.cpp:24]   --->   Operation 160 'add' 'add_ln24_15' <Predicate = (!icmp_ln23)> <Delay = 1.82> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 161 [1/1] (0.00ns)   --->   "%zext_ln24_16 = zext i7 %add_ln24_15 to i64" [../layers_c/depthwise_conv2d.cpp:24]   --->   Operation 161 'zext' 'zext_ln24_16' <Predicate = (!icmp_ln23)> <Delay = 0.00>
 ST_6 : Operation 162 [1/1] (0.00ns)   --->   "%kernel_addr_15 = getelementptr [72 x i16]* %kernel, i64 0, i64 %zext_ln24_16" [../layers_c/depthwise_conv2d.cpp:27]   --->   Operation 162 'getelementptr' 'kernel_addr_15' <Predicate = (!icmp_ln23)> <Delay = 0.00>
 ST_6 : Operation 163 [2/2] (3.25ns)   --->   "%kernel_load_15 = load i16* %kernel_addr_15, align 2" [../layers_c/depthwise_conv2d.cpp:24]   --->   Operation 163 'load' 'kernel_load_15' <Predicate = (!icmp_ln23)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 144> <RAM>
-ST_6 : Operation 164 [1/1] (1.82ns)   --->   "%add_ln24_17 = add i7 8, %zext_ln24_19" [../layers_c/depthwise_conv2d.cpp:24]   --->   Operation 164 'add' 'add_ln24_17' <Predicate = (!icmp_ln23)> <Delay = 1.82> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_6 : Operation 165 [1/1] (0.00ns)   --->   "%zext_ln24_17 = zext i7 %add_ln24_17 to i64" [../layers_c/depthwise_conv2d.cpp:24]   --->   Operation 165 'zext' 'zext_ln24_17' <Predicate = (!icmp_ln23)> <Delay = 0.00>
+ST_6 : Operation 164 [1/1] (1.82ns)   --->   "%add_ln24_16 = add i7 8, %zext_ln24_19" [../layers_c/depthwise_conv2d.cpp:24]   --->   Operation 164 'add' 'add_ln24_16' <Predicate = (!icmp_ln23)> <Delay = 1.82> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 165 [1/1] (0.00ns)   --->   "%zext_ln24_17 = zext i7 %add_ln24_16 to i64" [../layers_c/depthwise_conv2d.cpp:24]   --->   Operation 165 'zext' 'zext_ln24_17' <Predicate = (!icmp_ln23)> <Delay = 0.00>
 ST_6 : Operation 166 [1/1] (0.00ns)   --->   "%kernel_addr_16 = getelementptr [72 x i16]* %kernel, i64 0, i64 %zext_ln24_17" [../layers_c/depthwise_conv2d.cpp:27]   --->   Operation 166 'getelementptr' 'kernel_addr_16' <Predicate = (!icmp_ln23)> <Delay = 0.00>
 ST_6 : Operation 167 [2/2] (3.25ns)   --->   "%kernel_load_16 = load i16* %kernel_addr_16, align 2" [../layers_c/depthwise_conv2d.cpp:24]   --->   Operation 167 'load' 'kernel_load_16' <Predicate = (!icmp_ln23)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 144> <RAM>
 ST_6 : Operation 168 [1/1] (1.02ns)   --->   "%select_ln24_9 = select i1 %icmp_ln32, i4 %out_d, i4 %out_d_0" [../layers_c/depthwise_conv2d.cpp:24]   --->   Operation 168 'select' 'select_ln24_9' <Predicate = (!icmp_ln23)> <Delay = 1.02> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
@@ -538,16 +538,16 @@ ST_6 : Operation 174 [1/1] (6.38ns) (root node of the DSP)   --->   "%mul_ln40_1
 ST_6 : Operation 175 [1/1] (0.00ns)   --->   "%trunc_ln48_8 = call i16 @_ssdm_op_PartSelect.i16.i30.i32.i32(i30 %mul_ln40_12, i32 14, i32 29)" [../layers_c/depthwise_conv2d.cpp:48]   --->   Operation 175 'partselect' 'trunc_ln48_8' <Predicate = (!icmp_ln23)> <Delay = 0.00>
 ST_6 : Operation 176 [1/2] (3.25ns)   --->   "%input_load_18 = load i16* %input_addr_18, align 2" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 176 'load' 'input_load_18' <Predicate = (!icmp_ln23)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 144> <RAM>
 ST_6 : Operation 177 [1/2] (3.25ns)   --->   "%input_load_19 = load i16* %input_addr_19, align 2" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 177 'load' 'input_load_19' <Predicate = (!icmp_ln23)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 144> <RAM>
-ST_6 : Operation 178 [1/1] (1.63ns)   --->   "%add_ln40_18 = add i11 %zext_ln40_14, %tmp10_2_0_mid2" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 178 'add' 'add_ln40_18' <Predicate = (!icmp_ln23)> <Delay = 1.63> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_6 : Operation 179 [1/1] (0.00ns)   --->   "%zext_ln40_23 = zext i11 %add_ln40_18 to i64" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 179 'zext' 'zext_ln40_23' <Predicate = (!icmp_ln23)> <Delay = 0.00>
-ST_6 : Operation 180 [1/1] (0.00ns)   --->   "%input_addr_20 = getelementptr [14400 x i16]* %input_r, i64 0, i64 %zext_ln40_23" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 180 'getelementptr' 'input_addr_20' <Predicate = (!icmp_ln23)> <Delay = 0.00>
+ST_6 : Operation 178 [1/1] (1.63ns)   --->   "%add_ln40_18 = add i11 %zext_ln40_13, %tmp10_2_0_mid2" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 178 'add' 'add_ln40_18' <Predicate = (!icmp_ln23)> <Delay = 1.63> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 179 [1/1] (0.00ns)   --->   "%zext_ln40_22 = zext i11 %add_ln40_18 to i64" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 179 'zext' 'zext_ln40_22' <Predicate = (!icmp_ln23)> <Delay = 0.00>
+ST_6 : Operation 180 [1/1] (0.00ns)   --->   "%input_addr_20 = getelementptr [14400 x i16]* %input_r, i64 0, i64 %zext_ln40_22" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 180 'getelementptr' 'input_addr_20' <Predicate = (!icmp_ln23)> <Delay = 0.00>
 ST_6 : Operation 181 [2/2] (3.25ns)   --->   "%input_load_20 = load i16* %input_addr_20, align 2" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 181 'load' 'input_load_20' <Predicate = (!icmp_ln23)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 144> <RAM>
-ST_6 : Operation 182 [1/1] (1.63ns)   --->   "%add_ln40_19 = add i11 %tmp10_2_0_mid2, %zext_ln40_16" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 182 'add' 'add_ln40_19' <Predicate = (!icmp_ln23)> <Delay = 1.63> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_6 : Operation 183 [1/1] (0.00ns)   --->   "%zext_ln40_24 = zext i11 %add_ln40_19 to i64" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 183 'zext' 'zext_ln40_24' <Predicate = (!icmp_ln23)> <Delay = 0.00>
-ST_6 : Operation 184 [1/1] (0.00ns)   --->   "%input_addr_21 = getelementptr [14400 x i16]* %input_r, i64 0, i64 %zext_ln40_24" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 184 'getelementptr' 'input_addr_21' <Predicate = (!icmp_ln23)> <Delay = 0.00>
+ST_6 : Operation 182 [1/1] (1.63ns)   --->   "%add_ln40_19 = add i11 %tmp10_2_0_mid2, %zext_ln40_15" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 182 'add' 'add_ln40_19' <Predicate = (!icmp_ln23)> <Delay = 1.63> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 183 [1/1] (0.00ns)   --->   "%zext_ln40_23 = zext i11 %add_ln40_19 to i64" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 183 'zext' 'zext_ln40_23' <Predicate = (!icmp_ln23)> <Delay = 0.00>
+ST_6 : Operation 184 [1/1] (0.00ns)   --->   "%input_addr_21 = getelementptr [14400 x i16]* %input_r, i64 0, i64 %zext_ln40_23" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 184 'getelementptr' 'input_addr_21' <Predicate = (!icmp_ln23)> <Delay = 0.00>
 ST_6 : Operation 185 [2/2] (3.25ns)   --->   "%input_load_21 = load i16* %input_addr_21, align 2" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 185 'load' 'input_load_21' <Predicate = (!icmp_ln23)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 144> <RAM>
-ST_6 : Operation 186 [1/1] (1.63ns)   --->   "%add_ln40_20 = add i11 %tmp10_2_0_mid2, %zext_ln40_18" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 186 'add' 'add_ln40_20' <Predicate = (!icmp_ln23)> <Delay = 1.63> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_6 : Operation 187 [1/1] (1.24ns)   --->   "%select_ln32_14 = select i1 %icmp_ln32, i8 1, i8 %add_ln32_4" [../layers_c/depthwise_conv2d.cpp:32]   --->   Operation 187 'select' 'select_ln32_14' <Predicate = (!icmp_ln23)> <Delay = 1.24> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_6 : Operation 186 [1/1] (1.63ns)   --->   "%add_ln40_20 = add i11 %tmp10_2_0_mid2, %zext_ln40_17" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 186 'add' 'add_ln40_20' <Predicate = (!icmp_ln23)> <Delay = 1.63> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 187 [1/1] (1.24ns)   --->   "%select_ln32_14 = select i1 %icmp_ln32, i8 1, i8 %add_ln32_2" [../layers_c/depthwise_conv2d.cpp:32]   --->   Operation 187 'select' 'select_ln32_14' <Predicate = (!icmp_ln23)> <Delay = 1.24> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
 
 State 7 <SV = 6> <Delay = 6.38>
 ST_7 : Operation 188 [1/1] (0.00ns)   --->   "%sext_ln24_12 = sext i16 %kernel_load_12 to i30" [../layers_c/depthwise_conv2d.cpp:24]   --->   Operation 188 'sext' 'sext_ln24_12' <Predicate = (!icmp_ln23)> <Delay = 0.00>
@@ -565,8 +565,8 @@ ST_7 : Operation 199 [1/1] (6.38ns) (root node of the DSP)   --->   "%mul_ln40_1
 ST_7 : Operation 200 [1/1] (0.00ns)   --->   "%trunc_ln48_2 = call i16 @_ssdm_op_PartSelect.i16.i30.i32.i32(i30 %mul_ln40_14, i32 14, i32 29)" [../layers_c/depthwise_conv2d.cpp:48]   --->   Operation 200 'partselect' 'trunc_ln48_2' <Predicate = (!icmp_ln23)> <Delay = 0.00>
 ST_7 : Operation 201 [1/2] (3.25ns)   --->   "%input_load_20 = load i16* %input_addr_20, align 2" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 201 'load' 'input_load_20' <Predicate = (!icmp_ln23)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 144> <RAM>
 ST_7 : Operation 202 [1/2] (3.25ns)   --->   "%input_load_21 = load i16* %input_addr_21, align 2" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 202 'load' 'input_load_21' <Predicate = (!icmp_ln23)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 144> <RAM>
-ST_7 : Operation 203 [1/1] (0.00ns)   --->   "%zext_ln40_25 = zext i11 %add_ln40_20 to i64" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 203 'zext' 'zext_ln40_25' <Predicate = (!icmp_ln23)> <Delay = 0.00>
-ST_7 : Operation 204 [1/1] (0.00ns)   --->   "%input_addr_22 = getelementptr [14400 x i16]* %input_r, i64 0, i64 %zext_ln40_25" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 204 'getelementptr' 'input_addr_22' <Predicate = (!icmp_ln23)> <Delay = 0.00>
+ST_7 : Operation 203 [1/1] (0.00ns)   --->   "%zext_ln40_24 = zext i11 %add_ln40_20 to i64" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 203 'zext' 'zext_ln40_24' <Predicate = (!icmp_ln23)> <Delay = 0.00>
+ST_7 : Operation 204 [1/1] (0.00ns)   --->   "%input_addr_22 = getelementptr [14400 x i16]* %input_r, i64 0, i64 %zext_ln40_24" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 204 'getelementptr' 'input_addr_22' <Predicate = (!icmp_ln23)> <Delay = 0.00>
 ST_7 : Operation 205 [2/2] (3.25ns)   --->   "%input_load_22 = load i16* %input_addr_22, align 2" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 205 'load' 'input_load_22' <Predicate = (!icmp_ln23)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 144> <RAM>
 ST_7 : Operation 206 [1/1] (2.07ns)   --->   "%add_ln48_10 = add i16 %trunc_ln48_8, %trunc_ln48_s" [../layers_c/depthwise_conv2d.cpp:48]   --->   Operation 206 'add' 'add_ln48_10' <Predicate = (!icmp_ln23)> <Delay = 2.07> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 
@@ -593,7 +593,7 @@ ST_9 : Operation 223 [1/1] (3.36ns) (grouped into DSP with root node add_ln48)  
 ST_9 : Operation 224 [1/1] (0.00ns)   --->   "%sext_ln40_16 = sext i16 %input_load_22 to i30" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 224 'sext' 'sext_ln40_16' <Predicate = (!icmp_ln23)> <Delay = 0.00>
 ST_9 : Operation 225 [1/1] (6.38ns) (root node of the DSP)   --->   "%mul_ln40_17 = mul i30 %sext_ln40_16, %sext_ln24_16" [../layers_c/depthwise_conv2d.cpp:40]   --->   Operation 225 'mul' 'mul_ln40_17' <Predicate = (!icmp_ln23)> <Delay = 6.38> <Core = "DSP48">   --->   Core 88 'DSP48' <Latency = 4> <II = 1> <Delay = 2.05> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
 ST_9 : Operation 226 [1/1] (0.00ns)   --->   "%trunc_ln48_5 = call i16 @_ssdm_op_PartSelect.i16.i30.i32.i32(i30 %mul_ln40_17, i32 14, i32 29)" [../layers_c/depthwise_conv2d.cpp:48]   --->   Operation 226 'partselect' 'trunc_ln48_5' <Predicate = (!icmp_ln23)> <Delay = 0.00>
-ST_9 : Operation 227 [1/1] (3.02ns) (root node of the DSP)   --->   "%add_ln48 = add i11 %zext_ln40_14, %tmp12_mid2" [../layers_c/depthwise_conv2d.cpp:48]   --->   Operation 227 'add' 'add_ln48' <Predicate = (!icmp_ln23)> <Delay = 3.02> <Core = "DSP48">   --->   Core 88 'DSP48' <Latency = 4> <II = 1> <Delay = 2.05> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_9 : Operation 227 [1/1] (3.02ns) (root node of the DSP)   --->   "%add_ln48 = add i11 %zext_ln40_13, %tmp12_mid2" [../layers_c/depthwise_conv2d.cpp:48]   --->   Operation 227 'add' 'add_ln48' <Predicate = (!icmp_ln23)> <Delay = 3.02> <Core = "DSP48">   --->   Core 88 'DSP48' <Latency = 4> <II = 1> <Delay = 2.05> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
 
 State 10 <SV = 9> <Delay = 7.80>
 ST_10 : Operation 228 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln48_14 = add i16 %trunc_ln48_5, %trunc_ln48_4" [../layers_c/depthwise_conv2d.cpp:48]   --->   Operation 228 'add' 'add_ln48_14' <Predicate = (!icmp_ln23)> <Delay = 0.00> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.95> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
@@ -679,7 +679,7 @@ zext_ln48_4          (zext             ) [ 0001110000000]
 zext_ln27_4          (zext             ) [ 0000000000000]
 trunc_ln27_2         (trunc            ) [ 0000000000000]
 shl_ln27_mid1        (bitconcatenate   ) [ 0000000000000]
-add_ln27_2           (add              ) [ 0000000000000]
+add_ln27_5           (add              ) [ 0000000000000]
 select_ln24_8        (select           ) [ 0001000000000]
 zext_ln24            (zext             ) [ 0000000000000]
 kernel_addr          (getelementptr    ) [ 0001000000000]
@@ -694,13 +694,13 @@ out_w_0_mid2         (select           ) [ 0001100000000]
 zext_ln40_2_cast_mid (zext             ) [ 0001110000000]
 tmp_0_0_mid1         (add              ) [ 0000000000000]
 tmp10_0_0_mid2_v_v   (select           ) [ 0001100000000]
-add_ln32_4           (add              ) [ 0001111000000]
+add_ln32_2           (add              ) [ 0001111000000]
 kernel_load          (load             ) [ 0000110000000]
 zext_ln24_19         (zext             ) [ 0000111000000]
 add_ln24             (add              ) [ 0000000000000]
 zext_ln24_10         (zext             ) [ 0000000000000]
 kernel_addr_9        (getelementptr    ) [ 0000100000000]
-add_ln24_11          (add              ) [ 0000000000000]
+add_ln24_10          (add              ) [ 0000000000000]
 zext_ln24_11         (zext             ) [ 0000000000000]
 kernel_addr_10       (getelementptr    ) [ 0000100000000]
 tmp10_0_0_mid2_v     (zext             ) [ 0000000000000]
@@ -708,14 +708,14 @@ tmp10_0_0_mid2       (mul              ) [ 0000100000000]
 tmp10_1_0_mid2_v_v   (add              ) [ 0000000000000]
 tmp10_1_0_mid2_v     (zext             ) [ 0000000000000]
 tmp10_1_0_mid2       (mul              ) [ 0000110000000]
-zext_ln40_14         (zext             ) [ 0011111111000]
+zext_ln40_13         (zext             ) [ 0011111111000]
 add_ln40             (add              ) [ 0000000000000]
-zext_ln40_15         (zext             ) [ 0000000000000]
+zext_ln40_14         (zext             ) [ 0000000000000]
 input_addr           (getelementptr    ) [ 0000100000000]
 out_w                (add              ) [ 0111111111110]
-zext_ln40_16         (zext             ) [ 0000111000000]
+zext_ln40_15         (zext             ) [ 0000111000000]
 add_ln40_12          (add              ) [ 0000000000000]
-zext_ln40_17         (zext             ) [ 0000000000000]
+zext_ln40_16         (zext             ) [ 0000000000000]
 input_addr_15        (getelementptr    ) [ 0000100000000]
 specpipeline_ln24    (specpipeline     ) [ 0000000000000]
 mul_ln48             (mul              ) [ 0000010000000]
@@ -724,10 +724,10 @@ add_ln23             (add              ) [ 0111111111110]
 br_ln23              (br               ) [ 0000000000000]
 kernel_load_9        (load             ) [ 0000010000000]
 kernel_load_10       (load             ) [ 0000011000000]
-add_ln24_12          (add              ) [ 0000000000000]
+add_ln24_11          (add              ) [ 0000000000000]
 zext_ln24_12         (zext             ) [ 0000000000000]
 kernel_addr_11       (getelementptr    ) [ 0000010000000]
-add_ln24_13          (add              ) [ 0000000000000]
+add_ln24_12          (add              ) [ 0000000000000]
 zext_ln24_13         (zext             ) [ 0000000000000]
 kernel_addr_12       (getelementptr    ) [ 0000010000000]
 tmp10_2_0_mid2_v_v   (add              ) [ 0000000000000]
@@ -736,21 +736,21 @@ tmp10_2_0_mid2       (mul              ) [ 0000011000000]
 input_load           (load             ) [ 0000010000000]
 input_load_15        (load             ) [ 0000010000000]
 add_ln40_13          (add              ) [ 0000000000000]
-zext_ln40_18         (zext             ) [ 0000011000000]
+zext_ln40_17         (zext             ) [ 0000011000000]
 add_ln40_14          (add              ) [ 0000000000000]
-zext_ln40_19         (zext             ) [ 0000000000000]
+zext_ln40_18         (zext             ) [ 0000000000000]
 input_addr_16        (getelementptr    ) [ 0000010000000]
 add_ln40_15          (add              ) [ 0000000000000]
-zext_ln40_20         (zext             ) [ 0000000000000]
+zext_ln40_19         (zext             ) [ 0000000000000]
 input_addr_17        (getelementptr    ) [ 0000010000000]
 sext_ln24            (sext             ) [ 0000000000000]
 sext_ln24_9          (sext             ) [ 0000000000000]
 kernel_load_11       (load             ) [ 0000001000000]
 kernel_load_12       (load             ) [ 0010001100000]
-add_ln24_14          (add              ) [ 0000000000000]
+add_ln24_13          (add              ) [ 0000000000000]
 zext_ln24_14         (zext             ) [ 0000000000000]
 kernel_addr_13       (getelementptr    ) [ 0000001000000]
-add_ln24_15          (add              ) [ 0000000000000]
+add_ln24_14          (add              ) [ 0000000000000]
 zext_ln24_15         (zext             ) [ 0000000000000]
 kernel_addr_14       (getelementptr    ) [ 0000001000000]
 mul_ln48_2           (mul              ) [ 0000000000000]
@@ -767,19 +767,19 @@ trunc_ln48_9         (partselect       ) [ 0011001110000]
 input_load_16        (load             ) [ 0000001000000]
 input_load_17        (load             ) [ 0000001000000]
 add_ln40_16          (add              ) [ 0000000000000]
-zext_ln40_21         (zext             ) [ 0000000000000]
+zext_ln40_20         (zext             ) [ 0000000000000]
 input_addr_18        (getelementptr    ) [ 0000001000000]
 add_ln40_17          (add              ) [ 0000000000000]
-zext_ln40_22         (zext             ) [ 0000000000000]
+zext_ln40_21         (zext             ) [ 0000000000000]
 input_addr_19        (getelementptr    ) [ 0000001000000]
 sext_ln24_10         (sext             ) [ 0000000000000]
 sext_ln24_11         (sext             ) [ 0000000000000]
 kernel_load_13       (load             ) [ 0010000100000]
 kernel_load_14       (load             ) [ 0011000110000]
-add_ln24_16          (add              ) [ 0000000000000]
+add_ln24_15          (add              ) [ 0000000000000]
 zext_ln24_16         (zext             ) [ 0000000000000]
 kernel_addr_15       (getelementptr    ) [ 0010000100000]
-add_ln24_17          (add              ) [ 0000000000000]
+add_ln24_16          (add              ) [ 0000000000000]
 zext_ln24_17         (zext             ) [ 0000000000000]
 kernel_addr_16       (getelementptr    ) [ 0010000100000]
 select_ln24_9        (select           ) [ 0111111111110]
@@ -793,10 +793,10 @@ trunc_ln48_8         (partselect       ) [ 0010000100000]
 input_load_18        (load             ) [ 0010000100000]
 input_load_19        (load             ) [ 0010000100000]
 add_ln40_18          (add              ) [ 0000000000000]
-zext_ln40_23         (zext             ) [ 0000000000000]
+zext_ln40_22         (zext             ) [ 0000000000000]
 input_addr_20        (getelementptr    ) [ 0010000100000]
 add_ln40_19          (add              ) [ 0000000000000]
-zext_ln40_24         (zext             ) [ 0000000000000]
+zext_ln40_23         (zext             ) [ 0000000000000]
 input_addr_21        (getelementptr    ) [ 0010000100000]
 add_ln40_20          (add              ) [ 0010000100000]
 select_ln32_14       (select           ) [ 0111111111110]
@@ -814,7 +814,7 @@ mul_ln40_14          (mul              ) [ 0000000000000]
 trunc_ln48_2         (partselect       ) [ 0001000010000]
 input_load_20        (load             ) [ 0001000010000]
 input_load_21        (load             ) [ 0001000010000]
-zext_ln40_25         (zext             ) [ 0000000000000]
+zext_ln40_24         (zext             ) [ 0000000000000]
 input_addr_22        (getelementptr    ) [ 0001000010000]
 add_ln48_10          (add              ) [ 0001000010000]
 sext_ln24_14         (sext             ) [ 0000000000000]
@@ -2100,7 +2100,7 @@ ret_ln0              (ret              ) [ 0000000000000]
 </bind>
 </comp>
 
-<comp id="516" class="1004" name="add_ln27_2_fu_516">
+<comp id="516" class="1004" name="add_ln27_5_fu_516">
 <pin_list>
 <pin id="517" dir="0" index="0" bw="4" slack="0"/>
 <pin id="518" dir="0" index="1" bw="6" slack="0"/>
@@ -2108,7 +2108,7 @@ ret_ln0              (ret              ) [ 0000000000000]
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
-<opset="add_ln27_2/2 "/>
+<opset="add_ln27_5/2 "/>
 </bind>
 </comp>
 
@@ -2272,7 +2272,7 @@ ret_ln0              (ret              ) [ 0000000000000]
 </bind>
 </comp>
 
-<comp id="606" class="1004" name="add_ln32_4_fu_606">
+<comp id="606" class="1004" name="add_ln32_2_fu_606">
 <pin_list>
 <pin id="607" dir="0" index="0" bw="1" slack="0"/>
 <pin id="608" dir="0" index="1" bw="8" slack="0"/>
@@ -2280,7 +2280,7 @@ ret_ln0              (ret              ) [ 0000000000000]
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
-<opset="add_ln32_4/2 "/>
+<opset="add_ln32_2/2 "/>
 </bind>
 </comp>
 
@@ -2318,7 +2318,7 @@ ret_ln0              (ret              ) [ 0000000000000]
 </bind>
 </comp>
 
-<comp id="626" class="1004" name="add_ln24_11_fu_626">
+<comp id="626" class="1004" name="add_ln24_10_fu_626">
 <pin_list>
 <pin id="627" dir="0" index="0" bw="3" slack="0"/>
 <pin id="628" dir="0" index="1" bw="6" slack="0"/>
@@ -2326,7 +2326,7 @@ ret_ln0              (ret              ) [ 0000000000000]
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
-<opset="add_ln24_11/3 "/>
+<opset="add_ln24_10/3 "/>
 </bind>
 </comp>
 
@@ -2399,14 +2399,14 @@ ret_ln0              (ret              ) [ 0000000000000]
 </bind>
 </comp>
 
-<comp id="659" class="1004" name="zext_ln40_14_fu_659">
+<comp id="659" class="1004" name="zext_ln40_13_fu_659">
 <pin_list>
 <pin id="660" dir="0" index="0" bw="4" slack="1"/>
 <pin id="661" dir="1" index="1" bw="11" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln40_14/3 "/>
+<opset="zext_ln40_13/3 "/>
 </bind>
 </comp>
 
@@ -2422,14 +2422,14 @@ ret_ln0              (ret              ) [ 0000000000000]
 </bind>
 </comp>
 
-<comp id="668" class="1004" name="zext_ln40_15_fu_668">
+<comp id="668" class="1004" name="zext_ln40_14_fu_668">
 <pin_list>
 <pin id="669" dir="0" index="0" bw="11" slack="0"/>
 <pin id="670" dir="1" index="1" bw="64" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln40_15/3 "/>
+<opset="zext_ln40_14/3 "/>
 </bind>
 </comp>
 
@@ -2445,14 +2445,14 @@ ret_ln0              (ret              ) [ 0000000000000]
 </bind>
 </comp>
 
-<comp id="678" class="1004" name="zext_ln40_16_fu_678">
+<comp id="678" class="1004" name="zext_ln40_15_fu_678">
 <pin_list>
 <pin id="679" dir="0" index="0" bw="4" slack="0"/>
 <pin id="680" dir="1" index="1" bw="11" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln40_16/3 "/>
+<opset="zext_ln40_15/3 "/>
 </bind>
 </comp>
 
@@ -2468,14 +2468,14 @@ ret_ln0              (ret              ) [ 0000000000000]
 </bind>
 </comp>
 
-<comp id="688" class="1004" name="zext_ln40_17_fu_688">
+<comp id="688" class="1004" name="zext_ln40_16_fu_688">
 <pin_list>
 <pin id="689" dir="0" index="0" bw="11" slack="0"/>
 <pin id="690" dir="1" index="1" bw="64" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln40_17/3 "/>
+<opset="zext_ln40_16/3 "/>
 </bind>
 </comp>
 
@@ -2515,7 +2515,7 @@ ret_ln0              (ret              ) [ 0000000000000]
 </bind>
 </comp>
 
-<comp id="708" class="1004" name="add_ln24_12_fu_708">
+<comp id="708" class="1004" name="add_ln24_11_fu_708">
 <pin_list>
 <pin id="709" dir="0" index="0" bw="3" slack="0"/>
 <pin id="710" dir="0" index="1" bw="6" slack="1"/>
@@ -2523,7 +2523,7 @@ ret_ln0              (ret              ) [ 0000000000000]
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
-<opset="add_ln24_12/4 "/>
+<opset="add_ln24_11/4 "/>
 </bind>
 </comp>
 
@@ -2538,7 +2538,7 @@ ret_ln0              (ret              ) [ 0000000000000]
 </bind>
 </comp>
 
-<comp id="718" class="1004" name="add_ln24_13_fu_718">
+<comp id="718" class="1004" name="add_ln24_12_fu_718">
 <pin_list>
 <pin id="719" dir="0" index="0" bw="4" slack="0"/>
 <pin id="720" dir="0" index="1" bw="6" slack="1"/>
@@ -2546,7 +2546,7 @@ ret_ln0              (ret              ) [ 0000000000000]
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
-<opset="add_ln24_13/4 "/>
+<opset="add_ln24_12/4 "/>
 </bind>
 </comp>
 
@@ -2608,14 +2608,14 @@ ret_ln0              (ret              ) [ 0000000000000]
 </bind>
 </comp>
 
-<comp id="747" class="1004" name="zext_ln40_18_fu_747">
+<comp id="747" class="1004" name="zext_ln40_17_fu_747">
 <pin_list>
 <pin id="748" dir="0" index="0" bw="4" slack="0"/>
 <pin id="749" dir="1" index="1" bw="11" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln40_18/4 "/>
+<opset="zext_ln40_17/4 "/>
 </bind>
 </comp>
 
@@ -2631,14 +2631,14 @@ ret_ln0              (ret              ) [ 0000000000000]
 </bind>
 </comp>
 
-<comp id="756" class="1004" name="zext_ln40_19_fu_756">
+<comp id="756" class="1004" name="zext_ln40_18_fu_756">
 <pin_list>
 <pin id="757" dir="0" index="0" bw="11" slack="0"/>
 <pin id="758" dir="1" index="1" bw="64" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln40_19/4 "/>
+<opset="zext_ln40_18/4 "/>
 </bind>
 </comp>
 
@@ -2654,14 +2654,14 @@ ret_ln0              (ret              ) [ 0000000000000]
 </bind>
 </comp>
 
-<comp id="765" class="1004" name="zext_ln40_20_fu_765">
+<comp id="765" class="1004" name="zext_ln40_19_fu_765">
 <pin_list>
 <pin id="766" dir="0" index="0" bw="11" slack="0"/>
 <pin id="767" dir="1" index="1" bw="64" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln40_20/4 "/>
+<opset="zext_ln40_19/4 "/>
 </bind>
 </comp>
 
@@ -2687,7 +2687,7 @@ ret_ln0              (ret              ) [ 0000000000000]
 </bind>
 </comp>
 
-<comp id="778" class="1004" name="add_ln24_14_fu_778">
+<comp id="778" class="1004" name="add_ln24_13_fu_778">
 <pin_list>
 <pin id="779" dir="0" index="0" bw="4" slack="0"/>
 <pin id="780" dir="0" index="1" bw="6" slack="2"/>
@@ -2695,7 +2695,7 @@ ret_ln0              (ret              ) [ 0000000000000]
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
-<opset="add_ln24_14/5 "/>
+<opset="add_ln24_13/5 "/>
 </bind>
 </comp>
 
@@ -2710,7 +2710,7 @@ ret_ln0              (ret              ) [ 0000000000000]
 </bind>
 </comp>
 
-<comp id="788" class="1004" name="add_ln24_15_fu_788">
+<comp id="788" class="1004" name="add_ln24_14_fu_788">
 <pin_list>
 <pin id="789" dir="0" index="0" bw="4" slack="0"/>
 <pin id="790" dir="0" index="1" bw="6" slack="2"/>
@@ -2718,7 +2718,7 @@ ret_ln0              (ret              ) [ 0000000000000]
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
-<opset="add_ln24_15/5 "/>
+<opset="add_ln24_14/5 "/>
 </bind>
 </comp>
 
@@ -2858,14 +2858,14 @@ ret_ln0              (ret              ) [ 0000000000000]
 </bind>
 </comp>
 
-<comp id="856" class="1004" name="zext_ln40_21_fu_856">
+<comp id="856" class="1004" name="zext_ln40_20_fu_856">
 <pin_list>
 <pin id="857" dir="0" index="0" bw="11" slack="0"/>
 <pin id="858" dir="1" index="1" bw="64" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln40_21/5 "/>
+<opset="zext_ln40_20/5 "/>
 </bind>
 </comp>
 
@@ -2881,14 +2881,14 @@ ret_ln0              (ret              ) [ 0000000000000]
 </bind>
 </comp>
 
-<comp id="865" class="1004" name="zext_ln40_22_fu_865">
+<comp id="865" class="1004" name="zext_ln40_21_fu_865">
 <pin_list>
 <pin id="866" dir="0" index="0" bw="11" slack="0"/>
 <pin id="867" dir="1" index="1" bw="64" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln40_22/5 "/>
+<opset="zext_ln40_21/5 "/>
 </bind>
 </comp>
 
@@ -2914,7 +2914,7 @@ ret_ln0              (ret              ) [ 0000000000000]
 </bind>
 </comp>
 
-<comp id="878" class="1004" name="add_ln24_16_fu_878">
+<comp id="878" class="1004" name="add_ln24_15_fu_878">
 <pin_list>
 <pin id="879" dir="0" index="0" bw="4" slack="0"/>
 <pin id="880" dir="0" index="1" bw="6" slack="3"/>
@@ -2922,7 +2922,7 @@ ret_ln0              (ret              ) [ 0000000000000]
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
-<opset="add_ln24_16/6 "/>
+<opset="add_ln24_15/6 "/>
 </bind>
 </comp>
 
@@ -2937,7 +2937,7 @@ ret_ln0              (ret              ) [ 0000000000000]
 </bind>
 </comp>
 
-<comp id="888" class="1004" name="add_ln24_17_fu_888">
+<comp id="888" class="1004" name="add_ln24_16_fu_888">
 <pin_list>
 <pin id="889" dir="0" index="0" bw="5" slack="0"/>
 <pin id="890" dir="0" index="1" bw="6" slack="3"/>
@@ -2945,7 +2945,7 @@ ret_ln0              (ret              ) [ 0000000000000]
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
-<opset="add_ln24_17/6 "/>
+<opset="add_ln24_16/6 "/>
 </bind>
 </comp>
 
@@ -3048,14 +3048,14 @@ ret_ln0              (ret              ) [ 0000000000000]
 </bind>
 </comp>
 
-<comp id="939" class="1004" name="zext_ln40_23_fu_939">
+<comp id="939" class="1004" name="zext_ln40_22_fu_939">
 <pin_list>
 <pin id="940" dir="0" index="0" bw="11" slack="0"/>
 <pin id="941" dir="1" index="1" bw="64" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln40_23/6 "/>
+<opset="zext_ln40_22/6 "/>
 </bind>
 </comp>
 
@@ -3071,14 +3071,14 @@ ret_ln0              (ret              ) [ 0000000000000]
 </bind>
 </comp>
 
-<comp id="948" class="1004" name="zext_ln40_24_fu_948">
+<comp id="948" class="1004" name="zext_ln40_23_fu_948">
 <pin_list>
 <pin id="949" dir="0" index="0" bw="11" slack="0"/>
 <pin id="950" dir="1" index="1" bw="64" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln40_24/6 "/>
+<opset="zext_ln40_23/6 "/>
 </bind>
 </comp>
 
@@ -3190,14 +3190,14 @@ ret_ln0              (ret              ) [ 0000000000000]
 </bind>
 </comp>
 
-<comp id="1001" class="1004" name="zext_ln40_25_fu_1001">
+<comp id="1001" class="1004" name="zext_ln40_24_fu_1001">
 <pin_list>
 <pin id="1002" dir="0" index="0" bw="11" slack="1"/>
 <pin id="1003" dir="1" index="1" bw="64" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln40_25/7 "/>
+<opset="zext_ln40_24/7 "/>
 </bind>
 </comp>
 
@@ -3780,13 +3780,13 @@ ret_ln0              (ret              ) [ 0000000000000]
 </bind>
 </comp>
 
-<comp id="1295" class="1005" name="add_ln32_4_reg_1295">
+<comp id="1295" class="1005" name="add_ln32_2_reg_1295">
 <pin_list>
 <pin id="1296" dir="0" index="0" bw="8" slack="4"/>
 <pin id="1297" dir="1" index="1" bw="8" slack="4"/>
 </pin_list>
 <bind>
-<opset="add_ln32_4 "/>
+<opset="add_ln32_2 "/>
 </bind>
 </comp>
 
@@ -3840,13 +3840,13 @@ ret_ln0              (ret              ) [ 0000000000000]
 </bind>
 </comp>
 
-<comp id="1332" class="1005" name="zext_ln40_14_reg_1332">
+<comp id="1332" class="1005" name="zext_ln40_13_reg_1332">
 <pin_list>
 <pin id="1333" dir="0" index="0" bw="11" slack="1"/>
 <pin id="1334" dir="1" index="1" bw="11" slack="1"/>
 </pin_list>
 <bind>
-<opset="zext_ln40_14 "/>
+<opset="zext_ln40_13 "/>
 </bind>
 </comp>
 
@@ -3870,13 +3870,13 @@ ret_ln0              (ret              ) [ 0000000000000]
 </bind>
 </comp>
 
-<comp id="1349" class="1005" name="zext_ln40_16_reg_1349">
+<comp id="1349" class="1005" name="zext_ln40_15_reg_1349">
 <pin_list>
 <pin id="1350" dir="0" index="0" bw="11" slack="2"/>
 <pin id="1351" dir="1" index="1" bw="11" slack="2"/>
 </pin_list>
 <bind>
-<opset="zext_ln40_16 "/>
+<opset="zext_ln40_15 "/>
 </bind>
 </comp>
 
@@ -3950,13 +3950,13 @@ ret_ln0              (ret              ) [ 0000000000000]
 </bind>
 </comp>
 
-<comp id="1392" class="1005" name="zext_ln40_18_reg_1392">
+<comp id="1392" class="1005" name="zext_ln40_17_reg_1392">
 <pin_list>
 <pin id="1393" dir="0" index="0" bw="11" slack="1"/>
 <pin id="1394" dir="1" index="1" bw="11" slack="1"/>
 </pin_list>
 <bind>
-<opset="zext_ln40_18 "/>
+<opset="zext_ln40_17 "/>
 </bind>
 </comp>
 
@@ -5271,7 +5271,7 @@ ret_ln0              (ret              ) [ 0000000000000]
 		zext_ln27_4 : 2
 		trunc_ln27_2 : 2
 		shl_ln27_mid1 : 3
-		add_ln27_2 : 4
+		add_ln27_5 : 4
 		select_ln24_8 : 5
 		zext_ln24 : 6
 		kernel_addr : 7
@@ -5287,13 +5287,13 @@ ret_ln0              (ret              ) [ 0000000000000]
 		zext_ln40_2_cast_mid : 4
 		tmp_0_0_mid1 : 5
 		tmp10_0_0_mid2_v_v : 6
-		add_ln32_4 : 1
+		add_ln32_2 : 1
 	State 3
 		add_ln24 : 1
 		zext_ln24_10 : 2
 		kernel_addr_9 : 3
 		kernel_load_9 : 4
-		add_ln24_11 : 1
+		add_ln24_10 : 1
 		zext_ln24_11 : 2
 		kernel_addr_10 : 3
 		kernel_load_10 : 4
@@ -5301,12 +5301,12 @@ ret_ln0              (ret              ) [ 0000000000000]
 		tmp10_1_0_mid2_v : 1
 		tmp10_1_0_mid2 : 2
 		add_ln40 : 2
-		zext_ln40_15 : 3
+		zext_ln40_14 : 3
 		input_addr : 4
 		input_load : 5
-		zext_ln40_16 : 1
+		zext_ln40_15 : 1
 		add_ln40_12 : 2
-		zext_ln40_17 : 3
+		zext_ln40_16 : 3
 		input_addr_15 : 4
 		input_load_15 : 5
 	State 4
@@ -5319,12 +5319,12 @@ ret_ln0              (ret              ) [ 0000000000000]
 		kernel_load_12 : 3
 		tmp10_2_0_mid2_v : 1
 		tmp10_2_0_mid2 : 2
-		zext_ln40_18 : 1
+		zext_ln40_17 : 1
 		add_ln40_14 : 2
-		zext_ln40_19 : 3
+		zext_ln40_18 : 3
 		input_addr_16 : 4
 		input_load_16 : 5
-		zext_ln40_20 : 1
+		zext_ln40_19 : 1
 		input_addr_17 : 2
 		input_load_17 : 3
 	State 5
@@ -5342,10 +5342,10 @@ ret_ln0              (ret              ) [ 0000000000000]
 		trunc_ln : 2
 		mul_ln40_10 : 1
 		trunc_ln48_9 : 2
-		zext_ln40_21 : 1
+		zext_ln40_20 : 1
 		input_addr_18 : 2
 		input_load_18 : 3
-		zext_ln40_22 : 1
+		zext_ln40_21 : 1
 		input_addr_19 : 2
 		input_load_19 : 3
 	State 6
@@ -5359,10 +5359,10 @@ ret_ln0              (ret              ) [ 0000000000000]
 		trunc_ln48_s : 2
 		mul_ln40_12 : 1
 		trunc_ln48_8 : 2
-		zext_ln40_23 : 1
+		zext_ln40_22 : 1
 		input_addr_20 : 2
 		input_load_20 : 3
-		zext_ln40_24 : 1
+		zext_ln40_23 : 1
 		input_addr_21 : 2
 		input_load_21 : 3
 	State 7
@@ -5408,31 +5408,31 @@ ret_ln0              (ret              ) [ 0000000000000]
 |          |        add_ln27_fu_451        |    0    |    0    |    15   |
 |          |         tmp_0_0_fu_466        |    0    |    0    |    15   |
 |          |          out_d_fu_477         |    0    |    0    |    13   |
-|          |       add_ln27_2_fu_516       |    0    |    0    |    15   |
+|          |       add_ln27_5_fu_516       |    0    |    0    |    15   |
 |          |          out_h_fu_568         |    0    |    0    |    13   |
 |          |      tmp_0_0_mid1_fu_592      |    0    |    0    |    15   |
-|          |       add_ln32_4_fu_606       |    0    |    0    |    15   |
+|          |       add_ln32_2_fu_606       |    0    |    0    |    15   |
 |          |        add_ln24_fu_615        |    0    |    0    |    15   |
-|          |       add_ln24_11_fu_626      |    0    |    0    |    15   |
+|          |       add_ln24_10_fu_626      |    0    |    0    |    15   |
 |          |   tmp10_1_0_mid2_v_v_fu_645   |    0    |    0    |    15   |
 |          |        add_ln40_fu_662        |    0    |    0    |    13   |
 |          |          out_w_fu_673         |    0    |    0    |    13   |
 |          |       add_ln40_12_fu_682      |    0    |    0    |    13   |
 |          |          tmp11_fu_697         |    0    |    0    |    15   |
 |          |        add_ln23_fu_702        |    0    |    0    |    13   |
-|          |       add_ln24_12_fu_708      |    0    |    0    |    15   |
-|          |       add_ln24_13_fu_718      |    0    |    0    |    15   |
+|          |       add_ln24_11_fu_708      |    0    |    0    |    15   |
+|          |       add_ln24_12_fu_718      |    0    |    0    |    15   |
 |          |   tmp10_2_0_mid2_v_v_fu_728   |    0    |    0    |    15   |
 |          |       add_ln40_13_fu_742      |    0    |    0    |    13   |
 |    add   |       add_ln40_14_fu_751      |    0    |    0    |    13   |
 |          |       add_ln40_15_fu_761      |    0    |    0    |    13   |
-|          |       add_ln24_14_fu_778      |    0    |    0    |    15   |
-|          |       add_ln24_15_fu_788      |    0    |    0    |    15   |
+|          |       add_ln24_13_fu_778      |    0    |    0    |    15   |
+|          |       add_ln24_14_fu_788      |    0    |    0    |    15   |
 |          |       tmp11_mid1_fu_814       |    0    |    0    |    15   |
 |          |       add_ln40_16_fu_852      |    0    |    0    |    13   |
 |          |       add_ln40_17_fu_861      |    0    |    0    |    13   |
-|          |       add_ln24_16_fu_878      |    0    |    0    |    15   |
-|          |       add_ln24_17_fu_888      |    0    |    0    |    15   |
+|          |       add_ln24_15_fu_878      |    0    |    0    |    15   |
+|          |       add_ln24_16_fu_888      |    0    |    0    |    15   |
 |          |       add_ln40_18_fu_935      |    0    |    0    |    13   |
 |          |       add_ln40_19_fu_944      |    0    |    0    |    13   |
 |          |       add_ln40_20_fu_953      |    0    |    0    |    13   |
@@ -5510,26 +5510,26 @@ ret_ln0              (ret              ) [ 0000000000000]
 |          |      zext_ln24_11_fu_632      |    0    |    0    |    0    |
 |          |    tmp10_0_0_mid2_v_fu_637    |    0    |    0    |    0    |
 |          |    tmp10_1_0_mid2_v_fu_650    |    0    |    0    |    0    |
-|          |      zext_ln40_14_fu_659      |    0    |    0    |    0    |
-|   zext   |      zext_ln40_15_fu_668      |    0    |    0    |    0    |
-|          |      zext_ln40_16_fu_678      |    0    |    0    |    0    |
-|          |      zext_ln40_17_fu_688      |    0    |    0    |    0    |
+|          |      zext_ln40_13_fu_659      |    0    |    0    |    0    |
+|   zext   |      zext_ln40_14_fu_668      |    0    |    0    |    0    |
+|          |      zext_ln40_15_fu_678      |    0    |    0    |    0    |
+|          |      zext_ln40_16_fu_688      |    0    |    0    |    0    |
 |          |      zext_ln24_12_fu_713      |    0    |    0    |    0    |
 |          |      zext_ln24_13_fu_723      |    0    |    0    |    0    |
 |          |    tmp10_2_0_mid2_v_fu_733    |    0    |    0    |    0    |
-|          |      zext_ln40_18_fu_747      |    0    |    0    |    0    |
-|          |      zext_ln40_19_fu_756      |    0    |    0    |    0    |
-|          |      zext_ln40_20_fu_765      |    0    |    0    |    0    |
+|          |      zext_ln40_17_fu_747      |    0    |    0    |    0    |
+|          |      zext_ln40_18_fu_756      |    0    |    0    |    0    |
+|          |      zext_ln40_19_fu_765      |    0    |    0    |    0    |
 |          |      zext_ln24_14_fu_783      |    0    |    0    |    0    |
 |          |      zext_ln24_15_fu_793      |    0    |    0    |    0    |
-|          |      zext_ln40_21_fu_856      |    0    |    0    |    0    |
-|          |      zext_ln40_22_fu_865      |    0    |    0    |    0    |
+|          |      zext_ln40_20_fu_856      |    0    |    0    |    0    |
+|          |      zext_ln40_21_fu_865      |    0    |    0    |    0    |
 |          |      zext_ln24_16_fu_883      |    0    |    0    |    0    |
 |          |      zext_ln24_17_fu_893      |    0    |    0    |    0    |
-|          |      zext_ln40_23_fu_939      |    0    |    0    |    0    |
-|          |      zext_ln40_24_fu_948      |    0    |    0    |    0    |
+|          |      zext_ln40_22_fu_939      |    0    |    0    |    0    |
+|          |      zext_ln40_23_fu_948      |    0    |    0    |    0    |
 |          |      zext_ln24_18_fu_971      |    0    |    0    |    0    |
-|          |      zext_ln40_25_fu_1001     |    0    |    0    |    0    |
+|          |      zext_ln40_24_fu_1001     |    0    |    0    |    0    |
 |          |      tmp12_mid2_v_fu_1066     |    0    |    0    |    0    |
 |          |      zext_ln48_3_fu_1101      |    0    |    0    |    0    |
 |----------|-------------------------------|---------|---------|---------|
@@ -5582,7 +5582,7 @@ N/A
 |                             |   FF   |
 +-----------------------------+--------+
 |      add_ln23_reg_1370      |   11   |
-|     add_ln32_4_reg_1295     |    8   |
+|     add_ln32_2_reg_1295     |    8   |
 |     add_ln40_20_reg_1484    |   11   |
 |     add_ln48_10_reg_1514    |   16   |
 |     add_ln48_12_reg_1529    |   16   |
@@ -5651,9 +5651,9 @@ N/A
 |    trunc_ln48_s_reg_1464    |   16   |
 |      trunc_ln_reg_1423      |   16   |
 |    zext_ln24_19_reg_1300    |    7   |
-|    zext_ln40_14_reg_1332    |   11   |
-|    zext_ln40_16_reg_1349    |   11   |
-|    zext_ln40_18_reg_1392    |   11   |
+|    zext_ln40_13_reg_1332    |   11   |
+|    zext_ln40_15_reg_1349    |   11   |
+|    zext_ln40_17_reg_1392    |   11   |
 | zext_ln40_1_cast14_reg_1180 |   11   |
 |zext_ln40_2_cast_mid_reg_1283|    7   |
 |  zext_ln40_2_cast_reg_1223  |    7   |

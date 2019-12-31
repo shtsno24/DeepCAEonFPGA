@@ -227,7 +227,7 @@ struct max_pooling2d_fix16 : public sc_module {
     sc_signal< sc_lv<5> > or_ln26_fu_489_p2;
     sc_signal< sc_lv<14> > zext_ln26_9_fu_495_p1;
     sc_signal< sc_lv<1> > icmp_ln29_fu_536_p2;
-    sc_signal< sc_lv<8> > add_ln21_3_fu_557_p2;
+    sc_signal< sc_lv<8> > add_ln21_1_fu_557_p2;
     sc_signal< sc_lv<1> > icmp_ln29_1_fu_574_p2;
     sc_signal< sc_lv<5> > mul_ln34_fu_594_p0;
     sc_signal< sc_lv<6> > mul_ln34_fu_594_p1;
@@ -293,7 +293,7 @@ struct max_pooling2d_fix16 : public sc_module {
     // Thread declarations
     void thread_ap_clk_no_reset_();
     void thread_add_ln19_fu_519_p2();
-    void thread_add_ln21_3_fu_557_p2();
+    void thread_add_ln21_1_fu_557_p2();
     void thread_add_ln26_1_fu_499_p2();
     void thread_add_ln26_2_fu_509_p2();
     void thread_add_ln26_3_fu_514_p2();

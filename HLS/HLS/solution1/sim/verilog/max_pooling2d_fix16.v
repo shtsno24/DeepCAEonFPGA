@@ -215,11 +215,11 @@ wire  signed [6:0] sext_ln9_2_fu_247_p1;
 wire  signed [5:0] sext_ln9_1_fu_243_p1;
 wire  signed [5:0] sext_ln9_fu_239_p1;
 wire  signed [4:0] empty_fu_267_p0;
-wire  signed [4:0] empty_52_fu_271_p0;
-wire   [3:0] empty_52_fu_271_p1;
+wire  signed [4:0] empty_54_fu_271_p0;
+wire   [3:0] empty_54_fu_271_p1;
 wire   [3:0] mul_ln9_fu_287_p0;
 wire   [3:0] mul_ln9_fu_287_p1;
-wire   [4:0] empty_53_fu_275_p1;
+wire   [4:0] empty_55_fu_275_p1;
 wire   [4:0] mul_ln9_1_fu_301_p0;
 wire   [7:0] mul_ln9_1_fu_301_p1;
 wire   [4:0] mul_ln26_fu_317_p0;
@@ -248,7 +248,7 @@ wire   [13:0] zext_ln26_7_fu_475_p1;
 wire   [4:0] or_ln26_fu_489_p2;
 wire   [13:0] zext_ln26_9_fu_495_p1;
 wire   [0:0] icmp_ln29_fu_536_p2;
-wire   [7:0] add_ln21_3_fu_557_p2;
+wire   [7:0] add_ln21_1_fu_557_p2;
 wire   [0:0] icmp_ln29_1_fu_574_p2;
 wire   [4:0] mul_ln34_fu_594_p0;
 wire   [5:0] mul_ln34_fu_594_p1;
@@ -301,7 +301,7 @@ network_mac_muladd_6ns_8ns_4ns_12_1_1 #(
     .din1_WIDTH( 8 ),
     .din2_WIDTH( 4 ),
     .dout_WIDTH( 12 ))
-network_mac_muladd_6ns_8ns_4ns_12_1_1_U25(
+network_mac_muladd_6ns_8ns_4ns_12_1_1_U52(
     .din0(grp_fu_677_p0),
     .din1(grp_fu_677_p1),
     .din2(grp_fu_677_p2),
@@ -720,7 +720,7 @@ end
 
 assign add_ln19_fu_519_p2 = (indvar_flatten39_reg_175 + 13'd1);
 
-assign add_ln21_3_fu_557_p2 = (indvar_flatten_reg_199 + 8'd1);
+assign add_ln21_1_fu_557_p2 = (indvar_flatten_reg_199 + 8'd1);
 
 assign add_ln26_1_fu_499_p2 = (mul_ln26_2_reg_770 + zext_ln26_9_fu_495_p1);
 
@@ -800,11 +800,11 @@ assign ap_block_state9_pp0_stage3_iter1 = ~(1'b1 == 1'b1);
 
 assign ap_enable_pp0 = (ap_idle_pp0 ^ 1'b1);
 
-assign empty_52_fu_271_p0 = output_height;
+assign empty_54_fu_271_p0 = output_height;
 
-assign empty_52_fu_271_p1 = empty_52_fu_271_p0[3:0];
+assign empty_54_fu_271_p1 = empty_54_fu_271_p0[3:0];
 
-assign empty_53_fu_275_p1 = output_depth[4:0];
+assign empty_55_fu_275_p1 = output_depth[4:0];
 
 assign empty_fu_267_p0 = output_width;
 
@@ -884,7 +884,7 @@ assign mul_ln34_fu_594_p2 = (mul_ln34_fu_594_p0 * mul_ln34_fu_594_p1);
 
 assign mul_ln9_1_fu_301_p0 = mul_ln9_1_fu_301_p00;
 
-assign mul_ln9_1_fu_301_p00 = empty_53_fu_275_p1;
+assign mul_ln9_1_fu_301_p00 = empty_55_fu_275_p1;
 
 assign mul_ln9_1_fu_301_p1 = mul_ln9_1_fu_301_p10;
 
@@ -894,7 +894,7 @@ assign mul_ln9_1_fu_301_p2 = (mul_ln9_1_fu_301_p0 * mul_ln9_1_fu_301_p1);
 
 assign mul_ln9_fu_287_p0 = mul_ln9_fu_287_p00;
 
-assign mul_ln9_fu_287_p00 = empty_52_fu_271_p1;
+assign mul_ln9_fu_287_p00 = empty_54_fu_271_p1;
 
 assign mul_ln9_fu_287_p1 = mul_ln9_fu_287_p10;
 
@@ -930,7 +930,7 @@ assign select_ln20_5_fu_394_p3 = ((icmp_ln21_fu_351_p2[0:0] === 1'b1) ? icmp_ln2
 
 assign select_ln20_fu_356_p3 = ((icmp_ln21_fu_351_p2[0:0] === 1'b1) ? 4'd0 : ap_phi_mux_out_h_0_phi_fu_215_p4);
 
-assign select_ln21_1_fu_563_p3 = ((icmp_ln21_reg_737[0:0] === 1'b1) ? 8'd1 : add_ln21_3_fu_557_p2);
+assign select_ln21_1_fu_563_p3 = ((icmp_ln21_reg_737[0:0] === 1'b1) ? 8'd1 : add_ln21_1_fu_557_p2);
 
 assign select_ln21_fu_531_p3 = ((select_ln20_5_reg_751[0:0] === 1'b1) ? out_h_reg_758 : select_ln20_reg_746);
 

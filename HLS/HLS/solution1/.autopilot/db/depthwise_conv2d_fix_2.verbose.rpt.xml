@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'depthwise_conv2d_fix_2'" level="0">
-<item name = "Date">Tue Dec 31 20:30:50 2019
+<item name = "Date">Tue Dec 31 22:01:52 2019
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">HLS</item>
@@ -97,17 +97,17 @@
 <column name="tmp10_1_0_mid2_fu_671_p2">*, 0, 0, 51, 7, 9</column>
 <column name="tmp10_2_0_mid2_fu_705_p2">*, 0, 0, 51, 7, 9</column>
 <column name="add_ln23_fu_794_p2">+, 0, 0, 19, 1, 14</column>
-<column name="add_ln24_10_fu_818_p2">+, 0, 0, 15, 4, 8</column>
-<column name="add_ln24_4_fu_644_p2">+, 0, 0, 15, 2, 8</column>
-<column name="add_ln24_5_fu_676_p2">+, 0, 0, 15, 2, 8</column>
-<column name="add_ln24_6_fu_686_p2">+, 0, 0, 15, 3, 8</column>
-<column name="add_ln24_7_fu_742_p2">+, 0, 0, 15, 3, 8</column>
-<column name="add_ln24_8_fu_752_p2">+, 0, 0, 15, 3, 8</column>
-<column name="add_ln24_9_fu_808_p2">+, 0, 0, 15, 3, 8</column>
+<column name="add_ln24_3_fu_644_p2">+, 0, 0, 15, 2, 8</column>
+<column name="add_ln24_4_fu_676_p2">+, 0, 0, 15, 2, 8</column>
+<column name="add_ln24_5_fu_686_p2">+, 0, 0, 15, 3, 8</column>
+<column name="add_ln24_6_fu_742_p2">+, 0, 0, 15, 3, 8</column>
+<column name="add_ln24_7_fu_752_p2">+, 0, 0, 15, 3, 8</column>
+<column name="add_ln24_8_fu_808_p2">+, 0, 0, 15, 3, 8</column>
+<column name="add_ln24_9_fu_818_p2">+, 0, 0, 15, 4, 8</column>
 <column name="add_ln24_fu_634_p2">+, 0, 0, 15, 1, 8</column>
-<column name="add_ln27_1_fu_538_p2">+, 0, 0, 15, 8, 8</column>
+<column name="add_ln27_4_fu_538_p2">+, 0, 0, 15, 8, 8</column>
 <column name="add_ln27_fu_469_p2">+, 0, 0, 15, 8, 8</column>
-<column name="add_ln32_3_fu_628_p2">+, 0, 0, 14, 1, 10</column>
+<column name="add_ln32_1_fu_628_p2">+, 0, 0, 14, 1, 10</column>
 <column name="add_ln40_10_fu_945_p2">+, 0, 0, 19, 14, 14</column>
 <column name="add_ln40_2_fu_732_p2">+, 0, 0, 19, 14, 14</column>
 <column name="add_ln40_3_fu_766_p2">+, 0, 0, 15, 2, 5</column>
@@ -187,7 +187,7 @@
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
 <column name="add_ln23_reg_1428">14, 0, 14, 0</column>
-<column name="add_ln32_3_reg_1317">10, 0, 10, 0</column>
+<column name="add_ln32_1_reg_1317">10, 0, 10, 0</column>
 <column name="add_ln40_10_reg_1504">14, 0, 14, 0</column>
 <column name="add_ln48_4_reg_1524">16, 0, 16, 0</column>
 <column name="add_ln48_5_reg_1544">16, 0, 16, 0</column>
@@ -244,14 +244,14 @@
 <column name="trunc_ln48_s_reg_1459">16, 0, 16, 0</column>
 <column name="trunc_ln_reg_1454">16, 0, 16, 0</column>
 <column name="zext_ln40_1_cast14_reg_1195">7, 0, 14, 7</column>
+<column name="zext_ln40_1_reg_1363">5, 0, 14, 9</column>
+<column name="zext_ln40_1_reg_1363_pp0_iter1_reg">5, 0, 14, 9</column>
 <column name="zext_ln40_2_cast_mid_reg_1305">5, 0, 9, 4</column>
 <column name="zext_ln40_2_cast_mid_reg_1305_pp0_iter1_reg">5, 0, 9, 4</column>
 <column name="zext_ln40_2_cast_reg_1238">5, 0, 9, 4</column>
 <column name="zext_ln40_2_cast_reg_1238_pp0_iter1_reg">5, 0, 9, 4</column>
-<column name="zext_ln40_2_reg_1363">5, 0, 14, 9</column>
-<column name="zext_ln40_2_reg_1363_pp0_iter1_reg">5, 0, 14, 9</column>
-<column name="zext_ln40_4_reg_1380">5, 0, 14, 9</column>
-<column name="zext_ln40_6_reg_1412">5, 0, 14, 9</column>
+<column name="zext_ln40_3_reg_1380">5, 0, 14, 9</column>
+<column name="zext_ln40_5_reg_1412">5, 0, 14, 9</column>
 <column name="zext_ln40_reg_1189">7, 0, 9, 2</column>
 <column name="zext_ln48_1_cast_reg_1208">6, 0, 14, 8</column>
 <column name="zext_ln48_1_reg_1233">5, 0, 9, 4</column>

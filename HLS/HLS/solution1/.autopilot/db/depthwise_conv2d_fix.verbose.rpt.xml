@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'depthwise_conv2d_fix'" level="0">
-<item name = "Date">Tue Dec 31 20:30:49 2019
+<item name = "Date">Tue Dec 31 22:01:51 2019
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">HLS</item>
@@ -89,7 +89,7 @@
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
 <column name="add_ln24_fu_515_p2">+, 0, 0, 14, 10, 1</column>
-<column name="add_ln32_5_fu_955_p2">+, 0, 0, 14, 10, 1</column>
+<column name="add_ln32_3_fu_955_p2">+, 0, 0, 14, 10, 1</column>
 <column name="add_ln40_10_fu_1166_p2">+, 0, 0, 14, 10, 10</column>
 <column name="add_ln40_2_fu_754_p2">+, 0, 0, 13, 11, 11</column>
 <column name="add_ln40_3_fu_905_p2">+, 0, 0, 15, 5, 2</column>
@@ -187,7 +187,7 @@
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
 <column name="SeparableConv2D_0_w_18_reg_1664">15, 0, 15, 0</column>
 <column name="add_ln24_reg_1411">10, 0, 10, 0</column>
-<column name="add_ln32_5_reg_1577">10, 0, 10, 0</column>
+<column name="add_ln32_3_reg_1577">10, 0, 10, 0</column>
 <column name="add_ln40_10_reg_1649">10, 0, 10, 0</column>
 <column name="add_ln40_3_reg_1547">5, 0, 5, 0</column>
 <column name="add_ln40_6_reg_1562">11, 0, 11, 0</column>
@@ -243,8 +243,8 @@
 <column name="trunc_ln48_8_reg_1704">16, 0, 16, 0</column>
 <column name="trunc_ln_reg_1599">16, 0, 16, 0</column>
 <column name="xor_ln24_2_reg_1477">1, 0, 1, 0</column>
-<column name="zext_ln40_13_reg_1522">5, 0, 11, 6</column>
-<column name="zext_ln40_2_reg_1505">5, 0, 11, 6</column>
+<column name="zext_ln40_12_reg_1522">5, 0, 11, 6</column>
+<column name="zext_ln40_1_reg_1505">5, 0, 11, 6</column>
 </table>
 </item>
 </section>

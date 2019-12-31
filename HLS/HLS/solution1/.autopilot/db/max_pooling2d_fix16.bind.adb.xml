@@ -1382,10 +1382,10 @@ hls_label_1:78  %out_w = add i4 %select_ln26, 1
 
 <Node id="130" bw="8" op_0_bw="8" op_1_bw="8">
 <![CDATA[
-hls_label_1:79  %add_ln21_3 = add i8 %indvar_flatten, 1
+hls_label_1:79  %add_ln21_1 = add i8 %indvar_flatten, 1
 
 ]]></Node>
-<StgValue><ssdm name="add_ln21_3"/></StgValue>
+<StgValue><ssdm name="add_ln21_1"/></StgValue>
 </operation>
 
 <operation id="99" st_id="5" stage="1" lat="1">
@@ -1398,7 +1398,7 @@ hls_label_1:79  %add_ln21_3 = add i8 %indvar_flatten, 1
 
 <Node id="131" bw="8" op_0_bw="1" op_1_bw="8" op_2_bw="8">
 <![CDATA[
-hls_label_1:80  %select_ln21_1 = select i1 %icmp_ln21, i8 1, i8 %add_ln21_3
+hls_label_1:80  %select_ln21_1 = select i1 %icmp_ln21, i8 1, i8 %add_ln21_1
 
 ]]></Node>
 <StgValue><ssdm name="select_ln21_1"/></StgValue>
@@ -2607,15 +2607,15 @@ hls_label_1:81  br label %.preheader7
 </dataflow>
 <dataflow id="367" from="StgValue_294" to="out_w" fromId="294" toId="97">
 </dataflow>
-<dataflow id="368" from="indvar_flatten" to="add_ln21_3" fromId="43" toId="98">
+<dataflow id="368" from="indvar_flatten" to="add_ln21_1" fromId="43" toId="98">
 </dataflow>
-<dataflow id="370" from="StgValue_369" to="add_ln21_3" fromId="369" toId="98">
+<dataflow id="370" from="StgValue_369" to="add_ln21_1" fromId="369" toId="98">
 </dataflow>
 <dataflow id="371" from="icmp_ln21" to="select_ln21_1" fromId="53" toId="99">
 </dataflow>
 <dataflow id="372" from="StgValue_369" to="select_ln21_1" fromId="369" toId="99">
 </dataflow>
-<dataflow id="373" from="add_ln21_3" to="select_ln21_1" fromId="98" toId="99">
+<dataflow id="373" from="add_ln21_1" to="select_ln21_1" fromId="98" toId="99">
 </dataflow>
 <dataflow id="374" from="select_ln29" to="zext_ln29" fromId="93" toId="100">
 </dataflow>
