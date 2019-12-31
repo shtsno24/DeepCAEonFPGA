@@ -77,8 +77,8 @@ wire   [8:0] zext_ln18_1_fu_196_p1;
 reg   [8:0] zext_ln18_1_reg_543;
 wire   [13:0] zext_ln18_3_cast_fu_199_p1;
 reg   [13:0] zext_ln18_3_cast_reg_549;
-wire   [11:0] empty_13_fu_206_p1;
-reg   [11:0] empty_13_reg_554;
+wire   [11:0] empty_11_fu_206_p1;
+reg   [11:0] empty_11_reg_554;
 wire   [14:0] mul_ln6_1_fu_494_p2;
 reg   [14:0] mul_ln6_1_reg_559;
 wire   [0:0] icmp_ln16_fu_217_p2;
@@ -113,10 +113,10 @@ reg    ap_enable_reg_pp0_iter2;
 wire   [63:0] zext_ln18_6_fu_483_p1;
 wire    ap_block_pp0_stage0;
 wire   [63:0] zext_ln18_8_fu_490_p1;
-wire   [4:0] empty_11_fu_174_p1;
+wire   [4:0] empty_9_fu_174_p1;
 wire   [4:0] mul_ln6_fu_186_p0;
 wire   [4:0] mul_ln6_fu_186_p1;
-wire   [4:0] empty_12_fu_202_p1;
+wire   [4:0] empty_10_fu_202_p1;
 wire   [4:0] mul_ln18_fu_230_p0;
 wire   [4:0] mul_ln18_fu_230_p1;
 wire   [4:0] mul_ln18_1_fu_235_p0;
@@ -191,7 +191,7 @@ network_mul_mul_10ns_5ns_15_1_1 #(
     .din0_WIDTH( 10 ),
     .din1_WIDTH( 5 ),
     .dout_WIDTH( 15 ))
-network_mul_mul_10ns_5ns_15_1_1_U179(
+network_mul_mul_10ns_5ns_15_1_1_U92(
     .din0(mul_ln6_1_fu_494_p0),
     .din1(mul_ln6_1_fu_494_p1),
     .dout(mul_ln6_1_fu_494_p2)
@@ -204,7 +204,7 @@ network_mac_muladd_8ns_5ns_4ns_12_1_1 #(
     .din1_WIDTH( 5 ),
     .din2_WIDTH( 4 ),
     .dout_WIDTH( 12 ))
-network_mac_muladd_8ns_5ns_4ns_12_1_1_U180(
+network_mac_muladd_8ns_5ns_4ns_12_1_1_U93(
     .din0(grp_fu_500_p0),
     .din1(grp_fu_500_p1),
     .din2(grp_fu_500_p2),
@@ -218,7 +218,7 @@ network_mac_muladd_9ns_6ns_5ns_14_1_1 #(
     .din1_WIDTH( 6 ),
     .din2_WIDTH( 5 ),
     .dout_WIDTH( 14 ))
-network_mac_muladd_9ns_6ns_5ns_14_1_1_U181(
+network_mac_muladd_9ns_6ns_5ns_14_1_1_U94(
     .din0(grp_fu_508_p0),
     .din1(grp_fu_508_p1),
     .din2(grp_fu_508_p2),
@@ -319,7 +319,7 @@ end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state2)) begin
-        empty_13_reg_554[4 : 0] <= empty_13_fu_206_p1[4 : 0];
+        empty_11_reg_554[4 : 0] <= empty_11_fu_206_p1[4 : 0];
         icmp_ln16_reg_564 <= icmp_ln16_fu_217_p2;
         mul_ln6_1_reg_559 <= mul_ln6_1_fu_494_p2;
         zext_ln18_1_reg_543[5 : 0] <= zext_ln18_1_fu_196_p1[5 : 0];
@@ -471,11 +471,11 @@ assign ap_block_state5_pp0_stage0_iter2 = ~(1'b1 == 1'b1);
 
 assign ap_enable_pp0 = (ap_idle_pp0 ^ 1'b1);
 
-assign empty_11_fu_174_p1 = output_height[4:0];
+assign empty_10_fu_202_p1 = output_depth[4:0];
 
-assign empty_12_fu_202_p1 = output_depth[4:0];
+assign empty_11_fu_206_p1 = input_width;
 
-assign empty_13_fu_206_p1 = input_width;
+assign empty_9_fu_174_p1 = output_height[4:0];
 
 assign empty_fu_170_p1 = output_width[4:0];
 
@@ -483,7 +483,7 @@ assign grp_fu_500_p0 = grp_fu_500_p00;
 
 assign grp_fu_500_p00 = select_ln18_7_reg_588;
 
-assign grp_fu_500_p1 = empty_13_reg_554;
+assign grp_fu_500_p1 = empty_11_reg_554;
 
 assign grp_fu_500_p2 = grp_fu_500_p20;
 
@@ -551,7 +551,7 @@ assign mul_ln6_1_fu_494_p00 = mul_ln6_reg_531;
 
 assign mul_ln6_1_fu_494_p1 = mul_ln6_1_fu_494_p10;
 
-assign mul_ln6_1_fu_494_p10 = empty_12_fu_202_p1;
+assign mul_ln6_1_fu_494_p10 = empty_10_fu_202_p1;
 
 assign mul_ln6_fu_186_p0 = mul_ln6_fu_186_p00;
 
@@ -559,7 +559,7 @@ assign mul_ln6_fu_186_p00 = empty_fu_170_p1;
 
 assign mul_ln6_fu_186_p1 = mul_ln6_fu_186_p10;
 
-assign mul_ln6_fu_186_p10 = empty_11_fu_174_p1;
+assign mul_ln6_fu_186_p10 = empty_9_fu_174_p1;
 
 assign mul_ln6_fu_186_p2 = (mul_ln6_fu_186_p0 * mul_ln6_fu_186_p1);
 
@@ -629,7 +629,7 @@ always @ (posedge ap_clk) begin
     zext_ln18_reg_537[7:5] <= 3'b000;
     zext_ln18_1_reg_543[8:6] <= 3'b000;
     zext_ln18_3_cast_reg_549[13:6] <= 8'b00000000;
-    empty_13_reg_554[11:5] <= 7'b0000000;
+    empty_11_reg_554[11:5] <= 7'b0000000;
 end
 
 endmodule //up_sampling2d_fix16

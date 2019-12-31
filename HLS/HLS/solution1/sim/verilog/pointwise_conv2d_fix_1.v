@@ -233,7 +233,7 @@ network_mux_83_16_1_1 #(
     .din7_WIDTH( 16 ),
     .din8_WIDTH( 3 ),
     .dout_WIDTH( 16 ))
-network_mux_83_16_1_1_U111(
+network_mux_83_16_1_1_U54(
     .din0(16'd572),
     .din1(16'd63140),
     .din2(16'd63819),
@@ -379,7 +379,7 @@ network_mux_1287_16_1_1 #(
     .din127_WIDTH( 16 ),
     .din128_WIDTH( 7 ),
     .dout_WIDTH( 16 ))
-network_mux_1287_16_1_1_U112(
+network_mux_1287_16_1_1_U55(
     .din0(16'd62947),
     .din1(16'd59235),
     .din2(16'd6298),
@@ -533,7 +533,7 @@ network_mux_164_32_1_1 #(
     .din15_WIDTH( 32 ),
     .din16_WIDTH( 4 ),
     .dout_WIDTH( 32 ))
-network_mux_164_32_1_1_U113(
+network_mux_164_32_1_1_U56(
     .din0(kernel_buffer_15_fu_388),
     .din1(kernel_buffer_15_45_fu_392),
     .din2(kernel_buffer_15_46_fu_396),
@@ -561,7 +561,7 @@ network_mac_muladd_9ns_5ns_9s_13_1_1 #(
     .din1_WIDTH( 5 ),
     .din2_WIDTH( 9 ),
     .dout_WIDTH( 13 ))
-network_mac_muladd_9ns_5ns_9s_13_1_1_U114(
+network_mac_muladd_9ns_5ns_9s_13_1_1_U57(
     .din0(grp_fu_1422_p0),
     .din1(grp_fu_1422_p1),
     .din2(select_ln36_12_reg_1609),
