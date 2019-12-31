@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-//Date        : Tue Dec 31 18:25:17 2019
+//Date        : Tue Dec 31 19:27:11 2019
 //Host        : shts-server running 64-bit Ubuntu 18.04.3 LTS
 //Command     : generate_target design_1.bd
 //Design      : design_1
@@ -354,8 +354,7 @@ module design_1
         .aresetn(rst_ps7_0_100M_peripheral_aresetn));
   design_1_clk_wiz_0_0 clk_wiz_0
        (.clk_in1(processing_system7_0_FCLK_CLK0),
-        .clk_out1(clk_wiz_0_clk_out1),
-        .resetn(rst_ps7_0_100M_peripheral_aresetn));
+        .clk_out1(clk_wiz_0_clk_out1));
   design_1_network_0_0 network_0
        (.ap_clk(clk_wiz_0_clk_out1),
         .ap_rst_n(rst_ps7_0_100M_peripheral_aresetn),

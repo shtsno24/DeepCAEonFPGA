@@ -1,7 +1,7 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
--- Date        : Tue Dec 31 18:26:12 2019
+-- Date        : Tue Dec 31 19:27:46 2019
 -- Host        : shts-server running 64-bit Ubuntu 18.04.3 LTS
 -- Command     : write_vhdl -force -mode funcsim
 --               /home/shts/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_sim_netlist.vhdl
@@ -17,7 +17,6 @@ use UNISIM.VCOMPONENTS.ALL;
 entity design_1_clk_wiz_0_0_design_1_clk_wiz_0_0_clk_wiz is
   port (
     clk_out1 : out STD_LOGIC;
-    resetn : in STD_LOGIC;
     clk_in1 : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
@@ -29,7 +28,6 @@ architecture STRUCTURE of design_1_clk_wiz_0_0_design_1_clk_wiz_0_0_clk_wiz is
   signal clk_out1_design_1_clk_wiz_0_0 : STD_LOGIC;
   signal clkfbout_buf_design_1_clk_wiz_0_0 : STD_LOGIC;
   signal clkfbout_design_1_clk_wiz_0_0 : STD_LOGIC;
-  signal reset_high : STD_LOGIC;
   signal NLW_mmcm_adv_inst_CLKFBOUTB_UNCONNECTED : STD_LOGIC;
   signal NLW_mmcm_adv_inst_CLKFBSTOPPED_UNCONNECTED : STD_LOGIC;
   signal NLW_mmcm_adv_inst_CLKINSTOPPED_UNCONNECTED : STD_LOGIC;
@@ -161,15 +159,7 @@ mmcm_adv_inst: unisim.vcomponents.MMCME2_ADV
       PSEN => '0',
       PSINCDEC => '0',
       PWRDWN => '0',
-      RST => reset_high
-    );
-mmcm_adv_inst_i_1: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"1"
-    )
-        port map (
-      I0 => resetn,
-      O => reset_high
+      RST => '0'
     );
 end STRUCTURE;
 library IEEE;
@@ -179,7 +169,6 @@ use UNISIM.VCOMPONENTS.ALL;
 entity design_1_clk_wiz_0_0 is
   port (
     clk_out1 : out STD_LOGIC;
-    resetn : in STD_LOGIC;
     clk_in1 : in STD_LOGIC
   );
   attribute NotValidForBitStream : boolean;
@@ -191,7 +180,6 @@ begin
 inst: entity work.design_1_clk_wiz_0_0_design_1_clk_wiz_0_0_clk_wiz
      port map (
       clk_in1 => clk_in1,
-      clk_out1 => clk_out1,
-      resetn => resetn
+      clk_out1 => clk_out1
     );
 end STRUCTURE;
