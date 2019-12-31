@@ -2,8 +2,8 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Mon Dec 30 21:26:51 2019
-# Process ID: 7696
+# Start of session at: Tue Dec 31 14:08:34 2019
+# Process ID: 15367
 # Current directory: /home/shts/DeepCAEonFPGA/HLS/HLS/solution1/impl/verilog/project.runs/impl_1
 # Command line: vivado -log bd_0_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source bd_0_wrapper.tcl -notrace
 # Log file: /home/shts/DeepCAEonFPGA/HLS/HLS/solution1/impl/verilog/project.runs/impl_1/bd_0_wrapper.vdi

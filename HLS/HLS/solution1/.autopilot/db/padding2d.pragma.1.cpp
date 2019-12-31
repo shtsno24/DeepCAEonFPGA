@@ -391,7 +391,8 @@ _ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
 
   for(uint16_t height = 0; height < input_height; height++){
 
-   for(uint16_t width = 0; width < input_width; width++){
+_ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
+ for(uint16_t width = 0; width < input_width; width++){
 
 _ssdm_SpecLoopFlatten(0, "");
 _ssdm_op_SpecPipeline(-1, 1, 1, 0, "");

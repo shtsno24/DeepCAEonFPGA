@@ -1,6 +1,6 @@
 # This script segment is generated automatically by AutoPilot
 
-set id 83
+set id 87
 set name network_mux_83_16_1_1_x
 set corename simcore_mux
 set op mux
@@ -109,7 +109,7 @@ puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_pipemux, check your
 }
 
 
-set id 84
+set id 88
 set name network_mux_646_16_1_1
 set corename simcore_mux
 set op mux
@@ -554,7 +554,7 @@ puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_pipemux, check your
 }
 
 
-set id 86
+set id 91
 set name network_mac_muladd_4ns_7ns_7s_10_1_1
 set corename simcore_mac
 set op mac
@@ -647,7 +647,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 90 \
+    id 95 \
     name input_r \
     reset_level 1 \
     sync_rst true \
@@ -666,7 +666,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 91 \
+    id 96 \
     name output_r \
     reset_level 1 \
     sync_rst true \
