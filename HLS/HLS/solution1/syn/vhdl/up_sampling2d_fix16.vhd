@@ -227,7 +227,7 @@ architecture behav of up_sampling2d_fix16 is
 
 
 begin
-    network_mul_mul_10ns_5ns_15_1_1_U94 : component network_mul_mul_10ns_5ns_15_1_1
+    network_mul_mul_10ns_5ns_15_1_1_U86 : component network_mul_mul_10ns_5ns_15_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,
@@ -239,7 +239,7 @@ begin
         din1 => mul_ln6_1_fu_494_p1,
         dout => mul_ln6_1_fu_494_p2);
 
-    network_mac_muladd_8ns_5ns_4ns_12_1_1_U95 : component network_mac_muladd_8ns_5ns_4ns_12_1_1
+    network_mac_muladd_8ns_5ns_4ns_12_1_1_U87 : component network_mac_muladd_8ns_5ns_4ns_12_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,
@@ -253,7 +253,7 @@ begin
         din2 => grp_fu_500_p2,
         dout => grp_fu_500_p3);
 
-    network_mac_muladd_9ns_6ns_5ns_14_1_1_U96 : component network_mac_muladd_9ns_6ns_5ns_14_1_1
+    network_mac_muladd_9ns_6ns_5ns_14_1_1_U88 : component network_mac_muladd_9ns_6ns_5ns_14_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,

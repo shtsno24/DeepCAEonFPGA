@@ -1061,7 +1061,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>network_mul_mul_10ns_5ns_15_1_1_U94</rtlName>
+              <rtlName>network_mul_mul_10ns_5ns_15_1_1_U86</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>15</bitwidth>
@@ -3168,7 +3168,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>network_mac_muladd_8ns_5ns_4ns_12_1_1_U95</rtlName>
+              <rtlName>network_mac_muladd_8ns_5ns_4ns_12_1_1_U87</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>12</bitwidth>
@@ -3364,7 +3364,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>network_mac_muladd_9ns_6ns_5ns_14_1_1_U96</rtlName>
+              <rtlName>network_mac_muladd_9ns_6ns_5ns_14_1_1_U88</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>14</bitwidth>
@@ -3562,7 +3562,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>network_mac_muladd_8ns_5ns_4ns_12_1_1_U95</rtlName>
+              <rtlName>network_mac_muladd_8ns_5ns_4ns_12_1_1_U87</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>12</bitwidth>
@@ -3805,7 +3805,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>network_mac_muladd_9ns_6ns_5ns_14_1_1_U96</rtlName>
+              <rtlName>network_mac_muladd_9ns_6ns_5ns_14_1_1_U88</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>14</bitwidth>
@@ -7901,7 +7901,7 @@
         <count>3</count>
         <item_version>0</item_version>
         <item>
-          <first>network_mac_muladd_8ns_5ns_4ns_12_1_1_U95</first>
+          <first>network_mac_muladd_8ns_5ns_4ns_12_1_1_U87</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -7912,7 +7912,7 @@
           </second>
         </item>
         <item>
-          <first>network_mac_muladd_9ns_6ns_5ns_14_1_1_U96</first>
+          <first>network_mac_muladd_9ns_6ns_5ns_14_1_1_U88</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -7923,7 +7923,7 @@
           </second>
         </item>
         <item>
-          <first>network_mul_mul_10ns_5ns_15_1_1_U94</first>
+          <first>network_mul_mul_10ns_5ns_15_1_1_U86</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>

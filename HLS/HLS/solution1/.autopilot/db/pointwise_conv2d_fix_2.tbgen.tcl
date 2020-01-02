@@ -59,7 +59,7 @@ set RtlHierarchyInfo {[
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "3265", "EstimateLatencyMax" : "3265",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "3273", "EstimateLatencyMax" : "3273",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -68,26 +68,31 @@ set RtlHierarchyInfo {[
 		"HasNonBlockingOperation" : "0",
 		"Port" : [
 			{"Name" : "input_r", "Type" : "Memory", "Direction" : "I"},
-			{"Name" : "output_r", "Type" : "Memory", "Direction" : "O"}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mux_83_16_1_1_x0_U85", "Parent" : "0"},
-	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mux_646_16_1_1_U86", "Parent" : "0"},
-	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mux_164_32_1_1_U87", "Parent" : "0"},
-	{"ID" : "4", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mac_muladd_4ns_7ns_7s_10_1_1_U88", "Parent" : "0"}]}
+			{"Name" : "output_r", "Type" : "Memory", "Direction" : "O"},
+			{"Name" : "SeparableConv2D_2_b_s", "Type" : "Memory", "Direction" : "I"},
+			{"Name" : "SeparableConv2D_2_w_s", "Type" : "Memory", "Direction" : "I"}]},
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.SeparableConv2D_2_b_s_U", "Parent" : "0"},
+	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.SeparableConv2D_2_w_s_U", "Parent" : "0"},
+	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mux_164_32_1_1_U79", "Parent" : "0"},
+	{"ID" : "4", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mac_muladd_4ns_7ns_7s_10_1_1_U80", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {
 	pointwise_conv2d_fix_2 {
-		input_r {Type I LastRead 5 FirstWrite -1}
-		output_r {Type O LastRead -1 FirstWrite 8}}}
+		input_r {Type I LastRead 6 FirstWrite -1}
+		output_r {Type O LastRead -1 FirstWrite 9}
+		SeparableConv2D_2_b_s {Type I LastRead -1 FirstWrite -1}
+		SeparableConv2D_2_w_s {Type I LastRead -1 FirstWrite -1}}}
 
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "3265", "Max" : "3265"}
-	, {"Name" : "Interval", "Min" : "3265", "Max" : "3265"}
+	{"Name" : "Latency", "Min" : "3273", "Max" : "3273"}
+	, {"Name" : "Interval", "Min" : "3273", "Max" : "3273"}
 ]}
 
 set PipelineEnableSignalInfo {[
+	{"Pipeline" : "0", "EnableSignal" : "ap_enable_pp0"}
 	{"Pipeline" : "1", "EnableSignal" : "ap_enable_pp1"}
 ]}
 

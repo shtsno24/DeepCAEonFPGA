@@ -1,944 +1,6 @@
 # This script segment is generated automatically by AutoPilot
 
-set id 55
-set name network_mux_83_16_1_1
-set corename simcore_mux
-set op mux
-set stage_num 1
-set max_latency -1
-set registered_input 1
-set din0_width 16
-set din0_signed 0
-set din1_width 16
-set din1_signed 1
-set din2_width 16
-set din2_signed 1
-set din3_width 16
-set din3_signed 0
-set din4_width 16
-set din4_signed 0
-set din5_width 16
-set din5_signed 0
-set din6_width 16
-set din6_signed 1
-set din7_width 16
-set din7_signed 1
-set din8_width 3
-set din8_signed 0
-set dout_width 16
-if {${::AESL::PGuard_simmodel_gen}} {
-if {[info proc ap_gen_simcore_mux] == "ap_gen_simcore_mux"} {
-eval "ap_gen_simcore_mux { \
-    id ${id} \
-    name ${name} \
-    corename ${corename} \
-    op ${op} \
-    reset_level 1 \
-    sync_rst true \
-    stage_num ${stage_num} \
-    max_latency ${max_latency} \
-    registered_input ${registered_input} \
-    din0_width ${din0_width} \
-    din0_signed ${din0_signed} \
-    din1_width ${din1_width} \
-    din1_signed ${din1_signed} \
-    din2_width ${din2_width} \
-    din2_signed ${din2_signed} \
-    din3_width ${din3_width} \
-    din3_signed ${din3_signed} \
-    din4_width ${din4_width} \
-    din4_signed ${din4_signed} \
-    din5_width ${din5_width} \
-    din5_signed ${din5_signed} \
-    din6_width ${din6_width} \
-    din6_signed ${din6_signed} \
-    din7_width ${din7_width} \
-    din7_signed ${din7_signed} \
-    din8_width ${din8_width} \
-    din8_signed ${din8_signed} \
-    dout_width ${dout_width} \
-}"
-} else {
-puts "@W \[IMPL-100\] Cannot find ap_gen_simcore_mux, check your AutoPilot builtin lib"
-}
-}
-
-
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler ${name}
-}
-
-
-set op mux
-set corename MuxnS
-if {${::AESL::PGuard_autocg_gen} && ${::AESL::PGuard_autocg_ipmgen}} {
-if {[info proc ::AESL_LIB_VIRTEX::xil_gen_pipemux] == "::AESL_LIB_VIRTEX::xil_gen_pipemux"} {
-eval "::AESL_LIB_VIRTEX::xil_gen_pipemux { \
-    id ${id} \
-    name ${name} \
-    corename ${corename} \
-    op ${op} \
-    reset_level 1 \
-    sync_rst true \
-    stage_num ${stage_num} \
-    max_latency ${max_latency} \
-    registered_input ${registered_input} \
-    din0_width ${din0_width} \
-    din0_signed ${din0_signed} \
-    din1_width ${din1_width} \
-    din1_signed ${din1_signed} \
-    din2_width ${din2_width} \
-    din2_signed ${din2_signed} \
-    din3_width ${din3_width} \
-    din3_signed ${din3_signed} \
-    din4_width ${din4_width} \
-    din4_signed ${din4_signed} \
-    din5_width ${din5_width} \
-    din5_signed ${din5_signed} \
-    din6_width ${din6_width} \
-    din6_signed ${din6_signed} \
-    din7_width ${din7_width} \
-    din7_signed ${din7_signed} \
-    din8_width ${din8_width} \
-    din8_signed ${din8_signed} \
-    dout_width ${dout_width} \
-}"
-} else {
-puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_pipemux, check your platform lib"
-}
-}
-
-
-set id 56
-set name network_mux_1287_16_1_1
-set corename simcore_mux
-set op mux
-set stage_num 1
-set max_latency -1
-set registered_input 1
-set din0_width 16
-set din0_signed 1
-set din1_width 16
-set din1_signed 1
-set din2_width 16
-set din2_signed 0
-set din3_width 16
-set din3_signed 0
-set din4_width 16
-set din4_signed 1
-set din5_width 16
-set din5_signed 1
-set din6_width 16
-set din6_signed 0
-set din7_width 16
-set din7_signed 0
-set din8_width 16
-set din8_signed 1
-set din9_width 16
-set din9_signed 1
-set din10_width 16
-set din10_signed 1
-set din11_width 16
-set din11_signed 0
-set din12_width 16
-set din12_signed 1
-set din13_width 16
-set din13_signed 1
-set din14_width 16
-set din14_signed 1
-set din15_width 16
-set din15_signed 1
-set din16_width 16
-set din16_signed 1
-set din17_width 16
-set din17_signed 0
-set din18_width 16
-set din18_signed 1
-set din19_width 16
-set din19_signed 1
-set din20_width 16
-set din20_signed 1
-set din21_width 16
-set din21_signed 1
-set din22_width 16
-set din22_signed 1
-set din23_width 16
-set din23_signed 1
-set din24_width 16
-set din24_signed 1
-set din25_width 16
-set din25_signed 0
-set din26_width 16
-set din26_signed 1
-set din27_width 16
-set din27_signed 1
-set din28_width 16
-set din28_signed 0
-set din29_width 16
-set din29_signed 0
-set din30_width 16
-set din30_signed 0
-set din31_width 16
-set din31_signed 1
-set din32_width 16
-set din32_signed 1
-set din33_width 16
-set din33_signed 0
-set din34_width 16
-set din34_signed 1
-set din35_width 16
-set din35_signed 0
-set din36_width 16
-set din36_signed 0
-set din37_width 16
-set din37_signed 0
-set din38_width 16
-set din38_signed 0
-set din39_width 16
-set din39_signed 0
-set din40_width 16
-set din40_signed 0
-set din41_width 16
-set din41_signed 0
-set din42_width 16
-set din42_signed 0
-set din43_width 16
-set din43_signed 1
-set din44_width 16
-set din44_signed 1
-set din45_width 16
-set din45_signed 1
-set din46_width 16
-set din46_signed 1
-set din47_width 16
-set din47_signed 0
-set din48_width 16
-set din48_signed 0
-set din49_width 16
-set din49_signed 0
-set din50_width 16
-set din50_signed 0
-set din51_width 16
-set din51_signed 1
-set din52_width 16
-set din52_signed 1
-set din53_width 16
-set din53_signed 1
-set din54_width 16
-set din54_signed 1
-set din55_width 16
-set din55_signed 1
-set din56_width 16
-set din56_signed 0
-set din57_width 16
-set din57_signed 0
-set din58_width 16
-set din58_signed 0
-set din59_width 16
-set din59_signed 1
-set din60_width 16
-set din60_signed 0
-set din61_width 16
-set din61_signed 1
-set din62_width 16
-set din62_signed 1
-set din63_width 16
-set din63_signed 0
-set din64_width 16
-set din64_signed 0
-set din65_width 16
-set din65_signed 1
-set din66_width 16
-set din66_signed 1
-set din67_width 16
-set din67_signed 0
-set din68_width 16
-set din68_signed 0
-set din69_width 16
-set din69_signed 1
-set din70_width 16
-set din70_signed 1
-set din71_width 16
-set din71_signed 1
-set din72_width 16
-set din72_signed 1
-set din73_width 16
-set din73_signed 1
-set din74_width 16
-set din74_signed 1
-set din75_width 16
-set din75_signed 1
-set din76_width 16
-set din76_signed 0
-set din77_width 16
-set din77_signed 0
-set din78_width 16
-set din78_signed 1
-set din79_width 16
-set din79_signed 1
-set din80_width 16
-set din80_signed 0
-set din81_width 16
-set din81_signed 1
-set din82_width 16
-set din82_signed 1
-set din83_width 16
-set din83_signed 0
-set din84_width 16
-set din84_signed 0
-set din85_width 16
-set din85_signed 0
-set din86_width 16
-set din86_signed 1
-set din87_width 16
-set din87_signed 1
-set din88_width 16
-set din88_signed 1
-set din89_width 16
-set din89_signed 0
-set din90_width 16
-set din90_signed 1
-set din91_width 16
-set din91_signed 1
-set din92_width 16
-set din92_signed 0
-set din93_width 16
-set din93_signed 0
-set din94_width 16
-set din94_signed 1
-set din95_width 16
-set din95_signed 1
-set din96_width 16
-set din96_signed 0
-set din97_width 16
-set din97_signed 0
-set din98_width 16
-set din98_signed 0
-set din99_width 16
-set din99_signed 1
-set din100_width 16
-set din100_signed 0
-set din101_width 16
-set din101_signed 0
-set din102_width 16
-set din102_signed 0
-set din103_width 16
-set din103_signed 0
-set din104_width 16
-set din104_signed 0
-set din105_width 16
-set din105_signed 0
-set din106_width 16
-set din106_signed 0
-set din107_width 16
-set din107_signed 0
-set din108_width 16
-set din108_signed 0
-set din109_width 16
-set din109_signed 0
-set din110_width 16
-set din110_signed 0
-set din111_width 16
-set din111_signed 0
-set din112_width 16
-set din112_signed 1
-set din113_width 16
-set din113_signed 1
-set din114_width 16
-set din114_signed 1
-set din115_width 16
-set din115_signed 1
-set din116_width 16
-set din116_signed 0
-set din117_width 16
-set din117_signed 1
-set din118_width 16
-set din118_signed 0
-set din119_width 16
-set din119_signed 0
-set din120_width 16
-set din120_signed 0
-set din121_width 16
-set din121_signed 0
-set din122_width 16
-set din122_signed 1
-set din123_width 16
-set din123_signed 1
-set din124_width 16
-set din124_signed 1
-set din125_width 16
-set din125_signed 1
-set din126_width 16
-set din126_signed 0
-set din127_width 16
-set din127_signed 1
-set din128_width 7
-set din128_signed 0
-set dout_width 16
-if {${::AESL::PGuard_simmodel_gen}} {
-if {[info proc ap_gen_simcore_mux] == "ap_gen_simcore_mux"} {
-eval "ap_gen_simcore_mux { \
-    id ${id} \
-    name ${name} \
-    corename ${corename} \
-    op ${op} \
-    reset_level 1 \
-    sync_rst true \
-    stage_num ${stage_num} \
-    max_latency ${max_latency} \
-    registered_input ${registered_input} \
-    din0_width ${din0_width} \
-    din0_signed ${din0_signed} \
-    din1_width ${din1_width} \
-    din1_signed ${din1_signed} \
-    din2_width ${din2_width} \
-    din2_signed ${din2_signed} \
-    din3_width ${din3_width} \
-    din3_signed ${din3_signed} \
-    din4_width ${din4_width} \
-    din4_signed ${din4_signed} \
-    din5_width ${din5_width} \
-    din5_signed ${din5_signed} \
-    din6_width ${din6_width} \
-    din6_signed ${din6_signed} \
-    din7_width ${din7_width} \
-    din7_signed ${din7_signed} \
-    din8_width ${din8_width} \
-    din8_signed ${din8_signed} \
-    din9_width ${din9_width} \
-    din9_signed ${din9_signed} \
-    din10_width ${din10_width} \
-    din10_signed ${din10_signed} \
-    din11_width ${din11_width} \
-    din11_signed ${din11_signed} \
-    din12_width ${din12_width} \
-    din12_signed ${din12_signed} \
-    din13_width ${din13_width} \
-    din13_signed ${din13_signed} \
-    din14_width ${din14_width} \
-    din14_signed ${din14_signed} \
-    din15_width ${din15_width} \
-    din15_signed ${din15_signed} \
-    din16_width ${din16_width} \
-    din16_signed ${din16_signed} \
-    din17_width ${din17_width} \
-    din17_signed ${din17_signed} \
-    din18_width ${din18_width} \
-    din18_signed ${din18_signed} \
-    din19_width ${din19_width} \
-    din19_signed ${din19_signed} \
-    din20_width ${din20_width} \
-    din20_signed ${din20_signed} \
-    din21_width ${din21_width} \
-    din21_signed ${din21_signed} \
-    din22_width ${din22_width} \
-    din22_signed ${din22_signed} \
-    din23_width ${din23_width} \
-    din23_signed ${din23_signed} \
-    din24_width ${din24_width} \
-    din24_signed ${din24_signed} \
-    din25_width ${din25_width} \
-    din25_signed ${din25_signed} \
-    din26_width ${din26_width} \
-    din26_signed ${din26_signed} \
-    din27_width ${din27_width} \
-    din27_signed ${din27_signed} \
-    din28_width ${din28_width} \
-    din28_signed ${din28_signed} \
-    din29_width ${din29_width} \
-    din29_signed ${din29_signed} \
-    din30_width ${din30_width} \
-    din30_signed ${din30_signed} \
-    din31_width ${din31_width} \
-    din31_signed ${din31_signed} \
-    din32_width ${din32_width} \
-    din32_signed ${din32_signed} \
-    din33_width ${din33_width} \
-    din33_signed ${din33_signed} \
-    din34_width ${din34_width} \
-    din34_signed ${din34_signed} \
-    din35_width ${din35_width} \
-    din35_signed ${din35_signed} \
-    din36_width ${din36_width} \
-    din36_signed ${din36_signed} \
-    din37_width ${din37_width} \
-    din37_signed ${din37_signed} \
-    din38_width ${din38_width} \
-    din38_signed ${din38_signed} \
-    din39_width ${din39_width} \
-    din39_signed ${din39_signed} \
-    din40_width ${din40_width} \
-    din40_signed ${din40_signed} \
-    din41_width ${din41_width} \
-    din41_signed ${din41_signed} \
-    din42_width ${din42_width} \
-    din42_signed ${din42_signed} \
-    din43_width ${din43_width} \
-    din43_signed ${din43_signed} \
-    din44_width ${din44_width} \
-    din44_signed ${din44_signed} \
-    din45_width ${din45_width} \
-    din45_signed ${din45_signed} \
-    din46_width ${din46_width} \
-    din46_signed ${din46_signed} \
-    din47_width ${din47_width} \
-    din47_signed ${din47_signed} \
-    din48_width ${din48_width} \
-    din48_signed ${din48_signed} \
-    din49_width ${din49_width} \
-    din49_signed ${din49_signed} \
-    din50_width ${din50_width} \
-    din50_signed ${din50_signed} \
-    din51_width ${din51_width} \
-    din51_signed ${din51_signed} \
-    din52_width ${din52_width} \
-    din52_signed ${din52_signed} \
-    din53_width ${din53_width} \
-    din53_signed ${din53_signed} \
-    din54_width ${din54_width} \
-    din54_signed ${din54_signed} \
-    din55_width ${din55_width} \
-    din55_signed ${din55_signed} \
-    din56_width ${din56_width} \
-    din56_signed ${din56_signed} \
-    din57_width ${din57_width} \
-    din57_signed ${din57_signed} \
-    din58_width ${din58_width} \
-    din58_signed ${din58_signed} \
-    din59_width ${din59_width} \
-    din59_signed ${din59_signed} \
-    din60_width ${din60_width} \
-    din60_signed ${din60_signed} \
-    din61_width ${din61_width} \
-    din61_signed ${din61_signed} \
-    din62_width ${din62_width} \
-    din62_signed ${din62_signed} \
-    din63_width ${din63_width} \
-    din63_signed ${din63_signed} \
-    din64_width ${din64_width} \
-    din64_signed ${din64_signed} \
-    din65_width ${din65_width} \
-    din65_signed ${din65_signed} \
-    din66_width ${din66_width} \
-    din66_signed ${din66_signed} \
-    din67_width ${din67_width} \
-    din67_signed ${din67_signed} \
-    din68_width ${din68_width} \
-    din68_signed ${din68_signed} \
-    din69_width ${din69_width} \
-    din69_signed ${din69_signed} \
-    din70_width ${din70_width} \
-    din70_signed ${din70_signed} \
-    din71_width ${din71_width} \
-    din71_signed ${din71_signed} \
-    din72_width ${din72_width} \
-    din72_signed ${din72_signed} \
-    din73_width ${din73_width} \
-    din73_signed ${din73_signed} \
-    din74_width ${din74_width} \
-    din74_signed ${din74_signed} \
-    din75_width ${din75_width} \
-    din75_signed ${din75_signed} \
-    din76_width ${din76_width} \
-    din76_signed ${din76_signed} \
-    din77_width ${din77_width} \
-    din77_signed ${din77_signed} \
-    din78_width ${din78_width} \
-    din78_signed ${din78_signed} \
-    din79_width ${din79_width} \
-    din79_signed ${din79_signed} \
-    din80_width ${din80_width} \
-    din80_signed ${din80_signed} \
-    din81_width ${din81_width} \
-    din81_signed ${din81_signed} \
-    din82_width ${din82_width} \
-    din82_signed ${din82_signed} \
-    din83_width ${din83_width} \
-    din83_signed ${din83_signed} \
-    din84_width ${din84_width} \
-    din84_signed ${din84_signed} \
-    din85_width ${din85_width} \
-    din85_signed ${din85_signed} \
-    din86_width ${din86_width} \
-    din86_signed ${din86_signed} \
-    din87_width ${din87_width} \
-    din87_signed ${din87_signed} \
-    din88_width ${din88_width} \
-    din88_signed ${din88_signed} \
-    din89_width ${din89_width} \
-    din89_signed ${din89_signed} \
-    din90_width ${din90_width} \
-    din90_signed ${din90_signed} \
-    din91_width ${din91_width} \
-    din91_signed ${din91_signed} \
-    din92_width ${din92_width} \
-    din92_signed ${din92_signed} \
-    din93_width ${din93_width} \
-    din93_signed ${din93_signed} \
-    din94_width ${din94_width} \
-    din94_signed ${din94_signed} \
-    din95_width ${din95_width} \
-    din95_signed ${din95_signed} \
-    din96_width ${din96_width} \
-    din96_signed ${din96_signed} \
-    din97_width ${din97_width} \
-    din97_signed ${din97_signed} \
-    din98_width ${din98_width} \
-    din98_signed ${din98_signed} \
-    din99_width ${din99_width} \
-    din99_signed ${din99_signed} \
-    din100_width ${din100_width} \
-    din100_signed ${din100_signed} \
-    din101_width ${din101_width} \
-    din101_signed ${din101_signed} \
-    din102_width ${din102_width} \
-    din102_signed ${din102_signed} \
-    din103_width ${din103_width} \
-    din103_signed ${din103_signed} \
-    din104_width ${din104_width} \
-    din104_signed ${din104_signed} \
-    din105_width ${din105_width} \
-    din105_signed ${din105_signed} \
-    din106_width ${din106_width} \
-    din106_signed ${din106_signed} \
-    din107_width ${din107_width} \
-    din107_signed ${din107_signed} \
-    din108_width ${din108_width} \
-    din108_signed ${din108_signed} \
-    din109_width ${din109_width} \
-    din109_signed ${din109_signed} \
-    din110_width ${din110_width} \
-    din110_signed ${din110_signed} \
-    din111_width ${din111_width} \
-    din111_signed ${din111_signed} \
-    din112_width ${din112_width} \
-    din112_signed ${din112_signed} \
-    din113_width ${din113_width} \
-    din113_signed ${din113_signed} \
-    din114_width ${din114_width} \
-    din114_signed ${din114_signed} \
-    din115_width ${din115_width} \
-    din115_signed ${din115_signed} \
-    din116_width ${din116_width} \
-    din116_signed ${din116_signed} \
-    din117_width ${din117_width} \
-    din117_signed ${din117_signed} \
-    din118_width ${din118_width} \
-    din118_signed ${din118_signed} \
-    din119_width ${din119_width} \
-    din119_signed ${din119_signed} \
-    din120_width ${din120_width} \
-    din120_signed ${din120_signed} \
-    din121_width ${din121_width} \
-    din121_signed ${din121_signed} \
-    din122_width ${din122_width} \
-    din122_signed ${din122_signed} \
-    din123_width ${din123_width} \
-    din123_signed ${din123_signed} \
-    din124_width ${din124_width} \
-    din124_signed ${din124_signed} \
-    din125_width ${din125_width} \
-    din125_signed ${din125_signed} \
-    din126_width ${din126_width} \
-    din126_signed ${din126_signed} \
-    din127_width ${din127_width} \
-    din127_signed ${din127_signed} \
-    din128_width ${din128_width} \
-    din128_signed ${din128_signed} \
-    dout_width ${dout_width} \
-}"
-} else {
-puts "@W \[IMPL-100\] Cannot find ap_gen_simcore_mux, check your AutoPilot builtin lib"
-}
-}
-
-
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler ${name}
-}
-
-
-set op mux
-set corename MuxnS
-if {${::AESL::PGuard_autocg_gen} && ${::AESL::PGuard_autocg_ipmgen}} {
-if {[info proc ::AESL_LIB_VIRTEX::xil_gen_pipemux] == "::AESL_LIB_VIRTEX::xil_gen_pipemux"} {
-eval "::AESL_LIB_VIRTEX::xil_gen_pipemux { \
-    id ${id} \
-    name ${name} \
-    corename ${corename} \
-    op ${op} \
-    reset_level 1 \
-    sync_rst true \
-    stage_num ${stage_num} \
-    max_latency ${max_latency} \
-    registered_input ${registered_input} \
-    din0_width ${din0_width} \
-    din0_signed ${din0_signed} \
-    din1_width ${din1_width} \
-    din1_signed ${din1_signed} \
-    din2_width ${din2_width} \
-    din2_signed ${din2_signed} \
-    din3_width ${din3_width} \
-    din3_signed ${din3_signed} \
-    din4_width ${din4_width} \
-    din4_signed ${din4_signed} \
-    din5_width ${din5_width} \
-    din5_signed ${din5_signed} \
-    din6_width ${din6_width} \
-    din6_signed ${din6_signed} \
-    din7_width ${din7_width} \
-    din7_signed ${din7_signed} \
-    din8_width ${din8_width} \
-    din8_signed ${din8_signed} \
-    din9_width ${din9_width} \
-    din9_signed ${din9_signed} \
-    din10_width ${din10_width} \
-    din10_signed ${din10_signed} \
-    din11_width ${din11_width} \
-    din11_signed ${din11_signed} \
-    din12_width ${din12_width} \
-    din12_signed ${din12_signed} \
-    din13_width ${din13_width} \
-    din13_signed ${din13_signed} \
-    din14_width ${din14_width} \
-    din14_signed ${din14_signed} \
-    din15_width ${din15_width} \
-    din15_signed ${din15_signed} \
-    din16_width ${din16_width} \
-    din16_signed ${din16_signed} \
-    din17_width ${din17_width} \
-    din17_signed ${din17_signed} \
-    din18_width ${din18_width} \
-    din18_signed ${din18_signed} \
-    din19_width ${din19_width} \
-    din19_signed ${din19_signed} \
-    din20_width ${din20_width} \
-    din20_signed ${din20_signed} \
-    din21_width ${din21_width} \
-    din21_signed ${din21_signed} \
-    din22_width ${din22_width} \
-    din22_signed ${din22_signed} \
-    din23_width ${din23_width} \
-    din23_signed ${din23_signed} \
-    din24_width ${din24_width} \
-    din24_signed ${din24_signed} \
-    din25_width ${din25_width} \
-    din25_signed ${din25_signed} \
-    din26_width ${din26_width} \
-    din26_signed ${din26_signed} \
-    din27_width ${din27_width} \
-    din27_signed ${din27_signed} \
-    din28_width ${din28_width} \
-    din28_signed ${din28_signed} \
-    din29_width ${din29_width} \
-    din29_signed ${din29_signed} \
-    din30_width ${din30_width} \
-    din30_signed ${din30_signed} \
-    din31_width ${din31_width} \
-    din31_signed ${din31_signed} \
-    din32_width ${din32_width} \
-    din32_signed ${din32_signed} \
-    din33_width ${din33_width} \
-    din33_signed ${din33_signed} \
-    din34_width ${din34_width} \
-    din34_signed ${din34_signed} \
-    din35_width ${din35_width} \
-    din35_signed ${din35_signed} \
-    din36_width ${din36_width} \
-    din36_signed ${din36_signed} \
-    din37_width ${din37_width} \
-    din37_signed ${din37_signed} \
-    din38_width ${din38_width} \
-    din38_signed ${din38_signed} \
-    din39_width ${din39_width} \
-    din39_signed ${din39_signed} \
-    din40_width ${din40_width} \
-    din40_signed ${din40_signed} \
-    din41_width ${din41_width} \
-    din41_signed ${din41_signed} \
-    din42_width ${din42_width} \
-    din42_signed ${din42_signed} \
-    din43_width ${din43_width} \
-    din43_signed ${din43_signed} \
-    din44_width ${din44_width} \
-    din44_signed ${din44_signed} \
-    din45_width ${din45_width} \
-    din45_signed ${din45_signed} \
-    din46_width ${din46_width} \
-    din46_signed ${din46_signed} \
-    din47_width ${din47_width} \
-    din47_signed ${din47_signed} \
-    din48_width ${din48_width} \
-    din48_signed ${din48_signed} \
-    din49_width ${din49_width} \
-    din49_signed ${din49_signed} \
-    din50_width ${din50_width} \
-    din50_signed ${din50_signed} \
-    din51_width ${din51_width} \
-    din51_signed ${din51_signed} \
-    din52_width ${din52_width} \
-    din52_signed ${din52_signed} \
-    din53_width ${din53_width} \
-    din53_signed ${din53_signed} \
-    din54_width ${din54_width} \
-    din54_signed ${din54_signed} \
-    din55_width ${din55_width} \
-    din55_signed ${din55_signed} \
-    din56_width ${din56_width} \
-    din56_signed ${din56_signed} \
-    din57_width ${din57_width} \
-    din57_signed ${din57_signed} \
-    din58_width ${din58_width} \
-    din58_signed ${din58_signed} \
-    din59_width ${din59_width} \
-    din59_signed ${din59_signed} \
-    din60_width ${din60_width} \
-    din60_signed ${din60_signed} \
-    din61_width ${din61_width} \
-    din61_signed ${din61_signed} \
-    din62_width ${din62_width} \
-    din62_signed ${din62_signed} \
-    din63_width ${din63_width} \
-    din63_signed ${din63_signed} \
-    din64_width ${din64_width} \
-    din64_signed ${din64_signed} \
-    din65_width ${din65_width} \
-    din65_signed ${din65_signed} \
-    din66_width ${din66_width} \
-    din66_signed ${din66_signed} \
-    din67_width ${din67_width} \
-    din67_signed ${din67_signed} \
-    din68_width ${din68_width} \
-    din68_signed ${din68_signed} \
-    din69_width ${din69_width} \
-    din69_signed ${din69_signed} \
-    din70_width ${din70_width} \
-    din70_signed ${din70_signed} \
-    din71_width ${din71_width} \
-    din71_signed ${din71_signed} \
-    din72_width ${din72_width} \
-    din72_signed ${din72_signed} \
-    din73_width ${din73_width} \
-    din73_signed ${din73_signed} \
-    din74_width ${din74_width} \
-    din74_signed ${din74_signed} \
-    din75_width ${din75_width} \
-    din75_signed ${din75_signed} \
-    din76_width ${din76_width} \
-    din76_signed ${din76_signed} \
-    din77_width ${din77_width} \
-    din77_signed ${din77_signed} \
-    din78_width ${din78_width} \
-    din78_signed ${din78_signed} \
-    din79_width ${din79_width} \
-    din79_signed ${din79_signed} \
-    din80_width ${din80_width} \
-    din80_signed ${din80_signed} \
-    din81_width ${din81_width} \
-    din81_signed ${din81_signed} \
-    din82_width ${din82_width} \
-    din82_signed ${din82_signed} \
-    din83_width ${din83_width} \
-    din83_signed ${din83_signed} \
-    din84_width ${din84_width} \
-    din84_signed ${din84_signed} \
-    din85_width ${din85_width} \
-    din85_signed ${din85_signed} \
-    din86_width ${din86_width} \
-    din86_signed ${din86_signed} \
-    din87_width ${din87_width} \
-    din87_signed ${din87_signed} \
-    din88_width ${din88_width} \
-    din88_signed ${din88_signed} \
-    din89_width ${din89_width} \
-    din89_signed ${din89_signed} \
-    din90_width ${din90_width} \
-    din90_signed ${din90_signed} \
-    din91_width ${din91_width} \
-    din91_signed ${din91_signed} \
-    din92_width ${din92_width} \
-    din92_signed ${din92_signed} \
-    din93_width ${din93_width} \
-    din93_signed ${din93_signed} \
-    din94_width ${din94_width} \
-    din94_signed ${din94_signed} \
-    din95_width ${din95_width} \
-    din95_signed ${din95_signed} \
-    din96_width ${din96_width} \
-    din96_signed ${din96_signed} \
-    din97_width ${din97_width} \
-    din97_signed ${din97_signed} \
-    din98_width ${din98_width} \
-    din98_signed ${din98_signed} \
-    din99_width ${din99_width} \
-    din99_signed ${din99_signed} \
-    din100_width ${din100_width} \
-    din100_signed ${din100_signed} \
-    din101_width ${din101_width} \
-    din101_signed ${din101_signed} \
-    din102_width ${din102_width} \
-    din102_signed ${din102_signed} \
-    din103_width ${din103_width} \
-    din103_signed ${din103_signed} \
-    din104_width ${din104_width} \
-    din104_signed ${din104_signed} \
-    din105_width ${din105_width} \
-    din105_signed ${din105_signed} \
-    din106_width ${din106_width} \
-    din106_signed ${din106_signed} \
-    din107_width ${din107_width} \
-    din107_signed ${din107_signed} \
-    din108_width ${din108_width} \
-    din108_signed ${din108_signed} \
-    din109_width ${din109_width} \
-    din109_signed ${din109_signed} \
-    din110_width ${din110_width} \
-    din110_signed ${din110_signed} \
-    din111_width ${din111_width} \
-    din111_signed ${din111_signed} \
-    din112_width ${din112_width} \
-    din112_signed ${din112_signed} \
-    din113_width ${din113_width} \
-    din113_signed ${din113_signed} \
-    din114_width ${din114_width} \
-    din114_signed ${din114_signed} \
-    din115_width ${din115_width} \
-    din115_signed ${din115_signed} \
-    din116_width ${din116_width} \
-    din116_signed ${din116_signed} \
-    din117_width ${din117_width} \
-    din117_signed ${din117_signed} \
-    din118_width ${din118_width} \
-    din118_signed ${din118_signed} \
-    din119_width ${din119_width} \
-    din119_signed ${din119_signed} \
-    din120_width ${din120_width} \
-    din120_signed ${din120_signed} \
-    din121_width ${din121_width} \
-    din121_signed ${din121_signed} \
-    din122_width ${din122_width} \
-    din122_signed ${din122_signed} \
-    din123_width ${din123_width} \
-    din123_signed ${din123_signed} \
-    din124_width ${din124_width} \
-    din124_signed ${din124_signed} \
-    din125_width ${din125_width} \
-    din125_signed ${din125_signed} \
-    din126_width ${din126_width} \
-    din126_signed ${din126_signed} \
-    din127_width ${din127_width} \
-    din127_signed ${din127_signed} \
-    din128_width ${din128_width} \
-    din128_signed ${din128_signed} \
-    dout_width ${dout_width} \
-}"
-} else {
-puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_pipemux, check your platform lib"
-}
-}
-
-
-set id 57
+set id 52
 set name network_mux_164_32_1_1
 set corename simcore_mux
 set op mux
@@ -1095,7 +157,7 @@ puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_pipemux, check your
 }
 
 
-set id 58
+set id 53
 set name network_mac_muladd_9ns_5ns_9s_13_1_1
 set corename simcore_mac
 set op mac
@@ -1177,6 +239,172 @@ puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_dsp48, check your p
 }
 
 
+# Memory (RAM/ROM)  definition:
+set ID 56
+set hasByteEnable 0
+set MemName pointwise_conv2d_fix_1_SeparableConv2D_1_b_s
+set CoreName ap_simcore_mem
+set PortList { 1 }
+set DataWd 13
+set AddrRange 8
+set AddrWd 3
+set TrueReset 0
+set IsROM 1
+set ROMData { "0001000111100" "1011010100100" "1100101001011" "0101000010101" "0100011011100" "0010000101101" "1101011000101" "1110000011010" }
+set HasInitializer 1
+set Initializer $ROMData
+set NumOfStage 2
+set MaxLatency -1
+set DelayBudget 3.254
+set ClkPeriod 10
+set RegisteredInput 0
+if {${::AESL::PGuard_simmodel_gen}} {
+if {[info proc ap_gen_simcore_mem] == "ap_gen_simcore_mem"} {
+    eval "ap_gen_simcore_mem { \
+    id ${ID} \
+    name ${MemName} \
+    corename ${CoreName}  \
+    op mem \
+    hasByteEnable ${hasByteEnable} \
+    reset_level 1 \
+    sync_rst true \
+    stage_num ${NumOfStage}  \
+    registered_input ${RegisteredInput} \
+    port_num 1 \
+    port_list \{${PortList}\} \
+    data_wd ${DataWd} \
+    addr_wd ${AddrWd} \
+    addr_range ${AddrRange} \
+    true_reset ${TrueReset} \
+    delay_budget ${DelayBudget} \
+    clk_period ${ClkPeriod} \
+    HasInitializer ${HasInitializer} \
+    rom_data \{${ROMData}\} \
+ } "
+} else {
+    puts "@W \[IMPL-102\] Cannot find ap_gen_simcore_mem, check your platform lib"
+}
+}
+
+
+if {${::AESL::PGuard_rtl_comp_handler}} {
+  ::AP::rtl_comp_handler $MemName
+}
+
+
+set CoreName ROM_nP
+if {${::AESL::PGuard_autocg_gen} && ${::AESL::PGuard_autocg_ipmgen}} {
+if {[info proc ::AESL_LIB_VIRTEX::xil_gen_ROM] == "::AESL_LIB_VIRTEX::xil_gen_ROM"} {
+    eval "::AESL_LIB_VIRTEX::xil_gen_ROM { \
+    id ${ID} \
+    name ${MemName} \
+    corename ${CoreName}  \
+    op mem \
+    hasByteEnable ${hasByteEnable} \
+    reset_level 1 \
+    sync_rst true \
+    stage_num ${NumOfStage}  \
+    registered_input ${RegisteredInput} \
+    port_num 1 \
+    port_list \{${PortList}\} \
+    data_wd ${DataWd} \
+    addr_wd ${AddrWd} \
+    addr_range ${AddrRange} \
+    true_reset ${TrueReset} \
+    delay_budget ${DelayBudget} \
+    clk_period ${ClkPeriod} \
+    HasInitializer ${HasInitializer} \
+    rom_data \{${ROMData}\} \
+ } "
+  } else {
+    puts "@W \[IMPL-104\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_ROM, check your platform lib"
+  }
+}
+
+
+# Memory (RAM/ROM)  definition:
+set ID 57
+set hasByteEnable 0
+set MemName pointwise_conv2d_fix_1_SeparableConv2D_1_w_s
+set CoreName ap_simcore_mem
+set PortList { 1 }
+set DataWd 15
+set AddrRange 128
+set AddrWd 7
+set TrueReset 0
+set IsROM 1
+set ROMData { "111010111100011" "110011101100011" "001100010011010" "001001000111110" "111111001001010" "110101111100010" "001110100010110" "000110011111100" "101110000000000" "110010000101110" "110001100000000" "001101011101101" "110110100100110" "101110100001111" "110001000001110" "111111001011001" "110001111110001" "001110010011010" "110100011001000" "111111010111101" "111010100011100" "111010111010110" "110011111011100" "110010010101011" "110101000000011" "001010010011011" "111100100001000" "111010111101011" "001101000111110" "000110100111100" "000111010111101" "110000010111001" "110110100001101" "000010101111000" "110000100100010" "001100000101110" "000010111110001" "001111100011110" "001100000001001" "000110110101100" "000001110000101" "001011101111110" "000000100001100" "111110001000011" "111010011100100" "111100100111100" "110001000011000" "001001000110110" "000011100011111" "000000010011010" "001010100110101" "111101000111011" "110000110011011" "110110101110101" "111100010101011" "111000111101010" "001010000111101" "001100011100100" "001100110101111" "110111001010000" "001101000100111" "111111101101000" "111101000010110" "001101101101011" "000110110011100" "111011001111010" "110001101100000" "000100001001011" "001110111110010" "101111100000110" "111011000111111" "111010000010001" "110100101100110" "111011101101111" "111010010100000" "110110111001110" "000011010001001" "010000010101011" "110010100001000" "111000110110100" "000010000001100" "111010011101111" "111101101011110" "001011101110000" "001001011000001" "001100000000000" "101100001100110" "110110101100000" "101101101001001" "000011011010101" "111011010110110" "111111000011001" "000010100101110" "001100100001100" "111001010110001" "110101111100000" "001010100000001" "000101000011001" "000100001101100" "111111010011111" "001100110010100" "001011111000000" "001001001011001" "000000100110111" "000101001111000" "000100110110100" "001001001001100" "001100000000110" "000111000010111" "000100000111011" "001010101101101" "000000001100000" "110001110011001" "110001110010110" "110110101011000" "110110000010110" "001001100101101" "110001001000110" "000000000010111" "000011110110101" "001011001000000" "001010110011001" "110011011001000" "110101100011001" "111100110110000" "111101001101001" "001110000111110" "111110000001000" }
+set HasInitializer 1
+set Initializer $ROMData
+set NumOfStage 2
+set MaxLatency -1
+set DelayBudget 3.254
+set ClkPeriod 10
+set RegisteredInput 0
+if {${::AESL::PGuard_simmodel_gen}} {
+if {[info proc ap_gen_simcore_mem] == "ap_gen_simcore_mem"} {
+    eval "ap_gen_simcore_mem { \
+    id ${ID} \
+    name ${MemName} \
+    corename ${CoreName}  \
+    op mem \
+    hasByteEnable ${hasByteEnable} \
+    reset_level 1 \
+    sync_rst true \
+    stage_num ${NumOfStage}  \
+    registered_input ${RegisteredInput} \
+    port_num 1 \
+    port_list \{${PortList}\} \
+    data_wd ${DataWd} \
+    addr_wd ${AddrWd} \
+    addr_range ${AddrRange} \
+    true_reset ${TrueReset} \
+    delay_budget ${DelayBudget} \
+    clk_period ${ClkPeriod} \
+    HasInitializer ${HasInitializer} \
+    rom_data \{${ROMData}\} \
+ } "
+} else {
+    puts "@W \[IMPL-102\] Cannot find ap_gen_simcore_mem, check your platform lib"
+}
+}
+
+
+if {${::AESL::PGuard_rtl_comp_handler}} {
+  ::AP::rtl_comp_handler $MemName
+}
+
+
+set CoreName ROM_nP
+if {${::AESL::PGuard_autocg_gen} && ${::AESL::PGuard_autocg_ipmgen}} {
+if {[info proc ::AESL_LIB_VIRTEX::xil_gen_ROM] == "::AESL_LIB_VIRTEX::xil_gen_ROM"} {
+    eval "::AESL_LIB_VIRTEX::xil_gen_ROM { \
+    id ${ID} \
+    name ${MemName} \
+    corename ${CoreName}  \
+    op mem \
+    hasByteEnable ${hasByteEnable} \
+    reset_level 1 \
+    sync_rst true \
+    stage_num ${NumOfStage}  \
+    registered_input ${RegisteredInput} \
+    port_num 1 \
+    port_list \{${PortList}\} \
+    data_wd ${DataWd} \
+    addr_wd ${AddrWd} \
+    addr_range ${AddrRange} \
+    true_reset ${TrueReset} \
+    delay_budget ${DelayBudget} \
+    clk_period ${ClkPeriod} \
+    HasInitializer ${HasInitializer} \
+    rom_data \{${ROMData}\} \
+ } "
+  } else {
+    puts "@W \[IMPL-104\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_ROM, check your platform lib"
+  }
+}
+
+
 # clear list
 if {${::AESL::PGuard_autoexp_gen}} {
     cg_default_interface_gen_dc_begin
@@ -1188,7 +416,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 63 \
+    id 58 \
     name input_r \
     reset_level 1 \
     sync_rst true \
@@ -1207,7 +435,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 64 \
+    id 59 \
     name output_r \
     reset_level 1 \
     sync_rst true \

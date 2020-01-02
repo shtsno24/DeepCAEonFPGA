@@ -191,7 +191,7 @@ network_mul_mul_10ns_5ns_15_1_1 #(
     .din0_WIDTH( 10 ),
     .din1_WIDTH( 5 ),
     .dout_WIDTH( 15 ))
-network_mul_mul_10ns_5ns_15_1_1_U94(
+network_mul_mul_10ns_5ns_15_1_1_U86(
     .din0(mul_ln6_1_fu_494_p0),
     .din1(mul_ln6_1_fu_494_p1),
     .dout(mul_ln6_1_fu_494_p2)
@@ -204,7 +204,7 @@ network_mac_muladd_8ns_5ns_4ns_12_1_1 #(
     .din1_WIDTH( 5 ),
     .din2_WIDTH( 4 ),
     .dout_WIDTH( 12 ))
-network_mac_muladd_8ns_5ns_4ns_12_1_1_U95(
+network_mac_muladd_8ns_5ns_4ns_12_1_1_U87(
     .din0(grp_fu_500_p0),
     .din1(grp_fu_500_p1),
     .din2(grp_fu_500_p2),
@@ -218,7 +218,7 @@ network_mac_muladd_9ns_6ns_5ns_14_1_1 #(
     .din1_WIDTH( 6 ),
     .din2_WIDTH( 5 ),
     .dout_WIDTH( 14 ))
-network_mac_muladd_9ns_6ns_5ns_14_1_1_U96(
+network_mac_muladd_9ns_6ns_5ns_14_1_1_U88(
     .din0(grp_fu_508_p0),
     .din1(grp_fu_508_p1),
     .din2(grp_fu_508_p2),

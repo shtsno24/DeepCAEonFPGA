@@ -79,7 +79,7 @@ puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_dsp48, check your p
 # Memory (RAM/ROM)  definition:
 set ID 16
 set hasByteEnable 0
-set MemName depthwise_conv2d_fix_SeparableConv2D_0_w_s
+set MemName depthwise_conv2d_fix_SeparableConv2D_0_w_1
 set CoreName ap_simcore_mem
 set PortList { 1 1 }
 set DataWd 15

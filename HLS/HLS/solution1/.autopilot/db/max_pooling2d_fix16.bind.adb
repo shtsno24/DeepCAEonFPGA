@@ -652,7 +652,7 @@
 					<Obj>
 						<type>0</type>
 						<id>17</id>
-						<name>zext_ln28_1_cast4</name>
+						<name>zext_ln28_2_cast4</name>
 						<fileName>../layers_c/max_pooling2d.cpp</fileName>
 						<fileDirectory>/home/shts/DeepCAEonFPGA/HLS</fileDirectory>
 						<lineNumber>9</lineNumber>
@@ -844,7 +844,7 @@
 					<Obj>
 						<type>0</type>
 						<id>21</id>
-						<name>empty_52</name>
+						<name>empty_49</name>
 						<fileName>../layers_c/max_pooling2d.cpp</fileName>
 						<fileDirectory>/home/shts/DeepCAEonFPGA/HLS</fileDirectory>
 						<lineNumber>9</lineNumber>
@@ -892,7 +892,7 @@
 					<Obj>
 						<type>0</type>
 						<id>22</id>
-						<name>empty_53</name>
+						<name>empty_50</name>
 						<fileName>../layers_c/max_pooling2d.cpp</fileName>
 						<fileDirectory>/home/shts/DeepCAEonFPGA/HLS</fileDirectory>
 						<lineNumber>9</lineNumber>
@@ -1616,7 +1616,7 @@
 					<Obj>
 						<type>0</type>
 						<id>38</id>
-						<name>zext_ln28_1</name>
+						<name>zext_ln28_3</name>
 						<fileName>../layers_c/max_pooling2d.cpp</fileName>
 						<fileDirectory>/home/shts/DeepCAEonFPGA/HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
@@ -1762,7 +1762,7 @@
 					<Obj>
 						<type>0</type>
 						<id>42</id>
-						<name>zext_ln28_2</name>
+						<name>zext_ln28_4</name>
 						<fileName>../layers_c/max_pooling2d.cpp</fileName>
 						<fileDirectory>/home/shts/DeepCAEonFPGA/HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
@@ -1860,7 +1860,7 @@
 					<Obj>
 						<type>0</type>
 						<id>44</id>
-						<name>zext_ln28_3</name>
+						<name>zext_ln28_5</name>
 						<fileName>../layers_c/max_pooling2d.cpp</fileName>
 						<fileDirectory>/home/shts/DeepCAEonFPGA/HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
@@ -2350,7 +2350,7 @@
 					<Obj>
 						<type>0</type>
 						<id>56</id>
-						<name>zext_ln28_4</name>
+						<name>zext_ln28_6</name>
 						<fileName>../layers_c/max_pooling2d.cpp</fileName>
 						<fileDirectory>/home/shts/DeepCAEonFPGA/HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
@@ -2993,7 +2993,7 @@
 					<Obj>
 						<type>0</type>
 						<id>72</id>
-						<name>zext_ln28_5</name>
+						<name>zext_ln28_7</name>
 						<fileName>../layers_c/max_pooling2d.cpp</fileName>
 						<fileDirectory>/home/shts/DeepCAEonFPGA/HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
@@ -3091,7 +3091,7 @@
 					<Obj>
 						<type>0</type>
 						<id>74</id>
-						<name>zext_ln28_6</name>
+						<name>zext_ln28_8</name>
 						<fileName>../layers_c/max_pooling2d.cpp</fileName>
 						<fileDirectory>/home/shts/DeepCAEonFPGA/HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
@@ -3727,7 +3727,7 @@
 					<Obj>
 						<type>0</type>
 						<id>89</id>
-						<name>zext_ln28_7</name>
+						<name>zext_ln28_9</name>
 						<fileName>../layers_c/max_pooling2d.cpp</fileName>
 						<fileDirectory>/home/shts/DeepCAEonFPGA/HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
@@ -3825,7 +3825,7 @@
 					<Obj>
 						<type>0</type>
 						<id>91</id>
-						<name>zext_ln28_8</name>
+						<name>zext_ln28_10</name>
 						<fileName>../layers_c/max_pooling2d.cpp</fileName>
 						<fileDirectory>/home/shts/DeepCAEonFPGA/HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
@@ -3922,7 +3922,7 @@
 					<Obj>
 						<type>0</type>
 						<id>93</id>
-						<name>zext_ln28_9</name>
+						<name>zext_ln28_11</name>
 						<fileName>../layers_c/max_pooling2d.cpp</fileName>
 						<fileDirectory>/home/shts/DeepCAEonFPGA/HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
@@ -4117,7 +4117,7 @@
 					<Obj>
 						<type>0</type>
 						<id>97</id>
-						<name>zext_ln28_10</name>
+						<name>zext_ln28_12</name>
 						<fileName>../layers_c/max_pooling2d.cpp</fileName>
 						<fileDirectory>/home/shts/DeepCAEonFPGA/HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
@@ -4214,7 +4214,7 @@
 					<Obj>
 						<type>0</type>
 						<id>99</id>
-						<name>zext_ln28_11</name>
+						<name>zext_ln28_13</name>
 						<fileName>../layers_c/max_pooling2d.cpp</fileName>
 						<fileDirectory>/home/shts/DeepCAEonFPGA/HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
@@ -4654,7 +4654,7 @@
 					<Obj>
 						<type>0</type>
 						<id>108</id>
-						<name>zext_ln28_12</name>
+						<name>zext_ln28_14</name>
 						<fileName>../layers_c/max_pooling2d.cpp</fileName>
 						<fileDirectory>/home/shts/DeepCAEonFPGA/HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
@@ -5094,7 +5094,7 @@
 					<Obj>
 						<type>0</type>
 						<id>117</id>
-						<name>zext_ln28_13</name>
+						<name>zext_ln28_15</name>
 						<fileName>../layers_c/max_pooling2d.cpp</fileName>
 						<fileDirectory>/home/shts/DeepCAEonFPGA/HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
@@ -10873,7 +10873,7 @@
 			</second>
 		</item>
 		<item>
-			<first>empty_52_fu_271</first>
+			<first>empty_49_fu_271</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -10881,7 +10881,7 @@
 			</second>
 		</item>
 		<item>
-			<first>empty_53_fu_275</first>
+			<first>empty_50_fu_275</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -11394,103 +11394,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln28_10_fu_495</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>97</item>
-			</second>
-		</item>
-		<item>
-			<first>zext_ln28_11_fu_504</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>99</item>
-			</second>
-		</item>
-		<item>
-			<first>zext_ln28_12_fu_548</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>108</item>
-			</second>
-		</item>
-		<item>
-			<first>zext_ln28_13_fu_653</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>117</item>
-			</second>
-		</item>
-		<item>
-			<first>zext_ln28_1_cast4_fu_255</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>17</item>
-			</second>
-		</item>
-		<item>
-			<first>zext_ln28_1_fu_313</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>38</item>
-			</second>
-		</item>
-		<item>
-			<first>zext_ln28_2_fu_599</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>42</item>
-			</second>
-		</item>
-		<item>
-			<first>zext_ln28_3_fu_330</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>44</item>
-			</second>
-		</item>
-		<item>
-			<first>zext_ln28_4_fu_364</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>56</item>
-			</second>
-		</item>
-		<item>
-			<first>zext_ln28_5_fu_631</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>72</item>
-			</second>
-		</item>
-		<item>
-			<first>zext_ln28_6_fu_415</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>74</item>
-			</second>
-		</item>
-		<item>
-			<first>zext_ln28_7_fu_650</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>89</item>
-			</second>
-		</item>
-		<item>
-			<first>zext_ln28_8_fu_475</first>
+			<first>zext_ln28_10_fu_475</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -11498,11 +11402,107 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln28_9_fu_484</first>
+			<first>zext_ln28_11_fu_484</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
 				<item>93</item>
+			</second>
+		</item>
+		<item>
+			<first>zext_ln28_12_fu_495</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>97</item>
+			</second>
+		</item>
+		<item>
+			<first>zext_ln28_13_fu_504</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>99</item>
+			</second>
+		</item>
+		<item>
+			<first>zext_ln28_14_fu_548</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>108</item>
+			</second>
+		</item>
+		<item>
+			<first>zext_ln28_15_fu_653</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>117</item>
+			</second>
+		</item>
+		<item>
+			<first>zext_ln28_2_cast4_fu_255</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>17</item>
+			</second>
+		</item>
+		<item>
+			<first>zext_ln28_3_fu_313</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>38</item>
+			</second>
+		</item>
+		<item>
+			<first>zext_ln28_4_fu_599</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>42</item>
+			</second>
+		</item>
+		<item>
+			<first>zext_ln28_5_fu_330</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>44</item>
+			</second>
+		</item>
+		<item>
+			<first>zext_ln28_6_fu_364</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>56</item>
+			</second>
+		</item>
+		<item>
+			<first>zext_ln28_7_fu_631</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>72</item>
+			</second>
+		</item>
+		<item>
+			<first>zext_ln28_8_fu_415</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>74</item>
+			</second>
+		</item>
+		<item>
+			<first>zext_ln28_9_fu_650</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>89</item>
 			</second>
 		</item>
 		<item>
@@ -12409,7 +12409,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln28_1_cast4_reg_690</first>
+			<first>zext_ln28_2_cast4_reg_690</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>

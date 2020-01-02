@@ -652,7 +652,7 @@
 					<Obj>
 						<type>0</type>
 						<id>17</id>
-						<name>zext_ln28_1_cast4</name>
+						<name>zext_ln28_2_cast4</name>
 						<fileName>../layers_c/max_pooling2d.cpp</fileName>
 						<fileDirectory>/home/shts/DeepCAEonFPGA/HLS</fileDirectory>
 						<lineNumber>9</lineNumber>
@@ -844,7 +844,7 @@
 					<Obj>
 						<type>0</type>
 						<id>21</id>
-						<name>empty_52</name>
+						<name>empty_49</name>
 						<fileName>../layers_c/max_pooling2d.cpp</fileName>
 						<fileDirectory>/home/shts/DeepCAEonFPGA/HLS</fileDirectory>
 						<lineNumber>9</lineNumber>
@@ -892,7 +892,7 @@
 					<Obj>
 						<type>0</type>
 						<id>22</id>
-						<name>empty_53</name>
+						<name>empty_50</name>
 						<fileName>../layers_c/max_pooling2d.cpp</fileName>
 						<fileDirectory>/home/shts/DeepCAEonFPGA/HLS</fileDirectory>
 						<lineNumber>9</lineNumber>
@@ -1616,7 +1616,7 @@
 					<Obj>
 						<type>0</type>
 						<id>38</id>
-						<name>zext_ln28_1</name>
+						<name>zext_ln28_3</name>
 						<fileName>../layers_c/max_pooling2d.cpp</fileName>
 						<fileDirectory>/home/shts/DeepCAEonFPGA/HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
@@ -1762,7 +1762,7 @@
 					<Obj>
 						<type>0</type>
 						<id>42</id>
-						<name>zext_ln28_2</name>
+						<name>zext_ln28_4</name>
 						<fileName>../layers_c/max_pooling2d.cpp</fileName>
 						<fileDirectory>/home/shts/DeepCAEonFPGA/HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
@@ -1860,7 +1860,7 @@
 					<Obj>
 						<type>0</type>
 						<id>44</id>
-						<name>zext_ln28_3</name>
+						<name>zext_ln28_5</name>
 						<fileName>../layers_c/max_pooling2d.cpp</fileName>
 						<fileDirectory>/home/shts/DeepCAEonFPGA/HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
@@ -2350,7 +2350,7 @@
 					<Obj>
 						<type>0</type>
 						<id>56</id>
-						<name>zext_ln28_4</name>
+						<name>zext_ln28_6</name>
 						<fileName>../layers_c/max_pooling2d.cpp</fileName>
 						<fileDirectory>/home/shts/DeepCAEonFPGA/HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
@@ -2993,7 +2993,7 @@
 					<Obj>
 						<type>0</type>
 						<id>72</id>
-						<name>zext_ln28_5</name>
+						<name>zext_ln28_7</name>
 						<fileName>../layers_c/max_pooling2d.cpp</fileName>
 						<fileDirectory>/home/shts/DeepCAEonFPGA/HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
@@ -3091,7 +3091,7 @@
 					<Obj>
 						<type>0</type>
 						<id>74</id>
-						<name>zext_ln28_6</name>
+						<name>zext_ln28_8</name>
 						<fileName>../layers_c/max_pooling2d.cpp</fileName>
 						<fileDirectory>/home/shts/DeepCAEonFPGA/HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
@@ -3727,7 +3727,7 @@
 					<Obj>
 						<type>0</type>
 						<id>89</id>
-						<name>zext_ln28_7</name>
+						<name>zext_ln28_9</name>
 						<fileName>../layers_c/max_pooling2d.cpp</fileName>
 						<fileDirectory>/home/shts/DeepCAEonFPGA/HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
@@ -3825,7 +3825,7 @@
 					<Obj>
 						<type>0</type>
 						<id>91</id>
-						<name>zext_ln28_8</name>
+						<name>zext_ln28_10</name>
 						<fileName>../layers_c/max_pooling2d.cpp</fileName>
 						<fileDirectory>/home/shts/DeepCAEonFPGA/HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
@@ -3922,7 +3922,7 @@
 					<Obj>
 						<type>0</type>
 						<id>93</id>
-						<name>zext_ln28_9</name>
+						<name>zext_ln28_11</name>
 						<fileName>../layers_c/max_pooling2d.cpp</fileName>
 						<fileDirectory>/home/shts/DeepCAEonFPGA/HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
@@ -4117,7 +4117,7 @@
 					<Obj>
 						<type>0</type>
 						<id>97</id>
-						<name>zext_ln28_10</name>
+						<name>zext_ln28_12</name>
 						<fileName>../layers_c/max_pooling2d.cpp</fileName>
 						<fileDirectory>/home/shts/DeepCAEonFPGA/HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
@@ -4214,7 +4214,7 @@
 					<Obj>
 						<type>0</type>
 						<id>99</id>
-						<name>zext_ln28_11</name>
+						<name>zext_ln28_13</name>
 						<fileName>../layers_c/max_pooling2d.cpp</fileName>
 						<fileDirectory>/home/shts/DeepCAEonFPGA/HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
@@ -4654,7 +4654,7 @@
 					<Obj>
 						<type>0</type>
 						<id>108</id>
-						<name>zext_ln28_12</name>
+						<name>zext_ln28_14</name>
 						<fileName>../layers_c/max_pooling2d.cpp</fileName>
 						<fileDirectory>/home/shts/DeepCAEonFPGA/HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
@@ -5094,7 +5094,7 @@
 					<Obj>
 						<type>0</type>
 						<id>117</id>
-						<name>zext_ln28_13</name>
+						<name>zext_ln28_15</name>
 						<fileName>../layers_c/max_pooling2d.cpp</fileName>
 						<fileDirectory>/home/shts/DeepCAEonFPGA/HLS</fileDirectory>
 						<lineNumber>28</lineNumber>

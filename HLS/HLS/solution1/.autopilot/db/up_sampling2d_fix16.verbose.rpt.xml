@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'up_sampling2d_fix16'" level="0">
-<item name = "Date">Tue Dec 31 23:42:42 2019
+<item name = "Date">Thu Jan  2 19:12:56 2020
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">HLS</item>
@@ -66,9 +66,9 @@
 </item>
 <item name = "DSP48E"><table name="" hasTotal="0">
 <keys size="3">Instance, Module, Expression</keys>
-<column name="network_mac_muladd_8ns_5ns_4ns_12_1_1_U95">network_mac_muladd_8ns_5ns_4ns_12_1_1, i0 + i1 * i2</column>
-<column name="network_mac_muladd_9ns_6ns_5ns_14_1_1_U96">network_mac_muladd_9ns_6ns_5ns_14_1_1, i0 + i1 * i2</column>
-<column name="network_mul_mul_10ns_5ns_15_1_1_U94">network_mul_mul_10ns_5ns_15_1_1, i0 * i1</column>
+<column name="network_mac_muladd_8ns_5ns_4ns_12_1_1_U87">network_mac_muladd_8ns_5ns_4ns_12_1_1, i0 + i1 * i2</column>
+<column name="network_mac_muladd_9ns_6ns_5ns_14_1_1_U88">network_mac_muladd_9ns_6ns_5ns_14_1_1, i0 + i1 * i2</column>
+<column name="network_mul_mul_10ns_5ns_15_1_1_U86">network_mul_mul_10ns_5ns_15_1_1, i0 * i1</column>
 </table>
 </item>
 <item name = "Memory"><table name="" hasTotal="1">

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'pointwise_conv2d_fix_2'" level="0">
-<item name = "Date">Tue Dec 31 23:40:45 2019
+<item name = "Date">Thu Jan  2 19:12:50 2020
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">HLS</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">3265, 3265, 3265, 3265, none</column>
+<column name="">3273, 3273, 3273, 3273, none</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,8 +35,8 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- Loop 1">3264, 3264, 408, -, -, 8, no</column>
-<column name=" + Loop 1.1">8, 8, 1, 1, 1, 8, yes</column>
+<column name="- Loop 1">3272, 3272, 409, -, -, 8, no</column>
+<column name=" + Loop 1.1">8, 8, 2, 1, 1, 8, yes</column>
 <column name=" + Loop 1.2">395, 395, 5, 1, 0, 392, yes</column>
 </table>
 </item>

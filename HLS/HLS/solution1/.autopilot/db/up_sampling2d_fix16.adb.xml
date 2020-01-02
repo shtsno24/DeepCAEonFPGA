@@ -1281,7 +1281,7 @@ hls_label_0:1  %empty_12 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 1568,
 
 <Node id="77" bw="32" op_0_bw="32" op_1_bw="0">
 <![CDATA[
-hls_label_0:30  %tmp_1 = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str)
+hls_label_0:30  %tmp_1 = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str31)
 
 ]]></Node>
 <StgValue><ssdm name="tmp_1"/></StgValue>
@@ -1297,7 +1297,7 @@ hls_label_0:30  %tmp_1 = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p
 
 <Node id="78" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-hls_label_0:31  call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind
+hls_label_0:31  call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str132) nounwind
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln17"/></StgValue>
@@ -1377,7 +1377,7 @@ hls_label_0:42  store i16 %input_load, i16* %output_addr, align 2
 
 <Node id="90" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32">
 <![CDATA[
-hls_label_0:43  %empty_13 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str, i32 %tmp_1)
+hls_label_0:43  %empty_13 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str31, i32 %tmp_1)
 
 ]]></Node>
 <StgValue><ssdm name="empty_13"/></StgValue>
@@ -1813,7 +1813,7 @@ hls_label_0:47  br label %.preheader
 </dataflow>
 <dataflow id="288" from="_ssdm_op_SpecRegionBegin" to="tmp_1" fromId="287" toId="85">
 </dataflow>
-<dataflow id="290" from="p_str" to="tmp_1" fromId="289" toId="85">
+<dataflow id="290" from="p_str31" to="tmp_1" fromId="289" toId="85">
 </dataflow>
 <dataflow id="292" from="_ssdm_op_SpecPipeline" to="specpipeline_ln17" fromId="291" toId="86">
 </dataflow>
@@ -1825,7 +1825,7 @@ hls_label_0:47  br label %.preheader
 </dataflow>
 <dataflow id="298" from="StgValue_297" to="specpipeline_ln17" fromId="297" toId="86">
 </dataflow>
-<dataflow id="300" from="p_str1" to="specpipeline_ln17" fromId="299" toId="86">
+<dataflow id="300" from="p_str132" to="specpipeline_ln17" fromId="299" toId="86">
 </dataflow>
 <dataflow id="301" from="input_addr" to="input_load" fromId="80" toId="87">
 </dataflow>
@@ -1843,7 +1843,7 @@ hls_label_0:47  br label %.preheader
 </dataflow>
 <dataflow id="309" from="_ssdm_op_SpecRegionEnd" to="empty_13" fromId="308" toId="91">
 </dataflow>
-<dataflow id="310" from="p_str" to="empty_13" fromId="289" toId="91">
+<dataflow id="310" from="p_str31" to="empty_13" fromId="289" toId="91">
 </dataflow>
 <dataflow id="311" from="tmp_1" to="empty_13" fromId="85" toId="91">
 </dataflow>

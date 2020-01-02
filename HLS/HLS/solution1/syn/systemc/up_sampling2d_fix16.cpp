@@ -35,20 +35,20 @@ const sc_lv<10> up_sampling2d_fix16::ap_const_lv10_1 = "1";
 const sc_lv<32> up_sampling2d_fix16::ap_const_lv32_3 = "11";
 
 up_sampling2d_fix16::up_sampling2d_fix16(sc_module_name name) : sc_module(name), mVcdFile(0) {
-    network_mul_mul_10ns_5ns_15_1_1_U94 = new network_mul_mul_10ns_5ns_15_1_1<1,1,10,5,15>("network_mul_mul_10ns_5ns_15_1_1_U94");
-    network_mul_mul_10ns_5ns_15_1_1_U94->din0(mul_ln6_1_fu_494_p0);
-    network_mul_mul_10ns_5ns_15_1_1_U94->din1(mul_ln6_1_fu_494_p1);
-    network_mul_mul_10ns_5ns_15_1_1_U94->dout(mul_ln6_1_fu_494_p2);
-    network_mac_muladd_8ns_5ns_4ns_12_1_1_U95 = new network_mac_muladd_8ns_5ns_4ns_12_1_1<1,1,8,5,4,12>("network_mac_muladd_8ns_5ns_4ns_12_1_1_U95");
-    network_mac_muladd_8ns_5ns_4ns_12_1_1_U95->din0(grp_fu_500_p0);
-    network_mac_muladd_8ns_5ns_4ns_12_1_1_U95->din1(grp_fu_500_p1);
-    network_mac_muladd_8ns_5ns_4ns_12_1_1_U95->din2(grp_fu_500_p2);
-    network_mac_muladd_8ns_5ns_4ns_12_1_1_U95->dout(grp_fu_500_p3);
-    network_mac_muladd_9ns_6ns_5ns_14_1_1_U96 = new network_mac_muladd_9ns_6ns_5ns_14_1_1<1,1,9,6,5,14>("network_mac_muladd_9ns_6ns_5ns_14_1_1_U96");
-    network_mac_muladd_9ns_6ns_5ns_14_1_1_U96->din0(grp_fu_508_p0);
-    network_mac_muladd_9ns_6ns_5ns_14_1_1_U96->din1(grp_fu_508_p1);
-    network_mac_muladd_9ns_6ns_5ns_14_1_1_U96->din2(grp_fu_508_p2);
-    network_mac_muladd_9ns_6ns_5ns_14_1_1_U96->dout(grp_fu_508_p3);
+    network_mul_mul_10ns_5ns_15_1_1_U86 = new network_mul_mul_10ns_5ns_15_1_1<1,1,10,5,15>("network_mul_mul_10ns_5ns_15_1_1_U86");
+    network_mul_mul_10ns_5ns_15_1_1_U86->din0(mul_ln6_1_fu_494_p0);
+    network_mul_mul_10ns_5ns_15_1_1_U86->din1(mul_ln6_1_fu_494_p1);
+    network_mul_mul_10ns_5ns_15_1_1_U86->dout(mul_ln6_1_fu_494_p2);
+    network_mac_muladd_8ns_5ns_4ns_12_1_1_U87 = new network_mac_muladd_8ns_5ns_4ns_12_1_1<1,1,8,5,4,12>("network_mac_muladd_8ns_5ns_4ns_12_1_1_U87");
+    network_mac_muladd_8ns_5ns_4ns_12_1_1_U87->din0(grp_fu_500_p0);
+    network_mac_muladd_8ns_5ns_4ns_12_1_1_U87->din1(grp_fu_500_p1);
+    network_mac_muladd_8ns_5ns_4ns_12_1_1_U87->din2(grp_fu_500_p2);
+    network_mac_muladd_8ns_5ns_4ns_12_1_1_U87->dout(grp_fu_500_p3);
+    network_mac_muladd_9ns_6ns_5ns_14_1_1_U88 = new network_mac_muladd_9ns_6ns_5ns_14_1_1<1,1,9,6,5,14>("network_mac_muladd_9ns_6ns_5ns_14_1_1_U88");
+    network_mac_muladd_9ns_6ns_5ns_14_1_1_U88->din0(grp_fu_508_p0);
+    network_mac_muladd_9ns_6ns_5ns_14_1_1_U88->din1(grp_fu_508_p1);
+    network_mac_muladd_9ns_6ns_5ns_14_1_1_U88->din2(grp_fu_508_p2);
+    network_mac_muladd_9ns_6ns_5ns_14_1_1_U88->dout(grp_fu_508_p3);
 
     SC_METHOD(thread_ap_clk_no_reset_);
     dont_initialize();
@@ -625,9 +625,9 @@ up_sampling2d_fix16::~up_sampling2d_fix16() {
     if (mVcdFile) 
         sc_close_vcd_trace_file(mVcdFile);
 
-    delete network_mul_mul_10ns_5ns_15_1_1_U94;
-    delete network_mac_muladd_8ns_5ns_4ns_12_1_1_U95;
-    delete network_mac_muladd_9ns_6ns_5ns_14_1_1_U96;
+    delete network_mul_mul_10ns_5ns_15_1_1_U86;
+    delete network_mac_muladd_8ns_5ns_4ns_12_1_1_U87;
+    delete network_mac_muladd_9ns_6ns_5ns_14_1_1_U88;
 }
 
 void up_sampling2d_fix16::thread_ap_clk_no_reset_() {

@@ -13,7 +13,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_depthwise_conv2d_fix_1_fu_20708/grp_depthwise_conv2d_fix_1_fu_20708_activity": {
+				"grp_depthwise_conv2d_fix_1_fu_455/grp_depthwise_conv2d_fix_1_fu_455_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -23,7 +23,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_depthwise_conv2d_fix_2_fu_20687/grp_depthwise_conv2d_fix_2_fu_20687_activity": {
+				"grp_depthwise_conv2d_fix_2_fu_431/grp_depthwise_conv2d_fix_2_fu_431_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -33,7 +33,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_depthwise_conv2d_fix_fu_20729/grp_depthwise_conv2d_fix_fu_20729_activity": {
+				"grp_depthwise_conv2d_fix_fu_479/grp_depthwise_conv2d_fix_fu_479_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -43,7 +43,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_max_pooling2d_fix16_fu_20755/grp_max_pooling2d_fix16_fu_20755_activity": {
+				"grp_max_pooling2d_fix16_fu_543/grp_max_pooling2d_fix16_fu_543_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -53,7 +53,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_padding2d_fix16_fu_20737/grp_padding2d_fix16_fu_20737_activity": {
+				"grp_padding2d_fix16_fu_525/grp_padding2d_fix16_fu_525_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -63,7 +63,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_pointwise_conv2d_fix_1_fu_20657/grp_pointwise_conv2d_fix_1_fu_20657_activity": {
+				"grp_pointwise_conv2d_fix_1_fu_487/grp_pointwise_conv2d_fix_1_fu_487_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -73,7 +73,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_pointwise_conv2d_fix_2_fu_20669/grp_pointwise_conv2d_fix_2_fu_20669_activity": {
+				"grp_pointwise_conv2d_fix_2_fu_507/grp_pointwise_conv2d_fix_2_fu_507_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -83,7 +83,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_pointwise_conv2d_fix_3_fu_20663/grp_pointwise_conv2d_fix_3_fu_20663_activity": {
+				"grp_pointwise_conv2d_fix_3_fu_497/grp_pointwise_conv2d_fix_3_fu_497_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -93,7 +93,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_pointwise_conv2d_fix_4_fu_20675/grp_pointwise_conv2d_fix_4_fu_20675_activity": {
+				"grp_pointwise_conv2d_fix_4_fu_517/grp_pointwise_conv2d_fix_4_fu_517_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -103,7 +103,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_pointwise_conv2d_fix_fu_20681/grp_pointwise_conv2d_fix_fu_20681_activity": {
+				"grp_pointwise_conv2d_fix_fu_585/grp_pointwise_conv2d_fix_fu_585_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -113,7 +113,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_up_sampling2d_fix16_fu_20776/grp_up_sampling2d_fix16_fu_20776_activity": {
+				"grp_up_sampling2d_fix16_fu_564/grp_up_sampling2d_fix16_fu_564_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},

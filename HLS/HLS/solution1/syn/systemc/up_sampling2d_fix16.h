@@ -47,9 +47,9 @@ struct up_sampling2d_fix16 : public sc_module {
 
     sc_trace_file* mVcdFile;
 
-    network_mul_mul_10ns_5ns_15_1_1<1,1,10,5,15>* network_mul_mul_10ns_5ns_15_1_1_U94;
-    network_mac_muladd_8ns_5ns_4ns_12_1_1<1,1,8,5,4,12>* network_mac_muladd_8ns_5ns_4ns_12_1_1_U95;
-    network_mac_muladd_9ns_6ns_5ns_14_1_1<1,1,9,6,5,14>* network_mac_muladd_9ns_6ns_5ns_14_1_1_U96;
+    network_mul_mul_10ns_5ns_15_1_1<1,1,10,5,15>* network_mul_mul_10ns_5ns_15_1_1_U86;
+    network_mac_muladd_8ns_5ns_4ns_12_1_1<1,1,8,5,4,12>* network_mac_muladd_8ns_5ns_4ns_12_1_1_U87;
+    network_mac_muladd_9ns_6ns_5ns_14_1_1<1,1,9,6,5,14>* network_mac_muladd_9ns_6ns_5ns_14_1_1_U88;
     sc_signal< sc_lv<4> > ap_CS_fsm;
     sc_signal< sc_logic > ap_CS_fsm_state1;
     sc_signal< sc_lv<15> > indvar_flatten31_reg_115;
