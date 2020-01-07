@@ -2,62 +2,62 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Tue Dec 31 23:09:40 2019
-# Process ID: 21037
-# Current directory: /home/shts/DeepCAEonFPGA/HLx/HLx.runs/impl_1
+# Start of session at: Tue Jan  7 15:11:48 2020
+# Process ID: 30097
+# Current directory: /home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/impl_1
 # Command line: vivado -log design_1_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
-# Log file: /home/shts/DeepCAEonFPGA/HLx/HLx.runs/impl_1/design_1_wrapper.vdi
-# Journal file: /home/shts/DeepCAEonFPGA/HLx/HLx.runs/impl_1/vivado.jou
+# Log file: /home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/impl_1/design_1_wrapper.vdi
+# Journal file: /home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/impl_1/vivado.jou
 #-----------------------------------------------------------
 source design_1_wrapper.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/shts/DeepCAEonFPGA/ip_generated'.
-INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/shts/DeepCAEonFPGA/pynq/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/masudalab/DeepCAEonFPGA/ip_generated'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/masudalab/DeepCAEonFPGA/pynq/ip'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2019.1/data/ip'.
 Command: link_design -top design_1_wrapper -part xc7z020clg400-1
 Design is defaulting to srcset: sources_1
 Design is defaulting to constrset: constrs_1
 INFO: [Device 21-403] Loading part xc7z020clg400-1
-INFO: [Project 1-454] Reading design checkpoint '/home/shts/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0.dcp' for cell 'design_1_i/axi_dma_0'
-INFO: [Project 1-454] Reading design checkpoint '/home/shts/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/design_1_axi_smc_0.dcp' for cell 'design_1_i/axi_smc'
-INFO: [Project 1-454] Reading design checkpoint '/home/shts/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.dcp' for cell 'design_1_i/clk_wiz_0'
-INFO: [Project 1-454] Reading design checkpoint '/home/shts/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_network_0_0/design_1_network_0_0.dcp' for cell 'design_1_i/network_0'
-INFO: [Project 1-454] Reading design checkpoint '/home/shts/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.dcp' for cell 'design_1_i/processing_system7_0'
-INFO: [Project 1-454] Reading design checkpoint '/home/shts/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.dcp' for cell 'design_1_i/rst_ps7_0_100M'
-INFO: [Project 1-454] Reading design checkpoint '/home/shts/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0.dcp' for cell 'design_1_i/ps7_0_axi_periph/xbar'
-INFO: [Project 1-454] Reading design checkpoint '/home/shts/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0.dcp' for cell 'design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc'
-INFO: [Project 1-454] Reading design checkpoint '/home/shts/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_s00_data_fifo_0/design_1_s00_data_fifo_0.dcp' for cell 'design_1_i/ps7_0_axi_periph/s00_couplers/s00_data_fifo'
-INFO: [Netlist 29-17] Analyzing 1097 Unisim elements for replacement
+INFO: [Project 1-454] Reading design checkpoint '/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0.dcp' for cell 'design_1_i/axi_dma_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/design_1_axi_smc_0.dcp' for cell 'design_1_i/axi_smc'
+INFO: [Project 1-454] Reading design checkpoint '/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.dcp' for cell 'design_1_i/clk_wiz_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_network_0_0/design_1_network_0_0.dcp' for cell 'design_1_i/network_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.dcp' for cell 'design_1_i/processing_system7_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.dcp' for cell 'design_1_i/rst_ps7_0_100M'
+INFO: [Project 1-454] Reading design checkpoint '/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0.dcp' for cell 'design_1_i/ps7_0_axi_periph/xbar'
+INFO: [Project 1-454] Reading design checkpoint '/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0.dcp' for cell 'design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint '/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_s00_data_fifo_0/design_1_s00_data_fifo_0.dcp' for cell 'design_1_i/ps7_0_axi_periph/s00_couplers/s00_data_fifo'
+INFO: [Netlist 29-17] Analyzing 1100 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2019.1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. design_1_i/clk_wiz_0/inst/clkin1_ibufg 
 Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
 WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'design_1_i/clk_wiz_0/clk_in1' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
-Parsing XDC File [/home/shts/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0.xdc] for cell 'design_1_i/axi_dma_0/U0'
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/shts/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0.xdc:52]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/shts/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0.xdc:56]
-WARNING: [Vivado_Tcl 4-919] Waiver ID 'CDC-1' -from list should not be empty. [/home/shts/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0.xdc:61]
-Finished Parsing XDC File [/home/shts/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0.xdc] for cell 'design_1_i/axi_dma_0/U0'
-Parsing XDC File [/home/shts/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc] for cell 'design_1_i/processing_system7_0/inst'
-Finished Parsing XDC File [/home/shts/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc] for cell 'design_1_i/processing_system7_0/inst'
-Parsing XDC File [/home/shts/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0_board.xdc] for cell 'design_1_i/rst_ps7_0_100M/U0'
-Finished Parsing XDC File [/home/shts/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0_board.xdc] for cell 'design_1_i/rst_ps7_0_100M/U0'
-Parsing XDC File [/home/shts/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.xdc] for cell 'design_1_i/rst_ps7_0_100M/U0'
-Finished Parsing XDC File [/home/shts/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.xdc] for cell 'design_1_i/rst_ps7_0_100M/U0'
-Parsing XDC File [/home/shts/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_1/bd_afc3_psr_aclk_0_board.xdc] for cell 'design_1_i/axi_smc/inst/clk_map/psr_aclk/U0'
-Finished Parsing XDC File [/home/shts/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_1/bd_afc3_psr_aclk_0_board.xdc] for cell 'design_1_i/axi_smc/inst/clk_map/psr_aclk/U0'
-Parsing XDC File [/home/shts/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_1/bd_afc3_psr_aclk_0.xdc] for cell 'design_1_i/axi_smc/inst/clk_map/psr_aclk/U0'
-Finished Parsing XDC File [/home/shts/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_1/bd_afc3_psr_aclk_0.xdc] for cell 'design_1_i/axi_smc/inst/clk_map/psr_aclk/U0'
-Parsing XDC File [/home/shts/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
-Finished Parsing XDC File [/home/shts/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
-Parsing XDC File [/home/shts/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/inst'
-INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/shts/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:57]
-INFO: [Timing 38-2] Deriving generated clocks [/home/shts/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:57]
-get_clocks: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 2328.664 ; gain = 513.812 ; free physical = 3758 ; free virtual = 9518
-Finished Parsing XDC File [/home/shts/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/inst'
-Parsing XDC File [/home/shts/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0_clocks.xdc] for cell 'design_1_i/axi_dma_0/U0'
-Finished Parsing XDC File [/home/shts/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0_clocks.xdc] for cell 'design_1_i/axi_dma_0/U0'
+Parsing XDC File [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0.xdc] for cell 'design_1_i/axi_dma_0/U0'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0.xdc:52]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0.xdc:56]
+WARNING: [Vivado_Tcl 4-919] Waiver ID 'CDC-1' -from list should not be empty. [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0.xdc:61]
+Finished Parsing XDC File [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0.xdc] for cell 'design_1_i/axi_dma_0/U0'
+Parsing XDC File [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc] for cell 'design_1_i/processing_system7_0/inst'
+Finished Parsing XDC File [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc] for cell 'design_1_i/processing_system7_0/inst'
+Parsing XDC File [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0_board.xdc] for cell 'design_1_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0_board.xdc] for cell 'design_1_i/rst_ps7_0_100M/U0'
+Parsing XDC File [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.xdc] for cell 'design_1_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.xdc] for cell 'design_1_i/rst_ps7_0_100M/U0'
+Parsing XDC File [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_1/bd_afc3_psr_aclk_0_board.xdc] for cell 'design_1_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_1/bd_afc3_psr_aclk_0_board.xdc] for cell 'design_1_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_1/bd_afc3_psr_aclk_0.xdc] for cell 'design_1_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_1/bd_afc3_psr_aclk_0.xdc] for cell 'design_1_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Finished Parsing XDC File [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Parsing XDC File [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:57]
+get_clocks: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2399.730 ; gain = 509.844 ; free physical = 4045 ; free virtual = 10220
+Finished Parsing XDC File [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Parsing XDC File [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0_clocks.xdc] for cell 'design_1_i/axi_dma_0/U0'
+Finished Parsing XDC File [/home/masudalab/DeepCAEonFPGA/HLx/HLx.srcs/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0_clocks.xdc] for cell 'design_1_i/axi_dma_0/U0'
 Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'design_1_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst'
 Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'design_1_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst'
 Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'design_1_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst'
@@ -109,7 +109,7 @@ Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_memory/t
 Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/s01_nodes/s01_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
 Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/s01_nodes/s01_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2344.680 ; gain = 0.000 ; free physical = 3785 ; free virtual = 9545
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2415.746 ; gain = 0.000 ; free physical = 4073 ; free virtual = 10247
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 233 instances were transformed.
   RAM16X1D => RAM32X1D (RAMD32, RAMD32): 2 instances
@@ -120,7 +120,7 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 
 22 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
 link_design completed successfully
-link_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 2344.680 ; gain = 941.910 ; free physical = 3785 ; free virtual = 9545
+link_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 2415.746 ; gain = 961.246 ; free physical = 4073 ; free virtual = 10247
 Command: opt_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
@@ -131,57 +131,57 @@ INFO: [DRC 23-27] Running DRC with 4 threads
 INFO: [Project 1-461] DRC finished with 0 Errors
 INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.93 . Memory (MB): peak = 2360.680 ; gain = 16.000 ; free physical = 3781 ; free virtual = 9541
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2431.746 ; gain = 16.000 ; free physical = 4068 ; free virtual = 10242
 
 Starting Cache Timing Information Task
 INFO: [Timing 38-35] Done setting XDC timing constraints.
-Ending Cache Timing Information Task | Checksum: 153a6b0b0
+Ending Cache Timing Information Task | Checksum: 134fd6426
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.67 . Memory (MB): peak = 2367.617 ; gain = 6.938 ; free physical = 3754 ; free virtual = 9514
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.75 . Memory (MB): peak = 2442.652 ; gain = 10.906 ; free physical = 4041 ; free virtual = 10215
 
 Starting Logic Optimization Task
 
 Phase 1 Retarget
 INFO: [Opt 31-138] Pushed 15 inverter(s) to 94 load pin(s).
 INFO: [Opt 31-49] Retargeted 0 cell(s).
-Phase 1 Retarget | Checksum: 1742e9179
+Phase 1 Retarget | Checksum: 224f1ff70
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.99 . Memory (MB): peak = 2478.555 ; gain = 0.000 ; free physical = 3666 ; free virtual = 9427
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2548.621 ; gain = 0.000 ; free physical = 3953 ; free virtual = 10128
 INFO: [Opt 31-389] Phase Retarget created 102 cells and removed 276 cells
 INFO: [Opt 31-1021] In phase Retarget, 30 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 
 Phase 2 Constant propagation
 INFO: [Opt 31-138] Pushed 1 inverter(s) to 1 load pin(s).
-Phase 2 Constant propagation | Checksum: 23f8181ee
+Phase 2 Constant propagation | Checksum: 1ad731303
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2478.555 ; gain = 0.000 ; free physical = 3666 ; free virtual = 9427
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2548.621 ; gain = 0.000 ; free physical = 3953 ; free virtual = 10128
 INFO: [Opt 31-389] Phase Constant propagation created 25 cells and removed 227 cells
 INFO: [Opt 31-1021] In phase Constant propagation, 40 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 
 Phase 3 Sweep
-Phase 3 Sweep | Checksum: 1c46611a0
+Phase 3 Sweep | Checksum: 17e3ca77c
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 2478.555 ; gain = 0.000 ; free physical = 3664 ; free virtual = 9424
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2548.621 ; gain = 0.000 ; free physical = 3951 ; free virtual = 10126
 INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 1848 cells
 INFO: [Opt 31-1021] In phase Sweep, 50 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 
 Phase 4 BUFG optimization
-Phase 4 BUFG optimization | Checksum: 1c46611a0
+Phase 4 BUFG optimization | Checksum: 17e3ca77c
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2478.555 ; gain = 0.000 ; free physical = 3665 ; free virtual = 9425
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 2548.621 ; gain = 0.000 ; free physical = 3951 ; free virtual = 10126
 INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
 
 Phase 5 Shift Register Optimization
 INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
-Phase 5 Shift Register Optimization | Checksum: 1c46611a0
+Phase 5 Shift Register Optimization | Checksum: 17e3ca77c
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2478.555 ; gain = 0.000 ; free physical = 3665 ; free virtual = 9425
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 2548.621 ; gain = 0.000 ; free physical = 3951 ; free virtual = 10126
 INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
 
 Phase 6 Post Processing Netlist
-Phase 6 Post Processing Netlist | Checksum: 2000ee3bf
+Phase 6 Post Processing Netlist | Checksum: 22d300972
 
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 2478.555 ; gain = 0.000 ; free physical = 3665 ; free virtual = 9425
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2548.621 ; gain = 0.000 ; free physical = 3951 ; free virtual = 10126
 INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 1 cells
 INFO: [Opt 31-1021] In phase Post Processing Netlist, 30 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 Opt_design Change Summary
@@ -203,17 +203,17 @@ Opt_design Change Summary
 
 Starting Connectivity Check Task
 
-Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2478.555 ; gain = 0.000 ; free physical = 3665 ; free virtual = 9425
-Ending Logic Optimization Task | Checksum: 1b77c9464
+Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2548.621 ; gain = 0.000 ; free physical = 3951 ; free virtual = 10126
+Ending Logic Optimization Task | Checksum: 26838f6f1
 
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 2478.555 ; gain = 0.000 ; free physical = 3665 ; free virtual = 9425
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2548.621 ; gain = 0.000 ; free physical = 3951 ; free virtual = 10126
 
 Starting Power Optimization Task
 INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 INFO: [Pwropt 34-9] Applying IDT optimizations ...
 INFO: [Pwropt 34-10] Applying ODC optimizations ...
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.792 | TNS=-20.324 |
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.605 | TNS=-11.431 |
 Running Vector-less Activity Propagation...
 
 Finished Running Vector-less Activity Propagation
@@ -223,40 +223,40 @@ Starting PowerOpt Patch Enables Task
 INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 26 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
 INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
 Number of BRAM Ports augmented: 5 newly gated: 0 Total Ports: 52
-Ending PowerOpt Patch Enables Task | Checksum: 1263039ae
+Ending PowerOpt Patch Enables Task | Checksum: 1e4f3fd6d
 
-Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.14 . Memory (MB): peak = 2800.406 ; gain = 0.000 ; free physical = 3613 ; free virtual = 9373
-Ending Power Optimization Task | Checksum: 1263039ae
+Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.14 . Memory (MB): peak = 2872.434 ; gain = 0.000 ; free physical = 3904 ; free virtual = 10079
+Ending Power Optimization Task | Checksum: 1e4f3fd6d
 
-Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 2800.406 ; gain = 321.852 ; free physical = 3632 ; free virtual = 9392
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 2872.434 ; gain = 323.812 ; free physical = 3922 ; free virtual = 10097
 
 Starting Final Cleanup Task
-Ending Final Cleanup Task | Checksum: 1263039ae
+Ending Final Cleanup Task | Checksum: 1e4f3fd6d
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2800.406 ; gain = 0.000 ; free physical = 3632 ; free virtual = 9392
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2872.434 ; gain = 0.000 ; free physical = 3922 ; free virtual = 10097
 
 Starting Netlist Obfuscation Task
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2800.406 ; gain = 0.000 ; free physical = 3632 ; free virtual = 9392
-Ending Netlist Obfuscation Task | Checksum: 17bce07c5
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2872.434 ; gain = 0.000 ; free physical = 3922 ; free virtual = 10097
+Ending Netlist Obfuscation Task | Checksum: 1ae26abad
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2800.406 ; gain = 0.000 ; free physical = 3632 ; free virtual = 9392
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2872.434 ; gain = 0.000 ; free physical = 3922 ; free virtual = 10097
 INFO: [Common 17-83] Releasing license: Implementation
 49 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
 opt_design completed successfully
-opt_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:13 . Memory (MB): peak = 2800.406 ; gain = 455.727 ; free physical = 3632 ; free virtual = 9392
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2800.406 ; gain = 0.000 ; free physical = 3632 ; free virtual = 9392
+opt_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:15 . Memory (MB): peak = 2872.434 ; gain = 456.688 ; free physical = 3922 ; free virtual = 10097
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2872.434 ; gain = 0.000 ; free physical = 3922 ; free virtual = 10097
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2800.406 ; gain = 0.000 ; free physical = 3624 ; free virtual = 9388
-INFO: [Common 17-1381] The checkpoint '/home/shts/DeepCAEonFPGA/HLx/HLx.runs/impl_1/design_1_wrapper_opt.dcp' has been generated.
+Write XDEF Complete: Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2872.434 ; gain = 0.000 ; free physical = 3916 ; free virtual = 10094
+INFO: [Common 17-1381] The checkpoint '/home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/impl_1/design_1_wrapper_opt.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_drc -file design_1_wrapper_drc_opted.rpt -pb design_1_wrapper_drc_opted.pb -rpx design_1_wrapper_drc_opted.rpx
 Command: report_drc -file design_1_wrapper_drc_opted.rpt -pb design_1_wrapper_drc_opted.pb -rpx design_1_wrapper_drc_opted.rpx
 INFO: [IP_Flow 19-1839] IP Catalog is up to date.
 INFO: [DRC 23-27] Running DRC with 4 threads
-INFO: [Coretcl 2-168] The results of DRC are in file /home/shts/DeepCAEonFPGA/HLx/HLx.runs/impl_1/design_1_wrapper_drc_opted.rpt.
+INFO: [Coretcl 2-168] The results of DRC are in file /home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/impl_1/design_1_wrapper_drc_opted.rpt.
 report_drc completed successfully
 Command: place_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
@@ -275,37 +275,37 @@ INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 
 Phase 1 Placer Initialization
 
 Phase 1.1 Placer Initialization Netlist Sorting
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2848.430 ; gain = 0.000 ; free physical = 3627 ; free virtual = 9393
-Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 113eea8df
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2920.457 ; gain = 0.000 ; free physical = 3916 ; free virtual = 10097
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 1930f1c0f
 
-Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2848.430 ; gain = 0.000 ; free physical = 3627 ; free virtual = 9393
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2848.430 ; gain = 0.000 ; free physical = 3627 ; free virtual = 9393
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2920.457 ; gain = 0.000 ; free physical = 3916 ; free virtual = 10097
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2920.457 ; gain = 0.000 ; free physical = 3916 ; free virtual = 10097
 
 Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
 INFO: [Timing 38-35] Done setting XDC timing constraints.
-Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 694ffdc8
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: c9cf9283
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2848.430 ; gain = 0.000 ; free physical = 3599 ; free virtual = 9365
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 2920.457 ; gain = 0.000 ; free physical = 3891 ; free virtual = 10072
 
 Phase 1.3 Build Placer Netlist Model
-Phase 1.3 Build Placer Netlist Model | Checksum: 198ec81ae
+Phase 1.3 Build Placer Netlist Model | Checksum: 166e2d696
 
-Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 2848.430 ; gain = 0.000 ; free physical = 3566 ; free virtual = 9332
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 2920.457 ; gain = 0.000 ; free physical = 3858 ; free virtual = 10039
 
 Phase 1.4 Constrain Clocks/Macros
-Phase 1.4 Constrain Clocks/Macros | Checksum: 198ec81ae
+Phase 1.4 Constrain Clocks/Macros | Checksum: 166e2d696
 
-Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 2848.430 ; gain = 0.000 ; free physical = 3566 ; free virtual = 9332
-Phase 1 Placer Initialization | Checksum: 198ec81ae
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 2920.457 ; gain = 0.000 ; free physical = 3858 ; free virtual = 10039
+Phase 1 Placer Initialization | Checksum: 166e2d696
 
-Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 2848.430 ; gain = 0.000 ; free physical = 3566 ; free virtual = 9332
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 2920.457 ; gain = 0.000 ; free physical = 3858 ; free virtual = 10039
 
 Phase 2 Global Placement
 
 Phase 2.1 Floorplanning
-Phase 2.1 Floorplanning | Checksum: d50c161d
+Phase 2.1 Floorplanning | Checksum: 181cf5af5
 
-Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 2848.430 ; gain = 0.000 ; free physical = 3552 ; free virtual = 9318
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 2920.457 ; gain = 0.000 ; free physical = 3843 ; free virtual = 10024
 
 Phase 2.2 Global Placement Core
 
@@ -313,41 +313,37 @@ Phase 2.2.1 Physical Synthesis In Placer
 INFO: [Physopt 32-65] No nets found for high-fanout optimization.
 INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
 INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
-INFO: [Physopt 32-117] Net design_1_i/network_0/inst/grp_pointwise_conv2d_fix_2_fu_495/ADDRARDADDR[9] could not be optimized because driver design_1_i/network_0/inst/grp_pointwise_conv2d_fix_2_fu_495/ram_reg_0_i_7 could not be replicated
-INFO: [Physopt 32-117] Net design_1_i/network_0/inst/grp_pointwise_conv2d_fix_2_fu_495/ADDRARDADDR[10] could not be optimized because driver design_1_i/network_0/inst/grp_pointwise_conv2d_fix_2_fu_495/ram_reg_0_i_6 could not be replicated
-INFO: [Physopt 32-117] Net design_1_i/network_0/inst/grp_pointwise_conv2d_fix_2_fu_495/ADDRARDADDR[8] could not be optimized because driver design_1_i/network_0/inst/grp_pointwise_conv2d_fix_2_fu_495/ram_reg_0_i_8 could not be replicated
-INFO: [Physopt 32-117] Net design_1_i/network_0/inst/grp_depthwise_conv2d_fix_1_fu_451/ap_CS_fsm_reg[5]_4[10] could not be optimized because driver design_1_i/network_0/inst/grp_depthwise_conv2d_fix_1_fu_451/ram_reg_0_i_20 could not be replicated
-INFO: [Physopt 32-117] Net design_1_i/network_0/inst/grp_pointwise_conv2d_fix_2_fu_495/ADDRARDADDR[7] could not be optimized because driver design_1_i/network_0/inst/grp_pointwise_conv2d_fix_2_fu_495/ram_reg_0_i_9 could not be replicated
-INFO: [Physopt 32-117] Net design_1_i/network_0/inst/grp_pointwise_conv2d_fix_2_fu_495/ADDRARDADDR[6] could not be optimized because driver design_1_i/network_0/inst/grp_pointwise_conv2d_fix_2_fu_495/ram_reg_0_i_10 could not be replicated
-INFO: [Physopt 32-117] Net design_1_i/network_0/inst/grp_depthwise_conv2d_fix_1_fu_451/ap_CS_fsm_reg[5]_4[9] could not be optimized because driver design_1_i/network_0/inst/grp_depthwise_conv2d_fix_1_fu_451/ram_reg_0_i_21 could not be replicated
-INFO: [Physopt 32-117] Net design_1_i/network_0/inst/grp_depthwise_conv2d_fix_1_fu_451/ap_CS_fsm_reg[5]_4[8] could not be optimized because driver design_1_i/network_0/inst/grp_depthwise_conv2d_fix_1_fu_451/ram_reg_0_i_22 could not be replicated
-INFO: [Physopt 32-117] Net design_1_i/network_0/inst/grp_pointwise_conv2d_fix_2_fu_495/ADDRARDADDR[3] could not be optimized because driver design_1_i/network_0/inst/grp_pointwise_conv2d_fix_2_fu_495/ram_reg_0_i_13 could not be replicated
-INFO: [Physopt 32-117] Net design_1_i/network_0/inst/grp_pointwise_conv2d_fix_2_fu_495/ADDRARDADDR[5] could not be optimized because driver design_1_i/network_0/inst/grp_pointwise_conv2d_fix_2_fu_495/ram_reg_0_i_11 could not be replicated
-INFO: [Physopt 32-117] Net design_1_i/network_0/inst/grp_depthwise_conv2d_fix_1_fu_451/ap_CS_fsm_reg[5]_4[7] could not be optimized because driver design_1_i/network_0/inst/grp_depthwise_conv2d_fix_1_fu_451/ram_reg_0_i_23 could not be replicated
-INFO: [Physopt 32-117] Net design_1_i/network_0/inst/grp_pointwise_conv2d_fix_2_fu_495/ADDRARDADDR[4] could not be optimized because driver design_1_i/network_0/inst/grp_pointwise_conv2d_fix_2_fu_495/ram_reg_0_i_12 could not be replicated
-INFO: [Physopt 32-117] Net design_1_i/network_0/inst/grp_pointwise_conv2d_fix_2_fu_495/ADDRARDADDR[1] could not be optimized because driver design_1_i/network_0/inst/grp_pointwise_conv2d_fix_2_fu_495/ram_reg_0_i_15 could not be replicated
-INFO: [Physopt 32-117] Net design_1_i/network_0/inst/grp_pointwise_conv2d_fix_2_fu_495/ADDRARDADDR[2] could not be optimized because driver design_1_i/network_0/inst/grp_pointwise_conv2d_fix_2_fu_495/ram_reg_0_i_14 could not be replicated
-INFO: [Physopt 32-117] Net design_1_i/network_0/inst/grp_depthwise_conv2d_fix_1_fu_451/ap_CS_fsm_reg[5]_4[6] could not be optimized because driver design_1_i/network_0/inst/grp_depthwise_conv2d_fix_1_fu_451/ram_reg_0_i_24 could not be replicated
-INFO: [Physopt 32-117] Net design_1_i/network_0/inst/grp_depthwise_conv2d_fix_fu_475/ADDRBWRADDR[0] could not be optimized because driver design_1_i/network_0/inst/grp_depthwise_conv2d_fix_fu_475/ram_reg_0_i_19__0 could not be replicated
-INFO: [Physopt 32-117] Net design_1_i/network_0/inst/grp_depthwise_conv2d_fix_1_fu_451/ap_CS_fsm_reg[5]_4[5] could not be optimized because driver design_1_i/network_0/inst/grp_depthwise_conv2d_fix_1_fu_451/ram_reg_0_i_25 could not be replicated
-INFO: [Physopt 32-117] Net design_1_i/network_0/inst/grp_pointwise_conv2d_fix_2_fu_495/ADDRARDADDR[0] could not be optimized because driver design_1_i/network_0/inst/grp_pointwise_conv2d_fix_2_fu_495/ram_reg_0_i_16 could not be replicated
-INFO: [Physopt 32-117] Net design_1_i/network_0/inst/grp_pointwise_conv2d_fix_2_fu_495/ADDRARDADDR[11] could not be optimized because driver design_1_i/network_0/inst/grp_pointwise_conv2d_fix_2_fu_495/ram_reg_0_i_5 could not be replicated
+INFO: [Physopt 32-117] Net design_1_i/network_0/inst/grp_pointwise_conv2d_fix_2_fu_491/ADDRARDADDR[10] could not be optimized because driver design_1_i/network_0/inst/grp_pointwise_conv2d_fix_2_fu_491/ram_reg_0_i_6 could not be replicated
+INFO: [Physopt 32-117] Net design_1_i/network_0/inst/grp_pointwise_conv2d_fix_2_fu_491/ADDRARDADDR[9] could not be optimized because driver design_1_i/network_0/inst/grp_pointwise_conv2d_fix_2_fu_491/ram_reg_0_i_7 could not be replicated
+INFO: [Physopt 32-117] Net design_1_i/network_0/inst/grp_pointwise_conv2d_fix_2_fu_491/ADDRARDADDR[8] could not be optimized because driver design_1_i/network_0/inst/grp_pointwise_conv2d_fix_2_fu_491/ram_reg_0_i_8 could not be replicated
+INFO: [Physopt 32-117] Net design_1_i/network_0/inst/grp_depthwise_conv2d_fix_1_fu_447/ap_CS_fsm_reg[5]_4[9] could not be optimized because driver design_1_i/network_0/inst/grp_depthwise_conv2d_fix_1_fu_447/ram_reg_0_i_21 could not be replicated
+INFO: [Physopt 32-117] Net design_1_i/network_0/inst/grp_depthwise_conv2d_fix_1_fu_447/ap_CS_fsm_reg[5]_4[10] could not be optimized because driver design_1_i/network_0/inst/grp_depthwise_conv2d_fix_1_fu_447/ram_reg_0_i_20 could not be replicated
+INFO: [Physopt 32-117] Net design_1_i/network_0/inst/grp_pointwise_conv2d_fix_2_fu_491/ADDRARDADDR[7] could not be optimized because driver design_1_i/network_0/inst/grp_pointwise_conv2d_fix_2_fu_491/ram_reg_0_i_9 could not be replicated
+INFO: [Physopt 32-117] Net design_1_i/network_0/inst/grp_depthwise_conv2d_fix_1_fu_447/ap_CS_fsm_reg[5]_4[8] could not be optimized because driver design_1_i/network_0/inst/grp_depthwise_conv2d_fix_1_fu_447/ram_reg_0_i_22 could not be replicated
+INFO: [Physopt 32-117] Net design_1_i/network_0/inst/grp_pointwise_conv2d_fix_2_fu_491/ADDRARDADDR[6] could not be optimized because driver design_1_i/network_0/inst/grp_pointwise_conv2d_fix_2_fu_491/ram_reg_0_i_10 could not be replicated
+INFO: [Physopt 32-117] Net design_1_i/network_0/inst/grp_depthwise_conv2d_fix_1_fu_447/ap_CS_fsm_reg[5]_4[7] could not be optimized because driver design_1_i/network_0/inst/grp_depthwise_conv2d_fix_1_fu_447/ram_reg_0_i_23 could not be replicated
+INFO: [Physopt 32-117] Net design_1_i/network_0/inst/grp_pointwise_conv2d_fix_2_fu_491/ADDRARDADDR[11] could not be optimized because driver design_1_i/network_0/inst/grp_pointwise_conv2d_fix_2_fu_491/ram_reg_0_i_5 could not be replicated
+INFO: [Physopt 32-117] Net design_1_i/network_0/inst/grp_depthwise_conv2d_fix_1_fu_447/ap_CS_fsm_reg[5]_4[6] could not be optimized because driver design_1_i/network_0/inst/grp_depthwise_conv2d_fix_1_fu_447/ram_reg_0_i_24 could not be replicated
+INFO: [Physopt 32-117] Net design_1_i/network_0/inst/grp_pointwise_conv2d_fix_2_fu_491/ADDRARDADDR[3] could not be optimized because driver design_1_i/network_0/inst/grp_pointwise_conv2d_fix_2_fu_491/ram_reg_0_i_13 could not be replicated
+INFO: [Physopt 32-117] Net design_1_i/network_0/inst/grp_pointwise_conv2d_fix_2_fu_491/ADDRARDADDR[5] could not be optimized because driver design_1_i/network_0/inst/grp_pointwise_conv2d_fix_2_fu_491/ram_reg_0_i_11 could not be replicated
+INFO: [Physopt 32-117] Net design_1_i/network_0/inst/grp_depthwise_conv2d_fix_1_fu_447/ap_CS_fsm_reg[5]_4[5] could not be optimized because driver design_1_i/network_0/inst/grp_depthwise_conv2d_fix_1_fu_447/ram_reg_0_i_25 could not be replicated
+INFO: [Physopt 32-117] Net design_1_i/network_0/inst/grp_pointwise_conv2d_fix_2_fu_491/ADDRARDADDR[2] could not be optimized because driver design_1_i/network_0/inst/grp_pointwise_conv2d_fix_2_fu_491/ram_reg_0_i_14 could not be replicated
 INFO: [Physopt 32-68] No nets found for critical-cell optimization.
 INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
 INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
 INFO: [Physopt 32-457] Pass 1. Identified 3 candidate cells for DSP register optimization.
-INFO: [Physopt 32-665] Processed cell design_1_i/network_0/inst/grp_max_pooling2d_fix16_fu_525/add_ln26_fu_479_p2. 8 registers were pushed out.
-INFO: [Physopt 32-665] Processed cell design_1_i/network_0/inst/grp_max_pooling2d_fix16_fu_525/add_ln26_1_fu_499_p2. 8 registers were pushed out.
-INFO: [Physopt 32-665] Processed cell design_1_i/network_0/inst/grp_depthwise_conv2d_fix_2_fu_427/tmp10_0_0_mid2_reg_1332_reg. 9 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell design_1_i/network_0/inst/grp_max_pooling2d_fix16_fu_521/add_ln28_fu_479_p2. 8 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell design_1_i/network_0/inst/grp_max_pooling2d_fix16_fu_521/add_ln28_1_fu_499_p2. 8 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell design_1_i/network_0/inst/grp_depthwise_conv2d_fix_2_fu_423/tmp10_0_0_mid2_reg_1332_reg. 9 registers were pushed out.
 INFO: [Physopt 32-775] End 2 Pass. Optimized 3 nets or cells. Created 25 new cells, deleted 0 existing cell and moved 0 existing cell
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2848.430 ; gain = 0.000 ; free physical = 3542 ; free virtual = 9309
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2920.457 ; gain = 0.000 ; free physical = 3833 ; free virtual = 10014
 INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
 INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
 INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
 INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
 INFO: [Physopt 32-949] No candidate nets found for HD net replication
 INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2848.430 ; gain = 0.000 ; free physical = 3544 ; free virtual = 9310
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2920.457 ; gain = 0.000 ; free physical = 3833 ; free virtual = 10014
 
 Summary of Physical Synthesis Optimizations
 ============================================
@@ -366,65 +362,65 @@ Summary of Physical Synthesis Optimizations
 ----------------------------------------------------------------------------------------------------------------------------------------
 
 
-Phase 2.2.1 Physical Synthesis In Placer | Checksum: 1e0d47dba
+Phase 2.2.1 Physical Synthesis In Placer | Checksum: 234df2f2a
 
-Time (s): cpu = 00:00:31 ; elapsed = 00:00:16 . Memory (MB): peak = 2848.430 ; gain = 0.000 ; free physical = 3542 ; free virtual = 9309
-Phase 2.2 Global Placement Core | Checksum: 14a0a9440
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:17 . Memory (MB): peak = 2920.457 ; gain = 0.000 ; free physical = 3833 ; free virtual = 10014
+Phase 2.2 Global Placement Core | Checksum: 1a4839b2b
 
-Time (s): cpu = 00:00:32 ; elapsed = 00:00:16 . Memory (MB): peak = 2848.430 ; gain = 0.000 ; free physical = 3540 ; free virtual = 9306
-Phase 2 Global Placement | Checksum: 14a0a9440
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:18 . Memory (MB): peak = 2920.457 ; gain = 0.000 ; free physical = 3831 ; free virtual = 10012
+Phase 2 Global Placement | Checksum: 1a4839b2b
 
-Time (s): cpu = 00:00:32 ; elapsed = 00:00:16 . Memory (MB): peak = 2848.430 ; gain = 0.000 ; free physical = 3548 ; free virtual = 9315
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:18 . Memory (MB): peak = 2920.457 ; gain = 0.000 ; free physical = 3840 ; free virtual = 10021
 
 Phase 3 Detail Placement
 
 Phase 3.1 Commit Multi Column Macros
-Phase 3.1 Commit Multi Column Macros | Checksum: 1ce710bcf
+Phase 3.1 Commit Multi Column Macros | Checksum: 1e8f780eb
 
-Time (s): cpu = 00:00:34 ; elapsed = 00:00:17 . Memory (MB): peak = 2848.430 ; gain = 0.000 ; free physical = 3548 ; free virtual = 9314
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:19 . Memory (MB): peak = 2920.457 ; gain = 0.000 ; free physical = 3839 ; free virtual = 10020
 
 Phase 3.2 Commit Most Macros & LUTRAMs
-Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1d74f37dc
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 209e3c916
 
-Time (s): cpu = 00:00:37 ; elapsed = 00:00:19 . Memory (MB): peak = 2848.430 ; gain = 0.000 ; free physical = 3545 ; free virtual = 9311
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:21 . Memory (MB): peak = 2920.457 ; gain = 0.000 ; free physical = 3835 ; free virtual = 10015
 
 Phase 3.3 Area Swap Optimization
-Phase 3.3 Area Swap Optimization | Checksum: 1da3eec70
+Phase 3.3 Area Swap Optimization | Checksum: 1c6d2b80e
 
-Time (s): cpu = 00:00:37 ; elapsed = 00:00:19 . Memory (MB): peak = 2848.430 ; gain = 0.000 ; free physical = 3543 ; free virtual = 9310
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:21 . Memory (MB): peak = 2920.457 ; gain = 0.000 ; free physical = 3835 ; free virtual = 10015
 
 Phase 3.4 Pipeline Register Optimization
-Phase 3.4 Pipeline Register Optimization | Checksum: 200690750
+Phase 3.4 Pipeline Register Optimization | Checksum: 13d2a0391
 
-Time (s): cpu = 00:00:37 ; elapsed = 00:00:19 . Memory (MB): peak = 2848.430 ; gain = 0.000 ; free physical = 3543 ; free virtual = 9310
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:21 . Memory (MB): peak = 2920.457 ; gain = 0.000 ; free physical = 3835 ; free virtual = 10015
 
 Phase 3.5 Fast Optimization
-Phase 3.5 Fast Optimization | Checksum: 196d091f8
+Phase 3.5 Fast Optimization | Checksum: 16ebdff7b
 
-Time (s): cpu = 00:00:40 ; elapsed = 00:00:21 . Memory (MB): peak = 2848.430 ; gain = 0.000 ; free physical = 3544 ; free virtual = 9310
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:22 . Memory (MB): peak = 2920.457 ; gain = 0.000 ; free physical = 3836 ; free virtual = 10017
 
 Phase 3.6 Small Shape Detail Placement
-Phase 3.6 Small Shape Detail Placement | Checksum: 1a05de49b
+Phase 3.6 Small Shape Detail Placement | Checksum: 172b15eca
 
-Time (s): cpu = 00:00:44 ; elapsed = 00:00:25 . Memory (MB): peak = 2848.430 ; gain = 0.000 ; free physical = 3464 ; free virtual = 9190
+Time (s): cpu = 00:00:43 ; elapsed = 00:00:26 . Memory (MB): peak = 2920.457 ; gain = 0.000 ; free physical = 3828 ; free virtual = 10009
 
 Phase 3.7 Re-assign LUT pins
-Phase 3.7 Re-assign LUT pins | Checksum: 1e6ae848c
+Phase 3.7 Re-assign LUT pins | Checksum: 12cc4dfc6
 
-Time (s): cpu = 00:00:45 ; elapsed = 00:00:25 . Memory (MB): peak = 2848.430 ; gain = 0.000 ; free physical = 3475 ; free virtual = 9201
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:27 . Memory (MB): peak = 2920.457 ; gain = 0.000 ; free physical = 3827 ; free virtual = 10008
 
 Phase 3.8 Pipeline Register Optimization
-Phase 3.8 Pipeline Register Optimization | Checksum: 170919a3f
+Phase 3.8 Pipeline Register Optimization | Checksum: 14e455408
 
-Time (s): cpu = 00:00:45 ; elapsed = 00:00:26 . Memory (MB): peak = 2848.430 ; gain = 0.000 ; free physical = 3474 ; free virtual = 9199
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:27 . Memory (MB): peak = 2920.457 ; gain = 0.000 ; free physical = 3827 ; free virtual = 10008
 
 Phase 3.9 Fast Optimization
-Phase 3.9 Fast Optimization | Checksum: 26791e944
+Phase 3.9 Fast Optimization | Checksum: 221e70eeb
 
-Time (s): cpu = 00:00:48 ; elapsed = 00:00:27 . Memory (MB): peak = 2848.430 ; gain = 0.000 ; free physical = 3469 ; free virtual = 9195
-Phase 3 Detail Placement | Checksum: 26791e944
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:29 . Memory (MB): peak = 2920.457 ; gain = 0.000 ; free physical = 3826 ; free virtual = 10007
+Phase 3 Detail Placement | Checksum: 221e70eeb
 
-Time (s): cpu = 00:00:49 ; elapsed = 00:00:27 . Memory (MB): peak = 2848.430 ; gain = 0.000 ; free physical = 3467 ; free virtual = 9193
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:29 . Memory (MB): peak = 2920.457 ; gain = 0.000 ; free physical = 3826 ; free virtual = 10007
 
 Phase 4 Post Placement Optimization and Clean-Up
 
@@ -432,59 +428,59 @@ Phase 4.1 Post Commit Optimization
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 
 Phase 4.1.1 Post Placement Optimization
-Post Placement Optimization Initialization | Checksum: 155487a2e
+Post Placement Optimization Initialization | Checksum: 11abe600e
 
 Phase 4.1.1.1 BUFG Insertion
 INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
-Phase 4.1.1.1 BUFG Insertion | Checksum: 155487a2e
+Phase 4.1.1.1 BUFG Insertion | Checksum: 11abe600e
 
-Time (s): cpu = 00:00:53 ; elapsed = 00:00:30 . Memory (MB): peak = 2848.430 ; gain = 0.000 ; free physical = 3455 ; free virtual = 9180
-INFO: [Place 30-746] Post Placement Timing Summary WNS=0.173. For the most accurate timing information please run report_timing.
-Phase 4.1.1 Post Placement Optimization | Checksum: 17fd5a102
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:31 . Memory (MB): peak = 2920.457 ; gain = 0.000 ; free physical = 3825 ; free virtual = 10006
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.323. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 12a18b04e
 
-Time (s): cpu = 00:01:04 ; elapsed = 00:00:40 . Memory (MB): peak = 2848.430 ; gain = 0.000 ; free physical = 3462 ; free virtual = 9188
-Phase 4.1 Post Commit Optimization | Checksum: 17fd5a102
+Time (s): cpu = 00:01:06 ; elapsed = 00:00:40 . Memory (MB): peak = 2920.457 ; gain = 0.000 ; free physical = 3818 ; free virtual = 9999
+Phase 4.1 Post Commit Optimization | Checksum: 12a18b04e
 
-Time (s): cpu = 00:01:04 ; elapsed = 00:00:40 . Memory (MB): peak = 2848.430 ; gain = 0.000 ; free physical = 3460 ; free virtual = 9186
+Time (s): cpu = 00:01:06 ; elapsed = 00:00:40 . Memory (MB): peak = 2920.457 ; gain = 0.000 ; free physical = 3818 ; free virtual = 9999
 
 Phase 4.2 Post Placement Cleanup
-Phase 4.2 Post Placement Cleanup | Checksum: 17fd5a102
+Phase 4.2 Post Placement Cleanup | Checksum: 12a18b04e
 
-Time (s): cpu = 00:01:04 ; elapsed = 00:00:40 . Memory (MB): peak = 2848.430 ; gain = 0.000 ; free physical = 3459 ; free virtual = 9185
+Time (s): cpu = 00:01:06 ; elapsed = 00:00:41 . Memory (MB): peak = 2920.457 ; gain = 0.000 ; free physical = 3819 ; free virtual = 10000
 
 Phase 4.3 Placer Reporting
-Phase 4.3 Placer Reporting | Checksum: 17fd5a102
+Phase 4.3 Placer Reporting | Checksum: 12a18b04e
 
-Time (s): cpu = 00:01:04 ; elapsed = 00:00:41 . Memory (MB): peak = 2848.430 ; gain = 0.000 ; free physical = 3457 ; free virtual = 9183
+Time (s): cpu = 00:01:06 ; elapsed = 00:00:41 . Memory (MB): peak = 2920.457 ; gain = 0.000 ; free physical = 3819 ; free virtual = 10000
 
 Phase 4.4 Final Placement Cleanup
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2848.430 ; gain = 0.000 ; free physical = 3457 ; free virtual = 9182
-Phase 4.4 Final Placement Cleanup | Checksum: 2219f9f56
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2920.457 ; gain = 0.000 ; free physical = 3819 ; free virtual = 10000
+Phase 4.4 Final Placement Cleanup | Checksum: 1cfcf74ff
 
-Time (s): cpu = 00:01:04 ; elapsed = 00:00:41 . Memory (MB): peak = 2848.430 ; gain = 0.000 ; free physical = 3455 ; free virtual = 9181
-Phase 4 Post Placement Optimization and Clean-Up | Checksum: 2219f9f56
+Time (s): cpu = 00:01:07 ; elapsed = 00:00:41 . Memory (MB): peak = 2920.457 ; gain = 0.000 ; free physical = 3819 ; free virtual = 10000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1cfcf74ff
 
-Time (s): cpu = 00:01:04 ; elapsed = 00:00:41 . Memory (MB): peak = 2848.430 ; gain = 0.000 ; free physical = 3453 ; free virtual = 9179
-Ending Placer Task | Checksum: 1b362a4e7
+Time (s): cpu = 00:01:07 ; elapsed = 00:00:41 . Memory (MB): peak = 2920.457 ; gain = 0.000 ; free physical = 3819 ; free virtual = 10000
+Ending Placer Task | Checksum: 12197b1e8
 
-Time (s): cpu = 00:01:04 ; elapsed = 00:00:41 . Memory (MB): peak = 2848.430 ; gain = 0.000 ; free physical = 3452 ; free virtual = 9177
+Time (s): cpu = 00:01:07 ; elapsed = 00:00:41 . Memory (MB): peak = 2920.457 ; gain = 0.000 ; free physical = 3819 ; free virtual = 10000
 INFO: [Common 17-83] Releasing license: Implementation
-104 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+100 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
 place_design completed successfully
-place_design: Time (s): cpu = 00:01:07 ; elapsed = 00:00:42 . Memory (MB): peak = 2848.430 ; gain = 0.000 ; free physical = 3470 ; free virtual = 9196
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2848.430 ; gain = 0.000 ; free physical = 3470 ; free virtual = 9195
+place_design: Time (s): cpu = 00:01:10 ; elapsed = 00:00:42 . Memory (MB): peak = 2920.457 ; gain = 0.000 ; free physical = 3837 ; free virtual = 10018
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2920.457 ; gain = 0.000 ; free physical = 3837 ; free virtual = 10018
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:03 ; elapsed = 00:00:00.95 . Memory (MB): peak = 2848.430 ; gain = 0.000 ; free physical = 3436 ; free virtual = 9192
-INFO: [Common 17-1381] The checkpoint '/home/shts/DeepCAEonFPGA/HLx/HLx.runs/impl_1/design_1_wrapper_placed.dcp' has been generated.
+Write XDEF Complete: Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 2920.457 ; gain = 0.000 ; free physical = 3787 ; free virtual = 9999
+INFO: [Common 17-1381] The checkpoint '/home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/impl_1/design_1_wrapper_placed.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_io -file design_1_wrapper_io_placed.rpt
-report_io: Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.15 . Memory (MB): peak = 2848.430 ; gain = 0.000 ; free physical = 3466 ; free virtual = 9201
+report_io: Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.17 . Memory (MB): peak = 2920.457 ; gain = 0.000 ; free physical = 3818 ; free virtual = 10007
 INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_placed.rpt -pb design_1_wrapper_utilization_placed.pb
 INFO: [runtcl-4] Executing : report_control_sets -verbose -file design_1_wrapper_control_sets_placed.rpt
-report_control_sets: Time (s): cpu = 00:00:00.34 ; elapsed = 00:00:00.38 . Memory (MB): peak = 2848.430 ; gain = 0.000 ; free physical = 3459 ; free virtual = 9195
+report_control_sets: Time (s): cpu = 00:00:00.37 ; elapsed = 00:00:00.42 . Memory (MB): peak = 2920.457 ; gain = 0.000 ; free physical = 3828 ; free virtual = 10018
 Command: route_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
@@ -496,41 +492,41 @@ INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more in
 
 Starting Routing Task
 INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 4 CPUs
-Checksum: PlaceDB: c8baffda ConstDB: 0 ShapeSum: eaa7a50d RouteDB: 0
+Checksum: PlaceDB: 78bf9c08 ConstDB: 0 ShapeSum: a8d815e0 RouteDB: 0
 
 Phase 1 Build RT Design
-Phase 1 Build RT Design | Checksum: ec0318a2
+Phase 1 Build RT Design | Checksum: 1158b9d1e
 
-Time (s): cpu = 00:00:20 ; elapsed = 00:00:15 . Memory (MB): peak = 2848.430 ; gain = 0.000 ; free physical = 3329 ; free virtual = 9072
-Post Restoration Checksum: NetGraph: cafc0c58 NumContArr: 21070c4a Constraints: 0 Timing: 0
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:16 . Memory (MB): peak = 2920.457 ; gain = 0.000 ; free physical = 3694 ; free virtual = 9883
+Post Restoration Checksum: NetGraph: ed3fe363 NumContArr: 284bb9bb Constraints: 0 Timing: 0
 
 Phase 2 Router Initialization
 
 Phase 2.1 Create Timer
-Phase 2.1 Create Timer | Checksum: ec0318a2
+Phase 2.1 Create Timer | Checksum: 1158b9d1e
 
-Time (s): cpu = 00:00:20 ; elapsed = 00:00:15 . Memory (MB): peak = 2848.430 ; gain = 0.000 ; free physical = 3299 ; free virtual = 9041
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:16 . Memory (MB): peak = 2920.457 ; gain = 0.000 ; free physical = 3667 ; free virtual = 9857
 
 Phase 2.2 Fix Topology Constraints
-Phase 2.2 Fix Topology Constraints | Checksum: ec0318a2
+Phase 2.2 Fix Topology Constraints | Checksum: 1158b9d1e
 
-Time (s): cpu = 00:00:21 ; elapsed = 00:00:15 . Memory (MB): peak = 2848.430 ; gain = 0.000 ; free physical = 3279 ; free virtual = 9022
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:17 . Memory (MB): peak = 2920.457 ; gain = 0.000 ; free physical = 3651 ; free virtual = 9841
 
 Phase 2.3 Pre Route Cleanup
-Phase 2.3 Pre Route Cleanup | Checksum: ec0318a2
+Phase 2.3 Pre Route Cleanup | Checksum: 1158b9d1e
 
-Time (s): cpu = 00:00:21 ; elapsed = 00:00:15 . Memory (MB): peak = 2848.430 ; gain = 0.000 ; free physical = 3279 ; free virtual = 9022
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:17 . Memory (MB): peak = 2920.457 ; gain = 0.000 ; free physical = 3651 ; free virtual = 9841
  Number of Nodes with overlaps = 0
 
 Phase 2.4 Update Timing
-Phase 2.4 Update Timing | Checksum: 19215e8a7
+Phase 2.4 Update Timing | Checksum: 1adfb8cf3
 
-Time (s): cpu = 00:00:26 ; elapsed = 00:00:19 . Memory (MB): peak = 2848.430 ; gain = 0.000 ; free physical = 3259 ; free virtual = 9002
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.245  | TNS=0.000  | WHS=-0.350 | THS=-381.419|
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:20 . Memory (MB): peak = 2920.457 ; gain = 0.000 ; free physical = 3632 ; free virtual = 9822
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.359  | TNS=0.000  | WHS=-0.353 | THS=-378.046|
 
-Phase 2 Router Initialization | Checksum: 1f4ae8793
+Phase 2 Router Initialization | Checksum: 1d3f4f472
 
-Time (s): cpu = 00:00:29 ; elapsed = 00:00:20 . Memory (MB): peak = 2848.430 ; gain = 0.000 ; free physical = 3257 ; free virtual = 8999
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:21 . Memory (MB): peak = 2920.457 ; gain = 0.000 ; free physical = 3630 ; free virtual = 9819
 
 Router Utilization Summary
   Global Vertical Routing Utilization    = 0 %
@@ -538,111 +534,92 @@ Router Utilization Summary
   Routable Net Status*
   *Does not include unroutable nets such as driverless and loadless.
   Run report_route_status for detailed report.
-  Number of Failed Nets               = 17261
+  Number of Failed Nets               = 17293
     (Failed Nets is the sum of unrouted and partially routed nets)
-  Number of Unrouted Nets             = 17261
+  Number of Unrouted Nets             = 17293
   Number of Partially Routed Nets     = 0
   Number of Node Overlaps             = 0
 
 
 Phase 3 Initial Routing
-Phase 3 Initial Routing | Checksum: dcb9337b
+Phase 3 Initial Routing | Checksum: 2421aa449
 
-Time (s): cpu = 00:00:36 ; elapsed = 00:00:23 . Memory (MB): peak = 2848.430 ; gain = 0.000 ; free physical = 3257 ; free virtual = 9000
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:24 . Memory (MB): peak = 2920.457 ; gain = 0.000 ; free physical = 3625 ; free virtual = 9814
 
 Phase 4 Rip-up And Reroute
 
 Phase 4.1 Global Iteration 0
- Number of Nodes with overlaps = 2052
- Number of Nodes with overlaps = 339
- Number of Nodes with overlaps = 96
- Number of Nodes with overlaps = 32
- Number of Nodes with overlaps = 8
- Number of Nodes with overlaps = 0
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.169 | TNS=-0.466 | WHS=N/A    | THS=N/A    |
-
-Phase 4.1 Global Iteration 0 | Checksum: 118cbbcad
-
-Time (s): cpu = 00:00:53 ; elapsed = 00:00:34 . Memory (MB): peak = 2848.430 ; gain = 0.000 ; free physical = 3082 ; free virtual = 8846
-
-Phase 4.2 Global Iteration 1
- Number of Nodes with overlaps = 119
- Number of Nodes with overlaps = 25
- Number of Nodes with overlaps = 18
- Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 2134
+ Number of Nodes with overlaps = 433
+ Number of Nodes with overlaps = 117
+ Number of Nodes with overlaps = 22
  Number of Nodes with overlaps = 5
  Number of Nodes with overlaps = 1
- Number of Nodes with overlaps = 5
  Number of Nodes with overlaps = 0
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.028 | TNS=-0.028 | WHS=N/A    | THS=N/A    |
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.097  | TNS=0.000  | WHS=N/A    | THS=N/A    |
 
-Phase 4.2 Global Iteration 1 | Checksum: ead7ee04
+Phase 4.1 Global Iteration 0 | Checksum: 260b74e13
 
-Time (s): cpu = 00:01:06 ; elapsed = 00:00:47 . Memory (MB): peak = 2848.430 ; gain = 0.000 ; free physical = 3321 ; free virtual = 9096
+Time (s): cpu = 00:01:03 ; elapsed = 00:00:36 . Memory (MB): peak = 2920.457 ; gain = 0.000 ; free physical = 3620 ; free virtual = 9810
 
-Phase 4.3 Global Iteration 2
- Number of Nodes with overlaps = 101
- Number of Nodes with overlaps = 22
- Number of Nodes with overlaps = 17
- Number of Nodes with overlaps = 7
- Number of Nodes with overlaps = 11
- Number of Nodes with overlaps = 4
- Number of Nodes with overlaps = 4
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 9
  Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 1
  Number of Nodes with overlaps = 0
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.024 | TNS=-0.024 | WHS=N/A    | THS=N/A    |
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.097  | TNS=0.000  | WHS=N/A    | THS=N/A    |
 
-Phase 4.3 Global Iteration 2 | Checksum: 180d89d3d
+Phase 4.2 Global Iteration 1 | Checksum: 17d4f13e1
 
-Time (s): cpu = 00:01:19 ; elapsed = 00:01:00 . Memory (MB): peak = 2848.430 ; gain = 0.000 ; free physical = 3353 ; free virtual = 9087
-Phase 4 Rip-up And Reroute | Checksum: 180d89d3d
+Time (s): cpu = 00:01:04 ; elapsed = 00:00:37 . Memory (MB): peak = 2920.457 ; gain = 0.000 ; free physical = 3619 ; free virtual = 9809
+Phase 4 Rip-up And Reroute | Checksum: 17d4f13e1
 
-Time (s): cpu = 00:01:19 ; elapsed = 00:01:00 . Memory (MB): peak = 2848.430 ; gain = 0.000 ; free physical = 3352 ; free virtual = 9086
+Time (s): cpu = 00:01:04 ; elapsed = 00:00:37 . Memory (MB): peak = 2920.457 ; gain = 0.000 ; free physical = 3619 ; free virtual = 9809
 
 Phase 5 Delay and Skew Optimization
 
 Phase 5.1 Delay CleanUp
 
 Phase 5.1.1 Update Timing
-Phase 5.1.1 Update Timing | Checksum: 1dca43d58
+Phase 5.1.1 Update Timing | Checksum: 13244870e
 
-Time (s): cpu = 00:01:20 ; elapsed = 00:01:01 . Memory (MB): peak = 2848.430 ; gain = 0.000 ; free physical = 3335 ; free virtual = 9070
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.091  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+Time (s): cpu = 00:01:05 ; elapsed = 00:00:37 . Memory (MB): peak = 2920.457 ; gain = 0.000 ; free physical = 3619 ; free virtual = 9809
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.246  | TNS=0.000  | WHS=N/A    | THS=N/A    |
 
-Phase 5.1 Delay CleanUp | Checksum: 1dca43d58
+Phase 5.1 Delay CleanUp | Checksum: 13244870e
 
-Time (s): cpu = 00:01:20 ; elapsed = 00:01:01 . Memory (MB): peak = 2848.430 ; gain = 0.000 ; free physical = 3334 ; free virtual = 9069
+Time (s): cpu = 00:01:05 ; elapsed = 00:00:37 . Memory (MB): peak = 2920.457 ; gain = 0.000 ; free physical = 3619 ; free virtual = 9809
 
 Phase 5.2 Clock Skew Optimization
-Phase 5.2 Clock Skew Optimization | Checksum: 1dca43d58
+Phase 5.2 Clock Skew Optimization | Checksum: 13244870e
 
-Time (s): cpu = 00:01:20 ; elapsed = 00:01:01 . Memory (MB): peak = 2848.430 ; gain = 0.000 ; free physical = 3334 ; free virtual = 9069
-Phase 5 Delay and Skew Optimization | Checksum: 1dca43d58
+Time (s): cpu = 00:01:05 ; elapsed = 00:00:37 . Memory (MB): peak = 2920.457 ; gain = 0.000 ; free physical = 3619 ; free virtual = 9809
+Phase 5 Delay and Skew Optimization | Checksum: 13244870e
 
-Time (s): cpu = 00:01:20 ; elapsed = 00:01:01 . Memory (MB): peak = 2848.430 ; gain = 0.000 ; free physical = 3334 ; free virtual = 9069
+Time (s): cpu = 00:01:05 ; elapsed = 00:00:37 . Memory (MB): peak = 2920.457 ; gain = 0.000 ; free physical = 3619 ; free virtual = 9809
 
 Phase 6 Post Hold Fix
 
 Phase 6.1 Hold Fix Iter
 
 Phase 6.1.1 Update Timing
-Phase 6.1.1 Update Timing | Checksum: 1f8730303
+Phase 6.1.1 Update Timing | Checksum: 14900943a
 
-Time (s): cpu = 00:01:22 ; elapsed = 00:01:02 . Memory (MB): peak = 2848.430 ; gain = 0.000 ; free physical = 3328 ; free virtual = 9062
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.091  | TNS=0.000  | WHS=0.011  | THS=0.000  |
+Time (s): cpu = 00:01:07 ; elapsed = 00:00:38 . Memory (MB): peak = 2920.457 ; gain = 0.000 ; free physical = 3620 ; free virtual = 9810
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.246  | TNS=0.000  | WHS=0.012  | THS=0.000  |
 
-Phase 6.1 Hold Fix Iter | Checksum: 1b0f9b9bd
+Phase 6.1 Hold Fix Iter | Checksum: 2111ae38d
 
-Time (s): cpu = 00:01:22 ; elapsed = 00:01:02 . Memory (MB): peak = 2848.430 ; gain = 0.000 ; free physical = 3321 ; free virtual = 9055
-Phase 6 Post Hold Fix | Checksum: 1b0f9b9bd
+Time (s): cpu = 00:01:07 ; elapsed = 00:00:38 . Memory (MB): peak = 2920.457 ; gain = 0.000 ; free physical = 3620 ; free virtual = 9810
+Phase 6 Post Hold Fix | Checksum: 2111ae38d
 
-Time (s): cpu = 00:01:22 ; elapsed = 00:01:02 . Memory (MB): peak = 2848.430 ; gain = 0.000 ; free physical = 3315 ; free virtual = 9049
+Time (s): cpu = 00:01:07 ; elapsed = 00:00:38 . Memory (MB): peak = 2920.457 ; gain = 0.000 ; free physical = 3620 ; free virtual = 9810
 
 Phase 7 Route finalize
 
 Router Utilization Summary
-  Global Vertical Routing Utilization    = 3.14409 %
-  Global Horizontal Routing Utilization  = 4.59255 %
+  Global Vertical Routing Utilization    = 3.07575 %
+  Global Horizontal Routing Utilization  = 4.44312 %
   Routable Net Status*
   *Does not include unroutable nets such as driverless and loadless.
   Run report_route_status for detailed report.
@@ -652,59 +629,60 @@ Router Utilization Summary
   Number of Partially Routed Nets     = 0
   Number of Node Overlaps             = 0
 
-Phase 7 Route finalize | Checksum: 20a917b4a
+Phase 7 Route finalize | Checksum: 13780f05f
 
-Time (s): cpu = 00:01:22 ; elapsed = 00:01:02 . Memory (MB): peak = 2848.430 ; gain = 0.000 ; free physical = 3309 ; free virtual = 9043
+Time (s): cpu = 00:01:07 ; elapsed = 00:00:38 . Memory (MB): peak = 2920.457 ; gain = 0.000 ; free physical = 3620 ; free virtual = 9810
 
 Phase 8 Verifying routed nets
 
  Verification completed successfully
-Phase 8 Verifying routed nets | Checksum: 20a917b4a
+Phase 8 Verifying routed nets | Checksum: 13780f05f
 
-Time (s): cpu = 00:01:22 ; elapsed = 00:01:02 . Memory (MB): peak = 2848.430 ; gain = 0.000 ; free physical = 3305 ; free virtual = 9039
+Time (s): cpu = 00:01:07 ; elapsed = 00:00:38 . Memory (MB): peak = 2920.457 ; gain = 0.000 ; free physical = 3620 ; free virtual = 9809
 
 Phase 9 Depositing Routes
-Phase 9 Depositing Routes | Checksum: 20aeb3ecb
+Phase 9 Depositing Routes | Checksum: 106ddd722
 
-Time (s): cpu = 00:01:23 ; elapsed = 00:01:03 . Memory (MB): peak = 2848.430 ; gain = 0.000 ; free physical = 3251 ; free virtual = 8986
+Time (s): cpu = 00:01:08 ; elapsed = 00:00:39 . Memory (MB): peak = 2920.457 ; gain = 0.000 ; free physical = 3622 ; free virtual = 9812
 
 Phase 10 Post Router Timing
-INFO: [Route 35-57] Estimated Timing Summary | WNS=0.091  | TNS=0.000  | WHS=0.011  | THS=0.000  |
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.246  | TNS=0.000  | WHS=0.012  | THS=0.000  |
 
 INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
-Phase 10 Post Router Timing | Checksum: 20aeb3ecb
+Phase 10 Post Router Timing | Checksum: 106ddd722
 
-Time (s): cpu = 00:01:23 ; elapsed = 00:01:03 . Memory (MB): peak = 2848.430 ; gain = 0.000 ; free physical = 3250 ; free virtual = 8984
+Time (s): cpu = 00:01:08 ; elapsed = 00:00:40 . Memory (MB): peak = 2920.457 ; gain = 0.000 ; free physical = 3622 ; free virtual = 9812
 INFO: [Route 35-16] Router Completed Successfully
 
-Time (s): cpu = 00:01:23 ; elapsed = 00:01:03 . Memory (MB): peak = 2848.430 ; gain = 0.000 ; free physical = 3278 ; free virtual = 9012
+Time (s): cpu = 00:01:08 ; elapsed = 00:00:40 . Memory (MB): peak = 2920.457 ; gain = 0.000 ; free physical = 3648 ; free virtual = 9838
 
 Routing Is Done.
 INFO: [Common 17-83] Releasing license: Implementation
-124 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+119 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
 route_design completed successfully
-route_design: Time (s): cpu = 00:01:27 ; elapsed = 00:01:05 . Memory (MB): peak = 2848.430 ; gain = 0.000 ; free physical = 3278 ; free virtual = 9012
+route_design: Time (s): cpu = 00:01:12 ; elapsed = 00:00:41 . Memory (MB): peak = 2920.457 ; gain = 0.000 ; free physical = 3648 ; free virtual = 9838
 INFO: [Common 17-600] The following parameters have non-default value.
 general.maxThreads
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2848.430 ; gain = 0.000 ; free physical = 3278 ; free virtual = 9012
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2920.457 ; gain = 0.000 ; free physical = 3648 ; free virtual = 9838
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 2848.430 ; gain = 0.000 ; free physical = 3236 ; free virtual = 9007
-INFO: [Common 17-1381] The checkpoint '/home/shts/DeepCAEonFPGA/HLx/HLx.runs/impl_1/design_1_wrapper_routed.dcp' has been generated.
+Write XDEF Complete: Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 2920.457 ; gain = 0.000 ; free physical = 3599 ; free virtual = 9824
+INFO: [Common 17-1381] The checkpoint '/home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/impl_1/design_1_wrapper_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 2920.457 ; gain = 0.000 ; free physical = 3636 ; free virtual = 9836
 INFO: [runtcl-4] Executing : report_drc -file design_1_wrapper_drc_routed.rpt -pb design_1_wrapper_drc_routed.pb -rpx design_1_wrapper_drc_routed.rpx
 Command: report_drc -file design_1_wrapper_drc_routed.rpt -pb design_1_wrapper_drc_routed.pb -rpx design_1_wrapper_drc_routed.rpx
 INFO: [IP_Flow 19-1839] IP Catalog is up to date.
 INFO: [DRC 23-27] Running DRC with 4 threads
-INFO: [Coretcl 2-168] The results of DRC are in file /home/shts/DeepCAEonFPGA/HLx/HLx.runs/impl_1/design_1_wrapper_drc_routed.rpt.
+INFO: [Coretcl 2-168] The results of DRC are in file /home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/impl_1/design_1_wrapper_drc_routed.rpt.
 report_drc completed successfully
 INFO: [runtcl-4] Executing : report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -pb design_1_wrapper_methodology_drc_routed.pb -rpx design_1_wrapper_methodology_drc_routed.rpx
 Command: report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -pb design_1_wrapper_methodology_drc_routed.pb -rpx design_1_wrapper_methodology_drc_routed.rpx
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 INFO: [DRC 23-133] Running Methodology with 4 threads
-INFO: [Coretcl 2-1520] The results of Report Methodology are in file /home/shts/DeepCAEonFPGA/HLx/HLx.runs/impl_1/design_1_wrapper_methodology_drc_routed.rpt.
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file /home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/impl_1/design_1_wrapper_methodology_drc_routed.rpt.
 report_methodology completed successfully
 INFO: [runtcl-4] Executing : report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
 Command: report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
@@ -714,7 +692,7 @@ Running Vector-less Activity Propagation...
 Finished Running Vector-less Activity Propagation
 WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
 Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
-137 Infos, 6 Warnings, 0 Critical Warnings and 0 Errors encountered.
+132 Infos, 6 Warnings, 0 Critical Warnings and 0 Errors encountered.
 report_power completed successfully
 INFO: [runtcl-4] Executing : report_route_status -file design_1_wrapper_route_status.rpt -pb design_1_wrapper_route_status.pb
 INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file design_1_wrapper_timing_summary_routed.rpt -pb design_1_wrapper_timing_summary_routed.pb -rpx design_1_wrapper_timing_summary_routed.rpx -warn_on_violation 
@@ -749,84 +727,84 @@ INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc
 Running DRC as a precondition to command write_bitstream
 INFO: [IP_Flow 19-1839] IP Catalog is up to date.
 INFO: [DRC 23-27] Running DRC with 4 threads
-WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/network_0/inst/grp_depthwise_conv2d_fix_2_fu_427/add_ln40_10_reg_1504_reg input design_1_i/network_0/inst/grp_depthwise_conv2d_fix_2_fu_427/add_ln40_10_reg_1504_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/network_0/inst/grp_depthwise_conv2d_fix_2_fu_427/tmp10_0_0_mid2_reg_1332_reg input design_1_i/network_0/inst/grp_depthwise_conv2d_fix_2_fu_427/tmp10_0_0_mid2_reg_1332_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/network_0/inst/grp_depthwise_conv2d_fix_2_fu_427/tmp10_1_0_mid2_reg_1339_reg input design_1_i/network_0/inst/grp_depthwise_conv2d_fix_2_fu_427/tmp10_1_0_mid2_reg_1339_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/network_0/inst/grp_depthwise_conv2d_fix_2_fu_427/tmp10_2_0_mid2_reg_1356_reg input design_1_i/network_0/inst/grp_depthwise_conv2d_fix_2_fu_427/tmp10_2_0_mid2_reg_1356_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/network_0/inst/grp_max_pooling2d_fix16_fu_525/add_ln26_1_fu_499_p2 input design_1_i/network_0/inst/grp_max_pooling2d_fix16_fu_525/add_ln26_1_fu_499_p2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/network_0/inst/grp_max_pooling2d_fix16_fu_525/add_ln26_1_fu_499_p2 input design_1_i/network_0/inst/grp_max_pooling2d_fix16_fu_525/add_ln26_1_fu_499_p2/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/network_0/inst/grp_max_pooling2d_fix16_fu_525/add_ln26_2_reg_808_reg input design_1_i/network_0/inst/grp_max_pooling2d_fix16_fu_525/add_ln26_2_reg_808_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/network_0/inst/grp_max_pooling2d_fix16_fu_525/add_ln26_2_reg_808_reg input design_1_i/network_0/inst/grp_max_pooling2d_fix16_fu_525/add_ln26_2_reg_808_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/network_0/inst/grp_max_pooling2d_fix16_fu_525/add_ln26_3_reg_814_reg input design_1_i/network_0/inst/grp_max_pooling2d_fix16_fu_525/add_ln26_3_reg_814_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/network_0/inst/grp_max_pooling2d_fix16_fu_525/add_ln26_3_reg_814_reg input design_1_i/network_0/inst/grp_max_pooling2d_fix16_fu_525/add_ln26_3_reg_814_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/network_0/inst/grp_max_pooling2d_fix16_fu_525/add_ln26_fu_479_p2 input design_1_i/network_0/inst/grp_max_pooling2d_fix16_fu_525/add_ln26_fu_479_p2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/network_0/inst/grp_max_pooling2d_fix16_fu_525/add_ln26_fu_479_p2 input design_1_i/network_0/inst/grp_max_pooling2d_fix16_fu_525/add_ln26_fu_479_p2/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/network_0/inst/grp_max_pooling2d_fix16_fu_525/mul_ln9_1_reg_717_reg input design_1_i/network_0/inst/grp_max_pooling2d_fix16_fu_525/mul_ln9_1_reg_717_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/network_0/inst/grp_max_pooling2d_fix16_fu_525/mul_ln9_1_reg_717_reg input design_1_i/network_0/inst/grp_max_pooling2d_fix16_fu_525/mul_ln9_1_reg_717_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/network_0/inst/grp_up_sampling2d_fix16_fu_552/mul_ln6_1_reg_559_reg input design_1_i/network_0/inst/grp_up_sampling2d_fix16_fu_552/mul_ln6_1_reg_559_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPOP-1] PREG Output pipelining: DSP design_1_i/network_0/inst/grp_depthwise_conv2d_fix_1_fu_451/network_mul_mul_16s_16s_30_1_1_U66/network_mul_mul_16s_16s_30_1_1_DSP48_2_U/p output design_1_i/network_0/inst/grp_depthwise_conv2d_fix_1_fu_451/network_mul_mul_16s_16s_30_1_1_U66/network_mul_mul_16s_16s_30_1_1_DSP48_2_U/p/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
-WARNING: [DRC DPOP-1] PREG Output pipelining: DSP design_1_i/network_0/inst/grp_depthwise_conv2d_fix_1_fu_451/network_mul_mul_16s_16s_30_1_1_U67/network_mul_mul_16s_16s_30_1_1_DSP48_2_U/p output design_1_i/network_0/inst/grp_depthwise_conv2d_fix_1_fu_451/network_mul_mul_16s_16s_30_1_1_U67/network_mul_mul_16s_16s_30_1_1_DSP48_2_U/p/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
-WARNING: [DRC DPOP-1] PREG Output pipelining: DSP design_1_i/network_0/inst/grp_depthwise_conv2d_fix_1_fu_451/network_mul_mul_16s_16s_30_1_1_U68/network_mul_mul_16s_16s_30_1_1_DSP48_2_U/p output design_1_i/network_0/inst/grp_depthwise_conv2d_fix_1_fu_451/network_mul_mul_16s_16s_30_1_1_U68/network_mul_mul_16s_16s_30_1_1_DSP48_2_U/p/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
-WARNING: [DRC DPOP-1] PREG Output pipelining: DSP design_1_i/network_0/inst/grp_depthwise_conv2d_fix_fu_475/network_mul_mul_16s_15s_30_1_1_U6/network_mul_mul_16s_15s_30_1_1_DSP48_0_U/p output design_1_i/network_0/inst/grp_depthwise_conv2d_fix_fu_475/network_mul_mul_16s_15s_30_1_1_U6/network_mul_mul_16s_15s_30_1_1_DSP48_0_U/p/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
-WARNING: [DRC DPOP-1] PREG Output pipelining: DSP design_1_i/network_0/inst/grp_depthwise_conv2d_fix_fu_475/network_mul_mul_16s_15s_30_1_1_U7/network_mul_mul_16s_15s_30_1_1_DSP48_0_U/p output design_1_i/network_0/inst/grp_depthwise_conv2d_fix_fu_475/network_mul_mul_16s_15s_30_1_1_U7/network_mul_mul_16s_15s_30_1_1_DSP48_0_U/p/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
-WARNING: [DRC DPOP-1] PREG Output pipelining: DSP design_1_i/network_0/inst/grp_depthwise_conv2d_fix_fu_475/network_mul_mul_16s_15s_30_1_1_U8/network_mul_mul_16s_15s_30_1_1_DSP48_0_U/p output design_1_i/network_0/inst/grp_depthwise_conv2d_fix_fu_475/network_mul_mul_16s_15s_30_1_1_U8/network_mul_mul_16s_15s_30_1_1_DSP48_0_U/p/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
-WARNING: [DRC DPOP-1] PREG Output pipelining: DSP design_1_i/network_0/inst/grp_depthwise_conv2d_fix_fu_475/network_mul_mul_16s_15s_30_1_1_U9/network_mul_mul_16s_15s_30_1_1_DSP48_0_U/p output design_1_i/network_0/inst/grp_depthwise_conv2d_fix_fu_475/network_mul_mul_16s_15s_30_1_1_U9/network_mul_mul_16s_15s_30_1_1_DSP48_0_U/p/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
-WARNING: [DRC DPOP-1] PREG Output pipelining: DSP design_1_i/network_0/inst/grp_max_pooling2d_fix16_fu_525/add_ln26_1_fu_499_p2 output design_1_i/network_0/inst/grp_max_pooling2d_fix16_fu_525/add_ln26_1_fu_499_p2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
-WARNING: [DRC DPOP-1] PREG Output pipelining: DSP design_1_i/network_0/inst/grp_max_pooling2d_fix16_fu_525/add_ln26_fu_479_p2 output design_1_i/network_0/inst/grp_max_pooling2d_fix16_fu_525/add_ln26_fu_479_p2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
-WARNING: [DRC DPOP-1] PREG Output pipelining: DSP design_1_i/network_0/inst/grp_pointwise_conv2d_fix_1_fu_483/mul_ln39_fu_1336_p2 output design_1_i/network_0/inst/grp_pointwise_conv2d_fix_1_fu_483/mul_ln39_fu_1336_p2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
-WARNING: [DRC DPOP-1] PREG Output pipelining: DSP design_1_i/network_0/inst/grp_pointwise_conv2d_fix_1_fu_483/network_mac_muladd_9ns_5ns_9s_13_1_1_U57/network_mac_muladd_9ns_5ns_9s_13_1_1_DSP48_4_U/p output design_1_i/network_0/inst/grp_pointwise_conv2d_fix_1_fu_483/network_mac_muladd_9ns_5ns_9s_13_1_1_U57/network_mac_muladd_9ns_5ns_9s_13_1_1_DSP48_4_U/p/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
-WARNING: [DRC DPOP-1] PREG Output pipelining: DSP design_1_i/network_0/inst/grp_pointwise_conv2d_fix_2_fu_495/mul_ln39_fu_1034_p2 output design_1_i/network_0/inst/grp_pointwise_conv2d_fix_2_fu_495/mul_ln39_fu_1034_p2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
-WARNING: [DRC DPOP-1] PREG Output pipelining: DSP design_1_i/network_0/inst/grp_pointwise_conv2d_fix_2_fu_495/network_mac_muladd_4ns_7ns_7s_10_1_1_U86/network_mac_muladd_4ns_7ns_7s_10_1_1_DSP48_6_U/p output design_1_i/network_0/inst/grp_pointwise_conv2d_fix_2_fu_495/network_mac_muladd_4ns_7ns_7s_10_1_1_U86/network_mac_muladd_4ns_7ns_7s_10_1_1_DSP48_6_U/p/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
-WARNING: [DRC DPOP-1] PREG Output pipelining: DSP design_1_i/network_0/inst/grp_pointwise_conv2d_fix_3_fu_489/mul_ln39_fu_1346_p2 output design_1_i/network_0/inst/grp_pointwise_conv2d_fix_3_fu_489/mul_ln39_fu_1346_p2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
-WARNING: [DRC DPOP-1] PREG Output pipelining: DSP design_1_i/network_0/inst/grp_pointwise_conv2d_fix_3_fu_489/network_mac_muladd_4ns_9ns_9s_12_1_1_U108/network_mac_muladd_4ns_9ns_9s_12_1_1_DSP48_10_U/p output design_1_i/network_0/inst/grp_pointwise_conv2d_fix_3_fu_489/network_mac_muladd_4ns_9ns_9s_12_1_1_U108/network_mac_muladd_4ns_9ns_9s_12_1_1_DSP48_10_U/p/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
-WARNING: [DRC DPOP-1] PREG Output pipelining: DSP design_1_i/network_0/inst/grp_pointwise_conv2d_fix_4_fu_501/mul_ln39_fu_777_p2 output design_1_i/network_0/inst/grp_pointwise_conv2d_fix_4_fu_501/mul_ln39_fu_777_p2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
-WARNING: [DRC DPOP-1] PREG Output pipelining: DSP design_1_i/network_0/inst/grp_pointwise_conv2d_fix_4_fu_501/network_mac_muladd_11ns_5ns_11s_15_1_1_U116/network_mac_muladd_11ns_5ns_11s_15_1_1_DSP48_11_U/p output design_1_i/network_0/inst/grp_pointwise_conv2d_fix_4_fu_501/network_mac_muladd_11ns_5ns_11s_15_1_1_U116/network_mac_muladd_11ns_5ns_11s_15_1_1_DSP48_11_U/p/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
-WARNING: [DRC DPOP-1] PREG Output pipelining: DSP design_1_i/network_0/inst/grp_up_sampling2d_fix16_fu_552/network_mac_muladd_8ns_5ns_4ns_12_1_1_U93/network_mac_muladd_8ns_5ns_4ns_12_1_1_DSP48_8_U/p output design_1_i/network_0/inst/grp_up_sampling2d_fix16_fu_552/network_mac_muladd_8ns_5ns_4ns_12_1_1_U93/network_mac_muladd_8ns_5ns_4ns_12_1_1_DSP48_8_U/p/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/network_0/inst/grp_depthwise_conv2d_fix_1_fu_451/add_ln48_reg_1544_reg multiplier stage design_1_i/network_0/inst/grp_depthwise_conv2d_fix_1_fu_451/add_ln48_reg_1544_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/network_0/inst/grp_depthwise_conv2d_fix_1_fu_451/network_mul_mul_16s_16s_30_1_1_U64/network_mul_mul_16s_16s_30_1_1_DSP48_2_U/p multiplier stage design_1_i/network_0/inst/grp_depthwise_conv2d_fix_1_fu_451/network_mul_mul_16s_16s_30_1_1_U64/network_mul_mul_16s_16s_30_1_1_DSP48_2_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/network_0/inst/grp_depthwise_conv2d_fix_1_fu_451/network_mul_mul_16s_16s_30_1_1_U65/network_mul_mul_16s_16s_30_1_1_DSP48_2_U/p multiplier stage design_1_i/network_0/inst/grp_depthwise_conv2d_fix_1_fu_451/network_mul_mul_16s_16s_30_1_1_U65/network_mul_mul_16s_16s_30_1_1_DSP48_2_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/network_0/inst/grp_depthwise_conv2d_fix_1_fu_451/network_mul_mul_16s_16s_30_1_1_U66/network_mul_mul_16s_16s_30_1_1_DSP48_2_U/p multiplier stage design_1_i/network_0/inst/grp_depthwise_conv2d_fix_1_fu_451/network_mul_mul_16s_16s_30_1_1_U66/network_mul_mul_16s_16s_30_1_1_DSP48_2_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/network_0/inst/grp_depthwise_conv2d_fix_1_fu_451/network_mul_mul_16s_16s_30_1_1_U67/network_mul_mul_16s_16s_30_1_1_DSP48_2_U/p multiplier stage design_1_i/network_0/inst/grp_depthwise_conv2d_fix_1_fu_451/network_mul_mul_16s_16s_30_1_1_U67/network_mul_mul_16s_16s_30_1_1_DSP48_2_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/network_0/inst/grp_depthwise_conv2d_fix_1_fu_451/network_mul_mul_16s_16s_30_1_1_U68/network_mul_mul_16s_16s_30_1_1_DSP48_2_U/p multiplier stage design_1_i/network_0/inst/grp_depthwise_conv2d_fix_1_fu_451/network_mul_mul_16s_16s_30_1_1_U68/network_mul_mul_16s_16s_30_1_1_DSP48_2_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/network_0/inst/grp_depthwise_conv2d_fix_2_fu_427/add_ln48_reg_1554_reg multiplier stage design_1_i/network_0/inst/grp_depthwise_conv2d_fix_2_fu_427/add_ln48_reg_1554_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/network_0/inst/grp_depthwise_conv2d_fix_2_fu_427/network_mul_mul_16s_16s_30_1_1_U34/network_mul_mul_16s_16s_30_1_1_DSP48_2_U/p multiplier stage design_1_i/network_0/inst/grp_depthwise_conv2d_fix_2_fu_427/network_mul_mul_16s_16s_30_1_1_U34/network_mul_mul_16s_16s_30_1_1_DSP48_2_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/network_0/inst/grp_depthwise_conv2d_fix_2_fu_427/network_mul_mul_16s_16s_30_1_1_U35/network_mul_mul_16s_16s_30_1_1_DSP48_2_U/p multiplier stage design_1_i/network_0/inst/grp_depthwise_conv2d_fix_2_fu_427/network_mul_mul_16s_16s_30_1_1_U35/network_mul_mul_16s_16s_30_1_1_DSP48_2_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/network_0/inst/grp_depthwise_conv2d_fix_2_fu_427/network_mul_mul_16s_16s_30_1_1_U36/network_mul_mul_16s_16s_30_1_1_DSP48_2_U/p multiplier stage design_1_i/network_0/inst/grp_depthwise_conv2d_fix_2_fu_427/network_mul_mul_16s_16s_30_1_1_U36/network_mul_mul_16s_16s_30_1_1_DSP48_2_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/network_0/inst/grp_depthwise_conv2d_fix_2_fu_427/network_mul_mul_16s_16s_30_1_1_U37/network_mul_mul_16s_16s_30_1_1_DSP48_2_U/p multiplier stage design_1_i/network_0/inst/grp_depthwise_conv2d_fix_2_fu_427/network_mul_mul_16s_16s_30_1_1_U37/network_mul_mul_16s_16s_30_1_1_DSP48_2_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/network_0/inst/grp_depthwise_conv2d_fix_2_fu_427/network_mul_mul_16s_16s_30_1_1_U38/network_mul_mul_16s_16s_30_1_1_DSP48_2_U/p multiplier stage design_1_i/network_0/inst/grp_depthwise_conv2d_fix_2_fu_427/network_mul_mul_16s_16s_30_1_1_U38/network_mul_mul_16s_16s_30_1_1_DSP48_2_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/network_0/inst/grp_depthwise_conv2d_fix_2_fu_427/network_mul_mul_16s_16s_30_1_1_U39/network_mul_mul_16s_16s_30_1_1_DSP48_2_U/p multiplier stage design_1_i/network_0/inst/grp_depthwise_conv2d_fix_2_fu_427/network_mul_mul_16s_16s_30_1_1_U39/network_mul_mul_16s_16s_30_1_1_DSP48_2_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/network_0/inst/grp_depthwise_conv2d_fix_2_fu_427/network_mul_mul_16s_16s_30_1_1_U40/network_mul_mul_16s_16s_30_1_1_DSP48_2_U/p multiplier stage design_1_i/network_0/inst/grp_depthwise_conv2d_fix_2_fu_427/network_mul_mul_16s_16s_30_1_1_U40/network_mul_mul_16s_16s_30_1_1_DSP48_2_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/network_0/inst/grp_depthwise_conv2d_fix_2_fu_427/network_mul_mul_16s_16s_30_1_1_U41/network_mul_mul_16s_16s_30_1_1_DSP48_2_U/p multiplier stage design_1_i/network_0/inst/grp_depthwise_conv2d_fix_2_fu_427/network_mul_mul_16s_16s_30_1_1_U41/network_mul_mul_16s_16s_30_1_1_DSP48_2_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/network_0/inst/grp_depthwise_conv2d_fix_2_fu_427/network_mul_mul_16s_16s_30_1_1_U43/network_mul_mul_16s_16s_30_1_1_DSP48_2_U/p multiplier stage design_1_i/network_0/inst/grp_depthwise_conv2d_fix_2_fu_427/network_mul_mul_16s_16s_30_1_1_U43/network_mul_mul_16s_16s_30_1_1_DSP48_2_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/network_0/inst/grp_depthwise_conv2d_fix_2_fu_427/tmp10_0_0_mid2_reg_1332_reg multiplier stage design_1_i/network_0/inst/grp_depthwise_conv2d_fix_2_fu_427/tmp10_0_0_mid2_reg_1332_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/network_0/inst/grp_depthwise_conv2d_fix_2_fu_427/tmp10_1_0_mid2_reg_1339_reg multiplier stage design_1_i/network_0/inst/grp_depthwise_conv2d_fix_2_fu_427/tmp10_1_0_mid2_reg_1339_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/network_0/inst/grp_depthwise_conv2d_fix_2_fu_427/tmp10_2_0_mid2_reg_1356_reg multiplier stage design_1_i/network_0/inst/grp_depthwise_conv2d_fix_2_fu_427/tmp10_2_0_mid2_reg_1356_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/network_0/inst/grp_depthwise_conv2d_fix_fu_475/network_mul_mul_16s_15s_30_1_1_U14/network_mul_mul_16s_15s_30_1_1_DSP48_0_U/p multiplier stage design_1_i/network_0/inst/grp_depthwise_conv2d_fix_fu_475/network_mul_mul_16s_15s_30_1_1_U14/network_mul_mul_16s_15s_30_1_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/network_0/inst/grp_depthwise_conv2d_fix_fu_475/network_mul_mul_16s_15s_30_1_1_U6/network_mul_mul_16s_15s_30_1_1_DSP48_0_U/p multiplier stage design_1_i/network_0/inst/grp_depthwise_conv2d_fix_fu_475/network_mul_mul_16s_15s_30_1_1_U6/network_mul_mul_16s_15s_30_1_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/network_0/inst/grp_depthwise_conv2d_fix_fu_475/network_mul_mul_16s_15s_30_1_1_U7/network_mul_mul_16s_15s_30_1_1_DSP48_0_U/p multiplier stage design_1_i/network_0/inst/grp_depthwise_conv2d_fix_fu_475/network_mul_mul_16s_15s_30_1_1_U7/network_mul_mul_16s_15s_30_1_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/network_0/inst/grp_depthwise_conv2d_fix_fu_475/network_mul_mul_16s_15s_30_1_1_U8/network_mul_mul_16s_15s_30_1_1_DSP48_0_U/p multiplier stage design_1_i/network_0/inst/grp_depthwise_conv2d_fix_fu_475/network_mul_mul_16s_15s_30_1_1_U8/network_mul_mul_16s_15s_30_1_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/network_0/inst/grp_depthwise_conv2d_fix_fu_475/network_mul_mul_16s_15s_30_1_1_U9/network_mul_mul_16s_15s_30_1_1_DSP48_0_U/p multiplier stage design_1_i/network_0/inst/grp_depthwise_conv2d_fix_fu_475/network_mul_mul_16s_15s_30_1_1_U9/network_mul_mul_16s_15s_30_1_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/network_0/inst/grp_max_pooling2d_fix16_fu_525/add_ln34_reg_882_reg multiplier stage design_1_i/network_0/inst/grp_max_pooling2d_fix16_fu_525/add_ln34_reg_882_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/network_0/inst/grp_max_pooling2d_fix16_fu_525/mul_ln9_1_reg_717_reg multiplier stage design_1_i/network_0/inst/grp_max_pooling2d_fix16_fu_525/mul_ln9_1_reg_717_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/network_0/inst/grp_pointwise_conv2d_fix_1_fu_483/mul_ln39_fu_1336_p2 multiplier stage design_1_i/network_0/inst/grp_pointwise_conv2d_fix_1_fu_483/mul_ln39_fu_1336_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/network_0/inst/grp_pointwise_conv2d_fix_1_fu_483/mul_ln39_reg_1654_reg multiplier stage design_1_i/network_0/inst/grp_pointwise_conv2d_fix_1_fu_483/mul_ln39_reg_1654_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/network_0/inst/grp_pointwise_conv2d_fix_1_fu_483/network_mac_muladd_9ns_5ns_9s_13_1_1_U57/network_mac_muladd_9ns_5ns_9s_13_1_1_DSP48_4_U/p multiplier stage design_1_i/network_0/inst/grp_pointwise_conv2d_fix_1_fu_483/network_mac_muladd_9ns_5ns_9s_13_1_1_U57/network_mac_muladd_9ns_5ns_9s_13_1_1_DSP48_4_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/network_0/inst/grp_pointwise_conv2d_fix_2_fu_495/mul_ln39_fu_1034_p2 multiplier stage design_1_i/network_0/inst/grp_pointwise_conv2d_fix_2_fu_495/mul_ln39_fu_1034_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/network_0/inst/grp_pointwise_conv2d_fix_2_fu_495/mul_ln39_reg_1339_reg multiplier stage design_1_i/network_0/inst/grp_pointwise_conv2d_fix_2_fu_495/mul_ln39_reg_1339_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/network_0/inst/grp_pointwise_conv2d_fix_2_fu_495/network_mac_muladd_4ns_7ns_7s_10_1_1_U86/network_mac_muladd_4ns_7ns_7s_10_1_1_DSP48_6_U/p multiplier stage design_1_i/network_0/inst/grp_pointwise_conv2d_fix_2_fu_495/network_mac_muladd_4ns_7ns_7s_10_1_1_U86/network_mac_muladd_4ns_7ns_7s_10_1_1_DSP48_6_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/network_0/inst/grp_pointwise_conv2d_fix_3_fu_489/mul_ln39_fu_1346_p2 multiplier stage design_1_i/network_0/inst/grp_pointwise_conv2d_fix_3_fu_489/mul_ln39_fu_1346_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/network_0/inst/grp_pointwise_conv2d_fix_3_fu_489/mul_ln39_reg_1651_reg multiplier stage design_1_i/network_0/inst/grp_pointwise_conv2d_fix_3_fu_489/mul_ln39_reg_1651_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/network_0/inst/grp_pointwise_conv2d_fix_3_fu_489/network_mac_muladd_4ns_9ns_9s_12_1_1_U108/network_mac_muladd_4ns_9ns_9s_12_1_1_DSP48_10_U/p multiplier stage design_1_i/network_0/inst/grp_pointwise_conv2d_fix_3_fu_489/network_mac_muladd_4ns_9ns_9s_12_1_1_U108/network_mac_muladd_4ns_9ns_9s_12_1_1_DSP48_10_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/network_0/inst/grp_pointwise_conv2d_fix_4_fu_501/mul_ln39_fu_777_p2 multiplier stage design_1_i/network_0/inst/grp_pointwise_conv2d_fix_4_fu_501/mul_ln39_fu_777_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/network_0/inst/grp_pointwise_conv2d_fix_4_fu_501/mul_ln39_reg_1045_reg multiplier stage design_1_i/network_0/inst/grp_pointwise_conv2d_fix_4_fu_501/mul_ln39_reg_1045_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/network_0/inst/grp_pointwise_conv2d_fix_4_fu_501/network_mac_muladd_11ns_5ns_11s_15_1_1_U116/network_mac_muladd_11ns_5ns_11s_15_1_1_DSP48_11_U/p multiplier stage design_1_i/network_0/inst/grp_pointwise_conv2d_fix_4_fu_501/network_mac_muladd_11ns_5ns_11s_15_1_1_U116/network_mac_muladd_11ns_5ns_11s_15_1_1_DSP48_11_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/network_0/inst/grp_pointwise_conv2d_fix_fu_546/mul_ln39_fu_491_p2 multiplier stage design_1_i/network_0/inst/grp_pointwise_conv2d_fix_fu_546/mul_ln39_fu_491_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/network_0/inst/grp_up_sampling2d_fix16_fu_552/add_ln18_1_reg_623_reg multiplier stage design_1_i/network_0/inst/grp_up_sampling2d_fix16_fu_552/add_ln18_1_reg_623_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/network_0/inst/grp_up_sampling2d_fix16_fu_552/mul_ln6_1_reg_559_reg multiplier stage design_1_i/network_0/inst/grp_up_sampling2d_fix16_fu_552/mul_ln6_1_reg_559_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/network_0/inst/grp_up_sampling2d_fix16_fu_552/network_mac_muladd_8ns_5ns_4ns_12_1_1_U93/network_mac_muladd_8ns_5ns_4ns_12_1_1_DSP48_8_U/p multiplier stage design_1_i/network_0/inst/grp_up_sampling2d_fix16_fu_552/network_mac_muladd_8ns_5ns_4ns_12_1_1_U93/network_mac_muladd_8ns_5ns_4ns_12_1_1_DSP48_8_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-INFO: [DRC REQP-20] enum_AREG_0_connects_CEA1_GND_connects_CEA2_GND: design_1_i/network_0/inst/grp_depthwise_conv2d_fix_2_fu_427/tmp10_0_0_mid2_reg_1332_reg: When DSP48E1 attribute AREG is set to 0, the CEA1 and CEA2 pins should be tied to GND to save power.
-INFO: [DRC REQP-20] enum_AREG_0_connects_CEA1_GND_connects_CEA2_GND: design_1_i/network_0/inst/grp_max_pooling2d_fix16_fu_525/add_ln26_1_fu_499_p2: When DSP48E1 attribute AREG is set to 0, the CEA1 and CEA2 pins should be tied to GND to save power.
-INFO: [DRC REQP-20] enum_AREG_0_connects_CEA1_GND_connects_CEA2_GND: design_1_i/network_0/inst/grp_max_pooling2d_fix16_fu_525/add_ln26_fu_479_p2: When DSP48E1 attribute AREG is set to 0, the CEA1 and CEA2 pins should be tied to GND to save power.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/network_0/inst/grp_depthwise_conv2d_fix_2_fu_423/add_ln40_10_reg_1504_reg input design_1_i/network_0/inst/grp_depthwise_conv2d_fix_2_fu_423/add_ln40_10_reg_1504_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/network_0/inst/grp_depthwise_conv2d_fix_2_fu_423/tmp10_0_0_mid2_reg_1332_reg input design_1_i/network_0/inst/grp_depthwise_conv2d_fix_2_fu_423/tmp10_0_0_mid2_reg_1332_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/network_0/inst/grp_depthwise_conv2d_fix_2_fu_423/tmp10_1_0_mid2_reg_1339_reg input design_1_i/network_0/inst/grp_depthwise_conv2d_fix_2_fu_423/tmp10_1_0_mid2_reg_1339_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/network_0/inst/grp_depthwise_conv2d_fix_2_fu_423/tmp10_2_0_mid2_reg_1356_reg input design_1_i/network_0/inst/grp_depthwise_conv2d_fix_2_fu_423/tmp10_2_0_mid2_reg_1356_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/network_0/inst/grp_max_pooling2d_fix16_fu_521/add_ln28_1_fu_499_p2 input design_1_i/network_0/inst/grp_max_pooling2d_fix16_fu_521/add_ln28_1_fu_499_p2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/network_0/inst/grp_max_pooling2d_fix16_fu_521/add_ln28_1_fu_499_p2 input design_1_i/network_0/inst/grp_max_pooling2d_fix16_fu_521/add_ln28_1_fu_499_p2/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/network_0/inst/grp_max_pooling2d_fix16_fu_521/add_ln28_2_reg_808_reg input design_1_i/network_0/inst/grp_max_pooling2d_fix16_fu_521/add_ln28_2_reg_808_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/network_0/inst/grp_max_pooling2d_fix16_fu_521/add_ln28_2_reg_808_reg input design_1_i/network_0/inst/grp_max_pooling2d_fix16_fu_521/add_ln28_2_reg_808_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/network_0/inst/grp_max_pooling2d_fix16_fu_521/add_ln28_3_reg_814_reg input design_1_i/network_0/inst/grp_max_pooling2d_fix16_fu_521/add_ln28_3_reg_814_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/network_0/inst/grp_max_pooling2d_fix16_fu_521/add_ln28_3_reg_814_reg input design_1_i/network_0/inst/grp_max_pooling2d_fix16_fu_521/add_ln28_3_reg_814_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/network_0/inst/grp_max_pooling2d_fix16_fu_521/add_ln28_fu_479_p2 input design_1_i/network_0/inst/grp_max_pooling2d_fix16_fu_521/add_ln28_fu_479_p2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/network_0/inst/grp_max_pooling2d_fix16_fu_521/add_ln28_fu_479_p2 input design_1_i/network_0/inst/grp_max_pooling2d_fix16_fu_521/add_ln28_fu_479_p2/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/network_0/inst/grp_max_pooling2d_fix16_fu_521/mul_ln9_1_reg_717_reg input design_1_i/network_0/inst/grp_max_pooling2d_fix16_fu_521/mul_ln9_1_reg_717_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/network_0/inst/grp_max_pooling2d_fix16_fu_521/mul_ln9_1_reg_717_reg input design_1_i/network_0/inst/grp_max_pooling2d_fix16_fu_521/mul_ln9_1_reg_717_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/network_0/inst/grp_up_sampling2d_fix16_fu_548/mul_ln6_1_reg_559_reg input design_1_i/network_0/inst/grp_up_sampling2d_fix16_fu_548/mul_ln6_1_reg_559_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP design_1_i/network_0/inst/grp_depthwise_conv2d_fix_1_fu_447/network_mul_mul_16s_16s_29_1_1_U66/network_mul_mul_16s_16s_29_1_1_DSP48_2_U/p output design_1_i/network_0/inst/grp_depthwise_conv2d_fix_1_fu_447/network_mul_mul_16s_16s_29_1_1_U66/network_mul_mul_16s_16s_29_1_1_DSP48_2_U/p/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP design_1_i/network_0/inst/grp_depthwise_conv2d_fix_1_fu_447/network_mul_mul_16s_16s_29_1_1_U67/network_mul_mul_16s_16s_29_1_1_DSP48_2_U/p output design_1_i/network_0/inst/grp_depthwise_conv2d_fix_1_fu_447/network_mul_mul_16s_16s_29_1_1_U67/network_mul_mul_16s_16s_29_1_1_DSP48_2_U/p/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP design_1_i/network_0/inst/grp_depthwise_conv2d_fix_1_fu_447/network_mul_mul_16s_16s_29_1_1_U68/network_mul_mul_16s_16s_29_1_1_DSP48_2_U/p output design_1_i/network_0/inst/grp_depthwise_conv2d_fix_1_fu_447/network_mul_mul_16s_16s_29_1_1_U68/network_mul_mul_16s_16s_29_1_1_DSP48_2_U/p/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP design_1_i/network_0/inst/grp_depthwise_conv2d_fix_fu_471/network_mul_mul_16s_13s_29_1_1_U6/network_mul_mul_16s_13s_29_1_1_DSP48_0_U/p output design_1_i/network_0/inst/grp_depthwise_conv2d_fix_fu_471/network_mul_mul_16s_13s_29_1_1_U6/network_mul_mul_16s_13s_29_1_1_DSP48_0_U/p/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP design_1_i/network_0/inst/grp_depthwise_conv2d_fix_fu_471/network_mul_mul_16s_13s_29_1_1_U7/network_mul_mul_16s_13s_29_1_1_DSP48_0_U/p output design_1_i/network_0/inst/grp_depthwise_conv2d_fix_fu_471/network_mul_mul_16s_13s_29_1_1_U7/network_mul_mul_16s_13s_29_1_1_DSP48_0_U/p/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP design_1_i/network_0/inst/grp_depthwise_conv2d_fix_fu_471/network_mul_mul_16s_13s_29_1_1_U8/network_mul_mul_16s_13s_29_1_1_DSP48_0_U/p output design_1_i/network_0/inst/grp_depthwise_conv2d_fix_fu_471/network_mul_mul_16s_13s_29_1_1_U8/network_mul_mul_16s_13s_29_1_1_DSP48_0_U/p/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP design_1_i/network_0/inst/grp_depthwise_conv2d_fix_fu_471/network_mul_mul_16s_13s_29_1_1_U9/network_mul_mul_16s_13s_29_1_1_DSP48_0_U/p output design_1_i/network_0/inst/grp_depthwise_conv2d_fix_fu_471/network_mul_mul_16s_13s_29_1_1_U9/network_mul_mul_16s_13s_29_1_1_DSP48_0_U/p/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP design_1_i/network_0/inst/grp_max_pooling2d_fix16_fu_521/add_ln28_1_fu_499_p2 output design_1_i/network_0/inst/grp_max_pooling2d_fix16_fu_521/add_ln28_1_fu_499_p2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP design_1_i/network_0/inst/grp_max_pooling2d_fix16_fu_521/add_ln28_fu_479_p2 output design_1_i/network_0/inst/grp_max_pooling2d_fix16_fu_521/add_ln28_fu_479_p2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP design_1_i/network_0/inst/grp_pointwise_conv2d_fix_1_fu_479/mul_ln39_fu_1334_p2 output design_1_i/network_0/inst/grp_pointwise_conv2d_fix_1_fu_479/mul_ln39_fu_1334_p2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP design_1_i/network_0/inst/grp_pointwise_conv2d_fix_1_fu_479/network_mac_muladd_9ns_5ns_9s_13_1_1_U57/network_mac_muladd_9ns_5ns_9s_13_1_1_DSP48_4_U/p output design_1_i/network_0/inst/grp_pointwise_conv2d_fix_1_fu_479/network_mac_muladd_9ns_5ns_9s_13_1_1_U57/network_mac_muladd_9ns_5ns_9s_13_1_1_DSP48_4_U/p/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP design_1_i/network_0/inst/grp_pointwise_conv2d_fix_2_fu_491/mul_ln39_fu_1034_p2 output design_1_i/network_0/inst/grp_pointwise_conv2d_fix_2_fu_491/mul_ln39_fu_1034_p2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP design_1_i/network_0/inst/grp_pointwise_conv2d_fix_2_fu_491/network_mac_muladd_4ns_7ns_7s_10_1_1_U86/network_mac_muladd_4ns_7ns_7s_10_1_1_DSP48_6_U/p output design_1_i/network_0/inst/grp_pointwise_conv2d_fix_2_fu_491/network_mac_muladd_4ns_7ns_7s_10_1_1_U86/network_mac_muladd_4ns_7ns_7s_10_1_1_DSP48_6_U/p/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP design_1_i/network_0/inst/grp_pointwise_conv2d_fix_3_fu_485/mul_ln39_fu_1350_p2 output design_1_i/network_0/inst/grp_pointwise_conv2d_fix_3_fu_485/mul_ln39_fu_1350_p2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP design_1_i/network_0/inst/grp_pointwise_conv2d_fix_3_fu_485/network_mac_muladd_4ns_9ns_9s_12_1_1_U108/network_mac_muladd_4ns_9ns_9s_12_1_1_DSP48_10_U/p output design_1_i/network_0/inst/grp_pointwise_conv2d_fix_3_fu_485/network_mac_muladd_4ns_9ns_9s_12_1_1_U108/network_mac_muladd_4ns_9ns_9s_12_1_1_DSP48_10_U/p/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP design_1_i/network_0/inst/grp_pointwise_conv2d_fix_4_fu_497/mul_ln39_fu_777_p2 output design_1_i/network_0/inst/grp_pointwise_conv2d_fix_4_fu_497/mul_ln39_fu_777_p2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP design_1_i/network_0/inst/grp_pointwise_conv2d_fix_4_fu_497/network_mac_muladd_11ns_5ns_11s_15_1_1_U116/network_mac_muladd_11ns_5ns_11s_15_1_1_DSP48_11_U/p output design_1_i/network_0/inst/grp_pointwise_conv2d_fix_4_fu_497/network_mac_muladd_11ns_5ns_11s_15_1_1_U116/network_mac_muladd_11ns_5ns_11s_15_1_1_DSP48_11_U/p/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP design_1_i/network_0/inst/grp_up_sampling2d_fix16_fu_548/network_mac_muladd_8ns_5ns_4ns_12_1_1_U93/network_mac_muladd_8ns_5ns_4ns_12_1_1_DSP48_8_U/p output design_1_i/network_0/inst/grp_up_sampling2d_fix16_fu_548/network_mac_muladd_8ns_5ns_4ns_12_1_1_U93/network_mac_muladd_8ns_5ns_4ns_12_1_1_DSP48_8_U/p/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/network_0/inst/grp_depthwise_conv2d_fix_1_fu_447/add_ln48_reg_1544_reg multiplier stage design_1_i/network_0/inst/grp_depthwise_conv2d_fix_1_fu_447/add_ln48_reg_1544_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/network_0/inst/grp_depthwise_conv2d_fix_1_fu_447/network_mul_mul_16s_16s_29_1_1_U64/network_mul_mul_16s_16s_29_1_1_DSP48_2_U/p multiplier stage design_1_i/network_0/inst/grp_depthwise_conv2d_fix_1_fu_447/network_mul_mul_16s_16s_29_1_1_U64/network_mul_mul_16s_16s_29_1_1_DSP48_2_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/network_0/inst/grp_depthwise_conv2d_fix_1_fu_447/network_mul_mul_16s_16s_29_1_1_U65/network_mul_mul_16s_16s_29_1_1_DSP48_2_U/p multiplier stage design_1_i/network_0/inst/grp_depthwise_conv2d_fix_1_fu_447/network_mul_mul_16s_16s_29_1_1_U65/network_mul_mul_16s_16s_29_1_1_DSP48_2_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/network_0/inst/grp_depthwise_conv2d_fix_1_fu_447/network_mul_mul_16s_16s_29_1_1_U66/network_mul_mul_16s_16s_29_1_1_DSP48_2_U/p multiplier stage design_1_i/network_0/inst/grp_depthwise_conv2d_fix_1_fu_447/network_mul_mul_16s_16s_29_1_1_U66/network_mul_mul_16s_16s_29_1_1_DSP48_2_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/network_0/inst/grp_depthwise_conv2d_fix_1_fu_447/network_mul_mul_16s_16s_29_1_1_U67/network_mul_mul_16s_16s_29_1_1_DSP48_2_U/p multiplier stage design_1_i/network_0/inst/grp_depthwise_conv2d_fix_1_fu_447/network_mul_mul_16s_16s_29_1_1_U67/network_mul_mul_16s_16s_29_1_1_DSP48_2_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/network_0/inst/grp_depthwise_conv2d_fix_1_fu_447/network_mul_mul_16s_16s_29_1_1_U68/network_mul_mul_16s_16s_29_1_1_DSP48_2_U/p multiplier stage design_1_i/network_0/inst/grp_depthwise_conv2d_fix_1_fu_447/network_mul_mul_16s_16s_29_1_1_U68/network_mul_mul_16s_16s_29_1_1_DSP48_2_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/network_0/inst/grp_depthwise_conv2d_fix_2_fu_423/add_ln48_reg_1554_reg multiplier stage design_1_i/network_0/inst/grp_depthwise_conv2d_fix_2_fu_423/add_ln48_reg_1554_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/network_0/inst/grp_depthwise_conv2d_fix_2_fu_423/network_mul_mul_16s_16s_29_1_1_U34/network_mul_mul_16s_16s_29_1_1_DSP48_2_U/p multiplier stage design_1_i/network_0/inst/grp_depthwise_conv2d_fix_2_fu_423/network_mul_mul_16s_16s_29_1_1_U34/network_mul_mul_16s_16s_29_1_1_DSP48_2_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/network_0/inst/grp_depthwise_conv2d_fix_2_fu_423/network_mul_mul_16s_16s_29_1_1_U35/network_mul_mul_16s_16s_29_1_1_DSP48_2_U/p multiplier stage design_1_i/network_0/inst/grp_depthwise_conv2d_fix_2_fu_423/network_mul_mul_16s_16s_29_1_1_U35/network_mul_mul_16s_16s_29_1_1_DSP48_2_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/network_0/inst/grp_depthwise_conv2d_fix_2_fu_423/network_mul_mul_16s_16s_29_1_1_U36/network_mul_mul_16s_16s_29_1_1_DSP48_2_U/p multiplier stage design_1_i/network_0/inst/grp_depthwise_conv2d_fix_2_fu_423/network_mul_mul_16s_16s_29_1_1_U36/network_mul_mul_16s_16s_29_1_1_DSP48_2_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/network_0/inst/grp_depthwise_conv2d_fix_2_fu_423/network_mul_mul_16s_16s_29_1_1_U37/network_mul_mul_16s_16s_29_1_1_DSP48_2_U/p multiplier stage design_1_i/network_0/inst/grp_depthwise_conv2d_fix_2_fu_423/network_mul_mul_16s_16s_29_1_1_U37/network_mul_mul_16s_16s_29_1_1_DSP48_2_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/network_0/inst/grp_depthwise_conv2d_fix_2_fu_423/network_mul_mul_16s_16s_29_1_1_U38/network_mul_mul_16s_16s_29_1_1_DSP48_2_U/p multiplier stage design_1_i/network_0/inst/grp_depthwise_conv2d_fix_2_fu_423/network_mul_mul_16s_16s_29_1_1_U38/network_mul_mul_16s_16s_29_1_1_DSP48_2_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/network_0/inst/grp_depthwise_conv2d_fix_2_fu_423/network_mul_mul_16s_16s_29_1_1_U39/network_mul_mul_16s_16s_29_1_1_DSP48_2_U/p multiplier stage design_1_i/network_0/inst/grp_depthwise_conv2d_fix_2_fu_423/network_mul_mul_16s_16s_29_1_1_U39/network_mul_mul_16s_16s_29_1_1_DSP48_2_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/network_0/inst/grp_depthwise_conv2d_fix_2_fu_423/network_mul_mul_16s_16s_29_1_1_U40/network_mul_mul_16s_16s_29_1_1_DSP48_2_U/p multiplier stage design_1_i/network_0/inst/grp_depthwise_conv2d_fix_2_fu_423/network_mul_mul_16s_16s_29_1_1_U40/network_mul_mul_16s_16s_29_1_1_DSP48_2_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/network_0/inst/grp_depthwise_conv2d_fix_2_fu_423/network_mul_mul_16s_16s_29_1_1_U41/network_mul_mul_16s_16s_29_1_1_DSP48_2_U/p multiplier stage design_1_i/network_0/inst/grp_depthwise_conv2d_fix_2_fu_423/network_mul_mul_16s_16s_29_1_1_U41/network_mul_mul_16s_16s_29_1_1_DSP48_2_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/network_0/inst/grp_depthwise_conv2d_fix_2_fu_423/network_mul_mul_16s_16s_29_1_1_U43/network_mul_mul_16s_16s_29_1_1_DSP48_2_U/p multiplier stage design_1_i/network_0/inst/grp_depthwise_conv2d_fix_2_fu_423/network_mul_mul_16s_16s_29_1_1_U43/network_mul_mul_16s_16s_29_1_1_DSP48_2_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/network_0/inst/grp_depthwise_conv2d_fix_2_fu_423/tmp10_0_0_mid2_reg_1332_reg multiplier stage design_1_i/network_0/inst/grp_depthwise_conv2d_fix_2_fu_423/tmp10_0_0_mid2_reg_1332_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/network_0/inst/grp_depthwise_conv2d_fix_2_fu_423/tmp10_1_0_mid2_reg_1339_reg multiplier stage design_1_i/network_0/inst/grp_depthwise_conv2d_fix_2_fu_423/tmp10_1_0_mid2_reg_1339_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/network_0/inst/grp_depthwise_conv2d_fix_2_fu_423/tmp10_2_0_mid2_reg_1356_reg multiplier stage design_1_i/network_0/inst/grp_depthwise_conv2d_fix_2_fu_423/tmp10_2_0_mid2_reg_1356_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/network_0/inst/grp_depthwise_conv2d_fix_fu_471/network_mul_mul_16s_13s_29_1_1_U14/network_mul_mul_16s_13s_29_1_1_DSP48_0_U/p multiplier stage design_1_i/network_0/inst/grp_depthwise_conv2d_fix_fu_471/network_mul_mul_16s_13s_29_1_1_U14/network_mul_mul_16s_13s_29_1_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/network_0/inst/grp_depthwise_conv2d_fix_fu_471/network_mul_mul_16s_13s_29_1_1_U6/network_mul_mul_16s_13s_29_1_1_DSP48_0_U/p multiplier stage design_1_i/network_0/inst/grp_depthwise_conv2d_fix_fu_471/network_mul_mul_16s_13s_29_1_1_U6/network_mul_mul_16s_13s_29_1_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/network_0/inst/grp_depthwise_conv2d_fix_fu_471/network_mul_mul_16s_13s_29_1_1_U7/network_mul_mul_16s_13s_29_1_1_DSP48_0_U/p multiplier stage design_1_i/network_0/inst/grp_depthwise_conv2d_fix_fu_471/network_mul_mul_16s_13s_29_1_1_U7/network_mul_mul_16s_13s_29_1_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/network_0/inst/grp_depthwise_conv2d_fix_fu_471/network_mul_mul_16s_13s_29_1_1_U8/network_mul_mul_16s_13s_29_1_1_DSP48_0_U/p multiplier stage design_1_i/network_0/inst/grp_depthwise_conv2d_fix_fu_471/network_mul_mul_16s_13s_29_1_1_U8/network_mul_mul_16s_13s_29_1_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/network_0/inst/grp_depthwise_conv2d_fix_fu_471/network_mul_mul_16s_13s_29_1_1_U9/network_mul_mul_16s_13s_29_1_1_DSP48_0_U/p multiplier stage design_1_i/network_0/inst/grp_depthwise_conv2d_fix_fu_471/network_mul_mul_16s_13s_29_1_1_U9/network_mul_mul_16s_13s_29_1_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/network_0/inst/grp_max_pooling2d_fix16_fu_521/add_ln36_reg_882_reg multiplier stage design_1_i/network_0/inst/grp_max_pooling2d_fix16_fu_521/add_ln36_reg_882_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/network_0/inst/grp_max_pooling2d_fix16_fu_521/mul_ln9_1_reg_717_reg multiplier stage design_1_i/network_0/inst/grp_max_pooling2d_fix16_fu_521/mul_ln9_1_reg_717_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/network_0/inst/grp_pointwise_conv2d_fix_1_fu_479/mul_ln39_fu_1334_p2 multiplier stage design_1_i/network_0/inst/grp_pointwise_conv2d_fix_1_fu_479/mul_ln39_fu_1334_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/network_0/inst/grp_pointwise_conv2d_fix_1_fu_479/mul_ln39_reg_1652_reg multiplier stage design_1_i/network_0/inst/grp_pointwise_conv2d_fix_1_fu_479/mul_ln39_reg_1652_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/network_0/inst/grp_pointwise_conv2d_fix_1_fu_479/network_mac_muladd_9ns_5ns_9s_13_1_1_U57/network_mac_muladd_9ns_5ns_9s_13_1_1_DSP48_4_U/p multiplier stage design_1_i/network_0/inst/grp_pointwise_conv2d_fix_1_fu_479/network_mac_muladd_9ns_5ns_9s_13_1_1_U57/network_mac_muladd_9ns_5ns_9s_13_1_1_DSP48_4_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/network_0/inst/grp_pointwise_conv2d_fix_2_fu_491/mul_ln39_fu_1034_p2 multiplier stage design_1_i/network_0/inst/grp_pointwise_conv2d_fix_2_fu_491/mul_ln39_fu_1034_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/network_0/inst/grp_pointwise_conv2d_fix_2_fu_491/mul_ln39_reg_1339_reg multiplier stage design_1_i/network_0/inst/grp_pointwise_conv2d_fix_2_fu_491/mul_ln39_reg_1339_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/network_0/inst/grp_pointwise_conv2d_fix_2_fu_491/network_mac_muladd_4ns_7ns_7s_10_1_1_U86/network_mac_muladd_4ns_7ns_7s_10_1_1_DSP48_6_U/p multiplier stage design_1_i/network_0/inst/grp_pointwise_conv2d_fix_2_fu_491/network_mac_muladd_4ns_7ns_7s_10_1_1_U86/network_mac_muladd_4ns_7ns_7s_10_1_1_DSP48_6_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/network_0/inst/grp_pointwise_conv2d_fix_3_fu_485/mul_ln39_fu_1350_p2 multiplier stage design_1_i/network_0/inst/grp_pointwise_conv2d_fix_3_fu_485/mul_ln39_fu_1350_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/network_0/inst/grp_pointwise_conv2d_fix_3_fu_485/mul_ln39_reg_1655_reg multiplier stage design_1_i/network_0/inst/grp_pointwise_conv2d_fix_3_fu_485/mul_ln39_reg_1655_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/network_0/inst/grp_pointwise_conv2d_fix_3_fu_485/network_mac_muladd_4ns_9ns_9s_12_1_1_U108/network_mac_muladd_4ns_9ns_9s_12_1_1_DSP48_10_U/p multiplier stage design_1_i/network_0/inst/grp_pointwise_conv2d_fix_3_fu_485/network_mac_muladd_4ns_9ns_9s_12_1_1_U108/network_mac_muladd_4ns_9ns_9s_12_1_1_DSP48_10_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/network_0/inst/grp_pointwise_conv2d_fix_4_fu_497/mul_ln39_fu_777_p2 multiplier stage design_1_i/network_0/inst/grp_pointwise_conv2d_fix_4_fu_497/mul_ln39_fu_777_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/network_0/inst/grp_pointwise_conv2d_fix_4_fu_497/mul_ln39_reg_1045_reg multiplier stage design_1_i/network_0/inst/grp_pointwise_conv2d_fix_4_fu_497/mul_ln39_reg_1045_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/network_0/inst/grp_pointwise_conv2d_fix_4_fu_497/network_mac_muladd_11ns_5ns_11s_15_1_1_U116/network_mac_muladd_11ns_5ns_11s_15_1_1_DSP48_11_U/p multiplier stage design_1_i/network_0/inst/grp_pointwise_conv2d_fix_4_fu_497/network_mac_muladd_11ns_5ns_11s_15_1_1_U116/network_mac_muladd_11ns_5ns_11s_15_1_1_DSP48_11_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/network_0/inst/grp_pointwise_conv2d_fix_fu_542/mul_ln39_fu_493_p2 multiplier stage design_1_i/network_0/inst/grp_pointwise_conv2d_fix_fu_542/mul_ln39_fu_493_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/network_0/inst/grp_up_sampling2d_fix16_fu_548/add_ln18_1_reg_623_reg multiplier stage design_1_i/network_0/inst/grp_up_sampling2d_fix16_fu_548/add_ln18_1_reg_623_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/network_0/inst/grp_up_sampling2d_fix16_fu_548/mul_ln6_1_reg_559_reg multiplier stage design_1_i/network_0/inst/grp_up_sampling2d_fix16_fu_548/mul_ln6_1_reg_559_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/network_0/inst/grp_up_sampling2d_fix16_fu_548/network_mac_muladd_8ns_5ns_4ns_12_1_1_U93/network_mac_muladd_8ns_5ns_4ns_12_1_1_DSP48_8_U/p multiplier stage design_1_i/network_0/inst/grp_up_sampling2d_fix16_fu_548/network_mac_muladd_8ns_5ns_4ns_12_1_1_U93/network_mac_muladd_8ns_5ns_4ns_12_1_1_DSP48_8_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+INFO: [DRC REQP-20] enum_AREG_0_connects_CEA1_GND_connects_CEA2_GND: design_1_i/network_0/inst/grp_depthwise_conv2d_fix_2_fu_423/tmp10_0_0_mid2_reg_1332_reg: When DSP48E1 attribute AREG is set to 0, the CEA1 and CEA2 pins should be tied to GND to save power.
+INFO: [DRC REQP-20] enum_AREG_0_connects_CEA1_GND_connects_CEA2_GND: design_1_i/network_0/inst/grp_max_pooling2d_fix16_fu_521/add_ln28_1_fu_499_p2: When DSP48E1 attribute AREG is set to 0, the CEA1 and CEA2 pins should be tied to GND to save power.
+INFO: [DRC REQP-20] enum_AREG_0_connects_CEA1_GND_connects_CEA2_GND: design_1_i/network_0/inst/grp_max_pooling2d_fix16_fu_521/add_ln28_fu_479_p2: When DSP48E1 attribute AREG is set to 0, the CEA1 and CEA2 pins should be tied to GND to save power.
 INFO: [DRC REQP-165] writefirst: Synchronous clocking is detected for BRAM (design_1_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
 INFO: [DRC REQP-165] writefirst: Synchronous clocking is detected for BRAM (design_1_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
 INFO: [DRC REQP-181] writefirst: Synchronous clocking is detected for BRAM (design_1_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
@@ -843,9 +821,9 @@ Creating bitstream...
 Writing bitstream ./design_1_wrapper.bit...
 INFO: [Vivado 12-1842] Bitgen Completed Successfully.
 INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK part without a full Vivado license. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
-INFO: [Common 17-186] '/home/shts/DeepCAEonFPGA/HLx/HLx.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Tue Dec 31 23:12:59 2019. For additional details about this file, please refer to the WebTalk help file at /tools/Xilinx/Vivado/2019.1/doc/webtalk_introduction.html.
+INFO: [Common 17-186] '/home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Tue Jan  7 15:15:00 2020. For additional details about this file, please refer to the WebTalk help file at /tools/Xilinx/Vivado/2019.1/doc/webtalk_introduction.html.
 INFO: [Common 17-83] Releasing license: Implementation
-181 Infos, 81 Warnings, 0 Critical Warnings and 0 Errors encountered.
+176 Infos, 81 Warnings, 0 Critical Warnings and 0 Errors encountered.
 write_bitstream completed successfully
-write_bitstream: Time (s): cpu = 00:00:24 ; elapsed = 00:00:22 . Memory (MB): peak = 3166.914 ; gain = 306.008 ; free physical = 3148 ; free virtual = 8917
-INFO: [Common 17-206] Exiting Vivado at Tue Dec 31 23:12:59 2019...
+write_bitstream: Time (s): cpu = 00:00:25 ; elapsed = 00:00:30 . Memory (MB): peak = 3238.762 ; gain = 318.305 ; free physical = 3537 ; free virtual = 9752
+INFO: [Common 17-206] Exiting Vivado at Tue Jan  7 15:15:00 2020...

@@ -319,8 +319,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>kernel_0_address0</name>
-<Object>kernel_0</Object>
+<name>kernel_address0</name>
+<Object>kernel</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -330,8 +330,8 @@
 <Attribute>address</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>kernel_0_ce0</name>
-<Object>kernel_0</Object>
+<name>kernel_ce0</name>
+<Object>kernel</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -341,8 +341,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>kernel_0_q0</name>
-<Object>kernel_0</Object>
+<name>kernel_q0</name>
+<Object>kernel</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -352,8 +352,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>kernel_0_address1</name>
-<Object>kernel_0</Object>
+<name>kernel_address1</name>
+<Object>kernel</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -363,8 +363,8 @@
 <Attribute>address</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>kernel_0_ce1</name>
-<Object>kernel_0</Object>
+<name>kernel_ce1</name>
+<Object>kernel</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -374,8 +374,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>kernel_0_q1</name>
-<Object>kernel_0</Object>
+<name>kernel_q1</name>
+<Object>kernel</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>

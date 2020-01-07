@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'depthwise_conv2d_fix'" level="0">
-<item name = "Date">Thu Jan  2 19:12:53 2020
+<item name = "Date">Tue Jan  7 13:57:30 2020
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">HLS</item>
@@ -51,9 +51,9 @@
 <column name="Expression">-, -, 0, 874, -</column>
 <column name="FIFO">-, -, -, -, -</column>
 <column name="Instance">-, -, -, -, -</column>
-<column name="Memory">0, -, 30, 3, -</column>
+<column name="Memory">0, -, 26, 2, -</column>
 <column name="Multiplexer">-, -, -, 278, -</column>
-<column name="Register">-, -, 556, -, -</column>
+<column name="Register">-, -, 546, -, -</column>
 <specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
 <specialColumn name="Utilization (%)">0, 4, ~0, 2, 0</specialColumn>
 </table>
@@ -66,20 +66,20 @@
 </item>
 <item name = "DSP48E"><table name="" hasTotal="0">
 <keys size="3">Instance, Module, Expression</keys>
-<column name="network_mul_mul_16s_15s_30_1_1_U6">network_mul_mul_16s_15s_30_1_1, i0 * i1</column>
-<column name="network_mul_mul_16s_15s_30_1_1_U7">network_mul_mul_16s_15s_30_1_1, i0 * i1</column>
-<column name="network_mul_mul_16s_15s_30_1_1_U8">network_mul_mul_16s_15s_30_1_1, i0 * i1</column>
-<column name="network_mul_mul_16s_15s_30_1_1_U9">network_mul_mul_16s_15s_30_1_1, i0 * i1</column>
-<column name="network_mul_mul_16s_15s_30_1_1_U10">network_mul_mul_16s_15s_30_1_1, i0 * i1</column>
-<column name="network_mul_mul_16s_15s_30_1_1_U11">network_mul_mul_16s_15s_30_1_1, i0 * i1</column>
-<column name="network_mul_mul_16s_15s_30_1_1_U12">network_mul_mul_16s_15s_30_1_1, i0 * i1</column>
-<column name="network_mul_mul_16s_15s_30_1_1_U13">network_mul_mul_16s_15s_30_1_1, i0 * i1</column>
-<column name="network_mul_mul_16s_15s_30_1_1_U14">network_mul_mul_16s_15s_30_1_1, i0 * i1</column>
+<column name="network_mul_mul_16s_13s_29_1_1_U6">network_mul_mul_16s_13s_29_1_1, i0 * i1</column>
+<column name="network_mul_mul_16s_13s_29_1_1_U7">network_mul_mul_16s_13s_29_1_1, i0 * i1</column>
+<column name="network_mul_mul_16s_13s_29_1_1_U8">network_mul_mul_16s_13s_29_1_1, i0 * i1</column>
+<column name="network_mul_mul_16s_13s_29_1_1_U9">network_mul_mul_16s_13s_29_1_1, i0 * i1</column>
+<column name="network_mul_mul_16s_13s_29_1_1_U10">network_mul_mul_16s_13s_29_1_1, i0 * i1</column>
+<column name="network_mul_mul_16s_13s_29_1_1_U11">network_mul_mul_16s_13s_29_1_1, i0 * i1</column>
+<column name="network_mul_mul_16s_13s_29_1_1_U12">network_mul_mul_16s_13s_29_1_1, i0 * i1</column>
+<column name="network_mul_mul_16s_13s_29_1_1_U13">network_mul_mul_16s_13s_29_1_1, i0 * i1</column>
+<column name="network_mul_mul_16s_13s_29_1_1_U14">network_mul_mul_16s_13s_29_1_1, i0 * i1</column>
 </table>
 </item>
 <item name = "Memory"><table name="" hasTotal="1">
 <keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
-<column name="SeparableConv2D_0_w_1_U">depthwise_conv2d_fix_SeparableConv2D_0_w_1, 0, 30, 3, 0, 9, 15, 1, 135</column>
+<column name="SeparableConv2D_0_w_s_U">depthwise_conv2d_fix_SeparableConv2D_0_w_s, 0, 26, 2, 0, 9, 13, 1, 117</column>
 </table>
 </item>
 <item name = "FIFO"><table name="" hasTotal="1">
@@ -130,7 +130,7 @@
 <column name="icmp_ln24_fu_509_p2">icmp, 0, 0, 13, 10, 9</column>
 <column name="icmp_ln32_fu_521_p2">icmp, 0, 0, 13, 10, 9</column>
 <column name="icmp_ln33_fu_559_p2">icmp, 0, 0, 11, 5, 4</column>
-<column name="empty_61_fu_636_p2">or, 0, 0, 2, 1, 1</column>
+<column name="empty_62_fu_636_p2">or, 0, 0, 2, 1, 1</column>
 <column name="out_w_0_mid2_fu_640_p3">select, 0, 0, 5, 1, 1</column>
 <column name="select_ln24_15_fu_535_p3">select, 0, 0, 64, 1, 64</column>
 <column name="select_ln24_16_fu_544_p3">select, 0, 0, 64, 1, 64</column>
@@ -163,8 +163,8 @@
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
-<column name="SeparableConv2D_0_w_1_address0">33, 6, 4, 24</column>
-<column name="SeparableConv2D_0_w_1_address1">27, 5, 4, 20</column>
+<column name="SeparableConv2D_0_w_s_address0">33, 6, 4, 24</column>
+<column name="SeparableConv2D_0_w_s_address1">27, 5, 4, 20</column>
 <column name="ap_NS_fsm">41, 8, 1, 8</column>
 <column name="ap_enable_reg_pp0_iter1">9, 2, 1, 2</column>
 <column name="ap_phi_mux_indvar_flatten80_phi_fu_269_p4">9, 2, 10, 20</column>
@@ -185,7 +185,7 @@
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="SeparableConv2D_0_w_21_reg_1664">15, 0, 15, 0</column>
+<column name="SeparableConv2D_0_w_18_reg_1664">13, 0, 13, 0</column>
 <column name="add_ln24_reg_1411">10, 0, 10, 0</column>
 <column name="add_ln32_3_reg_1577">10, 0, 10, 0</column>
 <column name="add_ln40_10_reg_1649">10, 0, 10, 0</column>
@@ -214,10 +214,10 @@
 <column name="out_w_0_mid2_reg_1487">5, 0, 5, 0</column>
 <column name="out_w_0_reg_311">5, 0, 5, 0</column>
 <column name="out_w_reg_1516">5, 0, 5, 0</column>
-<column name="reg_323">15, 0, 15, 0</column>
-<column name="reg_327">15, 0, 15, 0</column>
-<column name="reg_331">15, 0, 15, 0</column>
-<column name="reg_335">15, 0, 15, 0</column>
+<column name="reg_323">13, 0, 13, 0</column>
+<column name="reg_327">13, 0, 13, 0</column>
+<column name="reg_331">13, 0, 13, 0</column>
+<column name="reg_335">13, 0, 13, 0</column>
 <column name="reg_339">16, 0, 16, 0</column>
 <column name="reg_344">16, 0, 16, 0</column>
 <column name="select_ln24_17_reg_1467">1, 0, 2, 1</column>

@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/shts/DeepCAEonFPGA/HLx/HLx.runs/design_1_rst_ps7_0_100M_0_synth_1'
+HD_PWD='/home/masudalab/DeepCAEonFPGA/HLx/HLx.runs/design_1_rst_ps7_0_100M_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

@@ -11,7 +11,7 @@
 #include "systemc.h"
 #include "AESL_pkg.h"
 
-#include "network_mul_mul_16s_16s_30_1_1.h"
+#include "network_mul_mul_16s_16s_29_1_1.h"
 #include "network_mac_muladd_5ns_7ns_4ns_11_1_1.h"
 
 namespace ap_rtl {
@@ -41,12 +41,12 @@ struct depthwise_conv2d_fix_1 : public sc_module {
     sc_out< sc_lv<3> > bias_address0;
     sc_out< sc_logic > bias_ce0;
     sc_in< sc_lv<16> > bias_q0;
-    sc_out< sc_lv<7> > kernel_0_address0;
-    sc_out< sc_logic > kernel_0_ce0;
-    sc_in< sc_lv<16> > kernel_0_q0;
-    sc_out< sc_lv<7> > kernel_0_address1;
-    sc_out< sc_logic > kernel_0_ce1;
-    sc_in< sc_lv<16> > kernel_0_q1;
+    sc_out< sc_lv<7> > kernel_address0;
+    sc_out< sc_logic > kernel_ce0;
+    sc_in< sc_lv<16> > kernel_q0;
+    sc_out< sc_lv<7> > kernel_address1;
+    sc_out< sc_logic > kernel_ce1;
+    sc_in< sc_lv<16> > kernel_q1;
 
 
     // Module declarations
@@ -57,16 +57,16 @@ struct depthwise_conv2d_fix_1 : public sc_module {
 
     sc_trace_file* mVcdFile;
 
-    network_mul_mul_16s_16s_30_1_1<1,1,16,16,30>* network_mul_mul_16s_16s_30_1_1_U60;
-    network_mul_mul_16s_16s_30_1_1<1,1,16,16,30>* network_mul_mul_16s_16s_30_1_1_U61;
-    network_mul_mul_16s_16s_30_1_1<1,1,16,16,30>* network_mul_mul_16s_16s_30_1_1_U62;
-    network_mul_mul_16s_16s_30_1_1<1,1,16,16,30>* network_mul_mul_16s_16s_30_1_1_U63;
-    network_mul_mul_16s_16s_30_1_1<1,1,16,16,30>* network_mul_mul_16s_16s_30_1_1_U64;
-    network_mul_mul_16s_16s_30_1_1<1,1,16,16,30>* network_mul_mul_16s_16s_30_1_1_U65;
-    network_mul_mul_16s_16s_30_1_1<1,1,16,16,30>* network_mul_mul_16s_16s_30_1_1_U66;
-    network_mul_mul_16s_16s_30_1_1<1,1,16,16,30>* network_mul_mul_16s_16s_30_1_1_U67;
-    network_mac_muladd_5ns_7ns_4ns_11_1_1<1,1,5,7,4,11>* network_mac_muladd_5ns_7ns_4ns_11_1_1_U68;
-    network_mul_mul_16s_16s_30_1_1<1,1,16,16,30>* network_mul_mul_16s_16s_30_1_1_U69;
+    network_mul_mul_16s_16s_29_1_1<1,1,16,16,29>* network_mul_mul_16s_16s_29_1_1_U64;
+    network_mul_mul_16s_16s_29_1_1<1,1,16,16,29>* network_mul_mul_16s_16s_29_1_1_U65;
+    network_mul_mul_16s_16s_29_1_1<1,1,16,16,29>* network_mul_mul_16s_16s_29_1_1_U66;
+    network_mul_mul_16s_16s_29_1_1<1,1,16,16,29>* network_mul_mul_16s_16s_29_1_1_U67;
+    network_mul_mul_16s_16s_29_1_1<1,1,16,16,29>* network_mul_mul_16s_16s_29_1_1_U68;
+    network_mul_mul_16s_16s_29_1_1<1,1,16,16,29>* network_mul_mul_16s_16s_29_1_1_U69;
+    network_mul_mul_16s_16s_29_1_1<1,1,16,16,29>* network_mul_mul_16s_16s_29_1_1_U70;
+    network_mul_mul_16s_16s_29_1_1<1,1,16,16,29>* network_mul_mul_16s_16s_29_1_1_U71;
+    network_mac_muladd_5ns_7ns_4ns_11_1_1<1,1,5,7,4,11>* network_mac_muladd_5ns_7ns_4ns_11_1_1_U72;
+    network_mul_mul_16s_16s_29_1_1<1,1,16,16,29>* network_mul_mul_16s_16s_29_1_1_U73;
     sc_signal< sc_lv<7> > ap_CS_fsm;
     sc_signal< sc_logic > ap_CS_fsm_state1;
     sc_signal< sc_lv<11> > indvar_flatten48_reg_298;
@@ -231,7 +231,7 @@ struct depthwise_conv2d_fix_1 : public sc_module {
     sc_signal< sc_lv<64> > zext_ln24_18_fu_971_p1;
     sc_signal< sc_lv<64> > zext_ln40_24_fu_1001_p1;
     sc_signal< sc_lv<64> > zext_ln48_3_fu_1101_p1;
-    sc_signal< sc_lv<4> > empty_57_fu_399_p1;
+    sc_signal< sc_lv<4> > empty_58_fu_399_p1;
     sc_signal< sc_lv<4> > mul_ln4_fu_411_p0;
     sc_signal< sc_lv<4> > mul_ln4_fu_411_p1;
     sc_signal< sc_lv<3> > trunc_ln27_fu_439_p1;
@@ -250,7 +250,7 @@ struct depthwise_conv2d_fix_1 : public sc_module {
     sc_signal< sc_lv<7> > mul_ln40_18_fu_535_p2;
     sc_signal< sc_lv<7> > tmp_0_0_fu_466_p2;
     sc_signal< sc_lv<1> > icmp_ln33_2_fu_556_p2;
-    sc_signal< sc_lv<1> > empty_59_fu_574_p2;
+    sc_signal< sc_lv<1> > empty_60_fu_574_p2;
     sc_signal< sc_lv<7> > select_ln24_10_fu_540_p3;
     sc_signal< sc_lv<7> > tmp_0_0_mid1_fu_592_p2;
     sc_signal< sc_lv<7> > select_ln24_12_fu_548_p3;
@@ -281,23 +281,23 @@ struct depthwise_conv2d_fix_1 : public sc_module {
     sc_signal< sc_lv<7> > select_ln24_11_fu_802_p3;
     sc_signal< sc_lv<7> > tmp11_mid1_fu_814_p2;
     sc_signal< sc_lv<7> > select_ln24_13_fu_808_p3;
-    sc_signal< sc_lv<30> > mul_ln40_9_fu_1105_p2;
-    sc_signal< sc_lv<30> > mul_ln40_10_fu_1112_p2;
+    sc_signal< sc_lv<29> > mul_ln40_9_fu_1105_p2;
+    sc_signal< sc_lv<29> > mul_ln40_10_fu_1112_p2;
     sc_signal< sc_lv<11> > add_ln40_16_fu_852_p2;
     sc_signal< sc_lv<11> > add_ln40_17_fu_861_p2;
     sc_signal< sc_lv<7> > add_ln24_15_fu_878_p2;
     sc_signal< sc_lv<7> > add_ln24_16_fu_888_p2;
-    sc_signal< sc_lv<30> > mul_ln40_11_fu_1119_p2;
-    sc_signal< sc_lv<30> > mul_ln40_12_fu_1126_p2;
+    sc_signal< sc_lv<29> > mul_ln40_11_fu_1119_p2;
+    sc_signal< sc_lv<29> > mul_ln40_12_fu_1126_p2;
     sc_signal< sc_lv<11> > add_ln40_18_fu_935_p2;
     sc_signal< sc_lv<11> > add_ln40_19_fu_944_p2;
-    sc_signal< sc_lv<30> > mul_ln40_13_fu_1133_p2;
-    sc_signal< sc_lv<30> > mul_ln40_14_fu_1140_p2;
-    sc_signal< sc_lv<30> > mul_ln40_15_fu_1147_p2;
-    sc_signal< sc_lv<30> > mul_ln40_16_fu_1154_p2;
+    sc_signal< sc_lv<29> > mul_ln40_13_fu_1133_p2;
+    sc_signal< sc_lv<29> > mul_ln40_14_fu_1140_p2;
+    sc_signal< sc_lv<29> > mul_ln40_15_fu_1147_p2;
+    sc_signal< sc_lv<29> > mul_ln40_16_fu_1154_p2;
     sc_signal< sc_lv<16> > add_ln48_9_fu_1043_p2;
     sc_signal< sc_lv<16> > add_ln48_11_fu_1048_p2;
-    sc_signal< sc_lv<30> > mul_ln40_17_fu_1167_p2;
+    sc_signal< sc_lv<29> > mul_ln40_17_fu_1167_p2;
     sc_signal< sc_lv<16> > add_ln48_14_fu_1082_p2;
     sc_signal< sc_lv<16> > add_ln48_15_fu_1086_p2;
     sc_signal< sc_lv<16> > add_ln48_16_fu_1091_p2;
@@ -352,8 +352,8 @@ struct depthwise_conv2d_fix_1 : public sc_module {
     static const sc_lv<4> ap_const_lv4_2;
     static const sc_lv<7> ap_const_lv7_5;
     static const sc_lv<7> ap_const_lv7_6;
-    static const sc_lv<32> ap_const_lv32_E;
-    static const sc_lv<32> ap_const_lv32_1D;
+    static const sc_lv<32> ap_const_lv32_D;
+    static const sc_lv<32> ap_const_lv32_1C;
     static const sc_lv<7> ap_const_lv7_7;
     static const sc_lv<7> ap_const_lv7_8;
     static const sc_lv<32> ap_const_lv32_6;
@@ -435,8 +435,8 @@ struct depthwise_conv2d_fix_1 : public sc_module {
     void thread_ap_ready();
     void thread_bias_address0();
     void thread_bias_ce0();
-    void thread_empty_57_fu_399_p1();
-    void thread_empty_59_fu_574_p2();
+    void thread_empty_58_fu_399_p1();
+    void thread_empty_60_fu_574_p2();
     void thread_empty_fu_395_p1();
     void thread_grp_fu_1161_p0();
     void thread_grp_fu_1161_p1();
@@ -450,10 +450,10 @@ struct depthwise_conv2d_fix_1 : public sc_module {
     void thread_input_r_address1();
     void thread_input_r_ce0();
     void thread_input_r_ce1();
-    void thread_kernel_0_address0();
-    void thread_kernel_0_address1();
-    void thread_kernel_0_ce0();
-    void thread_kernel_0_ce1();
+    void thread_kernel_address0();
+    void thread_kernel_address1();
+    void thread_kernel_ce0();
+    void thread_kernel_ce1();
     void thread_mul_ln40_18_fu_535_p0();
     void thread_mul_ln40_18_fu_535_p00();
     void thread_mul_ln40_18_fu_535_p1();

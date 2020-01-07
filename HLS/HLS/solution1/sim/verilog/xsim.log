@@ -2,12 +2,12 @@
 # xsim v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Thu Jan  2 19:14:18 2020
-# Process ID: 6858
-# Current directory: /home/shts/DeepCAEonFPGA/HLS/HLS/solution1/sim/verilog
+# Start of session at: Tue Jan  7 14:01:42 2020
+# Process ID: 9755
+# Current directory: /home/masudalab/DeepCAEonFPGA/HLS/HLS/solution1/sim/verilog
 # Command line: xsim -mode tcl -source {xsim.dir/network/xsim_script.tcl}
-# Log file: /home/shts/DeepCAEonFPGA/HLS/HLS/solution1/sim/verilog/xsim.log
-# Journal file: /home/shts/DeepCAEonFPGA/HLS/HLS/solution1/sim/verilog/xsim.jou
+# Log file: /home/masudalab/DeepCAEonFPGA/HLS/HLS/solution1/sim/verilog/xsim.log
+# Journal file: /home/masudalab/DeepCAEonFPGA/HLS/HLS/solution1/sim/verilog/xsim.jou
 #-----------------------------------------------------------
 source xsim.dir/network/xsim_script.tcl
 # xsim {network} -autoloadwcfg -tclbatch {network.tcl}
@@ -139,9 +139,9 @@ WARNING: [Simtcl 6-197] One or more HDL objects could not be logged because of o
 // RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
 ////////////////////////////////////////////////////////////////////////////////////
 // RTL Simulation : 0 / 1 [n/a] @ "125000"
-// RTL Simulation : 1 / 1 [n/a] @ "2902575000"
+// RTL Simulation : 1 / 1 [n/a] @ "2886475000"
 ////////////////////////////////////////////////////////////////////////////////////
-$finish called at time : 2902615 ns : File "/home/shts/DeepCAEonFPGA/HLS/HLS/solution1/sim/verilog/network.autotb.v" Line 495
-run: Time (s): cpu = 00:00:10 ; elapsed = 00:00:24 . Memory (MB): peak = 1530.359 ; gain = 72.004 ; free physical = 9611 ; free virtual = 14409
+$finish called at time : 2886515 ns : File "/home/masudalab/DeepCAEonFPGA/HLS/HLS/solution1/sim/verilog/network.autotb.v" Line 495
+run: Time (s): cpu = 00:00:11 ; elapsed = 00:00:26 . Memory (MB): peak = 1547.430 ; gain = 72.004 ; free physical = 8499 ; free virtual = 14028
 ## quit
-INFO: [Common 17-206] Exiting xsim at Thu Jan  2 19:14:53 2020...
+INFO: [Common 17-206] Exiting xsim at Tue Jan  7 14:02:33 2020...

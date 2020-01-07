@@ -68,18 +68,16 @@ set RtlHierarchyInfo {[
 		"HasNonBlockingOperation" : "0",
 		"Port" : [
 			{"Name" : "input_r", "Type" : "Memory", "Direction" : "I"},
-			{"Name" : "output_r", "Type" : "Memory", "Direction" : "O"},
-			{"Name" : "SeparableConv2D_4_w_s", "Type" : "Memory", "Direction" : "I"}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.SeparableConv2D_4_w_s_U", "Parent" : "0"},
-	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mux_164_32_1_1_U106", "Parent" : "0"},
-	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mac_muladd_11ns_5ns_11s_15_1_1_U107", "Parent" : "0"}]}
+			{"Name" : "output_r", "Type" : "Memory", "Direction" : "O"}]},
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mux_164_16_1_1_x0_U114", "Parent" : "0"},
+	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mux_164_32_1_1_U115", "Parent" : "0"},
+	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.network_mac_muladd_11ns_5ns_11s_15_1_1_U116", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {
 	pointwise_conv2d_fix_4 {
 		input_r {Type I LastRead 4 FirstWrite -1}
-		output_r {Type O LastRead -1 FirstWrite 7}
-		SeparableConv2D_4_w_s {Type I LastRead -1 FirstWrite -1}}}
+		output_r {Type O LastRead -1 FirstWrite 7}}}
 
 set hasDtUnsupportedChannel 0
 
@@ -89,7 +87,6 @@ set PerformanceInfo {[
 ]}
 
 set PipelineEnableSignalInfo {[
-	{"Pipeline" : "0", "EnableSignal" : "ap_enable_pp0"}
 	{"Pipeline" : "1", "EnableSignal" : "ap_enable_pp1"}
 ]}
 

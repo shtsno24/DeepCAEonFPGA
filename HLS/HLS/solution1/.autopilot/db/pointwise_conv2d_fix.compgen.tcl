@@ -1,168 +1,316 @@
 # This script segment is generated automatically by AutoPilot
 
-# Memory (RAM/ROM)  definition:
-set ID 19
-set hasByteEnable 0
-set MemName pointwise_conv2d_fix_SeparableConv2D_0_b_s
-set CoreName ap_simcore_mem
-set PortList { 1 }
-set DataWd 13
-set AddrRange 16
-set AddrWd 4
-set TrueReset 0
-set IsROM 1
-set ROMData { "0011000000110" "1101111101000" "1111010110011" "0001100001111" "1110011101100" "1110011011100" "0001011110110" "1111010101010" "0010000111011" "0100111010000" "0000110111001" "0000000000000" "1110000111101" "0000001100111" "1110101000111" "1110010101100" }
-set HasInitializer 1
-set Initializer $ROMData
-set NumOfStage 2
-set MaxLatency -1
-set DelayBudget 3.254
-set ClkPeriod 10
-set RegisteredInput 0
+set id 19
+set name network_mux_164_16_1_1
+set corename simcore_mux
+set op mux
+set stage_num 1
+set max_latency -1
+set registered_input 1
+set din0_width 16
+set din0_signed 0
+set din1_width 16
+set din1_signed 1
+set din2_width 16
+set din2_signed 0
+set din3_width 16
+set din3_signed 0
+set din4_width 16
+set din4_signed 1
+set din5_width 16
+set din5_signed 0
+set din6_width 16
+set din6_signed 0
+set din7_width 16
+set din7_signed 1
+set din8_width 16
+set din8_signed 0
+set din9_width 16
+set din9_signed 0
+set din10_width 16
+set din10_signed 0
+set din11_width 16
+set din11_signed 1
+set din12_width 16
+set din12_signed 0
+set din13_width 16
+set din13_signed 1
+set din14_width 16
+set din14_signed 0
+set din15_width 16
+set din15_signed 0
+set din16_width 4
+set din16_signed 0
+set dout_width 16
 if {${::AESL::PGuard_simmodel_gen}} {
-if {[info proc ap_gen_simcore_mem] == "ap_gen_simcore_mem"} {
-    eval "ap_gen_simcore_mem { \
-    id ${ID} \
-    name ${MemName} \
-    corename ${CoreName}  \
-    op mem \
-    hasByteEnable ${hasByteEnable} \
+if {[info proc ap_gen_simcore_mux] == "ap_gen_simcore_mux"} {
+eval "ap_gen_simcore_mux { \
+    id ${id} \
+    name ${name} \
+    corename ${corename} \
+    op ${op} \
     reset_level 1 \
     sync_rst true \
-    stage_num ${NumOfStage}  \
-    registered_input ${RegisteredInput} \
-    port_num 1 \
-    port_list \{${PortList}\} \
-    data_wd ${DataWd} \
-    addr_wd ${AddrWd} \
-    addr_range ${AddrRange} \
-    true_reset ${TrueReset} \
-    delay_budget ${DelayBudget} \
-    clk_period ${ClkPeriod} \
-    HasInitializer ${HasInitializer} \
-    rom_data \{${ROMData}\} \
- } "
+    stage_num ${stage_num} \
+    max_latency ${max_latency} \
+    registered_input ${registered_input} \
+    din0_width ${din0_width} \
+    din0_signed ${din0_signed} \
+    din1_width ${din1_width} \
+    din1_signed ${din1_signed} \
+    din2_width ${din2_width} \
+    din2_signed ${din2_signed} \
+    din3_width ${din3_width} \
+    din3_signed ${din3_signed} \
+    din4_width ${din4_width} \
+    din4_signed ${din4_signed} \
+    din5_width ${din5_width} \
+    din5_signed ${din5_signed} \
+    din6_width ${din6_width} \
+    din6_signed ${din6_signed} \
+    din7_width ${din7_width} \
+    din7_signed ${din7_signed} \
+    din8_width ${din8_width} \
+    din8_signed ${din8_signed} \
+    din9_width ${din9_width} \
+    din9_signed ${din9_signed} \
+    din10_width ${din10_width} \
+    din10_signed ${din10_signed} \
+    din11_width ${din11_width} \
+    din11_signed ${din11_signed} \
+    din12_width ${din12_width} \
+    din12_signed ${din12_signed} \
+    din13_width ${din13_width} \
+    din13_signed ${din13_signed} \
+    din14_width ${din14_width} \
+    din14_signed ${din14_signed} \
+    din15_width ${din15_width} \
+    din15_signed ${din15_signed} \
+    din16_width ${din16_width} \
+    din16_signed ${din16_signed} \
+    dout_width ${dout_width} \
+}"
 } else {
-    puts "@W \[IMPL-102\] Cannot find ap_gen_simcore_mem, check your platform lib"
+puts "@W \[IMPL-100\] Cannot find ap_gen_simcore_mux, check your AutoPilot builtin lib"
 }
 }
 
 
 if {${::AESL::PGuard_rtl_comp_handler}} {
-  ::AP::rtl_comp_handler $MemName
+	::AP::rtl_comp_handler ${name}
 }
 
 
-set CoreName ROM_nP
+set op mux
+set corename MuxnS
 if {${::AESL::PGuard_autocg_gen} && ${::AESL::PGuard_autocg_ipmgen}} {
-if {[info proc ::AESL_LIB_VIRTEX::xil_gen_ROM] == "::AESL_LIB_VIRTEX::xil_gen_ROM"} {
-    eval "::AESL_LIB_VIRTEX::xil_gen_ROM { \
-    id ${ID} \
-    name ${MemName} \
-    corename ${CoreName}  \
-    op mem \
-    hasByteEnable ${hasByteEnable} \
+if {[info proc ::AESL_LIB_VIRTEX::xil_gen_pipemux] == "::AESL_LIB_VIRTEX::xil_gen_pipemux"} {
+eval "::AESL_LIB_VIRTEX::xil_gen_pipemux { \
+    id ${id} \
+    name ${name} \
+    corename ${corename} \
+    op ${op} \
     reset_level 1 \
     sync_rst true \
-    stage_num ${NumOfStage}  \
-    registered_input ${RegisteredInput} \
-    port_num 1 \
-    port_list \{${PortList}\} \
-    data_wd ${DataWd} \
-    addr_wd ${AddrWd} \
-    addr_range ${AddrRange} \
-    true_reset ${TrueReset} \
-    delay_budget ${DelayBudget} \
-    clk_period ${ClkPeriod} \
-    HasInitializer ${HasInitializer} \
-    rom_data \{${ROMData}\} \
- } "
-  } else {
-    puts "@W \[IMPL-104\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_ROM, check your platform lib"
-  }
+    stage_num ${stage_num} \
+    max_latency ${max_latency} \
+    registered_input ${registered_input} \
+    din0_width ${din0_width} \
+    din0_signed ${din0_signed} \
+    din1_width ${din1_width} \
+    din1_signed ${din1_signed} \
+    din2_width ${din2_width} \
+    din2_signed ${din2_signed} \
+    din3_width ${din3_width} \
+    din3_signed ${din3_signed} \
+    din4_width ${din4_width} \
+    din4_signed ${din4_signed} \
+    din5_width ${din5_width} \
+    din5_signed ${din5_signed} \
+    din6_width ${din6_width} \
+    din6_signed ${din6_signed} \
+    din7_width ${din7_width} \
+    din7_signed ${din7_signed} \
+    din8_width ${din8_width} \
+    din8_signed ${din8_signed} \
+    din9_width ${din9_width} \
+    din9_signed ${din9_signed} \
+    din10_width ${din10_width} \
+    din10_signed ${din10_signed} \
+    din11_width ${din11_width} \
+    din11_signed ${din11_signed} \
+    din12_width ${din12_width} \
+    din12_signed ${din12_signed} \
+    din13_width ${din13_width} \
+    din13_signed ${din13_signed} \
+    din14_width ${din14_width} \
+    din14_signed ${din14_signed} \
+    din15_width ${din15_width} \
+    din15_signed ${din15_signed} \
+    din16_width ${din16_width} \
+    din16_signed ${din16_signed} \
+    dout_width ${dout_width} \
+}"
+} else {
+puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_pipemux, check your platform lib"
+}
 }
 
 
-# Memory (RAM/ROM)  definition:
-set ID 20
-set hasByteEnable 0
-set MemName pointwise_conv2d_fix_SeparableConv2D_0_w_s
-set CoreName ap_simcore_mem
-set PortList { 1 }
-set DataWd 15
-set AddrRange 16
-set AddrWd 4
-set TrueReset 0
-set IsROM 1
-set ROMData { "111100100010110" "001100111101111" "001111110011101" "111110110001100" "001001100111000" "010010110010010" "101101111011011" "000011000001001" "101010110011000" "000101010101101" "000010010101010" "001011110010011" "000111101110100" "110010011101001" "001010100100110" "001100111101111" }
-set HasInitializer 1
-set Initializer $ROMData
-set NumOfStage 2
-set MaxLatency -1
-set DelayBudget 3.254
-set ClkPeriod 10
-set RegisteredInput 0
+set id 20
+set name network_mux_164_16_1_1
+set corename simcore_mux
+set op mux
+set stage_num 1
+set max_latency -1
+set registered_input 1
+set din0_width 16
+set din0_signed 0
+set din1_width 16
+set din1_signed 1
+set din2_width 16
+set din2_signed 0
+set din3_width 16
+set din3_signed 0
+set din4_width 16
+set din4_signed 1
+set din5_width 16
+set din5_signed 0
+set din6_width 16
+set din6_signed 0
+set din7_width 16
+set din7_signed 1
+set din8_width 16
+set din8_signed 0
+set din9_width 16
+set din9_signed 0
+set din10_width 16
+set din10_signed 0
+set din11_width 16
+set din11_signed 1
+set din12_width 16
+set din12_signed 0
+set din13_width 16
+set din13_signed 1
+set din14_width 16
+set din14_signed 0
+set din15_width 16
+set din15_signed 0
+set din16_width 4
+set din16_signed 0
+set dout_width 16
 if {${::AESL::PGuard_simmodel_gen}} {
-if {[info proc ap_gen_simcore_mem] == "ap_gen_simcore_mem"} {
-    eval "ap_gen_simcore_mem { \
-    id ${ID} \
-    name ${MemName} \
-    corename ${CoreName}  \
-    op mem \
-    hasByteEnable ${hasByteEnable} \
+if {[info proc ap_gen_simcore_mux] == "ap_gen_simcore_mux"} {
+eval "ap_gen_simcore_mux { \
+    id ${id} \
+    name ${name} \
+    corename ${corename} \
+    op ${op} \
     reset_level 1 \
     sync_rst true \
-    stage_num ${NumOfStage}  \
-    registered_input ${RegisteredInput} \
-    port_num 1 \
-    port_list \{${PortList}\} \
-    data_wd ${DataWd} \
-    addr_wd ${AddrWd} \
-    addr_range ${AddrRange} \
-    true_reset ${TrueReset} \
-    delay_budget ${DelayBudget} \
-    clk_period ${ClkPeriod} \
-    HasInitializer ${HasInitializer} \
-    rom_data \{${ROMData}\} \
- } "
+    stage_num ${stage_num} \
+    max_latency ${max_latency} \
+    registered_input ${registered_input} \
+    din0_width ${din0_width} \
+    din0_signed ${din0_signed} \
+    din1_width ${din1_width} \
+    din1_signed ${din1_signed} \
+    din2_width ${din2_width} \
+    din2_signed ${din2_signed} \
+    din3_width ${din3_width} \
+    din3_signed ${din3_signed} \
+    din4_width ${din4_width} \
+    din4_signed ${din4_signed} \
+    din5_width ${din5_width} \
+    din5_signed ${din5_signed} \
+    din6_width ${din6_width} \
+    din6_signed ${din6_signed} \
+    din7_width ${din7_width} \
+    din7_signed ${din7_signed} \
+    din8_width ${din8_width} \
+    din8_signed ${din8_signed} \
+    din9_width ${din9_width} \
+    din9_signed ${din9_signed} \
+    din10_width ${din10_width} \
+    din10_signed ${din10_signed} \
+    din11_width ${din11_width} \
+    din11_signed ${din11_signed} \
+    din12_width ${din12_width} \
+    din12_signed ${din12_signed} \
+    din13_width ${din13_width} \
+    din13_signed ${din13_signed} \
+    din14_width ${din14_width} \
+    din14_signed ${din14_signed} \
+    din15_width ${din15_width} \
+    din15_signed ${din15_signed} \
+    din16_width ${din16_width} \
+    din16_signed ${din16_signed} \
+    dout_width ${dout_width} \
+}"
 } else {
-    puts "@W \[IMPL-102\] Cannot find ap_gen_simcore_mem, check your platform lib"
+puts "@W \[IMPL-100\] Cannot find ap_gen_simcore_mux, check your AutoPilot builtin lib"
 }
 }
 
 
 if {${::AESL::PGuard_rtl_comp_handler}} {
-  ::AP::rtl_comp_handler $MemName
+	::AP::rtl_comp_handler ${name}
 }
 
 
-set CoreName ROM_nP
+set op mux
+set corename MuxnS
 if {${::AESL::PGuard_autocg_gen} && ${::AESL::PGuard_autocg_ipmgen}} {
-if {[info proc ::AESL_LIB_VIRTEX::xil_gen_ROM] == "::AESL_LIB_VIRTEX::xil_gen_ROM"} {
-    eval "::AESL_LIB_VIRTEX::xil_gen_ROM { \
-    id ${ID} \
-    name ${MemName} \
-    corename ${CoreName}  \
-    op mem \
-    hasByteEnable ${hasByteEnable} \
+if {[info proc ::AESL_LIB_VIRTEX::xil_gen_pipemux] == "::AESL_LIB_VIRTEX::xil_gen_pipemux"} {
+eval "::AESL_LIB_VIRTEX::xil_gen_pipemux { \
+    id ${id} \
+    name ${name} \
+    corename ${corename} \
+    op ${op} \
     reset_level 1 \
     sync_rst true \
-    stage_num ${NumOfStage}  \
-    registered_input ${RegisteredInput} \
-    port_num 1 \
-    port_list \{${PortList}\} \
-    data_wd ${DataWd} \
-    addr_wd ${AddrWd} \
-    addr_range ${AddrRange} \
-    true_reset ${TrueReset} \
-    delay_budget ${DelayBudget} \
-    clk_period ${ClkPeriod} \
-    HasInitializer ${HasInitializer} \
-    rom_data \{${ROMData}\} \
- } "
-  } else {
-    puts "@W \[IMPL-104\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_ROM, check your platform lib"
-  }
+    stage_num ${stage_num} \
+    max_latency ${max_latency} \
+    registered_input ${registered_input} \
+    din0_width ${din0_width} \
+    din0_signed ${din0_signed} \
+    din1_width ${din1_width} \
+    din1_signed ${din1_signed} \
+    din2_width ${din2_width} \
+    din2_signed ${din2_signed} \
+    din3_width ${din3_width} \
+    din3_signed ${din3_signed} \
+    din4_width ${din4_width} \
+    din4_signed ${din4_signed} \
+    din5_width ${din5_width} \
+    din5_signed ${din5_signed} \
+    din6_width ${din6_width} \
+    din6_signed ${din6_signed} \
+    din7_width ${din7_width} \
+    din7_signed ${din7_signed} \
+    din8_width ${din8_width} \
+    din8_signed ${din8_signed} \
+    din9_width ${din9_width} \
+    din9_signed ${din9_signed} \
+    din10_width ${din10_width} \
+    din10_signed ${din10_signed} \
+    din11_width ${din11_width} \
+    din11_signed ${din11_signed} \
+    din12_width ${din12_width} \
+    din12_signed ${din12_signed} \
+    din13_width ${din13_width} \
+    din13_signed ${din13_signed} \
+    din14_width ${din14_width} \
+    din14_signed ${din14_signed} \
+    din15_width ${din15_width} \
+    din15_signed ${din15_signed} \
+    din16_width ${din16_width} \
+    din16_signed ${din16_signed} \
+    dout_width ${dout_width} \
+}"
+} else {
+puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_pipemux, check your platform lib"
+}
 }
 
 
@@ -177,7 +325,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 21 \
+    id 23 \
     name input_r \
     reset_level 1 \
     sync_rst true \
@@ -196,7 +344,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 22 \
+    id 24 \
     name output_r \
     reset_level 1 \
     sync_rst true \

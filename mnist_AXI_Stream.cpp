@@ -31,30 +31,30 @@ int network(axis input_data[784], axis output_data[784]) {
 #pragma HLS INTERFACE s_axilite register port=return
 
 
-//#pragma HLS array_partition variable=SeparableConv2D_0_b_p
+#pragma HLS array_partition variable=SeparableConv2D_0_b_p
 //#pragma HLS array_partition variable=SeparableConv2D_0_b_d
-//#pragma HLS array_partition variable=SeparableConv2D_0_w_d
-//#pragma HLS array_partition variable=SeparableConv2D_0_w_p
+#pragma HLS array_partition variable=SeparableConv2D_0_w_d
+#pragma HLS array_partition variable=SeparableConv2D_0_w_p
 //
-//#pragma HLS array_partition variable=SeparableConv2D_1_b_p
+#pragma HLS array_partition variable=SeparableConv2D_1_b_p
 //#pragma HLS array_partition variable=SeparableConv2D_1_b_d
-//#pragma HLS array_partition variable=SeparableConv2D_1_w_d
-//#pragma HLS array_partition variable=SeparableConv2D_1_w_p
+#pragma HLS array_partition variable=SeparableConv2D_1_w_d
+#pragma HLS array_partition variable=SeparableConv2D_1_w_p
 //
-//#pragma HLS array_partition variable=SeparableConv2D_2_b_p
+#pragma HLS array_partition variable=SeparableConv2D_2_b_p
 //#pragma HLS array_partition variable=SeparableConv2D_2_b_d
-//#pragma HLS array_partition variable=SeparableConv2D_2_w_d
-//#pragma HLS array_partition variable=SeparableConv2D_2_w_p
+#pragma HLS array_partition variable=SeparableConv2D_2_w_d
+#pragma HLS array_partition variable=SeparableConv2D_2_w_p
 //
-//#pragma HLS array_partition variable=SeparableConv2D_3_b_p
+#pragma HLS array_partition variable=SeparableConv2D_3_b_p
 //#pragma HLS array_partition variable=SeparableConv2D_3_b_d
-//#pragma HLS array_partition variable=SeparableConv2D_3_w_d
-//#pragma HLS array_partition variable=SeparableConv2D_3_w_p
+#pragma HLS array_partition variable=SeparableConv2D_3_w_d
+#pragma HLS array_partition variable=SeparableConv2D_3_w_p
 //
-//#pragma HLS array_partition variable=SeparableConv2D_4_b_p
+#pragma HLS array_partition variable=SeparableConv2D_4_b_p
 //#pragma HLS array_partition variable=SeparableConv2D_4_b_d
-//#pragma HLS array_partition variable=SeparableConv2D_4_w_d
-//#pragma HLS array_partition variable=SeparableConv2D_4_w_p
+#pragma HLS array_partition variable=SeparableConv2D_4_w_d
+#pragma HLS array_partition variable=SeparableConv2D_4_w_p
 
 	int16_t MemBank_A[14400], MemBank_B[14400];
 
@@ -196,7 +196,7 @@ int network(axis input_data[784], axis output_data[784]) {
 
 	for(i = 0; i < array_length; i++){
 //#pragma HLS loop_flatten
-//#pragma HLS PIPELINE
+#pragma HLS PIPELINE
 		tmp.data = MemBank_Out[i];
 		tmp.keep = sig_buffer[i].keep;
 		tmp.strb = sig_buffer[i].strb;

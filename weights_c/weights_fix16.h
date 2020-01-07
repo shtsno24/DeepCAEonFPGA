@@ -9,4 +9,4 @@
 #include "SeparableConv2D_3_fix16.h"
 #include "SeparableConv2D_4_fix16.h"
 
-#define fractal_width_input_0 14
+#define fractal_width_input_0 13

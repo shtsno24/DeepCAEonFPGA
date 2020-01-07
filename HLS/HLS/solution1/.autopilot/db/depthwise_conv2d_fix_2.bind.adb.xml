@@ -249,10 +249,10 @@
 
 <Node id="19" bw="5" op_0_bw="6">
 <![CDATA[
-:10  %empty_53 = trunc i6 %output_height_read to i5
+:10  %empty_54 = trunc i6 %output_height_read to i5
 
 ]]></Node>
-<StgValue><ssdm name="empty_53"/></StgValue>
+<StgValue><ssdm name="empty_54"/></StgValue>
 </operation>
 
 <operation id="25" st_id="1" stage="1" lat="1">
@@ -264,7 +264,7 @@
 
 <Node id="20" bw="10" op_0_bw="5">
 <![CDATA[
-:11  %zext_ln4 = zext i5 %empty_53 to i10
+:11  %zext_ln4 = zext i5 %empty_54 to i10
 
 ]]></Node>
 <StgValue><ssdm name="zext_ln4"/></StgValue>
@@ -759,10 +759,10 @@ hls_label_2:13  %zext_ln24 = zext i8 %select_ln24_1 to i64
 
 <Node id="62" bw="8" op_0_bw="16" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-hls_label_2:14  %kernel_0_addr = getelementptr [144 x i16]* %kernel_0, i64 0, i64 %zext_ln24
+hls_label_2:14  %kernel_addr = getelementptr [144 x i16]* %kernel, i64 0, i64 %zext_ln24
 
 ]]></Node>
-<StgValue><ssdm name="kernel_0_addr"/></StgValue>
+<StgValue><ssdm name="kernel_addr"/></StgValue>
 </operation>
 
 <operation id="58" st_id="2" stage="2" lat="2">
@@ -775,10 +775,10 @@ hls_label_2:14  %kernel_0_addr = getelementptr [144 x i16]* %kernel_0, i64 0, i6
 
 <Node id="63" bw="16" op_0_bw="8">
 <![CDATA[
-hls_label_2:15  %kernel_0_load = load i16* %kernel_0_addr, align 2
+hls_label_2:15  %kernel_load = load i16* %kernel_addr, align 2
 
 ]]></Node>
-<StgValue><ssdm name="kernel_0_load"/></StgValue>
+<StgValue><ssdm name="kernel_load"/></StgValue>
 </operation>
 
 <operation id="59" st_id="2" stage="1" lat="1">
@@ -887,10 +887,10 @@ hls_label_2:69  %out_h = add i5 1, %select_ln24
 
 <Node id="118" bw="1" op_0_bw="1" op_1_bw="1">
 <![CDATA[
-hls_label_2:70  %empty_55 = or i1 %select_ln24_7, %icmp_ln32
+hls_label_2:70  %empty_56 = or i1 %select_ln24_7, %icmp_ln32
 
 ]]></Node>
-<StgValue><ssdm name="empty_55"/></StgValue>
+<StgValue><ssdm name="empty_56"/></StgValue>
 </operation>
 
 <operation id="66" st_id="2" stage="1" lat="1">
@@ -903,7 +903,7 @@ hls_label_2:70  %empty_55 = or i1 %select_ln24_7, %icmp_ln32
 
 <Node id="119" bw="5" op_0_bw="1" op_1_bw="5" op_2_bw="5">
 <![CDATA[
-hls_label_2:71  %out_w_0_mid2 = select i1 %empty_55, i5 0, i5 %out_w_0
+hls_label_2:71  %out_w_0_mid2 = select i1 %empty_56, i5 0, i5 %out_w_0
 
 ]]></Node>
 <StgValue><ssdm name="out_w_0_mid2"/></StgValue>
@@ -986,10 +986,10 @@ hls_label_2:172  %add_ln32_1 = add i10 1, %indvar_flatten
 
 <Node id="63" bw="16" op_0_bw="8">
 <![CDATA[
-hls_label_2:15  %kernel_0_load = load i16* %kernel_0_addr, align 2
+hls_label_2:15  %kernel_load = load i16* %kernel_addr, align 2
 
 ]]></Node>
-<StgValue><ssdm name="kernel_0_load"/></StgValue>
+<StgValue><ssdm name="kernel_load"/></StgValue>
 </operation>
 
 <operation id="72" st_id="3" stage="1" lat="1">
@@ -1034,10 +1034,10 @@ hls_label_2:18  %zext_ln24_1 = zext i8 %add_ln24 to i64
 
 <Node id="67" bw="8" op_0_bw="16" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-hls_label_2:19  %kernel_0_addr_1 = getelementptr [144 x i16]* %kernel_0, i64 0, i64 %zext_ln24_1
+hls_label_2:19  %kernel_addr_1 = getelementptr [144 x i16]* %kernel, i64 0, i64 %zext_ln24_1
 
 ]]></Node>
-<StgValue><ssdm name="kernel_0_addr_1"/></StgValue>
+<StgValue><ssdm name="kernel_addr_1"/></StgValue>
 </operation>
 
 <operation id="75" st_id="3" stage="2" lat="2">
@@ -1050,10 +1050,10 @@ hls_label_2:19  %kernel_0_addr_1 = getelementptr [144 x i16]* %kernel_0, i64 0, 
 
 <Node id="68" bw="16" op_0_bw="8">
 <![CDATA[
-hls_label_2:20  %kernel_0_load_1 = load i16* %kernel_0_addr_1, align 2
+hls_label_2:20  %kernel_load_1 = load i16* %kernel_addr_1, align 2
 
 ]]></Node>
-<StgValue><ssdm name="kernel_0_load_1"/></StgValue>
+<StgValue><ssdm name="kernel_load_1"/></StgValue>
 </operation>
 
 <operation id="76" st_id="3" stage="1" lat="1">
@@ -1098,10 +1098,10 @@ hls_label_2:23  %zext_ln24_2 = zext i8 %add_ln24_3 to i64
 
 <Node id="72" bw="8" op_0_bw="16" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-hls_label_2:24  %kernel_0_addr_2 = getelementptr [144 x i16]* %kernel_0, i64 0, i64 %zext_ln24_2
+hls_label_2:24  %kernel_addr_2 = getelementptr [144 x i16]* %kernel, i64 0, i64 %zext_ln24_2
 
 ]]></Node>
-<StgValue><ssdm name="kernel_0_addr_2"/></StgValue>
+<StgValue><ssdm name="kernel_addr_2"/></StgValue>
 </operation>
 
 <operation id="79" st_id="3" stage="2" lat="2">
@@ -1114,10 +1114,10 @@ hls_label_2:24  %kernel_0_addr_2 = getelementptr [144 x i16]* %kernel_0, i64 0, 
 
 <Node id="73" bw="16" op_0_bw="8">
 <![CDATA[
-hls_label_2:25  %kernel_0_load_2 = load i16* %kernel_0_addr_2, align 2
+hls_label_2:25  %kernel_load_2 = load i16* %kernel_addr_2, align 2
 
 ]]></Node>
-<StgValue><ssdm name="kernel_0_load_2"/></StgValue>
+<StgValue><ssdm name="kernel_load_2"/></StgValue>
 </operation>
 
 <operation id="80" st_id="3" stage="1" lat="1">
@@ -1213,10 +1213,10 @@ hls_label_2:79  %tmp10_1_0_mid2 = mul i14 %zext_ln40_1_cast14, %tmp10_1_0_mid2_v
 
 <Node id="68" bw="16" op_0_bw="8">
 <![CDATA[
-hls_label_2:20  %kernel_0_load_1 = load i16* %kernel_0_addr_1, align 2
+hls_label_2:20  %kernel_load_1 = load i16* %kernel_addr_1, align 2
 
 ]]></Node>
-<StgValue><ssdm name="kernel_0_load_1"/></StgValue>
+<StgValue><ssdm name="kernel_load_1"/></StgValue>
 </operation>
 
 <operation id="86" st_id="4" stage="1" lat="2">
@@ -1229,10 +1229,10 @@ hls_label_2:20  %kernel_0_load_1 = load i16* %kernel_0_addr_1, align 2
 
 <Node id="73" bw="16" op_0_bw="8">
 <![CDATA[
-hls_label_2:25  %kernel_0_load_2 = load i16* %kernel_0_addr_2, align 2
+hls_label_2:25  %kernel_load_2 = load i16* %kernel_addr_2, align 2
 
 ]]></Node>
-<StgValue><ssdm name="kernel_0_load_2"/></StgValue>
+<StgValue><ssdm name="kernel_load_2"/></StgValue>
 </operation>
 
 <operation id="87" st_id="4" stage="1" lat="1">
@@ -1277,10 +1277,10 @@ hls_label_2:28  %zext_ln24_3 = zext i8 %add_ln24_4 to i64
 
 <Node id="77" bw="8" op_0_bw="16" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-hls_label_2:29  %kernel_0_addr_3 = getelementptr [144 x i16]* %kernel_0, i64 0, i64 %zext_ln24_3
+hls_label_2:29  %kernel_addr_3 = getelementptr [144 x i16]* %kernel, i64 0, i64 %zext_ln24_3
 
 ]]></Node>
-<StgValue><ssdm name="kernel_0_addr_3"/></StgValue>
+<StgValue><ssdm name="kernel_addr_3"/></StgValue>
 </operation>
 
 <operation id="90" st_id="4" stage="2" lat="2">
@@ -1293,10 +1293,10 @@ hls_label_2:29  %kernel_0_addr_3 = getelementptr [144 x i16]* %kernel_0, i64 0, 
 
 <Node id="78" bw="16" op_0_bw="8">
 <![CDATA[
-hls_label_2:30  %kernel_0_load_3 = load i16* %kernel_0_addr_3, align 2
+hls_label_2:30  %kernel_load_3 = load i16* %kernel_addr_3, align 2
 
 ]]></Node>
-<StgValue><ssdm name="kernel_0_load_3"/></StgValue>
+<StgValue><ssdm name="kernel_load_3"/></StgValue>
 </operation>
 
 <operation id="91" st_id="4" stage="1" lat="1">
@@ -1341,10 +1341,10 @@ hls_label_2:33  %zext_ln24_4 = zext i8 %add_ln24_5 to i64
 
 <Node id="82" bw="8" op_0_bw="16" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-hls_label_2:34  %kernel_0_addr_4 = getelementptr [144 x i16]* %kernel_0, i64 0, i64 %zext_ln24_4
+hls_label_2:34  %kernel_addr_4 = getelementptr [144 x i16]* %kernel, i64 0, i64 %zext_ln24_4
 
 ]]></Node>
-<StgValue><ssdm name="kernel_0_addr_4"/></StgValue>
+<StgValue><ssdm name="kernel_addr_4"/></StgValue>
 </operation>
 
 <operation id="94" st_id="4" stage="2" lat="2">
@@ -1357,10 +1357,10 @@ hls_label_2:34  %kernel_0_addr_4 = getelementptr [144 x i16]* %kernel_0, i64 0, 
 
 <Node id="83" bw="16" op_0_bw="8">
 <![CDATA[
-hls_label_2:35  %kernel_0_load_4 = load i16* %kernel_0_addr_4, align 2
+hls_label_2:35  %kernel_load_4 = load i16* %kernel_addr_4, align 2
 
 ]]></Node>
-<StgValue><ssdm name="kernel_0_load_4"/></StgValue>
+<StgValue><ssdm name="kernel_load_4"/></StgValue>
 </operation>
 
 <operation id="95" st_id="4" stage="1" lat="1">
@@ -1600,10 +1600,10 @@ hls_label_2:103  %input_load_7 = load i16* %input_addr_7, align 2
 
 <Node id="78" bw="16" op_0_bw="8">
 <![CDATA[
-hls_label_2:30  %kernel_0_load_3 = load i16* %kernel_0_addr_3, align 2
+hls_label_2:30  %kernel_load_3 = load i16* %kernel_addr_3, align 2
 
 ]]></Node>
-<StgValue><ssdm name="kernel_0_load_3"/></StgValue>
+<StgValue><ssdm name="kernel_load_3"/></StgValue>
 </operation>
 
 <operation id="110" st_id="5" stage="1" lat="2">
@@ -1616,10 +1616,10 @@ hls_label_2:30  %kernel_0_load_3 = load i16* %kernel_0_addr_3, align 2
 
 <Node id="83" bw="16" op_0_bw="8">
 <![CDATA[
-hls_label_2:35  %kernel_0_load_4 = load i16* %kernel_0_addr_4, align 2
+hls_label_2:35  %kernel_load_4 = load i16* %kernel_addr_4, align 2
 
 ]]></Node>
-<StgValue><ssdm name="kernel_0_load_4"/></StgValue>
+<StgValue><ssdm name="kernel_load_4"/></StgValue>
 </operation>
 
 <operation id="111" st_id="5" stage="1" lat="1">
@@ -1664,10 +1664,10 @@ hls_label_2:38  %zext_ln24_5 = zext i8 %add_ln24_6 to i64
 
 <Node id="87" bw="8" op_0_bw="16" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-hls_label_2:39  %kernel_0_addr_5 = getelementptr [144 x i16]* %kernel_0, i64 0, i64 %zext_ln24_5
+hls_label_2:39  %kernel_addr_5 = getelementptr [144 x i16]* %kernel, i64 0, i64 %zext_ln24_5
 
 ]]></Node>
-<StgValue><ssdm name="kernel_0_addr_5"/></StgValue>
+<StgValue><ssdm name="kernel_addr_5"/></StgValue>
 </operation>
 
 <operation id="114" st_id="5" stage="2" lat="2">
@@ -1680,10 +1680,10 @@ hls_label_2:39  %kernel_0_addr_5 = getelementptr [144 x i16]* %kernel_0, i64 0, 
 
 <Node id="88" bw="16" op_0_bw="8">
 <![CDATA[
-hls_label_2:40  %kernel_0_load_5 = load i16* %kernel_0_addr_5, align 2
+hls_label_2:40  %kernel_load_5 = load i16* %kernel_addr_5, align 2
 
 ]]></Node>
-<StgValue><ssdm name="kernel_0_load_5"/></StgValue>
+<StgValue><ssdm name="kernel_load_5"/></StgValue>
 </operation>
 
 <operation id="115" st_id="5" stage="1" lat="1">
@@ -1728,10 +1728,10 @@ hls_label_2:43  %zext_ln24_6 = zext i8 %add_ln24_7 to i64
 
 <Node id="92" bw="8" op_0_bw="16" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-hls_label_2:44  %kernel_0_addr_6 = getelementptr [144 x i16]* %kernel_0, i64 0, i64 %zext_ln24_6
+hls_label_2:44  %kernel_addr_6 = getelementptr [144 x i16]* %kernel, i64 0, i64 %zext_ln24_6
 
 ]]></Node>
-<StgValue><ssdm name="kernel_0_addr_6"/></StgValue>
+<StgValue><ssdm name="kernel_addr_6"/></StgValue>
 </operation>
 
 <operation id="118" st_id="5" stage="2" lat="2">
@@ -1744,10 +1744,10 @@ hls_label_2:44  %kernel_0_addr_6 = getelementptr [144 x i16]* %kernel_0, i64 0, 
 
 <Node id="93" bw="16" op_0_bw="8">
 <![CDATA[
-hls_label_2:45  %kernel_0_load_6 = load i16* %kernel_0_addr_6, align 2
+hls_label_2:45  %kernel_load_6 = load i16* %kernel_addr_6, align 2
 
 ]]></Node>
-<StgValue><ssdm name="kernel_0_load_6"/></StgValue>
+<StgValue><ssdm name="kernel_load_6"/></StgValue>
 </operation>
 
 <operation id="119" st_id="5" stage="1" lat="1">
@@ -1984,9 +1984,9 @@ hls_label_2:119  %input_load_9 = load i16* %input_addr_9, align 2
 </and_exp></or_exp>
 </condition>
 
-<Node id="64" bw="30" op_0_bw="16">
+<Node id="64" bw="29" op_0_bw="16">
 <![CDATA[
-hls_label_2:16  %sext_ln24 = sext i16 %kernel_0_load to i30
+hls_label_2:16  %sext_ln24 = sext i16 %kernel_load to i29
 
 ]]></Node>
 <StgValue><ssdm name="sext_ln24"/></StgValue>
@@ -2000,9 +2000,9 @@ hls_label_2:16  %sext_ln24 = sext i16 %kernel_0_load to i30
 </and_exp></or_exp>
 </condition>
 
-<Node id="69" bw="30" op_0_bw="16">
+<Node id="69" bw="29" op_0_bw="16">
 <![CDATA[
-hls_label_2:21  %sext_ln24_1 = sext i16 %kernel_0_load_1 to i30
+hls_label_2:21  %sext_ln24_1 = sext i16 %kernel_load_1 to i29
 
 ]]></Node>
 <StgValue><ssdm name="sext_ln24_1"/></StgValue>
@@ -2018,10 +2018,10 @@ hls_label_2:21  %sext_ln24_1 = sext i16 %kernel_0_load_1 to i30
 
 <Node id="88" bw="16" op_0_bw="8">
 <![CDATA[
-hls_label_2:40  %kernel_0_load_5 = load i16* %kernel_0_addr_5, align 2
+hls_label_2:40  %kernel_load_5 = load i16* %kernel_addr_5, align 2
 
 ]]></Node>
-<StgValue><ssdm name="kernel_0_load_5"/></StgValue>
+<StgValue><ssdm name="kernel_load_5"/></StgValue>
 </operation>
 
 <operation id="136" st_id="6" stage="1" lat="2">
@@ -2034,10 +2034,10 @@ hls_label_2:40  %kernel_0_load_5 = load i16* %kernel_0_addr_5, align 2
 
 <Node id="93" bw="16" op_0_bw="8">
 <![CDATA[
-hls_label_2:45  %kernel_0_load_6 = load i16* %kernel_0_addr_6, align 2
+hls_label_2:45  %kernel_load_6 = load i16* %kernel_addr_6, align 2
 
 ]]></Node>
-<StgValue><ssdm name="kernel_0_load_6"/></StgValue>
+<StgValue><ssdm name="kernel_load_6"/></StgValue>
 </operation>
 
 <operation id="137" st_id="6" stage="1" lat="1">
@@ -2082,10 +2082,10 @@ hls_label_2:48  %zext_ln24_7 = zext i8 %add_ln24_8 to i64
 
 <Node id="97" bw="8" op_0_bw="16" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-hls_label_2:49  %kernel_0_addr_7 = getelementptr [144 x i16]* %kernel_0, i64 0, i64 %zext_ln24_7
+hls_label_2:49  %kernel_addr_7 = getelementptr [144 x i16]* %kernel, i64 0, i64 %zext_ln24_7
 
 ]]></Node>
-<StgValue><ssdm name="kernel_0_addr_7"/></StgValue>
+<StgValue><ssdm name="kernel_addr_7"/></StgValue>
 </operation>
 
 <operation id="140" st_id="6" stage="2" lat="2">
@@ -2098,10 +2098,10 @@ hls_label_2:49  %kernel_0_addr_7 = getelementptr [144 x i16]* %kernel_0, i64 0, 
 
 <Node id="98" bw="16" op_0_bw="8">
 <![CDATA[
-hls_label_2:50  %kernel_0_load_7 = load i16* %kernel_0_addr_7, align 2
+hls_label_2:50  %kernel_load_7 = load i16* %kernel_addr_7, align 2
 
 ]]></Node>
-<StgValue><ssdm name="kernel_0_load_7"/></StgValue>
+<StgValue><ssdm name="kernel_load_7"/></StgValue>
 </operation>
 
 <operation id="141" st_id="6" stage="1" lat="1">
@@ -2146,10 +2146,10 @@ hls_label_2:53  %zext_ln24_8 = zext i8 %add_ln24_9 to i64
 
 <Node id="102" bw="8" op_0_bw="16" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-hls_label_2:54  %kernel_0_addr_8 = getelementptr [144 x i16]* %kernel_0, i64 0, i64 %zext_ln24_8
+hls_label_2:54  %kernel_addr_8 = getelementptr [144 x i16]* %kernel, i64 0, i64 %zext_ln24_8
 
 ]]></Node>
-<StgValue><ssdm name="kernel_0_addr_8"/></StgValue>
+<StgValue><ssdm name="kernel_addr_8"/></StgValue>
 </operation>
 
 <operation id="144" st_id="6" stage="2" lat="2">
@@ -2162,10 +2162,10 @@ hls_label_2:54  %kernel_0_addr_8 = getelementptr [144 x i16]* %kernel_0, i64 0, 
 
 <Node id="103" bw="16" op_0_bw="8">
 <![CDATA[
-hls_label_2:55  %kernel_0_load_8 = load i16* %kernel_0_addr_8, align 2
+hls_label_2:55  %kernel_load_8 = load i16* %kernel_addr_8, align 2
 
 ]]></Node>
-<StgValue><ssdm name="kernel_0_load_8"/></StgValue>
+<StgValue><ssdm name="kernel_load_8"/></StgValue>
 </operation>
 
 <operation id="145" st_id="6" stage="1" lat="1">
@@ -2208,9 +2208,9 @@ hls_label_2:87  %select_ln32 = select i1 %select_ln24_7, i5 %out_h, i5 %select_l
 </and_exp></or_exp>
 </condition>
 
-<Node id="143" bw="30" op_0_bw="16">
+<Node id="143" bw="29" op_0_bw="16">
 <![CDATA[
-hls_label_2:95  %sext_ln40 = sext i16 %input_load to i30
+hls_label_2:95  %sext_ln40 = sext i16 %input_load to i29
 
 ]]></Node>
 <StgValue><ssdm name="sext_ln40"/></StgValue>
@@ -2224,9 +2224,9 @@ hls_label_2:95  %sext_ln40 = sext i16 %input_load to i30
 </and_exp></or_exp>
 </condition>
 
-<Node id="144" bw="30" op_0_bw="30" op_1_bw="30">
+<Node id="144" bw="29" op_0_bw="29" op_1_bw="29">
 <![CDATA[
-hls_label_2:96  %mul_ln40_2 = mul i30 %sext_ln40, %sext_ln24
+hls_label_2:96  %mul_ln40_2 = mul i29 %sext_ln40, %sext_ln24
 
 ]]></Node>
 <StgValue><ssdm name="mul_ln40_2"/></StgValue>
@@ -2240,9 +2240,9 @@ hls_label_2:96  %mul_ln40_2 = mul i30 %sext_ln40, %sext_ln24
 </and_exp></or_exp>
 </condition>
 
-<Node id="145" bw="16" op_0_bw="16" op_1_bw="30" op_2_bw="32" op_3_bw="32">
+<Node id="145" bw="16" op_0_bw="16" op_1_bw="29" op_2_bw="32" op_3_bw="32">
 <![CDATA[
-hls_label_2:97  %trunc_ln = call i16 @_ssdm_op_PartSelect.i16.i30.i32.i32(i30 %mul_ln40_2, i32 14, i32 29)
+hls_label_2:97  %trunc_ln = call i16 @_ssdm_op_PartSelect.i16.i29.i32.i32(i29 %mul_ln40_2, i32 13, i32 28)
 
 ]]></Node>
 <StgValue><ssdm name="trunc_ln"/></StgValue>
@@ -2256,9 +2256,9 @@ hls_label_2:97  %trunc_ln = call i16 @_ssdm_op_PartSelect.i16.i30.i32.i32(i30 %m
 </and_exp></or_exp>
 </condition>
 
-<Node id="152" bw="30" op_0_bw="16">
+<Node id="152" bw="29" op_0_bw="16">
 <![CDATA[
-hls_label_2:104  %sext_ln40_1 = sext i16 %input_load_7 to i30
+hls_label_2:104  %sext_ln40_1 = sext i16 %input_load_7 to i29
 
 ]]></Node>
 <StgValue><ssdm name="sext_ln40_1"/></StgValue>
@@ -2272,9 +2272,9 @@ hls_label_2:104  %sext_ln40_1 = sext i16 %input_load_7 to i30
 </and_exp></or_exp>
 </condition>
 
-<Node id="153" bw="30" op_0_bw="30" op_1_bw="30">
+<Node id="153" bw="29" op_0_bw="29" op_1_bw="29">
 <![CDATA[
-hls_label_2:105  %mul_ln40_3 = mul i30 %sext_ln40_1, %sext_ln24_1
+hls_label_2:105  %mul_ln40_3 = mul i29 %sext_ln40_1, %sext_ln24_1
 
 ]]></Node>
 <StgValue><ssdm name="mul_ln40_3"/></StgValue>
@@ -2288,9 +2288,9 @@ hls_label_2:105  %mul_ln40_3 = mul i30 %sext_ln40_1, %sext_ln24_1
 </and_exp></or_exp>
 </condition>
 
-<Node id="154" bw="16" op_0_bw="16" op_1_bw="30" op_2_bw="32" op_3_bw="32">
+<Node id="154" bw="16" op_0_bw="16" op_1_bw="29" op_2_bw="32" op_3_bw="32">
 <![CDATA[
-hls_label_2:106  %trunc_ln48_s = call i16 @_ssdm_op_PartSelect.i16.i30.i32.i32(i30 %mul_ln40_3, i32 14, i32 29)
+hls_label_2:106  %trunc_ln48_s = call i16 @_ssdm_op_PartSelect.i16.i29.i32.i32(i29 %mul_ln40_3, i32 13, i32 28)
 
 ]]></Node>
 <StgValue><ssdm name="trunc_ln48_s"/></StgValue>
@@ -2498,9 +2498,9 @@ hls_label_2:173  %select_ln32_13 = select i1 %icmp_ln32, i10 1, i10 %add_ln32_1
 </and_exp></or_exp>
 </condition>
 
-<Node id="74" bw="30" op_0_bw="16">
+<Node id="74" bw="29" op_0_bw="16">
 <![CDATA[
-hls_label_2:26  %sext_ln24_2 = sext i16 %kernel_0_load_2 to i30
+hls_label_2:26  %sext_ln24_2 = sext i16 %kernel_load_2 to i29
 
 ]]></Node>
 <StgValue><ssdm name="sext_ln24_2"/></StgValue>
@@ -2514,9 +2514,9 @@ hls_label_2:26  %sext_ln24_2 = sext i16 %kernel_0_load_2 to i30
 </and_exp></or_exp>
 </condition>
 
-<Node id="79" bw="30" op_0_bw="16">
+<Node id="79" bw="29" op_0_bw="16">
 <![CDATA[
-hls_label_2:31  %sext_ln24_3 = sext i16 %kernel_0_load_3 to i30
+hls_label_2:31  %sext_ln24_3 = sext i16 %kernel_load_3 to i29
 
 ]]></Node>
 <StgValue><ssdm name="sext_ln24_3"/></StgValue>
@@ -2532,10 +2532,10 @@ hls_label_2:31  %sext_ln24_3 = sext i16 %kernel_0_load_3 to i30
 
 <Node id="98" bw="16" op_0_bw="8">
 <![CDATA[
-hls_label_2:50  %kernel_0_load_7 = load i16* %kernel_0_addr_7, align 2
+hls_label_2:50  %kernel_load_7 = load i16* %kernel_addr_7, align 2
 
 ]]></Node>
-<StgValue><ssdm name="kernel_0_load_7"/></StgValue>
+<StgValue><ssdm name="kernel_load_7"/></StgValue>
 </operation>
 
 <operation id="168" st_id="7" stage="1" lat="2">
@@ -2548,10 +2548,10 @@ hls_label_2:50  %kernel_0_load_7 = load i16* %kernel_0_addr_7, align 2
 
 <Node id="103" bw="16" op_0_bw="8">
 <![CDATA[
-hls_label_2:55  %kernel_0_load_8 = load i16* %kernel_0_addr_8, align 2
+hls_label_2:55  %kernel_load_8 = load i16* %kernel_addr_8, align 2
 
 ]]></Node>
-<StgValue><ssdm name="kernel_0_load_8"/></StgValue>
+<StgValue><ssdm name="kernel_load_8"/></StgValue>
 </operation>
 
 <operation id="169" st_id="7" stage="1" lat="1">
@@ -2610,9 +2610,9 @@ hls_label_2:60  %bias_load = load i16* %bias_addr, align 2
 </and_exp></or_exp>
 </condition>
 
-<Node id="161" bw="30" op_0_bw="16">
+<Node id="161" bw="29" op_0_bw="16">
 <![CDATA[
-hls_label_2:113  %sext_ln40_2 = sext i16 %input_load_8 to i30
+hls_label_2:113  %sext_ln40_2 = sext i16 %input_load_8 to i29
 
 ]]></Node>
 <StgValue><ssdm name="sext_ln40_2"/></StgValue>
@@ -2626,9 +2626,9 @@ hls_label_2:113  %sext_ln40_2 = sext i16 %input_load_8 to i30
 </and_exp></or_exp>
 </condition>
 
-<Node id="162" bw="30" op_0_bw="30" op_1_bw="30">
+<Node id="162" bw="29" op_0_bw="29" op_1_bw="29">
 <![CDATA[
-hls_label_2:114  %mul_ln40_4 = mul i30 %sext_ln40_2, %sext_ln24_2
+hls_label_2:114  %mul_ln40_4 = mul i29 %sext_ln40_2, %sext_ln24_2
 
 ]]></Node>
 <StgValue><ssdm name="mul_ln40_4"/></StgValue>
@@ -2642,9 +2642,9 @@ hls_label_2:114  %mul_ln40_4 = mul i30 %sext_ln40_2, %sext_ln24_2
 </and_exp></or_exp>
 </condition>
 
-<Node id="163" bw="16" op_0_bw="16" op_1_bw="30" op_2_bw="32" op_3_bw="32">
+<Node id="163" bw="16" op_0_bw="16" op_1_bw="29" op_2_bw="32" op_3_bw="32">
 <![CDATA[
-hls_label_2:115  %trunc_ln48_1 = call i16 @_ssdm_op_PartSelect.i16.i30.i32.i32(i30 %mul_ln40_4, i32 14, i32 29)
+hls_label_2:115  %trunc_ln48_1 = call i16 @_ssdm_op_PartSelect.i16.i29.i32.i32(i29 %mul_ln40_4, i32 13, i32 28)
 
 ]]></Node>
 <StgValue><ssdm name="trunc_ln48_1"/></StgValue>
@@ -2658,9 +2658,9 @@ hls_label_2:115  %trunc_ln48_1 = call i16 @_ssdm_op_PartSelect.i16.i30.i32.i32(i
 </and_exp></or_exp>
 </condition>
 
-<Node id="168" bw="30" op_0_bw="16">
+<Node id="168" bw="29" op_0_bw="16">
 <![CDATA[
-hls_label_2:120  %sext_ln40_3 = sext i16 %input_load_9 to i30
+hls_label_2:120  %sext_ln40_3 = sext i16 %input_load_9 to i29
 
 ]]></Node>
 <StgValue><ssdm name="sext_ln40_3"/></StgValue>
@@ -2674,9 +2674,9 @@ hls_label_2:120  %sext_ln40_3 = sext i16 %input_load_9 to i30
 </and_exp></or_exp>
 </condition>
 
-<Node id="169" bw="30" op_0_bw="30" op_1_bw="30">
+<Node id="169" bw="29" op_0_bw="29" op_1_bw="29">
 <![CDATA[
-hls_label_2:121  %mul_ln40_5 = mul i30 %sext_ln40_3, %sext_ln24_3
+hls_label_2:121  %mul_ln40_5 = mul i29 %sext_ln40_3, %sext_ln24_3
 
 ]]></Node>
 <StgValue><ssdm name="mul_ln40_5"/></StgValue>
@@ -2690,9 +2690,9 @@ hls_label_2:121  %mul_ln40_5 = mul i30 %sext_ln40_3, %sext_ln24_3
 </and_exp></or_exp>
 </condition>
 
-<Node id="170" bw="16" op_0_bw="16" op_1_bw="30" op_2_bw="32" op_3_bw="32">
+<Node id="170" bw="16" op_0_bw="16" op_1_bw="29" op_2_bw="32" op_3_bw="32">
 <![CDATA[
-hls_label_2:122  %trunc_ln48_2 = call i16 @_ssdm_op_PartSelect.i16.i30.i32.i32(i30 %mul_ln40_5, i32 14, i32 29)
+hls_label_2:122  %trunc_ln48_2 = call i16 @_ssdm_op_PartSelect.i16.i29.i32.i32(i29 %mul_ln40_5, i32 13, i32 28)
 
 ]]></Node>
 <StgValue><ssdm name="trunc_ln48_2"/></StgValue>
@@ -2885,9 +2885,9 @@ hls_label_2:151  %add_ln40_10 = add i14 %tmp10_2_0_mid2, %zext_ln40_5
 </and_exp></or_exp>
 </condition>
 
-<Node id="84" bw="30" op_0_bw="16">
+<Node id="84" bw="29" op_0_bw="16">
 <![CDATA[
-hls_label_2:36  %sext_ln24_4 = sext i16 %kernel_0_load_4 to i30
+hls_label_2:36  %sext_ln24_4 = sext i16 %kernel_load_4 to i29
 
 ]]></Node>
 <StgValue><ssdm name="sext_ln24_4"/></StgValue>
@@ -2901,9 +2901,9 @@ hls_label_2:36  %sext_ln24_4 = sext i16 %kernel_0_load_4 to i30
 </and_exp></or_exp>
 </condition>
 
-<Node id="89" bw="30" op_0_bw="16">
+<Node id="89" bw="29" op_0_bw="16">
 <![CDATA[
-hls_label_2:41  %sext_ln24_5 = sext i16 %kernel_0_load_5 to i30
+hls_label_2:41  %sext_ln24_5 = sext i16 %kernel_load_5 to i29
 
 ]]></Node>
 <StgValue><ssdm name="sext_ln24_5"/></StgValue>
@@ -2933,9 +2933,9 @@ hls_label_2:60  %bias_load = load i16* %bias_addr, align 2
 </and_exp></or_exp>
 </condition>
 
-<Node id="175" bw="30" op_0_bw="16">
+<Node id="175" bw="29" op_0_bw="16">
 <![CDATA[
-hls_label_2:127  %sext_ln40_4 = sext i16 %input_load_10 to i30
+hls_label_2:127  %sext_ln40_4 = sext i16 %input_load_10 to i29
 
 ]]></Node>
 <StgValue><ssdm name="sext_ln40_4"/></StgValue>
@@ -2949,9 +2949,9 @@ hls_label_2:127  %sext_ln40_4 = sext i16 %input_load_10 to i30
 </and_exp></or_exp>
 </condition>
 
-<Node id="176" bw="30" op_0_bw="30" op_1_bw="30">
+<Node id="176" bw="29" op_0_bw="29" op_1_bw="29">
 <![CDATA[
-hls_label_2:128  %mul_ln40_6 = mul i30 %sext_ln40_4, %sext_ln24_4
+hls_label_2:128  %mul_ln40_6 = mul i29 %sext_ln40_4, %sext_ln24_4
 
 ]]></Node>
 <StgValue><ssdm name="mul_ln40_6"/></StgValue>
@@ -2965,9 +2965,9 @@ hls_label_2:128  %mul_ln40_6 = mul i30 %sext_ln40_4, %sext_ln24_4
 </and_exp></or_exp>
 </condition>
 
-<Node id="177" bw="16" op_0_bw="16" op_1_bw="30" op_2_bw="32" op_3_bw="32">
+<Node id="177" bw="16" op_0_bw="16" op_1_bw="29" op_2_bw="32" op_3_bw="32">
 <![CDATA[
-hls_label_2:129  %trunc_ln48_3 = call i16 @_ssdm_op_PartSelect.i16.i30.i32.i32(i30 %mul_ln40_6, i32 14, i32 29)
+hls_label_2:129  %trunc_ln48_3 = call i16 @_ssdm_op_PartSelect.i16.i29.i32.i32(i29 %mul_ln40_6, i32 13, i32 28)
 
 ]]></Node>
 <StgValue><ssdm name="trunc_ln48_3"/></StgValue>
@@ -2981,9 +2981,9 @@ hls_label_2:129  %trunc_ln48_3 = call i16 @_ssdm_op_PartSelect.i16.i30.i32.i32(i
 </and_exp></or_exp>
 </condition>
 
-<Node id="182" bw="30" op_0_bw="16">
+<Node id="182" bw="29" op_0_bw="16">
 <![CDATA[
-hls_label_2:134  %sext_ln40_5 = sext i16 %input_load_11 to i30
+hls_label_2:134  %sext_ln40_5 = sext i16 %input_load_11 to i29
 
 ]]></Node>
 <StgValue><ssdm name="sext_ln40_5"/></StgValue>
@@ -2997,9 +2997,9 @@ hls_label_2:134  %sext_ln40_5 = sext i16 %input_load_11 to i30
 </and_exp></or_exp>
 </condition>
 
-<Node id="183" bw="30" op_0_bw="30" op_1_bw="30">
+<Node id="183" bw="29" op_0_bw="29" op_1_bw="29">
 <![CDATA[
-hls_label_2:135  %mul_ln40_7 = mul i30 %sext_ln40_5, %sext_ln24_5
+hls_label_2:135  %mul_ln40_7 = mul i29 %sext_ln40_5, %sext_ln24_5
 
 ]]></Node>
 <StgValue><ssdm name="mul_ln40_7"/></StgValue>
@@ -3013,9 +3013,9 @@ hls_label_2:135  %mul_ln40_7 = mul i30 %sext_ln40_5, %sext_ln24_5
 </and_exp></or_exp>
 </condition>
 
-<Node id="184" bw="16" op_0_bw="16" op_1_bw="30" op_2_bw="32" op_3_bw="32">
+<Node id="184" bw="16" op_0_bw="16" op_1_bw="29" op_2_bw="32" op_3_bw="32">
 <![CDATA[
-hls_label_2:136  %trunc_ln48_4 = call i16 @_ssdm_op_PartSelect.i16.i30.i32.i32(i30 %mul_ln40_7, i32 14, i32 29)
+hls_label_2:136  %trunc_ln48_4 = call i16 @_ssdm_op_PartSelect.i16.i29.i32.i32(i29 %mul_ln40_7, i32 13, i32 28)
 
 ]]></Node>
 <StgValue><ssdm name="trunc_ln48_4"/></StgValue>
@@ -3177,7 +3177,7 @@ hls_label_2:161  %add_ln48_4 = add i16 %add_ln48_1, %add_ln48_3
 
 <Node id="32" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-.preheader5:5  call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind
+.preheader5:5  call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str129) nounwind
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln24"/></StgValue>
@@ -3223,9 +3223,9 @@ hls_label_2:161  %add_ln48_4 = add i16 %add_ln48_1, %add_ln48_3
 </and_exp></or_exp>
 </condition>
 
-<Node id="94" bw="30" op_0_bw="16">
+<Node id="94" bw="29" op_0_bw="16">
 <![CDATA[
-hls_label_2:46  %sext_ln24_6 = sext i16 %kernel_0_load_6 to i30
+hls_label_2:46  %sext_ln24_6 = sext i16 %kernel_load_6 to i29
 
 ]]></Node>
 <StgValue><ssdm name="sext_ln24_6"/></StgValue>
@@ -3239,9 +3239,9 @@ hls_label_2:46  %sext_ln24_6 = sext i16 %kernel_0_load_6 to i30
 </and_exp></or_exp>
 </condition>
 
-<Node id="99" bw="30" op_0_bw="16">
+<Node id="99" bw="29" op_0_bw="16">
 <![CDATA[
-hls_label_2:51  %sext_ln24_7 = sext i16 %kernel_0_load_7 to i30
+hls_label_2:51  %sext_ln24_7 = sext i16 %kernel_load_7 to i29
 
 ]]></Node>
 <StgValue><ssdm name="sext_ln24_7"/></StgValue>
@@ -3322,9 +3322,9 @@ hls_label_2:84  %tmp12_mid2_v_v = select i1 %select_ln24_7, i9 %tmp11_mid1, i9 %
 </and_exp></or_exp>
 </condition>
 
-<Node id="189" bw="30" op_0_bw="16">
+<Node id="189" bw="29" op_0_bw="16">
 <![CDATA[
-hls_label_2:141  %sext_ln40_6 = sext i16 %input_load_12 to i30
+hls_label_2:141  %sext_ln40_6 = sext i16 %input_load_12 to i29
 
 ]]></Node>
 <StgValue><ssdm name="sext_ln40_6"/></StgValue>
@@ -3338,9 +3338,9 @@ hls_label_2:141  %sext_ln40_6 = sext i16 %input_load_12 to i30
 </and_exp></or_exp>
 </condition>
 
-<Node id="190" bw="30" op_0_bw="30" op_1_bw="30">
+<Node id="190" bw="29" op_0_bw="29" op_1_bw="29">
 <![CDATA[
-hls_label_2:142  %mul_ln40_8 = mul i30 %sext_ln40_6, %sext_ln24_6
+hls_label_2:142  %mul_ln40_8 = mul i29 %sext_ln40_6, %sext_ln24_6
 
 ]]></Node>
 <StgValue><ssdm name="mul_ln40_8"/></StgValue>
@@ -3354,9 +3354,9 @@ hls_label_2:142  %mul_ln40_8 = mul i30 %sext_ln40_6, %sext_ln24_6
 </and_exp></or_exp>
 </condition>
 
-<Node id="191" bw="16" op_0_bw="16" op_1_bw="30" op_2_bw="32" op_3_bw="32">
+<Node id="191" bw="16" op_0_bw="16" op_1_bw="29" op_2_bw="32" op_3_bw="32">
 <![CDATA[
-hls_label_2:143  %trunc_ln48_5 = call i16 @_ssdm_op_PartSelect.i16.i30.i32.i32(i30 %mul_ln40_8, i32 14, i32 29)
+hls_label_2:143  %trunc_ln48_5 = call i16 @_ssdm_op_PartSelect.i16.i29.i32.i32(i29 %mul_ln40_8, i32 13, i32 28)
 
 ]]></Node>
 <StgValue><ssdm name="trunc_ln48_5"/></StgValue>
@@ -3370,9 +3370,9 @@ hls_label_2:143  %trunc_ln48_5 = call i16 @_ssdm_op_PartSelect.i16.i30.i32.i32(i
 </and_exp></or_exp>
 </condition>
 
-<Node id="196" bw="30" op_0_bw="16">
+<Node id="196" bw="29" op_0_bw="16">
 <![CDATA[
-hls_label_2:148  %sext_ln40_7 = sext i16 %input_load_13 to i30
+hls_label_2:148  %sext_ln40_7 = sext i16 %input_load_13 to i29
 
 ]]></Node>
 <StgValue><ssdm name="sext_ln40_7"/></StgValue>
@@ -3386,9 +3386,9 @@ hls_label_2:148  %sext_ln40_7 = sext i16 %input_load_13 to i30
 </and_exp></or_exp>
 </condition>
 
-<Node id="197" bw="30" op_0_bw="30" op_1_bw="30">
+<Node id="197" bw="29" op_0_bw="29" op_1_bw="29">
 <![CDATA[
-hls_label_2:149  %mul_ln40_9 = mul i30 %sext_ln40_7, %sext_ln24_7
+hls_label_2:149  %mul_ln40_9 = mul i29 %sext_ln40_7, %sext_ln24_7
 
 ]]></Node>
 <StgValue><ssdm name="mul_ln40_9"/></StgValue>
@@ -3402,9 +3402,9 @@ hls_label_2:149  %mul_ln40_9 = mul i30 %sext_ln40_7, %sext_ln24_7
 </and_exp></or_exp>
 </condition>
 
-<Node id="198" bw="16" op_0_bw="16" op_1_bw="30" op_2_bw="32" op_3_bw="32">
+<Node id="198" bw="16" op_0_bw="16" op_1_bw="29" op_2_bw="32" op_3_bw="32">
 <![CDATA[
-hls_label_2:150  %trunc_ln48_6 = call i16 @_ssdm_op_PartSelect.i16.i30.i32.i32(i30 %mul_ln40_9, i32 14, i32 29)
+hls_label_2:150  %trunc_ln48_6 = call i16 @_ssdm_op_PartSelect.i16.i29.i32.i32(i29 %mul_ln40_9, i32 13, i32 28)
 
 ]]></Node>
 <StgValue><ssdm name="trunc_ln48_6"/></StgValue>
@@ -3453,9 +3453,9 @@ hls_label_2:162  %add_ln48_5 = add i16 %trunc_ln48_4, %trunc_ln48_3
 </and_exp></or_exp>
 </condition>
 
-<Node id="104" bw="30" op_0_bw="16">
+<Node id="104" bw="29" op_0_bw="16">
 <![CDATA[
-hls_label_2:56  %sext_ln24_8 = sext i16 %kernel_0_load_8 to i30
+hls_label_2:56  %sext_ln24_8 = sext i16 %kernel_load_8 to i29
 
 ]]></Node>
 <StgValue><ssdm name="sext_ln24_8"/></StgValue>
@@ -3501,9 +3501,9 @@ hls_label_2:86  %tmp12_mid2 = mul i14 %zext_ln48_1_cast, %tmp12_mid2_v
 </and_exp></or_exp>
 </condition>
 
-<Node id="203" bw="30" op_0_bw="16">
+<Node id="203" bw="29" op_0_bw="16">
 <![CDATA[
-hls_label_2:155  %sext_ln40_8 = sext i16 %input_load_14 to i30
+hls_label_2:155  %sext_ln40_8 = sext i16 %input_load_14 to i29
 
 ]]></Node>
 <StgValue><ssdm name="sext_ln40_8"/></StgValue>
@@ -3517,9 +3517,9 @@ hls_label_2:155  %sext_ln40_8 = sext i16 %input_load_14 to i30
 </and_exp></or_exp>
 </condition>
 
-<Node id="204" bw="30" op_0_bw="30" op_1_bw="30">
+<Node id="204" bw="29" op_0_bw="29" op_1_bw="29">
 <![CDATA[
-hls_label_2:156  %mul_ln40_10 = mul i30 %sext_ln40_8, %sext_ln24_8
+hls_label_2:156  %mul_ln40_10 = mul i29 %sext_ln40_8, %sext_ln24_8
 
 ]]></Node>
 <StgValue><ssdm name="mul_ln40_10"/></StgValue>
@@ -3533,9 +3533,9 @@ hls_label_2:156  %mul_ln40_10 = mul i30 %sext_ln40_8, %sext_ln24_8
 </and_exp></or_exp>
 </condition>
 
-<Node id="205" bw="16" op_0_bw="16" op_1_bw="30" op_2_bw="32" op_3_bw="32">
+<Node id="205" bw="16" op_0_bw="16" op_1_bw="29" op_2_bw="32" op_3_bw="32">
 <![CDATA[
-hls_label_2:157  %trunc_ln48_7 = call i16 @_ssdm_op_PartSelect.i16.i30.i32.i32(i30 %mul_ln40_10, i32 14, i32 29)
+hls_label_2:157  %trunc_ln48_7 = call i16 @_ssdm_op_PartSelect.i16.i29.i32.i32(i29 %mul_ln40_10, i32 13, i32 28)
 
 ]]></Node>
 <StgValue><ssdm name="trunc_ln48_7"/></StgValue>
@@ -3637,7 +3637,7 @@ hls_label_2:166  %add_ln48_9 = add i16 %add_ln48_4, %add_ln48_8
 
 <Node id="49" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-hls_label_2:1  call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind
+hls_label_2:1  call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str129) nounwind
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln24"/></StgValue>
@@ -3653,10 +3653,10 @@ hls_label_2:1  call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32
 
 <Node id="50" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-hls_label_2:2  %empty_54 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 3136, i64 12544, i64 0)
+hls_label_2:2  %empty_55 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 3136, i64 12544, i64 0)
 
 ]]></Node>
-<StgValue><ssdm name="empty_54"/></StgValue>
+<StgValue><ssdm name="empty_55"/></StgValue>
 </operation>
 
 <operation id="237" st_id="12" stage="1" lat="1">
@@ -3669,7 +3669,7 @@ hls_label_2:2  %empty_54 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 3136,
 
 <Node id="53" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-hls_label_2:5  call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind
+hls_label_2:5  call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str129) nounwind
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln24"/></StgValue>
@@ -3685,7 +3685,7 @@ hls_label_2:5  call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32
 
 <Node id="136" bw="32" op_0_bw="32" op_1_bw="0">
 <![CDATA[
-hls_label_2:88  %tmp_s = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str4)
+hls_label_2:88  %tmp_s = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str432)
 
 ]]></Node>
 <StgValue><ssdm name="tmp_s"/></StgValue>
@@ -3701,7 +3701,7 @@ hls_label_2:88  %tmp_s = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p
 
 <Node id="137" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-hls_label_2:89  call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind
+hls_label_2:89  call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str129) nounwind
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln34"/></StgValue>
@@ -3765,10 +3765,10 @@ hls_label_2:170  store i16 %add_ln48_9, i16* %output_addr, align 2
 
 <Node id="219" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32">
 <![CDATA[
-hls_label_2:171  %empty_56 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str4, i32 %tmp_s)
+hls_label_2:171  %empty_57 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str432, i32 %tmp_s)
 
 ]]></Node>
-<StgValue><ssdm name="empty_56"/></StgValue>
+<StgValue><ssdm name="empty_57"/></StgValue>
 </operation>
 
 <operation id="244" st_id="12" stage="1" lat="1">
@@ -3833,8 +3833,8 @@ hls_label_2:174  br label %.preheader5
 <core>RAM</core><StgValue><ssdm name="bias"/><MemPortTyVec>1 3 </MemPortTyVec>
 </StgValue>
 </port>
-<port id="287" name="kernel_0" dir="0" iftype="1">
-<core>RAM</core><StgValue><ssdm name="kernel_0"/><MemPortTyVec>1 1 </MemPortTyVec>
+<port id="287" name="kernel" dir="0" iftype="1">
+<core>RAM</core><StgValue><ssdm name="kernel"/><MemPortTyVec>1 1 </MemPortTyVec>
 </StgValue>
 </port>
 </ports>
@@ -3869,9 +3869,9 @@ hls_label_2:174  br label %.preheader5
 </dataflow>
 <dataflow id="303" from="output_width_read" to="empty" fromId="14" toId="23">
 </dataflow>
-<dataflow id="304" from="output_height_read" to="empty_53" fromId="15" toId="24">
+<dataflow id="304" from="output_height_read" to="empty_54" fromId="15" toId="24">
 </dataflow>
-<dataflow id="305" from="empty_53" to="zext_ln4" fromId="24" toId="25">
+<dataflow id="305" from="empty_54" to="zext_ln4" fromId="24" toId="25">
 </dataflow>
 <dataflow id="306" from="empty" to="zext_ln4_1" fromId="23" toId="26">
 </dataflow>
@@ -4046,13 +4046,13 @@ hls_label_2:174  br label %.preheader5
 </dataflow>
 <dataflow id="377" from="select_ln24_1" to="zext_ln24" fromId="55" toId="56">
 </dataflow>
-<dataflow id="378" from="kernel_0" to="kernel_0_addr" fromId="287" toId="57">
+<dataflow id="378" from="kernel" to="kernel_addr" fromId="287" toId="57">
 </dataflow>
-<dataflow id="380" from="StgValue_379" to="kernel_0_addr" fromId="379" toId="57">
+<dataflow id="380" from="StgValue_379" to="kernel_addr" fromId="379" toId="57">
 </dataflow>
-<dataflow id="381" from="zext_ln24" to="kernel_0_addr" fromId="56" toId="57">
+<dataflow id="381" from="zext_ln24" to="kernel_addr" fromId="56" toId="57">
 </dataflow>
-<dataflow id="382" from="kernel_0_addr" to="kernel_0_load" fromId="57" toId="58">
+<dataflow id="382" from="kernel_addr" to="kernel_load" fromId="57" toId="58">
 </dataflow>
 <dataflow id="383" from="zext_ln48_2" to="mul_ln40_1" fromId="49" toId="59">
 </dataflow>
@@ -4084,11 +4084,11 @@ hls_label_2:174  br label %.preheader5
 </dataflow>
 <dataflow id="397" from="select_ln24" to="out_h" fromId="48" toId="64">
 </dataflow>
-<dataflow id="398" from="select_ln24_7" to="empty_55" fromId="63" toId="65">
+<dataflow id="398" from="select_ln24_7" to="empty_56" fromId="63" toId="65">
 </dataflow>
-<dataflow id="399" from="icmp_ln32" to="empty_55" fromId="47" toId="65">
+<dataflow id="399" from="icmp_ln32" to="empty_56" fromId="47" toId="65">
 </dataflow>
-<dataflow id="400" from="empty_55" to="out_w_0_mid2" fromId="65" toId="66">
+<dataflow id="400" from="empty_56" to="out_w_0_mid2" fromId="65" toId="66">
 </dataflow>
 <dataflow id="401" from="StgValue_315" to="out_w_0_mid2" fromId="315" toId="66">
 </dataflow>
@@ -4110,7 +4110,7 @@ hls_label_2:174  br label %.preheader5
 </dataflow>
 <dataflow id="411" from="indvar_flatten" to="add_ln32_1" fromId="33" toId="70">
 </dataflow>
-<dataflow id="412" from="kernel_0_addr" to="kernel_0_load" fromId="57" toId="71">
+<dataflow id="412" from="kernel_addr" to="kernel_load" fromId="57" toId="71">
 </dataflow>
 <dataflow id="414" from="StgValue_413" to="add_ln24" fromId="413" toId="72">
 </dataflow>
@@ -4118,13 +4118,13 @@ hls_label_2:174  br label %.preheader5
 </dataflow>
 <dataflow id="416" from="add_ln24" to="zext_ln24_1" fromId="72" toId="73">
 </dataflow>
-<dataflow id="417" from="kernel_0" to="kernel_0_addr_1" fromId="287" toId="74">
+<dataflow id="417" from="kernel" to="kernel_addr_1" fromId="287" toId="74">
 </dataflow>
-<dataflow id="418" from="StgValue_379" to="kernel_0_addr_1" fromId="379" toId="74">
+<dataflow id="418" from="StgValue_379" to="kernel_addr_1" fromId="379" toId="74">
 </dataflow>
-<dataflow id="419" from="zext_ln24_1" to="kernel_0_addr_1" fromId="73" toId="74">
+<dataflow id="419" from="zext_ln24_1" to="kernel_addr_1" fromId="73" toId="74">
 </dataflow>
-<dataflow id="420" from="kernel_0_addr_1" to="kernel_0_load_1" fromId="74" toId="75">
+<dataflow id="420" from="kernel_addr_1" to="kernel_load_1" fromId="74" toId="75">
 </dataflow>
 <dataflow id="422" from="StgValue_421" to="add_ln24_3" fromId="421" toId="76">
 </dataflow>
@@ -4132,13 +4132,13 @@ hls_label_2:174  br label %.preheader5
 </dataflow>
 <dataflow id="424" from="add_ln24_3" to="zext_ln24_2" fromId="76" toId="77">
 </dataflow>
-<dataflow id="425" from="kernel_0" to="kernel_0_addr_2" fromId="287" toId="78">
+<dataflow id="425" from="kernel" to="kernel_addr_2" fromId="287" toId="78">
 </dataflow>
-<dataflow id="426" from="StgValue_379" to="kernel_0_addr_2" fromId="379" toId="78">
+<dataflow id="426" from="StgValue_379" to="kernel_addr_2" fromId="379" toId="78">
 </dataflow>
-<dataflow id="427" from="zext_ln24_2" to="kernel_0_addr_2" fromId="77" toId="78">
+<dataflow id="427" from="zext_ln24_2" to="kernel_addr_2" fromId="77" toId="78">
 </dataflow>
-<dataflow id="428" from="kernel_0_addr_2" to="kernel_0_load_2" fromId="78" toId="79">
+<dataflow id="428" from="kernel_addr_2" to="kernel_load_2" fromId="78" toId="79">
 </dataflow>
 <dataflow id="429" from="tmp10_0_0_mid2_v_v" to="tmp10_0_0_mid2_v" fromId="69" toId="80">
 </dataflow>
@@ -4156,9 +4156,9 @@ hls_label_2:174  br label %.preheader5
 </dataflow>
 <dataflow id="437" from="tmp10_1_0_mid2_v" to="tmp10_1_0_mid2" fromId="83" toId="84">
 </dataflow>
-<dataflow id="438" from="kernel_0_addr_1" to="kernel_0_load_1" fromId="74" toId="85">
+<dataflow id="438" from="kernel_addr_1" to="kernel_load_1" fromId="74" toId="85">
 </dataflow>
-<dataflow id="439" from="kernel_0_addr_2" to="kernel_0_load_2" fromId="78" toId="86">
+<dataflow id="439" from="kernel_addr_2" to="kernel_load_2" fromId="78" toId="86">
 </dataflow>
 <dataflow id="441" from="StgValue_440" to="add_ln24_4" fromId="440" toId="87">
 </dataflow>
@@ -4166,13 +4166,13 @@ hls_label_2:174  br label %.preheader5
 </dataflow>
 <dataflow id="443" from="add_ln24_4" to="zext_ln24_3" fromId="87" toId="88">
 </dataflow>
-<dataflow id="444" from="kernel_0" to="kernel_0_addr_3" fromId="287" toId="89">
+<dataflow id="444" from="kernel" to="kernel_addr_3" fromId="287" toId="89">
 </dataflow>
-<dataflow id="445" from="StgValue_379" to="kernel_0_addr_3" fromId="379" toId="89">
+<dataflow id="445" from="StgValue_379" to="kernel_addr_3" fromId="379" toId="89">
 </dataflow>
-<dataflow id="446" from="zext_ln24_3" to="kernel_0_addr_3" fromId="88" toId="89">
+<dataflow id="446" from="zext_ln24_3" to="kernel_addr_3" fromId="88" toId="89">
 </dataflow>
-<dataflow id="447" from="kernel_0_addr_3" to="kernel_0_load_3" fromId="89" toId="90">
+<dataflow id="447" from="kernel_addr_3" to="kernel_load_3" fromId="89" toId="90">
 </dataflow>
 <dataflow id="449" from="StgValue_448" to="add_ln24_5" fromId="448" toId="91">
 </dataflow>
@@ -4180,13 +4180,13 @@ hls_label_2:174  br label %.preheader5
 </dataflow>
 <dataflow id="451" from="add_ln24_5" to="zext_ln24_4" fromId="91" toId="92">
 </dataflow>
-<dataflow id="452" from="kernel_0" to="kernel_0_addr_4" fromId="287" toId="93">
+<dataflow id="452" from="kernel" to="kernel_addr_4" fromId="287" toId="93">
 </dataflow>
-<dataflow id="453" from="StgValue_379" to="kernel_0_addr_4" fromId="379" toId="93">
+<dataflow id="453" from="StgValue_379" to="kernel_addr_4" fromId="379" toId="93">
 </dataflow>
-<dataflow id="454" from="zext_ln24_4" to="kernel_0_addr_4" fromId="92" toId="93">
+<dataflow id="454" from="zext_ln24_4" to="kernel_addr_4" fromId="92" toId="93">
 </dataflow>
-<dataflow id="455" from="kernel_0_addr_4" to="kernel_0_load_4" fromId="93" toId="94">
+<dataflow id="455" from="kernel_addr_4" to="kernel_load_4" fromId="93" toId="94">
 </dataflow>
 <dataflow id="457" from="StgValue_456" to="tmp10_2_0_mid2_v_v" fromId="456" toId="95">
 </dataflow>
@@ -4234,9 +4234,9 @@ hls_label_2:174  br label %.preheader5
 </dataflow>
 <dataflow id="479" from="input_addr_7" to="input_load_7" fromId="107" toId="108">
 </dataflow>
-<dataflow id="480" from="kernel_0_addr_3" to="kernel_0_load_3" fromId="89" toId="109">
+<dataflow id="480" from="kernel_addr_3" to="kernel_load_3" fromId="89" toId="109">
 </dataflow>
-<dataflow id="481" from="kernel_0_addr_4" to="kernel_0_load_4" fromId="93" toId="110">
+<dataflow id="481" from="kernel_addr_4" to="kernel_load_4" fromId="93" toId="110">
 </dataflow>
 <dataflow id="483" from="StgValue_482" to="add_ln24_6" fromId="482" toId="111">
 </dataflow>
@@ -4244,13 +4244,13 @@ hls_label_2:174  br label %.preheader5
 </dataflow>
 <dataflow id="485" from="add_ln24_6" to="zext_ln24_5" fromId="111" toId="112">
 </dataflow>
-<dataflow id="486" from="kernel_0" to="kernel_0_addr_5" fromId="287" toId="113">
+<dataflow id="486" from="kernel" to="kernel_addr_5" fromId="287" toId="113">
 </dataflow>
-<dataflow id="487" from="StgValue_379" to="kernel_0_addr_5" fromId="379" toId="113">
+<dataflow id="487" from="StgValue_379" to="kernel_addr_5" fromId="379" toId="113">
 </dataflow>
-<dataflow id="488" from="zext_ln24_5" to="kernel_0_addr_5" fromId="112" toId="113">
+<dataflow id="488" from="zext_ln24_5" to="kernel_addr_5" fromId="112" toId="113">
 </dataflow>
-<dataflow id="489" from="kernel_0_addr_5" to="kernel_0_load_5" fromId="113" toId="114">
+<dataflow id="489" from="kernel_addr_5" to="kernel_load_5" fromId="113" toId="114">
 </dataflow>
 <dataflow id="491" from="StgValue_490" to="add_ln24_7" fromId="490" toId="115">
 </dataflow>
@@ -4258,13 +4258,13 @@ hls_label_2:174  br label %.preheader5
 </dataflow>
 <dataflow id="493" from="add_ln24_7" to="zext_ln24_6" fromId="115" toId="116">
 </dataflow>
-<dataflow id="494" from="kernel_0" to="kernel_0_addr_6" fromId="287" toId="117">
+<dataflow id="494" from="kernel" to="kernel_addr_6" fromId="287" toId="117">
 </dataflow>
-<dataflow id="495" from="StgValue_379" to="kernel_0_addr_6" fromId="379" toId="117">
+<dataflow id="495" from="StgValue_379" to="kernel_addr_6" fromId="379" toId="117">
 </dataflow>
-<dataflow id="496" from="zext_ln24_6" to="kernel_0_addr_6" fromId="116" toId="117">
+<dataflow id="496" from="zext_ln24_6" to="kernel_addr_6" fromId="116" toId="117">
 </dataflow>
-<dataflow id="497" from="kernel_0_addr_6" to="kernel_0_load_6" fromId="117" toId="118">
+<dataflow id="497" from="kernel_addr_6" to="kernel_load_6" fromId="117" toId="118">
 </dataflow>
 <dataflow id="498" from="zext_ln48_2" to="mul_ln48_1" fromId="49" toId="119">
 </dataflow>
@@ -4312,13 +4312,13 @@ hls_label_2:174  br label %.preheader5
 </dataflow>
 <dataflow id="522" from="indvar_flatten48" to="add_ln23" fromId="31" toId="132">
 </dataflow>
-<dataflow id="523" from="kernel_0_load" to="sext_ln24" fromId="71" toId="133">
+<dataflow id="523" from="kernel_load" to="sext_ln24" fromId="71" toId="133">
 </dataflow>
-<dataflow id="524" from="kernel_0_load_1" to="sext_ln24_1" fromId="85" toId="134">
+<dataflow id="524" from="kernel_load_1" to="sext_ln24_1" fromId="85" toId="134">
 </dataflow>
-<dataflow id="525" from="kernel_0_addr_5" to="kernel_0_load_5" fromId="113" toId="135">
+<dataflow id="525" from="kernel_addr_5" to="kernel_load_5" fromId="113" toId="135">
 </dataflow>
-<dataflow id="526" from="kernel_0_addr_6" to="kernel_0_load_6" fromId="117" toId="136">
+<dataflow id="526" from="kernel_addr_6" to="kernel_load_6" fromId="117" toId="136">
 </dataflow>
 <dataflow id="528" from="StgValue_527" to="add_ln24_8" fromId="527" toId="137">
 </dataflow>
@@ -4326,13 +4326,13 @@ hls_label_2:174  br label %.preheader5
 </dataflow>
 <dataflow id="530" from="add_ln24_8" to="zext_ln24_7" fromId="137" toId="138">
 </dataflow>
-<dataflow id="531" from="kernel_0" to="kernel_0_addr_7" fromId="287" toId="139">
+<dataflow id="531" from="kernel" to="kernel_addr_7" fromId="287" toId="139">
 </dataflow>
-<dataflow id="532" from="StgValue_379" to="kernel_0_addr_7" fromId="379" toId="139">
+<dataflow id="532" from="StgValue_379" to="kernel_addr_7" fromId="379" toId="139">
 </dataflow>
-<dataflow id="533" from="zext_ln24_7" to="kernel_0_addr_7" fromId="138" toId="139">
+<dataflow id="533" from="zext_ln24_7" to="kernel_addr_7" fromId="138" toId="139">
 </dataflow>
-<dataflow id="534" from="kernel_0_addr_7" to="kernel_0_load_7" fromId="139" toId="140">
+<dataflow id="534" from="kernel_addr_7" to="kernel_load_7" fromId="139" toId="140">
 </dataflow>
 <dataflow id="536" from="StgValue_535" to="add_ln24_9" fromId="535" toId="141">
 </dataflow>
@@ -4340,13 +4340,13 @@ hls_label_2:174  br label %.preheader5
 </dataflow>
 <dataflow id="538" from="add_ln24_9" to="zext_ln24_8" fromId="141" toId="142">
 </dataflow>
-<dataflow id="539" from="kernel_0" to="kernel_0_addr_8" fromId="287" toId="143">
+<dataflow id="539" from="kernel" to="kernel_addr_8" fromId="287" toId="143">
 </dataflow>
-<dataflow id="540" from="StgValue_379" to="kernel_0_addr_8" fromId="379" toId="143">
+<dataflow id="540" from="StgValue_379" to="kernel_addr_8" fromId="379" toId="143">
 </dataflow>
-<dataflow id="541" from="zext_ln24_8" to="kernel_0_addr_8" fromId="142" toId="143">
+<dataflow id="541" from="zext_ln24_8" to="kernel_addr_8" fromId="142" toId="143">
 </dataflow>
-<dataflow id="542" from="kernel_0_addr_8" to="kernel_0_load_8" fromId="143" toId="144">
+<dataflow id="542" from="kernel_addr_8" to="kernel_load_8" fromId="143" toId="144">
 </dataflow>
 <dataflow id="543" from="icmp_ln32" to="select_ln24_2" fromId="47" toId="145">
 </dataflow>
@@ -4366,7 +4366,7 @@ hls_label_2:174  br label %.preheader5
 </dataflow>
 <dataflow id="551" from="sext_ln24" to="mul_ln40_2" fromId="133" toId="148">
 </dataflow>
-<dataflow id="553" from="_ssdm_op_PartSelect.i16.i30.i32.i32" to="trunc_ln" fromId="552" toId="149">
+<dataflow id="553" from="_ssdm_op_PartSelect.i16.i29.i32.i32" to="trunc_ln" fromId="552" toId="149">
 </dataflow>
 <dataflow id="554" from="mul_ln40_2" to="trunc_ln" fromId="148" toId="149">
 </dataflow>
@@ -4380,7 +4380,7 @@ hls_label_2:174  br label %.preheader5
 </dataflow>
 <dataflow id="561" from="sext_ln24_1" to="mul_ln40_3" fromId="134" toId="151">
 </dataflow>
-<dataflow id="562" from="_ssdm_op_PartSelect.i16.i30.i32.i32" to="trunc_ln48_s" fromId="552" toId="152">
+<dataflow id="562" from="_ssdm_op_PartSelect.i16.i29.i32.i32" to="trunc_ln48_s" fromId="552" toId="152">
 </dataflow>
 <dataflow id="563" from="mul_ln40_3" to="trunc_ln48_s" fromId="151" toId="152">
 </dataflow>
@@ -4428,13 +4428,13 @@ hls_label_2:174  br label %.preheader5
 </dataflow>
 <dataflow id="585" from="icmp_ln23" to="br_ln23" fromId="45" toId="164">
 </dataflow>
-<dataflow id="586" from="kernel_0_load_2" to="sext_ln24_2" fromId="86" toId="165">
+<dataflow id="586" from="kernel_load_2" to="sext_ln24_2" fromId="86" toId="165">
 </dataflow>
-<dataflow id="587" from="kernel_0_load_3" to="sext_ln24_3" fromId="109" toId="166">
+<dataflow id="587" from="kernel_load_3" to="sext_ln24_3" fromId="109" toId="166">
 </dataflow>
-<dataflow id="588" from="kernel_0_addr_7" to="kernel_0_load_7" fromId="139" toId="167">
+<dataflow id="588" from="kernel_addr_7" to="kernel_load_7" fromId="139" toId="167">
 </dataflow>
-<dataflow id="589" from="kernel_0_addr_8" to="kernel_0_load_8" fromId="143" toId="168">
+<dataflow id="589" from="kernel_addr_8" to="kernel_load_8" fromId="143" toId="168">
 </dataflow>
 <dataflow id="590" from="select_ln24_2" to="zext_ln24_9" fromId="145" toId="169">
 </dataflow>
@@ -4452,7 +4452,7 @@ hls_label_2:174  br label %.preheader5
 </dataflow>
 <dataflow id="597" from="sext_ln24_2" to="mul_ln40_4" fromId="165" toId="173">
 </dataflow>
-<dataflow id="598" from="_ssdm_op_PartSelect.i16.i30.i32.i32" to="trunc_ln48_1" fromId="552" toId="174">
+<dataflow id="598" from="_ssdm_op_PartSelect.i16.i29.i32.i32" to="trunc_ln48_1" fromId="552" toId="174">
 </dataflow>
 <dataflow id="599" from="mul_ln40_4" to="trunc_ln48_1" fromId="173" toId="174">
 </dataflow>
@@ -4466,7 +4466,7 @@ hls_label_2:174  br label %.preheader5
 </dataflow>
 <dataflow id="604" from="sext_ln24_3" to="mul_ln40_5" fromId="166" toId="176">
 </dataflow>
-<dataflow id="605" from="_ssdm_op_PartSelect.i16.i30.i32.i32" to="trunc_ln48_2" fromId="552" toId="177">
+<dataflow id="605" from="_ssdm_op_PartSelect.i16.i29.i32.i32" to="trunc_ln48_2" fromId="552" toId="177">
 </dataflow>
 <dataflow id="606" from="mul_ln40_5" to="trunc_ln48_2" fromId="176" toId="177">
 </dataflow>
@@ -4510,9 +4510,9 @@ hls_label_2:174  br label %.preheader5
 </dataflow>
 <dataflow id="626" from="zext_ln40_5" to="add_ln40_10" fromId="123" toId="188">
 </dataflow>
-<dataflow id="627" from="kernel_0_load_4" to="sext_ln24_4" fromId="110" toId="189">
+<dataflow id="627" from="kernel_load_4" to="sext_ln24_4" fromId="110" toId="189">
 </dataflow>
-<dataflow id="628" from="kernel_0_load_5" to="sext_ln24_5" fromId="135" toId="190">
+<dataflow id="628" from="kernel_load_5" to="sext_ln24_5" fromId="135" toId="190">
 </dataflow>
 <dataflow id="629" from="bias_addr" to="bias_load" fromId="170" toId="191">
 </dataflow>
@@ -4522,7 +4522,7 @@ hls_label_2:174  br label %.preheader5
 </dataflow>
 <dataflow id="632" from="sext_ln24_4" to="mul_ln40_6" fromId="189" toId="193">
 </dataflow>
-<dataflow id="633" from="_ssdm_op_PartSelect.i16.i30.i32.i32" to="trunc_ln48_3" fromId="552" toId="194">
+<dataflow id="633" from="_ssdm_op_PartSelect.i16.i29.i32.i32" to="trunc_ln48_3" fromId="552" toId="194">
 </dataflow>
 <dataflow id="634" from="mul_ln40_6" to="trunc_ln48_3" fromId="193" toId="194">
 </dataflow>
@@ -4536,7 +4536,7 @@ hls_label_2:174  br label %.preheader5
 </dataflow>
 <dataflow id="639" from="sext_ln24_5" to="mul_ln40_7" fromId="190" toId="196">
 </dataflow>
-<dataflow id="640" from="_ssdm_op_PartSelect.i16.i30.i32.i32" to="trunc_ln48_4" fromId="552" toId="197">
+<dataflow id="640" from="_ssdm_op_PartSelect.i16.i29.i32.i32" to="trunc_ln48_4" fromId="552" toId="197">
 </dataflow>
 <dataflow id="641" from="mul_ln40_7" to="trunc_ln48_4" fromId="196" toId="197">
 </dataflow>
@@ -4584,7 +4584,7 @@ hls_label_2:174  br label %.preheader5
 </dataflow>
 <dataflow id="667" from="StgValue_666" to="specpipeline_ln24" fromId="666" toId="207">
 </dataflow>
-<dataflow id="669" from="p_str1" to="specpipeline_ln24" fromId="668" toId="207">
+<dataflow id="669" from="p_str129" to="specpipeline_ln24" fromId="668" toId="207">
 </dataflow>
 <dataflow id="670" from="zext_ln48_1" to="mul_ln48" fromId="36" toId="208">
 </dataflow>
@@ -4594,9 +4594,9 @@ hls_label_2:174  br label %.preheader5
 </dataflow>
 <dataflow id="673" from="mul_ln48" to="tmp11" fromId="208" toId="209">
 </dataflow>
-<dataflow id="674" from="kernel_0_load_6" to="sext_ln24_6" fromId="136" toId="210">
+<dataflow id="674" from="kernel_load_6" to="sext_ln24_6" fromId="136" toId="210">
 </dataflow>
-<dataflow id="675" from="kernel_0_load_7" to="sext_ln24_7" fromId="167" toId="211">
+<dataflow id="675" from="kernel_load_7" to="sext_ln24_7" fromId="167" toId="211">
 </dataflow>
 <dataflow id="676" from="icmp_ln32" to="select_ln24_4" fromId="47" toId="212">
 </dataflow>
@@ -4626,7 +4626,7 @@ hls_label_2:174  br label %.preheader5
 </dataflow>
 <dataflow id="689" from="sext_ln24_6" to="mul_ln40_8" fromId="210" toId="217">
 </dataflow>
-<dataflow id="690" from="_ssdm_op_PartSelect.i16.i30.i32.i32" to="trunc_ln48_5" fromId="552" toId="218">
+<dataflow id="690" from="_ssdm_op_PartSelect.i16.i29.i32.i32" to="trunc_ln48_5" fromId="552" toId="218">
 </dataflow>
 <dataflow id="691" from="mul_ln40_8" to="trunc_ln48_5" fromId="217" toId="218">
 </dataflow>
@@ -4640,7 +4640,7 @@ hls_label_2:174  br label %.preheader5
 </dataflow>
 <dataflow id="696" from="sext_ln24_7" to="mul_ln40_9" fromId="211" toId="220">
 </dataflow>
-<dataflow id="697" from="_ssdm_op_PartSelect.i16.i30.i32.i32" to="trunc_ln48_6" fromId="552" toId="221">
+<dataflow id="697" from="_ssdm_op_PartSelect.i16.i29.i32.i32" to="trunc_ln48_6" fromId="552" toId="221">
 </dataflow>
 <dataflow id="698" from="mul_ln40_9" to="trunc_ln48_6" fromId="220" toId="221">
 </dataflow>
@@ -4654,7 +4654,7 @@ hls_label_2:174  br label %.preheader5
 </dataflow>
 <dataflow id="703" from="trunc_ln48_3" to="add_ln48_5" fromId="194" toId="223">
 </dataflow>
-<dataflow id="704" from="kernel_0_load_8" to="sext_ln24_8" fromId="168" toId="224">
+<dataflow id="704" from="kernel_load_8" to="sext_ln24_8" fromId="168" toId="224">
 </dataflow>
 <dataflow id="705" from="tmp12_mid2_v_v" to="tmp12_mid2_v" fromId="215" toId="225">
 </dataflow>
@@ -4668,7 +4668,7 @@ hls_label_2:174  br label %.preheader5
 </dataflow>
 <dataflow id="710" from="sext_ln24_8" to="mul_ln40_10" fromId="224" toId="228">
 </dataflow>
-<dataflow id="711" from="_ssdm_op_PartSelect.i16.i30.i32.i32" to="trunc_ln48_7" fromId="552" toId="229">
+<dataflow id="711" from="_ssdm_op_PartSelect.i16.i29.i32.i32" to="trunc_ln48_7" fromId="552" toId="229">
 </dataflow>
 <dataflow id="712" from="mul_ln40_10" to="trunc_ln48_7" fromId="228" toId="229">
 </dataflow>
@@ -4706,15 +4706,15 @@ hls_label_2:174  br label %.preheader5
 </dataflow>
 <dataflow id="729" from="StgValue_666" to="specpipeline_ln24" fromId="666" toId="235">
 </dataflow>
-<dataflow id="730" from="p_str1" to="specpipeline_ln24" fromId="668" toId="235">
+<dataflow id="730" from="p_str129" to="specpipeline_ln24" fromId="668" toId="235">
 </dataflow>
-<dataflow id="732" from="_ssdm_op_SpecLoopTripCount" to="empty_54" fromId="731" toId="236">
+<dataflow id="732" from="_ssdm_op_SpecLoopTripCount" to="empty_55" fromId="731" toId="236">
 </dataflow>
-<dataflow id="734" from="StgValue_733" to="empty_54" fromId="733" toId="236">
+<dataflow id="734" from="StgValue_733" to="empty_55" fromId="733" toId="236">
 </dataflow>
-<dataflow id="736" from="StgValue_735" to="empty_54" fromId="735" toId="236">
+<dataflow id="736" from="StgValue_735" to="empty_55" fromId="735" toId="236">
 </dataflow>
-<dataflow id="737" from="StgValue_379" to="empty_54" fromId="379" toId="236">
+<dataflow id="737" from="StgValue_379" to="empty_55" fromId="379" toId="236">
 </dataflow>
 <dataflow id="738" from="_ssdm_op_SpecPipeline" to="specpipeline_ln24" fromId="659" toId="237">
 </dataflow>
@@ -4726,11 +4726,11 @@ hls_label_2:174  br label %.preheader5
 </dataflow>
 <dataflow id="742" from="StgValue_666" to="specpipeline_ln24" fromId="666" toId="237">
 </dataflow>
-<dataflow id="743" from="p_str1" to="specpipeline_ln24" fromId="668" toId="237">
+<dataflow id="743" from="p_str129" to="specpipeline_ln24" fromId="668" toId="237">
 </dataflow>
 <dataflow id="745" from="_ssdm_op_SpecRegionBegin" to="tmp_s" fromId="744" toId="238">
 </dataflow>
-<dataflow id="747" from="p_str4" to="tmp_s" fromId="746" toId="238">
+<dataflow id="747" from="p_str432" to="tmp_s" fromId="746" toId="238">
 </dataflow>
 <dataflow id="748" from="_ssdm_op_SpecPipeline" to="specpipeline_ln34" fromId="659" toId="239">
 </dataflow>
@@ -4742,7 +4742,7 @@ hls_label_2:174  br label %.preheader5
 </dataflow>
 <dataflow id="752" from="StgValue_666" to="specpipeline_ln34" fromId="666" toId="239">
 </dataflow>
-<dataflow id="753" from="p_str1" to="specpipeline_ln34" fromId="668" toId="239">
+<dataflow id="753" from="p_str129" to="specpipeline_ln34" fromId="668" toId="239">
 </dataflow>
 <dataflow id="754" from="add_ln48" to="zext_ln48_3" fromId="230" toId="240">
 </dataflow>
@@ -4756,11 +4756,11 @@ hls_label_2:174  br label %.preheader5
 </dataflow>
 <dataflow id="759" from="output_addr" to="store_ln48" fromId="241" toId="242">
 </dataflow>
-<dataflow id="761" from="_ssdm_op_SpecRegionEnd" to="empty_56" fromId="760" toId="243">
+<dataflow id="761" from="_ssdm_op_SpecRegionEnd" to="empty_57" fromId="760" toId="243">
 </dataflow>
-<dataflow id="762" from="p_str4" to="empty_56" fromId="746" toId="243">
+<dataflow id="762" from="p_str432" to="empty_57" fromId="746" toId="243">
 </dataflow>
-<dataflow id="763" from="tmp_s" to="empty_56" fromId="238" toId="243">
+<dataflow id="763" from="tmp_s" to="empty_57" fromId="238" toId="243">
 </dataflow>
 <dataflow id="764" from="icmp_ln23" to="StgValue_2" fromId="45" toId="2">
 </dataflow>

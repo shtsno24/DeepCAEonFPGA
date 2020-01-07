@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'max_pooling2d_fix16'" level="0">
-<item name = "Date">Thu Jan  2 19:12:54 2020
+<item name = "Date">Tue Jan  7 13:57:30 2020
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">HLS</item>
@@ -66,7 +66,7 @@
 </item>
 <item name = "DSP48E"><table name="" hasTotal="0">
 <keys size="3">Instance, Module, Expression</keys>
-<column name="network_mac_muladd_6ns_8ns_4ns_12_1_1_U23">network_mac_muladd_6ns_8ns_4ns_12_1_1, i0 + i1 * i2</column>
+<column name="network_mac_muladd_6ns_8ns_4ns_12_1_1_U25">network_mac_muladd_6ns_8ns_4ns_12_1_1, i0 + i1 * i2</column>
 </table>
 </item>
 <item name = "Memory"><table name="" hasTotal="1">
@@ -189,7 +189,7 @@
 <column name="select_ln31_reg_835">14, 0, 14, 0</column>
 <column name="select_ln36_17_reg_751">1, 0, 1, 0</column>
 <column name="select_ln36_reg_746">4, 0, 4, 0</column>
-<column name="zext_ln28_2_cast4_reg_690">7, 0, 14, 7</column>
+<column name="zext_ln28_1_cast4_reg_690">7, 0, 14, 7</column>
 <column name="zext_ln28_reg_684">7, 0, 9, 2</column>
 <column name="zext_ln36_1_cast_reg_702">6, 0, 12, 6</column>
 <column name="zext_ln36_reg_696">6, 0, 8, 2</column>

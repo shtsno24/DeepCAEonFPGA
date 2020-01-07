@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'depthwise_conv2d_fix_1'
 ================================================================
-* Date:           Thu Jan  2 19:12:55 2020
+* Date:           Tue Jan  7 13:57:32 2020
 
 * Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
 * Project:        HLS
@@ -76,16 +76,16 @@
     +-------------------------------------------+---------------------------------------+--------------+
     |                  Instance                 |                 Module                |  Expression  |
     +-------------------------------------------+---------------------------------------+--------------+
-    |network_mac_muladd_5ns_7ns_4ns_11_1_1_U68  |network_mac_muladd_5ns_7ns_4ns_11_1_1  | i0 + i1 * i2 |
-    |network_mul_mul_16s_16s_30_1_1_U60         |network_mul_mul_16s_16s_30_1_1         |    i0 * i1   |
-    |network_mul_mul_16s_16s_30_1_1_U61         |network_mul_mul_16s_16s_30_1_1         |    i0 * i1   |
-    |network_mul_mul_16s_16s_30_1_1_U62         |network_mul_mul_16s_16s_30_1_1         |    i0 * i1   |
-    |network_mul_mul_16s_16s_30_1_1_U63         |network_mul_mul_16s_16s_30_1_1         |    i0 * i1   |
-    |network_mul_mul_16s_16s_30_1_1_U64         |network_mul_mul_16s_16s_30_1_1         |    i0 * i1   |
-    |network_mul_mul_16s_16s_30_1_1_U65         |network_mul_mul_16s_16s_30_1_1         |    i0 * i1   |
-    |network_mul_mul_16s_16s_30_1_1_U66         |network_mul_mul_16s_16s_30_1_1         |    i0 * i1   |
-    |network_mul_mul_16s_16s_30_1_1_U67         |network_mul_mul_16s_16s_30_1_1         |    i0 * i1   |
-    |network_mul_mul_16s_16s_30_1_1_U69         |network_mul_mul_16s_16s_30_1_1         |    i0 * i1   |
+    |network_mac_muladd_5ns_7ns_4ns_11_1_1_U72  |network_mac_muladd_5ns_7ns_4ns_11_1_1  | i0 + i1 * i2 |
+    |network_mul_mul_16s_16s_29_1_1_U64         |network_mul_mul_16s_16s_29_1_1         |    i0 * i1   |
+    |network_mul_mul_16s_16s_29_1_1_U65         |network_mul_mul_16s_16s_29_1_1         |    i0 * i1   |
+    |network_mul_mul_16s_16s_29_1_1_U66         |network_mul_mul_16s_16s_29_1_1         |    i0 * i1   |
+    |network_mul_mul_16s_16s_29_1_1_U67         |network_mul_mul_16s_16s_29_1_1         |    i0 * i1   |
+    |network_mul_mul_16s_16s_29_1_1_U68         |network_mul_mul_16s_16s_29_1_1         |    i0 * i1   |
+    |network_mul_mul_16s_16s_29_1_1_U69         |network_mul_mul_16s_16s_29_1_1         |    i0 * i1   |
+    |network_mul_mul_16s_16s_29_1_1_U70         |network_mul_mul_16s_16s_29_1_1         |    i0 * i1   |
+    |network_mul_mul_16s_16s_29_1_1_U71         |network_mul_mul_16s_16s_29_1_1         |    i0 * i1   |
+    |network_mul_mul_16s_16s_29_1_1_U73         |network_mul_mul_16s_16s_29_1_1         |    i0 * i1   |
     +-------------------------------------------+---------------------------------------+--------------+
 
     * Memory: 
@@ -150,7 +150,7 @@
     |icmp_ln32_fu_483_p2           |   icmp   |      0|  0|  11|           8|           8|
     |icmp_ln33_2_fu_556_p2         |   icmp   |      0|  0|   9|           4|           4|
     |icmp_ln33_fu_425_p2           |   icmp   |      0|  0|   9|           4|           1|
-    |empty_59_fu_574_p2            |    or    |      0|  0|   2|           1|           1|
+    |empty_60_fu_574_p2            |    or    |      0|  0|   2|           1|           1|
     |out_w_0_mid2_fu_580_p3        |  select  |      0|  0|   4|           1|           1|
     |select_ln24_10_fu_540_p3      |  select  |      0|  0|   7|           1|           7|
     |select_ln24_11_fu_802_p3      |  select  |      0|  0|   7|           1|           7|
@@ -184,8 +184,8 @@
     |indvar_flatten_reg_322                     |   9|          2|    8|         16|
     |input_r_address0                           |  33|          6|   14|         84|
     |input_r_address1                           |  27|          5|   14|         70|
-    |kernel_0_address0                          |  33|          6|    7|         42|
-    |kernel_0_address1                          |  27|          5|    7|         35|
+    |kernel_address0                            |  33|          6|    7|         42|
+    |kernel_address1                            |  27|          5|    7|         35|
     |out_d_0_reg_310                            |   9|          2|    4|          8|
     |out_h_0_reg_333                            |   9|          2|    4|          8|
     |out_w_0_reg_344                            |   9|          2|    4|          8|
@@ -304,11 +304,11 @@
 |bias_address0      | out |    3|  ap_memory |          bias          |     array    |
 |bias_ce0           | out |    1|  ap_memory |          bias          |     array    |
 |bias_q0            |  in |   16|  ap_memory |          bias          |     array    |
-|kernel_0_address0  | out |    7|  ap_memory |        kernel_0        |     array    |
-|kernel_0_ce0       | out |    1|  ap_memory |        kernel_0        |     array    |
-|kernel_0_q0        |  in |   16|  ap_memory |        kernel_0        |     array    |
-|kernel_0_address1  | out |    7|  ap_memory |        kernel_0        |     array    |
-|kernel_0_ce1       | out |    1|  ap_memory |        kernel_0        |     array    |
-|kernel_0_q1        |  in |   16|  ap_memory |        kernel_0        |     array    |
+|kernel_address0    | out |    7|  ap_memory |         kernel         |     array    |
+|kernel_ce0         | out |    1|  ap_memory |         kernel         |     array    |
+|kernel_q0          |  in |   16|  ap_memory |         kernel         |     array    |
+|kernel_address1    | out |    7|  ap_memory |         kernel         |     array    |
+|kernel_ce1         | out |    1|  ap_memory |         kernel         |     array    |
+|kernel_q1          |  in |   16|  ap_memory |         kernel         |     array    |
 +-------------------+-----+-----+------------+------------------------+--------------+
 

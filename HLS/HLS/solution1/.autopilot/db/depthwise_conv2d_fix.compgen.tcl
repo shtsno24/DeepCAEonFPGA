@@ -1,7 +1,7 @@
 # This script segment is generated automatically by AutoPilot
 
 set id 6
-set name network_mul_mul_16s_15s_30_1_1
+set name network_mul_mul_16s_13s_29_1_1
 set corename simcore_mul
 set op mul
 set stage_num 1
@@ -9,11 +9,11 @@ set max_latency -1
 set registered_input 1
 set in0_width 16
 set in0_signed 1
-set in1_width 15
+set in1_width 13
 set in1_signed 1
-set out_width 30
+set out_width 29
 set exp i0*i1
-set arg_lists {i0 {16 1 +} i1 {15 1 +} p {30 1 +} acc {0} }
+set arg_lists {i0 {16 1 +} i1 {13 1 +} p {29 1 +} acc {0} }
 set TrueReset 0
 if {${::AESL::PGuard_simmodel_gen}} {
 if {[info proc ap_gen_simcore_mul] == "ap_gen_simcore_mul"} {
@@ -79,15 +79,15 @@ puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_dsp48, check your p
 # Memory (RAM/ROM)  definition:
 set ID 16
 set hasByteEnable 0
-set MemName depthwise_conv2d_fix_SeparableConv2D_0_w_1
+set MemName depthwise_conv2d_fix_SeparableConv2D_0_w_s
 set CoreName ap_simcore_mem
 set PortList { 1 1 }
-set DataWd 15
+set DataWd 13
 set AddrRange 9
 set AddrWd 4
 set TrueReset 0
 set IsROM 1
-set ROMData { "100111011110110" "100111001110011" "000011110001101" "110101100110110" "110001001001110" "111101111110011" "111110011110001" "000101111000111" "111000110111011" }
+set ROMData { "0000111111000" "0001111111000" "1111111100111" "0010111110011" "0111011101101" "0010001101010" "0000111011110" "0100000011110" "0001100100011" }
 set HasInitializer 1
 set Initializer $ROMData
 set NumOfStage 2

@@ -2,10 +2,10 @@
    Compiling separable_conv2d.cpp_pre.cpp.tb.cpp
    Compiling depthwise_conv2d.cpp_pre.cpp.tb.cpp
    Compiling up_sampling2d.cpp_pre.cpp.tb.cpp
-   Compiling conv2d.cpp_pre.cpp.tb.cpp
+   Compiling pointwise_conv2d.cpp_pre.cpp.tb.cpp
    Compiling max_pooling2d.cpp_pre.cpp.tb.cpp
    Compiling padding2d.cpp_pre.cpp.tb.cpp
    Compiling apatb_network.cpp
-   Compiling pointwise_conv2d.cpp_pre.cpp.tb.cpp
+   Compiling conv2d.cpp_pre.cpp.tb.cpp
    Compiling mnist_AXI_Stream.cpp_pre.cpp.tb.cpp
    Generating cosim.tv.exe
