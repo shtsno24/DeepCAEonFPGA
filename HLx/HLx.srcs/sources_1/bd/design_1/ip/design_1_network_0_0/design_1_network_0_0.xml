@@ -169,7 +169,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>FREQ_HZ</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXI_AXILITES.FREQ_HZ">102000000</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXI_AXILITES.FREQ_HZ">104000000</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -438,7 +438,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>FREQ_HZ</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.AP_CLK.FREQ_HZ">102000000</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.AP_CLK.FREQ_HZ">104000000</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -674,7 +674,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>FREQ_HZ</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.INPUT_DATA.FREQ_HZ">102000000</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.INPUT_DATA.FREQ_HZ">104000000</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -848,7 +848,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>FREQ_HZ</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.OUTPUT_DATA.FREQ_HZ">102000000</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.OUTPUT_DATA.FREQ_HZ">104000000</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -1187,11 +1187,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Jan 07 05:24:53 UTC 2020</spirit:value>
+            <spirit:value>Tue Jan 07 08:22:42 UTC 2020</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:386f2197</spirit:value>
+            <spirit:value>9:7b50e3ad</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1202,7 +1202,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:386f2197</spirit:value>
+            <spirit:value>9:7b50e3ad</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1218,11 +1218,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Jan 07 05:24:53 UTC 2020</spirit:value>
+            <spirit:value>Tue Jan 07 08:22:42 UTC 2020</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:386f2197</spirit:value>
+            <spirit:value>9:7b50e3ad</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1238,11 +1238,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Jan 07 05:24:53 UTC 2020</spirit:value>
+            <spirit:value>Tue Jan 07 08:22:42 UTC 2020</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:2110623c</spirit:value>
+            <spirit:value>9:622fa006</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1258,11 +1258,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Jan 07 05:24:53 UTC 2020</spirit:value>
+            <spirit:value>Tue Jan 07 08:22:42 UTC 2020</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:2110623c</spirit:value>
+            <spirit:value>9:622fa006</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1276,11 +1276,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Jan 07 05:26:55 UTC 2020</spirit:value>
+            <spirit:value>Tue Jan 07 08:24:55 UTC 2020</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:386f2197</spirit:value>
+            <spirit:value>9:7b50e3ad</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1903,19 +1903,19 @@
         <spirit:userFileType>USED_IN_out_of_context</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/depthwise_conv2d_fix.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/depthwise_conv2d_fix.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/depthwise_conv2d_fix_1.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/depthwise_conv2d_fix_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/depthwise_conv2d_fix_2.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/depthwise_conv2d_fix_2.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/depthwise_conv2d_fix_SeparableConv2D_0_w_s.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/depthwise_conv2d_fix_SeparableConv2D_0_w_s.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -1923,111 +1923,111 @@
         <spirit:userFileType>mif</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/max_pooling2d_fix16.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/max_pooling2d_fix16.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/network_AXILiteS_s_axi.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/network_AXILiteS_s_axi.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/network_mac_muladd_4ns_7ns_7s_10_1_1.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/network_mac_muladd_4ns_7ns_7s_10_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/network_mac_muladd_4ns_9ns_9s_12_1_1.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/network_mac_muladd_4ns_9ns_9s_12_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/network_mac_muladd_5ns_7ns_4ns_11_1_1.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/network_mac_muladd_5ns_7ns_4ns_11_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/network_mac_muladd_6ns_8ns_4ns_12_1_1.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/network_mac_muladd_6ns_8ns_4ns_12_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/network_mac_muladd_6ns_9ns_5ns_14_1_1.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/network_mac_muladd_6ns_9ns_5ns_14_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/network_mac_muladd_8ns_5ns_4ns_12_1_1.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/network_mac_muladd_8ns_5ns_4ns_12_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/network_mac_muladd_9ns_5ns_9s_13_1_1.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/network_mac_muladd_9ns_5ns_9s_13_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/network_mac_muladd_9ns_6ns_5ns_14_1_1.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/network_mac_muladd_9ns_6ns_5ns_14_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/network_mac_muladd_11ns_5ns_11s_15_1_1.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/network_mac_muladd_11ns_5ns_11s_15_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/network_MemBank_A.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/network_MemBank_A.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/network_MemBank_B.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/network_MemBank_B.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/network_MemBank_Out.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/network_MemBank_Out.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/network_mul_mul_10ns_5ns_15_1_1.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/network_mul_mul_10ns_5ns_15_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/network_mul_mul_16s_13s_29_1_1.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/network_mul_mul_16s_13s_29_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/network_mul_mul_16s_16s_29_1_1.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/network_mul_mul_16s_16s_29_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/network_mux_83_16_1_1.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/network_mux_83_16_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/network_mux_83_16_1_1_x.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/network_mux_83_16_1_1_x.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/network_mux_164_16_1_1.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/network_mux_164_16_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/network_mux_164_16_1_1_x.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/network_mux_164_16_1_1_x.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/network_mux_164_16_1_1_x0.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/network_mux_164_16_1_1_x0.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/network_mux_164_32_1_1.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/network_mux_164_32_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/network_mux_646_16_1_1.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/network_mux_646_16_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/network_mux_1287_16_1_1.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/network_mux_1287_16_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/network_mux_1287_16_1_1_x.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/network_mux_1287_16_1_1_x.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/network_SeparableConv2D_1_b_s.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/network_SeparableConv2D_1_b_s.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -2035,7 +2035,7 @@
         <spirit:userFileType>mif</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/network_SeparableConv2D_1_w_s.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/network_SeparableConv2D_1_w_s.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -2043,7 +2043,7 @@
         <spirit:userFileType>mif</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/network_SeparableConv2D_2_b_s.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/network_SeparableConv2D_2_b_s.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -2051,7 +2051,7 @@
         <spirit:userFileType>mif</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/network_SeparableConv2D_2_w_s.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/network_SeparableConv2D_2_w_s.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -2059,7 +2059,7 @@
         <spirit:userFileType>mif</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/network_SeparableConv2D_3_w_s.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/network_SeparableConv2D_3_w_s.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -2067,7 +2067,7 @@
         <spirit:userFileType>mif</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/network_SeparableConv2D_4_w_s.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/network_SeparableConv2D_4_w_s.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -2075,43 +2075,43 @@
         <spirit:userFileType>mif</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/network_sig_buffer_keep_V.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/network_sig_buffer_keep_V.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/network_sig_buffer_user_V.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/network_sig_buffer_user_V.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/padding2d_fix16.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/padding2d_fix16.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/pointwise_conv2d_fix.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/pointwise_conv2d_fix.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/pointwise_conv2d_fix_1.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/pointwise_conv2d_fix_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/pointwise_conv2d_fix_2.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/pointwise_conv2d_fix_2.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/pointwise_conv2d_fix_3.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/pointwise_conv2d_fix_3.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/pointwise_conv2d_fix_4.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/pointwise_conv2d_fix_4.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/up_sampling2d_fix16.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/up_sampling2d_fix16.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/network.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/network.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
@@ -2126,22 +2126,22 @@
     <spirit:fileSet>
       <spirit:name>xilinx_verilogbehavioralsimulation_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/depthwise_conv2d_fix.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/depthwise_conv2d_fix.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/depthwise_conv2d_fix_1.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/depthwise_conv2d_fix_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/depthwise_conv2d_fix_2.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/depthwise_conv2d_fix_2.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/depthwise_conv2d_fix_SeparableConv2D_0_w_s.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/depthwise_conv2d_fix_SeparableConv2D_0_w_s.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -2150,137 +2150,137 @@
         <spirit:userFileType>mif</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/max_pooling2d_fix16.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/max_pooling2d_fix16.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/network_AXILiteS_s_axi.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/network_AXILiteS_s_axi.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/network_mac_muladd_4ns_7ns_7s_10_1_1.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/network_mac_muladd_4ns_7ns_7s_10_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/network_mac_muladd_4ns_9ns_9s_12_1_1.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/network_mac_muladd_4ns_9ns_9s_12_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/network_mac_muladd_5ns_7ns_4ns_11_1_1.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/network_mac_muladd_5ns_7ns_4ns_11_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/network_mac_muladd_6ns_8ns_4ns_12_1_1.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/network_mac_muladd_6ns_8ns_4ns_12_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/network_mac_muladd_6ns_9ns_5ns_14_1_1.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/network_mac_muladd_6ns_9ns_5ns_14_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/network_mac_muladd_8ns_5ns_4ns_12_1_1.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/network_mac_muladd_8ns_5ns_4ns_12_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/network_mac_muladd_9ns_5ns_9s_13_1_1.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/network_mac_muladd_9ns_5ns_9s_13_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/network_mac_muladd_9ns_6ns_5ns_14_1_1.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/network_mac_muladd_9ns_6ns_5ns_14_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/network_mac_muladd_11ns_5ns_11s_15_1_1.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/network_mac_muladd_11ns_5ns_11s_15_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/network_MemBank_A.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/network_MemBank_A.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/network_MemBank_B.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/network_MemBank_B.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/network_MemBank_Out.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/network_MemBank_Out.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/network_mul_mul_10ns_5ns_15_1_1.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/network_mul_mul_10ns_5ns_15_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/network_mul_mul_16s_13s_29_1_1.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/network_mul_mul_16s_13s_29_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/network_mul_mul_16s_16s_29_1_1.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/network_mul_mul_16s_16s_29_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/network_mux_83_16_1_1.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/network_mux_83_16_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/network_mux_83_16_1_1_x.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/network_mux_83_16_1_1_x.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/network_mux_164_16_1_1.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/network_mux_164_16_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/network_mux_164_16_1_1_x.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/network_mux_164_16_1_1_x.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/network_mux_164_16_1_1_x0.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/network_mux_164_16_1_1_x0.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/network_mux_164_32_1_1.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/network_mux_164_32_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/network_mux_646_16_1_1.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/network_mux_646_16_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/network_mux_1287_16_1_1.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/network_mux_1287_16_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/network_mux_1287_16_1_1_x.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/network_mux_1287_16_1_1_x.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/network_SeparableConv2D_1_b_s.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/network_SeparableConv2D_1_b_s.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -2289,7 +2289,7 @@
         <spirit:userFileType>mif</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/network_SeparableConv2D_1_w_s.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/network_SeparableConv2D_1_w_s.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -2298,7 +2298,7 @@
         <spirit:userFileType>mif</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/network_SeparableConv2D_2_b_s.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/network_SeparableConv2D_2_b_s.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -2307,7 +2307,7 @@
         <spirit:userFileType>mif</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/network_SeparableConv2D_2_w_s.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/network_SeparableConv2D_2_w_s.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -2316,7 +2316,7 @@
         <spirit:userFileType>mif</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/network_SeparableConv2D_3_w_s.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/network_SeparableConv2D_3_w_s.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -2325,7 +2325,7 @@
         <spirit:userFileType>mif</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/network_SeparableConv2D_4_w_s.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/network_SeparableConv2D_4_w_s.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -2334,52 +2334,52 @@
         <spirit:userFileType>mif</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/network_sig_buffer_keep_V.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/network_sig_buffer_keep_V.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/network_sig_buffer_user_V.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/network_sig_buffer_user_V.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/padding2d_fix16.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/padding2d_fix16.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/pointwise_conv2d_fix.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/pointwise_conv2d_fix.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/pointwise_conv2d_fix_1.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/pointwise_conv2d_fix_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/pointwise_conv2d_fix_2.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/pointwise_conv2d_fix_2.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/pointwise_conv2d_fix_3.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/pointwise_conv2d_fix_3.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/pointwise_conv2d_fix_4.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/pointwise_conv2d_fix_4.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/up_sampling2d_fix16.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/up_sampling2d_fix16.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5365/hdl/verilog/network.v</spirit:name>
+        <spirit:name>../../ipshared/224f/hdl/verilog/network.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -2495,7 +2495,7 @@
     <xilinx:coreExtensions>
       <xilinx:displayName>Network</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>2001071405</xilinx:coreRevision>
+      <xilinx:coreRevision>2001071716</xilinx:coreRevision>
       <xilinx:configElementInfos>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.AP_CLK.CLK_DOMAIN" xilinx:valueSource="ip_propagated" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.AP_CLK.FREQ_HZ" xilinx:valueSource="ip_propagated" xilinx:valuePermission="bd"/>
@@ -2543,7 +2543,7 @@
       <xilinx:xilinxVersion>2019.1</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="0a3280ec"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="5dc19620"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="a050e96b"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="63960285"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="280a848e"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="1cf4461c"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="ed226a7c"/>

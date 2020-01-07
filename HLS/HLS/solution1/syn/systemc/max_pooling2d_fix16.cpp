@@ -213,14 +213,14 @@ max_pooling2d_fix16::max_pooling2d_fix16(sc_module_name name) : sc_module(name),
     SC_METHOD(thread_ap_ready);
     sensitive << ( ap_CS_fsm_state17 );
 
-    SC_METHOD(thread_empty_50_fu_271_p0);
+    SC_METHOD(thread_empty_51_fu_271_p0);
     sensitive << ( ap_CS_fsm_state1 );
     sensitive << ( output_height );
 
-    SC_METHOD(thread_empty_50_fu_271_p1);
-    sensitive << ( empty_50_fu_271_p0 );
+    SC_METHOD(thread_empty_51_fu_271_p1);
+    sensitive << ( empty_51_fu_271_p0 );
 
-    SC_METHOD(thread_empty_51_fu_275_p1);
+    SC_METHOD(thread_empty_52_fu_275_p1);
     sensitive << ( output_depth );
 
     SC_METHOD(thread_empty_fu_267_p0);
@@ -483,7 +483,7 @@ max_pooling2d_fix16::max_pooling2d_fix16(sc_module_name name) : sc_module(name),
     sensitive << ( mul_ln9_1_fu_301_p00 );
 
     SC_METHOD(thread_mul_ln9_1_fu_301_p00);
-    sensitive << ( empty_51_fu_275_p1 );
+    sensitive << ( empty_52_fu_275_p1 );
 
     SC_METHOD(thread_mul_ln9_1_fu_301_p1);
     sensitive << ( ap_CS_fsm_state1 );
@@ -501,7 +501,7 @@ max_pooling2d_fix16::max_pooling2d_fix16(sc_module_name name) : sc_module(name),
     sensitive << ( mul_ln9_fu_287_p00 );
 
     SC_METHOD(thread_mul_ln9_fu_287_p00);
-    sensitive << ( empty_50_fu_271_p1 );
+    sensitive << ( empty_51_fu_271_p1 );
 
     SC_METHOD(thread_mul_ln9_fu_287_p1);
     sensitive << ( ap_CS_fsm_state1 );
@@ -914,11 +914,11 @@ max_pooling2d_fix16::max_pooling2d_fix16(sc_module_name name) : sc_module(name),
     sc_trace(mVcdFile, sext_ln9_1_fu_243_p1, "sext_ln9_1_fu_243_p1");
     sc_trace(mVcdFile, sext_ln9_fu_239_p1, "sext_ln9_fu_239_p1");
     sc_trace(mVcdFile, empty_fu_267_p0, "empty_fu_267_p0");
-    sc_trace(mVcdFile, empty_50_fu_271_p0, "empty_50_fu_271_p0");
-    sc_trace(mVcdFile, empty_50_fu_271_p1, "empty_50_fu_271_p1");
+    sc_trace(mVcdFile, empty_51_fu_271_p0, "empty_51_fu_271_p0");
+    sc_trace(mVcdFile, empty_51_fu_271_p1, "empty_51_fu_271_p1");
     sc_trace(mVcdFile, mul_ln9_fu_287_p0, "mul_ln9_fu_287_p0");
     sc_trace(mVcdFile, mul_ln9_fu_287_p1, "mul_ln9_fu_287_p1");
-    sc_trace(mVcdFile, empty_51_fu_275_p1, "empty_51_fu_275_p1");
+    sc_trace(mVcdFile, empty_52_fu_275_p1, "empty_52_fu_275_p1");
     sc_trace(mVcdFile, mul_ln9_1_fu_301_p0, "mul_ln9_1_fu_301_p0");
     sc_trace(mVcdFile, mul_ln9_1_fu_301_p1, "mul_ln9_1_fu_301_p1");
     sc_trace(mVcdFile, mul_ln28_fu_317_p0, "mul_ln28_fu_317_p0");
@@ -1456,16 +1456,16 @@ void max_pooling2d_fix16::thread_ap_ready() {
     }
 }
 
-void max_pooling2d_fix16::thread_empty_50_fu_271_p0() {
-    empty_50_fu_271_p0 = output_height.read();
+void max_pooling2d_fix16::thread_empty_51_fu_271_p0() {
+    empty_51_fu_271_p0 = output_height.read();
 }
 
-void max_pooling2d_fix16::thread_empty_50_fu_271_p1() {
-    empty_50_fu_271_p1 = empty_50_fu_271_p0.read().range(4-1, 0);
+void max_pooling2d_fix16::thread_empty_51_fu_271_p1() {
+    empty_51_fu_271_p1 = empty_51_fu_271_p0.read().range(4-1, 0);
 }
 
-void max_pooling2d_fix16::thread_empty_51_fu_275_p1() {
-    empty_51_fu_275_p1 = output_depth.read().range(5-1, 0);
+void max_pooling2d_fix16::thread_empty_52_fu_275_p1() {
+    empty_52_fu_275_p1 = output_depth.read().range(5-1, 0);
 }
 
 void max_pooling2d_fix16::thread_empty_fu_267_p0() {
@@ -1700,7 +1700,7 @@ void max_pooling2d_fix16::thread_mul_ln9_1_fu_301_p0() {
 }
 
 void max_pooling2d_fix16::thread_mul_ln9_1_fu_301_p00() {
-    mul_ln9_1_fu_301_p00 = esl_zext<13,5>(empty_51_fu_275_p1.read());
+    mul_ln9_1_fu_301_p00 = esl_zext<13,5>(empty_52_fu_275_p1.read());
 }
 
 void max_pooling2d_fix16::thread_mul_ln9_1_fu_301_p1() {
@@ -1720,7 +1720,7 @@ void max_pooling2d_fix16::thread_mul_ln9_fu_287_p0() {
 }
 
 void max_pooling2d_fix16::thread_mul_ln9_fu_287_p00() {
-    mul_ln9_fu_287_p00 = esl_zext<8,4>(empty_50_fu_271_p1.read());
+    mul_ln9_fu_287_p00 = esl_zext<8,4>(empty_51_fu_271_p1.read());
 }
 
 void max_pooling2d_fix16::thread_mul_ln9_fu_287_p1() {

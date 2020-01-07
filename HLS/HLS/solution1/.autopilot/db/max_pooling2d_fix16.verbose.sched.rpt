@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'max_pooling2d_fix16'
 ================================================================
-* Date:           Tue Jan  7 13:57:23 2020
+* Date:           Tue Jan  7 17:04:37 2020
 
 * Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
 * Project:        HLS
@@ -113,12 +113,12 @@ ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%zext_ln28_1_cast4 = zext i7 %sext_
 ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%zext_ln36 = zext i6 %sext_ln9_1 to i8" [../layers_c/max_pooling2d.cpp:36]   --->   Operation 28 'zext' 'zext_ln36' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%zext_ln36_1_cast = zext i6 %sext_ln9 to i12" [../layers_c/max_pooling2d.cpp:9]   --->   Operation 29 'zext' 'zext_ln36_1_cast' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%empty = trunc i5 %output_width_read to i4" [../layers_c/max_pooling2d.cpp:9]   --->   Operation 30 'trunc' 'empty' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%empty_50 = trunc i5 %output_height_read to i4" [../layers_c/max_pooling2d.cpp:9]   --->   Operation 31 'trunc' 'empty_50' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%empty_51 = trunc i6 %output_depth_read to i5" [../layers_c/max_pooling2d.cpp:9]   --->   Operation 32 'trunc' 'empty_51' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%zext_ln9 = zext i4 %empty_50 to i8" [../layers_c/max_pooling2d.cpp:9]   --->   Operation 33 'zext' 'zext_ln9' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%empty_51 = trunc i5 %output_height_read to i4" [../layers_c/max_pooling2d.cpp:9]   --->   Operation 31 'trunc' 'empty_51' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%empty_52 = trunc i6 %output_depth_read to i5" [../layers_c/max_pooling2d.cpp:9]   --->   Operation 32 'trunc' 'empty_52' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%zext_ln9 = zext i4 %empty_51 to i8" [../layers_c/max_pooling2d.cpp:9]   --->   Operation 33 'zext' 'zext_ln9' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%zext_ln9_1 = zext i4 %empty to i8" [../layers_c/max_pooling2d.cpp:9]   --->   Operation 34 'zext' 'zext_ln9_1' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 35 [1/1] (2.34ns)   --->   "%mul_ln9 = mul i8 %zext_ln9, %zext_ln9_1" [../layers_c/max_pooling2d.cpp:9]   --->   Operation 35 'mul' 'mul_ln9' <Predicate = true> <Delay = 2.34> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 4.17> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%zext_ln9_2 = zext i5 %empty_51 to i13" [../layers_c/max_pooling2d.cpp:9]   --->   Operation 36 'zext' 'zext_ln9_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%zext_ln9_2 = zext i5 %empty_52 to i13" [../layers_c/max_pooling2d.cpp:9]   --->   Operation 36 'zext' 'zext_ln9_2' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%zext_ln9_3 = zext i8 %mul_ln9 to i13" [../layers_c/max_pooling2d.cpp:9]   --->   Operation 37 'zext' 'zext_ln9_3' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 38 [1/1] (4.17ns)   --->   "%mul_ln9_1 = mul i13 %zext_ln9_2, %zext_ln9_3" [../layers_c/max_pooling2d.cpp:9]   --->   Operation 38 'mul' 'mul_ln9_1' <Predicate = true> <Delay = 4.17> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 4.17> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
 ST_1 : Operation 39 [1/1] (1.30ns)   --->   "%icmp_ln23 = icmp eq i4 %empty, 0" [../layers_c/max_pooling2d.cpp:23]   --->   Operation 39 'icmp' 'icmp_ln23' <Predicate = true> <Delay = 1.30> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.30> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
@@ -249,7 +249,7 @@ ST_15 : Operation 135 [1/1] (0.00ns)   --->   "%input_addr_6 = getelementptr [14
 ST_15 : Operation 136 [2/2] (3.25ns)   --->   "%input_load_6 = load i16* %input_addr_6, align 2" [../layers_c/max_pooling2d.cpp:31]   --->   Operation 136 'load' 'input_load_6' <Predicate = (!icmp_ln19)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 14400> <RAM>
 
 State 16 <SV = 15> <Delay = 6.50>
-ST_16 : Operation 137 [1/1] (0.00ns)   --->   "%empty_52 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 392, i64 3136, i64 0)"   --->   Operation 137 'speclooptripcount' 'empty_52' <Predicate = (!icmp_ln19)> <Delay = 0.00>
+ST_16 : Operation 137 [1/1] (0.00ns)   --->   "%empty_53 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 392, i64 3136, i64 0)"   --->   Operation 137 'speclooptripcount' 'empty_53' <Predicate = (!icmp_ln19)> <Delay = 0.00>
 ST_16 : Operation 138 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str123) nounwind" [../layers_c/max_pooling2d.cpp:22]   --->   Operation 138 'specpipeline' <Predicate = (!icmp_ln19)> <Delay = 0.00>
 ST_16 : Operation 139 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str123) nounwind" [../layers_c/max_pooling2d.cpp:22]   --->   Operation 139 'specpipeline' <Predicate = (!icmp_ln19)> <Delay = 0.00>
 ST_16 : Operation 140 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str123) nounwind" [../layers_c/max_pooling2d.cpp:22]   --->   Operation 140 'specpipeline' <Predicate = (!icmp_ln19)> <Delay = 0.00>
@@ -259,7 +259,7 @@ ST_16 : Operation 143 [1/2] (3.25ns)   --->   "%input_load_6 = load i16* %input_
 ST_16 : Operation 144 [1/1] (0.00ns)   --->   "%zext_ln36_2 = zext i12 %add_ln36 to i64" [../layers_c/max_pooling2d.cpp:36]   --->   Operation 144 'zext' 'zext_ln36_2' <Predicate = (!icmp_ln19)> <Delay = 0.00>
 ST_16 : Operation 145 [1/1] (0.00ns)   --->   "%output_addr = getelementptr [14400 x i16]* %output_r, i64 0, i64 %zext_ln36_2" [../layers_c/max_pooling2d.cpp:36]   --->   Operation 145 'getelementptr' 'output_addr' <Predicate = (!icmp_ln19)> <Delay = 0.00>
 ST_16 : Operation 146 [1/1] (3.25ns)   --->   "store i16 %input_load_6, i16* %output_addr, align 2" [../layers_c/max_pooling2d.cpp:36]   --->   Operation 146 'store' <Predicate = (!icmp_ln19)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 14400> <RAM>
-ST_16 : Operation 147 [1/1] (0.00ns)   --->   "%empty_53 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str224, i32 %tmp_s)" [../layers_c/max_pooling2d.cpp:38]   --->   Operation 147 'specregionend' 'empty_53' <Predicate = (!icmp_ln19)> <Delay = 0.00>
+ST_16 : Operation 147 [1/1] (0.00ns)   --->   "%empty_54 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str224, i32 %tmp_s)" [../layers_c/max_pooling2d.cpp:38]   --->   Operation 147 'specregionend' 'empty_54' <Predicate = (!icmp_ln19)> <Delay = 0.00>
 ST_16 : Operation 148 [1/1] (0.00ns)   --->   "br label %1" [../layers_c/max_pooling2d.cpp:23]   --->   Operation 148 'br' <Predicate = (!icmp_ln19)> <Delay = 0.00>
 
 State 17 <SV = 12> <Delay = 0.00>
@@ -334,8 +334,8 @@ The critical path consists of the following:
  <State 12>: 6.94ns
 The critical path consists of the following:
 	'mul' operation ('mul_ln36', ../layers_c/max_pooling2d.cpp:36) [40]  (3.78 ns)
-	'add' operation ('tmp6', ../layers_c/max_pooling2d.cpp:28) [46]  (1.92 ns)
-	'select' operation ('select_ln36_16', ../layers_c/max_pooling2d.cpp:36) [63]  (0 ns)
+	'select' operation ('select_ln36_14', ../layers_c/max_pooling2d.cpp:36) [60]  (0 ns)
+	'add' operation ('tmp6_mid1', ../layers_c/max_pooling2d.cpp:28) [82]  (1.92 ns)
 	'select' operation ('select_ln22_2', ../layers_c/max_pooling2d.cpp:22) [83]  (1.25 ns)
 
  <State 13>: 6.38ns

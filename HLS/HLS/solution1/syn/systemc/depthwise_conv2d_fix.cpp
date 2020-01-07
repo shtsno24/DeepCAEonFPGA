@@ -380,7 +380,7 @@ depthwise_conv2d_fix::depthwise_conv2d_fix(sc_module_name name) : sc_module(name
     SC_METHOD(thread_ap_ready);
     sensitive << ( ap_CS_fsm_state12 );
 
-    SC_METHOD(thread_empty_62_fu_636_p2);
+    SC_METHOD(thread_empty_63_fu_636_p2);
     sensitive << ( icmp_ln32_reg_1416 );
     sensitive << ( and_ln24_reg_1449 );
 
@@ -489,7 +489,7 @@ depthwise_conv2d_fix::depthwise_conv2d_fix(sc_module_name name) : sc_module(name
 
     SC_METHOD(thread_out_w_0_mid2_fu_640_p3);
     sensitive << ( out_w_0_reg_311 );
-    sensitive << ( empty_62_fu_636_p2 );
+    sensitive << ( empty_63_fu_636_p2 );
 
     SC_METHOD(thread_out_w_fu_744_p2);
     sensitive << ( out_w_0_mid2_fu_640_p3 );
@@ -1106,7 +1106,7 @@ depthwise_conv2d_fix::depthwise_conv2d_fix(sc_module_name name) : sc_module(name
     sc_trace(mVcdFile, or_ln27_mid1_fu_577_p3, "or_ln27_mid1_fu_577_p3");
     sc_trace(mVcdFile, or_ln_fu_584_p3, "or_ln_fu_584_p3");
     sc_trace(mVcdFile, xor_ln24_1_fu_604_p2, "xor_ln24_1_fu_604_p2");
-    sc_trace(mVcdFile, empty_62_fu_636_p2, "empty_62_fu_636_p2");
+    sc_trace(mVcdFile, empty_63_fu_636_p2, "empty_63_fu_636_p2");
     sc_trace(mVcdFile, p_shl19_mid1_fu_648_p3, "p_shl19_mid1_fu_648_p3");
     sc_trace(mVcdFile, p_shl20_mid1_fu_659_p3, "p_shl20_mid1_fu_659_p3");
     sc_trace(mVcdFile, p_shl19_cast_mid1_fu_655_p1, "p_shl19_cast_mid1_fu_655_p1");
@@ -1833,8 +1833,8 @@ void depthwise_conv2d_fix::thread_ap_ready() {
     }
 }
 
-void depthwise_conv2d_fix::thread_empty_62_fu_636_p2() {
-    empty_62_fu_636_p2 = (and_ln24_reg_1449.read() | icmp_ln32_reg_1416.read());
+void depthwise_conv2d_fix::thread_empty_63_fu_636_p2() {
+    empty_63_fu_636_p2 = (and_ln24_reg_1449.read() | icmp_ln32_reg_1416.read());
 }
 
 void depthwise_conv2d_fix::thread_icmp_ln24_fu_509_p2() {
@@ -1971,7 +1971,7 @@ void depthwise_conv2d_fix::thread_out_h_fu_571_p2() {
 }
 
 void depthwise_conv2d_fix::thread_out_w_0_mid2_fu_640_p3() {
-    out_w_0_mid2_fu_640_p3 = (!empty_62_fu_636_p2.read()[0].is_01())? sc_lv<5>(): ((empty_62_fu_636_p2.read()[0].to_bool())? ap_const_lv5_0: out_w_0_reg_311.read());
+    out_w_0_mid2_fu_640_p3 = (!empty_63_fu_636_p2.read()[0].is_01())? sc_lv<5>(): ((empty_63_fu_636_p2.read()[0].to_bool())? ap_const_lv5_0: out_w_0_reg_311.read());
 }
 
 void depthwise_conv2d_fix::thread_out_w_fu_744_p2() {

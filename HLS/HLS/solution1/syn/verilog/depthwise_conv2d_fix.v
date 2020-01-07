@@ -240,7 +240,7 @@ wire   [0:0] xor_ln24_fu_553_p2;
 wire   [1:0] or_ln27_mid1_fu_577_p3;
 wire   [1:0] or_ln_fu_584_p3;
 wire   [0:0] xor_ln24_1_fu_604_p2;
-wire   [0:0] empty_62_fu_636_p2;
+wire   [0:0] empty_63_fu_636_p2;
 wire   [9:0] p_shl19_mid1_fu_648_p3;
 wire   [5:0] p_shl20_mid1_fu_659_p3;
 wire   [10:0] p_shl19_cast_mid1_fu_655_p1;
@@ -1052,7 +1052,7 @@ assign ap_block_state9_pp0_stage2_iter1 = ~(1'b1 == 1'b1);
 
 assign ap_enable_pp0 = (ap_idle_pp0 ^ 1'b1);
 
-assign empty_62_fu_636_p2 = (icmp_ln32_reg_1416 | and_ln24_reg_1449);
+assign empty_63_fu_636_p2 = (icmp_ln32_reg_1416 | and_ln24_reg_1449);
 
 assign icmp_ln24_fu_509_p2 = ((ap_phi_mux_indvar_flatten80_phi_fu_269_p4 == 10'd784) ? 1'b1 : 1'b0);
 
@@ -1076,7 +1076,7 @@ assign out_d_fu_353_p2 = (ap_phi_mux_out_d_0_phi_fu_280_p4 ^ 1'd1);
 
 assign out_h_fu_571_p2 = (select_ln24_fu_527_p3 + 5'd1);
 
-assign out_w_0_mid2_fu_640_p3 = ((empty_62_fu_636_p2[0:0] === 1'b1) ? 5'd0 : out_w_0_reg_311);
+assign out_w_0_mid2_fu_640_p3 = ((empty_63_fu_636_p2[0:0] === 1'b1) ? 5'd0 : out_w_0_reg_311);
 
 assign out_w_fu_744_p2 = (out_w_0_mid2_fu_640_p3 + 5'd1);
 

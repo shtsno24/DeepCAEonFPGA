@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'depthwise_conv2d_fix_2'" level="0">
-<item name = "Date">Tue Jan  7 13:57:31 2020
+<item name = "Date">Tue Jan  7 17:04:45 2020
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">HLS</item>
@@ -142,7 +142,7 @@
 <column name="icmp_ln32_fu_501_p2">icmp, 0, 0, 13, 10, 10</column>
 <column name="icmp_ln33_1_fu_578_p2">icmp, 0, 0, 11, 5, 5</column>
 <column name="icmp_ln33_fu_439_p2">icmp, 0, 0, 11, 5, 1</column>
-<column name="empty_56_fu_596_p2">or, 0, 0, 2, 1, 1</column>
+<column name="empty_57_fu_596_p2">or, 0, 0, 2, 1, 1</column>
 <column name="out_w_0_mid2_fu_602_p3">select, 0, 0, 5, 1, 1</column>
 <column name="select_ln24_1_fu_544_p3">select, 0, 0, 8, 1, 8</column>
 <column name="select_ln24_2_fu_828_p3">select, 0, 0, 5, 1, 5</column>

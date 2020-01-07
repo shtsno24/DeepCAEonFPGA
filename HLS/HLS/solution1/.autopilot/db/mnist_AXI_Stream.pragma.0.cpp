@@ -28705,8 +28705,8 @@ int network(axis input_data[784], axis output_data[784]) {_ssdm_SpecArrayDimSize
 
  for(i = 0; i < array_length; i++){
 
-
-  MemBank_Out[i] = (int16_t)MemBank_B[i];
+#pragma HLS PIPELINE
+ MemBank_Out[i] = (int16_t)MemBank_B[i];
  }
 # 197 "../mnist_AXI_Stream.cpp"
  for(i = 0; i < array_length; i++){

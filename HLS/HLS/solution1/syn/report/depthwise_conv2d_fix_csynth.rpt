@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'depthwise_conv2d_fix'
 ================================================================
-* Date:           Tue Jan  7 13:57:29 2020
+* Date:           Tue Jan  7 17:04:43 2020
 
 * Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
 * Project:        HLS
@@ -145,7 +145,7 @@
     |icmp_ln24_fu_509_p2        |   icmp   |      0|  0|  13|          10|           9|
     |icmp_ln32_fu_521_p2        |   icmp   |      0|  0|  13|          10|           9|
     |icmp_ln33_fu_559_p2        |   icmp   |      0|  0|  11|           5|           4|
-    |empty_62_fu_636_p2         |    or    |      0|  0|   2|           1|           1|
+    |empty_63_fu_636_p2         |    or    |      0|  0|   2|           1|           1|
     |out_w_0_mid2_fu_640_p3     |  select  |      0|  0|   5|           1|           1|
     |select_ln24_15_fu_535_p3   |  select  |      0|  0|  64|           1|          64|
     |select_ln24_16_fu_544_p3   |  select  |      0|  0|  64|           1|          64|

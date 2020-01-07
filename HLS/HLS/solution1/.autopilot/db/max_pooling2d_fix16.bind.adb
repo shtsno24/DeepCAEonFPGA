@@ -844,7 +844,7 @@
 					<Obj>
 						<type>0</type>
 						<id>21</id>
-						<name>empty_50</name>
+						<name>empty_51</name>
 						<fileName>../layers_c/max_pooling2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
 						<lineNumber>9</lineNumber>
@@ -892,7 +892,7 @@
 					<Obj>
 						<type>0</type>
 						<id>22</id>
-						<name>empty_51</name>
+						<name>empty_52</name>
 						<fileName>../layers_c/max_pooling2d.cpp</fileName>
 						<fileDirectory>/home/masudalab/DeepCAEonFPGA/HLS</fileDirectory>
 						<lineNumber>9</lineNumber>
@@ -10873,7 +10873,7 @@
 			</second>
 		</item>
 		<item>
-			<first>empty_50_fu_271</first>
+			<first>empty_51_fu_271</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -10881,7 +10881,7 @@
 			</second>
 		</item>
 		<item>
-			<first>empty_51_fu_275</first>
+			<first>empty_52_fu_275</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>

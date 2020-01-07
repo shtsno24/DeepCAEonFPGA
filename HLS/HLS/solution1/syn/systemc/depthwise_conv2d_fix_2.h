@@ -235,7 +235,7 @@ struct depthwise_conv2d_fix_2 : public sc_module {
     sc_signal< sc_lv<64> > zext_ln40_12_fu_982_p1;
     sc_signal< sc_lv<64> > zext_ln48_3_fu_1116_p1;
     sc_signal< sc_lv<7> > sext_ln4_fu_389_p1;
-    sc_signal< sc_lv<5> > empty_54_fu_413_p1;
+    sc_signal< sc_lv<5> > empty_55_fu_413_p1;
     sc_signal< sc_lv<5> > mul_ln4_fu_425_p0;
     sc_signal< sc_lv<5> > mul_ln4_fu_425_p1;
     sc_signal< sc_lv<4> > trunc_ln27_fu_453_p1;
@@ -256,7 +256,7 @@ struct depthwise_conv2d_fix_2 : public sc_module {
     sc_signal< sc_lv<9> > mul_ln40_1_fu_557_p2;
     sc_signal< sc_lv<9> > tmp_0_0_fu_484_p2;
     sc_signal< sc_lv<1> > icmp_ln33_1_fu_578_p2;
-    sc_signal< sc_lv<1> > empty_56_fu_596_p2;
+    sc_signal< sc_lv<1> > empty_57_fu_596_p2;
     sc_signal< sc_lv<9> > select_ln24_3_fu_562_p3;
     sc_signal< sc_lv<9> > tmp_0_0_mid1_fu_614_p2;
     sc_signal< sc_lv<9> > select_ln24_5_fu_570_p3;
@@ -451,8 +451,8 @@ struct depthwise_conv2d_fix_2 : public sc_module {
     void thread_ap_ready();
     void thread_bias_address0();
     void thread_bias_ce0();
-    void thread_empty_54_fu_413_p1();
-    void thread_empty_56_fu_596_p2();
+    void thread_empty_55_fu_413_p1();
+    void thread_empty_57_fu_596_p2();
     void thread_empty_fu_409_p1();
     void thread_grp_fu_1176_p0();
     void thread_grp_fu_1176_p1();

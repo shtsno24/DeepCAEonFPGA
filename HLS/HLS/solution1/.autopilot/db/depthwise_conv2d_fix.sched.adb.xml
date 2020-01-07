@@ -1091,10 +1091,10 @@ hls_label_2:58  %select_ln24_25 = select i1 %icmp_ln32, i11 30, i11 %tmp10_1_0
 
 <Node id="114" bw="1" op_0_bw="1" op_1_bw="1">
 <![CDATA[
-hls_label_2:71  %empty_62 = or i1 %and_ln24, %icmp_ln32
+hls_label_2:71  %empty_63 = or i1 %and_ln24, %icmp_ln32
 
 ]]></Node>
-<StgValue><ssdm name="empty_62"/></StgValue>
+<StgValue><ssdm name="empty_63"/></StgValue>
 </operation>
 
 <operation id="78" st_id="3" stage="1" lat="1">
@@ -1107,7 +1107,7 @@ hls_label_2:71  %empty_62 = or i1 %and_ln24, %icmp_ln32
 
 <Node id="115" bw="5" op_0_bw="1" op_1_bw="5" op_2_bw="5">
 <![CDATA[
-hls_label_2:72  %out_w_0_mid2 = select i1 %empty_62, i5 0, i5 %out_w_0
+hls_label_2:72  %out_w_0_mid2 = select i1 %empty_63, i5 0, i5 %out_w_0
 
 ]]></Node>
 <StgValue><ssdm name="out_w_0_mid2"/></StgValue>
@@ -4118,10 +4118,10 @@ hls_label_2:191  store i16 %add_ln48_8, i16* %output_addr, align 2
 
 <Node id="235" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32">
 <![CDATA[
-hls_label_2:192  %empty_63 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str432, i32 %tmp_s)
+hls_label_2:192  %empty_64 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str432, i32 %tmp_s)
 
 ]]></Node>
-<StgValue><ssdm name="empty_63"/></StgValue>
+<StgValue><ssdm name="empty_64"/></StgValue>
 </operation>
 
 <operation id="263" st_id="11" stage="1" lat="1">

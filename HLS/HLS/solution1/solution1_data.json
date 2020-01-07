@@ -867,47 +867,47 @@
       "Instances": [
         {
           "ModuleName": "depthwise_conv2d_fix_2",
-          "InstanceName": "grp_depthwise_conv2d_fix_2_fu_423"
+          "InstanceName": "grp_depthwise_conv2d_fix_2_fu_425"
         },
         {
           "ModuleName": "depthwise_conv2d_fix_1",
-          "InstanceName": "grp_depthwise_conv2d_fix_1_fu_447"
+          "InstanceName": "grp_depthwise_conv2d_fix_1_fu_449"
         },
         {
           "ModuleName": "depthwise_conv2d_fix",
-          "InstanceName": "grp_depthwise_conv2d_fix_fu_471"
+          "InstanceName": "grp_depthwise_conv2d_fix_fu_473"
         },
         {
           "ModuleName": "pointwise_conv2d_fix_1",
-          "InstanceName": "grp_pointwise_conv2d_fix_1_fu_479"
+          "InstanceName": "grp_pointwise_conv2d_fix_1_fu_481"
         },
         {
           "ModuleName": "pointwise_conv2d_fix_3",
-          "InstanceName": "grp_pointwise_conv2d_fix_3_fu_485"
+          "InstanceName": "grp_pointwise_conv2d_fix_3_fu_487"
         },
         {
           "ModuleName": "pointwise_conv2d_fix_2",
-          "InstanceName": "grp_pointwise_conv2d_fix_2_fu_491"
+          "InstanceName": "grp_pointwise_conv2d_fix_2_fu_493"
         },
         {
           "ModuleName": "pointwise_conv2d_fix_4",
-          "InstanceName": "grp_pointwise_conv2d_fix_4_fu_497"
+          "InstanceName": "grp_pointwise_conv2d_fix_4_fu_499"
         },
         {
           "ModuleName": "padding2d_fix16",
-          "InstanceName": "grp_padding2d_fix16_fu_503"
+          "InstanceName": "grp_padding2d_fix16_fu_505"
         },
         {
           "ModuleName": "max_pooling2d_fix16",
-          "InstanceName": "grp_max_pooling2d_fix16_fu_521"
+          "InstanceName": "grp_max_pooling2d_fix16_fu_523"
         },
         {
           "ModuleName": "pointwise_conv2d_fix",
-          "InstanceName": "grp_pointwise_conv2d_fix_fu_542"
+          "InstanceName": "grp_pointwise_conv2d_fix_fu_544"
         },
         {
           "ModuleName": "up_sampling2d_fix16",
-          "InstanceName": "grp_up_sampling2d_fix16_fu_548"
+          "InstanceName": "grp_up_sampling2d_fix16_fu_550"
         }
       ]
     },
@@ -1475,8 +1475,8 @@
           {
             "Name": "Loop 2",
             "TripCount": "784",
-            "Latency": "1568",
-            "PipelineII": "",
+            "Latency": "784",
+            "PipelineII": "1",
             "PipelineDepth": "2"
           },
           {
@@ -1490,8 +1490,8 @@
         "Area": {
           "BRAM_18K": "39",
           "DSP48E": "47",
-          "FF": "8205",
-          "LUT": "12670",
+          "FF": "8198",
+          "LUT": "12689",
           "URAM": "0"
         }
       }
@@ -1507,7 +1507,7 @@
   },
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2020-01-07 13:57:37 JST",
+    "Time": "2020-01-07 17:04:51 JST",
     "ToolName": "vivado_hls",
     "ToolVersion": "2019.1"
   }

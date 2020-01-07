@@ -194,11 +194,11 @@ struct max_pooling2d_fix16 : public sc_module {
     sc_signal< sc_lv<6> > sext_ln9_1_fu_243_p1;
     sc_signal< sc_lv<6> > sext_ln9_fu_239_p1;
     sc_signal< sc_lv<5> > empty_fu_267_p0;
-    sc_signal< sc_lv<5> > empty_50_fu_271_p0;
-    sc_signal< sc_lv<4> > empty_50_fu_271_p1;
+    sc_signal< sc_lv<5> > empty_51_fu_271_p0;
+    sc_signal< sc_lv<4> > empty_51_fu_271_p1;
     sc_signal< sc_lv<4> > mul_ln9_fu_287_p0;
     sc_signal< sc_lv<4> > mul_ln9_fu_287_p1;
-    sc_signal< sc_lv<5> > empty_51_fu_275_p1;
+    sc_signal< sc_lv<5> > empty_52_fu_275_p1;
     sc_signal< sc_lv<5> > mul_ln9_1_fu_301_p0;
     sc_signal< sc_lv<8> > mul_ln9_1_fu_301_p1;
     sc_signal< sc_lv<5> > mul_ln28_fu_317_p0;
@@ -343,9 +343,9 @@ struct max_pooling2d_fix16 : public sc_module {
     void thread_ap_phi_mux_out_h_0_phi_fu_215_p4();
     void thread_ap_phi_mux_out_w_0_phi_fu_227_p4();
     void thread_ap_ready();
-    void thread_empty_50_fu_271_p0();
-    void thread_empty_50_fu_271_p1();
-    void thread_empty_51_fu_275_p1();
+    void thread_empty_51_fu_271_p0();
+    void thread_empty_51_fu_271_p1();
+    void thread_empty_52_fu_275_p1();
     void thread_empty_fu_267_p0();
     void thread_empty_fu_267_p1();
     void thread_grp_fu_677_p0();

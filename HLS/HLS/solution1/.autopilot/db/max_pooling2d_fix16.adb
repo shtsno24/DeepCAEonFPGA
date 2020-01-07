@@ -844,54 +844,6 @@
             <Obj>
               <type>0</type>
               <id>21</id>
-              <name>empty_50</name>
-              <fileName>../layers_c/max_pooling2d.cpp</fileName>
-              <fileDirectory>..</fileDirectory>
-              <lineNumber>9</lineNumber>
-              <contextFuncName>max_pooling2d_fix16</contextFuncName>
-              <inlineStackInfo>
-                <count>1</count>
-                <item_version>0</item_version>
-                <item>
-                  <first>/home/masudalab/DeepCAEonFPGA/HLS</first>
-                  <second>
-                    <count>1</count>
-                    <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../layers_c/max_pooling2d.cpp</first>
-                        <second>max_pooling2d_fix16</second>
-                      </first>
-                      <second>9</second>
-                    </item>
-                  </second>
-                </item>
-              </inlineStackInfo>
-              <originalName/>
-              <rtlName>empty_50_fu_271_p1</rtlName>
-              <coreName/>
-            </Obj>
-            <bitwidth>4</bitwidth>
-          </Value>
-          <oprand_edges>
-            <count>1</count>
-            <item_version>0</item_version>
-            <item>158</item>
-          </oprand_edges>
-          <opcode>trunc</opcode>
-          <m_Display>0</m_Display>
-          <m_isOnCriticalPath>0</m_isOnCriticalPath>
-          <m_isLCDNode>0</m_isLCDNode>
-          <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>0.00</m_delay>
-          <m_topoIndex>14</m_topoIndex>
-          <m_clusterGroupNumber>-1</m_clusterGroupNumber>
-        </item>
-        <item class_id_reference="9" object_id="_22">
-          <Value>
-            <Obj>
-              <type>0</type>
-              <id>22</id>
               <name>empty_51</name>
               <fileName>../layers_c/max_pooling2d.cpp</fileName>
               <fileDirectory>..</fileDirectory>
@@ -916,7 +868,55 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>empty_51_fu_275_p1</rtlName>
+              <rtlName>empty_51_fu_271_p1</rtlName>
+              <coreName/>
+            </Obj>
+            <bitwidth>4</bitwidth>
+          </Value>
+          <oprand_edges>
+            <count>1</count>
+            <item_version>0</item_version>
+            <item>158</item>
+          </oprand_edges>
+          <opcode>trunc</opcode>
+          <m_Display>0</m_Display>
+          <m_isOnCriticalPath>0</m_isOnCriticalPath>
+          <m_isLCDNode>0</m_isLCDNode>
+          <m_isStartOfPath>0</m_isStartOfPath>
+          <m_delay>0.00</m_delay>
+          <m_topoIndex>14</m_topoIndex>
+          <m_clusterGroupNumber>-1</m_clusterGroupNumber>
+        </item>
+        <item class_id_reference="9" object_id="_22">
+          <Value>
+            <Obj>
+              <type>0</type>
+              <id>22</id>
+              <name>empty_52</name>
+              <fileName>../layers_c/max_pooling2d.cpp</fileName>
+              <fileDirectory>..</fileDirectory>
+              <lineNumber>9</lineNumber>
+              <contextFuncName>max_pooling2d_fix16</contextFuncName>
+              <inlineStackInfo>
+                <count>1</count>
+                <item_version>0</item_version>
+                <item>
+                  <first>/home/masudalab/DeepCAEonFPGA/HLS</first>
+                  <second>
+                    <count>1</count>
+                    <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>../layers_c/max_pooling2d.cpp</first>
+                        <second>max_pooling2d_fix16</second>
+                      </first>
+                      <second>9</second>
+                    </item>
+                  </second>
+                </item>
+              </inlineStackInfo>
+              <originalName/>
+              <rtlName>empty_52_fu_275_p1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>5</bitwidth>
@@ -13651,7 +13651,7 @@
         </second>
       </item>
       <item>
-        <first>empty_50_fu_271</first>
+        <first>empty_51_fu_271</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -13659,7 +13659,7 @@
         </second>
       </item>
       <item>
-        <first>empty_51_fu_275</first>
+        <first>empty_52_fu_275</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

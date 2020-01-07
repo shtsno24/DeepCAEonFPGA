@@ -260,7 +260,7 @@ architecture behav of depthwise_conv2d_fix is
     signal or_ln27_mid1_fu_577_p3 : STD_LOGIC_VECTOR (1 downto 0);
     signal or_ln_fu_584_p3 : STD_LOGIC_VECTOR (1 downto 0);
     signal xor_ln24_1_fu_604_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal empty_62_fu_636_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal empty_63_fu_636_p2 : STD_LOGIC_VECTOR (0 downto 0);
     signal p_shl19_mid1_fu_648_p3 : STD_LOGIC_VECTOR (9 downto 0);
     signal p_shl20_mid1_fu_659_p3 : STD_LOGIC_VECTOR (5 downto 0);
     signal p_shl19_cast_mid1_fu_655_p1 : STD_LOGIC_VECTOR (10 downto 0);
@@ -1084,7 +1084,7 @@ begin
         end if; 
     end process;
 
-    empty_62_fu_636_p2 <= (icmp_ln32_reg_1416 or and_ln24_reg_1449);
+    empty_63_fu_636_p2 <= (icmp_ln32_reg_1416 or and_ln24_reg_1449);
     icmp_ln24_fu_509_p2 <= "1" when (ap_phi_mux_indvar_flatten80_phi_fu_269_p4 = ap_const_lv10_310) else "0";
     icmp_ln32_fu_521_p2 <= "1" when (ap_phi_mux_indvar_flatten_phi_fu_292_p4 = ap_const_lv10_310) else "0";
     icmp_ln33_fu_559_p2 <= "1" when (ap_phi_mux_out_w_0_phi_fu_315_p4 = ap_const_lv5_1C) else "0";
@@ -1155,7 +1155,7 @@ begin
     out_d_fu_353_p2 <= (ap_phi_mux_out_d_0_phi_fu_280_p4 xor ap_const_lv1_1);
     out_h_fu_571_p2 <= std_logic_vector(unsigned(select_ln24_fu_527_p3) + unsigned(ap_const_lv5_1));
     out_w_0_mid2_fu_640_p3 <= 
-        ap_const_lv5_0 when (empty_62_fu_636_p2(0) = '1') else 
+        ap_const_lv5_0 when (empty_63_fu_636_p2(0) = '1') else 
         out_w_0_reg_311;
     out_w_fu_744_p2 <= std_logic_vector(unsigned(out_w_0_mid2_fu_640_p3) + unsigned(ap_const_lv5_1));
     output_r_address0 <= zext_ln48_fu_1304_p1(14 - 1 downto 0);

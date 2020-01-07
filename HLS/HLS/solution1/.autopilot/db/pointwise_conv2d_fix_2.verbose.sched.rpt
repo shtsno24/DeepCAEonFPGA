@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'pointwise_conv2d_fix_2'
 ================================================================
-* Date:           Tue Jan  7 13:57:25 2020
+* Date:           Tue Jan  7 17:04:39 2020
 
 * Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
 * Project:        HLS
@@ -321,7 +321,7 @@ The critical path consists of the following:
 	'phi' operation ('i') with incoming values : ('i', ../layers_c/pointwise_conv2d.cpp:26) [35]  (0 ns)
 	'add' operation ('add_ln28', ../layers_c/pointwise_conv2d.cpp:28) [44]  (1.83 ns)
 	'mux' operation ('merge_i', ../layers_c/pointwise_conv2d.cpp:28) [45]  (3.14 ns)
-	'store' operation ('store_ln28', ../layers_c/pointwise_conv2d.cpp:28) of variable 'kernel_buffer[0]', ../layers_c/pointwise_conv2d.cpp:28 on local variable 'kernel_buffer[15]' [49]  (0 ns)
+	'store' operation ('store_ln28', ../layers_c/pointwise_conv2d.cpp:28) of variable 'kernel_buffer[0]', ../layers_c/pointwise_conv2d.cpp:28 on local variable 'kernel_buffer[15]' [73]  (0 ns)
 
  <State 4>: 1.77ns
 The critical path consists of the following:

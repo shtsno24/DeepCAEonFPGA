@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'depthwise_conv2d_fix'
 ================================================================
-* Date:           Tue Jan  7 13:57:23 2020
+* Date:           Tue Jan  7 17:04:37 2020
 
 * Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
 * Project:        HLS
@@ -163,8 +163,8 @@ ST_3 : Operation 73 [1/1] (0.00ns)   --->   "%SeparableConv2D_0_w_7 = getelement
 ST_3 : Operation 74 [2/2] (3.25ns)   --->   "%SeparableConv2D_0_w_8 = load i13* %SeparableConv2D_0_w_7, align 2" [../layers_c/depthwise_conv2d.cpp:24]   --->   Operation 74 'load' 'SeparableConv2D_0_w_8' <Predicate = (!icmp_ln24)> <Delay = 3.25> <Core = "ROM_nP">   --->   Core 52 'ROM_nP' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 13> <Depth = 9> <ROM>
 ST_3 : Operation 75 [1/1] (0.00ns) (grouped into LUT with out node tmp10_0_0_mid2)   --->   "%select_ln24_24 = select i1 %icmp_ln32, i11 0, i11 %tmp10_0_0" [../layers_c/depthwise_conv2d.cpp:24]   --->   Operation 75 'select' 'select_ln24_24' <Predicate = (!icmp_ln24 & !and_ln24)> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.68> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
 ST_3 : Operation 76 [1/1] (0.00ns) (grouped into LUT with out node tmp10_1_0_mid2)   --->   "%select_ln24_25 = select i1 %icmp_ln32, i11 30, i11 %tmp10_1_0" [../layers_c/depthwise_conv2d.cpp:24]   --->   Operation 76 'select' 'select_ln24_25' <Predicate = (!icmp_ln24 & !and_ln24)> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.68> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_3 : Operation 77 [1/1] (0.00ns) (grouped into LUT with out node out_w_0_mid2)   --->   "%empty_62 = or i1 %and_ln24, %icmp_ln32" [../layers_c/depthwise_conv2d.cpp:24]   --->   Operation 77 'or' 'empty_62' <Predicate = (!icmp_ln24)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 78 [1/1] (1.21ns) (out node of the LUT)   --->   "%out_w_0_mid2 = select i1 %empty_62, i5 0, i5 %out_w_0" [../layers_c/depthwise_conv2d.cpp:24]   --->   Operation 78 'select' 'out_w_0_mid2' <Predicate = (!icmp_ln24)> <Delay = 1.21> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.68> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 77 [1/1] (0.00ns) (grouped into LUT with out node out_w_0_mid2)   --->   "%empty_63 = or i1 %and_ln24, %icmp_ln32" [../layers_c/depthwise_conv2d.cpp:24]   --->   Operation 77 'or' 'empty_63' <Predicate = (!icmp_ln24)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 78 [1/1] (1.21ns) (out node of the LUT)   --->   "%out_w_0_mid2 = select i1 %empty_63, i5 0, i5 %out_w_0" [../layers_c/depthwise_conv2d.cpp:24]   --->   Operation 78 'select' 'out_w_0_mid2' <Predicate = (!icmp_ln24)> <Delay = 1.21> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.68> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
 ST_3 : Operation 79 [1/1] (0.00ns)   --->   "%p_shl19_mid1 = call i10 @_ssdm_op_BitConcatenate.i10.i5.i5(i5 %out_h, i5 0)" [../layers_c/depthwise_conv2d.cpp:32]   --->   Operation 79 'bitconcatenate' 'p_shl19_mid1' <Predicate = (!icmp_ln24 & and_ln24)> <Delay = 0.00>
 ST_3 : Operation 80 [1/1] (0.00ns)   --->   "%p_shl19_cast_mid1 = zext i10 %p_shl19_mid1 to i11" [../layers_c/depthwise_conv2d.cpp:32]   --->   Operation 80 'zext' 'p_shl19_cast_mid1' <Predicate = (!icmp_ln24 & and_ln24)> <Delay = 0.00>
 ST_3 : Operation 81 [1/1] (0.00ns)   --->   "%p_shl20_mid1 = call i6 @_ssdm_op_BitConcatenate.i6.i5.i1(i5 %out_h, i1 false)" [../layers_c/depthwise_conv2d.cpp:32]   --->   Operation 81 'bitconcatenate' 'p_shl20_mid1' <Predicate = (!icmp_ln24 & and_ln24)> <Delay = 0.00>
@@ -364,7 +364,7 @@ ST_11 : Operation 258 [1/1] (0.00ns)   --->   "%sext_ln48 = sext i11 %add_ln48 t
 ST_11 : Operation 259 [1/1] (0.00ns)   --->   "%zext_ln48 = zext i32 %sext_ln48 to i64" [../layers_c/depthwise_conv2d.cpp:48]   --->   Operation 259 'zext' 'zext_ln48' <Predicate = (!icmp_ln24)> <Delay = 0.00>
 ST_11 : Operation 260 [1/1] (0.00ns)   --->   "%output_addr = getelementptr [14400 x i16]* %output_r, i64 0, i64 %zext_ln48" [../layers_c/depthwise_conv2d.cpp:48]   --->   Operation 260 'getelementptr' 'output_addr' <Predicate = (!icmp_ln24)> <Delay = 0.00>
 ST_11 : Operation 261 [1/1] (3.25ns)   --->   "store i16 %add_ln48_8, i16* %output_addr, align 2" [../layers_c/depthwise_conv2d.cpp:48]   --->   Operation 261 'store' <Predicate = (!icmp_ln24)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 14400> <RAM>
-ST_11 : Operation 262 [1/1] (0.00ns)   --->   "%empty_63 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str432, i32 %tmp_s)" [../layers_c/depthwise_conv2d.cpp:50]   --->   Operation 262 'specregionend' 'empty_63' <Predicate = (!icmp_ln24)> <Delay = 0.00>
+ST_11 : Operation 262 [1/1] (0.00ns)   --->   "%empty_64 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str432, i32 %tmp_s)" [../layers_c/depthwise_conv2d.cpp:50]   --->   Operation 262 'specregionend' 'empty_64' <Predicate = (!icmp_ln24)> <Delay = 0.00>
 ST_11 : Operation 263 [1/1] (0.00ns)   --->   "br label %.preheader5" [../layers_c/depthwise_conv2d.cpp:33]   --->   Operation 263 'br' <Predicate = (!icmp_ln24)> <Delay = 0.00>
 
 State 12 <SV = 2> <Delay = 0.00>
@@ -451,7 +451,7 @@ select_ln24_18         (select           ) [ 0000000000000]
 SeparableConv2D_0_w_7  (getelementptr    ) [ 0000100000000]
 select_ln24_24         (select           ) [ 0000000000000]
 select_ln24_25         (select           ) [ 0000000000000]
-empty_62               (or               ) [ 0000000000000]
+empty_63               (or               ) [ 0000000000000]
 out_w_0_mid2           (select           ) [ 0000111000000]
 p_shl19_mid1           (bitconcatenate   ) [ 0000000000000]
 p_shl19_cast_mid1      (zext             ) [ 0000000000000]
@@ -622,7 +622,7 @@ sext_ln48              (sext             ) [ 0000000000000]
 zext_ln48              (zext             ) [ 0000000000000]
 output_addr            (getelementptr    ) [ 0000000000000]
 store_ln48             (store            ) [ 0000000000000]
-empty_63               (specregionend    ) [ 0000000000000]
+empty_64               (specregionend    ) [ 0000000000000]
 br_ln33                (br               ) [ 0111111111110]
 ret_ln0                (ret              ) [ 0000000000000]
 </LifeTime>
@@ -2071,7 +2071,7 @@ ret_ln0                (ret              ) [ 0000000000000]
 </bind>
 </comp>
 
-<comp id="636" class="1004" name="empty_62_fu_636">
+<comp id="636" class="1004" name="empty_63_fu_636">
 <pin_list>
 <pin id="637" dir="0" index="0" bw="1" slack="1"/>
 <pin id="638" dir="0" index="1" bw="1" slack="1"/>
@@ -2079,7 +2079,7 @@ ret_ln0                (ret              ) [ 0000000000000]
 </pin_list>
 <bind>
 <opcode="or(24) " fcode="or"/>
-<opset="empty_62/3 "/>
+<opset="empty_63/3 "/>
 </bind>
 </comp>
 
@@ -5555,7 +5555,7 @@ ret_ln0                (ret              ) [ 0000000000000]
 		zext_ln48 : 1
 		output_addr : 2
 		store_ln48 : 3
-		empty_63 : 1
+		empty_64 : 1
 	State 12
 
 
@@ -5652,7 +5652,7 @@ ret_ln0                (ret              ) [ 0000000000000]
 |----------|------------------------------|---------|---------|---------|
 |    and   |        and_ln24_fu_565       |    0    |    0    |    2    |
 |----------|------------------------------|---------|---------|---------|
-|    or    |        empty_62_fu_636       |    0    |    0    |    2    |
+|    or    |        empty_63_fu_636       |    0    |    0    |    2    |
 |----------|------------------------------|---------|---------|---------|
 |          |      zext_ln27_1_fu_349      |    0    |    0    |    0    |
 |          |      zext_ln27_2_fu_359      |    0    |    0    |    0    |

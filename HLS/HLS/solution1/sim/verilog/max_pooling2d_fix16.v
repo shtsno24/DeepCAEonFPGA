@@ -215,11 +215,11 @@ wire  signed [6:0] sext_ln9_2_fu_247_p1;
 wire  signed [5:0] sext_ln9_1_fu_243_p1;
 wire  signed [5:0] sext_ln9_fu_239_p1;
 wire  signed [4:0] empty_fu_267_p0;
-wire  signed [4:0] empty_50_fu_271_p0;
-wire   [3:0] empty_50_fu_271_p1;
+wire  signed [4:0] empty_51_fu_271_p0;
+wire   [3:0] empty_51_fu_271_p1;
 wire   [3:0] mul_ln9_fu_287_p0;
 wire   [3:0] mul_ln9_fu_287_p1;
-wire   [4:0] empty_51_fu_275_p1;
+wire   [4:0] empty_52_fu_275_p1;
 wire   [4:0] mul_ln9_1_fu_301_p0;
 wire   [7:0] mul_ln9_1_fu_301_p1;
 wire   [4:0] mul_ln28_fu_317_p0;
@@ -800,11 +800,11 @@ assign ap_block_state9_pp0_stage3_iter1 = ~(1'b1 == 1'b1);
 
 assign ap_enable_pp0 = (ap_idle_pp0 ^ 1'b1);
 
-assign empty_50_fu_271_p0 = output_height;
+assign empty_51_fu_271_p0 = output_height;
 
-assign empty_50_fu_271_p1 = empty_50_fu_271_p0[3:0];
+assign empty_51_fu_271_p1 = empty_51_fu_271_p0[3:0];
 
-assign empty_51_fu_275_p1 = output_depth[4:0];
+assign empty_52_fu_275_p1 = output_depth[4:0];
 
 assign empty_fu_267_p0 = output_width;
 
@@ -884,7 +884,7 @@ assign mul_ln36_fu_594_p2 = (mul_ln36_fu_594_p0 * mul_ln36_fu_594_p1);
 
 assign mul_ln9_1_fu_301_p0 = mul_ln9_1_fu_301_p00;
 
-assign mul_ln9_1_fu_301_p00 = empty_51_fu_275_p1;
+assign mul_ln9_1_fu_301_p00 = empty_52_fu_275_p1;
 
 assign mul_ln9_1_fu_301_p1 = mul_ln9_1_fu_301_p10;
 
@@ -894,7 +894,7 @@ assign mul_ln9_1_fu_301_p2 = (mul_ln9_1_fu_301_p0 * mul_ln9_1_fu_301_p1);
 
 assign mul_ln9_fu_287_p0 = mul_ln9_fu_287_p00;
 
-assign mul_ln9_fu_287_p00 = empty_50_fu_271_p1;
+assign mul_ln9_fu_287_p00 = empty_51_fu_271_p1;
 
 assign mul_ln9_fu_287_p1 = mul_ln9_fu_287_p10;
 

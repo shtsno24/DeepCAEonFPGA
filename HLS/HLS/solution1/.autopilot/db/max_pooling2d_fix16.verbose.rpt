@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'max_pooling2d_fix16'
 ================================================================
-* Date:           Tue Jan  7 13:57:30 2020
+* Date:           Tue Jan  7 17:04:44 2020
 
 * Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
 * Project:        HLS
@@ -325,12 +325,12 @@ ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%zext_ln28_1_cast4 = zext i7 %sext_
 ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%zext_ln36 = zext i6 %sext_ln9_1 to i8" [../layers_c/max_pooling2d.cpp:36]   --->   Operation 28 'zext' 'zext_ln36' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%zext_ln36_1_cast = zext i6 %sext_ln9 to i12" [../layers_c/max_pooling2d.cpp:9]   --->   Operation 29 'zext' 'zext_ln36_1_cast' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%empty = trunc i5 %output_width_read to i4" [../layers_c/max_pooling2d.cpp:9]   --->   Operation 30 'trunc' 'empty' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%empty_50 = trunc i5 %output_height_read to i4" [../layers_c/max_pooling2d.cpp:9]   --->   Operation 31 'trunc' 'empty_50' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%empty_51 = trunc i6 %output_depth_read to i5" [../layers_c/max_pooling2d.cpp:9]   --->   Operation 32 'trunc' 'empty_51' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%zext_ln9 = zext i4 %empty_50 to i8" [../layers_c/max_pooling2d.cpp:9]   --->   Operation 33 'zext' 'zext_ln9' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%empty_51 = trunc i5 %output_height_read to i4" [../layers_c/max_pooling2d.cpp:9]   --->   Operation 31 'trunc' 'empty_51' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%empty_52 = trunc i6 %output_depth_read to i5" [../layers_c/max_pooling2d.cpp:9]   --->   Operation 32 'trunc' 'empty_52' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%zext_ln9 = zext i4 %empty_51 to i8" [../layers_c/max_pooling2d.cpp:9]   --->   Operation 33 'zext' 'zext_ln9' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%zext_ln9_1 = zext i4 %empty to i8" [../layers_c/max_pooling2d.cpp:9]   --->   Operation 34 'zext' 'zext_ln9_1' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 35 [1/1] (2.34ns)   --->   "%mul_ln9 = mul i8 %zext_ln9, %zext_ln9_1" [../layers_c/max_pooling2d.cpp:9]   --->   Operation 35 'mul' 'mul_ln9' <Predicate = true> <Delay = 2.34> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 2.34> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%zext_ln9_2 = zext i5 %empty_51 to i13" [../layers_c/max_pooling2d.cpp:9]   --->   Operation 36 'zext' 'zext_ln9_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%zext_ln9_2 = zext i5 %empty_52 to i13" [../layers_c/max_pooling2d.cpp:9]   --->   Operation 36 'zext' 'zext_ln9_2' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%zext_ln9_3 = zext i8 %mul_ln9 to i13" [../layers_c/max_pooling2d.cpp:9]   --->   Operation 37 'zext' 'zext_ln9_3' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 38 [1/1] (4.17ns)   --->   "%mul_ln9_1 = mul i13 %zext_ln9_2, %zext_ln9_3" [../layers_c/max_pooling2d.cpp:9]   --->   Operation 38 'mul' 'mul_ln9_1' <Predicate = true> <Delay = 4.17> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 2.34> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
 ST_1 : Operation 39 [1/1] (1.30ns)   --->   "%icmp_ln23 = icmp eq i4 %empty, 0" [../layers_c/max_pooling2d.cpp:23]   --->   Operation 39 'icmp' 'icmp_ln23' <Predicate = true> <Delay = 1.30> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.42> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
@@ -461,7 +461,7 @@ ST_15 : Operation 135 [1/1] (0.00ns)   --->   "%input_addr_6 = getelementptr [14
 ST_15 : Operation 136 [2/2] (3.25ns)   --->   "%input_load_6 = load i16* %input_addr_6, align 2" [../layers_c/max_pooling2d.cpp:31]   --->   Operation 136 'load' 'input_load_6' <Predicate = (!icmp_ln19)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 144> <RAM>
 
 State 16 <SV = 15> <Delay = 6.50>
-ST_16 : Operation 137 [1/1] (0.00ns)   --->   "%empty_52 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 392, i64 3136, i64 0)"   --->   Operation 137 'speclooptripcount' 'empty_52' <Predicate = (!icmp_ln19)> <Delay = 0.00>
+ST_16 : Operation 137 [1/1] (0.00ns)   --->   "%empty_53 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 392, i64 3136, i64 0)"   --->   Operation 137 'speclooptripcount' 'empty_53' <Predicate = (!icmp_ln19)> <Delay = 0.00>
 ST_16 : Operation 138 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str123) nounwind" [../layers_c/max_pooling2d.cpp:22]   --->   Operation 138 'specpipeline' <Predicate = (!icmp_ln19)> <Delay = 0.00>
 ST_16 : Operation 139 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str123) nounwind" [../layers_c/max_pooling2d.cpp:22]   --->   Operation 139 'specpipeline' <Predicate = (!icmp_ln19)> <Delay = 0.00>
 ST_16 : Operation 140 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str123) nounwind" [../layers_c/max_pooling2d.cpp:22]   --->   Operation 140 'specpipeline' <Predicate = (!icmp_ln19)> <Delay = 0.00>
@@ -471,7 +471,7 @@ ST_16 : Operation 143 [1/2] (3.25ns)   --->   "%input_load_6 = load i16* %input_
 ST_16 : Operation 144 [1/1] (0.00ns)   --->   "%zext_ln36_2 = zext i12 %add_ln36 to i64" [../layers_c/max_pooling2d.cpp:36]   --->   Operation 144 'zext' 'zext_ln36_2' <Predicate = (!icmp_ln19)> <Delay = 0.00>
 ST_16 : Operation 145 [1/1] (0.00ns)   --->   "%output_addr = getelementptr [14400 x i16]* %output_r, i64 0, i64 %zext_ln36_2" [../layers_c/max_pooling2d.cpp:36]   --->   Operation 145 'getelementptr' 'output_addr' <Predicate = (!icmp_ln19)> <Delay = 0.00>
 ST_16 : Operation 146 [1/1] (3.25ns)   --->   "store i16 %input_load_6, i16* %output_addr, align 2" [../layers_c/max_pooling2d.cpp:36]   --->   Operation 146 'store' <Predicate = (!icmp_ln19)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 144> <RAM>
-ST_16 : Operation 147 [1/1] (0.00ns)   --->   "%empty_53 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str224, i32 %tmp_s)" [../layers_c/max_pooling2d.cpp:38]   --->   Operation 147 'specregionend' 'empty_53' <Predicate = (!icmp_ln19)> <Delay = 0.00>
+ST_16 : Operation 147 [1/1] (0.00ns)   --->   "%empty_54 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str224, i32 %tmp_s)" [../layers_c/max_pooling2d.cpp:38]   --->   Operation 147 'specregionend' 'empty_54' <Predicate = (!icmp_ln19)> <Delay = 0.00>
 ST_16 : Operation 148 [1/1] (0.00ns)   --->   "br label %1" [../layers_c/max_pooling2d.cpp:23]   --->   Operation 148 'br' <Predicate = (!icmp_ln19)> <Delay = 0.00>
 
 State 17 <SV = 12> <Delay = 0.00>
@@ -515,8 +515,8 @@ zext_ln28_1_cast4  (zext             ) [ 001111111111111110]
 zext_ln36          (zext             ) [ 001111111111111110]
 zext_ln36_1_cast   (zext             ) [ 001111111111111110]
 empty              (trunc            ) [ 001111111111111110]
-empty_50           (trunc            ) [ 000000000000000000]
 empty_51           (trunc            ) [ 000000000000000000]
+empty_52           (trunc            ) [ 000000000000000000]
 zext_ln9           (zext             ) [ 000000000000000000]
 zext_ln9_1         (zext             ) [ 000000000000000000]
 mul_ln9            (mul              ) [ 001111111111111110]
@@ -614,7 +614,7 @@ icmp_ln31_2        (icmp             ) [ 000000000000000000]
 select_ln31_2      (select           ) [ 000100000000000100]
 zext_ln31_2        (zext             ) [ 000000000000000000]
 input_addr_6       (getelementptr    ) [ 000010000000000010]
-empty_52           (speclooptripcount) [ 000000000000000000]
+empty_53           (speclooptripcount) [ 000000000000000000]
 specpipeline_ln22  (specpipeline     ) [ 000000000000000000]
 specpipeline_ln22  (specpipeline     ) [ 000000000000000000]
 specpipeline_ln22  (specpipeline     ) [ 000000000000000000]
@@ -624,7 +624,7 @@ input_load_6       (load             ) [ 000000000000000000]
 zext_ln36_2        (zext             ) [ 000000000000000000]
 output_addr        (getelementptr    ) [ 000000000000000000]
 store_ln36         (store            ) [ 000000000000000000]
-empty_53           (specregionend    ) [ 000000000000000000]
+empty_54           (specregionend    ) [ 000000000000000000]
 br_ln23            (br               ) [ 011111111111111110]
 ret_ln0            (ret              ) [ 000000000000000000]
 </LifeTime>
@@ -1343,25 +1343,25 @@ ret_ln0            (ret              ) [ 000000000000000000]
 </bind>
 </comp>
 
-<comp id="271" class="1004" name="empty_50_fu_271">
+<comp id="271" class="1004" name="empty_51_fu_271">
 <pin_list>
 <pin id="272" dir="0" index="0" bw="5" slack="0"/>
 <pin id="273" dir="1" index="1" bw="4" slack="0"/>
 </pin_list>
 <bind>
 <opcode="trunc(33) " fcode="trunc"/>
-<opset="empty_50/1 "/>
+<opset="empty_51/1 "/>
 </bind>
 </comp>
 
-<comp id="275" class="1004" name="empty_51_fu_275">
+<comp id="275" class="1004" name="empty_52_fu_275">
 <pin_list>
 <pin id="276" dir="0" index="0" bw="6" slack="0"/>
 <pin id="277" dir="1" index="1" bw="5" slack="0"/>
 </pin_list>
 <bind>
 <opcode="trunc(33) " fcode="trunc"/>
-<opset="empty_51/1 "/>
+<opset="empty_52/1 "/>
 </bind>
 </comp>
 
@@ -3300,7 +3300,7 @@ ret_ln0            (ret              ) [ 000000000000000000]
 	State 16
 		output_addr : 1
 		store_ln36 : 2
-		empty_53 : 1
+		empty_54 : 1
 	State 17
 
 
@@ -3407,8 +3407,8 @@ ret_ln0            (ret              ) [ 000000000000000000]
 |          |       zext_ln36_2_fu_673      |    0    |    0    |    0    |
 |----------|-------------------------------|---------|---------|---------|
 |          |          empty_fu_267         |    0    |    0    |    0    |
-|   trunc  |        empty_50_fu_271        |    0    |    0    |    0    |
-|          |        empty_51_fu_275        |    0    |    0    |    0    |
+|   trunc  |        empty_51_fu_271        |    0    |    0    |    0    |
+|          |        empty_52_fu_275        |    0    |    0    |    0    |
 |----------|-------------------------------|---------|---------|---------|
 |          |         shl_ln_fu_322         |    0    |    0    |    0    |
 |bitconcatenate|      shl_ln28_mid1_fu_407     |    0    |    0    |    0    |

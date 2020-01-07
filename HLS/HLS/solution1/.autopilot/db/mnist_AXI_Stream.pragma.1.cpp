@@ -28705,8 +28705,8 @@ _ssdm_SpecArrayPartition( &SeparableConv2D_4_w_p, 1, "complete", 0, "");
 
  for(i = 0; i < array_length; i++){
 
-
-  MemBank_Out[i] = (int16_t)MemBank_B[i];
+_ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
+ MemBank_Out[i] = (int16_t)MemBank_B[i];
  }
 # 197 "../mnist_AXI_Stream.cpp"
  for(i = 0; i < array_length; i++){
