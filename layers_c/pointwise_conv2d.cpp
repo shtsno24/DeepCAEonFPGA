@@ -6,42 +6,38 @@ uint8_t pointwise_conv2d_fix16(uint16_t input_depth, uint16_t input_height,
 		uint16_t output_height, uint16_t output_width, int16_t* output,
 		const int16_t* bias, uint16_t kernel_height, uint16_t kernel_width,
 		const int16_t* kernel, uint8_t relu, uint8_t fractal_width) {
-	// uint16_t output_hight = (input_shape.height + 2 * pad - kernel_shape.height) / stride + 1;
-	// uint16_t output_width = (input_shape.width + 2 * pad - kernel_shape.width) / stride + 1;
-//#pragma HLS ALLOCATION instances=mul limit=32 operation
-//#pragma HLS ALLOCATION instances=add limit=32 operation
-	// input_size *must* be included padding size
-	// stride is fixed to 1
-//#pragma HLS array_partition variable=kernel
+
+	/*
+	 *  uint16_t output_hight = (input_shape.height + 2 * pad - kernel_shape.height) / stride + 1;
+	 *  uint16_t output_width = (input_shape.width + 2 * pad - kernel_shape.width) / stride + 1;
+	 *
+	 *  input_size *must* be included padding size
+	 *  stride is fixed to 1
+	 */
+
 
 	int32_t buffer;
 	int32_t kernel_buffer[16];
 	int32_t bias_buffer;
-//	int32_t input_addr;
-
-#pragma HLS array_partition variable=kernel_buffer
+//#pragma HLS array_partition variable=kernel_buffer
 
 	for (uint16_t out_d = 0; out_d < output_depth; out_d++) {
 		bias_buffer = bias[out_d];
 		for (uint16_t i = 0; i < input_depth; i++) {
-#pragma HLS PIPELINE
+//#pragma HLS PIPELINE
 			kernel_buffer[i] = kernel[out_d * input_depth + i];
 		}
 
 		for (uint16_t out_h = 0; out_h < output_height; out_h++) {
-#pragma HLS PIPELINE
+//#pragma HLS PIPELINE
 			for (uint16_t out_w = 0; out_w < output_width; out_w++) {
 				buffer = bias_buffer;
-//				input_addr = out_h * output_width + out_w;
 				for (uint16_t in_d = 0; in_d < input_depth; in_d++) {
-					//output[out_d][out_h][out_w] += input[in_d][out_h][out_w] * kernel[out_d][in_d][1][1];
-#pragma HLS PIPELINE II=0
+//#pragma HLS PIPELINE II=0
 					buffer += ((int32_t)(
 							input[in_d * output_height * output_width
 									+ out_h * output_width + out_w])
 							* kernel_buffer[in_d]) >> fractal_width;
-//					input_addr = (in_d + 1) * output_height * output_width
-//							+ out_h * output_width + out_w;
 				}
 				buffer &= ~(0x00000000 - ((buffer >> 31) & relu));
 				output[out_d * output_height * output_width

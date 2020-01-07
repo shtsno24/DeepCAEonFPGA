@@ -22,7 +22,7 @@
 
 using namespace std;
 
-//typedef hls::stream< ap_axis<16, 1, 1, 1> > axis;
+
 typedef ap_axis<16, 1, 1, 1> axis;
 
 int network(axis input_data[784], axis output_data[784]) {
@@ -30,44 +30,35 @@ int network(axis input_data[784], axis output_data[784]) {
 #pragma HLS INTERFACE axis register both port=output_data
 #pragma HLS INTERFACE s_axilite register port=return
 
-
-#pragma HLS array_partition variable=SeparableConv2D_0_b_p
-//#pragma HLS array_partition variable=SeparableConv2D_0_b_d
-#pragma HLS array_partition variable=SeparableConv2D_0_w_d
-#pragma HLS array_partition variable=SeparableConv2D_0_w_p
+//#pragma HLS array_partition variable=SeparableConv2D_0_b_p
+//#pragma HLS array_partition variable=SeparableConv2D_0_w_d
+//#pragma HLS array_partition variable=SeparableConv2D_0_w_p
 //
-#pragma HLS array_partition variable=SeparableConv2D_1_b_p
-//#pragma HLS array_partition variable=SeparableConv2D_1_b_d
-#pragma HLS array_partition variable=SeparableConv2D_1_w_d
-#pragma HLS array_partition variable=SeparableConv2D_1_w_p
+//#pragma HLS array_partition variable=SeparableConv2D_1_b_p
+//#pragma HLS array_partition variable=SeparableConv2D_1_w_d
+//#pragma HLS array_partition variable=SeparableConv2D_1_w_p
 //
-#pragma HLS array_partition variable=SeparableConv2D_2_b_p
-//#pragma HLS array_partition variable=SeparableConv2D_2_b_d
-#pragma HLS array_partition variable=SeparableConv2D_2_w_d
-#pragma HLS array_partition variable=SeparableConv2D_2_w_p
+//#pragma HLS array_partition variable=SeparableConv2D_2_b_p
+//#pragma HLS array_partition variable=SeparableConv2D_2_w_d
+//#pragma HLS array_partition variable=SeparableConv2D_2_w_p
 //
-#pragma HLS array_partition variable=SeparableConv2D_3_b_p
-//#pragma HLS array_partition variable=SeparableConv2D_3_b_d
-#pragma HLS array_partition variable=SeparableConv2D_3_w_d
-#pragma HLS array_partition variable=SeparableConv2D_3_w_p
+//#pragma HLS array_partition variable=SeparableConv2D_3_b_p
+//#pragma HLS array_partition variable=SeparableConv2D_3_w_d
+//#pragma HLS array_partition variable=SeparableConv2D_3_w_p
 //
-#pragma HLS array_partition variable=SeparableConv2D_4_b_p
-//#pragma HLS array_partition variable=SeparableConv2D_4_b_d
-#pragma HLS array_partition variable=SeparableConv2D_4_w_d
-#pragma HLS array_partition variable=SeparableConv2D_4_w_p
+//#pragma HLS array_partition variable=SeparableConv2D_4_b_p
+//#pragma HLS array_partition variable=SeparableConv2D_4_w_d
+//#pragma HLS array_partition variable=SeparableConv2D_4_w_p
 
 	int16_t MemBank_A[14400], MemBank_B[14400];
 
 	const uint64_t array_length = (uint64_t)SeparableConv2D_4_depth * SeparableConv2D_4_height * SeparableConv2D_4_width;
-	//	uint64_t array_length = 16 * 28 * 28;
 	int16_t MemBank_Out[784];
 	axis tmp, sig_buffer[784];
-//#pragma HLS array_partition variable=sig_buffer
+
 
 	int i = 0;
 	do {
-//#pragma HLS loop_flatten
-//#pragma HLS PIPELINE
 		tmp = input_data[i];
 		MemBank_A[i] = (int16_t)tmp.data;
 		sig_buffer[i].keep = tmp.keep;
@@ -79,10 +70,6 @@ int network(axis input_data[784], axis output_data[784]) {
 		i += 1;
 	} while(tmp.last != 1);
 
-//	for(int i = 0; i < input_0_depth * input_0_height * input_0_width; i++){
-////		input_data >> tmp;
-//		MemBank_B[i] = (int16_t) input_data[i].data;
-//	}
 
 	padding2d_fix16(1, 1,
 	input_0_depth, input_0_height, input_0_width, (int16_t*)MemBank_A,
@@ -171,32 +158,12 @@ int network(axis input_data[784], axis output_data[784]) {
 	1, 1, (int16_t*)SeparableConv2D_4_w_p, 1, fractal_width_SeparableConv2D_4);
 
 	for(i = 0; i < array_length; i++){
-//#pragma HLS loop_flatten
-#pragma HLS PIPELINE
+//#pragma HLS PIPELINE
 		MemBank_Out[i] = (int16_t)MemBank_B[i];
 	}
 
-//	for(uint64_t i = 0; i < array_length; i++){
-//#pragma HLS PIPELINE
-//		out.user = 0;
-//		out.last = 0;
-//		out.dest = 0;
-//		out.id = 0;
-//		out.keep = 0;
-//		out.strb = 0;
-//		if(i == 0){
-//			out.user = 1;
-//		}
-//		if(i == array_length - 1){
-//			out.last = 1;
-//		}
-//		out.data = (int16_t)(MemBank_Out[i]);
-//		output_data << out;
-//	}
-
 	for(i = 0; i < array_length; i++){
-//#pragma HLS loop_flatten
-#pragma HLS PIPELINE
+//#pragma HLS PIPELINE
 		tmp.data = MemBank_Out[i];
 		tmp.keep = sig_buffer[i].keep;
 		tmp.strb = sig_buffer[i].strb;
@@ -218,30 +185,6 @@ int main(void){
     int16_t output_img_buff[1 * 28 * 28];
     axis temp;
 
-//	int i = 0;
-//	for(int depth = 0; depth < 1; depth++){
-//		for(int height = 0; height < 28; height++){
-//			for(int width = 0; width < 28; width++){
-//				tmp.data = (int16_t)test_input_fix16[depth][height][width];
-//
-//				if(depth == 0 && height == 0 && width == 0){
-//					tmp.user = 1;
-//				} else {
-//					tmp.user = 0;
-//				}
-//
-//				if(depth == 1 - 1 && height == 28 - 1 && width == 28 - 1){
-//					tmp.last = 1;
-//				} else {
-//					tmp.last = 0;
-//				}
-//				cout << "count " << i << ", last " << tmp.last << ", data " << tmp.data <<"\r\n";
-//				input_buffer << tmp;
-//				i += 1;
-//			}
-//		}
-//	}
-
 	int i = 0;
 	for(int depth = 0; depth < 1; depth++){
 		for(int height = 0; height < 28; height++){
@@ -255,35 +198,14 @@ int main(void){
 				if(i == 783){
 					temp.last = 1;
 				}
-//				cout << "count " << i << ", last " << input_buffer[i].last << ", data " << input_buffer[i].data <<"\r\n";
+
 				input_buffer[i] = temp;
 				i += 1;
 			}
 		}
 	}
 
-//	cout << "\r\n";
-//	cout << "output_buffer_length : " << output_buffer.size() << endl;
-//	cout << "\r\n";
-
 	network(input_buffer, output_buffer);
-
-//	cout << "\r\n";
-//	cout << "output_buffer_length : " << output_buffer.size() << endl;
-//	cout << "\r\n";
-
-//	i = 0;
-//	do {
-//		output_buffer >> tmp;
-//		output_img_buff[i] = (int16_t)tmp.data;
-//		cout<< setw(6) << right << output_img_buff[i] << " ";
-//		if(i % (28 * 28) == 0){
-//			cout << "\n" << endl;
-//		}else if(i % 28 == 0){
-//			cout << endl;
-//		}
-//		i += 1;
-//	} while(tmp.last != 1);
 
 	i = 0;
 	do {

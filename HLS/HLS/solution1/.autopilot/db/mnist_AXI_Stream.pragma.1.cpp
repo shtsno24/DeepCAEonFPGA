@@ -28562,45 +28562,16 @@ int network(axis input_data[784], axis output_data[784]) {_ssdm_SpecArrayDimSize
 _ssdm_op_SpecInterface(input_data, "axis", 1, 1, "both", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
 _ssdm_op_SpecInterface(output_data, "axis", 1, 1, "both", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
 _ssdm_op_SpecInterface(0, "s_axilite", 1, 1, "", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
-
-
-_ssdm_SpecArrayPartition( &SeparableConv2D_0_b_p, 1, "complete", 0, "");
-
-_ssdm_SpecArrayPartition( &SeparableConv2D_0_w_d, 1, "complete", 0, "");
-_ssdm_SpecArrayPartition( &SeparableConv2D_0_w_p, 1, "complete", 0, "");
-
-_ssdm_SpecArrayPartition( &SeparableConv2D_1_b_p, 1, "complete", 0, "");
-
-_ssdm_SpecArrayPartition( &SeparableConv2D_1_w_d, 1, "complete", 0, "");
-_ssdm_SpecArrayPartition( &SeparableConv2D_1_w_p, 1, "complete", 0, "");
-
-_ssdm_SpecArrayPartition( &SeparableConv2D_2_b_p, 1, "complete", 0, "");
-
-_ssdm_SpecArrayPartition( &SeparableConv2D_2_w_d, 1, "complete", 0, "");
-_ssdm_SpecArrayPartition( &SeparableConv2D_2_w_p, 1, "complete", 0, "");
-
-_ssdm_SpecArrayPartition( &SeparableConv2D_3_b_p, 1, "complete", 0, "");
-
-_ssdm_SpecArrayPartition( &SeparableConv2D_3_w_d, 1, "complete", 0, "");
-_ssdm_SpecArrayPartition( &SeparableConv2D_3_w_p, 1, "complete", 0, "");
-
-_ssdm_SpecArrayPartition( &SeparableConv2D_4_b_p, 1, "complete", 0, "");
-
-_ssdm_SpecArrayPartition( &SeparableConv2D_4_w_d, 1, "complete", 0, "");
-_ssdm_SpecArrayPartition( &SeparableConv2D_4_w_p, 1, "complete", 0, "");
-
+# 53 "../mnist_AXI_Stream.cpp"
  int16_t MemBank_A[14400], MemBank_B[14400];
 
  const uint64_t array_length = (uint64_t)SeparableConv2D_4_depth * SeparableConv2D_4_height * SeparableConv2D_4_width;
-
  int16_t MemBank_Out[784];
  axis tmp, sig_buffer[784];
 
 
  int i = 0;
  do {
-
-
   tmp = input_data[i];
   MemBank_A[i] = (int16_t)tmp.data;
   sig_buffer[i].keep = tmp.keep;
@@ -28611,10 +28582,6 @@ _ssdm_SpecArrayPartition( &SeparableConv2D_4_w_p, 1, "complete", 0, "");
   sig_buffer[i].dest = tmp.dest;
   i += 1;
  } while(tmp.last != 1);
-
-
-
-
 
 
  padding2d_fix16(1, 1,
@@ -28705,14 +28672,12 @@ _ssdm_SpecArrayPartition( &SeparableConv2D_4_w_p, 1, "complete", 0, "");
 
  for(i = 0; i < array_length; i++){
 
-_ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
- MemBank_Out[i] = (int16_t)MemBank_B[i];
+  MemBank_Out[i] = (int16_t)MemBank_B[i];
  }
-# 197 "../mnist_AXI_Stream.cpp"
+
  for(i = 0; i < array_length; i++){
 
-_ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
- tmp.data = MemBank_Out[i];
+  tmp.data = MemBank_Out[i];
   tmp.keep = sig_buffer[i].keep;
   tmp.strb = sig_buffer[i].strb;
   tmp.user = sig_buffer[i].user;
@@ -28732,7 +28697,7 @@ _ssdm_op_SpecReset( output_buffer, 1,  "");
 
  int16_t output_img_buff[1 * 28 * 28];
     axis temp;
-# 245 "../mnist_AXI_Stream.cpp"
+
  int i = 0;
  for(int depth = 0; depth < 1; depth++){
   for(int height = 0; height < 28; height++){
@@ -28753,12 +28718,8 @@ _ssdm_op_SpecReset( output_buffer, 1,  "");
   }
  }
 
-
-
-
-
  network(input_buffer, output_buffer);
-# 288 "../mnist_AXI_Stream.cpp"
+
  i = 0;
  do {
   temp = output_buffer[i];

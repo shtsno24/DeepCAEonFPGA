@@ -391,25 +391,22 @@ uint8_t depthwise_conv2d_fix16(uint16_t input_depth, uint16_t input_height,
  int32_t bias_buffer;
  int32_t input_buffer;
 
-_ssdm_SpecArrayPartition( kernel_buffer, 1, "complete", 0, "");
 
  for (uint16_t out_d = 0; out_d < output_depth; out_d++) {
-_ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
- for (uint8_t i = 0; i < kernel_height * kernel_width; i++) {
-_ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
- kernel_buffer[i] = (int32_t) kernel[out_d * kernel_height
+
+  for (uint8_t i = 0; i < kernel_height * kernel_width; i++) {
+
+   kernel_buffer[i] = (int32_t) kernel[out_d * kernel_height
      * kernel_width + i];
   }
   bias_buffer = bias[out_d];
 
   for (uint16_t out_h = 0; out_h < output_height; out_h++) {
    for (uint16_t out_w = 0; out_w < output_width; out_w++) {
-_ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
- buffer = bias_buffer;
+
+    buffer = bias_buffer;
     for (uint16_t k_h = 0; k_h < kernel_height; k_h++) {
-
      for (uint16_t k_w = 0; k_w < kernel_width; k_w++) {
-
       buffer += (((int32_t) input[out_d * input_height
         * input_width + (out_h + k_h) * input_width
         + (out_w + k_w)]

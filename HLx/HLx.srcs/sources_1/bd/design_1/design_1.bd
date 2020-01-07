@@ -1973,16 +1973,16 @@
                   "s00_data_fifo/M_AXI"
                 ]
               },
-              "auto_pc_to_s00_data_fifo": {
-                "interface_ports": [
-                  "s00_data_fifo/S_AXI",
-                  "auto_pc/M_AXI"
-                ]
-              },
               "s00_couplers_to_auto_pc": {
                 "interface_ports": [
                   "S_AXI",
                   "auto_pc/S_AXI"
+                ]
+              },
+              "auto_pc_to_s00_data_fifo": {
+                "interface_ports": [
+                  "s00_data_fifo/S_AXI",
+                  "auto_pc/M_AXI"
                 ]
               }
             },
@@ -2123,18 +2123,6 @@
           }
         },
         "interface_nets": {
-          "m01_couplers_to_ps7_0_axi_periph": {
-            "interface_ports": [
-              "M01_AXI",
-              "m01_couplers/M_AXI"
-            ]
-          },
-          "xbar_to_m01_couplers": {
-            "interface_ports": [
-              "xbar/M01_AXI",
-              "m01_couplers/S_AXI"
-            ]
-          },
           "xbar_to_m00_couplers": {
             "interface_ports": [
               "xbar/M00_AXI",
@@ -2147,6 +2135,12 @@
               "m00_couplers/M_AXI"
             ]
           },
+          "xbar_to_m01_couplers": {
+            "interface_ports": [
+              "xbar/M01_AXI",
+              "m01_couplers/S_AXI"
+            ]
+          },
           "s00_couplers_to_xbar": {
             "interface_ports": [
               "s00_couplers/M_AXI",
@@ -2157,6 +2151,12 @@
             "interface_ports": [
               "S00_AXI",
               "s00_couplers/S_AXI"
+            ]
+          },
+          "m01_couplers_to_ps7_0_axi_periph": {
+            "interface_ports": [
+              "M01_AXI",
+              "m01_couplers/M_AXI"
             ]
           }
         },
@@ -2195,13 +2195,13 @@
             "value": "BUFG"
           },
           "CLKOUT1_JITTER": {
-            "value": "162.098"
+            "value": "174.399"
           },
           "CLKOUT1_PHASE_ERROR": {
-            "value": "160.484"
+            "value": "143.270"
           },
           "CLKOUT1_REQUESTED_OUT_FREQ": {
-            "value": "104"
+            "value": "129"
           },
           "CLKOUT2_DRIVES": {
             "value": "BUFG"
@@ -2228,10 +2228,10 @@
             "value": "OPTIMIZED"
           },
           "MMCM_CLKFBOUT_MULT_F": {
-            "value": "19.500"
+            "value": "16.125"
           },
           "MMCM_CLKOUT0_DIVIDE_F": {
-            "value": "9.375"
+            "value": "6.250"
           },
           "MMCM_COMPENSATION": {
             "value": "ZHOLD"

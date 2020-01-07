@@ -6,7 +6,7 @@
 <Project Version="7" Minor="40" Path="/home/masudalab/DeepCAEonFPGA/HLS/HLS/solution1/impl/verilog/project.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="1b81dce44d494a1092c4885d0d0b647c"/>
+    <Option Name="Id" Val="8eb95982e2294e48b6eca3f780fb3d6b"/>
     <Option Name="Part" Val="xc7z020clg400-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
@@ -312,43 +312,97 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/network_SeparableConv2D_1_w_s_rom.dat">
+      <File Path="$PPRDIR/network_SeparableConv2D_4_w_1_rom.dat">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/network_SeparableConv2D_2_w_s_rom.dat">
+      <File Path="$PPRDIR/pointwise_conv2d_fix_3_SeparableConv2D_3_b_s_rom.dat">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/network_SeparableConv2D_2_b_s_rom.dat">
+      <File Path="$PPRDIR/pointwise_conv2d_fix_2_SeparableConv2D_2_w_s_rom.dat">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/network_SeparableConv2D_1_b_s_rom.dat">
+      <File Path="$PPRDIR/pointwise_conv2d_fix_4_kernel_buffer_rom.dat">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/network_SeparableConv2D_4_w_s_rom.dat">
+      <File Path="$PPRDIR/pointwise_conv2d_fix_1_SeparableConv2D_1_b_s_rom.dat">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/depthwise_conv2d_fix_SeparableConv2D_0_w_s_rom.dat">
+      <File Path="$PPRDIR/pointwise_conv2d_fix_SeparableConv2D_0_w_s_rom.dat">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/network_SeparableConv2D_3_w_s_rom.dat">
+      <File Path="$PPRDIR/depthwise_conv2d_fix_empty_rom.dat">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/network_SeparableConv2D_1_b_1_rom.dat">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/network_SeparableConv2D_1_w_1_rom.dat">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/pointwise_conv2d_fix_1_SeparableConv2D_1_w_s_rom.dat">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/network_SeparableConv2D_3_w_1_rom.dat">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/network_SeparableConv2D_2_b_1_rom.dat">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/pointwise_conv2d_fix_3_SeparableConv2D_3_w_s_rom.dat">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/pointwise_conv2d_fix_2_SeparableConv2D_2_b_s_rom.dat">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/network_SeparableConv2D_2_w_1_rom.dat">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/pointwise_conv2d_fix_SeparableConv2D_0_b_s_rom.dat">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
